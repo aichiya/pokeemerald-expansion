@@ -5139,6 +5139,15 @@ static void HandleEndTurn_BattleLost(void)
     }
     else
     {
+        if (FlagGet(FLAG_SCRIPTED_LOSS)) // Check flag scripted loss
+        {
+            gBattleCommunication[MULTISTRING_CHOOSER] = 1; // Dont do white out text
+            gBattlerAttacker = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+        }
+        else
+        {
+            gBattleCommunication[MULTISTRING_CHOOSER] = 0;
+        }
         gBattlescriptCurrInstr = BattleScript_LocalBattleLost;
     }
 

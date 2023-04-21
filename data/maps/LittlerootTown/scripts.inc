@@ -432,6 +432,158 @@ LittlerootTown_EventScript_PlayersHouseSignFemale::
 	msgbox LittlerootTown_Text_PlayersHouse, MSGBOX_DEFAULT
 	return
 
+LitterootTown_EventScript_CustomSign5::
+	lockall
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	setflag FLAG_SYS_POKEDEX_GET
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	delay 30
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_MASTER_BALL, 10
+	givemon SPECIES_CHARIZARD, 100, ITEM_CHARIZARDITE_Y
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_FLAMETHROWER
+	setmonmove 0, 1, MOVE_DYNAMAX_CANNON
+	setmonmove 0, 2, MOVE_SURGING_STRIKES
+	setmonmove 0, 3, MOVE_VICTORY_DANCE
+	delay 30
+	playmoncry SPECIES_GROUDON, CRY_MODE_ENCOUNTER
+	waitmoncry
+	seteventmon SPECIES_GROUDON, 70, ITEM_NONE
+	special BattleSetup_StartLegendaryBattle
+	playbgm MUS_SH_PANDORA, FALSE
+	waitstate
+	releaseall
+	end
+
+LitterootTown_EventScript_CustomSign6::
+	lockall
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	setflag FLAG_SYS_POKEDEX_GET
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	delay 30
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_MASTER_BALL, 10
+	givemon SPECIES_RAYQUAZA, 70, ITEM_ELECTRIUM_Z
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_DRAGON_ASCENT
+	setmonmove 0, 1, MOVE_THUNDERBOLT
+	setmonmove 0, 2, MOVE_EXTREME_SPEED
+	setmonmove 0, 3, MOVE_EARTHQUAKE
+	delay 30
+	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER
+	waitmoncry
+	seteventmon SPECIES_KYOGRE, 70, ITEM_BLUE_ORB
+	special BattleSetup_StartLegendaryBattle
+	playbgm MUS_THPPZGSK_PLASTICMIND, FALSE 			@ MUS_HG_VS_KYOGRE_GROUDON
+	waitstate
+	releaseall
+	end
+
+LitterootTown_EventScript_CustomSign7::
+	lockall
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	delay 30
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_MASTER_BALL, 10
+	givemon SPECIES_MEW, 70, ITEM_MEWNIUM_Z
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_PSYCHIC
+	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
+	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
+	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
+	delay 30
+	playmoncry SPECIES_MEW, CRY_MODE_ENCOUNTER
+	waitmoncry
+	seteventmon SPECIES_MEW, 70, ITEM_MEWNIUM_Z
+	special BattleSetup_StartLegendaryBattle
+	playbgm MUS_HG_VS_GYM_LEADER_KANTO, FALSE
+	waitstate
+	releaseall
+	end
+
+LitterootTown_EventScript_CustomSign8::
+	lockall
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	delay 30
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_MASTER_BALL, 10
+	givemon SPECIES_RAYQUAZA, 100, ITEM_DRAGONIUM_Z
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_V_CREATE
+	setmonmove 0, 1, MOVE_DRAGON_ASCENT
+	setmonmove 0, 2, MOVE_FLEUR_CANNON
+	setmonmove 0, 3, MOVE_SPACIAL_REND
+	delay 30
+	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
+	waitmoncry
+	seteventmon SPECIES_RAYQUAZA, 70, ITEM_NONE
+	special BattleSetup_StartLegendaryBattle
+	playbgm MUS_HG_VS_CHAMPION, FALSE
+	waitstate
+	releaseall
+	end
+
 LittlerootTown_EventScript_GiveRunningShoesTrigger0::
 	lockall
 	setvar VAR_0x8008, 0

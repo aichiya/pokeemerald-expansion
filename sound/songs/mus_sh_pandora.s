@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_sh_pandora_grp, voicegroup200
+	.equ	mus_sh_pandora_grp, voicegroup201
 	.equ	mus_sh_pandora_pri, 0
 	.equ	mus_sh_pandora_rev, 0
 	.equ	mus_sh_pandora_mvl, 127
@@ -21,7 +21,7 @@ mus_sh_pandora_1:
 	.byte	TEMPO , 152*mus_sh_pandora_tbs/2
 	.byte		VOICE , 86
 	.byte	TEMPO , 118*mus_sh_pandora_tbs/2
-	.byte		VOL   , 100*mus_sh_pandora_mvl/mxv
+	.byte		VOL   , 70*mus_sh_pandora_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte	W48
 @ 001   ----------------------------------------
@@ -1096,7 +1096,7 @@ mus_sh_pandora_2:
 	.byte	KEYSH , mus_sh_pandora_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 19
-	.byte		VOL   , 80*mus_sh_pandora_mvl/mxv
+	.byte		VOL   , 50*mus_sh_pandora_mvl/mxv
 	.byte		PAN   , c_v-32
 	.byte		N44   , Fn3 , v120
 	.byte		N44   , As3 
@@ -1854,7 +1854,7 @@ mus_sh_pandora_3:
 	.byte	KEYSH , mus_sh_pandora_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 19
-	.byte		VOL   , 80*mus_sh_pandora_mvl/mxv
+	.byte		VOL   , 50*mus_sh_pandora_mvl/mxv
 	.byte		PAN   , c_v+32
 	.byte		N92   , Fs1 , v120
 	.byte		N92   , Cs2 
@@ -2962,7 +2962,7 @@ mus_sh_pandora_5:
 	.byte	KEYSH , mus_sh_pandora_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 48
-	.byte		VOL   , 80*mus_sh_pandora_mvl/mxv
+	.byte		VOL   , 50*mus_sh_pandora_mvl/mxv
 	.byte		PAN   , c_v-9
 	.byte	W48
 @ 001   ----------------------------------------
@@ -3255,7 +3255,7 @@ mus_sh_pandora_6:
 	.byte	KEYSH , mus_sh_pandora_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 48
-	.byte		VOL   , 80*mus_sh_pandora_mvl/mxv
+	.byte		VOL   , 50*mus_sh_pandora_mvl/mxv
 	.byte		PAN   , c_v-9
 	.byte	W48
 @ 001   ----------------------------------------
@@ -3605,7 +3605,7 @@ mus_sh_pandora_7:
 	.byte	KEYSH , mus_sh_pandora_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 6
-	.byte		VOL   , 114*mus_sh_pandora_mvl/mxv
+	.byte		VOL   , 84*mus_sh_pandora_mvl/mxv
 	.byte		PAN   , c_v+56
 	.byte		N44   , Fn3 , v120
 	.byte		N44   , As3 
@@ -4298,7 +4298,7 @@ mus_sh_pandora_8:
 	.byte	KEYSH , mus_sh_pandora_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 32
-	.byte		VOL   , 105*mus_sh_pandora_mvl/mxv
+	.byte		VOL   , 75*mus_sh_pandora_mvl/mxv
 	.byte		PAN   , c_v-34
 	.byte		N92   , Fs1 , v120
 	.byte		N92   , Cs2 
@@ -4684,7 +4684,7 @@ mus_sh_pandora_8_066:
 mus_sh_pandora_9:
 	.byte	KEYSH , mus_sh_pandora_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 0
+	.byte		VOICE , 120
 	.byte		VOL   , 100*mus_sh_pandora_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte	W48
@@ -5740,7 +5740,7 @@ mus_sh_pandora_10:
 	.byte	KEYSH , mus_sh_pandora_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 85
-	.byte		VOL   , 100*mus_sh_pandora_mvl/mxv
+	.byte		VOL   , 70*mus_sh_pandora_mvl/mxv
 	.byte		PAN   , c_v-0
 	.byte	W48
 @ 001   ----------------------------------------

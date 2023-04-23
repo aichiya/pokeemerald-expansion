@@ -10260,4 +10260,113 @@ const struct Trainer gTrainers[] = {
         .aiFlags = 0,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayLinkPlaceholder),
     },
+
+    [TRAINER_TEST_1] =
+    {
+        .trainerClass = TRAINER_CLASS_PASSER_BY_TSUKASA,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_ETC_KADOYA_TSUKASA,
+        .trainerName = _("TSUKASA"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest1),
+    },
+
+    [TRAINER_TEST_2] =
+    {
+        .trainerClass = TRAINER_CLASS_BGHS_SCHOOL_GIRL,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = TRAINER_PIC_BGHS_HOSHITSUKI_MIKI,
+        .trainerName = _("MIKI"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest2),
+    },
+
+    [TRAINER_TEST_3] =
+    {
+        .trainerClass = TRAINER_CLASS_WANDERER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_ETC_IKUE,
+        .trainerName = _("???"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest3),
+    },
+
+    [TRAINER_TEST_4] =
+    {
+        .trainerClass = TRAINER_CLASS_BGHS_SCHOOL_GIRL,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerName = _("MIKI"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest4),
+    },
+
+    [TRAINER_TEST_5] =
+    {
+        .trainerClass = TRAINER_CLASS_YYYI_YUUSHA,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerName = _("WAKABA"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest5),
+    },
+
+    [TRAINER_TEST_6] =
+    {
+        .trainerClass = TRAINER_CLASS_KEY_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerName = _("NAGISA"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest6),
+    },
+
+    [TRAINER_TEST_7] =
+    {
+        .trainerClass = TRAINER_CLASS_SH_MAID,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerName = _("VIVIT"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest7),
+    },
+
+    [TRAINER_TEST_8] =
+    {
+        .trainerClass = TRAINER_CLASS_MOE_1,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerName = _("GIRATINA"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest8),
+    },
+
+    [TRAINER_TEST_9] =
+    {
+        .trainerClass = TRAINER_CLASS_PASSER_BY,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerName = _("DECADE"),
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest9),
+    },
+
 };

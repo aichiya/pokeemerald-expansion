@@ -276,6 +276,489 @@ const u32 gTrainerPalette_RubySapphireBrendan[] = INCBIN_U32("graphics/trainers/
 
 const u32 gTrainerFrontPic_RubySapphireMay[] = INCBIN_U32("graphics/trainers/front_pics/may_rs.4bpp.lz");
 const u32 gTrainerPalette_RubySapphireMay[] = INCBIN_U32("graphics/trainers/palettes/may_rs.gbapal.lz");
+//wave 1
+const u32 gTrainerFrontPic_EvilSpirit[] = INCBIN_U32("graphics/trainers/front_pics/jibakurei.4bpp.lz");
+const u32 gTrainerPalette_EvilSpirit[] = INCBIN_U32("graphics/trainers/front_pics/jibakurei.gbapal.lz");
+
+const u32 gTrainerFrontPic_Ghost[] = INCBIN_U32("graphics/trainers/front_pics/yuurei.4bpp.lz");
+const u32 gTrainerPalette_Ghost[] = INCBIN_U32("graphics/trainers/front_pics/yuurei.gbapal.lz");
+
+const u32 gTrainerFrontPic_THSyameimaruAya1[] = INCBIN_U32("graphics/trainers/front_pics/th_aya1.4bpp.lz");
+const u32 gTrainerPalette_THSyameimaruAya1[] = INCBIN_U32("graphics/trainers/front_pics/th_aya1.gbapal.lz");
+
+const u32 gTrainerFrontPic_THSyameimaruAya2[] = INCBIN_U32("graphics/trainers/front_pics/th_aya2.4bpp.lz");
+const u32 gTrainerPalette_THSyameimaruAya2[] = INCBIN_U32("graphics/trainers/front_pics/th_aya2.gbapal.lz");
+
+const u32 gTrainerFrontPic_THHijiriByakuren[] = INCBIN_U32("graphics/trainers/front_pics/th_byakuren.4bpp.lz");
+const u32 gTrainerPalette_THHijiriByakuren[] = INCBIN_U32("graphics/trainers/front_pics/th_byakuren.gbapal.lz");
+
+const u32 gTrainerFrontPic_THCirno[] = INCBIN_U32("graphics/trainers/front_pics/th_cirno.4bpp.lz");
+const u32 gTrainerPalette_THCirno[] = INCBIN_U32("graphics/trainers/front_pics/th_cirno.gbapal.lz");
+
+const u32 gTrainerFrontPic_THShikieiki[] = INCBIN_U32("graphics/trainers/front_pics/th_eiki.4bpp.lz");
+const u32 gTrainerPalette_THShikieiki[] = INCBIN_U32("graphics/trainers/front_pics/th_eiki.gbapal.lz");
+
+const u32 gTrainerFrontPic_THFlandreScarlet[] = INCBIN_U32("graphics/trainers/front_pics/th_flandre.4bpp.lz");
+const u32 gTrainerPalette_THFlandreScarlet[] = INCBIN_U32("graphics/trainers/front_pics/th_flandre.gbapal.lz");
+
+const u32 gTrainerFrontPic_THHouraisanKaguya[] = INCBIN_U32("graphics/trainers/front_pics/th_kaguya.4bpp.lz");
+const u32 gTrainerPalette_THHouraisanKaguya[] = INCBIN_U32("graphics/trainers/front_pics/th_kaguya.gbapal.lz");
+
+const u32 gTrainerFrontPic_THYasakaKanako[] = INCBIN_U32("graphics/trainers/front_pics/th_kanako.4bpp.lz");
+const u32 gTrainerPalette_THYasakaKanako[] = INCBIN_U32("graphics/trainers/front_pics/th_kanako.gbapal.lz");
+
+const u32 gTrainerFrontPic_THLilyBlack[] = INCBIN_U32("graphics/trainers/front_pics/th_lily_black.4bpp.lz");
+const u32 gTrainerPalette_THLilyBlack[] = INCBIN_U32("graphics/trainers/front_pics/th_lily_black.gbapal.lz");
+
+const u32 gTrainerFrontPic_THLilyWhite[] = INCBIN_U32("graphics/trainers/front_pics/th_lily_white.4bpp.lz");
+const u32 gTrainerPalette_THLilyWhite[] = INCBIN_U32("graphics/trainers/front_pics/th_lily_white.gbapal.lz");
+
+const u32 gTrainerFrontPic_THMaribelHearn[] = INCBIN_U32("graphics/trainers/front_pics/th_maribel.4bpp.lz");
+const u32 gTrainerPalette_THMaribelHearn[] = INCBIN_U32("graphics/trainers/front_pics/th_maribel.gbapal.lz");
+
+const u32 gTrainerFrontPic_THKirisameMarisa[] = INCBIN_U32("graphics/trainers/front_pics/th_marisa.4bpp.lz");
+const u32 gTrainerPalette_THKirisameMarisa[] = INCBIN_U32("graphics/trainers/front_pics/th_marisa.gbapal.lz");
+
+const u32 gTrainerFrontPic_THHongMeiling[] = INCBIN_U32("graphics/trainers/front_pics/th_meiling.4bpp.lz");
+const u32 gTrainerPalette_THHongMeiling[] = INCBIN_U32("graphics/trainers/front_pics/th_meiling.gbapal.lz");
+
+const u32 gTrainerFrontPic_THFujiwaraNoMokou[] = INCBIN_U32("graphics/trainers/front_pics/th_mokou.4bpp.lz");
+const u32 gTrainerPalette_THFujiwaraNoMokou[] = INCBIN_U32("graphics/trainers/front_pics/th_mokou.gbapal.lz");
+
+const u32 gTrainerFrontPic_THInubashiriMomiji[] = INCBIN_U32("graphics/trainers/front_pics/th_momiji.4bpp.lz");
+const u32 gTrainerPalette_THInubashiriMomiji[] = INCBIN_U32("graphics/trainers/front_pics/th_momiji.gbapal.lz");
+
+const u32 gTrainerFrontPic_THMurasaMinamitsu[] = INCBIN_U32("graphics/trainers/front_pics/th_murasa.4bpp.lz");
+const u32 gTrainerPalette_THMurasaMinamitsu[] = INCBIN_U32("graphics/trainers/front_pics/th_murasa.gbapal.lz");
+
+const u32 gTrainerFrontPic_THHakureiReimu1[] = INCBIN_U32("graphics/trainers/front_pics/th_reimu1.4bpp.lz");
+const u32 gTrainerPalette_THHakureiReimu1[] = INCBIN_U32("graphics/trainers/front_pics/th_reimu1.gbapal.lz");
+
+const u32 gTrainerFrontPic_THHakureiReimu2[] = INCBIN_U32("graphics/trainers/front_pics/th_reimu2.4bpp.lz");
+const u32 gTrainerPalette_THHakureiReimu2[] = INCBIN_U32("graphics/trainers/front_pics/th_reimu2.gbapal.lz");
+
+const u32 gTrainerFrontPic_THRemiliaScarlet[] = INCBIN_U32("graphics/trainers/front_pics/th_remilia.4bpp.lz");
+const u32 gTrainerPalette_THRemiliaScarlet[] = INCBIN_U32("graphics/trainers/front_pics/th_remilia.gbapal.lz");
+
+const u32 gTrainerFrontPic_THUsamiRenko[] = INCBIN_U32("graphics/trainers/front_pics/th_renko.4bpp.lz");
+const u32 gTrainerPalette_THUsamiRenko[] = INCBIN_U32("graphics/trainers/front_pics/th_renko.gbapal.lz");
+
+const u32 gTrainerFrontPic_THRumia[] = INCBIN_U32("graphics/trainers/front_pics/th_rumia.4bpp.lz");
+const u32 gTrainerPalette_THRumia[] = INCBIN_U32("graphics/trainers/front_pics/th_rumia.gbapal.lz");
+
+const u32 gTrainerFrontPic_THIzayoiSakuya[] = INCBIN_U32("graphics/trainers/front_pics/th_sakuya.4bpp.lz");
+const u32 gTrainerPalette_THIzayoiSakuya[] = INCBIN_U32("graphics/trainers/front_pics/th_sakuya.gbapal.lz");
+
+const u32 gTrainerFrontPic_THKochiyaSanae[] = INCBIN_U32("graphics/trainers/front_pics/th_sanae.4bpp.lz");
+const u32 gTrainerPalette_THKochiyaSanae[] = INCBIN_U32("graphics/trainers/front_pics/th_sanae.gbapal.lz");
+
+const u32 gTrainerFrontPic_THSanBaka[] = INCBIN_U32("graphics/trainers/front_pics/th_sanbaka.4bpp.lz");
+const u32 gTrainerPalette_THSanBaka[] = INCBIN_U32("graphics/trainers/front_pics/th_sanbaka.gbapal.lz");
+
+const u32 gTrainerFrontPic_THShinki[] = INCBIN_U32("graphics/trainers/front_pics/th_shinki.4bpp.lz");
+const u32 gTrainerPalette_THShinki[] = INCBIN_U32("graphics/trainers/front_pics/th_shinki.gbapal.lz");
+
+const u32 gTrainerFrontPic_THIbukiSuika[] = INCBIN_U32("graphics/trainers/front_pics/th_suika.4bpp.lz");
+const u32 gTrainerPalette_THIbukiSuika[] = INCBIN_U32("graphics/trainers/front_pics/th_suika.gbapal.lz");
+
+const u32 gTrainerFrontPic_THReiujiUtsuho[] = INCBIN_U32("graphics/trainers/front_pics/th_utsuho.4bpp.lz");
+const u32 gTrainerPalette_THReiujiUtsuho[] = INCBIN_U32("graphics/trainers/front_pics/th_utsuho.gbapal.lz");
+
+const u32 gTrainerFrontPic_THWriggleNightbug[] = INCBIN_U32("graphics/trainers/front_pics/th_wriggle.4bpp.lz");
+const u32 gTrainerPalette_THWriggleNightbug[] = INCBIN_U32("graphics/trainers/front_pics/th_wriggle.gbapal.lz");
+
+const u32 gTrainerFrontPic_THKonpakuYoumu[] = INCBIN_U32("graphics/trainers/front_pics/th_youmu.4bpp.lz");
+const u32 gTrainerPalette_THKonpakuYoumu[] = INCBIN_U32("graphics/trainers/front_pics/th_youmu.gbapal.lz");
+
+const u32 gTrainerFrontPic_THFairy[] = INCBIN_U32("graphics/trainers/front_pics/th_yousei.4bpp.lz");
+const u32 gTrainerPalette_THFairy[] = INCBIN_U32("graphics/trainers/front_pics/th_yousei.gbapal.lz");
+
+const u32 gTrainerFrontPic_THYakumoYukari1[] = INCBIN_U32("graphics/trainers/front_pics/th_yukari1.4bpp.lz");
+const u32 gTrainerPalette_THYakumoYukari1[] = INCBIN_U32("graphics/trainers/front_pics/th_yukari1.gbapal.lz");
+
+const u32 gTrainerFrontPic_THYakumoYukari2[] = INCBIN_U32("graphics/trainers/front_pics/th_yukari2.4bpp.lz");
+const u32 gTrainerPalette_THYakumoYukari2[] = INCBIN_U32("graphics/trainers/front_pics/th_yukari2.gbapal.lz");
+
+const u32 gTrainerFrontPic_THYumeko[] = INCBIN_U32("graphics/trainers/front_pics/th_yumeko.4bpp.lz");
+const u32 gTrainerPalette_THYumeko[] = INCBIN_U32("graphics/trainers/front_pics/th_yumeko.gbapal.lz");
+
+const u32 gTrainerFrontPic_THHoshigumaYuugi[] = INCBIN_U32("graphics/trainers/front_pics/th_yuugi.4bpp.lz");
+const u32 gTrainerPalette_THHoshigumaYuugi[] = INCBIN_U32("graphics/trainers/front_pics/th_yuugi.gbapal.lz");
+
+const u32 gTrainerFrontPic_THKazamiYuuka1[] = INCBIN_U32("graphics/trainers/front_pics/th_yuuka1.4bpp.lz");
+const u32 gTrainerPalette_THKazamiYuuka1[] = INCBIN_U32("graphics/trainers/front_pics/th_yuuka1.gbapal.lz");
+
+const u32 gTrainerFrontPic_THKazamiYuuka2[] = INCBIN_U32("graphics/trainers/front_pics/th_yuuka2.4bpp.lz");
+const u32 gTrainerPalette_THKazamiYuuka2[] = INCBIN_U32("graphics/trainers/front_pics/th_yuuka2.gbapal.lz");
+
+const u32 gTrainerFrontPic_THSaigyoujiYuyuko1[] = INCBIN_U32("graphics/trainers/front_pics/th_yuyuko1.4bpp.lz");
+const u32 gTrainerPalette_THSaigyoujiYuyuko1[] = INCBIN_U32("graphics/trainers/front_pics/th_yuyuko1.gbapal.lz");
+
+const u32 gTrainerFrontPic_THSaigyoujiYuyuko2[] = INCBIN_U32("graphics/trainers/front_pics/th_yuyuko2.4bpp.lz");
+const u32 gTrainerPalette_THSaigyoujiYuyuko2[] = INCBIN_U32("graphics/trainers/front_pics/th_yuyuko2.gbapal.lz");
+
+const u32 gTrainerFrontPic_ETCIkue[] = INCBIN_U32("graphics/trainers/front_pics/etc_ikue.4bpp.lz");
+const u32 gTrainerPalette_ETCIkue[] = INCBIN_U32("graphics/trainers/front_pics/etc_ikue.gbapal.lz");
+
+const u32 gTrainerFrontPic_SHVIVITr[] = INCBIN_U32("graphics/trainers/front_pics/sh_vivitr.4bpp.lz");
+const u32 gTrainerPalette_SHVIVITr[] = INCBIN_U32("graphics/trainers/front_pics/sh_vivitr.gbapal.lz");
+// wave 2
+const u32 gTrainerFrontPic_PCMisumiNagisa[] = INCBIN_U32("graphics/trainers/front_pics/pc_nagisa.4bpp.lz");
+const u32 gTrainerPalette_PCMisumiNagisa[] = INCBIN_U32("graphics/trainers/front_pics/pc_nagisa.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCureBlack[] = INCBIN_U32("graphics/trainers/front_pics/pc_black.4bpp.lz");
+const u32 gTrainerPalette_PCCureBlack[] = INCBIN_U32("graphics/trainers/front_pics/pc_black.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCYukishiroHonoka[] = INCBIN_U32("graphics/trainers/front_pics/pc_honoka.4bpp.lz");
+const u32 gTrainerPalette_PCYukishiroHonoka[] = INCBIN_U32("graphics/trainers/front_pics/pc_honoka.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCureWhite[] = INCBIN_U32("graphics/trainers/front_pics/pc_white.4bpp.lz");
+const u32 gTrainerPalette_PCCureWhite[] = INCBIN_U32("graphics/trainers/front_pics/pc_white.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCKujouHikari[] = INCBIN_U32("graphics/trainers/front_pics/pc_hikari.4bpp.lz");
+const u32 gTrainerPalette_PCKujouHikari[] = INCBIN_U32("graphics/trainers/front_pics/pc_hikari.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCShinyLuminous[] = INCBIN_U32("graphics/trainers/front_pics/pc_luminous.4bpp.lz");
+const u32 gTrainerPalette_PCShinyLuminous[] = INCBIN_U32("graphics/trainers/front_pics/pc_luminous.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCHyuugaSaki[] = INCBIN_U32("graphics/trainers/front_pics/pc_saki.4bpp.lz");
+const u32 gTrainerPalette_PCHyuugaSaki[] = INCBIN_U32("graphics/trainers/front_pics/pc_saki.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCureBloom[] = INCBIN_U32("graphics/trainers/front_pics/pc_bloom.4bpp.lz");
+const u32 gTrainerPalette_PCCureBloom[] = INCBIN_U32("graphics/trainers/front_pics/pc_bloom.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCMishouMai[] = INCBIN_U32("graphics/trainers/front_pics/pc_mai.4bpp.lz");
+const u32 gTrainerPalette_PCMishouMai[] = INCBIN_U32("graphics/trainers/front_pics/pc_mai.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCureEgret[] = INCBIN_U32("graphics/trainers/front_pics/pc_egret.4bpp.lz");
+const u32 gTrainerPalette_PCCureEgret[] = INCBIN_U32("graphics/trainers/front_pics/pc_egret.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCYumeharaNozomi[] = INCBIN_U32("graphics/trainers/front_pics/pc_nozomi.4bpp.lz");
+const u32 gTrainerPalette_PCYumeharaNozomi[] = INCBIN_U32("graphics/trainers/front_pics/pc_nozomi.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCureDream[] = INCBIN_U32("graphics/trainers/front_pics/pc_dream.4bpp.lz");
+const u32 gTrainerPalette_PCCureDream[] = INCBIN_U32("graphics/trainers/front_pics/pc_dream.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCMomozonoLove[] = INCBIN_U32("graphics/trainers/front_pics/pc_love.4bpp.lz");
+const u32 gTrainerPalette_PCMomozonoLove[] = INCBIN_U32("graphics/trainers/front_pics/pc_love.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCurePeach[] = INCBIN_U32("graphics/trainers/front_pics/pc_peach.4bpp.lz");
+const u32 gTrainerPalette_PCCurePeach[] = INCBIN_U32("graphics/trainers/front_pics/pc_peach.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCHanasakiTsubomi[] = INCBIN_U32("graphics/trainers/front_pics/pc_tsubomi.4bpp.lz");
+const u32 gTrainerPalette_PCHanasakiTsubomi[] = INCBIN_U32("graphics/trainers/front_pics/pc_tsubomi.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCureBlossom[] = INCBIN_U32("graphics/trainers/front_pics/pc_blossom.4bpp.lz");
+const u32 gTrainerPalette_PCCureBlossom[] = INCBIN_U32("graphics/trainers/front_pics/pc_blossom.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCHojoHibiki[] = INCBIN_U32("graphics/trainers/front_pics/pc_hibiki.4bpp.lz");
+const u32 gTrainerPalette_PCHojoHibiki[] = INCBIN_U32("graphics/trainers/front_pics/pc_hibiki.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCureMelody[] = INCBIN_U32("graphics/trainers/front_pics/pc_melody.4bpp.lz");
+const u32 gTrainerPalette_PCCureMelody[] = INCBIN_U32("graphics/trainers/front_pics/pc_melody.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCHoshizoraMiyuki[] = INCBIN_U32("graphics/trainers/front_pics/pc_miyuki.4bpp.lz");
+const u32 gTrainerPalette_PCHoshizoraMiyuki[] = INCBIN_U32("graphics/trainers/front_pics/pc_miyuki.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCureHappy[] = INCBIN_U32("graphics/trainers/front_pics/pc_happy.4bpp.lz");
+const u32 gTrainerPalette_PCCureHappy[] = INCBIN_U32("graphics/trainers/front_pics/pc_happy.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCAidaMana[] = INCBIN_U32("graphics/trainers/front_pics/pc_mana.4bpp.lz");
+const u32 gTrainerPalette_PCAidaMana[] = INCBIN_U32("graphics/trainers/front_pics/pc_mana.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCureHeart[] = INCBIN_U32("graphics/trainers/front_pics/pc_heart.4bpp.lz");
+const u32 gTrainerPalette_PCCureHeart[] = INCBIN_U32("graphics/trainers/front_pics/pc_heart.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCSakagamiAyumi[] = INCBIN_U32("graphics/trainers/front_pics/pc_ayumi.4bpp.lz");
+const u32 gTrainerPalette_PCSakagamiAyumi[] = INCBIN_U32("graphics/trainers/front_pics/pc_ayumi.gbapal.lz");
+
+const u32 gTrainerFrontPic_PCCureEcho[] = INCBIN_U32("graphics/trainers/front_pics/pc_echo.4bpp.lz");
+const u32 gTrainerPalette_PCCureEcho[] = INCBIN_U32("graphics/trainers/front_pics/pc_echo.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYINogiWakaba[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_wakaba.4bpp.lz");
+const u32 gTrainerPalette_YYYINogiWakaba[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_wakaba.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYITakashimaYuuna[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_tyuuna.4bpp.lz");
+const u32 gTrainerPalette_YYYITakashimaYuuna[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_tyuuna.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIKooriChikage[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_chikage.4bpp.lz");
+const u32 gTrainerPalette_YYYIKooriChikage[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_chikage.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIDoiTamako[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_tamako.4bpp.lz");
+const u32 gTrainerPalette_YYYIDoiTamako[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_tamako.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIIyojimaAnzu[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_anzu.4bpp.lz");
+const u32 gTrainerPalette_YYYIIyojimaAnzu[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_anzu.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIUesatoHinata[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_hinata.4bpp.lz");
+const u32 gTrainerPalette_YYYIUesatoHinata[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_hinata.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIShiratoriUtano[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_utano.4bpp.lz");
+const u32 gTrainerPalette_YYYIShiratoriUtano[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_utano.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIFujimoriMito[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_mito.4bpp.lz");
+const u32 gTrainerPalette_YYYIFujimoriMito[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_mito.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIWashioSumi[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_sumi.4bpp.lz");
+const u32 gTrainerPalette_YYYIWashioSumi[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_sumi.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYINogiSonokoSmol[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_sonoko_smol.4bpp.lz");
+const u32 gTrainerPalette_YYYINogiSonokoSmol[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_sonoko_smol.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIMinowaGin[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_gin.4bpp.lz");
+const u32 gTrainerPalette_YYYIMinowaGin[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_gin.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIAki[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_aki.4bpp.lz");
+const u32 gTrainerPalette_YYYIAki[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_aki.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIYuukiYuuna[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_ykyuuna.4bpp.lz");
+const u32 gTrainerPalette_YYYIYuukiYuuna[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_ykyuuna.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYITougouMimori[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_mimori.4bpp.lz");
+const u32 gTrainerPalette_YYYITougouMimori[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_mimori.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIInubouzakiFuu[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_fuu.4bpp.lz");
+const u32 gTrainerPalette_YYYIInubouzakiFuu[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_fuu.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIInubouzakiItsuki[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_itsuki.4bpp.lz");
+const u32 gTrainerPalette_YYYIInubouzakiItsuki[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_itsuki.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIMiyoshiKarin[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_karin.4bpp.lz");
+const u32 gTrainerPalette_YYYIMiyoshiKarin[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_karin.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYINogiSonoko[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_sonoko.4bpp.lz");
+const u32 gTrainerPalette_YYYINogiSonoko[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_sonoko.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIKusunokiMebuki[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_mebuki.4bpp.lz");
+const u32 gTrainerPalette_YYYIKusunokiMebuki[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_mebuki.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIKagajouSuzume[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_suzume.4bpp.lz");
+const u32 gTrainerPalette_YYYIKagajouSuzume[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_suzume.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIMirokuYumiko[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_yumiko.4bpp.lz");
+const u32 gTrainerPalette_YYYIMirokuYumiko[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_yumiko.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIYamabushiShizuku[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_shizuku.4bpp.lz");
+const u32 gTrainerPalette_YYYIYamabushiShizuku[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_shizuku.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIKokudouAya[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_aya.4bpp.lz");
+const u32 gTrainerPalette_YYYIKokudouAya[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_aya.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIAkiharaSekka[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_sekka.4bpp.lz");
+const u32 gTrainerPalette_YYYIAkiharaSekka[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_sekka.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIKohaguraNatsume[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_natsume.4bpp.lz");
+const u32 gTrainerPalette_YYYIKohaguraNatsume[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_natsume.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIAkamineYuuna[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_ayuuna.4bpp.lz");
+const u32 gTrainerPalette_YYYIAkamineYuuna[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_ayuuna.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIMirokuRenge[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_renge.4bpp.lz");
+const u32 gTrainerPalette_YYYIMirokuRenge[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_renge.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIKiryuuShizuka[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_shizuka.4bpp.lz");
+const u32 gTrainerPalette_YYYIKiryuuShizuka[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_shizuka.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYITenmaMisaki[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_misaki.4bpp.lz");
+const u32 gTrainerPalette_YYYITenmaMisaki[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_misaki.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIHokkedouHime[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_hime.4bpp.lz");
+const u32 gTrainerPalette_YYYIHokkedouHime[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_hime.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIHanamotoYoshika[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_yoshika.4bpp.lz");
+const u32 gTrainerPalette_YYYIHanamotoYoshika[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_yoshika.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIFuyouLilienthalYuuna[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_flyuuna.4bpp.lz");
+const u32 gTrainerPalette_YYYIFuyouLilienthalYuuna[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_flyuuna.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIYuzukiYuuna[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_yzkyuuna.4bpp.lz");
+const u32 gTrainerPalette_YYYIYuzukiYuuna[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_yzkyuuna.gbapal.lz");
+
+const u32 gTrainerFrontPic_YYYIKarasumaKumiko[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_kumiko.4bpp.lz");
+const u32 gTrainerPalette_YYYIKarasumaKumiko[] = INCBIN_U32("graphics/trainers/front_pics/yyyi_kumiko.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYOkazakiTomoya[] = INCBIN_U32("graphics/trainers/front_pics/key_tomoya.4bpp.lz");
+const u32 gTrainerPalette_KEYOkazakiTomoya[] = INCBIN_U32("graphics/trainers/front_pics/key_tomoya.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYFurukawaNagisa[] = INCBIN_U32("graphics/trainers/front_pics/key_nagisa.4bpp.lz");
+const u32 gTrainerPalette_KEYFurukawaNagisa[] = INCBIN_U32("graphics/trainers/front_pics/key_nagisa.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYFujibayashiKyou[] = INCBIN_U32("graphics/trainers/front_pics/key_kyou.4bpp.lz");
+const u32 gTrainerPalette_KEYFujibayashiKyou[] = INCBIN_U32("graphics/trainers/front_pics/key_kyou.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYFujibayashiRyou[] = INCBIN_U32("graphics/trainers/front_pics/key_ryou.4bpp.lz");
+const u32 gTrainerPalette_KEYFujibayashiRyou[] = INCBIN_U32("graphics/trainers/front_pics/key_ryou.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYIchinoseKotomi[] = INCBIN_U32("graphics/trainers/front_pics/key_kotomi.4bpp.lz");
+const u32 gTrainerPalette_KEYIchinoseKotomi[] = INCBIN_U32("graphics/trainers/front_pics/key_kotomi.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYSakagamiTomoyo[] = INCBIN_U32("graphics/trainers/front_pics/key_tomoyo.4bpp.lz");
+const u32 gTrainerPalette_KEYSakagamiTomoyo[] = INCBIN_U32("graphics/trainers/front_pics/key_tomoyo.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYOkazakiUshio[] = INCBIN_U32("graphics/trainers/front_pics/key_ushio.4bpp.lz");
+const u32 gTrainerPalette_KEYOkazakiUshio[] = INCBIN_U32("graphics/trainers/front_pics/key_ushio.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYIllusionaryGirl[] = INCBIN_U32("graphics/trainers/front_pics/key_girl.4bpp.lz");
+const u32 gTrainerPalette_KEYIllusionaryGirl[] = INCBIN_U32("graphics/trainers/front_pics/key_girl.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYSunoharaYouhei[] = INCBIN_U32("graphics/trainers/front_pics/key_youhei.4bpp.lz");
+const u32 gTrainerPalette_KEYSunoharaYouhei[] = INCBIN_U32("graphics/trainers/front_pics/key_youhei.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYIbukiFuuko[] = INCBIN_U32("graphics/trainers/front_pics/key_fuuko.4bpp.lz");
+const u32 gTrainerPalette_KEYIbukiFuuko[] = INCBIN_U32("graphics/trainers/front_pics/key_fuuko.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYAizawaYuichi[] = INCBIN_U32("graphics/trainers/front_pics/key_yuichi.4bpp.lz");
+const u32 gTrainerPalette_KEYAizawaYuichi[] = INCBIN_U32("graphics/trainers/front_pics/key_yuichi.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYTsukimiyaAyu[] = INCBIN_U32("graphics/trainers/front_pics/key_ayu.4bpp.lz");
+const u32 gTrainerPalette_KEYTsukimiyaAyu[] = INCBIN_U32("graphics/trainers/front_pics/key_ayu.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYMinaseMiyuki[] = INCBIN_U32("graphics/trainers/front_pics/key_miyuki.4bpp.lz");
+const u32 gTrainerPalette_KEYMinaseMiyuki[] = INCBIN_U32("graphics/trainers/front_pics/key_miyuki.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYSawatariMakoto[] = INCBIN_U32("graphics/trainers/front_pics/key_makoto.4bpp.lz");
+const u32 gTrainerPalette_KEYSawatariMakoto[] = INCBIN_U32("graphics/trainers/front_pics/key_makoto.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYMisakaShiori[] = INCBIN_U32("graphics/trainers/front_pics/key_shiori.4bpp.lz");
+const u32 gTrainerPalette_KEYMisakaShiori[] = INCBIN_U32("graphics/trainers/front_pics/key_shiori.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYKawasumiMai[] = INCBIN_U32("graphics/trainers/front_pics/key_mai.4bpp.lz");
+const u32 gTrainerPalette_KEYKawasumiMai[] = INCBIN_U32("graphics/trainers/front_pics/key_mai.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYKunisakiYukito[] = INCBIN_U32("graphics/trainers/front_pics/key_yukito.4bpp.lz");
+const u32 gTrainerPalette_KEYKunisakiYukito[] = INCBIN_U32("graphics/trainers/front_pics/key_yukito.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYKamioMisuzu[] = INCBIN_U32("graphics/trainers/front_pics/key_misuzu.4bpp.lz");
+const u32 gTrainerPalette_KEYKamioMisuzu[] = INCBIN_U32("graphics/trainers/front_pics/key_misuzu.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYTohnoMinagi[] = INCBIN_U32("graphics/trainers/front_pics/key_minagi.4bpp.lz");
+const u32 gTrainerPalette_KEYTohnoMinagi[] = INCBIN_U32("graphics/trainers/front_pics/key_minagi.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYKirishimaKano[] = INCBIN_U32("graphics/trainers/front_pics/key_kano.4bpp.lz");
+const u32 gTrainerPalette_KEYKirishimaKano[] = INCBIN_U32("graphics/trainers/front_pics/key_kano.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYKannabiNoMikoto[] = INCBIN_U32("graphics/trainers/front_pics/key_kanna.4bpp.lz");
+const u32 gTrainerPalette_KEYKannabiNoMikoto[] = INCBIN_U32("graphics/trainers/front_pics/key_kanna.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYNaoeRiki[] = INCBIN_U32("graphics/trainers/front_pics/key_riki.4bpp.lz");
+const u32 gTrainerPalette_KEYNaoeRiki[] = INCBIN_U32("graphics/trainers/front_pics/key_riki.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYNatsumeRin[] = INCBIN_U32("graphics/trainers/front_pics/key_rin.4bpp.lz");
+const u32 gTrainerPalette_KEYNatsumeRin[] = INCBIN_U32("graphics/trainers/front_pics/key_rin.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYNatsumeKyousuke[] = INCBIN_U32("graphics/trainers/front_pics/key_kyousuke.4bpp.lz");
+const u32 gTrainerPalette_KEYNatsumeKyousuke[] = INCBIN_U32("graphics/trainers/front_pics/key_kyousuke.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYInoharaMasato[] = INCBIN_U32("graphics/trainers/front_pics/key_masato.4bpp.lz");
+const u32 gTrainerPalette_KEYInoharaMasato[] = INCBIN_U32("graphics/trainers/front_pics/key_masato.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYMiyazawaKengo[] = INCBIN_U32("graphics/trainers/front_pics/key_kengo.4bpp.lz");
+const u32 gTrainerPalette_KEYMiyazawaKengo[] = INCBIN_U32("graphics/trainers/front_pics/key_kengo.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYKamikitaKomari[] = INCBIN_U32("graphics/trainers/front_pics/key_komari.4bpp.lz");
+const u32 gTrainerPalette_KEYKamikitaKomari[] = INCBIN_U32("graphics/trainers/front_pics/key_komari.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYSaigusaHaruka[] = INCBIN_U32("graphics/trainers/front_pics/key_haruka.4bpp.lz");
+const u32 gTrainerPalette_KEYSaigusaHaruka[] = INCBIN_U32("graphics/trainers/front_pics/key_haruka.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYKurugayaYuiko[] = INCBIN_U32("graphics/trainers/front_pics/key_yuiko.4bpp.lz");
+const u32 gTrainerPalette_KEYKurugayaYuiko[] = INCBIN_U32("graphics/trainers/front_pics/key_yuiko.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYNuomiKudryavka[] = INCBIN_U32("graphics/trainers/front_pics/key_kudryavka.4bpp.lz");
+const u32 gTrainerPalette_KEYNuomiKudryavka[] = INCBIN_U32("graphics/trainers/front_pics/key_kudryavka.gbapal.lz");
+
+const u32 gTrainerFrontPic_KEYNishizonoMio[] = INCBIN_U32("graphics/trainers/front_pics/key_mio.4bpp.lz");
+const u32 gTrainerPalette_KEYNishizonoMio[] = INCBIN_U32("graphics/trainers/front_pics/key_mio.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSHoshitsukiMiki[] = INCBIN_U32("graphics/trainers/front_pics/bghs_miki.4bpp.lz");
+const u32 gTrainerPalette_BGHSHoshitsukiMiki[] = INCBIN_U32("graphics/trainers/front_pics/bghs_miki.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSWakabaSubaru[] = INCBIN_U32("graphics/trainers/front_pics/bghs_subaru.4bpp.lz");
+const u32 gTrainerPalette_BGHSWakabaSubaru[] = INCBIN_U32("graphics/trainers/front_pics/bghs_subaru.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSNarumiHaruka[] = INCBIN_U32("graphics/trainers/front_pics/bghs_haruka.4bpp.lz");
+const u32 gTrainerPalette_BGHSNarumiHaruka[] = INCBIN_U32("graphics/trainers/front_pics/bghs_haruka.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSAmanoNozomi[] = INCBIN_U32("graphics/trainers/front_pics/bghs_nozomi.4bpp.lz");
+const u32 gTrainerPalette_BGHSAmanoNozomi[] = INCBIN_U32("graphics/trainers/front_pics/bghs_nozomi.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSHimukaiYuri[] = INCBIN_U32("graphics/trainers/front_pics/bghs_yuri.4bpp.lz");
+const u32 gTrainerPalette_BGHSHimukaiYuri[] = INCBIN_U32("graphics/trainers/front_pics/bghs_yuri.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSTokiwaKurumi[] = INCBIN_U32("graphics/trainers/front_pics/bghs_kurumi.4bpp.lz");
+const u32 gTrainerPalette_BGHSTokiwaKurumi[] = INCBIN_U32("graphics/trainers/front_pics/bghs_kurumi.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSTsubuzakiAnko[] = INCBIN_U32("graphics/trainers/front_pics/bghs_anko.4bpp.lz");
+const u32 gTrainerPalette_BGHSTsubuzakiAnko[] = INCBIN_U32("graphics/trainers/front_pics/bghs_anko.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSSerizawaRenge[] = INCBIN_U32("graphics/trainers/front_pics/bghs_renge.4bpp.lz");
+const u32 gTrainerPalette_BGHSSerizawaRenge[] = INCBIN_U32("graphics/trainers/front_pics/bghs_renge.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSKusunokiAsuha[] = INCBIN_U32("graphics/trainers/front_pics/bghs_asuha.4bpp.lz");
+const u32 gTrainerPalette_BGHSKusunokiAsuha[] = INCBIN_U32("graphics/trainers/front_pics/bghs_asuha.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSFujimiyaSakura[] = INCBIN_U32("graphics/trainers/front_pics/bghs_sakura.4bpp.lz");
+const u32 gTrainerPalette_BGHSFujimiyaSakura[] = INCBIN_U32("graphics/trainers/front_pics/bghs_sakura.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSMinamiHinata[] = INCBIN_U32("graphics/trainers/front_pics/bghs_hinata.4bpp.lz");
+const u32 gTrainerPalette_BGHSMinamiHinata[] = INCBIN_U32("graphics/trainers/front_pics/bghs_hinata.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSSendoinKaede[] = INCBIN_U32("graphics/trainers/front_pics/bghs_kaede.4bpp.lz");
+const u32 gTrainerPalette_BGHSSendoinKaede[] = INCBIN_U32("graphics/trainers/front_pics/bghs_kaede.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSWatagiMichelle[] = INCBIN_U32("graphics/trainers/front_pics/bghs_michelle.4bpp.lz");
+const u32 gTrainerPalette_BGHSWatagiMichelle[] = INCBIN_U32("graphics/trainers/front_pics/bghs_michelle.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSAsahinaKokomi[] = INCBIN_U32("graphics/trainers/front_pics/bghs_kokomi.4bpp.lz");
+const u32 gTrainerPalette_BGHSAsahinaKokomi[] = INCBIN_U32("graphics/trainers/front_pics/bghs_kokomi.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSHasumiUrara[] = INCBIN_U32("graphics/trainers/front_pics/bghs_urara.4bpp.lz");
+const u32 gTrainerPalette_BGHSHasumiUrara[] = INCBIN_U32("graphics/trainers/front_pics/bghs_urara.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSSadone[] = INCBIN_U32("graphics/trainers/front_pics/bghs_sadone.4bpp.lz");
+const u32 gTrainerPalette_BGHSSadone[] = INCBIN_U32("graphics/trainers/front_pics/bghs_sadone.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSKougamiKanon[] = INCBIN_U32("graphics/trainers/front_pics/bghs_kanon.4bpp.lz");
+const u32 gTrainerPalette_BGHSKougamiKanon[] = INCBIN_U32("graphics/trainers/front_pics/bghs_kanon.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSKuniedaShiho[] = INCBIN_U32("graphics/trainers/front_pics/bghs_shiho.4bpp.lz");
+const u32 gTrainerPalette_BGHSKuniedaShiho[] = INCBIN_U32("graphics/trainers/front_pics/bghs_shiho.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSMisaki[] = INCBIN_U32("graphics/trainers/front_pics/bghs_misaki.4bpp.lz");
+const u32 gTrainerPalette_BGHSMisaki[] = INCBIN_U32("graphics/trainers/front_pics/bghs_misaki.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSItsukiYakumo[] = INCBIN_U32("graphics/trainers/front_pics/bghs_yakumo.4bpp.lz");
+const u32 gTrainerPalette_BGHSItsukiYakumo[] = INCBIN_U32("graphics/trainers/front_pics/bghs_yakumo.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSMitsurugiFuran[] = INCBIN_U32("graphics/trainers/front_pics/bghs_furan.4bpp.lz");
+const u32 gTrainerPalette_BGHSMitsurugiFuran[] = INCBIN_U32("graphics/trainers/front_pics/bghs_furan.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSNanashimaAoi[] = INCBIN_U32("graphics/trainers/front_pics/bghs_aoi.4bpp.lz");
+const u32 gTrainerPalette_BGHSNanashimaAoi[] = INCBIN_U32("graphics/trainers/front_pics/bghs_aoi.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSAmeyaErika[] = INCBIN_U32("graphics/trainers/front_pics/bghs_erika.4bpp.lz");
+const u32 gTrainerPalette_BGHSAmeyaErika[] = INCBIN_U32("graphics/trainers/front_pics/bghs_erika.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSSekaideMari[] = INCBIN_U32("graphics/trainers/front_pics/bghs_mari.4bpp.lz");
+const u32 gTrainerPalette_BGHSSekaideMari[] = INCBIN_U32("graphics/trainers/front_pics/bghs_mari.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSEvina[] = INCBIN_U32("graphics/trainers/front_pics/bghs_evina.4bpp.lz");
+const u32 gTrainerPalette_BGHSEvina[] = INCBIN_U32("graphics/trainers/front_pics/bghs_evina.gbapal.lz");
+
+const u32 gTrainerFrontPic_BGHSIris[] = INCBIN_U32("graphics/trainers/front_pics/bghs_iris.4bpp.lz");
+const u32 gTrainerPalette_BGHSIris[] = INCBIN_U32("graphics/trainers/front_pics/bghs_iris.gbapal.lz");
+
+const u32 gTrainerFrontPic_ETCCureUnion[] = INCBIN_U32("graphics/trainers/front_pics/etc_union.4bpp.lz");
+const u32 gTrainerPalette_ETCCureUnion[] = INCBIN_U32("graphics/trainers/front_pics/etc_union.gbapal.lz");
+
+const u32 gTrainerFrontPic_ETCKadoyaTsukasa[] = INCBIN_U32("graphics/trainers/front_pics/etc_tsukasa.4bpp.lz");
+const u32 gTrainerPalette_ETCKadoyaTsukasa[] = INCBIN_U32("graphics/trainers/front_pics/etc_tsukasa.gbapal.lz");
+
+const u32 gTrainerFrontPic_ETCDaikiKaito[] = INCBIN_U32("graphics/trainers/front_pics/etc_kaito.4bpp.lz");
+const u32 gTrainerPalette_ETCDaikiKaito[] = INCBIN_U32("graphics/trainers/front_pics/etc_kaito.gbapal.lz");
+
+const u32 gTrainerFrontPic_ETCKamenRiderDeLast[] = INCBIN_U32("graphics/trainers/front_pics/etc_krdelast.4bpp.lz");
+const u32 gTrainerPalette_ETCKamenRiderDeLast[] = INCBIN_U32("graphics/trainers/front_pics/etc_krdelast.gbapal.lz");
 
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");

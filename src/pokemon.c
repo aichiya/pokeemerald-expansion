@@ -7707,6 +7707,27 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PIKE_QUEEN:
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
+        case TRAINER_CLASS_TH_MIKO_REIMU1:
+        	return MUS_TH_SKYHIGH;
+        case TRAINER_CLASS_TH_MIKO_REIMU2:
+        	return MUS_THPPZGSK_DREAMEXPRESS;
+        case TRAINER_CLASS_TH_MIKO_SANAE:
+        	return MUS_THPPZGSK_PRIMALSCENE;
+        case TRAINER_CLASS_TH_MAGICIAN_MARISA:
+        	return MUS_THPPZGSK_WITCHBALL;
+        case TRAINER_CLASS_TH_MAGICIAN_ALICE:
+        	return MUS_THPPZGSK_DOLLJUDGEMENT;
+        case TRAINER_CLASS_TH_MAGICIAN_PATCHOULI:
+            return MUS_THPPZGSK_LOCKEDGIRL;
+        case TRAINER_CLASS_TH_MAID_SAKUYA:
+            return MUS_THPPZGSK_LUNADIAL;
+        case TRAINER_CLASS_SH_MAID:
+        	return MUS_SH_PANDORA;
+        case TRAINER_CLASS_WANDERER:
+        	return MUS_PC_ULTRACUREHAPPYTANJOU;
+        case TRAINER_CLASS_PASSER_BY_TSUKASA:
+        case TRAINER_CLASS_KAMEN_RIDER_DECADE:
+        	return MUS_DCD_JTDORCHESTRA;
         default:
             return MUS_VS_TRAINER;
         }

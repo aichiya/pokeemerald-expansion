@@ -12434,3 +12434,114 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMonItemCustomMoves sParty_TrainerTest1[] = {
+    {
+    .iv = 255,
+    .lvl = 70,
+    .species = SPECIES_RAYQUAZA,
+    .heldItem = ITEM_LIFE_ORB,
+    .moves = {MOVE_DRAGON_ASCENT, MOVE_AERIAL_ACE, MOVE_EARTHQUAKE, MOVE_ROOST}
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_TrainerTest2[] = {
+    {
+    .iv = 255,
+    .lvl = 70,
+    .species = SPECIES_KYOGRE,
+    .heldItem = ITEM_BLUE_ORB,
+    .moves = {MOVE_PRECIPICE_BLADES, MOVE_THUNDER_PUNCH, MOVE_ROCK_SLIDE, MOVE_BULK_UP}
+    },
+    {
+    .iv = 255,
+    .lvl = 70,
+    .species = SPECIES_GROUDON,
+    .heldItem = ITEM_RED_ORB,
+    .moves = {MOVE_ORIGIN_PULSE, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_CALM_MIND}
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_TrainerTest3[] = {
+    {
+    .iv = 255,
+    .lvl = 70,
+    .species = SPECIES_MEW,
+    .heldItem = ITEM_MEWNIUM_Z,
+    .moves = {MOVE_PSYCHIC, MOVE_FUSION_FLARE, MOVE_FUSION_BOLT, MOVE_SEED_FLARE}
+    },
+    {
+    .iv = 255,
+    .lvl = 70,
+    .species = SPECIES_MEWTWO,
+    .heldItem = ITEM_MEWTWONITE_Y,
+    .moves = {MOVE_PSYSTRIKE, MOVE_SHADOW_BALL, MOVE_FLAMETHROWER, MOVE_ENERGY_BALL}
+    },
+    {
+    .iv = 255,
+    .lvl = 70,
+    .species = SPECIES_FLOETTE_ETERNAL_FLOWER,
+    .heldItem = ITEM_CHOICE_SPECS,
+    .moves = {MOVE_LIGHT_OF_RUIN, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_TrainerTest4[] = {
+    {
+    .iv = 255,
+    .lvl = 77,
+    .species = SPECIES_SKARMORY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_TrainerTest5[] = {
+    {
+    .iv = 255,
+    .lvl = 77,
+    .species = SPECIES_SKARMORY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_TrainerTest6[] = {
+    {
+    .iv = 255,
+    .lvl = 77,
+    .species = SPECIES_SKARMORY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_TrainerTest7[] = {
+    {
+    .iv = 255,
+    .lvl = 77,
+    .species = SPECIES_SKARMORY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_TrainerTest8[] = {
+    {
+    .iv = 255,
+    .lvl = 77,
+    .species = SPECIES_SKARMORY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    }
+};
+
+static const struct TrainerMonItemCustomMoves sParty_TrainerTest9[] = {
+    {
+    .iv = 255,
+    .lvl = 77,
+    .species = SPECIES_SKARMORY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    }
+};

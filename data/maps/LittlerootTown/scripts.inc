@@ -491,19 +491,22 @@ LitterootTown_EventScript_CustomSign6::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
-	givemon SPECIES_RAYQUAZA, 70, ITEM_ELECTRIUM_Z
+	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
-	setmonmove 0, 0, MOVE_DRAGON_ASCENT
-	setmonmove 0, 1, MOVE_THUNDERBOLT
-	setmonmove 0, 2, MOVE_EXTREME_SPEED
-	setmonmove 0, 3, MOVE_EARTHQUAKE
+	setmonmove 0, 0, MOVE_PSYCHIC
+	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
+	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
+	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
+	givemon SPECIES_RAYQUAZA, 100, ITEM_ELECTRIUM_Z
+	setmoneventlegal 1
+	setmonmetlocation 1, 255
+	setmonmove 1, 0, MOVE_DRAGON_ASCENT
+	setmonmove 1, 1, MOVE_THUNDERBOLT
+	setmonmove 1, 2, MOVE_EXTREME_SPEED
+	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
-	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER
-	waitmoncry
-	seteventmon SPECIES_KYOGRE, 70, ITEM_BLUE_ORB
-	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_THPPZGSK_PLASTICMIND, FALSE 			@ MUS_HG_VS_KYOGRE_GROUDON
+	trainerbattle_single TRAINER_TEST_1, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
 	waitstate
 	releaseall
 	end
@@ -529,19 +532,22 @@ LitterootTown_EventScript_CustomSign7::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
-	givemon SPECIES_MEW, 70, ITEM_MEWNIUM_Z
+	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
 	setmonmove 0, 0, MOVE_PSYCHIC
 	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
 	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
 	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
+	givemon SPECIES_RAYQUAZA, 100, ITEM_ELECTRIUM_Z
+	setmoneventlegal 1
+	setmonmetlocation 1, 255
+	setmonmove 1, 0, MOVE_DRAGON_ASCENT
+	setmonmove 1, 1, MOVE_THUNDERBOLT
+	setmonmove 1, 2, MOVE_EXTREME_SPEED
+	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
-	playmoncry SPECIES_MEW, CRY_MODE_ENCOUNTER
-	waitmoncry
-	seteventmon SPECIES_MEW, 70, ITEM_MEWNIUM_Z
-	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_HG_VS_GYM_LEADER_KANTO, FALSE
+	trainerbattle_single TRAINER_TEST_2, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
 	waitstate
 	releaseall
 	end
@@ -567,22 +573,38 @@ LitterootTown_EventScript_CustomSign8::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
-	givemon SPECIES_RAYQUAZA, 100, ITEM_DRAGONIUM_Z
+	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
-	setmonmove 0, 0, MOVE_V_CREATE
-	setmonmove 0, 1, MOVE_DRAGON_ASCENT
-	setmonmove 0, 2, MOVE_FLEUR_CANNON
-	setmonmove 0, 3, MOVE_SPACIAL_REND
+	setmonmove 0, 0, MOVE_PSYCHIC
+	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
+	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
+	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
+	givemon SPECIES_RAYQUAZA, 100, ITEM_ELECTRIUM_Z
+	setmoneventlegal 1
+	setmonmetlocation 1, 255
+	setmonmove 1, 0, MOVE_DRAGON_ASCENT
+	setmonmove 1, 1, MOVE_THUNDERBOLT
+	setmonmove 1, 2, MOVE_EXTREME_SPEED
+	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
-	playmoncry SPECIES_RAYQUAZA, CRY_MODE_ENCOUNTER
-	waitmoncry
-	seteventmon SPECIES_RAYQUAZA, 70, ITEM_NONE
-	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_HG_VS_CHAMPION, FALSE
+	trainerbattle_single TRAINER_TEST_3, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
 	waitstate
 	releaseall
 	end
+
+LitterootTown_Text_TrainerTestIntro::
+	.string "Trainer battle test.$"
+
+LitterootTown_Text_TrainerTestDefeat::
+	.string "Whoah, wow! You made a much bigger\n"
+	.string "splash than I expected!\p"
+	.string "Okay, you've got me.$"
+
+LitterootTown_EventScript_TrainerTestDefeated::
+	releaseall
+	end
+
 
 LittlerootTown_EventScript_GiveRunningShoesTrigger0::
 	lockall

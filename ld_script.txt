@@ -1549,6 +1549,8 @@ SECTIONS {
         sound/songs/mus_thpp_superneoexpress.o(.rodata);
         sound/songs/mus_thppzgsk_historyofthemoon.o(.rodata);
         sound/songs/mus_thppzgsk_dolljudgement.o(.rodata);
+        sound/songs/mus_key_nagisa_cut.o(.rodata);
+        sound/songs/mus_instrument_test.o(.rodata);
     } =0
 
     lib_rodata :

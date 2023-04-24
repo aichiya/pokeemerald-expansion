@@ -461,11 +461,11 @@ LitterootTown_EventScript_CustomSign5::
 	setmonmove 0, 2, MOVE_SURGING_STRIKES
 	setmonmove 0, 3, MOVE_VICTORY_DANCE
 	delay 30
-	playmoncry SPECIES_GROUDON, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
 	waitmoncry
-	seteventmon SPECIES_GROUDON, 70, ITEM_NONE
+	seteventmon SPECIES_NECROZMA_ULTRA, 70, ITEM_ULTRANECROZIUM_Z
 	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_SH_PANDORA, FALSE
+	playbgm MUS_KEY_NAGISA_CUT, FALSE
 	waitstate
 	releaseall
 	end
@@ -507,7 +507,6 @@ LitterootTown_EventScript_CustomSign6::
 	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
 	trainerbattle_single TRAINER_TEST_1, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
-	waitstate
 	releaseall
 	end
 
@@ -548,7 +547,6 @@ LitterootTown_EventScript_CustomSign7::
 	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
 	trainerbattle_single TRAINER_TEST_2, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
-	waitstate
 	releaseall
 	end
 
@@ -589,7 +587,6 @@ LitterootTown_EventScript_CustomSign8::
 	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
 	trainerbattle_single TRAINER_TEST_3, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
-	waitstate
 	releaseall
 	end
 

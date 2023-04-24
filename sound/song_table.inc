@@ -914,6 +914,8 @@ gSongTable::
 	song mus_thpp_superneoexpress, 0, 0
 	song mus_thppzgsk_historyofthemoon, 0, 0
 	song mus_thppzgsk_dolljudgement, 0, 0
+	song mus_key_nagisa_cut, 0, 0
+	song mus_instrument_test, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -849,7 +849,10 @@
 #define MUS_THPPZGSK_HISTORYOFTHEMOON			911 // PC longer version, loop fixed
 #define MUS_THPPZGSK_DOLLJUDGEMENT				912 // VS longer version, loop fixed
 
-#define END_MUS                     MUS_THPPZGSK_DOLLJUDGEMENT
+#define MUS_KEY_NAGISA_CUT						913
+#define MUS_INSTRUMENT_TEST						914
+
+#define END_MUS                     MUS_INSTRUMENT_TEST
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

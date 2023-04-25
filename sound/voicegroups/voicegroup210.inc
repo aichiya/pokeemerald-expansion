@@ -1,0 +1,130 @@
+	.align 2
+voicegroup210:: @ 
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_3, 170, 180, 160, 235                                   @ 000 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243                                   @ 001 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_5, 255, 205, 220, 243                                   @ 002 | Direct | need to adjust forced pan = 65 c_v+1
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_6, 170, 160, 180, 210                                   @ 003 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_7, 255, 0, 255, 235                                     @ 004 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_8, 250, 250, 250, 190                                   @ 005 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_11, 170, 160, 180, 210                                  @ 006 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_19, 230, 230, 230, 230                                  @ 007 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_20, 230, 230, 230, 200                                  @ 008 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_103, 240, 200, 245, 220                                 @ 009 | Direct |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 010 | Square-1 |

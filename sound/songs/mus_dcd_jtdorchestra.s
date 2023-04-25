@@ -19,10 +19,10 @@ mus_dcd_jtdorchestra_1:
 	.byte	KEYSH , mus_dcd_jtdorchestra_key+0
 @ 000   ----------------------------------------
 	.byte	TEMPO , 98*mus_dcd_jtdorchestra_tbs/2
-	.byte		VOICE , 105
+	.byte		VOICE , 46
 	.byte		VOL   , 63*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W08
-	.byte		N30   , Bn2 , v080
+	.byte		N30   , Bn2 , v096
 	.byte	W03
 	.byte		        Fs3 
 	.byte	W03
@@ -32,7 +32,7 @@ mus_dcd_jtdorchestra_1:
 	.byte	W03
 	.byte		        Cs5 
 	.byte	W18
-	.byte		        Bn2 , v048
+	.byte		        Bn2 , v064
 	.byte	W03
 	.byte		        Fs3 
 	.byte	W03
@@ -42,7 +42,7 @@ mus_dcd_jtdorchestra_1:
 	.byte	W03
 	.byte		        Cs5 
 	.byte	W18
-	.byte		TIE   , Bn2 , v032
+	.byte		TIE   , Bn2 , v048
 	.byte	W03
 	.byte		        Fs3 
 	.byte	W03
@@ -54,15 +54,15 @@ mus_dcd_jtdorchestra_1:
 	.byte	W16
 @ 001   ----------------------------------------
 	.byte	W02
-	.byte		N12   , Ds5 , v080
+	.byte		N12   , Ds5 , v096
 	.byte	W12
 	.byte		N24   , Cs5 
 	.byte	W24
-	.byte		        Cs5 , v032
+	.byte		        Cs5 , v048
 	.byte	W24
-	.byte		        Cs5 , v024
+	.byte		        Cs5 , v040
 	.byte	W24
-	.byte		N12   , Bn4 , v080
+	.byte		N12   , Bn4 , v096
 	.byte	W10
 @ 002   ----------------------------------------
 	.byte	TEMPO , 95*mus_dcd_jtdorchestra_tbs/2
@@ -88,7 +88,7 @@ mus_dcd_jtdorchestra_1:
 	.byte	W06
 	.byte		N24   , Cs5 
 	.byte	W14
-	.byte		N30   , Bn2 , v048
+	.byte		N30   , Bn2 , v064
 	.byte	W04
 	.byte		        Ds3 
 	.byte	W03
@@ -97,9 +97,9 @@ mus_dcd_jtdorchestra_1:
 	.byte		        As3 
 	.byte		N12   , Cs5 
 	.byte	W12
-	.byte		N22   , Cs5 , v080
+	.byte		N22   , Cs5 , v096
 	.byte	W08
-	.byte		TIE   , Bn2 , v032
+	.byte		TIE   , Bn2 , v048
 	.byte	W04
 	.byte		        Ds3 
 	.byte	W03
@@ -107,21 +107,21 @@ mus_dcd_jtdorchestra_1:
 	.byte	W03
 	.byte		        As3 
 	.byte	W04
-	.byte		N12   , Bn4 , v064
+	.byte		N12   , Bn4 , v080
 	.byte	W02
-	.byte		        Ds5 , v080
+	.byte		        Ds5 , v096
 	.byte	W10
 @ 003   ----------------------------------------
 	.byte	TEMPO , 92*mus_dcd_jtdorchestra_tbs/2
 	.byte	W02
-	.byte		N24   , As4 , v064
-	.byte		N24   , Cs5 , v080
+	.byte		N24   , As4 , v080
+	.byte		N24   , Cs5 , v096
 	.byte	W24
-	.byte		        As4 , v040
-	.byte		N24   , Cs5 , v056
+	.byte		        As4 , v056
+	.byte		N24   , Cs5 , v072
 	.byte	W24
-	.byte		        As4 , v012
-	.byte		N24   , Cs5 , v028
+	.byte		        As4 , v028
+	.byte		N24   , Cs5 , v044
 	.byte	W24
 	.byte	W03
 	.byte		EOT   , Bn2 
@@ -134,7 +134,7 @@ mus_dcd_jtdorchestra_1:
 	.byte	W09
 @ 004   ----------------------------------------
 	.byte	TEMPO , 95*mus_dcd_jtdorchestra_tbs/2
-	.byte		N12   , As4 , v084
+	.byte		N12   , As4 , v100
 	.byte	W12
 	.byte		        Bn4 
 	.byte	W12
@@ -150,30 +150,30 @@ mus_dcd_jtdorchestra_1:
 	.byte		N36   , Fn5 
 	.byte	W24
 	.byte	W01
-	.byte		        As2 , v060
+	.byte		        As2 , v076
 	.byte	W04
 	.byte		        Cs3 
 	.byte	W03
 	.byte		        Fn3 
 	.byte	W04
 	.byte		        Gs3 
-	.byte		N24   , As4 , v084
+	.byte		N24   , As4 , v100
 	.byte	W24
 @ 005   ----------------------------------------
 	.byte	TEMPO , 91*mus_dcd_jtdorchestra_tbs/2
-	.byte		N12   , Gs4 , v064
+	.byte		N12   , Gs4 , v080
 	.byte	W01
-	.byte		N36   , As2 , v036
+	.byte		N36   , As2 , v052
 	.byte	W04
 	.byte		        Cs3 
 	.byte	W03
 	.byte		        Fn3 
 	.byte	W04
 	.byte		        Gs3 
-	.byte		N84   , As4 , v084
+	.byte		N84   , As4 , v100
 	.byte	W24
 	.byte	W01
-	.byte		N72   , As2 , v020
+	.byte		N72   , As2 , v036
 	.byte	W04
 	.byte		        Cs3 
 	.byte	W03
@@ -183,26 +183,26 @@ mus_dcd_jtdorchestra_1:
 	.byte	W48
 @ 006   ----------------------------------------
 	.byte	TEMPO , 99*mus_dcd_jtdorchestra_tbs/2
-	.byte		N12   , Fn5 , v080
+	.byte		N12   , Fn5 , v092
 	.byte	W12
-	.byte		        Fn5 , v060
+	.byte		        Fn5 , v076
 	.byte	W12
-	.byte		        Fn5 , v080
+	.byte		        Fn5 , v092
 	.byte	W03
-	.byte		N44   , Ds3 , v064
+	.byte		N44   , Ds3 , v076
 	.byte	W04
 	.byte		        Gs3 
 	.byte	W03
 	.byte		        As3 
 	.byte	W02
-	.byte		N36   , Fn5 , v080
+	.byte		N36   , Fn5 , v092
 	.byte	W02
-	.byte		N44   , Cs4 , v064
+	.byte		N44   , Cs4 , v076
 	.byte	W32
 	.byte	W02
-	.byte		        Fn5 , v044
+	.byte		        Fn5 , v060
 	.byte	W02
-	.byte		        Ds3 
+	.byte		        Ds3 , v056
 	.byte	W04
 	.byte		        Gs3 
 	.byte	W03
@@ -213,11 +213,11 @@ mus_dcd_jtdorchestra_1:
 @ 007   ----------------------------------------
 	.byte	TEMPO , 95*mus_dcd_jtdorchestra_tbs/2
 	.byte	W22
-	.byte		N72   , Ds5 , v052
+	.byte		N72   , Ds5 , v064
 	.byte	W02
-	.byte		N36   , Fs5 , v080
+	.byte		N36   , Fs5 , v092
 	.byte	W01
-	.byte		N60   , Ds3 , v028
+	.byte		N60   , Ds3 , v044
 	.byte	W04
 	.byte		        Gs3 
 	.byte	W03
@@ -225,10 +225,10 @@ mus_dcd_jtdorchestra_1:
 	.byte	W04
 	.byte		        Cs4 
 	.byte	W24
-	.byte		N36   , Fs5 , v032
+	.byte		N36   , Fs5 , v048
 	.byte	W36
 @ 008   ----------------------------------------
-	.byte		        Cs3 , v064
+	.byte		        Cs3 , v080
 	.byte	W04
 	.byte		        Fs3 
 	.byte	W02
@@ -254,7 +254,7 @@ mus_dcd_jtdorchestra_1:
 	.byte	W03
 	.byte		        Cs5 
 	.byte	W15
-	.byte		N28   , Bn2 , v028
+	.byte		N28   , Bn2 , v044
 	.byte	W04
 	.byte		        Cs3 
 	.byte	W04
@@ -267,7 +267,7 @@ mus_dcd_jtdorchestra_1:
 @ 009   ----------------------------------------
 	.byte	TEMPO , 93*mus_dcd_jtdorchestra_tbs/2
 	.byte	W05
-	.byte		N28   , Bn2 , v016
+	.byte		N28   , Bn2 , v028
 	.byte	W04
 	.byte		        Cs3 
 	.byte	W04
@@ -277,18 +277,18 @@ mus_dcd_jtdorchestra_1:
 	.byte	W03
 	.byte		        Cs5 
 	.byte	W17
-	.byte		N28   , Bn2 , v004
+	.byte		N28   , Bn2 , v016
 	.byte	W04
 	.byte		        Cs3 
 	.byte	W03
-	.byte		N30   , Ds5 , v068
+	.byte		N30   , Ds5 , v084
 	.byte	W01
-	.byte		N28   , Fs3 , v004
+	.byte		N28   , Fs3 , v016
 	.byte	W02
 	.byte		N24   , Fs4 
 	.byte	W24
 	.byte	W03
-	.byte		N16   , Cs5 , v068
+	.byte		N16   , Cs5 , v084
 	.byte	W16
 	.byte		N20   , Bn4 
 	.byte	W08
@@ -299,30 +299,30 @@ mus_dcd_jtdorchestra_1:
 	.byte	W48
 	.byte		N36   , Ds4 
 	.byte	W28
-	.byte		N80   , Cs3 , v060
+	.byte		N80   , Cs3 , v076
 	.byte	W04
 	.byte		N76   , Fs3 
 	.byte	W04
 @ 011   ----------------------------------------
 	.byte		N72   , As3 
-	.byte		N03   , Ds4 , v068
+	.byte		N03   , Ds4 , v084
 	.byte	W03
 	.byte		        Cs4 
 	.byte	W03
 	.byte		N40   , As4 
 	.byte	W42
-	.byte		N24   , As4 , v044
+	.byte		N24   , As4 , v056
 	.byte	W24
-	.byte		        Ds4 , v060
-	.byte		N24   , Bn4 , v080
+	.byte		        Ds4 , v076
+	.byte		N24   , Bn4 , v096
 	.byte	W24
 @ 012   ----------------------------------------
 	.byte	TEMPO , 95*mus_dcd_jtdorchestra_tbs/2
-	.byte		N36   , Cs4 , v060
-	.byte		N36   , As4 , v080
+	.byte		N36   , Cs4 , v076
+	.byte		N36   , As4 , v096
 	.byte	W36
-	.byte		TIE   , Bn3 , v060
-	.byte		TIE   , Gs4 , v080
+	.byte		TIE   , Bn3 , v076
+	.byte		TIE   , Gs4 , v096
 	.byte	W60
 @ 013   ----------------------------------------
 	.byte	TEMPO , 93*mus_dcd_jtdorchestra_tbs/2
@@ -341,7 +341,6 @@ mus_dcd_jtdorchestra_1:
 	.byte	W96
 @ 016   ----------------------------------------
 	.byte	TEMPO , 107*mus_dcd_jtdorchestra_tbs/2
-	.byte		VOICE , 105
 	.byte		VOL   , 63*mus_dcd_jtdorchestra_mvl/mxv
 	.byte		N48   , Ds4 , v112
 	.byte	W48
@@ -545,16 +544,15 @@ mus_dcd_jtdorchestra_1_018:
 	.byte		EOT   
 	.byte	W12
 @ 042   ----------------------------------------
-mus_dcd_jtdorchestra_1_042:
 	.byte		VOICE , 49
-	.byte		VOL   , 89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		VOL   , 63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        89*mus_dcd_jtdorchestra_mvl/mxv
 	.byte		PAN   , c_v-21
-	.byte		TIE   , Bn0 , v080
-	.byte		N48   , As3 , v064
+	.byte		TIE   , Bn0 , v076
+	.byte		N48   , As3 , v060
 	.byte	W48
 	.byte		        Ds3 
 	.byte	W48
-	.byte	PEND
 @ 043   ----------------------------------------
 	.byte		        As3 
 	.byte	W48
@@ -565,27 +563,33 @@ mus_dcd_jtdorchestra_1_042:
 	.byte		EOT   , Bn0 
 @ 044   ----------------------------------------
 	.byte	TEMPO , 106*mus_dcd_jtdorchestra_tbs/2
-	.byte		TIE   , Cs1 , v080
-	.byte		TIE   , Gs3 , v064
+	.byte		TIE   , Cs1 , v076
+	.byte		TIE   , Gs3 , v060
 	.byte	W96
 @ 045   ----------------------------------------
 	.byte	TEMPO , 108*mus_dcd_jtdorchestra_tbs/2
-	.byte		N24   , Gs4 , v016
+	.byte		N24   , Gs4 , v012
 	.byte	W24
-	.byte		        Gs4 , v036
+	.byte		        Gs4 , v032
 	.byte	W24
-	.byte		        Gs4 , v052
+	.byte		        Gs4 , v048
 	.byte	W24
 	.byte		N24   
 	.byte	W24
 	.byte		EOT   , Cs1 
 	.byte		        Gs3 
 @ 046   ----------------------------------------
-	.byte	PATT
-	 .word	mus_dcd_jtdorchestra_1_042
+	.byte		VOICE , 49
+	.byte		VOL   , 89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v-21
+	.byte		TIE   , Bn0 , v076
+	.byte		N48   , As3 , v060
+	.byte	W48
+	.byte		        Ds3 
+	.byte	W48
 @ 047   ----------------------------------------
 	.byte	TEMPO , 107*mus_dcd_jtdorchestra_tbs/2
-	.byte		N48   , As3 , v064
+	.byte		        As3 
 	.byte	W48
 	.byte		N24   
 	.byte	W24
@@ -593,8 +597,8 @@ mus_dcd_jtdorchestra_1_042:
 	.byte	W24
 	.byte		EOT   , Bn0 
 @ 048   ----------------------------------------
-	.byte		TIE   , Cs1 , v080
-	.byte		N16   , Cs4 , v064
+	.byte		TIE   , Cs1 , v076
+	.byte		N16   , Cs4 , v060
 	.byte	W16
 	.byte		N24   , Gs3 
 	.byte	W24
@@ -608,85 +612,360 @@ mus_dcd_jtdorchestra_1_042:
 	.byte		EOT   
 @ 050   ----------------------------------------
 	.byte		TIE   
-	.byte		N48   , Cs5 , v036
+	.byte		N48   , Cs5 , v032
 	.byte	W48
-	.byte		        Cs5 , v052
+	.byte		        Cs5 , v048
 	.byte	W48
 	.byte		EOT   , Cs1 
 @ 051   ----------------------------------------
-	.byte		N48   , Gs5 , v036
+	.byte		N48   , Gs5 , v032
 	.byte	W48
-	.byte		        Gs5 , v052
+	.byte		        Gs5 , v048
 	.byte	W48
 	.byte		EOT   , Gs3 
 @ 052   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 46
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N48   , Fs3 , v092
+	.byte		N48   , As3 , v104
+	.byte	W48
+	.byte		        Fs3 , v092
+	.byte		N48   , As3 , v104
+	.byte	W48
 @ 053   ----------------------------------------
 	.byte	TEMPO , 107*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        Cs4 
+	.byte		N48   , As4 , v092
+	.byte	W48
+	.byte		        As4 , v104
+	.byte		N48   , Cs5 , v092
+	.byte	W48
 @ 054   ----------------------------------------
 	.byte	TEMPO , 108*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        As3 
+	.byte		N48   , Cs4 , v104
+	.byte	W48
+	.byte		        As3 , v092
+	.byte		N48   , Cs4 , v104
+	.byte	W48
 @ 055   ----------------------------------------
-	.byte	W96
+	.byte		        As4 , v092
+	.byte		N48   , Cs5 , v104
+	.byte	W48
+	.byte		        Fs5 , v092
+	.byte		N48   , As5 , v104
+	.byte	W48
 @ 056   ----------------------------------------
 	.byte	TEMPO , 108*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        Cn4 , v092
+	.byte		N48   , Fn4 
+	.byte		N48   , Gs4 
+	.byte	W48
+	.byte		        Cn4 
+	.byte		N48   , Fn4 
+	.byte		N48   , Gs4 
+	.byte	W48
 @ 057   ----------------------------------------
 	.byte	TEMPO , 106*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        Cs4 
+	.byte		N48   , Gs4 
+	.byte	W48
+	.byte		N48   
+	.byte		N48   , Cs5 
+	.byte	W48
 @ 058   ----------------------------------------
 	.byte	TEMPO , 107*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        Cs3 
+	.byte		N48   , As3 
+	.byte	W48
+	.byte		        Cs3 
+	.byte		N48   , As3 
+	.byte	W48
 @ 059   ----------------------------------------
-	.byte	W96
+	.byte		        Fn4 
+	.byte		N48   , As4 
+	.byte	W48
+	.byte		        Fn5 
+	.byte		N48   , As5 
+	.byte	W48
 @ 060   ----------------------------------------
-	.byte	W96
+	.byte		N04   , As4 
+	.byte	W04
+	.byte		        Bn4 
+	.byte	W04
+	.byte		        Ds5 
+	.byte	W04
+	.byte		        Fs5 
+	.byte	W04
+	.byte		        Ds5 
+	.byte	W04
+	.byte		        Bn4 
+	.byte	W04
+	.byte		        As4 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Fs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        As4 
+	.byte	W04
+	.byte		        Bn4 
+	.byte	W04
+	.byte		        Ds5 
+	.byte	W04
+	.byte		        Fs5 
+	.byte	W04
+	.byte		        Ds5 
+	.byte	W04
+	.byte		        Bn4 
+	.byte	W04
+	.byte		        As4 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Fs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
 @ 061   ----------------------------------------
-	.byte	W96
+	.byte		N48   , As4 
+	.byte	W48
+	.byte		N48   
+	.byte	W48
 @ 062   ----------------------------------------
 	.byte	TEMPO , 108*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		N04   , Fs5 , v080
+	.byte	W04
+	.byte		        Ds5 
+	.byte	W04
+	.byte		        Bn4 
+	.byte	W04
+	.byte		        As4 
+	.byte	W04
+	.byte		        Fs4 
+	.byte	W04
+	.byte		        Ds4 
+	.byte	W04
+	.byte		        Bn3 
+	.byte	W04
+	.byte		        As3 
+	.byte	W04
+	.byte		        Fs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        As4 
+	.byte	W04
+	.byte		        Fs4 
+	.byte	W04
+	.byte		        Ds4 
+	.byte	W04
+	.byte		N12   , Fs5 
+	.byte	W12
+	.byte		        Fn5 
+	.byte	W12
+	.byte		N16   , Cs5 
+	.byte	W16
 @ 063   ----------------------------------------
-	.byte	W96
+	.byte		N04   , As4 
+	.byte	W04
+	.byte		        Gs4 
+	.byte	W04
+	.byte		        Fn4 
+	.byte	W04
+	.byte		        Cs4 
+	.byte	W04
+	.byte		N22   , Cn4 
+	.byte	W80
 @ 064   ----------------------------------------
 	.byte	TEMPO , 109*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		VOICE , 46
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N48   , Fs3 , v088
+	.byte		N48   , As3 , v096
+	.byte	W48
+	.byte		        Fs3 , v088
+	.byte		N48   , As3 , v096
+	.byte	W48
 @ 065   ----------------------------------------
 	.byte	TEMPO , 106*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        Cs4 
+	.byte		N48   , As4 , v088
+	.byte	W48
+	.byte		        As4 , v096
+	.byte		N48   , Cs5 , v088
+	.byte	W48
 @ 066   ----------------------------------------
 	.byte	TEMPO , 109*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        As3 
+	.byte		N48   , Cs4 , v096
+	.byte	W48
+	.byte		        As3 , v088
+	.byte		N48   , Cs4 , v096
+	.byte	W48
 @ 067   ----------------------------------------
 	.byte	TEMPO , 107*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        As4 , v088
+	.byte		N48   , Cs5 , v096
+	.byte	W48
+	.byte		        Fs5 , v088
+	.byte		N48   , As5 , v096
+	.byte	W48
 @ 068   ----------------------------------------
-	.byte	W96
+	.byte		        Cn4 , v088
+	.byte		N48   , Fn4 
+	.byte		N48   , Gs4 
+	.byte	W48
+	.byte		        Cn4 
+	.byte		N48   , Fn4 
+	.byte		N48   , Gs4 
+	.byte	W48
 @ 069   ----------------------------------------
-	.byte	W96
+	.byte		        Cs4 
+	.byte		N48   , Gs4 
+	.byte	W48
+	.byte		N48   
+	.byte		N48   , Cs5 
+	.byte	W48
 @ 070   ----------------------------------------
-	.byte	W96
+	.byte		        Ds3 
+	.byte		N48   , As3 
+	.byte	W48
+	.byte		        Fn4 
+	.byte		N48   , As4 
+	.byte	W48
 @ 071   ----------------------------------------
 	.byte	TEMPO , 107*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        Fn4 
+	.byte		N48   , As4 
+	.byte	W48
+	.byte		        Fn5 
+	.byte		N48   , As5 
+	.byte	W48
 @ 072   ----------------------------------------
 	.byte	TEMPO , 109*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		N04   , Fs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        As4 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Fs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        As4 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Fs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        As4 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Fs5 
+	.byte	W04
+	.byte		        Fn5 
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		N12   , As4 
+	.byte	W12
 @ 073   ----------------------------------------
 	.byte	TEMPO , 107*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        As4 , v068
+	.byte	W12
+	.byte		        As4 , v040
+	.byte	W84
 @ 074   ----------------------------------------
 	.byte	TEMPO , 108*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		N04   , Fn5 , v060
+	.byte	W04
+	.byte		        Cs5 
+	.byte	W04
+	.byte		        Bn4 
+	.byte	W04
+	.byte		        As4 
+	.byte	W04
+	.byte		        Fs4 
+	.byte	W04
+	.byte		        Fn4 
+	.byte	W04
+	.byte		        Cs4 
+	.byte	W04
+	.byte		        Bn3 
+	.byte	W04
+	.byte		        As3 
+	.byte	W04
+	.byte		        Fs3 
+	.byte	W04
+	.byte		        Fn3 
+	.byte	W04
+	.byte		        Cs3 
+	.byte	W04
+	.byte		        Bn2 
+	.byte	W04
+	.byte		        As2 
+	.byte	W04
+	.byte		        Fs2 
+	.byte	W04
+	.byte		        Fn2 
+	.byte	W04
+	.byte		        Cs2 
+	.byte	W04
+	.byte		        Bn1 
+	.byte	W04
+	.byte		        As1 
+	.byte	W04
+	.byte		        Fs1 
+	.byte	W20
 @ 075   ----------------------------------------
 	.byte	TEMPO , 106*mus_dcd_jtdorchestra_tbs/2
 	.byte	W96
 @ 076   ----------------------------------------
 	.byte	TEMPO , 108*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		N48   , As3 , v096
+	.byte	W48
+	.byte		        Fs4 
+	.byte		N48   , Bn4 
+	.byte	W48
 @ 077   ----------------------------------------
-	.byte	W96
+	.byte		        Bn3 
+	.byte	W48
+	.byte		        Gs4 
+	.byte		N48   , Bn4 
+	.byte	W48
 @ 078   ----------------------------------------
 	.byte	TEMPO , 108*mus_dcd_jtdorchestra_tbs/2
 	.byte	W96
@@ -694,45 +973,168 @@ mus_dcd_jtdorchestra_1_042:
 	.byte	TEMPO , 107*mus_dcd_jtdorchestra_tbs/2
 	.byte	W96
 @ 080   ----------------------------------------
-	.byte	W96
+	.byte		VOL   , 63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N48   , As3 , v112
+	.byte	W48
+	.byte		N48   
+	.byte	W48
 @ 081   ----------------------------------------
-	.byte	W96
+	.byte		        Ds4 , v104
+	.byte		N48   , Fs4 
+	.byte		N48   , As4 
+	.byte	W48
+	.byte		N44   
+	.byte		N44   , Ds5 
+	.byte		N44   , Fs5 
+	.byte	W44
+	.byte	W03
+	.byte		VOL   , 89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N48   , As3 , v112
+	.byte	W01
 @ 082   ----------------------------------------
-	.byte	W96
+	.byte	W48
+	.byte		N48   
+	.byte	W48
 @ 083   ----------------------------------------
 	.byte	TEMPO , 107*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        Ds4 , v104
+	.byte		N48   , Fs4 
+	.byte		N48   , As4 
+	.byte	W48
+	.byte		N48   
+	.byte		N48   , Ds5 
+	.byte		N48   , Fs5 
+	.byte	W48
 @ 084   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_1_018
 @ 085   ----------------------------------------
 	.byte	TEMPO , 108*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		N48   , Cs4 , v104
+	.byte		N48   , Fn4 
+	.byte		N48   , Gs4 
+	.byte	W48
+	.byte		        Cs4 
+	.byte		N48   , Fn4 
+	.byte		N48   , Gs4 
+	.byte	W48
 @ 086   ----------------------------------------
-	.byte	W96
+	.byte		        Fn4 
+	.byte		N48   , Gs4 
+	.byte		N48   , Cs5 
+	.byte	W48
+	.byte		        Fn4 
+	.byte		N48   , Gs4 
+	.byte		N48   , Cs5 
+	.byte	W48
 @ 087   ----------------------------------------
 	.byte	TEMPO , 106*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		N42   , Fn4 
+	.byte		N42   , Gs4 
+	.byte		N42   , Cs5 
+	.byte	W44
+	.byte		N52   , Fn5 
+	.byte	W02
+	.byte		N48   , Gs5 
+	.byte	W02
+	.byte		        Fn6 
+	.byte	W48
 @ 088   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 12
+	.byte	W12
+	.byte		N24   , Ds4 , v024
+	.byte	W01
+	.byte		        Fs4 , v036
+	.byte	W23
+	.byte		N12   , Fn4 , v024
+	.byte	W01
+	.byte		        Gs4 , v036
+	.byte	W11
+	.byte		N92   , Fs4 , v024
+	.byte	W01
+	.byte		        As4 , v036
+	.byte	W44
+	.byte	W03
 @ 089   ----------------------------------------
 	.byte	TEMPO , 108*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte	W48
+	.byte		N22   , Fs4 
+	.byte	W01
+	.byte		        As4 
+	.byte	W23
+	.byte		N10   , Fn4 
+	.byte	W01
+	.byte		        Gs4 
+	.byte	W11
+	.byte		        Ds4 
+	.byte	W01
+	.byte		        Fs4 
+	.byte	W11
 @ 090   ----------------------------------------
-	.byte	W96
+	.byte		N12   , As4 
+	.byte	W12
+	.byte		N24   , Fn4 
+	.byte	W01
+	.byte		N23   , Gs4 
+	.byte	W23
+	.byte		N12   , Fs4 
+	.byte	W01
+	.byte		N11   , As4 
+	.byte	W11
+	.byte		N96   , Fn4 
+	.byte	W01
+	.byte		N92   , Gs4 
+	.byte	W44
+	.byte	W03
 @ 091   ----------------------------------------
 	.byte	TEMPO , 107*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte	W48
+	.byte		N24   , Fn4 
+	.byte		N24   , Gs4 
+	.byte	W24
+	.byte		        Ds4 
+	.byte		N24   , Fs4 
+	.byte	W24
 @ 092   ----------------------------------------
-	.byte	W96
+	.byte		N12   , Cs4 
+	.byte		N12   , Fn4 
+	.byte	W12
+	.byte		N36   , As3 , v032
+	.byte	W36
+	.byte		N84   , Ds4 
+	.byte		N84   , Fs4 
+	.byte	W48
 @ 093   ----------------------------------------
 	.byte	TEMPO , 108*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte	W36
+	.byte		N24   , Bn3 
+	.byte		N24   , Ds4 
+	.byte	W24
+	.byte		        Cs4 
+	.byte		N24   , Fn4 
+	.byte	W24
+	.byte		        Ds4 
+	.byte		N24   , Fs4 
+	.byte	W12
 @ 094   ----------------------------------------
 	.byte	TEMPO , 106*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte	W12
+	.byte		        Cs4 
+	.byte		N24   , Fn4 
+	.byte	W24
+	.byte		N12   , Ds4 
+	.byte		N12   , Fs4 
+	.byte	W12
+	.byte		N48   , Cs4 
+	.byte		N48   , Fn4 
+	.byte	W48
 @ 095   ----------------------------------------
 	.byte	TEMPO , 110*mus_dcd_jtdorchestra_tbs/2
-	.byte	W96
+	.byte		        As3 , v020
+	.byte	W03
+	.byte		        Fn4 
+	.byte	W92
+	.byte	W01
 @ 096   ----------------------------------------
 	.byte	TEMPO , 106*mus_dcd_jtdorchestra_tbs/2
 	.byte	W96
@@ -960,8 +1362,6 @@ mus_dcd_jtdorchestra_1_042:
 mus_dcd_jtdorchestra_2:
 	.byte	KEYSH , mus_dcd_jtdorchestra_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 49
-	.byte		VOL   , 8*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
@@ -1222,10 +1622,10 @@ mus_dcd_jtdorchestra_2:
 	.byte		VOL   , 54*mus_dcd_jtdorchestra_mvl/mxv
 	.byte		PAN   , c_v+18
 	.byte		VOL   , 68*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		PAN   , c_v-19
-	.byte		TIE   , Fs1 , v080
-	.byte		TIE   , As2 , v076
-	.byte		TIE   , Fn4 , v072
+	.byte		PAN   , c_v-2
+	.byte		TIE   , Fs1 , v084
+	.byte		TIE   , As2 , v080
+	.byte		TIE   , Fn4 , v076
 	.byte	W96
 @ 017   ----------------------------------------
 	.byte	W48
@@ -1235,28 +1635,33 @@ mus_dcd_jtdorchestra_2:
 	.byte		EOT   , Fs1 
 	.byte		        As2 
 @ 018   ----------------------------------------
-	.byte		TIE   , Fn1 , v084
-	.byte		TIE   , As2 , v076
-	.byte		N48   , Gs4 , v072
+mus_dcd_jtdorchestra_2_018:
+	.byte		TIE   , Fn1 , v088
+	.byte		TIE   , As2 , v080
+	.byte		N48   , Gs4 , v076
 	.byte	W48
 	.byte		        As4 
 	.byte	W48
+	.byte	PEND
 @ 019   ----------------------------------------
-	.byte		        Fn4 
+mus_dcd_jtdorchestra_2_019:
+	.byte		N48   , Fn4 , v076
 	.byte	W48
 	.byte		        Cs4 
 	.byte	W48
+	.byte	PEND
 	.byte		EOT   , Fn1 
 	.byte		        As2 
 @ 020   ----------------------------------------
+mus_dcd_jtdorchestra_2_020:
 	.byte		VOL   , 69*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		PAN   , c_v-19
-	.byte		TIE   , As1 , v080
-	.byte		TIE   , Fs3 , v076
-	.byte		TIE   , Ds4 , v072
+	.byte		TIE   , As1 , v084
+	.byte		TIE   , Fs3 , v080
+	.byte		TIE   , Ds4 , v076
 	.byte	W76
 	.byte		VOL   , 70*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W20
+	.byte	PEND
 @ 021   ----------------------------------------
 	.byte	W18
 	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
@@ -1272,9 +1677,10 @@ mus_dcd_jtdorchestra_2:
 	.byte		EOT   , As1 
 	.byte		        Fs3 
 @ 022   ----------------------------------------
-	.byte		TIE   , As1 , v076
-	.byte		TIE   , Ds3 , v088
-	.byte		TIE   , Gs4 , v072
+mus_dcd_jtdorchestra_2_022:
+	.byte		TIE   , As1 , v080
+	.byte		TIE   , Ds3 , v092
+	.byte		TIE   , Gs4 , v076
 	.byte	W36
 	.byte	W01
 	.byte		VOL   , 74*mus_dcd_jtdorchestra_mvl/mxv
@@ -1282,9 +1688,11 @@ mus_dcd_jtdorchestra_2:
 	.byte	W03
 	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W20
+	.byte	PEND
 @ 023   ----------------------------------------
+mus_dcd_jtdorchestra_2_023:
 	.byte	W18
-	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		VOL   , 76*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W36
 	.byte	W02
 	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
@@ -1292,16 +1700,21 @@ mus_dcd_jtdorchestra_2:
 	.byte	W03
 	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
+	.byte	PEND
 	.byte		EOT   , Ds3 
 @ 024   ----------------------------------------
-	.byte		TIE   , Fn3 , v076
+mus_dcd_jtdorchestra_2_024:
+	.byte		TIE   , Fn3 , v080
 	.byte	W36
 	.byte	W01
 	.byte		VOL   , 79*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W36
-	.byte	W02
-	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W24
+	.byte	W03
+	.byte		PAN   , c_v-1
+	.byte	W11
+	.byte		VOL   , 80*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W21
+	.byte	PEND
 @ 025   ----------------------------------------
 	.byte	W18
 	.byte		        81*mus_dcd_jtdorchestra_mvl/mxv
@@ -1319,9 +1732,8 @@ mus_dcd_jtdorchestra_2:
 	.byte		        Gs4 
 @ 026   ----------------------------------------
 	.byte		VOL   , 82*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		PAN   , c_v-19
-	.byte		TIE   , Ds1 , v100
-	.byte		TIE   , As4 , v072
+	.byte		TIE   , Ds1 , v104
+	.byte		TIE   , As4 , v076
 	.byte	W04
 	.byte		VOL   , 81*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W05
@@ -1452,8 +1864,9 @@ mus_dcd_jtdorchestra_2:
 	.byte		        20*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
 @ 029   ----------------------------------------
+	.byte		PAN   , c_v+0
 	.byte	W03
-	.byte		        19*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		VOL   , 19*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
 	.byte		        18*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W05
@@ -1502,7 +1915,9 @@ mus_dcd_jtdorchestra_2:
 @ 032   ----------------------------------------
 	.byte	W96
 @ 033   ----------------------------------------
-	.byte	W84
+	.byte	W32
+	.byte		PAN   , c_v+1
+	.byte	W52
 	.byte		VOL   , 8*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 	.byte		        34*mus_dcd_jtdorchestra_mvl/mxv
@@ -1519,7 +1934,7 @@ mus_dcd_jtdorchestra_2:
 	.byte	W03
 @ 034   ----------------------------------------
 	.byte		        91*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		TIE   , Ds1 , v127
+	.byte		TIE   , Ds1 
 	.byte	W02
 	.byte		VOL   , 90*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
@@ -1654,7 +2069,7 @@ mus_dcd_jtdorchestra_2:
 	.byte		        26*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
 	.byte		EOT   
-	.byte		TIE   , Bn3 , v080
+	.byte		TIE   , Bn3 , v084
 	.byte		TIE   , Ds4 
 	.byte	W09
 	.byte		VOL   , 27*mus_dcd_jtdorchestra_mvl/mxv
@@ -1718,8 +2133,10 @@ mus_dcd_jtdorchestra_2:
 	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W09
 	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W09
-	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		PAN   , c_v+2
+	.byte	W04
+	.byte		VOL   , 55*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W09
 	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W09
@@ -1921,8 +2338,8 @@ mus_dcd_jtdorchestra_2:
 	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
 @ 041   ----------------------------------------
-	.byte		N96   , Fn3 
-	.byte		N96   , Fn4 
+	.byte		N92   , Fn3 
+	.byte		N92   , Fn4 
 	.byte	W02
 	.byte		VOL   , 44*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
@@ -1958,14 +2375,15 @@ mus_dcd_jtdorchestra_2:
 	.byte	W04
 	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W28
-	.byte	W01
-@ 042   ----------------------------------------
 	.byte		VOICE , 56
+	.byte		PAN   , c_v+3
 	.byte		VOL   , 61*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		PAN   , c_v-19
+	.byte		PAN   , c_v+4
 	.byte		VOL   , 82*mus_dcd_jtdorchestra_mvl/mxv
 	.byte		PAN   , c_v+32
-	.byte		N48   , As3 , v052
+	.byte		N48   , As3 , v048
+	.byte	W01
+@ 042   ----------------------------------------
 	.byte	W48
 	.byte		TIE   , Ds3 
 	.byte	W48
@@ -1982,119 +2400,861 @@ mus_dcd_jtdorchestra_2:
 	.byte		VOICE , 56
 	.byte		VOL   , 82*mus_dcd_jtdorchestra_mvl/mxv
 	.byte		PAN   , c_v+32
-	.byte		TIE   , Ds2 , v064
-	.byte		TIE   , Fn3 , v052
+	.byte		TIE   , Ds2 , v060
+	.byte		TIE   , Fn3 , v048
 	.byte	W96
 @ 047   ----------------------------------------
 	.byte	W96
 	.byte		EOT   , Ds2 
 	.byte		        Fn3 
 @ 048   ----------------------------------------
-	.byte		TIE   , Gs2 , v064
-	.byte		TIE   , Cs3 , v052
-	.byte	W96
+	.byte		TIE   , Gs2 , v060
+	.byte		TIE   , Cs3 , v048
+	.byte	W72
+	.byte	W01
+	.byte		VOL   , 81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W23
 @ 049   ----------------------------------------
 	.byte	W96
 	.byte		EOT   , Gs2 
 	.byte		        Cs3 
 @ 050   ----------------------------------------
-	.byte		TIE   , Gs1 , v068
-	.byte		TIE   , Gs2 , v064
+	.byte		TIE   , Gs1 , v064
+	.byte		TIE   , Gs2 , v060
 	.byte	W96
 @ 051   ----------------------------------------
 	.byte	W48
 	.byte		EOT   
 	.byte		N48   , Cs3 
-	.byte	W48
+	.byte	W03
+	.byte		VOL   , 80*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W44
+	.byte	W01
 	.byte		EOT   , Gs1 
 @ 052   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 49
+	.byte		PAN   , c_v-2
+	.byte		N48   , As3 , v076
+	.byte		N48   , Cs4 
+	.byte		N48   , Cs5 , v040
+	.byte	W48
+	.byte		N24   , As3 , v076
+	.byte		N24   , Cs4 
+	.byte		N24   , Cs5 , v040
+	.byte	W24
+	.byte		N12   , Bn3 , v076
+	.byte		N12   , Ds4 
+	.byte		N12   , Ds5 , v040
+	.byte	W12
+	.byte		N48   , As3 , v076
+	.byte		N48   , Cs4 
+	.byte		N48   , Cs5 , v040
+	.byte	W12
 @ 053   ----------------------------------------
-	.byte	W96
+	.byte	W36
+	.byte		N24   , Fs3 , v076
+	.byte		N24   , As3 
+	.byte		N24   , As4 , v040
+	.byte	W24
+	.byte		N12   , Gs3 , v076
+	.byte		N12   , Bn3 
+	.byte		N12   , Bn4 , v040
+	.byte	W12
+	.byte		        Fs3 , v076
+	.byte		N12   , As3 
+	.byte		N12   , As4 , v040
+	.byte	W12
+	.byte		        Gs3 , v076
+	.byte		N12   , Bn3 
+	.byte		N12   , Bn4 , v040
+	.byte	W12
 @ 054   ----------------------------------------
-	.byte	W96
+	.byte		N48   , As3 , v076
+	.byte		N48   , Cs4 
+	.byte		N48   , Cs5 , v040
+	.byte	W28
+	.byte	W01
+	.byte		VOL   , 79*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W19
+	.byte		N24   , As3 , v076
+	.byte		N24   , Cs4 
+	.byte		N24   , Cs5 , v040
+	.byte	W24
+	.byte		N12   , Bn3 , v076
+	.byte		N12   , Ds4 
+	.byte		N12   , Ds5 , v040
+	.byte	W12
+	.byte		N24   , As3 , v076
+	.byte		N24   , Cs4 
+	.byte		N24   , Cs5 , v040
+	.byte	W12
 @ 055   ----------------------------------------
-	.byte	W96
+	.byte	W12
+	.byte		N66   , As3 , v048
+	.byte		N66   , Cs4 
+	.byte		N12   , Cs5 , v012
+	.byte	W12
+	.byte		N04   , As4 , v060
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As4 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N06   , Fs3 , v076
+	.byte		N06   , Bn3 
+	.byte		N04   , Ds5 , v060
+	.byte	W06
+	.byte		N06   , Fn3 , v076
+	.byte		N06   , As3 
+	.byte		N04   , As4 , v060
+	.byte	W06
+	.byte		N06   , Fs3 , v076
+	.byte		N06   , Bn3 
+	.byte		N04   , As4 , v060
+	.byte	W06
 @ 056   ----------------------------------------
-	.byte	W96
+	.byte		N72   , Cs4 , v076
+	.byte		N72   , Fn4 
+	.byte		N72   , Fn5 , v040
+	.byte	W72
+	.byte		        Fn3 , v076
+	.byte		N72   , As3 
+	.byte		N72   , As4 , v040
+	.byte	W24
 @ 057   ----------------------------------------
-	.byte	W96
+	.byte	W07
+	.byte		VOL   , 78*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W40
+	.byte	W01
+	.byte		N24   , Fn3 , v076
+	.byte		N24   , As3 
+	.byte		N24   , As4 , v040
+	.byte	W24
+	.byte		        Cs4 , v076
+	.byte		N24   , Fn4 
+	.byte		N24   , Fn5 , v040
+	.byte	W24
 @ 058   ----------------------------------------
-	.byte	W96
+	.byte		N72   , Cn4 , v076
+	.byte		N72   , Fn4 
+	.byte		N72   , Fn5 , v040
+	.byte	W72
+	.byte		N48   , As3 , v076
+	.byte		N48   , Fs4 
+	.byte		N48   , Fs5 , v040
+	.byte	W24
 @ 059   ----------------------------------------
-	.byte	W96
+	.byte	W24
+	.byte		N36   , As3 , v060
+	.byte		N36   , Fs4 
+	.byte		N04   , As4 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		N24   , Cs4 
+	.byte		N24   , Fn4 
+	.byte		N04   , As4 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N04   
+	.byte	W03
+	.byte		VOL   , 77*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		N12   , As3 
+	.byte		N12   , Cs4 
+	.byte		N04   , As4 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
 @ 060   ----------------------------------------
-	.byte	W96
+	.byte		N36   , As3 , v076
+	.byte		N36   , Cs4 
+	.byte		N36   , Cs5 , v040
+	.byte	W36
+	.byte		        Bn3 , v076
+	.byte		N36   , Ds4 
+	.byte		N36   , Ds5 , v040
+	.byte	W36
+	.byte		N24   , Bn3 , v076
+	.byte		N24   , Ds4 
+	.byte		N24   , Ds5 , v040
+	.byte	W24
 @ 061   ----------------------------------------
-	.byte	W96
+	.byte		N12   , As3 , v076
+	.byte		N12   , Cs4 
+	.byte		N12   , Cs5 , v040
+	.byte	W12
+	.byte		N24   , Gs3 , v076
+	.byte		N24   , Bn3 
+	.byte		N24   , Bn4 , v040
+	.byte	W24
+	.byte		N36   , Fs3 , v076
+	.byte		N36   , As3 
+	.byte		N36   , As4 , v040
+	.byte	W36
+	.byte		N24   , Bn2 , v076
+	.byte		N24   , Ds3 
+	.byte		N24   , Ds4 , v040
+	.byte	W24
 @ 062   ----------------------------------------
-	.byte	W96
+	.byte		N60   , Cs3 , v076
+	.byte		N56   , As3 
+	.byte		N56   , As4 , v040
+	.byte	W56
+	.byte	W03
+	.byte		VOL   , 76*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		N12   , Ds3 , v076
+	.byte		N12   , Bn3 
+	.byte		N12   , Bn4 , v040
+	.byte	W12
+	.byte		        Cs3 , v076
+	.byte		N12   , As3 
+	.byte		N12   , As4 , v040
+	.byte	W12
+	.byte		TIE   , Bn2 , v076
+	.byte		TIE   , Gs3 
+	.byte		N36   , Gs4 , v040
+	.byte	W12
 @ 063   ----------------------------------------
-	.byte	W96
+	.byte	W24
+	.byte		N04   , As4 , v060
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As4 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As4 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		EOT   , Bn2 
+	.byte		        Gs3 
 @ 064   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 49
+	.byte		PAN   , c_v-2
+	.byte		N48   , As3 , v072
+	.byte		N48   , Cs4 
+	.byte		N48   , Cs5 , v036
+	.byte	W48
+	.byte		N24   , As3 , v072
+	.byte		N24   , Cs4 
+	.byte		N24   , Cs5 , v036
+	.byte	W24
+	.byte		N12   , Bn3 , v072
+	.byte		N12   , Ds4 
+	.byte		N12   , Ds5 , v036
+	.byte	W12
+	.byte		N48   , As3 , v072
+	.byte		N48   , Cs4 
+	.byte		N48   , Cs5 , v036
+	.byte	W12
 @ 065   ----------------------------------------
-	.byte	W96
+	.byte	W36
+	.byte		VOL   , 75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N24   , Fs3 , v072
+	.byte		N24   , As3 
+	.byte		N24   , As4 , v036
+	.byte	W24
+	.byte		N12   , Gs3 , v072
+	.byte		N12   , Bn3 
+	.byte		N12   , Bn4 , v036
+	.byte	W12
+	.byte		        Fs3 , v072
+	.byte		N12   , As3 
+	.byte		N12   , As4 , v036
+	.byte	W12
+	.byte		        Gs3 , v072
+	.byte		N12   , Bn3 
+	.byte		N12   , Bn4 , v036
+	.byte	W12
 @ 066   ----------------------------------------
-	.byte	W96
+	.byte		N48   , As3 , v072
+	.byte		N48   , Cs4 
+	.byte		N48   , Cs5 , v036
+	.byte	W48
+	.byte		N24   , As3 , v072
+	.byte		N24   , Cs4 
+	.byte		N24   , Cs5 , v036
+	.byte	W24
+	.byte		N12   , Bn3 , v072
+	.byte		N12   , Ds4 
+	.byte		N12   , Ds5 , v036
+	.byte	W12
+	.byte		N24   , As3 , v072
+	.byte		N24   , Cs4 
+	.byte		N24   , Cs5 , v036
+	.byte	W12
 @ 067   ----------------------------------------
-	.byte	W96
+	.byte	W12
+	.byte		N66   , As3 , v044
+	.byte		N66   , Cs4 
+	.byte		N12   , Cs5 , v008
+	.byte	W12
+	.byte		N04   , As4 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As4 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N06   , Fs3 , v072
+	.byte		N06   , Bn3 
+	.byte		N04   , Ds5 , v056
+	.byte	W06
+	.byte		N06   , Fn3 , v072
+	.byte		N06   , As3 
+	.byte		N04   , As4 , v056
+	.byte	W06
+	.byte		N06   , Fs3 , v072
+	.byte		N06   , Bn3 
+	.byte		N04   , As4 , v056
+	.byte	W06
 @ 068   ----------------------------------------
-	.byte	W96
+	.byte		N72   , Cs4 , v072
+	.byte		N72   , Fn4 
+	.byte		N72   , Fn5 , v036
+	.byte	W14
+	.byte		VOL   , 74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W56
+	.byte	W02
+	.byte		N72   , Fn3 , v072
+	.byte		N72   , As3 
+	.byte		N72   , As4 , v036
+	.byte	W24
 @ 069   ----------------------------------------
-	.byte	W96
+	.byte	W48
+	.byte		N24   , Fn3 , v072
+	.byte		N24   , As3 
+	.byte		N24   , As4 , v036
+	.byte	W24
+	.byte		        Cs4 , v072
+	.byte		N24   , Fn4 
+	.byte		N24   , Fn5 , v036
+	.byte	W24
 @ 070   ----------------------------------------
-	.byte	W96
+	.byte		N72   , As3 , v072
+	.byte		N72   , Fn4 
+	.byte		N72   , Fn5 , v036
+	.byte	W72
+	.byte		N48   , As3 , v072
+	.byte		N48   , Fs4 
+	.byte		N48   , Fs5 , v036
+	.byte	W16
+	.byte		VOL   , 73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
 @ 071   ----------------------------------------
-	.byte	W96
+	.byte	W24
+	.byte		N36   , As3 , v056
+	.byte		N36   , Fs4 
+	.byte		N04   , As4 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		N24   , Cs4 , v064
+	.byte		N24   , Fn4 
+	.byte		N04   , As4 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		N12   , As3 , v064
+	.byte		N12   , Cs4 
+	.byte		N04   , As4 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
 @ 072   ----------------------------------------
-	.byte	W96
+	.byte		N36   , Cs4 , v080
+	.byte	W36
+	.byte		        Ds4 
+	.byte	W36
+	.byte		N24   
+	.byte	W24
 @ 073   ----------------------------------------
-	.byte	W96
+	.byte		N12   , Cs4 
+	.byte	W12
+	.byte		N24   , Bn3 
+	.byte	W12
+	.byte		N04   , As4 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		N24   , As3 , v080
+	.byte		N04   , Ds5 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		N12   , As3 , v048
+	.byte		N04   , As4 , v056
+	.byte	W06
+	.byte		VOL   , 72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N04   
+	.byte	W06
+	.byte		N12   , Bn3 , v084
+	.byte		N04   , Ds5 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		N12   , Cs4 , v084
+	.byte		N04   , As4 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
 @ 074   ----------------------------------------
-	.byte	W96
+	.byte		N36   , Fn4 , v084
+	.byte	W36
+	.byte		        As3 
+	.byte	W36
+	.byte		N12   , Gs3 
+	.byte	W12
+	.byte		N60   , As3 
+	.byte	W12
 @ 075   ----------------------------------------
-	.byte	W96
+	.byte	W24
+	.byte		N04   , As4 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        Ds5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		        As5 
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		N12   , Ds4 , v084
+	.byte		N04   , As4 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		N12   , Fs4 , v084
+	.byte		N04   , Ds5 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
+	.byte		N12   , Gs4 , v084
+	.byte		N04   , As4 , v056
+	.byte	W06
+	.byte		N04   
+	.byte	W06
 @ 076   ----------------------------------------
-	.byte	W96
+	.byte		N36   , As4 , v084
+	.byte	W36
+	.byte		N60   , Ds4 
+	.byte	W08
+	.byte		VOL   , 71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W52
 @ 077   ----------------------------------------
-	.byte	W96
+	.byte		N12   , As4 
+	.byte	W12
+	.byte		N24   , Gs4 
+	.byte	W24
+	.byte		        As4 
+	.byte	W24
+	.byte		        Bn4 
+	.byte	W24
+	.byte		N60   , As4 
+	.byte	W12
 @ 078   ----------------------------------------
-	.byte	W96
+	.byte		N48   , Fn4 
+	.byte	W48
+	.byte		        Fn4 , v056
+	.byte		N48   , As4 , v060
+	.byte	W48
 @ 079   ----------------------------------------
-	.byte	W96
+	.byte		        Fn4 , v056
+	.byte		N48   , As4 , v036
+	.byte	W22
+	.byte		VOL   , 70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W24
+	.byte	W02
+	.byte		N48   , Fs4 , v076
+	.byte	W48
 @ 080   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_2_018
 @ 081   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_2_019
+	.byte		EOT   , Fn1 
+	.byte		        As2 
 @ 082   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_2_020
 @ 083   ----------------------------------------
-	.byte	W96
+	.byte	W18
+	.byte		VOL   , 71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W30
+	.byte		EOT   , Ds4 
+	.byte		N48   , As4 , v076
+	.byte	W09
+	.byte		VOL   , 72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W36
+	.byte	W02
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		EOT   , As1 
+	.byte		        Fs3 
 @ 084   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_2_022
 @ 085   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_2_023
+	.byte		EOT   , Ds3 
 @ 086   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_2_024
 @ 087   ----------------------------------------
-	.byte	W96
+	.byte	W18
+	.byte		VOL   , 81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W36
+	.byte	W02
+	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W36
+	.byte	W02
+	.byte		        84*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		EOT   , As1 
+	.byte		        Fn3 
+	.byte		        Gs4 
 @ 088   ----------------------------------------
-	.byte	W96
+	.byte		VOL   , 6*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		TIE   , Fs2 , v072
+	.byte		TIE   , Fs3 
+	.byte	W07
+	.byte		VOL   , 7*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        8*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        9*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        10*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        11*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        12*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        13*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        14*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        15*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        16*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        17*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        18*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        19*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        20*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        21*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        22*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        23*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        24*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        25*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        26*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        27*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        28*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        29*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 089   ----------------------------------------
-	.byte	W96
+	.byte	W03
+	.byte		        30*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        31*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        32*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        33*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        34*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        35*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        36*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        37*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        38*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        39*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		N96   , Fn4 , v056
+	.byte	W02
+	.byte		VOL   , 42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		EOT   , Fs2 
+	.byte		        Fs3 
 @ 090   ----------------------------------------
-	.byte	W96
+	.byte		TIE   , Fn2 , v072
+	.byte		TIE   , Fn3 
+	.byte	W12
+	.byte		VOL   , 53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W14
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W07
+	.byte		TIE   , Gs4 , v056
+	.byte	W07
+	.byte		VOL   , 50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W14
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W14
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
 @ 091   ----------------------------------------
-	.byte	W96
+	.byte	W12
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W14
+	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W14
+	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W14
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W14
+	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		EOT   , Fn2 
+	.byte		        Fn3 
 @ 092   ----------------------------------------
-	.byte	W96
+	.byte		TIE   , Gs2 , v072
+	.byte		N96   , Gs3 
+	.byte	W15
+	.byte		VOL   , 41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W07
 @ 093   ----------------------------------------
-	.byte	W96
+	.byte		N48   , Ds3 
+	.byte	W01
+	.byte		VOL   , 51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W06
+	.byte		EOT   , Gs4 
+	.byte		N48   , As4 , v068
+	.byte	W02
+	.byte		VOL   , 57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		EOT   , Gs2 
 @ 094   ----------------------------------------
-	.byte	W96
+	.byte		TIE   , Fs2 , v072
+	.byte		TIE   , Fs3 
+	.byte		N48   , Gs4 , v068
+	.byte	W05
+	.byte		VOL   , 62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W10
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W06
+	.byte		TIE   , Cs4 
+	.byte	W04
+	.byte		VOL   , 57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W10
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W07
 @ 095   ----------------------------------------
-	.byte	W96
+	.byte	W03
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		EOT   , Fs2 
+	.byte		        Fs3 
+	.byte		        Cs4 
 @ 096   ----------------------------------------
 	.byte	W96
 @ 097   ----------------------------------------
@@ -2281,8 +3441,6 @@ mus_dcd_jtdorchestra_2:
 mus_dcd_jtdorchestra_3:
 	.byte	KEYSH , mus_dcd_jtdorchestra_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 94
-	.byte		VOL   , 61*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
@@ -2327,7 +3485,7 @@ mus_dcd_jtdorchestra_3:
 	.byte		        8*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
 	.byte		TIE   , Gs2 , v052
-	.byte		TIE   , Ds3 , v084
+	.byte		TIE   , Ds3 , v044
 	.byte	W06
 	.byte		VOL   , 9*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
@@ -2404,7 +3562,7 @@ mus_dcd_jtdorchestra_3:
 @ 014   ----------------------------------------
 	.byte		VOL   , 44*mus_dcd_jtdorchestra_mvl/mxv
 	.byte		TIE   , Cs3 , v052
-	.byte		N72   , Fn3 , v084
+	.byte		N72   , Fn3 , v044
 	.byte	W02
 	.byte		VOL   , 45*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
@@ -2566,6 +3724,7 @@ mus_dcd_jtdorchestra_3:
 @ 021   ----------------------------------------
 	.byte	W96
 @ 022   ----------------------------------------
+mus_dcd_jtdorchestra_3_022:
 	.byte		N02   , As4 , v100
 	.byte	W02
 	.byte		        Bn4 
@@ -2614,6 +3773,7 @@ mus_dcd_jtdorchestra_3:
 	.byte	W08
 	.byte		        As4 , v044
 	.byte	W18
+	.byte	PEND
 @ 023   ----------------------------------------
 	.byte		N02   , Fs5 , v108
 	.byte	W02
@@ -2632,6 +3792,7 @@ mus_dcd_jtdorchestra_3:
 @ 024   ----------------------------------------
 	.byte		VOICE , 14
 	.byte		VOL   , 121*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v-19
 	.byte		N24   , Gs3 , v124
 	.byte	W24
 	.byte		        Gs3 , v084
@@ -3009,8 +4170,8 @@ mus_dcd_jtdorchestra_3:
 @ 034   ----------------------------------------
 	.byte		VOICE , 60
 	.byte		VOL   , 69*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		TIE   , Ds2 , v092
-	.byte		TIE   , Fn3 , v100
+	.byte		TIE   , Ds2 , v056
+	.byte		TIE   , Fn3 , v072
 	.byte	W08
 	.byte		VOL   , 68*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W09
@@ -3125,23 +4286,24 @@ mus_dcd_jtdorchestra_3:
 @ 042   ----------------------------------------
 	.byte		VOICE , 25
 	.byte		VOL   , 78*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v-19
 	.byte	W96
 @ 043   ----------------------------------------
 mus_dcd_jtdorchestra_3_043:
-	.byte		N24   , Ds4 , v127
+	.byte		N24   , Ds4 , v124
 	.byte	W24
-	.byte		        Ds4 , v100
+	.byte		        Ds4 , v096
 	.byte	W24
-	.byte		        As4 , v127
+	.byte		        As4 , v124
 	.byte	W24
-	.byte		        As4 , v100
+	.byte		        As4 , v096
 	.byte	W24
 	.byte	PEND
 @ 044   ----------------------------------------
 	.byte	W48
-	.byte		        Cs4 , v127
+	.byte		        Cs4 , v124
 	.byte	W24
-	.byte		        Cs4 , v100
+	.byte		        Cs4 , v096
 	.byte	W24
 @ 045   ----------------------------------------
 	.byte	PATT
@@ -3150,24 +4312,44 @@ mus_dcd_jtdorchestra_3_043:
 	.byte		VOICE , 25
 	.byte		VOL   , 78*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W48
-	.byte		N24   , Ds3 , v127
+	.byte		N24   , Ds3 , v124
 	.byte	W24
-	.byte		        Ds3 , v100
-	.byte	W24
+	.byte		        Ds3 , v096
+	.byte	W21
+	.byte		VOL   , 79*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
 @ 047   ----------------------------------------
-	.byte	PATT
-	 .word	mus_dcd_jtdorchestra_3_043
+	.byte		N24   , Ds4 , v124
+	.byte	W24
+	.byte		        Ds4 , v096
+	.byte	W24
+	.byte		        As4 , v124
+	.byte	W24
+	.byte		        As4 , v096
+	.byte	W18
+	.byte		VOL   , 80*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W06
 @ 048   ----------------------------------------
 	.byte	W48
-	.byte		N24   , As3 , v127
+	.byte		N24   , As3 , v124
 	.byte	W24
-	.byte		        As3 , v100
-	.byte	W24
+	.byte		        As3 , v096
+	.byte	W15
+	.byte		VOL   , 81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
 @ 049   ----------------------------------------
-	.byte	PATT
-	 .word	mus_dcd_jtdorchestra_3_043
+	.byte		N24   , Ds4 , v124
+	.byte	W24
+	.byte		        Ds4 , v096
+	.byte	W24
+	.byte		        As4 , v124
+	.byte	W24
+	.byte		        As4 , v096
+	.byte	W13
+	.byte		VOL   , 82*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W11
 @ 050   ----------------------------------------
-	.byte		N12   , Cs6 , v100
+	.byte		N12   , Cs6 
 	.byte	W12
 	.byte		        Ds5 
 	.byte	W12
@@ -3186,89 +4368,240 @@ mus_dcd_jtdorchestra_3_043:
 	.byte		        As4 
 	.byte	W08
 	.byte		        Fn4 
-	.byte	W08
-	.byte		        Cn4 
+	.byte	W02
+	.byte		VOL   , 83*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W06
+	.byte		N08   , Cn4 
 	.byte	W08
 @ 051   ----------------------------------------
 	.byte		N48   , Cs4 
 	.byte	W48
 	.byte		        Ds4 
-	.byte	W48
+	.byte	W30
+	.byte	W01
+	.byte		VOL   , 84*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W17
 @ 052   ----------------------------------------
-	.byte	W96
+	.byte	W76
+	.byte		        85*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W20
 @ 053   ----------------------------------------
-	.byte	W96
+	.byte	W72
+	.byte	W02
+	.byte		        86*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W22
 @ 054   ----------------------------------------
-	.byte	W96
+	.byte	W68
+	.byte	W03
+	.byte		        87*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W24
+	.byte	W01
 @ 055   ----------------------------------------
-	.byte	W96
+	.byte	W68
+	.byte		        88*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W28
 @ 056   ----------------------------------------
-	.byte	W96
+	.byte	W64
+	.byte	W01
+	.byte		        89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W30
+	.byte	W01
 @ 057   ----------------------------------------
-	.byte	W96
+	.byte	W60
+	.byte	W03
+	.byte		        90*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W32
+	.byte	W01
 @ 058   ----------------------------------------
-	.byte	W96
+	.byte	W60
+	.byte		        91*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W36
 @ 059   ----------------------------------------
-	.byte	W96
+	.byte	W56
+	.byte	W01
+	.byte		        92*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W36
+	.byte	W03
 @ 060   ----------------------------------------
-	.byte	W96
+	.byte	W54
+	.byte		        93*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W42
 @ 061   ----------------------------------------
-	.byte	W96
+	.byte	W52
+	.byte		        94*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W44
 @ 062   ----------------------------------------
-	.byte	W96
+	.byte	W48
+	.byte	W01
+	.byte		        95*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W44
+	.byte	W03
 @ 063   ----------------------------------------
-	.byte	W96
+	.byte	W44
+	.byte	W02
+	.byte		        96*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W48
+	.byte	W02
 @ 064   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 14
+	.byte	W42
+	.byte	W01
+	.byte		VOL   , 97*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		N24   , Cs4 , v108
+	.byte	W24
+	.byte		        Cs4 , v076
+	.byte	W24
 @ 065   ----------------------------------------
-	.byte	W96
+	.byte	W40
+	.byte	W01
+	.byte		VOL   , 98*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W07
+	.byte		N24   , Cs4 , v108
+	.byte	W24
+	.byte		        Cs4 , v076
+	.byte	W24
 @ 066   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 14
+	.byte	W36
+	.byte	W02
+	.byte		VOL   , 99*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W10
+	.byte		N24   , Cs4 , v108
+	.byte	W24
+	.byte		        Cs4 , v076
+	.byte	W24
 @ 067   ----------------------------------------
-	.byte	W96
+	.byte	W32
+	.byte	W03
+	.byte		VOL   , 100*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		N24   , Fn4 , v108
+	.byte	W24
+	.byte		        Fn4 , v076
+	.byte	W24
 @ 068   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 14
+	.byte	W32
+	.byte		VOL   , 101*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W16
+	.byte		N24   , Fn4 , v108
+	.byte	W24
+	.byte		        Fn4 , v076
+	.byte	W24
 @ 069   ----------------------------------------
-	.byte	W96
+	.byte	W30
+	.byte		VOL   , 102*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W18
+	.byte		N24   , Fn4 , v108
+	.byte	W24
+	.byte		        Fn4 , v076
+	.byte	W24
 @ 070   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 14
+	.byte	W24
+	.byte	W03
+	.byte		VOL   , 103*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W21
+	.byte		N24   , Ds4 , v108
+	.byte	W24
+	.byte		        Ds4 , v076
+	.byte	W24
 @ 071   ----------------------------------------
-	.byte	W96
+	.byte	W24
+	.byte		VOL   , 104*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W72
 @ 072   ----------------------------------------
-	.byte	W96
+	.byte	W21
+	.byte		        105*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W72
+	.byte	W03
 @ 073   ----------------------------------------
-	.byte	W96
+	.byte	W19
+	.byte		        106*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W76
+	.byte	W01
 @ 074   ----------------------------------------
-	.byte	W96
+	.byte	W16
+	.byte		        107*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W80
 @ 075   ----------------------------------------
-	.byte	W96
+	.byte	W13
+	.byte		        108*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W80
+	.byte	W03
 @ 076   ----------------------------------------
-	.byte	W96
+	.byte	W10
+	.byte		        109*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W84
+	.byte	W02
 @ 077   ----------------------------------------
-	.byte	W96
+	.byte	W08
+	.byte		        110*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W88
 @ 078   ----------------------------------------
-	.byte	W96
+	.byte	W05
+	.byte		        111*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W90
+	.byte	W01
 @ 079   ----------------------------------------
-	.byte	W96
+	.byte	W02
+	.byte		        112*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W92
+	.byte	W02
 @ 080   ----------------------------------------
+	.byte		        113*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v-19
 	.byte	W96
 @ 081   ----------------------------------------
-	.byte	W96
+	.byte	W92
+	.byte	W03
+	.byte		VOICE , 46
+	.byte		VOL   , 86*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 082   ----------------------------------------
 	.byte	W96
 @ 083   ----------------------------------------
 	.byte	W96
 @ 084   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_3_022
 @ 085   ----------------------------------------
-	.byte	W96
+	.byte		N02   , Fs5 , v108
+	.byte	W02
+	.byte		        Fn5 
+	.byte	W02
+	.byte		        Cs5 
+	.byte	W02
+	.byte		        Bn4 
+	.byte	W02
+	.byte		        As4 
+	.byte	W02
+	.byte		        Fs4 
+	.byte	W02
+	.byte		N24   , Fn4 
+	.byte	W80
+	.byte	W03
+	.byte		VOL   , 86*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 086   ----------------------------------------
 	.byte	W96
 @ 087   ----------------------------------------
 	.byte	W96
 @ 088   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 14
+	.byte		VOL   , 86*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v-19
+	.byte		N24   , Fs4 , v096
+	.byte	W24
+	.byte		        Fs4 , v068
+	.byte	W24
+	.byte		        Fs4 , v044
+	.byte	W24
+	.byte		        Fs4 , v028
+	.byte	W24
 @ 089   ----------------------------------------
+	.byte		        Fs4 , v008
 	.byte	W96
 @ 090   ----------------------------------------
 	.byte	W96
@@ -3468,7 +4801,6 @@ mus_dcd_jtdorchestra_3_043:
 mus_dcd_jtdorchestra_4:
 	.byte	KEYSH , mus_dcd_jtdorchestra_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 120
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
@@ -3493,6 +4825,7 @@ mus_dcd_jtdorchestra_4:
 @ 011   ----------------------------------------
 	.byte	W96
 @ 012   ----------------------------------------
+	.byte		VOICE , 120
 	.byte		VOL   , 6*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W96
 @ 013   ----------------------------------------
@@ -3897,6 +5230,7 @@ mus_dcd_jtdorchestra_4:
 @ 020   ----------------------------------------
 	.byte	W96
 @ 021   ----------------------------------------
+mus_dcd_jtdorchestra_4_021:
 	.byte		VOL   , 102*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
 	.byte		        101*mus_dcd_jtdorchestra_mvl/mxv
@@ -3964,8 +5298,10 @@ mus_dcd_jtdorchestra_4:
 	.byte	W03
 	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
+	.byte	PEND
 @ 022   ----------------------------------------
-	.byte		N03   , As0 
+mus_dcd_jtdorchestra_4_022:
+	.byte		N03   , As0 , v100
 	.byte		N03   , Cn1 , v120
 	.byte	W01
 	.byte		VOL   , 73*mus_dcd_jtdorchestra_mvl/mxv
@@ -4024,8 +5360,10 @@ mus_dcd_jtdorchestra_4:
 	.byte	W04
 	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
+	.byte	PEND
 @ 023   ----------------------------------------
-	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+mus_dcd_jtdorchestra_4_023:
+	.byte		VOL   , 45*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
 	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
@@ -4083,9 +5421,11 @@ mus_dcd_jtdorchestra_4:
 	.byte	W03
 	.byte		        17*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
+	.byte	PEND
 @ 024   ----------------------------------------
+mus_dcd_jtdorchestra_4_024:
 	.byte	W02
-	.byte		        16*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		VOL   , 16*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
 	.byte		        15*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
@@ -4178,8 +5518,10 @@ mus_dcd_jtdorchestra_4:
 	.byte	W02
 	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
+	.byte	PEND
 @ 025   ----------------------------------------
-	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+mus_dcd_jtdorchestra_4_025:
+	.byte		VOL   , 41*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
 	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
@@ -4317,9 +5659,11 @@ mus_dcd_jtdorchestra_4:
 	.byte	W01
 	.byte		        110*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
+	.byte	PEND
 @ 026   ----------------------------------------
+mus_dcd_jtdorchestra_4_026:
 	.byte	W08
-	.byte		        109*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		VOL   , 109*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W09
 	.byte		        108*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W09
@@ -4381,8 +5725,10 @@ mus_dcd_jtdorchestra_4:
 	.byte	W01
 	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
+	.byte	PEND
 @ 027   ----------------------------------------
-	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+mus_dcd_jtdorchestra_4_027:
+	.byte		VOL   , 57*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
@@ -4448,7 +5794,8 @@ mus_dcd_jtdorchestra_4:
 	.byte	W01
 	.byte		        0*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W13
-	.byte		EOT   
+	.byte	PEND
+	.byte		EOT   , Dn2 
 	.byte	W48
 	.byte	W03
 @ 028   ----------------------------------------
@@ -4463,7 +5810,7 @@ mus_dcd_jtdorchestra_4:
 	.byte	W23
 	.byte		VOL   , 6*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
-	.byte		TIE   
+	.byte		TIE   , Dn2 , v112
 	.byte	W07
 	.byte		VOL   , 6*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
@@ -4884,8 +6231,9 @@ mus_dcd_jtdorchestra_4:
 @ 039   ----------------------------------------
 	.byte	W96
 @ 040   ----------------------------------------
+	.byte		VOL   , 0*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W24
-	.byte		VOL   , 6*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        6*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
 	.byte		TIE   
 	.byte	W07
@@ -4986,7 +6334,8 @@ mus_dcd_jtdorchestra_4:
 	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 @ 041   ----------------------------------------
-	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+mus_dcd_jtdorchestra_4_041:
+	.byte		VOL   , 54*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
 	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
@@ -5132,22 +6481,23 @@ mus_dcd_jtdorchestra_4:
 	.byte	W01
 	.byte		        127*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
-	.byte		EOT   
+	.byte	PEND
+	.byte		EOT   , Dn2 
 @ 042   ----------------------------------------
 mus_dcd_jtdorchestra_4_042:
 	.byte		VOL   , 104*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N36   , Bn0 , v100
-	.byte		N24   , Ds2 , v112
+	.byte		N36   , Bn0 , v096
+	.byte		N24   , Ds2 , v108
 	.byte	W24
-	.byte		        Ds2 , v056
+	.byte		        Ds2 , v052
 	.byte	W12
-	.byte		N12   , Bn0 , v100
+	.byte		N12   , Bn0 , v096
 	.byte	W12
 	.byte		N36   
 	.byte		N36   , En1 
-	.byte		N24   , Ds2 , v024
+	.byte		N24   , Ds2 , v020
 	.byte	W36
-	.byte		N03   , Fs1 , v072
+	.byte		N03   , Fs1 , v068
 	.byte	W04
 	.byte		N03   
 	.byte	W04
@@ -5156,39 +6506,39 @@ mus_dcd_jtdorchestra_4_042:
 	.byte	PEND
 @ 043   ----------------------------------------
 mus_dcd_jtdorchestra_4_043:
-	.byte		N36   , Bn0 , v100
+	.byte		N36   , Bn0 , v096
 	.byte	W36
 	.byte		N12   
 	.byte	W12
 	.byte		N36   
 	.byte		N12   , En1 
 	.byte	W12
-	.byte		N02   , Fs1 , v068
+	.byte		N02   , Fs1 , v064
 	.byte	W04
-	.byte		        Fs1 , v088
+	.byte		        Fs1 , v084
 	.byte	W04
-	.byte		        Fs1 , v056
+	.byte		        Fs1 , v052
 	.byte	W04
-	.byte		N12   , En1 , v100
+	.byte		N12   , En1 , v096
 	.byte	W12
-	.byte		N02   , Fs1 , v084
+	.byte		N02   , Fs1 , v080
 	.byte	W04
-	.byte		        Fs1 , v088
+	.byte		        Fs1 , v084
 	.byte	W04
-	.byte		        Fs1 , v056
+	.byte		        Fs1 , v052
 	.byte	W04
 	.byte	PEND
 @ 044   ----------------------------------------
 mus_dcd_jtdorchestra_4_044:
 	.byte		VOL   , 110*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N36   , Bn0 , v100
+	.byte		N36   , Bn0 , v096
 	.byte	W36
 	.byte		N12   
 	.byte	W12
 	.byte		N36   
 	.byte		N36   , En1 
 	.byte	W36
-	.byte		N03   , Fs1 , v072
+	.byte		N03   , Fs1 , v068
 	.byte	W04
 	.byte		N03   
 	.byte	W04
@@ -5197,22 +6547,22 @@ mus_dcd_jtdorchestra_4_044:
 	.byte	PEND
 @ 045   ----------------------------------------
 mus_dcd_jtdorchestra_4_045:
-	.byte		N36   , Bn0 , v100
+	.byte		N36   , Bn0 , v096
 	.byte	W36
 	.byte		N12   
 	.byte	W12
 	.byte		N36   
 	.byte		N12   , En1 
 	.byte	W12
-	.byte		N02   , Fs1 , v068
+	.byte		N02   , Fs1 , v064
 	.byte	W06
-	.byte		N12   , En1 , v100
+	.byte		N12   , En1 , v096
 	.byte	W18
 	.byte		N12   
 	.byte	W04
-	.byte		N02   , Fs1 , v088
+	.byte		N02   , Fs1 , v084
 	.byte	W04
-	.byte		        Fs1 , v056
+	.byte		        Fs1 , v052
 	.byte	W04
 	.byte	PEND
 @ 046   ----------------------------------------
@@ -5229,7 +6579,7 @@ mus_dcd_jtdorchestra_4_045:
 	 .word	mus_dcd_jtdorchestra_4_045
 @ 050   ----------------------------------------
 	.byte		VOL   , 110*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N36   , Bn0 , v100
+	.byte		N36   , Bn0 , v096
 	.byte		N04   , Fs1 
 	.byte	W12
 	.byte		N04   
@@ -5239,21 +6589,21 @@ mus_dcd_jtdorchestra_4_045:
 	.byte		N36   
 	.byte		N36   , En1 
 	.byte	W36
-	.byte		N03   , Fs1 , v072
+	.byte		N03   , Fs1 , v068
 	.byte	W04
 	.byte		N03   
 	.byte	W04
 	.byte		N03   
 	.byte	W04
 @ 051   ----------------------------------------
-	.byte		N24   , Bn0 , v100
+	.byte		N24   , Bn0 , v096
 	.byte	W24
 	.byte		N24   
 	.byte	W17
 	.byte		VOL   , 110*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W07
 	.byte		        18*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N48   , Dn2 
+	.byte		N48   , Dn2 , v080
 	.byte	W02
 	.byte		VOL   , 19*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
@@ -5300,7 +6650,7 @@ mus_dcd_jtdorchestra_4_045:
 	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N24   , Bn0 
+	.byte		N24   , Bn0 , v096
 	.byte	W01
 	.byte		VOL   , 42*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
@@ -5348,7 +6698,13 @@ mus_dcd_jtdorchestra_4_045:
 	.byte	W01
 @ 052   ----------------------------------------
 	.byte		        110*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W96
+	.byte		N24   , Bn0 , v108
+	.byte		N24   , Ds2 , v092
+	.byte	W24
+	.byte		        Ds2 , v040
+	.byte	W24
+	.byte		        Ds2 , v004
+	.byte	W48
 @ 053   ----------------------------------------
 	.byte	W96
 @ 054   ----------------------------------------
@@ -5364,45 +6720,1170 @@ mus_dcd_jtdorchestra_4_045:
 @ 059   ----------------------------------------
 	.byte	W96
 @ 060   ----------------------------------------
-	.byte	W96
+	.byte		        Bn0 , v092
+	.byte		N24   , Ds2 
+	.byte	W24
+	.byte		        Ds2 , v040
+	.byte	W24
+	.byte		        Ds2 , v004
+	.byte	W48
 @ 061   ----------------------------------------
 	.byte	W96
 @ 062   ----------------------------------------
-	.byte	W96
+	.byte		VOL   , 0*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W24
+	.byte		        6*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		TIE   , Dn2 , v108
+	.byte	W07
+	.byte		VOL   , 6*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        7*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        8*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        9*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        10*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        11*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        12*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        13*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        14*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        15*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        16*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        17*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        18*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        19*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        20*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        21*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        22*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        23*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        24*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        25*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        26*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        27*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        28*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        29*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        30*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        31*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        32*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        33*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        34*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        35*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        36*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        37*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        38*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        39*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 063   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_041
+	.byte		EOT   , Dn2 
 @ 064   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_042
 @ 065   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_043
 @ 066   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_044
 @ 067   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_045
 @ 068   ----------------------------------------
-	.byte	W96
+	.byte		VOL   , 104*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N36   , Bn0 , v096
+	.byte		N24   , Ds2 , v092
+	.byte	W24
+	.byte		        Ds2 , v052
+	.byte	W12
+	.byte		N12   , Bn0 , v096
+	.byte	W12
+	.byte		N36   
+	.byte		N36   , En1 
+	.byte		N24   , Ds2 , v020
+	.byte	W36
+	.byte		N03   , Fs1 , v068
+	.byte	W04
+	.byte		N03   
+	.byte	W04
+	.byte		N03   
+	.byte	W04
 @ 069   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_043
 @ 070   ----------------------------------------
-	.byte	W96
+	.byte		VOL   , 109*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N36   , Bn0 , v096
+	.byte	W01
+	.byte		VOL   , 108*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        107*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        106*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        105*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        104*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        103*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        101*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        100*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        99*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        98*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        97*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        96*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        94*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        93*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        92*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        91*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        90*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        88*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        86*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        85*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        84*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        83*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N12   
+	.byte	W01
+	.byte		VOL   , 67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N36   
+	.byte		N36   , En1 
+	.byte	W01
+	.byte		VOL   , 53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        39*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        38*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        37*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        36*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        35*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        34*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        33*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        31*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        30*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        29*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        28*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        27*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        26*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        25*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        23*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        22*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        21*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        20*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        19*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        18*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        17*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        15*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        14*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        13*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N03   , Fs1 , v068
+	.byte	W01
+	.byte		VOL   , 12*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        11*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        10*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        9*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N03   
+	.byte	W01
+	.byte		VOL   , 7*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        6*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        5*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        4*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N03   
+	.byte	W01
+	.byte		VOL   , 3*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        2*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        1*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 071   ----------------------------------------
-	.byte	W96
+	.byte		        0*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N96   , Dn2 , v108
+	.byte	W01
+	.byte		VOL   , 1*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        3*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        4*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        5*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        7*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        8*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        9*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        11*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        12*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        14*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        15*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        16*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        18*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        19*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        20*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        22*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        23*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        25*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        26*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        27*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        29*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        30*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        31*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        33*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        34*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        36*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        37*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        38*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        79*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        84*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        85*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        86*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        88*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        90*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        92*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        93*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        95*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        96*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        97*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        99*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        100*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        101*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        103*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        104*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        106*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        107*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        108*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        110*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        111*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        112*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        114*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        115*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        117*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        118*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        119*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        121*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        122*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        123*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        125*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        127*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
 @ 072   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_042
 @ 073   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_043
 @ 074   ----------------------------------------
-	.byte	W96
+	.byte		VOL   , 110*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N36   , Bn0 , v096
+	.byte	W01
+	.byte		VOL   , 109*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        108*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        107*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        106*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        105*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        104*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        103*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        102*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        101*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        100*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        99*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        98*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        97*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        96*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        95*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        94*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        93*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        92*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        91*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        90*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        88*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        87*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        86*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        85*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        84*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        83*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N12   
+	.byte	W01
+	.byte		VOL   , 81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        79*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N36   
+	.byte		N36   , En1 
+	.byte	W01
+	.byte		VOL   , 72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		N03   , Fs1 , v068
+	.byte	W01
+	.byte		VOL   , 45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		N03   
+	.byte	W01
+	.byte		VOL   , 42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        39*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N03   
+	.byte	W02
+	.byte		VOL   , 38*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        37*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 075   ----------------------------------------
-	.byte	W96
+	.byte		        36*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N36   , Bn0 , v096
+	.byte	W02
+	.byte		VOL   , 35*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        34*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        33*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        32*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        31*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        30*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        29*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        28*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        27*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        26*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        25*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        24*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        23*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        22*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        21*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        20*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        19*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        18*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        17*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        16*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        15*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        14*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        13*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        12*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        11*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        10*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        9*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        8*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        7*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        6*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        5*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        4*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        3*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        2*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        1*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        2*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N48   , Dn2 , v108
+	.byte	W01
+	.byte		VOL   , 5*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        7*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        10*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        13*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        16*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        19*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        22*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        24*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        27*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        31*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        33*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        36*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        39*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        79*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        84*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        87*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        90*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        93*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        96*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        99*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        101*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        104*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        108*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        110*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        113*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        116*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        118*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        122*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        125*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        127*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
 @ 076   ----------------------------------------
-	.byte	W96
+	.byte		        104*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N36   , Bn0 , v096
+	.byte		N24   , Ds2 , v108
+	.byte	W16
+	.byte		VOL   , 105*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        106*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N23   , Ds2 , v028
+	.byte	W08
+	.byte		VOL   , 107*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W08
+	.byte		        108*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W07
+	.byte		        110*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        7*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		TIE   , Dn2 , v112
+	.byte	W01
+	.byte		VOL   , 8*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        9*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        10*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        11*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        12*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        13*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        14*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        15*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        16*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        17*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        18*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        19*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        20*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        21*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        22*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        23*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        24*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        25*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        26*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        27*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        28*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        29*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        30*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        31*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        32*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        33*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        34*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        35*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 077   ----------------------------------------
-	.byte	W96
+	.byte	W01
+	.byte		        36*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        37*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        38*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        39*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N09   , Bn0 , v127
+	.byte	W02
+	.byte		VOL   , 59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		N05   , Dn1 , v108
+	.byte	W01
+	.byte		VOL   , 66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		N06   
+	.byte	W01
+	.byte		VOL   , 69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N06   , Bn0 , v127
+	.byte	W02
+	.byte		VOL   , 74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		N06   , Bn0 , v060
+	.byte	W01
+	.byte		VOL   , 77*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        79*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		N06   , Bn0 , v108
+	.byte	W01
+	.byte		VOL   , 81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        83*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        84*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N06   , Bn0 , v060
+	.byte	W01
+	.byte		VOL   , 85*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        86*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        87*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        88*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N06   , Bn0 , v127
+	.byte	W02
+	.byte		VOL   , 89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        90*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        91*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		N06   , Cn1 
+	.byte	W01
+	.byte		VOL   , 92*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        93*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        94*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        96*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 078   ----------------------------------------
-	.byte	W96
+	.byte	W24
+	.byte		        97*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W12
+	.byte		        98*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W12
+	.byte		        99*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W12
+	.byte		        100*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		        101*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W12
+	.byte		        102*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W11
 @ 079   ----------------------------------------
-	.byte	W96
+	.byte	W01
+	.byte		        103*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        101*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        97*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        93*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        91*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        87*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        83*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        36*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        32*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        30*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        26*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        22*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        20*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        16*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        12*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        9*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        6*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        2*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        0*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		EOT   , Dn2 
+	.byte	W48
+	.byte	W03
 @ 080   ----------------------------------------
 	.byte	W96
 @ 081   ----------------------------------------
@@ -5410,19 +7891,29 @@ mus_dcd_jtdorchestra_4_045:
 @ 082   ----------------------------------------
 	.byte	W96
 @ 083   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_021
 @ 084   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_022
 @ 085   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_023
 @ 086   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_024
 @ 087   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_025
 @ 088   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_026
 @ 089   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_4_027
+	.byte		EOT   , Dn2 
+	.byte	W48
+	.byte	W03
 @ 090   ----------------------------------------
 	.byte	W96
 @ 091   ----------------------------------------
@@ -5621,8 +8112,6 @@ mus_dcd_jtdorchestra_4_045:
 mus_dcd_jtdorchestra_5:
 	.byte	KEYSH , mus_dcd_jtdorchestra_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 47
-	.byte		VOL   , 127*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
@@ -5702,7 +8191,7 @@ mus_dcd_jtdorchestra_5_018:
 	 .word	mus_dcd_jtdorchestra_5_018
 @ 026   ----------------------------------------
 	.byte	W01
-	.byte		VOICE , 105
+	.byte		VOICE , 46
 	.byte		VOL   , 37*mus_dcd_jtdorchestra_mvl/mxv
 	.byte		PAN   , c_v-64
 	.byte	W10
@@ -5793,285 +8282,210 @@ mus_dcd_jtdorchestra_5_018:
 @ 042   ----------------------------------------
 	.byte		VOICE , 73
 	.byte		VOL   , 83*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v+2
 	.byte	W96
 @ 043   ----------------------------------------
-	.byte		N04   , Gs4 , v096
+	.byte		N04   , Gs4 , v092
 	.byte	W03
 	.byte		VOL   , 83*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 	.byte		        81*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
-	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
-	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
 	.byte		TIE   , As4 
-	.byte	W23
-	.byte		VOL   , 68*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W12
-	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W13
-	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W12
-	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W13
-	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W11
-@ 044   ----------------------------------------
+	.byte	W36
 	.byte	W01
-	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W12
-	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W13
-	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W12
-	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W10
+	.byte		VOL   , 59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W40
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W07
+@ 044   ----------------------------------------
+	.byte	W32
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W16
 	.byte		EOT   
 	.byte		N06   , Cs5 
-	.byte	W02
-	.byte		VOL   , 77*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
+	.byte	W06
 	.byte		TIE   , Ds5 
-	.byte	W09
-	.byte		VOL   , 78*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W12
-	.byte		        79*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W13
-	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
+	.byte	W17
+	.byte		VOL   , 56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W24
+	.byte	W01
 @ 045   ----------------------------------------
+	.byte	W14
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W40
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W06
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
-	.byte		        81*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W12
-	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W13
-	.byte		        83*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W12
-	.byte		        84*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W13
-	.byte		        86*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        85*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        84*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        83*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
-	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        79*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
-	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
-	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
 @ 046   ----------------------------------------
-	.byte	W11
-	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W06
-	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        79*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W92
+	.byte	W02
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
 	.byte		EOT   
 @ 047   ----------------------------------------
+	.byte		MOD   , 0
+	.byte		VOL   , 68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v+2
 	.byte		N06   , Fn5 
 	.byte	W06
 	.byte		        Fs5 
 	.byte	W06
 	.byte		N12   , Fn5 
 	.byte	W11
-	.byte		VOL   , 82*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		VOL   , 68*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 	.byte		N72   , Cs5 
 	.byte	W01
-	.byte		VOL   , 81*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        79*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		VOL   , 67*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
-	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
-	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
-	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
-	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
-	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
-	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
-	.byte		        79*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
-	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
-	.byte		        81*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        83*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
-	.byte		        84*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
-	.byte		        85*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
-	.byte		        86*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        87*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        88*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
-	.byte		        89*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        90*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        91*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        92*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        89*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        85*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        81*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 @ 048   ----------------------------------------
-	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
 	.byte		N40   , Gs4 
 	.byte		N40   , Cs5 
 	.byte	W01
-	.byte		VOL   , 61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		VOL   , 52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
 	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
 	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W02
 	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W01
 	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W03
 	.byte		N08   , As4 
 	.byte		N08   , Ds5 
@@ -6079,42 +8493,36 @@ mus_dcd_jtdorchestra_5_018:
 	.byte		TIE   , Gs4 
 	.byte		TIE   , Cs5 
 	.byte	W02
-	.byte		VOL   , 60*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W16
-	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
-	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
+	.byte		VOL   , 51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W19
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
 @ 049   ----------------------------------------
-	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W10
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W09
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W10
 	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
-	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
-	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
-	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
-	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
-	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W07
-	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
-	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W08
-	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
 	.byte		EOT   , Gs4 
 	.byte		        Cs5 
@@ -6125,93 +8533,511 @@ mus_dcd_jtdorchestra_5_018:
 	.byte		        As4 
 	.byte	W96
 @ 052   ----------------------------------------
+	.byte		VOICE , 60
+	.byte		TIE   , Bn1 , v080
+	.byte		TIE   , Ds2 , v064
+	.byte		TIE   , Cs3 , v068
 	.byte	W96
 @ 053   ----------------------------------------
 	.byte	W96
+	.byte		EOT   , Bn1 
+	.byte		        Ds2 
+	.byte		        Cs3 
 @ 054   ----------------------------------------
+	.byte		TIE   , As1 , v080
+	.byte		TIE   , Fn2 , v064
+	.byte		TIE   , Gs2 , v068
 	.byte	W96
 @ 055   ----------------------------------------
 	.byte	W96
+	.byte		EOT   , As1 
+	.byte		        Fn2 
+	.byte		        Gs2 
 @ 056   ----------------------------------------
+	.byte		TIE   , Fn2 , v080
+	.byte		TIE   , Gs2 , v068
+	.byte		TIE   , Cs3 
 	.byte	W96
 @ 057   ----------------------------------------
 	.byte	W96
+	.byte		EOT   , Fn2 
+	.byte		        Gs2 
+	.byte		        Cs3 
 @ 058   ----------------------------------------
+	.byte		TIE   , As1 
+	.byte		TIE   , Fn2 
+	.byte		N96   , Cn3 
 	.byte	W96
 @ 059   ----------------------------------------
-	.byte	W96
+	.byte		        Cs3 
+	.byte	W92
+	.byte	W01
+	.byte		VOL   , 67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		EOT   , As1 
+	.byte		        Fn2 
 @ 060   ----------------------------------------
+	.byte		VOICE , 60
+	.byte		TIE   , Ds2 , v080
+	.byte		TIE   , Cs3 , v052
+	.byte		TIE   , Fs3 , v068
 	.byte	W96
 @ 061   ----------------------------------------
 	.byte	W96
+	.byte		EOT   , Ds2 
+	.byte		        Cs3 
+	.byte		        Fs3 
 @ 062   ----------------------------------------
+	.byte		TIE   , Cs2 , v080
+	.byte		TIE   , As2 , v052
+	.byte		TIE   , Cs3 , v068
 	.byte	W96
 @ 063   ----------------------------------------
 	.byte	W96
+	.byte		EOT   , Cs2 
+	.byte		        As2 
+	.byte		        Cs3 
 @ 064   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 60
+	.byte		TIE   , Bn1 , v060
+	.byte		TIE   , Ds2 , v044
+	.byte		TIE   , Cs3 , v048
+	.byte	W92
+	.byte	W02
+	.byte		VOL   , 68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
 @ 065   ----------------------------------------
 	.byte	W96
+	.byte		EOT   , Bn1 
+	.byte		        Ds2 
+	.byte		        Cs3 
 @ 066   ----------------------------------------
+	.byte		TIE   , As1 , v060
+	.byte		TIE   , Fn2 , v044
+	.byte		TIE   , Gs2 , v048
 	.byte	W96
 @ 067   ----------------------------------------
 	.byte	W96
+	.byte		EOT   , As1 
+	.byte		        Fn2 
+	.byte		        Gs2 
 @ 068   ----------------------------------------
+	.byte		TIE   , Cs2 , v072
+	.byte		TIE   , Fn2 , v060
+	.byte		TIE   , Gs2 , v064
 	.byte	W96
 @ 069   ----------------------------------------
-	.byte	W96
+	.byte	W92
+	.byte	W02
+	.byte		VOL   , 69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		EOT   , Cs2 
+	.byte		        Fn2 
+	.byte		        Gs2 
 @ 070   ----------------------------------------
+	.byte		TIE   , Ds2 , v076
+	.byte		TIE   , As2 , v072
+	.byte		N96   , Ds3 , v048
 	.byte	W96
 @ 071   ----------------------------------------
 	.byte	W96
+	.byte		EOT   , Ds2 
+	.byte		        As2 
 @ 072   ----------------------------------------
+	.byte		VOICE , 60
+	.byte		N96   , Bn1 , v060
+	.byte		N96   , Ds2 , v044
+	.byte		N96   , Fs2 , v072
 	.byte	W96
 @ 073   ----------------------------------------
+	.byte		        Cs2 , v060
+	.byte		N96   , Fn2 , v044
+	.byte		N96   , Gs2 , v064
 	.byte	W96
 @ 074   ----------------------------------------
-	.byte	W96
+	.byte		        As1 , v060
+	.byte		N96   , Cs2 
+	.byte		N96   , Fn2 , v076
+	.byte	W92
+	.byte	W03
+	.byte		VOL   , 70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 075   ----------------------------------------
+	.byte		N96   , As1 , v068
+	.byte		N96   , Fs2 , v064
+	.byte		N96   , Ds3 
 	.byte	W96
 @ 076   ----------------------------------------
+	.byte		        Fs2 , v072
+	.byte		N96   , Bn2 , v060
+	.byte		N96   , Ds3 , v064
 	.byte	W96
 @ 077   ----------------------------------------
+	.byte		        Gs2 , v072
+	.byte		N96   , Cs3 , v060
+	.byte		N96   , Fn3 , v064
 	.byte	W96
 @ 078   ----------------------------------------
+	.byte		TIE   , Fs2 
+	.byte		TIE   , As2 , v072
+	.byte		TIE   , Ds3 
 	.byte	W96
 @ 079   ----------------------------------------
 	.byte	W96
+	.byte		EOT   , Fs2 
+	.byte		        As2 
+	.byte		        Ds3 
 @ 080   ----------------------------------------
+	.byte		VOL   , 72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v+5
+	.byte		TIE   , Cs3 , v064
+	.byte		TIE   , Fn3 , v072
 	.byte	W96
 @ 081   ----------------------------------------
 	.byte	W96
+	.byte		EOT   , Cs3 
+	.byte		        Fn3 
 @ 082   ----------------------------------------
+	.byte		VOICE , 60
+	.byte		VOL   , 72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v+5
+	.byte		TIE   , Fs2 , v076
+	.byte		TIE   , As2 , v064
 	.byte	W96
 @ 083   ----------------------------------------
+	.byte		VOL   , 71*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W96
+	.byte		EOT   , Fs2 
+	.byte		        As2 
 @ 084   ----------------------------------------
+	.byte		VOL   , 70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		TIE   , Fn2 , v076
+	.byte		TIE   , Ds3 , v072
 	.byte	W96
 @ 085   ----------------------------------------
+	.byte		VOL   , 69*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W96
+	.byte		EOT   
 @ 086   ----------------------------------------
+	.byte		VOL   , 68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		TIE   , Cs3 
 	.byte	W96
 @ 087   ----------------------------------------
+	.byte		VOL   , 67*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W96
+	.byte		EOT   , Fn2 
+	.byte		        Cs3 
 @ 088   ----------------------------------------
-	.byte	W96
+	.byte		VOL   , 66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v+5
+	.byte		MOD   , 0
+	.byte		VOL   , 83*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v+2
+	.byte	W80
+	.byte	W03
+	.byte		VOICE , 73
+	.byte	W07
+	.byte		N06   , Gs4 , v092
+	.byte	W05
+	.byte		VOL   , 83*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 089   ----------------------------------------
-	.byte	W96
+	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		TIE   , As4 
+	.byte	W01
+	.byte		VOL   , 77*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W07
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
 @ 090   ----------------------------------------
-	.byte	W96
+	.byte	W01
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W03
+	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
+	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		EOT   
+	.byte		N06   , Fn5 
+	.byte	W06
+	.byte		        Fs5 
+	.byte	W06
+	.byte		N12   , Fn5 
+	.byte	W12
+	.byte		N02   , Dn5 
+	.byte	W02
+	.byte		TIE   , Cs5 
+	.byte	W22
 @ 091   ----------------------------------------
-	.byte	W96
+	.byte	W04
+	.byte		MOD   , 0
+	.byte	W01
+	.byte		        10
+	.byte	W36
+	.byte		VOL   , 74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		MOD   , 10
+	.byte	W01
+	.byte		VOL   , 57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		MOD   , 9
+	.byte	W02
+	.byte		VOL   , 54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		MOD   , 8
+	.byte		VOL   , 52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		MOD   , 7
+	.byte	W01
+	.byte		VOL   , 49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		MOD   , 6
+	.byte	W02
+	.byte		VOL   , 46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		MOD   , 5
+	.byte		VOL   , 44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		MOD   , 4
+	.byte	W01
+	.byte		VOL   , 41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        39*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		MOD   , 3
+	.byte	W01
+	.byte		VOL   , 38*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        37*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		MOD   , 2
+	.byte		VOL   , 36*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        35*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        34*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		MOD   , 1
+	.byte	W01
+	.byte		VOL   , 33*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		EOT   
+	.byte		VOL   , 32*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
 @ 092   ----------------------------------------
-	.byte	W96
+	.byte		MOD   , 0
+	.byte		VOL   , 31*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W23
+	.byte		        31*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W06
+	.byte		        35*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W14
+	.byte		N22   , Gs3 
+	.byte	W22
+	.byte		N03   , Cn4 
+	.byte	W02
+	.byte		TIE   , Cs4 
+	.byte	W01
+	.byte		VOL   , 65*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 093   ----------------------------------------
-	.byte	W96
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W24
+	.byte	W01
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W12
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W12
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 094   ----------------------------------------
-	.byte	W96
+	.byte	W11
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W12
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W13
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W05
+	.byte		EOT   
+	.byte		N66   , As3 
+	.byte	W42
 @ 095   ----------------------------------------
-	.byte	W96
+	.byte	W24
+	.byte		N72   , Fn4 
+	.byte	W72
 @ 096   ----------------------------------------
 	.byte	W96
 @ 097   ----------------------------------------
@@ -6398,8 +9224,6 @@ mus_dcd_jtdorchestra_5_018:
 mus_dcd_jtdorchestra_6:
 	.byte	KEYSH , mus_dcd_jtdorchestra_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 60
-	.byte		VOL   , 72*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
@@ -6434,7 +9258,7 @@ mus_dcd_jtdorchestra_6:
 @ 016   ----------------------------------------
 	.byte		VOICE , 60
 	.byte		VOL   , 72*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		PAN   , c_v+25
+	.byte		PAN   , c_v+5
 	.byte		TIE   , As2 , v052
 	.byte		TIE   , Ds3 , v072
 	.byte	W96
@@ -6453,7 +9277,7 @@ mus_dcd_jtdorchestra_6:
 @ 020   ----------------------------------------
 	.byte		VOICE , 60
 	.byte		VOL   , 72*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		PAN   , c_v+25
+	.byte		PAN   , c_v+5
 	.byte		TIE   , Fs2 , v076
 	.byte		TIE   , As2 , v064
 	.byte	W96
@@ -6675,191 +9499,133 @@ mus_dcd_jtdorchestra_6:
 	.byte		N03   , Gs3 , v044
 	.byte	W06
 	.byte		        As3 , v080
-	.byte	W02
-	.byte		VOL   , 71*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		N03   , As3 , v044
-	.byte	W03
-	.byte		VOL   , 70*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , Fs3 , v080
-	.byte	W05
-	.byte		VOL   , 69*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , Fs3 , v044
 	.byte	W06
-	.byte		        Gs3 , v080
-	.byte	W01
-	.byte		VOL   , 68*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W05
-	.byte		N03   , Gs3 , v044
-	.byte	W02
-	.byte		VOL   , 67*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		N03   , Fn3 , v080
-	.byte	W04
-	.byte		VOL   , 66*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , Fn3 , v044
+	.byte		        As3 , v044
 	.byte	W06
-	.byte		VOL   , 65*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Fs3 , v080
+	.byte		        Fs3 , v080
 	.byte	W06
 	.byte		        Fs3 , v044
-	.byte	W01
-	.byte		VOL   , 64*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W05
-	.byte		N03   , Ds3 , v080
-	.byte	W03
-	.byte		VOL   , 63*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , Ds3 , v044
-	.byte	W05
-	.byte		VOL   , 62*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , Cs4 , v080
 	.byte	W06
-	.byte		        Cs4 , v044
-	.byte	W01
-	.byte		VOL   , 61*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W05
-@ 038   ----------------------------------------
-	.byte		N03   , Cs4 , v080
-	.byte		N03   , Fn4 
-	.byte	W02
-	.byte		VOL   , 60*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		N03   , Cs4 , v044
-	.byte		N03   , Fn4 
-	.byte	W04
-	.byte		VOL   , 59*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , Ds4 , v080
-	.byte		N03   , Fs4 
+	.byte		        Gs3 , v080
 	.byte	W06
-	.byte		VOL   , 58*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Ds4 , v044
-	.byte		N03   , Fs4 
+	.byte		        Gs3 , v044
+	.byte	W06
+	.byte		        Fn3 , v080
+	.byte	W06
+	.byte		        Fn3 , v044
+	.byte	W06
+	.byte		        Fs3 , v080
+	.byte	W06
+	.byte		        Fs3 , v044
+	.byte	W06
+	.byte		        Ds3 , v080
+	.byte	W06
+	.byte		        Ds3 , v044
 	.byte	W06
 	.byte		        Cs4 , v080
-	.byte		N03   , Fn4 
-	.byte	W01
-	.byte		VOL   , 57*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W05
-	.byte		N03   , Cs4 , v044
-	.byte		N03   , Fn4 
-	.byte	W03
-	.byte		VOL   , 56*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , As3 , v080
-	.byte		N03   , Cs4 
-	.byte	W05
-	.byte		VOL   , 55*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , As3 , v044
-	.byte		N03   , Cs4 
 	.byte	W06
-	.byte		VOL   , 54*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Bn3 , v080
-	.byte		N03   , Ds4 
+	.byte		        Cs4 , v044
 	.byte	W06
-	.byte		        Bn3 , v044
-	.byte		N03   , Ds4 
-	.byte	W02
-	.byte		VOL   , 53*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		N03   , Cs4 , v080
-	.byte		N03   , Fn4 
-	.byte	W04
-	.byte		VOL   , 52*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , Cs4 , v044
-	.byte		N03   , Fn4 
-	.byte	W05
-	.byte		VOL   , 51*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , Cs4 , v080
+@ 038   ----------------------------------------
+	.byte		        Cs4 , v080
 	.byte		N03   , Fn4 
 	.byte	W06
 	.byte		        Cs4 , v044
-	.byte		N03   , Fn4 
-	.byte	W01
-	.byte		VOL   , 50*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W05
-	.byte		N03   , Fn4 , v080
-	.byte		N03   , Gs4 
-	.byte	W03
-	.byte		VOL   , 49*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , Fn4 , v044
-	.byte		N03   , Gs4 
-	.byte	W04
-	.byte		VOL   , 48*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-@ 039   ----------------------------------------
-	.byte		N03   , Cs4 , v080
-	.byte		N03   , Fn4 
-	.byte	W06
-	.byte		VOL   , 47*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Cs4 , v044
 	.byte		N03   , Fn4 
 	.byte	W06
 	.byte		        Ds4 , v080
 	.byte		N03   , Fs4 
 	.byte	W02
-	.byte		VOL   , 46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		VOL   , 73*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
 	.byte		N03   , Ds4 , v044
 	.byte		N03   , Fs4 
-	.byte	W03
-	.byte		VOL   , 45*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , Cs4 , v080
+	.byte	W06
+	.byte		        Cs4 , v080
 	.byte		N03   , Fn4 
-	.byte	W05
-	.byte		VOL   , 44*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , Cs4 , v044
+	.byte	W06
+	.byte		        Cs4 , v044
 	.byte		N03   , Fn4 
 	.byte	W06
 	.byte		        As3 , v080
 	.byte		N03   , Cs4 
-	.byte	W01
-	.byte		VOL   , 43*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W05
-	.byte		N03   , As3 , v044
+	.byte	W06
+	.byte		        As3 , v044
 	.byte		N03   , Cs4 
-	.byte	W03
-	.byte		VOL   , 42*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , Bn3 , v080
-	.byte		N03   , Ds4 
-	.byte	W04
-	.byte		VOL   , 41*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , Bn3 , v044
+	.byte	W06
+	.byte		        Bn3 , v080
 	.byte		N03   , Ds4 
 	.byte	W06
-	.byte		VOL   , 40*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Ds4 , v080
+	.byte		        Bn3 , v044
+	.byte		N03   , Ds4 
+	.byte	W06
+	.byte		        Cs4 , v080
+	.byte		N03   , Fn4 
+	.byte	W06
+	.byte		VOL   , 74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N03   , Cs4 , v044
+	.byte		N03   , Fn4 
+	.byte	W06
+	.byte		        Cs4 , v080
+	.byte		N03   , Fn4 
+	.byte	W06
+	.byte		        Cs4 , v044
+	.byte		N03   , Fn4 
+	.byte	W06
+	.byte		        Fn4 , v080
+	.byte		N03   , Gs4 
+	.byte	W06
+	.byte		        Fn4 , v044
+	.byte		N03   , Gs4 
+	.byte	W06
+@ 039   ----------------------------------------
+	.byte		        Cs4 , v080
+	.byte		N03   , Fn4 
+	.byte	W06
+	.byte		        Cs4 , v044
+	.byte		N03   , Fn4 
+	.byte	W06
+	.byte		        Ds4 , v080
 	.byte		N03   , Fs4 
 	.byte	W06
 	.byte		        Ds4 , v044
 	.byte		N03   , Fs4 
-	.byte	W02
-	.byte		VOL   , 39*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W04
+	.byte		VOL   , 75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
 	.byte		N03   , Cs4 , v080
 	.byte		N03   , Fn4 
-	.byte	W03
-	.byte		VOL   , 38*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
+	.byte	W06
+	.byte		        Cs4 , v044
+	.byte		N03   , Fn4 
+	.byte	W06
+	.byte		        As3 , v080
+	.byte		N03   , Cs4 
+	.byte	W06
+	.byte		        As3 , v044
+	.byte		N03   , Cs4 
+	.byte	W06
+	.byte		        Bn3 , v080
+	.byte		N03   , Ds4 
+	.byte	W06
+	.byte		        Bn3 , v044
+	.byte		N03   , Ds4 
+	.byte	W06
+	.byte		        Ds4 , v080
+	.byte		N03   , Fs4 
+	.byte	W06
+	.byte		        Ds4 , v044
+	.byte		N03   , Fs4 
+	.byte	W06
+	.byte		        Cs4 , v080
+	.byte		N03   , Fn4 
+	.byte	W02
+	.byte		VOL   , 76*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W04
 	.byte		N03   , Cs4 , v044
 	.byte		N03   , Fn4 
-	.byte	W05
-	.byte		VOL   , 37*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , Fn4 , v080
+	.byte	W06
+	.byte		        Fn4 , v080
 	.byte		N03   , Gs4 
 	.byte	W06
 	.byte		        Fn4 , v044
@@ -6869,147 +9635,74 @@ mus_dcd_jtdorchestra_6:
 	.byte	W05
 @ 040   ----------------------------------------
 	.byte		N03   , Fn3 , v056
-	.byte	W03
-	.byte		VOL   , 37*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
+	.byte	W06
+	.byte		        Fs3 
+	.byte	W06
+	.byte		        Gs3 
+	.byte	W06
+	.byte		        As3 
+	.byte	W06
+	.byte		        Fn3 
+	.byte	W06
+	.byte		VOL   , 77*mus_dcd_jtdorchestra_mvl/mxv
 	.byte		N03   , Fs3 
-	.byte	W01
-	.byte		VOL   , 38*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W06
+	.byte		        Gs3 
+	.byte	W06
+	.byte		        As3 
+	.byte	W06
+	.byte		        Fn3 
+	.byte	W06
+	.byte		        Fs3 
+	.byte	W06
+	.byte		        Gs3 
+	.byte	W06
+	.byte		        As3 
+	.byte	W06
+	.byte		        Fn3 
+	.byte	W06
+	.byte		        Fs3 
 	.byte	W05
-	.byte		        39*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Gs3 
-	.byte	W04
-	.byte		VOL   , 40*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , As3 
-	.byte	W02
-	.byte		VOL   , 41*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		N03   , Fn3 
-	.byte	W01
-	.byte		VOL   , 42*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , Fs3 
-	.byte	W03
-	.byte		VOL   , 44*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , Gs3 
-	.byte	W01
-	.byte		VOL   , 45*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W05
-	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , As3 
-	.byte	W04
-	.byte		VOL   , 47*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , Fn3 
-	.byte	W02
-	.byte		VOL   , 48*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Fs3 
-	.byte	W05
-	.byte		VOL   , 50*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , Gs3 
-	.byte	W03
-	.byte		VOL   , 51*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , As3 
-	.byte	W01
-	.byte		VOL   , 52*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W05
-	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Fn3 
-	.byte	W04
-	.byte		VOL   , 54*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , Fs3 
-	.byte	W02
-	.byte		VOL   , 55*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Gs3 
-	.byte	W05
-	.byte		VOL   , 57*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , As3 
-	.byte	W03
-	.byte		VOL   , 58*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-@ 041   ----------------------------------------
-	.byte		N03   , Fn3 
-	.byte	W01
-	.byte		VOL   , 59*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , Fs3 
-	.byte	W04
-	.byte		VOL   , 61*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , Gs3 
-	.byte	W02
-	.byte		VOL   , 62*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , As3 
-	.byte	W04
-	.byte		VOL   , 64*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , Fn3 
-	.byte	W03
-	.byte		VOL   , 65*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , Fs3 
-	.byte	W01
-	.byte		VOL   , 66*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , Gs3 
-	.byte	W04
-	.byte		VOL   , 68*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , As3 
-	.byte	W02
-	.byte		VOL   , 69*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Fn3 
-	.byte	W04
-	.byte		VOL   , 71*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
-	.byte		N03   , Fs3 
-	.byte	W03
-	.byte		VOL   , 72*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , Gs3 
-	.byte	W01
-	.byte		VOL   , 73*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W01
-	.byte		N03   , As3 
-	.byte	W03
-	.byte		VOL   , 75*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W03
-	.byte		N03   , Fn3 
-	.byte	W02
-	.byte		VOL   , 76*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
-	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
-	.byte		N03   , Fs3 
-	.byte	W04
 	.byte		VOL   , 78*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W02
+	.byte	W01
 	.byte		N03   , Gs3 
-	.byte	W02
+	.byte	W06
+	.byte		        As3 
+	.byte	W06
+@ 041   ----------------------------------------
+	.byte		        Fn3 
+	.byte	W06
+	.byte		        Fs3 
+	.byte	W06
+	.byte		        Gs3 
+	.byte	W06
+	.byte		        As3 
+	.byte	W06
+	.byte		        Fn3 
+	.byte	W06
+	.byte		        Fs3 
+	.byte	W06
+	.byte		        Gs3 
+	.byte	W03
 	.byte		VOL   , 79*mus_dcd_jtdorchestra_mvl/mxv
-	.byte	W04
+	.byte	W03
 	.byte		N03   , As3 
+	.byte	W06
+	.byte		        Fn3 
+	.byte	W06
+	.byte		        Fs3 
+	.byte	W06
+	.byte		        Gs3 
+	.byte	W06
+	.byte		        As3 
+	.byte	W06
+	.byte		        Fn3 
+	.byte	W06
+	.byte		        Fs3 
+	.byte	W06
+	.byte		        Gs3 
+	.byte	W06
+	.byte		        As3 
 	.byte	W01
 	.byte		VOL   , 81*mus_dcd_jtdorchestra_mvl/mxv
 	.byte	W05
@@ -7072,40 +9765,337 @@ mus_dcd_jtdorchestra_6:
 @ 070   ----------------------------------------
 	.byte	W96
 @ 071   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 56
+	.byte		VOL   , 81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v+5
+	.byte		MOD   , 0
+	.byte		VOL   , 93*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		PAN   , c_v+1
+	.byte	W48
+	.byte		N18   , Fs3 , v060
+	.byte	W18
+	.byte		        Fn3 
+	.byte	W18
+	.byte		N05   , Cs3 
+	.byte	W12
 @ 072   ----------------------------------------
-	.byte	W96
+	.byte		N36   
+	.byte	W36
+	.byte		        Ds3 
+	.byte	W22
+	.byte		MOD   , 0
+	.byte	W01
+	.byte		        5
+	.byte	W01
+	.byte		        9
+	.byte	W11
+	.byte		        0
+	.byte	W01
+	.byte		N24   
+	.byte	W24
 @ 073   ----------------------------------------
-	.byte	W96
+	.byte		N12   , Cs3 
+	.byte	W12
+	.byte		N24   , Bn2 
+	.byte	W24
+	.byte		        As2 
+	.byte	W24
+	.byte		N12   , As2 , v028
+	.byte	W12
+	.byte		        Bn2 , v064
+	.byte	W12
+	.byte		        Cs3 
+	.byte	W12
 @ 074   ----------------------------------------
-	.byte	W96
+	.byte		N36   , Fn3 
+	.byte	W36
+	.byte		        As2 
+	.byte	W36
+	.byte		N12   , Gs2 
+	.byte	W12
+	.byte		N60   , As2 
+	.byte	W12
 @ 075   ----------------------------------------
-	.byte	W96
+	.byte	W17
+	.byte		MOD   , 0
+	.byte	W01
+	.byte		        11
+	.byte	W23
+	.byte		        0
+	.byte	W19
+	.byte		N12   , Ds3 
+	.byte	W12
+	.byte		        Fs3 
+	.byte	W12
+	.byte		        Gs3 
+	.byte	W12
 @ 076   ----------------------------------------
-	.byte	W96
+	.byte		N36   , As3 
+	.byte	W36
+	.byte		N54   , Ds3 
+	.byte	W60
 @ 077   ----------------------------------------
-	.byte	W96
+	.byte		N12   , As3 
+	.byte	W12
+	.byte		N24   , Gs3 
+	.byte	W24
+	.byte		        As3 
+	.byte	W24
+	.byte		        Bn3 
+	.byte	W24
+	.byte		VOL   , 93*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		TIE   , As3 
+	.byte	W01
+	.byte		VOL   , 92*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        91*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        90*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        89*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        88*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        87*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        86*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        85*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        84*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        83*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 078   ----------------------------------------
-	.byte	W96
+	.byte		        82*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        80*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        79*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        78*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        77*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        76*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        75*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        74*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        73*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        72*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        71*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        70*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        69*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        68*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        67*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        65*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        64*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        63*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        62*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        61*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        60*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        59*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        58*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        57*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        56*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        55*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        54*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        53*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        52*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        51*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        50*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        49*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        48*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        47*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        46*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        45*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        43*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        42*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        41*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        40*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        39*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        38*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        37*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        36*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        35*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        34*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        33*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        32*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        31*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        30*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        29*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        28*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        27*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        26*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        25*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        24*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        23*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        22*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        21*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        20*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        19*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        18*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        17*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        16*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        15*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        14*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        13*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        12*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        11*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        10*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        9*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        8*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        7*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W02
+	.byte		        6*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        5*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        4*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        3*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        2*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        1*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        7*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        22*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        44*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        66*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        81*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		EOT   
+	.byte		VOL   , 103*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
+	.byte		        125*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	W01
 @ 079   ----------------------------------------
-	.byte	W96
+	.byte		VOICE , 47
+	.byte		VOL   , 127*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N12   , Fs1 , v116
+	.byte	W24
+	.byte		N48   
+	.byte	W48
+	.byte		N18   
+	.byte	W18
+	.byte		N03   , Fs1 , v068
+	.byte	W03
+	.byte		N03   
+	.byte	W03
 @ 080   ----------------------------------------
-	.byte	W96
+mus_dcd_jtdorchestra_6_080:
+	.byte		N48   , Fn1 , v116
+	.byte	W48
+	.byte		N48   
+	.byte	W48
+	.byte	PEND
 @ 081   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_6_080
 @ 082   ----------------------------------------
+	.byte		VOICE , 47
+	.byte		VOL   , 127*mus_dcd_jtdorchestra_mvl/mxv
+	.byte		N48   , Fs1 , v116
 	.byte	W96
 @ 083   ----------------------------------------
-	.byte	W96
+	.byte	W72
+	.byte		N18   
+	.byte	W18
+	.byte		N03   , Fs1 , v068
+	.byte	W03
+	.byte		N03   
+	.byte	W03
 @ 084   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_6_080
 @ 085   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_6_080
 @ 086   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_6_080
 @ 087   ----------------------------------------
-	.byte	W96
+	.byte	PATT
+	 .word	mus_dcd_jtdorchestra_6_080
 @ 088   ----------------------------------------
+	.byte		N48   , Fn1 , v127
 	.byte	W96
 @ 089   ----------------------------------------
 	.byte	W96
@@ -7302,11 +10292,465 @@ mus_dcd_jtdorchestra_6:
 @ 185   ----------------------------------------
 	.byte	FINE
 
+@**************** Track 7 (Midi-Chn.7) ****************@
+
+mus_dcd_jtdorchestra_7:
+	.byte		VOL   , 127*mus_dcd_jtdorchestra_mvl/mxv
+	.byte	KEYSH , mus_dcd_jtdorchestra_key+0
+@ 000   ----------------------------------------
+	.byte	W96
+@ 001   ----------------------------------------
+	.byte	W96
+@ 002   ----------------------------------------
+	.byte	W96
+@ 003   ----------------------------------------
+	.byte	W96
+@ 004   ----------------------------------------
+	.byte	W96
+@ 005   ----------------------------------------
+	.byte	W96
+@ 006   ----------------------------------------
+	.byte	W96
+@ 007   ----------------------------------------
+	.byte	W96
+@ 008   ----------------------------------------
+	.byte	W96
+@ 009   ----------------------------------------
+	.byte	W96
+@ 010   ----------------------------------------
+	.byte	W96
+@ 011   ----------------------------------------
+	.byte	W96
+@ 012   ----------------------------------------
+	.byte	W96
+@ 013   ----------------------------------------
+	.byte	W96
+@ 014   ----------------------------------------
+	.byte	W96
+@ 015   ----------------------------------------
+	.byte	W96
+@ 016   ----------------------------------------
+	.byte	W96
+@ 017   ----------------------------------------
+	.byte	W96
+@ 018   ----------------------------------------
+	.byte	W96
+@ 019   ----------------------------------------
+	.byte	W96
+@ 020   ----------------------------------------
+	.byte	W96
+@ 021   ----------------------------------------
+	.byte	W96
+@ 022   ----------------------------------------
+	.byte	W96
+@ 023   ----------------------------------------
+	.byte	W96
+@ 024   ----------------------------------------
+	.byte	W96
+@ 025   ----------------------------------------
+	.byte	W96
+@ 026   ----------------------------------------
+	.byte	W96
+@ 027   ----------------------------------------
+	.byte	W96
+@ 028   ----------------------------------------
+	.byte	W96
+@ 029   ----------------------------------------
+	.byte	W96
+@ 030   ----------------------------------------
+	.byte	W96
+@ 031   ----------------------------------------
+	.byte	W96
+@ 032   ----------------------------------------
+	.byte	W96
+@ 033   ----------------------------------------
+	.byte	W96
+@ 034   ----------------------------------------
+	.byte	W96
+@ 035   ----------------------------------------
+	.byte	W96
+@ 036   ----------------------------------------
+	.byte	W96
+@ 037   ----------------------------------------
+	.byte	W96
+@ 038   ----------------------------------------
+	.byte	W96
+@ 039   ----------------------------------------
+	.byte	W96
+@ 040   ----------------------------------------
+	.byte	W96
+@ 041   ----------------------------------------
+	.byte	W96
+@ 042   ----------------------------------------
+	.byte	W96
+@ 043   ----------------------------------------
+	.byte	W96
+@ 044   ----------------------------------------
+	.byte	W96
+@ 045   ----------------------------------------
+	.byte	W96
+@ 046   ----------------------------------------
+	.byte	W96
+@ 047   ----------------------------------------
+	.byte	W96
+@ 048   ----------------------------------------
+	.byte	W96
+@ 049   ----------------------------------------
+	.byte	W96
+@ 050   ----------------------------------------
+	.byte	W96
+@ 051   ----------------------------------------
+	.byte	W96
+@ 052   ----------------------------------------
+	.byte	W96
+@ 053   ----------------------------------------
+	.byte	W96
+@ 054   ----------------------------------------
+	.byte	W96
+@ 055   ----------------------------------------
+	.byte	W96
+@ 056   ----------------------------------------
+	.byte	W96
+@ 057   ----------------------------------------
+	.byte	W96
+@ 058   ----------------------------------------
+	.byte	W96
+@ 059   ----------------------------------------
+	.byte	W96
+@ 060   ----------------------------------------
+	.byte	W96
+@ 061   ----------------------------------------
+	.byte	W96
+@ 062   ----------------------------------------
+	.byte	W96
+@ 063   ----------------------------------------
+	.byte	W96
+@ 064   ----------------------------------------
+	.byte	W96
+@ 065   ----------------------------------------
+	.byte	W96
+@ 066   ----------------------------------------
+	.byte	W96
+@ 067   ----------------------------------------
+	.byte	W96
+@ 068   ----------------------------------------
+	.byte	W96
+@ 069   ----------------------------------------
+	.byte	W96
+@ 070   ----------------------------------------
+	.byte	W96
+@ 071   ----------------------------------------
+	.byte	W96
+@ 072   ----------------------------------------
+	.byte	W96
+@ 073   ----------------------------------------
+	.byte	W96
+@ 074   ----------------------------------------
+	.byte	W96
+@ 075   ----------------------------------------
+	.byte	W96
+@ 076   ----------------------------------------
+	.byte	W96
+@ 077   ----------------------------------------
+	.byte	W96
+@ 078   ----------------------------------------
+	.byte	W96
+@ 079   ----------------------------------------
+	.byte	W96
+@ 080   ----------------------------------------
+	.byte	W96
+@ 081   ----------------------------------------
+	.byte	W96
+@ 082   ----------------------------------------
+	.byte	W96
+@ 083   ----------------------------------------
+	.byte	W96
+@ 084   ----------------------------------------
+	.byte	W96
+@ 085   ----------------------------------------
+	.byte	W96
+@ 086   ----------------------------------------
+	.byte	W96
+@ 087   ----------------------------------------
+	.byte	W96
+@ 088   ----------------------------------------
+	.byte		VOICE , 12
+	.byte		N24   , Ds4 , v052
+	.byte	W01
+	.byte		        Fs4 , v064
+	.byte	W23
+	.byte		N12   , Fn4 , v052
+	.byte	W01
+	.byte		        Gs4 , v064
+	.byte	W11
+	.byte		N92   , Fs4 , v052
+	.byte	W01
+	.byte		        As4 , v064
+	.byte	W56
+	.byte	W03
+@ 089   ----------------------------------------
+	.byte	W36
+	.byte		N22   , Fs4 
+	.byte	W01
+	.byte		        As4 
+	.byte	W23
+	.byte		N10   , Fn4 
+	.byte	W01
+	.byte		        Gs4 
+	.byte	W11
+	.byte		        Ds4 
+	.byte	W01
+	.byte		        Fs4 
+	.byte	W11
+	.byte		N12   , As4 
+	.byte	W12
+@ 090   ----------------------------------------
+	.byte		N24   , Fn4 
+	.byte	W01
+	.byte		N23   , Gs4 
+	.byte	W23
+	.byte		N12   , Fs4 
+	.byte	W01
+	.byte		N11   , As4 
+	.byte	W11
+	.byte		N96   , Fn4 
+	.byte	W01
+	.byte		N92   , Gs4 
+	.byte	W56
+	.byte	W03
+@ 091   ----------------------------------------
+	.byte	W36
+	.byte		N24   , Fn4 
+	.byte		N24   , Gs4 
+	.byte	W24
+	.byte		        Ds4 
+	.byte		N24   , Fs4 
+	.byte	W24
+	.byte		N12   , Cs4 
+	.byte		N12   , Fn4 
+	.byte	W12
+@ 092   ----------------------------------------
+	.byte		N36   , As3 
+	.byte	W36
+	.byte		N84   , Ds4 
+	.byte		N84   , Fs4 
+	.byte	W60
+@ 093   ----------------------------------------
+	.byte	W24
+	.byte		N24   , Bn3 
+	.byte		N24   , Ds4 
+	.byte	W24
+	.byte		        Cs4 
+	.byte		N24   , Fn4 
+	.byte	W24
+	.byte		        Ds4 
+	.byte		N24   , Fs4 
+	.byte	W24
+@ 094   ----------------------------------------
+	.byte		        Cs4 
+	.byte		N24   , Fn4 
+	.byte	W24
+	.byte		N12   , Ds4 
+	.byte		N12   , Fs4 
+	.byte	W12
+	.byte		N48   , Cs4 
+	.byte		N48   , Fn4 
+	.byte	W48
+	.byte		        As3 , v040
+	.byte	W03
+	.byte		        Fn4 
+	.byte	W09
+@ 095   ----------------------------------------
+	.byte	W84
+	.byte		N12   , Cs4 , v064
+	.byte		N12   , Fn4 
+	.byte	W12
+@ 096   ----------------------------------------
+	.byte	W96
+@ 097   ----------------------------------------
+	.byte	W96
+@ 098   ----------------------------------------
+	.byte	W96
+@ 099   ----------------------------------------
+	.byte	W96
+@ 100   ----------------------------------------
+	.byte	W96
+@ 101   ----------------------------------------
+	.byte	W96
+@ 102   ----------------------------------------
+	.byte	W96
+@ 103   ----------------------------------------
+	.byte	W96
+@ 104   ----------------------------------------
+	.byte	W96
+@ 105   ----------------------------------------
+	.byte	W96
+@ 106   ----------------------------------------
+	.byte	W96
+@ 107   ----------------------------------------
+	.byte	W96
+@ 108   ----------------------------------------
+	.byte	W96
+@ 109   ----------------------------------------
+	.byte	W96
+@ 110   ----------------------------------------
+	.byte	W96
+@ 111   ----------------------------------------
+	.byte	W96
+@ 112   ----------------------------------------
+	.byte	W96
+@ 113   ----------------------------------------
+	.byte	W96
+@ 114   ----------------------------------------
+	.byte	W96
+@ 115   ----------------------------------------
+	.byte	W96
+@ 116   ----------------------------------------
+	.byte	W96
+@ 117   ----------------------------------------
+	.byte	W96
+@ 118   ----------------------------------------
+	.byte	W96
+@ 119   ----------------------------------------
+	.byte	W96
+@ 120   ----------------------------------------
+	.byte	W96
+@ 121   ----------------------------------------
+	.byte	W96
+@ 122   ----------------------------------------
+	.byte	W96
+@ 123   ----------------------------------------
+	.byte	W96
+@ 124   ----------------------------------------
+	.byte	W96
+@ 125   ----------------------------------------
+	.byte	W96
+@ 126   ----------------------------------------
+	.byte	W96
+@ 127   ----------------------------------------
+	.byte	W96
+@ 128   ----------------------------------------
+	.byte	W96
+@ 129   ----------------------------------------
+	.byte	W96
+@ 130   ----------------------------------------
+	.byte	W96
+@ 131   ----------------------------------------
+	.byte	W96
+@ 132   ----------------------------------------
+	.byte	W96
+@ 133   ----------------------------------------
+	.byte	W96
+@ 134   ----------------------------------------
+	.byte	W96
+@ 135   ----------------------------------------
+	.byte	W96
+@ 136   ----------------------------------------
+	.byte	W96
+@ 137   ----------------------------------------
+	.byte	W96
+@ 138   ----------------------------------------
+	.byte	W96
+@ 139   ----------------------------------------
+	.byte	W96
+@ 140   ----------------------------------------
+	.byte	W96
+@ 141   ----------------------------------------
+	.byte	W96
+@ 142   ----------------------------------------
+	.byte	W96
+@ 143   ----------------------------------------
+	.byte	W96
+@ 144   ----------------------------------------
+	.byte	W96
+@ 145   ----------------------------------------
+	.byte	W96
+@ 146   ----------------------------------------
+	.byte	W96
+@ 147   ----------------------------------------
+	.byte	W96
+@ 148   ----------------------------------------
+	.byte	W96
+@ 149   ----------------------------------------
+	.byte	W96
+@ 150   ----------------------------------------
+	.byte	W96
+@ 151   ----------------------------------------
+	.byte	W96
+@ 152   ----------------------------------------
+	.byte	W96
+@ 153   ----------------------------------------
+	.byte	W96
+@ 154   ----------------------------------------
+	.byte	W96
+@ 155   ----------------------------------------
+	.byte	W96
+@ 156   ----------------------------------------
+	.byte	W96
+@ 157   ----------------------------------------
+	.byte	W96
+@ 158   ----------------------------------------
+	.byte	W96
+@ 159   ----------------------------------------
+	.byte	W96
+@ 160   ----------------------------------------
+	.byte	W96
+@ 161   ----------------------------------------
+	.byte	W96
+@ 162   ----------------------------------------
+	.byte	W96
+@ 163   ----------------------------------------
+	.byte	W96
+@ 164   ----------------------------------------
+	.byte	W96
+@ 165   ----------------------------------------
+	.byte	W96
+@ 166   ----------------------------------------
+	.byte	W96
+@ 167   ----------------------------------------
+	.byte	W96
+@ 168   ----------------------------------------
+	.byte	W96
+@ 169   ----------------------------------------
+	.byte	W96
+@ 170   ----------------------------------------
+	.byte	W96
+@ 171   ----------------------------------------
+	.byte	W96
+@ 172   ----------------------------------------
+	.byte	W96
+@ 173   ----------------------------------------
+	.byte	W96
+@ 174   ----------------------------------------
+	.byte	W96
+@ 175   ----------------------------------------
+	.byte	W96
+@ 176   ----------------------------------------
+	.byte	W96
+@ 177   ----------------------------------------
+	.byte	W96
+@ 178   ----------------------------------------
+	.byte	W96
+@ 179   ----------------------------------------
+	.byte	W96
+@ 180   ----------------------------------------
+	.byte	W96
+@ 181   ----------------------------------------
+	.byte	W96
+@ 182   ----------------------------------------
+	.byte	W96
+@ 183   ----------------------------------------
+	.byte	W96
+@ 184   ----------------------------------------
+	.byte	W96
+@ 185   ----------------------------------------
+	.byte	FINE
+
 @******************************************************@
 	.align	2
 
 mus_dcd_jtdorchestra:
-	.byte	6	@ NumTrks
+	.byte	7	@ NumTrks
 	.byte	0	@ NumBlks
 	.byte	mus_dcd_jtdorchestra_pri	@ Priority
 	.byte	mus_dcd_jtdorchestra_rev	@ Reverb.
@@ -7319,5 +10763,6 @@ mus_dcd_jtdorchestra:
 	.word	mus_dcd_jtdorchestra_4
 	.word	mus_dcd_jtdorchestra_5
 	.word	mus_dcd_jtdorchestra_6
+	.word	mus_dcd_jtdorchestra_7
 
 	.end

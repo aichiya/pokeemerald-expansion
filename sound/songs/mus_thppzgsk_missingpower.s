@@ -410,7 +410,7 @@ mus_thppzgsk_missingpower_1_037:
 	.byte		N96   , Cn4 
 	.byte	W96
 @ 050   ----------------------------------------
-	.byte		VOICE , 101
+	.byte		VOICE , 7
 	.byte		N12   , Cn1 
 	.byte		N12   , Cn2 , v100
 	.byte	W12

@@ -916,6 +916,13 @@ gSongTable::
 	song mus_thppzgsk_dolljudgement, 0, 0
 	song mus_key_nagisa_cut, 0, 0
 	song mus_instrument_test, 0, 0
+	song mus_thppawl_primalscene, 0, 0
+	song mus_thppawl_reincarnation, 0, 0
+	song mus_thppawl_cascetofstar, 0, 0
+	song mus_thppawl_plasticmind, 0, 0
+	song mus_thppawl_extendash, 0, 0
+	song mus_thppawl_ancienttemple 0, 0
+	song mus_thppawl_kagome, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -59,7 +59,7 @@ voicegroup201::                                                                 
 	voice_keysplit voicegroup197, KeySplitTable3                                                           @ 056 | Multi | GBA Trumpet
 	voice_directsound 60, 0, DirectSoundWaveData_trinity_big_boned, 255, 165, 154, 127                     @ 057 | Direct | GBA Trinity Big Boned
 	voice_keysplit voicegroup198, KeySplitTable4                                                           @ 058 | Multi | GBA Tuba
-	voice_directsound 60, 0, DirectSoundWaveData_unknown_18, 255, 0, 206, 204                              @ 059 | Direct | GBA Unknown 18
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_103, 240, 200, 245, 220                            @ 059 | Direct | THPPRF Sweet Trumpet
 	voice_keysplit voicegroup199, KeySplitTable5                                                           @ 060 | Multi | GBA French Horn
 	voice_keysplit voicegroup259, KeySplitTable40                                                          @ 061 | Multi | HGSS Harp
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 165, 180, 165  @ 062 | Direct | GBA Distortion Guitar 2
@@ -101,8 +101,8 @@ voicegroup201::                                                                 
 	voice_keysplit_all voicegroup128                                                                       @ 098 | Multi | GBA Sound Effect 1
 	voice_keysplit_all voicegroup129                                                                       @ 099 | Multi | GBA Sound Effect 2
 	voice_keysplit_all voicegroup130                                                                       @ 100 | Multi | GBA Sound Phoneme
-	voice_keysplit voicegroup233, KeySplitTable35                                                          @ 101 | Multi | HGSS Piano 1
-	voice_keysplit voicegroup234, KeySplitTable36                                                          @ 102 | Multi | HGSS Piano 2
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_3, 0, 7, 15, 0                                 @ 101 | Wave | GBA Programmable Wave 3
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_18, 0, 7, 15, 0                                @ 102 | Wave | GBA Programmable Wave 18
 	voice_keysplit voicegroup235, KeySplitTable37                                                          @ 103 | Multi | HGSS Piano Octave
 	voice_keysplit voicegroup236, KeySplitTable9                                                           @ 104 | Multi | HGSS Rhodes 1
 	voice_keysplit voicegroup237, KeySplitTable9                                                           @ 105 | Multi | HGSS Rhodes 2
@@ -114,12 +114,12 @@ voicegroup201::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_dp_whistle_c5_16, 255, 246, 78, 192                       @ 111 | Direct | HGSS Whistle
 	voice_keysplit voicegroup240, KeySplitTable39                                                          @ 112 | Multi | HGSS Xylophone
 	voice_keysplit voicegroup241, KeySplitTable25                                                          @ 113 | Multi | HGSS Tubular Bell
-	voice_directsound 60, 0, DirectSoundWaveData_unknown_12, 128, 249, 25, 204                             @ 114 | Direct | GBA Unknown 12
-	voice_directsound 60, 0, DirectSoundWaveData_unknown_13, 128, 249, 25, 204                             @ 115 | Direct | GBA Unknown 13
-	voice_directsound 60, 0, DirectSoundWaveData_unknown_14, 128, 249, 25, 204                             @ 116 | Direct | GBA Unknown 14
-	voice_directsound 60, 0, DirectSoundWaveData_unknown_15, 128, 249, 25, 204                             @ 117 | Direct | GBA Unknown 15
-	voice_directsound 60, 0, DirectSoundWaveData_unknown_16, 128, 249, 25, 204                             @ 118 | Direct | GBA Unknown 16
-	voice_directsound 60, 0, DirectSoundWaveData_unknown_17, 128, 249, 25, 204                             @ 119 | Direct | GBA Unknown 17
+	voice_directsound 60, 0, DirectSoundWaveData_OCARI72A, 255, 191, 97, 165                               @ 114 | Direct | GS Oracina
+	voice_directsound 60, 0, DirectSoundWaveData_FNTBL53C, 255, 188, 139, 239                              @ 115 | Direct | GS FX Crystal
+	voice_directsound 60, 0, DirectSoundWaveData_STLDR72, 255, 127, 231, 127                               @ 116 | Direct | GS Steel
+	voice_directsound 60, 0, DirectSoundWaveData_KLMBA70, 255, 249, 0, 188                                 @ 117 | Direct | GS Kalimba
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_2, 1, 7, 0, 6                                  @ 118 | Wave | GBA Programmable Wave 2
+	voice_directsound 60, 0, DirectSoundWaveData_dp_reverscyn_16, 255, 0, 255, 16                          @ 119 | Direct | HGSS Reverse Cymbal
 	voice_keysplit_all voicegroup230                                                                       @ 120 | Drum | HGSS Drum
 	voice_keysplit_all voicegroup231                                                                       @ 121 | Drum | HGSS Taiko Drum
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 235, 0, 216          @ 122 | Direct | GBA Cymbal 1

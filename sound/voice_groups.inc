@@ -199,9 +199,11 @@
 .include "sound/voicegroups/voicegroup197.inc" @ custom GBA
 .include "sound/voicegroups/voicegroup198.inc" @ custom GBA
 .include "sound/voicegroups/voicegroup199.inc" @ custom GBA
-.include "sound/voicegroups/voicegroup200.inc" @ custom GBA main
-.include "sound/voicegroups/voicegroup201.inc" @ custom GBA-HGSS mix
-.include "sound/voicegroups/voicegroup202.inc" @ GSWave
+.include "sound/voicegroups/voicegroup200.inc" @ GBA main
+.include "sound/voicegroups/voicegroup201.inc" @ custom GBA-HGSS-MsGSWavetable mix
+.include "sound/voicegroups/voicegroup202.inc" @ GSWave main
+.include "sound/voicegroups/voicegroup203.inc" @ custom MsGSWavetable
+.include "sound/voicegroups/voicegroup210.inc" @ Sweet Trumpet split
 .include "sound/voicegroups/voicegroup216.inc"
 .include "sound/voicegroups/voicegroup219.inc"
 .include "sound/voicegroups/voicegroup220.inc"

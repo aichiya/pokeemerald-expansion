@@ -743,7 +743,7 @@ loop_1:
 mus_yyyi_hoshitohana_2:
 	.byte	KEYSH , mus_yyyi_hoshitohana_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 102
+	.byte		VOICE , 8
 	.byte		PAN   , c_v-7
 	.byte		VOL   , 40*mus_yyyi_hoshitohana_mvl/mxv
 	.byte		PAN   , c_v-7

@@ -465,7 +465,7 @@ LitterootTown_EventScript_CustomSign5::
 	waitmoncry
 	seteventmon SPECIES_NECROZMA_ULTRA, 70, ITEM_ULTRANECROZIUM_Z
 	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_KEY_NAGISA_CUT, FALSE
+	playbgm MUS_THPPAWL_KAGOME, FALSE
 	waitstate
 	releaseall
 	end

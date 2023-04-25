@@ -850,9 +850,17 @@
 #define MUS_THPPZGSK_DOLLJUDGEMENT				912 // VS longer version, loop fixed
 
 #define MUS_KEY_NAGISA_CUT						913
-#define MUS_INSTRUMENT_TEST						914
+#define MUS_INSTRUMENT_TEST_MS_GS_WAVETABLE		914
 
-#define END_MUS                     MUS_INSTRUMENT_TEST
+#define MUS_THPPAWL_PRIMALSCENE					915
+#define MUS_THPPAWL_REINCARNATION				916
+#define MUS_THPPAWL_CASKETOFSTAR				917
+#define MUS_THPPAWL_PLASTICMIND					918
+#define MUS_THPPAWL_EXTENDASH					919
+#define MUS_THPPAWL_ANCIENTTEMPLE				920
+#define MUS_THPPAWL_KAGOME						921
+
+#define END_MUS                     MUS_THPPAWL_KAGOME
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -19,7 +19,7 @@ mus_thpp_ancienttemple_1:
 	.byte	KEYSH , mus_thpp_ancienttemple_key+0
 @ 000   ----------------------------------------
 	.byte	TEMPO , 134*mus_thpp_ancienttemple_tbs/2
-	.byte		VOICE , 102
+	.byte		VOICE , 8
 	.byte		VOL   , 94*mus_thpp_ancienttemple_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		TIE   , Ds1 , v112

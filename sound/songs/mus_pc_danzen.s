@@ -67,7 +67,7 @@ mus_pc_danzen_1:
 	.byte	W13
 	.byte		EOT   
 	.byte	W12
-	.byte		VOICE , 81
+	.byte		VOICE , 85
 	.byte		N12   
 	.byte	W09
 	.byte	W03
@@ -236,7 +236,7 @@ mus_pc_danzen_1_011:
 @ 013   ----------------------------------------
 mus_pc_danzen_1_013:
 	.byte	W01
-	.byte		VOICE , 81
+	.byte		VOICE , 85
 	.byte		N12   , Cn3 
 	.byte	W09
 	.byte	W03
@@ -298,7 +298,7 @@ mus_pc_danzen_1_014:
 @ 016   ----------------------------------------
 mus_pc_danzen_1_016:
 	.byte	W01
-	.byte		VOICE , 80
+	.byte		VOICE , 86
 	.byte	W24
 	.byte		N12   , Cn4 , v124
 	.byte	W09
@@ -327,7 +327,7 @@ mus_pc_danzen_1_016:
 	.byte	PEND
 @ 017   ----------------------------------------
 	.byte	W01
-	.byte		VOICE , 81
+	.byte		VOICE , 85
 	.byte		BEND  , c_v+0
 	.byte		N12   , Cn3 
 	.byte	W09
@@ -384,7 +384,7 @@ mus_pc_danzen_1_016:
 	 .word	mus_pc_danzen_1_016
 @ 021   ----------------------------------------
 	.byte	W01
-	.byte		VOICE , 81
+	.byte		VOICE , 85
 	.byte		BEND  , c_v+0
 	.byte	W24
 	.byte		N12   , Fn3 , v124
@@ -1930,11 +1930,11 @@ mus_pc_danzen_2_032:
 mus_pc_danzen_3:
 	.byte	KEYSH , mus_pc_danzen_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 82
+	.byte		VOICE , 118
 	.byte		VOL   , 94*mus_pc_danzen_mvl/mxv
 	.byte		PAN   , c_v-10
 	.byte	W01
-	.byte		VOICE , 82
+	.byte		VOICE , 118
 	.byte		BEND  , c_v-5
 	.byte		N36   , Gn3 , v124
 	.byte	W01
@@ -1984,7 +1984,7 @@ mus_pc_danzen_3:
 	.byte		EOT   
 
 	.byte	W12
-	.byte		VOICE , 82
+	.byte		VOICE , 118
 	.byte		N12   , Cn4 
 	.byte	W09
 
@@ -2186,7 +2186,7 @@ mus_pc_danzen_3_012:
 @ 013   ----------------------------------------
 mus_pc_danzen_3_013:
 	.byte	W01
-	.byte		VOICE , 86
+	.byte		VOICE , 117
 
 	.byte		N12   , Cn3 
 	.byte	W09
@@ -2353,7 +2353,7 @@ mus_pc_danzen_3_016:
 	.byte	PEND
 @ 017   ----------------------------------------
 	.byte	W01
-	.byte		VOICE , 86
+	.byte		VOICE , 117
 
 	.byte		BEND  , c_v+0
 	.byte		N12   , Cn3 
@@ -2514,7 +2514,7 @@ mus_pc_danzen_3_016:
 @ 029   ----------------------------------------
 	.byte	W01
 	.byte		EOT   
-	.byte		VOICE , 82
+	.byte		VOICE , 118
 
 	.byte		VOL   , 98*mus_pc_danzen_mvl/mxv
 	.byte		N24   , Ds3 
@@ -2719,7 +2719,7 @@ mus_pc_danzen_3_036:
 	.byte	W02
 @ 042   ----------------------------------------
 	.byte	W13
-	.byte		VOICE , 82
+	.byte		VOICE , 118
 
 	.byte	W72
 	.byte		N24   , As2 
@@ -2762,11 +2762,11 @@ mus_pc_danzen_3_036:
 mus_pc_danzen_4:
 	.byte	KEYSH , mus_pc_danzen_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 80
+	.byte		VOICE , 86
 	.byte		VOL   , 94*mus_pc_danzen_mvl/mxv
 	.byte		PAN   , c_v+10
 	.byte	W01
-	.byte		VOICE , 80
+	.byte		VOICE , 86
 	.byte		BEND  , c_v-5
 	.byte		N36   , Ds3 , v124
 	.byte	W01
@@ -4326,7 +4326,7 @@ mus_pc_danzen_6:
 @ 003   ----------------------------------------
 	.byte	W84
 	.byte	W01
-	.byte		VOICE , 84
+	.byte		VOICE , 116
 	.byte	W11
 @ 004   ----------------------------------------
 mus_pc_danzen_6_004:
@@ -4803,7 +4803,7 @@ mus_pc_danzen_6_032:
 	.byte	W03
 
 	.byte	W72
-	.byte		VOICE , 84
+	.byte		VOICE , 116
 	.byte	W11
 @ 042   ----------------------------------------
 	.byte	PATT
@@ -5574,11 +5574,11 @@ mus_pc_danzen_7_032:
 mus_pc_danzen_8:
 	.byte	KEYSH , mus_pc_danzen_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 102
+	.byte		VOICE , 8
 	.byte		VOL   , 94*mus_pc_danzen_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte	W01
-	.byte		VOICE , 102
+	.byte		VOICE , 8
 	.byte		N36   , Cn3 , v124
 	.byte	W09
 

@@ -9353,3 +9353,44 @@ DirectSoundWaveData_XYLO_93::
 	.incbin "sound/direct_sound_samples/gswavetable/26758/XYLO_93.bin"
 
 #endif
+
+	.align 2
+DirectSoundWaveData_thpprf_3::
+	.incbin "sound/direct_sound_samples/thpprf/thpprf_3.bin"
+
+	.align 2
+DirectSoundWaveData_thpprf_4::
+	.incbin "sound/direct_sound_samples/thpprf/thpprf_4.bin"
+
+	.align 2
+DirectSoundWaveData_thpprf_5::
+	.incbin "sound/direct_sound_samples/thpprf/thpprf_5.bin"
+
+	.align 2
+DirectSoundWaveData_thpprf_6::
+	.incbin "sound/direct_sound_samples/thpprf/thpprf_6.bin"
+
+	.align 2
+DirectSoundWaveData_thpprf_7::
+	.incbin "sound/direct_sound_samples/thpprf/thpprf_7.bin"
+
+	.align 2
+DirectSoundWaveData_thpprf_8::
+	.incbin "sound/direct_sound_samples/thpprf/thpprf_8.bin"
+
+	.align 2
+DirectSoundWaveData_thpprf_11::
+	.incbin "sound/direct_sound_samples/thpprf/thpprf_11.bin"
+
+	.align 2
+DirectSoundWaveData_thpprf_19::
+	.incbin "sound/direct_sound_samples/thpprf/thpprf_19.bin"
+
+	.align 2
+DirectSoundWaveData_thpprf_20::
+	.incbin "sound/direct_sound_samples/thpprf/thpprf_20.bin"
+
+	.align 2
+DirectSoundWaveData_thpprf_103::
+	.incbin "sound/direct_sound_samples/thpprf/thpprf_103.bin"
+

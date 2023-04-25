@@ -1551,6 +1551,13 @@ SECTIONS {
         sound/songs/mus_thppzgsk_dolljudgement.o(.rodata);
         sound/songs/mus_key_nagisa_cut.o(.rodata);
         sound/songs/mus_instrument_test.o(.rodata);
+        sound/songs/mus_thppawl_primalscene.o(.rodata);
+        sound/songs/mus_thppawl_reincarnation.o(.rodata);
+        sound/songs/mus_thppawl_cascetofstar.o(.rodata);
+        sound/songs/mus_thppawl_plasticmind.o(.rodata);
+        sound/songs/mus_thppawl_extendash.o(.rodata);
+        sound/songs/mus_thppawl_ancienttemple.o(.rodata);
+        sound/songs/mus_thppawl_kagome.o(.rodata);
     } =0
 
     lib_rodata :

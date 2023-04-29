@@ -19,10 +19,6 @@
 *.fwjpnfont
 sound/direct_sound_samples/*.bin
 sound/direct_sound_samples/cries/*.bin
-sound/direct_sound_samples/gswavetable/*.bin
-sound/direct_sound_samples/gswavetable/*.bin
-sound/direct_sound_samples/gswavetable/13379/*.bin
-sound/direct_sound_samples/gswavetable/26758/*.bin
 sound/direct_sound_samples/phonemes/*.bin
 sound/programmable_wave_samples/*.bin
 sound/voicegroups/*.bin

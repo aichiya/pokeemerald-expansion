@@ -465,13 +465,14 @@ LitterootTown_EventScript_CustomSign5::
 	waitmoncry
 	seteventmon SPECIES_NECROZMA_ULTRA, 70, ITEM_ULTRANECROZIUM_Z
 	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_THPPAWL_KAGOME, FALSE
+	playbgm MUS_THPPRF_IMMEMORIALMARKETEER, FALSE
 	waitstate
 	releaseall
 	end
 
 LitterootTown_EventScript_CustomSign6::
 	lockall
+	playbgm MUS_NONE, FALSE
 	delay 30
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_NATIONAL_DEX
@@ -512,6 +513,7 @@ LitterootTown_EventScript_CustomSign6::
 
 LitterootTown_EventScript_CustomSign7::
 	lockall
+	playbgm MUS_NONE, FALSE
 	delay 30
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
@@ -591,7 +593,7 @@ LitterootTown_EventScript_CustomSign8::
 	end
 
 LitterootTown_Text_TrainerTestIntro::
-	.string "Trainer battle test.$"
+	.string "Trainer battle test!$"
 
 LitterootTown_Text_TrainerTestDefeat::
 	.string "Whoah, wow! You made a much bigger\n"

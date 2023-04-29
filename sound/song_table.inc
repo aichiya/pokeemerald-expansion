@@ -923,6 +923,72 @@ gSongTable::
 	song mus_thppawl_extendash, 0, 0
 	song mus_thppawl_ancienttemple 0, 0
 	song mus_thppawl_kagome, 0, 0
+	song mus_thpprf_maidencapriccio_a, 0, 0
+	song mus_thpprf_trueadministrator, 0, 0
+	song mus_thpprf_367, 0, 0
+	song mus_thpprf_368, 0, 0
+	song mus_thpprf_loveconsultation_a, 0, 0
+	song mus_thpprf_littleprincess, 0, 0
+	song mus_thpprf_marithemagician, 0, 0
+	song mus_thpprf_372, 0, 0
+	song mus_thpprf_necrofantasia_a, 0, 0
+	song mus_thpprf_374, 0, 0
+	song mus_thpprf_girlssealingclub, 0, 0
+	song mus_thpprf_forestoftohno, 0, 0
+	song mus_thpprf_youkaispacetravel, 0, 0
+	song mus_thpprf_farsideofthemoon, 0, 0
+	song mus_thpprf_legendoftohno, 0, 0
+	song mus_thpprf_soulasred, 0, 0
+	song mus_thpprf_seraphicchiken, 0, 0
+	song mus_thpprf_lastoccultism, 0, 0
+	song mus_thpprf_maidencapriccio_b, 0, 0
+	song mus_thpprf_hartmannsyoukai, 0, 0
+	song mus_thpprf_nativefaith, 0, 0
+	song mus_thpprf_unknownwasher, 0, 0
+	song mus_thpprf_dreambattle, 0, 0
+	song mus_thpprf_badapple, 0, 0
+	song mus_thpprf_necrofantasia_b, 0, 0
+	song mus_thpprf_groundscolorisyellow, 0, 0
+	song mus_thpprf_wonderfulheaven, 0, 0
+	song mus_thpprf_oniisland, 0, 0
+	song mus_thpprf_borderoflife, 0, 0
+	song mus_thpprf_394, 0, 0
+	song mus_thpprf_phantomensemble, 0, 0
+	song mus_thpprf_necrofantasia_c, 0, 0
+	song mus_thpprf_stalkthenight, 0, 0
+	song mus_thpprf_398, 0, 0
+	song mus_thpprf_septette, 0, 0
+	song mus_thpprf_redandwhite, 0, 0
+	song mus_thpprf_pkmn_sm_vs_e4, 0, 0
+	song mus_thpprf_loveconsultation_b, 0, 0
+	song mus_thpprf_easygoingegoist, 0, 0
+	song mus_thpprf_infinitybeing, 0, 0
+	song mus_thpprf_reverseideology, 0, 0
+	song mus_thpprf_406, 0, 0
+	song mus_thpprf_flawlessclothing, 0, 0
+	song mus_thpprf_408, 0, 0
+	song mus_thpprf_shinkirou, 0, 0
+	song mus_thpprf_antimonytitle, 0, 0
+	song mus_thpprf_innocenttreasures, 0, 0
+	song mus_thpprf_412, 0, 0
+	song mus_thpprf_darkpegasus, 0, 0
+	song mus_thpprf_idolatrizeworld, 0, 0
+	song mus_thpprf_belovedtomboyishgirl, 0, 0
+	song mus_thpprf_gensokyogodsloved, 0, 0
+	song mus_thpprf_unknownx, 0, 0
+	song mus_thpprf_skyofthescarletperception, 0, 0
+	song mus_thpprf_hiddenstar, 0, 0
+	song mus_thpprf_heianalien, 0, 0
+	song mus_thpprf_deaftoall, 0, 0
+	song mus_thpprf_purefuries, 0, 0
+	song mus_thpprf_cutedevilinnocence, 0, 0
+	song mus_thpprf_pkmn_bw2_vs_iris, 0, 0
+	song mus_thpprf_whiteflagusa, 0, 0
+	song mus_thpprf_426, 0, 0
+	song mus_thpprf_mementoofallorganism, 0, 0
+	song mus_thpprf_urbanlegends, 0, 0
+	song mus_thpprf_immemorialmarketeer, 0, 0
+
 
 	.align 2
 dummy_song_header:

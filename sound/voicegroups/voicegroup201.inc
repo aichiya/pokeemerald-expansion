@@ -59,7 +59,7 @@ voicegroup201::                                                                 
 	voice_keysplit voicegroup197, KeySplitTable3                                                           @ 056 | Multi | GBA Trumpet
 	voice_directsound 60, 0, DirectSoundWaveData_trinity_big_boned, 255, 165, 154, 127                     @ 057 | Direct | GBA Trinity Big Boned
 	voice_keysplit voicegroup198, KeySplitTable4                                                           @ 058 | Multi | GBA Tuba
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_103, 240, 200, 245, 220                            @ 059 | Direct | THPPRF Sweet Trumpet
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_103, 240, 200, 245, 220                            @ 059 | Direct | ReimuFate Custom 003 Sweet Trumpet
 	voice_keysplit voicegroup199, KeySplitTable5                                                           @ 060 | Multi | GBA French Horn
 	voice_keysplit voicegroup259, KeySplitTable40                                                          @ 061 | Multi | HGSS Harp
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 165, 180, 165  @ 062 | Direct | GBA Distortion Guitar 2
@@ -80,13 +80,13 @@ voicegroup201::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_shakuhachi, 255, 0, 255, 204               @ 077 | Direct | GBA Shakuhachi
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_whistle, 43, 76, 103, 216                  @ 078 | Direct | GBA Whistle
 	voice_keysplit voicegroup269, KeySplitTable55                                                          @ 079 | Multi | HGSS Orchestra Hit
-	voice_square_2_alt 60, 0, 2, 0, 2, 4, 1                                                                @ 080 | Square 2 | GBA
-	voice_square_1_alt 60, 0, 0, 2, 0, 2, 4, 1                                                             @ 081 | Square 1 | GBA
+	voice_square_2_alt 60, 0, 2, 0, 2, 4, 1                                                                @ 080 | Square2 | GBA
+	voice_square_1_alt 60, 0, 0, 2, 0, 2, 4, 1                                                             @ 081 | Square1 | GBA
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 7, 15, 0                                 @ 082 | Wave | GBA Programmable Wave 1
-	voice_square_2_alt 60, 0, 3, 0, 3, 6, 2                                                                @ 083 | Square 2 | GBA
-	voice_square_2_alt 60, 0, 0, 0, 2, 6, 5                                                                @ 084 | Square 2 | GBA
-	voice_square_1_alt 60, 0, 0, 3, 0, 1, 4, 1                                                             @ 085 | Square 1 | GBA
-	voice_square_2_alt 60, 0, 3, 0, 1, 4, 1                                                                @ 086 | Square 2 | GBA
+	voice_square_2_alt 60, 0, 3, 0, 3, 6, 2                                                                @ 083 | Square2 | GBA
+	voice_square_2_alt 60, 0, 0, 0, 2, 6, 5                                                                @ 084 | Square2 | GBA
+	voice_square_1_alt 60, 0, 0, 3, 0, 1, 4, 1                                                             @ 085 | Square1 | GBA
+	voice_square_2_alt 60, 0, 3, 0, 1, 4, 1                                                                @ 086 | Square2 | GBA
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_21, 0, 7, 15, 1                                @ 087 | Wave | GBA Programmable Wave 21
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 7, 15, 0                                 @ 088 | Wave | GBA Programmable Wave 1
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_15, 0, 1, 9, 2                                 @ 089 | Wave | GBA Programmable Wave 15
@@ -98,15 +98,15 @@ voicegroup201::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_dp_altosax_c3_16, 255, 216, 252, 192                      @ 095 | Direct | HGSS Altosax
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 0, 255, 165                     @ 096 | Direct | GBA Sampled Square 1
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 226, 0, 165                     @ 097 | Direct | GBA Sampled Square 2
-	voice_keysplit_all voicegroup128                                                                       @ 098 | Multi | GBA Sound Effect 1
-	voice_keysplit_all voicegroup129                                                                       @ 099 | Multi | GBA Sound Effect 2
-	voice_keysplit_all voicegroup130                                                                       @ 100 | Multi | GBA Sound Phoneme
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_7, 255, 0, 255, 235                                @ 098 | Direct | ReimuFate Custom 007 Music Box?
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_8, 250, 250, 250, 190                              @ 099 | Direct | ReimuFate Custom 008 Guitar?
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_57, 255, 0, 255, 192                               @ 100 | Direct | ReimuFate Custom 057
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_3, 0, 7, 15, 0                                 @ 101 | Wave | GBA Programmable Wave 3
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_18, 0, 7, 15, 0                                @ 102 | Wave | GBA Programmable Wave 18
 	voice_keysplit voicegroup235, KeySplitTable37                                                          @ 103 | Multi | HGSS Piano Octave
 	voice_keysplit voicegroup236, KeySplitTable9                                                           @ 104 | Multi | HGSS Rhodes 1
 	voice_keysplit voicegroup237, KeySplitTable9                                                           @ 105 | Multi | HGSS Rhodes 2
-	voice_directsound 60, 0, DirectSoundWaveData_dp_slapbass_c1_16, 255, 0, 255, 192                       @ 106 | Direct | HGSS Slap Bass
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_36, 255, 165, 180, 216                             @ 106 | Direct | ReimuFate Custom 036 Slap Bass?
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_koto_low, 255, 0, 206, 242                        @ 107 | Direct | GBA Koto 1
 	voice_directsound 60, 0, DirectSoundWaveData_dp_woodbass_d3_16, 255, 251, 0, 171                       @ 108 | Direct | HGSS Wood Bass
 	voice_directsound 60, 0, DirectSoundWaveData_trinity_30303_mega_bass, 128, 249, 25, 204                @ 109 | Direct | GBA Trinity Mega Bass
@@ -114,11 +114,11 @@ voicegroup201::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_dp_whistle_c5_16, 255, 246, 78, 192                       @ 111 | Direct | HGSS Whistle
 	voice_keysplit voicegroup240, KeySplitTable39                                                          @ 112 | Multi | HGSS Xylophone
 	voice_keysplit voicegroup241, KeySplitTable25                                                          @ 113 | Multi | HGSS Tubular Bell
-	voice_directsound 60, 0, DirectSoundWaveData_OCARI72A, 255, 191, 97, 165                               @ 114 | Direct | GS Oracina
-	voice_directsound 60, 0, DirectSoundWaveData_FNTBL53C, 255, 188, 139, 239                              @ 115 | Direct | GS FX Crystal
-	voice_directsound 60, 0, DirectSoundWaveData_STLDR72, 255, 127, 231, 127                               @ 116 | Direct | GS Steel
-	voice_directsound 60, 0, DirectSoundWaveData_KLMBA70, 255, 249, 0, 188                                 @ 117 | Direct | GS Kalimba
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_2, 1, 7, 0, 6                                  @ 118 | Wave | GBA Programmable Wave 2
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_3, 170, 180, 160, 235                              @ 114 | Direct | ReimuFate Custom 003
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243                              @ 115 | Direct | ReimuFate Custom 004
+	voice_directsound 60, 65, DirectSoundWaveData_thpprf_5, 255, 205, 220, 243                             @ 116 | Direct | ReimuFate Custom 005
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_6, 170, 160, 180, 210                              @ 117 | Direct | ReimuFate Custom 006
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_2, 1, 7, 2, 15                                 @ 118 | Wave | GBA Programmable Wave 2
 	voice_directsound 60, 0, DirectSoundWaveData_dp_reverscyn_16, 255, 0, 255, 16                          @ 119 | Direct | HGSS Reverse Cymbal
 	voice_keysplit_all voicegroup230                                                                       @ 120 | Drum | HGSS Drum
 	voice_keysplit_all voicegroup231                                                                       @ 121 | Drum | HGSS Taiko Drum

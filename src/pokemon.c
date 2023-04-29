@@ -7721,6 +7721,8 @@ u16 GetBattleBGM(void)
             return MUS_THPPZGSK_LOCKEDGIRL;
         case TRAINER_CLASS_TH_MAID_SAKUYA:
             return MUS_THPPZGSK_LUNADIAL;
+        case TRAINER_CLASS_TH_EARTH_RABBIT:
+			return MUS_THPPAWL_KAGOME;
         case TRAINER_CLASS_SH_MAID:
         	return MUS_SH_PANDORA;
         case TRAINER_CLASS_WANDERER:

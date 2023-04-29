@@ -860,7 +860,73 @@
 #define MUS_THPPAWL_ANCIENTTEMPLE				920
 #define MUS_THPPAWL_KAGOME						921
 
-#define END_MUS                     MUS_THPPAWL_KAGOME
+#define MUS_THPPRF_MAIDENCAPRICCIO_A			922
+#define MUS_THPPRF_TRUEADMINISTRATOR			923 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_367							924
+#define MUS_THPPRF_368							925 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_LOVECONSULTATION_A			926
+#define MUS_THPPRF_LITTLEPRINCESS				927
+#define MUS_THPPRF_MARITHEMAGICIAN				928
+#define MUS_THPPRF_372							929
+#define MUS_THPPRF_NECROFANTASIA_A				930
+#define MUS_THPPRF_374							931
+#define MUS_THPPRF_GIRLSSEALINGCLUB				932
+#define MUS_THPPRF_FORESTOFTOHNO				933
+#define MUS_THPPRF_YOUKAISPACETRAVEL			934
+#define MUS_THPPRF_FARSIDEOFTHEMOON				935
+#define MUS_THPPRF_LEGENDOFTOHNO				936
+#define MUS_THPPRF_SOULASRED					937
+#define MUS_THPPRF_SERAPHICCHIKEN				938 // Removed worth of 96 ticks delay @ 000 and 72 thick delay @001 for each track, so the music start immediately
+#define MUS_THPPRF_LASTOCCULTISM				939
+#define MUS_THPPRF_MAIDENCAPRICCIO_B			940
+#define MUS_THPPRF_HARTMANNSYOUKAI				941 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_NATIVEFAITH					942
+#define MUS_THPPRF_UNKNOWNWASHER				943 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_DREAMBATTLE					944
+#define MUS_THPPRF_BADAPPLE						945 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_NECROFANTASIA_B				946 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_GROUNDSCOLORISYELLOW			947 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_WONDERFULHEAVEN				948 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_ONIISLAND					949 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_BORDEROFLIFE					950 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_394							951 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_PHANTOMENSEMBLE				952
+#define MUS_THPPRF_NECROFANTASIA_C				953 // Fixed loop | Original data have extra W20 delay at the end of track 2, removed the extra delay
+#define MUS_THPPRF_STALKTHENIGHT				954 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_398							955 // Removed worth of 72 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_SEPTETTE						956 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_REDANDWHITE					957 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_PKMN_SM_VS_E4				958
+#define MUS_THPPRF_LOVECONSULTATION_B			959 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_EASYGOINGEGOIST				960 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_INFINITYBEING				961 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_REVERSEIDEOLOGY				962 // Removed worth of 24 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_406							963 // Fixed loop | Original data have extra W03 delay at the end of track 3, removed the extra delay
+#define MUS_THPPRF_FLAWLESSCLOTHING				964
+#define MUS_THPPRF_408							965 // Removed worth of 24 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_SHINKIROU					966
+#define MUS_THPPRF_ANTIMONYTITLE				967 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_INNOCENTTREASURES			968 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_412							969 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_DARKPEGASUS					970 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_IDOLATRIZEWORLD				971 // Fixed loop | Original data have extra W09 delay at the end of track 9, removed the extra delay
+#define MUS_THPPRF_BELOVEDTOMBOYISHGIRL			972 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_GENSOKYOGODSLOVED			973 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_UNKNOWNX						974 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_SKYOFTHESCARLETPERCEPTION	975 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_HIDDENSTAR					976 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_HEIANALIEN					977 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_DEAFTOALL					978 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_PUREFURIES					979 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_CUTEDEVILINNOCENCE			980 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_PKMN_BW2_VS_IRIS				981
+#define MUS_THPPRF_WHITEFLAGUSA					982 // Fixed loop | Delay at track 8 @065 was 50 while other tracks were 48. Added delay W02 on the other tracks @065. Removed W96 on every track @ 000
+#define MUS_THPPRF_426							983 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_MEMENTOOFALLORGANISM			984 // Fixed loop | Original data have extra W14 delay at the end of track 9, removed the extra delay. Removed delay W96 on each track @000
+#define MUS_THPPRF_URBANLEGENDS					985 // Fixed loop | Track 5 ends at @32, it should have been @73. Add delay until @73
+#define MUS_THPPRF_IMMEMORIALMARKETEER			986 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+
+#define END_MUS 					MUS_THPPRF_IMMEMORIALMARKETEER
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -386,7 +386,7 @@ static const union AnimCmd *const sAnims_THSyameimaruAya2[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THHijiriByakuren[] ={
+static const union AnimCmd *const sAnims_THInabaTewi[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -1113,7 +1113,7 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 	[TRAINER_PIC_GHOST] = sAnims_Ghost, // Custom 2
 	[TRAINER_PIC_TH_SYAMEIMARU_AYA1] = sAnims_THSyameimaruAya1, // Custom 3
 	[TRAINER_PIC_TH_SYAMEIMARU_AYA2] = sAnims_THSyameimaruAya2, // Custom 4
-	[TRAINER_PIC_TH_HIJIRI_BYAKUREN] = sAnims_THHijiriByakuren, // Custom 5
+	[TRAINER_PIC_TH_INABA_TEWI] = sAnims_THInabaTewi, // Custom 5
 	[TRAINER_PIC_TH_CIRNO] = sAnims_THCirno, // Custom 6
 	[TRAINER_PIC_TH_SHIKIEIKI] = sAnims_THShikieiki, // Custom 7
 	[TRAINER_PIC_TH_FLANDRE_SCARLET] = sAnims_THFlandreScarlet, // Custom 8

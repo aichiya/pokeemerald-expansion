@@ -97,7 +97,7 @@ const struct MonCoords gTrainerFrontPicCoords[] =
 	[TRAINER_PIC_GHOST] = {.size = 8, .y_offset = 1}, // Custom 2
 	[TRAINER_PIC_TH_SYAMEIMARU_AYA1] = {.size = 8, .y_offset = 1}, // Custom 3
 	[TRAINER_PIC_TH_SYAMEIMARU_AYA2] = {.size = 8, .y_offset = 1}, // Custom 4
-	[TRAINER_PIC_TH_HIJIRI_BYAKUREN] = {.size = 8, .y_offset = 1}, // Custom 5
+	[TRAINER_PIC_TH_INABA_TEWI] = {.size = 8, .y_offset = 1}, // Custom 5
 	[TRAINER_PIC_TH_CIRNO] = {.size = 8, .y_offset = 1}, // Custom 6
 	[TRAINER_PIC_TH_SHIKIEIKI] = {.size = 8, .y_offset = 1}, // Custom 7
 	[TRAINER_PIC_TH_FLANDRE_SCARLET] = {.size = 8, .y_offset = 1}, // Custom 8
@@ -357,7 +357,7 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
 	TRAINER_SPRITE(GHOST, gTrainerFrontPic_Ghost, 0x800), // Custom 2
 	TRAINER_SPRITE(TH_SYAMEIMARU_AYA1, gTrainerFrontPic_THSyameimaruAya1, 0x800), // Custom 3
 	TRAINER_SPRITE(TH_SYAMEIMARU_AYA2, gTrainerFrontPic_THSyameimaruAya2, 0x800), // Custom 4
-	TRAINER_SPRITE(TH_HIJIRI_BYAKUREN, gTrainerFrontPic_THHijiriByakuren, 0x800), // Custom 5
+	TRAINER_SPRITE(TH_INABA_TEWI, gTrainerFrontPic_THInabaTewi, 0x800), // Custom 5
 	TRAINER_SPRITE(TH_CIRNO, gTrainerFrontPic_THCirno, 0x800), // Custom 6
 	TRAINER_SPRITE(TH_SHIKIEIKI, gTrainerFrontPic_THShikieiki, 0x800), // Custom 7
 	TRAINER_SPRITE(TH_FLANDRE_SCARLET, gTrainerFrontPic_THFlandreScarlet, 0x800), // Custom 8
@@ -617,7 +617,7 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
 	TRAINER_PAL(GHOST, gTrainerPalette_Ghost), // Custom 2
 	TRAINER_PAL(TH_SYAMEIMARU_AYA1, gTrainerPalette_THSyameimaruAya1), // Custom 3
 	TRAINER_PAL(TH_SYAMEIMARU_AYA2, gTrainerPalette_THSyameimaruAya2), // Custom 4
-	TRAINER_PAL(TH_HIJIRI_BYAKUREN, gTrainerPalette_THHijiriByakuren), // Custom 5
+	TRAINER_PAL(TH_INABA_TEWI, gTrainerPalette_THInabaTewi), // Custom 5
 	TRAINER_PAL(TH_CIRNO, gTrainerPalette_THCirno), // Custom 6
 	TRAINER_PAL(TH_SHIKIEIKI, gTrainerPalette_THShikieiki), // Custom 7
 	TRAINER_PAL(TH_FLANDRE_SCARLET, gTrainerPalette_THFlandreScarlet), // Custom 8

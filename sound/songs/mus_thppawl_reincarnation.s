@@ -3,7 +3,7 @@
 	.equ	mus_thppawl_reincarnation_grp, voicegroup201
 	.equ	mus_thppawl_reincarnation_pri, 0
 	.equ	mus_thppawl_reincarnation_rev, 0
-	.equ	mus_thppawl_reincarnation_mvl, 127
+	.equ	mus_thppawl_reincarnation_mvl, 108
 	.equ	mus_thppawl_reincarnation_key, 0
 	.equ	mus_thppawl_reincarnation_tbs, 1
 	.equ	mus_thppawl_reincarnation_exg, 0
@@ -3360,7 +3360,7 @@ mus_thppawl_reincarnation_5:
 @ 000   ----------------------------------------
 	.byte		VOICE , 29
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 127*mus_thppawl_reincarnation_mvl/mxv
+	.byte		VOL   , 100*mus_thppawl_reincarnation_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -3743,7 +3743,7 @@ mus_thppawl_reincarnation_5_071:
 	.byte	W18
 	.byte		N12   , En4 
 	.byte	W12
-	.byte		VOICE , 29
+	.byte		VOICE , 75
 	.byte		N02   , Bn0 
 	.byte		N02   , Bn1 
 	.byte		N02   , Bn2 
@@ -5786,7 +5786,7 @@ mus_thppawl_reincarnation_9_loop:
 mus_thppawl_reincarnation_10:
 	.byte	KEYSH , mus_thppawl_reincarnation_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 48
+	.byte		VOICE , 115
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 68*mus_thppawl_reincarnation_mvl/mxv
 	.byte		MOD   , 0

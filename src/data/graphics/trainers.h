@@ -289,8 +289,8 @@ const u32 gTrainerPalette_THSyameimaruAya1[] = INCBIN_U32("graphics/trainers/fro
 const u32 gTrainerFrontPic_THSyameimaruAya2[] = INCBIN_U32("graphics/trainers/front_pics/th_aya2.4bpp.lz");
 const u32 gTrainerPalette_THSyameimaruAya2[] = INCBIN_U32("graphics/trainers/front_pics/th_aya2.gbapal.lz");
 
-const u32 gTrainerFrontPic_THHijiriByakuren[] = INCBIN_U32("graphics/trainers/front_pics/th_byakuren.4bpp.lz");
-const u32 gTrainerPalette_THHijiriByakuren[] = INCBIN_U32("graphics/trainers/front_pics/th_byakuren.gbapal.lz");
+const u32 gTrainerFrontPic_THInabaTewi[] = INCBIN_U32("graphics/trainers/front_pics/th_tewi.4bpp.lz");
+const u32 gTrainerPalette_THInabaTewi[] = INCBIN_U32("graphics/trainers/front_pics/th_tewi.gbapal.lz");
 
 const u32 gTrainerFrontPic_THCirno[] = INCBIN_U32("graphics/trainers/front_pics/th_cirno.4bpp.lz");
 const u32 gTrainerPalette_THCirno[] = INCBIN_U32("graphics/trainers/front_pics/th_cirno.gbapal.lz");

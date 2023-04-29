@@ -2,8 +2,8 @@
 
 	.equ	mus_thppawl_kagome_grp, voicegroup201
 	.equ	mus_thppawl_kagome_pri, 0
-	.equ	mus_thppawl_kagome_rev, 0
-	.equ	mus_thppawl_kagome_mvl, 127
+	.equ	mus_thppawl_kagome_rev, 50
+	.equ	mus_thppawl_kagome_mvl, 112
 	.equ	mus_thppawl_kagome_key, 0
 	.equ	mus_thppawl_kagome_tbs, 1
 	.equ	mus_thppawl_kagome_exg, 0

@@ -7186,7 +7186,7 @@ extern const u32 gTrainerFrontPic_EvilSpirit[];				// Custom 1
 extern const u32 gTrainerFrontPic_Ghost[];					// Custom 2
 extern const u32 gTrainerFrontPic_THSyameimaruAya1[];		// Custom 3
 extern const u32 gTrainerFrontPic_THSyameimaruAya2[];		// Custom 4
-extern const u32 gTrainerFrontPic_THHijiriByakuren[];		// Custom 5
+extern const u32 gTrainerFrontPic_THInabaTewi[];			// Custom 5
 extern const u32 gTrainerFrontPic_THCirno[];				// Custom 6
 extern const u32 gTrainerFrontPic_THShikieiki[];			// Custom 7
 extern const u32 gTrainerFrontPic_THFlandreScarlet[];		// Custom 8
@@ -7441,7 +7441,7 @@ extern const u32 gTrainerPalette_EvilSpirit[];				// Custom 1
 extern const u32 gTrainerPalette_Ghost[];					// Custom 2
 extern const u32 gTrainerPalette_THSyameimaruAya1[];		// Custom 3
 extern const u32 gTrainerPalette_THSyameimaruAya2[];		// Custom 4
-extern const u32 gTrainerPalette_THHijiriByakuren[];		// Custom 5
+extern const u32 gTrainerPalette_THInabaTewi[];				// Custom 5
 extern const u32 gTrainerPalette_THCirno[];					// Custom 6
 extern const u32 gTrainerPalette_THShikieiki[];				// Custom 7
 extern const u32 gTrainerPalette_THFlandreScarlet[];		// Custom 8

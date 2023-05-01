@@ -7730,6 +7730,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PASSER_BY_TSUKASA:
         case TRAINER_CLASS_KAMEN_RIDER_DECADE:
         	return MUS_DCD_JTDORCHESTRA;
+        case TRAINER_CLASS_PC_4:
+        	return MUS_PC_GBA2_DANZENFWPCMH;
         default:
             return MUS_VS_TRAINER;
         }

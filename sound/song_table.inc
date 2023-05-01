@@ -988,7 +988,34 @@ gSongTable::
 	song mus_thpprf_mementoofallorganism, 0, 0
 	song mus_thpprf_urbanlegends, 0, 0
 	song mus_thpprf_immemorialmarketeer, 0, 0
-
+	song mus_pc_gba2_danzenfwpcmh, 0, 0
+	song mus_pc_gba2_001, 0, 0
+	song mus_pc_gba2_002, 0, 0
+	song mus_pc_gba2_003, 0, 0
+	song mus_pc_gba2_004, 0, 0
+	song mus_pc_gba2_005, 0, 0
+	song mus_pc_gba2_006, 0, 0
+	song mus_pc_gba2_007, 0, 0
+	song mus_pc_gba2_008, 0, 0
+	song mus_pc_gba2_009, 0, 0
+	song mus_pc_gba2_012, 0, 0
+	song mus_pc_gba2_013, 0, 0
+	song mus_pc_gba2_014, 0, 0
+	song mus_pc_gba2_015, 0, 0
+	song mus_pc_gba2_016, 0, 0
+	song mus_pc_gba2_017, 0, 0
+	song mus_pc_gba2_018, 0, 0
+	song mus_pc_gba2_019, 0, 0
+	song mus_pc_gba2_020, 0, 0
+	song mus_pc_gba2_021, 0, 0
+	song mus_pc_gba2_023, 0, 0
+	song vo_pc_gba2_dualaurawave, 0, 0
+	song vo_pc_gba2_cureblack, 0, 0
+	song vo_pc_gba2_curewhite, 0, 0
+	song vo_pc_gba2_shiningstream, 0, 0
+	song vo_pc_gba2_shinyliminous, 0, 0
+	song vo_pc_gba2_extreme, 0, 0
+	song vo_pc_gba2_luminario, 0, 0
 
 	.align 2
 dummy_song_header:

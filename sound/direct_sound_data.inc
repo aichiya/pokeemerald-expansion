@@ -5471,3 +5471,167 @@ DirectSoundWaveData_thpprf_91::
 DirectSoundWaveData_thpprf_103::
 	.incbin "sound/direct_sound_samples/thpprf/thpprf_103.bin"
 
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_083204::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_083204.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_085a14::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_085a14.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_0888a8::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0888a8.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_089d10::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_089d10.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_08d118::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_08d118.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_08ff6c::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_08ff6c.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_09263c::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_09263c.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_094448::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_094448.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_096888::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_096888.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_09a15c::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_09a15c.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_09c1b0::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_09c1b0.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_09e45c::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_09e45c.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_0a01e0::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0a01e0.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_0a1730::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0a1730.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_0a3118::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0a3118.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_0a4a98::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0a4a98.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_0a6350::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0a6350.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_09e45c::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_09e45c.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_0a6350::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_0a6350.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_215504::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_215504.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_219b54::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_219b54.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_21e6b4::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_21e6b4.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_221568::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_221568.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_22647c::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_22647c.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_22b19c::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_22b19c.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_231334::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_231334.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_2367b4::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_2367b4.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_23b584::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_23b584.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_23fdd8::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_23fdd8.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_242ad8::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_242ad8.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_245688::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_245688.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_24ad9c::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_24ad9c.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_24e70c::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_24e70c.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_drumset_251bec::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_251bec.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_vocal_dualaurawave::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_dualaurawave.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_vocal_cureblack::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_cureblack.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_vocal_curewhite::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_curewhite.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_vocal_shiningstream::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_shiningstream.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_vocal_kagayakuinochi::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_kagayakuinochi.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_vocal_extreme::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_extreme.bin"
+
+	.align 2
+DirectSoundWaveData_pc_fwpcmh_directsound_vocal_luminario::
+	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_luminario.bin"
+

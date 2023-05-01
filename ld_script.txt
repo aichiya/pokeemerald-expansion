@@ -1623,6 +1623,34 @@ SECTIONS {
         sound/songs/mus_thpprf_mementoofallorganism.o(.rodata);
         sound/songs/mus_thpprf_urbanlegends.o(.rodata);
         sound/songs/mus_thpprf_immemorialmarketeer.o(.rodata);
+        sound/songs/mus_pc_gba2_danzenfwpcmh.o(.rodata);
+        sound/songs/mus_pc_gba2_001.o(.rodata);
+        sound/songs/mus_pc_gba2_002.o(.rodata);
+        sound/songs/mus_pc_gba2_003.o(.rodata);
+        sound/songs/mus_pc_gba2_004.o(.rodata);
+        sound/songs/mus_pc_gba2_005.o(.rodata);
+        sound/songs/mus_pc_gba2_006.o(.rodata);
+        sound/songs/mus_pc_gba2_007.o(.rodata);
+        sound/songs/mus_pc_gba2_008.o(.rodata);
+        sound/songs/mus_pc_gba2_009.o(.rodata);
+        sound/songs/mus_pc_gba2_012.o(.rodata);
+        sound/songs/mus_pc_gba2_013.o(.rodata);
+        sound/songs/mus_pc_gba2_014.o(.rodata);
+        sound/songs/mus_pc_gba2_015.o(.rodata);
+        sound/songs/mus_pc_gba2_016.o(.rodata);
+        sound/songs/mus_pc_gba2_017.o(.rodata);
+        sound/songs/mus_pc_gba2_018.o(.rodata);
+        sound/songs/mus_pc_gba2_019.o(.rodata);
+        sound/songs/mus_pc_gba2_020.o(.rodata);
+        sound/songs/mus_pc_gba2_021.o(.rodata);
+        sound/songs/mus_pc_gba2_023.o(.rodata);
+        sound/songs/vo_pc_gba2_dualaurawave.o(.rodata);
+        sound/songs/vo_pc_gba2_cureblack.o(.rodata);
+        sound/songs/vo_pc_gba2_curewhite.o(.rodata);
+        sound/songs/vo_pc_gba2_shiningstream.o(.rodata);
+        sound/songs/vo_pc_gba2_shinyliminous.o(.rodata);
+        sound/songs/vo_pc_gba2_extreme.o(.rodata);
+        sound/songs/vo_pc_gba2_luminario.o(.rodata);
     } =0
 
     lib_rodata :

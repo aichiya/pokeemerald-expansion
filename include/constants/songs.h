@@ -926,7 +926,36 @@
 #define MUS_THPPRF_URBANLEGENDS					985 // Fixed loop | Track 5 ends at @32, it should have been @73. Add delay until @73
 #define MUS_THPPRF_IMMEMORIALMARKETEER			986 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
 
-#define END_MUS 					MUS_THPPRF_IMMEMORIALMARKETEER
+#define MUS_PC_GBA2_DANZENFWPCMH				987
+#define MUS_PC_GBA2_001 						988
+#define MUS_PC_GBA2_002 						989
+#define MUS_PC_GBA2_003 						990
+#define MUS_PC_GBA2_004 						991
+#define MUS_PC_GBA2_005 						992
+#define MUS_PC_GBA2_006 						993
+#define MUS_PC_GBA2_007 						994
+#define MUS_PC_GBA2_008 						995
+#define MUS_PC_GBA2_009 						996
+#define MUS_PC_GBA2_012 						997
+#define MUS_PC_GBA2_013 						998
+#define MUS_PC_GBA2_014 						999
+#define MUS_PC_GBA2_015 						1000
+#define MUS_PC_GBA2_016 						1001
+#define MUS_PC_GBA2_017 						1002
+#define MUS_PC_GBA2_018 						1003
+#define MUS_PC_GBA2_019 						1004
+#define MUS_PC_GBA2_020 						1005
+#define MUS_PC_GBA2_021 						1006
+#define MUS_PC_GBA2_023 						1007
+#define VO_PC_GBA2_DUALAURAWAVE					1008
+#define VO_PC_GBA2_CUREBLACK					1009
+#define VO_PC_GBA2_CUREWHITE					1010
+#define VO_PC_GBA2_SHININGSTREAM				1011
+#define VO_PC_GBA2_SHINYLUMINOUS				1012
+#define VO_PC_GBA2_EXTREME						1013
+#define VO_PC_GBA2_LUMINARIO					1014
+
+#define END_MUS 					VO_PC_GBA2_LUMINARIO
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -116,3 +116,9 @@ ProgrammableWaveData_thpprf_pcm97::
 ProgrammableWaveData_thpprf_pcm98::
 	.incbin "sound/programmable_wave_samples/thpprf_pcm98.pcm"
 
+ProgrammableWaveData_pc_fwpcmh_wave_0827e8::
+	.incbin "sound/programmable_wave_samples/pc_fwpcmh_wave_0827e8.pcm"
+
+ProgrammableWaveData_pc_fwpcmh_wave_082858::
+	.incbin "sound/programmable_wave_samples/pc_fwpcmh_wave_082858.pcm"
+

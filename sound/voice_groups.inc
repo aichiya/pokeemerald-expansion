@@ -250,3 +250,7 @@
 .include "sound/voicegroups/voicegroup271.inc"
 .include "sound/voicegroups/voicegroup272.inc"
 .include "sound/voicegroups/voicegroup273.inc"
+.include "sound/voicegroups/voicegroup500.inc" @ Blank voicegroup
+.include "sound/voicegroups/voicegroup501.inc" @ Futari wa Precure MH GBA main
+.include "sound/voicegroups/voicegroup502.inc" @ Futari wa Precure MH GBA drum set 1
+.include "sound/voicegroups/voicegroup503.inc" @ Futari wa Precure MH GBA drum set 2

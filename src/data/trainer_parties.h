@@ -12449,15 +12449,15 @@ static const struct TrainerMonItemCustomMoves sParty_TrainerTest2[] = {
     {
     .iv = 255,
     .lvl = 70,
-    .species = SPECIES_KYOGRE,
-    .heldItem = ITEM_BLUE_ORB,
+    .species = SPECIES_GROUDON,
+    .heldItem = ITEM_RED_ORB,
     .moves = {MOVE_PRECIPICE_BLADES, MOVE_THUNDER_PUNCH, MOVE_ROCK_SLIDE, MOVE_BULK_UP}
     },
     {
     .iv = 255,
     .lvl = 70,
-    .species = SPECIES_GROUDON,
-    .heldItem = ITEM_RED_ORB,
+    .species = SPECIES_KYOGRE,
+    .heldItem = ITEM_BLUE_ORB,
     .moves = {MOVE_ORIGIN_PULSE, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_CALM_MIND}
     }
 };

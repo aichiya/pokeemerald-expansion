@@ -465,7 +465,7 @@ LitterootTown_EventScript_CustomSign5::
 	waitmoncry
 	seteventmon SPECIES_NECROZMA_ULTRA, 70, ITEM_ULTRANECROZIUM_Z
 	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_THPPRF_IMMEMORIALMARKETEER, FALSE
+	playbgm MUS_PC_GBA2_DANZENFWPCMH, FALSE
 	waitstate
 	releaseall
 	end
@@ -492,14 +492,14 @@ LitterootTown_EventScript_CustomSign6::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
-	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
+	givemon SPECIES_MEW, 70, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
 	setmonmove 0, 0, MOVE_PSYCHIC
 	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
 	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
 	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
-	givemon SPECIES_RAYQUAZA, 100, ITEM_ELECTRIUM_Z
+	givemon SPECIES_RAYQUAZA, 70, ITEM_ELECTRIUM_Z
 	setmoneventlegal 1
 	setmonmetlocation 1, 255
 	setmonmove 1, 0, MOVE_DRAGON_ASCENT
@@ -533,14 +533,14 @@ LitterootTown_EventScript_CustomSign7::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
-	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
+	givemon SPECIES_MEW, 70, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
 	setmonmove 0, 0, MOVE_PSYCHIC
 	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
 	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
 	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
-	givemon SPECIES_RAYQUAZA, 100, ITEM_ELECTRIUM_Z
+	givemon SPECIES_RAYQUAZA, 70, ITEM_ELECTRIUM_Z
 	setmoneventlegal 1
 	setmonmetlocation 1, 255
 	setmonmove 1, 0, MOVE_DRAGON_ASCENT
@@ -548,7 +548,7 @@ LitterootTown_EventScript_CustomSign7::
 	setmonmove 1, 2, MOVE_EXTREME_SPEED
 	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
-	trainerbattle_single TRAINER_TEST_2, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
+	trainerbattle_single TRAINER_TEST_2, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, VO_PC_GBA2_DUALAURAWAVE
 	releaseall
 	end
 

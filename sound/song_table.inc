@@ -1016,6 +1016,37 @@ gSongTable::
 	song vo_pc_gba2_shinyliminous, 0, 0
 	song vo_pc_gba2_extreme, 0, 0
 	song vo_pc_gba2_luminario, 0, 0
+	song mus_pkmn_gsc_caves, 0, 0
+	song mus_pkmn_gsc_cherrygrove, 0, 0
+	song mus_pkmn_gsc_cycling, 0, 0
+	song mus_pkmn_gsc_ecruteak, 0, 0
+	song mus_pkmn_gsc_elmlab, 0, 0
+	song mus_pkmn_gsc_exitsilver, 0, 0
+	song mus_pkmn_gsc_goldenrod, 0, 0
+	song mus_pkmn_gsc_gym, 0, 0
+	song mus_pkmn_gsc_icepath, 0, 0
+	song mus_pkmn_gsc_league, 0, 0
+	song mus_pkmn_gsc_lighthouse, 0, 0
+	song mus_pkmn_gsc_meetsilver, 0, 0
+	song mus_pkmn_gsc_newbark, 0, 0
+	song mus_pkmn_gsc_park, 0, 0
+	song mus_pkmn_gsc_pokemoncenter, 0, 0
+	song mus_pkmn_gsc_rocketbase, 0, 0
+	song mus_pkmn_gsc_route29, 0, 0
+	song mus_pkmn_gsc_route30, 0, 0
+	song mus_pkmn_gsc_route34, 0, 0
+	song mus_pkmn_gsc_route38, 0, 0
+	song mus_pkmn_gsc_surfing, 0, 0
+	song mus_pkmn_gsc_tower1, 0, 0
+	song mus_pkmn_gsc_tower2, 0, 0
+	song mus_pkmn_gsc_vermilion, 0, 0
+	song mus_pkmn_gsc_viridian, 0, 0
+	song mus_pkmn_gsc_vs_gymleader, 0, 0
+	song mus_pkmn_gsc_vs_rocket, 0, 0
+	song mus_pkmn_gsc_vs_silver, 0, 0
+	song mus_pkmn_gsc_vs_trainer, 0, 0
+	song mus_pkmn_gsc_vs_wild1, 0, 0
+	song mus_pkmn_gsc_vs_wild2, 0, 0
 
 	.align 2
 dummy_song_header:

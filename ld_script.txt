@@ -1651,6 +1651,37 @@ SECTIONS {
         sound/songs/vo_pc_gba2_shinyliminous.o(.rodata);
         sound/songs/vo_pc_gba2_extreme.o(.rodata);
         sound/songs/vo_pc_gba2_luminario.o(.rodata);
+        sound/songs/mus_pkmn_gsc_caves.o(.rodata);
+        sound/songs/mus_pkmn_gsc_cherrygrove.o(.rodata);
+        sound/songs/mus_pkmn_gsc_cycling.o(.rodata);
+        sound/songs/mus_pkmn_gsc_ecruteak.o(.rodata);
+        sound/songs/mus_pkmn_gsc_elmlab.o(.rodata);
+        sound/songs/mus_pkmn_gsc_exitsilver.o(.rodata);
+        sound/songs/mus_pkmn_gsc_goldenrod.o(.rodata);
+        sound/songs/mus_pkmn_gsc_gym.o(.rodata);
+        sound/songs/mus_pkmn_gsc_icepath.o(.rodata);
+        sound/songs/mus_pkmn_gsc_league.o(.rodata);
+        sound/songs/mus_pkmn_gsc_lighthouse.o(.rodata);
+        sound/songs/mus_pkmn_gsc_meetsilver.o(.rodata);
+        sound/songs/mus_pkmn_gsc_newbark.o(.rodata);
+        sound/songs/mus_pkmn_gsc_park.o(.rodata);
+        sound/songs/mus_pkmn_gsc_pokemoncenter.o(.rodata);
+        sound/songs/mus_pkmn_gsc_rocketbase.o(.rodata);
+        sound/songs/mus_pkmn_gsc_route29.o(.rodata);
+        sound/songs/mus_pkmn_gsc_route30.o(.rodata);
+        sound/songs/mus_pkmn_gsc_route34.o(.rodata);
+        sound/songs/mus_pkmn_gsc_route38.o(.rodata);
+        sound/songs/mus_pkmn_gsc_surfing.o(.rodata);
+        sound/songs/mus_pkmn_gsc_tower1.o(.rodata);
+        sound/songs/mus_pkmn_gsc_tower2.o(.rodata);
+        sound/songs/mus_pkmn_gsc_vermilion.o(.rodata);
+        sound/songs/mus_pkmn_gsc_viridian.o(.rodata);
+        sound/songs/mus_pkmn_gsc_vs_gymleader.o(.rodata);
+        sound/songs/mus_pkmn_gsc_vs_rocket.o(.rodata);
+        sound/songs/mus_pkmn_gsc_vs_silver.o(.rodata);
+        sound/songs/mus_pkmn_gsc_vs_trainer.o(.rodata);
+        sound/songs/mus_pkmn_gsc_vs_wild1.o(.rodata);
+        sound/songs/mus_pkmn_gsc_vs_wild2.o(.rodata);     
     } =0
 
     lib_rodata :

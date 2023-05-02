@@ -593,7 +593,8 @@ LitterootTown_EventScript_CustomSign8::
 	end
 
 LitterootTown_Text_TrainerTestIntro::
-	.string "Trainer battle test!$"
+	.string "When the world is dyed with darkness…\n"
+	.string "They are said to surely appear!$"
 
 LitterootTown_Text_TrainerTestDefeat::
 	.string "Whoah, wow! You made a much bigger\n"

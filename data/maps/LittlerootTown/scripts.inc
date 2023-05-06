@@ -465,7 +465,7 @@ LitterootTown_EventScript_CustomSign5::
 	waitmoncry
 	seteventmon SPECIES_NECROZMA_ULTRA, 70, ITEM_ULTRANECROZIUM_Z
 	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_PC_GBA2_DANZENFWPCMH, FALSE
+	playbgm MUS_PKMN_PMDRED_002, FALSE
 	waitstate
 	releaseall
 	end
@@ -548,7 +548,7 @@ LitterootTown_EventScript_CustomSign7::
 	setmonmove 1, 2, MOVE_EXTREME_SPEED
 	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
-	trainerbattle_single TRAINER_TEST_2, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, VO_PC_GBA2_DUALAURAWAVE
+	trainerbattle_single TRAINER_TEST_2, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
 	releaseall
 	end
 
@@ -593,8 +593,7 @@ LitterootTown_EventScript_CustomSign8::
 	end
 
 LitterootTown_Text_TrainerTestIntro::
-	.string "When the world is dyed with darkness…\n"
-	.string "They are said to surely appear!$"
+	.string "BATTLE TEST!$"
 
 LitterootTown_Text_TrainerTestDefeat::
 	.string "Whoah, wow! You made a much bigger\n"

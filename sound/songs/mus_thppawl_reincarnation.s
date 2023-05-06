@@ -2469,7 +2469,7 @@ mus_thppawl_reincarnation_4_018:
 @ 051   ----------------------------------------
 	.byte	W96
 @ 052   ----------------------------------------
-	.byte		VOICE , 118
+	.byte		VOICE , 102
 	.byte	W48
 	.byte		N18   , En4 
 	.byte		N18   , Gs4 
@@ -3537,7 +3537,7 @@ mus_thppawl_reincarnation_5_loop:
 @ 035   ----------------------------------------
 	.byte	W96
 @ 036   ----------------------------------------
-	.byte		VOICE , 75
+	.byte		VOICE , 30
 	.byte	W48
 	.byte		N18   , Gs3 
 	.byte	W18
@@ -3743,7 +3743,7 @@ mus_thppawl_reincarnation_5_071:
 	.byte	W18
 	.byte		N12   , En4 
 	.byte	W12
-	.byte		VOICE , 75
+	.byte		VOICE , 30
 	.byte		N02   , Bn0 
 	.byte		N02   , Bn1 
 	.byte		N02   , Bn2 
@@ -3845,7 +3845,7 @@ mus_thppawl_reincarnation_5_071:
 	.byte	W02
 @ 077   ----------------------------------------
 mus_thppawl_reincarnation_5_077:
-	.byte		VOICE , 75
+	.byte		VOICE , 30
 	.byte		N15   , Ds3 , v100
 	.byte	W12
 	.byte		N06   , Fn3 

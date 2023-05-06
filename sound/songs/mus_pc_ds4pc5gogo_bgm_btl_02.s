@@ -2,8 +2,8 @@
 
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_grp, voicegroup201
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_pri, 0
-	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_rev, 0
-	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_mvl, 100
+	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_rev, 50
+	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_mvl, 92
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_key, 0
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_tbs, 1
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_exg, 0
@@ -18,9 +18,10 @@
 mus_pc_ds4pc5gogo_bgm_btl_02_1:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
+mus_pc_ds4pc5gogo_bgm_btl_02_1_000:
 	.byte	TEMPO , 192*mus_pc_ds4pc5gogo_bgm_btl_02_tbs/2
-	.byte		VOICE , 5
-	.byte		VOL   , 70*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
+	.byte		VOICE , 24
+	.byte		VOL   , 120*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+40
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
@@ -414,6 +415,24 @@ mus_pc_ds4pc5gogo_bgm_btl_02_1_038:
 	.byte	PATT
 	 .word	mus_pc_ds4pc5gogo_bgm_btl_02_1_036
 @ 050   ----------------------------------------
+	.byte	W96
+@ 051   ----------------------------------------
+	.byte	W96
+@ 052   ----------------------------------------
+	.byte	W96
+@ 053   ----------------------------------------
+	.byte	W96
+@ 054   ----------------------------------------
+	.byte	W96
+@ 055   ----------------------------------------
+	.byte	W96
+@ 056   ----------------------------------------
+	.byte	W96
+@ 057   ----------------------------------------
+	.byte	W96
+@ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_1_000
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.2) ****************@
@@ -421,7 +440,8 @@ mus_pc_ds4pc5gogo_bgm_btl_02_1_038:
 mus_pc_ds4pc5gogo_bgm_btl_02_2:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 6
+mus_pc_ds4pc5gogo_bgm_btl_02_2_000:
+	.byte		VOICE , 4
 	.byte		VOL   , 80*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v-40
 	.byte		MOD   , 0
@@ -792,36 +812,36 @@ mus_pc_ds4pc5gogo_bgm_btl_02_2_020:
 @ 034   ----------------------------------------
 mus_pc_ds4pc5gogo_bgm_btl_02_2_034:
 	.byte		N12   , En3 , v116
-	.byte		N12   , Gn3 
-	.byte		N12   , Cn4 
+@	.byte		N12   , Gn3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        En3 , v092
-	.byte		N12   , Gn3 
-	.byte		N12   , Cn4 
+	.byte		N12   , En3 , v092
+@	.byte		N12   , Gn3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        En3 , v088
-	.byte		N12   , Gn3 
-	.byte		N12   , Cn4 
+	.byte		N12   , En3 , v088
+@	.byte		N12   , Gn3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        En3 , v116
-	.byte		N12   , Gn3 
-	.byte		N12   , Cn4 
+	.byte		N12   , En3 , v116
+@	.byte		N12   , Gn3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        En3 , v092
-	.byte		N12   , Gn3 
-	.byte		N12   , Cn4 
+	.byte		N12   , En3 , v092
+@	.byte		N12   , Gn3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        En3 , v088
-	.byte		N12   , Gn3 
-	.byte		N12   , Cn4 
+	.byte		N12   , En3 , v088
+@	.byte		N12   , Gn3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        En3 , v116
-	.byte		N12   , Gn3 
-	.byte		N12   , Cn4 
+	.byte		N12   , En3 , v116
+@	.byte		N12   , Gn3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        En3 , v092
-	.byte		N12   , Gn3 
-	.byte		N12   , Cn4 
+	.byte		N12   , En3 , v092
+@	.byte		N12   , Gn3
+@	.byte		N12   , Cn4
 	.byte	W12
 	.byte	PEND
 @ 035   ----------------------------------------
@@ -830,36 +850,36 @@ mus_pc_ds4pc5gogo_bgm_btl_02_2_034:
 @ 036   ----------------------------------------
 mus_pc_ds4pc5gogo_bgm_btl_02_2_036:
 	.byte		N12   , Dn3 , v116
-	.byte		N12   , Gn3 
-	.byte		N12   , Bn3 
+@	.byte		N12   , Gn3
+@	.byte		N12   , Bn3
 	.byte	W12
-	.byte		        Dn3 , v092
-	.byte		N12   , Gn3 
-	.byte		N12   , Bn3 
+	.byte		N12   , Dn3 , v092
+@	.byte		N12   , Gn3
+@	.byte		N12   , Bn3
 	.byte	W12
-	.byte		        Dn3 , v088
-	.byte		N12   , Gn3 
-	.byte		N12   , Bn3 
+	.byte		N12   , Dn3 , v088
+@	.byte		N12   , Gn3
+@	.byte		N12   , Bn3
 	.byte	W12
-	.byte		        Dn3 , v116
-	.byte		N12   , Gn3 
-	.byte		N12   , Bn3 
+	.byte		N12   , Dn3 , v116
+@	.byte		N12   , Gn3
+@	.byte		N12   , Bn3
 	.byte	W12
-	.byte		        Dn3 , v092
-	.byte		N12   , Gn3 
-	.byte		N12   , Bn3 
+	.byte		N12   , Dn3 , v092
+@	.byte		N12   , Gn3
+@	.byte		N12   , Bn3
 	.byte	W12
-	.byte		        Dn3 , v088
-	.byte		N12   , Gn3 
-	.byte		N12   , Bn3 
+	.byte		N12   , Dn3 , v088
+@	.byte		N12   , Gn3
+@	.byte		N12   , Bn3
 	.byte	W12
-	.byte		        Dn3 , v116
-	.byte		N12   , Gn3 
-	.byte		N12   , Bn3 
+	.byte		N12   , Dn3 , v116
+@	.byte		N12   , Gn3
+@	.byte		N12   , Bn3
 	.byte	W12
-	.byte		        Dn3 , v092
-	.byte		N12   , Gn3 
-	.byte		N12   , Bn3 
+	.byte		N12   , Dn3 , v092
+@	.byte		N12   , Gn3
+@	.byte		N12   , Bn3
 	.byte	W12
 	.byte	PEND
 @ 037   ----------------------------------------
@@ -868,36 +888,36 @@ mus_pc_ds4pc5gogo_bgm_btl_02_2_036:
 @ 038   ----------------------------------------
 mus_pc_ds4pc5gogo_bgm_btl_02_2_038:
 	.byte		N12   , Fn3 , v116
-	.byte		N12   , An3 
-	.byte		N12   , Cn4 
+@	.byte		N12   , An3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        Fn3 , v092
-	.byte		N12   , An3 
-	.byte		N12   , Cn4 
+	.byte		N12   , Fn3 , v092
+@	.byte		N12   , An3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        Fn3 , v088
-	.byte		N12   , An3 
-	.byte		N12   , Cn4 
+	.byte		N12   , Fn3 , v088
+@	.byte		N12   , An3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        Fn3 , v116
-	.byte		N12   , An3 
-	.byte		N12   , Cn4 
+	.byte		N12   , Fn3 , v116
+@	.byte		N12   , An3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        Fn3 , v092
-	.byte		N12   , An3 
-	.byte		N12   , Cn4 
+	.byte		N12   , Fn3 , v092
+@	.byte		N12   , An3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        Fn3 , v088
-	.byte		N12   , An3 
-	.byte		N12   , Cn4 
+	.byte		N12   , Fn3 , v088
+@	.byte		N12   , An3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        Fn3 , v116
-	.byte		N12   , An3 
-	.byte		N12   , Cn4 
+	.byte		N12   , Fn3 , v116
+@	.byte		N12   , An3
+@	.byte		N12   , Cn4
 	.byte	W12
-	.byte		        Fn3 , v092
-	.byte		N12   , An3 
-	.byte		N12   , Cn4 
+	.byte		N12   , Fn3 , v092
+@	.byte		N12   , An3
+@	.byte		N12   , Cn4
 	.byte	W12
 	.byte	PEND
 @ 039   ----------------------------------------
@@ -934,6 +954,24 @@ mus_pc_ds4pc5gogo_bgm_btl_02_2_038:
 	.byte	PATT
 	 .word	mus_pc_ds4pc5gogo_bgm_btl_02_2_036
 @ 050   ----------------------------------------
+	.byte	W96
+@ 051   ----------------------------------------
+	.byte	W96
+@ 052   ----------------------------------------
+	.byte	W96
+@ 053   ----------------------------------------
+	.byte	W96
+@ 054   ----------------------------------------
+	.byte	W96
+@ 055   ----------------------------------------
+	.byte	W96
+@ 056   ----------------------------------------
+	.byte	W96
+@ 057   ----------------------------------------
+	.byte	W96
+@ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_2_000
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.3) ****************@
@@ -941,7 +979,8 @@ mus_pc_ds4pc5gogo_bgm_btl_02_2_038:
 mus_pc_ds4pc5gogo_bgm_btl_02_3:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 8
+mus_pc_ds4pc5gogo_bgm_btl_02_3_000:
+	.byte		VOICE , 33
 	.byte		VOL   , 60*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+20
 	.byte		MOD   , 0
@@ -1095,6 +1134,7 @@ mus_pc_ds4pc5gogo_bgm_btl_02_3:
 	.byte	W96
 	.byte		EOT   
 @ 050   ----------------------------------------
+	.byte		VOICE , 115
 	.byte		N96   , Cn4 
 	.byte	W96
 @ 051   ----------------------------------------
@@ -1119,6 +1159,8 @@ mus_pc_ds4pc5gogo_bgm_btl_02_3:
 	.byte		        Dn4 
 	.byte	W96
 @ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_3_000
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.4) ****************@
@@ -1126,8 +1168,9 @@ mus_pc_ds4pc5gogo_bgm_btl_02_3:
 mus_pc_ds4pc5gogo_bgm_btl_02_4:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 4
-	.byte		VOL   , 80*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
+mus_pc_ds4pc5gogo_bgm_btl_02_4_000:
+	.byte		VOICE , 80
+	.byte		VOL   , 60*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
@@ -1431,14 +1474,18 @@ mus_pc_ds4pc5gogo_bgm_btl_02_4_051:
 	.byte		        Gn1 
 	.byte	W12
 	.byte		N09   
-	.byte	W09
+	.byte	W12
+@ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_4_000
 	.byte	FINE
 
-@**************** Track 5 (Midi-Chn.5) ****************@
+@ inactive**************** Track 5 (Midi-Chn.5) ****************@
 
 mus_pc_ds4pc5gogo_bgm_btl_02_5:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
+mus_pc_ds4pc5gogo_bgm_btl_02_5_000:
 	.byte		VOICE , 9
 	.byte		VOL   , 90*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+0
@@ -1744,7 +1791,10 @@ mus_pc_ds4pc5gogo_bgm_btl_02_5_051:
 	.byte		        Gn1 
 	.byte	W12
 	.byte		N09   
-	.byte	W09
+	.byte	W12
+@ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_5_000
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.6) ****************@
@@ -1752,7 +1802,8 @@ mus_pc_ds4pc5gogo_bgm_btl_02_5_051:
 mus_pc_ds4pc5gogo_bgm_btl_02_6:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 8
+mus_pc_ds4pc5gogo_bgm_btl_02_6_000:
+	.byte		VOICE , 48
 	.byte		VOL   , 90*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		MOD   , 0
@@ -1930,13 +1981,28 @@ mus_pc_ds4pc5gogo_bgm_btl_02_6_041:
 	.byte	W96
 	.byte		EOT   
 @ 052   ----------------------------------------
+	.byte	W96
+@ 053   ----------------------------------------
+	.byte	W96
+@ 054   ----------------------------------------
+	.byte	W96
+@ 055   ----------------------------------------
+	.byte	W96
+@ 056   ----------------------------------------
+	.byte	W96
+@ 057   ----------------------------------------
+	.byte	W96
+@ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_6_000
 	.byte	FINE
 
-@**************** Track 7 (Midi-Chn.7) ****************@
+@ inactive**************** Track 7 (Midi-Chn.7) ****************@
 
 mus_pc_ds4pc5gogo_bgm_btl_02_7:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
+mus_pc_ds4pc5gogo_bgm_btl_02_7_000:
 	.byte		VOICE , 8
 	.byte		VOL   , 60*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+0
@@ -2126,6 +2192,20 @@ mus_pc_ds4pc5gogo_bgm_btl_02_7_041:
 @ 052   ----------------------------------------
 	.byte	W18
 	.byte		EOT   
+	.byte	W78
+@ 053   ----------------------------------------
+	.byte	W96
+@ 054   ----------------------------------------
+	.byte	W96
+@ 055   ----------------------------------------
+	.byte	W96
+@ 056   ----------------------------------------
+	.byte	W96
+@ 057   ----------------------------------------
+	.byte	W96
+@ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_7_000
 	.byte	FINE
 
 @**************** Track 8 (Midi-Chn.8) ****************@
@@ -2133,8 +2213,9 @@ mus_pc_ds4pc5gogo_bgm_btl_02_7_041:
 mus_pc_ds4pc5gogo_bgm_btl_02_8:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 1
-	.byte		VOL   , 120*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
+mus_pc_ds4pc5gogo_bgm_btl_02_8_000:
+	.byte		VOICE , 48
+	.byte		VOL   , 80*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
@@ -2249,14 +2330,32 @@ mus_pc_ds4pc5gogo_bgm_btl_02_8:
 	.byte	W48
 @ 050   ----------------------------------------
 	.byte		N48   , An4 
-	.byte	W48
+	.byte	W96
+@ 051   ----------------------------------------
+	.byte	W96
+@ 052   ----------------------------------------
+	.byte	W96
+@ 053   ----------------------------------------
+	.byte	W96
+@ 054   ----------------------------------------
+	.byte	W96
+@ 055   ----------------------------------------
+	.byte	W96
+@ 056   ----------------------------------------
+	.byte	W96
+@ 057   ----------------------------------------
+	.byte	W96
+@ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_8_000
 	.byte	FINE
 
-@**************** Track 9 (Midi-Chn.9) ****************@
+@ inactive**************** Track 9 (Midi-Chn.9) ****************@
 
 mus_pc_ds4pc5gogo_bgm_btl_02_9:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
+mus_pc_ds4pc5gogo_bgm_btl_02_9_000:
 	.byte		VOICE , 8
 	.byte		VOL   , 65*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+0
@@ -2431,13 +2530,16 @@ mus_pc_ds4pc5gogo_bgm_btl_02_9:
 	.byte	W96
 	.byte		EOT   
 @ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_9_000
 	.byte	FINE
 
-@**************** Track 10 (Midi-Chn.11) ****************@
+@ inactive**************** Track 10 (Midi-Chn.11) ****************@
 
 mus_pc_ds4pc5gogo_bgm_btl_02_10:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
+mus_pc_ds4pc5gogo_bgm_btl_02_10_000:
 	.byte		VOICE , 8
 	.byte		VOL   , 70*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v-20
@@ -2616,6 +2718,8 @@ mus_pc_ds4pc5gogo_bgm_btl_02_10:
 	.byte	W96
 	.byte		EOT   
 @ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_10_000
 	.byte	FINE
 
 @**************** Track 11 (Midi-Chn.12) ****************@
@@ -2623,8 +2727,9 @@ mus_pc_ds4pc5gogo_bgm_btl_02_10:
 mus_pc_ds4pc5gogo_bgm_btl_02_11:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 127
-	.byte		VOL   , 70*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
+mus_pc_ds4pc5gogo_bgm_btl_02_11_000:
+	.byte		VOICE , 120
+	.byte		VOL   , 127*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
@@ -2753,6 +2858,24 @@ mus_pc_ds4pc5gogo_bgm_btl_02_11_032:
 @ 050   ----------------------------------------
 	.byte		        Cs2 
 	.byte	W12
+	.byte	W84
+@ 051   ----------------------------------------
+	.byte	W96
+@ 052   ----------------------------------------
+	.byte	W96
+@ 053   ----------------------------------------
+	.byte	W96
+@ 054   ----------------------------------------
+	.byte	W96
+@ 055   ----------------------------------------
+	.byte	W96
+@ 056   ----------------------------------------
+	.byte	W96
+@ 057   ----------------------------------------
+	.byte	W96
+@ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_11_000
 	.byte	FINE
 
 @**************** Track 12 (Midi-Chn.13) ****************@
@@ -2760,7 +2883,8 @@ mus_pc_ds4pc5gogo_bgm_btl_02_11_032:
 mus_pc_ds4pc5gogo_bgm_btl_02_12:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 126
+mus_pc_ds4pc5gogo_bgm_btl_02_12_000:
+	.byte		VOICE , 120
 	.byte		VOL   , 60*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+35
 	.byte		MOD   , 0
@@ -2975,6 +3099,8 @@ mus_pc_ds4pc5gogo_bgm_btl_02_12_034:
 	.byte	PATT
 	 .word	mus_pc_ds4pc5gogo_bgm_btl_02_12_001
 @ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_12_000
 	.byte	FINE
 
 @**************** Track 13 (Midi-Chn.14) ****************@
@@ -2982,7 +3108,8 @@ mus_pc_ds4pc5gogo_bgm_btl_02_12_034:
 mus_pc_ds4pc5gogo_bgm_btl_02_13:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 127
+mus_pc_ds4pc5gogo_bgm_btl_02_13_000:
+	.byte		VOICE , 120
 	.byte		VOL   , 110*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		MOD   , 0
@@ -3203,7 +3330,10 @@ mus_pc_ds4pc5gogo_bgm_btl_02_13_023:
 	.byte		N12   , En1 , v127
 	.byte	W48
 	.byte		N12   
-	.byte	W12
+	.byte	W24
+@ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_13_000
 	.byte	FINE
 
 @**************** Track 14 (Midi-Chn.15) ****************@
@@ -3211,8 +3341,9 @@ mus_pc_ds4pc5gogo_bgm_btl_02_13_023:
 mus_pc_ds4pc5gogo_bgm_btl_02_14:
 	.byte	KEYSH , mus_pc_ds4pc5gogo_bgm_btl_02_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 127
-	.byte		VOL   , 110*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
+mus_pc_ds4pc5gogo_bgm_btl_02_14_000:
+	.byte		VOICE , 120
+	.byte		VOL   , 40*mus_pc_ds4pc5gogo_bgm_btl_02_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
@@ -3418,13 +3549,15 @@ mus_pc_ds4pc5gogo_bgm_btl_02_14_001:
 	.byte	PATT
 	 .word	mus_pc_ds4pc5gogo_bgm_btl_02_14_001
 @ 058   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pc_ds4pc5gogo_bgm_btl_02_14_000
 	.byte	FINE
 
 @******************************************************@
 	.align	2
 
 mus_pc_ds4pc5gogo_bgm_btl_02:
-	.byte	14	@ NumTrks
+	.byte	10	@ NumTrks
 	.byte	0	@ NumBlks
 	.byte	mus_pc_ds4pc5gogo_bgm_btl_02_pri	@ Priority
 	.byte	mus_pc_ds4pc5gogo_bgm_btl_02_rev	@ Reverb.
@@ -3435,12 +3568,12 @@ mus_pc_ds4pc5gogo_bgm_btl_02:
 	.word	mus_pc_ds4pc5gogo_bgm_btl_02_2
 	.word	mus_pc_ds4pc5gogo_bgm_btl_02_3
 	.word	mus_pc_ds4pc5gogo_bgm_btl_02_4
-	.word	mus_pc_ds4pc5gogo_bgm_btl_02_5
+@	.word	mus_pc_ds4pc5gogo_bgm_btl_02_5
 	.word	mus_pc_ds4pc5gogo_bgm_btl_02_6
-	.word	mus_pc_ds4pc5gogo_bgm_btl_02_7
+@	.word	mus_pc_ds4pc5gogo_bgm_btl_02_7
 	.word	mus_pc_ds4pc5gogo_bgm_btl_02_8
-	.word	mus_pc_ds4pc5gogo_bgm_btl_02_9
-	.word	mus_pc_ds4pc5gogo_bgm_btl_02_10
+@	.word	mus_pc_ds4pc5gogo_bgm_btl_02_9
+@	.word	mus_pc_ds4pc5gogo_bgm_btl_02_10
 	.word	mus_pc_ds4pc5gogo_bgm_btl_02_11
 	.word	mus_pc_ds4pc5gogo_bgm_btl_02_12
 	.word	mus_pc_ds4pc5gogo_bgm_btl_02_13

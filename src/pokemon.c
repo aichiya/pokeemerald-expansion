@@ -7729,9 +7729,13 @@ u16 GetBattleBGM(void)
         	return MUS_PC_ULTRACUREHAPPYTANJOU;
         case TRAINER_CLASS_PASSER_BY_TSUKASA:
         case TRAINER_CLASS_KAMEN_RIDER_DECADE:
-        	return MUS_DCD_JTDORCHESTRA;
+        	return MUS_DCD_JTD_SYMPHONY_LOOP;
+        case TRAINER_CLASS_PC_SHINY:
+        	return MUS_PC_DS4PC5GOGO_BGM_BTL_02;
         case TRAINER_CLASS_PC_4:
         	return MUS_PC_GBA2_DANZENFWPCMH;
+        case TRAINER_CLASS_PC_5:
+        	return MUS_PC_DS6HCPC_SEQ_BGM_BGM_13;
         default:
             return MUS_VS_TRAINER;
         }

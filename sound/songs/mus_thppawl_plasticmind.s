@@ -3,7 +3,7 @@
 	.equ	mus_thppawl_plasticmind_grp, voicegroup201
 	.equ	mus_thppawl_plasticmind_pri, 0
 	.equ	mus_thppawl_plasticmind_rev, 0
-	.equ	mus_thppawl_plasticmind_mvl, 127
+	.equ	mus_thppawl_plasticmind_mvl, 100
 	.equ	mus_thppawl_plasticmind_key, 0
 	.equ	mus_thppawl_plasticmind_tbs, 1
 	.equ	mus_thppawl_plasticmind_exg, 0

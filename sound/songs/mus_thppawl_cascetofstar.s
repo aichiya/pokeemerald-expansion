@@ -3,7 +3,7 @@
 	.equ	mus_thppawl_cascetofstar_grp, voicegroup201
 	.equ	mus_thppawl_cascetofstar_pri, 0
 	.equ	mus_thppawl_cascetofstar_rev, 0
-	.equ	mus_thppawl_cascetofstar_mvl, 127
+	.equ	mus_thppawl_cascetofstar_mvl, 100
 	.equ	mus_thppawl_cascetofstar_key, 0
 	.equ	mus_thppawl_cascetofstar_tbs, 1
 	.equ	mus_thppawl_cascetofstar_exg, 0

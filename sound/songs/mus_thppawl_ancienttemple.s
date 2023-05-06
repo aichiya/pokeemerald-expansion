@@ -3,7 +3,7 @@
 	.equ	mus_thppawl_ancienttemple_grp, voicegroup201
 	.equ	mus_thppawl_ancienttemple_pri, 0
 	.equ	mus_thppawl_ancienttemple_rev, 0
-	.equ	mus_thppawl_ancienttemple_mvl, 127
+	.equ	mus_thppawl_ancienttemple_mvl, 112
 	.equ	mus_thppawl_ancienttemple_key, 0
 	.equ	mus_thppawl_ancienttemple_tbs, 1
 	.equ	mus_thppawl_ancienttemple_exg, 0

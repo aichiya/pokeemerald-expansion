@@ -189,23 +189,23 @@
 .include "sound/voicegroups/voicegroup187.inc"
 .include "sound/voicegroups/voicegroup188.inc"
 .include "sound/voicegroups/voicegroup189.inc"
-.include "sound/voicegroups/voicegroup190.inc"
-.include "sound/voicegroups/voicegroup191.inc" @ custom GBA
-.include "sound/voicegroups/voicegroup192.inc" @ custom GBA
-.include "sound/voicegroups/voicegroup193.inc" @ custom GBA
-.include "sound/voicegroups/voicegroup194.inc" @ custom GBA
-.include "sound/voicegroups/voicegroup195.inc" @ custom GBA
-.include "sound/voicegroups/voicegroup196.inc" @ custom GBA
-.include "sound/voicegroups/voicegroup197.inc" @ custom GBA
-.include "sound/voicegroups/voicegroup198.inc" @ custom GBA
-.include "sound/voicegroups/voicegroup199.inc" @ custom GBA
-.include "sound/voicegroups/voicegroup200.inc" @ GBA main
-.include "sound/voicegroups/voicegroup201.inc" @ custom GBA-HGSS mix
-.include "sound/voicegroups/voicegroup210.inc" @ THPPRF custom voicegroup
-.include "sound/voicegroups/voicegroup216.inc"
+.include "sound/voicegroups/voicegroup190.inc" @ Modified voicegroup000
+.include "sound/voicegroups/voicegroup191.inc" @ Modified voicegroup001
+.include "sound/voicegroups/voicegroup192.inc" @ Modified voicegroup002
+.include "sound/voicegroups/voicegroup193.inc" @ Modified voicegroup003
+.include "sound/voicegroups/voicegroup194.inc" @ Modified voicegroup004
+.include "sound/voicegroups/voicegroup195.inc" @ Modified voicegroup005
+.include "sound/voicegroups/voicegroup196.inc" @ Modified voicegroup006
+.include "sound/voicegroups/voicegroup197.inc" @ Modified voicegroup007
+.include "sound/voicegroups/voicegroup198.inc" @ Modified voicegroup008
+.include "sound/voicegroups/voicegroup199.inc" @ Modified voicegroup009
+.include "sound/voicegroups/voicegroup200.inc" @ Custom GBA instrument only
+.include "sound/voicegroups/voicegroup201.inc" @ [Main] Custom mixed instrument (GBA-HGSS-THPPRF)
+.include "sound/voicegroups/voicegroup210.inc" @ [Main] THPPRF custom
+.include "sound/voicegroups/voicegroup216.inc" @ -- Start HGSS Voicegroups --
 .include "sound/voicegroups/voicegroup219.inc"
 .include "sound/voicegroups/voicegroup220.inc"
-.include "sound/voicegroups/voicegroup229.inc" @ HGSS main
+.include "sound/voicegroups/voicegroup229.inc" @ [Main] HGSS-only instruments
 .include "sound/voicegroups/voicegroup230.inc"
 .include "sound/voicegroups/voicegroup231.inc"
 .include "sound/voicegroups/voicegroup232.inc"
@@ -249,8 +249,35 @@
 .include "sound/voicegroups/voicegroup270.inc"
 .include "sound/voicegroups/voicegroup271.inc"
 .include "sound/voicegroups/voicegroup272.inc"
-.include "sound/voicegroups/voicegroup273.inc"
-.include "sound/voicegroups/voicegroup500.inc" @ Blank voicegroup
-.include "sound/voicegroups/voicegroup501.inc" @ Futari wa Precure MH GBA main
+.include "sound/voicegroups/voicegroup273.inc" @ --End HGSS Voicegroups--
+.include "sound/voicegroups/voicegroup500.inc" @ --Blank voicegroup--
+.include "sound/voicegroups/voicegroup501.inc" @ [Main] Futari wa Precure MH GBA instruments
 .include "sound/voicegroups/voicegroup502.inc" @ Futari wa Precure MH GBA drum set 1
 .include "sound/voicegroups/voicegroup503.inc" @ Futari wa Precure MH GBA drum set 2
+.include "sound/voicegroups/voicegroup504.inc" @ --Start PMD Voicegroups-- | [Main] PMD GBA main 1 instruments for squence 1 - 99
+.include "sound/voicegroups/voicegroup505.inc" @ [Main] PMD GBA main 2 instruments for squence 100 - 199
+.include "sound/voicegroups/voicegroup506.inc" @ PMD GBA Drum 1
+.include "sound/voicegroups/voicegroup507.inc" @ PMD GBA Drum 2
+.include "sound/voicegroups/voicegroup508.inc"
+.include "sound/voicegroups/voicegroup509.inc"
+.include "sound/voicegroups/voicegroup510.inc"
+.include "sound/voicegroups/voicegroup511.inc"
+.include "sound/voicegroups/voicegroup512.inc"
+.include "sound/voicegroups/voicegroup513.inc"
+.include "sound/voicegroups/voicegroup514.inc"
+.include "sound/voicegroups/voicegroup515.inc"
+.include "sound/voicegroups/voicegroup516.inc"
+.include "sound/voicegroups/voicegroup517.inc"
+.include "sound/voicegroups/voicegroup518.inc"
+.include "sound/voicegroups/voicegroup519.inc"
+.include "sound/voicegroups/voicegroup520.inc"
+.include "sound/voicegroups/voicegroup521.inc"
+.include "sound/voicegroups/voicegroup522.inc"
+.include "sound/voicegroups/voicegroup523.inc"
+.include "sound/voicegroups/voicegroup524.inc"
+.include "sound/voicegroups/voicegroup525.inc"
+.include "sound/voicegroups/voicegroup526.inc"
+.include "sound/voicegroups/voicegroup527.inc"
+.include "sound/voicegroups/voicegroup528.inc"
+.include "sound/voicegroups/voicegroup529.inc"
+.include "sound/voicegroups/voicegroup530.inc" @ --End PMD Voicegroups--

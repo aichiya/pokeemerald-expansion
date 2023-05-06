@@ -2,8 +2,8 @@
 
 	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_13_grp, voicegroup201
 	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_13_pri, 0
-	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_13_rev, 0
-	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl, 100
+	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_13_rev, 50
+	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl, 92
 	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_13_key, 0
 	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_13_tbs, 1
 	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_13_exg, 0
@@ -19,9 +19,9 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_1:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_13_key+0
 @ 000   ----------------------------------------
 	.byte	TEMPO , 177*mus_pc_ds6hcpc_seq_bgm_bgm_13_tbs/2
-	.byte		VOICE , 9
+	.byte		VOICE , 75
 	.byte		PAN   , c_v+11
-	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		VOL   , 127*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W96
 @ 001   ----------------------------------------
@@ -29,6 +29,12 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_1:
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
+mus_pc_ds6hcpc_seq_bgm_bgm_13_1_003:
+	.byte	TEMPO , 177*mus_pc_ds6hcpc_seq_bgm_bgm_13_tbs/2
+	.byte		VOICE , 75
+	.byte		PAN   , c_v+11
+	.byte		VOL   , 127*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W96
 @ 004   ----------------------------------------
 	.byte	W96
@@ -254,14 +260,8 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_1_012:
 	.byte		        Bn3 
 	.byte	W36
 @ 059   ----------------------------------------
-	.byte		N06   , Bn3 , v080
-	.byte		N06   , Dn4 , v088
-	.byte		N06   , Gn4 , v084
-	.byte	W36
-	.byte		        Bn3 , v072
-	.byte		N06   , Dn4 , v088
-	.byte		N06   , Gn4 , v080
-	.byte	W06
+	.byte	GOTO
+	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_1_003
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.2) ****************@
@@ -308,6 +308,10 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_2:
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
+mus_pc_ds6hcpc_seq_bgm_bgm_13_2_003:
+	.byte		VOICE , 13
+	.byte		PAN   , c_v-9
+	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
 	.byte	W32
 	.byte	W03
 	.byte		N23   , An3 , v116
@@ -517,7 +521,8 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_2_012:
 @ 058   ----------------------------------------
 	.byte	W96
 @ 059   ----------------------------------------
-	.byte	W42
+	.byte	GOTO
+	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_2_003
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.3) ****************@
@@ -525,8 +530,8 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_2_012:
 mus_pc_ds6hcpc_seq_bgm_bgm_13_3:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_13_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 12
-	.byte		VOL   , 125*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		VOICE , 95
+	.byte		VOL   , 110*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -545,6 +550,10 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_3_002:
 	.byte	PEND
 @ 003   ----------------------------------------
 mus_pc_ds6hcpc_seq_bgm_bgm_13_3_003:
+	.byte		VOICE , 95
+	.byte		VOL   , 110*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		BEND  , c_v+0
 	.byte	W36
 	.byte	W02
 	.byte		N23   , An3 , v116
@@ -956,7 +965,8 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_3_020:
 	.byte	PATT
 	 .word	mus_pc_ds6hcpc_seq_bgm_bgm_13_3_002
 @ 059   ----------------------------------------
-	.byte	W42
+	.byte	GOTO
+	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_3_003
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.4) ****************@
@@ -964,9 +974,9 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_3_020:
 mus_pc_ds6hcpc_seq_bgm_bgm_13_4:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_13_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 40
+	.byte		VOICE , 48
 	.byte		PAN   , c_v-4
-	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		VOL   , 50*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -982,6 +992,12 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_4:
 	.byte		N40   , Bn3 
 	.byte	W36
 @ 003   ----------------------------------------
+mus_pc_ds6hcpc_seq_bgm_bgm_13_4_003:
+	.byte		VOICE , 48
+	.byte		PAN   , c_v-4
+	.byte		VOL   , 50*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		PAN   , c_v+0
+	.byte		BEND  , c_v+0
 	.byte	W32
 	.byte	W03
 	.byte		N23   , An3 
@@ -1365,7 +1381,8 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_4_019:
 	.byte		N68   , Bn3 
 	.byte	W36
 @ 059   ----------------------------------------
-	.byte	W42
+	.byte	GOTO
+	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_4_003
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.5) ****************@
@@ -1373,9 +1390,9 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_4_019:
 mus_pc_ds6hcpc_seq_bgm_bgm_13_5:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_13_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 40
+	.byte		VOICE , 48
 	.byte		PAN   , c_v+6
-	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		VOL   , 50*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
 	.byte		BEND  , c_v+0
 	.byte	W96
 @ 001   ----------------------------------------
@@ -1394,6 +1411,11 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_5:
 	.byte		N40   , Gn3 
 	.byte	W36
 @ 003   ----------------------------------------
+mus_pc_ds6hcpc_seq_bgm_bgm_13_5_003:
+	.byte		VOICE , 48
+	.byte		PAN   , c_v+6
+	.byte		VOL   , 50*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W32
 	.byte	W03
 	.byte		N23   , An2 
@@ -1773,10 +1795,11 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_5_016:
 	.byte		N68   , Gn3 
 	.byte	W36
 @ 059   ----------------------------------------
-	.byte	W42
+	.byte	GOTO
+	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_5_003
 	.byte	FINE
 
-@**************** Track 6 (Midi-Chn.6) ****************@
+@ inactive**************** Track 6 (Midi-Chn.6) ****************@
 
 mus_pc_ds6hcpc_seq_bgm_bgm_13_6:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_13_key+0
@@ -1791,6 +1814,11 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_6:
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
+mus_pc_ds6hcpc_seq_bgm_bgm_13_6_003:
+	.byte		VOICE , 40
+	.byte		PAN   , c_v+11
+	.byte		VOL   , 90*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte	W96
 @ 004   ----------------------------------------
 	.byte	W96
@@ -1971,10 +1999,11 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_6_019:
 @ 058   ----------------------------------------
 	.byte	W96
 @ 059   ----------------------------------------
-	.byte	W42
+	.byte	GOTO
+	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_6_003
 	.byte	FINE
 
-@**************** Track 7 (Midi-Chn.7) ****************@
+@ inactive**************** Track 7 (Midi-Chn.7) ****************@
 
 mus_pc_ds6hcpc_seq_bgm_bgm_13_7:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_13_key+0
@@ -2008,6 +2037,11 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_7_002:
 	.byte	W36
 	.byte	PEND
 @ 003   ----------------------------------------
+mus_pc_ds6hcpc_seq_bgm_bgm_13_7_003:
+	.byte		VOICE , 43
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte		N11   , Dn0 
 	.byte	W96
 @ 004   ----------------------------------------
@@ -2439,10 +2473,8 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_7_020:
 	.byte	PATT
 	 .word	mus_pc_ds6hcpc_seq_bgm_bgm_13_7_002
 @ 059   ----------------------------------------
-	.byte		N12   , GnM1, v116
-	.byte	W36
-	.byte		        GnM1, v120
-	.byte	W12
+	.byte	GOTO
+	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_7_003
 	.byte	FINE
 
 @**************** Track 8 (Midi-Chn.8) ****************@
@@ -2450,7 +2482,7 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_7_020:
 mus_pc_ds6hcpc_seq_bgm_bgm_13_8:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_13_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 42
+	.byte		VOICE , 99
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
 	.byte		BEND  , c_v+0
@@ -2479,6 +2511,11 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_8_002:
 	.byte	W36
 	.byte	PEND
 @ 003   ----------------------------------------
+mus_pc_ds6hcpc_seq_bgm_bgm_13_8_003:
+	.byte		VOICE , 99
+	.byte		PAN   , c_v+0
+	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		BEND  , c_v+0
 	.byte		N11   , Dn1 
 	.byte	W96
 @ 004   ----------------------------------------
@@ -2910,10 +2947,8 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_8_020:
 	.byte	PATT
 	 .word	mus_pc_ds6hcpc_seq_bgm_bgm_13_8_002
 @ 059   ----------------------------------------
-	.byte		N12   , Gn0 , v116
-	.byte	W36
-	.byte		        Gn0 , v120
-	.byte	W12
+	.byte	GOTO
+	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_8_003
 	.byte	FINE
 
 @**************** Track 9 (Midi-Chn.9) ****************@
@@ -2921,9 +2956,9 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_8_020:
 mus_pc_ds6hcpc_seq_bgm_bgm_13_9:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_13_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 127
+	.byte		VOICE , 0
 	.byte		PAN   , c_v+6
-	.byte		VOL   , 125*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
+	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_13_mvl/mxv
 	.byte		N12   , Dn1 , v084
 	.byte		N12   , Fn1 , v127
 	.byte	W48
@@ -3390,17 +3425,15 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13_9_021:
 	.byte		N12   , Fn1 , v127
 	.byte	W36
 @ 059   ----------------------------------------
-	.byte		N12   
-	.byte	W36
-	.byte		N12   
-	.byte	W12
+	.byte	GOTO
+	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_9_003
 	.byte	FINE
 
 @******************************************************@
 	.align	2
 
 mus_pc_ds6hcpc_seq_bgm_bgm_13:
-	.byte	9	@ NumTrks
+	.byte	7	@ NumTrks
 	.byte	0	@ NumBlks
 	.byte	mus_pc_ds6hcpc_seq_bgm_bgm_13_pri	@ Priority
 	.byte	mus_pc_ds6hcpc_seq_bgm_bgm_13_rev	@ Reverb.
@@ -3412,8 +3445,8 @@ mus_pc_ds6hcpc_seq_bgm_bgm_13:
 	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_3
 	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_4
 	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_5
-	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_6
-	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_7
+@	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_6
+@	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_7
 	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_8
 	.word	mus_pc_ds6hcpc_seq_bgm_bgm_13_9
 

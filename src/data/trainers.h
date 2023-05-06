@@ -10263,10 +10263,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_TEST_1] =
     {
-        .trainerClass = TRAINER_CLASS_SH_MAID,
+        .trainerClass = TRAINER_CLASS_PC_5,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SH_VIVITR,
-        .trainerName = _("VIVIT"),
+        .trainerPic = TRAINER_PIC_PC_CURE_BLOSSOM,
+        .trainerName = _("BLOSSOM"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -10275,10 +10275,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_TEST_2] =
     {
-        .trainerClass = TRAINER_CLASS_PC_4,
+        .trainerClass = TRAINER_CLASS_PC_SHINY,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_PC_MISUMI_NAGISA,
-        .trainerName = _("PRECURE"),
+        .trainerPic = TRAINER_PIC_PC_SHINY_LUMINOUS,
+        .trainerName = _("LUMINOUS"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
@@ -10287,10 +10287,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_TEST_3] =
     {
-        .trainerClass = TRAINER_CLASS_PASSER_BY_TSUKASA,
+        .trainerClass = TRAINER_CLASS_KAMEN_RIDER_DECADE,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_ETC_KADOYA_TSUKASA,
-        .trainerName = _("RIDER"),
+        .trainerName = _("DECADE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,

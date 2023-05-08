@@ -465,7 +465,7 @@ LitterootTown_EventScript_CustomSign5::
 	waitmoncry
 	seteventmon SPECIES_NECROZMA_ULTRA, 70, ITEM_ULTRANECROZIUM_Z
 	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_PKMN_PMDRED_002, FALSE
+	playbgm MUS_DGMN_STORY2_VS_ADVANCE, FALSE
 	waitstate
 	releaseall
 	end
@@ -592,8 +592,201 @@ LitterootTown_EventScript_CustomSign8::
 	releaseall
 	end
 
+LitterootTown_EventScript_CustomSign9::
+	lockall
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_MASTER_BALL, 10
+	givemon SPECIES_NECROZMA_DUSK_MANE, 100, ITEM_SOLGANIUM_Z
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_PHOTON_GEYSER
+	setmonmove 0, 1, MOVE_SUNSTEEL_STRIKE
+	setmonmove 0, 2, MOVE_SWORDS_DANCE
+	setmonmove 0, 3, MOVE_EARTHQUAKE
+	delay 30
+	trainerbattle_single TRAINER_TEST_4, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
+	releaseall
+	end
+
+LitterootTown_EventScript_CustomSign10::
+	lockall
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	delay 30
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_MASTER_BALL, 10
+	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_PSYCHIC
+	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
+	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
+	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
+	givemon SPECIES_RAYQUAZA, 100, ITEM_ELECTRIUM_Z
+	setmoneventlegal 1
+	setmonmetlocation 1, 255
+	setmonmove 1, 0, MOVE_DRAGON_ASCENT
+	setmonmove 1, 1, MOVE_THUNDERBOLT
+	setmonmove 1, 2, MOVE_EXTREME_SPEED
+	setmonmove 1, 3, MOVE_EARTHQUAKE
+	delay 30
+	trainerbattle_single TRAINER_TEST_5, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
+	releaseall
+	end
+
+LitterootTown_EventScript_CustomSign11::
+	lockall
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	delay 30
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_MASTER_BALL, 10
+	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_PSYCHIC
+	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
+	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
+	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
+	givemon SPECIES_RAYQUAZA, 100, ITEM_ELECTRIUM_Z
+	setmoneventlegal 1
+	setmonmetlocation 1, 255
+	setmonmove 1, 0, MOVE_DRAGON_ASCENT
+	setmonmove 1, 1, MOVE_THUNDERBOLT
+	setmonmove 1, 2, MOVE_EXTREME_SPEED
+	setmonmove 1, 3, MOVE_EARTHQUAKE
+	delay 30
+	trainerbattle_single TRAINER_TEST_6, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
+	releaseall
+	end
+
+LitterootTown_EventScript_CustomSign12::
+	lockall
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	delay 30
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_MASTER_BALL, 10
+	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_PSYCHIC
+	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
+	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
+	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
+	givemon SPECIES_RAYQUAZA, 100, ITEM_ELECTRIUM_Z
+	setmoneventlegal 1
+	setmonmetlocation 1, 255
+	setmonmove 1, 0, MOVE_DRAGON_ASCENT
+	setmonmove 1, 1, MOVE_THUNDERBOLT
+	setmonmove 1, 2, MOVE_EXTREME_SPEED
+	setmonmove 1, 3, MOVE_EARTHQUAKE
+	delay 30
+	trainerbattle_single TRAINER_TEST_7, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
+	releaseall
+	end
+
+LitterootTown_EventScript_CustomSign13::
+	lockall
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	delay 30
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_MASTER_BALL, 10
+	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_PSYCHIC
+	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
+	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
+	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
+	givemon SPECIES_RAYQUAZA, 100, ITEM_ELECTRIUM_Z
+	setmoneventlegal 1
+	setmonmetlocation 1, 255
+	setmonmove 1, 0, MOVE_DRAGON_ASCENT
+	setmonmove 1, 1, MOVE_THUNDERBOLT
+	setmonmove 1, 2, MOVE_EXTREME_SPEED
+	setmonmove 1, 3, MOVE_EARTHQUAKE
+	delay 30
+	trainerbattle_single TRAINER_TEST_8, LitterootTown_Text_TrainerTestIntro, LitterootTown_Text_TrainerTestDefeat, LitterootTown_EventScript_TrainerTestDefeated, NO_MUSIC
+	releaseall
+	end
+
 LitterootTown_Text_TrainerTestIntro::
-	.string "BATTLE TEST!$"
+	.string "The leader of Team Moonlight who\n"
+	.string "wanders between digital worlds.$"
 
 LitterootTown_Text_TrainerTestDefeat::
 	.string "Whoah, wow! You made a much bigger\n"

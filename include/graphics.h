@@ -7343,6 +7343,7 @@ extern const u32 gTrainerFrontPic_ETCCureUnion[]; // Custom 158
 extern const u32 gTrainerFrontPic_ETCKadoyaTsukasa[]; // Custom 159
 extern const u32 gTrainerFrontPic_ETCDaikiKaito[]; // Custom 160
 extern const u32 gTrainerFrontPic_ETCKamenRiderDeLast[]; // Custom 161
+extern const u32 gTrainerFrontPic_ETCSayo[]; // Custom 161
 
 extern const u32 gTrainerPalette_Hiker[];
 extern const u32 gTrainerPalette_AquaGruntM[];
@@ -7598,6 +7599,7 @@ extern const u32 gTrainerPalette_ETCCureUnion[]; // Custom 158
 extern const u32 gTrainerPalette_ETCKadoyaTsukasa[]; // Custom 159
 extern const u32 gTrainerPalette_ETCDaikiKaito[]; // Custom 160
 extern const u32 gTrainerPalette_ETCKamenRiderDeLast[]; // Custom 161
+extern const u32 gTrainerPalette_ETCSayo[]; // Custom 162
 
 extern const u8 gTrainerBackPic_Brendan[];
 extern const u8 gTrainerBackPic_May[];

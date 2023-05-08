@@ -254,6 +254,7 @@ const struct MonCoords gTrainerFrontPicCoords[] =
 	[TRAINER_PIC_ETC_KADOYA_TSUKASA] = {.size = 8, .y_offset = 1}, // Custom 159
 	[TRAINER_PIC_ETC_DAIKI_KAITO] = {.size = 8, .y_offset = 1}, // Custom 160
 	[TRAINER_PIC_ETC_KR_DELAST] = {.size = 8, .y_offset = 1}, // Custom 161
+	[TRAINER_PIC_ETC_SAYO] = {.size = 8, .y_offset = 1}, // Custom 162
 };
 
 #define TRAINER_SPRITE(trainerPic, sprite, size) [TRAINER_PIC_##trainerPic] = {sprite, size, TRAINER_PIC_##trainerPic}
@@ -514,6 +515,7 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
 	TRAINER_SPRITE(ETC_KADOYA_TSUKASA, gTrainerFrontPic_ETCKadoyaTsukasa, 0x800), // Custom 159
 	TRAINER_SPRITE(ETC_DAIKI_KAITO, gTrainerFrontPic_ETCDaikiKaito, 0x800), // Custom 160
 	TRAINER_SPRITE(ETC_KR_DELAST, gTrainerFrontPic_ETCKamenRiderDeLast, 0x800), // Custom 161
+	TRAINER_SPRITE(ETC_SAYO, gTrainerFrontPic_ETCSayo, 0x800), // Custom 162
 };
 
 #define TRAINER_PAL(trainerPic, pal) [TRAINER_PIC_##trainerPic] = {pal, TRAINER_PIC_##trainerPic}
@@ -774,4 +776,5 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
 	TRAINER_PAL(ETC_KADOYA_TSUKASA, gTrainerPalette_ETCKadoyaTsukasa), // Custom 159
 	TRAINER_PAL(ETC_DAIKI_KAITO, gTrainerPalette_ETCDaikiKaito), // Custom 160
 	TRAINER_PAL(ETC_KR_DELAST, gTrainerPalette_ETCKamenRiderDeLast), // Custom 161
+	TRAINER_PAL(ETC_SAYO, gTrainerPalette_ETCSayo), // Custom 162
 };

@@ -10299,10 +10299,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_TEST_4] =
     {
-        .trainerClass = TRAINER_CLASS_BGHS_SCHOOL_GIRL,
+        .trainerClass = TRAINER_CLASS_DIGIMON_TAMER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_STEVEN,
-        .trainerName = _("MIKI"),
+        .trainerPic = TRAINER_PIC_ETC_SAYO,
+        .trainerName = _("SAYO"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,

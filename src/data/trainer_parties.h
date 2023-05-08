@@ -12489,10 +12489,10 @@ static const struct TrainerMonItemCustomMoves sParty_TrainerTest3[] = {
 static const struct TrainerMonItemCustomMoves sParty_TrainerTest4[] = {
     {
     .iv = 255,
-    .lvl = 77,
-    .species = SPECIES_SKARMORY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    .lvl = 100,
+    .species = SPECIES_NECROZMA_DAWN_WINGS,
+    .heldItem = ITEM_LUNALIUM_Z,
+    .moves = {MOVE_PHOTON_GEYSER, MOVE_MOONGEIST_BEAM, MOVE_EARTH_POWER, MOVE_CALM_MIND}
     }
 };
 

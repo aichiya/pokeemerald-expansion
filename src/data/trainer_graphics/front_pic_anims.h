@@ -1014,6 +1014,10 @@ static const union AnimCmd *const sAnims_ETCKamenRiderDeLast[] ={
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_ETCSayo[] ={
+    sAnim_GeneralFrame0,
+};
+
 const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 {
     [TRAINER_PIC_HIKER] = sAnims_Hiker,
@@ -1270,4 +1274,5 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 	[TRAINER_PIC_ETC_KADOYA_TSUKASA] = sAnims_ETCKadoyaTsukasa, // Custom 159
 	[TRAINER_PIC_ETC_DAIKI_KAITO] = sAnims_ETCDaikiKaito, // Custom 160
 	[TRAINER_PIC_ETC_KR_DELAST] = sAnims_ETCKamenRiderDeLast, // Custom 161
+	[TRAINER_PIC_ETC_SAYO] = sAnims_ETCSayo, // Custom 162
 };

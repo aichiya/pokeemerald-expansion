@@ -272,7 +272,7 @@
 #define TRAINER_PIC_ETC_KADOYA_TSUKASA 251
 #define TRAINER_PIC_ETC_DAIKI_KAITO 252
 #define TRAINER_PIC_ETC_KR_DELAST 253
-
+#define TRAINER_PIC_ETC_SAYO 254
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -615,8 +615,9 @@
 #define TRAINER_CLASS_KAMEN_RIDER_DECADE 0xa3
 #define TRAINER_CLASS_KAMEN_RIDER_DIEND 0xa4
 #define TRAINER_CLASS_KAMEN_RIDER_DELAST 0xa5
+#define TRAINER_CLASS_DIGIMON_TAMER 0xa6
 
-#define TRAINER_CLASS_COUNT          0xa6
+#define TRAINER_CLASS_COUNT          0xa7
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

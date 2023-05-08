@@ -7736,6 +7736,8 @@ u16 GetBattleBGM(void)
         	return MUS_PC_GBA2_DANZENFWPCMH;
         case TRAINER_CLASS_PC_5:
         	return MUS_PC_DS6HCPC_SEQ_BGM_BGM_13;
+        case TRAINER_CLASS_DIGIMON_TAMER:
+        	return MUS_DGMN_STORY2_VS_ADVANCE;
         default:
             return MUS_VS_TRAINER;
         }

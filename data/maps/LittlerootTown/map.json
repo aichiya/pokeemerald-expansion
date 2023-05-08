@@ -2,16 +2,16 @@
   "id": "MAP_LITTLEROOT_TOWN",
   "name": "LittlerootTown",
   "layout": "LAYOUT_LITTLEROOT_TOWN",
-  "music": "MUS_LITTLEROOT",
+  "music": "MUS_DGMN_STORY2_DARKMOON_CITY",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY",
+  "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
-  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "battle_scene": "MAP_BATTLE_SCENE_PHOEBE",
   "connections": [
     {
       "map": "MAP_ROUTE101",
@@ -48,8 +48,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
-      "x": 14,
-      "y": 17,
+      "x": 12,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -295,6 +295,46 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LitterootTown_EventScript_CustomSign8"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LitterootTown_EventScript_CustomSign9"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LitterootTown_EventScript_CustomSign10"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LitterootTown_EventScript_CustomSign11"
+    },
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LitterootTown_EventScript_CustomSign12"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LitterootTown_EventScript_CustomSign13"
     }
   ]
 }

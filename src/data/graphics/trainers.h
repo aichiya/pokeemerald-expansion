@@ -760,6 +760,9 @@ const u32 gTrainerPalette_ETCDaikiKaito[] = INCBIN_U32("graphics/trainers/front_
 const u32 gTrainerFrontPic_ETCKamenRiderDeLast[] = INCBIN_U32("graphics/trainers/front_pics/etc_krdelast.4bpp.lz");
 const u32 gTrainerPalette_ETCKamenRiderDeLast[] = INCBIN_U32("graphics/trainers/front_pics/etc_krdelast.gbapal.lz");
 
+const u32 gTrainerFrontPic_ETCSayo[] = INCBIN_U32("graphics/trainers/front_pics/etc_sayo.4bpp.lz");
+const u32 gTrainerPalette_ETCSayo[] = INCBIN_U32("graphics/trainers/front_pics/etc_sayo.gbapal.lz");
+
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");

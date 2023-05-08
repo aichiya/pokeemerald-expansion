@@ -1937,6 +1937,28 @@ SECTIONS {
         sound/songs/seq_126.o(.rodata);
         sound/songs/seq_127.o(.rodata);
         sound/songs/seq_128.o(.rodata);
+        sound/songs/mus_dgmn_story1_digifarm.o(.rodata);
+        sound/songs/mus_dgmn_story1_interior.o(.rodata);
+        sound/songs/mus_dgmn_story1_vs_boss.o(.rodata);
+        sound/songs/mus_dgmn_story1_vs_digimon.o(.rodata);
+        sound/songs/mus_dgmn_story1_vs_digimon_dmw.o(.rodata);
+        sound/songs/mus_dgmn_story2_board_angel.o(.rodata);
+        sound/songs/mus_dgmn_story2_board_beast.o(.rodata);
+        sound/songs/mus_dgmn_story2_board_bird.o(.rodata);
+        sound/songs/mus_dgmn_story2_board_devil.o(.rodata);
+        sound/songs/mus_dgmn_story2_board_dragon.o(.rodata);
+        sound/songs/mus_dgmn_story2_board_forest.o(.rodata);
+        sound/songs/mus_dgmn_story2_board_mech.o(.rodata);
+        sound/songs/mus_dgmn_story2_board_sea.o(.rodata);
+        sound/songs/mus_dgmn_story2_darkmoon_city.o(.rodata);
+        sound/songs/mus_dgmn_story2_digifarm.o(.rodata);
+        sound/songs/mus_dgmn_story2_sunshine_city.o(.rodata);
+        sound/songs/mus_dgmn_story2_vs_advance.o(.rodata);
+        sound/songs/mus_dgmn_story2_vs_boss.o(.rodata);
+        sound/songs/mus_dgmn_story2_vs_chaos_brain.o(.rodata);
+        sound/songs/mus_dgmn_story2_vs_digimon.o(.rodata);
+        sound/songs/mus_dgmn_story2_vs_final_boss.o(.rodata);
+        sound/songs/mus_dgmn_story2_vs_multiplayer.o(.rodata);
     } =0
 
     lib_rodata :

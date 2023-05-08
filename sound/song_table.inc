@@ -1302,6 +1302,28 @@ gSongTable::
 	song seq_126, 0, 0
 	song seq_127, 0, 0
 	song seq_128, 0, 0
+	song mus_dgmn_story1_digifarm, 0, 0
+	song mus_dgmn_story1_interior, 0, 0
+	song mus_dgmn_story1_vs_boss, 0, 0
+	song mus_dgmn_story1_vs_digimon, 0, 0
+	song mus_dgmn_story1_vs_digimon_dmw, 0, 0
+	song mus_dgmn_story2_board_angel, 0, 0
+	song mus_dgmn_story2_board_beast, 0, 0
+	song mus_dgmn_story2_board_bird, 0, 0
+	song mus_dgmn_story2_board_devil, 0, 0
+	song mus_dgmn_story2_board_dragon, 0, 0
+	song mus_dgmn_story2_board_forest, 0, 0
+	song mus_dgmn_story2_board_mech, 0, 0
+	song mus_dgmn_story2_board_sea, 0, 0
+	song mus_dgmn_story2_darkmoon_city, 0, 0
+	song mus_dgmn_story2_digifarm, 0, 0
+	song mus_dgmn_story2_sunshine_city, 0, 0
+	song mus_dgmn_story2_vs_advance, 0, 0
+	song mus_dgmn_story2_vs_boss, 0, 0
+	song mus_dgmn_story2_vs_chaos_brain, 0, 0
+	song mus_dgmn_story2_vs_digimon, 0, 0
+	song mus_dgmn_story2_vs_final_boss, 0, 0
+	song mus_dgmn_story2_vs_multiplayer, 0, 0
 
 	.align 2
 dummy_song_header:

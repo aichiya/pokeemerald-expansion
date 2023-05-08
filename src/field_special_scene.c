@@ -24,14 +24,14 @@
 // while the truck is driving. In addition, their sprite's placement
 // is slightly offset to make them look less perfectly stacked.
 // Box 1 (LOCALID_TRUCK_BOX_TOP)
-#define BOX1_X_OFFSET  3
-#define BOX1_Y_OFFSET  3
+#define BOX1_X_OFFSET  64
+#define BOX1_Y_OFFSET  64
 // Box 2 (LOCALID_TRUCK_BOX_BOTTOM_L)
-#define BOX2_X_OFFSET  0
-#define BOX2_Y_OFFSET -3
+#define BOX2_X_OFFSET  64
+#define BOX2_Y_OFFSET  64
 // Box 3 (LOCALID_TRUCK_BOX_BOTTOM_R)
-#define BOX3_X_OFFSET -3
-#define BOX3_Y_OFFSET  0
+#define BOX3_X_OFFSET  64
+#define BOX3_Y_OFFSET  64
 
 // porthole states
 enum
@@ -42,7 +42,7 @@ enum
     EXIT_PORTHOLE,
 };
 
-static const s8 sTruckCamera_HorizontalTable[] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, -1, -1, -1, 0};
+static const s8 sTruckCamera_HorizontalTable[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 static const u8 sSSTidalSailEastMovementScript[] =
 {
@@ -61,9 +61,9 @@ static void Task_Truck3(u8);
 static s16 GetTruckCameraBobbingY(int time)
 {
     if (!(time % 120))
-        return -1;
+        return 0;
     else if ((time % 10) <= 4)
-        return 1;
+        return 0;
 
     return 0;
 }
@@ -79,7 +79,7 @@ static s16 GetTruckCameraBobbingY(int time)
 static s16 GetTruckBoxYMovement(int time)
 {
     if (!((time + 120) % 180))
-        return -1;
+        return 0;
 
     return 0;
 }
@@ -100,7 +100,7 @@ static void Task_Truck1(u8 taskId)
     SetObjectEventSpritePosByLocalIdAndMap(LOCALID_TRUCK_BOX_BOTTOM_R, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, BOX3_X_OFFSET - cameraXpan, BOX3_Y_OFFSET + yBox3);
 
     // Arbitrary timer limit that won't be reached
-    if (++tTimer == 30000)
+    if (++tTimer == 10)
         tTimer = 0;
 
     cameraYpan = GetTruckCameraBobbingY(tTimer);
@@ -194,18 +194,18 @@ static void Task_HandleTruckSequence(u8 taskId)
     {
     case 0:
         tTimer++;
-        if (tTimer == 90)
+        if (tTimer == 3)
         {
             SetCameraPanningCallback(NULL);
             tTimer = 0;
             tTaskId1 = CreateTask(Task_Truck1, 0xA);
             tState = 1;
-            PlaySE(SE_TRUCK_MOVE);
+            PlaySE(MUS_DUMMY);
         }
         break;
     case 1:
         tTimer++;
-        if (tTimer == 150)
+        if (tTimer == 5)
         {
             FadeInFromBlack();
             tTimer = 0;
@@ -214,13 +214,13 @@ static void Task_HandleTruckSequence(u8 taskId)
         break;
     case 2:
         tTimer++;
-        if (!gPaletteFade.active && tTimer > 300)
+        if (!gPaletteFade.active && tTimer > 10)
         {
             tTimer = 0;
             DestroyTask(tTaskId1);
             tTaskId2 = CreateTask(Task_Truck2, 0xA);
             tState = 3;
-            PlaySE(SE_TRUCK_STOP);
+            PlaySE(MUS_DUMMY);
         }
         break;
     case 3:
@@ -234,22 +234,22 @@ static void Task_HandleTruckSequence(u8 taskId)
         break;
     case 4:
         tTimer++;
-        if (tTimer == 90)
+        if (tTimer == 3)
         {
-            PlaySE(SE_TRUCK_UNLOAD);
+            PlaySE(MUS_DUMMY);
             tTimer = 0;
             tState = 5;
         }
         break;
     case 5:
         tTimer++;
-        if (tTimer == 120)
+        if (tTimer == 4)
         {
-            MapGridSetMetatileIdAt(4 + MAP_OFFSET, 1 + MAP_OFFSET, METATILE_InsideOfTruck_ExitLight_Top);
-            MapGridSetMetatileIdAt(4 + MAP_OFFSET, 2 + MAP_OFFSET, METATILE_InsideOfTruck_ExitLight_Mid);
-            MapGridSetMetatileIdAt(4 + MAP_OFFSET, 3 + MAP_OFFSET, METATILE_InsideOfTruck_ExitLight_Bottom);
+            MapGridSetMetatileIdAt(64 + MAP_OFFSET, 61 + MAP_OFFSET, METATILE_InsideOfTruck_ExitLight_Top);
+            MapGridSetMetatileIdAt(64 + MAP_OFFSET, 62 + MAP_OFFSET, METATILE_InsideOfTruck_ExitLight_Mid);
+            MapGridSetMetatileIdAt(64 + MAP_OFFSET, 63 + MAP_OFFSET, METATILE_InsideOfTruck_ExitLight_Bottom);
             DrawWholeMapView();
-            PlaySE(SE_TRUCK_DOOR);
+            PlaySE(MUS_DUMMY);
             DestroyTask(taskId);
             UnlockPlayerFieldControls();
         }
@@ -259,9 +259,9 @@ static void Task_HandleTruckSequence(u8 taskId)
 
 void ExecuteTruckSequence(void)
 {
-    MapGridSetMetatileIdAt(4 + MAP_OFFSET, 1 + MAP_OFFSET, METATILE_InsideOfTruck_DoorClosedFloor_Top);
-    MapGridSetMetatileIdAt(4 + MAP_OFFSET, 2 + MAP_OFFSET, METATILE_InsideOfTruck_DoorClosedFloor_Mid);
-    MapGridSetMetatileIdAt(4 + MAP_OFFSET, 3 + MAP_OFFSET, METATILE_InsideOfTruck_DoorClosedFloor_Bottom);
+    MapGridSetMetatileIdAt(64 + MAP_OFFSET, 61 + MAP_OFFSET, METATILE_InsideOfTruck_DoorClosedFloor_Top);
+    MapGridSetMetatileIdAt(64 + MAP_OFFSET, 62 + MAP_OFFSET, METATILE_InsideOfTruck_DoorClosedFloor_Mid);
+    MapGridSetMetatileIdAt(64 + MAP_OFFSET, 63 + MAP_OFFSET, METATILE_InsideOfTruck_DoorClosedFloor_Bottom);
     DrawWholeMapView();
     LockPlayerFieldControls();
     CpuFastFill(0, gPlttBufferFaded, 0x400);

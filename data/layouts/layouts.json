@@ -4410,6 +4410,36 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINRIVER_CITY",
+      "name": "TwinriverCity_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/TwinriverCity/border.bin",
+      "blockdata_filepath": "data/layouts/TwinriverCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVENT_FIRST_DREAM",
+      "name": "EventFirstDream_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleDome",
+      "border_filepath": "data/layouts/EventFirstDream/border.bin",
+      "blockdata_filepath": "data/layouts/EventFirstDream/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVENT_BECOME_CHAMPION",
+      "name": "EventBecomeChampion_Layout",
+      "width": 15,
+      "height": 17,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_CableClub",
+      "border_filepath": "data/layouts/EventBecomeChampion/border.bin",
+      "blockdata_filepath": "data/layouts/EventBecomeChampion/map.bin"
     }
   ]
 }

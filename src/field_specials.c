@@ -67,6 +67,7 @@
 #include "constants/metatile_labels.h"
 #include "palette.h"
 #include "battle_util.h"
+#include "pokedex.h"
 
 #define TAG_ITEM_ICON 5500
 

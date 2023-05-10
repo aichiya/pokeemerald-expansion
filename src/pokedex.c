@@ -5681,3 +5681,15 @@ static void ClearSearchParameterBoxText(void)
 {
     ClearSearchMenuRect(144, 8, 96, 96);
 }
+
+void FillPokedex(void)
+{
+    u16 i;
+
+    for (i = SPECIES_BULBASAUR; i <= SPECIES_ENAMORUS; i++)
+    {
+        GetSetPokedexFlag(i, FLAG_SET_SEEN);
+        GetSetPokedexFlag(i, FLAG_SET_CAUGHT);
+    }
+}
+

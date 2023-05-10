@@ -1,7 +1,7 @@
-TwinriverCity_MapScripts::
+JohtoTwinriverCity_MapScripts::
 	.byte 0
 
-TwinriverCity_EventScript_Sign1::
+JohtoTwinriverCity_EventScript_Sign1::
 	lock
 	playse SE_CLICK
 	delay 10
@@ -15,16 +15,16 @@ TwinriverCity_EventScript_Sign1::
 	waitse
 	delay 20
 	special FillPokedex
-	msgbox TwinriverCity_EventScript_FillUpPokedex, MSGBOX_DEFAULT
+	msgbox JohtoTwinriverCity_EventScript_FillUpPokedex, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-TwinriverCity_EventScript_FillUpPokedex:
+JohtoTwinriverCity_EventScript_FillUpPokedex:
 	.string "Now, all FRAGMON are registered\n"
 	.string "in your NC{EMOJI_CLOVER}PDA!$"
 
-TwinriverCity_EventScript_Sign2::
+JohtoTwinriverCity_EventScript_Sign2::
 	lock
 	playse SE_CLICK
 	delay 10
@@ -39,16 +39,16 @@ TwinriverCity_EventScript_Sign2::
 	delay 20
 	setflag FLAG_SYS_NATIONAL_DEX
 	special EnableNationalPokedex
-	msgbox TwinriverCity_EventScript_ZenSekaiDex, MSGBOX_DEFAULT
+	msgbox JohtoTwinriverCity_EventScript_ZenSekaiDex, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-TwinriverCity_EventScript_ZenSekaiDex:
+JohtoTwinriverCity_EventScript_ZenSekaiDex:
 	.string "Now, your NC{EMOJI_CLOVER}PDA can record MONs\n"
 	.string "besides POKéMON!$"
 
-TwinriverCity_EventScript_Sign3::
+JohtoTwinriverCity_EventScript_Sign3::
 	lockall
 	deleteplayerparty
 	delay 30
@@ -86,29 +86,29 @@ TwinriverCity_EventScript_Sign3::
 	setmonmove 1, 2, MOVE_EXTREME_SPEED
 	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
-	trainerbattle_single TRAINER_TEST_3, TwinriverCity_Text_Sign3TrainerTestIntro, LitterootTown_Text_Sign3TrainerTestDefeat, TwinriverCity_EventScript_Sign3TrainerTestDefeated, NO_MUSIC
+	trainerbattle_single TRAINER_TEST_3, JohtoTwinriverCity_Text_Sign3TrainerTestIntro, LitterootTown_Text_Sign3TrainerTestDefeat, JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated, NO_MUSIC
 	releaseall
 	end
 
-TwinriverCity_Text_Sign3TrainerTestIntro:
-	.string "The destroyer of the world,\n"
-	.string "What are his eyes saw?.$"
+JohtoTwinriverCity_Text_Sign3TrainerTestIntro:
+	.string "The destroyer of the world.\n"
+	.string "What are his eyes saw?$"
 
 LitterootTown_Text_Sign3TrainerTestDefeat:
 	.string "Whoah, wow! You made a much bigger\n"
 	.string "splash than I expected!\p"
 	.string "Okay, you've got me.$"
 
-TwinriverCity_EventScript_Sign3TrainerTestDefeated::
+JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated::
 	releaseall
 	end
 
-TwinriverCity_EventScript_Sign4::
+JohtoTwinriverCity_EventScript_Sign4::
 	end
 
-TwinriverCity_EventScript_Sign5::
+JohtoTwinriverCity_EventScript_Sign5::
 	end
 
-TwinriverCity_EventScript_Sign6::
+JohtoTwinriverCity_EventScript_Sign6::
 	end
 

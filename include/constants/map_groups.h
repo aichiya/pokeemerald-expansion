@@ -592,7 +592,7 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // gMapGroup_JohtoTownsAndRoutes
-#define MAP_TWINRIVER_CITY (0 | (34 << 8))
+#define MAP_JOHTO_TWINRIVER_CITY (0 | (34 << 8))
 
 // gMapGroup_JohtoDungeons
 

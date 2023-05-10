@@ -1,7 +1,7 @@
 {
-  "id": "MAP_TWINRIVER_CITY",
-  "name": "TwinriverCity",
-  "layout": "LAYOUT_TWINRIVER_CITY",
+  "id": "MAP_JOHTO_TWINRIVER_CITY",
+  "name": "JohtoTwinriverCity",
+  "layout": "LAYOUT_JOHTO_TWINRIVER_CITY",
   "music": "MUS_PKMN_PMDRED_001",
   "region_map_section": "MAPSEC_PALLET_TOWN",
   "requires_flash": false,
@@ -158,7 +158,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "TwinriverCity_EventScript_Sign1"
+      "script": "JohtoTwinriverCity_EventScript_Sign1"
     },
     {
       "type": "sign",
@@ -166,7 +166,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "TwinriverCity_EventScript_Sign2"
+      "script": "JohtoTwinriverCity_EventScript_Sign2"
     },
     {
       "type": "sign",
@@ -174,7 +174,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "TwinriverCity_EventScript_Sign3"
+      "script": "JohtoTwinriverCity_EventScript_Sign3"
     },
     {
       "type": "sign",
@@ -182,7 +182,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "TwinriverCity_EventScript_Sign4"
+      "script": "JohtoTwinriverCity_EventScript_Sign4"
     },
     {
       "type": "sign",
@@ -190,7 +190,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "TwinriverCity_EventScript_Sign5"
+      "script": "JohtoTwinriverCity_EventScript_Sign5"
     },
     {
       "type": "sign",
@@ -198,7 +198,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "TwinriverCity_EventScript_Sign6"
+      "script": "JohtoTwinriverCity_EventScript_Sign6"
     }
   ]
 }

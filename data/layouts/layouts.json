@@ -4412,14 +4412,14 @@
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
     },
     {
-      "id": "LAYOUT_TWINRIVER_CITY",
-      "name": "TwinriverCity_Layout",
+      "id": "LAYOUT_JOHTO_TWINRIVER_CITY",
+      "name": "JohtoTwinriverCity_Layout",
       "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontier",
-      "border_filepath": "data/layouts/TwinriverCity/border.bin",
-      "blockdata_filepath": "data/layouts/TwinriverCity/map.bin"
+      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "border_filepath": "data/layouts/JohtoTwinriverCity/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoTwinriverCity/map.bin"
     },
     {
       "id": "LAYOUT_EVENT_FIRST_DREAM",

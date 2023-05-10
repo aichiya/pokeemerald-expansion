@@ -1435,10 +1435,12 @@ void LoadWallyZigzagoon(void)
     SetMonData(&gPlayerParty[0], MON_DATA_ABILITY_NUM, &monData);
     monData = MOVE_HOLD_BACK;
     SetMonData(&gPlayerParty[0], MON_DATA_MOVE1, &monData);
-    monData = MOVE_NONE;
+    monData = MOVE_LIGHT_OF_RUIN;
     SetMonData(&gPlayerParty[0], MON_DATA_MOVE2, &monData);
-    SetMonData(&gPlayerParty[0], MON_DATA_MOVE3, &monData);
-    SetMonData(&gPlayerParty[0], MON_DATA_MOVE4, &monData);
+    monData = MOVE_PETAL_DANCE;
+	SetMonData(&gPlayerParty[0], MON_DATA_MOVE3, &monData);
+    monData = MOVE_CALM_MIND;
+	SetMonData(&gPlayerParty[0], MON_DATA_MOVE4, &monData);
 }
 
 bool8 IsStarterInParty(void)

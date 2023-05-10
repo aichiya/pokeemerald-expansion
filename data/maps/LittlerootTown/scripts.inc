@@ -434,6 +434,7 @@ LittlerootTown_EventScript_PlayersHouseSignFemale::
 
 LitterootTown_EventScript_CustomSign5::
 	lockall
+	deleteplayerparty
 	delay 30
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_NATIONAL_DEX
@@ -453,6 +454,7 @@ LitterootTown_EventScript_CustomSign5::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
+	setvar VAR_TEMP_1, 0
 	givemon SPECIES_CHARIZARD, 100, ITEM_CHARIZARDITE_Y
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
@@ -472,6 +474,7 @@ LitterootTown_EventScript_CustomSign5::
 
 LitterootTown_EventScript_CustomSign6::
 	lockall
+	deleteplayerparty
 	playbgm MUS_NONE, FALSE
 	delay 30
 	setflag FLAG_SYS_POKEMON_GET
@@ -492,6 +495,7 @@ LitterootTown_EventScript_CustomSign6::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
+	setvar VAR_TEMP_1, 0
 	givemon SPECIES_MEW, 70, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
@@ -513,6 +517,7 @@ LitterootTown_EventScript_CustomSign6::
 
 LitterootTown_EventScript_CustomSign7::
 	lockall
+	deleteplayerparty
 	playbgm MUS_NONE, FALSE
 	delay 30
 	setflag FLAG_SYS_POKEMON_GET
@@ -533,6 +538,7 @@ LitterootTown_EventScript_CustomSign7::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
+	setvar VAR_TEMP_1, 0
 	givemon SPECIES_MEW, 70, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
@@ -554,6 +560,7 @@ LitterootTown_EventScript_CustomSign7::
 
 LitterootTown_EventScript_CustomSign8::
 	lockall
+	deleteplayerparty
 	delay 30
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
@@ -573,6 +580,7 @@ LitterootTown_EventScript_CustomSign8::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
+	setvar VAR_TEMP_1, 0
 	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
@@ -594,6 +602,7 @@ LitterootTown_EventScript_CustomSign8::
 
 LitterootTown_EventScript_CustomSign9::
 	lockall
+	deleteplayerparty
 	delay 30
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
@@ -612,6 +621,7 @@ LitterootTown_EventScript_CustomSign9::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
+	setvar VAR_TEMP_1, 0
 	givemon SPECIES_NECROZMA_DUSK_MANE, 100, ITEM_SOLGANIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
@@ -626,6 +636,7 @@ LitterootTown_EventScript_CustomSign9::
 
 LitterootTown_EventScript_CustomSign10::
 	lockall
+	deleteplayerparty
 	delay 30
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
@@ -645,6 +656,7 @@ LitterootTown_EventScript_CustomSign10::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
+	setvar VAR_TEMP_1, 0
 	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
@@ -666,6 +678,7 @@ LitterootTown_EventScript_CustomSign10::
 
 LitterootTown_EventScript_CustomSign11::
 	lockall
+	deleteplayerparty
 	delay 30
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
@@ -685,6 +698,7 @@ LitterootTown_EventScript_CustomSign11::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
+	setvar VAR_TEMP_1, 0
 	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
@@ -706,6 +720,7 @@ LitterootTown_EventScript_CustomSign11::
 
 LitterootTown_EventScript_CustomSign12::
 	lockall
+	deleteplayerparty
 	delay 30
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
@@ -725,6 +740,7 @@ LitterootTown_EventScript_CustomSign12::
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
+	setvar VAR_TEMP_1, 0
 	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
@@ -746,6 +762,7 @@ LitterootTown_EventScript_CustomSign12::
 
 LitterootTown_EventScript_CustomSign13::
 	lockall
+	deleteplayerparty
 	warpsilent MAP_EVENT_FIRST_DREAM, 0x7f, 0x12, 0x1b
 	waitstate
 	releaseall

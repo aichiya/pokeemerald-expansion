@@ -22,26 +22,21 @@ EventBecomeChampion_EventScript_YouAreTheChampion::
 	fadescreenspeed 0x0, 0x18
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
-	setflag FLAG_SYS_POKENAV_GET
-	setvar VAR_LITTLEROOT_INTRO_STATE, 1
-	special LoadPlayerParty
-	special SavePlayerParty
+//	setvar VAR_LITTLEROOT_INTRO_STATE, 1
 	givemon SPECIES_CHIKORITA, 70, ITEM_NONE
 	givemon SPECIES_BAYLEEF, 70, ITEM_NONE
 	givemon SPECIES_CYNDAQUIL, 70, ITEM_NONE
 	givemon SPECIES_QUILAVA, 70, ITEM_NONE
 	givemon SPECIES_TOTODILE, 70, ITEM_NONE
 	givemon SPECIES_CROCONAW, 70, ITEM_NONE
-	special LoadPlayerParty
-	special SavePlayerParty
+	deleteplayerparty
 	givemon SPECIES_DRATINI, 70, ITEM_NONE
 	givemon SPECIES_DRAGONAIR, 70, ITEM_NONE
 	givemon SPECIES_LARVITAR, 70, ITEM_NONE
 	givemon SPECIES_PUPITAR, 70, ITEM_NONE
 	givemon SPECIES_TOGEPI, 70, ITEM_NONE
 	givemon SPECIES_TOGETIC, 70, ITEM_NONE
-	special LoadPlayerParty
-	special SavePlayerParty
+	deleteplayerparty
 	givemon SPECIES_MEGANIUM, 70, ITEM_NONE
 	setmonmetlocation 0, 255
 	setmonmove 0, 0, MOVE_AROMATHERAPY

@@ -117,15 +117,15 @@ voicegroup504::
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EA02C8, 255, 188, 206, 226 		@ 114 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E97814, 255, 204, 154, 204 		@ 115 | Direct |
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_pmd_pcm_1E8664C, 0, 0, 15, 0 	@ 116 | Wave |
-	voice_square_1_alt 60, 0, 0, 2, 0, 0, 15, 0 											@ 117 | Square-1 |
+	voice_square_1_alt 60, 0, 0, 2, 0, 0, 15, 0 											@ 117 | Unused
 	voice_keysplit voicegroup518, KeySplitTablePMD03 										@ 118 | Multi |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E97814, 29, 204, 154, 204 		@ 119 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EAAA1C, 255, 249, 25, 226 		@ 120 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EAAA1C, 255, 0, 255, 0 			@ 121 | Direct |
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 												@ 122 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 												@ 122 | Unused
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EACEDC, 255, 0, 255, 0 			@ 123 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EADC80, 255, 0, 255, 216 			@ 124 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EB0490, 255, 0, 255, 127 			@ 125 | Direct |
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 												@ 126 | Square-1 | --
-	voice_keysplit_all voicegroup506 														@ 127 | Drum |
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 												@ 126 | Unused
+	voice_keysplit_all voicegroup506 														@ 127 | Drum | PMD Drum 1
 

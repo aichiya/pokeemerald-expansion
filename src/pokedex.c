@@ -271,6 +271,8 @@ static void PrintMonWeight(u16 weight, u8 left, u8 top);
 static void ResetOtherVideoRegisters(u16);
 static u8 PrintCryScreenSpeciesName(u8, u16, u8, u8);
 static void PrintDecimalNum(u8 windowId, u16 num, u8 left, u8 top);
+static void PrintDecimalNumHeight(u8 windowId, u16 num, u8 left, u8 top);
+static void PrintDecimalNumWeight(u8 windowId, u16 num, u8 left, u8 top);
 static void DrawFootprint(u8 windowId, u16 dexNum);
 static u16 CreateSizeScreenTrainerPic(u16, s16, s16, s8);
 static u16 GetNextPosition(u8, u16, u16, u16);
@@ -4128,8 +4130,8 @@ static void PrintMonInfo(u32 num, u32 value, u32 owned, u32 newEntry)
     PrintInfoScreenText(gText_WTWeight, 0x60, 0x49);
     if (owned)
     {
-        PrintMonHeight(gPokedexEntries[num].height, 0x81, 0x39);
-        PrintMonWeight(gPokedexEntries[num].weight, 0x81, 0x49);
+    	PrintDecimalNumHeight(0, gPokedexEntries[num].height, 0x81, 0x39);
+    	PrintDecimalNumWeight(0, gPokedexEntries[num].weight, 0x81, 0x49);
     }
     else
     {
@@ -4524,6 +4526,87 @@ static void PrintDecimalNum(u8 windowId, u16 num, u8 left, u8 top)
     str[3] = CHAR_DEC_SEPARATOR;
     str[4] = CHAR_0 + ((num % 1000) % 100) % 10;
     str[5] = EOS;
+    PrintInfoSubMenuText(windowId, str, left, top);
+}
+
+static void PrintDecimalNumHeight(u8 windowId, u16 num, u8 left, u8 top)
+{
+    u8 str[6];
+    bool8 outputted = FALSE;
+    u8 result;
+
+    result = num / 1000;
+    if (result == 0)
+    {
+        str[0] = CHAR_SPACER;
+        outputted = FALSE;
+    }
+    else
+    {
+        str[0] = CHAR_0 + result;
+        outputted = TRUE;
+    }
+
+    result = (num % 1000) / 100;
+    if (result == 0 && !outputted)
+    {
+        str[1] = CHAR_SPACER;
+        outputted = FALSE;
+    }
+    else
+    {
+        str[1] = CHAR_0 + result;
+        outputted = TRUE;
+    }
+
+    str[2] = CHAR_0 + ((num % 1000) % 100) / 10;
+    str[3] = CHAR_DEC_SEPARATOR;
+    str[4] = CHAR_0 + ((num % 1000) % 100) % 10;
+    str[5] = CHAR_SPACER;
+    str[6] = CHAR_m;
+    str[7] = EOS;
+    PrintInfoSubMenuText(windowId, str, left, top);
+}
+
+static void PrintDecimalNumWeight(u8 windowId, u16 num, u8 left, u8 top)
+{
+    u8 str[6];
+    bool8 outputted = FALSE;
+    u8 result;
+
+    result = num / 1000;
+    if (result == 0)
+    {
+        str[0] = CHAR_SPACER;
+        outputted = FALSE;
+    }
+    else
+    {
+        str[0] = CHAR_0 + result;
+        outputted = TRUE;
+    }
+
+    result = (num % 1000) / 100;
+    if (result == 0 && !outputted)
+    {
+        str[1] = CHAR_SPACER;
+        outputted = FALSE;
+    }
+    else
+    {
+        str[1] = CHAR_0 + result;
+        outputted = TRUE;
+    }
+
+    str[2] = CHAR_0 + ((num % 1000) % 100) / 10;
+    str[3] = CHAR_DEC_SEPARATOR;
+    str[4] = CHAR_0 + ((num % 1000) % 100) % 10;
+    str[5] = CHAR_SPACER;
+    str[6] = CHAR_p;
+    str[7] = CHAR_t;
+    str[8] = CHAR_s;
+    str[9] = CHAR_PERIOD;
+    str[10] = EOS;
     PrintInfoSubMenuText(windowId, str, left, top);
 }
 

@@ -9,6 +9,7 @@
 #include "trig.h"
 #include "main.h"
 #include "intro.h"
+#include "title_screen.h"
 #include "m4a.h"
 #include "expansion_intro.h"
 #include "constants/rgb.h"
@@ -279,7 +280,7 @@ void Task_HandleExpansionIntro(u8 taskId)
             FreeAllSpritePalettes();
             DestroyTask(taskId);
             CreateTask(Task_Scene1_Load, 0);
-            SetMainCallback2(MainCB2_Intro);
+            SetMainCallback2(CB2_InitTitleScreen);
         }
         break;
     }

@@ -4414,8 +4414,8 @@
     {
       "id": "LAYOUT_JOHTO_TWINRIVER_CITY",
       "name": "JohtoTwinriverCity_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 72,
+      "height": 72,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/JohtoTwinriverCity/border.bin",
@@ -4440,6 +4440,1206 @@
       "secondary_tileset": "gTileset_CableClub",
       "border_filepath": "data/layouts/EventBecomeChampion/border.bin",
       "blockdata_filepath": "data/layouts/EventBecomeChampion/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_NEW_BARK_TOWN",
+      "name": "JohtoNewBarkTown_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoNewBarkTown/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoNewBarkTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_CHERRYGROVE_CITY",
+      "name": "JohtoCherrygroveCity_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoCherrygroveCity/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoCherrygroveCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_VIOLET_CITY",
+      "name": "JohtoVioletCity_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoVioletCity/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoVioletCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_AZALEA_TOWN",
+      "name": "JohtoAzaleaTown_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoAzaleaTown/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoAzaleaTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_GOLDENROD_CITY",
+      "name": "JohtoGoldenrodCity_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoGoldenrodCity/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoGoldenrodCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ECRUTEAK_CITY",
+      "name": "JohtoEcruteakCity_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoEcruteakCity/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoEcruteakCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_OLIVINE_CITY",
+      "name": "JohtoOlivineCity_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoOlivineCity/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoOlivineCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_CIANWOOD_CITY",
+      "name": "JohtoCianwoodCity_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoCianwoodCity/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoCianwoodCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_MAHOGANY_TOWN",
+      "name": "JohtoMahoganyTown_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoMahoganyTown/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoMahoganyTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_BLACKTHORN_CITY",
+      "name": "JohtoBlackthornCity_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoBlackthornCity/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoBlackthornCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_POKEMON_LEAGUE",
+      "name": "JohtoPokemonLeague_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoPokemonLeague/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoPokemonLeague/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_MT_SILVER",
+      "name": "JohtoMtSilver_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoMtSilver/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoMtSilver/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_LAKE_OF_RAGE",
+      "name": "JohtoLakeOfRage_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoLakeOfRage/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoLakeOfRage/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_NATIONAL_PARK",
+      "name": "JohtoNationalPark_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoNationalPark/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoNationalPark/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_SAFARI_ZONE_GATE",
+      "name": "JohtoSafariZoneGate_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoSafariZoneGate/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoSafariZoneGate/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE26",
+      "name": "JohtoRoute26_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute26/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute26/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE27",
+      "name": "JohtoRoute27_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute27/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute27/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE28",
+      "name": "JohtoRoute28_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute28/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute28/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE29",
+      "name": "JohtoRoute29_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute29/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute29/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE30",
+      "name": "JohtoRoute30_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute30/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute30/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE31",
+      "name": "JohtoRoute31_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute31/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute31/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE32",
+      "name": "JohtoRoute32_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute32/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute32/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE33",
+      "name": "JohtoRoute33_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute33/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute33/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE34",
+      "name": "JohtoRoute34_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute34/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute34/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE35",
+      "name": "JohtoRoute35_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute35/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute35/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE36",
+      "name": "JohtoRoute36_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute36/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute36/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE37",
+      "name": "JohtoRoute37_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute37/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute37/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE38",
+      "name": "JohtoRoute38_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute38/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute38/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE39",
+      "name": "JohtoRoute39_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute39/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute39/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE40",
+      "name": "JohtoRoute40_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute40/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute40/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE41",
+      "name": "JohtoRoute41_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute41/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute41/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE42",
+      "name": "JohtoRoute42_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute42/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute42/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE43",
+      "name": "JohtoRoute43_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute43/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute43/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE44",
+      "name": "JohtoRoute44_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute44/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute44/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE45",
+      "name": "JohtoRoute45_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute45/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute45/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE46",
+      "name": "JohtoRoute46_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute46/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute46/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE47",
+      "name": "JohtoRoute47_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute47/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute47/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE48",
+      "name": "JohtoRoute48_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JohtoRoute48/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute48/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_HAKUREI_SHRINE",
+      "name": "GensokyoHakureiShrine_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoHakureiShrine/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoHakureiShrine/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_HUMAN_VILLAGE",
+      "name": "GensokyoHumanVillage_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoHumanVillage/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoHumanVillage/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SCARLET_DEVIL_MANSION",
+      "name": "GensokyoScarletDevilMansion_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoScarletDevilMansion/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoScarletDevilMansion/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_KOURINDOU",
+      "name": "GensokyoKourindou_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoKourindou/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoKourindou/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_MUENZUKA",
+      "name": "GensokyoMuenzuka_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoMuenzuka/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoMuenzuka/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_EIENTEI",
+      "name": "GensokyoEientei_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoEientei/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoEientei/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_HAKUGYOKUROU",
+      "name": "GensokyoHakugyokurou_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoHakugyokurou/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoHakugyokurou/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_MAKAI",
+      "name": "GensokyoMakai_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoMakai/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoMakai/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_MUGENKAN",
+      "name": "GensokyoMugenkan_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoMugenkan/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoMugenkan/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_MORIYA_SHRINE",
+      "name": "GensokyoMoriyaShrine_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoMoriyaShrine/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoMoriyaShrine/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_CHIREIDEN",
+      "name": "GensokyoChireiden_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/GensokyoChireiden/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoChireiden/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_ROAD",
+      "name": "GensokyoYoukaiRoad_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoYoukaiRoad/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiRoad/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NORTHERN_ROAD1",
+      "name": "GensokyoNorthernRoad1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoNorthernRoad1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNorthernRoad1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NORTHERN_ROAD2",
+      "name": "GensokyoNorthernRoad2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoNorthernRoad2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNorthernRoad2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NORTHERN_ROAD3",
+      "name": "GensokyoNorthernRoad3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoNorthernRoad3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNorthernRoad3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NORTHERN_ROAD4",
+      "name": "GensokyoNorthernRoad4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoNorthernRoad4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNorthernRoad4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_ROAD_OF_RECONSIDERATION1",
+      "name": "GensokyoRoadOfReconsideration1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoRoadOfReconsideration1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoRoadOfReconsideration1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_ROAD_OF_RECONSIDERATION2",
+      "name": "GensokyoRoadOfReconsideration2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoRoadOfReconsideration2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoRoadOfReconsideration2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_ROAD_OF_RECONSIDERATION3",
+      "name": "GensokyoRoadOfReconsideration3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoRoadOfReconsideration3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoRoadOfReconsideration3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_WESTERN_ROAD1",
+      "name": "GensokyoWesternRoad1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoWesternRoad1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoWesternRoad1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_WESTERN_ROAD2",
+      "name": "GensokyoWesternRoad2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoWesternRoad2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoWesternRoad2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_MISTY_LAKE",
+      "name": "GensokyoMistyLake_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoMistyLake/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoMistyLake/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_MOUNTAIN_ROAD",
+      "name": "GensokyoMountainRoad_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoMountainRoad/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoMountainRoad/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN",
+      "name": "GensokyoYoukaiMountain_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountain/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountain/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST",
+      "name": "GensokyoBambooForest_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForest/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NAMELESS_HILL",
+      "name": "GensokyoNamelessHill_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoNamelessHill/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNamelessHill/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_GARDEN_OF_THE_SUN",
+      "name": "GensokyoGardenOfTheSun_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoGardenOfTheSun/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoGardenOfTheSun/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_ROAD_OF_LIMINALITY",
+      "name": "GensokyoRoadOfLiminality_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoRoadOfLiminality/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoRoadOfLiminality/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SANZU_RIVER",
+      "name": "GensokyoSanzuRiver_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoSanzuRiver/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoSanzuRiver/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_DREAM_WORLD",
+      "name": "GensokyoDreamWorld_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoDreamWorld/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoDreamWorld/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FANTASY_WORLD",
+      "name": "GensokyoFantasyWorld_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoFantasyWorld/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoFantasyWorld/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_PANDEMONIUM",
+      "name": "GensokyoPandemonium_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoPandemonium/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoPandemonium/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETC_SILK_ROAD1",
+      "name": "EtcSilkRoad1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/EtcSilkRoad1/border.bin",
+      "blockdata_filepath": "data/layouts/EtcSilkRoad1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ETC_SILK_ROAD2",
+      "name": "EtcSilkRoad2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/EtcSilkRoad2/border.bin",
+      "blockdata_filepath": "data/layouts/EtcSilkRoad2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC1",
+      "name": "GensokyoForestOfMagic1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoForestOfMagic1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoForestOfMagic1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC2",
+      "name": "GensokyoForestOfMagic2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoForestOfMagic2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoForestOfMagic2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC3",
+      "name": "GensokyoForestOfMagic3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoForestOfMagic3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoForestOfMagic3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC4",
+      "name": "GensokyoForestOfMagic4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoForestOfMagic4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoForestOfMagic4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_INNER1",
+      "name": "GensokyoYoukaiMountainInner1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainInner1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainInner1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_INNER2",
+      "name": "GensokyoYoukaiMountainInner2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainInner2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainInner2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_INNER3",
+      "name": "GensokyoYoukaiMountainInner3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainInner3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainInner3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_INNER4",
+      "name": "GensokyoYoukaiMountainInner4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainInner4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainInner4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FORMER_HELL1",
+      "name": "GensokyoFormerHell1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoFormerHell1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoFormerHell1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FORMER_HELL2",
+      "name": "GensokyoFormerHell2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoFormerHell2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoFormerHell2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FORMER_HELL3",
+      "name": "GensokyoFormerHell3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoFormerHell3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoFormerHell3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FORMER_HELL4",
+      "name": "GensokyoFormerHell4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoFormerHell4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoFormerHell4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FORMER_HELL5",
+      "name": "GensokyoFormerHell5_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoFormerHell5/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoFormerHell5/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FORMER_HELL6",
+      "name": "GensokyoFormerHell6_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoFormerHell6/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoFormerHell6/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FORMER_HELL7",
+      "name": "GensokyoFormerHell7_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoFormerHell7/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoFormerHell7/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FORMER_HELL8",
+      "name": "GensokyoFormerHell8_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoFormerHell8/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoFormerHell8/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BLAZING_HELL1",
+      "name": "GensokyoBlazingHell1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBlazingHell1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBlazingHell1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BLAZING_HELL2",
+      "name": "GensokyoBlazingHell2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBlazingHell2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBlazingHell2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BLAZING_HELL3",
+      "name": "GensokyoBlazingHell3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBlazingHell3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBlazingHell3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BLAZING_HELL4",
+      "name": "GensokyoBlazingHell4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBlazingHell4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBlazingHell4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BLAZING_HELL5",
+      "name": "GensokyoBlazingHell5_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBlazingHell5/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBlazingHell5/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BLAZING_HELL6",
+      "name": "GensokyoBlazingHell6_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBlazingHell6/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBlazingHell6/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BLAZING_HELL7",
+      "name": "GensokyoBlazingHell7_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBlazingHell7/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBlazingHell7/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SOUTHERN_ROAD1",
+      "name": "GensokyoSouthernRoad1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoSouthernRoad1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoSouthernRoad1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SOUTHERN_ROAD2",
+      "name": "GensokyoSouthernRoad2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoSouthernRoad2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoSouthernRoad2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SOUTHERN_ROAD3",
+      "name": "GensokyoSouthernRoad3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoSouthernRoad3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoSouthernRoad3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER1",
+      "name": "GensokyoBambooForestInner1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER2",
+      "name": "GensokyoBambooForestInner2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER3",
+      "name": "GensokyoBambooForestInner3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER4",
+      "name": "GensokyoBambooForestInner4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER5",
+      "name": "GensokyoBambooForestInner5_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner5/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner5/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER6",
+      "name": "GensokyoBambooForestInner6_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner6/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner6/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER7",
+      "name": "GensokyoBambooForestInner7_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner7/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner7/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER8",
+      "name": "GensokyoBambooForestInner8_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner8/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner8/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER9",
+      "name": "GensokyoBambooForestInner9_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner9/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner9/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER10",
+      "name": "GensokyoBambooForestInner10_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner10/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner10/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER11",
+      "name": "GensokyoBambooForestInner11_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner11/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner11/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER12",
+      "name": "GensokyoBambooForestInner12_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner12/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner12/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER13",
+      "name": "GensokyoBambooForestInner13_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner13/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner13/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER14",
+      "name": "GensokyoBambooForestInner14_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner14/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner14/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER15",
+      "name": "GensokyoBambooForestInner15_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner15/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner15/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER16",
+      "name": "GensokyoBambooForestInner16_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner16/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner16/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER17",
+      "name": "GensokyoBambooForestInner17_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner17/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner17/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER18",
+      "name": "GensokyoBambooForestInner18_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner18/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner18/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER19",
+      "name": "GensokyoBambooForestInner19_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner19/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner19/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER20",
+      "name": "GensokyoBambooForestInner20_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner20/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner20/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER21",
+      "name": "GensokyoBambooForestInner21_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner21/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner21/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_INNER22",
+      "name": "GensokyoBambooForestInner22_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GensokyoBambooForestInner22/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestInner22/map.bin"
     }
   ]
 }

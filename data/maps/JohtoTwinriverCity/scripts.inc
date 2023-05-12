@@ -91,8 +91,8 @@ JohtoTwinriverCity_EventScript_Sign3::
 	end
 
 JohtoTwinriverCity_Text_Sign3TrainerTestIntro:
-	.string "The destroyer of the world.\n"
-	.string "What are his eyes saw?$"
+	.string "The destroyer of the worlds.\n"
+	.string "What was his eyes saw?$"
 
 LitterootTown_Text_Sign3TrainerTestDefeat:
 	.string "Whoah, wow! You made a much bigger\n"

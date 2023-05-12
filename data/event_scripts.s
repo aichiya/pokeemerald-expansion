@@ -1065,3 +1065,243 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/EventFirstDream/scripts.inc"
 
 	.include "data/maps/EventBecomeChampion/scripts.inc"
+
+	.include "data/maps/JohtoNewBarkTown/scripts.inc"
+
+	.include "data/maps/JohtoCherrygroveCity/scripts.inc"
+
+	.include "data/maps/JohtoVioletCity/scripts.inc"
+
+	.include "data/maps/JohtoAzaleaTown/scripts.inc"
+
+	.include "data/maps/JohtoGoldenrodCity/scripts.inc"
+
+	.include "data/maps/JohtoEcruteakCity/scripts.inc"
+
+	.include "data/maps/JohtoOlivineCity/scripts.inc"
+
+	.include "data/maps/JohtoCianwoodCity/scripts.inc"
+
+	.include "data/maps/JohtoMahoganyTown/scripts.inc"
+
+	.include "data/maps/JohtoBlackthornCity/scripts.inc"
+
+	.include "data/maps/JohtoPokemonLeague/scripts.inc"
+
+	.include "data/maps/JohtoMtSilver/scripts.inc"
+
+	.include "data/maps/JohtoLakeOfRage/scripts.inc"
+
+	.include "data/maps/JohtoNationalPark/scripts.inc"
+
+	.include "data/maps/JohtoSafariZoneGate/scripts.inc"
+
+	.include "data/maps/JohtoRoute26/scripts.inc"
+
+	.include "data/maps/JohtoRoute27/scripts.inc"
+
+	.include "data/maps/JohtoRoute28/scripts.inc"
+
+	.include "data/maps/JohtoRoute29/scripts.inc"
+
+	.include "data/maps/JohtoRoute30/scripts.inc"
+
+	.include "data/maps/JohtoRoute31/scripts.inc"
+
+	.include "data/maps/JohtoRoute32/scripts.inc"
+
+	.include "data/maps/JohtoRoute33/scripts.inc"
+
+	.include "data/maps/JohtoRoute34/scripts.inc"
+
+	.include "data/maps/JohtoRoute35/scripts.inc"
+
+	.include "data/maps/JohtoRoute36/scripts.inc"
+
+	.include "data/maps/JohtoRoute37/scripts.inc"
+
+	.include "data/maps/JohtoRoute38/scripts.inc"
+
+	.include "data/maps/JohtoRoute39/scripts.inc"
+
+	.include "data/maps/JohtoRoute40/scripts.inc"
+
+	.include "data/maps/JohtoRoute41/scripts.inc"
+
+	.include "data/maps/JohtoRoute42/scripts.inc"
+
+	.include "data/maps/JohtoRoute43/scripts.inc"
+
+	.include "data/maps/JohtoRoute44/scripts.inc"
+
+	.include "data/maps/JohtoRoute45/scripts.inc"
+
+	.include "data/maps/JohtoRoute46/scripts.inc"
+
+	.include "data/maps/JohtoRoute47/scripts.inc"
+
+	.include "data/maps/JohtoRoute48/scripts.inc"
+
+	.include "data/maps/GensokyoHakureiShrine/scripts.inc"
+
+	.include "data/maps/GensokyoHumanVillage/scripts.inc"
+
+	.include "data/maps/GensokyoScarletDevilMansion/scripts.inc"
+
+	.include "data/maps/GensokyoKourindou/scripts.inc"
+
+	.include "data/maps/GensokyoMuenzuka/scripts.inc"
+
+	.include "data/maps/GensokyoEientei/scripts.inc"
+
+	.include "data/maps/GensokyoHakugyokurou/scripts.inc"
+
+	.include "data/maps/GensokyoMakai/scripts.inc"
+
+	.include "data/maps/GensokyoMugenkan/scripts.inc"
+
+	.include "data/maps/GensokyoMoriyaShrine/scripts.inc"
+
+	.include "data/maps/GensokyoChireiden/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiRoad/scripts.inc"
+
+	.include "data/maps/GensokyoNorthernRoad1/scripts.inc"
+
+	.include "data/maps/GensokyoNorthernRoad2/scripts.inc"
+
+	.include "data/maps/GensokyoNorthernRoad3/scripts.inc"
+
+	.include "data/maps/GensokyoNorthernRoad4/scripts.inc"
+
+	.include "data/maps/GensokyoRoadOfReconsideration1/scripts.inc"
+
+	.include "data/maps/GensokyoRoadOfReconsideration2/scripts.inc"
+
+	.include "data/maps/GensokyoRoadOfReconsideration3/scripts.inc"
+
+	.include "data/maps/GensokyoWesternRoad1/scripts.inc"
+
+	.include "data/maps/GensokyoWesternRoad2/scripts.inc"
+
+	.include "data/maps/GensokyoMistyLake/scripts.inc"
+
+	.include "data/maps/GensokyoMountainRoad/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountain/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForest/scripts.inc"
+
+	.include "data/maps/GensokyoNamelessHill/scripts.inc"
+
+	.include "data/maps/GensokyoGardenOfTheSun/scripts.inc"
+
+	.include "data/maps/GensokyoRoadOfLiminality/scripts.inc"
+
+	.include "data/maps/GensokyoSanzuRiver/scripts.inc"
+
+	.include "data/maps/GensokyoDreamWorld/scripts.inc"
+
+	.include "data/maps/GensokyoFantasyWorld/scripts.inc"
+
+	.include "data/maps/GensokyoPandemonium/scripts.inc"
+
+	.include "data/maps/EtcSilkRoad1/scripts.inc"
+
+	.include "data/maps/EtcSilkRoad2/scripts.inc"
+
+	.include "data/maps/GensokyoForestOfMagic1/scripts.inc"
+
+	.include "data/maps/GensokyoForestOfMagic2/scripts.inc"
+
+	.include "data/maps/GensokyoForestOfMagic3/scripts.inc"
+
+	.include "data/maps/GensokyoForestOfMagic4/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainInner1/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainInner2/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainInner3/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainInner4/scripts.inc"
+
+	.include "data/maps/GensokyoFormerHell1/scripts.inc"
+
+	.include "data/maps/GensokyoFormerHell2/scripts.inc"
+
+	.include "data/maps/GensokyoFormerHell3/scripts.inc"
+
+	.include "data/maps/GensokyoFormerHell4/scripts.inc"
+
+	.include "data/maps/GensokyoFormerHell5/scripts.inc"
+
+	.include "data/maps/GensokyoFormerHell6/scripts.inc"
+
+	.include "data/maps/GensokyoFormerHell7/scripts.inc"
+
+	.include "data/maps/GensokyoFormerHell8/scripts.inc"
+
+	.include "data/maps/GensokyoBlazingHell1/scripts.inc"
+
+	.include "data/maps/GensokyoBlazingHell2/scripts.inc"
+
+	.include "data/maps/GensokyoBlazingHell3/scripts.inc"
+
+	.include "data/maps/GensokyoBlazingHell4/scripts.inc"
+
+	.include "data/maps/GensokyoBlazingHell5/scripts.inc"
+
+	.include "data/maps/GensokyoBlazingHell6/scripts.inc"
+
+	.include "data/maps/GensokyoBlazingHell7/scripts.inc"
+
+	.include "data/maps/GensokyoSouthernRoad1/scripts.inc"
+
+	.include "data/maps/GensokyoSouthernRoad2/scripts.inc"
+
+	.include "data/maps/GensokyoSouthernRoad3/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner1/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner2/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner3/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner4/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner5/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner6/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner7/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner8/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner9/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner10/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner11/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner12/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner13/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner14/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner15/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner16/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner17/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner18/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner19/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner20/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner21/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestInner22/scripts.inc"

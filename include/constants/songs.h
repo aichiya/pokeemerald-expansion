@@ -1288,7 +1288,9 @@
 #define MUS_DGMN_STORY2_VS_FINAL_BOSS 1321
 #define MUS_DGMN_STORY2_VS_MULTIPLAYER 1322
 
-#define END_MUS 					MUS_DGMN_STORY2_VS_MULTIPLAYER
+#define MUS_PC_ALLHENSHIN 1323
+
+#define END_MUS 					MUS_PC_ALLHENSHIN
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

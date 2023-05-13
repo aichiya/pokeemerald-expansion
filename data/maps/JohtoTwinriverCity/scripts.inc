@@ -86,7 +86,7 @@ JohtoTwinriverCity_EventScript_Sign3::
 	setmonmove 1, 2, MOVE_EXTREME_SPEED
 	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
-	trainerbattle_single TRAINER_TEST_3, JohtoTwinriverCity_Text_Sign3TrainerTestIntro, LitterootTown_Text_Sign3TrainerTestDefeat, JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated, NO_MUSIC
+	trainerbattle_single TRAINER_TEST_3, JohtoTwinriverCity_Text_Sign3TrainerTestIntro, JohtoTwinriverCity_Text_Sign3TrainerTestDefeat, JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated, NO_MUSIC
 	releaseall
 	end
 
@@ -94,7 +94,7 @@ JohtoTwinriverCity_Text_Sign3TrainerTestIntro:
 	.string "The destroyer of the worlds.\n"
 	.string "What was his eyes saw?$"
 
-LitterootTown_Text_Sign3TrainerTestDefeat:
+JohtoTwinriverCity_Text_Sign3TrainerTestDefeat:
 	.string "Whoah, wow! You made a much bigger\n"
 	.string "splash than I expected!\p"
 	.string "Okay, you've got me.$"
@@ -104,6 +104,43 @@ JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated::
 	end
 
 JohtoTwinriverCity_EventScript_Sign4::
+	lockall
+	deleteplayerparty
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	setflag FLAG_SYS_POKEDEX_GET
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	delay 30
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_MASTER_BALL, 10
+	setvar VAR_TEMP_1, 0
+	givemon SPECIES_CHARIZARD, 100, ITEM_CHARIZARDITE_Y
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_FLAMETHROWER
+	setmonmove 0, 1, MOVE_DYNAMAX_CANNON
+	setmonmove 0, 2, MOVE_SURGING_STRIKES
+	setmonmove 0, 3, MOVE_VICTORY_DANCE
+	delay 30
+	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
+	waitmoncry
+	seteventmon SPECIES_NECROZMA_ULTRA, 70, ITEM_ULTRANECROZIUM_Z
+	special BattleSetup_StartLegendaryBattle
+	playbgm MUS_PC_ALLHENSHIN, FALSE
+	waitstate
+	releaseall
 	end
 
 JohtoTwinriverCity_EventScript_Sign5::

@@ -2,7 +2,7 @@
   "id": "MAP_JOHTO_TWINRIVER_CITY",
   "name": "JohtoTwinriverCity",
   "layout": "LAYOUT_JOHTO_TWINRIVER_CITY",
-  "music": "MUS_HG_END",
+  "music": "MUS_PKMN_PMDRED_001",
   "region_map_section": "MAPSEC_PALLET_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_FOG_DIAGONAL",

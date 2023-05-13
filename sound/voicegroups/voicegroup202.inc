@@ -1,130 +1,130 @@
 	.align 2
 voicegroup202::
-    voice_keysplit voicegroup274, KeySplitTableGS6                                @ 000 | Direct | GS Acoustic Grand
-    voice_keysplit voicegroup274, KeySplitTableGS7                                @ 001 | Direct | GS Bright Accoustic
-    voice_keysplit voicegroup274, KeySplitTableGS8                                @ 002 | Direct | GS Electric Grand
-    voice_keysplit voicegroup275, KeySplitTableGS9                                @ 003 | Direct | GS Honky-Tonk
-    voice_keysplit voicegroup276, KeySplitTableGS10                               @ 004 | Direct | GS Electric Piano 1
-    voice_keysplit voicegroup277, KeySplitTableGS11                               @ 005 | Direct | GS Electric Piano 2
-    voice_keysplit voicegroup278, KeySplitTableGS12                               @ 006 | Direct | GS Harpsichord
-    voice_keysplit voicegroup279, KeySplitTableGS13                               @ 007 | Direct | GS Clav
-    voice_keysplit voicegroup280, KeySplitTableGS14                               @ 008 | Direct | GS Celesta
-    voice_keysplit voicegroup281, KeySplitTableGS15                               @ 009 | Direct | GS Glockenspiel
-    voice_keysplit voicegroup282, KeySplitTableGS16                               @ 010 | Direct | GS Music Box
-    voice_keysplit voicegroup283, KeySplitTableGS17                               @ 011 | Direct | GS Vibraphone
-    voice_keysplit voicegroup284, KeySplitTableGS18                               @ 012 | Direct | GS Marimba
-    voice_keysplit voicegroup285, KeySplitTableGS19                               @ 013 | Direct | GS Xylophone
-    voice_keysplit voicegroup286, KeySplitTableGS20                               @ 014 | Direct | GS Tabular Bell
-    voice_keysplit voicegroup287, KeySplitTableGS21                               @ 015 | Direct | GS Dulcimer
-    voice_keysplit voicegroup288, KeySplitTableGS22                               @ 016 | Direct | GS Drawbar Organ
-    voice_keysplit voicegroup289, KeySplitTableGS23                               @ 017 | Direct | GS Percussive Organ
-    voice_keysplit voicegroup290, KeySplitTableGS24                               @ 018 | Direct | GS Rock Organ
-    voice_keysplit voicegroup291, KeySplitTableGS25                               @ 019 | Direct | GS Church Organ
-    voice_keysplit voicegroup292, KeySplitTableGS26                               @ 020 | Direct | GS Reed Organ
-    voice_keysplit voicegroup293, KeySplitTableGS27                               @ 021 | Direct | GS Accordian
-    voice_keysplit voicegroup294, KeySplitTableGS28                               @ 022 | Direct | GS Harmonica
-    voice_keysplit voicegroup295, KeySplitTableGS29                               @ 023 | Direct | GS Tango Accodion
-    voice_keysplit voicegroup296, KeySplitTableGS30                               @ 024 | Direct | GS Acoustic Guitar Nylon
-    voice_keysplit voicegroup297, KeySplitTableGS31                               @ 025 | Direct | GS Acoustic Guitar Steel
-    voice_keysplit voicegroup298, KeySplitTableGS32                               @ 026 | Direct | GS Electric Guitar Jazz
-    voice_keysplit voicegroup299, KeySplitTableGS33                               @ 027 | Direct | GS Electric Guitar Clean
-    voice_keysplit voicegroup300, KeySplitTableGS34                               @ 028 | Direct | GS Electric Guitar Muted
-    voice_keysplit voicegroup301, KeySplitTableGS35                               @ 029 | Direct | GS Overdriven Guitar
-    voice_keysplit voicegroup302, KeySplitTableGS36                               @ 030 | Direct | GS Distortion Guitar
-    voice_keysplit voicegroup303, KeySplitTableGS37                               @ 031 | Direct | GS Guitar Harmonics
-    voice_keysplit voicegroup304, KeySplitTableGS38                               @ 032 | Direct | GS Acoustic Bass
-    voice_keysplit voicegroup305, KeySplitTableGS39                               @ 033 | Direct | GS Electric Bass Finger
-    voice_keysplit voicegroup306, KeySplitTableGS40                               @ 034 | Direct | GS Electric Bass Pick
-    voice_keysplit voicegroup307, KeySplitTableGS41                               @ 035 | Direct | GS Fretless Bass
-    voice_keysplit voicegroup308, KeySplitTableGS42                               @ 036 | Direct | GS Slap Bass 1
-    voice_keysplit voicegroup309, KeySplitTableGS43                               @ 037 | Direct | GS Slap Bass 2
-    voice_keysplit voicegroup310, KeySplitTableGS44                               @ 038 | Direct | GS Synth Bass 1
-    voice_keysplit voicegroup311, KeySplitTableGS45                               @ 039 | Direct | GS Synth Bass 2
-    voice_keysplit voicegroup312, KeySplitTableGS46                               @ 040 | Direct | GS Violin
-    voice_keysplit voicegroup312, KeySplitTableGS47                               @ 041 | Direct | GS Viola
-    voice_keysplit voicegroup313, KeySplitTableGS48                               @ 042 | Direct | GS Cello
-    voice_keysplit voicegroup314, KeySplitTableGS49                               @ 043 | Direct | GS Contrabass
-    voice_keysplit voicegroup315, KeySplitTableGS50                               @ 044 | Direct | GS Tremolo Strings
-    voice_keysplit voicegroup316, KeySplitTableGS51                               @ 045 | Direct | GS Pizzicato Strings
-    voice_keysplit voicegroup317, KeySplitTableGS52                               @ 046 | Direct | GS Orchestral Strings
-    voice_keysplit voicegroup318, KeySplitTableGS53                               @ 047 | Direct | GS Timpani
-    voice_keysplit voicegroup319, KeySplitTableGS54                               @ 048 | Direct | GS String Ensemble 1
-    voice_keysplit voicegroup319, KeySplitTableGS54                               @ 049 | Direct | GS String Ensemble 2
-    voice_keysplit voicegroup320, KeySplitTableGS55                               @ 050 | Direct | GS Synth String 1
-    voice_keysplit voicegroup320, KeySplitTableGS56                               @ 051 | Direct | GS Synth String 2
-    voice_keysplit voicegroup321, KeySplitTableGS57                               @ 052 | Direct | GS Choir Aahs
-    voice_keysplit voicegroup322, KeySplitTableGS58                               @ 053 | Direct | GS Voice Oohs
-    voice_keysplit voicegroup323, KeySplitTableGS59                               @ 054 | Direct | GS Synth Voice
-    voice_directsound 60, 0, DirectSoundWaveData_O_HIT68, 255, 0, 255, 127        @ 055 | Direct | GS Orchestra Hit
-    voice_keysplit voicegroup324, KeySplitTableGS60                               @ 056 | Direct | GS Trumpet
-    voice_keysplit voicegroup325, KeySplitTableGS61                               @ 057 | Direct | GS Trombone
-    voice_keysplit voicegroup326, KeySplitTableGS62                               @ 058 | Direct | GS Tuba
-    voice_keysplit voicegroup327, KeySplitTableGS63                               @ 059 | Direct | GS Muted Trumpet
-    voice_keysplit voicegroup328, KeySplitTableGS64                               @ 060 | Direct | GS French Horn
-    voice_keysplit voicegroup329, KeySplitTableGS65                               @ 061 | Direct | GS Brass Section
-    voice_keysplit voicegroup330, KeySplitTableGS66                               @ 062 | Direct | GS Synth Brass 1
-    voice_keysplit voicegroup331, KeySplitTableGS67                               @ 063 | Direct | GS Synth Brass 2
-    voice_keysplit voicegroup332, KeySplitTableGS68                               @ 064 | Direct | GS Soprano Sax
-    voice_keysplit voicegroup333, KeySplitTableGS69                               @ 065 | Direct | GS Alto Sax
-    voice_keysplit voicegroup334, KeySplitTableGS70                               @ 066 | Direct | GS Tenor Sax
-    voice_keysplit voicegroup335, KeySplitTableGS71                               @ 067 | Direct | GS Baritone Sax
-    voice_keysplit voicegroup336, KeySplitTableGS72                               @ 068 | Direct | GS Oboe
-    voice_keysplit voicegroup337, KeySplitTableGS73                               @ 069 | Direct | GS English Horn
-    voice_keysplit voicegroup338, KeySplitTableGS74                               @ 070 | Direct | GS Bassoon
-    voice_keysplit voicegroup339, KeySplitTableGS75                               @ 071 | Direct | GS Clarinet
-    voice_keysplit voicegroup340, KeySplitTableGS76                               @ 072 | Direct | GS Piccolo
-    voice_keysplit voicegroup341, KeySplitTableGS77                               @ 073 | Direct | GS Flute
-    voice_keysplit voicegroup342, KeySplitTableGS78                               @ 074 | Direct | GS Recorder
-    voice_keysplit voicegroup343, KeySplitTableGS79                               @ 075 | Direct | GS Pan Flute
-    voice_keysplit voicegroup344, KeySplitTableGS80                               @ 076 | Direct | GS Blown Bottle
-    voice_keysplit voicegroup345, KeySplitTableGS81                               @ 077 | Direct | GS Skakuhachi
-    voice_keysplit voicegroup346, KeySplitTableGS82                               @ 078 | Direct | GS Whistle
-    voice_keysplit voicegroup347, KeySplitTableGS83                               @ 079 | Direct | GS Oracina
-    voice_keysplit voicegroup348, KeySplitTableGS84                               @ 080 | Direct | GS Lead 1 Square
-    voice_keysplit voicegroup349, KeySplitTableGS85                               @ 081 | Direct | GS Lead 2 Sawtooth
-    voice_keysplit voicegroup350, KeySplitTableGS86                               @ 082 | Direct | GS Lead 3 Calliope
-    voice_keysplit voicegroup351, KeySplitTableGS87                               @ 083 | Direct | GS Lead 4 Chiff
-    voice_keysplit voicegroup352, KeySplitTableGS88                               @ 084 | Direct | GS Lead 5 Charang
-    voice_keysplit voicegroup353, KeySplitTableGS89                               @ 085 | Direct | GS Lead 6 Voice
-    voice_keysplit voicegroup354, KeySplitTableGS90                               @ 086 | Direct | GS Lead 7 Fifths
-    voice_keysplit voicegroup355, KeySplitTableGS91                               @ 087 | Direct | GS Lead 8 Bass
-    voice_keysplit voicegroup356, KeySplitTableGS92                               @ 088 | Direct | GS Pad 1 New Age
-    voice_keysplit voicegroup357, KeySplitTableGS93                               @ 089 | Direct | GS Pad 2 Warm
-    voice_keysplit voicegroup358, KeySplitTableGS94                               @ 090 | Direct | GS Pad 3 Polysynth
-    voice_keysplit voicegroup359, KeySplitTableGS95                               @ 091 | Direct | GS Pad 4 Choir
-    voice_keysplit voicegroup360, KeySplitTableGS96                               @ 092 | Direct | GS Pad 5 Bowed
-    voice_keysplit voicegroup361, KeySplitTableGS97                               @ 093 | Direct | GS Pad 6 Metallic
-    voice_keysplit voicegroup362, KeySplitTableGS98                               @ 094 | Direct | GS Pad 7 Halo
-    voice_keysplit voicegroup363, KeySplitTableGS99                               @ 095 | Direct | GS Pad 8 Sweep
-    voice_keysplit voicegroup364, KeySplitTableGS100                              @ 096 | Direct | GS FX 1 Rain
-    voice_keysplit voicegroup365, KeySplitTableGS101                              @ 097 | Direct | GS FX 2 Soundtrack
-    voice_keysplit voicegroup366, KeySplitTableGS102                              @ 098 | Direct | GS FX 3 Crystal
-    voice_keysplit voicegroup367, KeySplitTableGS103                              @ 099 | Direct | GS FX 4 Atmosphere
-    voice_keysplit voicegroup368, KeySplitTableGS104                              @ 100 | Direct | GS FX 5 Brightness
-    voice_directsound 60, 0, DirectSoundWaveData_GOBLN84A, 255, 0, 255, 127       @ 101 | Direct | GS FX 6 Goblins
-    voice_keysplit voicegroup369, KeySplitTableGS105                              @ 102 | Direct | GS FX 7 Echoes
-    voice_keysplit voicegroup370, KeySplitTableGS106                              @ 103 | Direct | GS FX 8 Sci-fi
-    voice_keysplit voicegroup371, KeySplitTableGS107                              @ 104 | Direct | GS Sitar
-    voice_keysplit voicegroup372, KeySplitTableGS110                              @ 105 | Direct | GS Banjo
-    voice_keysplit voicegroup373, KeySplitTableGS108                              @ 106 | Direct | GS Shamisen
-    voice_keysplit voicegroup374, KeySplitTableGS109                              @ 107 | Direct | GS Koto
-    voice_keysplit voicegroup375, KeySplitTableGS111                              @ 108 | Direct | GS Kalimba
-    voice_keysplit voicegroup376, KeySplitTableGS112                              @ 109 | Direct | GS Bagpipe
-    voice_keysplit voicegroup377, KeySplitTableGS113                              @ 110 | Direct | GS Fiddle
-    voice_keysplit voicegroup378, KeySplitTableGS114                              @ 111 | Direct | GS Shanai
-    voice_keysplit voicegroup379, KeySplitTableGS115                              @ 112 | Direct | GS Tinkle Bell
-    voice_directsound 60, 0, DirectSoundWaveData_AGOGO60, 255, 0, 255, 127        @ 113 | Direct | GS Agogo
-    voice_keysplit voicegroup380, KeySplitTableGS116                              @ 114 | Direct | GS Steel Drums Part
-    voice_directsound 60, 0, DirectSoundWaveData_WODBK60, 255, 0, 255, 127        @ 115 | Direct | GS Woodblock
-    voice_directsound 60, 0, DirectSoundWaveData_SURDO60, 255, 0, 255, 127        @ 116 | Direct | GS Taiko Drum Part
-    voice_directsound 60, 0, DirectSoundWaveData_TOM__60, 255, 0, 255, 127        @ 117 | Direct | GS Melodic Tom Part
-    voice_directsound 60, 0, DirectSoundWaveData_SYNDR56, 255, 0, 255, 127        @ 118 | Direct | GS Synth Drum Part
-    voice_directsound 60, 0, DirectSoundWaveData_CRASH60B, 255, 0, 255, 127       @ 119 | Direct | GS Reverse Cymbal
-    voice_directsound 60, 0, DirectSoundWaveData_GFRET69, 255, 0, 255, 127        @ 120 | Direct | GS Guitar Fret Noise
-    voice_keysplit voicegroup381, KeySplitTableGS117                              @ 121 | Direct | GS Breath Noise
-    voice_directsound 60, 0, DirectSoundWaveData_SEA__60, 255, 0, 255, 127        @ 122 | Direct | GS Seashore
-    voice_directsound 60, 0, DirectSoundWaveData_BIRD_60, 255, 0, 255, 127        @ 123 | Direct | GS Bird Tweet
-    voice_directsound 60, 0, DirectSoundWaveData_TELE_60, 255, 0, 255, 127        @ 124 | Direct | GS Telephone Ring 1
-    voice_directsound 60, 0, DirectSoundWaveData_TELE260, 255, 0, 255, 127        @ 125 | Direct | GS Telephone Ring 2
-    voice_directsound 60, 0, DirectSoundWaveData_APPLS64A, 255, 0, 255, 127       @ 126 | Direct | GS Applause
-    voice_directsound 60, 0, DirectSoundWaveData_PISTL60, 255, 0, 255, 127        @ 127 | Direct | GS Gunshot
+	voice_keysplit voicegroup233, KeySplitTable35                                                             @ 0 | Direct | HGSS piano
+	voice_keysplit voicegroup234, KeySplitTable36                                                             @ 1 | Direct | HGSS piano 2
+	voice_keysplit voicegroup235, KeySplitTable37                                                             @ 2 | Direct | HGSS piano octave
+	voice_keysplit voicegroup236, KeySplitTable9                                                              @ 3 | Direct | HGSSrhodes 1
+	voice_keysplit voicegroup237, KeySplitTable9                                                              @ 4 | Direct | HGSS rhodes 2
+	voice_keysplit voicegroup238, KeySplitTable36                                                             @ 5 | Direct | HGSS vibraphone
+	voice_keysplit voicegroup239, KeySplitTable38                                                             @ 6 | Direct | HGSS marimba
+	voice_keysplit voicegroup240, KeySplitTable39                                                             @ 7 | Direct | HGSS xylophone
+	voice_keysplit voicegroup241, KeySplitTable25                                                             @ 8 | Direct | HGSS tubular bell
+	voice_keysplit voicegroup242, KeySplitTable36                                                             @ 9 | Direct | HGSS glockenspiel
+	voice_keysplit voicegroup243, KeySplitTable38                                                             @ 10 | Direct | HGSS music box
+	voice_keysplit voicegroup244, KeySplitTable40                                                             @ 11 | Direct | HGSS drawbar organ
+	voice_keysplit voicegroup245, KeySplitTable40                                                             @ 12 | Direct | HGSS jazz organ
+	voice_keysplit voicegroup246, KeySplitTable40                                                             @ 13 | Direct | HGSS accordion
+	voice_keysplit voicegroup247, KeySplitTable41                                                             @ 14 | Direct | HGSS nylon guitar
+	voice_keysplit voicegroup248, KeySplitTable41                                                             @ 15 | Direct | HGSS martin guitar
+	voice_keysplit voicegroup249, KeySplitTable32                                                             @ 16 | Direct | HGSS distortion guitar 1
+	voice_keysplit voicegroup250, KeySplitTable32                                                             @ 17 | Direct | HGSS distortion guitar 2
+	voice_keysplit voicegroup251, KeySplitTable41                                                             @ 18 | Direct | HGSS clean guitar
+	voice_keysplit voicegroup252, KeySplitTable42                                                             @ 19 | Direct | HGSS upright bass
+	voice_keysplit voicegroup253, KeySplitTable43                                                             @ 20 | Direct | HGSS fingered bass
+	voice_directsound 60, 0, DirectSoundWaveData_dp_slapbass_c1_16, 255, 0, 255, 192                          @ 21 | Direct | HGSS slap bass
+	voice_keysplit voicegroup254, KeySplitTable44                                                             @ 22 | Direct | HGSS synth bass
+	voice_keysplit voicegroup255, KeySplitTable45                                                             @ 23 | Direct | HGSS strings
+	voice_keysplit voicegroup256, KeySplitTable46                                                             @ 24 | Direct | HGSS violin
+	voice_keysplit voicegroup257, KeySplitTable47                                                             @ 25 | Direct | HGSS cello
+	voice_keysplit voicegroup258, KeySplitTable48                                                             @ 26 | Direct | HGSS pizzicato
+	voice_keysplit voicegroup259, KeySplitTable40                                                             @ 27 | Direct | HGSS harp
+	voice_keysplit voicegroup260, KeySplitTable40                                                             @ 28 | Direct | HGSS timpani
+	voice_keysplit voicegroup261, KeySplitTable39                                                             @ 29 | Direct | HGSS trumpets
+	voice_keysplit voicegroup262, KeySplitTable47                                                             @ 30 | Direct | HGSS trombones
+	voice_keysplit voicegroup263, KeySplitTable49                                                             @ 31 | Direct | HGSS french horn solo
+	voice_keysplit voicegroup264, KeySplitTable50                                                             @ 32 | Direct | HGSS french horns
+	voice_keysplit voicegroup265, KeySplitTable51                                                             @ 33 | Direct | HGSS oboe
+	voice_keysplit voicegroup266, KeySplitTable52                                                             @ 34 | Direct | HGSS clarinet
+	voice_keysplit voicegroup267, KeySplitTable53                                                             @ 35 | Direct | HGSS flute
+	voice_keysplit voicegroup268, KeySplitTable54                                                             @ 36 | Direct | HGSS bassoon
+	voice_keysplit voicegroup269, KeySplitTable55                                                             @ 37 | Direct | HGSS orchestra hit
+	voice_keysplit voicegroup270, KeySplitTable38                                                             @ 38 | Direct | HGSS square wave
+	voice_keysplit_all voicegroup230				                                                          @ 39 | Drum | HGSS drums
+	voice_keysplit_all voicegroup231				                                                          @ 40 | Drum | HGSS taiko drums
+	voice_directsound 60, 0, DirectSoundWaveData_dp_woodbass_d3_16, 255, 251, 0, 171                          @ 41 | Direct | HGSS wood bass
+	voice_keysplit voicegroup271, KeySplitTable56                                                             @ 42 | Direct | HGSS koto
+	voice_directsound 60, 0, DirectSoundWaveData_puresquare_50, 255, 242, 40, 211                             @ 43 | Direct | HGSS samples square
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_wind, 67, 243, 155, 224                              @ 44 | Direct | HGSS wind effect
+	voice_directsound 60, 0, DirectSoundWaveData_dp_explosion, 67, 255, 0, 245                                @ 45 | Direct | HGSS explossion effect
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 250, 0, 171                        @ 46 | Direct | HGSS sampled square 1 | 1 octave too low
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_bubbles, 255, 0, 255, 0                              @ 47 | Direct | HGSS bubble effect
+	voice_directsound 60, 0, DirectSoundWaveData_puresquare_50, 255, 242, 25, 0                               @ 48 | Direct | HGSS sampled square 2 | also 066 in BATTLE4 and DUNGEON4
+	voice_directsound 60, 0, DirectSoundWaveData_puresquare_50, 255, 252, 0, 96                               @ 49 | Direct | HGSS sampled square 3
+	voice_directsound 60, 0, DirectSoundWaveData_puresquare_50, 255, 250, 0, 220                              @ 50 | Direct | HGSS sampled square 4
+	voice_directsound 60, 0, DirectSoundWaveData_puresquare_50, 224, 242, 101, 220                            @ 51 | Direct | HGSS sampled square 5
+	voice_directsound 60, 0, DirectSoundWaveData_puresquare_50, 224, 242, 101, 192                            @ 52 | Direct | HGSS sampled square 6
+	voice_directsound 60, 0, DirectSoundWaveData_purenoise, 42, 0, 57, 192                                    @ 53 | Direct | HGSS sampled noise 1
+	voice_directsound 60, 0, DirectSoundWaveData_purenoise, 240, 242, 0, 192                                  @ 54 | Direct | HGSS sampled noise 2
+	voice_directsound 60, 0, DirectSoundWaveData_dp_whistle_c5_16, 255, 246, 78, 192                          @ 55 | Direct | HGSS whistle | remaining voices wrap around to the next voice group, so have some dittos
+	voice_directsound 60, 0, DirectSoundWaveData_dp_reverscyn_16, 255, 0, 255, 16                             @ 56 | Direct | HGSS reverse cyn
+	voice_directsound 60, 0, DirectSoundWaveData_dp_org5_c3_16, 255, 167, 235, 171		                      @ 57 | Direct | HGSS organ
+	voice_directsound 60, 0, DirectSoundWaveData_puresquare_37, 80, 234, 191, 220                             @ 58 | Direct | HGSS sampled square 7
+	voice_directsound 60, 0, DirectSoundWaveData_puresquare_12, 80, 234, 191, 220                             @ 59 | Direct | HGSS sampled square 8
+	voice_directsound 60, 0, DirectSoundWaveData_dp_orchhitmajor60, 255, 197, 255, 171                        @ 60 | Direct | HGSS orchestral hit major
+	voice_directsound 60, 0, DirectSoundWaveData_dp_orchhitminor60, 255, 197, 255, 171                        @ 61 | Direct | HGSS orchestral hit minor
+	voice_keysplit_all voicegroup232                                                                          @ 62 | Drum | HGSS synth kick+snare
+	voice_keysplit voicegroup216, KeySplitTable27                                                             @ 63 | Direct | HGSS timpani (DPPt)
+	voice_directsound 60, 0, DirectSoundWaveData_dp_synbass1_c2_16, 255, 42, 255, 192                         @ 64 | Direct | HGSS syth bass part 1
+	voice_directsound 60, 0, DirectSoundWaveData_dp_synbass2_c1_16, 255, 0, 255, 220                          @ 65 | Direct | HGSS syth bass part 2
+	voice_directsound 60, 0, DirectSoundWaveData_dp_sawtoothlead60, 255, 197, 255, 171                        @ 66 | Direct | HGSS sawtooth
+	voice_keysplit voicegroup272, KeySplitTable57                                                             @ 67 | Direct | HGSS shamisen
+	voice_directsound 60, 0, DirectSoundWaveData_hg_hyoshigi, 255, 0, 255, 171                                @ 68 | Direct | HGSS kyosigi
+	voice_directsound 60, 0, DirectSoundWaveData_hg_kodaiko, 255, 0, 255, 171                                 @ 69 | Direct | HGSS kodaiko
+	voice_directsound 60, 0, DirectSoundWaveData_hg_tsuzumi, 255, 0, 255, 171                                 @ 70 | Direct | HGSS tsuzumi
+	voice_directsound 60, 0, DirectSoundWaveData_hg_jinglebell, 255, 0, 255, 171                              @ 71 | Direct | HGSS jingle bell
+	voice_directsound 60, 0, DirectSoundWaveData_hg_hoohclap, 255, 0, 255, 0                                  @ 72 | Direct | HGSS ho-oh clap
+	voice_directsound 60, 0, DirectSoundWaveData_dp_tenorchoir48, 255, 197, 255, 171                          @ 73 | Direct | HGSS tenor choir
+	voice_directsound 60, 0, DirectSoundWaveData_dp_sopranochoir60, 255, 197, 255, 171                        @ 74 | Direct | HGSS soprano choir
+	voice_directsound 60, 0, DirectSoundWaveData_hg_choirc5, 255, 197, 255, 171                               @ 75 | Direct | HGSS choir | 1 octave too low
+	voice_directsound 60, 0, DirectSoundWaveData_dp_reverscyn_16, 255, 197, 255, 171                          @ 76 | Direct | HGSS reverse cyn | 1 octave too high
+	voice_directsound 60, 0, DirectSoundWaveData_dp_spearpillarwind60, 255, 0, 255, 32                        @ 77 | Direct | HGSS spear pillar wind effect
+	voice_directsound 60, 0, DirectSoundWaveData_dp_altosax_c3_16, 255, 216, 252, 192                         @ 78 | Direct | HGSS alto sax
+	voice_directsound 60, 0, DirectSoundWaveData_dp_synthsnare, 255, 0, 255, 171                              @ 79 | Direct | HGSS synth snare
+	voice_keysplit voicegroup273, KeySplitTable58                                                             @ 80 | Direct | HGSS piano (national park)
+	voice_directsound 60, 0, DirectSoundWaveData_dp_tom1_16, 255, 0, 255, 32                                  @ 81 | Direct | HGSS tom
+	voice_keysplit voicegroup219, KeySplitTable29                                                             @ 82 | Direct | HGSS trumpets (arceus)
+	voice_keysplit voicegroup220, KeySplitTable30                                                             @ 83 | Direct | HGSS trombone (arceus)
+	voice_keysplit voicegroup195, KeySplitTable1                                                              @ 84 | Multi | GBA Emerald Piano 1
+	voice_keysplit voicegroup196, KeySplitTable2                                                              @ 85 | Multi | GBA Emerald String Ensemble
+	voice_keysplit voicegroup197, KeySplitTable3                                                              @ 86 | Multi | GBA Emerald Trumpet
+	voice_keysplit voicegroup198, KeySplitTable4                                                              @ 87 | Multi | GBA Emerald Tuba
+	voice_keysplit voicegroup199, KeySplitTable5                                                              @ 88 | Multi | GBA Emerald French Horn
+	voice_square_2_alt 60, 0, 0, 0, 2, 5, 2                                                                   @ 89 | Square-2 | Note off with noise 12.5% 0 2 5 2
+	voice_square_1_alt 60, 0, 0, 0, 0, 2, 5, 2                                                                @ 90 | Square-1 | Note off with noise 12.5% 0 2 5 2
+	voice_square_2_alt 60, 0, 3, 0, 2, 7, 3                                                                   @ 91 | Square-2 | Note off with noise 75.0% 0 2 7 3
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm82, 0, 4, 6, 0                          @ 92 | Wave | Note off with noise 0 4 6 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm83, 1, 7, 0, 6                          @ 93 | Wave | Note off with noise 1 7 0 6
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm84, 0, 4, 6, 0                          @ 94 | Wave | Note off with noise 0 4 6 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm85, 0, 2, 9, 0                          @ 95 | Wave | Note off with noise 0 2 9 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm86, 1, 5, 0, 3                          @ 96 | Wave | Note off with noise 1 5 0 3
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm87, 0, 7, 15, 1                         @ 97 | Wave | Note off with noise 0 7 15 1
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm88, 0, 7, 15, 0                         @ 98 | Wave | Note off with noise 0 7 15 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm89, 0, 1, 9, 2                          @ 99 | Wave | Note off with noise 0 1 9 2
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_90, 255, 240, 128, 64                                 @ 100 | Direct | ReimuFate Custom 090
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_91, 255, 240, 128, 64                                 @ 101 | Direct | ReimuFate Custom 091
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm92, 0, 2, 9, 1                          @ 102 | Wave | Note off with noise 0 2 9 1
+	voice_square_2_alt 60, 0, 3, 0, 3, 7, 1                                                                   @ 103 | Square-2 | Note off with noise 75.0% 0 3 7 1
+	voice_square_1_alt 60, 0, 0, 3, 0, 2, 7, 3                                                                @ 104 | Square-1 | Note off with noise 75.0% 0 2 7 3
+	voice_square_2_alt 60, 0, 1, 0, 2, 9, 1                                                                   @ 105 | Square-2 | Note off with noise 25.0% 0 2 9 1
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm96, 0, 3, 7, 2                          @ 106 | Wave | Note off with noise 0 3 7 2
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm97, 0, 2, 7, 3                          @ 107 | Wave | Note off with noise 0 2 7 3
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm98, 0, 2, 7, 3                          @ 108 | Wave | Note off with noise 0 2 7 3
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_3, 170, 180, 160, 235                                 @ 109 | Direct | ReimuFate Custom 003
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243                                 @ 110 | Direct | ReimuFate Custom 004
+	voice_directsound 60, 65, DirectSoundWaveData_thpprf_5, 255, 205, 220, 243                                @ 111 | Direct | ReimuFate Custom 005
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_6, 170, 160, 180, 210                                 @ 112 | Direct | ReimuFate Custom 006
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_7, 255, 0, 255, 235                                   @ 113 | Direct | ReimuFate Custom 007 Music Box?
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_8, 250, 250, 250, 190                                 @ 114 | Direct | ReimuFate Custom 008
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_11, 170, 160, 180, 210                                @ 115 | Direct | ReimuFate Custom 011
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_36, 255, 165, 180, 216                                @ 116 | Direct | ReimuFate Custom 036
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_39, 255, 0, 255, 127                                  @ 117 | Direct | ReimuFate Custom 039
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_09263c, 255, 0, 255, 0                 @ 118 | Direct | GBA Precure Orchestral Hit
+	voice_keysplit_all voicegroup192                                                                          @ 119 | Drum | GBA Emerald Drum
+	voice_keysplit_all voicegroup506                                                                          @ 120 | Drum | GBA PMD Drum 1
+	voice_keysplit_all voicegroup507                                                                          @ 127 | Drum | GBA PMD Drum 2
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 235, 0, 216             @ 122 | Direct | GBA Emerald Cymbal 1
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 246, 0, 216             @ 123 | Direct | GBA Emerald Cymbal 2
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_tr909_hand_clap, 255, 255, 255, 127                  @ 124 | Direct | GBA Emerald Hand Clap
+	voice_noise_alt 60, 0, 0, 0, 0, 15, 0                                                                     @ 125 | Noise | GBA Noise 0 0 15 0
+	voice_noise_alt 60, 0, 0, 0, 2, 6, 2                                                                      @ 126 | Noise | GBA Noise 0 2 6 2
+	voice_noise_alt 60, 0, 0, 0, 1, 6, 0                                                                      @ 127 | Noise | GBA Noise 0 1 6 0

@@ -1959,6 +1959,7 @@ SECTIONS {
         sound/songs/mus_dgmn_story2_vs_digimon.o(.rodata);
         sound/songs/mus_dgmn_story2_vs_final_boss.o(.rodata);
         sound/songs/mus_dgmn_story2_vs_multiplayer.o(.rodata);
+        sound/songs/mus_pc_allhenshin.o(.rodata);
     } =0
 
     lib_rodata :

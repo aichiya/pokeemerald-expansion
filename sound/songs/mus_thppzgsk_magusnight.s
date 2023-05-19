@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thppzgsk_magusnight_grp, voicegroup201
+	.equ	mus_thppzgsk_magusnight_grp, voicegroup211
 	.equ	mus_thppzgsk_magusnight_pri, 0
 	.equ	mus_thppzgsk_magusnight_rev, 0
 	.equ	mus_thppzgsk_magusnight_mvl, 127
@@ -21,9 +21,10 @@ mus_thppzgsk_magusnight_1:
 	.byte	TEMPO , 212*mus_thppzgsk_magusnight_tbs/2
 	.byte		VOICE , 48
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 100*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		VOL   , 80*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
-	.byte		N06   , Fn5 , v100
+	.byte		N06   , Fn5 , v076
 	.byte	W06
 	.byte		        Fs5 
 	.byte	W06
@@ -72,10 +73,10 @@ mus_thppzgsk_magusnight_1:
 	.byte	W06
 	.byte		N12   , Gs5 
 	.byte	W12
+mus_thppzgsk_magusnight_1_B1:
 @ 002   ----------------------------------------
-mus_thppzgsk_magusnight_1_002:
 	.byte		VOICE , 48
-	.byte		N24   , Bn3 , v112
+	.byte		N24   , Bn3 , v100
 	.byte	W48
 	.byte		        As3 
 	.byte	W48
@@ -126,7 +127,7 @@ mus_thppzgsk_magusnight_1_002:
 	.byte	W48
 @ 010   ----------------------------------------
 mus_thppzgsk_magusnight_1_010:
-	.byte		N18   , En4 , v112
+	.byte		N18   , En4 , v100
 	.byte	W18
 	.byte		        Gn4 
 	.byte	W18
@@ -141,7 +142,7 @@ mus_thppzgsk_magusnight_1_010:
 	.byte	PEND
 @ 011   ----------------------------------------
 mus_thppzgsk_magusnight_1_011:
-	.byte		N18   , An4 , v112
+	.byte		N18   , An4 , v100
 	.byte	W18
 	.byte		        Ds4 
 	.byte	W18
@@ -158,7 +159,7 @@ mus_thppzgsk_magusnight_1_011:
 	.byte	PEND
 @ 012   ----------------------------------------
 mus_thppzgsk_magusnight_1_012:
-	.byte		N18   , En4 , v112
+	.byte		N18   , En4 , v100
 	.byte	W18
 	.byte		        Gn4 
 	.byte	W18
@@ -177,7 +178,7 @@ mus_thppzgsk_magusnight_1_012:
 	.byte	PEND
 @ 013   ----------------------------------------
 mus_thppzgsk_magusnight_1_013:
-	.byte		N44   , Fs4 , v112
+	.byte		N44   , Fs4 , v100
 	.byte	W48
 	.byte		N36   , Bn4 
 	.byte	W36
@@ -186,7 +187,7 @@ mus_thppzgsk_magusnight_1_013:
 	.byte	PEND
 @ 014   ----------------------------------------
 mus_thppzgsk_magusnight_1_014:
-	.byte		N18   , En5 , v112
+	.byte		N18   , En5 , v100
 	.byte	W18
 	.byte		        Bn4 
 	.byte	W18
@@ -201,7 +202,7 @@ mus_thppzgsk_magusnight_1_014:
 	.byte	PEND
 @ 015   ----------------------------------------
 mus_thppzgsk_magusnight_1_015:
-	.byte		N12   , En5 , v112
+	.byte		N12   , En5 , v100
 	.byte	W12
 	.byte		        Ds5 
 	.byte	W12
@@ -220,7 +221,7 @@ mus_thppzgsk_magusnight_1_015:
 	.byte	PEND
 @ 016   ----------------------------------------
 mus_thppzgsk_magusnight_1_016:
-	.byte		N18   , En4 , v112
+	.byte		N18   , En4 , v100
 	.byte	W18
 	.byte		        Gn4 
 	.byte	W18
@@ -235,7 +236,7 @@ mus_thppzgsk_magusnight_1_016:
 	.byte	PEND
 @ 017   ----------------------------------------
 mus_thppzgsk_magusnight_1_017:
-	.byte		N06   , Gs3 , v112
+	.byte		N06   , Gs3 , v100
 	.byte	W06
 	.byte		        An3 
 	.byte	W06
@@ -292,7 +293,7 @@ mus_thppzgsk_magusnight_1_017:
 	.byte	W96
 @ 030   ----------------------------------------
 	.byte		VOICE , 73
-	.byte		N24   , Gs4 , v112
+	.byte		N24   , Gs4 , v100
 	.byte	W24
 	.byte		N24   
 	.byte	W24
@@ -789,9 +790,10 @@ mus_thppzgsk_magusnight_1_017:
 	.byte	W12
 	.byte		N44   , As4 
 	.byte	W48
-@ 077   ----------------------------------------
 	.byte	GOTO
-	.word	mus_thppzgsk_magusnight_1_002
+	 .word	mus_thppzgsk_magusnight_1_B1
+mus_thppzgsk_magusnight_1_B2:
+@ 077   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.2) ****************@
@@ -801,9 +803,10 @@ mus_thppzgsk_magusnight_2:
 @ 000   ----------------------------------------
 	.byte		VOICE , 56
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 100*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		VOL   , 80*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
-	.byte		N06   , Cs4 , v108
+	.byte		N06   , Cs4 , v092
 	.byte	W06
 	.byte		        Cn4 
 	.byte	W06
@@ -868,10 +871,10 @@ mus_thppzgsk_magusnight_2:
 	.byte	W06
 	.byte		        An3 
 	.byte	W06
+mus_thppzgsk_magusnight_2_B1:
 @ 002   ----------------------------------------
-mus_thppzgsk_magusnight_2_002:
 	.byte		VOICE , 56
-	.byte		N24   , En3 
+	.byte		N24   , En3 , v092
 	.byte	W48
 	.byte		N24   
 	.byte	W48
@@ -883,7 +886,7 @@ mus_thppzgsk_magusnight_2_002:
 @ 004   ----------------------------------------
 mus_thppzgsk_magusnight_2_004:
 	.byte	W12
-	.byte		N24   , En3 , v108
+	.byte		N24   , En3 , v092
 	.byte	W36
 	.byte		N24   
 	.byte	W48
@@ -911,7 +914,7 @@ mus_thppzgsk_magusnight_2_004:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_2_004
 @ 009   ----------------------------------------
-	.byte		N18   , Ds3 , v108
+	.byte		N18   , Ds3 , v092
 	.byte	W18
 	.byte		N18   
 	.byte	W18
@@ -922,7 +925,7 @@ mus_thppzgsk_magusnight_2_004:
 @ 010   ----------------------------------------
 mus_thppzgsk_magusnight_2_010:
 	.byte		VOICE , 60
-	.byte		N48   , Bn3 , v108
+	.byte		N48   , Bn3 , v092
 	.byte	W48
 	.byte		N24   , Fs4 
 	.byte	W24
@@ -959,7 +962,7 @@ mus_thppzgsk_magusnight_2_010:
 	.byte	W12
 @ 013   ----------------------------------------
 mus_thppzgsk_magusnight_2_013:
-	.byte		N44   , Ds4 , v108
+	.byte		N44   , Ds4 , v092
 	.byte	W48
 	.byte		VOICE , 56
 	.byte		N06   , Fs4 
@@ -974,7 +977,7 @@ mus_thppzgsk_magusnight_2_013:
 	 .word	mus_thppzgsk_magusnight_2_010
 @ 015   ----------------------------------------
 mus_thppzgsk_magusnight_2_015:
-	.byte		N12   , Bn3 , v108
+	.byte		N12   , Bn3 , v092
 	.byte	W12
 	.byte		        Ds4 
 	.byte	W12
@@ -993,7 +996,7 @@ mus_thppzgsk_magusnight_2_015:
 	.byte	PEND
 @ 016   ----------------------------------------
 mus_thppzgsk_magusnight_2_016:
-	.byte		N36   , Gn3 , v108
+	.byte		N36   , Gn3 , v092
 	.byte	W36
 	.byte		N12   , En3 
 	.byte	W12
@@ -1072,7 +1075,7 @@ mus_thppzgsk_magusnight_2_016:
 	 .word	mus_thppzgsk_magusnight_2_016
 @ 025   ----------------------------------------
 	.byte		VOICE , 56
-	.byte		N48   , Gs3 , v108
+	.byte		N48   , Gs3 , v092
 	.byte	W48
 	.byte		N06   , En4 
 	.byte	W12
@@ -1090,7 +1093,7 @@ mus_thppzgsk_magusnight_2_016:
 	.byte	W96
 @ 030   ----------------------------------------
 	.byte		VOICE , 1
-	.byte		N24   , En4 , v100
+	.byte		N24   , En4 , v080
 	.byte	W24
 	.byte		N24   
 	.byte	W24
@@ -1230,7 +1233,7 @@ mus_thppzgsk_magusnight_2_016:
 	.byte	W48
 @ 042   ----------------------------------------
 	.byte		VOICE , 60
-	.byte		N09   , An3 , v108
+	.byte		N09   , An3 , v092
 	.byte	W12
 	.byte		N09   
 	.byte	W12
@@ -1546,9 +1549,10 @@ mus_thppzgsk_magusnight_2_016:
 	.byte	W12
 	.byte		N44   , Fn4 
 	.byte	W48
-@ 077   ----------------------------------------
 	.byte	GOTO
-	.word	mus_thppzgsk_magusnight_2_002
+	 .word	mus_thppzgsk_magusnight_2_B1
+mus_thppzgsk_magusnight_2_B2:
+@ 077   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.3) ****************@
@@ -1558,9 +1562,10 @@ mus_thppzgsk_magusnight_3:
 @ 000   ----------------------------------------
 	.byte		VOICE , 33
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 100*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		VOL   , 80*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
-	.byte		N12   , As1 , v112
+	.byte		N12   , As1 , v100
 	.byte	W12
 	.byte		        Fn1 
 	.byte	W12
@@ -1593,9 +1598,10 @@ mus_thppzgsk_magusnight_3:
 	.byte	W12
 	.byte		        Bn0 
 	.byte	W12
+mus_thppzgsk_magusnight_3_B1:
 @ 002   ----------------------------------------
 mus_thppzgsk_magusnight_3_002:
-	.byte		N12   , Bn0 , v112
+	.byte		N12   , Bn0 , v100
 	.byte	W12
 	.byte		        En1 
 	.byte	W12
@@ -1614,7 +1620,7 @@ mus_thppzgsk_magusnight_3_002:
 	.byte	PEND
 @ 003   ----------------------------------------
 mus_thppzgsk_magusnight_3_003:
-	.byte		N12   , An0 , v112
+	.byte		N12   , An0 , v100
 	.byte	W12
 	.byte		        Dn1 
 	.byte	W12
@@ -1636,7 +1642,7 @@ mus_thppzgsk_magusnight_3_003:
 	 .word	mus_thppzgsk_magusnight_3_002
 @ 005   ----------------------------------------
 mus_thppzgsk_magusnight_3_005:
-	.byte		N12   , An0 , v112
+	.byte		N12   , An0 , v100
 	.byte	W12
 	.byte		        Dn1 
 	.byte	W12
@@ -1667,7 +1673,7 @@ mus_thppzgsk_magusnight_3_005:
 	 .word	mus_thppzgsk_magusnight_3_005
 @ 010   ----------------------------------------
 mus_thppzgsk_magusnight_3_010:
-	.byte		N12   , En1 , v112
+	.byte		N12   , En1 , v100
 	.byte	W12
 	.byte		        Bn1 
 	.byte	W12
@@ -1686,7 +1692,7 @@ mus_thppzgsk_magusnight_3_010:
 	.byte	PEND
 @ 011   ----------------------------------------
 mus_thppzgsk_magusnight_3_011:
-	.byte		N12   , Dn1 , v112
+	.byte		N12   , Dn1 , v100
 	.byte	W12
 	.byte		        An1 
 	.byte	W12
@@ -1705,7 +1711,7 @@ mus_thppzgsk_magusnight_3_011:
 	.byte	PEND
 @ 012   ----------------------------------------
 mus_thppzgsk_magusnight_3_012:
-	.byte		N12   , En1 , v112
+	.byte		N12   , En1 , v100
 	.byte	W12
 	.byte		        Bn1 
 	.byte	W12
@@ -1724,7 +1730,7 @@ mus_thppzgsk_magusnight_3_012:
 	.byte	PEND
 @ 013   ----------------------------------------
 mus_thppzgsk_magusnight_3_013:
-	.byte		N12   , Ds1 , v112
+	.byte		N12   , Ds1 , v100
 	.byte	W12
 	.byte		        Ds2 
 	.byte	W12
@@ -1749,7 +1755,7 @@ mus_thppzgsk_magusnight_3_013:
 	 .word	mus_thppzgsk_magusnight_3_011
 @ 016   ----------------------------------------
 mus_thppzgsk_magusnight_3_016:
-	.byte		N12   , Cn1 , v112
+	.byte		N12   , Cn1 , v100
 	.byte	W12
 	.byte		        Gn1 
 	.byte	W12
@@ -1795,7 +1801,7 @@ mus_thppzgsk_magusnight_3_016:
 	 .word	mus_thppzgsk_magusnight_3_010
 @ 026   ----------------------------------------
 mus_thppzgsk_magusnight_3_026:
-	.byte		N12   , Cs1 , v112
+	.byte		N12   , Cs1 , v100
 	.byte	W12
 	.byte		        Gs1 
 	.byte	W12
@@ -1814,7 +1820,7 @@ mus_thppzgsk_magusnight_3_026:
 	.byte	PEND
 @ 027   ----------------------------------------
 mus_thppzgsk_magusnight_3_027:
-	.byte		N12   , Cn1 , v112
+	.byte		N12   , Cn1 , v100
 	.byte	W12
 	.byte		        Fs1 
 	.byte	W12
@@ -1856,7 +1862,7 @@ mus_thppzgsk_magusnight_3_027:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_3_027
 @ 036   ----------------------------------------
-	.byte		N12   , Cs1 , v112
+	.byte		N12   , Cs1 , v100
 	.byte	W12
 	.byte		        Gs1 
 	.byte	W12
@@ -1896,7 +1902,7 @@ mus_thppzgsk_magusnight_3_027:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_3_027
 @ 040   ----------------------------------------
-	.byte		N12   , An0 , v112
+	.byte		N12   , An0 , v100
 	.byte	W12
 	.byte		        En1 
 	.byte	W12
@@ -1914,7 +1920,7 @@ mus_thppzgsk_magusnight_3_027:
 	.byte	W12
 @ 041   ----------------------------------------
 mus_thppzgsk_magusnight_3_041:
-	.byte		N12   , Cs1 , v112
+	.byte		N12   , Cs1 , v100
 	.byte	W12
 	.byte		        Gs1 
 	.byte	W12
@@ -1948,7 +1954,7 @@ mus_thppzgsk_magusnight_3_041:
 	.byte	W12
 @ 043   ----------------------------------------
 mus_thppzgsk_magusnight_3_043:
-	.byte		N12   , An0 , v112
+	.byte		N12   , An0 , v100
 	.byte	W12
 	.byte		        En1 
 	.byte	W12
@@ -1982,7 +1988,7 @@ mus_thppzgsk_magusnight_3_043:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_3_043
 @ 046   ----------------------------------------
-	.byte		N12   , An0 , v112
+	.byte		N12   , An0 , v100
 	.byte	W12
 	.byte		N12   
 	.byte	W12
@@ -2000,7 +2006,7 @@ mus_thppzgsk_magusnight_3_043:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_3_043
 @ 048   ----------------------------------------
-	.byte		N12   , An0 , v112
+	.byte		N12   , An0 , v100
 	.byte	W12
 	.byte		N12   
 	.byte	W12
@@ -2022,7 +2028,7 @@ mus_thppzgsk_magusnight_3_043:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_3_041
 @ 052   ----------------------------------------
-	.byte		N12   , Cs2 , v112
+	.byte		N12   , Cs2 , v100
 	.byte	W12
 	.byte		        Gs2 
 	.byte	W12
@@ -2040,7 +2046,7 @@ mus_thppzgsk_magusnight_3_043:
 	.byte	W12
 @ 053   ----------------------------------------
 mus_thppzgsk_magusnight_3_053:
-	.byte		N12   , Dn1 , v112
+	.byte		N12   , Dn1 , v100
 	.byte	W12
 	.byte		        An1 
 	.byte	W12
@@ -2059,7 +2065,7 @@ mus_thppzgsk_magusnight_3_053:
 	.byte	PEND
 @ 054   ----------------------------------------
 mus_thppzgsk_magusnight_3_054:
-	.byte		N12   , Fs1 , v112
+	.byte		N12   , Fs1 , v100
 	.byte	W12
 	.byte		        Cs2 
 	.byte	W12
@@ -2092,7 +2098,7 @@ mus_thppzgsk_magusnight_3_054:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_3_053
 @ 060   ----------------------------------------
-	.byte		N12   , Fs1 , v112
+	.byte		N12   , Fs1 , v100
 	.byte	W12
 	.byte		        Cs2 
 	.byte	W12
@@ -2110,7 +2116,7 @@ mus_thppzgsk_magusnight_3_054:
 	.byte	W12
 @ 061   ----------------------------------------
 mus_thppzgsk_magusnight_3_061:
-	.byte		N12   , Fs1 , v112
+	.byte		N12   , Fs1 , v100
 	.byte	W12
 	.byte		        Cs2 
 	.byte	W12
@@ -2129,7 +2135,7 @@ mus_thppzgsk_magusnight_3_061:
 	.byte	PEND
 @ 062   ----------------------------------------
 mus_thppzgsk_magusnight_3_062:
-	.byte		N12   , As1 , v112
+	.byte		N12   , As1 , v100
 	.byte	W12
 	.byte		        Fn2 
 	.byte	W12
@@ -2162,7 +2168,7 @@ mus_thppzgsk_magusnight_3_062:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_3_061
 @ 068   ----------------------------------------
-	.byte		N12   , Fn1 , v112
+	.byte		N12   , Fn1 , v100
 	.byte	W12
 	.byte		        Cn2 
 	.byte	W12
@@ -2200,7 +2206,7 @@ mus_thppzgsk_magusnight_3_062:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_3_061
 @ 076   ----------------------------------------
-	.byte		N12   , As1 , v112
+	.byte		N12   , As1 , v100
 	.byte	W12
 	.byte		        Fn2 
 	.byte	W12
@@ -2216,9 +2222,10 @@ mus_thppzgsk_magusnight_3_062:
 	.byte	W12
 	.byte		        Fn2 
 	.byte	W12
-@ 077   ----------------------------------------
 	.byte	GOTO
-	.word	mus_thppzgsk_magusnight_3_002
+	 .word	mus_thppzgsk_magusnight_3_B1
+mus_thppzgsk_magusnight_3_B2:
+@ 077   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.4) ****************@
@@ -2226,15 +2233,16 @@ mus_thppzgsk_magusnight_3_062:
 mus_thppzgsk_magusnight_4:
 	.byte	KEYSH , mus_thppzgsk_magusnight_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 85
+	.byte		VOICE , 81
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 100*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		VOL   , 80*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
+mus_thppzgsk_magusnight_4_B1:
 @ 002   ----------------------------------------
-mus_thppzgsk_magusnight_4_002:
 	.byte	W96
 @ 003   ----------------------------------------
 	.byte	W96
@@ -2251,11 +2259,11 @@ mus_thppzgsk_magusnight_4_002:
 @ 009   ----------------------------------------
 	.byte	W96
 @ 010   ----------------------------------------
-	.byte		N96   , En3 , v088
+	.byte		N96   , En3 , v060
 	.byte	W96
 @ 011   ----------------------------------------
 mus_thppzgsk_magusnight_4_011:
-	.byte		N48   , Dn3 , v088
+	.byte		N48   , Dn3 , v060
 	.byte	W48
 	.byte		        En3 
 	.byte	W48
@@ -2271,14 +2279,14 @@ mus_thppzgsk_magusnight_4_011:
 	.byte	W96
 @ 015   ----------------------------------------
 mus_thppzgsk_magusnight_4_015:
-	.byte		N48   , Ds3 , v088
+	.byte		N48   , Ds3 , v060
 	.byte	W48
 	.byte		        En3 
 	.byte	W48
 	.byte	PEND
 @ 016   ----------------------------------------
 mus_thppzgsk_magusnight_4_016:
-	.byte		N48   , Gn3 , v088
+	.byte		N48   , Gn3 , v060
 	.byte	W48
 	.byte		        An3 
 	.byte	W48
@@ -2293,7 +2301,7 @@ mus_thppzgsk_magusnight_4_016:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_4_011
 @ 020   ----------------------------------------
-	.byte		N96   , En3 , v088
+	.byte		N96   , En3 , v060
 	.byte	W96
 @ 021   ----------------------------------------
 	.byte		        Fs3 
@@ -2308,18 +2316,18 @@ mus_thppzgsk_magusnight_4_016:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_4_016
 @ 025   ----------------------------------------
-	.byte		N96   , Bn3 , v088
+	.byte		N96   , Bn3 , v060
 	.byte	W96
 @ 026   ----------------------------------------
 mus_thppzgsk_magusnight_4_026:
-	.byte		N48   , Gs3 , v088
+	.byte		N48   , Gs3 , v060
 	.byte	W48
 	.byte		        Gn3 
 	.byte	W48
 	.byte	PEND
 @ 027   ----------------------------------------
 mus_thppzgsk_magusnight_4_027:
-	.byte		N48   , Fs3 , v088
+	.byte		N48   , Fs3 , v060
 	.byte	W48
 	.byte		        Gs3 
 	.byte	W48
@@ -2343,11 +2351,11 @@ mus_thppzgsk_magusnight_4_027:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_4_027
 @ 034   ----------------------------------------
-	.byte		N96   , Cs3 , v088
+	.byte		N96   , Cs3 , v060
 	.byte	W96
 @ 035   ----------------------------------------
 mus_thppzgsk_magusnight_4_035:
-	.byte		N48   , Cn3 , v088
+	.byte		N48   , Cn3 , v060
 	.byte	W48
 	.byte		        Cs3 
 	.byte	W48
@@ -2365,7 +2373,7 @@ mus_thppzgsk_magusnight_4_035:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_4_035
 @ 040   ----------------------------------------
-	.byte		N48   , En3 , v088
+	.byte		N48   , En3 , v060
 	.byte	W48
 	.byte		        Fs3 
 	.byte	W48
@@ -2399,7 +2407,7 @@ mus_thppzgsk_magusnight_4_035:
 	 .word	mus_thppzgsk_magusnight_4_011
 @ 054   ----------------------------------------
 mus_thppzgsk_magusnight_4_054:
-	.byte		N72   , Fs3 , v088
+	.byte		N72   , Fs3 , v060
 	.byte	W72
 	.byte		N24   , En3 
 	.byte	W24
@@ -2417,7 +2425,7 @@ mus_thppzgsk_magusnight_4_054:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_4_054
 @ 059   ----------------------------------------
-	.byte		N48   , Dn3 , v088
+	.byte		N48   , Dn3 , v060
 	.byte	W48
 	.byte		        Bn2 
 	.byte	W48
@@ -2429,7 +2437,7 @@ mus_thppzgsk_magusnight_4_054:
 	 .word	mus_thppzgsk_magusnight_4_027
 @ 062   ----------------------------------------
 mus_thppzgsk_magusnight_4_062:
-	.byte		N72   , As3 , v088
+	.byte		N72   , As3 , v060
 	.byte	W72
 	.byte		N24   , Gs3 
 	.byte	W24
@@ -2448,7 +2456,7 @@ mus_thppzgsk_magusnight_4_062:
 	 .word	mus_thppzgsk_magusnight_4_062
 @ 067   ----------------------------------------
 mus_thppzgsk_magusnight_4_067:
-	.byte		N48   , Fs3 , v088
+	.byte		N48   , Fs3 , v060
 	.byte	W48
 	.byte		        Ds3 
 	.byte	W48
@@ -2478,11 +2486,12 @@ mus_thppzgsk_magusnight_4_067:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_4_067
 @ 076   ----------------------------------------
-	.byte		N96   , Fn3 , v088
+	.byte		N96   , Fn3 , v060
 	.byte	W96
-@ 077   ----------------------------------------
 	.byte	GOTO
-	.word	mus_thppzgsk_magusnight_4_002
+	 .word	mus_thppzgsk_magusnight_4_B1
+mus_thppzgsk_magusnight_4_B2:
+@ 077   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.5) ****************@
@@ -2490,11 +2499,12 @@ mus_thppzgsk_magusnight_4_067:
 mus_thppzgsk_magusnight_5:
 	.byte	KEYSH , mus_thppzgsk_magusnight_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 86
+	.byte		VOICE , 80
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 100*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		VOL   , 80*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
-	.byte		N06   , As4 , v088
+	.byte		N06   , As4 , v060
 	.byte	W24
 	.byte		N06   
 	.byte	W24
@@ -2511,10 +2521,10 @@ mus_thppzgsk_magusnight_5:
 	.byte	W24
 	.byte		N06   
 	.byte	W24
+mus_thppzgsk_magusnight_5_B1:
 @ 002   ----------------------------------------
-mus_thppzgsk_magusnight_5_002:
-	.byte		VOICE , 87
-	.byte		N24   , Bn2 , v096
+	.byte		VOICE , 83
+	.byte		N24   , Bn2 , v072
 	.byte	W48
 	.byte		N24   
 	.byte	W48
@@ -2539,35 +2549,35 @@ mus_thppzgsk_magusnight_5_002:
 	.byte		N24   
 	.byte	W48
 @ 006   ----------------------------------------
-	.byte		VOICE , 86
+	.byte		VOICE , 80
 	.byte		N12   , Bn3 
 	.byte	W12
-	.byte		        Gn2 , v088
+	.byte		        Gn2 , v060
 	.byte	W12
 	.byte		        Bn2 
 	.byte	W12
 	.byte		        En3 
 	.byte	W12
-	.byte		        Bn3 , v096
+	.byte		        Bn3 , v072
 	.byte	W12
-	.byte		        En2 , v088
+	.byte		        En2 , v060
 	.byte	W12
 	.byte		        Gn2 
 	.byte	W12
 	.byte		        En2 
 	.byte	W12
 @ 007   ----------------------------------------
-	.byte		        Bn3 , v096
+	.byte		        Bn3 , v072
 	.byte	W12
-	.byte		        Gn2 , v088
+	.byte		        Gn2 , v060
 	.byte	W12
 	.byte		        Bn2 
 	.byte	W12
 	.byte		        En3 
 	.byte	W12
-	.byte		        Bn3 , v096
+	.byte		        Bn3 , v072
 	.byte	W12
-	.byte		        En2 , v088
+	.byte		        En2 , v060
 	.byte	W12
 	.byte		        Gn2 
 	.byte	W12
@@ -2575,22 +2585,22 @@ mus_thppzgsk_magusnight_5_002:
 	.byte	W12
 @ 008   ----------------------------------------
 	.byte	W12
-	.byte		        Bn3 , v096
+	.byte		        Bn3 , v072
 	.byte	W12
-	.byte		        Gn2 , v088
+	.byte		        Gn2 , v060
 	.byte	W12
 	.byte		        Bn2 
 	.byte	W12
-	.byte		        Bn3 , v096
+	.byte		        Bn3 , v072
 	.byte	W12
-	.byte		        Bn2 , v088
+	.byte		        Bn2 , v060
 	.byte	W12
 	.byte		        En3 
 	.byte	W12
 	.byte		        Gn3 
 	.byte	W12
 @ 009   ----------------------------------------
-	.byte		N18   , Bn3 , v096
+	.byte		N18   , Bn3 , v072
 	.byte	W18
 	.byte		N18   
 	.byte	W18
@@ -2632,7 +2642,7 @@ mus_thppzgsk_magusnight_5_002:
 	.byte	W96
 @ 026   ----------------------------------------
 mus_thppzgsk_magusnight_5_026:
-	.byte		N12   , Cs4 , v100
+	.byte		N12   , Cs4 , v080
 	.byte	W12
 	.byte		        Gs4 
 	.byte	W12
@@ -2651,7 +2661,7 @@ mus_thppzgsk_magusnight_5_026:
 	.byte	PEND
 @ 027   ----------------------------------------
 mus_thppzgsk_magusnight_5_027:
-	.byte		N12   , Cn4 , v100
+	.byte		N12   , Cn4 , v080
 	.byte	W12
 	.byte		        Fs4 
 	.byte	W12
@@ -2688,7 +2698,7 @@ mus_thppzgsk_magusnight_5_027:
 	 .word	mus_thppzgsk_magusnight_5_027
 @ 034   ----------------------------------------
 mus_thppzgsk_magusnight_5_034:
-	.byte		N12   , Cs4 , v088
+	.byte		N12   , Cs4 , v060
 	.byte	W12
 	.byte		        Gs4 
 	.byte	W12
@@ -2707,7 +2717,7 @@ mus_thppzgsk_magusnight_5_034:
 	.byte	PEND
 @ 035   ----------------------------------------
 mus_thppzgsk_magusnight_5_035:
-	.byte		N12   , Cn4 , v088
+	.byte		N12   , Cn4 , v060
 	.byte	W12
 	.byte		        Fs4 
 	.byte	W12
@@ -2765,7 +2775,7 @@ mus_thppzgsk_magusnight_5_035:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_5_035
 @ 040   ----------------------------------------
-	.byte		N12   , An3 , v088
+	.byte		N12   , An3 , v060
 	.byte	W12
 	.byte		        En4 
 	.byte	W12
@@ -2799,7 +2809,7 @@ mus_thppzgsk_magusnight_5_035:
 	.byte		        Gs4 
 	.byte	W12
 @ 042   ----------------------------------------
-	.byte		N09   , Cs3 , v096
+	.byte		N09   , Cs3 , v072
 	.byte	W12
 	.byte		N09   
 	.byte	W12
@@ -2850,8 +2860,8 @@ mus_thppzgsk_magusnight_5_035:
 	.byte	W12
 	.byte		N36   , Fs3 
 	.byte	W36
-	.byte		VOICE , 87
-	.byte		N12   , Fs4 , v072
+	.byte		VOICE , 83
+	.byte		N12   , Fs4 , v040
 	.byte	W12
 	.byte		        Gs4 
 	.byte	W12
@@ -2897,8 +2907,8 @@ mus_thppzgsk_magusnight_5_035:
 	.byte		N24   , Bn4 
 	.byte	W24
 @ 049   ----------------------------------------
-	.byte		VOICE , 86
-	.byte		N12   , Gs4 , v088
+	.byte		VOICE , 80
+	.byte		N12   , Gs4 , v060
 	.byte	W12
 	.byte		        Gs3 
 	.byte	W12
@@ -2916,7 +2926,7 @@ mus_thppzgsk_magusnight_5_035:
 	.byte	W12
 @ 050   ----------------------------------------
 mus_thppzgsk_magusnight_5_050:
-	.byte		N12   , Gs4 , v088
+	.byte		N12   , Gs4 , v060
 	.byte	W12
 	.byte		        Gs3 
 	.byte	W12
@@ -2940,7 +2950,7 @@ mus_thppzgsk_magusnight_5_050:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_5_050
 @ 053   ----------------------------------------
-	.byte		N48   , An3 , v088
+	.byte		N48   , An3 , v060
 	.byte	W48
 	.byte		        Gs3 
 	.byte	W48
@@ -3145,9 +3155,10 @@ mus_thppzgsk_magusnight_5_050:
 	.byte	W12
 	.byte		N44   , As3 
 	.byte	W48
-@ 077   ----------------------------------------
 	.byte	GOTO
-	.word	mus_thppzgsk_magusnight_5_002
+	 .word	mus_thppzgsk_magusnight_5_B1
+mus_thppzgsk_magusnight_5_B2:
+@ 077   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.6) ****************@
@@ -3155,11 +3166,12 @@ mus_thppzgsk_magusnight_5_050:
 mus_thppzgsk_magusnight_6:
 	.byte	KEYSH , mus_thppzgsk_magusnight_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 4
+	.byte		VOICE , 82
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 100*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		VOL   , 80*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		MOD   , 0
 	.byte		BEND  , c_v-2
-	.byte		N06   , Fn3 , v088
+	.byte		N06   , Fn3 , v060
 	.byte	W06
 	.byte		        En3 
 	.byte	W06
@@ -3208,8 +3220,8 @@ mus_thppzgsk_magusnight_6:
 	.byte	W06
 	.byte		N12   , Cs3 
 	.byte	W12
+mus_thppzgsk_magusnight_6_B1:
 @ 002   ----------------------------------------
-mus_thppzgsk_magusnight_6_002:
 	.byte	W96
 @ 003   ----------------------------------------
 	.byte	W96
@@ -3218,8 +3230,8 @@ mus_thppzgsk_magusnight_6_002:
 @ 005   ----------------------------------------
 	.byte	W96
 @ 006   ----------------------------------------
-	.byte		VOICE , 4
-	.byte		N24   , Bn4 
+	.byte		VOICE , 82
+	.byte		N24   , Bn4 , v060
 	.byte	W48
 	.byte		        As4 
 	.byte	W48
@@ -3315,9 +3327,9 @@ mus_thppzgsk_magusnight_6_002:
 	.byte	W96
 @ 045   ----------------------------------------
 	.byte	W72
-	.byte		VOICE , 4
+	.byte		VOICE , 85
 	.byte	W03
-	.byte		N12   , Fs4 , v072
+	.byte		N12   , Fs4 , v040
 	.byte	W12
 	.byte		        Gs4 
 	.byte	W09
@@ -3431,9 +3443,10 @@ mus_thppzgsk_magusnight_6_002:
 	.byte	W96
 @ 076   ----------------------------------------
 	.byte	W96
-@ 077   ----------------------------------------
 	.byte	GOTO
-	.word	mus_thppzgsk_magusnight_6_002
+	 .word	mus_thppzgsk_magusnight_6_B1
+mus_thppzgsk_magusnight_6_B2:
+@ 077   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 7 (Midi-Chn.7) ****************@
@@ -3441,12 +3454,13 @@ mus_thppzgsk_magusnight_6_002:
 mus_thppzgsk_magusnight_7:
 	.byte	KEYSH , mus_thppzgsk_magusnight_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 125
+	.byte		VOICE , 81
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 94*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		VOL   , 70*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte	W48
-	.byte		N06   , Fn2 , v100
+	.byte		N06   , Fn2 , v080
 	.byte	W06
 	.byte		        Fs2 
 	.byte	W06
@@ -3495,8 +3509,8 @@ mus_thppzgsk_magusnight_7:
 	.byte	W06
 	.byte		        En4 
 	.byte	W06
+mus_thppzgsk_magusnight_7_B1:
 @ 002   ----------------------------------------
-mus_thppzgsk_magusnight_7_002:
 	.byte	W96
 @ 003   ----------------------------------------
 	.byte	W96
@@ -3646,9 +3660,10 @@ mus_thppzgsk_magusnight_7_002:
 	.byte	W96
 @ 076   ----------------------------------------
 	.byte	W96
-@ 077   ----------------------------------------
 	.byte	GOTO
-	.word	mus_thppzgsk_magusnight_7_002
+	 .word	mus_thppzgsk_magusnight_7_B1
+mus_thppzgsk_magusnight_7_B2:
+@ 077   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 8 (Midi-Chn.8) ****************@
@@ -3658,9 +3673,10 @@ mus_thppzgsk_magusnight_8:
 @ 000   ----------------------------------------
 	.byte		VOICE , 47
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 100*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		VOL   , 80*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W12
 	.byte		        En2 
 	.byte	W12
@@ -3693,9 +3709,10 @@ mus_thppzgsk_magusnight_8:
 	.byte	W12
 	.byte		        Gn2 
 	.byte	W12
+mus_thppzgsk_magusnight_8_B1:
 @ 002   ----------------------------------------
 mus_thppzgsk_magusnight_8_002:
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W12
 	.byte		N12   
 	.byte	W24
@@ -3708,7 +3725,7 @@ mus_thppzgsk_magusnight_8_002:
 	.byte	PEND
 @ 003   ----------------------------------------
 mus_thppzgsk_magusnight_8_003:
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W36
 	.byte		N12   
 	.byte	W12
@@ -3721,7 +3738,7 @@ mus_thppzgsk_magusnight_8_003:
 	.byte	PEND
 @ 004   ----------------------------------------
 mus_thppzgsk_magusnight_8_004:
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W12
 	.byte		N12   
 	.byte	W24
@@ -3753,7 +3770,7 @@ mus_thppzgsk_magusnight_8_004:
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_8_004
 @ 009   ----------------------------------------
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W12
 	.byte		N12   
 	.byte	W36
@@ -3763,7 +3780,7 @@ mus_thppzgsk_magusnight_8_004:
 	.byte	W36
 @ 010   ----------------------------------------
 mus_thppzgsk_magusnight_8_010:
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W48
 	.byte		N12   
 	.byte	W12
@@ -3772,7 +3789,7 @@ mus_thppzgsk_magusnight_8_010:
 	.byte	PEND
 @ 011   ----------------------------------------
 mus_thppzgsk_magusnight_8_011:
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W36
 	.byte		N12   
 	.byte	W36
@@ -3784,7 +3801,7 @@ mus_thppzgsk_magusnight_8_011:
 	 .word	mus_thppzgsk_magusnight_8_010
 @ 013   ----------------------------------------
 mus_thppzgsk_magusnight_8_013:
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W36
 	.byte		N12   
 	.byte	W24
@@ -3881,7 +3898,7 @@ mus_thppzgsk_magusnight_8_013:
 	 .word	mus_thppzgsk_magusnight_8_013
 @ 042   ----------------------------------------
 mus_thppzgsk_magusnight_8_042:
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W12
 	.byte		        En2 
 	.byte	W24
@@ -3894,7 +3911,7 @@ mus_thppzgsk_magusnight_8_042:
 	.byte	PEND
 @ 043   ----------------------------------------
 mus_thppzgsk_magusnight_8_043:
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W12
 	.byte		        En2 
 	.byte	W24
@@ -3912,7 +3929,7 @@ mus_thppzgsk_magusnight_8_043:
 	 .word	mus_thppzgsk_magusnight_8_043
 @ 045   ----------------------------------------
 mus_thppzgsk_magusnight_8_045:
-	.byte		N12   , Gn2 , v112
+	.byte		N12   , Gn2 , v100
 	.byte	W12
 	.byte		        En2 
 	.byte	W24
@@ -4012,9 +4029,10 @@ mus_thppzgsk_magusnight_8_045:
 @ 076   ----------------------------------------
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_8_013
-@ 077   ----------------------------------------
 	.byte	GOTO
-	.word	mus_thppzgsk_magusnight_8_002
+	 .word	mus_thppzgsk_magusnight_8_B1
+mus_thppzgsk_magusnight_8_B2:
+@ 077   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 9 (Midi-Chn.9) ****************@
@@ -4024,15 +4042,17 @@ mus_thppzgsk_magusnight_9:
 @ 000   ----------------------------------------
 	.byte		VOICE , 0
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 100*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		VOL   , 80*mus_thppzgsk_magusnight_mvl/mxv
+	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
+mus_thppzgsk_magusnight_9_B1:
 @ 002   ----------------------------------------
 mus_thppzgsk_magusnight_9_002:
 	.byte	W24
-	.byte		N12   , Dn1 , v120
+	.byte		N12   , Dn1 , v112
 	.byte	W48
 	.byte		N12   
 	.byte	W24
@@ -4154,7 +4174,7 @@ mus_thppzgsk_magusnight_9_002:
 @ 041   ----------------------------------------
 mus_thppzgsk_magusnight_9_041:
 	.byte	W24
-	.byte		N12   , Dn1 , v120
+	.byte		N12   , Dn1 , v112
 	.byte	W48
 	.byte		N12   
 	.byte	W12
@@ -4164,7 +4184,7 @@ mus_thppzgsk_magusnight_9_041:
 @ 042   ----------------------------------------
 mus_thppzgsk_magusnight_9_042:
 	.byte	W24
-	.byte		N12   , Dn1 , v120
+	.byte		N12   , Dn1 , v112
 	.byte	W36
 	.byte		N12   
 	.byte	W24
@@ -4199,7 +4219,7 @@ mus_thppzgsk_magusnight_9_042:
 	.byte	W96
 @ 052   ----------------------------------------
 	.byte	W72
-	.byte		N12   , Dn1 , v120
+	.byte		N12   , Dn1 , v112
 	.byte	W12
 	.byte		N12   
 	.byte	W12
@@ -4275,9 +4295,10 @@ mus_thppzgsk_magusnight_9_042:
 @ 076   ----------------------------------------
 	.byte	PATT
 	 .word	mus_thppzgsk_magusnight_9_002
-@ 077   ----------------------------------------
 	.byte	GOTO
-	.word	mus_thppzgsk_magusnight_9_002
+	 .word	mus_thppzgsk_magusnight_9_B1
+mus_thppzgsk_magusnight_9_B2:
+@ 077   ----------------------------------------
 	.byte	FINE
 
 @******************************************************@

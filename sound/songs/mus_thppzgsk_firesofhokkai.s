@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thppzgsk_firesofhokkai_grp, voicegroup201
+	.equ	mus_thppzgsk_firesofhokkai_grp, voicegroup211
 	.equ	mus_thppzgsk_firesofhokkai_pri, 0
 	.equ	mus_thppzgsk_firesofhokkai_rev, 0
 	.equ	mus_thppzgsk_firesofhokkai_mvl, 127

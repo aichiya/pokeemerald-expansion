@@ -12499,10 +12499,10 @@ static const struct TrainerMonItemCustomMoves sParty_TrainerTest4[] = {
 static const struct TrainerMonItemCustomMoves sParty_TrainerTest5[] = {
     {
     .iv = 255,
-    .lvl = 77,
-    .species = SPECIES_SKARMORY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    .lvl = 70,
+    .species = SPECIES_ZACIAN,
+    .heldItem = ITEM_RUSTED_SWORD,
+    .moves = {MOVE_BEHEMOTH_BLADE, MOVE_SWORDS_DANCE, MOVE_PLAY_ROUGH, MOVE_WILD_CHARGE}
     }
 };
 

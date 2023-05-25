@@ -67,12 +67,12 @@ EventBecomeChampion_EventScript_YouAreTheChampion::
 	setmonmove 4, 1, MOVE_CRUNCH
 	setmonmove 4, 2, MOVE_EARTHQUAKE
 	setmonmove 4, 3, MOVE_FIRE_PUNCH
-	givemon SPECIES_TOGETIC, 70, ITEM_NONE
+	givemon SPECIES_TOGEKISS, 70, ITEM_NONE
 	setmonmetlocation 5, 255
 	setmonmove 5, 0, MOVE_TAILWIND
 	setmonmove 5, 1, MOVE_THUNDER_WAVE
 	setmonmove 5, 2, MOVE_DAZZLING_GLEAM
-	setmonmove 5, 3, MOVE_PSYSHOCK
+	setmonmove 5, 3, MOVE_AIR_SLASH
 	applymovement LOCALID_LANCE, EventBecomeChampion_Movement_Lance1
 	waitmovement 0x0
 	msgbox EventBecomeChampion_Text_Lance1, MSGBOX_DEFAULT

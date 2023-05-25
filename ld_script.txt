@@ -1960,6 +1960,9 @@ SECTIONS {
         sound/songs/mus_dgmn_story2_vs_final_boss.o(.rodata);
         sound/songs/mus_dgmn_story2_vs_multiplayer.o(.rodata);
         sound/songs/mus_pc_allhenshin.o(.rodata);
+        sound/songs/mus_yyyi_battle_02.o(.rodata);
+        sound/songs/mus_yyyi_battle_02_test.o(.rodata);
+        sound/songs/mus_yyyi_battle_04.o(.rodata);
     } =0
 
     lib_rodata :

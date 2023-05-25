@@ -1325,6 +1325,9 @@ gSongTable::
 	song mus_dgmn_story2_vs_final_boss, 0, 0
 	song mus_dgmn_story2_vs_multiplayer, 0, 0
 	song mus_pc_allhenshin, 0, 0
+	song mus_yyyi_battle_02, 0, 0
+	song mus_yyyi_battle_02_test, 0, 0
+	song mus_yyyi_battle_04, 0, 0
 
 	.align 2
 dummy_song_header:

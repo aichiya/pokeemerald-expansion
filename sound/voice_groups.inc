@@ -204,6 +204,7 @@
 .include "sound/voicegroups/voicegroup202.inc" @ Custom HGSS Base
 .include "sound/voicegroups/voicegroup210.inc" @ [Main] THPPRF custom
 .include "sound/voicegroups/voicegroup211.inc" @ [Main] THPPZGS custom
+
 .include "sound/voicegroups/voicegroup216.inc" @ -- Start HGSS Voicegroups --
 .include "sound/voicegroups/voicegroup219.inc"
 .include "sound/voicegroups/voicegroup220.inc"
@@ -252,10 +253,13 @@
 .include "sound/voicegroups/voicegroup271.inc"
 .include "sound/voicegroups/voicegroup272.inc"
 .include "sound/voicegroups/voicegroup273.inc" @ --End HGSS Voicegroups--
+
 .include "sound/voicegroups/voicegroup500.inc" @ --Blank voicegroup--
+
 .include "sound/voicegroups/voicegroup501.inc" @ [Main] Futari wa Precure MH GBA instruments
 .include "sound/voicegroups/voicegroup502.inc" @ Futari wa Precure MH GBA drum set 1
 .include "sound/voicegroups/voicegroup503.inc" @ Futari wa Precure MH GBA drum set 2
+
 .include "sound/voicegroups/voicegroup504.inc" @ --Start PMD Voicegroups-- | [Main] PMD GBA main 1 instruments for squence 1 - 99
 .include "sound/voicegroups/voicegroup505.inc" @ [Main] PMD GBA main 2 instruments for squence 100 - 199
 .include "sound/voicegroups/voicegroup506.inc" @ PMD GBA Drum 1
@@ -283,3 +287,4 @@
 .include "sound/voicegroups/voicegroup528.inc"
 .include "sound/voicegroups/voicegroup529.inc"
 .include "sound/voicegroups/voicegroup530.inc" @ --End PMD Voicegroups--
+

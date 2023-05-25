@@ -1097,7 +1097,7 @@ mus_yyyi_battle_04_3:
 @ 003   ----------------------------------------
 	.byte		N12   , Cn1 , v084
 	.byte		N02   , As1 , v080
-	.byte		N48   , Cn3 , v084
+	.byte		N48   , Bn2 , v084
 	.byte	W06
 	.byte		N02   , As1 , v080
 	.byte	W12
@@ -1110,7 +1110,7 @@ mus_yyyi_battle_04_3:
 	.byte		        Bn1 
 	.byte	W03
 	.byte		N12   , Cn1 , v084
-	.byte		N48   , Cn3 
+	.byte		N48   , Bn2 
 	.byte	W24
 	.byte		N03   , Cn1 
 	.byte		N03   , As1 
@@ -1410,6 +1410,7 @@ mus_yyyi_battle_04_3_005:
 mus_yyyi_battle_04_4:
 	.byte	KEYSH , mus_yyyi_battle_04_key+0
 @ 000   ----------------------------------------
+	.byte		VOL   , 127*mus_yyyi_battle_04_mvl/mxv
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
@@ -1426,7 +1427,6 @@ mus_yyyi_battle_04_4:
 @ 007   ----------------------------------------
 	.byte	W96
 @ 008   ----------------------------------------
-	.byte		VOL   , 127*mus_yyyi_battle_04_mvl/mxv
 	.byte		VOICE , 91
 	.byte	W48
 	.byte		N23   , Fs2 , v088
@@ -1546,9 +1546,9 @@ mus_yyyi_battle_04_4:
 @**************** Track 5 (Midi-Chn.5) ****************@
 
 mus_yyyi_battle_04_5:
-	.byte		VOL   , 127*mus_yyyi_battle_04_mvl/mxv
 	.byte	KEYSH , mus_yyyi_battle_04_key+0
 @ 000   ----------------------------------------
+	.byte		VOL   , 127*mus_yyyi_battle_04_mvl/mxv
 	.byte		VOICE , 73
 	.byte		N18   , Cs5 , v076
 	.byte	W18
@@ -1584,8 +1584,11 @@ mus_yyyi_battle_04_5:
 	.byte		        6
 	.byte	W01
 	.byte		        16
-	.byte	W10
+	.byte	W09
+	.byte		        16
+	.byte	W01
 @ 002   ----------------------------------------
+	.byte		        0
 	.byte		N18   , Cs5 , v076
 	.byte	W18
 	.byte		N04   , An4 
@@ -1596,10 +1599,8 @@ mus_yyyi_battle_04_5:
 	.byte	W12
 	.byte		        Gs4 
 	.byte		N08   , Bn4 
-	.byte	W01
-	.byte		MOD   , 15
-	.byte	W11
-	.byte		N08   , Bn3 
+	.byte	W12
+	.byte		        Bn3 
 	.byte		N08   , En4 
 	.byte	W12
 @ 003   ----------------------------------------
@@ -1608,91 +1609,44 @@ mus_yyyi_battle_04_5:
 	.byte	W48
 	.byte		        En4 
 	.byte		N48   , Gs4 
-	.byte	W12
-	.byte		MOD   , 14
-	.byte	W36
+	.byte	W48
 @ 004   ----------------------------------------
 	.byte		N96   , Fs4 , v036
-	.byte	W48
-	.byte		MOD   , 13
-	.byte	W48
+	.byte	W96
 @ 005   ----------------------------------------
-	.byte		N96   , Dn4 
-	.byte	W32
-	.byte	W03
-	.byte		MOD   , 12
-	.byte	W60
-	.byte	W01
+	.byte		        Dn4 
+	.byte	W96
 @ 006   ----------------------------------------
-	.byte		N96   , En4 
-	.byte	W22
-	.byte		MOD   , 11
-	.byte	W72
-	.byte	W02
+	.byte		        En4 
+	.byte	W96
 @ 007   ----------------------------------------
 	.byte		N48   , An3 
-	.byte	W09
-	.byte		MOD   , 10
-	.byte	W36
-	.byte	W03
-	.byte		N48   , Bn3 
-	.byte	W44
-	.byte		MOD   , 9
-	.byte	W04
+	.byte	W48
+	.byte		        Bn3 
+	.byte	W48
 @ 008   ----------------------------------------
-	.byte	W78
-	.byte	W01
-	.byte		        8
-	.byte	W17
+	.byte	W96
 @ 009   ----------------------------------------
-	.byte	W66
-	.byte		        7
-	.byte	W30
+	.byte	W96
 @ 010   ----------------------------------------
-	.byte	W52
-	.byte	W01
-	.byte		        6
-	.byte	W42
-	.byte	W01
+	.byte	W96
 @ 011   ----------------------------------------
-	.byte	W40
-	.byte		        5
-	.byte	W56
+	.byte	W96
 @ 012   ----------------------------------------
-	.byte	W24
-	.byte	W03
-	.byte		        4
-	.byte	W68
-	.byte	W01
+	.byte	W96
 @ 013   ----------------------------------------
-	.byte	W14
-	.byte		        3
-	.byte	W80
-	.byte	W02
+	.byte	W96
 @ 014   ----------------------------------------
-	.byte	W01
-	.byte		        2
-	.byte	W80
-	.byte	W03
-	.byte		        1
-	.byte	W12
+	.byte	W96
 @ 015   ----------------------------------------
 	.byte	W72
-	.byte		        0
+	.byte		MOD   , 0
 	.byte		N24   , Fs4 , v080
 	.byte	W24
 @ 016   ----------------------------------------
 	.byte		MOD   , 0
 	.byte		N44   , Cs5 
-	.byte	W32
-	.byte		MOD   , 12
-	.byte	W01
-	.byte		        18
-	.byte	W08
-	.byte		        18
-	.byte	W01
-	.byte		        0
-	.byte	W06
+	.byte	W48
 	.byte		N10   , Bn4 
 	.byte	W12
 	.byte		        An4 
@@ -1731,15 +1685,7 @@ mus_yyyi_battle_04_5:
 	.byte		N24   , An4 , v076
 	.byte	W24
 	.byte		        Cs5 
-	.byte	W08
-	.byte		MOD   , 12
-	.byte	W01
-	.byte		        18
-	.byte	W08
-	.byte		        18
-	.byte	W01
-	.byte		        0
-	.byte	W06
+	.byte	W24
 	.byte		N12   , Bn4 
 	.byte	W12
 	.byte		        An4 
@@ -1915,6 +1861,7 @@ mus_yyyi_battle_04_6_004:
 mus_yyyi_battle_04_7:
 	.byte	KEYSH , mus_yyyi_battle_04_key+0
 @ 000   ----------------------------------------
+	.byte		VOL   , 127*mus_yyyi_battle_04_mvl/mxv
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
@@ -1923,7 +1870,6 @@ mus_yyyi_battle_04_7:
 @ 003   ----------------------------------------
 	.byte	W96
 @ 004   ----------------------------------------
-	.byte		VOL   , 127*mus_yyyi_battle_04_mvl/mxv
 	.byte		VOICE , 25
 	.byte		N06   , En2 , v060
 	.byte		N06   , Bn2 

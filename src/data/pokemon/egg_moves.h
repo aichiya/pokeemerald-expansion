@@ -3,6 +3,7 @@
 #define egg_moves(species, moves...) (SPECIES_##species + EGG_MOVES_SPECIES_OFFSET), moves
 
 const u16 gEggMoves[] = {
+/*
     egg_moves(BULBASAUR,
         MOVE_SKULL_BASH,
         MOVE_CHARM,
@@ -4421,6 +4422,9 @@ const u16 gEggMoves[] = {
         MOVE_FAKE_OUT,
         MOVE_PSYCHO_SHIFT,
         MOVE_HEAL_PULSE),
+*/
+	egg_moves(MEW,
+		MOVE_PSYCHIC),
 
     EGG_MOVES_TERMINATOR
 };

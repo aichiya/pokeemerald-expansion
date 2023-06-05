@@ -1,4190 +1,3367 @@
 	.align 2
 gCryTable::
-	cry Cry_Bulbasaur
-	cry Cry_Ivysaur
-	cry Cry_Venusaur
-	cry Cry_Charmander
-	cry Cry_Charmeleon
-	cry Cry_Charizard
-	cry Cry_Squirtle
-	cry Cry_Wartortle
-	cry Cry_Blastoise
-	cry Cry_Caterpie
-	cry Cry_Metapod
-	cry Cry_Butterfree
-	cry Cry_Weedle
-	cry Cry_Kakuna
-	cry Cry_Beedrill
-	cry Cry_Pidgey
-	cry Cry_Pidgeotto
-	cry Cry_Pidgeot
-	cry Cry_Rattata
-	cry Cry_Raticate
-	cry Cry_Spearow
-	cry Cry_Fearow
-	cry Cry_Ekans
-	cry Cry_Arbok
-	cry Cry_Pikachu
-	cry Cry_Raichu
-	cry Cry_Sandshrew
-	cry Cry_Sandslash
-	cry Cry_NidoranF
-	cry Cry_Nidorina
-	cry Cry_Nidoqueen
-	cry Cry_NidoranM
-	cry Cry_Nidorino
-	cry Cry_Nidoking
-	cry Cry_Clefairy
-	cry Cry_Clefable
-	cry Cry_Vulpix
-	cry Cry_Ninetales
-	cry Cry_Jigglypuff
-	cry Cry_Wigglytuff
-	cry Cry_Zubat
-	cry Cry_Golbat
-	cry Cry_Oddish
-	cry Cry_Gloom
-	cry Cry_Vileplume
-	cry Cry_Paras
-	cry Cry_Parasect
-	cry Cry_Venonat
-	cry Cry_Venomoth
-	cry Cry_Diglett
-	cry Cry_Dugtrio
-	cry Cry_Meowth
-	cry Cry_Persian
-	cry Cry_Psyduck
-	cry Cry_Golduck
-	cry Cry_Mankey
-	cry Cry_Primeape
-	cry Cry_Growlithe
-	cry Cry_Arcanine
-	cry Cry_Poliwag
-	cry Cry_Poliwhirl
-	cry Cry_Poliwrath
-	cry Cry_Abra
-	cry Cry_Kadabra
-	cry Cry_Alakazam
-	cry Cry_Machop
-	cry Cry_Machoke
-	cry Cry_Machamp
-	cry Cry_Bellsprout
-	cry Cry_Weepinbell
-	cry Cry_Victreebel
-	cry Cry_Tentacool
-	cry Cry_Tentacruel
-	cry Cry_Geodude
-	cry Cry_Graveler
-	cry Cry_Golem
-	cry Cry_Ponyta
-	cry Cry_Rapidash
-	cry Cry_Slowpoke
-	cry Cry_Slowbro
-	cry Cry_Magnemite
-	cry Cry_Magneton
-	cry Cry_Farfetchd
-	cry Cry_Doduo
-	cry Cry_Dodrio
-	cry Cry_Seel
-	cry Cry_Dewgong
-	cry Cry_Grimer
-	cry Cry_Muk
-	cry Cry_Shellder
-	cry Cry_Cloyster
-	cry Cry_Gastly
-	cry Cry_Haunter
-	cry Cry_Gengar
-	cry Cry_Onix
-	cry Cry_Drowzee
-	cry Cry_Hypno
-	cry Cry_Krabby
-	cry Cry_Kingler
-	cry Cry_Voltorb
-	cry Cry_Electrode
-	cry Cry_Exeggcute
-	cry Cry_Exeggutor
-	cry Cry_Cubone
-	cry Cry_Marowak
-	cry Cry_Hitmonlee
-	cry Cry_Hitmonchan
-	cry Cry_Lickitung
-	cry Cry_Koffing
-	cry Cry_Weezing
-	cry Cry_Rhyhorn
-	cry Cry_Rhydon
-	cry Cry_Chansey
-	cry Cry_Tangela
-	cry Cry_Kangaskhan
-	cry Cry_Horsea
-	cry Cry_Seadra
-	cry Cry_Goldeen
-	cry Cry_Seaking
-	cry Cry_Staryu
-	cry Cry_Starmie
-	cry Cry_MrMime
-	cry Cry_Scyther
-	cry Cry_Jynx
-	cry Cry_Electabuzz
-	cry Cry_Magmar
-	cry Cry_Pinsir
-	cry Cry_Tauros
-	cry Cry_Magikarp
-	cry Cry_Gyarados
-	cry Cry_Lapras
-	cry Cry_Ditto
-	cry Cry_Eevee
-	cry Cry_Vaporeon
-	cry Cry_Jolteon
-	cry Cry_Flareon
-	cry Cry_Porygon
-	cry Cry_Omanyte
-	cry Cry_Omastar
-	cry Cry_Kabuto
-	cry Cry_Kabutops
-	cry Cry_Aerodactyl
-	cry Cry_Snorlax
-	cry Cry_Articuno
-	cry Cry_Zapdos
-	cry Cry_Moltres
-	cry Cry_Dratini
-	cry Cry_Dragonair
-	cry Cry_Dragonite
-	cry Cry_Mewtwo
-	cry Cry_Mew
-	cry Cry_Chikorita
-	cry Cry_Bayleef
-	cry Cry_Meganium
-	cry Cry_Cyndaquil
-	cry Cry_Quilava
-	cry Cry_Typhlosion
-	cry Cry_Totodile
-	cry Cry_Croconaw
-	cry Cry_Feraligatr
-	cry Cry_Sentret
-	cry Cry_Furret
-	cry Cry_Hoothoot
-	cry Cry_Noctowl
-	cry Cry_Ledyba
-	cry Cry_Ledian
-	cry Cry_Spinarak
-	cry Cry_Ariados
-	cry Cry_Crobat
-	cry Cry_Chinchou
-	cry Cry_Lanturn
-	cry Cry_Pichu
-	cry Cry_Cleffa
-	cry Cry_Igglybuff
-	cry Cry_Togepi
-	cry Cry_Togetic
-	cry Cry_Natu
-	cry Cry_Xatu
-	cry Cry_Mareep
-	cry Cry_Flaaffy
-	cry Cry_Ampharos
-	cry Cry_Bellossom
-	cry Cry_Marill
-	cry Cry_Azumarill
-	cry Cry_Sudowoodo
-	cry Cry_Politoed
-	cry Cry_Hoppip
-	cry Cry_Skiploom
-	cry Cry_Jumpluff
-	cry Cry_Aipom
-	cry Cry_Sunkern
-	cry Cry_Sunflora
-	cry Cry_Yanma
-	cry Cry_Wooper
-	cry Cry_Quagsire
-	cry Cry_Espeon
-	cry Cry_Umbreon
-	cry Cry_Murkrow
-	cry Cry_Slowking
-	cry Cry_Misdreavus
-	cry Cry_Unown
-	cry Cry_Wobbuffet
-	cry Cry_Girafarig
-	cry Cry_Pineco
-	cry Cry_Forretress
-	cry Cry_Dunsparce
-	cry Cry_Gligar
-	cry Cry_Steelix
-	cry Cry_Snubbull
-	cry Cry_Granbull
-	cry Cry_Qwilfish
-	cry Cry_Scizor
-	cry Cry_Shuckle
-	cry Cry_Heracross
-	cry Cry_Sneasel
-	cry Cry_Teddiursa
-	cry Cry_Ursaring
-	cry Cry_Slugma
-	cry Cry_Magcargo
-	cry Cry_Swinub
-	cry Cry_Piloswine
-	cry Cry_Corsola
-	cry Cry_Remoraid
-	cry Cry_Octillery
-	cry Cry_Delibird
-	cry Cry_Mantine
-	cry Cry_Skarmory
-	cry Cry_Houndour
-	cry Cry_Houndoom
-	cry Cry_Kingdra
-	cry Cry_Phanpy
-	cry Cry_Donphan
-	cry Cry_Porygon2
-	cry Cry_Stantler
-	cry Cry_Smeargle
-	cry Cry_Tyrogue
-	cry Cry_Hitmontop
-	cry Cry_Smoochum
-	cry Cry_Elekid
-	cry Cry_Magby
-	cry Cry_Miltank
-	cry Cry_Blissey
-	cry Cry_Raikou
-	cry Cry_Entei
-	cry Cry_Suicune
-	cry Cry_Larvitar
-	cry Cry_Pupitar
-	cry Cry_Tyranitar
-	cry Cry_Lugia
-	cry Cry_HoOh
-	cry Cry_Celebi
-	cry Cry_Treecko
-	cry Cry_Grovyle
-	cry Cry_Sceptile
-	cry Cry_Torchic
-	cry Cry_Combusken
-	cry Cry_Blaziken
-	cry Cry_Mudkip
-	cry Cry_Marshtomp
-	cry Cry_Swampert
-	cry Cry_Poochyena
-	cry Cry_Mightyena
-	cry Cry_Zigzagoon
-	cry Cry_Linoone
-	cry Cry_Wurmple
-	cry Cry_Silcoon
-	cry Cry_Beautifly
-	cry Cry_Cascoon
-	cry Cry_Dustox
-	cry Cry_Lotad
-	cry Cry_Lombre
-	cry Cry_Ludicolo
-	cry Cry_Seedot
-	cry Cry_Nuzleaf
-	cry Cry_Shiftry
-	cry Cry_Taillow
-	cry Cry_Swellow
-	cry Cry_Wingull
-	cry Cry_Pelipper
-	cry Cry_Ralts
-	cry Cry_Kirlia
-	cry Cry_Gardevoir
-	cry Cry_Surskit
-	cry Cry_Masquerain
-	cry Cry_Shroomish
-	cry Cry_Breloom
-	cry Cry_Slakoth
-	cry Cry_Vigoroth
-	cry Cry_Slaking
-	cry Cry_Nincada
-	cry Cry_Ninjask
-	cry Cry_Shedinja
-	cry Cry_Whismur
-	cry Cry_Loudred
-	cry Cry_Exploud
-	cry Cry_Makuhita
-	cry Cry_Hariyama
-	cry Cry_Azurill
-	cry Cry_Nosepass
-	cry Cry_Skitty
-	cry Cry_Delcatty
-	cry Cry_Sableye
-	cry Cry_Mawile
-	cry Cry_Aron
-	cry Cry_Lairon
-	cry Cry_Aggron
-	cry Cry_Meditite
-	cry Cry_Medicham
-	cry Cry_Electrike
-	cry Cry_Manectric
-	cry Cry_Plusle
-	cry Cry_Minun
-	cry Cry_Volbeat
-	cry Cry_Illumise
-	cry Cry_Roselia
-	cry Cry_Gulpin
-	cry Cry_Swalot
-	cry Cry_Carvanha
-	cry Cry_Sharpedo
-	cry Cry_Wailmer
-	cry Cry_Wailord
-	cry Cry_Numel
-	cry Cry_Camerupt
-	cry Cry_Torkoal
-	cry Cry_Spoink
-	cry Cry_Grumpig
-	cry Cry_Spinda
-	cry Cry_Trapinch
-	cry Cry_Vibrava
-	cry Cry_Flygon
-	cry Cry_Cacnea
-	cry Cry_Cacturne
-	cry Cry_Swablu
-	cry Cry_Altaria
-	cry Cry_Zangoose
-	cry Cry_Seviper
-	cry Cry_Lunatone
-	cry Cry_Solrock
-	cry Cry_Barboach
-	cry Cry_Whiscash
-	cry Cry_Corphish
-	cry Cry_Crawdaunt
-	cry Cry_Baltoy
-	cry Cry_Claydol
-	cry Cry_Lileep
-	cry Cry_Cradily
-	cry Cry_Anorith
-	cry Cry_Armaldo
-	cry Cry_Feebas
-	cry Cry_Milotic
-	cry Cry_Castform
-	cry Cry_Kecleon
-	cry Cry_Shuppet
-	cry Cry_Banette
-	cry Cry_Duskull
-	cry Cry_Dusclops
-	cry Cry_Tropius
-	cry Cry_Chimecho
-	cry Cry_Absol
-	cry Cry_Wynaut
-	cry Cry_Snorunt
-	cry Cry_Glalie
-	cry Cry_Spheal
-	cry Cry_Sealeo
-	cry Cry_Walrein
-	cry Cry_Clamperl
-	cry Cry_Huntail
-	cry Cry_Gorebyss
-	cry Cry_Relicanth
-	cry Cry_Luvdisc
-	cry Cry_Bagon
-	cry Cry_Shelgon
-	cry Cry_Salamence
-	cry Cry_Beldum
-	cry Cry_Metang
-	cry Cry_Metagross
-	cry Cry_Regirock
-	cry Cry_Regice
-	cry Cry_Registeel
-	cry Cry_Latias
-	cry Cry_Latios
-	cry Cry_Kyogre
-	cry Cry_Groudon
-	cry Cry_Rayquaza
-	cry Cry_Jirachi
-	cry Cry_Deoxys
-.if P_GEN_4_POKEMON == TRUE
-	cry Cry_Turtwig
-	cry Cry_Grotle
-	cry Cry_Torterra
-	cry Cry_Chimchar
-	cry Cry_Monferno
-	cry Cry_Infernape
-	cry Cry_Piplup
-	cry Cry_Prinplup
-	cry Cry_Empoleon
-	cry Cry_Starly
-	cry Cry_Staravia
-	cry Cry_Staraptor
-	cry Cry_Bidoof
-	cry Cry_Bibarel
-	cry Cry_Kricketot
-	cry Cry_Kricketune
-	cry Cry_Shinx
-	cry Cry_Luxio
-	cry Cry_Luxray
-	cry Cry_Budew
-	cry Cry_Roserade
-	cry Cry_Cranidos
-	cry Cry_Rampardos
-	cry Cry_Shieldon
-	cry Cry_Bastiodon
-	cry Cry_Burmy
-	cry Cry_Wormadam
-	cry Cry_Mothim
-	cry Cry_Combee
-	cry Cry_Vespiquen
-	cry Cry_Pachirisu
-	cry Cry_Buizel
-	cry Cry_Floatzel
-	cry Cry_Cherubi
-	cry Cry_Cherrim
-	cry Cry_Shellos
-	cry Cry_Gastrodon
-	cry Cry_Ambipom
-	cry Cry_Drifloon
-	cry Cry_Drifblim
-	cry Cry_Buneary
-	cry Cry_Lopunny
-	cry Cry_Mismagius
-	cry Cry_Honchkrow
-	cry Cry_Glameow
-	cry Cry_Purugly
-	cry Cry_Chingling
-	cry Cry_Stunky
-	cry Cry_Skuntank
-	cry Cry_Bronzor
-	cry Cry_Bronzong
-	cry Cry_Bonsly
-	cry Cry_MimeJr
-	cry Cry_Happiny
-	cry Cry_Chatot
-	cry Cry_Spiritomb
-	cry Cry_Gible
-	cry Cry_Gabite
-	cry Cry_Garchomp
-	cry Cry_Munchlax
-	cry Cry_Riolu
-	cry Cry_Lucario
-	cry Cry_Hippopotas
-	cry Cry_Hippowdon
-	cry Cry_Skorupi
-	cry Cry_Drapion
-	cry Cry_Croagunk
-	cry Cry_Toxicroak
-	cry Cry_Carnivine
-	cry Cry_Finneon
-	cry Cry_Lumineon
-	cry Cry_Mantyke
-	cry Cry_Snover
-	cry Cry_Abomasnow
-	cry Cry_Weavile
-	cry Cry_Magnezone
-	cry Cry_Lickilicky
-	cry Cry_Rhyperior
-	cry Cry_Tangrowth
-	cry Cry_Electivire
-	cry Cry_Magmortar
-	cry Cry_Togekiss
-	cry Cry_Yanmega
-	cry Cry_Leafeon
-	cry Cry_Glaceon
-	cry Cry_Gliscor
-	cry Cry_Mamoswine
-	cry Cry_PorygonZ
-	cry Cry_Gallade
-	cry Cry_Probopass
-	cry Cry_Dusknoir
-	cry Cry_Froslass
-	cry Cry_Rotom
-	cry Cry_Uxie
-	cry Cry_Mesprit
-	cry Cry_Azelf
-	cry Cry_Dialga
-	cry Cry_Palkia
-	cry Cry_Heatran
-	cry Cry_Regigigas
-	cry Cry_Giratina
-	cry Cry_Cresselia
-	cry Cry_Phione
-	cry Cry_Manaphy
-	cry Cry_Darkrai
-	cry Cry_Shaymin
-	cry Cry_Arceus
-.else
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-.if P_GEN_5_POKEMON == TRUE
-	cry Cry_Victini
-	cry Cry_Snivy
-	cry Cry_Servine
-	cry Cry_Serperior
-	cry Cry_Tepig
-	cry Cry_Pignite
-	cry Cry_Emboar
-	cry Cry_Oshawott
-	cry Cry_Dewott
-	cry Cry_Samurott
-	cry Cry_Patrat
-	cry Cry_Watchog
-	cry Cry_Lillipup
-	cry Cry_Herdier
-	cry Cry_Stoutland
-	cry Cry_Purrloin
-	cry Cry_Liepard
-	cry Cry_Pansage
-	cry Cry_Simisage
-	cry Cry_Pansear
-	cry Cry_Simisear
-	cry Cry_Panpour
-	cry Cry_Simipour
-	cry Cry_Munna
-	cry Cry_Musharna
-	cry Cry_Pidove
-	cry Cry_Tranquill
-	cry Cry_Unfezant
-	cry Cry_Blitzle
-	cry Cry_Zebstrika
-	cry Cry_Roggenrola
-	cry Cry_Boldore
-	cry Cry_Gigalith
-	cry Cry_Woobat
-	cry Cry_Swoobat
-	cry Cry_Drilbur
-	cry Cry_Excadrill
-	cry Cry_Audino
-	cry Cry_Timburr
-	cry Cry_Gurdurr
-	cry Cry_Conkeldurr
-	cry Cry_Tympole
-	cry Cry_Palpitoad
-	cry Cry_Seismitoad
-	cry Cry_Throh
-	cry Cry_Sawk
-	cry Cry_Sewaddle
-	cry Cry_Swadloon
-	cry Cry_Leavanny
-	cry Cry_Venipede
-	cry Cry_Whirlipede
-	cry Cry_Scolipede
-	cry Cry_Cottonee
-	cry Cry_Whimsicott
-	cry Cry_Petilil
-	cry Cry_Lilligant
-	cry Cry_Basculin
-	cry Cry_Sandile
-	cry Cry_Krokorok
-	cry Cry_Krookodile
-	cry Cry_Darumaka
-	cry Cry_Darmanitan
-	cry Cry_Maractus
-	cry Cry_Dwebble
-	cry Cry_Crustle
-	cry Cry_Scraggy
-	cry Cry_Scrafty
-	cry Cry_Sigilyph
-	cry Cry_Yamask
-	cry Cry_Cofagrigus
-	cry Cry_Tirtouga
-	cry Cry_Carracosta
-	cry Cry_Archen
-	cry Cry_Archeops
-	cry Cry_Trubbish
-	cry Cry_Garbodor
-	cry Cry_Zorua
-	cry Cry_Zoroark
-	cry Cry_Minccino
-	cry Cry_Cinccino
-	cry Cry_Gothita
-	cry Cry_Gothorita
-	cry Cry_Gothitelle
-	cry Cry_Solosis
-	cry Cry_Duosion
-	cry Cry_Reuniclus
-	cry Cry_Ducklett
-	cry Cry_Swanna
-	cry Cry_Vanillite
-	cry Cry_Vanillish
-	cry Cry_Vanilluxe
-	cry Cry_Deerling
-	cry Cry_Sawsbuck
-	cry Cry_Emolga
-	cry Cry_Karrablast
-	cry Cry_Escavalier
-	cry Cry_Foongus
-	cry Cry_Amoonguss
-	cry Cry_Frillish
-	cry Cry_Jellicent
-	cry Cry_Alomomola
-	cry Cry_Joltik
-	cry Cry_Galvantula
-	cry Cry_Ferroseed
-	cry Cry_Ferrothorn
-	cry Cry_Klink
-	cry Cry_Klang
-	cry Cry_Klinklang
-	cry Cry_Tynamo
-	cry Cry_Eelektrik
-	cry Cry_Eelektross
-	cry Cry_Elgyem
-	cry Cry_Beheeyem
-	cry Cry_Litwick
-	cry Cry_Lampent
-	cry Cry_Chandelure
-	cry Cry_Axew
-	cry Cry_Fraxure
-	cry Cry_Haxorus
-	cry Cry_Cubchoo
-	cry Cry_Beartic
-	cry Cry_Cryogonal
-	cry Cry_Shelmet
-	cry Cry_Accelgor
-	cry Cry_Stunfisk
-	cry Cry_Mienfoo
-	cry Cry_Mienshao
-	cry Cry_Druddigon
-	cry Cry_Golett
-	cry Cry_Golurk
-	cry Cry_Pawniard
-	cry Cry_Bisharp
-	cry Cry_Bouffalant
-	cry Cry_Rufflet
-	cry Cry_Braviary
-	cry Cry_Vullaby
-	cry Cry_Mandibuzz
-	cry Cry_Heatmor
-	cry Cry_Durant
-	cry Cry_Deino
-	cry Cry_Zweilous
-	cry Cry_Hydreigon
-	cry Cry_Larvesta
-	cry Cry_Volcarona
-	cry Cry_Cobalion
-	cry Cry_Terrakion
-	cry Cry_Virizion
-	cry Cry_Tornadus
-	cry Cry_Thundurus
-	cry Cry_Reshiram
-	cry Cry_Zekrom
-	cry Cry_Landorus
-	cry Cry_Kyurem
-	cry Cry_Keldeo
-	cry Cry_Meloetta
-	cry Cry_Genesect
-.else
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-.if P_GEN_6_POKEMON == TRUE
-	cry Cry_Chespin
-	cry Cry_Quilladin
-	cry Cry_Chesnaught
-	cry Cry_Fennekin
-	cry Cry_Braixen
-	cry Cry_Delphox
-	cry Cry_Froakie
-	cry Cry_Frogadier
-	cry Cry_Greninja
-	cry Cry_Bunnelby
-	cry Cry_Diggersby
-	cry Cry_Fletchling
-	cry Cry_Fletchinder
-	cry Cry_Talonflame
-	cry Cry_Scatterbug
-	cry Cry_Spewpa
-	cry Cry_Vivillon
-	cry Cry_Litleo
-	cry Cry_Pyroar
-	cry Cry_Flabebe
-	cry Cry_Floette
-	cry Cry_Florges
-	cry Cry_Skiddo
-	cry Cry_Gogoat
-	cry Cry_Pancham
-	cry Cry_Pangoro
-	cry Cry_Furfrou
-	cry Cry_Espurr
-	cry Cry_Meowstic
-	cry Cry_Honedge
-	cry Cry_Doublade
-	cry Cry_Aegislash
-	cry Cry_Spritzee
-	cry Cry_Aromatisse
-	cry Cry_Swirlix
-	cry Cry_Slurpuff
-	cry Cry_Inkay
-	cry Cry_Malamar
-	cry Cry_Binacle
-	cry Cry_Barbaracle
-	cry Cry_Skrelp
-	cry Cry_Dragalge
-	cry Cry_Clauncher
-	cry Cry_Clawitzer
-	cry Cry_Helioptile
-	cry Cry_Heliolisk
-	cry Cry_Tyrunt
-	cry Cry_Tyrantrum
-	cry Cry_Amaura
-	cry Cry_Aurorus
-	cry Cry_Sylveon
-	cry Cry_Hawlucha
-	cry Cry_Dedenne
-	cry Cry_Carbink
-	cry Cry_Goomy
-	cry Cry_Sliggoo
-	cry Cry_Goodra
-	cry_uncomp Cry_Klefki
-	cry Cry_Phantump
-	cry Cry_Trevenant
-	cry Cry_Pumpkaboo
-	cry Cry_Gourgeist
-	cry Cry_Bergmite
-	cry Cry_Avalugg
-	cry Cry_Noibat
-	cry Cry_Noivern
-	cry Cry_Xerneas
-	cry Cry_Yveltal
-	cry Cry_Zygarde
-	cry Cry_Diancie
-	cry Cry_Hoopa
-	cry Cry_Volcanion
-.else
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-.if P_GEN_7_POKEMON == TRUE
-	cry Cry_Rowlet
-	cry Cry_Dartrix
-	cry Cry_Decidueye
-	cry Cry_Litten
-	cry Cry_Torracat
-	cry Cry_Incineroar
-	cry Cry_Popplio
-	cry Cry_Brionne
-	cry Cry_Primarina
-	cry Cry_Pikipek
-	cry Cry_Trumbeak
-	cry Cry_Toucannon
-	cry Cry_Yungoos
-	cry Cry_Gumshoos
-	cry Cry_Grubbin
-	cry Cry_Charjabug
-	cry Cry_Vikavolt
-	cry Cry_Crabrawler
-	cry Cry_Crabominable
-	cry Cry_Oricorio
-	cry Cry_Cutiefly
-	cry Cry_Ribombee
-	cry Cry_Rockruff
-	cry Cry_Lycanroc
-	cry Cry_Wishiwashi
-	cry Cry_Mareanie
-	cry Cry_Toxapex
-	cry Cry_Mudbray
-	cry Cry_Mudsdale
-	cry Cry_Dewpider
-	cry Cry_Araquanid
-	cry Cry_Fomantis
-	cry Cry_Lurantis
-	cry Cry_Morelull
-	cry Cry_Shiinotic
-	cry Cry_Salandit
-	cry Cry_Salazzle
-	cry Cry_Stufful
-	cry Cry_Bewear
-	cry Cry_Bounsweet
-	cry Cry_Steenee
-	cry Cry_Tsareena
-	cry Cry_Comfey
-	cry Cry_Oranguru
-	cry Cry_Passimian
-	cry Cry_Wimpod
-	cry Cry_Golisopod
-	cry Cry_Sandygast
-	cry Cry_Palossand
-	cry Cry_Pyukumuku
-	cry Cry_TypeNull
-	cry Cry_Silvally
-	cry Cry_Minior
-	cry Cry_Komala
-	cry Cry_Turtonator
-	cry Cry_Togedemaru
-	cry Cry_Mimikyu
-	cry Cry_Bruxish
-	cry Cry_Drampa
-	cry Cry_Dhelmise
-	cry Cry_Jangmoo
-	cry Cry_Hakamoo
-	cry Cry_Kommoo
-	cry Cry_TapuKoko
-	cry Cry_TapuLele
-	cry Cry_TapuBulu
-	cry Cry_TapuFini
-	cry Cry_Cosmog
-	cry Cry_Cosmoem
-	cry Cry_Solgaleo
-	cry Cry_Lunala
-	cry Cry_Nihilego
-	cry Cry_Buzzwole
-	cry Cry_Pheromosa
-	cry Cry_Xurkitree
-	cry Cry_Celesteela
-	cry Cry_Kartana
-	cry Cry_Guzzlord
-	cry Cry_Necrozma
-	cry Cry_Magearna
-	cry Cry_Marshadow
-	cry Cry_Poipole
-	cry Cry_Naganadel
-	cry Cry_Stakataka
-	cry Cry_Blacephalon
-	cry Cry_Zeraora
-	cry Cry_Meltan
-	cry Cry_Melmetal
-.else
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-.if P_GEN_8_POKEMON == TRUE
-	cry Cry_Grookey
-	cry Cry_Thwackey
-	cry Cry_Rillaboom
-	cry Cry_Scorbunny
-	cry Cry_Raboot
-	cry Cry_Cinderace
-	cry Cry_Sobble
-	cry Cry_Drizzile
-	cry Cry_Inteleon
-	cry Cry_Skwovet
-	cry Cry_Greedent
-	cry Cry_Rookidee
-	cry Cry_Corvisquire
-	cry Cry_Corviknight
-	cry Cry_Blipbug
-	cry Cry_Dottler
-	cry Cry_Orbeetle
-	cry Cry_Nickit
-	cry Cry_Thievul
-	cry Cry_Gossifleur
-	cry Cry_Eldegoss
-	cry Cry_Wooloo
-	cry Cry_Dubwool
-	cry Cry_Chewtle
-	cry Cry_Drednaw
-	cry Cry_Yamper
-	cry Cry_Boltund
-	cry Cry_Rolycoly
-	cry Cry_Carkol
-	cry Cry_Coalossal
-	cry Cry_Applin
-	cry Cry_Flapple
-	cry Cry_Appletun
-	cry Cry_Silicobra
-	cry Cry_Sandaconda
-	cry Cry_Cramorant
-	cry Cry_Arrokuda
-	cry Cry_Barraskewda
-	cry Cry_Toxel
-	cry Cry_Toxtricity
-	cry Cry_Sizzlipede
-	cry Cry_Centiskorch
-	cry Cry_Clobbopus
-	cry Cry_Grapploct
-	cry Cry_Sinistea
-	cry Cry_Polteageist
-	cry Cry_Hatenna
-	cry Cry_Hattrem
-	cry Cry_Hatterene
-	cry Cry_Impidimp
-	cry Cry_Morgrem
-	cry Cry_Grimmsnarl
-	cry Cry_Obstagoon
-	cry Cry_Perrserker
-	cry Cry_Cursola
-	cry Cry_Sirfetchd
-	cry Cry_MrRime
-	cry Cry_Runerigus
-	cry Cry_Milcery
-	cry Cry_Alcremie
-	cry Cry_Falinks
-	cry Cry_Pincurchin
-	cry Cry_Snom
-	cry Cry_Frosmoth
-	cry Cry_Stonjourner
-	cry Cry_Eiscue
-	cry Cry_Indeedee
-	cry Cry_Morpeko
-	cry Cry_Cufant
-	cry Cry_Copperajah
-	cry Cry_Dracozolt
-	cry Cry_Arctozolt
-	cry Cry_Dracovish
-	cry Cry_Arctovish
-	cry Cry_Duraludon
-	cry Cry_Dreepy
-	cry Cry_Drakloak
-	cry Cry_Dragapult
-	cry Cry_Zacian
-	cry Cry_Zamazenta
-	cry Cry_Eternatus
-	cry Cry_Kubfu
-	cry Cry_Urshifu
-	cry Cry_Zarude
-	cry Cry_Regieleki
-	cry Cry_Regidrago
-	cry Cry_Glastrier
-	cry Cry_Spectrier
-	cry Cry_Calyrex
-	cry Cry_Wyrdeer //Cry_Wyrdeer
-	cry Cry_Kleavor //Cry_Kleavor
-	cry Cry_Ursaluna //Cry_Ursaluna
-	cry Cry_Basculegion //Cry_Basculegion
-	cry Cry_Sneasler //Cry_Sneasler
-	cry Cry_Overqwil //Cry_Overqwil
-	cry Cry_Enamorus //Cry_Enamorus
-.else
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-	@ Megas
-	cry Cry_VenusaurMega
-	cry Cry_CharizardMegaX
-	cry Cry_CharizardMegaY
-	cry Cry_BlastoiseMega
-	cry Cry_BeedrillMega
-	cry Cry_PidgeotMega
-	cry Cry_AlakazamMega
-	cry Cry_SlowbroMega
-	cry Cry_GengarMega
-	cry Cry_KangaskhanMega
-	cry Cry_PinsirMega
-	cry Cry_GyaradosMega
-	cry Cry_AerodactylMega
-	cry Cry_MewtwoMegaX
-	cry Cry_MewtwoMegaY
-	cry Cry_AmpharosMega
-	cry Cry_SteelixMega
-	cry Cry_ScizorMega
-	cry Cry_HeracrossMega
-	cry Cry_HoundoomMega
-	cry Cry_TyranitarMega
-	cry Cry_SceptileMega
-	cry Cry_BlazikenMega
-	cry Cry_SwampertMega
-	cry Cry_GardevoirMega
-	cry Cry_SableyeMega
-	cry Cry_MawileMega
-	cry Cry_AggronMega
-	cry Cry_MedichamMega
-	cry Cry_ManectricMega
-	cry Cry_SharpedoMega
-	cry Cry_CameruptMega
-	cry Cry_AltariaMega
-	cry Cry_BanetteMega
-	cry Cry_AbsolMega
-	cry Cry_GlalieMega
-	cry Cry_SalamenceMega
-	cry Cry_MetagrossMega
-	cry Cry_LatiasMega
-	cry Cry_LatiosMega
-.if P_GEN_4_POKEMON == TRUE
-	cry Cry_LopunnyMega
-	cry Cry_GarchompMega
-	cry Cry_LucarioMega
-	cry Cry_AbomasnowMega
-	cry Cry_GalladeMega
-.else
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-.if P_GEN_5_POKEMON == TRUE
-	cry Cry_AudinoMega
-.else
-	cry Cry_Unown
-.endif
-.if P_GEN_6_POKEMON == TRUE
-	cry Cry_DiancieMega
-.else
-	cry Cry_Unown
-.endif
-	@ Special Mega + Primals
-	cry Cry_RayquazaMega
-	cry Cry_KyogrePrimal
-	cry Cry_GroudonPrimal
-	@ Alolan Forms
-	cry Cry_Rattata
-	cry Cry_Raticate
-	cry Cry_Raichu
-	cry Cry_Sandshrew
-	cry Cry_Sandslash
-	cry Cry_Vulpix
-	cry Cry_Ninetales
-	cry Cry_Diglett
-	cry Cry_Dugtrio
-	cry Cry_Meowth
-	cry Cry_Persian
-	cry Cry_Geodude
-	cry Cry_Graveler
-	cry Cry_Golem
-	cry Cry_Grimer
-	cry Cry_Muk
-	cry Cry_Exeggutor
-	cry Cry_Marowak
-	@ Galarian Forms
-	cry Cry_Meowth
-	cry Cry_Ponyta
-	cry Cry_Rapidash
-	cry Cry_SlowpokeGalarian
-	cry Cry_Slowbro
-	cry Cry_Farfetchd
-	cry Cry_Weezing
-	cry Cry_MrMime
-	cry Cry_Articuno
-	cry Cry_Zapdos
-	cry Cry_Moltres
-	cry Cry_Slowking
-	cry Cry_Corsola
-	cry Cry_Zigzagoon
-	cry Cry_Linoone
-.if P_GEN_5_POKEMON == TRUE
-	cry Cry_Darumaka
-	cry Cry_Darmanitan
-	cry Cry_Yamask
-	cry Cry_Stunfisk
-.else
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-	@ Hisuian Forms
-	cry Cry_Growlithe
-	cry Cry_Arcanine
-	cry Cry_Voltorb
-	cry Cry_Electrode
-	cry Cry_Typhlosion
-	cry Cry_Qwilfish
-	cry Cry_Sneasel
-.if P_GEN_5_POKEMON == TRUE
-	cry Cry_Samurott
-	cry Cry_Lilligant
-	cry Cry_Zorua
-	cry Cry_Zoroark
-	cry Cry_Braviary
-.else
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-.if P_GEN_6_POKEMON == TRUE
-	cry Cry_Sliggoo
-	cry Cry_Goodra
-	cry Cry_Avalugg
-.else
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-.if P_GEN_7_POKEMON == TRUE
-	cry Cry_Decidueye
-.else
-	cry Cry_Unown
-.endif
-	@ Misc Forms
-	@ Cosplay Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	@ Cap Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	cry Cry_Pikachu
-	@ Pichu
-	cry Cry_Pichu
-	@ Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Castform
-	cry Cry_Castform
-	cry Cry_Castform
-	cry Cry_Castform
-	@ Deoxys
-	cry Cry_Deoxys
-	cry Cry_Deoxys
-	cry Cry_Deoxys
-.if P_GEN_4_POKEMON == TRUE
-	@ Burmy
-	cry Cry_Burmy
-	cry Cry_Burmy
-	@ Wormadam
-	cry Cry_Wormadam
-	cry Cry_Wormadam
-	@ Cherrim
-	cry Cry_Cherrim
-	@ Shellos
-	cry Cry_Shellos
-	@ Gastrodon
-	cry Cry_Gastrodon
-	@ Rotom
-	cry Cry_Rotom
-	cry Cry_Rotom
-	cry Cry_Rotom
-	cry Cry_Rotom
-	cry Cry_Rotom
-	@ Origin Forme
-	cry Cry_Dialga
-	cry Cry_Palkia
-	cry Cry_Giratina
-	@ Shaymin
-	cry Cry_ShayminSky
-	@ Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-	cry Cry_Arceus
-.else
-	@ Burmy
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Wormadam
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Cherrim
-	cry Cry_Unown
-	@ Shellos
-	cry Cry_Unown
-	@ Gastrodon
-	cry Cry_Unown
-	@ Rotom
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Origin Forme
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Shaymin
-	cry Cry_Unown
-	@ Arceus
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-.if P_GEN_5_POKEMON == TRUE
-	@ Basculin
-	cry Cry_Basculin
-	cry Cry_Basculin
-	@ Darmanitan
-	cry Cry_Darmanitan
-	cry Cry_Darmanitan
-	@ Deerling
-	cry Cry_Deerling
-	cry Cry_Deerling
-	cry Cry_Deerling
-	@ Sawsbuck
-	cry Cry_Sawsbuck
-	cry Cry_Sawsbuck
-	cry Cry_Sawsbuck
-	@ Therian Forms
-	cry Cry_TornadusTherian
-	cry Cry_ThundurusTherian
-	cry Cry_LandorusTherian
-	cry Cry_EnamorusTherian //Cry_EnamorusTherian
-	@ Kyurem
-	cry Cry_KyuremWhite
-	cry Cry_KyuremBlack
-	@ Keldeo
-	cry Cry_Keldeo
-	@ Meloetta
-	cry Cry_Meloetta
-	@ Genesect
-	cry Cry_Genesect
-	cry Cry_Genesect
-	cry Cry_Genesect
-	cry Cry_Genesect
-.else
-	@ Basculin
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Darmanitan
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Deerling
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Sawsbuck
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Therian Forms
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Kyurem
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Keldeo
-	cry Cry_Unown
-	@ Meloetta
-	cry Cry_Unown
-	@ Genesect
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
-.if P_GEN_6_POKEMON == TRUE
-	@ Greninja
-	cry Cry_Greninja
-	cry Cry_Greninja
-	@ Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	cry Cry_Vivillon
-	@ Flabébé
-	cry Cry_Flabebe
-	cry Cry_Flabebe
-	cry Cry_Flabebe
-	cry Cry_Flabebe
-	@ Floette
-	cry Cry_Floette
-	cry Cry_Floette
-	cry Cry_Floette
-	cry Cry_Floette
-	cry Cry_FloetteEternalFlower
-	@ Florges
-	cry Cry_Florges
-	cry Cry_Florges
-	cry Cry_Florges
-	cry Cry_Florges
-	@ Furfrou
-	cry Cry_Furfrou
-	cry Cry_Furfrou
-	cry Cry_Furfrou
-	cry Cry_Furfrou
-	cry Cry_Furfrou
-	cry Cry_Furfrou
-	cry Cry_Furfrou
-	cry Cry_Furfrou
-	cry Cry_Furfrou
-	@ Meowstic
-	cry Cry_Meowstic
-	@ Aegislash
-	cry Cry_Aegislash
-	@ Pumpkaboo
-	cry Cry_Pumpkaboo
-	cry Cry_Pumpkaboo
-	cry Cry_PumpkabooSuper
-	@ Gourgeist
-	cry Cry_Gourgeist
-	cry Cry_Gourgeist
-	cry Cry_GourgeistSuper
-	@ Xerneas
-	cry Cry_Xerneas
-	@ Zygarde
-	cry Cry_Zygarde10
-	cry Cry_Zygarde10
-	cry Cry_Zygarde
-	cry Cry_ZygardeComplete
-	@ Hoopa
-	cry Cry_HoopaUnbound
-.else
-@ Greninja
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Vivillon
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Flabébé
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Floette
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Florges
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Furfrou
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Meowstic
-	cry Cry_Unown
-	@ Aegislash
-	cry Cry_Unown
-	@ Pumpkaboo
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Gourgeist
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Xerneas
-	cry Cry_Unown
-	@ Zygarde
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Hoopa
-	cry Cry_Unown
-.endif
-.if P_GEN_7_POKEMON == TRUE
-	@ Oricorio
-	cry Cry_OricorioPomPom
-	cry Cry_OricorioPau
-	cry Cry_OricorioSensu
-	@ Rockruff
-	cry Cry_Rockruff
-	@ Lycanroc
-	cry Cry_LycanrocMidnight
-	cry Cry_LycanrocDusk
-	@ Wishiwashi
-	cry Cry_WishiwashiSchool
-	@ Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	cry Cry_Silvally
-	@ Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	cry Cry_Minior
-	@ Mimikyu
-	cry Cry_Mimikyu
-	@ Necrozma
-	cry Cry_NecrozmaDuskMane
-	cry Cry_NecrozmaDawnWings
-	cry Cry_NecrozmaUltra
-	@ Magearna
-	cry Cry_Magearna
-.else
-	@ Oricorio
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Rockruff
-	cry Cry_Unown
-	@ Lycanroc
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Wishiwashi
-	cry Cry_Unown
-	@ Silvally
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Minior
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Mimikyu
-	cry Cry_Unown
-	@ Necrozma
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Magearna
-	cry Cry_Unown
-.endif
-.if P_GEN_8_POKEMON == TRUE
-	@ Cramorant
-	cry Cry_Cramorant
-	cry Cry_Cramorant
-	@ Toxtricity
-	cry Cry_ToxtricityLowKey
-	@ Sinistea
-	cry Cry_Sinistea
-	@ Polteageist
-	cry Cry_Polteageist
-	@ Alcremie
-	cry Cry_Alcremie
-	cry Cry_Alcremie
-	cry Cry_Alcremie
-	cry Cry_Alcremie
-	cry Cry_Alcremie
-	cry Cry_Alcremie
-	cry Cry_Alcremie
-	cry Cry_Alcremie
-	@ Eiscue
-	cry Cry_EiscueNoiceFace
-	@ Indeedee
-	cry Cry_IndeedeeFemale
-	@ Morpeko
-	cry Cry_MorpekoHangry
-	@ Zacian
-	cry Cry_ZacianCrownedSword
-	@ Zamazenta
-	cry Cry_ZamazentaCrownedShield
-	@ Eternatus
-	cry Cry_EternatusEternamax
-	@ Urshifu
-	cry Cry_UrshifuRapidStrikeStyle
-	@ Zarude
-	cry Cry_Zarude
-	@ Calyrex
-	cry Cry_CalyrexIceRider
-	cry Cry_CalyrexShadowRider
-.else
-	@ Cramorant
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Toxtricity
-	cry Cry_Unown
-	@ Sinistea
-	cry Cry_Unown
-	@ Polteageist
-	cry Cry_Unown
-	@ Alcremie
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	cry Cry_Unown
-	@ Eiscue
-	cry Cry_Unown
-	@ Indeedee
-	cry Cry_Unown
-	@ Morpeko
-	cry Cry_Unown
-	@ Zacian
-	cry Cry_Unown
-	@ Zamazenta
-	cry Cry_Unown
-	@ Eternatus
-	cry Cry_Unown
-	@ Urshifu
-	cry Cry_Unown
-	@ Zarude
-	cry Cry_Unown
-	@ Calyrex
-	cry Cry_Unown
-	cry Cry_Unown
-.endif
+	cry Cry_Bulbasaur       @ SPECIES_BULBASAUR
+	cry Cry_Ivysaur       @ SPECIES_IVYSAUR
+	cry Cry_Venusaur       @ SPECIES_VENUSAUR
+	cry Cry_Charmander       @ SPECIES_CHARMANDER
+	cry Cry_Charmeleon       @ SPECIES_CHARMELEON
+	cry Cry_Charizard       @ SPECIES_CHARIZARD
+	cry Cry_Squirtle       @ SPECIES_SQUIRTLE
+	cry Cry_Wartortle       @ SPECIES_WARTORTLE
+	cry Cry_Blastoise       @ SPECIES_BLASTOISE
+	cry Cry_Caterpie       @ SPECIES_CATERPIE
+	cry Cry_Metapod       @ SPECIES_METAPOD
+	cry Cry_Butterfree       @ SPECIES_BUTTERFREE
+	cry Cry_Weedle       @ SPECIES_WEEDLE
+	cry Cry_Kakuna       @ SPECIES_KAKUNA
+	cry Cry_Beedrill       @ SPECIES_BEEDRILL
+	cry Cry_Pidgey       @ SPECIES_PIDGEY
+	cry Cry_Pidgeotto       @ SPECIES_PIDGEOTTO
+	cry Cry_Pidgeot       @ SPECIES_PIDGEOT
+	cry Cry_Rattata       @ SPECIES_RATTATA
+	cry Cry_Raticate       @ SPECIES_RATICATE
+	cry Cry_Spearow       @ SPECIES_SPEAROW
+	cry Cry_Fearow       @ SPECIES_FEAROW
+	cry Cry_Ekans       @ SPECIES_EKANS
+	cry Cry_Arbok       @ SPECIES_ARBOK
+	cry Cry_Pikachu       @ SPECIES_PIKACHU
+	cry Cry_Raichu       @ SPECIES_RAICHU
+	cry Cry_Sandshrew       @ SPECIES_SANDSHREW
+	cry Cry_Sandslash       @ SPECIES_SANDSLASH
+	cry Cry_NidoranF       @ SPECIES_NIDORAN_F
+	cry Cry_Nidorina       @ SPECIES_NIDORINA
+	cry Cry_Nidoqueen       @ SPECIES_NIDOQUEEN
+	cry Cry_NidoranM       @ SPECIES_NIDORAN_M
+	cry Cry_Nidorino       @ SPECIES_NIDORINO
+	cry Cry_Nidoking       @ SPECIES_NIDOKING
+	cry Cry_Clefairy       @ SPECIES_CLEFAIRY
+	cry Cry_Clefable       @ SPECIES_CLEFABLE
+	cry Cry_Vulpix       @ SPECIES_VULPIX
+	cry Cry_Ninetales       @ SPECIES_NINETALES
+	cry Cry_Jigglypuff       @ SPECIES_JIGGLYPUFF
+	cry Cry_Wigglytuff       @ SPECIES_WIGGLYTUFF
+	cry Cry_Zubat       @ SPECIES_ZUBAT
+	cry Cry_Golbat       @ SPECIES_GOLBAT
+	cry Cry_Oddish       @ SPECIES_ODDISH
+	cry Cry_Gloom       @ SPECIES_GLOOM
+	cry Cry_Vileplume       @ SPECIES_VILEPLUME
+	cry Cry_Paras       @ SPECIES_PARAS
+	cry Cry_Parasect       @ SPECIES_PARASECT
+	cry Cry_Venonat       @ SPECIES_VENONAT
+	cry Cry_Venomoth       @ SPECIES_VENOMOTH
+	cry Cry_Diglett       @ SPECIES_DIGLETT
+	cry Cry_Dugtrio       @ SPECIES_DUGTRIO
+	cry Cry_Meowth       @ SPECIES_MEOWTH
+	cry Cry_Persian       @ SPECIES_PERSIAN
+	cry Cry_Psyduck       @ SPECIES_PSYDUCK
+	cry Cry_Golduck       @ SPECIES_GOLDUCK
+	cry Cry_Mankey       @ SPECIES_MANKEY
+	cry Cry_Primeape       @ SPECIES_PRIMEAPE
+	cry Cry_Growlithe       @ SPECIES_GROWLITHE
+	cry Cry_Arcanine       @ SPECIES_ARCANINE
+	cry Cry_Poliwag       @ SPECIES_POLIWAG
+	cry Cry_Poliwhirl       @ SPECIES_POLIWHIRL
+	cry Cry_Poliwrath       @ SPECIES_POLIWRATH
+	cry Cry_Abra       @ SPECIES_ABRA
+	cry Cry_Kadabra       @ SPECIES_KADABRA
+	cry Cry_Alakazam       @ SPECIES_ALAKAZAM
+	cry Cry_Machop       @ SPECIES_MACHOP
+	cry Cry_Machoke       @ SPECIES_MACHOKE
+	cry Cry_Machamp       @ SPECIES_MACHAMP
+	cry Cry_Bellsprout       @ SPECIES_BELLSPROUT
+	cry Cry_Weepinbell       @ SPECIES_WEEPINBELL
+	cry Cry_Victreebel       @ SPECIES_VICTREEBEL
+	cry Cry_Tentacool       @ SPECIES_TENTACOOL
+	cry Cry_Tentacruel       @ SPECIES_TENTACRUEL
+	cry Cry_Geodude       @ SPECIES_GEODUDE
+	cry Cry_Graveler       @ SPECIES_GRAVELER
+	cry Cry_Golem       @ SPECIES_GOLEM
+	cry Cry_Ponyta       @ SPECIES_PONYTA
+	cry Cry_Rapidash       @ SPECIES_RAPIDASH
+	cry Cry_Slowpoke       @ SPECIES_SLOWPOKE
+	cry Cry_Slowbro       @ SPECIES_SLOWBRO
+	cry Cry_Magnemite       @ SPECIES_MAGNEMITE
+	cry Cry_Magneton       @ SPECIES_MAGNETON
+	cry Cry_Farfetchd       @ SPECIES_FARFETCHD
+	cry Cry_Doduo       @ SPECIES_DODUO
+	cry Cry_Dodrio       @ SPECIES_DODRIO
+	cry Cry_Seel       @ SPECIES_SEEL
+	cry Cry_Dewgong       @ SPECIES_DEWGONG
+	cry Cry_Grimer       @ SPECIES_GRIMER
+	cry Cry_Muk       @ SPECIES_MUK
+	cry Cry_Shellder       @ SPECIES_SHELLDER
+	cry Cry_Cloyster       @ SPECIES_CLOYSTER
+	cry Cry_Gastly       @ SPECIES_GASTLY
+	cry Cry_Haunter       @ SPECIES_HAUNTER
+	cry Cry_Gengar       @ SPECIES_GENGAR
+	cry Cry_Onix       @ SPECIES_ONIX
+	cry Cry_Drowzee       @ SPECIES_DROWZEE
+	cry Cry_Hypno       @ SPECIES_HYPNO
+	cry Cry_Krabby       @ SPECIES_KRABBY
+	cry Cry_Kingler       @ SPECIES_KINGLER
+	cry Cry_Voltorb       @ SPECIES_VOLTORB
+	cry Cry_Electrode       @ SPECIES_ELECTRODE
+	cry Cry_Exeggcute       @ SPECIES_EXEGGCUTE
+	cry Cry_Exeggutor       @ SPECIES_EXEGGUTOR
+	cry Cry_Cubone       @ SPECIES_CUBONE
+	cry Cry_Marowak       @ SPECIES_MAROWAK
+	cry Cry_Hitmonlee       @ SPECIES_HITMONLEE
+	cry Cry_Hitmonchan       @ SPECIES_HITMONCHAN
+	cry Cry_Lickitung       @ SPECIES_LICKITUNG
+	cry Cry_Koffing       @ SPECIES_KOFFING
+	cry Cry_Weezing       @ SPECIES_WEEZING
+	cry Cry_Rhyhorn       @ SPECIES_RHYHORN
+	cry Cry_Rhydon       @ SPECIES_RHYDON
+	cry Cry_Chansey       @ SPECIES_CHANSEY
+	cry Cry_Tangela       @ SPECIES_TANGELA
+	cry Cry_Kangaskhan       @ SPECIES_KANGASKHAN
+	cry Cry_Horsea       @ SPECIES_HORSEA
+	cry Cry_Seadra       @ SPECIES_SEADRA
+	cry Cry_Goldeen       @ SPECIES_GOLDEEN
+	cry Cry_Seaking       @ SPECIES_SEAKING
+	cry Cry_Staryu       @ SPECIES_STARYU
+	cry Cry_Starmie       @ SPECIES_STARMIE
+	cry Cry_MrMime       @ SPECIES_MR_MIME
+	cry Cry_Scyther       @ SPECIES_SCYTHER
+	cry Cry_Jynx       @ SPECIES_JYNX
+	cry Cry_Electabuzz       @ SPECIES_ELECTABUZZ
+	cry Cry_Magmar       @ SPECIES_MAGMAR
+	cry Cry_Pinsir       @ SPECIES_PINSIR
+	cry Cry_Tauros       @ SPECIES_TAUROS
+	cry Cry_Magikarp       @ SPECIES_MAGIKARP
+	cry Cry_Gyarados       @ SPECIES_GYARADOS
+	cry Cry_Lapras       @ SPECIES_LAPRAS
+	cry Cry_Ditto       @ SPECIES_DITTO
+	cry Cry_Eevee       @ SPECIES_EEVEE
+	cry Cry_Vaporeon       @ SPECIES_VAPOREON
+	cry Cry_Jolteon       @ SPECIES_JOLTEON
+	cry Cry_Flareon       @ SPECIES_FLAREON
+	cry Cry_Porygon       @ SPECIES_PORYGON
+	cry Cry_Omanyte       @ SPECIES_OMANYTE
+	cry Cry_Omastar       @ SPECIES_OMASTAR
+	cry Cry_Kabuto       @ SPECIES_KABUTO
+	cry Cry_Kabutops       @ SPECIES_KABUTOPS
+	cry Cry_Aerodactyl       @ SPECIES_AERODACTYL
+	cry Cry_Snorlax       @ SPECIES_SNORLAX
+	cry Cry_Articuno       @ SPECIES_ARTICUNO
+	cry Cry_Zapdos       @ SPECIES_ZAPDOS
+	cry Cry_Moltres       @ SPECIES_MOLTRES
+	cry Cry_Dratini       @ SPECIES_DRATINI
+	cry Cry_Dragonair       @ SPECIES_DRAGONAIR
+	cry Cry_Dragonite       @ SPECIES_DRAGONITE
+	cry Cry_Mewtwo       @ SPECIES_MEWTWO
+	cry Cry_Mew       @ SPECIES_MEW
+	cry Cry_Chikorita       @ SPECIES_CHIKORITA
+	cry Cry_Bayleef       @ SPECIES_BAYLEEF
+	cry Cry_Meganium       @ SPECIES_MEGANIUM
+	cry Cry_Cyndaquil       @ SPECIES_CYNDAQUIL
+	cry Cry_Quilava       @ SPECIES_QUILAVA
+	cry Cry_Typhlosion       @ SPECIES_TYPHLOSION
+	cry Cry_Totodile       @ SPECIES_TOTODILE
+	cry Cry_Croconaw       @ SPECIES_CROCONAW
+	cry Cry_Feraligatr       @ SPECIES_FERALIGATR
+	cry Cry_Sentret       @ SPECIES_SENTRET
+	cry Cry_Furret       @ SPECIES_FURRET
+	cry Cry_Hoothoot       @ SPECIES_HOOTHOOT
+	cry Cry_Noctowl       @ SPECIES_NOCTOWL
+	cry Cry_Ledyba       @ SPECIES_LEDYBA
+	cry Cry_Ledian       @ SPECIES_LEDIAN
+	cry Cry_Spinarak       @ SPECIES_SPINARAK
+	cry Cry_Ariados       @ SPECIES_ARIADOS
+	cry Cry_Crobat       @ SPECIES_CROBAT
+	cry Cry_Chinchou       @ SPECIES_CHINCHOU
+	cry Cry_Lanturn       @ SPECIES_LANTURN
+	cry Cry_Pichu       @ SPECIES_PICHU
+	cry Cry_Cleffa       @ SPECIES_CLEFFA
+	cry Cry_Igglybuff       @ SPECIES_IGGLYBUFF
+	cry Cry_Togepi       @ SPECIES_TOGEPI
+	cry Cry_Togetic       @ SPECIES_TOGETIC
+	cry Cry_Natu       @ SPECIES_NATU
+	cry Cry_Xatu       @ SPECIES_XATU
+	cry Cry_Mareep       @ SPECIES_MAREEP
+	cry Cry_Flaaffy       @ SPECIES_FLAAFFY
+	cry Cry_Ampharos       @ SPECIES_AMPHAROS
+	cry Cry_Bellossom       @ SPECIES_BELLOSSOM
+	cry Cry_Marill       @ SPECIES_MARILL
+	cry Cry_Azumarill       @ SPECIES_AZUMARILL
+	cry Cry_Sudowoodo       @ SPECIES_SUDOWOODO
+	cry Cry_Politoed       @ SPECIES_POLITOED
+	cry Cry_Hoppip       @ SPECIES_HOPPIP
+	cry Cry_Skiploom       @ SPECIES_SKIPLOOM
+	cry Cry_Jumpluff       @ SPECIES_JUMPLUFF
+	cry Cry_Aipom       @ SPECIES_AIPOM
+	cry Cry_Sunkern       @ SPECIES_SUNKERN
+	cry Cry_Sunflora       @ SPECIES_SUNFLORA
+	cry Cry_Yanma       @ SPECIES_YANMA
+	cry Cry_Wooper       @ SPECIES_WOOPER
+	cry Cry_Quagsire       @ SPECIES_QUAGSIRE
+	cry Cry_Espeon       @ SPECIES_ESPEON
+	cry Cry_Umbreon       @ SPECIES_UMBREON
+	cry Cry_Murkrow       @ SPECIES_MURKROW
+	cry Cry_Slowking       @ SPECIES_SLOWKING
+	cry Cry_Misdreavus       @ SPECIES_MISDREAVUS
+	cry Cry_Unown       @ SPECIES_UNOWN
+	cry Cry_Wobbuffet       @ SPECIES_WOBBUFFET
+	cry Cry_Girafarig       @ SPECIES_GIRAFARIG
+	cry Cry_Pineco       @ SPECIES_PINECO
+	cry Cry_Forretress       @ SPECIES_FORRETRESS
+	cry Cry_Dunsparce       @ SPECIES_DUNSPARCE
+	cry Cry_Gligar       @ SPECIES_GLIGAR
+	cry Cry_Steelix       @ SPECIES_STEELIX
+	cry Cry_Snubbull       @ SPECIES_SNUBBULL
+	cry Cry_Granbull       @ SPECIES_GRANBULL
+	cry Cry_Qwilfish       @ SPECIES_QWILFISH
+	cry Cry_Scizor       @ SPECIES_SCIZOR
+	cry Cry_Shuckle       @ SPECIES_SHUCKLE
+	cry Cry_Heracross       @ SPECIES_HERACROSS
+	cry Cry_Sneasel       @ SPECIES_SNEASEL
+	cry Cry_Teddiursa       @ SPECIES_TEDDIURSA
+	cry Cry_Ursaring       @ SPECIES_URSARING
+	cry Cry_Slugma       @ SPECIES_SLUGMA
+	cry Cry_Magcargo       @ SPECIES_MAGCARGO
+	cry Cry_Swinub       @ SPECIES_SWINUB
+	cry Cry_Piloswine       @ SPECIES_PILOSWINE
+	cry Cry_Corsola       @ SPECIES_CORSOLA
+	cry Cry_Remoraid       @ SPECIES_REMORAID
+	cry Cry_Octillery       @ SPECIES_OCTILLERY
+	cry Cry_Delibird       @ SPECIES_DELIBIRD
+	cry Cry_Mantine       @ SPECIES_MANTINE
+	cry Cry_Skarmory       @ SPECIES_SKARMORY
+	cry Cry_Houndour       @ SPECIES_HOUNDOUR
+	cry Cry_Houndoom       @ SPECIES_HOUNDOOM
+	cry Cry_Kingdra       @ SPECIES_KINGDRA
+	cry Cry_Phanpy       @ SPECIES_PHANPY
+	cry Cry_Donphan       @ SPECIES_DONPHAN
+	cry Cry_Porygon2       @ SPECIES_PORYGON2
+	cry Cry_Stantler       @ SPECIES_STANTLER
+	cry Cry_Smeargle       @ SPECIES_SMEARGLE
+	cry Cry_Tyrogue       @ SPECIES_TYROGUE
+	cry Cry_Hitmontop       @ SPECIES_HITMONTOP
+	cry Cry_Smoochum       @ SPECIES_SMOOCHUM
+	cry Cry_Elekid       @ SPECIES_ELEKID
+	cry Cry_Magby       @ SPECIES_MAGBY
+	cry Cry_Miltank       @ SPECIES_MILTANK
+	cry Cry_Blissey       @ SPECIES_BLISSEY
+	cry Cry_Raikou       @ SPECIES_RAIKOU
+	cry Cry_Entei       @ SPECIES_ENTEI
+	cry Cry_Suicune       @ SPECIES_SUICUNE
+	cry Cry_Larvitar       @ SPECIES_LARVITAR
+	cry Cry_Pupitar       @ SPECIES_PUPITAR
+	cry Cry_Tyranitar       @ SPECIES_TYRANITAR
+	cry Cry_Lugia       @ SPECIES_LUGIA
+	cry Cry_HoOh       @ SPECIES_HO_OH
+	cry Cry_Celebi       @ SPECIES_CELEBI
+	cry Cry_Azurill       @ SPECIES_AZURILL
+	cry Cry_Wynaut       @ SPECIES_WYNAUT
+	cry Cry_Ambipom       @ SPECIES_AMBIPOM
+	cry Cry_Mismagius       @ SPECIES_MISMAGIUS
+	cry Cry_Honchkrow       @ SPECIES_HONCHKROW
+	cry Cry_Bonsly       @ SPECIES_BONSLY
+	cry Cry_MimeJr       @ SPECIES_MIME_JR
+	cry Cry_Happiny       @ SPECIES_HAPPINY
+	cry Cry_Munchlax       @ SPECIES_MUNCHLAX
+	cry Cry_Mantyke       @ SPECIES_MANTYKE
+	cry Cry_Weavile       @ SPECIES_WEAVILE
+	cry Cry_Magnezone       @ SPECIES_MAGNEZONE
+	cry Cry_Lickilicky       @ SPECIES_LICKILICKY
+	cry Cry_Rhyperior       @ SPECIES_RHYPERIOR
+	cry Cry_Tangrowth       @ SPECIES_TANGROWTH
+	cry Cry_Electivire       @ SPECIES_ELECTIVIRE
+	cry Cry_Magmortar       @ SPECIES_MAGMORTAR
+	cry Cry_Togekiss       @ SPECIES_TOGEKISS
+	cry Cry_Yanmega       @ SPECIES_YANMEGA
+	cry Cry_Leafeon       @ SPECIES_LEAFEON
+	cry Cry_Glaceon       @ SPECIES_GLACEON
+	cry Cry_Gliscor       @ SPECIES_GLISCOR
+	cry Cry_Mamoswine       @ SPECIES_MAMOSWINE
+	cry Cry_PorygonZ       @ SPECIES_PORYGON_Z
+	cry Cry_Sylveon       @ SPECIES_SYLVEON
+	cry Cry_Perrserker       @ SPECIES_PERRSERKER
+	cry Cry_Cursola       @ SPECIES_CURSOLA
+	cry Cry_Sirfetchd       @ SPECIES_SIRFETCHD
+	cry Cry_MrRime       @ SPECIES_MR_RIME
+	cry Cry_Wyrdeer       @ SPECIES_WYRDEER
+	cry Cry_Kleavor       @ SPECIES_KLEAVOR
+	cry Cry_Ursaluna       @ SPECIES_URSALUNA
+	cry Cry_Sneasler       @ SPECIES_SNEASLER
+	cry Cry_Overqwil       @ SPECIES_OVERQWIL
+	cry Cry_Unown       @ SPECIES_YYYI_YUUKI_YUUNA1
+	cry Cry_Unown       @ SPECIES_YYYI_YUUKI_YUUNA2
+	cry Cry_Unown       @ SPECIES_YYYI_YUUKI_YUUNA3
+	cry Cry_Unown       @ SPECIES_YYYI_MIMORI1
+	cry Cry_Unown       @ SPECIES_YYYI_MIMORI2
+	cry Cry_Unown       @ SPECIES_YYYI_MIMORI3
+	cry Cry_Unown       @ SPECIES_YYYI_KARIN1
+	cry Cry_Unown       @ SPECIES_YYYI_KARIN2
+	cry Cry_Unown       @ SPECIES_YYYI_KARIN3
+	cry Cry_Unown       @ SPECIES_YYYI_FUU1
+	cry Cry_Unown       @ SPECIES_YYYI_FUU2
+	cry Cry_Unown       @ SPECIES_YYYI_FUU3
+	cry Cry_Unown       @ SPECIES_YYYI_ITSUKI1
+	cry Cry_Unown       @ SPECIES_YYYI_ITSUKI2
+	cry Cry_Unown       @ SPECIES_YYYI_ITSUKI3
+	cry Cry_Unown       @ SPECIES_YYYI_SONOKO_BIG1
+	cry Cry_Unown       @ SPECIES_YYYI_SONOKO_BIG2
+	cry Cry_Unown       @ SPECIES_YYYI_SONOKO_BIG3
+	cry Cry_Unown       @ SPECIES_YYYI_SUMI1
+	cry Cry_Unown       @ SPECIES_YYYI_SUMI2
+	cry Cry_Unown       @ SPECIES_YYYI_SUMI3
+	cry Cry_Unown       @ SPECIES_YYYI_GIN1
+	cry Cry_Unown       @ SPECIES_YYYI_GIN2
+	cry Cry_Unown       @ SPECIES_YYYI_GIN3
+	cry Cry_Unown       @ SPECIES_YYYI_SONOKO_SMOL1
+	cry Cry_Unown       @ SPECIES_YYYI_SONOKO_SMOL2
+	cry Cry_Unown       @ SPECIES_YYYI_SONOKO_SMOL3
+	cry Cry_Unown       @ SPECIES_YYYI_WAKABA1
+	cry Cry_Unown       @ SPECIES_YYYI_WAKABA2
+	cry Cry_Unown       @ SPECIES_YYYI_WAKABA3A
+	cry Cry_Unown       @ SPECIES_YYYI_TAKASHIMA_YUUNA1
+	cry Cry_Unown       @ SPECIES_YYYI_TAKASHIMA_YUUNA2
+	cry Cry_Unown       @ SPECIES_YYYI_TAKASHIMA_YUUNA3A
+	cry Cry_Unown       @ SPECIES_YYYI_CHIKAGE1
+	cry Cry_Unown       @ SPECIES_YYYI_CHIKAGE2
+	cry Cry_Unown       @ SPECIES_YYYI_CHIKAGE3
+	cry Cry_Unown       @ SPECIES_YYYI_TAMAKO1
+	cry Cry_Unown       @ SPECIES_YYYI_TAMAKO2
+	cry Cry_Unown       @ SPECIES_YYYI_TAMAKO3
+	cry Cry_Unown       @ SPECIES_YYYI_ANZU1
+	cry Cry_Unown       @ SPECIES_YYYI_ANZU2
+	cry Cry_Unown       @ SPECIES_YYYI_ANZU3
+	cry Cry_Unown       @ SPECIES_YYYI_HINATA1
+	cry Cry_Unown       @ SPECIES_YYYI_HINATA2
+	cry Cry_Unown       @ SPECIES_YYYI_UTANO1
+	cry Cry_Unown       @ SPECIES_YYYI_UTANO2
+	cry Cry_Unown       @ SPECIES_YYYI_UTANO3
+	cry Cry_Unown       @ SPECIES_YYYI_MITO1
+	cry Cry_Unown       @ SPECIES_YYYI_MITO2
+	cry Cry_Unown       @ SPECIES_YYYI_MEBUKI1
+	cry Cry_Unown       @ SPECIES_YYYI_MEBUKI2
+	cry Cry_Unown       @ SPECIES_YYYI_MEBUKI3
+	cry Cry_Unown       @ SPECIES_YYYI_SUZUME1
+	cry Cry_Unown       @ SPECIES_YYYI_SUZUME2
+	cry Cry_Unown       @ SPECIES_YYYI_SUZUME3
+	cry Cry_Unown       @ SPECIES_YYYI_YUMIKO1
+	cry Cry_Unown       @ SPECIES_YYYI_YUMIKO2
+	cry Cry_Unown       @ SPECIES_YYYI_YUMIKO3
+	cry Cry_Unown       @ SPECIES_YYYI_SHIZUKU1
+	cry Cry_Unown       @ SPECIES_YYYI_SHIZUKU2
+	cry Cry_Unown       @ SPECIES_YYYI_SHIZUKU3
+	cry Cry_Unown       @ SPECIES_YYYI_AYA1
+	cry Cry_Unown       @ SPECIES_YYYI_AYA2
+	cry Cry_Unown       @ SPECIES_YYYI_SEKKA1
+	cry Cry_Unown       @ SPECIES_YYYI_SEKKA2
+	cry Cry_Unown       @ SPECIES_YYYI_SEKKA3
+	cry Cry_Unown       @ SPECIES_YYYI_NATSUME1
+	cry Cry_Unown       @ SPECIES_YYYI_NATSUME2
+	cry Cry_Unown       @ SPECIES_YYYI_NATSUME3
+	cry Cry_Unown       @ SPECIES_YYYI_AKAMINE_YUUNA1
+	cry Cry_Unown       @ SPECIES_YYYI_AKAMINE_YUUNA2
+	cry Cry_Unown       @ SPECIES_YYYI_AKAMINE_YUUNA3
+	cry Cry_Unown       @ SPECIES_YYYI_RENGE1
+	cry Cry_Unown       @ SPECIES_YYYI_RENGE2
+	cry Cry_Unown       @ SPECIES_YYYI_RENGE3
+	cry Cry_Unown       @ SPECIES_YYYI_SHIZUKA1
+	cry Cry_Unown       @ SPECIES_YYYI_SHIZUKA2
+	cry Cry_Unown       @ SPECIES_YYYI_SHIZUKA3
+	cry Cry_Unown       @ SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA1
+	cry Cry_Unown       @ SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA2
+	cry Cry_Unown       @ SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA3
+	cry Cry_Unown       @ SPECIES_YYYI_YUZUKI_YUUNA1
+	cry Cry_Unown       @ SPECIES_YYYI_YUZUKI_YUUNA2
+	cry Cry_Unown       @ SPECIES_YYYI_YUZUKI_YUUNA3
+	cry Cry_Unown       @ SPECIES_YYYI_MASUZU1
+	cry Cry_Unown       @ SPECIES_YYYI_MASUZU2
+	cry Cry_Unown       @ SPECIES_YYYI_YOSHIKA_1
+	cry Cry_Unown       @ SPECIES_YYYI_YOSHIKA_2
+	cry Cry_Unown       @ SPECIES_YYYI_HIME1
+	cry Cry_Unown       @ SPECIES_YYYI_HIME2
+	cry Cry_Unown       @ SPECIES_YYYI_MISAKI1
+	cry Cry_Unown       @ SPECIES_YYYI_MISAKI2
+	cry Cry_Unown       @ SPECIES_TH_KEDAMA
+	cry Cry_Unown       @ SPECIES_TH_FAIRY
+	cry Cry_Unown       @ SPECIES_TH_ZOMBIEFAIRY
+	cry Cry_Unown       @ SPECIES_TH_SHINGYOKU1
+	cry Cry_Unown       @ SPECIES_TH_SHINGYOKU2O
+	cry Cry_Unown       @ SPECIES_TH_SHINGYOKU2M
+	cry Cry_Unown       @ SPECIES_TH_SHINGYOKU2F
+	cry Cry_Unown       @ SPECIES_TH_YUUGEN1
+	cry Cry_Unown       @ SPECIES_TH_YUUGEN2
+	cry Cry_Unown       @ SPECIES_TH_MIMA1
+	cry Cry_Unown       @ SPECIES_TH_MIMA2
+	cry Cry_Unown       @ SPECIES_TH_ELIS1
+	cry Cry_Unown       @ SPECIES_TH_ELIS2
+	cry Cry_Unown       @ SPECIES_TH_KIKURI1
+	cry Cry_Unown       @ SPECIES_TH_KIKURI2
+	cry Cry_Unown       @ SPECIES_TH_SARIEL1
+	cry Cry_Unown       @ SPECIES_TH_SARIEL2N
+	cry Cry_Unown       @ SPECIES_TH_SARIEL2S
+	cry Cry_Unown       @ SPECIES_TH_KONNGARA1
+	cry Cry_Unown       @ SPECIES_TH_KONNGARA2
+	cry Cry_Unown       @ SPECIES_TH_GENJI
+	cry Cry_Unown       @ SPECIES_TH_RIKA1
+	cry Cry_Unown       @ SPECIES_TH_RIKA2
+	cry Cry_Unown       @ SPECIES_TH_MEIRA1
+	cry Cry_Unown       @ SPECIES_TH_MEIRA2
+	cry Cry_Unown       @ SPECIES_TH_ELLEN1
+	cry Cry_Unown       @ SPECIES_TH_ELLEN2
+	cry Cry_Unown       @ SPECIES_TH_KOTOHIME1
+	cry Cry_Unown       @ SPECIES_TH_KOTOHIME2
+	cry Cry_Unown       @ SPECIES_TH_KANA1
+	cry Cry_Unown       @ SPECIES_TH_KANA2
+	cry Cry_Unown       @ SPECIES_TH_RIKAKO1
+	cry Cry_Unown       @ SPECIES_TH_RIKAKO2
+	cry Cry_Unown       @ SPECIES_TH_CHIYURI1
+	cry Cry_Unown       @ SPECIES_TH_CHIYURI2
+	cry Cry_Unown       @ SPECIES_TH_YUMEMI1
+	cry Cry_Unown       @ SPECIES_TH_YUMEMI2
+	cry Cry_Unown       @ SPECIES_TH_RUUKOTO
+	cry Cry_Unown       @ SPECIES_TH_MIMICHAN
+	cry Cry_Unown       @ SPECIES_TH_ORANGE1
+	cry Cry_Unown       @ SPECIES_TH_ORANGE2
+	cry Cry_Unown       @ SPECIES_TH_KURUMI1
+	cry Cry_Unown       @ SPECIES_TH_KURUMI2
+	cry Cry_Unown       @ SPECIES_TH_ELLY1
+	cry Cry_Unown       @ SPECIES_TH_ELLY2
+	cry Cry_Unown       @ SPECIES_TH_MUGETSU1
+	cry Cry_Unown       @ SPECIES_TH_MUGETSU2
+	cry Cry_Unown       @ SPECIES_TH_GENGETSU1
+	cry Cry_Unown       @ SPECIES_TH_GENGETSU2
+	cry Cry_Unown       @ SPECIES_TH_SARA1
+	cry Cry_Unown       @ SPECIES_TH_SARA2
+	cry Cry_Unown       @ SPECIES_TH_LOUISE1
+	cry Cry_Unown       @ SPECIES_TH_LOUISE2
+	cry Cry_Unown       @ SPECIES_TH_YUKI1
+	cry Cry_Unown       @ SPECIES_TH_YUKI2
+	cry Cry_Unown       @ SPECIES_TH_MAI1
+	cry Cry_Unown       @ SPECIES_TH_MAI2
+	cry Cry_Unown       @ SPECIES_TH_YUMEKO1
+	cry Cry_Unown       @ SPECIES_TH_YUMEKO2
+	cry Cry_Unown       @ SPECIES_TH_SHINKI1
+	cry Cry_Unown       @ SPECIES_TH_SHINKI2
+	cry Cry_Unown       @ SPECIES_TH_RUMIA1
+	cry Cry_Unown       @ SPECIES_TH_RUMIA2N
+	cry Cry_Unown       @ SPECIES_TH_RUMIA2A
+	cry Cry_Unown       @ SPECIES_TH_RUMIA2S
+	cry Cry_Unown       @ SPECIES_TH_DAIYOUSEI1
+	cry Cry_Unown       @ SPECIES_TH_DAIYOUSEI2N
+	cry Cry_Unown       @ SPECIES_TH_DAIYOUSEI2A
+	cry Cry_Unown       @ SPECIES_TH_DAIYOUSEI2D
+	cry Cry_Unown       @ SPECIES_TH_CIRNO1
+	cry Cry_Unown       @ SPECIES_TH_CIRNO2N
+	cry Cry_Unown       @ SPECIES_TH_CIRNO2S
+	cry Cry_Unown       @ SPECIES_TH_CIRNO2T
+	cry Cry_Unown       @ SPECIES_TH_LUNACHILD1
+	cry Cry_Unown       @ SPECIES_TH_LUNACHILD2N
+	cry Cry_Unown       @ SPECIES_TH_LUNACHILD2A
+	cry Cry_Unown       @ SPECIES_TH_LUNACHILD2T
+	cry Cry_Unown       @ SPECIES_TH_STARSAPPHIRE1
+	cry Cry_Unown       @ SPECIES_TH_STARSAPPHIRE2N
+	cry Cry_Unown       @ SPECIES_TH_STARSAPPHIRE2A
+	cry Cry_Unown       @ SPECIES_TH_STARSAPPHIRE2H
+	cry Cry_Unown       @ SPECIES_TH_SUNNYMILK1
+	cry Cry_Unown       @ SPECIES_TH_SUNNYMILK2N
+	cry Cry_Unown       @ SPECIES_TH_SUNNYMILK2A
+	cry Cry_Unown       @ SPECIES_TH_SUNNYMILK2D
+	cry Cry_Unown       @ SPECIES_TH_MEILING1
+	cry Cry_Unown       @ SPECIES_TH_MEILING2N
+	cry Cry_Unown       @ SPECIES_TH_MEILING2D
+	cry Cry_Unown       @ SPECIES_TH_MEILING2S
+	cry Cry_Unown       @ SPECIES_TH_KOAKUMA1
+	cry Cry_Unown       @ SPECIES_TH_KOAKUMA2N
+	cry Cry_Unown       @ SPECIES_TH_KOAKUMA2H
+	cry Cry_Unown       @ SPECIES_TH_PATCHOULI1
+	cry Cry_Unown       @ SPECIES_TH_PATCHOULI2N
+	cry Cry_Unown       @ SPECIES_TH_PATCHOULI2A
+	cry Cry_Unown       @ SPECIES_TH_PATCHOULI2D
+	cry Cry_Unown       @ SPECIES_TH_SAKUYA1
+	cry Cry_Unown       @ SPECIES_TH_SAKUYA2N
+	cry Cry_Unown       @ SPECIES_TH_SAKUYA2T
+	cry Cry_Unown       @ SPECIES_TH_SAKUYA2H
+	cry Cry_Unown       @ SPECIES_TH_REMILIA1
+	cry Cry_Unown       @ SPECIES_TH_REMILIA2N
+	cry Cry_Unown       @ SPECIES_TH_REMILIA2A
+	cry Cry_Unown       @ SPECIES_TH_REMILIA2D
+	cry Cry_Unown       @ SPECIES_TH_FLANDRE1
+	cry Cry_Unown       @ SPECIES_TH_FLANDRE2N
+	cry Cry_Unown       @ SPECIES_TH_FLANDRE2A
+	cry Cry_Unown       @ SPECIES_TH_FLANDRE2S
+	cry Cry_Unown       @ SPECIES_TH_SATSUKI
+	cry Cry_Unown       @ SPECIES_TH_LETTY1
+	cry Cry_Unown       @ SPECIES_TH_LETTY2N
+	cry Cry_Unown       @ SPECIES_TH_LETTY2D
+	cry Cry_Unown       @ SPECIES_TH_LETTY2H
+	cry Cry_Unown       @ SPECIES_TH_CHEN1
+	cry Cry_Unown       @ SPECIES_TH_CHEN2N
+	cry Cry_Unown       @ SPECIES_TH_CHEN2A
+	cry Cry_Unown       @ SPECIES_TH_CHEN2T
+	cry Cry_Unown       @ SPECIES_TH_ALICE1
+	cry Cry_Unown       @ SPECIES_TH_ALICE2N
+	cry Cry_Unown       @ SPECIES_TH_ALICE2A
+	cry Cry_Unown       @ SPECIES_TH_ALICE2T
+	cry Cry_Unown       @ SPECIES_TH_LILYBLACK1
+	cry Cry_Unown       @ SPECIES_TH_LILYWHITE1
+	cry Cry_Unown       @ SPECIES_TH_LILYBLACK2N
+	cry Cry_Unown       @ SPECIES_TH_LILYWHITE2N
+	cry Cry_Unown       @ SPECIES_TH_LILYBLACK2A
+	cry Cry_Unown       @ SPECIES_TH_LILYWHITE2A
+	cry Cry_Unown       @ SPECIES_TH_LILYBLACK2S
+	cry Cry_Unown       @ SPECIES_TH_LILYWHITE2H
+	cry Cry_Unown       @ SPECIES_TH_LUNASA1
+	cry Cry_Unown       @ SPECIES_TH_LUNASA2N
+	cry Cry_Unown       @ SPECIES_TH_LUNASA2H
+	cry Cry_Unown       @ SPECIES_TH_MERLIN1
+	cry Cry_Unown       @ SPECIES_TH_MERLIN2N
+	cry Cry_Unown       @ SPECIES_TH_MERLIN2H
+	cry Cry_Unown       @ SPECIES_TH_LYRICA1
+	cry Cry_Unown       @ SPECIES_TH_LYRICA2N
+	cry Cry_Unown       @ SPECIES_TH_LYRICA2H
+	cry Cry_Unown       @ SPECIES_TH_YOUMU1
+	cry Cry_Unown       @ SPECIES_TH_YOUMU2N
+	cry Cry_Unown       @ SPECIES_TH_YOUMU2D
+	cry Cry_Unown       @ SPECIES_TH_YOUMU2S
+	cry Cry_Unown       @ SPECIES_TH_YUYUKO1
+	cry Cry_Unown       @ SPECIES_TH_YUYUKO2N
+	cry Cry_Unown       @ SPECIES_TH_YUYUKO2A
+	cry Cry_Unown       @ SPECIES_TH_YUYUKO2D
+	cry Cry_Unown       @ SPECIES_TH_RAN1
+	cry Cry_Unown       @ SPECIES_TH_RAN2N
+	cry Cry_Unown       @ SPECIES_TH_RAN2A
+	cry Cry_Unown       @ SPECIES_TH_RAN2H
+	cry Cry_Unown       @ SPECIES_TH_YUKARI1
+	cry Cry_Unown       @ SPECIES_TH_YUKARI2N
+	cry Cry_Unown       @ SPECIES_TH_YUKARI2D
+	cry Cry_Unown       @ SPECIES_TH_YUKARI2T
+	cry Cry_Unown       @ SPECIES_TH_SUIKA1
+	cry Cry_Unown       @ SPECIES_TH_SUIKA2N
+	cry Cry_Unown       @ SPECIES_TH_SUIKA2A
+	cry Cry_Unown       @ SPECIES_TH_SUIKA2T
+	cry Cry_Unown       @ SPECIES_TH_WRIGGLE1
+	cry Cry_Unown       @ SPECIES_TH_WRIGGLE2N
+	cry Cry_Unown       @ SPECIES_TH_WRIGGLE2D
+	cry Cry_Unown       @ SPECIES_TH_WRIGGLE2S
+	cry Cry_Unown       @ SPECIES_TH_MYSTIA1
+	cry Cry_Unown       @ SPECIES_TH_MYSTIA2N
+	cry Cry_Unown       @ SPECIES_TH_MYSTIA2A
+	cry Cry_Unown       @ SPECIES_TH_MYSTIA2H
+	cry Cry_Unown       @ SPECIES_TH_KEINE1
+	cry Cry_Unown       @ SPECIES_TH_KEINE2N
+	cry Cry_Unown       @ SPECIES_TH_KEINE2A
+	cry Cry_Unown       @ SPECIES_TH_KEINE2D
+	cry Cry_Unown       @ SPECIES_TH_KEINE2H
+	cry Cry_Unown       @ SPECIES_TH_TEWI1
+	cry Cry_Unown       @ SPECIES_TH_TEWI2N
+	cry Cry_Unown       @ SPECIES_TH_TEWI2A
+	cry Cry_Unown       @ SPECIES_TH_TEWI2D
+	cry Cry_Unown       @ SPECIES_TH_REISEN1
+	cry Cry_Unown       @ SPECIES_TH_REISEN2N
+	cry Cry_Unown       @ SPECIES_TH_REISEN2D
+	cry Cry_Unown       @ SPECIES_TH_REISEN2T
+	cry Cry_Unown       @ SPECIES_TH_GYOKUTO
+	cry Cry_Unown       @ SPECIES_TH_EIRIN1
+	cry Cry_Unown       @ SPECIES_TH_EIRIN2N
+	cry Cry_Unown       @ SPECIES_TH_EIRIN2A
+	cry Cry_Unown       @ SPECIES_TH_EIRIN2H
+	cry Cry_Unown       @ SPECIES_TH_KAGUYA1
+	cry Cry_Unown       @ SPECIES_TH_KAGUYA2N
+	cry Cry_Unown       @ SPECIES_TH_KAGUYA2A
+	cry Cry_Unown       @ SPECIES_TH_KAGUYA2D
+	cry Cry_Unown       @ SPECIES_TH_MOKOU1
+	cry Cry_Unown       @ SPECIES_TH_MOKOU2N
+	cry Cry_Unown       @ SPECIES_TH_MOKOU2A
+	cry Cry_Unown       @ SPECIES_TH_MOKOU2D
+	cry Cry_Unown       @ SPECIES_TH_TOYOHIME1
+	cry Cry_Unown       @ SPECIES_TH_TOYOHIME2N
+	cry Cry_Unown       @ SPECIES_TH_TOYOHIME2T
+	cry Cry_Unown       @ SPECIES_TH_YORIHIME1
+	cry Cry_Unown       @ SPECIES_TH_YORIHIME2N
+	cry Cry_Unown       @ SPECIES_TH_YORIHIME2S
+	cry Cry_Unown       @ SPECIES_TH_AYA1
+	cry Cry_Unown       @ SPECIES_TH_AYA2N
+	cry Cry_Unown       @ SPECIES_TH_AYA2S
+	cry Cry_Unown       @ SPECIES_TH_AYA2T
+	cry Cry_Unown       @ SPECIES_TH_MEDICINE1
+	cry Cry_Unown       @ SPECIES_TH_MEDICINE2N
+	cry Cry_Unown       @ SPECIES_TH_MEDICINE2A
+	cry Cry_Unown       @ SPECIES_TH_MEDICINE2S
+	cry Cry_Unown       @ SPECIES_TH_MEDICINE2T
+	cry Cry_Unown       @ SPECIES_TH_YUUKA1
+	cry Cry_Unown       @ SPECIES_TH_YUUKA2N
+	cry Cry_Unown       @ SPECIES_TH_YUUKA2A
+	cry Cry_Unown       @ SPECIES_TH_YUUKA2T
+	cry Cry_Unown       @ SPECIES_TH_KOMACHI1
+	cry Cry_Unown       @ SPECIES_TH_KOMACHI2N
+	cry Cry_Unown       @ SPECIES_TH_KOMACHI2A
+	cry Cry_Unown       @ SPECIES_TH_KOMACHI2S
+	cry Cry_Unown       @ SPECIES_TH_EIKI1
+	cry Cry_Unown       @ SPECIES_TH_EIKI2N
+	cry Cry_Unown       @ SPECIES_TH_EIKI2A
+	cry Cry_Unown       @ SPECIES_TH_EIKI2D
+	cry Cry_Unown       @ SPECIES_TH_SHIZUHA1
+	cry Cry_Unown       @ SPECIES_TH_SHIZUHA2N
+	cry Cry_Unown       @ SPECIES_TH_SHIZUHA2S
+	cry Cry_Unown       @ SPECIES_TH_SHIZUHA2H
+	cry Cry_Unown       @ SPECIES_TH_MINORIKO1
+	cry Cry_Unown       @ SPECIES_TH_MINORIKO2N
+	cry Cry_Unown       @ SPECIES_TH_MINORIKO2A
+	cry Cry_Unown       @ SPECIES_TH_MINORIKO2D
+	cry Cry_Unown       @ SPECIES_TH_HINA1
+	cry Cry_Unown       @ SPECIES_TH_HINA2N
+	cry Cry_Unown       @ SPECIES_TH_HINA2A
+	cry Cry_Unown       @ SPECIES_TH_HINA2D
+	cry Cry_Unown       @ SPECIES_TH_NITORI1
+	cry Cry_Unown       @ SPECIES_TH_NITORI2N
+	cry Cry_Unown       @ SPECIES_TH_NITORI2A
+	cry Cry_Unown       @ SPECIES_TH_NITORI2T
+	cry Cry_Unown       @ SPECIES_TH_MOMOJI1
+	cry Cry_Unown       @ SPECIES_TH_MOMOJI2N
+	cry Cry_Unown       @ SPECIES_TH_MOMOJI2D
+	cry Cry_Unown       @ SPECIES_TH_SANAE1
+	cry Cry_Unown       @ SPECIES_TH_SANAE2N
+	cry Cry_Unown       @ SPECIES_TH_SANAE2A
+	cry Cry_Unown       @ SPECIES_TH_SANAE2T
+	cry Cry_Unown       @ SPECIES_TH_KANAKO1
+	cry Cry_Unown       @ SPECIES_TH_KANAKO2N
+	cry Cry_Unown       @ SPECIES_TH_KANAKO2A
+	cry Cry_Unown       @ SPECIES_TH_KANAKO2D
+	cry Cry_Unown       @ SPECIES_TH_SUWAKO1
+	cry Cry_Unown       @ SPECIES_TH_SUWAKO2N
+	cry Cry_Unown       @ SPECIES_TH_SUWAKO2A
+	cry Cry_Unown       @ SPECIES_TH_SUWAKO2D
+	cry Cry_Unown       @ SPECIES_TH_IKU1
+	cry Cry_Unown       @ SPECIES_TH_IKU2N
+	cry Cry_Unown       @ SPECIES_TH_IKU2D
+	cry Cry_Unown       @ SPECIES_TH_IKU2T
+	cry Cry_Unown       @ SPECIES_TH_TENSHI1
+	cry Cry_Unown       @ SPECIES_TH_TENSHI2N
+	cry Cry_Unown       @ SPECIES_TH_TENSHI2A
+	cry Cry_Unown       @ SPECIES_TH_TENSHI2D
+	cry Cry_Unown       @ SPECIES_TH_KISUME1
+	cry Cry_Unown       @ SPECIES_TH_KISUME2N
+	cry Cry_Unown       @ SPECIES_TH_KISUME2T
+	cry Cry_Unown       @ SPECIES_TH_YAMAME1
+	cry Cry_Unown       @ SPECIES_TH_YAMAME2N
+	cry Cry_Unown       @ SPECIES_TH_YAMAME2S
+	cry Cry_Unown       @ SPECIES_TH_YAMAME2T
+	cry Cry_Unown       @ SPECIES_TH_PARSEE1
+	cry Cry_Unown       @ SPECIES_TH_PARSEE2N
+	cry Cry_Unown       @ SPECIES_TH_PARSEE2D
+	cry Cry_Unown       @ SPECIES_TH_PARSEE2T
+	cry Cry_Unown       @ SPECIES_TH_YUUGI1
+	cry Cry_Unown       @ SPECIES_TH_YUUGI2N
+	cry Cry_Unown       @ SPECIES_TH_YUUGI2A
+	cry Cry_Unown       @ SPECIES_TH_YUUGI2D
+	cry Cry_Unown       @ SPECIES_TH_SATORI1
+	cry Cry_Unown       @ SPECIES_TH_SATORI2N
+	cry Cry_Unown       @ SPECIES_TH_SATORI2D
+	cry Cry_Unown       @ SPECIES_TH_SATORI2T
+	cry Cry_Unown       @ SPECIES_TH_RIN1
+	cry Cry_Unown       @ SPECIES_TH_RIN2N
+	cry Cry_Unown       @ SPECIES_TH_RIN2A
+	cry Cry_Unown       @ SPECIES_TH_RIN2S
+	cry Cry_Unown       @ SPECIES_TH_UTSUHO1
+	cry Cry_Unown       @ SPECIES_TH_UTSUHO2N
+	cry Cry_Unown       @ SPECIES_TH_UTSUHO2A
+	cry Cry_Unown       @ SPECIES_TH_UTSUHO2S
+	cry Cry_Unown       @ SPECIES_TH_KOISHI1
+	cry Cry_Unown       @ SPECIES_TH_KOISHI2N
+	cry Cry_Unown       @ SPECIES_TH_KOISHI2A
+	cry Cry_Unown       @ SPECIES_TH_KOISHI2S
+	cry Cry_Unown       @ SPECIES_TH_NAZRIN1
+	cry Cry_Unown       @ SPECIES_TH_NAZRIN2N
+	cry Cry_Unown       @ SPECIES_TH_NAZRIN2T
+	cry Cry_Unown       @ SPECIES_TH_NAZRIN2H
+	cry Cry_Unown       @ SPECIES_TH_KOGASA1
+	cry Cry_Unown       @ SPECIES_TH_KOGASA2N
+	cry Cry_Unown       @ SPECIES_TH_KOGASA2S
+	cry Cry_Unown       @ SPECIES_TH_KOGASA2T
+	cry Cry_Unown       @ SPECIES_TH_ICHIRIN1
+	cry Cry_Unown       @ SPECIES_TH_ICHIRIN2N
+	cry Cry_Unown       @ SPECIES_TH_ICHIRIN2D
+	cry Cry_Unown       @ SPECIES_TH_ICHIRIN2T
+	cry Cry_Unown       @ SPECIES_TH_MURASA1
+	cry Cry_Unown       @ SPECIES_TH_MURASA2N
+	cry Cry_Unown       @ SPECIES_TH_MURASA2A
+	cry Cry_Unown       @ SPECIES_TH_MURASA2D
+	cry Cry_Unown       @ SPECIES_TH_SHOU1
+	cry Cry_Unown       @ SPECIES_TH_SHOU2N
+	cry Cry_Unown       @ SPECIES_TH_SHOU2A
+	cry Cry_Unown       @ SPECIES_TH_SHOU2T
+	cry Cry_Unown       @ SPECIES_TH_BYAKUREN1
+	cry Cry_Unown       @ SPECIES_TH_BYAKUREN2N
+	cry Cry_Unown       @ SPECIES_TH_BYAKUREN2D
+	cry Cry_Unown       @ SPECIES_TH_BYAKUREN2T
+	cry Cry_Unown       @ SPECIES_TH_NUE1
+	cry Cry_Unown       @ SPECIES_TH_NUE2N
+	cry Cry_Unown       @ SPECIES_TH_NUE2A
+	cry Cry_Unown       @ SPECIES_TH_NUE2T
+	cry Cry_Unown       @ SPECIES_TH_OONAMAZU
+	cry Cry_Unown       @ SPECIES_TH_TENSOKU1
+	cry Cry_Unown       @ SPECIES_TH_KASEN1
+	cry Cry_Unown       @ SPECIES_TH_KASEN2
+	cry Cry_Unown       @ SPECIES_TH_TENMA1
+	cry Cry_Unown       @ SPECIES_TH_TENMA2N
+	cry Cry_Unown       @ SPECIES_TH_TENMA2S
+	cry Cry_Unown       @ SPECIES_TH_SENDAI1
+	cry Cry_Unown       @ SPECIES_TH_SENDAI2N
+	cry Cry_Unown       @ SPECIES_TH_SENDAI2T
+	cry Cry_Unown       @ SPECIES_TH_TOKIKO1
+	cry Cry_Unown       @ SPECIES_TH_TOKIKO2N
+	cry Cry_Unown       @ SPECIES_TH_TOKIKO2A
+	cry Cry_Unown       @ SPECIES_TH_RINNOSUKE
+	cry Cry_Unown       @ SPECIES_TH_AKYUU
+	cry Cry_Unown       @ SPECIES_TH_MARIBEL
+	cry Cry_Unown       @ SPECIES_TH_RENKO
+	cry Cry_Unown       @ SPECIES_TH_SUMIREKO
+	cry Cry_Unown       @ SPECIES_TH_MARISA1
+	cry Cry_Unown       @ SPECIES_TH_REIMU1
+	cry Cry_Unown       @ SPECIES_TH_REIMUCTC
+	cry Cry_Unown       @ SPECIES_ETC_ISAMI
+	cry Cry_Unown       @ SPECIES_SH_VIVITR
+	cry Cry_Unown       @ SPECIES_KEY_MISUZU1
+	cry Cry_Unown       @ SPECIES_KEY_MISUZU2
+	cry Cry_Unown       @ SPECIES_KEY_MISUZU3
+	cry Cry_Unown       @ SPECIES_KEY_KANO1
+	cry Cry_Unown       @ SPECIES_KEY_KANO2
+	cry Cry_Unown       @ SPECIES_KEY_KANO3
+	cry Cry_Unown       @ SPECIES_KEY_MINAGI1
+	cry Cry_Unown       @ SPECIES_KEY_MINAGI2
+	cry Cry_Unown       @ SPECIES_KEY_MINAGI3
+	cry Cry_Unown       @ SPECIES_KEY_HARUKO1
+	cry Cry_Unown       @ SPECIES_KEY_HARUKO2
+	cry Cry_Unown       @ SPECIES_KEY_HARUKO3
+	cry Cry_Unown       @ SPECIES_KEY_KANNA1
+	cry Cry_Unown       @ SPECIES_KEY_KANNA2
+	cry Cry_Unown       @ SPECIES_KEY_HIJIRI1
+	cry Cry_Unown       @ SPECIES_KEY_HIJIRI2
+	cry Cry_Unown       @ SPECIES_KEY_HIJIRI3
+	cry Cry_Unown       @ SPECIES_KEY_MICHIRU1
+	cry Cry_Unown       @ SPECIES_KEY_MICHIRU2
+	cry Cry_Unown       @ SPECIES_KEY_MICHIRU3
+	cry Cry_Unown       @ SPECIES_KEY_URAHA1
+	cry Cry_Unown       @ SPECIES_KEY_URAHA2
+	cry Cry_Unown       @ SPECIES_KEY_URAHA3
+	cry Cry_Unown       @ SPECIES_KEY_POTATO
+	cry Cry_Unown       @ SPECIES_KEY_SORA
+	cry Cry_Unown       @ SPECIES_KEY_AYU1
+	cry Cry_Unown       @ SPECIES_KEY_AYU2
+	cry Cry_Unown       @ SPECIES_KEY_AYU3
+	cry Cry_Unown       @ SPECIES_KEY_MAI1
+	cry Cry_Unown       @ SPECIES_KEY_MAI2
+	cry Cry_Unown       @ SPECIES_KEY_MAI3
+	cry Cry_Unown       @ SPECIES_KEY_NAYUKI1
+	cry Cry_Unown       @ SPECIES_KEY_NAYUKI2
+	cry Cry_Unown       @ SPECIES_KEY_NAYUKI3
+	cry Cry_Unown       @ SPECIES_KEY_SHIORI1
+	cry Cry_Unown       @ SPECIES_KEY_SHIORI2
+	cry Cry_Unown       @ SPECIES_KEY_SHIORI3
+	cry Cry_Unown       @ SPECIES_KEY_MAKOTO1
+	cry Cry_Unown       @ SPECIES_KEY_MAKOTO2
+	cry Cry_Unown       @ SPECIES_KEY_MAKOTO3
+	cry Cry_Unown       @ SPECIES_KEY_MISHIO1
+	cry Cry_Unown       @ SPECIES_KEY_MISHIO2
+	cry Cry_Unown       @ SPECIES_KEY_SAYURI1
+	cry Cry_Unown       @ SPECIES_KEY_SAYURI2
+	cry Cry_Unown       @ SPECIES_KEY_SAYURI3
+	cry Cry_Unown       @ SPECIES_KEY_AKIKO1
+	cry Cry_Unown       @ SPECIES_KEY_AKIKO2
+	cry Cry_Unown       @ SPECIES_KEY_AKIKO3
+	cry Cry_Unown       @ SPECIES_KEY_KAORI1
+	cry Cry_Unown       @ SPECIES_KEY_KAORI2
+	cry Cry_Unown       @ SPECIES_KEY_PIRO
+	cry Cry_Unown       @ SPECIES_KEY_NAGISA1
+	cry Cry_Unown       @ SPECIES_KEY_NAGISA2
+	cry Cry_Unown       @ SPECIES_KEY_NAGISA3
+	cry Cry_Unown       @ SPECIES_KEY_KYOU1
+	cry Cry_Unown       @ SPECIES_KEY_KYOU2
+	cry Cry_Unown       @ SPECIES_KEY_KYOU3
+	cry Cry_Unown       @ SPECIES_KEY_RYOU1
+	cry Cry_Unown       @ SPECIES_KEY_RYOU2
+	cry Cry_Unown       @ SPECIES_KEY_RYOU3
+	cry Cry_Unown       @ SPECIES_KEY_KOTOMI1
+	cry Cry_Unown       @ SPECIES_KEY_KOTOMI2
+	cry Cry_Unown       @ SPECIES_KEY_KOTOMI3
+	cry Cry_Unown       @ SPECIES_KEY_TOMOYO1
+	cry Cry_Unown       @ SPECIES_KEY_TOMOYO2
+	cry Cry_Unown       @ SPECIES_KEY_TOMOYO3
+	cry Cry_Unown       @ SPECIES_KEY_FUUKO1
+	cry Cry_Unown       @ SPECIES_KEY_FUUKO2
+	cry Cry_Unown       @ SPECIES_KEY_FUUKO3
+	cry Cry_Unown       @ SPECIES_KEY_YUKINE1
+	cry Cry_Unown       @ SPECIES_KEY_YUKINE2
+	cry Cry_Unown       @ SPECIES_KEY_YUKINE3
+	cry Cry_Unown       @ SPECIES_KEY_MISAE1
+	cry Cry_Unown       @ SPECIES_KEY_MISAE2
+	cry Cry_Unown       @ SPECIES_KEY_MISAE3
+	cry Cry_Unown       @ SPECIES_KEY_SANAE1
+	cry Cry_Unown       @ SPECIES_KEY_SANAE2
+	cry Cry_Unown       @ SPECIES_KEY_SANAE3
+	cry Cry_Unown       @ SPECIES_KEY_MEI1
+	cry Cry_Unown       @ SPECIES_KEY_MEI2
+	cry Cry_Unown       @ SPECIES_KEY_USHIO1
+	cry Cry_Unown       @ SPECIES_KEY_USHIO2
+	cry Cry_Unown       @ SPECIES_KEY_BOTAN
+	cry Cry_Unown       @ SPECIES_KEY_RIN1
+	cry Cry_Unown       @ SPECIES_KEY_RIN2
+	cry Cry_Unown       @ SPECIES_KEY_RIN3
+	cry Cry_Unown       @ SPECIES_KEY_KOMARI1
+	cry Cry_Unown       @ SPECIES_KEY_KOMARI2
+	cry Cry_Unown       @ SPECIES_KEY_KOMARI3
+	cry Cry_Unown       @ SPECIES_KEY_YUIKO1
+	cry Cry_Unown       @ SPECIES_KEY_YUIKO2
+	cry Cry_Unown       @ SPECIES_KEY_YUIKO3
+	cry Cry_Unown       @ SPECIES_KEY_MIO1
+	cry Cry_Unown       @ SPECIES_KEY_MIO2
+	cry Cry_Unown       @ SPECIES_KEY_MIO3
+	cry Cry_Unown       @ SPECIES_KEY_HARUKA1
+	cry Cry_Unown       @ SPECIES_KEY_HARUKA2
+	cry Cry_Unown       @ SPECIES_KEY_HARUKA3
+	cry Cry_Unown       @ SPECIES_KEY_KUD1
+	cry Cry_Unown       @ SPECIES_KEY_KUD2
+	cry Cry_Unown       @ SPECIES_KEY_KUD3
+	cry Cry_Unown       @ SPECIES_KEY_KANATA1
+	cry Cry_Unown       @ SPECIES_KEY_KANATA2
+	cry Cry_Unown       @ SPECIES_KEY_KANATA3
+	cry Cry_Unown       @ SPECIES_KEY_SASAMI1
+	cry Cry_Unown       @ SPECIES_KEY_SASAMI2
+	cry Cry_Unown       @ SPECIES_KEY_SASAMI3
+	cry Cry_Unown       @ SPECIES_BGHS_MIKI1
+	cry Cry_Unown       @ SPECIES_BGHS_MIKI2
+	cry Cry_Unown       @ SPECIES_BGHS_SUBARU1
+	cry Cry_Unown       @ SPECIES_BGHS_SUBARU2
+	cry Cry_Unown       @ SPECIES_BGHS_HARUKA1
+	cry Cry_Unown       @ SPECIES_BGHS_HARUKA2
+	cry Cry_Unown       @ SPECIES_BGHS_NOZOMI1
+	cry Cry_Unown       @ SPECIES_BGHS_NOZOMI2
+	cry Cry_Unown       @ SPECIES_BGHS_YURI1
+	cry Cry_Unown       @ SPECIES_BGHS_YURI2
+	cry Cry_Unown       @ SPECIES_BGHS_KURUMI1
+	cry Cry_Unown       @ SPECIES_BGHS_KURUMI2A
+	cry Cry_Unown       @ SPECIES_BGHS_KURUMI2B
+	cry Cry_Unown       @ SPECIES_BGHS_ANKO1
+	cry Cry_Unown       @ SPECIES_BGHS_ANKO2A
+	cry Cry_Unown       @ SPECIES_BGHS_ANKO2B
+	cry Cry_Unown       @ SPECIES_BGHS_RENGE1
+	cry Cry_Unown       @ SPECIES_BGHS_RENGE2
+	cry Cry_Unown       @ SPECIES_BGHS_ASUHA1
+	cry Cry_Unown       @ SPECIES_BGHS_ASUHA2
+	cry Cry_Unown       @ SPECIES_BGHS_SAKURA1
+	cry Cry_Unown       @ SPECIES_BGHS_SAKURA2
+	cry Cry_Unown       @ SPECIES_BGHS_HINATA1
+	cry Cry_Unown       @ SPECIES_BGHS_HINATA2A
+	cry Cry_Unown       @ SPECIES_BGHS_HINATA2B
+	cry Cry_Unown       @ SPECIES_BGHS_KAEDE1
+	cry Cry_Unown       @ SPECIES_BGHS_KAEDE2
+	cry Cry_Unown       @ SPECIES_BGHS_MICHAEL1
+	cry Cry_Unown       @ SPECIES_BGHS_MICHAEL2
+	cry Cry_Unown       @ SPECIES_BGHS_KOKOMI1
+	cry Cry_Unown       @ SPECIES_BGHS_KOKOMI2
+	cry Cry_Unown       @ SPECIES_BGHS_URARA1
+	cry Cry_Unown       @ SPECIES_BGHS_URARA2
+	cry Cry_Unown       @ SPECIES_BGHS_SADONE1
+	cry Cry_Unown       @ SPECIES_BGHS_SADONE2
+	cry Cry_Unown       @ SPECIES_BGHS_KANON1
+	cry Cry_Unown       @ SPECIES_BGHS_KANON2A
+	cry Cry_Unown       @ SPECIES_BGHS_KANON2B
+	cry Cry_Unown       @ SPECIES_BGHS_SHIHO1
+	cry Cry_Unown       @ SPECIES_BGHS_SHIHO2A
+	cry Cry_Unown       @ SPECIES_BGHS_SHIHO2B
+	cry Cry_Unown       @ SPECIES_BGHS_MISAKI1
+	cry Cry_Unown       @ SPECIES_BGHS_MISAKI2
+	cry Cry_Unown       @ SPECIES_BGHS_MARI1
+	cry Cry_Unown       @ SPECIES_BGHS_MARI2
+	cry Cry_Unown       @ SPECIES_BGHS_ERIS
+	cry Cry_Unown       @ SPECIES_BGHS_ITSUKI1
+	cry Cry_Unown       @ SPECIES_BGHS_ITSUKI2
+	cry Cry_Unown       @ SPECIES_BGHS_FURAN1
+	cry Cry_Unown       @ SPECIES_BGHS_FURAN2
+	cry Cry_Unown       @ SPECIES_BGHS_ERIKA1
+	cry Cry_Unown       @ SPECIES_BGHS_ERIKA2
+	cry Cry_Unown       @ SPECIES_BGHS_EVINA
+	cry Cry_Unown       @ SPECIES_BGHS_AOI1
+	cry Cry_Unown       @ SPECIES_BGHS_AOI2
+	cry Cry_Unown       @ SPECIES_BGHS_BOTAN
+	cry Cry_Unown       @ SPECIES_PC_NAGISA
+	cry Cry_Unown       @ SPECIES_PC_CUREBLACK1
+	cry Cry_Unown       @ SPECIES_PC_CUREBLACK2
+	cry Cry_Unown       @ SPECIES_PC_HONOKA
+	cry Cry_Unown       @ SPECIES_PC_CUREWHITE1
+	cry Cry_Unown       @ SPECIES_PC_CUREWHITE2
+	cry Cry_Unown       @ SPECIES_PC_HIKARI
+	cry Cry_Unown       @ SPECIES_PC_SHINYLUMINOUS1
+	cry Cry_Unown       @ SPECIES_PC_SHINYLUMINOUS2
+	cry Cry_Unown       @ SPECIES_PC_SAKI
+	cry Cry_Unown       @ SPECIES_PC_CUREBLOOM
+	cry Cry_Unown       @ SPECIES_PC_CUREBRIGHT
+	cry Cry_Unown       @ SPECIES_PC_MAI
+	cry Cry_Unown       @ SPECIES_PC_CUREEGRET
+	cry Cry_Unown       @ SPECIES_PC_CUREWINDY
+	cry Cry_Unown       @ SPECIES_PC_NOZOMI
+	cry Cry_Unown       @ SPECIES_PC_CUREDREAM1A
+	cry Cry_Unown       @ SPECIES_PC_CUREDREAM1B
+	cry Cry_Unown       @ SPECIES_PC_CUREDREAM2
+	cry Cry_Unown       @ SPECIES_PC_RIN
+	cry Cry_Unown       @ SPECIES_PC_CUREROUGE1A
+	cry Cry_Unown       @ SPECIES_PC_CUREROUGE1B
+	cry Cry_Unown       @ SPECIES_PC_CUREROUGE2
+	cry Cry_Unown       @ SPECIES_PC_URARA
+	cry Cry_Unown       @ SPECIES_PC_CURELEMONADE1A
+	cry Cry_Unown       @ SPECIES_PC_CURELEMONADE1B
+	cry Cry_Unown       @ SPECIES_PC_CURELEMONADE2
+	cry Cry_Unown       @ SPECIES_PC_KOMACHI
+	cry Cry_Unown       @ SPECIES_PC_CUREMINT1A
+	cry Cry_Unown       @ SPECIES_PC_CUREMINT1B
+	cry Cry_Unown       @ SPECIES_PC_CUREMINT2
+	cry Cry_Unown       @ SPECIES_PC_KAREN
+	cry Cry_Unown       @ SPECIES_PC_CUREAQUA1A
+	cry Cry_Unown       @ SPECIES_PC_CUREAQUA1B
+	cry Cry_Unown       @ SPECIES_PC_CUREAQUA2
+	cry Cry_Unown       @ SPECIES_PC_KURUMI
+	cry Cry_Unown       @ SPECIES_PC_MILKYROSE1
+	cry Cry_Unown       @ SPECIES_PC_MILKYROSE2
+	cry Cry_Unown       @ SPECIES_PC_DARKDREAM
+	cry Cry_Unown       @ SPECIES_PC_DARKROUGE
+	cry Cry_Unown       @ SPECIES_PC_DARKLEMONADE
+	cry Cry_Unown       @ SPECIES_PC_DARKMINT
+	cry Cry_Unown       @ SPECIES_PC_DARKAQUA
+	cry Cry_Unown       @ SPECIES_PC_LOVE
+	cry Cry_Unown       @ SPECIES_PC_CUREPEACH1
+	cry Cry_Unown       @ SPECIES_PC_CUREPEACH2
+	cry Cry_Unown       @ SPECIES_PC_MIKI
+	cry Cry_Unown       @ SPECIES_PC_CUREBERRY1
+	cry Cry_Unown       @ SPECIES_PC_CUREBERRY2
+	cry Cry_Unown       @ SPECIES_PC_INORI
+	cry Cry_Unown       @ SPECIES_PC_CUREPINE1
+	cry Cry_Unown       @ SPECIES_PC_CUREPINE2
+	cry Cry_Unown       @ SPECIES_PC_SETSUNA
+	cry Cry_Unown       @ SPECIES_PC_CUREPASSION1
+	cry Cry_Unown       @ SPECIES_PC_CUREPASSION2
+	cry Cry_Unown       @ SPECIES_PC_EAS
+	cry Cry_Unown       @ SPECIES_PC_TSUBOMI
+	cry Cry_Unown       @ SPECIES_PC_CUREBLOSSOM1
+	cry Cry_Unown       @ SPECIES_PC_CUREBLOSSOM2
+	cry Cry_Unown       @ SPECIES_PC_ERIKA
+	cry Cry_Unown       @ SPECIES_PC_CUREMARINE1
+	cry Cry_Unown       @ SPECIES_PC_CUREMARINE2
+	cry Cry_Unown       @ SPECIES_PC_ITSUKI
+	cry Cry_Unown       @ SPECIES_PC_CURESUNSHINE1
+	cry Cry_Unown       @ SPECIES_PC_CURESUNSHINE2
+	cry Cry_Unown       @ SPECIES_PC_YURI
+	cry Cry_Unown       @ SPECIES_PC_CUREMOONLIGHT1
+	cry Cry_Unown       @ SPECIES_PC_CUREMOONLIGHT2
+	cry Cry_Unown       @ SPECIES_PC_DARKPRECURE
+	cry Cry_Unown       @ SPECIES_PC_HIBIKI
+	cry Cry_Unown       @ SPECIES_PC_CUREMELODY1
+	cry Cry_Unown       @ SPECIES_PC_CUREMELODY2
+	cry Cry_Unown       @ SPECIES_PC_KANADE
+	cry Cry_Unown       @ SPECIES_PC_CURERHYTHM1
+	cry Cry_Unown       @ SPECIES_PC_CURERHYTHM2
+	cry Cry_Unown       @ SPECIES_PC_ELLEN
+	cry Cry_Unown       @ SPECIES_PC_CUREBEAT1
+	cry Cry_Unown       @ SPECIES_PC_CUREBEAT2
+	cry Cry_Unown       @ SPECIES_PC_AKO
+	cry Cry_Unown       @ SPECIES_PC_CUREMUSE1A
+	cry Cry_Unown       @ SPECIES_PC_CUREMUSE1B
+	cry Cry_Unown       @ SPECIES_PC_CUREMUSE2
+	cry Cry_Unown       @ SPECIES_PC_CUREFLORAHCPC
+	cry Cry_Unown       @ SPECIES_PC_MIYUKI
+	cry Cry_Unown       @ SPECIES_PC_CUREHAPPY1
+	cry Cry_Unown       @ SPECIES_PC_CUREHAPPY2
+	cry Cry_Unown       @ SPECIES_PC_AKANE
+	cry Cry_Unown       @ SPECIES_PC_CURESUNNY1
+	cry Cry_Unown       @ SPECIES_PC_CURESUNNY2
+	cry Cry_Unown       @ SPECIES_PC_YAYOI
+	cry Cry_Unown       @ SPECIES_PC_CUREPEACE1
+	cry Cry_Unown       @ SPECIES_PC_CUREPEACE2
+	cry Cry_Unown       @ SPECIES_PC_NAO
+	cry Cry_Unown       @ SPECIES_PC_CUREMARCH1
+	cry Cry_Unown       @ SPECIES_PC_CUREMARCH2
+	cry Cry_Unown       @ SPECIES_PC_REIKA
+	cry Cry_Unown       @ SPECIES_PC_CUREBEAUTY1
+	cry Cry_Unown       @ SPECIES_PC_CUREBEAUTY2
+	cry Cry_Unown       @ SPECIES_PC_BADENDHAPPY
+	cry Cry_Unown       @ SPECIES_PC_BADENDSUNNY
+	cry Cry_Unown       @ SPECIES_PC_BADENDPEACE
+	cry Cry_Unown       @ SPECIES_PC_BADENDMARCH
+	cry Cry_Unown       @ SPECIES_PC_BADENDBEAUTY
+	cry Cry_Unown       @ SPECIES_PC_MANA
+	cry Cry_Unown       @ SPECIES_PC_CUREHEART1
+	cry Cry_Unown       @ SPECIES_PC_CUREHEART2
+	cry Cry_Unown       @ SPECIES_PC_RIKKA
+	cry Cry_Unown       @ SPECIES_PC_CUREDIAMOND1
+	cry Cry_Unown       @ SPECIES_PC_CUREDIAMOND2
+	cry Cry_Unown       @ SPECIES_PC_ALICE
+	cry Cry_Unown       @ SPECIES_PC_CUREROSETTA1
+	cry Cry_Unown       @ SPECIES_PC_CUREROSETTA2
+	cry Cry_Unown       @ SPECIES_PC_MAKOTO
+	cry Cry_Unown       @ SPECIES_PC_CURESWORD1
+	cry Cry_Unown       @ SPECIES_PC_CURESWORD2
+	cry Cry_Unown       @ SPECIES_PC_AGURI
+	cry Cry_Unown       @ SPECIES_PC_CUREACE1
+	cry Cry_Unown       @ SPECIES_PC_CUREACE2
+	cry Cry_Unown       @ SPECIES_PC_REGINA
+	cry Cry_Unown       @ SPECIES_PC_AYUMI
+	cry Cry_Unown       @ SPECIES_PC_CUREECHO
+	cry Cry_Unown       @ SPECIES_ETC_CUREUNION2
+	cry Cry_Unown       @ SPECIES_ETC_MISSINGNO
+	cry Cry_Unown       @ SPECIES_ETC_EMESGESEY
+	cry Cry_Unown       @ SPECIES_ETC_SHOUNEN
+	cry Cry_Unown       @ SPECIES_ETC_SHOUJO
+	cry Cry_Unown       @ SPECIES_ETC_DIALGATH
+	cry Cry_Unown       @ SPECIES_ETC_PALKIATH
+	cry Cry_Unown       @ SPECIES_ETC_GIRATINATH
+	cry Cry_Unown       @ SPECIES_ETC_DECADE1
+	cry Cry_Unown       @ SPECIES_ETC_DECADE2A
+	cry Cry_Unown       @ SPECIES_ETC_DECADE2B
+	cry Cry_Unown       @ SPECIES_ETC_DIEND1
+	cry Cry_Unown       @ SPECIES_ETC_DIEND2
+	cry Cry_Unown       @ SPECIES_ETC_DELAST
+	cry Cry_VenusaurMega       @ SPECIES_VENUSAUR_MEGA
+	cry Cry_CharizardMegaX       @ SPECIES_CHARIZARD_MEGA_X
+	cry Cry_CharizardMegaY       @ SPECIES_CHARIZARD_MEGA_Y
+	cry Cry_BlastoiseMega       @ SPECIES_BLASTOISE_MEGA
+	cry Cry_BeedrillMega       @ SPECIES_BEEDRILL_MEGA
+	cry Cry_PidgeotMega       @ SPECIES_PIDGEOT_MEGA
+	cry Cry_AlakazamMega       @ SPECIES_ALAKAZAM_MEGA
+	cry Cry_SlowbroMega       @ SPECIES_SLOWBRO_MEGA
+	cry Cry_GengarMega       @ SPECIES_GENGAR_MEGA
+	cry Cry_KangaskhanMega       @ SPECIES_KANGASKHAN_MEGA
+	cry Cry_PinsirMega       @ SPECIES_PINSIR_MEGA
+	cry Cry_GyaradosMega       @ SPECIES_GYARADOS_MEGA
+	cry Cry_AerodactylMega       @ SPECIES_AERODACTYL_MEGA
+	cry Cry_MewtwoMegaX       @ SPECIES_MEWTWO_MEGA_X
+	cry Cry_MewtwoMegaY       @ SPECIES_MEWTWO_MEGA_Y
+	cry Cry_AmpharosMega       @ SPECIES_AMPHAROS_MEGA
+	cry Cry_SteelixMega       @ SPECIES_STEELIX_MEGA
+	cry Cry_ScizorMega       @ SPECIES_SCIZOR_MEGA
+	cry Cry_HeracrossMega       @ SPECIES_HERACROSS_MEGA
+	cry Cry_HoundoomMega       @ SPECIES_HOUNDOOM_MEGA
+	cry Cry_TyranitarMega       @ SPECIES_TYRANITAR_MEGA
+	cry Cry_Rattata       @ SPECIES_RATTATA_ALOLAN
+	cry Cry_Raticate       @ SPECIES_RATICATE_ALOLAN
+	cry Cry_Raichu       @ SPECIES_RAICHU_ALOLAN
+	cry Cry_Sandshrew       @ SPECIES_SANDSHREW_ALOLAN
+	cry Cry_Sandslash       @ SPECIES_SANDSLASH_ALOLAN
+	cry Cry_Vulpix       @ SPECIES_VULPIX_ALOLAN
+	cry Cry_Ninetales       @ SPECIES_NINETALES_ALOLAN
+	cry Cry_Diglett       @ SPECIES_DIGLETT_ALOLAN
+	cry Cry_Dugtrio       @ SPECIES_DUGTRIO_ALOLAN
+	cry Cry_Meowth       @ SPECIES_MEOWTH_ALOLAN
+	cry Cry_Persian       @ SPECIES_PERSIAN_ALOLAN
+	cry Cry_Geodude       @ SPECIES_GEODUDE_ALOLAN
+	cry Cry_Graveler       @ SPECIES_GRAVELER_ALOLAN
+	cry Cry_Golem       @ SPECIES_GOLEM_ALOLAN
+	cry Cry_Grimer       @ SPECIES_GRIMER_ALOLAN
+	cry Cry_Muk       @ SPECIES_MUK_ALOLAN
+	cry Cry_Exeggutor       @ SPECIES_EXEGGUTOR_ALOLAN
+	cry Cry_Marowak       @ SPECIES_MAROWAK_ALOLAN
+	cry Cry_Meowth       @ SPECIES_MEOWTH_GALARIAN
+	cry Cry_Ponyta       @ SPECIES_PONYTA_GALARIAN
+	cry Cry_Rapidash       @ SPECIES_RAPIDASH_GALARIAN
+	cry Cry_SlowpokeGalarian       @ SPECIES_SLOWPOKE_GALARIAN
+	cry Cry_Slowbro       @ SPECIES_SLOWBRO_GALARIAN
+	cry Cry_Farfetchd       @ SPECIES_FARFETCHD_GALARIAN
+	cry Cry_Weezing       @ SPECIES_WEEZING_GALARIAN
+	cry Cry_MrMime       @ SPECIES_MR_MIME_GALARIAN
+	cry Cry_Articuno       @ SPECIES_ARTICUNO_GALARIAN
+	cry Cry_Zapdos       @ SPECIES_ZAPDOS_GALARIAN
+	cry Cry_Moltres       @ SPECIES_MOLTRES_GALARIAN
+	cry Cry_Slowking       @ SPECIES_SLOWKING_GALARIAN
+	cry Cry_Corsola       @ SPECIES_CORSOLA_GALARIAN
+	cry Cry_Growlithe       @ SPECIES_GROWLITHE_HISUIAN
+	cry Cry_Arcanine       @ SPECIES_ARCANINE_HISUIAN
+	cry Cry_Voltorb       @ SPECIES_VOLTORB_HISUIAN
+	cry Cry_Electrode       @ SPECIES_ELECTRODE_HISUIAN
+	cry Cry_Typhlosion       @ SPECIES_TYPHLOSION_HISUIAN
+	cry Cry_Qwilfish       @ SPECIES_QWILFISH_HISUIAN
+	cry Cry_Sneasel       @ SPECIES_SNEASEL_HISUIAN
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_COSPLAY
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_ROCK_STAR
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_BELLE
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_POP_STAR
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_PH_D
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_LIBRE
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_ORIGINAL_CAP
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_HOENN_CAP
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_SINNOH_CAP
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_UNOVA_CAP
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_KALOS_CAP
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_ALOLA_CAP
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_PARTNER_CAP
+	cry Cry_Pikachu       @ SPECIES_PIKACHU_WORLD_CAP
+	cry Cry_Pichu       @ SPECIES_PICHU_SPIKY_EARED
+	cry Cry_Unown       @ SPECIES_UNOWN_B
+	cry Cry_Unown       @ SPECIES_UNOWN_C
+	cry Cry_Unown       @ SPECIES_UNOWN_D
+	cry Cry_Unown       @ SPECIES_UNOWN_E
+	cry Cry_Unown       @ SPECIES_UNOWN_F
+	cry Cry_Unown       @ SPECIES_UNOWN_G
+	cry Cry_Unown       @ SPECIES_UNOWN_H
+	cry Cry_Unown       @ SPECIES_UNOWN_I
+	cry Cry_Unown       @ SPECIES_UNOWN_J
+	cry Cry_Unown       @ SPECIES_UNOWN_K
+	cry Cry_Unown       @ SPECIES_UNOWN_L
+	cry Cry_Unown       @ SPECIES_UNOWN_M
+	cry Cry_Unown       @ SPECIES_UNOWN_N
+	cry Cry_Unown       @ SPECIES_UNOWN_O
+	cry Cry_Unown       @ SPECIES_UNOWN_P
+	cry Cry_Unown       @ SPECIES_UNOWN_Q
+	cry Cry_Unown       @ SPECIES_UNOWN_R
+	cry Cry_Unown       @ SPECIES_UNOWN_S
+	cry Cry_Unown       @ SPECIES_UNOWN_T
+	cry Cry_Unown       @ SPECIES_UNOWN_U
+	cry Cry_Unown       @ SPECIES_UNOWN_V
+	cry Cry_Unown       @ SPECIES_UNOWN_W
+	cry Cry_Unown       @ SPECIES_UNOWN_X
+	cry Cry_Unown       @ SPECIES_UNOWN_Y
+	cry Cry_Unown       @ SPECIES_UNOWN_Z
+	cry Cry_Unown       @ SPECIES_UNOWN_EMARK
+	cry Cry_Unown       @ SPECIES_UNOWN_QMARK
+	cry Cry_Bulbasaur       @ SPECIES_MOE_BULBASAUR
+	cry Cry_Ivysaur       @ SPECIES_MOE_IVYSAUR
+	cry Cry_Venusaur       @ SPECIES_MOE_VENUSAUR
+	cry Cry_Charmander       @ SPECIES_MOE_CHARMANDER
+	cry Cry_Charmeleon       @ SPECIES_MOE_CHARMELEON
+	cry Cry_Charizard       @ SPECIES_MOE_CHARIZARD
+	cry Cry_Squirtle       @ SPECIES_MOE_SQUIRTLE
+	cry Cry_Wartortle       @ SPECIES_MOE_WARTORTLE
+	cry Cry_Blastoise       @ SPECIES_MOE_BLASTOISE
+	cry Cry_Caterpie       @ SPECIES_MOE_CATERPIE
+	cry Cry_Metapod       @ SPECIES_MOE_METAPOD
+	cry Cry_Butterfree       @ SPECIES_MOE_BUTTERFREE
+	cry Cry_Weedle       @ SPECIES_MOE_WEEDLE
+	cry Cry_Kakuna       @ SPECIES_MOE_KAKUNA
+	cry Cry_Beedrill       @ SPECIES_MOE_BEEDRILL
+	cry Cry_Pidgey       @ SPECIES_MOE_PIDGEY
+	cry Cry_Pidgeotto       @ SPECIES_MOE_PIDGEOTTO
+	cry Cry_Pidgeot       @ SPECIES_MOE_PIDGEOT
+	cry Cry_Rattata       @ SPECIES_MOE_RATTATA
+	cry Cry_Raticate       @ SPECIES_MOE_RATICATE
+	cry Cry_Spearow       @ SPECIES_MOE_SPEAROW
+	cry Cry_Fearow       @ SPECIES_MOE_FEAROW
+	cry Cry_Ekans       @ SPECIES_MOE_EKANS
+	cry Cry_Arbok       @ SPECIES_MOE_ARBOK
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU
+	cry Cry_Raichu       @ SPECIES_MOE_RAICHU
+	cry Cry_Sandshrew       @ SPECIES_MOE_SANDSHREW
+	cry Cry_Sandslash       @ SPECIES_MOE_SANDSLASH
+	cry Cry_NidoranF       @ SPECIES_MOE_NIDORAN_F
+	cry Cry_Nidorina       @ SPECIES_MOE_NIDORINA
+	cry Cry_Nidoqueen       @ SPECIES_MOE_NIDOQUEEN
+	cry Cry_NidoranM       @ SPECIES_MOE_NIDORAN_M
+	cry Cry_Nidorino       @ SPECIES_MOE_NIDORINO
+	cry Cry_Nidoking       @ SPECIES_MOE_NIDOKING
+	cry Cry_Clefairy       @ SPECIES_MOE_CLEFAIRY
+	cry Cry_Clefable       @ SPECIES_MOE_CLEFABLE
+	cry Cry_Vulpix       @ SPECIES_MOE_VULPIX
+	cry Cry_Ninetales       @ SPECIES_MOE_NINETALES
+	cry Cry_Jigglypuff       @ SPECIES_MOE_JIGGLYPUFF
+	cry Cry_Wigglytuff       @ SPECIES_MOE_WIGGLYTUFF
+	cry Cry_Zubat       @ SPECIES_MOE_ZUBAT
+	cry Cry_Golbat       @ SPECIES_MOE_GOLBAT
+	cry Cry_Oddish       @ SPECIES_MOE_ODDISH
+	cry Cry_Gloom       @ SPECIES_MOE_GLOOM
+	cry Cry_Vileplume       @ SPECIES_MOE_VILEPLUME
+	cry Cry_Paras       @ SPECIES_MOE_PARAS
+	cry Cry_Parasect       @ SPECIES_MOE_PARASECT
+	cry Cry_Venonat       @ SPECIES_MOE_VENONAT
+	cry Cry_Venomoth       @ SPECIES_MOE_VENOMOTH
+	cry Cry_Diglett       @ SPECIES_MOE_DIGLETT
+	cry Cry_Dugtrio       @ SPECIES_MOE_DUGTRIO
+	cry Cry_Meowth       @ SPECIES_MOE_MEOWTH
+	cry Cry_Persian       @ SPECIES_MOE_PERSIAN
+	cry Cry_Psyduck       @ SPECIES_MOE_PSYDUCK
+	cry Cry_Golduck       @ SPECIES_MOE_GOLDUCK
+	cry Cry_Mankey       @ SPECIES_MOE_MANKEY
+	cry Cry_Primeape       @ SPECIES_MOE_PRIMEAPE
+	cry Cry_Growlithe       @ SPECIES_MOE_GROWLITHE
+	cry Cry_Arcanine       @ SPECIES_MOE_ARCANINE
+	cry Cry_Poliwag       @ SPECIES_MOE_POLIWAG
+	cry Cry_Poliwhirl       @ SPECIES_MOE_POLIWHIRL
+	cry Cry_Poliwrath       @ SPECIES_MOE_POLIWRATH
+	cry Cry_Abra       @ SPECIES_MOE_ABRA
+	cry Cry_Kadabra       @ SPECIES_MOE_KADABRA
+	cry Cry_Alakazam       @ SPECIES_MOE_ALAKAZAM
+	cry Cry_Machop       @ SPECIES_MOE_MACHOP
+	cry Cry_Machoke       @ SPECIES_MOE_MACHOKE
+	cry Cry_Machamp       @ SPECIES_MOE_MACHAMP
+	cry Cry_Bellsprout       @ SPECIES_MOE_BELLSPROUT
+	cry Cry_Weepinbell       @ SPECIES_MOE_WEEPINBELL
+	cry Cry_Victreebel       @ SPECIES_MOE_VICTREEBEL
+	cry Cry_Tentacool       @ SPECIES_MOE_TENTACOOL
+	cry Cry_Tentacruel       @ SPECIES_MOE_TENTACRUEL
+	cry Cry_Geodude       @ SPECIES_MOE_GEODUDE
+	cry Cry_Graveler       @ SPECIES_MOE_GRAVELER
+	cry Cry_Golem       @ SPECIES_MOE_GOLEM
+	cry Cry_Ponyta       @ SPECIES_MOE_PONYTA
+	cry Cry_Rapidash       @ SPECIES_MOE_RAPIDASH
+	cry Cry_Slowpoke       @ SPECIES_MOE_SLOWPOKE
+	cry Cry_Slowbro       @ SPECIES_MOE_SLOWBRO
+	cry Cry_Magnemite       @ SPECIES_MOE_MAGNEMITE
+	cry Cry_Magneton       @ SPECIES_MOE_MAGNETON
+	cry Cry_Farfetchd       @ SPECIES_MOE_FARFETCHD
+	cry Cry_Doduo       @ SPECIES_MOE_DODUO
+	cry Cry_Dodrio       @ SPECIES_MOE_DODRIO
+	cry Cry_Seel       @ SPECIES_MOE_SEEL
+	cry Cry_Dewgong       @ SPECIES_MOE_DEWGONG
+	cry Cry_Grimer       @ SPECIES_MOE_GRIMER
+	cry Cry_Muk       @ SPECIES_MOE_MUK
+	cry Cry_Shellder       @ SPECIES_MOE_SHELLDER
+	cry Cry_Cloyster       @ SPECIES_MOE_CLOYSTER
+	cry Cry_Gastly       @ SPECIES_MOE_GASTLY
+	cry Cry_Haunter       @ SPECIES_MOE_HAUNTER
+	cry Cry_Gengar       @ SPECIES_MOE_GENGAR
+	cry Cry_Onix       @ SPECIES_MOE_ONIX
+	cry Cry_Drowzee       @ SPECIES_MOE_DROWZEE
+	cry Cry_Hypno       @ SPECIES_MOE_HYPNO
+	cry Cry_Krabby       @ SPECIES_MOE_KRABBY
+	cry Cry_Kingler       @ SPECIES_MOE_KINGLER
+	cry Cry_Voltorb       @ SPECIES_MOE_VOLTORB
+	cry Cry_Electrode       @ SPECIES_MOE_ELECTRODE
+	cry Cry_Exeggcute       @ SPECIES_MOE_EXEGGCUTE
+	cry Cry_Exeggutor       @ SPECIES_MOE_EXEGGUTOR
+	cry Cry_Cubone       @ SPECIES_MOE_CUBONE
+	cry Cry_Marowak       @ SPECIES_MOE_MAROWAK
+	cry Cry_Hitmonlee       @ SPECIES_MOE_HITMONLEE
+	cry Cry_Hitmonchan       @ SPECIES_MOE_HITMONCHAN
+	cry Cry_Lickitung       @ SPECIES_MOE_LICKITUNG
+	cry Cry_Koffing       @ SPECIES_MOE_KOFFING
+	cry Cry_Weezing       @ SPECIES_MOE_WEEZING
+	cry Cry_Rhyhorn       @ SPECIES_MOE_RHYHORN
+	cry Cry_Rhydon       @ SPECIES_MOE_RHYDON
+	cry Cry_Chansey       @ SPECIES_MOE_CHANSEY
+	cry Cry_Tangela       @ SPECIES_MOE_TANGELA
+	cry Cry_Kangaskhan       @ SPECIES_MOE_KANGASKHAN
+	cry Cry_Horsea       @ SPECIES_MOE_HORSEA
+	cry Cry_Seadra       @ SPECIES_MOE_SEADRA
+	cry Cry_Goldeen       @ SPECIES_MOE_GOLDEEN
+	cry Cry_Seaking       @ SPECIES_MOE_SEAKING
+	cry Cry_Staryu       @ SPECIES_MOE_STARYU
+	cry Cry_Starmie       @ SPECIES_MOE_STARMIE
+	cry Cry_MrMime       @ SPECIES_MOE_MR_MIME
+	cry Cry_Scyther       @ SPECIES_MOE_SCYTHER
+	cry Cry_Jynx       @ SPECIES_MOE_JYNX
+	cry Cry_Electabuzz       @ SPECIES_MOE_ELECTABUZZ
+	cry Cry_Magmar       @ SPECIES_MOE_MAGMAR
+	cry Cry_Pinsir       @ SPECIES_MOE_PINSIR
+	cry Cry_Tauros       @ SPECIES_MOE_TAUROS
+	cry Cry_Magikarp       @ SPECIES_MOE_MAGIKARP
+	cry Cry_Gyarados       @ SPECIES_MOE_GYARADOS
+	cry Cry_Lapras       @ SPECIES_MOE_LAPRAS
+	cry Cry_Ditto       @ SPECIES_MOE_DITTO
+	cry Cry_Eevee       @ SPECIES_MOE_EEVEE
+	cry Cry_Vaporeon       @ SPECIES_MOE_VAPOREON
+	cry Cry_Jolteon       @ SPECIES_MOE_JOLTEON
+	cry Cry_Flareon       @ SPECIES_MOE_FLAREON
+	cry Cry_Porygon       @ SPECIES_MOE_PORYGON
+	cry Cry_Omanyte       @ SPECIES_MOE_OMANYTE
+	cry Cry_Omastar       @ SPECIES_MOE_OMASTAR
+	cry Cry_Kabuto       @ SPECIES_MOE_KABUTO
+	cry Cry_Kabutops       @ SPECIES_MOE_KABUTOPS
+	cry Cry_Aerodactyl       @ SPECIES_MOE_AERODACTYL
+	cry Cry_Snorlax       @ SPECIES_MOE_SNORLAX
+	cry Cry_Articuno       @ SPECIES_MOE_ARTICUNO
+	cry Cry_Zapdos       @ SPECIES_MOE_ZAPDOS
+	cry Cry_Moltres       @ SPECIES_MOE_MOLTRES
+	cry Cry_Dratini       @ SPECIES_MOE_DRATINI
+	cry Cry_Dragonair       @ SPECIES_MOE_DRAGONAIR
+	cry Cry_Dragonite       @ SPECIES_MOE_DRAGONITE
+	cry Cry_Mewtwo       @ SPECIES_MOE_MEWTWO
+	cry Cry_Mew       @ SPECIES_MOE_MEW
+	cry Cry_Chikorita       @ SPECIES_MOE_CHIKORITA
+	cry Cry_Bayleef       @ SPECIES_MOE_BAYLEEF
+	cry Cry_Meganium       @ SPECIES_MOE_MEGANIUM
+	cry Cry_Cyndaquil       @ SPECIES_MOE_CYNDAQUIL
+	cry Cry_Quilava       @ SPECIES_MOE_QUILAVA
+	cry Cry_Typhlosion       @ SPECIES_MOE_TYPHLOSION
+	cry Cry_Totodile       @ SPECIES_MOE_TOTODILE
+	cry Cry_Croconaw       @ SPECIES_MOE_CROCONAW
+	cry Cry_Feraligatr       @ SPECIES_MOE_FERALIGATR
+	cry Cry_Sentret       @ SPECIES_MOE_SENTRET
+	cry Cry_Furret       @ SPECIES_MOE_FURRET
+	cry Cry_Hoothoot       @ SPECIES_MOE_HOOTHOOT
+	cry Cry_Noctowl       @ SPECIES_MOE_NOCTOWL
+	cry Cry_Ledyba       @ SPECIES_MOE_LEDYBA
+	cry Cry_Ledian       @ SPECIES_MOE_LEDIAN
+	cry Cry_Spinarak       @ SPECIES_MOE_SPINARAK
+	cry Cry_Ariados       @ SPECIES_MOE_ARIADOS
+	cry Cry_Crobat       @ SPECIES_MOE_CROBAT
+	cry Cry_Chinchou       @ SPECIES_MOE_CHINCHOU
+	cry Cry_Lanturn       @ SPECIES_MOE_LANTURN
+	cry Cry_Pichu       @ SPECIES_MOE_PICHU
+	cry Cry_Cleffa       @ SPECIES_MOE_CLEFFA
+	cry Cry_Igglybuff       @ SPECIES_MOE_IGGLYBUFF
+	cry Cry_Togepi       @ SPECIES_MOE_TOGEPI
+	cry Cry_Togetic       @ SPECIES_MOE_TOGETIC
+	cry Cry_Natu       @ SPECIES_MOE_NATU
+	cry Cry_Xatu       @ SPECIES_MOE_XATU
+	cry Cry_Mareep       @ SPECIES_MOE_MAREEP
+	cry Cry_Flaaffy       @ SPECIES_MOE_FLAAFFY
+	cry Cry_Ampharos       @ SPECIES_MOE_AMPHAROS
+	cry Cry_Bellossom       @ SPECIES_MOE_BELLOSSOM
+	cry Cry_Marill       @ SPECIES_MOE_MARILL
+	cry Cry_Azumarill       @ SPECIES_MOE_AZUMARILL
+	cry Cry_Sudowoodo       @ SPECIES_MOE_SUDOWOODO
+	cry Cry_Politoed       @ SPECIES_MOE_POLITOED
+	cry Cry_Hoppip       @ SPECIES_MOE_HOPPIP
+	cry Cry_Skiploom       @ SPECIES_MOE_SKIPLOOM
+	cry Cry_Jumpluff       @ SPECIES_MOE_JUMPLUFF
+	cry Cry_Aipom       @ SPECIES_MOE_AIPOM
+	cry Cry_Sunkern       @ SPECIES_MOE_SUNKERN
+	cry Cry_Sunflora       @ SPECIES_MOE_SUNFLORA
+	cry Cry_Yanma       @ SPECIES_MOE_YANMA
+	cry Cry_Wooper       @ SPECIES_MOE_WOOPER
+	cry Cry_Quagsire       @ SPECIES_MOE_QUAGSIRE
+	cry Cry_Espeon       @ SPECIES_MOE_ESPEON
+	cry Cry_Umbreon       @ SPECIES_MOE_UMBREON
+	cry Cry_Murkrow       @ SPECIES_MOE_MURKROW
+	cry Cry_Slowking       @ SPECIES_MOE_SLOWKING
+	cry Cry_Misdreavus       @ SPECIES_MOE_MISDREAVUS
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN
+	cry Cry_Wobbuffet       @ SPECIES_MOE_WOBBUFFET
+	cry Cry_Girafarig       @ SPECIES_MOE_GIRAFARIG
+	cry Cry_Pineco       @ SPECIES_MOE_PINECO
+	cry Cry_Forretress       @ SPECIES_MOE_FORRETRESS
+	cry Cry_Dunsparce       @ SPECIES_MOE_DUNSPARCE
+	cry Cry_Gligar       @ SPECIES_MOE_GLIGAR
+	cry Cry_Steelix       @ SPECIES_MOE_STEELIX
+	cry Cry_Snubbull       @ SPECIES_MOE_SNUBBULL
+	cry Cry_Granbull       @ SPECIES_MOE_GRANBULL
+	cry Cry_Qwilfish       @ SPECIES_MOE_QWILFISH
+	cry Cry_Scizor       @ SPECIES_MOE_SCIZOR
+	cry Cry_Shuckle       @ SPECIES_MOE_SHUCKLE
+	cry Cry_Heracross       @ SPECIES_MOE_HERACROSS
+	cry Cry_Sneasel       @ SPECIES_MOE_SNEASEL
+	cry Cry_Teddiursa       @ SPECIES_MOE_TEDDIURSA
+	cry Cry_Ursaring       @ SPECIES_MOE_URSARING
+	cry Cry_Slugma       @ SPECIES_MOE_SLUGMA
+	cry Cry_Magcargo       @ SPECIES_MOE_MAGCARGO
+	cry Cry_Swinub       @ SPECIES_MOE_SWINUB
+	cry Cry_Piloswine       @ SPECIES_MOE_PILOSWINE
+	cry Cry_Corsola       @ SPECIES_MOE_CORSOLA
+	cry Cry_Remoraid       @ SPECIES_MOE_REMORAID
+	cry Cry_Octillery       @ SPECIES_MOE_OCTILLERY
+	cry Cry_Delibird       @ SPECIES_MOE_DELIBIRD
+	cry Cry_Mantine       @ SPECIES_MOE_MANTINE
+	cry Cry_Skarmory       @ SPECIES_MOE_SKARMORY
+	cry Cry_Houndour       @ SPECIES_MOE_HOUNDOUR
+	cry Cry_Houndoom       @ SPECIES_MOE_HOUNDOOM
+	cry Cry_Kingdra       @ SPECIES_MOE_KINGDRA
+	cry Cry_Phanpy       @ SPECIES_MOE_PHANPY
+	cry Cry_Donphan       @ SPECIES_MOE_DONPHAN
+	cry Cry_Porygon2       @ SPECIES_MOE_PORYGON2
+	cry Cry_Stantler       @ SPECIES_MOE_STANTLER
+	cry Cry_Smeargle       @ SPECIES_MOE_SMEARGLE
+	cry Cry_Tyrogue       @ SPECIES_MOE_TYROGUE
+	cry Cry_Hitmontop       @ SPECIES_MOE_HITMONTOP
+	cry Cry_Smoochum       @ SPECIES_MOE_SMOOCHUM
+	cry Cry_Elekid       @ SPECIES_MOE_ELEKID
+	cry Cry_Magby       @ SPECIES_MOE_MAGBY
+	cry Cry_Miltank       @ SPECIES_MOE_MILTANK
+	cry Cry_Blissey       @ SPECIES_MOE_BLISSEY
+	cry Cry_Raikou       @ SPECIES_MOE_RAIKOU
+	cry Cry_Entei       @ SPECIES_MOE_ENTEI
+	cry Cry_Suicune       @ SPECIES_MOE_SUICUNE
+	cry Cry_Larvitar       @ SPECIES_MOE_LARVITAR
+	cry Cry_Pupitar       @ SPECIES_MOE_PUPITAR
+	cry Cry_Tyranitar       @ SPECIES_MOE_TYRANITAR
+	cry Cry_Lugia       @ SPECIES_MOE_LUGIA
+	cry Cry_HoOh       @ SPECIES_MOE_HO_OH
+	cry Cry_Celebi       @ SPECIES_MOE_CELEBI
+	cry Cry_Azurill       @ SPECIES_MOE_AZURILL
+	cry Cry_Wynaut       @ SPECIES_MOE_WYNAUT
+	cry Cry_Ambipom       @ SPECIES_MOE_AMBIPOM
+	cry Cry_Mismagius       @ SPECIES_MOE_MISMAGIUS
+	cry Cry_Honchkrow       @ SPECIES_MOE_HONCHKROW
+	cry Cry_Bonsly       @ SPECIES_MOE_BONSLY
+	cry Cry_MimeJr       @ SPECIES_MOE_MIME_JR
+	cry Cry_Happiny       @ SPECIES_MOE_HAPPINY
+	cry Cry_Munchlax       @ SPECIES_MOE_MUNCHLAX
+	cry Cry_Mantyke       @ SPECIES_MOE_MANTYKE
+	cry Cry_Weavile       @ SPECIES_MOE_WEAVILE
+	cry Cry_Magnezone       @ SPECIES_MOE_MAGNEZONE
+	cry Cry_Lickilicky       @ SPECIES_MOE_LICKILICKY
+	cry Cry_Rhyperior       @ SPECIES_MOE_RHYPERIOR
+	cry Cry_Tangrowth       @ SPECIES_MOE_TANGROWTH
+	cry Cry_Electivire       @ SPECIES_MOE_ELECTIVIRE
+	cry Cry_Magmortar       @ SPECIES_MOE_MAGMORTAR
+	cry Cry_Togekiss       @ SPECIES_MOE_TOGEKISS
+	cry Cry_Yanmega       @ SPECIES_MOE_YANMEGA
+	cry Cry_Leafeon       @ SPECIES_MOE_LEAFEON
+	cry Cry_Glaceon       @ SPECIES_MOE_GLACEON
+	cry Cry_Gliscor       @ SPECIES_MOE_GLISCOR
+	cry Cry_Mamoswine       @ SPECIES_MOE_MAMOSWINE
+	cry Cry_PorygonZ       @ SPECIES_MOE_PORYGON_Z
+	cry Cry_Sylveon       @ SPECIES_MOE_SYLVEON
+	cry Cry_Perrserker       @ SPECIES_MOE_PERRSERKER
+	cry Cry_Cursola       @ SPECIES_MOE_CURSOLA
+	cry Cry_Sirfetchd       @ SPECIES_MOE_SIRFETCHD
+	cry Cry_MrRime       @ SPECIES_MOE_MR_RIME
+	cry Cry_Wyrdeer       @ SPECIES_MOE_WYRDEER
+	cry Cry_Kleavor       @ SPECIES_MOE_KLEAVOR
+	cry Cry_Ursaluna       @ SPECIES_MOE_URSALUNA
+	cry Cry_Sneasler       @ SPECIES_MOE_SNEASLER
+	cry Cry_Overqwil       @ SPECIES_MOE_OVERQWIL
+	cry Cry_VenusaurMega       @ SPECIES_MOE_VENUSAUR_MEGA
+	cry Cry_CharizardMegaX       @ SPECIES_MOE_CHARIZARD_MEGA_X
+	cry Cry_CharizardMegaY       @ SPECIES_MOE_CHARIZARD_MEGA_Y
+	cry Cry_BlastoiseMega       @ SPECIES_MOE_BLASTOISE_MEGA
+	cry Cry_BeedrillMega       @ SPECIES_MOE_BEEDRILL_MEGA
+	cry Cry_PidgeotMega       @ SPECIES_MOE_PIDGEOT_MEGA
+	cry Cry_AlakazamMega       @ SPECIES_MOE_ALAKAZAM_MEGA
+	cry Cry_SlowbroMega       @ SPECIES_MOE_SLOWBRO_MEGA
+	cry Cry_GengarMega       @ SPECIES_MOE_GENGAR_MEGA
+	cry Cry_KangaskhanMega       @ SPECIES_MOE_KANGASKHAN_MEGA
+	cry Cry_PinsirMega       @ SPECIES_MOE_PINSIR_MEGA
+	cry Cry_GyaradosMega       @ SPECIES_MOE_GYARADOS_MEGA
+	cry Cry_AerodactylMega       @ SPECIES_MOE_AERODACTYL_MEGA
+	cry Cry_MewtwoMegaX       @ SPECIES_MOE_MEWTWO_MEGA_X
+	cry Cry_MewtwoMegaY       @ SPECIES_MOE_MEWTWO_MEGA_Y
+	cry Cry_AmpharosMega       @ SPECIES_MOE_AMPHAROS_MEGA
+	cry Cry_SteelixMega       @ SPECIES_MOE_STEELIX_MEGA
+	cry Cry_ScizorMega       @ SPECIES_MOE_SCIZOR_MEGA
+	cry Cry_HeracrossMega       @ SPECIES_MOE_HERACROSS_MEGA
+	cry Cry_HoundoomMega       @ SPECIES_MOE_HOUNDOOM_MEGA
+	cry Cry_TyranitarMega       @ SPECIES_MOE_TYRANITAR_MEGA
+	cry Cry_Rattata       @ SPECIES_MOE_RATTATA_ALOLAN
+	cry Cry_Raticate       @ SPECIES_MOE_RATICATE_ALOLAN
+	cry Cry_Raichu       @ SPECIES_MOE_RAICHU_ALOLAN
+	cry Cry_Sandshrew       @ SPECIES_MOE_SANDSHREW_ALOLAN
+	cry Cry_Sandslash       @ SPECIES_MOE_SANDSLASH_ALOLAN
+	cry Cry_Vulpix       @ SPECIES_MOE_VULPIX_ALOLAN
+	cry Cry_Ninetales       @ SPECIES_MOE_NINETALES_ALOLAN
+	cry Cry_Diglett       @ SPECIES_MOE_DIGLETT_ALOLAN
+	cry Cry_Dugtrio       @ SPECIES_MOE_DUGTRIO_ALOLAN
+	cry Cry_Meowth       @ SPECIES_MOE_MEOWTH_ALOLAN
+	cry Cry_Persian       @ SPECIES_MOE_PERSIAN_ALOLAN
+	cry Cry_Geodude       @ SPECIES_MOE_GEODUDE_ALOLAN
+	cry Cry_Graveler       @ SPECIES_MOE_GRAVELER_ALOLAN
+	cry Cry_Golem       @ SPECIES_MOE_GOLEM_ALOLAN
+	cry Cry_Grimer       @ SPECIES_MOE_GRIMER_ALOLAN
+	cry Cry_Muk       @ SPECIES_MOE_MUK_ALOLAN
+	cry Cry_Exeggutor       @ SPECIES_MOE_EXEGGUTOR_ALOLAN
+	cry Cry_Marowak       @ SPECIES_MOE_MAROWAK_ALOLAN
+	cry Cry_Meowth       @ SPECIES_MOE_MEOWTH_GALARIAN
+	cry Cry_Ponyta       @ SPECIES_MOE_PONYTA_GALARIAN
+	cry Cry_Rapidash       @ SPECIES_MOE_RAPIDASH_GALARIAN
+	cry Cry_SlowpokeGalarian       @ SPECIES_MOE_SLOWPOKE_GALARIAN
+	cry Cry_Slowbro       @ SPECIES_MOE_SLOWBRO_GALARIAN
+	cry Cry_Farfetchd       @ SPECIES_MOE_FARFETCHD_GALARIAN
+	cry Cry_Weezing       @ SPECIES_MOE_WEEZING_GALARIAN
+	cry Cry_MrMime       @ SPECIES_MOE_MR_MIME_GALARIAN
+	cry Cry_Articuno       @ SPECIES_MOE_ARTICUNO_GALARIAN
+	cry Cry_Zapdos       @ SPECIES_MOE_ZAPDOS_GALARIAN
+	cry Cry_Moltres       @ SPECIES_MOE_MOLTRES_GALARIAN
+	cry Cry_Slowking       @ SPECIES_MOE_SLOWKING_GALARIAN
+	cry Cry_Corsola       @ SPECIES_MOE_CORSOLA_GALARIAN
+	cry Cry_Growlithe       @ SPECIES_MOE_GROWLITHE_HISUIAN
+	cry Cry_Arcanine       @ SPECIES_MOE_ARCANINE_HISUIAN
+	cry Cry_Voltorb       @ SPECIES_MOE_VOLTORB_HISUIAN
+	cry Cry_Electrode       @ SPECIES_MOE_ELECTRODE_HISUIAN
+	cry Cry_Typhlosion       @ SPECIES_MOE_TYPHLOSION_HISUIAN
+	cry Cry_Qwilfish       @ SPECIES_MOE_QWILFISH_HISUIAN
+	cry Cry_Sneasel       @ SPECIES_MOE_SNEASEL_HISUIAN
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_COSPLAY
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_ROCK_STAR
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_BELLE
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_POP_STAR
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_PH_D
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_LIBRE
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_ORIGINAL_CAP
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_HOENN_CAP
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_SINNOH_CAP
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_UNOVA_CAP
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_KALOS_CAP
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_ALOLA_CAP
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_PARTNER_CAP
+	cry Cry_Pikachu       @ SPECIES_MOE_PIKACHU_WORLD_CAP
+	cry Cry_Pichu       @ SPECIES_MOE_PICHU_SPIKY_EARED
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_B
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_C
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_D
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_E
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_F
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_G
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_H
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_I
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_J
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_K
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_L
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_M
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_N
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_O
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_P
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_Q
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_R
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_S
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_T
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_U
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_V
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_W
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_X
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_Y
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_Z
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_EMARK
+	cry Cry_Unown       @ SPECIES_MOE_UNOWN_QMARK
+	cry Cry_Unown       @ SPECIES_YYYI_YUUKI_YUUNA4
+	cry Cry_Unown       @ SPECIES_YYYI_WAKABA3B
+	cry Cry_Unown       @ SPECIES_YYYI_TAKASHIMA_YUUNA3B
+	cry Cry_Unown       @ SPECIES_TH_ALICE2B
+	cry Cry_Unown       @ SPECIES_TH_PRISMRIVER
+	cry Cry_Unown       @ SPECIES_TH_AYAKASHI
+	cry Cry_Unown       @ SPECIES_TH_SUIKA2M
+	cry Cry_Unown       @ SPECIES_TH_AKISISTERS
+	cry Cry_Unown       @ SPECIES_TH_TENSOKU2
+	cry Cry_Unown       @ SPECIES_SH_VIVITA
+	cry Cry_Unown       @ SPECIES_TH_ALICE2Z
+	cry Cry_Unown       @ SPECIES_TH_LAYLA
+	cry Cry_Unown       @ SPECIES_TH_YUUKA2Z
+	cry Cry_Unown       @ SPECIES_TH_SANAE2J
+	cry Cry_Unown       @ SPECIES_TH_MARISA2Z
+	cry Cry_Unown       @ SPECIES_TH_REIMU2Z
+	cry Cry_Unown       @ SPECIES_KEY_USHIO3
+	cry Cry_Unown       @ SPECIES_BGHS_MIKI3
+	cry Cry_Unown       @ SPECIES_BGHS_SHIHO3
+	cry Cry_Unown       @ SPECIES_BGHS_MISAKI3
+	cry Cry_Unown       @ SPECIES_BGHS_MARI3
+	cry Cry_Unown       @ SPECIES_PC_CUREBLACK3
+	cry Cry_Unown       @ SPECIES_PC_CUREWHITE3
+	cry Cry_Unown       @ SPECIES_PC_SHINYLUMINOUS3
+	cry Cry_Unown       @ SPECIES_PC_CUREBRIGHTYBLOOM
+	cry Cry_Unown       @ SPECIES_PC_CUREWINDYEGRET
+	cry Cry_Unown       @ SPECIES_PC_CUREDREAM3A
+	cry Cry_Unown       @ SPECIES_PC_CUREDREAM3B
+	cry Cry_Unown       @ SPECIES_PC_CUREBLOSSOM3
+	cry Cry_Unown       @ SPECIES_PC_CUREMARINE3
+	cry Cry_Unown       @ SPECIES_PC_CURESUNSHINE3
+	cry Cry_Unown       @ SPECIES_PC_CUREMOONLIGHT3
+	cry Cry_Unown       @ SPECIES_PC_CUREHAPPY3
+	cry Cry_Unown       @ SPECIES_PC_CURESUNNY3
+	cry Cry_Unown       @ SPECIES_PC_CUREPEACE3
+	cry Cry_Unown       @ SPECIES_PC_CUREMARCH3
+	cry Cry_Unown       @ SPECIES_PC_CUREBEAUTY3
+	cry Cry_Unown       @ SPECIES_PC_CUREHEART3
+	cry Cry_Unown       @ SPECIES_ETC_CUREUNION3
+	cry Cry_Unown       @ SPECIES_ETC_DECADE3
+	cry Cry_Unown       @ SPECIES_ETC_RED
+	cry Cry_Unown       @ SPECIES_ETC_ETHAN
+	cry Cry_Unown       @ SPECIES_ETC_BRENDAN
+	cry Cry_Unown       @ SPECIES_ETC_LUCAS
+	cry Cry_Unown       @ SPECIES_ETC_HILBERT
+	cry Cry_Unown       @ SPECIES_ETC_NATE
+	cry Cry_Unown       @ SPECIES_ETC_CALEM
+	cry Cry_Unown       @ SPECIES_ETC_ELIO
+	cry Cry_Unown       @ SPECIES_ETC_CHASE
+	cry Cry_Unown       @ SPECIES_ETC_VICTOR
+	cry Cry_Unown       @ SPECIES_ETC_AKARI
+	cry Cry_Unown       @ SPECIES_ETC_FLORIAN
+	cry Cry_Unown       @ SPECIES_ETC_WES
+	cry Cry_Unown       @ SPECIES_ETC_MICHAEL
+	cry Cry_Unown       @ SPECIES_ETC_LEAF
+	cry Cry_Unown       @ SPECIES_ETC_LYRA
+	cry Cry_Unown       @ SPECIES_ETC_KRIS
+	cry Cry_Unown       @ SPECIES_ETC_MAY
+	cry Cry_Unown       @ SPECIES_ETC_DAWN
+	cry Cry_Unown       @ SPECIES_ETC_HILDA
+	cry Cry_Unown       @ SPECIES_ETC_ROSA
+	cry Cry_Unown       @ SPECIES_ETC_SERENA
+	cry Cry_Unown       @ SPECIES_ETC_SELENE
+	cry Cry_Unown       @ SPECIES_ETC_ELAINE
+	cry Cry_Unown       @ SPECIES_ETC_GLORIA
+	cry Cry_Unown       @ SPECIES_ETC_REI
+	cry Cry_Unown       @ SPECIES_ETC_JULIANA
+	cry Cry_Unown       @ SPECIES_DUMMY_REGULAR
+	cry Cry_Unown       @ SPECIES_DUMMY_SHEDINJA
+	cry Cry_Unown       @ SPECIES_DUMMY_SPINDA
+	cry Cry_Unown       @ SPECIES_DUMMY_CASTFORM
+	cry Cry_Unown       @ SPECIES_DUMMY_DEOXYS
+	cry Cry_Unown       @ SPECIES_DUMMY_BURMY
+	cry Cry_Unown       @ SPECIES_DUMMY_WORMADAM
+	cry Cry_Unown       @ SPECIES_DUMMY_CHERRIM
+	cry Cry_Unown       @ SPECIES_DUMMY_SHELLOS
+	cry Cry_Unown       @ SPECIES_DUMMY_GASTRODON
+	cry Cry_Unown       @ SPECIES_DUMMY_HIPPOPOTAS
+	cry Cry_Unown       @ SPECIES_DUMMY_HIPPOWDON
+	cry Cry_Unown       @ SPECIES_DUMMY_ROTOM
+	cry Cry_Unown       @ SPECIES_DUMMY_DIALGA
+	cry Cry_Unown       @ SPECIES_DUMMY_PALKIA
+	cry Cry_Unown       @ SPECIES_DUMMY_GIRATINA
+	cry Cry_Unown       @ SPECIES_DUMMY_SHAYMIN
+	cry Cry_Unown       @ SPECIES_DUMMY_ARCEUS
+	cry Cry_Unown       @ SPECIES_DUMMY_BASCULIN
+	cry Cry_Unown       @ SPECIES_DUMMY_DARMANITAN
+	cry Cry_Unown       @ SPECIES_DUMMY_DEERLING
+	cry Cry_Unown       @ SPECIES_DUMMY_SAWSBUCK
+	cry Cry_Unown       @ SPECIES_DUMMY_KYUREM
+	cry Cry_Unown       @ SPECIES_DUMMY_KELDEO
+	cry Cry_Unown       @ SPECIES_DUMMY_MELOETTA
+	cry Cry_Unown       @ SPECIES_DUMMY_GENESECT
+	cry Cry_Unown       @ SPECIES_DUMMY_GRENINJA
+	cry Cry_Unown       @ SPECIES_DUMMY_VIVILLON
+	cry Cry_Unown       @ SPECIES_DUMMY_FLABEBE
+	cry Cry_Unown       @ SPECIES_DUMMY_FLOETTE
+	cry Cry_Unown       @ SPECIES_DUMMY_FLORGES
+	cry Cry_Unown       @ SPECIES_DUMMY_FURFROU
+	cry Cry_Unown       @ SPECIES_DUMMY_MEOWSTIC
+	cry Cry_Unown       @ SPECIES_DUMMY_AEGISLASH
+	cry Cry_Unown       @ SPECIES_DUMMY_PUMPKABOO
+	cry Cry_Unown       @ SPECIES_DUMMY_GOURGEIST
+	cry Cry_Unown       @ SPECIES_DUMMY_XERNEAS
+	cry Cry_Unown       @ SPECIES_DUMMY_ZYGARDE
+	cry Cry_Unown       @ SPECIES_DUMMY_HOOPA
+	cry Cry_Unown       @ SPECIES_DUMMY_ORICORIO
+	cry Cry_Unown       @ SPECIES_DUMMY_ROCKRUFF
+	cry Cry_Unown       @ SPECIES_DUMMY_LYCANROC
+	cry Cry_Unown       @ SPECIES_DUMMY_WISHIWASHI
+	cry Cry_Unown       @ SPECIES_DUMMY_SILVALLY
+	cry Cry_Unown       @ SPECIES_DUMMY_MINIOR
+	cry Cry_Unown       @ SPECIES_DUMMY_MIMIKYU
+	cry Cry_Unown       @ SPECIES_DUMMY_NECROZMA
+	cry Cry_Unown       @ SPECIES_DUMMY_MAGEARNA
+	cry Cry_Unown       @ SPECIES_DUMMY_CRAMORANT
+	cry Cry_Unown       @ SPECIES_DUMMY_TOXTRICITY
+	cry Cry_Unown       @ SPECIES_DUMMY_SINISTEA
+	cry Cry_Unown       @ SPECIES_DUMMY_POLTEAGEIST
+	cry Cry_Unown       @ SPECIES_DUMMY_ALCREMIE
+	cry Cry_Unown       @ SPECIES_DUMMY_EISCUE
+	cry Cry_Unown       @ SPECIES_DUMMY_INDEEDEE
+	cry Cry_Unown       @ SPECIES_DUMMY_MORPEKO
+	cry Cry_Unown       @ SPECIES_DUMMY_ZACIAN
+	cry Cry_Unown       @ SPECIES_DUMMY_ZAMAZENTA
+	cry Cry_Unown       @ SPECIES_DUMMY_ETERNATUS
+	cry Cry_Unown       @ SPECIES_DUMMY_URSHIFU
+	cry Cry_Unown       @ SPECIES_DUMMY_ZARUDE
+	cry Cry_Unown       @ SPECIES_DUMMY_CALYREX
+	cry Cry_Unown       @ SPECIES_DUMMY_SCEPTILE
+	cry Cry_Unown       @ SPECIES_DUMMY_BLAZIKEN
+	cry Cry_Unown       @ SPECIES_DUMMY_SWAMPERT
+	cry Cry_Unown       @ SPECIES_DUMMY_GARDEVOIR
+	cry Cry_Unown       @ SPECIES_DUMMY_SABLEYE
+	cry Cry_Unown       @ SPECIES_DUMMY_MAWILE
+	cry Cry_Unown       @ SPECIES_DUMMY_AGGRON
+	cry Cry_Unown       @ SPECIES_DUMMY_MEDICHAM
+	cry Cry_Unown       @ SPECIES_DUMMY_MANECTRIC
+	cry Cry_Unown       @ SPECIES_DUMMY_SHARPEDO
+	cry Cry_Unown       @ SPECIES_DUMMY_CAMERUPT
+	cry Cry_Unown       @ SPECIES_DUMMY_ALTARIA
+	cry Cry_Unown       @ SPECIES_DUMMY_BANETTE
+	cry Cry_Unown       @ SPECIES_DUMMY_ABSOL
+	cry Cry_Unown       @ SPECIES_DUMMY_GLALIE
+	cry Cry_Unown       @ SPECIES_DUMMY_SALAMENCE
+	cry Cry_Unown       @ SPECIES_DUMMY_METAGROSS
+	cry Cry_Unown       @ SPECIES_DUMMY_LATIAS
+	cry Cry_Unown       @ SPECIES_DUMMY_LATIOS
+	cry Cry_Unown       @ SPECIES_DUMMY_LOPUNNY
+	cry Cry_Unown       @ SPECIES_DUMMY_GARCHOMP
+	cry Cry_Unown       @ SPECIES_DUMMY_LUCARIO
+	cry Cry_Unown       @ SPECIES_DUMMY_ABOMASNOW
+	cry Cry_Unown       @ SPECIES_DUMMY_GALLADE
+	cry Cry_Unown       @ SPECIES_DUMMY_AUDINO
+	cry Cry_Unown       @ SPECIES_DUMMY_DIANCIE
+	cry Cry_Unown       @ SPECIES_DUMMY_RAYQUAZA
+	cry Cry_Unown       @ SPECIES_DUMMY_KYOGRE
+	cry Cry_Unown       @ SPECIES_DUMMY_GROUDON
+	cry Cry_Unown       @ SPECIES_DUMMY_ZIGZAGOON
+	cry Cry_Unown       @ SPECIES_DUMMY_LINOONE
+	cry Cry_Unown       @ SPECIES_DUMMY_DARUMAKA
+	cry Cry_Unown       @ SPECIES_DUMMY_DARMANITAN2
+	cry Cry_Unown       @ SPECIES_DUMMY_YAMASK
+	cry Cry_Unown       @ SPECIES_DUMMY_STUNFISK
+	cry Cry_Unown       @ SPECIES_DUMMY_SAMUROTT
+	cry Cry_Unown       @ SPECIES_DUMMY_LILLIGANT
+	cry Cry_Unown       @ SPECIES_DUMMY_ZORUA
+	cry Cry_Unown       @ SPECIES_DUMMY_ZOROARK
+	cry Cry_Unown       @ SPECIES_DUMMY_BRAVIARY
+	cry Cry_Unown       @ SPECIES_DUMMY_SLIGGOO
+	cry Cry_Unown       @ SPECIES_DUMMY_GOODRA
+	cry Cry_Unown       @ SPECIES_DUMMY_AVALUGG
+	cry Cry_Unown       @ SPECIES_DUMMY_DECIDUEYE
+	cry Cry_Unown       @ SPECIES_DUMMY_TORNADUS
+	cry Cry_Unown       @ SPECIES_DUMMY_THUNDURUS
+	cry Cry_Unown       @ SPECIES_DUMMY_LANDORUS
+	cry Cry_Unown       @ SPECIES_DUMMY_ENAMORUS
+	cry Cry_Unown       @ SPECIES_DUMMY_BASCULEGION
+
 
 	.align 2
 gCryTable_Reverse::
-	cry_reverse Cry_Bulbasaur
-	cry_reverse Cry_Ivysaur
-	cry_reverse Cry_Venusaur
-	cry_reverse Cry_Charmander
-	cry_reverse Cry_Charmeleon
-	cry_reverse Cry_Charizard
-	cry_reverse Cry_Squirtle
-	cry_reverse Cry_Wartortle
-	cry_reverse Cry_Blastoise
-	cry_reverse Cry_Caterpie
-	cry_reverse Cry_Metapod
-	cry_reverse Cry_Butterfree
-	cry_reverse Cry_Weedle
-	cry_reverse Cry_Kakuna
-	cry_reverse Cry_Beedrill
-	cry_reverse Cry_Pidgey
-	cry_reverse Cry_Pidgeotto
-	cry_reverse Cry_Pidgeot
-	cry_reverse Cry_Rattata
-	cry_reverse Cry_Raticate
-	cry_reverse Cry_Spearow
-	cry_reverse Cry_Fearow
-	cry_reverse Cry_Ekans
-	cry_reverse Cry_Arbok
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Raichu
-	cry_reverse Cry_Sandshrew
-	cry_reverse Cry_Sandslash
-	cry_reverse Cry_NidoranF
-	cry_reverse Cry_Nidorina
-	cry_reverse Cry_Nidoqueen
-	cry_reverse Cry_NidoranM
-	cry_reverse Cry_Nidorino
-	cry_reverse Cry_Nidoking
-	cry_reverse Cry_Clefairy
-	cry_reverse Cry_Clefable
-	cry_reverse Cry_Vulpix
-	cry_reverse Cry_Ninetales
-	cry_reverse Cry_Jigglypuff
-	cry_reverse Cry_Wigglytuff
-	cry_reverse Cry_Zubat
-	cry_reverse Cry_Golbat
-	cry_reverse Cry_Oddish
-	cry_reverse Cry_Gloom
-	cry_reverse Cry_Vileplume
-	cry_reverse Cry_Paras
-	cry_reverse Cry_Parasect
-	cry_reverse Cry_Venonat
-	cry_reverse Cry_Venomoth
-	cry_reverse Cry_Diglett
-	cry_reverse Cry_Dugtrio
-	cry_reverse Cry_Meowth
-	cry_reverse Cry_Persian
-	cry_reverse Cry_Psyduck
-	cry_reverse Cry_Golduck
-	cry_reverse Cry_Mankey
-	cry_reverse Cry_Primeape
-	cry_reverse Cry_Growlithe
-	cry_reverse Cry_Arcanine
-	cry_reverse Cry_Poliwag
-	cry_reverse Cry_Poliwhirl
-	cry_reverse Cry_Poliwrath
-	cry_reverse Cry_Abra
-	cry_reverse Cry_Kadabra
-	cry_reverse Cry_Alakazam
-	cry_reverse Cry_Machop
-	cry_reverse Cry_Machoke
-	cry_reverse Cry_Machamp
-	cry_reverse Cry_Bellsprout
-	cry_reverse Cry_Weepinbell
-	cry_reverse Cry_Victreebel
-	cry_reverse Cry_Tentacool
-	cry_reverse Cry_Tentacruel
-	cry_reverse Cry_Geodude
-	cry_reverse Cry_Graveler
-	cry_reverse Cry_Golem
-	cry_reverse Cry_Ponyta
-	cry_reverse Cry_Rapidash
-	cry_reverse Cry_Slowpoke
-	cry_reverse Cry_Slowbro
-	cry_reverse Cry_Magnemite
-	cry_reverse Cry_Magneton
-	cry_reverse Cry_Farfetchd
-	cry_reverse Cry_Doduo
-	cry_reverse Cry_Dodrio
-	cry_reverse Cry_Seel
-	cry_reverse Cry_Dewgong
-	cry_reverse Cry_Grimer
-	cry_reverse Cry_Muk
-	cry_reverse Cry_Shellder
-	cry_reverse Cry_Cloyster
-	cry_reverse Cry_Gastly
-	cry_reverse Cry_Haunter
-	cry_reverse Cry_Gengar
-	cry_reverse Cry_Onix
-	cry_reverse Cry_Drowzee
-	cry_reverse Cry_Hypno
-	cry_reverse Cry_Krabby
-	cry_reverse Cry_Kingler
-	cry_reverse Cry_Voltorb
-	cry_reverse Cry_Electrode
-	cry_reverse Cry_Exeggcute
-	cry_reverse Cry_Exeggutor
-	cry_reverse Cry_Cubone
-	cry_reverse Cry_Marowak
-	cry_reverse Cry_Hitmonlee
-	cry_reverse Cry_Hitmonchan
-	cry_reverse Cry_Lickitung
-	cry_reverse Cry_Koffing
-	cry_reverse Cry_Weezing
-	cry_reverse Cry_Rhyhorn
-	cry_reverse Cry_Rhydon
-	cry_reverse Cry_Chansey
-	cry_reverse Cry_Tangela
-	cry_reverse Cry_Kangaskhan
-	cry_reverse Cry_Horsea
-	cry_reverse Cry_Seadra
-	cry_reverse Cry_Goldeen
-	cry_reverse Cry_Seaking
-	cry_reverse Cry_Staryu
-	cry_reverse Cry_Starmie
-	cry_reverse Cry_MrMime
-	cry_reverse Cry_Scyther
-	cry_reverse Cry_Jynx
-	cry_reverse Cry_Electabuzz
-	cry_reverse Cry_Magmar
-	cry_reverse Cry_Pinsir
-	cry_reverse Cry_Tauros
-	cry_reverse Cry_Magikarp
-	cry_reverse Cry_Gyarados
-	cry_reverse Cry_Lapras
-	cry_reverse Cry_Ditto
-	cry_reverse Cry_Eevee
-	cry_reverse Cry_Vaporeon
-	cry_reverse Cry_Jolteon
-	cry_reverse Cry_Flareon
-	cry_reverse Cry_Porygon
-	cry_reverse Cry_Omanyte
-	cry_reverse Cry_Omastar
-	cry_reverse Cry_Kabuto
-	cry_reverse Cry_Kabutops
-	cry_reverse Cry_Aerodactyl
-	cry_reverse Cry_Snorlax
-	cry_reverse Cry_Articuno
-	cry_reverse Cry_Zapdos
-	cry_reverse Cry_Moltres
-	cry_reverse Cry_Dratini
-	cry_reverse Cry_Dragonair
-	cry_reverse Cry_Dragonite
-	cry_reverse Cry_Mewtwo
-	cry_reverse Cry_Mew
-	cry_reverse Cry_Chikorita
-	cry_reverse Cry_Bayleef
-	cry_reverse Cry_Meganium
-	cry_reverse Cry_Cyndaquil
-	cry_reverse Cry_Quilava
-	cry_reverse Cry_Typhlosion
-	cry_reverse Cry_Totodile
-	cry_reverse Cry_Croconaw
-	cry_reverse Cry_Feraligatr
-	cry_reverse Cry_Sentret
-	cry_reverse Cry_Furret
-	cry_reverse Cry_Hoothoot
-	cry_reverse Cry_Noctowl
-	cry_reverse Cry_Ledyba
-	cry_reverse Cry_Ledian
-	cry_reverse Cry_Spinarak
-	cry_reverse Cry_Ariados
-	cry_reverse Cry_Crobat
-	cry_reverse Cry_Chinchou
-	cry_reverse Cry_Lanturn
-	cry_reverse Cry_Pichu
-	cry_reverse Cry_Cleffa
-	cry_reverse Cry_Igglybuff
-	cry_reverse Cry_Togepi
-	cry_reverse Cry_Togetic
-	cry_reverse Cry_Natu
-	cry_reverse Cry_Xatu
-	cry_reverse Cry_Mareep
-	cry_reverse Cry_Flaaffy
-	cry_reverse Cry_Ampharos
-	cry_reverse Cry_Bellossom
-	cry_reverse Cry_Marill
-	cry_reverse Cry_Azumarill
-	cry_reverse Cry_Sudowoodo
-	cry_reverse Cry_Politoed
-	cry_reverse Cry_Hoppip
-	cry_reverse Cry_Skiploom
-	cry_reverse Cry_Jumpluff
-	cry_reverse Cry_Aipom
-	cry_reverse Cry_Sunkern
-	cry_reverse Cry_Sunflora
-	cry_reverse Cry_Yanma
-	cry_reverse Cry_Wooper
-	cry_reverse Cry_Quagsire
-	cry_reverse Cry_Espeon
-	cry_reverse Cry_Umbreon
-	cry_reverse Cry_Murkrow
-	cry_reverse Cry_Slowking
-	cry_reverse Cry_Misdreavus
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Wobbuffet
-	cry_reverse Cry_Girafarig
-	cry_reverse Cry_Pineco
-	cry_reverse Cry_Forretress
-	cry_reverse Cry_Dunsparce
-	cry_reverse Cry_Gligar
-	cry_reverse Cry_Steelix
-	cry_reverse Cry_Snubbull
-	cry_reverse Cry_Granbull
-	cry_reverse Cry_Qwilfish
-	cry_reverse Cry_Scizor
-	cry_reverse Cry_Shuckle
-	cry_reverse Cry_Heracross
-	cry_reverse Cry_Sneasel
-	cry_reverse Cry_Teddiursa
-	cry_reverse Cry_Ursaring
-	cry_reverse Cry_Slugma
-	cry_reverse Cry_Magcargo
-	cry_reverse Cry_Swinub
-	cry_reverse Cry_Piloswine
-	cry_reverse Cry_Corsola
-	cry_reverse Cry_Remoraid
-	cry_reverse Cry_Octillery
-	cry_reverse Cry_Delibird
-	cry_reverse Cry_Mantine
-	cry_reverse Cry_Skarmory
-	cry_reverse Cry_Houndour
-	cry_reverse Cry_Houndoom
-	cry_reverse Cry_Kingdra
-	cry_reverse Cry_Phanpy
-	cry_reverse Cry_Donphan
-	cry_reverse Cry_Porygon2
-	cry_reverse Cry_Stantler
-	cry_reverse Cry_Smeargle
-	cry_reverse Cry_Tyrogue
-	cry_reverse Cry_Hitmontop
-	cry_reverse Cry_Smoochum
-	cry_reverse Cry_Elekid
-	cry_reverse Cry_Magby
-	cry_reverse Cry_Miltank
-	cry_reverse Cry_Blissey
-	cry_reverse Cry_Raikou
-	cry_reverse Cry_Entei
-	cry_reverse Cry_Suicune
-	cry_reverse Cry_Larvitar
-	cry_reverse Cry_Pupitar
-	cry_reverse Cry_Tyranitar
-	cry_reverse Cry_Lugia
-	cry_reverse Cry_HoOh
-	cry_reverse Cry_Celebi
-	cry_reverse Cry_Treecko
-	cry_reverse Cry_Grovyle
-	cry_reverse Cry_Sceptile
-	cry_reverse Cry_Torchic
-	cry_reverse Cry_Combusken
-	cry_reverse Cry_Blaziken
-	cry_reverse Cry_Mudkip
-	cry_reverse Cry_Marshtomp
-	cry_reverse Cry_Swampert
-	cry_reverse Cry_Poochyena
-	cry_reverse Cry_Mightyena
-	cry_reverse Cry_Zigzagoon
-	cry_reverse Cry_Linoone
-	cry_reverse Cry_Wurmple
-	cry_reverse Cry_Silcoon
-	cry_reverse Cry_Beautifly
-	cry_reverse Cry_Cascoon
-	cry_reverse Cry_Dustox
-	cry_reverse Cry_Lotad
-	cry_reverse Cry_Lombre
-	cry_reverse Cry_Ludicolo
-	cry_reverse Cry_Seedot
-	cry_reverse Cry_Nuzleaf
-	cry_reverse Cry_Shiftry
-	cry_reverse Cry_Taillow
-	cry_reverse Cry_Swellow
-	cry_reverse Cry_Wingull
-	cry_reverse Cry_Pelipper
-	cry_reverse Cry_Ralts
-	cry_reverse Cry_Kirlia
-	cry_reverse Cry_Gardevoir
-	cry_reverse Cry_Surskit
-	cry_reverse Cry_Masquerain
-	cry_reverse Cry_Shroomish
-	cry_reverse Cry_Breloom
-	cry_reverse Cry_Slakoth
-	cry_reverse Cry_Vigoroth
-	cry_reverse Cry_Slaking
-	cry_reverse Cry_Nincada
-	cry_reverse Cry_Ninjask
-	cry_reverse Cry_Shedinja
-	cry_reverse Cry_Whismur
-	cry_reverse Cry_Loudred
-	cry_reverse Cry_Exploud
-	cry_reverse Cry_Makuhita
-	cry_reverse Cry_Hariyama
-	cry_reverse Cry_Azurill
-	cry_reverse Cry_Nosepass
-	cry_reverse Cry_Skitty
-	cry_reverse Cry_Delcatty
-	cry_reverse Cry_Sableye
-	cry_reverse Cry_Mawile
-	cry_reverse Cry_Aron
-	cry_reverse Cry_Lairon
-	cry_reverse Cry_Aggron
-	cry_reverse Cry_Meditite
-	cry_reverse Cry_Medicham
-	cry_reverse Cry_Electrike
-	cry_reverse Cry_Manectric
-	cry_reverse Cry_Plusle
-	cry_reverse Cry_Minun
-	cry_reverse Cry_Volbeat
-	cry_reverse Cry_Illumise
-	cry_reverse Cry_Roselia
-	cry_reverse Cry_Gulpin
-	cry_reverse Cry_Swalot
-	cry_reverse Cry_Carvanha
-	cry_reverse Cry_Sharpedo
-	cry_reverse Cry_Wailmer
-	cry_reverse Cry_Wailord
-	cry_reverse Cry_Numel
-	cry_reverse Cry_Camerupt
-	cry_reverse Cry_Torkoal
-	cry_reverse Cry_Spoink
-	cry_reverse Cry_Grumpig
-	cry_reverse Cry_Spinda
-	cry_reverse Cry_Trapinch
-	cry_reverse Cry_Vibrava
-	cry_reverse Cry_Flygon
-	cry_reverse Cry_Cacnea
-	cry_reverse Cry_Cacturne
-	cry_reverse Cry_Swablu
-	cry_reverse Cry_Altaria
-	cry_reverse Cry_Zangoose
-	cry_reverse Cry_Seviper
-	cry_reverse Cry_Lunatone
-	cry_reverse Cry_Solrock
-	cry_reverse Cry_Barboach
-	cry_reverse Cry_Whiscash
-	cry_reverse Cry_Corphish
-	cry_reverse Cry_Crawdaunt
-	cry_reverse Cry_Baltoy
-	cry_reverse Cry_Claydol
-	cry_reverse Cry_Lileep
-	cry_reverse Cry_Cradily
-	cry_reverse Cry_Anorith
-	cry_reverse Cry_Armaldo
-	cry_reverse Cry_Feebas
-	cry_reverse Cry_Milotic
-	cry_reverse Cry_Castform
-	cry_reverse Cry_Kecleon
-	cry_reverse Cry_Shuppet
-	cry_reverse Cry_Banette
-	cry_reverse Cry_Duskull
-	cry_reverse Cry_Dusclops
-	cry_reverse Cry_Tropius
-	cry_reverse Cry_Chimecho
-	cry_reverse Cry_Absol
-	cry_reverse Cry_Wynaut
-	cry_reverse Cry_Snorunt
-	cry_reverse Cry_Glalie
-	cry_reverse Cry_Spheal
-	cry_reverse Cry_Sealeo
-	cry_reverse Cry_Walrein
-	cry_reverse Cry_Clamperl
-	cry_reverse Cry_Huntail
-	cry_reverse Cry_Gorebyss
-	cry_reverse Cry_Relicanth
-	cry_reverse Cry_Luvdisc
-	cry_reverse Cry_Bagon
-	cry_reverse Cry_Shelgon
-	cry_reverse Cry_Salamence
-	cry_reverse Cry_Beldum
-	cry_reverse Cry_Metang
-	cry_reverse Cry_Metagross
-	cry_reverse Cry_Regirock
-	cry_reverse Cry_Regice
-	cry_reverse Cry_Registeel
-	cry_reverse Cry_Latias
-	cry_reverse Cry_Latios
-	cry_reverse Cry_Kyogre
-	cry_reverse Cry_Groudon
-	cry_reverse Cry_Rayquaza
-	cry_reverse Cry_Jirachi
-	cry_reverse Cry_Deoxys
-.if P_GEN_4_POKEMON == TRUE
-	cry_reverse Cry_Turtwig
-	cry_reverse Cry_Grotle
-	cry_reverse Cry_Torterra
-	cry_reverse Cry_Chimchar
-	cry_reverse Cry_Monferno
-	cry_reverse Cry_Infernape
-	cry_reverse Cry_Piplup
-	cry_reverse Cry_Prinplup
-	cry_reverse Cry_Empoleon
-	cry_reverse Cry_Starly
-	cry_reverse Cry_Staravia
-	cry_reverse Cry_Staraptor
-	cry_reverse Cry_Bidoof
-	cry_reverse Cry_Bibarel
-	cry_reverse Cry_Kricketot
-	cry_reverse Cry_Kricketune
-	cry_reverse Cry_Shinx
-	cry_reverse Cry_Luxio
-	cry_reverse Cry_Luxray
-	cry_reverse Cry_Budew
-	cry_reverse Cry_Roserade
-	cry_reverse Cry_Cranidos
-	cry_reverse Cry_Rampardos
-	cry_reverse Cry_Shieldon
-	cry_reverse Cry_Bastiodon
-	cry_reverse Cry_Burmy
-	cry_reverse Cry_Wormadam
-	cry_reverse Cry_Mothim
-	cry_reverse Cry_Combee
-	cry_reverse Cry_Vespiquen
-	cry_reverse Cry_Pachirisu
-	cry_reverse Cry_Buizel
-	cry_reverse Cry_Floatzel
-	cry_reverse Cry_Cherubi
-	cry_reverse Cry_Cherrim
-	cry_reverse Cry_Shellos
-	cry_reverse Cry_Gastrodon
-	cry_reverse Cry_Ambipom
-	cry_reverse Cry_Drifloon
-	cry_reverse Cry_Drifblim
-	cry_reverse Cry_Buneary
-	cry_reverse Cry_Lopunny
-	cry_reverse Cry_Mismagius
-	cry_reverse Cry_Honchkrow
-	cry_reverse Cry_Glameow
-	cry_reverse Cry_Purugly
-	cry_reverse Cry_Chingling
-	cry_reverse Cry_Stunky
-	cry_reverse Cry_Skuntank
-	cry_reverse Cry_Bronzor
-	cry_reverse Cry_Bronzong
-	cry_reverse Cry_Bonsly
-	cry_reverse Cry_MimeJr
-	cry_reverse Cry_Happiny
-	cry_reverse Cry_Chatot
-	cry_reverse Cry_Spiritomb
-	cry_reverse Cry_Gible
-	cry_reverse Cry_Gabite
-	cry_reverse Cry_Garchomp
-	cry_reverse Cry_Munchlax
-	cry_reverse Cry_Riolu
-	cry_reverse Cry_Lucario
-	cry_reverse Cry_Hippopotas
-	cry_reverse Cry_Hippowdon
-	cry_reverse Cry_Skorupi
-	cry_reverse Cry_Drapion
-	cry_reverse Cry_Croagunk
-	cry_reverse Cry_Toxicroak
-	cry_reverse Cry_Carnivine
-	cry_reverse Cry_Finneon
-	cry_reverse Cry_Lumineon
-	cry_reverse Cry_Mantyke
-	cry_reverse Cry_Snover
-	cry_reverse Cry_Abomasnow
-	cry_reverse Cry_Weavile
-	cry_reverse Cry_Magnezone
-	cry_reverse Cry_Lickilicky
-	cry_reverse Cry_Rhyperior
-	cry_reverse Cry_Tangrowth
-	cry_reverse Cry_Electivire
-	cry_reverse Cry_Magmortar
-	cry_reverse Cry_Togekiss
-	cry_reverse Cry_Yanmega
-	cry_reverse Cry_Leafeon
-	cry_reverse Cry_Glaceon
-	cry_reverse Cry_Gliscor
-	cry_reverse Cry_Mamoswine
-	cry_reverse Cry_PorygonZ
-	cry_reverse Cry_Gallade
-	cry_reverse Cry_Probopass
-	cry_reverse Cry_Dusknoir
-	cry_reverse Cry_Froslass
-	cry_reverse Cry_Rotom
-	cry_reverse Cry_Uxie
-	cry_reverse Cry_Mesprit
-	cry_reverse Cry_Azelf
-	cry_reverse Cry_Dialga
-	cry_reverse Cry_Palkia
-	cry_reverse Cry_Heatran
-	cry_reverse Cry_Regigigas
-	cry_reverse Cry_Giratina
-	cry_reverse Cry_Cresselia
-	cry_reverse Cry_Phione
-	cry_reverse Cry_Manaphy
-	cry_reverse Cry_Darkrai
-	cry_reverse Cry_Shaymin
-	cry_reverse Cry_Arceus
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_5_POKEMON == TRUE
-	cry_reverse Cry_Victini
-	cry_reverse Cry_Snivy
-	cry_reverse Cry_Servine
-	cry_reverse Cry_Serperior
-	cry_reverse Cry_Tepig
-	cry_reverse Cry_Pignite
-	cry_reverse Cry_Emboar
-	cry_reverse Cry_Oshawott
-	cry_reverse Cry_Dewott
-	cry_reverse Cry_Samurott
-	cry_reverse Cry_Patrat
-	cry_reverse Cry_Watchog
-	cry_reverse Cry_Lillipup
-	cry_reverse Cry_Herdier
-	cry_reverse Cry_Stoutland
-	cry_reverse Cry_Purrloin
-	cry_reverse Cry_Liepard
-	cry_reverse Cry_Pansage
-	cry_reverse Cry_Simisage
-	cry_reverse Cry_Pansear
-	cry_reverse Cry_Simisear
-	cry_reverse Cry_Panpour
-	cry_reverse Cry_Simipour
-	cry_reverse Cry_Munna
-	cry_reverse Cry_Musharna
-	cry_reverse Cry_Pidove
-	cry_reverse Cry_Tranquill
-	cry_reverse Cry_Unfezant
-	cry_reverse Cry_Blitzle
-	cry_reverse Cry_Zebstrika
-	cry_reverse Cry_Roggenrola
-	cry_reverse Cry_Boldore
-	cry_reverse Cry_Gigalith
-	cry_reverse Cry_Woobat
-	cry_reverse Cry_Swoobat
-	cry_reverse Cry_Drilbur
-	cry_reverse Cry_Excadrill
-	cry_reverse Cry_Audino
-	cry_reverse Cry_Timburr
-	cry_reverse Cry_Gurdurr
-	cry_reverse Cry_Conkeldurr
-	cry_reverse Cry_Tympole
-	cry_reverse Cry_Palpitoad
-	cry_reverse Cry_Seismitoad
-	cry_reverse Cry_Throh
-	cry_reverse Cry_Sawk
-	cry_reverse Cry_Sewaddle
-	cry_reverse Cry_Swadloon
-	cry_reverse Cry_Leavanny
-	cry_reverse Cry_Venipede
-	cry_reverse Cry_Whirlipede
-	cry_reverse Cry_Scolipede
-	cry_reverse Cry_Cottonee
-	cry_reverse Cry_Whimsicott
-	cry_reverse Cry_Petilil
-	cry_reverse Cry_Lilligant
-	cry_reverse Cry_Basculin
-	cry_reverse Cry_Sandile
-	cry_reverse Cry_Krokorok
-	cry_reverse Cry_Krookodile
-	cry_reverse Cry_Darumaka
-	cry_reverse Cry_Darmanitan
-	cry_reverse Cry_Maractus
-	cry_reverse Cry_Dwebble
-	cry_reverse Cry_Crustle
-	cry_reverse Cry_Scraggy
-	cry_reverse Cry_Scrafty
-	cry_reverse Cry_Sigilyph
-	cry_reverse Cry_Yamask
-	cry_reverse Cry_Cofagrigus
-	cry_reverse Cry_Tirtouga
-	cry_reverse Cry_Carracosta
-	cry_reverse Cry_Archen
-	cry_reverse Cry_Archeops
-	cry_reverse Cry_Trubbish
-	cry_reverse Cry_Garbodor
-	cry_reverse Cry_Zorua
-	cry_reverse Cry_Zoroark
-	cry_reverse Cry_Minccino
-	cry_reverse Cry_Cinccino
-	cry_reverse Cry_Gothita
-	cry_reverse Cry_Gothorita
-	cry_reverse Cry_Gothitelle
-	cry_reverse Cry_Solosis
-	cry_reverse Cry_Duosion
-	cry_reverse Cry_Reuniclus
-	cry_reverse Cry_Ducklett
-	cry_reverse Cry_Swanna
-	cry_reverse Cry_Vanillite
-	cry_reverse Cry_Vanillish
-	cry_reverse Cry_Vanilluxe
-	cry_reverse Cry_Deerling
-	cry_reverse Cry_Sawsbuck
-	cry_reverse Cry_Emolga
-	cry_reverse Cry_Karrablast
-	cry_reverse Cry_Escavalier
-	cry_reverse Cry_Foongus
-	cry_reverse Cry_Amoonguss
-	cry_reverse Cry_Frillish
-	cry_reverse Cry_Jellicent
-	cry_reverse Cry_Alomomola
-	cry_reverse Cry_Joltik
-	cry_reverse Cry_Galvantula
-	cry_reverse Cry_Ferroseed
-	cry_reverse Cry_Ferrothorn
-	cry_reverse Cry_Klink
-	cry_reverse Cry_Klang
-	cry_reverse Cry_Klinklang
-	cry_reverse Cry_Tynamo
-	cry_reverse Cry_Eelektrik
-	cry_reverse Cry_Eelektross
-	cry_reverse Cry_Elgyem
-	cry_reverse Cry_Beheeyem
-	cry_reverse Cry_Litwick
-	cry_reverse Cry_Lampent
-	cry_reverse Cry_Chandelure
-	cry_reverse Cry_Axew
-	cry_reverse Cry_Fraxure
-	cry_reverse Cry_Haxorus
-	cry_reverse Cry_Cubchoo
-	cry_reverse Cry_Beartic
-	cry_reverse Cry_Cryogonal
-	cry_reverse Cry_Shelmet
-	cry_reverse Cry_Accelgor
-	cry_reverse Cry_Stunfisk
-	cry_reverse Cry_Mienfoo
-	cry_reverse Cry_Mienshao
-	cry_reverse Cry_Druddigon
-	cry_reverse Cry_Golett
-	cry_reverse Cry_Golurk
-	cry_reverse Cry_Pawniard
-	cry_reverse Cry_Bisharp
-	cry_reverse Cry_Bouffalant
-	cry_reverse Cry_Rufflet
-	cry_reverse Cry_Braviary
-	cry_reverse Cry_Vullaby
-	cry_reverse Cry_Mandibuzz
-	cry_reverse Cry_Heatmor
-	cry_reverse Cry_Durant
-	cry_reverse Cry_Deino
-	cry_reverse Cry_Zweilous
-	cry_reverse Cry_Hydreigon
-	cry_reverse Cry_Larvesta
-	cry_reverse Cry_Volcarona
-	cry_reverse Cry_Cobalion
-	cry_reverse Cry_Terrakion
-	cry_reverse Cry_Virizion
-	cry_reverse Cry_Tornadus
-	cry_reverse Cry_Thundurus
-	cry_reverse Cry_Reshiram
-	cry_reverse Cry_Zekrom
-	cry_reverse Cry_Landorus
-	cry_reverse Cry_Kyurem
-	cry_reverse Cry_Keldeo
-	cry_reverse Cry_Meloetta
-	cry_reverse Cry_Genesect
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_6_POKEMON == TRUE
-	cry_reverse Cry_Chespin
-	cry_reverse Cry_Quilladin
-	cry_reverse Cry_Chesnaught
-	cry_reverse Cry_Fennekin
-	cry_reverse Cry_Braixen
-	cry_reverse Cry_Delphox
-	cry_reverse Cry_Froakie
-	cry_reverse Cry_Frogadier
-	cry_reverse Cry_Greninja
-	cry_reverse Cry_Bunnelby
-	cry_reverse Cry_Diggersby
-	cry_reverse Cry_Fletchling
-	cry_reverse Cry_Fletchinder
-	cry_reverse Cry_Talonflame
-	cry_reverse Cry_Scatterbug
-	cry_reverse Cry_Spewpa
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Litleo
-	cry_reverse Cry_Pyroar
-	cry_reverse Cry_Flabebe
-	cry_reverse Cry_Floette
-	cry_reverse Cry_Florges
-	cry_reverse Cry_Skiddo
-	cry_reverse Cry_Gogoat
-	cry_reverse Cry_Pancham
-	cry_reverse Cry_Pangoro
-	cry_reverse Cry_Furfrou
-	cry_reverse Cry_Espurr
-	cry_reverse Cry_Meowstic
-	cry_reverse Cry_Honedge
-	cry_reverse Cry_Doublade
-	cry_reverse Cry_Aegislash
-	cry_reverse Cry_Spritzee
-	cry_reverse Cry_Aromatisse
-	cry_reverse Cry_Swirlix
-	cry_reverse Cry_Slurpuff
-	cry_reverse Cry_Inkay
-	cry_reverse Cry_Malamar
-	cry_reverse Cry_Binacle
-	cry_reverse Cry_Barbaracle
-	cry_reverse Cry_Skrelp
-	cry_reverse Cry_Dragalge
-	cry_reverse Cry_Clauncher
-	cry_reverse Cry_Clawitzer
-	cry_reverse Cry_Helioptile
-	cry_reverse Cry_Heliolisk
-	cry_reverse Cry_Tyrunt
-	cry_reverse Cry_Tyrantrum
-	cry_reverse Cry_Amaura
-	cry_reverse Cry_Aurorus
-	cry_reverse Cry_Sylveon
-	cry_reverse Cry_Hawlucha
-	cry_reverse Cry_Dedenne
-	cry_reverse Cry_Carbink
-	cry_reverse Cry_Goomy
-	cry_reverse Cry_Sliggoo
-	cry_reverse Cry_Goodra
-	cry_reverse_uncomp Cry_Klefki
-	cry_reverse Cry_Phantump
-	cry_reverse Cry_Trevenant
-	cry_reverse Cry_Pumpkaboo
-	cry_reverse Cry_Gourgeist
-	cry_reverse Cry_Bergmite
-	cry_reverse Cry_Avalugg
-	cry_reverse Cry_Noibat
-	cry_reverse Cry_Noivern
-	cry_reverse Cry_Xerneas
-	cry_reverse Cry_Yveltal
-	cry_reverse Cry_Zygarde
-	cry_reverse Cry_Diancie
-	cry_reverse Cry_Hoopa
-	cry_reverse Cry_Volcanion
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_7_POKEMON == TRUE
-	cry_reverse Cry_Rowlet
-	cry_reverse Cry_Dartrix
-	cry_reverse Cry_Decidueye
-	cry_reverse Cry_Litten
-	cry_reverse Cry_Torracat
-	cry_reverse Cry_Incineroar
-	cry_reverse Cry_Popplio
-	cry_reverse Cry_Brionne
-	cry_reverse Cry_Primarina
-	cry_reverse Cry_Pikipek
-	cry_reverse Cry_Trumbeak
-	cry_reverse Cry_Toucannon
-	cry_reverse Cry_Yungoos
-	cry_reverse Cry_Gumshoos
-	cry_reverse Cry_Grubbin
-	cry_reverse Cry_Charjabug
-	cry_reverse Cry_Vikavolt
-	cry_reverse Cry_Crabrawler
-	cry_reverse Cry_Crabominable
-	cry_reverse Cry_Oricorio
-	cry_reverse Cry_Cutiefly
-	cry_reverse Cry_Ribombee
-	cry_reverse Cry_Rockruff
-	cry_reverse Cry_Lycanroc
-	cry_reverse Cry_Wishiwashi
-	cry_reverse Cry_Mareanie
-	cry_reverse Cry_Toxapex
-	cry_reverse Cry_Mudbray
-	cry_reverse Cry_Mudsdale
-	cry_reverse Cry_Dewpider
-	cry_reverse Cry_Araquanid
-	cry_reverse Cry_Fomantis
-	cry_reverse Cry_Lurantis
-	cry_reverse Cry_Morelull
-	cry_reverse Cry_Shiinotic
-	cry_reverse Cry_Salandit
-	cry_reverse Cry_Salazzle
-	cry_reverse Cry_Stufful
-	cry_reverse Cry_Bewear
-	cry_reverse Cry_Bounsweet
-	cry_reverse Cry_Steenee
-	cry_reverse Cry_Tsareena
-	cry_reverse Cry_Comfey
-	cry_reverse Cry_Oranguru
-	cry_reverse Cry_Passimian
-	cry_reverse Cry_Wimpod
-	cry_reverse Cry_Golisopod
-	cry_reverse Cry_Sandygast
-	cry_reverse Cry_Palossand
-	cry_reverse Cry_Pyukumuku
-	cry_reverse Cry_TypeNull
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Komala
-	cry_reverse Cry_Turtonator
-	cry_reverse Cry_Togedemaru
-	cry_reverse Cry_Mimikyu
-	cry_reverse Cry_Bruxish
-	cry_reverse Cry_Drampa
-	cry_reverse Cry_Dhelmise
-	cry_reverse Cry_Jangmoo
-	cry_reverse Cry_Hakamoo
-	cry_reverse Cry_Kommoo
-	cry_reverse Cry_TapuKoko
-	cry_reverse Cry_TapuLele
-	cry_reverse Cry_TapuBulu
-	cry_reverse Cry_TapuFini
-	cry_reverse Cry_Cosmog
-	cry_reverse Cry_Cosmoem
-	cry_reverse Cry_Solgaleo
-	cry_reverse Cry_Lunala
-	cry_reverse Cry_Nihilego
-	cry_reverse Cry_Buzzwole
-	cry_reverse Cry_Pheromosa
-	cry_reverse Cry_Xurkitree
-	cry_reverse Cry_Celesteela
-	cry_reverse Cry_Kartana
-	cry_reverse Cry_Guzzlord
-	cry_reverse Cry_Necrozma
-	cry_reverse Cry_Magearna
-	cry_reverse Cry_Marshadow
-	cry_reverse Cry_Poipole
-	cry_reverse Cry_Naganadel
-	cry_reverse Cry_Stakataka
-	cry_reverse Cry_Blacephalon
-	cry_reverse Cry_Zeraora
-	cry_reverse Cry_Meltan
-	cry_reverse Cry_Melmetal
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_8_POKEMON == TRUE
-	cry_reverse Cry_Grookey
-	cry_reverse Cry_Thwackey
-	cry_reverse Cry_Rillaboom
-	cry_reverse Cry_Scorbunny
-	cry_reverse Cry_Raboot
-	cry_reverse Cry_Cinderace
-	cry_reverse Cry_Sobble
-	cry_reverse Cry_Drizzile
-	cry_reverse Cry_Inteleon
-	cry_reverse Cry_Skwovet
-	cry_reverse Cry_Greedent
-	cry_reverse Cry_Rookidee
-	cry_reverse Cry_Corvisquire
-	cry_reverse Cry_Corviknight
-	cry_reverse Cry_Blipbug
-	cry_reverse Cry_Dottler
-	cry_reverse Cry_Orbeetle
-	cry_reverse Cry_Nickit
-	cry_reverse Cry_Thievul
-	cry_reverse Cry_Gossifleur
-	cry_reverse Cry_Eldegoss
-	cry_reverse Cry_Wooloo
-	cry_reverse Cry_Dubwool
-	cry_reverse Cry_Chewtle
-	cry_reverse Cry_Drednaw
-	cry_reverse Cry_Yamper
-	cry_reverse Cry_Boltund
-	cry_reverse Cry_Rolycoly
-	cry_reverse Cry_Carkol
-	cry_reverse Cry_Coalossal
-	cry_reverse Cry_Applin
-	cry_reverse Cry_Flapple
-	cry_reverse Cry_Appletun
-	cry_reverse Cry_Silicobra
-	cry_reverse Cry_Sandaconda
-	cry_reverse Cry_Cramorant
-	cry_reverse Cry_Arrokuda
-	cry_reverse Cry_Barraskewda
-	cry_reverse Cry_Toxel
-	cry_reverse Cry_Toxtricity
-	cry_reverse Cry_Sizzlipede
-	cry_reverse Cry_Centiskorch
-	cry_reverse Cry_Clobbopus
-	cry_reverse Cry_Grapploct
-	cry_reverse Cry_Sinistea
-	cry_reverse Cry_Polteageist
-	cry_reverse Cry_Hatenna
-	cry_reverse Cry_Hattrem
-	cry_reverse Cry_Hatterene
-	cry_reverse Cry_Impidimp
-	cry_reverse Cry_Morgrem
-	cry_reverse Cry_Grimmsnarl
-	cry_reverse Cry_Obstagoon
-	cry_reverse Cry_Perrserker
-	cry_reverse Cry_Cursola
-	cry_reverse Cry_Sirfetchd
-	cry_reverse Cry_MrRime
-	cry_reverse Cry_Runerigus
-	cry_reverse Cry_Milcery
-	cry_reverse Cry_Alcremie
-	cry_reverse Cry_Falinks
-	cry_reverse Cry_Pincurchin
-	cry_reverse Cry_Snom
-	cry_reverse Cry_Frosmoth
-	cry_reverse Cry_Stonjourner
-	cry_reverse Cry_Eiscue
-	cry_reverse Cry_Indeedee
-	cry_reverse Cry_Morpeko
-	cry_reverse Cry_Cufant
-	cry_reverse Cry_Copperajah
-	cry_reverse Cry_Dracozolt
-	cry_reverse Cry_Arctozolt
-	cry_reverse Cry_Dracovish
-	cry_reverse Cry_Arctovish
-	cry_reverse Cry_Duraludon
-	cry_reverse Cry_Dreepy
-	cry_reverse Cry_Drakloak
-	cry_reverse Cry_Dragapult
-	cry_reverse Cry_Zacian
-	cry_reverse Cry_Zamazenta
-	cry_reverse Cry_Eternatus
-	cry_reverse Cry_Kubfu
-	cry_reverse Cry_Urshifu
-	cry_reverse Cry_Zarude
-	cry_reverse Cry_Regieleki
-	cry_reverse Cry_Regidrago
-	cry_reverse Cry_Glastrier
-	cry_reverse Cry_Spectrier
-	cry_reverse Cry_Calyrex
-	cry_reverse Cry_Wyrdeer //Cry_Wyrdeer
-	cry_reverse Cry_Kleavor //Cry_Kleavor
-	cry_reverse Cry_Ursaluna //Cry_Ursaluna
-	cry_reverse Cry_Basculegion //Cry_Basculegion
-	cry_reverse Cry_Sneasler //Cry_Sneasler
-	cry_reverse Cry_Overqwil //Cry_Overqwil
-	cry_reverse Cry_Enamorus //Cry_Enamorus
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-	@ Megas
-	cry_reverse Cry_VenusaurMega
-	cry_reverse Cry_CharizardMegaX
-	cry_reverse Cry_CharizardMegaY
-	cry_reverse Cry_BlastoiseMega
-	cry_reverse Cry_BeedrillMega
-	cry_reverse Cry_PidgeotMega
-	cry_reverse Cry_AlakazamMega
-	cry_reverse Cry_SlowbroMega
-	cry_reverse Cry_GengarMega
-	cry_reverse Cry_KangaskhanMega
-	cry_reverse Cry_PinsirMega
-	cry_reverse Cry_GyaradosMega
-	cry_reverse Cry_AerodactylMega
-	cry_reverse Cry_MewtwoMegaX
-	cry_reverse Cry_MewtwoMegaY
-	cry_reverse Cry_AmpharosMega
-	cry_reverse Cry_SteelixMega
-	cry_reverse Cry_ScizorMega
-	cry_reverse Cry_HeracrossMega
-	cry_reverse Cry_HoundoomMega
-	cry_reverse Cry_TyranitarMega
-	cry_reverse Cry_SceptileMega
-	cry_reverse Cry_BlazikenMega
-	cry_reverse Cry_SwampertMega
-	cry_reverse Cry_GardevoirMega
-	cry_reverse Cry_SableyeMega
-	cry_reverse Cry_MawileMega
-	cry_reverse Cry_AggronMega
-	cry_reverse Cry_MedichamMega
-	cry_reverse Cry_ManectricMega
-	cry_reverse Cry_SharpedoMega
-	cry_reverse Cry_CameruptMega
-	cry_reverse Cry_AltariaMega
-	cry_reverse Cry_BanetteMega
-	cry_reverse Cry_AbsolMega
-	cry_reverse Cry_GlalieMega
-	cry_reverse Cry_SalamenceMega
-	cry_reverse Cry_MetagrossMega
-	cry_reverse Cry_LatiasMega
-	cry_reverse Cry_LatiosMega
-.if P_GEN_4_POKEMON == TRUE
-	cry_reverse Cry_LopunnyMega
-	cry_reverse Cry_GarchompMega
-	cry_reverse Cry_LucarioMega
-	cry_reverse Cry_AbomasnowMega
-	cry_reverse Cry_GalladeMega
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_5_POKEMON == TRUE
-	cry_reverse Cry_AudinoMega
-.else
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_6_POKEMON == TRUE
-	cry_reverse Cry_DiancieMega
-.else
-	cry_reverse Cry_Unown
-.endif
-	@ Special Mega + Primals
-	cry_reverse Cry_RayquazaMega
-	cry_reverse Cry_KyogrePrimal
-	cry_reverse Cry_GroudonPrimal
-	@ Alolan Forms
-	cry_reverse Cry_Rattata
-	cry_reverse Cry_Raticate
-	cry_reverse Cry_Raichu
-	cry_reverse Cry_Sandshrew
-	cry_reverse Cry_Sandslash
-	cry_reverse Cry_Vulpix
-	cry_reverse Cry_Ninetales
-	cry_reverse Cry_Diglett
-	cry_reverse Cry_Dugtrio
-	cry_reverse Cry_Meowth
-	cry_reverse Cry_Persian
-	cry_reverse Cry_Geodude
-	cry_reverse Cry_Graveler
-	cry_reverse Cry_Golem
-	cry_reverse Cry_Grimer
-	cry_reverse Cry_Muk
-	cry_reverse Cry_Exeggutor
-	cry_reverse Cry_Marowak
-	@ Galarian Forms
-	cry_reverse Cry_Meowth
-	cry_reverse Cry_Ponyta
-	cry_reverse Cry_Rapidash
-	cry_reverse Cry_SlowpokeGalarian
-	cry_reverse Cry_Slowbro
-	cry_reverse Cry_Farfetchd
-	cry_reverse Cry_Weezing
-	cry_reverse Cry_MrMime
-	cry_reverse Cry_Articuno
-	cry_reverse Cry_Zapdos
-	cry_reverse Cry_Moltres
-	cry_reverse Cry_Slowking
-	cry_reverse Cry_Corsola
-	cry_reverse Cry_Zigzagoon
-	cry_reverse Cry_Linoone
-.if P_GEN_5_POKEMON == TRUE
-	cry_reverse Cry_Darumaka
-	cry_reverse Cry_Darmanitan
-	cry_reverse Cry_Yamask
-	cry_reverse Cry_Stunfisk
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-	@ Hisuian Forms
-	cry_reverse Cry_Growlithe
-	cry_reverse Cry_Arcanine
-	cry_reverse Cry_Voltorb
-	cry_reverse Cry_Electrode
-	cry_reverse Cry_Typhlosion
-	cry_reverse Cry_Qwilfish
-	cry_reverse Cry_Sneasel
-.if P_GEN_5_POKEMON == TRUE
-	cry_reverse Cry_Samurott
-	cry_reverse Cry_Lilligant
-	cry_reverse Cry_Zorua
-	cry_reverse Cry_Zoroark
-	cry_reverse Cry_Braviary
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_6_POKEMON == TRUE
-	cry_reverse Cry_Sliggoo
-	cry_reverse Cry_Goodra
-	cry_reverse Cry_Avalugg
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_7_POKEMON == TRUE
-	cry_reverse Cry_Decidueye
-.else
-	cry_reverse Cry_Unown
-.endif
-	@ Misc Forms
-	@ Cosplay Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	@ Cap Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Pikachu
-	@ Pichu
-	cry_reverse Cry_Pichu
-	@ Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	@ Castform
-	cry_reverse Cry_Castform
-	cry_reverse Cry_Castform
-	cry_reverse Cry_Castform
-	@ Deoxys
-	cry_reverse Cry_Deoxys
-	cry_reverse Cry_Deoxys
-	cry_reverse Cry_Deoxys
-.if P_GEN_4_POKEMON == TRUE
-	@ Burmy
-	cry_reverse Cry_Burmy
-	cry_reverse Cry_Burmy
-	@ Wormadam
-	cry_reverse Cry_Wormadam
-	cry_reverse Cry_Wormadam
-	@ Cherrim
-	cry_reverse Cry_Cherrim
-	@ Shellos
-	cry_reverse Cry_Shellos
-	@ Gastrodon
-	cry_reverse Cry_Gastrodon
-	@ Rotom
-	cry_reverse Cry_Rotom
-	cry_reverse Cry_Rotom
-	cry_reverse Cry_Rotom
-	cry_reverse Cry_Rotom
-	cry_reverse Cry_Rotom
-	@ Origin Forme
-	cry_reverse Cry_Dialga
-	cry_reverse Cry_Palkia
-	cry_reverse Cry_Giratina
-	@ Shaymin
-	cry_reverse Cry_ShayminSky
-	@ Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-	cry_reverse Cry_Arceus
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_5_POKEMON == TRUE
-	@ Basculin
-	cry_reverse Cry_Basculin
-	cry_reverse Cry_Basculin
-	@ Darmanitan
-	cry_reverse Cry_Darmanitan
-	cry_reverse Cry_Darmanitan
-	@ Deerling
-	cry_reverse Cry_Deerling
-	cry_reverse Cry_Deerling
-	cry_reverse Cry_Deerling
-	@ Sawsbuck
-	cry_reverse Cry_Sawsbuck
-	cry_reverse Cry_Sawsbuck
-	cry_reverse Cry_Sawsbuck
-	@ Therian Forms
-	cry_reverse Cry_TornadusTherian
-	cry_reverse Cry_ThundurusTherian
-	cry_reverse Cry_LandorusTherian
-	cry_reverse Cry_Bulbasaur //Cry_EnamorusTherian
-	@ Kyurem
-	cry_reverse Cry_KyuremWhite
-	cry_reverse Cry_KyuremBlack
-	@ Keldeo
-	cry_reverse Cry_Keldeo
-	@ Meloetta
-	cry_reverse Cry_Meloetta
-	@ Genesect
-	cry_reverse Cry_Genesect
-	cry_reverse Cry_Genesect
-	cry_reverse Cry_Genesect
-	cry_reverse Cry_Genesect
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_6_POKEMON == TRUE
-	@ Greninja
-	cry_reverse Cry_Greninja
-	cry_reverse Cry_Greninja
-	@ Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	cry_reverse Cry_Vivillon
-	@ Flabébé
-	cry_reverse Cry_Flabebe
-	cry_reverse Cry_Flabebe
-	cry_reverse Cry_Flabebe
-	cry_reverse Cry_Flabebe
-	@ Floette
-	cry_reverse Cry_Floette
-	cry_reverse Cry_Floette
-	cry_reverse Cry_Floette
-	cry_reverse Cry_Floette
-	cry_reverse Cry_FloetteEternalFlower
-	@ Florges
-	cry_reverse Cry_Florges
-	cry_reverse Cry_Florges
-	cry_reverse Cry_Florges
-	cry_reverse Cry_Florges
-	@ Furfrou
-	cry_reverse Cry_Furfrou
-	cry_reverse Cry_Furfrou
-	cry_reverse Cry_Furfrou
-	cry_reverse Cry_Furfrou
-	cry_reverse Cry_Furfrou
-	cry_reverse Cry_Furfrou
-	cry_reverse Cry_Furfrou
-	cry_reverse Cry_Furfrou
-	cry_reverse Cry_Furfrou
-	@ Meowstic
-	cry_reverse Cry_Meowstic
-	@ Aegislash
-	cry_reverse Cry_Aegislash
-	@ Pumpkaboo
-	cry_reverse Cry_Pumpkaboo
-	cry_reverse Cry_Pumpkaboo
-	cry_reverse Cry_PumpkabooSuper
-	@ Gourgeist
-	cry_reverse Cry_Gourgeist
-	cry_reverse Cry_Gourgeist
-	cry_reverse Cry_GourgeistSuper
-	@ Xerneas
-	cry_reverse Cry_Xerneas
-	@ Zygarde
-	cry_reverse Cry_Zygarde10
-	cry_reverse Cry_Zygarde10
-	cry_reverse Cry_Zygarde
-	cry_reverse Cry_ZygardeComplete
-	@ Hoopa
-	cry_reverse Cry_HoopaUnbound
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_7_POKEMON == TRUE
-	@ Oricorio
-	cry_reverse Cry_OricorioPomPom
-	cry_reverse Cry_OricorioPau
-	cry_reverse Cry_OricorioSensu
-	@ Rockruff
-	cry_reverse Cry_Rockruff
-	@ Lycanroc
-	cry_reverse Cry_LycanrocMidnight
-	cry_reverse Cry_LycanrocDusk
-	@ Wishiwashi
-	cry_reverse Cry_WishiwashiSchool
-	@ Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	cry_reverse Cry_Silvally
-	@ Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	cry_reverse Cry_Minior
-	@ Mimikyu
-	cry_reverse Cry_Mimikyu
-	@ Necrozma
-	cry_reverse Cry_NecrozmaDuskMane
-	cry_reverse Cry_NecrozmaDawnWings
-	cry_reverse Cry_NecrozmaUltra
-	@ Magearna
-	cry_reverse Cry_Magearna
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
-.if P_GEN_8_POKEMON == TRUE
-	@ Cramorant
-	cry_reverse Cry_Cramorant
-	cry_reverse Cry_Cramorant
-	@ Toxtricity
-	cry_reverse Cry_ToxtricityLowKey
-	@ Sinistea
-	cry_reverse Cry_Sinistea
-	@ Polteageist
-	cry_reverse Cry_Polteageist
-	@ Alcremie
-	cry_reverse Cry_Alcremie
-	cry_reverse Cry_Alcremie
-	cry_reverse Cry_Alcremie
-	cry_reverse Cry_Alcremie
-	cry_reverse Cry_Alcremie
-	cry_reverse Cry_Alcremie
-	cry_reverse Cry_Alcremie
-	cry_reverse Cry_Alcremie
-	@ Eiscue
-	cry_reverse Cry_EiscueNoiceFace
-	@ Indeedee
-	cry_reverse Cry_IndeedeeFemale
-	@ Morpeko
-	cry_reverse Cry_MorpekoHangry
-	@ Zacian
-	cry_reverse Cry_ZacianCrownedSword
-	@ Zamazenta
-	cry_reverse Cry_ZamazentaCrownedShield
-	@ Eternatus
-	cry_reverse Cry_EternatusEternamax
-	@ Urshifu
-	cry_reverse Cry_UrshifuRapidStrikeStyle
-	@ Zarude
-	cry_reverse Cry_Zarude
-	@ Calyrex
-	cry_reverse Cry_CalyrexIceRider
-	cry_reverse Cry_CalyrexShadowRider
-.else
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-	cry_reverse Cry_Unown
-.endif
+	cry_reverse Cry_Bulbasaur       @ SPECIES_BULBASAUR
+	cry_reverse Cry_Ivysaur       @ SPECIES_IVYSAUR
+	cry_reverse Cry_Venusaur       @ SPECIES_VENUSAUR
+	cry_reverse Cry_Charmander       @ SPECIES_CHARMANDER
+	cry_reverse Cry_Charmeleon       @ SPECIES_CHARMELEON
+	cry_reverse Cry_Charizard       @ SPECIES_CHARIZARD
+	cry_reverse Cry_Squirtle       @ SPECIES_SQUIRTLE
+	cry_reverse Cry_Wartortle       @ SPECIES_WARTORTLE
+	cry_reverse Cry_Blastoise       @ SPECIES_BLASTOISE
+	cry_reverse Cry_Caterpie       @ SPECIES_CATERPIE
+	cry_reverse Cry_Metapod       @ SPECIES_METAPOD
+	cry_reverse Cry_Butterfree       @ SPECIES_BUTTERFREE
+	cry_reverse Cry_Weedle       @ SPECIES_WEEDLE
+	cry_reverse Cry_Kakuna       @ SPECIES_KAKUNA
+	cry_reverse Cry_Beedrill       @ SPECIES_BEEDRILL
+	cry_reverse Cry_Pidgey       @ SPECIES_PIDGEY
+	cry_reverse Cry_Pidgeotto       @ SPECIES_PIDGEOTTO
+	cry_reverse Cry_Pidgeot       @ SPECIES_PIDGEOT
+	cry_reverse Cry_Rattata       @ SPECIES_RATTATA
+	cry_reverse Cry_Raticate       @ SPECIES_RATICATE
+	cry_reverse Cry_Spearow       @ SPECIES_SPEAROW
+	cry_reverse Cry_Fearow       @ SPECIES_FEAROW
+	cry_reverse Cry_Ekans       @ SPECIES_EKANS
+	cry_reverse Cry_Arbok       @ SPECIES_ARBOK
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU
+	cry_reverse Cry_Raichu       @ SPECIES_RAICHU
+	cry_reverse Cry_Sandshrew       @ SPECIES_SANDSHREW
+	cry_reverse Cry_Sandslash       @ SPECIES_SANDSLASH
+	cry_reverse Cry_NidoranF       @ SPECIES_NIDORAN_F
+	cry_reverse Cry_Nidorina       @ SPECIES_NIDORINA
+	cry_reverse Cry_Nidoqueen       @ SPECIES_NIDOQUEEN
+	cry_reverse Cry_NidoranM       @ SPECIES_NIDORAN_M
+	cry_reverse Cry_Nidorino       @ SPECIES_NIDORINO
+	cry_reverse Cry_Nidoking       @ SPECIES_NIDOKING
+	cry_reverse Cry_Clefairy       @ SPECIES_CLEFAIRY
+	cry_reverse Cry_Clefable       @ SPECIES_CLEFABLE
+	cry_reverse Cry_Vulpix       @ SPECIES_VULPIX
+	cry_reverse Cry_Ninetales       @ SPECIES_NINETALES
+	cry_reverse Cry_Jigglypuff       @ SPECIES_JIGGLYPUFF
+	cry_reverse Cry_Wigglytuff       @ SPECIES_WIGGLYTUFF
+	cry_reverse Cry_Zubat       @ SPECIES_ZUBAT
+	cry_reverse Cry_Golbat       @ SPECIES_GOLBAT
+	cry_reverse Cry_Oddish       @ SPECIES_ODDISH
+	cry_reverse Cry_Gloom       @ SPECIES_GLOOM
+	cry_reverse Cry_Vileplume       @ SPECIES_VILEPLUME
+	cry_reverse Cry_Paras       @ SPECIES_PARAS
+	cry_reverse Cry_Parasect       @ SPECIES_PARASECT
+	cry_reverse Cry_Venonat       @ SPECIES_VENONAT
+	cry_reverse Cry_Venomoth       @ SPECIES_VENOMOTH
+	cry_reverse Cry_Diglett       @ SPECIES_DIGLETT
+	cry_reverse Cry_Dugtrio       @ SPECIES_DUGTRIO
+	cry_reverse Cry_Meowth       @ SPECIES_MEOWTH
+	cry_reverse Cry_Persian       @ SPECIES_PERSIAN
+	cry_reverse Cry_Psyduck       @ SPECIES_PSYDUCK
+	cry_reverse Cry_Golduck       @ SPECIES_GOLDUCK
+	cry_reverse Cry_Mankey       @ SPECIES_MANKEY
+	cry_reverse Cry_Primeape       @ SPECIES_PRIMEAPE
+	cry_reverse Cry_Growlithe       @ SPECIES_GROWLITHE
+	cry_reverse Cry_Arcanine       @ SPECIES_ARCANINE
+	cry_reverse Cry_Poliwag       @ SPECIES_POLIWAG
+	cry_reverse Cry_Poliwhirl       @ SPECIES_POLIWHIRL
+	cry_reverse Cry_Poliwrath       @ SPECIES_POLIWRATH
+	cry_reverse Cry_Abra       @ SPECIES_ABRA
+	cry_reverse Cry_Kadabra       @ SPECIES_KADABRA
+	cry_reverse Cry_Alakazam       @ SPECIES_ALAKAZAM
+	cry_reverse Cry_Machop       @ SPECIES_MACHOP
+	cry_reverse Cry_Machoke       @ SPECIES_MACHOKE
+	cry_reverse Cry_Machamp       @ SPECIES_MACHAMP
+	cry_reverse Cry_Bellsprout       @ SPECIES_BELLSPROUT
+	cry_reverse Cry_Weepinbell       @ SPECIES_WEEPINBELL
+	cry_reverse Cry_Victreebel       @ SPECIES_VICTREEBEL
+	cry_reverse Cry_Tentacool       @ SPECIES_TENTACOOL
+	cry_reverse Cry_Tentacruel       @ SPECIES_TENTACRUEL
+	cry_reverse Cry_Geodude       @ SPECIES_GEODUDE
+	cry_reverse Cry_Graveler       @ SPECIES_GRAVELER
+	cry_reverse Cry_Golem       @ SPECIES_GOLEM
+	cry_reverse Cry_Ponyta       @ SPECIES_PONYTA
+	cry_reverse Cry_Rapidash       @ SPECIES_RAPIDASH
+	cry_reverse Cry_Slowpoke       @ SPECIES_SLOWPOKE
+	cry_reverse Cry_Slowbro       @ SPECIES_SLOWBRO
+	cry_reverse Cry_Magnemite       @ SPECIES_MAGNEMITE
+	cry_reverse Cry_Magneton       @ SPECIES_MAGNETON
+	cry_reverse Cry_Farfetchd       @ SPECIES_FARFETCHD
+	cry_reverse Cry_Doduo       @ SPECIES_DODUO
+	cry_reverse Cry_Dodrio       @ SPECIES_DODRIO
+	cry_reverse Cry_Seel       @ SPECIES_SEEL
+	cry_reverse Cry_Dewgong       @ SPECIES_DEWGONG
+	cry_reverse Cry_Grimer       @ SPECIES_GRIMER
+	cry_reverse Cry_Muk       @ SPECIES_MUK
+	cry_reverse Cry_Shellder       @ SPECIES_SHELLDER
+	cry_reverse Cry_Cloyster       @ SPECIES_CLOYSTER
+	cry_reverse Cry_Gastly       @ SPECIES_GASTLY
+	cry_reverse Cry_Haunter       @ SPECIES_HAUNTER
+	cry_reverse Cry_Gengar       @ SPECIES_GENGAR
+	cry_reverse Cry_Onix       @ SPECIES_ONIX
+	cry_reverse Cry_Drowzee       @ SPECIES_DROWZEE
+	cry_reverse Cry_Hypno       @ SPECIES_HYPNO
+	cry_reverse Cry_Krabby       @ SPECIES_KRABBY
+	cry_reverse Cry_Kingler       @ SPECIES_KINGLER
+	cry_reverse Cry_Voltorb       @ SPECIES_VOLTORB
+	cry_reverse Cry_Electrode       @ SPECIES_ELECTRODE
+	cry_reverse Cry_Exeggcute       @ SPECIES_EXEGGCUTE
+	cry_reverse Cry_Exeggutor       @ SPECIES_EXEGGUTOR
+	cry_reverse Cry_Cubone       @ SPECIES_CUBONE
+	cry_reverse Cry_Marowak       @ SPECIES_MAROWAK
+	cry_reverse Cry_Hitmonlee       @ SPECIES_HITMONLEE
+	cry_reverse Cry_Hitmonchan       @ SPECIES_HITMONCHAN
+	cry_reverse Cry_Lickitung       @ SPECIES_LICKITUNG
+	cry_reverse Cry_Koffing       @ SPECIES_KOFFING
+	cry_reverse Cry_Weezing       @ SPECIES_WEEZING
+	cry_reverse Cry_Rhyhorn       @ SPECIES_RHYHORN
+	cry_reverse Cry_Rhydon       @ SPECIES_RHYDON
+	cry_reverse Cry_Chansey       @ SPECIES_CHANSEY
+	cry_reverse Cry_Tangela       @ SPECIES_TANGELA
+	cry_reverse Cry_Kangaskhan       @ SPECIES_KANGASKHAN
+	cry_reverse Cry_Horsea       @ SPECIES_HORSEA
+	cry_reverse Cry_Seadra       @ SPECIES_SEADRA
+	cry_reverse Cry_Goldeen       @ SPECIES_GOLDEEN
+	cry_reverse Cry_Seaking       @ SPECIES_SEAKING
+	cry_reverse Cry_Staryu       @ SPECIES_STARYU
+	cry_reverse Cry_Starmie       @ SPECIES_STARMIE
+	cry_reverse Cry_MrMime       @ SPECIES_MR_MIME
+	cry_reverse Cry_Scyther       @ SPECIES_SCYTHER
+	cry_reverse Cry_Jynx       @ SPECIES_JYNX
+	cry_reverse Cry_Electabuzz       @ SPECIES_ELECTABUZZ
+	cry_reverse Cry_Magmar       @ SPECIES_MAGMAR
+	cry_reverse Cry_Pinsir       @ SPECIES_PINSIR
+	cry_reverse Cry_Tauros       @ SPECIES_TAUROS
+	cry_reverse Cry_Magikarp       @ SPECIES_MAGIKARP
+	cry_reverse Cry_Gyarados       @ SPECIES_GYARADOS
+	cry_reverse Cry_Lapras       @ SPECIES_LAPRAS
+	cry_reverse Cry_Ditto       @ SPECIES_DITTO
+	cry_reverse Cry_Eevee       @ SPECIES_EEVEE
+	cry_reverse Cry_Vaporeon       @ SPECIES_VAPOREON
+	cry_reverse Cry_Jolteon       @ SPECIES_JOLTEON
+	cry_reverse Cry_Flareon       @ SPECIES_FLAREON
+	cry_reverse Cry_Porygon       @ SPECIES_PORYGON
+	cry_reverse Cry_Omanyte       @ SPECIES_OMANYTE
+	cry_reverse Cry_Omastar       @ SPECIES_OMASTAR
+	cry_reverse Cry_Kabuto       @ SPECIES_KABUTO
+	cry_reverse Cry_Kabutops       @ SPECIES_KABUTOPS
+	cry_reverse Cry_Aerodactyl       @ SPECIES_AERODACTYL
+	cry_reverse Cry_Snorlax       @ SPECIES_SNORLAX
+	cry_reverse Cry_Articuno       @ SPECIES_ARTICUNO
+	cry_reverse Cry_Zapdos       @ SPECIES_ZAPDOS
+	cry_reverse Cry_Moltres       @ SPECIES_MOLTRES
+	cry_reverse Cry_Dratini       @ SPECIES_DRATINI
+	cry_reverse Cry_Dragonair       @ SPECIES_DRAGONAIR
+	cry_reverse Cry_Dragonite       @ SPECIES_DRAGONITE
+	cry_reverse Cry_Mewtwo       @ SPECIES_MEWTWO
+	cry_reverse Cry_Mew       @ SPECIES_MEW
+	cry_reverse Cry_Chikorita       @ SPECIES_CHIKORITA
+	cry_reverse Cry_Bayleef       @ SPECIES_BAYLEEF
+	cry_reverse Cry_Meganium       @ SPECIES_MEGANIUM
+	cry_reverse Cry_Cyndaquil       @ SPECIES_CYNDAQUIL
+	cry_reverse Cry_Quilava       @ SPECIES_QUILAVA
+	cry_reverse Cry_Typhlosion       @ SPECIES_TYPHLOSION
+	cry_reverse Cry_Totodile       @ SPECIES_TOTODILE
+	cry_reverse Cry_Croconaw       @ SPECIES_CROCONAW
+	cry_reverse Cry_Feraligatr       @ SPECIES_FERALIGATR
+	cry_reverse Cry_Sentret       @ SPECIES_SENTRET
+	cry_reverse Cry_Furret       @ SPECIES_FURRET
+	cry_reverse Cry_Hoothoot       @ SPECIES_HOOTHOOT
+	cry_reverse Cry_Noctowl       @ SPECIES_NOCTOWL
+	cry_reverse Cry_Ledyba       @ SPECIES_LEDYBA
+	cry_reverse Cry_Ledian       @ SPECIES_LEDIAN
+	cry_reverse Cry_Spinarak       @ SPECIES_SPINARAK
+	cry_reverse Cry_Ariados       @ SPECIES_ARIADOS
+	cry_reverse Cry_Crobat       @ SPECIES_CROBAT
+	cry_reverse Cry_Chinchou       @ SPECIES_CHINCHOU
+	cry_reverse Cry_Lanturn       @ SPECIES_LANTURN
+	cry_reverse Cry_Pichu       @ SPECIES_PICHU
+	cry_reverse Cry_Cleffa       @ SPECIES_CLEFFA
+	cry_reverse Cry_Igglybuff       @ SPECIES_IGGLYBUFF
+	cry_reverse Cry_Togepi       @ SPECIES_TOGEPI
+	cry_reverse Cry_Togetic       @ SPECIES_TOGETIC
+	cry_reverse Cry_Natu       @ SPECIES_NATU
+	cry_reverse Cry_Xatu       @ SPECIES_XATU
+	cry_reverse Cry_Mareep       @ SPECIES_MAREEP
+	cry_reverse Cry_Flaaffy       @ SPECIES_FLAAFFY
+	cry_reverse Cry_Ampharos       @ SPECIES_AMPHAROS
+	cry_reverse Cry_Bellossom       @ SPECIES_BELLOSSOM
+	cry_reverse Cry_Marill       @ SPECIES_MARILL
+	cry_reverse Cry_Azumarill       @ SPECIES_AZUMARILL
+	cry_reverse Cry_Sudowoodo       @ SPECIES_SUDOWOODO
+	cry_reverse Cry_Politoed       @ SPECIES_POLITOED
+	cry_reverse Cry_Hoppip       @ SPECIES_HOPPIP
+	cry_reverse Cry_Skiploom       @ SPECIES_SKIPLOOM
+	cry_reverse Cry_Jumpluff       @ SPECIES_JUMPLUFF
+	cry_reverse Cry_Aipom       @ SPECIES_AIPOM
+	cry_reverse Cry_Sunkern       @ SPECIES_SUNKERN
+	cry_reverse Cry_Sunflora       @ SPECIES_SUNFLORA
+	cry_reverse Cry_Yanma       @ SPECIES_YANMA
+	cry_reverse Cry_Wooper       @ SPECIES_WOOPER
+	cry_reverse Cry_Quagsire       @ SPECIES_QUAGSIRE
+	cry_reverse Cry_Espeon       @ SPECIES_ESPEON
+	cry_reverse Cry_Umbreon       @ SPECIES_UMBREON
+	cry_reverse Cry_Murkrow       @ SPECIES_MURKROW
+	cry_reverse Cry_Slowking       @ SPECIES_SLOWKING
+	cry_reverse Cry_Misdreavus       @ SPECIES_MISDREAVUS
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN
+	cry_reverse Cry_Wobbuffet       @ SPECIES_WOBBUFFET
+	cry_reverse Cry_Girafarig       @ SPECIES_GIRAFARIG
+	cry_reverse Cry_Pineco       @ SPECIES_PINECO
+	cry_reverse Cry_Forretress       @ SPECIES_FORRETRESS
+	cry_reverse Cry_Dunsparce       @ SPECIES_DUNSPARCE
+	cry_reverse Cry_Gligar       @ SPECIES_GLIGAR
+	cry_reverse Cry_Steelix       @ SPECIES_STEELIX
+	cry_reverse Cry_Snubbull       @ SPECIES_SNUBBULL
+	cry_reverse Cry_Granbull       @ SPECIES_GRANBULL
+	cry_reverse Cry_Qwilfish       @ SPECIES_QWILFISH
+	cry_reverse Cry_Scizor       @ SPECIES_SCIZOR
+	cry_reverse Cry_Shuckle       @ SPECIES_SHUCKLE
+	cry_reverse Cry_Heracross       @ SPECIES_HERACROSS
+	cry_reverse Cry_Sneasel       @ SPECIES_SNEASEL
+	cry_reverse Cry_Teddiursa       @ SPECIES_TEDDIURSA
+	cry_reverse Cry_Ursaring       @ SPECIES_URSARING
+	cry_reverse Cry_Slugma       @ SPECIES_SLUGMA
+	cry_reverse Cry_Magcargo       @ SPECIES_MAGCARGO
+	cry_reverse Cry_Swinub       @ SPECIES_SWINUB
+	cry_reverse Cry_Piloswine       @ SPECIES_PILOSWINE
+	cry_reverse Cry_Corsola       @ SPECIES_CORSOLA
+	cry_reverse Cry_Remoraid       @ SPECIES_REMORAID
+	cry_reverse Cry_Octillery       @ SPECIES_OCTILLERY
+	cry_reverse Cry_Delibird       @ SPECIES_DELIBIRD
+	cry_reverse Cry_Mantine       @ SPECIES_MANTINE
+	cry_reverse Cry_Skarmory       @ SPECIES_SKARMORY
+	cry_reverse Cry_Houndour       @ SPECIES_HOUNDOUR
+	cry_reverse Cry_Houndoom       @ SPECIES_HOUNDOOM
+	cry_reverse Cry_Kingdra       @ SPECIES_KINGDRA
+	cry_reverse Cry_Phanpy       @ SPECIES_PHANPY
+	cry_reverse Cry_Donphan       @ SPECIES_DONPHAN
+	cry_reverse Cry_Porygon2       @ SPECIES_PORYGON2
+	cry_reverse Cry_Stantler       @ SPECIES_STANTLER
+	cry_reverse Cry_Smeargle       @ SPECIES_SMEARGLE
+	cry_reverse Cry_Tyrogue       @ SPECIES_TYROGUE
+	cry_reverse Cry_Hitmontop       @ SPECIES_HITMONTOP
+	cry_reverse Cry_Smoochum       @ SPECIES_SMOOCHUM
+	cry_reverse Cry_Elekid       @ SPECIES_ELEKID
+	cry_reverse Cry_Magby       @ SPECIES_MAGBY
+	cry_reverse Cry_Miltank       @ SPECIES_MILTANK
+	cry_reverse Cry_Blissey       @ SPECIES_BLISSEY
+	cry_reverse Cry_Raikou       @ SPECIES_RAIKOU
+	cry_reverse Cry_Entei       @ SPECIES_ENTEI
+	cry_reverse Cry_Suicune       @ SPECIES_SUICUNE
+	cry_reverse Cry_Larvitar       @ SPECIES_LARVITAR
+	cry_reverse Cry_Pupitar       @ SPECIES_PUPITAR
+	cry_reverse Cry_Tyranitar       @ SPECIES_TYRANITAR
+	cry_reverse Cry_Lugia       @ SPECIES_LUGIA
+	cry_reverse Cry_HoOh       @ SPECIES_HO_OH
+	cry_reverse Cry_Celebi       @ SPECIES_CELEBI
+	cry_reverse Cry_Azurill       @ SPECIES_AZURILL
+	cry_reverse Cry_Wynaut       @ SPECIES_WYNAUT
+	cry_reverse Cry_Ambipom       @ SPECIES_AMBIPOM
+	cry_reverse Cry_Mismagius       @ SPECIES_MISMAGIUS
+	cry_reverse Cry_Honchkrow       @ SPECIES_HONCHKROW
+	cry_reverse Cry_Bonsly       @ SPECIES_BONSLY
+	cry_reverse Cry_MimeJr       @ SPECIES_MIME_JR
+	cry_reverse Cry_Happiny       @ SPECIES_HAPPINY
+	cry_reverse Cry_Munchlax       @ SPECIES_MUNCHLAX
+	cry_reverse Cry_Mantyke       @ SPECIES_MANTYKE
+	cry_reverse Cry_Weavile       @ SPECIES_WEAVILE
+	cry_reverse Cry_Magnezone       @ SPECIES_MAGNEZONE
+	cry_reverse Cry_Lickilicky       @ SPECIES_LICKILICKY
+	cry_reverse Cry_Rhyperior       @ SPECIES_RHYPERIOR
+	cry_reverse Cry_Tangrowth       @ SPECIES_TANGROWTH
+	cry_reverse Cry_Electivire       @ SPECIES_ELECTIVIRE
+	cry_reverse Cry_Magmortar       @ SPECIES_MAGMORTAR
+	cry_reverse Cry_Togekiss       @ SPECIES_TOGEKISS
+	cry_reverse Cry_Yanmega       @ SPECIES_YANMEGA
+	cry_reverse Cry_Leafeon       @ SPECIES_LEAFEON
+	cry_reverse Cry_Glaceon       @ SPECIES_GLACEON
+	cry_reverse Cry_Gliscor       @ SPECIES_GLISCOR
+	cry_reverse Cry_Mamoswine       @ SPECIES_MAMOSWINE
+	cry_reverse Cry_PorygonZ       @ SPECIES_PORYGON_Z
+	cry_reverse Cry_Sylveon       @ SPECIES_SYLVEON
+	cry_reverse Cry_Perrserker       @ SPECIES_PERRSERKER
+	cry_reverse Cry_Cursola       @ SPECIES_CURSOLA
+	cry_reverse Cry_Sirfetchd       @ SPECIES_SIRFETCHD
+	cry_reverse Cry_MrRime       @ SPECIES_MR_RIME
+	cry_reverse Cry_Wyrdeer       @ SPECIES_WYRDEER
+	cry_reverse Cry_Kleavor       @ SPECIES_KLEAVOR
+	cry_reverse Cry_Ursaluna       @ SPECIES_URSALUNA
+	cry_reverse Cry_Sneasler       @ SPECIES_SNEASLER
+	cry_reverse Cry_Overqwil       @ SPECIES_OVERQWIL
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YUUKI_YUUNA1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YUUKI_YUUNA2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YUUKI_YUUNA3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MIMORI1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MIMORI2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MIMORI3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_KARIN1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_KARIN2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_KARIN3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_FUU1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_FUU2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_FUU3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_ITSUKI1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_ITSUKI2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_ITSUKI3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SONOKO_BIG1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SONOKO_BIG2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SONOKO_BIG3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SUMI1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SUMI2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SUMI3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_GIN1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_GIN2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_GIN3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SONOKO_SMOL1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SONOKO_SMOL2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SONOKO_SMOL3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_WAKABA1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_WAKABA2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_WAKABA3A
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_TAKASHIMA_YUUNA1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_TAKASHIMA_YUUNA2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_TAKASHIMA_YUUNA3A
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_CHIKAGE1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_CHIKAGE2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_CHIKAGE3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_TAMAKO1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_TAMAKO2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_TAMAKO3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_ANZU1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_ANZU2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_ANZU3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_HINATA1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_HINATA2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_UTANO1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_UTANO2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_UTANO3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MITO1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MITO2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MEBUKI1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MEBUKI2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MEBUKI3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SUZUME1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SUZUME2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SUZUME3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YUMIKO1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YUMIKO2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YUMIKO3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SHIZUKU1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SHIZUKU2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SHIZUKU3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_AYA1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_AYA2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SEKKA1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SEKKA2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SEKKA3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_NATSUME1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_NATSUME2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_NATSUME3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_AKAMINE_YUUNA1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_AKAMINE_YUUNA2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_AKAMINE_YUUNA3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_RENGE1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_RENGE2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_RENGE3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SHIZUKA1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SHIZUKA2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_SHIZUKA3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YUZUKI_YUUNA1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YUZUKI_YUUNA2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YUZUKI_YUUNA3
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MASUZU1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MASUZU2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YOSHIKA_1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YOSHIKA_2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_HIME1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_HIME2
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MISAKI1
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_MISAKI2
+	cry_reverse Cry_Unown       @ SPECIES_TH_KEDAMA
+	cry_reverse Cry_Unown       @ SPECIES_TH_FAIRY
+	cry_reverse Cry_Unown       @ SPECIES_TH_ZOMBIEFAIRY
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHINGYOKU1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHINGYOKU2O
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHINGYOKU2M
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHINGYOKU2F
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUGEN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUGEN2
+	cry_reverse Cry_Unown       @ SPECIES_TH_MIMA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MIMA2
+	cry_reverse Cry_Unown       @ SPECIES_TH_ELIS1
+	cry_reverse Cry_Unown       @ SPECIES_TH_ELIS2
+	cry_reverse Cry_Unown       @ SPECIES_TH_KIKURI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KIKURI2
+	cry_reverse Cry_Unown       @ SPECIES_TH_SARIEL1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SARIEL2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_SARIEL2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_KONNGARA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KONNGARA2
+	cry_reverse Cry_Unown       @ SPECIES_TH_GENJI
+	cry_reverse Cry_Unown       @ SPECIES_TH_RIKA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_RIKA2
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEIRA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEIRA2
+	cry_reverse Cry_Unown       @ SPECIES_TH_ELLEN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_ELLEN2
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOTOHIME1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOTOHIME2
+	cry_reverse Cry_Unown       @ SPECIES_TH_KANA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KANA2
+	cry_reverse Cry_Unown       @ SPECIES_TH_RIKAKO1
+	cry_reverse Cry_Unown       @ SPECIES_TH_RIKAKO2
+	cry_reverse Cry_Unown       @ SPECIES_TH_CHIYURI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_CHIYURI2
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUMEMI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUMEMI2
+	cry_reverse Cry_Unown       @ SPECIES_TH_RUUKOTO
+	cry_reverse Cry_Unown       @ SPECIES_TH_MIMICHAN
+	cry_reverse Cry_Unown       @ SPECIES_TH_ORANGE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_ORANGE2
+	cry_reverse Cry_Unown       @ SPECIES_TH_KURUMI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KURUMI2
+	cry_reverse Cry_Unown       @ SPECIES_TH_ELLY1
+	cry_reverse Cry_Unown       @ SPECIES_TH_ELLY2
+	cry_reverse Cry_Unown       @ SPECIES_TH_MUGETSU1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MUGETSU2
+	cry_reverse Cry_Unown       @ SPECIES_TH_GENGETSU1
+	cry_reverse Cry_Unown       @ SPECIES_TH_GENGETSU2
+	cry_reverse Cry_Unown       @ SPECIES_TH_SARA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SARA2
+	cry_reverse Cry_Unown       @ SPECIES_TH_LOUISE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_LOUISE2
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUKI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUKI2
+	cry_reverse Cry_Unown       @ SPECIES_TH_MAI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MAI2
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUMEKO1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUMEKO2
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHINKI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHINKI2
+	cry_reverse Cry_Unown       @ SPECIES_TH_RUMIA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_RUMIA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_RUMIA2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_RUMIA2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_DAIYOUSEI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_DAIYOUSEI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_DAIYOUSEI2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_DAIYOUSEI2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_CIRNO1
+	cry_reverse Cry_Unown       @ SPECIES_TH_CIRNO2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_CIRNO2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_CIRNO2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_LUNACHILD1
+	cry_reverse Cry_Unown       @ SPECIES_TH_LUNACHILD2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_LUNACHILD2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_LUNACHILD2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_STARSAPPHIRE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_STARSAPPHIRE2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_STARSAPPHIRE2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_STARSAPPHIRE2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUNNYMILK1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUNNYMILK2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUNNYMILK2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUNNYMILK2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEILING1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEILING2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEILING2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEILING2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOAKUMA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOAKUMA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOAKUMA2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_PATCHOULI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_PATCHOULI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_PATCHOULI2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_PATCHOULI2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_SAKUYA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SAKUYA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_SAKUYA2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_SAKUYA2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_REMILIA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_REMILIA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_REMILIA2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_REMILIA2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_FLANDRE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_FLANDRE2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_FLANDRE2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_FLANDRE2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_SATSUKI
+	cry_reverse Cry_Unown       @ SPECIES_TH_LETTY1
+	cry_reverse Cry_Unown       @ SPECIES_TH_LETTY2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_LETTY2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_LETTY2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_CHEN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_CHEN2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_CHEN2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_CHEN2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_ALICE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_ALICE2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_ALICE2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_ALICE2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_LILYBLACK1
+	cry_reverse Cry_Unown       @ SPECIES_TH_LILYWHITE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_LILYBLACK2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_LILYWHITE2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_LILYBLACK2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_LILYWHITE2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_LILYBLACK2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_LILYWHITE2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_LUNASA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_LUNASA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_LUNASA2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_MERLIN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MERLIN2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_MERLIN2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_LYRICA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_LYRICA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_LYRICA2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_YOUMU1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YOUMU2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_YOUMU2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_YOUMU2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUYUKO1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUYUKO2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUYUKO2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUYUKO2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_RAN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_RAN2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_RAN2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_RAN2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUKARI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUKARI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUKARI2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUKARI2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUIKA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUIKA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUIKA2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUIKA2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_WRIGGLE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_WRIGGLE2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_WRIGGLE2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_WRIGGLE2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_MYSTIA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MYSTIA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_MYSTIA2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_MYSTIA2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_KEINE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KEINE2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_KEINE2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_KEINE2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_KEINE2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_TEWI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_TEWI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_TEWI2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_TEWI2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_REISEN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_REISEN2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_REISEN2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_REISEN2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_GYOKUTO
+	cry_reverse Cry_Unown       @ SPECIES_TH_EIRIN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_EIRIN2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_EIRIN2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_EIRIN2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_KAGUYA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KAGUYA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_KAGUYA2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_KAGUYA2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_MOKOU1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MOKOU2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_MOKOU2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_MOKOU2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_TOYOHIME1
+	cry_reverse Cry_Unown       @ SPECIES_TH_TOYOHIME2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_TOYOHIME2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_YORIHIME1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YORIHIME2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_YORIHIME2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_AYA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_AYA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_AYA2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_AYA2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEDICINE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEDICINE2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEDICINE2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEDICINE2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_MEDICINE2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUKA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUKA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUKA2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUKA2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOMACHI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOMACHI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOMACHI2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOMACHI2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_EIKI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_EIKI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_EIKI2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_EIKI2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHIZUHA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHIZUHA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHIZUHA2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHIZUHA2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_MINORIKO1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MINORIKO2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_MINORIKO2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_MINORIKO2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_HINA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_HINA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_HINA2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_HINA2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_NITORI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_NITORI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_NITORI2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_NITORI2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_MOMOJI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MOMOJI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_MOMOJI2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_SANAE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SANAE2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_SANAE2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_SANAE2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_KANAKO1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KANAKO2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_KANAKO2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_KANAKO2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUWAKO1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUWAKO2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUWAKO2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUWAKO2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_IKU1
+	cry_reverse Cry_Unown       @ SPECIES_TH_IKU2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_IKU2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_IKU2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_TENSHI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_TENSHI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_TENSHI2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_TENSHI2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_KISUME1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KISUME2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_KISUME2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_YAMAME1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YAMAME2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_YAMAME2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_YAMAME2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_PARSEE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_PARSEE2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_PARSEE2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_PARSEE2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUGI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUGI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUGI2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUGI2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_SATORI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SATORI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_SATORI2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_SATORI2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_RIN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_RIN2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_RIN2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_RIN2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_UTSUHO1
+	cry_reverse Cry_Unown       @ SPECIES_TH_UTSUHO2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_UTSUHO2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_UTSUHO2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOISHI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOISHI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOISHI2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOISHI2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_NAZRIN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_NAZRIN2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_NAZRIN2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_NAZRIN2H
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOGASA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOGASA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOGASA2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_KOGASA2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_ICHIRIN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_ICHIRIN2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_ICHIRIN2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_ICHIRIN2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_MURASA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_MURASA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_MURASA2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_MURASA2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHOU1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHOU2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHOU2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_SHOU2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_BYAKUREN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_BYAKUREN2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_BYAKUREN2D
+	cry_reverse Cry_Unown       @ SPECIES_TH_BYAKUREN2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_NUE1
+	cry_reverse Cry_Unown       @ SPECIES_TH_NUE2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_NUE2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_NUE2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_OONAMAZU
+	cry_reverse Cry_Unown       @ SPECIES_TH_TENSOKU1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KASEN1
+	cry_reverse Cry_Unown       @ SPECIES_TH_KASEN2
+	cry_reverse Cry_Unown       @ SPECIES_TH_TENMA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_TENMA2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_TENMA2S
+	cry_reverse Cry_Unown       @ SPECIES_TH_SENDAI1
+	cry_reverse Cry_Unown       @ SPECIES_TH_SENDAI2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_SENDAI2T
+	cry_reverse Cry_Unown       @ SPECIES_TH_TOKIKO1
+	cry_reverse Cry_Unown       @ SPECIES_TH_TOKIKO2N
+	cry_reverse Cry_Unown       @ SPECIES_TH_TOKIKO2A
+	cry_reverse Cry_Unown       @ SPECIES_TH_RINNOSUKE
+	cry_reverse Cry_Unown       @ SPECIES_TH_AKYUU
+	cry_reverse Cry_Unown       @ SPECIES_TH_MARIBEL
+	cry_reverse Cry_Unown       @ SPECIES_TH_RENKO
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUMIREKO
+	cry_reverse Cry_Unown       @ SPECIES_TH_MARISA1
+	cry_reverse Cry_Unown       @ SPECIES_TH_REIMU1
+	cry_reverse Cry_Unown       @ SPECIES_TH_REIMUCTC
+	cry_reverse Cry_Unown       @ SPECIES_ETC_ISAMI
+	cry_reverse Cry_Unown       @ SPECIES_SH_VIVITR
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MISUZU1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MISUZU2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MISUZU3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KANO1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KANO2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KANO3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MINAGI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MINAGI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MINAGI3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_HARUKO1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_HARUKO2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_HARUKO3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KANNA1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KANNA2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_HIJIRI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_HIJIRI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_HIJIRI3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MICHIRU1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MICHIRU2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MICHIRU3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_URAHA1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_URAHA2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_URAHA3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_POTATO
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SORA
+	cry_reverse Cry_Unown       @ SPECIES_KEY_AYU1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_AYU2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_AYU3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MAI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MAI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MAI3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_NAYUKI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_NAYUKI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_NAYUKI3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SHIORI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SHIORI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SHIORI3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MAKOTO1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MAKOTO2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MAKOTO3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MISHIO1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MISHIO2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SAYURI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SAYURI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SAYURI3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_AKIKO1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_AKIKO2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_AKIKO3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KAORI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KAORI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_PIRO
+	cry_reverse Cry_Unown       @ SPECIES_KEY_NAGISA1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_NAGISA2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_NAGISA3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KYOU1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KYOU2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KYOU3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_RYOU1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_RYOU2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_RYOU3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KOTOMI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KOTOMI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KOTOMI3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_TOMOYO1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_TOMOYO2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_TOMOYO3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_FUUKO1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_FUUKO2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_FUUKO3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_YUKINE1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_YUKINE2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_YUKINE3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MISAE1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MISAE2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MISAE3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SANAE1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SANAE2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SANAE3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MEI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MEI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_USHIO1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_USHIO2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_BOTAN
+	cry_reverse Cry_Unown       @ SPECIES_KEY_RIN1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_RIN2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_RIN3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KOMARI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KOMARI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KOMARI3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_YUIKO1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_YUIKO2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_YUIKO3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MIO1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MIO2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_MIO3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_HARUKA1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_HARUKA2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_HARUKA3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KUD1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KUD2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KUD3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KANATA1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KANATA2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_KANATA3
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SASAMI1
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SASAMI2
+	cry_reverse Cry_Unown       @ SPECIES_KEY_SASAMI3
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MIKI1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MIKI2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_SUBARU1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_SUBARU2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_HARUKA1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_HARUKA2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_NOZOMI1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_NOZOMI2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_YURI1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_YURI2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_KURUMI1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_KURUMI2A
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_KURUMI2B
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_ANKO1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_ANKO2A
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_ANKO2B
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_RENGE1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_RENGE2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_ASUHA1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_ASUHA2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_SAKURA1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_SAKURA2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_HINATA1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_HINATA2A
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_HINATA2B
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_KAEDE1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_KAEDE2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MICHAEL1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MICHAEL2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_KOKOMI1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_KOKOMI2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_URARA1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_URARA2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_SADONE1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_SADONE2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_KANON1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_KANON2A
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_KANON2B
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_SHIHO1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_SHIHO2A
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_SHIHO2B
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MISAKI1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MISAKI2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MARI1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MARI2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_ERIS
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_ITSUKI1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_ITSUKI2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_FURAN1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_FURAN2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_ERIKA1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_ERIKA2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_EVINA
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_AOI1
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_AOI2
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_BOTAN
+	cry_reverse Cry_Unown       @ SPECIES_PC_NAGISA
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBLACK1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBLACK2
+	cry_reverse Cry_Unown       @ SPECIES_PC_HONOKA
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREWHITE1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREWHITE2
+	cry_reverse Cry_Unown       @ SPECIES_PC_HIKARI
+	cry_reverse Cry_Unown       @ SPECIES_PC_SHINYLUMINOUS1
+	cry_reverse Cry_Unown       @ SPECIES_PC_SHINYLUMINOUS2
+	cry_reverse Cry_Unown       @ SPECIES_PC_SAKI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBLOOM
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBRIGHT
+	cry_reverse Cry_Unown       @ SPECIES_PC_MAI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREEGRET
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREWINDY
+	cry_reverse Cry_Unown       @ SPECIES_PC_NOZOMI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREDREAM1A
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREDREAM1B
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREDREAM2
+	cry_reverse Cry_Unown       @ SPECIES_PC_RIN
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREROUGE1A
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREROUGE1B
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREROUGE2
+	cry_reverse Cry_Unown       @ SPECIES_PC_URARA
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURELEMONADE1A
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURELEMONADE1B
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURELEMONADE2
+	cry_reverse Cry_Unown       @ SPECIES_PC_KOMACHI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMINT1A
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMINT1B
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMINT2
+	cry_reverse Cry_Unown       @ SPECIES_PC_KAREN
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREAQUA1A
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREAQUA1B
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREAQUA2
+	cry_reverse Cry_Unown       @ SPECIES_PC_KURUMI
+	cry_reverse Cry_Unown       @ SPECIES_PC_MILKYROSE1
+	cry_reverse Cry_Unown       @ SPECIES_PC_MILKYROSE2
+	cry_reverse Cry_Unown       @ SPECIES_PC_DARKDREAM
+	cry_reverse Cry_Unown       @ SPECIES_PC_DARKROUGE
+	cry_reverse Cry_Unown       @ SPECIES_PC_DARKLEMONADE
+	cry_reverse Cry_Unown       @ SPECIES_PC_DARKMINT
+	cry_reverse Cry_Unown       @ SPECIES_PC_DARKAQUA
+	cry_reverse Cry_Unown       @ SPECIES_PC_LOVE
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREPEACH1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREPEACH2
+	cry_reverse Cry_Unown       @ SPECIES_PC_MIKI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBERRY1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBERRY2
+	cry_reverse Cry_Unown       @ SPECIES_PC_INORI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREPINE1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREPINE2
+	cry_reverse Cry_Unown       @ SPECIES_PC_SETSUNA
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREPASSION1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREPASSION2
+	cry_reverse Cry_Unown       @ SPECIES_PC_EAS
+	cry_reverse Cry_Unown       @ SPECIES_PC_TSUBOMI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBLOSSOM1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBLOSSOM2
+	cry_reverse Cry_Unown       @ SPECIES_PC_ERIKA
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMARINE1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMARINE2
+	cry_reverse Cry_Unown       @ SPECIES_PC_ITSUKI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURESUNSHINE1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURESUNSHINE2
+	cry_reverse Cry_Unown       @ SPECIES_PC_YURI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMOONLIGHT1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMOONLIGHT2
+	cry_reverse Cry_Unown       @ SPECIES_PC_DARKPRECURE
+	cry_reverse Cry_Unown       @ SPECIES_PC_HIBIKI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMELODY1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMELODY2
+	cry_reverse Cry_Unown       @ SPECIES_PC_KANADE
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURERHYTHM1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURERHYTHM2
+	cry_reverse Cry_Unown       @ SPECIES_PC_ELLEN
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBEAT1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBEAT2
+	cry_reverse Cry_Unown       @ SPECIES_PC_AKO
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMUSE1A
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMUSE1B
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMUSE2
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREFLORAHCPC
+	cry_reverse Cry_Unown       @ SPECIES_PC_MIYUKI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREHAPPY1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREHAPPY2
+	cry_reverse Cry_Unown       @ SPECIES_PC_AKANE
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURESUNNY1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURESUNNY2
+	cry_reverse Cry_Unown       @ SPECIES_PC_YAYOI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREPEACE1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREPEACE2
+	cry_reverse Cry_Unown       @ SPECIES_PC_NAO
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMARCH1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMARCH2
+	cry_reverse Cry_Unown       @ SPECIES_PC_REIKA
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBEAUTY1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBEAUTY2
+	cry_reverse Cry_Unown       @ SPECIES_PC_BADENDHAPPY
+	cry_reverse Cry_Unown       @ SPECIES_PC_BADENDSUNNY
+	cry_reverse Cry_Unown       @ SPECIES_PC_BADENDPEACE
+	cry_reverse Cry_Unown       @ SPECIES_PC_BADENDMARCH
+	cry_reverse Cry_Unown       @ SPECIES_PC_BADENDBEAUTY
+	cry_reverse Cry_Unown       @ SPECIES_PC_MANA
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREHEART1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREHEART2
+	cry_reverse Cry_Unown       @ SPECIES_PC_RIKKA
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREDIAMOND1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREDIAMOND2
+	cry_reverse Cry_Unown       @ SPECIES_PC_ALICE
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREROSETTA1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREROSETTA2
+	cry_reverse Cry_Unown       @ SPECIES_PC_MAKOTO
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURESWORD1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURESWORD2
+	cry_reverse Cry_Unown       @ SPECIES_PC_AGURI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREACE1
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREACE2
+	cry_reverse Cry_Unown       @ SPECIES_PC_REGINA
+	cry_reverse Cry_Unown       @ SPECIES_PC_AYUMI
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREECHO
+	cry_reverse Cry_Unown       @ SPECIES_ETC_CUREUNION2
+	cry_reverse Cry_Unown       @ SPECIES_ETC_MISSINGNO
+	cry_reverse Cry_Unown       @ SPECIES_ETC_EMESGESEY
+	cry_reverse Cry_Unown       @ SPECIES_ETC_SHOUNEN
+	cry_reverse Cry_Unown       @ SPECIES_ETC_SHOUJO
+	cry_reverse Cry_Unown       @ SPECIES_ETC_DIALGATH
+	cry_reverse Cry_Unown       @ SPECIES_ETC_PALKIATH
+	cry_reverse Cry_Unown       @ SPECIES_ETC_GIRATINATH
+	cry_reverse Cry_Unown       @ SPECIES_ETC_DECADE1
+	cry_reverse Cry_Unown       @ SPECIES_ETC_DECADE2A
+	cry_reverse Cry_Unown       @ SPECIES_ETC_DECADE2B
+	cry_reverse Cry_Unown       @ SPECIES_ETC_DIEND1
+	cry_reverse Cry_Unown       @ SPECIES_ETC_DIEND2
+	cry_reverse Cry_Unown       @ SPECIES_ETC_DELAST
+	cry_reverse Cry_VenusaurMega       @ SPECIES_VENUSAUR_MEGA
+	cry_reverse Cry_CharizardMegaX       @ SPECIES_CHARIZARD_MEGA_X
+	cry_reverse Cry_CharizardMegaY       @ SPECIES_CHARIZARD_MEGA_Y
+	cry_reverse Cry_BlastoiseMega       @ SPECIES_BLASTOISE_MEGA
+	cry_reverse Cry_BeedrillMega       @ SPECIES_BEEDRILL_MEGA
+	cry_reverse Cry_PidgeotMega       @ SPECIES_PIDGEOT_MEGA
+	cry_reverse Cry_AlakazamMega       @ SPECIES_ALAKAZAM_MEGA
+	cry_reverse Cry_SlowbroMega       @ SPECIES_SLOWBRO_MEGA
+	cry_reverse Cry_GengarMega       @ SPECIES_GENGAR_MEGA
+	cry_reverse Cry_KangaskhanMega       @ SPECIES_KANGASKHAN_MEGA
+	cry_reverse Cry_PinsirMega       @ SPECIES_PINSIR_MEGA
+	cry_reverse Cry_GyaradosMega       @ SPECIES_GYARADOS_MEGA
+	cry_reverse Cry_AerodactylMega       @ SPECIES_AERODACTYL_MEGA
+	cry_reverse Cry_MewtwoMegaX       @ SPECIES_MEWTWO_MEGA_X
+	cry_reverse Cry_MewtwoMegaY       @ SPECIES_MEWTWO_MEGA_Y
+	cry_reverse Cry_AmpharosMega       @ SPECIES_AMPHAROS_MEGA
+	cry_reverse Cry_SteelixMega       @ SPECIES_STEELIX_MEGA
+	cry_reverse Cry_ScizorMega       @ SPECIES_SCIZOR_MEGA
+	cry_reverse Cry_HeracrossMega       @ SPECIES_HERACROSS_MEGA
+	cry_reverse Cry_HoundoomMega       @ SPECIES_HOUNDOOM_MEGA
+	cry_reverse Cry_TyranitarMega       @ SPECIES_TYRANITAR_MEGA
+	cry_reverse Cry_Rattata       @ SPECIES_RATTATA_ALOLAN
+	cry_reverse Cry_Raticate       @ SPECIES_RATICATE_ALOLAN
+	cry_reverse Cry_Raichu       @ SPECIES_RAICHU_ALOLAN
+	cry_reverse Cry_Sandshrew       @ SPECIES_SANDSHREW_ALOLAN
+	cry_reverse Cry_Sandslash       @ SPECIES_SANDSLASH_ALOLAN
+	cry_reverse Cry_Vulpix       @ SPECIES_VULPIX_ALOLAN
+	cry_reverse Cry_Ninetales       @ SPECIES_NINETALES_ALOLAN
+	cry_reverse Cry_Diglett       @ SPECIES_DIGLETT_ALOLAN
+	cry_reverse Cry_Dugtrio       @ SPECIES_DUGTRIO_ALOLAN
+	cry_reverse Cry_Meowth       @ SPECIES_MEOWTH_ALOLAN
+	cry_reverse Cry_Persian       @ SPECIES_PERSIAN_ALOLAN
+	cry_reverse Cry_Geodude       @ SPECIES_GEODUDE_ALOLAN
+	cry_reverse Cry_Graveler       @ SPECIES_GRAVELER_ALOLAN
+	cry_reverse Cry_Golem       @ SPECIES_GOLEM_ALOLAN
+	cry_reverse Cry_Grimer       @ SPECIES_GRIMER_ALOLAN
+	cry_reverse Cry_Muk       @ SPECIES_MUK_ALOLAN
+	cry_reverse Cry_Exeggutor       @ SPECIES_EXEGGUTOR_ALOLAN
+	cry_reverse Cry_Marowak       @ SPECIES_MAROWAK_ALOLAN
+	cry_reverse Cry_Meowth       @ SPECIES_MEOWTH_GALARIAN
+	cry_reverse Cry_Ponyta       @ SPECIES_PONYTA_GALARIAN
+	cry_reverse Cry_Rapidash       @ SPECIES_RAPIDASH_GALARIAN
+	cry_reverse Cry_SlowpokeGalarian       @ SPECIES_SLOWPOKE_GALARIAN
+	cry_reverse Cry_Slowbro       @ SPECIES_SLOWBRO_GALARIAN
+	cry_reverse Cry_Farfetchd       @ SPECIES_FARFETCHD_GALARIAN
+	cry_reverse Cry_Weezing       @ SPECIES_WEEZING_GALARIAN
+	cry_reverse Cry_MrMime       @ SPECIES_MR_MIME_GALARIAN
+	cry_reverse Cry_Articuno       @ SPECIES_ARTICUNO_GALARIAN
+	cry_reverse Cry_Zapdos       @ SPECIES_ZAPDOS_GALARIAN
+	cry_reverse Cry_Moltres       @ SPECIES_MOLTRES_GALARIAN
+	cry_reverse Cry_Slowking       @ SPECIES_SLOWKING_GALARIAN
+	cry_reverse Cry_Corsola       @ SPECIES_CORSOLA_GALARIAN
+	cry_reverse Cry_Growlithe       @ SPECIES_GROWLITHE_HISUIAN
+	cry_reverse Cry_Arcanine       @ SPECIES_ARCANINE_HISUIAN
+	cry_reverse Cry_Voltorb       @ SPECIES_VOLTORB_HISUIAN
+	cry_reverse Cry_Electrode       @ SPECIES_ELECTRODE_HISUIAN
+	cry_reverse Cry_Typhlosion       @ SPECIES_TYPHLOSION_HISUIAN
+	cry_reverse Cry_Qwilfish       @ SPECIES_QWILFISH_HISUIAN
+	cry_reverse Cry_Sneasel       @ SPECIES_SNEASEL_HISUIAN
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_COSPLAY
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_ROCK_STAR
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_BELLE
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_POP_STAR
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_PH_D
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_LIBRE
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_ORIGINAL_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_HOENN_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_SINNOH_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_UNOVA_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_KALOS_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_ALOLA_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_PARTNER_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_PIKACHU_WORLD_CAP
+	cry_reverse Cry_Pichu       @ SPECIES_PICHU_SPIKY_EARED
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_B
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_C
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_D
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_E
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_F
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_G
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_H
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_I
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_J
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_K
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_L
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_M
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_N
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_O
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_P
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_Q
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_R
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_S
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_T
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_U
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_V
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_W
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_X
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_Y
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_Z
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_EMARK
+	cry_reverse Cry_Unown       @ SPECIES_UNOWN_QMARK
+	cry_reverse Cry_Bulbasaur       @ SPECIES_MOE_BULBASAUR
+	cry_reverse Cry_Ivysaur       @ SPECIES_MOE_IVYSAUR
+	cry_reverse Cry_Venusaur       @ SPECIES_MOE_VENUSAUR
+	cry_reverse Cry_Charmander       @ SPECIES_MOE_CHARMANDER
+	cry_reverse Cry_Charmeleon       @ SPECIES_MOE_CHARMELEON
+	cry_reverse Cry_Charizard       @ SPECIES_MOE_CHARIZARD
+	cry_reverse Cry_Squirtle       @ SPECIES_MOE_SQUIRTLE
+	cry_reverse Cry_Wartortle       @ SPECIES_MOE_WARTORTLE
+	cry_reverse Cry_Blastoise       @ SPECIES_MOE_BLASTOISE
+	cry_reverse Cry_Caterpie       @ SPECIES_MOE_CATERPIE
+	cry_reverse Cry_Metapod       @ SPECIES_MOE_METAPOD
+	cry_reverse Cry_Butterfree       @ SPECIES_MOE_BUTTERFREE
+	cry_reverse Cry_Weedle       @ SPECIES_MOE_WEEDLE
+	cry_reverse Cry_Kakuna       @ SPECIES_MOE_KAKUNA
+	cry_reverse Cry_Beedrill       @ SPECIES_MOE_BEEDRILL
+	cry_reverse Cry_Pidgey       @ SPECIES_MOE_PIDGEY
+	cry_reverse Cry_Pidgeotto       @ SPECIES_MOE_PIDGEOTTO
+	cry_reverse Cry_Pidgeot       @ SPECIES_MOE_PIDGEOT
+	cry_reverse Cry_Rattata       @ SPECIES_MOE_RATTATA
+	cry_reverse Cry_Raticate       @ SPECIES_MOE_RATICATE
+	cry_reverse Cry_Spearow       @ SPECIES_MOE_SPEAROW
+	cry_reverse Cry_Fearow       @ SPECIES_MOE_FEAROW
+	cry_reverse Cry_Ekans       @ SPECIES_MOE_EKANS
+	cry_reverse Cry_Arbok       @ SPECIES_MOE_ARBOK
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU
+	cry_reverse Cry_Raichu       @ SPECIES_MOE_RAICHU
+	cry_reverse Cry_Sandshrew       @ SPECIES_MOE_SANDSHREW
+	cry_reverse Cry_Sandslash       @ SPECIES_MOE_SANDSLASH
+	cry_reverse Cry_NidoranF       @ SPECIES_MOE_NIDORAN_F
+	cry_reverse Cry_Nidorina       @ SPECIES_MOE_NIDORINA
+	cry_reverse Cry_Nidoqueen       @ SPECIES_MOE_NIDOQUEEN
+	cry_reverse Cry_NidoranM       @ SPECIES_MOE_NIDORAN_M
+	cry_reverse Cry_Nidorino       @ SPECIES_MOE_NIDORINO
+	cry_reverse Cry_Nidoking       @ SPECIES_MOE_NIDOKING
+	cry_reverse Cry_Clefairy       @ SPECIES_MOE_CLEFAIRY
+	cry_reverse Cry_Clefable       @ SPECIES_MOE_CLEFABLE
+	cry_reverse Cry_Vulpix       @ SPECIES_MOE_VULPIX
+	cry_reverse Cry_Ninetales       @ SPECIES_MOE_NINETALES
+	cry_reverse Cry_Jigglypuff       @ SPECIES_MOE_JIGGLYPUFF
+	cry_reverse Cry_Wigglytuff       @ SPECIES_MOE_WIGGLYTUFF
+	cry_reverse Cry_Zubat       @ SPECIES_MOE_ZUBAT
+	cry_reverse Cry_Golbat       @ SPECIES_MOE_GOLBAT
+	cry_reverse Cry_Oddish       @ SPECIES_MOE_ODDISH
+	cry_reverse Cry_Gloom       @ SPECIES_MOE_GLOOM
+	cry_reverse Cry_Vileplume       @ SPECIES_MOE_VILEPLUME
+	cry_reverse Cry_Paras       @ SPECIES_MOE_PARAS
+	cry_reverse Cry_Parasect       @ SPECIES_MOE_PARASECT
+	cry_reverse Cry_Venonat       @ SPECIES_MOE_VENONAT
+	cry_reverse Cry_Venomoth       @ SPECIES_MOE_VENOMOTH
+	cry_reverse Cry_Diglett       @ SPECIES_MOE_DIGLETT
+	cry_reverse Cry_Dugtrio       @ SPECIES_MOE_DUGTRIO
+	cry_reverse Cry_Meowth       @ SPECIES_MOE_MEOWTH
+	cry_reverse Cry_Persian       @ SPECIES_MOE_PERSIAN
+	cry_reverse Cry_Psyduck       @ SPECIES_MOE_PSYDUCK
+	cry_reverse Cry_Golduck       @ SPECIES_MOE_GOLDUCK
+	cry_reverse Cry_Mankey       @ SPECIES_MOE_MANKEY
+	cry_reverse Cry_Primeape       @ SPECIES_MOE_PRIMEAPE
+	cry_reverse Cry_Growlithe       @ SPECIES_MOE_GROWLITHE
+	cry_reverse Cry_Arcanine       @ SPECIES_MOE_ARCANINE
+	cry_reverse Cry_Poliwag       @ SPECIES_MOE_POLIWAG
+	cry_reverse Cry_Poliwhirl       @ SPECIES_MOE_POLIWHIRL
+	cry_reverse Cry_Poliwrath       @ SPECIES_MOE_POLIWRATH
+	cry_reverse Cry_Abra       @ SPECIES_MOE_ABRA
+	cry_reverse Cry_Kadabra       @ SPECIES_MOE_KADABRA
+	cry_reverse Cry_Alakazam       @ SPECIES_MOE_ALAKAZAM
+	cry_reverse Cry_Machop       @ SPECIES_MOE_MACHOP
+	cry_reverse Cry_Machoke       @ SPECIES_MOE_MACHOKE
+	cry_reverse Cry_Machamp       @ SPECIES_MOE_MACHAMP
+	cry_reverse Cry_Bellsprout       @ SPECIES_MOE_BELLSPROUT
+	cry_reverse Cry_Weepinbell       @ SPECIES_MOE_WEEPINBELL
+	cry_reverse Cry_Victreebel       @ SPECIES_MOE_VICTREEBEL
+	cry_reverse Cry_Tentacool       @ SPECIES_MOE_TENTACOOL
+	cry_reverse Cry_Tentacruel       @ SPECIES_MOE_TENTACRUEL
+	cry_reverse Cry_Geodude       @ SPECIES_MOE_GEODUDE
+	cry_reverse Cry_Graveler       @ SPECIES_MOE_GRAVELER
+	cry_reverse Cry_Golem       @ SPECIES_MOE_GOLEM
+	cry_reverse Cry_Ponyta       @ SPECIES_MOE_PONYTA
+	cry_reverse Cry_Rapidash       @ SPECIES_MOE_RAPIDASH
+	cry_reverse Cry_Slowpoke       @ SPECIES_MOE_SLOWPOKE
+	cry_reverse Cry_Slowbro       @ SPECIES_MOE_SLOWBRO
+	cry_reverse Cry_Magnemite       @ SPECIES_MOE_MAGNEMITE
+	cry_reverse Cry_Magneton       @ SPECIES_MOE_MAGNETON
+	cry_reverse Cry_Farfetchd       @ SPECIES_MOE_FARFETCHD
+	cry_reverse Cry_Doduo       @ SPECIES_MOE_DODUO
+	cry_reverse Cry_Dodrio       @ SPECIES_MOE_DODRIO
+	cry_reverse Cry_Seel       @ SPECIES_MOE_SEEL
+	cry_reverse Cry_Dewgong       @ SPECIES_MOE_DEWGONG
+	cry_reverse Cry_Grimer       @ SPECIES_MOE_GRIMER
+	cry_reverse Cry_Muk       @ SPECIES_MOE_MUK
+	cry_reverse Cry_Shellder       @ SPECIES_MOE_SHELLDER
+	cry_reverse Cry_Cloyster       @ SPECIES_MOE_CLOYSTER
+	cry_reverse Cry_Gastly       @ SPECIES_MOE_GASTLY
+	cry_reverse Cry_Haunter       @ SPECIES_MOE_HAUNTER
+	cry_reverse Cry_Gengar       @ SPECIES_MOE_GENGAR
+	cry_reverse Cry_Onix       @ SPECIES_MOE_ONIX
+	cry_reverse Cry_Drowzee       @ SPECIES_MOE_DROWZEE
+	cry_reverse Cry_Hypno       @ SPECIES_MOE_HYPNO
+	cry_reverse Cry_Krabby       @ SPECIES_MOE_KRABBY
+	cry_reverse Cry_Kingler       @ SPECIES_MOE_KINGLER
+	cry_reverse Cry_Voltorb       @ SPECIES_MOE_VOLTORB
+	cry_reverse Cry_Electrode       @ SPECIES_MOE_ELECTRODE
+	cry_reverse Cry_Exeggcute       @ SPECIES_MOE_EXEGGCUTE
+	cry_reverse Cry_Exeggutor       @ SPECIES_MOE_EXEGGUTOR
+	cry_reverse Cry_Cubone       @ SPECIES_MOE_CUBONE
+	cry_reverse Cry_Marowak       @ SPECIES_MOE_MAROWAK
+	cry_reverse Cry_Hitmonlee       @ SPECIES_MOE_HITMONLEE
+	cry_reverse Cry_Hitmonchan       @ SPECIES_MOE_HITMONCHAN
+	cry_reverse Cry_Lickitung       @ SPECIES_MOE_LICKITUNG
+	cry_reverse Cry_Koffing       @ SPECIES_MOE_KOFFING
+	cry_reverse Cry_Weezing       @ SPECIES_MOE_WEEZING
+	cry_reverse Cry_Rhyhorn       @ SPECIES_MOE_RHYHORN
+	cry_reverse Cry_Rhydon       @ SPECIES_MOE_RHYDON
+	cry_reverse Cry_Chansey       @ SPECIES_MOE_CHANSEY
+	cry_reverse Cry_Tangela       @ SPECIES_MOE_TANGELA
+	cry_reverse Cry_Kangaskhan       @ SPECIES_MOE_KANGASKHAN
+	cry_reverse Cry_Horsea       @ SPECIES_MOE_HORSEA
+	cry_reverse Cry_Seadra       @ SPECIES_MOE_SEADRA
+	cry_reverse Cry_Goldeen       @ SPECIES_MOE_GOLDEEN
+	cry_reverse Cry_Seaking       @ SPECIES_MOE_SEAKING
+	cry_reverse Cry_Staryu       @ SPECIES_MOE_STARYU
+	cry_reverse Cry_Starmie       @ SPECIES_MOE_STARMIE
+	cry_reverse Cry_MrMime       @ SPECIES_MOE_MR_MIME
+	cry_reverse Cry_Scyther       @ SPECIES_MOE_SCYTHER
+	cry_reverse Cry_Jynx       @ SPECIES_MOE_JYNX
+	cry_reverse Cry_Electabuzz       @ SPECIES_MOE_ELECTABUZZ
+	cry_reverse Cry_Magmar       @ SPECIES_MOE_MAGMAR
+	cry_reverse Cry_Pinsir       @ SPECIES_MOE_PINSIR
+	cry_reverse Cry_Tauros       @ SPECIES_MOE_TAUROS
+	cry_reverse Cry_Magikarp       @ SPECIES_MOE_MAGIKARP
+	cry_reverse Cry_Gyarados       @ SPECIES_MOE_GYARADOS
+	cry_reverse Cry_Lapras       @ SPECIES_MOE_LAPRAS
+	cry_reverse Cry_Ditto       @ SPECIES_MOE_DITTO
+	cry_reverse Cry_Eevee       @ SPECIES_MOE_EEVEE
+	cry_reverse Cry_Vaporeon       @ SPECIES_MOE_VAPOREON
+	cry_reverse Cry_Jolteon       @ SPECIES_MOE_JOLTEON
+	cry_reverse Cry_Flareon       @ SPECIES_MOE_FLAREON
+	cry_reverse Cry_Porygon       @ SPECIES_MOE_PORYGON
+	cry_reverse Cry_Omanyte       @ SPECIES_MOE_OMANYTE
+	cry_reverse Cry_Omastar       @ SPECIES_MOE_OMASTAR
+	cry_reverse Cry_Kabuto       @ SPECIES_MOE_KABUTO
+	cry_reverse Cry_Kabutops       @ SPECIES_MOE_KABUTOPS
+	cry_reverse Cry_Aerodactyl       @ SPECIES_MOE_AERODACTYL
+	cry_reverse Cry_Snorlax       @ SPECIES_MOE_SNORLAX
+	cry_reverse Cry_Articuno       @ SPECIES_MOE_ARTICUNO
+	cry_reverse Cry_Zapdos       @ SPECIES_MOE_ZAPDOS
+	cry_reverse Cry_Moltres       @ SPECIES_MOE_MOLTRES
+	cry_reverse Cry_Dratini       @ SPECIES_MOE_DRATINI
+	cry_reverse Cry_Dragonair       @ SPECIES_MOE_DRAGONAIR
+	cry_reverse Cry_Dragonite       @ SPECIES_MOE_DRAGONITE
+	cry_reverse Cry_Mewtwo       @ SPECIES_MOE_MEWTWO
+	cry_reverse Cry_Mew       @ SPECIES_MOE_MEW
+	cry_reverse Cry_Chikorita       @ SPECIES_MOE_CHIKORITA
+	cry_reverse Cry_Bayleef       @ SPECIES_MOE_BAYLEEF
+	cry_reverse Cry_Meganium       @ SPECIES_MOE_MEGANIUM
+	cry_reverse Cry_Cyndaquil       @ SPECIES_MOE_CYNDAQUIL
+	cry_reverse Cry_Quilava       @ SPECIES_MOE_QUILAVA
+	cry_reverse Cry_Typhlosion       @ SPECIES_MOE_TYPHLOSION
+	cry_reverse Cry_Totodile       @ SPECIES_MOE_TOTODILE
+	cry_reverse Cry_Croconaw       @ SPECIES_MOE_CROCONAW
+	cry_reverse Cry_Feraligatr       @ SPECIES_MOE_FERALIGATR
+	cry_reverse Cry_Sentret       @ SPECIES_MOE_SENTRET
+	cry_reverse Cry_Furret       @ SPECIES_MOE_FURRET
+	cry_reverse Cry_Hoothoot       @ SPECIES_MOE_HOOTHOOT
+	cry_reverse Cry_Noctowl       @ SPECIES_MOE_NOCTOWL
+	cry_reverse Cry_Ledyba       @ SPECIES_MOE_LEDYBA
+	cry_reverse Cry_Ledian       @ SPECIES_MOE_LEDIAN
+	cry_reverse Cry_Spinarak       @ SPECIES_MOE_SPINARAK
+	cry_reverse Cry_Ariados       @ SPECIES_MOE_ARIADOS
+	cry_reverse Cry_Crobat       @ SPECIES_MOE_CROBAT
+	cry_reverse Cry_Chinchou       @ SPECIES_MOE_CHINCHOU
+	cry_reverse Cry_Lanturn       @ SPECIES_MOE_LANTURN
+	cry_reverse Cry_Pichu       @ SPECIES_MOE_PICHU
+	cry_reverse Cry_Cleffa       @ SPECIES_MOE_CLEFFA
+	cry_reverse Cry_Igglybuff       @ SPECIES_MOE_IGGLYBUFF
+	cry_reverse Cry_Togepi       @ SPECIES_MOE_TOGEPI
+	cry_reverse Cry_Togetic       @ SPECIES_MOE_TOGETIC
+	cry_reverse Cry_Natu       @ SPECIES_MOE_NATU
+	cry_reverse Cry_Xatu       @ SPECIES_MOE_XATU
+	cry_reverse Cry_Mareep       @ SPECIES_MOE_MAREEP
+	cry_reverse Cry_Flaaffy       @ SPECIES_MOE_FLAAFFY
+	cry_reverse Cry_Ampharos       @ SPECIES_MOE_AMPHAROS
+	cry_reverse Cry_Bellossom       @ SPECIES_MOE_BELLOSSOM
+	cry_reverse Cry_Marill       @ SPECIES_MOE_MARILL
+	cry_reverse Cry_Azumarill       @ SPECIES_MOE_AZUMARILL
+	cry_reverse Cry_Sudowoodo       @ SPECIES_MOE_SUDOWOODO
+	cry_reverse Cry_Politoed       @ SPECIES_MOE_POLITOED
+	cry_reverse Cry_Hoppip       @ SPECIES_MOE_HOPPIP
+	cry_reverse Cry_Skiploom       @ SPECIES_MOE_SKIPLOOM
+	cry_reverse Cry_Jumpluff       @ SPECIES_MOE_JUMPLUFF
+	cry_reverse Cry_Aipom       @ SPECIES_MOE_AIPOM
+	cry_reverse Cry_Sunkern       @ SPECIES_MOE_SUNKERN
+	cry_reverse Cry_Sunflora       @ SPECIES_MOE_SUNFLORA
+	cry_reverse Cry_Yanma       @ SPECIES_MOE_YANMA
+	cry_reverse Cry_Wooper       @ SPECIES_MOE_WOOPER
+	cry_reverse Cry_Quagsire       @ SPECIES_MOE_QUAGSIRE
+	cry_reverse Cry_Espeon       @ SPECIES_MOE_ESPEON
+	cry_reverse Cry_Umbreon       @ SPECIES_MOE_UMBREON
+	cry_reverse Cry_Murkrow       @ SPECIES_MOE_MURKROW
+	cry_reverse Cry_Slowking       @ SPECIES_MOE_SLOWKING
+	cry_reverse Cry_Misdreavus       @ SPECIES_MOE_MISDREAVUS
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN
+	cry_reverse Cry_Wobbuffet       @ SPECIES_MOE_WOBBUFFET
+	cry_reverse Cry_Girafarig       @ SPECIES_MOE_GIRAFARIG
+	cry_reverse Cry_Pineco       @ SPECIES_MOE_PINECO
+	cry_reverse Cry_Forretress       @ SPECIES_MOE_FORRETRESS
+	cry_reverse Cry_Dunsparce       @ SPECIES_MOE_DUNSPARCE
+	cry_reverse Cry_Gligar       @ SPECIES_MOE_GLIGAR
+	cry_reverse Cry_Steelix       @ SPECIES_MOE_STEELIX
+	cry_reverse Cry_Snubbull       @ SPECIES_MOE_SNUBBULL
+	cry_reverse Cry_Granbull       @ SPECIES_MOE_GRANBULL
+	cry_reverse Cry_Qwilfish       @ SPECIES_MOE_QWILFISH
+	cry_reverse Cry_Scizor       @ SPECIES_MOE_SCIZOR
+	cry_reverse Cry_Shuckle       @ SPECIES_MOE_SHUCKLE
+	cry_reverse Cry_Heracross       @ SPECIES_MOE_HERACROSS
+	cry_reverse Cry_Sneasel       @ SPECIES_MOE_SNEASEL
+	cry_reverse Cry_Teddiursa       @ SPECIES_MOE_TEDDIURSA
+	cry_reverse Cry_Ursaring       @ SPECIES_MOE_URSARING
+	cry_reverse Cry_Slugma       @ SPECIES_MOE_SLUGMA
+	cry_reverse Cry_Magcargo       @ SPECIES_MOE_MAGCARGO
+	cry_reverse Cry_Swinub       @ SPECIES_MOE_SWINUB
+	cry_reverse Cry_Piloswine       @ SPECIES_MOE_PILOSWINE
+	cry_reverse Cry_Corsola       @ SPECIES_MOE_CORSOLA
+	cry_reverse Cry_Remoraid       @ SPECIES_MOE_REMORAID
+	cry_reverse Cry_Octillery       @ SPECIES_MOE_OCTILLERY
+	cry_reverse Cry_Delibird       @ SPECIES_MOE_DELIBIRD
+	cry_reverse Cry_Mantine       @ SPECIES_MOE_MANTINE
+	cry_reverse Cry_Skarmory       @ SPECIES_MOE_SKARMORY
+	cry_reverse Cry_Houndour       @ SPECIES_MOE_HOUNDOUR
+	cry_reverse Cry_Houndoom       @ SPECIES_MOE_HOUNDOOM
+	cry_reverse Cry_Kingdra       @ SPECIES_MOE_KINGDRA
+	cry_reverse Cry_Phanpy       @ SPECIES_MOE_PHANPY
+	cry_reverse Cry_Donphan       @ SPECIES_MOE_DONPHAN
+	cry_reverse Cry_Porygon2       @ SPECIES_MOE_PORYGON2
+	cry_reverse Cry_Stantler       @ SPECIES_MOE_STANTLER
+	cry_reverse Cry_Smeargle       @ SPECIES_MOE_SMEARGLE
+	cry_reverse Cry_Tyrogue       @ SPECIES_MOE_TYROGUE
+	cry_reverse Cry_Hitmontop       @ SPECIES_MOE_HITMONTOP
+	cry_reverse Cry_Smoochum       @ SPECIES_MOE_SMOOCHUM
+	cry_reverse Cry_Elekid       @ SPECIES_MOE_ELEKID
+	cry_reverse Cry_Magby       @ SPECIES_MOE_MAGBY
+	cry_reverse Cry_Miltank       @ SPECIES_MOE_MILTANK
+	cry_reverse Cry_Blissey       @ SPECIES_MOE_BLISSEY
+	cry_reverse Cry_Raikou       @ SPECIES_MOE_RAIKOU
+	cry_reverse Cry_Entei       @ SPECIES_MOE_ENTEI
+	cry_reverse Cry_Suicune       @ SPECIES_MOE_SUICUNE
+	cry_reverse Cry_Larvitar       @ SPECIES_MOE_LARVITAR
+	cry_reverse Cry_Pupitar       @ SPECIES_MOE_PUPITAR
+	cry_reverse Cry_Tyranitar       @ SPECIES_MOE_TYRANITAR
+	cry_reverse Cry_Lugia       @ SPECIES_MOE_LUGIA
+	cry_reverse Cry_HoOh       @ SPECIES_MOE_HO_OH
+	cry_reverse Cry_Celebi       @ SPECIES_MOE_CELEBI
+	cry_reverse Cry_Azurill       @ SPECIES_MOE_AZURILL
+	cry_reverse Cry_Wynaut       @ SPECIES_MOE_WYNAUT
+	cry_reverse Cry_Ambipom       @ SPECIES_MOE_AMBIPOM
+	cry_reverse Cry_Mismagius       @ SPECIES_MOE_MISMAGIUS
+	cry_reverse Cry_Honchkrow       @ SPECIES_MOE_HONCHKROW
+	cry_reverse Cry_Bonsly       @ SPECIES_MOE_BONSLY
+	cry_reverse Cry_MimeJr       @ SPECIES_MOE_MIME_JR
+	cry_reverse Cry_Happiny       @ SPECIES_MOE_HAPPINY
+	cry_reverse Cry_Munchlax       @ SPECIES_MOE_MUNCHLAX
+	cry_reverse Cry_Mantyke       @ SPECIES_MOE_MANTYKE
+	cry_reverse Cry_Weavile       @ SPECIES_MOE_WEAVILE
+	cry_reverse Cry_Magnezone       @ SPECIES_MOE_MAGNEZONE
+	cry_reverse Cry_Lickilicky       @ SPECIES_MOE_LICKILICKY
+	cry_reverse Cry_Rhyperior       @ SPECIES_MOE_RHYPERIOR
+	cry_reverse Cry_Tangrowth       @ SPECIES_MOE_TANGROWTH
+	cry_reverse Cry_Electivire       @ SPECIES_MOE_ELECTIVIRE
+	cry_reverse Cry_Magmortar       @ SPECIES_MOE_MAGMORTAR
+	cry_reverse Cry_Togekiss       @ SPECIES_MOE_TOGEKISS
+	cry_reverse Cry_Yanmega       @ SPECIES_MOE_YANMEGA
+	cry_reverse Cry_Leafeon       @ SPECIES_MOE_LEAFEON
+	cry_reverse Cry_Glaceon       @ SPECIES_MOE_GLACEON
+	cry_reverse Cry_Gliscor       @ SPECIES_MOE_GLISCOR
+	cry_reverse Cry_Mamoswine       @ SPECIES_MOE_MAMOSWINE
+	cry_reverse Cry_PorygonZ       @ SPECIES_MOE_PORYGON_Z
+	cry_reverse Cry_Sylveon       @ SPECIES_MOE_SYLVEON
+	cry_reverse Cry_Perrserker       @ SPECIES_MOE_PERRSERKER
+	cry_reverse Cry_Cursola       @ SPECIES_MOE_CURSOLA
+	cry_reverse Cry_Sirfetchd       @ SPECIES_MOE_SIRFETCHD
+	cry_reverse Cry_MrRime       @ SPECIES_MOE_MR_RIME
+	cry_reverse Cry_Wyrdeer       @ SPECIES_MOE_WYRDEER
+	cry_reverse Cry_Kleavor       @ SPECIES_MOE_KLEAVOR
+	cry_reverse Cry_Ursaluna       @ SPECIES_MOE_URSALUNA
+	cry_reverse Cry_Sneasler       @ SPECIES_MOE_SNEASLER
+	cry_reverse Cry_Overqwil       @ SPECIES_MOE_OVERQWIL
+	cry_reverse Cry_VenusaurMega       @ SPECIES_MOE_VENUSAUR_MEGA
+	cry_reverse Cry_CharizardMegaX       @ SPECIES_MOE_CHARIZARD_MEGA_X
+	cry_reverse Cry_CharizardMegaY       @ SPECIES_MOE_CHARIZARD_MEGA_Y
+	cry_reverse Cry_BlastoiseMega       @ SPECIES_MOE_BLASTOISE_MEGA
+	cry_reverse Cry_BeedrillMega       @ SPECIES_MOE_BEEDRILL_MEGA
+	cry_reverse Cry_PidgeotMega       @ SPECIES_MOE_PIDGEOT_MEGA
+	cry_reverse Cry_AlakazamMega       @ SPECIES_MOE_ALAKAZAM_MEGA
+	cry_reverse Cry_SlowbroMega       @ SPECIES_MOE_SLOWBRO_MEGA
+	cry_reverse Cry_GengarMega       @ SPECIES_MOE_GENGAR_MEGA
+	cry_reverse Cry_KangaskhanMega       @ SPECIES_MOE_KANGASKHAN_MEGA
+	cry_reverse Cry_PinsirMega       @ SPECIES_MOE_PINSIR_MEGA
+	cry_reverse Cry_GyaradosMega       @ SPECIES_MOE_GYARADOS_MEGA
+	cry_reverse Cry_AerodactylMega       @ SPECIES_MOE_AERODACTYL_MEGA
+	cry_reverse Cry_MewtwoMegaX       @ SPECIES_MOE_MEWTWO_MEGA_X
+	cry_reverse Cry_MewtwoMegaY       @ SPECIES_MOE_MEWTWO_MEGA_Y
+	cry_reverse Cry_AmpharosMega       @ SPECIES_MOE_AMPHAROS_MEGA
+	cry_reverse Cry_SteelixMega       @ SPECIES_MOE_STEELIX_MEGA
+	cry_reverse Cry_ScizorMega       @ SPECIES_MOE_SCIZOR_MEGA
+	cry_reverse Cry_HeracrossMega       @ SPECIES_MOE_HERACROSS_MEGA
+	cry_reverse Cry_HoundoomMega       @ SPECIES_MOE_HOUNDOOM_MEGA
+	cry_reverse Cry_TyranitarMega       @ SPECIES_MOE_TYRANITAR_MEGA
+	cry_reverse Cry_Rattata       @ SPECIES_MOE_RATTATA_ALOLAN
+	cry_reverse Cry_Raticate       @ SPECIES_MOE_RATICATE_ALOLAN
+	cry_reverse Cry_Raichu       @ SPECIES_MOE_RAICHU_ALOLAN
+	cry_reverse Cry_Sandshrew       @ SPECIES_MOE_SANDSHREW_ALOLAN
+	cry_reverse Cry_Sandslash       @ SPECIES_MOE_SANDSLASH_ALOLAN
+	cry_reverse Cry_Vulpix       @ SPECIES_MOE_VULPIX_ALOLAN
+	cry_reverse Cry_Ninetales       @ SPECIES_MOE_NINETALES_ALOLAN
+	cry_reverse Cry_Diglett       @ SPECIES_MOE_DIGLETT_ALOLAN
+	cry_reverse Cry_Dugtrio       @ SPECIES_MOE_DUGTRIO_ALOLAN
+	cry_reverse Cry_Meowth       @ SPECIES_MOE_MEOWTH_ALOLAN
+	cry_reverse Cry_Persian       @ SPECIES_MOE_PERSIAN_ALOLAN
+	cry_reverse Cry_Geodude       @ SPECIES_MOE_GEODUDE_ALOLAN
+	cry_reverse Cry_Graveler       @ SPECIES_MOE_GRAVELER_ALOLAN
+	cry_reverse Cry_Golem       @ SPECIES_MOE_GOLEM_ALOLAN
+	cry_reverse Cry_Grimer       @ SPECIES_MOE_GRIMER_ALOLAN
+	cry_reverse Cry_Muk       @ SPECIES_MOE_MUK_ALOLAN
+	cry_reverse Cry_Exeggutor       @ SPECIES_MOE_EXEGGUTOR_ALOLAN
+	cry_reverse Cry_Marowak       @ SPECIES_MOE_MAROWAK_ALOLAN
+	cry_reverse Cry_Meowth       @ SPECIES_MOE_MEOWTH_GALARIAN
+	cry_reverse Cry_Ponyta       @ SPECIES_MOE_PONYTA_GALARIAN
+	cry_reverse Cry_Rapidash       @ SPECIES_MOE_RAPIDASH_GALARIAN
+	cry_reverse Cry_SlowpokeGalarian       @ SPECIES_MOE_SLOWPOKE_GALARIAN
+	cry_reverse Cry_Slowbro       @ SPECIES_MOE_SLOWBRO_GALARIAN
+	cry_reverse Cry_Farfetchd       @ SPECIES_MOE_FARFETCHD_GALARIAN
+	cry_reverse Cry_Weezing       @ SPECIES_MOE_WEEZING_GALARIAN
+	cry_reverse Cry_MrMime       @ SPECIES_MOE_MR_MIME_GALARIAN
+	cry_reverse Cry_Articuno       @ SPECIES_MOE_ARTICUNO_GALARIAN
+	cry_reverse Cry_Zapdos       @ SPECIES_MOE_ZAPDOS_GALARIAN
+	cry_reverse Cry_Moltres       @ SPECIES_MOE_MOLTRES_GALARIAN
+	cry_reverse Cry_Slowking       @ SPECIES_MOE_SLOWKING_GALARIAN
+	cry_reverse Cry_Corsola       @ SPECIES_MOE_CORSOLA_GALARIAN
+	cry_reverse Cry_Growlithe       @ SPECIES_MOE_GROWLITHE_HISUIAN
+	cry_reverse Cry_Arcanine       @ SPECIES_MOE_ARCANINE_HISUIAN
+	cry_reverse Cry_Voltorb       @ SPECIES_MOE_VOLTORB_HISUIAN
+	cry_reverse Cry_Electrode       @ SPECIES_MOE_ELECTRODE_HISUIAN
+	cry_reverse Cry_Typhlosion       @ SPECIES_MOE_TYPHLOSION_HISUIAN
+	cry_reverse Cry_Qwilfish       @ SPECIES_MOE_QWILFISH_HISUIAN
+	cry_reverse Cry_Sneasel       @ SPECIES_MOE_SNEASEL_HISUIAN
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_COSPLAY
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_ROCK_STAR
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_BELLE
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_POP_STAR
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_PH_D
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_LIBRE
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_ORIGINAL_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_HOENN_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_SINNOH_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_UNOVA_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_KALOS_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_ALOLA_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_PARTNER_CAP
+	cry_reverse Cry_Pikachu       @ SPECIES_MOE_PIKACHU_WORLD_CAP
+	cry_reverse Cry_Pichu       @ SPECIES_MOE_PICHU_SPIKY_EARED
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_B
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_C
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_D
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_E
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_F
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_G
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_H
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_I
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_J
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_K
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_L
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_M
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_N
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_O
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_P
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_Q
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_R
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_S
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_T
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_U
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_V
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_W
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_X
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_Y
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_Z
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_EMARK
+	cry_reverse Cry_Unown       @ SPECIES_MOE_UNOWN_QMARK
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_YUUKI_YUUNA4
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_WAKABA3B
+	cry_reverse Cry_Unown       @ SPECIES_YYYI_TAKASHIMA_YUUNA3B
+	cry_reverse Cry_Unown       @ SPECIES_TH_ALICE2B
+	cry_reverse Cry_Unown       @ SPECIES_TH_PRISMRIVER
+	cry_reverse Cry_Unown       @ SPECIES_TH_AYAKASHI
+	cry_reverse Cry_Unown       @ SPECIES_TH_SUIKA2M
+	cry_reverse Cry_Unown       @ SPECIES_TH_AKISISTERS
+	cry_reverse Cry_Unown       @ SPECIES_TH_TENSOKU2
+	cry_reverse Cry_Unown       @ SPECIES_SH_VIVITA
+	cry_reverse Cry_Unown       @ SPECIES_TH_ALICE2Z
+	cry_reverse Cry_Unown       @ SPECIES_TH_LAYLA
+	cry_reverse Cry_Unown       @ SPECIES_TH_YUUKA2Z
+	cry_reverse Cry_Unown       @ SPECIES_TH_SANAE2J
+	cry_reverse Cry_Unown       @ SPECIES_TH_MARISA2Z
+	cry_reverse Cry_Unown       @ SPECIES_TH_REIMU2Z
+	cry_reverse Cry_Unown       @ SPECIES_KEY_USHIO3
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MIKI3
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_SHIHO3
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MISAKI3
+	cry_reverse Cry_Unown       @ SPECIES_BGHS_MARI3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBLACK3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREWHITE3
+	cry_reverse Cry_Unown       @ SPECIES_PC_SHINYLUMINOUS3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBRIGHTYBLOOM
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREWINDYEGRET
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREDREAM3A
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREDREAM3B
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBLOSSOM3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMARINE3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURESUNSHINE3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMOONLIGHT3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREHAPPY3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CURESUNNY3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREPEACE3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMARCH3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBEAUTY3
+	cry_reverse Cry_Unown       @ SPECIES_PC_CUREHEART3
+	cry_reverse Cry_Unown       @ SPECIES_ETC_CUREUNION3
+	cry_reverse Cry_Unown       @ SPECIES_ETC_DECADE3
+	cry_reverse Cry_Unown       @ SPECIES_ETC_RED
+	cry_reverse Cry_Unown       @ SPECIES_ETC_ETHAN
+	cry_reverse Cry_Unown       @ SPECIES_ETC_BRENDAN
+	cry_reverse Cry_Unown       @ SPECIES_ETC_LUCAS
+	cry_reverse Cry_Unown       @ SPECIES_ETC_HILBERT
+	cry_reverse Cry_Unown       @ SPECIES_ETC_NATE
+	cry_reverse Cry_Unown       @ SPECIES_ETC_CALEM
+	cry_reverse Cry_Unown       @ SPECIES_ETC_ELIO
+	cry_reverse Cry_Unown       @ SPECIES_ETC_CHASE
+	cry_reverse Cry_Unown       @ SPECIES_ETC_VICTOR
+	cry_reverse Cry_Unown       @ SPECIES_ETC_AKARI
+	cry_reverse Cry_Unown       @ SPECIES_ETC_FLORIAN
+	cry_reverse Cry_Unown       @ SPECIES_ETC_WES
+	cry_reverse Cry_Unown       @ SPECIES_ETC_MICHAEL
+	cry_reverse Cry_Unown       @ SPECIES_ETC_LEAF
+	cry_reverse Cry_Unown       @ SPECIES_ETC_LYRA
+	cry_reverse Cry_Unown       @ SPECIES_ETC_KRIS
+	cry_reverse Cry_Unown       @ SPECIES_ETC_MAY
+	cry_reverse Cry_Unown       @ SPECIES_ETC_DAWN
+	cry_reverse Cry_Unown       @ SPECIES_ETC_HILDA
+	cry_reverse Cry_Unown       @ SPECIES_ETC_ROSA
+	cry_reverse Cry_Unown       @ SPECIES_ETC_SERENA
+	cry_reverse Cry_Unown       @ SPECIES_ETC_SELENE
+	cry_reverse Cry_Unown       @ SPECIES_ETC_ELAINE
+	cry_reverse Cry_Unown       @ SPECIES_ETC_GLORIA
+	cry_reverse Cry_Unown       @ SPECIES_ETC_REI
+	cry_reverse Cry_Unown       @ SPECIES_ETC_JULIANA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_REGULAR
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SHEDINJA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SPINDA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_CASTFORM
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_DEOXYS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_BURMY
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_WORMADAM
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_CHERRIM
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SHELLOS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GASTRODON
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_HIPPOPOTAS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_HIPPOWDON
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ROTOM
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_DIALGA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_PALKIA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GIRATINA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SHAYMIN
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ARCEUS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_BASCULIN
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_DARMANITAN
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_DEERLING
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SAWSBUCK
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_KYUREM
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_KELDEO
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_MELOETTA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GENESECT
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GRENINJA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_VIVILLON
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_FLABEBE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_FLOETTE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_FLORGES
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_FURFROU
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_MEOWSTIC
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_AEGISLASH
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_PUMPKABOO
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GOURGEIST
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_XERNEAS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ZYGARDE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_HOOPA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ORICORIO
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ROCKRUFF
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_LYCANROC
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_WISHIWASHI
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SILVALLY
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_MINIOR
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_MIMIKYU
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_NECROZMA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_MAGEARNA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_CRAMORANT
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_TOXTRICITY
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SINISTEA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_POLTEAGEIST
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ALCREMIE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_EISCUE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_INDEEDEE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_MORPEKO
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ZACIAN
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ZAMAZENTA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ETERNATUS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_URSHIFU
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ZARUDE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_CALYREX
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SCEPTILE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_BLAZIKEN
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SWAMPERT
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GARDEVOIR
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SABLEYE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_MAWILE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_AGGRON
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_MEDICHAM
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_MANECTRIC
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SHARPEDO
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_CAMERUPT
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ALTARIA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_BANETTE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ABSOL
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GLALIE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SALAMENCE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_METAGROSS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_LATIAS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_LATIOS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_LOPUNNY
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GARCHOMP
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_LUCARIO
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ABOMASNOW
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GALLADE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_AUDINO
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_DIANCIE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_RAYQUAZA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_KYOGRE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GROUDON
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ZIGZAGOON
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_LINOONE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_DARUMAKA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_DARMANITAN2
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_YAMASK
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_STUNFISK
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SAMUROTT
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_LILLIGANT
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ZORUA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ZOROARK
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_BRAVIARY
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SLIGGOO
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_GOODRA
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_AVALUGG
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_DECIDUEYE
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_TORNADUS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_THUNDURUS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_LANDORUS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_ENAMORUS
+	cry_reverse Cry_Unown       @ SPECIES_DUMMY_BASCULEGION
+

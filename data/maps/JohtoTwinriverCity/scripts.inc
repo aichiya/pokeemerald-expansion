@@ -71,17 +71,17 @@ JohtoTwinriverCity_EventScript_Sign3::
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
 	setvar VAR_TEMP_1, 0
-	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
+	givemon SPECIES_TH_ALICE2N, 100, ITEM_PSYCHIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
 	setmonmove 0, 0, MOVE_PSYCHIC
 	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
 	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
 	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
-	givemon SPECIES_RAYQUAZA, 100, ITEM_ELECTRIUM_Z
+	givemon SPECIES_MOE_PIKACHU, 100, ITEM_PIKANIUM_Z
 	setmoneventlegal 1
 	setmonmetlocation 1, 255
-	setmonmove 1, 0, MOVE_DRAGON_ASCENT
+	setmonmove 1, 0, MOVE_VOLT_TACKLE
 	setmonmove 1, 1, MOVE_THUNDERBOLT
 	setmonmove 1, 2, MOVE_EXTREME_SPEED
 	setmonmove 1, 3, MOVE_EARTHQUAKE
@@ -208,19 +208,19 @@ JohtoTwinriverCity_EventScript_Sign6::
 	additem ITEM_Z_POWER_RING, 1
 	additem ITEM_MASTER_BALL, 10
 	setvar VAR_TEMP_1, 0
-	givemon SPECIES_CHARIZARD, 100, ITEM_CHARIZARDITE_Y
+	givemon SPECIES_TH_ALICE2N, 70, ITEM_DIANCITE
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
-	setmonmove 0, 0, MOVE_FLAMETHROWER
-	setmonmove 0, 1, MOVE_DYNAMAX_CANNON
-	setmonmove 0, 2, MOVE_SURGING_STRIKES
-	setmonmove 0, 3, MOVE_VICTORY_DANCE
+	setmonmove 0, 0, MOVE_PSYCHIC
+	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
+	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
+	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
 	delay 30
-	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_TH_ALICE2N, CRY_MODE_ENCOUNTER
 	waitmoncry
-	seteventmon SPECIES_NECROZMA_ULTRA, 70, ITEM_ULTRANECROZIUM_Z
+	seteventmon SPECIES_TH_ALICE2N, 70, ITEM_RED_ORB
 	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_YYYI_BATTLE_04, FALSE
+	playbgm MUS_THPPAWL_PLASTICMIND, FALSE
 	waitstate
 	releaseall
 	end

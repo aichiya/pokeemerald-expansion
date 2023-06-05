@@ -597,12 +597,12 @@ void StartRegiBattle(void)
     case SPECIES_REGIROCK:
         transitionId = B_TRANSITION_REGIROCK;
         break;
-    case SPECIES_REGICE:
-        transitionId = B_TRANSITION_REGICE;
-        break;
-    case SPECIES_REGISTEEL:
-        transitionId = B_TRANSITION_REGISTEEL;
-        break;
+//    case SPECIES_REGICE:
+//        transitionId = B_TRANSITION_REGICE;
+//        break;
+//    case SPECIES_REGISTEEL:
+//        transitionId = B_TRANSITION_REGISTEEL;
+//        break;
     default:
         transitionId = B_TRANSITION_GRID_SQUARES;
         break;

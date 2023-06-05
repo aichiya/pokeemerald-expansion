@@ -1526,9 +1526,9 @@ static const u8 sRustedShieldDesc[] = _(
 
 // Colored Orbs
 static const u8 sRedOrbDesc[] = _(
-    "A red, glowing orb\n"
-    "said to contain an\n"
-    "ancient power.");
+    "Certain FRAGMON\n"
+    "use their past\n"
+    "power in battle.");
 
 static const u8 sBlueOrbDesc[] = _(
     "A blue, glowing orb\n"
@@ -1757,9 +1757,9 @@ static const u8 sAudiniteDesc[] = _(
     "Evolve in battle.");
 
 static const u8 sDianciteDesc[] = _(
-    "This stone enables\n"
-    "Diancie to Mega\n"
-    "Evolve in battle.");
+    "Certain FRAGMON\n"
+    "attain their Final\n"
+    "Form in battle.");
 
 // Gems
 static const u8 sNormalGemDesc[] = _(
@@ -3519,9 +3519,9 @@ static const u8 sReinsOfUnityDesc[] = _(
 
 // Battle Mechanic Key Items
 static const u8 sMegaRingDesc[] = _(
-    "Enables {PKMN} holding\n"
-    "their Mega Stone to\n"
-    "Mega Evolve.");
+    "Decadriver replica.\n"
+    "User can use it\n"
+    "to do something.");
 
 static const u8 sZPowerRingDesc[] = _(
     "A strange ring\n"

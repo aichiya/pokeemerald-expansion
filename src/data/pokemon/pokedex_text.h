@@ -1509,6 +1509,7 @@ const u8 gCelebiPokedexText[] = _(
     "crossing over time. It is thought that so\n"
     "long as Celebi appears, a bright and\n"
     "shining future awaits us.");
+/*
 
 const u8 gTreeckoPokedexText[] = _(
     "It makes its nest in a giant tree in the\n"
@@ -1947,12 +1948,14 @@ const u8 gSolrockPokedexText[] = _(
     "Pokémon's power. On sunny days, groups of\n"
     "Solrock line up facing the sun and absorb\n"
     "its light.");
+*/
 
 const u8 gAzurillPokedexText[] = _(
     "Its tail, which is packed with nutrition,\n"
     "is very bouncy like a rubber ball. On sunny\n"
     "days they gather at the edge of water and\n"
     "splash about for fun.");
+/*
 
 const u8 gSpoinkPokedexText[] = _(
     "A Pokémon that manipulates psychic power\n"
@@ -2007,12 +2010,14 @@ const u8 gAltariaPokedexText[] = _(
     "It flies among white clouds in the blue\n"
     "sky. It launches intensely hot fireballs\n"
     "from its mouth.");
+*/
 
 const u8 gWynautPokedexText[] = _(
     "A Wynaut loves to eat sweet fruits.\n"
     "It cleverly picks fruits using its earlike\n"
     "arms. They gather in fruit gardens, drawn\n"
     "by the fragrance.");
+/*
 
 const u8 gDuskullPokedexText[] = _(
     "A glare from its single scarlet eye makes\n"
@@ -2319,8 +2324,10 @@ const u8 gChimechoPokedexText[] = _(
     "season arrives. They communicate among\n"
     "themselves using seven different and\n"
     "distinguishing cries.");
+*/
 
 #if P_GEN_4_POKEMON == TRUE
+/*
 const u8 gTurtwigPokedexText[] = _(
     "The shell on its back is made of soil. \n"
     "On a very healthy Turtwig, the shell \n"
@@ -2542,12 +2549,14 @@ const u8 gGastrodonPokedexText[] = _(
     "Gastrodon once had a huge shell for\n"
     "protection in ancient times. There are\n"
     "traces of it left in its cells.");
+*/
 
 const u8 gAmbipomPokedexText[] = _(
     "They live on large trees. Split into two,\n"
     "the tails are so adept at handling and\n"
     "doing things, Ambipom rarely uses\n"
     "its hands now.");
+/*
 
 const u8 gDrifloonPokedexText[] = _(
     "Because of the way it floats aimlessly,\n"
@@ -2572,6 +2581,7 @@ const u8 gLopunnyPokedexText[] = _(
     "It is very conscious of its looks and\n"
     "never fails to groom its ears.\n"
     "It runs with sprightly jumps.");
+*/
 
 const u8 gMismagiusPokedexText[] = _(
     "Its cries sound like incantations.\n"
@@ -2584,6 +2594,7 @@ const u8 gHonchkrowPokedexText[] = _(
     "to swarm with numerous Murkrow in tow.\n"
     "It is said that it never forgives the\n"
     "mistakes of its cronies.");
+/*
 
 const u8 gGlameowPokedexText[] = _(
     "It is a very fickle Pokémon, which is \n"
@@ -2626,6 +2637,7 @@ const u8 gBronzongPokedexText[] = _(
     "a bringer of rain. One caused a news stir\n"
     "when it was dug up at a construction site\n"
     "after a 2000-year sleep.");
+*/
 
 const u8 gBonslyPokedexText[] = _(
     "Bonsly prefers an arid atmosphere.\n"
@@ -2644,6 +2656,7 @@ const u8 gHappinyPokedexText[] = _(
     "belly pouch. If it gets along well with\n"
     "someone, it will sometimes give that\n"
     "person the rock.");
+/*
 
 const u8 gChatotPokedexText[] = _(
     "It mimics the cries of other Pokémon to\n"
@@ -2674,12 +2687,14 @@ const u8 gGarchompPokedexText[] = _(
     "wings, it looks like a jet plane. It is\n"
     "covered in fine scales that reduce drag,\n"
     "enabling it to fly at high speeds.");
+*/
 
 const u8 gMunchlaxPokedexText[] = _(
     "When it finds something that looks like\n"
     "it might be edible, it goes right ahead\n"
     "and swallows it whole. That's why it gets\n"
     "fatter day by day.");
+/*
 
 const u8 gRioluPokedexText[] = _(
     "It can discern the physical and emotional\n"
@@ -2746,12 +2761,14 @@ const u8 gLumineonPokedexText[] = _(
     "of the deep sea look like stars shining\n"
     "in the night sky. It competes for food\n"
     "with Lanturn.");
+*/
 
 const u8 gMantykePokedexText[] = _(
     "When it swims close to the surface\n"
     "of the ocean, people aboard ships are\n"
     "able to observe the pattern on its back.\n"
     "It often swims in a school of Remoraid.");
+/*
 
 const u8 gSnoverPokedexText[] = _(
     "During cold seasons, it migrates to the\n"
@@ -2764,6 +2781,7 @@ const u8 gAbomasnowPokedexText[] = _(
     "are perpetually covered in snow. It hides\n"
     "itself by whipping up blizzards.\n"
     "It is also known as “The Ice Monster.”");
+*/
 
 const u8 gWeavilePokedexText[] = _(
     "They travel in groups of four or five,\n"
@@ -2848,6 +2866,7 @@ const u8 gPorygonZPokedexText[] = _(
     "Pokémon, an additional program was\n"
     "installed, but apparently it contained a\n"
     "defect that made it move oddly.");
+/*
 
 const u8 gGalladePokedexText[] = _(
     "A master of courtesy and swordsmanship,\n"
@@ -2962,9 +2981,11 @@ const u8 gArceusPokedexText[] = _(
     "emerged from an egg and shaped all there\n"
     "is in this world, before the universe\n"
     "even existed.");
+*/
 #endif
 
 #if P_GEN_5_POKEMON == TRUE
+/*
 const u8 gVictiniPokedexText[] = _(
     "This Pokémon brings victory.\n"
     "It is said that Trainers with Victini\n"
@@ -3900,9 +3921,11 @@ const u8 gGenesectPokedexText[] = _(
     "feared as the strongest of hunters.\n"
     "Team Plasma altered it and attached\n"
     "a cannon to its back.");
+*/
 #endif
 
 #if P_GEN_6_POKEMON == TRUE
+/*
 const u8 gChespinPokedexText[] = _(
     "The quills on its head are usually soft.\n"
     "When it flexes them, the points become\n"
@@ -4202,12 +4225,14 @@ const u8 gAurorusPokedexText[] = _(
     "body it can instantly create a wall of ice\n"
     "to block an opponent's attack, or encase\n"
     "them in ice.");
+*/
 
 const u8 gSylveonPokedexText[] = _(
     "Its ribbonlike feelers give off an aura\n"
     "that weakens hostility in its prey, causing\n"
     "them to let down their guard. A moment\n"
     "later, it pounces.");
+/*
 
 const u8 gHawluchaPokedexText[] = _(
     "With its wings, it controls its position in\n"
@@ -4334,9 +4359,11 @@ const u8 gVolcanionPokedexText[] = _(
     "on its back and disappears into the dense\n"
     "fog. It's said to live in mountains where\n"
     "humans do not tread.");
+*/
 #endif
 
 #if P_GEN_7_POKEMON == TRUE
+/*
 const u8 gRowletPokedexText[] = _(
     "This wary Pokémon uses photosynthesis\n"
     "to store up energy during the day, while\n"
@@ -4857,9 +4884,11 @@ const u8 gMelmetalPokedexText[] = _(
     "Revered long ago for its capacity to create\n"
     "iron from nothing, for some reason it has\n"
     "come back to life after 3,000 years.");
+*/
 #endif
 
 #if P_GEN_8_POKEMON == TRUE
+/*
 const u8 gGrookeyPokedexText[] = _(
     "When it uses its special stick to strike up\n"
     "a beat, the sound waves produced carry\n"
@@ -5157,6 +5186,7 @@ const u8 gObstagoonPokedexText[] = _(
     "Obstagoon has a tendency to take on a\n"
     "threatening posture and shout--this move\n"
     "is known as Obstruct.");
+*/
 
 const u8 gPerrserkerPokedexText[] = _(
     "What appears to be an iron helmet is\n"
@@ -5179,6 +5209,7 @@ const u8 gMrRimePokedexText[] = _(
     "It's highly skilled at tap-dancing. It\n"
     "waves its cane of ice in time with its\n"
     "graceful movements.");
+/*
 
 const u8 gRunerigusPokedexText[] = _(
     "A powerful curse was woven into an ancient\n"
@@ -5357,6 +5388,7 @@ const u8 gCalyrexPokedexText[] = _(
     "providing healing and blessings. It\n"
     "reigned over the Galar region in times\n"
     "of yore.");
+*/
 
 const u8 gWyrdeerPokedexText[] = _(
     "The black orbs shine with an uncanny light\n"
@@ -5375,11 +5407,13 @@ const u8 gUrsalunaPokedexText[] = _(
     "physique and newfound capacity to\n"
     "manipulate peat at will.");
 
+/*
 const u8 gBasculegionPokedexText[] = _(
     "Clads itself in the souls of comrades that\n"
     "perished before fulfilling their goals of\n"
     "journeying upstream. No other species in\n"
     "all Hisui's rivers is Basculegion's equal.");
+*/
 
 const u8 gSneaslerPokedexText[] = _(
     "Because of its wicked poison and daunting\n"
@@ -5392,10 +5426,5121 @@ const u8 gOverqwilPokedexText[] = _(
     "temperament have earned it the\n"
     "nickname “Sea Fiend”.\n"
     "It slurps up poison to nourish itself.");
+/*
 
 const u8 gEnamorusPokedexText[] = _(
     "Its arrival brings an end to the\n"
     "winter. According to legend, this\n"
     "Pokémon's love gives rise to the\n"
     "budding of fresh life across the land.");
+*/
 #endif
+
+const u8 gYYYIYuukiYuuna1PokedexText[] = _(
+    "SPECIES_YYYI_YUUKI_YUUNA1 description line 1\n"
+    "SPECIES_YYYI_YUUKI_YUUNA1 description line 2\n"
+    "SPECIES_YYYI_YUUKI_YUUNA1 description line 3\n"
+    "SPECIES_YYYI_YUUKI_YUUNA1 description line 4\n");
+
+
+const u8 gYYYIYuukiYuuna2PokedexText[] = _(
+    "SPECIES_YYYI_YUUKI_YUUNA2 description line 1\n"
+    "SPECIES_YYYI_YUUKI_YUUNA2 description line 2\n"
+    "SPECIES_YYYI_YUUKI_YUUNA2 description line 3\n"
+    "SPECIES_YYYI_YUUKI_YUUNA2 description line 4\n");
+
+
+const u8 gYYYIYuukiYuuna3PokedexText[] = _(
+    "SPECIES_YYYI_YUUKI_YUUNA3 description line 1\n"
+    "SPECIES_YYYI_YUUKI_YUUNA3 description line 2\n"
+    "SPECIES_YYYI_YUUKI_YUUNA3 description line 3\n"
+    "SPECIES_YYYI_YUUKI_YUUNA3 description line 4\n");
+
+
+const u8 gYYYIMimori1PokedexText[] = _(
+    "SPECIES_YYYI_MIMORI1 description line 1\n"
+    "SPECIES_YYYI_MIMORI1 description line 2\n"
+    "SPECIES_YYYI_MIMORI1 description line 3\n"
+    "SPECIES_YYYI_MIMORI1 description line 4\n");
+
+
+const u8 gYYYIMimori2PokedexText[] = _(
+    "SPECIES_YYYI_MIMORI2 description line 1\n"
+    "SPECIES_YYYI_MIMORI2 description line 2\n"
+    "SPECIES_YYYI_MIMORI2 description line 3\n"
+    "SPECIES_YYYI_MIMORI2 description line 4\n");
+
+
+const u8 gYYYIMimori3PokedexText[] = _(
+    "SPECIES_YYYI_MIMORI3 description line 1\n"
+    "SPECIES_YYYI_MIMORI3 description line 2\n"
+    "SPECIES_YYYI_MIMORI3 description line 3\n"
+    "SPECIES_YYYI_MIMORI3 description line 4\n");
+
+
+const u8 gYYYIKarin1PokedexText[] = _(
+    "SPECIES_YYYI_KARIN1 description line 1\n"
+    "SPECIES_YYYI_KARIN1 description line 2\n"
+    "SPECIES_YYYI_KARIN1 description line 3\n"
+    "SPECIES_YYYI_KARIN1 description line 4\n");
+
+
+const u8 gYYYIKarin2PokedexText[] = _(
+    "SPECIES_YYYI_KARIN2 description line 1\n"
+    "SPECIES_YYYI_KARIN2 description line 2\n"
+    "SPECIES_YYYI_KARIN2 description line 3\n"
+    "SPECIES_YYYI_KARIN2 description line 4\n");
+
+
+const u8 gYYYIKarin3PokedexText[] = _(
+    "SPECIES_YYYI_KARIN3 description line 1\n"
+    "SPECIES_YYYI_KARIN3 description line 2\n"
+    "SPECIES_YYYI_KARIN3 description line 3\n"
+    "SPECIES_YYYI_KARIN3 description line 4\n");
+
+
+const u8 gYYYIFuu1PokedexText[] = _(
+    "SPECIES_YYYI_FUU1 description line 1\n"
+    "SPECIES_YYYI_FUU1 description line 2\n"
+    "SPECIES_YYYI_FUU1 description line 3\n"
+    "SPECIES_YYYI_FUU1 description line 4\n");
+
+
+const u8 gYYYIFuu2PokedexText[] = _(
+    "SPECIES_YYYI_FUU2 description line 1\n"
+    "SPECIES_YYYI_FUU2 description line 2\n"
+    "SPECIES_YYYI_FUU2 description line 3\n"
+    "SPECIES_YYYI_FUU2 description line 4\n");
+
+
+const u8 gYYYIFuu3PokedexText[] = _(
+    "SPECIES_YYYI_FUU3 description line 1\n"
+    "SPECIES_YYYI_FUU3 description line 2\n"
+    "SPECIES_YYYI_FUU3 description line 3\n"
+    "SPECIES_YYYI_FUU3 description line 4\n");
+
+
+const u8 gYYYIItsuki1PokedexText[] = _(
+    "SPECIES_YYYI_ITSUKI1 description line 1\n"
+    "SPECIES_YYYI_ITSUKI1 description line 2\n"
+    "SPECIES_YYYI_ITSUKI1 description line 3\n"
+    "SPECIES_YYYI_ITSUKI1 description line 4\n");
+
+
+const u8 gYYYIItsuki2PokedexText[] = _(
+    "SPECIES_YYYI_ITSUKI2 description line 1\n"
+    "SPECIES_YYYI_ITSUKI2 description line 2\n"
+    "SPECIES_YYYI_ITSUKI2 description line 3\n"
+    "SPECIES_YYYI_ITSUKI2 description line 4\n");
+
+
+const u8 gYYYIItsuki3PokedexText[] = _(
+    "SPECIES_YYYI_ITSUKI3 description line 1\n"
+    "SPECIES_YYYI_ITSUKI3 description line 2\n"
+    "SPECIES_YYYI_ITSUKI3 description line 3\n"
+    "SPECIES_YYYI_ITSUKI3 description line 4\n");
+
+
+const u8 gYYYISonokoBig1PokedexText[] = _(
+    "SPECIES_YYYI_SONOKO_BIG1 description line 1\n"
+    "SPECIES_YYYI_SONOKO_BIG1 description line 2\n"
+    "SPECIES_YYYI_SONOKO_BIG1 description line 3\n"
+    "SPECIES_YYYI_SONOKO_BIG1 description line 4\n");
+
+
+const u8 gYYYISonokoBig2PokedexText[] = _(
+    "SPECIES_YYYI_SONOKO_BIG2 description line 1\n"
+    "SPECIES_YYYI_SONOKO_BIG2 description line 2\n"
+    "SPECIES_YYYI_SONOKO_BIG2 description line 3\n"
+    "SPECIES_YYYI_SONOKO_BIG2 description line 4\n");
+
+
+const u8 gYYYISonokoBig3PokedexText[] = _(
+    "SPECIES_YYYI_SONOKO_BIG3 description line 1\n"
+    "SPECIES_YYYI_SONOKO_BIG3 description line 2\n"
+    "SPECIES_YYYI_SONOKO_BIG3 description line 3\n"
+    "SPECIES_YYYI_SONOKO_BIG3 description line 4\n");
+
+
+const u8 gYYYISumi1PokedexText[] = _(
+    "SPECIES_YYYI_SUMI1 description line 1\n"
+    "SPECIES_YYYI_SUMI1 description line 2\n"
+    "SPECIES_YYYI_SUMI1 description line 3\n"
+    "SPECIES_YYYI_SUMI1 description line 4\n");
+
+
+const u8 gYYYISumi2PokedexText[] = _(
+    "SPECIES_YYYI_SUMI2 description line 1\n"
+    "SPECIES_YYYI_SUMI2 description line 2\n"
+    "SPECIES_YYYI_SUMI2 description line 3\n"
+    "SPECIES_YYYI_SUMI2 description line 4\n");
+
+
+const u8 gYYYISumi3PokedexText[] = _(
+    "SPECIES_YYYI_SUMI3 description line 1\n"
+    "SPECIES_YYYI_SUMI3 description line 2\n"
+    "SPECIES_YYYI_SUMI3 description line 3\n"
+    "SPECIES_YYYI_SUMI3 description line 4\n");
+
+
+const u8 gYYYIGin1PokedexText[] = _(
+    "SPECIES_YYYI_GIN1 description line 1\n"
+    "SPECIES_YYYI_GIN1 description line 2\n"
+    "SPECIES_YYYI_GIN1 description line 3\n"
+    "SPECIES_YYYI_GIN1 description line 4\n");
+
+
+const u8 gYYYIGin2PokedexText[] = _(
+    "SPECIES_YYYI_GIN2 description line 1\n"
+    "SPECIES_YYYI_GIN2 description line 2\n"
+    "SPECIES_YYYI_GIN2 description line 3\n"
+    "SPECIES_YYYI_GIN2 description line 4\n");
+
+
+const u8 gYYYIGin3PokedexText[] = _(
+    "SPECIES_YYYI_GIN3 description line 1\n"
+    "SPECIES_YYYI_GIN3 description line 2\n"
+    "SPECIES_YYYI_GIN3 description line 3\n"
+    "SPECIES_YYYI_GIN3 description line 4\n");
+
+
+const u8 gYYYISonokoSmol1PokedexText[] = _(
+    "SPECIES_YYYI_SONOKO_SMOL1 description line 1\n"
+    "SPECIES_YYYI_SONOKO_SMOL1 description line 2\n"
+    "SPECIES_YYYI_SONOKO_SMOL1 description line 3\n"
+    "SPECIES_YYYI_SONOKO_SMOL1 description line 4\n");
+
+
+const u8 gYYYISonokoSmol2PokedexText[] = _(
+    "SPECIES_YYYI_SONOKO_SMOL2 description line 1\n"
+    "SPECIES_YYYI_SONOKO_SMOL2 description line 2\n"
+    "SPECIES_YYYI_SONOKO_SMOL2 description line 3\n"
+    "SPECIES_YYYI_SONOKO_SMOL2 description line 4\n");
+
+
+const u8 gYYYISonokoSmol3PokedexText[] = _(
+    "SPECIES_YYYI_SONOKO_SMOL3 description line 1\n"
+    "SPECIES_YYYI_SONOKO_SMOL3 description line 2\n"
+    "SPECIES_YYYI_SONOKO_SMOL3 description line 3\n"
+    "SPECIES_YYYI_SONOKO_SMOL3 description line 4\n");
+
+
+const u8 gYYYIWakaba1PokedexText[] = _(
+    "SPECIES_YYYI_WAKABA1 description line 1\n"
+    "SPECIES_YYYI_WAKABA1 description line 2\n"
+    "SPECIES_YYYI_WAKABA1 description line 3\n"
+    "SPECIES_YYYI_WAKABA1 description line 4\n");
+
+
+const u8 gYYYIWakaba2PokedexText[] = _(
+    "SPECIES_YYYI_WAKABA2 description line 1\n"
+    "SPECIES_YYYI_WAKABA2 description line 2\n"
+    "SPECIES_YYYI_WAKABA2 description line 3\n"
+    "SPECIES_YYYI_WAKABA2 description line 4\n");
+
+
+const u8 gYYYIWakaba3APokedexText[] = _(
+    "SPECIES_YYYI_WAKABA3A description line 1\n"
+    "SPECIES_YYYI_WAKABA3A description line 2\n"
+    "SPECIES_YYYI_WAKABA3A description line 3\n"
+    "SPECIES_YYYI_WAKABA3A description line 4\n");
+
+
+const u8 gYYYITakashimaYuuna1PokedexText[] = _(
+    "SPECIES_YYYI_TAKASHIMA_YUUNA1 description line 1\n"
+    "SPECIES_YYYI_TAKASHIMA_YUUNA1 description line 2\n"
+    "SPECIES_YYYI_TAKASHIMA_YUUNA1 description line 3\n"
+    "SPECIES_YYYI_TAKASHIMA_YUUNA1 description line 4\n");
+
+
+const u8 gYYYITakashimaYuuna2PokedexText[] = _(
+    "SPECIES_YYYI_TAKASHIMA_YUUNA2 description line 1\n"
+    "SPECIES_YYYI_TAKASHIMA_YUUNA2 description line 2\n"
+    "SPECIES_YYYI_TAKASHIMA_YUUNA2 description line 3\n"
+    "SPECIES_YYYI_TAKASHIMA_YUUNA2 description line 4\n");
+
+
+const u8 gYYYITakashimaYuuna3APokedexText[] = _(
+    "SPECIES_YYYI_TAKASHIMA_YUUNA3A description line 1\n"
+    "SPECIES_YYYI_TAKASHIMA_YUUNA3A description line 2\n"
+    "SPECIES_YYYI_TAKASHIMA_YUUNA3A description line 3\n"
+    "SPECIES_YYYI_TAKASHIMA_YUUNA3A description line 4\n");
+
+
+const u8 gYYYIChikage1PokedexText[] = _(
+    "SPECIES_YYYI_CHIKAGE1 description line 1\n"
+    "SPECIES_YYYI_CHIKAGE1 description line 2\n"
+    "SPECIES_YYYI_CHIKAGE1 description line 3\n"
+    "SPECIES_YYYI_CHIKAGE1 description line 4\n");
+
+
+const u8 gYYYIChikage2PokedexText[] = _(
+    "SPECIES_YYYI_CHIKAGE2 description line 1\n"
+    "SPECIES_YYYI_CHIKAGE2 description line 2\n"
+    "SPECIES_YYYI_CHIKAGE2 description line 3\n"
+    "SPECIES_YYYI_CHIKAGE2 description line 4\n");
+
+
+const u8 gYYYIChikage3PokedexText[] = _(
+    "SPECIES_YYYI_CHIKAGE3 description line 1\n"
+    "SPECIES_YYYI_CHIKAGE3 description line 2\n"
+    "SPECIES_YYYI_CHIKAGE3 description line 3\n"
+    "SPECIES_YYYI_CHIKAGE3 description line 4\n");
+
+
+const u8 gYYYITamako1PokedexText[] = _(
+    "SPECIES_YYYI_TAMAKO1 description line 1\n"
+    "SPECIES_YYYI_TAMAKO1 description line 2\n"
+    "SPECIES_YYYI_TAMAKO1 description line 3\n"
+    "SPECIES_YYYI_TAMAKO1 description line 4\n");
+
+
+const u8 gYYYITamako2PokedexText[] = _(
+    "SPECIES_YYYI_TAMAKO2 description line 1\n"
+    "SPECIES_YYYI_TAMAKO2 description line 2\n"
+    "SPECIES_YYYI_TAMAKO2 description line 3\n"
+    "SPECIES_YYYI_TAMAKO2 description line 4\n");
+
+
+const u8 gYYYITamako3PokedexText[] = _(
+    "SPECIES_YYYI_TAMAKO3 description line 1\n"
+    "SPECIES_YYYI_TAMAKO3 description line 2\n"
+    "SPECIES_YYYI_TAMAKO3 description line 3\n"
+    "SPECIES_YYYI_TAMAKO3 description line 4\n");
+
+
+const u8 gYYYIAnzu1PokedexText[] = _(
+    "SPECIES_YYYI_ANZU1 description line 1\n"
+    "SPECIES_YYYI_ANZU1 description line 2\n"
+    "SPECIES_YYYI_ANZU1 description line 3\n"
+    "SPECIES_YYYI_ANZU1 description line 4\n");
+
+
+const u8 gYYYIAnzu2PokedexText[] = _(
+    "SPECIES_YYYI_ANZU2 description line 1\n"
+    "SPECIES_YYYI_ANZU2 description line 2\n"
+    "SPECIES_YYYI_ANZU2 description line 3\n"
+    "SPECIES_YYYI_ANZU2 description line 4\n");
+
+
+const u8 gYYYIAnzu3PokedexText[] = _(
+    "SPECIES_YYYI_ANZU3 description line 1\n"
+    "SPECIES_YYYI_ANZU3 description line 2\n"
+    "SPECIES_YYYI_ANZU3 description line 3\n"
+    "SPECIES_YYYI_ANZU3 description line 4\n");
+
+
+const u8 gYYYIHinata1PokedexText[] = _(
+    "SPECIES_YYYI_HINATA1 description line 1\n"
+    "SPECIES_YYYI_HINATA1 description line 2\n"
+    "SPECIES_YYYI_HINATA1 description line 3\n"
+    "SPECIES_YYYI_HINATA1 description line 4\n");
+
+
+const u8 gYYYIHinata2PokedexText[] = _(
+    "SPECIES_YYYI_HINATA2 description line 1\n"
+    "SPECIES_YYYI_HINATA2 description line 2\n"
+    "SPECIES_YYYI_HINATA2 description line 3\n"
+    "SPECIES_YYYI_HINATA2 description line 4\n");
+
+
+const u8 gYYYIUtano1PokedexText[] = _(
+    "SPECIES_YYYI_UTANO1 description line 1\n"
+    "SPECIES_YYYI_UTANO1 description line 2\n"
+    "SPECIES_YYYI_UTANO1 description line 3\n"
+    "SPECIES_YYYI_UTANO1 description line 4\n");
+
+
+const u8 gYYYIUtano2PokedexText[] = _(
+    "SPECIES_YYYI_UTANO2 description line 1\n"
+    "SPECIES_YYYI_UTANO2 description line 2\n"
+    "SPECIES_YYYI_UTANO2 description line 3\n"
+    "SPECIES_YYYI_UTANO2 description line 4\n");
+
+
+const u8 gYYYIUtano3PokedexText[] = _(
+    "SPECIES_YYYI_UTANO3 description line 1\n"
+    "SPECIES_YYYI_UTANO3 description line 2\n"
+    "SPECIES_YYYI_UTANO3 description line 3\n"
+    "SPECIES_YYYI_UTANO3 description line 4\n");
+
+
+const u8 gYYYIMito1PokedexText[] = _(
+    "SPECIES_YYYI_MITO1 description line 1\n"
+    "SPECIES_YYYI_MITO1 description line 2\n"
+    "SPECIES_YYYI_MITO1 description line 3\n"
+    "SPECIES_YYYI_MITO1 description line 4\n");
+
+
+const u8 gYYYIMito2PokedexText[] = _(
+    "SPECIES_YYYI_MITO2 description line 1\n"
+    "SPECIES_YYYI_MITO2 description line 2\n"
+    "SPECIES_YYYI_MITO2 description line 3\n"
+    "SPECIES_YYYI_MITO2 description line 4\n");
+
+
+const u8 gYYYIMebuki1PokedexText[] = _(
+    "SPECIES_YYYI_MEBUKI1 description line 1\n"
+    "SPECIES_YYYI_MEBUKI1 description line 2\n"
+    "SPECIES_YYYI_MEBUKI1 description line 3\n"
+    "SPECIES_YYYI_MEBUKI1 description line 4\n");
+
+
+const u8 gYYYIMebuki2PokedexText[] = _(
+    "SPECIES_YYYI_MEBUKI2 description line 1\n"
+    "SPECIES_YYYI_MEBUKI2 description line 2\n"
+    "SPECIES_YYYI_MEBUKI2 description line 3\n"
+    "SPECIES_YYYI_MEBUKI2 description line 4\n");
+
+
+const u8 gYYYIMebuki3PokedexText[] = _(
+    "SPECIES_YYYI_MEBUKI3 description line 1\n"
+    "SPECIES_YYYI_MEBUKI3 description line 2\n"
+    "SPECIES_YYYI_MEBUKI3 description line 3\n"
+    "SPECIES_YYYI_MEBUKI3 description line 4\n");
+
+
+const u8 gYYYISuzume1PokedexText[] = _(
+    "SPECIES_YYYI_SUZUME1 description line 1\n"
+    "SPECIES_YYYI_SUZUME1 description line 2\n"
+    "SPECIES_YYYI_SUZUME1 description line 3\n"
+    "SPECIES_YYYI_SUZUME1 description line 4\n");
+
+
+const u8 gYYYISuzume2PokedexText[] = _(
+    "SPECIES_YYYI_SUZUME2 description line 1\n"
+    "SPECIES_YYYI_SUZUME2 description line 2\n"
+    "SPECIES_YYYI_SUZUME2 description line 3\n"
+    "SPECIES_YYYI_SUZUME2 description line 4\n");
+
+
+const u8 gYYYISuzume3PokedexText[] = _(
+    "SPECIES_YYYI_SUZUME3 description line 1\n"
+    "SPECIES_YYYI_SUZUME3 description line 2\n"
+    "SPECIES_YYYI_SUZUME3 description line 3\n"
+    "SPECIES_YYYI_SUZUME3 description line 4\n");
+
+
+const u8 gYYYIYumiko1PokedexText[] = _(
+    "SPECIES_YYYI_YUMIKO1 description line 1\n"
+    "SPECIES_YYYI_YUMIKO1 description line 2\n"
+    "SPECIES_YYYI_YUMIKO1 description line 3\n"
+    "SPECIES_YYYI_YUMIKO1 description line 4\n");
+
+
+const u8 gYYYIYumiko2PokedexText[] = _(
+    "SPECIES_YYYI_YUMIKO2 description line 1\n"
+    "SPECIES_YYYI_YUMIKO2 description line 2\n"
+    "SPECIES_YYYI_YUMIKO2 description line 3\n"
+    "SPECIES_YYYI_YUMIKO2 description line 4\n");
+
+
+const u8 gYYYIYumiko3PokedexText[] = _(
+    "SPECIES_YYYI_YUMIKO3 description line 1\n"
+    "SPECIES_YYYI_YUMIKO3 description line 2\n"
+    "SPECIES_YYYI_YUMIKO3 description line 3\n"
+    "SPECIES_YYYI_YUMIKO3 description line 4\n");
+
+
+const u8 gYYYIShizuku1PokedexText[] = _(
+    "SPECIES_YYYI_SHIZUKU1 description line 1\n"
+    "SPECIES_YYYI_SHIZUKU1 description line 2\n"
+    "SPECIES_YYYI_SHIZUKU1 description line 3\n"
+    "SPECIES_YYYI_SHIZUKU1 description line 4\n");
+
+
+const u8 gYYYIShizuku2PokedexText[] = _(
+    "SPECIES_YYYI_SHIZUKU2 description line 1\n"
+    "SPECIES_YYYI_SHIZUKU2 description line 2\n"
+    "SPECIES_YYYI_SHIZUKU2 description line 3\n"
+    "SPECIES_YYYI_SHIZUKU2 description line 4\n");
+
+
+const u8 gYYYIShizuku3PokedexText[] = _(
+    "SPECIES_YYYI_SHIZUKU3 description line 1\n"
+    "SPECIES_YYYI_SHIZUKU3 description line 2\n"
+    "SPECIES_YYYI_SHIZUKU3 description line 3\n"
+    "SPECIES_YYYI_SHIZUKU3 description line 4\n");
+
+
+const u8 gYYYIAya1PokedexText[] = _(
+    "SPECIES_YYYI_AYA1 description line 1\n"
+    "SPECIES_YYYI_AYA1 description line 2\n"
+    "SPECIES_YYYI_AYA1 description line 3\n"
+    "SPECIES_YYYI_AYA1 description line 4\n");
+
+
+const u8 gYYYIAya2PokedexText[] = _(
+    "SPECIES_YYYI_AYA2 description line 1\n"
+    "SPECIES_YYYI_AYA2 description line 2\n"
+    "SPECIES_YYYI_AYA2 description line 3\n"
+    "SPECIES_YYYI_AYA2 description line 4\n");
+
+
+const u8 gYYYISekka1PokedexText[] = _(
+    "SPECIES_YYYI_SEKKA1 description line 1\n"
+    "SPECIES_YYYI_SEKKA1 description line 2\n"
+    "SPECIES_YYYI_SEKKA1 description line 3\n"
+    "SPECIES_YYYI_SEKKA1 description line 4\n");
+
+
+const u8 gYYYISekka2PokedexText[] = _(
+    "SPECIES_YYYI_SEKKA2 description line 1\n"
+    "SPECIES_YYYI_SEKKA2 description line 2\n"
+    "SPECIES_YYYI_SEKKA2 description line 3\n"
+    "SPECIES_YYYI_SEKKA2 description line 4\n");
+
+
+const u8 gYYYISekka3PokedexText[] = _(
+    "SPECIES_YYYI_SEKKA3 description line 1\n"
+    "SPECIES_YYYI_SEKKA3 description line 2\n"
+    "SPECIES_YYYI_SEKKA3 description line 3\n"
+    "SPECIES_YYYI_SEKKA3 description line 4\n");
+
+
+const u8 gYYYINatsume1PokedexText[] = _(
+    "SPECIES_YYYI_NATSUME1 description line 1\n"
+    "SPECIES_YYYI_NATSUME1 description line 2\n"
+    "SPECIES_YYYI_NATSUME1 description line 3\n"
+    "SPECIES_YYYI_NATSUME1 description line 4\n");
+
+
+const u8 gYYYINatsume2PokedexText[] = _(
+    "SPECIES_YYYI_NATSUME2 description line 1\n"
+    "SPECIES_YYYI_NATSUME2 description line 2\n"
+    "SPECIES_YYYI_NATSUME2 description line 3\n"
+    "SPECIES_YYYI_NATSUME2 description line 4\n");
+
+
+const u8 gYYYINatsume3PokedexText[] = _(
+    "SPECIES_YYYI_NATSUME3 description line 1\n"
+    "SPECIES_YYYI_NATSUME3 description line 2\n"
+    "SPECIES_YYYI_NATSUME3 description line 3\n"
+    "SPECIES_YYYI_NATSUME3 description line 4\n");
+
+
+const u8 gYYYIAkamineYuuna1PokedexText[] = _(
+    "SPECIES_YYYI_AKAMINE_YUUNA1 description line 1\n"
+    "SPECIES_YYYI_AKAMINE_YUUNA1 description line 2\n"
+    "SPECIES_YYYI_AKAMINE_YUUNA1 description line 3\n"
+    "SPECIES_YYYI_AKAMINE_YUUNA1 description line 4\n");
+
+
+const u8 gYYYIAkamineYuuna2PokedexText[] = _(
+    "SPECIES_YYYI_AKAMINE_YUUNA2 description line 1\n"
+    "SPECIES_YYYI_AKAMINE_YUUNA2 description line 2\n"
+    "SPECIES_YYYI_AKAMINE_YUUNA2 description line 3\n"
+    "SPECIES_YYYI_AKAMINE_YUUNA2 description line 4\n");
+
+
+const u8 gYYYIAkamineYuuna3PokedexText[] = _(
+    "SPECIES_YYYI_AKAMINE_YUUNA3 description line 1\n"
+    "SPECIES_YYYI_AKAMINE_YUUNA3 description line 2\n"
+    "SPECIES_YYYI_AKAMINE_YUUNA3 description line 3\n"
+    "SPECIES_YYYI_AKAMINE_YUUNA3 description line 4\n");
+
+
+const u8 gYYYIRenge1PokedexText[] = _(
+    "SPECIES_YYYI_RENGE1 description line 1\n"
+    "SPECIES_YYYI_RENGE1 description line 2\n"
+    "SPECIES_YYYI_RENGE1 description line 3\n"
+    "SPECIES_YYYI_RENGE1 description line 4\n");
+
+
+const u8 gYYYIRenge2PokedexText[] = _(
+    "SPECIES_YYYI_RENGE2 description line 1\n"
+    "SPECIES_YYYI_RENGE2 description line 2\n"
+    "SPECIES_YYYI_RENGE2 description line 3\n"
+    "SPECIES_YYYI_RENGE2 description line 4\n");
+
+
+const u8 gYYYIRenge3PokedexText[] = _(
+    "SPECIES_YYYI_RENGE3 description line 1\n"
+    "SPECIES_YYYI_RENGE3 description line 2\n"
+    "SPECIES_YYYI_RENGE3 description line 3\n"
+    "SPECIES_YYYI_RENGE3 description line 4\n");
+
+
+const u8 gYYYIShizuka1PokedexText[] = _(
+    "SPECIES_YYYI_SHIZUKA1 description line 1\n"
+    "SPECIES_YYYI_SHIZUKA1 description line 2\n"
+    "SPECIES_YYYI_SHIZUKA1 description line 3\n"
+    "SPECIES_YYYI_SHIZUKA1 description line 4\n");
+
+
+const u8 gYYYIShizuka2PokedexText[] = _(
+    "SPECIES_YYYI_SHIZUKA2 description line 1\n"
+    "SPECIES_YYYI_SHIZUKA2 description line 2\n"
+    "SPECIES_YYYI_SHIZUKA2 description line 3\n"
+    "SPECIES_YYYI_SHIZUKA2 description line 4\n");
+
+
+const u8 gYYYIShizuka3PokedexText[] = _(
+    "SPECIES_YYYI_SHIZUKA3 description line 1\n"
+    "SPECIES_YYYI_SHIZUKA3 description line 2\n"
+    "SPECIES_YYYI_SHIZUKA3 description line 3\n"
+    "SPECIES_YYYI_SHIZUKA3 description line 4\n");
+
+
+const u8 gYYYIFuyouLilienthalYuuna1PokedexText[] = _(
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA1 description line 1\n"
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA1 description line 2\n"
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA1 description line 3\n"
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA1 description line 4\n");
+
+
+const u8 gYYYIFuyouLilienthalYuuna2PokedexText[] = _(
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA2 description line 1\n"
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA2 description line 2\n"
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA2 description line 3\n"
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA2 description line 4\n");
+
+
+const u8 gYYYIFuyouLilienthalYuuna3PokedexText[] = _(
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA3 description line 1\n"
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA3 description line 2\n"
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA3 description line 3\n"
+    "SPECIES_YYYI_FUYOU_LILIENTHAL_YUUNA3 description line 4\n");
+
+
+const u8 gYYYIYuzukiYuuna1PokedexText[] = _(
+    "SPECIES_YYYI_YUZUKI_YUUNA1 description line 1\n"
+    "SPECIES_YYYI_YUZUKI_YUUNA1 description line 2\n"
+    "SPECIES_YYYI_YUZUKI_YUUNA1 description line 3\n"
+    "SPECIES_YYYI_YUZUKI_YUUNA1 description line 4\n");
+
+
+const u8 gYYYIYuzukiYuuna2PokedexText[] = _(
+    "SPECIES_YYYI_YUZUKI_YUUNA2 description line 1\n"
+    "SPECIES_YYYI_YUZUKI_YUUNA2 description line 2\n"
+    "SPECIES_YYYI_YUZUKI_YUUNA2 description line 3\n"
+    "SPECIES_YYYI_YUZUKI_YUUNA2 description line 4\n");
+
+
+const u8 gYYYIYuzukiYuuna3PokedexText[] = _(
+    "SPECIES_YYYI_YUZUKI_YUUNA3 description line 1\n"
+    "SPECIES_YYYI_YUZUKI_YUUNA3 description line 2\n"
+    "SPECIES_YYYI_YUZUKI_YUUNA3 description line 3\n"
+    "SPECIES_YYYI_YUZUKI_YUUNA3 description line 4\n");
+
+
+const u8 gYYYIMasuzu1PokedexText[] = _(
+    "SPECIES_YYYI_MASUZU1 description line 1\n"
+    "SPECIES_YYYI_MASUZU1 description line 2\n"
+    "SPECIES_YYYI_MASUZU1 description line 3\n"
+    "SPECIES_YYYI_MASUZU1 description line 4\n");
+
+
+const u8 gYYYIMasuzu2PokedexText[] = _(
+    "SPECIES_YYYI_MASUZU2 description line 1\n"
+    "SPECIES_YYYI_MASUZU2 description line 2\n"
+    "SPECIES_YYYI_MASUZU2 description line 3\n"
+    "SPECIES_YYYI_MASUZU2 description line 4\n");
+
+
+const u8 gYYYIYoshika1PokedexText[] = _(
+    "SPECIES_YYYI_YOSHIKA_1 description line 1\n"
+    "SPECIES_YYYI_YOSHIKA_1 description line 2\n"
+    "SPECIES_YYYI_YOSHIKA_1 description line 3\n"
+    "SPECIES_YYYI_YOSHIKA_1 description line 4\n");
+
+
+const u8 gYYYIYoshika2PokedexText[] = _(
+    "SPECIES_YYYI_YOSHIKA_2 description line 1\n"
+    "SPECIES_YYYI_YOSHIKA_2 description line 2\n"
+    "SPECIES_YYYI_YOSHIKA_2 description line 3\n"
+    "SPECIES_YYYI_YOSHIKA_2 description line 4\n");
+
+
+const u8 gYYYIHime1PokedexText[] = _(
+    "SPECIES_YYYI_HIME1 description line 1\n"
+    "SPECIES_YYYI_HIME1 description line 2\n"
+    "SPECIES_YYYI_HIME1 description line 3\n"
+    "SPECIES_YYYI_HIME1 description line 4\n");
+
+
+const u8 gYYYIHime2PokedexText[] = _(
+    "SPECIES_YYYI_HIME2 description line 1\n"
+    "SPECIES_YYYI_HIME2 description line 2\n"
+    "SPECIES_YYYI_HIME2 description line 3\n"
+    "SPECIES_YYYI_HIME2 description line 4\n");
+
+
+const u8 gYYYIMisaki1PokedexText[] = _(
+    "SPECIES_YYYI_MISAKI1 description line 1\n"
+    "SPECIES_YYYI_MISAKI1 description line 2\n"
+    "SPECIES_YYYI_MISAKI1 description line 3\n"
+    "SPECIES_YYYI_MISAKI1 description line 4\n");
+
+
+const u8 gYYYIMisaki2PokedexText[] = _(
+    "SPECIES_YYYI_MISAKI2 description line 1\n"
+    "SPECIES_YYYI_MISAKI2 description line 2\n"
+    "SPECIES_YYYI_MISAKI2 description line 3\n"
+    "SPECIES_YYYI_MISAKI2 description line 4\n");
+
+
+const u8 gTHKedamaPokedexText[] = _(
+    "SPECIES_TH_KEDAMA description line 1\n"
+    "SPECIES_TH_KEDAMA description line 2\n"
+    "SPECIES_TH_KEDAMA description line 3\n"
+    "SPECIES_TH_KEDAMA description line 4\n");
+
+
+const u8 gTHFairyPokedexText[] = _(
+    "SPECIES_TH_FAIRY description line 1\n"
+    "SPECIES_TH_FAIRY description line 2\n"
+    "SPECIES_TH_FAIRY description line 3\n"
+    "SPECIES_TH_FAIRY description line 4\n");
+
+
+const u8 gTHZombiefairyPokedexText[] = _(
+    "SPECIES_TH_ZOMBIEFAIRY description line 1\n"
+    "SPECIES_TH_ZOMBIEFAIRY description line 2\n"
+    "SPECIES_TH_ZOMBIEFAIRY description line 3\n"
+    "SPECIES_TH_ZOMBIEFAIRY description line 4\n");
+
+
+const u8 gTHShingyoku1PokedexText[] = _(
+    "SPECIES_TH_SHINGYOKU1 description line 1\n"
+    "SPECIES_TH_SHINGYOKU1 description line 2\n"
+    "SPECIES_TH_SHINGYOKU1 description line 3\n"
+    "SPECIES_TH_SHINGYOKU1 description line 4\n");
+
+
+const u8 gTHShingyoku2OPokedexText[] = _(
+    "SPECIES_TH_SHINGYOKU2O description line 1\n"
+    "SPECIES_TH_SHINGYOKU2O description line 2\n"
+    "SPECIES_TH_SHINGYOKU2O description line 3\n"
+    "SPECIES_TH_SHINGYOKU2O description line 4\n");
+
+
+const u8 gTHShingyoku2MPokedexText[] = _(
+    "SPECIES_TH_SHINGYOKU2M description line 1\n"
+    "SPECIES_TH_SHINGYOKU2M description line 2\n"
+    "SPECIES_TH_SHINGYOKU2M description line 3\n"
+    "SPECIES_TH_SHINGYOKU2M description line 4\n");
+
+
+const u8 gTHShingyoku2FPokedexText[] = _(
+    "SPECIES_TH_SHINGYOKU2F description line 1\n"
+    "SPECIES_TH_SHINGYOKU2F description line 2\n"
+    "SPECIES_TH_SHINGYOKU2F description line 3\n"
+    "SPECIES_TH_SHINGYOKU2F description line 4\n");
+
+
+const u8 gTHYuugen1PokedexText[] = _(
+    "SPECIES_TH_YUUGEN1 description line 1\n"
+    "SPECIES_TH_YUUGEN1 description line 2\n"
+    "SPECIES_TH_YUUGEN1 description line 3\n"
+    "SPECIES_TH_YUUGEN1 description line 4\n");
+
+
+const u8 gTHYuugen2PokedexText[] = _(
+    "SPECIES_TH_YUUGEN2 description line 1\n"
+    "SPECIES_TH_YUUGEN2 description line 2\n"
+    "SPECIES_TH_YUUGEN2 description line 3\n"
+    "SPECIES_TH_YUUGEN2 description line 4\n");
+
+
+const u8 gTHMima1PokedexText[] = _(
+    "SPECIES_TH_MIMA1 description line 1\n"
+    "SPECIES_TH_MIMA1 description line 2\n"
+    "SPECIES_TH_MIMA1 description line 3\n"
+    "SPECIES_TH_MIMA1 description line 4\n");
+
+
+const u8 gTHMima2PokedexText[] = _(
+    "SPECIES_TH_MIMA2 description line 1\n"
+    "SPECIES_TH_MIMA2 description line 2\n"
+    "SPECIES_TH_MIMA2 description line 3\n"
+    "SPECIES_TH_MIMA2 description line 4\n");
+
+
+const u8 gTHElis1PokedexText[] = _(
+    "SPECIES_TH_ELIS1 description line 1\n"
+    "SPECIES_TH_ELIS1 description line 2\n"
+    "SPECIES_TH_ELIS1 description line 3\n"
+    "SPECIES_TH_ELIS1 description line 4\n");
+
+
+const u8 gTHElis2PokedexText[] = _(
+    "SPECIES_TH_ELIS2 description line 1\n"
+    "SPECIES_TH_ELIS2 description line 2\n"
+    "SPECIES_TH_ELIS2 description line 3\n"
+    "SPECIES_TH_ELIS2 description line 4\n");
+
+
+const u8 gTHKikuri1PokedexText[] = _(
+    "SPECIES_TH_KIKURI1 description line 1\n"
+    "SPECIES_TH_KIKURI1 description line 2\n"
+    "SPECIES_TH_KIKURI1 description line 3\n"
+    "SPECIES_TH_KIKURI1 description line 4\n");
+
+
+const u8 gTHKikuri2PokedexText[] = _(
+    "SPECIES_TH_KIKURI2 description line 1\n"
+    "SPECIES_TH_KIKURI2 description line 2\n"
+    "SPECIES_TH_KIKURI2 description line 3\n"
+    "SPECIES_TH_KIKURI2 description line 4\n");
+
+
+const u8 gTHSariel1PokedexText[] = _(
+    "SPECIES_TH_SARIEL1 description line 1\n"
+    "SPECIES_TH_SARIEL1 description line 2\n"
+    "SPECIES_TH_SARIEL1 description line 3\n"
+    "SPECIES_TH_SARIEL1 description line 4\n");
+
+
+const u8 gTHSariel2NPokedexText[] = _(
+    "SPECIES_TH_SARIEL2N description line 1\n"
+    "SPECIES_TH_SARIEL2N description line 2\n"
+    "SPECIES_TH_SARIEL2N description line 3\n"
+    "SPECIES_TH_SARIEL2N description line 4\n");
+
+
+const u8 gTHSariel2SPokedexText[] = _(
+    "SPECIES_TH_SARIEL2S description line 1\n"
+    "SPECIES_TH_SARIEL2S description line 2\n"
+    "SPECIES_TH_SARIEL2S description line 3\n"
+    "SPECIES_TH_SARIEL2S description line 4\n");
+
+
+const u8 gTHKonngara1PokedexText[] = _(
+    "SPECIES_TH_KONNGARA1 description line 1\n"
+    "SPECIES_TH_KONNGARA1 description line 2\n"
+    "SPECIES_TH_KONNGARA1 description line 3\n"
+    "SPECIES_TH_KONNGARA1 description line 4\n");
+
+
+const u8 gTHKonngara2PokedexText[] = _(
+    "SPECIES_TH_KONNGARA2 description line 1\n"
+    "SPECIES_TH_KONNGARA2 description line 2\n"
+    "SPECIES_TH_KONNGARA2 description line 3\n"
+    "SPECIES_TH_KONNGARA2 description line 4\n");
+
+
+const u8 gTHGenjiPokedexText[] = _(
+    "SPECIES_TH_GENJI description line 1\n"
+    "SPECIES_TH_GENJI description line 2\n"
+    "SPECIES_TH_GENJI description line 3\n"
+    "SPECIES_TH_GENJI description line 4\n");
+
+
+const u8 gTHRika1PokedexText[] = _(
+    "SPECIES_TH_RIKA1 description line 1\n"
+    "SPECIES_TH_RIKA1 description line 2\n"
+    "SPECIES_TH_RIKA1 description line 3\n"
+    "SPECIES_TH_RIKA1 description line 4\n");
+
+
+const u8 gTHRika2PokedexText[] = _(
+    "SPECIES_TH_RIKA2 description line 1\n"
+    "SPECIES_TH_RIKA2 description line 2\n"
+    "SPECIES_TH_RIKA2 description line 3\n"
+    "SPECIES_TH_RIKA2 description line 4\n");
+
+
+const u8 gTHMeira1PokedexText[] = _(
+    "SPECIES_TH_MEIRA1 description line 1\n"
+    "SPECIES_TH_MEIRA1 description line 2\n"
+    "SPECIES_TH_MEIRA1 description line 3\n"
+    "SPECIES_TH_MEIRA1 description line 4\n");
+
+
+const u8 gTHMeira2PokedexText[] = _(
+    "SPECIES_TH_MEIRA2 description line 1\n"
+    "SPECIES_TH_MEIRA2 description line 2\n"
+    "SPECIES_TH_MEIRA2 description line 3\n"
+    "SPECIES_TH_MEIRA2 description line 4\n");
+
+
+const u8 gTHEllen1PokedexText[] = _(
+    "SPECIES_TH_ELLEN1 description line 1\n"
+    "SPECIES_TH_ELLEN1 description line 2\n"
+    "SPECIES_TH_ELLEN1 description line 3\n"
+    "SPECIES_TH_ELLEN1 description line 4\n");
+
+
+const u8 gTHEllen2PokedexText[] = _(
+    "SPECIES_TH_ELLEN2 description line 1\n"
+    "SPECIES_TH_ELLEN2 description line 2\n"
+    "SPECIES_TH_ELLEN2 description line 3\n"
+    "SPECIES_TH_ELLEN2 description line 4\n");
+
+
+const u8 gTHKotohime1PokedexText[] = _(
+    "SPECIES_TH_KOTOHIME1 description line 1\n"
+    "SPECIES_TH_KOTOHIME1 description line 2\n"
+    "SPECIES_TH_KOTOHIME1 description line 3\n"
+    "SPECIES_TH_KOTOHIME1 description line 4\n");
+
+
+const u8 gTHKotohime2PokedexText[] = _(
+    "SPECIES_TH_KOTOHIME2 description line 1\n"
+    "SPECIES_TH_KOTOHIME2 description line 2\n"
+    "SPECIES_TH_KOTOHIME2 description line 3\n"
+    "SPECIES_TH_KOTOHIME2 description line 4\n");
+
+
+const u8 gTHKana1PokedexText[] = _(
+    "SPECIES_TH_KANA1 description line 1\n"
+    "SPECIES_TH_KANA1 description line 2\n"
+    "SPECIES_TH_KANA1 description line 3\n"
+    "SPECIES_TH_KANA1 description line 4\n");
+
+
+const u8 gTHKana2PokedexText[] = _(
+    "SPECIES_TH_KANA2 description line 1\n"
+    "SPECIES_TH_KANA2 description line 2\n"
+    "SPECIES_TH_KANA2 description line 3\n"
+    "SPECIES_TH_KANA2 description line 4\n");
+
+
+const u8 gTHRikako1PokedexText[] = _(
+    "SPECIES_TH_RIKAKO1 description line 1\n"
+    "SPECIES_TH_RIKAKO1 description line 2\n"
+    "SPECIES_TH_RIKAKO1 description line 3\n"
+    "SPECIES_TH_RIKAKO1 description line 4\n");
+
+
+const u8 gTHRikako2PokedexText[] = _(
+    "SPECIES_TH_RIKAKO2 description line 1\n"
+    "SPECIES_TH_RIKAKO2 description line 2\n"
+    "SPECIES_TH_RIKAKO2 description line 3\n"
+    "SPECIES_TH_RIKAKO2 description line 4\n");
+
+
+const u8 gTHChiyuri1PokedexText[] = _(
+    "SPECIES_TH_CHIYURI1 description line 1\n"
+    "SPECIES_TH_CHIYURI1 description line 2\n"
+    "SPECIES_TH_CHIYURI1 description line 3\n"
+    "SPECIES_TH_CHIYURI1 description line 4\n");
+
+
+const u8 gTHChiyuri2PokedexText[] = _(
+    "SPECIES_TH_CHIYURI2 description line 1\n"
+    "SPECIES_TH_CHIYURI2 description line 2\n"
+    "SPECIES_TH_CHIYURI2 description line 3\n"
+    "SPECIES_TH_CHIYURI2 description line 4\n");
+
+
+const u8 gTHYumemi1PokedexText[] = _(
+    "SPECIES_TH_YUMEMI1 description line 1\n"
+    "SPECIES_TH_YUMEMI1 description line 2\n"
+    "SPECIES_TH_YUMEMI1 description line 3\n"
+    "SPECIES_TH_YUMEMI1 description line 4\n");
+
+
+const u8 gTHYumemi2PokedexText[] = _(
+    "SPECIES_TH_YUMEMI2 description line 1\n"
+    "SPECIES_TH_YUMEMI2 description line 2\n"
+    "SPECIES_TH_YUMEMI2 description line 3\n"
+    "SPECIES_TH_YUMEMI2 description line 4\n");
+
+
+const u8 gTHRuukotoPokedexText[] = _(
+    "SPECIES_TH_RUUKOTO description line 1\n"
+    "SPECIES_TH_RUUKOTO description line 2\n"
+    "SPECIES_TH_RUUKOTO description line 3\n"
+    "SPECIES_TH_RUUKOTO description line 4\n");
+
+
+const u8 gTHMimichanPokedexText[] = _(
+    "SPECIES_TH_MIMICHAN description line 1\n"
+    "SPECIES_TH_MIMICHAN description line 2\n"
+    "SPECIES_TH_MIMICHAN description line 3\n"
+    "SPECIES_TH_MIMICHAN description line 4\n");
+
+
+const u8 gTHOrange1PokedexText[] = _(
+    "SPECIES_TH_ORANGE1 description line 1\n"
+    "SPECIES_TH_ORANGE1 description line 2\n"
+    "SPECIES_TH_ORANGE1 description line 3\n"
+    "SPECIES_TH_ORANGE1 description line 4\n");
+
+
+const u8 gTHOrange2PokedexText[] = _(
+    "SPECIES_TH_ORANGE2 description line 1\n"
+    "SPECIES_TH_ORANGE2 description line 2\n"
+    "SPECIES_TH_ORANGE2 description line 3\n"
+    "SPECIES_TH_ORANGE2 description line 4\n");
+
+
+const u8 gTHKurumi1PokedexText[] = _(
+    "SPECIES_TH_KURUMI1 description line 1\n"
+    "SPECIES_TH_KURUMI1 description line 2\n"
+    "SPECIES_TH_KURUMI1 description line 3\n"
+    "SPECIES_TH_KURUMI1 description line 4\n");
+
+
+const u8 gTHKurumi2PokedexText[] = _(
+    "SPECIES_TH_KURUMI2 description line 1\n"
+    "SPECIES_TH_KURUMI2 description line 2\n"
+    "SPECIES_TH_KURUMI2 description line 3\n"
+    "SPECIES_TH_KURUMI2 description line 4\n");
+
+
+const u8 gTHElly1PokedexText[] = _(
+    "SPECIES_TH_ELLY1 description line 1\n"
+    "SPECIES_TH_ELLY1 description line 2\n"
+    "SPECIES_TH_ELLY1 description line 3\n"
+    "SPECIES_TH_ELLY1 description line 4\n");
+
+
+const u8 gTHElly2PokedexText[] = _(
+    "SPECIES_TH_ELLY2 description line 1\n"
+    "SPECIES_TH_ELLY2 description line 2\n"
+    "SPECIES_TH_ELLY2 description line 3\n"
+    "SPECIES_TH_ELLY2 description line 4\n");
+
+
+const u8 gTHMugetsu1PokedexText[] = _(
+    "SPECIES_TH_MUGETSU1 description line 1\n"
+    "SPECIES_TH_MUGETSU1 description line 2\n"
+    "SPECIES_TH_MUGETSU1 description line 3\n"
+    "SPECIES_TH_MUGETSU1 description line 4\n");
+
+
+const u8 gTHMugetsu2PokedexText[] = _(
+    "SPECIES_TH_MUGETSU2 description line 1\n"
+    "SPECIES_TH_MUGETSU2 description line 2\n"
+    "SPECIES_TH_MUGETSU2 description line 3\n"
+    "SPECIES_TH_MUGETSU2 description line 4\n");
+
+
+const u8 gTHGengetsu1PokedexText[] = _(
+    "SPECIES_TH_GENGETSU1 description line 1\n"
+    "SPECIES_TH_GENGETSU1 description line 2\n"
+    "SPECIES_TH_GENGETSU1 description line 3\n"
+    "SPECIES_TH_GENGETSU1 description line 4\n");
+
+
+const u8 gTHGengetsu2PokedexText[] = _(
+    "SPECIES_TH_GENGETSU2 description line 1\n"
+    "SPECIES_TH_GENGETSU2 description line 2\n"
+    "SPECIES_TH_GENGETSU2 description line 3\n"
+    "SPECIES_TH_GENGETSU2 description line 4\n");
+
+
+const u8 gTHSara1PokedexText[] = _(
+    "SPECIES_TH_SARA1 description line 1\n"
+    "SPECIES_TH_SARA1 description line 2\n"
+    "SPECIES_TH_SARA1 description line 3\n"
+    "SPECIES_TH_SARA1 description line 4\n");
+
+
+const u8 gTHSara2PokedexText[] = _(
+    "SPECIES_TH_SARA2 description line 1\n"
+    "SPECIES_TH_SARA2 description line 2\n"
+    "SPECIES_TH_SARA2 description line 3\n"
+    "SPECIES_TH_SARA2 description line 4\n");
+
+
+const u8 gTHLouise1PokedexText[] = _(
+    "SPECIES_TH_LOUISE1 description line 1\n"
+    "SPECIES_TH_LOUISE1 description line 2\n"
+    "SPECIES_TH_LOUISE1 description line 3\n"
+    "SPECIES_TH_LOUISE1 description line 4\n");
+
+
+const u8 gTHLouise2PokedexText[] = _(
+    "SPECIES_TH_LOUISE2 description line 1\n"
+    "SPECIES_TH_LOUISE2 description line 2\n"
+    "SPECIES_TH_LOUISE2 description line 3\n"
+    "SPECIES_TH_LOUISE2 description line 4\n");
+
+
+const u8 gTHYuki1PokedexText[] = _(
+    "SPECIES_TH_YUKI1 description line 1\n"
+    "SPECIES_TH_YUKI1 description line 2\n"
+    "SPECIES_TH_YUKI1 description line 3\n"
+    "SPECIES_TH_YUKI1 description line 4\n");
+
+
+const u8 gTHYuki2PokedexText[] = _(
+    "SPECIES_TH_YUKI2 description line 1\n"
+    "SPECIES_TH_YUKI2 description line 2\n"
+    "SPECIES_TH_YUKI2 description line 3\n"
+    "SPECIES_TH_YUKI2 description line 4\n");
+
+
+const u8 gTHMai1PokedexText[] = _(
+    "SPECIES_TH_MAI1 description line 1\n"
+    "SPECIES_TH_MAI1 description line 2\n"
+    "SPECIES_TH_MAI1 description line 3\n"
+    "SPECIES_TH_MAI1 description line 4\n");
+
+
+const u8 gTHMai2PokedexText[] = _(
+    "SPECIES_TH_MAI2 description line 1\n"
+    "SPECIES_TH_MAI2 description line 2\n"
+    "SPECIES_TH_MAI2 description line 3\n"
+    "SPECIES_TH_MAI2 description line 4\n");
+
+
+const u8 gTHYumeko1PokedexText[] = _(
+    "SPECIES_TH_YUMEKO1 description line 1\n"
+    "SPECIES_TH_YUMEKO1 description line 2\n"
+    "SPECIES_TH_YUMEKO1 description line 3\n"
+    "SPECIES_TH_YUMEKO1 description line 4\n");
+
+
+const u8 gTHYumeko2PokedexText[] = _(
+    "SPECIES_TH_YUMEKO2 description line 1\n"
+    "SPECIES_TH_YUMEKO2 description line 2\n"
+    "SPECIES_TH_YUMEKO2 description line 3\n"
+    "SPECIES_TH_YUMEKO2 description line 4\n");
+
+
+const u8 gTHShinki1PokedexText[] = _(
+    "SPECIES_TH_SHINKI1 description line 1\n"
+    "SPECIES_TH_SHINKI1 description line 2\n"
+    "SPECIES_TH_SHINKI1 description line 3\n"
+    "SPECIES_TH_SHINKI1 description line 4\n");
+
+
+const u8 gTHShinki2PokedexText[] = _(
+    "SPECIES_TH_SHINKI2 description line 1\n"
+    "SPECIES_TH_SHINKI2 description line 2\n"
+    "SPECIES_TH_SHINKI2 description line 3\n"
+    "SPECIES_TH_SHINKI2 description line 4\n");
+
+
+const u8 gTHRumia1PokedexText[] = _(
+    "SPECIES_TH_RUMIA1 description line 1\n"
+    "SPECIES_TH_RUMIA1 description line 2\n"
+    "SPECIES_TH_RUMIA1 description line 3\n"
+    "SPECIES_TH_RUMIA1 description line 4\n");
+
+
+const u8 gTHRumia2NPokedexText[] = _(
+    "SPECIES_TH_RUMIA2N description line 1\n"
+    "SPECIES_TH_RUMIA2N description line 2\n"
+    "SPECIES_TH_RUMIA2N description line 3\n"
+    "SPECIES_TH_RUMIA2N description line 4\n");
+
+
+const u8 gTHRumia2APokedexText[] = _(
+    "SPECIES_TH_RUMIA2A description line 1\n"
+    "SPECIES_TH_RUMIA2A description line 2\n"
+    "SPECIES_TH_RUMIA2A description line 3\n"
+    "SPECIES_TH_RUMIA2A description line 4\n");
+
+
+const u8 gTHRumia2SPokedexText[] = _(
+    "SPECIES_TH_RUMIA2S description line 1\n"
+    "SPECIES_TH_RUMIA2S description line 2\n"
+    "SPECIES_TH_RUMIA2S description line 3\n"
+    "SPECIES_TH_RUMIA2S description line 4\n");
+
+
+const u8 gTHDaiyousei1PokedexText[] = _(
+    "SPECIES_TH_DAIYOUSEI1 description line 1\n"
+    "SPECIES_TH_DAIYOUSEI1 description line 2\n"
+    "SPECIES_TH_DAIYOUSEI1 description line 3\n"
+    "SPECIES_TH_DAIYOUSEI1 description line 4\n");
+
+
+const u8 gTHDaiyousei2NPokedexText[] = _(
+    "SPECIES_TH_DAIYOUSEI2N description line 1\n"
+    "SPECIES_TH_DAIYOUSEI2N description line 2\n"
+    "SPECIES_TH_DAIYOUSEI2N description line 3\n"
+    "SPECIES_TH_DAIYOUSEI2N description line 4\n");
+
+
+const u8 gTHDaiyousei2APokedexText[] = _(
+    "SPECIES_TH_DAIYOUSEI2A description line 1\n"
+    "SPECIES_TH_DAIYOUSEI2A description line 2\n"
+    "SPECIES_TH_DAIYOUSEI2A description line 3\n"
+    "SPECIES_TH_DAIYOUSEI2A description line 4\n");
+
+
+const u8 gTHDaiyousei2DPokedexText[] = _(
+    "SPECIES_TH_DAIYOUSEI2D description line 1\n"
+    "SPECIES_TH_DAIYOUSEI2D description line 2\n"
+    "SPECIES_TH_DAIYOUSEI2D description line 3\n"
+    "SPECIES_TH_DAIYOUSEI2D description line 4\n");
+
+
+const u8 gTHCirno1PokedexText[] = _(
+    "SPECIES_TH_CIRNO1 description line 1\n"
+    "SPECIES_TH_CIRNO1 description line 2\n"
+    "SPECIES_TH_CIRNO1 description line 3\n"
+    "SPECIES_TH_CIRNO1 description line 4\n");
+
+
+const u8 gTHCirno2NPokedexText[] = _(
+    "SPECIES_TH_CIRNO2N description line 1\n"
+    "SPECIES_TH_CIRNO2N description line 2\n"
+    "SPECIES_TH_CIRNO2N description line 3\n"
+    "SPECIES_TH_CIRNO2N description line 4\n");
+
+
+const u8 gTHCirno2SPokedexText[] = _(
+    "SPECIES_TH_CIRNO2S description line 1\n"
+    "SPECIES_TH_CIRNO2S description line 2\n"
+    "SPECIES_TH_CIRNO2S description line 3\n"
+    "SPECIES_TH_CIRNO2S description line 4\n");
+
+
+const u8 gTHCirno2TPokedexText[] = _(
+    "SPECIES_TH_CIRNO2T description line 1\n"
+    "SPECIES_TH_CIRNO2T description line 2\n"
+    "SPECIES_TH_CIRNO2T description line 3\n"
+    "SPECIES_TH_CIRNO2T description line 4\n");
+
+
+const u8 gTHLunachild1PokedexText[] = _(
+    "SPECIES_TH_LUNACHILD1 description line 1\n"
+    "SPECIES_TH_LUNACHILD1 description line 2\n"
+    "SPECIES_TH_LUNACHILD1 description line 3\n"
+    "SPECIES_TH_LUNACHILD1 description line 4\n");
+
+
+const u8 gTHLunachild2NPokedexText[] = _(
+    "SPECIES_TH_LUNACHILD2N description line 1\n"
+    "SPECIES_TH_LUNACHILD2N description line 2\n"
+    "SPECIES_TH_LUNACHILD2N description line 3\n"
+    "SPECIES_TH_LUNACHILD2N description line 4\n");
+
+
+const u8 gTHLunachild2APokedexText[] = _(
+    "SPECIES_TH_LUNACHILD2A description line 1\n"
+    "SPECIES_TH_LUNACHILD2A description line 2\n"
+    "SPECIES_TH_LUNACHILD2A description line 3\n"
+    "SPECIES_TH_LUNACHILD2A description line 4\n");
+
+
+const u8 gTHLunachild2TPokedexText[] = _(
+    "SPECIES_TH_LUNACHILD2T description line 1\n"
+    "SPECIES_TH_LUNACHILD2T description line 2\n"
+    "SPECIES_TH_LUNACHILD2T description line 3\n"
+    "SPECIES_TH_LUNACHILD2T description line 4\n");
+
+
+const u8 gTHStarsapphire1PokedexText[] = _(
+    "SPECIES_TH_STARSAPPHIRE1 description line 1\n"
+    "SPECIES_TH_STARSAPPHIRE1 description line 2\n"
+    "SPECIES_TH_STARSAPPHIRE1 description line 3\n"
+    "SPECIES_TH_STARSAPPHIRE1 description line 4\n");
+
+
+const u8 gTHStarsapphire2NPokedexText[] = _(
+    "SPECIES_TH_STARSAPPHIRE2N description line 1\n"
+    "SPECIES_TH_STARSAPPHIRE2N description line 2\n"
+    "SPECIES_TH_STARSAPPHIRE2N description line 3\n"
+    "SPECIES_TH_STARSAPPHIRE2N description line 4\n");
+
+
+const u8 gTHStarsapphire2APokedexText[] = _(
+    "SPECIES_TH_STARSAPPHIRE2A description line 1\n"
+    "SPECIES_TH_STARSAPPHIRE2A description line 2\n"
+    "SPECIES_TH_STARSAPPHIRE2A description line 3\n"
+    "SPECIES_TH_STARSAPPHIRE2A description line 4\n");
+
+
+const u8 gTHStarsapphire2HPokedexText[] = _(
+    "SPECIES_TH_STARSAPPHIRE2H description line 1\n"
+    "SPECIES_TH_STARSAPPHIRE2H description line 2\n"
+    "SPECIES_TH_STARSAPPHIRE2H description line 3\n"
+    "SPECIES_TH_STARSAPPHIRE2H description line 4\n");
+
+
+const u8 gTHSunnymilk1PokedexText[] = _(
+    "SPECIES_TH_SUNNYMILK1 description line 1\n"
+    "SPECIES_TH_SUNNYMILK1 description line 2\n"
+    "SPECIES_TH_SUNNYMILK1 description line 3\n"
+    "SPECIES_TH_SUNNYMILK1 description line 4\n");
+
+
+const u8 gTHSunnymilk2NPokedexText[] = _(
+    "SPECIES_TH_SUNNYMILK2N description line 1\n"
+    "SPECIES_TH_SUNNYMILK2N description line 2\n"
+    "SPECIES_TH_SUNNYMILK2N description line 3\n"
+    "SPECIES_TH_SUNNYMILK2N description line 4\n");
+
+
+const u8 gTHSunnymilk2APokedexText[] = _(
+    "SPECIES_TH_SUNNYMILK2A description line 1\n"
+    "SPECIES_TH_SUNNYMILK2A description line 2\n"
+    "SPECIES_TH_SUNNYMILK2A description line 3\n"
+    "SPECIES_TH_SUNNYMILK2A description line 4\n");
+
+
+const u8 gTHSunnymilk2DPokedexText[] = _(
+    "SPECIES_TH_SUNNYMILK2D description line 1\n"
+    "SPECIES_TH_SUNNYMILK2D description line 2\n"
+    "SPECIES_TH_SUNNYMILK2D description line 3\n"
+    "SPECIES_TH_SUNNYMILK2D description line 4\n");
+
+
+const u8 gTHMeiling1PokedexText[] = _(
+    "SPECIES_TH_MEILING1 description line 1\n"
+    "SPECIES_TH_MEILING1 description line 2\n"
+    "SPECIES_TH_MEILING1 description line 3\n"
+    "SPECIES_TH_MEILING1 description line 4\n");
+
+
+const u8 gTHMeiling2NPokedexText[] = _(
+    "SPECIES_TH_MEILING2N description line 1\n"
+    "SPECIES_TH_MEILING2N description line 2\n"
+    "SPECIES_TH_MEILING2N description line 3\n"
+    "SPECIES_TH_MEILING2N description line 4\n");
+
+
+const u8 gTHMeiling2DPokedexText[] = _(
+    "SPECIES_TH_MEILING2D description line 1\n"
+    "SPECIES_TH_MEILING2D description line 2\n"
+    "SPECIES_TH_MEILING2D description line 3\n"
+    "SPECIES_TH_MEILING2D description line 4\n");
+
+
+const u8 gTHMeiling2SPokedexText[] = _(
+    "SPECIES_TH_MEILING2S description line 1\n"
+    "SPECIES_TH_MEILING2S description line 2\n"
+    "SPECIES_TH_MEILING2S description line 3\n"
+    "SPECIES_TH_MEILING2S description line 4\n");
+
+
+const u8 gTHKoakuma1PokedexText[] = _(
+    "SPECIES_TH_KOAKUMA1 description line 1\n"
+    "SPECIES_TH_KOAKUMA1 description line 2\n"
+    "SPECIES_TH_KOAKUMA1 description line 3\n"
+    "SPECIES_TH_KOAKUMA1 description line 4\n");
+
+
+const u8 gTHKoakuma2NPokedexText[] = _(
+    "SPECIES_TH_KOAKUMA2N description line 1\n"
+    "SPECIES_TH_KOAKUMA2N description line 2\n"
+    "SPECIES_TH_KOAKUMA2N description line 3\n"
+    "SPECIES_TH_KOAKUMA2N description line 4\n");
+
+
+const u8 gTHKoakuma2HPokedexText[] = _(
+    "SPECIES_TH_KOAKUMA2H description line 1\n"
+    "SPECIES_TH_KOAKUMA2H description line 2\n"
+    "SPECIES_TH_KOAKUMA2H description line 3\n"
+    "SPECIES_TH_KOAKUMA2H description line 4\n");
+
+
+const u8 gTHPatchouli1PokedexText[] = _(
+    "SPECIES_TH_PATCHOULI1 description line 1\n"
+    "SPECIES_TH_PATCHOULI1 description line 2\n"
+    "SPECIES_TH_PATCHOULI1 description line 3\n"
+    "SPECIES_TH_PATCHOULI1 description line 4\n");
+
+
+const u8 gTHPatchouli2NPokedexText[] = _(
+    "SPECIES_TH_PATCHOULI2N description line 1\n"
+    "SPECIES_TH_PATCHOULI2N description line 2\n"
+    "SPECIES_TH_PATCHOULI2N description line 3\n"
+    "SPECIES_TH_PATCHOULI2N description line 4\n");
+
+
+const u8 gTHPatchouli2APokedexText[] = _(
+    "SPECIES_TH_PATCHOULI2A description line 1\n"
+    "SPECIES_TH_PATCHOULI2A description line 2\n"
+    "SPECIES_TH_PATCHOULI2A description line 3\n"
+    "SPECIES_TH_PATCHOULI2A description line 4\n");
+
+
+const u8 gTHPatchouli2DPokedexText[] = _(
+    "SPECIES_TH_PATCHOULI2D description line 1\n"
+    "SPECIES_TH_PATCHOULI2D description line 2\n"
+    "SPECIES_TH_PATCHOULI2D description line 3\n"
+    "SPECIES_TH_PATCHOULI2D description line 4\n");
+
+
+const u8 gTHSakuya1PokedexText[] = _(
+    "SPECIES_TH_SAKUYA1 description line 1\n"
+    "SPECIES_TH_SAKUYA1 description line 2\n"
+    "SPECIES_TH_SAKUYA1 description line 3\n"
+    "SPECIES_TH_SAKUYA1 description line 4\n");
+
+
+const u8 gTHSakuya2NPokedexText[] = _(
+    "SPECIES_TH_SAKUYA2N description line 1\n"
+    "SPECIES_TH_SAKUYA2N description line 2\n"
+    "SPECIES_TH_SAKUYA2N description line 3\n"
+    "SPECIES_TH_SAKUYA2N description line 4\n");
+
+
+const u8 gTHSakuya2TPokedexText[] = _(
+    "SPECIES_TH_SAKUYA2T description line 1\n"
+    "SPECIES_TH_SAKUYA2T description line 2\n"
+    "SPECIES_TH_SAKUYA2T description line 3\n"
+    "SPECIES_TH_SAKUYA2T description line 4\n");
+
+
+const u8 gTHSakuya2HPokedexText[] = _(
+    "SPECIES_TH_SAKUYA2H description line 1\n"
+    "SPECIES_TH_SAKUYA2H description line 2\n"
+    "SPECIES_TH_SAKUYA2H description line 3\n"
+    "SPECIES_TH_SAKUYA2H description line 4\n");
+
+
+const u8 gTHRemilia1PokedexText[] = _(
+    "SPECIES_TH_REMILIA1 description line 1\n"
+    "SPECIES_TH_REMILIA1 description line 2\n"
+    "SPECIES_TH_REMILIA1 description line 3\n"
+    "SPECIES_TH_REMILIA1 description line 4\n");
+
+
+const u8 gTHRemilia2NPokedexText[] = _(
+    "SPECIES_TH_REMILIA2N description line 1\n"
+    "SPECIES_TH_REMILIA2N description line 2\n"
+    "SPECIES_TH_REMILIA2N description line 3\n"
+    "SPECIES_TH_REMILIA2N description line 4\n");
+
+
+const u8 gTHRemilia2APokedexText[] = _(
+    "SPECIES_TH_REMILIA2A description line 1\n"
+    "SPECIES_TH_REMILIA2A description line 2\n"
+    "SPECIES_TH_REMILIA2A description line 3\n"
+    "SPECIES_TH_REMILIA2A description line 4\n");
+
+
+const u8 gTHRemilia2DPokedexText[] = _(
+    "SPECIES_TH_REMILIA2D description line 1\n"
+    "SPECIES_TH_REMILIA2D description line 2\n"
+    "SPECIES_TH_REMILIA2D description line 3\n"
+    "SPECIES_TH_REMILIA2D description line 4\n");
+
+
+const u8 gTHFlandre1PokedexText[] = _(
+    "SPECIES_TH_FLANDRE1 description line 1\n"
+    "SPECIES_TH_FLANDRE1 description line 2\n"
+    "SPECIES_TH_FLANDRE1 description line 3\n"
+    "SPECIES_TH_FLANDRE1 description line 4\n");
+
+
+const u8 gTHFlandre2NPokedexText[] = _(
+    "SPECIES_TH_FLANDRE2N description line 1\n"
+    "SPECIES_TH_FLANDRE2N description line 2\n"
+    "SPECIES_TH_FLANDRE2N description line 3\n"
+    "SPECIES_TH_FLANDRE2N description line 4\n");
+
+
+const u8 gTHFlandre2APokedexText[] = _(
+    "SPECIES_TH_FLANDRE2A description line 1\n"
+    "SPECIES_TH_FLANDRE2A description line 2\n"
+    "SPECIES_TH_FLANDRE2A description line 3\n"
+    "SPECIES_TH_FLANDRE2A description line 4\n");
+
+
+const u8 gTHFlandre2SPokedexText[] = _(
+    "SPECIES_TH_FLANDRE2S description line 1\n"
+    "SPECIES_TH_FLANDRE2S description line 2\n"
+    "SPECIES_TH_FLANDRE2S description line 3\n"
+    "SPECIES_TH_FLANDRE2S description line 4\n");
+
+
+const u8 gTHSatsukiPokedexText[] = _(
+    "SPECIES_TH_SATSUKI description line 1\n"
+    "SPECIES_TH_SATSUKI description line 2\n"
+    "SPECIES_TH_SATSUKI description line 3\n"
+    "SPECIES_TH_SATSUKI description line 4\n");
+
+
+const u8 gTHLetty1PokedexText[] = _(
+    "SPECIES_TH_LETTY1 description line 1\n"
+    "SPECIES_TH_LETTY1 description line 2\n"
+    "SPECIES_TH_LETTY1 description line 3\n"
+    "SPECIES_TH_LETTY1 description line 4\n");
+
+
+const u8 gTHLetty2NPokedexText[] = _(
+    "SPECIES_TH_LETTY2N description line 1\n"
+    "SPECIES_TH_LETTY2N description line 2\n"
+    "SPECIES_TH_LETTY2N description line 3\n"
+    "SPECIES_TH_LETTY2N description line 4\n");
+
+
+const u8 gTHLetty2DPokedexText[] = _(
+    "SPECIES_TH_LETTY2D description line 1\n"
+    "SPECIES_TH_LETTY2D description line 2\n"
+    "SPECIES_TH_LETTY2D description line 3\n"
+    "SPECIES_TH_LETTY2D description line 4\n");
+
+
+const u8 gTHLetty2HPokedexText[] = _(
+    "SPECIES_TH_LETTY2H description line 1\n"
+    "SPECIES_TH_LETTY2H description line 2\n"
+    "SPECIES_TH_LETTY2H description line 3\n"
+    "SPECIES_TH_LETTY2H description line 4\n");
+
+
+const u8 gTHChen1PokedexText[] = _(
+    "SPECIES_TH_CHEN1 description line 1\n"
+    "SPECIES_TH_CHEN1 description line 2\n"
+    "SPECIES_TH_CHEN1 description line 3\n"
+    "SPECIES_TH_CHEN1 description line 4\n");
+
+
+const u8 gTHChen2NPokedexText[] = _(
+    "SPECIES_TH_CHEN2N description line 1\n"
+    "SPECIES_TH_CHEN2N description line 2\n"
+    "SPECIES_TH_CHEN2N description line 3\n"
+    "SPECIES_TH_CHEN2N description line 4\n");
+
+
+const u8 gTHChen2APokedexText[] = _(
+    "SPECIES_TH_CHEN2A description line 1\n"
+    "SPECIES_TH_CHEN2A description line 2\n"
+    "SPECIES_TH_CHEN2A description line 3\n"
+    "SPECIES_TH_CHEN2A description line 4\n");
+
+
+const u8 gTHChen2TPokedexText[] = _(
+    "SPECIES_TH_CHEN2T description line 1\n"
+    "SPECIES_TH_CHEN2T description line 2\n"
+    "SPECIES_TH_CHEN2T description line 3\n"
+    "SPECIES_TH_CHEN2T description line 4\n");
+
+
+const u8 gTHAlice1PokedexText[] = _(
+    "SPECIES_TH_ALICE1 description line 1\n"
+    "SPECIES_TH_ALICE1 description line 2\n"
+    "SPECIES_TH_ALICE1 description line 3\n"
+    "SPECIES_TH_ALICE1 description line 4\n");
+
+
+const u8 gTHAlice2NPokedexText[] = _(
+    "SPECIES_TH_ALICE2N description line 1\n"
+    "SPECIES_TH_ALICE2N description line 2\n"
+    "SPECIES_TH_ALICE2N description line 3\n"
+    "SPECIES_TH_ALICE2N description line 4\n");
+
+
+const u8 gTHAlice2APokedexText[] = _(
+    "SPECIES_TH_ALICE2A description line 1\n"
+    "SPECIES_TH_ALICE2A description line 2\n"
+    "SPECIES_TH_ALICE2A description line 3\n"
+    "SPECIES_TH_ALICE2A description line 4\n");
+
+
+const u8 gTHAlice2TPokedexText[] = _(
+    "SPECIES_TH_ALICE2T description line 1\n"
+    "SPECIES_TH_ALICE2T description line 2\n"
+    "SPECIES_TH_ALICE2T description line 3\n"
+    "SPECIES_TH_ALICE2T description line 4\n");
+
+
+const u8 gTHLilyblack1PokedexText[] = _(
+    "SPECIES_TH_LILYBLACK1 description line 1\n"
+    "SPECIES_TH_LILYBLACK1 description line 2\n"
+    "SPECIES_TH_LILYBLACK1 description line 3\n"
+    "SPECIES_TH_LILYBLACK1 description line 4\n");
+
+
+const u8 gTHLilywhite1PokedexText[] = _(
+    "SPECIES_TH_LILYWHITE1 description line 1\n"
+    "SPECIES_TH_LILYWHITE1 description line 2\n"
+    "SPECIES_TH_LILYWHITE1 description line 3\n"
+    "SPECIES_TH_LILYWHITE1 description line 4\n");
+
+
+const u8 gTHLilyblack2NPokedexText[] = _(
+    "SPECIES_TH_LILYBLACK2N description line 1\n"
+    "SPECIES_TH_LILYBLACK2N description line 2\n"
+    "SPECIES_TH_LILYBLACK2N description line 3\n"
+    "SPECIES_TH_LILYBLACK2N description line 4\n");
+
+
+const u8 gTHLilywhite2NPokedexText[] = _(
+    "SPECIES_TH_LILYWHITE2N description line 1\n"
+    "SPECIES_TH_LILYWHITE2N description line 2\n"
+    "SPECIES_TH_LILYWHITE2N description line 3\n"
+    "SPECIES_TH_LILYWHITE2N description line 4\n");
+
+
+const u8 gTHLilyblack2APokedexText[] = _(
+    "SPECIES_TH_LILYBLACK2A description line 1\n"
+    "SPECIES_TH_LILYBLACK2A description line 2\n"
+    "SPECIES_TH_LILYBLACK2A description line 3\n"
+    "SPECIES_TH_LILYBLACK2A description line 4\n");
+
+
+const u8 gTHLilywhite2APokedexText[] = _(
+    "SPECIES_TH_LILYWHITE2A description line 1\n"
+    "SPECIES_TH_LILYWHITE2A description line 2\n"
+    "SPECIES_TH_LILYWHITE2A description line 3\n"
+    "SPECIES_TH_LILYWHITE2A description line 4\n");
+
+
+const u8 gTHLilyblack2SPokedexText[] = _(
+    "SPECIES_TH_LILYBLACK2S description line 1\n"
+    "SPECIES_TH_LILYBLACK2S description line 2\n"
+    "SPECIES_TH_LILYBLACK2S description line 3\n"
+    "SPECIES_TH_LILYBLACK2S description line 4\n");
+
+
+const u8 gTHLilywhite2HPokedexText[] = _(
+    "SPECIES_TH_LILYWHITE2H description line 1\n"
+    "SPECIES_TH_LILYWHITE2H description line 2\n"
+    "SPECIES_TH_LILYWHITE2H description line 3\n"
+    "SPECIES_TH_LILYWHITE2H description line 4\n");
+
+
+const u8 gTHLunasa1PokedexText[] = _(
+    "SPECIES_TH_LUNASA1 description line 1\n"
+    "SPECIES_TH_LUNASA1 description line 2\n"
+    "SPECIES_TH_LUNASA1 description line 3\n"
+    "SPECIES_TH_LUNASA1 description line 4\n");
+
+
+const u8 gTHLunasa2NPokedexText[] = _(
+    "SPECIES_TH_LUNASA2N description line 1\n"
+    "SPECIES_TH_LUNASA2N description line 2\n"
+    "SPECIES_TH_LUNASA2N description line 3\n"
+    "SPECIES_TH_LUNASA2N description line 4\n");
+
+
+const u8 gTHLunasa2HPokedexText[] = _(
+    "SPECIES_TH_LUNASA2H description line 1\n"
+    "SPECIES_TH_LUNASA2H description line 2\n"
+    "SPECIES_TH_LUNASA2H description line 3\n"
+    "SPECIES_TH_LUNASA2H description line 4\n");
+
+
+const u8 gTHMerlin1PokedexText[] = _(
+    "SPECIES_TH_MERLIN1 description line 1\n"
+    "SPECIES_TH_MERLIN1 description line 2\n"
+    "SPECIES_TH_MERLIN1 description line 3\n"
+    "SPECIES_TH_MERLIN1 description line 4\n");
+
+
+const u8 gTHMerlin2NPokedexText[] = _(
+    "SPECIES_TH_MERLIN2N description line 1\n"
+    "SPECIES_TH_MERLIN2N description line 2\n"
+    "SPECIES_TH_MERLIN2N description line 3\n"
+    "SPECIES_TH_MERLIN2N description line 4\n");
+
+
+const u8 gTHMerlin2HPokedexText[] = _(
+    "SPECIES_TH_MERLIN2H description line 1\n"
+    "SPECIES_TH_MERLIN2H description line 2\n"
+    "SPECIES_TH_MERLIN2H description line 3\n"
+    "SPECIES_TH_MERLIN2H description line 4\n");
+
+
+const u8 gTHLyrica1PokedexText[] = _(
+    "SPECIES_TH_LYRICA1 description line 1\n"
+    "SPECIES_TH_LYRICA1 description line 2\n"
+    "SPECIES_TH_LYRICA1 description line 3\n"
+    "SPECIES_TH_LYRICA1 description line 4\n");
+
+
+const u8 gTHLyrica2NPokedexText[] = _(
+    "SPECIES_TH_LYRICA2N description line 1\n"
+    "SPECIES_TH_LYRICA2N description line 2\n"
+    "SPECIES_TH_LYRICA2N description line 3\n"
+    "SPECIES_TH_LYRICA2N description line 4\n");
+
+
+const u8 gTHLyrica2HPokedexText[] = _(
+    "SPECIES_TH_LYRICA2H description line 1\n"
+    "SPECIES_TH_LYRICA2H description line 2\n"
+    "SPECIES_TH_LYRICA2H description line 3\n"
+    "SPECIES_TH_LYRICA2H description line 4\n");
+
+
+const u8 gTHYoumu1PokedexText[] = _(
+    "SPECIES_TH_YOUMU1 description line 1\n"
+    "SPECIES_TH_YOUMU1 description line 2\n"
+    "SPECIES_TH_YOUMU1 description line 3\n"
+    "SPECIES_TH_YOUMU1 description line 4\n");
+
+
+const u8 gTHYoumu2NPokedexText[] = _(
+    "SPECIES_TH_YOUMU2N description line 1\n"
+    "SPECIES_TH_YOUMU2N description line 2\n"
+    "SPECIES_TH_YOUMU2N description line 3\n"
+    "SPECIES_TH_YOUMU2N description line 4\n");
+
+
+const u8 gTHYoumu2DPokedexText[] = _(
+    "SPECIES_TH_YOUMU2D description line 1\n"
+    "SPECIES_TH_YOUMU2D description line 2\n"
+    "SPECIES_TH_YOUMU2D description line 3\n"
+    "SPECIES_TH_YOUMU2D description line 4\n");
+
+
+const u8 gTHYoumu2SPokedexText[] = _(
+    "SPECIES_TH_YOUMU2S description line 1\n"
+    "SPECIES_TH_YOUMU2S description line 2\n"
+    "SPECIES_TH_YOUMU2S description line 3\n"
+    "SPECIES_TH_YOUMU2S description line 4\n");
+
+
+const u8 gTHYuyuko1PokedexText[] = _(
+    "SPECIES_TH_YUYUKO1 description line 1\n"
+    "SPECIES_TH_YUYUKO1 description line 2\n"
+    "SPECIES_TH_YUYUKO1 description line 3\n"
+    "SPECIES_TH_YUYUKO1 description line 4\n");
+
+
+const u8 gTHYuyuko2NPokedexText[] = _(
+    "SPECIES_TH_YUYUKO2N description line 1\n"
+    "SPECIES_TH_YUYUKO2N description line 2\n"
+    "SPECIES_TH_YUYUKO2N description line 3\n"
+    "SPECIES_TH_YUYUKO2N description line 4\n");
+
+
+const u8 gTHYuyuko2APokedexText[] = _(
+    "SPECIES_TH_YUYUKO2A description line 1\n"
+    "SPECIES_TH_YUYUKO2A description line 2\n"
+    "SPECIES_TH_YUYUKO2A description line 3\n"
+    "SPECIES_TH_YUYUKO2A description line 4\n");
+
+
+const u8 gTHYuyuko2DPokedexText[] = _(
+    "SPECIES_TH_YUYUKO2D description line 1\n"
+    "SPECIES_TH_YUYUKO2D description line 2\n"
+    "SPECIES_TH_YUYUKO2D description line 3\n"
+    "SPECIES_TH_YUYUKO2D description line 4\n");
+
+
+const u8 gTHRan1PokedexText[] = _(
+    "SPECIES_TH_RAN1 description line 1\n"
+    "SPECIES_TH_RAN1 description line 2\n"
+    "SPECIES_TH_RAN1 description line 3\n"
+    "SPECIES_TH_RAN1 description line 4\n");
+
+
+const u8 gTHRan2NPokedexText[] = _(
+    "SPECIES_TH_RAN2N description line 1\n"
+    "SPECIES_TH_RAN2N description line 2\n"
+    "SPECIES_TH_RAN2N description line 3\n"
+    "SPECIES_TH_RAN2N description line 4\n");
+
+
+const u8 gTHRan2APokedexText[] = _(
+    "SPECIES_TH_RAN2A description line 1\n"
+    "SPECIES_TH_RAN2A description line 2\n"
+    "SPECIES_TH_RAN2A description line 3\n"
+    "SPECIES_TH_RAN2A description line 4\n");
+
+
+const u8 gTHRan2HPokedexText[] = _(
+    "SPECIES_TH_RAN2H description line 1\n"
+    "SPECIES_TH_RAN2H description line 2\n"
+    "SPECIES_TH_RAN2H description line 3\n"
+    "SPECIES_TH_RAN2H description line 4\n");
+
+
+const u8 gTHYukari1PokedexText[] = _(
+    "SPECIES_TH_YUKARI1 description line 1\n"
+    "SPECIES_TH_YUKARI1 description line 2\n"
+    "SPECIES_TH_YUKARI1 description line 3\n"
+    "SPECIES_TH_YUKARI1 description line 4\n");
+
+
+const u8 gTHYukari2NPokedexText[] = _(
+    "SPECIES_TH_YUKARI2N description line 1\n"
+    "SPECIES_TH_YUKARI2N description line 2\n"
+    "SPECIES_TH_YUKARI2N description line 3\n"
+    "SPECIES_TH_YUKARI2N description line 4\n");
+
+
+const u8 gTHYukari2DPokedexText[] = _(
+    "SPECIES_TH_YUKARI2D description line 1\n"
+    "SPECIES_TH_YUKARI2D description line 2\n"
+    "SPECIES_TH_YUKARI2D description line 3\n"
+    "SPECIES_TH_YUKARI2D description line 4\n");
+
+
+const u8 gTHYukari2TPokedexText[] = _(
+    "SPECIES_TH_YUKARI2T description line 1\n"
+    "SPECIES_TH_YUKARI2T description line 2\n"
+    "SPECIES_TH_YUKARI2T description line 3\n"
+    "SPECIES_TH_YUKARI2T description line 4\n");
+
+
+const u8 gTHSuika1PokedexText[] = _(
+    "SPECIES_TH_SUIKA1 description line 1\n"
+    "SPECIES_TH_SUIKA1 description line 2\n"
+    "SPECIES_TH_SUIKA1 description line 3\n"
+    "SPECIES_TH_SUIKA1 description line 4\n");
+
+
+const u8 gTHSuika2NPokedexText[] = _(
+    "SPECIES_TH_SUIKA2N description line 1\n"
+    "SPECIES_TH_SUIKA2N description line 2\n"
+    "SPECIES_TH_SUIKA2N description line 3\n"
+    "SPECIES_TH_SUIKA2N description line 4\n");
+
+
+const u8 gTHSuika2APokedexText[] = _(
+    "SPECIES_TH_SUIKA2A description line 1\n"
+    "SPECIES_TH_SUIKA2A description line 2\n"
+    "SPECIES_TH_SUIKA2A description line 3\n"
+    "SPECIES_TH_SUIKA2A description line 4\n");
+
+
+const u8 gTHSuika2TPokedexText[] = _(
+    "SPECIES_TH_SUIKA2T description line 1\n"
+    "SPECIES_TH_SUIKA2T description line 2\n"
+    "SPECIES_TH_SUIKA2T description line 3\n"
+    "SPECIES_TH_SUIKA2T description line 4\n");
+
+
+const u8 gTHWriggle1PokedexText[] = _(
+    "SPECIES_TH_WRIGGLE1 description line 1\n"
+    "SPECIES_TH_WRIGGLE1 description line 2\n"
+    "SPECIES_TH_WRIGGLE1 description line 3\n"
+    "SPECIES_TH_WRIGGLE1 description line 4\n");
+
+
+const u8 gTHWriggle2NPokedexText[] = _(
+    "SPECIES_TH_WRIGGLE2N description line 1\n"
+    "SPECIES_TH_WRIGGLE2N description line 2\n"
+    "SPECIES_TH_WRIGGLE2N description line 3\n"
+    "SPECIES_TH_WRIGGLE2N description line 4\n");
+
+
+const u8 gTHWriggle2DPokedexText[] = _(
+    "SPECIES_TH_WRIGGLE2D description line 1\n"
+    "SPECIES_TH_WRIGGLE2D description line 2\n"
+    "SPECIES_TH_WRIGGLE2D description line 3\n"
+    "SPECIES_TH_WRIGGLE2D description line 4\n");
+
+
+const u8 gTHWriggle2SPokedexText[] = _(
+    "SPECIES_TH_WRIGGLE2S description line 1\n"
+    "SPECIES_TH_WRIGGLE2S description line 2\n"
+    "SPECIES_TH_WRIGGLE2S description line 3\n"
+    "SPECIES_TH_WRIGGLE2S description line 4\n");
+
+
+const u8 gTHMystia1PokedexText[] = _(
+    "SPECIES_TH_MYSTIA1 description line 1\n"
+    "SPECIES_TH_MYSTIA1 description line 2\n"
+    "SPECIES_TH_MYSTIA1 description line 3\n"
+    "SPECIES_TH_MYSTIA1 description line 4\n");
+
+
+const u8 gTHMystia2NPokedexText[] = _(
+    "SPECIES_TH_MYSTIA2N description line 1\n"
+    "SPECIES_TH_MYSTIA2N description line 2\n"
+    "SPECIES_TH_MYSTIA2N description line 3\n"
+    "SPECIES_TH_MYSTIA2N description line 4\n");
+
+
+const u8 gTHMystia2APokedexText[] = _(
+    "SPECIES_TH_MYSTIA2A description line 1\n"
+    "SPECIES_TH_MYSTIA2A description line 2\n"
+    "SPECIES_TH_MYSTIA2A description line 3\n"
+    "SPECIES_TH_MYSTIA2A description line 4\n");
+
+
+const u8 gTHMystia2HPokedexText[] = _(
+    "SPECIES_TH_MYSTIA2H description line 1\n"
+    "SPECIES_TH_MYSTIA2H description line 2\n"
+    "SPECIES_TH_MYSTIA2H description line 3\n"
+    "SPECIES_TH_MYSTIA2H description line 4\n");
+
+
+const u8 gTHKeine1PokedexText[] = _(
+    "SPECIES_TH_KEINE1 description line 1\n"
+    "SPECIES_TH_KEINE1 description line 2\n"
+    "SPECIES_TH_KEINE1 description line 3\n"
+    "SPECIES_TH_KEINE1 description line 4\n");
+
+
+const u8 gTHKeine2NPokedexText[] = _(
+    "SPECIES_TH_KEINE2N description line 1\n"
+    "SPECIES_TH_KEINE2N description line 2\n"
+    "SPECIES_TH_KEINE2N description line 3\n"
+    "SPECIES_TH_KEINE2N description line 4\n");
+
+
+const u8 gTHKeine2APokedexText[] = _(
+    "SPECIES_TH_KEINE2A description line 1\n"
+    "SPECIES_TH_KEINE2A description line 2\n"
+    "SPECIES_TH_KEINE2A description line 3\n"
+    "SPECIES_TH_KEINE2A description line 4\n");
+
+
+const u8 gTHKeine2DPokedexText[] = _(
+    "SPECIES_TH_KEINE2D description line 1\n"
+    "SPECIES_TH_KEINE2D description line 2\n"
+    "SPECIES_TH_KEINE2D description line 3\n"
+    "SPECIES_TH_KEINE2D description line 4\n");
+
+
+const u8 gTHKeine2HPokedexText[] = _(
+    "SPECIES_TH_KEINE2H description line 1\n"
+    "SPECIES_TH_KEINE2H description line 2\n"
+    "SPECIES_TH_KEINE2H description line 3\n"
+    "SPECIES_TH_KEINE2H description line 4\n");
+
+
+const u8 gTHTewi1PokedexText[] = _(
+    "SPECIES_TH_TEWI1 description line 1\n"
+    "SPECIES_TH_TEWI1 description line 2\n"
+    "SPECIES_TH_TEWI1 description line 3\n"
+    "SPECIES_TH_TEWI1 description line 4\n");
+
+
+const u8 gTHTewi2NPokedexText[] = _(
+    "SPECIES_TH_TEWI2N description line 1\n"
+    "SPECIES_TH_TEWI2N description line 2\n"
+    "SPECIES_TH_TEWI2N description line 3\n"
+    "SPECIES_TH_TEWI2N description line 4\n");
+
+
+const u8 gTHTewi2APokedexText[] = _(
+    "SPECIES_TH_TEWI2A description line 1\n"
+    "SPECIES_TH_TEWI2A description line 2\n"
+    "SPECIES_TH_TEWI2A description line 3\n"
+    "SPECIES_TH_TEWI2A description line 4\n");
+
+
+const u8 gTHTewi2DPokedexText[] = _(
+    "SPECIES_TH_TEWI2D description line 1\n"
+    "SPECIES_TH_TEWI2D description line 2\n"
+    "SPECIES_TH_TEWI2D description line 3\n"
+    "SPECIES_TH_TEWI2D description line 4\n");
+
+
+const u8 gTHReisen1PokedexText[] = _(
+    "SPECIES_TH_REISEN1 description line 1\n"
+    "SPECIES_TH_REISEN1 description line 2\n"
+    "SPECIES_TH_REISEN1 description line 3\n"
+    "SPECIES_TH_REISEN1 description line 4\n");
+
+
+const u8 gTHReisen2NPokedexText[] = _(
+    "SPECIES_TH_REISEN2N description line 1\n"
+    "SPECIES_TH_REISEN2N description line 2\n"
+    "SPECIES_TH_REISEN2N description line 3\n"
+    "SPECIES_TH_REISEN2N description line 4\n");
+
+
+const u8 gTHReisen2DPokedexText[] = _(
+    "SPECIES_TH_REISEN2D description line 1\n"
+    "SPECIES_TH_REISEN2D description line 2\n"
+    "SPECIES_TH_REISEN2D description line 3\n"
+    "SPECIES_TH_REISEN2D description line 4\n");
+
+
+const u8 gTHReisen2TPokedexText[] = _(
+    "SPECIES_TH_REISEN2T description line 1\n"
+    "SPECIES_TH_REISEN2T description line 2\n"
+    "SPECIES_TH_REISEN2T description line 3\n"
+    "SPECIES_TH_REISEN2T description line 4\n");
+
+
+const u8 gTHGyokutoPokedexText[] = _(
+    "SPECIES_TH_GYOKUTO description line 1\n"
+    "SPECIES_TH_GYOKUTO description line 2\n"
+    "SPECIES_TH_GYOKUTO description line 3\n"
+    "SPECIES_TH_GYOKUTO description line 4\n");
+
+
+const u8 gTHEirin1PokedexText[] = _(
+    "SPECIES_TH_EIRIN1 description line 1\n"
+    "SPECIES_TH_EIRIN1 description line 2\n"
+    "SPECIES_TH_EIRIN1 description line 3\n"
+    "SPECIES_TH_EIRIN1 description line 4\n");
+
+
+const u8 gTHEirin2NPokedexText[] = _(
+    "SPECIES_TH_EIRIN2N description line 1\n"
+    "SPECIES_TH_EIRIN2N description line 2\n"
+    "SPECIES_TH_EIRIN2N description line 3\n"
+    "SPECIES_TH_EIRIN2N description line 4\n");
+
+
+const u8 gTHEirin2APokedexText[] = _(
+    "SPECIES_TH_EIRIN2A description line 1\n"
+    "SPECIES_TH_EIRIN2A description line 2\n"
+    "SPECIES_TH_EIRIN2A description line 3\n"
+    "SPECIES_TH_EIRIN2A description line 4\n");
+
+
+const u8 gTHEirin2HPokedexText[] = _(
+    "SPECIES_TH_EIRIN2H description line 1\n"
+    "SPECIES_TH_EIRIN2H description line 2\n"
+    "SPECIES_TH_EIRIN2H description line 3\n"
+    "SPECIES_TH_EIRIN2H description line 4\n");
+
+
+const u8 gTHKaguya1PokedexText[] = _(
+    "SPECIES_TH_KAGUYA1 description line 1\n"
+    "SPECIES_TH_KAGUYA1 description line 2\n"
+    "SPECIES_TH_KAGUYA1 description line 3\n"
+    "SPECIES_TH_KAGUYA1 description line 4\n");
+
+
+const u8 gTHKaguya2NPokedexText[] = _(
+    "SPECIES_TH_KAGUYA2N description line 1\n"
+    "SPECIES_TH_KAGUYA2N description line 2\n"
+    "SPECIES_TH_KAGUYA2N description line 3\n"
+    "SPECIES_TH_KAGUYA2N description line 4\n");
+
+
+const u8 gTHKaguya2APokedexText[] = _(
+    "SPECIES_TH_KAGUYA2A description line 1\n"
+    "SPECIES_TH_KAGUYA2A description line 2\n"
+    "SPECIES_TH_KAGUYA2A description line 3\n"
+    "SPECIES_TH_KAGUYA2A description line 4\n");
+
+
+const u8 gTHKaguya2DPokedexText[] = _(
+    "SPECIES_TH_KAGUYA2D description line 1\n"
+    "SPECIES_TH_KAGUYA2D description line 2\n"
+    "SPECIES_TH_KAGUYA2D description line 3\n"
+    "SPECIES_TH_KAGUYA2D description line 4\n");
+
+
+const u8 gTHMokou1PokedexText[] = _(
+    "SPECIES_TH_MOKOU1 description line 1\n"
+    "SPECIES_TH_MOKOU1 description line 2\n"
+    "SPECIES_TH_MOKOU1 description line 3\n"
+    "SPECIES_TH_MOKOU1 description line 4\n");
+
+
+const u8 gTHMokou2NPokedexText[] = _(
+    "SPECIES_TH_MOKOU2N description line 1\n"
+    "SPECIES_TH_MOKOU2N description line 2\n"
+    "SPECIES_TH_MOKOU2N description line 3\n"
+    "SPECIES_TH_MOKOU2N description line 4\n");
+
+
+const u8 gTHMokou2APokedexText[] = _(
+    "SPECIES_TH_MOKOU2A description line 1\n"
+    "SPECIES_TH_MOKOU2A description line 2\n"
+    "SPECIES_TH_MOKOU2A description line 3\n"
+    "SPECIES_TH_MOKOU2A description line 4\n");
+
+
+const u8 gTHMokou2DPokedexText[] = _(
+    "SPECIES_TH_MOKOU2D description line 1\n"
+    "SPECIES_TH_MOKOU2D description line 2\n"
+    "SPECIES_TH_MOKOU2D description line 3\n"
+    "SPECIES_TH_MOKOU2D description line 4\n");
+
+
+const u8 gTHToyohime1PokedexText[] = _(
+    "SPECIES_TH_TOYOHIME1 description line 1\n"
+    "SPECIES_TH_TOYOHIME1 description line 2\n"
+    "SPECIES_TH_TOYOHIME1 description line 3\n"
+    "SPECIES_TH_TOYOHIME1 description line 4\n");
+
+
+const u8 gTHToyohime2NPokedexText[] = _(
+    "SPECIES_TH_TOYOHIME2N description line 1\n"
+    "SPECIES_TH_TOYOHIME2N description line 2\n"
+    "SPECIES_TH_TOYOHIME2N description line 3\n"
+    "SPECIES_TH_TOYOHIME2N description line 4\n");
+
+
+const u8 gTHToyohime2TPokedexText[] = _(
+    "SPECIES_TH_TOYOHIME2T description line 1\n"
+    "SPECIES_TH_TOYOHIME2T description line 2\n"
+    "SPECIES_TH_TOYOHIME2T description line 3\n"
+    "SPECIES_TH_TOYOHIME2T description line 4\n");
+
+
+const u8 gTHYorihime1PokedexText[] = _(
+    "SPECIES_TH_YORIHIME1 description line 1\n"
+    "SPECIES_TH_YORIHIME1 description line 2\n"
+    "SPECIES_TH_YORIHIME1 description line 3\n"
+    "SPECIES_TH_YORIHIME1 description line 4\n");
+
+
+const u8 gTHYorihime2NPokedexText[] = _(
+    "SPECIES_TH_YORIHIME2N description line 1\n"
+    "SPECIES_TH_YORIHIME2N description line 2\n"
+    "SPECIES_TH_YORIHIME2N description line 3\n"
+    "SPECIES_TH_YORIHIME2N description line 4\n");
+
+
+const u8 gTHYorihime2SPokedexText[] = _(
+    "SPECIES_TH_YORIHIME2S description line 1\n"
+    "SPECIES_TH_YORIHIME2S description line 2\n"
+    "SPECIES_TH_YORIHIME2S description line 3\n"
+    "SPECIES_TH_YORIHIME2S description line 4\n");
+
+
+const u8 gTHAya1PokedexText[] = _(
+    "SPECIES_TH_AYA1 description line 1\n"
+    "SPECIES_TH_AYA1 description line 2\n"
+    "SPECIES_TH_AYA1 description line 3\n"
+    "SPECIES_TH_AYA1 description line 4\n");
+
+
+const u8 gTHAya2NPokedexText[] = _(
+    "SPECIES_TH_AYA2N description line 1\n"
+    "SPECIES_TH_AYA2N description line 2\n"
+    "SPECIES_TH_AYA2N description line 3\n"
+    "SPECIES_TH_AYA2N description line 4\n");
+
+
+const u8 gTHAya2SPokedexText[] = _(
+    "SPECIES_TH_AYA2S description line 1\n"
+    "SPECIES_TH_AYA2S description line 2\n"
+    "SPECIES_TH_AYA2S description line 3\n"
+    "SPECIES_TH_AYA2S description line 4\n");
+
+
+const u8 gTHAya2TPokedexText[] = _(
+    "SPECIES_TH_AYA2T description line 1\n"
+    "SPECIES_TH_AYA2T description line 2\n"
+    "SPECIES_TH_AYA2T description line 3\n"
+    "SPECIES_TH_AYA2T description line 4\n");
+
+
+const u8 gTHMedicine1PokedexText[] = _(
+    "SPECIES_TH_MEDICINE1 description line 1\n"
+    "SPECIES_TH_MEDICINE1 description line 2\n"
+    "SPECIES_TH_MEDICINE1 description line 3\n"
+    "SPECIES_TH_MEDICINE1 description line 4\n");
+
+
+const u8 gTHMedicine2NPokedexText[] = _(
+    "SPECIES_TH_MEDICINE2N description line 1\n"
+    "SPECIES_TH_MEDICINE2N description line 2\n"
+    "SPECIES_TH_MEDICINE2N description line 3\n"
+    "SPECIES_TH_MEDICINE2N description line 4\n");
+
+
+const u8 gTHMedicine2APokedexText[] = _(
+    "SPECIES_TH_MEDICINE2A description line 1\n"
+    "SPECIES_TH_MEDICINE2A description line 2\n"
+    "SPECIES_TH_MEDICINE2A description line 3\n"
+    "SPECIES_TH_MEDICINE2A description line 4\n");
+
+
+const u8 gTHMedicine2SPokedexText[] = _(
+    "SPECIES_TH_MEDICINE2S description line 1\n"
+    "SPECIES_TH_MEDICINE2S description line 2\n"
+    "SPECIES_TH_MEDICINE2S description line 3\n"
+    "SPECIES_TH_MEDICINE2S description line 4\n");
+
+
+const u8 gTHMedicine2TPokedexText[] = _(
+    "SPECIES_TH_MEDICINE2T description line 1\n"
+    "SPECIES_TH_MEDICINE2T description line 2\n"
+    "SPECIES_TH_MEDICINE2T description line 3\n"
+    "SPECIES_TH_MEDICINE2T description line 4\n");
+
+
+const u8 gTHYuuka1PokedexText[] = _(
+    "SPECIES_TH_YUUKA1 description line 1\n"
+    "SPECIES_TH_YUUKA1 description line 2\n"
+    "SPECIES_TH_YUUKA1 description line 3\n"
+    "SPECIES_TH_YUUKA1 description line 4\n");
+
+
+const u8 gTHYuuka2NPokedexText[] = _(
+    "SPECIES_TH_YUUKA2N description line 1\n"
+    "SPECIES_TH_YUUKA2N description line 2\n"
+    "SPECIES_TH_YUUKA2N description line 3\n"
+    "SPECIES_TH_YUUKA2N description line 4\n");
+
+
+const u8 gTHYuuka2APokedexText[] = _(
+    "SPECIES_TH_YUUKA2A description line 1\n"
+    "SPECIES_TH_YUUKA2A description line 2\n"
+    "SPECIES_TH_YUUKA2A description line 3\n"
+    "SPECIES_TH_YUUKA2A description line 4\n");
+
+
+const u8 gTHYuuka2TPokedexText[] = _(
+    "SPECIES_TH_YUUKA2T description line 1\n"
+    "SPECIES_TH_YUUKA2T description line 2\n"
+    "SPECIES_TH_YUUKA2T description line 3\n"
+    "SPECIES_TH_YUUKA2T description line 4\n");
+
+
+const u8 gTHKomachi1PokedexText[] = _(
+    "SPECIES_TH_KOMACHI1 description line 1\n"
+    "SPECIES_TH_KOMACHI1 description line 2\n"
+    "SPECIES_TH_KOMACHI1 description line 3\n"
+    "SPECIES_TH_KOMACHI1 description line 4\n");
+
+
+const u8 gTHKomachi2NPokedexText[] = _(
+    "SPECIES_TH_KOMACHI2N description line 1\n"
+    "SPECIES_TH_KOMACHI2N description line 2\n"
+    "SPECIES_TH_KOMACHI2N description line 3\n"
+    "SPECIES_TH_KOMACHI2N description line 4\n");
+
+
+const u8 gTHKomachi2APokedexText[] = _(
+    "SPECIES_TH_KOMACHI2A description line 1\n"
+    "SPECIES_TH_KOMACHI2A description line 2\n"
+    "SPECIES_TH_KOMACHI2A description line 3\n"
+    "SPECIES_TH_KOMACHI2A description line 4\n");
+
+
+const u8 gTHKomachi2SPokedexText[] = _(
+    "SPECIES_TH_KOMACHI2S description line 1\n"
+    "SPECIES_TH_KOMACHI2S description line 2\n"
+    "SPECIES_TH_KOMACHI2S description line 3\n"
+    "SPECIES_TH_KOMACHI2S description line 4\n");
+
+
+const u8 gTHEiki1PokedexText[] = _(
+    "SPECIES_TH_EIKI1 description line 1\n"
+    "SPECIES_TH_EIKI1 description line 2\n"
+    "SPECIES_TH_EIKI1 description line 3\n"
+    "SPECIES_TH_EIKI1 description line 4\n");
+
+
+const u8 gTHEiki2NPokedexText[] = _(
+    "SPECIES_TH_EIKI2N description line 1\n"
+    "SPECIES_TH_EIKI2N description line 2\n"
+    "SPECIES_TH_EIKI2N description line 3\n"
+    "SPECIES_TH_EIKI2N description line 4\n");
+
+
+const u8 gTHEiki2APokedexText[] = _(
+    "SPECIES_TH_EIKI2A description line 1\n"
+    "SPECIES_TH_EIKI2A description line 2\n"
+    "SPECIES_TH_EIKI2A description line 3\n"
+    "SPECIES_TH_EIKI2A description line 4\n");
+
+
+const u8 gTHEiki2DPokedexText[] = _(
+    "SPECIES_TH_EIKI2D description line 1\n"
+    "SPECIES_TH_EIKI2D description line 2\n"
+    "SPECIES_TH_EIKI2D description line 3\n"
+    "SPECIES_TH_EIKI2D description line 4\n");
+
+
+const u8 gTHShizuha1PokedexText[] = _(
+    "SPECIES_TH_SHIZUHA1 description line 1\n"
+    "SPECIES_TH_SHIZUHA1 description line 2\n"
+    "SPECIES_TH_SHIZUHA1 description line 3\n"
+    "SPECIES_TH_SHIZUHA1 description line 4\n");
+
+
+const u8 gTHShizuha2NPokedexText[] = _(
+    "SPECIES_TH_SHIZUHA2N description line 1\n"
+    "SPECIES_TH_SHIZUHA2N description line 2\n"
+    "SPECIES_TH_SHIZUHA2N description line 3\n"
+    "SPECIES_TH_SHIZUHA2N description line 4\n");
+
+
+const u8 gTHShizuha2SPokedexText[] = _(
+    "SPECIES_TH_SHIZUHA2S description line 1\n"
+    "SPECIES_TH_SHIZUHA2S description line 2\n"
+    "SPECIES_TH_SHIZUHA2S description line 3\n"
+    "SPECIES_TH_SHIZUHA2S description line 4\n");
+
+
+const u8 gTHShizuha2HPokedexText[] = _(
+    "SPECIES_TH_SHIZUHA2H description line 1\n"
+    "SPECIES_TH_SHIZUHA2H description line 2\n"
+    "SPECIES_TH_SHIZUHA2H description line 3\n"
+    "SPECIES_TH_SHIZUHA2H description line 4\n");
+
+
+const u8 gTHMinoriko1PokedexText[] = _(
+    "SPECIES_TH_MINORIKO1 description line 1\n"
+    "SPECIES_TH_MINORIKO1 description line 2\n"
+    "SPECIES_TH_MINORIKO1 description line 3\n"
+    "SPECIES_TH_MINORIKO1 description line 4\n");
+
+
+const u8 gTHMinoriko2NPokedexText[] = _(
+    "SPECIES_TH_MINORIKO2N description line 1\n"
+    "SPECIES_TH_MINORIKO2N description line 2\n"
+    "SPECIES_TH_MINORIKO2N description line 3\n"
+    "SPECIES_TH_MINORIKO2N description line 4\n");
+
+
+const u8 gTHMinoriko2APokedexText[] = _(
+    "SPECIES_TH_MINORIKO2A description line 1\n"
+    "SPECIES_TH_MINORIKO2A description line 2\n"
+    "SPECIES_TH_MINORIKO2A description line 3\n"
+    "SPECIES_TH_MINORIKO2A description line 4\n");
+
+
+const u8 gTHMinoriko2DPokedexText[] = _(
+    "SPECIES_TH_MINORIKO2D description line 1\n"
+    "SPECIES_TH_MINORIKO2D description line 2\n"
+    "SPECIES_TH_MINORIKO2D description line 3\n"
+    "SPECIES_TH_MINORIKO2D description line 4\n");
+
+
+const u8 gTHHina1PokedexText[] = _(
+    "SPECIES_TH_HINA1 description line 1\n"
+    "SPECIES_TH_HINA1 description line 2\n"
+    "SPECIES_TH_HINA1 description line 3\n"
+    "SPECIES_TH_HINA1 description line 4\n");
+
+
+const u8 gTHHina2NPokedexText[] = _(
+    "SPECIES_TH_HINA2N description line 1\n"
+    "SPECIES_TH_HINA2N description line 2\n"
+    "SPECIES_TH_HINA2N description line 3\n"
+    "SPECIES_TH_HINA2N description line 4\n");
+
+
+const u8 gTHHina2APokedexText[] = _(
+    "SPECIES_TH_HINA2A description line 1\n"
+    "SPECIES_TH_HINA2A description line 2\n"
+    "SPECIES_TH_HINA2A description line 3\n"
+    "SPECIES_TH_HINA2A description line 4\n");
+
+
+const u8 gTHHina2DPokedexText[] = _(
+    "SPECIES_TH_HINA2D description line 1\n"
+    "SPECIES_TH_HINA2D description line 2\n"
+    "SPECIES_TH_HINA2D description line 3\n"
+    "SPECIES_TH_HINA2D description line 4\n");
+
+
+const u8 gTHNitori1PokedexText[] = _(
+    "SPECIES_TH_NITORI1 description line 1\n"
+    "SPECIES_TH_NITORI1 description line 2\n"
+    "SPECIES_TH_NITORI1 description line 3\n"
+    "SPECIES_TH_NITORI1 description line 4\n");
+
+
+const u8 gTHNitori2NPokedexText[] = _(
+    "SPECIES_TH_NITORI2N description line 1\n"
+    "SPECIES_TH_NITORI2N description line 2\n"
+    "SPECIES_TH_NITORI2N description line 3\n"
+    "SPECIES_TH_NITORI2N description line 4\n");
+
+
+const u8 gTHNitori2APokedexText[] = _(
+    "SPECIES_TH_NITORI2A description line 1\n"
+    "SPECIES_TH_NITORI2A description line 2\n"
+    "SPECIES_TH_NITORI2A description line 3\n"
+    "SPECIES_TH_NITORI2A description line 4\n");
+
+
+const u8 gTHNitori2TPokedexText[] = _(
+    "SPECIES_TH_NITORI2T description line 1\n"
+    "SPECIES_TH_NITORI2T description line 2\n"
+    "SPECIES_TH_NITORI2T description line 3\n"
+    "SPECIES_TH_NITORI2T description line 4\n");
+
+
+const u8 gTHMomoji1PokedexText[] = _(
+    "SPECIES_TH_MOMOJI1 description line 1\n"
+    "SPECIES_TH_MOMOJI1 description line 2\n"
+    "SPECIES_TH_MOMOJI1 description line 3\n"
+    "SPECIES_TH_MOMOJI1 description line 4\n");
+
+
+const u8 gTHMomoji2NPokedexText[] = _(
+    "SPECIES_TH_MOMOJI2N description line 1\n"
+    "SPECIES_TH_MOMOJI2N description line 2\n"
+    "SPECIES_TH_MOMOJI2N description line 3\n"
+    "SPECIES_TH_MOMOJI2N description line 4\n");
+
+
+const u8 gTHMomoji2DPokedexText[] = _(
+    "SPECIES_TH_MOMOJI2D description line 1\n"
+    "SPECIES_TH_MOMOJI2D description line 2\n"
+    "SPECIES_TH_MOMOJI2D description line 3\n"
+    "SPECIES_TH_MOMOJI2D description line 4\n");
+
+
+const u8 gTHSanae1PokedexText[] = _(
+    "SPECIES_TH_SANAE1 description line 1\n"
+    "SPECIES_TH_SANAE1 description line 2\n"
+    "SPECIES_TH_SANAE1 description line 3\n"
+    "SPECIES_TH_SANAE1 description line 4\n");
+
+
+const u8 gTHSanae2NPokedexText[] = _(
+    "SPECIES_TH_SANAE2N description line 1\n"
+    "SPECIES_TH_SANAE2N description line 2\n"
+    "SPECIES_TH_SANAE2N description line 3\n"
+    "SPECIES_TH_SANAE2N description line 4\n");
+
+
+const u8 gTHSanae2APokedexText[] = _(
+    "SPECIES_TH_SANAE2A description line 1\n"
+    "SPECIES_TH_SANAE2A description line 2\n"
+    "SPECIES_TH_SANAE2A description line 3\n"
+    "SPECIES_TH_SANAE2A description line 4\n");
+
+
+const u8 gTHSanae2TPokedexText[] = _(
+    "SPECIES_TH_SANAE2T description line 1\n"
+    "SPECIES_TH_SANAE2T description line 2\n"
+    "SPECIES_TH_SANAE2T description line 3\n"
+    "SPECIES_TH_SANAE2T description line 4\n");
+
+
+const u8 gTHKanako1PokedexText[] = _(
+    "SPECIES_TH_KANAKO1 description line 1\n"
+    "SPECIES_TH_KANAKO1 description line 2\n"
+    "SPECIES_TH_KANAKO1 description line 3\n"
+    "SPECIES_TH_KANAKO1 description line 4\n");
+
+
+const u8 gTHKanako2NPokedexText[] = _(
+    "SPECIES_TH_KANAKO2N description line 1\n"
+    "SPECIES_TH_KANAKO2N description line 2\n"
+    "SPECIES_TH_KANAKO2N description line 3\n"
+    "SPECIES_TH_KANAKO2N description line 4\n");
+
+
+const u8 gTHKanako2APokedexText[] = _(
+    "SPECIES_TH_KANAKO2A description line 1\n"
+    "SPECIES_TH_KANAKO2A description line 2\n"
+    "SPECIES_TH_KANAKO2A description line 3\n"
+    "SPECIES_TH_KANAKO2A description line 4\n");
+
+
+const u8 gTHKanako2DPokedexText[] = _(
+    "SPECIES_TH_KANAKO2D description line 1\n"
+    "SPECIES_TH_KANAKO2D description line 2\n"
+    "SPECIES_TH_KANAKO2D description line 3\n"
+    "SPECIES_TH_KANAKO2D description line 4\n");
+
+
+const u8 gTHSuwako1PokedexText[] = _(
+    "SPECIES_TH_SUWAKO1 description line 1\n"
+    "SPECIES_TH_SUWAKO1 description line 2\n"
+    "SPECIES_TH_SUWAKO1 description line 3\n"
+    "SPECIES_TH_SUWAKO1 description line 4\n");
+
+
+const u8 gTHSuwako2NPokedexText[] = _(
+    "SPECIES_TH_SUWAKO2N description line 1\n"
+    "SPECIES_TH_SUWAKO2N description line 2\n"
+    "SPECIES_TH_SUWAKO2N description line 3\n"
+    "SPECIES_TH_SUWAKO2N description line 4\n");
+
+
+const u8 gTHSuwako2APokedexText[] = _(
+    "SPECIES_TH_SUWAKO2A description line 1\n"
+    "SPECIES_TH_SUWAKO2A description line 2\n"
+    "SPECIES_TH_SUWAKO2A description line 3\n"
+    "SPECIES_TH_SUWAKO2A description line 4\n");
+
+
+const u8 gTHSuwako2DPokedexText[] = _(
+    "SPECIES_TH_SUWAKO2D description line 1\n"
+    "SPECIES_TH_SUWAKO2D description line 2\n"
+    "SPECIES_TH_SUWAKO2D description line 3\n"
+    "SPECIES_TH_SUWAKO2D description line 4\n");
+
+
+const u8 gTHIku1PokedexText[] = _(
+    "SPECIES_TH_IKU1 description line 1\n"
+    "SPECIES_TH_IKU1 description line 2\n"
+    "SPECIES_TH_IKU1 description line 3\n"
+    "SPECIES_TH_IKU1 description line 4\n");
+
+
+const u8 gTHIku2NPokedexText[] = _(
+    "SPECIES_TH_IKU2N description line 1\n"
+    "SPECIES_TH_IKU2N description line 2\n"
+    "SPECIES_TH_IKU2N description line 3\n"
+    "SPECIES_TH_IKU2N description line 4\n");
+
+
+const u8 gTHIku2DPokedexText[] = _(
+    "SPECIES_TH_IKU2D description line 1\n"
+    "SPECIES_TH_IKU2D description line 2\n"
+    "SPECIES_TH_IKU2D description line 3\n"
+    "SPECIES_TH_IKU2D description line 4\n");
+
+
+const u8 gTHIku2TPokedexText[] = _(
+    "SPECIES_TH_IKU2T description line 1\n"
+    "SPECIES_TH_IKU2T description line 2\n"
+    "SPECIES_TH_IKU2T description line 3\n"
+    "SPECIES_TH_IKU2T description line 4\n");
+
+
+const u8 gTHTenshi1PokedexText[] = _(
+    "SPECIES_TH_TENSHI1 description line 1\n"
+    "SPECIES_TH_TENSHI1 description line 2\n"
+    "SPECIES_TH_TENSHI1 description line 3\n"
+    "SPECIES_TH_TENSHI1 description line 4\n");
+
+
+const u8 gTHTenshi2NPokedexText[] = _(
+    "SPECIES_TH_TENSHI2N description line 1\n"
+    "SPECIES_TH_TENSHI2N description line 2\n"
+    "SPECIES_TH_TENSHI2N description line 3\n"
+    "SPECIES_TH_TENSHI2N description line 4\n");
+
+
+const u8 gTHTenshi2APokedexText[] = _(
+    "SPECIES_TH_TENSHI2A description line 1\n"
+    "SPECIES_TH_TENSHI2A description line 2\n"
+    "SPECIES_TH_TENSHI2A description line 3\n"
+    "SPECIES_TH_TENSHI2A description line 4\n");
+
+
+const u8 gTHTenshi2DPokedexText[] = _(
+    "SPECIES_TH_TENSHI2D description line 1\n"
+    "SPECIES_TH_TENSHI2D description line 2\n"
+    "SPECIES_TH_TENSHI2D description line 3\n"
+    "SPECIES_TH_TENSHI2D description line 4\n");
+
+
+const u8 gTHKisume1PokedexText[] = _(
+    "SPECIES_TH_KISUME1 description line 1\n"
+    "SPECIES_TH_KISUME1 description line 2\n"
+    "SPECIES_TH_KISUME1 description line 3\n"
+    "SPECIES_TH_KISUME1 description line 4\n");
+
+
+const u8 gTHKisume2NPokedexText[] = _(
+    "SPECIES_TH_KISUME2N description line 1\n"
+    "SPECIES_TH_KISUME2N description line 2\n"
+    "SPECIES_TH_KISUME2N description line 3\n"
+    "SPECIES_TH_KISUME2N description line 4\n");
+
+
+const u8 gTHKisume2TPokedexText[] = _(
+    "SPECIES_TH_KISUME2T description line 1\n"
+    "SPECIES_TH_KISUME2T description line 2\n"
+    "SPECIES_TH_KISUME2T description line 3\n"
+    "SPECIES_TH_KISUME2T description line 4\n");
+
+
+const u8 gTHYamame1PokedexText[] = _(
+    "SPECIES_TH_YAMAME1 description line 1\n"
+    "SPECIES_TH_YAMAME1 description line 2\n"
+    "SPECIES_TH_YAMAME1 description line 3\n"
+    "SPECIES_TH_YAMAME1 description line 4\n");
+
+
+const u8 gTHYamame2NPokedexText[] = _(
+    "SPECIES_TH_YAMAME2N description line 1\n"
+    "SPECIES_TH_YAMAME2N description line 2\n"
+    "SPECIES_TH_YAMAME2N description line 3\n"
+    "SPECIES_TH_YAMAME2N description line 4\n");
+
+
+const u8 gTHYamame2SPokedexText[] = _(
+    "SPECIES_TH_YAMAME2S description line 1\n"
+    "SPECIES_TH_YAMAME2S description line 2\n"
+    "SPECIES_TH_YAMAME2S description line 3\n"
+    "SPECIES_TH_YAMAME2S description line 4\n");
+
+
+const u8 gTHYamame2TPokedexText[] = _(
+    "SPECIES_TH_YAMAME2T description line 1\n"
+    "SPECIES_TH_YAMAME2T description line 2\n"
+    "SPECIES_TH_YAMAME2T description line 3\n"
+    "SPECIES_TH_YAMAME2T description line 4\n");
+
+
+const u8 gTHParsee1PokedexText[] = _(
+    "SPECIES_TH_PARSEE1 description line 1\n"
+    "SPECIES_TH_PARSEE1 description line 2\n"
+    "SPECIES_TH_PARSEE1 description line 3\n"
+    "SPECIES_TH_PARSEE1 description line 4\n");
+
+
+const u8 gTHParsee2NPokedexText[] = _(
+    "SPECIES_TH_PARSEE2N description line 1\n"
+    "SPECIES_TH_PARSEE2N description line 2\n"
+    "SPECIES_TH_PARSEE2N description line 3\n"
+    "SPECIES_TH_PARSEE2N description line 4\n");
+
+
+const u8 gTHParsee2DPokedexText[] = _(
+    "SPECIES_TH_PARSEE2D description line 1\n"
+    "SPECIES_TH_PARSEE2D description line 2\n"
+    "SPECIES_TH_PARSEE2D description line 3\n"
+    "SPECIES_TH_PARSEE2D description line 4\n");
+
+
+const u8 gTHParsee2TPokedexText[] = _(
+    "SPECIES_TH_PARSEE2T description line 1\n"
+    "SPECIES_TH_PARSEE2T description line 2\n"
+    "SPECIES_TH_PARSEE2T description line 3\n"
+    "SPECIES_TH_PARSEE2T description line 4\n");
+
+
+const u8 gTHYuugi1PokedexText[] = _(
+    "SPECIES_TH_YUUGI1 description line 1\n"
+    "SPECIES_TH_YUUGI1 description line 2\n"
+    "SPECIES_TH_YUUGI1 description line 3\n"
+    "SPECIES_TH_YUUGI1 description line 4\n");
+
+
+const u8 gTHYuugi2NPokedexText[] = _(
+    "SPECIES_TH_YUUGI2N description line 1\n"
+    "SPECIES_TH_YUUGI2N description line 2\n"
+    "SPECIES_TH_YUUGI2N description line 3\n"
+    "SPECIES_TH_YUUGI2N description line 4\n");
+
+
+const u8 gTHYuugi2APokedexText[] = _(
+    "SPECIES_TH_YUUGI2A description line 1\n"
+    "SPECIES_TH_YUUGI2A description line 2\n"
+    "SPECIES_TH_YUUGI2A description line 3\n"
+    "SPECIES_TH_YUUGI2A description line 4\n");
+
+
+const u8 gTHYuugi2DPokedexText[] = _(
+    "SPECIES_TH_YUUGI2D description line 1\n"
+    "SPECIES_TH_YUUGI2D description line 2\n"
+    "SPECIES_TH_YUUGI2D description line 3\n"
+    "SPECIES_TH_YUUGI2D description line 4\n");
+
+
+const u8 gTHSatori1PokedexText[] = _(
+    "SPECIES_TH_SATORI1 description line 1\n"
+    "SPECIES_TH_SATORI1 description line 2\n"
+    "SPECIES_TH_SATORI1 description line 3\n"
+    "SPECIES_TH_SATORI1 description line 4\n");
+
+
+const u8 gTHSatori2NPokedexText[] = _(
+    "SPECIES_TH_SATORI2N description line 1\n"
+    "SPECIES_TH_SATORI2N description line 2\n"
+    "SPECIES_TH_SATORI2N description line 3\n"
+    "SPECIES_TH_SATORI2N description line 4\n");
+
+
+const u8 gTHSatori2DPokedexText[] = _(
+    "SPECIES_TH_SATORI2D description line 1\n"
+    "SPECIES_TH_SATORI2D description line 2\n"
+    "SPECIES_TH_SATORI2D description line 3\n"
+    "SPECIES_TH_SATORI2D description line 4\n");
+
+
+const u8 gTHSatori2TPokedexText[] = _(
+    "SPECIES_TH_SATORI2T description line 1\n"
+    "SPECIES_TH_SATORI2T description line 2\n"
+    "SPECIES_TH_SATORI2T description line 3\n"
+    "SPECIES_TH_SATORI2T description line 4\n");
+
+
+const u8 gTHRin1PokedexText[] = _(
+    "SPECIES_TH_RIN1 description line 1\n"
+    "SPECIES_TH_RIN1 description line 2\n"
+    "SPECIES_TH_RIN1 description line 3\n"
+    "SPECIES_TH_RIN1 description line 4\n");
+
+
+const u8 gTHRin2NPokedexText[] = _(
+    "SPECIES_TH_RIN2N description line 1\n"
+    "SPECIES_TH_RIN2N description line 2\n"
+    "SPECIES_TH_RIN2N description line 3\n"
+    "SPECIES_TH_RIN2N description line 4\n");
+
+
+const u8 gTHRin2APokedexText[] = _(
+    "SPECIES_TH_RIN2A description line 1\n"
+    "SPECIES_TH_RIN2A description line 2\n"
+    "SPECIES_TH_RIN2A description line 3\n"
+    "SPECIES_TH_RIN2A description line 4\n");
+
+
+const u8 gTHRin2SPokedexText[] = _(
+    "SPECIES_TH_RIN2S description line 1\n"
+    "SPECIES_TH_RIN2S description line 2\n"
+    "SPECIES_TH_RIN2S description line 3\n"
+    "SPECIES_TH_RIN2S description line 4\n");
+
+
+const u8 gTHUtsuho1PokedexText[] = _(
+    "SPECIES_TH_UTSUHO1 description line 1\n"
+    "SPECIES_TH_UTSUHO1 description line 2\n"
+    "SPECIES_TH_UTSUHO1 description line 3\n"
+    "SPECIES_TH_UTSUHO1 description line 4\n");
+
+
+const u8 gTHUtsuho2NPokedexText[] = _(
+    "SPECIES_TH_UTSUHO2N description line 1\n"
+    "SPECIES_TH_UTSUHO2N description line 2\n"
+    "SPECIES_TH_UTSUHO2N description line 3\n"
+    "SPECIES_TH_UTSUHO2N description line 4\n");
+
+
+const u8 gTHUtsuho2APokedexText[] = _(
+    "SPECIES_TH_UTSUHO2A description line 1\n"
+    "SPECIES_TH_UTSUHO2A description line 2\n"
+    "SPECIES_TH_UTSUHO2A description line 3\n"
+    "SPECIES_TH_UTSUHO2A description line 4\n");
+
+
+const u8 gTHUtsuho2SPokedexText[] = _(
+    "SPECIES_TH_UTSUHO2S description line 1\n"
+    "SPECIES_TH_UTSUHO2S description line 2\n"
+    "SPECIES_TH_UTSUHO2S description line 3\n"
+    "SPECIES_TH_UTSUHO2S description line 4\n");
+
+
+const u8 gTHKoishi1PokedexText[] = _(
+    "SPECIES_TH_KOISHI1 description line 1\n"
+    "SPECIES_TH_KOISHI1 description line 2\n"
+    "SPECIES_TH_KOISHI1 description line 3\n"
+    "SPECIES_TH_KOISHI1 description line 4\n");
+
+
+const u8 gTHKoishi2NPokedexText[] = _(
+    "SPECIES_TH_KOISHI2N description line 1\n"
+    "SPECIES_TH_KOISHI2N description line 2\n"
+    "SPECIES_TH_KOISHI2N description line 3\n"
+    "SPECIES_TH_KOISHI2N description line 4\n");
+
+
+const u8 gTHKoishi2APokedexText[] = _(
+    "SPECIES_TH_KOISHI2A description line 1\n"
+    "SPECIES_TH_KOISHI2A description line 2\n"
+    "SPECIES_TH_KOISHI2A description line 3\n"
+    "SPECIES_TH_KOISHI2A description line 4\n");
+
+
+const u8 gTHKoishi2SPokedexText[] = _(
+    "SPECIES_TH_KOISHI2S description line 1\n"
+    "SPECIES_TH_KOISHI2S description line 2\n"
+    "SPECIES_TH_KOISHI2S description line 3\n"
+    "SPECIES_TH_KOISHI2S description line 4\n");
+
+
+const u8 gTHNazrin1PokedexText[] = _(
+    "SPECIES_TH_NAZRIN1 description line 1\n"
+    "SPECIES_TH_NAZRIN1 description line 2\n"
+    "SPECIES_TH_NAZRIN1 description line 3\n"
+    "SPECIES_TH_NAZRIN1 description line 4\n");
+
+
+const u8 gTHNazrin2NPokedexText[] = _(
+    "SPECIES_TH_NAZRIN2N description line 1\n"
+    "SPECIES_TH_NAZRIN2N description line 2\n"
+    "SPECIES_TH_NAZRIN2N description line 3\n"
+    "SPECIES_TH_NAZRIN2N description line 4\n");
+
+
+const u8 gTHNazrin2TPokedexText[] = _(
+    "SPECIES_TH_NAZRIN2T description line 1\n"
+    "SPECIES_TH_NAZRIN2T description line 2\n"
+    "SPECIES_TH_NAZRIN2T description line 3\n"
+    "SPECIES_TH_NAZRIN2T description line 4\n");
+
+
+const u8 gTHNazrin2HPokedexText[] = _(
+    "SPECIES_TH_NAZRIN2H description line 1\n"
+    "SPECIES_TH_NAZRIN2H description line 2\n"
+    "SPECIES_TH_NAZRIN2H description line 3\n"
+    "SPECIES_TH_NAZRIN2H description line 4\n");
+
+
+const u8 gTHKogasa1PokedexText[] = _(
+    "SPECIES_TH_KOGASA1 description line 1\n"
+    "SPECIES_TH_KOGASA1 description line 2\n"
+    "SPECIES_TH_KOGASA1 description line 3\n"
+    "SPECIES_TH_KOGASA1 description line 4\n");
+
+
+const u8 gTHKogasa2NPokedexText[] = _(
+    "SPECIES_TH_KOGASA2N description line 1\n"
+    "SPECIES_TH_KOGASA2N description line 2\n"
+    "SPECIES_TH_KOGASA2N description line 3\n"
+    "SPECIES_TH_KOGASA2N description line 4\n");
+
+
+const u8 gTHKogasa2SPokedexText[] = _(
+    "SPECIES_TH_KOGASA2S description line 1\n"
+    "SPECIES_TH_KOGASA2S description line 2\n"
+    "SPECIES_TH_KOGASA2S description line 3\n"
+    "SPECIES_TH_KOGASA2S description line 4\n");
+
+
+const u8 gTHKogasa2TPokedexText[] = _(
+    "SPECIES_TH_KOGASA2T description line 1\n"
+    "SPECIES_TH_KOGASA2T description line 2\n"
+    "SPECIES_TH_KOGASA2T description line 3\n"
+    "SPECIES_TH_KOGASA2T description line 4\n");
+
+
+const u8 gTHIchirin1PokedexText[] = _(
+    "SPECIES_TH_ICHIRIN1 description line 1\n"
+    "SPECIES_TH_ICHIRIN1 description line 2\n"
+    "SPECIES_TH_ICHIRIN1 description line 3\n"
+    "SPECIES_TH_ICHIRIN1 description line 4\n");
+
+
+const u8 gTHIchirin2NPokedexText[] = _(
+    "SPECIES_TH_ICHIRIN2N description line 1\n"
+    "SPECIES_TH_ICHIRIN2N description line 2\n"
+    "SPECIES_TH_ICHIRIN2N description line 3\n"
+    "SPECIES_TH_ICHIRIN2N description line 4\n");
+
+
+const u8 gTHIchirin2DPokedexText[] = _(
+    "SPECIES_TH_ICHIRIN2D description line 1\n"
+    "SPECIES_TH_ICHIRIN2D description line 2\n"
+    "SPECIES_TH_ICHIRIN2D description line 3\n"
+    "SPECIES_TH_ICHIRIN2D description line 4\n");
+
+
+const u8 gTHIchirin2TPokedexText[] = _(
+    "SPECIES_TH_ICHIRIN2T description line 1\n"
+    "SPECIES_TH_ICHIRIN2T description line 2\n"
+    "SPECIES_TH_ICHIRIN2T description line 3\n"
+    "SPECIES_TH_ICHIRIN2T description line 4\n");
+
+
+const u8 gTHMurasa1PokedexText[] = _(
+    "SPECIES_TH_MURASA1 description line 1\n"
+    "SPECIES_TH_MURASA1 description line 2\n"
+    "SPECIES_TH_MURASA1 description line 3\n"
+    "SPECIES_TH_MURASA1 description line 4\n");
+
+
+const u8 gTHMurasa2NPokedexText[] = _(
+    "SPECIES_TH_MURASA2N description line 1\n"
+    "SPECIES_TH_MURASA2N description line 2\n"
+    "SPECIES_TH_MURASA2N description line 3\n"
+    "SPECIES_TH_MURASA2N description line 4\n");
+
+
+const u8 gTHMurasa2APokedexText[] = _(
+    "SPECIES_TH_MURASA2A description line 1\n"
+    "SPECIES_TH_MURASA2A description line 2\n"
+    "SPECIES_TH_MURASA2A description line 3\n"
+    "SPECIES_TH_MURASA2A description line 4\n");
+
+
+const u8 gTHMurasa2DPokedexText[] = _(
+    "SPECIES_TH_MURASA2D description line 1\n"
+    "SPECIES_TH_MURASA2D description line 2\n"
+    "SPECIES_TH_MURASA2D description line 3\n"
+    "SPECIES_TH_MURASA2D description line 4\n");
+
+
+const u8 gTHShou1PokedexText[] = _(
+    "SPECIES_TH_SHOU1 description line 1\n"
+    "SPECIES_TH_SHOU1 description line 2\n"
+    "SPECIES_TH_SHOU1 description line 3\n"
+    "SPECIES_TH_SHOU1 description line 4\n");
+
+
+const u8 gTHShou2NPokedexText[] = _(
+    "SPECIES_TH_SHOU2N description line 1\n"
+    "SPECIES_TH_SHOU2N description line 2\n"
+    "SPECIES_TH_SHOU2N description line 3\n"
+    "SPECIES_TH_SHOU2N description line 4\n");
+
+
+const u8 gTHShou2APokedexText[] = _(
+    "SPECIES_TH_SHOU2A description line 1\n"
+    "SPECIES_TH_SHOU2A description line 2\n"
+    "SPECIES_TH_SHOU2A description line 3\n"
+    "SPECIES_TH_SHOU2A description line 4\n");
+
+
+const u8 gTHShou2TPokedexText[] = _(
+    "SPECIES_TH_SHOU2T description line 1\n"
+    "SPECIES_TH_SHOU2T description line 2\n"
+    "SPECIES_TH_SHOU2T description line 3\n"
+    "SPECIES_TH_SHOU2T description line 4\n");
+
+
+const u8 gTHByakuren1PokedexText[] = _(
+    "SPECIES_TH_BYAKUREN1 description line 1\n"
+    "SPECIES_TH_BYAKUREN1 description line 2\n"
+    "SPECIES_TH_BYAKUREN1 description line 3\n"
+    "SPECIES_TH_BYAKUREN1 description line 4\n");
+
+
+const u8 gTHByakuren2NPokedexText[] = _(
+    "SPECIES_TH_BYAKUREN2N description line 1\n"
+    "SPECIES_TH_BYAKUREN2N description line 2\n"
+    "SPECIES_TH_BYAKUREN2N description line 3\n"
+    "SPECIES_TH_BYAKUREN2N description line 4\n");
+
+
+const u8 gTHByakuren2DPokedexText[] = _(
+    "SPECIES_TH_BYAKUREN2D description line 1\n"
+    "SPECIES_TH_BYAKUREN2D description line 2\n"
+    "SPECIES_TH_BYAKUREN2D description line 3\n"
+    "SPECIES_TH_BYAKUREN2D description line 4\n");
+
+
+const u8 gTHByakuren2TPokedexText[] = _(
+    "SPECIES_TH_BYAKUREN2T description line 1\n"
+    "SPECIES_TH_BYAKUREN2T description line 2\n"
+    "SPECIES_TH_BYAKUREN2T description line 3\n"
+    "SPECIES_TH_BYAKUREN2T description line 4\n");
+
+
+const u8 gTHNue1PokedexText[] = _(
+    "SPECIES_TH_NUE1 description line 1\n"
+    "SPECIES_TH_NUE1 description line 2\n"
+    "SPECIES_TH_NUE1 description line 3\n"
+    "SPECIES_TH_NUE1 description line 4\n");
+
+
+const u8 gTHNue2NPokedexText[] = _(
+    "SPECIES_TH_NUE2N description line 1\n"
+    "SPECIES_TH_NUE2N description line 2\n"
+    "SPECIES_TH_NUE2N description line 3\n"
+    "SPECIES_TH_NUE2N description line 4\n");
+
+
+const u8 gTHNue2APokedexText[] = _(
+    "SPECIES_TH_NUE2A description line 1\n"
+    "SPECIES_TH_NUE2A description line 2\n"
+    "SPECIES_TH_NUE2A description line 3\n"
+    "SPECIES_TH_NUE2A description line 4\n");
+
+
+const u8 gTHNue2TPokedexText[] = _(
+    "SPECIES_TH_NUE2T description line 1\n"
+    "SPECIES_TH_NUE2T description line 2\n"
+    "SPECIES_TH_NUE2T description line 3\n"
+    "SPECIES_TH_NUE2T description line 4\n");
+
+
+const u8 gTHOonamazuPokedexText[] = _(
+    "SPECIES_TH_OONAMAZU description line 1\n"
+    "SPECIES_TH_OONAMAZU description line 2\n"
+    "SPECIES_TH_OONAMAZU description line 3\n"
+    "SPECIES_TH_OONAMAZU description line 4\n");
+
+
+const u8 gTHTensoku1PokedexText[] = _(
+    "SPECIES_TH_TENSOKU1 description line 1\n"
+    "SPECIES_TH_TENSOKU1 description line 2\n"
+    "SPECIES_TH_TENSOKU1 description line 3\n"
+    "SPECIES_TH_TENSOKU1 description line 4\n");
+
+
+const u8 gTHKasen1PokedexText[] = _(
+    "SPECIES_TH_KASEN1 description line 1\n"
+    "SPECIES_TH_KASEN1 description line 2\n"
+    "SPECIES_TH_KASEN1 description line 3\n"
+    "SPECIES_TH_KASEN1 description line 4\n");
+
+
+const u8 gTHKasen2PokedexText[] = _(
+    "SPECIES_TH_KASEN2 description line 1\n"
+    "SPECIES_TH_KASEN2 description line 2\n"
+    "SPECIES_TH_KASEN2 description line 3\n"
+    "SPECIES_TH_KASEN2 description line 4\n");
+
+
+const u8 gTHTenma1PokedexText[] = _(
+    "SPECIES_TH_TENMA1 description line 1\n"
+    "SPECIES_TH_TENMA1 description line 2\n"
+    "SPECIES_TH_TENMA1 description line 3\n"
+    "SPECIES_TH_TENMA1 description line 4\n");
+
+
+const u8 gTHTenma2NPokedexText[] = _(
+    "SPECIES_TH_TENMA2N description line 1\n"
+    "SPECIES_TH_TENMA2N description line 2\n"
+    "SPECIES_TH_TENMA2N description line 3\n"
+    "SPECIES_TH_TENMA2N description line 4\n");
+
+
+const u8 gTHTenma2SPokedexText[] = _(
+    "SPECIES_TH_TENMA2S description line 1\n"
+    "SPECIES_TH_TENMA2S description line 2\n"
+    "SPECIES_TH_TENMA2S description line 3\n"
+    "SPECIES_TH_TENMA2S description line 4\n");
+
+
+const u8 gTHSendai1PokedexText[] = _(
+    "SPECIES_TH_SENDAI1 description line 1\n"
+    "SPECIES_TH_SENDAI1 description line 2\n"
+    "SPECIES_TH_SENDAI1 description line 3\n"
+    "SPECIES_TH_SENDAI1 description line 4\n");
+
+
+const u8 gTHSendai2NPokedexText[] = _(
+    "SPECIES_TH_SENDAI2N description line 1\n"
+    "SPECIES_TH_SENDAI2N description line 2\n"
+    "SPECIES_TH_SENDAI2N description line 3\n"
+    "SPECIES_TH_SENDAI2N description line 4\n");
+
+
+const u8 gTHSendai2TPokedexText[] = _(
+    "SPECIES_TH_SENDAI2T description line 1\n"
+    "SPECIES_TH_SENDAI2T description line 2\n"
+    "SPECIES_TH_SENDAI2T description line 3\n"
+    "SPECIES_TH_SENDAI2T description line 4\n");
+
+
+const u8 gTHTokiko1PokedexText[] = _(
+    "SPECIES_TH_TOKIKO1 description line 1\n"
+    "SPECIES_TH_TOKIKO1 description line 2\n"
+    "SPECIES_TH_TOKIKO1 description line 3\n"
+    "SPECIES_TH_TOKIKO1 description line 4\n");
+
+
+const u8 gTHTokiko2NPokedexText[] = _(
+    "SPECIES_TH_TOKIKO2N description line 1\n"
+    "SPECIES_TH_TOKIKO2N description line 2\n"
+    "SPECIES_TH_TOKIKO2N description line 3\n"
+    "SPECIES_TH_TOKIKO2N description line 4\n");
+
+
+const u8 gTHTokiko2APokedexText[] = _(
+    "SPECIES_TH_TOKIKO2A description line 1\n"
+    "SPECIES_TH_TOKIKO2A description line 2\n"
+    "SPECIES_TH_TOKIKO2A description line 3\n"
+    "SPECIES_TH_TOKIKO2A description line 4\n");
+
+
+const u8 gTHRinnosukePokedexText[] = _(
+    "SPECIES_TH_RINNOSUKE description line 1\n"
+    "SPECIES_TH_RINNOSUKE description line 2\n"
+    "SPECIES_TH_RINNOSUKE description line 3\n"
+    "SPECIES_TH_RINNOSUKE description line 4\n");
+
+
+const u8 gTHAkyuuPokedexText[] = _(
+    "SPECIES_TH_AKYUU description line 1\n"
+    "SPECIES_TH_AKYUU description line 2\n"
+    "SPECIES_TH_AKYUU description line 3\n"
+    "SPECIES_TH_AKYUU description line 4\n");
+
+
+const u8 gTHMaribelPokedexText[] = _(
+    "SPECIES_TH_MARIBEL description line 1\n"
+    "SPECIES_TH_MARIBEL description line 2\n"
+    "SPECIES_TH_MARIBEL description line 3\n"
+    "SPECIES_TH_MARIBEL description line 4\n");
+
+
+const u8 gTHRenkoPokedexText[] = _(
+    "SPECIES_TH_RENKO description line 1\n"
+    "SPECIES_TH_RENKO description line 2\n"
+    "SPECIES_TH_RENKO description line 3\n"
+    "SPECIES_TH_RENKO description line 4\n");
+
+
+const u8 gTHSumirekoPokedexText[] = _(
+    "SPECIES_TH_SUMIREKO description line 1\n"
+    "SPECIES_TH_SUMIREKO description line 2\n"
+    "SPECIES_TH_SUMIREKO description line 3\n"
+    "SPECIES_TH_SUMIREKO description line 4\n");
+
+
+const u8 gTHMarisa1PokedexText[] = _(
+    "SPECIES_TH_MARISA1 description line 1\n"
+    "SPECIES_TH_MARISA1 description line 2\n"
+    "SPECIES_TH_MARISA1 description line 3\n"
+    "SPECIES_TH_MARISA1 description line 4\n");
+
+
+const u8 gTHReimu1PokedexText[] = _(
+    "SPECIES_TH_REIMU1 description line 1\n"
+    "SPECIES_TH_REIMU1 description line 2\n"
+    "SPECIES_TH_REIMU1 description line 3\n"
+    "SPECIES_TH_REIMU1 description line 4\n");
+
+
+const u8 gTHReimuCtCPokedexText[] = _(
+    "SPECIES_TH_REIMUCTC description line 1\n"
+    "SPECIES_TH_REIMUCTC description line 2\n"
+    "SPECIES_TH_REIMUCTC description line 3\n"
+    "SPECIES_TH_REIMUCTC description line 4\n");
+
+
+const u8 gETCIsamiPokedexText[] = _(
+    "SPECIES_ETC_ISAMI description line 1\n"
+    "SPECIES_ETC_ISAMI description line 2\n"
+    "SPECIES_ETC_ISAMI description line 3\n"
+    "SPECIES_ETC_ISAMI description line 4\n");
+
+
+const u8 gSHVIVITrPokedexText[] = _(
+    "SPECIES_SH_VIVITR description line 1\n"
+    "SPECIES_SH_VIVITR description line 2\n"
+    "SPECIES_SH_VIVITR description line 3\n"
+    "SPECIES_SH_VIVITR description line 4\n");
+
+
+const u8 gKEYMisuzu1PokedexText[] = _(
+    "SPECIES_KEY_MISUZU1 description line 1\n"
+    "SPECIES_KEY_MISUZU1 description line 2\n"
+    "SPECIES_KEY_MISUZU1 description line 3\n"
+    "SPECIES_KEY_MISUZU1 description line 4\n");
+
+
+const u8 gKEYMisuzu2PokedexText[] = _(
+    "SPECIES_KEY_MISUZU2 description line 1\n"
+    "SPECIES_KEY_MISUZU2 description line 2\n"
+    "SPECIES_KEY_MISUZU2 description line 3\n"
+    "SPECIES_KEY_MISUZU2 description line 4\n");
+
+
+const u8 gKEYMisuzu3PokedexText[] = _(
+    "SPECIES_KEY_MISUZU3 description line 1\n"
+    "SPECIES_KEY_MISUZU3 description line 2\n"
+    "SPECIES_KEY_MISUZU3 description line 3\n"
+    "SPECIES_KEY_MISUZU3 description line 4\n");
+
+
+const u8 gKEYKano1PokedexText[] = _(
+    "SPECIES_KEY_KANO1 description line 1\n"
+    "SPECIES_KEY_KANO1 description line 2\n"
+    "SPECIES_KEY_KANO1 description line 3\n"
+    "SPECIES_KEY_KANO1 description line 4\n");
+
+
+const u8 gKEYKano2PokedexText[] = _(
+    "SPECIES_KEY_KANO2 description line 1\n"
+    "SPECIES_KEY_KANO2 description line 2\n"
+    "SPECIES_KEY_KANO2 description line 3\n"
+    "SPECIES_KEY_KANO2 description line 4\n");
+
+
+const u8 gKEYKano3PokedexText[] = _(
+    "SPECIES_KEY_KANO3 description line 1\n"
+    "SPECIES_KEY_KANO3 description line 2\n"
+    "SPECIES_KEY_KANO3 description line 3\n"
+    "SPECIES_KEY_KANO3 description line 4\n");
+
+
+const u8 gKEYMinagi1PokedexText[] = _(
+    "SPECIES_KEY_MINAGI1 description line 1\n"
+    "SPECIES_KEY_MINAGI1 description line 2\n"
+    "SPECIES_KEY_MINAGI1 description line 3\n"
+    "SPECIES_KEY_MINAGI1 description line 4\n");
+
+
+const u8 gKEYMinagi2PokedexText[] = _(
+    "SPECIES_KEY_MINAGI2 description line 1\n"
+    "SPECIES_KEY_MINAGI2 description line 2\n"
+    "SPECIES_KEY_MINAGI2 description line 3\n"
+    "SPECIES_KEY_MINAGI2 description line 4\n");
+
+
+const u8 gKEYMinagi3PokedexText[] = _(
+    "SPECIES_KEY_MINAGI3 description line 1\n"
+    "SPECIES_KEY_MINAGI3 description line 2\n"
+    "SPECIES_KEY_MINAGI3 description line 3\n"
+    "SPECIES_KEY_MINAGI3 description line 4\n");
+
+
+const u8 gKEYHaruko1PokedexText[] = _(
+    "SPECIES_KEY_HARUKO1 description line 1\n"
+    "SPECIES_KEY_HARUKO1 description line 2\n"
+    "SPECIES_KEY_HARUKO1 description line 3\n"
+    "SPECIES_KEY_HARUKO1 description line 4\n");
+
+
+const u8 gKEYHaruko2PokedexText[] = _(
+    "SPECIES_KEY_HARUKO2 description line 1\n"
+    "SPECIES_KEY_HARUKO2 description line 2\n"
+    "SPECIES_KEY_HARUKO2 description line 3\n"
+    "SPECIES_KEY_HARUKO2 description line 4\n");
+
+
+const u8 gKEYHaruko3PokedexText[] = _(
+    "SPECIES_KEY_HARUKO3 description line 1\n"
+    "SPECIES_KEY_HARUKO3 description line 2\n"
+    "SPECIES_KEY_HARUKO3 description line 3\n"
+    "SPECIES_KEY_HARUKO3 description line 4\n");
+
+
+const u8 gKEYKanna1PokedexText[] = _(
+    "SPECIES_KEY_KANNA1 description line 1\n"
+    "SPECIES_KEY_KANNA1 description line 2\n"
+    "SPECIES_KEY_KANNA1 description line 3\n"
+    "SPECIES_KEY_KANNA1 description line 4\n");
+
+
+const u8 gKEYKanna2PokedexText[] = _(
+    "SPECIES_KEY_KANNA2 description line 1\n"
+    "SPECIES_KEY_KANNA2 description line 2\n"
+    "SPECIES_KEY_KANNA2 description line 3\n"
+    "SPECIES_KEY_KANNA2 description line 4\n");
+
+
+const u8 gKEYHijiri1PokedexText[] = _(
+    "SPECIES_KEY_HIJIRI1 description line 1\n"
+    "SPECIES_KEY_HIJIRI1 description line 2\n"
+    "SPECIES_KEY_HIJIRI1 description line 3\n"
+    "SPECIES_KEY_HIJIRI1 description line 4\n");
+
+
+const u8 gKEYHijiri2PokedexText[] = _(
+    "SPECIES_KEY_HIJIRI2 description line 1\n"
+    "SPECIES_KEY_HIJIRI2 description line 2\n"
+    "SPECIES_KEY_HIJIRI2 description line 3\n"
+    "SPECIES_KEY_HIJIRI2 description line 4\n");
+
+
+const u8 gKEYHijiri3PokedexText[] = _(
+    "SPECIES_KEY_HIJIRI3 description line 1\n"
+    "SPECIES_KEY_HIJIRI3 description line 2\n"
+    "SPECIES_KEY_HIJIRI3 description line 3\n"
+    "SPECIES_KEY_HIJIRI3 description line 4\n");
+
+
+const u8 gKEYMichiru1PokedexText[] = _(
+    "SPECIES_KEY_MICHIRU1 description line 1\n"
+    "SPECIES_KEY_MICHIRU1 description line 2\n"
+    "SPECIES_KEY_MICHIRU1 description line 3\n"
+    "SPECIES_KEY_MICHIRU1 description line 4\n");
+
+
+const u8 gKEYMichiru2PokedexText[] = _(
+    "SPECIES_KEY_MICHIRU2 description line 1\n"
+    "SPECIES_KEY_MICHIRU2 description line 2\n"
+    "SPECIES_KEY_MICHIRU2 description line 3\n"
+    "SPECIES_KEY_MICHIRU2 description line 4\n");
+
+
+const u8 gKEYMichiru3PokedexText[] = _(
+    "SPECIES_KEY_MICHIRU3 description line 1\n"
+    "SPECIES_KEY_MICHIRU3 description line 2\n"
+    "SPECIES_KEY_MICHIRU3 description line 3\n"
+    "SPECIES_KEY_MICHIRU3 description line 4\n");
+
+
+const u8 gKEYUraha1PokedexText[] = _(
+    "SPECIES_KEY_URAHA1 description line 1\n"
+    "SPECIES_KEY_URAHA1 description line 2\n"
+    "SPECIES_KEY_URAHA1 description line 3\n"
+    "SPECIES_KEY_URAHA1 description line 4\n");
+
+
+const u8 gKEYUraha2PokedexText[] = _(
+    "SPECIES_KEY_URAHA2 description line 1\n"
+    "SPECIES_KEY_URAHA2 description line 2\n"
+    "SPECIES_KEY_URAHA2 description line 3\n"
+    "SPECIES_KEY_URAHA2 description line 4\n");
+
+
+const u8 gKEYUraha3PokedexText[] = _(
+    "SPECIES_KEY_URAHA3 description line 1\n"
+    "SPECIES_KEY_URAHA3 description line 2\n"
+    "SPECIES_KEY_URAHA3 description line 3\n"
+    "SPECIES_KEY_URAHA3 description line 4\n");
+
+
+const u8 gKEYPotatoPokedexText[] = _(
+    "SPECIES_KEY_POTATO description line 1\n"
+    "SPECIES_KEY_POTATO description line 2\n"
+    "SPECIES_KEY_POTATO description line 3\n"
+    "SPECIES_KEY_POTATO description line 4\n");
+
+
+const u8 gKEYSoraPokedexText[] = _(
+    "SPECIES_KEY_SORA description line 1\n"
+    "SPECIES_KEY_SORA description line 2\n"
+    "SPECIES_KEY_SORA description line 3\n"
+    "SPECIES_KEY_SORA description line 4\n");
+
+
+const u8 gKEYAyu1PokedexText[] = _(
+    "SPECIES_KEY_AYU1 description line 1\n"
+    "SPECIES_KEY_AYU1 description line 2\n"
+    "SPECIES_KEY_AYU1 description line 3\n"
+    "SPECIES_KEY_AYU1 description line 4\n");
+
+
+const u8 gKEYAyu2PokedexText[] = _(
+    "SPECIES_KEY_AYU2 description line 1\n"
+    "SPECIES_KEY_AYU2 description line 2\n"
+    "SPECIES_KEY_AYU2 description line 3\n"
+    "SPECIES_KEY_AYU2 description line 4\n");
+
+
+const u8 gKEYAyu3PokedexText[] = _(
+    "SPECIES_KEY_AYU3 description line 1\n"
+    "SPECIES_KEY_AYU3 description line 2\n"
+    "SPECIES_KEY_AYU3 description line 3\n"
+    "SPECIES_KEY_AYU3 description line 4\n");
+
+
+const u8 gKEYMai1PokedexText[] = _(
+    "SPECIES_KEY_MAI1 description line 1\n"
+    "SPECIES_KEY_MAI1 description line 2\n"
+    "SPECIES_KEY_MAI1 description line 3\n"
+    "SPECIES_KEY_MAI1 description line 4\n");
+
+
+const u8 gKEYMai2PokedexText[] = _(
+    "SPECIES_KEY_MAI2 description line 1\n"
+    "SPECIES_KEY_MAI2 description line 2\n"
+    "SPECIES_KEY_MAI2 description line 3\n"
+    "SPECIES_KEY_MAI2 description line 4\n");
+
+
+const u8 gKEYMai3PokedexText[] = _(
+    "SPECIES_KEY_MAI3 description line 1\n"
+    "SPECIES_KEY_MAI3 description line 2\n"
+    "SPECIES_KEY_MAI3 description line 3\n"
+    "SPECIES_KEY_MAI3 description line 4\n");
+
+
+const u8 gKEYNayuki1PokedexText[] = _(
+    "SPECIES_KEY_NAYUKI1 description line 1\n"
+    "SPECIES_KEY_NAYUKI1 description line 2\n"
+    "SPECIES_KEY_NAYUKI1 description line 3\n"
+    "SPECIES_KEY_NAYUKI1 description line 4\n");
+
+
+const u8 gKEYNayuki2PokedexText[] = _(
+    "SPECIES_KEY_NAYUKI2 description line 1\n"
+    "SPECIES_KEY_NAYUKI2 description line 2\n"
+    "SPECIES_KEY_NAYUKI2 description line 3\n"
+    "SPECIES_KEY_NAYUKI2 description line 4\n");
+
+
+const u8 gKEYNayuki3PokedexText[] = _(
+    "SPECIES_KEY_NAYUKI3 description line 1\n"
+    "SPECIES_KEY_NAYUKI3 description line 2\n"
+    "SPECIES_KEY_NAYUKI3 description line 3\n"
+    "SPECIES_KEY_NAYUKI3 description line 4\n");
+
+
+const u8 gKEYShiori1PokedexText[] = _(
+    "SPECIES_KEY_SHIORI1 description line 1\n"
+    "SPECIES_KEY_SHIORI1 description line 2\n"
+    "SPECIES_KEY_SHIORI1 description line 3\n"
+    "SPECIES_KEY_SHIORI1 description line 4\n");
+
+
+const u8 gKEYShiori2PokedexText[] = _(
+    "SPECIES_KEY_SHIORI2 description line 1\n"
+    "SPECIES_KEY_SHIORI2 description line 2\n"
+    "SPECIES_KEY_SHIORI2 description line 3\n"
+    "SPECIES_KEY_SHIORI2 description line 4\n");
+
+
+const u8 gKEYShiori3PokedexText[] = _(
+    "SPECIES_KEY_SHIORI3 description line 1\n"
+    "SPECIES_KEY_SHIORI3 description line 2\n"
+    "SPECIES_KEY_SHIORI3 description line 3\n"
+    "SPECIES_KEY_SHIORI3 description line 4\n");
+
+
+const u8 gKEYMakoto1PokedexText[] = _(
+    "SPECIES_KEY_MAKOTO1 description line 1\n"
+    "SPECIES_KEY_MAKOTO1 description line 2\n"
+    "SPECIES_KEY_MAKOTO1 description line 3\n"
+    "SPECIES_KEY_MAKOTO1 description line 4\n");
+
+
+const u8 gKEYMakoto2PokedexText[] = _(
+    "SPECIES_KEY_MAKOTO2 description line 1\n"
+    "SPECIES_KEY_MAKOTO2 description line 2\n"
+    "SPECIES_KEY_MAKOTO2 description line 3\n"
+    "SPECIES_KEY_MAKOTO2 description line 4\n");
+
+
+const u8 gKEYMakoto3PokedexText[] = _(
+    "SPECIES_KEY_MAKOTO3 description line 1\n"
+    "SPECIES_KEY_MAKOTO3 description line 2\n"
+    "SPECIES_KEY_MAKOTO3 description line 3\n"
+    "SPECIES_KEY_MAKOTO3 description line 4\n");
+
+
+const u8 gKEYMishio1PokedexText[] = _(
+    "SPECIES_KEY_MISHIO1 description line 1\n"
+    "SPECIES_KEY_MISHIO1 description line 2\n"
+    "SPECIES_KEY_MISHIO1 description line 3\n"
+    "SPECIES_KEY_MISHIO1 description line 4\n");
+
+
+const u8 gKEYMishio2PokedexText[] = _(
+    "SPECIES_KEY_MISHIO2 description line 1\n"
+    "SPECIES_KEY_MISHIO2 description line 2\n"
+    "SPECIES_KEY_MISHIO2 description line 3\n"
+    "SPECIES_KEY_MISHIO2 description line 4\n");
+
+
+const u8 gKEYSayuri1PokedexText[] = _(
+    "SPECIES_KEY_SAYURI1 description line 1\n"
+    "SPECIES_KEY_SAYURI1 description line 2\n"
+    "SPECIES_KEY_SAYURI1 description line 3\n"
+    "SPECIES_KEY_SAYURI1 description line 4\n");
+
+
+const u8 gKEYSayuri2PokedexText[] = _(
+    "SPECIES_KEY_SAYURI2 description line 1\n"
+    "SPECIES_KEY_SAYURI2 description line 2\n"
+    "SPECIES_KEY_SAYURI2 description line 3\n"
+    "SPECIES_KEY_SAYURI2 description line 4\n");
+
+
+const u8 gKEYSayuri3PokedexText[] = _(
+    "SPECIES_KEY_SAYURI3 description line 1\n"
+    "SPECIES_KEY_SAYURI3 description line 2\n"
+    "SPECIES_KEY_SAYURI3 description line 3\n"
+    "SPECIES_KEY_SAYURI3 description line 4\n");
+
+
+const u8 gKEYAkiko1PokedexText[] = _(
+    "SPECIES_KEY_AKIKO1 description line 1\n"
+    "SPECIES_KEY_AKIKO1 description line 2\n"
+    "SPECIES_KEY_AKIKO1 description line 3\n"
+    "SPECIES_KEY_AKIKO1 description line 4\n");
+
+
+const u8 gKEYAkiko2PokedexText[] = _(
+    "SPECIES_KEY_AKIKO2 description line 1\n"
+    "SPECIES_KEY_AKIKO2 description line 2\n"
+    "SPECIES_KEY_AKIKO2 description line 3\n"
+    "SPECIES_KEY_AKIKO2 description line 4\n");
+
+
+const u8 gKEYAkiko3PokedexText[] = _(
+    "SPECIES_KEY_AKIKO3 description line 1\n"
+    "SPECIES_KEY_AKIKO3 description line 2\n"
+    "SPECIES_KEY_AKIKO3 description line 3\n"
+    "SPECIES_KEY_AKIKO3 description line 4\n");
+
+
+const u8 gKEYKaori1PokedexText[] = _(
+    "SPECIES_KEY_KAORI1 description line 1\n"
+    "SPECIES_KEY_KAORI1 description line 2\n"
+    "SPECIES_KEY_KAORI1 description line 3\n"
+    "SPECIES_KEY_KAORI1 description line 4\n");
+
+
+const u8 gKEYKaori2PokedexText[] = _(
+    "SPECIES_KEY_KAORI2 description line 1\n"
+    "SPECIES_KEY_KAORI2 description line 2\n"
+    "SPECIES_KEY_KAORI2 description line 3\n"
+    "SPECIES_KEY_KAORI2 description line 4\n");
+
+
+const u8 gKEYPiroPokedexText[] = _(
+    "SPECIES_KEY_PIRO description line 1\n"
+    "SPECIES_KEY_PIRO description line 2\n"
+    "SPECIES_KEY_PIRO description line 3\n"
+    "SPECIES_KEY_PIRO description line 4\n");
+
+
+const u8 gKEYNagisa1PokedexText[] = _(
+    "SPECIES_KEY_NAGISA1 description line 1\n"
+    "SPECIES_KEY_NAGISA1 description line 2\n"
+    "SPECIES_KEY_NAGISA1 description line 3\n"
+    "SPECIES_KEY_NAGISA1 description line 4\n");
+
+
+const u8 gKEYNagisa2PokedexText[] = _(
+    "SPECIES_KEY_NAGISA2 description line 1\n"
+    "SPECIES_KEY_NAGISA2 description line 2\n"
+    "SPECIES_KEY_NAGISA2 description line 3\n"
+    "SPECIES_KEY_NAGISA2 description line 4\n");
+
+
+const u8 gKEYNagisa3PokedexText[] = _(
+    "SPECIES_KEY_NAGISA3 description line 1\n"
+    "SPECIES_KEY_NAGISA3 description line 2\n"
+    "SPECIES_KEY_NAGISA3 description line 3\n"
+    "SPECIES_KEY_NAGISA3 description line 4\n");
+
+
+const u8 gKEYKyou1PokedexText[] = _(
+    "SPECIES_KEY_KYOU1 description line 1\n"
+    "SPECIES_KEY_KYOU1 description line 2\n"
+    "SPECIES_KEY_KYOU1 description line 3\n"
+    "SPECIES_KEY_KYOU1 description line 4\n");
+
+
+const u8 gKEYKyou2PokedexText[] = _(
+    "SPECIES_KEY_KYOU2 description line 1\n"
+    "SPECIES_KEY_KYOU2 description line 2\n"
+    "SPECIES_KEY_KYOU2 description line 3\n"
+    "SPECIES_KEY_KYOU2 description line 4\n");
+
+
+const u8 gKEYKyou3PokedexText[] = _(
+    "SPECIES_KEY_KYOU3 description line 1\n"
+    "SPECIES_KEY_KYOU3 description line 2\n"
+    "SPECIES_KEY_KYOU3 description line 3\n"
+    "SPECIES_KEY_KYOU3 description line 4\n");
+
+
+const u8 gKEYRyou1PokedexText[] = _(
+    "SPECIES_KEY_RYOU1 description line 1\n"
+    "SPECIES_KEY_RYOU1 description line 2\n"
+    "SPECIES_KEY_RYOU1 description line 3\n"
+    "SPECIES_KEY_RYOU1 description line 4\n");
+
+
+const u8 gKEYRyou2PokedexText[] = _(
+    "SPECIES_KEY_RYOU2 description line 1\n"
+    "SPECIES_KEY_RYOU2 description line 2\n"
+    "SPECIES_KEY_RYOU2 description line 3\n"
+    "SPECIES_KEY_RYOU2 description line 4\n");
+
+
+const u8 gKEYRyou3PokedexText[] = _(
+    "SPECIES_KEY_RYOU3 description line 1\n"
+    "SPECIES_KEY_RYOU3 description line 2\n"
+    "SPECIES_KEY_RYOU3 description line 3\n"
+    "SPECIES_KEY_RYOU3 description line 4\n");
+
+
+const u8 gKEYKotomi1PokedexText[] = _(
+    "SPECIES_KEY_KOTOMI1 description line 1\n"
+    "SPECIES_KEY_KOTOMI1 description line 2\n"
+    "SPECIES_KEY_KOTOMI1 description line 3\n"
+    "SPECIES_KEY_KOTOMI1 description line 4\n");
+
+
+const u8 gKEYKotomi2PokedexText[] = _(
+    "SPECIES_KEY_KOTOMI2 description line 1\n"
+    "SPECIES_KEY_KOTOMI2 description line 2\n"
+    "SPECIES_KEY_KOTOMI2 description line 3\n"
+    "SPECIES_KEY_KOTOMI2 description line 4\n");
+
+
+const u8 gKEYKotomi3PokedexText[] = _(
+    "SPECIES_KEY_KOTOMI3 description line 1\n"
+    "SPECIES_KEY_KOTOMI3 description line 2\n"
+    "SPECIES_KEY_KOTOMI3 description line 3\n"
+    "SPECIES_KEY_KOTOMI3 description line 4\n");
+
+
+const u8 gKEYTomoyo1PokedexText[] = _(
+    "SPECIES_KEY_TOMOYO1 description line 1\n"
+    "SPECIES_KEY_TOMOYO1 description line 2\n"
+    "SPECIES_KEY_TOMOYO1 description line 3\n"
+    "SPECIES_KEY_TOMOYO1 description line 4\n");
+
+
+const u8 gKEYTomoyo2PokedexText[] = _(
+    "SPECIES_KEY_TOMOYO2 description line 1\n"
+    "SPECIES_KEY_TOMOYO2 description line 2\n"
+    "SPECIES_KEY_TOMOYO2 description line 3\n"
+    "SPECIES_KEY_TOMOYO2 description line 4\n");
+
+
+const u8 gKEYTomoyo3PokedexText[] = _(
+    "SPECIES_KEY_TOMOYO3 description line 1\n"
+    "SPECIES_KEY_TOMOYO3 description line 2\n"
+    "SPECIES_KEY_TOMOYO3 description line 3\n"
+    "SPECIES_KEY_TOMOYO3 description line 4\n");
+
+
+const u8 gKEYFuuko1PokedexText[] = _(
+    "SPECIES_KEY_FUUKO1 description line 1\n"
+    "SPECIES_KEY_FUUKO1 description line 2\n"
+    "SPECIES_KEY_FUUKO1 description line 3\n"
+    "SPECIES_KEY_FUUKO1 description line 4\n");
+
+
+const u8 gKEYFuuko2PokedexText[] = _(
+    "SPECIES_KEY_FUUKO2 description line 1\n"
+    "SPECIES_KEY_FUUKO2 description line 2\n"
+    "SPECIES_KEY_FUUKO2 description line 3\n"
+    "SPECIES_KEY_FUUKO2 description line 4\n");
+
+
+const u8 gKEYFuuko3PokedexText[] = _(
+    "SPECIES_KEY_FUUKO3 description line 1\n"
+    "SPECIES_KEY_FUUKO3 description line 2\n"
+    "SPECIES_KEY_FUUKO3 description line 3\n"
+    "SPECIES_KEY_FUUKO3 description line 4\n");
+
+
+const u8 gKEYYukine1PokedexText[] = _(
+    "SPECIES_KEY_YUKINE1 description line 1\n"
+    "SPECIES_KEY_YUKINE1 description line 2\n"
+    "SPECIES_KEY_YUKINE1 description line 3\n"
+    "SPECIES_KEY_YUKINE1 description line 4\n");
+
+
+const u8 gKEYYukine2PokedexText[] = _(
+    "SPECIES_KEY_YUKINE2 description line 1\n"
+    "SPECIES_KEY_YUKINE2 description line 2\n"
+    "SPECIES_KEY_YUKINE2 description line 3\n"
+    "SPECIES_KEY_YUKINE2 description line 4\n");
+
+
+const u8 gKEYYukine3PokedexText[] = _(
+    "SPECIES_KEY_YUKINE3 description line 1\n"
+    "SPECIES_KEY_YUKINE3 description line 2\n"
+    "SPECIES_KEY_YUKINE3 description line 3\n"
+    "SPECIES_KEY_YUKINE3 description line 4\n");
+
+
+const u8 gKEYMisae1PokedexText[] = _(
+    "SPECIES_KEY_MISAE1 description line 1\n"
+    "SPECIES_KEY_MISAE1 description line 2\n"
+    "SPECIES_KEY_MISAE1 description line 3\n"
+    "SPECIES_KEY_MISAE1 description line 4\n");
+
+
+const u8 gKEYMisae2PokedexText[] = _(
+    "SPECIES_KEY_MISAE2 description line 1\n"
+    "SPECIES_KEY_MISAE2 description line 2\n"
+    "SPECIES_KEY_MISAE2 description line 3\n"
+    "SPECIES_KEY_MISAE2 description line 4\n");
+
+
+const u8 gKEYMisae3PokedexText[] = _(
+    "SPECIES_KEY_MISAE3 description line 1\n"
+    "SPECIES_KEY_MISAE3 description line 2\n"
+    "SPECIES_KEY_MISAE3 description line 3\n"
+    "SPECIES_KEY_MISAE3 description line 4\n");
+
+
+const u8 gKEYSanae1PokedexText[] = _(
+    "SPECIES_KEY_SANAE1 description line 1\n"
+    "SPECIES_KEY_SANAE1 description line 2\n"
+    "SPECIES_KEY_SANAE1 description line 3\n"
+    "SPECIES_KEY_SANAE1 description line 4\n");
+
+
+const u8 gKEYSanae2PokedexText[] = _(
+    "SPECIES_KEY_SANAE2 description line 1\n"
+    "SPECIES_KEY_SANAE2 description line 2\n"
+    "SPECIES_KEY_SANAE2 description line 3\n"
+    "SPECIES_KEY_SANAE2 description line 4\n");
+
+
+const u8 gKEYSanae3PokedexText[] = _(
+    "SPECIES_KEY_SANAE3 description line 1\n"
+    "SPECIES_KEY_SANAE3 description line 2\n"
+    "SPECIES_KEY_SANAE3 description line 3\n"
+    "SPECIES_KEY_SANAE3 description line 4\n");
+
+
+const u8 gKEYMei1PokedexText[] = _(
+    "SPECIES_KEY_MEI1 description line 1\n"
+    "SPECIES_KEY_MEI1 description line 2\n"
+    "SPECIES_KEY_MEI1 description line 3\n"
+    "SPECIES_KEY_MEI1 description line 4\n");
+
+
+const u8 gKEYMei2PokedexText[] = _(
+    "SPECIES_KEY_MEI2 description line 1\n"
+    "SPECIES_KEY_MEI2 description line 2\n"
+    "SPECIES_KEY_MEI2 description line 3\n"
+    "SPECIES_KEY_MEI2 description line 4\n");
+
+
+const u8 gKEYUshio1PokedexText[] = _(
+    "SPECIES_KEY_USHIO1 description line 1\n"
+    "SPECIES_KEY_USHIO1 description line 2\n"
+    "SPECIES_KEY_USHIO1 description line 3\n"
+    "SPECIES_KEY_USHIO1 description line 4\n");
+
+
+const u8 gKEYUshio2PokedexText[] = _(
+    "SPECIES_KEY_USHIO2 description line 1\n"
+    "SPECIES_KEY_USHIO2 description line 2\n"
+    "SPECIES_KEY_USHIO2 description line 3\n"
+    "SPECIES_KEY_USHIO2 description line 4\n");
+
+
+const u8 gKEYBotanPokedexText[] = _(
+    "SPECIES_KEY_BOTAN description line 1\n"
+    "SPECIES_KEY_BOTAN description line 2\n"
+    "SPECIES_KEY_BOTAN description line 3\n"
+    "SPECIES_KEY_BOTAN description line 4\n");
+
+
+const u8 gKEYRin1PokedexText[] = _(
+    "SPECIES_KEY_RIN1 description line 1\n"
+    "SPECIES_KEY_RIN1 description line 2\n"
+    "SPECIES_KEY_RIN1 description line 3\n"
+    "SPECIES_KEY_RIN1 description line 4\n");
+
+
+const u8 gKEYRin2PokedexText[] = _(
+    "SPECIES_KEY_RIN2 description line 1\n"
+    "SPECIES_KEY_RIN2 description line 2\n"
+    "SPECIES_KEY_RIN2 description line 3\n"
+    "SPECIES_KEY_RIN2 description line 4\n");
+
+
+const u8 gKEYRin3PokedexText[] = _(
+    "SPECIES_KEY_RIN3 description line 1\n"
+    "SPECIES_KEY_RIN3 description line 2\n"
+    "SPECIES_KEY_RIN3 description line 3\n"
+    "SPECIES_KEY_RIN3 description line 4\n");
+
+
+const u8 gKEYKomari1PokedexText[] = _(
+    "SPECIES_KEY_KOMARI1 description line 1\n"
+    "SPECIES_KEY_KOMARI1 description line 2\n"
+    "SPECIES_KEY_KOMARI1 description line 3\n"
+    "SPECIES_KEY_KOMARI1 description line 4\n");
+
+
+const u8 gKEYKomari2PokedexText[] = _(
+    "SPECIES_KEY_KOMARI2 description line 1\n"
+    "SPECIES_KEY_KOMARI2 description line 2\n"
+    "SPECIES_KEY_KOMARI2 description line 3\n"
+    "SPECIES_KEY_KOMARI2 description line 4\n");
+
+
+const u8 gKEYKomari3PokedexText[] = _(
+    "SPECIES_KEY_KOMARI3 description line 1\n"
+    "SPECIES_KEY_KOMARI3 description line 2\n"
+    "SPECIES_KEY_KOMARI3 description line 3\n"
+    "SPECIES_KEY_KOMARI3 description line 4\n");
+
+
+const u8 gKEYYuiko1PokedexText[] = _(
+    "SPECIES_KEY_YUIKO1 description line 1\n"
+    "SPECIES_KEY_YUIKO1 description line 2\n"
+    "SPECIES_KEY_YUIKO1 description line 3\n"
+    "SPECIES_KEY_YUIKO1 description line 4\n");
+
+
+const u8 gKEYYuiko2PokedexText[] = _(
+    "SPECIES_KEY_YUIKO2 description line 1\n"
+    "SPECIES_KEY_YUIKO2 description line 2\n"
+    "SPECIES_KEY_YUIKO2 description line 3\n"
+    "SPECIES_KEY_YUIKO2 description line 4\n");
+
+
+const u8 gKEYYuiko3PokedexText[] = _(
+    "SPECIES_KEY_YUIKO3 description line 1\n"
+    "SPECIES_KEY_YUIKO3 description line 2\n"
+    "SPECIES_KEY_YUIKO3 description line 3\n"
+    "SPECIES_KEY_YUIKO3 description line 4\n");
+
+
+const u8 gKEYMio1PokedexText[] = _(
+    "SPECIES_KEY_MIO1 description line 1\n"
+    "SPECIES_KEY_MIO1 description line 2\n"
+    "SPECIES_KEY_MIO1 description line 3\n"
+    "SPECIES_KEY_MIO1 description line 4\n");
+
+
+const u8 gKEYMio2PokedexText[] = _(
+    "SPECIES_KEY_MIO2 description line 1\n"
+    "SPECIES_KEY_MIO2 description line 2\n"
+    "SPECIES_KEY_MIO2 description line 3\n"
+    "SPECIES_KEY_MIO2 description line 4\n");
+
+
+const u8 gKEYMio3PokedexText[] = _(
+    "SPECIES_KEY_MIO3 description line 1\n"
+    "SPECIES_KEY_MIO3 description line 2\n"
+    "SPECIES_KEY_MIO3 description line 3\n"
+    "SPECIES_KEY_MIO3 description line 4\n");
+
+
+const u8 gKEYHaruka1PokedexText[] = _(
+    "SPECIES_KEY_HARUKA1 description line 1\n"
+    "SPECIES_KEY_HARUKA1 description line 2\n"
+    "SPECIES_KEY_HARUKA1 description line 3\n"
+    "SPECIES_KEY_HARUKA1 description line 4\n");
+
+
+const u8 gKEYHaruka2PokedexText[] = _(
+    "SPECIES_KEY_HARUKA2 description line 1\n"
+    "SPECIES_KEY_HARUKA2 description line 2\n"
+    "SPECIES_KEY_HARUKA2 description line 3\n"
+    "SPECIES_KEY_HARUKA2 description line 4\n");
+
+
+const u8 gKEYHaruka3PokedexText[] = _(
+    "SPECIES_KEY_HARUKA3 description line 1\n"
+    "SPECIES_KEY_HARUKA3 description line 2\n"
+    "SPECIES_KEY_HARUKA3 description line 3\n"
+    "SPECIES_KEY_HARUKA3 description line 4\n");
+
+
+const u8 gKEYKud1PokedexText[] = _(
+    "SPECIES_KEY_KUD1 description line 1\n"
+    "SPECIES_KEY_KUD1 description line 2\n"
+    "SPECIES_KEY_KUD1 description line 3\n"
+    "SPECIES_KEY_KUD1 description line 4\n");
+
+
+const u8 gKEYKud2PokedexText[] = _(
+    "SPECIES_KEY_KUD2 description line 1\n"
+    "SPECIES_KEY_KUD2 description line 2\n"
+    "SPECIES_KEY_KUD2 description line 3\n"
+    "SPECIES_KEY_KUD2 description line 4\n");
+
+
+const u8 gKEYKud3PokedexText[] = _(
+    "SPECIES_KEY_KUD3 description line 1\n"
+    "SPECIES_KEY_KUD3 description line 2\n"
+    "SPECIES_KEY_KUD3 description line 3\n"
+    "SPECIES_KEY_KUD3 description line 4\n");
+
+
+const u8 gKEYKanata1PokedexText[] = _(
+    "SPECIES_KEY_KANATA1 description line 1\n"
+    "SPECIES_KEY_KANATA1 description line 2\n"
+    "SPECIES_KEY_KANATA1 description line 3\n"
+    "SPECIES_KEY_KANATA1 description line 4\n");
+
+
+const u8 gKEYKanata2PokedexText[] = _(
+    "SPECIES_KEY_KANATA2 description line 1\n"
+    "SPECIES_KEY_KANATA2 description line 2\n"
+    "SPECIES_KEY_KANATA2 description line 3\n"
+    "SPECIES_KEY_KANATA2 description line 4\n");
+
+
+const u8 gKEYKanata3PokedexText[] = _(
+    "SPECIES_KEY_KANATA3 description line 1\n"
+    "SPECIES_KEY_KANATA3 description line 2\n"
+    "SPECIES_KEY_KANATA3 description line 3\n"
+    "SPECIES_KEY_KANATA3 description line 4\n");
+
+
+const u8 gKEYSasami1PokedexText[] = _(
+    "SPECIES_KEY_SASAMI1 description line 1\n"
+    "SPECIES_KEY_SASAMI1 description line 2\n"
+    "SPECIES_KEY_SASAMI1 description line 3\n"
+    "SPECIES_KEY_SASAMI1 description line 4\n");
+
+
+const u8 gKEYSasami2PokedexText[] = _(
+    "SPECIES_KEY_SASAMI2 description line 1\n"
+    "SPECIES_KEY_SASAMI2 description line 2\n"
+    "SPECIES_KEY_SASAMI2 description line 3\n"
+    "SPECIES_KEY_SASAMI2 description line 4\n");
+
+
+const u8 gKEYSasami3PokedexText[] = _(
+    "SPECIES_KEY_SASAMI3 description line 1\n"
+    "SPECIES_KEY_SASAMI3 description line 2\n"
+    "SPECIES_KEY_SASAMI3 description line 3\n"
+    "SPECIES_KEY_SASAMI3 description line 4\n");
+
+
+const u8 gBGHSMiki1PokedexText[] = _(
+    "SPECIES_BGHS_MIKI1 description line 1\n"
+    "SPECIES_BGHS_MIKI1 description line 2\n"
+    "SPECIES_BGHS_MIKI1 description line 3\n"
+    "SPECIES_BGHS_MIKI1 description line 4\n");
+
+
+const u8 gBGHSMiki2PokedexText[] = _(
+    "SPECIES_BGHS_MIKI2 description line 1\n"
+    "SPECIES_BGHS_MIKI2 description line 2\n"
+    "SPECIES_BGHS_MIKI2 description line 3\n"
+    "SPECIES_BGHS_MIKI2 description line 4\n");
+
+
+const u8 gBGHSSubaru1PokedexText[] = _(
+    "SPECIES_BGHS_SUBARU1 description line 1\n"
+    "SPECIES_BGHS_SUBARU1 description line 2\n"
+    "SPECIES_BGHS_SUBARU1 description line 3\n"
+    "SPECIES_BGHS_SUBARU1 description line 4\n");
+
+
+const u8 gBGHSSubaru2PokedexText[] = _(
+    "SPECIES_BGHS_SUBARU2 description line 1\n"
+    "SPECIES_BGHS_SUBARU2 description line 2\n"
+    "SPECIES_BGHS_SUBARU2 description line 3\n"
+    "SPECIES_BGHS_SUBARU2 description line 4\n");
+
+
+const u8 gBGHSHaruka1PokedexText[] = _(
+    "SPECIES_BGHS_HARUKA1 description line 1\n"
+    "SPECIES_BGHS_HARUKA1 description line 2\n"
+    "SPECIES_BGHS_HARUKA1 description line 3\n"
+    "SPECIES_BGHS_HARUKA1 description line 4\n");
+
+
+const u8 gBGHSHaruka2PokedexText[] = _(
+    "SPECIES_BGHS_HARUKA2 description line 1\n"
+    "SPECIES_BGHS_HARUKA2 description line 2\n"
+    "SPECIES_BGHS_HARUKA2 description line 3\n"
+    "SPECIES_BGHS_HARUKA2 description line 4\n");
+
+
+const u8 gBGHSNozomi1PokedexText[] = _(
+    "SPECIES_BGHS_NOZOMI1 description line 1\n"
+    "SPECIES_BGHS_NOZOMI1 description line 2\n"
+    "SPECIES_BGHS_NOZOMI1 description line 3\n"
+    "SPECIES_BGHS_NOZOMI1 description line 4\n");
+
+
+const u8 gBGHSNozomi2PokedexText[] = _(
+    "SPECIES_BGHS_NOZOMI2 description line 1\n"
+    "SPECIES_BGHS_NOZOMI2 description line 2\n"
+    "SPECIES_BGHS_NOZOMI2 description line 3\n"
+    "SPECIES_BGHS_NOZOMI2 description line 4\n");
+
+
+const u8 gBGHSYuri1PokedexText[] = _(
+    "SPECIES_BGHS_YURI1 description line 1\n"
+    "SPECIES_BGHS_YURI1 description line 2\n"
+    "SPECIES_BGHS_YURI1 description line 3\n"
+    "SPECIES_BGHS_YURI1 description line 4\n");
+
+
+const u8 gBGHSYuri2PokedexText[] = _(
+    "SPECIES_BGHS_YURI2 description line 1\n"
+    "SPECIES_BGHS_YURI2 description line 2\n"
+    "SPECIES_BGHS_YURI2 description line 3\n"
+    "SPECIES_BGHS_YURI2 description line 4\n");
+
+
+const u8 gBGHSKurumi1PokedexText[] = _(
+    "SPECIES_BGHS_KURUMI1 description line 1\n"
+    "SPECIES_BGHS_KURUMI1 description line 2\n"
+    "SPECIES_BGHS_KURUMI1 description line 3\n"
+    "SPECIES_BGHS_KURUMI1 description line 4\n");
+
+
+const u8 gBGHSKurumi2APokedexText[] = _(
+    "SPECIES_BGHS_KURUMI2A description line 1\n"
+    "SPECIES_BGHS_KURUMI2A description line 2\n"
+    "SPECIES_BGHS_KURUMI2A description line 3\n"
+    "SPECIES_BGHS_KURUMI2A description line 4\n");
+
+
+const u8 gBGHSKurumi2BPokedexText[] = _(
+    "SPECIES_BGHS_KURUMI2B description line 1\n"
+    "SPECIES_BGHS_KURUMI2B description line 2\n"
+    "SPECIES_BGHS_KURUMI2B description line 3\n"
+    "SPECIES_BGHS_KURUMI2B description line 4\n");
+
+
+const u8 gBGHSAnko1PokedexText[] = _(
+    "SPECIES_BGHS_ANKO1 description line 1\n"
+    "SPECIES_BGHS_ANKO1 description line 2\n"
+    "SPECIES_BGHS_ANKO1 description line 3\n"
+    "SPECIES_BGHS_ANKO1 description line 4\n");
+
+
+const u8 gBGHSAnko2APokedexText[] = _(
+    "SPECIES_BGHS_ANKO2A description line 1\n"
+    "SPECIES_BGHS_ANKO2A description line 2\n"
+    "SPECIES_BGHS_ANKO2A description line 3\n"
+    "SPECIES_BGHS_ANKO2A description line 4\n");
+
+
+const u8 gBGHSAnko2BPokedexText[] = _(
+    "SPECIES_BGHS_ANKO2B description line 1\n"
+    "SPECIES_BGHS_ANKO2B description line 2\n"
+    "SPECIES_BGHS_ANKO2B description line 3\n"
+    "SPECIES_BGHS_ANKO2B description line 4\n");
+
+
+const u8 gBGHSRenge1PokedexText[] = _(
+    "SPECIES_BGHS_RENGE1 description line 1\n"
+    "SPECIES_BGHS_RENGE1 description line 2\n"
+    "SPECIES_BGHS_RENGE1 description line 3\n"
+    "SPECIES_BGHS_RENGE1 description line 4\n");
+
+
+const u8 gBGHSRenge2PokedexText[] = _(
+    "SPECIES_BGHS_RENGE2 description line 1\n"
+    "SPECIES_BGHS_RENGE2 description line 2\n"
+    "SPECIES_BGHS_RENGE2 description line 3\n"
+    "SPECIES_BGHS_RENGE2 description line 4\n");
+
+
+const u8 gBGHSAsuha1PokedexText[] = _(
+    "SPECIES_BGHS_ASUHA1 description line 1\n"
+    "SPECIES_BGHS_ASUHA1 description line 2\n"
+    "SPECIES_BGHS_ASUHA1 description line 3\n"
+    "SPECIES_BGHS_ASUHA1 description line 4\n");
+
+
+const u8 gBGHSAsuha2PokedexText[] = _(
+    "SPECIES_BGHS_ASUHA2 description line 1\n"
+    "SPECIES_BGHS_ASUHA2 description line 2\n"
+    "SPECIES_BGHS_ASUHA2 description line 3\n"
+    "SPECIES_BGHS_ASUHA2 description line 4\n");
+
+
+const u8 gBGHSSakura1PokedexText[] = _(
+    "SPECIES_BGHS_SAKURA1 description line 1\n"
+    "SPECIES_BGHS_SAKURA1 description line 2\n"
+    "SPECIES_BGHS_SAKURA1 description line 3\n"
+    "SPECIES_BGHS_SAKURA1 description line 4\n");
+
+
+const u8 gBGHSSakura2PokedexText[] = _(
+    "SPECIES_BGHS_SAKURA2 description line 1\n"
+    "SPECIES_BGHS_SAKURA2 description line 2\n"
+    "SPECIES_BGHS_SAKURA2 description line 3\n"
+    "SPECIES_BGHS_SAKURA2 description line 4\n");
+
+
+const u8 gBGHSHinata1PokedexText[] = _(
+    "SPECIES_BGHS_HINATA1 description line 1\n"
+    "SPECIES_BGHS_HINATA1 description line 2\n"
+    "SPECIES_BGHS_HINATA1 description line 3\n"
+    "SPECIES_BGHS_HINATA1 description line 4\n");
+
+
+const u8 gBGHSHinata2APokedexText[] = _(
+    "SPECIES_BGHS_HINATA2A description line 1\n"
+    "SPECIES_BGHS_HINATA2A description line 2\n"
+    "SPECIES_BGHS_HINATA2A description line 3\n"
+    "SPECIES_BGHS_HINATA2A description line 4\n");
+
+
+const u8 gBGHSHinata2BPokedexText[] = _(
+    "SPECIES_BGHS_HINATA2B description line 1\n"
+    "SPECIES_BGHS_HINATA2B description line 2\n"
+    "SPECIES_BGHS_HINATA2B description line 3\n"
+    "SPECIES_BGHS_HINATA2B description line 4\n");
+
+
+const u8 gBGHSKaede1PokedexText[] = _(
+    "SPECIES_BGHS_KAEDE1 description line 1\n"
+    "SPECIES_BGHS_KAEDE1 description line 2\n"
+    "SPECIES_BGHS_KAEDE1 description line 3\n"
+    "SPECIES_BGHS_KAEDE1 description line 4\n");
+
+
+const u8 gBGHSKaede2PokedexText[] = _(
+    "SPECIES_BGHS_KAEDE2 description line 1\n"
+    "SPECIES_BGHS_KAEDE2 description line 2\n"
+    "SPECIES_BGHS_KAEDE2 description line 3\n"
+    "SPECIES_BGHS_KAEDE2 description line 4\n");
+
+
+const u8 gBGHSMichael1PokedexText[] = _(
+    "SPECIES_BGHS_MICHAEL1 description line 1\n"
+    "SPECIES_BGHS_MICHAEL1 description line 2\n"
+    "SPECIES_BGHS_MICHAEL1 description line 3\n"
+    "SPECIES_BGHS_MICHAEL1 description line 4\n");
+
+
+const u8 gBGHSMichael2PokedexText[] = _(
+    "SPECIES_BGHS_MICHAEL2 description line 1\n"
+    "SPECIES_BGHS_MICHAEL2 description line 2\n"
+    "SPECIES_BGHS_MICHAEL2 description line 3\n"
+    "SPECIES_BGHS_MICHAEL2 description line 4\n");
+
+
+const u8 gBGHSKokomi1PokedexText[] = _(
+    "SPECIES_BGHS_KOKOMI1 description line 1\n"
+    "SPECIES_BGHS_KOKOMI1 description line 2\n"
+    "SPECIES_BGHS_KOKOMI1 description line 3\n"
+    "SPECIES_BGHS_KOKOMI1 description line 4\n");
+
+
+const u8 gBGHSKokomi2PokedexText[] = _(
+    "SPECIES_BGHS_KOKOMI2 description line 1\n"
+    "SPECIES_BGHS_KOKOMI2 description line 2\n"
+    "SPECIES_BGHS_KOKOMI2 description line 3\n"
+    "SPECIES_BGHS_KOKOMI2 description line 4\n");
+
+
+const u8 gBGHSUrara1PokedexText[] = _(
+    "SPECIES_BGHS_URARA1 description line 1\n"
+    "SPECIES_BGHS_URARA1 description line 2\n"
+    "SPECIES_BGHS_URARA1 description line 3\n"
+    "SPECIES_BGHS_URARA1 description line 4\n");
+
+
+const u8 gBGHSUrara2PokedexText[] = _(
+    "SPECIES_BGHS_URARA2 description line 1\n"
+    "SPECIES_BGHS_URARA2 description line 2\n"
+    "SPECIES_BGHS_URARA2 description line 3\n"
+    "SPECIES_BGHS_URARA2 description line 4\n");
+
+
+const u8 gBGHSSadone1PokedexText[] = _(
+    "SPECIES_BGHS_SADONE1 description line 1\n"
+    "SPECIES_BGHS_SADONE1 description line 2\n"
+    "SPECIES_BGHS_SADONE1 description line 3\n"
+    "SPECIES_BGHS_SADONE1 description line 4\n");
+
+
+const u8 gBGHSSadone2PokedexText[] = _(
+    "SPECIES_BGHS_SADONE2 description line 1\n"
+    "SPECIES_BGHS_SADONE2 description line 2\n"
+    "SPECIES_BGHS_SADONE2 description line 3\n"
+    "SPECIES_BGHS_SADONE2 description line 4\n");
+
+
+const u8 gBGHSKanon1PokedexText[] = _(
+    "SPECIES_BGHS_KANON1 description line 1\n"
+    "SPECIES_BGHS_KANON1 description line 2\n"
+    "SPECIES_BGHS_KANON1 description line 3\n"
+    "SPECIES_BGHS_KANON1 description line 4\n");
+
+
+const u8 gBGHSKanon2APokedexText[] = _(
+    "SPECIES_BGHS_KANON2A description line 1\n"
+    "SPECIES_BGHS_KANON2A description line 2\n"
+    "SPECIES_BGHS_KANON2A description line 3\n"
+    "SPECIES_BGHS_KANON2A description line 4\n");
+
+
+const u8 gBGHSKanon2BPokedexText[] = _(
+    "SPECIES_BGHS_KANON2B description line 1\n"
+    "SPECIES_BGHS_KANON2B description line 2\n"
+    "SPECIES_BGHS_KANON2B description line 3\n"
+    "SPECIES_BGHS_KANON2B description line 4\n");
+
+
+const u8 gBGHSShiho1PokedexText[] = _(
+    "SPECIES_BGHS_SHIHO1 description line 1\n"
+    "SPECIES_BGHS_SHIHO1 description line 2\n"
+    "SPECIES_BGHS_SHIHO1 description line 3\n"
+    "SPECIES_BGHS_SHIHO1 description line 4\n");
+
+
+const u8 gBGHSShiho2APokedexText[] = _(
+    "SPECIES_BGHS_SHIHO2A description line 1\n"
+    "SPECIES_BGHS_SHIHO2A description line 2\n"
+    "SPECIES_BGHS_SHIHO2A description line 3\n"
+    "SPECIES_BGHS_SHIHO2A description line 4\n");
+
+
+const u8 gBGHSShiho2BPokedexText[] = _(
+    "SPECIES_BGHS_SHIHO2B description line 1\n"
+    "SPECIES_BGHS_SHIHO2B description line 2\n"
+    "SPECIES_BGHS_SHIHO2B description line 3\n"
+    "SPECIES_BGHS_SHIHO2B description line 4\n");
+
+
+const u8 gBGHSMisaki1PokedexText[] = _(
+    "SPECIES_BGHS_MISAKI1 description line 1\n"
+    "SPECIES_BGHS_MISAKI1 description line 2\n"
+    "SPECIES_BGHS_MISAKI1 description line 3\n"
+    "SPECIES_BGHS_MISAKI1 description line 4\n");
+
+
+const u8 gBGHSMisaki2PokedexText[] = _(
+    "SPECIES_BGHS_MISAKI2 description line 1\n"
+    "SPECIES_BGHS_MISAKI2 description line 2\n"
+    "SPECIES_BGHS_MISAKI2 description line 3\n"
+    "SPECIES_BGHS_MISAKI2 description line 4\n");
+
+
+const u8 gBGHSMari1PokedexText[] = _(
+    "SPECIES_BGHS_MARI1 description line 1\n"
+    "SPECIES_BGHS_MARI1 description line 2\n"
+    "SPECIES_BGHS_MARI1 description line 3\n"
+    "SPECIES_BGHS_MARI1 description line 4\n");
+
+
+const u8 gBGHSMari2PokedexText[] = _(
+    "SPECIES_BGHS_MARI2 description line 1\n"
+    "SPECIES_BGHS_MARI2 description line 2\n"
+    "SPECIES_BGHS_MARI2 description line 3\n"
+    "SPECIES_BGHS_MARI2 description line 4\n");
+
+
+const u8 gBGHSErisPokedexText[] = _(
+    "SPECIES_BGHS_ERIS description line 1\n"
+    "SPECIES_BGHS_ERIS description line 2\n"
+    "SPECIES_BGHS_ERIS description line 3\n"
+    "SPECIES_BGHS_ERIS description line 4\n");
+
+
+const u8 gBGHSItsuki1PokedexText[] = _(
+    "SPECIES_BGHS_ITSUKI1 description line 1\n"
+    "SPECIES_BGHS_ITSUKI1 description line 2\n"
+    "SPECIES_BGHS_ITSUKI1 description line 3\n"
+    "SPECIES_BGHS_ITSUKI1 description line 4\n");
+
+
+const u8 gBGHSItsuki2PokedexText[] = _(
+    "SPECIES_BGHS_ITSUKI2 description line 1\n"
+    "SPECIES_BGHS_ITSUKI2 description line 2\n"
+    "SPECIES_BGHS_ITSUKI2 description line 3\n"
+    "SPECIES_BGHS_ITSUKI2 description line 4\n");
+
+
+const u8 gBGHSFuran1PokedexText[] = _(
+    "SPECIES_BGHS_FURAN1 description line 1\n"
+    "SPECIES_BGHS_FURAN1 description line 2\n"
+    "SPECIES_BGHS_FURAN1 description line 3\n"
+    "SPECIES_BGHS_FURAN1 description line 4\n");
+
+
+const u8 gBGHSFuran2PokedexText[] = _(
+    "SPECIES_BGHS_FURAN2 description line 1\n"
+    "SPECIES_BGHS_FURAN2 description line 2\n"
+    "SPECIES_BGHS_FURAN2 description line 3\n"
+    "SPECIES_BGHS_FURAN2 description line 4\n");
+
+
+const u8 gBGHSErika1PokedexText[] = _(
+    "SPECIES_BGHS_ERIKA1 description line 1\n"
+    "SPECIES_BGHS_ERIKA1 description line 2\n"
+    "SPECIES_BGHS_ERIKA1 description line 3\n"
+    "SPECIES_BGHS_ERIKA1 description line 4\n");
+
+
+const u8 gBGHSErika2PokedexText[] = _(
+    "SPECIES_BGHS_ERIKA2 description line 1\n"
+    "SPECIES_BGHS_ERIKA2 description line 2\n"
+    "SPECIES_BGHS_ERIKA2 description line 3\n"
+    "SPECIES_BGHS_ERIKA2 description line 4\n");
+
+
+const u8 gBGHSEvinaPokedexText[] = _(
+    "SPECIES_BGHS_EVINA description line 1\n"
+    "SPECIES_BGHS_EVINA description line 2\n"
+    "SPECIES_BGHS_EVINA description line 3\n"
+    "SPECIES_BGHS_EVINA description line 4\n");
+
+
+const u8 gBGHSAoi1PokedexText[] = _(
+    "SPECIES_BGHS_AOI1 description line 1\n"
+    "SPECIES_BGHS_AOI1 description line 2\n"
+    "SPECIES_BGHS_AOI1 description line 3\n"
+    "SPECIES_BGHS_AOI1 description line 4\n");
+
+
+const u8 gBGHSAoi2PokedexText[] = _(
+    "SPECIES_BGHS_AOI2 description line 1\n"
+    "SPECIES_BGHS_AOI2 description line 2\n"
+    "SPECIES_BGHS_AOI2 description line 3\n"
+    "SPECIES_BGHS_AOI2 description line 4\n");
+
+
+const u8 gBGHSBotanPokedexText[] = _(
+    "SPECIES_BGHS_BOTAN description line 1\n"
+    "SPECIES_BGHS_BOTAN description line 2\n"
+    "SPECIES_BGHS_BOTAN description line 3\n"
+    "SPECIES_BGHS_BOTAN description line 4\n");
+
+
+const u8 gPCNagisaPokedexText[] = _(
+    "SPECIES_PC_NAGISA description line 1\n"
+    "SPECIES_PC_NAGISA description line 2\n"
+    "SPECIES_PC_NAGISA description line 3\n"
+    "SPECIES_PC_NAGISA description line 4\n");
+
+
+const u8 gPCCureBlack1PokedexText[] = _(
+    "SPECIES_PC_CUREBLACK1 description line 1\n"
+    "SPECIES_PC_CUREBLACK1 description line 2\n"
+    "SPECIES_PC_CUREBLACK1 description line 3\n"
+    "SPECIES_PC_CUREBLACK1 description line 4\n");
+
+
+const u8 gPCCureBlack2PokedexText[] = _(
+    "SPECIES_PC_CUREBLACK2 description line 1\n"
+    "SPECIES_PC_CUREBLACK2 description line 2\n"
+    "SPECIES_PC_CUREBLACK2 description line 3\n"
+    "SPECIES_PC_CUREBLACK2 description line 4\n");
+
+
+const u8 gPCHonokaPokedexText[] = _(
+    "SPECIES_PC_HONOKA description line 1\n"
+    "SPECIES_PC_HONOKA description line 2\n"
+    "SPECIES_PC_HONOKA description line 3\n"
+    "SPECIES_PC_HONOKA description line 4\n");
+
+
+const u8 gPCCureWhite1PokedexText[] = _(
+    "SPECIES_PC_CUREWHITE1 description line 1\n"
+    "SPECIES_PC_CUREWHITE1 description line 2\n"
+    "SPECIES_PC_CUREWHITE1 description line 3\n"
+    "SPECIES_PC_CUREWHITE1 description line 4\n");
+
+
+const u8 gPCCureWhite2PokedexText[] = _(
+    "SPECIES_PC_CUREWHITE2 description line 1\n"
+    "SPECIES_PC_CUREWHITE2 description line 2\n"
+    "SPECIES_PC_CUREWHITE2 description line 3\n"
+    "SPECIES_PC_CUREWHITE2 description line 4\n");
+
+
+const u8 gPCHikariPokedexText[] = _(
+    "SPECIES_PC_HIKARI description line 1\n"
+    "SPECIES_PC_HIKARI description line 2\n"
+    "SPECIES_PC_HIKARI description line 3\n"
+    "SPECIES_PC_HIKARI description line 4\n");
+
+
+const u8 gPCShinyLuminous1PokedexText[] = _(
+    "SPECIES_PC_SHINYLUMINOUS1 description line 1\n"
+    "SPECIES_PC_SHINYLUMINOUS1 description line 2\n"
+    "SPECIES_PC_SHINYLUMINOUS1 description line 3\n"
+    "SPECIES_PC_SHINYLUMINOUS1 description line 4\n");
+
+
+const u8 gPCShinyLuminous2PokedexText[] = _(
+    "SPECIES_PC_SHINYLUMINOUS2 description line 1\n"
+    "SPECIES_PC_SHINYLUMINOUS2 description line 2\n"
+    "SPECIES_PC_SHINYLUMINOUS2 description line 3\n"
+    "SPECIES_PC_SHINYLUMINOUS2 description line 4\n");
+
+
+const u8 gPCSakiPokedexText[] = _(
+    "SPECIES_PC_SAKI description line 1\n"
+    "SPECIES_PC_SAKI description line 2\n"
+    "SPECIES_PC_SAKI description line 3\n"
+    "SPECIES_PC_SAKI description line 4\n");
+
+
+const u8 gPCCureBloomPokedexText[] = _(
+    "SPECIES_PC_CUREBLOOM description line 1\n"
+    "SPECIES_PC_CUREBLOOM description line 2\n"
+    "SPECIES_PC_CUREBLOOM description line 3\n"
+    "SPECIES_PC_CUREBLOOM description line 4\n");
+
+
+const u8 gPCCureBrightPokedexText[] = _(
+    "SPECIES_PC_CUREBRIGHT description line 1\n"
+    "SPECIES_PC_CUREBRIGHT description line 2\n"
+    "SPECIES_PC_CUREBRIGHT description line 3\n"
+    "SPECIES_PC_CUREBRIGHT description line 4\n");
+
+
+const u8 gPCMaiPokedexText[] = _(
+    "SPECIES_PC_MAI description line 1\n"
+    "SPECIES_PC_MAI description line 2\n"
+    "SPECIES_PC_MAI description line 3\n"
+    "SPECIES_PC_MAI description line 4\n");
+
+
+const u8 gPCCureEgretPokedexText[] = _(
+    "SPECIES_PC_CUREEGRET description line 1\n"
+    "SPECIES_PC_CUREEGRET description line 2\n"
+    "SPECIES_PC_CUREEGRET description line 3\n"
+    "SPECIES_PC_CUREEGRET description line 4\n");
+
+
+const u8 gPCCureWindyPokedexText[] = _(
+    "SPECIES_PC_CUREWINDY description line 1\n"
+    "SPECIES_PC_CUREWINDY description line 2\n"
+    "SPECIES_PC_CUREWINDY description line 3\n"
+    "SPECIES_PC_CUREWINDY description line 4\n");
+
+
+const u8 gPCNozomiPokedexText[] = _(
+    "SPECIES_PC_NOZOMI description line 1\n"
+    "SPECIES_PC_NOZOMI description line 2\n"
+    "SPECIES_PC_NOZOMI description line 3\n"
+    "SPECIES_PC_NOZOMI description line 4\n");
+
+
+const u8 gPCCureDream1APokedexText[] = _(
+    "SPECIES_PC_CUREDREAM1A description line 1\n"
+    "SPECIES_PC_CUREDREAM1A description line 2\n"
+    "SPECIES_PC_CUREDREAM1A description line 3\n"
+    "SPECIES_PC_CUREDREAM1A description line 4\n");
+
+
+const u8 gPCCureDream1BPokedexText[] = _(
+    "SPECIES_PC_CUREDREAM1B description line 1\n"
+    "SPECIES_PC_CUREDREAM1B description line 2\n"
+    "SPECIES_PC_CUREDREAM1B description line 3\n"
+    "SPECIES_PC_CUREDREAM1B description line 4\n");
+
+
+const u8 gPCCureDream2PokedexText[] = _(
+    "SPECIES_PC_CUREDREAM2 description line 1\n"
+    "SPECIES_PC_CUREDREAM2 description line 2\n"
+    "SPECIES_PC_CUREDREAM2 description line 3\n"
+    "SPECIES_PC_CUREDREAM2 description line 4\n");
+
+
+const u8 gPCRinPokedexText[] = _(
+    "SPECIES_PC_RIN description line 1\n"
+    "SPECIES_PC_RIN description line 2\n"
+    "SPECIES_PC_RIN description line 3\n"
+    "SPECIES_PC_RIN description line 4\n");
+
+
+const u8 gPCCureRouge1APokedexText[] = _(
+    "SPECIES_PC_CUREROUGE1A description line 1\n"
+    "SPECIES_PC_CUREROUGE1A description line 2\n"
+    "SPECIES_PC_CUREROUGE1A description line 3\n"
+    "SPECIES_PC_CUREROUGE1A description line 4\n");
+
+
+const u8 gPCCureRouge1BPokedexText[] = _(
+    "SPECIES_PC_CUREROUGE1B description line 1\n"
+    "SPECIES_PC_CUREROUGE1B description line 2\n"
+    "SPECIES_PC_CUREROUGE1B description line 3\n"
+    "SPECIES_PC_CUREROUGE1B description line 4\n");
+
+
+const u8 gPCCureRouge2PokedexText[] = _(
+    "SPECIES_PC_CUREROUGE2 description line 1\n"
+    "SPECIES_PC_CUREROUGE2 description line 2\n"
+    "SPECIES_PC_CUREROUGE2 description line 3\n"
+    "SPECIES_PC_CUREROUGE2 description line 4\n");
+
+
+const u8 gPCUraraPokedexText[] = _(
+    "SPECIES_PC_URARA description line 1\n"
+    "SPECIES_PC_URARA description line 2\n"
+    "SPECIES_PC_URARA description line 3\n"
+    "SPECIES_PC_URARA description line 4\n");
+
+
+const u8 gPCCureLemonade1APokedexText[] = _(
+    "SPECIES_PC_CURELEMONADE1A description line 1\n"
+    "SPECIES_PC_CURELEMONADE1A description line 2\n"
+    "SPECIES_PC_CURELEMONADE1A description line 3\n"
+    "SPECIES_PC_CURELEMONADE1A description line 4\n");
+
+
+const u8 gPCCureLemonade1BPokedexText[] = _(
+    "SPECIES_PC_CURELEMONADE1B description line 1\n"
+    "SPECIES_PC_CURELEMONADE1B description line 2\n"
+    "SPECIES_PC_CURELEMONADE1B description line 3\n"
+    "SPECIES_PC_CURELEMONADE1B description line 4\n");
+
+
+const u8 gPCCureLemonade2PokedexText[] = _(
+    "SPECIES_PC_CURELEMONADE2 description line 1\n"
+    "SPECIES_PC_CURELEMONADE2 description line 2\n"
+    "SPECIES_PC_CURELEMONADE2 description line 3\n"
+    "SPECIES_PC_CURELEMONADE2 description line 4\n");
+
+
+const u8 gPCKomachiPokedexText[] = _(
+    "SPECIES_PC_KOMACHI description line 1\n"
+    "SPECIES_PC_KOMACHI description line 2\n"
+    "SPECIES_PC_KOMACHI description line 3\n"
+    "SPECIES_PC_KOMACHI description line 4\n");
+
+
+const u8 gPCCureMint1APokedexText[] = _(
+    "SPECIES_PC_CUREMINT1A description line 1\n"
+    "SPECIES_PC_CUREMINT1A description line 2\n"
+    "SPECIES_PC_CUREMINT1A description line 3\n"
+    "SPECIES_PC_CUREMINT1A description line 4\n");
+
+
+const u8 gPCCureMint1BPokedexText[] = _(
+    "SPECIES_PC_CUREMINT1B description line 1\n"
+    "SPECIES_PC_CUREMINT1B description line 2\n"
+    "SPECIES_PC_CUREMINT1B description line 3\n"
+    "SPECIES_PC_CUREMINT1B description line 4\n");
+
+
+const u8 gPCCureMint2PokedexText[] = _(
+    "SPECIES_PC_CUREMINT2 description line 1\n"
+    "SPECIES_PC_CUREMINT2 description line 2\n"
+    "SPECIES_PC_CUREMINT2 description line 3\n"
+    "SPECIES_PC_CUREMINT2 description line 4\n");
+
+
+const u8 gPCKarenPokedexText[] = _(
+    "SPECIES_PC_KAREN description line 1\n"
+    "SPECIES_PC_KAREN description line 2\n"
+    "SPECIES_PC_KAREN description line 3\n"
+    "SPECIES_PC_KAREN description line 4\n");
+
+
+const u8 gPCCureAqua1APokedexText[] = _(
+    "SPECIES_PC_CUREAQUA1A description line 1\n"
+    "SPECIES_PC_CUREAQUA1A description line 2\n"
+    "SPECIES_PC_CUREAQUA1A description line 3\n"
+    "SPECIES_PC_CUREAQUA1A description line 4\n");
+
+
+const u8 gPCCureAqua1BPokedexText[] = _(
+    "SPECIES_PC_CUREAQUA1B description line 1\n"
+    "SPECIES_PC_CUREAQUA1B description line 2\n"
+    "SPECIES_PC_CUREAQUA1B description line 3\n"
+    "SPECIES_PC_CUREAQUA1B description line 4\n");
+
+
+const u8 gPCCureAqua2PokedexText[] = _(
+    "SPECIES_PC_CUREAQUA2 description line 1\n"
+    "SPECIES_PC_CUREAQUA2 description line 2\n"
+    "SPECIES_PC_CUREAQUA2 description line 3\n"
+    "SPECIES_PC_CUREAQUA2 description line 4\n");
+
+
+const u8 gPCKurumiPokedexText[] = _(
+    "SPECIES_PC_KURUMI description line 1\n"
+    "SPECIES_PC_KURUMI description line 2\n"
+    "SPECIES_PC_KURUMI description line 3\n"
+    "SPECIES_PC_KURUMI description line 4\n");
+
+
+const u8 gPCMilkyRose1PokedexText[] = _(
+    "SPECIES_PC_MILKYROSE1 description line 1\n"
+    "SPECIES_PC_MILKYROSE1 description line 2\n"
+    "SPECIES_PC_MILKYROSE1 description line 3\n"
+    "SPECIES_PC_MILKYROSE1 description line 4\n");
+
+
+const u8 gPCMilkyRose2PokedexText[] = _(
+    "SPECIES_PC_MILKYROSE2 description line 1\n"
+    "SPECIES_PC_MILKYROSE2 description line 2\n"
+    "SPECIES_PC_MILKYROSE2 description line 3\n"
+    "SPECIES_PC_MILKYROSE2 description line 4\n");
+
+
+const u8 gPCDarkDreamPokedexText[] = _(
+    "SPECIES_PC_DARKDREAM description line 1\n"
+    "SPECIES_PC_DARKDREAM description line 2\n"
+    "SPECIES_PC_DARKDREAM description line 3\n"
+    "SPECIES_PC_DARKDREAM description line 4\n");
+
+
+const u8 gPCDarkRougePokedexText[] = _(
+    "SPECIES_PC_DARKROUGE description line 1\n"
+    "SPECIES_PC_DARKROUGE description line 2\n"
+    "SPECIES_PC_DARKROUGE description line 3\n"
+    "SPECIES_PC_DARKROUGE description line 4\n");
+
+
+const u8 gPCDarkLemonadePokedexText[] = _(
+    "SPECIES_PC_DARKLEMONADE description line 1\n"
+    "SPECIES_PC_DARKLEMONADE description line 2\n"
+    "SPECIES_PC_DARKLEMONADE description line 3\n"
+    "SPECIES_PC_DARKLEMONADE description line 4\n");
+
+
+const u8 gPCDarkMintPokedexText[] = _(
+    "SPECIES_PC_DARKMINT description line 1\n"
+    "SPECIES_PC_DARKMINT description line 2\n"
+    "SPECIES_PC_DARKMINT description line 3\n"
+    "SPECIES_PC_DARKMINT description line 4\n");
+
+
+const u8 gPCDarkAquaPokedexText[] = _(
+    "SPECIES_PC_DARKAQUA description line 1\n"
+    "SPECIES_PC_DARKAQUA description line 2\n"
+    "SPECIES_PC_DARKAQUA description line 3\n"
+    "SPECIES_PC_DARKAQUA description line 4\n");
+
+
+const u8 gPCLovePokedexText[] = _(
+    "SPECIES_PC_LOVE description line 1\n"
+    "SPECIES_PC_LOVE description line 2\n"
+    "SPECIES_PC_LOVE description line 3\n"
+    "SPECIES_PC_LOVE description line 4\n");
+
+
+const u8 gPCCurePeach1PokedexText[] = _(
+    "SPECIES_PC_CUREPEACH1 description line 1\n"
+    "SPECIES_PC_CUREPEACH1 description line 2\n"
+    "SPECIES_PC_CUREPEACH1 description line 3\n"
+    "SPECIES_PC_CUREPEACH1 description line 4\n");
+
+
+const u8 gPCCurePeach2PokedexText[] = _(
+    "SPECIES_PC_CUREPEACH2 description line 1\n"
+    "SPECIES_PC_CUREPEACH2 description line 2\n"
+    "SPECIES_PC_CUREPEACH2 description line 3\n"
+    "SPECIES_PC_CUREPEACH2 description line 4\n");
+
+
+const u8 gPCMikiPokedexText[] = _(
+    "SPECIES_PC_MIKI description line 1\n"
+    "SPECIES_PC_MIKI description line 2\n"
+    "SPECIES_PC_MIKI description line 3\n"
+    "SPECIES_PC_MIKI description line 4\n");
+
+
+const u8 gPCCureBerry1PokedexText[] = _(
+    "SPECIES_PC_CUREBERRY1 description line 1\n"
+    "SPECIES_PC_CUREBERRY1 description line 2\n"
+    "SPECIES_PC_CUREBERRY1 description line 3\n"
+    "SPECIES_PC_CUREBERRY1 description line 4\n");
+
+
+const u8 gPCCureBerry2PokedexText[] = _(
+    "SPECIES_PC_CUREBERRY2 description line 1\n"
+    "SPECIES_PC_CUREBERRY2 description line 2\n"
+    "SPECIES_PC_CUREBERRY2 description line 3\n"
+    "SPECIES_PC_CUREBERRY2 description line 4\n");
+
+
+const u8 gPCInoriPokedexText[] = _(
+    "SPECIES_PC_INORI description line 1\n"
+    "SPECIES_PC_INORI description line 2\n"
+    "SPECIES_PC_INORI description line 3\n"
+    "SPECIES_PC_INORI description line 4\n");
+
+
+const u8 gPCCurePine1PokedexText[] = _(
+    "SPECIES_PC_CUREPINE1 description line 1\n"
+    "SPECIES_PC_CUREPINE1 description line 2\n"
+    "SPECIES_PC_CUREPINE1 description line 3\n"
+    "SPECIES_PC_CUREPINE1 description line 4\n");
+
+
+const u8 gPCCurePine2PokedexText[] = _(
+    "SPECIES_PC_CUREPINE2 description line 1\n"
+    "SPECIES_PC_CUREPINE2 description line 2\n"
+    "SPECIES_PC_CUREPINE2 description line 3\n"
+    "SPECIES_PC_CUREPINE2 description line 4\n");
+
+
+const u8 gPCSetsunaPokedexText[] = _(
+    "SPECIES_PC_SETSUNA description line 1\n"
+    "SPECIES_PC_SETSUNA description line 2\n"
+    "SPECIES_PC_SETSUNA description line 3\n"
+    "SPECIES_PC_SETSUNA description line 4\n");
+
+
+const u8 gPCCurePassion1PokedexText[] = _(
+    "SPECIES_PC_CUREPASSION1 description line 1\n"
+    "SPECIES_PC_CUREPASSION1 description line 2\n"
+    "SPECIES_PC_CUREPASSION1 description line 3\n"
+    "SPECIES_PC_CUREPASSION1 description line 4\n");
+
+
+const u8 gPCCurePassion2PokedexText[] = _(
+    "SPECIES_PC_CUREPASSION2 description line 1\n"
+    "SPECIES_PC_CUREPASSION2 description line 2\n"
+    "SPECIES_PC_CUREPASSION2 description line 3\n"
+    "SPECIES_PC_CUREPASSION2 description line 4\n");
+
+
+const u8 gPCEasPokedexText[] = _(
+    "SPECIES_PC_EAS description line 1\n"
+    "SPECIES_PC_EAS description line 2\n"
+    "SPECIES_PC_EAS description line 3\n"
+    "SPECIES_PC_EAS description line 4\n");
+
+
+const u8 gPCTsubomiPokedexText[] = _(
+    "SPECIES_PC_TSUBOMI description line 1\n"
+    "SPECIES_PC_TSUBOMI description line 2\n"
+    "SPECIES_PC_TSUBOMI description line 3\n"
+    "SPECIES_PC_TSUBOMI description line 4\n");
+
+
+const u8 gPCCureBlossom1PokedexText[] = _(
+    "SPECIES_PC_CUREBLOSSOM1 description line 1\n"
+    "SPECIES_PC_CUREBLOSSOM1 description line 2\n"
+    "SPECIES_PC_CUREBLOSSOM1 description line 3\n"
+    "SPECIES_PC_CUREBLOSSOM1 description line 4\n");
+
+
+const u8 gPCCureBlossom2PokedexText[] = _(
+    "SPECIES_PC_CUREBLOSSOM2 description line 1\n"
+    "SPECIES_PC_CUREBLOSSOM2 description line 2\n"
+    "SPECIES_PC_CUREBLOSSOM2 description line 3\n"
+    "SPECIES_PC_CUREBLOSSOM2 description line 4\n");
+
+
+const u8 gPCErikaPokedexText[] = _(
+    "SPECIES_PC_ERIKA description line 1\n"
+    "SPECIES_PC_ERIKA description line 2\n"
+    "SPECIES_PC_ERIKA description line 3\n"
+    "SPECIES_PC_ERIKA description line 4\n");
+
+
+const u8 gPCCureMarine1PokedexText[] = _(
+    "SPECIES_PC_CUREMARINE1 description line 1\n"
+    "SPECIES_PC_CUREMARINE1 description line 2\n"
+    "SPECIES_PC_CUREMARINE1 description line 3\n"
+    "SPECIES_PC_CUREMARINE1 description line 4\n");
+
+
+const u8 gPCCureMarine2PokedexText[] = _(
+    "SPECIES_PC_CUREMARINE2 description line 1\n"
+    "SPECIES_PC_CUREMARINE2 description line 2\n"
+    "SPECIES_PC_CUREMARINE2 description line 3\n"
+    "SPECIES_PC_CUREMARINE2 description line 4\n");
+
+
+const u8 gPCItsukiPokedexText[] = _(
+    "SPECIES_PC_ITSUKI description line 1\n"
+    "SPECIES_PC_ITSUKI description line 2\n"
+    "SPECIES_PC_ITSUKI description line 3\n"
+    "SPECIES_PC_ITSUKI description line 4\n");
+
+
+const u8 gPCCureSunshine1PokedexText[] = _(
+    "SPECIES_PC_CURESUNSHINE1 description line 1\n"
+    "SPECIES_PC_CURESUNSHINE1 description line 2\n"
+    "SPECIES_PC_CURESUNSHINE1 description line 3\n"
+    "SPECIES_PC_CURESUNSHINE1 description line 4\n");
+
+
+const u8 gPCCureSunshine2PokedexText[] = _(
+    "SPECIES_PC_CURESUNSHINE2 description line 1\n"
+    "SPECIES_PC_CURESUNSHINE2 description line 2\n"
+    "SPECIES_PC_CURESUNSHINE2 description line 3\n"
+    "SPECIES_PC_CURESUNSHINE2 description line 4\n");
+
+
+const u8 gPCYuriPokedexText[] = _(
+    "SPECIES_PC_YURI description line 1\n"
+    "SPECIES_PC_YURI description line 2\n"
+    "SPECIES_PC_YURI description line 3\n"
+    "SPECIES_PC_YURI description line 4\n");
+
+
+const u8 gPCCureMoonlight1PokedexText[] = _(
+    "SPECIES_PC_CUREMOONLIGHT1 description line 1\n"
+    "SPECIES_PC_CUREMOONLIGHT1 description line 2\n"
+    "SPECIES_PC_CUREMOONLIGHT1 description line 3\n"
+    "SPECIES_PC_CUREMOONLIGHT1 description line 4\n");
+
+
+const u8 gPCCureMoonlight2PokedexText[] = _(
+    "SPECIES_PC_CUREMOONLIGHT2 description line 1\n"
+    "SPECIES_PC_CUREMOONLIGHT2 description line 2\n"
+    "SPECIES_PC_CUREMOONLIGHT2 description line 3\n"
+    "SPECIES_PC_CUREMOONLIGHT2 description line 4\n");
+
+
+const u8 gPCDarkPrecurePokedexText[] = _(
+    "SPECIES_PC_DARKPRECURE description line 1\n"
+    "SPECIES_PC_DARKPRECURE description line 2\n"
+    "SPECIES_PC_DARKPRECURE description line 3\n"
+    "SPECIES_PC_DARKPRECURE description line 4\n");
+
+
+const u8 gPCHibikiPokedexText[] = _(
+    "SPECIES_PC_HIBIKI description line 1\n"
+    "SPECIES_PC_HIBIKI description line 2\n"
+    "SPECIES_PC_HIBIKI description line 3\n"
+    "SPECIES_PC_HIBIKI description line 4\n");
+
+
+const u8 gPCCureMelody1PokedexText[] = _(
+    "SPECIES_PC_CUREMELODY1 description line 1\n"
+    "SPECIES_PC_CUREMELODY1 description line 2\n"
+    "SPECIES_PC_CUREMELODY1 description line 3\n"
+    "SPECIES_PC_CUREMELODY1 description line 4\n");
+
+
+const u8 gPCCureMelody2PokedexText[] = _(
+    "SPECIES_PC_CUREMELODY2 description line 1\n"
+    "SPECIES_PC_CUREMELODY2 description line 2\n"
+    "SPECIES_PC_CUREMELODY2 description line 3\n"
+    "SPECIES_PC_CUREMELODY2 description line 4\n");
+
+
+const u8 gPCKanadePokedexText[] = _(
+    "SPECIES_PC_KANADE description line 1\n"
+    "SPECIES_PC_KANADE description line 2\n"
+    "SPECIES_PC_KANADE description line 3\n"
+    "SPECIES_PC_KANADE description line 4\n");
+
+
+const u8 gPCCureRhythm1PokedexText[] = _(
+    "SPECIES_PC_CURERHYTHM1 description line 1\n"
+    "SPECIES_PC_CURERHYTHM1 description line 2\n"
+    "SPECIES_PC_CURERHYTHM1 description line 3\n"
+    "SPECIES_PC_CURERHYTHM1 description line 4\n");
+
+
+const u8 gPCCureRhythm2PokedexText[] = _(
+    "SPECIES_PC_CURERHYTHM2 description line 1\n"
+    "SPECIES_PC_CURERHYTHM2 description line 2\n"
+    "SPECIES_PC_CURERHYTHM2 description line 3\n"
+    "SPECIES_PC_CURERHYTHM2 description line 4\n");
+
+
+const u8 gPCEllenPokedexText[] = _(
+    "SPECIES_PC_ELLEN description line 1\n"
+    "SPECIES_PC_ELLEN description line 2\n"
+    "SPECIES_PC_ELLEN description line 3\n"
+    "SPECIES_PC_ELLEN description line 4\n");
+
+
+const u8 gPCCureBeat1PokedexText[] = _(
+    "SPECIES_PC_CUREBEAT1 description line 1\n"
+    "SPECIES_PC_CUREBEAT1 description line 2\n"
+    "SPECIES_PC_CUREBEAT1 description line 3\n"
+    "SPECIES_PC_CUREBEAT1 description line 4\n");
+
+
+const u8 gPCCureBeat2PokedexText[] = _(
+    "SPECIES_PC_CUREBEAT2 description line 1\n"
+    "SPECIES_PC_CUREBEAT2 description line 2\n"
+    "SPECIES_PC_CUREBEAT2 description line 3\n"
+    "SPECIES_PC_CUREBEAT2 description line 4\n");
+
+
+const u8 gPCAkoPokedexText[] = _(
+    "SPECIES_PC_AKO description line 1\n"
+    "SPECIES_PC_AKO description line 2\n"
+    "SPECIES_PC_AKO description line 3\n"
+    "SPECIES_PC_AKO description line 4\n");
+
+
+const u8 gPCCureMuse1APokedexText[] = _(
+    "SPECIES_PC_CUREMUSE1A description line 1\n"
+    "SPECIES_PC_CUREMUSE1A description line 2\n"
+    "SPECIES_PC_CUREMUSE1A description line 3\n"
+    "SPECIES_PC_CUREMUSE1A description line 4\n");
+
+
+const u8 gPCCureMuse1BPokedexText[] = _(
+    "SPECIES_PC_CUREMUSE1B description line 1\n"
+    "SPECIES_PC_CUREMUSE1B description line 2\n"
+    "SPECIES_PC_CUREMUSE1B description line 3\n"
+    "SPECIES_PC_CUREMUSE1B description line 4\n");
+
+
+const u8 gPCCureMuse2PokedexText[] = _(
+    "SPECIES_PC_CUREMUSE2 description line 1\n"
+    "SPECIES_PC_CUREMUSE2 description line 2\n"
+    "SPECIES_PC_CUREMUSE2 description line 3\n"
+    "SPECIES_PC_CUREMUSE2 description line 4\n");
+
+
+const u8 gPCCureFloraHCPCPokedexText[] = _(
+    "SPECIES_PC_CUREFLORAHCPC description line 1\n"
+    "SPECIES_PC_CUREFLORAHCPC description line 2\n"
+    "SPECIES_PC_CUREFLORAHCPC description line 3\n"
+    "SPECIES_PC_CUREFLORAHCPC description line 4\n");
+
+
+const u8 gPCMiyukiPokedexText[] = _(
+    "SPECIES_PC_MIYUKI description line 1\n"
+    "SPECIES_PC_MIYUKI description line 2\n"
+    "SPECIES_PC_MIYUKI description line 3\n"
+    "SPECIES_PC_MIYUKI description line 4\n");
+
+
+const u8 gPCCureHappy1PokedexText[] = _(
+    "SPECIES_PC_CUREHAPPY1 description line 1\n"
+    "SPECIES_PC_CUREHAPPY1 description line 2\n"
+    "SPECIES_PC_CUREHAPPY1 description line 3\n"
+    "SPECIES_PC_CUREHAPPY1 description line 4\n");
+
+
+const u8 gPCCureHappy2PokedexText[] = _(
+    "SPECIES_PC_CUREHAPPY2 description line 1\n"
+    "SPECIES_PC_CUREHAPPY2 description line 2\n"
+    "SPECIES_PC_CUREHAPPY2 description line 3\n"
+    "SPECIES_PC_CUREHAPPY2 description line 4\n");
+
+
+const u8 gPCAkanePokedexText[] = _(
+    "SPECIES_PC_AKANE description line 1\n"
+    "SPECIES_PC_AKANE description line 2\n"
+    "SPECIES_PC_AKANE description line 3\n"
+    "SPECIES_PC_AKANE description line 4\n");
+
+
+const u8 gPCCureSunny1PokedexText[] = _(
+    "SPECIES_PC_CURESUNNY1 description line 1\n"
+    "SPECIES_PC_CURESUNNY1 description line 2\n"
+    "SPECIES_PC_CURESUNNY1 description line 3\n"
+    "SPECIES_PC_CURESUNNY1 description line 4\n");
+
+
+const u8 gPCCureSunny2PokedexText[] = _(
+    "SPECIES_PC_CURESUNNY2 description line 1\n"
+    "SPECIES_PC_CURESUNNY2 description line 2\n"
+    "SPECIES_PC_CURESUNNY2 description line 3\n"
+    "SPECIES_PC_CURESUNNY2 description line 4\n");
+
+
+const u8 gPCYayoiPokedexText[] = _(
+    "SPECIES_PC_YAYOI description line 1\n"
+    "SPECIES_PC_YAYOI description line 2\n"
+    "SPECIES_PC_YAYOI description line 3\n"
+    "SPECIES_PC_YAYOI description line 4\n");
+
+
+const u8 gPCCurePeace1PokedexText[] = _(
+    "SPECIES_PC_CUREPEACE1 description line 1\n"
+    "SPECIES_PC_CUREPEACE1 description line 2\n"
+    "SPECIES_PC_CUREPEACE1 description line 3\n"
+    "SPECIES_PC_CUREPEACE1 description line 4\n");
+
+
+const u8 gPCCurePeace2PokedexText[] = _(
+    "SPECIES_PC_CUREPEACE2 description line 1\n"
+    "SPECIES_PC_CUREPEACE2 description line 2\n"
+    "SPECIES_PC_CUREPEACE2 description line 3\n"
+    "SPECIES_PC_CUREPEACE2 description line 4\n");
+
+
+const u8 gPCNaoPokedexText[] = _(
+    "SPECIES_PC_NAO description line 1\n"
+    "SPECIES_PC_NAO description line 2\n"
+    "SPECIES_PC_NAO description line 3\n"
+    "SPECIES_PC_NAO description line 4\n");
+
+
+const u8 gPCCureMarch1PokedexText[] = _(
+    "SPECIES_PC_CUREMARCH1 description line 1\n"
+    "SPECIES_PC_CUREMARCH1 description line 2\n"
+    "SPECIES_PC_CUREMARCH1 description line 3\n"
+    "SPECIES_PC_CUREMARCH1 description line 4\n");
+
+
+const u8 gPCCureMarch2PokedexText[] = _(
+    "SPECIES_PC_CUREMARCH2 description line 1\n"
+    "SPECIES_PC_CUREMARCH2 description line 2\n"
+    "SPECIES_PC_CUREMARCH2 description line 3\n"
+    "SPECIES_PC_CUREMARCH2 description line 4\n");
+
+
+const u8 gPCReikaPokedexText[] = _(
+    "SPECIES_PC_REIKA description line 1\n"
+    "SPECIES_PC_REIKA description line 2\n"
+    "SPECIES_PC_REIKA description line 3\n"
+    "SPECIES_PC_REIKA description line 4\n");
+
+
+const u8 gPCCureBeauty1PokedexText[] = _(
+    "SPECIES_PC_CUREBEAUTY1 description line 1\n"
+    "SPECIES_PC_CUREBEAUTY1 description line 2\n"
+    "SPECIES_PC_CUREBEAUTY1 description line 3\n"
+    "SPECIES_PC_CUREBEAUTY1 description line 4\n");
+
+
+const u8 gPCCureBeauty2PokedexText[] = _(
+    "SPECIES_PC_CUREBEAUTY2 description line 1\n"
+    "SPECIES_PC_CUREBEAUTY2 description line 2\n"
+    "SPECIES_PC_CUREBEAUTY2 description line 3\n"
+    "SPECIES_PC_CUREBEAUTY2 description line 4\n");
+
+
+const u8 gPCBadEndHappyPokedexText[] = _(
+    "SPECIES_PC_BADENDHAPPY description line 1\n"
+    "SPECIES_PC_BADENDHAPPY description line 2\n"
+    "SPECIES_PC_BADENDHAPPY description line 3\n"
+    "SPECIES_PC_BADENDHAPPY description line 4\n");
+
+
+const u8 gPCBadEndSunnyPokedexText[] = _(
+    "SPECIES_PC_BADENDSUNNY description line 1\n"
+    "SPECIES_PC_BADENDSUNNY description line 2\n"
+    "SPECIES_PC_BADENDSUNNY description line 3\n"
+    "SPECIES_PC_BADENDSUNNY description line 4\n");
+
+
+const u8 gPCBadEndPeacePokedexText[] = _(
+    "SPECIES_PC_BADENDPEACE description line 1\n"
+    "SPECIES_PC_BADENDPEACE description line 2\n"
+    "SPECIES_PC_BADENDPEACE description line 3\n"
+    "SPECIES_PC_BADENDPEACE description line 4\n");
+
+
+const u8 gPCBadEndMarchPokedexText[] = _(
+    "SPECIES_PC_BADENDMARCH description line 1\n"
+    "SPECIES_PC_BADENDMARCH description line 2\n"
+    "SPECIES_PC_BADENDMARCH description line 3\n"
+    "SPECIES_PC_BADENDMARCH description line 4\n");
+
+
+const u8 gPCBadEndBeautyPokedexText[] = _(
+    "SPECIES_PC_BADENDBEAUTY description line 1\n"
+    "SPECIES_PC_BADENDBEAUTY description line 2\n"
+    "SPECIES_PC_BADENDBEAUTY description line 3\n"
+    "SPECIES_PC_BADENDBEAUTY description line 4\n");
+
+
+const u8 gPCManaPokedexText[] = _(
+    "SPECIES_PC_MANA description line 1\n"
+    "SPECIES_PC_MANA description line 2\n"
+    "SPECIES_PC_MANA description line 3\n"
+    "SPECIES_PC_MANA description line 4\n");
+
+
+const u8 gPCCureHeart1PokedexText[] = _(
+    "SPECIES_PC_CUREHEART1 description line 1\n"
+    "SPECIES_PC_CUREHEART1 description line 2\n"
+    "SPECIES_PC_CUREHEART1 description line 3\n"
+    "SPECIES_PC_CUREHEART1 description line 4\n");
+
+
+const u8 gPCCureHeart2PokedexText[] = _(
+    "SPECIES_PC_CUREHEART2 description line 1\n"
+    "SPECIES_PC_CUREHEART2 description line 2\n"
+    "SPECIES_PC_CUREHEART2 description line 3\n"
+    "SPECIES_PC_CUREHEART2 description line 4\n");
+
+
+const u8 gPCRikkaPokedexText[] = _(
+    "SPECIES_PC_RIKKA description line 1\n"
+    "SPECIES_PC_RIKKA description line 2\n"
+    "SPECIES_PC_RIKKA description line 3\n"
+    "SPECIES_PC_RIKKA description line 4\n");
+
+
+const u8 gPCCureDiamond1PokedexText[] = _(
+    "SPECIES_PC_CUREDIAMOND1 description line 1\n"
+    "SPECIES_PC_CUREDIAMOND1 description line 2\n"
+    "SPECIES_PC_CUREDIAMOND1 description line 3\n"
+    "SPECIES_PC_CUREDIAMOND1 description line 4\n");
+
+
+const u8 gPCCureDiamond2PokedexText[] = _(
+    "SPECIES_PC_CUREDIAMOND2 description line 1\n"
+    "SPECIES_PC_CUREDIAMOND2 description line 2\n"
+    "SPECIES_PC_CUREDIAMOND2 description line 3\n"
+    "SPECIES_PC_CUREDIAMOND2 description line 4\n");
+
+
+const u8 gPCAlicePokedexText[] = _(
+    "SPECIES_PC_ALICE description line 1\n"
+    "SPECIES_PC_ALICE description line 2\n"
+    "SPECIES_PC_ALICE description line 3\n"
+    "SPECIES_PC_ALICE description line 4\n");
+
+
+const u8 gPCCureRosetta1PokedexText[] = _(
+    "SPECIES_PC_CUREROSETTA1 description line 1\n"
+    "SPECIES_PC_CUREROSETTA1 description line 2\n"
+    "SPECIES_PC_CUREROSETTA1 description line 3\n"
+    "SPECIES_PC_CUREROSETTA1 description line 4\n");
+
+
+const u8 gPCCureRosetta2PokedexText[] = _(
+    "SPECIES_PC_CUREROSETTA2 description line 1\n"
+    "SPECIES_PC_CUREROSETTA2 description line 2\n"
+    "SPECIES_PC_CUREROSETTA2 description line 3\n"
+    "SPECIES_PC_CUREROSETTA2 description line 4\n");
+
+
+const u8 gPCMakotoPokedexText[] = _(
+    "SPECIES_PC_MAKOTO description line 1\n"
+    "SPECIES_PC_MAKOTO description line 2\n"
+    "SPECIES_PC_MAKOTO description line 3\n"
+    "SPECIES_PC_MAKOTO description line 4\n");
+
+
+const u8 gPCCureSword1PokedexText[] = _(
+    "SPECIES_PC_CURESWORD1 description line 1\n"
+    "SPECIES_PC_CURESWORD1 description line 2\n"
+    "SPECIES_PC_CURESWORD1 description line 3\n"
+    "SPECIES_PC_CURESWORD1 description line 4\n");
+
+
+const u8 gPCCureSword2PokedexText[] = _(
+    "SPECIES_PC_CURESWORD2 description line 1\n"
+    "SPECIES_PC_CURESWORD2 description line 2\n"
+    "SPECIES_PC_CURESWORD2 description line 3\n"
+    "SPECIES_PC_CURESWORD2 description line 4\n");
+
+
+const u8 gPCAguriPokedexText[] = _(
+    "SPECIES_PC_AGURI description line 1\n"
+    "SPECIES_PC_AGURI description line 2\n"
+    "SPECIES_PC_AGURI description line 3\n"
+    "SPECIES_PC_AGURI description line 4\n");
+
+
+const u8 gPCCureAce1PokedexText[] = _(
+    "SPECIES_PC_CUREACE1 description line 1\n"
+    "SPECIES_PC_CUREACE1 description line 2\n"
+    "SPECIES_PC_CUREACE1 description line 3\n"
+    "SPECIES_PC_CUREACE1 description line 4\n");
+
+
+const u8 gPCCureAce2PokedexText[] = _(
+    "SPECIES_PC_CUREACE2 description line 1\n"
+    "SPECIES_PC_CUREACE2 description line 2\n"
+    "SPECIES_PC_CUREACE2 description line 3\n"
+    "SPECIES_PC_CUREACE2 description line 4\n");
+
+
+const u8 gPCReginaPokedexText[] = _(
+    "SPECIES_PC_REGINA description line 1\n"
+    "SPECIES_PC_REGINA description line 2\n"
+    "SPECIES_PC_REGINA description line 3\n"
+    "SPECIES_PC_REGINA description line 4\n");
+
+
+const u8 gPCAyumiPokedexText[] = _(
+    "SPECIES_PC_AYUMI description line 1\n"
+    "SPECIES_PC_AYUMI description line 2\n"
+    "SPECIES_PC_AYUMI description line 3\n"
+    "SPECIES_PC_AYUMI description line 4\n");
+
+
+const u8 gPCCureEchoPokedexText[] = _(
+    "SPECIES_PC_CUREECHO description line 1\n"
+    "SPECIES_PC_CUREECHO description line 2\n"
+    "SPECIES_PC_CUREECHO description line 3\n"
+    "SPECIES_PC_CUREECHO description line 4\n");
+
+
+const u8 gETCCureUnion2PokedexText[] = _(
+    "SPECIES_ETC_CUREUNION2 description line 1\n"
+    "SPECIES_ETC_CUREUNION2 description line 2\n"
+    "SPECIES_ETC_CUREUNION2 description line 3\n"
+    "SPECIES_ETC_CUREUNION2 description line 4\n");
+
+
+const u8 gETCMissingnoPokedexText[] = _(
+    "SPECIES_ETC_MISSINGNO description line 1\n"
+    "SPECIES_ETC_MISSINGNO description line 2\n"
+    "SPECIES_ETC_MISSINGNO description line 3\n"
+    "SPECIES_ETC_MISSINGNO description line 4\n");
+
+
+const u8 gETCEmesgeseyPokedexText[] = _(
+    "SPECIES_ETC_EMESGESEY description line 1\n"
+    "SPECIES_ETC_EMESGESEY description line 2\n"
+    "SPECIES_ETC_EMESGESEY description line 3\n"
+    "SPECIES_ETC_EMESGESEY description line 4\n");
+
+
+const u8 gETCShounenPokedexText[] = _(
+    "SPECIES_ETC_SHOUNEN description line 1\n"
+    "SPECIES_ETC_SHOUNEN description line 2\n"
+    "SPECIES_ETC_SHOUNEN description line 3\n"
+    "SPECIES_ETC_SHOUNEN description line 4\n");
+
+
+const u8 gETCShoujoPokedexText[] = _(
+    "SPECIES_ETC_SHOUJO description line 1\n"
+    "SPECIES_ETC_SHOUJO description line 2\n"
+    "SPECIES_ETC_SHOUJO description line 3\n"
+    "SPECIES_ETC_SHOUJO description line 4\n");
+
+
+const u8 gETCDialgaTHPokedexText[] = _(
+    "SPECIES_ETC_DIALGATH description line 1\n"
+    "SPECIES_ETC_DIALGATH description line 2\n"
+    "SPECIES_ETC_DIALGATH description line 3\n"
+    "SPECIES_ETC_DIALGATH description line 4\n");
+
+
+const u8 gETCPalkiaTHPokedexText[] = _(
+    "SPECIES_ETC_PALKIATH description line 1\n"
+    "SPECIES_ETC_PALKIATH description line 2\n"
+    "SPECIES_ETC_PALKIATH description line 3\n"
+    "SPECIES_ETC_PALKIATH description line 4\n");
+
+
+const u8 gETCGiratinaTHPokedexText[] = _(
+    "SPECIES_ETC_GIRATINATH description line 1\n"
+    "SPECIES_ETC_GIRATINATH description line 2\n"
+    "SPECIES_ETC_GIRATINATH description line 3\n"
+    "SPECIES_ETC_GIRATINATH description line 4\n");
+
+
+const u8 gETCDecade1PokedexText[] = _(
+    "SPECIES_ETC_DECADE1 description line 1\n"
+    "SPECIES_ETC_DECADE1 description line 2\n"
+    "SPECIES_ETC_DECADE1 description line 3\n"
+    "SPECIES_ETC_DECADE1 description line 4\n");
+
+
+const u8 gETCDecade2APokedexText[] = _(
+    "SPECIES_ETC_DECADE2A description line 1\n"
+    "SPECIES_ETC_DECADE2A description line 2\n"
+    "SPECIES_ETC_DECADE2A description line 3\n"
+    "SPECIES_ETC_DECADE2A description line 4\n");
+
+
+const u8 gETCDecade2BPokedexText[] = _(
+    "SPECIES_ETC_DECADE2B description line 1\n"
+    "SPECIES_ETC_DECADE2B description line 2\n"
+    "SPECIES_ETC_DECADE2B description line 3\n"
+    "SPECIES_ETC_DECADE2B description line 4\n");
+
+
+const u8 gETCDiEnd1PokedexText[] = _(
+    "SPECIES_ETC_DIEND1 description line 1\n"
+    "SPECIES_ETC_DIEND1 description line 2\n"
+    "SPECIES_ETC_DIEND1 description line 3\n"
+    "SPECIES_ETC_DIEND1 description line 4\n");
+
+
+const u8 gETCDiEnd2PokedexText[] = _(
+    "SPECIES_ETC_DIEND2 description line 1\n"
+    "SPECIES_ETC_DIEND2 description line 2\n"
+    "SPECIES_ETC_DIEND2 description line 3\n"
+    "SPECIES_ETC_DIEND2 description line 4\n");
+
+
+const u8 gETCDeLastPokedexText[] = _(
+    "SPECIES_ETC_DELAST description line 1\n"
+    "SPECIES_ETC_DELAST description line 2\n"
+    "SPECIES_ETC_DELAST description line 3\n"
+    "SPECIES_ETC_DELAST description line 4\n");

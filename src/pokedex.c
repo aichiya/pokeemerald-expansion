@@ -5686,7 +5686,7 @@ void FillPokedex(void)
 {
     u16 i;
 
-    for (i = SPECIES_BULBASAUR; i <= SPECIES_ENAMORUS; i++)
+    for (i = SPECIES_BULBASAUR; i <= SPECIES_ETC_DELAST; i++) // SPECIES_ENAMORUS
     {
         GetSetPokedexFlag(i, FLAG_SET_SEEN);
         GetSetPokedexFlag(i, FLAG_SET_CAUGHT);

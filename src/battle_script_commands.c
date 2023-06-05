@@ -1413,7 +1413,7 @@ static bool32 NoTargetPresent(u8 battlerId, u32 move)
 
     return FALSE;
 }
-
+/*
 static bool32 TryAegiFormChange(void)
 {
     // Only Aegislash with Stance Change can transform, transformed mons cannot.
@@ -1441,7 +1441,7 @@ static bool32 TryAegiFormChange(void)
     gBattlescriptCurrInstr = BattleScript_AttackerFormChange;
     return TRUE;
 }
-
+*/
 static void Cmd_attackcanceler(void)
 {
     CMD_ARGS();
@@ -1479,7 +1479,7 @@ static void Cmd_attackcanceler(void)
         return;
     }
 #if B_STANCE_CHANGE_FAIL <= GEN_6
-    if (TryAegiFormChange())
+    if (AtkCanceller_UnableToUseMove()) // if (TryAegiFormChange())
         return;
 #endif
     if (AtkCanceller_UnableToUseMove())
@@ -1526,7 +1526,7 @@ static void Cmd_attackcanceler(void)
         return;
     }
 #if B_STANCE_CHANGE_FAIL >= GEN_7
-    if (TryAegiFormChange())
+    if (AtkCanceller_UnableToUseMove()) // if (TryAegiFormChange())
         return;
 #endif
 
@@ -6137,11 +6137,11 @@ static void Cmd_moveend(void)
                 switch (gBattleMons[i].species)
                 {
                 case SPECIES_CASTFORM:
-                case SPECIES_CASTFORM_RAINY:
-                case SPECIES_CASTFORM_SNOWY:
-                case SPECIES_CASTFORM_SUNNY:
+//                case SPECIES_CASTFORM_RAINY:
+//                case SPECIES_CASTFORM_SNOWY:
+//                case SPECIES_CASTFORM_SUNNY:
                 case SPECIES_CHERRIM:
-                case SPECIES_CHERRIM_SUNSHINE:
+//                case SPECIES_CHERRIM_SUNSHINE:
                     effect = TryWeatherFormChange(i);
                     if (effect)
                     {

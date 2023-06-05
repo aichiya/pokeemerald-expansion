@@ -370,651 +370,651 @@ static const union AnimCmd *const sAnims_RubySapphireMay[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_EvilSpirit[] ={
+static const union AnimCmd *const sAnims_TrainerEvilSpirit[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_Ghost[] ={
+static const union AnimCmd *const sAnims_TrainerGhost[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THSyameimaruAya1[] ={
+static const union AnimCmd *const sAnims_TrainerTHSyameimaruAya1[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THSyameimaruAya2[] ={
+static const union AnimCmd *const sAnims_TrainerTHSyameimaruAya2[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THInabaTewi[] ={
+static const union AnimCmd *const sAnims_TrainerTHInabaTewi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THCirno[] ={
+static const union AnimCmd *const sAnims_TrainerTHCirno[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THShikieiki[] ={
+static const union AnimCmd *const sAnims_TrainerTHShikieiki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THFlandreScarlet[] ={
+static const union AnimCmd *const sAnims_TrainerTHFlandreScarlet[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THHouraisanKaguya[] ={
+static const union AnimCmd *const sAnims_TrainerTHHouraisanKaguya[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THYasakaKanako[] ={
+static const union AnimCmd *const sAnims_TrainerTHYasakaKanako[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THLilyBlack[] ={
+static const union AnimCmd *const sAnims_TrainerTHLilyBlack[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THLilyWhite[] ={
+static const union AnimCmd *const sAnims_TrainerTHLilyWhite[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THMaribelHearn[] ={
+static const union AnimCmd *const sAnims_TrainerTHMaribelHearn[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THKirisameMarisa[] ={
+static const union AnimCmd *const sAnims_TrainerTHKirisameMarisa[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THHongMeiling[] ={
+static const union AnimCmd *const sAnims_TrainerTHHongMeiling[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THFujiwaraNoMokou[] ={
+static const union AnimCmd *const sAnims_TrainerTHFujiwaraNoMokou[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THInubashiriMomiji[] ={
+static const union AnimCmd *const sAnims_TrainerTHInubashiriMomiji[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THMurasaMinamitsu[] ={
+static const union AnimCmd *const sAnims_TrainerTHMurasaMinamitsu[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THHakureiReimu1[] ={
+static const union AnimCmd *const sAnims_TrainerTHHakureiReimu1[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THHakureiReimu2[] ={
+static const union AnimCmd *const sAnims_TrainerTHHakureiReimu2[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THRemiliaScarlet[] ={
+static const union AnimCmd *const sAnims_TrainerTHRemiliaScarlet[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THUsamiRenko[] ={
+static const union AnimCmd *const sAnims_TrainerTHUsamiRenko[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THRumia[] ={
+static const union AnimCmd *const sAnims_TrainerTHRumia[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THIzayoiSakuya[] ={
+static const union AnimCmd *const sAnims_TrainerTHIzayoiSakuya[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THKochiyaSanae[] ={
+static const union AnimCmd *const sAnims_TrainerTHKochiyaSanae[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THSanBaka[] ={
+static const union AnimCmd *const sAnims_TrainerTHSanBaka[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THShinki[] ={
+static const union AnimCmd *const sAnims_TrainerTHShinki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THIbukiSuika[] ={
+static const union AnimCmd *const sAnims_TrainerTHIbukiSuika[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THReiujiUtsuho[] ={
+static const union AnimCmd *const sAnims_TrainerTHReiujiUtsuho[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THWriggleNightbug[] ={
+static const union AnimCmd *const sAnims_TrainerTHWriggleNightbug[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THKonpakuYoumu[] ={
+static const union AnimCmd *const sAnims_TrainerTHKonpakuYoumu[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THFairy[] ={
+static const union AnimCmd *const sAnims_TrainerTHFairy[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THYakumoYukari1[] ={
+static const union AnimCmd *const sAnims_TrainerTHYakumoYukari1[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THYakumoYukari2[] ={
+static const union AnimCmd *const sAnims_TrainerTHYakumoYukari2[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THYumeko[] ={
+static const union AnimCmd *const sAnims_TrainerTHYumeko[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THHoshigumaYuugi[] ={
+static const union AnimCmd *const sAnims_TrainerTHHoshigumaYuugi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THKazamiYuuka1[] ={
+static const union AnimCmd *const sAnims_TrainerTHKazamiYuuka1[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THKazamiYuuka2[] ={
+static const union AnimCmd *const sAnims_TrainerTHKazamiYuuka2[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THSaigyoujiYuyuko1[] ={
+static const union AnimCmd *const sAnims_TrainerTHSaigyoujiYuyuko1[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_THSaigyoujiYuyuko2[] ={
+static const union AnimCmd *const sAnims_TrainerTHSaigyoujiYuyuko2[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_ETCIkue[] ={
+static const union AnimCmd *const sAnims_TrainerETCIkue[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_SHVIVITr[] ={
+static const union AnimCmd *const sAnims_TrainerSHVIVITr[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCMisumiNagisa[] ={
+static const union AnimCmd *const sAnims_TrainerPCMisumiNagisa[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCureBlack[] ={
+static const union AnimCmd *const sAnims_TrainerPCCureBlack[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCYukishiroHonoka[] ={
+static const union AnimCmd *const sAnims_TrainerPCYukishiroHonoka[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCureWhite[] ={
+static const union AnimCmd *const sAnims_TrainerPCCureWhite[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCKujouHikari[] ={
+static const union AnimCmd *const sAnims_TrainerPCKujouHikari[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCShinyLuminous[] ={
+static const union AnimCmd *const sAnims_TrainerPCShinyLuminous[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCHyuugaSaki[] ={
+static const union AnimCmd *const sAnims_TrainerPCHyuugaSaki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCureBloom[] ={
+static const union AnimCmd *const sAnims_TrainerPCCureBloom[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCMishouMai[] ={
+static const union AnimCmd *const sAnims_TrainerPCMishouMai[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCureEgret[] ={
+static const union AnimCmd *const sAnims_TrainerPCCureEgret[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCYumeharaNozomi[] ={
+static const union AnimCmd *const sAnims_TrainerPCYumeharaNozomi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCureDream[] ={
+static const union AnimCmd *const sAnims_TrainerPCCureDream[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCMomozonoLove[] ={
+static const union AnimCmd *const sAnims_TrainerPCMomozonoLove[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCurePeach[] ={
+static const union AnimCmd *const sAnims_TrainerPCCurePeach[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCHanasakiTsubomi[] ={
+static const union AnimCmd *const sAnims_TrainerPCHanasakiTsubomi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCureBlossom[] ={
+static const union AnimCmd *const sAnims_TrainerPCCureBlossom[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCHojoHibiki[] ={
+static const union AnimCmd *const sAnims_TrainerPCHojoHibiki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCureMelody[] ={
+static const union AnimCmd *const sAnims_TrainerPCCureMelody[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCHoshizoraMiyuki[] ={
+static const union AnimCmd *const sAnims_TrainerPCHoshizoraMiyuki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCureHappy[] ={
+static const union AnimCmd *const sAnims_TrainerPCCureHappy[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCAidaMana[] ={
+static const union AnimCmd *const sAnims_TrainerPCAidaMana[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCureHeart[] ={
+static const union AnimCmd *const sAnims_TrainerPCCureHeart[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCSakagamiAyumi[] ={
+static const union AnimCmd *const sAnims_TrainerPCSakagamiAyumi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_PCCureEcho[] ={
+static const union AnimCmd *const sAnims_TrainerPCCureEcho[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYINogiWakaba[] ={
+static const union AnimCmd *const sAnims_TrainerYYYINogiWakaba[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYITakashimaYuuna[] ={
+static const union AnimCmd *const sAnims_TrainerYYYITakashimaYuuna[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIKooriChikage[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIKooriChikage[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIDoiTamako[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIDoiTamako[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIIyojimaAnzu[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIIyojimaAnzu[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIUesatoHinata[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIUesatoHinata[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIShiratoriUtano[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIShiratoriUtano[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIFujimoriMito[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIFujimoriMito[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIWashioSumi[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIWashioSumi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYINogiSonokoSmol[] ={
+static const union AnimCmd *const sAnims_TrainerYYYINogiSonokoSmol[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIMinowaGin[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIMinowaGin[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIAki[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIAki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIYuukiYuuna[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIYuukiYuuna[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYITougouMimori[] ={
+static const union AnimCmd *const sAnims_TrainerYYYITougouMimori[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIInubouzakiFuu[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIInubouzakiFuu[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIInubouzakiItsuki[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIInubouzakiItsuki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIMiyoshiKarin[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIMiyoshiKarin[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYINogiSonoko[] ={
+static const union AnimCmd *const sAnims_TrainerYYYINogiSonoko[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIKusunokiMebuki[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIKusunokiMebuki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIKagajouSuzume[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIKagajouSuzume[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIMirokuYumiko[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIMirokuYumiko[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIYamabushiShizuku[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIYamabushiShizuku[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIKokudouAya[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIKokudouAya[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIAkiharaSekka[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIAkiharaSekka[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIKohaguraNatsume[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIKohaguraNatsume[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIAkamineYuuna[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIAkamineYuuna[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIMirokuRenge[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIMirokuRenge[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIKiryuuShizuka[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIKiryuuShizuka[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYITenmaMisaki[] ={
+static const union AnimCmd *const sAnims_TrainerYYYITenmaMisaki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIHokkedouHime[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIHokkedouHime[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIHanamotoYoshika[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIHanamotoYoshika[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIFuyouLilienthalYuuna[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIFuyouLilienthalYuuna[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIYuzukiYuuna[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIYuzukiYuuna[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_YYYIKarasumaKumiko[] ={
+static const union AnimCmd *const sAnims_TrainerYYYIKarasumaKumiko[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYOkazakiTomoya[] ={
+static const union AnimCmd *const sAnims_TrainerKEYOkazakiTomoya[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYFurukawaNagisa[] ={
+static const union AnimCmd *const sAnims_TrainerKEYFurukawaNagisa[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYFujibayashiKyou[] ={
+static const union AnimCmd *const sAnims_TrainerKEYFujibayashiKyou[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYFujibayashiRyou[] ={
+static const union AnimCmd *const sAnims_TrainerKEYFujibayashiRyou[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYIchinoseKotomi[] ={
+static const union AnimCmd *const sAnims_TrainerKEYIchinoseKotomi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYSakagamiTomoyo[] ={
+static const union AnimCmd *const sAnims_TrainerKEYSakagamiTomoyo[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYOkazakiUshio[] ={
+static const union AnimCmd *const sAnims_TrainerKEYOkazakiUshio[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYIllusionaryGirl[] ={
+static const union AnimCmd *const sAnims_TrainerKEYIllusionaryGirl[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYSunoharaYouhei[] ={
+static const union AnimCmd *const sAnims_TrainerKEYSunoharaYouhei[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYIbukiFuuko[] ={
+static const union AnimCmd *const sAnims_TrainerKEYIbukiFuuko[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYAizawaYuichi[] ={
+static const union AnimCmd *const sAnims_TrainerKEYAizawaYuichi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYTsukimiyaAyu[] ={
+static const union AnimCmd *const sAnims_TrainerKEYTsukimiyaAyu[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYMinaseMiyuki[] ={
+static const union AnimCmd *const sAnims_TrainerKEYMinaseMiyuki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYSawatariMakoto[] ={
+static const union AnimCmd *const sAnims_TrainerKEYSawatariMakoto[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYMisakaShiori[] ={
+static const union AnimCmd *const sAnims_TrainerKEYMisakaShiori[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYKawasumiMai[] ={
+static const union AnimCmd *const sAnims_TrainerKEYKawasumiMai[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYKunisakiYukito[] ={
+static const union AnimCmd *const sAnims_TrainerKEYKunisakiYukito[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYKamioMisuzu[] ={
+static const union AnimCmd *const sAnims_TrainerKEYKamioMisuzu[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYTohnoMinagi[] ={
+static const union AnimCmd *const sAnims_TrainerKEYTohnoMinagi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYKirishimaKano[] ={
+static const union AnimCmd *const sAnims_TrainerKEYKirishimaKano[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYKannabiNoMikoto[] ={
+static const union AnimCmd *const sAnims_TrainerKEYKannabiNoMikoto[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYNaoeRiki[] ={
+static const union AnimCmd *const sAnims_TrainerKEYNaoeRiki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYNatsumeRin[] ={
+static const union AnimCmd *const sAnims_TrainerKEYNatsumeRin[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYNatsumeKyousuke[] ={
+static const union AnimCmd *const sAnims_TrainerKEYNatsumeKyousuke[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYInoharaMasato[] ={
+static const union AnimCmd *const sAnims_TrainerKEYInoharaMasato[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYMiyazawaKengo[] ={
+static const union AnimCmd *const sAnims_TrainerKEYMiyazawaKengo[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYKamikitaKomari[] ={
+static const union AnimCmd *const sAnims_TrainerKEYKamikitaKomari[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYSaigusaHaruka[] ={
+static const union AnimCmd *const sAnims_TrainerKEYSaigusaHaruka[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYKurugayaYuiko[] ={
+static const union AnimCmd *const sAnims_TrainerKEYKurugayaYuiko[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYNuomiKudryavka[] ={
+static const union AnimCmd *const sAnims_TrainerKEYNuomiKudryavka[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_KEYNishizonoMio[] ={
+static const union AnimCmd *const sAnims_TrainerKEYNishizonoMio[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSHoshitsukiMiki[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSHoshitsukiMiki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSWakabaSubaru[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSWakabaSubaru[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSNarumiHaruka[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSNarumiHaruka[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSAmanoNozomi[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSAmanoNozomi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSHimukaiYuri[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSHimukaiYuri[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSTokiwaKurumi[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSTokiwaKurumi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSTsubuzakiAnko[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSTsubuzakiAnko[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSSerizawaRenge[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSSerizawaRenge[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSKusunokiAsuha[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSKusunokiAsuha[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSFujimiyaSakura[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSFujimiyaSakura[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSMinamiHinata[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSMinamiHinata[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSSendoinKaede[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSSendoinKaede[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSWatagiMichelle[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSWatagiMichelle[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSAsahinaKokomi[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSAsahinaKokomi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSHasumiUrara[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSHasumiUrara[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSSadone[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSSadone[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSKougamiKanon[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSKougamiKanon[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSKuniedaShiho[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSKuniedaShiho[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSMisaki[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSMisaki[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSItsukiYakumo[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSItsukiYakumo[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSMitsurugiFuran[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSMitsurugiFuran[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSNanashimaAoi[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSNanashimaAoi[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSAmeyaErika[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSAmeyaErika[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSSekaideMari[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSSekaideMari[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSEvina[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSEvina[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_BGHSIris[] ={
+static const union AnimCmd *const sAnims_TrainerBGHSIris[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_ETCCureUnion[] ={
+static const union AnimCmd *const sAnims_TrainerETCCureUnion[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_ETCKadoyaTsukasa[] ={
+static const union AnimCmd *const sAnims_TrainerETCKadoyaTsukasa[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_ETCDaikiKaito[] ={
+static const union AnimCmd *const sAnims_TrainerETCDaikiKaito[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_ETCKamenRiderDeLast[] ={
+static const union AnimCmd *const sAnims_TrainerETCKamenRiderDeLast[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_ETCSayo[] ={
+static const union AnimCmd *const sAnims_TrainerETCSayo[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -1113,166 +1113,166 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_LEAF] = sAnims_Leaf,
     [TRAINER_PIC_RS_BRENDAN] = sAnims_RubySapphireBrendan,
     [TRAINER_PIC_RS_MAY] = sAnims_RubySapphireMay,
-	[TRAINER_PIC_EVIL_SPIRIT] = sAnims_EvilSpirit, // Custom 1
-	[TRAINER_PIC_GHOST] = sAnims_Ghost, // Custom 2
-	[TRAINER_PIC_TH_SYAMEIMARU_AYA1] = sAnims_THSyameimaruAya1, // Custom 3
-	[TRAINER_PIC_TH_SYAMEIMARU_AYA2] = sAnims_THSyameimaruAya2, // Custom 4
-	[TRAINER_PIC_TH_INABA_TEWI] = sAnims_THInabaTewi, // Custom 5
-	[TRAINER_PIC_TH_CIRNO] = sAnims_THCirno, // Custom 6
-	[TRAINER_PIC_TH_SHIKIEIKI] = sAnims_THShikieiki, // Custom 7
-	[TRAINER_PIC_TH_FLANDRE_SCARLET] = sAnims_THFlandreScarlet, // Custom 8
-	[TRAINER_PIC_TH_HOURAISAN_KAGUYA] = sAnims_THHouraisanKaguya, // Custom 9
-	[TRAINER_PIC_TH_YASAKA_KANAKO] = sAnims_THYasakaKanako, // Custom 10
-	[TRAINER_PIC_TH_LILY_BLACK] = sAnims_THLilyBlack, // Custom 11
-	[TRAINER_PIC_TH_LILY_WHITE] = sAnims_THLilyWhite, // Custom 12
-	[TRAINER_PIC_TH_MARIBEL_HEARN] = sAnims_THMaribelHearn, // Custom 13
-	[TRAINER_PIC_TH_KIRISAME_MARISA] = sAnims_THKirisameMarisa, // Custom 14
-	[TRAINER_PIC_TH_HONG_MEILING] = sAnims_THHongMeiling, // Custom 15
-	[TRAINER_PIC_TH_FUJIWARA_NO_MOKOU] = sAnims_THFujiwaraNoMokou, // Custom 16
-	[TRAINER_PIC_TH_INUBASHIRI_MOMIJI] = sAnims_THInubashiriMomiji, // Custom 17
-	[TRAINER_PIC_TH_MURASA_MINAMITSU] = sAnims_THMurasaMinamitsu, // Custom 18
-	[TRAINER_PIC_TH_HAKUREI_REIMU1] = sAnims_THHakureiReimu1, // Custom 19
-	[TRAINER_PIC_TH_HAKUREI_REIMU2] = sAnims_THHakureiReimu2, // Custom 20
-	[TRAINER_PIC_TH_REMILIA_SCARLET] = sAnims_THRemiliaScarlet, // Custom 21
-	[TRAINER_PIC_TH_USAMI_RENKO] = sAnims_THUsamiRenko, // Custom 22
-	[TRAINER_PIC_TH_RUMIA] = sAnims_THRumia, // Custom 23
-	[TRAINER_PIC_TH_IZAYOI_SAKUYA] = sAnims_THIzayoiSakuya, // Custom 24
-	[TRAINER_PIC_TH_KOCHIYA_SANAE] = sAnims_THKochiyaSanae, // Custom 25
-	[TRAINER_PIC_TH_SAN_BAKA] = sAnims_THSanBaka, // Custom 26
-	[TRAINER_PIC_TH_SHINKI] = sAnims_THShinki, // Custom 27
-	[TRAINER_PIC_TH_IBUKI_SUIKA] = sAnims_THIbukiSuika, // Custom 28
-	[TRAINER_PIC_TH_REIUJI_UTSUHO] = sAnims_THReiujiUtsuho, // Custom 29
-	[TRAINER_PIC_TH_WRIGGLE_NIGHTBUG] = sAnims_THWriggleNightbug, // Custom 30
-	[TRAINER_PIC_TH_KONPAKU_YOUMU] = sAnims_THKonpakuYoumu, // Custom 31
-	[TRAINER_PIC_TH_FAIRY] = sAnims_THFairy, // Custom 32
-	[TRAINER_PIC_TH_YAKUMO_YUKARI1] = sAnims_THYakumoYukari1, // Custom 33
-	[TRAINER_PIC_TH_YAKUMO_YUKARI2] = sAnims_THYakumoYukari2, // Custom 34
-	[TRAINER_PIC_TH_YUMEKO] = sAnims_THYumeko, // Custom 35
-	[TRAINER_PIC_TH_HOSHIGUMA_YUUGI] = sAnims_THHoshigumaYuugi, // Custom 36
-	[TRAINER_PIC_TH_KAZAMI_YUUKA1] = sAnims_THKazamiYuuka1, // Custom 37
-	[TRAINER_PIC_TH_KAZAMI_YUUKA2] = sAnims_THKazamiYuuka2, // Custom 38
-	[TRAINER_PIC_TH_SAIGYOUJI_YUYUKO1] = sAnims_THSaigyoujiYuyuko1, // Custom 39
-	[TRAINER_PIC_TH_SAIGYOUJI_YUYUKO2] = sAnims_THSaigyoujiYuyuko2, // Custom 40
-	[TRAINER_PIC_ETC_IKUE] = sAnims_ETCIkue, // Custom 41
-	[TRAINER_PIC_SH_VIVITR] = sAnims_SHVIVITr, // Custom 42
-	[TRAINER_PIC_PC_MISUMI_NAGISA] = sAnims_PCMisumiNagisa, // Custom 43
-	[TRAINER_PIC_PC_CURE_BLACK] = sAnims_PCCureBlack, // Custom 44
-	[TRAINER_PIC_PC_YUKISHIRO_HONOKA] = sAnims_PCYukishiroHonoka, // Custom 45
-	[TRAINER_PIC_PC_CURE_WHITE] = sAnims_PCCureWhite, // Custom 46
-	[TRAINER_PIC_PC_KUJOU_HIKARI] = sAnims_PCKujouHikari, // Custom 47
-	[TRAINER_PIC_PC_SHINY_LUMINOUS] = sAnims_PCShinyLuminous, // Custom 48
-	[TRAINER_PIC_PC_HYUUGA_SAKI] = sAnims_PCHyuugaSaki, // Custom 49
-	[TRAINER_PIC_PC_CURE_BLOOM] = sAnims_PCCureBloom, // Custom 50
-	[TRAINER_PIC_PC_MISHOU_MAI] = sAnims_PCMishouMai, // Custom 51
-	[TRAINER_PIC_PC_CURE_EGRET] = sAnims_PCCureEgret, // Custom 52
-	[TRAINER_PIC_PC_YUMEHARA_NOZOMI] = sAnims_PCYumeharaNozomi, // Custom 53
-	[TRAINER_PIC_PC_CURE_DREAM] = sAnims_PCCureDream, // Custom 54
-	[TRAINER_PIC_PC_MOMOZONO_LOVE] = sAnims_PCMomozonoLove, // Custom 55
-	[TRAINER_PIC_PC_CURE_PEACH] = sAnims_PCCurePeach, // Custom 56
-	[TRAINER_PIC_PC_HANASAKI_TSUBOMI] = sAnims_PCHanasakiTsubomi, // Custom 57
-	[TRAINER_PIC_PC_CURE_BLOSSOM] = sAnims_PCCureBlossom, // Custom 58
-	[TRAINER_PIC_PC_HOJO_HIBIKI] = sAnims_PCHojoHibiki, // Custom 59
-	[TRAINER_PIC_PC_CURE_MELODY] = sAnims_PCCureMelody, // Custom 60
-	[TRAINER_PIC_PC_HOSHIZORA_MIYUKI] = sAnims_PCHoshizoraMiyuki, // Custom 61
-	[TRAINER_PIC_PC_CURE_HAPPY] = sAnims_PCCureHappy, // Custom 62
-	[TRAINER_PIC_PC_AIDA_MANA] = sAnims_PCAidaMana, // Custom 63
-	[TRAINER_PIC_PC_CURE_HEART] = sAnims_PCCureHeart, // Custom 64
-	[TRAINER_PIC_PC_SAKAGAMI_AYUMI] = sAnims_PCSakagamiAyumi, // Custom 65
-	[TRAINER_PIC_PC_CURE_ECHO] = sAnims_PCCureEcho, // Custom 66
-	[TRAINER_PIC_YYYI_NOGI_WAKABA] = sAnims_YYYINogiWakaba, // Custom 67
-	[TRAINER_PIC_YYYI_TAKASHIMA_YUUNA] = sAnims_YYYITakashimaYuuna, // Custom 68
-	[TRAINER_PIC_YYYI_KOORI_CHIKAGE] = sAnims_YYYIKooriChikage, // Custom 69
-	[TRAINER_PIC_YYYI_DOI_TAMAKO] = sAnims_YYYIDoiTamako, // Custom 70
-	[TRAINER_PIC_YYYI_IYOJIMA_ANZU] = sAnims_YYYIIyojimaAnzu, // Custom 71
-	[TRAINER_PIC_YYYI_UESATO_HINATA] = sAnims_YYYIUesatoHinata, // Custom 72
-	[TRAINER_PIC_YYYI_SHIRATORI_UTANO] = sAnims_YYYIShiratoriUtano, // Custom 73
-	[TRAINER_PIC_YYYI_FUJIMORI_MITO] = sAnims_YYYIFujimoriMito, // Custom 74
-	[TRAINER_PIC_YYYI_WASHIO_SUMI] = sAnims_YYYIWashioSumi, // Custom 75
-	[TRAINER_PIC_YYYI_NOGI_SONOKO_SMOL] = sAnims_YYYINogiSonokoSmol, // Custom 76
-	[TRAINER_PIC_YYYI_MINOWA_GIN] = sAnims_YYYIMinowaGin, // Custom 77
-	[TRAINER_PIC_YYYI_AKI] = sAnims_YYYIAki, // Custom 78
-	[TRAINER_PIC_YYYI_YUUKI_YUUNA] = sAnims_YYYIYuukiYuuna, // Custom 79
-	[TRAINER_PIC_YYYI_TOUGOU_MIMORI] = sAnims_YYYITougouMimori, // Custom 80
-	[TRAINER_PIC_YYYI_INUBOUZAKI_FUU] = sAnims_YYYIInubouzakiFuu, // Custom 81
-	[TRAINER_PIC_YYYI_INUBOUZAKI_ITSUKI] = sAnims_YYYIInubouzakiItsuki, // Custom 82
-	[TRAINER_PIC_YYYI_MIYOSHI_KARIN] = sAnims_YYYIMiyoshiKarin, // Custom 83
-	[TRAINER_PIC_YYYI_NOGI_SONOKO] = sAnims_YYYINogiSonoko, // Custom 84
-	[TRAINER_PIC_YYYI_KUSUNOKI_MEBUKI] = sAnims_YYYIKusunokiMebuki, // Custom 85
-	[TRAINER_PIC_YYYI_KAGAJOU_SUZUME] = sAnims_YYYIKagajouSuzume, // Custom 86
-	[TRAINER_PIC_YYYI_MIROKU_YUMIKO] = sAnims_YYYIMirokuYumiko, // Custom 87
-	[TRAINER_PIC_YYYI_YAMABUSHI_SHIZUKU] = sAnims_YYYIYamabushiShizuku, // Custom 88
-	[TRAINER_PIC_YYYI_KOKUDOU_AYA] = sAnims_YYYIKokudouAya, // Custom 89
-	[TRAINER_PIC_YYYI_AKIHARA_SEKKA] = sAnims_YYYIAkiharaSekka, // Custom 90
-	[TRAINER_PIC_YYYI_KOHAGURA_NATSUME] = sAnims_YYYIKohaguraNatsume, // Custom 91
-	[TRAINER_PIC_YYYI_AKAMINE_YUUNA] = sAnims_YYYIAkamineYuuna, // Custom 92
-	[TRAINER_PIC_YYYI_MIROKU_RENGE] = sAnims_YYYIMirokuRenge, // Custom 93
-	[TRAINER_PIC_YYYI_KIRYUU_SHIZUKA] = sAnims_YYYIKiryuuShizuka, // Custom 94
-	[TRAINER_PIC_YYYI_TENMA_MISAKI] = sAnims_YYYITenmaMisaki, // Custom 95
-	[TRAINER_PIC_YYYI_HOKKEDOU_HIME] = sAnims_YYYIHokkedouHime, // Custom 96
-	[TRAINER_PIC_YYYI_HANAMOTO_YOSHIKA] = sAnims_YYYIHanamotoYoshika, // Custom 97
-	[TRAINER_PIC_YYYI_FUYOU_LILIENTHAL_YUUNA] = sAnims_YYYIFuyouLilienthalYuuna, // Custom 98
-	[TRAINER_PIC_YYYI_YUZUKI_YUUNA] = sAnims_YYYIYuzukiYuuna, // Custom 99
-	[TRAINER_PIC_YYYI_KARASUMA_KUMIKO] = sAnims_YYYIKarasumaKumiko, // Custom 100
-	[TRAINER_PIC_KEY_OKAZAKI_TOMOYA] = sAnims_KEYOkazakiTomoya, // Custom 101
-	[TRAINER_PIC_KEY_FURUKAWA_NAGISA] = sAnims_KEYFurukawaNagisa, // Custom 102
-	[TRAINER_PIC_KEY_FUJIBAYASHI_KYOU] = sAnims_KEYFujibayashiKyou, // Custom 103
-	[TRAINER_PIC_KEY_FUJIBAYASHI_RYOU] = sAnims_KEYFujibayashiRyou, // Custom 104
-	[TRAINER_PIC_KEY_ICHINOSE_KOTOMI] = sAnims_KEYIchinoseKotomi, // Custom 105
-	[TRAINER_PIC_KEY_SAKAGAMI_TOMOYO] = sAnims_KEYSakagamiTomoyo, // Custom 106
-	[TRAINER_PIC_KEY_OKAZAKI_USHIO] = sAnims_KEYOkazakiUshio, // Custom 107
-	[TRAINER_PIC_KEY_ILLUSIONARY_GIRL] = sAnims_KEYIllusionaryGirl, // Custom 108
-	[TRAINER_PIC_KEY_SUNOHARA_YOUHEI] = sAnims_KEYSunoharaYouhei, // Custom 109
-	[TRAINER_PIC_KEY_IBUKI_FUUKO] = sAnims_KEYIbukiFuuko, // Custom 110
-	[TRAINER_PIC_KEY_AIZAWA_YUICHI] = sAnims_KEYAizawaYuichi, // Custom 111
-	[TRAINER_PIC_KEY_TSUKIMIYA_AYU] = sAnims_KEYTsukimiyaAyu, // Custom 112
-	[TRAINER_PIC_KEY_MINASE_MIYUKI] = sAnims_KEYMinaseMiyuki, // Custom 113
-	[TRAINER_PIC_KEY_SAWATARI_MAKOTO] = sAnims_KEYSawatariMakoto, // Custom 114
-	[TRAINER_PIC_KEY_MISAKA_SHIORI] = sAnims_KEYMisakaShiori, // Custom 115
-	[TRAINER_PIC_KEY_KAWASUMI_MAI] = sAnims_KEYKawasumiMai, // Custom 116
-	[TRAINER_PIC_KEY_KUNISAKI_YUKITO] = sAnims_KEYKunisakiYukito, // Custom 117
-	[TRAINER_PIC_KEY_KAMIO_MISUZU] = sAnims_KEYKamioMisuzu, // Custom 118
-	[TRAINER_PIC_KEY_TOHNO_MINAGI] = sAnims_KEYTohnoMinagi, // Custom 119
-	[TRAINER_PIC_KEY_KIRISHIMA_KANO] = sAnims_KEYKirishimaKano, // Custom 120
-	[TRAINER_PIC_KEY_KANNABI_NO_MIKOTO] = sAnims_KEYKannabiNoMikoto, // Custom 121
-	[TRAINER_PIC_KEY_NAOE_RIKI] = sAnims_KEYNaoeRiki, // Custom 122
-	[TRAINER_PIC_KEY_NATSUME_RIN] = sAnims_KEYNatsumeRin, // Custom 123
-	[TRAINER_PIC_KEY_NATSUME_KYOUSUKE] = sAnims_KEYNatsumeKyousuke, // Custom 124
-	[TRAINER_PIC_KEY_INOHARA_MASATO] = sAnims_KEYInoharaMasato, // Custom 125
-	[TRAINER_PIC_KEY_MIYAZAYA_KENGO] = sAnims_KEYMiyazawaKengo, // Custom 126
-	[TRAINER_PIC_KEY_KAMIKITA_KOMARI] = sAnims_KEYKamikitaKomari, // Custom 127
-	[TRAINER_PIC_KEY_SAIGUSA_HARUKA] = sAnims_KEYSaigusaHaruka, // Custom 128
-	[TRAINER_PIC_KEY_KURUGAYA_YUIKO] = sAnims_KEYKurugayaYuiko, // Custom 129
-	[TRAINER_PIC_KEY_NUOMI_KUDRYAVKA] = sAnims_KEYNuomiKudryavka, // Custom 130
-	[TRAINER_PIC_KEY_NISHIZONO_MIO] = sAnims_KEYNishizonoMio, // Custom 131
-	[TRAINER_PIC_BGHS_HOSHITSUKI_MIKI] = sAnims_BGHSHoshitsukiMiki, // Custom 132
-	[TRAINER_PIC_BGHS_WAKABA_SUBARU] = sAnims_BGHSWakabaSubaru, // Custom 133
-	[TRAINER_PIC_BGHS_NARUMI_HARUKA] = sAnims_BGHSNarumiHaruka, // Custom 134
-	[TRAINER_PIC_BGHS_AMANO_NOZOMI] = sAnims_BGHSAmanoNozomi, // Custom 135
-	[TRAINER_PIC_BGHS_HIMUKAI_YURI] = sAnims_BGHSHimukaiYuri, // Custom 136
-	[TRAINER_PIC_BGHS_TOKIWA_KURUMI] = sAnims_BGHSTokiwaKurumi, // Custom 137
-	[TRAINER_PIC_BGHS_TSUBUZAKI_ANKO] = sAnims_BGHSTsubuzakiAnko, // Custom 138
-	[TRAINER_PIC_BGHS_SERIZAWA_RENGE] = sAnims_BGHSSerizawaRenge, // Custom 139
-	[TRAINER_PIC_BGHS_KUSONOKI_ASUHA] = sAnims_BGHSKusunokiAsuha, // Custom 140
-	[TRAINER_PIC_BGHS_FUJIMIYA_SAKURA] = sAnims_BGHSFujimiyaSakura, // Custom 141
-	[TRAINER_PIC_BGHS_MINAMI_HINATA] = sAnims_BGHSMinamiHinata, // Custom 142
-	[TRAINER_PIC_BGHS_SENDOIN_KAEDE] = sAnims_BGHSSendoinKaede, // Custom 143
-	[TRAINER_PIC_BGHS_WATAGI_MICHELLE] = sAnims_BGHSWatagiMichelle, // Custom 144
-	[TRAINER_PIC_BGHS_ASAHINA_KOKOMI] = sAnims_BGHSAsahinaKokomi, // Custom 145
-	[TRAINER_PIC_BGHS_HASUMI_URARA] = sAnims_BGHSHasumiUrara, // Custom 146
-	[TRAINER_PIC_BGHS_SADONE] = sAnims_BGHSSadone, // Custom 147
-	[TRAINER_PIC_BGHS_KOUGAMI_KANON] = sAnims_BGHSKougamiKanon, // Custom 148
-	[TRAINER_PIC_BGHS_KUNIEDA_SHIHO] = sAnims_BGHSKuniedaShiho, // Custom 149
-	[TRAINER_PIC_BGHS_MISAKI] = sAnims_BGHSMisaki, // Custom 150
-	[TRAINER_PIC_BGHS_ITSUKI_YAKUMO] = sAnims_BGHSItsukiYakumo, // Custom 151
-	[TRAINER_PIC_BGHS_MITSURUGI_FURAN] = sAnims_BGHSMitsurugiFuran, // Custom 152
-	[TRAINER_PIC_BGHS_NANASHIMA_AOI] = sAnims_BGHSNanashimaAoi, // Custom 153
-	[TRAINER_PIC_BGHS_AMEYA_ERIKA] = sAnims_BGHSAmeyaErika, // Custom 154
-	[TRAINER_PIC_BGHS_SEKAIDE_MARI] = sAnims_BGHSSekaideMari, // Custom 155
-	[TRAINER_PIC_BGHS_EVINA] = sAnims_BGHSEvina, // Custom 156
-	[TRAINER_PIC_BGHS_IRIS] = sAnims_BGHSIris, // Custom 157
-	[TRAINER_PIC_ETC_CURE_UNION] = sAnims_ETCCureUnion, // Custom 158
-	[TRAINER_PIC_ETC_KADOYA_TSUKASA] = sAnims_ETCKadoyaTsukasa, // Custom 159
-	[TRAINER_PIC_ETC_DAIKI_KAITO] = sAnims_ETCDaikiKaito, // Custom 160
-	[TRAINER_PIC_ETC_KR_DELAST] = sAnims_ETCKamenRiderDeLast, // Custom 161
-	[TRAINER_PIC_ETC_SAYO] = sAnims_ETCSayo, // Custom 162
+	[TRAINER_PIC_EVIL_SPIRIT] = sAnims_TrainerEvilSpirit, // Custom 1
+	[TRAINER_PIC_GHOST] = sAnims_TrainerGhost, // Custom 2
+	[TRAINER_PIC_TH_SYAMEIMARU_AYA1] = sAnims_TrainerTHSyameimaruAya1, // Custom 3
+	[TRAINER_PIC_TH_SYAMEIMARU_AYA2] = sAnims_TrainerTHSyameimaruAya2, // Custom 4
+	[TRAINER_PIC_TH_INABA_TEWI] = sAnims_TrainerTHInabaTewi, // Custom 5
+	[TRAINER_PIC_TH_CIRNO] = sAnims_TrainerTHCirno, // Custom 6
+	[TRAINER_PIC_TH_SHIKIEIKI] = sAnims_TrainerTHShikieiki, // Custom 7
+	[TRAINER_PIC_TH_FLANDRE_SCARLET] = sAnims_TrainerTHFlandreScarlet, // Custom 8
+	[TRAINER_PIC_TH_HOURAISAN_KAGUYA] = sAnims_TrainerTHHouraisanKaguya, // Custom 9
+	[TRAINER_PIC_TH_YASAKA_KANAKO] = sAnims_TrainerTHYasakaKanako, // Custom 10
+	[TRAINER_PIC_TH_LILY_BLACK] = sAnims_TrainerTHLilyBlack, // Custom 11
+	[TRAINER_PIC_TH_LILY_WHITE] = sAnims_TrainerTHLilyWhite, // Custom 12
+	[TRAINER_PIC_TH_MARIBEL_HEARN] = sAnims_TrainerTHMaribelHearn, // Custom 13
+	[TRAINER_PIC_TH_KIRISAME_MARISA] = sAnims_TrainerTHKirisameMarisa, // Custom 14
+	[TRAINER_PIC_TH_HONG_MEILING] = sAnims_TrainerTHHongMeiling, // Custom 15
+	[TRAINER_PIC_TH_FUJIWARA_NO_MOKOU] = sAnims_TrainerTHFujiwaraNoMokou, // Custom 16
+	[TRAINER_PIC_TH_INUBASHIRI_MOMIJI] = sAnims_TrainerTHInubashiriMomiji, // Custom 17
+	[TRAINER_PIC_TH_MURASA_MINAMITSU] = sAnims_TrainerTHMurasaMinamitsu, // Custom 18
+	[TRAINER_PIC_TH_HAKUREI_REIMU1] = sAnims_TrainerTHHakureiReimu1, // Custom 19
+	[TRAINER_PIC_TH_HAKUREI_REIMU2] = sAnims_TrainerTHHakureiReimu2, // Custom 20
+	[TRAINER_PIC_TH_REMILIA_SCARLET] = sAnims_TrainerTHRemiliaScarlet, // Custom 21
+	[TRAINER_PIC_TH_USAMI_RENKO] = sAnims_TrainerTHUsamiRenko, // Custom 22
+	[TRAINER_PIC_TH_RUMIA] = sAnims_TrainerTHRumia, // Custom 23
+	[TRAINER_PIC_TH_IZAYOI_SAKUYA] = sAnims_TrainerTHIzayoiSakuya, // Custom 24
+	[TRAINER_PIC_TH_KOCHIYA_SANAE] = sAnims_TrainerTHKochiyaSanae, // Custom 25
+	[TRAINER_PIC_TH_SAN_BAKA] = sAnims_TrainerTHSanBaka, // Custom 26
+	[TRAINER_PIC_TH_SHINKI] = sAnims_TrainerTHShinki, // Custom 27
+	[TRAINER_PIC_TH_IBUKI_SUIKA] = sAnims_TrainerTHIbukiSuika, // Custom 28
+	[TRAINER_PIC_TH_REIUJI_UTSUHO] = sAnims_TrainerTHReiujiUtsuho, // Custom 29
+	[TRAINER_PIC_TH_WRIGGLE_NIGHTBUG] = sAnims_TrainerTHWriggleNightbug, // Custom 30
+	[TRAINER_PIC_TH_KONPAKU_YOUMU] = sAnims_TrainerTHKonpakuYoumu, // Custom 31
+	[TRAINER_PIC_TH_FAIRY] = sAnims_TrainerTHFairy, // Custom 32
+	[TRAINER_PIC_TH_YAKUMO_YUKARI1] = sAnims_TrainerTHYakumoYukari1, // Custom 33
+	[TRAINER_PIC_TH_YAKUMO_YUKARI2] = sAnims_TrainerTHYakumoYukari2, // Custom 34
+	[TRAINER_PIC_TH_YUMEKO] = sAnims_TrainerTHYumeko, // Custom 35
+	[TRAINER_PIC_TH_HOSHIGUMA_YUUGI] = sAnims_TrainerTHHoshigumaYuugi, // Custom 36
+	[TRAINER_PIC_TH_KAZAMI_YUUKA1] = sAnims_TrainerTHKazamiYuuka1, // Custom 37
+	[TRAINER_PIC_TH_KAZAMI_YUUKA2] = sAnims_TrainerTHKazamiYuuka2, // Custom 38
+	[TRAINER_PIC_TH_SAIGYOUJI_YUYUKO1] = sAnims_TrainerTHSaigyoujiYuyuko1, // Custom 39
+	[TRAINER_PIC_TH_SAIGYOUJI_YUYUKO2] = sAnims_TrainerTHSaigyoujiYuyuko2, // Custom 40
+	[TRAINER_PIC_ETC_IKUE] = sAnims_TrainerETCIkue, // Custom 41
+	[TRAINER_PIC_SH_VIVITR] = sAnims_TrainerSHVIVITr, // Custom 42
+	[TRAINER_PIC_PC_MISUMI_NAGISA] = sAnims_TrainerPCMisumiNagisa, // Custom 43
+	[TRAINER_PIC_PC_CURE_BLACK] = sAnims_TrainerPCCureBlack, // Custom 44
+	[TRAINER_PIC_PC_YUKISHIRO_HONOKA] = sAnims_TrainerPCYukishiroHonoka, // Custom 45
+	[TRAINER_PIC_PC_CURE_WHITE] = sAnims_TrainerPCCureWhite, // Custom 46
+	[TRAINER_PIC_PC_KUJOU_HIKARI] = sAnims_TrainerPCKujouHikari, // Custom 47
+	[TRAINER_PIC_PC_SHINY_LUMINOUS] = sAnims_TrainerPCShinyLuminous, // Custom 48
+	[TRAINER_PIC_PC_HYUUGA_SAKI] = sAnims_TrainerPCHyuugaSaki, // Custom 49
+	[TRAINER_PIC_PC_CURE_BLOOM] = sAnims_TrainerPCCureBloom, // Custom 50
+	[TRAINER_PIC_PC_MISHOU_MAI] = sAnims_TrainerPCMishouMai, // Custom 51
+	[TRAINER_PIC_PC_CURE_EGRET] = sAnims_TrainerPCCureEgret, // Custom 52
+	[TRAINER_PIC_PC_YUMEHARA_NOZOMI] = sAnims_TrainerPCYumeharaNozomi, // Custom 53
+	[TRAINER_PIC_PC_CURE_DREAM] = sAnims_TrainerPCCureDream, // Custom 54
+	[TRAINER_PIC_PC_MOMOZONO_LOVE] = sAnims_TrainerPCMomozonoLove, // Custom 55
+	[TRAINER_PIC_PC_CURE_PEACH] = sAnims_TrainerPCCurePeach, // Custom 56
+	[TRAINER_PIC_PC_HANASAKI_TSUBOMI] = sAnims_TrainerPCHanasakiTsubomi, // Custom 57
+	[TRAINER_PIC_PC_CURE_BLOSSOM] = sAnims_TrainerPCCureBlossom, // Custom 58
+	[TRAINER_PIC_PC_HOJO_HIBIKI] = sAnims_TrainerPCHojoHibiki, // Custom 59
+	[TRAINER_PIC_PC_CURE_MELODY] = sAnims_TrainerPCCureMelody, // Custom 60
+	[TRAINER_PIC_PC_HOSHIZORA_MIYUKI] = sAnims_TrainerPCHoshizoraMiyuki, // Custom 61
+	[TRAINER_PIC_PC_CURE_HAPPY] = sAnims_TrainerPCCureHappy, // Custom 62
+	[TRAINER_PIC_PC_AIDA_MANA] = sAnims_TrainerPCAidaMana, // Custom 63
+	[TRAINER_PIC_PC_CURE_HEART] = sAnims_TrainerPCCureHeart, // Custom 64
+	[TRAINER_PIC_PC_SAKAGAMI_AYUMI] = sAnims_TrainerPCSakagamiAyumi, // Custom 65
+	[TRAINER_PIC_PC_CURE_ECHO] = sAnims_TrainerPCCureEcho, // Custom 66
+	[TRAINER_PIC_YYYI_NOGI_WAKABA] = sAnims_TrainerYYYINogiWakaba, // Custom 67
+	[TRAINER_PIC_YYYI_TAKASHIMA_YUUNA] = sAnims_TrainerYYYITakashimaYuuna, // Custom 68
+	[TRAINER_PIC_YYYI_KOORI_CHIKAGE] = sAnims_TrainerYYYIKooriChikage, // Custom 69
+	[TRAINER_PIC_YYYI_DOI_TAMAKO] = sAnims_TrainerYYYIDoiTamako, // Custom 70
+	[TRAINER_PIC_YYYI_IYOJIMA_ANZU] = sAnims_TrainerYYYIIyojimaAnzu, // Custom 71
+	[TRAINER_PIC_YYYI_UESATO_HINATA] = sAnims_TrainerYYYIUesatoHinata, // Custom 72
+	[TRAINER_PIC_YYYI_SHIRATORI_UTANO] = sAnims_TrainerYYYIShiratoriUtano, // Custom 73
+	[TRAINER_PIC_YYYI_FUJIMORI_MITO] = sAnims_TrainerYYYIFujimoriMito, // Custom 74
+	[TRAINER_PIC_YYYI_WASHIO_SUMI] = sAnims_TrainerYYYIWashioSumi, // Custom 75
+	[TRAINER_PIC_YYYI_NOGI_SONOKO_SMOL] = sAnims_TrainerYYYINogiSonokoSmol, // Custom 76
+	[TRAINER_PIC_YYYI_MINOWA_GIN] = sAnims_TrainerYYYIMinowaGin, // Custom 77
+	[TRAINER_PIC_YYYI_AKI] = sAnims_TrainerYYYIAki, // Custom 78
+	[TRAINER_PIC_YYYI_YUUKI_YUUNA] = sAnims_TrainerYYYIYuukiYuuna, // Custom 79
+	[TRAINER_PIC_YYYI_TOUGOU_MIMORI] = sAnims_TrainerYYYITougouMimori, // Custom 80
+	[TRAINER_PIC_YYYI_INUBOUZAKI_FUU] = sAnims_TrainerYYYIInubouzakiFuu, // Custom 81
+	[TRAINER_PIC_YYYI_INUBOUZAKI_ITSUKI] = sAnims_TrainerYYYIInubouzakiItsuki, // Custom 82
+	[TRAINER_PIC_YYYI_MIYOSHI_KARIN] = sAnims_TrainerYYYIMiyoshiKarin, // Custom 83
+	[TRAINER_PIC_YYYI_NOGI_SONOKO] = sAnims_TrainerYYYINogiSonoko, // Custom 84
+	[TRAINER_PIC_YYYI_KUSUNOKI_MEBUKI] = sAnims_TrainerYYYIKusunokiMebuki, // Custom 85
+	[TRAINER_PIC_YYYI_KAGAJOU_SUZUME] = sAnims_TrainerYYYIKagajouSuzume, // Custom 86
+	[TRAINER_PIC_YYYI_MIROKU_YUMIKO] = sAnims_TrainerYYYIMirokuYumiko, // Custom 87
+	[TRAINER_PIC_YYYI_YAMABUSHI_SHIZUKU] = sAnims_TrainerYYYIYamabushiShizuku, // Custom 88
+	[TRAINER_PIC_YYYI_KOKUDOU_AYA] = sAnims_TrainerYYYIKokudouAya, // Custom 89
+	[TRAINER_PIC_YYYI_AKIHARA_SEKKA] = sAnims_TrainerYYYIAkiharaSekka, // Custom 90
+	[TRAINER_PIC_YYYI_KOHAGURA_NATSUME] = sAnims_TrainerYYYIKohaguraNatsume, // Custom 91
+	[TRAINER_PIC_YYYI_AKAMINE_YUUNA] = sAnims_TrainerYYYIAkamineYuuna, // Custom 92
+	[TRAINER_PIC_YYYI_MIROKU_RENGE] = sAnims_TrainerYYYIMirokuRenge, // Custom 93
+	[TRAINER_PIC_YYYI_KIRYUU_SHIZUKA] = sAnims_TrainerYYYIKiryuuShizuka, // Custom 94
+	[TRAINER_PIC_YYYI_TENMA_MISAKI] = sAnims_TrainerYYYITenmaMisaki, // Custom 95
+	[TRAINER_PIC_YYYI_HOKKEDOU_HIME] = sAnims_TrainerYYYIHokkedouHime, // Custom 96
+	[TRAINER_PIC_YYYI_HANAMOTO_YOSHIKA] = sAnims_TrainerYYYIHanamotoYoshika, // Custom 97
+	[TRAINER_PIC_YYYI_FUYOU_LILIENTHAL_YUUNA] = sAnims_TrainerYYYIFuyouLilienthalYuuna, // Custom 98
+	[TRAINER_PIC_YYYI_YUZUKI_YUUNA] = sAnims_TrainerYYYIYuzukiYuuna, // Custom 99
+	[TRAINER_PIC_YYYI_KARASUMA_KUMIKO] = sAnims_TrainerYYYIKarasumaKumiko, // Custom 100
+	[TRAINER_PIC_KEY_OKAZAKI_TOMOYA] = sAnims_TrainerKEYOkazakiTomoya, // Custom 101
+	[TRAINER_PIC_KEY_FURUKAWA_NAGISA] = sAnims_TrainerKEYFurukawaNagisa, // Custom 102
+	[TRAINER_PIC_KEY_FUJIBAYASHI_KYOU] = sAnims_TrainerKEYFujibayashiKyou, // Custom 103
+	[TRAINER_PIC_KEY_FUJIBAYASHI_RYOU] = sAnims_TrainerKEYFujibayashiRyou, // Custom 104
+	[TRAINER_PIC_KEY_ICHINOSE_KOTOMI] = sAnims_TrainerKEYIchinoseKotomi, // Custom 105
+	[TRAINER_PIC_KEY_SAKAGAMI_TOMOYO] = sAnims_TrainerKEYSakagamiTomoyo, // Custom 106
+	[TRAINER_PIC_KEY_OKAZAKI_USHIO] = sAnims_TrainerKEYOkazakiUshio, // Custom 107
+	[TRAINER_PIC_KEY_ILLUSIONARY_GIRL] = sAnims_TrainerKEYIllusionaryGirl, // Custom 108
+	[TRAINER_PIC_KEY_SUNOHARA_YOUHEI] = sAnims_TrainerKEYSunoharaYouhei, // Custom 109
+	[TRAINER_PIC_KEY_IBUKI_FUUKO] = sAnims_TrainerKEYIbukiFuuko, // Custom 110
+	[TRAINER_PIC_KEY_AIZAWA_YUICHI] = sAnims_TrainerKEYAizawaYuichi, // Custom 111
+	[TRAINER_PIC_KEY_TSUKIMIYA_AYU] = sAnims_TrainerKEYTsukimiyaAyu, // Custom 112
+	[TRAINER_PIC_KEY_MINASE_MIYUKI] = sAnims_TrainerKEYMinaseMiyuki, // Custom 113
+	[TRAINER_PIC_KEY_SAWATARI_MAKOTO] = sAnims_TrainerKEYSawatariMakoto, // Custom 114
+	[TRAINER_PIC_KEY_MISAKA_SHIORI] = sAnims_TrainerKEYMisakaShiori, // Custom 115
+	[TRAINER_PIC_KEY_KAWASUMI_MAI] = sAnims_TrainerKEYKawasumiMai, // Custom 116
+	[TRAINER_PIC_KEY_KUNISAKI_YUKITO] = sAnims_TrainerKEYKunisakiYukito, // Custom 117
+	[TRAINER_PIC_KEY_KAMIO_MISUZU] = sAnims_TrainerKEYKamioMisuzu, // Custom 118
+	[TRAINER_PIC_KEY_TOHNO_MINAGI] = sAnims_TrainerKEYTohnoMinagi, // Custom 119
+	[TRAINER_PIC_KEY_KIRISHIMA_KANO] = sAnims_TrainerKEYKirishimaKano, // Custom 120
+	[TRAINER_PIC_KEY_KANNABI_NO_MIKOTO] = sAnims_TrainerKEYKannabiNoMikoto, // Custom 121
+	[TRAINER_PIC_KEY_NAOE_RIKI] = sAnims_TrainerKEYNaoeRiki, // Custom 122
+	[TRAINER_PIC_KEY_NATSUME_RIN] = sAnims_TrainerKEYNatsumeRin, // Custom 123
+	[TRAINER_PIC_KEY_NATSUME_KYOUSUKE] = sAnims_TrainerKEYNatsumeKyousuke, // Custom 124
+	[TRAINER_PIC_KEY_INOHARA_MASATO] = sAnims_TrainerKEYInoharaMasato, // Custom 125
+	[TRAINER_PIC_KEY_MIYAZAYA_KENGO] = sAnims_TrainerKEYMiyazawaKengo, // Custom 126
+	[TRAINER_PIC_KEY_KAMIKITA_KOMARI] = sAnims_TrainerKEYKamikitaKomari, // Custom 127
+	[TRAINER_PIC_KEY_SAIGUSA_HARUKA] = sAnims_TrainerKEYSaigusaHaruka, // Custom 128
+	[TRAINER_PIC_KEY_KURUGAYA_YUIKO] = sAnims_TrainerKEYKurugayaYuiko, // Custom 129
+	[TRAINER_PIC_KEY_NUOMI_KUDRYAVKA] = sAnims_TrainerKEYNuomiKudryavka, // Custom 130
+	[TRAINER_PIC_KEY_NISHIZONO_MIO] = sAnims_TrainerKEYNishizonoMio, // Custom 131
+	[TRAINER_PIC_BGHS_HOSHITSUKI_MIKI] = sAnims_TrainerBGHSHoshitsukiMiki, // Custom 132
+	[TRAINER_PIC_BGHS_WAKABA_SUBARU] = sAnims_TrainerBGHSWakabaSubaru, // Custom 133
+	[TRAINER_PIC_BGHS_NARUMI_HARUKA] = sAnims_TrainerBGHSNarumiHaruka, // Custom 134
+	[TRAINER_PIC_BGHS_AMANO_NOZOMI] = sAnims_TrainerBGHSAmanoNozomi, // Custom 135
+	[TRAINER_PIC_BGHS_HIMUKAI_YURI] = sAnims_TrainerBGHSHimukaiYuri, // Custom 136
+	[TRAINER_PIC_BGHS_TOKIWA_KURUMI] = sAnims_TrainerBGHSTokiwaKurumi, // Custom 137
+	[TRAINER_PIC_BGHS_TSUBUZAKI_ANKO] = sAnims_TrainerBGHSTsubuzakiAnko, // Custom 138
+	[TRAINER_PIC_BGHS_SERIZAWA_RENGE] = sAnims_TrainerBGHSSerizawaRenge, // Custom 139
+	[TRAINER_PIC_BGHS_KUSONOKI_ASUHA] = sAnims_TrainerBGHSKusunokiAsuha, // Custom 140
+	[TRAINER_PIC_BGHS_FUJIMIYA_SAKURA] = sAnims_TrainerBGHSFujimiyaSakura, // Custom 141
+	[TRAINER_PIC_BGHS_MINAMI_HINATA] = sAnims_TrainerBGHSMinamiHinata, // Custom 142
+	[TRAINER_PIC_BGHS_SENDOIN_KAEDE] = sAnims_TrainerBGHSSendoinKaede, // Custom 143
+	[TRAINER_PIC_BGHS_WATAGI_MICHELLE] = sAnims_TrainerBGHSWatagiMichelle, // Custom 144
+	[TRAINER_PIC_BGHS_ASAHINA_KOKOMI] = sAnims_TrainerBGHSAsahinaKokomi, // Custom 145
+	[TRAINER_PIC_BGHS_HASUMI_URARA] = sAnims_TrainerBGHSHasumiUrara, // Custom 146
+	[TRAINER_PIC_BGHS_SADONE] = sAnims_TrainerBGHSSadone, // Custom 147
+	[TRAINER_PIC_BGHS_KOUGAMI_KANON] = sAnims_TrainerBGHSKougamiKanon, // Custom 148
+	[TRAINER_PIC_BGHS_KUNIEDA_SHIHO] = sAnims_TrainerBGHSKuniedaShiho, // Custom 149
+	[TRAINER_PIC_BGHS_MISAKI] = sAnims_TrainerBGHSMisaki, // Custom 150
+	[TRAINER_PIC_BGHS_ITSUKI_YAKUMO] = sAnims_TrainerBGHSItsukiYakumo, // Custom 151
+	[TRAINER_PIC_BGHS_MITSURUGI_FURAN] = sAnims_TrainerBGHSMitsurugiFuran, // Custom 152
+	[TRAINER_PIC_BGHS_NANASHIMA_AOI] = sAnims_TrainerBGHSNanashimaAoi, // Custom 153
+	[TRAINER_PIC_BGHS_AMEYA_ERIKA] = sAnims_TrainerBGHSAmeyaErika, // Custom 154
+	[TRAINER_PIC_BGHS_SEKAIDE_MARI] = sAnims_TrainerBGHSSekaideMari, // Custom 155
+	[TRAINER_PIC_BGHS_EVINA] = sAnims_TrainerBGHSEvina, // Custom 156
+	[TRAINER_PIC_BGHS_IRIS] = sAnims_TrainerBGHSIris, // Custom 157
+	[TRAINER_PIC_ETC_CURE_UNION] = sAnims_TrainerETCCureUnion, // Custom 158
+	[TRAINER_PIC_ETC_KADOYA_TSUKASA] = sAnims_TrainerETCKadoyaTsukasa, // Custom 159
+	[TRAINER_PIC_ETC_DAIKI_KAITO] = sAnims_TrainerETCDaikiKaito, // Custom 160
+	[TRAINER_PIC_ETC_KR_DELAST] = sAnims_TrainerETCKamenRiderDeLast, // Custom 161
+	[TRAINER_PIC_ETC_SAYO] = sAnims_TrainerETCSayo, // Custom 162
 };

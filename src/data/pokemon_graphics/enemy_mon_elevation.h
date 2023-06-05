@@ -34,7 +34,8 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_LUGIA] = 6,
     [SPECIES_HO_OH] = 6,
     [SPECIES_CELEBI] = 15,
-    [SPECIES_BEAUTIFLY] = 10,
+/*
+	[SPECIES_BEAUTIFLY] = 10,
     [SPECIES_DUSTOX] = 12,
     [SPECIES_NINJASK] = 10,
     [SPECIES_SHEDINJA] = 8,
@@ -58,20 +59,26 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_LATIOS] = 6,
     [SPECIES_JIRACHI] = 14,
     [SPECIES_CHIMECHO] = 16,
+*/
     // Gen 4
-    [SPECIES_MOTHIM] = 10,
+/*
+	[SPECIES_MOTHIM] = 10,
     [SPECIES_COMBEE] = 8,
     [SPECIES_VESPIQUEN] = 4,
     [SPECIES_DRIFLOON] = 5,
     [SPECIES_DRIFBLIM] = 7,
+*/
     [SPECIES_MISMAGIUS] = 3,
+/*
     [SPECIES_CHINGLING] = 5,
     [SPECIES_BRONZONG] = 4,
+*/
     [SPECIES_MAGNEZONE] = 4,
     [SPECIES_TOGEKISS] = 14,
     [SPECIES_YANMEGA] = 6,
     [SPECIES_GLISCOR] = 9,
     [SPECIES_PORYGON_Z] = 12,
+/*
     [SPECIES_PROBOPASS] = 6,
     [SPECIES_ROTOM] = 10,
     [SPECIES_UXIE] = 6,
@@ -79,7 +86,9 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_AZELF] = 6,
     [SPECIES_CRESSELIA] = 3,
     [SPECIES_DARKRAI] = 4,
+*/
     // Gen 5
+/*
     [SPECIES_MUNNA] = 7,
     [SPECIES_MUSHARNA] = 5,
     [SPECIES_WOOBAT] = 19,
@@ -103,7 +112,9 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_THUNDURUS] = 7,
     [SPECIES_LANDORUS] = 7,
     [SPECIES_MELOETTA] = 8,
+*/
     // Gen 6
+/*
     [SPECIES_FLETCHINDER] = 9,
     [SPECIES_TALONFLAME] = 7,
     [SPECIES_VIVILLON] = 9,
@@ -120,7 +131,9 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_NOIBAT] = 8,
     [SPECIES_YVELTAL] = 5,
     [SPECIES_HOOPA] = 13,
+*/
     // Gen 7
+/*
     [SPECIES_VIKAVOLT] = 8,
     [SPECIES_CUTIEFLY] = 10,
     [SPECIES_RIBOMBEE] = 6,
@@ -139,7 +152,9 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_NECROZMA] = 6,
     [SPECIES_POIPOLE] = 9,
     [SPECIES_NAGANADEL] = 7,
+*/
     // Gen 8
+/*
     [SPECIES_CORVISQUIRE] = 10,
     [SPECIES_ORBEETLE] = 8,
     [SPECIES_FLAPPLE] = 9,
@@ -154,6 +169,7 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_ETERNATUS] = 4,
     [SPECIES_REGIELEKI] = 8,
     [SPECIES_REGIDRAGO] = 5,
+*/
     // Megas
     [SPECIES_BEEDRILL_MEGA] = 5,
     [SPECIES_PIDGEOT_MEGA] = 8,
@@ -162,6 +178,7 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_GYARADOS_MEGA] = 6,
     [SPECIES_AERODACTYL_MEGA] = 7,
     [SPECIES_MEWTWO_MEGA_Y] = 3,
+/*
     [SPECIES_SHARPEDO_MEGA] = 1,
     [SPECIES_ALTARIA_MEGA] = 6,
     [SPECIES_BANETTE_MEGA] = 5,
@@ -170,17 +187,22 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_LATIAS_MEGA] = 8,
     [SPECIES_LATIOS_MEGA] = 8,
     [SPECIES_RAYQUAZA_MEGA] = 4,
+*/
     // Alolan Forms
     [SPECIES_RAICHU_ALOLAN] = 4,
     [SPECIES_GEODUDE_ALOLAN] = 16,
     // Galarian Forms
     [SPECIES_WEEZING_GALARIAN] = 6,
     [SPECIES_ARTICUNO_GALARIAN] = 10,
-    [SPECIES_YAMASK_GALARIAN] = 4,
+/*
+	[SPECIES_YAMASK_GALARIAN] = 4,
+*/
     // Hisuian Forms
     [SPECIES_VOLTORB_HISUIAN] = 1,
     [SPECIES_ELECTRODE_HISUIAN] = 4,
-    [SPECIES_BRAVIARY_HISUIAN] = 3,
+/*
+	[SPECIES_BRAVIARY_HISUIAN] = 3,
+*/
     // Other Forms
     [SPECIES_UNOWN_B] = 8,
     [SPECIES_UNOWN_C] = 8,
@@ -209,6 +231,7 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_UNOWN_Z] = 8,
     [SPECIES_UNOWN_QMARK] = 8,
     [SPECIES_UNOWN_EMARK] = 8,
+/*
     [SPECIES_CASTFORM_SUNNY] = 5,
     [SPECIES_CASTFORM_RAINY] = 5,
     [SPECIES_CASTFORM_SNOWY] = 5,
@@ -268,4 +291,5 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_SINISTEA_ANTIQUE] = 10,
     [SPECIES_POLTEAGEIST_ANTIQUE] = 12,
     [SPECIES_ETERNATUS_ETERNAMAX] = 13,
+*/
 };

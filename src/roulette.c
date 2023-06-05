@@ -1146,11 +1146,11 @@ static void InitRouletteTableData(void)
     {
         switch (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2))
         {
-        case SPECIES_SHROOMISH:
-            sRoulette->partySpeciesFlags |= HAS_SHROOMISH;
+        case SPECIES_SYLVEON: // SPECIES_SHROOMISH:
+            sRoulette->partySpeciesFlags |= HAS_SHROOMISH; // HAS_SHROOMISH;
             break;
-        case SPECIES_TAILLOW:
-            sRoulette->partySpeciesFlags |= HAS_TAILLOW;
+        case SPECIES_OVERQWIL: // SPECIES_TAILLOW:
+            sRoulette->partySpeciesFlags |= HAS_TAILLOW; // HAS_TAILLOW;
             break;
         }
     }

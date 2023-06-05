@@ -3023,6 +3023,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_TREECKO] =
     {
@@ -3575,6 +3576,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 343,
         .trainerOffset = 7,
     },
+*/
 
     [NATIONAL_DEX_AZURILL] =
     {
@@ -3587,6 +3589,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_NOSEPASS] =
     {
@@ -4319,6 +4322,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_WYNAUT] =
     {
@@ -4331,6 +4335,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_SNORUNT] =
     {
@@ -4643,8 +4648,10 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 290,
         .trainerOffset = 2,
     },
+*/
 
 #if P_GEN_4_POKEMON == TRUE
+/*
     [NATIONAL_DEX_TURTWIG] =
     {
         .categoryName = _("Tiny Leaf"),
@@ -5088,6 +5095,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_AMBIPOM] =
     {
@@ -5100,6 +5108,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_DRIFLOON] =
     {
@@ -5148,6 +5157,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_MISMAGIUS] =
     {
@@ -5172,6 +5182,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_GLAMEOW] =
     {
@@ -5256,6 +5267,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_BONSLY] =
     {
@@ -5292,6 +5304,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_CHATOT] =
     {
@@ -5352,6 +5365,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_MUNCHLAX] =
     {
@@ -5364,7 +5378,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
-
+/*
     [NATIONAL_DEX_RIOLU] =
     {
         .categoryName = _("Emanation"),
@@ -5496,6 +5510,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_MANTYKE] =
     {
@@ -5508,6 +5523,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_SNOVER] =
     {
@@ -5532,6 +5548,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_WEAVILE] =
     {
@@ -5700,6 +5717,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_GALLADE] =
     {
@@ -5928,9 +5946,11 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 #endif
 
 #if P_GEN_5_POKEMON == TRUE
+/*
     [NATIONAL_DEX_VICTINI] =
     {
         .categoryName = _("Victory"),
@@ -7802,9 +7822,11 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 #endif
 
 #if P_GEN_6_POKEMON == TRUE
+/*
     [NATIONAL_DEX_CHESPIN] =
     {
         .categoryName = _("Spiny Nut"),
@@ -8404,6 +8426,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_SYLVEON] =
     {
@@ -8416,6 +8439,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_HAWLUCHA] =
     {
@@ -8668,9 +8692,11 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 #endif
 
 #if P_GEN_7_POKEMON == TRUE
+/*
     [NATIONAL_DEX_ROWLET] =
     {
         .categoryName = _("Grass Quill"),
@@ -9726,9 +9752,11 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 387,
         .trainerOffset = 2,
     },
+*/
 #endif
 
 #if P_GEN_8_POKEMON == TRUE
+/*
     [NATIONAL_DEX_GROOKEY] =
     {
         .categoryName = _("Chimp"),
@@ -10364,6 +10392,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_PERRSERKER] =
     {
@@ -10412,6 +10441,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_RUNERIGUS] =
     {
@@ -10796,6 +10826,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_WYRDEER] =
     {
@@ -10832,6 +10863,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_BASCULEGION] =
     {
@@ -10844,6 +10876,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 
     [NATIONAL_DEX_SNEASLER] =
     {
@@ -10868,6 +10901,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+/*
 
     [NATIONAL_DEX_ENAMORUS] =
     {
@@ -10880,5 +10914,9496 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
+*/
 #endif
+// New
+    [NATIONAL_DEX_YYYI_YUUKI_YUUNA1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYuukiYuuna1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_YUUKI_YUUNA2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYuukiYuuna2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_YUUKI_YUUNA3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYuukiYuuna3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MIMORI1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMimori1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MIMORI2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMimori2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MIMORI3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMimori3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_KARIN1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIKarin1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_KARIN2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIKarin2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_KARIN3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIKarin3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_FUU1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIFuu1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_FUU2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIFuu2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_FUU3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIFuu3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_ITSUKI1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIItsuki1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_ITSUKI2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIItsuki2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_ITSUKI3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIItsuki3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SONOKO_BIG1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISonokoBig1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SONOKO_BIG2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISonokoBig2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SONOKO_BIG3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISonokoBig3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SUMI1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISumi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SUMI2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISumi2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SUMI3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISumi3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_GIN1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIGin1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_GIN2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIGin2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_GIN3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIGin3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SONOKO_SMOL1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISonokoSmol1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SONOKO_SMOL2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISonokoSmol2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SONOKO_SMOL3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISonokoSmol3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_WAKABA1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIWakaba1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_WAKABA2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIWakaba2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_WAKABA3A] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIWakaba3APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_TAKASHIMA_YUUNA1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYITakashimaYuuna1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_TAKASHIMA_YUUNA2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYITakashimaYuuna2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_TAKASHIMA_YUUNA3A] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYITakashimaYuuna3APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_CHIKAGE1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIChikage1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_CHIKAGE2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIChikage2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_CHIKAGE3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIChikage3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_TAMAKO1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYITamako1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_TAMAKO2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYITamako2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_TAMAKO3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYITamako3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_ANZU1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIAnzu1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_ANZU2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIAnzu2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_ANZU3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIAnzu3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_HINATA1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIHinata1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_HINATA2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIHinata2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_UTANO1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIUtano1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_UTANO2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIUtano2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_UTANO3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIUtano3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MITO1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMito1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MITO2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMito2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MEBUKI1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMebuki1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MEBUKI2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMebuki2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MEBUKI3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMebuki3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SUZUME1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISuzume1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SUZUME2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISuzume2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SUZUME3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISuzume3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_YUMIKO1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYumiko1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_YUMIKO2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYumiko2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_YUMIKO3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYumiko3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SHIZUKU1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIShizuku1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SHIZUKU2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIShizuku2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SHIZUKU3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIShizuku3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_AYA1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIAya1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_AYA2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIAya2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SEKKA1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISekka1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SEKKA2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISekka2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SEKKA3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYISekka3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_NATSUME1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYINatsume1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_NATSUME2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYINatsume2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_NATSUME3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYINatsume3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_AKAMINE_YUUNA1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIAkamineYuuna1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_AKAMINE_YUUNA2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIAkamineYuuna2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_AKAMINE_YUUNA3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIAkamineYuuna3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_RENGE1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIRenge1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_RENGE2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIRenge2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_RENGE3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIRenge3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SHIZUKA1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIShizuka1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SHIZUKA2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIShizuka2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_SHIZUKA3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIShizuka3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_FUYOU_LILIENTHAL_YUUNA1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIFuyouLilienthalYuuna1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_FUYOU_LILIENTHAL_YUUNA2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIFuyouLilienthalYuuna2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_FUYOU_LILIENTHAL_YUUNA3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIFuyouLilienthalYuuna3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_YUZUKI_YUUNA1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYuzukiYuuna1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_YUZUKI_YUUNA2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYuzukiYuuna2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_YUZUKI_YUUNA3] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYuzukiYuuna3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MASUZU1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMasuzu1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MASUZU2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMasuzu2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_YOSHIKA_1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYoshika1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_YOSHIKA_2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIYoshika2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_HIME1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIHime1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_HIME2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIHime2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MISAKI1] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMisaki1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_YYYI_MISAKI2] =
+    {
+        .categoryName = _("Yuusha de Aru World"),
+        .height = 150,
+        .weight = 800,
+        .description = gYYYIMisaki2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KEDAMA] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKedamaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_FAIRY] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHFairyPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ZOMBIEFAIRY] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHZombiefairyPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHINGYOKU1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShingyoku1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHINGYOKU2O] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShingyoku2OPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHINGYOKU2M] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShingyoku2MPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHINGYOKU2F] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShingyoku2FPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUUGEN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuugen1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUUGEN2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuugen2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MIMA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMima1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MIMA2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMima2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ELIS1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHElis1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ELIS2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHElis2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KIKURI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKikuri1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KIKURI2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKikuri2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SARIEL1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSariel1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SARIEL2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSariel2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SARIEL2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSariel2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KONNGARA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKonngara1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KONNGARA2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKonngara2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_GENJI] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHGenjiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RIKA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRika1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RIKA2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRika2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEIRA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMeira1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEIRA2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMeira2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ELLEN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHEllen1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ELLEN2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHEllen2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOTOHIME1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKotohime1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOTOHIME2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKotohime2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KANA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKana1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KANA2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKana2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RIKAKO1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRikako1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RIKAKO2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRikako2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_CHIYURI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHChiyuri1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_CHIYURI2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHChiyuri2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUMEMI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYumemi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUMEMI2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYumemi2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RUUKOTO] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRuukotoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MIMICHAN] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMimichanPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ORANGE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHOrange1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ORANGE2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHOrange2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KURUMI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKurumi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KURUMI2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKurumi2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ELLY1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHElly1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ELLY2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHElly2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MUGETSU1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMugetsu1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MUGETSU2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMugetsu2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_GENGETSU1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHGengetsu1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_GENGETSU2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHGengetsu2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SARA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSara1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SARA2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSara2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LOUISE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLouise1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LOUISE2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLouise2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUKI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuki1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUKI2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuki2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MAI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMai1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MAI2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMai2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUMEKO1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYumeko1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUMEKO2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYumeko2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHINKI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShinki1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHINKI2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShinki2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RUMIA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRumia1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RUMIA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRumia2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RUMIA2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRumia2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RUMIA2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRumia2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_DAIYOUSEI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHDaiyousei1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_DAIYOUSEI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHDaiyousei2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_DAIYOUSEI2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHDaiyousei2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_DAIYOUSEI2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHDaiyousei2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_CIRNO1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHCirno1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_CIRNO2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHCirno2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_CIRNO2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHCirno2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_CIRNO2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHCirno2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LUNACHILD1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLunachild1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LUNACHILD2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLunachild2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LUNACHILD2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLunachild2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LUNACHILD2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLunachild2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_STARSAPPHIRE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHStarsapphire1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_STARSAPPHIRE2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHStarsapphire2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_STARSAPPHIRE2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHStarsapphire2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_STARSAPPHIRE2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHStarsapphire2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUNNYMILK1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSunnymilk1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUNNYMILK2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSunnymilk2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUNNYMILK2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSunnymilk2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUNNYMILK2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSunnymilk2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEILING1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMeiling1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEILING2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMeiling2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEILING2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMeiling2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEILING2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMeiling2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOAKUMA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKoakuma1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOAKUMA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKoakuma2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOAKUMA2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKoakuma2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_PATCHOULI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHPatchouli1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_PATCHOULI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHPatchouli2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_PATCHOULI2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHPatchouli2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_PATCHOULI2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHPatchouli2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SAKUYA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSakuya1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SAKUYA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSakuya2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SAKUYA2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSakuya2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SAKUYA2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSakuya2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_REMILIA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRemilia1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_REMILIA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRemilia2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_REMILIA2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRemilia2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_REMILIA2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRemilia2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_FLANDRE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHFlandre1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_FLANDRE2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHFlandre2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_FLANDRE2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHFlandre2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_FLANDRE2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHFlandre2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SATSUKI] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSatsukiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LETTY1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLetty1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LETTY2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLetty2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LETTY2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLetty2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LETTY2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLetty2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_CHEN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHChen1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_CHEN2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHChen2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_CHEN2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHChen2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_CHEN2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHChen2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ALICE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHAlice1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ALICE2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHAlice2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ALICE2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHAlice2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ALICE2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHAlice2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LILYBLACK1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLilyblack1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LILYWHITE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLilywhite1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LILYBLACK2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLilyblack2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LILYWHITE2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLilywhite2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LILYBLACK2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLilyblack2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LILYWHITE2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLilywhite2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LILYBLACK2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLilyblack2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LILYWHITE2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLilywhite2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LUNASA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLunasa1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LUNASA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLunasa2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LUNASA2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLunasa2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MERLIN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMerlin1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MERLIN2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMerlin2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MERLIN2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMerlin2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LYRICA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLyrica1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LYRICA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLyrica2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_LYRICA2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHLyrica2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YOUMU1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYoumu1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YOUMU2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYoumu2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YOUMU2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYoumu2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YOUMU2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYoumu2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUYUKO1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuyuko1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUYUKO2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuyuko2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUYUKO2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuyuko2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUYUKO2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuyuko2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RAN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRan1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RAN2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRan2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RAN2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRan2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RAN2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRan2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUKARI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYukari1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUKARI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYukari2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUKARI2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYukari2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUKARI2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYukari2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUIKA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSuika1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUIKA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSuika2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUIKA2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSuika2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUIKA2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSuika2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_WRIGGLE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHWriggle1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_WRIGGLE2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHWriggle2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_WRIGGLE2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHWriggle2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_WRIGGLE2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHWriggle2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MYSTIA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMystia1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MYSTIA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMystia2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MYSTIA2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMystia2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MYSTIA2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMystia2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KEINE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKeine1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KEINE2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKeine2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KEINE2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKeine2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KEINE2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKeine2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KEINE2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKeine2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TEWI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTewi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TEWI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTewi2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TEWI2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTewi2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TEWI2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTewi2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_REISEN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHReisen1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_REISEN2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHReisen2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_REISEN2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHReisen2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_REISEN2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHReisen2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_GYOKUTO] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHGyokutoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_EIRIN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHEirin1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_EIRIN2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHEirin2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_EIRIN2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHEirin2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_EIRIN2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHEirin2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KAGUYA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKaguya1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KAGUYA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKaguya2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KAGUYA2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKaguya2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KAGUYA2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKaguya2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MOKOU1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMokou1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MOKOU2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMokou2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MOKOU2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMokou2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MOKOU2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMokou2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TOYOHIME1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHToyohime1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TOYOHIME2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHToyohime2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TOYOHIME2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHToyohime2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YORIHIME1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYorihime1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YORIHIME2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYorihime2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YORIHIME2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYorihime2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_AYA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHAya1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_AYA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHAya2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_AYA2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHAya2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_AYA2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHAya2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEDICINE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMedicine1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEDICINE2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMedicine2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEDICINE2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMedicine2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEDICINE2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMedicine2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MEDICINE2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMedicine2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUUKA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuuka1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUUKA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuuka2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUUKA2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuuka2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUUKA2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuuka2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOMACHI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKomachi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOMACHI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKomachi2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOMACHI2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKomachi2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOMACHI2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKomachi2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_EIKI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHEiki1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_EIKI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHEiki2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_EIKI2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHEiki2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_EIKI2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHEiki2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHIZUHA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShizuha1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHIZUHA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShizuha2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHIZUHA2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShizuha2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHIZUHA2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShizuha2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MINORIKO1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMinoriko1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MINORIKO2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMinoriko2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MINORIKO2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMinoriko2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MINORIKO2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMinoriko2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_HINA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHHina1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_HINA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHHina2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_HINA2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHHina2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_HINA2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHHina2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NITORI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNitori1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NITORI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNitori2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NITORI2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNitori2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NITORI2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNitori2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MOMOJI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMomoji1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MOMOJI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMomoji2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MOMOJI2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMomoji2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SANAE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSanae1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SANAE2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSanae2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SANAE2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSanae2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SANAE2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSanae2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KANAKO1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKanako1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KANAKO2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKanako2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KANAKO2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKanako2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KANAKO2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKanako2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUWAKO1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSuwako1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUWAKO2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSuwako2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUWAKO2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSuwako2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUWAKO2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSuwako2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_IKU1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHIku1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_IKU2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHIku2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_IKU2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHIku2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_IKU2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHIku2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TENSHI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTenshi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TENSHI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTenshi2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TENSHI2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTenshi2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TENSHI2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTenshi2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KISUME1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKisume1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KISUME2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKisume2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KISUME2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKisume2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YAMAME1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYamame1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YAMAME2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYamame2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YAMAME2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYamame2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YAMAME2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYamame2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_PARSEE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHParsee1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_PARSEE2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHParsee2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_PARSEE2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHParsee2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_PARSEE2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHParsee2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUUGI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuugi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUUGI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuugi2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUUGI2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuugi2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_YUUGI2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHYuugi2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SATORI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSatori1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SATORI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSatori2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SATORI2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSatori2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SATORI2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSatori2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RIN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRin1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RIN2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRin2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RIN2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRin2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RIN2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRin2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_UTSUHO1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHUtsuho1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_UTSUHO2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHUtsuho2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_UTSUHO2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHUtsuho2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_UTSUHO2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHUtsuho2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOISHI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKoishi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOISHI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKoishi2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOISHI2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKoishi2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOISHI2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKoishi2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NAZRIN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNazrin1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NAZRIN2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNazrin2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NAZRIN2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNazrin2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NAZRIN2H] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNazrin2HPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOGASA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKogasa1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOGASA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKogasa2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOGASA2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKogasa2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KOGASA2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKogasa2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ICHIRIN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHIchirin1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ICHIRIN2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHIchirin2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ICHIRIN2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHIchirin2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_ICHIRIN2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHIchirin2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MURASA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMurasa1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MURASA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMurasa2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MURASA2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMurasa2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MURASA2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMurasa2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHOU1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShou1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHOU2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShou2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHOU2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShou2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SHOU2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHShou2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_BYAKUREN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHByakuren1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_BYAKUREN2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHByakuren2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_BYAKUREN2D] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHByakuren2DPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_BYAKUREN2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHByakuren2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NUE1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNue1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NUE2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNue2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NUE2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNue2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_NUE2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHNue2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_OONAMAZU] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHOonamazuPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TENSOKU1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTensoku1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KASEN1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKasen1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_KASEN2] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHKasen2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TENMA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTenma1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TENMA2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTenma2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TENMA2S] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTenma2SPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SENDAI1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSendai1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SENDAI2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSendai2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SENDAI2T] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSendai2TPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TOKIKO1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTokiko1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TOKIKO2N] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTokiko2NPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_TOKIKO2A] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHTokiko2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RINNOSUKE] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRinnosukePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_AKYUU] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHAkyuuPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MARIBEL] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMaribelPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_RENKO] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHRenkoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_SUMIREKO] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHSumirekoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_MARISA1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHMarisa1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_REIMU1] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHReimu1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_TH_REIMUCTC] =
+    {
+        .categoryName = _("Touhou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gTHReimuCtCPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_ISAMI] =
+    {
+        .categoryName = _("Sakaba World"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCIsamiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_SH_VIVITR] =
+    {
+        .categoryName = _("Seihou World"),
+        .height = 150,
+        .weight = 800,
+        .description = gSHVIVITrPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MISUZU1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMisuzu1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MISUZU2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMisuzu2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MISUZU3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMisuzu3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KANO1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKano1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KANO2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKano2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KANO3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKano3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MINAGI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMinagi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MINAGI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMinagi2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MINAGI3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMinagi3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_HARUKO1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYHaruko1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_HARUKO2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYHaruko2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_HARUKO3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYHaruko3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KANNA1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKanna1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KANNA2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKanna2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_HIJIRI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYHijiri1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_HIJIRI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYHijiri2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_HIJIRI3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYHijiri3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MICHIRU1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMichiru1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MICHIRU2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMichiru2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MICHIRU3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMichiru3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_URAHA1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYUraha1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_URAHA2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYUraha2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_URAHA3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYUraha3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_POTATO] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYPotatoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SORA] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYSoraPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_AYU1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYAyu1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_AYU2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYAyu2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_AYU3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYAyu3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MAI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMai1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MAI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMai2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MAI3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMai3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_NAYUKI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYNayuki1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_NAYUKI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYNayuki2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_NAYUKI3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYNayuki3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SHIORI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYShiori1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SHIORI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYShiori2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SHIORI3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYShiori3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MAKOTO1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMakoto1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MAKOTO2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMakoto2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MAKOTO3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMakoto3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MISHIO1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMishio1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MISHIO2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMishio2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SAYURI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYSayuri1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SAYURI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYSayuri2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SAYURI3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYSayuri3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_AKIKO1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYAkiko1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_AKIKO2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYAkiko2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_AKIKO3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYAkiko3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KAORI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKaori1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KAORI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKaori2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_PIRO] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYPiroPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_NAGISA1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYNagisa1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_NAGISA2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYNagisa2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_NAGISA3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYNagisa3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KYOU1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKyou1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KYOU2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKyou2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KYOU3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKyou3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_RYOU1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYRyou1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_RYOU2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYRyou2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_RYOU3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYRyou3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KOTOMI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKotomi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KOTOMI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKotomi2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KOTOMI3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKotomi3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_TOMOYO1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYTomoyo1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_TOMOYO2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYTomoyo2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_TOMOYO3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYTomoyo3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_FUUKO1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYFuuko1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_FUUKO2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYFuuko2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_FUUKO3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYFuuko3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_YUKINE1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYYukine1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_YUKINE2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYYukine2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_YUKINE3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYYukine3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MISAE1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMisae1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MISAE2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMisae2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MISAE3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMisae3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SANAE1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYSanae1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SANAE2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYSanae2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SANAE3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYSanae3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MEI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMei1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MEI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMei2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_USHIO1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYUshio1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_USHIO2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYUshio2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_BOTAN] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYBotanPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_RIN1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYRin1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_RIN2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYRin2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_RIN3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYRin3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KOMARI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKomari1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KOMARI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKomari2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KOMARI3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKomari3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_YUIKO1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYYuiko1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_YUIKO2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYYuiko2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_YUIKO3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYYuiko3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MIO1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMio1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MIO2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMio2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_MIO3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYMio3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_HARUKA1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYHaruka1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_HARUKA2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYHaruka2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_HARUKA3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYHaruka3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KUD1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKud1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KUD2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKud2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KUD3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKud3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KANATA1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKanata1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KANATA2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKanata2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_KANATA3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYKanata3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SASAMI1] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYSasami1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SASAMI2] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYSasami2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_KEY_SASAMI3] =
+    {
+        .categoryName = _("Key Visual World"),
+        .height = 150,
+        .weight = 800,
+        .description = gKEYSasami3PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_MIKI1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSMiki1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_MIKI2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSMiki2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_SUBARU1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSSubaru1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_SUBARU2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSSubaru2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_HARUKA1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSHaruka1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_HARUKA2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSHaruka2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_NOZOMI1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSNozomi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_NOZOMI2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSNozomi2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_YURI1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSYuri1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_YURI2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSYuri2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_KURUMI1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSKurumi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_KURUMI2A] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSKurumi2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_KURUMI2B] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSKurumi2BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_ANKO1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSAnko1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_ANKO2A] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSAnko2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_ANKO2B] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSAnko2BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_RENGE1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSRenge1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_RENGE2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSRenge2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_ASUHA1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSAsuha1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_ASUHA2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSAsuha2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_SAKURA1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSSakura1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_SAKURA2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSSakura2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_HINATA1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSHinata1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_HINATA2A] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSHinata2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_HINATA2B] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSHinata2BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_KAEDE1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSKaede1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_KAEDE2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSKaede2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_MICHAEL1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSMichael1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_MICHAEL2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSMichael2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_KOKOMI1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSKokomi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_KOKOMI2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSKokomi2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_URARA1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSUrara1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_URARA2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSUrara2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_SADONE1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSSadone1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_SADONE2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSSadone2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_KANON1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSKanon1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_KANON2A] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSKanon2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_KANON2B] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSKanon2BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_SHIHO1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSShiho1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_SHIHO2A] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSShiho2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_SHIHO2B] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSShiho2BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_MISAKI1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSMisaki1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_MISAKI2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSMisaki2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_MARI1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSMari1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_MARI2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSMari2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_ERIS] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSErisPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_ITSUKI1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSItsuki1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_ITSUKI2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSItsuki2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_FURAN1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSFuran1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_FURAN2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSFuran2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_ERIKA1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSErika1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_ERIKA2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSErika2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_EVINA] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSEvinaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_AOI1] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSAoi1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_AOI2] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSAoi2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_BGHS_BOTAN] =
+    {
+        .categoryName = _("Battle Girl World"),
+        .height = 150,
+        .weight = 800,
+        .description = gBGHSBotanPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_NAGISA] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCNagisaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBLACK1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBlack1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBLACK2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBlack2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_HONOKA] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCHonokaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREWHITE1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureWhite1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREWHITE2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureWhite2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_HIKARI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCHikariPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_SHINYLUMINOUS1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCShinyLuminous1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_SHINYLUMINOUS2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCShinyLuminous2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_SAKI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCSakiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBLOOM] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBloomPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBRIGHT] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBrightPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_MAI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCMaiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREEGRET] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureEgretPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREWINDY] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureWindyPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_NOZOMI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCNozomiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREDREAM1A] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureDream1APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREDREAM1B] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureDream1BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREDREAM2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureDream2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_RIN] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCRinPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREROUGE1A] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureRouge1APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREROUGE1B] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureRouge1BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREROUGE2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureRouge2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_URARA] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCUraraPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURELEMONADE1A] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureLemonade1APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURELEMONADE1B] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureLemonade1BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURELEMONADE2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureLemonade2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_KOMACHI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCKomachiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMINT1A] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMint1APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMINT1B] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMint1BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMINT2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMint2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_KAREN] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCKarenPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREAQUA1A] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureAqua1APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREAQUA1B] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureAqua1BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREAQUA2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureAqua2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_KURUMI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCKurumiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_MILKYROSE1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCMilkyRose1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_MILKYROSE2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCMilkyRose2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_DARKDREAM] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCDarkDreamPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_DARKROUGE] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCDarkRougePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_DARKLEMONADE] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCDarkLemonadePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_DARKMINT] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCDarkMintPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_DARKAQUA] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCDarkAquaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_LOVE] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCLovePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREPEACH1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCurePeach1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREPEACH2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCurePeach2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_MIKI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCMikiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBERRY1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBerry1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBERRY2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBerry2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_INORI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCInoriPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREPINE1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCurePine1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREPINE2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCurePine2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_SETSUNA] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCSetsunaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREPASSION1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCurePassion1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREPASSION2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCurePassion2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_EAS] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCEasPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_TSUBOMI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCTsubomiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBLOSSOM1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBlossom1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBLOSSOM2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBlossom2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_ERIKA] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCErikaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMARINE1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMarine1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMARINE2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMarine2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_ITSUKI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCItsukiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURESUNSHINE1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureSunshine1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURESUNSHINE2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureSunshine2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_YURI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCYuriPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMOONLIGHT1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMoonlight1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMOONLIGHT2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMoonlight2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_DARKPRECURE] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCDarkPrecurePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_HIBIKI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCHibikiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMELODY1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMelody1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMELODY2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMelody2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_KANADE] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCKanadePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURERHYTHM1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureRhythm1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURERHYTHM2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureRhythm2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_ELLEN] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCEllenPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBEAT1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBeat1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBEAT2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBeat2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_AKO] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCAkoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMUSE1A] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMuse1APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMUSE1B] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMuse1BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMUSE2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMuse2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREFLORAHCPC] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureFloraHCPCPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_MIYUKI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCMiyukiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREHAPPY1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureHappy1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREHAPPY2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureHappy2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_AKANE] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCAkanePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURESUNNY1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureSunny1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURESUNNY2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureSunny2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_YAYOI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCYayoiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREPEACE1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCurePeace1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREPEACE2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCurePeace2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_NAO] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCNaoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMARCH1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMarch1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREMARCH2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureMarch2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_REIKA] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCReikaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBEAUTY1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBeauty1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREBEAUTY2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureBeauty2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_BADENDHAPPY] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCBadEndHappyPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_BADENDSUNNY] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCBadEndSunnyPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_BADENDPEACE] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCBadEndPeacePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_BADENDMARCH] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCBadEndMarchPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_BADENDBEAUTY] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCBadEndBeautyPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_MANA] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCManaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREHEART1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureHeart1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREHEART2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureHeart2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_RIKKA] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCRikkaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREDIAMOND1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureDiamond1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREDIAMOND2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureDiamond2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_ALICE] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCAlicePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREROSETTA1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureRosetta1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREROSETTA2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureRosetta2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_MAKOTO] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCMakotoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURESWORD1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureSword1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CURESWORD2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureSword2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_AGURI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCAguriPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREACE1] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureAce1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREACE2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureAce2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_REGINA] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCReginaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_AYUMI] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCAyumiPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_PC_CUREECHO] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gPCCureEchoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_CUREUNION2] =
+    {
+        .categoryName = _("Pretty Cure World"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCCureUnion2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_MISSINGNO] =
+    {
+        .categoryName = _("Pokémon World (?)"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCMissingnoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_EMESGESEY] =
+    {
+        .categoryName = _("Pokémon World (?)"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCEmesgeseyPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_SHOUNEN] =
+    {
+        .categoryName = _("Pokémon World"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCShounenPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_SHOUJO] =
+    {
+        .categoryName = _("Pokémon World"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCShoujoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_DIALGATH] =
+    {
+        .categoryName = _("Pokémon World (?)"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCDialgaTHPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_PALKIATH] =
+    {
+        .categoryName = _("Pokémon World (?)"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCPalkiaTHPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_GIRATINATH] =
+    {
+        .categoryName = _("Pokémon World (?)"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCGiratinaTHPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_DECADE1] =
+    {
+        .categoryName = _("Kamen Rider World"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCDecade1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_DECADE2A] =
+    {
+        .categoryName = _("Kamen Rider World"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCDecade2APokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_DECADE2B] =
+    {
+        .categoryName = _("Kamen Rider World"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCDecade2BPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_DIEND1] =
+    {
+        .categoryName = _("Kamen Rider World"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCDiEnd1PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_DIEND2] =
+    {
+        .categoryName = _("Kamen Rider World"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCDiEnd2PokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+
+    [NATIONAL_DEX_ETC_DELAST] =
+    {
+        .categoryName = _("Kamen Rider World"),
+        .height = 150,
+        .weight = 800,
+        .description = gETCDeLastPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+// End New
 };

@@ -748,15 +748,15 @@ static u8 GetCastformYCustom(species)
     case SPECIES_CASTFORM:
         ret = gCastformFrontSpriteCoords[CASTFORM_NORMAL].y_offset;
         break;
-    case SPECIES_CASTFORM_SUNNY:
-        ret = gCastformFrontSpriteCoords[CASTFORM_FIRE].y_offset;
-        break;
-    case SPECIES_CASTFORM_RAINY:
-        ret = gCastformFrontSpriteCoords[CASTFORM_WATER].y_offset;
-        break;
-    case SPECIES_CASTFORM_SNOWY:
-        ret = gCastformFrontSpriteCoords[CASTFORM_ICE].y_offset;
-        break;
+//    case SPECIES_CASTFORM_SUNNY:
+//        ret = gCastformFrontSpriteCoords[CASTFORM_FIRE].y_offset;
+//        break;
+//    case SPECIES_CASTFORM_RAINY:
+//        ret = gCastformFrontSpriteCoords[CASTFORM_WATER].y_offset;
+//        break;
+//    case SPECIES_CASTFORM_SNOWY:
+//        ret = gCastformFrontSpriteCoords[CASTFORM_ICE].y_offset;
+//        break;
     }
     return ret;
 }

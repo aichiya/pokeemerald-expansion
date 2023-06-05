@@ -3837,7 +3837,7 @@ const struct Item gItems[] =
 
     [ITEM_RED_ORB] =
     {
-        .name = _("Red Orb"),
+        .name = _("Memory Card"),
         .itemId = ITEM_RED_ORB,
         .price = 0,
         .holdEffect = HOLD_EFFECT_PRIMAL_ORB,
@@ -4461,7 +4461,7 @@ const struct Item gItems[] =
 
     [ITEM_DIANCITE] =
     {
-        .name = _("Diancite"),
+        .name = _("Final Card"),
         .itemId = ITEM_DIANCITE,
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
@@ -9162,7 +9162,7 @@ const struct Item gItems[] =
 
     [ITEM_MEGA_RING] =
     {
-        .name = _("Mega Ring"),
+        .name = _("DCDriver Rep."),
         .itemId = ITEM_MEGA_RING,
         .price = 0,
         .importance = 1,

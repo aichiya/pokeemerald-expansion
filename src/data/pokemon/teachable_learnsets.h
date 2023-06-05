@@ -10398,6 +10398,7 @@ static const u16 sCelebiTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+/*
 static const u16 sTreeckoTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
@@ -12279,6 +12280,7 @@ static const u16 sHariyamaTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sAzurillTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -12315,6 +12317,7 @@ static const u16 sAzurillTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sNosepassTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -14967,6 +14970,7 @@ static const u16 sAbsolTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sWynautTeachableLearnset[] = {
     MOVE_SAFEGUARD,
@@ -14974,6 +14978,7 @@ static const u16 sWynautTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
+/*
 static const u16 sSnoruntTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -16115,8 +16120,10 @@ static const u16 sDeoxysTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+*/
 
 #if P_GEN_4_POKEMON == TRUE
+/*
 static const u16 sTurtwigTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
@@ -17372,6 +17379,7 @@ static const u16 sGastrodonTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sAmbipomTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
@@ -17419,6 +17427,7 @@ static const u16 sAmbipomTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sDrifloonTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -17583,6 +17592,7 @@ static const u16 sLopunnyTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sMismagiusTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
@@ -17661,6 +17671,7 @@ static const u16 sHonchkrowTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sGlameowTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
@@ -17939,6 +17950,7 @@ static const u16 sBronzongTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sBonslyTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -18058,6 +18070,7 @@ static const u16 sHappinyTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sChatotTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
@@ -18244,6 +18257,7 @@ static const u16 sGarchompTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sMunchlaxTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -18297,6 +18311,7 @@ static const u16 sMunchlaxTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sRioluTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -18709,6 +18724,7 @@ static const u16 sLumineonTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sMantykeTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
@@ -18742,6 +18758,7 @@ static const u16 sMantykeTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sSnoverTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -18823,6 +18840,7 @@ static const u16 sAbomasnowTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sWeavileTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
@@ -19404,6 +19422,7 @@ static const u16 sPorygonZTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sGalladeTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
@@ -20238,9 +20257,11 @@ static const u16 sArceusTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
 #if P_GEN_5_POKEMON == TRUE
+/*
 static const u16 sVictiniTeachableLearnset[] = {
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_TEAM,
@@ -25331,9 +25352,11 @@ static const u16 sGenesectTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
 #if P_GEN_6_POKEMON == TRUE
+/*
 static const u16 sChespinTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
@@ -26999,6 +27022,7 @@ static const u16 sAurorusTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sSylveonTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -27032,6 +27056,7 @@ static const u16 sSylveonTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sHawluchaTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
@@ -27742,9 +27767,11 @@ static const u16 sVolcanionTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
 #if P_GEN_7_POKEMON == TRUE
+/*
 static const u16 sRowletTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -30126,9 +30153,11 @@ static const u16 sMelmetalTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
 #if P_GEN_8_POKEMON == TRUE
+/*
 static const u16 sGrookeyTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_FACADE,
@@ -31195,6 +31224,7 @@ static const u16 sObstagoonTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sPerrserkerTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -31311,6 +31341,7 @@ static const u16 sMrRimeTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sRunerigusTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -32012,6 +32043,7 @@ static const u16 sCalyrexTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sWyrdeerTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
@@ -32024,10 +32056,12 @@ static const u16 sKleavorTeachableLearnset[] = {
 static const u16 sUrsalunaTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sBasculegionTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
+*/
 
 static const u16 sSneaslerTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
@@ -32036,11 +32070,746 @@ static const u16 sSneaslerTeachableLearnset[] = {
 static const u16 sOverqwilTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sEnamorusTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
+
+// New
+static const u16 sYYYIYuukiYuuna1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIYuukiYuuna2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIYuukiYuuna3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMimori1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMimori2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMimori3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIKarin1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIKarin2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIKarin3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIFuu1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIFuu2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIFuu3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIItsuki1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIItsuki2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIItsuki3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISonokoBig1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISonokoBig2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISonokoBig3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISumi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISumi2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISumi3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIGin1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIGin2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIGin3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISonokoSmol1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISonokoSmol2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISonokoSmol3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIWakaba1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIWakaba2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIWakaba3ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYITakashimaYuuna1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYITakashimaYuuna2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYITakashimaYuuna3ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIChikage1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIChikage2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIChikage3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYITamako1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYITamako2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYITamako3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIAnzu1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIAnzu2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIAnzu3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIHinata1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIHinata2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIUtano1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIUtano2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIUtano3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMito1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMito2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMebuki1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMebuki2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMebuki3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISuzume1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISuzume2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISuzume3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIYumiko1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIYumiko2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIYumiko3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIShizuku1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIShizuku2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIShizuku3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIAya1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIAya2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISekka1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISekka2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYISekka3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYINatsume1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYINatsume2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYINatsume3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIAkamineYuuna1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIAkamineYuuna2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIAkamineYuuna3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIRenge1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIRenge2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIRenge3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIShizuka1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIShizuka2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIShizuka3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIFuyouLilienthalYuuna1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIFuyouLilienthalYuuna2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIFuyouLilienthalYuuna3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIYuzukiYuuna1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIYuzukiYuuna2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIYuzukiYuuna3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMasuzu1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMasuzu2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIYoshika1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIYoshika2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIHime1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIHime2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMisaki1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIMisaki2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKedamaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHFairyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHZombiefairyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShingyoku1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShingyoku2OTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShingyoku2MTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShingyoku2FTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuugen1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuugen2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMima1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMima2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHElis1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHElis2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKikuri1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKikuri2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSariel1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSariel2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSariel2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKonngara1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKonngara2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHGenjiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRika1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRika2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMeira1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMeira2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHEllen1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHEllen2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKotohime1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKotohime2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKana1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKana2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRikako1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRikako2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHChiyuri1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHChiyuri2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYumemi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYumemi2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRuukotoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMimichanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHOrange1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHOrange2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKurumi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKurumi2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHElly1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHElly2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMugetsu1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMugetsu2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHGengetsu1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHGengetsu2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSara1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSara2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLouise1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLouise2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuki1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuki2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMai1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMai2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYumeko1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYumeko2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShinki1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShinki2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRumia1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRumia2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRumia2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRumia2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHDaiyousei1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHDaiyousei2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHDaiyousei2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHDaiyousei2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHCirno1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHCirno2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHCirno2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHCirno2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLunachild1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLunachild2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLunachild2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLunachild2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHStarsapphire1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHStarsapphire2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHStarsapphire2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHStarsapphire2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSunnymilk1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSunnymilk2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSunnymilk2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSunnymilk2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMeiling1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMeiling2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMeiling2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMeiling2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKoakuma1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKoakuma2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKoakuma2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHPatchouli1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHPatchouli2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHPatchouli2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHPatchouli2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSakuya1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSakuya2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSakuya2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSakuya2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRemilia1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRemilia2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRemilia2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRemilia2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHFlandre1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHFlandre2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHFlandre2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHFlandre2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSatsukiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLetty1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLetty2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLetty2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLetty2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHChen1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHChen2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHChen2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHChen2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAlice1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAlice2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAlice2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAlice2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLilyblack1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLilywhite1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLilyblack2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLilywhite2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLilyblack2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLilywhite2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLilyblack2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLilywhite2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLunasa1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLunasa2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLunasa2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMerlin1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMerlin2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMerlin2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLyrica1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLyrica2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLyrica2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYoumu1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYoumu2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYoumu2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYoumu2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuyuko1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuyuko2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuyuko2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuyuko2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRan1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRan2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRan2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRan2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYukari1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYukari2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYukari2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYukari2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSuika1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSuika2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSuika2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSuika2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHWriggle1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHWriggle2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHWriggle2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHWriggle2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMystia1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMystia2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMystia2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMystia2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKeine1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKeine2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKeine2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKeine2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKeine2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTewi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTewi2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTewi2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTewi2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHReisen1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHReisen2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHReisen2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHReisen2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHGyokutoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHEirin1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHEirin2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHEirin2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHEirin2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKaguya1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKaguya2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKaguya2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKaguya2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMokou1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMokou2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMokou2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMokou2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHToyohime1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHToyohime2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHToyohime2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYorihime1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYorihime2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYorihime2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAya1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAya2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAya2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAya2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMedicine1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMedicine2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMedicine2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMedicine2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMedicine2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuuka1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuuka2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuuka2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuuka2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKomachi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKomachi2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKomachi2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKomachi2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHEiki1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHEiki2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHEiki2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHEiki2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShizuha1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShizuha2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShizuha2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShizuha2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMinoriko1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMinoriko2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMinoriko2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMinoriko2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHHina1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHHina2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHHina2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHHina2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNitori1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNitori2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNitori2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNitori2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMomoji1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMomoji2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMomoji2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSanae1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSanae2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSanae2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSanae2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKanako1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKanako2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKanako2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKanako2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSuwako1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSuwako2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSuwako2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSuwako2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHIku1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHIku2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHIku2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHIku2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTenshi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTenshi2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTenshi2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTenshi2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKisume1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKisume2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKisume2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYamame1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYamame2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYamame2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYamame2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHParsee1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHParsee2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHParsee2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHParsee2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuugi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuugi2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuugi2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuugi2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSatori1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSatori2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSatori2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSatori2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRin1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRin2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRin2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRin2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHUtsuho1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHUtsuho2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHUtsuho2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHUtsuho2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKoishi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKoishi2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKoishi2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKoishi2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNazrin1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNazrin2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNazrin2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNazrin2HTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKogasa1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKogasa2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKogasa2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKogasa2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHIchirin1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHIchirin2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHIchirin2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHIchirin2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMurasa1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMurasa2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMurasa2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMurasa2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShou1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShou2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShou2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHShou2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHByakuren1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHByakuren2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHByakuren2DTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHByakuren2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNue1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNue2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNue2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHNue2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHOonamazuTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTensoku1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKasen1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHKasen2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTenma1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTenma2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTenma2STeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSendai1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSendai2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSendai2TTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTokiko1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTokiko2NTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTokiko2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRinnosukeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAkyuuTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMaribelTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHRenkoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSumirekoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMarisa1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHReimu1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHReimuCtCTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCIsamiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sSHVIVITrTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMisuzu1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMisuzu2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMisuzu3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKano1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKano2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKano3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMinagi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMinagi2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMinagi3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYHaruko1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYHaruko2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYHaruko3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKanna1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKanna2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYHijiri1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYHijiri2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYHijiri3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMichiru1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMichiru2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMichiru3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYUraha1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYUraha2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYUraha3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYPotatoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYSoraTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYAyu1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYAyu2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYAyu3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMai1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMai2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMai3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYNayuki1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYNayuki2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYNayuki3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYShiori1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYShiori2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYShiori3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMakoto1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMakoto2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMakoto3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMishio1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMishio2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYSayuri1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYSayuri2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYSayuri3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYAkiko1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYAkiko2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYAkiko3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKaori1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKaori2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYPiroTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYNagisa1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYNagisa2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYNagisa3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKyou1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKyou2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKyou3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYRyou1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYRyou2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYRyou3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKotomi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKotomi2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKotomi3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYTomoyo1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYTomoyo2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYTomoyo3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYFuuko1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYFuuko2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYFuuko3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYYukine1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYYukine2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYYukine3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMisae1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMisae2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMisae3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYSanae1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYSanae2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYSanae3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMei1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMei2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYUshio1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYUshio2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYBotanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYRin1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYRin2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYRin3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKomari1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKomari2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKomari3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYYuiko1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYYuiko2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYYuiko3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMio1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMio2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYMio3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYHaruka1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYHaruka2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYHaruka3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKud1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKud2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKud3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKanata1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKanata2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYKanata3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYSasami1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYSasami2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYSasami3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMiki1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMiki2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSSubaru1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSSubaru2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSHaruka1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSHaruka2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSNozomi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSNozomi2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSYuri1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSYuri2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSKurumi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSKurumi2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSKurumi2BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSAnko1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSAnko2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSAnko2BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSRenge1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSRenge2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSAsuha1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSAsuha2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSSakura1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSSakura2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSHinata1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSHinata2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSHinata2BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSKaede1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSKaede2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMichael1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMichael2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSKokomi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSKokomi2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSUrara1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSUrara2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSSadone1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSSadone2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSKanon1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSKanon2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSKanon2BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSShiho1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSShiho2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSShiho2BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMisaki1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMisaki2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMari1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMari2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSErisTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSItsuki1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSItsuki2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSFuran1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSFuran2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSErika1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSErika2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSEvinaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSAoi1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSAoi2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSBotanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCNagisaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBlack1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBlack2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCHonokaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureWhite1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureWhite2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCHikariTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCShinyLuminous1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCShinyLuminous2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCSakiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBloomTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBrightTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCMaiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureEgretTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureWindyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCNozomiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureDream1ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureDream1BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureDream2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCRinTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureRouge1ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureRouge1BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureRouge2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCUraraTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureLemonade1ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureLemonade1BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureLemonade2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCKomachiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMint1ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMint1BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMint2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCKarenTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureAqua1ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureAqua1BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureAqua2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCKurumiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCMilkyRose1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCMilkyRose2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCDarkDreamTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCDarkRougeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCDarkLemonadeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCDarkMintTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCDarkAquaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCLoveTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCurePeach1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCurePeach2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCMikiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBerry1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBerry2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCInoriTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCurePine1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCurePine2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCSetsunaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCurePassion1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCurePassion2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCEasTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCTsubomiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBlossom1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBlossom2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCErikaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMarine1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMarine2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCItsukiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureSunshine1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureSunshine2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCYuriTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMoonlight1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMoonlight2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCDarkPrecureTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCHibikiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMelody1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMelody2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCKanadeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureRhythm1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureRhythm2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCEllenTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBeat1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBeat2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCAkoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMuse1ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMuse1BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMuse2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureFloraHCPCTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCMiyukiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureHappy1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureHappy2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCAkaneTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureSunny1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureSunny2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCYayoiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCurePeace1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCurePeace2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCNaoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMarch1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMarch2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCReikaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBeauty1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBeauty2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCBadEndHappyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCBadEndSunnyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCBadEndPeaceTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCBadEndMarchTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCBadEndBeautyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCManaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureHeart1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureHeart2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCRikkaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureDiamond1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureDiamond2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCAliceTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureRosetta1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureRosetta2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCMakotoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureSword1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureSword2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCAguriTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureAce1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureAce2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCReginaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCAyumiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureEchoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCCureUnion2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCMissingnoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCEmesgeseyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCShounenTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCShoujoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCDialgaTHTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCPalkiaTHTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCGiratinaTHTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCDecade1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCDecade2ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCDecade2BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCDiEnd1TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCDiEnd2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCDeLastTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+// End New
 
 static const u16 sRattataAlolanTeachableLearnset[] = {
     MOVE_BLIZZARD,
@@ -32708,6 +33477,7 @@ static const u16 sCorsolaGalarianTeachableLearnset[] = {
     MOVE_SUBSTITUTE,
     MOVE_UNAVAILABLE,
 };
+/*
 
 static const u16 sZigzagoonGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -32769,8 +33539,10 @@ static const u16 sLinooneGalarianTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+*/
 
 #if P_GEN_5_POKEMON == TRUE
+/*
 static const u16 sDarumakaGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -32880,6 +33652,7 @@ static const u16 sStunfiskGalarianTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
 static const u16 sGrowlitheHisuianTeachableLearnset[] = {
@@ -32911,6 +33684,7 @@ static const u16 sSneaselHisuianTeachableLearnset[] = {
 };
 
 #if P_GEN_5_POKEMON == TRUE
+/*
 static const u16 sSamurottHisuianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
@@ -32930,9 +33704,11 @@ static const u16 sZoroarkHisuianTeachableLearnset[] = {
 static const u16 sBraviaryHisuianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
 #if P_GEN_6_POKEMON == TRUE
+/*
 static const u16 sSliggooHisuianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
@@ -32944,14 +33720,18 @@ static const u16 sGoodraHisuianTeachableLearnset[] = {
 static const u16 sAvaluggHisuianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
 #if P_GEN_7_POKEMON == TRUE
+/*
 static const u16 sDecidueyeHisuianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
+/*
 static const u16 sDeoxysAttackTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
@@ -33071,8 +33851,10 @@ static const u16 sDeoxysSpeedTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
+*/
 
 #if P_GEN_4_POKEMON == TRUE
+/*
 static const u16 sBurmySandyCloakTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_PROTECT,
@@ -33206,9 +33988,11 @@ static const u16 sShayminSkyTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
 #if P_GEN_6_POKEMON == TRUE
+/*
 static const u16 sFloetteEternalFlowerTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -33301,9 +34085,11 @@ static const u16 sMeowsticFemaleTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
 #if P_GEN_7_POKEMON == TRUE
+/*
 static const u16 sLycanrocMidnightTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -33341,9 +34127,11 @@ static const u16 sLycanrocDuskTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
 
 #if P_GEN_8_POKEMON == TRUE
+/*
 static const u16 sToxtricityLowKeyTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_FACADE,
@@ -33484,4 +34272,579 @@ static const u16 sCalyrexShadowRiderTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
+*/
 #endif
+// New Form
+static const u16 sMOEBulbasaurTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEIvysaurTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEVenusaurTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECharmanderTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECharmeleonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECharizardTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESquirtleTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWartortleTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEBlastoiseTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECaterpieTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMetapodTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEButterfreeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWeedleTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKakunaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEBeedrillTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPidgeyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPidgeottoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPidgeotTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERattataTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERaticateTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESpearowTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEFearowTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEEkansTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEArbokTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERaichuTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESandshrewTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESandslashTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOENidoranFTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOENidorinaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOENidoqueenTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOENidoranMTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOENidorinoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOENidokingTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEClefairyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEClefableTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEVulpixTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOENinetalesTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEJigglypuffTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWigglytuffTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEZubatTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGolbatTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEOddishTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGloomTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEVileplumeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEParasTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEParasectTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEVenonatTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEVenomothTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDiglettTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDugtrioTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMeowthTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPersianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPsyduckTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGolduckTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMankeyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPrimeapeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGrowlitheTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEArcanineTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPoliwagTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPoliwhirlTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPoliwrathTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAbraTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKadabraTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAlakazamTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMachopTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMachokeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMachampTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEBellsproutTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWeepinbellTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEVictreebelTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETentacoolTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETentacruelTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGeodudeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGravelerTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGolemTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPonytaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERapidashTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESlowpokeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESlowbroTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMagnemiteTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMagnetonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEFarfetchdTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDoduoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDodrioTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESeelTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDewgongTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGrimerTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMukTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEShellderTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECloysterTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGastlyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHaunterTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGengarTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEOnixTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDrowzeeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHypnoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKrabbyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKinglerTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEVoltorbTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEElectrodeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEExeggcuteTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEExeggutorTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECuboneTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMarowakTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHitmonleeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHitmonchanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOELickitungTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKoffingTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWeezingTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERhyhornTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERhydonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEChanseyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETangelaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKangaskhanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHorseaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESeadraTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGoldeenTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESeakingTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEStaryuTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEStarmieTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMrMimeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEScytherTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEJynxTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEElectabuzzTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMagmarTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPinsirTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETaurosTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMagikarpTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGyaradosTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOELaprasTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDittoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEEeveeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEVaporeonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEJolteonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEFlareonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPorygonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEOmanyteTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEOmastarTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKabutoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKabutopsTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAerodactylTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESnorlaxTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEArticunoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEZapdosTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMoltresTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDratiniTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDragonairTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDragoniteTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMewtwoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMewTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEChikoritaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEBayleefTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMeganiumTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECyndaquilTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEQuilavaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETyphlosionTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETotodileTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECroconawTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEFeraligatrTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESentretTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEFurretTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHoothootTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOENoctowlTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOELedybaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOELedianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESpinarakTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAriadosTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECrobatTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEChinchouTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOELanturnTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPichuTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECleffaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEIgglybuffTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETogepiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETogeticTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOENatuTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEXatuTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMareepTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEFlaaffyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAmpharosTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEBellossomTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMarillTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAzumarillTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESudowoodoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPolitoedTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHoppipTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESkiploomTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEJumpluffTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAipomTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESunkernTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESunfloraTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEYanmaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWooperTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEQuagsireTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEEspeonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUmbreonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMurkrowTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESlowkingTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMisdreavusTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWobbuffetTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGirafarigTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPinecoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEForretressTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDunsparceTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGligarTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESteelixTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESnubbullTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGranbullTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEQwilfishTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEScizorTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEShuckleTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHeracrossTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESneaselTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETeddiursaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUrsaringTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESlugmaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMagcargoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESwinubTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPiloswineTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECorsolaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERemoraidTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEOctilleryTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDelibirdTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMantineTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESkarmoryTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHoundourTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHoundoomTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKingdraTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPhanpyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDonphanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPorygon2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEStantlerTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESmeargleTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETyrogueTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHitmontopTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESmoochumTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEElekidTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMagbyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMiltankTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEBlisseyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERaikouTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEEnteiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESuicuneTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOELarvitarTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPupitarTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETyranitarTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOELugiaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHoOhTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECelebiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAzurillTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWynautTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAmbipomTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMismagiusTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHonchkrowTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEBonslyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMimeJrTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHappinyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMunchlaxTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMantykeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWeavileTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMagnezoneTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOELickilickyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERhyperiorTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETangrowthTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEElectivireTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMagmortarTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETogekissTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEYanmegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOELeafeonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGlaceonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGliscorTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMamoswineTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPorygonZTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESylveonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPerrserkerTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECursolaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESirfetchdTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMrRimeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWyrdeerTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKleavorTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUrsalunaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESneaslerTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEOverqwilTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+
+static const u16 sMOEVenusaurMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECharizardMegaXTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECharizardMegaYTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEBlastoiseMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEBeedrillMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPidgeotMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAlakazamMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESlowbroMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGengarMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEKangaskhanMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPinsirMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGyaradosMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAerodactylMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMewtwoMegaXTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMewtwoMegaYTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEAmpharosMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESteelixMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEScizorMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHeracrossMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEHoundoomMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETyranitarMegaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+
+static const u16 sMOERattataAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERaticateAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERaichuAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESandshrewAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESandslashAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEVulpixAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOENinetalesAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDiglettAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEDugtrioAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMeowthAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPersianAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGeodudeAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGravelerAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGolemAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEGrimerAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMukAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEExeggutorAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMarowakAlolanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+
+static const u16 sMOEMeowthGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPonytaGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOERapidashGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESlowpokeGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESlowbroGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEFarfetchdGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEWeezingGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMrMimeGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEArticunoGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEZapdosGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEMoltresGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESlowkingGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOECorsolaGalarianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+
+static const u16 sMOEGrowlitheHisuianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEArcanineHisuianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEVoltorbHisuianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEElectrodeHisuianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOETyphlosionHisuianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEQwilfishHisuianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOESneaselHisuianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+
+static const u16 sMOEPikachuCosplayTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuRockStarTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuBelleTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuPopStarTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuPhDTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuLibreTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuOriginalCapTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuHoennCapTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuSinnohCapTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuUnovaCapTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuKalosCapTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuAlolaCapTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuPartnerCapTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPikachuWorldCapTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEPichuSpikyEaredTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownBTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownCTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownDTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownETeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownFTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownGTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownHTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownITeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownJTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownKTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownLTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownMTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownNTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownOTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownPTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownQTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownRTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownSTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownTTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownUTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownVTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownWTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownXTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownYTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownZTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownEmarkTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sMOEUnownQmarkTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+
+static const u16 sYYYIYuukiYuuna4TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYIWakaba3BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sYYYITakashimaYuuna3BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAlice2BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHPrismriverTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAyakashiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSuika2MTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAkiSistersTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHTensoku2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sSHVivitATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHAlice2ZTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHLaylaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHYuuka2ZTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHSanae2JTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHMarisa2ZTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sTHReimu2ZTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sKEYUshio3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMiki3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSShiho3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMisaki3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sBGHSMari3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBlack3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureWhite3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCShinyLuminous3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBrightyBloomTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureWindyEgretTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureDream3ATeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureDream3BTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBlossom3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMarine3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureSunshine3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMoonlight3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureHappy3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureSunny3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCurePeace3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureMarch3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureBeauty3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sPCCureHeart3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCCureUnion3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+
+static const u16 sETCDecade3TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCFRLGRedTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCHGSSEthanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCRSBrendanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCDPLucasTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCBWHilbertTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCB2W2NateTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCXYCalemTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCSMElioTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCLGPEChaseTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCSSVictorTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCHisuiAkariTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCSVFlorianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCCLWesTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCXDMichaelTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCFRLGLeafTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCHGSSLyraTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCCrystalKrisTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCRSMayTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCDPDawnTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCBWHildaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCB2W2RosaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCXYSerenaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCSMSeleneTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCLGPEElaineTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCSSGloriaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCHisuiReiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sETCSVJulianaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+
+static const u16 sDummyRegularTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyShedinjaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySpindaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyCastformTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyDeoxysTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyBurmyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyWormadamTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyCherrimTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyShellosTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGastrodonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyHippopotasTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyHippowdonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyRotomTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyDialgaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyPalkiaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGiratinaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyShayminTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyArceusTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyBasculinTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyDarmanitanTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyDeerlingTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySawsbuckTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyKyuremTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyKeldeoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyMeloettaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGenesectTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGreninjaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyVivillonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyFlabebeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyFloetteTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyFlorgesTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyFurfrouTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyMeowsticTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyAegislashTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyPumpkabooTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGourgeistTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyXerneasTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyZygardeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyHoopaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyOricorioTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyRockruffTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyLycanrocTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyWishiwashiTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySilvallyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyMiniorTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyMimikyuTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyNecrozmaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyMagearnaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyCramorantTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyToxtricityTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySinisteaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyPolteageistTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyAlcremieTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyEiscueTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyIndeedeeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyMorpekoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyZacianTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyZamazentaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyEternatusTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyUrshifuTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyZarudeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyCalyrexTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySceptileTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyBlazikenTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySwampertTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGardevoirTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySableyeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyMawileTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyAggronTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyMedichamTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyManectricTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySharpedoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyCameruptTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyAltariaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyBanetteTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyAbsolTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGlalieTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySalamenceTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyMetagrossTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyLatiasTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyLatiosTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyLopunnyTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGarchompTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyLucarioTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyAbomasnowTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGalladeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyAudinoTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyDiancieTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyRayquazaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyKyogreTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGroudonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyZigzagoonTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyLinooneTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyDarumakaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyDarmanitan2TeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyYamaskTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyStunfiskTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySamurottTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyLilligantTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyZoruaTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyZoroarkTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyBraviaryTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummySliggooTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyGoodraTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyAvaluggTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyDecidueyeTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyTornadusTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyThundurusTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyLandorusTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyEnamorusTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+static const u16 sDummyBasculegionTeachableLearnset[] = { MOVE_UNAVAILABLE, };
+// New Form End

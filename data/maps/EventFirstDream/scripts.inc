@@ -55,7 +55,7 @@ EventFirstDream_EventScript_EncounterTsukasaAndMon::
 	setmonmetlocation 0, 255
 	delay 0x10
 	special StartWallyTutorialBattle
-	playbgm MUS_PKMN_SV_TERARAIDBATTLE, FALSE
+	playbgm MUS_YYYI_BATTLE_04, FALSE
 	waitstate
 	setobjectxyperm LOCALID_MON, 0x1, 0x1
 	removeobject LOCALID_MON

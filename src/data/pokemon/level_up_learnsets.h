@@ -20518,7 +20518,25 @@ static const struct LevelUpMove sMOEArticunoLevelUpLearnset[] = { LEVEL_UP_MOVE(
 static const struct LevelUpMove sMOEZapdosLevelUpLearnset[] = { LEVEL_UP_MOVE( 1, MOVE_TACKLE), LEVEL_UP_END};
 static const struct LevelUpMove sMOEMoltresLevelUpLearnset[] = { LEVEL_UP_MOVE( 1, MOVE_TACKLE), LEVEL_UP_END};
 static const struct LevelUpMove sMOEDratiniLevelUpLearnset[] = { LEVEL_UP_MOVE( 1, MOVE_TACKLE), LEVEL_UP_END};
-static const struct LevelUpMove sMOEDragonairLevelUpLearnset[] = { LEVEL_UP_MOVE( 1, MOVE_TACKLE), LEVEL_UP_END};
+static const struct LevelUpMove sMOEDragonairLevelUpLearnset[] = {
+	    LEVEL_UP_MOVE( 1, MOVE_WRAP),
+	    LEVEL_UP_MOVE( 1, MOVE_LEER),
+	    LEVEL_UP_MOVE( 1, MOVE_THUNDER_WAVE),
+	    LEVEL_UP_MOVE( 1, MOVE_TWISTER),
+	    LEVEL_UP_MOVE( 5, MOVE_THUNDER_WAVE),
+	    LEVEL_UP_MOVE(11, MOVE_TWISTER),
+	    LEVEL_UP_MOVE(15, MOVE_DRAGON_RAGE),
+	    LEVEL_UP_MOVE(21, MOVE_SLAM),
+	    LEVEL_UP_MOVE(25, MOVE_AGILITY),
+	    LEVEL_UP_MOVE(33, MOVE_POISON_TAIL),
+	    LEVEL_UP_MOVE(39, MOVE_AQUA_TAIL),
+	    LEVEL_UP_MOVE(47, MOVE_DRAGON_RUSH),
+	    LEVEL_UP_MOVE(53, MOVE_SAFEGUARD),
+	    LEVEL_UP_MOVE(61, MOVE_DRAGON_DANCE),
+	    LEVEL_UP_MOVE(67, MOVE_OUTRAGE),
+	    LEVEL_UP_MOVE(75, MOVE_HYPER_BEAM),
+	    LEVEL_UP_END
+};
 static const struct LevelUpMove sMOEDragoniteLevelUpLearnset[] = { LEVEL_UP_MOVE( 1, MOVE_TACKLE), LEVEL_UP_END};
 static const struct LevelUpMove sMOEMewtwoLevelUpLearnset[] = { LEVEL_UP_MOVE( 1, MOVE_TACKLE), LEVEL_UP_END};
 static const struct LevelUpMove sMOEMewLevelUpLearnset[] = { LEVEL_UP_MOVE( 1, MOVE_TACKLE), LEVEL_UP_END};

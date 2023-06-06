@@ -69,16 +69,17 @@ JohtoTwinriverCity_EventScript_Sign3::
 	delay 30
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_REVEAL_GLASS, 1
 	additem ITEM_MASTER_BALL, 10
 	setvar VAR_TEMP_1, 0
-	givemon SPECIES_TH_ALICE2N, 100, ITEM_PSYCHIUM_Z
+	givemon SPECIES_MOE_CELEBI, 100, ITEM_PSYCHIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
 	setmonmove 0, 0, MOVE_PSYCHIC
 	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
 	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
 	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
-	givemon SPECIES_MOE_PIKACHU, 100, ITEM_PIKANIUM_Z
+	givemon SPECIES_GENGAR, 100, ITEM_GENGARITE
 	setmoneventlegal 1
 	setmonmetlocation 1, 255
 	setmonmove 1, 0, MOVE_VOLT_TACKLE
@@ -91,8 +92,7 @@ JohtoTwinriverCity_EventScript_Sign3::
 	end
 
 JohtoTwinriverCity_Text_Sign3TrainerTestIntro:
-	.string "The remaining hero after\n"
-	.string "the 2019 Vertex Invasion.$"
+	.string "Battle Test.$"
 
 JohtoTwinriverCity_Text_Sign3TrainerTestDefeat:
 	.string "Whoah, wow! You made a much bigger\n"
@@ -145,43 +145,13 @@ JohtoTwinriverCity_EventScript_Sign4::
 
 JohtoTwinriverCity_EventScript_Sign5::
 	lockall
-	deleteplayerparty
 	delay 30
-	setflag FLAG_SYS_POKEMON_GET
-	setflag FLAG_SYS_POKEDEX_GET
-	setflag FLAG_SYS_NATIONAL_DEX
-	special EnableNationalPokedex
-	special SetUnlockedPokedexFlags
-	setflag FLAG_SYS_B_DASH
-	setflag FLAG_BADGE01_GET
-	setflag FLAG_BADGE02_GET
-	setflag FLAG_BADGE03_GET
-	setflag FLAG_BADGE04_GET
-	setflag FLAG_BADGE05_GET
-	setflag FLAG_BADGE06_GET
-	setflag FLAG_BADGE07_GET
-	setflag FLAG_BADGE08_GET
-	delay 30
-	additem ITEM_MEGA_RING, 1
-	additem ITEM_Z_POWER_RING, 1
-	additem ITEM_MASTER_BALL, 10
-	setvar VAR_TEMP_1, 0
-//	givemon SPECIES_MEW, 100, ITEM_MEWNIUM_Z
-//	setmoneventlegal 0
-//	setmonmetlocation 0, 255
-//	setmonmove 0, 0, MOVE_PSYCHIC
-//	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
-//	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
-//	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
-	givemon SPECIES_RAYQUAZA, 100, ITEM_LIFE_ORB
-	setmoneventlegal 0
-	setmonmetlocation 0, 255
-	setmonmove 0, 0, MOVE_DRAGON_ASCENT
-	setmonmove 0, 1, MOVE_THUNDERBOLT
-	setmonmove 0, 2, MOVE_EXTREME_SPEED
-	setmonmove 0, 3, MOVE_EARTHQUAKE
-	delay 30
-	trainerbattle_single TRAINER_TEST_5, JohtoTwinriverCity_Text_Sign3TrainerTestIntro, JohtoTwinriverCity_Text_Sign3TrainerTestDefeat, JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated, NO_MUSIC
+	playmoncry SPECIES_YYYI_WAKABA3A, CRY_MODE_ENCOUNTER
+	waitmoncry
+	seteventmon SPECIES_YYYI_WAKABA3A, 70, ITEM_DIANCITE
+	special BattleSetup_StartLegendaryBattle
+	playbgm MUS_YYYI_BATTLE_04, FALSE
+	waitstate
 	releaseall
 	end
 

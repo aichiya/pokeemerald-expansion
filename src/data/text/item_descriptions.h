@@ -1128,52 +1128,52 @@ static const u8 sRetroMailDesc[] = _(
 // Evolution Items
 static const u8 sFireStoneDesc[] = _(
     "Makes certain\n"
-    "species of Pokémon\n"
+    "species of FRAGMON\n"
     "evolve.");
 
 static const u8 sWaterStoneDesc[] = _(
     "Makes certain\n"
-    "species of Pokémon\n"
+    "species of FRAGMON\n"
     "evolve.");
 
 static const u8 sThunderStoneDesc[] = _(
     "Makes certain\n"
-    "species of Pokémon\n"
+    "species of FRAGMON\n"
     "evolve.");
 
 static const u8 sLeafStoneDesc[] = _(
     "Makes certain\n"
-    "species of Pokémon\n"
+    "species of FRAGMON\n"
     "evolve.");
 
 static const u8 sIceStoneDesc[] = _(
     "Makes certain\n"
-    "species of Pokémon\n"
+    "species of FRAGMON\n"
     "evolve.");
 
 static const u8 sSunStoneDesc[] = _(
     "Makes certain\n"
-    "species of Pokémon\n"
+    "species of FRAGMON\n"
     "evolve.");
 
 static const u8 sMoonStoneDesc[] = _(
     "Makes certain\n"
-    "species of Pokémon\n"
+    "species of FRAGMON\n"
     "evolve.");
 
 static const u8 sShinyStoneDesc[] = _(
     "Makes certain\n"
-    "species of Pokémon\n"
+    "species of FRAGMON\n"
     "evolve.");
 
 static const u8 sDuskStoneDesc[] = _(
     "Makes certain\n"
-    "species of Pokémon\n"
+    "species of FRAGMON\n"
     "evolve.");
 
 static const u8 sDawnStoneDesc[] = _(
     "Makes certain\n"
-    "species of Pokémon\n"
+    "species of FRAGMON\n"
     "evolve.");
 
 static const u8 sSweetAppleDesc[] = _(

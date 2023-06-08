@@ -189,6 +189,8 @@
 .include "sound/voicegroups/voicegroup187.inc"
 .include "sound/voicegroups/voicegroup188.inc"
 .include "sound/voicegroups/voicegroup189.inc"
+
+@ Start custom keysplit instruments setting
 .include "sound/voicegroups/voicegroup190.inc" @ Modified voicegroup000
 .include "sound/voicegroups/voicegroup191.inc" @ Modified voicegroup001
 .include "sound/voicegroups/voicegroup192.inc" @ Modified voicegroup002
@@ -199,13 +201,20 @@
 .include "sound/voicegroups/voicegroup197.inc" @ Modified voicegroup007
 .include "sound/voicegroups/voicegroup198.inc" @ Modified voicegroup008
 .include "sound/voicegroups/voicegroup199.inc" @ Modified voicegroup009
+@ End custom keysplit instruments setting
+
+@ Start custom voicegroups
 .include "sound/voicegroups/voicegroup200.inc" @ Custom GBA instrument only
 .include "sound/voicegroups/voicegroup201.inc" @ [Main] Custom mixed instrument (GBA-HGSS-THPPRF)
 .include "sound/voicegroups/voicegroup202.inc" @ Custom HGSS Base
+
 .include "sound/voicegroups/voicegroup210.inc" @ [Main] THPPRF custom
 .include "sound/voicegroups/voicegroup211.inc" @ [Main] THPPZGS custom
 
-.include "sound/voicegroups/voicegroup216.inc" @ -- Start HGSS Voicegroups --
+@ After a custom voicegroup hits voicegroup215, please jump to voicegroup500+
+
+@ --Start HGSS Voicegroups--
+.include "sound/voicegroups/voicegroup216.inc"
 .include "sound/voicegroups/voicegroup219.inc"
 .include "sound/voicegroups/voicegroup220.inc"
 .include "sound/voicegroups/voicegroup229.inc" @ [Main] HGSS-only instruments
@@ -252,15 +261,19 @@
 .include "sound/voicegroups/voicegroup270.inc"
 .include "sound/voicegroups/voicegroup271.inc"
 .include "sound/voicegroups/voicegroup272.inc"
-.include "sound/voicegroups/voicegroup273.inc" @ --End HGSS Voicegroups--
+.include "sound/voicegroups/voicegroup273.inc"
+@ --End HGSS Voicegroups--
 
 .include "sound/voicegroups/voicegroup500.inc" @ --Blank voicegroup--
 
+@ --Start Futari wa Precure MH GBA Voicegroups--
 .include "sound/voicegroups/voicegroup501.inc" @ [Main] Futari wa Precure MH GBA instruments
 .include "sound/voicegroups/voicegroup502.inc" @ Futari wa Precure MH GBA drum set 1
 .include "sound/voicegroups/voicegroup503.inc" @ Futari wa Precure MH GBA drum set 2
+@ --End Futari wa Precure MH GBA Voicegroups--
 
-.include "sound/voicegroups/voicegroup504.inc" @ --Start PMD Voicegroups-- | [Main] PMD GBA main 1 instruments for squence 1 - 99
+@ --Start PMD GBA Voicegroups--
+.include "sound/voicegroups/voicegroup504.inc" @ [Main] PMD GBA main 1 instruments for squence 1 - 99
 .include "sound/voicegroups/voicegroup505.inc" @ [Main] PMD GBA main 2 instruments for squence 100 - 199
 .include "sound/voicegroups/voicegroup506.inc" @ PMD GBA Drum 1
 .include "sound/voicegroups/voicegroup507.inc" @ PMD GBA Drum 2
@@ -286,5 +299,5 @@
 .include "sound/voicegroups/voicegroup527.inc"
 .include "sound/voicegroups/voicegroup528.inc"
 .include "sound/voicegroups/voicegroup529.inc"
-.include "sound/voicegroups/voicegroup530.inc" @ --End PMD Voicegroups--
-
+.include "sound/voicegroups/voicegroup530.inc"
+@ --Start PMD GBA Voicegroups--

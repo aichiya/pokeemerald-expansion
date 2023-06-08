@@ -3941,6 +3941,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
 	X(MUS_YYYI_BATTLE_02) \
 	X(MUS_YYYI_BATTLE_02_TEST2) \
 	X(MUS_YYYI_BATTLE_04) \
+	X(MUS_PKMN_PMD2_DONTEVERFORGET)
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

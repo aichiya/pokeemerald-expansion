@@ -1328,6 +1328,7 @@ gSongTable::
 	song mus_yyyi_battle_02, 0, 0
 	song mus_yyyi_battle_02_test, 0, 0
 	song mus_yyyi_battle_04, 0, 0
+	song mus_pkmn_pmd2_donteverforget, 0, 0
 
 	.align 2
 dummy_song_header:

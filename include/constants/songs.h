@@ -1293,8 +1293,9 @@
 #define MUS_YYYI_BATTLE_02 1324
 #define MUS_YYYI_BATTLE_02_TEST2 1325
 #define MUS_YYYI_BATTLE_04 1326
+#define MUS_PKMN_PMD2_DONTEVERFORGET 1327
 
-#define END_MUS 					MUS_YYYI_BATTLE_04
+#define END_MUS 					MUS_PKMN_PMD2_DONTEVERFORGET
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

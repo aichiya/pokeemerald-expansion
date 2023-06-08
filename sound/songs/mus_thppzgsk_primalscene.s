@@ -3,7 +3,7 @@
 	.equ	mus_thppzgsk_primalscene_grp, voicegroup201
 	.equ	mus_thppzgsk_primalscene_pri, 0
 	.equ	mus_thppzgsk_primalscene_rev, 0
-	.equ	mus_thppzgsk_primalscene_mvl, 127
+	.equ	mus_thppzgsk_primalscene_mvl, 100
 	.equ	mus_thppzgsk_primalscene_key, 0
 	.equ	mus_thppzgsk_primalscene_tbs, 1
 	.equ	mus_thppzgsk_primalscene_exg, 0

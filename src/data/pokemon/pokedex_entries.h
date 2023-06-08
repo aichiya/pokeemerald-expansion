@@ -12115,7 +12115,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KEDAMA] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKedamaPokedexText,
@@ -12128,7 +12128,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_FAIRY] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHFairyPokedexText,
@@ -12141,7 +12141,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ZOMBIEFAIRY] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHZombiefairyPokedexText,
@@ -12154,7 +12154,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHINGYOKU1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShingyoku1PokedexText,
@@ -12167,7 +12167,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHINGYOKU2O] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShingyoku2OPokedexText,
@@ -12180,7 +12180,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHINGYOKU2M] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShingyoku2MPokedexText,
@@ -12193,7 +12193,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHINGYOKU2F] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShingyoku2FPokedexText,
@@ -12206,7 +12206,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUUGEN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuugen1PokedexText,
@@ -12219,7 +12219,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUUGEN2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuugen2PokedexText,
@@ -12232,7 +12232,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MIMA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMima1PokedexText,
@@ -12245,7 +12245,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MIMA2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMima2PokedexText,
@@ -12258,7 +12258,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ELIS1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHElis1PokedexText,
@@ -12271,7 +12271,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ELIS2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHElis2PokedexText,
@@ -12284,7 +12284,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KIKURI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKikuri1PokedexText,
@@ -12297,7 +12297,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KIKURI2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKikuri2PokedexText,
@@ -12310,7 +12310,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SARIEL1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSariel1PokedexText,
@@ -12323,7 +12323,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SARIEL2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSariel2NPokedexText,
@@ -12336,7 +12336,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SARIEL2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSariel2SPokedexText,
@@ -12349,7 +12349,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KONNGARA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKonngara1PokedexText,
@@ -12362,7 +12362,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KONNGARA2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKonngara2PokedexText,
@@ -12375,7 +12375,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_GENJI] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHGenjiPokedexText,
@@ -12388,7 +12388,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RIKA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRika1PokedexText,
@@ -12401,7 +12401,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RIKA2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRika2PokedexText,
@@ -12414,7 +12414,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEIRA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMeira1PokedexText,
@@ -12427,7 +12427,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEIRA2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMeira2PokedexText,
@@ -12440,7 +12440,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ELLEN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHEllen1PokedexText,
@@ -12453,7 +12453,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ELLEN2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHEllen2PokedexText,
@@ -12466,7 +12466,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOTOHIME1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKotohime1PokedexText,
@@ -12479,7 +12479,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOTOHIME2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKotohime2PokedexText,
@@ -12492,7 +12492,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KANA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKana1PokedexText,
@@ -12505,7 +12505,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KANA2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKana2PokedexText,
@@ -12518,7 +12518,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RIKAKO1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRikako1PokedexText,
@@ -12531,7 +12531,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RIKAKO2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRikako2PokedexText,
@@ -12544,7 +12544,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_CHIYURI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHChiyuri1PokedexText,
@@ -12557,7 +12557,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_CHIYURI2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHChiyuri2PokedexText,
@@ -12570,7 +12570,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUMEMI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYumemi1PokedexText,
@@ -12583,7 +12583,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUMEMI2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYumemi2PokedexText,
@@ -12596,7 +12596,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RUUKOTO] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRuukotoPokedexText,
@@ -12609,7 +12609,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MIMICHAN] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMimichanPokedexText,
@@ -12622,7 +12622,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ORANGE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHOrange1PokedexText,
@@ -12635,7 +12635,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ORANGE2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHOrange2PokedexText,
@@ -12648,7 +12648,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KURUMI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKurumi1PokedexText,
@@ -12661,7 +12661,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KURUMI2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKurumi2PokedexText,
@@ -12674,7 +12674,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ELLY1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHElly1PokedexText,
@@ -12687,7 +12687,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ELLY2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHElly2PokedexText,
@@ -12700,7 +12700,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MUGETSU1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMugetsu1PokedexText,
@@ -12713,7 +12713,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MUGETSU2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMugetsu2PokedexText,
@@ -12726,7 +12726,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_GENGETSU1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHGengetsu1PokedexText,
@@ -12739,7 +12739,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_GENGETSU2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHGengetsu2PokedexText,
@@ -12752,7 +12752,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SARA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSara1PokedexText,
@@ -12765,7 +12765,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SARA2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSara2PokedexText,
@@ -12778,7 +12778,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LOUISE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLouise1PokedexText,
@@ -12791,7 +12791,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LOUISE2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLouise2PokedexText,
@@ -12804,7 +12804,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUKI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuki1PokedexText,
@@ -12817,7 +12817,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUKI2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuki2PokedexText,
@@ -12830,7 +12830,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MAI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMai1PokedexText,
@@ -12843,7 +12843,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MAI2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMai2PokedexText,
@@ -12856,7 +12856,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUMEKO1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYumeko1PokedexText,
@@ -12869,7 +12869,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUMEKO2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYumeko2PokedexText,
@@ -12882,7 +12882,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHINKI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShinki1PokedexText,
@@ -12895,7 +12895,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHINKI2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShinki2PokedexText,
@@ -12908,7 +12908,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RUMIA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRumia1PokedexText,
@@ -12921,7 +12921,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RUMIA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRumia2NPokedexText,
@@ -12934,7 +12934,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RUMIA2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRumia2APokedexText,
@@ -12947,7 +12947,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RUMIA2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRumia2SPokedexText,
@@ -12960,7 +12960,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_DAIYOUSEI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHDaiyousei1PokedexText,
@@ -12973,7 +12973,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_DAIYOUSEI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHDaiyousei2NPokedexText,
@@ -12986,7 +12986,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_DAIYOUSEI2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHDaiyousei2APokedexText,
@@ -12999,7 +12999,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_DAIYOUSEI2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHDaiyousei2DPokedexText,
@@ -13012,7 +13012,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_CIRNO1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHCirno1PokedexText,
@@ -13025,7 +13025,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_CIRNO2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHCirno2NPokedexText,
@@ -13038,7 +13038,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_CIRNO2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHCirno2SPokedexText,
@@ -13051,7 +13051,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_CIRNO2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHCirno2TPokedexText,
@@ -13064,7 +13064,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LUNACHILD1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLunachild1PokedexText,
@@ -13077,7 +13077,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LUNACHILD2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLunachild2NPokedexText,
@@ -13090,7 +13090,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LUNACHILD2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLunachild2APokedexText,
@@ -13103,7 +13103,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LUNACHILD2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLunachild2TPokedexText,
@@ -13116,7 +13116,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_STARSAPPHIRE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHStarsapphire1PokedexText,
@@ -13129,7 +13129,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_STARSAPPHIRE2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHStarsapphire2NPokedexText,
@@ -13142,7 +13142,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_STARSAPPHIRE2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHStarsapphire2APokedexText,
@@ -13155,7 +13155,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_STARSAPPHIRE2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHStarsapphire2HPokedexText,
@@ -13168,7 +13168,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUNNYMILK1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSunnymilk1PokedexText,
@@ -13181,7 +13181,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUNNYMILK2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSunnymilk2NPokedexText,
@@ -13194,7 +13194,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUNNYMILK2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSunnymilk2APokedexText,
@@ -13207,7 +13207,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUNNYMILK2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSunnymilk2DPokedexText,
@@ -13220,7 +13220,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEILING1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMeiling1PokedexText,
@@ -13233,7 +13233,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEILING2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMeiling2NPokedexText,
@@ -13246,7 +13246,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEILING2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMeiling2DPokedexText,
@@ -13259,7 +13259,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEILING2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMeiling2SPokedexText,
@@ -13272,7 +13272,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOAKUMA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKoakuma1PokedexText,
@@ -13285,7 +13285,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOAKUMA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKoakuma2NPokedexText,
@@ -13298,7 +13298,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOAKUMA2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKoakuma2HPokedexText,
@@ -13311,7 +13311,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_PATCHOULI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHPatchouli1PokedexText,
@@ -13324,7 +13324,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_PATCHOULI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHPatchouli2NPokedexText,
@@ -13337,7 +13337,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_PATCHOULI2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHPatchouli2APokedexText,
@@ -13350,7 +13350,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_PATCHOULI2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHPatchouli2DPokedexText,
@@ -13363,7 +13363,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SAKUYA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSakuya1PokedexText,
@@ -13376,7 +13376,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SAKUYA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSakuya2NPokedexText,
@@ -13389,7 +13389,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SAKUYA2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSakuya2TPokedexText,
@@ -13402,7 +13402,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SAKUYA2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSakuya2HPokedexText,
@@ -13415,7 +13415,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_REMILIA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRemilia1PokedexText,
@@ -13428,7 +13428,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_REMILIA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRemilia2NPokedexText,
@@ -13441,7 +13441,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_REMILIA2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRemilia2APokedexText,
@@ -13454,7 +13454,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_REMILIA2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRemilia2DPokedexText,
@@ -13467,7 +13467,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_FLANDRE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHFlandre1PokedexText,
@@ -13480,7 +13480,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_FLANDRE2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHFlandre2NPokedexText,
@@ -13493,7 +13493,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_FLANDRE2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHFlandre2APokedexText,
@@ -13506,7 +13506,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_FLANDRE2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHFlandre2SPokedexText,
@@ -13519,7 +13519,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SATSUKI] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSatsukiPokedexText,
@@ -13532,7 +13532,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LETTY1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLetty1PokedexText,
@@ -13545,7 +13545,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LETTY2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLetty2NPokedexText,
@@ -13558,7 +13558,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LETTY2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLetty2DPokedexText,
@@ -13571,7 +13571,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LETTY2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLetty2HPokedexText,
@@ -13584,7 +13584,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_CHEN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHChen1PokedexText,
@@ -13597,7 +13597,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_CHEN2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHChen2NPokedexText,
@@ -13610,7 +13610,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_CHEN2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHChen2APokedexText,
@@ -13623,7 +13623,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_CHEN2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHChen2TPokedexText,
@@ -13636,7 +13636,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ALICE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHAlice1PokedexText,
@@ -13649,7 +13649,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ALICE2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHAlice2NPokedexText,
@@ -13662,7 +13662,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ALICE2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHAlice2APokedexText,
@@ -13675,7 +13675,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ALICE2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHAlice2TPokedexText,
@@ -13688,7 +13688,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LILYBLACK1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLilyblack1PokedexText,
@@ -13701,7 +13701,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LILYWHITE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLilywhite1PokedexText,
@@ -13714,7 +13714,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LILYBLACK2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLilyblack2NPokedexText,
@@ -13727,7 +13727,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LILYWHITE2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLilywhite2NPokedexText,
@@ -13740,7 +13740,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LILYBLACK2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLilyblack2APokedexText,
@@ -13753,7 +13753,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LILYWHITE2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLilywhite2APokedexText,
@@ -13766,7 +13766,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LILYBLACK2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLilyblack2SPokedexText,
@@ -13779,7 +13779,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LILYWHITE2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLilywhite2HPokedexText,
@@ -13792,7 +13792,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LUNASA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLunasa1PokedexText,
@@ -13805,7 +13805,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LUNASA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLunasa2NPokedexText,
@@ -13818,7 +13818,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LUNASA2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLunasa2HPokedexText,
@@ -13831,7 +13831,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MERLIN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMerlin1PokedexText,
@@ -13844,7 +13844,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MERLIN2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMerlin2NPokedexText,
@@ -13857,7 +13857,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MERLIN2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMerlin2HPokedexText,
@@ -13870,7 +13870,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LYRICA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLyrica1PokedexText,
@@ -13883,7 +13883,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LYRICA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLyrica2NPokedexText,
@@ -13896,7 +13896,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_LYRICA2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHLyrica2HPokedexText,
@@ -13909,7 +13909,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YOUMU1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYoumu1PokedexText,
@@ -13922,7 +13922,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YOUMU2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYoumu2NPokedexText,
@@ -13935,7 +13935,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YOUMU2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYoumu2DPokedexText,
@@ -13948,7 +13948,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YOUMU2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYoumu2SPokedexText,
@@ -13961,7 +13961,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUYUKO1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuyuko1PokedexText,
@@ -13974,7 +13974,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUYUKO2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuyuko2NPokedexText,
@@ -13987,7 +13987,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUYUKO2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuyuko2APokedexText,
@@ -14000,7 +14000,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUYUKO2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuyuko2DPokedexText,
@@ -14013,7 +14013,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RAN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRan1PokedexText,
@@ -14026,7 +14026,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RAN2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRan2NPokedexText,
@@ -14039,7 +14039,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RAN2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRan2APokedexText,
@@ -14052,7 +14052,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RAN2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRan2HPokedexText,
@@ -14065,7 +14065,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUKARI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYukari1PokedexText,
@@ -14078,7 +14078,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUKARI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYukari2NPokedexText,
@@ -14091,7 +14091,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUKARI2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYukari2DPokedexText,
@@ -14104,7 +14104,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUKARI2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYukari2TPokedexText,
@@ -14117,7 +14117,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUIKA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSuika1PokedexText,
@@ -14130,7 +14130,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUIKA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSuika2NPokedexText,
@@ -14143,7 +14143,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUIKA2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSuika2APokedexText,
@@ -14156,7 +14156,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUIKA2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSuika2TPokedexText,
@@ -14169,7 +14169,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_WRIGGLE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHWriggle1PokedexText,
@@ -14182,7 +14182,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_WRIGGLE2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHWriggle2NPokedexText,
@@ -14195,7 +14195,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_WRIGGLE2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHWriggle2DPokedexText,
@@ -14208,7 +14208,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_WRIGGLE2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHWriggle2SPokedexText,
@@ -14221,7 +14221,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MYSTIA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMystia1PokedexText,
@@ -14234,7 +14234,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MYSTIA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMystia2NPokedexText,
@@ -14247,7 +14247,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MYSTIA2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMystia2APokedexText,
@@ -14260,7 +14260,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MYSTIA2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMystia2HPokedexText,
@@ -14273,7 +14273,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KEINE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKeine1PokedexText,
@@ -14286,7 +14286,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KEINE2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKeine2NPokedexText,
@@ -14299,7 +14299,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KEINE2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKeine2APokedexText,
@@ -14312,7 +14312,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KEINE2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKeine2DPokedexText,
@@ -14325,7 +14325,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KEINE2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKeine2HPokedexText,
@@ -14338,7 +14338,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TEWI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTewi1PokedexText,
@@ -14351,7 +14351,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TEWI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTewi2NPokedexText,
@@ -14364,7 +14364,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TEWI2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTewi2APokedexText,
@@ -14377,7 +14377,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TEWI2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTewi2DPokedexText,
@@ -14390,7 +14390,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_REISEN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHReisen1PokedexText,
@@ -14403,7 +14403,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_REISEN2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHReisen2NPokedexText,
@@ -14416,7 +14416,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_REISEN2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHReisen2DPokedexText,
@@ -14429,7 +14429,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_REISEN2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHReisen2TPokedexText,
@@ -14442,7 +14442,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_GYOKUTO] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHGyokutoPokedexText,
@@ -14455,7 +14455,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_EIRIN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHEirin1PokedexText,
@@ -14468,7 +14468,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_EIRIN2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHEirin2NPokedexText,
@@ -14481,7 +14481,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_EIRIN2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHEirin2APokedexText,
@@ -14494,7 +14494,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_EIRIN2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHEirin2HPokedexText,
@@ -14507,7 +14507,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KAGUYA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKaguya1PokedexText,
@@ -14520,7 +14520,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KAGUYA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKaguya2NPokedexText,
@@ -14533,7 +14533,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KAGUYA2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKaguya2APokedexText,
@@ -14546,7 +14546,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KAGUYA2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKaguya2DPokedexText,
@@ -14559,7 +14559,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MOKOU1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMokou1PokedexText,
@@ -14572,7 +14572,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MOKOU2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMokou2NPokedexText,
@@ -14585,7 +14585,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MOKOU2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMokou2APokedexText,
@@ -14598,7 +14598,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MOKOU2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMokou2DPokedexText,
@@ -14611,7 +14611,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TOYOHIME1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHToyohime1PokedexText,
@@ -14624,7 +14624,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TOYOHIME2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHToyohime2NPokedexText,
@@ -14637,7 +14637,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TOYOHIME2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHToyohime2TPokedexText,
@@ -14650,7 +14650,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YORIHIME1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYorihime1PokedexText,
@@ -14663,7 +14663,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YORIHIME2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYorihime2NPokedexText,
@@ -14676,7 +14676,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YORIHIME2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYorihime2SPokedexText,
@@ -14689,7 +14689,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_AYA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHAya1PokedexText,
@@ -14702,7 +14702,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_AYA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHAya2NPokedexText,
@@ -14715,7 +14715,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_AYA2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHAya2SPokedexText,
@@ -14728,7 +14728,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_AYA2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHAya2TPokedexText,
@@ -14741,7 +14741,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEDICINE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMedicine1PokedexText,
@@ -14754,7 +14754,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEDICINE2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMedicine2NPokedexText,
@@ -14767,7 +14767,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEDICINE2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMedicine2APokedexText,
@@ -14780,7 +14780,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEDICINE2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMedicine2SPokedexText,
@@ -14793,7 +14793,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MEDICINE2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMedicine2TPokedexText,
@@ -14806,7 +14806,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUUKA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuuka1PokedexText,
@@ -14819,7 +14819,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUUKA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuuka2NPokedexText,
@@ -14832,7 +14832,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUUKA2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuuka2APokedexText,
@@ -14845,7 +14845,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUUKA2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuuka2TPokedexText,
@@ -14858,7 +14858,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOMACHI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKomachi1PokedexText,
@@ -14871,7 +14871,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOMACHI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKomachi2NPokedexText,
@@ -14884,7 +14884,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOMACHI2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKomachi2APokedexText,
@@ -14897,7 +14897,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOMACHI2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKomachi2SPokedexText,
@@ -14910,7 +14910,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_EIKI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHEiki1PokedexText,
@@ -14923,7 +14923,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_EIKI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHEiki2NPokedexText,
@@ -14936,7 +14936,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_EIKI2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHEiki2APokedexText,
@@ -14949,7 +14949,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_EIKI2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHEiki2DPokedexText,
@@ -14962,7 +14962,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHIZUHA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShizuha1PokedexText,
@@ -14975,7 +14975,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHIZUHA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShizuha2NPokedexText,
@@ -14988,7 +14988,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHIZUHA2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShizuha2SPokedexText,
@@ -15001,7 +15001,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHIZUHA2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShizuha2HPokedexText,
@@ -15014,7 +15014,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MINORIKO1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMinoriko1PokedexText,
@@ -15027,7 +15027,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MINORIKO2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMinoriko2NPokedexText,
@@ -15040,7 +15040,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MINORIKO2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMinoriko2APokedexText,
@@ -15053,7 +15053,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MINORIKO2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMinoriko2DPokedexText,
@@ -15066,7 +15066,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_HINA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHHina1PokedexText,
@@ -15079,7 +15079,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_HINA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHHina2NPokedexText,
@@ -15092,7 +15092,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_HINA2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHHina2APokedexText,
@@ -15105,7 +15105,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_HINA2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHHina2DPokedexText,
@@ -15118,7 +15118,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NITORI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNitori1PokedexText,
@@ -15131,7 +15131,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NITORI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNitori2NPokedexText,
@@ -15144,7 +15144,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NITORI2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNitori2APokedexText,
@@ -15157,7 +15157,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NITORI2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNitori2TPokedexText,
@@ -15170,7 +15170,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MOMOJI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMomoji1PokedexText,
@@ -15183,7 +15183,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MOMOJI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMomoji2NPokedexText,
@@ -15196,7 +15196,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MOMOJI2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMomoji2DPokedexText,
@@ -15209,7 +15209,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SANAE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSanae1PokedexText,
@@ -15222,7 +15222,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SANAE2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSanae2NPokedexText,
@@ -15235,7 +15235,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SANAE2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSanae2APokedexText,
@@ -15248,7 +15248,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SANAE2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSanae2TPokedexText,
@@ -15261,7 +15261,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KANAKO1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKanako1PokedexText,
@@ -15274,7 +15274,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KANAKO2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKanako2NPokedexText,
@@ -15287,7 +15287,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KANAKO2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKanako2APokedexText,
@@ -15300,7 +15300,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KANAKO2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKanako2DPokedexText,
@@ -15313,7 +15313,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUWAKO1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSuwako1PokedexText,
@@ -15326,7 +15326,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUWAKO2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSuwako2NPokedexText,
@@ -15339,7 +15339,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUWAKO2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSuwako2APokedexText,
@@ -15352,7 +15352,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUWAKO2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSuwako2DPokedexText,
@@ -15365,7 +15365,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_IKU1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHIku1PokedexText,
@@ -15378,7 +15378,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_IKU2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHIku2NPokedexText,
@@ -15391,7 +15391,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_IKU2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHIku2DPokedexText,
@@ -15404,7 +15404,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_IKU2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHIku2TPokedexText,
@@ -15417,7 +15417,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TENSHI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTenshi1PokedexText,
@@ -15430,7 +15430,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TENSHI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTenshi2NPokedexText,
@@ -15443,7 +15443,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TENSHI2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTenshi2APokedexText,
@@ -15456,7 +15456,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TENSHI2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTenshi2DPokedexText,
@@ -15469,7 +15469,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KISUME1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKisume1PokedexText,
@@ -15482,7 +15482,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KISUME2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKisume2NPokedexText,
@@ -15495,7 +15495,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KISUME2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKisume2TPokedexText,
@@ -15508,7 +15508,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YAMAME1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYamame1PokedexText,
@@ -15521,7 +15521,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YAMAME2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYamame2NPokedexText,
@@ -15534,7 +15534,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YAMAME2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYamame2SPokedexText,
@@ -15547,7 +15547,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YAMAME2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYamame2TPokedexText,
@@ -15560,7 +15560,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_PARSEE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHParsee1PokedexText,
@@ -15573,7 +15573,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_PARSEE2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHParsee2NPokedexText,
@@ -15586,7 +15586,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_PARSEE2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHParsee2DPokedexText,
@@ -15599,7 +15599,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_PARSEE2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHParsee2TPokedexText,
@@ -15612,7 +15612,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUUGI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuugi1PokedexText,
@@ -15625,7 +15625,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUUGI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuugi2NPokedexText,
@@ -15638,7 +15638,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUUGI2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuugi2APokedexText,
@@ -15651,7 +15651,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_YUUGI2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHYuugi2DPokedexText,
@@ -15664,7 +15664,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SATORI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSatori1PokedexText,
@@ -15677,7 +15677,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SATORI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSatori2NPokedexText,
@@ -15690,7 +15690,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SATORI2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSatori2DPokedexText,
@@ -15703,7 +15703,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SATORI2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSatori2TPokedexText,
@@ -15716,7 +15716,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RIN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRin1PokedexText,
@@ -15729,7 +15729,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RIN2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRin2NPokedexText,
@@ -15742,7 +15742,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RIN2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRin2APokedexText,
@@ -15755,7 +15755,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RIN2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRin2SPokedexText,
@@ -15768,7 +15768,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_UTSUHO1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHUtsuho1PokedexText,
@@ -15781,7 +15781,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_UTSUHO2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHUtsuho2NPokedexText,
@@ -15794,7 +15794,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_UTSUHO2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHUtsuho2APokedexText,
@@ -15807,7 +15807,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_UTSUHO2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHUtsuho2SPokedexText,
@@ -15820,7 +15820,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOISHI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKoishi1PokedexText,
@@ -15833,7 +15833,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOISHI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKoishi2NPokedexText,
@@ -15846,7 +15846,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOISHI2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKoishi2APokedexText,
@@ -15859,7 +15859,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOISHI2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKoishi2SPokedexText,
@@ -15872,7 +15872,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NAZRIN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNazrin1PokedexText,
@@ -15885,7 +15885,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NAZRIN2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNazrin2NPokedexText,
@@ -15898,7 +15898,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NAZRIN2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNazrin2TPokedexText,
@@ -15911,7 +15911,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NAZRIN2H] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNazrin2HPokedexText,
@@ -15924,7 +15924,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOGASA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKogasa1PokedexText,
@@ -15937,7 +15937,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOGASA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKogasa2NPokedexText,
@@ -15950,7 +15950,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOGASA2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKogasa2SPokedexText,
@@ -15963,7 +15963,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KOGASA2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKogasa2TPokedexText,
@@ -15976,7 +15976,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ICHIRIN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHIchirin1PokedexText,
@@ -15989,7 +15989,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ICHIRIN2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHIchirin2NPokedexText,
@@ -16002,7 +16002,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ICHIRIN2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHIchirin2DPokedexText,
@@ -16015,7 +16015,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_ICHIRIN2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHIchirin2TPokedexText,
@@ -16028,7 +16028,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MURASA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMurasa1PokedexText,
@@ -16041,7 +16041,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MURASA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMurasa2NPokedexText,
@@ -16054,7 +16054,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MURASA2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMurasa2APokedexText,
@@ -16067,7 +16067,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MURASA2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMurasa2DPokedexText,
@@ -16080,7 +16080,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHOU1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShou1PokedexText,
@@ -16093,7 +16093,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHOU2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShou2NPokedexText,
@@ -16106,7 +16106,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHOU2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShou2APokedexText,
@@ -16119,7 +16119,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SHOU2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHShou2TPokedexText,
@@ -16132,7 +16132,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_BYAKUREN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHByakuren1PokedexText,
@@ -16145,7 +16145,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_BYAKUREN2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHByakuren2NPokedexText,
@@ -16158,7 +16158,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_BYAKUREN2D] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHByakuren2DPokedexText,
@@ -16171,7 +16171,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_BYAKUREN2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHByakuren2TPokedexText,
@@ -16184,7 +16184,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NUE1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNue1PokedexText,
@@ -16197,7 +16197,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NUE2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNue2NPokedexText,
@@ -16210,7 +16210,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NUE2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNue2APokedexText,
@@ -16223,7 +16223,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_NUE2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHNue2TPokedexText,
@@ -16236,7 +16236,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_OONAMAZU] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHOonamazuPokedexText,
@@ -16249,7 +16249,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TENSOKU1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTensoku1PokedexText,
@@ -16262,7 +16262,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KASEN1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKasen1PokedexText,
@@ -16275,7 +16275,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_KASEN2] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHKasen2PokedexText,
@@ -16288,7 +16288,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TENMA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTenma1PokedexText,
@@ -16301,7 +16301,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TENMA2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTenma2NPokedexText,
@@ -16314,7 +16314,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TENMA2S] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTenma2SPokedexText,
@@ -16327,7 +16327,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SENDAI1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSendai1PokedexText,
@@ -16340,7 +16340,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SENDAI2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSendai2NPokedexText,
@@ -16353,7 +16353,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SENDAI2T] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSendai2TPokedexText,
@@ -16366,7 +16366,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TOKIKO1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTokiko1PokedexText,
@@ -16379,7 +16379,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TOKIKO2N] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTokiko2NPokedexText,
@@ -16392,7 +16392,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_TOKIKO2A] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHTokiko2APokedexText,
@@ -16405,7 +16405,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RINNOSUKE] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRinnosukePokedexText,
@@ -16418,7 +16418,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_AKYUU] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHAkyuuPokedexText,
@@ -16431,7 +16431,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MARIBEL] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMaribelPokedexText,
@@ -16444,7 +16444,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_RENKO] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHRenkoPokedexText,
@@ -16457,7 +16457,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_SUMIREKO] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHSumirekoPokedexText,
@@ -16470,7 +16470,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_MARISA1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHMarisa1PokedexText,
@@ -16483,7 +16483,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_REIMU1] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHReimu1PokedexText,
@@ -16496,7 +16496,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TH_REIMUCTC] =
     {
-        .categoryName = _("Touhou World"),
+        .categoryName = _("Eastern Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gTHReimuCtCPokedexText,
@@ -16509,7 +16509,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_ETC_ISAMI] =
     {
-        .categoryName = _("Sakaba World"),
+        .categoryName = _("Twilight Bar World"),
         .height = 150,
         .weight = 800,
         .description = gETCIsamiPokedexText,
@@ -16522,7 +16522,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_SH_VIVITR] =
     {
-        .categoryName = _("Seihou World"),
+        .categoryName = _("Western Utopian World"),
         .height = 150,
         .weight = 800,
         .description = gSHVIVITrPokedexText,
@@ -20227,7 +20227,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_ETC_CUREUNION2] =
     {
-        .categoryName = _("Pretty Cure World"),
+        .categoryName = _("Pretty Cure Lostbelt"),
         .height = 150,
         .weight = 800,
         .description = gETCCureUnion2PokedexText,
@@ -20396,7 +20396,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_ETC_DELAST] =
     {
-        .categoryName = _("Kamen Rider World"),
+        .categoryName = _("Kamen Rider Lostbelt"),
         .height = 150,
         .weight = 800,
         .description = gETCDeLastPokedexText,

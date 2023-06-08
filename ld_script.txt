@@ -1963,6 +1963,7 @@ SECTIONS {
         sound/songs/mus_yyyi_battle_02.o(.rodata);
         sound/songs/mus_yyyi_battle_02_test.o(.rodata);
         sound/songs/mus_yyyi_battle_04.o(.rodata);
+        sound/songs/mus_pkmn_pmd2_donteverforget.o(.rodata);
     } =0
 
     lib_rodata :

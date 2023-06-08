@@ -87,6 +87,7 @@ JohtoTwinriverCity_EventScript_Sign3::
 //	setmonmove 1, 2, MOVE_EXTREME_SPEED
 //	setmonmove 1, 3, MOVE_EARTHQUAKE
 	delay 30
+	settotemboost B_POSITION_PLAYER_LEFT, 6, 6, 6, 6, 6, 4, 4
 	trainerbattle_single TRAINER_TEST_7, JohtoTwinriverCity_Text_Sign3TrainerTestIntro, JohtoTwinriverCity_Text_Sign3TrainerTestDefeat, JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated, NO_MUSIC
 	releaseall
 	end

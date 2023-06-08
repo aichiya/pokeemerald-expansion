@@ -319,6 +319,8 @@ extern const u8 gText_ButtonMode[];
 
 extern const u8 gText_MaleSymbol[];
 extern const u8 gText_FemaleSymbol[];
+extern const u8 gText_YinSymbol[];
+extern const u8 gText_YangSymbol[];
 
 extern const u8 gText_SelectorArrow3[];
 extern const u8 gText_YesNo[];
@@ -620,6 +622,8 @@ extern const u8 gText_HealthboxNickname[];
 extern const u8 gText_HealthboxGender_None[];
 extern const u8 gText_HealthboxGender_Male[];
 extern const u8 gText_HealthboxGender_Female[];
+extern const u8 gText_HealthboxGender_Yin[];
+extern const u8 gText_HealthboxGender_Yang[];
 
 extern const u8 gText_99TimesPlus[];
 extern const u8 gText_1MinutePlus[];

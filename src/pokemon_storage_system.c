@@ -6904,7 +6904,7 @@ void SetMonFormPSS(struct BoxPokemon *boxMon)
 static void SetDisplayMonData(void *pokemon, u8 mode)
 {
     u8 *txtPtr;
-    u16 gender;
+    u16 gender, speciesFlag;
     bool8 sanityIsBadEgg;
 
     sStorage->displayMonItemId = ITEM_NONE;
@@ -6994,6 +6994,8 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
         *(txtPtr)++ = CHAR_SLASH;
         StringCopyPadded(txtPtr, gSpeciesNames[sStorage->displayMonSpecies], CHAR_SPACE, 5);
 
+        speciesFlag = gSpeciesInfo[sStorage->displayMonSpecies].flags;
+
         txtPtr = sStorage->displayMonGenderLvlText;
         *(txtPtr)++ = EXT_CTRL_CODE_BEGIN;
         *(txtPtr)++ = EXT_CTRL_CODE_COLOR_HIGHLIGHT_SHADOW;
@@ -7003,13 +7005,19 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
             *(txtPtr)++ = TEXT_COLOR_RED;
             *(txtPtr)++ = TEXT_COLOR_WHITE;
             *(txtPtr)++ = TEXT_COLOR_LIGHT_RED;
-            *(txtPtr)++ = CHAR_MALE;
+            if (speciesFlag & SPECIES_FLAG_TOUHOU_PUPPET)
+                *(txtPtr)++ = CHAR_6;
+            else
+                *(txtPtr)++ = CHAR_MALE;
             break;
         case MON_FEMALE:
             *(txtPtr)++ = TEXT_COLOR_GREEN;
             *(txtPtr)++ = TEXT_COLOR_WHITE;
             *(txtPtr)++ = TEXT_COLOR_LIGHT_GREEN;
-            *(txtPtr)++ = CHAR_FEMALE;
+            if (speciesFlag & SPECIES_FLAG_TOUHOU_PUPPET)
+                *(txtPtr)++ = CHAR_9;
+            else
+                *(txtPtr)++ = CHAR_FEMALE;
             break;
         default:
             *(txtPtr)++ = TEXT_COLOR_DARK_GRAY;

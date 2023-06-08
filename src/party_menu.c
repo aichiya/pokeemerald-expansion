@@ -2305,6 +2305,7 @@ static void DisplayPartyPokemonGenderNidoranCheck(struct Pokemon *mon, struct Pa
 static void DisplayPartyPokemonGender(u8 gender, u16 species, u8 *nickname, struct PartyMenuBox *menuBox)
 {
     u8 palNum = GetWindowAttribute(menuBox->windowId, WINDOW_PALETTE_NUM) * 16;
+    u16 speciesFlag = gSpeciesInfo[species].flags;
 
     if (species == SPECIES_NONE)
         return;
@@ -2315,12 +2316,18 @@ static void DisplayPartyPokemonGender(u8 gender, u16 species, u8 *nickname, stru
     case MON_MALE:
         LoadPalette(GetPartyMenuPalBufferPtr(sGenderMalePalIds[0]), sGenderPalOffsets[0] + palNum, PLTT_SIZEOF(1));
         LoadPalette(GetPartyMenuPalBufferPtr(sGenderMalePalIds[1]), sGenderPalOffsets[1] + palNum, PLTT_SIZEOF(1));
-        DisplayPartyPokemonBarDetail(menuBox->windowId, gText_MaleSymbol, 2, &menuBox->infoRects->dimensions[8]);
+        if (speciesFlag & SPECIES_FLAG_TOUHOU_PUPPET)
+            DisplayPartyPokemonBarDetail(menuBox->windowId, gText_YinSymbol, 2, &menuBox->infoRects->dimensions[8]);
+        else
+            DisplayPartyPokemonBarDetail(menuBox->windowId, gText_MaleSymbol, 2, &menuBox->infoRects->dimensions[8]);
         break;
     case MON_FEMALE:
         LoadPalette(GetPartyMenuPalBufferPtr(sGenderFemalePalIds[0]), sGenderPalOffsets[0] + palNum, PLTT_SIZEOF(1));
         LoadPalette(GetPartyMenuPalBufferPtr(sGenderFemalePalIds[1]), sGenderPalOffsets[1] + palNum, PLTT_SIZEOF(1));
-        DisplayPartyPokemonBarDetail(menuBox->windowId, gText_FemaleSymbol, 2, &menuBox->infoRects->dimensions[8]);
+        if (speciesFlag & SPECIES_FLAG_TOUHOU_PUPPET)
+            DisplayPartyPokemonBarDetail(menuBox->windowId, gText_YangSymbol, 2, &menuBox->infoRects->dimensions[8]);
+        else
+            DisplayPartyPokemonBarDetail(menuBox->windowId, gText_FemaleSymbol, 2, &menuBox->infoRects->dimensions[8]);
         break;
     }
 }

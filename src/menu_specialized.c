@@ -911,7 +911,7 @@ s32 GetBoxOrPartyMonData(u16 boxId, u16 monId, s32 request, u8 *dst)
 // Gets the name/gender/level string for the condition menu
 static u8 *GetConditionMenuMonString(u8 *dst, u16 boxId, u16 monId)
 {
-    u16 box, mon, species, level, gender;
+    u16 box, mon, species, level, gender, speciesFlag;
     struct BoxPokemon *boxMon;
     u8 *str;
 
@@ -942,6 +942,8 @@ static u8 *GetConditionMenuMonString(u8 *dst, u16 boxId, u16 monId)
     if ((species == SPECIES_NIDORAN_F || species == SPECIES_NIDORAN_M) && !StringCompare(dst, gSpeciesNames[species]))
         gender = MON_GENDERLESS;
 
+    speciesFlag = gSpeciesInfo[species].flags;
+
     for (str = dst; *str != EOS; str++)
         ;
 
@@ -961,7 +963,10 @@ static u8 *GetConditionMenuMonString(u8 *dst, u16 boxId, u16 monId)
         *(str++) = EXT_CTRL_CODE_BEGIN;
         *(str++) = EXT_CTRL_CODE_SHADOW;
         *(str++) = TEXT_COLOR_LIGHT_RED;
-        *(str++) = CHAR_MALE;
+        if (speciesFlag & SPECIES_FLAG_TOUHOU_PUPPET)
+            *(str++) = CHAR_6;
+        else
+            *(str++) = CHAR_MALE;
         break;
     case MON_FEMALE:
         *(str++) = EXT_CTRL_CODE_BEGIN;
@@ -970,7 +975,10 @@ static u8 *GetConditionMenuMonString(u8 *dst, u16 boxId, u16 monId)
         *(str++) = EXT_CTRL_CODE_BEGIN;
         *(str++) = EXT_CTRL_CODE_SHADOW;
         *(str++) = TEXT_COLOR_LIGHT_GREEN;
-        *(str++) = CHAR_FEMALE;
+        if (speciesFlag & SPECIES_FLAG_TOUHOU_PUPPET)
+            *(str++) = CHAR_9;
+        else
+            *(str++) = CHAR_FEMALE;
         break;
     }
 

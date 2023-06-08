@@ -1627,7 +1627,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .expYield = 113,
         .evYield_HP        = 2,
         .itemRare = ITEM_MOON_STONE,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = PERCENT_FEMALE(50),
         .eggCycles    = 1,
         .friendship = 140,
         .growthRate = GROWTH_FAST,
@@ -1658,7 +1658,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .expYield = 217,
         .evYield_HP        = 3,
         .itemRare = ITEM_MOON_STONE,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = PERCENT_FEMALE(50),
         .eggCycles    = 1,
         .friendship = 140,
         .growthRate = GROWTH_FAST,
@@ -26077,7 +26077,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_SpDefense = 0,
         .itemCommon   = ITEM_EXP_CANDY_S,
         .itemRare     = ITEM_EXP_CANDY_L,
-        .genderRatio  = MON_GENDERLESS,
+        .genderRatio  = PERCENT_FEMALE(50),
         .eggCycles    = 1,
         .friendship   = 70,
         .growthRate   = GROWTH_MEDIUM_FAST,
@@ -26085,7 +26085,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .abilities    = {ABILITY_VITAL_SPIRIT, ABILITY_GUTS, ABILITY_NONE},
         .bodyColor    = BODY_COLOR_YELLOW,
         .noFlip       = FALSE,
-
+        .flags        = SPECIES_FLAG_TOUHOU_PUPPET,
     },
 
 
@@ -26108,7 +26108,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_SpDefense = 0,
         .itemCommon   = ITEM_EXP_CANDY_S,
         .itemRare     = ITEM_EXP_CANDY_L,
-        .genderRatio  = MON_GENDERLESS,
+        .genderRatio  = PERCENT_FEMALE(50),
         .eggCycles    = 1,
         .friendship   = 70,
         .growthRate   = GROWTH_MEDIUM_FAST,
@@ -26116,7 +26116,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .abilities    = {ABILITY_SPEED_BOOST, ABILITY_GUTS, ABILITY_NONE},
         .bodyColor    = BODY_COLOR_YELLOW,
         .noFlip       = FALSE,
-
+        .flags        = SPECIES_FLAG_TOUHOU_PUPPET,
     },
 
 
@@ -26139,7 +26139,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_SpDefense = 0,
         .itemCommon   = ITEM_EXP_CANDY_S,
         .itemRare     = ITEM_EXP_CANDY_L,
-        .genderRatio  = MON_GENDERLESS,
+        .genderRatio  = PERCENT_FEMALE(50),
         .eggCycles    = 1,
         .friendship   = 70,
         .growthRate   = GROWTH_MEDIUM_FAST,
@@ -26147,7 +26147,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .abilities    = {ABILITY_VITAL_SPIRIT, ABILITY_GUTS, ABILITY_NONE},
         .bodyColor    = BODY_COLOR_GRAY,
         .noFlip       = FALSE,
-
+        .flags        = SPECIES_FLAG_TOUHOU_PUPPET,
     },
 
 
@@ -26170,7 +26170,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_SpDefense = 0,
         .itemCommon   = ITEM_EXP_CANDY_S,
         .itemRare     = ITEM_EXP_CANDY_L,
-        .genderRatio  = MON_GENDERLESS,
+        .genderRatio  = PERCENT_FEMALE(50),
         .eggCycles    = 1,
         .friendship   = 70,
         .growthRate   = GROWTH_MEDIUM_FAST,
@@ -26178,7 +26178,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .abilities    = {ABILITY_VITAL_SPIRIT, ABILITY_GUTS, ABILITY_NONE},
         .bodyColor    = BODY_COLOR_BROWN,
         .noFlip       = FALSE,
-
+        .flags        = SPECIES_FLAG_TOUHOU_PUPPET,
     },
 
 

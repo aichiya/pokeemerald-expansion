@@ -2110,6 +2110,8 @@ static void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
     u32 windowId, spriteTileNum, species;
     u8 *windowTileData;
     u8 gender;
+    u16 speciesFlag;
+
     struct Pokemon *illusionMon = GetIllusionMonPtr(gSprites[healthboxSpriteId].hMain_Battler);
     if (illusionMon != NULL)
         mon = illusionMon;
@@ -2121,6 +2123,7 @@ static void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
 
     gender = GetMonGender(mon);
     species = GetMonData(mon, MON_DATA_SPECIES);
+    speciesFlag = gSpeciesInfo[species].flags;
 
     if ((species == SPECIES_NIDORAN_F || species == SPECIES_NIDORAN_M) && StringCompare(nickname, gSpeciesNames[species]) == 0)
         gender = 100;
@@ -2134,11 +2137,17 @@ static void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
         windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(gDisplayedStringBattle, 0, 3, 2, &windowId);
         break;
     case MON_MALE:
-        StringCopy(ptr, gText_HealthboxGender_Male);
+        if (speciesFlag & SPECIES_FLAG_TOUHOU_PUPPET)
+            StringCopy(ptr, gText_HealthboxGender_Yin);
+        else
+            StringCopy(ptr, gText_HealthboxGender_Male);
         windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(gDisplayedStringBattle, 0, 3, 2, &windowId);
         break;
     case MON_FEMALE:
-        StringCopy(ptr, gText_HealthboxGender_Female);
+        if (speciesFlag & SPECIES_FLAG_TOUHOU_PUPPET)
+            StringCopy(ptr, gText_HealthboxGender_Yang);
+        else
+            StringCopy(ptr, gText_HealthboxGender_Female);
         windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(gDisplayedStringBattle, 0, 3, 2, &windowId);
         break;
     }

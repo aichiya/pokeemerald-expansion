@@ -1964,6 +1964,11 @@ SECTIONS {
         sound/songs/mus_yyyi_battle_02_test.o(.rodata);
         sound/songs/mus_yyyi_battle_04.o(.rodata);
         sound/songs/mus_pkmn_pmd2_donteverforget.o(.rodata);
+        sound/songs/mus_pkmn_dp_vs_dialga_palkia.o(.rodata);
+        sound/songs/mus_pkmn_dp_vs_trainer.o(.rodata);
+        sound/songs/mus_pkmn_dp_vs_wild.o(.rodata);
+        sound/songs/mus_pkmn_pl_vs_giratina.o(.rodata);
+        sound/songs/mus_th_ctc_gfree.o(.rodata);
     } =0
 
     lib_rodata :

@@ -6737,3 +6737,207 @@ Cry_THZombiefairy::
     .incbin "sound/direct_sound_samples/cries_add/cry_th_zombie_fairy.bin"
 
 @ Touhou Puppet Play Cries End // Touhou Puppet Play Cries End
+
+@ Start song sample CtC G Free
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree000::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_000.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree001::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_001.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree002::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_002.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree003::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_003.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree004::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_004.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree005::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_005.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree006::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_006.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree007::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_007.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree008::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_008.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree009::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_009.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree010::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_010.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree011::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_011.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree012::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_012.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree013::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_013.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree014::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_014.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree015::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_015.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree016::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_016.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree017::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_017.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree018::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_018.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree019::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_019.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree020::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_020.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree021::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_021.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree022::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_022.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree023::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_023.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree024::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_024.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree025::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_025.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree026::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_026.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree027::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_027.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree028::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_028.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree029::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_029.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree030::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_030.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree031::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_031.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree032::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_032.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree033::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_033.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree034::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_034.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree035::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_035.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree036::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_036.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree037::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_037.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree038::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_038.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree039::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_039.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree040::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_040.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree041::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_041.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree042::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_042.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree043::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_043.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree044::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_044.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree045::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_045.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree046::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_046.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree047::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_047.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree048::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_048.bin"
+
+    .align 2
+DirectSoundWaveData_SongSampleTHCtCGFree049::
+    .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_049.bin"
+
+@ End song sample CtC G Free

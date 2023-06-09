@@ -28,6 +28,7 @@ EventFirstDream_EventScript_EncounterTsukasaAndMon::
 	setflag FLAG_BADGE06_GET
 	setflag FLAG_BADGE07_GET
 	setflag FLAG_BADGE08_GET
+	setflag FLAG_SYS_B_DASH
 	setobjectxyperm LOCALID_TSUKASA, 0x15, 0x1b
 	addobject LOCALID_TSUKASA
 	applymovement LOCALID_TSUKASA, EventFirstDream_Movement_Tsukasa1

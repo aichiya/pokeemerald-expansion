@@ -162,6 +162,7 @@ mus_pkmn_gsc_vs_wild1_1:
 	.byte		N48   , Ds4 , v104
 	.byte	W42
 @ 010   ----------------------------------------
+mus_pkmn_gsc_vs_wild1_1_010:
 	.byte	W06
 	.byte		N36   , Dn3 , v100
 	.byte	W36
@@ -459,6 +460,8 @@ mus_pkmn_gsc_vs_wild1_1_011:
 	.byte		N90   , Gn3 
 	.byte	W90
 @ 038   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pkmn_gsc_vs_wild1_1_010
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.2) ****************@
@@ -599,6 +602,7 @@ mus_pkmn_gsc_vs_wild1_2:
 	.byte		N48   , Gs4 
 	.byte	W42
 @ 010   ----------------------------------------
+mus_pkmn_gsc_vs_wild1_2_010:
 	.byte	W06
 	.byte		N36   , Gn3 
 	.byte	W36
@@ -841,6 +845,8 @@ mus_pkmn_gsc_vs_wild1_2_013:
 	.byte		N90   , Bn3 
 	.byte	W90
 @ 038   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pkmn_gsc_vs_wild1_2_010
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.3) ****************@
@@ -1017,6 +1023,7 @@ mus_pkmn_gsc_vs_wild1_3_004:
 	.byte		        Ds3 
 	.byte	W06
 @ 010   ----------------------------------------
+mus_pkmn_gsc_vs_wild1_3_010:
 	.byte	PATT
 	 .word	mus_pkmn_gsc_vs_wild1_3_002
 @ 011   ----------------------------------------
@@ -1287,6 +1294,8 @@ mus_pkmn_gsc_vs_wild1_3_020:
 	.byte		N06   , En3 
 	.byte	W06
 @ 038   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pkmn_gsc_vs_wild1_3_010
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.4) ****************@
@@ -1549,6 +1558,7 @@ mus_pkmn_gsc_vs_wild1_4_002:
 	.byte		N44   , Gs1 , v104
 	.byte	W42
 @ 010   ----------------------------------------
+mus_pkmn_gsc_vs_wild1_4_010:
 	.byte	PATT
 	 .word	mus_pkmn_gsc_vs_wild1_4_002
 @ 011   ----------------------------------------
@@ -1925,6 +1935,8 @@ mus_pkmn_gsc_vs_wild1_4_018:
 	.byte		N03   , En1 
 	.byte	W03
 @ 038   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pkmn_gsc_vs_wild1_4_010
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.5) ****************@
@@ -2109,6 +2121,7 @@ mus_pkmn_gsc_vs_wild1_5:
 	.byte		N02   
 	.byte	W06
 @ 010   ----------------------------------------
+mus_pkmn_gsc_vs_wild1_5_010:
 	.byte		N02   
 	.byte	W06
 	.byte		N02   
@@ -2405,6 +2418,8 @@ mus_pkmn_gsc_vs_wild1_5_017:
 	.byte		N05   , Fn5 
 	.byte	W06
 @ 038   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pkmn_gsc_vs_wild1_5_010
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.6) ****************@
@@ -2877,6 +2892,8 @@ mus_pkmn_gsc_vs_wild1_6_035:
 	.byte		N04   
 	.byte	W06
 @ 038   ----------------------------------------
+	.byte	GOTO
+	.word	mus_pkmn_gsc_vs_wild1_6_010
 	.byte	FINE
 
 @******************************************************@

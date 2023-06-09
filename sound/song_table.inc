@@ -1329,6 +1329,11 @@ gSongTable::
 	song mus_yyyi_battle_02_test, 0, 0
 	song mus_yyyi_battle_04, 0, 0
 	song mus_pkmn_pmd2_donteverforget, 0, 0
+	song mus_pkmn_dp_vs_dialga_palkia, 0, 0
+	song mus_pkmn_dp_vs_trainer, 0, 0
+	song mus_pkmn_dp_vs_wild, 0, 0
+	song mus_pkmn_pl_vs_giratina, 0, 0
+	song mus_th_ctc_gfree, 0, 0
 
 	.align 2
 dummy_song_header:

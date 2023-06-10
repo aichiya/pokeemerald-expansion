@@ -448,7 +448,7 @@ const struct PokedexEntry gPokedexEntries[] =
     {
         .categoryName = _("Pokémon World"),
         .height = 6,
-        .weight = 99,
+        .weight = 250,
         .description = gVulpixPokedexText,
         .pokemonScale = 542,
         .pokemonOffset = 19,
@@ -460,7 +460,7 @@ const struct PokedexEntry gPokedexEntries[] =
     {
         .categoryName = _("Pokémon World"),
         .height = 11,
-        .weight = 199,
+        .weight = 500,
         .description = gNinetalesPokedexText,
         .pokemonScale = 339,
         .pokemonOffset = 10,
@@ -1804,7 +1804,7 @@ const struct PokedexEntry gPokedexEntries[] =
     {
         .categoryName = _("Pokémon World"),
         .height = 20,
-        .weight = 1220,
+        .weight = 2100,
         .description = gMewtwoPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -1816,7 +1816,7 @@ const struct PokedexEntry gPokedexEntries[] =
     {
         .categoryName = _("Pokémon World"),
         .height = 4,
-        .weight = 40,
+        .weight = 2100,
         .description = gMewPokedexText,
         .pokemonScale = 457,
         .pokemonOffset = -2,
@@ -8432,7 +8432,7 @@ const struct PokedexEntry gPokedexEntries[] =
     {
         .categoryName = _("Pokémon World"),
         .height = 10,
-        .weight = 235,
+        .weight = 1000,
         .description = gSylveonPokedexText,
         .pokemonScale = 356,
         .pokemonOffset = 17,
@@ -20254,8 +20254,8 @@ const struct PokedexEntry gPokedexEntries[] =
     [NATIONAL_DEX_ETC_EMESGESEY] =
     {
         .categoryName = _("Pokémon World (?)"),
-        .height = 150,
-        .weight = 800,
+        .height = 11,
+        .weight = 2100,
         .description = gETCEmesgeseyPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,

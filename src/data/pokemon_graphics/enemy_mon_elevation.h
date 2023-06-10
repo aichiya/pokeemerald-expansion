@@ -170,6 +170,8 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_REGIELEKI] = 8,
     [SPECIES_REGIDRAGO] = 5,
 */
+    [SPECIES_SH_VIVITR] = 5,
+
     // Megas
     [SPECIES_BEEDRILL_MEGA] = 5,
     [SPECIES_PIDGEOT_MEGA] = 8,
@@ -292,4 +294,5 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_POLTEAGEIST_ANTIQUE] = 12,
     [SPECIES_ETERNATUS_ETERNAMAX] = 13,
 */
+    [SPECIES_SH_VIVITA] = 5,
 };

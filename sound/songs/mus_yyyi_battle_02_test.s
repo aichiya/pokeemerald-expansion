@@ -1438,9 +1438,9 @@ mus_yyyi_battle_02_test_3_024:
 mus_yyyi_battle_02_test_4:
 	.byte	KEYSH , mus_yyyi_battle_02_test_key+0
 @ 000   ----------------------------------------
-mus_yyyi_battle_02_test_4_001:
 	.byte	W48
 @ 001   ----------------------------------------
+mus_yyyi_battle_02_test_4_001:
 	.byte	W96
 @ 002   ----------------------------------------
 	.byte	W96

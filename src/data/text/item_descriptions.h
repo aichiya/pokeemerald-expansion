@@ -3483,9 +3483,9 @@ static const u8 sGracideaDesc[] = _(
     "token of gratitude.");
 
 static const u8 sRevealGlassDesc[] = _(
-    "This glass returns\n"
-    "a Pokémon back to\n"
-    "its original form.");
+    "Makes certain FRAGMON\n"
+    "transform into their\n"
+    "another dimension form.");
 
 static const u8 sDNASplicersDesc[] = _(
     "Splicer that fuses\n"

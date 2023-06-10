@@ -1301,7 +1301,10 @@
 
 #define MUS_TH_CTC_GFREE 1332
 
-#define END_MUS 					MUS_TH_CTC_GFREE
+#define MUS_PKMN_XY_VS_WILD 1333
+#define MUS_PKMN_USUM_VS_WILD 1334
+
+#define END_MUS 					MUS_PKMN_USUM_VS_WILD
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

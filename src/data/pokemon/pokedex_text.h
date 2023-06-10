@@ -10463,10 +10463,10 @@ const u8 gETCMissingnoPokedexText[] = _(
 
 
 const u8 gETCEmesgeseyPokedexText[] = _(
-    "SPECIES_ETC_EMESGESEY description line 1\n"
-    "SPECIES_ETC_EMESGESEY description line 2\n"
-    "SPECIES_ETC_EMESGESEY description line 3\n"
-    "SPECIES_ETC_EMESGESEY description line 4\n");
+    "A species from another dimension that\n"
+    "is awfully similar to Chansey physically.\n"
+    "It is unknown why Emesgesey always\n"
+    "tries to give 'Mi Goreng Instant'.\n");
 
 
 const u8 gETCShounenPokedexText[] = _(

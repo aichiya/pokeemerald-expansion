@@ -203,15 +203,16 @@ JohtoTwinriverCity_EventScript_Sign6::
 	delay 30
 	additem ITEM_MEGA_RING, 1
 	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_REVEAL_GLASS, 1
 	additem ITEM_MASTER_BALL, 10
 	setvar VAR_TEMP_1, 0
-	givemon SPECIES_TH_ALICE2N, 70, ITEM_DIANCITE
+	givemon SPECIES_MOE_MEW, 70, ITEM_MEWNIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
 	setmonmove 0, 0, MOVE_PSYCHIC
-	setmonmove 0, 1, MOVE_BEHEMOTH_BLADE
-	setmonmove 0, 2, MOVE_ASTRAL_BARRAGE
-	setmonmove 0, 3, MOVE_LIGHT_OF_RUIN
+	setmonmove 0, 1, MOVE_EARTH_POWER
+	setmonmove 0, 2, MOVE_MOONBLAST
+	setmonmove 0, 3, MOVE_MOONGEIST_BEAM
 	delay 30
 	playmoncry SPECIES_TH_ALICE2N, CRY_MODE_ENCOUNTER
 	waitmoncry

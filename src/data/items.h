@@ -9076,7 +9076,7 @@ const struct Item gItems[] =
 
     [ITEM_REVEAL_GLASS] =
     {
-        .name = _("Reveal Glass"),
+        .name = _("Moefy Mirror"),
         .itemId = ITEM_REVEAL_GLASS,
         .price = 0,
         .description = sRevealGlassDesc,

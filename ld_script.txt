@@ -1971,6 +1971,7 @@ SECTIONS {
         sound/songs/mus_th_ctc_gfree.o(.rodata);
         sound/songs/mus_pkmn_xy_vs_wild.o(.rodata);
         sound/songs/mus_pkmn_usum_vs_wild.o(.rodata);
+        sound/songs/mus_pkmn_swsh_vs_wild.o(.rodata);
     } =0
 
     lib_rodata :

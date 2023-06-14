@@ -1336,6 +1336,7 @@ gSongTable::
 	song mus_th_ctc_gfree, 0, 0
 	song mus_pkmn_xy_vs_wild, 0, 0
 	song mus_pkmn_usum_vs_wild, 0, 0
+	song mus_pkmn_swsh_vs_wild, 0, 0
 
 	.align 2
 dummy_song_header:

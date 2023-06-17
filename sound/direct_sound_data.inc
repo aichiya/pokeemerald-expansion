@@ -1919,6 +1919,7 @@ Cry_Latias::
 	.align 2
 Cry_Latios::
 	.incbin "sound/direct_sound_samples/cries/latios.bin"
+*/
 
 	.align 2
 Cry_Kyogre::
@@ -1928,6 +1929,7 @@ Cry_Kyogre::
 Cry_Groudon::
 	.incbin "sound/direct_sound_samples/cries/groudon.bin"
 
+/*
 	.align 2
 Cry_Rayquaza::
 	.incbin "sound/direct_sound_samples/cries/rayquaza.bin"
@@ -3009,6 +3011,7 @@ Cry_Tornadus::
 	.align 2
 Cry_Thundurus::
 	.incbin "sound/direct_sound_samples/cries/thundurus.bin"
+*/
 
 	.align 2
 Cry_Reshiram::
@@ -3017,6 +3020,7 @@ Cry_Reshiram::
 	.align 2
 Cry_Zekrom::
 	.incbin "sound/direct_sound_samples/cries/zekrom.bin"
+/*
 
 	.align 2
 Cry_Landorus::
@@ -3025,6 +3029,7 @@ Cry_Landorus::
 	.align 2
 Cry_Kyurem::
 	.incbin "sound/direct_sound_samples/cries/kyurem.bin"
+*/
 
 	.align 2
 Cry_Keldeo::
@@ -3033,6 +3038,7 @@ Cry_Keldeo::
 	.align 2
 Cry_Meloetta::
 	.incbin "sound/direct_sound_samples/cries/meloetta.bin"
+/*
 
 	.align 2
 Cry_Genesect::
@@ -3313,6 +3319,7 @@ Cry_Noibat::
 	.align 2
 Cry_Noivern::
 	.incbin "sound/direct_sound_samples/cries/noivern.bin"
+*/
 
 	.align 2
 Cry_Xerneas::
@@ -3321,6 +3328,7 @@ Cry_Xerneas::
 	.align 2
 Cry_Yveltal::
 	.incbin "sound/direct_sound_samples/cries/yveltal.bin"
+/*
 
 	.align 2
 Cry_Zygarde::
@@ -3621,6 +3629,7 @@ Cry_Cosmog::
 	.align 2
 Cry_Cosmoem::
 	.incbin "sound/direct_sound_samples/cries/cosmoem.bin"
+*/
 
 	.align 2
 Cry_Solgaleo::
@@ -3629,6 +3638,7 @@ Cry_Solgaleo::
 	.align 2
 Cry_Lunala::
 	.incbin "sound/direct_sound_samples/cries/lunala.bin"
+/*
 
 	.align 2
 Cry_Nihilego::
@@ -4344,13 +4354,9 @@ Cry_SlowpokeGalarian::
 
 .if P_GEN_4_POKEMON == TRUE
 
-/*
-
 	.align 2
 Cry_ShayminSky::
 	.incbin "sound/direct_sound_samples/cries/shaymin_sky.bin"
-
-*/
 
 .endif
 
@@ -4477,6 +4483,7 @@ Cry_IndeedeeFemale::
 	.align 2
 Cry_MorpekoHangry::
 	.incbin "sound/direct_sound_samples/cries/morpeko_hangry.bin"
+*/
 
 	.align 2
 Cry_ZacianCrownedSword::
@@ -4485,6 +4492,7 @@ Cry_ZacianCrownedSword::
 	.align 2
 Cry_ZamazentaCrownedShield::
 	.incbin "sound/direct_sound_samples/cries/zamazenta_crowned_shield.bin"
+/*
 
 	.align 2
 Cry_EternatusEternamax::

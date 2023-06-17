@@ -1542,32 +1542,32 @@ gCryTable::
 	cry Cry_Unown       @ SPECIES_PC_CUREHEART3
 	cry Cry_Unown       @ SPECIES_ETC_CUREUNION3
 	cry Cry_Unown       @ SPECIES_ETC_DECADE3
-	cry Cry_Unown       @ SPECIES_ETC_RED
-	cry Cry_Unown       @ SPECIES_ETC_ETHAN
-	cry Cry_Unown       @ SPECIES_ETC_BRENDAN
-	cry Cry_Unown       @ SPECIES_ETC_LUCAS
-	cry Cry_Unown       @ SPECIES_ETC_HILBERT
-	cry Cry_Unown       @ SPECIES_ETC_NATE
-	cry Cry_Unown       @ SPECIES_ETC_CALEM
-	cry Cry_Unown       @ SPECIES_ETC_ELIO
-	cry Cry_Unown       @ SPECIES_ETC_CHASE
-	cry Cry_Unown       @ SPECIES_ETC_VICTOR
-	cry Cry_Unown       @ SPECIES_ETC_AKARI
+	cry Cry_Charizard       @ SPECIES_ETC_RED
+	cry Cry_HoOh       @ SPECIES_ETC_ETHAN
+	cry Cry_Groudon       @ SPECIES_ETC_BRENDAN
+	cry Cry_Dialga       @ SPECIES_ETC_LUCAS
+	cry Cry_Zekrom       @ SPECIES_ETC_HILBERT
+	cry Cry_Keldeo       @ SPECIES_ETC_NATE
+	cry Cry_Xerneas       @ SPECIES_ETC_CALEM
+	cry Cry_Solgaleo       @ SPECIES_ETC_ELIO
+	cry Cry_Eevee       @ SPECIES_ETC_CHASE
+	cry Cry_ZacianCrownedSword       @ SPECIES_ETC_VICTOR
+	cry Cry_ShayminSky       @ SPECIES_ETC_AKARI
 	cry Cry_Unown       @ SPECIES_ETC_FLORIAN
-	cry Cry_Unown       @ SPECIES_ETC_WES
-	cry Cry_Unown       @ SPECIES_ETC_MICHAEL
-	cry Cry_Unown       @ SPECIES_ETC_LEAF
-	cry Cry_Unown       @ SPECIES_ETC_LYRA
-	cry Cry_Unown       @ SPECIES_ETC_KRIS
-	cry Cry_Unown       @ SPECIES_ETC_MAY
-	cry Cry_Unown       @ SPECIES_ETC_DAWN
-	cry Cry_Unown       @ SPECIES_ETC_HILDA
-	cry Cry_Unown       @ SPECIES_ETC_ROSA
-	cry Cry_Unown       @ SPECIES_ETC_SERENA
-	cry Cry_Unown       @ SPECIES_ETC_SELENE
-	cry Cry_Unown       @ SPECIES_ETC_ELAINE
-	cry Cry_Unown       @ SPECIES_ETC_GLORIA
-	cry Cry_Unown       @ SPECIES_ETC_REI
+	cry Cry_Umbreon       @ SPECIES_ETC_WES
+	cry Cry_Espeon       @ SPECIES_ETC_MICHAEL
+	cry Cry_Venusaur       @ SPECIES_ETC_LEAF
+	cry Cry_Lugia       @ SPECIES_ETC_LYRA
+	cry Cry_Suicune       @ SPECIES_ETC_KRIS
+	cry Cry_Kyogre       @ SPECIES_ETC_MAY
+	cry Cry_Palkia       @ SPECIES_ETC_DAWN
+	cry Cry_Reshiram       @ SPECIES_ETC_HILDA
+	cry Cry_Meloetta       @ SPECIES_ETC_ROSA
+	cry Cry_Yveltal       @ SPECIES_ETC_SERENA
+	cry Cry_Lunala       @ SPECIES_ETC_SELENE
+	cry Cry_Pikachu       @ SPECIES_ETC_ELAINE
+	cry Cry_ZamazentaCrownedShield       @ SPECIES_ETC_GLORIA
+	cry Cry_Giratina       @ SPECIES_ETC_REI
 	cry Cry_Unown       @ SPECIES_ETC_JULIANA
 	cry Cry_Unown       @ SPECIES_DUMMY_REGULAR
 	cry Cry_Unown       @ SPECIES_DUMMY_SHEDINJA
@@ -3227,32 +3227,32 @@ gCryTable_Reverse::
 	cry_reverse Cry_Unown       @ SPECIES_PC_CUREHEART3
 	cry_reverse Cry_Unown       @ SPECIES_ETC_CUREUNION3
 	cry_reverse Cry_Unown       @ SPECIES_ETC_DECADE3
-	cry_reverse Cry_Unown       @ SPECIES_ETC_RED
-	cry_reverse Cry_Unown       @ SPECIES_ETC_ETHAN
-	cry_reverse Cry_Unown       @ SPECIES_ETC_BRENDAN
-	cry_reverse Cry_Unown       @ SPECIES_ETC_LUCAS
-	cry_reverse Cry_Unown       @ SPECIES_ETC_HILBERT
-	cry_reverse Cry_Unown       @ SPECIES_ETC_NATE
-	cry_reverse Cry_Unown       @ SPECIES_ETC_CALEM
-	cry_reverse Cry_Unown       @ SPECIES_ETC_ELIO
-	cry_reverse Cry_Unown       @ SPECIES_ETC_CHASE
-	cry_reverse Cry_Unown       @ SPECIES_ETC_VICTOR
-	cry_reverse Cry_Unown       @ SPECIES_ETC_AKARI
+	cry_reverse Cry_Charizard       @ SPECIES_ETC_RED
+	cry_reverse Cry_HoOh       @ SPECIES_ETC_ETHAN
+	cry_reverse Cry_Groudon       @ SPECIES_ETC_BRENDAN
+	cry_reverse Cry_Dialga       @ SPECIES_ETC_LUCAS
+	cry_reverse Cry_Zekrom       @ SPECIES_ETC_HILBERT
+	cry_reverse Cry_Keldeo       @ SPECIES_ETC_NATE
+	cry_reverse Cry_Xerneas       @ SPECIES_ETC_CALEM
+	cry_reverse Cry_Solgaleo       @ SPECIES_ETC_ELIO
+	cry_reverse Cry_Eevee       @ SPECIES_ETC_CHASE
+	cry_reverse Cry_ZacianCrownedSword       @ SPECIES_ETC_VICTOR
+	cry_reverse Cry_ShayminSky       @ SPECIES_ETC_AKARI
 	cry_reverse Cry_Unown       @ SPECIES_ETC_FLORIAN
-	cry_reverse Cry_Unown       @ SPECIES_ETC_WES
-	cry_reverse Cry_Unown       @ SPECIES_ETC_MICHAEL
-	cry_reverse Cry_Unown       @ SPECIES_ETC_LEAF
-	cry_reverse Cry_Unown       @ SPECIES_ETC_LYRA
-	cry_reverse Cry_Unown       @ SPECIES_ETC_KRIS
-	cry_reverse Cry_Unown       @ SPECIES_ETC_MAY
-	cry_reverse Cry_Unown       @ SPECIES_ETC_DAWN
-	cry_reverse Cry_Unown       @ SPECIES_ETC_HILDA
-	cry_reverse Cry_Unown       @ SPECIES_ETC_ROSA
-	cry_reverse Cry_Unown       @ SPECIES_ETC_SERENA
-	cry_reverse Cry_Unown       @ SPECIES_ETC_SELENE
-	cry_reverse Cry_Unown       @ SPECIES_ETC_ELAINE
-	cry_reverse Cry_Unown       @ SPECIES_ETC_GLORIA
-	cry_reverse Cry_Unown       @ SPECIES_ETC_REI
+	cry_reverse Cry_Umbreon       @ SPECIES_ETC_WES
+	cry_reverse Cry_Espeon       @ SPECIES_ETC_MICHAEL
+	cry_reverse Cry_Venusaur       @ SPECIES_ETC_LEAF
+	cry_reverse Cry_Lugia       @ SPECIES_ETC_LYRA
+	cry_reverse Cry_Suicune       @ SPECIES_ETC_KRIS
+	cry_reverse Cry_Kyogre       @ SPECIES_ETC_MAY
+	cry_reverse Cry_Palkia       @ SPECIES_ETC_DAWN
+	cry_reverse Cry_Reshiram       @ SPECIES_ETC_HILDA
+	cry_reverse Cry_Meloetta       @ SPECIES_ETC_ROSA
+	cry_reverse Cry_Yveltal       @ SPECIES_ETC_SERENA
+	cry_reverse Cry_Lunala       @ SPECIES_ETC_SELENE
+	cry_reverse Cry_Pikachu       @ SPECIES_ETC_ELAINE
+	cry_reverse Cry_ZamazentaCrownedShield       @ SPECIES_ETC_GLORIA
+	cry_reverse Cry_Giratina       @ SPECIES_ETC_REI
 	cry_reverse Cry_Unown       @ SPECIES_ETC_JULIANA
 	cry_reverse Cry_Unown       @ SPECIES_DUMMY_REGULAR
 	cry_reverse Cry_Unown       @ SPECIES_DUMMY_SHEDINJA

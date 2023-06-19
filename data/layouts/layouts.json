@@ -4417,7 +4417,7 @@
       "width": 72,
       "height": 72,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/JohtoTwinriverCity/border.bin",
       "blockdata_filepath": "data/layouts/JohtoTwinriverCity/map.bin"
     },

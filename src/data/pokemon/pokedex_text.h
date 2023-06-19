@@ -6081,2383 +6081,2383 @@ const u8 gYYYIMisaki2PokedexText[] = _(
 
 
 const u8 gTHKedamaPokedexText[] = _(
-    "SPECIES_TH_KEDAMA description line 1\n"
-    "SPECIES_TH_KEDAMA description line 2\n"
-    "SPECIES_TH_KEDAMA description line 3\n"
-    "SPECIES_TH_KEDAMA description line 4\n");
+    "A soft and puni-puni creature.\n"
+    "Flies through the air aimlessly.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHFairyPokedexText[] = _(
-    "SPECIES_TH_FAIRY description line 1\n"
-    "SPECIES_TH_FAIRY description line 2\n"
-    "SPECIES_TH_FAIRY description line 3\n"
-    "SPECIES_TH_FAIRY description line 4\n");
+    "Mischievous fairies that appear\n"
+    "everywhere. They love playing pranks\n"
+    "and run away when detected.\n"
+    " ");
 
 
 const u8 gTHZombiefairyPokedexText[] = _(
-    "SPECIES_TH_ZOMBIEFAIRY description line 1\n"
-    "SPECIES_TH_ZOMBIEFAIRY description line 2\n"
-    "SPECIES_TH_ZOMBIEFAIRY description line 3\n"
-    "SPECIES_TH_ZOMBIEFAIRY description line 4\n");
+    "Typical fairies that enjoy pranking\n"
+    "people. This time, they are dressed\n"
+    "up as zombies.\n"
+    " ");
 
 
 const u8 gTHShingyoku1PokedexText[] = _(
-    "SPECIES_TH_SHINGYOKU1 description line 1\n"
-    "SPECIES_TH_SHINGYOKU1 description line 2\n"
-    "SPECIES_TH_SHINGYOKU1 description line 3\n"
-    "SPECIES_TH_SHINGYOKU1 description line 4\n");
+    "Acts as a guardian deity, guarding\n"
+    "the gate to Gensokyo to protect\n"
+    "it from invasions.\n"
+    " ");
 
 
 const u8 gTHShingyoku2OPokedexText[] = _(
-    "SPECIES_TH_SHINGYOKU2O description line 1\n"
-    "SPECIES_TH_SHINGYOKU2O description line 2\n"
-    "SPECIES_TH_SHINGYOKU2O description line 3\n"
-    "SPECIES_TH_SHINGYOKU2O description line 4\n");
+    "A large, brown Yin-Yang Orb,\n"
+    "with red markings. One side\n"
+    "seems to be transparent.\n"
+    " ");
 
 
 const u8 gTHShingyoku2MPokedexText[] = _(
-    "SPECIES_TH_SHINGYOKU2M description line 1\n"
-    "SPECIES_TH_SHINGYOKU2M description line 2\n"
-    "SPECIES_TH_SHINGYOKU2M description line 3\n"
-    "SPECIES_TH_SHINGYOKU2M description line 4\n");
+    "A male priest in white and blue robes\n"
+    "with glowing red eyes. Has a slight\n"
+    "resemblance to a feudal souhei.\n"
+    " ");
 
 
 const u8 gTHShingyoku2FPokedexText[] = _(
-    "SPECIES_TH_SHINGYOKU2F description line 1\n"
-    "SPECIES_TH_SHINGYOKU2F description line 2\n"
-    "SPECIES_TH_SHINGYOKU2F description line 3\n"
-    "SPECIES_TH_SHINGYOKU2F description line 4\n");
+    "A female priestess in red robes with\n"
+    "long, flowing red hair, horns and\n"
+    "glowing red eyes.\n"
+    " ");
 
 
 const u8 gTHYuugen1PokedexText[] = _(
-    "SPECIES_TH_YUUGEN1 description line 1\n"
-    "SPECIES_TH_YUUGEN1 description line 2\n"
-    "SPECIES_TH_YUUGEN1 description line 3\n"
-    "SPECIES_TH_YUUGEN1 description line 4\n");
+    "A hovering set of five independently-\n"
+    "moving eyes, connected by electricity\n"
+    "and surrounded by strange markings.\n"
+    " ");
 
 
 const u8 gTHYuugen2PokedexText[] = _(
-    "SPECIES_TH_YUUGEN2 description line 1\n"
-    "SPECIES_TH_YUUGEN2 description line 2\n"
-    "SPECIES_TH_YUUGEN2 description line 3\n"
-    "SPECIES_TH_YUUGEN2 description line 4\n");
+    "Five magical eyes that are connected\n"
+    "by electricity. They can be seen in\n"
+    "Makai.\n"
+    " ");
 
 
 const u8 gTHMima1PokedexText[] = _(
-    "SPECIES_TH_MIMA1 description line 1\n"
-    "SPECIES_TH_MIMA1 description line 2\n"
-    "SPECIES_TH_MIMA1 description line 3\n"
-    "SPECIES_TH_MIMA1 description line 4\n");
+    "Mima wants to revenge to human\n"
+    "for unknown reason. She denies\n"
+    "that she is a ghost.\n"
+    " ");
 
 
 const u8 gTHMima2PokedexText[] = _(
-    "SPECIES_TH_MIMA2 description line 1\n"
-    "SPECIES_TH_MIMA2 description line 2\n"
-    "SPECIES_TH_MIMA2 description line 3\n"
-    "SPECIES_TH_MIMA2 description line 4\n");
+    "An evil spirit that has been living for a\n"
+    "very long time. It seems like she is the\n"
+    "one who taught magic to Marisa.\n"
+    " ");
 
 
 const u8 gTHElis1PokedexText[] = _(
-    "SPECIES_TH_ELIS1 description line 1\n"
-    "SPECIES_TH_ELIS1 description line 2\n"
-    "SPECIES_TH_ELIS1 description line 3\n"
-    "SPECIES_TH_ELIS1 description line 4\n");
+    "Elis is a magician of Makai.\n"
+    "She can transform into a bat.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHElis2PokedexText[] = _(
-    "SPECIES_TH_ELIS2 description line 1\n"
-    "SPECIES_TH_ELIS2 description line 2\n"
-    "SPECIES_TH_ELIS2 description line 3\n"
-    "SPECIES_TH_ELIS2 description line 4\n");
+    "Elis can be seen around\n"
+    "the Ruins of Vina.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHKikuri1PokedexText[] = _(
-    "SPECIES_TH_KIKURI1 description line 1\n"
-    "SPECIES_TH_KIKURI1 description line 2\n"
-    "SPECIES_TH_KIKURI1 description line 3\n"
-    "SPECIES_TH_KIKURI1 description line 4\n");
+    "Kikuri is the Hellish Moon.\n"
+    "Shaped in the full moon orb\n"
+    "blended with a woman figure.\n"
+    " ");
 
 
 const u8 gTHKikuri2PokedexText[] = _(
-    "SPECIES_TH_KIKURI2 description line 1\n"
-    "SPECIES_TH_KIKURI2 description line 2\n"
-    "SPECIES_TH_KIKURI2 description line 3\n"
-    "SPECIES_TH_KIKURI2 description line 4\n");
+    "Young girl inside a large bronze disk.\n"
+    "She can move around the disk.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHSariel1PokedexText[] = _(
-    "SPECIES_TH_SARIEL1 description line 1\n"
-    "SPECIES_TH_SARIEL1 description line 2\n"
-    "SPECIES_TH_SARIEL1 description line 3\n"
-    "SPECIES_TH_SARIEL1 description line 4\n");
+    "Sariel lives deep within Makai. A ghost\n"
+    "like angelic figure with white knee\n"
+    "length hair with seemingly blue eyes.\n"
+    " ");
 
 
 const u8 gTHSariel2NPokedexText[] = _(
-    "SPECIES_TH_SARIEL2N description line 1\n"
-    "SPECIES_TH_SARIEL2N description line 2\n"
-    "SPECIES_TH_SARIEL2N description line 3\n"
-    "SPECIES_TH_SARIEL2N description line 4\n");
+    "Angel of Death. Can be seen in the\n"
+    "Fallen Shrine at Makai. Carries a wand\n"
+    "and has six wings.\n"
+    " ");
 
 
 const u8 gTHSariel2SPokedexText[] = _(
-    "SPECIES_TH_SARIEL2S description line 1\n"
-    "SPECIES_TH_SARIEL2S description line 2\n"
-    "SPECIES_TH_SARIEL2S description line 3\n"
-    "SPECIES_TH_SARIEL2S description line 4\n");
+    "A six-winged Angel of Death. Can be\n"
+    "met deep in Makai. Has a ghost-like\n"
+    "appearance.\n"
+    " ");
 
 
 const u8 gTHKonngara1PokedexText[] = _(
-    "SPECIES_TH_KONNGARA1 description line 1\n"
-    "SPECIES_TH_KONNGARA1 description line 2\n"
-    "SPECIES_TH_KONNGARA1 description line 3\n"
-    "SPECIES_TH_KONNGARA1 description line 4\n");
+    "An Astral Knight which is encountered\n"
+    "in the Silent Shrine.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHKonngara2PokedexText[] = _(
-    "SPECIES_TH_KONNGARA2 description line 1\n"
-    "SPECIES_TH_KONNGARA2 description line 2\n"
-    "SPECIES_TH_KONNGARA2 description line 3\n"
-    "SPECIES_TH_KONNGARA2 description line 4\n");
+    "An Astral Knight encountered by Reimu\n"
+    "at the Silent Shrine somewhere in Hell.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHGenjiPokedexText[] = _(
-    "SPECIES_TH_GENJI description line 1\n"
-    "SPECIES_TH_GENJI description line 2\n"
-    "SPECIES_TH_GENJI description line 3\n"
-    "SPECIES_TH_GENJI description line 4\n");
+    "A long lived flying turtle. Is currently\n"
+    "living in a pond behind the Hakurei\n"
+    "Shrine?\n"
+    " ");
 
 
 const u8 gTHRika1PokedexText[] = _(
-    "SPECIES_TH_RIKA1 description line 1\n"
-    "SPECIES_TH_RIKA1 description line 2\n"
-    "SPECIES_TH_RIKA1 description line 3\n"
-    "SPECIES_TH_RIKA1 description line 4\n");
+    "For unknown reason, Rika creates\n"
+    "many machinery. Most likely, her\n"
+    "favorite machinery is a tank.\n"
+    " ");
 
 
 const u8 gTHRika2PokedexText[] = _(
-    "SPECIES_TH_RIKA2 description line 1\n"
-    "SPECIES_TH_RIKA2 description line 2\n"
-    "SPECIES_TH_RIKA2 description line 3\n"
-    "SPECIES_TH_RIKA2 description line 4\n");
+    "Besides machinery, Rika also creates\n"
+    "monsters and ghosts. Yet, her favorite\n"
+    "is creation still a tank.\n"
+    " ");
 
 
 const u8 gTHMeira1PokedexText[] = _(
-    "SPECIES_TH_MEIRA1 description line 1\n"
-    "SPECIES_TH_MEIRA1 description line 2\n"
-    "SPECIES_TH_MEIRA1 description line 3\n"
-    "SPECIES_TH_MEIRA1 description line 4\n");
+    "Meira wanted the Power of Hakurei.\n"
+    "So, she attacked the Hakurei Miko,\n"
+    "but that ended with failure.\n"
+    " ");
 
 
 const u8 gTHMeira2PokedexText[] = _(
-    "SPECIES_TH_MEIRA2 description line 1\n"
-    "SPECIES_TH_MEIRA2 description line 2\n"
-    "SPECIES_TH_MEIRA2 description line 3\n"
-    "SPECIES_TH_MEIRA2 description line 4\n");
+    "Capable of using many sword skills.\n"
+    "She has mysterious presence,\n"
+    "and usually she moves at night.\n"
+    " ");
 
 
 const u8 gTHEllen1PokedexText[] = _(
-    "SPECIES_TH_ELLEN1 description line 1\n"
-    "SPECIES_TH_ELLEN1 description line 2\n"
-    "SPECIES_TH_ELLEN1 description line 3\n"
-    "SPECIES_TH_ELLEN1 description line 4\n");
+    "Ellen is a witch who never grows\n"
+    "old. A hardworking witch who\n"
+    "dreams of love.\n"
+    " ");
 
 
 const u8 gTHEllen2PokedexText[] = _(
-    "SPECIES_TH_ELLEN2 description line 1\n"
-    "SPECIES_TH_ELLEN2 description line 2\n"
-    "SPECIES_TH_ELLEN2 description line 3\n"
-    "SPECIES_TH_ELLEN2 description line 4\n");
+    "Has a pet cat named Sokrates. She\n"
+    "wants to name her new store:\n"
+    "Fuwafuwa Ellen's Magic Shop.\n"
+    " ");
 
 
 const u8 gTHKotohime1PokedexText[] = _(
-    "SPECIES_TH_KOTOHIME1 description line 1\n"
-    "SPECIES_TH_KOTOHIME1 description line 2\n"
-    "SPECIES_TH_KOTOHIME1 description line 3\n"
-    "SPECIES_TH_KOTOHIME1 description line 4\n");
+    "She is supposed to be a princess,\n"
+    "but has an odd personality.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHKotohime2PokedexText[] = _(
-    "SPECIES_TH_KOTOHIME2 description line 1\n"
-    "SPECIES_TH_KOTOHIME2 description line 2\n"
-    "SPECIES_TH_KOTOHIME2 description line 3\n"
-    "SPECIES_TH_KOTOHIME2 description line 4\n");
+    "She also calls herself a police officer.\n"
+    "A collector of things only she thinks\n"
+    "is interesting.\n"
+    " ");
 
 
 const u8 gTHKana1PokedexText[] = _(
-    "SPECIES_TH_KANA1 description line 1\n"
-    "SPECIES_TH_KANA1 description line 2\n"
-    "SPECIES_TH_KANA1 description line 3\n"
-    "SPECIES_TH_KANA1 description line 4\n");
+    "A little poltergeist girl who is bounded\n"
+    "in certain western styled mansion.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHKana2PokedexText[] = _(
-    "SPECIES_TH_KANA2 description line 1\n"
-    "SPECIES_TH_KANA2 description line 2\n"
-    "SPECIES_TH_KANA2 description line 3\n"
-    "SPECIES_TH_KANA2 description line 4\n");
+    "She left the mansion after the\n"
+    "owner of the mansion got used\n"
+    "to her.\n"
+    " ");
 
 
 const u8 gTHRikako1PokedexText[] = _(
-    "SPECIES_TH_RIKAKO1 description line 1\n"
-    "SPECIES_TH_RIKAKO1 description line 2\n"
-    "SPECIES_TH_RIKAKO1 description line 3\n"
-    "SPECIES_TH_RIKAKO1 description line 4\n");
+    "Rikako is among the few people in\n"
+    "Gensokyo who values science more\n"
+    "than magic.\n"
+    " ");
 
 
 const u8 gTHRikako2PokedexText[] = _(
-    "SPECIES_TH_RIKAKO2 description line 1\n"
-    "SPECIES_TH_RIKAKO2 description line 2\n"
-    "SPECIES_TH_RIKAKO2 description line 3\n"
-    "SPECIES_TH_RIKAKO2 description line 4\n");
+    "With her science, she created\n"
+    "a rocket for flying.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHChiyuri1PokedexText[] = _(
-    "SPECIES_TH_CHIYURI1 description line 1\n"
-    "SPECIES_TH_CHIYURI1 description line 2\n"
-    "SPECIES_TH_CHIYURI1 description line 3\n"
-    "SPECIES_TH_CHIYURI1 description line 4\n");
+    "Chiyuri is Yumemi's assistant.\n"
+    "Chiyuri collects data for Yumemi.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHChiyuri2PokedexText[] = _(
-    "SPECIES_TH_CHIYURI2 description line 1\n"
-    "SPECIES_TH_CHIYURI2 description line 2\n"
-    "SPECIES_TH_CHIYURI2 description line 3\n"
-    "SPECIES_TH_CHIYURI2 description line 4\n");
+    "She is actually a human. But, she is\n"
+    "capable of using some kind of artificial\n"
+    "magic.\n"
+    " ");
 
 
 const u8 gTHYumemi1PokedexText[] = _(
-    "SPECIES_TH_YUMEMI1 description line 1\n"
-    "SPECIES_TH_YUMEMI1 description line 2\n"
-    "SPECIES_TH_YUMEMI1 description line 3\n"
-    "SPECIES_TH_YUMEMI1 description line 4\n");
+    "Yumemi is professor who searching\n"
+    "for the mysterious power of magic.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHYumemi2PokedexText[] = _(
-    "SPECIES_TH_YUMEMI2 description line 1\n"
-    "SPECIES_TH_YUMEMI2 description line 2\n"
-    "SPECIES_TH_YUMEMI2 description line 3\n"
-    "SPECIES_TH_YUMEMI2 description line 4\n");
+    "Once, Yumemi attempted to\n"
+    "kidnap certain shrine maiden.\n"
+    "However, it ended with failure.\n"
+    " ");
 
 
 const u8 gTHRuukotoPokedexText[] = _(
-    "SPECIES_TH_RUUKOTO description line 1\n"
-    "SPECIES_TH_RUUKOTO description line 2\n"
-    "SPECIES_TH_RUUKOTO description line 3\n"
-    "SPECIES_TH_RUUKOTO description line 4\n");
+    "A missile that locks on the target.\n"
+    "\n"
+    "\n"
+    " ");
 
 
 const u8 gTHMimichanPokedexText[] = _(
-    "SPECIES_TH_MIMICHAN description line 1\n"
-    "SPECIES_TH_MIMICHAN description line 2\n"
-    "SPECIES_TH_MIMICHAN description line 3\n"
-    "SPECIES_TH_MIMICHAN description line 4\n");
+    "An android maid which is\n"
+    "nuclear powered. Although, she\n"
+    "is enthusiastic about doing chores.\n"
+    " ");
 
 
 const u8 gTHOrange1PokedexText[] = _(
-    "SPECIES_TH_ORANGE1 description line 1\n"
-    "SPECIES_TH_ORANGE1 description line 2\n"
-    "SPECIES_TH_ORANGE1 description line 3\n"
-    "SPECIES_TH_ORANGE1 description line 4\n");
+    "An harmless youkai, but she was\n"
+    "attacked, because she was in the\n"
+    "way.\n"
+    " ");
 
 
 const u8 gTHOrange2PokedexText[] = _(
-    "SPECIES_TH_ORANGE2 description line 1\n"
-    "SPECIES_TH_ORANGE2 description line 2\n"
-    "SPECIES_TH_ORANGE2 description line 3\n"
-    "SPECIES_TH_ORANGE2 description line 4\n");
+    "Wears green and yellow clothing and\n"
+    "carries a baton. Please give her your\n"
+    "kindness and raise her.\n"
+    " ");
 
 
 const u8 gTHKurumi1PokedexText[] = _(
-    "SPECIES_TH_KURUMI1 description line 1\n"
-    "SPECIES_TH_KURUMI1 description line 2\n"
-    "SPECIES_TH_KURUMI1 description line 3\n"
-    "SPECIES_TH_KURUMI1 description line 4\n");
+    "A vampire girl with purple wings\n"
+    "on her back, and white ribbon on\n"
+    "her head.\n"
+    " ");
 
 
 const u8 gTHKurumi2PokedexText[] = _(
-    "SPECIES_TH_KURUMI2 description line 1\n"
-    "SPECIES_TH_KURUMI2 description line 2\n"
-    "SPECIES_TH_KURUMI2 description line 3\n"
-    "SPECIES_TH_KURUMI2 description line 4\n");
+    "Kurumi is guarding the mountain lake\n"
+    "for some reason.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHElly1PokedexText[] = _(
-    "SPECIES_TH_ELLY1 description line 1\n"
-    "SPECIES_TH_ELLY1 description line 2\n"
-    "SPECIES_TH_ELLY1 description line 3\n"
-    "SPECIES_TH_ELLY1 description line 4\n");
+    "This youkai is guarding the border\n"
+    "between the Real World and Dream\n"
+    "World.\n"
+    " ");
 
 
 const u8 gTHElly2PokedexText[] = _(
-    "SPECIES_TH_ELLY2 description line 1\n"
-    "SPECIES_TH_ELLY2 description line 2\n"
-    "SPECIES_TH_ELLY2 description line 3\n"
-    "SPECIES_TH_ELLY2 description line 4\n");
+    "Elly's scythe is a Boomerang Scythe.\n"
+    "She guards Yuuka's mansion beneath\n"
+    "the Lake of Blood.\n"
+    " ");
 
 
 const u8 gTHMugetsu1PokedexText[] = _(
-    "SPECIES_TH_MUGETSU1 description line 1\n"
-    "SPECIES_TH_MUGETSU1 description line 2\n"
-    "SPECIES_TH_MUGETSU1 description line 3\n"
-    "SPECIES_TH_MUGETSU1 description line 4\n");
+    "Mugetsu is younger twin\n"
+    "sister of Gengetsu. They live\n"
+    "in the Dream World.\n"
+    " ");
 
 
 const u8 gTHMugetsu2PokedexText[] = _(
-    "SPECIES_TH_MUGETSU2 description line 1\n"
-    "SPECIES_TH_MUGETSU2 description line 2\n"
-    "SPECIES_TH_MUGETSU2 description line 3\n"
-    "SPECIES_TH_MUGETSU2 description line 4\n");
+    "A powerful demon that is\n"
+    "dressed maid like uniform.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHGengetsu1PokedexText[] = _(
-    "SPECIES_TH_GENGETSU1 description line 1\n"
-    "SPECIES_TH_GENGETSU1 description line 2\n"
-    "SPECIES_TH_GENGETSU1 description line 3\n"
-    "SPECIES_TH_GENGETSU1 description line 4\n");
+    "Gengetsu is a demon who lives\n"
+    "with her sister, Mugetsu, in a\n"
+    "strange dimension.\n"
+    " ");
 
 
 const u8 gTHGengetsu2PokedexText[] = _(
-    "SPECIES_TH_GENGETSU2 description line 1\n"
-    "SPECIES_TH_GENGETSU2 description line 2\n"
-    "SPECIES_TH_GENGETSU2 description line 3\n"
-    "SPECIES_TH_GENGETSU2 description line 4\n");
+    "She has a pair of white wings.\n"
+    "She has a more angelic appearance\n"
+    "than a demonic appearance.\n"
+    " ");
 
 
 const u8 gTHSara1PokedexText[] = _(
-    "SPECIES_TH_SARA1 description line 1\n"
-    "SPECIES_TH_SARA1 description line 2\n"
-    "SPECIES_TH_SARA1 description line 3\n"
-    "SPECIES_TH_SARA1 description line 4\n");
+    "For some reason, Sara is entrusted\n"
+    "as the gatekeeper of Makai.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHSara2PokedexText[] = _(
-    "SPECIES_TH_SARA2 description line 1\n"
-    "SPECIES_TH_SARA2 description line 2\n"
-    "SPECIES_TH_SARA2 description line 3\n"
-    "SPECIES_TH_SARA2 description line 4\n");
+    "Sara is the gatekeeper who\n"
+    "guards the gate of Makai\n"
+    "in a mountain cave.\n"
+    " ");
 
 
 const u8 gTHLouise1PokedexText[] = _(
-    "SPECIES_TH_LOUISE1 description line 1\n"
-    "SPECIES_TH_LOUISE1 description line 2\n"
-    "SPECIES_TH_LOUISE1 description line 3\n"
-    "SPECIES_TH_LOUISE1 description line 4\n");
+    "Her main attractive point is her\n"
+    "closed eyes. This is how she\n"
+    "communicates with other people.\n"
+    " ");
 
 
 const u8 gTHLouise2PokedexText[] = _(
-    "SPECIES_TH_LOUISE2 description line 1\n"
-    "SPECIES_TH_LOUISE2 description line 2\n"
-    "SPECIES_TH_LOUISE2 description line 3\n"
-    "SPECIES_TH_LOUISE2 description line 4\n");
+    "She really wants to go the Human\n"
+    "World for sightseeing.\n"
+    "She is rather polite.\n"
+    " ");
 
 
 const u8 gTHYuki1PokedexText[] = _(
-    "SPECIES_TH_YUKI1 description line 1\n"
-    "SPECIES_TH_YUKI1 description line 2\n"
-    "SPECIES_TH_YUKI1 description line 3\n"
-    "SPECIES_TH_YUKI1 description line 4\n");
+    "Capable of using fire magic.\n"
+    "A cheerful and vocal girl.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHYuki2PokedexText[] = _(
-    "SPECIES_TH_YUKI2 description line 1\n"
-    "SPECIES_TH_YUKI2 description line 2\n"
-    "SPECIES_TH_YUKI2 description line 3\n"
-    "SPECIES_TH_YUKI2 description line 4\n");
+    "Yuki usually paired with\n"
+    "her fellow friend, Mai.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHMai1PokedexText[] = _(
-    "SPECIES_TH_MAI1 description line 1\n"
-    "SPECIES_TH_MAI1 description line 2\n"
-    "SPECIES_TH_MAI1 description line 3\n"
-    "SPECIES_TH_MAI1 description line 4\n");
+    "Opposite of Yuki, Mai is surprisingly\n"
+    "more quiet, yet more charming.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHMai2PokedexText[] = _(
-    "SPECIES_TH_MAI2 description line 1\n"
-    "SPECIES_TH_MAI2 description line 2\n"
-    "SPECIES_TH_MAI2 description line 3\n"
-    "SPECIES_TH_MAI2 description line 4\n");
+    "Mai uses ice magic to attack.\n"
+    "This quite resembles a certain\n"
+    "idiot.\n"
+    " ");
 
 
 const u8 gTHYumeko1PokedexText[] = _(
-    "SPECIES_TH_YUMEKO1 description line 1\n"
-    "SPECIES_TH_YUMEKO1 description line 2\n"
-    "SPECIES_TH_YUMEKO1 description line 3\n"
-    "SPECIES_TH_YUMEKO1 description line 4\n");
+    "A Makai resident who is dressed\n"
+    "in a red maid uniform.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHYumeko2PokedexText[] = _(
-    "SPECIES_TH_YUMEKO2 description line 1\n"
-    "SPECIES_TH_YUMEKO2 description line 2\n"
-    "SPECIES_TH_YUMEKO2 description line 3\n"
-    "SPECIES_TH_YUMEKO2 description line 4\n");
+    "Yumeko serves her mistress,\n"
+    "Shinki. She throws swords\n"
+    "at people.\n"
+    " ");
 
 
 const u8 gTHShinki1PokedexText[] = _(
-    "SPECIES_TH_SHINKI1 description line 1\n"
-    "SPECIES_TH_SHINKI1 description line 2\n"
-    "SPECIES_TH_SHINKI1 description line 3\n"
-    "SPECIES_TH_SHINKI1 description line 4\n");
+    "Shinki has strong presence. She is\n"
+    "the creator of Makai and of course\n"
+    "she is the goddess.\n"
+    " ");
 
 
 const u8 gTHShinki2PokedexText[] = _(
-    "SPECIES_TH_SHINKI2 description line 1\n"
-    "SPECIES_TH_SHINKI2 description line 2\n"
-    "SPECIES_TH_SHINKI2 description line 3\n"
-    "SPECIES_TH_SHINKI2 description line 4\n");
+    "She has six dark wings and massive\n"
+    "power. She resides in Pandaemonium\n"
+    "within Makai.\n"
+    " ");
 
 
 const u8 gTHRumia1PokedexText[] = _(
-    "SPECIES_TH_RUMIA1 description line 1\n"
-    "SPECIES_TH_RUMIA1 description line 2\n"
-    "SPECIES_TH_RUMIA1 description line 3\n"
-    "SPECIES_TH_RUMIA1 description line 4\n");
+    "She usually makes a sphere of\n"
+    "darkness to hide herself and she tends\n"
+    "to wander around.\n"
+    " ");
 
 
 const u8 gTHRumia2NPokedexText[] = _(
-    "SPECIES_TH_RUMIA2N description line 1\n"
-    "SPECIES_TH_RUMIA2N description line 2\n"
-    "SPECIES_TH_RUMIA2N description line 3\n"
-    "SPECIES_TH_RUMIA2N description line 4\n");
+    "Despite her childish apperance, she\n"
+    "eats humans. She waits inside the\n"
+    "sphere of darkness for prey.\n"
+    " ");
 
 
 const u8 gTHRumia2APokedexText[] = _(
-    "SPECIES_TH_RUMIA2A description line 1\n"
-    "SPECIES_TH_RUMIA2A description line 2\n"
-    "SPECIES_TH_RUMIA2A description line 3\n"
-    "SPECIES_TH_RUMIA2A description line 4\n");
+    "She cannot see through her sphere\n"
+    "of darkness. Some people believe she\n"
+    "is not very smart.\n"
+    " ");
 
 
 const u8 gTHRumia2SPokedexText[] = _(
-    "SPECIES_TH_RUMIA2S description line 1\n"
-    "SPECIES_TH_RUMIA2S description line 2\n"
-    "SPECIES_TH_RUMIA2S description line 3\n"
-    "SPECIES_TH_RUMIA2S description line 4\n");
+    "Witnesses say that she cannot use her\n"
+    "powers during the new moon. For some\n"
+    "reason, she cannot remove her ribbon.\n"
+    " ");
 
 
 const u8 gTHDaiyousei1PokedexText[] = _(
-    "SPECIES_TH_DAIYOUSEI1 description line 1\n"
-    "SPECIES_TH_DAIYOUSEI1 description line 2\n"
-    "SPECIES_TH_DAIYOUSEI1 description line 3\n"
-    "SPECIES_TH_DAIYOUSEI1 description line 4\n");
+    "Lives in Misty Lake in Gensokyo.\n"
+    "Has a caring personality and likes\n"
+    "pranks.\n"
+    " ");
 
 
 const u8 gTHDaiyousei2NPokedexText[] = _(
-    "SPECIES_TH_DAIYOUSEI2N description line 1\n"
-    "SPECIES_TH_DAIYOUSEI2N description line 2\n"
-    "SPECIES_TH_DAIYOUSEI2N description line 3\n"
-    "SPECIES_TH_DAIYOUSEI2N description line 4\n");
+    "Eventually, the nickname Daiyousei \n"
+    "is given because she has greater\n"
+    "power than other fairies.\n"
+    " ");
 
 
 const u8 gTHDaiyousei2APokedexText[] = _(
-    "SPECIES_TH_DAIYOUSEI2A description line 1\n"
-    "SPECIES_TH_DAIYOUSEI2A description line 2\n"
-    "SPECIES_TH_DAIYOUSEI2A description line 3\n"
-    "SPECIES_TH_DAIYOUSEI2A description line 4\n");
+    "Cirno is her close friend. She plays hide\n"
+    "and seek with Cirno at Misty Lake. They\n"
+    "sometimes play at the shrine.\n"
+    " ");
 
 
 const u8 gTHDaiyousei2DPokedexText[] = _(
-    "SPECIES_TH_DAIYOUSEI2D description line 1\n"
-    "SPECIES_TH_DAIYOUSEI2D description line 2\n"
-    "SPECIES_TH_DAIYOUSEI2D description line 3\n"
-    "SPECIES_TH_DAIYOUSEI2D description line 4\n");
+    "The leader of the fairies at Misty Lake.\n"
+    "She is stronger than your average fairy.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHCirno1PokedexText[] = _(
-    "SPECIES_TH_CIRNO1 description line 1\n"
-    "SPECIES_TH_CIRNO1 description line 2\n"
-    "SPECIES_TH_CIRNO1 description line 3\n"
-    "SPECIES_TH_CIRNO1 description line 4\n");
+    "Small ice fairy who claims herself as\n"
+    "the strongest in Gensokyo.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHCirno2NPokedexText[] = _(
-    "SPECIES_TH_CIRNO2N description line 1\n"
-    "SPECIES_TH_CIRNO2N description line 2\n"
-    "SPECIES_TH_CIRNO2N description line 3\n"
-    "SPECIES_TH_CIRNO2N description line 4\n");
+    "She can usually be seen while playing\n"
+    "in Misty Lake. She is the perfect baka.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHCirno2SPokedexText[] = _(
-    "SPECIES_TH_CIRNO2S description line 1\n"
-    "SPECIES_TH_CIRNO2S description line 2\n"
-    "SPECIES_TH_CIRNO2S description line 3\n"
-    "SPECIES_TH_CIRNO2S description line 4\n");
+    "Possesses power to manipulate ice.\n"
+    "But also, she is claimed to be the most\n"
+    "stupid in Gensokyo by the other residents.\n"
+    " ");
 
 
 const u8 gTHCirno2TPokedexText[] = _(
-    "SPECIES_TH_CIRNO2T description line 1\n"
-    "SPECIES_TH_CIRNO2T description line 2\n"
-    "SPECIES_TH_CIRNO2T description line 3\n"
-    "SPECIES_TH_CIRNO2T description line 4\n");
+    "'Eye em teh strongest'\n"
+    "She claims that she is strongest in\n"
+    "Gensokyo.\n"
+    " ");
 
 
 const u8 gTHLunachild1PokedexText[] = _(
-    "SPECIES_TH_LUNACHILD1 description line 1\n"
-    "SPECIES_TH_LUNACHILD1 description line 2\n"
-    "SPECIES_TH_LUNACHILD1 description line 3\n"
-    "SPECIES_TH_LUNACHILD1 description line 4\n");
+    "The moon powers Luna Child.\n"
+    "This is opposite to her friend\n"
+    "Sunny Milk.\n"
+    " ");
 
 
 const u8 gTHLunachild2NPokedexText[] = _(
-    "SPECIES_TH_LUNACHILD2N description line 1\n"
-    "SPECIES_TH_LUNACHILD2N description line 2\n"
-    "SPECIES_TH_LUNACHILD2N description line 3\n"
-    "SPECIES_TH_LUNACHILD2N description line 4\n");
+    "Able to mute sounds in the area. Her\n"
+    "ability is usually used for causing pranks\n"
+    "along with Star Spphire and Sunny Milk.\n"
+    " ");
 
 
 const u8 gTHLunachild2APokedexText[] = _(
-    "SPECIES_TH_LUNACHILD2A description line 1\n"
-    "SPECIES_TH_LUNACHILD2A description line 2\n"
-    "SPECIES_TH_LUNACHILD2A description line 3\n"
-    "SPECIES_TH_LUNACHILD2A description line 4\n");
+    "Her ability, along with Sunny Milk and\n"
+    "Star Sapphire make them formidable\n"
+    "hide and seek opponents.\n"
+    " ");
 
 
 const u8 gTHLunachild2TPokedexText[] = _(
-    "SPECIES_TH_LUNACHILD2T description line 1\n"
-    "SPECIES_TH_LUNACHILD2T description line 2\n"
-    "SPECIES_TH_LUNACHILD2T description line 3\n"
-    "SPECIES_TH_LUNACHILD2T description line 4\n");
+    "She and the other two eventually use\n"
+    "Marisa's Kirisame Magic Shop. Although\n"
+    "they often play mischief on Marisa.\n"
+    " ");
 
 
 const u8 gTHStarsapphire1PokedexText[] = _(
-    "SPECIES_TH_STARSAPPHIRE1 description line 1\n"
-    "SPECIES_TH_STARSAPPHIRE1 description line 2\n"
-    "SPECIES_TH_STARSAPPHIRE1 description line 3\n"
-    "SPECIES_TH_STARSAPPHIRE1 description line 4\n");
+    "Unlike Sunny Milk and Luna Child,\n"
+    "Star Sapphire's power isn't affected\n"
+    "by weather or daytime.\n"
+    " ");
 
 
 const u8 gTHStarsapphire2NPokedexText[] = _(
-    "SPECIES_TH_STARSAPPHIRE2N description line 1\n"
-    "SPECIES_TH_STARSAPPHIRE2N description line 2\n"
-    "SPECIES_TH_STARSAPPHIRE2N description line 3\n"
-    "SPECIES_TH_STARSAPPHIRE2N description line 4\n");
+    "Star Sapphire, Sunny Milk, and\n"
+    "Luna Child love playing pranks.\n"
+    "But, sometimes they fail.\n"
+    " ");
 
 
 const u8 gTHStarsapphire2APokedexText[] = _(
-    "SPECIES_TH_STARSAPPHIRE2A description line 1\n"
-    "SPECIES_TH_STARSAPPHIRE2A description line 2\n"
-    "SPECIES_TH_STARSAPPHIRE2A description line 3\n"
-    "SPECIES_TH_STARSAPPHIRE2A description line 4\n");
+    "Part of the fairy trio. These three\n"
+    "fairies planted a flag at Cirno's home\n"
+    "and started the Fairy Wars.\n"
+    " ");
 
 
 const u8 gTHStarsapphire2HPokedexText[] = _(
-    "SPECIES_TH_STARSAPPHIRE2H description line 1\n"
-    "SPECIES_TH_STARSAPPHIRE2H description line 2\n"
-    "SPECIES_TH_STARSAPPHIRE2H description line 3\n"
-    "SPECIES_TH_STARSAPPHIRE2H description line 4\n");
+    "Star Sapphire is smart enough to let\n"
+    "the other two take the fall for their\n"
+    "pranks while she escapes.\n"
+    " ");
 
 
 const u8 gTHSunnymilk1PokedexText[] = _(
-    "SPECIES_TH_SUNNYMILK1 description line 1\n"
-    "SPECIES_TH_SUNNYMILK1 description line 2\n"
-    "SPECIES_TH_SUNNYMILK1 description line 3\n"
-    "SPECIES_TH_SUNNYMILK1 description line 4\n");
+    "Sunny Milk gets weaker when\n"
+    "the sun doesn't show in the sky.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHSunnymilk2NPokedexText[] = _(
-    "SPECIES_TH_SUNNYMILK2N description line 1\n"
-    "SPECIES_TH_SUNNYMILK2N description line 2\n"
-    "SPECIES_TH_SUNNYMILK2N description line 3\n"
-    "SPECIES_TH_SUNNYMILK2N description line 4\n");
+    "Along with Luna Child, they usually\n"
+    "get punishment for their pranks while\n"
+    "Star Sapphire manages to escape.\n"
+    " ");
 
 
 const u8 gTHSunnymilk2APokedexText[] = _(
-    "SPECIES_TH_SUNNYMILK2A description line 1\n"
-    "SPECIES_TH_SUNNYMILK2A description line 2\n"
-    "SPECIES_TH_SUNNYMILK2A description line 3\n"
-    "SPECIES_TH_SUNNYMILK2A description line 4\n");
+    "One of the three fairies. She can refract\n"
+    "light. A very useful ability that makes\n"
+    "the fairy trio invisible.\n"
+    " ");
 
 
 const u8 gTHSunnymilk2DPokedexText[] = _(
-    "SPECIES_TH_SUNNYMILK2D description line 1\n"
-    "SPECIES_TH_SUNNYMILK2D description line 2\n"
-    "SPECIES_TH_SUNNYMILK2D description line 3\n"
-    "SPECIES_TH_SUNNYMILK2D description line 4\n");
+    "Luna Child, Star Sapphire, and Sunny\n"
+    "Milk used to live in the Forest of Magic.\n"
+    "Now they live behind the Hakurei Shrine.\n"
+    " ");
 
 
 const u8 gTHMeiling1PokedexText[] = _(
-    "SPECIES_TH_MEILING1 description line 1\n"
-    "SPECIES_TH_MEILING1 description line 2\n"
-    "SPECIES_TH_MEILING1 description line 3\n"
-    "SPECIES_TH_MEILING1 description line 4\n");
+    "Very (un)reliable door guard\n"
+    "in a certain mansion. She often\n"
+    "takes a nap while guarding.\n"
+    " ");
 
 
 const u8 gTHMeiling2NPokedexText[] = _(
-    "SPECIES_TH_MEILING2N description line 1\n"
-    "SPECIES_TH_MEILING2N description line 2\n"
-    "SPECIES_TH_MEILING2N description line 3\n"
-    "SPECIES_TH_MEILING2N description line 4\n");
+    "Even though Meiling is a Youkai, she is\n"
+    "kind to humans. But, she will get serious\n"
+    "when intruders enter the mansion.\n"
+    " ");
 
 
 const u8 gTHMeiling2DPokedexText[] = _(
-    "SPECIES_TH_MEILING2D description line 1\n"
-    "SPECIES_TH_MEILING2D description line 2\n"
-    "SPECIES_TH_MEILING2D description line 3\n"
-    "SPECIES_TH_MEILING2D description line 4\n");
+    "Very well trained in controlling\n"
+    "chi and martial arts. She often\n"
+    "becomes Sakuya's punching bag.\n"
+    " ");
 
 
 const u8 gTHMeiling2SPokedexText[] = _(
-    "SPECIES_TH_MEILING2S description line 1\n"
-    "SPECIES_TH_MEILING2S description line 2\n"
-    "SPECIES_TH_MEILING2S description line 3\n"
-    "SPECIES_TH_MEILING2S description line 4\n");
+    "Capable of manipulating chi energy.\n"
+    "This chi energy will strengthen her\n"
+    "defense as well as offense.\n"
+    " ");
 
 
 const u8 gTHKoakuma1PokedexText[] = _(
-    "SPECIES_TH_KOAKUMA1 description line 1\n"
-    "SPECIES_TH_KOAKUMA1 description line 2\n"
-    "SPECIES_TH_KOAKUMA1 description line 3\n"
-    "SPECIES_TH_KOAKUMA1 description line 4\n");
+    "A devil girl with black wings.\n"
+    "Serves her master faithfully.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHKoakuma2NPokedexText[] = _(
-    "SPECIES_TH_KOAKUMA2N description line 1\n"
-    "SPECIES_TH_KOAKUMA2N description line 2\n"
-    "SPECIES_TH_KOAKUMA2N description line 3\n"
-    "SPECIES_TH_KOAKUMA2N description line 4\n");
+    "Koakuma does her activities\n"
+    "inside the Voile Library, sorting\n"
+    "books and assisting her master.\n"
+    " ");
 
 
 const u8 gTHKoakuma2HPokedexText[] = _(
-    "SPECIES_TH_KOAKUMA2H description line 1\n"
-    "SPECIES_TH_KOAKUMA2H description line 2\n"
-    "SPECIES_TH_KOAKUMA2H description line 3\n"
-    "SPECIES_TH_KOAKUMA2H description line 4\n");
+    "Always supporting and\n"
+    "assisting her master for learning\n"
+    "certain kinds of magic.\n"
+    " ");
 
 
 const u8 gTHPatchouli1PokedexText[] = _(
-    "SPECIES_TH_PATCHOULI1 description line 1\n"
-    "SPECIES_TH_PATCHOULI1 description line 2\n"
-    "SPECIES_TH_PATCHOULI1 description line 3\n"
-    "SPECIES_TH_PATCHOULI1 description line 4\n");
+    "A hikikomori girl that always reads\n"
+    "books inside the Voile Library.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHPatchouli2NPokedexText[] = _(
-    "SPECIES_TH_PATCHOULI2N description line 1\n"
-    "SPECIES_TH_PATCHOULI2N description line 2\n"
-    "SPECIES_TH_PATCHOULI2N description line 3\n"
-    "SPECIES_TH_PATCHOULI2N description line 4\n");
+    "Because of her hikikomori life, her\n"
+    "health is lacking. Collapses if she\n"
+    "walks outside for a long time.\n"
+    " ");
 
 
 const u8 gTHPatchouli2APokedexText[] = _(
-    "SPECIES_TH_PATCHOULI2A description line 1\n"
-    "SPECIES_TH_PATCHOULI2A description line 2\n"
-    "SPECIES_TH_PATCHOULI2A description line 3\n"
-    "SPECIES_TH_PATCHOULI2A description line 4\n");
+    "Possesses a large amount of magic\n"
+    "spells. An expert at every element.\n"
+    "The Great Unmoving Library.\n"
+    " ");
 
 
 const u8 gTHPatchouli2DPokedexText[] = _(
-    "SPECIES_TH_PATCHOULI2D description line 1\n"
-    "SPECIES_TH_PATCHOULI2D description line 2\n"
-    "SPECIES_TH_PATCHOULI2D description line 3\n"
-    "SPECIES_TH_PATCHOULI2D description line 4\n");
+    "Master of the elements: Fire, Water,\n"
+    "Wood, Metal, Earth, Sun, and Moon.\n"
+    "She has the Philosopher's Stone.\n"
+    " ");
 
 
 const u8 gTHSakuya1PokedexText[] = _(
-    "SPECIES_TH_SAKUYA1 description line 1\n"
-    "SPECIES_TH_SAKUYA1 description line 2\n"
-    "SPECIES_TH_SAKUYA1 description line 3\n"
-    "SPECIES_TH_SAKUYA1 description line 4\n");
+    "Among the other maids in Scarlet\n"
+    "Devil Mansion, she is the most\n"
+    "valuable maid.\n"
+    " ");
 
 
 const u8 gTHSakuya2NPokedexText[] = _(
-    "SPECIES_TH_SAKUYA2N description line 1\n"
-    "SPECIES_TH_SAKUYA2N description line 2\n"
-    "SPECIES_TH_SAKUYA2N description line 3\n"
-    "SPECIES_TH_SAKUYA2N description line 4\n");
+    "Head maid of the Scarlet Devil Mansion.\n"
+    "Perfect worker and has the ability\n"
+    "to manipulate time.\n"
+    " ");
 
 
 const u8 gTHSakuya2TPokedexText[] = _(
-    "SPECIES_TH_SAKUYA2T description line 1\n"
-    "SPECIES_TH_SAKUYA2T description line 2\n"
-    "SPECIES_TH_SAKUYA2T description line 3\n"
-    "SPECIES_TH_SAKUYA2T description line 4\n");
+    "She possesses the Luna Dial which\n"
+    "allows her to manipulate time. Maybe,\n"
+    "she uses it for cleaning up the mansion.\n"
+    " ");
 
 
 const u8 gTHSakuya2HPokedexText[] = _(
-    "SPECIES_TH_SAKUYA2H description line 1\n"
-    "SPECIES_TH_SAKUYA2H description line 2\n"
-    "SPECIES_TH_SAKUYA2H description line 3\n"
-    "SPECIES_TH_SAKUYA2H description line 4\n");
+    "Sakuya practices magic that summons\n"
+    "knives. She can also manipulate time.\n"
+    "'The Perfect and Elegant Maid.'\n"
+    " ");
 
 
 const u8 gTHRemilia1PokedexText[] = _(
-    "SPECIES_TH_REMILIA1 description line 1\n"
-    "SPECIES_TH_REMILIA1 description line 2\n"
-    "SPECIES_TH_REMILIA1 description line 3\n"
-    "SPECIES_TH_REMILIA1 description line 4\n");
+    "A vampire girl who lived for 500 years.\n"
+    "She has a childish personality.\n"
+    "A young scarlet moon.\n"
+    " ");
 
 
 const u8 gTHRemilia2NPokedexText[] = _(
-    "SPECIES_TH_REMILIA2N description line 1\n"
-    "SPECIES_TH_REMILIA2N description line 2\n"
-    "SPECIES_TH_REMILIA2N description line 3\n"
-    "SPECIES_TH_REMILIA2N description line 4\n");
+    "Remilia is the mistress of the\n"
+    "Scarlet Devil Mansion. She leads\n"
+    "her mansion with charisma.\n"
+    " ");
 
 
 const u8 gTHRemilia2APokedexText[] = _(
-    "SPECIES_TH_REMILIA2A description line 1\n"
-    "SPECIES_TH_REMILIA2A description line 2\n"
-    "SPECIES_TH_REMILIA2A description line 3\n"
-    "SPECIES_TH_REMILIA2A description line 4\n");
+    "Capable of manipulating fate.\n"
+    "Rumors say that she manipulated her\n"
+    "maid's fate.\n"
+    " ");
 
 
 const u8 gTHRemilia2DPokedexText[] = _(
-    "SPECIES_TH_REMILIA2D description line 1\n"
-    "SPECIES_TH_REMILIA2D description line 2\n"
-    "SPECIES_TH_REMILIA2D description line 3\n"
-    "SPECIES_TH_REMILIA2D description line 4\n");
+    "An eternally young scarlet moon\n"
+    "who is capable of controlling fate.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHFlandre1PokedexText[] = _(
-    "SPECIES_TH_FLANDRE1 description line 1\n"
-    "SPECIES_TH_FLANDRE1 description line 2\n"
-    "SPECIES_TH_FLANDRE1 description line 3\n"
-    "SPECIES_TH_FLANDRE1 description line 4\n");
+    "She is prevented from leaving the\n"
+    "mansion by her own sister to prevent a\n"
+    "dangerous situation.\n"
+    " ");
 
 
 const u8 gTHFlandre2NPokedexText[] = _(
-    "SPECIES_TH_FLANDRE2N description line 1\n"
-    "SPECIES_TH_FLANDRE2N description line 2\n"
-    "SPECIES_TH_FLANDRE2N description line 3\n"
-    "SPECIES_TH_FLANDRE2N description line 4\n");
+    "Capable of destroying anything.\n"
+    "An extremely dangerous being.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHFlandre2APokedexText[] = _(
-    "SPECIES_TH_FLANDRE2A description line 1\n"
-    "SPECIES_TH_FLANDRE2A description line 2\n"
-    "SPECIES_TH_FLANDRE2A description line 3\n"
-    "SPECIES_TH_FLANDRE2A description line 4\n");
+    "Her lack of control makes her extremely\n"
+    "dangerous. Do not approach her. She\n"
+    "also wields the Laevatein.\n"
+    " ");
 
 
 const u8 gTHFlandre2SPokedexText[] = _(
-    "SPECIES_TH_FLANDRE2S description line 1\n"
-    "SPECIES_TH_FLANDRE2S description line 2\n"
-    "SPECIES_TH_FLANDRE2S description line 3\n"
-    "SPECIES_TH_FLANDRE2S description line 4\n");
+    "She has an unstable personality, so\n"
+    "she may go wild at anytime. She will\n"
+    "destroy everything in her path.\n"
+    " ");
 
 
 const u8 gTHSatsukiPokedexText[] = _(
-    "SPECIES_TH_SATSUKI description line 1\n"
-    "SPECIES_TH_SATSUKI description line 2\n"
-    "SPECIES_TH_SATSUKI description line 3\n"
-    "SPECIES_TH_SATSUKI description line 4\n");
+    "Rin Satsuki is supposed to exist in\n"
+    "Gensokyo. But, in reality, she never\n"
+    "existed.\n"
+    " ");
 
 
 const u8 gTHLetty1PokedexText[] = _(
-    "SPECIES_TH_LETTY1 description line 1\n"
-    "SPECIES_TH_LETTY1 description line 2\n"
-    "SPECIES_TH_LETTY1 description line 3\n"
-    "SPECIES_TH_LETTY1 description line 4\n");
+    "When Letty comes out, that\n"
+    "means Winter season started.\n"
+    "Letty is Cirno's friend.\n"
+    " ");
 
 
 const u8 gTHLetty2NPokedexText[] = _(
-    "SPECIES_TH_LETTY2N description line 1\n"
-    "SPECIES_TH_LETTY2N description line 2\n"
-    "SPECIES_TH_LETTY2N description line 3\n"
-    "SPECIES_TH_LETTY2N description line 4\n");
+    "Letty can't stand hot temperatures.\n"
+    "Maybe, she would melt if she is\n"
+    "forced to be in hot temperatures.\n"
+    " ");
 
 
 const u8 gTHLetty2DPokedexText[] = _(
-    "SPECIES_TH_LETTY2D description line 1\n"
-    "SPECIES_TH_LETTY2D description line 2\n"
-    "SPECIES_TH_LETTY2D description line 3\n"
-    "SPECIES_TH_LETTY2D description line 4\n");
+    "Capable of manipulating cold.\n"
+    "The area around her would\n"
+    "snow if she appears.\n"
+    " ");
 
 
 const u8 gTHLetty2HPokedexText[] = _(
-    "SPECIES_TH_LETTY2H description line 1\n"
-    "SPECIES_TH_LETTY2H description line 2\n"
-    "SPECIES_TH_LETTY2H description line 3\n"
-    "SPECIES_TH_LETTY2H description line 4\n");
+    "Letty is responsive at fighting.\n"
+    "She will be fighting if there is\n"
+    "a reason.\n"
+    " ");
 
 
 const u8 gTHChen1PokedexText[] = _(
-    "SPECIES_TH_CHEN1 description line 1\n"
-    "SPECIES_TH_CHEN1 description line 2\n"
-    "SPECIES_TH_CHEN1 description line 3\n"
-    "SPECIES_TH_CHEN1 description line 4\n");
+    "One of the nekotama in Gensokyo.\n"
+    "Chen's primary ability is black magic.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHChen2NPokedexText[] = _(
-    "SPECIES_TH_CHEN2N description line 1\n"
-    "SPECIES_TH_CHEN2N description line 2\n"
-    "SPECIES_TH_CHEN2N description line 3\n"
-    "SPECIES_TH_CHEN2N description line 4\n");
+    "Chen serves as a shikigami and\n"
+    "becomes much stronger when\n"
+    "her master is present.\n"
+    " ");
 
 
 const u8 gTHChen2APokedexText[] = _(
-    "SPECIES_TH_CHEN2A description line 1\n"
-    "SPECIES_TH_CHEN2A description line 2\n"
-    "SPECIES_TH_CHEN2A description line 3\n"
-    "SPECIES_TH_CHEN2A description line 4\n");
+    "Her attacks rely on speed and\n"
+    "deceptive movements to confuse\n"
+    "her opponent.\n"
+    " ");
 
 
 const u8 gTHChen2TPokedexText[] = _(
-    "SPECIES_TH_CHEN2T description line 1\n"
-    "SPECIES_TH_CHEN2T description line 2\n"
-    "SPECIES_TH_CHEN2T description line 3\n"
-    "SPECIES_TH_CHEN2T description line 4\n");
+    "Chen is Ran's shikigami, who is\n"
+    "guarding the village of Mayohiga.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHAlice1PokedexText[] = _(
-    "SPECIES_TH_ALICE1 description line 1\n"
-    "SPECIES_TH_ALICE1 description line 2\n"
-    "SPECIES_TH_ALICE1 description line 3\n"
-    "SPECIES_TH_ALICE1 description line 4\n");
+    "A magician who was raised by Shinki\n"
+    "in Makai. She has powerful Grimoire.\n"
+    "But, she never use it recently.\n"
+    " ");
 
 
 const u8 gTHAlice2NPokedexText[] = _(
-    "SPECIES_TH_ALICE2N description line 1\n"
-    "SPECIES_TH_ALICE2N description line 2\n"
-    "SPECIES_TH_ALICE2N description line 3\n"
-    "SPECIES_TH_ALICE2N description line 4\n");
+    "Alice uses dolls as her weapon even\n"
+    "though she has far more powerful\n"
+    "things.\n"
+    " ");
 
 
 const u8 gTHAlice2APokedexText[] = _(
-    "SPECIES_TH_ALICE2A description line 1\n"
-    "SPECIES_TH_ALICE2A description line 2\n"
-    "SPECIES_TH_ALICE2A description line 3\n"
-    "SPECIES_TH_ALICE2A description line 4\n");
+    "Alice is the dollmaster in Gensokyo.\n"
+    "About her personality, she is often\n"
+    "dramatic.\n"
+    " ");
 
 
 const u8 gTHAlice2TPokedexText[] = _(
-    "SPECIES_TH_ALICE2T description line 1\n"
-    "SPECIES_TH_ALICE2T description line 2\n"
-    "SPECIES_TH_ALICE2T description line 3\n"
-    "SPECIES_TH_ALICE2T description line 4\n");
+    "When Alice gets serious, she will\n"
+    "send out many dolls of her creation to\n"
+    "attack enemies.\n"
+    " ");
 
 
 const u8 gTHLilyblack1PokedexText[] = _(
-    "SPECIES_TH_LILYBLACK1 description line 1\n"
-    "SPECIES_TH_LILYBLACK1 description line 2\n"
-    "SPECIES_TH_LILYBLACK1 description line 3\n"
-    "SPECIES_TH_LILYBLACK1 description line 4\n");
+    "Related to Lily White or something.\n"
+    "Maybe, she is also a Messager of Spring.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHLilywhite1PokedexText[] = _(
-    "SPECIES_TH_LILYWHITE1 description line 1\n"
-    "SPECIES_TH_LILYWHITE1 description line 2\n"
-    "SPECIES_TH_LILYWHITE1 description line 3\n"
-    "SPECIES_TH_LILYWHITE1 description line 4\n");
+    "When Lily White is coming, Spring will\n"
+    "come. She is the Envoy of Spring in\n"
+    "Gensokyo.\n"
+    " ");
 
 
 const u8 gTHLilyblack2NPokedexText[] = _(
-    "SPECIES_TH_LILYBLACK2N description line 1\n"
-    "SPECIES_TH_LILYBLACK2N description line 2\n"
-    "SPECIES_TH_LILYBLACK2N description line 3\n"
-    "SPECIES_TH_LILYBLACK2N description line 4\n");
+    "Spring fairy? Her appearance\n"
+    "is exactly the same as Lily White.\n"
+    "Not much data for her.\n"
+    " ");
 
 
 const u8 gTHLilywhite2NPokedexText[] = _(
-    "SPECIES_TH_LILYWHITE2N description line 1\n"
-    "SPECIES_TH_LILYWHITE2N description line 2\n"
-    "SPECIES_TH_LILYWHITE2N description line 3\n"
-    "SPECIES_TH_LILYWHITE2N description line 4\n");
+    "When Spring comes, she would\n"
+    "release a lot of beautiful danmaku.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHLilyblack2APokedexText[] = _(
-    "SPECIES_TH_LILYBLACK2A description line 1\n"
-    "SPECIES_TH_LILYBLACK2A description line 2\n"
-    "SPECIES_TH_LILYBLACK2A description line 3\n"
-    "SPECIES_TH_LILYBLACK2A description line 4\n");
+    "She is Lily White cosplaying as\n"
+    "Shikieiki Yamaxanadu. Herald of\n"
+    "Spring.\n"
+    " ");
 
 
 const u8 gTHLilywhite2APokedexText[] = _(
-    "SPECIES_TH_LILYWHITE2A description line 1\n"
-    "SPECIES_TH_LILYWHITE2A description line 2\n"
-    "SPECIES_TH_LILYWHITE2A description line 3\n"
-    "SPECIES_TH_LILYWHITE2A description line 4\n");
+    "Herald of Spring. Lily White is a\n"
+    "cheerful fairy that throws danmaku\n"
+    "at people when Spring arrives.\n"
+    " ");
 
 
 const u8 gTHLilyblack2SPokedexText[] = _(
-    "SPECIES_TH_LILYBLACK2S description line 1\n"
-    "SPECIES_TH_LILYBLACK2S description line 2\n"
-    "SPECIES_TH_LILYBLACK2S description line 3\n"
-    "SPECIES_TH_LILYBLACK2S description line 4\n");
+    "Cool looking black-colored Lily, eh?\n"
+    "She is actually Lily White dressed in\n"
+    "black.\n"
+    " ");
 
 
 const u8 gTHLilywhite2HPokedexText[] = _(
-    "SPECIES_TH_LILYWHITE2H description line 1\n"
-    "SPECIES_TH_LILYWHITE2H description line 2\n"
-    "SPECIES_TH_LILYWHITE2H description line 3\n"
-    "SPECIES_TH_LILYWHITE2H description line 4\n");
+    "Looking at her beautiful white wings,\n"
+    "your heart become eventually calm.\n"
+    "Yeah, Spring has come.\n"
+    " ");
 
 
 const u8 gTHLunasa1PokedexText[] = _(
-    "SPECIES_TH_LUNASA1 description line 1\n"
-    "SPECIES_TH_LUNASA1 description line 2\n"
-    "SPECIES_TH_LUNASA1 description line 3\n"
-    "SPECIES_TH_LUNASA1 description line 4\n");
+    "Prismriver that uses a Violin as\n"
+    "her instrument. She produces\n"
+    "melancholic sounds.\n"
+    " ");
 
 
 const u8 gTHLunasa2NPokedexText[] = _(
-    "SPECIES_TH_LUNASA2N description line 1\n"
-    "SPECIES_TH_LUNASA2N description line 2\n"
-    "SPECIES_TH_LUNASA2N description line 3\n"
-    "SPECIES_TH_LUNASA2N description line 4\n");
+    "The oldest one of Prismriver sisters.\n"
+    "Lunasa with her sisters always performs\n"
+    "in a band together.\n"
+    " ");
 
 
 const u8 gTHLunasa2HPokedexText[] = _(
-    "SPECIES_TH_LUNASA2H description line 1\n"
-    "SPECIES_TH_LUNASA2H description line 2\n"
-    "SPECIES_TH_LUNASA2H description line 3\n"
-    "SPECIES_TH_LUNASA2H description line 4\n");
+    "Lunasa's violin produces melancholic\n"
+    "tunes while performing in the band.\n"
+    "People who hear it may cry.\n"
+    " ");
 
 
 const u8 gTHMerlin1PokedexText[] = _(
-    "SPECIES_TH_MERLIN1 description line 1\n"
-    "SPECIES_TH_MERLIN1 description line 2\n"
-    "SPECIES_TH_MERLIN1 description line 3\n"
-    "SPECIES_TH_MERLIN1 description line 4\n");
+    "One of Prismriver sister who\n"
+    "uses trumpet as her instrument.\n"
+    "Produces joyful songs.\n"
+    " ");
 
 
 const u8 gTHMerlin2NPokedexText[] = _(
-    "SPECIES_TH_MERLIN2N description line 1\n"
-    "SPECIES_TH_MERLIN2N description line 2\n"
-    "SPECIES_TH_MERLIN2N description line 3\n"
-    "SPECIES_TH_MERLIN2N description line 4\n");
+    "The middle one of Prismriver sisters.\n"
+    "Merlin with her sisters always perform\n"
+    "in a band together.\n"
+    " ");
 
 
 const u8 gTHMerlin2HPokedexText[] = _(
-    "SPECIES_TH_MERLIN2H description line 1\n"
-    "SPECIES_TH_MERLIN2H description line 2\n"
-    "SPECIES_TH_MERLIN2H description line 3\n"
-    "SPECIES_TH_MERLIN2H description line 4\n");
+    "Among the three Prismriver Sisters,\n"
+    "Merlin holds the most magical power.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHLyrica1PokedexText[] = _(
-    "SPECIES_TH_LYRICA1 description line 1\n"
-    "SPECIES_TH_LYRICA1 description line 2\n"
-    "SPECIES_TH_LYRICA1 description line 3\n"
-    "SPECIES_TH_LYRICA1 description line 4\n");
+    "Lyrica is a keybord player in Prismriver\n"
+    "Sisters' band. Produces the fantasia\n"
+    "song.\n"
+    " ");
 
 
 const u8 gTHLyrica2NPokedexText[] = _(
-    "SPECIES_TH_LYRICA2N description line 1\n"
-    "SPECIES_TH_LYRICA2N description line 2\n"
-    "SPECIES_TH_LYRICA2N description line 3\n"
-    "SPECIES_TH_LYRICA2N description line 4\n");
+    "The youngest one of the Prismriver\n"
+    "Sisters. Lyrica with her sisters always\n"
+    "perform in a band together.\n"
+    " ");
 
 
 const u8 gTHLyrica2HPokedexText[] = _(
-    "SPECIES_TH_LYRICA2H description line 1\n"
-    "SPECIES_TH_LYRICA2H description line 2\n"
-    "SPECIES_TH_LYRICA2H description line 3\n"
-    "SPECIES_TH_LYRICA2H description line 4\n");
+    "Lyrica is skilled in all kinds of\n"
+    "instruments, but she usually plays the\n"
+    "keyboard or percussion.\n"
+    " ");
 
 
 const u8 gTHYoumu1PokedexText[] = _(
-    "SPECIES_TH_YOUMU1 description line 1\n"
-    "SPECIES_TH_YOUMU1 description line 2\n"
-    "SPECIES_TH_YOUMU1 description line 3\n"
-    "SPECIES_TH_YOUMU1 description line 4\n");
+    "A very unique being. She has a human\n"
+    "body and a ghost body.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHYoumu2NPokedexText[] = _(
-    "SPECIES_TH_YOUMU2N description line 1\n"
-    "SPECIES_TH_YOUMU2N description line 2\n"
-    "SPECIES_TH_YOUMU2N description line 3\n"
-    "SPECIES_TH_YOUMU2N description line 4\n");
+    "With her two katanas, she protects\n"
+    "her mistress. She also does the house\n"
+    "work, which includes gardening.\n"
+    " ");
 
 
 const u8 gTHYoumu2DPokedexText[] = _(
-    "SPECIES_TH_YOUMU2D description line 1\n"
-    "SPECIES_TH_YOUMU2D description line 2\n"
-    "SPECIES_TH_YOUMU2D description line 3\n"
-    "SPECIES_TH_YOUMU2D description line 4\n");
+    "'If you are the culprit,\n"
+    "I will slash you. And if you are not the\n"
+    "culprit, I will slash you and move on'\n"
+    " ");
 
 
 const u8 gTHYoumu2SPokedexText[] = _(
-    "SPECIES_TH_YOUMU2S description line 1\n"
-    "SPECIES_TH_YOUMU2S description line 2\n"
-    "SPECIES_TH_YOUMU2S description line 3\n"
-    "SPECIES_TH_YOUMU2S description line 4\n");
+    "Youmu's sword skills and speed\n"
+    "are amazing. She can move at\n"
+    "relativistic speed.\n"
+    " ");
 
 
 const u8 gTHYuyuko1PokedexText[] = _(
-    "SPECIES_TH_YUYUKO1 description line 1\n"
-    "SPECIES_TH_YUYUKO1 description line 2\n"
-    "SPECIES_TH_YUYUKO1 description line 3\n"
-    "SPECIES_TH_YUYUKO1 description line 4\n");
+    "Yuyuko is carefree ghost.\n"
+    "What she does is eat food\n"
+    "and sleep.\n"
+    " ");
 
 
 const u8 gTHYuyuko2NPokedexText[] = _(
-    "SPECIES_TH_YUYUKO2N description line 1\n"
-    "SPECIES_TH_YUYUKO2N description line 2\n"
-    "SPECIES_TH_YUYUKO2N description line 3\n"
-    "SPECIES_TH_YUYUKO2N description line 4\n");
+    "She is the princess of the Netherworld,\n"
+    "Hakugyokurou. She lost all her\n"
+    "memories about her life before death.\n"
+    " ");
 
 
 const u8 gTHYuyuko2APokedexText[] = _(
-    "SPECIES_TH_YUYUKO2A description line 1\n"
-    "SPECIES_TH_YUYUKO2A description line 2\n"
-    "SPECIES_TH_YUYUKO2A description line 3\n"
-    "SPECIES_TH_YUYUKO2A description line 4\n");
+    "Capable of invoking death to mortals.\n"
+    "She is very smart and is the only\n"
+    "person who understands Yukari.\n"
+    " ");
 
 
 const u8 gTHYuyuko2DPokedexText[] = _(
-    "SPECIES_TH_YUYUKO2D description line 1\n"
-    "SPECIES_TH_YUYUKO2D description line 2\n"
-    "SPECIES_TH_YUYUKO2D description line 3\n"
-    "SPECIES_TH_YUYUKO2D description line 4\n");
+    "Long ago, after her death from suicide,\n"
+    "her body was used to place a seal\n"
+    "on the Saigyou Ayakashi.\n"
+    " ");
 
 
 const u8 gTHRan1PokedexText[] = _(
-    "SPECIES_TH_RAN1 description line 1\n"
-    "SPECIES_TH_RAN1 description line 2\n"
-    "SPECIES_TH_RAN1 description line 3\n"
-    "SPECIES_TH_RAN1 description line 4\n");
+    "Ran is the shikigami of a certain youkai\n"
+    "that lives near the edge of Gensokyo.\n"
+    "So Ran could not use all her power.\n"
+    " ");
 
 
 const u8 gTHRan2NPokedexText[] = _(
-    "SPECIES_TH_RAN2N description line 1\n"
-    "SPECIES_TH_RAN2N description line 2\n"
-    "SPECIES_TH_RAN2N description line 3\n"
-    "SPECIES_TH_RAN2N description line 4\n");
+    "Ran is a nine-tailed demon fox.\n"
+    "She has tremendous spiritual\n"
+    "power.\n"
+    " ");
 
 
 const u8 gTHRan2APokedexText[] = _(
-    "SPECIES_TH_RAN2A description line 1\n"
-    "SPECIES_TH_RAN2A description line 2\n"
-    "SPECIES_TH_RAN2A description line 3\n"
-    "SPECIES_TH_RAN2A description line 4\n");
+    "Despite that she is a Shikigami. Ran has\n"
+    "her own nekotama shikigami. She loves\n"
+    "both her master and her shikigami.\n"
+    " ");
 
 
 const u8 gTHRan2HPokedexText[] = _(
-    "SPECIES_TH_RAN2H description line 1\n"
-    "SPECIES_TH_RAN2H description line 2\n"
-    "SPECIES_TH_RAN2H description line 3\n"
-    "SPECIES_TH_RAN2H description line 4\n");
+    "Ran is a master mathematician. She\n"
+    "was able to calculate the width of the\n"
+    "Sanzu Rivier.\n"
+    " ");
 
 
 const u8 gTHYukari1PokedexText[] = _(
-    "SPECIES_TH_YUKARI1 description line 1\n"
-    "SPECIES_TH_YUKARI1 description line 2\n"
-    "SPECIES_TH_YUKARI1 description line 3\n"
-    "SPECIES_TH_YUKARI1 description line 4\n");
+    "Capable of manipulating the border\n"
+    "of many things. This means she can\n"
+    "travel using the border's gap.\n"
+    " ");
 
 
 const u8 gTHYukari2NPokedexText[] = _(
-    "SPECIES_TH_YUKARI2N description line 1\n"
-    "SPECIES_TH_YUKARI2N description line 2\n"
-    "SPECIES_TH_YUKARI2N description line 3\n"
-    "SPECIES_TH_YUKARI2N description line 4\n");
+    "Yukari is a lazy girl. She often\n"
+    "sleeps in her own house.\n"
+    "Hibernation mode.\n"
+    " ");
 
 
 const u8 gTHYukari2DPokedexText[] = _(
-    "SPECIES_TH_YUKARI2D description line 1\n"
-    "SPECIES_TH_YUKARI2D description line 2\n"
-    "SPECIES_TH_YUKARI2D description line 3\n"
-    "SPECIES_TH_YUKARI2D description line 4\n");
+    "Her manipulation over borders\n"
+    "allows her to travel to outside\n"
+    "world.\n"
+    " ");
 
 
 const u8 gTHYukari2TPokedexText[] = _(
-    "SPECIES_TH_YUKARI2T description line 1\n"
-    "SPECIES_TH_YUKARI2T description line 2\n"
-    "SPECIES_TH_YUKARI2T description line 3\n"
-    "SPECIES_TH_YUKARI2T description line 4\n");
+    "Yukari is the one who helped create\n"
+    "the Hakurei Border around Gensokyo.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHSuika1PokedexText[] = _(
-    "SPECIES_TH_SUIKA1 description line 1\n"
-    "SPECIES_TH_SUIKA1 description line 2\n"
-    "SPECIES_TH_SUIKA1 description line 3\n"
-    "SPECIES_TH_SUIKA1 description line 4\n");
+    "A cheerful oni with two horns\n"
+    "on her head. Sake is her\n"
+    "favorite drink.\n"
+    " ");
 
 
 const u8 gTHSuika2NPokedexText[] = _(
-    "SPECIES_TH_SUIKA2N description line 1\n"
-    "SPECIES_TH_SUIKA2N description line 2\n"
-    "SPECIES_TH_SUIKA2N description line 3\n"
-    "SPECIES_TH_SUIKA2N description line 4\n");
+    "Drunken master in Gensokyo. Despite\n"
+    "her childish appearance, she is\n"
+    "physically the strongest in Gensokyo.\n"
+    " ");
 
 
 const u8 gTHSuika2APokedexText[] = _(
-    "SPECIES_TH_SUIKA2A description line 1\n"
-    "SPECIES_TH_SUIKA2A description line 2\n"
-    "SPECIES_TH_SUIKA2A description line 3\n"
-    "SPECIES_TH_SUIKA2A description line 4\n");
+    "Has the ability to manipulate density.\n"
+    "She has bad manners, and can be very\n"
+    "observant and harshly critical of others.\n"
+    " ");
 
 
 const u8 gTHSuika2TPokedexText[] = _(
-    "SPECIES_TH_SUIKA2T description line 1\n"
-    "SPECIES_TH_SUIKA2T description line 2\n"
-    "SPECIES_TH_SUIKA2T description line 3\n"
-    "SPECIES_TH_SUIKA2T description line 4\n");
+    "Suika can make many tiny copies of\n"
+    "herself. She can also turn herself into\n"
+    "mist. Be careful if you see mist.\n"
+    " ");
 
 
 const u8 gTHWriggle1PokedexText[] = _(
-    "SPECIES_TH_WRIGGLE1 description line 1\n"
-    "SPECIES_TH_WRIGGLE1 description line 2\n"
-    "SPECIES_TH_WRIGGLE1 description line 3\n"
-    "SPECIES_TH_WRIGGLE1 description line 4\n");
+    "Wanders in the night. She is\n"
+    "able to control bugs. Insecticide\n"
+    "would be effective against her.\n"
+    " ");
 
 
 const u8 gTHWriggle2NPokedexText[] = _(
-    "SPECIES_TH_WRIGGLE2N description line 1\n"
-    "SPECIES_TH_WRIGGLE2N description line 2\n"
-    "SPECIES_TH_WRIGGLE2N description line 3\n"
-    "SPECIES_TH_WRIGGLE2N description line 4\n");
+    "Wriggle's appearance is more like\n"
+    "a boy than a girl. She is often\n"
+    "classified as bakwartet.\n"
+    " ");
 
 
 const u8 gTHWriggle2DPokedexText[] = _(
-    "SPECIES_TH_WRIGGLE2D description line 1\n"
-    "SPECIES_TH_WRIGGLE2D description line 2\n"
-    "SPECIES_TH_WRIGGLE2D description line 3\n"
-    "SPECIES_TH_WRIGGLE2D description line 4\n");
+    "Wriggle is a Firefly Youkai. She has a\n"
+    "short memory, so she fell for the very\n"
+    "same trap twice.\n"
+    " ");
 
 
 const u8 gTHWriggle2SPokedexText[] = _(
-    "SPECIES_TH_WRIGGLE2S description line 1\n"
-    "SPECIES_TH_WRIGGLE2S description line 2\n"
-    "SPECIES_TH_WRIGGLE2S description line 3\n"
-    "SPECIES_TH_WRIGGLE2S description line 4\n");
+    "Some of the bugs that Wriggle controls\n"
+    "are poisonous. Be careful when fighting\n"
+    "her.\n"
+    " ");
 
 
 const u8 gTHMystia1PokedexText[] = _(
-    "SPECIES_TH_MYSTIA1 description line 1\n"
-    "SPECIES_TH_MYSTIA1 description line 2\n"
-    "SPECIES_TH_MYSTIA1 description line 3\n"
-    "SPECIES_TH_MYSTIA1 description line 4\n");
+    "A night-bird youkai sparrow who likes\n"
+    "singing. She cannot read a book.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHMystia2NPokedexText[] = _(
-    "SPECIES_TH_MYSTIA2N description line 1\n"
-    "SPECIES_TH_MYSTIA2N description line 2\n"
-    "SPECIES_TH_MYSTIA2N description line 3\n"
-    "SPECIES_TH_MYSTIA2N description line 4\n");
+    "Her song causes night blindness to\n"
+    "anyone that hears it. She can now\n"
+    "read books.\n"
+    " ");
 
 
 const u8 gTHMystia2APokedexText[] = _(
-    "SPECIES_TH_MYSTIA2A description line 1\n"
-    "SPECIES_TH_MYSTIA2A description line 2\n"
-    "SPECIES_TH_MYSTIA2A description line 3\n"
-    "SPECIES_TH_MYSTIA2A description line 4\n");
+    "Sometimes, Mystia teams up with\n"
+    "Prismriver Sisters to perform in the band\n"
+    "with her beautiful voice.\n"
+    " ");
 
 
 const u8 gTHMystia2HPokedexText[] = _(
-    "SPECIES_TH_MYSTIA2H description line 1\n"
-    "SPECIES_TH_MYSTIA2H description line 2\n"
-    "SPECIES_TH_MYSTIA2H description line 3\n"
-    "SPECIES_TH_MYSTIA2H description line 4\n");
+    "Mystia runs a grilled lamprey stand. Her\n"
+    "food is very tasty. Her singing can\n"
+    "insanity though.\n"
+    " ");
 
 
 const u8 gTHKeine1PokedexText[] = _(
-    "SPECIES_TH_KEINE1 description line 1\n"
-    "SPECIES_TH_KEINE1 description line 2\n"
-    "SPECIES_TH_KEINE1 description line 3\n"
-    "SPECIES_TH_KEINE1 description line 4\n");
+    "Keine lives inside Bamboo Forest.\n"
+    "She protects the Human Village from\n"
+    "youkai by manipulating histories.\n"
+    " ");
 
 
 const u8 gTHKeine2NPokedexText[] = _(
-    "SPECIES_TH_KEINE2N description line 1\n"
-    "SPECIES_TH_KEINE2N description line 2\n"
-    "SPECIES_TH_KEINE2N description line 3\n"
-    "SPECIES_TH_KEINE2N description line 4\n");
+    "Keine is a teacher in the Human Village.\n"
+    "She has good commonsense and she is\n"
+    "a very reasonable person.\n"
+    " ");
 
 
 const u8 gTHKeine2APokedexText[] = _(
-    "SPECIES_TH_KEINE2A description line 1\n"
-    "SPECIES_TH_KEINE2A description line 2\n"
-    "SPECIES_TH_KEINE2A description line 3\n"
-    "SPECIES_TH_KEINE2A description line 4\n");
+    "Has the ability to conceal history.\n"
+    "Makes something that was there\n"
+    "become never there.\n"
+    " ");
 
 
 const u8 gTHKeine2DPokedexText[] = _(
-    "SPECIES_TH_KEINE2D description line 1\n"
-    "SPECIES_TH_KEINE2D description line 2\n"
-    "SPECIES_TH_KEINE2D description line 3\n"
-    "SPECIES_TH_KEINE2D description line 4\n");
+    "Keine runs a school in the human\n"
+    "village. She defends the village if\n"
+    "there is danger to it.\n"
+    " ");
 
 
 const u8 gTHKeine2HPokedexText[] = _(
-    "SPECIES_TH_KEINE2H description line 1\n"
-    "SPECIES_TH_KEINE2H description line 2\n"
-    "SPECIES_TH_KEINE2H description line 3\n"
-    "SPECIES_TH_KEINE2H description line 4\n");
+    "She is a half beast and will transform\n"
+    "during the full moon. She will headbutt\n"
+    "you if you do not pay attention in class.\n"
+    " ");
 
 
 const u8 gTHTewi1PokedexText[] = _(
-    "SPECIES_TH_TEWI1 description line 1\n"
-    "SPECIES_TH_TEWI1 description line 2\n"
-    "SPECIES_TH_TEWI1 description line 3\n"
-    "SPECIES_TH_TEWI1 description line 4\n");
+    "'Shiawase Usagi'. Tewi could\n"
+    "make someone who meets her\n"
+    "have good fortune.\n"
+    " ");
 
 
 const u8 gTHTewi2NPokedexText[] = _(
-    "SPECIES_TH_TEWI2N description line 1\n"
-    "SPECIES_TH_TEWI2N description line 2\n"
-    "SPECIES_TH_TEWI2N description line 3\n"
-    "SPECIES_TH_TEWI2N description line 4\n");
+    "A Rabbit of Happiness. If you\n"
+    "see her, you will have good\n"
+    "luck.\n"
+    " ");
 
 
 const u8 gTHTewi2APokedexText[] = _(
-    "SPECIES_TH_TEWI2A description line 1\n"
-    "SPECIES_TH_TEWI2A description line 2\n"
-    "SPECIES_TH_TEWI2A description line 3\n"
-    "SPECIES_TH_TEWI2A description line 4\n");
+    "An epic rabbit with sharp tongue.\n"
+    "She is a good rabbit that would\n"
+    "bring happiness.\n"
+    " ");
 
 
 const u8 gTHTewi2DPokedexText[] = _(
-    "SPECIES_TH_TEWI2D description line 1\n"
-    "SPECIES_TH_TEWI2D description line 2\n"
-    "SPECIES_TH_TEWI2D description line 3\n"
-    "SPECIES_TH_TEWI2D description line 4\n");
+    "Tewi may look young, but she is over\n"
+    "a thousand years old. She is wise and\n"
+    "smart.\n"
+    " ");
 
 
 const u8 gTHReisen1PokedexText[] = _(
-    "SPECIES_TH_REISEN1 description line 1\n"
-    "SPECIES_TH_REISEN1 description line 2\n"
-    "SPECIES_TH_REISEN1 description line 3\n"
-    "SPECIES_TH_REISEN1 description line 4\n");
+    "Lived in Lunar Capital in the\n"
+    "past. But, now she lives in\n"
+    "Gensokyo after fleeing from the Moon.\n"
+    " ");
 
 
 const u8 gTHReisen2NPokedexText[] = _(
-    "SPECIES_TH_REISEN2N description line 1\n"
-    "SPECIES_TH_REISEN2N description line 2\n"
-    "SPECIES_TH_REISEN2N description line 3\n"
-    "SPECIES_TH_REISEN2N description line 4\n");
+    "Possesses ability to control\n"
+    "wavelengths which can be used\n"
+    "to disrupt her opponent.\n"
+    " ");
 
 
 const u8 gTHReisen2DPokedexText[] = _(
-    "SPECIES_TH_REISEN2D description line 1\n"
-    "SPECIES_TH_REISEN2D description line 2\n"
-    "SPECIES_TH_REISEN2D description line 3\n"
-    "SPECIES_TH_REISEN2D description line 4\n");
+    "Lunatic Red Eyes. What\n"
+    "dangerous eyes that she has.\n"
+    "Don t look at them!\n"
+    " ");
 
 
 const u8 gTHReisen2TPokedexText[] = _(
-    "SPECIES_TH_REISEN2T description line 1\n"
-    "SPECIES_TH_REISEN2T description line 2\n"
-    "SPECIES_TH_REISEN2T description line 3\n"
-    "SPECIES_TH_REISEN2T description line 4\n");
+    "If you look into her red eyes,\n"
+    "you will see various illusions.\n"
+    "This is caused by her ability.\n"
+    " ");
 
 
 const u8 gTHGyokutoPokedexText[] = _(
-    "SPECIES_TH_GYOKUTO description line 1\n"
-    "SPECIES_TH_GYOKUTO description line 2\n"
-    "SPECIES_TH_GYOKUTO description line 3\n"
-    "SPECIES_TH_GYOKUTO description line 4\n");
+    "A rabbit from the moon. They serve as\n"
+    "a defense force for the Lunarians, but\n"
+    "most of them are cowards.\n"
+    " ");
 
 
 const u8 gTHEirin1PokedexText[] = _(
-    "SPECIES_TH_EIRIN1 description line 1\n"
-    "SPECIES_TH_EIRIN1 description line 2\n"
-    "SPECIES_TH_EIRIN1 description line 3\n"
-    "SPECIES_TH_EIRIN1 description line 4\n");
+    "Comes from the moon with certain\n"
+    "people. She could make many\n"
+    "kinds of medicines.\n"
+    " ");
 
 
 const u8 gTHEirin2NPokedexText[] = _(
-    "SPECIES_TH_EIRIN2N description line 1\n"
-    "SPECIES_TH_EIRIN2N description line 2\n"
-    "SPECIES_TH_EIRIN2N description line 3\n"
-    "SPECIES_TH_EIRIN2N description line 4\n");
+    "Once, Eirin was the teacher\n"
+    "of two princess sisters on the Moon.\n"
+    "Now, she is a doctor in Gensokyo.\n"
+    " ");
 
 
 const u8 gTHEirin2APokedexText[] = _(
-    "SPECIES_TH_EIRIN2A description line 1\n"
-    "SPECIES_TH_EIRIN2A description line 2\n"
-    "SPECIES_TH_EIRIN2A description line 3\n"
-    "SPECIES_TH_EIRIN2A description line 4\n");
+    "Eirin lives in Eientei with Kaguya,\n"
+    "Reisen, and other rabbits after\n"
+    "fleeing from the Moon.\n"
+    " ");
 
 
 const u8 gTHEirin2HPokedexText[] = _(
-    "SPECIES_TH_EIRIN2H description line 1\n"
-    "SPECIES_TH_EIRIN2H description line 2\n"
-    "SPECIES_TH_EIRIN2H description line 3\n"
-    "SPECIES_TH_EIRIN2H description line 4\n");
+    "The Brain of the Moon.\n"
+    "She could make the forbidden\n"
+    "Hourai Elixir with Kaguya's help.\n"
+    " ");
 
 
 const u8 gTHKaguya1PokedexText[] = _(
-    "SPECIES_TH_KAGUYA1 description line 1\n"
-    "SPECIES_TH_KAGUYA1 description line 2\n"
-    "SPECIES_TH_KAGUYA1 description line 3\n"
-    "SPECIES_TH_KAGUYA1 description line 4\n");
+    "A princess who fled from the moon.\n"
+    "She is a hikikomori who stays inside\n"
+    "her house.\n"
+    " ");
 
 
 const u8 gTHKaguya2NPokedexText[] = _(
-    "SPECIES_TH_KAGUYA2N description line 1\n"
-    "SPECIES_TH_KAGUYA2N description line 2\n"
-    "SPECIES_TH_KAGUYA2N description line 3\n"
-    "SPECIES_TH_KAGUYA2N description line 4\n");
+    "She is often playing with Mokou. Their\n"
+    "way of  playing  includes killing each\n"
+    "other.\n"
+    " ");
 
 
 const u8 gTHKaguya2APokedexText[] = _(
-    "SPECIES_TH_KAGUYA2A description line 1\n"
-    "SPECIES_TH_KAGUYA2A description line 2\n"
-    "SPECIES_TH_KAGUYA2A description line 3\n"
-    "SPECIES_TH_KAGUYA2A description line 4\n");
+    "Kaguya has a power to manipulate\n"
+    "the eternity and the momentary.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHKaguya2DPokedexText[] = _(
-    "SPECIES_TH_KAGUYA2D description line 1\n"
-    "SPECIES_TH_KAGUYA2D description line 2\n"
-    "SPECIES_TH_KAGUYA2D description line 3\n"
-    "SPECIES_TH_KAGUYA2D description line 4\n");
+    "Kaguya Houraisan, Lunatic Princess.\n"
+    "She shows off many of her unique\n"
+    "treasures on exhibitions or duels.\n"
+    " ");
 
 
 const u8 gTHMokou1PokedexText[] = _(
-    "SPECIES_TH_MOKOU1 description line 1\n"
-    "SPECIES_TH_MOKOU1 description line 2\n"
-    "SPECIES_TH_MOKOU1 description line 3\n"
-    "SPECIES_TH_MOKOU1 description line 4\n");
+    "Mokou is a human. She became\n"
+    "immortal after she drank the Hourai\n"
+    "Elixir.\n"
+    " ");
 
 
 const u8 gTHMokou2NPokedexText[] = _(
-    "SPECIES_TH_MOKOU2N description line 1\n"
-    "SPECIES_TH_MOKOU2N description line 2\n"
-    "SPECIES_TH_MOKOU2N description line 3\n"
-    "SPECIES_TH_MOKOU2N description line 4\n");
+    "Capable of manipulating fire and has\n"
+    "immortality. She hates Kaguya and\n"
+    "attempts to take revenge.\n"
+    " ");
 
 
 const u8 gTHMokou2APokedexText[] = _(
-    "SPECIES_TH_MOKOU2A description line 1\n"
-    "SPECIES_TH_MOKOU2A description line 2\n"
-    "SPECIES_TH_MOKOU2A description line 3\n"
-    "SPECIES_TH_MOKOU2A description line 4\n");
+    "Nowdays, Mokou lives in Bamboo\n"
+    "forest. She guides lost people out\n"
+    "of the forest.\n"
+    " ");
 
 
 const u8 gTHMokou2DPokedexText[] = _(
-    "SPECIES_TH_MOKOU2D description line 1\n"
-    "SPECIES_TH_MOKOU2D description line 2\n"
-    "SPECIES_TH_MOKOU2D description line 3\n"
-    "SPECIES_TH_MOKOU2D description line 4\n");
+    "Extends all her power. The phoenix\n"
+    "wings appear on her back.\n"
+    "Possessed by the Phoenix.\n"
+    " ");
 
 
 const u8 gTHToyohime1PokedexText[] = _(
-    "SPECIES_TH_TOYOHIME1 description line 1\n"
-    "SPECIES_TH_TOYOHIME1 description line 2\n"
-    "SPECIES_TH_TOYOHIME1 description line 3\n"
-    "SPECIES_TH_TOYOHIME1 description line 4\n");
+    "A Lunarian princess, one of the\n"
+    "Watatsuki sisters. She once had a\n"
+    "pet which ran away to earth.\n"
+    " ");
 
 
 const u8 gTHToyohime2NPokedexText[] = _(
-    "SPECIES_TH_TOYOHIME2N description line 1\n"
-    "SPECIES_TH_TOYOHIME2N description line 2\n"
-    "SPECIES_TH_TOYOHIME2N description line 3\n"
-    "SPECIES_TH_TOYOHIME2N description line 4\n");
+    "She can manipulate the boundaries\n"
+    "between the Earth and Moon, and\n"
+    "between the scientific and fantastic.\n"
+    " ");
 
 
 const u8 gTHToyohime2TPokedexText[] = _(
-    "SPECIES_TH_TOYOHIME2T description line 1\n"
-    "SPECIES_TH_TOYOHIME2T description line 2\n"
-    "SPECIES_TH_TOYOHIME2T description line 3\n"
-    "SPECIES_TH_TOYOHIME2T description line 4\n");
+    "Eirin's student. A very serious person\n"
+    "and idolizes Eirin. She carries a fan\n"
+    "that can inflict mass destruction.\n"
+    " ");
 
 
 const u8 gTHYorihime1PokedexText[] = _(
-    "SPECIES_TH_YORIHIME1 description line 1\n"
-    "SPECIES_TH_YORIHIME1 description line 2\n"
-    "SPECIES_TH_YORIHIME1 description line 3\n"
-    "SPECIES_TH_YORIHIME1 description line 4\n");
+    "One of Watatsuki sisters. She is a very\n"
+    "strong lunarian. She wields a sword for\n"
+    "attacking.\n"
+    " ");
 
 
 const u8 gTHYorihime2NPokedexText[] = _(
-    "SPECIES_TH_YORIHIME2N description line 1\n"
-    "SPECIES_TH_YORIHIME2N description line 2\n"
-    "SPECIES_TH_YORIHIME2N description line 3\n"
-    "SPECIES_TH_YORIHIME2N description line 4\n");
+    "Watatsuki no Yorihime is her name.\n"
+    "She carries a sword and can summon\n"
+    "godesses.\n"
+    " ");
 
 
 const u8 gTHYorihime2SPokedexText[] = _(
-    "SPECIES_TH_YORIHIME2S description line 1\n"
-    "SPECIES_TH_YORIHIME2S description line 2\n"
-    "SPECIES_TH_YORIHIME2S description line 3\n"
-    "SPECIES_TH_YORIHIME2S description line 4\n");
+    "With the ability to summon godesses\n"
+    "and her formidable sword skills,\n"
+    "she is a fearsome opponent indeed.\n"
+    " ");
 
 
 const u8 gTHAya1PokedexText[] = _(
-    "SPECIES_TH_AYA1 description line 1\n"
-    "SPECIES_TH_AYA1 description line 2\n"
-    "SPECIES_TH_AYA1 description line 3\n"
-    "SPECIES_TH_AYA1 description line 4\n");
+    "Classified as tengu youkai. Lives in\n"
+    "Youkai Mountain. She claims to be\n"
+    "the fastest in Gensokyo.\n"
+    " ");
 
 
 const u8 gTHAya2NPokedexText[] = _(
-    "SPECIES_TH_AYA2N description line 1\n"
-    "SPECIES_TH_AYA2N description line 2\n"
-    "SPECIES_TH_AYA2N description line 3\n"
-    "SPECIES_TH_AYA2N description line 4\n");
+    "A traditional reporter of Gensokyo.\n"
+    "She owns the Bunbunmaru Newspaper.\n"
+    "Most of her news is embellished.\n"
+    " ");
 
 
 const u8 gTHAya2SPokedexText[] = _(
-    "SPECIES_TH_AYA2S description line 1\n"
-    "SPECIES_TH_AYA2S description line 2\n"
-    "SPECIES_TH_AYA2S description line 3\n"
-    "SPECIES_TH_AYA2S description line 4\n");
+    "This Aya is the fastest in Gensokyo.\n"
+    "No one else could match her speed.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHAya2TPokedexText[] = _(
-    "SPECIES_TH_AYA2T description line 1\n"
-    "SPECIES_TH_AYA2T description line 2\n"
-    "SPECIES_TH_AYA2T description line 3\n"
-    "SPECIES_TH_AYA2T description line 4\n");
+    "Occasionally, Lord Tenma orders Aya\n"
+    "to check Youkai Mountain for intruders.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHMedicine1PokedexText[] = _(
-    "SPECIES_TH_MEDICINE1 description line 1\n"
-    "SPECIES_TH_MEDICINE1 description line 2\n"
-    "SPECIES_TH_MEDICINE1 description line 3\n"
-    "SPECIES_TH_MEDICINE1 description line 4\n");
+    "Actually, Medicine is a doll which\n"
+    "was turned into youkai. She lives\n"
+    "in the Nameless Hill.\n"
+    " ");
 
 
 const u8 gTHMedicine2NPokedexText[] = _(
-    "SPECIES_TH_MEDICINE2N description line 1\n"
-    "SPECIES_TH_MEDICINE2N description line 2\n"
-    "SPECIES_TH_MEDICINE2N description line 3\n"
-    "SPECIES_TH_MEDICINE2N description line 4\n");
+    "She is a novice doll youkai.\n"
+    "Capable to manipulate poison.\n"
+    "Attacks with suzuran's poison.\n"
+    " ");
 
 
 const u8 gTHMedicine2APokedexText[] = _(
-    "SPECIES_TH_MEDICINE2A description line 1\n"
-    "SPECIES_TH_MEDICINE2A description line 2\n"
-    "SPECIES_TH_MEDICINE2A description line 3\n"
-    "SPECIES_TH_MEDICINE2A description line 4\n");
+    "She protects the suzuran field at\n"
+    "all cost. She will attack whenever\n"
+    "someone trespasses the suzuran field.\n"
+    " ");
 
 
 const u8 gTHMedicine2SPokedexText[] = _(
-    "SPECIES_TH_MEDICINE2S description line 1\n"
-    "SPECIES_TH_MEDICINE2S description line 2\n"
-    "SPECIES_TH_MEDICINE2S description line 3\n"
-    "SPECIES_TH_MEDICINE2S description line 4\n");
+    "A doll youkai that can manipulate\n"
+    "poison. Don't touch her or you will\n"
+    "get poisoned.\n"
+    " ");
 
 
 const u8 gTHMedicine2TPokedexText[] = _(
-    "SPECIES_TH_MEDICINE2T description line 1\n"
-    "SPECIES_TH_MEDICINE2T description line 2\n"
-    "SPECIES_TH_MEDICINE2T description line 3\n"
-    "SPECIES_TH_MEDICINE2T description line 4\n");
+    "She wishes for doll-emancipation.\n"
+    "It is because dolls are usually\n"
+    "played with by humans.\n"
+    " ");
 
 
 const u8 gTHYuuka1PokedexText[] = _(
-    "SPECIES_TH_YUUKA1 description line 1\n"
-    "SPECIES_TH_YUUKA1 description line 2\n"
-    "SPECIES_TH_YUUKA1 description line 3\n"
-    "SPECIES_TH_YUUKA1 description line 4\n");
+    "Has an unpredictable thought.\n"
+    "She has a flower garden in her\n"
+    "mansion.\n"
+    " ");
 
 
 const u8 gTHYuuka2NPokedexText[] = _(
-    "SPECIES_TH_YUUKA2N description line 1\n"
-    "SPECIES_TH_YUUKA2N description line 2\n"
-    "SPECIES_TH_YUUKA2N description line 3\n"
-    "SPECIES_TH_YUUKA2N description line 4\n");
+    "Capable of manipulating flowers.\n"
+    "She likes to travel to see flowers\n"
+    "bloom.\n"
+    " ");
 
 
 const u8 gTHYuuka2APokedexText[] = _(
-    "SPECIES_TH_YUUKA2A description line 1\n"
-    "SPECIES_TH_YUUKA2A description line 2\n"
-    "SPECIES_TH_YUUKA2A description line 3\n"
-    "SPECIES_TH_YUUKA2A description line 4\n");
+    "Despite her appearance, she is\n"
+    "claimed to be the strongest among\n"
+    "youkai in Gensokyo.\n"
+    " ");
 
 
 const u8 gTHYuuka2TPokedexText[] = _(
-    "SPECIES_TH_YUUKA2T description line 1\n"
-    "SPECIES_TH_YUUKA2T description line 2\n"
-    "SPECIES_TH_YUUKA2T description line 3\n"
-    "SPECIES_TH_YUUKA2T description line 4\n");
+    "Her mansion is located in the Dream\n"
+    "World. She now often stays at\n"
+    "the Garden of the Sun.\n"
+    " ");
 
 
 const u8 gTHKomachi1PokedexText[] = _(
-    "SPECIES_TH_KOMACHI1 description line 1\n"
-    "SPECIES_TH_KOMACHI1 description line 2\n"
-    "SPECIES_TH_KOMACHI1 description line 3\n"
-    "SPECIES_TH_KOMACHI1 description line 4\n");
+    "Shinigami who wanders around\n"
+    "Sanzu River. Escorts dead souls\n"
+    "through the Sanzu River.\n"
+    " ");
 
 
 const u8 gTHKomachi2NPokedexText[] = _(
-    "SPECIES_TH_KOMACHI2N description line 1\n"
-    "SPECIES_TH_KOMACHI2N description line 2\n"
-    "SPECIES_TH_KOMACHI2N description line 3\n"
-    "SPECIES_TH_KOMACHI2N description line 4\n");
+    "Komachi has the ability to manipulate\n"
+    "distance. Near or far doesn't matter.\n"
+    "She is usually slacking off.\n"
+    " ");
 
 
 const u8 gTHKomachi2APokedexText[] = _(
-    "SPECIES_TH_KOMACHI2A description line 1\n"
-    "SPECIES_TH_KOMACHI2A description line 2\n"
-    "SPECIES_TH_KOMACHI2A description line 3\n"
-    "SPECIES_TH_KOMACHI2A description line 4\n");
+    "Komachi always brings her\n"
+    "large scythe. She is called the\n"
+    "'Guide of the Sanzu River'\n"
+    " ");
 
 
 const u8 gTHKomachi2SPokedexText[] = _(
-    "SPECIES_TH_KOMACHI2S description line 1\n"
-    "SPECIES_TH_KOMACHI2S description line 2\n"
-    "SPECIES_TH_KOMACHI2S description line 3\n"
-    "SPECIES_TH_KOMACHI2S description line 4\n");
+    "Komachi guides the souls to Higan,\n"
+    "which is not in Gensokyo. She tends to\n"
+    "throw away coins with her danmaku.\n"
+    " ");
 
 
 const u8 gTHEiki1PokedexText[] = _(
-    "SPECIES_TH_EIKI1 description line 1\n"
-    "SPECIES_TH_EIKI1 description line 2\n"
-    "SPECIES_TH_EIKI1 description line 3\n"
-    "SPECIES_TH_EIKI1 description line 4\n");
+    "There are many Yamas, and Shikieiki\n"
+    "is the one in charge of Gensokyo.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHEiki2NPokedexText[] = _(
-    "SPECIES_TH_EIKI2N description line 1\n"
-    "SPECIES_TH_EIKI2N description line 2\n"
-    "SPECIES_TH_EIKI2N description line 3\n"
-    "SPECIES_TH_EIKI2N description line 4\n");
+    "Shikieiki is well known for her lectures.\n"
+    "Of course, she is also lecturing\n"
+    "the slacker Komachi.\n"
+    " ");
 
 
 const u8 gTHEiki2APokedexText[] = _(
-    "SPECIES_TH_EIKI2A description line 1\n"
-    "SPECIES_TH_EIKI2A description line 2\n"
-    "SPECIES_TH_EIKI2A description line 3\n"
-    "SPECIES_TH_EIKI2A description line 4\n");
+    "Her ability is to distinctly judge between\n"
+    "good and evil. She is never wrong, so\n"
+    "her judgement cannot be overturned.\n"
+    " ");
 
 
 const u8 gTHEiki2DPokedexText[] = _(
-    "SPECIES_TH_EIKI2D description line 1\n"
-    "SPECIES_TH_EIKI2D description line 2\n"
-    "SPECIES_TH_EIKI2D description line 3\n"
-    "SPECIES_TH_EIKI2D description line 4\n");
+    "Eiki is the Supreme Judge of Hell. She\n"
+    "resides at Higan, which is not part of\n"
+    "Gensokyo.\n"
+    " ");
 
 
 const u8 gTHShizuha1PokedexText[] = _(
-    "SPECIES_TH_SHIZUHA1 description line 1\n"
-    "SPECIES_TH_SHIZUHA1 description line 2\n"
-    "SPECIES_TH_SHIZUHA1 description line 3\n"
-    "SPECIES_TH_SHIZUHA1 description line 4\n");
+    "Older one of Aki Sisters. Has a calm\n"
+    "personality. But, she can be mad if\n"
+    "Winter comes.\n"
+    " ");
 
 
 const u8 gTHShizuha2NPokedexText[] = _(
-    "SPECIES_TH_SHIZUHA2N description line 1\n"
-    "SPECIES_TH_SHIZUHA2N description line 2\n"
-    "SPECIES_TH_SHIZUHA2N description line 3\n"
-    "SPECIES_TH_SHIZUHA2N description line 4\n");
+    "Capable of controlling the turning of\n"
+    "leaves. Shizuha rules over Gensokyo's\n"
+    "Autumn season.\n"
+    " ");
 
 
 const u8 gTHShizuha2SPokedexText[] = _(
-    "SPECIES_TH_SHIZUHA2S description line 1\n"
-    "SPECIES_TH_SHIZUHA2S description line 2\n"
-    "SPECIES_TH_SHIZUHA2S description line 3\n"
-    "SPECIES_TH_SHIZUHA2S description line 4\n");
+    "Because she is the goddess of\n"
+    "Autumn, she eventually becomes\n"
+    "sad when Winter comes.\n"
+    " ");
 
 
 const u8 gTHShizuha2HPokedexText[] = _(
-    "SPECIES_TH_SHIZUHA2H description line 1\n"
-    "SPECIES_TH_SHIZUHA2H description line 2\n"
-    "SPECIES_TH_SHIZUHA2H description line 3\n"
-    "SPECIES_TH_SHIZUHA2H description line 4\n");
+    "She is the Autumn goddess. She turns\n"
+    "the leaves red for the enjoyment of the\n"
+    "villagers.\n"
+    " ");
 
 
 const u8 gTHMinoriko1PokedexText[] = _(
-    "SPECIES_TH_MINORIKO1 description line 1\n"
-    "SPECIES_TH_MINORIKO1 description line 2\n"
-    "SPECIES_TH_MINORIKO1 description line 3\n"
-    "SPECIES_TH_MINORIKO1 description line 4\n");
+    "Younger one of the Aki Sisters.\n"
+    "She smells like baked potato.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHMinoriko2NPokedexText[] = _(
-    "SPECIES_TH_MINORIKO2N description line 1\n"
-    "SPECIES_TH_MINORIKO2N description line 2\n"
-    "SPECIES_TH_MINORIKO2N description line 3\n"
-    "SPECIES_TH_MINORIKO2N description line 4\n");
+    "Other than visiting the Human Village\n"
+    "for giving humans a good harvest,\n"
+    "she also runs a potato stand.\n"
+    " ");
 
 
 const u8 gTHMinoriko2APokedexText[] = _(
-    "SPECIES_TH_MINORIKO2A description line 1\n"
-    "SPECIES_TH_MINORIKO2A description line 2\n"
-    "SPECIES_TH_MINORIKO2A description line 3\n"
-    "SPECIES_TH_MINORIKO2A description line 4\n");
+    "Has the ability to control an abundant\n"
+    "harvest. She is popular with the humans\n"
+    "in the village.\n"
+    " ");
 
 
 const u8 gTHMinoriko2DPokedexText[] = _(
-    "SPECIES_TH_MINORIKO2D description line 1\n"
-    "SPECIES_TH_MINORIKO2D description line 2\n"
-    "SPECIES_TH_MINORIKO2D description line 3\n"
-    "SPECIES_TH_MINORIKO2D description line 4\n");
+    "She is called to the village as\n"
+    "a special guest every year during\n"
+    "the harvest festival.\n"
+    " ");
 
 
 const u8 gTHHina1PokedexText[] = _(
-    "SPECIES_TH_HINA1 description line 1\n"
-    "SPECIES_TH_HINA1 description line 2\n"
-    "SPECIES_TH_HINA1 description line 3\n"
-    "SPECIES_TH_HINA1 description line 4\n");
+    "'Guru-guru'. Hina elegantly revolves\n"
+    "and spins around. Actually, Hina is\n"
+    "a cursed goddess in Gensokyo.\n"
+    " ");
 
 
 const u8 gTHHina2NPokedexText[] = _(
-    "SPECIES_TH_HINA2N description line 1\n"
-    "SPECIES_TH_HINA2N description line 2\n"
-    "SPECIES_TH_HINA2N description line 3\n"
-    "SPECIES_TH_HINA2N description line 4\n");
+    "Hina absorbs curses that lay\n"
+    "in humans. She protects them\n"
+    "from the pain of curses.\n"
+    " ");
 
 
 const u8 gTHHina2APokedexText[] = _(
-    "SPECIES_TH_HINA2A description line 1\n"
-    "SPECIES_TH_HINA2A description line 2\n"
-    "SPECIES_TH_HINA2A description line 3\n"
-    "SPECIES_TH_HINA2A description line 4\n");
+    "She has a spinning pattern in her\n"
+    "cloth. That symbol is supposed to be\n"
+    "a curse symbol.\n"
+    " ");
 
 
 const u8 gTHHina2DPokedexText[] = _(
-    "SPECIES_TH_HINA2D description line 1\n"
-    "SPECIES_TH_HINA2D description line 2\n"
-    "SPECIES_TH_HINA2D description line 3\n"
-    "SPECIES_TH_HINA2D description line 4\n");
+    "Hina is the Goddess of Misfortune.\n"
+    "She is also the head of the\n"
+    "The Nagashi-bina doll army.\n"
+    " ");
 
 
 const u8 gTHNitori1PokedexText[] = _(
-    "SPECIES_TH_NITORI1 description line 1\n"
-    "SPECIES_TH_NITORI1 description line 2\n"
-    "SPECIES_TH_NITORI1 description line 3\n"
-    "SPECIES_TH_NITORI1 description line 4\n");
+    "One of the Youkai Mountain residents.\n"
+    "She uses optical camouflage to hide\n"
+    "from humans.\n"
+    " ");
 
 
 const u8 gTHNitori2NPokedexText[] = _(
-    "SPECIES_TH_NITORI2N description line 1\n"
-    "SPECIES_TH_NITORI2N description line 2\n"
-    "SPECIES_TH_NITORI2N description line 3\n"
-    "SPECIES_TH_NITORI2N description line 4\n");
+    "Like other kappas, cucumbers is her\n"
+    "favorite food. She is capable of\n"
+    "manipulating water.\n"
+    " ");
 
 
 const u8 gTHNitori2APokedexText[] = _(
-    "SPECIES_TH_NITORI2A description line 1\n"
-    "SPECIES_TH_NITORI2A description line 2\n"
-    "SPECIES_TH_NITORI2A description line 3\n"
-    "SPECIES_TH_NITORI2A description line 4\n");
+    "For some reason, she develops\n"
+    "unique gadgets. Her knowledge\n"
+    "of technology exceeds humans.\n"
+    " ");
 
 
 const u8 gTHNitori2TPokedexText[] = _(
-    "SPECIES_TH_NITORI2T description line 1\n"
-    "SPECIES_TH_NITORI2T description line 2\n"
-    "SPECIES_TH_NITORI2T description line 3\n"
-    "SPECIES_TH_NITORI2T description line 4\n");
+    "A very shy kappa. She is friendly to\n"
+    "humans. She is also a gadget nut.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHMomoji1PokedexText[] = _(
-    "SPECIES_TH_MOMOJI1 description line 1\n"
-    "SPECIES_TH_MOMOJI1 description line 2\n"
-    "SPECIES_TH_MOMOJI1 description line 3\n"
-    "SPECIES_TH_MOMOJI1 description line 4\n");
+    "Her superior senses of sight and smell\n"
+    "can detect any intruder in an instant.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHMomoji2NPokedexText[] = _(
-    "SPECIES_TH_MOMOJI2N description line 1\n"
-    "SPECIES_TH_MOMOJI2N description line 2\n"
-    "SPECIES_TH_MOMOJI2N description line 3\n"
-    "SPECIES_TH_MOMOJI2N description line 4\n");
+    "While she has free time, she enjoys\n"
+    "playing a rather time-consuming\n"
+    "game called Dai Shogi (Chess).\n"
+    " ");
 
 
 const u8 gTHMomoji2DPokedexText[] = _(
-    "SPECIES_TH_MOMOJI2D description line 1\n"
-    "SPECIES_TH_MOMOJI2D description line 2\n"
-    "SPECIES_TH_MOMOJI2D description line 3\n"
-    "SPECIES_TH_MOMOJI2D description line 4\n");
+    "She has a very cooperative personality\n"
+    "and executes her duties faithfully by\n"
+    "guarding Youkai Mountain.\n"
+    " ");
 
 
 const u8 gTHSanae1PokedexText[] = _(
-    "SPECIES_TH_SANAE1 description line 1\n"
-    "SPECIES_TH_SANAE1 description line 2\n"
-    "SPECIES_TH_SANAE1 description line 3\n"
-    "SPECIES_TH_SANAE1 description line 4\n");
+    "The shrine maiden of Moriya Shrine.\n"
+    "She has a dense and gentle personality.\n"
+    "A Green Miko.\n"
+    " ");
 
 
 const u8 gTHSanae2NPokedexText[] = _(
-    "SPECIES_TH_SANAE2N description line 1\n"
-    "SPECIES_TH_SANAE2N description line 2\n"
-    "SPECIES_TH_SANAE2N description line 3\n"
-    "SPECIES_TH_SANAE2N description line 4\n");
+    "She used to live in outside world which\n"
+    "makes her common sense better.\n"
+    "Her main objective is gathering faith.\n"
+    " ");
 
 
 const u8 gTHSanae2APokedexText[] = _(
-    "SPECIES_TH_SANAE2A description line 1\n"
-    "SPECIES_TH_SANAE2A description line 2\n"
-    "SPECIES_TH_SANAE2A description line 3\n"
-    "SPECIES_TH_SANAE2A description line 4\n");
+    "She can call the power of miracles.\n"
+    "With Suwako and Kanako, Sanae\n"
+    "moved from the outside world.\n"
+    " ");
 
 
 const u8 gTHSanae2TPokedexText[] = _(
-    "SPECIES_TH_SANAE2T description line 1\n"
-    "SPECIES_TH_SANAE2T description line 2\n"
-    "SPECIES_TH_SANAE2T description line 3\n"
-    "SPECIES_TH_SANAE2T description line 4\n");
+    "Sanae is a human from outside world\n"
+    "who is adapting well to Gensokyo.\n"
+    "She often visits Reimu's shrine to play.\n"
+    " ");
 
 
 const u8 gTHKanako1PokedexText[] = _(
-    "SPECIES_TH_KANAKO1 description line 1\n"
-    "SPECIES_TH_KANAKO1 description line 2\n"
-    "SPECIES_TH_KANAKO1 description line 3\n"
-    "SPECIES_TH_KANAKO1 description line 4\n");
+    "Kanako's trademark 'shimenawa'\n"
+    "represents the figure of an entwined\n"
+    "snake.\n"
+    " ");
 
 
 const u8 gTHKanako2NPokedexText[] = _(
-    "SPECIES_TH_KANAKO2N description line 1\n"
-    "SPECIES_TH_KANAKO2N description line 2\n"
-    "SPECIES_TH_KANAKO2N description line 3\n"
-    "SPECIES_TH_KANAKO2N description line 4\n");
+    "Kanako is the goddess of the Moriya\n"
+    "Shrine, which is placed on Youkai\n"
+    "Mountain.\n"
+    " ");
 
 
 const u8 gTHKanako2APokedexText[] = _(
-    "SPECIES_TH_KANAKO2A description line 1\n"
-    "SPECIES_TH_KANAKO2A description line 2\n"
-    "SPECIES_TH_KANAKO2A description line 3\n"
-    "SPECIES_TH_KANAKO2A description line 4\n");
+    "Legend says that she is capable of\n"
+    "creating the sky. She has been said to\n"
+    "be a mountain deity.\n"
+    " ");
 
 
 const u8 gTHKanako2DPokedexText[] = _(
-    "SPECIES_TH_KANAKO2D description line 1\n"
-    "SPECIES_TH_KANAKO2D description line 2\n"
-    "SPECIES_TH_KANAKO2D description line 3\n"
-    "SPECIES_TH_KANAKO2D description line 4\n");
+    "Kanako won over Suwako in the\n"
+    "Great Suwa War. Kanako also was the\n"
+    "one who gave Utsuho a certain power.\n"
+    " ");
 
 
 const u8 gTHSuwako1PokedexText[] = _(
-    "SPECIES_TH_SUWAKO1 description line 1\n"
-    "SPECIES_TH_SUWAKO1 description line 2\n"
-    "SPECIES_TH_SUWAKO1 description line 3\n"
-    "SPECIES_TH_SUWAKO1 description line 4\n");
+    "A native goddess living at the Moriya\n"
+    "Shrine. She can manipulate the earth.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHSuwako2NPokedexText[] = _(
-    "SPECIES_TH_SUWAKO2N description line 1\n"
-    "SPECIES_TH_SUWAKO2N description line 2\n"
-    "SPECIES_TH_SUWAKO2N description line 3\n"
-    "SPECIES_TH_SUWAKO2N description line 4\n");
+    "Suwako is the former goddess of\n"
+    "Moriya Shrine. She makes many\n"
+    "plans on her own.\n"
+    " ");
 
 
 const u8 gTHSuwako2APokedexText[] = _(
-    "SPECIES_TH_SUWAKO2A description line 1\n"
-    "SPECIES_TH_SUWAKO2A description line 2\n"
-    "SPECIES_TH_SUWAKO2A description line 3\n"
-    "SPECIES_TH_SUWAKO2A description line 4\n");
+    "A goddess who chased away the\n"
+    "curse gods Mishaguji. She managed\n"
+    "to establish her kingdom.\n"
+    " ");
 
 
 const u8 gTHSuwako2DPokedexText[] = _(
-    "SPECIES_TH_SUWAKO2D description line 1\n"
-    "SPECIES_TH_SUWAKO2D description line 2\n"
-    "SPECIES_TH_SUWAKO2D description line 3\n"
-    "SPECIES_TH_SUWAKO2D description line 4\n");
+    "According to legend, Suwako is\n"
+    "the highest native goddess that\n"
+    "lived in Lake Suwa.\n"
+    " ");
 
 
 const u8 gTHIku1PokedexText[] = _(
-    "SPECIES_TH_IKU1 description line 1\n"
-    "SPECIES_TH_IKU1 description line 2\n"
-    "SPECIES_TH_IKU1 description line 3\n"
-    "SPECIES_TH_IKU1 description line 4\n");
+    "A girl with gorgeous clothing who lives\n"
+    "in a trans-world area between the\n"
+    "human world and the dragon world.\n"
+    " ");
 
 
 const u8 gTHIku2NPokedexText[] = _(
-    "SPECIES_TH_IKU2N description line 1\n"
-    "SPECIES_TH_IKU2N description line 2\n"
-    "SPECIES_TH_IKU2N description line 3\n"
-    "SPECIES_TH_IKU2N description line 4\n");
+    "Warns people about earthquake before\n"
+    "they happen. She swims in the sea of\n"
+    "clouds between earth and heaven.\n"
+    " ");
 
 
 const u8 gTHIku2DPokedexText[] = _(
-    "SPECIES_TH_IKU2D description line 1\n"
-    "SPECIES_TH_IKU2D description line 2\n"
-    "SPECIES_TH_IKU2D description line 3\n"
-    "SPECIES_TH_IKU2D description line 4\n");
+    "Iku's cloth can be transformed into a\n"
+    "drill-shaped weapon which is used to\n"
+    "attack her opponents.\n"
+    " ");
 
 
 const u8 gTHIku2TPokedexText[] = _(
-    "SPECIES_TH_IKU2T description line 1\n"
-    "SPECIES_TH_IKU2T description line 2\n"
-    "SPECIES_TH_IKU2T description line 3\n"
-    "SPECIES_TH_IKU2T description line 4\n");
+    "Iku can control electricity. She is an\n"
+    "oarfish that just observes. Her behavoir\n"
+    "is somewhat lazy.\n"
+    " ");
 
 
 const u8 gTHTenshi1PokedexText[] = _(
-    "SPECIES_TH_TENSHI1 description line 1\n"
-    "SPECIES_TH_TENSHI1 description line 2\n"
-    "SPECIES_TH_TENSHI1 description line 3\n"
-    "SPECIES_TH_TENSHI1 description line 4\n");
+    "Tenshi is the Eldest Daughter of the\n"
+    "Hinanawi clan who resides in Heaven.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHTenshi2NPokedexText[] = _(
-    "SPECIES_TH_TENSHI2N description line 1\n"
-    "SPECIES_TH_TENSHI2N description line 2\n"
-    "SPECIES_TH_TENSHI2N description line 3\n"
-    "SPECIES_TH_TENSHI2N description line 4\n");
+    "Once, Tenshi decided to cause an\n"
+    "incident. This was because she\n"
+    "was bored in Heaven.\n"
+    " ");
 
 
 const u8 gTHTenshi2APokedexText[] = _(
-    "SPECIES_TH_TENSHI2A description line 1\n"
-    "SPECIES_TH_TENSHI2A description line 2\n"
-    "SPECIES_TH_TENSHI2A description line 3\n"
-    "SPECIES_TH_TENSHI2A description line 4\n");
+    "Tenshi's real name was Chiko.\n"
+    "She renamed herself after\n"
+    "she moved to Heaven.\n"
+    " ");
 
 
 const u8 gTHTenshi2DPokedexText[] = _(
-    "SPECIES_TH_TENSHI2D description line 1\n"
-    "SPECIES_TH_TENSHI2D description line 2\n"
-    "SPECIES_TH_TENSHI2D description line 3\n"
-    "SPECIES_TH_TENSHI2D description line 4\n");
+    "Tenshi can manipulate the earth. Her\n"
+    "Hisou Sword can exploit her opponent's\n"
+    "weakness. She is also very tough.\n"
+    " ");
 
 
 const u8 gTHKisume1PokedexText[] = _(
-    "SPECIES_TH_KISUME1 description line 1\n"
-    "SPECIES_TH_KISUME1 description line 2\n"
-    "SPECIES_TH_KISUME1 description line 3\n"
-    "SPECIES_TH_KISUME1 description line 4\n");
+    "Kisume is always inside her bucket.\n"
+    "She is often seen in dark places\n"
+    "such as caves or wells.\n"
+    " ");
 
 
 const u8 gTHKisume2NPokedexText[] = _(
-    "SPECIES_TH_KISUME2N description line 1\n"
-    "SPECIES_TH_KISUME2N description line 2\n"
-    "SPECIES_TH_KISUME2N description line 3\n"
-    "SPECIES_TH_KISUME2N description line 4\n");
+    "Maybe there was a reason why\n"
+    "she hides inside a bucket. Maybe\n"
+    "this is because of her shy personality.\n"
+    " ");
 
 
 const u8 gTHKisume2TPokedexText[] = _(
-    "SPECIES_TH_KISUME2T description line 1\n"
-    "SPECIES_TH_KISUME2T description line 2\n"
-    "SPECIES_TH_KISUME2T description line 3\n"
-    "SPECIES_TH_KISUME2T description line 4\n");
+    "'Tsurube otoshi' is her species.\n"
+    "In this case, she will drop hard\n"
+    "with her bucket on your head.\n"
+    " ");
 
 
 const u8 gTHYamame1PokedexText[] = _(
-    "SPECIES_TH_YAMAME1 description line 1\n"
-    "SPECIES_TH_YAMAME1 description line 2\n"
-    "SPECIES_TH_YAMAME1 description line 3\n"
-    "SPECIES_TH_YAMAME1 description line 4\n");
+    "An earth spider youkai who does\n"
+    "her activities in the depth of\n"
+    "dark caves.\n"
+    " ");
 
 
 const u8 gTHYamame2NPokedexText[] = _(
-    "SPECIES_TH_YAMAME2N description line 1\n"
-    "SPECIES_TH_YAMAME2N description line 2\n"
-    "SPECIES_TH_YAMAME2N description line 3\n"
-    "SPECIES_TH_YAMAME2N description line 4\n");
+    "Humans hate her because of her\n"
+    "ability to control illness. But,\n"
+    "Yamame has no hatred for humans.\n"
+    " ");
 
 
 const u8 gTHYamame2SPokedexText[] = _(
-    "SPECIES_TH_YAMAME2S description line 1\n"
-    "SPECIES_TH_YAMAME2S description line 2\n"
-    "SPECIES_TH_YAMAME2S description line 3\n"
-    "SPECIES_TH_YAMAME2S description line 4\n");
+    "She became one of the suspects in an\n"
+    "incident. Reimu and Marisa though that\n"
+    "the incident was caused by her ability.\n"
+    " ");
 
 
 const u8 gTHYamame2TPokedexText[] = _(
-    "SPECIES_TH_YAMAME2T description line 1\n"
-    "SPECIES_TH_YAMAME2T description line 2\n"
-    "SPECIES_TH_YAMAME2T description line 3\n"
-    "SPECIES_TH_YAMAME2T description line 4\n");
+    "Lives a long time in underground.\n"
+    "She is likely playing with her\n"
+    "friend, Kisume.\n"
+    " ");
 
 
 const u8 gTHParsee1PokedexText[] = _(
-    "SPECIES_TH_PARSEE1 description line 1\n"
-    "SPECIES_TH_PARSEE1 description line 2\n"
-    "SPECIES_TH_PARSEE1 description line 3\n"
-    "SPECIES_TH_PARSEE1 description line 4\n");
+    "Guarding the bridge between\n"
+    "underground and surface land.\n"
+    "Has green eyes of jealousy.\n"
+    " ");
 
 
 const u8 gTHParsee2NPokedexText[] = _(
-    "SPECIES_TH_PARSEE2N description line 1\n"
-    "SPECIES_TH_PARSEE2N description line 2\n"
-    "SPECIES_TH_PARSEE2N description line 3\n"
-    "SPECIES_TH_PARSEE2N description line 4\n");
+    "She could manipulate other people's\n"
+    "jealousy. If you feel jealous all of\n"
+    "a sudden, maybe Parsee is near you.\n"
+    " ");
 
 
 const u8 gTHParsee2DPokedexText[] = _(
-    "SPECIES_TH_PARSEE2D description line 1\n"
-    "SPECIES_TH_PARSEE2D description line 2\n"
-    "SPECIES_TH_PARSEE2D description line 3\n"
-    "SPECIES_TH_PARSEE2D description line 4\n");
+    "She gets jealous easily after seeing\n"
+    "other people.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHParsee2TPokedexText[] = _(
-    "SPECIES_TH_PARSEE2T description line 1\n"
-    "SPECIES_TH_PARSEE2T description line 2\n"
-    "SPECIES_TH_PARSEE2T description line 3\n"
-    "SPECIES_TH_PARSEE2T description line 4\n");
+    "Parsee is a Bridge Princess. She is the\n"
+    "protector of the bridge. However, she\n"
+    "is jealous of people having fun crossing.\n"
+    " ");
 
 
 const u8 gTHYuugi1PokedexText[] = _(
-    "SPECIES_TH_YUUGI1 description line 1\n"
-    "SPECIES_TH_YUUGI1 description line 2\n"
-    "SPECIES_TH_YUUGI1 description line 3\n"
-    "SPECIES_TH_YUUGI1 description line 4\n");
+    "Yuugi is a one-horned oni.\n"
+    "Lives in former hell, a place under\n"
+    "Gensokyo.\n"
+    " ");
 
 
 const u8 gTHYuugi2NPokedexText[] = _(
-    "SPECIES_TH_YUUGI2N description line 1\n"
-    "SPECIES_TH_YUUGI2N description line 2\n"
-    "SPECIES_TH_YUUGI2N description line 3\n"
-    "SPECIES_TH_YUUGI2N description line 4\n");
+    "The Rumored Unnatural Phenomenon.\n"
+    "Futhermore, she also has great strength.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHYuugi2APokedexText[] = _(
-    "SPECIES_TH_YUUGI2A description line 1\n"
-    "SPECIES_TH_YUUGI2A description line 2\n"
-    "SPECIES_TH_YUUGI2A description line 3\n"
-    "SPECIES_TH_YUUGI2A description line 4\n");
+    "Along with Suika, Yuugi was one\n"
+    "of the four particularly feared oni\n"
+    "long time ago.\n"
+    " ");
 
 
 const u8 gTHYuugi2DPokedexText[] = _(
-    "SPECIES_TH_YUUGI2D description line 1\n"
-    "SPECIES_TH_YUUGI2D description line 2\n"
-    "SPECIES_TH_YUUGI2D description line 3\n"
-    "SPECIES_TH_YUUGI2D description line 4\n");
+    "Likely, she is holding sake while\n"
+    "doing a danmaku battle. The sake in\n"
+    "her hand is rarely dropped.\n"
+    " ");
 
 
 const u8 gTHSatori1PokedexText[] = _(
-    "SPECIES_TH_SATORI1 description line 1\n"
-    "SPECIES_TH_SATORI1 description line 2\n"
-    "SPECIES_TH_SATORI1 description line 3\n"
-    "SPECIES_TH_SATORI1 description line 4\n");
+    "Satori can read other beings' hearts.\n"
+    "Not limited to humans, she also\n"
+    "can read youkai or animal's heart.\n"
+    " ");
 
 
 const u8 gTHSatori2NPokedexText[] = _(
-    "SPECIES_TH_SATORI2N description line 1\n"
-    "SPECIES_TH_SATORI2N description line 2\n"
-    "SPECIES_TH_SATORI2N description line 3\n"
-    "SPECIES_TH_SATORI2N description line 4\n");
+    "Her ability to read people's hearts\n"
+    "allows her to use other people's\n"
+    "danmaku.\n"
+    " ");
 
 
 const u8 gTHSatori2DPokedexText[] = _(
-    "SPECIES_TH_SATORI2D description line 1\n"
-    "SPECIES_TH_SATORI2D description line 2\n"
-    "SPECIES_TH_SATORI2D description line 3\n"
-    "SPECIES_TH_SATORI2D description line 4\n");
+    "Satori lives deep underground\n"
+    "inside the Palace of the Earth Spirits.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHSatori2TPokedexText[] = _(
-    "SPECIES_TH_SATORI2T description line 1\n"
-    "SPECIES_TH_SATORI2T description line 2\n"
-    "SPECIES_TH_SATORI2T description line 3\n"
-    "SPECIES_TH_SATORI2T description line 4\n");
+    "Satori is the older sister of Koishi\n"
+    "and the master of certain animals.\n"
+    "She has many animals in her palace.\n"
+    " ");
 
 
 const u8 gTHRin1PokedexText[] = _(
-    "SPECIES_TH_RIN1 description line 1\n"
-    "SPECIES_TH_RIN1 description line 2\n"
-    "SPECIES_TH_RIN1 description line 3\n"
-    "SPECIES_TH_RIN1 description line 4\n");
+    "A kasha that lives deep undergound.\n"
+    "Capable of carrying away corpses. She\n"
+    "has other people call her Orin.\n"
+    " ");
 
 
 const u8 gTHRin2NPokedexText[] = _(
-    "SPECIES_TH_RIN2N description line 1\n"
-    "SPECIES_TH_RIN2N description line 2\n"
-    "SPECIES_TH_RIN2N description line 3\n"
-    "SPECIES_TH_RIN2N description line 4\n");
+    "A very charming figure. Often seen\n"
+    "as a black cat with a terrifying cry.\n"
+    "'Orin' is one of Satori's pets.\n"
+    " ");
 
 
 const u8 gTHRin2APokedexText[] = _(
-    "SPECIES_TH_RIN2A description line 1\n"
-    "SPECIES_TH_RIN2A description line 2\n"
-    "SPECIES_TH_RIN2A description line 3\n"
-    "SPECIES_TH_RIN2A description line 4\n");
+    "Often seen carrying corpses.\n"
+    "Those corpses would be taken\n"
+    "to the Hell of Blazing Fires.\n"
+    " ");
 
 
 const u8 gTHRin2SPokedexText[] = _(
-    "SPECIES_TH_RIN2S description line 1\n"
-    "SPECIES_TH_RIN2S description line 2\n"
-    "SPECIES_TH_RIN2S description line 3\n"
-    "SPECIES_TH_RIN2S description line 4\n");
+    "To help her friend Okuu, she learned\n"
+    "a forbidden art to drive evil spirits\n"
+    "above ground.\n"
+    " ");
 
 
 const u8 gTHUtsuho1PokedexText[] = _(
-    "SPECIES_TH_UTSUHO1 description line 1\n"
-    "SPECIES_TH_UTSUHO1 description line 2\n"
-    "SPECIES_TH_UTSUHO1 description line 3\n"
-    "SPECIES_TH_UTSUHO1 description line 4\n");
+    "Lives in the Hell of Blazing Fires.\n"
+    "She has the ability to manipulate\n"
+    "nuclear fusion.\n"
+    " ");
 
 
 const u8 gTHUtsuho2NPokedexText[] = _(
-    "SPECIES_TH_UTSUHO2N description line 1\n"
-    "SPECIES_TH_UTSUHO2N description line 2\n"
-    "SPECIES_TH_UTSUHO2N description line 3\n"
-    "SPECIES_TH_UTSUHO2N description line 4\n");
+    "Okuu's ability to manipulate nuclear\n"
+    "fusion is actually given by a certain\n"
+    "goddess.\n"
+    " ");
 
 
 const u8 gTHUtsuho2APokedexText[] = _(
-    "SPECIES_TH_UTSUHO2A description line 1\n"
-    "SPECIES_TH_UTSUHO2A description line 2\n"
-    "SPECIES_TH_UTSUHO2A description line 3\n"
-    "SPECIES_TH_UTSUHO2A description line 4\n");
+    "She could blast massive energy from her\n"
+    "right arm. On her right arm is a control\n"
+    "rod which controls nuclear fusion.\n"
+    " ");
 
 
 const u8 gTHUtsuho2SPokedexText[] = _(
-    "SPECIES_TH_UTSUHO2S description line 1\n"
-    "SPECIES_TH_UTSUHO2S description line 2\n"
-    "SPECIES_TH_UTSUHO2S description line 3\n"
-    "SPECIES_TH_UTSUHO2S description line 4\n");
+    "After absorbing the Yatagarasu, the\n"
+    "new powers caused her to want to take\n"
+    "over Gensokyo.\n"
+    " ");
 
 
 const u8 gTHKoishi1PokedexText[] = _(
-    "SPECIES_TH_KOISHI1 description line 1\n"
-    "SPECIES_TH_KOISHI1 description line 2\n"
-    "SPECIES_TH_KOISHI1 description line 3\n"
-    "SPECIES_TH_KOISHI1 description line 4\n");
+    "She wanted to avoid the hate and dislike\n"
+    "due to her mindreading abilities.\n"
+    "So, she sealed away her own Third Eye.\n"
+    " ");
 
 
 const u8 gTHKoishi2NPokedexText[] = _(
-    "SPECIES_TH_KOISHI2N description line 1\n"
-    "SPECIES_TH_KOISHI2N description line 2\n"
-    "SPECIES_TH_KOISHI2N description line 3\n"
-    "SPECIES_TH_KOISHI2N description line 4\n");
+    "After throwing away her ability to read\n"
+    "people's hearts, she gained the ability\n"
+    "to manipulate the unconcious.\n"
+    " ");
 
 
 const u8 gTHKoishi2APokedexText[] = _(
-    "SPECIES_TH_KOISHI2A description line 1\n"
-    "SPECIES_TH_KOISHI2A description line 2\n"
-    "SPECIES_TH_KOISHI2A description line 3\n"
-    "SPECIES_TH_KOISHI2A description line 4\n");
+    "Koishi now spends much of her time\n"
+    "wandering the world aimlessly after\n"
+    "she was beaten by certain people.\n"
+    " ");
 
 
 const u8 gTHKoishi2SPokedexText[] = _(
-    "SPECIES_TH_KOISHI2S description line 1\n"
-    "SPECIES_TH_KOISHI2S description line 2\n"
-    "SPECIES_TH_KOISHI2S description line 3\n"
-    "SPECIES_TH_KOISHI2S description line 4\n");
+    "After being beaten by certain people,\n"
+    "she wants to meet many people in\n"
+    "the surface world.\n"
+    " ");
 
 
 const u8 gTHNazrin1PokedexText[] = _(
-    "SPECIES_TH_NAZRIN1 description line 1\n"
-    "SPECIES_TH_NAZRIN1 description line 2\n"
-    "SPECIES_TH_NAZRIN1 description line 3\n"
-    "SPECIES_TH_NAZRIN1 description line 4\n");
+    "She is cunning and will flee from\n"
+    "a fight as soon as she sees\n"
+    "an enemy stronger than herself.\n"
+    " ");
 
 
 const u8 gTHNazrin2NPokedexText[] = _(
-    "SPECIES_TH_NAZRIN2N description line 1\n"
-    "SPECIES_TH_NAZRIN2N description line 2\n"
-    "SPECIES_TH_NAZRIN2N description line 3\n"
-    "SPECIES_TH_NAZRIN2N description line 4\n");
+    "Even though she is small, she is\n"
+    "clever. Nazrin is holding bent rods\n"
+    "(actually a metal detector).\n"
+    " ");
 
 
 const u8 gTHNazrin2TPokedexText[] = _(
-    "SPECIES_TH_NAZRIN2T description line 1\n"
-    "SPECIES_TH_NAZRIN2T description line 2\n"
-    "SPECIES_TH_NAZRIN2T description line 3\n"
-    "SPECIES_TH_NAZRIN2T description line 4\n");
+    "She was ordered by a youkai tiger to\n"
+    "search for the fragments of Tobikura\n"
+    "and the jeweled Pagoda of Bishamonten.\n"
+    " ");
 
 
 const u8 gTHNazrin2HPokedexText[] = _(
-    "SPECIES_TH_NAZRIN2H description line 1\n"
-    "SPECIES_TH_NAZRIN2H description line 2\n"
-    "SPECIES_TH_NAZRIN2H description line 3\n"
-    "SPECIES_TH_NAZRIN2H description line 4\n");
+    "She is the little dowser general.\n"
+    "She may be Shou's underling, but\n"
+    "she was also sent to watch over her.\n"
+    " ");
 
 
 const u8 gTHKogasa1PokedexText[] = _(
-    "SPECIES_TH_KOGASA1 description line 1\n"
-    "SPECIES_TH_KOGASA1 description line 2\n"
-    "SPECIES_TH_KOGASA1 description line 3\n"
-    "SPECIES_TH_KOGASA1 description line 4\n");
+    "Boooooooooo!!!\n"
+    "Kogasa tries to scare human,\n"
+    "but ended with failure.\n"
+    " ");
 
 
 const u8 gTHKogasa2NPokedexText[] = _(
-    "SPECIES_TH_KOGASA2N description line 1\n"
-    "SPECIES_TH_KOGASA2N description line 2\n"
-    "SPECIES_TH_KOGASA2N description line 3\n"
-    "SPECIES_TH_KOGASA2N description line 4\n");
+    "Big tongue in Kogasa's umbrella\n"
+    "is used by her to scare people.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHKogasa2SPokedexText[] = _(
-    "SPECIES_TH_KOGASA2S description line 1\n"
-    "SPECIES_TH_KOGASA2S description line 2\n"
-    "SPECIES_TH_KOGASA2S description line 3\n"
-    "SPECIES_TH_KOGASA2S description line 4\n");
+    "Why does it always end with failure\n"
+    "when she tries to scare people? Maybe,\n"
+    "she is being forgotten.\n"
+    " ");
 
 
 const u8 gTHKogasa2TPokedexText[] = _(
-    "SPECIES_TH_KOGASA2T description line 1\n"
-    "SPECIES_TH_KOGASA2T description line 2\n"
-    "SPECIES_TH_KOGASA2T description line 3\n"
-    "SPECIES_TH_KOGASA2T description line 4\n");
+    "Nowadays, she lives in the graveyard\n"
+    "to scare people. She seems to be fairly\n"
+    "successful at it.\n"
+    " ");
 
 
 const u8 gTHIchirin1PokedexText[] = _(
-    "SPECIES_TH_ICHIRIN1 description line 1\n"
-    "SPECIES_TH_ICHIRIN1 description line 2\n"
-    "SPECIES_TH_ICHIRIN1 description line 3\n"
-    "SPECIES_TH_ICHIRIN1 description line 4\n");
+    "Ichirin is always seen with Unzan.\n"
+    "Unzan is Ichirin's nyuudou partner.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHIchirin2NPokedexText[] = _(
-    "SPECIES_TH_ICHIRIN2N description line 1\n"
-    "SPECIES_TH_ICHIRIN2N description line 2\n"
-    "SPECIES_TH_ICHIRIN2N description line 3\n"
-    "SPECIES_TH_ICHIRIN2N description line 4\n");
+    "Ichirin and Unzan were acting as\n"
+    "guards for the Palanquin Ship to\n"
+    "keep out other people.\n"
+    " ");
 
 
 const u8 gTHIchirin2DPokedexText[] = _(
-    "SPECIES_TH_ICHIRIN2D description line 1\n"
-    "SPECIES_TH_ICHIRIN2D description line 2\n"
-    "SPECIES_TH_ICHIRIN2D description line 3\n"
-    "SPECIES_TH_ICHIRIN2D description line 4\n");
+    "Ichirin's personality is very\n"
+    "straightforward, but she's thinks\n"
+    "quickly and understands things easily.\n"
+    " ");
 
 
 const u8 gTHIchirin2TPokedexText[] = _(
-    "SPECIES_TH_ICHIRIN2T description line 1\n"
-    "SPECIES_TH_ICHIRIN2T description line 2\n"
-    "SPECIES_TH_ICHIRIN2T description line 3\n"
-    "SPECIES_TH_ICHIRIN2T description line 4\n");
+    "Ichirin is a member of Murasa's group of\n"
+    "youkai, and she misses Byakuren. She\n"
+    "and Unzan guards the palaquin ship.\n"
+    " ");
 
 
 const u8 gTHMurasa1PokedexText[] = _(
-    "SPECIES_TH_MURASA1 description line 1\n"
-    "SPECIES_TH_MURASA1 description line 2\n"
-    "SPECIES_TH_MURASA1 description line 3\n"
-    "SPECIES_TH_MURASA1 description line 4\n");
+    "The spirit of a young drowning\n"
+    "victim who afterwards became\n"
+    "a notorious threat.\n"
+    " ");
 
 
 const u8 gTHMurasa2NPokedexText[] = _(
-    "SPECIES_TH_MURASA2N description line 1\n"
-    "SPECIES_TH_MURASA2N description line 2\n"
-    "SPECIES_TH_MURASA2N description line 3\n"
-    "SPECIES_TH_MURASA2N description line 4\n");
+    "Captain Murasa Minamitsu is\n"
+    "the captain of the Palanquin Ship.\n"
+    "She uses her anchor as weapon.\n"
+    " ");
 
 
 const u8 gTHMurasa2APokedexText[] = _(
-    "SPECIES_TH_MURASA2A description line 1\n"
-    "SPECIES_TH_MURASA2A description line 2\n"
-    "SPECIES_TH_MURASA2A description line 3\n"
-    "SPECIES_TH_MURASA2A description line 4\n");
+    "She remains to pilot her ship\n"
+    "with her friends to find a way\n"
+    "to revive her savior.\n"
+    " ");
 
 
 const u8 gTHMurasa2DPokedexText[] = _(
-    "SPECIES_TH_MURASA2D description line 1\n"
-    "SPECIES_TH_MURASA2D description line 2\n"
-    "SPECIES_TH_MURASA2D description line 3\n"
-    "SPECIES_TH_MURASA2D description line 4\n");
+    "Murasa carries a bottomless ladle. She\n"
+    "is completely faithful to her savior,\n"
+    "Byakuren Hijiri.\n"
+    " ");
 
 
 const u8 gTHShou1PokedexText[] = _(
-    "SPECIES_TH_SHOU1 description line 1\n"
-    "SPECIES_TH_SHOU1 description line 2\n"
-    "SPECIES_TH_SHOU1 description line 3\n"
-    "SPECIES_TH_SHOU1 description line 4\n");
+    "Shou lives in the Palanquin Ship\n"
+    "with some other people. She is\n"
+    "seeking to revive Byakuren Hijiri.\n"
+    " ");
 
 
 const u8 gTHShou2NPokedexText[] = _(
-    "SPECIES_TH_SHOU2N description line 1\n"
-    "SPECIES_TH_SHOU2N description line 2\n"
-    "SPECIES_TH_SHOU2N description line 3\n"
-    "SPECIES_TH_SHOU2N description line 4\n");
+    "A littleTiger Youkai. Carries a giant\n"
+    "spear in her left hand and the jeweled\n"
+    "Pagoda of Bishamonten in her right.\n"
+    " ");
 
 
 const u8 gTHShou2APokedexText[] = _(
-    "SPECIES_TH_SHOU2A description line 1\n"
-    "SPECIES_TH_SHOU2A description line 2\n"
-    "SPECIES_TH_SHOU2A description line 3\n"
-    "SPECIES_TH_SHOU2A description line 4\n");
+    "A disciple of the god Bishamonten.\n"
+    "Nazrin is assigned to Shou as a servant,\n"
+    "but she is actually sent to watch Shou.\n"
+    " ");
 
 
 const u8 gTHShou2TPokedexText[] = _(
-    "SPECIES_TH_SHOU2T description line 1\n"
-    "SPECIES_TH_SHOU2T description line 2\n"
-    "SPECIES_TH_SHOU2T description line 3\n"
-    "SPECIES_TH_SHOU2T description line 4\n");
+    "Shou has the ability to gather\n"
+    "treasures. She is an honest and\n"
+    "straight forward youkai.\n"
+    " ");
 
 
 const u8 gTHByakuren1PokedexText[] = _(
-    "SPECIES_TH_BYAKUREN1 description line 1\n"
-    "SPECIES_TH_BYAKUREN1 description line 2\n"
-    "SPECIES_TH_BYAKUREN1 description line 3\n"
-    "SPECIES_TH_BYAKUREN1 description line 4\n");
+    "Byakuren was once a human\n"
+    "and worked with her younger\n"
+    "brother as a monk.\n"
+    " ");
 
 
 const u8 gTHByakuren2NPokedexText[] = _(
-    "SPECIES_TH_BYAKUREN2N description line 1\n"
-    "SPECIES_TH_BYAKUREN2N description line 2\n"
-    "SPECIES_TH_BYAKUREN2N description line 3\n"
-    "SPECIES_TH_BYAKUREN2N description line 4\n");
+    "After her brother died, she feared\n"
+    "death, but she was able to maintain\n"
+    "her youth with her power.\n"
+    " ");
 
 
 const u8 gTHByakuren2DPokedexText[] = _(
-    "SPECIES_TH_BYAKUREN2D description line 1\n"
-    "SPECIES_TH_BYAKUREN2D description line 2\n"
-    "SPECIES_TH_BYAKUREN2D description line 3\n"
-    "SPECIES_TH_BYAKUREN2D description line 4\n");
+    "Byakuren wishes for a peace between\n"
+    "human and youkai. She made\n"
+    "a temple near the Human Village.\n"
+    " ");
 
 
 const u8 gTHByakuren2TPokedexText[] = _(
-    "SPECIES_TH_BYAKUREN2T description line 1\n"
-    "SPECIES_TH_BYAKUREN2T description line 2\n"
-    "SPECIES_TH_BYAKUREN2T description line 3\n"
-    "SPECIES_TH_BYAKUREN2T description line 4\n");
+    "A Magician that has spells to make to\n"
+    "make herself stronger. She was sealed\n"
+    "away in Makai.\n"
+    " ");
 
 
 const u8 gTHNue1PokedexText[] = _(
-    "SPECIES_TH_NUE1 description line 1\n"
-    "SPECIES_TH_NUE1 description line 2\n"
-    "SPECIES_TH_NUE1 description line 3\n"
-    "SPECIES_TH_NUE1 description line 4\n");
+    "Nue is said to be one of\n"
+    "the most mysterious and\n"
+    "feared youkai in many years.\n"
+    " ");
 
 
 const u8 gTHNue2NPokedexText[] = _(
-    "SPECIES_TH_NUE2N description line 1\n"
-    "SPECIES_TH_NUE2N description line 2\n"
-    "SPECIES_TH_NUE2N description line 3\n"
-    "SPECIES_TH_NUE2N description line 4\n");
+    "Nue has the power to hide one's true\n"
+    "form by Seeds of Non-Identification.\n"
+    "She now lives at Byakuren's temple.\n"
+    " ");
 
 
 const u8 gTHNue2APokedexText[] = _(
-    "SPECIES_TH_NUE2A description line 1\n"
-    "SPECIES_TH_NUE2A description line 2\n"
-    "SPECIES_TH_NUE2A description line 3\n"
-    "SPECIES_TH_NUE2A description line 4\n");
+    "Nue enjoys watching humans\n"
+    "get frightened and imagine all\n"
+    "sorts of strange things from afar.\n"
+    " ");
 
 
 const u8 gTHNue2TPokedexText[] = _(
-    "SPECIES_TH_NUE2T description line 1\n"
-    "SPECIES_TH_NUE2T description line 2\n"
-    "SPECIES_TH_NUE2T description line 3\n"
-    "SPECIES_TH_NUE2T description line 4\n");
+    "An extremely mysterious youkai. When\n"
+    "a saint, Miko, got resurrected, she\n"
+    "called her friend, Mamizou, to help out.\n"
+    " ");
 
 
 const u8 gTHOonamazuPokedexText[] = _(
-    "SPECIES_TH_OONAMAZU description line 1\n"
-    "SPECIES_TH_OONAMAZU description line 2\n"
-    "SPECIES_TH_OONAMAZU description line 3\n"
-    "SPECIES_TH_OONAMAZU description line 4\n");
+    "Giant catfish that can cause\n"
+    "earthquakes. It may be Taisui Xingjun's\n"
+    "true form.\n"
+    " ");
 
 
 const u8 gTHTensoku1PokedexText[] = _(
-    "SPECIES_TH_TENSOKU1 description line 1\n"
-    "SPECIES_TH_TENSOKU1 description line 2\n"
-    "SPECIES_TH_TENSOKU1 description line 3\n"
-    "SPECIES_TH_TENSOKU1 description line 4\n");
+    "A giant robot. Some say it is steam\n"
+    "powered. Somehow, it resembles a huge\n"
+    "balloon robot.\n"
+    " ");
 
 
 const u8 gTHKasen1PokedexText[] = _(
-    "SPECIES_TH_KASEN1 description line 1\n"
-    "SPECIES_TH_KASEN1 description line 2\n"
-    "SPECIES_TH_KASEN1 description line 3\n"
-    "SPECIES_TH_KASEN1 description line 4\n");
+    "Kasen is a hermit (sennin) who visits the\n"
+    "Hakurei Shrine. She lives in a dojo and\n"
+    "is Sanae's neighbor.\n"
+    " ");
 
 
 const u8 gTHKasen2PokedexText[] = _(
-    "SPECIES_TH_KASEN2 description line 1\n"
-    "SPECIES_TH_KASEN2 description line 2\n"
-    "SPECIES_TH_KASEN2 description line 3\n"
-    "SPECIES_TH_KASEN2 description line 4\n");
+    "Keeps many different pets. She seems\n"
+    "to know Suika. It is unknown why\n"
+    "Komachi is monitoring her.\n"
+    " ");
 
 
 const u8 gTHTenma1PokedexText[] = _(
-    "SPECIES_TH_TENMA1 description line 1\n"
-    "SPECIES_TH_TENMA1 description line 2\n"
-    "SPECIES_TH_TENMA1 description line 3\n"
-    "SPECIES_TH_TENMA1 description line 4\n");
+    "Tenma is the boss of the Tengus.\n"
+    "Resides at Youkai Mountain. Tengus\n"
+    "dislike trespassers in their area.\n"
+    " ");
 
 
 const u8 gTHTenma2NPokedexText[] = _(
-    "SPECIES_TH_TENMA2N description line 1\n"
-    "SPECIES_TH_TENMA2N description line 2\n"
-    "SPECIES_TH_TENMA2N description line 3\n"
-    "SPECIES_TH_TENMA2N description line 4\n");
+    "When the heroines entered Youkai\n"
+    "Mountain, Tenma ordered Aya to\n"
+    "check on the intruders.\n"
+    " ");
 
 
 const u8 gTHTenma2SPokedexText[] = _(
-    "SPECIES_TH_TENMA2S description line 1\n"
-    "SPECIES_TH_TENMA2S description line 2\n"
-    "SPECIES_TH_TENMA2S description line 3\n"
-    "SPECIES_TH_TENMA2S description line 4\n");
+    "Tenma lives peacefully in the Youkai\n"
+    "Mountain. She often orders her\n"
+    "subordinates to check the surroundings.\n"
+    " ");
 
 
 const u8 gTHSendai1PokedexText[] = _(
-    "SPECIES_TH_SENDAI1 description line 1\n"
-    "SPECIES_TH_SENDAI1 description line 2\n"
-    "SPECIES_TH_SENDAI1 description line 3\n"
-    "SPECIES_TH_SENDAI1 description line 4\n");
+    "Hakurei Shrine maiden from the past.\n"
+    "Not much is known about her.\n"
+    "\n"
+    " ");
 
 
 const u8 gTHSendai2NPokedexText[] = _(
-    "SPECIES_TH_SENDAI2N description line 1\n"
-    "SPECIES_TH_SENDAI2N description line 2\n"
-    "SPECIES_TH_SENDAI2N description line 3\n"
-    "SPECIES_TH_SENDAI2N description line 4\n");
+    "Supposedly, Yukari and her may have\n"
+    "created the Great Hakurei Barrier that\n"
+    "surrounds Gensokyo today.\n"
+    " ");
 
 
 const u8 gTHSendai2TPokedexText[] = _(
-    "SPECIES_TH_SENDAI2T description line 1\n"
-    "SPECIES_TH_SENDAI2T description line 2\n"
-    "SPECIES_TH_SENDAI2T description line 3\n"
-    "SPECIES_TH_SENDAI2T description line 4\n");
+    "A rumor said that she summoned\n"
+    "a dragon when creating the great\n"
+    "Hakurei border in the past.\n"
+    " ");
 
 
 const u8 gTHTokiko1PokedexText[] = _(
-    "SPECIES_TH_TOKIKO1 description line 1\n"
-    "SPECIES_TH_TOKIKO1 description line 2\n"
-    "SPECIES_TH_TOKIKO1 description line 3\n"
-    "SPECIES_TH_TOKIKO1 description line 4\n");
+    "She likes reading books.\n"
+    "Tokiko can be seen occasionally\n"
+    "in Kourindou.\n"
+    " ");
 
 
 const u8 gTHTokiko2NPokedexText[] = _(
-    "SPECIES_TH_TOKIKO2N description line 1\n"
-    "SPECIES_TH_TOKIKO2N description line 2\n"
-    "SPECIES_TH_TOKIKO2N description line 3\n"
-    "SPECIES_TH_TOKIKO2N description line 4\n");
+    "Even though her power is not so great,\n"
+    "she is brilliant enough to explain\n"
+    "what she learned from books.\n"
+    " ");
 
 
 const u8 gTHTokiko2APokedexText[] = _(
-    "SPECIES_TH_TOKIKO2A description line 1\n"
-    "SPECIES_TH_TOKIKO2A description line 2\n"
-    "SPECIES_TH_TOKIKO2A description line 3\n"
-    "SPECIES_TH_TOKIKO2A description line 4\n");
+    "She is a book reading youkai that got\n"
+    "beat up by Reimu. She sometimes visits\n"
+    "Kourindou.\n"
+    " ");
 
 
 const u8 gTHRinnosukePokedexText[] = _(
-    "SPECIES_TH_RINNOSUKE description line 1\n"
-    "SPECIES_TH_RINNOSUKE description line 2\n"
-    "SPECIES_TH_RINNOSUKE description line 3\n"
-    "SPECIES_TH_RINNOSUKE description line 4\n");
+    "Rinnosuke is a shopkeeper.\n"
+    "He is currently the owner of\n"
+    "the legendary Kusanagi. He has many\n"
+    "items from the outside world.");
 
 
 const u8 gTHAkyuuPokedexText[] = _(
-    "SPECIES_TH_AKYUU description line 1\n"
-    "SPECIES_TH_AKYUU description line 2\n"
-    "SPECIES_TH_AKYUU description line 3\n"
-    "SPECIES_TH_AKYUU description line 4\n");
+    "Akyuu will not forget anything she sees.\n"
+    "The ninth child of Miare. She wrote\n"
+    "Perfect Momento in Strict Sense.\n"
+    " ");
 
 
 const u8 gTHMaribelPokedexText[] = _(
-    "SPECIES_TH_MARIBEL description line 1\n"
-    "SPECIES_TH_MARIBEL description line 2\n"
-    "SPECIES_TH_MARIBEL description line 3\n"
-    "SPECIES_TH_MARIBEL description line 4\n");
+    "Along with Renko, she is the founder\n"
+    "of the Secret Sealing Club in a certain\n"
+    "university. She ofter visits Gensokyo\n"
+    "through her dream.");
 
 
 const u8 gTHRenkoPokedexText[] = _(
-    "SPECIES_TH_RENKO description line 1\n"
-    "SPECIES_TH_RENKO description line 2\n"
-    "SPECIES_TH_RENKO description line 3\n"
-    "SPECIES_TH_RENKO description line 4\n");
+    "Renko is the close friend of Maribel.\n"
+    "She is aware the existance of Gensokyo\n"
+    "through the story Maribel tells.\n"
+    " ");
 
 
 const u8 gTHSumirekoPokedexText[] = _(
-    "SPECIES_TH_SUMIREKO description line 1\n"
-    "SPECIES_TH_SUMIREKO description line 2\n"
-    "SPECIES_TH_SUMIREKO description line 3\n"
-    "SPECIES_TH_SUMIREKO description line 4\n");
+    "She's a human from the Outside World\n"
+    "with psychic powers. She is the first\n"
+    "president of the Secret Sealing Club.\n"
+    " ");
 
 
 const u8 gTHMarisa1PokedexText[] = _(
-    "SPECIES_TH_MARISA1 description line 1\n"
-    "SPECIES_TH_MARISA1 description line 2\n"
-    "SPECIES_TH_MARISA1 description line 3\n"
-    "SPECIES_TH_MARISA1 description line 4\n");
+    "She studies very hard to learn magic\n"
+    "and does not want people to know\n"
+    "that. She often visits Hakurei Shrine\n"
+    "to play with Reimu.");
 
 
 const u8 gTHReimu1PokedexText[] = _(
-    "SPECIES_TH_REIMU1 description line 1\n"
-    "SPECIES_TH_REIMU1 description line 2\n"
-    "SPECIES_TH_REIMU1 description line 3\n"
-    "SPECIES_TH_REIMU1 description line 4\n");
+    "Extremely talented shrine maiden. Her\n"
+    "motto is to take it easy. Likes to relax\n"
+    "and drink tea. She is the shrine\n"
+    "maiden of the Hakurei Shrine.");
 
 
 const u8 gTHReimuCtCPokedexText[] = _(
-    "SPECIES_TH_REIMUCTC description line 1\n"
-    "SPECIES_TH_REIMUCTC description line 2\n"
-    "SPECIES_TH_REIMUCTC description line 3\n"
-    "SPECIES_TH_REIMUCTC description line 4\n");
+    "This version of Reimu comes from\n"
+    "from a time line where Gensokyo is\n"
+    "perished. This deceased shrine maiden\n"
+    "doesn't care about Gensokyo anymore.");
 
 
 const u8 gETCIsamiPokedexText[] = _(
-    "SPECIES_ETC_ISAMI description line 1\n"
-    "SPECIES_ETC_ISAMI description line 2\n"
-    "SPECIES_ETC_ISAMI description line 3\n"
-    "SPECIES_ETC_ISAMI description line 4\n");
+    "She's a new office assistant that\n"
+    "wakes up to drink, goes out into\n"
+    "society to drink, and sleeps to drink.\n"
+    " ");
 
 
 const u8 gSHVIVITrPokedexText[] = _(
-    "SPECIES_SH_VIVITR description line 1\n"
-    "SPECIES_SH_VIVITR description line 2\n"
-    "SPECIES_SH_VIVITR description line 3\n"
-    "SPECIES_SH_VIVITR description line 4\n");
+    "VIVIT is a robot that is created by a\n"
+    "certain person. Her appearance is a\n"
+    "replica of her creator's daughter. She\n"
+    "eventually saved her creator's daughter.");
 
 
 const u8 gKEYMisuzu1PokedexText[] = _(
@@ -10449,98 +10449,98 @@ const u8 gPCCureEchoPokedexText[] = _(
 
 
 const u8 gETCCureUnion2PokedexText[] = _(
-    "SPECIES_ETC_CUREUNION2 description line 1\n"
-    "SPECIES_ETC_CUREUNION2 description line 2\n"
-    "SPECIES_ETC_CUREUNION2 description line 3\n"
-    "SPECIES_ETC_CUREUNION2 description line 4\n");
+    "It is questionable whether Cure Union\n"
+    "is actual Pretty Cure or not. There is\n"
+    "no record from any Pretty Cure world\n"
+    "that proves the existence of Cure Union.");
 
 
 const u8 gETCMissingnoPokedexText[] = _(
-    "SPECIES_ETC_MISSINGNO description line 1\n"
-    "SPECIES_ETC_MISSINGNO description line 2\n"
-    "SPECIES_ETC_MISSINGNO description line 3\n"
-    "SPECIES_ETC_MISSINGNO description line 4\n");
+    "This is a newly discovered FRAGMON.\n"
+    "It is currently under investigation.\n"
+    "No detailed information is available\n"
+    "at this time.\n");
 
 
 const u8 gETCEmesgeseyPokedexText[] = _(
     "A species from another dimension that\n"
     "is awfully similar to Chansey physically.\n"
     "It is unknown why Emesgesey always\n"
-    "tries to give 'Mi Goreng Instant'.\n");
+    "tries to give 'Mi Goreng Instant'.");
 
 
 const u8 gETCShounenPokedexText[] = _(
-    "SPECIES_ETC_SHOUNEN description line 1\n"
-    "SPECIES_ETC_SHOUNEN description line 2\n"
-    "SPECIES_ETC_SHOUNEN description line 3\n"
-    "SPECIES_ETC_SHOUNEN description line 4\n");
+    "A boy who loves cosplaying.\n"
+    "Currently, he is interested cosplaying\n"
+    "main characters of Pokémon games.\n"
+    " ");
 
 
 const u8 gETCShoujoPokedexText[] = _(
-    "SPECIES_ETC_SHOUJO description line 1\n"
-    "SPECIES_ETC_SHOUJO description line 2\n"
-    "SPECIES_ETC_SHOUJO description line 3\n"
-    "SPECIES_ETC_SHOUJO description line 4\n");
+    "A girl who loves cosplaying.\n"
+    "Currently, she is interested cosplaying\n"
+    "main characters of Pokémon games.\n"
+    " ");
 
 
 const u8 gETCDialgaTHPokedexText[] = _(
-    "SPECIES_ETC_DIALGATH description line 1\n"
-    "SPECIES_ETC_DIALGATH description line 2\n"
-    "SPECIES_ETC_DIALGATH description line 3\n"
-    "SPECIES_ETC_DIALGATH description line 4\n");
+    "The girl spoken of in legend.\n"
+    "It completely controls the flow of time.\n"
+    "It uses its power to travel at will\n"
+    "through the past and future.");
 
 
 const u8 gETCPalkiaTHPokedexText[] = _(
-    "SPECIES_ETC_PALKIATH description line 1\n"
-    "SPECIES_ETC_PALKIATH description line 2\n"
-    "SPECIES_ETC_PALKIATH description line 3\n"
-    "SPECIES_ETC_PALKIATH description line 4\n");
+    "Palkia has the ability to distort space.\n"
+    "Her total control over the boundaries of\n"
+    "space enable it to transport herself to\n"
+    "faraway places and other dimensions.");
 
 
 const u8 gETCGiratinaTHPokedexText[] = _(
-    "SPECIES_ETC_GIRATINATH description line 1\n"
-    "SPECIES_ETC_GIRATINATH description line 2\n"
-    "SPECIES_ETC_GIRATINATH description line 3\n"
-    "SPECIES_ETC_GIRATINATH description line 4\n");
+    "Giratina is said to live in a world\n"
+    "on the reverse side of ours, where common\n"
+    "knowledge is distorted and strange.\n"
+    "She was banished for its violence.");
 
 
 const u8 gETCDecade1PokedexText[] = _(
-    "SPECIES_ETC_DECADE1 description line 1\n"
-    "SPECIES_ETC_DECADE1 description line 2\n"
-    "SPECIES_ETC_DECADE1 description line 3\n"
-    "SPECIES_ETC_DECADE1 description line 4\n");
+    "A rumor said that he is the Destroyer\n"
+    "of the Worlds. He can travel between\n"
+    "worlds freely.\n"
+    " ");
 
 
 const u8 gETCDecade2APokedexText[] = _(
-    "SPECIES_ETC_DECADE2A description line 1\n"
-    "SPECIES_ETC_DECADE2A description line 2\n"
-    "SPECIES_ETC_DECADE2A description line 3\n"
-    "SPECIES_ETC_DECADE2A description line 4\n");
+    "He can channel and use other\n"
+    "power for himself. Sometimes, he gets\n"
+    "selfish and causes troubles for others.\n"
+    " ");
 
 
 const u8 gETCDecade2BPokedexText[] = _(
-    "SPECIES_ETC_DECADE2B description line 1\n"
-    "SPECIES_ETC_DECADE2B description line 2\n"
-    "SPECIES_ETC_DECADE2B description line 3\n"
-    "SPECIES_ETC_DECADE2B description line 4\n");
+    "The trace of Decade supposedly ended\n"
+    "in the year of 2021. The Complete Form 21\n"
+    "was last seen at that moment.\n"
+    " ");
 
 
 const u8 gETCDiEnd1PokedexText[] = _(
-    "SPECIES_ETC_DIEND1 description line 1\n"
-    "SPECIES_ETC_DIEND1 description line 2\n"
-    "SPECIES_ETC_DIEND1 description line 3\n"
-    "SPECIES_ETC_DIEND1 description line 4\n");
+    "DiEnd is a rival of Decade of some sort.\n"
+    "He is always searching for treasures\n"
+    "of the world where he steps in.\n"
+    "Thus, he steals those treasures.");
 
 
 const u8 gETCDiEnd2PokedexText[] = _(
-    "SPECIES_ETC_DIEND2 description line 1\n"
-    "SPECIES_ETC_DIEND2 description line 2\n"
-    "SPECIES_ETC_DIEND2 description line 3\n"
-    "SPECIES_ETC_DIEND2 description line 4\n");
+    "He got his Complete Form from\n"
+    "a certain time police in the past.\n"
+    "\n"
+    " ");
 
 
 const u8 gETCDeLastPokedexText[] = _(
-    "SPECIES_ETC_DELAST description line 1\n"
-    "SPECIES_ETC_DELAST description line 2\n"
-    "SPECIES_ETC_DELAST description line 3\n"
-    "SPECIES_ETC_DELAST description line 4\n");
+    "It is questionable whether DeLast\n"
+    "is actual Kamen Rider or not. Apparently,\n"
+    "he is the main culprit of the recent\n"
+    "distortion between worlds.");

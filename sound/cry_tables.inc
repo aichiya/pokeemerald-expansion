@@ -1001,7 +1001,7 @@ gCryTable::
 	cry Cry_Unown       @ SPECIES_PC_REGINA
 	cry Cry_Unown       @ SPECIES_PC_AYUMI
 	cry Cry_Unown       @ SPECIES_PC_CUREECHO
-	cry Cry_Unown       @ SPECIES_ETC_CUREUNION2
+	cry Cry_ETCCureUnionLine       @ SPECIES_ETC_CUREUNION2
 	cry Cry_Rhydon       @ SPECIES_ETC_MISSINGNO
 	cry Cry_Chansey       @ SPECIES_ETC_EMESGESEY
 	cry Cry_Unown       @ SPECIES_ETC_SHOUNEN
@@ -1009,12 +1009,12 @@ gCryTable::
 	cry Cry_Dialga       @ SPECIES_ETC_DIALGATH
 	cry Cry_Palkia       @ SPECIES_ETC_PALKIATH
 	cry Cry_Giratina       @ SPECIES_ETC_GIRATINATH
-	cry Cry_Unown       @ SPECIES_ETC_DECADE1
-	cry Cry_Unown       @ SPECIES_ETC_DECADE2A
-	cry Cry_Unown       @ SPECIES_ETC_DECADE2B
-	cry Cry_Unown       @ SPECIES_ETC_DIEND1
-	cry Cry_Unown       @ SPECIES_ETC_DIEND2
-	cry Cry_Unown       @ SPECIES_ETC_DELAST
+	cry Cry_ETCDecadeLine       @ SPECIES_ETC_DECADE1
+	cry Cry_ETCDecadeLine       @ SPECIES_ETC_DECADE2A
+	cry Cry_ETCDecadeLine       @ SPECIES_ETC_DECADE2B
+	cry Cry_ETCDiEndLine       @ SPECIES_ETC_DIEND1
+	cry Cry_ETCDiEndLine       @ SPECIES_ETC_DIEND2
+	cry Cry_ETCDeLastLine       @ SPECIES_ETC_DELAST
 	cry Cry_VenusaurMega       @ SPECIES_VENUSAUR_MEGA
 	cry Cry_CharizardMegaX       @ SPECIES_CHARIZARD_MEGA_X
 	cry Cry_CharizardMegaY       @ SPECIES_CHARIZARD_MEGA_Y
@@ -1540,8 +1540,8 @@ gCryTable::
 	cry Cry_Unown       @ SPECIES_PC_CUREMARCH3
 	cry Cry_Unown       @ SPECIES_PC_CUREBEAUTY3
 	cry Cry_Unown       @ SPECIES_PC_CUREHEART3
-	cry Cry_Unown       @ SPECIES_ETC_CUREUNION3
-	cry Cry_Unown       @ SPECIES_ETC_DECADE3
+	cry Cry_ETCCureUnionLine       @ SPECIES_ETC_CUREUNION3
+	cry Cry_ETCDecadeLine       @ SPECIES_ETC_DECADE3
 	cry Cry_Charizard       @ SPECIES_ETC_RED
 	cry Cry_HoOh       @ SPECIES_ETC_ETHAN
 	cry Cry_Groudon       @ SPECIES_ETC_BRENDAN
@@ -2686,7 +2686,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Unown       @ SPECIES_PC_REGINA
 	cry_reverse Cry_Unown       @ SPECIES_PC_AYUMI
 	cry_reverse Cry_Unown       @ SPECIES_PC_CUREECHO
-	cry_reverse Cry_Unown       @ SPECIES_ETC_CUREUNION2
+	cry_reverse Cry_ETCCureUnionLine       @ SPECIES_ETC_CUREUNION2
 	cry_reverse Cry_Rhydon       @ SPECIES_ETC_MISSINGNO
 	cry_reverse Cry_Chansey       @ SPECIES_ETC_EMESGESEY
 	cry_reverse Cry_Unown       @ SPECIES_ETC_SHOUNEN
@@ -2694,12 +2694,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Dialga       @ SPECIES_ETC_DIALGATH
 	cry_reverse Cry_Palkia       @ SPECIES_ETC_PALKIATH
 	cry_reverse Cry_Giratina       @ SPECIES_ETC_GIRATINATH
-	cry_reverse Cry_Unown       @ SPECIES_ETC_DECADE1
-	cry_reverse Cry_Unown       @ SPECIES_ETC_DECADE2A
-	cry_reverse Cry_Unown       @ SPECIES_ETC_DECADE2B
-	cry_reverse Cry_Unown       @ SPECIES_ETC_DIEND1
-	cry_reverse Cry_Unown       @ SPECIES_ETC_DIEND2
-	cry_reverse Cry_Unown       @ SPECIES_ETC_DELAST
+	cry_reverse Cry_ETCDecadeLine       @ SPECIES_ETC_DECADE1
+	cry_reverse Cry_ETCDecadeLine       @ SPECIES_ETC_DECADE2A
+	cry_reverse Cry_ETCDecadeLine       @ SPECIES_ETC_DECADE2B
+	cry_reverse Cry_ETCDiEndLine       @ SPECIES_ETC_DIEND1
+	cry_reverse Cry_ETCDiEndLine       @ SPECIES_ETC_DIEND2
+	cry_reverse Cry_ETCDeLastLine       @ SPECIES_ETC_DELAST
 	cry_reverse Cry_VenusaurMega       @ SPECIES_VENUSAUR_MEGA
 	cry_reverse Cry_CharizardMegaX       @ SPECIES_CHARIZARD_MEGA_X
 	cry_reverse Cry_CharizardMegaY       @ SPECIES_CHARIZARD_MEGA_Y
@@ -3225,8 +3225,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Unown       @ SPECIES_PC_CUREMARCH3
 	cry_reverse Cry_Unown       @ SPECIES_PC_CUREBEAUTY3
 	cry_reverse Cry_Unown       @ SPECIES_PC_CUREHEART3
-	cry_reverse Cry_Unown       @ SPECIES_ETC_CUREUNION3
-	cry_reverse Cry_Unown       @ SPECIES_ETC_DECADE3
+	cry_reverse Cry_ETCCureUnionLine       @ SPECIES_ETC_CUREUNION3
+	cry_reverse Cry_ETCDecadeLine       @ SPECIES_ETC_DECADE3
 	cry_reverse Cry_Charizard       @ SPECIES_ETC_RED
 	cry_reverse Cry_HoOh       @ SPECIES_ETC_ETHAN
 	cry_reverse Cry_Groudon       @ SPECIES_ETC_BRENDAN

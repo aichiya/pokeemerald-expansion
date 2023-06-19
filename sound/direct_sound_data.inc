@@ -6949,3 +6949,19 @@ DirectSoundWaveData_SongSampleTHCtCGFree049::
     .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_049.bin"
 
 @ End song sample CtC G Free
+
+    .align 2
+Cry_ETCCureUnionLine::
+    .incbin "sound/direct_sound_samples/cries_add/cry_etc_union_line.bin"
+
+    .align 2
+Cry_ETCDecadeLine::
+    .incbin "sound/direct_sound_samples/cries_add/cry_etc_decade_line.bin"
+
+.align 2
+Cry_ETCDiEndLine::
+    .incbin "sound/direct_sound_samples/cries_add/cry_etc_diend_line.bin"
+
+    .align 2
+Cry_ETCDeLastLine::
+    .incbin "sound/direct_sound_samples/cries_add/cry_etc_delast_line.bin"

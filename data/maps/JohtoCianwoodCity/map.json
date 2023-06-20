@@ -2,10 +2,10 @@
   "id": "MAP_JOHTO_CIANWOOD_CITY",
   "name": "JohtoCianwoodCity",
   "layout": "LAYOUT_JOHTO_CIANWOOD_CITY",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_HG_CIANWOOD",
   "region_map_section": "MAPSEC_PALLET_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -17,12 +17,91 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 31,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_CIANWOOD_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_CIANWOOD_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_CIANWOOD_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_CIANWOOD_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_CIANWOOD_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_CIANWOOD_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_ROUTE47",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 27,
+      "y": 32,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 36,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 39,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 23,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
   ]
 }

@@ -2,22 +2,62 @@
   "id": "MAP_JOHTO_ROUTE47",
   "name": "JohtoRoute47",
   "layout": "LAYOUT_JOHTO_ROUTE47",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_HG_ROUTE47",
   "region_map_section": "MAPSEC_PALLET_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_JOHTO_ROUTE48",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
   "object_events": [
 
   ],
   "warp_events": [
-
+    {
+      "x": 80,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_CIANWOOD_CITY",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 64,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_ROUTE47",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 63,
+      "y": 37,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_ROUTE47",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 64,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_ROUTE47",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 23,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_ROUTE47",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

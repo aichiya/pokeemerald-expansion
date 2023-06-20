@@ -4514,10 +4514,10 @@
     {
       "id": "LAYOUT_JOHTO_CIANWOOD_CITY",
       "name": "JohtoCianwoodCity_Layout",
-      "width": 10,
-      "height": 10,
+      "width": 42,
+      "height": 58,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/JohtoCianwoodCity/border.bin",
       "blockdata_filepath": "data/layouts/JohtoCianwoodCity/map.bin"
     },
@@ -4804,20 +4804,20 @@
     {
       "id": "LAYOUT_JOHTO_ROUTE47",
       "name": "JohtoRoute47_Layout",
-      "width": 10,
-      "height": 10,
+      "width": 92,
+      "height": 54,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/JohtoRoute47/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute47/map.bin"
     },
     {
       "id": "LAYOUT_JOHTO_ROUTE48",
       "name": "JohtoRoute48_Layout",
-      "width": 10,
-      "height": 10,
+      "width": 72,
+      "height": 72,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/JohtoRoute48/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute48/map.bin"
     },

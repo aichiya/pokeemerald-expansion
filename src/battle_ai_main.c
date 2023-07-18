@@ -1245,6 +1245,8 @@ static s16 AI_CheckBadMove(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
         case EFFECT_EVASION_DOWN_2:
             if (!ShouldLowerStat(battlerDef, AI_DATA->abilities[battlerDef], STAT_EVASION))
                 score -= 10;
+            else if (AI_DATA->abilities[battlerDef] == ABILITY_GRIM_NEIGH)
+                score -= 10;
             break;
         case EFFECT_TICKLE:
             if (!ShouldLowerStat(battlerDef, AI_DATA->abilities[battlerDef], STAT_ATK))

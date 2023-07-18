@@ -9235,8 +9235,9 @@ static void Cmd_various(void)
 
         u16 battlerAbility = GetBattlerAbility(gActiveBattler);
 
-        if ((battlerAbility == ABILITY_GRIM_NEIGH
-         || battlerAbility == ABILITY_AS_ONE_SHADOW_RIDER)
+//        if ((battlerAbility == ABILITY_GRIM_NEIGH
+//         || battlerAbility == ABILITY_AS_ONE_SHADOW_RIDER)
+        if ((battlerAbility == ABILITY_AS_ONE_SHADOW_RIDER)
           && HasAttackerFaintedTarget()
           && !NoAliveMonsForEitherParty()
           && CompareStat(gBattlerAttacker, STAT_SPATK, MAX_STAT_STAGE, CMP_LESS_THAN))

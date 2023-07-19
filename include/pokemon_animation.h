@@ -34,6 +34,8 @@ void SetSpriteCB_MonAnimDummy(struct Sprite *sprite);
 #define BACK_ANIM_SHAKE_GLOW_RED               23
 #define BACK_ANIM_SHAKE_GLOW_GREEN             24
 #define BACK_ANIM_SHAKE_GLOW_BLUE              25
+#define BACK_ANIM_SHAKE_GLOW_MAGENTA           26
+#define BACK_ANIM_SHAKE_GLOW_CYAN              27
 
 // Pokémon animation function ids (for front and back)
 // Each front anim uses 1, and each back anim uses a set of 3
@@ -191,5 +193,11 @@ void SetSpriteCB_MonAnimDummy(struct Sprite *sprite);
 #define ANIM_SHAKE_GLOW_BLACK_SLOW              151
 #define ANIM_SHAKE_GLOW_WHITE_SLOW              152
 #define ANIM_SHAKE_GLOW_PURPLE_SLOW             153
+#define ANIM_SHAKE_GLOW_MAGENTA_FAST                154
+#define ANIM_SHAKE_GLOW_MAGENTA                     155
+#define ANIM_SHAKE_GLOW_MAGENTA_SLOW                156
+#define ANIM_SHAKE_GLOW_CYAN_FAST                157
+#define ANIM_SHAKE_GLOW_CYAN                     158
+#define ANIM_SHAKE_GLOW_CYAN_SLOW                159
 
 #endif // GUARD_POKEMON_ANIMATION_H

@@ -207,6 +207,13 @@ static void Anim_ShakeGlowBlack_Slow(struct Sprite *sprite);
 static void Anim_ShakeGlowWhite_Slow(struct Sprite *sprite);
 static void Anim_ShakeGlowPurple_Slow(struct Sprite *sprite);
 
+static void Anim_ShakeGlowMagenta_Fast(struct Sprite *sprite);
+static void Anim_ShakeGlowMagenta(struct Sprite *sprite);
+static void Anim_ShakeGlowMagenta_Slow(struct Sprite *sprite);
+static void Anim_ShakeGlowCyan_Fast(struct Sprite *sprite);
+static void Anim_ShakeGlowCyan(struct Sprite *sprite);
+static void Anim_ShakeGlowCyan_Slow(struct Sprite *sprite);
+
 static void WaitAnimEnd(struct Sprite *sprite);
 
 static struct PokemonAnimData sAnims[MAX_BATTLERS_COUNT];
@@ -607,6 +614,9 @@ static const u8 sSpeciesToBackAnimSet[NUM_SPECIES] =
     [SPECIES_DEOXYS]     = BACK_ANIM_SHRINK_GROW_VIBRATE,
     [SPECIES_CHIMECHO]   = BACK_ANIM_CONVEX_DOUBLE_ARC,
 */
+	[SPECIES_ETC_CUREUNION3] = BACK_ANIM_SHAKE_GLOW_MAGENTA,
+//	[SPECIES_ETC_DECADE3] = BACK_ANIM_SHAKE_GLOW_MAGENTA,
+
 };
 
 // Equivalent to struct YellowFlashData, but doesn't match as a struct
@@ -791,7 +801,14 @@ static void (* const sMonAnimFunctions[])(struct Sprite *sprite) =
     [ANIM_SHAKE_GLOW_BLUE_SLOW]              = Anim_ShakeGlowBlue_Slow,
     [ANIM_SHAKE_GLOW_BLACK_SLOW]             = Anim_ShakeGlowBlack_Slow,
     [ANIM_SHAKE_GLOW_WHITE_SLOW]             = Anim_ShakeGlowWhite_Slow,
-    [ANIM_SHAKE_GLOW_PURPLE_SLOW]            = Anim_ShakeGlowPurple_Slow
+    [ANIM_SHAKE_GLOW_PURPLE_SLOW]            = Anim_ShakeGlowPurple_Slow,
+
+    [ANIM_SHAKE_GLOW_MAGENTA_FAST]               = Anim_ShakeGlowMagenta_Fast,
+    [ANIM_SHAKE_GLOW_MAGENTA]                    = Anim_ShakeGlowMagenta,
+    [ANIM_SHAKE_GLOW_MAGENTA_SLOW]               = Anim_ShakeGlowMagenta_Slow,
+    [ANIM_SHAKE_GLOW_CYAN_FAST]               = Anim_ShakeGlowCyan_Fast,
+    [ANIM_SHAKE_GLOW_CYAN]                    = Anim_ShakeGlowCyan,
+    [ANIM_SHAKE_GLOW_CYAN_SLOW]               = Anim_ShakeGlowCyan_Slow
 };
 
 // Each back anim set has 3 possible animations depending on nature
@@ -824,6 +841,9 @@ static const u8 sBackAnimationIds[] =
     [(BACK_ANIM_SHAKE_GLOW_RED - 1) * 3]          = ANIM_SHAKE_GLOW_RED_FAST, ANIM_SHAKE_GLOW_RED, ANIM_SHAKE_GLOW_RED_SLOW,
     [(BACK_ANIM_SHAKE_GLOW_GREEN - 1) * 3]        = ANIM_SHAKE_GLOW_GREEN_FAST, ANIM_SHAKE_GLOW_GREEN, ANIM_SHAKE_GLOW_GREEN_SLOW,
     [(BACK_ANIM_SHAKE_GLOW_BLUE - 1) * 3]         = ANIM_SHAKE_GLOW_BLUE_FAST,  ANIM_SHAKE_GLOW_BLUE, ANIM_SHAKE_GLOW_BLUE_SLOW,
+
+    [(BACK_ANIM_SHAKE_GLOW_MAGENTA - 1) * 3]         = ANIM_SHAKE_GLOW_MAGENTA_FAST,  ANIM_SHAKE_GLOW_MAGENTA, ANIM_SHAKE_GLOW_MAGENTA_SLOW,
+    [(BACK_ANIM_SHAKE_GLOW_CYAN - 1) * 3]         = ANIM_SHAKE_GLOW_CYAN_FAST,  ANIM_SHAKE_GLOW_CYAN, ANIM_SHAKE_GLOW_CYAN_SLOW,
 };
 
 static const u8 sBackAnimNatureModTable[NUM_NATURES] =
@@ -2033,6 +2053,16 @@ static void Anim_GlowYellow(struct Sprite *sprite)
 }
 
 static void Anim_GlowPurple(struct Sprite *sprite)
+{
+    GlowColor(RGB_PURPLE, 12, 2);
+}
+
+static void Anim_GlowMagenta(struct Sprite *sprite)
+{
+    GlowColor(RGB_PURPLE, 12, 2);
+}
+
+static void Anim_GlowCyan(struct Sprite *sprite)
 {
     GlowColor(RGB_PURPLE, 12, 2);
 }
@@ -5319,7 +5349,10 @@ enum {
     SHAKEGLOW_BLUE,
     SHAKEGLOW_BLACK,
     SHAKEGLOW_WHITE,
-    SHAKEGLOW_PURPLE
+    SHAKEGLOW_PURPLE,
+	SHAKEGLOW_MAGENTA,
+	SHAKEGLOW_CYAN //,
+//	SHAKEGLOW_YELLOW
 };
 
 static void ShakeGlow_Blend(struct Sprite *sprite)
@@ -5331,7 +5364,10 @@ static void ShakeGlow_Blend(struct Sprite *sprite)
         [SHAKEGLOW_BLUE]  = RGB_BLUE,
         [SHAKEGLOW_BLACK] = RGB_BLACK,
         [SHAKEGLOW_WHITE] = RGB_WHITE,
-        [SHAKEGLOW_PURPLE] = RGB_PURPLE
+        [SHAKEGLOW_PURPLE] = RGB_PURPLE,
+		[SHAKEGLOW_MAGENTA] = RGB_MAGENTA,
+		[SHAKEGLOW_CYAN] = RGB_CYAN //,
+//		[SHAKEGLOW_YELLOW] = RGB_YELLOW
     };
 
     if (sprite->data[2] > 127)
@@ -5610,6 +5646,132 @@ static void Anim_ShakeGlowPurple_Slow(struct Sprite *sprite)
         sprite->data[4] = 1;
         sprite->data[3] = 0;
         sprite->data[1] = SHAKEGLOW_PURPLE;
+    }
+
+    if (sprite->data[2] % 2 == 0)
+        ShakeGlow_Blend(sprite);
+
+    if (sprite->data[2] >= (128 - sprite->data[0] * sprite->data[4]) / 2)
+        ShakeGlow_Move(sprite);
+
+    sprite->data[2]++;
+}
+
+static void Anim_ShakeGlowMagenta_Fast(struct Sprite *sprite)
+{
+    if (sprite->data[2] == 0)
+    {
+        sprite->data[7] = OBJ_PLTT_ID(sprite->oam.paletteNum);
+        sprite->data[0] = 10;
+        sprite->data[5] = 0;
+        sprite->data[4] = 2;
+        sprite->data[3] = 0;
+        sprite->data[1] = SHAKEGLOW_MAGENTA;
+    }
+
+    if (sprite->data[2] % 2 == 0)
+        ShakeGlow_Blend(sprite);
+
+    if (sprite->data[2] >= (128 - sprite->data[0] * sprite->data[4]) / 2)
+        ShakeGlow_Move(sprite);
+
+    sprite->data[2]++;
+}
+
+static void Anim_ShakeGlowMagenta(struct Sprite *sprite)
+{
+    if (sprite->data[2] == 0)
+    {
+        sprite->data[7] = OBJ_PLTT_ID(sprite->oam.paletteNum);
+        sprite->data[0] = 20;
+        sprite->data[5] = 0;
+        sprite->data[4] = 1;
+        sprite->data[3] = 0;
+        sprite->data[1] = SHAKEGLOW_MAGENTA;
+    }
+
+    if (sprite->data[2] % 2 == 0)
+        ShakeGlow_Blend(sprite);
+
+    if (sprite->data[2] >= (128 - sprite->data[0] * sprite->data[4]) / 2)
+        ShakeGlow_Move(sprite);
+
+    sprite->data[2]++;
+}
+
+static void Anim_ShakeGlowMagenta_Slow(struct Sprite *sprite)
+{
+    if (sprite->data[2] == 0)
+    {
+        sprite->data[7] = OBJ_PLTT_ID(sprite->oam.paletteNum);
+        sprite->data[0] = 80;
+        sprite->data[5] = 0;
+        sprite->data[4] = 1;
+        sprite->data[3] = 0;
+        sprite->data[1] = SHAKEGLOW_MAGENTA;
+    }
+
+    if (sprite->data[2] % 2 == 0)
+        ShakeGlow_Blend(sprite);
+
+    if (sprite->data[2] >= (128 - sprite->data[0] * sprite->data[4]) / 2)
+        ShakeGlow_Move(sprite);
+
+    sprite->data[2]++;
+}
+
+static void Anim_ShakeGlowCyan_Fast(struct Sprite *sprite)
+{
+    if (sprite->data[2] == 0)
+    {
+        sprite->data[7] = OBJ_PLTT_ID(sprite->oam.paletteNum);
+        sprite->data[0] = 10;
+        sprite->data[5] = 0;
+        sprite->data[4] = 2;
+        sprite->data[3] = 0;
+        sprite->data[1] = SHAKEGLOW_CYAN;
+    }
+
+    if (sprite->data[2] % 2 == 0)
+        ShakeGlow_Blend(sprite);
+
+    if (sprite->data[2] >= (128 - sprite->data[0] * sprite->data[4]) / 2)
+        ShakeGlow_Move(sprite);
+
+    sprite->data[2]++;
+}
+
+static void Anim_ShakeGlowCyan(struct Sprite *sprite)
+{
+    if (sprite->data[2] == 0)
+    {
+        sprite->data[7] = OBJ_PLTT_ID(sprite->oam.paletteNum);
+        sprite->data[0] = 20;
+        sprite->data[5] = 0;
+        sprite->data[4] = 1;
+        sprite->data[3] = 0;
+        sprite->data[1] = SHAKEGLOW_CYAN;
+    }
+
+    if (sprite->data[2] % 2 == 0)
+        ShakeGlow_Blend(sprite);
+
+    if (sprite->data[2] >= (128 - sprite->data[0] * sprite->data[4]) / 2)
+        ShakeGlow_Move(sprite);
+
+    sprite->data[2]++;
+}
+
+static void Anim_ShakeGlowCyan_Slow(struct Sprite *sprite)
+{
+    if (sprite->data[2] == 0)
+    {
+        sprite->data[7] = OBJ_PLTT_ID(sprite->oam.paletteNum);
+        sprite->data[0] = 80;
+        sprite->data[5] = 0;
+        sprite->data[4] = 1;
+        sprite->data[3] = 0;
+        sprite->data[1] = SHAKEGLOW_CYAN;
     }
 
     if (sprite->data[2] % 2 == 0)

@@ -829,8 +829,8 @@ static const u8 sRolloutDescription[] = _(
     "with rising intensity.");
 
 static const u8 sFalseSwipeDescription[] = _(
-    "An attack that leaves the\n"
-    "foe with at least 1 HP.");
+    "An attack that always\n"
+    "goes first.");
 
 static const u8 sSwaggerDescription[] = _(
     "Confuses the foe, but also\n"

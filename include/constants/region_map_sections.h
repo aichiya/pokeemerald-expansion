@@ -214,7 +214,54 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
+
+#define MAPSEC_D5                           0xD5
+#define MAPSEC_D6                           0xD6
+#define MAPSEC_D7                           0xD7
+#define MAPSEC_D8                           0xD8
+#define MAPSEC_D9                           0xD9
+#define MAPSEC_DA                           0xDA
+#define MAPSEC_DB                           0xDB
+#define MAPSEC_DC                           0xDC
+#define MAPSEC_DD                           0xDD
+#define MAPSEC_DE                           0xDE
+#define MAPSEC_DF                           0xDF
+#define MAPSEC_E0                           0xE0
+#define MAPSEC_E1                           0xE1
+#define MAPSEC_E2                           0xE2
+#define MAPSEC_E3                           0xE3
+#define MAPSEC_E4                           0xE4
+#define MAPSEC_E5                           0xE5
+#define MAPSEC_E6                           0xE6
+#define MAPSEC_E7                           0xE7
+#define MAPSEC_E8                           0xE8
+#define MAPSEC_E9                           0xE9
+#define MAPSEC_EA                           0xEA
+#define MAPSEC_EB                           0xEB
+#define MAPSEC_EC                           0xEC
+#define MAPSEC_ED                           0xED
+#define MAPSEC_EE                           0xEE
+#define MAPSEC_EF                           0xEF
+#define MAPSEC_F0                           0xF0
+#define MAPSEC_F1                           0xF1
+#define MAPSEC_F2                           0xF2
+#define MAPSEC_F3                           0xF3
+#define MAPSEC_F4                           0xF4
+#define MAPSEC_F5                           0xF5
+#define MAPSEC_F6                           0xF6
+#define MAPSEC_F7                           0xF7
+#define MAPSEC_F8                           0xF8
+#define MAPSEC_F9                           0xF9
+#define MAPSEC_FA                           0xFA
+#define MAPSEC_FB                           0xFB
+
+// Temporary
+#define MAPSEC_TWINRIVER_CITY               0xD5
+#define MAPSEC_ROUTE_48                     0xD6
+#define MAPSEC_ROUTE_47                     0xD7
+#define MAPSEC_CIANWOOD_CITY                0xD8
+
+#define MAPSEC_NONE                         0xFC
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

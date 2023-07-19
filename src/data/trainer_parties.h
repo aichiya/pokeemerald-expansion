@@ -12520,9 +12520,16 @@ static const struct TrainerMonItemCustomMoves sParty_TrainerTest7[] = {
     {
     .iv = 255,
     .lvl = 100,
-    .species = SPECIES_SH_VIVITR,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_PRISMATIC_LASER, MOVE_LIGHT_OF_RUIN, MOVE_PHOTON_GEYSER, MOVE_FUSION_FLARE}
+    .species = SPECIES_TH_MARIBEL,
+    .heldItem = ITEM_GHOSTIUM_Z,
+    .moves = {MOVE_PSYSTRIKE, MOVE_GEOMANCY, MOVE_MOONGEIST_BEAM, MOVE_REFLECT}
+    },
+    {
+    .iv = 255,
+    .lvl = 100,
+    .species = SPECIES_TH_RENKO,
+    .heldItem = ITEM_FIGHTINIUM_Z,
+    .moves = {MOVE_DRAGON_DANCE, MOVE_HIGH_JUMP_KICK, MOVE_EXTREME_SPEED, MOVE_LIGHT_SCREEN}
     }
 };
 

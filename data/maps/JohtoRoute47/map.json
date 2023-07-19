@@ -3,7 +3,7 @@
   "name": "JohtoRoute47",
   "layout": "LAYOUT_JOHTO_ROUTE47",
   "music": "MUS_HG_ROUTE47",
-  "region_map_section": "MAPSEC_PALLET_TOWN",
+  "region_map_section": "MAPSEC_ROUTE_47",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
@@ -63,6 +63,149 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallUp"
+    },
+    {
+      "type": "sign",
+      "x": 33,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallUp"
+    },
+    {
+      "type": "sign",
+      "x": 34,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallUp"
+    },
+    {
+      "type": "sign",
+      "x": 35,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallUp"
+    },
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 32,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallDown"
+    },
+    {
+      "type": "sign",
+      "x": 33,
+      "y": 32,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallDown"
+    },
+    {
+      "type": "sign",
+      "x": 34,
+      "y": 32,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallDown"
+    },
+    {
+      "type": "sign",
+      "x": 35,
+      "y": 32,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallDown"
+    },
+    {
+      "type": "sign",
+      "x": 57,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallUp"
+    },
+    {
+      "type": "sign",
+      "x": 58,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallUp"
+    },
+    {
+      "type": "sign",
+      "x": 59,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallUp"
+    },
+    {
+      "type": "sign",
+      "x": 60,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallUp"
+    },
+    {
+      "type": "sign",
+      "x": 57,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallDown"
+    },
+    {
+      "type": "sign",
+      "x": 58,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallDown"
+    },
+    {
+      "type": "sign",
+      "x": 59,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallDown"
+    },
+    {
+      "type": "sign",
+      "x": 60,
+      "y": 27,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallDown"
+    },
+    {
+      "type": "sign",
+      "x": 57,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallUp"
+    },
+    {
+      "type": "sign",
+      "x": 60,
+      "y": 29,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "JohtoRoute47_EventScript_SignWaterfallUp"
+    }
   ]
 }

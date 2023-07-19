@@ -10335,12 +10335,12 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_TEST_7] =
     {
-        .trainerClass = TRAINER_CLASS_SH_MAID,
+        .trainerClass = TRAINER_CLASS_TH_SEALING_CLUB,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_SH_VIVITR,
-        .trainerName = _("VIVIT"),
+        .trainerPic = TRAINER_PIC_TH_USAMI_RENKO,
+        .trainerName = _("RENKO"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
-        .doubleBattle = FALSE,
+        .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest7),
     },

@@ -9868,7 +9868,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_TH_MIKO_REIMU1:
         	return MUS_TH_SKYHIGH;
         case TRAINER_CLASS_TH_MIKO_REIMU2:
-        	return MUS_THPPZGSK_DREAMEXPRESS;
+        case TRAINER_CLASS_TH_SEALING_CLUB:
+        	return MUS_TH_CTC_GFREE;
         case TRAINER_CLASS_TH_MIKO_SANAE:
         	return MUS_THPPZGSK_PRIMALSCENE;
         case TRAINER_CLASS_TH_MAGICIAN_MARISA:

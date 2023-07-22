@@ -5331,8 +5331,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_LUSTER_PURGE] =
     {
         .effect = EFFECT_SPECIAL_DEFENSE_DOWN_HIT,
-        .power = 70,
-        .type = TYPE_PSYCHIC,
+        .power = 100,
+        .type = TYPE_FLYING,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 50,
@@ -5340,7 +5340,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         .split = SPLIT_SPECIAL,
-        .zMovePower = 140,
+        .zMovePower = 180,
         .zMoveEffect = Z_EFFECT_NONE,
     },
 
@@ -14989,8 +14989,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_LIGHT_THAT_BURNS_THE_SKY] =
     {
         .effect = EFFECT_HIT,
-        .power = 200,
-        .type = TYPE_PSYCHIC,
+        .power = 500,
+        .type = TYPE_GHOST,
         .accuracy = 0,
         .pp = 1,
         .secondaryEffectChance = 0,

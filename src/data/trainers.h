@@ -10347,10 +10347,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_TEST_8] =
     {
-        .trainerClass = TRAINER_CLASS_MOE_1,
+        .trainerClass = TRAINER_CLASS_TH_MIKO_REIMU2,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_STEVEN,
-        .trainerName = _("GIRATINA"),
+        .trainerPic = TRAINER_PIC_TH_HAKUREI_REIMU2,
+        .trainerName = _("REIMU"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,

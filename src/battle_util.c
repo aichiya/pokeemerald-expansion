@@ -4971,7 +4971,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u16 ability, u8 special, u16 move
                     effect++;
                 }
                 break;
-            case ABILITY_GRIM_NEIGH:
+            case ABILITY_SHICHININ_MISAKI:
                 if (CompareStat(battler, STAT_EVASION, MAX_STAT_STAGE, CMP_LESS_THAN) && gDisableStructs[battler].isFirstTurn != 2)
                 {
                     gBattleMons[battler].statStages[STAT_EVASION]++;

@@ -1189,8 +1189,8 @@ static const u8 sTailGlowDescription[] = _(
     "raises Sp. Atk.");
 
 static const u8 sLusterPurgeDescription[] = _(
-    "Attacks with a burst of\n"
-    "light. May lower Sp. Def.");
+    "Blasts foe using Shingyoku\n"
+    "orb. May lower Sp. Def.");
 
 static const u8 sMistBallDescription[] = _(
     "Attacks with a flurry of\n"

@@ -22114,7 +22114,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship   = 70,
         .growthRate   = GROWTH_MEDIUM_FAST,
         .eggGroups    = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},
-        .abilities    = {ABILITY_GRIM_NEIGH, ABILITY_SPEED_BOOST, ABILITY_NONE},
+        .abilities    = {ABILITY_SHICHININ_MISAKI, ABILITY_SPEED_BOOST, ABILITY_NONE},
         .bodyColor    = BODY_COLOR_BLACK,
         .noFlip       = FALSE,
 
@@ -22145,7 +22145,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship   = 70,
         .growthRate   = GROWTH_MEDIUM_FAST,
         .eggGroups    = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},
-        .abilities    = {ABILITY_GRIM_NEIGH, ABILITY_SPEED_BOOST, ABILITY_NONE},
+        .abilities    = {ABILITY_SHICHININ_MISAKI, ABILITY_SPEED_BOOST, ABILITY_NONE},
         .bodyColor    = BODY_COLOR_BLACK,
         .noFlip       = FALSE,
 
@@ -22176,7 +22176,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship   = 70,
         .growthRate   = GROWTH_MEDIUM_FAST,
         .eggGroups    = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},
-        .abilities    = {ABILITY_GRIM_NEIGH, ABILITY_SPEED_BOOST, ABILITY_NONE},
+        .abilities    = {ABILITY_SHICHININ_MISAKI, ABILITY_SPEED_BOOST, ABILITY_NONE},
         .bodyColor    = BODY_COLOR_BLACK,
         .noFlip       = FALSE,
 

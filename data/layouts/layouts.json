@@ -5640,6 +5640,76 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/GensokyoBambooForestInner22/border.bin",
       "blockdata_filepath": "data/layouts/GensokyoBambooForestInner22/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINRIVER_CAVE1",
+      "name": "TwinriverCave1_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TwinriverCave1/border.bin",
+      "blockdata_filepath": "data/layouts/TwinriverCave1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINRIVER_CAVE2",
+      "name": "TwinriverCave2_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TwinriverCave2/border.bin",
+      "blockdata_filepath": "data/layouts/TwinriverCave2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINRIVER_CAVE3",
+      "name": "TwinriverCave3_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TwinriverCave3/border.bin",
+      "blockdata_filepath": "data/layouts/TwinriverCave3/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINRIVER_CAVE4",
+      "name": "TwinriverCave4_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TwinriverCave4/border.bin",
+      "blockdata_filepath": "data/layouts/TwinriverCave4/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINRIVER_CAVE_B1",
+      "name": "TwinriverCaveB1_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TwinriverCaveB1/border.bin",
+      "blockdata_filepath": "data/layouts/TwinriverCaveB1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINRIVER_CAVE_B2B7",
+      "name": "TwinriverCaveB2B7_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TwinriverCaveB2B7/border.bin",
+      "blockdata_filepath": "data/layouts/TwinriverCaveB2B7/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINRIVER_CAVE_B8",
+      "name": "TwinriverCaveB8_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TwinriverCaveB8/border.bin",
+      "blockdata_filepath": "data/layouts/TwinriverCaveB8/map.bin"
     }
   ]
 }

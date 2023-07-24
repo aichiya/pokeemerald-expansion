@@ -1305,3 +1305,17 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/GensokyoBambooForestInner21/scripts.inc"
 
 	.include "data/maps/GensokyoBambooForestInner22/scripts.inc"
+
+	.include "data/maps/TwinriverCave1/scripts.inc"
+
+	.include "data/maps/TwinriverCave2/scripts.inc"
+
+	.include "data/maps/TwinriverCave3/scripts.inc"
+
+	.include "data/maps/TwinriverCave4/scripts.inc"
+
+	.include "data/maps/TwinriverCaveB1/scripts.inc"
+
+	.include "data/maps/TwinriverCaveB2B7/scripts.inc"
+
+	.include "data/maps/TwinriverCaveB8/scripts.inc"

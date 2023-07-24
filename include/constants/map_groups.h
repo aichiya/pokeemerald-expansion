@@ -633,6 +633,13 @@
 #define MAP_JOHTO_ROUTE48          (38 | (34 << 8))
 
 // gMapGroup_JohtoDungeons
+#define MAP_TWINRIVER_CAVE1     (0 | (35 << 8))
+#define MAP_TWINRIVER_CAVE2     (1 | (35 << 8))
+#define MAP_TWINRIVER_CAVE3     (2 | (35 << 8))
+#define MAP_TWINRIVER_CAVE4     (3 | (35 << 8))
+#define MAP_TWINRIVER_CAVE_B1   (4 | (35 << 8))
+#define MAP_TWINRIVER_CAVE_B2B7 (5 | (35 << 8))
+#define MAP_TWINRIVER_CAVE_B8   (6 | (35 << 8))
 
 // gMapGroup_GensokyoTownsAndRoutes
 #define MAP_GENSOKYO_HAKUREI_SHRINE           (0 | (36 << 8))

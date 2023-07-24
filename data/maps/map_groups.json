@@ -670,7 +670,13 @@
     "JohtoRoute48"
   ],
   "gMapGroup_JohtoDungeons": [
-
+    "TwinriverCave1",
+    "TwinriverCave2",
+    "TwinriverCave3",
+    "TwinriverCave4",
+    "TwinriverCaveB1",
+    "TwinriverCaveB2B7",
+    "TwinriverCaveB8"
   ],
   "gMapGroup_GensokyoTownsAndRoutes": [
     "GensokyoHakureiShrine",

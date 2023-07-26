@@ -1051,3 +1051,12 @@ void Task_LinkFullSave(u8 taskId)
         break;
     }
 }
+
+void ClearSaveDataAndReset(void)
+{
+    u16 i;
+    {
+    	ClearSaveData();
+    	DoSoftReset();
+    }
+}

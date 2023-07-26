@@ -107,43 +107,26 @@ JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated::
 
 JohtoTwinriverCity_EventScript_Sign4::
 	lockall
-	deleteplayerparty
-	delay 30
-	setflag FLAG_SYS_POKEMON_GET
-	setflag FLAG_SYS_NATIONAL_DEX
-	setflag FLAG_SYS_POKEDEX_GET
-	special EnableNationalPokedex
-	special SetUnlockedPokedexFlags
-	setflag FLAG_SYS_B_DASH
-	setflag FLAG_BADGE01_GET
-	setflag FLAG_BADGE02_GET
-	setflag FLAG_BADGE03_GET
-	setflag FLAG_BADGE04_GET
-	setflag FLAG_BADGE05_GET
-	setflag FLAG_BADGE06_GET
-	setflag FLAG_BADGE07_GET
-	setflag FLAG_BADGE08_GET
-	delay 30
-	additem ITEM_MEGA_RING, 1
-	additem ITEM_Z_POWER_RING, 1
-	additem ITEM_MASTER_BALL, 10
-	setvar VAR_TEMP_1, 0
-	givemon SPECIES_CHARIZARD, 100, ITEM_CHARIZARDITE_Y
-	setmoneventlegal 0
-	setmonmetlocation 0, 255
-	setmonmove 0, 0, MOVE_FLAMETHROWER
-	setmonmove 0, 1, MOVE_DYNAMAX_CANNON
-	setmonmove 0, 2, MOVE_SURGING_STRIKES
-	setmonmove 0, 3, MOVE_VICTORY_DANCE
-	delay 30
-	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
-	waitmoncry
-	seteventmon SPECIES_NECROZMA_ULTRA, 70, ITEM_ULTRANECROZIUM_Z
-	special BattleSetup_StartLegendaryBattle
-	playbgm MUS_PC_ALLHENSHIN, FALSE
-	waitstate
+	fadenewbgm MUS_PKMN_PMD2_DONTEVERFORGET
+	delay 200
+	msgbox JohtoTwinriverCity_Text_Sign4_BetterThisWay, MSGBOX_DEFAULT
+	closemessage
+	delay 200
+	delay 200
+	msgbox JohtoTwinriverCity_Text_Sign4_ByeByeEveryone, MSGBOX_DEFAULT
+	closemessage
+	delay 200
+	fadescreenspeed 0x1, 0x18
+	delay 0x20
+	special ClearSaveDataAndReset
 	releaseall
 	end
+
+JohtoTwinriverCity_Text_Sign4_BetterThisWay:
+	.string "(I think it's better this way.)$"
+
+JohtoTwinriverCity_Text_Sign4_ByeByeEveryone:
+	.string "(Bye-bye everyone.)$"
 
 JohtoTwinriverCity_EventScript_Sign5::
 	lockall

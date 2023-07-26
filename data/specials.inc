@@ -537,3 +537,6 @@ gSpecials::
 	def_special SetTotemBoost									@ 0x210
 	def_special TrySpecialOverworldEvo							@ 0x211
 	def_special FillPokedex
+	def_special ClearSaveDataAndReset
+
+

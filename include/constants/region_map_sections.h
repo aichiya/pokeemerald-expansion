@@ -255,12 +255,6 @@
 #define MAPSEC_FA                           0xFA
 #define MAPSEC_FB                           0xFB
 
-// Temporary
-#define MAPSEC_TWINRIVER_CITY               0xD5
-#define MAPSEC_ROUTE_48                     0xD6
-#define MAPSEC_ROUTE_47                     0xD7
-#define MAPSEC_CIANWOOD_CITY                0xD8
-
 #define MAPSEC_NONE                         0xFC
 
 #define METLOC_SPECIAL_EGG                  0xFD

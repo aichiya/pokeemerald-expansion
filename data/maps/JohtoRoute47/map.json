@@ -3,7 +3,7 @@
   "name": "JohtoRoute47",
   "layout": "LAYOUT_JOHTO_ROUTE47",
   "music": "MUS_HG_ROUTE47",
-  "region_map_section": "MAPSEC_ROUTE_47",
+  "region_map_section": "MAPSEC_D7",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

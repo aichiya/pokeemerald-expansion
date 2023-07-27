@@ -3,7 +3,7 @@
   "name": "JohtoTwinriverCity",
   "layout": "LAYOUT_JOHTO_TWINRIVER_CITY",
   "music": "MUS_YYYI_HOSHITOHANA",
-  "region_map_section": "MAPSEC_TWINRIVER_CITY",
+  "region_map_section": "MAPSEC_D5",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_CITY",

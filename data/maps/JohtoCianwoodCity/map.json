@@ -3,7 +3,7 @@
   "name": "JohtoCianwoodCity",
   "layout": "LAYOUT_JOHTO_CIANWOOD_CITY",
   "music": "MUS_HG_CIANWOOD",
-  "region_map_section": "MAPSEC_CIANWOOD_CITY",
+  "region_map_section": "MAPSEC_D8",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_CITY",

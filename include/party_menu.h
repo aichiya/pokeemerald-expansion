@@ -30,8 +30,6 @@ extern u8 gBattlePartyCurrentOrder[PARTY_SIZE / 2];
 extern void (*gItemUseCB)(u8, TaskFunc);
 extern const struct SpriteTemplate gSpriteTemplate_StatusIcons;
 
-extern const u16 gTutorMoves[];
-
 void AnimatePartySlot(u8 slot, u8 animNum);
 bool8 IsMultiBattle(void);
 u8 GetCursorSelectionMonId(void);
@@ -96,11 +94,5 @@ void MoveDeleterForgetMove(void);
 void BufferMoveDeleterNicknameAndMove(void);
 void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
-
-// #ifndef BATTLE_ENGINE
-bool8 CanLearnTutorMove(u16, u8);
-// #else
-u16 GetTMHMMoves(u16 position);
-// #endif
 
 #endif // GUARD_PARTY_MENU_H

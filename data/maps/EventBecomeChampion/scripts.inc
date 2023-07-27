@@ -73,6 +73,9 @@ EventBecomeChampion_EventScript_YouAreTheChampion::
 	setmonmove 5, 1, MOVE_THUNDER_WAVE
 	setmonmove 5, 2, MOVE_DAZZLING_GLEAM
 	setmonmove 5, 3, MOVE_AIR_SLASH
+	setflag FLAG_SHINIZER
+	givemon SPECIES_ETC_MISSINGNO, 101, ITEM_CHERISH_BALL
+	clearflag FLAG_SHINIZER
 	applymovement LOCALID_LANCE, EventBecomeChampion_Movement_Lance1
 	waitmovement 0x0
 	msgbox EventBecomeChampion_Text_Lance1, MSGBOX_DEFAULT

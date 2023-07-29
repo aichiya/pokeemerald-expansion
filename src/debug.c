@@ -3950,6 +3950,8 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
 	X(MUS_PKMN_XY_VS_WILD) \
 	X(MUS_PKMN_USUM_VS_WILD) \
 	X(MUS_PKMN_SWSH_VS_WILD) \
+	X(MUS_SH_SILKROAD) \
+	X(MUS_SH_VELVETMAIDEN) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

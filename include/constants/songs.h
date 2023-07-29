@@ -1305,7 +1305,10 @@
 #define MUS_PKMN_USUM_VS_WILD 1334
 #define MUS_PKMN_SWSH_VS_WILD 1335
 
-#define END_MUS 					MUS_PKMN_SWSH_VS_WILD
+#define MUS_SH_SILKROAD 1336
+#define MUS_SH_VELVETMAIDEN 1337
+
+#define END_MUS 					MUS_SH_VELVETMAIDEN
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -15,12 +15,12 @@ voicegroup192::
 	voice_directsound 48, 44, DirectSoundWaveData_unused_sc55_tom, 255, 210, 77, 204
 	voice_directsound_no_resample 60, 79, DirectSoundWaveData_unknown_close_hihat, 255, 127, 0, 188
 	voice_directsound 51, 54, DirectSoundWaveData_unused_sc55_tom, 255, 216, 77, 204
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 52, 60, DirectSoundWaveData_unused_sc55_tom, 255, 216, 77, 204 @ add
 	voice_directsound 54, 64, DirectSoundWaveData_unused_sc55_tom, 255, 216, 77, 204
 	voice_directsound_no_resample 60, 79, DirectSoundWaveData_unknown_open_hihat, 255, 242, 141, 0
 	voice_directsound 57, 69, DirectSoundWaveData_unused_sc55_tom, 255, 210, 77, 204
 	voice_directsound 60, 79, DirectSoundWaveData_unused_sc55_tom, 255, 204, 77, 204
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 61, 82, DirectSoundWaveData_unused_sc55_tom, 255, 204, 77, 204 @ add
 	voice_directsound 62, 84, DirectSoundWaveData_unused_sc55_tom, 255, 204, 77, 204
 	voice_directsound_no_resample 64, 64, DirectSoundWaveData_ethnic_flavours_ohtsuzumi, 255, 0, 255, 0
 	voice_directsound_no_resample 61, 84, DirectSoundWaveData_ethnic_flavours_hyoushigi, 255, 0, 255, 0
@@ -51,7 +51,7 @@ voicegroup192::
 	voice_directsound 80, 94, DirectSoundWaveData_sd90_ambient_tom, 255, 0, 255, 226
 	voice_directsound_no_resample 33, 89, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 235, 0, 231
 	voice_directsound 84, 104, DirectSoundWaveData_sd90_ambient_tom, 255, 0, 255, 235
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 86, 108, DirectSoundWaveData_sd90_ambient_tom, 255, 0, 255, 235 @ add
 	voice_directsound 63, 64, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 235, 0, 231
 	voice_directsound_no_resample 64, 24, DirectSoundWaveData_dance_drums_ride_bell, 255, 165, 103, 231
 

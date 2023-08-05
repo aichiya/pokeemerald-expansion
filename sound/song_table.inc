@@ -1339,6 +1339,7 @@ gSongTable::
 	song mus_pkmn_swsh_vs_wild, 0, 0
 	song mus_sh_silkroad, 0, 0
 	song mus_sh_velvetmaiden, 0, 0
+	song mus_sny_godknows, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -1974,6 +1974,7 @@ SECTIONS {
         sound/songs/mus_pkmn_swsh_vs_wild.o(.rodata);
         sound/songs/mus_sh_silkroad.o(.rodata);
         sound/songs/mus_sh_velvetmaiden.o(.rodata);
+        sound/songs/mus_sny_godknows.o(.rodata);
     } =0
 
     lib_rodata :

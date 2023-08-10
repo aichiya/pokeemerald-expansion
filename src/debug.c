@@ -3953,6 +3953,9 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
 	X(MUS_SH_SILKROAD) \
 	X(MUS_SH_VELVETMAIDEN) \
 	X(MUS_SNY_GODKNOWS) \
+	X(MUS_GI_MOONLIKESMILE) \
+	X(MUS_TH_LOSTDREAM) \
+	X(MUS_ZNT_ISAYYES) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

@@ -1310,7 +1310,13 @@
 
 #define MUS_SNY_GODKNOWS 1338
 
-#define END_MUS 					MUS_SNY_GODKNOWS
+#define MUS_GI_MOONLIKESMILE 1339
+
+#define MUS_TH_LOSTDREAM 1340
+
+#define MUS_ZNT_ISAYYES 1341
+
+#define END_MUS 					MUS_ZNT_ISAYYES
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

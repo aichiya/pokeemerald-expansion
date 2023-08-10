@@ -1340,6 +1340,9 @@ gSongTable::
 	song mus_sh_silkroad, 0, 0
 	song mus_sh_velvetmaiden, 0, 0
 	song mus_sny_godknows, 0, 0
+	song mus_gi_moonlikesmile, 0, 0
+	song mus_th_lostdream, 0, 0
+	song mus_znt_isayyes, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -9899,6 +9899,8 @@ u16 GetBattleBGM(void)
         	return MUS_DGMN_STORY2_VS_ADVANCE;
         case TRAINER_CLASS_YYYI_YUUSHA:
         	return MUS_YYYI_BATTLE_04;
+        case TRAINER_CLASS_BGHS_SCHOOL_GIRL:
+        	return MUS_SNY_GODKNOWS;
         default:
             return MUS_VS_TRAINER;
         }

@@ -9238,9 +9238,9 @@ mus_sh_velvetmaiden_5:
 	.byte	KEYSH , mus_sh_velvetmaiden_key+0
 @ 000   ----------------------------------------
 @ 001   ----------------------------------------
-	.byte		VOL   , 100*mus_sh_velvetmaiden_mvl/mxv @ 120
+	.byte		VOL   , 127*mus_sh_velvetmaiden_mvl/mxv @ 120
 	.byte		PAN   , c_v-2
-	.byte		VOICE , 115 @ 48
+	.byte		VOICE , 44 @ 48
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------

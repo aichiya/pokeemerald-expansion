@@ -166,6 +166,7 @@ static EWRAM_DATA struct PokemonSummaryScreenData
         u8 ppBonuses; // 0x34
         u8 sanity; // 0x35
         u8 OTName[17]; // 0x36
+        u8 hiddenNature;
         u32 OTID; // 0x48
     } summary;
     u16 bgTilemapBuffers[PSS_PAGE_COUNT][2][0x400];
@@ -729,6 +730,8 @@ static void (*const sTextPrinterTasks[])(u8 taskId) =
 };
 
 static const u8 sMemoNatureTextColor[] = _("{COLOR LIGHT_RED}{SHADOW GREEN}");
+static const u8 sMemoHiddenNatureTextColor[] = _(" {RIGHT_ARROW} {COLOR BLUE}{SHADOW DARK_GRAY}");
+static const u8 sText_EndParentheses[] = _("{COLOR WHITE}{SHADOW DARK_GRAY}");
 static const u8 sMemoMiscTextColor[] = _("{COLOR WHITE}{SHADOW DARK_GRAY}"); // This is also affected by palettes, apparently
 static const u8 sStatsLeftColumnLayout[] = _("{DYNAMIC 0}/{DYNAMIC 1}\n{DYNAMIC 2}\n{DYNAMIC 3}");
 static const u8 sStatsRightColumnLayout[] = _("{DYNAMIC 0}\n{DYNAMIC 1}\n{DYNAMIC 2}");
@@ -1502,7 +1505,8 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
     case 2:
         if (sMonSummaryScreen->monList.mons == gPlayerParty || sMonSummaryScreen->mode == SUMMARY_MODE_BOX || sMonSummaryScreen->handleDeoxys == TRUE)
         {
-            sum->nature = GetNature(mon);
+            sum->nature = GetNature(mon, FALSE); //           sum->nature = GetNature(mon);
+            sum->hiddenNature = GetMonData(mon, MON_DATA_HIDDEN_NATURE);
             sum->currentHP = GetMonData(mon, MON_DATA_HP);
             sum->maxHP = GetMonData(mon, MON_DATA_MAX_HP);
             sum->atk = GetMonData(mon, MON_DATA_ATK);
@@ -1513,7 +1517,8 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
         }
         else
         {
-            sum->nature = GetNature(mon);
+            sum->nature = GetNature(mon, FALSE); //            sum->nature = GetNature(mon);
+            sum->hiddenNature = GetMonData(mon, MON_DATA_HIDDEN_NATURE);
             sum->currentHP = GetMonData(mon, MON_DATA_HP);
             sum->maxHP = GetMonData(mon, MON_DATA_MAX_HP);
             sum->atk = GetMonData(mon, MON_DATA_ATK2);
@@ -3204,6 +3209,13 @@ static void BufferMonTrainerMemo(void)
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(1, sMemoMiscTextColor);
     BufferNatureString();
 
+    if (sum->hiddenNature != HIDDEN_NATURE_NONE)
+    {
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, sMemoHiddenNatureTextColor);
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(6, gNatureNamePointers[sum->hiddenNature]);
+        DynamicPlaceholderTextUtil_SetPlaceholderPtr(7, sText_EndParentheses);
+    }
+
     if (InBattleFactory() == TRUE || InSlateportBattleTent() == TRUE || IsInGamePartnerMon() == TRUE)
     {
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, gText_XNature);
@@ -3475,13 +3487,22 @@ static void PrintRibbonCount(void)
 
 static void PrintNatureColouredStatNames(void)
 {
+    struct PokeSummary *sum = &sMonSummaryScreen->summary;
     int statsXPos;
-    const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.nature];
-    int atkColour = GetNatureColourID(natureMod[STAT_ATK - 1]);
-    int defColour = GetNatureColourID(natureMod[STAT_DEF - 1]);
-    int spaColour = GetNatureColourID(natureMod[STAT_SPATK - 1]);
-    int spdColour = GetNatureColourID(natureMod[STAT_SPDEF - 1]);
-    int speColour = GetNatureColourID(natureMod[STAT_SPEED - 1]);
+    const s8 *natureMod;
+    u8 atkColour, defColour, spaColour, spdColour, speColour;
+
+    if (sum->hiddenNature != HIDDEN_NATURE_NONE)
+        natureMod = gNatureStatTable[sum->hiddenNature];
+    else
+        natureMod = gNatureStatTable[sum->nature];
+
+    atkColour = GetNatureColourID(natureMod[STAT_ATK - 1]);
+    defColour = GetNatureColourID(natureMod[STAT_DEF - 1]);
+    spaColour = GetNatureColourID(natureMod[STAT_SPATK - 1]);
+    spdColour = GetNatureColourID(natureMod[STAT_SPDEF - 1]);
+    speColour = GetNatureColourID(natureMod[STAT_SPEED - 1]);
+
     statsXPos = 6 + GetStringCenterAlignXOffset(1, gText_Attack3, 42);
     PrintTextOnWindow(PSS_LABEL_WINDOW_POKEMON_SKILLS_STATS_LEFT, gText_Attack3, statsXPos, 17, 0, atkColour);
     statsXPos = 6 + GetStringCenterAlignXOffset(1, gText_Defense3, 42);

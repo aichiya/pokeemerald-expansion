@@ -483,6 +483,12 @@ static void _TriggerPendingDaycareEgg(struct DayCare *daycare)
         u8 wantedNature = GetNatureFromPersonality(GetBoxMonData(&daycare->mons[parent].mon, MON_DATA_PERSONALITY, NULL));
         u32 personality;
 
+        // make parents who have a changed nature be able to pass on the changed nature
+        if (GetBoxMonData(&daycare->mons[parent].mon, MON_DATA_HIDDEN_NATURE, NULL))
+        {
+            wantedNature = GetBoxMonData(&daycare->mons[parent].mon, MON_DATA_HIDDEN_NATURE, NULL);
+        }
+
         do
         {
             personality = (Random2() << 16) | (Random());

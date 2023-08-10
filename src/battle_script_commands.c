@@ -8967,6 +8967,7 @@ static void Cmd_various(void)
     case VARIOUS_PALACE_FLAVOR_TEXT:
     {
         VARIOUS_ARGS();
+        u8 monNature;
         // Try and print end-of-turn Battle Palace flavor text (e.g. "A glint appears in mon's eyes")
         gBattleCommunication[0] = FALSE; // whether or not msg should be printed
         gBattleScripting.battler = gActiveBattler = gBattleCommunication[1];
@@ -8977,7 +8978,14 @@ static void Cmd_various(void)
         {
             gBattleStruct->palaceFlags |= gBitTable[gActiveBattler];
             gBattleCommunication[0] = TRUE;
-            gBattleCommunication[MULTISTRING_CHOOSER] = sBattlePalaceNatureToFlavorTextId[GetNatureFromPersonality(gBattleMons[gActiveBattler].personality)];
+//            gBattleCommunication[MULTISTRING_CHOOSER] = sBattlePalaceNatureToFlavorTextId[GetNatureFromPersonality(gBattleMons[gActiveBattler].personality)];
+
+            if (GetMonData(gActiveBattler, MON_DATA_HIDDEN_NATURE) != HIDDEN_NATURE_NONE)
+                monNature = GetMonData(gActiveBattler, MON_DATA_HIDDEN_NATURE);
+            else
+                monNature = GetNatureFromPersonality(gBattleMons[gActiveBattler].personality);
+
+            gBattleCommunication[MULTISTRING_CHOOSER] = sBattlePalaceNatureToFlavorTextId[monNature];
         }
         break;
     }

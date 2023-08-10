@@ -111,6 +111,7 @@ u16 ChooseMoveAndTargetInBattlePalace(void)
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[gActiveBattler][4]);
     u8 unusableMovesBits = CheckMoveLimitations(gActiveBattler, 0, MOVE_LIMITATIONS_ALL);
     s32 percent = Random() % 100;
+    u8 monNature;
 
     // Heavy variable re-use here makes this hard to read without defines
     // Possibly just optimization? might still match with additional vars
@@ -136,7 +137,13 @@ u16 ChooseMoveAndTargetInBattlePalace(void)
     // Otherwise use move from "Support" group
     for (; i < maxGroupNum; i++)
     {
-        if (gBattlePalaceNatureToMoveGroupLikelihood[GetNatureFromPersonality(gBattleMons[gActiveBattler].personality)][i] > percent)
+//        if (gBattlePalaceNatureToMoveGroupLikelihood[GetNatureFromPersonality(gBattleMons[gActiveBattler].personality)][i] > percent)
+        if (GetMonData(gActiveBattler, MON_DATA_HIDDEN_NATURE) != HIDDEN_NATURE_NONE)
+            monNature = GetMonData(gActiveBattler, MON_DATA_HIDDEN_NATURE);
+        else
+            monNature = GetNatureFromPersonality(gBattleMons[gActiveBattler].personality);
+
+        if (gBattlePalaceNatureToMoveGroupLikelihood[monNature][i] > percent)
             break;
     }
     selectedGroup = i - minGroupNum;
@@ -296,7 +303,7 @@ static u16 GetBattlePalaceTarget(void)
 {
     if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
     {
-        u8 opposing1, opposing2;
+        u8 opposing1, opposing2, monNature; //        u8 opposing1, opposing2;
 
         if (GetBattlerSide(gActiveBattler) == B_SIDE_PLAYER)
         {
@@ -312,7 +319,13 @@ static u16 GetBattlePalaceTarget(void)
         if (gBattleMons[opposing1].hp == gBattleMons[opposing2].hp)
             return (BATTLE_OPPOSITE(gActiveBattler & BIT_SIDE) + (Random() & 2)) << 8;
 
-        switch (gBattlePalaceNatureToMoveTarget[GetNatureFromPersonality(gBattleMons[gActiveBattler].personality)])
+        if (GetMonData(gActiveBattler, MON_DATA_HIDDEN_NATURE) != HIDDEN_NATURE_NONE)
+            monNature = GetMonData(gActiveBattler, MON_DATA_HIDDEN_NATURE);
+        else
+            monNature = GetNatureFromPersonality(gBattleMons[gActiveBattler].personality);
+
+        switch (gBattlePalaceNatureToMoveTarget[monNature])
+//        switch (gBattlePalaceNatureToMoveTarget[GetNatureFromPersonality(gBattleMons[gActiveBattler].personality)])
         {
         case PALACE_TARGET_STRONGER:
             if (gBattleMons[opposing1].hp > gBattleMons[opposing2].hp)

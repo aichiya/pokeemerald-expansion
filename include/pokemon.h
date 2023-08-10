@@ -58,7 +58,7 @@ enum {
     MON_DATA_IS_EGG,
     MON_DATA_ABILITY_NUM,
     MON_DATA_TOUGH,
-    MON_DATA_SHEEN,
+    MON_DATA_HIDDEN_NATURE, //    MON_DATA_SHEEN,
     MON_DATA_OT_GENDER,
     MON_DATA_COOL_RIBBON,
     MON_DATA_BEAUTY_RIBBON,
@@ -131,7 +131,7 @@ struct PokemonSubstruct2
     /*0x08*/ u8 cute;
     /*0x09*/ u8 smart;
     /*0x0A*/ u8 tough;
-    /*0x0B*/ u8 sheen;
+    /*0x0B*/ u8 hiddenNature; // /*0x0B*/ u8 sheen;
 }; /* size = 12 */
 
 struct PokemonSubstruct3
@@ -488,7 +488,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
 bool8 HealStatusConditions(struct Pokemon *mon, u32 battlePartyId, u32 healMask, u8 battlerId);
 u8 GetItemEffectParamOffset(u16 itemId, u8 effectByte, u8 effectBit);
 u8 *UseStatIncreaseItem(u16 itemId);
-u8 GetNature(struct Pokemon *mon);
+u8 GetNature(struct Pokemon *mon, bool32 checkHidden); // u8 GetNature(struct Pokemon *mon);
 u8 GetNatureFromPersonality(u32 personality);
 u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem, struct Pokemon *tradePartner);
 u16 HoennPokedexNumToSpecies(u16 hoennNum);

@@ -131,7 +131,7 @@ static void UpdateSelection(bool8);
 static void CloseUsePokeblockMenu(void);
 static void AskUsePokeblock(void);
 static s8 HandleAskUsePokeblockInput(void);
-static bool8 IsSheenMaxed(void);
+// static bool8 IsSheenMaxed(void);
 static void PrintWontEatAnymore(void);
 static void FeedPokeblockToMon(void);
 static void EraseMenuWindow(void);
@@ -139,7 +139,7 @@ static u8 GetPartyIdFromSelectionId(u8);
 static void ShowPokeblockResults(void);
 static void CalculateConditionEnhancements(void);
 static void LoadAndCreateUpDownSprites(void);
-static void CalculateNumAdditionalSparkles(u8);
+// static void CalculateNumAdditionalSparkles(u8);
 static void PrintFirstEnhancement(void);
 static bool8 TryPrintNextEnhancement(void);
 static void BufferEnhancedText(u8 *, u8, s16);
@@ -665,6 +665,7 @@ static void UsePokeblockMenu(void)
             sInfo->mainState = STATE_HANDLE_INPUT;
             break;
         case 0: // YES
+/*
             if (IsSheenMaxed())
             {
                 PrintWontEatAnymore();
@@ -674,6 +675,8 @@ static void UsePokeblockMenu(void)
             {
                 SetUsePokeblockCallback(FeedPokeblockToMon);
             }
+*/
+            SetUsePokeblockCallback(FeedPokeblockToMon);
             break;
         }
         break;
@@ -789,7 +792,7 @@ static void ShowPokeblockResults(void)
     case 3:
         if (!ConditionGraph_TryUpdate(&sMenu->graph))
         {
-            CalculateNumAdditionalSparkles(GetPartyIdFromSelectionId(sMenu->info.curSelection));
+        	sMenu->numSparkles[sMenu->curLoadId] = MAX_CONDITION_SPARKLES - 1; // CalculateNumAdditionalSparkles(GetPartyIdFromSelectionId(sMenu->info.curSelection));
             if (sMenu->info.curSelection != sMenu->info.numSelections - 1)
             {
                 u8 numSparkles = sMenu->numSparkles[sMenu->curLoadId];
@@ -998,7 +1001,7 @@ static void AddPokeblockToConditions(struct Pokeblock *pokeblock, struct Pokemon
     u16 i;
     s16 stat;
     u8 data;
-
+/*
     if (GetMonData(mon, MON_DATA_SHEEN) != MAX_SHEEN)
     {
         CalculatePokeblockEffectiveness(pokeblock, mon);
@@ -1020,6 +1023,19 @@ static void AddPokeblockToConditions(struct Pokeblock *pokeblock, struct Pokemon
 
         data = stat;
         SetMonData(mon, MON_DATA_SHEEN, &data);
+    }
+*/
+    CalculatePokeblockEffectiveness(pokeblock, mon);
+    for (i = 0; i < CONDITION_COUNT; i++)
+    {
+        data = GetMonData(mon, sConditionToMonData[i]);
+        stat = data +  sInfo->pokeblockStatBoosts[i];
+        if (stat < 0)
+            stat = 0;
+        if (stat > MAX_CONDITION)
+            stat = MAX_CONDITION;
+        data = stat;
+        SetMonData(mon, sConditionToMonData[i], &data);
     }
 }
 
@@ -1067,6 +1083,7 @@ static void CalculatePokeblockEffectiveness(struct Pokeblock *pokeblock, struct 
     }
 }
 
+/*
 static bool8 IsSheenMaxed(void)
 {
     if (GetBoxOrPartyMonData(sMenu->party[sMenu->info.curSelection].boxId,
@@ -1077,6 +1094,7 @@ static bool8 IsSheenMaxed(void)
     else
         return FALSE;
 }
+*/
 
 static u8 GetPartyIdFromSelectionId(u8 selectionId)
 {
@@ -1388,7 +1406,7 @@ static void UpdateMonInfoText(u16 loadId, bool8 firstPrint)
     {
         AddTextPrinterParameterized(WIN_NAME, FONT_NORMAL, sMenu->monNameStrings[loadId], 0, 1, 0, NULL);
         partyIndex = GetPartyIdFromSelectionId(sMenu->info.curSelection);
-        nature = GetNature(&gPlayerParty[partyIndex]);
+        nature = GetNature(&gPlayerParty[partyIndex], TRUE); //        nature = GetNature(&gPlayerParty[partyIndex]);
         str = StringCopy(sMenu->info.natureText, gText_NatureSlash);
         str = StringCopy(str, gNatureNamePointers[nature]);
         AddTextPrinterParameterized3(WIN_NATURE, FONT_NORMAL, 2, 1, sNatureTextColors, 0, sMenu->info.natureText);
@@ -1593,11 +1611,13 @@ static void SpriteCB_SelectionIconCancel(struct Sprite *sprite)
 // Calculate the max id for sparkles/stars that appear around the pokemon on the condition screen
 // All pokemon start with 1 sparkle (added by CreateConditionSparkleSprites), so the number here +1
 // is the total number of sparkles that appear
+/*
 static void CalculateNumAdditionalSparkles(u8 monIndex)
 {
     u8 sheen = GetMonData(&gPlayerParty[monIndex], MON_DATA_SHEEN);
     sMenu->numSparkles[sMenu->curLoadId] = GET_NUM_CONDITION_SPARKLES(sheen);
 }
+*/
 
 static void LoadConditionGfx(void)
 {

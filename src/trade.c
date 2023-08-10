@@ -159,7 +159,7 @@ struct InGameTrade {
     u8 mailNum;
     u8 otName[11];
     u8 otGender;
-    u8 sheen;
+    u8 hiddenNature; //    u8 sheen;
     u16 requestedSpecies;
 };
 
@@ -4582,7 +4582,7 @@ static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTr
     SetMonData(pokemon, MON_DATA_COOL, &inGameTrade->conditions[0]);
     SetMonData(pokemon, MON_DATA_SMART, &inGameTrade->conditions[3]);
     SetMonData(pokemon, MON_DATA_TOUGH, &inGameTrade->conditions[4]);
-    SetMonData(pokemon, MON_DATA_SHEEN, &inGameTrade->sheen);
+    SetMonData(pokemon, MON_DATA_HIDDEN_NATURE, &inGameTrade->hiddenNature); //    SetMonData(pokemon, MON_DATA_SHEEN, &inGameTrade->sheen);
     SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
 
     mailNum = 0;

@@ -504,6 +504,17 @@ static const struct WindowTemplate sMailReadTakeWindowTemplate =
     .baseBlock = 0x39D,
 };
 
+static const struct WindowTemplate sMiscWindowTemplate =
+{
+    .bg = 2,
+    .tilemapLeft = 19,
+    .tilemapTop = 13,
+    .width = 10,
+    .height = 6,
+    .paletteNum = 14,
+    .baseBlock = 0x39D,
+};
+
 static const struct WindowTemplate sMoveSelectWindowTemplate =
 {
     .bg = 2,
@@ -676,6 +687,9 @@ struct
     [MENU_TRADE1] = {gText_Trade4, CursorCb_Trade1},
     [MENU_TRADE2] = {gText_Trade4, CursorCb_Trade2},
     [MENU_TOSS] = {gMenuText_Toss, CursorCb_Toss},
+    [MENU_MISC] = {gMenuText_Misc, CursorCb_Misc},
+    [MENU_NICKNAME] = {gMenuText_Nickname, CursorCb_Nickname},
+    [MENU_MOVES] = {gText_Moves, CursorCb_Moves},
     [MENU_FIELD_MOVES + FIELD_MOVE_CUT] = {gMoveNames[MOVE_CUT], CursorCb_FieldMove},
     [MENU_FIELD_MOVES + FIELD_MOVE_FLASH] = {gMoveNames[MOVE_FLASH], CursorCb_FieldMove},
     [MENU_FIELD_MOVES + FIELD_MOVE_ROCK_SMASH] = {gMoveNames[MOVE_ROCK_SMASH], CursorCb_FieldMove},
@@ -705,6 +719,7 @@ static const u8 sPartyMenuAction_RegisterSummaryCancel[] = {MENU_REGISTER, MENU_
 static const u8 sPartyMenuAction_TradeSummaryCancel1[] = {MENU_TRADE1, MENU_SUMMARY, MENU_CANCEL1};
 static const u8 sPartyMenuAction_TradeSummaryCancel2[] = {MENU_TRADE2, MENU_SUMMARY, MENU_CANCEL1};
 static const u8 sPartyMenuAction_TakeItemTossCancel[] = {MENU_TAKE_ITEM, MENU_TOSS, MENU_CANCEL1};
+static const u8 sPartyMenuAction_MiscCancel[] = {MENU_NICKNAME, MENU_MOVES, MENU_CANCEL2};
 
 static const u8 *const sPartyMenuActions[] =
 {
@@ -722,6 +737,7 @@ static const u8 *const sPartyMenuActions[] =
     [ACTIONS_TRADE]         = sPartyMenuAction_TradeSummaryCancel1,
     [ACTIONS_SPIN_TRADE]    = sPartyMenuAction_TradeSummaryCancel2,
     [ACTIONS_TAKEITEM_TOSS] = sPartyMenuAction_TakeItemTossCancel,
+    [ACTIONS_MISC]          = sPartyMenuAction_MiscCancel,
 };
 
 static const u8 sPartyMenuActionCounts[] =
@@ -739,7 +755,8 @@ static const u8 sPartyMenuActionCounts[] =
     [ACTIONS_REGISTER]      = ARRAY_COUNT(sPartyMenuAction_RegisterSummaryCancel),
     [ACTIONS_TRADE]         = ARRAY_COUNT(sPartyMenuAction_TradeSummaryCancel1),
     [ACTIONS_SPIN_TRADE]    = ARRAY_COUNT(sPartyMenuAction_TradeSummaryCancel2),
-    [ACTIONS_TAKEITEM_TOSS] = ARRAY_COUNT(sPartyMenuAction_TakeItemTossCancel)
+    [ACTIONS_TAKEITEM_TOSS] = ARRAY_COUNT(sPartyMenuAction_TakeItemTossCancel),
+    [ACTIONS_MISC]          = ARRAY_COUNT(sPartyMenuAction_MiscCancel)
 };
 
 static const u16 sFieldMoves[FIELD_MOVES_COUNT + 1] =

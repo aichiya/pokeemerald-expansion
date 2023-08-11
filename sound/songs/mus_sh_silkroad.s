@@ -22,18 +22,13 @@ mus_sh_silkroad_1:
 	.byte		VOICE , 36
 	.byte		VOL   , 95*mus_sh_silkroad_mvl/mxv @ 115
 	.byte		PAN   , c_v+56
-	.byte	W48
 @ 001   ----------------------------------------
-	.byte	W96
 @ 002   ----------------------------------------
-	.byte	W96
 @ 003   ----------------------------------------
 mus_sh_silkroad_1_003:
-	.byte	W48
 	.byte		N92   , Gs1 , v120
 	.byte		N92   , Ds2 
 	.byte	W48
-	.byte	PEND
 @ 004   ----------------------------------------
 	.byte	W48
 	.byte		        Gs1 , v100
@@ -1440,8 +1435,10 @@ mus_sh_silkroad_1_069:
 @ 072   ----------------------------------------
 	.byte	W96
 @ 073   ----------------------------------------
-	.byte	PATT
-	 .word	mus_sh_silkroad_1_003
+	.byte	W48
+	.byte		N92   , Gs1 , v120
+	.byte		N92   , Ds2
+	.byte	W48
 @ 074   ----------------------------------------
 	.byte	W48
 	.byte		N92   , Gs1 , v100
@@ -1469,185 +1466,9 @@ mus_sh_silkroad_2:
 	.byte		VOICE , 101 @ 2
 	.byte		VOL   , 85*mus_sh_silkroad_mvl/mxv @ 125
 	.byte		PAN   , c_v-32
-	.byte		N05   , Gs2 , v120
-	.byte	W03
-	.byte	W03
-	.byte		        Cs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Ds3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
-	.byte		        Gs2
-	.byte	W03
-	.byte	W03
-	.byte		        Cs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
 @ 001   ----------------------------------------
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Ds3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
-	.byte		        Gs2
-	.byte	W03
-	.byte	W03
-	.byte		        Cs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Ds3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
-	.byte		        Gs2
-	.byte	W03
-	.byte	W03
-	.byte		        Cs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Ds3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
 @ 002   ----------------------------------------
-	.byte		        Gs2
-	.byte	W03
-	.byte	W03
-	.byte		        Cs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Ds3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
-	.byte		        Gs2
-	.byte	W03
-	.byte	W03
-	.byte		        Cs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Ds3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
-	.byte		        Gs2
-	.byte	W03
-	.byte	W03
-	.byte		        Cs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
 @ 003   ----------------------------------------
-	.byte		        Ds3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
-	.byte		        Gs2
-	.byte	W03
-	.byte	W03
-	.byte		        Cs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Ds3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
 	.byte	W48
 @ 004   ----------------------------------------
 	.byte	W96
@@ -3000,137 +2821,9 @@ mus_sh_silkroad_3:
 	.byte		VOICE , 16 @ 12
 	.byte		VOL   , 110*mus_sh_silkroad_mvl/mxv
 	.byte		PAN   , c_v+32
-	.byte		N11   , Ds2 , v120
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W02
-	.byte		        Gs2
-	.byte	W01
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3 
-	.byte	W02
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte		        Ds3 
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W02
 @ 001   ----------------------------------------
-	.byte		        Gs2 
-	.byte	W01
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W01
-	.byte		        Fs2
-	.byte	W02
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte		        Ds2
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W02
-	.byte		        Gs2
-	.byte	W01
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3 
-	.byte	W02
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte		        Ds3
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W02
-	.byte		        Cs3 
-	.byte	W01
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W01
-	.byte		        Fs2
-	.byte	W02
-	.byte	W03
-	.byte	W04
-	.byte	W03
 @ 002   ----------------------------------------
-	.byte		        Ds2
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W02
-	.byte		        Gs2
-	.byte	W01
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W01
-	.byte		        Cs3 
-	.byte	W02
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte		        Ds3 
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W02
-	.byte		        Cs3 
-	.byte	W01
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W01
-	.byte		        Fs2
-	.byte	W02
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte		        Ds2
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W02
-	.byte		        Gs2
-	.byte	W01
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W01
 @ 003   ----------------------------------------
-	.byte		        Cs3 
-	.byte	W02
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte		        Ds3 
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W02
-	.byte		        Cs3 
-	.byte	W01
-	.byte	W03
-	.byte	W04
-	.byte	W03
-	.byte	W01
-	.byte		        Fs2
-	.byte	W02
-	.byte	W03
-	.byte	W04
-	.byte	W03
 	.byte	W48
 @ 004   ----------------------------------------
 	.byte	W96
@@ -3474,187 +3167,9 @@ mus_sh_silkroad_4:
 	.byte		VOICE , 115 @ 48
 	.byte		VOL   , 85*mus_sh_silkroad_mvl/mxv @ 125
 	.byte		PAN   , c_v-48
-	.byte		N05   , Ds4 , v127
-	.byte	W03
-	.byte	W03
-	.byte		        Cs4
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Gs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
-	.byte		        Fs2
-	.byte	W03
-	.byte	W03
-	.byte		        Gs2
-	.byte	W02
-	.byte	W03
-	.byte	W01
 @ 001   ----------------------------------------
-	.byte		        Ds2
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs2
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs1
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Gs1
-	.byte	W03
-	.byte	W03
-	.byte		        Ds4
-	.byte	W03
-	.byte	W03
-	.byte		        Cs4
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Gs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
-	.byte		        Fs2
-	.byte	W03
-	.byte	W03
-	.byte		        Gs2
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Ds2
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs2
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs1
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Gs1
-	.byte	W03
-	.byte	W03
 @ 002   ----------------------------------------
-	.byte		        Ds4
-	.byte	W03
-	.byte	W03
-	.byte		        Cs4
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Gs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
-	.byte		        Fs2
-	.byte	W03
-	.byte	W03
-	.byte		        Gs2
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Ds2
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs2
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs1
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Gs1
-	.byte	W03
-	.byte	W03
-	.byte		        Ds4
-	.byte	W03
-	.byte	W02
-	.byte	W01
-	.byte		        Cs4
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Fs3
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Gs3
-	.byte	W01
-	.byte	W03
-	.byte	W02
 @ 003   ----------------------------------------
-	.byte		        Ds3
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Cs3
-	.byte	W03
-	.byte	W03
-	.byte		        Fs2
-	.byte	W03
-	.byte	W02
-	.byte	W01
-	.byte		        Gs2
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Ds2
-	.byte	W02
-	.byte	W03
-	.byte	W01
-	.byte		        Cs2
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Fs1
-	.byte	W01
-	.byte	W03
-	.byte	W02
-	.byte		        Gs1
-	.byte	W03
-	.byte	W03
 	.byte	W48
 @ 004   ----------------------------------------
 	.byte	W96
@@ -4141,13 +3656,10 @@ mus_sh_silkroad_5:
 	.byte		VOICE , 86
 	.byte		VOL   , 85*mus_sh_silkroad_mvl/mxv @ 125
 	.byte		PAN   , c_v+0
-	.byte	W48
 @ 001   ----------------------------------------
-	.byte	W96
 @ 002   ----------------------------------------
-	.byte	W96
 @ 003   ----------------------------------------
-	.byte	W96
+	.byte	W48
 @ 004   ----------------------------------------
 	.byte	W96
 @ 005   ----------------------------------------
@@ -4536,18 +4048,13 @@ mus_sh_silkroad_6:
 	.byte		VOICE , 48
 	.byte		VOL   , 85*mus_sh_silkroad_mvl/mxv @ 125
 	.byte		PAN   , c_v+48
-	.byte	W48
 @ 001   ----------------------------------------
-	.byte	W96
 @ 002   ----------------------------------------
-	.byte	W96
 @ 003   ----------------------------------------
 mus_sh_silkroad_6_003:
-	.byte	W48
 	.byte		TIE   , Ds1 , v120
 	.byte		TIE   , Gs1
 	.byte	W48
-	.byte	PEND
 @ 004   ----------------------------------------
 	.byte	W96
 @ 005   ----------------------------------------
@@ -4878,8 +4385,10 @@ mus_sh_silkroad_6_037:
 @ 072   ----------------------------------------
 	.byte	W96
 @ 073   ----------------------------------------
-	.byte	PATT
-	 .word	mus_sh_silkroad_6_003
+	.byte	W48
+	.byte		TIE   , Ds1 , v120
+	.byte		TIE   , Gs1
+	.byte	W48
 @ 074   ----------------------------------------
 	.byte	W96
 @ 075   ----------------------------------------
@@ -4911,17 +4420,12 @@ mus_sh_silkroad_7: @ unused
 	.byte		VOICE , 82
 	.byte		VOL   , 120*mus_sh_silkroad_mvl/mxv
 	.byte		PAN   , c_v-16
-	.byte	W48
 @ 001   ----------------------------------------
-	.byte	W96
 @ 002   ----------------------------------------
-	.byte	W96
 @ 003   ----------------------------------------
 mus_sh_silkroad_7_003:
-	.byte	W48
 	.byte		TIE   , Bn2 , v112
 	.byte	W48
-	.byte	PEND
 @ 004   ----------------------------------------
 	.byte	W96
 @ 005   ----------------------------------------
@@ -5355,8 +4859,9 @@ mus_sh_silkroad_7_051:
 @ 072   ----------------------------------------
 	.byte	W96
 @ 073   ----------------------------------------
-	.byte	PATT
-	 .word	mus_sh_silkroad_7_003
+	.byte	W48
+	.byte		TIE   , Bn2 , v112
+	.byte	W48
 @ 074   ----------------------------------------
 	.byte	W96
 @ 075   ----------------------------------------
@@ -5385,13 +4890,10 @@ mus_sh_silkroad_8: @ unused
 	.byte		VOICE , 85
 	.byte		VOL   , 120*mus_sh_silkroad_mvl/mxv
 	.byte		PAN   , c_v+8
-	.byte	W48
 @ 001   ----------------------------------------
-	.byte	W96
 @ 002   ----------------------------------------
-	.byte	W96
 @ 003   ----------------------------------------
-	.byte	W96
+	.byte	W48
 @ 004   ----------------------------------------
 	.byte	W96
 @ 005   ----------------------------------------
@@ -5637,130 +5139,10 @@ mus_sh_silkroad_9:
 	.byte		VOICE , 120
 	.byte		VOL   , 127*mus_sh_silkroad_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		N01   , Fs1 , v008
-	.byte	W06
-	.byte		N01
-	.byte	W06
-	.byte		N01
-	.byte	W06
-	.byte		        Fs1 , v024
-	.byte	W06
-	.byte		N01
-	.byte	W06
-	.byte		N01
-	.byte	W06
-	.byte		        Fs1 , v036
-	.byte	W06
-	.byte		N01
-	.byte	W06
 @ 001   ----------------------------------------
-	.byte		N01
-	.byte	W06
-	.byte		        Fs1 , v052
-	.byte	W06
-	.byte		N01
-	.byte	W06
-	.byte		N01
-	.byte	W06
-	.byte		        Dn1 , v080
-	.byte		N01   , Fs1 , v064
-	.byte	W06
-	.byte		        Fs1 , v036
-	.byte	W06
-	.byte		N01
-	.byte	W06
-	.byte		N01
-	.byte	W06
-	.byte		        Fs1 , v064
-	.byte	W06
-	.byte		        Fs1 , v036
-	.byte	W06
-	.byte		        En1 , v092
-	.byte		N01   , Fs1 , v036
-	.byte	W06
-	.byte		        En1 , v080
-	.byte		N01   , Fs1 , v036
-	.byte	W06
-	.byte		        En1 , v064
-	.byte		N01   , Fs1
-	.byte	W06
-	.byte		        En1 , v052
-	.byte		N01   , Fs1 , v036
-	.byte	W06
-	.byte		        En1 , v024
-	.byte		N01   , Fs1 , v036
-	.byte	W06
-	.byte		        En1 , v008
-	.byte		N01   , Fs1 , v036
-	.byte	W06
 @ 002   ----------------------------------------
-	.byte		        Dn1 , v080
-	.byte		N01   , Fs1
-	.byte	W06
-	.byte		        Fs1 , v052
-	.byte	W06
-	.byte		        Fs1 , v036
-	.byte	W06
-	.byte		        Fs1 , v052
-	.byte	W06
-	.byte		        Cn1 , v092
-	.byte		N01   , Fs1 , v080
-	.byte	W06
-	.byte		        Cn1 , v092
-	.byte		N01   , Fs1 , v052
-	.byte	W06
-	.byte		        Fs1 , v036
-	.byte	W06
-	.byte		        Cn1 , v092
-	.byte		N01   , Fs1 , v052
-	.byte	W06
-	.byte		        Fs1 , v092
-	.byte	W06
-	.byte		        Fs1 , v052
-	.byte	W06
-	.byte		        Cn1 , v092
-	.byte		N01   , Fs1 , v036
-	.byte	W06
-	.byte		        Fs1 , v052
-	.byte	W06
-	.byte		        Dn1 , v064
-	.byte		N01   , Fs1 , v120
-	.byte	W06
-	.byte		        Dn1 , v080
-	.byte		N01   , Fs1
-	.byte	W06
-	.byte		        Dn1 , v092
-	.byte		N01   , Fs1 , v080
-	.byte	W06
-	.byte		        Dn1 , v064
-	.byte		N01   , Fs1 , v080
-	.byte	W06
 @ 003   ----------------------------------------
-	.byte		        Dn1
-	.byte		N01   , Fs1 , v120
-	.byte	W06
-	.byte		        Dn1 , v092
-	.byte		N01   , Fs1 , v080
-	.byte	W06
-	.byte		        Dn1 , v108
-	.byte		N01   , Fs1 , v080
-	.byte	W06
-	.byte		        Dn1 , v108
-	.byte		N01   , Fs1 , v080
-	.byte	W06
-	.byte		        Dn1 , v108
-	.byte		N01   , Fs1 , v120
-	.byte	W06
-	.byte		        Dn1 , v108
-	.byte		N01   , Fs1 , v080
-	.byte	W06
-	.byte		        Dn1 , v108
-	.byte		N01   , Fs1 , v080
-	.byte	W06
-	.byte		        Dn1 , v108
-	.byte		N01   , Fs1 , v080
-	.byte	W06
-	.byte		        Cn1 , v108
+	.byte		N01   , Cn1 , v108
 	.byte		N01   , Fs1
 	.byte	W06
 	.byte		N01
@@ -7219,13 +6601,10 @@ mus_sh_silkroad_10:
 	.byte		VOICE , 107 @ 107
 	.byte		VOL   , 85*mus_sh_silkroad_mvl/mxv @ 125
 	.byte		PAN   , c_v+26
-	.byte	W48
 @ 001   ----------------------------------------
-	.byte	W96
 @ 002   ----------------------------------------
-	.byte	W96
 @ 003   ----------------------------------------
-	.byte	W96
+	.byte	W48
 @ 004   ----------------------------------------
 	.byte	W96
 @ 005   ----------------------------------------
@@ -7498,13 +6877,10 @@ mus_sh_silkroad_11:
 	.byte		VOICE , 48
 	.byte		VOL   , 105*mus_sh_silkroad_mvl/mxv @ 125
 	.byte		PAN   , c_v-32
-	.byte	W48
 @ 001   ----------------------------------------
-	.byte	W96
 @ 002   ----------------------------------------
-	.byte	W96
 @ 003   ----------------------------------------
-	.byte	W96
+	.byte	W48
 @ 004   ----------------------------------------
 	.byte	W96
 @ 005   ----------------------------------------
@@ -7693,18 +7069,13 @@ mus_sh_silkroad_12:
 	.byte		VOICE , 85
 	.byte		VOL   , 80*mus_sh_silkroad_mvl/mxv @ 120
 	.byte		PAN   , c_v-56
-	.byte	W48
 @ 001   ----------------------------------------
-	.byte	W96
 @ 002   ----------------------------------------
-	.byte	W96
 @ 003   ----------------------------------------
 mus_sh_silkroad_12_003:
-	.byte	W48
 	.byte		N92   , Gs1 , v120
 	.byte		N92   , Ds2
 	.byte	W48
-	.byte	PEND
 @ 004   ----------------------------------------
 	.byte	W48
 	.byte		        Gs1 , v100
@@ -9111,8 +8482,10 @@ mus_sh_silkroad_12_069:
 @ 072   ----------------------------------------
 	.byte	W96
 @ 073   ----------------------------------------
-	.byte	PATT
-	 .word	mus_sh_silkroad_12_003
+	.byte	W48
+	.byte		N92   , Gs1 , v120
+	.byte		N92   , Ds2
+	.byte	W48
 @ 074   ----------------------------------------
 	.byte	W48
 	.byte		N92   , Gs1 , v100

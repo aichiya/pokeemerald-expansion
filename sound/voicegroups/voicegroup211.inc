@@ -1,7 +1,7 @@
 	.align 2                                                                                               @ Zoku Gensokyo Scenario Main Voicegroup
 voicegroup211::                                                                                            @ Vocal | Type | Description
-	voice_keysplit_all voicegroup192                                                                       @ 000 | Drum | GBA Drum
-	voice_keysplit voicegroup195, KeySplitTable1                                                           @ 001 | Multi | GBA Piano 1
+	voice_keysplit_all voicegroup192                                                                       @ 000 | Direct | Drum | GBA Drum
+	voice_keysplit voicegroup195, KeySplitTable1                                                           @ 001 | Direct | Multi | GBA Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_steinway_b_piano, 128, 204, 51, 242                       @ 002 | Direct | GBA Piano 2
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 128, 180, 108, 209        @ 003 | Direct | GBA Electric Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 255, 188, 128, 226        @ 004 | Direct | GBA Electric Piano 1
@@ -48,7 +48,7 @@ voicegroup211::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_pizzicato_strings, 255, 216, 0, 165               @ 045 | Direct | GBA Pizzicato
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_harp, 255, 246, 0, 235                            @ 046 | Direct | GBA Harp
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_timpani, 255, 127, 154, 235                       @ 047 | Direct | GBA Timpani
-	voice_keysplit voicegroup196, KeySplitTable2                                                           @ 048 | Multi | GBA String
+	voice_keysplit voicegroup196, KeySplitTable2                                                           @ 048 | Direct | Multi | GBA String
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1_alt 60, 0, 0, 2, 0, 2, 3, 1
 	voice_square_2_alt 60, 0, 3, 0, 2, 7, 2
@@ -56,11 +56,11 @@ voicegroup211::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_classical_choir_voice_ahhs, 255, 0, 255, 0                @ 053 | Direct | GBA Choir Ahhs
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_keysplit voicegroup197, KeySplitTable3                                                           @ 056 | Multi | GBA Trumpet
+	voice_keysplit voicegroup197, KeySplitTable3                                                           @ 056 | Direct | Multi | GBA Trumpet
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_keysplit voicegroup198, KeySplitTable4                                                           @ 058 | Multi | GBA Tuba
+	voice_keysplit voicegroup198, KeySplitTable4                                                           @ 058 | Direct | Multi | GBA Tuba
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_keysplit voicegroup199, KeySplitTable5                                                           @ 060 | Multi | GBA French Horn
+	voice_keysplit voicegroup199, KeySplitTable5                                                           @ 060 | Direct | Multi | GBA French Horn
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 0, 255, 127    @ 062 | Direct | GBA Distortion Guitar 2
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

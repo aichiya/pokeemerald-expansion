@@ -1,7 +1,7 @@
 	.align 2
 voicegroup210:: @ 
-	voice_keysplit_all voicegroup192                                                                            @ 000 | Drum | GBA Drum
-	voice_keysplit voicegroup195, KeySplitTable1                                                                @ 001 | Multi | GBA Piano 1
+	voice_keysplit_all voicegroup192                                                                            @ 000 | Direct | Drum | GBA Drum
+	voice_keysplit voicegroup195, KeySplitTable1                                                                @ 001 | Direct | Multi | GBA Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_steinway_b_piano, 128, 204, 51, 242                            @ 002 | Direct | GBA Piano 2
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_3, 170, 180, 160, 235                                   @ 003 | Direct | ReimuFate Custom 003
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243                                   @ 004 | Direct | ReimuFate Custom 004
@@ -40,7 +40,7 @@ voicegroup210:: @
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 037 | Unused
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_synth_bass, 255, 252, 0, 115                           @ 038 | Direct | GBA Synth Bass
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_39, 255, 0, 255, 127                                    @ 039 | Direct | ReimuFate Custom 039
-	voice_square_2_alt 60, 0, 2, 0, 2, 4, 1                                                                     @ 040 | Square-2 | Note off with noise 50% 0 2 4 1
+	voice_square_2_alt 60, 0, 2, 0, 2, 4, 1                                                                     @ 040 | Direct |  Square-2 | Note off with noise 50% 0 2 4 1
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 041 | Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 042 | Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 043 | Unused
@@ -48,7 +48,7 @@ voicegroup210:: @
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_pizzicato_strings, 255, 216, 0, 165                    @ 045 | Direct | GBA Pizzicato
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_harp, 255, 246, 0, 235                                 @ 046 | Direct | GBA Harp
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_timpani, 255, 127, 154, 235                            @ 047 | Direct | GBA Timpani
-	voice_keysplit voicegroup196, KeySplitTable2                                                                @ 048 | Multi | GBA String
+	voice_keysplit voicegroup196, KeySplitTable2                                                                @ 048 | Direct |  Multi | GBA String
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 049 | Unused
 	voice_square_1_alt 60, 0, 0, 2, 0, 2, 3, 1                                                                  @ 050 | Square-1 | Note off with noise 50% 0 2 3 1
 	voice_square_2_alt 60, 0, 3, 0, 2, 7, 2                                                                     @ 051 | Square-2 | Note off with noise 75% 0 2 7 2
@@ -58,9 +58,9 @@ voicegroup210:: @
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_55, 64, 248, 0, 232                                     @ 055 | Direct | ReimuFate Custom 055 Orchestral Hit?
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_56, 240, 200, 245, 220                                  @ 056 | Direct | ReimuFate Custom 056
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_57, 255, 0, 255, 192                                    @ 057 | Direct | ReimuFate Custom 057
-	voice_keysplit voicegroup198, KeySplitTable4                                                                @ 058 | Multi | GBA Tuba
+	voice_keysplit voicegroup198, KeySplitTable4                                                                @ 058 | Direct | Multi | GBA Tuba
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 059 | Unused
-	voice_keysplit voicegroup199, KeySplitTable5                                                                @ 060 | Multi | GBA French Horn
+	voice_keysplit voicegroup199, KeySplitTable5                                                                @ 060 | Direct | Multi | GBA French Horn
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 061 | Unused
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 0, 236, 188         @ 062 | Direct | GBA Distortion Guitar 2 | Check again
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 063 | Unused
@@ -120,8 +120,8 @@ voicegroup210:: @
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 117 | Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 118 | Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 119 | Unused
-	voice_keysplit_all voicegroup230                                                                            @ 120 | Drum | HGSS Drum | Added to overcome beeping drum problem
-	voice_keysplit voicegroup233, KeySplitTable35                                                               @ 121 | Multi | HGSS Piano 1 | Added to overcome GBA Piano keysplit
+	voice_keysplit_all voicegroup230                                                                            @ 120 | Direct | Drum | HGSS Drum | Added to overcome beeping drum problem
+	voice_keysplit voicegroup233, KeySplitTable35                                                               @ 121 | Direct | Multi | HGSS Piano 1 | Added to overcome GBA Piano keysplit
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 122 | Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 123 | Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 124 | Unused

@@ -39,8 +39,8 @@ voicegroup202::
 	voice_keysplit voicegroup268, KeySplitTable54                                                             @ 36 | Direct | HGSS bassoon
 	voice_keysplit voicegroup269, KeySplitTable55                                                             @ 37 | Direct | HGSS orchestra hit
 	voice_keysplit voicegroup270, KeySplitTable38                                                             @ 38 | Direct | HGSS square wave
-	voice_keysplit_all voicegroup230				                                                          @ 39 | Drum | HGSS drums
-	voice_keysplit_all voicegroup231				                                                          @ 40 | Drum | HGSS taiko drums
+	voice_keysplit_all voicegroup230				                                                          @ 39 | Direct | Drum | HGSS drums
+	voice_keysplit_all voicegroup231				                                                          @ 40 | Direct | Drum | HGSS taiko drums
 	voice_directsound 60, 0, DirectSoundWaveData_dp_woodbass_d3_16, 255, 251, 0, 171                          @ 41 | Direct | HGSS wood bass
 	voice_keysplit voicegroup271, KeySplitTable56                                                             @ 42 | Direct | HGSS koto
 	voice_directsound 60, 0, DirectSoundWaveData_puresquare_50, 255, 242, 40, 211                             @ 43 | Direct | HGSS samples square
@@ -62,7 +62,7 @@ voicegroup202::
 	voice_directsound 60, 0, DirectSoundWaveData_puresquare_12, 80, 234, 191, 220                             @ 59 | Direct | HGSS sampled square 8
 	voice_directsound 60, 0, DirectSoundWaveData_dp_orchhitmajor60, 255, 197, 255, 171                        @ 60 | Direct | HGSS orchestral hit major
 	voice_directsound 60, 0, DirectSoundWaveData_dp_orchhitminor60, 255, 197, 255, 171                        @ 61 | Direct | HGSS orchestral hit minor
-	voice_keysplit_all voicegroup232                                                                          @ 62 | Drum | HGSS synth kick+snare
+	voice_keysplit_all voicegroup232                                                                          @ 62 | Direct | Drum | HGSS synth kick+snare
 	voice_keysplit voicegroup216, KeySplitTable27                                                             @ 63 | Direct | HGSS timpani (DPPt)
 	voice_directsound 60, 0, DirectSoundWaveData_dp_synbass1_c2_16, 255, 42, 255, 192                         @ 64 | Direct | HGSS syth bass part 1
 	voice_directsound 60, 0, DirectSoundWaveData_dp_synbass2_c1_16, 255, 0, 255, 220                          @ 65 | Direct | HGSS syth bass part 2
@@ -84,11 +84,11 @@ voicegroup202::
 	voice_directsound 60, 0, DirectSoundWaveData_dp_tom1_16, 255, 0, 255, 32                                  @ 81 | Direct | HGSS tom
 	voice_keysplit voicegroup219, KeySplitTable29                                                             @ 82 | Direct | HGSS trumpets (arceus)
 	voice_keysplit voicegroup220, KeySplitTable30                                                             @ 83 | Direct | HGSS trombone (arceus)
-	voice_keysplit voicegroup195, KeySplitTable1                                                              @ 84 | Multi | GBA Emerald Piano 1
-	voice_keysplit voicegroup196, KeySplitTable2                                                              @ 85 | Multi | GBA Emerald String Ensemble
-	voice_keysplit voicegroup197, KeySplitTable3                                                              @ 86 | Multi | GBA Emerald Trumpet
-	voice_keysplit voicegroup198, KeySplitTable4                                                              @ 87 | Multi | GBA Emerald Tuba
-	voice_keysplit voicegroup199, KeySplitTable5                                                              @ 88 | Multi | GBA Emerald French Horn
+	voice_keysplit voicegroup195, KeySplitTable1                                                              @ 84 | Direct | Multi | GBA Emerald Piano 1
+	voice_keysplit voicegroup196, KeySplitTable2                                                              @ 85 | Direct | Multi | GBA Emerald String Ensemble
+	voice_keysplit voicegroup197, KeySplitTable3                                                              @ 86 | Direct | Multi | GBA Emerald Trumpet
+	voice_keysplit voicegroup198, KeySplitTable4                                                              @ 87 | Direct | Multi | GBA Emerald Tuba
+	voice_keysplit voicegroup199, KeySplitTable5                                                              @ 88 | Direct | Multi | GBA Emerald French Horn
 	voice_square_2_alt 60, 0, 0, 0, 2, 5, 2                                                                   @ 89 | Square-2 | Note off with noise 12.5% 0 2 5 2
 	voice_square_1_alt 60, 0, 0, 0, 0, 2, 5, 2                                                                @ 90 | Square-1 | Note off with noise 12.5% 0 2 5 2
 	voice_square_2_alt 60, 0, 3, 0, 2, 7, 3                                                                   @ 91 | Square-2 | Note off with noise 75.0% 0 2 7 3
@@ -119,9 +119,9 @@ voicegroup202::
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_36, 255, 165, 180, 216                                @ 116 | Direct | ReimuFate Custom 036
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_39, 255, 0, 255, 127                                  @ 117 | Direct | ReimuFate Custom 039
 	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_09263c, 255, 0, 255, 0                 @ 118 | Direct | GBA Precure Orchestral Hit
-	voice_keysplit_all voicegroup192                                                                          @ 119 | Drum | GBA Emerald Drum
-	voice_keysplit_all voicegroup506                                                                          @ 120 | Drum | GBA PMD Drum 1
-	voice_keysplit_all voicegroup507                                                                          @ 127 | Drum | GBA PMD Drum 2
+	voice_keysplit_all voicegroup192                                                                          @ 119 | Direct | Drum | GBA Emerald Drum
+	voice_keysplit_all voicegroup506                                                                          @ 120 | Direct | Drum | GBA PMD Drum 1
+	voice_keysplit_all voicegroup507                                                                          @ 127 | Direct | Drum | GBA PMD Drum 2
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 235, 0, 216             @ 122 | Direct | GBA Emerald Cymbal 1
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 246, 0, 216             @ 123 | Direct | GBA Emerald Cymbal 2
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_tr909_hand_clap, 255, 255, 255, 127                  @ 124 | Direct | GBA Emerald Hand Clap

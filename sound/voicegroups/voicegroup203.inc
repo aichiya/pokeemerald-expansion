@@ -1,12 +1,12 @@
 	.align 2
 voicegroup203::
 	voice_directsound 60, 0, DirectSoundWaveData_dp_reverscyn_16, 255, 0, 255, 16                             @ 0 | Direct | HGSS Reverse Cymbal
-	voice_keysplit_all voicegroup230                                                                          @ 1 | Drum | HGSS Drum
+	voice_keysplit_all voicegroup230                                                                          @ 1 | Direct | Drum | HGSS Drum
 	voice_keysplit voicegroup233, KeySplitTable35                                                             @ 2 | Direct | HGSS piano
 	voice_keysplit voicegroup234, KeySplitTable36                                                             @ 3 | Direct | HGSS piano 2
 	voice_keysplit voicegroup236, KeySplitTable9                                                              @ 4 | Direct | HGSS rhodes 1
 	voice_keysplit voicegroup237, KeySplitTable9                                                              @ 5 | Direct | HGSS rhodes 2
-	voice_keysplit_all voicegroup230				                                                          @ 6 | Drum | HGSS drums
+	voice_keysplit_all voicegroup230				                                                          @ 6 | Direct | Drum | HGSS drums
 	voice_keysplit voicegroup273, KeySplitTable58                                                             @ 7 | Direct | HGSS piano (national park)
 	voice_noise_alt 60, 0, 0, 0, 1, 6, 0                                                                      @ 8 | Noise | GBA Noise 2	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_keysplit voicegroup242, KeySplitTable36                                                             @ 9 | Direct | HGSS glockenspiel
@@ -16,7 +16,7 @@ voicegroup203::
 	voice_keysplit voicegroup240, KeySplitTable39                                                             @ 13 | Direct | HGSS xylophone
 	voice_keysplit voicegroup241, KeySplitTable25                                                             @ 14 | Direct | HGSS tubular bell
 	voice_directsound 60, 0, DirectSoundWaveData_trinity_big_boned, 255, 165, 154, 127                        @ 15 | Direct | GBA Trinity Big Boned
-	voice_keysplit_all voicegroup232                                                                          @ 16 | Drum | HGSS synth kick+snare
+	voice_keysplit_all voicegroup232                                                                          @ 16 | Direct | Drum | HGSS synth kick+snare
 	voice_keysplit voicegroup244, KeySplitTable40                                                             @ 17 | Direct | HGSS drawbar organ
 	voice_keysplit voicegroup245, KeySplitTable40                                                             @ 18 | Direct | HGSS jazz organ
 	voice_directsound 60, 0, DirectSoundWaveData_dp_org5_c3_16, 255, 167, 235, 171		                      @ 19 | Direct | HGSS organ

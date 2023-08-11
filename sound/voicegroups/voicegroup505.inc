@@ -2,29 +2,29 @@
 voicegroup505::
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E922E4, 255, 0, 255, 0 			@ 0 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E90FA0, 255, 0, 255, 0 			@ 1 | Direct |
-	voice_keysplit voicegroup521, KeySplitTablePMD07 										@ 2 | Multi |
-	voice_keysplit voicegroup522, KeySplitTablePMD06 										@ 3 | Multi |
+	voice_keysplit voicegroup521, KeySplitTablePMD07 										@ 2 | Direct | Multi |
+	voice_keysplit voicegroup522, KeySplitTablePMD06 										@ 3 | Direct | Multi |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EA02C8, 255, 188, 206, 188 		@ 4 | Direct |
-	voice_keysplit voicegroup523, KeySplitTablePMD05 										@ 5 | Multi |
-	voice_keysplit voicegroup524, KeySplitTablePMD04 										@ 6 | Multi |
+	voice_keysplit voicegroup523, KeySplitTablePMD05 										@ 5 | Direct | Multi |
+	voice_keysplit voicegroup524, KeySplitTablePMD04 										@ 6 | Direct | Multi |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E8D478, 255, 165, 154, 165 		@ 7 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E94D0C, 255, 0, 255, 0 			@ 8 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E94D0C, 255, 165, 0, 127 			@ 9 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EA24B8, 255, 226, 0, 127 			@ 10 | Direct |
-	voice_keysplit voicegroup525, KeySplitTablePMD06 										@ 11 | Multi |
+	voice_keysplit voicegroup525, KeySplitTablePMD06 										@ 11 | Direct | Multi |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EA02C8, 255, 188, 180, 127 		@ 12 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EE6B60, 255, 188, 180, 127 		@ 13 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E8E6D8, 255, 249, 25, 204 		@ 14 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E9E4CC, 13, 0, 255, 127 			@ 15 | Direct |
-	voice_keysplit voicegroup526, KeySplitTablePMD09 										@ 16 | Multi |
+	voice_keysplit voicegroup526, KeySplitTablePMD09 										@ 16 | Direct | Multi |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E8C5DC, 255, 0, 255, 149 			@ 17 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E97110, 255, 0, 255, 127 			@ 18 | Direct |
-	voice_keysplit voicegroup527, KeySplitTablePMD02 										@ 19 | Multi |
-	voice_keysplit voicegroup528, KeySplitTablePMD02 										@ 20 | Multi |
+	voice_keysplit voicegroup527, KeySplitTablePMD02 										@ 19 | Direct | Multi |
+	voice_keysplit voicegroup528, KeySplitTablePMD02 										@ 20 | Direct | Multi |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E99740, 255, 0, 255, 0 			@ 21 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E98378, 37, 0, 255, 0 			@ 22 | Direct |
-	voice_keysplit voicegroup529, KeySplitTablePMD01 										@ 23 | Multi |
-	voice_keysplit voicegroup530, KeySplitTablePMD08 										@ 24 | Multi |
+	voice_keysplit voicegroup529, KeySplitTablePMD01 										@ 23 | Direct | Multi |
+	voice_keysplit voicegroup530, KeySplitTablePMD08 										@ 24 | Direct | Multi |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E9AF9C, 255, 188, 103, 165 		@ 25 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EA536C, 64, 249, 0, 165 			@ 26 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1E899A0, 64, 204, 103, 188 		@ 27 | Direct |
@@ -127,4 +127,4 @@ voicegroup505::
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1EB94B8, 255, 0, 255, 127 			@ 124 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1ECC450, 255, 0, 255, 0 			@ 125 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_pmd_pcm_1ECAAD4, 255, 255, 0, 204 			@ 126 | Direct |
-	voice_keysplit_all voicegroup507 														@ 127 | Drum | PMD Drum 2
+	voice_keysplit_all voicegroup507 														@ 127 | Direct | Drum | PMD Drum 2

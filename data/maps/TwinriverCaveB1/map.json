@@ -3,7 +3,7 @@
   "name": "TwinriverCaveB1",
   "layout": "LAYOUT_TWINRIVER_CAVE_B1",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_D8",
+  "region_map_section": "MAPSEC_D9",
   "requires_flash": true,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

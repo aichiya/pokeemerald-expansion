@@ -108,6 +108,7 @@ JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated::
 JohtoTwinriverCity_EventScript_Sign4::
 	lockall
 	fadenewbgm MUS_PKMN_PMD2_DONTEVERFORGET
+	call Script_SetGrayscaleTint
 	delay 200
 	msgbox JohtoTwinriverCity_Text_Sign4_BetterThisWay, MSGBOX_DEFAULT
 	closemessage
@@ -208,3 +209,67 @@ JohtoTwinriverCity_EventScript_Sign6::
 	releaseall
 	end
 
+JohtoTwinriverCity_EventScript_Person1::
+	lockall
+	deleteplayerparty
+	delay 30
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	additem ITEM_MEGA_RING, 1
+	additem ITEM_Z_POWER_RING, 1
+	additem ITEM_REVEAL_GLASS, 1
+	additem ITEM_MASTER_BALL, 10
+	setvar VAR_TEMP_1, 0
+	givemon SPECIES_TH_MARIBEL, 100, ITEM_GHOSTIUM_Z
+	setmoneventlegal 0
+	setmonmetlocation 0, 255
+	setmonmove 0, 0, MOVE_PSYSTRIKE
+	setmonmove 0, 1, MOVE_GEOMANCY
+	setmonmove 0, 2, MOVE_MOONGEIST_BEAM
+	setmonmove 0, 3, MOVE_LIGHT_SCREEN
+	givemon SPECIES_TH_RENKO, 100, ITEM_FIGHTINIUM_Z
+	setmoneventlegal 1
+	setmonmetlocation 1, 255
+	setmonmove 1, 0, MOVE_DRAGON_DANCE
+	setmonmove 1, 1, MOVE_HIGH_JUMP_KICK
+	setmonmove 1, 2, MOVE_EXTREME_SPEED
+	setmonmove 1, 3, MOVE_PROTECT
+	msgbox JohtoTwinriverCity_Text_Person1_Text1, MSGBOX_DEFAULT
+	closemessage
+	delay 30
+	faceplayer
+	msgbox JohtoTwinriverCity_Text_Person1_Text2, MSGBOX_DEFAULT
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_TEST_9, 0, JohtoTwinriverCity_Text_Person1_Text_BattleEnd
+	msgbox JohtoTwinriverCity_Text_Person1_Text3, MSGBOX_DEFAULT
+	release
+	end
+
+JohtoTwinriverCity_Text_Person1_Text1:
+	.string "Did you now?\p"
+	.string "If you see starlight right now,\n"
+	.string "it means that you're seeing a past\l"
+	.string "event from thousand years ago.$"
+
+JohtoTwinriverCity_Text_Person1_Text2:
+	.string "Huh? You don't believe me?\p"
+	.string "It seems you need a lesson!$"
+
+JohtoTwinriverCity_Text_Person1_Text_BattleEnd:
+	.string "Whoah, wow! I can't believe\n"
+	.string "that I lost!$"
+
+JohtoTwinriverCity_Text_Person1_Text3:
+	.string "Well then.\p"
+	.string "Bye for now.$"

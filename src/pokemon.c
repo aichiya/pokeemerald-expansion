@@ -9905,7 +9905,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_TH_EARTH_RABBIT:
 			return MUS_THPPAWL_KAGOME;
         case TRAINER_CLASS_SH_MAID:
-        	return MUS_SH_PANDORA;
+        	return MUS_SH_VELVETMAIDEN;
         case TRAINER_CLASS_WANDERER:
         	return MUS_PC_ULTRACUREHAPPYTANJOU;
         case TRAINER_CLASS_PASSER_BY_TSUKASA:

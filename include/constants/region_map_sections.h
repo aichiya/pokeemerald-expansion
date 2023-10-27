@@ -1,43 +1,43 @@
 #ifndef GUARD_REGIONMAPSEC_H
 #define GUARD_REGIONMAPSEC_H
 
-#define MAPSEC_LITTLEROOT_TOWN              0x00
-#define MAPSEC_OLDALE_TOWN                  0x01
-#define MAPSEC_DEWFORD_TOWN                 0x02
-#define MAPSEC_LAVARIDGE_TOWN               0x03
-#define MAPSEC_FALLARBOR_TOWN               0x04
-#define MAPSEC_VERDANTURF_TOWN              0x05
-#define MAPSEC_PACIFIDLOG_TOWN              0x06
-#define MAPSEC_PETALBURG_CITY               0x07
-#define MAPSEC_SLATEPORT_CITY               0x08
-#define MAPSEC_MAUVILLE_CITY                0x09
-#define MAPSEC_RUSTBORO_CITY                0x0A
-#define MAPSEC_FORTREE_CITY                 0x0B
-#define MAPSEC_LILYCOVE_CITY                0x0C
+#define MAPSEC_LITTLEROOT_TOWN              0x00 // Johto: New Bark Town
+#define MAPSEC_OLDALE_TOWN                  0x01 // Johto: Cherrygrove City
+#define MAPSEC_DEWFORD_TOWN                 0x02 // Johto: Violet City
+#define MAPSEC_LAVARIDGE_TOWN               0x03 // Johto: Azalea Town
+#define MAPSEC_FALLARBOR_TOWN               0x04 // Johto: Goldenrod City
+#define MAPSEC_VERDANTURF_TOWN              0x05 // Johto: Ecruteak City
+#define MAPSEC_PACIFIDLOG_TOWN              0x06 // Johto: Olivine City
+#define MAPSEC_PETALBURG_CITY               0x07 // Johto: Cianwood City
+#define MAPSEC_SLATEPORT_CITY               0x08 // Johto: Mahogany Town
+#define MAPSEC_MAUVILLE_CITY                0x09 // Johto: Blackthorn City
+#define MAPSEC_RUSTBORO_CITY                0x0A // Johto: Lake Of Rage
+#define MAPSEC_FORTREE_CITY                 0x0B // Johto: Mt.Silver
+#define MAPSEC_LILYCOVE_CITY                0x0C // Johto: Pokemon League
 #define MAPSEC_MOSSDEEP_CITY                0x0D
 #define MAPSEC_SOOTOPOLIS_CITY              0x0E
 #define MAPSEC_EVER_GRANDE_CITY             0x0F
-#define MAPSEC_ROUTE_101                    0x10
-#define MAPSEC_ROUTE_102                    0x11
-#define MAPSEC_ROUTE_103                    0x12
-#define MAPSEC_ROUTE_104                    0x13
-#define MAPSEC_ROUTE_105                    0x14
-#define MAPSEC_ROUTE_106                    0x15
-#define MAPSEC_ROUTE_107                    0x16
-#define MAPSEC_ROUTE_108                    0x17
-#define MAPSEC_ROUTE_109                    0x18
-#define MAPSEC_ROUTE_110                    0x19
-#define MAPSEC_ROUTE_111                    0x1A
-#define MAPSEC_ROUTE_112                    0x1B
-#define MAPSEC_ROUTE_113                    0x1C
-#define MAPSEC_ROUTE_114                    0x1D
-#define MAPSEC_ROUTE_115                    0x1E
-#define MAPSEC_ROUTE_116                    0x1F
-#define MAPSEC_ROUTE_117                    0x20
-#define MAPSEC_ROUTE_118                    0x21
-#define MAPSEC_ROUTE_119                    0x22
-#define MAPSEC_ROUTE_120                    0x23
-#define MAPSEC_ROUTE_121                    0x24
+#define MAPSEC_ROUTE_101                    0x10 // Johto: Route 26
+#define MAPSEC_ROUTE_102                    0x11 // Johto: Route 27
+#define MAPSEC_ROUTE_103                    0x12 // Johto: Route 28
+#define MAPSEC_ROUTE_104                    0x13 // Johto: Route 29
+#define MAPSEC_ROUTE_105                    0x14 // Johto: Route 30
+#define MAPSEC_ROUTE_106                    0x15 // Johto: Route 31
+#define MAPSEC_ROUTE_107                    0x16 // Johto: Route 32
+#define MAPSEC_ROUTE_108                    0x17 // Johto: Route 33
+#define MAPSEC_ROUTE_109                    0x18 // Johto: Route 34
+#define MAPSEC_ROUTE_110                    0x19 // Johto: Route 35
+#define MAPSEC_ROUTE_111                    0x1A // Johto: Route 36
+#define MAPSEC_ROUTE_112                    0x1B // Johto: Route 37
+#define MAPSEC_ROUTE_113                    0x1C // Johto: Route 38
+#define MAPSEC_ROUTE_114                    0x1D // Johto: Route 39
+#define MAPSEC_ROUTE_115                    0x1E // Johto: Route 40
+#define MAPSEC_ROUTE_116                    0x1F // Johto: Route 41
+#define MAPSEC_ROUTE_117                    0x20 // Johto: Route 42
+#define MAPSEC_ROUTE_118                    0x21 // Johto: Route 43
+#define MAPSEC_ROUTE_119                    0x22 // Johto: Route 44
+#define MAPSEC_ROUTE_120                    0x23 // Johto: Route 45
+#define MAPSEC_ROUTE_121                    0x24 // Johto: Route 46
 #define MAPSEC_ROUTE_122                    0x25
 #define MAPSEC_ROUTE_123                    0x26
 #define MAPSEC_ROUTE_124                    0x27
@@ -56,29 +56,29 @@
 #define MAPSEC_UNDERWATER_127               0x34
 #define MAPSEC_UNDERWATER_128               0x35
 #define MAPSEC_UNDERWATER_SOOTOPOLIS        0x36
-#define MAPSEC_GRANITE_CAVE                 0x37
-#define MAPSEC_MT_CHIMNEY                   0x38
-#define MAPSEC_SAFARI_ZONE                  0x39
-#define MAPSEC_BATTLE_FRONTIER              0x3A
-#define MAPSEC_PETALBURG_WOODS              0x3B
-#define MAPSEC_RUSTURF_TUNNEL               0x3C
-#define MAPSEC_ABANDONED_SHIP               0x3D
-#define MAPSEC_NEW_MAUVILLE                 0x3E
-#define MAPSEC_METEOR_FALLS                 0x3F
-#define MAPSEC_METEOR_FALLS2                0x40
-#define MAPSEC_MT_PYRE                      0x41
-#define MAPSEC_AQUA_HIDEOUT_OLD             0x42
-#define MAPSEC_SHOAL_CAVE                   0x43
-#define MAPSEC_SEAFLOOR_CAVERN              0x44
-#define MAPSEC_UNDERWATER_SEAFLOOR_CAVERN   0x45
-#define MAPSEC_VICTORY_ROAD                 0x46
+#define MAPSEC_GRANITE_CAVE                 0x37 // Johto: Sprout Tower
+#define MAPSEC_MT_CHIMNEY                   0x38 // Johto: Bell Tower
+#define MAPSEC_SAFARI_ZONE                  0x39 // Johto: Burned Tower
+#define MAPSEC_BATTLE_FRONTIER              0x3A // Silk Road Alice 1
+#define MAPSEC_PETALBURG_WOODS              0x3B // Johto: Radio Tower
+#define MAPSEC_RUSTURF_TUNNEL               0x3C // Johto: Ruin of Alph
+#define MAPSEC_ABANDONED_SHIP               0x3D // Johto: Union Cave
+#define MAPSEC_NEW_MAUVILLE                 0x3E // Johto: Slowpoke Well
+#define MAPSEC_METEOR_FALLS                 0x3F // Johto: Lighthouse
+#define MAPSEC_METEOR_FALLS2                0x40 // Johto: Team Rocket HQ
+#define MAPSEC_MT_PYRE                      0x41 // Johto: Ilex Forest
+#define MAPSEC_AQUA_HIDEOUT_OLD             0x42 // Johto: Goldenrod Tunnel
+#define MAPSEC_SHOAL_CAVE                   0x43 // Johto: Mt. Mortar
+#define MAPSEC_SEAFLOOR_CAVERN              0x44 // Johto: Ice Path
+#define MAPSEC_UNDERWATER_SEAFLOOR_CAVERN   0x45 // Johto: Whirl Island
+#define MAPSEC_VICTORY_ROAD                 0x46 // Johto: Victory Road
 #define MAPSEC_MIRAGE_ISLAND                0x47
-#define MAPSEC_CAVE_OF_ORIGIN               0x48
+#define MAPSEC_CAVE_OF_ORIGIN               0x48 // Johto: National Park
 #define MAPSEC_SOUTHERN_ISLAND              0x49
-#define MAPSEC_FIERY_PATH                   0x4A
-#define MAPSEC_FIERY_PATH2                  0x4B
-#define MAPSEC_JAGGED_PASS                  0x4C
-#define MAPSEC_JAGGED_PASS2                 0x4D
+#define MAPSEC_FIERY_PATH                   0x4A // Johto: Mt. Silver Cave
+#define MAPSEC_FIERY_PATH2                  0x4B // Johto: Dark Cave
+#define MAPSEC_JAGGED_PASS                  0x4C // Johto: Dragon's Den
+#define MAPSEC_JAGGED_PASS2                 0x4D // Johto: Tohjo Falls
 #define MAPSEC_SEALED_CHAMBER               0x4E
 #define MAPSEC_UNDERWATER_SEALED_CHAMBER    0x4F
 #define MAPSEC_SCORCHED_SLAB                0x50
@@ -89,48 +89,48 @@
 #define MAPSEC_SKY_PILLAR                   0x55
 #define MAPSEC_SECRET_BASE                  0x56
 #define MAPSEC_DYNAMIC                      0x57
-#define MAPSEC_PALLET_TOWN                  0x58
-#define MAPSEC_VIRIDIAN_CITY                0x59
-#define MAPSEC_PEWTER_CITY                  0x5A
-#define MAPSEC_CERULEAN_CITY                0x5B
-#define MAPSEC_LAVENDER_TOWN                0x5C
-#define MAPSEC_VERMILION_CITY               0x5D
-#define MAPSEC_CELADON_CITY                 0x5E
-#define MAPSEC_FUCHSIA_CITY                 0x5F
-#define MAPSEC_CINNABAR_ISLAND              0x60
-#define MAPSEC_INDIGO_PLATEAU               0x61
-#define MAPSEC_SAFFRON_CITY                 0x62
-#define MAPSEC_ROUTE_4_POKECENTER           0x63
-#define MAPSEC_ROUTE_10_POKECENTER          0x64
-#define MAPSEC_ROUTE_1                      0x65
-#define MAPSEC_ROUTE_2                      0x66
-#define MAPSEC_ROUTE_3                      0x67
-#define MAPSEC_ROUTE_4                      0x68
-#define MAPSEC_ROUTE_5                      0x69
-#define MAPSEC_ROUTE_6                      0x6A
-#define MAPSEC_ROUTE_7                      0x6B
-#define MAPSEC_ROUTE_8                      0x6C
-#define MAPSEC_ROUTE_9                      0x6D
-#define MAPSEC_ROUTE_10                     0x6E
-#define MAPSEC_ROUTE_11                     0x6F
-#define MAPSEC_ROUTE_12                     0x70
-#define MAPSEC_ROUTE_13                     0x71
-#define MAPSEC_ROUTE_14                     0x72
-#define MAPSEC_ROUTE_15                     0x73
-#define MAPSEC_ROUTE_16                     0x74
-#define MAPSEC_ROUTE_17                     0x75
-#define MAPSEC_ROUTE_18                     0x76
-#define MAPSEC_ROUTE_19                     0x77
-#define MAPSEC_ROUTE_20                     0x78
-#define MAPSEC_ROUTE_21                     0x79
-#define MAPSEC_ROUTE_22                     0x7A
+#define MAPSEC_PALLET_TOWN                  0x58 // Gensokyo: Hakurei Shrine
+#define MAPSEC_VIRIDIAN_CITY                0x59 // Gensokyo: Human Village
+#define MAPSEC_PEWTER_CITY                  0x5A // Gensokyo: Kourindou
+#define MAPSEC_CERULEAN_CITY                0x5B // Gensokyo: Muenzuka
+#define MAPSEC_LAVENDER_TOWN                0x5C // Gensokyo: Eientei
+#define MAPSEC_VERMILION_CITY               0x5D // Gensokyo: Hakugyokurou
+#define MAPSEC_CELADON_CITY                 0x5E // Gensokyo: Makai
+#define MAPSEC_FUCHSIA_CITY                 0x5F // Gensokyo: Mugenkan
+#define MAPSEC_CINNABAR_ISLAND              0x60 // Gensokyo: Moriya Shrine
+#define MAPSEC_INDIGO_PLATEAU               0x61 // Gensokyo: Chireiden
+#define MAPSEC_SAFFRON_CITY                 0x62 // Gensokyo: Dream World
+#define MAPSEC_ROUTE_4_POKECENTER           0x63 // Gensokyo: Fantasy World
+#define MAPSEC_ROUTE_10_POKECENTER          0x64 // Gensokyo: Pandemonium
+#define MAPSEC_ROUTE_1                      0x65 // Gensokyo: Youkai Road
+#define MAPSEC_ROUTE_2                      0x66 // Gensokyo: Northern Road 1
+#define MAPSEC_ROUTE_3                      0x67 // Gensokyo: Northern Road 2
+#define MAPSEC_ROUTE_4                      0x68 // Gensokyo: Northern Road 3
+#define MAPSEC_ROUTE_5                      0x69 // Gensokyo: Northern Road 4
+#define MAPSEC_ROUTE_6                      0x6A // Gensokyo: Northern Road 1
+#define MAPSEC_ROUTE_7                      0x6B // Gensokyo: Road of Reconsideration 1
+#define MAPSEC_ROUTE_8                      0x6C // Gensokyo: Road of Reconsideration 2
+#define MAPSEC_ROUTE_9                      0x6D // Gensokyo: Road of Reconsideration 3
+#define MAPSEC_ROUTE_10                     0x6E // Gensokyo: Western Road 1
+#define MAPSEC_ROUTE_11                     0x6F // Gensokyo: Western Road 2
+#define MAPSEC_ROUTE_12                     0x70 // Gensokyo: Misty Lake
+#define MAPSEC_ROUTE_13                     0x71 // Gensokyo: Mountain Road
+#define MAPSEC_ROUTE_14                     0x72 // Gensokyo: Youkai Mountain
+#define MAPSEC_ROUTE_15                     0x73 // Gensokyo: Bamboo Forest
+#define MAPSEC_ROUTE_16                     0x74 // Gensokyo: Nameless Hill
+#define MAPSEC_ROUTE_17                     0x75 // Gensokyo: Garden of the Sun
+#define MAPSEC_ROUTE_18                     0x76 // Gensokyo: Road of Liminality
+#define MAPSEC_ROUTE_19                     0x77 // Gensokyo: Sanzu River
+#define MAPSEC_ROUTE_20                     0x78 // Gensokyo: Southern Road 1
+#define MAPSEC_ROUTE_21                     0x79 // Gensokyo: Southern Road 2
+#define MAPSEC_ROUTE_22                     0x7A // Gensokyo: Southern Road 3
 #define MAPSEC_ROUTE_23                     0x7B
 #define MAPSEC_ROUTE_24                     0x7C
 #define MAPSEC_ROUTE_25                     0x7D
-#define MAPSEC_VIRIDIAN_FOREST              0x7E
-#define MAPSEC_MT_MOON                      0x7F
-#define MAPSEC_S_S_ANNE                     0x80
-#define MAPSEC_UNDERGROUND_PATH             0x81
+#define MAPSEC_VIRIDIAN_FOREST              0x7E // Gensokyo: Forest of Magic
+#define MAPSEC_MT_MOON                      0x7F // Gensokyo: Youkai Mountain Inner
+#define MAPSEC_S_S_ANNE                     0x80 // Gensokyo: Former Hell
+#define MAPSEC_UNDERGROUND_PATH             0x81 // Gensokyo: Bamboo Forest Inner
 #define MAPSEC_UNDERGROUND_PATH_2           0x82
 #define MAPSEC_DIGLETTS_CAVE                0x83
 #define MAPSEC_KANTO_VICTORY_ROAD           0x84
@@ -144,7 +144,7 @@
 #define MAPSEC_POKEMON_TOWER                0x8C
 #define MAPSEC_CERULEAN_CAVE                0x8D
 #define MAPSEC_POWER_PLANT                  0x8E
-#define MAPSEC_ONE_ISLAND                   0x8F
+#define MAPSEC_ONE_ISLAND                   0x8F // Gensokyo: Scarlet Devil Mansion
 #define MAPSEC_TWO_ISLAND                   0x90
 #define MAPSEC_THREE_ISLAND                 0x91
 #define MAPSEC_FOUR_ISLAND                  0x92
@@ -215,17 +215,17 @@
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
 
-#define MAPSEC_D5                           0xD5
-#define MAPSEC_D6                           0xD6
-#define MAPSEC_D7                           0xD7
-#define MAPSEC_D8                           0xD8
-#define MAPSEC_D9                           0xD9
-#define MAPSEC_DA                           0xDA
-#define MAPSEC_DB                           0xDB
-#define MAPSEC_DC                           0xDC
-#define MAPSEC_DD                           0xDD
-#define MAPSEC_DE                           0xDE
-#define MAPSEC_DF                           0xDF
+#define MAPSEC_D5                           0xD5 // Johto: Twinriver City
+#define MAPSEC_D6                           0xD6 // Johto: Route 48
+#define MAPSEC_D7                           0xD7 // Johto: Route 47
+#define MAPSEC_D8                           0xD8 // Johto: Safari Zone Gate
+#define MAPSEC_D9                           0xD9 // Johto: Twinriver Cave
+#define MAPSEC_DA                           0xDA // Johto: Cliff Cave
+#define MAPSEC_DB                           0xDB // Johto: Cliff Edge Gate
+#define MAPSEC_DC                           0xDC // Johto: Embedded Tower
+#define MAPSEC_DD                           0xDD // Johto: The Great Bridge
+#define MAPSEC_DE                           0xDE // Silk Road Alice 2
+#define MAPSEC_DF                           0xDF // Silk Road Alice 3
 #define MAPSEC_E0                           0xE0
 #define MAPSEC_E1                           0xE1
 #define MAPSEC_E2                           0xE2

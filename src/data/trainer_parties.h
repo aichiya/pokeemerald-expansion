@@ -12509,10 +12509,10 @@ static const struct TrainerMonItemCustomMoves sParty_TrainerTest5[] = {
 static const struct TrainerMonItemCustomMoves sParty_TrainerTest6[] = {
     {
     .iv = 255,
-    .lvl = 77,
-    .species = SPECIES_SKARMORY,
+    .lvl = 20,
+    .species = SPECIES_SH_VIVITR,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    .moves = {MOVE_EMBER, MOVE_THUNDER_SHOCK, MOVE_BULLET_PUNCH, MOVE_LEER}
     }
 };
 
@@ -12544,11 +12544,18 @@ static const struct TrainerMonItemCustomMoves sParty_TrainerTest8[] = {
 };
 
 static const struct TrainerMonItemCustomMoves sParty_TrainerTest9[] = {
-    {
-    .iv = 255,
-    .lvl = 77,
-    .species = SPECIES_SKARMORY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
-    }
+	{
+	.iv = 255,
+	.lvl = 100,
+	.species = SPECIES_ETC_DIALGATH,
+	.heldItem = ITEM_STEELIUM_Z,
+	.moves = {MOVE_ROAR_OF_TIME, MOVE_FLASH_CANNON, MOVE_EARTH_POWER, MOVE_FIRE_BLAST}
+	},
+	{
+	.iv = 255,
+	.lvl = 100,
+	.species = SPECIES_ETC_PALKIATH,
+	.heldItem = ITEM_WATERIUM_Z,
+	.moves = {MOVE_SPACIAL_REND, MOVE_THUNDERBOLT, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM}
+	}
 };

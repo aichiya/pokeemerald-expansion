@@ -1343,6 +1343,7 @@ gSongTable::
 	song mus_gi_moonlikesmile, 0, 0
 	song mus_th_lostdream, 0, 0
 	song mus_znt_isayyes, 0, 0
+	song mus_sh_mymaidsweetmaid, 0, 0
 
 	.align 2
 dummy_song_header:

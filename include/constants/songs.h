@@ -1316,7 +1316,9 @@
 
 #define MUS_ZNT_ISAYYES 1341
 
-#define END_MUS 					MUS_ZNT_ISAYYES
+#define MUS_SH_MYMAIDSWEETMAID 1342
+
+#define END_MUS 					MUS_SH_MYMAIDSWEETMAID
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

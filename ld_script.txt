@@ -1978,6 +1978,7 @@ SECTIONS {
         sound/songs/mus_gi_moonlikesmile.o(.rodata);
         sound/songs/mus_th_lostdream.o(.rodata);
         sound/songs/mus_znt_isayyes.o(.rodata);
+        sound/songs/mus_sh_mymaidsweetmaid.o(.rodata);
     } =0
 
     lib_rodata :

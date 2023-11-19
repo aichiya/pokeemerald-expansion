@@ -1344,6 +1344,7 @@ gSongTable::
 	song mus_th_lostdream, 0, 0
 	song mus_znt_isayyes, 0, 0
 	song mus_sh_mymaidsweetmaid, 0, 0
+	song mus_gs2_vs_magician, 0, 0
 
 	.align 2
 dummy_song_header:

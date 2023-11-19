@@ -6958,10 +6958,230 @@ Cry_ETCCureUnionLine::
 Cry_ETCDecadeLine::
     .incbin "sound/direct_sound_samples/cries_add/cry_etc_decade_line.bin"
 
-.align 2
+    .align 2
 Cry_ETCDiEndLine::
     .incbin "sound/direct_sound_samples/cries_add/cry_etc_diend_line.bin"
 
     .align 2
 Cry_ETCDeLastLine::
     .incbin "sound/direct_sound_samples/cries_add/cry_etc_delast_line.bin"
+
+@ Start Golden Sun 2 Instruments
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample001::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_001.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample002::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_002.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample003::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_003.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample004::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_004.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample005::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_005.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample006::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_006.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample007::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_007.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample008::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_008.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample009::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_009.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample010::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_010.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample011::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_011.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample012::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_012.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample013::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_013.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample014::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_014.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample015::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_015.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample016::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_016.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample017::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_017.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample018::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_018.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample019::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_019.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample020::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_020.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample021::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_021.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample022::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_022.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample023::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_023.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample024::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_024.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample025::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_025.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample026::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_026.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample027::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_027.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample028::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_028.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample029::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_029.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample030::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_030.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample031::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_031.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample032::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_032.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample033::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_033.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample034::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_034.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample035::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_035.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample036::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_036.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample037::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_037.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample038::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_038.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample039::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_039.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample040::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_040.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample041::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_041.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample042::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_042.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample043::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_043.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample044::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_044.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample045::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_045.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample046::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_046.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample047::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_047.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample048::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_048.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample049::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_049.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample050::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_050.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample051::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_051.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample052::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_052.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample053::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_053.bin"
+
+    .align 2
+DirectSoundWaveData_GoldenSun2InstrumentSample054::
+    .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_054.bin"
+
+@ End Golden Sun 2 Instruments

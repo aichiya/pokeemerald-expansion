@@ -303,4 +303,7 @@
 .include "sound/voicegroups/voicegroup530.inc"
 @ --Start PMD GBA Voicegroups--
 
+.include "sound/voicegroups/voicegroup601.inc" @ [Main] GBA Golden Sun
+.include "sound/voicegroups/voicegroup602.inc" @ GBA Golden Sun Drum
+
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free

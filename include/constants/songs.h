@@ -1318,7 +1318,9 @@
 
 #define MUS_SH_MYMAIDSWEETMAID 1342
 
-#define END_MUS 					MUS_SH_MYMAIDSWEETMAID
+#define MUS_GS2_VS_MAGICIAN 1343
+
+#define END_MUS 					MUS_GS2_VS_MAGICIAN
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

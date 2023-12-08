@@ -1411,7 +1411,7 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_SH_VIVITR]  = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 1 },
     [SPECIES_KEY_MISUZU1]  = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
     [SPECIES_KEY_MISUZU2]  = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
-    [SPECIES_KEY_MISUZU3]  = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
+    [SPECIES_KEY_MISUZU3]  = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 1 },
     [SPECIES_KEY_KANO1]  = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
     [SPECIES_KEY_KANO2]  = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
     [SPECIES_KEY_KANO3]  = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },

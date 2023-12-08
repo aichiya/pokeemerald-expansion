@@ -9923,6 +9923,10 @@ u16 GetBattleBGM(void)
         	return MUS_YYYI_BATTLE_04;
         case TRAINER_CLASS_BGHS_SCHOOL_GIRL:
         	return MUS_SNY_GODKNOWS;
+        case TRAINER_CLASS_PC_CURE:
+        	return MUS_PC_EIEN_NO_TOMODACHI;
+        case TRAINER_CLASS_KAMEN_RIDER_DIEND:
+        	return MUS_DCD_DIEND;
         default:
             return MUS_VS_TRAINER;
         }

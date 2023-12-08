@@ -208,6 +208,7 @@
 .include "sound/voicegroups/voicegroup201.inc" @ [Main] Custom mixed instrument (GBA-HGSS-THPPRF)
 .include "sound/voicegroups/voicegroup202.inc" @ Custom HGSS Base
 .include "sound/voicegroups/voicegroup203.inc" @ DP voicegroup, based on copy of HGSS instrument
+.include "sound/voicegroups/voicegroup204.inc" @ [Main] Custom 4
 
 .include "sound/voicegroups/voicegroup210.inc" @ [Main] THPPRF custom
 .include "sound/voicegroups/voicegroup211.inc" @ [Main] THPPZGS custom

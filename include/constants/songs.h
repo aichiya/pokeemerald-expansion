@@ -1320,7 +1320,13 @@
 
 #define MUS_GS2_VS_MAGICIAN 1343
 
-#define END_MUS 					MUS_GS2_VS_MAGICIAN
+#define MUS_PWVSPL_SPELLBREAKER 1344
+
+#define MUS_DCD_DIEND 1345
+
+#define MUS_PC_EIEN_NO_TOMODACHI 1346
+
+#define END_MUS 					MUS_PC_EIEN_NO_TOMODACHI
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

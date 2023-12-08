@@ -72,23 +72,23 @@ JohtoTwinriverCity_EventScript_Sign3::
 	additem ITEM_REVEAL_GLASS, 1
 	additem ITEM_MASTER_BALL, 10
 	setvar VAR_TEMP_1, 0
-	givemon SPECIES_YYYI_CHIKAGE3, 100, ITEM_FAIRIUM_Z
+	givemon SPECIES_KEY_MISUZU3, 100, ITEM_FAIRIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
-	setmonmove 0, 0, MOVE_SMART_STRIKE
-	setmonmove 0, 1, MOVE_PLAY_ROUGH
-	setmonmove 0, 2, MOVE_HOLD_BACK
-	setmonmove 0, 3, MOVE_NIGHT_SLASH
-//	givemon SPECIES_ETC_DECADE3, 100, ITEM_STEELIUM_Z
-//	setmoneventlegal 1
-//	setmonmetlocation 1, 255
-//	setmonmove 1, 0, MOVE_DAZZLING_GLEAM
-//	setmonmove 1, 1, MOVE_THUNDERBOLT
-//	setmonmove 1, 2, MOVE_PSYCHIC
-//	setmonmove 1, 3, MOVE_SHADOW_BALL
+	setmonmove 0, 0, MOVE_AIR_SLASH
+	setmonmove 0, 1, MOVE_MOONGEIST_BEAM
+	setmonmove 0, 2, MOVE_MOONLIGHT
+	setmonmove 0, 3, MOVE_MOONBLAST
+	givemon SPECIES_TH_REIMU1, 100, ITEM_RED_ORB
+	setmoneventlegal 1
+	setmonmetlocation 1, 255
+	setmonmove 1, 0, MOVE_LUSTER_PURGE
+	setmonmove 1, 1, MOVE_HIGH_JUMP_KICK
+	setmonmove 1, 2, MOVE_EXTRASENSORY
+	setmonmove 1, 3, MOVE_CALM_MIND
 	setflag FLAG_SCRIPTED_LOSS
 	delay 30
-	trainerbattle_single TRAINER_TEST_8, JohtoTwinriverCity_Text_Sign3TrainerTestIntro, JohtoTwinriverCity_Text_Sign3TrainerTestDefeat, JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated, NO_MUSIC
+	trainerbattle_single TRAINER_TEST_9, JohtoTwinriverCity_Text_Sign3TrainerTestIntro, JohtoTwinriverCity_Text_Sign3TrainerTestDefeat, JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated, NO_MUSIC
 	clearflag FLAG_SCRIPTED_LOSS
 	releaseall
 	end

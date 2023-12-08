@@ -1345,6 +1345,9 @@ gSongTable::
 	song mus_znt_isayyes, 0, 0
 	song mus_sh_mymaidsweetmaid, 0, 0
 	song mus_gs2_vs_magician, 0, 0
+	song mus_pwvspl_spellbreaker, 0, 0
+	song mus_dcd_diend, 0, 0
+	song mus_pc_eien_no_tomodachi, 0, 0
 
 	.align 2
 dummy_song_header:

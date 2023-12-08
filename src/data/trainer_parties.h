@@ -12547,15 +12547,15 @@ static const struct TrainerMonItemCustomMoves sParty_TrainerTest9[] = {
 	{
 	.iv = 255,
 	.lvl = 100,
-	.species = SPECIES_ETC_DIALGATH,
-	.heldItem = ITEM_STEELIUM_Z,
-	.moves = {MOVE_ROAR_OF_TIME, MOVE_FLASH_CANNON, MOVE_EARTH_POWER, MOVE_FIRE_BLAST}
+	.species = SPECIES_TH_MARISA1,
+	.heldItem = ITEM_RED_ORB,
+	.moves = {MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_FLAMETHROWER}
 	},
 	{
 	.iv = 255,
 	.lvl = 100,
-	.species = SPECIES_ETC_PALKIATH,
-	.heldItem = ITEM_WATERIUM_Z,
-	.moves = {MOVE_SPACIAL_REND, MOVE_THUNDERBOLT, MOVE_HYDRO_PUMP, MOVE_ICE_BEAM}
+	.species = SPECIES_KEY_MAKOTO3,
+	.heldItem = ITEM_GHOSTIUM_Z,
+	.moves = {MOVE_THUNDEROUS_KICK, MOVE_SHADOW_CLAW, MOVE_ICE_PUNCH, MOVE_NIGHT_SLASH}
 	}
 };

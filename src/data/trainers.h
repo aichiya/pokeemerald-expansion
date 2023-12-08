@@ -10359,10 +10359,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_TEST_9] =
     {
-        .trainerClass = TRAINER_CLASS_BGHS_SCHOOL_GIRL,
+        .trainerClass = TRAINER_CLASS_KAMEN_RIDER_DIEND,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LASS,
-        .trainerName = _("HARUHI"),
+        .trainerPic = TRAINER_PIC_ETC_DAIKI_KAITO,
+        .trainerName = _("DiEnd"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,

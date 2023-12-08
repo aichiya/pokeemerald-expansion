@@ -1980,6 +1980,9 @@ SECTIONS {
         sound/songs/mus_znt_isayyes.o(.rodata);
         sound/songs/mus_sh_mymaidsweetmaid.o(.rodata);
         sound/songs/mus_gs2_vs_magician.o(.rodata);
+        sound/songs/mus_pwvspl_spellbreaker.o(.rodata);
+        sound/songs/mus_dcd_diend.o(.rodata);
+        sound/songs/mus_pc_eien_no_tomodachi.o(.rodata);
     } =0
 
     lib_rodata :

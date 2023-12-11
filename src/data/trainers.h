@@ -10364,7 +10364,7 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_ETC_DAIKI_KAITO,
         .trainerName = _("DiEnd"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = ITEM_CUSTOM_MOVES(sParty_TrainerTest9),
     },

@@ -12544,13 +12544,13 @@ static const struct TrainerMonItemCustomMoves sParty_TrainerTest8[] = {
 };
 
 static const struct TrainerMonItemCustomMoves sParty_TrainerTest9[] = {
-	{
+	/* {
 	.iv = 255,
 	.lvl = 100,
 	.species = SPECIES_TH_MARISA1,
 	.heldItem = ITEM_RED_ORB,
 	.moves = {MOVE_THUNDERBOLT, MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_FLAMETHROWER}
-	},
+	}, */
 	{
 	.iv = 255,
 	.lvl = 100,

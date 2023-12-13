@@ -3961,6 +3961,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
 	X(MUS_PWVSPL_SPELLBREAKER) \
 	X(MUS_DCD_DIEND) \
 	X(MUS_PC_EIEN_NO_TOMODACHI) \
+	X(MUS_DCD_BLACK) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

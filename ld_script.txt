@@ -1983,6 +1983,7 @@ SECTIONS {
         sound/songs/mus_pwvspl_spellbreaker.o(.rodata);
         sound/songs/mus_dcd_diend.o(.rodata);
         sound/songs/mus_pc_eien_no_tomodachi.o(.rodata);
+        sound/songs/mus_dcd_black.o(.rodata);
     } =0
 
     lib_rodata :

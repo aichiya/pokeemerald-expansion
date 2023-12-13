@@ -1326,7 +1326,9 @@
 
 #define MUS_PC_EIEN_NO_TOMODACHI 1346
 
-#define END_MUS 					MUS_PC_EIEN_NO_TOMODACHI
+#define MUS_DCD_BLACK 1347
+
+#define END_MUS 					MUS_DCD_BLACK
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

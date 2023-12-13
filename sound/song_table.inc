@@ -1348,6 +1348,7 @@ gSongTable::
 	song mus_pwvspl_spellbreaker, 0, 0
 	song mus_dcd_diend, 0, 0
 	song mus_pc_eien_no_tomodachi, 0, 0
+	song mus_dcd_black, 0, 0
 
 	.align 2
 dummy_song_header:

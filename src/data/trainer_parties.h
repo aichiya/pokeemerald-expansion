@@ -3477,31 +3477,31 @@ static const struct TrainerMonItemCustomMoves sParty_Flannery1[] = {
 static const struct TrainerMonItemCustomMoves sParty_Norman1[] = {
     {
     .iv = 200,
-    .lvl = 27,
-    .species = SPECIES_SPINDA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TEETER_DANCE, MOVE_PSYBEAM, MOVE_FACADE, MOVE_ENCORE}
+    .lvl = 40,
+    .species = SPECIES_KEY_USHIO2,
+    .heldItem = ITEM_CHOPLE_BERRY,
+    .moves = {MOVE_FLASH, MOVE_FLASH_CANNON, MOVE_SCALD, MOVE_DAZZLING_GLEAM}
     },
     {
     .iv = 200,
-    .lvl = 27,
-    .species = SPECIES_VIGOROTH,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SLASH, MOVE_FACADE, MOVE_ENCORE, MOVE_FEINT_ATTACK}
+    .lvl = 40,
+    .species = SPECIES_TH_YOUMU2N,
+    .heldItem = ITEM_FOCUS_SASH,
+    .moves = {MOVE_FALSE_SWIPE, MOVE_SHADOW_CLAW, MOVE_SWORDS_DANCE, MOVE_SACRED_SWORD}
     },
     {
     .iv = 200,
-    .lvl = 29,
-    .species = SPECIES_LINOONE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SLASH, MOVE_BELLY_DRUM, MOVE_FACADE, MOVE_HEADBUTT}
+    .lvl = 40,
+    .species = SPECIES_MOE_STEELIX,
+    .heldItem = ITEM_CUSTAP_BERRY,
+    .moves = {MOVE_GYRO_BALL, MOVE_ROCK_SLIDE, MOVE_BODY_PRESS, MOVE_STOMPING_TANTRUM}
     },
     {
     .iv = 250,
-    .lvl = 31,
-    .species = SPECIES_SLAKING,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_COUNTER, MOVE_YAWN, MOVE_FACADE, MOVE_FEINT_ATTACK}
+    .lvl = 40,
+    .species = SPECIES_STEELIX,
+    .heldItem = ITEM_STEELIXITE,
+    .moves = {MOVE_CRUNCH, MOVE_IRON_HEAD, MOVE_ZEN_HEADBUTT, MOVE_THUNDER_FANG}
     }
 };
 

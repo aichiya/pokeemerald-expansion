@@ -74,25 +74,40 @@ JohtoTwinriverCity_EventScript_Sign3::
 	additem ITEM_MACH_BIKE, 1
 	additem ITEM_ACRO_BIKE, 1
 //	setvar VAR_TEMP_1, 0
-	givemon SPECIES_KEY_MISUZU3, 100, ITEM_FAIRIUM_Z
+	givemon SPECIES_TH_MARIBEL, 40, ITEM_GHOSTIUM_Z
 	setmoneventlegal 0
 	setmonmetlocation 0, 255
-	setmonmove 0, 0, MOVE_AIR_SLASH
-	setmonmove 0, 1, MOVE_MOONGEIST_BEAM
-	setmonmove 0, 2, MOVE_SURF
-	setmonmove 0, 3, MOVE_MOONBLAST
-//	givemon SPECIES_TH_REIMU1, 100, ITEM_RED_ORB
-//	setmoneventlegal 1
-//	setmonmetlocation 1, 255
-//	setmonmove 1, 0, MOVE_LUSTER_PURGE
-//	setmonmove 1, 1, MOVE_HIGH_JUMP_KICK
-//	setmonmove 1, 2, MOVE_EXTRASENSORY
-//	setmonmove 1, 3, MOVE_CALM_MIND
+	setmonmove 0, 0, MOVE_PSYSTRIKE
+	setmonmove 0, 1, MOVE_GEOMANCY
+	setmonmove 0, 2, MOVE_MOONGEIST_BEAM
+	setmonmove 0, 3, MOVE_LIGHT_SCREEN
+	givemon SPECIES_TH_RENKO, 40, ITEM_FIGHTINIUM_Z
+	setmoneventlegal 1
+	setmonmetlocation 1, 255
+	setmonmove 1, 0, MOVE_DRAGON_DANCE
+	setmonmove 1, 1, MOVE_HIGH_JUMP_KICK
+	setmonmove 1, 2, MOVE_EXTREME_SPEED
+	setmonmove 1, 3, MOVE_PROTECT
+	givemon SPECIES_YYYI_TAKASHIMA_YUUNA2, 40, ITEM_DIANCITE
+	setmoneventlegal 2
+	setmonmetlocation 2, 255
+	setmonmove 2, 0, MOVE_PLASMA_FISTS
+	setmonmove 2, 1, MOVE_REFLECT
+	setmonmove 2, 2, MOVE_BULK_UP
+	setmonmove 2, 3, MOVE_DRAIN_PUNCH
+	givemon SPECIES_MOE_NINETALES_ALOLAN, 40, ITEM_FOCUS_SASH
+	setmoneventlegal 3
+	setmonmetlocation 3, 255
+	setmonmove 3, 0, MOVE_SHADOW_BALL
+	setmonmove 3, 1, MOVE_NASTY_PLOT
+	setmonmove 3, 2, MOVE_DARK_PULSE
+	setmonmove 3, 3, MOVE_WILL_O_WISP
 //	setflag FLAG_SCRIPTED_LOSS
 	delay 30
 	faceplayer
 	msgbox JohtoTwinriverCity_Text_Sign3TrainerTestIntro, MSGBOX_DEFAULT
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_TEST_9, 0, JohtoTwinriverCity_Text_Sign3TrainerTestDefeat
+	trainerbattle_no_intro TRAINER_NORMAN_1, JohtoTwinriverCity_Text_Sign3TrainerTestDefeat
+//	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NORMAN_1, 0, JohtoTwinriverCity_Text_Sign3TrainerTestDefeat
 //	clearflag FLAG_SCRIPTED_LOSS
 	releaseall
 	end
@@ -101,9 +116,7 @@ JohtoTwinriverCity_Text_Sign3TrainerTestIntro:
 	.string "Battle Test.$"
 
 JohtoTwinriverCity_Text_Sign3TrainerTestDefeat:
-	.string "Whoah, wow! You made a much bigger\n"
-	.string "splash than I expected!\p"
-	.string "Okay, you've got me.$"
+	.string "Well done.$"
 
 JohtoTwinriverCity_EventScript_Sign3TrainerTestDefeated::
 	releaseall

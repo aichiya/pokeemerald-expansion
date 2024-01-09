@@ -1984,6 +1984,9 @@ SECTIONS {
         sound/songs/mus_dcd_diend.o(.rodata);
         sound/songs/mus_pc_eien_no_tomodachi.o(.rodata);
         sound/songs/mus_dcd_black.o(.rodata);
+        sound/songs/mus_pkmn_battle_madley_1.o(.rodata);
+        sound/songs/mus_dbs_ultimate_battle.o(.rodata);
+        sound/songs/mus_pkmn_slp_taupe_hollow_piano.o(.rodata);
     } =0
 
     lib_rodata :

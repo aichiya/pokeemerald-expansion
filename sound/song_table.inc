@@ -1349,6 +1349,9 @@ gSongTable::
 	song mus_dcd_diend, 0, 0
 	song mus_pc_eien_no_tomodachi, 0, 0
 	song mus_dcd_black, 0, 0
+	song mus_pkmn_battle_madley_1, 0, 0
+	song mus_dbs_ultimate_battle, 0, 0
+	song mus_pkmn_slp_taupe_hollow_piano, 0, 0
 
 	.align 2
 dummy_song_header:

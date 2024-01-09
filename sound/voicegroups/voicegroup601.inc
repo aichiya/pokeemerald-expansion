@@ -105,18 +105,18 @@ voicegroup601::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 102 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 103 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 104 | ---
-	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample021, 255, 235, 103, 178            @ 105 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample021, 255, 235, 103, 178            @ 105 | Direct | Gamelan (echoed)
 	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample022, 255, 242, 103, 178            @ 106 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample023, 255, 0, 255, 165              @ 107 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample024, 255, 0, 255, 165              @ 108 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample025, 255, 0, 255, 165              @ 109 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample026, 255, 235, 103, 178            @ 110 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample027, 255, 0, 255, 165              @ 111 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample028, 255, 0, 255, 165              @ 112 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample029, 255, 0, 255, 165              @ 113 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample030, 255, 235, 103, 178            @ 114 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample023, 255, 0, 255, 165              @ 107 | Direct | Snare?
+	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample024, 255, 0, 255, 165              @ 108 | Direct | Weirdo voice
+	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample025, 255, 0, 255, 165              @ 109 | Direct | Gamelan
+	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample026, 255, 235, 103, 178            @ 110 | Direct | Pick
+	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample027, 255, 0, 255, 165              @ 111 | Direct | Elec pick
+	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample028, 255, 0, 255, 165              @ 112 | Direct | Gendang
+	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample029, 255, 0, 255, 165              @ 113 | Direct | Tabuhan
+	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample030, 255, 235, 103, 178            @ 114 | Direct | ???
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 115 | ---
-	voice_directsound 80, 0, DirectSoundWaveData_GoldenSun2InstrumentSample031, 255, 0, 255, 0                @ 116 | Direct |
+	voice_directsound 80, 0, DirectSoundWaveData_GoldenSun2InstrumentSample031, 255, 0, 255, 0                @ 116 | Direct | Tabuhan
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 117 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 118 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 119 | ---

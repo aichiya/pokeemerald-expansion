@@ -19,8 +19,8 @@ mus_pc_ds6hcpc_seq_bgm_bgm_14_1:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_14_key+0
 @ 000   ----------------------------------------
 	.byte	TEMPO , 163*mus_pc_ds6hcpc_seq_bgm_bgm_14_tbs/2
-	.byte		VOICE , 73
-	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
+	.byte		VOICE , 4 @ 73
+	.byte		VOL   , 127*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		PAN   , c_v-4
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -427,7 +427,7 @@ mus_pc_ds6hcpc_seq_bgm_bgm_14_1_046:
 mus_pc_ds6hcpc_seq_bgm_bgm_14_2:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_14_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 68
+	.byte		VOICE , 86 @ 68
 	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		PAN   , c_v+6
 	.byte		BEND  , c_v+0
@@ -817,7 +817,7 @@ mus_pc_ds6hcpc_seq_bgm_bgm_14_2_046:
 mus_pc_ds6hcpc_seq_bgm_bgm_14_3:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_14_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 40
+	.byte		VOICE , 95 @ 40
 	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
@@ -1140,7 +1140,7 @@ mus_pc_ds6hcpc_seq_bgm_bgm_14_3_046:
 mus_pc_ds6hcpc_seq_bgm_bgm_14_4:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_14_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 40
+	.byte		VOICE , 115 @ 40
 	.byte		VOL   , 90*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		        90*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		        90*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
@@ -1458,7 +1458,7 @@ mus_pc_ds6hcpc_seq_bgm_bgm_14_4_043:
 mus_pc_ds6hcpc_seq_bgm_bgm_14_5:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_14_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 9
+	.byte		VOICE , 27 @ 9
 	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte	W96
@@ -2079,7 +2079,7 @@ mus_pc_ds6hcpc_seq_bgm_bgm_14_7_012:
 mus_pc_ds6hcpc_seq_bgm_bgm_14_8:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_14_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 42
+	.byte		VOICE , 50 @ 42
 	.byte		VOL   , 125*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
@@ -2375,7 +2375,7 @@ mus_pc_ds6hcpc_seq_bgm_bgm_14_8_057:
 mus_pc_ds6hcpc_seq_bgm_bgm_14_9:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_14_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 42
+	.byte		VOICE , 50 @ 42
 	.byte		VOL   , 125*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
@@ -2640,8 +2640,8 @@ mus_pc_ds6hcpc_seq_bgm_bgm_14_9_012:
 mus_pc_ds6hcpc_seq_bgm_bgm_14_10:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_14_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 127
-	.byte		VOL   , 100*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
+	.byte		VOICE , 0
+	.byte		VOL   , 127*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
 	.byte	W24
@@ -2957,7 +2957,7 @@ mus_pc_ds6hcpc_seq_bgm_bgm_14_10_041:
 mus_pc_ds6hcpc_seq_bgm_bgm_14_11:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_14_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 43
+	.byte		VOICE , 38 @ 43
 	.byte		VOL   , 125*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
@@ -3373,7 +3373,7 @@ mus_pc_ds6hcpc_seq_bgm_bgm_14_11_057:
 mus_pc_ds6hcpc_seq_bgm_bgm_14_12:
 	.byte	KEYSH , mus_pc_ds6hcpc_seq_bgm_bgm_14_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 47
+	.byte		VOICE , 63 @ 47
 	.byte		VOL   , 125*mus_pc_ds6hcpc_seq_bgm_bgm_14_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0

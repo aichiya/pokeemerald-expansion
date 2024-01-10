@@ -1333,8 +1333,9 @@
 #define MUS_DBS_ULTIMATE_BATTLE 1349
 
 #define MUS_PKMN_SLP_TAUPE_HOLLOW_PIANO 1350
+#define MUS_PKMN_SV_VS_STAR_GRUNT 1351
 
-#define END_MUS 					MUS_PKMN_SLP_TAUPE_HOLLOW_PIANO
+#define END_MUS 					MUS_PKMN_SV_VS_STAR_GRUNT
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

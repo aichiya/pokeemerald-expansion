@@ -1987,6 +1987,7 @@ SECTIONS {
         sound/songs/mus_pkmn_battle_madley_1.o(.rodata);
         sound/songs/mus_dbs_ultimate_battle.o(.rodata);
         sound/songs/mus_pkmn_slp_taupe_hollow_piano.o(.rodata);
+        sound/songs/mus_pkmn_sv_vs_star_grunt.o(.rodata);
     } =0
 
     lib_rodata :

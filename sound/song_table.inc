@@ -1353,6 +1353,7 @@ gSongTable::
 	song mus_dbs_ultimate_battle, 0, 0
 	song mus_pkmn_slp_taupe_hollow_piano, 0, 0
 	song mus_pkmn_sv_vs_star_grunt, 0, 0
+	song mus_dbs_royal_blue, 0, 0
 
 	.align 2
 dummy_song_header:

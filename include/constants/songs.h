@@ -1334,8 +1334,9 @@
 
 #define MUS_PKMN_SLP_TAUPE_HOLLOW_PIANO 1350
 #define MUS_PKMN_SV_VS_STAR_GRUNT 1351
+#define MUS_DBS_ROYAL_BLUE 1352
 
-#define END_MUS 					MUS_PKMN_SV_VS_STAR_GRUNT
+#define END_MUS 					MUS_DBS_ROYAL_BLUE
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -3966,6 +3966,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
 	X(MUS_DBS_ULTIMATE_BATTLE) \
 	X(MUS_PKMN_SLP_TAUPE_HOLLOW_PIANO) \
 	X(MUS_PKMN_SV_VS_STAR_GRUNT) \
+	X(MUS_DBS_ROYAL_BLUE) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

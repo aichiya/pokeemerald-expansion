@@ -1335,8 +1335,12 @@
 #define MUS_PKMN_SLP_TAUPE_HOLLOW_PIANO 1350
 #define MUS_PKMN_SV_VS_STAR_GRUNT 1351
 #define MUS_DBS_ROYAL_BLUE 1352
+#define MUS_GI_FRAGILE_FANTASY 1353
+#define MUS_DBH_GO_BEYOND_THE_LIMITS 1354
+#define MUS_DBGT_DANDANKOKORO_RECAP 1355
+#define MUS_TH_KIMI_NO_YUME 1356
 
-#define END_MUS 					MUS_DBS_ROYAL_BLUE
+#define END_MUS 					MUS_TH_KIMI_NO_YUME
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

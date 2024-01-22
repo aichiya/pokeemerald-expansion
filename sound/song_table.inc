@@ -1354,6 +1354,10 @@ gSongTable::
 	song mus_pkmn_slp_taupe_hollow_piano, 0, 0
 	song mus_pkmn_sv_vs_star_grunt, 0, 0
 	song mus_dbs_royal_blue, 0, 0
+	song mus_gi_fragile_fantasy, 0, 0
+	song mus_dbh_go_beyond_the_limits, 0, 0
+	song mus_dbgt_dandankokoro_recap, 0, 0
+	song mus_th_kimi_no_yume, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -1358,6 +1358,9 @@ gSongTable::
 	song mus_dbh_go_beyond_the_limits, 0, 0
 	song mus_dbgt_dandankokoro_recap, 0, 0
 	song mus_th_kimi_no_yume, 0, 0
+	song mus_dbz_first_prologue, 0, 0
+	song mus_dbz_hikari_no_willpower, 0, 0
+	song mus_etc_coffin_dance_pmd, 0, 0
 
 	.align 2
 dummy_song_header:

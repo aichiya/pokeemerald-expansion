@@ -1339,8 +1339,11 @@
 #define MUS_DBH_GO_BEYOND_THE_LIMITS 1354
 #define MUS_DBGT_DANDANKOKORO_RECAP 1355
 #define MUS_TH_KIMI_NO_YUME 1356
+#define MUS_DBZ_FIRST_PROLOGUE 1357
+#define MUS_DBZ_HIKARI_NO_WILLPOWER 1358
+#define MUS_ETC_COFFIN_DANCE 1359
 
-#define END_MUS 					MUS_TH_KIMI_NO_YUME
+#define END_MUS 					MUS_ETC_COFFIN_DANCE
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

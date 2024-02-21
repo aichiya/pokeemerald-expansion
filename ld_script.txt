@@ -1996,6 +1996,7 @@ SECTIONS {
         sound/songs/mus_dbz_first_prologue.o(.rodata);
         sound/songs/mus_dbz_hikari_no_willpower.o(.rodata);
         sound/songs/mus_etc_coffin_dance_pmd.o(.rodata);
+        sound/songs/mus_hololive_error.o(.rodata);
     } =0
 
     lib_rodata :

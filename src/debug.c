@@ -3974,6 +3974,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
 	X(MUS_DBZ_FIRST_PROLOGUE) \
 	X(MUS_DBZ_HIKARI_NO_WILLPOWER) \
 	X(MUS_ETC_COFFIN_DANCE) \
+	X(MUS_HOLOLIVE_ERROR) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

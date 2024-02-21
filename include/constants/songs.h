@@ -1342,8 +1342,9 @@
 #define MUS_DBZ_FIRST_PROLOGUE 1357
 #define MUS_DBZ_HIKARI_NO_WILLPOWER 1358
 #define MUS_ETC_COFFIN_DANCE 1359
+#define MUS_HOLOLIVE_ERROR 1360
 
-#define END_MUS 					MUS_ETC_COFFIN_DANCE
+#define END_MUS 					MUS_HOLOLIVE_ERROR
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

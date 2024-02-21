@@ -1,1096 +1,1305 @@
-	.include "MPlayDef.s"
+        .include "MPlayDef.s"
 
-	.equ	mus_pkmn_slp_taupe_hollow_piano_grp, voicegroup201
-	.equ	mus_pkmn_slp_taupe_hollow_piano_pri, 0
-	.equ	mus_pkmn_slp_taupe_hollow_piano_rev, 50
-	.equ	mus_pkmn_slp_taupe_hollow_piano_mvl, 127
-	.equ	mus_pkmn_slp_taupe_hollow_piano_key, 0
-	.equ	mus_pkmn_slp_taupe_hollow_piano_tbs, 1
-	.equ	mus_pkmn_slp_taupe_hollow_piano_exg, 0
-	.equ	mus_pkmn_slp_taupe_hollow_piano_cmp, 1
+        .equ    mus_pkmn_slp_taupe_hollow_piano_grp, voicegroup201
+        .equ    mus_pkmn_slp_taupe_hollow_piano_pri, 0
+        .equ    mus_pkmn_slp_taupe_hollow_piano_rev, 0
+        .equ    mus_pkmn_slp_taupe_hollow_piano_key, 0
 
-	.section .rodata
-	.global	mus_pkmn_slp_taupe_hollow_piano
-	.align	2
+        .section .rodata
+        .global mus_pkmn_slp_taupe_hollow_piano
+        .align  2
 
-@**************** Track 1 (Midi-Chn.1) ****************@
+@****************** Track 0 (Midi-Chn.0) ******************@
+
+mus_pkmn_slp_taupe_hollow_piano_0:
+        .byte   KEYSH , mus_pkmn_slp_taupe_hollow_piano_key+0
+@ 000   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_LOOP:
+        .byte   TEMPO , 72/2
+        .byte           BENDR , 12
+        .byte           VOICE , 1
+        .byte           VOL   , 100
+        .byte           N17   , Gs3 , v064
+        .byte   W02
+        .byte           N15   , Cs4
+        .byte   W02
+        .byte           N13   , Fs4
+        .byte   W14
+        .byte           N17   , Bn4
+        .byte   W18
+        .byte                   Bn4
+        .byte   W18
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte           N11   , Gs4
+        .byte   W12
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte                   Gs4
+        .byte   W06
+@ 001   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_1:
+        .byte           N17   , Cs4 , v064
+        .byte   W02
+        .byte           N15   , Fs4
+        .byte   W16
+        .byte           N17   , Cs4
+        .byte           N17   , Gs4
+        .byte   W18
+        .byte                   Cs4
+        .byte           N17   , Gs4
+        .byte   W18
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte           N11   , Gs4
+        .byte   W12
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte                   Ds5
+        .byte   W06
+        .byte   PEND
+@ 002   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_2:
+        .byte           N17   , Gs3 , v064
+        .byte   W02
+        .byte           N15   , Cs4
+        .byte   W02
+        .byte           N13   , Fs4
+        .byte   W14
+        .byte           N17   , Cs4
+        .byte           N17   , Fs4
+        .byte           N17   , Bn4
+        .byte   W18
+        .byte                   Cs4
+        .byte           N17   , Fs4
+        .byte           N17   , Bn4
+        .byte   W18
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte           N11   , Gs4
+        .byte   W12
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte                   Gs4
+        .byte   W06
+        .byte   PEND
+@ 003   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_3:
+        .byte           N05   , Ds5 , v064
+        .byte   W06
+        .byte                   En5
+        .byte   W06
+        .byte                   Ds5
+        .byte   W06
+        .byte           N11   , Bn4
+        .byte   W12
+        .byte                   Fs4
+        .byte   W12
+        .byte                   Gs4
+        .byte   W12
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte           N11   , Gs4
+        .byte   W12
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte                   Ds5
+        .byte   W06
+        .byte   PEND
+@ 004   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_4:
+        .byte           N17   , Gs3 , v064
+        .byte   W02
+        .byte           N15   , Cs4
+        .byte   W02
+        .byte           N13   , Fs4
+        .byte   W14
+        .byte           N17   , Bn4
+        .byte   W18
+        .byte                   Bn4
+        .byte   W18
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte           N11   , Gs4
+        .byte   W12
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte                   Gs4
+        .byte   W06
+        .byte   PEND
+@ 005   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_5:
+        .byte           N17   , Cs4 , v064
+        .byte   W02
+        .byte           N15   , Fs4
+        .byte   W16
+        .byte           N17   , Gs4
+        .byte   W18
+        .byte                   Gs4
+        .byte   W18
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte           N11   , Gs4
+        .byte   W12
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte                   Ds5
+        .byte   W06
+        .byte   PEND
+@ 006   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_6:
+        .byte           N11   , An3 , v064
+        .byte           N11   , Ds4
+        .byte   W12
+        .byte           N05   , En4
+        .byte   W06
+        .byte           N11   , Bn3
+        .byte   W12
+        .byte           N64   , Fs3 , v064 , gtp1
+        .byte   W12
+        .byte           N11   , Gs3
+        .byte   W12
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte           N11   , Gs4
+        .byte   W12
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte                   Gs4
+        .byte   W06
+        .byte   PEND
+@ 007   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_7:
+        .byte           N52   , Gs3 , v064 , gtp1
+        .byte   W01
+        .byte           N52   , Bn3
+        .byte   W02
+        .byte           N48   , Ds4 , v064 , gtp2
+        .byte   W48
+        .byte   W03
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte           N11   , Gs4
+        .byte   W12
+        .byte           N05   , Ds5
+        .byte   W06
+        .byte                   Cs5
+        .byte   W06
+        .byte                   Ds5
+        .byte   W06
+        .byte   PEND
+@ 008   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_4
+@ 009   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_1
+@ 010   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_2
+@ 011   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_3
+@ 012   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_4
+@ 013   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_5
+@ 014   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_6
+@ 015   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_7
+@ 016   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_16:
+        .byte           N11   , An4 , v080
+        .byte   W18
+        .byte                   An4
+        .byte   W18
+        .byte                   An4
+        .byte   W18
+        .byte           N05
+        .byte   W06
+        .byte                   An5
+        .byte   W06
+        .byte                   An4
+        .byte   W06
+        .byte                   Cn5
+        .byte   W06
+        .byte                   An4
+        .byte   W06
+        .byte                   Cn5
+        .byte   W06
+        .byte                   An4
+        .byte   W06
+        .byte   PEND
+@ 017   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_17:
+        .byte           N11   , Bn3 , v080
+        .byte           N11   , Dn4
+        .byte           N11   , An4
+        .byte   W18
+        .byte                   Bn3
+        .byte           N11   , Dn4
+        .byte           N11   , An4
+        .byte   W18
+        .byte                   Bn3
+        .byte           N11   , Dn4
+        .byte           N11   , An4
+        .byte   W18
+        .byte           N05   , Bn3
+        .byte           N05   , Dn4
+        .byte           N05   , An4
+        .byte   W06
+        .byte                   En5
+        .byte   W06
+        .byte                   An4
+        .byte   W06
+        .byte                   Cn5
+        .byte   W06
+        .byte                   An4
+        .byte   W06
+        .byte                   Cn5
+        .byte   W06
+        .byte                   An4
+        .byte   W06
+        .byte   PEND
+@ 018   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_18:
+        .byte           N28   , Fn5 , v080 , gtp1
+        .byte   W30
+        .byte           N05   , En5
+        .byte   W06
+        .byte                   Fn5
+        .byte   W06
+        .byte                   Gn5
+        .byte   W06
+        .byte           N17   , Fn5
+        .byte   W18
+        .byte                   Dn5
+        .byte   W18
+        .byte           N11   , Fn5
+        .byte   W12
+        .byte   PEND
+@ 019   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_19:
+        .byte           N28   , En5 , v080 , gtp1
+        .byte   W30
+        .byte           N05
+        .byte   W06
+        .byte                   Fn5
+        .byte   W06
+        .byte                   En5
+        .byte   W06
+        .byte           N17   , Dn5
+        .byte   W18
+        .byte                   Cn5
+        .byte   W18
+        .byte           N11   , En5
+        .byte   W12
+        .byte   PEND
+@ 020   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_20:
+        .byte           N28   , Dn5 , v080 , gtp1
+        .byte   W30
+        .byte           N05   , Cn5
+        .byte   W06
+        .byte                   Bn4
+        .byte   W06
+        .byte                   Cn5
+        .byte   W06
+        .byte           N44   , Dn5 , v080 , gtp3
+        .byte   W48
+        .byte   PEND
+@ 021   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_21:
+        .byte           N28   , Dn5 , v080 , gtp1
+        .byte   W30
+        .byte           N05   , As4
+        .byte   W06
+        .byte                   Dn5
+        .byte   W06
+        .byte                   As4
+        .byte   W06
+        .byte           N17   , Cn5
+        .byte   W18
+        .byte                   En5
+        .byte   W18
+        .byte           N11   , Cn5
+        .byte   W12
+        .byte   PEND
+@ 022   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_22:
+        .byte           N04   , Cn4 , v080
+        .byte   W04
+        .byte           N19   , Dn4
+        .byte   W24
+        .byte   W02
+        .byte           N05   , En4
+        .byte   W06
+        .byte                   Fn4
+        .byte   W06
+        .byte                   Gn4
+        .byte   W06
+        .byte           N17   , Fn3
+        .byte           N17   , Dn4
+        .byte           N17   , Fn4
+        .byte   W18
+        .byte                   Dn3
+        .byte           N17   , An3
+        .byte           N17   , Dn4
+        .byte   W18
+        .byte           N11   , An3
+        .byte           N11   , Fn4
+        .byte           N11   , An4
+        .byte   W12
+        .byte   PEND
+@ 023   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_23:
+        .byte           N23   , Gn3 , v080
+        .byte           N23   , Cn4
+        .byte           N28   , En4 , v080 , gtp1
+        .byte   W30
+        .byte           N05
+        .byte   W06
+        .byte                   Fn4
+        .byte   W06
+        .byte                   En4
+        .byte   W06
+        .byte           N17   , Dn3
+        .byte           N17   , Gn3
+        .byte           N17   , Dn4
+        .byte   W18
+        .byte                   Cn3
+        .byte           N17   , Gn3
+        .byte           N17   , Cn4
+        .byte   W18
+        .byte           N11   , Gn3
+        .byte           N11   , Cn4
+        .byte           N11   , Gn4
+        .byte   W12
+        .byte   PEND
+@ 024   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_24:
+        .byte           N23   , Dn3 , v080
+        .byte           N23   , Gn3
+        .byte           N23   , Bn3
+        .byte           N28   , Dn4 , v080 , gtp1
+        .byte   W30
+        .byte           N05   , Cn4
+        .byte   W06
+        .byte                   Bn3
+        .byte   W06
+        .byte                   Cn4
+        .byte   W06
+        .byte           N17   , Dn4
+        .byte   W18
+        .byte           N02   , Bn3
+        .byte   W03
+        .byte                   Cn4
+        .byte   W03
+        .byte           N05   , Bn3
+        .byte   W06
+        .byte           N11   , Gn3
+        .byte   W18
+        .byte   PEND
+@ 025   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_25:
+        .byte           N28   , Dn4 , v080 , gtp1
+        .byte           N23   , As4
+        .byte           N23   , Dn5
+        .byte   W30
+        .byte           N05   , As3
+        .byte   W06
+        .byte                   Dn4
+        .byte   W06
+        .byte                   As3
+        .byte   W06
+        .byte           N17   , Cn3
+        .byte           N17   , Gn3
+        .byte           N17   , Cn4
+        .byte   W18
+        .byte                   En3
+        .byte           N17   , Cn4
+        .byte           N17   , En4
+        .byte   W18
+        .byte           N11   , Cn3
+        .byte           N11   , Gn3
+        .byte           N11   , Cn4
+        .byte   W12
+        .byte   PEND
+@ 026   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_26:
+        .byte           N23   , Dn3 , v080
+        .byte           N28   , As3 , v080 , gtp1
+        .byte   W30
+        .byte           N05
+        .byte   W06
+        .byte                   Cn4
+        .byte   W06
+        .byte                   Dn4
+        .byte   W06
+        .byte           N17   , En3
+        .byte           N17   , Cn4
+        .byte   W18
+        .byte                   En3
+        .byte           N17   , Gn3
+        .byte   W18
+        .byte           N11
+        .byte           N11   , Cn4
+        .byte   W12
+        .byte   PEND
+@ 027   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_27:
+        .byte           N18   , Dn3 , v080
+        .byte           N28   , Gn3 , v080 , gtp1
+        .byte                   An3
+        .byte   W30
+        .byte           N05   , Dn3
+        .byte   W06
+        .byte                   Gn3
+        .byte   W06
+        .byte                   An3
+        .byte   W06
+        .byte           N18   , Fn3
+        .byte   W24
+        .byte           N05   , En3
+        .byte   W06
+        .byte                   Fn3
+        .byte   W06
+        .byte                   Gn3
+        .byte   W06
+        .byte                   An3
+        .byte   W06
+        .byte   PEND
+@ 028   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_28:
+        .byte           N23   , Fn3 , v080
+        .byte   W01
+        .byte           N28   , As3
+        .byte   W28
+        .byte   W01
+        .byte           N05   , Gn3
+        .byte   W06
+        .byte                   As3
+        .byte   W06
+        .byte                   Dn4
+        .byte   W06
+        .byte           N17   , Cn4
+        .byte   W18
+        .byte                   En4
+        .byte   W18
+        .byte           N11   , Cn4
+        .byte   W12
+        .byte   PEND
+@ 029   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_29:
+        .byte           N01   , Dn4 , v080
+        .byte           N48
+        .byte   W30
+        .byte           N05   , Dn3 , v071
+        .byte   W06
+        .byte                   Fn3 , v069
+        .byte   W06
+        .byte                   Dn3 , v067
+        .byte   W06
+        .byte           N17   , Dn3 , v065
+        .byte           N17   , An3
+        .byte           N36   , Dn4
+        .byte   W18
+        .byte           N17   , Dn3 , v059
+        .byte           N17   , Gn3
+        .byte           N17   , Cn4
+        .byte   W18
+        .byte           N11   , Dn3 , v053
+        .byte           N11   , An3
+        .byte           N11   , Dn4
+        .byte   W12
+        .byte   PEND
+@ 030   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_30:
+        .byte           N11   , An5 , v049
+        .byte   W12
+        .byte           N05   , As5
+        .byte   W06
+        .byte           N11   , An5
+        .byte   W12
+        .byte                   Fn5
+        .byte   W12
+        .byte                   Gn5
+        .byte   W12
+        .byte                   En5
+        .byte   W12
+        .byte                   Fn5
+        .byte   W12
+        .byte           N05   , Cn5
+        .byte   W06
+        .byte           N11   , En5
+        .byte   W12
+        .byte   PEND
+@ 031   ----------------------------------------
+mus_pkmn_slp_taupe_hollow_piano_0_31:
+        .byte           N11   , An5 , v049
+        .byte   W12
+        .byte           N05   , As5
+        .byte   W06
+        .byte           N11   , An5
+        .byte   W12
+        .byte                   Fn5
+        .byte   W12
+        .byte                   Gn5
+        .byte   W12
+        .byte                   En5
+        .byte   W12
+        .byte                   Fn5
+        .byte   W12
+        .byte           N05   , Cn6
+        .byte   W06
+        .byte           N11   , An5
+        .byte   W12
+        .byte   PEND
+@ 032   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_4
+@ 033   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_1
+@ 034   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_2
+@ 035   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_3
+@ 036   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_4
+@ 037   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_5
+@ 038   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_6
+@ 039   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_7
+@ 040   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_4
+@ 041   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_1
+@ 042   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_2
+@ 043   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_3
+@ 044   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_4
+@ 045   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_5
+@ 046   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_6
+@ 047   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_7
+@ 048   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_16
+@ 049   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_17
+@ 050   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_18
+@ 051   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_19
+@ 052   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_20
+@ 053   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_21
+@ 054   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_22
+@ 055   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_23
+@ 056   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_24
+@ 057   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_25
+@ 058   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_26
+@ 059   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_27
+@ 060   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_28
+@ 061   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_29
+@ 062   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_30
+@ 063   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_31
+@ 064   ----------------------------------------
+        .byte   GOTO
+         .word  mus_pkmn_slp_taupe_hollow_piano_0_LOOP
+        .byte   FINE
+
+@****************** Track 1 (Midi-Chn.0) ******************@
 
 mus_pkmn_slp_taupe_hollow_piano_1:
-	.byte	KEYSH , mus_pkmn_slp_taupe_hollow_piano_key+0
+        .byte   KEYSH , mus_pkmn_slp_taupe_hollow_piano_key+0
 @ 000   ----------------------------------------
-	.byte	TEMPO , 80*mus_pkmn_slp_taupe_hollow_piano_tbs/2
-	.byte		VOICE , 24
-	.byte		VOL   , 99*mus_pkmn_slp_taupe_hollow_piano_mvl/mxv
-	.byte		PAN   , c_v-1
-	.byte		N18   , Gs3 , v060
-	.byte		N18   , Cs4
-	.byte		N18   , Fs4
-	.byte	W18
-	.byte		N18   , Bn4
-	.byte	W18
-	.byte		N18
-	.byte	W18
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N18   , Gs4
-	.byte	W12
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N06   , Gs4
-	.byte	W06
+mus_pkmn_slp_taupe_hollow_piano_1_LOOP:
+        .byte           VOICE , 1
+        .byte           VOL   , 127
+        .byte           N92   , An2 , v064 , gtp3
+        .byte   W02
+        .byte           N92   , En3 , v064 , gtp1
+        .byte   W02
+        .byte           N90   , Fs3 , v064 , gtp1
+        .byte   W92
 @ 001   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_001:
-	.byte		N18   , Cs4 , v060
-	.byte		N18   , Fs4
-	.byte	W18
-	.byte		N18   , Cs4
-	.byte		N18   , Gs4
-	.byte	W18
-	.byte		N18   , Cs4
-	.byte		N18   , Gs4
-	.byte	W18
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N12   , Gs4
-	.byte	W12
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_1:
+        .byte           N92   , Cs3 , v064 , gtp3
+        .byte   W02
+        .byte           N92   , En3 , v064 , gtp1
+        .byte   W02
+        .byte           N90   , Gs3 , v064 , gtp1
+        .byte   W92
+        .byte   PEND
 @ 002   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_002:
-	.byte		N18   , Gs3 , v060
-	.byte		N18   , Cs4
-	.byte		N18   , Fs4
-	.byte	W18
-	.byte		N18   , Cs4
-	.byte		N18   , Fs4
-	.byte		N18   , Bn4
-	.byte	W18
-	.byte		N18   , Cs4
-	.byte		N18   , Fs4
-	.byte		N18   , Bn4
-	.byte	W18
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N12   , Gs4
-	.byte	W12
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N06   , Gs4
-	.byte	W06
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_2:
+        .byte           N92   , An2 , v064 , gtp3
+        .byte   W02
+        .byte           N92   , En3 , v064 , gtp1
+        .byte   W02
+        .byte           N90   , Fs3 , v064 , gtp1
+        .byte   W92
+        .byte   PEND
 @ 003   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_003:
-	.byte		N06   , Ds5 , v060
-	.byte	W06
-	.byte		N06   , En5
-	.byte	W06
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N12   , Bn4
-	.byte	W12
-	.byte		N12   , Fs4
-	.byte	W12
-	.byte		N12   , Gs4
-	.byte	W12
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N12   , Gs4
-	.byte	W12
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_3:
+        .byte           N44   , Ds3 , v064 , gtp3
+        .byte   W02
+        .byte           N44   , Gs3 , v064 , gtp1
+        .byte   W02
+        .byte           N42   , Bn3 , v064 , gtp1
+        .byte   W44
+        .byte           N44   , En3 , v064 , gtp3
+        .byte   W48
+        .byte   PEND
 @ 004   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_004:
-	.byte		N18   , Gs3 , v060
-	.byte		N18   , Cs4
-	.byte		N18   , Fs4
-	.byte	W18
-	.byte		N18   , Bn4
-	.byte	W18
-	.byte		N18   , Bn4
-	.byte	W18
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N12   , Gs4
-	.byte	W12
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N06   , Gs4
-	.byte	W06
-	.byte	PEND
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_2
 @ 005   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_005:
-	.byte		N18   , Cs4 , v060
-	.byte		N18   , Fs4
-	.byte	W18
-	.byte		N18   , Gs4
-	.byte	W18
-	.byte		N18   , Gs4
-	.byte	W18
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N12   , Gs4
-	.byte	W12
-	.byte		N02   , Gs4 @ cek
-	.byte		N02   , Ds5 @ cek
-	.byte	W06
-	.byte		N06   , Fs4
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N06   , En4
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_5:
+        .byte           N92   , Cs3 , v064 , gtp3
+        .byte   W02
+        .byte           N92   , En3 , v064 , gtp1
+        .byte   W02
+        .byte           N90   , Gs3 , v064 , gtp1
+        .byte   W72
+        .byte   W02
+        .byte           N05   , Gs4
+        .byte   W06
+        .byte                   Fs4
+        .byte   W06
+        .byte                   En4
+        .byte   W06
+        .byte   PEND
 @ 006   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_006:
-	.byte		N12   , An3 , v060
-	.byte		N12   , Ds4
-	.byte	W12
-	.byte		N06   , En4
-	.byte	W06
-	.byte		N12   , Bn3
-	.byte	W12
-	.byte		N60   , Fs3 
-	.byte	W12
-	.byte		N12   , Gs3
-	.byte	W12
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N12   , Gs4
-	.byte	W12
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N06   , Gs4
-	.byte	W06
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_6:
+        .byte           N92   , An2 , v064 , gtp3
+        .byte   W02
+        .byte           N92   , En3 , v064 , gtp1
+        .byte   W02
+        .byte           N24   , Fs3 , v064 , gtp2
+        .byte   W92
+        .byte   PEND
 @ 007   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_007:
-	.byte		N48   , Bn3 , v060
-	.byte		N48   , Cs4
-	.byte		N52   , Ds4 
-	.byte	W48
-	.byte		N06   , Bn3
-	.byte		N06   , Cs4
-	.byte	W06
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N12   , Gs4
-	.byte	W12
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_7:
+        .byte           N44   , Bn2 , v064 , gtp3
+        .byte   W02
+        .byte           N44   , Ds3 , v064 , gtp1
+        .byte   W44
+        .byte   W02
+        .byte           N44   , En3 , v064 , gtp3
+        .byte   W48
+        .byte   PEND
 @ 008   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_008:
-	.byte	TEMPO , 83*mus_pkmn_slp_taupe_hollow_piano_tbs/2
-	.byte		N18   , Gs3 , v060
-	.byte		N18   , Cs4
-	.byte		N18   , Fs4
-	.byte	W18
-	.byte		N18   , Bn4
-	.byte	W18
-	.byte		N18
-	.byte	W18
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N12   , Gs4
-	.byte	W12
-	.byte		N06   , Ds5
-	.byte	W06
-	.byte		N06   , Cs5
-	.byte	W06
-	.byte		N06   , Gs4
-	.byte	W06
-	.byte	PEND
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_2
 @ 009   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_1_001
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_1
 @ 010   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_1_002
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_2
 @ 011   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_1_003
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_3
 @ 012   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_1_004
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_2
 @ 013   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_1_005
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_5
 @ 014   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_1_006
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_6
 @ 015   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_1_007
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_7
 @ 016   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_016:
-	.byte		N18   , Dn3 , v060
-	.byte		N18   , Bn3
-	.byte		N18   , Dn4
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N18   , Dn3 , v064
-	.byte		N18   , Bn3
-	.byte		N18   , Dn4
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N18   , Dn3
-	.byte		N18   , Bn3
-	.byte		N18   , Dn4
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N18   , Dn3 , v068
-	.byte		N18   , Bn3
-	.byte		N18   , Dn4
-	.byte		N06   , An4
-	.byte	W06
-	.byte		N06   , An5
-	.byte	W06
-	.byte		N06   , An4
-	.byte	W06
-	.byte		N12   , Gs3
-	.byte		N12   , Cn4
-	.byte		N12   , Dn4
-	.byte		N06   , Cn5
-	.byte	W06
-	.byte		N06   , An4 , v072
-	.byte	W06
-	.byte		N12   , Gs3
-	.byte		N12   , Cn4
-	.byte		N12   , Dn4
-	.byte		N06   , Cn5
-	.byte	W06
-	.byte		N06   , An4
-	.byte	W06
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_16:
+        .byte           N11   , Dn3 , v080
+        .byte           N11   , Bn3
+        .byte           N11   , Dn4
+        .byte   W18
+        .byte                   Dn3
+        .byte           N11   , Bn3
+        .byte           N11   , Dn4
+        .byte   W18
+        .byte                   Dn3
+        .byte           N11   , Bn3
+        .byte           N11   , Dn4
+        .byte   W18
+        .byte           N17   , Dn3
+        .byte           N17   , Bn3
+        .byte           N17   , Dn4
+        .byte   W18
+        .byte           N11   , Gn3
+        .byte           N11   , Cn4
+        .byte           N11   , Dn4
+        .byte   W12
+        .byte                   Gn3
+        .byte           N11   , Cn4
+        .byte           N11   , Dn4
+        .byte   W12
+        .byte   PEND
 @ 017   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_017:
-	.byte		N18   , Bn3 , v072
-	.byte		N18   , Dn4
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N18   , Bn3 , v076
-	.byte		N18   , Dn4
-	.byte		N02   , Bn4 
-	.byte	W02
-	.byte		N02   , An4
-	.byte	W03
-	.byte		N02   , Gs4
-	.byte	W04
-	.byte		N08   , An4 
-	.byte	W09
-	.byte		N18   , Bn3
-	.byte		N18   , Dn4
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N18   , Dn4 , v080
-	.byte		N06   , An4
-	.byte	W06
-	.byte		N06   , En5
-	.byte	W06
-	.byte		N06   , An4
-	.byte	W06
-	.byte		N06   , Cn5
-	.byte	W06
-	.byte		N06   , An4
-	.byte	W06
-	.byte		N06   , Cn5
-	.byte	W06
-	.byte		N06   , An4
-@	.byte	W96
-	.byte	W06
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_17:
+        .byte   W06
+        .byte           N05   , Bn2 , v080
+        .byte   W06
+        .byte                   En3
+        .byte   W06
+        .byte                   An3
+        .byte   W12
+        .byte                   Bn2
+        .byte   W06
+        .byte                   En3
+        .byte   W06
+        .byte                   An3
+        .byte   W12
+        .byte                   Bn2
+        .byte   W06
+        .byte                   En3
+        .byte   W06
+        .byte                   An3
+        .byte   W06
+        .byte           N11   , Dn3
+        .byte           N11   , Gn3
+        .byte           N11   , Cn4
+        .byte           N11   , Dn4
+        .byte   W12
+        .byte                   Dn3
+        .byte           N11   , Gn3
+        .byte           N11   , Cn4
+        .byte           N11   , Dn4
+        .byte   W12
+        .byte   PEND
 @ 018   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_018:
-	.byte		N30   , Fn4 , v080
-	.byte	W30
-	.byte		N06   , En4
-	.byte	W06
-	.byte		N06   , Fn4
-	.byte	W06
-	.byte		N06   , Gn4
-	.byte	W06
-	.byte		N18   , Fn4
-	.byte	W36
-	.byte		N12   , Fn4
-@	.byte	W96
-	.byte	W12
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_18:
+        .byte           N05   , Dn2 , v080
+        .byte   W06
+        .byte                   Fn2
+        .byte   W06
+        .byte                   An2
+        .byte   W06
+        .byte           N11   , Dn3
+        .byte   W12
+        .byte           N05   , Fn2
+        .byte   W06
+        .byte                   Dn2
+        .byte   W06
+        .byte                   An1
+        .byte   W06
+        .byte                   Fn1
+        .byte   W06
+        .byte                   An1
+        .byte   W06
+        .byte                   Dn2
+        .byte   W06
+        .byte                   Fn2
+        .byte   W06
+        .byte                   An2
+        .byte   W06
+        .byte                   Fn2
+        .byte   W06
+        .byte                   Dn2
+        .byte   W06
+        .byte                   An1
+        .byte   W06
+        .byte   PEND
 @ 019   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_019:
-	.byte		N12   , En4 , v080
-	.byte	W24
-	.byte		N06   , En4
-	.byte	W06
-	.byte		N06   , En4
-	.byte	W06
-	.byte		N06   , Fn4
-	.byte	W06
-	.byte		N06   , En4
-	.byte	W06
-	.byte		N18   , Dn4
-	.byte	W18
-	.byte		N18   , Cn4
-@	.byte	W96
-	.byte	W12
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_19:
+        .byte           N05   , Cn2 , v080
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte           N11   , Cn3
+        .byte   W12
+        .byte           N05   , En2
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte                   Gn1
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   Cn3
+        .byte   W06
+        .byte                   En3
+        .byte   W06
+        .byte                   Cn3
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte   PEND
 @ 020   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_020:
-	.byte		N30   , Dn4 , v080
-	.byte	W30
-	.byte		N06   , Cn4
-	.byte	W06
-	.byte		N06   , Bn3
-	.byte	W06
-	.byte		N06   , Cn4
-	.byte	W06
-	.byte		N48   , Dn4
-	.byte	W48
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_20:
+        .byte           N05   , Dn2 , v080
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   An2
+        .byte   W06
+        .byte           N11   , Dn3
+        .byte   W12
+        .byte           N05   , Gn2
+        .byte   W06
+        .byte                   Dn2
+        .byte   W06
+        .byte                   Bn1
+        .byte   W06
+        .byte                   Dn2
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   Bn2
+        .byte   W06
+        .byte                   Dn3
+        .byte   W06
+        .byte                   En3
+        .byte   W06
+        .byte                   Dn3
+        .byte   W06
+        .byte                   Fn3
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte   PEND
 @ 021   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_021:
-	.byte		N28   , Dn4 , v080
-	.byte	W30
-	.byte		N06   , As3
-	.byte	W06
-	.byte		N06   , Dn4
-	.byte	W06
-	.byte		N06   , As3
-	.byte	W06
-	.byte		N18   , Cn4
-	.byte	W18
-	.byte		N18   , En4
-	.byte	W18
-	.byte		N12   , Cn4
-	.byte	W12
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_21:
+        .byte           N05   , As1 , v080
+        .byte   W06
+        .byte                   Dn2
+        .byte   W06
+        .byte                   Fn2
+        .byte   W06
+        .byte           N11   , As2
+        .byte   W12
+        .byte           N05   , Dn2
+        .byte   W06
+        .byte                   As1
+        .byte   W06
+        .byte                   Gn1
+        .byte   W06
+        .byte                   Cn1
+        .byte   W06
+        .byte                   Gn1
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte                   Gn1
+        .byte   W06
+        .byte   PEND
 @ 022   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_022:
-	.byte		N24   , An3 , v080
-	.byte	W01
-	.byte		N24   , Dn4
-	.byte	W02
-	.byte		N24   , Fn4 
-	.byte	W24
-	.byte	W03
-	.byte		N06   , En4
-	.byte	W06
-	.byte		N06   , Fn4
-	.byte	W06
-	.byte		N06   , Gn4
-	.byte	W06
-	.byte		N18   , Dn4
-	.byte		N18   , Fn4
-	.byte	W18
-	.byte		N18   , An3
-	.byte		N18   , Dn4
-	.byte	W18
-	.byte		N12   , Fn4
-	.byte		N12   , An4
-	.byte	W12
-	.byte	PEND
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_18
 @ 023   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_023:
-	.byte		N24   , Gn3 , v080
-	.byte	W01
-	.byte		N24   , Cn4
-	.byte	W02
-	.byte		N24   , En4 
-	.byte	W24
-	.byte	W03
-	.byte		N06   , En4
-	.byte	W06
-	.byte		N06   , Fn4
-	.byte	W06
-	.byte		N06   , En4
-	.byte	W06
-	.byte		N18   , Dn4
-	.byte	W18
-	.byte		N18   , Gn3
-	.byte		N18   , Cn4
-	.byte	W18
-	.byte		N12   , En4
-	.byte		N12   , Gn4
-	.byte	W12
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_23:
+        .byte           N05   , Cn2 , v080
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte           N11   , Cn3
+        .byte   W12
+        .byte           N05   , En2
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte                   Gn1
+        .byte   W06
+        .byte                   En1
+        .byte   W06
+        .byte                   Gn1
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte                   Gn1
+        .byte   W06
+        .byte   PEND
 @ 024   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_024:
-	.byte		N24   , Gn3 , v080
-	.byte	W01
-	.byte		N24   , Bn3
-	.byte	W02
-	.byte		N24   , Dn4 
-	.byte	W24
-	.byte	W03
-	.byte		N06   , Cn4
-	.byte	W06
-	.byte		N06   , Bn3
-	.byte	W06
-	.byte		N06   , Cn4
-	.byte	W06
-	.byte		N24   , Dn4
-	.byte	W24
-	.byte		N06   , As4
-	.byte	W06
-	.byte		N06   , Gn4
-	.byte	W06
-	.byte		N12   , Dn4
-	.byte	W12
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_24:
+        .byte           N05   , Bn1 , v080
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   An2
+        .byte   W06
+        .byte           N11   , Bn2
+        .byte   W12
+        .byte           N05   , Gn2
+        .byte   W06
+        .byte                   Dn2
+        .byte   W06
+        .byte                   Bn1
+        .byte   W06
+        .byte                   Dn2
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   Bn2
+        .byte   W06
+        .byte                   Dn3
+        .byte   W06
+        .byte                   En3
+        .byte   W06
+        .byte                   Dn3
+        .byte   W06
+        .byte                   Fn3
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte   PEND
 @ 025   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_025:
-	.byte		N24   , As3 , v080
-	.byte		N30   , Dn4
-	.byte	W30
-	.byte		N06   , As3
-	.byte	W06
-	.byte		N06   , Dn4
-	.byte	W06
-	.byte		N06   , As3
-	.byte	W06
-	.byte		N18   , An3
-	.byte		N18   , Cn4
-	.byte	W18
-	.byte		N18
-	.byte		N18   , En4
-	.byte	W18
-	.byte		N12   , An3
-	.byte		N12   , Cn4
-	.byte	W12
-	.byte	PEND
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_21
 @ 026   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_026:
-	.byte		N24   , Fn3 , v080
-	.byte		N30   , As3
-	.byte	W30
-	.byte		N06   , As3
-	.byte	W06
-	.byte		N06   , Cn4
-	.byte	W06
-	.byte		N06   , Dn4
-	.byte	W06
-	.byte		N18   , Cn4
-	.byte	W18
-	.byte		N18   , Gn3
-	.byte	W18
-	.byte		N12   , Cn4
-	.byte	W12
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_26:
+        .byte           N05   , Fn1 , v080
+        .byte   W06
+        .byte                   As1
+        .byte   W06
+        .byte                   Dn2
+        .byte   W06
+        .byte                   Fn2
+        .byte   W06
+        .byte                   As2
+        .byte   W06
+        .byte                   Fn2
+        .byte   W06
+        .byte                   Dn2
+        .byte   W06
+        .byte                   As1
+        .byte   W06
+        .byte                   Gn1
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   Cn3
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte   PEND
 @ 027   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_027:
-	.byte		N24   , An3 , v080
-	.byte	W30
-	.byte		N06   , Dn3
-	.byte	W06
-	.byte		N06   , Gn3
-	.byte	W06
-	.byte		N06   , An3
-	.byte	W06
-	.byte		N24   , Fn3
-	.byte	W24
-	.byte		N06   , En4
-	.byte	W06
-	.byte		N06   , Fn4
-	.byte	W06
-	.byte		N06   , Gn4
-	.byte	W06
-	.byte		N06   , An4
-	.byte	W06
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_27:
+        .byte           N05   , Dn2 , v080
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   An2
+        .byte   W06
+        .byte           N11   , Dn3
+        .byte   W30
+        .byte           N05   , Fn2
+        .byte   W06
+        .byte                   An2
+        .byte   W06
+        .byte                   Dn3
+        .byte   W06
+        .byte                   Fn3
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Fn2
+        .byte   W06
+        .byte                   Gn2
+        .byte   W06
+        .byte                   An2
+        .byte   W06
+        .byte   PEND
 @ 028   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_028:
-	.byte		N24   , Dn4 , v080
-	.byte	W01
-	.byte		N24   , Fn4
-	.byte	W02
-	.byte		N24   , As4 
-	.byte	W24
-	.byte	W03
-	.byte		N06   , Gn4
-	.byte	W06
-	.byte		N06   , As4
-	.byte	W06
-	.byte		N06   , Dn5
-	.byte	W06
-	.byte		N18   , En4
-	.byte		N18   , An4
-	.byte		N18   , Cn5
-	.byte	W18
-	.byte		N18   , En5
-	.byte	W18
-	.byte		N12   , Cn5
-	.byte	W12
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_28:
+        .byte           N05   , As1 , v080
+        .byte   W06
+        .byte                   Fn2
+        .byte   W06
+        .byte                   As2
+        .byte   W06
+        .byte                   Dn3
+        .byte   W30
+        .byte                   An1
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   An2
+        .byte   W06
+        .byte                   Cn3
+        .byte   W06
+        .byte                   An2
+        .byte   W06
+        .byte                   En2
+        .byte   W06
+        .byte                   Cn2
+        .byte   W06
+        .byte   PEND
 @ 029   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_029:
-	.byte		N24   , Fn4 , v080
-	.byte	W02
-	.byte		N24   , As4
-	.byte	W02
-	.byte		N14   , Dn5
-	.byte	W24
-	.byte	W02
-	.byte		N06   , Dn4
-	.byte	W06
-	.byte		N06   , Fn4
-	.byte	W06
-	.byte		N06   , Dn4
-	.byte	W06
-	.byte		N18
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N18   , Dn4
-	.byte		N18   , Gn4
-	.byte	W18
-	.byte		N12   , Dn4
-	.byte		N12   , An4
-	.byte	W12
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_29:
+        .byte           N05   , Dn2 , v080
+        .byte   W06
+        .byte                   Fn2 , v079
+        .byte   W06
+        .byte                   An2 , v077
+        .byte   W06
+        .byte                   Dn3 , v075
+        .byte   W30
+        .byte           N17   , Dn1 , v065
+        .byte   W18
+        .byte                   Cn1 , v059
+        .byte   W18
+        .byte           N11   , Dn1 , v053
+        .byte   W12
+        .byte   PEND
 @ 030   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_1_030:
-	.byte	W12
-	.byte		N06   , As4 , v080
-	.byte	W18
-	.byte		N12   , Fn4
-	.byte	W12
-	.byte		N12   , Gn4
-	.byte	W12
-	.byte		N12   , En4
-	.byte	W12
-	.byte		N12   , Fn4
-	.byte	W12
-	.byte		N06   , Cn4
-	.byte	W06
-	.byte		N12   , En4
-	.byte	W12
-	.byte	PEND
+mus_pkmn_slp_taupe_hollow_piano_1_30:
+        .byte           N17   , An4 , v049
+        .byte           N92   , Dn4 , v049 , gtp3
+        .byte   W18
+        .byte           N17   , An4
+        .byte   W18
+        .byte                   An4
+        .byte   W18
+        .byte           N11
+        .byte   W12
+        .byte                   An4
+        .byte   W12
+        .byte                   An4
+        .byte   W12
+        .byte           N05
+        .byte   W06
+        .byte   PEND
 @ 031   ----------------------------------------
-	.byte	W12
-	.byte		N06   , As4
-	.byte	W18
-	.byte		N12   , Fn4
-	.byte	W12
-	.byte		N12   , Gn4
-	.byte	W12
-	.byte		N12   , En4
-	.byte	W12
-	.byte		N12   , Fn4
-	.byte	W12
-	.byte		N06   , Cn5
-	.byte	W06
-	.byte		N12   , An4
-	.byte	W12
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_30
 @ 032   ----------------------------------------
-	.byte	GOTO
-	.word	mus_pkmn_slp_taupe_hollow_piano_1
-	.byte	FINE
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_2
+@ 033   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_1
+@ 034   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_2
+@ 035   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_3
+@ 036   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_2
+@ 037   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_5
+@ 038   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_6
+@ 039   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_7
+@ 040   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_2
+@ 041   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_1
+@ 042   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_2
+@ 043   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_3
+@ 044   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_2
+@ 045   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_5
+@ 046   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_6
+@ 047   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_7
+@ 048   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_16
+@ 049   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_17
+@ 050   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_18
+@ 051   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_19
+@ 052   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_20
+@ 053   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_21
+@ 054   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_18
+@ 055   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_23
+@ 056   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_24
+@ 057   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_21
+@ 058   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_26
+@ 059   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_27
+@ 060   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_28
+@ 061   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_29
+@ 062   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_30
+@ 063   ----------------------------------------
+        .byte   PATT
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_30
+@ 064   ----------------------------------------
+        .byte   GOTO
+         .word  mus_pkmn_slp_taupe_hollow_piano_1_LOOP
+        .byte   FINE
 
-@**************** Track 2 (Midi-Chn.1) ****************@
 
-mus_pkmn_slp_taupe_hollow_piano_2:
-	.byte	KEYSH , mus_pkmn_slp_taupe_hollow_piano_key+0
-@ 000   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_000:
-	.byte		VOICE , 24
-	.byte		VOL   , 99*mus_pkmn_slp_taupe_hollow_piano_mvl/mxv
-	.byte		N96   , An2 , v060
-	.byte		N96   , En3
-	.byte		N96   , Fs3
-	.byte	W96
-	.byte	PEND
-@ 001   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_001:
-	.byte		N96   , Cs3 , v060
-	.byte		N96   , En3
-	.byte		N96   , Gs3
-	.byte	W96
-	.byte	PEND
-@ 002   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_000
-@ 003   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_003:
-	.byte		N48   , Ds3 , v060
-	.byte		N96   , Gs3
-	.byte		N96   , Cs4
-	.byte	W48
-	.byte		N48   , En3
-	.byte	W48
-	.byte	PEND
-@ 004   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_000
-@ 005   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_001
-@ 006   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_006:
-	.byte		N96   , An2 , v060
-	.byte		N96   , En3
-	.byte		N36   , Fs3
-	.byte	W96
-	.byte	PEND
-@ 007   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_007:
-	.byte		N96   , Cs3 , v060
-	.byte		N48   , Ds3
-	.byte		N96   , Gs3
-	.byte	W48
-	.byte		N48   , En3
-	.byte	W48
-	.byte	PEND
-@ 008   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_000
-@ 009   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_001
-@ 010   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_000
-@ 011   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_003
-@ 012   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_000
-@ 013   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_001
-@ 014   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_006
-@ 015   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_007
-@ 016   ----------------------------------------
-	.byte	W96
-@ 017   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_017:
-	.byte	W06
-	.byte		N06   , Bn2 , v072
-	.byte	W06
-	.byte		N06   , En3
-	.byte	W06
-	.byte		N06   , An3 , v076
-	.byte	W12
-	.byte		N06   , Bn2
-	.byte	W06
-	.byte		N06   , En3
-	.byte	W06
-	.byte		N06   , An3
-	.byte	W12
-	.byte		N06   , Bn2 , v080
-	.byte	W06
-	.byte		N06   , En3
-	.byte	W06
-	.byte		N06   , An3
-	.byte	W06
-	.byte		N12   , Fs3
-	.byte		N12   , Cn4
-	.byte		N12   , Dn4
-	.byte	W12
-	.byte		N12   , Fs3
-	.byte		N12   , Cn4
-	.byte		N12   , Dn4
-	.byte	W12
-@	.byte	W96
-	.byte	PEND
-@ 018   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_018:
-	.byte		N96   , Dn4 , v080
-	.byte		N06   , Dn2 , v080
-	.byte	W06
-	.byte		N06   , Fn2
-	.byte	W06
-	.byte		N06   , An2
-	.byte	W06
-	.byte		N12   , Dn3
-	.byte	W12
-	.byte		N06   , Gn3
-	.byte	W06
-	.byte		N06   , Fn3
-	.byte	W06
-	.byte		N06   , En3
-	.byte	W06
-	.byte		N06   , Dn3
-	.byte	W12
-	.byte		N06   , An3
-	.byte	W06
-	.byte		N18   , Dn4
-	.byte	W12
-	.byte		N06   , An3
-	.byte	W06
-	.byte		N06   , Fn3
-	.byte	W06
-	.byte		N06   , Dn3
-	.byte	W06
-@	.byte	W96
-	.byte	PEND
-@ 019   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_019:
-	.byte		N96   , Dn4 , v080
-	.byte		N06   , An3 , v080
-	.byte	W06
-	.byte		N06   , Cn4
-	.byte	W06
-	.byte		N12   , En4
-	.byte	W06
-	.byte		N06   , An4
-	.byte	W06
-	.byte		N06   , An4
-	.byte	W06
-	.byte		N06   , As4
-	.byte	W06
-	.byte		N06   , Cn5
-	.byte	W06
-	.byte		N06   , En5
-	.byte	W06
-	.byte		N12   , Cn4
-	.byte	W12
-	.byte		N06   , Gn3
-	.byte	W06
-	.byte		N12   , En4
-	.byte	W12
-@	.byte	W96
-	.byte	PEND
-@ 020   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_020:
-	.byte		N96   , Dn4 , v080
-	.byte		N06   , Gn1 , v080
-	.byte	W06
-	.byte		N06   , Bn1
-	.byte	W06
-	.byte		N06   , Dn2
-	.byte	W06
-	.byte		N12   , Gn2
-	.byte	W12
-	.byte		N06   , An2
-	.byte	W06
-	.byte		N06   , Bn2
-	.byte	W06
-	.byte		N06   , An2
-	.byte	W06
-	.byte		N06   , Gn2
-	.byte	W06
-	.byte		N06   , Dn2
-	.byte	W06
-	.byte		N06   , Dn3
-	.byte	W06
-	.byte		N06   , An2
-	.byte	W06
-	.byte		N06   , En3
-	.byte	W06
-	.byte		N06   , An2
-	.byte	W06
-	.byte		N06   , Fn3
-	.byte	W06
-	.byte		N06   , An2
-	.byte	W06
-	.byte	PEND
-@ 021   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_021:
-	.byte		N06   , As1 , v080
-	.byte	W06
-	.byte		N06   , Fn2
-	.byte	W06
-	.byte		N06   , As2
-	.byte	W06
-	.byte		N12   , Dn3
-	.byte	W12
-	.byte		N06   , En3
-	.byte	W06
-	.byte		N06   , Fn3
-	.byte	W06
-	.byte		N06   , Dn3
-	.byte	W06
-	.byte		N06   , An1
-	.byte	W06
-	.byte		N06   , En2
-	.byte	W06
-	.byte		N06   , An2
-	.byte	W06
-	.byte		N12   , Cn3
-	.byte	W12
-	.byte		N06   , Fn3
-	.byte	W06
-	.byte		N06   , En3
-	.byte	W06
-	.byte		N06   , Cn3
-	.byte	W06
-	.byte	PEND
-@ 022   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_022:
-	.byte		N06   , Dn1 , v080
-	.byte	W06
-	.byte		N06   , An1
-	.byte	W06
-	.byte		N06   , Dn2
-	.byte	W06
-	.byte		N06   , En2
-	.byte	W06
-	.byte		N06   , Fn2
-	.byte	W06
-	.byte		N06   , An2
-	.byte	W06
-	.byte		N06   , Dn3
-	.byte	W06
-	.byte		N06   , En3
-	.byte	W06
-	.byte		N06   , Fn3
-	.byte	W06
-	.byte		N06   , En3
-	.byte	W06
-	.byte		N06   , Dn3
-	.byte	W06
-	.byte		N06   , An2
-	.byte	W06
-	.byte		N06   , Fn2
-	.byte	W06
-	.byte		N06   , En2
-	.byte	W06
-	.byte		N06   , Dn2
-	.byte	W06
-	.byte		N06   , An1
-	.byte	W06
-	.byte	PEND
-@ 023   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_023:
-	.byte		N06   , Cn1 , v080
-	.byte	W06
-	.byte		N06   , Gn1
-	.byte	W06
-	.byte		N06   , Cn2
-	.byte	W06
-	.byte		N06   , Dn2
-	.byte	W06
-	.byte		N06   , En2
-	.byte	W06
-	.byte		N06   , Gn2
-	.byte	W06
-	.byte		N06   , Cn3
-	.byte	W06
-	.byte		N06   , Dn3
-	.byte	W06
-	.byte		N06   , En3
-	.byte	W06
-	.byte		N06   , Dn3
-	.byte	W06
-	.byte		N06   , Cn3
-	.byte	W06
-	.byte		N06   , Gn2
-	.byte	W06
-	.byte		N06   , En2
-	.byte	W06
-	.byte		N06   , Dn2
-	.byte	W06
-	.byte		N06   , Cn2
-	.byte	W06
-	.byte		N06   , Dn2
-	.byte	W06
-	.byte	PEND
-@ 024   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_024:
-	.byte		N06   , Gn1 , v080
-	.byte	W06
-	.byte		N06   , Dn2
-	.byte	W06
-	.byte		N06   , Gn2
-	.byte	W06
-	.byte		N06   , An2
-	.byte	W06
-	.byte		N06   , Bn2
-	.byte	W06
-	.byte		N06   , Dn3
-	.byte	W06
-	.byte		N06   , Gn3
-	.byte	W06
-	.byte		N06   , An3
-	.byte	W06
-	.byte		N06   , Bn3
-	.byte	W06
-	.byte		N06   , An3
-	.byte	W06
-	.byte		N06   , Gn3
-	.byte	W06
-	.byte		N06   , Dn3
-	.byte	W06
-	.byte		N06   , Bn2
-	.byte	W06
-	.byte		N06   , An2
-	.byte	W06
-	.byte		N06   , Gn2
-	.byte	W06
-	.byte		N06   , Dn2
-	.byte	W06
-	.byte	PEND
-@ 025   ----------------------------------------
-	.byte	PATT
-	 .word	mus_pkmn_slp_taupe_hollow_piano_2_021
-@ 026   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_026:
-	.byte		N06   , As1 , v080
-	.byte	W06
-	.byte		N06   , Fn2
-	.byte	W06
-	.byte		N06   , As2
-	.byte	W06
-	.byte		N18   , Dn3
-	.byte	W18
-	.byte		N12   , As1
-	.byte	W12
-	.byte		N06   , Cn2
-	.byte	W06
-	.byte		N06   , Gn2
-	.byte	W06
-	.byte		N06   , Cn3
-	.byte	W06
-	.byte		N18   , En3
-	.byte	W18
-	.byte		N12   , En1
-	.byte	W12
-	.byte	PEND
-@ 027   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_027:
-	.byte		N06   , Dn1 , v080
-	.byte	W06
-	.byte		N06   , Dn2
-	.byte	W06
-	.byte		N06   , Gn2
-	.byte	W06
-	.byte		N48   , An2 
-	.byte	W54
-	.byte		N24   , Cn2
-	.byte		N24   , En2
-	.byte		N24   , Gn2
-	.byte	W24
-	.byte	PEND
-@ 028   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_028:
-	.byte		N06   , As1 , v080
-	.byte	W06
-	.byte		N06   , Fn2
-	.byte	W06
-	.byte		N06   , As2
-	.byte	W06
-	.byte		N18   , Dn3
-	.byte	W18
-	.byte		N12   , Gn1
-	.byte	W12
-	.byte		N12   , An1
-	.byte	W12
-	.byte		N12   , En2
-	.byte	W12
-	.byte		N12   , Cn3
-	.byte	W12
-	.byte		N12   , An1
-	.byte	W12
-	.byte	PEND
-@ 029   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_029:
-	.byte		N06   , As1 , v080
-	.byte	W06
-	.byte		N06   , Fn2
-	.byte	W06
-	.byte		N06   , As2
-	.byte	W06
-	.byte		N30   , Dn3
-	.byte	W30
-	.byte		N24   , As1
-	.byte	W24
-	.byte		N24   , As0
-	.byte	W24
-	.byte	PEND
-@ 030   ----------------------------------------
-mus_pkmn_slp_taupe_hollow_piano_2_030:
-	.byte		N90   , Dn4 , v080
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N12   , An4
-	.byte	W12
-	.byte		N12   , An4
-	.byte	W12
-	.byte		N12   , An4
-	.byte	W12
-	.byte		N06   , An4
-	.byte	W06
-	.byte	PEND
-@ 031   ----------------------------------------
-	.byte		N90   , Dn4 
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N18   , An4
-	.byte	W18
-	.byte		N12   , An4
-	.byte	W12
-	.byte		N12   , An4
-	.byte	W12
-	.byte		N06   , An4
-	.byte	W12
-	.byte		N06   , An4
-	.byte	W06
-@ 032   ----------------------------------------
-	.byte	GOTO
-	.word	mus_pkmn_slp_taupe_hollow_piano_2
-	.byte	FINE
+@********************** End of Song ***********************@
 
-@******************************************************@
-	.align	2
-
+        .align  2
 mus_pkmn_slp_taupe_hollow_piano:
-	.byte	2	@ NumTrks
-	.byte	0	@ NumBlks
-	.byte	mus_pkmn_slp_taupe_hollow_piano_pri	@ Priority
-	.byte	mus_pkmn_slp_taupe_hollow_piano_rev	@ Reverb.
+        .byte   2                       @ Num Tracks
+        .byte   0                       @ Unknown
+        .byte   mus_pkmn_slp_taupe_hollow_piano_pri @ Priority
+        .byte   mus_pkmn_slp_taupe_hollow_piano_rev @ Reverb
 
-	.word	mus_pkmn_slp_taupe_hollow_piano_grp
+        .word   mus_pkmn_slp_taupe_hollow_piano_grp
 
-	.word	mus_pkmn_slp_taupe_hollow_piano_1
-	.word	mus_pkmn_slp_taupe_hollow_piano_2
+        .word   mus_pkmn_slp_taupe_hollow_piano_0
+        .word   mus_pkmn_slp_taupe_hollow_piano_1
 
-	.end
+        .end

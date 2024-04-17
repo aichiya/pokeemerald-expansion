@@ -1997,6 +1997,9 @@ SECTIONS {
         sound/songs/mus_dbz_hikari_no_willpower.o(.rodata);
         sound/songs/mus_etc_coffin_dance_pmd.o(.rodata);
         sound/songs/mus_hololive_error.o(.rodata);
+        sound/songs/mus_ty_tunneling_troll.o(.rodata);
+        sound/songs/mus_pkmn_slp_cyan_beach_piano.o(.rodata);
+        sound/songs/mus_fgo_grand_battle_piano.o(.rodata);
     } =0
 
     lib_rodata :

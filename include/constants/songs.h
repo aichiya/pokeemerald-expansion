@@ -1343,8 +1343,11 @@
 #define MUS_DBZ_HIKARI_NO_WILLPOWER 1358
 #define MUS_ETC_COFFIN_DANCE 1359
 #define MUS_HOLOLIVE_ERROR 1360
+#define MUS_TY_TUNNELING_TROLL 1361
+#define MUS_PKMN_SLP_CYAN_BEACH_PIANO 1362
+#define MUS_FGO_GRAND_BATTLE_GB_STYLE 1363
 
-#define END_MUS 					MUS_HOLOLIVE_ERROR
+#define END_MUS 					MUS_FGO_GRAND_BATTLE_GB_STYLE
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

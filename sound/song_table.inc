@@ -1362,6 +1362,9 @@ gSongTable::
 	song mus_dbz_hikari_no_willpower, 0, 0
 	song mus_etc_coffin_dance_pmd, 0, 0
 	song mus_hololive_error, 0, 0
+	song mus_ty_tunneling_troll, 0, 0
+	song mus_pkmn_slp_cyan_beach_piano, 0, 0
+	song mus_fgo_grand_battle_piano, 0, 0
 
 	.align 2
 dummy_song_header:

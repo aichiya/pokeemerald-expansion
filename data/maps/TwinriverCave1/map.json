@@ -2,7 +2,7 @@
   "id": "MAP_TWINRIVER_CAVE1",
   "name": "TwinriverCave1",
   "layout": "LAYOUT_TWINRIVER_CAVE1",
-  "music": "MUS_GI_MOONLIKESMILE",
+  "music": "MUS_TY_TUNNELING_TROLL",
   "region_map_section": "MAPSEC_D9",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

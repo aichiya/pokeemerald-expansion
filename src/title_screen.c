@@ -608,7 +608,7 @@ void CB2_InitTitleScreen(void)
                                     | DISPCNT_OBJ_ON
                                     | DISPCNT_WIN0_ON
                                     | DISPCNT_OBJWIN_ON);
-        m4aSongNumStart(MUS_TH_SKYHIGH);
+        m4aSongNumStart(MUS_DCD_JTDORCHESTRA);
         gMain.state = 5;
         break;
     case 5:

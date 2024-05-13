@@ -2000,6 +2000,9 @@ SECTIONS {
         sound/songs/mus_ty_tunneling_troll.o(.rodata);
         sound/songs/mus_pkmn_slp_cyan_beach_piano.o(.rodata);
         sound/songs/mus_fgo_grand_battle_piano.o(.rodata);
+        sound/songs/mus_etc_stasiun_balapan_solo.o(.rodata);
+        sound/songs/mus_etc_ibu_pertiwi.o(.rodata);
+        sound/songs/mus_ygo_passionate_duelist.o(.rodata);
     } =0
 
     lib_rodata :

@@ -15,8 +15,7 @@ mus_dbz_first_prologue_0:
         .byte   KEYSH , mus_dbz_first_prologue_key+0
 @ 000   ----------------------------------------
         .byte   TEMPO , 118/2
-        .byte           VOICE , 61
-        .byte                   59
+        .byte           VOICE , 67 @ 59
         .byte           VOL   , 127
         .byte   W96
 @ 001   ----------------------------------------
@@ -175,7 +174,7 @@ mus_dbz_first_prologue_0_24:
 mus_dbz_first_prologue_1:
         .byte   KEYSH , mus_dbz_first_prologue_key+0
 @ 000   ----------------------------------------
-        .byte           VOICE , 59
+        .byte           VOICE , 64 @ 59
         .byte           VOL   , 95
         .byte   W96
 @ 001   ----------------------------------------
@@ -488,9 +487,9 @@ mus_dbz_first_prologue_3:
 mus_dbz_first_prologue_4:
         .byte   KEYSH , mus_dbz_first_prologue_key+0
 @ 000   ----------------------------------------
-        .byte           VOICE , 57
+        .byte           VOICE , 64 @ 57
         .byte           N05   , Fn2 , v064
-        .byte           VOICE , 59
+        .byte           VOICE , 64 @ 59
         .byte           VOL   , 105
         .byte   W96
 @ 001   ----------------------------------------

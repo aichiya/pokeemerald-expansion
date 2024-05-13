@@ -1365,6 +1365,9 @@ gSongTable::
 	song mus_ty_tunneling_troll, 0, 0
 	song mus_pkmn_slp_cyan_beach_piano, 0, 0
 	song mus_fgo_grand_battle_piano, 0, 0
+	song mus_etc_stasiun_balapan_solo, 0, 0
+	song mus_etc_ibu_pertiwi, 0, 0
+	song mus_ygo_passionate_duelist, 0, 0
 
 	.align 2
 dummy_song_header:

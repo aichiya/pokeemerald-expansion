@@ -1346,8 +1346,11 @@
 #define MUS_TY_TUNNELING_TROLL 1361
 #define MUS_PKMN_SLP_CYAN_BEACH_PIANO 1362
 #define MUS_FGO_GRAND_BATTLE_GB_STYLE 1363
+#define MUS_ETC_STASIUN_BALAPAN_SOLO 1364
+#define MUS_ETC_IBU_PERTIWI 1365
+#define MUS_YGO_PASSIONATE_DUELIST 1366
 
-#define END_MUS 					MUS_FGO_GRAND_BATTLE_GB_STYLE
+#define END_MUS 					MUS_YGO_PASSIONATE_DUELIST
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

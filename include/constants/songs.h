@@ -490,7 +490,7 @@
 #define MUS_RG_TRAINER_TOWER        556 // MUS_RG_T_TOWER
 #define MUS_RG_SLOW_PALLET          557 // MUS_RG_SLOWMASARA
 #define MUS_RG_TEACHY_TV_MENU       558 // MUS_RG_TVNOIZE
-#define END_MUS                     MUS_RG_TEACHY_TV_MENU
+
 
 #define PH_TRAP_BLEND               559
 #define PH_TRAP_HELD                560
@@ -543,6 +543,814 @@
 #define PH_NURSE_BLEND              607
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
+
+#define MUS_HG_INTRO                      610 // Opening Movie
+#define MUS_HG_TITLE                      611 // Title Screen
+#define MUS_HG_NEW_GAME                   612 // An Adventure Begins!
+#define MUS_HG_EVOLUTION                  613 // Evolution
+#define MUS_HG_EVOLUTION_NO_INTRO         614 // Evolution (No intro)
+#define MUS_HG_CYCLING                    615 // Bicycle
+#define MUS_HG_SURF                       616 // Surf
+#define MUS_HG_E_DENDOURIRI               617 // The Hall of Fame
+#define MUS_HG_CREDITS                    618 // Ending Theme
+#define MUS_HG_END                        619 // The End
+#define MUS_HG_NEW_BARK                   620 // New Bark Town
+#define MUS_HG_CHERRYGROVE                621 // Cherrygrove City
+#define MUS_HG_VIOLET                     622 // Violet City
+#define MUS_HG_AZALEA                     623 // Azalea Town
+#define MUS_HG_GOLDENROD                  624 // Goldenrod City
+#define MUS_HG_ECRUTEAK                   625 // Ecruteak City
+#define MUS_HG_CIANWOOD                   626 // Cianwood City
+#define MUS_HG_ROUTE29                    627 // Route 29
+#define MUS_HG_ROUTE30                    628 // Route 30
+#define MUS_HG_ROUTE34                    629 // Route 34
+#define MUS_HG_ROUTE38                    630 // Route 38
+#define MUS_HG_ROUTE42                    631 // Route 42
+#define MUS_HG_VERMILION                  632 // Vermilion City
+#define MUS_HG_PEWTER                     633 // Pewter City
+#define MUS_HG_CERULEAN                   634 // Cerulean City
+#define MUS_HG_LAVENDER                   635 // Lavender Town
+#define MUS_HG_CELADON                    636 // Celadon City
+#define MUS_HG_PALLET                     637 // Pallet Town
+#define MUS_HG_CINNABAR                   638 // Cinnabar Island
+#define MUS_HG_ROUTE1                     639 // Route 1
+#define MUS_HG_ROUTE3                     640 // Route 3
+#define MUS_HG_ROUTE11                    641 // Route 11
+#define MUS_HG_ROUTE24                    642 // Route 24
+#define MUS_HG_ROUTE26                    643 // Route 26
+#define MUS_HG_POKE_CENTER                644 // Pokémon Center
+#define MUS_HG_POKE_MART                  645 // Poké Mart
+#define MUS_HG_GYM                        646 // Pokémon Gym
+#define MUS_HG_ELM_LAB                    647 // Elm Pokémon Lab
+#define MUS_HG_OAK                        648 // Professor Oak
+#define MUS_HG_DANCE_THEATER              649 // Ecruteak Dance Theater
+#define MUS_HG_GAME_CORNER                650 // Goldenrod Game Corner
+#define MUS_HG_B_TOWER                    651 // Battle Tower (Johto)
+#define MUS_HG_B_TOWER_RECEPTION          652 // Battle Tower Reception Desk
+#define MUS_HG_SPROUT_TOWER               653 // Sprout Tower
+#define MUS_HG_UNION_CAVE                 654 // Union Cave
+#define MUS_HG_RUINS_OF_ALPH              655 // Ruins of Alph
+#define MUS_HG_NATIONAL_PARK              656 // National Park
+#define MUS_HG_BURNED_TOWER               657 // Burned Tower
+#define MUS_HG_BELL_TOWER                 658 // Bell Tower
+#define MUS_HG_LIGHTHOUSE                 659 // Olivine Lighthouse
+#define MUS_HG_TEAM_ROCKET_HQ             660 // Team Rocket HQ
+#define MUS_HG_ICE_PATH                   661 // Ice Path
+#define MUS_HG_DRAGONS_DEN                662 // Dragon's Den
+#define MUS_HG_ROCK_TUNNEL                663 // Rock Tunnel
+#define MUS_HG_VIRIDIAN_FOREST            664 // Viridian Forest
+#define MUS_HG_VICTORY_ROAD               665 // Victory Road
+#define MUS_HG_POKEMON_LEAGUE             666 // The Pokémon League
+#define MUS_HG_FOLLOW_ME_1                667 // Hurry Along
+#define MUS_HG_FOLLOW_ME_2                668 // Hurry Along 2
+#define MUS_HG_ENCOUNTER_RIVAL            669 // A Rival Appears!
+#define MUS_HG_RIVAL_EXIT                 670 // A Rival Appears! (Version 2)
+#define MUS_HG_BUG_CONTEST_PREP           671 // The Bug-Catching Contest Begins!
+#define MUS_HG_BUG_CATCHING_CONTEST       672 // The Bug-Catching Contest
+#define MUS_HG_RADIO_ROCKET               673 // Radio Transmission
+#define MUS_HG_ROCKET_TAKEOVER            674 // Radio Tower Occupied!
+#define MUS_HG_MAGNET_TRAIN               675 // Magnet Train
+#define MUS_HG_SS_AQUA                    676 // S.S. Aqua
+#define MUS_HG_MT_MOON_SQUARE             677 // Mt. Moon
+#define MUS_HG_RADIO_JINGLE               678 // Pokégear Radio: Pokémon Channel
+#define MUS_HG_RADIO_LULLABY              679 // Pokégear Radio: Pokémon Lullaby
+#define MUS_HG_RADIO_MARCH                680 // Pokégear Radio: Pokémon March
+#define MUS_HG_RADIO_UNOWN                681 // Pokégear Radio: Unown
+#define MUS_HG_RADIO_POKE_FLUTE           682 // Pokégear Radio: Poké Flute
+#define MUS_HG_RADIO_OAK                  683 // Pokégear Radio: Professor Oak's Pokémon Talk
+#define MUS_HG_RADIO_BUENA                684 // Pokégear Radio: Buena's Password
+#define MUS_HG_EUSINE                     685 // Eusine
+#define MUS_HG_CLAIR                      686 // Clair
+#define MUS_HG_ENCOUNTER_GIRL_1           687 // Trainers' Eyes Meet (Girl 1)
+#define MUS_HG_ENCOUNTER_BOY_1            688 // Trainers' Eyes Meet (Boy 1)
+#define MUS_HG_ENCOUNTER_SUSPICIOUS_1     689 // Trainers' Eyes Meet (Suspicious Figure 1)
+#define MUS_HG_ENCOUNTER_SAGE             690 // Trainers' Eyes Meet (Sage)
+#define MUS_HG_ENCOUNTER_KIMONO_GIRL      691 // Trainers' Eyes Meet (Kimono Girl)
+#define MUS_HG_ENCOUNTER_ROCKET           692 // Trainers' Eyes Meet (Team Rocket)
+#define MUS_HG_ENCOUNTER_GIRL_2           693 // Trainers' Eyes Meet (Girl 2)
+#define MUS_HG_ENCOUNTER_BOY_2            694 // Trainers' Eyes Meet (Boy 2)
+#define MUS_HG_ENCOUNTER_SUSPICIOUS_2     695 // Trainers' Eyes Meet (Suspicious Figure 2)
+#define MUS_HG_VS_WILD                    696 // Battle! (Wild Pokémon - Johto Version)
+#define MUS_HG_VS_TRAINER                 697 // Battle! (Trainer Battle - Johto Version)
+#define MUS_HG_VS_GYM_LEADER              698 // Battle! (Gym Leader - Johto Version)
+#define MUS_HG_VS_RIVAL                   699 // Battle! (Rival)
+#define MUS_HG_VS_ROCKET                  700 // Battle! (Team Rocket)
+#define MUS_HG_VS_SUICUNE                 701 // Battle! (Suicune)
+#define MUS_HG_VS_ENTEI                   702 // Battle! (Entei)
+#define MUS_HG_VS_RAIKOU                  703 // Battle! (Raikou)
+#define MUS_HG_VS_CHAMPION                704 // Battle! (Champion)
+#define MUS_HG_VS_WILD_KANTO              705 // Battle! (Wild Pokémon - Kanto Version)
+#define MUS_HG_VS_TRAINER_KANTO           706 // Battle! (Trainer Battle - Kanto Version)
+#define MUS_HG_VS_GYM_LEADER_KANTO        707 // Battle! (Gym Leader - Kanto Version)
+#define MUS_HG_VICTORY_TRAINER            708 // Victory! (Trainer Battle)
+#define MUS_HG_VICTORY_WILD               709 // Victory! (Wild Pokémon)
+#define MUS_HG_CAUGHT                     710 // Victory! (Wild Pokémon) (No intro)
+#define MUS_HG_VICTORY_GYM_LEADER         711 // Victory! (Gym Leader)
+#define MUS_HG_VS_HO_OH                   712 // Battle! (Ho-Oh)
+#define MUS_HG_VS_LUGIA                   713 // Battle! (Lugia)
+#define MUS_HG_POKEATHLON_LOBBY           714 // Pokéathlon: In the Pokéathlon Dome
+#define MUS_HG_POKEATHLON_START           715 // Pokéathlon: Opening Ceremony
+#define MUS_HG_POKEATHLON_BEFORE          716 // Pokéathlon: An Event Begins!
+#define MUS_HG_POKEATHLON_EVENT           717 // Pokéathlon: Event Time!
+#define MUS_HG_POKEATHLON_FINALS          718 // Pokéathlon: Finals!
+#define MUS_HG_POKEATHLON_RESULTS         719 // Pokéathlon: Results Announcement!
+#define MUS_HG_POKEATHLON_END             720 // Pokéathlon: Medal Ceremony
+#define MUS_HG_POKEATHLON_WINNER          721 // Pokéathlon: Winner!
+#define MUS_HG_B_FACTORY                  722 // Battle Factory
+#define MUS_HG_B_HALL                     723 // Battle Hall
+#define MUS_HG_B_ARCADE                   724 // Battle Arcade
+#define MUS_HG_B_CASTLE                   725 // Battle Castle
+#define MUS_HG_VS_FRONTIER_BRAIN          726 // Battle! (Frontier Brain)
+#define MUS_HG_VICTORY_FRONTIER_BRAIN     727 // Victory! (Frontier Brain)
+#define MUS_HG_WFC                        728 // Nintendo Wi-Fi Connection
+#define MUS_HG_MYSTERY_GIFT               729 // Mystery Gift
+#define MUS_HG_WIFI_PLAZA                 730 // Wi-Fi Plaza
+#define MUS_HG_WIFI_MINIGAMES             731 // Wi-Fi Plaza: Plaza Games
+#define MUS_HG_WIFI_PARADE                732 // Wi-Fi Plaza: Parade
+#define MUS_HG_GLOBAL_TERMINAL            733 // Global Terminal
+#define MUS_HG_SPIN_TRADE                 734 // Spin Trade
+#define MUS_HG_GTS                        735 // GTS
+#define MUS_HG_ROUTE47                    736 // Route 47
+#define MUS_HG_SAFARI_ZONE_GATE           737 // Safari Zone Gate
+#define MUS_HG_SAFARI_ZONE                738 // Safari Zone
+#define MUS_HG_ETHAN                      739 // Ethan
+#define MUS_HG_LYRA                       740 // Lyra
+#define MUS_HG_GAME_CORNER_WIN            741 // You're a Winner!
+#define MUS_HG_KIMONO_GIRL_DANCE          742 // The Dance of Ecruteak
+#define MUS_HG_KIMONO_GIRL                743 // Kimono Girl
+#define MUS_HG_HO_OH_APPEARS              744 // Ho-Oh Appears!
+#define MUS_HG_LUGIA_APPEARS              745 // Lugia Appears!
+#define MUS_HG_SPIKY_EARED_PICHU          746 // Spiky-Eared Pichu Appears!
+#define MUS_HG_SINJOU_RUINS               747 // Sinjoh Ruins
+#define MUS_HG_RADIO_ROUTE101             748 // Pokégear Radio: Route 101
+#define MUS_HG_RADIO_ROUTE201             749 // Pokégear Radio: Route 201
+#define MUS_HG_RADIO_TRAINER              750 // Pokégear Radio: Trainer Channel
+#define MUS_HG_RADIO_VARIETY              751 // Pokégear Radio: Variety Channel
+#define MUS_HG_VS_KYOGRE_GROUDON          752 // Battle! (Super-Ancient Pokémon)
+#define MUS_HG_POKEWALKER                 753 // Pokéwalker
+#define MUS_HG_VS_ARCEUS                  754 // Arceus
+#define MUS_HG_HEAL                       755 // Pokémon Healed
+#define MUS_HG_LEVEL_UP                   756 // Level Up!
+#define MUS_HG_OBTAIN_ITEM                757 // Picked Up an Item!
+#define MUS_HG_OBTAIN_KEY_ITEM            758 // Obtained a Key Item!
+#define MUS_HG_EVOLVED                    759 // Congratulations! Your Pokémon Evolved!
+#define MUS_HG_OBTAIN_BADGE               760 // Received a Gym Badge!
+#define MUS_HG_OBTAIN_TMHM                761 // Received a TM!
+#define MUS_HG_OBTAIN_ACCESSORY           762 // Obtained an Accessory
+#define MUS_HG_MOVE_DELETED               763 // Move Deleted
+#define MUS_HG_OBTAIN_BERRY               764 // Obtained a Berry!
+#define MUS_HG_DEX_RATING_1               765 // Pokédex Evaluation... No Good!
+#define MUS_HG_DEX_RATING_2               766 // Pokédex Evaluation... You're on Your Way!
+#define MUS_HG_DEX_RATING_3               767 // Pokédex Evaluation... Keep at It!
+#define MUS_HG_DEX_RATING_4               768 // Pokédex Evaluation... Not Bad!
+#define MUS_HG_DEX_RATING_5               769 // Pokédex Evaluation... Just a Little More!
+#define MUS_HG_DEX_RATING_6               770 // Pokédex Evaluation... Complete!
+#define MUS_HG_OBTAIN_EGG                 771 // Received a Pokémon Egg!
+#define MUS_HG_BUG_CONTEST_1ST_PLACE      772 // Bug-Catching Contest: Winner
+#define MUS_HG_BUG_CONTEST_2ND_PLACE      773 // Bug-Catching Contest: Second Place
+#define MUS_HG_BUG_CONTEST_3RD_PLACE      774 // Bug-Catching Contest: Third Place
+#define MUS_HG_CARD_FLIP                  775 // Voltorb Flip: Is this what you're expecting?!
+#define MUS_HG_CARD_FLIP_GAME_OVER        776 // Voltorb Flip: Game Over
+#define MUS_HG_POKEGEAR_REGISTERED        777 // Registered in the Pokégear!
+#define MUS_HG_LETS_GO_TOGETHER           778 // Let's Go Together
+#define MUS_HG_POKEATHLON_READY           779 // Pokéathlon: Getting Changed
+#define MUS_HG_POKEATHLON_1ST_PLACE       780 // Pokéathlon: In First Place!
+#define MUS_HG_RECEIVE_POKEMON            781 // Received a Pokémon!
+#define MUS_HG_OBTAIN_ARCADE_POINTS       782// Received Battle Points in the Battle Arcade!
+#define MUS_HG_OBTAIN_CASTLE_POINTS       783 // Received Castle Points!
+#define MUS_HG_OBTAIN_B_POINTS            784 // Received Battle Points!
+#define MUS_HG_WIN_MINIGAME               785 // Cleared Wobbuffet Pop!
+
+#define MUS_YYYI_AURORADAYS						786
+#define MUS_YYYI_HOSHITOHANA					787
+#define MUS_PC_ULTRACUREHAPPYTANJOU				788
+#define MUS_DCD_JTDORCHESTRA					789
+#define MUS_TH_SKYHIGH							790
+#define MUS_SH_PANDORA							791
+#define MUS_DGMN_KIZUNA							792
+#define MUS_PC_ULTRACUREHAPPYTANJOU_NOLOOP		793
+#define MUS_YYYI_SAZANKA						794
+#define MUS_PKMN_SV_TERARAIDBATTLE				795
+#define MUS_PC_DANZEN							796
+#define MUS_PC_OPENMYHEART						797
+#define MUS_GS_GS1ALLEGRO						798
+
+#define MUS_THPPZGSK_PRIMALSCENE				799
+#define MUS_THPPZGSK_PLASTICMIND				800
+#define	MUS_THPPZGSK_FATEOFSIXTYYEARS_B			801
+#define MUS_THPPZGSK_DREAMBATTLE				802
+#define MUS_THPPZGSK_MASTERSPARK_A				803
+#define MUS_THPPZGSK_MASTERSPARK_B				804
+#define MUS_THPPZGSK_FAITH						805
+#define MUS_THPPZGSK_SUWAFOUGHTENFIELD			806
+#define	MUS_THPPZGSK_MISSINGPOWER				807
+#define MUS_THPPZGSK_BORDEROFLIFE				808
+#define MUS_THPPZGSK_NUCLEARFUSION				809
+#define MUS_THPPZGSK_DREAMEXPRESS				810
+#define MUS_THPPZGSK_FAIRYWARS					811
+#define MUS_THPPZGSK_MAGUSNIGHT					812
+#define MUS_THPPZGSK_WITCHBALL					813
+#define MUS_THPPZGSK_WINDGODGIRL				814
+#define MUS_THPPZGSK_MYSTERIOUSMOUNTAIN			815
+#define MUS_THPPZGSK_LUNADIAL					816
+#define MUS_THPPZGSK_LUNATICPRINCESS			817
+#define MUS_THPPZGSK_CANDIDFRIEND				818
+#define MUS_THPPZGSK_PHANTOMENSEMBLE_A			819
+#define MUS_THPPZGSK_PHANTOMENSEMBLE_B			820
+#define MUS_THPPZGSK_388						821
+#define MUS_THPPZGSK_ABSORBEDCURIOUSITY			822
+#define MUS_THPPZGSK_AGODTHATLOVESPEOPLE		823
+#define MUS_THPPZGSK_ALICEINWONDERLAND			824
+#define MUS_THPPZGSK_DARKBLOWHOLE				825
+#define MUS_THPPZGSK_DEEPMOUNTAIN				826
+#define MUS_THPPZGSK_DREAMLAND					827
+#define MUS_THPPZGSK_ENDOFSPRING				828
+#define MUS_THPPZGSK_FALLOFFALL					829
+#define	MUS_THPPZGSK_FATEOFSIXTYYEARS_A			830
+#define MUS_THPPZGSK_FIRESOFHOKKAI				831
+#define MUS_THPPZGSK_FLOWERLAND					832
+#define MUS_THPPZGSK_FLOWERSREMAININFANTASY		833
+#define MUS_THPPZGSK_GHOSTLYEYES				834
+#define MUS_THPPZGSK_JAPANESEFLOWER				835
+#define MUS_THPPZGSK_LOCKEDGIRL					836
+#define MUS_THPPZGSK_MEGAMARI_A					837
+#define MUS_THPPZGSK_MEGAMARI_B					838
+#define MUS_THPPZGSK_MOUNDOFSHIGAN				839
+#define MUS_THPPZGSK_NECROFANTASY				840
+#define MUS_THPPZGSK_SAKEDISH					841
+#define MUS_THPPZGSK_SEPTETTE					842
+#define MUS_THPPZGSK_SHANGHAIALICE				843
+#define MUS_THPPZGSK_SKYSCRAPER					844
+#define	MUS_THPPZGSK_THIRDEYE					845
+#define MUS_THPP_DOLLJUDGEMENT					846 // VS
+#define MUS_THPP_FAITH							847 // VS
+#define	MUS_THPP_TEPESSEPTETTE					848 // VS
+#define MUS_THPP_NECROFANTASIA					849 // VS
+#define	MUS_THPP_REINCARNATION					850 // VS
+#define MUS_THPP_NOWUNTILTHEMOMENT				851 // VS
+#define MUS_THPP_CIVILIZATIONOFMAGIC			852 // VS
+#define MUS_THPP_SPRINGLANE						853 // City/Town
+#define	MUS_THPP_BELOVEDTOMBOYISHGIRL			854 // City/Town
+#define MUS_THPP_TOMORROWSPECIAL				855 // City/Town
+#define MUS_THPP_THEUMBRELLA					856 // City/Town
+#define MUS_THPP_OLDWORLD						857 // City/Town
+#define MUS_THPP_LULLABYDESERTEDHELL			858 // City/Town
+#define	MUS_THPP_ULTIMATETRUTH					859 // City/Town
+#define MUS_THPP_ETERNALMIKO					860 // !Broken loop from the source | City/Town
+#define MUS_THPP_LOSTDREAM						861 // City/Town
+#define MUS_THPP_ALICEINWONDERLAND				862 // City/Town
+#define MUS_THPP_SOULASREDASONI					863 // Route
+#define MUS_THPP_KIDSFESTIVAL_A					864 // Route
+#define MUS_THPP_KIDSFESTIVAL_B					865 // Route
+#define MUS_THPP_LUNATEELF						866 // Route
+#define MUS_THPP_GENSOKYOGODSLOVED				867 // Route
+#define MUS_THPP_HISTORYOFTHEMOON				868 // PC
+#define MUS_THPP_CURIOUSSHANGHAI				869 // Game Corner
+#define MUS_THPP_DARKROAD						870 // Evil Lurks
+#define MUS_THPP_SKYSCRAPER						871 // Gym
+#define MUS_THPP_DEAFTOALL_A					872 // Forest
+#define MUS_THPP_THEBRIDGE						873 // Caves
+#define MUS_THPP_THIRDEYE						874 // Mansion
+#define MUS_THPP_SEPTETTE						875 // League
+#define MUS_THPP_PLAINASIA						876 // Lab
+#define MUS_THPP_INTERDIMENSIONALVOYAGE			877 // Ship
+#define MUS_THPP_ANCIENTTEMPLE					878 // Cemetery
+#define MUS_THPP_HEIANALIEN						879 // !Need to fix the modulation | Silph
+#define MUS_THPP_CITYOFFLOWER					880
+#define MUS_THPP_ENDOFDAYLIGHT					881
+#define MUS_THPP_BELLOFAVICI					882
+#define MUS_THPP_HAKUREISHRINEGROUND			883
+#define MUS_THPP_BADAPPLE						884
+#define MUS_THPP_GREENWICH						885
+#define MUS_THPP_LEGENDOFHOURAI					886
+#define MUS_THPP_WINDGODGIRL					887 // Cycling
+#define MUS_THPP_CANDIDFRIEND					888 // Surfing
+#define MUS_THPP_THEPUPPET						889 // Introduction
+#define MUS_THPP_DREAMBATTLE					890 // Title
+#define MUS_THPP_BROKENMOON						891 // Hall of Fame
+#define MUS_THPP_EDMADLEY						892 // Credits
+#define MUS_THPP_BOKURANOHISOUTENSOKU_A			893 // Evo
+#define MUS_THPP_BOKURANOHISOUTENSOKU_B			894 // Evo
+#define MUS_THPP_DEAFTOALL_B					895 // !Need to fix the modulation | Lullaby
+#define MUS_THPP_PHANTOMENSEMBLE				896 // Flute
+#define MUS_THPP_IMMORTALSMOKE_A				897 // Victory
+#define MUS_THPP_IMMORTALSMOKE_B				898 // Victory
+#define MUS_THPP_INADAHIME						899 // !Need to fix the modulation | Victory
+#define MUS_THPP_CORPSEVOYAGE					900 // Victory
+#define MUS_THPP_JINGLE							901 // Caught
+#define MUS_THPP_SACREDLOT						902 // Encounter
+#define MUS_THPP_LOSTPLACE						903 // Encounter
+#define MUS_THPP_SAKEDISH						904 // Encounter
+#define MUS_THPP_THEOLDMAN						905 // Encounter
+#define MUS_THPP_DREAMMORESCARLET				906 // !Need to fix the modulation | Encounter
+#define MUS_THPP_342							907 // Encounter
+#define MUS_THPP_FLYABOVEHATOYAMA_A				908 // Rival
+#define MUS_THPP_FLYABOVEHATOYAMA_B				909 // Rival
+#define MUS_THPP_SUPERNEOEXPRESS				910 // Follow me
+#define MUS_THPPZGSK_HISTORYOFTHEMOON			911 // PC longer version, loop fixed
+#define MUS_THPPZGSK_DOLLJUDGEMENT				912 // VS longer version, loop fixed
+
+#define MUS_KEY_NAGISA_CUT						913
+#define MUS_INSTRUMENT_TEST						914
+
+#define MUS_THPPAWL_PRIMALSCENE					915
+#define MUS_THPPAWL_REINCARNATION				916
+#define MUS_THPPAWL_CASKETOFSTAR				917
+#define MUS_THPPAWL_PLASTICMIND					918
+#define MUS_THPPAWL_EXTENDASH					919
+#define MUS_THPPAWL_ANCIENTTEMPLE				920
+#define MUS_THPPAWL_KAGOME						921
+
+#define MUS_THPPRF_MAIDENCAPRICCIO_A			922
+#define MUS_THPPRF_TRUEADMINISTRATOR			923 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_367							924
+#define MUS_THPPRF_368							925 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_LOVECONSULTATION_A			926
+#define MUS_THPPRF_LITTLEPRINCESS				927
+#define MUS_THPPRF_MARITHEMAGICIAN				928
+#define MUS_THPPRF_372							929
+#define MUS_THPPRF_NECROFANTASIA_A				930
+#define MUS_THPPRF_374							931
+#define MUS_THPPRF_GIRLSSEALINGCLUB				932
+#define MUS_THPPRF_FORESTOFTOHNO				933
+#define MUS_THPPRF_YOUKAISPACETRAVEL			934
+#define MUS_THPPRF_FARSIDEOFTHEMOON				935
+#define MUS_THPPRF_LEGENDOFTOHNO				936
+#define MUS_THPPRF_SOULASRED					937
+#define MUS_THPPRF_SERAPHICCHIKEN				938 // Removed worth of 96 ticks delay @ 000 and 72 thick delay @001 for each track, so the music start immediately
+#define MUS_THPPRF_LASTOCCULTISM				939
+#define MUS_THPPRF_MAIDENCAPRICCIO_B			940
+#define MUS_THPPRF_HARTMANNSYOUKAI				941 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_NATIVEFAITH					942
+#define MUS_THPPRF_UNKNOWNWASHER				943 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_DREAMBATTLE					944
+#define MUS_THPPRF_BADAPPLE						945 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_NECROFANTASIA_B				946 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_GROUNDSCOLORISYELLOW			947 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_WONDERFULHEAVEN				948 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_ONIISLAND					949 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_BORDEROFLIFE					950 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_394							951 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_PHANTOMENSEMBLE				952
+#define MUS_THPPRF_NECROFANTASIA_C				953 // Fixed loop | Original data have extra W20 delay at the end of track 2, removed the extra delay
+#define MUS_THPPRF_STALKTHENIGHT				954 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_398							955 // Removed worth of 72 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_SEPTETTE						956 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_REDANDWHITE					957 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_PKMN_SM_VS_E4				958
+#define MUS_THPPRF_LOVECONSULTATION_B			959 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_EASYGOINGEGOIST				960 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_INFINITYBEING				961 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_REVERSEIDEOLOGY				962 // Removed worth of 24 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_406							963 // Fixed loop | Original data have extra W03 delay at the end of track 3, removed the extra delay
+#define MUS_THPPRF_FLAWLESSCLOTHING				964
+#define MUS_THPPRF_408							965 // Removed worth of 24 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_SHINKIROU					966
+#define MUS_THPPRF_ANTIMONYTITLE				967 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_INNOCENTTREASURES			968 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_412							969 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_DARKPEGASUS					970 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_IDOLATRIZEWORLD				971 // Fixed loop | Original data have extra W09 delay at the end of track 9, removed the extra delay
+#define MUS_THPPRF_BELOVEDTOMBOYISHGIRL			972 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_GENSOKYOGODSLOVED			973 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_UNKNOWNX						974 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_SKYOFTHESCARLETPERCEPTION	975 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_HIDDENSTAR					976 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_HEIANALIEN					977 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_DEAFTOALL					978 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_PUREFURIES					979 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_CUTEDEVILINNOCENCE			980 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_PKMN_BW2_VS_IRIS				981
+#define MUS_THPPRF_WHITEFLAGUSA					982 // Fixed loop | Delay at track 8 @065 was 50 while other tracks were 48. Added delay W02 on the other tracks @065. Removed W96 on every track @ 000
+#define MUS_THPPRF_426							983 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+#define MUS_THPPRF_MEMENTOOFALLORGANISM			984 // Fixed loop | Original data have extra W14 delay at the end of track 9, removed the extra delay. Removed delay W96 on each track @000
+#define MUS_THPPRF_URBANLEGENDS					985 // Fixed loop | Track 5 ends at @32, it should have been @73. Add delay until @73
+#define MUS_THPPRF_IMMEMORIALMARKETEER			986 // Removed worth of 96 ticks delay @ 000 for each track, so the music start immediately
+
+#define MUS_PC_GBA2_DANZENFWPCMH				987 // Added 'dual aura wave' voice in the beginning
+#define MUS_PC_GBA2_001 						988
+#define MUS_PC_GBA2_002 						989
+#define MUS_PC_GBA2_003 						990
+#define MUS_PC_GBA2_004 						991
+#define MUS_PC_GBA2_005 						992
+#define MUS_PC_GBA2_006 						993
+#define MUS_PC_GBA2_007 						994
+#define MUS_PC_GBA2_008 						995
+#define MUS_PC_GBA2_009 						996
+#define MUS_PC_GBA2_012 						997
+#define MUS_PC_GBA2_013 						998
+#define MUS_PC_GBA2_014 						999
+#define MUS_PC_GBA2_015 						1000
+#define MUS_PC_GBA2_016 						1001
+#define MUS_PC_GBA2_017 						1002
+#define MUS_PC_GBA2_018 						1003
+#define MUS_PC_GBA2_019 						1004
+#define MUS_PC_GBA2_020 						1005
+#define MUS_PC_GBA2_021 						1006
+#define MUS_PC_GBA2_023 						1007
+#define VO_PC_GBA2_DUALAURAWAVE					1008
+#define VO_PC_GBA2_CUREBLACK					1009
+#define VO_PC_GBA2_CUREWHITE					1010
+#define VO_PC_GBA2_SHININGSTREAM				1011
+#define VO_PC_GBA2_SHINYLUMINOUS				1012
+#define VO_PC_GBA2_EXTREME						1013
+#define VO_PC_GBA2_LUMINARIO					1014
+
+#define MUS_PKMN_GSC_CAVES 1015
+#define MUS_PKMN_GSC_CHERRYGROVE 1016
+#define MUS_PKMN_GSC_CYCLING 1017
+#define MUS_PKMN_GSC_ECRUTEAK 1018
+#define MUS_PKMN_GSC_ELMLAB 1019
+#define MUS_PKMN_GSC_EXITSILVER 1020
+#define MUS_PKMN_GSC_GOLDENROD 1021
+#define MUS_PKMN_GSC_GYM 1022
+#define MUS_PKMN_GSC_ICEPATH 1023
+#define MUS_PKMN_GSC_LEAGUE 1024
+#define MUS_PKMN_GSC_LIGHTHOUSE 1025
+#define MUS_PKMN_GSC_MEETSILVER 1026
+#define MUS_PKMN_GSC_NEWBARK 1027
+#define MUS_PKMN_GSC_PARK 1028
+#define MUS_PKMN_GSC_POKEMONCENTER 1029
+#define MUS_PKMN_GSC_ROCKETBASE 1030
+#define MUS_PKMN_GSC_ROUTE29 1031
+#define MUS_PKMN_GSC_ROUTE30 1032
+#define MUS_PKMN_GSC_ROUTE34 1033
+#define MUS_PKMN_GSC_ROUTE38 1034
+#define MUS_PKMN_GSC_SURFING 1035
+#define MUS_PKMN_GSC_TOWER1 1036
+#define MUS_PKMN_GSC_TOWER2 1037
+#define MUS_PKMN_GSC_VERMILION 1038
+#define MUS_PKMN_GSC_VIRIDIAN 1039
+#define MUS_PKMN_GSC_VS_GYMLEADER 1040
+#define MUS_PKMN_GSC_VS_ROCKET 1041
+#define MUS_PKMN_GSC_VS_SILVER 1042
+#define MUS_PKMN_GSC_VS_TRAINER 1043
+#define MUS_PKMN_GSC_VS_WILD1 1044
+#define MUS_PKMN_GSC_VS_WILD2 1045
+
+// start NDS Precure sequences. All are not optimized or set loop except which are noted
+
+// Futari wa PreCure Max Heart - Danzen! DS de PreCure - Chikara o Awasete Dai-battle!!
+#define MUS_PC_DS1FWPCMH_SEQ_BGM01 1046
+#define MUS_PC_DS1FWPCMH_SEQ_BGM02 1047
+#define MUS_PC_DS1FWPCMH_SEQ_BGM03 1048
+#define MUS_PC_DS1FWPCMH_SEQ_BGM04 1049
+#define MUS_PC_DS1FWPCMH_SEQ_BGM05 1050
+#define MUS_PC_DS1FWPCMH_SEQ_BGM06 1051
+#define MUS_PC_DS1FWPCMH_SEQ_BGM07 1052
+#define MUS_PC_DS1FWPCMH_SEQ_BGM08 1053
+#define MUS_PC_DS1FWPCMH_SEQ_BGM09 1054
+#define MUS_PC_DS1FWPCMH_SEQ_BGM10 1055
+#define MUS_PC_DS1FWPCMH_SEQ_BGM11 1056
+#define MUS_PC_DS1FWPCMH_SEQ_BGM12 1057
+#define MUS_PC_DS1FWPCMH_SEQ_BGM13 1058
+#define MUS_PC_DS1FWPCMH_SEQ_BGM14 1059
+#define MUS_PC_DS1FWPCMH_SEQ_BGM15 1060
+#define MUS_PC_DS1FWPCMH_SEQ_BGM16 1061
+#define MUS_PC_DS1FWPCMH_SEQ_BGM17 1062
+#define MUS_PC_DS1FWPCMH_SEQ_BGM18 1063
+#define MUS_PC_DS1FWPCMH_SEQ_BGM19 1064
+#define MUS_PC_DS1FWPCMH_SEQ_BGM20 1065
+#define MUS_PC_DS1FWPCMH_SEQ_BGM21 1066
+#define MUS_PC_DS1FWPCMH_SEQ_BGM22 1067
+
+//Futari wa PreCure Splash Star - Panpaka Game de Zekkouchou!
+#define MUS_PC_DS2FWPCSS_BGM_ARTS 1068
+#define MUS_PC_DS2FWPCSS_BGM_ARTS_02 1069
+#define MUS_PC_DS2FWPCSS_BGM_BATTLE_01 1070
+#define MUS_PC_DS2FWPCSS_BGM_BATTLE_02 1071
+#define MUS_PC_DS2FWPCSS_BGM_CHANGE 1072
+#define MUS_PC_DS2FWPCSS_BGM_ED 1073
+#define MUS_PC_DS2FWPCSS_BGM_MAP_01 1074
+#define MUS_PC_DS2FWPCSS_BGM_MAP_02 1075
+#define MUS_PC_DS2FWPCSS_BGM_MAP_03 1076
+#define MUS_PC_DS2FWPCSS_BGM_MAP_04 1077
+#define MUS_PC_DS2FWPCSS_BGM_MENU 1078
+#define MUS_PC_DS2FWPCSS_BGM_MINIGAME_01 1079
+#define MUS_PC_DS2FWPCSS_BGM_MINIGAME_02 1080
+#define MUS_PC_DS2FWPCSS_BGM_MINIGAME_03 1081
+#define MUS_PC_DS2FWPCSS_BGM_MINIGAME_04 1082
+#define MUS_PC_DS2FWPCSS_BGM_MINIGAME_05 1083
+#define MUS_PC_DS2FWPCSS_BGM_MINIGAME_06 1084
+#define MUS_PC_DS2FWPCSS_BGM_MINIGAME_07 1085
+#define MUS_PC_DS2FWPCSS_BGM_RESULT 1086
+#define MUS_PC_DS2FWPCSS_BGM_STORY_01 1087
+#define MUS_PC_DS2FWPCSS_BGM_STORY_02 1088
+#define MUS_PC_DS2FWPCSS_BGM_STORY_03 1089
+#define MUS_PC_DS2FWPCSS_BGM_STORY_04 1090
+#define MUS_PC_DS2FWPCSS_BGM_STORY_05 1091
+#define MUS_PC_DS2FWPCSS_BGM_TITLE 1092
+#define MUS_PC_DS2FWPCSS_JGL_SUBTITLE 1093
+
+// Yes! PreCure 5
+#define MUS_PC_DS3PC5_SEQ_PRICURE01 1094
+#define MUS_PC_DS3PC5_SEQ_PRICURE02 1095
+#define MUS_PC_DS3PC5_SEQ_PRICURE03 1096
+#define MUS_PC_DS3PC5_SEQ_PRICURE04 1097
+#define MUS_PC_DS3PC5_SEQ_PRICURE06 1098
+#define MUS_PC_DS3PC5_SEQ_PRICURE07 1099
+#define MUS_PC_DS3PC5_SEQ_PRICURE08 1100
+#define MUS_PC_DS3PC5_SEQ_PRICURE09 1101
+#define MUS_PC_DS3PC5_SEQ_PRICURE11 1102
+#define MUS_PC_DS3PC5_SEQ_PRICURE12 1103
+#define MUS_PC_DS3PC5_SEQ_PRICURE13 1104
+#define MUS_PC_DS3PC5_SEQ_PRICURE14 1105
+#define MUS_PC_DS3PC5_SEQ_PRICURE15 1106
+#define MUS_PC_DS3PC5_SEQ_PRICURE16 1107
+#define MUS_PC_DS3PC5_SEQ_PRICURE17 1108
+#define MUS_PC_DS3PC5_SEQ_PRICURE19 1109
+#define MUS_PC_DS3PC5_SEQ_PRICURE20 1110
+#define MUS_PC_DS3PC5_SEQ_PRICURE21 1111
+#define MUS_PC_DS3PC5_SEQ_PRICURE22 1112
+#define MUS_PC_DS3PC5_SEQ_PRICURE23 1113
+#define MUS_PC_DS3PC5_SEQ_PRICURE25 1114
+#define MUS_PC_DS3PC5_SEQ_PRICURE26 1115
+#define MUS_PC_DS3PC5_SEQ_PRICURE27 1116
+
+// Yes! PreCure 5 Go Go! - Zenin Shuu-Go! Dream Festival
+#define MUS_PC_DS4PC5GOGO_BGM_ADV_01 1117
+#define MUS_PC_DS4PC5GOGO_BGM_ADV_02 1118
+#define MUS_PC_DS4PC5GOGO_BGM_ADV_03 1119
+#define MUS_PC_DS4PC5GOGO_BGM_ADV_04 1120
+#define MUS_PC_DS4PC5GOGO_BGM_BTL_01 1121
+#define MUS_PC_DS4PC5GOGO_BGM_BTL_02 1122 // OK | Max Heart Battle
+#define MUS_PC_DS4PC5GOGO_BGM_BTL_03 1123 // SS Battle
+#define MUS_PC_DS4PC5GOGO_BGM_BTL_04 1124
+#define MUS_PC_DS4PC5GOGO_BGM_BTL_05 1125 // Boss Battle
+#define MUS_PC_DS4PC5GOGO_BGM_MENU 1126
+#define MUS_PC_DS4PC5GOGO_BGM_MG_01 1127
+#define MUS_PC_DS4PC5GOGO_BGM_MG_02 1128
+#define MUS_PC_DS4PC5GOGO_BGM_MG_03 1129
+#define MUS_PC_DS4PC5GOGO_BGM_MG_04 1130
+#define MUS_PC_DS4PC5GOGO_BGM_MG_05 1131
+#define MUS_PC_DS4PC5GOGO_BGM_MG_06 1132
+#define MUS_PC_DS4PC5GOGO_BGM_MG_07 1133
+#define MUS_PC_DS4PC5GOGO_BGM_MG_08 1134
+#define MUS_PC_DS4PC5GOGO_BGM_MG_09 1135
+#define MUS_PC_DS4PC5GOGO_BGM_MG_10 1136
+#define MUS_PC_DS4PC5GOGO_BGM_MG_11 1137
+#define MUS_PC_DS4PC5GOGO_BGM_MG_12 1138
+#define MUS_PC_DS4PC5GOGO_BGM_MG_13 1139
+#define MUS_PC_DS4PC5GOGO_BGM_MG_14 1140
+#define MUS_PC_DS4PC5GOGO_BGM_MG_15 1141
+#define MUS_PC_DS4PC5GOGO_BGM_MG_16 1142
+#define MUS_PC_DS4PC5GOGO_BGM_MG_17 1143
+#define MUS_PC_DS4PC5GOGO_BGM_MG_18 1144
+#define MUS_PC_DS4PC5GOGO_BGM_MG_19 1145
+#define MUS_PC_DS4PC5GOGO_BGM_MG_20 1146
+#define MUS_PC_DS4PC5GOGO_BGM_TITLE 1147 // Dummy wave stream sample
+
+// Fresh PreCure! - Asobi Collection
+#define MUS_PC_DS5FPC_BGM_ARTS 1148
+#define MUS_PC_DS5FPC_BGM_BATTLE 1149
+#define MUS_PC_DS5FPC_BGM_BATTLE_01A 1150
+#define MUS_PC_DS5FPC_BGM_BATTLE_01B 1151
+#define MUS_PC_DS5FPC_BGM_BATTLE_02 1152
+#define MUS_PC_DS5FPC_BGM_BATTLE_03 1153
+#define MUS_PC_DS5FPC_BGM_BATTLE_04 1154
+#define MUS_PC_DS5FPC_BGM_BATTLE_05 1155
+#define MUS_PC_DS5FPC_BGM_BATTLE_06A 1156
+#define MUS_PC_DS5FPC_BGM_BATTLE_06B 1157
+#define MUS_PC_DS5FPC_BGM_CHANGE 1158
+#define MUS_PC_DS5FPC_BGM_MAP 1159
+#define MUS_PC_DS5FPC_BGM_MG_01 1160
+#define MUS_PC_DS5FPC_BGM_MG_02 1161
+#define MUS_PC_DS5FPC_BGM_MG_03 1162
+#define MUS_PC_DS5FPC_BGM_MG_04 1163
+#define MUS_PC_DS5FPC_BGM_MG_05 1164
+#define MUS_PC_DS5FPC_BGM_MG_06 1165
+#define MUS_PC_DS5FPC_BGM_MG_07 1166
+#define MUS_PC_DS5FPC_BGM_MG_08 1167
+#define MUS_PC_DS5FPC_BGM_MG_09 1168
+#define MUS_PC_DS5FPC_BGM_MG_10 1169
+#define MUS_PC_DS5FPC_BGM_MG_11 1170
+#define MUS_PC_DS5FPC_BGM_RESULT_01 1171
+#define MUS_PC_DS5FPC_BGM_TITLE 1172
+#define MUS_PC_DS5FPC_BGM_TUTORIAL 1173
+
+// HeartCatch PreCure! - Oshare Collection
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_00 1174
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_01 1175
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_02 1176
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_03 1177
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_04 1178
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_05 1179
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_06 1180
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_07 1181
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_08 1182
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_09 1183
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_10 1184
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_11 1185
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_12 1186
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_13 1187 // OK | Alright! HeartCatch
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_14 1188 // OK | Heartcatch Paradise
+#define MUS_PC_DS6HCPC_SEQ_BGM_BGM_15 1189
+#define MUS_PC_DS6HCPC_SEQ_JGL_JIN_00 1190
+#define MUS_PC_DS6HCPC_SEQ_JGL_JIN_01 1191
+
+// Koe de Asobou - HeartCatch PreCure!
+#define MUS_PC_DS7HCPC_BGM00 1192
+#define MUS_PC_DS7HCPC_BGM01 1193
+#define MUS_PC_DS7HCPC_BGM02 1194
+#define MUS_PC_DS7HCPC_BGM03 1195
+
+// Suite PreCure - Melody Collection
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_00 1196
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_01 1197
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_02 1198
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_03 1199
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_04 1200
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_05 1201
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_06 1202
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_08 1203
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_09 1204
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_10 1205
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_11 1206
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_12 1207
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_13 1208
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_15 1209 // Dummy wave stream sample
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_17 1210 // Dummy wave stream sample
+#define MUS_PC_DS8SPC_SEQ_BGM_BGM_19 1211 // Dummy wave stream sample
+
+// end NDS Precure songs
+
+#define MUS_DCD_JTD_SYMPHONY_LOOP 1212
+
+#define MUS_DGMN_DW1_CURLING 1213
+#define MUS_DGMN_DW1_FACTORIALTOWN_DAY 1214
+#define MUS_DGMN_DW1_FACTORIALTOWN_NIGHT 1215
+#define MUS_DGMN_DW1_FILECITY_DAY 1216
+#define MUS_DGMN_DW1_FILECITY_NIGHT 1217
+#define MUS_DGMN_DW1_GEARSAVANNA 1218
+#define MUS_DGMN_DW1_MONOCHROMON 1219
+#define MUS_DGMN_DW1_VS_DIGIMONEVENT 1220
+#define MUS_DGMN_DW1_VS_MACHINEDRAMON 1221
+#define MUS_DGMN_DW1_WARUMONZAEMON 1222
+
+#define MUS_PKMN_PMDRED_RESCUE_TEAM_BASE 1223
+#define MUS_PKMN_PMDRED_FRIEND_AREA_SWAMP 1224
+#define MUS_PKMN_PMDRED_FRIEND_AREA_CAVES 1225
+#define MUS_PKMN_PMDRED_DREAM 1226
+#define MUS_PKMN_PMDRED_BENEVOLENT_SPIRIT 1227
+#define MUS_PKMN_PMDRED_LEGEND_OF_NINETALES 1228
+#define MUS_PKMN_PMDRED_POKEMON_SQUARE 1229
+#define MUS_PKMN_PMDRED_FILE_SELECT 1230
+#define MUS_PKMN_PMDRED_RISING_FEAR 1231
+#define MUS_PKMN_PMDRED_THERES_TROUBLE 1232
+#define MUS_PKMN_PMDRED_BOSS_BATTLE 1233
+#define MUS_PKMN_PMDRED_WELCOME_TO_THE_WORLD_OF_POKEMON 1234
+#define MUS_PKMN_PMDRED_A_NEW_ADVENTURE 1235
+#define MUS_PKMN_PMDRED_THUNDERWAVE_CAVE 1236
+#define MUS_PKMN_PMDRED_SINISTER_WOODS 1237
+#define MUS_PKMN_PMDRED_FRIEND_AREA_POND 1238
+#define MUS_PKMN_PMDRED_KECLEON_SHOP 1239
+#define MUS_PKMN_PMDRED_STOP_THIEF 1240
+#define MUS_PKMN_PMDRED_WORLD_CALAMITY 1241
+#define MUS_PKMN_PMDRED_GREAT_CANYON 1242
+#define MUS_PKMN_PMDRED_STORMY_SEA 1243
+#define MUS_PKMN_PMDRED_SKY_TOWER 1244
+#define MUS_PKMN_PMDRED_SKY_TOWER_SUMMIT 1245
+#define MUS_PKMN_PMDRED_THE_ESCAPE 1246
+#define MUS_PKMN_PMDRED_MT_BLAZE 1247
+#define MUS_PKMN_PMDRED_RAYQUAZAS_DOMAIN 1248
+#define MUS_PKMN_PMDRED_FRIEND_AREA_STRATOS_LOOKOUT 1249
+#define MUS_PKMN_PMDRED_FRIEND_AREA_RAINBOW_PEAK 1250
+#define MUS_PKMN_PMDRED_DREAM_EATER 1251
+#define MUS_PKMN_PMDRED_FRIEND_AREA_DEEPSEA_CURRENT 1252
+#define MUS_PKMN_PMDRED_FRIEND_AREA_SEAFLOOR_CAVE 1253
+#define MUS_PKMN_PMDRED_BATTLE_WITH_RAYQUAZA 1254
+#define MUS_PKMN_PMDRED_MT_BLAZE_PEAK 1255
+#define MUS_PKMN_PMDRED_FRIEND_AREA_VOLCANIC_PIT 1256
+#define MUS_PKMN_PMDRED_FRIEND_AREA_CRYPTIC_CAVE 1257
+#define MUS_PKMN_PMDRED_ESCAPE_THROUGH_THE_SNOW 1258
+#define MUS_PKMN_PMDRED_THE_OTHER_SIDE 1259
+#define MUS_PKMN_PMDRED_THE_MOUNTAIN_OF_FIRE 1260
+#define MUS_PKMN_PMDRED_FROSTY_GROTTO 1261
+#define MUS_PKMN_PMDRED_INTRO 1262
+#define MUS_PKMN_PMDRED_AFTERMATH 1263
+#define MUS_PKMN_PMDRED_FAREWELL 1264
+#define MUS_PKMN_PMDRED_TITLE_SCREEN 1265
+#define MUS_PKMN_PMDRED_CREDITS 1266
+#define MUS_PKMN_PMDRED_TIME_OF_REUNION 1267
+#define MUS_PKMN_PMDRED_OPENING_TITLE 1268
+#define MUS_PKMN_PMDRED_DUMMY 1269
+#define MUS_PKMN_PMDRED_DUNGEON_FAIL 1270
+#define MUS_PKMN_PMDRED_DUNGEON_COMPLETE 1271
+#define MUS_PKMN_PMDRED_FRIEND_AREA_UNUSED_1 1272
+#define MUS_PKMN_PMDRED_HEARTWARMING 1273
+#define MUS_PKMN_PMDRED_LAPIS_CAVE 1274
+#define MUS_PKMN_PMDRED_A_SUCCESSFUL_RESCUE 1275
+#define MUS_PKMN_PMDRED_FROSTY_FOREST 1276
+#define MUS_PKMN_PMDRED_FRIEND_AREA_STEPPE 1277
+#define MUS_PKMN_PMDRED_FRIEND_AREA_OCEANIC 1278
+#define MUS_PKMN_PMDRED_FRIEND_AREA_FIELD 1279
+#define MUS_PKMN_PMDRED_MAGMA_CAVERN 1280
+#define MUS_PKMN_PMDRED_FRIEND_AREA_UNUSED_2 1281
+#define MUS_PKMN_PMDRED_MAKUHITA_DOJO 1282
+#define MUS_PKMN_PMDRED_MT_THUNDER 1283
+#define MUS_PKMN_PMDRED_FRIEND_AREA_LAB 1284
+#define MUS_PKMN_PMDRED_SILENT_CHASM 1285
+#define MUS_PKMN_PMDRED_IN_THE_DEPTHS_OF_THE_PIT 1286
+#define MUS_PKMN_PMDRED_MT_FREEZE 1287
+#define MUS_PKMN_PMDRED_FRIEND_AREA_WILDS 1288
+#define MUS_PKMN_PMDRED_FRIEND_AREA_LEGENDARY_ISLAND 1289
+#define MUS_PKMN_PMDRED_FRIEND_AREA_SOUTHERN_ISLAND 1290
+#define MUS_PKMN_PMDRED_FRIEND_AREA_ENCLOSED_ISLAND 1291
+#define MUS_PKMN_PMDRED_MT_STEEL 1292
+#define MUS_PKMN_PMDRED_FRIEND_AREA_FOREST 1293
+#define MUS_PKMN_PMDRED_FRIEND_AREA_FINAL_ISLAND 1294
+#define MUS_PKMN_PMDRED_MT_FREEZE_PEAK 1295
+#define MUS_PKMN_PMDRED_MAGMA_CAVERN_PIT 1296
+#define MUS_PKMN_PMDRED_TINY_WOODS 1297
+#define MUS_PKMN_PMDRED_MT_THUNDER_PEAK 1298
+#define MUS_PKMN_PMDRED_FRIEND_AREA_HEALING_FOREST 1299
+#define MUS_PKMN_PMDRED_MONSTER_HOUSE 1300
+
+#define MUS_DGMN_STORY1_DIGIFARM 1301
+#define MUS_DGMN_STORY1_INTERIOR 1302
+#define MUS_DGMN_STORY1_VS_BOSS 1303  // OK
+#define MUS_DGMN_STORY1_VS_DIGIMON 1304
+#define MUS_DGMN_STORY1_VS_DIGIMON_DMW 1305
+#define MUS_DGMN_STORY2_BOARD_ANGEL 1306
+#define MUS_DGMN_STORY2_BOARD_BEAST 1307
+#define MUS_DGMN_STORY2_BOARD_BIRD 1308
+#define MUS_DGMN_STORY2_BOARD_DEVIL 1309
+#define MUS_DGMN_STORY2_BOARD_DRAGON 1310
+#define MUS_DGMN_STORY2_BOARD_FOREST 1311
+#define MUS_DGMN_STORY2_BOARD_MECH 1312
+#define MUS_DGMN_STORY2_BOARD_SEA 1313
+#define MUS_DGMN_STORY2_DARKMOON_CITY 1314 // OK
+#define MUS_DGMN_STORY2_DIGIFARM 1315
+#define MUS_DGMN_STORY2_SUNSHINE_CITY 1316
+#define MUS_DGMN_STORY2_VS_ADVANCE 1317 // OK
+#define MUS_DGMN_STORY2_VS_BOSS 1318
+#define MUS_DGMN_STORY2_VS_CHAOS_BRAIN 1319
+#define MUS_DGMN_STORY2_VS_DIGIMON 1320
+#define MUS_DGMN_STORY2_VS_FINAL_BOSS 1321
+#define MUS_DGMN_STORY2_VS_MULTIPLAYER 1322
+
+#define MUS_PC_ALLHENSHIN 1323
+#define MUS_YYYI_BATTLE_02 1324
+#define MUS_YYYI_BATTLE_02_TEST2 1325
+#define MUS_YYYI_BATTLE_04 1326
+#define MUS_PKMN_PMD2_DONTEVERFORGET 1327
+#define MUS_PKMN_DP_VS_DIALGA_PALKIA 1328
+#define MUS_PKMN_DP_VS_TRAINER 1329
+#define MUS_PKMN_DP_VS_WILD 1330
+#define MUS_PKMN_PL_VS_GIRATINA 1331
+
+#define MUS_TH_CTC_GFREE 1332
+
+#define MUS_PKMN_XY_VS_WILD 1333
+#define MUS_PKMN_USUM_VS_WILD 1334
+#define MUS_PKMN_SWSH_VS_WILD 1335
+
+#define MUS_SH_SILKROAD 1336
+#define MUS_SH_VELVETMAIDEN 1337
+
+#define MUS_SNY_GODKNOWS 1338
+
+#define MUS_GI_MOONLIKESMILE 1339
+
+#define MUS_TH_LOSTDREAM 1340
+
+#define MUS_ZNT_ISAYYES 1341
+
+#define MUS_SH_MYMAIDSWEETMAID 1342
+
+#define MUS_GS2_VS_MAGICIAN 1343
+
+#define MUS_PWVSPL_SPELLBREAKER 1344
+
+#define MUS_DCD_DIEND 1345
+
+#define MUS_PC_EIEN_NO_TOMODACHI 1346
+
+#define MUS_DCD_BLACK 1347
+
+#define MUS_PKMN_BATTLE_MADLEY_1 1348
+
+#define MUS_DBS_ULTIMATE_BATTLE 1349
+
+#define MUS_PKMN_SLP_TAUPE_HOLLOW_PIANO 1350
+#define MUS_PKMN_SV_VS_STAR_GRUNT 1351
+#define MUS_DBS_ROYAL_BLUE 1352
+#define MUS_GI_FRAGILE_FANTASY 1353
+#define MUS_DBH_GO_BEYOND_THE_LIMITS 1354
+#define MUS_DBGT_DANDANKOKORO_RECAP 1355
+#define MUS_TH_KIMI_NO_YUME 1356
+#define MUS_DBZ_FIRST_PROLOGUE 1357
+#define MUS_DBZ_HIKARI_NO_WILLPOWER 1358
+#define MUS_ETC_COFFIN_DANCE 1359
+#define MUS_HOLOLIVE_ERROR 1360
+#define MUS_TY_TUNNELING_TROLL 1361
+#define MUS_PKMN_SLP_CYAN_BEACH_PIANO 1362
+#define MUS_FGO_GRAND_BATTLE_GB_STYLE 1363
+#define MUS_ETC_STASIUN_BALAPAN_SOLO 1364
+#define MUS_ETC_IBU_PERTIWI 1365
+#define MUS_YGO_PASSIONATE_DUELIST 1366
+
+#define END_MUS 					MUS_YGO_PASSIONATE_DUELIST
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -190,3 +190,121 @@
 .include "sound/voicegroups/voicegroup188.inc"
 .include "sound/voicegroups/voicegroup189.inc"
 .include "sound/voicegroups/voicegroup190.inc"
+
+@ Start custom keysplit instruments setting
+.include "sound/voicegroups/voicegroup191.inc" @ Modified voicegroup001
+.include "sound/voicegroups/voicegroup192.inc" @ Modified voicegroup002
+.include "sound/voicegroups/voicegroup193.inc" @ Modified voicegroup003
+.include "sound/voicegroups/voicegroup194.inc" @ Modified voicegroup004
+.include "sound/voicegroups/voicegroup195.inc" @ Modified voicegroup005
+.include "sound/voicegroups/voicegroup196.inc" @ Modified voicegroup006
+.include "sound/voicegroups/voicegroup197.inc" @ Modified voicegroup007
+.include "sound/voicegroups/voicegroup198.inc" @ Modified voicegroup008
+.include "sound/voicegroups/voicegroup199.inc" @ Modified voicegroup009
+@ End custom keysplit instruments setting
+
+@ Start custom voicegroups
+.include "sound/voicegroups/voicegroup200.inc" @ Custom GBA instrument only
+.include "sound/voicegroups/voicegroup201.inc" @ [Main] Custom mixed instrument (GBA-HGSS-THPPRF)
+.include "sound/voicegroups/voicegroup202.inc" @ Custom HGSS Base
+.include "sound/voicegroups/voicegroup203.inc" @ DP voicegroup, based on copy of HGSS instrument
+.include "sound/voicegroups/voicegroup204.inc" @ [Main] Custom 4
+
+.include "sound/voicegroups/voicegroup210.inc" @ [Main] THPPRF custom
+.include "sound/voicegroups/voicegroup211.inc" @ [Main] THPPZGS custom
+
+@ After a custom voicegroup hits voicegroup215, please jump to voicegroup500+
+
+@ --Start HGSS Voicegroups--
+.include "sound/voicegroups/voicegroup216.inc"
+.include "sound/voicegroups/voicegroup219.inc"
+.include "sound/voicegroups/voicegroup220.inc"
+.include "sound/voicegroups/voicegroup229.inc" @ [Main] HGSS-only instruments
+.include "sound/voicegroups/voicegroup230.inc"
+.include "sound/voicegroups/voicegroup231.inc"
+.include "sound/voicegroups/voicegroup232.inc"
+.include "sound/voicegroups/voicegroup233.inc"
+.include "sound/voicegroups/voicegroup234.inc"
+.include "sound/voicegroups/voicegroup235.inc"
+.include "sound/voicegroups/voicegroup236.inc"
+.include "sound/voicegroups/voicegroup237.inc"
+.include "sound/voicegroups/voicegroup238.inc"
+.include "sound/voicegroups/voicegroup239.inc"
+.include "sound/voicegroups/voicegroup240.inc"
+.include "sound/voicegroups/voicegroup241.inc"
+.include "sound/voicegroups/voicegroup242.inc"
+.include "sound/voicegroups/voicegroup243.inc"
+.include "sound/voicegroups/voicegroup244.inc"
+.include "sound/voicegroups/voicegroup245.inc"
+.include "sound/voicegroups/voicegroup246.inc"
+.include "sound/voicegroups/voicegroup247.inc"
+.include "sound/voicegroups/voicegroup248.inc"
+.include "sound/voicegroups/voicegroup249.inc"
+.include "sound/voicegroups/voicegroup250.inc"
+.include "sound/voicegroups/voicegroup251.inc"
+.include "sound/voicegroups/voicegroup252.inc"
+.include "sound/voicegroups/voicegroup253.inc"
+.include "sound/voicegroups/voicegroup254.inc"
+.include "sound/voicegroups/voicegroup255.inc"
+.include "sound/voicegroups/voicegroup256.inc"
+.include "sound/voicegroups/voicegroup257.inc"
+.include "sound/voicegroups/voicegroup258.inc"
+.include "sound/voicegroups/voicegroup259.inc"
+.include "sound/voicegroups/voicegroup260.inc"
+.include "sound/voicegroups/voicegroup261.inc"
+.include "sound/voicegroups/voicegroup262.inc"
+.include "sound/voicegroups/voicegroup263.inc"
+.include "sound/voicegroups/voicegroup264.inc"
+.include "sound/voicegroups/voicegroup265.inc"
+.include "sound/voicegroups/voicegroup266.inc"
+.include "sound/voicegroups/voicegroup267.inc"
+.include "sound/voicegroups/voicegroup268.inc"
+.include "sound/voicegroups/voicegroup269.inc"
+.include "sound/voicegroups/voicegroup270.inc"
+.include "sound/voicegroups/voicegroup271.inc"
+.include "sound/voicegroups/voicegroup272.inc"
+.include "sound/voicegroups/voicegroup273.inc"
+@ --End HGSS Voicegroups--
+
+.include "sound/voicegroups/voicegroup500.inc" @ --Blank voicegroup--
+
+@ --Start Futari wa Precure MH GBA Voicegroups--
+.include "sound/voicegroups/voicegroup501.inc" @ [Main] Futari wa Precure MH GBA instruments
+.include "sound/voicegroups/voicegroup502.inc" @ Futari wa Precure MH GBA drum set 1
+.include "sound/voicegroups/voicegroup503.inc" @ Futari wa Precure MH GBA drum set 2
+@ --End Futari wa Precure MH GBA Voicegroups--
+
+@ --Start PMD GBA Voicegroups--
+.include "sound/voicegroups/voicegroup504.inc" @ [Main] PMD GBA main 1 instruments for squence 1 - 99
+.include "sound/voicegroups/voicegroup505.inc" @ [Main] PMD GBA main 2 instruments for squence 100 - 199
+.include "sound/voicegroups/voicegroup506.inc" @ PMD GBA Drum 1
+.include "sound/voicegroups/voicegroup507.inc" @ PMD GBA Drum 2
+.include "sound/voicegroups/voicegroup508.inc"
+.include "sound/voicegroups/voicegroup509.inc"
+.include "sound/voicegroups/voicegroup510.inc"
+.include "sound/voicegroups/voicegroup511.inc"
+.include "sound/voicegroups/voicegroup512.inc"
+.include "sound/voicegroups/voicegroup513.inc"
+.include "sound/voicegroups/voicegroup514.inc"
+.include "sound/voicegroups/voicegroup515.inc"
+.include "sound/voicegroups/voicegroup516.inc"
+.include "sound/voicegroups/voicegroup517.inc"
+.include "sound/voicegroups/voicegroup518.inc"
+.include "sound/voicegroups/voicegroup519.inc"
+.include "sound/voicegroups/voicegroup520.inc"
+.include "sound/voicegroups/voicegroup521.inc"
+.include "sound/voicegroups/voicegroup522.inc"
+.include "sound/voicegroups/voicegroup523.inc"
+.include "sound/voicegroups/voicegroup524.inc"
+.include "sound/voicegroups/voicegroup525.inc"
+.include "sound/voicegroups/voicegroup526.inc"
+.include "sound/voicegroups/voicegroup527.inc"
+.include "sound/voicegroups/voicegroup528.inc"
+.include "sound/voicegroups/voicegroup529.inc"
+.include "sound/voicegroups/voicegroup530.inc"
+@ --Start PMD GBA Voicegroups--
+
+.include "sound/voicegroups/voicegroup601.inc" @ [Main] GBA Golden Sun
+.include "sound/voicegroups/voicegroup602.inc" @ GBA Golden Sun Drum
+
+.include "sound/voicegroups/voicegroup901.inc" @ CtC G Free

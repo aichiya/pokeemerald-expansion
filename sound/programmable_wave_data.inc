@@ -76,3 +76,108 @@ ProgrammableWaveData_24::
 
 ProgrammableWaveData_25::
 	.incbin "sound/programmable_wave_samples/25.pcm"
+
+ProgrammableWaveData_thpprf_pcm15::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm15.pcm"
+
+ProgrammableWaveData_thpprf_pcm82::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm82.pcm"
+
+ProgrammableWaveData_thpprf_pcm83::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm83.pcm"
+
+ProgrammableWaveData_thpprf_pcm84::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm84.pcm"
+
+ProgrammableWaveData_thpprf_pcm85::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm85.pcm"
+
+ProgrammableWaveData_thpprf_pcm86::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm86.pcm"
+
+ProgrammableWaveData_thpprf_pcm87::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm87.pcm"
+
+ProgrammableWaveData_thpprf_pcm88::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm88.pcm"
+
+ProgrammableWaveData_thpprf_pcm89::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm89.pcm"
+
+ProgrammableWaveData_thpprf_pcm92::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm92.pcm"
+
+ProgrammableWaveData_thpprf_pcm96::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm96.pcm"
+
+ProgrammableWaveData_thpprf_pcm97::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm97.pcm"
+
+ProgrammableWaveData_thpprf_pcm98::
+	.incbin "sound/programmable_wave_samples/thpprf_pcm98.pcm"
+
+ProgrammableWaveData_pc_fwpcmh_wave_0827e8::
+	.incbin "sound/programmable_wave_samples/pc_fwpcmh_wave_0827e8.pcm"
+
+ProgrammableWaveData_pc_fwpcmh_wave_082858::
+	.incbin "sound/programmable_wave_samples/pc_fwpcmh_wave_082858.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8653C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8653C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8654C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8654C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8655C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8655C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8656C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8656C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8657C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8657C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8658C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8658C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8659C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8659C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E865AC::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E865AC.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E865BC::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E865BC.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E865CC::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E865CC.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E865DC::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E865DC.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E865EC::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E865EC.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E865FC::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E865FC.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8660C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8660C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8661C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8661C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8662C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8662C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8663C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8663C.pcm"
+
+ProgrammableWaveData_pmd_pcm_1E8664C::
+	.incbin "sound/programmable_wave_samples/pmd_pcm_1E8664C.pcm"
+
+ProgrammableWaveData_GoldenSun2pcm001::
+    .incbin "sound/programmable_wave_samples/golden_sun_2_pcm_001.pcm"
+
+ProgrammableWaveData_GoldenSun2pcm002::
+    .incbin "sound/programmable_wave_samples/golden_sun_2_pcm_002.pcm"

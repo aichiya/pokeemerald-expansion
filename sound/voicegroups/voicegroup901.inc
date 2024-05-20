@@ -1,6 +1,5 @@
 	.align 2
 voicegroup901::
-/*
 	stream_directsound 60, 0, DirectSoundWaveData_SongSampleTHCtCGFree000, 255, 0, 255, 0 @ 0 | Direct |
 	stream_directsound 60, 0, DirectSoundWaveData_SongSampleTHCtCGFree001, 255, 0, 255, 0 @ 1 | Direct |
 	stream_directsound 60, 0, DirectSoundWaveData_SongSampleTHCtCGFree002, 255, 0, 255, 0 @ 2 | Direct |
@@ -51,7 +50,6 @@ voicegroup901::
 	stream_directsound 60, 0, DirectSoundWaveData_SongSampleTHCtCGFree047, 255, 0, 255, 0 @ 47 | Direct |
 	stream_directsound 60, 0, DirectSoundWaveData_SongSampleTHCtCGFree048, 255, 0, 255, 0 @ 48 | Direct |
 	stream_directsound 60, 0, DirectSoundWaveData_SongSampleTHCtCGFree049, 255, 0, 255, 0 @ 49 | Direct |
-*/
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 050 | Square-1 | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 051 | Square-1 | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 052 | Square-1 | 

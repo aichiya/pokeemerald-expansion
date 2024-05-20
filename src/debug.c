@@ -5420,6 +5420,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
 	X(MUS_ETC_STASIUN_BALAPAN_SOLO) \
 	X(MUS_ETC_IBU_PERTIWI) \
 	X(MUS_YGO_PASSIONATE_DUELIST) \
+	X(MUS_TH_BLUESEA) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

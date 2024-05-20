@@ -1368,6 +1368,7 @@ gSongTable::
 	song mus_etc_stasiun_balapan_solo, 0, 0
 	song mus_etc_ibu_pertiwi, 0, 0
 	song mus_ygo_passionate_duelist, 0, 0
+	song mus_th_bluesea, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -2016,6 +2016,7 @@ SECTIONS {
         sound/songs/mus_etc_stasiun_balapan_solo.o(.rodata);
         sound/songs/mus_etc_ibu_pertiwi.o(.rodata);
         sound/songs/mus_ygo_passionate_duelist.o(.rodata);
+        sound/songs/mus_th_bluesea.o(.rodata);
     } > ROM =0
 
     lib_rodata :

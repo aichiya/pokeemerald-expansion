@@ -1349,8 +1349,9 @@
 #define MUS_ETC_STASIUN_BALAPAN_SOLO 1364
 #define MUS_ETC_IBU_PERTIWI 1365
 #define MUS_YGO_PASSIONATE_DUELIST 1366
+#define MUS_TH_BLUESEA 1367
 
-#define END_MUS 					MUS_YGO_PASSIONATE_DUELIST
+#define END_MUS 					MUS_TH_BLUESEA
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

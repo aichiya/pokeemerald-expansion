@@ -2029,7 +2029,7 @@ Cry_HoOh::
 Cry_Celebi::
 	.incbin "sound/direct_sound_samples/cries/celebi.bin"
 .endif @ P_FAMILY_CELEBI
-
+/*
 .if P_FAMILY_TREECKO == TRUE
 	.align 2
 Cry_Treecko::
@@ -3252,7 +3252,7 @@ Cry_Mesprit::
 Cry_Azelf::
 	.incbin "sound/direct_sound_samples/cries/azelf.bin"
 .endif @ P_FAMILY_AZELF
-
+*/
 .if P_FAMILY_DIALGA == TRUE
 	.align 2
 Cry_Dialga::
@@ -3264,7 +3264,7 @@ Cry_Dialga::
 Cry_Palkia::
 	.incbin "sound/direct_sound_samples/cries/palkia.bin"
 .endif @ P_FAMILY_PALKIA
-
+/*
 .if P_FAMILY_HEATRAN == TRUE
 	.align 2
 Cry_Heatran::
@@ -3276,13 +3276,13 @@ Cry_Heatran::
 Cry_Regigigas::
 	.incbin "sound/direct_sound_samples/cries/regigigas.bin"
 .endif @ P_FAMILY_REGIGIGAS
-
+*/
 .if P_FAMILY_GIRATINA == TRUE
 	.align 2
 Cry_Giratina::
 	.incbin "sound/direct_sound_samples/cries/giratina.bin"
 .endif @ P_FAMILY_GIRATINA
-
+/*
 .if P_FAMILY_CRESSELIA == TRUE
 	.align 2
 Cry_Cresselia::
@@ -3314,13 +3314,13 @@ Cry_ShayminLand::
 Cry_ShayminSky::
 	.incbin "sound/direct_sound_samples/cries/shaymin_sky.bin"
 .endif @ P_FAMILY_SHAYMIN
-
+*/
 .if P_FAMILY_ARCEUS == TRUE
 	.align 2
 Cry_Arceus::
 	.incbin "sound/direct_sound_samples/cries/arceus.bin"
 .endif @ P_FAMILY_ARCEUS
-
+/*
 .if P_FAMILY_VICTINI == TRUE
 	.align 2
 Cry_Victini::
@@ -6153,7 +6153,7 @@ Cry_Terapagos::
 Cry_Pecharunt::
 	.incbin "sound/direct_sound_samples/cries/pecharunt.bin"
 .endif @ P_FAMILY_PECHARUNT
-
+*/
 	.align 2
 DirectSoundWaveData_register_noise::
 	.incbin "sound/direct_sound_samples/register_noise.bin"

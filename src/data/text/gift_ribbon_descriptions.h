@@ -45,6 +45,20 @@ const u8 gGiftRibbonDescriptionPart1_LovedPokemon[] = _("A commemorative RIBBON"
 const u8 gGiftRibbonDescriptionPart2_LovedPokemon[] = _("for a loved POKéMON.");
 const u8 gGiftRibbonDescriptionPart1_LoveForPokemon[] = _("RIBBON that shows");
 const u8 gGiftRibbonDescriptionPart2_LoveForPokemon[] = _("love for POKéMON.");
+const u8 gGiftRibbonDescriptionPart1_Extra1[] = _("The Holy Grail incident"); // Marine
+const u8 gGiftRibbonDescriptionPart2_Extra1[] = _("clearing RIBBON."); // Marine
+const u8 gGiftRibbonDescriptionPart1_Extra2[] = _("The Illusionary World"); // Land
+const u8 gGiftRibbonDescriptionPart2_Extra2[] = _("clearing RIBBON."); // Land
+const u8 gGiftRibbonDescriptionPart1_Extra3[] = _("RIBBON commemorating"); // Sky
+const u8 gGiftRibbonDescriptionPart2_Extra3[] = _("a miraculous event."); // Sky
+const u8 gGiftRibbonDescriptionPart1_Extra4[] = _("Beating the HOLOLIVE's"); // Country
+const u8 gGiftRibbonDescriptionPart2_Extra4[] = _("time traveller RIBBON."); // Country
+const u8 gGiftRibbonDescriptionPart1_Extra5[] = _("RIBBON for 666-win"); // National
+const u8 gGiftRibbonDescriptionPart2_Extra5[] = _("in the SDM Tower."); // National
+const u8 gGiftRibbonDescriptionPart1_Extra6[] = _("RIBBON awarded for"); // Earth 
+const u8 gGiftRibbonDescriptionPart2_Extra6[] = _("clearing all difficulties."); // Earth
+const u8 gGiftRibbonDescriptionPart1_Extra7[] = _("Multiverse incidents"); // World
+const u8 gGiftRibbonDescriptionPart2_Extra7[] = _("solving award RIBBON."); // World
 
 const u8 *const gGiftRibbonDescriptionPointers[MAX_GIFT_RIBBON][2] =
 {
@@ -105,6 +119,7 @@ const u8 *const gGiftRibbonDescriptionPointers[MAX_GIFT_RIBBON][2] =
     {gGiftRibbonDescriptionPart1_SummerHolidays,        gGiftRibbonDescriptionPart2_EmptyString},
     {gGiftRibbonDescriptionPart1_WinterHolidays,        gGiftRibbonDescriptionPart2_EmptyString},
     {gGiftRibbonDescriptionPart1_SpringHolidays,        gGiftRibbonDescriptionPart2_EmptyString},
+    /*
     {gGiftRibbonDescriptionPart1_Evergreen,             gGiftRibbonDescriptionPart2_EmptyString},
     {gGiftRibbonDescriptionPart1_SpecialHoliday,        gGiftRibbonDescriptionPart2_EmptyString},
     {gGiftRibbonDescriptionPart1_HardWorker,            gGiftRibbonDescriptionPart2_EmptyString},
@@ -112,4 +127,12 @@ const u8 *const gGiftRibbonDescriptionPointers[MAX_GIFT_RIBBON][2] =
     {gGiftRibbonDescriptionPart1_FullOfEnergy,          gGiftRibbonDescriptionPart2_EmptyString},
     {gGiftRibbonDescriptionPart1_LovedPokemon,          gGiftRibbonDescriptionPart2_LovedPokemon},
     {gGiftRibbonDescriptionPart1_LoveForPokemon,        gGiftRibbonDescriptionPart2_LoveForPokemon}
+    */
+    {gGiftRibbonDescriptionPart1_Extra1,                gGiftRibbonDescriptionPart2_Extra1},
+    {gGiftRibbonDescriptionPart1_Extra2,                gGiftRibbonDescriptionPart2_Extra2},
+    {gGiftRibbonDescriptionPart1_Extra3,                gGiftRibbonDescriptionPart2_Extra3},
+    {gGiftRibbonDescriptionPart1_Extra4,                gGiftRibbonDescriptionPart2_Extra4},
+    {gGiftRibbonDescriptionPart1_Extra5,                gGiftRibbonDescriptionPart2_Extra5},
+    {gGiftRibbonDescriptionPart1_Extra6,                gGiftRibbonDescriptionPart2_Extra6},
+    {gGiftRibbonDescriptionPart1_Extra7,                gGiftRibbonDescriptionPart2_Extra7},
 };

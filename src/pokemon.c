@@ -5610,6 +5610,25 @@ void BoxMonRestorePP(struct BoxPokemon *boxMon)
     }
 }
 
+void MonZeroedPP(struct Pokemon *mon)
+{
+    BoxMonZeroedPP(&mon->box);
+}
+
+void BoxMonZeroedPP(struct BoxPokemon *boxMon)
+{
+    int i;
+
+    for (i = 0; i < MAX_MON_MOVES; i++)
+    {
+        if (GetBoxMonData(boxMon, MON_DATA_MOVE1 + i, 0))
+        {
+            u8 pp = 0;
+            SetBoxMonData(boxMon, MON_DATA_PP1 + i, &pp);
+        }
+    }
+}
+
 void SetMonPreventsSwitchingString(void)
 {
     gLastUsedAbility = gBattleStruct->abilityPreventingSwitchout;

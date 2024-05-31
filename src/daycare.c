@@ -1110,14 +1110,16 @@ void CreateEgg(struct Pokemon *mon, u16 species, bool8 setHotSpringsLocation)
     u8 language;
     u8 metLocation;
     u8 isEgg;
-
+    u8 cycle;
+    
     CreateMon(mon, species, EGG_HATCH_LEVEL, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     metLevel = 0;
     ball = ITEM_POKE_BALL;
     language = LANGUAGE_JAPANESE;
     SetMonData(mon, MON_DATA_POKEBALL, &ball);
     SetMonData(mon, MON_DATA_NICKNAME, sJapaneseEggNickname);
-    SetMonData(mon, MON_DATA_FRIENDSHIP, &gSpeciesInfo[species].eggCycles);
+    cycle = 0;
+    SetMonData(mon, MON_DATA_FRIENDSHIP, &cycle);
     SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
     SetMonData(mon, MON_DATA_LANGUAGE, &language);
     if (setHotSpringsLocation)
@@ -1128,6 +1130,59 @@ void CreateEgg(struct Pokemon *mon, u16 species, bool8 setHotSpringsLocation)
 
     isEgg = TRUE;
     SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
+}
+
+void CreateEggMiracle(struct Pokemon *mon, u16 species, bool8 setHotSpringsLocation)
+{
+    u8 metLevel;
+    u16 ball;
+    u8 language;
+    u8 metLocation;
+    u8 isEgg;
+    u8 cycle;
+    u8 isModernFatefulEncounter;
+    u8 assignRibbon;
+    u8 gameMet;
+        
+    CreateMon(mon, species, EGG_HATCH_LEVEL, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    metLevel = 0;
+    ball = ITEM_CHERISH_BALL;
+    language = LANGUAGE_JAPANESE;
+    SetMonData(mon, MON_DATA_POKEBALL, &ball);
+    SetMonData(mon, MON_DATA_NICKNAME, sJapaneseEggNickname);
+    cycle = 0;
+    SetMonData(mon, MON_DATA_FRIENDSHIP, &cycle);
+    SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
+    SetMonData(mon, MON_DATA_LANGUAGE, &language);  
+    gameMet = 14;
+    SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+    assignRibbon = 1;
+//    SetMonData(mon, MON_DATA_MARINE_RIBBON, &assignRibbon);
+//    SetMonData(mon, MON_DATA_LAND_RIBBON, &assignRibbon);
+    SetMonData(mon, MON_DATA_SKY_RIBBON, &assignRibbon);
+//    SetMonData(mon, MON_DATA_COUNTRY_RIBBON, &assignRibbon);
+//    SetMonData(mon, MON_DATA_NATIONAL_RIBBON, &assignRibbon);
+//    SetMonData(mon, MON_DATA_EARTH_RIBBON, &assignRibbon);
+//    SetMonData(mon, MON_DATA_WORLD_RIBBON, &assignRibbon);
+    isModernFatefulEncounter = 1;
+    SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
+        if (setHotSpringsLocation)
+    {
+        metLocation = METLOC_SPECIAL_EGG;
+        SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
+    }
+
+    isEgg = TRUE;
+    SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
+
+    // Enabling gift ribbons text.
+    gSaveBlock1Ptr->giftRibbons[0] = 58;
+    gSaveBlock1Ptr->giftRibbons[1] = 59;
+    gSaveBlock1Ptr->giftRibbons[2] = 60;
+    gSaveBlock1Ptr->giftRibbons[3] = 61;
+    gSaveBlock1Ptr->giftRibbons[4] = 62;
+    gSaveBlock1Ptr->giftRibbons[5] = 63;
+    gSaveBlock1Ptr->giftRibbons[6] = 64;
 }
 
 static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *daycare)

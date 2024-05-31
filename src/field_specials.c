@@ -47,6 +47,7 @@
 #include "tv.h"
 #include "wallclock.h"
 #include "window.h"
+#include "egg_hatch.h"
 #include "constants/battle_frontier.h"
 #include "constants/battle_pyramid.h"
 #include "constants/battle_tower.h"
@@ -1398,6 +1399,487 @@ void GiveLeadMonEffortRibbon(void)
     SetMonData(leadMon, MON_DATA_EFFORT_RIBBON, &ribbonSet);
     if (GetRibbonCount(leadMon) > NUM_CUTIES_RIBBONS)
         TryPutSpotTheCutiesOnAir(leadMon, MON_DATA_EFFORT_RIBBON);
+}
+
+void GivePartyMonMarineRibbon(void)
+{
+    int i;
+    bool32 marineRibbonGet;
+    struct RibbonCounter {
+        u8 partyIndex;
+        u8 count;
+    } ribbonCounts[6];
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+
+        ribbonCounts[i].partyIndex = i;
+        ribbonCounts[i].count = 0;
+
+        if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES)
+         && !GetMonData(mon, MON_DATA_SANITY_IS_EGG)
+         && !GetMonData(mon, MON_DATA_MARINE_RIBBON))
+        {
+            u8 val[1] = {TRUE};
+            SetMonData(mon, MON_DATA_MARINE_RIBBON, val);
+            ribbonCounts[i].count = GetRibbonCount(mon);
+            marineRibbonGet = TRUE;
+        }
+    }
+
+    if (marineRibbonGet == TRUE)
+    {
+        IncrementGameStat(GAME_STAT_RECEIVED_RIBBONS);
+        FlagSet(FLAG_SYS_RIBBON_GET);
+
+        for (i = 1; i < 6; i++)
+        {
+            if (ribbonCounts[i].count > ribbonCounts[0].count)
+            {
+                struct RibbonCounter prevBest = ribbonCounts[0];
+                ribbonCounts[0] = ribbonCounts[i];
+                ribbonCounts[i] = prevBest;
+            }
+        }
+    }
+
+    gSaveBlock1Ptr->giftRibbons[0] = 58;
+    gSaveBlock1Ptr->giftRibbons[1] = 59;
+    gSaveBlock1Ptr->giftRibbons[2] = 60;
+    gSaveBlock1Ptr->giftRibbons[3] = 61;
+    gSaveBlock1Ptr->giftRibbons[4] = 62;
+    gSaveBlock1Ptr->giftRibbons[5] = 63;
+    gSaveBlock1Ptr->giftRibbons[6] = 64;
+}
+
+void GivePartyMonLandRibbon(void)
+{
+    int i;
+    bool32 landRibbonGet;
+    struct RibbonCounter {
+        u8 partyIndex;
+        u8 count;
+    } ribbonCounts[6];
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+
+        ribbonCounts[i].partyIndex = i;
+        ribbonCounts[i].count = 0;
+
+        if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES)
+         && !GetMonData(mon, MON_DATA_SANITY_IS_EGG)
+         && !GetMonData(mon, MON_DATA_LAND_RIBBON))
+        {
+            u8 val[1] = {TRUE};
+            SetMonData(mon, MON_DATA_LAND_RIBBON, val);
+            ribbonCounts[i].count = GetRibbonCount(mon);
+            landRibbonGet = TRUE;
+        }
+    }
+
+    if (landRibbonGet == TRUE)
+    {
+        IncrementGameStat(GAME_STAT_RECEIVED_RIBBONS);
+        FlagSet(FLAG_SYS_RIBBON_GET);
+
+        for (i = 1; i < 6; i++)
+        {
+            if (ribbonCounts[i].count > ribbonCounts[0].count)
+            {
+                struct RibbonCounter prevBest = ribbonCounts[0];
+                ribbonCounts[0] = ribbonCounts[i];
+                ribbonCounts[i] = prevBest;
+            }
+        }
+    }
+
+    gSaveBlock1Ptr->giftRibbons[0] = 58;
+    gSaveBlock1Ptr->giftRibbons[1] = 59;
+    gSaveBlock1Ptr->giftRibbons[2] = 60;
+    gSaveBlock1Ptr->giftRibbons[3] = 61;
+    gSaveBlock1Ptr->giftRibbons[4] = 62;
+    gSaveBlock1Ptr->giftRibbons[5] = 63;
+    gSaveBlock1Ptr->giftRibbons[6] = 64;
+}
+
+void GivePartyMonSkyRibbon(void)
+{
+    int i;
+    bool32 skyRibbonGet;
+    struct RibbonCounter {
+        u8 partyIndex;
+        u8 count;
+    } ribbonCounts[6];
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+
+        ribbonCounts[i].partyIndex = i;
+        ribbonCounts[i].count = 0;
+
+        if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES)
+         && !GetMonData(mon, MON_DATA_SANITY_IS_EGG)
+         && !GetMonData(mon, MON_DATA_SKY_RIBBON))
+        {
+            u8 val[1] = {TRUE};
+            SetMonData(mon, MON_DATA_SKY_RIBBON, val);
+            ribbonCounts[i].count = GetRibbonCount(mon);
+            skyRibbonGet = TRUE;
+        }
+    }
+
+    if (skyRibbonGet == TRUE)
+    {
+        IncrementGameStat(GAME_STAT_RECEIVED_RIBBONS);
+        FlagSet(FLAG_SYS_RIBBON_GET);
+
+        for (i = 1; i < 6; i++)
+        {
+            if (ribbonCounts[i].count > ribbonCounts[0].count)
+            {
+                struct RibbonCounter prevBest = ribbonCounts[0];
+                ribbonCounts[0] = ribbonCounts[i];
+                ribbonCounts[i] = prevBest;
+            }
+        }
+    }
+
+    gSaveBlock1Ptr->giftRibbons[0] = 58;
+    gSaveBlock1Ptr->giftRibbons[1] = 59;
+    gSaveBlock1Ptr->giftRibbons[2] = 60;
+    gSaveBlock1Ptr->giftRibbons[3] = 61;
+    gSaveBlock1Ptr->giftRibbons[4] = 62;
+    gSaveBlock1Ptr->giftRibbons[5] = 63;
+    gSaveBlock1Ptr->giftRibbons[6] = 64;
+}
+
+void GivePartyMonCountryRibbon(void)
+{
+    int i;
+    bool32 countryRibbonGet;
+    struct RibbonCounter {
+        u8 partyIndex;
+        u8 count;
+    } ribbonCounts[6];
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+
+        ribbonCounts[i].partyIndex = i;
+        ribbonCounts[i].count = 0;
+
+        if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES)
+         && !GetMonData(mon, MON_DATA_SANITY_IS_EGG)
+         && !GetMonData(mon, MON_DATA_COUNTRY_RIBBON))
+        {
+            u8 val[1] = {TRUE};
+            SetMonData(mon, MON_DATA_COUNTRY_RIBBON, val);
+            ribbonCounts[i].count = GetRibbonCount(mon);
+            countryRibbonGet = TRUE;
+        }
+    }
+
+    if (countryRibbonGet == TRUE)
+    {
+        IncrementGameStat(GAME_STAT_RECEIVED_RIBBONS);
+        FlagSet(FLAG_SYS_RIBBON_GET);
+
+        for (i = 1; i < 6; i++)
+        {
+            if (ribbonCounts[i].count > ribbonCounts[0].count)
+            {
+                struct RibbonCounter prevBest = ribbonCounts[0];
+                ribbonCounts[0] = ribbonCounts[i];
+                ribbonCounts[i] = prevBest;
+            }
+        }
+    }
+
+    gSaveBlock1Ptr->giftRibbons[0] = 58;
+    gSaveBlock1Ptr->giftRibbons[1] = 59;
+    gSaveBlock1Ptr->giftRibbons[2] = 60;
+    gSaveBlock1Ptr->giftRibbons[3] = 61;
+    gSaveBlock1Ptr->giftRibbons[4] = 62;
+    gSaveBlock1Ptr->giftRibbons[5] = 63;
+    gSaveBlock1Ptr->giftRibbons[6] = 64;
+}
+
+void GivePartyMonNationalRibbon(void)
+{
+    int i;
+    bool32 nationalRibbonGet;
+    struct RibbonCounter {
+        u8 partyIndex;
+        u8 count;
+    } ribbonCounts[6];
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+
+        ribbonCounts[i].partyIndex = i;
+        ribbonCounts[i].count = 0;
+
+        if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES)
+         && !GetMonData(mon, MON_DATA_SANITY_IS_EGG)
+         && !GetMonData(mon, MON_DATA_NATIONAL_RIBBON))
+        {
+            u8 val[1] = {TRUE};
+            SetMonData(mon, MON_DATA_NATIONAL_RIBBON, val);
+            ribbonCounts[i].count = GetRibbonCount(mon);
+            nationalRibbonGet = TRUE;
+        }
+    }
+
+    if (nationalRibbonGet == TRUE)
+    {
+        IncrementGameStat(GAME_STAT_RECEIVED_RIBBONS);
+        FlagSet(FLAG_SYS_RIBBON_GET);
+
+        for (i = 1; i < 6; i++)
+        {
+            if (ribbonCounts[i].count > ribbonCounts[0].count)
+            {
+                struct RibbonCounter prevBest = ribbonCounts[0];
+                ribbonCounts[0] = ribbonCounts[i];
+                ribbonCounts[i] = prevBest;
+            }
+        }
+    }
+
+    gSaveBlock1Ptr->giftRibbons[0] = 58;
+    gSaveBlock1Ptr->giftRibbons[1] = 59;
+    gSaveBlock1Ptr->giftRibbons[2] = 60;
+    gSaveBlock1Ptr->giftRibbons[3] = 61;
+    gSaveBlock1Ptr->giftRibbons[4] = 62;
+    gSaveBlock1Ptr->giftRibbons[5] = 63;
+    gSaveBlock1Ptr->giftRibbons[6] = 64;
+}
+
+void GivePartyMonEarthRibbon(void)
+{
+    int i;
+    bool32 earthRibbonGet;
+    struct RibbonCounter {
+        u8 partyIndex;
+        u8 count;
+    } ribbonCounts[6];
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+
+        ribbonCounts[i].partyIndex = i;
+        ribbonCounts[i].count = 0;
+
+        if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES)
+         && !GetMonData(mon, MON_DATA_SANITY_IS_EGG)
+         && !GetMonData(mon, MON_DATA_EARTH_RIBBON))
+        {
+            u8 val[1] = {TRUE};
+            SetMonData(mon, MON_DATA_EARTH_RIBBON, val);
+            ribbonCounts[i].count = GetRibbonCount(mon);
+            earthRibbonGet = TRUE;
+        }
+    }
+
+    if (earthRibbonGet == TRUE)
+    {
+        IncrementGameStat(GAME_STAT_RECEIVED_RIBBONS);
+        FlagSet(FLAG_SYS_RIBBON_GET);
+
+        for (i = 1; i < 6; i++)
+        {
+            if (ribbonCounts[i].count > ribbonCounts[0].count)
+            {
+                struct RibbonCounter prevBest = ribbonCounts[0];
+                ribbonCounts[0] = ribbonCounts[i];
+                ribbonCounts[i] = prevBest;
+            }
+        }
+    }
+
+    gSaveBlock1Ptr->giftRibbons[0] = 58;
+    gSaveBlock1Ptr->giftRibbons[1] = 59;
+    gSaveBlock1Ptr->giftRibbons[2] = 60;
+    gSaveBlock1Ptr->giftRibbons[3] = 61;
+    gSaveBlock1Ptr->giftRibbons[4] = 62;
+    gSaveBlock1Ptr->giftRibbons[5] = 63;
+    gSaveBlock1Ptr->giftRibbons[6] = 64;
+}
+
+void GivePartyMonWorldRibbon(void)
+{
+    int i;
+    bool32 worldRibbonGet;
+    struct RibbonCounter {
+        u8 partyIndex;
+        u8 count;
+    } ribbonCounts[6];
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+
+        ribbonCounts[i].partyIndex = i;
+        ribbonCounts[i].count = 0;
+
+        if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES)
+         && !GetMonData(mon, MON_DATA_SANITY_IS_EGG)
+         && !GetMonData(mon, MON_DATA_WORLD_RIBBON))
+        {
+            u8 val[1] = {TRUE};
+            SetMonData(mon, MON_DATA_WORLD_RIBBON, val);
+            ribbonCounts[i].count = GetRibbonCount(mon);
+            worldRibbonGet = TRUE;
+        }
+    }
+
+    if (worldRibbonGet == TRUE)
+    {
+        IncrementGameStat(GAME_STAT_RECEIVED_RIBBONS);
+        FlagSet(FLAG_SYS_RIBBON_GET);
+
+        for (i = 1; i < 6; i++)
+        {
+            if (ribbonCounts[i].count > ribbonCounts[0].count)
+            {
+                struct RibbonCounter prevBest = ribbonCounts[0];
+                ribbonCounts[0] = ribbonCounts[i];
+                ribbonCounts[i] = prevBest;
+            }
+        }
+    }
+
+    gSaveBlock1Ptr->giftRibbons[0] = 58;
+    gSaveBlock1Ptr->giftRibbons[1] = 59;
+    gSaveBlock1Ptr->giftRibbons[2] = 60;
+    gSaveBlock1Ptr->giftRibbons[3] = 61;
+    gSaveBlock1Ptr->giftRibbons[4] = 62;
+    gSaveBlock1Ptr->giftRibbons[5] = 63;
+    gSaveBlock1Ptr->giftRibbons[6] = 64;
+}
+
+void GiveLeadMonAllRibbons(void)
+{
+    int i = 0;
+    u8 hasCoolRibbon = 4;
+    u8 hasBeautyRibbon = 4;
+    u8 hasCuteRibbon = 4;
+    u8 hasSmartRibbon = 4;
+    u8 hasToughRibbon = 4;
+    u8 hasChampionRibbon = 1;
+    u8 hasWinningRibbon = 1;
+    u8 hasVictoryRibbon = 1;
+    u8 hasArtistRibbon = 1;
+    u8 hasEffortRibbon = 1;
+    u8 hasMarineRibbon = 1;
+    u8 hasLandRibbon = 1;
+    u8 hasSkyRibbon = 1;
+    u8 hasCountryRibbon = 1;
+    u8 hasNationalRibbon = 1;
+    u8 hasEarthRibbon = 1;
+    u8 hasWorldRibbon = 1;
+
+    struct Pokemon *mon = &gPlayerParty[i];
+
+    if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
+        {
+            SetMonData(mon, MON_DATA_COOL_RIBBON, &hasCoolRibbon);
+            SetMonData(mon, MON_DATA_BEAUTY_RIBBON, &hasBeautyRibbon);
+            SetMonData(mon, MON_DATA_CUTE_RIBBON, &hasCuteRibbon);
+            SetMonData(mon, MON_DATA_SMART_RIBBON, &hasSmartRibbon);
+            SetMonData(mon, MON_DATA_TOUGH_RIBBON, &hasToughRibbon);
+            SetMonData(mon, MON_DATA_CHAMPION_RIBBON, &hasChampionRibbon);
+            SetMonData(mon, MON_DATA_WINNING_RIBBON, &hasWinningRibbon);
+            SetMonData(mon, MON_DATA_VICTORY_RIBBON, &hasVictoryRibbon);
+            SetMonData(mon, MON_DATA_ARTIST_RIBBON, &hasArtistRibbon);
+            SetMonData(mon, MON_DATA_MARINE_RIBBON, &hasEffortRibbon);
+            SetMonData(mon, MON_DATA_EFFORT_RIBBON, &hasMarineRibbon);
+            SetMonData(mon, MON_DATA_LAND_RIBBON, &hasLandRibbon);
+            SetMonData(mon, MON_DATA_SKY_RIBBON, &hasSkyRibbon);
+            SetMonData(mon, MON_DATA_COUNTRY_RIBBON, &hasCountryRibbon);
+            SetMonData(mon, MON_DATA_NATIONAL_RIBBON, &hasNationalRibbon);
+            SetMonData(mon, MON_DATA_EARTH_RIBBON, &hasEarthRibbon);
+            SetMonData(mon, MON_DATA_WORLD_RIBBON, &hasWorldRibbon);
+            gSaveBlock1Ptr->giftRibbons[0] = 58;
+            gSaveBlock1Ptr->giftRibbons[1] = 59;
+            gSaveBlock1Ptr->giftRibbons[2] = 60;
+            gSaveBlock1Ptr->giftRibbons[3] = 61;
+            gSaveBlock1Ptr->giftRibbons[4] = 62;
+            gSaveBlock1Ptr->giftRibbons[5] = 63;
+            gSaveBlock1Ptr->giftRibbons[6] = 64;        
+        }
+
+}
+
+void SetLeadMonAllContestStats(void)
+{
+    int i = 0;
+    u8 contestStat = 255;
+    struct Pokemon *mon = &gPlayerParty[i];
+
+    if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
+        {
+            SetMonData(mon, MON_DATA_COOL, &contestStat);
+            SetMonData(mon, MON_DATA_BEAUTY, &contestStat);
+            SetMonData(mon, MON_DATA_CUTE, &contestStat);
+            SetMonData(mon, MON_DATA_SMART, &contestStat);
+            SetMonData(mon, MON_DATA_TOUGH, &contestStat);
+            SetMonData(mon, MON_DATA_SHEEN, &contestStat);
+        }    
+
+}
+
+void PartyMonBecomeEgg(void)
+{
+    int i;
+    u8 isEgg;
+    u8 cycle;
+    u16 item;
+    u8 shiny;
+    u8 gigantamaxFactor;
+    u8 teratype;
+    
+    for (i = 1; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+
+        if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
+        {
+            isEgg = TRUE;
+            cycle = 0;
+            item = ITEM_NONE;
+            u8 status = 0;
+            shiny = GetMonData(mon, MON_DATA_IS_SHINY);
+            gigantamaxFactor = GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR);
+            teratype = GetMonData(mon, MON_DATA_TERA_TYPE);
+            SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
+            SetMonData(mon, MON_DATA_FRIENDSHIP, &cycle);
+            SetMonData(mon, MON_DATA_HELD_ITEM, &item);
+            SetMonData(mon, MON_DATA_STATUS, &status);
+            SetMonData(mon, MON_DATA_IS_SHINY, &shiny);
+            SetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR, &gigantamaxFactor);
+            SetMonData(mon, MON_DATA_TERA_TYPE, &teratype);
+        }
+    }
+
+    struct Pokemon *mon = &gPlayerParty[0];
+
+    u32 experience = 1;
+    u8 status = 7;
+    u16 lostHP = GetMonData(mon, MON_DATA_MAX_HP) - 1;
+    SetMonData(mon, MON_DATA_EXP, &experience);
+    SetMonData(mon, MON_DATA_STATUS, &status);
+    SetMonData(mon, MON_DATA_HP_LOST, &lostHP);
+
+    CalculateMonStats(mon);
+    MonZeroedPP(mon);
 }
 
 bool8 Special_AreLeadMonEVsMaxedOut(void)

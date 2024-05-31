@@ -316,6 +316,17 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     u8 i, friendship, language, gameMet, markings, isModernFatefulEncounter;
     u16 moves[MAX_MON_MOVES];
     u32 ivs[NUM_STATS];
+    u16 contestCool, contestBeauty, contestCute, contestSmart, contestTough, contestSheen;
+    u8 hasCoolRibbon, hasBeautyRibbon, hasCuteRibbon, hasSmartRibbon, hasToughRibbon;
+    u8 hasChampionRibbon, hasWinningRibbon, hasVictoryRibbon, hasArtistRibbon, hasEffortRibbon;
+    u8 hasMarineRibbon, hasLandRibbon, hasSkyRibbon, hasCountryRibbon, hasNationalRibbon, hasEarthRibbon, hasWorldRibbon;
+    u16 ball;
+    u16 item;
+    u16 move1, move2, move3, move4;
+    u8 shinyness;
+    u8 ability;
+    u8 gigantamaxFactor;
+    u8 teratype;
 
     species = GetMonData(egg, MON_DATA_SPECIES);
 
@@ -332,8 +343,36 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     gameMet = GetMonData(egg, MON_DATA_MET_GAME);
     markings = GetMonData(egg, MON_DATA_MARKINGS);
     pokerus = GetMonData(egg, MON_DATA_POKERUS);
+    shinyness = GetMonData(egg, MON_DATA_IS_SHINY);
+    ability = GetMonData(egg, MON_DATA_ABILITY_NUM);
+    gigantamaxFactor = GetMonData(egg, MON_DATA_GIGANTAMAX_FACTOR);
+    teratype = GetMonData(egg, MON_DATA_TERA_TYPE);
     isModernFatefulEncounter = GetMonData(egg, MON_DATA_MODERN_FATEFUL_ENCOUNTER);
-
+    contestCool = GetMonData(egg, MON_DATA_COOL);
+    contestBeauty = GetMonData(egg, MON_DATA_BEAUTY);
+    contestCute = GetMonData(egg, MON_DATA_CUTE);
+    contestSmart = GetMonData(egg, MON_DATA_SMART);
+    contestTough = GetMonData(egg, MON_DATA_TOUGH);
+    contestSheen = GetMonData(egg, MON_DATA_SHEEN);
+    hasCoolRibbon = GetMonData(egg, MON_DATA_COOL_RIBBON);
+    hasBeautyRibbon = GetMonData(egg, MON_DATA_BEAUTY_RIBBON);
+    hasCuteRibbon = GetMonData(egg, MON_DATA_CUTE_RIBBON);
+    hasSmartRibbon = GetMonData(egg, MON_DATA_SMART_RIBBON);
+    hasToughRibbon = GetMonData(egg, MON_DATA_TOUGH_RIBBON);
+    hasChampionRibbon = GetMonData(egg, MON_DATA_CHAMPION_RIBBON);
+    hasWinningRibbon = GetMonData(egg, MON_DATA_WINNING_RIBBON);
+    hasVictoryRibbon = GetMonData(egg, MON_DATA_VICTORY_RIBBON);
+    hasArtistRibbon = GetMonData(egg, MON_DATA_ARTIST_RIBBON);
+    hasEffortRibbon = GetMonData(egg, MON_DATA_EFFORT_RIBBON);
+    hasMarineRibbon = GetMonData(egg, MON_DATA_MARINE_RIBBON);
+    hasLandRibbon = GetMonData(egg, MON_DATA_LAND_RIBBON);
+    hasSkyRibbon = GetMonData(egg, MON_DATA_SKY_RIBBON);
+    hasCountryRibbon = GetMonData(egg, MON_DATA_COUNTRY_RIBBON);
+    hasNationalRibbon = GetMonData(egg, MON_DATA_NATIONAL_RIBBON);
+    hasEarthRibbon = GetMonData(egg, MON_DATA_EARTH_RIBBON);
+    hasWorldRibbon = GetMonData(egg, MON_DATA_WORLD_RIBBON);
+    ball = GetMonData(egg, MON_DATA_POKEBALL);
+    
     CreateMon(temp, species, EGG_HATCH_LEVEL, USE_RANDOM_IVS, TRUE, personality, OT_ID_PLAYER_ID, 0);
 
     for (i = 0; i < MAX_MON_MOVES; i++)
@@ -350,7 +389,67 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     friendship = 120;
     SetMonData(temp, MON_DATA_FRIENDSHIP, &friendship);
     SetMonData(temp, MON_DATA_POKERUS, &pokerus);
+    SetMonData(temp, MON_DATA_IS_SHINY, &shinyness);
+    SetMonData(temp, MON_DATA_ABILITY_NUM, &ability);
+    SetMonData(temp, MON_DATA_GIGANTAMAX_FACTOR, &gigantamaxFactor);
+    SetMonData(temp, MON_DATA_TERA_TYPE, &teratype);
     SetMonData(temp, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
+    SetMonData(temp, MON_DATA_COOL, &contestCool);
+    SetMonData(temp, MON_DATA_BEAUTY, &contestBeauty);
+    SetMonData(temp, MON_DATA_CUTE, &contestCute);
+    SetMonData(temp, MON_DATA_SMART, &contestSmart);
+    SetMonData(temp, MON_DATA_TOUGH, &contestTough);
+    SetMonData(temp, MON_DATA_SHEEN, &contestSheen);
+    SetMonData(temp, MON_DATA_COOL_RIBBON, &hasCoolRibbon);
+    SetMonData(temp, MON_DATA_BEAUTY_RIBBON, &hasBeautyRibbon);
+    SetMonData(temp, MON_DATA_CUTE_RIBBON, &hasCuteRibbon);
+    SetMonData(temp, MON_DATA_SMART_RIBBON, &hasSmartRibbon);
+    SetMonData(temp, MON_DATA_TOUGH_RIBBON, &hasToughRibbon);
+    SetMonData(temp, MON_DATA_CHAMPION_RIBBON, &hasChampionRibbon);
+    SetMonData(temp, MON_DATA_WINNING_RIBBON, &hasWinningRibbon);
+    SetMonData(temp, MON_DATA_VICTORY_RIBBON, &hasVictoryRibbon);
+    SetMonData(temp, MON_DATA_ARTIST_RIBBON, &hasArtistRibbon);
+    SetMonData(temp, MON_DATA_MARINE_RIBBON, &hasEffortRibbon);
+    SetMonData(temp, MON_DATA_EFFORT_RIBBON, &hasMarineRibbon);
+    SetMonData(temp, MON_DATA_LAND_RIBBON, &hasLandRibbon);
+    SetMonData(temp, MON_DATA_SKY_RIBBON, &hasSkyRibbon);
+    SetMonData(temp, MON_DATA_COUNTRY_RIBBON, &hasCountryRibbon);
+    SetMonData(temp, MON_DATA_NATIONAL_RIBBON, &hasNationalRibbon);
+    SetMonData(temp, MON_DATA_EARTH_RIBBON, &hasEarthRibbon);
+    SetMonData(temp, MON_DATA_WORLD_RIBBON, &hasWorldRibbon);
+    SetMonData(temp, MON_DATA_POKEBALL, &ball);
+
+    if (species == SPECIES_MEW && gameMet == 14 && isModernFatefulEncounter == 1) 
+       {
+       item = ITEM_MEWNIUM_Z;
+       move1 = MOVE_PSYCHIC;
+       move2 = MOVE_CELEBRATE;
+       move3 = MOVE_SKETCH;
+       move4 = MOVE_LIGHT_OF_RUIN;
+       SetMonData(temp, MON_DATA_HELD_ITEM, &item);
+       SetMonData(temp, MON_DATA_MOVE1, &move1);
+       SetMonData(temp, MON_DATA_MOVE2, &move2);
+       SetMonData(temp, MON_DATA_MOVE3, &move3);
+       SetMonData(temp, MON_DATA_MOVE4, &move4);
+       }
+    else if (species == SPECIES_CELEBI && gameMet == 14 && isModernFatefulEncounter == 1) 
+       {
+       item = ITEM_JABOCA_BERRY;
+       move1 = MOVE_SEED_FLARE;
+       move2 = MOVE_CELEBRATE;
+       move3 = MOVE_SKETCH;
+       move4 = MOVE_ROAR_OF_TIME;
+       SetMonData(temp, MON_DATA_HELD_ITEM, &item);
+       SetMonData(temp, MON_DATA_MOVE1, &move1);
+       SetMonData(temp, MON_DATA_MOVE2, &move2);
+       SetMonData(temp, MON_DATA_MOVE3, &move3);
+       SetMonData(temp, MON_DATA_MOVE4, &move4);
+       }
+    else
+       {
+       item = ITEM_NONE;
+       SetMonData(temp, MON_DATA_HELD_ITEM, &item);
+       }
 
     *egg = *temp;
 }
@@ -362,8 +461,11 @@ static void AddHatchedMonToParty(u8 id)
     u8 name[POKEMON_NAME_LENGTH + 1];
     u16 metLevel;
     u8 metLocation;
+    u8 gameMet;
+    int experience;
+    u8 isModernFatefulEncounter;
     struct Pokemon *mon = &gPlayerParty[id];
-
+    
     CreateHatchedMon(mon, &gEnemyParty[0]);
     SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
 
@@ -376,13 +478,45 @@ static void AddHatchedMonToParty(u8 id)
     GetSetPokedexFlag(species, FLAG_SET_CAUGHT);
 
     GetMonNickname2(mon, gStringVar1);
+    
+    species = GetMonData(mon, MON_DATA_SPECIES);
+    gameMet = GetMonData(mon, MON_DATA_MET_GAME);
+    isModernFatefulEncounter = GetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER);
 
+    if(species == SPECIES_MEW && gameMet == 14 && isModernFatefulEncounter == 1)
+    {
+        metLevel = 0;
+        experience = 1;
+        metLocation = METLOC_FATEFUL_ENCOUNTER;
+        SetMonData(mon, MON_DATA_EXP, &experience);
+        SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
+        SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
+    }
+    else if(species == SPECIES_CELEBI && gameMet == 14 && isModernFatefulEncounter == 1)
+    {
+        metLevel = 0;
+        experience = 1;
+        metLocation = METLOC_FATEFUL_ENCOUNTER;
+        SetMonData(mon, MON_DATA_EXP, &experience);
+        SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
+        SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
+    }
+    else if(gameMet == 14)
+    {
+        metLevel = 0;
+        metLocation = METLOC_FATEFUL_ENCOUNTER;
+        SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
+        SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
+    }    
+    else 
+    {
     // A met level of 0 is interpreted on the summary screen as "hatched at"
     metLevel = 0;
     SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
 
     metLocation = GetCurrentRegionMapSectionId();
     SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
+    }
 
     MonRestorePP(mon);
     CalculateMonStats(mon);

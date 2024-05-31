@@ -554,3 +554,13 @@ gSpecials::
 	def_special Script_GetChosenMonDefensiveEVs
 	def_special Script_GetChosenMonOffensiveIVs
 	def_special Script_GetChosenMonDefensiveIVs
+	def_special GivePartyMonMarineRibbon
+	def_special GivePartyMonLandRibbon
+	def_special GivePartyMonSkyRibbon
+	def_special GivePartyMonCountryRibbon
+	def_special GivePartyMonNationalRibbon
+	def_special GivePartyMonEarthRibbon
+	def_special GivePartyMonWorldRibbon
+	def_special PartyMonBecomeEgg
+	def_special GiveLeadMonAllRibbons
+	def_special SetLeadMonAllContestStats

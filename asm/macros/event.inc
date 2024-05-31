@@ -1813,6 +1813,12 @@
 	_dynmultichoice \left, \top, \ignoreBPress, \maxBeforeScroll, \shouldSort, \initialSelected, \callbacks, NULL
 	.endm
 
+	@ Gives the player an Egg of the specified species.
+	@ VAR_RESULT will be set to MON_GIVEN_TO_PARTY, MON_GIVEN_TO_PC, or MON_CANT_GIVE depending on the outcome.
+	.macro giveeggmiracle species:req
+	.byte 0xe5
+	.2byte \species
+	.endm
 
 @ Supplementary
 

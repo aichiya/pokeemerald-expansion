@@ -68,6 +68,18 @@ u8 ScriptGiveEgg(u16 species)
     return GiveMonToPlayer(&mon);
 }
 
+u8 ScriptGiveEggMiracle(u16 species)
+{
+    struct Pokemon mon;
+    u8 isEgg;
+
+    CreateEggMiracle(&mon, species, TRUE);
+    isEgg = TRUE;
+    SetMonData(&mon, MON_DATA_IS_EGG, &isEgg);
+
+    return GiveMonToPlayer(&mon);
+}
+
 void HasEnoughMonsForDoubleBattle(void)
 {
     switch (GetMonsStateToDoubles())

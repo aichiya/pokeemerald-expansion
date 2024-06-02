@@ -313,7 +313,7 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
 {
     u16 species;
     u32 personality, pokerus;
-    u8 i, friendship, language, gameMet, markings, isModernFatefulEncounter;
+    u8 i, friendship, language, gameMet, markings, isModernFatefulEncounter, ball;
     u16 moves[MAX_MON_MOVES];
     u32 ivs[NUM_STATS];
     u16 contestCool, contestBeauty, contestCute, contestSmart, contestTough, contestSheen;
@@ -372,7 +372,7 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     hasEarthRibbon = GetMonData(egg, MON_DATA_EARTH_RIBBON);
     hasWorldRibbon = GetMonData(egg, MON_DATA_WORLD_RIBBON);
     ball = GetMonData(egg, MON_DATA_POKEBALL);
-    
+
     CreateMon(temp, species, EGG_HATCH_LEVEL, USE_RANDOM_IVS, TRUE, personality, OT_ID_PLAYER_ID, 0);
 
     for (i = 0; i < MAX_MON_MOVES; i++)

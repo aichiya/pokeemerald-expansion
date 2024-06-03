@@ -320,7 +320,6 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     u8 hasCoolRibbon, hasBeautyRibbon, hasCuteRibbon, hasSmartRibbon, hasToughRibbon;
     u8 hasChampionRibbon, hasWinningRibbon, hasVictoryRibbon, hasArtistRibbon, hasEffortRibbon;
     u8 hasMarineRibbon, hasLandRibbon, hasSkyRibbon, hasCountryRibbon, hasNationalRibbon, hasEarthRibbon, hasWorldRibbon;
-    u16 ball;
     u16 item;
     u16 move1, move2, move3, move4;
     u8 shinyness;

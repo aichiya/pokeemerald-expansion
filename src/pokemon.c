@@ -56,6 +56,7 @@
 #include "constants/trainers.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+#include "constants/vars.h"
 
 #define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_9) ? 160 : 220)
 
@@ -1047,6 +1048,306 @@ void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level,
     }
 
     CreateMon(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
+}
+
+void CreateMonGift1(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 hasFixedPersonality, u32 fixedPersonality, u8 otIdType, u32 fixedOtId)
+{
+    u32 mail;
+    ZeroMonData(mon);
+    CreateBoxMonGift1(&mon->box, species, level, fixedIV, hasFixedPersonality, fixedPersonality, otIdType, fixedOtId);
+    SetMonData(mon, MON_DATA_LEVEL, &level);
+    mail = MAIL_NONE;
+    SetMonData(mon, MON_DATA_MAIL, &mail);
+    CalculateMonStats(mon);
+}
+
+void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, u8 hasFixedPersonality, u32 fixedPersonality, u8 otIdType, u32 fixedOtId)
+{
+    u8 speciesName[POKEMON_NAME_LENGTH + 1];
+    u32 personality;
+    u32 value;
+    u16 checksum;
+    u8 i;
+    u8 availableIVs[NUM_STATS];
+    u8 selectedIvs[LEGENDARY_PERFECT_IV_COUNT];
+    bool32 isShiny;
+
+    ZeroBoxMonData(boxMon);
+
+    if (hasFixedPersonality)
+        personality = fixedPersonality;
+    else
+        personality = Random32();
+
+    // Determine original trainer ID
+    if (otIdType == OT_ID_RANDOM_NO_SHINY)
+    {
+        value = Random32();
+        isShiny = FALSE;
+    }
+    else if (otIdType == OT_ID_PRESET)
+    {
+        value = fixedOtId;
+        isShiny = GET_SHINY_VALUE(value, personality) < SHINY_ODDS;
+    }
+    else // Player is the OT
+    {
+        value = gSaveBlock2Ptr->playerTrainerId[0]
+              | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
+              | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
+              | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
+
+        if (P_FLAG_FORCE_NO_SHINY != 0 && FlagGet(P_FLAG_FORCE_NO_SHINY))
+        {
+            isShiny = FALSE;
+        }
+        else if (P_FLAG_FORCE_SHINY != 0 && FlagGet(P_FLAG_FORCE_SHINY))
+        {
+            isShiny = TRUE;
+        }
+        else
+        {
+            u32 totalRerolls = 0;
+            if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
+                totalRerolls += I_SHINY_CHARM_ADDITIONAL_ROLLS;
+            if (LURE_STEP_COUNT != 0)
+                totalRerolls += 1;
+
+            while (GET_SHINY_VALUE(value, personality) >= SHINY_ODDS && totalRerolls > 0)
+            {
+                personality = Random32();
+                totalRerolls--;
+            }
+
+            isShiny = GET_SHINY_VALUE(value, personality) < SHINY_ODDS;
+        }
+    }
+
+    SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
+    if (VarGet(VAR_GIFTMON_OT_SETTING) == 254)
+       {
+        u32 otId = 92538244;
+        SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Aichiya);
+       }
+    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 253)
+       {
+        u32 otId = 87622969;
+        SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Ame);
+       }
+    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 252)
+       {
+        u32 otId = 1577803275;
+        SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_BlueShell);
+       }
+    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 10)
+       {
+        u32 otId = 28443058;
+        SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Tsukasa);
+       }
+    else
+       {
+        SetBoxMonData(boxMon, MON_DATA_OT_ID, &value);
+        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);    
+       }
+    
+    checksum = CalculateBoxMonChecksum(boxMon);
+    SetBoxMonData(boxMon, MON_DATA_CHECKSUM, &checksum);
+    EncryptBoxMon(boxMon);
+    SetBoxMonData(boxMon, MON_DATA_IS_SHINY, &isShiny);
+    StringCopy(speciesName, GetSpeciesName(species));
+    SetBoxMonData(boxMon, MON_DATA_NICKNAME, speciesName);
+    SetBoxMonData(boxMon, MON_DATA_LANGUAGE, &gGameLanguage); 
+    SetBoxMonData(boxMon, MON_DATA_SPECIES, &species);
+    SetBoxMonData(boxMon, MON_DATA_EXP, &gExperienceTables[gSpeciesInfo[species].growthRate][level]);
+    SetBoxMonData(boxMon, MON_DATA_FRIENDSHIP, &gSpeciesInfo[species].friendship);
+    if (VarGet(VAR_GIFTMON_OT_SETTING) == 254)
+    {
+        u8 location = 254;
+        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+        VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+        u8 gameMet = 14;
+        SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+    }
+    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 253)
+    {
+        u8 location = 253;
+        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+        VarSet(VAR_GIFTMON2_IDENTIFIER, 253);
+        u8 gameMet = 14;
+        SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+    }
+    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 252)
+    {
+        u8 location = 252;
+        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+        VarSet(VAR_GIFTMON3_IDENTIFIER, 252);
+        u8 gameMet = 14;
+        SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+    }
+    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 10)
+    {
+        u8 location = 10;
+        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+        // VarSet(VAR_GIFTMON4_IDENTIFIER, 10);
+        u8 gameMet = 14;
+        SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+    }
+    else
+    {
+        value = GetCurrentRegionMapSectionId();
+        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &value);
+        SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gGameVersion);
+    }
+    SetBoxMonData(boxMon, MON_DATA_MET_LEVEL, &level);
+    value = ITEM_POKE_BALL;
+    SetBoxMonData(boxMon, MON_DATA_POKEBALL, &value);
+    SetBoxMonData(boxMon, MON_DATA_OT_GENDER, 0);
+    u8 hasModernFatefulEncounter = TRUE;
+    SetBoxMonData(boxMon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &hasModernFatefulEncounter);
+    u8 hasRibbon = TRUE;
+    SetBoxMonData(boxMon, MON_DATA_SKY_RIBBON, &hasRibbon);
+
+    if (fixedIV < USE_RANDOM_IVS)
+    {
+        SetBoxMonData(boxMon, MON_DATA_HP_IV, &fixedIV);
+        SetBoxMonData(boxMon, MON_DATA_ATK_IV, &fixedIV);
+        SetBoxMonData(boxMon, MON_DATA_DEF_IV, &fixedIV);
+        SetBoxMonData(boxMon, MON_DATA_SPEED_IV, &fixedIV);
+        SetBoxMonData(boxMon, MON_DATA_SPATK_IV, &fixedIV);
+        SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &fixedIV);
+    }
+    else
+    {
+        u32 iv;
+        value = Random();
+
+        iv = value & MAX_IV_MASK;
+        SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
+        iv = (value & (MAX_IV_MASK << 5)) >> 5;
+        SetBoxMonData(boxMon, MON_DATA_ATK_IV, &iv);
+        iv = (value & (MAX_IV_MASK << 10)) >> 10;
+        SetBoxMonData(boxMon, MON_DATA_DEF_IV, &iv);
+
+        value = Random();
+
+        iv = value & MAX_IV_MASK;
+        SetBoxMonData(boxMon, MON_DATA_SPEED_IV, &iv);
+        iv = (value & (MAX_IV_MASK << 5)) >> 5;
+        SetBoxMonData(boxMon, MON_DATA_SPATK_IV, &iv);
+        iv = (value & (MAX_IV_MASK << 10)) >> 10;
+        SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
+
+        if (gSpeciesInfo[species].allPerfectIVs)
+        {
+            iv = MAX_PER_STAT_IVS;
+            SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
+            SetBoxMonData(boxMon, MON_DATA_ATK_IV, &iv);
+            SetBoxMonData(boxMon, MON_DATA_DEF_IV, &iv);
+            SetBoxMonData(boxMon, MON_DATA_SPEED_IV, &iv);
+            SetBoxMonData(boxMon, MON_DATA_SPATK_IV, &iv);
+            SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
+        }
+        else if (P_LEGENDARY_PERFECT_IVS >= GEN_6
+         && (gSpeciesInfo[species].isLegendary
+          || gSpeciesInfo[species].isMythical
+          || gSpeciesInfo[species].isUltraBeast
+          || gSpeciesInfo[species].isTotem))
+        {
+            iv = MAX_PER_STAT_IVS;
+            // Initialize a list of IV indices.
+            for (i = 0; i < NUM_STATS; i++)
+            {
+                availableIVs[i] = i;
+            }
+
+            // Select the 3 IVs that will be perfected.
+            for (i = 0; i < LEGENDARY_PERFECT_IV_COUNT; i++)
+            {
+                u8 index = Random() % (NUM_STATS - i);
+                selectedIvs[i] = availableIVs[index];
+                RemoveIVIndexFromList(availableIVs, index);
+            }
+            for (i = 0; i < LEGENDARY_PERFECT_IV_COUNT; i++)
+            {
+                switch (selectedIvs[i])
+                {
+                case STAT_HP:
+                    SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
+                    break;
+                case STAT_ATK:
+                    SetBoxMonData(boxMon, MON_DATA_ATK_IV, &iv);
+                    break;
+                case STAT_DEF:
+                    SetBoxMonData(boxMon, MON_DATA_DEF_IV, &iv);
+                    break;
+                case STAT_SPEED:
+                    SetBoxMonData(boxMon, MON_DATA_SPEED_IV, &iv);
+                    break;
+                case STAT_SPATK:
+                    SetBoxMonData(boxMon, MON_DATA_SPATK_IV, &iv);
+                    break;
+                case STAT_SPDEF:
+                    SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
+                    break;
+                }
+            }
+        }
+    }
+
+    if (gSpeciesInfo[species].abilities[1])
+    {
+        value = personality & 1;
+        SetBoxMonData(boxMon, MON_DATA_ABILITY_NUM, &value);
+    }
+
+    GiveBoxMonInitialMoveset(boxMon);
+}
+
+void CreateMonWithNatureGift1(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 nature)
+{
+    u32 personality;
+
+    do
+    {
+        personality = Random32();
+    }
+    while (nature != GetNatureFromPersonality(personality));
+
+    CreateMonGift1(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
+}
+
+void CreateMonWithGenderNatureLetterGift1(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 gender, u8 nature, u8 unownLetter)
+{
+    u32 personality;
+
+    if ((u8)(unownLetter - 1) < NUM_UNOWN_FORMS)
+    {
+        u16 actualLetter;
+
+        do
+        {
+            personality = Random32();
+            actualLetter = GET_UNOWN_LETTER(personality);
+        }
+        while (nature != GetNatureFromPersonality(personality)
+            || gender != GetGenderFromSpeciesAndPersonality(species, personality)
+            || actualLetter != unownLetter - 1);
+    }
+    else
+    {
+        do
+        {
+            personality = Random32();
+        }
+        while (nature != GetNatureFromPersonality(personality)
+            || gender != GetGenderFromSpeciesAndPersonality(species, personality));
+    }
+
+    CreateMonGift1(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
 }
 
 // This is only used to create Wally's Ralts.

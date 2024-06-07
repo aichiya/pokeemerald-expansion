@@ -26,6 +26,7 @@
 #include "constants/abilities.h"
 #include "constants/items.h"
 #include "constants/battle_frontier.h"
+#include "strings.h"
 
 static void CB2_ReturnFromChooseHalfParty(void);
 static void CB2_ReturnFromChooseBattleFrontierParty(void);
@@ -429,6 +430,192 @@ u32 ScriptGiveMonParameterized(u16 species, u8 level, u16 item, u8 ball, u8 natu
     return sentToPc;
 }
 
+u32 ScriptGiveMonParameterizedGift1(u16 species, u8 level, u16 item, u8 ball, u8 nature, u8 abilityNum, u8 gender, u8 *evs, u8 *ivs, u16 *moves, bool8 isShiny, bool8 ggMaxFactor, u8 teraType)
+{
+    u16 nationalDexNum;
+    int sentToPc;
+    struct Pokemon mon;
+    u32 i;
+    u8 genderRatio = gSpeciesInfo[species].genderRatio;
+    u16 targetSpecies;
+
+    // check whether to use a specific nature or a random one
+    if (nature >= NUM_NATURES)
+    {
+        if (OW_SYNCHRONIZE_NATURE >= GEN_6
+         && (gSpeciesInfo[species].eggGroups[0] == EGG_GROUP_NO_EGGS_DISCOVERED || OW_SYNCHRONIZE_NATURE == GEN_7))
+            nature = PickWildMonNature();
+        else
+            nature = Random() % NUM_NATURES;
+    }
+
+    // create a Pokémon with basic data
+    if ((gender == MON_MALE && genderRatio != MON_FEMALE && genderRatio != MON_GENDERLESS)
+     || (gender == MON_FEMALE && genderRatio != MON_MALE && genderRatio != MON_GENDERLESS)
+     || (gender == MON_GENDERLESS && genderRatio == MON_GENDERLESS))
+        CreateMonWithGenderNatureLetterGift1(&mon, species, level, 32, gender, nature, 0);
+    else
+        CreateMonWithNatureGift1(&mon, species, level, 32, nature);
+
+    // shininess
+    if (P_FLAG_FORCE_SHINY != 0 && FlagGet(P_FLAG_FORCE_SHINY))
+        isShiny = TRUE;
+    else if (P_FLAG_FORCE_NO_SHINY != 0 && FlagGet(P_FLAG_FORCE_NO_SHINY))
+        isShiny = FALSE;
+    SetMonData(&mon, MON_DATA_IS_SHINY, &isShiny);
+
+    // gigantamax factor
+    SetMonData(&mon, MON_DATA_GIGANTAMAX_FACTOR, &ggMaxFactor);
+
+    // tera type
+    if (teraType >= NUMBER_OF_MON_TYPES)
+        teraType = gSpeciesInfo[species].types[0];
+    SetMonData(&mon, MON_DATA_TERA_TYPE, &teraType);
+
+    // EV and IV
+    for (i = 0; i < NUM_STATS; i++)
+    {
+        // EV
+        if (evs[i] <= MAX_PER_STAT_EVS)
+            SetMonData(&mon, MON_DATA_HP_EV + i, &evs[i]);
+
+        // IV
+        if (ivs[i] <= MAX_PER_STAT_IVS)
+            SetMonData(&mon, MON_DATA_HP_IV + i, &ivs[i]);
+    }
+    CalculateMonStats(&mon);
+
+    // moves
+    for (i = 0; i < MAX_MON_MOVES; i++)
+    {
+        if (moves[0] == MOVE_NONE)
+            break;
+        if (moves[i] >= MOVES_COUNT)
+            continue;
+        SetMonMoveSlot(&mon, moves[i], i);
+    }
+
+    // ability
+    if (abilityNum == NUM_ABILITY_PERSONALITY)
+    {
+        abilityNum = GetMonData(&mon, MON_DATA_PERSONALITY) & 1;
+    }
+    else if (abilityNum > NUM_NORMAL_ABILITY_SLOTS || GetAbilityBySpecies(species, abilityNum) == ABILITY_NONE)
+    {
+        do {
+            abilityNum = Random() % NUM_ABILITY_SLOTS; // includes hidden abilities
+        } while (GetAbilityBySpecies(species, abilityNum) == ABILITY_NONE);
+    }
+    SetMonData(&mon, MON_DATA_ABILITY_NUM, &abilityNum);
+
+    // ball
+    if (ball >= POKEBALL_COUNT)
+        ball = ITEM_POKE_BALL;
+    SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+
+    // held item
+    SetMonData(&mon, MON_DATA_HELD_ITEM, &item);
+
+    // In case a mon with a form changing item is given. Eg: SPECIES_ARCEUS_NORMAL with ITEM_SPLASH_PLATE will transform into SPECIES_ARCEUS_WATER upon gifted.
+    targetSpecies = GetFormChangeTargetSpecies(&mon, FORM_CHANGE_ITEM_HOLD, 0);
+    if (targetSpecies != SPECIES_NONE)
+        SetMonData(&mon, MON_DATA_SPECIES, &targetSpecies);
+
+    // assign gift parameters
+    if(VarGet(VAR_GIFTMON_OT_SETTING) == 254)
+    {
+        SetMonData(&mon, MON_DATA_OT_NAME, gText_Aichiya);
+        bool8 otGenderGift = 0;
+        SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
+        u8 location = 254;
+        SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
+        VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+        ball = ITEM_CHERISH_BALL;
+        SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+        u8 gameMet = 14;
+        SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
+    }
+    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 253)
+    {
+        SetMonData(&mon, MON_DATA_OT_NAME, gText_Ame);
+        bool8 otGenderGift = 1;
+        SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
+        u8 location = 253;
+        SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
+        VarSet(VAR_GIFTMON2_IDENTIFIER, 253);
+        ball = ITEM_CHERISH_BALL;
+        SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+        u8 gameMet = 14;
+        SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
+    }   
+    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 252)
+    {
+        SetMonData(&mon, MON_DATA_OT_NAME, gText_BlueShell);
+        bool8 otGenderGift = 0;
+        SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
+        u8 location = 252;
+        SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
+        VarSet(VAR_GIFTMON3_IDENTIFIER, 252);
+        ball = ITEM_CHERISH_BALL;
+        SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+        u8 gameMet = 14;
+        SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
+    }
+    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 10)
+    {
+        SetMonData(&mon, MON_DATA_OT_NAME, gText_Tsukasa);
+        bool8 otGenderGift = 0;
+        SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
+        u8 location = 10;
+        SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
+        // VarSet(VAR_GIFTMON3_IDENTIFIER, 10);
+        ball = ITEM_CHERISH_BALL;
+        SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+        u8 gameMet = 14;
+        SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
+    }
+    else
+    {
+        SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+        SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+    }
+    u8 hasModernFatefulEncounter = TRUE;
+    SetMonData(&mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &hasModernFatefulEncounter);
+    VarSet(VAR_GIFTMON_OT_SETTING, 0);
+
+    // find empty party slot to decide whether the Pokémon goes to the Player's party or the storage system.
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == SPECIES_NONE)
+            break;
+    }
+    if (i >= PARTY_SIZE)
+    {
+        sentToPc = CopyMonToPC(&mon);
+    }
+    else
+    {
+        sentToPc = MON_GIVEN_TO_PARTY;
+        CopyMon(&gPlayerParty[i], &mon, sizeof(mon));
+        gPlayerPartyCount = i + 1;
+    }
+
+    // set pokédex flags
+    nationalDexNum = SpeciesToNationalPokedexNum(species);
+    switch (sentToPc)
+    {
+    case MON_GIVEN_TO_PARTY:
+    case MON_GIVEN_TO_PC:
+        GetSetPokedexFlag(nationalDexNum, FLAG_SET_SEEN);
+        GetSetPokedexFlag(nationalDexNum, FLAG_SET_CAUGHT);
+        break;
+    case MON_CANT_GIVE:
+        break;
+    }
+
+    return sentToPc;
+}
+
 u32 ScriptGiveMon(u16 species, u8 level, u16 item)
 {
     u8 evs[NUM_STATS]        = {0, 0, 0, 0, 0, 0};
@@ -477,6 +664,48 @@ void ScrCmd_givemon(struct ScriptContext *ctx)
     u16 moves[MAX_MON_MOVES] = {move1, move2, move3, move4};
 
     gSpecialVar_Result = ScriptGiveMonParameterized(species, level, item, ball, nature, abilityNum, gender, evs, ivs, moves, isShiny, ggMaxFactor, teraType);
+}
+
+#undef PARSE_FLAG
+
+#define PARSE_FLAG(n, default_) (flags & (1 << (n))) ? VarGet(ScriptReadHalfword(ctx)) : (default_)
+
+void ScrCmd_givemongift1(struct ScriptContext *ctx)
+{
+    u16 species       = VarGet(ScriptReadHalfword(ctx));
+    u8 level          = VarGet(ScriptReadHalfword(ctx));
+
+    u32 flags         = ScriptReadWord(ctx);
+    u16 item          = PARSE_FLAG(0, ITEM_NONE);
+    u8 ball           = PARSE_FLAG(1, ITEM_POKE_BALL);
+    u8 nature         = PARSE_FLAG(2, NUM_NATURES);
+    u8 abilityNum     = PARSE_FLAG(3, NUM_ABILITY_PERSONALITY);
+    u8 gender         = PARSE_FLAG(4, MON_GENDERLESS); // TODO: Find a better way to assign a random gender.
+    u8 hpEv           = PARSE_FLAG(5, 0);
+    u8 atkEv          = PARSE_FLAG(6, 0);
+    u8 defEv          = PARSE_FLAG(7, 0);
+    u8 speedEv        = PARSE_FLAG(8, 0);
+    u8 spAtkEv        = PARSE_FLAG(9, 0);
+    u8 spDefEv        = PARSE_FLAG(10, 0);
+    u8 hpIv           = PARSE_FLAG(11, Random() % MAX_PER_STAT_IVS + 1);
+    u8 atkIv          = PARSE_FLAG(12, Random() % MAX_PER_STAT_IVS + 1);
+    u8 defIv          = PARSE_FLAG(13, Random() % MAX_PER_STAT_IVS + 1);
+    u8 speedIv        = PARSE_FLAG(14, Random() % MAX_PER_STAT_IVS + 1);
+    u8 spAtkIv        = PARSE_FLAG(15, Random() % MAX_PER_STAT_IVS + 1);
+    u8 spDefIv        = PARSE_FLAG(16, Random() % MAX_PER_STAT_IVS + 1);
+    u16 move1         = PARSE_FLAG(17, MOVE_NONE);
+    u16 move2         = PARSE_FLAG(18, MOVE_NONE);
+    u16 move3         = PARSE_FLAG(19, MOVE_NONE);
+    u16 move4         = PARSE_FLAG(20, MOVE_NONE);
+    bool8 isShiny     = PARSE_FLAG(21, FALSE);
+    bool8 ggMaxFactor = PARSE_FLAG(22, FALSE);
+    u8 teraType       = PARSE_FLAG(23, NUMBER_OF_MON_TYPES);
+
+    u8 evs[NUM_STATS]        = {hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv};
+    u8 ivs[NUM_STATS]        = {hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv};
+    u16 moves[MAX_MON_MOVES] = {move1, move2, move3, move4};
+
+    gSpecialVar_Result = ScriptGiveMonParameterizedGift1(species, level, item, ball, nature, abilityNum, gender, evs, ivs, moves, isShiny, ggMaxFactor, teraType);
 }
 
 #undef PARSE_FLAG

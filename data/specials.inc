@@ -564,3 +564,4 @@ gSpecials::
 	def_special PartyMonBecomeEgg
 	def_special GiveLeadMonAllRibbons
 	def_special SetLeadMonAllContestStats
+	def_special PartyMonBecomeEggRandom

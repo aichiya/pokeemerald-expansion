@@ -3211,7 +3211,12 @@ static void BufferMonTrainerMemo(void)
         if (DoesMonOTMatchOwner() == TRUE)
         {
             if (sum->metGame == 14)
-                text = gText_XNatureMiracle;
+            {
+                if (sum->metLevel == 0)
+                   text = gText_XNatureMiracle;
+                else
+                   text = gText_IsItHacked;
+            }
             else if (sum->metLevel == 0)
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZ;
             else
@@ -3221,10 +3226,46 @@ static void BufferMonTrainerMemo(void)
         {
             text = gText_XNatureFatefulEncounter;
         }
-        else if (sum->metLocation != METLOC_IN_GAME_TRADE && DidMonComeFromGBAGames())
+//        else if (sum->metLocation != METLOC_IN_GAME_TRADE && DidMonComeFromGBAGames())
+//        {
+//            text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureObtainedInTrade : gText_XNatureProbablyMetAt;
+//        }
+        else if (sum->metGame == 14)
         {
-            text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureObtainedInTrade : gText_XNatureProbablyMetAt;
-        }
+            if (sum->metLocation == 254
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gText_Aichiya
+                 && sum->OTID == 92538244)
+            {
+                text = gText_FromDev;
+            }
+            else if (sum->metLocation == 253
+                 && VarGet(VAR_GIFTMON2_IDENTIFIER) == 253
+                // && sum->OTName == gText_Ame
+                 && sum->OTID == 87622969)
+            {
+                text = gText_FromTimeTraveller;
+            }
+            else if (sum->metLocation == 252
+                 && VarGet(VAR_GIFTMON3_IDENTIFIER) == 252
+                // && sum->OTName == gText_BlueShell
+                 && sum->OTID == 1577803275)
+            {
+                text = gText_FromGardener;
+            }
+            else if (sum->metLocation == 10
+                // && VarGet(VAR_GIFTMON4_IDENTIFIER) == 10
+                // && sum->OTName == gText_BlueShell
+                 && sum->OTID == 28443058)
+            {
+                text = gText_FromDimensionalRift;
+            }
+            else
+            {
+                text = gText_IsItHacked;
+            }
+        } 
+
         else
         {
             text = gText_XNatureObtainedInTrade;

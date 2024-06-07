@@ -1852,34 +1852,103 @@ void PartyMonBecomeEgg(void)
 
         if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
         {
-            isEgg = TRUE;
-            cycle = 0;
-            item = ITEM_NONE;
-            u8 status = 0;
-            shiny = GetMonData(mon, MON_DATA_IS_SHINY);
-            gigantamaxFactor = GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR);
-            teratype = GetMonData(mon, MON_DATA_TERA_TYPE);
-            SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
-            SetMonData(mon, MON_DATA_FRIENDSHIP, &cycle);
-            SetMonData(mon, MON_DATA_HELD_ITEM, &item);
-            SetMonData(mon, MON_DATA_STATUS, &status);
-            SetMonData(mon, MON_DATA_IS_SHINY, &shiny);
-            SetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR, &gigantamaxFactor);
-            SetMonData(mon, MON_DATA_TERA_TYPE, &teratype);
+            if (GetMonData(mon, MON_DATA_MET_GAME) != 14)
+            {
+                isEgg = TRUE;
+                cycle = 0;
+                item = ITEM_NONE;
+                u8 status = 0;
+                shiny = GetMonData(mon, MON_DATA_IS_SHINY);
+                gigantamaxFactor = GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR);
+                teratype = GetMonData(mon, MON_DATA_TERA_TYPE);
+                SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
+                SetMonData(mon, MON_DATA_FRIENDSHIP, &cycle);
+                SetMonData(mon, MON_DATA_HELD_ITEM, &item);
+                SetMonData(mon, MON_DATA_STATUS, &status);
+                SetMonData(mon, MON_DATA_IS_SHINY, &shiny);
+                SetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR, &gigantamaxFactor);
+                SetMonData(mon, MON_DATA_TERA_TYPE, &teratype);
+            }
         }
     }
 
     struct Pokemon *mon = &gPlayerParty[0];
 
-    u32 experience = 1;
-    u8 status = 7;
-    u16 lostHP = GetMonData(mon, MON_DATA_MAX_HP) - 1;
-    SetMonData(mon, MON_DATA_EXP, &experience);
-    SetMonData(mon, MON_DATA_STATUS, &status);
-    SetMonData(mon, MON_DATA_HP_LOST, &lostHP);
+    if (GetMonData(mon, MON_DATA_MET_GAME) == 14)
+    {
+        CalculateMonStats(mon);
+    }
+    else
+    {
+        u32 experience = 1;
+        u8 status = 7;
+        u16 lostHP = GetMonData(mon, MON_DATA_MAX_HP) - 1;
+        SetMonData(mon, MON_DATA_EXP, &experience);
+        SetMonData(mon, MON_DATA_STATUS, &status);
+        SetMonData(mon, MON_DATA_HP_LOST, &lostHP);
 
-    CalculateMonStats(mon);
-    MonZeroedPP(mon);
+        CalculateMonStats(mon);
+        MonZeroedPP(mon);
+    }
+}
+
+void PartyMonBecomeEggRandom(void)
+{
+    int i;
+    u8 isEgg;
+    u8 cycle;
+    u16 item;
+    u8 shiny;
+    u8 gigantamaxFactor;
+    u8 teratype;
+    u16 species;
+    
+    for (i = 1; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+
+        if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
+        {
+            if (GetMonData(mon, MON_DATA_MET_GAME) != 14)
+            {
+                isEgg = TRUE;
+                cycle = 0;
+                item = ITEM_NONE;
+                u8 status = 0;
+                shiny = GetMonData(mon, MON_DATA_IS_SHINY);
+                gigantamaxFactor = GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR);
+                teratype = GetMonData(mon, MON_DATA_TERA_TYPE);
+                species = Random() % 1523;
+                SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
+                SetMonData(mon, MON_DATA_FRIENDSHIP, &cycle);
+                SetMonData(mon, MON_DATA_HELD_ITEM, &item);
+                SetMonData(mon, MON_DATA_STATUS, &status);
+                SetMonData(mon, MON_DATA_IS_SHINY, &shiny);
+                SetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR, &gigantamaxFactor);
+                SetMonData(mon, MON_DATA_TERA_TYPE, &teratype);
+                SetMonData(mon, MON_DATA_SPECIES, &species);
+            }
+        }
+    }
+
+    struct Pokemon *mon = &gPlayerParty[0];
+
+    if (GetMonData(mon, MON_DATA_MET_GAME) == 14)
+    {
+        CalculateMonStats(mon);
+    }
+    else
+    {
+        u32 experience = 1;
+        u8 status = 7;
+        u16 lostHP = GetMonData(mon, MON_DATA_MAX_HP) - 1;
+        SetMonData(mon, MON_DATA_EXP, &experience);
+        SetMonData(mon, MON_DATA_STATUS, &status);
+        SetMonData(mon, MON_DATA_HP_LOST, &lostHP);
+
+        CalculateMonStats(mon);
+        MonZeroedPP(mon);
+    }
 }
 
 bool8 Special_AreLeadMonEVsMaxedOut(void)

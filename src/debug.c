@@ -3305,7 +3305,8 @@ static void DebugAction_Give_Pokemon_SelectLevel(u8 taskId)
         if (gTasks[taskId].tIsComplex == FALSE)
         {
             PlaySE(MUS_LEVEL_UP);
-            ScriptGiveMon(sDebugMonData->species, gTasks[taskId].tInput, ITEM_NONE);
+            VarSet(VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_DEBUG);
+            ScriptGiveMonDebugSimple(sDebugMonData->species, gTasks[taskId].tInput, ITEM_NONE);
             // Set flag for user convenience
             FlagSet(FLAG_SYS_POKEMON_GET);
             Free(sDebugMonData);
@@ -3999,6 +4000,36 @@ static void DebugAction_Give_Pokemon_ComplexCreateMon(u8 taskId) //https://githu
     // give player the mon
     SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
     SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+    if (VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_SPECIAL_GIFT && VarGet(VAR_GIFTMON_OT_SETTING) == 255)
+    {
+        u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+        SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
+        u8 location = METLOC_FATEFUL_ENCOUNTER;
+        SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
+        u8 modernFatefulEncounter;
+        SetMonData(&mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &modernFatefulEncounter);
+        u8 hasRibbon = TRUE;
+        SetMonData(&mon, MON_DATA_SKY_RIBBON, &hasRibbon);
+        u8 ball = ITEM_CHERISH_BALL;
+        SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+        gSaveBlock1Ptr->giftRibbons[0] = 58;
+        gSaveBlock1Ptr->giftRibbons[1] = 59;
+        gSaveBlock1Ptr->giftRibbons[2] = 60;
+        gSaveBlock1Ptr->giftRibbons[3] = 61;
+        gSaveBlock1Ptr->giftRibbons[4] = 62;
+        gSaveBlock1Ptr->giftRibbons[5] = 63;
+        gSaveBlock1Ptr->giftRibbons[6] = 64;
+        VarSet(VAR_GIFTMON_VERSION_SETTING, 0);
+        VarSet(VAR_GIFTMON_OT_SETTING, 0);
+    }
+    else
+    {
+        u8 gameMet = VERSION_IDENTIFIER_DEBUG;
+        SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
+        u8 ball = ITEM_MASTER_BALL;
+        SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+    }
+
     for (i = 0; i < PARTY_SIZE; i++)
     {
         if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == SPECIES_NONE)

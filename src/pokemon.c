@@ -1124,36 +1124,152 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
     }
 
     SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
-    if (VarGet(VAR_GIFTMON_OT_SETTING) == 254)
-       {
-        u32 otId = 92538244;
-        SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
-        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Aichiya);
-       }
-    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 253)
-       {
-        u32 otId = 87622969;
-        SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
-        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Ame);
-       }
-    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 252)
-       {
-        u32 otId = 1577803275;
-        SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
-        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_BlueShell);
-       }
-    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 10)
-       {
-        u32 otId = 28443058;
-        SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
-        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Tsukasa);
-       }
+    if (VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_SPECIAL_GIFT)
+    {
+        if (VarGet(VAR_GIFTMON_OT_SETTING) == 254)
+            {
+            u32 otId = 92538244;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Aichiya);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 253)
+            {
+            u32 otId = 87622969;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Ame);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 252)
+            {
+            u32 otId = 1577803275;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_BlueShell);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 251)
+            {
+            u32 otId = 2713756096;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Machomuu);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 250)
+            {
+            u32 otId = 456727353;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gJPText_Elgrete);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 249)
+            {
+            u32 otId = 1298287970;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gJPText_RF);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 248)
+            {
+            u32 otId = 169609756;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gJPText_Hemoguro);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 247)
+            {
+            u32 otId = 27197855;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_DSlayer);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 246)
+            {
+            u32 otId = 262148;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Tye);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 245)
+            {
+            u32 otId = 1317424774;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Gemini);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 244)
+            {
+            u32 otId = 11796660;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gJPText_eggf);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 243)
+            {
+            u32 otId = 1703962000;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_ZetaSukuna);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 242)
+            {
+            u32 otId = 1000000;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Agastya);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 241)
+            {
+            u32 otId = 0;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gJPText_ZUN);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 1)
+            {
+            u32 otId = 1444697628;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_OTNameGold);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 2)
+            {
+            u32 otId = 2885069814;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_OTNameSilver);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 3)
+            {
+            u32 otId = 4063294000;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_OTNameWakaba);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 4)
+            {
+            u32 otId = 131467222;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_OTNameIllusionaryGirl);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 5)
+            {
+            u32 otId = 134023165;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_OTNameMiki);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 6)
+            {
+            u32 otId = 2006;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_OTNameReimu);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 7)
+            {
+            u32 otId = 130942926;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_OTNameVIVIT);
+            }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 10)
+            {
+            u32 otId = 683813058;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Tsukasa);
+            }
+        else
+            {
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &value);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);    
+            }
+    }
     else
-       {
+    {
         SetBoxMonData(boxMon, MON_DATA_OT_ID, &value);
-        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);    
-       }
-    
+        SetBoxMonData(boxMon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);   
+    }
+
     checksum = CalculateBoxMonChecksum(boxMon);
     SetBoxMonData(boxMon, MON_DATA_CHECKSUM, &checksum);
     EncryptBoxMon(boxMon);
@@ -1164,36 +1280,220 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
     SetBoxMonData(boxMon, MON_DATA_SPECIES, &species);
     SetBoxMonData(boxMon, MON_DATA_EXP, &gExperienceTables[gSpeciesInfo[species].growthRate][level]);
     SetBoxMonData(boxMon, MON_DATA_FRIENDSHIP, &gSpeciesInfo[species].friendship);
-    if (VarGet(VAR_GIFTMON_OT_SETTING) == 254)
+
+    if (VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_SPECIAL_GIFT)
     {
-        u8 location = 254;
-        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
-        VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-        u8 gameMet = 14;
+        if (VarGet(VAR_GIFTMON_OT_SETTING) == 255)
+        {
+            u8 location = 255;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 254)
+        {
+            u8 location = 254;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 253)
+        {
+            u8 location = 253;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 252)
+        {
+            u8 location = 252;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 251)
+        {
+            u8 location = 251;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+            SetBoxMonData(boxMon, MON_DATA_NICKNAME, gText_Illy);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 250)
+        {
+            u8 location = 250;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+            SetBoxMonData(boxMon, MON_DATA_NICKNAME, gJPText_Tencho);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 249)
+        {
+            u8 location = 249;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+            SetBoxMonData(boxMon, MON_DATA_NICKNAME, gJPText_Fate);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 248)
+        {
+            u8 location = 248;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+            SetBoxMonData(boxMon, MON_DATA_NICKNAME, gJPText_Gurobin);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 247)
+        {
+            u8 location = 247;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 246)
+        {
+            u8 location = 246;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 245)
+        {
+            u8 location = 245;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 244)
+        {
+            u8 location = 244;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+            SetBoxMonData(boxMon, MON_DATA_NICKNAME, gJPText_Kei);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 243)
+        {
+            u8 location = 243;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 242)
+        {
+            u8 location = 242;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 241)
+        {
+            u8 location = 241;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+            SetBoxMonData(boxMon, MON_DATA_NICKNAME, gJPText_KiSan);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 1)
+        {
+            u8 location = 1;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 2)
+        {
+            u8 location = 2;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 3)
+        {
+            u8 location = 3;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 4)
+        {
+            u8 location = 4;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 5)
+        {
+            u8 location = 5;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 6)
+        {
+            u8 location = 6;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 7)
+        {
+            u8 location = 7;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 10)
+        {
+            u8 location = 10;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+    }
+    else if (VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_NEGA)
+    {
+        value = GetCurrentRegionMapSectionId();
+        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &value);
+        u8 gameMet = VERSION_IDENTIFIER_NEGA;
         SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
     }
-    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 253)
+    else if (VarGet(VAR_GIFTMON_VERSION_SETTING) != VERSION_EMERALD)
     {
-        u8 location = 253;
-        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
-        VarSet(VAR_GIFTMON2_IDENTIFIER, 253);
-        u8 gameMet = 14;
-        SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
-    }
-    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 252)
-    {
-        u8 location = 252;
-        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
-        VarSet(VAR_GIFTMON3_IDENTIFIER, 252);
-        u8 gameMet = 14;
-        SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
-    }
-    else if (VarGet(VAR_GIFTMON_OT_SETTING) == 10)
-    {
-        u8 location = 10;
-        SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
-        // VarSet(VAR_GIFTMON4_IDENTIFIER, 10);
-        u8 gameMet = 14;
+        if (VarGet(VAR_GIFTMON_METLOC_SETTING) != 0)
+        {
+            value = VarGet(VAR_GIFTMON_METLOC_SETTING);
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &value);            
+        }
+        else
+        {
+            value = GetCurrentRegionMapSectionId();
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &value);
+        }
+        u8 gameMet = VarGet(VAR_GIFTMON_VERSION_SETTING);
         SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
     }
     else
@@ -1202,14 +1502,26 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
         SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &value);
         SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gGameVersion);
     }
+    
     SetBoxMonData(boxMon, MON_DATA_MET_LEVEL, &level);
     value = ITEM_POKE_BALL;
     SetBoxMonData(boxMon, MON_DATA_POKEBALL, &value);
     SetBoxMonData(boxMon, MON_DATA_OT_GENDER, 0);
     u8 hasModernFatefulEncounter = TRUE;
     SetBoxMonData(boxMon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &hasModernFatefulEncounter);
+
+    if (VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_SPECIAL_GIFT)
+    {
     u8 hasRibbon = TRUE;
     SetBoxMonData(boxMon, MON_DATA_SKY_RIBBON, &hasRibbon);
+    gSaveBlock1Ptr->giftRibbons[0] = 58;
+    gSaveBlock1Ptr->giftRibbons[1] = 59;
+    gSaveBlock1Ptr->giftRibbons[2] = 60;
+    gSaveBlock1Ptr->giftRibbons[3] = 61;
+    gSaveBlock1Ptr->giftRibbons[4] = 62;
+    gSaveBlock1Ptr->giftRibbons[5] = 63;
+    gSaveBlock1Ptr->giftRibbons[6] = 64;
+    }
 
     if (fixedIV < USE_RANDOM_IVS)
     {

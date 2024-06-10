@@ -3210,12 +3210,2086 @@ static void BufferMonTrainerMemo(void)
 
         if (DoesMonOTMatchOwner() == TRUE)
         {
-            if (sum->metGame == 14)
+            if (sum->metGame == VERSION_RUBY
+                || sum->metGame == VERSION_SAPPHIRE
+                || sum->metGame == VERSION_FIRE_RED
+                || sum->metGame == VERSION_LEAF_GREEN)
+            {
+                if (sum->metLocation == 0)
+                {
+                    text = gText_Gen3MetLoc000;
+                }
+                else if (sum->metLocation == 1)
+                {
+                    text = gText_Gen3MetLoc001;
+                }
+                else if (sum->metLocation == 2)
+                {
+                    text = gText_Gen3MetLoc002;
+                }
+                else if (sum->metLocation == 3)
+                {
+                    text = gText_Gen3MetLoc003;
+                }
+                else if (sum->metLocation == 4)
+                {
+                    text = gText_Gen3MetLoc004;
+                }
+                else if (sum->metLocation == 5)
+                {
+                    text = gText_Gen3MetLoc005;
+                }
+                else if (sum->metLocation == 6)
+                {
+                    text = gText_Gen3MetLoc006;
+                }
+                else if (sum->metLocation == 7)
+                {
+                    text = gText_Gen3MetLoc007;
+                }
+                else if (sum->metLocation == 8)
+                {
+                    text = gText_Gen3MetLoc008;
+                }
+                else if (sum->metLocation == 9)
+                {
+                    text = gText_Gen3MetLoc009;
+                }
+                else if (sum->metLocation == 10)
+                {
+                    text = gText_Gen3MetLoc010;
+                }
+                else if (sum->metLocation == 11)
+                {
+                    text = gText_Gen3MetLoc011;
+                }
+                else if (sum->metLocation == 12)
+                {
+                    text = gText_Gen3MetLoc012;
+                }
+                else if (sum->metLocation == 13)
+                {
+                    text = gText_Gen3MetLoc013;
+                }
+                else if (sum->metLocation == 14)
+                {
+                    text = gText_Gen3MetLoc014;
+                }
+                else if (sum->metLocation == 15)
+                {
+                    text = gText_Gen3MetLoc015;
+                }
+                else if (sum->metLocation == 16)
+                {
+                    text = gText_Gen3MetLoc016;
+                }
+                else if (sum->metLocation == 17)
+                {
+                    text = gText_Gen3MetLoc017;
+                }
+                else if (sum->metLocation == 18)
+                {
+                    text = gText_Gen3MetLoc018;
+                }
+                else if (sum->metLocation == 19)
+                {
+                    text = gText_Gen3MetLoc019;
+                }
+                else if (sum->metLocation == 20)
+                {
+                    text = gText_Gen3MetLoc020;
+                }
+                else if (sum->metLocation == 21)
+                {
+                    text = gText_Gen3MetLoc021;
+                }
+                else if (sum->metLocation == 22)
+                {
+                    text = gText_Gen3MetLoc022;
+                }
+                else if (sum->metLocation == 23)
+                {
+                    text = gText_Gen3MetLoc023;
+                }
+                else if (sum->metLocation == 24)
+                {
+                    text = gText_Gen3MetLoc024;
+                }
+                else if (sum->metLocation == 25)
+                {
+                    text = gText_Gen3MetLoc025;
+                }
+                else if (sum->metLocation == 26)
+                {
+                    text = gText_Gen3MetLoc026;
+                }
+                else if (sum->metLocation == 27)
+                {
+                    text = gText_Gen3MetLoc027;
+                }
+                else if (sum->metLocation == 28)
+                {
+                    text = gText_Gen3MetLoc028;
+                }
+                else if (sum->metLocation == 29)
+                {
+                    text = gText_Gen3MetLoc029;
+                }
+                else if (sum->metLocation == 30)
+                {
+                    text = gText_Gen3MetLoc030;
+                }
+                else if (sum->metLocation == 31)
+                {
+                    text = gText_Gen3MetLoc031;
+                }
+                else if (sum->metLocation == 32)
+                {
+                    text = gText_Gen3MetLoc032;
+                }
+                else if (sum->metLocation == 33)
+                {
+                    text = gText_Gen3MetLoc033;
+                }
+                else if (sum->metLocation == 34)
+                {
+                    text = gText_Gen3MetLoc034;
+                }
+                else if (sum->metLocation == 35)
+                {
+                    text = gText_Gen3MetLoc035;
+                }
+                else if (sum->metLocation == 36)
+                {
+                    text = gText_Gen3MetLoc036;
+                }
+                else if (sum->metLocation == 37)
+                {
+                    text = gText_Gen3MetLoc037;
+                }
+                else if (sum->metLocation == 38)
+                {
+                    text = gText_Gen3MetLoc038;
+                }
+                else if (sum->metLocation == 39)
+                {
+                    text = gText_Gen3MetLoc039;
+                }
+                else if (sum->metLocation == 40)
+                {
+                    text = gText_Gen3MetLoc040;
+                }
+                else if (sum->metLocation == 41)
+                {
+                    text = gText_Gen3MetLoc041;
+                }
+                else if (sum->metLocation == 42)
+                {
+                    text = gText_Gen3MetLoc042;
+                }
+                else if (sum->metLocation == 43)
+                {
+                    text = gText_Gen3MetLoc043;
+                }
+                else if (sum->metLocation == 44)
+                {
+                    text = gText_Gen3MetLoc044;
+                }
+                else if (sum->metLocation == 45)
+                {
+                    text = gText_Gen3MetLoc045;
+                }
+                else if (sum->metLocation == 46)
+                {
+                    text = gText_Gen3MetLoc046;
+                }
+                else if (sum->metLocation == 47)
+                {
+                    text = gText_Gen3MetLoc047;
+                }
+                else if (sum->metLocation == 48)
+                {
+                    text = gText_Gen3MetLoc048;
+                }
+                else if (sum->metLocation == 49)
+                {
+                    text = gText_Gen3MetLoc049;
+                }
+                else if (sum->metLocation == 50)
+                {
+                    text = gText_Gen3MetLoc050;
+                }
+                else if (sum->metLocation == 51)
+                {
+                    text = gText_Gen3MetLoc051;
+                }
+                else if (sum->metLocation == 52)
+                {
+                    text = gText_Gen3MetLoc052;
+                }
+                else if (sum->metLocation == 53)
+                {
+                    text = gText_Gen3MetLoc053;
+                }
+                else if (sum->metLocation == 54)
+                {
+                    text = gText_Gen3MetLoc054;
+                }
+                else if (sum->metLocation == 55)
+                {
+                    text = gText_Gen3MetLoc055;
+                }
+                else if (sum->metLocation == 56)
+                {
+                    text = gText_Gen3MetLoc056;
+                }
+                else if (sum->metLocation == 57)
+                {
+                    text = gText_Gen3MetLoc057;
+                }
+                else if (sum->metLocation == 58)
+                {
+                    text = gText_Gen3MetLoc058;
+                }
+                else if (sum->metLocation == 59)
+                {
+                    text = gText_Gen3MetLoc059;
+                }
+                else if (sum->metLocation == 60)
+                {
+                    text = gText_Gen3MetLoc060;
+                }
+                else if (sum->metLocation == 61)
+                {
+                    text = gText_Gen3MetLoc061;
+                }
+                else if (sum->metLocation == 62)
+                {
+                    text = gText_Gen3MetLoc062;
+                }
+                else if (sum->metLocation == 63)
+                {
+                    text = gText_Gen3MetLoc063;
+                }
+                else if (sum->metLocation == 64)
+                {
+                    text = gText_Gen3MetLoc064;
+                }
+                else if (sum->metLocation == 65)
+                {
+                    text = gText_Gen3MetLoc065;
+                }
+                else if (sum->metLocation == 66)
+                {
+                    text = gText_Gen3MetLoc066;
+                }
+                else if (sum->metLocation == 67)
+                {
+                    text = gText_Gen3MetLoc067;
+                }
+                else if (sum->metLocation == 68)
+                {
+                    text = gText_Gen3MetLoc068;
+                }
+                else if (sum->metLocation == 69)
+                {
+                    text = gText_Gen3MetLoc069;
+                }
+                else if (sum->metLocation == 70)
+                {
+                    text = gText_Gen3MetLoc070;
+                }
+                else if (sum->metLocation == 71)
+                {
+                    text = gText_Gen3MetLoc071;
+                }
+                else if (sum->metLocation == 72)
+                {
+                    text = gText_Gen3MetLoc072;
+                }
+                else if (sum->metLocation == 73)
+                {
+                    text = gText_Gen3MetLoc073;
+                }
+                else if (sum->metLocation == 74)
+                {
+                    text = gText_Gen3MetLoc074;
+                }
+                else if (sum->metLocation == 75)
+                {
+                    text = gText_Gen3MetLoc075;
+                }
+                else if (sum->metLocation == 76)
+                {
+                    text = gText_Gen3MetLoc076;
+                }
+                else if (sum->metLocation == 77)
+                {
+                    text = gText_Gen3MetLoc077;
+                }
+                else if (sum->metLocation == 78)
+                {
+                    text = gText_Gen3MetLoc078;
+                }
+                else if (sum->metLocation == 79)
+                {
+                    text = gText_Gen3MetLoc079;
+                }
+                else if (sum->metLocation == 80)
+                {
+                    text = gText_Gen3MetLoc080;
+                }
+                else if (sum->metLocation == 81)
+                {
+                    text = gText_Gen3MetLoc081;
+                }
+                else if (sum->metLocation == 82)
+                {
+                    text = gText_Gen3MetLoc082;
+                }
+                else if (sum->metLocation == 83)
+                {
+                    text = gText_Gen3MetLoc083;
+                }
+                else if (sum->metLocation == 84)
+                {
+                    text = gText_Gen3MetLoc084;
+                }
+                else if (sum->metLocation == 85)
+                {
+                    text = gText_Gen3MetLoc085;
+                }
+                else if (sum->metLocation == 86)
+                {
+                    text = gText_Gen3MetLoc086;
+                }
+                else if (sum->metLocation == 87)
+                {
+                    text = gText_Gen3MetLoc087;
+                }
+                else if (sum->metLocation == 88)
+                {
+                    text = gText_Gen3MetLoc088;
+                }
+                else if (sum->metLocation == 89)
+                {
+                    text = gText_Gen3MetLoc089;
+                }
+                else if (sum->metLocation == 90)
+                {
+                    text = gText_Gen3MetLoc090;
+                }
+                else if (sum->metLocation == 91)
+                {
+                    text = gText_Gen3MetLoc091;
+                }
+                else if (sum->metLocation == 92)
+                {
+                    text = gText_Gen3MetLoc092;
+                }
+                else if (sum->metLocation == 93)
+                {
+                    text = gText_Gen3MetLoc093;
+                }
+                else if (sum->metLocation == 94)
+                {
+                    text = gText_Gen3MetLoc094;
+                }
+                else if (sum->metLocation == 95)
+                {
+                    text = gText_Gen3MetLoc095;
+                }
+                else if (sum->metLocation == 96)
+                {
+                    text = gText_Gen3MetLoc096;
+                }
+                else if (sum->metLocation == 97)
+                {
+                    text = gText_Gen3MetLoc097;
+                }
+                else if (sum->metLocation == 98)
+                {
+                    text = gText_Gen3MetLoc098;
+                }
+                else if (sum->metLocation == 99)
+                {
+                    text = gText_Gen3MetLoc099;
+                }
+                else if (sum->metLocation == 100)
+                {
+                    text = gText_Gen3MetLoc100;
+                }
+                else if (sum->metLocation == 101)
+                {
+                    text = gText_Gen3MetLoc101;
+                }
+                else if (sum->metLocation == 102)
+                {
+                    text = gText_Gen3MetLoc102;
+                }
+                else if (sum->metLocation == 103)
+                {
+                    text = gText_Gen3MetLoc103;
+                }
+                else if (sum->metLocation == 104)
+                {
+                    text = gText_Gen3MetLoc104;
+                }
+                else if (sum->metLocation == 105)
+                {
+                    text = gText_Gen3MetLoc105;
+                }
+                else if (sum->metLocation == 106)
+                {
+                    text = gText_Gen3MetLoc106;
+                }
+                else if (sum->metLocation == 107)
+                {
+                    text = gText_Gen3MetLoc107;
+                }
+                else if (sum->metLocation == 108)
+                {
+                    text = gText_Gen3MetLoc108;
+                }
+                else if (sum->metLocation == 109)
+                {
+                    text = gText_Gen3MetLoc109;
+                }
+                else if (sum->metLocation == 110)
+                {
+                    text = gText_Gen3MetLoc110;
+                }
+                else if (sum->metLocation == 111)
+                {
+                    text = gText_Gen3MetLoc111;
+                }
+                else if (sum->metLocation == 112)
+                {
+                    text = gText_Gen3MetLoc112;
+                }
+                else if (sum->metLocation == 113)
+                {
+                    text = gText_Gen3MetLoc113;
+                }
+                else if (sum->metLocation == 114)
+                {
+                    text = gText_Gen3MetLoc114;
+                }
+                else if (sum->metLocation == 115)
+                {
+                    text = gText_Gen3MetLoc115;
+                }
+                else if (sum->metLocation == 116)
+                {
+                    text = gText_Gen3MetLoc116;
+                }
+                else if (sum->metLocation == 117)
+                {
+                    text = gText_Gen3MetLoc117;
+                }
+                else if (sum->metLocation == 118)
+                {
+                    text = gText_Gen3MetLoc118;
+                }
+                else if (sum->metLocation == 119)
+                {
+                    text = gText_Gen3MetLoc119;
+                }
+                else if (sum->metLocation == 120)
+                {
+                    text = gText_Gen3MetLoc120;
+                }
+                else if (sum->metLocation == 121)
+                {
+                    text = gText_Gen3MetLoc121;
+                }
+                else if (sum->metLocation == 122)
+                {
+                    text = gText_Gen3MetLoc122;
+                }
+                else if (sum->metLocation == 123)
+                {
+                    text = gText_Gen3MetLoc123;
+                }
+                else if (sum->metLocation == 124)
+                {
+                    text = gText_Gen3MetLoc124;
+                }
+                else if (sum->metLocation == 125)
+                {
+                    text = gText_Gen3MetLoc125;
+                }
+                else if (sum->metLocation == 126)
+                {
+                    text = gText_Gen3MetLoc126;
+                }
+                else if (sum->metLocation == 127)
+                {
+                    text = gText_Gen3MetLoc127;
+                }
+                else if (sum->metLocation == 128)
+                {
+                    text = gText_Gen3MetLoc128;
+                }
+                else if (sum->metLocation == 129)
+                {
+                    text = gText_Gen3MetLoc129;
+                }
+                else if (sum->metLocation == 130)
+                {
+                    text = gText_Gen3MetLoc130;
+                }
+                else if (sum->metLocation == 131)
+                {
+                    text = gText_Gen3MetLoc131;
+                }
+                else if (sum->metLocation == 132)
+                {
+                    text = gText_Gen3MetLoc132;
+                }
+                else if (sum->metLocation == 133)
+                {
+                    text = gText_Gen3MetLoc133;
+                }
+                else if (sum->metLocation == 134)
+                {
+                    text = gText_Gen3MetLoc134;
+                }
+                else if (sum->metLocation == 135)
+                {
+                    text = gText_Gen3MetLoc135;
+                }
+                else if (sum->metLocation == 136)
+                {
+                    text = gText_Gen3MetLoc136;
+                }
+                else if (sum->metLocation == 137)
+                {
+                    text = gText_Gen3MetLoc137;
+                }
+                else if (sum->metLocation == 138)
+                {
+                    text = gText_Gen3MetLoc138;
+                }
+                else if (sum->metLocation == 139)
+                {
+                    text = gText_Gen3MetLoc139;
+                }
+                else if (sum->metLocation == 140)
+                {
+                    text = gText_Gen3MetLoc140;
+                }
+                else if (sum->metLocation == 141)
+                {
+                    text = gText_Gen3MetLoc141;
+                }
+                else if (sum->metLocation == 142)
+                {
+                    text = gText_Gen3MetLoc142;
+                }
+                else if (sum->metLocation == 143)
+                {
+                    text = gText_Gen3MetLoc143;
+                }
+                else if (sum->metLocation == 144)
+                {
+                    text = gText_Gen3MetLoc144;
+                }
+                else if (sum->metLocation == 145)
+                {
+                    text = gText_Gen3MetLoc145;
+                }
+                else if (sum->metLocation == 146)
+                {
+                    text = gText_Gen3MetLoc146;
+                }
+                else if (sum->metLocation == 147)
+                {
+                    text = gText_Gen3MetLoc147;
+                }
+                else if (sum->metLocation == 148)
+                {
+                    text = gText_Gen3MetLoc148;
+                }
+                else if (sum->metLocation == 149)
+                {
+                    text = gText_Gen3MetLoc149;
+                }
+                else if (sum->metLocation == 150)
+                {
+                    text = gText_Gen3MetLoc150;
+                }
+                else if (sum->metLocation == 151)
+                {
+                    text = gText_Gen3MetLoc151;
+                }
+                else if (sum->metLocation == 152)
+                {
+                    text = gText_Gen3MetLoc152;
+                }
+                else if (sum->metLocation == 153)
+                {
+                    text = gText_Gen3MetLoc153;
+                }
+                else if (sum->metLocation == 154)
+                {
+                    text = gText_Gen3MetLoc154;
+                }
+                else if (sum->metLocation == 155)
+                {
+                    text = gText_Gen3MetLoc155;
+                }
+                else if (sum->metLocation == 156)
+                {
+                    text = gText_Gen3MetLoc156;
+                }
+                else if (sum->metLocation == 157)
+                {
+                    text = gText_Gen3MetLoc157;
+                }
+                else if (sum->metLocation == 158)
+                {
+                    text = gText_Gen3MetLoc158;
+                }
+                else if (sum->metLocation == 159)
+                {
+                    text = gText_Gen3MetLoc159;
+                }
+                else if (sum->metLocation == 160)
+                {
+                    text = gText_Gen3MetLoc160;
+                }
+                else if (sum->metLocation == 161)
+                {
+                    text = gText_Gen3MetLoc161;
+                }
+                else if (sum->metLocation == 162)
+                {
+                    text = gText_Gen3MetLoc162;
+                }
+                else if (sum->metLocation == 163)
+                {
+                    text = gText_Gen3MetLoc163;
+                }
+                else if (sum->metLocation == 164)
+                {
+                    text = gText_Gen3MetLoc164;
+                }
+                else if (sum->metLocation == 165)
+                {
+                    text = gText_Gen3MetLoc165;
+                }
+                else if (sum->metLocation == 166)
+                {
+                    text = gText_Gen3MetLoc166;
+                }
+                else if (sum->metLocation == 167)
+                {
+                    text = gText_Gen3MetLoc167;
+                }
+                else if (sum->metLocation == 168)
+                {
+                    text = gText_Gen3MetLoc168;
+                }
+                else if (sum->metLocation == 169)
+                {
+                    text = gText_Gen3MetLoc169;
+                }
+                else if (sum->metLocation == 170)
+                {
+                    text = gText_Gen3MetLoc170;
+                }
+                else if (sum->metLocation == 171)
+                {
+                    text = gText_Gen3MetLoc171;
+                }
+                else if (sum->metLocation == 172)
+                {
+                    text = gText_Gen3MetLoc172;
+                }
+                else if (sum->metLocation == 173)
+                {
+                    text = gText_Gen3MetLoc173;
+                }
+                else if (sum->metLocation == 174)
+                {
+                    text = gText_Gen3MetLoc174;
+                }
+                else if (sum->metLocation == 175)
+                {
+                    text = gText_Gen3MetLoc175;
+                }
+                else if (sum->metLocation == 176)
+                {
+                    text = gText_Gen3MetLoc176;
+                }
+                else if (sum->metLocation == 177)
+                {
+                    text = gText_Gen3MetLoc177;
+                }
+                else if (sum->metLocation == 178)
+                {
+                    text = gText_Gen3MetLoc178;
+                }
+                else if (sum->metLocation == 179)
+                {
+                    text = gText_Gen3MetLoc179;
+                }
+                else if (sum->metLocation == 180)
+                {
+                    text = gText_Gen3MetLoc180;
+                }
+                else if (sum->metLocation == 181)
+                {
+                    text = gText_Gen3MetLoc181;
+                }
+                else if (sum->metLocation == 182)
+                {
+                    text = gText_Gen3MetLoc182;
+                }
+                else if (sum->metLocation == 183)
+                {
+                    text = gText_Gen3MetLoc183;
+                }
+                else if (sum->metLocation == 184)
+                {
+                    text = gText_Gen3MetLoc184;
+                }
+                else if (sum->metLocation == 185)
+                {
+                    text = gText_Gen3MetLoc185;
+                }
+                else if (sum->metLocation == 186)
+                {
+                    text = gText_Gen3MetLoc186;
+                }
+                else if (sum->metLocation == 187)
+                {
+                    text = gText_Gen3MetLoc187;
+                }
+                else if (sum->metLocation == 188)
+                {
+                    text = gText_Gen3MetLoc188;
+                }
+                else if (sum->metLocation == 189)
+                {
+                    text = gText_Gen3MetLoc189;
+                }
+                else if (sum->metLocation == 190)
+                {
+                    text = gText_Gen3MetLoc190;
+                }
+                else if (sum->metLocation == 191)
+                {
+                    text = gText_Gen3MetLoc191;
+                }
+                else if (sum->metLocation == 192)
+                {
+                    text = gText_Gen3MetLoc192;
+                }
+                else if (sum->metLocation == 193)
+                {
+                    text = gText_Gen3MetLoc193;
+                }
+                else if (sum->metLocation == 194)
+                {
+                    text = gText_Gen3MetLoc194;
+                }
+                else if (sum->metLocation == 195)
+                {
+                    text = gText_Gen3MetLoc195;
+                }
+                else if (sum->metLocation == 196)
+                {
+                    text = gText_Gen3MetLoc196;
+                }
+                else if (sum->metLocation == 197)
+                {
+                    text = gText_Gen3MetLoc197;
+                }
+                else if (sum->metLocation == 198)
+                {
+                    text = gText_Gen3MetLoc198;
+                }
+                else if (sum->metLocation == 199)
+                {
+                    text = gText_Gen3MetLoc199;
+                }
+                else if (sum->metLocation == 200)
+                {
+                    text = gText_Gen3MetLoc200;
+                }
+                else if (sum->metLocation == 201)
+                {
+                    text = gText_Gen3MetLoc201;
+                }
+                else if (sum->metLocation == 202)
+                {
+                    text = gText_Gen3MetLoc202;
+                }
+                else if (sum->metLocation == 203)
+                {
+                    text = gText_Gen3MetLoc203;
+                }
+                else if (sum->metLocation == 204)
+                {
+                    text = gText_Gen3MetLoc204;
+                }
+                else if (sum->metLocation == 205)
+                {
+                    text = gText_Gen3MetLoc205;
+                }
+                else if (sum->metLocation == 206)
+                {
+                    text = gText_Gen3MetLoc206;
+                }
+                else if (sum->metLocation == 207)
+                {
+                    text = gText_Gen3MetLoc207;
+                }
+                else if (sum->metLocation == 208)
+                {
+                    text = gText_Gen3MetLoc208;
+                }
+                else if (sum->metLocation == 209)
+                {
+                    text = gText_Gen3MetLoc209;
+                }
+                else if (sum->metLocation == 210)
+                {
+                    text = gText_Gen3MetLoc210;
+                }
+                else if (sum->metLocation == 211)
+                {
+                    text = gText_Gen3MetLoc211;
+                }
+                else if (sum->metLocation == 212)
+                {
+                    text = gText_Gen3MetLoc212;
+                }
+                else if (sum->metLocation == 213)
+                {
+                    text = gText_Gen3MetLoc213;
+                }
+                else if (sum->metLocation == 214)
+                {
+                    text = gText_Gen3MetLoc214;
+                }
+                else if (sum->metLocation == 215)
+                {
+                    text = gText_Gen3MetLoc215;
+                }
+                else if (sum->metLocation == 216)
+                {
+                    text = gText_Gen3MetLoc216;
+                }
+                else if (sum->metLocation == 217)
+                {
+                    text = gText_Gen3MetLoc217;
+                }
+                else if (sum->metLocation == 218)
+                {
+                    text = gText_Gen3MetLoc218;
+                }
+                else if (sum->metLocation == 219)
+                {
+                    text = gText_Gen3MetLoc219;
+                }
+                else if (sum->metLocation == 220)
+                {
+                    text = gText_Gen3MetLoc220;
+                }
+                else if (sum->metLocation == 221)
+                {
+                    text = gText_Gen3MetLoc221;
+                }
+                else if (sum->metLocation == 222)
+                {
+                    text = gText_Gen3MetLoc222;
+                }
+                else if (sum->metLocation == 223)
+                {
+                    text = gText_Gen3MetLoc223;
+                }
+                else if (sum->metLocation == 224)
+                {
+                    text = gText_Gen3MetLoc224;
+                }
+                else if (sum->metLocation == 225)
+                {
+                    text = gText_Gen3MetLoc225;
+                }
+                else if (sum->metLocation == 226)
+                {
+                    text = gText_Gen3MetLoc226;
+                }
+                else if (sum->metLocation == 227)
+                {
+                    text = gText_Gen3MetLoc227;
+                }
+                else if (sum->metLocation == 228)
+                {
+                    text = gText_Gen3MetLoc228;
+                }
+                else if (sum->metLocation == 229)
+                {
+                    text = gText_Gen3MetLoc229;
+                }
+                else if (sum->metLocation == 230)
+                {
+                    text = gText_Gen3MetLoc230;
+                }
+                else if (sum->metLocation == 231)
+                {
+                    text = gText_Gen3MetLoc231;
+                }
+                else if (sum->metLocation == 232)
+                {
+                    text = gText_Gen3MetLoc232;
+                }
+                else if (sum->metLocation == 233)
+                {
+                    text = gText_Gen3MetLoc233;
+                }
+                else if (sum->metLocation == 234)
+                {
+                    text = gText_Gen3MetLoc234;
+                }
+                else if (sum->metLocation == 235)
+                {
+                    text = gText_Gen3MetLoc235;
+                }
+                else if (sum->metLocation == 236)
+                {
+                    text = gText_Gen3MetLoc236;
+                }
+                else if (sum->metLocation == 237)
+                {
+                    text = gText_Gen3MetLoc237;
+                }
+                else if (sum->metLocation == 238)
+                {
+                    text = gText_Gen3MetLoc238;
+                }
+                else if (sum->metLocation == 239)
+                {
+                    text = gText_Gen3MetLoc239;
+                }
+                else if (sum->metLocation == 240)
+                {
+                    text = gText_Gen3MetLoc240;
+                }
+                else if (sum->metLocation == 241)
+                {
+                    text = gText_Gen3MetLoc241;
+                }
+                else if (sum->metLocation == 242)
+                {
+                    text = gText_Gen3MetLoc242;
+                }
+                else if (sum->metLocation == 243)
+                {
+                    text = gText_Gen3MetLoc243;
+                }
+                else if (sum->metLocation == 244)
+                {
+                    text = gText_Gen3MetLoc244;
+                }
+                else if (sum->metLocation == 245)
+                {
+                    text = gText_Gen3MetLoc245;
+                }
+                else if (sum->metLocation == 246)
+                {
+                    text = gText_Gen3MetLoc246;
+                }
+                else if (sum->metLocation == 247)
+                {
+                    text = gText_Gen3MetLoc247;
+                }
+                else if (sum->metLocation == 248)
+                {
+                    text = gText_Gen3MetLoc248;
+                }
+                else if (sum->metLocation == 249)
+                {
+                    text = gText_Gen3MetLoc249;
+                }
+                else if (sum->metLocation == 250)
+                {
+                    text = gText_Gen3MetLoc250;
+                }
+                else if (sum->metLocation == 251)
+                {
+                    text = gText_Gen3MetLoc251;
+                }
+                else if (sum->metLocation == 252)
+                {
+                    text = gText_Gen3MetLoc252;
+                }
+                else if (sum->metLocation == 253)
+                {
+                    text = gText_Gen3MetLoc253;
+                }
+                else if (sum->metLocation == 254)
+                {
+                    text = gText_Gen3MetLoc254;
+                }
+                else if (sum->metLocation == 255)
+                {
+                    text = gText_Gen3MetLoc255;
+                }   
+            }
+            else if (sum->metGame == VERSION_DIAMOND
+                || sum->metGame == VERSION_PEARL
+                || sum->metGame == VERSION_PLATINUM
+                || sum->metGame == VERSION_HEART_GOLD
+				|| sum->metGame == VERSION_SOUL_SILVER)
+            {
+                if (sum->metLocation == 0)
+                {
+                    text = gText_Gen4MetLoc000;
+                }
+                else if (sum->metLocation == 1)
+                {
+                    text = gText_Gen4MetLoc001;
+                }
+                else if (sum->metLocation == 2)
+                {
+                    text = gText_Gen4MetLoc002;
+                }
+                else if (sum->metLocation == 3)
+                {
+                    text = gText_Gen4MetLoc003;
+                }
+                else if (sum->metLocation == 4)
+                {
+                    text = gText_Gen4MetLoc004;
+                }
+                else if (sum->metLocation == 5)
+                {
+                    text = gText_Gen4MetLoc005;
+                }
+                else if (sum->metLocation == 6)
+                {
+                    text = gText_Gen4MetLoc006;
+                }
+                else if (sum->metLocation == 7)
+                {
+                    text = gText_Gen4MetLoc007;
+                }
+                else if (sum->metLocation == 8)
+                {
+                    text = gText_Gen4MetLoc008;
+                }
+                else if (sum->metLocation == 9)
+                {
+                    text = gText_Gen4MetLoc009;
+                }
+                else if (sum->metLocation == 10)
+                {
+                    text = gText_Gen4MetLoc010;
+                }
+                else if (sum->metLocation == 11)
+                {
+                    text = gText_Gen4MetLoc011;
+                }
+                else if (sum->metLocation == 12)
+                {
+                    text = gText_Gen4MetLoc012;
+                }
+                else if (sum->metLocation == 13)
+                {
+                    text = gText_Gen4MetLoc013;
+                }
+                else if (sum->metLocation == 14)
+                {
+                    text = gText_Gen4MetLoc014;
+                }
+                else if (sum->metLocation == 15)
+                {
+                    text = gText_Gen4MetLoc015;
+                }
+                else if (sum->metLocation == 16)
+                {
+                    text = gText_Gen4MetLoc016;
+                }
+                else if (sum->metLocation == 17)
+                {
+                    text = gText_Gen4MetLoc017;
+                }
+                else if (sum->metLocation == 18)
+                {
+                    text = gText_Gen4MetLoc018;
+                }
+                else if (sum->metLocation == 19)
+                {
+                    text = gText_Gen4MetLoc019;
+                }
+                else if (sum->metLocation == 20)
+                {
+                    text = gText_Gen4MetLoc020;
+                }
+                else if (sum->metLocation == 21)
+                {
+                    text = gText_Gen4MetLoc021;
+                }
+                else if (sum->metLocation == 22)
+                {
+                    text = gText_Gen4MetLoc022;
+                }
+                else if (sum->metLocation == 23)
+                {
+                    text = gText_Gen4MetLoc023;
+                }
+                else if (sum->metLocation == 24)
+                {
+                    text = gText_Gen4MetLoc024;
+                }
+                else if (sum->metLocation == 25)
+                {
+                    text = gText_Gen4MetLoc025;
+                }
+                else if (sum->metLocation == 26)
+                {
+                    text = gText_Gen4MetLoc026;
+                }
+                else if (sum->metLocation == 27)
+                {
+                    text = gText_Gen4MetLoc027;
+                }
+                else if (sum->metLocation == 28)
+                {
+                    text = gText_Gen4MetLoc028;
+                }
+                else if (sum->metLocation == 29)
+                {
+                    text = gText_Gen4MetLoc029;
+                }
+                else if (sum->metLocation == 30)
+                {
+                    text = gText_Gen4MetLoc030;
+                }
+                else if (sum->metLocation == 31)
+                {
+                    text = gText_Gen4MetLoc031;
+                }
+                else if (sum->metLocation == 32)
+                {
+                    text = gText_Gen4MetLoc032;
+                }
+                else if (sum->metLocation == 33)
+                {
+                    text = gText_Gen4MetLoc033;
+                }
+                else if (sum->metLocation == 34)
+                {
+                    text = gText_Gen4MetLoc034;
+                }
+                else if (sum->metLocation == 35)
+                {
+                    text = gText_Gen4MetLoc035;
+                }
+                else if (sum->metLocation == 36)
+                {
+                    text = gText_Gen4MetLoc036;
+                }
+                else if (sum->metLocation == 37)
+                {
+                    text = gText_Gen4MetLoc037;
+                }
+                else if (sum->metLocation == 38)
+                {
+                    text = gText_Gen4MetLoc038;
+                }
+                else if (sum->metLocation == 39)
+                {
+                    text = gText_Gen4MetLoc039;
+                }
+                else if (sum->metLocation == 40)
+                {
+                    text = gText_Gen4MetLoc040;
+                }
+                else if (sum->metLocation == 41)
+                {
+                    text = gText_Gen4MetLoc041;
+                }
+                else if (sum->metLocation == 42)
+                {
+                    text = gText_Gen4MetLoc042;
+                }
+                else if (sum->metLocation == 43)
+                {
+                    text = gText_Gen4MetLoc043;
+                }
+                else if (sum->metLocation == 44)
+                {
+                    text = gText_Gen4MetLoc044;
+                }
+                else if (sum->metLocation == 45)
+                {
+                    text = gText_Gen4MetLoc045;
+                }
+                else if (sum->metLocation == 46)
+                {
+                    text = gText_Gen4MetLoc046;
+                }
+                else if (sum->metLocation == 47)
+                {
+                    text = gText_Gen4MetLoc047;
+                }
+                else if (sum->metLocation == 48)
+                {
+                    text = gText_Gen4MetLoc048;
+                }
+                else if (sum->metLocation == 49)
+                {
+                    text = gText_Gen4MetLoc049;
+                }
+                else if (sum->metLocation == 50)
+                {
+                    text = gText_Gen4MetLoc050;
+                }
+                else if (sum->metLocation == 51)
+                {
+                    text = gText_Gen4MetLoc051;
+                }
+                else if (sum->metLocation == 52)
+                {
+                    text = gText_Gen4MetLoc052;
+                }
+                else if (sum->metLocation == 53)
+                {
+                    text = gText_Gen4MetLoc053;
+                }
+                else if (sum->metLocation == 54)
+                {
+                    text = gText_Gen4MetLoc054;
+                }
+                else if (sum->metLocation == 55)
+                {
+                    text = gText_Gen4MetLoc055;
+                }
+                else if (sum->metLocation == 56)
+                {
+                    text = gText_Gen4MetLoc056;
+                }
+                else if (sum->metLocation == 57)
+                {
+                    text = gText_Gen4MetLoc057;
+                }
+                else if (sum->metLocation == 58)
+                {
+                    text = gText_Gen4MetLoc058;
+                }
+                else if (sum->metLocation == 59)
+                {
+                    text = gText_Gen4MetLoc059;
+                }
+                else if (sum->metLocation == 60)
+                {
+                    text = gText_Gen4MetLoc060;
+                }
+                else if (sum->metLocation == 61)
+                {
+                    text = gText_Gen4MetLoc061;
+                }
+                else if (sum->metLocation == 62)
+                {
+                    text = gText_Gen4MetLoc062;
+                }
+                else if (sum->metLocation == 63)
+                {
+                    text = gText_Gen4MetLoc063;
+                }
+                else if (sum->metLocation == 64)
+                {
+                    text = gText_Gen4MetLoc064;
+                }
+                else if (sum->metLocation == 65)
+                {
+                    text = gText_Gen4MetLoc065;
+                }
+                else if (sum->metLocation == 66)
+                {
+                    text = gText_Gen4MetLoc066;
+                }
+                else if (sum->metLocation == 67)
+                {
+                    text = gText_Gen4MetLoc067;
+                }
+                else if (sum->metLocation == 68)
+                {
+                    text = gText_Gen4MetLoc068;
+                }
+                else if (sum->metLocation == 69)
+                {
+                    text = gText_Gen4MetLoc069;
+                }
+                else if (sum->metLocation == 70)
+                {
+                    text = gText_Gen4MetLoc070;
+                }
+                else if (sum->metLocation == 71)
+                {
+                    text = gText_Gen4MetLoc071;
+                }
+                else if (sum->metLocation == 72)
+                {
+                    text = gText_Gen4MetLoc072;
+                }
+                else if (sum->metLocation == 73)
+                {
+                    text = gText_Gen4MetLoc073;
+                }
+                else if (sum->metLocation == 74)
+                {
+                    text = gText_Gen4MetLoc074;
+                }
+                else if (sum->metLocation == 75)
+                {
+                    text = gText_Gen4MetLoc075;
+                }
+                else if (sum->metLocation == 76)
+                {
+                    text = gText_Gen4MetLoc076;
+                }
+                else if (sum->metLocation == 77)
+                {
+                    text = gText_Gen4MetLoc077;
+                }
+                else if (sum->metLocation == 78)
+                {
+                    text = gText_Gen4MetLoc078;
+                }
+                else if (sum->metLocation == 79)
+                {
+                    text = gText_Gen4MetLoc079;
+                }
+                else if (sum->metLocation == 80)
+                {
+                    text = gText_Gen4MetLoc080;
+                }
+                else if (sum->metLocation == 81)
+                {
+                    text = gText_Gen4MetLoc081;
+                }
+                else if (sum->metLocation == 82)
+                {
+                    text = gText_Gen4MetLoc082;
+                }
+                else if (sum->metLocation == 83)
+                {
+                    text = gText_Gen4MetLoc083;
+                }
+                else if (sum->metLocation == 84)
+                {
+                    text = gText_Gen4MetLoc084;
+                }
+                else if (sum->metLocation == 85)
+                {
+                    text = gText_Gen4MetLoc085;
+                }
+                else if (sum->metLocation == 86)
+                {
+                    text = gText_Gen4MetLoc086;
+                }
+                else if (sum->metLocation == 87)
+                {
+                    text = gText_Gen4MetLoc087;
+                }
+                else if (sum->metLocation == 88)
+                {
+                    text = gText_Gen4MetLoc088;
+                }
+                else if (sum->metLocation == 89)
+                {
+                    text = gText_Gen4MetLoc089;
+                }
+                else if (sum->metLocation == 90)
+                {
+                    text = gText_Gen4MetLoc090;
+                }
+                else if (sum->metLocation == 91)
+                {
+                    text = gText_Gen4MetLoc091;
+                }
+                else if (sum->metLocation == 92)
+                {
+                    text = gText_Gen4MetLoc092;
+                }
+                else if (sum->metLocation == 93)
+                {
+                    text = gText_Gen4MetLoc093;
+                }
+                else if (sum->metLocation == 94)
+                {
+                    text = gText_Gen4MetLoc094;
+                }
+                else if (sum->metLocation == 95)
+                {
+                    text = gText_Gen4MetLoc095;
+                }
+                else if (sum->metLocation == 96)
+                {
+                    text = gText_Gen4MetLoc096;
+                }
+                else if (sum->metLocation == 97)
+                {
+                    text = gText_Gen4MetLoc097;
+                }
+                else if (sum->metLocation == 98)
+                {
+                    text = gText_Gen4MetLoc098;
+                }
+                else if (sum->metLocation == 99)
+                {
+                    text = gText_Gen4MetLoc099;
+                }
+                else if (sum->metLocation == 100)
+                {
+                    text = gText_Gen4MetLoc100;
+                }
+                else if (sum->metLocation == 101)
+                {
+                    text = gText_Gen4MetLoc101;
+                }
+                else if (sum->metLocation == 102)
+                {
+                    text = gText_Gen4MetLoc102;
+                }
+                else if (sum->metLocation == 103)
+                {
+                    text = gText_Gen4MetLoc103;
+                }
+                else if (sum->metLocation == 104)
+                {
+                    text = gText_Gen4MetLoc104;
+                }
+                else if (sum->metLocation == 105)
+                {
+                    text = gText_Gen4MetLoc105;
+                }
+                else if (sum->metLocation == 106)
+                {
+                    text = gText_Gen4MetLoc106;
+                }
+                else if (sum->metLocation == 107)
+                {
+                    text = gText_Gen4MetLoc107;
+                }
+                else if (sum->metLocation == 108)
+                {
+                    text = gText_Gen4MetLoc108;
+                }
+                else if (sum->metLocation == 109)
+                {
+                    text = gText_Gen4MetLoc109;
+                }
+                else if (sum->metLocation == 110)
+                {
+                    text = gText_Gen4MetLoc110;
+                }
+                else if (sum->metLocation == 111)
+                {
+                    text = gText_Gen4MetLoc111;
+                }
+                else if (sum->metLocation == 112)
+                {
+                    text = gText_Gen4MetLoc112;
+                }
+                else if (sum->metLocation == 113)
+                {
+                    text = gText_Gen4MetLoc113;
+                }
+                else if (sum->metLocation == 114)
+                {
+                    text = gText_Gen4MetLoc114;
+                }
+                else if (sum->metLocation == 115)
+                {
+                    text = gText_Gen4MetLoc115;
+                }
+                else if (sum->metLocation == 116)
+                {
+                    text = gText_Gen4MetLoc116;
+                }
+                else if (sum->metLocation == 117)
+                {
+                    text = gText_Gen4MetLoc117;
+                }
+                else if (sum->metLocation == 118)
+                {
+                    text = gText_Gen4MetLoc118;
+                }
+                else if (sum->metLocation == 119)
+                {
+                    text = gText_Gen4MetLoc119;
+                }
+                else if (sum->metLocation == 120)
+                {
+                    text = gText_Gen4MetLoc120;
+                }
+                else if (sum->metLocation == 121)
+                {
+                    text = gText_Gen4MetLoc121;
+                }
+                else if (sum->metLocation == 122)
+                {
+                    text = gText_Gen4MetLoc122;
+                }
+                else if (sum->metLocation == 123)
+                {
+                    text = gText_Gen4MetLoc123;
+                }
+                else if (sum->metLocation == 124)
+                {
+                    text = gText_Gen4MetLoc124;
+                }
+                else if (sum->metLocation == 125)
+                {
+                    text = gText_Gen4MetLoc125;
+                }
+                else if (sum->metLocation == 126)
+                {
+                    text = gText_Gen4MetLoc126;
+                }
+                else if (sum->metLocation == 127)
+                {
+                    text = gText_Gen4MetLoc127;
+                }
+                else if (sum->metLocation == 128)
+                {
+                    text = gText_Gen4MetLoc128;
+                }
+                else if (sum->metLocation == 129)
+                {
+                    text = gText_Gen4MetLoc129;
+                }
+                else if (sum->metLocation == 130)
+                {
+                    text = gText_Gen4MetLoc130;
+                }
+                else if (sum->metLocation == 131)
+                {
+                    text = gText_Gen4MetLoc131;
+                }
+                else if (sum->metLocation == 132)
+                {
+                    text = gText_Gen4MetLoc132;
+                }
+                else if (sum->metLocation == 133)
+                {
+                    text = gText_Gen4MetLoc133;
+                }
+                else if (sum->metLocation == 134)
+                {
+                    text = gText_Gen4MetLoc134;
+                }
+                else if (sum->metLocation == 135)
+                {
+                    text = gText_Gen4MetLoc135;
+                }
+                else if (sum->metLocation == 136)
+                {
+                    text = gText_Gen4MetLoc136;
+                }
+                else if (sum->metLocation == 137)
+                {
+                    text = gText_Gen4MetLoc137;
+                }
+                else if (sum->metLocation == 138)
+                {
+                    text = gText_Gen4MetLoc138;
+                }
+                else if (sum->metLocation == 139)
+                {
+                    text = gText_Gen4MetLoc139;
+                }
+                else if (sum->metLocation == 140)
+                {
+                    text = gText_Gen4MetLoc140;
+                }
+                else if (sum->metLocation == 141)
+                {
+                    text = gText_Gen4MetLoc141;
+                }
+                else if (sum->metLocation == 142)
+                {
+                    text = gText_Gen4MetLoc142;
+                }
+                else if (sum->metLocation == 143)
+                {
+                    text = gText_Gen4MetLoc143;
+                }
+                else if (sum->metLocation == 144)
+                {
+                    text = gText_Gen4MetLoc144;
+                }
+                else if (sum->metLocation == 145)
+                {
+                    text = gText_Gen4MetLoc145;
+                }
+                else if (sum->metLocation == 146)
+                {
+                    text = gText_Gen4MetLoc146;
+                }
+                else if (sum->metLocation == 147)
+                {
+                    text = gText_Gen4MetLoc147;
+                }
+                else if (sum->metLocation == 148)
+                {
+                    text = gText_Gen4MetLoc148;
+                }
+                else if (sum->metLocation == 149)
+                {
+                    text = gText_Gen4MetLoc149;
+                }
+                else if (sum->metLocation == 150)
+                {
+                    text = gText_Gen4MetLoc150;
+                }
+                else if (sum->metLocation == 151)
+                {
+                    text = gText_Gen4MetLoc151;
+                }
+                else if (sum->metLocation == 152)
+                {
+                    text = gText_Gen4MetLoc152;
+                }
+                else if (sum->metLocation == 153)
+                {
+                    text = gText_Gen4MetLoc153;
+                }
+                else if (sum->metLocation == 154)
+                {
+                    text = gText_Gen4MetLoc154;
+                }
+                else if (sum->metLocation == 155)
+                {
+                    text = gText_Gen4MetLoc155;
+                }
+                else if (sum->metLocation == 156)
+                {
+                    text = gText_Gen4MetLoc156;
+                }
+                else if (sum->metLocation == 157)
+                {
+                    text = gText_Gen4MetLoc157;
+                }
+                else if (sum->metLocation == 158)
+                {
+                    text = gText_Gen4MetLoc158;
+                }
+                else if (sum->metLocation == 159)
+                {
+                    text = gText_Gen4MetLoc159;
+                }
+                else if (sum->metLocation == 160)
+                {
+                    text = gText_Gen4MetLoc160;
+                }
+                else if (sum->metLocation == 161)
+                {
+                    text = gText_Gen4MetLoc161;
+                }
+                else if (sum->metLocation == 162)
+                {
+                    text = gText_Gen4MetLoc162;
+                }
+                else if (sum->metLocation == 163)
+                {
+                    text = gText_Gen4MetLoc163;
+                }
+                else if (sum->metLocation == 164)
+                {
+                    text = gText_Gen4MetLoc164;
+                }
+                else if (sum->metLocation == 165)
+                {
+                    text = gText_Gen4MetLoc165;
+                }
+                else if (sum->metLocation == 166)
+                {
+                    text = gText_Gen4MetLoc166;
+                }
+                else if (sum->metLocation == 167)
+                {
+                    text = gText_Gen4MetLoc167;
+                }
+                else if (sum->metLocation == 168)
+                {
+                    text = gText_Gen4MetLoc168;
+                }
+                else if (sum->metLocation == 169)
+                {
+                    text = gText_Gen4MetLoc169;
+                }
+                else if (sum->metLocation == 170)
+                {
+                    text = gText_Gen4MetLoc170;
+                }
+                else if (sum->metLocation == 171)
+                {
+                    text = gText_Gen4MetLoc171;
+                }
+                else if (sum->metLocation == 172)
+                {
+                    text = gText_Gen4MetLoc172;
+                }
+                else if (sum->metLocation == 173)
+                {
+                    text = gText_Gen4MetLoc173;
+                }
+                else if (sum->metLocation == 174)
+                {
+                    text = gText_Gen4MetLoc174;
+                }
+                else if (sum->metLocation == 175)
+                {
+                    text = gText_Gen4MetLoc175;
+                }
+                else if (sum->metLocation == 176)
+                {
+                    text = gText_Gen4MetLoc176;
+                }
+                else if (sum->metLocation == 177)
+                {
+                    text = gText_Gen4MetLoc177;
+                }
+                else if (sum->metLocation == 178)
+                {
+                    text = gText_Gen4MetLoc178;
+                }
+                else if (sum->metLocation == 179)
+                {
+                    text = gText_Gen4MetLoc179;
+                }
+                else if (sum->metLocation == 180)
+                {
+                    text = gText_Gen4MetLoc180;
+                }
+                else if (sum->metLocation == 181)
+                {
+                    text = gText_Gen4MetLoc181;
+                }
+                else if (sum->metLocation == 182)
+                {
+                    text = gText_Gen4MetLoc182;
+                }
+                else if (sum->metLocation == 183)
+                {
+                    text = gText_Gen4MetLoc183;
+                }
+                else if (sum->metLocation == 184)
+                {
+                    text = gText_Gen4MetLoc184;
+                }
+                else if (sum->metLocation == 185)
+                {
+                    text = gText_Gen4MetLoc185;
+                }
+                else if (sum->metLocation == 186)
+                {
+                    text = gText_Gen4MetLoc186;
+                }
+                else if (sum->metLocation == 187)
+                {
+                    text = gText_Gen4MetLoc187;
+                }
+                else if (sum->metLocation == 188)
+                {
+                    text = gText_Gen4MetLoc188;
+                }
+                else if (sum->metLocation == 189)
+                {
+                    text = gText_Gen4MetLoc189;
+                }
+                else if (sum->metLocation == 190)
+                {
+                    text = gText_Gen4MetLoc190;
+                }
+                else if (sum->metLocation == 191)
+                {
+                    text = gText_Gen4MetLoc191;
+                }
+                else if (sum->metLocation == 192)
+                {
+                    text = gText_Gen4MetLoc192;
+                }
+                else if (sum->metLocation == 193)
+                {
+                    text = gText_Gen4MetLoc193;
+                }
+                else if (sum->metLocation == 194)
+                {
+                    text = gText_Gen4MetLoc194;
+                }
+                else if (sum->metLocation == 195)
+                {
+                    text = gText_Gen4MetLoc195;
+                }
+                else if (sum->metLocation == 196)
+                {
+                    text = gText_Gen4MetLoc196;
+                }
+                else if (sum->metLocation == 197)
+                {
+                    text = gText_Gen4MetLoc197;
+                }
+                else if (sum->metLocation == 198)
+                {
+                    text = gText_Gen4MetLoc198;
+                }
+                else if (sum->metLocation == 199)
+                {
+                    text = gText_Gen4MetLoc199;
+                }
+                else if (sum->metLocation == 200)
+                {
+                    text = gText_Gen4MetLoc200;
+                }
+                else if (sum->metLocation == 201)
+                {
+                    text = gText_Gen4MetLoc201;
+                }
+                else if (sum->metLocation == 202)
+                {
+                    text = gText_Gen4MetLoc202;
+                }
+                else if (sum->metLocation == 203)
+                {
+                    text = gText_Gen4MetLoc203;
+                }
+                else if (sum->metLocation == 204)
+                {
+                    text = gText_Gen4MetLoc204;
+                }
+                else if (sum->metLocation == 205)
+                {
+                    text = gText_Gen4MetLoc205;
+                }
+                else if (sum->metLocation == 206)
+                {
+                    text = gText_Gen4MetLoc206;
+                }
+                else if (sum->metLocation == 207)
+                {
+                    text = gText_Gen4MetLoc207;
+                }
+                else if (sum->metLocation == 208)
+                {
+                    text = gText_Gen4MetLoc208;
+                }
+                else if (sum->metLocation == 209)
+                {
+                    text = gText_Gen4MetLoc209;
+                }
+                else if (sum->metLocation == 210)
+                {
+                    text = gText_Gen4MetLoc210;
+                }
+                else if (sum->metLocation == 211)
+                {
+                    text = gText_Gen4MetLoc211;
+                }
+                else if (sum->metLocation == 212)
+                {
+                    text = gText_Gen4MetLoc212;
+                }
+                else if (sum->metLocation == 213)
+                {
+                    text = gText_Gen4MetLoc213;
+                }
+                else if (sum->metLocation == 214)
+                {
+                    text = gText_Gen4MetLoc214;
+                }
+                else if (sum->metLocation == 215)
+                {
+                    text = gText_Gen4MetLoc215;
+                }
+                else if (sum->metLocation == 216)
+                {
+                    text = gText_Gen4MetLoc216;
+                }
+                else if (sum->metLocation == 217)
+                {
+                    text = gText_Gen4MetLoc217;
+                }
+                else if (sum->metLocation == 218)
+                {
+                    text = gText_Gen4MetLoc218;
+                }
+                else if (sum->metLocation == 219)
+                {
+                    text = gText_Gen4MetLoc219;
+                }
+                else if (sum->metLocation == 220)
+                {
+                    text = gText_Gen4MetLoc220;
+                }
+                else if (sum->metLocation == 221)
+                {
+                    text = gText_Gen4MetLoc221;
+                }
+                else if (sum->metLocation == 222)
+                {
+                    text = gText_Gen4MetLoc222;
+                }
+                else if (sum->metLocation == 223)
+                {
+                    text = gText_Gen4MetLoc223;
+                }
+                else if (sum->metLocation == 224)
+                {
+                    text = gText_Gen4MetLoc224;
+                }
+                else if (sum->metLocation == 225)
+                {
+                    text = gText_Gen4MetLoc225;
+                }
+                else if (sum->metLocation == 226)
+                {
+                    text = gText_Gen4MetLoc226;
+                }
+                else if (sum->metLocation == 227)
+                {
+                    text = gText_Gen4MetLoc227;
+                }
+                else if (sum->metLocation == 228)
+                {
+                    text = gText_Gen4MetLoc228;
+                }
+                else if (sum->metLocation == 229)
+                {
+                    text = gText_Gen4MetLoc229;
+                }
+                else if (sum->metLocation == 230)
+                {
+                    text = gText_Gen4MetLoc230;
+                }
+                else if (sum->metLocation == 231)
+                {
+                    text = gText_Gen4MetLoc231;
+                }
+                else if (sum->metLocation == 232)
+                {
+                    text = gText_Gen4MetLoc232;
+                }
+                else if (sum->metLocation == 233)
+                {
+                    text = gText_Gen4MetLoc233;
+                }
+                else if (sum->metLocation == 234)
+                {
+                    text = gText_Gen4MetLoc234;
+                }
+                else if (sum->metLocation == 235)
+                {
+                    text = gText_Gen4MetLoc235;
+                }
+                else if (sum->metLocation == 236)
+                {
+                    text = gText_Gen4MetLoc236;
+                }
+                else if (sum->metLocation == 237)
+                {
+                    text = gText_Gen4MetLoc237;
+                }
+                else if (sum->metLocation == 238)
+                {
+                    text = gText_Gen4MetLoc238;
+                }
+                else if (sum->metLocation == 239)
+                {
+                    text = gText_Gen4MetLoc239;
+                }
+                else if (sum->metLocation == 240)
+                {
+                    text = gText_Gen4MetLoc240;
+                }
+                else if (sum->metLocation == 241)
+                {
+                    text = gText_Gen4MetLoc241;
+                }
+                else if (sum->metLocation == 242)
+                {
+                    text = gText_Gen4MetLoc242;
+                }
+                else if (sum->metLocation == 243)
+                {
+                    text = gText_Gen4MetLoc243;
+                }
+                else if (sum->metLocation == 244)
+                {
+                    text = gText_Gen4MetLoc244;
+                }
+                else if (sum->metLocation == 245)
+                {
+                    text = gText_Gen4MetLoc245;
+                }
+                else if (sum->metLocation == 246)
+                {
+                    text = gText_Gen4MetLoc246;
+                }
+                else if (sum->metLocation == 247)
+                {
+                    text = gText_Gen4MetLoc247;
+                }
+                else if (sum->metLocation == 248)
+                {
+                    text = gText_Gen4MetLoc248;
+                }
+                else if (sum->metLocation == 249)
+                {
+                    text = gText_Gen4MetLoc249;
+                }
+                else if (sum->metLocation == 250)
+                {
+                    text = gText_Gen4MetLoc250;
+                }
+                else if (sum->metLocation == 251)
+                {
+                    text = gText_Gen4MetLoc251;
+                }
+                else if (sum->metLocation == 252)
+                {
+                    text = gText_Gen4MetLoc252;
+                }
+                else if (sum->metLocation == 253)
+                {
+                    text = gText_Gen4MetLoc253;
+                }
+                else if (sum->metLocation == 254)
+                {
+                    text = gText_Gen4MetLoc254;
+                }
+                else if (sum->metLocation == 255)
+                {
+                    text = gText_Gen4MetLoc255;
+                }   
+            }
+            else if (sum->metGame == VERSION_IDENTIFIER_NEGA)
+            {
+                if (sum->metLevel == 0)
+                   text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZNega;
+                else
+                   text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureMetAtYZNega;
+            }
+            else if (sum->metGame == VERSION_IDENTIFIER_SPECIAL_GIFT || sum->metGame == VERSION_IDENTIFIER_GACHA)
             {
                 if (sum->metLevel == 0)
                    text = gText_XNatureMiracle;
+                else if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
+                   text = gText_XNatureMiracleEvent;
                 else
                    text = gText_IsItHacked;
+            }
+            else if (sum->metGame == VERSION_IDENTIFIER_DEBUG)
+            {
+                text = gText_DebugPurpose;
             }
             else if (sum->metLevel == 0)
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZ;
@@ -3226,11 +5300,2068 @@ static void BufferMonTrainerMemo(void)
         {
             text = gText_XNatureFatefulEncounter;
         }
-//        else if (sum->metLocation != METLOC_IN_GAME_TRADE && DidMonComeFromGBAGames())
-//        {
-//            text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureObtainedInTrade : gText_XNatureProbablyMetAt;
-//        }
-        else if (sum->metGame == 14)
+        else if (sum->metGame == VERSION_RUBY
+            || sum->metGame == VERSION_SAPPHIRE
+            || sum->metGame == VERSION_FIRE_RED
+            || sum->metGame == VERSION_LEAF_GREEN)
+        {
+            if (sum->metLocation == 0)
+            {
+                text = gText_Gen3MetLocProbably000;
+            }
+            else if (sum->metLocation == 1)
+            {
+                text = gText_Gen3MetLocProbably001;
+            }
+            else if (sum->metLocation == 2)
+            {
+                text = gText_Gen3MetLocProbably002;
+            }
+            else if (sum->metLocation == 3)
+            {
+                text = gText_Gen3MetLocProbably003;
+            }
+            else if (sum->metLocation == 4)
+            {
+                text = gText_Gen3MetLocProbably004;
+            }
+            else if (sum->metLocation == 5)
+            {
+                text = gText_Gen3MetLocProbably005;
+            }
+            else if (sum->metLocation == 6)
+            {
+                text = gText_Gen3MetLocProbably006;
+            }
+            else if (sum->metLocation == 7)
+            {
+                text = gText_Gen3MetLocProbably007;
+            }
+            else if (sum->metLocation == 8)
+            {
+                text = gText_Gen3MetLocProbably008;
+            }
+            else if (sum->metLocation == 9)
+            {
+                text = gText_Gen3MetLocProbably009;
+            }
+            else if (sum->metLocation == 10)
+            {
+                text = gText_Gen3MetLocProbably010;
+            }
+            else if (sum->metLocation == 11)
+            {
+                text = gText_Gen3MetLocProbably011;
+            }
+            else if (sum->metLocation == 12)
+            {
+                text = gText_Gen3MetLocProbably012;
+            }
+            else if (sum->metLocation == 13)
+            {
+                text = gText_Gen3MetLocProbably013;
+            }
+            else if (sum->metLocation == 14)
+            {
+                text = gText_Gen3MetLocProbably014;
+            }
+            else if (sum->metLocation == 15)
+            {
+                text = gText_Gen3MetLocProbably015;
+            }
+            else if (sum->metLocation == 16)
+            {
+                text = gText_Gen3MetLocProbably016;
+            }
+            else if (sum->metLocation == 17)
+            {
+                text = gText_Gen3MetLocProbably017;
+            }
+            else if (sum->metLocation == 18)
+            {
+                text = gText_Gen3MetLocProbably018;
+            }
+            else if (sum->metLocation == 19)
+            {
+                text = gText_Gen3MetLocProbably019;
+            }
+            else if (sum->metLocation == 20)
+            {
+                text = gText_Gen3MetLocProbably020;
+            }
+            else if (sum->metLocation == 21)
+            {
+                text = gText_Gen3MetLocProbably021;
+            }
+            else if (sum->metLocation == 22)
+            {
+                text = gText_Gen3MetLocProbably022;
+            }
+            else if (sum->metLocation == 23)
+            {
+                text = gText_Gen3MetLocProbably023;
+            }
+            else if (sum->metLocation == 24)
+            {
+                text = gText_Gen3MetLocProbably024;
+            }
+            else if (sum->metLocation == 25)
+            {
+                text = gText_Gen3MetLocProbably025;
+            }
+            else if (sum->metLocation == 26)
+            {
+                text = gText_Gen3MetLocProbably026;
+            }
+            else if (sum->metLocation == 27)
+            {
+                text = gText_Gen3MetLocProbably027;
+            }
+            else if (sum->metLocation == 28)
+            {
+                text = gText_Gen3MetLocProbably028;
+            }
+            else if (sum->metLocation == 29)
+            {
+                text = gText_Gen3MetLocProbably029;
+            }
+            else if (sum->metLocation == 30)
+            {
+                text = gText_Gen3MetLocProbably030;
+            }
+            else if (sum->metLocation == 31)
+            {
+                text = gText_Gen3MetLocProbably031;
+            }
+            else if (sum->metLocation == 32)
+            {
+                text = gText_Gen3MetLocProbably032;
+            }
+            else if (sum->metLocation == 33)
+            {
+                text = gText_Gen3MetLocProbably033;
+            }
+            else if (sum->metLocation == 34)
+            {
+                text = gText_Gen3MetLocProbably034;
+            }
+            else if (sum->metLocation == 35)
+            {
+                text = gText_Gen3MetLocProbably035;
+            }
+            else if (sum->metLocation == 36)
+            {
+                text = gText_Gen3MetLocProbably036;
+            }
+            else if (sum->metLocation == 37)
+            {
+                text = gText_Gen3MetLocProbably037;
+            }
+            else if (sum->metLocation == 38)
+            {
+                text = gText_Gen3MetLocProbably038;
+            }
+            else if (sum->metLocation == 39)
+            {
+                text = gText_Gen3MetLocProbably039;
+            }
+            else if (sum->metLocation == 40)
+            {
+                text = gText_Gen3MetLocProbably040;
+            }
+            else if (sum->metLocation == 41)
+            {
+                text = gText_Gen3MetLocProbably041;
+            }
+            else if (sum->metLocation == 42)
+            {
+                text = gText_Gen3MetLocProbably042;
+            }
+            else if (sum->metLocation == 43)
+            {
+                text = gText_Gen3MetLocProbably043;
+            }
+            else if (sum->metLocation == 44)
+            {
+                text = gText_Gen3MetLocProbably044;
+            }
+            else if (sum->metLocation == 45)
+            {
+                text = gText_Gen3MetLocProbably045;
+            }
+            else if (sum->metLocation == 46)
+            {
+                text = gText_Gen3MetLocProbably046;
+            }
+            else if (sum->metLocation == 47)
+            {
+                text = gText_Gen3MetLocProbably047;
+            }
+            else if (sum->metLocation == 48)
+            {
+                text = gText_Gen3MetLocProbably048;
+            }
+            else if (sum->metLocation == 49)
+            {
+                text = gText_Gen3MetLocProbably049;
+            }
+            else if (sum->metLocation == 50)
+            {
+                text = gText_Gen3MetLocProbably050;
+            }
+            else if (sum->metLocation == 51)
+            {
+                text = gText_Gen3MetLocProbably051;
+            }
+            else if (sum->metLocation == 52)
+            {
+                text = gText_Gen3MetLocProbably052;
+            }
+            else if (sum->metLocation == 53)
+            {
+                text = gText_Gen3MetLocProbably053;
+            }
+            else if (sum->metLocation == 54)
+            {
+                text = gText_Gen3MetLocProbably054;
+            }
+            else if (sum->metLocation == 55)
+            {
+                text = gText_Gen3MetLocProbably055;
+            }
+            else if (sum->metLocation == 56)
+            {
+                text = gText_Gen3MetLocProbably056;
+            }
+            else if (sum->metLocation == 57)
+            {
+                text = gText_Gen3MetLocProbably057;
+            }
+            else if (sum->metLocation == 58)
+            {
+                text = gText_Gen3MetLocProbably058;
+            }
+            else if (sum->metLocation == 59)
+            {
+                text = gText_Gen3MetLocProbably059;
+            }
+            else if (sum->metLocation == 60)
+            {
+                text = gText_Gen3MetLocProbably060;
+            }
+            else if (sum->metLocation == 61)
+            {
+                text = gText_Gen3MetLocProbably061;
+            }
+            else if (sum->metLocation == 62)
+            {
+                text = gText_Gen3MetLocProbably062;
+            }
+            else if (sum->metLocation == 63)
+            {
+                text = gText_Gen3MetLocProbably063;
+            }
+            else if (sum->metLocation == 64)
+            {
+                text = gText_Gen3MetLocProbably064;
+            }
+            else if (sum->metLocation == 65)
+            {
+                text = gText_Gen3MetLocProbably065;
+            }
+            else if (sum->metLocation == 66)
+            {
+                text = gText_Gen3MetLocProbably066;
+            }
+            else if (sum->metLocation == 67)
+            {
+                text = gText_Gen3MetLocProbably067;
+            }
+            else if (sum->metLocation == 68)
+            {
+                text = gText_Gen3MetLocProbably068;
+            }
+            else if (sum->metLocation == 69)
+            {
+                text = gText_Gen3MetLocProbably069;
+            }
+            else if (sum->metLocation == 70)
+            {
+                text = gText_Gen3MetLocProbably070;
+            }
+            else if (sum->metLocation == 71)
+            {
+                text = gText_Gen3MetLocProbably071;
+            }
+            else if (sum->metLocation == 72)
+            {
+                text = gText_Gen3MetLocProbably072;
+            }
+            else if (sum->metLocation == 73)
+            {
+                text = gText_Gen3MetLocProbably073;
+            }
+            else if (sum->metLocation == 74)
+            {
+                text = gText_Gen3MetLocProbably074;
+            }
+            else if (sum->metLocation == 75)
+            {
+                text = gText_Gen3MetLocProbably075;
+            }
+            else if (sum->metLocation == 76)
+            {
+                text = gText_Gen3MetLocProbably076;
+            }
+            else if (sum->metLocation == 77)
+            {
+                text = gText_Gen3MetLocProbably077;
+            }
+            else if (sum->metLocation == 78)
+            {
+                text = gText_Gen3MetLocProbably078;
+            }
+            else if (sum->metLocation == 79)
+            {
+                text = gText_Gen3MetLocProbably079;
+            }
+            else if (sum->metLocation == 80)
+            {
+                text = gText_Gen3MetLocProbably080;
+            }
+            else if (sum->metLocation == 81)
+            {
+                text = gText_Gen3MetLocProbably081;
+            }
+            else if (sum->metLocation == 82)
+            {
+                text = gText_Gen3MetLocProbably082;
+            }
+            else if (sum->metLocation == 83)
+            {
+                text = gText_Gen3MetLocProbably083;
+            }
+            else if (sum->metLocation == 84)
+            {
+                text = gText_Gen3MetLocProbably084;
+            }
+            else if (sum->metLocation == 85)
+            {
+                text = gText_Gen3MetLocProbably085;
+            }
+            else if (sum->metLocation == 86)
+            {
+                text = gText_Gen3MetLocProbably086;
+            }
+            else if (sum->metLocation == 87)
+            {
+                text = gText_Gen3MetLocProbably087;
+            }
+            else if (sum->metLocation == 88)
+            {
+                text = gText_Gen3MetLocProbably088;
+            }
+            else if (sum->metLocation == 89)
+            {
+                text = gText_Gen3MetLocProbably089;
+            }
+            else if (sum->metLocation == 90)
+            {
+                text = gText_Gen3MetLocProbably090;
+            }
+            else if (sum->metLocation == 91)
+            {
+                text = gText_Gen3MetLocProbably091;
+            }
+            else if (sum->metLocation == 92)
+            {
+                text = gText_Gen3MetLocProbably092;
+            }
+            else if (sum->metLocation == 93)
+            {
+                text = gText_Gen3MetLocProbably093;
+            }
+            else if (sum->metLocation == 94)
+            {
+                text = gText_Gen3MetLocProbably094;
+            }
+            else if (sum->metLocation == 95)
+            {
+                text = gText_Gen3MetLocProbably095;
+            }
+            else if (sum->metLocation == 96)
+            {
+                text = gText_Gen3MetLocProbably096;
+            }
+            else if (sum->metLocation == 97)
+            {
+                text = gText_Gen3MetLocProbably097;
+            }
+            else if (sum->metLocation == 98)
+            {
+                text = gText_Gen3MetLocProbably098;
+            }
+            else if (sum->metLocation == 99)
+            {
+                text = gText_Gen3MetLocProbably099;
+            }
+            else if (sum->metLocation == 100)
+            {
+                text = gText_Gen3MetLocProbably100;
+            }
+            else if (sum->metLocation == 101)
+            {
+                text = gText_Gen3MetLocProbably101;
+            }
+            else if (sum->metLocation == 102)
+            {
+                text = gText_Gen3MetLocProbably102;
+            }
+            else if (sum->metLocation == 103)
+            {
+                text = gText_Gen3MetLocProbably103;
+            }
+            else if (sum->metLocation == 104)
+            {
+                text = gText_Gen3MetLocProbably104;
+            }
+            else if (sum->metLocation == 105)
+            {
+                text = gText_Gen3MetLocProbably105;
+            }
+            else if (sum->metLocation == 106)
+            {
+                text = gText_Gen3MetLocProbably106;
+            }
+            else if (sum->metLocation == 107)
+            {
+                text = gText_Gen3MetLocProbably107;
+            }
+            else if (sum->metLocation == 108)
+            {
+                text = gText_Gen3MetLocProbably108;
+            }
+            else if (sum->metLocation == 109)
+            {
+                text = gText_Gen3MetLocProbably109;
+            }
+            else if (sum->metLocation == 110)
+            {
+                text = gText_Gen3MetLocProbably110;
+            }
+            else if (sum->metLocation == 111)
+            {
+                text = gText_Gen3MetLocProbably111;
+            }
+            else if (sum->metLocation == 112)
+            {
+                text = gText_Gen3MetLocProbably112;
+            }
+            else if (sum->metLocation == 113)
+            {
+                text = gText_Gen3MetLocProbably113;
+            }
+            else if (sum->metLocation == 114)
+            {
+                text = gText_Gen3MetLocProbably114;
+            }
+            else if (sum->metLocation == 115)
+            {
+                text = gText_Gen3MetLocProbably115;
+            }
+            else if (sum->metLocation == 116)
+            {
+                text = gText_Gen3MetLocProbably116;
+            }
+            else if (sum->metLocation == 117)
+            {
+                text = gText_Gen3MetLocProbably117;
+            }
+            else if (sum->metLocation == 118)
+            {
+                text = gText_Gen3MetLocProbably118;
+            }
+            else if (sum->metLocation == 119)
+            {
+                text = gText_Gen3MetLocProbably119;
+            }
+            else if (sum->metLocation == 120)
+            {
+                text = gText_Gen3MetLocProbably120;
+            }
+            else if (sum->metLocation == 121)
+            {
+                text = gText_Gen3MetLocProbably121;
+            }
+            else if (sum->metLocation == 122)
+            {
+                text = gText_Gen3MetLocProbably122;
+            }
+            else if (sum->metLocation == 123)
+            {
+                text = gText_Gen3MetLocProbably123;
+            }
+            else if (sum->metLocation == 124)
+            {
+                text = gText_Gen3MetLocProbably124;
+            }
+            else if (sum->metLocation == 125)
+            {
+                text = gText_Gen3MetLocProbably125;
+            }
+            else if (sum->metLocation == 126)
+            {
+                text = gText_Gen3MetLocProbably126;
+            }
+            else if (sum->metLocation == 127)
+            {
+                text = gText_Gen3MetLocProbably127;
+            }
+            else if (sum->metLocation == 128)
+            {
+                text = gText_Gen3MetLocProbably128;
+            }
+            else if (sum->metLocation == 129)
+            {
+                text = gText_Gen3MetLocProbably129;
+            }
+            else if (sum->metLocation == 130)
+            {
+                text = gText_Gen3MetLocProbably130;
+            }
+            else if (sum->metLocation == 131)
+            {
+                text = gText_Gen3MetLocProbably131;
+            }
+            else if (sum->metLocation == 132)
+            {
+                text = gText_Gen3MetLocProbably132;
+            }
+            else if (sum->metLocation == 133)
+            {
+                text = gText_Gen3MetLocProbably133;
+            }
+            else if (sum->metLocation == 134)
+            {
+                text = gText_Gen3MetLocProbably134;
+            }
+            else if (sum->metLocation == 135)
+            {
+                text = gText_Gen3MetLocProbably135;
+            }
+            else if (sum->metLocation == 136)
+            {
+                text = gText_Gen3MetLocProbably136;
+            }
+            else if (sum->metLocation == 137)
+            {
+                text = gText_Gen3MetLocProbably137;
+            }
+            else if (sum->metLocation == 138)
+            {
+                text = gText_Gen3MetLocProbably138;
+            }
+            else if (sum->metLocation == 139)
+            {
+                text = gText_Gen3MetLocProbably139;
+            }
+            else if (sum->metLocation == 140)
+            {
+                text = gText_Gen3MetLocProbably140;
+            }
+            else if (sum->metLocation == 141)
+            {
+                text = gText_Gen3MetLocProbably141;
+            }
+            else if (sum->metLocation == 142)
+            {
+                text = gText_Gen3MetLocProbably142;
+            }
+            else if (sum->metLocation == 143)
+            {
+                text = gText_Gen3MetLocProbably143;
+            }
+            else if (sum->metLocation == 144)
+            {
+                text = gText_Gen3MetLocProbably144;
+            }
+            else if (sum->metLocation == 145)
+            {
+                text = gText_Gen3MetLocProbably145;
+            }
+            else if (sum->metLocation == 146)
+            {
+                text = gText_Gen3MetLocProbably146;
+            }
+            else if (sum->metLocation == 147)
+            {
+                text = gText_Gen3MetLocProbably147;
+            }
+            else if (sum->metLocation == 148)
+            {
+                text = gText_Gen3MetLocProbably148;
+            }
+            else if (sum->metLocation == 149)
+            {
+                text = gText_Gen3MetLocProbably149;
+            }
+            else if (sum->metLocation == 150)
+            {
+                text = gText_Gen3MetLocProbably150;
+            }
+            else if (sum->metLocation == 151)
+            {
+                text = gText_Gen3MetLocProbably151;
+            }
+            else if (sum->metLocation == 152)
+            {
+                text = gText_Gen3MetLocProbably152;
+            }
+            else if (sum->metLocation == 153)
+            {
+                text = gText_Gen3MetLocProbably153;
+            }
+            else if (sum->metLocation == 154)
+            {
+                text = gText_Gen3MetLocProbably154;
+            }
+            else if (sum->metLocation == 155)
+            {
+                text = gText_Gen3MetLocProbably155;
+            }
+            else if (sum->metLocation == 156)
+            {
+                text = gText_Gen3MetLocProbably156;
+            }
+            else if (sum->metLocation == 157)
+            {
+                text = gText_Gen3MetLocProbably157;
+            }
+            else if (sum->metLocation == 158)
+            {
+                text = gText_Gen3MetLocProbably158;
+            }
+            else if (sum->metLocation == 159)
+            {
+                text = gText_Gen3MetLocProbably159;
+            }
+            else if (sum->metLocation == 160)
+            {
+                text = gText_Gen3MetLocProbably160;
+            }
+            else if (sum->metLocation == 161)
+            {
+                text = gText_Gen3MetLocProbably161;
+            }
+            else if (sum->metLocation == 162)
+            {
+                text = gText_Gen3MetLocProbably162;
+            }
+            else if (sum->metLocation == 163)
+            {
+                text = gText_Gen3MetLocProbably163;
+            }
+            else if (sum->metLocation == 164)
+            {
+                text = gText_Gen3MetLocProbably164;
+            }
+            else if (sum->metLocation == 165)
+            {
+                text = gText_Gen3MetLocProbably165;
+            }
+            else if (sum->metLocation == 166)
+            {
+                text = gText_Gen3MetLocProbably166;
+            }
+            else if (sum->metLocation == 167)
+            {
+                text = gText_Gen3MetLocProbably167;
+            }
+            else if (sum->metLocation == 168)
+            {
+                text = gText_Gen3MetLocProbably168;
+            }
+            else if (sum->metLocation == 169)
+            {
+                text = gText_Gen3MetLocProbably169;
+            }
+            else if (sum->metLocation == 170)
+            {
+                text = gText_Gen3MetLocProbably170;
+            }
+            else if (sum->metLocation == 171)
+            {
+                text = gText_Gen3MetLocProbably171;
+            }
+            else if (sum->metLocation == 172)
+            {
+                text = gText_Gen3MetLocProbably172;
+            }
+            else if (sum->metLocation == 173)
+            {
+                text = gText_Gen3MetLocProbably173;
+            }
+            else if (sum->metLocation == 174)
+            {
+                text = gText_Gen3MetLocProbably174;
+            }
+            else if (sum->metLocation == 175)
+            {
+                text = gText_Gen3MetLocProbably175;
+            }
+            else if (sum->metLocation == 176)
+            {
+                text = gText_Gen3MetLocProbably176;
+            }
+            else if (sum->metLocation == 177)
+            {
+                text = gText_Gen3MetLocProbably177;
+            }
+            else if (sum->metLocation == 178)
+            {
+                text = gText_Gen3MetLocProbably178;
+            }
+            else if (sum->metLocation == 179)
+            {
+                text = gText_Gen3MetLocProbably179;
+            }
+            else if (sum->metLocation == 180)
+            {
+                text = gText_Gen3MetLocProbably180;
+            }
+            else if (sum->metLocation == 181)
+            {
+                text = gText_Gen3MetLocProbably181;
+            }
+            else if (sum->metLocation == 182)
+            {
+                text = gText_Gen3MetLocProbably182;
+            }
+            else if (sum->metLocation == 183)
+            {
+                text = gText_Gen3MetLocProbably183;
+            }
+            else if (sum->metLocation == 184)
+            {
+                text = gText_Gen3MetLocProbably184;
+            }
+            else if (sum->metLocation == 185)
+            {
+                text = gText_Gen3MetLocProbably185;
+            }
+            else if (sum->metLocation == 186)
+            {
+                text = gText_Gen3MetLocProbably186;
+            }
+            else if (sum->metLocation == 187)
+            {
+                text = gText_Gen3MetLocProbably187;
+            }
+            else if (sum->metLocation == 188)
+            {
+                text = gText_Gen3MetLocProbably188;
+            }
+            else if (sum->metLocation == 189)
+            {
+                text = gText_Gen3MetLocProbably189;
+            }
+            else if (sum->metLocation == 190)
+            {
+                text = gText_Gen3MetLocProbably190;
+            }
+            else if (sum->metLocation == 191)
+            {
+                text = gText_Gen3MetLocProbably191;
+            }
+            else if (sum->metLocation == 192)
+            {
+                text = gText_Gen3MetLocProbably192;
+            }
+            else if (sum->metLocation == 193)
+            {
+                text = gText_Gen3MetLocProbably193;
+            }
+            else if (sum->metLocation == 194)
+            {
+                text = gText_Gen3MetLocProbably194;
+            }
+            else if (sum->metLocation == 195)
+            {
+                text = gText_Gen3MetLocProbably195;
+            }
+            else if (sum->metLocation == 196)
+            {
+                text = gText_Gen3MetLocProbably196;
+            }
+            else if (sum->metLocation == 197)
+            {
+                text = gText_Gen3MetLocProbably197;
+            }
+            else if (sum->metLocation == 198)
+            {
+                text = gText_Gen3MetLocProbably198;
+            }
+            else if (sum->metLocation == 199)
+            {
+                text = gText_Gen3MetLocProbably199;
+            }
+            else if (sum->metLocation == 200)
+            {
+                text = gText_Gen3MetLocProbably200;
+            }
+            else if (sum->metLocation == 201)
+            {
+                text = gText_Gen3MetLocProbably201;
+            }
+            else if (sum->metLocation == 202)
+            {
+                text = gText_Gen3MetLocProbably202;
+            }
+            else if (sum->metLocation == 203)
+            {
+                text = gText_Gen3MetLocProbably203;
+            }
+            else if (sum->metLocation == 204)
+            {
+                text = gText_Gen3MetLocProbably204;
+            }
+            else if (sum->metLocation == 205)
+            {
+                text = gText_Gen3MetLocProbably205;
+            }
+            else if (sum->metLocation == 206)
+            {
+                text = gText_Gen3MetLocProbably206;
+            }
+            else if (sum->metLocation == 207)
+            {
+                text = gText_Gen3MetLocProbably207;
+            }
+            else if (sum->metLocation == 208)
+            {
+                text = gText_Gen3MetLocProbably208;
+            }
+            else if (sum->metLocation == 209)
+            {
+                text = gText_Gen3MetLocProbably209;
+            }
+            else if (sum->metLocation == 210)
+            {
+                text = gText_Gen3MetLocProbably210;
+            }
+            else if (sum->metLocation == 211)
+            {
+                text = gText_Gen3MetLocProbably211;
+            }
+            else if (sum->metLocation == 212)
+            {
+                text = gText_Gen3MetLocProbably212;
+            }
+            else if (sum->metLocation == 213)
+            {
+                text = gText_Gen3MetLocProbably213;
+            }
+            else if (sum->metLocation == 214)
+            {
+                text = gText_Gen3MetLocProbably214;
+            }
+            else if (sum->metLocation == 215)
+            {
+                text = gText_Gen3MetLocProbably215;
+            }
+            else if (sum->metLocation == 216)
+            {
+                text = gText_Gen3MetLocProbably216;
+            }
+            else if (sum->metLocation == 217)
+            {
+                text = gText_Gen3MetLocProbably217;
+            }
+            else if (sum->metLocation == 218)
+            {
+                text = gText_Gen3MetLocProbably218;
+            }
+            else if (sum->metLocation == 219)
+            {
+                text = gText_Gen3MetLocProbably219;
+            }
+            else if (sum->metLocation == 220)
+            {
+                text = gText_Gen3MetLocProbably220;
+            }
+            else if (sum->metLocation == 221)
+            {
+                text = gText_Gen3MetLocProbably221;
+            }
+            else if (sum->metLocation == 222)
+            {
+                text = gText_Gen3MetLocProbably222;
+            }
+            else if (sum->metLocation == 223)
+            {
+                text = gText_Gen3MetLocProbably223;
+            }
+            else if (sum->metLocation == 224)
+            {
+                text = gText_Gen3MetLocProbably224;
+            }
+            else if (sum->metLocation == 225)
+            {
+                text = gText_Gen3MetLocProbably225;
+            }
+            else if (sum->metLocation == 226)
+            {
+                text = gText_Gen3MetLocProbably226;
+            }
+            else if (sum->metLocation == 227)
+            {
+                text = gText_Gen3MetLocProbably227;
+            }
+            else if (sum->metLocation == 228)
+            {
+                text = gText_Gen3MetLocProbably228;
+            }
+            else if (sum->metLocation == 229)
+            {
+                text = gText_Gen3MetLocProbably229;
+            }
+            else if (sum->metLocation == 230)
+            {
+                text = gText_Gen3MetLocProbably230;
+            }
+            else if (sum->metLocation == 231)
+            {
+                text = gText_Gen3MetLocProbably231;
+            }
+            else if (sum->metLocation == 232)
+            {
+                text = gText_Gen3MetLocProbably232;
+            }
+            else if (sum->metLocation == 233)
+            {
+                text = gText_Gen3MetLocProbably233;
+            }
+            else if (sum->metLocation == 234)
+            {
+                text = gText_Gen3MetLocProbably234;
+            }
+            else if (sum->metLocation == 235)
+            {
+                text = gText_Gen3MetLocProbably235;
+            }
+            else if (sum->metLocation == 236)
+            {
+                text = gText_Gen3MetLocProbably236;
+            }
+            else if (sum->metLocation == 237)
+            {
+                text = gText_Gen3MetLocProbably237;
+            }
+            else if (sum->metLocation == 238)
+            {
+                text = gText_Gen3MetLocProbably238;
+            }
+            else if (sum->metLocation == 239)
+            {
+                text = gText_Gen3MetLocProbably239;
+            }
+            else if (sum->metLocation == 240)
+            {
+                text = gText_Gen3MetLocProbably240;
+            }
+            else if (sum->metLocation == 241)
+            {
+                text = gText_Gen3MetLocProbably241;
+            }
+            else if (sum->metLocation == 242)
+            {
+                text = gText_Gen3MetLocProbably242;
+            }
+            else if (sum->metLocation == 243)
+            {
+                text = gText_Gen3MetLocProbably243;
+            }
+            else if (sum->metLocation == 244)
+            {
+                text = gText_Gen3MetLocProbably244;
+            }
+            else if (sum->metLocation == 245)
+            {
+                text = gText_Gen3MetLocProbably245;
+            }
+            else if (sum->metLocation == 246)
+            {
+                text = gText_Gen3MetLocProbably246;
+            }
+            else if (sum->metLocation == 247)
+            {
+                text = gText_Gen3MetLocProbably247;
+            }
+            else if (sum->metLocation == 248)
+            {
+                text = gText_Gen3MetLocProbably248;
+            }
+            else if (sum->metLocation == 249)
+            {
+                text = gText_Gen3MetLocProbably249;
+            }
+            else if (sum->metLocation == 250)
+            {
+                text = gText_Gen3MetLocProbably250;
+            }
+            else if (sum->metLocation == 251)
+            {
+                text = gText_Gen3MetLocProbably251;
+            }
+            else if (sum->metLocation == 252)
+            {
+                text = gText_Gen3MetLocProbably252;
+            }
+            else if (sum->metLocation == 253)
+            {
+                text = gText_Gen3MetLocProbably253;
+            }
+            else if (sum->metLocation == 254)
+            {
+                text = gText_Gen3MetLocProbably254;
+            }
+            else if (sum->metLocation == 255)
+            {
+                text = gText_Gen3MetLocProbably255;
+            }   
+        }
+        else if (sum->metGame == VERSION_DIAMOND
+            || sum->metGame == VERSION_PEARL
+            || sum->metGame == VERSION_PLATINUM
+            || sum->metGame == VERSION_HEART_GOLD
+            || sum->metGame == VERSION_SOUL_SILVER)
+        {
+            if (sum->metLocation == 0)
+            {
+                text = gText_Gen4MetLocProbably000;
+            }
+            else if (sum->metLocation == 1)
+            {
+                text = gText_Gen4MetLocProbably001;
+            }
+            else if (sum->metLocation == 2)
+            {
+                text = gText_Gen4MetLocProbably002;
+            }
+            else if (sum->metLocation == 3)
+            {
+                text = gText_Gen4MetLocProbably003;
+            }
+            else if (sum->metLocation == 4)
+            {
+                text = gText_Gen4MetLocProbably004;
+            }
+            else if (sum->metLocation == 5)
+            {
+                text = gText_Gen4MetLocProbably005;
+            }
+            else if (sum->metLocation == 6)
+            {
+                text = gText_Gen4MetLocProbably006;
+            }
+            else if (sum->metLocation == 7)
+            {
+                text = gText_Gen4MetLocProbably007;
+            }
+            else if (sum->metLocation == 8)
+            {
+                text = gText_Gen4MetLocProbably008;
+            }
+            else if (sum->metLocation == 9)
+            {
+                text = gText_Gen4MetLocProbably009;
+            }
+            else if (sum->metLocation == 10)
+            {
+                text = gText_Gen4MetLocProbably010;
+            }
+            else if (sum->metLocation == 11)
+            {
+                text = gText_Gen4MetLocProbably011;
+            }
+            else if (sum->metLocation == 12)
+            {
+                text = gText_Gen4MetLocProbably012;
+            }
+            else if (sum->metLocation == 13)
+            {
+                text = gText_Gen4MetLocProbably013;
+            }
+            else if (sum->metLocation == 14)
+            {
+                text = gText_Gen4MetLocProbably014;
+            }
+            else if (sum->metLocation == 15)
+            {
+                text = gText_Gen4MetLocProbably015;
+            }
+            else if (sum->metLocation == 16)
+            {
+                text = gText_Gen4MetLocProbably016;
+            }
+            else if (sum->metLocation == 17)
+            {
+                text = gText_Gen4MetLocProbably017;
+            }
+            else if (sum->metLocation == 18)
+            {
+                text = gText_Gen4MetLocProbably018;
+            }
+            else if (sum->metLocation == 19)
+            {
+                text = gText_Gen4MetLocProbably019;
+            }
+            else if (sum->metLocation == 20)
+            {
+                text = gText_Gen4MetLocProbably020;
+            }
+            else if (sum->metLocation == 21)
+            {
+                text = gText_Gen4MetLocProbably021;
+            }
+            else if (sum->metLocation == 22)
+            {
+                text = gText_Gen4MetLocProbably022;
+            }
+            else if (sum->metLocation == 23)
+            {
+                text = gText_Gen4MetLocProbably023;
+            }
+            else if (sum->metLocation == 24)
+            {
+                text = gText_Gen4MetLocProbably024;
+            }
+            else if (sum->metLocation == 25)
+            {
+                text = gText_Gen4MetLocProbably025;
+            }
+            else if (sum->metLocation == 26)
+            {
+                text = gText_Gen4MetLocProbably026;
+            }
+            else if (sum->metLocation == 27)
+            {
+                text = gText_Gen4MetLocProbably027;
+            }
+            else if (sum->metLocation == 28)
+            {
+                text = gText_Gen4MetLocProbably028;
+            }
+            else if (sum->metLocation == 29)
+            {
+                text = gText_Gen4MetLocProbably029;
+            }
+            else if (sum->metLocation == 30)
+            {
+                text = gText_Gen4MetLocProbably030;
+            }
+            else if (sum->metLocation == 31)
+            {
+                text = gText_Gen4MetLocProbably031;
+            }
+            else if (sum->metLocation == 32)
+            {
+                text = gText_Gen4MetLocProbably032;
+            }
+            else if (sum->metLocation == 33)
+            {
+                text = gText_Gen4MetLocProbably033;
+            }
+            else if (sum->metLocation == 34)
+            {
+                text = gText_Gen4MetLocProbably034;
+            }
+            else if (sum->metLocation == 35)
+            {
+                text = gText_Gen4MetLocProbably035;
+            }
+            else if (sum->metLocation == 36)
+            {
+                text = gText_Gen4MetLocProbably036;
+            }
+            else if (sum->metLocation == 37)
+            {
+                text = gText_Gen4MetLocProbably037;
+            }
+            else if (sum->metLocation == 38)
+            {
+                text = gText_Gen4MetLocProbably038;
+            }
+            else if (sum->metLocation == 39)
+            {
+                text = gText_Gen4MetLocProbably039;
+            }
+            else if (sum->metLocation == 40)
+            {
+                text = gText_Gen4MetLocProbably040;
+            }
+            else if (sum->metLocation == 41)
+            {
+                text = gText_Gen4MetLocProbably041;
+            }
+            else if (sum->metLocation == 42)
+            {
+                text = gText_Gen4MetLocProbably042;
+            }
+            else if (sum->metLocation == 43)
+            {
+                text = gText_Gen4MetLocProbably043;
+            }
+            else if (sum->metLocation == 44)
+            {
+                text = gText_Gen4MetLocProbably044;
+            }
+            else if (sum->metLocation == 45)
+            {
+                text = gText_Gen4MetLocProbably045;
+            }
+            else if (sum->metLocation == 46)
+            {
+                text = gText_Gen4MetLocProbably046;
+            }
+            else if (sum->metLocation == 47)
+            {
+                text = gText_Gen4MetLocProbably047;
+            }
+            else if (sum->metLocation == 48)
+            {
+                text = gText_Gen4MetLocProbably048;
+            }
+            else if (sum->metLocation == 49)
+            {
+                text = gText_Gen4MetLocProbably049;
+            }
+            else if (sum->metLocation == 50)
+            {
+                text = gText_Gen4MetLocProbably050;
+            }
+            else if (sum->metLocation == 51)
+            {
+                text = gText_Gen4MetLocProbably051;
+            }
+            else if (sum->metLocation == 52)
+            {
+                text = gText_Gen4MetLocProbably052;
+            }
+            else if (sum->metLocation == 53)
+            {
+                text = gText_Gen4MetLocProbably053;
+            }
+            else if (sum->metLocation == 54)
+            {
+                text = gText_Gen4MetLocProbably054;
+            }
+            else if (sum->metLocation == 55)
+            {
+                text = gText_Gen4MetLocProbably055;
+            }
+            else if (sum->metLocation == 56)
+            {
+                text = gText_Gen4MetLocProbably056;
+            }
+            else if (sum->metLocation == 57)
+            {
+                text = gText_Gen4MetLocProbably057;
+            }
+            else if (sum->metLocation == 58)
+            {
+                text = gText_Gen4MetLocProbably058;
+            }
+            else if (sum->metLocation == 59)
+            {
+                text = gText_Gen4MetLocProbably059;
+            }
+            else if (sum->metLocation == 60)
+            {
+                text = gText_Gen4MetLocProbably060;
+            }
+            else if (sum->metLocation == 61)
+            {
+                text = gText_Gen4MetLocProbably061;
+            }
+            else if (sum->metLocation == 62)
+            {
+                text = gText_Gen4MetLocProbably062;
+            }
+            else if (sum->metLocation == 63)
+            {
+                text = gText_Gen4MetLocProbably063;
+            }
+            else if (sum->metLocation == 64)
+            {
+                text = gText_Gen4MetLocProbably064;
+            }
+            else if (sum->metLocation == 65)
+            {
+                text = gText_Gen4MetLocProbably065;
+            }
+            else if (sum->metLocation == 66)
+            {
+                text = gText_Gen4MetLocProbably066;
+            }
+            else if (sum->metLocation == 67)
+            {
+                text = gText_Gen4MetLocProbably067;
+            }
+            else if (sum->metLocation == 68)
+            {
+                text = gText_Gen4MetLocProbably068;
+            }
+            else if (sum->metLocation == 69)
+            {
+                text = gText_Gen4MetLocProbably069;
+            }
+            else if (sum->metLocation == 70)
+            {
+                text = gText_Gen4MetLocProbably070;
+            }
+            else if (sum->metLocation == 71)
+            {
+                text = gText_Gen4MetLocProbably071;
+            }
+            else if (sum->metLocation == 72)
+            {
+                text = gText_Gen4MetLocProbably072;
+            }
+            else if (sum->metLocation == 73)
+            {
+                text = gText_Gen4MetLocProbably073;
+            }
+            else if (sum->metLocation == 74)
+            {
+                text = gText_Gen4MetLocProbably074;
+            }
+            else if (sum->metLocation == 75)
+            {
+                text = gText_Gen4MetLocProbably075;
+            }
+            else if (sum->metLocation == 76)
+            {
+                text = gText_Gen4MetLocProbably076;
+            }
+            else if (sum->metLocation == 77)
+            {
+                text = gText_Gen4MetLocProbably077;
+            }
+            else if (sum->metLocation == 78)
+            {
+                text = gText_Gen4MetLocProbably078;
+            }
+            else if (sum->metLocation == 79)
+            {
+                text = gText_Gen4MetLocProbably079;
+            }
+            else if (sum->metLocation == 80)
+            {
+                text = gText_Gen4MetLocProbably080;
+            }
+            else if (sum->metLocation == 81)
+            {
+                text = gText_Gen4MetLocProbably081;
+            }
+            else if (sum->metLocation == 82)
+            {
+                text = gText_Gen4MetLocProbably082;
+            }
+            else if (sum->metLocation == 83)
+            {
+                text = gText_Gen4MetLocProbably083;
+            }
+            else if (sum->metLocation == 84)
+            {
+                text = gText_Gen4MetLocProbably084;
+            }
+            else if (sum->metLocation == 85)
+            {
+                text = gText_Gen4MetLocProbably085;
+            }
+            else if (sum->metLocation == 86)
+            {
+                text = gText_Gen4MetLocProbably086;
+            }
+            else if (sum->metLocation == 87)
+            {
+                text = gText_Gen4MetLocProbably087;
+            }
+            else if (sum->metLocation == 88)
+            {
+                text = gText_Gen4MetLocProbably088;
+            }
+            else if (sum->metLocation == 89)
+            {
+                text = gText_Gen4MetLocProbably089;
+            }
+            else if (sum->metLocation == 90)
+            {
+                text = gText_Gen4MetLocProbably090;
+            }
+            else if (sum->metLocation == 91)
+            {
+                text = gText_Gen4MetLocProbably091;
+            }
+            else if (sum->metLocation == 92)
+            {
+                text = gText_Gen4MetLocProbably092;
+            }
+            else if (sum->metLocation == 93)
+            {
+                text = gText_Gen4MetLocProbably093;
+            }
+            else if (sum->metLocation == 94)
+            {
+                text = gText_Gen4MetLocProbably094;
+            }
+            else if (sum->metLocation == 95)
+            {
+                text = gText_Gen4MetLocProbably095;
+            }
+            else if (sum->metLocation == 96)
+            {
+                text = gText_Gen4MetLocProbably096;
+            }
+            else if (sum->metLocation == 97)
+            {
+                text = gText_Gen4MetLocProbably097;
+            }
+            else if (sum->metLocation == 98)
+            {
+                text = gText_Gen4MetLocProbably098;
+            }
+            else if (sum->metLocation == 99)
+            {
+                text = gText_Gen4MetLocProbably099;
+            }
+            else if (sum->metLocation == 100)
+            {
+                text = gText_Gen4MetLocProbably100;
+            }
+            else if (sum->metLocation == 101)
+            {
+                text = gText_Gen4MetLocProbably101;
+            }
+            else if (sum->metLocation == 102)
+            {
+                text = gText_Gen4MetLocProbably102;
+            }
+            else if (sum->metLocation == 103)
+            {
+                text = gText_Gen4MetLocProbably103;
+            }
+            else if (sum->metLocation == 104)
+            {
+                text = gText_Gen4MetLocProbably104;
+            }
+            else if (sum->metLocation == 105)
+            {
+                text = gText_Gen4MetLocProbably105;
+            }
+            else if (sum->metLocation == 106)
+            {
+                text = gText_Gen4MetLocProbably106;
+            }
+            else if (sum->metLocation == 107)
+            {
+                text = gText_Gen4MetLocProbably107;
+            }
+            else if (sum->metLocation == 108)
+            {
+                text = gText_Gen4MetLocProbably108;
+            }
+            else if (sum->metLocation == 109)
+            {
+                text = gText_Gen4MetLocProbably109;
+            }
+            else if (sum->metLocation == 110)
+            {
+                text = gText_Gen4MetLocProbably110;
+            }
+            else if (sum->metLocation == 111)
+            {
+                text = gText_Gen4MetLocProbably111;
+            }
+            else if (sum->metLocation == 112)
+            {
+                text = gText_Gen4MetLocProbably112;
+            }
+            else if (sum->metLocation == 113)
+            {
+                text = gText_Gen4MetLocProbably113;
+            }
+            else if (sum->metLocation == 114)
+            {
+                text = gText_Gen4MetLocProbably114;
+            }
+            else if (sum->metLocation == 115)
+            {
+                text = gText_Gen4MetLocProbably115;
+            }
+            else if (sum->metLocation == 116)
+            {
+                text = gText_Gen4MetLocProbably116;
+            }
+            else if (sum->metLocation == 117)
+            {
+                text = gText_Gen4MetLocProbably117;
+            }
+            else if (sum->metLocation == 118)
+            {
+                text = gText_Gen4MetLocProbably118;
+            }
+            else if (sum->metLocation == 119)
+            {
+                text = gText_Gen4MetLocProbably119;
+            }
+            else if (sum->metLocation == 120)
+            {
+                text = gText_Gen4MetLocProbably120;
+            }
+            else if (sum->metLocation == 121)
+            {
+                text = gText_Gen4MetLocProbably121;
+            }
+            else if (sum->metLocation == 122)
+            {
+                text = gText_Gen4MetLocProbably122;
+            }
+            else if (sum->metLocation == 123)
+            {
+                text = gText_Gen4MetLocProbably123;
+            }
+            else if (sum->metLocation == 124)
+            {
+                text = gText_Gen4MetLocProbably124;
+            }
+            else if (sum->metLocation == 125)
+            {
+                text = gText_Gen4MetLocProbably125;
+            }
+            else if (sum->metLocation == 126)
+            {
+                text = gText_Gen4MetLocProbably126;
+            }
+            else if (sum->metLocation == 127)
+            {
+                text = gText_Gen4MetLocProbably127;
+            }
+            else if (sum->metLocation == 128)
+            {
+                text = gText_Gen4MetLocProbably128;
+            }
+            else if (sum->metLocation == 129)
+            {
+                text = gText_Gen4MetLocProbably129;
+            }
+            else if (sum->metLocation == 130)
+            {
+                text = gText_Gen4MetLocProbably130;
+            }
+            else if (sum->metLocation == 131)
+            {
+                text = gText_Gen4MetLocProbably131;
+            }
+            else if (sum->metLocation == 132)
+            {
+                text = gText_Gen4MetLocProbably132;
+            }
+            else if (sum->metLocation == 133)
+            {
+                text = gText_Gen4MetLocProbably133;
+            }
+            else if (sum->metLocation == 134)
+            {
+                text = gText_Gen4MetLocProbably134;
+            }
+            else if (sum->metLocation == 135)
+            {
+                text = gText_Gen4MetLocProbably135;
+            }
+            else if (sum->metLocation == 136)
+            {
+                text = gText_Gen4MetLocProbably136;
+            }
+            else if (sum->metLocation == 137)
+            {
+                text = gText_Gen4MetLocProbably137;
+            }
+            else if (sum->metLocation == 138)
+            {
+                text = gText_Gen4MetLocProbably138;
+            }
+            else if (sum->metLocation == 139)
+            {
+                text = gText_Gen4MetLocProbably139;
+            }
+            else if (sum->metLocation == 140)
+            {
+                text = gText_Gen4MetLocProbably140;
+            }
+            else if (sum->metLocation == 141)
+            {
+                text = gText_Gen4MetLocProbably141;
+            }
+            else if (sum->metLocation == 142)
+            {
+                text = gText_Gen4MetLocProbably142;
+            }
+            else if (sum->metLocation == 143)
+            {
+                text = gText_Gen4MetLocProbably143;
+            }
+            else if (sum->metLocation == 144)
+            {
+                text = gText_Gen4MetLocProbably144;
+            }
+            else if (sum->metLocation == 145)
+            {
+                text = gText_Gen4MetLocProbably145;
+            }
+            else if (sum->metLocation == 146)
+            {
+                text = gText_Gen4MetLocProbably146;
+            }
+            else if (sum->metLocation == 147)
+            {
+                text = gText_Gen4MetLocProbably147;
+            }
+            else if (sum->metLocation == 148)
+            {
+                text = gText_Gen4MetLocProbably148;
+            }
+            else if (sum->metLocation == 149)
+            {
+                text = gText_Gen4MetLocProbably149;
+            }
+            else if (sum->metLocation == 150)
+            {
+                text = gText_Gen4MetLocProbably150;
+            }
+            else if (sum->metLocation == 151)
+            {
+                text = gText_Gen4MetLocProbably151;
+            }
+            else if (sum->metLocation == 152)
+            {
+                text = gText_Gen4MetLocProbably152;
+            }
+            else if (sum->metLocation == 153)
+            {
+                text = gText_Gen4MetLocProbably153;
+            }
+            else if (sum->metLocation == 154)
+            {
+                text = gText_Gen4MetLocProbably154;
+            }
+            else if (sum->metLocation == 155)
+            {
+                text = gText_Gen4MetLocProbably155;
+            }
+            else if (sum->metLocation == 156)
+            {
+                text = gText_Gen4MetLocProbably156;
+            }
+            else if (sum->metLocation == 157)
+            {
+                text = gText_Gen4MetLocProbably157;
+            }
+            else if (sum->metLocation == 158)
+            {
+                text = gText_Gen4MetLocProbably158;
+            }
+            else if (sum->metLocation == 159)
+            {
+                text = gText_Gen4MetLocProbably159;
+            }
+            else if (sum->metLocation == 160)
+            {
+                text = gText_Gen4MetLocProbably160;
+            }
+            else if (sum->metLocation == 161)
+            {
+                text = gText_Gen4MetLocProbably161;
+            }
+            else if (sum->metLocation == 162)
+            {
+                text = gText_Gen4MetLocProbably162;
+            }
+            else if (sum->metLocation == 163)
+            {
+                text = gText_Gen4MetLocProbably163;
+            }
+            else if (sum->metLocation == 164)
+            {
+                text = gText_Gen4MetLocProbably164;
+            }
+            else if (sum->metLocation == 165)
+            {
+                text = gText_Gen4MetLocProbably165;
+            }
+            else if (sum->metLocation == 166)
+            {
+                text = gText_Gen4MetLocProbably166;
+            }
+            else if (sum->metLocation == 167)
+            {
+                text = gText_Gen4MetLocProbably167;
+            }
+            else if (sum->metLocation == 168)
+            {
+                text = gText_Gen4MetLocProbably168;
+            }
+            else if (sum->metLocation == 169)
+            {
+                text = gText_Gen4MetLocProbably169;
+            }
+            else if (sum->metLocation == 170)
+            {
+                text = gText_Gen4MetLocProbably170;
+            }
+            else if (sum->metLocation == 171)
+            {
+                text = gText_Gen4MetLocProbably171;
+            }
+            else if (sum->metLocation == 172)
+            {
+                text = gText_Gen4MetLocProbably172;
+            }
+            else if (sum->metLocation == 173)
+            {
+                text = gText_Gen4MetLocProbably173;
+            }
+            else if (sum->metLocation == 174)
+            {
+                text = gText_Gen4MetLocProbably174;
+            }
+            else if (sum->metLocation == 175)
+            {
+                text = gText_Gen4MetLocProbably175;
+            }
+            else if (sum->metLocation == 176)
+            {
+                text = gText_Gen4MetLocProbably176;
+            }
+            else if (sum->metLocation == 177)
+            {
+                text = gText_Gen4MetLocProbably177;
+            }
+            else if (sum->metLocation == 178)
+            {
+                text = gText_Gen4MetLocProbably178;
+            }
+            else if (sum->metLocation == 179)
+            {
+                text = gText_Gen4MetLocProbably179;
+            }
+            else if (sum->metLocation == 180)
+            {
+                text = gText_Gen4MetLocProbably180;
+            }
+            else if (sum->metLocation == 181)
+            {
+                text = gText_Gen4MetLocProbably181;
+            }
+            else if (sum->metLocation == 182)
+            {
+                text = gText_Gen4MetLocProbably182;
+            }
+            else if (sum->metLocation == 183)
+            {
+                text = gText_Gen4MetLocProbably183;
+            }
+            else if (sum->metLocation == 184)
+            {
+                text = gText_Gen4MetLocProbably184;
+            }
+            else if (sum->metLocation == 185)
+            {
+                text = gText_Gen4MetLocProbably185;
+            }
+            else if (sum->metLocation == 186)
+            {
+                text = gText_Gen4MetLocProbably186;
+            }
+            else if (sum->metLocation == 187)
+            {
+                text = gText_Gen4MetLocProbably187;
+            }
+            else if (sum->metLocation == 188)
+            {
+                text = gText_Gen4MetLocProbably188;
+            }
+            else if (sum->metLocation == 189)
+            {
+                text = gText_Gen4MetLocProbably189;
+            }
+            else if (sum->metLocation == 190)
+            {
+                text = gText_Gen4MetLocProbably190;
+            }
+            else if (sum->metLocation == 191)
+            {
+                text = gText_Gen4MetLocProbably191;
+            }
+            else if (sum->metLocation == 192)
+            {
+                text = gText_Gen4MetLocProbably192;
+            }
+            else if (sum->metLocation == 193)
+            {
+                text = gText_Gen4MetLocProbably193;
+            }
+            else if (sum->metLocation == 194)
+            {
+                text = gText_Gen4MetLocProbably194;
+            }
+            else if (sum->metLocation == 195)
+            {
+                text = gText_Gen4MetLocProbably195;
+            }
+            else if (sum->metLocation == 196)
+            {
+                text = gText_Gen4MetLocProbably196;
+            }
+            else if (sum->metLocation == 197)
+            {
+                text = gText_Gen4MetLocProbably197;
+            }
+            else if (sum->metLocation == 198)
+            {
+                text = gText_Gen4MetLocProbably198;
+            }
+            else if (sum->metLocation == 199)
+            {
+                text = gText_Gen4MetLocProbably199;
+            }
+            else if (sum->metLocation == 200)
+            {
+                text = gText_Gen4MetLocProbably200;
+            }
+            else if (sum->metLocation == 201)
+            {
+                text = gText_Gen4MetLocProbably201;
+            }
+            else if (sum->metLocation == 202)
+            {
+                text = gText_Gen4MetLocProbably202;
+            }
+            else if (sum->metLocation == 203)
+            {
+                text = gText_Gen4MetLocProbably203;
+            }
+            else if (sum->metLocation == 204)
+            {
+                text = gText_Gen4MetLocProbably204;
+            }
+            else if (sum->metLocation == 205)
+            {
+                text = gText_Gen4MetLocProbably205;
+            }
+            else if (sum->metLocation == 206)
+            {
+                text = gText_Gen4MetLocProbably206;
+            }
+            else if (sum->metLocation == 207)
+            {
+                text = gText_Gen4MetLocProbably207;
+            }
+            else if (sum->metLocation == 208)
+            {
+                text = gText_Gen4MetLocProbably208;
+            }
+            else if (sum->metLocation == 209)
+            {
+                text = gText_Gen4MetLocProbably209;
+            }
+            else if (sum->metLocation == 210)
+            {
+                text = gText_Gen4MetLocProbably210;
+            }
+            else if (sum->metLocation == 211)
+            {
+                text = gText_Gen4MetLocProbably211;
+            }
+            else if (sum->metLocation == 212)
+            {
+                text = gText_Gen4MetLocProbably212;
+            }
+            else if (sum->metLocation == 213)
+            {
+                text = gText_Gen4MetLocProbably213;
+            }
+            else if (sum->metLocation == 214)
+            {
+                text = gText_Gen4MetLocProbably214;
+            }
+            else if (sum->metLocation == 215)
+            {
+                text = gText_Gen4MetLocProbably215;
+            }
+            else if (sum->metLocation == 216)
+            {
+                text = gText_Gen4MetLocProbably216;
+            }
+            else if (sum->metLocation == 217)
+            {
+                text = gText_Gen4MetLocProbably217;
+            }
+            else if (sum->metLocation == 218)
+            {
+                text = gText_Gen4MetLocProbably218;
+            }
+            else if (sum->metLocation == 219)
+            {
+                text = gText_Gen4MetLocProbably219;
+            }
+            else if (sum->metLocation == 220)
+            {
+                text = gText_Gen4MetLocProbably220;
+            }
+            else if (sum->metLocation == 221)
+            {
+                text = gText_Gen4MetLocProbably221;
+            }
+            else if (sum->metLocation == 222)
+            {
+                text = gText_Gen4MetLocProbably222;
+            }
+            else if (sum->metLocation == 223)
+            {
+                text = gText_Gen4MetLocProbably223;
+            }
+            else if (sum->metLocation == 224)
+            {
+                text = gText_Gen4MetLocProbably224;
+            }
+            else if (sum->metLocation == 225)
+            {
+                text = gText_Gen4MetLocProbably225;
+            }
+            else if (sum->metLocation == 226)
+            {
+                text = gText_Gen4MetLocProbably226;
+            }
+            else if (sum->metLocation == 227)
+            {
+                text = gText_Gen4MetLocProbably227;
+            }
+            else if (sum->metLocation == 228)
+            {
+                text = gText_Gen4MetLocProbably228;
+            }
+            else if (sum->metLocation == 229)
+            {
+                text = gText_Gen4MetLocProbably229;
+            }
+            else if (sum->metLocation == 230)
+            {
+                text = gText_Gen4MetLocProbably230;
+            }
+            else if (sum->metLocation == 231)
+            {
+                text = gText_Gen4MetLocProbably231;
+            }
+            else if (sum->metLocation == 232)
+            {
+                text = gText_Gen4MetLocProbably232;
+            }
+            else if (sum->metLocation == 233)
+            {
+                text = gText_Gen4MetLocProbably233;
+            }
+            else if (sum->metLocation == 234)
+            {
+                text = gText_Gen4MetLocProbably234;
+            }
+            else if (sum->metLocation == 235)
+            {
+                text = gText_Gen4MetLocProbably235;
+            }
+            else if (sum->metLocation == 236)
+            {
+                text = gText_Gen4MetLocProbably236;
+            }
+            else if (sum->metLocation == 237)
+            {
+                text = gText_Gen4MetLocProbably237;
+            }
+            else if (sum->metLocation == 238)
+            {
+                text = gText_Gen4MetLocProbably238;
+            }
+            else if (sum->metLocation == 239)
+            {
+                text = gText_Gen4MetLocProbably239;
+            }
+            else if (sum->metLocation == 240)
+            {
+                text = gText_Gen4MetLocProbably240;
+            }
+            else if (sum->metLocation == 241)
+            {
+                text = gText_Gen4MetLocProbably241;
+            }
+            else if (sum->metLocation == 242)
+            {
+                text = gText_Gen4MetLocProbably242;
+            }
+            else if (sum->metLocation == 243)
+            {
+                text = gText_Gen4MetLocProbably243;
+            }
+            else if (sum->metLocation == 244)
+            {
+                text = gText_Gen4MetLocProbably244;
+            }
+            else if (sum->metLocation == 245)
+            {
+                text = gText_Gen4MetLocProbably245;
+            }
+            else if (sum->metLocation == 246)
+            {
+                text = gText_Gen4MetLocProbably246;
+            }
+            else if (sum->metLocation == 247)
+            {
+                text = gText_Gen4MetLocProbably247;
+            }
+            else if (sum->metLocation == 248)
+            {
+                text = gText_Gen4MetLocProbably248;
+            }
+            else if (sum->metLocation == 249)
+            {
+                text = gText_Gen4MetLocProbably249;
+            }
+            else if (sum->metLocation == 250)
+            {
+                text = gText_Gen4MetLocProbably250;
+            }
+            else if (sum->metLocation == 251)
+            {
+                text = gText_Gen4MetLocProbably251;
+            }
+            else if (sum->metLocation == 252)
+            {
+                text = gText_Gen4MetLocProbably252;
+            }
+            else if (sum->metLocation == 253)
+            {
+                text = gText_Gen4MetLocProbably253;
+            }
+            else if (sum->metLocation == 254)
+            {
+                text = gText_Gen4MetLocProbably254;
+            }
+            else if (sum->metLocation == 255)
+            {
+                text = gText_Gen4MetLocProbably255;
+            }
+        }
+        else if (sum->metGame == VERSION_IDENTIFIER_SPECIAL_GIFT)
         {
             if (sum->metLocation == 254
                  && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
@@ -3240,23 +7371,149 @@ static void BufferMonTrainerMemo(void)
                 text = gText_FromDev;
             }
             else if (sum->metLocation == 253
-                 && VarGet(VAR_GIFTMON2_IDENTIFIER) == 253
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
                 // && sum->OTName == gText_Ame
                  && sum->OTID == 87622969)
             {
                 text = gText_FromTimeTraveller;
             }
             else if (sum->metLocation == 252
-                 && VarGet(VAR_GIFTMON3_IDENTIFIER) == 252
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
                 // && sum->OTName == gText_BlueShell
                  && sum->OTID == 1577803275)
             {
                 text = gText_FromGardener;
             }
+            else if (sum->metLocation == 251
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gText_Machomuu
+                 && sum->OTID == 2713756096)
+            {
+                text = gText_FromGirlTrapped;
+            }
+            else if (sum->metLocation == 250
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gJPText_Elgrete
+                 && sum->OTID == 456727353)
+            {
+                text = gText_FromZokuGensokyoDev;
+            }
+            else if (sum->metLocation == 249
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gJPText_RF
+                 && sum->OTID == 1298287970)
+            {
+                text = gText_FromRFDev;
+            }
+            else if (sum->metLocation == 248
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gJPText_Hemoguro
+                 && sum->OTID == 169609756)
+            {
+                text = gText_FromTPDPDev;
+            }
+            else if (sum->metLocation == 247
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gText_DSlayer
+                 && sum->OTID == 27197855)
+            {
+                text = gText_FromReduxDev;
+            }
+            else if (sum->metLocation == 246
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gText_Tye
+                 && sum->OTID == 262148)
+            {
+                text = gText_FromThmonHGDev;
+            }
+            else if (sum->metLocation == 245
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gText_Gemini
+                 && sum->OTID == 1317424774)
+            {
+                text = gText_FromThmonOrdinaryDev;
+            }
+            else if (sum->metLocation == 244
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gJPText_eggf
+                 && sum->OTID == 11796660)
+            {
+                text = gText_FromLeafKeyDev;
+            }
+            else if (sum->metLocation == 243
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gText_ZetaSukuna
+                 && sum->OTID == 1703962000)
+            {
+                text = gText_FromRetold;
+            }
+            else if (sum->metLocation == 242
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gText_Agastya
+                 && sum->OTID == 1000000)
+            {
+                text = gText_FromPurple;
+            }
+            else if (sum->metLocation == 241
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gJPText_ZUN
+                 && sum->OTID == 0)
+            {
+                text = gText_ShanghaiAlice;
+            }
+            else if (sum->metLocation == 1
+                 && VarGet(VAR_GIFTMON2_IDENTIFIER) == 10
+                // && sum->OTName == gText_OTNameGold
+                 && sum->OTID == 1444697628)
+            {
+                text = gText_FromChampion;
+            }
+            else if (sum->metLocation == 2
+                 && VarGet(VAR_GIFTMON2_IDENTIFIER) == 10
+                // && sum->OTName == gText_OTNameSilver
+                 && sum->OTID == 2885069814)
+            {
+                text = gText_FromRival;
+            }
+            else if (sum->metLocation == 3
+                 && VarGet(VAR_GIFTMON2_IDENTIFIER) == 10
+                // && sum->OTName == gText_OTNameWakaba
+                 && sum->OTID == 4063294000)
+            {
+                text = gText_FromFirstHero;
+            }
+            else if (sum->metLocation == 4
+                 && VarGet(VAR_GIFTMON2_IDENTIFIER) == 10
+                // && sum->OTName == gText_OTNameIllusionaryGirl
+                 && sum->OTID == 131467222)
+            {
+                text = gText_FromDeusEx;
+            }
+            else if (sum->metLocation == 5
+                 && VarGet(VAR_GIFTMON2_IDENTIFIER) == 10
+                // && sum->OTName == gText_OTNameMiki
+                 && sum->OTID == 134023165)
+            {
+                text = gText_FromBattleGirl;
+            }
+            else if (sum->metLocation == 6
+                 && VarGet(VAR_GIFTMON2_IDENTIFIER) == 10
+                // && sum->OTName == gText_OTNameReimu
+                 && sum->OTID == 2006)
+            {
+                text = gText_FromMiko;
+            }
+            else if (sum->metLocation == 7
+                 && VarGet(VAR_GIFTMON2_IDENTIFIER) == 10
+                // && sum->OTName == gText_OTNameVIVIT
+                 && sum->OTID == 130942926)
+            {
+                text = gText_FromRobotMaid;
+            }
             else if (sum->metLocation == 10
-                // && VarGet(VAR_GIFTMON4_IDENTIFIER) == 10
-                // && sum->OTName == gText_BlueShell
-                 && sum->OTID == 28443058)
+                 && VarGet(VAR_GIFTMON2_IDENTIFIER) == 10
+                // && sum->OTName == gText_Tsukasa
+                 && sum->OTID == 683813058)
             {
                 text = gText_FromDimensionalRift;
             }
@@ -3264,8 +7521,18 @@ static void BufferMonTrainerMemo(void)
             {
                 text = gText_IsItHacked;
             }
+        }
+        else if (sum->metGame == VERSION_IDENTIFIER_NEGA)
+        {
+            if (sum->metLevel == 0)
+                text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZNega;
+            else
+                text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureProbablyMetAtNega;
         } 
-
+        else if (sum->metLocation != METLOC_IN_GAME_TRADE && DidMonComeFromGBAGames())
+        {
+            text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureObtainedInTrade : gText_XNatureProbablyMetAt;
+        }
         else
         {
             text = gText_XNatureObtainedInTrade;
@@ -3393,7 +7660,7 @@ static void PrintEggMemo(void)
 
     if (sMonSummaryScreen->summary.sanity != 1)
     {
-        if (sum->metGame == 14)
+        if (sum->metGame == VERSION_IDENTIFIER_SPECIAL_GIFT || sum->metGame == VERSION_IDENTIFIER_GACHA)
             text = gText_EggFromMiracle;
         else if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
             text = gText_PeculiarEggNicePlace;

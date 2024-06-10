@@ -267,8 +267,8 @@
 #define VAR_UNUSED_0x40F7                                0x40F7 // Unused Var
 #define VAR_UNUSED_0x40F8                                0x40F8 // Unused Var
 #define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
-#define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
-#define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
+#define VAR_GIFTMON_METLOC_SETTING                       0x40FA // Unused Var
+#define VAR_GIFTMON_VERSION_SETTING                      0x40FB // Unused Var
 #define VAR_GIFTMON_OT_SETTING                           0x40FC // Unused Var
 #define VAR_GIFTMON3_IDENTIFIER                          0x40FD // Unused Var
 #define VAR_GIFTMON2_IDENTIFIER                          0x40FE // Unused Var

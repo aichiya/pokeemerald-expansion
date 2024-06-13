@@ -1210,6 +1210,12 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
             SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
             SetBoxMonData(boxMon, MON_DATA_OT_NAME, gJPText_ZUN);
             }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 240)
+            {
+            u32 otId = 328;
+            SetBoxMonData(boxMon, MON_DATA_OT_ID, &otId);
+            SetBoxMonData(boxMon, MON_DATA_OT_NAME, gText_Nemoma);
+            }
         else if (VarGet(VAR_GIFTMON_OT_SETTING) == 1)
             {
             u32 otId = 1444697628;

@@ -1852,7 +1852,22 @@ void PartyMonBecomeEgg(void)
 
         if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
         {
-            if (GetMonData(mon, MON_DATA_MET_GAME) != 14)
+            if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_SPECIAL_GIFT
+               || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_DEBUG)
+            {
+                CalculateMonStats(mon);
+            }
+            else if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_GACHA
+               && GetMonData(mon, MON_DATA_MET_LOCATION) == METLOC_FATEFUL_ENCOUNTER)
+            {
+                CalculateMonStats(mon);
+            }
+            else if (GetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER) == TRUE
+               || GetMonData(mon, MON_DATA_MET_LOCATION) == METLOC_FATEFUL_ENCOUNTER)
+            {
+                CalculateMonStats(mon);
+            }
+            else
             {
                 isEgg = TRUE;
                 cycle = 0;
@@ -1874,7 +1889,18 @@ void PartyMonBecomeEgg(void)
 
     struct Pokemon *mon = &gPlayerParty[0];
 
-    if (GetMonData(mon, MON_DATA_MET_GAME) == 14)
+    if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_SPECIAL_GIFT
+        || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_DEBUG)
+    {
+        CalculateMonStats(mon);
+    }
+    else if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_GACHA
+        && GetMonData(mon, MON_DATA_MET_LOCATION) == METLOC_FATEFUL_ENCOUNTER)
+    {
+        CalculateMonStats(mon);
+    }
+    else if (GetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER) == TRUE
+        || GetMonData(mon, MON_DATA_MET_LOCATION) == METLOC_FATEFUL_ENCOUNTER)
     {
         CalculateMonStats(mon);
     }
@@ -1909,7 +1935,22 @@ void PartyMonBecomeEggRandom(void)
 
         if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
         {
-            if (GetMonData(mon, MON_DATA_MET_GAME) != 14)
+            if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_SPECIAL_GIFT
+               || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_DEBUG)
+            {
+                CalculateMonStats(mon);
+            }
+            else if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_GACHA
+               && GetMonData(mon, MON_DATA_MET_LOCATION) == METLOC_FATEFUL_ENCOUNTER)
+            {
+                CalculateMonStats(mon);
+            }
+            else if (GetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER) == TRUE
+               || GetMonData(mon, MON_DATA_MET_LOCATION) == METLOC_FATEFUL_ENCOUNTER)
+            {
+                CalculateMonStats(mon);
+            }
+            else
             {
                 isEgg = TRUE;
                 cycle = 0;
@@ -1933,7 +1974,18 @@ void PartyMonBecomeEggRandom(void)
 
     struct Pokemon *mon = &gPlayerParty[0];
 
-    if (GetMonData(mon, MON_DATA_MET_GAME) == 14)
+    if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_SPECIAL_GIFT
+        || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_DEBUG)
+    {
+        CalculateMonStats(mon);
+    }
+    else if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_GACHA
+        && GetMonData(mon, MON_DATA_MET_LOCATION) == METLOC_FATEFUL_ENCOUNTER)
+    {
+        CalculateMonStats(mon);
+    }
+    else if (GetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER) == TRUE
+        || GetMonData(mon, MON_DATA_MET_LOCATION) == METLOC_FATEFUL_ENCOUNTER)
     {
         CalculateMonStats(mon);
     }

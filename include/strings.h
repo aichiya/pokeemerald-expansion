@@ -4093,7 +4093,7 @@ extern const u8 gText_Gen4MetLocProbably255[];
 extern const u8 gText_XNatureHatchedAtYZNega[];
 extern const u8 gText_XNatureMetAtYZNega[];
 extern const u8 gText_XNatureProbablyMetAtNega[];
-extern const u8 gText_XNatureMiracleEvent[];
+extern const u8 gText_XNatureAnotherReality[];
 
 extern const u8 gText_XNatureMiracle[];
 extern const u8 gText_EggFromMiracle[];
@@ -4152,5 +4152,11 @@ extern const u8 gText_FromRobotMaid[];
 extern const u8 gJPText_ZUN[];
 extern const u8 gJPText_KiSan[];
 extern const u8 gText_ShanghaiAlice[];
+extern const u8 gText_FromGacha[];
+extern const u8 gText_FromGachaProbably[];
+extern const u8 gText_FromMiracleGacha[];
+extern const u8 gText_FromAnotherPlayer[];
+extern const u8 gText_Nemoma[];
+extern const u8 gText_SaniwaShrine[];
 
 #endif // GUARD_STRINGS_H

@@ -1171,43 +1171,60 @@ void CreateEggMiracle(struct Pokemon *mon, u16 species, bool8 setHotSpringsLocat
         
     CreateMon(mon, species, EGG_HATCH_LEVEL, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     metLevel = 0;
-    ball = ITEM_CHERISH_BALL;
+    ball = ITEM_POKE_BALL;
     language = LANGUAGE_JAPANESE;
-    SetMonData(mon, MON_DATA_POKEBALL, &ball);
-    SetMonData(mon, MON_DATA_NICKNAME, sJapaneseEggNickname);
     cycle = 0;
     SetMonData(mon, MON_DATA_FRIENDSHIP, &cycle);
     SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
-    SetMonData(mon, MON_DATA_LANGUAGE, &language);  
-    gameMet = 14;
-    SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
-    assignRibbon = 1;
-//    SetMonData(mon, MON_DATA_MARINE_RIBBON, &assignRibbon);
-//    SetMonData(mon, MON_DATA_LAND_RIBBON, &assignRibbon);
-    SetMonData(mon, MON_DATA_SKY_RIBBON, &assignRibbon);
-//    SetMonData(mon, MON_DATA_COUNTRY_RIBBON, &assignRibbon);
-//    SetMonData(mon, MON_DATA_NATIONAL_RIBBON, &assignRibbon);
-//    SetMonData(mon, MON_DATA_EARTH_RIBBON, &assignRibbon);
-//    SetMonData(mon, MON_DATA_WORLD_RIBBON, &assignRibbon);
-    isModernFatefulEncounter = 1;
-    SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
-        if (setHotSpringsLocation)
+    SetMonData(mon, MON_DATA_LANGUAGE, &language);
+    SetMonData(mon, MON_DATA_POKEBALL, &ball);
+    SetMonData(mon, MON_DATA_NICKNAME, sJapaneseEggNickname);
+    
+    if (VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_GACHA)
     {
-        metLocation = METLOC_SPECIAL_EGG;
+        if(VarGet(VAR_GIFTMON_METLOC_SETTING) == METLOC_FATEFUL_ENCOUNTER) // Miracle Gacha
+        {
+            ball = ITEM_CHERISH_BALL;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            gameMet = VERSION_IDENTIFIER_GACHA;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+            metLocation = VarGet(VAR_GIFTMON_METLOC_SETTING);
+            SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
+            assignRibbon = 1;
+            SetMonData(mon, MON_DATA_SKY_RIBBON, &assignRibbon);
+            gSaveBlock1Ptr->giftRibbons[0] = 58;
+            gSaveBlock1Ptr->giftRibbons[1] = 59;
+            gSaveBlock1Ptr->giftRibbons[2] = 60;
+            gSaveBlock1Ptr->giftRibbons[3] = 61;
+            gSaveBlock1Ptr->giftRibbons[4] = 62;
+            gSaveBlock1Ptr->giftRibbons[5] = 63;
+            gSaveBlock1Ptr->giftRibbons[6] = 64;
+            isModernFatefulEncounter = 1;
+            SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
+        }
+        else
+        {
+            ball = ITEM_PREMIER_BALL;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            gameMet = VERSION_IDENTIFIER_GACHA;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+            metLocation = VarGet(VAR_GIFTMON_METLOC_SETTING);
+            SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
+        }
+    }
+
+    if (setHotSpringsLocation)
+    {
+        metLocation = VarGet(VAR_GIFTMON_METLOC_SETTING);
         SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
     }
 
     isEgg = TRUE;
     SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
+    VarSet(VAR_GIFTMON_METLOC_SETTING, 0);
+    VarSet(VAR_GIFTMON_OT_SETTING, 0);
+    VarSet(VAR_GIFTMON_VERSION_SETTING, 0);
 
-    // Enabling gift ribbons text.
-    gSaveBlock1Ptr->giftRibbons[0] = 58;
-    gSaveBlock1Ptr->giftRibbons[1] = 59;
-    gSaveBlock1Ptr->giftRibbons[2] = 60;
-    gSaveBlock1Ptr->giftRibbons[3] = 61;
-    gSaveBlock1Ptr->giftRibbons[4] = 62;
-    gSaveBlock1Ptr->giftRibbons[5] = 63;
-    gSaveBlock1Ptr->giftRibbons[6] = 64;
 }
 
 static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *daycare)

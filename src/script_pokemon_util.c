@@ -728,6 +728,19 @@ u32 ScriptGiveMonParameterizedGift1(u16 species, u8 level, u16 item, u8 ball, u8
             u8 language = LANGUAGE_JAPANESE;
             SetMonData(&mon, MON_DATA_LANGUAGE, &language);
         }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 240)
+        {
+            SetMonData(&mon, MON_DATA_OT_NAME, gText_Nemoma);
+            bool8 otGenderGift = 0;
+            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 240;
+            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            ball = ITEM_CHERISH_BALL;
+            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
+        }
         else if (VarGet(VAR_GIFTMON_OT_SETTING) == 1)
         {
             SetMonData(&mon, MON_DATA_OT_NAME, gText_OTNameGold);
@@ -827,6 +840,19 @@ u32 ScriptGiveMonParameterizedGift1(u16 species, u8 level, u16 item, u8 ball, u8
             u8 location = 10;
             SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
             VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            ball = ITEM_CHERISH_BALL;
+            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else
+        {
+            SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+            SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            u8 location = VarGet(VAR_GIFTMON_OT_SETTING);
+            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);            
             ball = ITEM_CHERISH_BALL;
             SetMonData(&mon, MON_DATA_POKEBALL, &ball);
             u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;

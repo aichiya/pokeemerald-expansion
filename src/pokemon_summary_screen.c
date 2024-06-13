@@ -5278,12 +5278,25 @@ static void BufferMonTrainerMemo(void)
                 else
                    text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureMetAtYZNega;
             }
-            else if (sum->metGame == VERSION_IDENTIFIER_SPECIAL_GIFT || sum->metGame == VERSION_IDENTIFIER_GACHA)
+            else if (sum->metGame == VERSION_IDENTIFIER_GACHA)
             {
-                if (sum->metLevel == 0)
-                   text = gText_XNatureMiracle;
-                else if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
-                   text = gText_XNatureMiracleEvent;
+                if (sum->metLevel == 0 && sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
+                {
+                    text = gText_FromMiracleGacha;
+                }
+                else if (sum->metLevel == 0)
+                {
+                    text = gText_FromGacha;
+                }
+                else
+                {
+                    text = gText_IsItHacked;
+                }
+            }
+            else if (sum->metGame == VERSION_IDENTIFIER_SPECIAL_GIFT)
+            {
+                if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
+                   text = gText_XNatureAnotherReality;
                 else
                    text = gText_IsItHacked;
             }
@@ -5295,10 +5308,6 @@ static void BufferMonTrainerMemo(void)
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZ;
             else
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureMetAtYZ;
-        }
-        else if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
-        {
-            text = gText_XNatureFatefulEncounter;
         }
         else if (sum->metGame == VERSION_RUBY
             || sum->metGame == VERSION_SAPPHIRE
@@ -7361,9 +7370,28 @@ static void BufferMonTrainerMemo(void)
                 text = gText_Gen4MetLocProbably255;
             }
         }
+        else if (sum->metGame == VERSION_IDENTIFIER_GACHA)
+        {
+            if (sum->metLevel == 0 && sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
+            {
+                text = gText_FromMiracleGacha;
+            }
+            else if (sum->metLevel == 0)
+            {
+                text = gText_FromGachaProbably;
+            }
+            else
+            {
+                text = gText_IsItHacked;
+            }
+        }
         else if (sum->metGame == VERSION_IDENTIFIER_SPECIAL_GIFT)
         {
-            if (sum->metLocation == 254
+            if (sum->metLocation == 255)
+            {
+                text = gText_FromAnotherPlayer;
+            }
+            else if(sum->metLocation == 254
                  && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
                 // && sum->OTName == gText_Aichiya
                  && sum->OTID == 92538244)
@@ -7461,6 +7489,13 @@ static void BufferMonTrainerMemo(void)
             {
                 text = gText_ShanghaiAlice;
             }
+            else if (sum->metLocation == 240
+                 && VarGet(VAR_GIFTMON1_IDENTIFIER) == 254
+                // && sum->OTName == gText_Nemoma
+                 && sum->OTID == 328)
+            {
+                text = gText_SaniwaShrine;
+            }
             else if (sum->metLocation == 1
                  && VarGet(VAR_GIFTMON2_IDENTIFIER) == 10
                 // && sum->OTName == gText_OTNameGold
@@ -7519,7 +7554,7 @@ static void BufferMonTrainerMemo(void)
             }
             else
             {
-                text = gText_IsItHacked;
+                text = gText_FromAnotherPlayer;
             }
         }
         else if (sum->metGame == VERSION_IDENTIFIER_NEGA)
@@ -7528,7 +7563,11 @@ static void BufferMonTrainerMemo(void)
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZNega;
             else
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureProbablyMetAtNega;
-        } 
+        }
+        else if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
+        {
+            text = gText_XNatureFatefulEncounter;
+        }
         else if (sum->metLocation != METLOC_IN_GAME_TRADE && DidMonComeFromGBAGames())
         {
             text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureObtainedInTrade : gText_XNatureProbablyMetAt;

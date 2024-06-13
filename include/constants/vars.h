@@ -266,7 +266,7 @@
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
 #define VAR_UNUSED_0x40F7                                0x40F7 // Unused Var
 #define VAR_UNUSED_0x40F8                                0x40F8 // Unused Var
-#define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
+#define VAR_GACHA_PITY_COUNT                             0x40F9 // Unused Var
 #define VAR_GIFTMON_METLOC_SETTING                       0x40FA // Unused Var
 #define VAR_GIFTMON_VERSION_SETTING                      0x40FB // Unused Var
 #define VAR_GIFTMON_OT_SETTING                           0x40FC // Unused Var

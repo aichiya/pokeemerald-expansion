@@ -326,6 +326,7 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     u8 ability;
     u8 gigantamaxFactor;
     u8 teratype;
+    u8 metEggLocation;
 
     species = GetMonData(egg, MON_DATA_SPECIES);
 
@@ -370,6 +371,7 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     hasNationalRibbon = GetMonData(egg, MON_DATA_NATIONAL_RIBBON);
     hasEarthRibbon = GetMonData(egg, MON_DATA_EARTH_RIBBON);
     hasWorldRibbon = GetMonData(egg, MON_DATA_WORLD_RIBBON);
+    metEggLocation = GetMonData(egg, MON_DATA_MET_LOCATION);
     ball = GetMonData(egg, MON_DATA_POKEBALL);
 
     CreateMon(temp, species, EGG_HATCH_LEVEL, USE_RANDOM_IVS, TRUE, personality, OT_ID_PLAYER_ID, 0);
@@ -418,37 +420,59 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     SetMonData(temp, MON_DATA_WORLD_RIBBON, &hasWorldRibbon);
     SetMonData(temp, MON_DATA_POKEBALL, &ball);
 
-    if (species == SPECIES_MEW && gameMet == 14 && isModernFatefulEncounter == 1) 
-       {
-       item = ITEM_MEWNIUM_Z;
-       move1 = MOVE_PSYCHIC;
-       move2 = MOVE_CELEBRATE;
-       move3 = MOVE_SKETCH;
-       move4 = MOVE_LIGHT_OF_RUIN;
-       SetMonData(temp, MON_DATA_HELD_ITEM, &item);
-       SetMonData(temp, MON_DATA_MOVE1, &move1);
-       SetMonData(temp, MON_DATA_MOVE2, &move2);
-       SetMonData(temp, MON_DATA_MOVE3, &move3);
-       SetMonData(temp, MON_DATA_MOVE4, &move4);
-       }
-    else if (species == SPECIES_CELEBI && gameMet == 14 && isModernFatefulEncounter == 1) 
-       {
-       item = ITEM_JABOCA_BERRY;
-       move1 = MOVE_SEED_FLARE;
-       move2 = MOVE_CELEBRATE;
-       move3 = MOVE_SKETCH;
-       move4 = MOVE_ROAR_OF_TIME;
-       SetMonData(temp, MON_DATA_HELD_ITEM, &item);
-       SetMonData(temp, MON_DATA_MOVE1, &move1);
-       SetMonData(temp, MON_DATA_MOVE2, &move2);
-       SetMonData(temp, MON_DATA_MOVE3, &move3);
-       SetMonData(temp, MON_DATA_MOVE4, &move4);
-       }
+    if (gameMet == VERSION_IDENTIFIER_GACHA) 
+    {
+        if (metEggLocation == METLOC_FATEFUL_ENCOUNTER)
+        {
+            u8 locationSet = METLOC_FATEFUL_ENCOUNTER;
+            SetMonData(temp, MON_DATA_MET_LOCATION, &locationSet);
+            if (species == SPECIES_MEW)
+            {
+                item = ITEM_MEWNIUM_Z;
+                move1 = MOVE_PSYCHIC;
+                move2 = MOVE_CELEBRATE;
+                move3 = MOVE_SKETCH;
+                move4 = MOVE_LIGHT_OF_RUIN;
+                SetMonData(temp, MON_DATA_HELD_ITEM, &item);
+                SetMonData(temp, MON_DATA_MOVE1, &move1);
+                SetMonData(temp, MON_DATA_MOVE2, &move2);
+                SetMonData(temp, MON_DATA_MOVE3, &move3);
+                SetMonData(temp, MON_DATA_MOVE4, &move4);
+            }
+            else if (species == SPECIES_CELEBI)
+            {
+                item = ITEM_GRASSIUM_Z;
+                move1 = MOVE_SEED_FLARE;
+                move2 = MOVE_CELEBRATE;
+                move3 = MOVE_SKETCH;
+                move4 = MOVE_LIGHT_OF_RUIN;
+                SetMonData(temp, MON_DATA_HELD_ITEM, &item);
+                SetMonData(temp, MON_DATA_MOVE1, &move1);
+                SetMonData(temp, MON_DATA_MOVE2, &move2);
+                SetMonData(temp, MON_DATA_MOVE3, &move3);
+                SetMonData(temp, MON_DATA_MOVE4, &move4);
+            }
+        }
+        else
+        {
+            u8 locationSet = metEggLocation;
+            SetMonData(temp, MON_DATA_MET_LOCATION, &locationSet);
+            item = ITEM_NONE;
+            SetMonData(temp, MON_DATA_HELD_ITEM, &item);
+        }
+    }
+    else if (gameMet != VERSION_EMERALD)
+    {
+        u8 locationSet = metEggLocation;
+        SetMonData(temp, MON_DATA_MET_LOCATION, &locationSet);
+        item = ITEM_NONE;
+        SetMonData(temp, MON_DATA_HELD_ITEM, &item);
+    }
     else
-       {
+    {
        item = ITEM_NONE;
        SetMonData(temp, MON_DATA_HELD_ITEM, &item);
-       }
+    }
 
     *egg = *temp;
 }
@@ -462,7 +486,6 @@ static void AddHatchedMonToParty(u8 id)
     u8 metLocation;
     u8 gameMet;
     int experience;
-    u8 isModernFatefulEncounter;
     struct Pokemon *mon = &gPlayerParty[id];
     
     CreateHatchedMon(mon, &gEnemyParty[0]);
@@ -480,30 +503,11 @@ static void AddHatchedMonToParty(u8 id)
     
     species = GetMonData(mon, MON_DATA_SPECIES);
     gameMet = GetMonData(mon, MON_DATA_MET_GAME);
-    isModernFatefulEncounter = GetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER);
 
-    if(species == SPECIES_MEW && gameMet == 14 && isModernFatefulEncounter == 1)
+    if (gameMet != VERSION_EMERALD)
     {
         metLevel = 0;
-        experience = 1;
-        metLocation = METLOC_FATEFUL_ENCOUNTER;
-        SetMonData(mon, MON_DATA_EXP, &experience);
-        SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
-        SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
-    }
-    else if(species == SPECIES_CELEBI && gameMet == 14 && isModernFatefulEncounter == 1)
-    {
-        metLevel = 0;
-        experience = 1;
-        metLocation = METLOC_FATEFUL_ENCOUNTER;
-        SetMonData(mon, MON_DATA_EXP, &experience);
-        SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
-        SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
-    }
-    else if(gameMet == 14)
-    {
-        metLevel = 0;
-        metLocation = METLOC_FATEFUL_ENCOUNTER;
+        metLocation = GetMonData(mon, MON_DATA_MET_LOCATION);
         SetMonData(mon, MON_DATA_MET_LEVEL, &metLevel);
         SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
     }    

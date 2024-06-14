@@ -31,7 +31,7 @@ EWRAM_DATA static struct ScriptContext sMysteryEventScriptContext = {0};
 
 static bool32 CheckCompatibility(u16 unk0, u32 unk1, u16 unk2, u32 version)
 {
-    // 0x1 in English FRLG, 0x2 in English RS, 0x4 in German RS
+/*    // 0x1 in English FRLG, 0x2 in English RS, 0x4 in German RS
     if (!(unk0 & 0x1))
         return FALSE;
 
@@ -45,7 +45,7 @@ static bool32 CheckCompatibility(u16 unk0, u32 unk1, u16 unk2, u32 version)
 
     if (!(version & VERSION_MASK))
         return FALSE;
-
+*/
     return TRUE;
 }
 

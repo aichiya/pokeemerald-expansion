@@ -76,7 +76,7 @@ static void VBlankCB(void)
 
 static bool8 CheckLanguageMatch(void)
 {
-    return (gLinkPlayers[0].language == gLinkPlayers[1].language);
+    return TRUE; // (gLinkPlayers[0].language == gLinkPlayers[1].language);
 }
 
 void CB2_InitMysteryEventMenu(void)

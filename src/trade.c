@@ -4531,8 +4531,9 @@ static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTr
     u8 level = GetMonData(&gPlayerParty[whichPlayerMon], MON_DATA_LEVEL);
 
     struct Mail mail;
-    u8 metLocation = METLOC_IN_GAME_TRADE;
+    u8 metLocation;
     u8 mailNum;
+    u8 gameMet;
     struct Pokemon *pokemon = &gEnemyParty[0];
 
     CreateMon(pokemon, inGameTrade->species, level, USE_RANDOM_IVS, TRUE, inGameTrade->personality, OT_ID_PRESET, inGameTrade->otId);
@@ -4553,7 +4554,72 @@ static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTr
     SetMonData(pokemon, MON_DATA_SMART, &inGameTrade->conditions[3]);
     SetMonData(pokemon, MON_DATA_TOUGH, &inGameTrade->conditions[4]);
     SetMonData(pokemon, MON_DATA_SHEEN, &inGameTrade->sheen);
-    SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
+
+    if (VarGet(VAR_GIFTMON_METLOC_SETTING) != 0)
+    {
+        metLocation = VarGet(VAR_GIFTMON_METLOC_SETTING);
+        SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
+    }
+    else
+    {
+        metLocation = METLOC_IN_GAME_TRADE;
+        SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
+    }
+
+    if (VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_SPECIAL_GIFT)
+    {
+        gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+        SetMonData(pokemon, MON_DATA_MET_GAME, &gameMet);
+        u8 isModernFatefulEncounter = TRUE;
+        SetMonData(pokemon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
+        u16 ball = ITEM_CHERISH_BALL;
+        SetMonData(pokemon, MON_DATA_POKEBALL, &ball);
+        if (VarGet(VAR_GIFTMON_METLOC_SETTING) >= 12 && VarGet(VAR_GIFTMON_METLOC_SETTING) <= 239)
+        {
+            metLocation = VarGet(VAR_GIFTMON_METLOC_SETTING);
+            SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
+        }
+        else
+        {
+            metLocation = 11;
+            SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);            
+        }
+        u8 assignRibbon = 1;
+        SetMonData(pokemon, MON_DATA_CHAMPION_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_WINNING_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_VICTORY_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_ARTIST_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_EFFORT_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_MARINE_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_LAND_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_SKY_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_COUNTRY_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_NATIONAL_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_EARTH_RIBBON, &assignRibbon);
+        SetMonData(pokemon, MON_DATA_WORLD_RIBBON, &assignRibbon);
+        u8 assignRibbonContest = 4;
+        SetMonData(pokemon, MON_DATA_COOL_RIBBON, &assignRibbonContest);
+        SetMonData(pokemon, MON_DATA_BEAUTY_RIBBON, &assignRibbonContest);
+        SetMonData(pokemon, MON_DATA_CUTE_RIBBON, &assignRibbonContest);
+        SetMonData(pokemon, MON_DATA_SMART_RIBBON, &assignRibbonContest);
+        SetMonData(pokemon, MON_DATA_TOUGH_RIBBON, &assignRibbonContest);
+        gSaveBlock1Ptr->giftRibbons[0] = 58;
+        gSaveBlock1Ptr->giftRibbons[1] = 59;
+        gSaveBlock1Ptr->giftRibbons[2] = 60;
+        gSaveBlock1Ptr->giftRibbons[3] = 61;
+        gSaveBlock1Ptr->giftRibbons[4] = 62;
+        gSaveBlock1Ptr->giftRibbons[5] = 63;
+        gSaveBlock1Ptr->giftRibbons[6] = 64;
+    }
+    else if (VarGet(VAR_GIFTMON_VERSION_SETTING) != 0)
+    {
+        gameMet = VarGet(VAR_GIFTMON_VERSION_SETTING);
+        SetMonData(pokemon, MON_DATA_MET_GAME, &gameMet);
+    }
+
+    VarSet(VAR_GIFTMON_METLOC_SETTING, 0);
+    VarSet(VAR_GIFTMON_VERSION_SETTING, 0);
+    VarSet(VAR_GIFTMON_OT_SETTING, 0);
 
     mailNum = 0;
     if (inGameTrade->heldItem != ITEM_NONE)

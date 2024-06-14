@@ -845,6 +845,17 @@ u32 ScriptGiveMonParameterizedGift1(u16 species, u8 level, u16 item, u8 ball, u8
             u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
             SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
         }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 1412)
+        {
+            SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+            SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+            u8 location = 0;
+            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
+            ball = ITEM_BEAST_BALL;
+            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
+        }
         else
         {
             SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);

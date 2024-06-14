@@ -4158,5 +4158,11 @@ extern const u8 gText_FromMiracleGacha[];
 extern const u8 gText_FromAnotherPlayer[];
 extern const u8 gText_Nemoma[];
 extern const u8 gText_SaniwaShrine[];
+extern const u8 gText_XNatureOrre[];
+extern const u8 gText_XNatureProbablyOrre[];
+extern const u8 gText_XNatureProbablyYogyakarta[];
+extern const u8 gText_XNatureEvent[];
+extern const u8 gText_XNatureCensored[];
+extern const u8 gText_Censored3[];
 
 #endif // GUARD_STRINGS_H

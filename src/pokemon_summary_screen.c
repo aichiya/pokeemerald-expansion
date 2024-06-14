@@ -5297,12 +5297,103 @@ static void BufferMonTrainerMemo(void)
             {
                 if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
                    text = gText_XNatureAnotherReality;
+                if (sum->metLocation == 0)
+                {
+                    if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 1)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 2)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 3)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 4)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 5)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 6)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 7)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 8)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 9)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 10)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 11)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 12)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 13)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 14)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 15)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 16)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 17)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 18)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 19)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 20)
+                    {
+                        text = gText_XNatureCensored;
+                    }
+                    else
+                    {
+                        text = gText_XNatureAnotherReality;
+                    }
+                }
                 else
                    text = gText_IsItHacked;
             }
             else if (sum->metGame == VERSION_IDENTIFIER_DEBUG)
             {
                 text = gText_DebugPurpose;
+            }
+            else if (sum->metGame == VERSION_GAMECUBE)
+            {
+                text = gText_XNatureOrre;
             }
             else if (sum->metLevel == 0)
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZ;
@@ -7552,6 +7643,22 @@ static void BufferMonTrainerMemo(void)
             {
                 text = gText_FromDimensionalRift;
             }
+            else if (sum->metLocation == 11)
+            {
+                text = gText_XNatureObtainedInTrade;
+            }
+            else if (sum->metLocation == 12)
+            {
+                text = gText_XNatureProbablyYogyakarta;
+            }
+            else if (sum->metLocation >= 240)
+            {
+                text = gText_XNatureEvent;
+            }
+            else if (sum->metLocation <= 10)
+            {
+                text = gText_XNatureObtainedInTrade;
+            }
             else
             {
                 text = gText_FromAnotherPlayer;
@@ -7567,6 +7674,10 @@ static void BufferMonTrainerMemo(void)
         else if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
         {
             text = gText_XNatureFatefulEncounter;
+        }
+        else if (sum->metGame == VERSION_GAMECUBE)
+        {
+            text = gText_XNatureProbablyOrre;
         }
         else if (sum->metLocation != METLOC_IN_GAME_TRADE && DidMonComeFromGBAGames())
         {

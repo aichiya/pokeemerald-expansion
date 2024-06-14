@@ -906,7 +906,15 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     value = GetCurrentRegionMapSectionId();
     SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &value);
     SetBoxMonData(boxMon, MON_DATA_MET_LEVEL, &level);
-    SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gGameVersion);
+    if (FlagGet(FLAG_IDENTIFIER_NEGA_WORLD))
+    {
+        u8 gameMet = VERSION_IDENTIFIER_NEGA;
+        SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+    }
+    else
+    {
+        SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gGameVersion);
+    }
     value = ITEM_POKE_BALL;
     SetBoxMonData(boxMon, MON_DATA_POKEBALL, &value);
     SetBoxMonData(boxMon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);

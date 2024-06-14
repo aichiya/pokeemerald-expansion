@@ -2879,7 +2879,7 @@ const u8 gText_Gen4MetLocProbably253[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DY
 const u8 gText_Gen4MetLocProbably254[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nmet somewhere at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}.");
 const u8 gText_Gen4MetLocProbably255[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nmet in a fateful encounter\nat {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}.");
 
-const u8 gText_XNatureMetAtYZNega[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, {COLOR}{BLUE}{SHADOW}{DYNAMIC_COLOR2}(Nega World){COLOR}{WHITE}{SHADOW}{DARK_GRAY},\nmet at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\n{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}.");
+const u8 gText_XNatureMetAtYZNega[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nmet at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}, {COLOR}{BLUE}{SHADOW}{DYNAMIC_COLOR2}Anti-World{COLOR}{WHITE}{SHADOW}{DARK_GRAY}:\n{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}.");
 const u8 gText_XNatureHatchedAtYZNega[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nobtained from {DYNAMIC 0}Wonder Gacha{DYNAMIC 1}.");
 const u8 gText_XNatureProbablyMetAtNega[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, {COLOR}{BLUE}{SHADOW}{DYNAMIC_COLOR2}(Nega World){COLOR}{WHITE}{SHADOW}{DARK_GRAY},\nprobably met at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\n{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}.");
 const u8 gText_XNatureAnotherReality[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\na fragment of your power\nfrom another reality.");

@@ -1557,10 +1557,10 @@
 #define FLAG_UNUSED_0x919                           (SYSTEM_FLAGS + 0xB9) // Unused Flag
 #define FLAG_UNUSED_0x91A                           (SYSTEM_FLAGS + 0xBA) // Unused Flag
 #define FLAG_UNUSED_0x91B                           (SYSTEM_FLAGS + 0xBB) // Unused Flag
-#define FLAG_UNUSED_0x91C                           (SYSTEM_FLAGS + 0xBC) // Unused Flag
-#define FLAG_RECEIVED_MIRACLE_GACHA1                (SYSTEM_FLAGS + 0xBD) // Unused Flag
-#define FLAG_RECEIVED_MIRACLE_GACHA2                (SYSTEM_FLAGS + 0xBE) // Unused Flag
-#define FLAG_RECEIVED_MIRACLE_GACHA3                (SYSTEM_FLAGS + 0xBF) // Unused Flag
+#define FLAG_IDENTIFIER_NEGA_WORLD                  (SYSTEM_FLAGS + 0xBC)
+#define FLAG_RECEIVED_MIRACLE_GACHA1                (SYSTEM_FLAGS + 0xBD)
+#define FLAG_RECEIVED_MIRACLE_GACHA2                (SYSTEM_FLAGS + 0xBE)
+#define FLAG_RECEIVED_MIRACLE_GACHA3                (SYSTEM_FLAGS + 0xBF)
 
 // Daily Flags
 // These flags are cleared once per day

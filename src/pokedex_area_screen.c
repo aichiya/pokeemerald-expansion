@@ -117,9 +117,9 @@ static const u16 sSpeciesHiddenFromAreaScreen[] = { SPECIES_WYNAUT };
 
 static const u16 sMovingRegionMapSections[3] =
 {
-    MAPSEC_MARINE_CAVE,
-    MAPSEC_UNDERWATER_MARINE_CAVE,
-    MAPSEC_TERRA_CAVE
+    MAPSEC_JAVA_LOST_AGE1,
+    MAPSEC_JAVA_LOST_AGE2,
+    MAPSEC_JAVA_LOST_AGE3
 };
 
 static const u16 sFeebasData[][3] =
@@ -130,12 +130,12 @@ static const u16 sFeebasData[][3] =
 
 static const u16 sLandmarkData[][2] =
 {
-    {MAPSEC_SKY_PILLAR,       FLAG_LANDMARK_SKY_PILLAR},
-    {MAPSEC_SEAFLOOR_CAVERN,  FLAG_LANDMARK_SEAFLOOR_CAVERN},
-    {MAPSEC_ALTERING_CAVE,    FLAG_LANDMARK_ALTERING_CAVE},
-    {MAPSEC_MIRAGE_TOWER,     FLAG_LANDMARK_MIRAGE_TOWER},
-    {MAPSEC_DESERT_UNDERPASS, FLAG_LANDMARK_DESERT_UNDERPASS},
-    {MAPSEC_ARTISAN_CAVE,     FLAG_LANDMARK_ARTISAN_CAVE},
+    {MAPSEC_JOHTO_SILK_ROAD3,       FLAG_LANDMARK_SKY_PILLAR},
+    {MAPSEC_JOHTO_FRONTIER_ACCESS,  FLAG_LANDMARK_SEAFLOOR_CAVERN},
+    {MAPSEC_0xD2,                   FLAG_LANDMARK_ALTERING_CAVE},
+    {MAPSEC_JAVA_SURABAYA_ZONE,     FLAG_LANDMARK_MIRAGE_TOWER},
+    {MAPSEC_0xD1,                   FLAG_LANDMARK_DESERT_UNDERPASS},
+    {MAPSEC_JAVA_NATIONAL_MONUMENT, FLAG_LANDMARK_ARTISAN_CAVE},
     {MAPSEC_NONE}
 };
 
@@ -381,7 +381,7 @@ static u16 GetRegionMapSectionId(u8 mapGroup, u8 mapNum)
 static bool8 MapHasSpecies(const struct WildPokemonHeader *info, u16 species)
 {
     // If this is a header for Altering Cave, skip it if it's not the current Altering Cave encounter set
-    if (GetRegionMapSectionId(info->mapGroup, info->mapNum) == MAPSEC_ALTERING_CAVE)
+    if (GetRegionMapSectionId(info->mapGroup, info->mapNum) == MAPSEC_0xD2)
     {
         sPokedexAreaScreen->alteringCaveCounter++;
         if (sPokedexAreaScreen->alteringCaveCounter != sPokedexAreaScreen->alteringCaveId + 1)

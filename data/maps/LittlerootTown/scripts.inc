@@ -393,18 +393,83 @@ LittlerootTown_EventScript_GoSaveBirchTrigger::
 	end
 
 LittlerootTown_EventScript_TownSign::
-	msgbox LittlerootTown_Text_TownSign, MSGBOX_SIGN
+	lock
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_POKENAV_GET
+	setflag FLAG_SYS_RIBBON_GET
+	setflag FLAG_HAS_MATCH_CALL
+	setflag FLAG_ADDED_MATCH_CALL_TO_POKENAV
+	setflag FLAG_DYNAMAX_BATTLE
+	setflag FLAG_BADGE01_GET
+	setflag FLAG_BADGE02_GET
+	setflag FLAG_BADGE03_GET
+	setflag FLAG_BADGE04_GET
+	setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE06_GET
+	setflag FLAG_BADGE07_GET
+	setflag FLAG_BADGE08_GET
+	setflag FLAG_SYS_MYSTERY_EVENT_ENABLE
+	setflag FLAG_SYS_MYSTERY_GIFT_ENABLE
+	additem ITEM_CARD_KEY, 1
+	additem ITEM_SHINY_CHARM, 1
+	additem ITEM_EXP_SHARE, 1
+	setflag FLAG_EXP_SHARE_MODERN
+	additem ITEM_VS_SEEKER, 1
+	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_SPECIAL_GIFT
+	setvar VAR_GIFTMON_OT_SETTING, 240
+	givemongift1 SPECIES_MELOETTA, 50, ITEM_METRONOME, ITEM_DREAM_BALL, NATURE_MODEST, 0, 1, 4, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_CLOSE_COMBAT, MOVE_RELIC_SONG, MOVE_PSYCHIC, MOVE_ALLURING_VOICE, 0, 0, TYPE_GHOST
+	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_SPECIAL_GIFT
+	setvar VAR_GIFTMON_OT_SETTING, 1412
+	givemongift1 SPECIES_DIANCIE, 50, ITEM_DIANCITE, ITEM_LOVE_BALL, NATURE_MODEST, 0, 1, 4, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_DIAMOND_STORM, MOVE_MOONBLAST, MOVE_EARTH_POWER, MOVE_COSMIC_POWER, 0, 0, TYPE_GRASS
+	setvar VAR_GIFTMON_VERSION_SETTING, 15
+	setvar VAR_GIFTMON_METLOC_SETTING, 69
+	givemongift1 SPECIES_ZERAORA, 50, ITEM_NONE, ITEM_FAST_BALL, NATURE_MODEST, 0, 1, 4, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_PLASMA_FISTS, MOVE_BLAZE_KICK, MOVE_OUTRAGE, MOVE_CLOSE_COMBAT, 0, 0, TYPE_FLYING
+@	delay 30
+	givemon SPECIES_EEVEE, 50, ITEM_THROAT_SPRAY, ITEM_LOVE_BALL, NATURE_MODEST, 2, 1, 4, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_MOONBLAST, MOVE_FAKE_TEARS, MOVE_HYPER_VOICE, MOVE_PROTECT, 1, 1, TYPE_STEEL
+@	trainerbattle TRAINER_BATTLE_SINGLE, 231, 0, LittlerootTown_Text_TownSign, LittlerootTown_Text_TownSign
+	special SetLeadMonAllContestStats
+	setflag FLAG_IDENTIFIER_NEGA_WORLD
+	release
 	end
 
 LittlerootTown_EventScript_BirchsLabSign::
-	msgbox LittlerootTown_Text_ProfBirchsLab, MSGBOX_SIGN
+    lock
+    goto EventScript_InitiateGacha
+	release
 	end
 
 LittlerootTown_EventScript_BrendansHouseSign::
 	lockall
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_PlayersHouseSignMale
-	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_BirchsHouseSignFemale
+@   setvar VAR_GIFTMON_METLOC_SETTING, 12
+@	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_SPECIAL_GIFT
+@	setvar VAR_0x8008, INGAME_TRADE_KADABRA
+@	copyvar VAR_0x8004, VAR_0x8008
+@	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+@	copyvar VAR_0x8009, VAR_RESULT
+@	msgbox RustboroCity_House1_Text_IllTradeIfYouWant, MSGBOX_YESNO
+@	goto_if_eq VAR_RESULT, NO, RustboroCity_House1_EventScript_DeclineTrade
+@	special ChoosePartyMon
+@	waitstate
+@	copyvar VAR_0x800A, VAR_0x8004
+@	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, RustboroCity_House1_EventScript_DeclineTrade
+@	copyvar VAR_0x8005, VAR_0x800A
+@	specialvar VAR_RESULT, GetTradeSpecies
+@	copyvar VAR_0x800B, VAR_RESULT
+@	goto_if_ne VAR_RESULT, VAR_0x8009, RustboroCity_House1_EventScript_NotRequestedMon
+@	copyvar VAR_0x8004, VAR_0x8008
+@	copyvar VAR_0x8005, VAR_0x800A
+@	special CreateInGameTradePokemon
+@	special DoInGameTradeScene
+@	waitstate
+@	msgbox RustboroCity_House1_Text_PleaseBeGoodToMyPokemon, MSGBOX_DEFAULT
+@   setwildbattle species:req, level:req, item=ITEM_NONE, species2=SPECIES_NONE, level2=0, item2=ITEM_NONE
+    playbgm MUS_TH_CTC_GFREE, FALSE
+	delay 100
+	additem ITEM_MASTER_BALL, 1
+	setflag FLAG_USE_CURRENT_BGM_FOR_BATTLE
+    setwildbattle SPECIES_ALAKAZAM, 50, ITEM_NONE
+	dowildbattle
 	releaseall
 	end
 
@@ -418,9 +483,8 @@ LittlerootTown_EventScript_BirchsHouseSignFemale::
 
 LittlerootTown_EventScript_MaysHouseSign::
 	lockall
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_BirchsHouseSignMale
-	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_PlayersHouseSignFemale
+    special PartyMonBecomeEgg
+	trainerbattle TRAINER_BATTLE_SINGLE, 231, 0, LittlerootTown_Text_TownSign, LittlerootTown_Text_TownSign
 	releaseall
 	end
 
@@ -996,11 +1060,11 @@ LittlerootTown_Text_GoodLuckCatchingPokemon:
 	.string "Good luck!$"
 
 LittlerootTown_Text_TownSign:
-	.string "LITTLEROOT TOWN\n"
-	.string "“A town that can't be shaded any hue.”$"
+	.string "TEST: Custom gift mon.$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "PROF. BIRCH'S POKéMON LAB$"
+	.string "Prepare for trouble,\n"
+	.string "and make it double!$"
 
 LittlerootTown_Text_PlayersHouse:
 	.string "{PLAYER}'s HOUSE$"

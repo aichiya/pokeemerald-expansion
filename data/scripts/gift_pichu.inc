@@ -73,7 +73,9 @@ sText_FullParty:
 
 EventScript_InitiateGacha::
 	lock
+	faceplayer
 	msgbox sText_ExplainGacha, MSGBOX_DEFAULT
+	dotimebasedevents
 	goto_if_unset FLAG_DAILY_GACHA1, EventScript_TryToGacha
 	goto_if_unset FLAG_DAILY_GACHA2, EventScript_TryToGacha
 	goto_if_unset FLAG_DAILY_GACHA3, EventScript_TryToGacha
@@ -81,14 +83,14 @@ EventScript_InitiateGacha::
 	release
 	end
 
-EventScript_TryToGacha:
+EventScript_TryToGacha::
     msgbox sText_DoYouWantGacha, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_CheckPartySizeForGacha
 	closemessage
 	release
 	end
 
-EventScript_CheckPartySizeForGacha:
+EventScript_CheckPartySizeForGacha::
 	getpartysize
 	goto_if_ne VAR_RESULT, PARTY_SIZE, EventScript_CheckMoneyForGacha
 	msgbox sText_FullPartyWhenGacha, MSGBOX_DEFAULT
@@ -96,7 +98,7 @@ EventScript_CheckPartySizeForGacha:
 	release
 	end
 
-EventScript_CheckMoneyForGacha:
+EventScript_CheckMoneyForGacha::
 	checkmoney 10000
 	goto_if_eq VAR_RESULT, TRUE, EventScript_DoGacha
 	msgbox sText_DontHaveMoney, MSGBOX_DEFAULT
@@ -104,7 +106,7 @@ EventScript_CheckMoneyForGacha:
 	release
 	end
 
-EventScript_DoGacha:
+EventScript_DoGacha::
     goto_if_ge VAR_GACHA_PITY_COUNT, 100, EventScipt_InitiateStateMiracleGacha
 	random 1000
 	goto_if_le VAR_RESULT, 200, EventScipt_InitiateStateMiracleGacha
@@ -114,7 +116,7 @@ EventScript_DoGacha:
 	release
 	end
 
-EventScipt_InitiateStateMiracleGacha:
+EventScipt_InitiateStateMiracleGacha::
 	random 3
 	goto_if_eq VAR_RESULT, 0, EventScript_GiveMiracleGacha1
 	goto_if_eq VAR_RESULT, 1, EventScript_GiveMiracleGacha2
@@ -122,7 +124,7 @@ EventScipt_InitiateStateMiracleGacha:
 	release
 	end
 
-EventScript_GiveMiracleGacha1:
+EventScript_GiveMiracleGacha1::
     goto_if_set FLAG_RECEIVED_MIRACLE_GACHA1, EventScipt_InitiateStateSuperRareGacha
 	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_GACHA
 	setvar VAR_GIFTMON_METLOC_SETTING, METLOC_FATEFUL_ENCOUNTER
@@ -134,7 +136,7 @@ EventScript_GiveMiracleGacha1:
 	release
 	end
 
-EventScript_GiveMiracleGacha2:
+EventScript_GiveMiracleGacha2::
     goto_if_set FLAG_RECEIVED_MIRACLE_GACHA2, EventScipt_InitiateStateSuperRareGacha
 	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_GACHA
 	setvar VAR_GIFTMON_METLOC_SETTING, METLOC_FATEFUL_ENCOUNTER
@@ -146,7 +148,7 @@ EventScript_GiveMiracleGacha2:
 	release
 	end
 
-EventScript_GiveMiracleGacha3:
+EventScript_GiveMiracleGacha3::
     goto_if_set FLAG_RECEIVED_MIRACLE_GACHA3, EventScipt_InitiateStateSuperRareGacha
 	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_GACHA
 	setvar VAR_GIFTMON_METLOC_SETTING, METLOC_FATEFUL_ENCOUNTER
@@ -158,7 +160,7 @@ EventScript_GiveMiracleGacha3:
 	release
 	end
 
-EventScipt_InitiateStateSuperRareGacha:
+EventScipt_InitiateStateSuperRareGacha::
     random 100
 	goto_if_eq VAR_RESULT, 0, EventScript_GiveSuperRareGacha1
 	goto_if_eq VAR_RESULT, 1, EventScript_GiveSuperRareGacha1
@@ -266,7 +268,7 @@ EventScipt_InitiateStateSuperRareGacha:
 	release
 	end
 
-EventScript_GiveSuperRareGacha1:
+EventScript_GiveSuperRareGacha1::
 	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_GACHA
 	setvar VAR_GIFTMON_METLOC_SETTING, 254
 	giveeggmiracle SPECIES_MEWTWO
@@ -275,7 +277,7 @@ EventScript_GiveSuperRareGacha1:
 	release
 	end
 
-EventScipt_InitiateStateRareGacha:
+EventScipt_InitiateStateRareGacha::
     random 100
 	goto_if_eq VAR_RESULT, 0, EventScript_GiveRareGacha1
 	goto_if_eq VAR_RESULT, 1, EventScript_GiveRareGacha1
@@ -383,7 +385,7 @@ EventScipt_InitiateStateRareGacha:
 	release
 	end
 
-EventScript_GiveRareGacha1:
+EventScript_GiveRareGacha1::
 	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_GACHA
 	setvar VAR_GIFTMON_METLOC_SETTING, 253
 	giveeggmiracle SPECIES_GOODRA
@@ -392,7 +394,7 @@ EventScript_GiveRareGacha1:
 	release
 	end
 
-EventScipt_InitiateStateCommonGacha:
+EventScipt_InitiateStateCommonGacha::
     random 100
 	goto_if_eq VAR_RESULT, 0, EventScript_GiveCommonGacha1
 	goto_if_eq VAR_RESULT, 1, EventScript_GiveCommonGacha1
@@ -500,7 +502,7 @@ EventScipt_InitiateStateCommonGacha:
 	release
 	end
 
-EventScript_GiveCommonGacha1:
+EventScript_GiveCommonGacha1::
 	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_GACHA
 	setvar VAR_GIFTMON_METLOC_SETTING, 252
 	giveeggmiracle SPECIES_PICHU
@@ -509,7 +511,7 @@ EventScript_GiveCommonGacha1:
 	release
 	end
 
-EventScript_TryToHatchGacha:
+EventScript_TryToHatchGacha::
     removemoney 10000
 	getpartysize
     copyvar VAR_0x8004, VAR_RESULT
@@ -520,24 +522,24 @@ EventScript_TryToHatchGacha:
 	release
 	end
 
-EventScript_InitiateGachaFlagSetting:
+EventScript_InitiateGachaFlagSetting::
 	goto_if_unset FLAG_DAILY_GACHA1, EventScript_GachaDailySetFlag1
 	goto_if_unset FLAG_DAILY_GACHA2, EventScript_GachaDailySetFlag2
 	goto_if_unset FLAG_DAILY_GACHA3, EventScript_GachaDailySetFlag3
 	release
 	end
 
-EventScript_GachaDailySetFlag1:
+EventScript_GachaDailySetFlag1::
     setflag FLAG_DAILY_GACHA1
 	release
 	end
 
-EventScript_GachaDailySetFlag2:
+EventScript_GachaDailySetFlag2::
     setflag FLAG_DAILY_GACHA2
 	release
 	end
 
-EventScript_GachaDailySetFlag3:
+EventScript_GachaDailySetFlag3::
     setflag FLAG_DAILY_GACHA3
 	release
 	end
@@ -561,3 +563,228 @@ sText_FullPartyWhenGacha:
 
 sText_DontHaveMoney:
     .string "You don't have enough money.$"
+
+
+EventScript_InitiateNicePhraseChallenge::
+	lock
+	faceplayer
+	setvar VAR_0x8004, 13 @ EASY_CHAT_TYPE_GOOD_SAYING
+	call Common_ShowEasyChatScreen
+	lock
+	faceplayer
+	goto_if_eq VAR_RESULT, TRUE, EventScript_NicePhraseChallenge_GivePhrase
+	goto_if_eq VAR_RESULT, FALSE, EventScript_NicePhraseChallenge_CancelPhrase
+	release
+	end
+
+EventScript_NicePhraseChallenge_GivePhrase::
+    goto_if_le VAR_0x8004, 5, EventScript_NicePhraseChallenge_CancelPhrase
+    goto_if_eq VAR_0x8004, 6, EventScript_NicePhraseChallenge_GiveGift1
+    goto_if_eq VAR_0x8004, 7, EventScript_NicePhraseChallenge_GiveGift2
+    goto_if_eq VAR_0x8004, 8, EventScript_NicePhraseChallenge_GiveGift3
+    goto_if_eq VAR_0x8004, 9, EventScript_NicePhraseChallenge_GiveGift4
+    goto_if_eq VAR_0x8004, 10, EventScript_NicePhraseChallenge_GiveGift5
+    goto_if_eq VAR_0x8004, 11, EventScript_NicePhraseChallenge_GiveGift6
+    goto_if_eq VAR_0x8004, 12, EventScript_NicePhraseChallenge_GiveGift7
+    goto_if_eq VAR_0x8004, 13, EventScript_NicePhraseChallenge_GiveGift8
+    goto_if_eq VAR_0x8004, 14, EventScript_NicePhraseChallenge_GiveGift9
+    goto_if_eq VAR_0x8004, 15, EventScript_NicePhraseChallenge_GiveGift10
+    goto_if_eq VAR_0x8004, 16, EventScript_NicePhraseChallenge_GiveGift11
+    goto_if_eq VAR_0x8004, 17, EventScript_NicePhraseChallenge_GiveGift12
+    goto_if_eq VAR_0x8004, 18, EventScript_NicePhraseChallenge_GiveGift13
+    goto_if_eq VAR_0x8004, 19, EventScript_NicePhraseChallenge_GiveGift14
+    goto_if_eq VAR_0x8004, 20, EventScript_NicePhraseChallenge_GiveGift15
+    goto_if_eq VAR_0x8004, 21, EventScript_NicePhraseChallenge_GiveGift16
+    goto_if_eq VAR_0x8004, 22, EventScript_NicePhraseChallenge_GiveGift17
+    goto_if_eq VAR_0x8004, 23, EventScript_NicePhraseChallenge_GiveGift18
+    goto_if_eq VAR_0x8004, 24, EventScript_NicePhraseChallenge_GiveGift19
+    goto_if_eq VAR_0x8004, 25, EventScript_NicePhraseChallenge_GiveGift20
+    goto_if_eq VAR_0x8004, 26, EventScript_NicePhraseChallenge_GiveGift21
+    goto_if_eq VAR_0x8004, 27, EventScript_NicePhraseChallenge_GiveGift22
+    goto_if_eq VAR_0x8004, 28, EventScript_NicePhraseChallenge_GiveGift23
+    goto_if_eq VAR_0x8004, 29, EventScript_NicePhraseChallenge_GiveGift24
+	end
+
+EventScript_NicePhraseChallenge_CancelPhrase::
+    lock
+	faceplayer
+	msgbox sText_TooBadComeAgain, MSGBOX_DEFAULT
+	closemessage
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift1::
+    goto_if_unset FLAG_NICE_PHRASE_GIFT1, EventScript_NicePhraseChallenge_GiveGift1_Giving_CheckParty
+    msgbox sText_AlreadyReceivedGiftFromNicePhrase, MSGBOX_DEFAULT
+	closemessage
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift1_Giving_CheckParty::
+	playfanfare MUS_OBTAIN_BADGE
+	waitfanfare
+    msgbox sText_CongratsYouFoundNicePhrase, MSGBOX_DEFAULT
+	bufferspeciesname STR_VAR_1, SPECIES_DRAGONITE
+	msgbox sText_YouWillReceiveSomething, MSGBOX_DEFAULT
+    getpartysize
+	goto_if_ne VAR_RESULT, PARTY_SIZE, EventScript_NicePhraseChallenge_GiveGift1_Giving_GiveMon
+	msgbox sText_FullPartyWhenGettingGiveMon, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift1_Giving_GiveMon::
+    setvar VAR_GIFTMON_VERSION_SETTING VERSION_GAMECUBE
+	setvar VAR_GIFTMON_METLOC_SETTING 162
+@    givemongift1 species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, ggMaxFactor, teraType
+	setflag FLAG_FORCE_SHINY
+	givemongift1 SPECIES_DRAGONITE, 55, ITEM_MICLE_BERRY, ITEM_POKE_BALL, 3, 2, 255, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_EXTREMESPEED, MOVE_DRAGON_DANCE, MOVE_OUTRAGE, MOVE_BRAVE_BIRD, 0, 0, 0
+    clearflag FLAG_FORCE_SHINY
+	playfanfare MUS_OBTAIN_ITEM
+	setflag FLAG_NICE_PHRASE_GIFT1
+	waitfanfare
+	msgbox sText_ObtainedGiftMon, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift2::
+    msgbox sText_CongratsYouFoundNicePhrase, MSGBOX_DEFAULT
+	closemessage
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift3::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift4::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift5::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift6::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift7::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift8::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift9::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift10::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift11::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift12::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift13::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift14::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift15::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift16::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift17::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift18::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift19::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift20::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift21::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift22::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift23::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+EventScript_NicePhraseChallenge_GiveGift24::
+    goto EventScript_NicePhraseChallenge_GiveGift2
+    release
+	end
+
+sText_TooBadComeAgain:
+    .string "Too bad,\n"
+    .string "Come again another time.$"
+
+sText_CongratsYouFoundNicePhrase:
+    .string "CONGRATULATION!\n"
+    .string "You found a superb word combination.\p"
+    .string "Please take this package.$"
+
+sText_AlreadyReceivedGiftFromNicePhrase:
+    .string "You already received a package\n"
+    .string "the current word combination.\p"
+    .string "Please try again.$"
+
+sText_FullPartyWhenGettingGiveMon:
+	.string "Oh, your party appears to be full.\p"
+	.string "Please try again after making\n"
+	.string "a room in your party.$"
+
+sText_YouWillReceiveSomething:
+    .string "You will receive {STR_VAR_1}.$"
+
+sText_ObtainedGiftMon:
+    .string "{PLAYER} received {STR_VAR_1}.$"

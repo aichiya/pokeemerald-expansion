@@ -1104,6 +1104,30 @@
 #define PHRASE_OVERWHELMING_LATIAS  3
 #define PHRASE_COOL_LATIOS          4
 #define PHRASE_SUPER_HUSTLE         5
+#define PHRASE_NICE_6               6
+#define PHRASE_NICE_7               7
+#define PHRASE_NICE_8               8
+#define PHRASE_NICE_9               9
+#define PHRASE_NICE_10              10
+#define PHRASE_NICE_11              11
+#define PHRASE_NICE_12              12
+#define PHRASE_NICE_13              13
+#define PHRASE_NICE_14              14
+#define PHRASE_NICE_15              15
+#define PHRASE_NICE_16              16
+#define PHRASE_NICE_17              17
+#define PHRASE_NICE_18              18
+#define PHRASE_NICE_19              19
+#define PHRASE_NICE_20              20
+#define PHRASE_NICE_21              21
+#define PHRASE_NICE_22              22
+#define PHRASE_NICE_23              23
+#define PHRASE_NICE_24              24
+#define PHRASE_NICE_25              25
+#define PHRASE_NICE_26              26
+#define PHRASE_NICE_27              27
+#define PHRASE_NICE_28              28
+#define PHRASE_NICE_29              30
 
 #define EC_NUM_ALPHABET_GROUPS 27 // 26 (1 for each letter) + 1 (Others)
 

@@ -388,7 +388,14 @@ static void CreateBattleStartTask(u8 transition, u16 song)
         FlagSet(FLAG_INVERSE_BATTLE);
     }
     gTasks[taskId].tTransition = transition;
-    PlayMapChosenOrBattleBGM(song);
+    if (FlagGet(FLAG_USE_CURRENT_BGM_FOR_BATTLE))
+    {
+        FlagClear(FLAG_USE_CURRENT_BGM_FOR_BATTLE);
+    }
+    else
+    {
+        PlayMapChosenOrBattleBGM(song);
+    }
 }
 
 static void Task_BattleStart_Debug(u8 taskId)

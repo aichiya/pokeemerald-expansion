@@ -383,12 +383,12 @@ static void CreateBattleStartTask(u8 transition, u16 song)
 {
     u8 taskId = CreateTask(Task_BattleStart, 1);
 
-    if (FlagGet(FLAG_IDENTIFIER_NEGA_WORLD))
+    if (FlagGet(FLAG_IDENTIFIER_NEGA_WORLD) == TRUE)
     {
         FlagSet(FLAG_INVERSE_BATTLE);
     }
     gTasks[taskId].tTransition = transition;
-    if (FlagGet(FLAG_USE_CURRENT_BGM_FOR_BATTLE))
+    if (FlagGet(FLAG_USE_CURRENT_BGM_FOR_BATTLE) == TRUE)
     {
         FlagClear(FLAG_USE_CURRENT_BGM_FOR_BATTLE);
     }

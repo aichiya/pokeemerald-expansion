@@ -2151,6 +2151,12 @@ void DoSpecialTrainerBattle(void)
         gPartnerTrainerId = VarGet(gSpecialVar_0x8006) + TRAINER_PARTNER(PARTNER_NONE);
         FillPartnerParty(gPartnerTrainerId);
         CreateTask(Task_StartBattleAfterTransition, 1);
+        
+        if (FlagGet(FLAG_IDENTIFIER_NEGA_WORLD))
+        {
+            FlagSet(FLAG_INVERSE_BATTLE);
+        }
+        
         if (FlagGet(FLAG_USE_CURRENT_BGM_FOR_BATTLE) == TRUE)
         {
             FlagClear(FLAG_USE_CURRENT_BGM_FOR_BATTLE);
@@ -2159,6 +2165,7 @@ void DoSpecialTrainerBattle(void)
         {
             PlayMapChosenOrBattleBGM(0);
         }
+        
         if (gSpecialVar_0x8005 & MULTI_BATTLE_2_VS_WILD)
             BattleTransition_StartOnField(GetWildBattleTransition());
         else

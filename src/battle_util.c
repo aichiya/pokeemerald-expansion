@@ -958,11 +958,11 @@ u8 GetBattlerForBattleScript(u8 caseId)
     case BS_FAINTED:
         ret = gBattlerFainted;
         break;
-    case BS_FAINTED_LINK_MULTIPLE_1:
+    case BS_FAINTED_MULTIPLE_1:
         ret = gBattlerFainted;
         break;
     case BS_ATTACKER_WITH_PARTNER:
-    case BS_FAINTED_LINK_MULTIPLE_2:
+    case BS_FAINTED_MULTIPLE_2:
     case BS_ATTACKER_SIDE:
     case BS_TARGET_SIDE:
     case BS_PLAYER1:
@@ -6185,7 +6185,14 @@ u32 GetBattlerAbility(u32 battler)
     bool32 noAbilityShield = GetBattlerHoldEffectIgnoreAbility(battler, TRUE) != HOLD_EFFECT_ABILITY_SHIELD;
 
     if (gAbilitiesInfo[gBattleMons[battler].ability].cantBeSuppressed)
+    {
+        // Edge case: pokemon under the effect of gastro acid transforms into a pokemon with Comatose (Todo: verify how other unsuppressable abilities behave)
+        if (gBattleMons[battler].status2 & STATUS2_TRANSFORMED
+            && gStatuses3[battler] & STATUS3_GASTRO_ACID
+            && gBattleMons[battler].ability == ABILITY_COMATOSE)
+                return ABILITY_NONE;
         return gBattleMons[battler].ability;
+    }
 
     if (gStatuses3[battler] & STATUS3_GASTRO_ACID)
         return ABILITY_NONE;
@@ -6198,6 +6205,7 @@ u32 GetBattlerAbility(u32 battler)
     if (((IsMoldBreakerTypeAbility(gBattleMons[gBattlerAttacker].ability)
             && !(gStatuses3[gBattlerAttacker] & STATUS3_GASTRO_ACID))
             || gMovesInfo[gCurrentMove].ignoresTargetAbility)
+            && battler != gBattlerAttacker
             && gAbilitiesInfo[gBattleMons[battler].ability].breakable
             && noAbilityShield
             && gBattlerByTurnOrder[gCurrentTurnActionNumber] == gBattlerAttacker

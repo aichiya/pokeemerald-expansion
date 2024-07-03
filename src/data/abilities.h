@@ -2603,4 +2603,28 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+    
+    [ABILITY_ULTRA_EGO] =
+    {
+        .name = _("Ultra Ego"),
+        .description = COMPOUND_STRING("Stronger after got hit."),
+        .aiRating = 8,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+    },
+    
+    [ABILITY_MAKAI_GODDESS] =
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Makai Goddess"),
+    #else
+        .name = _("MakaiGoddess"),
+    #endif
+        .description = COMPOUND_STRING("DARK and LIGHT heals HP."),
+        .aiRating = 8,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+    },
 };

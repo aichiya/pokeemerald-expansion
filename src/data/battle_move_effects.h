@@ -2218,4 +2218,17 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 0, // TODO: Assign points
         .encourageEncore = TRUE,
     },
+
+    [EFFECT_ULTRA_INSTINCT] =
+    {
+        .battleScript = BattleScript_EffectUltraInstinct,
+        .battleTvScore = 0, // TODO: Assign points
+        .encourageEncore = TRUE,
+    },
+
+    [EFFECT_A_TRANCE] =
+    {
+        .battleScript = BattleScript_EffectATrance,
+        .battleTvScore = 0, // TODO: Assign points
+    },
 };

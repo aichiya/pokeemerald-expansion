@@ -875,6 +875,9 @@ gBattleAnims_Moves::
 	.4byte Move_PSYCHIC_NOISE
 	.4byte Move_UPPER_HAND
 	.4byte Move_MALIGNANT_CHAIN
+@@@@ CUSTOM MOVES @@@
+	.4byte Move_ULTRA_INSTINCT
+	.4byte Move_A_TRANCE
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -17886,6 +17889,95 @@ Move_DRAGON_CHEER::
 Move_SUPERCELL_SLAM::
 Move_MALIGNANT_CHAIN::
 	end @to do
+
+Move_ULTRA_INSTINCT::
+@	loadspritegfx ANIM_TAG_SPARK_2 @spark
+@	loadspritegfx ANIM_TAG_LEAF @green
+@	loadspritegfx ANIM_TAG_ELECTRIC_ORBS @charge particles
+@	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT @psycho boost
+@	fadetobg BG_ZMOVE_MOUNTAIN
+@	waitbgfadeout
+@	loadspritegfx ANIM_TAG_FOCUS_ENERGY
+@	playsewithpan SE_M_DRAGON_RAGE, SOUND_PAN_ATTACKER
+@	call EndureEffect
+@	delay 0x8
+@	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 2, 2, 0, 11, RGB(31, 31, 22)
+@	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 1, 0, 32, 1
+@	call EndureEffect
+@	delay 0x8
+@	call EndureEffect
+@	delay 0x8
+@	unloadspritegfx ANIM_TAG_FOCUS_ENERGY
+@	monbg ANIM_ATTACKER
+@	setalpha 12, 8
+@	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, (F_PAL_BG | F_PAL_ADJACENT), 0x2, 0x0, 0xF, 0x0000
+@	waitforvisualfinish
+@	createvisualtask AnimTask_ElectricChargingParticles, 2, ANIM_ATTACKER, 60, 2, 12 	@ charge particles to attacker
+@	delay 0x1e
+@	loopsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER, 0xe, 0xa
+@	createsprite gSuperpowerOrbSpriteTemplate, ANIM_TARGET, 3, 0x0
+@	call LightThatBurnsTheSkyGreenSparks
+@	call LightThatBurnsTheSkyGreenSparks
+@	call LightThatBurnsTheSkyGreenSparks
+@	call LightThatBurnsTheSkyGreenSparks
+@	call LightThatBurnsTheSkyGreenSparks
+@	call LightThatBurnsTheSkyGreenSparks
+@	call LightThatBurnsTheSkyGreenSparks
+@	call LightThatBurnsTheSkyGreenSparks
+@	call LightThatBurnsTheSkyGreenSparks
+@	delay 0xe
+@	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_TARGET, 0x2, 0x0, 0x4, 0x0000
+@	clearmonbg ANIM_ATTACKER
+@	blendoff
+@	playsewithpan SE_M_SWAGGER, SOUND_PAN_ATTACKER
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffe0, 0xfff0, 0x25, 0x2c, 0x20, 0x8, 0x0, 0x3
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffe0, 0xfff0, 0x25, 0x2c, 0x60, 0x8, 0x1, 0x3
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffe0, 0xfff0, 0x25, 0x2c, 0xa0, 0x8, 0x0, 0x3
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffe0, 0xfff0, 0x25, 0x2c, 0xe0, 0x8, 0x2, 0x3
+@	delay 0x1
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffd0, 0xffe4, 0x25, 0x2c, 0x20, 0x8, 0x0, 0x3
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffd0, 0xffe4, 0x25, 0x2c, 0x60, 0x8, 0x1, 0x3
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffd0, 0xffe4, 0x25, 0x2c, 0xa0, 0x8, 0x0, 0x3
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffd0, 0xffe4, 0x25, 0x2c, 0xe0, 0x8, 0x2, 0x3
+@	delay 0x1
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffc0, 0xffd8, 0x25, 0x2c, 0x20, 0x8, 0x0, 0x3
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffc0, 0xffd8, 0x25, 0x2c, 0x60, 0x8, 0x1, 0x3
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffc0, 0xffd8, 0x25, 0x2c, 0xa0, 0x8, 0x0, 0x3
+@	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_ATTACKER, 2, 0xffc0, 0xffd8, 0x25, 0x2c, 0xe0, 0x8, 0x2, 0x3
+@	delay 0x6
+	createvisualtask AnimTask_HorizontalShake, 5, ANIM_TARGET, 3, 60
+@	unloadspritegfx ANIM_TAG_LEAF @green
+@	unloadspritegfx ANIM_TAG_ELECTRIC_ORBS @charge
+	loadspritegfx ANIM_TAG_FIRE_PLUME @blast burn
+	loadspritegfx ANIM_TAG_EXPLOSION_2 @explode
+	loadspritegfx ANIM_TAG_STRAIGHT_BEAM
+	panse SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 0x2, 0x0
+	monbg ANIM_TARGET
+	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_TARGET, 0x6, 0x0, 0x10, 0x43FF @;Light yellow
+	call PhotonGeyserBeam
+	call LightThatBurnsTheSkyGeyser
+	call LightThatBurnsTheSkyBlast_1
+	call LightThatBurnsTheSkyGeyser
+	call LightThatBurnsTheSkyBlast_2
+	call LightThatBurnsTheSkyGeyser
+	createvisualtask AnimTask_BlendBattleAnimPal, 0x2, (F_PAL_BG | F_PAL_ALL_BUT_DEF), 0x4, 0x0, 0x10, 0x43FF
+	call LightThatBurnsTheSkyBlast_3
+	clearmonbg ANIM_TARGET
+	waitforvisualfinish
+	delay 0x10
+	createvisualtask AnimTask_BlendBattleAnimPal, 0x2, (F_PAL_BG | F_PAL_BATTLERS_2), 0x0, 0x10, 0x0, 0x43FF
+	restorebg
+	waitbgfadeout
+	end
+
+Move_A_TRANCE::
+	monbg ANIM_ATTACKER
+	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
+	waitplaysewithpan SE_M_MINIMIZE, SOUND_PAN_ATTACKER, 48
+	createvisualtask AnimTask_TransformMon, 2, 0, 1
+	waitforvisualfinish
+	clearmonbg ANIM_ATTACKER
+	end
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 Move_NONE:

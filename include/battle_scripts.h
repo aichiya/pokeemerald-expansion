@@ -500,6 +500,9 @@ extern const u8 BattleScript_TheSwampDisappeared[];
 extern const u8 BattleScript_EffectPsychicNoise[];
 extern const u8 BattleScript_AromaVeilProtectsRet[];
 
+// added
+extern const u8 BattleScript_UltraEgoActivates[];
+
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];
 extern const u8 BattleScript_ZMoveActivateStatus[];
@@ -825,5 +828,7 @@ extern const u8 BattleScript_EffectFilletAway[];
 extern const u8 BattleScript_EffectShedTail[];
 extern const u8 BattleScript_EffectUpperHand[];
 extern const u8 BattleScript_EffectTidyUp[];
+extern const u8 BattleScript_EffectUltraInstinct[];
+extern const u8 BattleScript_EffectATrance[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

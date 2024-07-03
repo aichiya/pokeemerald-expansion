@@ -20,6 +20,77 @@
 
 	.section script_data, "aw", %progbits
 
+BattleScript_EffectATrance::
+	attackcanceler
+	attackstring
+	ppreduce
+	trytoclearprimalweather
+	flushtextbox
+	transformdataexecutiondecade
+	attackanimation
+	waitanimation
+	printfromtable gTransformUsedStringIds
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectUltraInstinct::
+	attackcanceler
+	attackstring
+	ppreduce
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_ACC, MAX_STAT_STAGE, BattleScript_UltraInstinctTryAcc
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_EVASION, MAX_STAT_STAGE, BattleScript_UltraInstinctTryAcc
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_UltraInstinctTryAcc
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_DEF, MAX_STAT_STAGE, BattleScript_UltraInstinctTryAcc
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_SPATK, MAX_STAT_STAGE, BattleScript_UltraInstinctTryAcc
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_SPDEF, MAX_STAT_STAGE, BattleScript_UltraInstinctTryAcc
+	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_SPEED, MAX_STAT_STAGE, BattleScript_ButItFailed
+BattleScript_UltraInstinctTryAcc:
+    ishplessthanquarter BattleScript_ButItFailed
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
+	attackanimation
+	waitanimation
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_ATTACKER, BIT_ATK | BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF | BIT_ACC | BIT_EVASION, STAT_CHANGE_BY_TWO
+	setstatchanger STAT_ACC, MAX_STAT_STAGE, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryEvasion
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraInstinctTryEvasion:
+	setstatchanger STAT_EVASION, MAX_STAT_STAGE, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryAttack
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraInstinctTryAttack:
+	setstatchanger STAT_ATK, MAX_STAT_STAGE, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryDefense
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraInstinctTryDefense:
+    setstatchanger STAT_DEF, MAX_STAT_STAGE, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpAttack
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraInstinctTrySpAttack:
+    setstatchanger STAT_SPATK, MAX_STAT_STAGE, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpDefense
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraInstinctTrySpDefense:
+    setstatchanger STAT_SPDEF, MAX_STAT_STAGE, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpeed
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraInstinctTrySpeed:
+    setstatchanger STAT_SPEED, MAX_STAT_STAGE, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctEnd
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraInstinctEnd:
+	bichalfword gMoveResultFlags, MOVE_RESULT_NO_EFFECT
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectTidyUp::
 	attackcanceler
 	attackstring
@@ -7542,6 +7613,16 @@ BattleScript_SpeedBoostActivatesEnd:
 @ Can't compare directly to a value, have to compare to value at pointer
 sZero:
 .byte 0
+
+BattleScript_UltraEgoActivates::
+	call BattleScript_AbilityPopUp
+BattleScript_UltraEgoActivatesNoPopUp:
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, NULL
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_TARGETSSTATWASMAXEDOUT
+	waitmessage B_WAIT_TIME_LONG
+	return
 
 BattleScript_MoodyActivates::
 	call BattleScript_AbilityPopUp

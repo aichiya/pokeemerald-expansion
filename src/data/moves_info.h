@@ -19816,6 +19816,52 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         }),
     },
 
+    [MOVE_ULTRA_INSTINCT] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("UltraInstnct", "Ultra Instinct"),
+        .description = COMPOUND_STRING(
+            "Boosts numerous stats\n"
+            "when in dangers."),
+        .effect = EFFECT_ULTRA_INSTINCT,
+        .power = 0,
+        .type = TYPE_NORMAL,
+        .accuracy = 0,
+        .pp = 1,
+        .target = MOVE_TARGET_USER,
+        .priority = 3,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_RESET_STATS },
+    },
+
+    [MOVE_A_TRANCE] =
+    {
+        .name = COMPOUND_STRING("A-Trance"),
+        .description = COMPOUND_STRING(
+            "Tranforms into something\n"
+            "else temporarily."),
+        .effect = EFFECT_A_TRANCE,
+        .power = 0,
+        .type = TYPE_MYSTERY,
+        .accuracy = 0,
+        .pp = 10,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_RECOVER_HP },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .mimicBanned = TRUE,
+        .metronomeBanned = TRUE,
+        .copycatBanned = TRUE,
+        .instructBanned = TRUE,
+        .encoreBanned = TRUE,
+        .assistBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

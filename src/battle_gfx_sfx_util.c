@@ -26,6 +26,7 @@
 #include "constants/rgb.h"
 #include "constants/battle_palace.h"
 #include "constants/battle_move_effects.h"
+#include "event_data.h"
 
 
 extern const u8 gBattlePalaceNatureToMoveTarget[];
@@ -892,7 +893,9 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
     {
         position = GetBattlerPosition(battlerAtk);
 
-        if (GetBattlerSide(battlerDef) == B_SIDE_OPPONENT)
+        if (VarGet(VAR_UNUSED_0x40F8) > SPECIES_NONE )
+            targetSpecies = VarGet(VAR_UNUSED_0x40F8);
+        else if (GetBattlerSide(battlerDef) == B_SIDE_OPPONENT)
             targetSpecies = GetMonData(&gEnemyParty[gBattlerPartyIndexes[battlerDef]], MON_DATA_SPECIES);
         else
             targetSpecies = GetMonData(&gPlayerParty[gBattlerPartyIndexes[battlerDef]], MON_DATA_SPECIES);
@@ -933,6 +936,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
                                      targetSpecies,
                                      gTransformedPersonalities[battlerAtk]);
         }
+        VarSet(VAR_UNUSED_0x40F8, 0);
     }
     src = gMonSpritesGfxPtr->spritesGfx[position];
     dst = (void *)(OBJ_VRAM0 + gSprites[gBattlerSpriteIds[battlerAtk]].oam.tileNum * 32);
@@ -954,6 +958,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
 
     gSprites[gBattlerSpriteIds[battlerAtk]].y = GetBattlerSpriteDefault_Y(battlerAtk);
     StartSpriteAnim(&gSprites[gBattlerSpriteIds[battlerAtk]], 0);
+    VarSet(VAR_UNUSED_0x40F8, 0);
 }
 
 void BattleLoadSubstituteOrMonSpriteGfx(u8 battler, bool8 loadMonSprite)

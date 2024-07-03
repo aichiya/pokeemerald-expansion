@@ -5127,6 +5127,10 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 if (moveType == TYPE_GROUND)
                     effect = 1;
                 break;
+            case ABILITY_MAKAI_GODDESS:
+                if (moveType == TYPE_DARK || moveType == TYPE_FAIRY)
+                    effect = 1;
+                break;
             }
 
             if (effect == 1) // Drain Hp ability.
@@ -5479,6 +5483,37 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     BattleScriptPushCursor();
                     gBattlescriptCurrInstr = BattleScript_AbilityStatusEffect;
                     gHitMarker |= HITMARKER_STATUS_ABILITY_EFFECT;
+                    effect++;
+                }
+            }
+            break;
+        case ABILITY_ULTRA_EGO:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && TARGET_TURN_DAMAGED
+             && IsBattlerAlive(battler))
+            {
+                u32 validToRaise = 0;
+                u32 statsNum = NUM_BATTLE_STATS;
+
+                for (i = STAT_ATK; i < statsNum; i++)
+                {
+                    if (CompareStat(battler, i, MAX_STAT_STAGE, CMP_LESS_THAN))
+                        validToRaise |= gBitTable[i];
+                }
+
+                if (validToRaise != 0) // Can raise one stat
+                {
+                    gBattleScripting.statChanger = gBattleScripting.savedStatChanger = 0; // for raising and lowering stat respectively
+                    if (validToRaise != 0) // Find stat to raise
+                    {
+                        do
+                        {
+                            i = (Random() % statsNum) + STAT_ATK;
+                        } while (!(validToRaise & gBitTable[i]));
+                        SET_STATCHANGER(i, MAX_STAT_STAGE, FALSE);
+                    }
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_UltraEgoActivates;
                     effect++;
                 }
             }

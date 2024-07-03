@@ -1205,9 +1205,13 @@
 	.4byte \failInstr
 	.endm
 
-	.macro unused2 ptr:req
+@	.macro unused2 ptr:req
+@	.byte 0xe1
+@	.4byte \ptr
+@	.endm
+
+	.macro transformdataexecutiondecade
 	.byte 0xe1
-	.4byte \ptr
 	.endm
 
 	.macro switchoutabilities battler:req
@@ -1335,9 +1339,14 @@
 	.4byte \jumpInstr
 	.endm
 
-	.macro unused ptr:req
+@	.macro unused ptr:req
+@	.byte 0xfd
+@	.4byte \ptr
+@	.endm
+
+	.macro ishplessthanquarter failInstr:req
 	.byte 0xfd
-	.4byte \ptr
+	.4byte \failInstr
 	.endm
 
 	.macro tryworryseed failInstr:req

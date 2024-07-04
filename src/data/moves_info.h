@@ -19862,6 +19862,55 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboMoves = {0}
     },
 
+    [MOVE_TWIN_SPARK] =
+    {
+        .name = COMPOUND_STRING("Twin Spark"),
+        .description = COMPOUND_STRING(
+            "Shots energy two times\n"
+            "and raises evasion."),
+        .effect = EFFECT_HIT,
+        .power = 50,
+        .type = TYPE_GRASS,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .strikeCount = 2,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_EVS_PLUS_1,
+            .self = TRUE,
+            .chance = 100,
+        }),
+    },
+
+    [MOVE_DIMENSION_KICK] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("Dim. Kick", "Dimension Kick"),
+        .description = COMPOUND_STRING(
+            "Kick that may flinch foe\n"
+            "and destroys protection."),
+        .effect = EFFECT_BRICK_BREAK,
+        .power = 100,
+        .type = TYPE_STEEL,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .strikeCount = 2,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FEINT,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+        .ignoresTargetAbility = TRUE,
+        .ignoresProtect = TRUE,
+        .ignoresSubstitute = TRUE,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

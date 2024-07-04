@@ -7185,6 +7185,29 @@ const struct SpriteTemplate gBitterBladeImpactTemplate =
     .callback = AnimClawSlash
 };
 
+//dimension kick
+const struct SpriteTemplate gDimensionKickWall1Template =
+{
+    .tileTag = ANIM_TAG_GRAY_LIGHT_WALL,
+    .paletteTag = ANIM_TAG_GRAY_LIGHT_WALL,
+    .oam = &gOamData_AffineOff_ObjBlend_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_FlyBallAttack,
+    .callback = SpriteCB_SunsteelStrikeRings
+};
+
+const struct SpriteTemplate gDimensionKickWall2Template =
+{
+    .tileTag = ANIM_TAG_GRAY_LIGHT_WALL,
+    .paletteTag = ANIM_TAG_GRAY_LIGHT_WALL,
+    .oam = &gOamData_AffineOff_ObjNormal_16x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_FlyBallAttack,
+    .callback = SpriteCB_SunsteelStrikeRings
+};
+
 // functions
 //general
 void AnimTask_IsTargetPartner(u8 taskId)

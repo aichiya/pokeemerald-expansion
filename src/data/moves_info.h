@@ -19898,7 +19898,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .strikeCount = 2,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FEINT,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+        .ignoresTargetAbility = TRUE,
+        .ignoresProtect = TRUE,
+        .ignoresSubstitute = TRUE,
+    },
+
+    [MOVE_DIMENSION_SHOT] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("Dim. Shot", "Dimension Shot"),
+        .description = COMPOUND_STRING(
+            "Shot that may flinch foe\n"
+            "and destroys protection."),
+        .effect = EFFECT_BRICK_BREAK,
+        .power = 100,
+        .type = TYPE_STEEL,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FEINT,
         },

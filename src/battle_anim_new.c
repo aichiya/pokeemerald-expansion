@@ -99,6 +99,8 @@ static void SpriteCB_GlacialLance_Step1(struct Sprite* sprite);
 static void SpriteCB_GlacialLance_Step2(struct Sprite* sprite);
 static void SpriteCB_GlacialLance(struct Sprite* sprite);
 static void SpriteCB_TripleArrowKick(struct Sprite* sprite);
+static void AnimDimensionShotWalls(struct Sprite *);
+static void AnimDimensionShotWalls_Step(struct Sprite *);
 
 // const data
 // general
@@ -7206,6 +7208,90 @@ const struct SpriteTemplate gDimensionKickWall2Template =
     .images = NULL,
     .affineAnims = gAffineAnims_FlyBallAttack,
     .callback = SpriteCB_SunsteelStrikeRings
+};
+
+// dimension shot
+static const union AnimCmd sAnim_DimensionShotWall_0[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_DimensionShotWall_1[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_DimensionShotWall[] =
+{
+    sAnim_DimensionShotWall_0,
+    sAnim_DimensionShotWall_1,
+};
+
+static const union AffineAnimCmd sAffineAnim_DimensionShotWall[] =
+{
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 1),
+    AFFINEANIMCMD_FRAME(0x60, 0x60, 0, 1),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd *const sAffineAnims_DimensionShotWall[] =
+{
+    sAffineAnim_DimensionShotWall,
+};
+
+static void AnimDimensionShotWalls(struct Sprite *sprite)
+{
+    s16 unkArg;
+
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        unkArg = -gBattleAnimArgs[2];
+    else
+        unkArg = gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + unkArg;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[3];
+    InitAnimLinearTranslation(sprite);
+    sprite->callback = AnimDimensionShotWalls_Step;
+    sprite->affineAnimPaused = TRUE;
+    sprite->callback(sprite);
+}
+
+static void AnimDimensionShotWalls_Step(struct Sprite *sprite)
+{
+    if ((u16)gBattleAnimArgs[7] == 0xFFFF)
+    {
+        StartSpriteAnim(sprite, 1);
+        sprite->affineAnimPaused = FALSE;
+    }
+    if (AnimTranslateLinear(sprite))
+        DestroyAnimSprite(sprite);
+}
+
+const struct SpriteTemplate gDimensionShot1Template =
+{
+    .tileTag = ANIM_TAG_BLUE_LIGHT_WALL,
+    .paletteTag = ANIM_TAG_BLUE_LIGHT_WALL,
+    .oam = &gOamData_AffineOff_ObjBlend_64x64,
+    .anims = sAnims_DimensionShotWall,
+    .images = NULL,
+    .affineAnims = sAffineAnims_DimensionShotWall,
+    .callback = AnimDimensionShotWalls,
+};
+
+const struct SpriteTemplate gDimensionShot2Template =
+{
+    .tileTag = ANIM_TAG_BLUE_LIGHT_WALL,
+    .paletteTag = ANIM_TAG_BLUE_LIGHT_WALL,
+    .oam = &gOamData_AffineOff_ObjNormal_16x32,
+    .anims = sAnims_DimensionShotWall,
+    .images = NULL,
+    .affineAnims = sAffineAnims_DimensionShotWall,
+    .callback = AnimDimensionShotWalls,
 };
 
 // functions

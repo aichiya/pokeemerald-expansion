@@ -880,6 +880,7 @@ gBattleAnims_Moves::
 	.4byte Move_A_TRANCE
 	.4byte Move_TWIN_SPARK
 	.4byte Move_DIMENSION_KICK
+	.4byte Move_DIMENSION_SHOT
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -18097,10 +18098,12 @@ Move_DIMENSION_KICK::
 	unloadspritegfx ANIM_TAG_GRAY_LIGHT_WALL @wall
 	unloadspritegfx ANIM_TAG_SMALL_RED_EYE @red color
 	unloadspritegfx ANIM_TAG_IMPACT @hit
-	loadspritegfx ANIM_TAG_SMALL_EMBER @FireSpreadEffect
-	call FireSpreadEffect
-	delay 0x4
-	playsewithpan SE_M_FIRE_PUNCH, SOUND_PAN_TARGET
+@	loadspritegfx ANIM_TAG_SMALL_EMBER @FireSpreadEffect
+@	call FireSpreadEffect
+@	delay 0x4
+@	playsewithpan SE_M_FIRE_PUNCH, SOUND_PAN_TARGET
+	loadspritegfx ANIM_TAG_EXPLOSION
+	call DimensionShotExplode
 	waitforvisualfinish
 	visible ANIM_ATTACKER
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_ATTACKER), 3, 15, 0, 0
@@ -18113,6 +18116,76 @@ DimensionKickWall:
 	delay 0x1
 	createsprite gDimensionKickWall2Template, ANIM_TARGET, 2, 0x14
 	delay 0x1
+	return
+
+Move_DIMENSION_SHOT::
+	loadspritegfx ANIM_TAG_BLUE_LIGHT_WALL @wall
+	loadspritegfx ANIM_TAG_EXPLOSION
+	fadetobg BG_DYNAMAX_CANNON
+	waitbgfadein
+	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_ATTACKER
+	setarg 7, 0
+	createvisualtask AnimTask_RotateAuroraRingColors, 10, 130
+	call DimensionShotWalls
+	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 1, 0, 17, 1
+	call DimensionShotWalls
+	call DimensionShotWalls
+	call DimensionShotWalls
+	setarg 7, 0xFFFF
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_BUBBLE_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 3, 6, 0, 10
+	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 2, 0, 40, 1
+	call DimensionShotWalls
+	call DimensionShotWalls
+	call DimensionShotWalls
+	call DimensionShotWalls
+	call DimensionShotWalls
+	call DimensionShotWalls
+	waitforvisualfinish
+	call DimensionShotExplode
+@	call DimensionShotExplode
+	waitforvisualfinish
+	restorebg
+	waitbgfadein
+	end
+DimensionShotWalls:
+	createsprite gDimensionShot1Template, ANIM_TARGET, 2, 20, 0, 0, 0, 17
+	delay 1
+	createsprite gDimensionShot2Template, ANIM_TARGET, 2, 20, 0, 0, 0, 17
+	delay 1
+	createsprite gDimensionShot1Template, ANIM_TARGET, 2, 20, 0, 0, 0, 17
+	delay 1
+	createsprite gDimensionShot2Template, ANIM_TARGET, 2, 20, 0, 0, 0, 17
+	delay 1
+	return
+DimensionShotExplode:
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 6, 5, 1, 0
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -16, -15, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 16, -5, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -12, 18, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 6, 5, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -16, -15, 1, 0
+	delay 6
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 16, -5, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -12, 18, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
+	delay 6
 	return
 
 

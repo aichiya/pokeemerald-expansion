@@ -435,7 +435,7 @@ static bool32 ShouldSwitchIfGameStatePrompt(u32 battler, bool32 emitResult)
     //Perish Song
     if (gStatuses3[battler] & STATUS3_PERISH_SONG
         && gDisableStructs[battler].perishSongTimer == 0
-        && monAbility != ABILITY_SOUNDPROOF)
+        && !(monAbility == ABILITY_SOUNDPROOF || monAbility == ABILITY_FANTASY_BREAKER))
         switchMon = TRUE;
 
     if (AI_THINKING_STRUCT->aiFlags[battler] & AI_FLAG_SMART_SWITCHING)
@@ -523,7 +523,7 @@ static bool32 ShouldSwitchIfGameStatePrompt(u32 battler, bool32 emitResult)
         }
 
         //Secondary Damage
-        if (monAbility != ABILITY_MAGIC_GUARD
+        if ((monAbility != ABILITY_MAGIC_GUARD || monAbility != ABILITY_FANTASY_BREAKER)
             && !AiExpectsToFaintPlayer(battler))
         {
             //Toxic
@@ -1273,7 +1273,7 @@ static u32 GetSwitchinHazardsDamage(u32 battler, struct BattlePokemon *battleMon
     u32 hazardFlags = gSideStatuses[GetBattlerSide(battler)] & (SIDE_STATUS_SPIKES | SIDE_STATUS_STEALTH_ROCK | SIDE_STATUS_STICKY_WEB | SIDE_STATUS_TOXIC_SPIKES | SIDE_STATUS_SAFEGUARD);
 
     // Check ways mon might avoid all hazards
-    if (ability != ABILITY_MAGIC_GUARD || (heldItemEffect == HOLD_EFFECT_HEAVY_DUTY_BOOTS &&
+    if (!(ability == ABILITY_MAGIC_GUARD || ability == ABILITY_FANTASY_BREAKER) || (heldItemEffect == HOLD_EFFECT_HEAVY_DUTY_BOOTS &&
         !((gFieldStatuses & STATUS_FIELD_MAGIC_ROOM) || ability == ABILITY_KLUTZ)))
     {
         // Stealth Rock
@@ -1330,7 +1330,7 @@ static s32 GetSwitchinWeatherImpact(void)
     if (WEATHER_HAS_EFFECT)
     {
         // Damage
-        if (holdEffect != HOLD_EFFECT_SAFETY_GOGGLES && ability != ABILITY_MAGIC_GUARD && ability != ABILITY_OVERCOAT)
+        if (holdEffect != HOLD_EFFECT_SAFETY_GOGGLES && !(ability == ABILITY_MAGIC_GUARD || ability == ABILITY_FANTASY_BREAKER) && ability != ABILITY_OVERCOAT)
         {
             if ((gBattleWeather & B_WEATHER_HAIL)
              && (AI_DATA->switchinCandidate.battleMon.type1 != TYPE_ICE || AI_DATA->switchinCandidate.battleMon.type2 != TYPE_ICE)
@@ -1426,7 +1426,7 @@ static u32 GetSwitchinRecurringDamage(void)
     u32 holdEffect = gItemsInfo[AI_DATA->switchinCandidate.battleMon.item].holdEffect;
 
     // Items
-    if (ability != ABILITY_MAGIC_GUARD && ability != ABILITY_KLUTZ)
+    if (!(ability == ABILITY_MAGIC_GUARD || ability == ABILITY_FANTASY_BREAKER) && ability != ABILITY_KLUTZ)
     {
         if (holdEffect == HOLD_EFFECT_BLACK_SLUDGE && AI_DATA->switchinCandidate.battleMon.type1 != TYPE_POISON && AI_DATA->switchinCandidate.battleMon.type2 != TYPE_POISON)
         {
@@ -1460,7 +1460,7 @@ static u32 GetSwitchinStatusDamage(u32 battler)
     u32 statusDamage = 0;
 
     // Status condition damage
-    if ((status != 0) && AI_DATA->switchinCandidate.battleMon.ability != ABILITY_MAGIC_GUARD)
+    if ((status != 0) && !(AI_DATA->switchinCandidate.battleMon.ability == ABILITY_MAGIC_GUARD || AI_DATA->switchinCandidate.battleMon.ability == ABILITY_FANTASY_BREAKER))
     {
         if (status & STATUS1_BURN)
         {

@@ -2622,9 +2622,177 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("MakaiGoddess"),
     #endif
         .description = COMPOUND_STRING("DARK and LIGHT heals HP."),
+        .aiRating = 7,
+        .breakable = TRUE,
+    },
+    
+    [ABILITY_SHICHININ_MISAKI] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Shichinin Misaki"),
+    #else
+        .name = _("Shichinin"),
+    #endif
+        .description = COMPOUND_STRING("Gradually boosts evasion."),
+        .aiRating = 9,
+    },
+    
+    [ABILITY_SCARY_GLANCE] = // to do
+    {
+        .name = _("Scary Glance"),
+        .description = COMPOUND_STRING("Cuts foes Sp. Attack."),
+        .aiRating = 7,
+    },
+    
+    [ABILITY_DIMENSION_OVERSEER] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Dimension Seer"),
+    #else
+        .name = _("Dim. Seer"),
+    #endif
+        .description = COMPOUND_STRING("Unknown ability."),
+        .aiRating = 9,
+    },
+    
+    [ABILITY_DOLL_WALL] = // to do
+    {
+        .name = _("Doll Wall"),
+        .description = COMPOUND_STRING("Makes a doll."),
+        .aiRating = 7,
+    },
+    
+    [ABILITY_DIVINE_HAND] = // to do
+    {
+        .name = _("Divine Hand"),
+        .description = COMPOUND_STRING("Normal moves become divine."),
         .aiRating = 8,
+    },
+    
+    [ABILITY_TIME_TRAVELLER] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Time Traveller"),
+    #else
+        .name = _("Time Travel"),
+    #endif
+        .description = COMPOUND_STRING("Unknown ability."),
+        .aiRating = 8,
+    },
+    
+    [ABILITY_GRIMOIRE_USER] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Grimoire User"),
+    #else
+        .name = _("GrimoireUser"),
+    #endif
+        .description = COMPOUND_STRING("Raises Sp. Attack."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_DEUS_EX_MACHINA] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Deus Ex-Machina"),
+    #else
+        .name = _("DeusExMach"),
+    #endif
+        .description = COMPOUND_STRING("Raises Sp. Attack."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_SKILLED_MAGICIAN] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Skilled Magician"),
+    #else
+        .name = _("Skld Magus"),
+    #endif
+        .description = COMPOUND_STRING("Raises Sp. Attack."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_DELTA_FORCE_1] = // to do
+    {
+        .name = _("Delta Force"),
+        .description = COMPOUND_STRING("Combination of trio abilities."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_DELTA_FORCE_2] = // to do
+    {
+        .name = _("Delta Force"),
+        .description = COMPOUND_STRING("Combination of abilities."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_DELTA_FORCE_3] = // to do
+    {
+        .name = _("Delta Force"),
+        .description = COMPOUND_STRING("Combination of abilities."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_WINNING_COMBINATION_1] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Winning Combi"),
+    #else
+        .name = _("Win Combi"),
+    #endif
+        .description = COMPOUND_STRING("Combination of abilities."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_WINNING_COMBINATION_2] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Winning Combi"),
+    #else
+        .name = _("Win Combi"),
+    #endif
+        .description = COMPOUND_STRING("Combination of abilities."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_WINNING_COMBINATION_3] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Winning Combi"),
+    #else
+        .name = _("Win Combi"),
+    #endif
+        .description = COMPOUND_STRING("Combination of abilities."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_GREAT_BLOOMING] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Great Blooming"),
+    #else
+        .name = _("Great Bloom"),
+    #endif
+        .description = COMPOUND_STRING("Unknown ability."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_FANTASY_BREAKER] = // to do
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Fantasy Breaker"),
+    #else
+        .name = _("Fantasy Brk"),
+    #endif
+        .description = COMPOUND_STRING("Breaks shard of fantasy."),
+        .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
     },
+
 };

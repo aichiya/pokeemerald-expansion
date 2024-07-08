@@ -13232,7 +13232,10 @@ static void TrySetDestinyBondToHappen(void)
         && sideAttacker != sideTarget
         && !(gHitMarker & HITMARKER_GRUDGE))
     {
-        gHitMarker |= HITMARKER_DESTINYBOND;
+        if(gBattleMons[gBattlerAttacker].ability != ABILITY_FANTASY_BREAKER)
+        {
+            gHitMarker |= HITMARKER_DESTINYBOND;
+        }
     }
 }
 

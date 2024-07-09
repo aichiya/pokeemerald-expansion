@@ -2734,37 +2734,52 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 10,
     },
     
-    [ABILITY_WINNING_COMBINATION_1] = // to do
+    [ABILITY_WINNING_COMBINATION_1] = // Reimu-Marisa Unit: electric surge + clear body
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Winning Combi"),
+        .name = _("Combination R-M"),
     #else
-        .name = _("Win Combi"),
+        .name = _("R-M Combi"),
     #endif
         .description = COMPOUND_STRING("Combination of abilities."),
         .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
     },
     
-    [ABILITY_WINNING_COMBINATION_2] = // to do
+    [ABILITY_WINNING_COMBINATION_2] = // Akisisters: Summon sunlight, heals HP and cures status while sunlight
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Winning Combi"),
+        .name = _("Combination S-M"),
     #else
-        .name = _("Win Combi"),
+        .name = _("S-M Combi"),
     #endif
         .description = COMPOUND_STRING("Combination of abilities."),
         .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
     },
     
-    [ABILITY_WINNING_COMBINATION_3] = // to do
+    [ABILITY_WINNING_COMBINATION_3] = // to do Yorigami sisters: Curse on switch in, shadow tags
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Winning Combi"),
+        .name = _("Combination J-S"),
     #else
-        .name = _("Win Combi"),
+        .name = _("J-S Combi"),
     #endif
         .description = COMPOUND_STRING("Combination of abilities."),
         .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
     },
     
     [ABILITY_GREAT_BLOOMING] = // to do
@@ -2778,7 +2793,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 10,
     },
     
-    [ABILITY_FANTASY_BREAKER] = // to do
+    [ABILITY_FANTASY_BREAKER] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Fantasy Breaker"),

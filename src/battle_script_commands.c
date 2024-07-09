@@ -5292,6 +5292,7 @@ static void Cmd_playstatchangeanimation(void)
                         && ability != ABILITY_CLEAR_BODY
                         && ability != ABILITY_FULL_METAL_BODY
                         && ability != ABILITY_WHITE_SMOKE
+                        && ability != ABILITY_WINNING_COMBINATION_1
                         && !((ability == ABILITY_KEEN_EYE || ability == ABILITY_MINDS_EYE) && currStat == STAT_ACC)
                         && !(B_ILLUMINATE_EFFECT >= GEN_9 && ability == ABILITY_ILLUMINATE && currStat == STAT_ACC)
                         && !(ability == ABILITY_HYPER_CUTTER && currStat == STAT_ATK)
@@ -13446,6 +13447,16 @@ static void Cmd_cursetarget(void)
     {
         gBattlescriptCurrInstr = cmd->failInstr;
     }
+    else if (gBattleMons[gBattlerTarget].ability == ABILITY_FANTASY_BREAKER && FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE)
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else if (gBattleMons[gBattlerAttacker].ability == ABILITY_WINNING_COMBINATION_3)
+    {
+        gBattleMons[gBattlerTarget].status2 |= STATUS2_CURSED;
+        gBattleMoveDamage = 0;
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
     else
     {
         gBattleMons[gBattlerTarget].status2 |= STATUS2_CURSED;
@@ -16091,6 +16102,7 @@ static bool8 CanAbilityPreventStatLoss(u16 abilityDef)
     case ABILITY_CLEAR_BODY:
     case ABILITY_FULL_METAL_BODY:
     case ABILITY_WHITE_SMOKE:
+    case ABILITY_WINNING_COMBINATION_1:
         return TRUE;
     }
     return FALSE;

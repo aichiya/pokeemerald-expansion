@@ -6407,6 +6407,7 @@ BattleScript_GulpMissileGulping::
 	jumpifability BS_ATTACKER, ABILITY_CLEAR_BODY, BattleScript_GulpMissileNoSecondEffectGulping
 	jumpifability BS_ATTACKER, ABILITY_FULL_METAL_BODY, BattleScript_GulpMissileNoSecondEffectGulping
 	jumpifability BS_ATTACKER, ABILITY_WHITE_SMOKE, BattleScript_GulpMissileNoSecondEffectGulping
+	jumpifability BS_ATTACKER, ABILITY_WINNING_COMBINATION_1, BattleScript_GulpMissileNoSecondEffectGulping	
 	jumpifflowerveilattacker BattleScript_GulpMissileNoSecondEffectGulping
 BattleScript_GulpMissileNoDmgGulping:
 	handleformchange BS_TARGET, 0
@@ -7623,6 +7624,16 @@ BattleScript_SpeedBoostActivatesEnd:
 @ Can't compare directly to a value, have to compare to value at pointer
 sZero:
 .byte 0
+
+BattleScript_ShichininMisakiActivates::
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_ShichininMisakiActivatesEnd
+	call BattleScript_AbilityPopUp
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_PKMNRAISEDEVASION
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_ShichininMisakiActivatesEnd:
+	end3
 
 BattleScript_UltraEgoActivates::
 	call BattleScript_AbilityPopUp
@@ -10012,3 +10023,44 @@ BattleScript_EffectSnow::
 	call BattleScript_CheckPrimalWeather
 	setsnow
 	goto BattleScript_MoveWeatherChange
+
+BattleScript_WinningCombination3Activates::
+	copybyte sSAVED_BATTLER, gBattlerTarget
+.if B_ABILITY_POP_UP == TRUE
+	showabilitypopup BS_ATTACKER
+	pause B_WAIT_TIME_LONG
+	destroyabilitypopup
+.endif
+	setbyte gBattlerTarget, 0
+BattleScript_WinningCombination3Loop:
+	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_WinningCombination3Increment
+	jumpiftargetally BattleScript_WinningCombination3Increment
+	jumpifabsent BS_TARGET, BattleScript_WinningCombination3Increment
+	jumpifstatus2 BS_TARGET, STATUS2_CURSED, BattleScript_WinningCombination3Increment
+BattleScript_WinningCombination3CurseEffect:
+	copybyte sBATTLER, gBattlerAttacker
+	cursetarget BattleScript_ButItFailed
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+@	setbyte sB_ANIM_TURN, 0
+@	attackanimation
+@	waitanimation
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	printstring STRINGID_YORIGAMICURSE
+	waitmessage B_WAIT_TIME_LONG
+	tryfaintmon BS_ATTACKER
+@	goto BattleScript_MoveEnd
+@	printstring STRINGID_PKMNCUTSATTACKWITH
+@ BattleScript_IntimidateEffect_WaitString:
+@	waitmessage B_WAIT_TIME_LONG
+@	copybyte sBATTLER, gBattlerTarget
+@	call BattleScript_TryIntimidateHoldEffects
+BattleScript_WinningCombination3Increment:
+	addbyte gBattlerTarget, 1
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_WinningCombination3Loop
+BattleScript_WinningCombination3End:
+	copybyte sBATTLER, gBattlerAttacker
+	destroyabilitypopup
+	copybyte gBattlerTarget, sSAVED_BATTLER
+	pause B_WAIT_TIME_MED
+	end3

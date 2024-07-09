@@ -904,6 +904,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             case ABILITY_CLEAR_BODY:
             case ABILITY_FULL_METAL_BODY:
             case ABILITY_WHITE_SMOKE:
+            case ABILITY_WINNING_COMBINATION_1:
                 if (IsStatLoweringEffect(moveEffect))
                     RETURN_SCORE_MINUS(10);
                 break;
@@ -1372,6 +1373,8 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
         case EFFECT_EVASION_DOWN:
         case EFFECT_EVASION_DOWN_2:
             if (!ShouldLowerStat(battlerDef, aiData->abilities[battlerDef], STAT_EVASION))
+                ADJUST_SCORE(-10);
+            else if (aiData->abilities[battlerDef] == ABILITY_SHICHININ_MISAKI)
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_TICKLE:

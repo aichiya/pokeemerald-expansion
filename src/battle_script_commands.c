@@ -13048,7 +13048,11 @@ static void Cmd_painsplitdmgcalc(void)
 {
     CMD_ARGS(const u8 *failInstr);
 
-    if (!(DoesSubstituteBlockMove(gBattlerAttacker, gBattlerTarget, gCurrentMove)))
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_FANTASY_BREAKER && FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE)
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else if (!(DoesSubstituteBlockMove(gBattlerAttacker, gBattlerTarget, gCurrentMove)))
     {
         s32 hpDiff = (gBattleMons[gBattlerAttacker].hp + GetNonDynamaxHP(gBattlerTarget)) / 2;
         s32 painSplitHp = gBattleMoveDamage = GetNonDynamaxHP(gBattlerTarget) - hpDiff;
@@ -14874,6 +14878,7 @@ static void Cmd_pickup(void)
     u32 i, j;
     u16 species, heldItem, ability;
     u8 lvlDivBy10;
+    int k;
 
     if (!InBattlePike()) // No items in Battle Pike.
     {
@@ -14933,6 +14938,45 @@ static void Cmd_pickup(void)
             {
                 heldItem = ITEM_BERRY_JUICE;
                 SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &heldItem);
+            }
+            else if (ability == ABILITY_GRIMOIRE_USER
+                && species != 0
+                && species != SPECIES_EGG)
+            {
+                for (k = 0; k < MAX_MON_MOVES; k++)
+                {
+                    if (GetMonData(&gPlayerParty[i], MON_DATA_MOVE1 + k, 0))
+                    {
+                        u16 move = GetMonData(&gPlayerParty[i], MON_DATA_MOVE1 + k, 0);
+                        u16 bonus = GetMonData(&gPlayerParty[i], MON_DATA_PP_BONUSES, 0);
+                        u8 pp = CalculatePPWithBonus(move, bonus, k);
+                        SetMonData(&gPlayerParty[i], MON_DATA_PP1 + k, &pp);
+                    }
+                }
+            }
+        }
+    }
+    else
+    {
+        for (i = 0; i < PARTY_SIZE; i++)
+        {
+            species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG);
+            ability = gSpeciesInfo[species].abilities[GetMonData(&gPlayerParty[i], MON_DATA_ABILITY_NUM)];
+
+            if (ability == ABILITY_GRIMOIRE_USER
+            && species != 0
+            && species != SPECIES_EGG)
+            {
+                for (k = 0; k < MAX_MON_MOVES; k++)
+                {
+                    if (GetMonData(&gPlayerParty[i], MON_DATA_MOVE1 + k, 0))
+                    {
+                        u16 move = GetMonData(&gPlayerParty[i], MON_DATA_MOVE1 + k, 0);
+                        u16 bonus = GetMonData(&gPlayerParty[i], MON_DATA_PP_BONUSES, 0);
+                        u8 pp = CalculatePPWithBonus(move, bonus, k);
+                        SetMonData(&gPlayerParty[i], MON_DATA_PP1 + k, &pp);
+                    }
+                }
             }
         }
     }

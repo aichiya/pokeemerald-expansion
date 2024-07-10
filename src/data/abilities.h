@@ -2626,7 +2626,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .breakable = TRUE,
     },
     
-    [ABILITY_SHICHININ_MISAKI] = // to do
+    [ABILITY_SHICHININ_MISAKI] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Shichinin Misaki"),
@@ -2680,14 +2680,14 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
     
-    [ABILITY_GRIMOIRE_USER] = // to do
+    [ABILITY_GRIMOIRE_USER] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
         .name = _("Grimoire User"),
     #else
         .name = _("GrimoireUser"),
     #endif
-        .description = COMPOUND_STRING("Raises Sp. Attack."),
+        .description = COMPOUND_STRING("Sp. Atk+ and Preserves PP."),
         .aiRating = 10,
     },
     

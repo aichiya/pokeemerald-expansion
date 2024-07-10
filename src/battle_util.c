@@ -571,6 +571,32 @@ void HandleAction_Run(void)
             }
             else
             {
+                u32 j;
+                int k;
+                u16 species, ability;
+
+                for (j = 0; j < PARTY_SIZE; j++)
+                {
+                    species = GetMonData(&gPlayerParty[j], MON_DATA_SPECIES_OR_EGG);
+                    ability = gSpeciesInfo[species].abilities[GetMonData(&gPlayerParty[j], MON_DATA_ABILITY_NUM)];
+
+                    if (ability == ABILITY_GRIMOIRE_USER
+                    && species != 0
+                    && species != SPECIES_EGG)
+                    {
+                        for (k = 0; k < MAX_MON_MOVES; k++)
+                        {
+                            if (GetMonData(&gPlayerParty[j], MON_DATA_MOVE1 + k, 0))
+                            {
+                                u16 move = GetMonData(&gPlayerParty[j], MON_DATA_MOVE1 + k, 0);
+                                u16 bonus = GetMonData(&gPlayerParty[j], MON_DATA_PP_BONUSES, 0);
+                                u8 pp = CalculatePPWithBonus(move, bonus, k);
+                                SetMonData(&gPlayerParty[j], MON_DATA_PP1 + k, &pp);
+                            }
+                        }
+                    }
+                }
+
                 gCurrentTurnActionNumber = gBattlersCount;
                 gBattleOutcome = B_OUTCOME_MON_FLED;
             }
@@ -4638,6 +4664,17 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_GRIMOIRE_USER:
+            if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_SPATK, MAX_STAT_STAGE, CMP_LESS_THAN))
+            {
+                gBattleScripting.savedBattler = gBattlerAttacker;
+                gBattlerAttacker = battler;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                SET_STATCHANGER(STAT_SPATK, 2, FALSE);
+                BattleScriptPushCursorAndCallback(BattleScript_BattlerAbilityStatRaiseOnSwitchIn);
+                effect++;
+            }
+            break;
         case ABILITY_INTREPID_SWORD:
             if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN)
                  && !(gBattleStruct->intrepidSwordBoost[GetBattlerSide(battler)] & gBitTable[gBattlerPartyIndexes[battler]]))
@@ -4920,6 +4957,13 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     effect++;
                 }
                 break;
+            case ABILITY_GRIMOIRE_USER:
+                for (i = 0; i < MAX_MON_MOVES; i++)
+                {
+                        gBattleMons[battler].pp[i] = CalculatePPWithBonus(gBattleMons[battler].moves[i], gBattleMons[battler].ppBonuses, i);
+                }
+                effect++;
+                break;
             case ABILITY_MOODY:
                 if (gDisableStructs[battler].isFirstTurn != 2)
                 {
@@ -5189,7 +5233,10 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 break;
             case ABILITY_FANTASY_BREAKER:
                 if (moveType <= NUMBER_OF_MON_TYPES && FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE)
+                {
+                    if (gBattleMons[gBattlerAttacker].ability != ABILITY_FANTASY_BREAKER)
                     effect = 1;
+                }
                 break;
             }
 

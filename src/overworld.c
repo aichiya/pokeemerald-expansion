@@ -420,6 +420,7 @@ void Overworld_ResetBattleFlagsAndVars(void)
     FlagClear(B_FLAG_NO_CATCHING);
     FlagClear(B_FLAG_DYNAMAX_BATTLE);
     FlagClear(B_FLAG_SKY_BATTLE);
+    FlagClear(FLAG_FANTASY_BREAKER_CHEAT);
 }
 #endif
 

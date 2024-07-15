@@ -848,6 +848,7 @@ static const u8 sText_TidyingUpComplete[] = _("Tidying up complete!");
 static const u8 sText_FantasyBreakerEnters[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} is ready to\ndestroy fantasies!");
 static const u8 sText_YorigamiCurse[] = _("{B_ATK_NAME_WITH_PREFIX} laid a curse\non {B_DEF_NAME_WITH_PREFIX}!");
 static const u8 sText_PkmnRaisedEvasion[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nraised its evasion!");
+static const u8 sText_TimeJackerEnters[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} is making the time wierd!");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -1551,6 +1552,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_FANTASYBREAKERENTERS - BATTLESTRINGS_TABLE_START] = sText_FantasyBreakerEnters,
     [STRINGID_YORIGAMICURSE - BATTLESTRINGS_TABLE_START] = sText_YorigamiCurse,
     [STRINGID_PKMNRAISEDEVASION - BATTLESTRINGS_TABLE_START] = sText_PkmnRaisedEvasion,
+    [STRINGID_TIMEJACKERENTERS - BATTLESTRINGS_TABLE_START] = sText_TimeJackerEnters,
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1651,6 +1653,7 @@ const u16 gSwitchInAbilityStringIds[] =
     [B_MSG_SWITCHIN_PASTEL_VEIL] = STRINGID_PASTELVEILENTERS,
     [B_MSG_SWITCHIN_NEUTRALIZING_GAS] = STRINGID_NEUTRALIZINGGASENTERS,
     [B_MSG_SWITCHIN_FANTASY_BREAKER] = STRINGID_FANTASYBREAKERENTERS,
+    [B_MSG_SWITCHIN_TIME_JACKER] = STRINGID_TIMEJACKERENTERS,
 };
 
 const u16 gMissStringIds[] =

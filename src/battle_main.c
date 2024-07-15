@@ -5221,6 +5221,7 @@ s8 GetMovePriority(u32 battler, u16 move)
 {
     s8 priority;
     u16 ability = GetBattlerAbility(battler);
+    u8 rngTimeJacker;
 
     if (gBattleStruct->zmove.toBeUsed[battler] && gMovesInfo[move].power != 0)
         move = gBattleStruct->zmove.toBeUsed[battler];
@@ -5231,7 +5232,11 @@ s8 GetMovePriority(u32 battler, u16 move)
     if (gBattleStruct->dynamax.usingMaxMove[battler] && gMovesInfo[move].category == DAMAGE_CATEGORY_STATUS)
         return gMovesInfo[MOVE_MAX_GUARD].priority;
 
-    if (ability == ABILITY_GALE_WINGS
+//    if (ability == ABILITY_TIME_JACKER)
+//    {
+//        priority = 4;
+//    }
+    else if (ability == ABILITY_GALE_WINGS
         && (B_GALE_WINGS < GEN_7 || BATTLER_MAX_HP(battler))
         && gMovesInfo[move].type == TYPE_FLYING)
     {
@@ -5251,6 +5256,45 @@ s8 GetMovePriority(u32 battler, u16 move)
 
     if (gProtectStructs[battler].quash)
         priority = -8;
+
+    if (IsAbilityOnField(ABILITY_TIME_JACKER) && !(IsAbilityOnField(ABILITY_FANTASY_BREAKER)))
+    {
+        rngTimeJacker = Random() % 17;
+        if (rngTimeJacker == 0)
+            priority = 8;
+        else if (rngTimeJacker == 1)
+            priority = 7;
+        else if (rngTimeJacker == 2)
+            priority = 6;
+        else if (rngTimeJacker == 3)
+            priority = 5;
+        else if (rngTimeJacker == 4)
+            priority = 4;
+        else if (rngTimeJacker == 5)
+            priority = 3;
+        else if (rngTimeJacker == 6)
+            priority = 2;
+        else if (rngTimeJacker == 7)
+            priority = 1;
+        else if (rngTimeJacker == 8)
+            priority = 0;
+        else if (rngTimeJacker == 9)
+            priority = -1;
+        else if (rngTimeJacker == 10)
+            priority = -2;
+        else if (rngTimeJacker == 11)
+            priority = -3;
+        else if (rngTimeJacker == 12)
+            priority = -4;
+        else if (rngTimeJacker == 13)
+            priority = -5;
+        else if (rngTimeJacker == 14)
+            priority = -6;
+        else if (rngTimeJacker == 15)
+            priority = -7;
+        else if (rngTimeJacker == 16)
+            priority = -8;
+    }
 
     return priority;
 }

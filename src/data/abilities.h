@@ -2669,14 +2669,10 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
     
-    [ABILITY_TIME_TRAVELLER] = // to do
+    [ABILITY_TIME_JACKER] =
     {
-    #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Time Traveller"),
-    #else
-        .name = _("Time Travel"),
-    #endif
-        .description = COMPOUND_STRING("Unknown ability."),
+        .name = _("Time Jacker"),
+        .description = COMPOUND_STRING("Messes up move priority."),
         .aiRating = 8,
     },
     

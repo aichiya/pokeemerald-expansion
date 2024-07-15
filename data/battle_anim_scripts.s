@@ -18121,7 +18121,7 @@ DimensionKickWall:
 Move_DIMENSION_SHOT::
 	loadspritegfx ANIM_TAG_BLUE_LIGHT_WALL @wall
 	loadspritegfx ANIM_TAG_EXPLOSION
-	fadetobg BG_DYNAMAX_CANNON
+	fadetobg BG_TRICK_ROOM
 	waitbgfadein
 	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_ATTACKER
 	setarg 7, 0

@@ -24,6 +24,27 @@
 #define TYPE_FAIRY            18
 #define NUMBER_OF_MON_TYPES   19
 
+#define TYPE_NEW_ILLUSION     TYPE_NORMAL
+#define TYPE_NEW_DREAM        TYPE_FIGHTING
+#define TYPE_NEW_FLYING       TYPE_FLYING
+#define TYPE_NEW_MIASMA       TYPE_POISON
+#define TYPE_NEW_EARTH        TYPE_GROUND
+#define TYPE_NEW_BEAST        TYPE_ROCK
+#define TYPE_NEW_EMOTION      TYPE_BUG
+#define TYPE_NEW_HEART        TYPE_BUG
+#define TYPE_NEW_NETHER       TYPE_GHOST
+#define TYPE_NEW_STEEL        TYPE_STEEL
+#define TYPE_NEW_FIRE         TYPE_FIRE
+#define TYPE_NEW_WATER        TYPE_WATER
+#define TYPE_NEW_NATURE       TYPE_GRASS
+#define TYPE_NEW_WIND         TYPE_ELECTRIC
+#define TYPE_NEW_REASON       TYPE_PSYCHIC
+#define TYPE_NEW_ICE          TYPE_ICE
+#define TYPE_NEW_FAITH        TYPE_DRAGON
+#define TYPE_NEW_SHINTO       TYPE_DRAGON
+#define TYPE_NEW_DIVINE       TYPE_DRAGON
+#define TYPE_NEW_ELECTRIC     TYPE_FAIRY
+
 // Pokémon egg groups
 #define EGG_GROUP_NONE                0
 #define EGG_GROUP_MONSTER             1

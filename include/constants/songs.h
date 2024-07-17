@@ -1350,8 +1350,9 @@
 #define MUS_ETC_IBU_PERTIWI 1365
 #define MUS_YGO_PASSIONATE_DUELIST 1366
 #define MUS_TH_BLUESEA 1367
+#define MUS_DGMN_BRAVE_HEART 1368
 
-#define END_MUS 					MUS_TH_BLUESEA
+#define END_MUS 					MUS_DGMN_BRAVE_HEART
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

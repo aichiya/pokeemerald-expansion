@@ -2017,6 +2017,7 @@ SECTIONS {
         sound/songs/mus_etc_ibu_pertiwi.o(.rodata);
         sound/songs/mus_ygo_passionate_duelist.o(.rodata);
         sound/songs/mus_th_bluesea.o(.rodata);
+        sound/songs/mus_dgmn_brave_heart.o(.rodata);
     } > ROM =0
 
     lib_rodata :

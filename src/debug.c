@@ -5452,6 +5452,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
 	X(MUS_ETC_IBU_PERTIWI) \
 	X(MUS_YGO_PASSIONATE_DUELIST) \
 	X(MUS_TH_BLUESEA) \
+    X(MUS_DGMN_BRAVE_HEART) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

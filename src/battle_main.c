@@ -544,7 +544,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     {
         .name = _("Divine"),
         .generic = _("a Divine move"),
-        .palette = 15,
+        .palette = 13,
         .zMove = MOVE_DEVASTATING_DRAKE,
         .maxMove = MOVE_MAX_WYRMWIND,
         //.enhanceItem = ITEM_DRAGON_FANG,

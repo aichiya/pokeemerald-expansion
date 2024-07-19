@@ -505,6 +505,7 @@ extern const u8 BattleScript_AromaVeilProtectsRet[];
 extern const u8 BattleScript_UltraEgoActivates[];
 extern const u8 BattleScript_WinningCombination3Activates[];
 extern const u8 BattleScript_ShichininMisakiActivates[];
+extern const u8 BattleScript_LeechSeedOnAbilityPureWhiteActivates[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

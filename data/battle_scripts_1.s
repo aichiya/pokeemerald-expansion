@@ -7601,6 +7601,17 @@ BattleScript_SpeedBoostActivatesEnd:
 sZero:
 .byte 0
 
+BattleScript_LeechSeedOnAbilityPureWhiteActivates::
+	copybyte gBattlerAbility, gBattlerAttacker
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_LEECHSEEDHEALSABILITYPUREWHITE
+	waitmessage B_WAIT_TIME_LONG
+	statusanimation BS_ATTACKER
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	end2
+
 BattleScript_ShichininMisakiActivates::
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_ShichininMisakiActivatesEnd
 	call BattleScript_AbilityPopUp

@@ -2805,5 +2805,18 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeOverwritten = TRUE,
         .failsOnImposter = TRUE,
     },
+    
+    [ABILITY_PURE_WHITE] =
+    {
+        .name = _("Pure White"),
+        .description = COMPOUND_STRING("Benefited from status conditions."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
+    },
 
 };

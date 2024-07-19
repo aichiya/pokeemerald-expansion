@@ -849,7 +849,7 @@ u32 ScriptGiveMonParameterizedGift1(u16 species, u8 level, u16 item, u8 ball, u8
         {
             SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
             SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
-            u8 location = 0;
+            u8 location = 222;
             SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
             ball = ITEM_BEAST_BALL;
             SetMonData(&mon, MON_DATA_POKEBALL, &ball);

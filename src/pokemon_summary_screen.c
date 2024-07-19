@@ -3210,7 +3210,11 @@ static void BufferMonTrainerMemo(void)
 
         if (DoesMonOTMatchOwner() == TRUE)
         {
-            if (sum->metGame == VERSION_RUBY
+            if (sum->metGame == 0)
+            {
+                text = gText_MetLocationPlacholder;
+            }
+            else if (sum->metGame == VERSION_RUBY
                 || sum->metGame == VERSION_SAPPHIRE
                 || sum->metGame == VERSION_FIRE_RED
                 || sum->metGame == VERSION_LEAF_GREEN)
@@ -5296,8 +5300,10 @@ static void BufferMonTrainerMemo(void)
             else if (sum->metGame == VERSION_IDENTIFIER_SPECIAL_GIFT)
             {
                 if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
+                {
                    text = gText_XNatureAnotherReality;
-                if (sum->metLocation == 0)
+                }
+                else if (sum->metLocation == 222)
                 {
                     if (VarGet(VAR_GIFTMON3_IDENTIFIER) <= 1)
                     {
@@ -5399,6 +5405,10 @@ static void BufferMonTrainerMemo(void)
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZ;
             else
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureMetAtYZ;
+        }
+        else if (sum->metGame == 0)
+        {
+            text = gText_MetLocationPlacholder;
         }
         else if (sum->metGame == VERSION_RUBY
             || sum->metGame == VERSION_SAPPHIRE

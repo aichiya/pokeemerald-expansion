@@ -94,6 +94,7 @@ enum {
     MSG_ITEM_IS_HELD,
     MSG_CHANGED_TO_ITEM,
     MSG_CANT_STORE_MAIL,
+    MSG_CANT_RELEASE_MON,
 };
 
 // IDs for how to resolve variables in the above messages
@@ -502,7 +503,9 @@ struct PokemonStorageSystemData
     u32 displayMonPersonality;
     u16 displayMonSpecies;
     u16 displayMonItemId;
-    u16 displayUnusedVar;
+//    u16 displayUnusedVar; // Tndys display game met
+    u8 displayMonGameMet; // added TNDYS
+    u8 displayMonMetLocation; // added TNDYS
     bool8 setMosaic;
     u8 displayMonMarkings;
     u8 displayMonLevel;
@@ -1102,6 +1105,7 @@ static const struct StorageMessage sMessages[] =
     [MSG_ITEM_IS_HELD]         = {gText_ItemIsNowHeld,           MSG_VAR_ITEM_NAME},
     [MSG_CHANGED_TO_ITEM]      = {gText_ChangedToNewItem,        MSG_VAR_ITEM_NAME},
     [MSG_CANT_STORE_MAIL]      = {gText_MailCantBeStored,        MSG_VAR_NONE},
+    [MSG_CANT_RELEASE_MON]     = {gText_YouCantReleaseThisMon,   MSG_VAR_NONE},
 };
 
 static const struct WindowTemplate sYesNoWindowTemplate =
@@ -2674,6 +2678,12 @@ static void Task_OnSelectedMon(u8 taskId)
             {
                 sStorage->state = 5; // Cannot release an Egg.
             }
+            else if (sStorage->displayMonGameMet == VERSION_IDENTIFIER_SPECIAL_GIFT
+                 && (sStorage->displayMonMetLocation == METLOC_FATEFUL_ENCOUNTER || sStorage->displayMonMetLocation == 222)
+                 && VarGet(VAR_GIFTMON3_IDENTIFIER) < 100)
+            {
+                sStorage->state = 7; // Cannot release special giftmon if story var < 100
+            }
             else if (ItemIsMail(sStorage->displayMonItemId))
             {
                 sStorage->state = 4;
@@ -2724,6 +2734,11 @@ static void Task_OnSelectedMon(u8 taskId)
     case 5:
         PlaySE(SE_FAILURE);
         PrintMessage(MSG_CANT_RELEASE_EGG);
+        sStorage->state = 6;
+        break;
+    case 7:
+        PlaySE(SE_FAILURE);
+        PrintMessage(MSG_CANT_RELEASE_MON);
         sStorage->state = 6;
         break;
     case 4:
@@ -6954,6 +6969,8 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
             sStorage->displayMonPalette = GetMonFrontSpritePal(mon);
             gender = GetMonGender(mon);
             sStorage->displayMonItemId = GetMonData(mon, MON_DATA_HELD_ITEM);
+            sStorage->displayMonGameMet = GetMonData(mon, MON_DATA_MET_GAME);
+            sStorage->displayMonMetLocation = GetMonData(mon, MON_DATA_MET_LOCATION);
         }
     }
     else if (mode == MODE_BOX)
@@ -6979,6 +6996,8 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
             sStorage->displayMonPalette = GetMonSpritePalFromSpeciesAndPersonality(sStorage->displayMonSpecies, isShiny, sStorage->displayMonPersonality);
             gender = GetGenderFromSpeciesAndPersonality(sStorage->displayMonSpecies, sStorage->displayMonPersonality);
             sStorage->displayMonItemId = GetBoxMonData(boxMon, MON_DATA_HELD_ITEM);
+            sStorage->displayMonGameMet = GetBoxMonData(boxMon, MON_DATA_MET_GAME);
+            sStorage->displayMonMetLocation = GetBoxMonData(boxMon, MON_DATA_MET_LOCATION);
         }
     }
     else

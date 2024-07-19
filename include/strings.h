@@ -2074,6 +2074,7 @@ extern const u8 gPCText_Simple[];
 extern const u8 gText_PartyFull[];
 extern const u8 gText_Box[];
 extern const u8 gText_JustOnePkmn[];
+extern const u8 gText_YouCantReleaseThisMon[];
 
 // battle main
 extern const u8 gText_LinkStandby3[];
@@ -4164,5 +4165,6 @@ extern const u8 gText_XNatureProbablyYogyakarta[];
 extern const u8 gText_XNatureEvent[];
 extern const u8 gText_XNatureCensored[];
 extern const u8 gText_Censored3[];
+extern const u8 gText_MetLocationPlacholder[];
 
 #endif // GUARD_STRINGS_H

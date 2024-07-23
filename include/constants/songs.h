@@ -1351,8 +1351,9 @@
 #define MUS_YGO_PASSIONATE_DUELIST 1366
 #define MUS_TH_BLUESEA 1367
 #define MUS_DGMN_BRAVE_HEART 1368
+#define MUS_KEY_CLANNAD_TOKI_NO_KIZAMU_UTA 1369
 
-#define END_MUS 					MUS_DGMN_BRAVE_HEART
+#define END_MUS 					MUS_KEY_CLANNAD_TOKI_NO_KIZAMU_UTA
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

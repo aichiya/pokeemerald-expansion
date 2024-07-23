@@ -147,10 +147,24 @@ void HandleAction_UseMove(void)
     // choose move
     if (gProtectStructs[gBattlerAttacker].noValidMoves)
     {
-        gProtectStructs[gBattlerAttacker].noValidMoves = FALSE;
-        gCurrentMove = gChosenMove = MOVE_STRUGGLE;
-        gHitMarker |= HITMARKER_NO_PPDEDUCT;
-        *(gBattleStruct->moveTarget + gBattlerAttacker) = GetMoveTarget(MOVE_STRUGGLE, NO_TARGET_OVERRIDE);
+        if (GetBattlerAbility(gBattlerAttacker) == ABILITY_PURE_WHITE
+         || (GetBattlerAbility(gBattlerAttacker) == ABILITY_FANTASY_BREAKER && FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE))
+        {
+            u16 zMoveRand = Random() % 17;
+            u16 struggleReplacement = MOVE_CATASTROPIKA + zMoveRand;
+            
+            gProtectStructs[gBattlerAttacker].noValidMoves = FALSE;
+            gCurrentMove = gChosenMove = struggleReplacement;
+            gHitMarker |= HITMARKER_NO_PPDEDUCT;
+            *(gBattleStruct->moveTarget + gBattlerAttacker) = GetMoveTarget(struggleReplacement, NO_TARGET_OVERRIDE);
+        }
+        else
+        {
+            gProtectStructs[gBattlerAttacker].noValidMoves = FALSE;
+            gCurrentMove = gChosenMove = MOVE_STRUGGLE;
+            gHitMarker |= HITMARKER_NO_PPDEDUCT;
+            *(gBattleStruct->moveTarget + gBattlerAttacker) = GetMoveTarget(MOVE_STRUGGLE, NO_TARGET_OVERRIDE);
+        }
     }
     else if (gBattleMons[gBattlerAttacker].status2 & STATUS2_MULTIPLETURNS || gBattleMons[gBattlerAttacker].status2 & STATUS2_RECHARGE)
     {

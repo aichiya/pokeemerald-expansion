@@ -1371,6 +1371,7 @@ gSongTable::
 	song mus_th_bluesea, 0, 0
 	song mus_dgmn_brave_heart, 0, 0
 	song mus_key_clannad_tokino, 0, 0
+	song mus_sny_harehareyukai, 0, 0
 
 	.align 2
 dummy_song_header:

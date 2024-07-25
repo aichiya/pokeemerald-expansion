@@ -2019,6 +2019,7 @@ SECTIONS {
         sound/songs/mus_th_bluesea.o(.rodata);
         sound/songs/mus_dgmn_brave_heart.o(.rodata);
         soung/songs/mus_key_clannad_tokino.o(.rodata);
+        soung/songs/mus_sny_harehareyukai.o(.rodata);
     } > ROM =0
 
     lib_rodata :

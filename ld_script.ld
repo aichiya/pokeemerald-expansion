@@ -2020,6 +2020,7 @@ SECTIONS {
         sound/songs/mus_dgmn_brave_heart.o(.rodata);
         soung/songs/mus_key_clannad_tokino.o(.rodata);
         soung/songs/mus_sny_harehareyukai.o(.rodata);
+        soung/songs/mus_ty_the_level.o(.rodata);
     } > ROM =0
 
     lib_rodata :

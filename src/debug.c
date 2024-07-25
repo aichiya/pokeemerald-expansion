@@ -5455,6 +5455,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_DGMN_BRAVE_HEART) \
     X(MUS_KEY_CLANNAD_TOKI_NO_KIZAMU_UTA) \
     X(MUS_SNY_HARE_HARE_YUKAI) \
+    X(MUS_TY_THE_LEVEL)
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

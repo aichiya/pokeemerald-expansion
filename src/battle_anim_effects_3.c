@@ -2338,15 +2338,30 @@ void AnimTask_TransformMon(u8 taskId)
     switch (gTasks[taskId].data[0])
     {
     case 0:
-        SetGpuReg(REG_OFFSET_MOSAIC, 0);
-        if (GetBattlerSpriteBGPriorityRank(gBattleAnimAttacker) == 1)
-            SetAnimBgAttribute(1, BG_ANIM_MOSAIC, 1);
-        else
-            SetAnimBgAttribute(2, BG_ANIM_MOSAIC, 1);
+        if (gCurrentMove == MOVE_FLUFFICATION)
+        {
+            SetGpuReg(REG_OFFSET_MOSAIC, 0);
+            if (GetBattlerSpriteBGPriorityRank(gBattleAnimTarget) == 1)
+                SetAnimBgAttribute(1, BG_ANIM_MOSAIC, 1);
+            else
+                SetAnimBgAttribute(2, BG_ANIM_MOSAIC, 1);
 
-        gTasks[taskId].data[10] = gBattleAnimArgs[0];
-        gTasks[taskId].data[11] = gBattleAnimArgs[1];
-        gTasks[taskId].data[0]++;
+            gTasks[taskId].data[10] = gBattleAnimArgs[0];
+            gTasks[taskId].data[11] = gBattleAnimArgs[1];
+            gTasks[taskId].data[0]++;
+        }
+        else
+        {
+            SetGpuReg(REG_OFFSET_MOSAIC, 0);
+            if (GetBattlerSpriteBGPriorityRank(gBattleAnimAttacker) == 1)
+                SetAnimBgAttribute(1, BG_ANIM_MOSAIC, 1);
+            else
+                SetAnimBgAttribute(2, BG_ANIM_MOSAIC, 1);
+
+            gTasks[taskId].data[10] = gBattleAnimArgs[0];
+            gTasks[taskId].data[11] = gBattleAnimArgs[1];
+            gTasks[taskId].data[0]++;
+        }
         break;
     case 1:
         if (gTasks[taskId].data[2]++ > 1)
@@ -2360,48 +2375,98 @@ void AnimTask_TransformMon(u8 taskId)
         }
         break;
     case 2:
-        HandleSpeciesGfxDataChange(gBattleAnimAttacker, gBattleAnimTarget, gTasks[taskId].data[10], gTasks[taskId].data[11]);
-        GetBgDataForTransform(&animBg, gBattleAnimAttacker);
-
-        if (IsContest())
-            position = B_POSITION_PLAYER_LEFT;
-        else
-            position = GetBattlerPosition(gBattleAnimAttacker);
-
-        src = gMonSpritesGfxPtr->spritesGfx[position];
-        dest = animBg.bgTiles;
-        CpuCopy32(src, dest, MON_PIC_SIZE);
-        LoadBgTiles(1, animBg.bgTiles, 0x800, animBg.tilesOffset);
-        if (IsContest())
+        if (gCurrentMove == MOVE_FLUFFICATION)
         {
-            if (IsSpeciesNotUnown(gContestResources->moveAnim->species) != IsSpeciesNotUnown(gContestResources->moveAnim->targetSpecies))
+            HandleSpeciesGfxDataChange(gBattleAnimTarget, gBattleAnimTarget, gTasks[taskId].data[10], gTasks[taskId].data[11]);
+            GetBgDataForTransform(&animBg, gBattleAnimTarget);
+
+            if (IsContest())
+                position = B_POSITION_PLAYER_LEFT;
+            else
+                position = GetBattlerPosition(gBattleAnimTarget);
+
+            src = gMonSpritesGfxPtr->spritesGfx[position];
+            dest = animBg.bgTiles;
+            CpuCopy32(src, dest, MON_PIC_SIZE);
+            LoadBgTiles(1, animBg.bgTiles, 0x800, animBg.tilesOffset);
+            if (IsContest())
             {
-                bgTilemap = (u16 *)animBg.bgTilemap;
-                for (i = 0; i < 8; i++)
+                if (IsSpeciesNotUnown(gContestResources->moveAnim->species) != IsSpeciesNotUnown(gContestResources->moveAnim->targetSpecies))
                 {
-                    for (j = 0; j < 4; j++)
+                    bgTilemap = (u16 *)animBg.bgTilemap;
+                    for (i = 0; i < 8; i++)
                     {
-                        u16 temp = bgTilemap[j + i * 0x20];
-                        bgTilemap[j + i * 0x20] = bgTilemap[(7 - j) + i * 0x20];
-                        bgTilemap[(7 - j) + i * 0x20] = temp;
+                        for (j = 0; j < 4; j++)
+                        {
+                            u16 temp = bgTilemap[j + i * 0x20];
+                            bgTilemap[j + i * 0x20] = bgTilemap[(7 - j) + i * 0x20];
+                            bgTilemap[(7 - j) + i * 0x20] = temp;
+                        }
+                    }
+
+                    for (i = 0; i < 8; i++)
+                    {
+                        for (j = 0; j < 8; j++)
+                        {
+                        bgTilemap[j + i * 0x20] ^= 0x400;
+                        }
                     }
                 }
 
-                for (i = 0; i < 8; i++)
-                {
-                    for (j = 0; j < 8; j++)
-                    {
-                       bgTilemap[j + i * 0x20] ^= 0x400;
-                    }
-                }
+                if (IsSpeciesNotUnown(gContestResources->moveAnim->targetSpecies))
+                    gSprites[gBattlerSpriteIds[gBattleAnimTarget]].affineAnims = gAffineAnims_BattleSpriteContest;
+                else
+                    gSprites[gBattlerSpriteIds[gBattleAnimTarget]].affineAnims = gAffineAnims_BattleSpriteOpponentSide;
+
+                StartSpriteAffineAnim(&gSprites[gBattlerSpriteIds[gBattleAnimTarget]], BATTLER_AFFINE_NORMAL);
             }
 
-            if (IsSpeciesNotUnown(gContestResources->moveAnim->targetSpecies))
-                gSprites[gBattlerSpriteIds[gBattleAnimAttacker]].affineAnims = gAffineAnims_BattleSpriteContest;
-            else
-                gSprites[gBattlerSpriteIds[gBattleAnimAttacker]].affineAnims = gAffineAnims_BattleSpriteOpponentSide;
+        }
+        else
+        {
+            HandleSpeciesGfxDataChange(gBattleAnimAttacker, gBattleAnimTarget, gTasks[taskId].data[10], gTasks[taskId].data[11]);
+            GetBgDataForTransform(&animBg, gBattleAnimAttacker);
 
-            StartSpriteAffineAnim(&gSprites[gBattlerSpriteIds[gBattleAnimAttacker]], BATTLER_AFFINE_NORMAL);
+            if (IsContest())
+                position = B_POSITION_PLAYER_LEFT;
+            else
+                position = GetBattlerPosition(gBattleAnimAttacker);
+
+            src = gMonSpritesGfxPtr->spritesGfx[position];
+            dest = animBg.bgTiles;
+            CpuCopy32(src, dest, MON_PIC_SIZE);
+            LoadBgTiles(1, animBg.bgTiles, 0x800, animBg.tilesOffset);
+            if (IsContest())
+            {
+                if (IsSpeciesNotUnown(gContestResources->moveAnim->species) != IsSpeciesNotUnown(gContestResources->moveAnim->targetSpecies))
+                {
+                    bgTilemap = (u16 *)animBg.bgTilemap;
+                    for (i = 0; i < 8; i++)
+                    {
+                        for (j = 0; j < 4; j++)
+                        {
+                            u16 temp = bgTilemap[j + i * 0x20];
+                            bgTilemap[j + i * 0x20] = bgTilemap[(7 - j) + i * 0x20];
+                            bgTilemap[(7 - j) + i * 0x20] = temp;
+                        }
+                    }
+
+                    for (i = 0; i < 8; i++)
+                    {
+                        for (j = 0; j < 8; j++)
+                        {
+                        bgTilemap[j + i * 0x20] ^= 0x400;
+                        }
+                    }
+                }
+
+                if (IsSpeciesNotUnown(gContestResources->moveAnim->targetSpecies))
+                    gSprites[gBattlerSpriteIds[gBattleAnimAttacker]].affineAnims = gAffineAnims_BattleSpriteContest;
+                else
+                    gSprites[gBattlerSpriteIds[gBattleAnimAttacker]].affineAnims = gAffineAnims_BattleSpriteOpponentSide;
+
+                StartSpriteAffineAnim(&gSprites[gBattlerSpriteIds[gBattleAnimAttacker]], BATTLER_AFFINE_NORMAL);
+            }
         }
 
         gTasks[taskId].data[0]++;
@@ -2419,18 +2484,38 @@ void AnimTask_TransformMon(u8 taskId)
         }
         break;
     case 4:
-        SetGpuReg(REG_OFFSET_MOSAIC, 0);
-        if (GetBattlerSpriteBGPriorityRank(gBattleAnimAttacker) == 1)
-            SetAnimBgAttribute(1, BG_ANIM_MOSAIC, 0);
-        else
-            SetAnimBgAttribute(2, BG_ANIM_MOSAIC, 0);
-
-        if (!IsContest())
+        if (gCurrentMove == MOVE_FLUFFICATION)
         {
-            if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
+            SetGpuReg(REG_OFFSET_MOSAIC, 0);
+            if (GetBattlerSpriteBGPriorityRank(gBattleAnimTarget) == 1)
+                SetAnimBgAttribute(1, BG_ANIM_MOSAIC, 0);
+            else
+                SetAnimBgAttribute(2, BG_ANIM_MOSAIC, 0);
+
+            if (!IsContest())
             {
-                if (gTasks[taskId].data[10] == 0)
-                    SetBattlerShadowSpriteCallback(gBattleAnimAttacker, gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies);
+                if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_OPPONENT)
+                {
+                    if (gTasks[taskId].data[10] == 0)
+                        SetBattlerShadowSpriteCallback(gBattleAnimTarget, gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies);
+                }
+            }
+        }
+        else
+        {
+            SetGpuReg(REG_OFFSET_MOSAIC, 0);
+            if (GetBattlerSpriteBGPriorityRank(gBattleAnimAttacker) == 1)
+                SetAnimBgAttribute(1, BG_ANIM_MOSAIC, 0);
+            else
+                SetAnimBgAttribute(2, BG_ANIM_MOSAIC, 0);
+
+            if (!IsContest())
+            {
+                if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
+                {
+                    if (gTasks[taskId].data[10] == 0)
+                        SetBattlerShadowSpriteCallback(gBattleAnimAttacker, gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies);
+                }
             }
         }
 

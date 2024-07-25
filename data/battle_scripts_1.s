@@ -20,6 +20,19 @@
 
 	.section script_data, "aw", %progbits
 
+BattleScript_EffectFluffication::
+	attackcanceler
+	attackstring
+	ppreduce
+	trytoclearprimalweather
+	flushtextbox
+	transformdataexecutiondecade
+	attackanimation
+	waitanimation
+	printfromtable gFlufficationUsedStringIds
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectATrance::
 	attackcanceler
 	attackstring

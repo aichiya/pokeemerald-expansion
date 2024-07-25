@@ -849,6 +849,7 @@ static const u8 sText_YorigamiCurse[] = _("{B_ATK_NAME_WITH_PREFIX} laid a curse
 static const u8 sText_PkmnRaisedEvasion[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nraised its evasion!");
 static const u8 sText_TimeJackerEnters[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} is making the time wierd!");
 static const u8 sText_LeechSeedHealsAbilityPureWhite[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} got healed from\nthe Leech Seed due to {B_ATK_ABILITY}!");
+static const u8 sText_FluffiedInto[] = _("{B_DEF_NAME_WITH_PREFIX} got fluffied and\ntransformed into {B_BUFF1}!");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -1553,6 +1554,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNRAISEDEVASION - BATTLESTRINGS_TABLE_START] = sText_PkmnRaisedEvasion,
     [STRINGID_TIMEJACKERENTERS - BATTLESTRINGS_TABLE_START] = sText_TimeJackerEnters,
     [STRINGID_LEECHSEEDHEALSABILITYPUREWHITE - BATTLESTRINGS_TABLE_START] = sText_LeechSeedHealsAbilityPureWhite,
+    [STRINGID_PKMNFLUFFIEDINTO - BATTLESTRINGS_TABLE_START] = sText_FluffiedInto,
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -2055,6 +2057,12 @@ const u16 gDamageNonTypesDmgStringIds[] =
     [B_MSG_HURT_BY_VORTEX]       = STRINGID_PKMNHURTBYVORTEX,
     [B_MSG_BURNING_UP]           = STRINGID_PKMNBURNINGUP,
     [B_MSG_HURT_BY_ROCKS_THROWN] = STRINGID_PKMNHURTBYROCKSTHROWN,
+};
+
+const u16 gFlufficationUsedStringIds[] =
+{
+    [B_MSG_FLUFFIED]            = STRINGID_PKMNFLUFFIEDINTO,
+    [B_MSG_FLUFFICATION_FAILED] = STRINGID_BUTITFAILED
 };
 
 const u8 gText_PkmnIsEvolving[] = _("What?\n{STR_VAR_1} is evolving!");

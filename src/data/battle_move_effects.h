@@ -2231,4 +2231,10 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectATrance,
         .battleTvScore = 0, // TODO: Assign points
     },
+
+    [EFFECT_FLUFFICATION] =
+    {
+        .battleScript = BattleScript_EffectFluffication,
+        .battleTvScore = 0, // TODO: Assign points
+    },
 };

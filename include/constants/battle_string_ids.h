@@ -712,8 +712,9 @@
 #define STRINGID_PKMNRAISEDEVASION                    709
 #define STRINGID_TIMEJACKERENTERS                     710
 #define STRINGID_LEECHSEEDHEALSABILITYPUREWHITE       711
+#define STRINGID_PKMNFLUFFIEDINTO                     712
 
-#define BATTLESTRINGS_COUNT                           712
+#define BATTLESTRINGS_COUNT                           713
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
@@ -1032,5 +1033,9 @@
 #define B_MSG_HURT_BY_VORTEX    1
 #define B_MSG_BURNING_UP  2
 #define B_MSG_HURT_BY_ROCKS_THROWN 3
+
+// gFlufficationUsedStringIds
+#define B_MSG_FLUFFIED 0
+#define B_MSG_FLUFFICATION_FAILED 1
 
 #endif // GUARD_CONSTANTS_BATTLE_STRING_IDS_H

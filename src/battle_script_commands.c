@@ -12659,158 +12659,230 @@ static void Cmd_transformdataexecutiondecade(void)
 //        u8 *battleMonAttacker, *battleMonTarget;
         u8 timesGotHit;
         u16 speciesBuffer;
+        u32 ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpd, baseAtk, baseDef, baseSpAtk, baseSpDef, baseSpd;
+        u8 currentLevel;
+        u32 calcAtk, calcDef, calcSpAtk, calcSpDef, calcSpd;
 
-        gBattleMons[gBattlerAttacker].status2 |= STATUS2_TRANSFORMED;
-        gDisableStructs[gBattlerAttacker].disabledMove = MOVE_NONE;
-        gDisableStructs[gBattlerAttacker].disableTimer = 0;
-        gDisableStructs[gBattlerAttacker].transformedMonPersonality = gBattleMons[gBattlerAttacker].personality;
-        gDisableStructs[gBattlerAttacker].transformedMonShininess = gBattleMons[gBattlerAttacker].isShiny;
-        gDisableStructs[gBattlerAttacker].mimickedMoves = 0;
-        gDisableStructs[gBattlerAttacker].usedMoves = 0;
-
-        timesGotHit = gBattleStruct->timesGotHit[GetBattlerSide(gBattlerTarget)][gBattlerPartyIndexes[gBattlerTarget]];
-        gBattleStruct->timesGotHit[GetBattlerSide(gBattlerAttacker)][gBattlerPartyIndexes[gBattlerAttacker]] = timesGotHit;
-        
-        switch(Random() % 3)
+        if (gCurrentMove == MOVE_FLUFFICATION)
         {
-            case 0:
-                speciesBuffer = SPECIES_NECROZMA_ULTRA;
-                PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
+            speciesBuffer = SPECIES_MAGIKARP;
+            currentLevel = gBattleMons[gBattlerTarget].level;
+            
+            ivAtk = gBattleMons[gBattlerTarget].attackIV;
+            ivDef = gBattleMons[gBattlerTarget].defenseIV;
+            ivSpAtk = gBattleMons[gBattlerTarget].speedIV;
+            ivSpDef = gBattleMons[gBattlerTarget].spAttackIV;
+            ivSpd = gBattleMons[gBattlerTarget].spDefenseIV;
+            
+            baseAtk = 50;
+            baseDef = 35;
+            baseSpAtk = 20;
+            baseSpDef = 30;
+            baseSpd = 60;
 
-        //      battleMonAttacker = (u8 *)(&gBattleMons[gBattlerAttacker]);
-        //      battleMonTarget = (u8 *)(&gBattleMons[gBattlerTarget]);
+            calcAtk = (((2 * baseAtk + ivAtk) * currentLevel) / 100) + 5;
+            calcDef = (((2 * baseDef + ivDef) * currentLevel) / 100) + 5;
+            calcSpAtk = (((2 * baseSpAtk + ivSpAtk) * currentLevel) / 100) + 5;
+            calcSpDef = (((2 * baseSpDef + ivSpDef) * currentLevel) / 100) + 5;
+            calcSpd = (((2 * baseSpd + ivSpd) * currentLevel) / 100) + 5;
 
-                gBattleMons[gBattlerAttacker].species = SPECIES_NECROZMA_ULTRA;
-                gBattleMons[gBattlerAttacker].attack = 339 + 31 + 31;
-                gBattleMons[gBattlerAttacker].defense = 199 + 31;
-                gBattleMons[gBattlerAttacker].speed = 263 + 31 + 63;
-                gBattleMons[gBattlerAttacker].spAttack = 339 + 31 + 32;
-                gBattleMons[gBattlerAttacker].spDefense = 199 + 31;
-                gBattleMons[gBattlerAttacker].moves[0] = MOVE_PHOTON_GEYSER;
-                gBattleMons[gBattlerAttacker].moves[1] = MOVE_NASTY_PLOT;
-                gBattleMons[gBattlerAttacker].moves[2] = MOVE_MOONGEIST_BEAM;
-                gBattleMons[gBattlerAttacker].moves[3] = MOVE_SUNSTEEL_STRIKE;
-        //            gBattleMons[gBattlerAttacker].hpIV = gBattleMons[gBattlerAttacker].hpIV;
-        //            gBattleMons[gBattlerAttacker].attackIV = gBattleMons[gBattlerAttacker].attackIV;
-        //            gBattleMons[gBattlerAttacker].defenseIV = gBattleMons[gBattlerAttacker].defenseIV;
-        //            gBattleMons[gBattlerAttacker].speedIV = gBattleMons[gBattlerAttacker].speedIV;
-        //            gBattleMons[gBattlerAttacker].spAttackIV = gBattleMons[gBattlerAttacker].spAttackIV;
-        //            gBattleMons[gBattlerAttacker].spDefenseIV = gBattleMons[gBattlerAttacker].spDefenseIV;
-        //            gBattleMons[gBattlerAttacker].abilityNum = gBattleMons[gBattlerAttacker].abilityNum;
-        //            gBattleMons[gBattlerAttacker].statStages[0] = gBattleMons[gBattlerAttacker].statStages[1];
-        //            gBattleMons[gBattlerAttacker].statStages[1] = gBattleMons[gBattlerAttacker].statStages[2];
-        //            gBattleMons[gBattlerAttacker].statStages[2] = gBattleMons[gBattlerAttacker].statStages[3];
-        //            gBattleMons[gBattlerAttacker].statStages[3] = gBattleMons[gBattlerAttacker].statStages[4];
-        //            gBattleMons[gBattlerAttacker].statStages[4] = gBattleMons[gBattlerAttacker].statStages[5];
-        //            gBattleMons[gBattlerAttacker].statStages[5] = gBattleMons[gBattlerAttacker].statStages[6];
-        //            gBattleMons[gBattlerAttacker].statStages[6] = gBattleMons[gBattlerAttacker].statStages[7];
-        //            gBattleMons[gBattlerAttacker].statStages[7] = gBattleMons[gBattlerAttacker].statStages[8];
-                gBattleMons[gBattlerAttacker].ability = ABILITY_NEUROFORCE;
-                gBattleMons[gBattlerAttacker].type1 = TYPE_PSYCHIC;
-                gBattleMons[gBattlerAttacker].type2 = TYPE_DRAGON;
-                gBattleMons[gBattlerAttacker].type3 = TYPE_MYSTERY;
-                
-                VarSet(VAR_UNUSED_0x40F8, SPECIES_NECROZMA_ULTRA);
-                gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_NEUROFORCE;
-                break;
-            case 1:
-                speciesBuffer = SPECIES_SHAYMIN_SKY;
-                PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
+            gBattleMons[gBattlerTarget].status2 |= STATUS2_TRANSFORMED;
+            gDisableStructs[gBattlerTarget].disabledMove = MOVE_NONE;
+            gDisableStructs[gBattlerTarget].disableTimer = 0;
+            gDisableStructs[gBattlerTarget].transformedMonPersonality = gBattleMons[gBattlerTarget].personality;
+            gDisableStructs[gBattlerTarget].transformedMonShininess = gBattleMons[gBattlerTarget].isShiny;
+            gDisableStructs[gBattlerTarget].mimickedMoves = 0;
+            gDisableStructs[gBattlerTarget].usedMoves = 0;
 
-        //      battleMonAttacker = (u8 *)(&gBattleMons[gBattlerAttacker]);
-        //      battleMonTarget = (u8 *)(&gBattleMons[gBattlerTarget]);
+            timesGotHit = gBattleStruct->timesGotHit[GetBattlerSide(gBattlerTarget)][gBattlerPartyIndexes[gBattlerTarget]];
+            gBattleStruct->timesGotHit[GetBattlerSide(gBattlerAttacker)][gBattlerPartyIndexes[gBattlerAttacker]] = timesGotHit;
+            
+            PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
 
-                gBattleMons[gBattlerAttacker].species = SPECIES_SHAYMIN_SKY;
-                gBattleMons[gBattlerAttacker].attack = 242;
-                gBattleMons[gBattlerAttacker].defense = 186;
-                gBattleMons[gBattlerAttacker].speed = 353;
-                gBattleMons[gBattlerAttacker].spAttack = 339;
-                gBattleMons[gBattlerAttacker].spDefense = 186;
-                gBattleMons[gBattlerAttacker].moves[0] = MOVE_AIR_SLASH;
-                gBattleMons[gBattlerAttacker].moves[1] = MOVE_NASTY_PLOT;
-                gBattleMons[gBattlerAttacker].moves[2] = MOVE_SEED_FLARE;
-                gBattleMons[gBattlerAttacker].moves[3] = MOVE_EARTH_POWER;
-        //            gBattleMons[gBattlerAttacker].hpIV = gBattleMons[gBattlerAttacker].hpIV;
-        //            gBattleMons[gBattlerAttacker].attackIV = gBattleMons[gBattlerAttacker].attackIV;
-        //            gBattleMons[gBattlerAttacker].defenseIV = gBattleMons[gBattlerAttacker].defenseIV;
-        //            gBattleMons[gBattlerAttacker].speedIV = gBattleMons[gBattlerAttacker].speedIV;
-        //            gBattleMons[gBattlerAttacker].spAttackIV = gBattleMons[gBattlerAttacker].spAttackIV;
-        //            gBattleMons[gBattlerAttacker].spDefenseIV = gBattleMons[gBattlerAttacker].spDefenseIV;
-        //            gBattleMons[gBattlerAttacker].abilityNum = gBattleMons[gBattlerAttacker].abilityNum;
-        //            gBattleMons[gBattlerAttacker].statStages[0] = gBattleMons[gBattlerAttacker].statStages[1];
-        //            gBattleMons[gBattlerAttacker].statStages[1] = gBattleMons[gBattlerAttacker].statStages[2];
-        //            gBattleMons[gBattlerAttacker].statStages[2] = gBattleMons[gBattlerAttacker].statStages[3];
-        //            gBattleMons[gBattlerAttacker].statStages[3] = gBattleMons[gBattlerAttacker].statStages[4];
-        //            gBattleMons[gBattlerAttacker].statStages[4] = gBattleMons[gBattlerAttacker].statStages[5];
-        //            gBattleMons[gBattlerAttacker].statStages[5] = gBattleMons[gBattlerAttacker].statStages[6];
-        //            gBattleMons[gBattlerAttacker].statStages[6] = gBattleMons[gBattlerAttacker].statStages[7];
-        //            gBattleMons[gBattlerAttacker].statStages[7] = gBattleMons[gBattlerAttacker].statStages[8];
-                gBattleMons[gBattlerAttacker].ability = ABILITY_SERENE_GRACE;
-                gBattleMons[gBattlerAttacker].type1 = TYPE_GRASS;
-                gBattleMons[gBattlerAttacker].type2 = TYPE_FLYING;
-                gBattleMons[gBattlerAttacker].type3 = TYPE_MYSTERY;
-                
-                VarSet(VAR_UNUSED_0x40F8, SPECIES_SHAYMIN_SKY);
-                gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_SERENE_GRACE;
-                break;
-            default:
-                speciesBuffer = SPECIES_MAGEARNA_ORIGINAL_COLOR;
-                PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
+            gBattleMons[gBattlerTarget].species = speciesBuffer;
+            gBattleMons[gBattlerTarget].attack = calcAtk;
+            gBattleMons[gBattlerTarget].defense = calcDef;
+            gBattleMons[gBattlerTarget].speed = calcSpd;
+            gBattleMons[gBattlerTarget].spAttack = calcSpAtk;
+            gBattleMons[gBattlerTarget].spDefense = calcSpDef;
+            gBattleMons[gBattlerTarget].moves[0] = MOVE_NONE;
+            gBattleMons[gBattlerTarget].moves[1] = MOVE_NONE;
+            gBattleMons[gBattlerTarget].moves[2] = MOVE_NONE;
+            gBattleMons[gBattlerTarget].moves[3] = MOVE_NONE;
+            gBattleMons[gBattlerTarget].ability = ABILITY_LIMBER;
+            gBattleMons[gBattlerTarget].type1 = TYPE_GRASS;
+            gBattleMons[gBattlerTarget].type2 = TYPE_ELECTRIC;
+            gBattleMons[gBattlerTarget].type3 = TYPE_MYSTERY;
+            gBattleStruct->overwrittenAbilities[gBattlerTarget] = ABILITY_LIMBER;
 
-        //      battleMonAttacker = (u8 *)(&gBattleMons[gBattlerAttacker]);
-        //      battleMonTarget = (u8 *)(&gBattleMons[gBattlerTarget]);
+            for (i = 0; i < MAX_MON_MOVES; i++)
+            {
+                gBattleMons[gBattlerTarget].pp[i] = 0;
+            }
 
-                gBattleMons[gBattlerAttacker].species = SPECIES_MAGEARNA_ORIGINAL_COLOR;
-                gBattleMons[gBattlerAttacker].attack = 226;
-                gBattleMons[gBattlerAttacker].defense = 266;
-                gBattleMons[gBattlerAttacker].speed = 135;
-                gBattleMons[gBattlerAttacker].spAttack = 359;
-                gBattleMons[gBattlerAttacker].spDefense = 329;
-                gBattleMons[gBattlerAttacker].moves[0] = MOVE_FLASH_CANNON;
-                gBattleMons[gBattlerAttacker].moves[1] = MOVE_TRICK_ROOM;
-                gBattleMons[gBattlerAttacker].moves[2] = MOVE_AURA_SPHERE;
-                gBattleMons[gBattlerAttacker].moves[3] = MOVE_PSYSHOCK;
-        //            gBattleMons[gBattlerAttacker].hpIV = gBattleMons[gBattlerAttacker].hpIV;
-        //            gBattleMons[gBattlerAttacker].attackIV = gBattleMons[gBattlerAttacker].attackIV;
-        //            gBattleMons[gBattlerAttacker].defenseIV = gBattleMons[gBattlerAttacker].defenseIV;
-        //            gBattleMons[gBattlerAttacker].speedIV = gBattleMons[gBattlerAttacker].speedIV;
-        //            gBattleMons[gBattlerAttacker].spAttackIV = gBattleMons[gBattlerAttacker].spAttackIV;
-        //            gBattleMons[gBattlerAttacker].spDefenseIV = gBattleMons[gBattlerAttacker].spDefenseIV;
-        //            gBattleMons[gBattlerAttacker].abilityNum = gBattleMons[gBattlerAttacker].abilityNum;
-        //            gBattleMons[gBattlerAttacker].statStages[0] = gBattleMons[gBattlerAttacker].statStages[1];
-        //            gBattleMons[gBattlerAttacker].statStages[1] = gBattleMons[gBattlerAttacker].statStages[2];
-        //            gBattleMons[gBattlerAttacker].statStages[2] = gBattleMons[gBattlerAttacker].statStages[3];
-        //            gBattleMons[gBattlerAttacker].statStages[3] = gBattleMons[gBattlerAttacker].statStages[4];
-        //            gBattleMons[gBattlerAttacker].statStages[4] = gBattleMons[gBattlerAttacker].statStages[5];
-        //            gBattleMons[gBattlerAttacker].statStages[5] = gBattleMons[gBattlerAttacker].statStages[6];
-        //            gBattleMons[gBattlerAttacker].statStages[6] = gBattleMons[gBattlerAttacker].statStages[7];
-        //            gBattleMons[gBattlerAttacker].statStages[7] = gBattleMons[gBattlerAttacker].statStages[8];
-                gBattleMons[gBattlerAttacker].ability = ABILITY_SOUL_HEART;
-                gBattleMons[gBattlerAttacker].type1 = TYPE_STEEL;
-                gBattleMons[gBattlerAttacker].type2 = TYPE_FAIRY;
-                gBattleMons[gBattlerAttacker].type3 = TYPE_MYSTERY;
-                
-                VarSet(VAR_UNUSED_0x40F8, SPECIES_MAGEARNA_ORIGINAL_COLOR);
-                gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_SOUL_HEART;
-                break;
+            // update AI knowledge
+            RecordAllMoves(gBattlerTarget);
+            RecordAbilityBattle(gBattlerTarget, gBattleMons[gBattlerTarget].ability);
+
+            BtlController_EmitResetActionMoveSelection(gBattlerTarget, BUFFER_A, RESET_MOVE_SELECTION);
+            MarkBattlerForControllerExec(gBattlerTarget);
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORMED;
+
         }
-
-
-        for (i = 0; i < MAX_MON_MOVES; i++)
+        else if (gCurrentMove == MOVE_A_TRANCE)
         {
-            if (gMovesInfo[gBattleMons[gBattlerAttacker].moves[i]].pp < 10)
-                gBattleMons[gBattlerAttacker].pp[i] = gMovesInfo[gBattleMons[gBattlerAttacker].moves[i]].pp;
-            else
-                gBattleMons[gBattlerAttacker].pp[i] = 10;
+            gBattleMons[gBattlerAttacker].status2 |= STATUS2_TRANSFORMED;
+            gDisableStructs[gBattlerAttacker].disabledMove = MOVE_NONE;
+            gDisableStructs[gBattlerAttacker].disableTimer = 0;
+            gDisableStructs[gBattlerAttacker].transformedMonPersonality = gBattleMons[gBattlerAttacker].personality;
+            gDisableStructs[gBattlerAttacker].transformedMonShininess = gBattleMons[gBattlerAttacker].isShiny;
+            gDisableStructs[gBattlerAttacker].mimickedMoves = 0;
+            gDisableStructs[gBattlerAttacker].usedMoves = 0;
+
+            timesGotHit = gBattleStruct->timesGotHit[GetBattlerSide(gBattlerTarget)][gBattlerPartyIndexes[gBattlerTarget]];
+            gBattleStruct->timesGotHit[GetBattlerSide(gBattlerAttacker)][gBattlerPartyIndexes[gBattlerAttacker]] = timesGotHit;
+            
+            switch(Random() % 3)
+            {
+                case 0:
+                    speciesBuffer = SPECIES_NECROZMA_ULTRA;
+                    PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
+
+            //      battleMonAttacker = (u8 *)(&gBattleMons[gBattlerAttacker]);
+            //      battleMonTarget = (u8 *)(&gBattleMons[gBattlerTarget]);
+
+                    gBattleMons[gBattlerAttacker].species = SPECIES_NECROZMA_ULTRA;
+                    gBattleMons[gBattlerAttacker].attack = 339 + 31 + 31;
+                    gBattleMons[gBattlerAttacker].defense = 199 + 31;
+                    gBattleMons[gBattlerAttacker].speed = 263 + 31 + 63;
+                    gBattleMons[gBattlerAttacker].spAttack = 339 + 31 + 32;
+                    gBattleMons[gBattlerAttacker].spDefense = 199 + 31;
+                    gBattleMons[gBattlerAttacker].moves[0] = MOVE_PHOTON_GEYSER;
+                    gBattleMons[gBattlerAttacker].moves[1] = MOVE_NASTY_PLOT;
+                    gBattleMons[gBattlerAttacker].moves[2] = MOVE_MOONGEIST_BEAM;
+                    gBattleMons[gBattlerAttacker].moves[3] = MOVE_SUNSTEEL_STRIKE;
+            //            gBattleMons[gBattlerAttacker].hpIV = gBattleMons[gBattlerAttacker].hpIV;
+            //            gBattleMons[gBattlerAttacker].attackIV = gBattleMons[gBattlerAttacker].attackIV;
+            //            gBattleMons[gBattlerAttacker].defenseIV = gBattleMons[gBattlerAttacker].defenseIV;
+            //            gBattleMons[gBattlerAttacker].speedIV = gBattleMons[gBattlerAttacker].speedIV;
+            //            gBattleMons[gBattlerAttacker].spAttackIV = gBattleMons[gBattlerAttacker].spAttackIV;
+            //            gBattleMons[gBattlerAttacker].spDefenseIV = gBattleMons[gBattlerAttacker].spDefenseIV;
+            //            gBattleMons[gBattlerAttacker].abilityNum = gBattleMons[gBattlerAttacker].abilityNum;
+            //            gBattleMons[gBattlerAttacker].statStages[0] = gBattleMons[gBattlerAttacker].statStages[1];
+            //            gBattleMons[gBattlerAttacker].statStages[1] = gBattleMons[gBattlerAttacker].statStages[2];
+            //            gBattleMons[gBattlerAttacker].statStages[2] = gBattleMons[gBattlerAttacker].statStages[3];
+            //            gBattleMons[gBattlerAttacker].statStages[3] = gBattleMons[gBattlerAttacker].statStages[4];
+            //            gBattleMons[gBattlerAttacker].statStages[4] = gBattleMons[gBattlerAttacker].statStages[5];
+            //            gBattleMons[gBattlerAttacker].statStages[5] = gBattleMons[gBattlerAttacker].statStages[6];
+            //            gBattleMons[gBattlerAttacker].statStages[6] = gBattleMons[gBattlerAttacker].statStages[7];
+            //            gBattleMons[gBattlerAttacker].statStages[7] = gBattleMons[gBattlerAttacker].statStages[8];
+                    gBattleMons[gBattlerAttacker].ability = ABILITY_NEUROFORCE;
+                    gBattleMons[gBattlerAttacker].type1 = TYPE_PSYCHIC;
+                    gBattleMons[gBattlerAttacker].type2 = TYPE_DRAGON;
+                    gBattleMons[gBattlerAttacker].type3 = TYPE_MYSTERY;
+                    
+                    VarSet(VAR_UNUSED_0x40F8, SPECIES_NECROZMA_ULTRA);
+                    gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_NEUROFORCE;
+                    break;
+                case 1:
+                    speciesBuffer = SPECIES_SHAYMIN_SKY;
+                    PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
+
+            //      battleMonAttacker = (u8 *)(&gBattleMons[gBattlerAttacker]);
+            //      battleMonTarget = (u8 *)(&gBattleMons[gBattlerTarget]);
+
+                    gBattleMons[gBattlerAttacker].species = SPECIES_SHAYMIN_SKY;
+                    gBattleMons[gBattlerAttacker].attack = 242;
+                    gBattleMons[gBattlerAttacker].defense = 186;
+                    gBattleMons[gBattlerAttacker].speed = 353;
+                    gBattleMons[gBattlerAttacker].spAttack = 339;
+                    gBattleMons[gBattlerAttacker].spDefense = 186;
+                    gBattleMons[gBattlerAttacker].moves[0] = MOVE_AIR_SLASH;
+                    gBattleMons[gBattlerAttacker].moves[1] = MOVE_NASTY_PLOT;
+                    gBattleMons[gBattlerAttacker].moves[2] = MOVE_SEED_FLARE;
+                    gBattleMons[gBattlerAttacker].moves[3] = MOVE_EARTH_POWER;
+            //            gBattleMons[gBattlerAttacker].hpIV = gBattleMons[gBattlerAttacker].hpIV;
+            //            gBattleMons[gBattlerAttacker].attackIV = gBattleMons[gBattlerAttacker].attackIV;
+            //            gBattleMons[gBattlerAttacker].defenseIV = gBattleMons[gBattlerAttacker].defenseIV;
+            //            gBattleMons[gBattlerAttacker].speedIV = gBattleMons[gBattlerAttacker].speedIV;
+            //            gBattleMons[gBattlerAttacker].spAttackIV = gBattleMons[gBattlerAttacker].spAttackIV;
+            //            gBattleMons[gBattlerAttacker].spDefenseIV = gBattleMons[gBattlerAttacker].spDefenseIV;
+            //            gBattleMons[gBattlerAttacker].abilityNum = gBattleMons[gBattlerAttacker].abilityNum;
+            //            gBattleMons[gBattlerAttacker].statStages[0] = gBattleMons[gBattlerAttacker].statStages[1];
+            //            gBattleMons[gBattlerAttacker].statStages[1] = gBattleMons[gBattlerAttacker].statStages[2];
+            //            gBattleMons[gBattlerAttacker].statStages[2] = gBattleMons[gBattlerAttacker].statStages[3];
+            //            gBattleMons[gBattlerAttacker].statStages[3] = gBattleMons[gBattlerAttacker].statStages[4];
+            //            gBattleMons[gBattlerAttacker].statStages[4] = gBattleMons[gBattlerAttacker].statStages[5];
+            //            gBattleMons[gBattlerAttacker].statStages[5] = gBattleMons[gBattlerAttacker].statStages[6];
+            //            gBattleMons[gBattlerAttacker].statStages[6] = gBattleMons[gBattlerAttacker].statStages[7];
+            //            gBattleMons[gBattlerAttacker].statStages[7] = gBattleMons[gBattlerAttacker].statStages[8];
+                    gBattleMons[gBattlerAttacker].ability = ABILITY_SERENE_GRACE;
+                    gBattleMons[gBattlerAttacker].type1 = TYPE_GRASS;
+                    gBattleMons[gBattlerAttacker].type2 = TYPE_FLYING;
+                    gBattleMons[gBattlerAttacker].type3 = TYPE_MYSTERY;
+                    
+                    VarSet(VAR_UNUSED_0x40F8, SPECIES_SHAYMIN_SKY);
+                    gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_SERENE_GRACE;
+                    break;
+                default:
+                    speciesBuffer = SPECIES_MAGEARNA_ORIGINAL_COLOR;
+                    PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
+
+            //      battleMonAttacker = (u8 *)(&gBattleMons[gBattlerAttacker]);
+            //      battleMonTarget = (u8 *)(&gBattleMons[gBattlerTarget]);
+
+                    gBattleMons[gBattlerAttacker].species = SPECIES_MAGEARNA_ORIGINAL_COLOR;
+                    gBattleMons[gBattlerAttacker].attack = 226;
+                    gBattleMons[gBattlerAttacker].defense = 266;
+                    gBattleMons[gBattlerAttacker].speed = 135;
+                    gBattleMons[gBattlerAttacker].spAttack = 359;
+                    gBattleMons[gBattlerAttacker].spDefense = 329;
+                    gBattleMons[gBattlerAttacker].moves[0] = MOVE_FLASH_CANNON;
+                    gBattleMons[gBattlerAttacker].moves[1] = MOVE_TRICK_ROOM;
+                    gBattleMons[gBattlerAttacker].moves[2] = MOVE_AURA_SPHERE;
+                    gBattleMons[gBattlerAttacker].moves[3] = MOVE_PSYSHOCK;
+            //            gBattleMons[gBattlerAttacker].hpIV = gBattleMons[gBattlerAttacker].hpIV;
+            //            gBattleMons[gBattlerAttacker].attackIV = gBattleMons[gBattlerAttacker].attackIV;
+            //            gBattleMons[gBattlerAttacker].defenseIV = gBattleMons[gBattlerAttacker].defenseIV;
+            //            gBattleMons[gBattlerAttacker].speedIV = gBattleMons[gBattlerAttacker].speedIV;
+            //            gBattleMons[gBattlerAttacker].spAttackIV = gBattleMons[gBattlerAttacker].spAttackIV;
+            //            gBattleMons[gBattlerAttacker].spDefenseIV = gBattleMons[gBattlerAttacker].spDefenseIV;
+            //            gBattleMons[gBattlerAttacker].abilityNum = gBattleMons[gBattlerAttacker].abilityNum;
+            //            gBattleMons[gBattlerAttacker].statStages[0] = gBattleMons[gBattlerAttacker].statStages[1];
+            //            gBattleMons[gBattlerAttacker].statStages[1] = gBattleMons[gBattlerAttacker].statStages[2];
+            //            gBattleMons[gBattlerAttacker].statStages[2] = gBattleMons[gBattlerAttacker].statStages[3];
+            //            gBattleMons[gBattlerAttacker].statStages[3] = gBattleMons[gBattlerAttacker].statStages[4];
+            //            gBattleMons[gBattlerAttacker].statStages[4] = gBattleMons[gBattlerAttacker].statStages[5];
+            //            gBattleMons[gBattlerAttacker].statStages[5] = gBattleMons[gBattlerAttacker].statStages[6];
+            //            gBattleMons[gBattlerAttacker].statStages[6] = gBattleMons[gBattlerAttacker].statStages[7];
+            //            gBattleMons[gBattlerAttacker].statStages[7] = gBattleMons[gBattlerAttacker].statStages[8];
+                    gBattleMons[gBattlerAttacker].ability = ABILITY_SOUL_HEART;
+                    gBattleMons[gBattlerAttacker].type1 = TYPE_STEEL;
+                    gBattleMons[gBattlerAttacker].type2 = TYPE_FAIRY;
+                    gBattleMons[gBattlerAttacker].type3 = TYPE_MYSTERY;
+                    
+                    VarSet(VAR_UNUSED_0x40F8, SPECIES_MAGEARNA_ORIGINAL_COLOR);
+                    gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_SOUL_HEART;
+                    break;
+            }
+
+
+            for (i = 0; i < MAX_MON_MOVES; i++)
+            {
+                if (gMovesInfo[gBattleMons[gBattlerAttacker].moves[i]].pp < 10)
+                    gBattleMons[gBattlerAttacker].pp[i] = gMovesInfo[gBattleMons[gBattlerAttacker].moves[i]].pp;
+                else
+                    gBattleMons[gBattlerAttacker].pp[i] = 10;
+            }
+
+            // update AI knowledge
+            RecordAllMoves(gBattlerAttacker);
+            RecordAbilityBattle(gBattlerAttacker, gBattleMons[gBattlerAttacker].ability);
+
+            BtlController_EmitResetActionMoveSelection(gBattlerAttacker, BUFFER_A, RESET_MOVE_SELECTION);
+            MarkBattlerForControllerExec(gBattlerAttacker);
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORMED;
         }
-
-        // update AI knowledge
-        RecordAllMoves(gBattlerAttacker);
-        RecordAbilityBattle(gBattlerAttacker, gBattleMons[gBattlerAttacker].ability);
-
-        BtlController_EmitResetActionMoveSelection(gBattlerAttacker, BUFFER_A, RESET_MOVE_SELECTION);
-        MarkBattlerForControllerExec(gBattlerAttacker);
-        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORMED;
     }
 }
 

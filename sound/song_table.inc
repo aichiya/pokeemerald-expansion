@@ -1373,6 +1373,8 @@ gSongTable::
 	song mus_key_clannad_tokino, 0, 0
 	song mus_sny_harehareyukai, 0, 0
 	song mus_ty_the_level, 0, 0
+	song mus_th_tsuki_ni_murakumo, 0, 0
+	song mus_gs2_vs_doom_dragon, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -706,15 +706,21 @@
 #define STRINGID_BIZARREARENACREATED                  704
 #define STRINGID_BIZARREAREACREATED                   705
 #define STRINGID_TIDYINGUPCOMPLETE                    706
+#define STRINGID_PKMNTERASTALLIZEDINTO                707
+#define STRINGID_BOOSTERENERGYACTIVATES               708
+#define STRINGID_FOGCREPTUP                           709
+#define STRINGID_FOGISDEEP                            710
+#define STRINGID_FOGLIFTED                            711
+#define STRINGID_PKMNMADESHELLGLEAM                   712
 
-#define STRINGID_FANTASYBREAKERENTERS                 707
-#define STRINGID_YORIGAMICURSE                        708
-#define STRINGID_PKMNRAISEDEVASION                    709
-#define STRINGID_TIMEJACKERENTERS                     710
-#define STRINGID_LEECHSEEDHEALSABILITYPUREWHITE       711
-#define STRINGID_PKMNFLUFFIEDINTO                     712
+#define STRINGID_FANTASYBREAKERENTERS                 713
+#define STRINGID_YORIGAMICURSE                        714
+#define STRINGID_PKMNRAISEDEVASION                    715
+#define STRINGID_TIMEJACKERENTERS                     716
+#define STRINGID_LEECHSEEDHEALSABILITYPUREWHITE       717
+#define STRINGID_PKMNFLUFFIEDINTO                     718
 
-#define BATTLESTRINGS_COUNT                           713
+#define BATTLESTRINGS_COUNT                           719
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
@@ -766,6 +772,17 @@
 #define B_MSG_STARTED_SUNLIGHT  4
 #define B_MSG_STARTED_HAIL      5
 #define B_MSG_STARTED_SNOW      6
+#define B_MSG_STARTED_FOG       7
+
+// gWeatherEndsStringIds
+#define B_MSG_WEATHER_END_RAIN         0
+#define B_MSG_WEATHER_END_SANDSTORM    1
+#define B_MSG_WEATHER_END_SUN          2
+#define B_MSG_WEATHER_END_HAIL         3
+#define B_MSG_WEATHER_END_STRONG_WINDS 4
+#define B_MSG_WEATHER_END_SNOW         5
+#define B_MSG_WEATHER_END_FOG          6
+#define B_MSG_WEATHER_END_COUNT        7
 
 // gRainContinuesStringIds
 #define B_MSG_RAIN_CONTINUES     0

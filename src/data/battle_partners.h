@@ -106,16 +106,16 @@
 
     [PARTNER_TRAINER2] =
     {
-        .trainerName = _("Renko"),
+        .trainerName = _("Marisa"),
         .trainerClass = TRAINER_CLASS_RIVAL,
-        .trainerPic = TRAINER_BACK_PIC_TH_RENKO_BIG,
+        .trainerPic = TRAINER_BACK_PIC_TH_MARISA,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
 		.partySize = 3,
 		.party = (const struct TrainerMon[])
         {
 			{
 				.species = SPECIES_MEW,
-				.lvl = 100,
+				.lvl = 77,
 				.nature = NATURE_TIMID,
 				.heldItem = ITEM_MEWNIUM_Z,
 				.ball = ITEM_CHERISH_BALL,
@@ -133,7 +133,7 @@
 			},
 			{
 				.species = SPECIES_SCIZOR,
-				.lvl = 100,
+				.lvl = 77,
 				.nature = NATURE_ADAMANT,
 				.heldItem = ITEM_LIFE_ORB,
 				.isShiny = TRUE,
@@ -149,7 +149,7 @@
 			},
 			{
 				.species = SPECIES_DIALGA,
-				.lvl = 100,
+				.lvl = 77,
 				.nature = NATURE_MODEST,
 				.heldItem = ITEM_WHITE_HERB,
 				.isShiny = TRUE,

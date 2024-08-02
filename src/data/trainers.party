@@ -16873,3 +16873,166 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_PLACEHOLDER_855 ===
+Name: Yuyuko
+Class: Rival
+Pic: TRAINER_PIC_93
+Gender: Female
+Music: Female
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+SPECIES_MEGANIUM @ ITEM_LIGHT_CLAY
+Level: 77
+Calm Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpD / 6 Def
+- MOVE_LIGHT_SCREEN
+- MOVE_REFLECT
+- MOVE_LEECH_SEED
+- MOVE_GIGA_DRAIN
+
+SPECIES_TOGEKISS @ ITEM_CHOICE_SCARF
+Level: 77
+Timid Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+- MOVE_AIR_SLASH
+
+SPECIES_GARDEVOIR @ ITEM_GARDEVOIRITE
+Level: 77
+Timid Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Shiny: Yes
+- MOVE_THUNDERBOLT
+- MOVE_THUNDER_WAVE
+- MOVE_MOONBLAST
+- MOVE_PSYCHIC
+
+=== TRAINER_PLACEHOLDER_856 ===
+Name: Yukari
+Class: Rival
+Pic: TRAINER_PIC_94
+Gender: Female
+Music: Female
+Items: Full Restore / Full Restore / Full Restore / Full Restore
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+SPECIES_DRAGONITE @ ITEM_LIFE_ORB
+Level: 77
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+- MOVE_EXTREME_SPEED
+- MOVE_DRAGON_DANCE
+- MOVE_TAILWIND
+- MOVE_BRICK_BREAK
+
+SPECIES_TYRANITAR @ ITEM_CHOPLE_BERRY
+Level: 77
+Adamant Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+- MOVE_ROCK_SLIDE
+- MOVE_DRAGON_DANCE
+- MOVE_CRUNCH
+- MOVE_EARTHQUAKE
+
+SPECIES_ANNIHILAPE @ ITEM_GHOSTIUM_Z
+Level: 77
+Timid Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+Shiny: Yes
+- MOVE_RAGE_FIST
+- MOVE_DRAIN_PUNCH
+- MOVE_CONFUSE_RAY
+- MOVE_BULK_UP
+
+=== TRAINER_PLACEHOLDER_857 ===
+Name: MAY
+Class: RS Protag
+Pic: RS May
+Gender: Female
+Music: Male
+Double Battle: No
+
+Kyogre
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_PLACEHOLDER_858 ===
+Name: MAY
+Class: RS Protag
+Pic: RS May
+Gender: Female
+Music: Male
+Double Battle: No
+
+Kyogre
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_PLACEHOLDER_859 ===
+Name: MAY
+Class: RS Protag
+Pic: RS May
+Gender: Female
+Music: Male
+Double Battle: No
+
+Kyogre
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_PLACEHOLDER_860 ===
+Name: MAY
+Class: RS Protag
+Pic: RS May
+Gender: Female
+Music: Male
+Double Battle: No
+
+Kyogre
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_PLACEHOLDER_861 ===
+Name: MAY
+Class: RS Protag
+Pic: RS May
+Gender: Female
+Music: Male
+Double Battle: No
+
+Kyogre
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_PLACEHOLDER_862 ===
+Name: MAY
+Class: RS Protag
+Pic: RS May
+Gender: Female
+Music: Male
+Double Battle: No
+
+Kyogre
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_PLACEHOLDER_863 ===
+Name: MAY
+Class: RS Protag
+Pic: RS May
+Gender: Female
+Music: Male
+Double Battle: No
+
+Kyogre
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe

@@ -2656,7 +2656,6 @@ u8 DoBattlerEndTurnEffects(void)
             if ((gBattleMons[battler].status1 & STATUS1_FROSTBITE)
                 && IsBattlerAlive(battler)
                 && ability != ABILITY_PURE_WHITE)
-                && IsBattlerAlive(battler))
             {
                 MAGIC_GUARD_CHECK;
                 gBattleMoveDamage = GetNonDynamaxMaxHP(battler) / (B_BURN_DAMAGE >= GEN_7 ? 16 : 8);
@@ -5858,7 +5857,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 }
             }
             break;
-        POISON_POINT:
         case ABILITY_POISON_POINT:
             if (B_ABILITY_TRIGGER_CHANCE >= GEN_4 ? RandomPercentage(RNG_POISON_POINT, 30) : RandomChance(RNG_POISON_POINT, 1, 3))
             {

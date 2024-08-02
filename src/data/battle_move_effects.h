@@ -2260,7 +2260,7 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
     {
         .battleScript = BattleScript_EffectUltraInstinct,
         .battleTvScore = 0, // TODO: Assign points
-	}
+	},
 
     [EFFECT_A_TRANCE] =
     {

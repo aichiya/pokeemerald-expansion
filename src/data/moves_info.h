@@ -20684,6 +20684,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .priority = 3,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_RESET_STATS },
+        .battleAnimScript = Move_ULTRA_INSTINCT,
     },
 
     [MOVE_A_TRANCE] =
@@ -20712,7 +20713,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
-        .contestComboMoves = {0}
+        .contestComboMoves = {0},
+        .battleAnimScript = Move_A_TRANCE,
     },
 
     [MOVE_TWIN_SPARK] =
@@ -20735,6 +20737,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             .self = TRUE,
             .chance = 100,
         }),
+        .battleAnimScript = Move_TWIN_SPARK,
     },
 
     [MOVE_DIMENSION_KICK] =
@@ -20761,6 +20764,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .ignoresTargetAbility = TRUE,
         .ignoresProtect = TRUE,
         .ignoresSubstitute = TRUE,
+        .battleAnimScript = Move_DIMENSION_KICK,
     },
 
     [MOVE_DIMENSION_SHOT] =
@@ -20787,6 +20791,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .ignoresTargetAbility = TRUE,
         .ignoresProtect = TRUE,
         .ignoresSubstitute = TRUE,
+        .battleAnimScript = Move_DIMENSION_SHOT,
     },
 
     [MOVE_FLUFFICATION] =
@@ -20816,7 +20821,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestEffect = CONTEST_EFFECT_REPETITION_NOT_BORING,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
-        .contestComboMoves = {0}
+        .contestComboMoves = {0},
+        .battleAnimScript = Move_FLUFFICATION,
     },
 
     // Z-Moves

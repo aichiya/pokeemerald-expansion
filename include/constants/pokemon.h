@@ -35,6 +35,7 @@
 #define TYPE_NEW_HEART        TYPE_BUG
 #define TYPE_NEW_NETHER       TYPE_GHOST
 #define TYPE_NEW_STEEL        TYPE_STEEL
+#define TYPE_NEW_MYSTERY      TYPE_MYSTERY
 #define TYPE_NEW_FIRE         TYPE_FIRE
 #define TYPE_NEW_WATER        TYPE_WATER
 #define TYPE_NEW_NATURE       TYPE_GRASS
@@ -44,7 +45,9 @@
 #define TYPE_NEW_FAITH        TYPE_DRAGON
 #define TYPE_NEW_SHINTO       TYPE_DRAGON
 #define TYPE_NEW_DIVINE       TYPE_DRAGON
+#define TYPE_NEW_DARK         TYPE_DARK
 #define TYPE_NEW_ELECTRIC     TYPE_FAIRY
+#define TYPE_NEW_STELLAR      TYPE_STELLAR
 
 // Pokémon egg groups
 #define EGG_GROUP_NONE                0

@@ -41,3 +41,49 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 - Protect
 - Solar Beam
 - Dragon Claw
+
+=== PARTNER_TRAINER2 ===
+Name: Renko
+Class: TRAINER_CLASS_0xA0
+Pic: TRAINER_BACK_PIC_TH_MARISA
+Gender: Female
+Music: Female
+
+MiyuCat (SPECIES_MEW) @ ITEM_BRIGHT_POWDER
+Modest Nature
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Shiny: Yes
+Dynamax Level: 10
+Tera Type: TYPE_NEW_DIVINE
+- MOVE_DIMENSION_KICK
+- MOVE_DIMENSION_SHOT
+- MOVE_FLUFFICATION
+- Move_TWIN_SPARK
+
+SPECIES_CELEBI @ ITEM_BRIGHT_POWDER
+Modest Nature
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Shiny: Yes
+Dynamax Level: 10
+Tera Type: TYPE_NEW_DIVINE
+- MOVE_DIMENSION_KICK
+- MOVE_DIMENSION_SHOT
+- MOVE_FLUFFICATION
+- Move_TWIN_SPARK
+
+SPECIES_JIRACHI @ ITEM_BRIGHT_POWDER
+Modest Nature
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 SpA / 252 Spe
+Shiny: Yes
+Dynamax Level: 10
+Tera Type: TYPE_NEW_DIVINE
+- MOVE_DIMENSION_KICK
+- MOVE_DIMENSION_SHOT
+- MOVE_FLUFFICATION
+- Move_TWIN_SPARK

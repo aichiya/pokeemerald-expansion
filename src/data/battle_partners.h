@@ -103,3 +103,65 @@
             },
         },
     },
+
+    [PARTNER_TRAINER2] =
+    {
+        .trainerName = _("Renko"),
+        .trainerClass = TRAINER_CLASS_RIVAL,
+        .trainerPic = TRAINER_BACK_PIC_TH_RENKO_BIG,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+		.partySize = 3,
+		.party = (const struct TrainerMon[])
+        {
+			{
+				.species = SPECIES_MEW,
+				.lvl = 100,
+				.nature = NATURE_TIMID,
+				.heldItem = ITEM_MEWNIUM_Z,
+				.ball = ITEM_CHERISH_BALL,
+				.isShiny = TRUE,
+				.iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+				.ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
+				.moves = {
+					MOVE_LIGHT_SCREEN,
+					MOVE_PSYCHIC,
+					MOVE_REFLECT,
+					MOVE_HELPING_HAND,
+				},
+				.dynamaxLevel = 10,
+				.shouldUseDynamax = TRUE,
+			},
+			{
+				.species = SPECIES_SCIZOR,
+				.lvl = 100,
+				.nature = NATURE_ADAMANT,
+				.heldItem = ITEM_LIFE_ORB,
+				.isShiny = TRUE,
+				.ability = 3,
+				.iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+				.ev = TRAINER_PARTY_EVS(252, 252, 6, 0, 0, 0),
+				.moves = {
+					MOVE_BULLET_PUNCH,
+					MOVE_AERIAL_ACE,
+					MOVE_BUG_BITE,
+					MOVE_SWORDS_DANCE,
+				},
+			},
+			{
+				.species = SPECIES_DIALGA,
+				.lvl = 100,
+				.nature = NATURE_MODEST,
+				.heldItem = ITEM_WHITE_HERB,
+				.isShiny = TRUE,
+				.iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+				.ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
+				.moves = {
+					MOVE_THUNDERBOLT,
+					MOVE_FLASH_CANNON,
+					MOVE_DRACO_METEOR,
+					MOVE_EARTH_POWER,
+				},
+			},
+		},
+    },
+	

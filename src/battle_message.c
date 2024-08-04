@@ -856,6 +856,7 @@ static const u8 sText_PkmnRaisedEvasion[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s
 static const u8 sText_TimeJackerEnters[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} is making the time wierd!");
 static const u8 sText_LeechSeedHealsAbilityPureWhite[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} got healed from\nthe Leech Seed due to {B_ATK_ABILITY}!");
 static const u8 sText_FluffiedInto[] = _("{B_DEF_NAME_WITH_PREFIX} got fluffied and\ntransformed into {B_BUFF1}!");
+static const u8 sText_FoesPartyGotWipedOut[] = _("Opposing party got wiped out.");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -1567,6 +1568,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_TIMEJACKERENTERS - BATTLESTRINGS_TABLE_START] = sText_TimeJackerEnters,
     [STRINGID_LEECHSEEDHEALSABILITYPUREWHITE - BATTLESTRINGS_TABLE_START] = sText_LeechSeedHealsAbilityPureWhite,
     [STRINGID_PKMNFLUFFIEDINTO - BATTLESTRINGS_TABLE_START] = sText_FluffiedInto,
+    [STRINGID_PARTYGOTWIPEDOUT - BATTLESTRINGS_TABLE_START] = sText_FoesPartyGotWipedOut,
 };
 
 const u16 gTrainerUsedItemStringIds[] =

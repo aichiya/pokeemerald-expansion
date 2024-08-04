@@ -16896,6 +16896,7 @@ EVs: 252 HP / 252 SpD / 6 Def
 
 SPECIES_TOGEKISS @ ITEM_CHOICE_SCARF
 Level: 77
+Ability: Serene Grace
 Timid Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 6 HP / 252 SpA / 252 Spe
@@ -16944,7 +16945,7 @@ EVs: 6 HP / 252 Atk / 252 Spe
 
 SPECIES_ANNIHILAPE @ ITEM_GHOSTIUM_Z
 Level: 77
-Timid Nature
+Adamant Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 6 HP / 252 Atk / 252 Spe
 Shiny: Yes

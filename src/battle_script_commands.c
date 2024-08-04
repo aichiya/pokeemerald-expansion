@@ -570,7 +570,7 @@ static void Cmd_switchoutabilities(void);
 static void Cmd_jumpifhasnohp(void);
 static void Cmd_jumpifnotcurrentmoveargtype(void);
 static void Cmd_pickup(void);
-static void Cmd_unused3(void);
+static void Cmd_tryreducefoespartyhptozero(void); // Cmd_unused3(void);
 static void Cmd_unused4(void);
 static void Cmd_settypebasedhalvers(void);
 static void Cmd_jumpifsubstituteblocks(void);
@@ -829,7 +829,7 @@ void (* const gBattleScriptingCommandsTable[])(void) =
     Cmd_jumpifhasnohp,                           //0xE3
     Cmd_jumpifnotcurrentmoveargtype,             //0xE4
     Cmd_pickup,                                  //0xE5
-    Cmd_unused3,                                 //0xE6
+    Cmd_tryreducefoespartyhptozero,                  // Cmd_unused3,                                 //0xE6
     Cmd_unused4,                                 //0xE7
     Cmd_settypebasedhalvers,                     //0xE8
     Cmd_jumpifsubstituteblocks,                  //0xE9
@@ -15071,8 +15071,37 @@ static void Cmd_pickup(void)
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
-static void Cmd_unused3(void)
+static void Cmd_tryreducefoespartyhptozero(void)
 {
+    CMD_ARGS();
+
+    u16 setHP;
+
+    if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
+    {
+        setHP = 0;
+        SetMonData(&gEnemyParty[0], MON_DATA_HP, &setHP);
+        SetMonData(&gEnemyParty[1], MON_DATA_HP, &setHP);
+        SetMonData(&gEnemyParty[2], MON_DATA_HP, &setHP);
+        SetMonData(&gEnemyParty[3], MON_DATA_HP, &setHP);
+        SetMonData(&gEnemyParty[4], MON_DATA_HP, &setHP);
+        SetMonData(&gEnemyParty[5], MON_DATA_HP, &setHP);
+        gBattleMons[gBattlerTarget].hp = 0;
+    }
+    else
+    {
+        setHP = 0;
+        SetMonData(&gPlayerParty[0], MON_DATA_HP, &setHP);
+        SetMonData(&gPlayerParty[1], MON_DATA_HP, &setHP);
+        SetMonData(&gPlayerParty[2], MON_DATA_HP, &setHP);
+        SetMonData(&gPlayerParty[3], MON_DATA_HP, &setHP);
+        SetMonData(&gPlayerParty[4], MON_DATA_HP, &setHP);
+        SetMonData(&gPlayerParty[5], MON_DATA_HP, &setHP);
+        gBattleMons[gBattlerTarget].hp = 0;
+    }
+    BtlController_EmitSetMonData(gBattlerTarget, BUFFER_A, REQUEST_HP_BATTLE, 0, sizeof(gBattleMons[gBattlerTarget].hp), &gBattleMons[gBattlerTarget].hp);
+    MarkBattlerForControllerExec(gBattlerTarget);
+    gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
 static void Cmd_unused4(void)

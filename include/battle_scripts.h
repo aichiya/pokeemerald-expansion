@@ -852,5 +852,6 @@ extern const u8 BattleScript_DamageToQuarterTargetHP[];
 extern const u8 BattleScript_EffectUltraInstinct[];
 extern const u8 BattleScript_EffectATrance[];
 extern const u8 BattleScript_EffectFluffication[];
+extern const u8 BattleScript_EffectWipesOutFoesParty[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

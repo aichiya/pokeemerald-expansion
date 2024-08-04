@@ -20,6 +20,17 @@
 
 	.section script_data, "aw", %progbits
 
+BattleScript_EffectWipesOutFoesParty::
+    attackstring
+	ppreduce
+	attackanimation
+	waitanimation
+	tryreducefoespartyhptozero
+	tryfaintmon BS_TARGET
+	printstring STRINGID_PARTYGOTWIPEDOUT
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectFluffication::
 	attackcanceler
 	attackstring

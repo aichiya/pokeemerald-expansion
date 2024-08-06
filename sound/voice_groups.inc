@@ -209,9 +209,11 @@
 .include "sound/voicegroups/voicegroup202.inc" @ Custom HGSS Base
 .include "sound/voicegroups/voicegroup203.inc" @ DP voicegroup, based on copy of HGSS instrument
 .include "sound/voicegroups/voicegroup204.inc" @ [Main] Custom 4
+.include "sound/voicegroups/voicegroup205.inc" @ [Main] Custom 5
 
 .include "sound/voicegroups/voicegroup210.inc" @ [Main] THPPRF custom
 .include "sound/voicegroups/voicegroup211.inc" @ [Main] THPPZGS custom
+
 
 @ After a custom voicegroup hits voicegroup215, please jump to voicegroup500+
 
@@ -302,9 +304,26 @@
 .include "sound/voicegroups/voicegroup528.inc"
 .include "sound/voicegroups/voicegroup529.inc"
 .include "sound/voicegroups/voicegroup530.inc"
-@ --Start PMD GBA Voicegroups--
+@ --End PMD GBA Voicegroups--
 
 .include "sound/voicegroups/voicegroup601.inc" @ [Main] GBA Golden Sun
 .include "sound/voicegroups/voicegroup602.inc" @ GBA Golden Sun Drum
 
+.include "sound/voicegroups/voicegroup701.inc" @ Modified voicegroup191 GBA Drum 1
+.include "sound/voicegroups/voicegroup702.inc" @ Modified voicegroup192 GBA Drum 2
+.include "sound/voicegroups/voicegroup703.inc" @ Modified voicegroup193 GBA Drum 3
+.include "sound/voicegroups/voicegroup704.inc" @ Modified voicegroup194 
+.include "sound/voicegroups/voicegroup705.inc" @ Modified voicegroup195
+.include "sound/voicegroups/voicegroup706.inc" @ Modified voicegroup196
+.include "sound/voicegroups/voicegroup707.inc" @ Modified voicegroup197
+.include "sound/voicegroups/voicegroup708.inc" @ Modified voicegroup198
+.include "sound/voicegroups/voicegroup709.inc" @ Modified voicegroup199
+
+.include "sound/voicegroups/voicegroup710.inc" @ Modified voicegroup191 HGSS Drum
+.include "sound/voicegroups/voicegroup711.inc" @ Modified voicegroup192 HGSS Taiko Drum
+.include "sound/voicegroups/voicegroup712.inc" @ Modified voicegroup193 HGSS Taiko Drum 2
+.include "sound/voicegroups/voicegroup713.inc" @ Modified HGSS Music Box Multi Sample
+
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
+
+.include "sound/voicegroups/voicegroup999.inc" @ Test Instrument

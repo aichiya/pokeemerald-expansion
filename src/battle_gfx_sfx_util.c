@@ -1171,7 +1171,7 @@ void LoadAndCreateEnemyShadowSprites(void)
     u32 i;
 
     LoadCompressedSpriteSheet(&gSpriteSheet_EnemyShadow);
-    
+
     // initialize shadow sprite ids
     for (i = 0; i < gBattlersCount; i++)
     {
@@ -1180,7 +1180,7 @@ void LoadAndCreateEnemyShadowSprites(void)
 
     battler = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
     CreateEnemyShadowSprite(battler);
-    
+
     if (IsDoubleBattle())
     {
         battler = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);

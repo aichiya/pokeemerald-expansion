@@ -12680,9 +12680,9 @@ static void Cmd_transformdataexecutiondecade(void)
             gBattleMons[gBattlerTarget].moves[2] = MOVE_NONE;
             gBattleMons[gBattlerTarget].moves[3] = MOVE_NONE;
             gBattleMons[gBattlerTarget].ability = ABILITY_LIMBER;
-            gBattleMons[gBattlerTarget].type1 = TYPE_GRASS;
-            gBattleMons[gBattlerTarget].type2 = TYPE_ELECTRIC;
-            gBattleMons[gBattlerTarget].type3 = TYPE_MYSTERY;
+            gBattleMons[gBattlerTarget].types[0] = TYPE_GRASS;
+            gBattleMons[gBattlerTarget].types[1] = TYPE_ELECTRIC;
+            gBattleMons[gBattlerTarget].types[2] = TYPE_MYSTERY;
             gBattleStruct->overwrittenAbilities[gBattlerTarget] = ABILITY_LIMBER;
 
             for (i = 0; i < MAX_MON_MOVES; i++)
@@ -12747,9 +12747,9 @@ static void Cmd_transformdataexecutiondecade(void)
             //            gBattleMons[gBattlerAttacker].statStages[6] = gBattleMons[gBattlerAttacker].statStages[7];
             //            gBattleMons[gBattlerAttacker].statStages[7] = gBattleMons[gBattlerAttacker].statStages[8];
                     gBattleMons[gBattlerAttacker].ability = ABILITY_NEUROFORCE;
-                    gBattleMons[gBattlerAttacker].type1 = TYPE_PSYCHIC;
-                    gBattleMons[gBattlerAttacker].type2 = TYPE_DRAGON;
-                    gBattleMons[gBattlerAttacker].type3 = TYPE_MYSTERY;
+                    gBattleMons[gBattlerAttacker].types[0] = TYPE_PSYCHIC;
+                    gBattleMons[gBattlerAttacker].types[1] = TYPE_DRAGON;
+                    gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
                     
                     VarSet(VAR_UNUSED_0x40F8, SPECIES_NECROZMA_ULTRA);
                     gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_NEUROFORCE;
@@ -12787,9 +12787,9 @@ static void Cmd_transformdataexecutiondecade(void)
             //            gBattleMons[gBattlerAttacker].statStages[6] = gBattleMons[gBattlerAttacker].statStages[7];
             //            gBattleMons[gBattlerAttacker].statStages[7] = gBattleMons[gBattlerAttacker].statStages[8];
                     gBattleMons[gBattlerAttacker].ability = ABILITY_SERENE_GRACE;
-                    gBattleMons[gBattlerAttacker].type1 = TYPE_GRASS;
-                    gBattleMons[gBattlerAttacker].type2 = TYPE_FLYING;
-                    gBattleMons[gBattlerAttacker].type3 = TYPE_MYSTERY;
+                    gBattleMons[gBattlerAttacker].types[0] = TYPE_GRASS;
+                    gBattleMons[gBattlerAttacker].types[1] = TYPE_FLYING;
+                    gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
                     
                     VarSet(VAR_UNUSED_0x40F8, SPECIES_SHAYMIN_SKY);
                     gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_SERENE_GRACE;
@@ -12827,9 +12827,9 @@ static void Cmd_transformdataexecutiondecade(void)
             //            gBattleMons[gBattlerAttacker].statStages[6] = gBattleMons[gBattlerAttacker].statStages[7];
             //            gBattleMons[gBattlerAttacker].statStages[7] = gBattleMons[gBattlerAttacker].statStages[8];
                     gBattleMons[gBattlerAttacker].ability = ABILITY_SOUL_HEART;
-                    gBattleMons[gBattlerAttacker].type1 = TYPE_STEEL;
-                    gBattleMons[gBattlerAttacker].type2 = TYPE_FAIRY;
-                    gBattleMons[gBattlerAttacker].type3 = TYPE_MYSTERY;
+                    gBattleMons[gBattlerAttacker].types[0] = TYPE_STEEL;
+                    gBattleMons[gBattlerAttacker].types[1] = TYPE_FAIRY;
+                    gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
                     
                     VarSet(VAR_UNUSED_0x40F8, SPECIES_MAGEARNA_ORIGINAL_COLOR);
                     gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_SOUL_HEART;

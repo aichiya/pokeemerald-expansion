@@ -1446,7 +1446,9 @@
 #define INS_TEST_PLACEHOLDER_7 1476
 #define INS_TEST_PLACEHOLDER_8 1477
 
-#define END_MUS 					INS_TEST_PLACEHOLDER_8
+#define MUS_TH_WITHERED_FANTASY 1478
+
+#define END_MUS 					MUS_TH_WITHERED_FANTASY
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

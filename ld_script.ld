@@ -2129,6 +2129,7 @@ SECTIONS {
         sound/songs/ins_test_placeholder_6.o(.rodata);
         sound/songs/ins_test_placeholder_7.o(.rodata);
         sound/songs/ins_test_placeholder_8.o(.rodata);
+        sound/songs/mus_th_withered_fantasy.o(.rodata);
     } > ROM =0
 
     lib_rodata :

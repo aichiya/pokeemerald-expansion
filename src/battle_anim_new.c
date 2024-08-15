@@ -7343,7 +7343,7 @@ const struct SpriteTemplate gDimensionShot2Template =
     .images = NULL,
     .affineAnims = sAffineAnims_DimensionShotWall,
     .callback = AnimDimensionShotWalls,
-}
+};
 
 // Make It Rain
 const struct SpriteTemplate gMakingItRainTemplate =

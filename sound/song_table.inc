@@ -1480,6 +1480,7 @@ gSongTable::
 	song ins_test_placeholder_7, 0, 0
 	song ins_test_placeholder_8, 0, 0
 	song mus_th_withered_fantasy, 0, 0
+	song mus_th_iro_wa_nioedo, 0, 0
 
 	.align 2
 dummy_song_header:

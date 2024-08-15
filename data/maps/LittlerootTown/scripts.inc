@@ -449,19 +449,21 @@ LittlerootTown_EventScript_TownSign::
 @	givemon SPECIES_MEW, 100, ITEM_THROAT_SPRAY, ITEM_LOVE_BALL, NATURE_MODEST, 2, 1, 4, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_MOONBLAST, MOVE_FAKE_TEARS, MOVE_HYPER_VOICE, MOVE_PROTECT, 1, 1, TYPE_STEEL
 @	trainerbattle TRAINER_BATTLE_SINGLE, 231, 0, LittlerootTown_Text_TownSign, LittlerootTown_Text_TownSign
 	setflag FLAG_FANTASY_BREAKER_CHEAT
-	setflag FLAG_USE_CURRENT_BGM_FOR_BATTLE
+@	setflag FLAG_USE_CURRENT_BGM_FOR_BATTLE
 	setflag FLAG_FORCE_SHINY
-	playbgm MUS_THPPRF_BORDEROFLIFE, TRUE
+@	playbgm MUS_TH_IRO_WA_NIOEDO, TRUE
 @	setwildbattle SPECIES_MEW, 100, ITEM_SITRUS_BERRY
 @	dowildbattle
-
+    setflag FLAG_CUSTOM_BGM_BATTLE
+	setvar VAR_TEMP_F, MUS_TH_IRO_WA_NIOEDO
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_PLACEHOLDER_856, 0, LittlerootTown_Text_TownSign
     delay 4
-	special SavePlayerParty
-	fadescreen FADE_TO_BLACK
-	special ChooseHalfPartyForBattle
-	waitstate
-	goto_if_ne VAR_RESULT, 0, LittlerootTown_EventScript_TownSign_DoMultiBattle
-	special LoadPlayerParty
+@	special SavePlayerParty
+@	fadescreen FADE_TO_BLACK
+@	special ChooseHalfPartyForBattle
+@	waitstate
+@	goto_if_ne VAR_RESULT, 0, LittlerootTown_EventScript_TownSign_DoMultiBattle
+@	special LoadPlayerParty
 	release
 	end
 

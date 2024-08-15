@@ -4,6 +4,7 @@
         .equ    mus_th_iro_wa_nioedo_pri, 0
         .equ    mus_th_iro_wa_nioedo_rev, 0
         .equ    mus_th_iro_wa_nioedo_key, 0
+        .equ    mus_th_iro_wa_nioedo_mvl, 127
 
         .section .rodata
         .global mus_th_iro_wa_nioedo
@@ -17,17 +18,17 @@ mus_th_iro_wa_nioedo_0:
         .byte   TEMPO , 132/2
         .byte           VOICE , 24
         .byte           BENDR , 12
-        .byte           VOL   , 120
+        .byte           VOL   , 120 * mus_th_iro_wa_nioedo_mvl/mxv
 @ 001   ----------------------------------------
 mus_th_iro_wa_nioedo_0_1:
-        .byte           N11   , An3 , v080
+        .byte           N11   , An3 , v100
         .byte   W12
         .byte                   Cn4
         .byte   W12
         .byte   PEND
 @ 002   ----------------------------------------
         .byte   TEMPO , 144/2
-        .byte           N56   , Dn4 , v080 , gtp3
+        .byte           N56   , Dn4 , v100 , gtp3
         .byte   W60
         .byte           N11   , Cn4
         .byte   W12
@@ -37,7 +38,7 @@ mus_th_iro_wa_nioedo_0_1:
         .byte   W12
 @ 003   ----------------------------------------
 mus_th_iro_wa_nioedo_0_3:
-        .byte           N44   , An3 , v080 , gtp3
+        .byte           N44   , An3 , v100 , gtp3
         .byte   W72
         .byte           N11
         .byte   W12
@@ -46,7 +47,7 @@ mus_th_iro_wa_nioedo_0_3:
         .byte   PEND
 @ 004   ----------------------------------------
 mus_th_iro_wa_nioedo_0_4:
-        .byte           N44   , Dn4 , v080 , gtp3
+        .byte           N44   , Dn4 , v100 , gtp3
         .byte   W48
         .byte           N11   , Fn4
         .byte   W12
@@ -59,7 +60,7 @@ mus_th_iro_wa_nioedo_0_4:
         .byte   PEND
 @ 005   ----------------------------------------
 mus_th_iro_wa_nioedo_0_5:
-        .byte           N44   , Dn4 , v080 , gtp3
+        .byte           N44   , Dn4 , v100 , gtp3
         .byte   W60
         .byte           N11
         .byte   W12
@@ -70,7 +71,7 @@ mus_th_iro_wa_nioedo_0_5:
         .byte   PEND
 @ 006   ----------------------------------------
 mus_th_iro_wa_nioedo_0_6:
-        .byte           N44   , Gn3 , v080 , gtp3
+        .byte           N44   , Gn3 , v100 , gtp3
         .byte   W60
         .byte           N11   , Dn4
         .byte   W12
@@ -81,7 +82,7 @@ mus_th_iro_wa_nioedo_0_6:
         .byte   PEND
 @ 007   ----------------------------------------
 mus_th_iro_wa_nioedo_0_7:
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W72
         .byte           N11   , Dn3
         .byte   W12
@@ -89,16 +90,16 @@ mus_th_iro_wa_nioedo_0_7:
         .byte   W12
         .byte   PEND
 @ 008   ----------------------------------------
-        .byte           N32   , Fn3 , v080 , gtp3
+        .byte           N32   , Fn3 , v100 , gtp3
         .byte   W36
         .byte           N11   , Gn3
         .byte   W12
-        .byte           N32   , En3 , v080 , gtp3
+        .byte           N32   , En3 , v100 , gtp3
         .byte   W36
         .byte           N11   , Dn3
         .byte   W12
 @ 009   ----------------------------------------
-        .byte           N92   , Dn3 , v080 , gtp3
+        .byte           N92   , Dn3 , v100 , gtp3
         .byte   W96
 @ 010   ----------------------------------------
         .byte   W96
@@ -121,7 +122,7 @@ mus_th_iro_wa_nioedo_0_LOOP:
         .byte   W96
 @ 019   ----------------------------------------
 mus_th_iro_wa_nioedo_0_19:
-        .byte           N32   , Dn3 , v080 , gtp3
+        .byte           N32   , Dn3 , v100 , gtp3
         .byte   W36
         .byte           N11
         .byte   W12
@@ -134,7 +135,7 @@ mus_th_iro_wa_nioedo_0_19:
         .byte   PEND
 @ 020   ----------------------------------------
 mus_th_iro_wa_nioedo_0_20:
-        .byte           N32   , En3 , v080 , gtp3
+        .byte           N32   , En3 , v100 , gtp3
         .byte   W36
         .byte           N11
         .byte   W12
@@ -146,19 +147,19 @@ mus_th_iro_wa_nioedo_0_20:
         .byte   W12
         .byte   PEND
 @ 021   ----------------------------------------
-        .byte           N92   , Dn3 , v080 , gtp3
+        .byte           N92   , Dn3 , v100 , gtp3
         .byte   W96
 @ 022   ----------------------------------------
 mus_th_iro_wa_nioedo_0_22:
         .byte   W48
-        .byte           N23   , Dn3 , v080
+        .byte           N23   , Dn3 , v100
         .byte   W24
         .byte                   En3
         .byte   W24
         .byte   PEND
 @ 023   ----------------------------------------
 mus_th_iro_wa_nioedo_0_23:
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W48
         .byte           N17
         .byte   W18
@@ -169,7 +170,7 @@ mus_th_iro_wa_nioedo_0_23:
         .byte   PEND
 @ 024   ----------------------------------------
 mus_th_iro_wa_nioedo_0_24:
-        .byte           N44   , An3 , v080 , gtp3
+        .byte           N44   , An3 , v100 , gtp3
         .byte   W48
         .byte           N17
         .byte   W18
@@ -180,7 +181,7 @@ mus_th_iro_wa_nioedo_0_24:
         .byte   PEND
 @ 025   ----------------------------------------
 mus_th_iro_wa_nioedo_0_25:
-        .byte           N23   , Cn4 , v080
+        .byte           N23   , Cn4 , v100
         .byte   W24
         .byte                   Bn3
         .byte   W24
@@ -191,16 +192,16 @@ mus_th_iro_wa_nioedo_0_25:
         .byte   PEND
 @ 026   ----------------------------------------
 mus_th_iro_wa_nioedo_0_26:
-        .byte           N32   , Dn4 , v080 , gtp3
+        .byte           N32   , Dn4 , v100 , gtp3
         .byte   W36
         .byte           N11
         .byte   W12
-        .byte           N44   , En4 , v080 , gtp3
+        .byte           N44   , En4 , v100 , gtp3
         .byte   W48
         .byte   PEND
 @ 027   ----------------------------------------
 mus_th_iro_wa_nioedo_0_27:
-        .byte           N17   , Dn4 , v080
+        .byte           N17   , Dn4 , v100
         .byte   W18
         .byte                   An3
         .byte   W18
@@ -215,7 +216,7 @@ mus_th_iro_wa_nioedo_0_27:
         .byte   PEND
 @ 028   ----------------------------------------
 mus_th_iro_wa_nioedo_0_28:
-        .byte           N44   , Dn3 , v080 , gtp3
+        .byte           N44   , Dn3 , v100 , gtp3
         .byte   W48
         .byte           N23
         .byte   W24
@@ -233,7 +234,7 @@ mus_th_iro_wa_nioedo_0_28:
         .byte   W24
 @ 030   ----------------------------------------
 mus_th_iro_wa_nioedo_0_30:
-        .byte           N44   , Dn3 , v080 , gtp3
+        .byte           N44   , Dn3 , v100 , gtp3
         .byte   W48
         .byte                   En3
         .byte   W48
@@ -243,7 +244,7 @@ mus_th_iro_wa_nioedo_0_30:
          .word  mus_th_iro_wa_nioedo_0_27
 @ 032   ----------------------------------------
 mus_th_iro_wa_nioedo_0_32:
-        .byte           N44   , Dn3 , v080 , gtp3
+        .byte           N44   , Dn3 , v100 , gtp3
         .byte   W48
         .byte           N17
         .byte   W18
@@ -254,7 +255,7 @@ mus_th_iro_wa_nioedo_0_32:
         .byte   PEND
 @ 033   ----------------------------------------
 mus_th_iro_wa_nioedo_0_33:
-        .byte           N17   , Fn3 , v080
+        .byte           N17   , Fn3 , v100
         .byte   W18
         .byte                   En3
         .byte   W18
@@ -274,17 +275,17 @@ mus_th_iro_wa_nioedo_0_33:
         .byte   W12
         .byte                   An3
         .byte   W12
-        .byte           N44   , An3 , v080 , gtp3
+        .byte           N44   , An3 , v100 , gtp3
         .byte   W48
 @ 035   ----------------------------------------
         .byte   W72
-        .byte           N11   , An3 , v080
+        .byte           N11   , An3 , v100
         .byte   W12
         .byte                   Cn4
         .byte   W12
 @ 036   ----------------------------------------
 mus_th_iro_wa_nioedo_0_36:
-        .byte           N56   , Dn4 , v080 , gtp3
+        .byte           N56   , Dn4 , v100 , gtp3
         .byte   W60
         .byte           N11   , Cn4
         .byte   W12
@@ -303,7 +304,7 @@ mus_th_iro_wa_nioedo_0_36:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_0_5
 @ 040   ----------------------------------------
-        .byte           N44   , Gn3 , v080 , gtp3
+        .byte           N44   , Gn3 , v100 , gtp3
         .byte   W60
         .byte           N11   , Dn4
         .byte   W12
@@ -316,7 +317,7 @@ mus_th_iro_wa_nioedo_0_36:
          .word  mus_th_iro_wa_nioedo_0_7
 @ 042   ----------------------------------------
 mus_th_iro_wa_nioedo_0_42:
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W48
         .byte           N11
         .byte   W12
@@ -330,7 +331,7 @@ mus_th_iro_wa_nioedo_0_42:
 @ 043   ----------------------------------------
 mus_th_iro_wa_nioedo_0_43:
         .byte   W12
-        .byte           N32   , An3 , v080 , gtp3
+        .byte           N32   , An3 , v100 , gtp3
         .byte   W48
         .byte           N11
         .byte   W12
@@ -340,7 +341,7 @@ mus_th_iro_wa_nioedo_0_43:
         .byte   W12
         .byte   PEND
 @ 044   ----------------------------------------
-        .byte           N44   , Dn4 , v080 , gtp3
+        .byte           N44   , Dn4 , v100 , gtp3
         .byte   W48
         .byte           N11   , Cn4
         .byte   W12
@@ -354,7 +355,7 @@ mus_th_iro_wa_nioedo_0_43:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_0_3
 @ 046   ----------------------------------------
-        .byte           N32   , Dn4 , v080 , gtp3
+        .byte           N32   , Dn4 , v100 , gtp3
         .byte   W36
         .byte           N05   , Cn4
         .byte   W06
@@ -376,7 +377,7 @@ mus_th_iro_wa_nioedo_0_43:
          .word  mus_th_iro_wa_nioedo_0_6
 @ 049   ----------------------------------------
 mus_th_iro_wa_nioedo_0_49:
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W60
         .byte           N11   , Dn3
         .byte   W12
@@ -386,7 +387,7 @@ mus_th_iro_wa_nioedo_0_49:
         .byte   W12
         .byte   PEND
 @ 050   ----------------------------------------
-        .byte           N32   , Fn3 , v080 , gtp3
+        .byte           N32   , Fn3 , v100 , gtp3
         .byte   W36
         .byte           N11   , Gn3
         .byte   W12
@@ -397,7 +398,7 @@ mus_th_iro_wa_nioedo_0_49:
         .byte                   Dn3
         .byte   W12
 @ 051   ----------------------------------------
-        .byte           N92   , Dn3 , v080 , gtp3
+        .byte           N92   , Dn3 , v100 , gtp3
         .byte   W96
 @ 052   ----------------------------------------
         .byte   W96
@@ -422,7 +423,7 @@ mus_th_iro_wa_nioedo_0_49:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_0_20
 @ 062   ----------------------------------------
-        .byte           N92   , Dn3 , v080 , gtp3
+        .byte           N92   , Dn3 , v100 , gtp3
         .byte   W96
 @ 063   ----------------------------------------
         .byte   PATT
@@ -446,7 +447,7 @@ mus_th_iro_wa_nioedo_0_49:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_0_28
 @ 070   ----------------------------------------
-        .byte           N23   , Fn3 , v080
+        .byte           N23   , Fn3 , v100
         .byte   W24
         .byte                   En3
         .byte   W24
@@ -469,7 +470,7 @@ mus_th_iro_wa_nioedo_0_49:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_0_33
 @ 075   ----------------------------------------
-        .byte           N23   , An3 , v080
+        .byte           N23   , An3 , v100
         .byte   W24
         .byte           N11   , As3
         .byte   W12
@@ -506,7 +507,7 @@ mus_th_iro_wa_nioedo_0_49:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_0_43
 @ 084   ----------------------------------------
-        .byte           N44   , Dn4 , v080 , gtp3
+        .byte           N44   , Dn4 , v100 , gtp3
         .byte   W60
         .byte           N11   , An3
         .byte   W12
@@ -518,7 +519,7 @@ mus_th_iro_wa_nioedo_0_49:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_0_3
 @ 086   ----------------------------------------
-        .byte           N32   , Dn4 , v080 , gtp3
+        .byte           N32   , Dn4 , v100 , gtp3
         .byte   W36
         .byte           N11   , Cn4
         .byte   W12
@@ -540,17 +541,17 @@ mus_th_iro_wa_nioedo_0_49:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_0_7
 @ 090   ----------------------------------------
-        .byte           N32   , Fn3 , v080 , gtp3
+        .byte           N32   , Fn3 , v100 , gtp3
         .byte   W36
         .byte           N11   , Gn3
         .byte   W12
-        .byte           N32   , En3 , v080 , gtp3
+        .byte           N32   , En3 , v100 , gtp3
         .byte   W36
         .byte           N23   , Dn3
         .byte   W12
 @ 091   ----------------------------------------
         .byte   W12
-        .byte           N80   , Dn3 , v080 , gtp3
+        .byte           N80   , Dn3 , v100 , gtp3
         .byte   W84
 @ 092   ----------------------------------------
         .byte   W96
@@ -566,40 +567,40 @@ mus_th_iro_wa_nioedo_1:
 mus_th_iro_wa_nioedo_1_0:
         .byte           VOICE , 73
         .byte           BENDR , 12
-        .byte           VOL   , 80
+        .byte           VOL   , 80 * mus_th_iro_wa_nioedo_mvl/mxv
 @ 001   ----------------------------------------
         .byte   W24
 @ 002   ----------------------------------------
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W48
         .byte                   Gn3
         .byte   W48
 @ 003   ----------------------------------------
-        .byte           N92   , Fn3 , v080 , gtp3
+        .byte           N92   , Fn3 , v100 , gtp3
         .byte   W96
 @ 004   ----------------------------------------
 mus_th_iro_wa_nioedo_1_4:
         .byte   W36
-        .byte           N11   , Fn3 , v080
+        .byte           N11   , Fn3 , v100
         .byte   W48
         .byte                   Gn3
         .byte   W12
         .byte   PEND
 @ 005   ----------------------------------------
         .byte   W36
-        .byte           N56   , Fn3 , v080 , gtp3
+        .byte           N56   , Fn3 , v100 , gtp3
         .byte   W60
 @ 006   ----------------------------------------
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_1_4
 @ 007   ----------------------------------------
         .byte   W36
-        .byte           N23   , Fn3 , v080
+        .byte           N23   , Fn3 , v100
         .byte   W24
         .byte           N11
         .byte   W36
 @ 008   ----------------------------------------
-        .byte           N44   , Gn3 , v080 , gtp3
+        .byte           N44   , Gn3 , v100 , gtp3
         .byte   W48
         .byte                   En3
         .byte   W48
@@ -613,14 +614,14 @@ mus_th_iro_wa_nioedo_1_4:
         .byte                   Cn4
         .byte   W12
 @ 010   ----------------------------------------
-        .byte           N68   , Dn4 , v080 , gtp3
+        .byte           N68   , Dn4 , v100 , gtp3
         .byte   W96
 @ 011   ----------------------------------------
 mus_th_iro_wa_nioedo_1_LOOP:
         .byte           VOICE , 115
         .byte           BENDR , 12
-        .byte           VOL   , 80
-        .byte           TIE   , Gn3 , v080
+        .byte           VOL   , 80 * mus_th_iro_wa_nioedo_mvl/mxv
+        .byte           TIE   , Gn3 , v100
         .byte   W96
 @ 012   ----------------------------------------
 mus_th_iro_wa_nioedo_1_12:
@@ -628,19 +629,19 @@ mus_th_iro_wa_nioedo_1_12:
         .byte   W03
         .byte           EOT   , Gn3
         .byte   W01
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W48
         .byte   PEND
 @ 013   ----------------------------------------
 mus_th_iro_wa_nioedo_1_13:
-        .byte           N68   , Gn3 , v080 , gtp3
+        .byte           N68   , Gn3 , v100 , gtp3
         .byte   W72
         .byte           N23   , As3
         .byte   W24
         .byte   PEND
 @ 014   ----------------------------------------
 mus_th_iro_wa_nioedo_1_14:
-        .byte           N32   , An3 , v080 , gtp3
+        .byte           N32   , An3 , v100 , gtp3
         .byte   W36
         .byte           N11   , Gn3
         .byte   W12
@@ -651,14 +652,14 @@ mus_th_iro_wa_nioedo_1_14:
         .byte   PEND
 @ 015   ----------------------------------------
 mus_th_iro_wa_nioedo_1_15:
-        .byte           N44   , Ds3 , v080 , gtp3
+        .byte           N44   , Ds3 , v100 , gtp3
         .byte   W48
         .byte                   Gn3
         .byte   W48
         .byte   PEND
 @ 016   ----------------------------------------
 mus_th_iro_wa_nioedo_1_16:
-        .byte           N32   , Fn3 , v080 , gtp3
+        .byte           N32   , Fn3 , v100 , gtp3
         .byte   W36
         .byte                   Fn3
         .byte   W36
@@ -676,8 +677,8 @@ mus_th_iro_wa_nioedo_1_16:
 @ 019   ----------------------------------------
         .byte           VOICE , 73
         .byte           BENDR , 12
-        .byte           VOL   , 80
-        .byte           N92   , Fn3 , v080 , gtp3
+        .byte           VOL   , 80 * mus_th_iro_wa_nioedo_mvl/mxv
+        .byte           N92   , Fn3 , v100 , gtp3
         .byte   W96
 @ 020   ----------------------------------------
         .byte                   En3
@@ -691,18 +692,18 @@ mus_th_iro_wa_nioedo_1_16:
 @ 023   ----------------------------------------
 mus_th_iro_wa_nioedo_1_23:
         .byte   W36
-        .byte           N56   , Dn3 , v080 , gtp3
+        .byte           N56   , Dn3 , v100 , gtp3
         .byte   W60
         .byte   PEND
 @ 024   ----------------------------------------
 mus_th_iro_wa_nioedo_1_24:
         .byte   W36
-        .byte           N56   , En3 , v080 , gtp3
+        .byte           N56   , En3 , v100 , gtp3
         .byte   W60
         .byte   PEND
 @ 025   ----------------------------------------
 mus_th_iro_wa_nioedo_1_25:
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W48
         .byte                   Fn3
         .byte   W48
@@ -714,14 +715,14 @@ mus_th_iro_wa_nioedo_1_25:
         .byte                   En3
         .byte   W12
 @ 027   ----------------------------------------
-        .byte           N44   , Dn3 , v080 , gtp3
+        .byte           N44   , Dn3 , v100 , gtp3
         .byte   W96
 @ 028   ----------------------------------------
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_0_27
 @ 029   ----------------------------------------
 mus_th_iro_wa_nioedo_1_29:
-        .byte           N23   , Dn3 , v080
+        .byte           N23   , Dn3 , v100
         .byte   W48
         .byte                   Fn3
         .byte   W24
@@ -730,7 +731,7 @@ mus_th_iro_wa_nioedo_1_29:
         .byte   PEND
 @ 030   ----------------------------------------
 mus_th_iro_wa_nioedo_1_30:
-        .byte           N23   , Fn3 , v080
+        .byte           N23   , Fn3 , v100
         .byte   W24
         .byte                   Fn3
         .byte   W24
@@ -740,11 +741,11 @@ mus_th_iro_wa_nioedo_1_30:
         .byte   W24
         .byte   PEND
 @ 031   ----------------------------------------
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W96
 @ 032   ----------------------------------------
 mus_th_iro_wa_nioedo_1_32:
-        .byte           N17   , Fn3 , v080
+        .byte           N17   , Fn3 , v100
         .byte   W18
         .byte                   Fn3
         .byte   W18
@@ -758,14 +759,14 @@ mus_th_iro_wa_nioedo_1_32:
         .byte   W12
         .byte   PEND
 @ 033   ----------------------------------------
-        .byte           N44   , Dn3 , v080 , gtp3
+        .byte           N44   , Dn3 , v100 , gtp3
         .byte   W96
 @ 034   ----------------------------------------
         .byte           N17   , Fn3
         .byte   W18
         .byte           N05
         .byte   W30
-        .byte           N44   , En3 , v080 , gtp3
+        .byte           N44   , En3 , v100 , gtp3
         .byte   W48
 @ 035   ----------------------------------------
         .byte           N23   , An3
@@ -778,12 +779,12 @@ mus_th_iro_wa_nioedo_1_32:
         .byte   W48
 @ 036   ----------------------------------------
 mus_th_iro_wa_nioedo_1_36:
-        .byte           N44   , As2 , v080 , gtp3
+        .byte           N44   , As2 , v100 , gtp3
         .byte                   Dn3
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W48
         .byte                   Cn3
-        .byte           N44   , En3 , v080 , gtp3
+        .byte           N44   , En3 , v100 , gtp3
         .byte                   Gn3
         .byte   W48
         .byte   PEND
@@ -791,8 +792,8 @@ mus_th_iro_wa_nioedo_1_36:
 mus_th_iro_wa_nioedo_1_37:
         .byte           VOICE , 95
         .byte           BENDR , 12
-        .byte           VOL   , 80
-        .byte           N23   , An2 , v080
+        .byte           VOL   , 80 * mus_th_iro_wa_nioedo_mvl/mxv
+        .byte           N23   , An2 , v100
         .byte           N23   , Cn3
         .byte           N23   , Fn3
         .byte   W24
@@ -811,9 +812,9 @@ mus_th_iro_wa_nioedo_1_37:
         .byte   PEND
 @ 038   ----------------------------------------
 mus_th_iro_wa_nioedo_1_38:
-        .byte           N44   , As2 , v080 , gtp3
+        .byte           N44   , As2 , v100 , gtp3
         .byte                   Dn3
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W48
         .byte           N11   , Cn3
         .byte           N11   , En3
@@ -834,45 +835,45 @@ mus_th_iro_wa_nioedo_1_38:
         .byte   PEND
 @ 039   ----------------------------------------
 mus_th_iro_wa_nioedo_1_39:
-        .byte           N92   , An2 , v080 , gtp3
+        .byte           N92   , An2 , v100 , gtp3
         .byte                   Dn3
-        .byte           N92   , Fn3 , v080 , gtp3
+        .byte           N92   , Fn3 , v100 , gtp3
         .byte   W96
         .byte   PEND
 @ 040   ----------------------------------------
 mus_th_iro_wa_nioedo_1_40:
         .byte   W24
-        .byte           N23   , Gn2 , v080
+        .byte           N23   , Gn2 , v100
         .byte           N23   , As2
         .byte           N23   , Dn3
         .byte   W24
-        .byte           N44   , An2 , v080 , gtp3
+        .byte           N44   , An2 , v100 , gtp3
         .byte                   Cn3
-        .byte           N44   , En3 , v080 , gtp3
+        .byte           N44   , En3 , v100 , gtp3
         .byte   W48
         .byte   PEND
 @ 041   ----------------------------------------
 mus_th_iro_wa_nioedo_1_41:
         .byte   W24
-        .byte           N23   , An2 , v080
+        .byte           N23   , An2 , v100
         .byte           N23   , Dn3
         .byte           N23   , Fn3
         .byte   W24
-        .byte           N44   , Bn2 , v080 , gtp3
+        .byte           N44   , Bn2 , v100 , gtp3
         .byte                   Dn3
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W48
         .byte   PEND
 @ 042   ----------------------------------------
 mus_th_iro_wa_nioedo_1_42:
-        .byte           N92   , As2 , v080 , gtp3
+        .byte           N92   , As2 , v100 , gtp3
         .byte                   Dn3
-        .byte           N92   , Gn3 , v080 , gtp3
+        .byte           N92   , Gn3 , v100 , gtp3
         .byte   W96
         .byte   PEND
 @ 043   ----------------------------------------
 mus_th_iro_wa_nioedo_1_43:
-        .byte           N23   , Cs3 , v080
+        .byte           N23   , Cs3 , v100
         .byte           N23   , En3
         .byte           N23   , Gn3
         .byte   W24
@@ -900,12 +901,12 @@ mus_th_iro_wa_nioedo_1_43:
          .word  mus_th_iro_wa_nioedo_1_36
 @ 047   ----------------------------------------
 mus_th_iro_wa_nioedo_1_47:
-        .byte           N32   , An2 , v080 , gtp3
+        .byte           N32   , An2 , v100 , gtp3
         .byte                   Dn3
-        .byte           N32   , Fn3 , v080 , gtp3
+        .byte           N32   , Fn3 , v100 , gtp3
         .byte   W36
         .byte                   An2
-        .byte           N32   , Dn3 , v080 , gtp3
+        .byte           N32   , Dn3 , v100 , gtp3
         .byte                   Fn3
         .byte   W36
         .byte           N23   , An2
@@ -916,13 +917,13 @@ mus_th_iro_wa_nioedo_1_47:
 @ 048   ----------------------------------------
 mus_th_iro_wa_nioedo_1_48:
         .byte   W24
-        .byte           N23   , As2 , v080
+        .byte           N23   , As2 , v100
         .byte           N23   , Dn3
         .byte           N23   , Gn3
         .byte   W24
-        .byte           N44   , An2 , v080 , gtp3
+        .byte           N44   , An2 , v100 , gtp3
         .byte                   Cn3
-        .byte           N44   , En3 , v080 , gtp3
+        .byte           N44   , En3 , v100 , gtp3
         .byte   W48
         .byte   PEND
 @ 049   ----------------------------------------
@@ -930,24 +931,24 @@ mus_th_iro_wa_nioedo_1_48:
          .word  mus_th_iro_wa_nioedo_1_41
 @ 050   ----------------------------------------
 mus_th_iro_wa_nioedo_1_50:
-        .byte           N44   , As2 , v080 , gtp3
+        .byte           N44   , As2 , v100 , gtp3
         .byte                   Dn3
-        .byte           N44   , Gn3 , v080 , gtp3
+        .byte           N44   , Gn3 , v100 , gtp3
         .byte   W48
         .byte                   An2
-        .byte           N44   , Cn3 , v080 , gtp3
+        .byte           N44   , Cn3 , v100 , gtp3
         .byte                   En3
         .byte   W48
         .byte   PEND
 @ 051   ----------------------------------------
-        .byte           N92   , As2 , v080 , gtp3
+        .byte           N92   , As2 , v100 , gtp3
         .byte                   Dn3
-        .byte           N92   , Fn3 , v080 , gtp3
+        .byte           N92   , Fn3 , v100 , gtp3
         .byte   W96
 @ 052   ----------------------------------------
         .byte           VOICE , 115
         .byte           BENDR , 12
-        .byte           VOL   , 80
+        .byte           VOL   , 80 * mus_th_iro_wa_nioedo_mvl/mxv
         .byte           TIE   , Gn3
         .byte   W96
 @ 053   ----------------------------------------
@@ -966,7 +967,7 @@ mus_th_iro_wa_nioedo_1_50:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_1_16
 @ 058   ----------------------------------------
-        .byte           TIE   , Gn3 , v080
+        .byte           TIE   , Gn3 , v100
         .byte   W96
 @ 059   ----------------------------------------
         .byte   W92
@@ -977,8 +978,8 @@ mus_th_iro_wa_nioedo_1_50:
 mus_th_iro_wa_nioedo_1_60:
         .byte           VOICE , 73
         .byte           BENDR , 12
-        .byte           VOL   , 80
-        .byte           N17   , Fn3 , v080
+        .byte           VOL   , 80 * mus_th_iro_wa_nioedo_mvl/mxv
+        .byte           N17   , Fn3 , v100
         .byte   W18
         .byte                   Fn3
         .byte   W18
@@ -994,7 +995,7 @@ mus_th_iro_wa_nioedo_1_60:
         .byte   W60
 @ 062   ----------------------------------------
 mus_th_iro_wa_nioedo_1_62:
-        .byte           N17   , Dn3 , v080
+        .byte           N17   , Dn3 , v100
         .byte   W18
         .byte                   Dn3
         .byte   W18
@@ -1018,7 +1019,7 @@ mus_th_iro_wa_nioedo_1_62:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_1_60
 @ 067   ----------------------------------------
-        .byte           N17   , Gn3 , v080
+        .byte           N17   , Gn3 , v100
         .byte   W18
         .byte                   Gn3
         .byte   W18
@@ -1031,7 +1032,7 @@ mus_th_iro_wa_nioedo_1_62:
         .byte           N11
         .byte   W12
 @ 068   ----------------------------------------
-        .byte           N44   , En3 , v080 , gtp3
+        .byte           N44   , En3 , v100 , gtp3
         .byte   W96
 @ 069   ----------------------------------------
         .byte   PATT
@@ -1043,13 +1044,13 @@ mus_th_iro_wa_nioedo_1_62:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_1_30
 @ 072   ----------------------------------------
-        .byte           N44   , Fn3 , v080 , gtp3
+        .byte           N44   , Fn3 , v100 , gtp3
         .byte   W96
 @ 073   ----------------------------------------
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_1_32
 @ 074   ----------------------------------------
-        .byte           N44   , Dn3 , v080 , gtp3
+        .byte           N44   , Dn3 , v100 , gtp3
         .byte   W96
 @ 075   ----------------------------------------
         .byte           N17   , Fn3
@@ -1064,9 +1065,9 @@ mus_th_iro_wa_nioedo_1_62:
         .byte           N23   , Dn3
         .byte           N23   , Fn3
         .byte   W24
-        .byte           N44   , Cn3 , v080 , gtp3
+        .byte           N44   , Cn3 , v100 , gtp3
         .byte                   En3
-        .byte           N44   , Gn3 , v080 , gtp3
+        .byte           N44   , Gn3 , v100 , gtp3
         .byte   W48
 @ 077   ----------------------------------------
         .byte   PATT
@@ -1111,7 +1112,7 @@ mus_th_iro_wa_nioedo_1_62:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_1_50
 @ 091   ----------------------------------------
-        .byte           N23   , As2 , v080
+        .byte           N23   , As2 , v100
         .byte           N23   , Dn3
         .byte           N23   , Fn3
         .byte   W24
@@ -1128,9 +1129,9 @@ mus_th_iro_wa_nioedo_1_62:
         .byte           N23   , Fn3
         .byte   W24
 @ 092   ----------------------------------------
-        .byte           N92   , As2 , v080 , gtp3
+        .byte           N92   , As2 , v100 , gtp3
         .byte                   Dn3
-        .byte           N92   , Fn3 , v080 , gtp3
+        .byte           N92   , Fn3 , v100 , gtp3
         .byte   W96
         .byte   GOTO
          .word  mus_th_iro_wa_nioedo_1_LOOP
@@ -1143,38 +1144,38 @@ mus_th_iro_wa_nioedo_2:
 @ 000   ----------------------------------------
         .byte           VOICE , 73
         .byte           BENDR , 12
-        .byte           VOL   , 80
+        .byte           VOL   , 80 * mus_th_iro_wa_nioedo_mvl/mxv
 @ 001   ----------------------------------------
         .byte   W24
 @ 002   ----------------------------------------
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_0_30
 @ 003   ----------------------------------------
-        .byte           N92   , Cn3 , v080 , gtp3
+        .byte           N92   , Cn3 , v100 , gtp3
         .byte   W96
 @ 004   ----------------------------------------
 mus_th_iro_wa_nioedo_2_4:
         .byte   W24
-        .byte           N23   , Dn3 , v080
+        .byte           N23   , Dn3 , v100
         .byte   W48
         .byte                   En3
         .byte   W24
         .byte   PEND
 @ 005   ----------------------------------------
         .byte   W24
-        .byte           N68   , Dn3 , v080 , gtp3
+        .byte           N68   , Dn3 , v100 , gtp3
         .byte   W72
 @ 006   ----------------------------------------
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_2_4
 @ 007   ----------------------------------------
         .byte   W24
-        .byte           N23   , Dn3 , v080
+        .byte           N23   , Dn3 , v100
         .byte   W48
         .byte           N11
         .byte   W24
 @ 008   ----------------------------------------
-        .byte           N44   , Dn3 , v080 , gtp3
+        .byte           N44   , Dn3 , v100 , gtp3
         .byte   W48
         .byte                   Cn3
         .byte   W48
@@ -1189,7 +1190,7 @@ mus_th_iro_wa_nioedo_2_4:
         .byte   W01
 @ 011   ----------------------------------------
 mus_th_iro_wa_nioedo_2_LOOP:
-        .byte           TIE   , Ds3 , v080
+        .byte           TIE   , Ds3 , v100
         .byte   W96
 @ 012   ----------------------------------------
 mus_th_iro_wa_nioedo_2_12:
@@ -1197,15 +1198,15 @@ mus_th_iro_wa_nioedo_2_12:
         .byte   W03
         .byte           EOT   , Ds3
         .byte   W01
-        .byte           N44   , Cn3 , v080 , gtp3
+        .byte           N44   , Cn3 , v100 , gtp3
         .byte   W48
         .byte   PEND
 @ 013   ----------------------------------------
-        .byte           N92   , Dn3 , v080 , gtp3
+        .byte           N92   , Dn3 , v100 , gtp3
         .byte   W96
 @ 014   ----------------------------------------
 mus_th_iro_wa_nioedo_2_14:
-        .byte           N32   , Dn3 , v080 , gtp3
+        .byte           N32   , Dn3 , v100 , gtp3
         .byte   W36
         .byte           N11
         .byte   W12
@@ -1216,14 +1217,14 @@ mus_th_iro_wa_nioedo_2_14:
         .byte   PEND
 @ 015   ----------------------------------------
 mus_th_iro_wa_nioedo_2_15:
-        .byte           N44   , As2 , v080 , gtp3
+        .byte           N44   , As2 , v100 , gtp3
         .byte   W48
         .byte                   Ds3
         .byte   W48
         .byte   PEND
 @ 016   ----------------------------------------
 mus_th_iro_wa_nioedo_2_16:
-        .byte           N32   , Cn3 , v080 , gtp3
+        .byte           N32   , Cn3 , v100 , gtp3
         .byte   W36
         .byte                   Cn3
         .byte   W36
@@ -1231,7 +1232,7 @@ mus_th_iro_wa_nioedo_2_16:
         .byte   W24
         .byte   PEND
 @ 017   ----------------------------------------
-        .byte           N92   , Dn3 , v080 , gtp3
+        .byte           N92   , Dn3 , v100 , gtp3
         .byte   W96
 @ 018   ----------------------------------------
         .byte                   Dn3
@@ -1251,17 +1252,17 @@ mus_th_iro_wa_nioedo_2_16:
 @ 023   ----------------------------------------
 mus_th_iro_wa_nioedo_2_23:
         .byte   W24
-        .byte           N68   , As2 , v080 , gtp3
+        .byte           N68   , As2 , v100 , gtp3
         .byte   W72
         .byte   PEND
 @ 024   ----------------------------------------
 mus_th_iro_wa_nioedo_2_24:
         .byte   W24
-        .byte           N68   , Cn3 , v080 , gtp3
+        .byte           N68   , Cn3 , v100 , gtp3
         .byte   W72
         .byte   PEND
 @ 025   ----------------------------------------
-        .byte           N44   , Cn3 , v080 , gtp3
+        .byte           N44   , Cn3 , v100 , gtp3
         .byte   W48
         .byte                   Cn3
         .byte   W48
@@ -1272,7 +1273,7 @@ mus_th_iro_wa_nioedo_2_24:
         .byte                   Cs3
         .byte   W24
 @ 027   ----------------------------------------
-        .byte           N44   , As2 , v080 , gtp3
+        .byte           N44   , As2 , v100 , gtp3
         .byte   W48
         .byte                   En3
         .byte   W48
@@ -1281,7 +1282,7 @@ mus_th_iro_wa_nioedo_2_24:
          .word  mus_th_iro_wa_nioedo_1_25
 @ 029   ----------------------------------------
 mus_th_iro_wa_nioedo_2_29:
-        .byte           N44   , Dn3 , v080 , gtp3
+        .byte           N44   , Dn3 , v100 , gtp3
         .byte   W48
         .byte           N23   , Cn3
         .byte   W24
@@ -1290,7 +1291,7 @@ mus_th_iro_wa_nioedo_2_29:
         .byte   PEND
 @ 030   ----------------------------------------
 mus_th_iro_wa_nioedo_2_30:
-        .byte           N23   , Dn3 , v080
+        .byte           N23   , Dn3 , v100
         .byte   W24
         .byte                   Dn3
         .byte   W24
@@ -1301,9 +1302,9 @@ mus_th_iro_wa_nioedo_2_30:
         .byte   PEND
 @ 031   ----------------------------------------
 mus_th_iro_wa_nioedo_2_31:
-        .byte           N23   , Dn3 , v080
+        .byte           N23   , Dn3 , v100
         .byte   W48
-        .byte           N44   , En3 , v080 , gtp3
+        .byte           N44   , En3 , v100 , gtp3
         .byte   W48
         .byte   PEND
 @ 032   ----------------------------------------
@@ -1313,7 +1314,7 @@ mus_th_iro_wa_nioedo_2_31:
         .byte   W48
 @ 033   ----------------------------------------
 mus_th_iro_wa_nioedo_2_33:
-        .byte           N17   , Dn3 , v080
+        .byte           N17   , Dn3 , v100
         .byte   W18
         .byte           N05
         .byte   W30
@@ -1327,7 +1328,7 @@ mus_th_iro_wa_nioedo_2_33:
         .byte   W18
         .byte           N05
         .byte   W30
-        .byte           N44   , Cn3 , v080 , gtp3
+        .byte           N44   , Cn3 , v100 , gtp3
         .byte   W48
 @ 035   ----------------------------------------
         .byte   W96
@@ -1370,7 +1371,7 @@ mus_th_iro_wa_nioedo_2_33:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_2_12
 @ 054   ----------------------------------------
-        .byte           N92   , Dn3 , v080 , gtp3
+        .byte           N92   , Dn3 , v100 , gtp3
         .byte   W96
 @ 055   ----------------------------------------
         .byte   PATT
@@ -1382,7 +1383,7 @@ mus_th_iro_wa_nioedo_2_33:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_2_16
 @ 058   ----------------------------------------
-        .byte           N92   , Dn3 , v080 , gtp3
+        .byte           N92   , Dn3 , v100 , gtp3
         .byte   W96
 @ 059   ----------------------------------------
         .byte                   Dn3
@@ -1392,7 +1393,7 @@ mus_th_iro_wa_nioedo_2_33:
          .word  mus_th_iro_wa_nioedo_1_62
 @ 061   ----------------------------------------
 mus_th_iro_wa_nioedo_2_61:
-        .byte           N17   , Cn3 , v080
+        .byte           N17   , Cn3 , v100
         .byte   W18
         .byte                   Cn3
         .byte   W18
@@ -1401,7 +1402,7 @@ mus_th_iro_wa_nioedo_2_61:
         .byte   PEND
 @ 062   ----------------------------------------
 mus_th_iro_wa_nioedo_2_62:
-        .byte           N17   , Bn2 , v080
+        .byte           N17   , Bn2 , v100
         .byte   W18
         .byte                   Bn2
         .byte   W18
@@ -1421,7 +1422,7 @@ mus_th_iro_wa_nioedo_2_62:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_2_61
 @ 067   ----------------------------------------
-        .byte           N17   , Dn3 , v080
+        .byte           N17   , Dn3 , v100
         .byte   W18
         .byte                   Dn3
         .byte   W18
@@ -1455,7 +1456,7 @@ mus_th_iro_wa_nioedo_2_62:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_2_33
 @ 075   ----------------------------------------
-        .byte           N17   , Dn3 , v080
+        .byte           N17   , Dn3 , v100
         .byte   W18
         .byte           N05
         .byte   W30
@@ -1506,21 +1507,21 @@ mus_th_iro_wa_nioedo_3:
 @ 000   ----------------------------------------
         .byte           VOICE , 73
         .byte           BENDR , 12
-        .byte           VOL   , 80
+        .byte           VOL   , 80 * mus_th_iro_wa_nioedo_mvl/mxv
 @ 001   ----------------------------------------
         .byte   W24
 @ 002   ----------------------------------------
-        .byte           N44   , As2 , v080 , gtp3
+        .byte           N44   , As2 , v100 , gtp3
         .byte   W48
         .byte                   Cn3
         .byte   W48
 @ 003   ----------------------------------------
-        .byte           N92   , An2 , v080 , gtp3
+        .byte           N92   , An2 , v100 , gtp3
         .byte   W96
 @ 004   ----------------------------------------
 mus_th_iro_wa_nioedo_3_4:
         .byte   W12
-        .byte           N32   , As2 , v080 , gtp3
+        .byte           N32   , As2 , v100 , gtp3
         .byte   W48
         .byte                   Cn3
         .byte   W36
@@ -1528,7 +1529,7 @@ mus_th_iro_wa_nioedo_3_4:
 @ 005   ----------------------------------------
 mus_th_iro_wa_nioedo_3_5:
         .byte   W12
-        .byte           N80   , An2 , v080 , gtp3
+        .byte           N80   , An2 , v100 , gtp3
         .byte   W84
         .byte   PEND
 @ 006   ----------------------------------------
@@ -1536,12 +1537,12 @@ mus_th_iro_wa_nioedo_3_5:
          .word  mus_th_iro_wa_nioedo_3_4
 @ 007   ----------------------------------------
         .byte   W12
-        .byte           N32   , An2 , v080 , gtp3
+        .byte           N32   , An2 , v100 , gtp3
         .byte   W72
         .byte           N11
         .byte   W12
 @ 008   ----------------------------------------
-        .byte           N44   , As2 , v080 , gtp3
+        .byte           N44   , As2 , v100 , gtp3
         .byte   W48
         .byte                   An2
         .byte   W48
@@ -1556,7 +1557,7 @@ mus_th_iro_wa_nioedo_3_5:
         .byte   W01
 @ 011   ----------------------------------------
 mus_th_iro_wa_nioedo_3_LOOP:
-        .byte           TIE   , As2 , v080
+        .byte           TIE   , As2 , v100
         .byte   W96
 @ 012   ----------------------------------------
 mus_th_iro_wa_nioedo_3_12:
@@ -1564,15 +1565,15 @@ mus_th_iro_wa_nioedo_3_12:
         .byte   W03
         .byte           EOT   , As2
         .byte   W01
-        .byte           N44   , An2 , v080 , gtp3
+        .byte           N44   , An2 , v100 , gtp3
         .byte   W48
         .byte   PEND
 @ 013   ----------------------------------------
-        .byte           N92   , As2 , v080 , gtp3
+        .byte           N92   , As2 , v100 , gtp3
         .byte   W96
 @ 014   ----------------------------------------
 mus_th_iro_wa_nioedo_3_14:
-        .byte           N32   , As2 , v080 , gtp3
+        .byte           N32   , As2 , v100 , gtp3
         .byte   W36
         .byte           N11
         .byte   W12
@@ -1583,14 +1584,14 @@ mus_th_iro_wa_nioedo_3_14:
         .byte   PEND
 @ 015   ----------------------------------------
 mus_th_iro_wa_nioedo_3_15:
-        .byte           N44   , Gn2 , v080 , gtp3
+        .byte           N44   , Gn2 , v100 , gtp3
         .byte   W48
         .byte                   As2
         .byte   W48
         .byte   PEND
 @ 016   ----------------------------------------
 mus_th_iro_wa_nioedo_3_16:
-        .byte           N32   , An2 , v080 , gtp3
+        .byte           N32   , An2 , v100 , gtp3
         .byte   W36
         .byte                   An2
         .byte   W36
@@ -1598,7 +1599,7 @@ mus_th_iro_wa_nioedo_3_16:
         .byte   W24
         .byte   PEND
 @ 017   ----------------------------------------
-        .byte           N92   , Cn3 , v080 , gtp3
+        .byte           N92   , Cn3 , v100 , gtp3
         .byte   W96
 @ 018   ----------------------------------------
         .byte                   Bn2
@@ -1614,12 +1615,12 @@ mus_th_iro_wa_nioedo_3_16:
         .byte   W96
 @ 022   ----------------------------------------
         .byte   W60
-        .byte           N32   , Gn2 , v080 , gtp3
+        .byte           N32   , Gn2 , v100 , gtp3
         .byte   W36
 @ 023   ----------------------------------------
 mus_th_iro_wa_nioedo_3_23:
         .byte   W12
-        .byte           N80   , Fn2 , v080 , gtp3
+        .byte           N80   , Fn2 , v100 , gtp3
         .byte   W84
         .byte   PEND
 @ 024   ----------------------------------------
@@ -1627,19 +1628,19 @@ mus_th_iro_wa_nioedo_3_23:
          .word  mus_th_iro_wa_nioedo_3_5
 @ 025   ----------------------------------------
 mus_th_iro_wa_nioedo_3_25:
-        .byte           N44   , An2 , v080 , gtp3
+        .byte           N44   , An2 , v100 , gtp3
         .byte   W48
         .byte                   An2
         .byte   W48
         .byte   PEND
 @ 026   ----------------------------------------
         .byte   W12
-        .byte           N32   , Gn2 , v080 , gtp3
+        .byte           N32   , Gn2 , v100 , gtp3
         .byte   W48
         .byte                   Gn2
         .byte   W36
 @ 027   ----------------------------------------
-        .byte           N44   , Fn2 , v080 , gtp3
+        .byte           N44   , Fn2 , v100 , gtp3
         .byte   W48
         .byte                   Gn2
         .byte   W48
@@ -1648,7 +1649,7 @@ mus_th_iro_wa_nioedo_3_25:
          .word  mus_th_iro_wa_nioedo_3_25
 @ 029   ----------------------------------------
 mus_th_iro_wa_nioedo_3_29:
-        .byte           N44   , As2 , v080 , gtp3
+        .byte           N44   , As2 , v100 , gtp3
         .byte   W48
         .byte           N23   , An2
         .byte   W24
@@ -1657,7 +1658,7 @@ mus_th_iro_wa_nioedo_3_29:
         .byte   PEND
 @ 030   ----------------------------------------
 mus_th_iro_wa_nioedo_3_30:
-        .byte           N23   , As2 , v080
+        .byte           N23   , As2 , v100
         .byte   W24
         .byte                   As2
         .byte   W24
@@ -1668,9 +1669,9 @@ mus_th_iro_wa_nioedo_3_30:
         .byte   PEND
 @ 031   ----------------------------------------
 mus_th_iro_wa_nioedo_3_31:
-        .byte           N23   , As2 , v080
+        .byte           N23   , As2 , v100
         .byte   W48
-        .byte           N44   , Gn2 , v080 , gtp3
+        .byte           N44   , Gn2 , v100 , gtp3
         .byte   W48
         .byte   PEND
 @ 032   ----------------------------------------
@@ -1678,7 +1679,7 @@ mus_th_iro_wa_nioedo_3_31:
          .word  mus_th_iro_wa_nioedo_3_25
 @ 033   ----------------------------------------
 mus_th_iro_wa_nioedo_3_33:
-        .byte           N17   , As2 , v080
+        .byte           N17   , As2 , v100
         .byte   W18
         .byte           N05
         .byte   W30
@@ -1692,7 +1693,7 @@ mus_th_iro_wa_nioedo_3_33:
         .byte   W18
         .byte           N05
         .byte   W30
-        .byte           N44   , Gn2 , v080 , gtp3
+        .byte           N44   , Gn2 , v100 , gtp3
         .byte   W48
 @ 035   ----------------------------------------
         .byte   W96
@@ -1735,7 +1736,7 @@ mus_th_iro_wa_nioedo_3_33:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_3_12
 @ 054   ----------------------------------------
-        .byte           N92   , As2 , v080 , gtp3
+        .byte           N92   , As2 , v100 , gtp3
         .byte   W96
 @ 055   ----------------------------------------
         .byte   PATT
@@ -1747,14 +1748,14 @@ mus_th_iro_wa_nioedo_3_33:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_3_16
 @ 058   ----------------------------------------
-        .byte           N92   , Cn3 , v080 , gtp3
+        .byte           N92   , Cn3 , v100 , gtp3
         .byte   W96
 @ 059   ----------------------------------------
         .byte                   Bn2
         .byte   W96
 @ 060   ----------------------------------------
 mus_th_iro_wa_nioedo_3_60:
-        .byte           N17   , An2 , v080
+        .byte           N17   , An2 , v100
         .byte   W18
         .byte                   An2
         .byte   W18
@@ -1763,7 +1764,7 @@ mus_th_iro_wa_nioedo_3_60:
         .byte   PEND
 @ 061   ----------------------------------------
 mus_th_iro_wa_nioedo_3_61:
-        .byte           N17   , Gn2 , v080
+        .byte           N17   , Gn2 , v100
         .byte   W18
         .byte                   Gn2
         .byte   W18
@@ -1786,7 +1787,7 @@ mus_th_iro_wa_nioedo_3_61:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_3_60
 @ 067   ----------------------------------------
-        .byte           N17   , As2 , v080
+        .byte           N17   , As2 , v100
         .byte   W18
         .byte                   As2
         .byte   W18
@@ -1799,7 +1800,7 @@ mus_th_iro_wa_nioedo_3_61:
         .byte           N11
         .byte   W12
 @ 068   ----------------------------------------
-        .byte           N44   , As2 , v080 , gtp3
+        .byte           N44   , As2 , v100 , gtp3
         .byte   W48
         .byte                   Gn2
         .byte   W48
@@ -1822,7 +1823,7 @@ mus_th_iro_wa_nioedo_3_61:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_3_33
 @ 075   ----------------------------------------
-        .byte           N17   , As2 , v080
+        .byte           N17   , As2 , v100
         .byte   W18
         .byte           N05
         .byte   W30
@@ -1873,30 +1874,30 @@ mus_th_iro_wa_nioedo_4:
 @ 000   ----------------------------------------
         .byte           BENDR , 12
         .byte           VOICE , 33
-        .byte           VOL   , 100
+        .byte           VOL   , 100 * mus_th_iro_wa_nioedo_mvl/mxv
 @ 001   ----------------------------------------
         .byte   W24
 @ 002   ----------------------------------------
 mus_th_iro_wa_nioedo_4_2:
-        .byte           N44   , As0 , v080 , gtp3
+        .byte           N44   , As0 , v100 , gtp3
         .byte   W48
         .byte                   Cn1
         .byte   W48
         .byte   PEND
 @ 003   ----------------------------------------
-        .byte           N92   , Fn0 , v080 , gtp3
+        .byte           N92   , Fn0 , v100 , gtp3
         .byte   W96
 @ 004   ----------------------------------------
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_4_2
 @ 005   ----------------------------------------
-        .byte           N92   , Dn1 , v080 , gtp3
+        .byte           N92   , Dn1 , v100 , gtp3
         .byte   W96
 @ 006   ----------------------------------------
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_4_2
 @ 007   ----------------------------------------
-        .byte           N92   , Dn1 , v080 , gtp3
+        .byte           N92   , Dn1 , v100 , gtp3
         .byte   W96
 @ 008   ----------------------------------------
         .byte           N23   , Gn0
@@ -1924,7 +1925,7 @@ mus_th_iro_wa_nioedo_4_2:
         .byte   W01
 @ 011   ----------------------------------------
 mus_th_iro_wa_nioedo_4_LOOP:
-        .byte           N23   , Ds0 , v080
+        .byte           N23   , Ds0 , v100
         .byte   W24
         .byte                   Ds0
         .byte   W24
@@ -1934,7 +1935,7 @@ mus_th_iro_wa_nioedo_4_LOOP:
         .byte   W24
 @ 012   ----------------------------------------
 mus_th_iro_wa_nioedo_4_12:
-        .byte           N23   , Fn0 , v080
+        .byte           N23   , Fn0 , v100
         .byte   W24
         .byte                   Fn0
         .byte   W24
@@ -1945,7 +1946,7 @@ mus_th_iro_wa_nioedo_4_12:
         .byte   PEND
 @ 013   ----------------------------------------
 mus_th_iro_wa_nioedo_4_13:
-        .byte           N23   , Gn0 , v080
+        .byte           N23   , Gn0 , v100
         .byte   W24
         .byte                   Gn0
         .byte   W24
@@ -1955,7 +1956,7 @@ mus_th_iro_wa_nioedo_4_13:
         .byte   W24
         .byte   PEND
 @ 014   ----------------------------------------
-        .byte           N32   , An0 , v080 , gtp3
+        .byte           N32   , An0 , v100 , gtp3
         .byte   W36
         .byte           N11   , Gn0
         .byte   W12
@@ -1965,7 +1966,7 @@ mus_th_iro_wa_nioedo_4_13:
         .byte   W24
 @ 015   ----------------------------------------
 mus_th_iro_wa_nioedo_4_15:
-        .byte           N23   , Ds0 , v080
+        .byte           N23   , Ds0 , v100
         .byte   W24
         .byte                   Ds0
         .byte   W24
@@ -1979,7 +1980,7 @@ mus_th_iro_wa_nioedo_4_15:
          .word  mus_th_iro_wa_nioedo_4_12
 @ 017   ----------------------------------------
 mus_th_iro_wa_nioedo_4_17:
-        .byte           N23   , Gn0 , v080
+        .byte           N23   , Gn0 , v100
         .byte   W24
         .byte                   Gn0
         .byte   W24
@@ -1992,7 +1993,7 @@ mus_th_iro_wa_nioedo_4_17:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_4_17
 @ 019   ----------------------------------------
-        .byte           N92   , Dn1 , v080 , gtp3
+        .byte           N92   , Dn1 , v100 , gtp3
         .byte   W96
 @ 020   ----------------------------------------
         .byte                   Cn1
@@ -2014,14 +2015,14 @@ mus_th_iro_wa_nioedo_4_17:
         .byte   W96
 @ 026   ----------------------------------------
 mus_th_iro_wa_nioedo_4_26:
-        .byte           N44   , Gn0 , v080 , gtp3
+        .byte           N44   , Gn0 , v100 , gtp3
         .byte   W48
         .byte                   An0
         .byte   W48
         .byte   PEND
 @ 027   ----------------------------------------
 mus_th_iro_wa_nioedo_4_27:
-        .byte           N11   , As0 , v080
+        .byte           N11   , As0 , v100
         .byte   W12
         .byte           N23
         .byte   W24
@@ -2036,7 +2037,7 @@ mus_th_iro_wa_nioedo_4_27:
         .byte   PEND
 @ 028   ----------------------------------------
 mus_th_iro_wa_nioedo_4_28:
-        .byte           N11   , Dn1 , v080
+        .byte           N11   , Dn1 , v100
         .byte   W12
         .byte           N23
         .byte   W24
@@ -2051,7 +2052,7 @@ mus_th_iro_wa_nioedo_4_28:
         .byte   PEND
 @ 029   ----------------------------------------
 mus_th_iro_wa_nioedo_4_29:
-        .byte           N11   , Gn0 , v080
+        .byte           N11   , Gn0 , v100
         .byte   W12
         .byte           N23
         .byte   W24
@@ -2072,14 +2073,14 @@ mus_th_iro_wa_nioedo_4_29:
          .word  mus_th_iro_wa_nioedo_4_2
 @ 032   ----------------------------------------
 mus_th_iro_wa_nioedo_4_32:
-        .byte           N44   , Dn1 , v080 , gtp3
+        .byte           N44   , Dn1 , v100 , gtp3
         .byte   W48
         .byte                   Dn1
         .byte   W48
         .byte   PEND
 @ 033   ----------------------------------------
 mus_th_iro_wa_nioedo_4_33:
-        .byte           N17   , Gn0 , v080
+        .byte           N17   , Gn0 , v100
         .byte   W18
         .byte                   Gn0
         .byte   W18
@@ -2099,7 +2100,7 @@ mus_th_iro_wa_nioedo_4_33:
         .byte   W18
         .byte           N11
         .byte   W12
-        .byte           N44   , Cn1 , v080 , gtp3
+        .byte           N44   , Cn1 , v100 , gtp3
         .byte   W48
 @ 035   ----------------------------------------
         .byte   W96
@@ -2108,7 +2109,7 @@ mus_th_iro_wa_nioedo_4_33:
          .word  mus_th_iro_wa_nioedo_4_2
 @ 037   ----------------------------------------
 mus_th_iro_wa_nioedo_4_37:
-        .byte           N44   , Fn0 , v080 , gtp3
+        .byte           N44   , Fn0 , v100 , gtp3
         .byte   W48
         .byte                   Fn0
         .byte   W48
@@ -2118,13 +2119,13 @@ mus_th_iro_wa_nioedo_4_37:
          .word  mus_th_iro_wa_nioedo_4_2
 @ 039   ----------------------------------------
 mus_th_iro_wa_nioedo_4_39:
-        .byte           N23   , Dn0 , v080
+        .byte           N23   , Dn0 , v100
         .byte   W24
         .byte           N11
         .byte   W12
         .byte           N23   , En0
         .byte   W24
-        .byte           N32   , Fn0 , v080 , gtp3
+        .byte           N32   , Fn0 , v100 , gtp3
         .byte   W36
         .byte   PEND
 @ 040   ----------------------------------------
@@ -2132,21 +2133,21 @@ mus_th_iro_wa_nioedo_4_39:
          .word  mus_th_iro_wa_nioedo_4_26
 @ 041   ----------------------------------------
 mus_th_iro_wa_nioedo_4_41:
-        .byte           N44   , Dn1 , v080 , gtp3
+        .byte           N44   , Dn1 , v100 , gtp3
         .byte   W48
         .byte                   Bn0
         .byte   W48
         .byte   PEND
 @ 042   ----------------------------------------
 mus_th_iro_wa_nioedo_4_42:
-        .byte           N44   , Gn0 , v080 , gtp3
+        .byte           N44   , Gn0 , v100 , gtp3
         .byte   W48
         .byte                   Gn0
         .byte   W48
         .byte   PEND
 @ 043   ----------------------------------------
 mus_th_iro_wa_nioedo_4_43:
-        .byte           N23   , An0 , v080
+        .byte           N23   , An0 , v100
         .byte   W24
         .byte                   An0
         .byte   W24
@@ -2166,7 +2167,7 @@ mus_th_iro_wa_nioedo_4_43:
          .word  mus_th_iro_wa_nioedo_4_2
 @ 047   ----------------------------------------
 mus_th_iro_wa_nioedo_4_47:
-        .byte           N23   , Dn1 , v080
+        .byte           N23   , Dn1 , v100
         .byte   W24
         .byte                   Dn1
         .byte   W24
@@ -2185,7 +2186,7 @@ mus_th_iro_wa_nioedo_4_47:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_4_26
 @ 051   ----------------------------------------
-        .byte           N23   , As0 , v080
+        .byte           N23   , As0 , v100
         .byte   W24
         .byte                   As0
         .byte   W24
@@ -2203,7 +2204,7 @@ mus_th_iro_wa_nioedo_4_47:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_4_13
 @ 055   ----------------------------------------
-        .byte           N32   , An0 , v080 , gtp3
+        .byte           N32   , An0 , v100 , gtp3
         .byte   W36
         .byte           N11   , Gn0
         .byte   W12
@@ -2224,21 +2225,21 @@ mus_th_iro_wa_nioedo_4_47:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_4_17
 @ 060   ----------------------------------------
-        .byte           N11   , Dn1 , v080
+        .byte           N11   , Dn1 , v100
         .byte   W12
         .byte                   Dn1
         .byte   W12
-        .byte           N68   , Dn1 , v080 , gtp3
+        .byte           N68   , Dn1 , v100 , gtp3
         .byte   W72
 @ 061   ----------------------------------------
         .byte           N11   , Cn1
         .byte   W12
         .byte                   Cn1
         .byte   W12
-        .byte           N68   , Cn1 , v080 , gtp3
+        .byte           N68   , Cn1 , v100 , gtp3
         .byte   W72
 @ 062   ----------------------------------------
-        .byte           N92   , Gn0 , v080 , gtp3
+        .byte           N92   , Gn0 , v100 , gtp3
         .byte   W96
 @ 063   ----------------------------------------
         .byte                   Gn0
@@ -2307,7 +2308,7 @@ mus_th_iro_wa_nioedo_4_47:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_4_33
 @ 075   ----------------------------------------
-        .byte           N17   , As0 , v080
+        .byte           N17   , As0 , v100
         .byte   W18
         .byte                   As0
         .byte   W18
@@ -2319,7 +2320,7 @@ mus_th_iro_wa_nioedo_4_47:
         .byte   W24
         .byte                   As0
         .byte   W24
-        .byte           N44   , Cn1 , v080 , gtp3
+        .byte           N44   , Cn1 , v100 , gtp3
         .byte   W48
 @ 077   ----------------------------------------
         .byte   PATT
@@ -2367,7 +2368,7 @@ mus_th_iro_wa_nioedo_4_47:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_4_47
 @ 092   ----------------------------------------
-        .byte           N92   , Dn1 , v080 , gtp3
+        .byte           N92   , Dn1 , v100 , gtp3
         .byte   W96
         .byte   GOTO
          .word  mus_th_iro_wa_nioedo_4_LOOP
@@ -2378,7 +2379,7 @@ mus_th_iro_wa_nioedo_5:
         .byte   KEYSH , mus_th_iro_wa_nioedo_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 120
-        .byte           VOL   , 100
+        .byte           VOL   , 100 * mus_th_iro_wa_nioedo_mvl/mxv
 @ 001   ----------------------------------------
         .byte   W24
 @ 002   ----------------------------------------
@@ -2401,7 +2402,7 @@ mus_th_iro_wa_nioedo_5:
         .byte   W96
 @ 011   ----------------------------------------
 mus_th_iro_wa_nioedo_5_LOOP:
-        .byte           TIE   , Cs2 , v080
+        .byte           TIE   , Cs2 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2421,7 +2422,7 @@ mus_th_iro_wa_nioedo_5_LOOP:
         .byte   W12
 @ 012   ----------------------------------------
 mus_th_iro_wa_nioedo_5_12:
-        .byte           N48   , Dn1 , v080
+        .byte           N48   , Dn1 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2445,7 +2446,7 @@ mus_th_iro_wa_nioedo_5_12:
          .word  mus_th_iro_wa_nioedo_5_12
 @ 014   ----------------------------------------
 mus_th_iro_wa_nioedo_5_14:
-        .byte           N48   , Dn1 , v080
+        .byte           N48   , Dn1 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2467,7 +2468,7 @@ mus_th_iro_wa_nioedo_5_14:
 @ 015   ----------------------------------------
 mus_th_iro_wa_nioedo_5_15:
         .byte           EOT   , Cs2
-        .byte           TIE   , Cs2 , v080
+        .byte           TIE   , Cs2 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2493,7 +2494,7 @@ mus_th_iro_wa_nioedo_5_15:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_5_12
 @ 018   ----------------------------------------
-        .byte           N48   , Dn1 , v080
+        .byte           N48   , Dn1 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2557,7 +2558,7 @@ mus_th_iro_wa_nioedo_5_15:
         .byte   W12
 @ 028   ----------------------------------------
 mus_th_iro_wa_nioedo_5_28:
-        .byte           N12   , Fs1 , v080
+        .byte           N12   , Fs1 , v100
         .byte           N12   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2585,7 +2586,7 @@ mus_th_iro_wa_nioedo_5_28:
          .word  mus_th_iro_wa_nioedo_5_28
 @ 030   ----------------------------------------
 mus_th_iro_wa_nioedo_5_30:
-        .byte           N12   , Fs1 , v080
+        .byte           N12   , Fs1 , v100
         .byte           N12   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2613,7 +2614,7 @@ mus_th_iro_wa_nioedo_5_30:
          .word  mus_th_iro_wa_nioedo_5_15
 @ 032   ----------------------------------------
 mus_th_iro_wa_nioedo_5_32:
-        .byte           N48   , Dn1 , v080
+        .byte           N48   , Dn1 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2702,7 +2703,7 @@ mus_th_iro_wa_nioedo_5_32:
 @ 042   ----------------------------------------
 mus_th_iro_wa_nioedo_5_42:
         .byte           EOT   , Cs2
-        .byte           N96   , Cs2 , v080
+        .byte           N96   , Cs2 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2723,7 +2724,7 @@ mus_th_iro_wa_nioedo_5_42:
         .byte   PEND
 @ 043   ----------------------------------------
 mus_th_iro_wa_nioedo_5_43:
-        .byte           N48   , Cs2 , v080
+        .byte           N48   , Cs2 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2741,7 +2742,7 @@ mus_th_iro_wa_nioedo_5_43:
         .byte   PEND
 @ 044   ----------------------------------------
 mus_th_iro_wa_nioedo_5_44:
-        .byte           TIE   , Cs2 , v080
+        .byte           TIE   , Cs2 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2774,7 +2775,7 @@ mus_th_iro_wa_nioedo_5_44:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_5_12
 @ 049   ----------------------------------------
-        .byte           N48   , Dn1 , v080
+        .byte           N48   , Dn1 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2880,7 +2881,7 @@ mus_th_iro_wa_nioedo_5_44:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_5_12
 @ 067   ----------------------------------------
-        .byte           N48   , Dn1 , v080
+        .byte           N48   , Dn1 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -2918,7 +2919,7 @@ mus_th_iro_wa_nioedo_5_44:
          .word  mus_th_iro_wa_nioedo_5_32
 @ 074   ----------------------------------------
         .byte           EOT   , Cs2
-        .byte           N96   , Cs2 , v080
+        .byte           N96   , Cs2 , v100
         .byte           N18   , Cn1
         .byte   W18
         .byte                   Cn1
@@ -2999,7 +3000,7 @@ mus_th_iro_wa_nioedo_5_44:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_5_12
 @ 089   ----------------------------------------
-        .byte           N48   , Dn1 , v080
+        .byte           N48   , Dn1 , v100
         .byte           N24   , Cn1
         .byte   W12
         .byte                   Fs1
@@ -3047,12 +3048,12 @@ mus_th_iro_wa_nioedo_6:
 @ 000   ----------------------------------------
         .byte           BENDR , 12
         .byte           VOICE , 1
-        .byte           VOL   , 100
+        .byte           VOL   , 100 * mus_th_iro_wa_nioedo_mvl/mxv
 @ 001   ----------------------------------------
         .byte   W24
 @ 002   ----------------------------------------
 mus_th_iro_wa_nioedo_6_2:
-        .byte           N48   , As1 , v080
+        .byte           N48   , As1 , v100
         .byte           N48   , Dn3
         .byte           N48   , Fn3
         .byte           N48   , As3
@@ -3065,7 +3066,7 @@ mus_th_iro_wa_nioedo_6_2:
         .byte   PEND
 @ 003   ----------------------------------------
 mus_th_iro_wa_nioedo_6_3:
-        .byte           N96   , Fn1 , v080
+        .byte           N96   , Fn1 , v100
         .byte           N96   , Cn3
         .byte           N96   , Fn3
         .byte           N96   , An3
@@ -3076,7 +3077,7 @@ mus_th_iro_wa_nioedo_6_3:
          .word  mus_th_iro_wa_nioedo_6_2
 @ 005   ----------------------------------------
 mus_th_iro_wa_nioedo_6_5:
-        .byte           N96   , Dn1 , v080
+        .byte           N96   , Dn1 , v100
         .byte           N96   , Dn3
         .byte           N96   , Fn3
         .byte           N96   , An3
@@ -3090,7 +3091,7 @@ mus_th_iro_wa_nioedo_6_5:
          .word  mus_th_iro_wa_nioedo_6_5
 @ 008   ----------------------------------------
 mus_th_iro_wa_nioedo_6_8:
-        .byte           N48   , Gn1 , v080
+        .byte           N48   , Gn1 , v100
         .byte           N48   , Dn3
         .byte           N48   , Gn3
         .byte           N48   , As3
@@ -3115,7 +3116,7 @@ mus_th_iro_wa_nioedo_6_8:
         .byte                   Fn3
         .byte                   As3
 mus_th_iro_wa_nioedo_6_LOOP:
-        .byte           N96   , Ds1 , v080
+        .byte           N96   , Ds1 , v100
         .byte           N96   , Ds3
         .byte           N96   , Gn3
         .byte           N96   , As3
@@ -3125,7 +3126,7 @@ mus_th_iro_wa_nioedo_6_LOOP:
          .word  mus_th_iro_wa_nioedo_6_3
 @ 013   ----------------------------------------
 mus_th_iro_wa_nioedo_6_13:
-        .byte           TIE   , Gn1 , v080
+        .byte           TIE   , Gn1 , v100
         .byte           TIE   , Dn3
         .byte           TIE   , Gn3
         .byte           TIE   , As3
@@ -3139,7 +3140,7 @@ mus_th_iro_wa_nioedo_6_15:
         .byte                   Dn3
         .byte                   Gn3
         .byte                   As3
-        .byte           N96   , Ds1 , v080
+        .byte           N96   , Ds1 , v100
         .byte           N96   , Ds3
         .byte           N96   , Gn3
         .byte           N96   , As3
@@ -3150,7 +3151,7 @@ mus_th_iro_wa_nioedo_6_15:
          .word  mus_th_iro_wa_nioedo_6_3
 @ 017   ----------------------------------------
 mus_th_iro_wa_nioedo_6_17:
-        .byte           N96   , Gn1 , v080
+        .byte           N96   , Gn1 , v100
         .byte           N96   , Cn3
         .byte           N96   , Dn3
         .byte           N96   , Gn3
@@ -3158,7 +3159,7 @@ mus_th_iro_wa_nioedo_6_17:
         .byte   PEND
 @ 018   ----------------------------------------
 mus_th_iro_wa_nioedo_6_18:
-        .byte           N96   , Gn1 , v080
+        .byte           N96   , Gn1 , v100
         .byte           N96   , Dn3
         .byte           N96   , Gn3
         .byte           N96   , Bn3
@@ -3169,7 +3170,7 @@ mus_th_iro_wa_nioedo_6_18:
          .word  mus_th_iro_wa_nioedo_6_5
 @ 020   ----------------------------------------
 mus_th_iro_wa_nioedo_6_20:
-        .byte           N96   , Cn1 , v080
+        .byte           N96   , Cn1 , v100
         .byte           N96   , Cn3
         .byte           N96   , En3
         .byte           N96   , Gn3
@@ -3177,7 +3178,7 @@ mus_th_iro_wa_nioedo_6_20:
         .byte   PEND
 @ 021   ----------------------------------------
 mus_th_iro_wa_nioedo_6_21:
-        .byte           TIE   , Gn1 , v080
+        .byte           TIE   , Gn1 , v100
         .byte           TIE   , Dn3
         .byte           TIE   , Gn3
         .byte           TIE   , Bn3
@@ -3191,7 +3192,7 @@ mus_th_iro_wa_nioedo_6_23:
         .byte                   Dn3
         .byte                   Gn3
         .byte                   Bn3
-        .byte           N96   , As1 , v080
+        .byte           N96   , As1 , v100
         .byte           N96   , Dn3
         .byte           N96   , Fn3
         .byte           N96   , As3
@@ -3199,7 +3200,7 @@ mus_th_iro_wa_nioedo_6_23:
         .byte   PEND
 @ 024   ----------------------------------------
 mus_th_iro_wa_nioedo_6_24:
-        .byte           N96   , An1 , v080
+        .byte           N96   , An1 , v100
         .byte           N96   , Cn3
         .byte           N96   , En3
         .byte           N96   , An3
@@ -3210,7 +3211,7 @@ mus_th_iro_wa_nioedo_6_24:
          .word  mus_th_iro_wa_nioedo_6_3
 @ 026   ----------------------------------------
 mus_th_iro_wa_nioedo_6_26:
-        .byte           N48   , Gn1 , v080
+        .byte           N48   , Gn1 , v100
         .byte           N48   , Dn3
         .byte           N48   , Gn3
         .byte           N48   , As3
@@ -3244,7 +3245,7 @@ mus_th_iro_wa_nioedo_6_26:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_6_8
 @ 034   ----------------------------------------
-        .byte           N48   , As1 , v080
+        .byte           N48   , As1 , v100
         .byte           N48   , Dn3
         .byte           N48   , Fn3
         .byte           N48   , As3
@@ -3282,7 +3283,7 @@ mus_th_iro_wa_nioedo_6_26:
          .word  mus_th_iro_wa_nioedo_6_5
 @ 040   ----------------------------------------
 mus_th_iro_wa_nioedo_6_40:
-        .byte           N60   , Gn1 , v080
+        .byte           N60   , Gn1 , v100
         .byte           N60   , Dn3
         .byte           N60   , Gn3
         .byte           N60   , As3
@@ -3307,7 +3308,7 @@ mus_th_iro_wa_nioedo_6_40:
         .byte   W24
 @ 042   ----------------------------------------
 mus_th_iro_wa_nioedo_6_42:
-        .byte           N96   , Gn1 , v080
+        .byte           N96   , Gn1 , v100
         .byte           N96   , Dn3
         .byte           N96   , Gn3
         .byte           N96   , As3
@@ -3315,7 +3316,7 @@ mus_th_iro_wa_nioedo_6_42:
         .byte   PEND
 @ 043   ----------------------------------------
 mus_th_iro_wa_nioedo_6_43:
-        .byte           N96   , An1 , v080
+        .byte           N96   , An1 , v100
         .byte           N96   , Cs3
         .byte           N96   , En3
         .byte           N96   , Gn3
@@ -3339,7 +3340,7 @@ mus_th_iro_wa_nioedo_6_43:
          .word  mus_th_iro_wa_nioedo_6_40
 @ 049   ----------------------------------------
 mus_th_iro_wa_nioedo_6_49:
-        .byte           N24   , Dn1 , v080
+        .byte           N24   , Dn1 , v100
         .byte           N24   , Dn3
         .byte           N24   , Fn3
         .byte           N24   , An3
@@ -3355,7 +3356,7 @@ mus_th_iro_wa_nioedo_6_49:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_6_8
 @ 051   ----------------------------------------
-        .byte           N96   , As1 , v080
+        .byte           N96   , As1 , v100
         .byte           N96   , Dn3
         .byte           N96   , Fn3
         .byte           N96   , As3
@@ -3434,7 +3435,7 @@ mus_th_iro_wa_nioedo_6_49:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_6_2
 @ 076   ----------------------------------------
-        .byte           N60   , As1 , v080
+        .byte           N60   , As1 , v100
         .byte           N60   , Dn3
         .byte           N60   , Fn3
         .byte           N60   , As3
@@ -3487,7 +3488,7 @@ mus_th_iro_wa_nioedo_6_49:
         .byte   PATT
          .word  mus_th_iro_wa_nioedo_6_8
 @ 091   ----------------------------------------
-        .byte           TIE   , Dn1 , v080
+        .byte           TIE   , Dn1 , v100
         .byte           TIE   , Dn3
         .byte           TIE   , Fn3
         .byte           TIE   , An3

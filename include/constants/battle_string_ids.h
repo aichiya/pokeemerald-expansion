@@ -712,16 +712,17 @@
 #define STRINGID_FOGISDEEP                            710
 #define STRINGID_FOGLIFTED                            711
 #define STRINGID_PKMNMADESHELLGLEAM                   712
+#define STRINGID_FICKLEBEAMDOUBLED                    713
 
-#define STRINGID_FANTASYBREAKERENTERS                 713
-#define STRINGID_YORIGAMICURSE                        714
-#define STRINGID_PKMNRAISEDEVASION                    715
-#define STRINGID_TIMEJACKERENTERS                     716
-#define STRINGID_LEECHSEEDHEALSABILITYPUREWHITE       717
-#define STRINGID_PKMNFLUFFIEDINTO                     718
-#define STRINGID_PARTYGOTWIPEDOUT                     719
+#define STRINGID_FANTASYBREAKERENTERS                 714
+#define STRINGID_YORIGAMICURSE                        715
+#define STRINGID_PKMNRAISEDEVASION                    716
+#define STRINGID_TIMEJACKERENTERS                     717
+#define STRINGID_LEECHSEEDHEALSABILITYPUREWHITE       718
+#define STRINGID_PKMNFLUFFIEDINTO                     719
+#define STRINGID_PARTYGOTWIPEDOUT                     720
 
-#define BATTLESTRINGS_COUNT                           720
+#define BATTLESTRINGS_COUNT                           721
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

@@ -849,6 +849,8 @@ extern const u8 BattleScript_EffectUpperHand[];
 extern const u8 BattleScript_EffectTidyUp[];
 extern const u8 BattleScript_EffectSpicyExtract[];
 extern const u8 BattleScript_DamageToQuarterTargetHP[];
+extern const u8 BattleScript_EffectFickleBeam[];
+extern const u8 BattleScript_FickleBeamDoubled[];
 extern const u8 BattleScript_EffectUltraInstinct[];
 extern const u8 BattleScript_EffectATrance[];
 extern const u8 BattleScript_EffectFluffication[];

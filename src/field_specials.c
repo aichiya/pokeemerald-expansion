@@ -1863,7 +1863,8 @@ void PartyMonBecomeEgg(void)
         if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
         {
             if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_SPECIAL_GIFT
-               || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_DEBUG)
+               || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_DEBUG
+               || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_ZERO)
             {
                 CalculateMonStats(mon);
             }
@@ -1900,7 +1901,8 @@ void PartyMonBecomeEgg(void)
     struct Pokemon *mon = &gPlayerParty[0];
 
     if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_SPECIAL_GIFT
-        || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_DEBUG)
+        || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_DEBUG
+        || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_ZERO)
     {
         CalculateMonStats(mon);
     }

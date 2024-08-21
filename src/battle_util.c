@@ -9733,6 +9733,11 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
             atkStage = gBattleMons[battlerAtk].statStages[STAT_SPDEF];
         }
     }
+    else if (gMovesInfo[move].effect == EFFECT_ILLUSIONARY_DOMINATION)
+    {
+        atkStat = gBattleMons[battlerAtk].speed;
+        atkStage = gBattleMons[battlerAtk].statStages[STAT_SPEED];
+    }
     else
     {
         if (IS_MOVE_PHYSICAL(move))

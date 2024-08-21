@@ -468,6 +468,29 @@ static const union AffineAnimCmd *const sAffineAnims_VoltTackleBolt[] =
     sAffineAnim_VoltTackleBolt,
 };
 
+static const union AffineAnimCmd sAffineAnim_IllusionaryDominanceHorizontalBird[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 192, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd *const sAffineAnims_IllusionaryDominanceHorizontalBird[] =
+{
+    sAffineAnim_IllusionaryDominanceHorizontalBird,
+};
+
+static const union AffineAnimCmd sAffineAnim_IllusionaryDominanceHorizontalBirdReverse[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 64, 0),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd *const sAffineAnims_IllusionaryDominanceHorizontalBirdReverse[] =
+{
+    sAffineAnim_IllusionaryDominanceHorizontalBirdReverse,
+};
+
+
 const struct SpriteTemplate gVoltTackleBoltSpriteTemplate =
 {
     .tileTag = ANIM_TAG_SPARK,
@@ -487,6 +510,28 @@ const struct SpriteTemplate gFairyLockChainsSpriteTemplate =
     .anims = gDummySpriteAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimVoltTackleBolt,
+};
+
+const struct SpriteTemplate gIllusionaryDominanceHorizontalBirdSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_BIRD,
+    .paletteTag = ANIM_TAG_BIRD,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .anims = sAnims_VoltTackleBolt,
+    .images = NULL,
+    .affineAnims = sAffineAnims_IllusionaryDominanceHorizontalBird,
+    .callback = AnimVoltTackleBolt,
+};
+
+const struct SpriteTemplate gIllusionaryDominanceHorizontalBirdReverseSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_BIRD,
+    .paletteTag = ANIM_TAG_BIRD,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .anims = sAnims_VoltTackleBolt,
+    .images = NULL,
+    .affineAnims = sAffineAnims_IllusionaryDominanceHorizontalBirdReverse,
     .callback = AnimVoltTackleBolt,
 };
 
@@ -1203,9 +1248,21 @@ static bool8 CreateVoltTackleBolt(struct Task *task, u8 taskId)
 {
     u32 spriteId;
     bool32 isFairyLock = (gAnimMoveIndex == MOVE_FAIRY_LOCK);
+    bool32 isIllusionaryDominance = (gAnimMoveIndex == MOVE_ILLUSIONARY_DOMINATION);
 
     if (isFairyLock)
         spriteId = CreateSprite(&gFairyLockChainsSpriteTemplate, task->data[3], task->data[5] + 10, 35);
+    else if (isIllusionaryDominance)
+    {
+        if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
+        {
+            spriteId = CreateSprite(&gIllusionaryDominanceHorizontalBirdSpriteTemplate, task->data[3], task->data[5], 35);
+        }
+        else
+        {
+            spriteId = CreateSprite(&gIllusionaryDominanceHorizontalBirdReverseSpriteTemplate, task->data[3], task->data[5], 35);
+        }
+    }
     else
         spriteId = CreateSprite(&gVoltTackleBoltSpriteTemplate, task->data[3], task->data[5], 35);
 

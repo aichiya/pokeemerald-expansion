@@ -20825,6 +20825,25 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_FLUFFICATION,
     },
 
+    [MOVE_ILLUSIONARY_DOMINATION] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("Illu. Dom.", "Illusionary Dom."),
+        .description = COMPOUND_STRING(
+            "Uses user's speed stat for\n"
+            "attacking, and hurts user."),
+        .effect = EFFECT_ILLUSIONARY_DOMINATION,
+        .power = 170,
+        .type = TYPE_FLYING,
+        .accuracy = 90,
+        .recoil = 33,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .battleAnimScript = Move_ILLUSIONARY_DOMINATION,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

@@ -855,6 +855,7 @@ extern const u8 Move_TWIN_SPARK[];
 extern const u8 Move_DIMENSION_KICK[];
 extern const u8 Move_DIMENSION_SHOT[];
 extern const u8 Move_FLUFFICATION[];
+extern const u8 Move_ILLUSIONARY_DOMINATION[];
 extern const u8 Move_BREAKNECK_BLITZ[];
 extern const u8 Move_ALL_OUT_PUMMELING[];
 extern const u8 Move_SUPERSONIC_SKYSTRIKE[];

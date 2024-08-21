@@ -7249,7 +7249,7 @@ BattleScript_TargetFormChangeWithStringNoPopup::
 
 BattleScript_BattlerFormChangeWithStringEnd3::
 	pause 5
-	call BattleScript_AbilityPopUp
+	call BattleScript_AbilityPopUpScripting
 	flushtextbox
 	handleformchange BS_SCRIPTING, 0
 	handleformchange BS_SCRIPTING, 1
@@ -8143,7 +8143,7 @@ BattleScript_DeltaStreamActivates::
 	end3
 
 BattleScript_ProtosynthesisActivates::
-	call BattleScript_AbilityPopUp
+	call BattleScript_AbilityPopUpScripting
 	printstring STRINGID_SUNLIGHTACTIVATEDABILITY
 	waitmessage B_WAIT_TIME_MED
 	printstring STRINGID_STATWASHEIGHTENED

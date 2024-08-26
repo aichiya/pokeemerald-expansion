@@ -12,7 +12,7 @@ voicegroup205::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_glockenspiel,                    255, 255,   0, 255       @ 009 | Direct | GBA Glockenspiel | VVVVV
 	voice_directsound 60, 0, DirectSoundWaveData_ethnic_flavours_atarigane,               255,   0, 255,   0       @ 010 | Direct | GBA Flavours Atarigane
 	voice_directsound 60, 0, DirectSoundWaveData_heart_of_asia_gamelan,                   255, 255,   0, 255       @ 011 | Direct | GBA Gamelan
-	voice_keysplit voicegroup713, KeySplitTable38                                                                  @ 012 | Direct | HGSS Music Box | VVVVV
+	voice_keysplit voicegroup713, KeySplitTable38                                                                  @ 012 | Direct | HGSS Music Box | Decay 1.495s Sustain 100 Release 0.416s
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_xylophone,                       255, 235,   0, 204       @ 013 | Direct | GBA Xylophone
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_tubular_bell,                    255, 165,  90, 216       @ 014 | Direct | GBA Tubular Bell | VVVVV
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                        @ 015 | ---
@@ -25,7 +25,7 @@ voicegroup205::                                                                 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                        @ 022 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                        @ 023 | ---
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_nylon_str_guitar,                128, 255,   0, 255       @ 024 | Direct | GBA Nylon Guitar 1
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_nylon_str_guitar,                255, 255,   0, 255       @ 025 | Direct | GBA Nylon Guitar 2 | VVVVV
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,                  255, 234,   0, 204       @ 025 | Direct | GBA Nylon Guitar 2 | Decay 1.854s Sustain 100 Release 0.407s
 	voice_keysplit voicegroup248, KeySplitTable41                                                                  @ 026 | Direct | HGSS Martin Guitar
 	voice_keysplit voicegroup251, KeySplitTable41                                                                  @ 027 | Direct | HGSS Clean Guitar
 	voice_directsound 60, 0, DirectSoundWaveData_unused_guitar_separates_power_chord,     255,   0, 255, 127       @ 028 | Direct | GBA Guitar

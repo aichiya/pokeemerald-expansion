@@ -1448,8 +1448,9 @@
 
 #define MUS_TH_WITHERED_FANTASY 1478
 #define MUS_TH_IRO_WA_NIOEDO 1479
+#define MUS_TH_PRIMAL_SCENE_SOLO 1480
 
-#define END_MUS 					MUS_TH_IRO_WA_NIOEDO
+#define END_MUS 					MUS_TH_PRIMAL_SCENE_SOLO
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

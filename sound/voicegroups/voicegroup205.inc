@@ -7,8 +7,8 @@ voicegroup205::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low,          128, 249,   0, 188       @ 004 | Direct | GBA Electric Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_high,         255, 188, 103, 165       @ 005 | Direct | GBA Electric Piano 2
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 7, 15, 0                                         @ 006 | Wave | GBA Programmable Wave 1
-	voice_keysplit voicegroup195, KeySplitTable1                                                                   @ 007 | Direct | GBA Piano 1
-	voice_keysplit voicegroup195, KeySplitTable1                                                                   @ 008 | Direct | GBA Piano 2
+	voice_keysplit voicegroup714, KeySplitTableGBAPiano1Custom                                                     @ 007 | Direct | GBA Piano 1
+	voice_directsound 60, 0, DirectSoundWaveData_steinway_b_piano,                        128, 204,  51, 242       @ 008 | Direct | GBA Piano 2
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_glockenspiel,                    255, 217,   0, 127       @ 009 | Direct | GBA Glockenspiel | Decay 1.008s Sustain 100 Release 23.602s
 	voice_directsound 60, 0, DirectSoundWaveData_ethnic_flavours_atarigane,               255,   0, 255,   0       @ 010 | Direct | GBA Flavours Atarigane
 	voice_directsound 60, 0, DirectSoundWaveData_heart_of_asia_gamelan,                   255, 255,   0, 255       @ 011 | Direct | GBA Gamelan

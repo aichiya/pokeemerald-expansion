@@ -323,6 +323,7 @@
 .include "sound/voicegroups/voicegroup711.inc" @ Modified voicegroup192 HGSS Taiko Drum
 .include "sound/voicegroups/voicegroup712.inc" @ Modified voicegroup193 HGSS Taiko Drum 2
 .include "sound/voicegroups/voicegroup713.inc" @ Modified HGSS Music Box Multi Sample
+.include "sound/voicegroups/voicegroup714.inc" @ Modified HGSS Piano Multi Sample
 
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
 

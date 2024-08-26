@@ -1483,6 +1483,7 @@ gSongTable::
 	song mus_th_iro_wa_nioedo, 0, 0
 	song mus_th_primal_scene_solo, 0, 0
 	song mus_th_kimi_to_yume_no_nakade, 0, 0
+	song mus_th_kimi_to_yume_no_nakade_test, 0, 0
 
 	.align 2
 dummy_song_header:

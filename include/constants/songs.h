@@ -1450,8 +1450,9 @@
 #define MUS_TH_IRO_WA_NIOEDO 1479
 #define MUS_TH_PRIMAL_SCENE_SOLO 1480
 #define MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE 1481
+#define MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE_TEST 1482
 
-#define END_MUS 					MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE
+#define END_MUS 					MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE_TEST
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -2133,6 +2133,7 @@ SECTIONS {
         sound/songs/mus_th_iro_wa_nioedo.o(.rodata);
         sound/songs/mus_th_primal_scene_solo.o(.rodata);
         sound/songs/mus_th_kimi_to_yume_no_nakade.o(.rodata);
+        sound/songs/mus_th_kimi_to_yume_no_nakade_test.o(.rodata);
     } > ROM =0
 
     lib_rodata :

@@ -9,7 +9,7 @@ voicegroup205::                                                                 
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 7, 15, 0                                         @ 006 | Wave | GBA Programmable Wave 1
 	voice_keysplit voicegroup195, KeySplitTable1                                                                   @ 007 | Direct | GBA Piano 1
 	voice_keysplit voicegroup195, KeySplitTable1                                                                   @ 008 | Direct | GBA Piano 2
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_glockenspiel,                    255, 255,   0, 255       @ 009 | Direct | GBA Glockenspiel | VVVVV
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_glockenspiel,                    255, 217,   0, 127       @ 009 | Direct | GBA Glockenspiel | Decay 1.008s Sustain 100 Release 23.602s
 	voice_directsound 60, 0, DirectSoundWaveData_ethnic_flavours_atarigane,               255,   0, 255,   0       @ 010 | Direct | GBA Flavours Atarigane
 	voice_directsound 60, 0, DirectSoundWaveData_heart_of_asia_gamelan,                   255, 255,   0, 255       @ 011 | Direct | GBA Gamelan
 	voice_keysplit voicegroup713, KeySplitTable38                                                                  @ 012 | Direct | HGSS Music Box | Decay 1.495s Sustain 100 Release 0.416s
@@ -46,7 +46,7 @@ voicegroup205::                                                                 
 	voice_keysplit voicegroup249, KeySplitTable32                                                                  @ 043 | Direct | HGSS Distortion Guitar 1
 	voice_keysplit voicegroup250, KeySplitTable32                                                                  @ 044 | Direct | HGSS Distortion Guitar 2
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_pizzicato_strings,               255, 216,   0, 165       @ 045 | Direct | GBA Pizzicato
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_harp,                            255, 242,  51, 242       @ 046 | Direct | GBA Harp
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_harp,                            255, 217,   0, 242       @ 046 | Direct | GBA Harp Decay 1.008s Sustain 100 Release 1.642s
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_timpani,                         255, 246,   0, 226       @ 047 | Direct | GBA Timpani
 	voice_keysplit voicegroup196, KeySplitTable2                                                                   @ 048 | Direct | GBA String
 	voice_keysplit voicegroup255, KeySplitTable45                                                                  @ 049 | Direct | HGSS String | VVVVV

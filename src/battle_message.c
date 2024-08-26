@@ -858,6 +858,7 @@ static const u8 sText_TimeJackerEnters[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} is
 static const u8 sText_LeechSeedHealsAbilityPureWhite[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} got healed from\nthe Leech Seed due to {B_ATK_ABILITY}!");
 static const u8 sText_FluffiedInto[] = _("{B_DEF_NAME_WITH_PREFIX} got fluffied and\ntransformed into {B_BUFF1}!");
 static const u8 sText_FoesPartyGotWipedOut[] = _("Opposing party got wiped out.");
+static const u8 sText_PkmnCutsSpAttackWith[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\ndisturbs {B_DEF_NAME_WITH_PREFIX}'s Special Attack!");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -1571,6 +1572,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_LEECHSEEDHEALSABILITYPUREWHITE - BATTLESTRINGS_TABLE_START] = sText_LeechSeedHealsAbilityPureWhite,
     [STRINGID_PKMNFLUFFIEDINTO - BATTLESTRINGS_TABLE_START] = sText_FluffiedInto,
     [STRINGID_PARTYGOTWIPEDOUT - BATTLESTRINGS_TABLE_START] = sText_FoesPartyGotWipedOut,
+    [STRINGID_PKMNCUTSSPATTACKWITH - BATTLESTRINGS_TABLE_START] = sText_PkmnCutsSpAttackWith,
 };
 
 const u16 gTrainerUsedItemStringIds[] =

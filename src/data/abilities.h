@@ -2823,4 +2823,15 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .failsOnImposter = TRUE,
     },
 
+    [ABILITY_MANA_DISTURPTOR] =
+    {
+    #if B_EXPANDED_ABILITY_NAMES == TRUE
+        .name = _("Mana Disturptor"),
+    #else
+        .name = _("Mana Disturb"),
+    #endif
+        .description = COMPOUND_STRING("Weakens the foe's Sp.Atk."),
+        .aiRating = 7,
+    },
+
 };

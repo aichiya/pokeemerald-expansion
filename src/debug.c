@@ -5577,6 +5577,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_TH_WITHERED_FANTASY) \
     X(MUS_TH_IRO_WA_NIOEDO) \
     X(MUS_TH_PRIMAL_SCENE_SOLO) \
+    X(MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

@@ -1,130 +1,130 @@
 	.align 2
 voicegroup999::                                                                @ \attack, \decay, \sustain, \release
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_nylon_str_guitar,               255, 200, 0, 255                  @ 000 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 001 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 002 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 003 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 004 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 005 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 006 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 007 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 008 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 009 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 010 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 011 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 012 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 013 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 014 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 015 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 016 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 017 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 018 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 019 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 020 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 021 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 022 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 023 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 024 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 025 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 026 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 027 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 028 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 029 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 030 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 031 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 032 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 033 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 034 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 035 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 036 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 037 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 038 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 039 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 040 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 041 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 042 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 043 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 044 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 045 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 046 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 047 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 048 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 049 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 050 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 051 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 052 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 053 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 054 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 055 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 056 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 057 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 058 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 059 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 060 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 061 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 062 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 063 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 064 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 065 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 066 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 067 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 068 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 069 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 070 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 071 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 072 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 073 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 074 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 075 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 076 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 077 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 078 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 079 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 080 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 081 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 082 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 083 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 084 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 085 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 086 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 087 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 088 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 089 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 090 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 091 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 092 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 093 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 094 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 095 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 096 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 097 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 098 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 099 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 100 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 101 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 102 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 103 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 104 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 105 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 106 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 107 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 108 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 109 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 110 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 111 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 112 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 113 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 114 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 115 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 116 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 117 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 118 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 119 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 120 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 121 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 122 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 123 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 124 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 125 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 126 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                                @ 127 | ---
+	voice_keysplit voicegroup713, KeySplitTable38                                     @  001| HGSS Music Box 
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,254,0,204 @  002| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,253,0,204 @  003| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,252,0,204 @  004| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,251,0,204 @  005| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,250,0,204 @  006| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,249,0,204 @  007| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,248,0,204 @  008| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,247,0,204 @  009| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,246,0,204 @  010| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,245,0,204 @  011| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,244,0,204 @  012| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,243,0,204 @  013| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,242,0,204 @  014| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,241,0,204 @  015| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,240,0,204 @  016| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,239,0,204 @  017| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,238,0,204 @  018| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,237,0,204 @  019| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,236,0,204 @  020| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,235,0,204 @  021| Nylon Guitar Decay 1.875
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,234,0,204 @  022| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,233,0,204 @  023| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,232,0,204 @  024| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,231,0,204 @  025| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,230,0,204 @  026| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,229,0,204 @  027| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,228,0,204 @  028| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,227,0,204 @  029| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,226,0,204 @  030| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,225,0,204 @  031| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,224,0,204 @  032| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,223,0,204 @  033| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,222,0,204 @  034| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,221,0,204 @  035| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,220,0,204 @  036| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,219,0,204 @  037| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,218,0,204 @  038| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,217,0,204 @  039| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,216,0,204 @  040| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,215,0,204 @  041| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,214,0,204 @  042| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,213,0,204 @  043| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,212,0,204 @  044| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,211,0,204 @  045| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,210,0,204 @  046| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,209,0,204 @  047| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,208,0,204 @  048| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,207,0,204 @  049| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,206,0,204 @  050| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,205,0,204 @  051| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,204,0,204 @  052| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,203,0,204 @  053| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,202,0,204 @  054| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,201,0,204 @  055| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,200,0,204 @  056| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,199,0,204 @  057| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,198,0,204 @  058| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,197,0,204 @  059| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,196,0,204 @  060| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,195,0,204 @  061| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,194,0,204 @  062| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,193,0,204 @  063| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,192,0,204 @  064| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,191,0,204 @  065| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,190,0,204 @  066| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,189,0,204 @  067| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,188,0,204 @  068| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,187,0,204 @  069| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,186,0,204 @  070| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,185,0,204 @  071| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,184,0,204 @  072| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,183,0,204 @  073| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,182,0,204 @  074| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,181,0,204 @  075| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,180,0,204 @  076| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,179,0,204 @  077| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,178,0,204 @  078| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,177,0,204 @  079| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,176,0,204 @  080| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,175,0,204 @  081| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,174,0,204 @  082| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,173,0,204 @  083| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,172,0,204 @  084| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,171,0,204 @  085| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,170,0,204 @  086| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,169,0,204 @  087| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,168,0,204 @  088| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,167,0,204 @  089| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,166,0,204 @  090| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,165,0,204 @  091| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,164,0,204 @  092| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,163,0,204 @  093| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,162,0,204 @  094| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,161,0,204 @  095| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,160,0,204 @  096| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,159,0,204 @  097| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,158,0,204 @  098| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,157,0,204 @  099| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,156,0,204 @  100| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,155,0,204 @  101| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,154,0,204 @  102| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,153,0,204 @  103| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,152,0,204 @  104| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,151,0,204 @  105| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,150,0,204 @  106| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,149,0,204 @  107| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,148,0,204 @  108| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,147,0,204 @  109| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,146,0,204 @  110| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,145,0,204 @  111| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,144,0,204 @  112| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,143,0,204 @  113| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,142,0,204 @  114| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,141,0,204 @  115| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,140,0,204 @  116| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,139,0,204 @  117| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,138,0,204 @  118| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,137,0,204 @  119| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,136,0,204 @  120| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,135,0,204 @  121| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,134,0,204 @  122| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,133,0,204 @  123| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,132,0,204 @  124| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,131,0,204 @  125| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,130,0,204 @  126| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,129,0,204 @  127| ---
+	voice_directsound 60,0,DirectSoundWaveData_sc88pro_nylon_str_guitar,255,128,0,204 @  128| ---

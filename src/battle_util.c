@@ -4812,6 +4812,16 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_MANA_DISTURPTOR:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gBattlerAttacker = battler;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                SET_STATCHANGER(STAT_SPATK, 1, TRUE);
+                BattleScriptPushCursorAndCallback(BattleScript_ManaDisturptorActivates);
+                effect++;
+            }
+            break;
         case ABILITY_WINNING_COMBINATION_3:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
@@ -10714,6 +10724,9 @@ uq4_12_t CalcTypeEffectivenessMultiplier(u32 move, u32 moveType, u32 battlerAtk,
     {
         modifier = CalcTypeEffectivenessMultiplierInternal(move, moveType, battlerAtk, battlerDef, recordAbilities, modifier, defAbility);
         if (gMovesInfo[move].effect == EFFECT_TWO_TYPED_MOVE)
+            modifier = CalcTypeEffectivenessMultiplierInternal(move, gMovesInfo[move].argument, battlerAtk, battlerDef, recordAbilities, modifier, defAbility);
+        if (gMovesInfo[move].effect == EFFECT_BRICK_BREAK 
+         && (gCurrentMove == MOVE_DIMENSION_SHOT || gCurrentMove == MOVE_DIMENSION_KICK))
             modifier = CalcTypeEffectivenessMultiplierInternal(move, gMovesInfo[move].argument, battlerAtk, battlerDef, recordAbilities, modifier, defAbility);
     }
 

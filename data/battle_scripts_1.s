@@ -10223,3 +10223,90 @@ BattleScript_WinningCombination3End:
 	copybyte gBattlerTarget, sSAVED_BATTLER
 	pause B_WAIT_TIME_MED
 	end3
+
+BattleScript_ManaDisturptorActivates::
+	savetarget
+.if B_ABILITY_POP_UP == TRUE
+	showabilitypopup BS_ATTACKER
+	pause B_WAIT_TIME_LONG
+	destroyabilitypopup
+.endif
+	setbyte gBattlerTarget, 0
+BattleScript_ManaDisturptorLoop:
+	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_ManaDisturptorLoopIncrement
+	jumpiftargetally BattleScript_ManaDisturptorLoopIncrement
+	jumpifabsent BS_TARGET, BattleScript_ManaDisturptorLoopIncrement
+	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_ManaDisturptorLoopIncrement
+.if B_UPDATED_INTIMIDATE >= GEN_8 @These abilties specifically prevent just intimidate, without blocking stat decreases
+	jumpifability BS_TARGET, ABILITY_INNER_FOCUS, BattleScript_ManaDisturptorPrevented
+@	jumpifability BS_TARGET, ABILITY_SCRAPPY, BattleScript_ManaDisturptorPrevented
+	jumpifability BS_TARGET, ABILITY_OWN_TEMPO, BattleScript_ManaDisturptorPrevented
+	jumpifability BS_TARGET, ABILITY_OBLIVIOUS, BattleScript_ManaDisturptorPrevented
+.endif
+	jumpifability BS_TARGET, ABILITY_GUARD_DOG, BattleScript_ManaDisturptorInReverse
+BattleScript_ManaDisturptorEffect:
+	copybyte sBATTLER, gBattlerAttacker
+	setstatchanger STAT_ATK, 1, TRUE
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_ManaDisturptorLoopIncrement
+	setgraphicalstatchangevalues
+	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_ManaDisturptorContrary
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_ManaDisturptorWontDecrease
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_PKMNCUTSATTACKWITH
+BattleScript_ManaDisturptorEffect_WaitString:
+	waitmessage B_WAIT_TIME_LONG
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_TryManaDisturptorHoldEffects
+BattleScript_ManaDisturptorLoopIncrement:
+	addbyte gBattlerTarget, 1
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_ManaDisturptorLoop
+	copybyte sBATTLER, gBattlerAttacker
+	destroyabilitypopup
+	restoretarget
+	pause B_WAIT_TIME_MED
+	end3
+
+BattleScript_ManaDisturptorPrevented:
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_PKMNPREVENTSSTATLOSSWITH
+	goto BattleScript_ManaDisturptorEffect_WaitString
+
+BattleScript_ManaDisturptorWontDecrease:
+	printstring STRINGID_STATSWONTDECREASE
+	goto BattleScript_ManaDisturptorEffect_WaitString
+
+BattleScript_ManaDisturptorContrary:
+	call BattleScript_AbilityPopUpTarget
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_ManaDisturptorContrary_WontIncrease
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatUpStringIds
+	goto BattleScript_ManaDisturptorEffect_WaitString
+BattleScript_ManaDisturptorContrary_WontIncrease:
+	printstring STRINGID_TARGETSTATWONTGOHIGHER
+	goto BattleScript_ManaDisturptorEffect_WaitString
+
+BattleScript_ManaDisturptorInReverse:
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_AbilityPopUpTarget
+	pause B_WAIT_TIME_SHORT
+	modifybattlerstatstage BS_TARGET, STAT_SPATK, INCREASE, 1, BattleScript_ManaDisturptorLoopIncrement, ANIM_ON
+	call BattleScript_TryManaDisturptorHoldEffects
+	goto BattleScript_ManaDisturptorLoopIncrement
+
+BattleScript_TryManaDisturptorHoldEffects:
+	itemstatchangeeffects BS_TARGET
+	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryManaDisturptorHoldEffectsRet
+	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPEED, 12, BattleScript_TryManaDisturptorHoldEffectsRet
+	setstatchanger STAT_SPEED, 1, FALSE
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryManaDisturptorHoldEffectsRet
+	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	copybyte sBATTLER, gBattlerTarget
+	setlastuseditem BS_TARGET
+	printstring STRINGID_USINGITEMSTATOFPKMNROSE
+	waitmessage B_WAIT_TIME_LONG
+	removeitem BS_TARGET
+BattleScript_TryManaDisturptorHoldEffectsRet:
+	return

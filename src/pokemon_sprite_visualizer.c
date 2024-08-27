@@ -209,6 +209,7 @@ const u8 gBackAnimNames[][23 + 1] =
     [BACK_ANIM_SHAKE_GLOW_RED]          = _("SHAKE GLOW RED"),
     [BACK_ANIM_SHAKE_GLOW_GREEN]        = _("SHAKE GLOW GREEN"),
     [BACK_ANIM_SHAKE_GLOW_BLUE]         = _("SHAKE GLOW BLUE"),
+    [BACK_ANIM_SHAKE_GLOW_BLACK]        = _("SHAKE GLOW BLACK"),
 };
 const u8 gFrontAnimNames[][34] =
 {

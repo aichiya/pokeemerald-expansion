@@ -34,6 +34,7 @@ void SetSpriteCB_MonAnimDummy(struct Sprite *sprite);
 #define BACK_ANIM_SHAKE_GLOW_RED               23
 #define BACK_ANIM_SHAKE_GLOW_GREEN             24
 #define BACK_ANIM_SHAKE_GLOW_BLUE              25
+#define BACK_ANIM_SHAKE_GLOW_BLACK             26
 
 // Pokémon animation function ids (for front and back)
 // Each front anim uses 1, and each back anim uses a set of 3

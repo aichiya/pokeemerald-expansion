@@ -120,9 +120,9 @@ voicegroup601::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 117 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 118 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 119 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 120 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 121 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 122 | ---
+	voice_keysplit_all voicegroup230                                                                          @ 120 | Direct | Drum | HGSS Drum
+	voice_keysplit_all voicegroup231                                                                          @ 121 | Direct | Drum | HGSS Taiko Drum
+    voice_keysplit_all voicegroup232                                                                          @ 122 | Direct | Drum | HGSS synth kick+snare
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 123 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 124 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                   @ 125 | ---

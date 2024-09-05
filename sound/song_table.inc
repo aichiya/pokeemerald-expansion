@@ -1484,6 +1484,9 @@ gSongTable::
 	song mus_th_primal_scene_solo, 0, 0
 	song mus_th_kimi_to_yume_no_nakade, 0, 0
 	song mus_th_kimi_to_yume_no_nakade_test, 0, 0
+	song mus_pkmn_temporal_spire, 0, 0
+	song mus_vcid_venus_di_ujung_jari, 0, 0
+	song mus_negima_kagayaku_kimi_e, 0, 0
 
 	.align 2
 dummy_song_header:

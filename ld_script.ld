@@ -2134,6 +2134,9 @@ SECTIONS {
         sound/songs/mus_th_primal_scene_solo.o(.rodata);
         sound/songs/mus_th_kimi_to_yume_no_nakade.o(.rodata);
         sound/songs/mus_th_kimi_to_yume_no_nakade_test.o(.rodata);
+        sound/songs/mus_pkmn_temporal_spire.o(.rodata);
+        sound/songs/mus_vcid_venus_di_ujung_jari.o(.rodata);
+        sound/songs/mus_negima_kagayaku_kimi_e.o(.rodata);
     } > ROM =0
 
     lib_rodata :

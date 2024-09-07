@@ -1453,9 +1453,11 @@
 #define MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE_TEST 1482
 #define MUS_PKMN_TEMPORAL_SPIRE 1483
 #define MUS_VCID_VENUS_DI_UJUNG_JARI 1484
-#define MUS_KAGAYAKU_KIMI_E 1485
+#define MUS_NEGIMA_KAGAYAKU_KIMI_E 1485
+#define MUS_DGMN_WORLD2_VS_FIRST_BOSS 1486
+#define MUS_PC_URESHIKUTE 1487
 
-#define END_MUS 					MUS_KAGAYAKU_KIMI_E
+#define END_MUS 					MUS_PC_URESHIKUTE
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

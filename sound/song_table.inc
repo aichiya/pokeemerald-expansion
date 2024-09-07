@@ -1487,6 +1487,8 @@ gSongTable::
 	song mus_pkmn_temporal_spire, 0, 0
 	song mus_vcid_venus_di_ujung_jari, 0, 0
 	song mus_negima_kagayaku_kimi_e, 0, 0
+	song mus_dgmn_world2_first_boss, 0, 0
+	song mus_pc_ureshikute, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -2137,6 +2137,8 @@ SECTIONS {
         sound/songs/mus_pkmn_temporal_spire.o(.rodata);
         sound/songs/mus_vcid_venus_di_ujung_jari.o(.rodata);
         sound/songs/mus_negima_kagayaku_kimi_e.o(.rodata);
+        sound/songs/mus_dgmn_world2_first_boss.o(.rodata);
+        sound/songs/mus_pc_ureshikute.o(.rodata);
     } > ROM =0
 
     lib_rodata :

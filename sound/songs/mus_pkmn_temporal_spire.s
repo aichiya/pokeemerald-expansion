@@ -5074,9 +5074,9 @@ mus_pkmn_temporal_spire_0_93:
          .word  mus_pkmn_temporal_spire_0_61
 @ 126   ----------------------------------------
         .byte           PAN   , c_v-63
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_0_LOOP
+        .byte   W12
         .byte   FINE
 
 @****************** Track 1 (Midi-Chn.1) ******************@
@@ -5723,9 +5723,9 @@ mus_pkmn_temporal_spire_1_LOOP:
 @ 125   ----------------------------------------
         .byte   W72
 @ 126   ----------------------------------------
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_1_LOOP
+        .byte   W12
         .byte   FINE
 
 @****************** Track 2 (Midi-Chn.2) ******************@
@@ -6277,9 +6277,9 @@ mus_pkmn_temporal_spire_2_69:
 @ 125   ----------------------------------------
         .byte   W72
 @ 126   ----------------------------------------
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_2_LOOP
+        .byte   W12
         .byte   FINE
 
 @****************** Track 3 (Midi-Chn.3) ******************@
@@ -6967,9 +6967,9 @@ mus_pkmn_temporal_spire_3_69:
 @ 125   ----------------------------------------
         .byte   W72
 @ 126   ----------------------------------------
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_3_LOOP
+        .byte   W12
         .byte   FINE
 
 @****************** Track 4 (Midi-Chn.4) ******************@
@@ -8511,9 +8511,9 @@ mus_pkmn_temporal_spire_4_LOOP:
         .byte   PATT
          .word  mus_pkmn_temporal_spire_4_57
 @ 126   ----------------------------------------
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_4_LOOP
+        .byte   W12
         .byte   FINE
 
 @****************** Track 5 (Midi-Chn.5) ******************@
@@ -9872,11 +9872,11 @@ mus_pkmn_temporal_spire_5_94:
         .byte                   Cn3
         .byte                   Gs2
         .byte           VOL   , 45
+        .byte   GOTO
+         .word  mus_pkmn_temporal_spire_5_LOOP
         .byte   W06
         .byte           N06   , Gn0 , v064
         .byte   W06
-        .byte   GOTO
-         .word  mus_pkmn_temporal_spire_5_LOOP
         .byte   FINE
 
 @****************** Track 6 (Midi-Chn.6) ******************@
@@ -11643,9 +11643,9 @@ mus_pkmn_temporal_spire_6_106:
         .byte           EOT
         .byte           VOL   , 84
         .byte           BEND  , c_v+0
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_6_LOOP
+        .byte   W12
         .byte   FINE
 
 @****************** Track 7 (Midi-Chn.7) ******************@
@@ -12479,9 +12479,9 @@ mus_pkmn_temporal_spire_7_94:
         .byte   W72
 @ 126   ----------------------------------------
         .byte           VOL   , 30
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_7_LOOP
+        .byte   W12
         .byte   FINE
 
 @****************** Track 8 (Midi-Chn.8) ******************@
@@ -13121,9 +13121,9 @@ mus_pkmn_temporal_spire_8_93:
         .byte   W72
 @ 126   ----------------------------------------
         .byte           VOL   , 100
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_8_LOOP
+        .byte   W12
         .byte   FINE
 
 @***************** Track 9 (Midi-Chn.10) ******************@
@@ -13757,9 +13757,9 @@ mus_pkmn_temporal_spire_9_93:
         .byte   PATT
          .word  mus_pkmn_temporal_spire_9_57
 @ 126   ----------------------------------------
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_9_LOOP
+        .byte   W12
         .byte   FINE
 
 @***************** Track 10 (Midi-Chn.11) *****************@
@@ -14865,9 +14865,9 @@ mus_pkmn_temporal_spire_10_93:
         .byte   W04
 @ 126   ----------------------------------------
         .byte                   100
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_10_LOOP
+        .byte   W12
         .byte   FINE
 
 @***************** Track 11 (Midi-Chn.12) *****************@
@@ -15157,9 +15157,9 @@ mus_pkmn_temporal_spire_11_LOOP:
 @ 126   ----------------------------------------
         .byte           VOL   , 100
         .byte           BEND  , c_v+0
-        .byte   W12
         .byte   GOTO
          .word  mus_pkmn_temporal_spire_11_LOOP
+        .byte   W12
         .byte   FINE
 
 

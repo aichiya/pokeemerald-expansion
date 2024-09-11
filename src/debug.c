@@ -5584,6 +5584,8 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_NEGIMA_KAGAYAKU_KIMI_E) \
     X(MUS_DGMN_WORLD2_VS_FIRST_BOSS) \
     X(MUS_PC_URESHIKUTE) \
+    X(MUS_RF2_BOSS2) \
+    X(MUS_GK1_PRESTO) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

@@ -1489,6 +1489,8 @@ gSongTable::
 	song mus_negima_kagayaku_kimi_e, 0, 0
 	song mus_dgmn_world2_first_boss, 0, 0
 	song mus_pc_ureshikute, 0, 0
+	song mus_rf2_boss2, 0, 0
+	song mus_gk1_presto, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -2139,6 +2139,8 @@ SECTIONS {
         sound/songs/mus_negima_kagayaku_kimi_e.o(.rodata);
         sound/songs/mus_dgmn_world2_first_boss.o(.rodata);
         sound/songs/mus_pc_ureshikute.o(.rodata);
+        sound/songs/mus_rf2_boss2.o(.rodata);
+        sound/songs/mus_gk1_presto.o(.rodata);
     } > ROM =0
 
     lib_rodata :

@@ -1,6 +1,6 @@
 	.align 2
 voicegroup999::                                                                @ \attack, \decay, \sustain, \release
-	voice_directsound 60,0,DirectSoundWaveData_sc88pro_harp,255,217,0,242 @  001| ---
+	voice_keysplit_all voicegroup128                                                                         @ 098 | Multi |
 	voice_directsound 60,0,DirectSoundWaveData_sc88pro_harp,255,254,0,242 @  002| ---
 	voice_directsound 60,0,DirectSoundWaveData_sc88pro_harp,255,253,0,242 @  003| ---
 	voice_directsound 60,0,DirectSoundWaveData_sc88pro_harp,255,252,0,242 @  004| ---

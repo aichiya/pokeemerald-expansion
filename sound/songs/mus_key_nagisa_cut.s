@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_key_nagisa_cut_grp, voicegroup201
+	.equ	mus_key_nagisa_cut_grp, voicegroup205
 	.equ	mus_key_nagisa_cut_pri, 0
 	.equ	mus_key_nagisa_cut_rev, 0
 	.equ	mus_key_nagisa_cut_mvl, 127
@@ -19,7 +19,7 @@ mus_key_nagisa_cut_1:
 	.byte	KEYSH , mus_key_nagisa_cut_key+0
 @ 000   ----------------------------------------
 	.byte	TEMPO , 70*mus_key_nagisa_cut_tbs/2
-	.byte		VOICE , 110
+	.byte		VOICE , 7
 	.byte		VOL   , 127*mus_key_nagisa_cut_mvl/mxv
 	.byte		PAN   , c_v+0
 @ 046   ----------------------------------------
@@ -808,7 +808,7 @@ mus_key_nagisa_cut_2:
 	.byte		VOL   , 127*mus_key_nagisa_cut_mvl/mxv
 	.byte	KEYSH , mus_key_nagisa_cut_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 110
+	.byte		VOICE , 7
 @ 046   ----------------------------------------
 	.byte	W72
 @ 047   ----------------------------------------

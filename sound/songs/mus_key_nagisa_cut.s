@@ -19,41 +19,41 @@ mus_key_nagisa_cut_1:
 	.byte	KEYSH , mus_key_nagisa_cut_key+0
 @ 000   ----------------------------------------
 	.byte	TEMPO , 70*mus_key_nagisa_cut_tbs/2
-	.byte		VOICE , 1
+	.byte		VOICE , 110
 	.byte		VOL   , 127*mus_key_nagisa_cut_mvl/mxv
 	.byte		PAN   , c_v+0
 @ 046   ----------------------------------------
 	.byte	TEMPO , 30*mus_key_nagisa_cut_tbs/2
 	.byte	W36
 	.byte	TEMPO , 60*mus_key_nagisa_cut_tbs/2
-	.byte		N11   , En4 
+	.byte		N11   , En4 , v060 
 	.byte	W12
 	.byte		        An4 
 	.byte	W12
-	.byte		        Bn4 
+	.byte		        Bn4
 	.byte	W12
 @ 047   ----------------------------------------
 	.byte	TEMPO , 67*mus_key_nagisa_cut_tbs/2
-	.byte		N23   , En4 
-	.byte		N23   , Bn4 
+	.byte		N23   , En4 , v060 
+	.byte		N23   , Bn4
 	.byte	W24
 	.byte	TEMPO , 72*mus_key_nagisa_cut_tbs/2
-	.byte		        En4 
+	.byte		        En4 , v060 
 	.byte		N11   , An4 
 	.byte	W12
 	.byte	TEMPO , 77*mus_key_nagisa_cut_tbs/2
-	.byte		N23   , Fs4 
+	.byte		N23   , Fs4 , v060 
 	.byte	W12
-	.byte		        En4 
+	.byte		        En4
 	.byte	W12
 	.byte	TEMPO , 80*mus_key_nagisa_cut_tbs/2
-	.byte		N11   , An4 
+	.byte		N11   , An4 , v060 
 	.byte	W12
-	.byte		N23   , En4 
+	.byte		N23   , En4
 	.byte		N11   , Bn4 
 	.byte	W12
 	.byte	TEMPO , 82*mus_key_nagisa_cut_tbs/2
-	.byte		        Cs5 
+	.byte		        Cs5 , v060 
 	.byte	W12
 @ 048   ----------------------------------------
 	.byte		N23   , En4 
@@ -808,7 +808,7 @@ mus_key_nagisa_cut_2:
 	.byte		VOL   , 127*mus_key_nagisa_cut_mvl/mxv
 	.byte	KEYSH , mus_key_nagisa_cut_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 1
+	.byte		VOICE , 110
 @ 046   ----------------------------------------
 	.byte	W72
 @ 047   ----------------------------------------

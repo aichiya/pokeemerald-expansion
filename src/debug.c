@@ -5586,6 +5586,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_PC_URESHIKUTE) \
     X(MUS_RF2_BOSS2) \
     X(MUS_GK1_PRESTO) \
+    X(MUS_FFURY_GEESE) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

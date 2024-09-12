@@ -1458,8 +1458,9 @@
 #define MUS_PC_URESHIKUTE 1487
 #define MUS_RF2_BOSS2 1488
 #define MUS_GK1_PRESTO 1489
+#define MUS_FFURY_GEESE 1490
 
-#define END_MUS 					MUS_GK1_PRESTO
+#define END_MUS 					MUS_FFURY_GEESE
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

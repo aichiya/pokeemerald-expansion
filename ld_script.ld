@@ -2142,6 +2142,7 @@ SECTIONS {
         sound/songs/mus_rf2_boss2.o(.rodata);
         sound/songs/mus_gk1_presto.o(.rodata);
         sound/songs/mus_geese_test1.o(.rodata);
+        soung/songs/mus_gbf_vs_rose_queen.o(.rodata);
     } > ROM =0
 
     lib_rodata :

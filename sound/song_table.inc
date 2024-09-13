@@ -1492,6 +1492,7 @@ gSongTable::
 	song mus_rf2_boss2, 0, 0
 	song mus_gk1_presto, 0, 0
 	song mus_geese_test1, 0, 0
+	song mus_gbf_vs_rose_queen, 0, 0
 
 	.align 2
 dummy_song_header:

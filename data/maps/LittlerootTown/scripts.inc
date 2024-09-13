@@ -454,11 +454,11 @@ LittlerootTown_EventScript_TownSign::
 @	playbgm MUS_TH_IRO_WA_NIOEDO, TRUE
 @	setwildbattle SPECIES_MEW, 100, ITEM_SITRUS_BERRY
 @	dowildbattle
-    setflag FLAG_CUSTOM_BGM_BATTLE
-	setvar VAR_TEMP_F, MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE
-@	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_PLACEHOLDER_856, 0, LittlerootTown_Text_TownSign
-    setwildbattle SPECIES_CELEBI, 50, ITEM_NONE
-	dowildbattle
+@   setflag FLAG_CUSTOM_BGM_BATTLE
+@	setvar VAR_MUSIC_SETTING, MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NICOLAS_5, 0, LittlerootTown_Text_TownSign
+@   setwildbattle SPECIES_CELEBI, 50, ITEM_NONE
+@	dowildbattle
     delay 4
 @	special SavePlayerParty
 @	fadescreen FADE_TO_BLACK

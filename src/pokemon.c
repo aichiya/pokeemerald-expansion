@@ -6473,6 +6473,10 @@ u16 GetBattleBGM(void)
             return MUS_SNY_HARE_HARE_YUKAI;
         case TRAINER_CLASS_OLD_COUPLE:
             return MUS_DBGT_DANDANKOKORO_RECAP;
+        case TRAINER_CLASS_AROMA_LADY:
+            return MUS_GBF_VS_ROSE_QUEEN;
+        case TRAINER_CLASS_EXPERT:
+            return MUS_FFURY_GEESE;
 /*
         case TRAINER_CLASS_PKMN_TRAINER_1:
         case TRAINER_CLASS_PKMN_TRAINER_2:
@@ -6480,9 +6484,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_BIRD_KEEPER:
         case TRAINER_CLASS_COLLECTOR:
         case TRAINER_CLASS_SWIMMER_M:
-        case TRAINER_CLASS_EXPERT:
         case TRAINER_CLASS_BLACK_BELT:
-        case TRAINER_CLASS_AROMA_LADY:
         case TRAINER_CLASS_INTERVIEWER:
         case TRAINER_CLASS_TUBER_F:
         case TRAINER_CLASS_TUBER_M:

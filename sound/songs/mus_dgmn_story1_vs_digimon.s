@@ -19,7 +19,7 @@ mus_dgmn_story1_vs_digimon_1:
 	.byte	KEYSH , mus_dgmn_story1_vs_digimon_key+0
 @ 000   ----------------------------------------
 	.byte	TEMPO , 150*mus_dgmn_story1_vs_digimon_tbs/2
-	.byte		VOICE , 57
+	.byte		VOICE , 38
 	.byte		VOL   , 110*mus_dgmn_story1_vs_digimon_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		MOD   , 0
@@ -34,13 +34,16 @@ mus_dgmn_story1_vs_digimon_1:
 	.byte	W12
 	.byte		N09   , Ds3 
 	.byte	W12
+mus_dgmn_story1_vs_digimon_1_loop:
 	.byte		N68   , En3 
 	.byte	W48
 @ 001   ----------------------------------------
+mus_dgmn_story1_vs_digimon_1_001:
 	.byte	W72
 	.byte		N32   , En3 , v112
 	.byte	W24
 @ 002   ----------------------------------------
+mus_dgmn_story1_vs_digimon_1_002:
 	.byte	W72
 	.byte		N48   , Dn3 
 	.byte	W24
@@ -277,6 +280,8 @@ mus_dgmn_story1_vs_digimon_1_017:
 	.byte	W12
 	.byte		N09   , Ds3 
 	.byte	W12
+	.byte	GOTO
+	.word	mus_dgmn_story1_vs_digimon_1_loop
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.3) ****************@
@@ -299,6 +304,7 @@ mus_dgmn_story1_vs_digimon_2:
 	.byte	W12
 	.byte		N09   , Ds2 
 	.byte	W12
+mus_dgmn_story1_vs_digimon_2_loop:
 	.byte		N05   , En1 , v112
 	.byte	W12
 	.byte		N02   
@@ -561,6 +567,8 @@ mus_dgmn_story1_vs_digimon_2_025:
 	.byte	W12
 	.byte		N09   , Ds2 
 	.byte	W12
+	.byte	GOTO
+	.word	mus_dgmn_story1_vs_digimon_2_loop
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.6) ****************@
@@ -571,9 +579,10 @@ mus_dgmn_story1_vs_digimon_3:
 	.byte		VOICE , 11
 	.byte		VOL   , 110*mus_dgmn_story1_vs_digimon_mvl/mxv
 	.byte		PAN   , c_v-16
-	.byte		MOD   , 100
+	.byte		MOD   , 0 @ 100
 	.byte		BEND  , c_v+0
 	.byte	W48
+mus_dgmn_story1_vs_digimon_3_loop:
 	.byte		N72   , Bn3 , v072
 	.byte	W48
 @ 001   ----------------------------------------
@@ -732,6 +741,8 @@ mus_dgmn_story1_vs_digimon_3_006:
 	.byte	W96
 @ 032   ----------------------------------------
 	.byte	W48
+	.byte	GOTO
+	.word	mus_dgmn_story1_vs_digimon_3_loop
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.7) ****************@
@@ -745,6 +756,7 @@ mus_dgmn_story1_vs_digimon_4:
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte	W48
+mus_dgmn_story1_vs_digimon_4_loop:
 	.byte		N21   , Bn2 , v112
 	.byte		N21   , Bn3 , v088
 	.byte	W36
@@ -1036,6 +1048,8 @@ mus_dgmn_story1_vs_digimon_4_025:
 	.byte		        Bn3 
 	.byte		N05   , Bn4 
 	.byte	W36
+	.byte	GOTO
+	.word	mus_dgmn_story1_vs_digimon_4_loop
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.8) ****************@
@@ -1046,12 +1060,16 @@ mus_dgmn_story1_vs_digimon_5:
 	.byte		VOICE , 11
 	.byte		VOL   , 80*mus_dgmn_story1_vs_digimon_mvl/mxv
 	.byte		PAN   , c_v-64
-	.byte		MOD   , 20
+	.byte		MOD   , 0 @ 20
 	.byte		BEND  , c_v+0
-	.byte	W96
+	.byte	W48
+mus_dgmn_story1_vs_digimon_5_loop:
+	.byte	W48
 @ 001   ----------------------------------------
+mus_dgmn_story1_vs_digimon_5_001:
 	.byte	W96
 @ 002   ----------------------------------------
+mus_dgmn_story1_vs_digimon_5_002:
 	.byte	W96
 @ 003   ----------------------------------------
 	.byte	W96
@@ -1525,6 +1543,8 @@ mus_dgmn_story1_vs_digimon_5_025:
 	.byte	W06
 	.byte		        Ds4 
 	.byte	W06
+	.byte	GOTO
+	.word	mus_dgmn_story1_vs_digimon_5_loop
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.10) ****************@
@@ -1532,7 +1552,7 @@ mus_dgmn_story1_vs_digimon_5_025:
 mus_dgmn_story1_vs_digimon_6:
 	.byte	KEYSH , mus_dgmn_story1_vs_digimon_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 127
+	.byte		VOICE , 120 @ 127
 	.byte		VOL   , 127*mus_dgmn_story1_vs_digimon_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		MOD   , 0
@@ -1555,6 +1575,7 @@ mus_dgmn_story1_vs_digimon_6:
 	.byte	W06
 	.byte		N06   , Dn3 , v104
 	.byte	W06
+mus_dgmn_story1_vs_digimon_6_loop:
 	.byte		        Bn0 
 	.byte		N06   , Cn3 
 	.byte		N10   , Cs4 , v056
@@ -2240,6 +2261,8 @@ mus_dgmn_story1_vs_digimon_6_025:
 	.byte		N06   , Cn3 , v104
 	.byte		N02   , En4 , v048
 	.byte	W06
+	.byte	GOTO
+	.word	mus_dgmn_story1_vs_digimon_6_loop
 	.byte	FINE
 
 @******************************************************@

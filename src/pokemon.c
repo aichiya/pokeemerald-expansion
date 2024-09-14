@@ -6477,11 +6477,12 @@ u16 GetBattleBGM(void)
             return MUS_GBF_VS_ROSE_QUEEN;
         case TRAINER_CLASS_EXPERT:
             return MUS_FFURY_GEESE;
+        case TRAINER_CLASS_BIRD_KEEPER:
+            return MUS_NZ_DS_07;
 /*
         case TRAINER_CLASS_PKMN_TRAINER_1:
         case TRAINER_CLASS_PKMN_TRAINER_2:
         case TRAINER_CLASS_COOLTRAINER:
-        case TRAINER_CLASS_BIRD_KEEPER:
         case TRAINER_CLASS_COLLECTOR:
         case TRAINER_CLASS_SWIMMER_M:
         case TRAINER_CLASS_BLACK_BELT:

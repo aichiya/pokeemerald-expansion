@@ -3,6 +3,7 @@
         .equ    mus_rf2_boss2_grp, voicegroup201
         .equ    mus_rf2_boss2_pri, 0
         .equ    mus_rf2_boss2_rev, 0
+	.equ	mus_rf2_boss2_mvl, 80
         .equ    mus_rf2_boss2_key, 0
 
         .section .rodata
@@ -15,7 +16,7 @@ mus_rf2_boss2_0:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
         .byte   TEMPO , 184/2
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v-63
         .byte           VOICE , 48
         .byte           N05   , Bn4 , v085
@@ -293,7 +294,7 @@ mus_rf2_boss2_0_33:
 mus_rf2_boss2_1:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 80
+        .byte           VOL   , 80*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v+46
         .byte           BENDR , 12
         .byte           BEND  , c_v-1
@@ -449,7 +450,7 @@ mus_rf2_boss2_1_15:
 mus_rf2_boss2_2:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 120
+        .byte           VOL   , 120*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v+63
         .byte           VOICE , 85
         .byte           N92   , Fs1 , v090 , gtp3
@@ -605,7 +606,7 @@ mus_rf2_boss2_2_4:
 mus_rf2_boss2_3:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v+36
         .byte           VOICE , 86
         .byte   W96
@@ -750,7 +751,7 @@ mus_rf2_boss2_3_4:
 mus_rf2_boss2_4:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v-9
         .byte           VOICE , 26
         .byte   W72
@@ -1065,7 +1066,7 @@ mus_rf2_boss2_4_LOOP:
 mus_rf2_boss2_5:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 70
+        .byte           VOL   , 70*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v+41
         .byte           BENDR , 12
         .byte           BEND  , c_v-1
@@ -1254,7 +1255,7 @@ mus_rf2_boss2_5_3:
 mus_rf2_boss2_6:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_rf2_boss2_mvl/mxv
         .byte           VOICE , 38
         .byte           N92   , Fs1 , v127 , gtp3
         .byte   W96
@@ -1403,7 +1404,7 @@ mus_rf2_boss2_6_4:
 mus_rf2_boss2_7:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 115
+        .byte           VOL   , 115*mus_rf2_boss2_mvl/mxv
         .byte           VOICE , 73
         .byte   W96
 @ 001   ----------------------------------------
@@ -1560,7 +1561,7 @@ mus_rf2_boss2_7_25:
 mus_rf2_boss2_8:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 60
+        .byte           VOL   , 60*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v+63
         .byte           BEND  , c_v-1
         .byte           VOICE , 73
@@ -1746,7 +1747,7 @@ mus_rf2_boss2_8_24:
 mus_rf2_boss2_9:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_rf2_boss2_mvl/mxv
         .byte           MOD   , 10
         .byte           BENDR , 12
         .byte           VOICE , 121
@@ -1993,7 +1994,7 @@ mus_rf2_boss2_9_15:
 mus_rf2_boss2_10:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v+8
         .byte           BENDR , 12
         .byte           VOICE , 47
@@ -2154,7 +2155,7 @@ mus_rf2_boss2_10_LOOP:
 mus_rf2_boss2_11:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v-34
         .byte           VOICE , 4 @ 25
         .byte   W96
@@ -2362,7 +2363,7 @@ mus_rf2_boss2_11_22:
 mus_rf2_boss2_12:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v+16
         .byte           VOICE , 16 @ 12
         .byte   W96
@@ -2559,7 +2560,7 @@ mus_rf2_boss2_12_22:
 mus_rf2_boss2_13:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 70
+        .byte           VOL   , 70*mus_rf2_boss2_mvl/mxv
         .byte           PAN   , c_v+63
         .byte           BENDR , 12
         .byte           BEND  , c_v-1
@@ -2728,7 +2729,7 @@ mus_rf2_boss2_13_22:
 mus_rf2_boss2_14:
         .byte   KEYSH , mus_rf2_boss2_key+0
 @ 000   ----------------------------------------
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_rf2_boss2_mvl/mxv
         .byte           MOD   , 10
         .byte           BENDR , 12
         .byte           BEND  , c_v+4

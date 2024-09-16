@@ -10322,3 +10322,21 @@ BattleScript_TryManaDisturptorHoldEffects:
 	removeitem BS_TARGET
 BattleScript_TryManaDisturptorHoldEffectsRet:
 	return
+
+BattleScript_DeusExMachinaDoomDesireFailed::
+	end3
+
+BattleScript_DeusExMachinaWishInitiate::
+	call BattleScript_AbilityPopUpTarget
+	printstring STRINGID_PKMNISWISHING
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_DeusExMachinaWishFailed::
+	end3
+
+BattleScript_DeusExMachinaDoomDesireInitiate::
+	call BattleScript_AbilityPopUpTarget
+	printfromtable gFutureMoveUsedStringIds
+	waitmessage B_WAIT_TIME_LONG
+	end3

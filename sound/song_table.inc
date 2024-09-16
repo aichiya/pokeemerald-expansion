@@ -1605,6 +1605,11 @@ gSongTable::
 	song mus_gs2_753_vs_fusion_dragon, 0, 0
 	song mus_gs2_753_vs_saturos_menardi, 0, 0
 	song mus_gs2_799_golden_sun_sets, 0, 0
+	song mus_th_spiritual_heaven, 0, 0
+	song mus_mvc_ryu, 0, 0
+	song mus_mvc_chunli, 0, 0
+	song mus_mvc_megaman, 0, 0
+	song mus_mvc_roll, 0, 0
 
 	.align 2
 dummy_song_header:

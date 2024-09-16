@@ -6479,13 +6479,16 @@ u16 GetBattleBGM(void)
             return MUS_FFURY_GEESE;
         case TRAINER_CLASS_BIRD_KEEPER:
             return MUS_NZ_DS_07;
+        case TRAINER_CLASS_BLACK_BELT:
+            return MUS_MVC_RYU;
+        case TRAINER_CLASS_BATTLE_GIRL:
+            return MUS_MVC_CHUNLI;
 /*
         case TRAINER_CLASS_PKMN_TRAINER_1:
         case TRAINER_CLASS_PKMN_TRAINER_2:
         case TRAINER_CLASS_COOLTRAINER:
         case TRAINER_CLASS_COLLECTOR:
         case TRAINER_CLASS_SWIMMER_M:
-        case TRAINER_CLASS_BLACK_BELT:
         case TRAINER_CLASS_INTERVIEWER:
         case TRAINER_CLASS_TUBER_F:
         case TRAINER_CLASS_TUBER_M:
@@ -6506,7 +6509,6 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_FISHERMAN:
         case TRAINER_CLASS_TRIATHLETE:
         case TRAINER_CLASS_NINJA_BOY:
-        case TRAINER_CLASS_BATTLE_GIRL:
         case TRAINER_CLASS_PARASOL_LADY:
         case TRAINER_CLASS_SWIMMER_F:
         case TRAINER_CLASS_TWINS:

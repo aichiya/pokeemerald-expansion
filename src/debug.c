@@ -5700,6 +5700,11 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_GS2_753_VS_FUSION_DRAGON) \
     X(MUS_GS2_753_VS_SATUROS_MENARDI) \
     X(MUS_GS2_799_GOLDEN_SUN_SETS) \
+    X(MUS_TH_SPIRITUAL_HEAVEN) \
+    X(MUS_MVC_RYU) \
+    X(MUS_MVC_CHUNLI) \
+    X(MUS_MVC_MEGAMAN) \
+    X(MUS_MVC_ROLL) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

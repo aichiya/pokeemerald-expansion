@@ -2694,11 +2694,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_DEUS_EX_MACHINA] = // to do
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Deus Ex-Machina"),
+        .name = _("Shoujo Gensou"),
     #else
-        .name = _("DeusExMach"),
+        .name = _("Shoujo Gensou"),
     #endif
-        .description = COMPOUND_STRING("Raises Sp. Attack."),
+        .description = COMPOUND_STRING("Creates wishes."),
         .aiRating = 10,
     },
     

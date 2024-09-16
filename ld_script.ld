@@ -2255,6 +2255,11 @@ SECTIONS {
         sound/songs/mus_gs2_753_vs_fusion_dragon.o(.rodata);
         sound/songs/mus_gs2_753_vs_saturos_menardi.o(.rodata);
         sound/songs/mus_gs2_799_golden_sun_sets.o(.rodata);
+        sound/songs/mus_th_spiritual_heaven.o(.rodata);
+        sound/songs/mus_mvc_ryu.o(.rodata);
+        sound/songs/mus_mvc_chunli.o(.rodata);
+        sound/songs/mus_mvc_megaman.o(.rodata);
+        sound/songs/mus_mvc_roll.o(.rodata);
     } > ROM =0
 
     lib_rodata :

@@ -1574,7 +1574,13 @@
 #define MUS_GS2_753_VS_SATUROS_MENARDI 1602
 #define MUS_GS2_799_GOLDEN_SUN_SETS 1603
 
-#define END_MUS 					MUS_GS2_799_GOLDEN_SUN_SETS
+#define MUS_TH_SPIRITUAL_HEAVEN 1604
+#define MUS_MVC_RYU 1605
+#define MUS_MVC_CHUNLI 1606
+#define MUS_MVC_MEGAMAN 1607
+#define MUS_MVC_ROLL 1608
+
+#define END_MUS 					MUS_MVC_ROLL
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

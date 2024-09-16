@@ -5936,23 +5936,22 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_MORNING_SUN] =
     {
-        .name = COMPOUND_STRING("Morning Sun"),
+        .name = COMPOUND_STRING("Light Energy"),
         .description = COMPOUND_STRING(
             "Restores HP. The amount\n"
             "varies with the weather."),
-        .effect = EFFECT_MORNING_SUN,
-        .power = 0,
-        .type = TYPE_NORMAL,
-        .accuracy = 0,
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_NEW_DIVINE,
+        .accuracy = 100,
         .pp = 5,
-        .target = MOVE_TARGET_USER,
+        .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_RESET_STATS },
-        .healingMove = TRUE,
-        .snatchAffected = TRUE,
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SP_ATK_MINUS_1,
+            .chance = 30,
+        }),
         .contestEffect = CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -20829,7 +20828,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_ILLUSIONARY_DOMINATION] =
     {
-        .name = HANDLE_EXPANDED_MOVE_NAME("Illu. Dom.", "Illusionary Dom."),
+        .name = HANDLE_EXPANDED_MOVE_NAME("Illu. Dom", "Illusionary Dom."),
         .description = COMPOUND_STRING(
             "Uses user's speed stat for\n"
             "attacking, and hurts user."),
@@ -20844,6 +20843,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .battleAnimScript = Move_ILLUSIONARY_DOMINATION,
+    },
+
+    [MOVE_SPIRIT_CAMERA] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("Spirit Cam", "Spirit Camera"),
+        .description = COMPOUND_STRING(
+            "Super effective vs Nether.\n"
+            "May reduce the foe's Acc."),
+        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
+        .power = 70,
+        .type = TYPE_PSYCHIC,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = TYPE_GHOST,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = Move_SPIRIT_CAMERA,
     },
 
     // Z-Moves

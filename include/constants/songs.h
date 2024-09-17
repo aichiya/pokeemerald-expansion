@@ -1579,8 +1579,9 @@
 #define MUS_MVC_CHUNLI 1606
 #define MUS_MVC_MEGAMAN 1607
 #define MUS_MVC_ROLL 1608
+#define MUS_DGMN_CARD2_VS_REGULAR 1609
 
-#define END_MUS 					MUS_MVC_ROLL
+#define END_MUS 					MUS_DGMN_CARD2_VS_REGULAR
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

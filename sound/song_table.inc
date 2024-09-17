@@ -1610,6 +1610,7 @@ gSongTable::
 	song mus_mvc_chunli, 0, 0
 	song mus_mvc_megaman, 0, 0
 	song mus_mvc_roll, 0, 0
+	song mus_dgmn_card2_vs_regular, 0, 0
 
 	.align 2
 dummy_song_header:

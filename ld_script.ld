@@ -2260,6 +2260,7 @@ SECTIONS {
         sound/songs/mus_mvc_chunli.o(.rodata);
         sound/songs/mus_mvc_megaman.o(.rodata);
         sound/songs/mus_mvc_roll.o(.rodata);
+        sound/songs/mus_dgmn_card2_vs_regular.o(.rodata);
     } > ROM =0
 
     lib_rodata :

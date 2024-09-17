@@ -5705,6 +5705,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_MVC_CHUNLI) \
     X(MUS_MVC_MEGAMAN) \
     X(MUS_MVC_ROLL) \
+    X(MUS_DGMN_CARD2_VS_REGULAR) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

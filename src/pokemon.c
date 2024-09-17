@@ -6483,6 +6483,8 @@ u16 GetBattleBGM(void)
             return MUS_MVC_RYU;
         case TRAINER_CLASS_BATTLE_GIRL:
             return MUS_MVC_CHUNLI;
+        case TRAINER_CLASS_SCHOOL_KID:
+            return MUS_DGMN_CARD2_VS_REGULAR;
 /*
         case TRAINER_CLASS_PKMN_TRAINER_1:
         case TRAINER_CLASS_PKMN_TRAINER_2:
@@ -6502,7 +6504,6 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PICNICKER:
         case TRAINER_CLASS_BUG_MANIAC:
         case TRAINER_CLASS_PSYCHIC:
-        case TRAINER_CLASS_SCHOOL_KID:
         case TRAINER_CLASS_WINSTRATE:
         case TRAINER_CLASS_POKEFAN:
         case TRAINER_CLASS_YOUNGSTER:

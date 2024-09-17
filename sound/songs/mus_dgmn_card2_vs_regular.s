@@ -16,64 +16,59 @@ mus_dgmn_card2_vs_regular_0:
         .byte   KEYSH , mus_dgmn_card2_vs_regular_key+0
 @ 000   ----------------------------------------
         .byte   TEMPO , 114/2
-        .byte   W01
         .byte           BENDR , 3
-        .byte   W01
         .byte                   72
-        .byte   W01
         .byte           VOL   , 127*mus_dgmn_card2_vs_regular_mvl/mxv
-        .byte   W02
         .byte           VOICE , 120 @ Drum
-        .byte   W01
-        .byte           N11   , Cn3 , v106
+        .byte           N11   , Fs0 , v106
         .byte   W12
-        .byte                   Cn3
+        .byte                   Fs0
         .byte   W24
-        .byte           N05   , Cn3 , v112
+        .byte           N05   , Fs0 , v112
         .byte   W06
-        .byte                   Cn3 , v103
+        .byte                   Fs0 , v103
         .byte   W06
-        .byte           N11   , Cn3 , v106
+        .byte           N11   , Fs0 , v106
         .byte   W24
-        .byte           N02   , Cn3 , v112
+        .byte           N02   , Fs0 , v112
         .byte   W03
-        .byte                   Cn3 , v071
+        .byte                   Fs0 , v071
         .byte   W03
-        .byte                   Cn3
+        .byte                   Fs0
         .byte   W03
-        .byte                   Cn3 , v076
+        .byte                   Fs0 , v076
         .byte   W03
-        .byte                   Cn3 , v089
+        .byte                   Fs0 , v089
         .byte   W03
-        .byte                   Cn3 , v094
+        .byte                   Fs0 , v094
         .byte   W03
 @ 001   ----------------------------------------
 mus_dgmn_card2_vs_regular_0_1:
-        .byte           N02   , Cn3 , v093
+        .byte           N02   , Fs0 , v093
         .byte   W03
-        .byte                   Cn3 , v096
+        .byte                   Fs0 , v096
         .byte   W03
-        .byte           N11   , Cn3 , v106
+        .byte           N11   , Fs0 , v106
         .byte   W12
-        .byte                   Cn3
+        .byte                   Fs0
         .byte   W24
-        .byte           N05   , Cn3 , v112
+        .byte           N05   , Fs0 , v112
         .byte   W06
-        .byte                   Cn3 , v103
+        .byte                   Fs0 , v103
         .byte   W06
-        .byte           N11   , Cn3 , v106
+        .byte           N11   , Fs0 , v106
         .byte   W24
-        .byte           N02   , Cn3 , v112
+        .byte           N02   , Fs0 , v112
         .byte   W03
-        .byte                   Cn3 , v071
+        .byte                   Fs0 , v071
         .byte   W03
-        .byte                   Cn3
+        .byte                   Fs0
         .byte   W03
-        .byte                   Cn3 , v076
+        .byte                   Fs0 , v076
         .byte   W03
-        .byte                   Cn3 , v089
+        .byte                   Fs0 , v089
         .byte   W03
-        .byte                   Cn3 , v094
+        .byte                   Fs0 , v094
         .byte   W03
         .byte   PEND
 @ 002   ----------------------------------------
@@ -83,34 +78,35 @@ mus_dgmn_card2_vs_regular_0_1:
         .byte   PATT
          .word  mus_dgmn_card2_vs_regular_0_1
 @ 004   ----------------------------------------
-        .byte           N02   , Cn3 , v093
+        .byte           N02   , Fs0 , v093
         .byte   W03
-        .byte                   Cn3 , v096
+        .byte                   Fs0 , v096
         .byte   W03
-        .byte           N11   , Cn3 , v106
+mus_dgmn_card2_vs_regular_0_loop:
+        .byte           N11   , Fs0 , v106
         .byte           N92   , Cs2 , v079
         .byte   W01
         .byte           BENDR , 127
         .byte   W11
-        .byte           N11   , Cn3 , v106
+        .byte           N11   , Fs0 , v106
         .byte   W24
-        .byte           N05   , Cn3 , v112
+        .byte           N05   , Fs0 , v112
         .byte   W06
-        .byte                   Cn3 , v103
+        .byte                   Fs0 , v103
         .byte   W06
-        .byte           N11   , Cn3 , v106
+        .byte           N11   , Fs0 , v106
         .byte   W24
-        .byte           N02   , Cn3 , v112
+        .byte           N02   , Fs0 , v112
         .byte   W03
-        .byte                   Cn3 , v071
+        .byte                   Fs0 , v071
         .byte   W03
-        .byte                   Cn3
+        .byte                   Fs0
         .byte   W03
-        .byte                   Cn3 , v076
+        .byte                   Fs0 , v076
         .byte   W03
-        .byte                   Cn3 , v089
+        .byte                   Fs0 , v089
         .byte   W03
-        .byte                   Cn3 , v094
+        .byte                   Fs0 , v094
         .byte   W03
 @ 005   ----------------------------------------
         .byte   PATT
@@ -155,32 +151,32 @@ mus_dgmn_card2_vs_regular_0_1:
         .byte   PATT
          .word  mus_dgmn_card2_vs_regular_0_1
 @ 019   ----------------------------------------
-        .byte           N02   , Cn3 , v093
+        .byte           N02   , Fs0 , v093
         .byte   W03
-        .byte                   Cn3 , v096
+        .byte                   Fs0 , v096
         .byte   W03
-        .byte           N11   , Cn3 , v106
+        .byte           N11   , Fs0 , v106
         .byte   W12
-        .byte                   Cn3
+        .byte                   Fs0
         .byte   W24
-        .byte           N05   , Cn3 , v112
+        .byte           N05   , Fs0 , v112
         .byte   W06
-        .byte                   Cn3 , v103
+        .byte                   Fs0 , v103
         .byte   W06
-        .byte           N11   , Cn3 , v106
+        .byte           N11   , Fs0 , v106
         .byte   W24
-        .byte           N02   , Cn3 , v112
+        .byte           N02   , Fs0 , v112
         .byte           N92   , Cs2 , v089
         .byte   W03
-        .byte           N02   , Cn3 , v071
+        .byte           N02   , Fs0 , v071
         .byte   W03
-        .byte                   Cn3
+        .byte                   Fs0
         .byte   W03
-        .byte                   Cn3 , v076
+        .byte                   Fs0 , v076
         .byte   W03
-        .byte                   Cn3 , v089
+        .byte                   Fs0 , v089
         .byte   W03
-        .byte                   Cn3 , v094
+        .byte                   Fs0 , v094
         .byte   W03
 @ 020   ----------------------------------------
         .byte   PATT
@@ -207,10 +203,12 @@ mus_dgmn_card2_vs_regular_0_1:
         .byte   PATT
          .word  mus_dgmn_card2_vs_regular_0_1
 @ 028   ----------------------------------------
-        .byte           N02   , Cn3 , v093
+        .byte           N02   , Fs0 , v093
         .byte   W03
-        .byte           N01   , Cn3 , v096
-        .byte   W01
+        .byte           N01   , Fs0 , v096
+        .byte   W03
+        .byte   GOTO
+        .word   mus_dgmn_card2_vs_regular_0_loop
         .byte   FINE
 
 @****************** Track 1 (Midi-Chn.1) ******************@
@@ -218,14 +216,10 @@ mus_dgmn_card2_vs_regular_0_1:
 mus_dgmn_card2_vs_regular_1:
         .byte   KEYSH , mus_dgmn_card2_vs_regular_key+0
 @ 000   ----------------------------------------
-        .byte   W03
-        .byte           VOL   , 127*mus_dgmn_card2_vs_regular_mvl/mxv
-        .byte   W01
+        .byte           VOL   , 100*mus_dgmn_card2_vs_regular_mvl/mxv
         .byte           PAN   , c_v+26
-        .byte   W01
         .byte           VOICE , 100 @ Brass
         .byte   W90
-        .byte   W01
 @ 001   ----------------------------------------
         .byte   W96
 @ 002   ----------------------------------------
@@ -234,6 +228,7 @@ mus_dgmn_card2_vs_regular_1:
         .byte   W96
 @ 004   ----------------------------------------
         .byte   W06
+mus_dgmn_card2_vs_regular_1_loop:
         .byte           N52   , Gs2 , v091 , gtp1
         .byte   W72
         .byte           N17   , As2
@@ -455,7 +450,9 @@ mus_dgmn_card2_vs_regular_1:
         .byte           N10   , Gs3
         .byte   W18
 @ 028   ----------------------------------------
-        .byte   W04
+        .byte   W06
+        .byte   GOTO
+        .word   mus_dgmn_card2_vs_regular_1_loop
         .byte   FINE
 
 @****************** Track 2 (Midi-Chn.2) ******************@
@@ -463,14 +460,10 @@ mus_dgmn_card2_vs_regular_1:
 mus_dgmn_card2_vs_regular_2:
         .byte   KEYSH , mus_dgmn_card2_vs_regular_key+0
 @ 000   ----------------------------------------
-        .byte   W03
-        .byte           VOL   , 127*mus_dgmn_card2_vs_regular_mvl/mxv
-        .byte   W01
+        .byte           VOL   , 100*mus_dgmn_card2_vs_regular_mvl/mxv
         .byte           PAN   , c_v-16
-        .byte   W01
         .byte           VOICE , 48 @ Strings
         .byte   W90
-        .byte   W01
 @ 001   ----------------------------------------
         .byte   W96
 @ 002   ----------------------------------------
@@ -479,6 +472,7 @@ mus_dgmn_card2_vs_regular_2:
         .byte   W96
 @ 004   ----------------------------------------
         .byte   W06
+mus_dgmn_card2_vs_regular_2_loop:
         .byte           N52   , Cn3 , v103 , gtp1
         .byte   W72
         .byte           N17   , Cs3
@@ -687,7 +681,9 @@ mus_dgmn_card2_vs_regular_2_13:
         .byte   W06
 @ 028   ----------------------------------------
         .byte                   Cn5
-        .byte   W04
+        .byte   W06
+        .byte   GOTO
+        .word   mus_dgmn_card2_vs_regular_2_loop
         .byte   FINE
 
 @****************** Track 3 (Midi-Chn.3) ******************@
@@ -695,14 +691,10 @@ mus_dgmn_card2_vs_regular_2_13:
 mus_dgmn_card2_vs_regular_3:
         .byte   KEYSH , mus_dgmn_card2_vs_regular_key+0
 @ 000   ----------------------------------------
-        .byte   W03
-        .byte           VOL   , 127*mus_dgmn_card2_vs_regular_mvl/mxv
-        .byte   W01
+        .byte           VOL   , 100*mus_dgmn_card2_vs_regular_mvl/mxv
         .byte           PAN   , c_v-64
-        .byte   W01
         .byte           VOICE , 60 @ 56 @ Trumpet
         .byte   W90
-        .byte   W01
 @ 001   ----------------------------------------
         .byte   W96
 @ 002   ----------------------------------------
@@ -711,6 +703,7 @@ mus_dgmn_card2_vs_regular_3:
         .byte   W96
 @ 004   ----------------------------------------
         .byte   W06
+mus_dgmn_card2_vs_regular_3_loop:
         .byte           N52   , Gs3 , v090 , gtp1
         .byte   W72
         .byte           N17   , Ds3
@@ -932,7 +925,9 @@ mus_dgmn_card2_vs_regular_3_14:
         .byte   W06
 @ 028   ----------------------------------------
         .byte                   Ds5
-        .byte   W04
+        .byte   W06
+        .byte   GOTO
+        .word   mus_dgmn_card2_vs_regular_3_loop
         .byte   FINE
 
 @****************** Track 4 (Midi-Chn.4) ******************@
@@ -940,13 +935,9 @@ mus_dgmn_card2_vs_regular_3_14:
 mus_dgmn_card2_vs_regular_4:
         .byte   KEYSH , mus_dgmn_card2_vs_regular_key+0
 @ 000   ----------------------------------------
-        .byte   W03
-        .byte           VOL   , 127*mus_dgmn_card2_vs_regular_mvl/mxv
-        .byte   W01
+        .byte           VOL   , 100*mus_dgmn_card2_vs_regular_mvl/mxv
         .byte           PAN   , c_v+63
-        .byte   W01
         .byte           VOICE , 48 @ 60 @ French Horn
-        .byte   W01
         .byte           TIE   , Gs1 , v103
         .byte   W90
 @ 001   ----------------------------------------
@@ -963,6 +954,7 @@ mus_dgmn_card2_vs_regular_4:
         .byte   W05
         .byte           EOT
         .byte   W01
+mus_dgmn_card2_vs_regular_4_loop:
         .byte           N68   , Gs1 , v103 , gtp3
         .byte   W72
         .byte           N23   , Ds1
@@ -1110,7 +1102,9 @@ mus_dgmn_card2_vs_regular_4_23:
         .byte   PATT
          .word  mus_dgmn_card2_vs_regular_4_23
 @ 028   ----------------------------------------
-        .byte   W04
+        .byte   W06
+        .byte   GOTO
+        .word   mus_dgmn_card2_vs_regular_4_loop
         .byte   FINE
 
 @****************** Track 5 (Midi-Chn.5) ******************@
@@ -1118,13 +1112,9 @@ mus_dgmn_card2_vs_regular_4_23:
 mus_dgmn_card2_vs_regular_5:
         .byte   KEYSH , mus_dgmn_card2_vs_regular_key+0
 @ 000   ----------------------------------------
-        .byte   W03
         .byte           VOL   , 127*mus_dgmn_card2_vs_regular_mvl/mxv
-        .byte   W01
         .byte           PAN   , c_v+13
-        .byte   W01
         .byte           VOICE , 14 @ Tubular Bell
-        .byte   W01
         .byte           N44   , As2 , v093 , gtp2
         .byte           N44   , Ds3
         .byte   W48
@@ -1161,6 +1151,7 @@ mus_dgmn_card2_vs_regular_5:
         .byte   W42
 @ 004   ----------------------------------------
         .byte   W06
+mus_dgmn_card2_vs_regular_5_loop:
         .byte                   Ds3 , v093 , gtp3
         .byte           N44   , Gs3
         .byte           N44   , Gs2 , v093 , gtp3
@@ -1305,7 +1296,9 @@ mus_dgmn_card2_vs_regular_5_22:
         .byte   PATT
          .word  mus_dgmn_card2_vs_regular_5_15
 @ 028   ----------------------------------------
-        .byte   W04
+        .byte   W06
+        .byte   GOTO
+        .word   mus_dgmn_card2_vs_regular_5_loop
         .byte   FINE
 
 @****************** Track 6 (Midi-Chn.6) ******************@
@@ -1313,11 +1306,8 @@ mus_dgmn_card2_vs_regular_5_22:
 mus_dgmn_card2_vs_regular_6:
         .byte   KEYSH , mus_dgmn_card2_vs_regular_key+0
 @ 000   ----------------------------------------
-        .byte   W03
         .byte           VOL   , 127*mus_dgmn_card2_vs_regular_mvl/mxv
-        .byte   W02
         .byte           VOICE , 47 @ Timpani
-        .byte   W01
         .byte           N11   , Gs2 , v118
         .byte   W12
         .byte           N32   , Gs2 , v118 , gtp3
@@ -1351,6 +1341,7 @@ mus_dgmn_card2_vs_regular_6_1:
 @ 004   ----------------------------------------
         .byte           N05   , Gs2 , v118
         .byte   W06
+mus_dgmn_card2_vs_regular_6_loop:
         .byte           N11   , Gs2 , v119
         .byte   W12
         .byte           N32   , Gs2 , v119 , gtp3
@@ -1468,7 +1459,9 @@ mus_dgmn_card2_vs_regular_6_12:
         .byte           N09   , Gs2 , v127
         .byte   W06
 @ 028   ----------------------------------------
-        .byte   W04
+        .byte   W06
+        .byte   GOTO
+        .word   mus_dgmn_card2_vs_regular_6_loop
         .byte   FINE
 
 @****************** Track 7 (Midi-Chn.7) ******************@
@@ -1476,12 +1469,9 @@ mus_dgmn_card2_vs_regular_6_12:
 mus_dgmn_card2_vs_regular_7:
         .byte   KEYSH , mus_dgmn_card2_vs_regular_key+0
 @ 000   ----------------------------------------
-        .byte   W03
-        .byte           VOL   , 127*mus_dgmn_card2_vs_regular_mvl/mxv
-        .byte   W02
-        .byte           VOICE , 5
+        .byte           VOL   , 100*mus_dgmn_card2_vs_regular_mvl/mxv
+        .byte           VOICE , 49 @ 5
         .byte   W90
-        .byte   W01
 @ 001   ----------------------------------------
         .byte   W96
 @ 002   ----------------------------------------
@@ -1489,7 +1479,9 @@ mus_dgmn_card2_vs_regular_7:
 @ 003   ----------------------------------------
         .byte   W96
 @ 004   ----------------------------------------
-        .byte   W96
+        .byte   W06
+mus_dgmn_card2_vs_regular_7_loop:
+        .byte   W90
 @ 005   ----------------------------------------
         .byte   W96
 @ 006   ----------------------------------------
@@ -1657,7 +1649,9 @@ mus_dgmn_card2_vs_regular_7:
         .byte           N42   , Fn4 , v103
         .byte   W42
 @ 028   ----------------------------------------
-        .byte   W04
+        .byte   W06
+        .byte   GOTO
+        .word   mus_dgmn_card2_vs_regular_7_loop
         .byte   FINE
 
 @****************** Track 8 (Midi-Chn.8) ******************@
@@ -1665,13 +1659,9 @@ mus_dgmn_card2_vs_regular_7:
 mus_dgmn_card2_vs_regular_8:
         .byte   KEYSH , mus_dgmn_card2_vs_regular_key+0
 @ 000   ----------------------------------------
-        .byte   W03
-        .byte           VOL   , 127*mus_dgmn_card2_vs_regular_mvl/mxv
-        .byte   W01
+        .byte           VOL   , 100*mus_dgmn_card2_vs_regular_mvl/mxv
         .byte           PAN   , c_v-26
-        .byte   W01
         .byte           VOICE , 73 @ Flute 68 @ Oboe
-        .byte   W01
         .byte           TIE   , Gs1 , v097
         .byte   W90
 @ 001   ----------------------------------------
@@ -1688,6 +1678,7 @@ mus_dgmn_card2_vs_regular_8:
         .byte   W05
         .byte           EOT
         .byte   W01
+mus_dgmn_card2_vs_regular_8_loop:
         .byte           N60   , Gs1 , v097 , gtp2
         .byte   W72
         .byte           N14   , Ds1
@@ -1874,7 +1865,9 @@ mus_dgmn_card2_vs_regular_8_20:
         .byte           N10   , Gs2
         .byte   W18
 @ 028   ----------------------------------------
-        .byte   W04
+        .byte   W06
+        .byte   GOTO
+        .word   mus_dgmn_card2_vs_regular_8_loop
         .byte   FINE
 
 

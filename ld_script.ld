@@ -2261,6 +2261,8 @@ SECTIONS {
         sound/songs/mus_mvc_megaman.o(.rodata);
         sound/songs/mus_mvc_roll.o(.rodata);
         sound/songs/mus_dgmn_card2_vs_regular.o(.rodata);
+        sound/songs/mus_sd_kanashimi_no_mukou_e.o(.rodata);
+        sound/songs/mus_pr_mighty_morphing.o(.rodata);
     } > ROM =0
 
     lib_rodata :

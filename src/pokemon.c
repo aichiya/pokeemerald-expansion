@@ -6467,8 +6467,9 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_HEX_MANIAC:
             return MUS_GS2_VS_MAGICIAN;
         case TRAINER_CLASS_YOUNG_COUPLE:
-            return MUS_SNY_GODKNOWS;
+            return MUS_SD_KANASHIMI_NO_MUKOU_E;
         case TRAINER_CLASS_SR_AND_JR:
+            return MUS_SNY_GODKNOWS;
         case TRAINER_CLASS_LASS:
             return MUS_SNY_HARE_HARE_YUKAI;
         case TRAINER_CLASS_OLD_COUPLE:

@@ -28,6 +28,8 @@ const u8 gWeatherBubbleTiles[] = INCBIN_U8("graphics/weather/bubble.4bpp");
 const u8 gWeatherAshTiles[] = INCBIN_U8("graphics/weather/ash.4bpp");
 const u8 gWeatherRainTiles[] = INCBIN_U8("graphics/weather/rain.4bpp");
 const u8 gWeatherSandstormTiles[] = INCBIN_U8("graphics/weather/sandstorm.4bpp");
+const u8 gWeatherLightOrb1Tiles[] = INCBIN_U8("graphics/weather/lightorb0.4bpp");
+const u8 gWeatherLightOrb2Tiles[] = INCBIN_U8("graphics/weather/lightorb1.4bpp");
 
 //------------------------------------------------------------------------------
 // WEATHER_SUNNY_CLOUDS
@@ -2406,6 +2408,231 @@ static void UpdateBubbleSprite(struct Sprite *sprite)
 #undef tCounter
 
 //------------------------------------------------------------------------------
+// WEATHER_LIGHT_ORB_UP
+//------------------------------------------------------------------------------
+
+static void UpdateLightorbSprite(struct Sprite *);
+static bool8 UpdateVisibleLightorbSprites(void);
+static bool8 CreateLightorbSprite(void);
+static bool8 DestroyLightorbSprite(void);
+static void InitLightorbSpriteMovement(struct Sprite *);
+
+void LightOrbs_InitVars(void)
+{
+    gWeatherPtr->initStep = 0;
+    gWeatherPtr->weatherGfxLoaded = FALSE;
+    gWeatherPtr->targetColorMapIndex = 0;
+    gWeatherPtr->colorMapStepDelay = 20;
+    gWeatherPtr->targetLightorbSpriteCount = NUM_SNOWFLAKE_SPRITES;
+    gWeatherPtr->lightorbVisibleCounter = 0;
+}
+
+void LightOrbs_InitAll(void)
+{
+    u16 i;
+
+    LightOrbs_InitVars();
+    while (gWeatherPtr->weatherGfxLoaded == FALSE)
+    {
+        LightOrbs_Main();
+        for (i = 0; i < gWeatherPtr->lightorbSpriteCount; i++)
+            UpdateLightorbSprite(gWeatherPtr->sprites.s1.lightorbSprites[i]);
+    }
+}
+
+void LightOrbs_Main(void)
+{
+    if (gWeatherPtr->initStep == 0 && !UpdateVisibleLightorbSprites())
+    {
+        gWeatherPtr->weatherGfxLoaded = TRUE;
+        gWeatherPtr->initStep++;
+    }
+}
+
+bool8 LightOrbs_Finish(void)
+{
+    switch (gWeatherPtr->finishStep)
+    {
+    case 0:
+        gWeatherPtr->targetLightorbSpriteCount = 0;
+        gWeatherPtr->lightorbVisibleCounter = 0;
+        gWeatherPtr->finishStep++;
+        // fall through
+    case 1:
+        if (!UpdateVisibleLightorbSprites())
+        {
+            gWeatherPtr->finishStep++;
+            return FALSE;
+        }
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+static bool8 UpdateVisibleLightorbSprites(void)
+{
+    if (gWeatherPtr->lightorbSpriteCount == gWeatherPtr->targetLightorbSpriteCount)
+        return FALSE;
+
+    if (++gWeatherPtr->lightorbVisibleCounter > 36)
+    {
+        gWeatherPtr->lightorbVisibleCounter = 0;
+        if (gWeatherPtr->lightorbSpriteCount < gWeatherPtr->targetLightorbSpriteCount)
+            CreateLightorbSprite();
+        else
+            DestroyLightorbSprite();
+    }
+
+    return gWeatherPtr->lightorbSpriteCount != gWeatherPtr->targetLightorbSpriteCount;
+}
+
+static const struct OamData sLightorbSpriteOamData =
+{
+    .y = 0,
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .mosaic = FALSE,
+    .bpp = ST_OAM_4BPP,
+    .shape = SPRITE_SHAPE(8x8),
+    .x = 0,
+    .matrixNum = 0,
+    .size = SPRITE_SIZE(8x8),
+    .tileNum = 0,
+    .priority = 1,
+    .paletteNum = 0,
+    .affineParam = 0,
+};
+
+static const struct SpriteFrameImage sLightorbSpriteImages[] =
+{
+    {gWeatherLightOrb1Tiles, sizeof(gWeatherLightOrb1Tiles)},
+    {gWeatherLightOrb2Tiles, sizeof(gWeatherLightOrb2Tiles)},
+};
+
+static const union AnimCmd sLightorbAnimCmd0[] =
+{
+    ANIMCMD_FRAME(0, 16),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sLightorbAnimCmd1[] =
+{
+    ANIMCMD_FRAME(1, 16),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sLightorbAnimCmds[] =
+{
+    sLightorbAnimCmd0,
+    sLightorbAnimCmd1,
+};
+
+static const struct SpriteTemplate sLightorbSpriteTemplate =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = PALTAG_WEATHER,
+    .oam = &sLightorbSpriteOamData,
+    .anims = sLightorbAnimCmds,
+    .images = sLightorbSpriteImages,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = UpdateLightorbSprite,
+};
+
+#define tPosY         data[0]
+#define tDeltaY       data[1]
+#define tWaveDelta    data[2]
+#define tWaveIndex    data[3]
+#define tLightorbId   data[4]
+#define tFallCounter  data[5]
+#define tFallDuration data[6]
+#define tDeltaY2      data[7]
+
+static bool8 CreateLightorbSprite(void)
+{
+    u8 spriteId = CreateSpriteAtEnd(&sLightorbSpriteTemplate, 0, 0, 78);
+    if (spriteId == MAX_SPRITES)
+        return FALSE;
+
+    gSprites[spriteId].tLightorbId = gWeatherPtr->lightorbSpriteCount;
+    InitLightorbSpriteMovement(&gSprites[spriteId]);
+    gSprites[spriteId].coordOffsetEnabled = TRUE;
+    gWeatherPtr->sprites.s1.lightorbSprites[gWeatherPtr->lightorbSpriteCount++] = &gSprites[spriteId];
+    return TRUE;
+}
+
+static bool8 DestroyLightorbSprite(void)
+{
+    if (gWeatherPtr->lightorbSpriteCount)
+    {
+        DestroySprite(gWeatherPtr->sprites.s1.lightorbSprites[--gWeatherPtr->lightorbSpriteCount]);
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+static void InitLightorbSpriteMovement(struct Sprite *sprite)
+{
+    u16 rand;
+    u16 x = ((sprite->tLightorbId * 5) & 7) * 30 + (Random() % 30);
+
+    sprite->y = -3 - (gSpriteCoordOffsetY + sprite->centerToCornerVecY);
+    sprite->x = x - (gSpriteCoordOffsetX + sprite->centerToCornerVecX);
+    sprite->tPosY = sprite->y * 128;
+    sprite->x2 = 0;
+    rand = Random();
+    sprite->tDeltaY = (rand & 3) * 5 - 64;
+    sprite->tDeltaY2 = sprite->tDeltaY;
+    StartSpriteAnim(sprite, (rand & 1) ? 0 : 1);
+    sprite->tWaveIndex = 0;
+    sprite->tWaveDelta = ((rand & 3) == 0) ? 2 : 1;
+    sprite->tFallDuration = (rand & 0x1F) + 210;
+    sprite->tFallCounter = 0;
+}
+
+static void UNUSED WaitLightorbSprite(struct Sprite *sprite)
+{
+    if (++gWeatherPtr->lightorbTimer > 18)
+    {
+        sprite->invisible = FALSE;
+        sprite->callback = UpdateLightorbSprite;
+        sprite->y = 250 - (gSpriteCoordOffsetY + sprite->centerToCornerVecY);
+        sprite->tPosY = sprite->y * 128;
+        gWeatherPtr->lightorbTimer = 0;
+    }
+}
+
+static void UpdateLightorbSprite(struct Sprite *sprite)
+{
+    s16 x;
+
+    sprite->tPosY += sprite->tDeltaY;
+    sprite->y = sprite->tPosY >> 7;
+    sprite->tWaveIndex += sprite->tWaveDelta;
+    sprite->tWaveIndex &= 0xFF;
+    sprite->x2 = gSineTable[sprite->tWaveIndex] / 64;
+
+    x = (sprite->x + sprite->centerToCornerVecX + gSpriteCoordOffsetX) & 0x1FF;
+    if (x & 0x100)
+        x |= -0x100;
+
+    if (x < -3)
+        sprite->x = 242 - (gSpriteCoordOffsetX + sprite->centerToCornerVecX);
+    else if (x > 242)
+        sprite->x = -3 - (gSpriteCoordOffsetX + sprite->centerToCornerVecX);
+}
+
+#undef tPosY
+#undef tDeltaY
+#undef tWaveDelta
+#undef tWaveIndex
+#undef tLightorbId
+#undef tFallCounter
+#undef tFallDuration
+#undef tDeltaY2
+
+//------------------------------------------------------------------------------
 
 static void UNUSED UnusedSetCurrentAbnormalWeather(u32 weather, u32 unknown)
 {
@@ -2586,6 +2813,7 @@ static u8 TranslateWeatherNum(u8 weather)
     case WEATHER_DOWNPOUR:           return WEATHER_DOWNPOUR;
     case WEATHER_UNDERWATER_BUBBLES: return WEATHER_UNDERWATER_BUBBLES;
     case WEATHER_ABNORMAL:           return WEATHER_ABNORMAL;
+    case WEATHER_LIGHT_ORB_UP:       return WEATHER_LIGHT_ORB_UP;
     case WEATHER_ROUTE119_CYCLE:     return sWeatherCycleRoute119[gSaveBlock1Ptr->weatherCycleStage];
     case WEATHER_ROUTE123_CYCLE:     return sWeatherCycleRoute123[gSaveBlock1Ptr->weatherCycleStage];
     default:                         return WEATHER_NONE;

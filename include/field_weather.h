@@ -29,6 +29,7 @@ struct Weather
         {
             struct Sprite *rainSprites[MAX_RAIN_SPRITES];
             struct Sprite *snowflakeSprites[101];
+            struct Sprite *lightorbSprites[101];
             struct Sprite *cloudSprites[NUM_CLOUD_SPRITES];
         } s1;
         struct
@@ -118,6 +119,11 @@ struct Weather
     u16 bubblesCoordsIndex;
     u16 bubblesSpriteCount;
     u8 bubblesSpritesCreated;
+    // Light Orb
+    u16 lightorbVisibleCounter;
+    u16 lightorbTimer;
+    u8 lightorbSpriteCount;
+    u8 targetLightorbSpriteCount;
 
     u16 currBlendEVA;
     u16 currBlendEVB;
@@ -223,6 +229,10 @@ void Bubbles_InitVars(void);
 void Bubbles_Main(void);
 void Bubbles_InitAll(void);
 bool8 Bubbles_Finish(void);
+void LightOrbs_InitVars(void);
+void LightOrbs_Main(void);
+void LightOrbs_InitAll(void);
+bool8 LightOrbs_Finish(void);
 
 u8 GetSavedWeather(void);
 void SetSavedWeather(u32 weather);

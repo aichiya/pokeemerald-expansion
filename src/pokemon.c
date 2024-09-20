@@ -1184,6 +1184,13 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     u8 selectedIvs[LEGENDARY_PERFECT_IV_COUNT];
     bool32 isShiny;
 
+    if(GetCurrentWeather() == WEATHER_LIGHT_ORB_UP)
+    {
+        FlagSet(FLAG_FORCE_SHINY);
+        SetWeather(WEATHER_SUNNY);
+        DoCurrentWeather();
+    }
+
     ZeroBoxMonData(boxMon);
 
     if (hasFixedPersonality)
@@ -1370,6 +1377,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     }
 
     GiveBoxMonInitialMoveset(boxMon);
+    FlagClear(FLAG_FORCE_SHINY);
 }
 
 void CreateMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 nature)
@@ -1436,6 +1444,13 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
     u8 availableIVs[NUM_STATS];
     u8 selectedIvs[LEGENDARY_PERFECT_IV_COUNT];
     bool32 isShiny;
+
+    if(GetCurrentWeather() == WEATHER_LIGHT_ORB_UP)
+    {
+        FlagSet(FLAG_FORCE_SHINY);
+        SetWeather(WEATHER_SUNNY);
+        DoCurrentWeather();
+    }
 
     ZeroBoxMonData(boxMon);
 
@@ -1988,6 +2003,7 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
     }
 
     GiveBoxMonInitialMoveset(boxMon);
+    FlagClear(FLAG_FORCE_SHINY);
 }
 
 void CreateMonWithNatureGift1(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 nature)

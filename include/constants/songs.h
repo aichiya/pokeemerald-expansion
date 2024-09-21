@@ -1582,8 +1582,9 @@
 #define MUS_DGMN_CARD2_VS_REGULAR 1609
 #define MUS_SD_KANASHIMI_NO_MUKOU_E 1610
 #define MUS_PR_MIGHTY_MORPHING 1611
+#define MUS_KEY_CLANNAD_SHINING_IN_THE_SKY 1612
 
-#define END_MUS 					MUS_PR_MIGHTY_MORPHING
+#define END_MUS 					MUS_KEY_CLANNAD_SHINING_IN_THE_SKY
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

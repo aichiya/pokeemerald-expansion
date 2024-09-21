@@ -5709,6 +5709,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_DGMN_CARD2_VS_REGULAR) \
     X(MUS_SD_KANASHIMI_NO_MUKOU_E) \
     X(MUS_PR_MIGHTY_MORPHING) \
+    X(MUS_KEY_CLANNAD_SHINING_IN_THE_SKY) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

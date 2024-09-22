@@ -1745,9 +1745,9 @@ mus_thppawl_primalscene_1_120:
 mus_thppawl_primalscene_2:
 	.byte	KEYSH , mus_thppawl_primalscene_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 118
+	.byte		VOICE , 77
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 100*mus_thppawl_primalscene_mvl/mxv
+	.byte		VOL   , 80*mus_thppawl_primalscene_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 @ 001   ----------------------------------------
@@ -2163,7 +2163,7 @@ mus_thppawl_primalscene_2:
 mus_thppawl_primalscene_3:
 	.byte	KEYSH , mus_thppawl_primalscene_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 24
+	.byte		VOICE , 25
 	.byte		PAN   , c_v+0
 	.byte		VOL   , 76*mus_thppawl_primalscene_mvl/mxv
 	.byte		MOD   , 0
@@ -3933,9 +3933,9 @@ mus_thppawl_primalscene_4_116:
 mus_thppawl_primalscene_5:
 	.byte	KEYSH , mus_thppawl_primalscene_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 118
+	.byte		VOICE , 48
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 127*mus_thppawl_primalscene_mvl/mxv
+	.byte		VOL   , 80*mus_thppawl_primalscene_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 @ 001   ----------------------------------------

@@ -1189,6 +1189,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         FlagSet(FLAG_FORCE_SHINY);
         SetWeather(WEATHER_SUNNY);
         DoCurrentWeather();
+        FlagSet(FLAG_USE_CURRENT_BGM_FOR_BATTLE);
     }
 
     ZeroBoxMonData(boxMon);
@@ -1450,6 +1451,7 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
         FlagSet(FLAG_FORCE_SHINY);
         SetWeather(WEATHER_SUNNY);
         DoCurrentWeather();
+        FlagSet(FLAG_USE_CURRENT_BGM_FOR_BATTLE);
     }
 
     ZeroBoxMonData(boxMon);

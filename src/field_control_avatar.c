@@ -36,6 +36,8 @@
 #include "constants/map_types.h"
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
+#include "field_weather.h"
+#include "constants/weather.h"
 
 static EWRAM_DATA u8 sWildEncounterImmunitySteps = 0;
 static EWRAM_DATA u16 sPrevMetatileBehavior = 0;
@@ -621,6 +623,13 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
         if (UpdateVsSeekerStepCounter())
         {
             ScriptContext_SetupScript(EventScript_VsSeekerChargingDone);
+            return TRUE;
+        }
+        if (ShouldLightOrbsStart() == TRUE 
+          && !(GetCurrentWeather() == WEATHER_LIGHT_ORB_UP || GetCurrentWeather() == WEATHER_ABNORMAL)
+          && !(gMapHeader.mapType == MAP_TYPE_SECRET_BASE || gMapHeader.mapType == MAP_TYPE_INDOOR || gMapHeader.mapType == MAP_TYPE_NONE))
+        {
+            ScriptContext_SetupScript(EventScript_StartsLightOrbsUp);
             return TRUE;
         }
     }

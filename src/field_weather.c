@@ -17,6 +17,8 @@
 #include "trig.h"
 #include "gpu_regs.h"
 #include "field_camera.h"
+#include "event_data.h"
+#include "item.h"
 
 #define DROUGHT_COLOR_INDEX(color) ((((color) >> 1) & 0xF) | (((color) >> 2) & 0xF0) | (((color) >> 3) & 0xF00))
 
@@ -1114,4 +1116,30 @@ bool32 IsWeatherAlphaBlend(void)
          || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL
          || gWeatherPtr->currWeather == WEATHER_UNDERWATER_BUBBLES
          || gWeatherPtr->currWeather == WEATHER_UNDERWATER);
+}
+
+bool8 ShouldLightOrbsStart(void)
+{
+    u16 randomTrigger;
+
+    if (FlagGet(FLAG_ENABLE_LIGHT_ORB_UP) == TRUE)
+    {
+        if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
+        {
+            randomTrigger = Random() % 2048;
+        }
+        else
+        {
+            randomTrigger = Random() % 4096;
+        }
+    } 
+    else
+    {
+        randomTrigger = 9999;
+    }
+
+    if (randomTrigger == 1)
+        return TRUE;
+    else
+        return FALSE;
 }

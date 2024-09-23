@@ -2421,7 +2421,7 @@ void LightOrbs_InitVars(void)
 {
     gWeatherPtr->initStep = 0;
     gWeatherPtr->weatherGfxLoaded = FALSE;
-    gWeatherPtr->targetColorMapIndex = 0;
+    gWeatherPtr->targetColorMapIndex = 9;
     gWeatherPtr->colorMapStepDelay = 20;
     gWeatherPtr->targetLightorbSpriteCount = NUM_SNOWFLAKE_SPRITES;
     gWeatherPtr->lightorbVisibleCounter = 0;
@@ -2577,7 +2577,7 @@ static void InitLightorbSpriteMovement(struct Sprite *sprite)
     u16 rand;
     u16 x = ((sprite->tLightorbId * 5) & 7) * 30 + (Random() % 30);
 
-    sprite->y = -3 - (gSpriteCoordOffsetY + sprite->centerToCornerVecY);
+    sprite->y = 200 - (gSpriteCoordOffsetY + sprite->centerToCornerVecY);
     sprite->x = x - (gSpriteCoordOffsetX + sprite->centerToCornerVecX);
     sprite->tPosY = sprite->y * 128;
     sprite->x2 = 0;

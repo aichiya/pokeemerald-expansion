@@ -1135,3 +1135,21 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+TwinriverCity_EventScript_DummyTest1::
+    lock
+	faceplayer
+	givemongift1 SPECIES_MEW, 50, ITEM_NONE, ITEM_DREAM_BALL, NATURE_MODEST, 0, 1, 4, 0, 0, 252, 252, 0, 31, 31, 31, 31, 31, 31, MOVE_ICE_BEAM, MOVE_HOLD_BACK, MOVE_FLASH_CANNON, MOVE_SING, 0, 0, TYPE_NEW_WATER
+	msgbox TwinriverCity_Text_DummyText1, MSGBOX_NPC
+	setflag FLAG_ENABLE_LIGHT_ORB_UP
+	release
+	end
+
+TwinriverCity_Text_DummyText1:
+	.string "Are you familiar with this region's\n"
+	.string "legend?\p"
+	.string "The moment something good happens or\n"
+	.string "a moment of happines occurs,\l"
+	.string "orbs of light appear.\p"
+	.string "No one knows what they are.\p"
+	.string "What is for certain is those orbs of\n"
+	.string "light are taken as symbols of happiness.$"

@@ -1018,6 +1018,13 @@ EventScript_VsSeekerChargingDone::
 	releaseall
 	end
 
+EventScript_StartsLightOrbsUp::
+    setweather WEATHER_LIGHT_ORB_UP
+	doweather
+	playbgm MUS_KEY_CLANNAD_SHINING_IN_THE_SKY, FALSE
+	release
+	end
+
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"
 	.include "data/scripts/abnormal_weather.inc"

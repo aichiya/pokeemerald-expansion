@@ -177,6 +177,7 @@ void SetWeatherPalStateIdle(void);
 void PreservePaletteInWeather(u8 preservedPalIndex);
 void ResetPreservedPalettesInWeather(void);
 bool32 IsWeatherAlphaBlend(void);
+bool8 ShouldLightOrbsStart(void);
 
 // field_weather_effect.c
 void Clouds_InitVars(void);

@@ -394,7 +394,7 @@ gCryTable::
 	cry Cry_Ditto
 .endif @ P_FAMILY_DITTO
 .if P_FAMILY_EEVEE == TRUE
-	cry Cry_Eevee
+	cry Cry_THLunasaLine
 	cry Cry_Vaporeon
 	cry Cry_Jolteon
 	cry Cry_Flareon
@@ -461,7 +461,7 @@ gCryTable::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MEWTWO
 .if P_FAMILY_MEW == TRUE
-	cry Cry_Mew
+	cry Cry_THTenshiLine
 .endif @ P_FAMILY_MEW
 .if P_FAMILY_CHIKORITA == TRUE
 	cry Cry_Chikorita
@@ -2822,7 +2822,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Ditto
 .endif @ P_FAMILY_DITTO
 .if P_FAMILY_EEVEE == TRUE
-	cry_reverse Cry_Eevee
+	cry_reverse Cry_THLunasaLine
 	cry_reverse Cry_Vaporeon
 	cry_reverse Cry_Jolteon
 	cry_reverse Cry_Flareon
@@ -2889,7 +2889,7 @@ gCryTable_Reverse::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MEWTWO
 .if P_FAMILY_MEW == TRUE
-	cry_reverse Cry_Mew
+	cry_reverse Cry_THTenshiLine
 .endif @ P_FAMILY_MEW
 .if P_FAMILY_CHIKORITA == TRUE
 	cry_reverse Cry_Chikorita

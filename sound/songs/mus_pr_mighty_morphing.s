@@ -16,7 +16,7 @@ mus_pr_mighty_morphing_0:
         .byte   KEYSH , mus_pr_mighty_morphing_key+0
 @ 000   ----------------------------------------
         .byte   TEMPO , 100/2
-        .byte           VOICE , 43 @ 30
+        .byte           VOICE , 44 @ 30
         .byte           VOL   , 102*mus_pr_mighty_morphing_mvl/mxv
         .byte           PAN   , c_v-27
         .byte           N06   , En1 , v100
@@ -735,7 +735,7 @@ mus_pr_mighty_morphing_1_13:
 mus_pr_mighty_morphing_2:
         .byte   KEYSH , mus_pr_mighty_morphing_key+0
 @ 000   ----------------------------------------
-        .byte           VOICE , 43 @ 30
+        .byte           VOICE , 44 @ 30
         .byte           VOL   , 127*mus_pr_mighty_morphing_mvl/mxv
         .byte   W96
 @ 001   ----------------------------------------
@@ -986,7 +986,7 @@ mus_pr_mighty_morphing_2_LOOP:
 mus_pr_mighty_morphing_3:
         .byte   KEYSH , mus_pr_mighty_morphing_key+0
 @ 000   ----------------------------------------
-        .byte           VOICE , 43 @ 30
+        .byte           VOICE , 44 @ 30
         .byte           VOL   , 105*mus_pr_mighty_morphing_mvl/mxv
         .byte   W96
 @ 001   ----------------------------------------

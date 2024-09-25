@@ -456,7 +456,7 @@ LittlerootTown_EventScript_TownSign::
 @	dowildbattle
 @   setflag FLAG_CUSTOM_BGM_BATTLE
 @	setvar VAR_MUSIC_SETTING, MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NICOLAS_5, 0, LittlerootTown_Text_TownSign
+	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_KIRK, 0, LittlerootTown_Text_TownSign
 @   setwildbattle SPECIES_CELEBI, 50, ITEM_NONE
 @	dowildbattle
     delay 4

@@ -2264,6 +2264,7 @@ SECTIONS {
         sound/songs/mus_sd_kanashimi_no_mukou_e.o(.rodata);
         sound/songs/mus_pr_mighty_morphing.o(.rodata);
         sound/songs/mus_key_clannad_shining_in_the_sky.o(.rodata);
+        sound/songs/mus_etc_tsubasa_wo_kudasai_k_on.o(.rodata);
     } > ROM =0
 
     lib_rodata :

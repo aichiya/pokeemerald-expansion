@@ -6504,10 +6504,15 @@ u16 GetBattleBGM(void)
             return MUS_MVC_CHUNLI;
         case TRAINER_CLASS_SCHOOL_KID:
             return MUS_DGMN_CARD2_VS_REGULAR;
+        case TRAINER_CLASS_COOLTRAINER_2:
+        case TRAINER_CLASS_COOLTRAINER:
+            return MUS_ETC_TSUBASA_WO_KUDASAI_K_ON;
+        case TRAINER_CLASS_PKMN_RANGER:
+        case TRAINER_CLASS_GUITARIST:
+            return MUS_PR_MIGHTY_MORPHING;
 /*
         case TRAINER_CLASS_PKMN_TRAINER_1:
         case TRAINER_CLASS_PKMN_TRAINER_2:
-        case TRAINER_CLASS_COOLTRAINER:
         case TRAINER_CLASS_COLLECTOR:
         case TRAINER_CLASS_SWIMMER_M:
         case TRAINER_CLASS_INTERVIEWER:
@@ -6517,7 +6522,6 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_BEAUTY:
         case TRAINER_CLASS_RICH_BOY:
         case TRAINER_CLASS_POKEMANIAC:
-        case TRAINER_CLASS_GUITARIST:
         case TRAINER_CLASS_KINDLER:
         case TRAINER_CLASS_CAMPER:
         case TRAINER_CLASS_PICNICKER:
@@ -6533,10 +6537,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_SWIMMER_F:
         case TRAINER_CLASS_TWINS:
         case TRAINER_CLASS_SAILOR:
-        case TRAINER_CLASS_COOLTRAINER_2:
         case TRAINER_CLASS_RIVAL:
         case TRAINER_CLASS_BUG_CATCHER:
-        case TRAINER_CLASS_PKMN_RANGER:
         case TRAINER_CLASS_SIS_AND_BRO:
         case TRAINER_CLASS_RS_PROTAG:
         case TRAINER_CLASS_0x42:

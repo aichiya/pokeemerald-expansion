@@ -2265,6 +2265,9 @@ SECTIONS {
         sound/songs/mus_pr_mighty_morphing.o(.rodata);
         sound/songs/mus_key_clannad_shining_in_the_sky.o(.rodata);
         sound/songs/mus_etc_tsubasa_wo_kudasai_k_on.o(.rodata);
+        sound/songs/mus_thppawl_primal_scene_hgss.o(.rodata);
+        sound/songs/mus_cs_scorching_back.o(.rodata);
+        sound/songs/mus_cv_dos_bloody_tears.o(.rodata);
     } > ROM =0
 
     lib_rodata :

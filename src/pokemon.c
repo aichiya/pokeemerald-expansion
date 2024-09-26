@@ -6510,6 +6510,10 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PKMN_RANGER:
         case TRAINER_CLASS_GUITARIST:
             return MUS_PR_MIGHTY_MORPHING;
+        case TRAINER_CLASS_KINDLER:
+            return MUS_CS_SCORCHING_BACK;
+        case TRAINER_CLASS_YOUNGSTER:
+            return MUS_MVC_MEGAMAN;
 /*
         case TRAINER_CLASS_PKMN_TRAINER_1:
         case TRAINER_CLASS_PKMN_TRAINER_2:
@@ -6522,14 +6526,12 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_BEAUTY:
         case TRAINER_CLASS_RICH_BOY:
         case TRAINER_CLASS_POKEMANIAC:
-        case TRAINER_CLASS_KINDLER:
         case TRAINER_CLASS_CAMPER:
         case TRAINER_CLASS_PICNICKER:
         case TRAINER_CLASS_BUG_MANIAC:
         case TRAINER_CLASS_PSYCHIC:
         case TRAINER_CLASS_WINSTRATE:
         case TRAINER_CLASS_POKEFAN:
-        case TRAINER_CLASS_YOUNGSTER:
         case TRAINER_CLASS_FISHERMAN:
         case TRAINER_CLASS_TRIATHLETE:
         case TRAINER_CLASS_NINJA_BOY:

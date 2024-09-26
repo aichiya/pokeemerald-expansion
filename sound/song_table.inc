@@ -1615,6 +1615,9 @@ gSongTable::
 	song mus_pr_mighty_morphing, 0, 0
 	song mus_key_clannad_shining_in_the_sky, 0, 0
 	song mus_etc_tsubasa_wo_kudasai_k_on, 0, 0
+	song mus_thppawl_primal_scene_hgss, 0, 0
+	song mus_cs_scorching_back, 0, 0
+	song mus_cv_dos_bloody_tears, 0, 0
 
 	.align 2
 dummy_song_header:

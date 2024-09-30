@@ -5714,6 +5714,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_THPPAWL_PRIMAL_SCENE_HGSS) \
     X(MUS_CS_SCORCHING_BACK) \
     X(MUS_CV_DOS_BLOODY_TEARS) \
+    X(MUS_MTADV_PEACH_TOUR_MATCH) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

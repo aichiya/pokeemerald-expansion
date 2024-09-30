@@ -6514,6 +6514,8 @@ u16 GetBattleBGM(void)
             return MUS_CS_SCORCHING_BACK;
         case TRAINER_CLASS_YOUNGSTER:
             return MUS_MVC_MEGAMAN;
+        case TRAINER_CLASS_LADY:
+            return MUS_MTADV_PEACH_TOUR_MATCH;
 /*
         case TRAINER_CLASS_PKMN_TRAINER_1:
         case TRAINER_CLASS_PKMN_TRAINER_2:
@@ -6522,7 +6524,6 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_INTERVIEWER:
         case TRAINER_CLASS_TUBER_F:
         case TRAINER_CLASS_TUBER_M:
-        case TRAINER_CLASS_LADY:
         case TRAINER_CLASS_BEAUTY:
         case TRAINER_CLASS_RICH_BOY:
         case TRAINER_CLASS_POKEMANIAC:

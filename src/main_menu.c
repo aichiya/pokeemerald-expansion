@@ -38,6 +38,9 @@
 #include "title_screen.h"
 #include "window.h"
 #include "mystery_gift_menu.h"
+#include "m4a.h"
+#include "sound.h"
+#include "constants/songs.h"
 
 /*
  * Main menu state machine
@@ -741,6 +744,8 @@ static void Task_DisplayMainMenu(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
     u16 palette;
+
+    m4aSongNumStart(MUS_PKMN_PMDRED_FILE_SELECT);
 
     if (!gPaletteFade.active)
     {

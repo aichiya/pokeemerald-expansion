@@ -658,7 +658,22 @@ void CB2_InitTitleScreen(void)
                                     | DISPCNT_OBJ_ON
                                     | DISPCNT_WIN0_ON
                                     | DISPCNT_OBJWIN_ON);
-        m4aSongNumStart(MUS_TITLE);
+        u16 titleMusic = Random() % 3;
+        switch(titleMusic)
+        {
+            case 0:
+                m4aSongNumStart(MUS_THPPRF_FLAWLESSCLOTHING);
+                break;
+            case 1:
+                m4aSongNumStart(MUS_PC_ULTRACUREHAPPYTANJOU);
+                break;
+            case 2:
+                m4aSongNumStart(MUS_DCD_JTD_SYMPHONY_LOOP);
+                break;
+            default:
+                m4aSongNumStart(MUS_TITLE);
+                break;
+        }
         gMain.state = 5;
         break;
     case 5:

@@ -1587,8 +1587,9 @@
 #define MUS_THPPAWL_PRIMAL_SCENE_HGSS 1614
 #define MUS_CS_SCORCHING_BACK 1615
 #define MUS_CV_DOS_BLOODY_TEARS 1616
+#define MUS_MTADV_PEACH_TOUR_MATCH 1617
 
-#define END_MUS 					MUS_CV_DOS_BLOODY_TEARS
+#define END_MUS 					MUS_MTADV_PEACH_TOUR_MATCH
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

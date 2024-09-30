@@ -2268,6 +2268,7 @@ SECTIONS {
         sound/songs/mus_thppawl_primal_scene_hgss.o(.rodata);
         sound/songs/mus_cs_scorching_back.o(.rodata);
         sound/songs/mus_cv_dos_bloody_tears.o(.rodata);
+        sound/songs/mus_mtadv_peach_tour_match.o(.rodata);
     } > ROM =0
 
     lib_rodata :

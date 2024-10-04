@@ -3763,15 +3763,15 @@ mus_dgmn_card2_butterfly_no_intro_8_30:
         .byte   W12
         .byte           N44   , An2 , v085 , gtp1
         .byte   W24
-        .byte           N11   , EnM1 , v098
+        .byte           N11   , An1 , v098
         .byte   W12
-        .byte           N23   , DnM1 , v110
+        .byte           N23   , Gn1 , v110
         .byte   W06
 @ 032   ----------------------------------------
         .byte   W06
         .byte           N32   , An2 , v098 , gtp2
         .byte   W23
-        .byte           N17   , DnM1 , v123
+        .byte           N17   , Gn1 , v123
         .byte   W13
         .byte           N22   , An2 , v110
         .byte   W24
@@ -3785,7 +3785,7 @@ mus_dgmn_card2_butterfly_no_intro_8_30:
         .byte   W24
         .byte           N22   , En2 , v103
         .byte   W24
-        .byte           N24   , CnM1 , v098
+        .byte           N24   , Fs1 , v098
         .byte   W30
 @ 034   ----------------------------------------
         .byte   W66

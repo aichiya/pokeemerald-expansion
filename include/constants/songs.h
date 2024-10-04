@@ -1588,8 +1588,10 @@
 #define MUS_CS_SCORCHING_BACK 1615
 #define MUS_CV_DOS_BLOODY_TEARS 1616
 #define MUS_MTADV_PEACH_TOUR_MATCH 1617
+#define MUS_DGMN_CARD2_BUTTERFLY 1618
+#define MUS_DGMN_CARD2_BUTTERFLY_NO_INTRO 1619
 
-#define END_MUS 					MUS_MTADV_PEACH_TOUR_MATCH
+#define END_MUS 					MUS_DGMN_CARD2_BUTTERFLY_NO_INTRO
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

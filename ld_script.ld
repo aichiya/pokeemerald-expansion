@@ -2269,6 +2269,8 @@ SECTIONS {
         sound/songs/mus_cs_scorching_back.o(.rodata);
         sound/songs/mus_cv_dos_bloody_tears.o(.rodata);
         sound/songs/mus_mtadv_peach_tour_match.o(.rodata);
+        sound/songs/mus_dgmn_card2_butterfly.o(.rodata);
+        sound/songs/mus_dgmn_card2_butterfly_no_intro.o(.rodata);
     } > ROM =0
 
     lib_rodata :

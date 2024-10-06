@@ -1153,3 +1153,16 @@ TwinriverCity_Text_DummyText1:
 	.string "No one knows what they are.\p"
 	.string "What is for certain is those orbs of\n"
 	.string "light are taken as symbols of happiness.$"
+
+TwinriverCity_EventScript_SafariZoneSign::
+	msgbox TwinriverCity_Text_SafariZoneSign, MSGBOX_SIGN
+	goto_if_le VAR_MAIN_STORY, 2, TwinriverCity_EventScript_SafariZoneSign_IfConstructionEnded
+	end
+
+TwinriverCity_EventScript_SafariZoneSign_IfConstructionEnded::
+    setvar VAR_MAIN_STORY, 2
+	end
+
+TwinriverCity_Text_SafariZoneSign:
+	.string "Newly open SAFARI ZONE!\n"
+	.string "Catch rare Fragmon!$"

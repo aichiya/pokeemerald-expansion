@@ -1,0 +1,104 @@
+.set LOCALID_ATTENDANT, 1
+
+SafariZone_SouthFirstConstruction_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, SafariZone_SouthFirstConstruction_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, SafariZone_SouthFirstConstruction_OnFrame
+	.byte 0
+
+SafariZone_SouthFirstConstruction_OnFrame:
+	map_script_2 VAR_SAFARI_ZONE_STATE, 2, SafariZone_SouthFirstConstruction_EventScript_EnterSafariZone
+	.2byte 0
+
+SafariZone_SouthFirstConstruction_EventScript_EnterSafariZone::
+	lockall
+	applymovement OBJ_EVENT_ID_PLAYER, SafariZone_SouthFirstConstruction_Movement_PlayerEnter
+	waitmovement 0
+	applymovement LOCALID_ATTENDANT, SafariZone_SouthFirstConstruction_Movement_ExitAttendantBlockDoor
+	waitmovement 0
+	setobjectxyperm LOCALID_ATTENDANT, 32, 34
+	setvar VAR_SAFARI_ZONE_STATE, 0
+	releaseall
+	end
+
+SafariZone_SouthFirstConstruction_OnTransition:
+	call_if_eq VAR_SAFARI_ZONE_STATE, 2, SafariZone_SouthFirstConstruction_EventScript_SetExitAttendantAside
+	end
+
+SafariZone_SouthFirstConstruction_EventScript_SetExitAttendantAside::
+	setobjectxyperm LOCALID_ATTENDANT, 31, 34
+	return
+
+SafariZone_SouthFirstConstruction_Movement_PlayerEnter:
+	walk_down
+	step_end
+
+SafariZone_SouthFirstConstruction_Movement_ExitAttendantBlockDoor:
+	walk_right
+	walk_in_place_faster_down
+	step_end
+
+SafariZone_SouthFirstConstruction_EventScript_ExitAttendant::
+	lock
+	faceplayer
+	goto_if_unset FLAG_GOOD_LUCK_SAFARI_ZONE, SafariZone_SouthFirstConstruction_EventScript_GoodLuck
+	msgbox SafariZone_South_Text_StillHaveTimeExit, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, SafariZone_SouthFirstConstruction_EventScript_ExitEarly
+	msgbox SafariZone_South_Text_EnjoyTheRestOfYourAdventure, MSGBOX_DEFAULT
+	release
+	end
+
+SafariZone_SouthFirstConstruction_EventScript_GoodLuck::
+	setflag FLAG_GOOD_LUCK_SAFARI_ZONE
+	msgbox SafariZone_South_Text_GoodLuck, MSGBOX_DEFAULT
+	release
+	end
+
+SafariZone_SouthFirstConstruction_EventScript_ExitEarly::
+	msgbox SafariZone_South_Text_ExitEarlyThankYouForPlaying, MSGBOX_DEFAULT
+	closemessage
+	switch VAR_FACING
+	case DIR_NORTH, SafariZone_SouthFirstConstruction_EventScript_ExitEarlyNorth
+	case DIR_EAST, SafariZone_SouthFirstConstruction_EventScript_ExitEarlyEast
+	end
+
+SafariZone_SouthFirstConstruction_EventScript_ExitEarlyNorth::
+	applymovement LOCALID_ATTENDANT, SafariZone_SouthFirstConstruction_Movement_MoveExitAttendantNorth
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, SafariZone_SouthFirstConstruction_Movement_PlayerExitNorth
+	waitmovement 0
+	goto SafariZone_SouthFirstConstruction_EventScript_Exit
+	end
+
+SafariZone_SouthFirstConstruction_EventScript_ExitEarlyEast::
+	applymovement LOCALID_ATTENDANT, SafariZone_SouthFirstConstruction_Movement_MoveExitAttendantEast
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, SafariZone_SouthFirstConstruction_Movement_PlayerExitEast
+	waitmovement 0
+	goto SafariZone_SouthFirstConstruction_EventScript_Exit
+	end
+
+SafariZone_SouthFirstConstruction_EventScript_Exit::
+	setvar VAR_SAFARI_ZONE_STATE, 1
+	special ExitSafariMode
+	warpdoor MAP_ROUTE121_SAFARI_ZONE_ENTRANCE, 2, 5
+	waitstate
+	end
+
+SafariZone_SouthFirstConstruction_Movement_PlayerExitNorth:
+	walk_up
+	step_end
+
+SafariZone_SouthFirstConstruction_Movement_PlayerExitEast:
+	walk_right
+	walk_in_place_faster_up
+	step_end
+
+SafariZone_SouthFirstConstruction_Movement_MoveExitAttendantNorth:
+	walk_left
+	walk_in_place_faster_right
+	step_end
+
+SafariZone_SouthFirstConstruction_Movement_MoveExitAttendantEast:
+	walk_down
+	walk_in_place_faster_up
+	step_end

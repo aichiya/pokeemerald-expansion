@@ -1003,7 +1003,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_MOUNTAIN_ROAD",
       "name": "Mountain Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1012,7 +1011,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_UNDERGROUND",
       "name": "Underworld",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1021,7 +1019,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_FORMER_CAPITAL",
       "name": "Former Capital",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1030,7 +1027,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_FORMER_HELL",
       "name": "Former Hell",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1039,7 +1035,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_BAMBOO_FOREST",
       "name": "Bamboo Forest of the Lost",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1048,7 +1043,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_FOREST_OF_MAGIC",
       "name": "Forest of Magic",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1057,7 +1051,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_HELL",
       "name": "Hell",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1066,7 +1059,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_BORDER_ISLAND",
       "name": "Border Island",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1075,7 +1067,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_LAKE_OF_BLOOD",
       "name": "Lake of Blood",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1084,7 +1075,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_MOON",
       "name": "Far Side of the Moon",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1093,7 +1083,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_RUINED_MANSION",
       "name": "Ruined Mansion",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1102,7 +1091,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_MISTY_CAVERN",
       "name": "Misty Cavern",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1111,7 +1099,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_HIGAN",
       "name": "Higan",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1120,7 +1107,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_MAYOIGA",
       "name": "Mayoiga",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1129,7 +1115,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_YOUKAI_ROAD",
       "name": "Youkai Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1138,7 +1123,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_NORTHERN_ROAD1",
       "name": "Northern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1147,7 +1131,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_NORTHERN_ROAD2",
       "name": "Northern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1156,7 +1139,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_NORTHERN_ROAD3",
       "name": "Northern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1165,7 +1147,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_NORTHERN_ROAD4",
       "name": "Northern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1174,7 +1155,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_NORTHERN_ROAD5",
       "name": "Northern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1183,7 +1163,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_WESTERN_ROAD1",
       "name": "Western Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1192,7 +1171,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_WESTERN_ROAD2",
       "name": "Western Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1201,7 +1179,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_WESTERN_ROAD3",
       "name": "Western Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1210,7 +1187,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_WESTERN_ROAD4",
       "name": "Western Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1219,7 +1195,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_WESTERN_ROAD5",
       "name": "Western Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1228,7 +1203,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_SOUTHERN_ROAD1",
       "name": "Southern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1237,7 +1211,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_SOUTHERN_ROAD2",
       "name": "Southern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1246,7 +1219,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_SOUTHERN_ROAD3",
       "name": "Southern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1255,7 +1227,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_SOUTHERN_ROAD4",
       "name": "Southern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1264,7 +1235,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_SOUTHERN_ROAD5",
       "name": "Southern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1281,7 +1251,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_EASTERN_ROAD2",
       "name": "Eastern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1290,7 +1259,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_EASTERN_ROAD3",
       "name": "Eastern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1299,7 +1267,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_EASTERN_ROAD4",
       "name": "Eastern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1308,7 +1275,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_EASTERN_ROAD5",
       "name": "Eastern Road",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1317,7 +1283,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_RECONSIDERATION1",
       "name": "Road of Reconsideration",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1326,7 +1291,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_RECONSIDERATION2",
       "name": "Road of Reconsideration",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1335,7 +1299,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_RECONSIDERATION3",
       "name": "Road of Reconsideration",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1344,7 +1307,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_RECONSIDERATION4",
       "name": "Road of Reconsideration",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1353,7 +1315,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_RECONSIDERATION5",
       "name": "Road of Reconsideration",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1362,7 +1323,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_LIMINATION1",
       "name": "Road of Limination",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1371,7 +1331,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_LIMINATION2",
       "name": "Road of Limination",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1396,7 +1355,6 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_LIMINATION5",
       "name": "Road of Limination",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1405,7 +1363,6 @@
     {
       "map_section": "MAPSEC_REV_YYYI_SEA_OF_TREES2",
       "name": "Sea of Trees",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1414,7 +1371,6 @@
     {
       "map_section": "MAPSEC_REV_YYYI_SEA_OF_TREES3",
       "name": "Sea of Trees",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1423,7 +1379,6 @@
     {
       "map_section": "MAPSEC_REV_YYYI_SEA_OF_TREES4",
       "name": "Sea of Trees",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1432,7 +1387,6 @@
     {
       "map_section": "MAPSEC_REV_YYYI_SEA_OF_TREES5",
       "name": "Sea of Trees",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1449,7 +1403,6 @@
     {
       "map_section": "MAPSEC_REV_YYYI_SEA_OF_FLAME3",
       "name": "Sea of Flame",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1674,7 +1627,6 @@
     {
       "map_section": "MAPSEC_REV_JAVA_SULTAN_PALACE",
       "name": "Sultan Palace",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1683,7 +1635,6 @@
     {
       "map_section": "MAPSEC_REV_JAVA_SUNAN_PALACE",
       "name": "Sunan Palace",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1692,7 +1643,6 @@
     {
       "map_section": "MAPSEC_REV_JAVA_SURABAYA_ZONE",
       "name": "Surabaya Zone",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1701,7 +1651,6 @@
     {
       "map_section": "MAPSEC_REV_JAVA_THOUSAND_DOORS",
       "name": "Thousand Doors",
-
       "x": 0,
       "y": 10,
       "width": 1,
@@ -1710,7 +1659,6 @@
     {
       "map_section": "MAPSEC_REV_JAVA_MT_MERAPI_CAVE",
       "name": "Mt. Merapi Cave",
-
       "x": 24,
       "y": 3,
       "width": 2,
@@ -1719,7 +1667,6 @@
     {
       "map_section": "MAPSEC_REV_JAVA_NATIONAL_MONUMENT",
       "name": "National Monument",
-
       "x": 24,
       "y": 10,
       "width": 2,
@@ -1728,7 +1675,6 @@
     {
       "map_section": "MAPSEC_REV_JAVA_LOST_AGE1",
       "name": "The Lost Age",
-
       "x": 2,
       "y": 0,
       "width": 1,
@@ -1737,7 +1683,6 @@
     {
       "map_section": "MAPSEC_REV_JAVA_LOST_AGE2",
       "name": "The Lost Age",
-
       "x": 6,
       "y": 8,
       "width": 1,
@@ -1746,7 +1691,6 @@
     {
       "map_section": "MAPSEC_REV_JAVA_LOST_AGE3",
       "name": "The Lost Age",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1755,7 +1699,6 @@
     {
       "map_section": "MAPSEC_REV_JAVA_LOST_AGE4",
       "name": "The Lost Age",
-
       "x": 8,
       "y": 4,
       "width": 1,
@@ -1764,7 +1707,6 @@
     {
       "map_section": "MAPSEC_0xD5",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1773,7 +1715,6 @@
     {
       "map_section": "MAPSEC_0xD6",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1782,7 +1723,6 @@
     {
       "map_section": "MAPSEC_0xD7",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1791,7 +1731,6 @@
     {
       "map_section": "MAPSEC_0xD8",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1800,7 +1739,6 @@
     {
       "map_section": "MAPSEC_0xD9",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1809,7 +1747,6 @@
     {
       "map_section": "MAPSEC_0xDA",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1818,7 +1755,6 @@
     {
       "map_section": "MAPSEC_0xDB",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1827,7 +1763,6 @@
     {
       "map_section": "MAPSEC_0xDC",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1836,7 +1771,6 @@
     {
       "map_section": "MAPSEC_0xDD",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1845,7 +1779,6 @@
     {
       "map_section": "MAPSEC_0xDE",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1854,7 +1787,6 @@
     {
       "map_section": "MAPSEC_0xDF",
       "name": "Unknown Place",
-
       "x": 0,
       "y": 0,
       "width": 1,

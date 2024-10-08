@@ -3,7 +3,7 @@
   "name": "Route106",
   "layout": "LAYOUT_ROUTE106",
   "music": "MUS_ROUTE104",
-  "region_map_section": "MAPSEC_JOHTO_ROUTE_30",
+  "region_map_section": "MAPSEC_REV_GENSOKYO_MORIYA_SHRINE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

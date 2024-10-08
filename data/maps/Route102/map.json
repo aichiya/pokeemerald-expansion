@@ -3,7 +3,7 @@
   "name": "Route102",
   "layout": "LAYOUT_ROUTE102",
   "music": "MUS_ROUTE101",
-  "region_map_section": "MAPSEC_JOHTO_ROUTE_26",
+  "region_map_section": "MAPSEC_REV_GENSOKYO_HUMAN_VILLAGE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

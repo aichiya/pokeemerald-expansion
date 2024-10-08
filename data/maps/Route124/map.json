@@ -3,7 +3,7 @@
   "name": "Route124",
   "layout": "LAYOUT_ROUTE124",
   "music": "MUS_ROUTE120",
-  "region_map_section": "MAPSEC_JOHTO_ROUTE_48",
+  "region_map_section": "MAPSEC_REV_JAVA_YOGYAKARTA",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_OCEAN_ROUTE",

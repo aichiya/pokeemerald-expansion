@@ -3,7 +3,7 @@
   "name": "SkyPillar_Outside",
   "layout": "LAYOUT_SKY_PILLAR_OUTSIDE",
   "music": "MUS_MT_CHIMNEY",
-  "region_map_section": "MAPSEC_JOHTO_SILK_ROAD3",
+  "region_map_section": "MAPSEC_REV_JOHTO_BELL_TOWER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",

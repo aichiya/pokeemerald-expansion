@@ -3,7 +3,7 @@
   "name": "Route105",
   "layout": "LAYOUT_ROUTE105",
   "music": "MUS_ROUTE104",
-  "region_map_section": "MAPSEC_JOHTO_ROUTE_29",
+  "region_map_section": "MAPSEC_REV_GENSOKYO_HAKUGYOKUROU",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

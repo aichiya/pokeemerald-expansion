@@ -3,7 +3,7 @@
   "name": "SafariZone_North",
   "layout": "LAYOUT_SAFARI_ZONE_NORTH",
   "music": "MUS_SAFARI_ZONE",
-  "region_map_section": "MAPSEC_JOHTO_MT_SILVER_CAVE",
+  "region_map_section": "MAPSEC_REV_JOHTO_MT_SILVER_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",

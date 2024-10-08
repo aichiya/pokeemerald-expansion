@@ -3,7 +3,7 @@
   "name": "Route104_Prototype",
   "layout": "LAYOUT_ROUTE104_PROTOTYPE",
   "music": "MUS_ROUTE104",
-  "region_map_section": "MAPSEC_JOHTO_ROUTE_28",
+  "region_map_section": "MAPSEC_REV_GENSOKYO_MUENZUKA",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

@@ -3,7 +3,7 @@
   "name": "RustboroCity_House1",
   "layout": "LAYOUT_RUSTBORO_CITY_HOUSE1",
   "music": "MUS_RUSTBORO",
-  "region_map_section": "MAPSEC_JOHTO_LAKE_OF_RAGE",
+  "region_map_section": "MAPSEC_REV_JOHTO_LAKE_OF_RAGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

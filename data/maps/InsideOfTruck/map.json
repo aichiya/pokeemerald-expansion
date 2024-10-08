@@ -3,7 +3,7 @@
   "name": "InsideOfTruck",
   "layout": "LAYOUT_INSIDE_OF_TRUCK",
   "music": "MUS_NONE",
-  "region_map_section": "MAPSEC_JOHTO_SILK_ROAD2",
+  "region_map_section": "MAPSEC_REV_JOHTO_SPROUT_TOWER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

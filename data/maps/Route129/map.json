@@ -3,7 +3,7 @@
   "name": "Route129",
   "layout": "LAYOUT_ROUTE129",
   "music": "MUS_ROUTE119",
-  "region_map_section": "MAPSEC_JOHTO_BURNED_TOWER",
+  "region_map_section": "MAPSEC_0x2C",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_OCEAN_ROUTE",

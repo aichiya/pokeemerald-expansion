@@ -1,7 +1,7 @@
 {
   "map_sections": [
     {
-      "map_section": "MAPSEC_JOHTO_TWINRIVER_CITY",
+      "map_section": "MAPSEC_REV_JOHTO_TWINRIVER_CITY",
       "name": "Twinriver City",
       "x": 4,
       "y": 11,
@@ -9,7 +9,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_NEW_BARK_TOWN",
+      "map_section": "MAPSEC_REV_JOHTO_NEW_BARK_TOWN",
       "name": "New Bark Town",
       "x": 4,
       "y": 9,
@@ -17,7 +17,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_CHERRYGROVE_CITY",
+      "map_section": "MAPSEC_REV_JOHTO_CHERRYGROVE_CITY",
       "name": "Cherrygrove City",
       "x": 2,
       "y": 14,
@@ -25,7 +25,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_VIOLET_CITY",
+      "map_section": "MAPSEC_REV_JOHTO_VIOLET_CITY",
       "name": "Violet City",
       "x": 5,
       "y": 3,
@@ -33,7 +33,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_AZALEA_TOWN",
+      "map_section": "MAPSEC_REV_JOHTO_AZALEA_TOWN",
       "name": "Azalea Town",
       "x": 3,
       "y": 0,
@@ -41,7 +41,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_CIANWOOD_CITY",
+      "map_section": "MAPSEC_REV_JOHTO_CIANWOOD_CITY",
       "name": "Cianwood City",
       "x": 4,
       "y": 6,
@@ -49,7 +49,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_GOLDENROD_CITY",
+      "map_section": "MAPSEC_REV_JOHTO_GOLDENROD_CITY",
       "name": "Goldenrod City",
       "x": 17,
       "y": 10,
@@ -57,7 +57,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_OLIVINE_CITY",
+      "map_section": "MAPSEC_REV_JOHTO_OLIVINE_CITY",
       "name": "Olivine City",
       "x": 1,
       "y": 9,
@@ -65,7 +65,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ECRUTEAK_CITY",
+      "map_section": "MAPSEC_REV_JOHTO_ECRUTEAK_CITY",
       "name": "Ecruteak City",
       "x": 8,
       "y": 10,
@@ -73,7 +73,7 @@
       "height": 2
     },
     {
-      "map_section": "MAPSEC_JOHTO_MAHOGANY_TOWN",
+      "map_section": "MAPSEC_REV_JOHTO_MAHOGANY_TOWN",
       "name": "Mahogany Town",
       "x": 8,
       "y": 6,
@@ -81,7 +81,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_LAKE_OF_RAGE",
+      "map_section": "MAPSEC_REV_JOHTO_LAKE_OF_RAGE",
       "name": "Lake of Rage",
       "x": 0,
       "y": 5,
@@ -89,7 +89,7 @@
       "height": 2
     },
     {
-      "map_section": "MAPSEC_JOHTO_BLACKTHORN_CITY",
+      "map_section": "MAPSEC_REV_JOHTO_BLACKTHORN_CITY",
       "name": "Blackthorn City",
       "x": 12,
       "y": 0,
@@ -97,7 +97,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_MT_SILVER",
+      "map_section": "MAPSEC_REV_JOHTO_MT_SILVER",
       "name": "Mt. Silver",
       "x": 18,
       "y": 3,
@@ -105,7 +105,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_INDIGO_PLATEAU",
+      "map_section": "MAPSEC_REV_JOHTO_INDIGO_PLATEAU",
       "name": "Indigo League",
       "x": 24,
       "y": 5,
@@ -113,7 +113,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_MORIYA_SHRINE",
+      "map_section": "MAPSEC_REV_JOHTO_MORIYA_SHRINE",
       "name": "Moriya Shrine",
       "x": 21,
       "y": 7,
@@ -121,7 +121,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_SPACE_HYPER_VESSEL",
+      "map_section": "MAPSEC_REV_JOHTO_SPACE_HYPER_VESSEL",
       "name": "Space Hyper Vessel",
       "x": 27,
       "y": 8,
@@ -129,336 +129,336 @@
       "height": 2
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_23",
-      "name": "Route 23",
+      "map_section": "MAPSEC_REV_GENSOKYO_HAKUREI_SHRINE",
+      "name": "Hakurei Shrine",
       "x": 4,
       "y": 10,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_26",
-      "name": "Route 26",
+      "map_section": "MAPSEC_REV_GENSOKYO_HUMAN_VILLAGE",
+      "name": "Human Village",
       "x": 2,
       "y": 9,
       "width": 2,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_27",
-      "name": "Route 27",
+      "map_section": "MAPSEC_REV_GENSOKYO_KOURINDOU",
+      "name": "Kourindou",
       "x": 4,
       "y": 8,
       "width": 4,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_28",
-      "name": "Route 28",
+      "map_section": "MAPSEC_REV_GENSOKYO_MUENZUKA",
+      "name": "Muenzuka",
       "x": 0,
       "y": 7,
       "width": 1,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_29",
-      "name": "Route 29",
+      "map_section": "MAPSEC_REV_GENSOKYO_HAKUGYOKUROU",
+      "name": "Hakugyokurou",
       "x": 0,
       "y": 10,
       "width": 1,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_30",
-      "name": "Route 30",
+      "map_section": "MAPSEC_REV_GENSOKYO_MORIYA_SHRINE",
+      "name": "Moriya Shrine",
       "x": 0,
       "y": 13,
       "width": 2,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_31",
-      "name": "Route 31",
+      "map_section": "MAPSEC_REV_GENSOKYO_SCARLET_DEVIL_MANSION",
+      "name": "Scarlet Devil Mansion",
       "x": 3,
       "y": 14,
       "width": 3,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_32",
-      "name": "Route 32",
+      "map_section": "MAPSEC_REV_GENSOKYO_CHIREIDEN",
+      "name": "Earthbound Palace",
       "x": 6,
       "y": 14,
       "width": 2,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_33",
-      "name": "Route 33",
+      "map_section": "MAPSEC_REV_GENSOKYO_PALENQUIN_SHIP",
+      "name": "Palenquin Ship",
       "x": 8,
       "y": 12,
       "width": 1,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_34",
-      "name": "Route 34",
+      "map_section": "MAPSEC_REV_GENSOKYO_SANZU_RIVER",
+      "name": "Sanzu River",
       "x": 8,
       "y": 7,
       "width": 1,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_35",
-      "name": "Route 35",
+      "map_section": "MAPSEC_REV_GENSOKYO_GARDEN_OF_THE_SUN",
+      "name": "Garden of the Sun",
       "x": 8,
       "y": 0,
       "width": 1,
       "height": 6
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_36",
-      "name": "Route 36",
+      "map_section": "MAPSEC_REV_GENSOKYO_NAMELESS_HILL",
+      "name": "The Nameless Hill",
       "x": 6,
       "y": 3,
       "width": 2,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_37",
-      "name": "Route 37",
+      "map_section": "MAPSEC_REV_GENSOKYO_EIENTEI",
+      "name": "Eientei",
       "x": 4,
       "y": 0,
       "width": 4,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_38",
-      "name": "Route 38",
+      "map_section": "MAPSEC_REV_GENSOKYO_ANIMAL_REALM",
+      "name": "Animal Realm",
       "x": 1,
       "y": 0,
       "width": 2,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_39",
-      "name": "Route 39",
+      "map_section": "MAPSEC_REV_GENSOKYO_MUGENKAN",
+      "name": "Mugenkan",
       "x": 0,
       "y": 2,
       "width": 1,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_40",
-      "name": "Route 40",
+      "map_section": "MAPSEC_REV_GENSOKYO_FANTASY_WORLD",
+      "name": "Fantasy World",
       "x": 1,
       "y": 5,
       "width": 4,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_41",
-      "name": "Route 41",
+      "map_section": "MAPSEC_REV_GENSOKYO_DREAM_WORLD",
+      "name": "Dream World",
       "x": 5,
       "y": 6,
       "width": 3,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_42",
-      "name": "Route 42",
+      "map_section": "MAPSEC_REV_GENSOKYO_MAKAI",
+      "name": "Makai",
       "x": 10,
       "y": 6,
       "width": 2,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_43",
-      "name": "Route 43",
+      "map_section": "MAPSEC_REV_GENSOKYO_LUNAR_CAPITAL",
+      "name": "Lunar Capital",
       "x": 11,
       "y": 0,
       "width": 1,
       "height": 6
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_44",
-      "name": "Route 44",
+      "map_section": "MAPSEC_REV_GENSOKYO_FANTASY_LEAGUE",
+      "name": "Fantasy League",
       "x": 13,
       "y": 0,
       "width": 1,
       "height": 4
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_45",
-      "name": "Route 45",
+      "map_section": "MAPSEC_REV_YYYI_SEA_OF_TREES1",
+      "name": "Sea of Trees",
       "x": 14,
       "y": 3,
       "width": 4,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_46",
-      "name": "Route 46",
+      "map_section": "MAPSEC_REV_YYYI_SEA_OF_FLAME1",
+      "name": "Sea of Flame",
       "x": 16,
       "y": 4,
       "width": 1,
       "height": 2
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_47",
-      "name": "Route 47",
+      "map_section": "MAPSEC_REV_KEY_ILLUSIONARY_WORLD1",
+      "name": "Illusionary World",
       "x": 12,
       "y": 6,
       "width": 5,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_48",
-      "name": "Route 48",
+      "map_section": "MAPSEC_REV_JAVA_YOGYAKARTA",
+      "name": "Yogyakarta City",
       "x": 20,
       "y": 3,
       "width": 4,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_49",
-      "name": "Route 49",
+      "map_section": "MAPSEC_REV_JAVA_SOLO",
+      "name": "Surakarta Town",
       "x": 24,
       "y": 3,
       "width": 2,
       "height": 2
     },
     {
-      "map_section": "MAPSEC_JOHTO_ROUTE_50",
-      "name": "Route 50",
+      "map_section": "MAPSEC_REV_JAVA_SEMARANG",
+      "name": "Semarang City",
       "x": 20,
       "y": 6,
       "width": 3,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_SPROUT_TOWER",
-      "name": "Sprout Tower",
+      "map_section": "MAPSEC_REV_JAVA_SURABAYA",
+      "name": "Surabaya City",
       "x": 23,
       "y": 6,
       "width": 3,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_BELL_TOWER",
-      "name": "Bell Tower",
+      "map_section": "MAPSEC_REV_JAVA_JAKARTA",
+      "name": "Jakarta City",
       "x": 23,
       "y": 9,
       "width": 4,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_BURNED_TOWER",
-      "name": "Burned Tower",
+      "map_section": "MAPSEC_0x2C",
+      "name": "Unknown Place",
       "x": 24,
       "y": 10,
       "width": 2,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_NATIONAL_PARK",
-      "name": "National Park",
+      "map_section": "MAPSEC_0x2D",
+      "name": "Unknown Place",
       "x": 21,
       "y": 10,
       "width": 3,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_RADIO_TOWER",
-      "name": "Radio Tower",
+      "map_section": "MAPSEC_0x2E",
+      "name": "Unknown Place",
       "x": 18,
       "y": 10,
       "width": 3,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_RUINS_OF_ALPH",
-      "name": "ROUTE 132",
+      "map_section": "MAPSEC_0x2F",
+      "name": "Unknown Place",
       "x": 15,
       "y": 10,
       "width": 2,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_UNION_CAVE",
-      "name": "Union Cave",
+      "map_section": "MAPSEC_0x30",
+      "name": "Unknown Place",
       "x": 12,
       "y": 10,
       "width": 3,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_SLOWPOKE_WELL",
-      "name": "Slowpoke Well",
+      "map_section": "MAPSEC_0x31",
+      "name": "Unknown Place",
       "x": 9,
       "y": 10,
       "width": 3,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_LIGHTHOUSE",
-      "name": "Lighthouse",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_23",
+      "name": "Route 23",
       "x": 20,
       "y": 3,
       "width": 4,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_TEAM_ROCKET_HQ",
-      "name": "Team Rocket HQ",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_26",
+      "name": "Route 26",
       "x": 20,
       "y": 6,
       "width": 3,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_ILEX_FOREST",
-      "name": "Ilex Forest",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_27",
+      "name": "Route 27",
       "x": 23,
       "y": 6,
       "width": 3,
       "height": 3
     },
     {
-      "map_section": "MAPSEC_JOHTO_GOLDENROD_TUNNEL",
-      "name": "Goldenrod Tunnel",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_28",
+      "name": "Route 28",
       "x": 23,
       "y": 9,
       "width": 4,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_MT_MORTAR",
-      "name": "Mt. Mortar",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_29",
+      "name": "Route 29",
       "x": 21,
       "y": 7,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_ICE_PATH",
-      "name": "Ice Path",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_30",
+      "name": "Route 30",
       "x": 1,
       "y": 13,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_WHIRL_ISLANDS",
-      "name": "Whirl Islands",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_31",
+      "name": "Route 31",
       "x": 6,
       "y": 2,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_MT_SILVER_CAVE",
-      "name": "Mt. Silver Cave",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_32",
+      "name": "Route 32",
       "x": 16,
       "y": 2,
       "width": 1,
@@ -473,112 +473,112 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_DARK_CAVE",
-      "name": "Dark Cave",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_33",
+      "name": "Route 33",
       "x": 0,
       "y": 8,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_VICTORY_ROAD",
-      "name": "Victory Road",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_34",
+      "name": "Route 34",
       "x": 2,
       "y": 5,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_DRAGONS_DEN",
-      "name": "Dragon's Den",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_35",
+      "name": "Route 35",
       "x": 6,
       "y": 14,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_TOHJO_FALLS",
-      "name": "Tohjo Falls",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_36",
+      "name": "Route 36",
       "x": 8,
       "y": 7,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_GTS",
-      "name": "Global Wonder Station",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_37",
+      "name": "Route 37",
       "x": 0,
       "y": 3,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_POKEATHLON_DOME",
-      "name": "Athlon Dome",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_38",
+      "name": "Route 38",
       "x": 1,
       "y": 2,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_SS_AQUA",
-      "name": "S.S. Aqua",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_39",
+      "name": "Route 39",
       "x": 16,
       "y": 4,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_SAFARI_ZONE_GATE",
-      "name": "Safari Zone Gate",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_40",
+      "name": "Route 40",
       "x": 19,
       "y": 3,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_CLIFF_CAVE",
-      "name": "Cliff Cave",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_41",
+      "name": "Route 41",
       "x": 24,
       "y": 4,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_FRONTIER_ACCESS",
-      "name": "Princess Path",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_42",
+      "name": "Route 42",
       "x": 24,
       "y": 9,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_BELLCHIME_TRAIL",
-      "name": "Bellchime Trail",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_43",
+      "name": "Route 43",
       "x": 24,
       "y": 9,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_SINJOH_RUINS",
-      "name": "Ruins of Creation",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_44",
+      "name": "Route 44",
       "x": 27,
       "y": 9,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_EMBEDDED_TOWER",
-      "name": "Embedded Tower",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_45",
+      "name": "Route 45",
       "x": 17,
       "y": 10,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_CLIFF_EDGE_GATE",
-      "name": "Cliff Edge Gate",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_46",
+      "name": "Route 46",
       "x": 21,
       "y": 7,
       "width": 1,
@@ -641,48 +641,48 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_TWINRIVER_CAVE",
-      "name": "Twinriver Cave",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_47",
+      "name": "Route 47",
       "x": 13,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_UNIVERSITY",
-      "name": "Ecruteak University",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_48",
+      "name": "Route 48",
       "x": 0,
       "y": 10,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_SEALING_CLUB",
-      "name": "Sealing Club",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_49",
+      "name": "Route 49",
       "x": 8,
       "y": 3,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_SILK_ROAD1",
-      "name": "Silk Road",
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_50",
+      "name": "Route 50",
       "x": 13,
       "y": 2,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_SILK_ROAD2",
-      "name": "Silk Road",
+      "map_section": "MAPSEC_REV_JOHTO_SPROUT_TOWER",
+      "name": "Sprout Tower",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JOHTO_SILK_ROAD3",
-      "name": "Silk Road",
+      "map_section": "MAPSEC_REV_JOHTO_BELL_TOWER",
+      "name": "Bell Tower",
       "x": 19,
       "y": 10,
       "width": 1,
@@ -705,55 +705,279 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_HAKUREI_SHRINE",
-      "name": "Hakurei Shrine",
+      "map_section": "MAPSEC_REV_JOHTO_BURNED_TOWER",
+      "name": "Burned Tower",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_HUMAN_VILLAGE",
-      "name": "Human Village",
+      "map_section": "MAPSEC_REV_JOHTO_NATIONAL_PARK",
+      "name": "National Park",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_KOURINDOU",
-      "name": "Kourindou",
+      "map_section": "MAPSEC_REV_JOHTO_RADIO_TOWER",
+      "name": "Radio Tower",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_MUENZUKA",
-      "name": "Muenzuka",
+      "map_section": "MAPSEC_REV_JOHTO_RUINS_OF_ALPH",
+      "name": "Ruins of Alph",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_HAKUGYOKUROU",
-      "name": "Hakugyokurou",
+      "map_section": "MAPSEC_REV_JOHTO_UNION_CAVE",
+      "name": "Union Cave",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_MORIYA_SHRINE",
-      "name": "Moriya Shrine",
+      "map_section": "MAPSEC_REV_JOHTO_SLOWPOKE_WELL",
+      "name": "Slowpoke Well",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_SUWA_LAKE",
+      "map_section": "MAPSEC_REV_JOHTO_LIGHTHOUSE",
+      "name": "Lighthouse",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_TEAM_ROCKET_HQ",
+      "name": "Team Rocket HQ",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_ILEX_FOREST",
+      "name": "Ilex Forest",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_GOLDENROD_TUNNEL",
+      "name": "Goldenrod Tunnel",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_MT_MORTAR",
+      "name": "Mt. Mortar",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_ICE_PATH",
+      "name": "Ice Path",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_WHIRL_ISLANDS",
+      "name": "Whirl Islands",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_MT_SILVER_CAVE",
+      "name": "Mt. Silver Cave",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_DARK_CAVE",
+      "name": "Dark Cave",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_VICTORY_ROAD",
+      "name": "Victory Road",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_DRAGONS_DEN",
+      "name": "Dragon's Den",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_TOHJO_FALLS",
+      "name": "Tohjo Falls",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_GTS",
+      "name": "Global Wonder Station",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_POKEATHLON_DOME",
+      "name": "Sport Dome",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_SS_AQUA",
+      "name": "S.S. Saint Aqua",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_SAFARI_ZONE_GATE",
+      "name": "Safari Zone",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_CLIFF_CAVE",
+      "name": "Cliff Cave",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_FRONTIER_ACCESS",
+      "name": "Frontier Access",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_BELLCHIME_TRAIL",
+      "name": "Bellchime Trail",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_SINJOH_RUINS",
+      "name": "Ruins of Creation",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_EMBEDDED_TOWER",
+      "name": "Embedded Tower",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_CLIFF_EDGE_GATE",
+      "name": "Cliff Edge Gate",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_TWINRIVER_CAVE",
+      "name": "Twinriver Cave",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_UNIVERSITY",
+      "name": "Ecruteak University",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_SEALING_CLUB",
+      "name": "The Sealing Club",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_GENSOKYO_SILK_ROAD1",
+      "name": "Silk Road",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_GENSOKYO_SILK_ROAD2",
+      "name": "Silk Road",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_GENSOKYO_SILK_ROAD3",
+      "name": "Silk Road",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_GENSOKYO_SUWA_LAKE",
       "name": "Suwa Lake",
       "x": 0,
       "y": 0,
@@ -761,15 +985,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_SCARLET_DEVIL_MANSION",
-      "name": "Scarlet Devil Mansion",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_MISTY_LAKE",
+      "map_section": "MAPSEC_REV_GENSOKYO_MISTY_LAKE",
       "name": "Misty Lake",
       "x": 0,
       "y": 0,
@@ -777,7 +993,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_YOUKAI_MOUNTAIN",
+      "map_section": "MAPSEC_REV_GENSOKYO_YOUKAI_MOUNTAIN",
       "name": "Youkai Mountain",
       "x": 0,
       "y": 0,
@@ -785,223 +1001,142 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_MOUNTAIN_ROAD",
+      "map_section": "MAPSEC_REV_GENSOKYO_MOUNTAIN_ROAD",
       "name": "Mountain Road",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_UNDERGROUND",
-      "name": "Underground",
+      "map_section": "MAPSEC_REV_GENSOKYO_UNDERGROUND",
+      "name": "Underworld",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_CHIREIDEN",
-      "name": "Chireiden",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_FORMER_CAPITAL",
+      "map_section": "MAPSEC_REV_GENSOKYO_FORMER_CAPITAL",
       "name": "Former Capital",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_FORMER_HELL",
+      "map_section": "MAPSEC_REV_GENSOKYO_FORMER_HELL",
       "name": "Former Hell",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_PALENQUIN_SHIP",
-      "name": "Palenquin Ship",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_SANZU_RIVER",
-      "name": "Sanzu River",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_GARDEN_OF_THE_SUN",
-      "name": "Garden of the Sun",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_NAMELESS_HILL",
-      "name": "Nameless Hill",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_BAMBOO_FOREST",
+      "map_section": "MAPSEC_REV_GENSOKYO_BAMBOO_FOREST",
       "name": "Bamboo Forest of the Lost",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_EIENTEI",
-      "name": "Eientei",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_FOREST_OF_MAGIC",
+      "map_section": "MAPSEC_REV_GENSOKYO_FOREST_OF_MAGIC",
       "name": "Forest of Magic",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_HELL",
+      "map_section": "MAPSEC_REV_GENSOKYO_HELL",
       "name": "Hell",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_ANIMAL_REALM",
-      "name": "Animal Realm",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_BORDER_ISLAND",
+      "map_section": "MAPSEC_REV_GENSOKYO_BORDER_ISLAND",
       "name": "Border Island",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_LAKE_OF_BLOOD",
+      "map_section": "MAPSEC_REV_GENSOKYO_LAKE_OF_BLOOD",
       "name": "Lake of Blood",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_MUGENKAN",
-      "name": "Mugenkan",
+      "map_section": "MAPSEC_REV_GENSOKYO_MOON",
+      "name": "Far Side of the Moon",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_FANTASY_WORLD",
-      "name": "Fantasy World",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_DREAM_WORLD",
-      "name": "Dream World",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_MAKAI",
-      "name": "Makai",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_MOON",
-      "name": "The Moon",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_LUNAR_CAPITAL",
-      "name": "Lunar Capital",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_RUINED_MANSION",
+      "map_section": "MAPSEC_REV_GENSOKYO_RUINED_MANSION",
       "name": "Ruined Mansion",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_MISTY_CAVERN",
+      "map_section": "MAPSEC_REV_GENSOKYO_MISTY_CAVERN",
       "name": "Misty Cavern",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_HIGAN",
+      "map_section": "MAPSEC_REV_GENSOKYO_HIGAN",
       "name": "Higan",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_MAYOIGA",
+      "map_section": "MAPSEC_REV_GENSOKYO_MAYOIGA",
       "name": "Mayoiga",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_YOUKAI_ROAD",
+      "map_section": "MAPSEC_REV_GENSOKYO_YOUKAI_ROAD",
       "name": "Youkai Road",
+
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_NORTHERN_ROAD1",
+      "map_section": "MAPSEC_REV_GENSOKYO_NORTHERN_ROAD1",
       "name": "Northern Road",
 
       "x": 0,
@@ -1010,7 +1145,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_NORTHERN_ROAD2",
+      "map_section": "MAPSEC_REV_GENSOKYO_NORTHERN_ROAD2",
       "name": "Northern Road",
 
       "x": 0,
@@ -1019,7 +1154,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_NORTHERN_ROAD3",
+      "map_section": "MAPSEC_REV_GENSOKYO_NORTHERN_ROAD3",
       "name": "Northern Road",
 
       "x": 0,
@@ -1028,7 +1163,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_NORTHERN_ROAD4",
+      "map_section": "MAPSEC_REV_GENSOKYO_NORTHERN_ROAD4",
       "name": "Northern Road",
 
       "x": 0,
@@ -1037,7 +1172,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_NORTHERN_ROAD5",
+      "map_section": "MAPSEC_REV_GENSOKYO_NORTHERN_ROAD5",
       "name": "Northern Road",
 
       "x": 0,
@@ -1046,7 +1181,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_WESTERN_ROAD1",
+      "map_section": "MAPSEC_REV_GENSOKYO_WESTERN_ROAD1",
       "name": "Western Road",
 
       "x": 0,
@@ -1055,7 +1190,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_WESTERN_ROAD2",
+      "map_section": "MAPSEC_REV_GENSOKYO_WESTERN_ROAD2",
       "name": "Western Road",
 
       "x": 0,
@@ -1064,7 +1199,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_WESTERN_ROAD3",
+      "map_section": "MAPSEC_REV_GENSOKYO_WESTERN_ROAD3",
       "name": "Western Road",
 
       "x": 0,
@@ -1073,7 +1208,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_WESTERN_ROAD4",
+      "map_section": "MAPSEC_REV_GENSOKYO_WESTERN_ROAD4",
       "name": "Western Road",
 
       "x": 0,
@@ -1082,7 +1217,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_WESTERN_ROAD5",
+      "map_section": "MAPSEC_REV_GENSOKYO_WESTERN_ROAD5",
       "name": "Western Road",
 
       "x": 0,
@@ -1091,7 +1226,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_SOUTHERN_ROAD1",
+      "map_section": "MAPSEC_REV_GENSOKYO_SOUTHERN_ROAD1",
       "name": "Southern Road",
 
       "x": 0,
@@ -1100,7 +1235,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_SOUTHERN_ROAD2",
+      "map_section": "MAPSEC_REV_GENSOKYO_SOUTHERN_ROAD2",
       "name": "Southern Road",
 
       "x": 0,
@@ -1109,7 +1244,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_SOUTHERN_ROAD3",
+      "map_section": "MAPSEC_REV_GENSOKYO_SOUTHERN_ROAD3",
       "name": "Southern Road",
 
       "x": 0,
@@ -1118,7 +1253,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_SOUTHERN_ROAD4",
+      "map_section": "MAPSEC_REV_GENSOKYO_SOUTHERN_ROAD4",
       "name": "Southern Road",
 
       "x": 0,
@@ -1127,7 +1262,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_SOUTHERN_ROAD5",
+      "map_section": "MAPSEC_REV_GENSOKYO_SOUTHERN_ROAD5",
       "name": "Southern Road",
 
       "x": 0,
@@ -1136,7 +1271,15 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_EASTERN_ROAD1",
+      "map_section": "MAPSEC_REV_GENSOKYO_EASTERN_ROAD1",
+      "name": "Eastern Road",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_GENSOKYO_EASTERN_ROAD2",
       "name": "Eastern Road",
 
       "x": 0,
@@ -1145,7 +1288,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_EASTERN_ROAD2",
+      "map_section": "MAPSEC_REV_GENSOKYO_EASTERN_ROAD3",
       "name": "Eastern Road",
 
       "x": 0,
@@ -1154,7 +1297,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_EASTERN_ROAD3",
+      "map_section": "MAPSEC_REV_GENSOKYO_EASTERN_ROAD4",
       "name": "Eastern Road",
 
       "x": 0,
@@ -1163,7 +1306,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_EASTERN_ROAD4",
+      "map_section": "MAPSEC_REV_GENSOKYO_EASTERN_ROAD5",
       "name": "Eastern Road",
 
       "x": 0,
@@ -1172,16 +1315,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_EASTERN_ROAD5",
-      "name": "Eastern Road",
-
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_ROAD_OF_RECONSIDERATION1",
+      "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_RECONSIDERATION1",
       "name": "Road of Reconsideration",
 
       "x": 0,
@@ -1190,7 +1324,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_ROAD_OF_RECONSIDERATION2",
+      "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_RECONSIDERATION2",
       "name": "Road of Reconsideration",
 
       "x": 0,
@@ -1199,7 +1333,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_ROAD_OF_RECONSIDERATION3",
+      "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_RECONSIDERATION3",
       "name": "Road of Reconsideration",
 
       "x": 0,
@@ -1208,7 +1342,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_ROAD_OF_RECONSIDERATION4",
+      "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_RECONSIDERATION4",
       "name": "Road of Reconsideration",
 
       "x": 0,
@@ -1217,7 +1351,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_ROAD_OF_RECONSIDERATION5",
+      "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_RECONSIDERATION5",
       "name": "Road of Reconsideration",
 
       "x": 0,
@@ -1226,7 +1360,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_ROAD_OF_LIMINATION1",
+      "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_LIMINATION1",
       "name": "Road of Limination",
 
       "x": 0,
@@ -1235,7 +1369,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_ROAD_OF_LIMINATION2",
+      "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_LIMINATION2",
       "name": "Road of Limination",
 
       "x": 0,
@@ -1244,7 +1378,23 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_ROAD_OF_LIMINATION3",
+      "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_LIMINATION3",
+      "name": "Road of Limination",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_LIMINATION4",
+      "name": "Road of Limination",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_GENSOKYO_ROAD_OF_LIMINATION5",
       "name": "Road of Limination",
 
       "x": 0,
@@ -1253,33 +1403,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_ROAD_OF_LIMINATION4",
-      "name": "Road of Limination",
-
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_ROAD_OF_LIMINATION5",
-      "name": "Road of Limination",
-
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_GENSOKYO_FANTASY_LEAGUE",
-      "name": "Fantasy League",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_YYYI_SEA_OF_TREES1",
+      "map_section": "MAPSEC_REV_YYYI_SEA_OF_TREES2",
       "name": "Sea of Trees",
 
       "x": 0,
@@ -1288,7 +1412,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_YYYI_SEA_OF_TREES2",
+      "map_section": "MAPSEC_REV_YYYI_SEA_OF_TREES3",
       "name": "Sea of Trees",
 
       "x": 0,
@@ -1297,7 +1421,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_YYYI_SEA_OF_TREES3",
+      "map_section": "MAPSEC_REV_YYYI_SEA_OF_TREES4",
       "name": "Sea of Trees",
 
       "x": 0,
@@ -1306,7 +1430,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_YYYI_SEA_OF_TREES4",
+      "map_section": "MAPSEC_REV_YYYI_SEA_OF_TREES5",
       "name": "Sea of Trees",
 
       "x": 0,
@@ -1315,16 +1439,15 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_YYYI_SEA_OF_TREES5",
-      "name": "Sea of Trees",
-
+      "map_section": "MAPSEC_REV_YYYI_SEA_OF_FLAME2",
+      "name": "Sea of Flame",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_YYYI_SEA_OF_FLAME1",
+      "map_section": "MAPSEC_REV_YYYI_SEA_OF_FLAME3",
       "name": "Sea of Flame",
 
       "x": 0,
@@ -1333,52 +1456,31 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_YYYI_SEA_OF_FLAME2",
+      "map_section": "MAPSEC_REV_YYYI_SEA_OF_FLAME4",
       "name": "Sea of Flame",
-
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_YYYI_SEA_OF_FLAME3",
+      "map_section": "MAPSEC_REV_YYYI_SEA_OF_FLAME5",
       "name": "Sea of Flame",
-
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_YYYI_SEA_OF_FLAME4",
-      "name": "Sea of Flame",
-
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_YYYI_SEA_OF_FLAME5",
-      "name": "Sea of Flame",
-
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_YYYI_DIVINE_TREE",
+      "map_section": "MAPSEC_REV_YYYI_DIVINE_TREE",
       "name": "The Divine Tree",
-
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_YYYI_SANSHUU_SCHOOL",
+      "map_section": "MAPSEC_REV_YYYI_SANSHUU_SCHOOL",
       "name": "Sanshuu School",
       "x": 0,
       "y": 0,
@@ -1386,7 +1488,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_YYYI_SHINJUKAN_SCHOOL",
+      "map_section": "MAPSEC_REV_YYYI_SHINJUKAN_SCHOOL",
       "name": "Shinjukan School",
       "x": 0,
       "y": 0,
@@ -1394,52 +1496,39 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_KEY_ILLUSIONARY_WORLD1",
+      "map_section": "MAPSEC_REV_KEY_ILLUSIONARY_WORLD2",
       "name": "Illusionary World",
-
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_KEY_ILLUSIONARY_WORLD2",
+      "map_section": "MAPSEC_REV_KEY_ILLUSIONARY_WORLD3",
       "name": "Illusionary World",
-
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_KEY_ILLUSIONARY_WORLD3",
+      "map_section": "MAPSEC_REV_KEY_ILLUSIONARY_WORLD4",
       "name": "Illusionary World",
-
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_KEY_ILLUSIONARY_WORLD4",
+      "map_section": "MAPSEC_REV_KEY_ILLUSIONARY_WORLD5",
       "name": "Illusionary World",
-
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_KEY_ILLUSIONARY_WORLD5",
-      "name": "Illusionary World",
-
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_BGHS_SHINJUGAMINE_SCHOOL",
+      "map_section": "MAPSEC_REV_BGHS_SHINJUGAMINE_SCHOOL",
       "name": "Shinjugamine School",
       "x": 0,
       "y": 0,
@@ -1447,56 +1536,55 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_BGHS_DIVINE_TREE",
+      "map_section": "MAPSEC_REV_BGHS_DIVINE_TREE",
       "name": "The Divine Tree",
-
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_AURORA_CURTAIN",
-      "name": "Inside Aurora Curtain",
+      "map_section": "MAPSEC_REV_ETC_AURORA_CURTAIN",
+      "name": "Inside a Dimension Wall",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_DIMENSIONAL_RIFT",
-      "name": "Dimensional Rift",
+      "map_section": "MAPSEC_REV_ETC_DIMENSIONAL_RIFT",
+      "name": "A Dimensional Rift",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_DENLINER",
-      "name": "Den-Liner",
+      "map_section": "MAPSEC_REV_ETC_DENLINER",
+      "name": "The Den-Liner",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_DIGITAL_WORLD",
-      "name": "Digital World",
+      "map_section": "MAPSEC_REV_ETC_DIGITAL_WORLD",
+      "name": "A Digital World",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_HOSPITAL",
-      "name": "Hospital",
+      "map_section": "MAPSEC_REV_ETC_HOSPITAL",
+      "name": "The Hospital",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_VOID",
+      "map_section": "MAPSEC_REV_ETC_VOID",
       "name": "The Void",
       "x": 0,
       "y": 0,
@@ -1504,55 +1592,15 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_ENDING",
-      "name": "End of Story",
+      "map_section": "MAPSEC_REV_ETC_ENDING",
+      "name": "The End of Story",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_YOGYAKARTA",
-      "name": "Yogyakarta City",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_SOLO",
-      "name": "Solo Town",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_SEMARANG",
-      "name": "Semarang City",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_SURABAYA",
-      "name": "Surabaya City",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_JAKARTA",
-      "name": "Jakarta City",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_MT_MERAPI",
+      "map_section": "MAPSEC_REV_JAVA_MT_MERAPI",
       "name": "Mt. Merapi",
       "x": 0,
       "y": 0,
@@ -1560,7 +1608,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_NORTHERN_PASS",
+      "map_section": "MAPSEC_REV_JAVA_NORTHERN_PASS",
       "name": "Northern Pass",
       "x": 0,
       "y": 0,
@@ -1568,7 +1616,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_SOUTHERN_PASS",
+      "map_section": "MAPSEC_REV_JAVA_SOUTHERN_PASS",
       "name": "Southern Pass",
       "x": 0,
       "y": 0,
@@ -1576,31 +1624,31 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_TRAPPY_PASS",
+      "map_section": "MAPSEC_REV_JAVA_TRAPPY_PASS",
       "name": "Trappy Pass",
-      "x": 0,
-      "y": 0,
+      "x": 19,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_SEA_BREAK_PASS",
+      "map_section": "MAPSEC_REV_JAVA_SEA_BREAK_PASS",
       "name": "Sea Break Pass",
-      "x": 0,
-      "y": 0,
+      "x": 6,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_MIDDLE_PASS",
+      "map_section": "MAPSEC_REV_JAVA_MIDDLE_PASS",
       "name": "Middle Pass",
-      "x": 0,
-      "y": 0,
+      "x": 8,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_EASTERN_PASS",
+      "map_section": "MAPSEC_REV_JAVA_EASTERN_PASS",
       "name": "Eastern Pass",
       "x": 0,
       "y": 0,
@@ -1608,7 +1656,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_WESTERN_PASS",
+      "map_section": "MAPSEC_REV_JAVA_WESTERN_PASS",
       "name": "Western Pass",
       "x": 0,
       "y": 0,
@@ -1616,64 +1664,16 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_POJOK_CLIFF",
+      "map_section": "MAPSEC_REV_JAVA_POJOK_CLIFF",
       "name": "Pojok Cliff",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_SULTAN_PALACE",
-      "name": "The Sultan Palace",
-      "x": 19,
-      "y": 3,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_SUNAN_PALACE",
-      "name": "The Sunan Palace",
-      "x": 6,
-      "y": 3,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_SURABAYA_ZONE",
-      "name": "Surabaya Zone",
-      "x": 8,
-      "y": 2,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_THOUSAND_DOORS",
-      "name": "Thousand Doors",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_MT_MERAPI_CAVE",
-      "name": "Mt. Merapi Cave",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_JAVA_NATIONAL_MONUMENT",
-      "name": "National Monument",
       "x": 22,
       "y": 12,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_LOST_AGE1",
-      "name": "Lost Age",
+      "map_section": "MAPSEC_REV_JAVA_SULTAN_PALACE",
+      "name": "Sultan Palace",
 
       "x": 0,
       "y": 0,
@@ -1681,8 +1681,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_LOST_AGE2",
-      "name": "Lost Age",
+      "map_section": "MAPSEC_REV_JAVA_SUNAN_PALACE",
+      "name": "Sunan Palace",
 
       "x": 0,
       "y": 0,
@@ -1690,8 +1690,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_LOST_AGE3",
-      "name": "Lost Age",
+      "map_section": "MAPSEC_REV_JAVA_SURABAYA_ZONE",
+      "name": "Surabaya Zone",
 
       "x": 0,
       "y": 0,
@@ -1699,8 +1699,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xCE",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_REV_JAVA_THOUSAND_DOORS",
+      "name": "Thousand Doors",
 
       "x": 0,
       "y": 10,
@@ -1708,8 +1708,8 @@
       "height": 3
     },
     {
-      "map_section": "MAPSEC_0xCF",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_REV_JAVA_MT_MERAPI_CAVE",
+      "name": "Mt. Merapi Cave",
 
       "x": 24,
       "y": 3,
@@ -1717,8 +1717,8 @@
       "height": 2
     },
     {
-      "map_section": "MAPSEC_0xD0",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_REV_JAVA_NATIONAL_MONUMENT",
+      "name": "National Monument",
 
       "x": 24,
       "y": 10,
@@ -1726,8 +1726,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xD1",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_REV_JAVA_LOST_AGE1",
+      "name": "The Lost Age",
 
       "x": 2,
       "y": 0,
@@ -1735,8 +1735,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xD2",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_REV_JAVA_LOST_AGE2",
+      "name": "The Lost Age",
 
       "x": 6,
       "y": 8,
@@ -1744,8 +1744,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xD3",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_REV_JAVA_LOST_AGE3",
+      "name": "The Lost Age",
 
       "x": 0,
       "y": 0,
@@ -1753,8 +1753,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xD4",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_REV_JAVA_LOST_AGE4",
+      "name": "The Lost Age",
 
       "x": 8,
       "y": 4,
@@ -1949,128 +1949,128 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_LOVELY_PLACE",
-      "name": "Lovely Place",
+      "map_section": "MAPSEC_0xEB",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_POKEMON_RANGER",
-      "name": "Pokémon Ranger",
+      "map_section": "MAPSEC_0xEC",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_FARAWAY_PLACE",
-      "name": "Faraway Place",
+      "map_section": "MAPSEC_0xED",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_POKEMON_MOVIE",
-      "name": "Pokémon Movie",
+      "map_section": "MAPSEC_0xEE",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_POKEMON_CARTOON",
-      "name": "Pokémon Cartoon",
+      "map_section": "MAPSEC_0xEF",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_SPACE_WORLD",
-      "name": "Space World",
+      "map_section": "MAPSEC_0xF0",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_POKEMON_FESTA",
-      "name": "Pokémon Festa",
+      "map_section": "MAPSEC_ETC_TRIMMED_GENSOKYO",
+      "name": "The Trimmed Gensokyo",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_POKEPARK",
-      "name": "PokéPARK",
+      "map_section": "MAPSEC_0xF2",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_POKEMON_CENTER",
-      "name": "Pokémon Center",
+      "map_section": "MAPSEC_0xF3",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_NINTENDO_WORLD",
-      "name": "Nintendo World",
+      "map_section": "MAPSEC_0xF4",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_POKEMON_EVENT",
-      "name": "Pokémon Event",
+      "map_section": "MAPSEC_0xF5",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_WIFI_EVENT",
-      "name": "Wi-Fi Event",
+      "map_section": "MAPSEC_0xF6",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_WIFI_GIFT",
-      "name": "Wi-Fi Gift",
+      "map_section": "MAPSEC_0xF7",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_POKEMON_FAN_CLUB",
-      "name": "Romhack Fanclub",
+      "map_section": "MAPSEC_0xF8",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_EVENT_SITE",
-      "name": "Event Site",
+      "map_section": "MAPSEC_0xF9",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ETC_CONCERT_EVENT",
-      "name": "Concert Event",
+      "map_section": "MAPSEC_0xFA",
+      "name": "Unknown Place",
       "x": 0,
       "y": 0,
       "width": 1,

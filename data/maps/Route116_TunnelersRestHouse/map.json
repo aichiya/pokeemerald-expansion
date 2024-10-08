@@ -3,7 +3,7 @@
   "name": "Route116_TunnelersRestHouse",
   "layout": "LAYOUT_ROUTE116_TUNNELERS_REST_HOUSE",
   "music": "MUS_RUSTBORO",
-  "region_map_section": "MAPSEC_JOHTO_ROUTE_40",
+  "region_map_section": "MAPSEC_REV_GENSOKYO_FANTASY_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

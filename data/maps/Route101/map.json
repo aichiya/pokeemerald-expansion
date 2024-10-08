@@ -3,7 +3,7 @@
   "name": "Route101",
   "layout": "LAYOUT_ROUTE101",
   "music": "MUS_KEY_CLANNAD_SHINING_IN_THE_SKY",
-  "region_map_section": "MAPSEC_JOHTO_ROUTE_23",
+  "region_map_section": "MAPSEC_REV_GENSOKYO_HAKUREI_SHRINE",
   "requires_flash": false,
   "weather": "WEATHER_LIGHT_ORB_UP",
   "map_type": "MAP_TYPE_ROUTE",

@@ -3,7 +3,7 @@
   "name": "CaveOfOrigin_B1F",
   "layout": "LAYOUT_CAVE_OF_ORIGIN_B1F",
   "music": "MUS_NONE",
-  "region_map_section": "MAPSEC_JOHTO_CLIFF_EDGE_GATE",
+  "region_map_section": "MAPSEC_REV_JOHTO_ROUTE_46",
   "requires_flash": false,
   "weather": "WEATHER_FOG_HORIZONTAL",
   "map_type": "MAP_TYPE_UNDERGROUND",

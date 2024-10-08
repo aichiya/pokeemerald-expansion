@@ -3,7 +3,7 @@
   "name": "Route108",
   "layout": "LAYOUT_ROUTE108",
   "music": "MUS_ROUTE104",
-  "region_map_section": "MAPSEC_JOHTO_ROUTE_32",
+  "region_map_section": "MAPSEC_REV_GENSOKYO_CHIREIDEN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

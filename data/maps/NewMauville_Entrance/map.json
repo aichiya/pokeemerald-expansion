@@ -3,7 +3,7 @@
   "name": "NewMauville_Entrance",
   "layout": "LAYOUT_NEW_MAUVILLE_ENTRANCE",
   "music": "MUS_MT_PYRE",
-  "region_map_section": "MAPSEC_JOHTO_TOHJO_FALLS",
+  "region_map_section": "MAPSEC_REV_JOHTO_ROUTE_36",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

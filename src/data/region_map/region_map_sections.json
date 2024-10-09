@@ -5,7 +5,7 @@
       "name": "Twinriver City",
       "x": 3,
       "y": 7,
-      "width": 3,
+      "width": 1,
       "height": 2
     },
     {
@@ -132,7 +132,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_HAKUREI_SHRINE",
       "name": "Hakurei Shrine",
       "x": 22,
-      "y": 27,
+      "y": 26,
       "width": 1,
       "height": 1
     },
@@ -140,7 +140,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_HUMAN_VILLAGE",
       "name": "Human Village",
       "x": 14,
-      "y": 26,
+      "y": 25,
       "width": 1,
       "height": 1
     },
@@ -148,7 +148,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_KOURINDOU",
       "name": "Kourindou",
       "x": 7,
-      "y": 24,
+      "y": 23,
       "width": 1,
       "height": 1
     },
@@ -156,7 +156,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_MUENZUKA",
       "name": "Muenzuka",
       "x": 12,
-      "y": 18,
+      "y": 17,
       "width": 1,
       "height": 1
     },
@@ -164,7 +164,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_HAKUGYOKUROU",
       "name": "Hakugyokurou",
       "x": 20,
-      "y": 19,
+      "y": 18,
       "width": 1,
       "height": 1
     },
@@ -172,7 +172,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_MORIYA_SHRINE",
       "name": "Moriya Shrine",
       "x": 17,
-      "y": 21,
+      "y": 20,
       "width": 1,
       "height": 1
     },
@@ -180,7 +180,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_SCARLET_DEVIL_MANSION",
       "name": "Scarlet Devil Mansion",
       "x": 12,
-      "y": 22,
+      "y": 21,
       "width": 1,
       "height": 1
     },
@@ -188,14 +188,14 @@
       "map_section": "MAPSEC_REV_GENSOKYO_CHIREIDEN",
       "name": "Earthbound Palace",
       "x": 17,
-      "y": 25,
+      "y": 24,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_PALENQUIN_SHIP",
       "name": "Palenquin Ship",
-      "x": 17,
+      "x": 11,
       "y": 24,
       "width": 1,
       "height": 1
@@ -204,7 +204,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_SANZU_RIVER",
       "name": "Sanzu River",
       "x": 16,
-      "y": 18,
+      "y": 17,
       "width": 2,
       "height": 1
     },
@@ -212,7 +212,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_GARDEN_OF_THE_SUN",
       "name": "Garden of the Sun",
       "x": 11,
-      "y": 29,
+      "y": 28,
       "width": 1,
       "height": 1
     },
@@ -220,7 +220,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_NAMELESS_HILL",
       "name": "The Nameless Hill",
       "x": 15,
-      "y": 30,
+      "y": 29,
       "width": 1,
       "height": 1
     },
@@ -228,7 +228,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_EIENTEI",
       "name": "Eientei",
       "x": 8,
-      "y": 29,
+      "y": 28,
       "width": 1,
       "height": 1
     },
@@ -236,7 +236,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_ANIMAL_REALM",
       "name": "Animal Realm",
       "x": 0,
-      "y": 16,
+      "y": 17,
       "width": 1,
       "height": 1
     },
@@ -244,7 +244,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_MUGENKAN",
       "name": "Mugenkan",
       "x": 27,
-      "y": 16,
+      "y": 17,
       "width": 1,
       "height": 1
     },
@@ -252,7 +252,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_FANTASY_WORLD",
       "name": "Fantasy World",
       "x": 25,
-      "y": 16,
+      "y": 17,
       "width": 1,
       "height": 1
     },
@@ -260,7 +260,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_DREAM_WORLD",
       "name": "Dream World",
       "x": 27,
-      "y": 18,
+      "y": 19,
       "width": 1,
       "height": 1
     },
@@ -268,7 +268,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_MAKAI",
       "name": "Makai",
       "x": 0,
-      "y": 18,
+      "y": 19,
       "width": 1,
       "height": 1
     },
@@ -276,7 +276,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_LUNAR_CAPITAL",
       "name": "Lunar Capital",
       "x": 2,
-      "y": 29,
+      "y": 28,
       "width": 1,
       "height": 1
     },
@@ -284,7 +284,7 @@
       "map_section": "MAPSEC_REV_GENSOKYO_FANTASY_LEAGUE",
       "name": "Fantasy League",
       "x": 20,
-      "y": 23,
+      "y": 22,
       "width": 1,
       "height": 1
     },

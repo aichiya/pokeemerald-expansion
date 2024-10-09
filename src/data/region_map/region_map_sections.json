@@ -3,15 +3,15 @@
     {
       "map_section": "MAPSEC_REV_JOHTO_TWINRIVER_CITY",
       "name": "Twinriver City",
-      "x": 4,
-      "y": 11,
-      "width": 1,
-      "height": 1
+      "x": 3,
+      "y": 7,
+      "width": 3,
+      "height": 2
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_NEW_BARK_TOWN",
       "name": "New Bark Town",
-      "x": 4,
+      "x": 20,
       "y": 9,
       "width": 1,
       "height": 1
@@ -19,495 +19,495 @@
     {
       "map_section": "MAPSEC_REV_JOHTO_CHERRYGROVE_CITY",
       "name": "Cherrygrove City",
-      "x": 2,
-      "y": 14,
+      "x": 15,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_VIOLET_CITY",
       "name": "Violet City",
-      "x": 5,
-      "y": 3,
+      "x": 13,
+      "y": 4,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_AZALEA_TOWN",
       "name": "Azalea Town",
-      "x": 3,
-      "y": 0,
+      "x": 11,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_CIANWOOD_CITY",
       "name": "Cianwood City",
-      "x": 4,
-      "y": 6,
+      "x": 5,
+      "y": 10,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_GOLDENROD_CITY",
       "name": "Goldenrod City",
-      "x": 17,
-      "y": 10,
+      "x": 9,
+      "y": 7,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_OLIVINE_CITY",
       "name": "Olivine City",
-      "x": 1,
-      "y": 9,
+      "x": 7,
+      "y": 4,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ECRUTEAK_CITY",
       "name": "Ecruteak City",
-      "x": 8,
-      "y": 10,
+      "x": 11,
+      "y": 2,
       "width": 1,
-      "height": 2
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_MAHOGANY_TOWN",
       "name": "Mahogany Town",
-      "x": 8,
-      "y": 6,
-      "width": 2,
+      "x": 16,
+      "y": 2,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_LAKE_OF_RAGE",
       "name": "Lake of Rage",
-      "x": 0,
-      "y": 5,
+      "x": 16,
+      "y": 0,
       "width": 1,
-      "height": 2
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_BLACKTHORN_CITY",
       "name": "Blackthorn City",
-      "x": 12,
-      "y": 0,
+      "x": 19,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_MT_SILVER",
       "name": "Mt. Silver",
-      "x": 18,
-      "y": 3,
-      "width": 2,
+      "x": 21,
+      "y": 5,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_INDIGO_PLATEAU",
       "name": "Indigo League",
       "x": 24,
-      "y": 5,
-      "width": 2,
+      "y": 2,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_MORIYA_SHRINE",
       "name": "Moriya Shrine",
-      "x": 21,
-      "y": 7,
+      "x": 23,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_SPACE_HYPER_VESSEL",
       "name": "Space Hyper Vessel",
-      "x": 27,
-      "y": 8,
+      "x": 2,
+      "y": 10,
       "width": 1,
-      "height": 2
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_HAKUREI_SHRINE",
       "name": "Hakurei Shrine",
-      "x": 4,
-      "y": 10,
+      "x": 22,
+      "y": 27,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_HUMAN_VILLAGE",
       "name": "Human Village",
-      "x": 2,
-      "y": 9,
-      "width": 2,
+      "x": 14,
+      "y": 26,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_KOURINDOU",
       "name": "Kourindou",
-      "x": 4,
-      "y": 8,
-      "width": 4,
+      "x": 7,
+      "y": 24,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_MUENZUKA",
       "name": "Muenzuka",
-      "x": 0,
-      "y": 7,
+      "x": 12,
+      "y": 18,
       "width": 1,
-      "height": 3
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_HAKUGYOKUROU",
       "name": "Hakugyokurou",
-      "x": 0,
-      "y": 10,
+      "x": 20,
+      "y": 19,
       "width": 1,
-      "height": 3
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_MORIYA_SHRINE",
       "name": "Moriya Shrine",
-      "x": 0,
-      "y": 13,
-      "width": 2,
+      "x": 17,
+      "y": 21,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_SCARLET_DEVIL_MANSION",
       "name": "Scarlet Devil Mansion",
-      "x": 3,
-      "y": 14,
-      "width": 3,
+      "x": 12,
+      "y": 22,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_CHIREIDEN",
       "name": "Earthbound Palace",
-      "x": 6,
-      "y": 14,
-      "width": 2,
+      "x": 17,
+      "y": 25,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_PALENQUIN_SHIP",
       "name": "Palenquin Ship",
-      "x": 8,
-      "y": 12,
+      "x": 17,
+      "y": 24,
       "width": 1,
-      "height": 3
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_SANZU_RIVER",
       "name": "Sanzu River",
-      "x": 8,
-      "y": 7,
-      "width": 1,
-      "height": 3
+      "x": 16,
+      "y": 18,
+      "width": 2,
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_GARDEN_OF_THE_SUN",
       "name": "Garden of the Sun",
-      "x": 8,
-      "y": 0,
+      "x": 11,
+      "y": 29,
       "width": 1,
-      "height": 6
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_NAMELESS_HILL",
       "name": "The Nameless Hill",
-      "x": 6,
-      "y": 3,
-      "width": 2,
+      "x": 15,
+      "y": 30,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_EIENTEI",
       "name": "Eientei",
-      "x": 4,
-      "y": 0,
-      "width": 4,
+      "x": 8,
+      "y": 29,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_ANIMAL_REALM",
       "name": "Animal Realm",
-      "x": 1,
-      "y": 0,
-      "width": 2,
-      "height": 3
+      "x": 0,
+      "y": 16,
+      "width": 1,
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_MUGENKAN",
       "name": "Mugenkan",
-      "x": 0,
-      "y": 2,
+      "x": 27,
+      "y": 16,
       "width": 1,
-      "height": 3
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_FANTASY_WORLD",
       "name": "Fantasy World",
-      "x": 1,
-      "y": 5,
-      "width": 4,
+      "x": 25,
+      "y": 16,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_DREAM_WORLD",
       "name": "Dream World",
-      "x": 5,
-      "y": 6,
-      "width": 3,
+      "x": 27,
+      "y": 18,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_MAKAI",
       "name": "Makai",
-      "x": 10,
-      "y": 6,
-      "width": 2,
+      "x": 0,
+      "y": 18,
+      "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_LUNAR_CAPITAL",
       "name": "Lunar Capital",
-      "x": 11,
-      "y": 0,
+      "x": 2,
+      "y": 29,
       "width": 1,
-      "height": 6
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_GENSOKYO_FANTASY_LEAGUE",
       "name": "Fantasy League",
-      "x": 13,
-      "y": 0,
+      "x": 20,
+      "y": 23,
       "width": 1,
-      "height": 4
+      "height": 1
     },
     {
       "map_section": "MAPSEC_REV_YYYI_SEA_OF_TREES1",
       "name": "Sea of Trees",
-      "x": 14,
-      "y": 3,
-      "width": 4,
-      "height": 1
+      "x": 37,
+      "y": 12,
+      "width": 1,
+      "height": 2
     },
     {
       "map_section": "MAPSEC_REV_YYYI_SEA_OF_FLAME1",
       "name": "Sea of Flame",
-      "x": 16,
-      "y": 4,
+      "x": 38,
+      "y": 12,
       "width": 1,
       "height": 2
     },
     {
       "map_section": "MAPSEC_REV_KEY_ILLUSIONARY_WORLD1",
       "name": "Illusionary World",
-      "x": 12,
-      "y": 6,
-      "width": 5,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_REV_JAVA_YOGYAKARTA",
-      "name": "Yogyakarta City",
-      "x": 20,
-      "y": 3,
-      "width": 4,
-      "height": 3
-    },
-    {
-      "map_section": "MAPSEC_REV_JAVA_SOLO",
-      "name": "Surakarta Town",
-      "x": 24,
-      "y": 3,
-      "width": 2,
-      "height": 2
-    },
-    {
-      "map_section": "MAPSEC_REV_JAVA_SEMARANG",
-      "name": "Semarang City",
-      "x": 20,
-      "y": 6,
-      "width": 3,
-      "height": 3
-    },
-    {
-      "map_section": "MAPSEC_REV_JAVA_SURABAYA",
-      "name": "Surabaya City",
-      "x": 23,
-      "y": 6,
-      "width": 3,
-      "height": 3
-    },
-    {
-      "map_section": "MAPSEC_REV_JAVA_JAKARTA",
-      "name": "Jakarta City",
-      "x": 23,
-      "y": 9,
-      "width": 4,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_0x2C",
-      "name": "Unknown Place",
-      "x": 24,
-      "y": 10,
-      "width": 2,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_0x2D",
-      "name": "Unknown Place",
-      "x": 21,
-      "y": 10,
-      "width": 3,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_0x2E",
-      "name": "Unknown Place",
-      "x": 18,
-      "y": 10,
-      "width": 3,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_0x2F",
-      "name": "Unknown Place",
-      "x": 15,
-      "y": 10,
-      "width": 2,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_0x30",
-      "name": "Unknown Place",
-      "x": 12,
-      "y": 10,
-      "width": 3,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_0x31",
-      "name": "Unknown Place",
-      "x": 9,
-      "y": 10,
-      "width": 3,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_REV_JOHTO_ROUTE_23",
-      "name": "Route 23",
-      "x": 20,
-      "y": 3,
-      "width": 4,
-      "height": 3
-    },
-    {
-      "map_section": "MAPSEC_REV_JOHTO_ROUTE_26",
-      "name": "Route 26",
-      "x": 20,
-      "y": 6,
-      "width": 3,
-      "height": 3
-    },
-    {
-      "map_section": "MAPSEC_REV_JOHTO_ROUTE_27",
-      "name": "Route 27",
-      "x": 23,
-      "y": 6,
-      "width": 3,
-      "height": 3
-    },
-    {
-      "map_section": "MAPSEC_REV_JOHTO_ROUTE_28",
-      "name": "Route 28",
-      "x": 23,
-      "y": 9,
-      "width": 4,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_REV_JOHTO_ROUTE_29",
-      "name": "Route 29",
-      "x": 21,
-      "y": 7,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "map_section": "MAPSEC_REV_JOHTO_ROUTE_30",
-      "name": "Route 30",
-      "x": 1,
+      "x": 0,
       "y": 13,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_REV_JOHTO_ROUTE_31",
-      "name": "Route 31",
-      "x": 6,
+      "map_section": "MAPSEC_REV_JAVA_YOGYAKARTA",
+      "name": "Yogyakarta City",
+      "x": 38,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JAVA_SOLO",
+      "name": "Surakarta Town",
+      "x": 38,
+      "y": 1,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JAVA_SEMARANG",
+      "name": "Semarang City",
+      "x": 38,
       "y": 2,
       "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JAVA_SURABAYA",
+      "name": "Surabaya City",
+      "x": 38,
+      "y": 3,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JAVA_JAKARTA",
+      "name": "Jakarta City",
+      "x": 38,
+      "y": 4,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_0x2C",
+      "name": "Unknown Place",
+      "x": 38,
+      "y": 5,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_0x2D",
+      "name": "Unknown Place",
+      "x": 38,
+      "y": 6,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_0x2E",
+      "name": "Unknown Place",
+      "x": 38,
+      "y": 7,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_0x2F",
+      "name": "Unknown Place",
+      "x": 38,
+      "y": 8,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_0x30",
+      "name": "Unknown Place",
+      "x": 38,
+      "y": 9,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_0x31",
+      "name": "Unknown Place",
+      "x": 38,
+      "y": 10,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_23",
+      "name": "Route 23",
+      "x": 24,
+      "y": 3,
+      "width": 1,
+      "height": 2
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_26",
+      "name": "Route 26",
+      "x": 24,
+      "y": 6,
+      "width": 1,
+      "height": 4
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_27",
+      "name": "Route 27",
+      "x": 21,
+      "y": 9,
+      "width": 3,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_28",
+      "name": "Route 28",
+      "x": 22,
+      "y": 5,
+      "width": 2,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_29",
+      "name": "Route 29",
+      "x": 16,
+      "y": 9,
+      "width": 4,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_30",
+      "name": "Route 30",
+      "x": 15,
+      "y": 5,
+      "width": 1,
+      "height": 4
+    },
+    {
+      "map_section": "MAPSEC_REV_JOHTO_ROUTE_31",
+      "name": "Route 31",
+      "x": 14,
+      "y": 4,
+      "width": 2,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_32",
       "name": "Route 32",
-      "x": 16,
-      "y": 2,
+      "x": 13,
+      "y": 5,
       "width": 1,
-      "height": 1
+      "height": 7
     },
     {
       "map_section": "MAPSEC_BATTLE_FRONTIER",
       "name": "Battle Frontier",
-      "x": 22,
-      "y": 12,
+      "x": 6,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_33",
       "name": "Route 33",
-      "x": 0,
-      "y": 8,
-      "width": 1,
+      "x": 12,
+      "y": 12,
+      "width": 2,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_34",
       "name": "Route 34",
-      "x": 2,
-      "y": 5,
+      "x": 9,
+      "y": 9,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_35",
       "name": "Route 35",
-      "x": 6,
-      "y": 14,
+      "x": 9,
+      "y": 5,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_36",
       "name": "Route 36",
-      "x": 8,
-      "y": 7,
-      "width": 1,
+      "x": 10,
+      "y": 4,
+      "width": 3,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_37",
       "name": "Route 37",
-      "x": 0,
+      "x": 11,
       "y": 3,
       "width": 1,
       "height": 1
@@ -515,80 +515,80 @@
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_38",
       "name": "Route 38",
-      "x": 1,
+      "x": 8,
       "y": 2,
-      "width": 1,
+      "width": 3,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_39",
       "name": "Route 39",
-      "x": 16,
-      "y": 4,
+      "x": 7,
+      "y": 2,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_40",
       "name": "Route 40",
-      "x": 19,
-      "y": 3,
+      "x": 6,
+      "y": 4,
       "width": 1,
-      "height": 1
+      "height": 6
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_41",
       "name": "Route 41",
-      "x": 24,
-      "y": 4,
+      "x": 6,
+      "y": 10,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_42",
       "name": "Route 42",
-      "x": 24,
-      "y": 9,
-      "width": 1,
+      "x": 12,
+      "y": 2,
+      "width": 4,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_43",
       "name": "Route 43",
-      "x": 24,
-      "y": 9,
+      "x": 16,
+      "y": 1,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_44",
       "name": "Route 44",
-      "x": 27,
-      "y": 9,
-      "width": 1,
+      "x": 17,
+      "y": 2,
+      "width": 2,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_45",
       "name": "Route 45",
-      "x": 17,
-      "y": 10,
+      "x": 19,
+      "y": 4,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_46",
       "name": "Route 46",
-      "x": 21,
-      "y": 7,
+      "x": 18,
+      "y": 6,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "map_section": "MAPSEC_BATTLE_TOWER",
       "name": "Battle Tower",
-      "x": 12,
-      "y": 14,
+      "x": 6,
+      "y": 3,
       "width": 1,
       "height": 1
     },
@@ -603,7 +603,7 @@
     {
       "map_section": "MAPSEC_BATTLE_ARENA",
       "name": "Battle Arena",
-      "x": 7,
+      "x": 6,
       "y": 3,
       "width": 1,
       "height": 1
@@ -619,72 +619,72 @@
     {
       "map_section": "MAPSEC_BATTLE_PIKE",
       "name": "Battle Pike",
-      "x": 7,
-      "y": 2,
+      "x": 6,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_BATTLE_PALACE",
       "name": "Battle Palace",
-      "x": 11,
-      "y": 10,
+      "x": 6,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_BATTLE_PYRAMID",
       "name": "Battle Pyramid",
-      "x": 11,
-      "y": 10,
+      "x": 6,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_47",
       "name": "Route 47",
-      "x": 13,
-      "y": 0,
-      "width": 1,
+      "x": 3,
+      "y": 10,
+      "width": 2,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_48",
       "name": "Route 48",
-      "x": 0,
-      "y": 10,
+      "x": 3,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_49",
       "name": "Route 49",
-      "x": 8,
+      "x": 3,
       "y": 3,
       "width": 1,
-      "height": 1
+      "height": 4
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_ROUTE_50",
       "name": "Route 50",
-      "x": 13,
-      "y": 2,
-      "width": 1,
+      "x": 4,
+      "y": 3,
+      "width": 2,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_SPROUT_TOWER",
       "name": "Sprout Tower",
-      "x": 0,
-      "y": 0,
+      "x": 13,
+      "y": 4,
       "width": 1,
       "height": 1
     },
     {
       "map_section": "MAPSEC_REV_JOHTO_BELL_TOWER",
       "name": "Bell Tower",
-      "x": 19,
-      "y": 10,
+      "x": 11,
+      "y": 2,
       "width": 1,
       "height": 1
     },
@@ -1075,8 +1075,8 @@
     {
       "map_section": "MAPSEC_REV_GENSOKYO_MOON",
       "name": "Far Side of the Moon",
-      "x": 0,
-      "y": 0,
+      "x": 3,
+      "y": 29,
       "width": 1,
       "height": 1
     },

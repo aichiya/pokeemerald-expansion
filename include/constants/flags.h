@@ -652,30 +652,30 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_NICE_PHRASE_GIFT1  0x264 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT2  0x265 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT3  0x266 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT4  0x267 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT5  0x268 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT6  0x269 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT7  0x26A // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT8  0x26B // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT9  0x26C // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT10  0x26D // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT11  0x26E // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT12  0x26F // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT13  0x270 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT14  0x271 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT15  0x272 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT16  0x273 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT17  0x274 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT18  0x275 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT19  0x276 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT20  0x277 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT21  0x278 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT22  0x279 // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT23  0x27A // Unused Flag
-#define FLAG_NICE_PHRASE_GIFT24  0x27B // Unused Flag
+#define FLAG_NICE_PHRASE_GIFT1  0x264
+#define FLAG_NICE_PHRASE_GIFT2  0x265
+#define FLAG_NICE_PHRASE_GIFT3  0x266
+#define FLAG_NICE_PHRASE_GIFT4  0x267
+#define FLAG_NICE_PHRASE_GIFT5  0x268
+#define FLAG_NICE_PHRASE_GIFT6  0x269
+#define FLAG_NICE_PHRASE_GIFT7  0x26A
+#define FLAG_NICE_PHRASE_GIFT8  0x26B
+#define FLAG_NICE_PHRASE_GIFT9  0x26C
+#define FLAG_NICE_PHRASE_GIFT10  0x26D
+#define FLAG_NICE_PHRASE_GIFT11  0x26E
+#define FLAG_NICE_PHRASE_GIFT12  0x26F
+#define FLAG_NICE_PHRASE_GIFT13  0x270
+#define FLAG_NICE_PHRASE_GIFT14  0x271
+#define FLAG_NICE_PHRASE_GIFT15  0x272
+#define FLAG_NICE_PHRASE_GIFT16  0x273
+#define FLAG_NICE_PHRASE_GIFT17  0x274
+#define FLAG_NICE_PHRASE_GIFT18  0x275
+#define FLAG_NICE_PHRASE_GIFT19  0x276
+#define FLAG_NICE_PHRASE_GIFT20  0x277
+#define FLAG_NICE_PHRASE_GIFT21  0x278
+#define FLAG_NICE_PHRASE_GIFT22  0x279
+#define FLAG_NICE_PHRASE_GIFT23  0x27A
+#define FLAG_NICE_PHRASE_GIFT24  0x27B
 #define FLAG_UNUSED_0x27C  0x27C // Unused Flag
 #define FLAG_UNUSED_0x27D  0x27D // Unused Flag
 #define FLAG_UNUSED_0x27E  0x27E // Unused Flag
@@ -1363,29 +1363,29 @@
 #define NUM_BADGES                                   (1 + FLAG_BADGE08_GET - FLAG_BADGE01_GET)
 
 // Towns and Cities
-#define FLAG_VISITED_LITTLEROOT_TOWN                (SYSTEM_FLAGS + 0xF)
-#define FLAG_VISITED_OLDALE_TOWN                    (SYSTEM_FLAGS + 0x10)
-#define FLAG_VISITED_DEWFORD_TOWN                   (SYSTEM_FLAGS + 0x11)
-#define FLAG_VISITED_LAVARIDGE_TOWN                 (SYSTEM_FLAGS + 0x12)
-#define FLAG_VISITED_FALLARBOR_TOWN                 (SYSTEM_FLAGS + 0x13)
-#define FLAG_VISITED_VERDANTURF_TOWN                (SYSTEM_FLAGS + 0x14)
-#define FLAG_VISITED_PACIFIDLOG_TOWN                (SYSTEM_FLAGS + 0x15)
-#define FLAG_VISITED_PETALBURG_CITY                 (SYSTEM_FLAGS + 0x16)
-#define FLAG_VISITED_SLATEPORT_CITY                 (SYSTEM_FLAGS + 0x17)
-#define FLAG_VISITED_MAUVILLE_CITY                  (SYSTEM_FLAGS + 0x18)
-#define FLAG_VISITED_RUSTBORO_CITY                  (SYSTEM_FLAGS + 0x19)
-#define FLAG_VISITED_FORTREE_CITY                   (SYSTEM_FLAGS + 0x1A)
-#define FLAG_VISITED_LILYCOVE_CITY                  (SYSTEM_FLAGS + 0x1B)
-#define FLAG_VISITED_MOSSDEEP_CITY                  (SYSTEM_FLAGS + 0x1C)
-#define FLAG_VISITED_SOOTOPOLIS_CITY                (SYSTEM_FLAGS + 0x1D)
-#define FLAG_VISITED_EVER_GRANDE_CITY               (SYSTEM_FLAGS + 0x1E)
+#define FLAG_INVERSE_BATTLE                         (SYSTEM_FLAGS + 0xF)
+#define FLAG_FORCE_DOUBLE_WILD                      (SYSTEM_FLAGS + 0x10)
+#define FLAG_SMART_WILD_AI_FLAG                     (SYSTEM_FLAGS + 0x11)
+#define FLAG_NO_BAG_USE                             (SYSTEM_FLAGS + 0x12)
+#define FLAG_NO_CATCHING                            (SYSTEM_FLAGS + 0x13)
+#define FLAG_AI_VS_AI_BATTLE                        (SYSTEM_FLAGS + 0x14)
+#define FLAG_DYNAMAX_BATTLE                         (SYSTEM_FLAGS + 0x15)
+#define FLAG_FORCE_SHINY                            (SYSTEM_FLAGS + 0x16)
+#define FLAG_FORCE_NO_SHINY                         (SYSTEM_FLAGS + 0x17)
+#define FLAG_NO_ENCOUNTER                           (SYSTEM_FLAGS + 0x18)
+#define FLAG_NO_TRAINER_SEE                         (SYSTEM_FLAGS + 0x19)
+#define FLAG_NO_COLLISION                           (SYSTEM_FLAGS + 0x1A)
+#define FLAG_EXP_SHARE_MODERN                       (SYSTEM_FLAGS + 0x1B)
+#define FLAG_CUSTOM_BGM_BATTLE                      (SYSTEM_FLAGS + 0x1C)
+#define FLAG_USE_CURRENT_BGM_FOR_BATTLE             (SYSTEM_FLAGS + 0x1D)
+#define FLAG_FANTASY_BREAKER_CHEAT                  (SYSTEM_FLAGS + 0x1E)
 
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_UNUSED_0x881                           (SYSTEM_FLAGS + 0x21) // Unused Flag
-#define FLAG_UNUSED_0x882                           (SYSTEM_FLAGS + 0x22) // Unused Flag
-#define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
+#define FLAG_TERA_ORB_CHARGED                       (SYSTEM_FLAGS + 0x21)
+#define FLAG_TERA_ORB_NO_COST                       (SYSTEM_FLAGS + 0x22)
+#define FLAG_ENABLE_LIGHT_ORB_UP                    (SYSTEM_FLAGS + 0x23)
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
@@ -1502,56 +1502,56 @@
 
 #define FLAG_RECEIVED_POKEDEX_FROM_BIRCH            (SYSTEM_FLAGS + 0x84)
 
-#define FLAG_INVERSE_BATTLE                         (SYSTEM_FLAGS + 0x85) // Unused Flag
-#define FLAG_FORCE_DOUBLE_WILD                      (SYSTEM_FLAGS + 0x86) // Unused Flag
-#define FLAG_SMART_WILD_AI_FLAG                     (SYSTEM_FLAGS + 0x87) // Unused Flag
-#define FLAG_NO_BAG_USE                             (SYSTEM_FLAGS + 0x88) // Unused Flag
-#define FLAG_NO_CATCHING                            (SYSTEM_FLAGS + 0x89) // Unused Flag
-#define FLAG_AI_VS_AI_BATTLE                        (SYSTEM_FLAGS + 0x8A) // Unused Flag
-#define FLAG_DYNAMAX_BATTLE                         (SYSTEM_FLAGS + 0x8B) // Unused Flag
-#define FLAG_FORCE_SHINY                            (SYSTEM_FLAGS + 0x8C) // Unused Flag
-#define FLAG_FORCE_NO_SHINY                         (SYSTEM_FLAGS + 0x8D) // Unused Flag
-#define FLAG_NO_ENCOUNTER                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
-#define FLAG_NO_TRAINER_SEE                         (SYSTEM_FLAGS + 0x8F) // Unused Flag
-#define FLAG_NO_COLLISION                           (SYSTEM_FLAGS + 0x90) // Unused Flag
-#define FLAG_EXP_SHARE_MODERN                       (SYSTEM_FLAGS + 0x91) // Unused Flag
-#define FLAG_CUSTOM_BGM_BATTLE                      (SYSTEM_FLAGS + 0x92) // Unused Flag
-#define FLAG_USE_CURRENT_BGM_FOR_BATTLE             (SYSTEM_FLAGS + 0x93) // Unused Flag
-#define FLAG_FANTASY_BREAKER_CHEAT                  (SYSTEM_FLAGS + 0x94) // Unused Flag
-#define FLAG_TERA_ORB_CHARGED                       (SYSTEM_FLAGS + 0x95) // Unused Flag
-#define FLAG_TERA_ORB_NO_COST                       (SYSTEM_FLAGS + 0x96) // Unused Flag
-#define FLAG_ENABLE_LIGHT_ORB_UP                    (SYSTEM_FLAGS + 0x97) // Unused Flag
-#define FLAG_UNUSED_0x8F8                           (SYSTEM_FLAGS + 0x98) // Unused Flag
-#define FLAG_UNUSED_0x8F9                           (SYSTEM_FLAGS + 0x99) // Unused Flag
-#define FLAG_UNUSED_0x8FA                           (SYSTEM_FLAGS + 0x9A) // Unused Flag
-#define FLAG_UNUSED_0x8FB                           (SYSTEM_FLAGS + 0x9B) // Unused Flag
-#define FLAG_UNUSED_0x8FC                           (SYSTEM_FLAGS + 0x9C) // Unused Flag
-#define FLAG_UNUSED_0x8FD                           (SYSTEM_FLAGS + 0x9D) // Unused Flag
-#define FLAG_UNUSED_0x8FE                           (SYSTEM_FLAGS + 0x9E) // Unused Flag
-#define FLAG_UNUSED_0x8FF                           (SYSTEM_FLAGS + 0x9F) // Unused Flag
-#define FLAG_UNUSED_0x900                           (SYSTEM_FLAGS + 0xA0) // Unused Flag
-#define FLAG_UNUSED_0x901                           (SYSTEM_FLAGS + 0xA1) // Unused Flag
-#define FLAG_UNUSED_0x902                           (SYSTEM_FLAGS + 0xA2) // Unused Flag
-#define FLAG_UNUSED_0x903                           (SYSTEM_FLAGS + 0xA3) // Unused Flag
-#define FLAG_UNUSED_0x904                           (SYSTEM_FLAGS + 0xA4) // Unused Flag
-#define FLAG_UNUSED_0x905                           (SYSTEM_FLAGS + 0xA5) // Unused Flag
-#define FLAG_UNUSED_0x906                           (SYSTEM_FLAGS + 0xA6) // Unused Flag
-#define FLAG_UNUSED_0x907                           (SYSTEM_FLAGS + 0xA7) // Unused Flag
-#define FLAG_UNUSED_0x908                           (SYSTEM_FLAGS + 0xA8) // Unused Flag
-#define FLAG_UNUSED_0x909                           (SYSTEM_FLAGS + 0xA9) // Unused Flag
-#define FLAG_UNUSED_0x90A                           (SYSTEM_FLAGS + 0xAA) // Unused Flag
-#define FLAG_UNUSED_0x90B                           (SYSTEM_FLAGS + 0xAB) // Unused Flag
-#define FLAG_UNUSED_0x90C                           (SYSTEM_FLAGS + 0xAC) // Unused Flag
-#define FLAG_UNUSED_0x90D                           (SYSTEM_FLAGS + 0xAD) // Unused Flag
-#define FLAG_UNUSED_0x90E                           (SYSTEM_FLAGS + 0xAE) // Unused Flag
-#define FLAG_UNUSED_0x90F                           (SYSTEM_FLAGS + 0xAF) // Unused Flag
-#define FLAG_UNUSED_0x910                           (SYSTEM_FLAGS + 0xB0) // Unused Flag
-#define FLAG_UNUSED_0x911                           (SYSTEM_FLAGS + 0xB1) // Unused Flag
-#define FLAG_UNUSED_0x912                           (SYSTEM_FLAGS + 0xB2) // Unused Flag
-#define FLAG_UNUSED_0x913                           (SYSTEM_FLAGS + 0xB3) // Unused Flag
-#define FLAG_UNUSED_0x914                           (SYSTEM_FLAGS + 0xB4) // Unused Flag
-#define FLAG_UNUSED_0x915                           (SYSTEM_FLAGS + 0xB5) // Unused Flag
-#define FLAG_UNUSED_0x916                           (SYSTEM_FLAGS + 0xB6) // Unused Flag
+#define FLAG_VISITED_LITTLEROOT_TOWN                (SYSTEM_FLAGS + 0x85)
+#define FLAG_VISITED_OLDALE_TOWN                    (SYSTEM_FLAGS + 0x86)
+#define FLAG_VISITED_DEWFORD_TOWN                   (SYSTEM_FLAGS + 0x87)
+#define FLAG_VISITED_LAVARIDGE_TOWN                 (SYSTEM_FLAGS + 0x88)
+#define FLAG_VISITED_FALLARBOR_TOWN                 (SYSTEM_FLAGS + 0x89)
+#define FLAG_VISITED_VERDANTURF_TOWN                (SYSTEM_FLAGS + 0x8A)
+#define FLAG_VISITED_PACIFIDLOG_TOWN                (SYSTEM_FLAGS + 0x8B)
+#define FLAG_VISITED_PETALBURG_CITY                 (SYSTEM_FLAGS + 0x8C)
+#define FLAG_VISITED_SLATEPORT_CITY                 (SYSTEM_FLAGS + 0x8D)
+#define FLAG_VISITED_MAUVILLE_CITY                  (SYSTEM_FLAGS + 0x8E)
+#define FLAG_VISITED_RUSTBORO_CITY                  (SYSTEM_FLAGS + 0x8F)
+#define FLAG_VISITED_FORTREE_CITY                   (SYSTEM_FLAGS + 0x90)
+#define FLAG_VISITED_LILYCOVE_CITY                  (SYSTEM_FLAGS + 0x91)
+#define FLAG_VISITED_MOSSDEEP_CITY                  (SYSTEM_FLAGS + 0x92)
+#define FLAG_VISITED_SOOTOPOLIS_CITY                (SYSTEM_FLAGS + 0x93)
+#define FLAG_VISITED_EVER_GRANDE_CITY               (SYSTEM_FLAGS + 0x94)
+#define FLAG_VISITED_GENSOKYO_HAKUREI_SHRINE        (SYSTEM_FLAGS + 0x95)
+#define FLAG_VISITED_GENSOKYO_HUMAN_VILLAGE         (SYSTEM_FLAGS + 0x96)
+#define FLAG_VISITED_GENSOKYO_KOURINDOU             (SYSTEM_FLAGS + 0x97)
+#define FLAG_VISITED_GENSOKYO_MUENZUKA              (SYSTEM_FLAGS + 0x98)
+#define FLAG_VISITED_GENSOKYO_HAKUGYOKUROU          (SYSTEM_FLAGS + 0x99)
+#define FLAG_VISITED_GENSOKYO_MORIYA_SHRINE         (SYSTEM_FLAGS + 0x9A)
+#define FLAG_VISITED_GENSOKYO_SCARLET_DEVIL_MANSION (SYSTEM_FLAGS + 0x9B)
+#define FLAG_VISITED_GENSOKYO_CHIREIDEN             (SYSTEM_FLAGS + 0x9C)
+#define FLAG_VISITED_GENSOKYO_PALENQUIN_SHIP        (SYSTEM_FLAGS + 0x9D)
+#define FLAG_VISITED_GENSOKYO_SANZU_RIVER           (SYSTEM_FLAGS + 0x9E)
+#define FLAG_VISITED_GENSOKYO_GARDEN_OF_THE_SUN     (SYSTEM_FLAGS + 0x9F)
+#define FLAG_VISITED_GENSOKYO_NAMELESS_HILL         (SYSTEM_FLAGS + 0xA0)
+#define FLAG_VISITED_GENSOKYO_EIENTEI               (SYSTEM_FLAGS + 0xA1)
+#define FLAG_VISITED_GENSOKYO_ANIMAL_REALM          (SYSTEM_FLAGS + 0xA2)
+#define FLAG_VISITED_GENSOKYO_MUGENKAN              (SYSTEM_FLAGS + 0xA3)
+#define FLAG_VISITED_GENSOKYO_FANTASY_WORLD         (SYSTEM_FLAGS + 0xA4)
+#define FLAG_VISITED_GENSOKYO_DREAM_WORLD           (SYSTEM_FLAGS + 0xA5)
+#define FLAG_VISITED_GENSOKYO_MAKAI                 (SYSTEM_FLAGS + 0xA6)
+#define FLAG_VISITED_GENSOKYO_LUNAR_CAPITAL         (SYSTEM_FLAGS + 0xA7)
+#define FLAG_VISITED_GENSOKYO_FANTASY_LEAGUE        (SYSTEM_FLAGS + 0xA8)
+#define FLAG_VISITED_YYYI_SEA_OF_TREES1             (SYSTEM_FLAGS + 0xA9)
+#define FLAG_VISITED_YYYI_SEA_OF_FLAME1             (SYSTEM_FLAGS + 0xAA)
+#define FLAG_VISITED_KEY_ILLUSIONARY_WORLD1         (SYSTEM_FLAGS + 0xAB)
+#define FLAG_VISITED_JAVA_YOGYAKARTA                (SYSTEM_FLAGS + 0xAC)
+#define FLAG_VISITED_JAVA_SOLO                      (SYSTEM_FLAGS + 0xAD)
+#define FLAG_VISITED_JAVA_SEMARANG                  (SYSTEM_FLAGS + 0xAE)
+#define FLAG_VISITED_JAVA_SURABAYA                  (SYSTEM_FLAGS + 0xAF)
+#define FLAG_VISITED_JAVA_JAKARTA                   (SYSTEM_FLAGS + 0xB0)
+#define FLAG_VISITED_INMAP0x2C                      (SYSTEM_FLAGS + 0xB1)
+#define FLAG_VISITED_INMAP0x2D                      (SYSTEM_FLAGS + 0xB2)
+#define FLAG_VISITED_INMAP0x2E                      (SYSTEM_FLAGS + 0xB3)
+#define FLAG_VISITED_INMAP0x2F                      (SYSTEM_FLAGS + 0xB4)
+#define FLAG_VISITED_INMAP0x30                      (SYSTEM_FLAGS + 0xB5)
+#define FLAG_VISITED_INMAP0x31                      (SYSTEM_FLAGS + 0xB6)
 #define FLAG_UNUSED_0x917                           (SYSTEM_FLAGS + 0xB7) // Unused Flag
 #define FLAG_UNUSED_0x918                           (SYSTEM_FLAGS + 0xB8) // Unused Flag
 #define FLAG_UNUSED_0x919                           (SYSTEM_FLAGS + 0xB9) // Unused Flag

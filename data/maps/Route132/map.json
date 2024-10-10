@@ -3,7 +3,7 @@
   "name": "Route132",
   "layout": "LAYOUT_ROUTE132",
   "music": "MUS_ROUTE119",
-  "region_map_section": "MAPSEC_0x2F",
+  "region_map_section": "MAPSEC_0X2F",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_OCEAN_ROUTE",

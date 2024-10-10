@@ -3,7 +3,7 @@
   "name": "Route129",
   "layout": "LAYOUT_ROUTE129",
   "music": "MUS_HG_ROUTE47",
-  "region_map_section": "MAPSEC_0x2C",
+  "region_map_section": "MAPSEC_0X2C",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

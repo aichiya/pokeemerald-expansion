@@ -45,12 +45,12 @@
 #define MAPSEC_JAVA_SEMARANG            0x29
 #define MAPSEC_JAVA_SURABAYA            0x2A
 #define MAPSEC_JAVA_JAKARTA             0x2B
-#define MAPSEC_0x2C                         0x2C
-#define MAPSEC_0x2D                         0x2D
-#define MAPSEC_0x2E                         0x2E
-#define MAPSEC_0x2F                         0x2F
-#define MAPSEC_0x30                         0x30
-#define MAPSEC_0x31                         0x31
+#define MAPSEC_0X2C                         0x2C
+#define MAPSEC_0X2D                         0x2D
+#define MAPSEC_0X2E                         0x2E
+#define MAPSEC_0X2F                         0x2F
+#define MAPSEC_0X30                         0x30
+#define MAPSEC_0X31                         0x31
 #define MAPSEC_JOHTO_ROUTE_23           0x32
 #define MAPSEC_JOHTO_ROUTE_26           0x33
 #define MAPSEC_JOHTO_ROUTE_27           0x34
@@ -214,17 +214,17 @@
 #define MAPSEC_JAVA_LOST_AGE2           0xD2
 #define MAPSEC_JAVA_LOST_AGE3           0xD3
 #define MAPSEC_JAVA_LOST_AGE4           0xD4
-#define MAPSEC_0xD5                         0xD5	
-#define MAPSEC_0xD6                         0xD6	
-#define MAPSEC_0xD7                         0xD7	
-#define MAPSEC_0xD8                         0xD8	
-#define MAPSEC_0xD9                         0xD9	
-#define MAPSEC_0xDA                         0xDA	
-#define MAPSEC_0xDB                         0xDB	
-#define MAPSEC_0xDC                         0xDC	
-#define MAPSEC_0xDD                         0xDD	
-#define MAPSEC_0xDE                         0xDE	
-#define MAPSEC_0xDF                         0xDF	
+#define MAPSEC_0XD5                         0xD5	
+#define MAPSEC_0XD6                         0xD6	
+#define MAPSEC_0XD7                         0xD7	
+#define MAPSEC_0XD8                         0xD8	
+#define MAPSEC_0XD9                         0xD9	
+#define MAPSEC_0XDA                         0xDA	
+#define MAPSEC_0XDB                         0xDB	
+#define MAPSEC_0XDC                         0xDC	
+#define MAPSEC_0XDD                         0xDD	
+#define MAPSEC_0XDE                         0xDE	
+#define MAPSEC_0XDF                         0xDF	
 #define MAPSEC_ETC_ANOTHER_WORLD            0xE0	
 #define MAPSEC_ETC_WORLD_OF_POKEMON         0xE1	
 #define MAPSEC_ETC_WORLD_OF_MOEMON          0xE2	
@@ -236,22 +236,22 @@
 #define MAPSEC_ETC_WORLD_OF_PRETTY_CURE     0xE8	
 #define MAPSEC_ETC_WORLD_OF_KAMEN_RIDER     0xE9	
 #define MAPSEC_ETC_WORLD_OF_NEGATIVE        0xEA	
-#define MAPSEC_0xEB                         0xEB	
-#define MAPSEC_0xEC                         0xEC	
-#define MAPSEC_0xED                         0xED	
-#define MAPSEC_0xEE                         0xEE	
-#define MAPSEC_0xEF                         0xEF	
-#define MAPSEC_0xF0                         0xF0	
+#define MAPSEC_0XEB                         0xEB	
+#define MAPSEC_0XEC                         0xEC	
+#define MAPSEC_0XED                         0xED	
+#define MAPSEC_0XEE                         0xEE	
+#define MAPSEC_0XEF                         0xEF	
+#define MAPSEC_0XF0                         0xF0	
 #define MAPSEC_ETC_TRIMMED_GENSOKYO         0xF1	
-#define MAPSEC_0xF2                         0xF2	
-#define MAPSEC_0xF3                         0xF3	
-#define MAPSEC_0xF4                         0xF4	
-#define MAPSEC_0xF5                         0xF5	
-#define MAPSEC_0xF6                         0xF6	
-#define MAPSEC_0xF7                         0xF7	
-#define MAPSEC_0xF8                         0xF8	
-#define MAPSEC_0xF9                         0xF9	
-#define MAPSEC_0xFA                         0xFA	
+#define MAPSEC_0XF2                         0xF2	
+#define MAPSEC_0XF3                         0xF3	
+#define MAPSEC_0XF4                         0xF4	
+#define MAPSEC_0XF5                         0xF5	
+#define MAPSEC_0XF6                         0xF6	
+#define MAPSEC_0XF7                         0xF7	
+#define MAPSEC_0XF8                         0xF8	
+#define MAPSEC_0XF9                         0xF9	
+#define MAPSEC_0XFA                         0xFA	
 #define MAPSEC_ETC_ROMHACK_DEVELOPER        0xFB	
 #define MAPSEC_NONE                         0xFC	
 
@@ -259,8 +259,8 @@
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF
 
-#define KANTO_MAPSEC_START  MAPSEC_0xD5
-#define KANTO_MAPSEC_END    MAPSEC_0xDF
+#define KANTO_MAPSEC_START  MAPSEC_0XD5
+#define KANTO_MAPSEC_END    MAPSEC_0XDF
 #define KANTO_MAPSEC_COUNT (KANTO_MAPSEC_END - KANTO_MAPSEC_START + 1)
 
 #endif //GUARD_REGIONMAPSEC_H

@@ -353,7 +353,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0x2C",
+      "map_section": "MAPSEC_0X2C",
       "name": "Route 48",
       "x": 3,
       "y": 9,
@@ -361,7 +361,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0x2D",
+      "map_section": "MAPSEC_0X2D",
       "name": "Unknown Place",
       "x": 38,
       "y": 6,
@@ -369,7 +369,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0x2E",
+      "map_section": "MAPSEC_0X2E",
       "name": "Unknown Place",
       "x": 38,
       "y": 7,
@@ -377,7 +377,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0x2F",
+      "map_section": "MAPSEC_0X2F",
       "name": "Unknown Place",
       "x": 38,
       "y": 8,
@@ -385,7 +385,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0x30",
+      "map_section": "MAPSEC_0X30",
       "name": "Unknown Place",
       "x": 38,
       "y": 9,
@@ -393,7 +393,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0x31",
+      "map_section": "MAPSEC_0X31",
       "name": "Unknown Place",
       "x": 38,
       "y": 10,
@@ -1705,7 +1705,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xD5",
+      "map_section": "MAPSEC_0XD5",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1713,7 +1713,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xD6",
+      "map_section": "MAPSEC_0XD6",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1721,7 +1721,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xD7",
+      "map_section": "MAPSEC_0XD7",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1729,7 +1729,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xD8",
+      "map_section": "MAPSEC_0XD8",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1737,7 +1737,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xD9",
+      "map_section": "MAPSEC_0XD9",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1745,7 +1745,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xDA",
+      "map_section": "MAPSEC_0XDA",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1753,7 +1753,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xDB",
+      "map_section": "MAPSEC_0XDB",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1761,7 +1761,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xDC",
+      "map_section": "MAPSEC_0XDC",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1769,7 +1769,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xDD",
+      "map_section": "MAPSEC_0XDD",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1777,7 +1777,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xDE",
+      "map_section": "MAPSEC_0XDE",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1785,7 +1785,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xDF",
+      "map_section": "MAPSEC_0XDF",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1881,7 +1881,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xEB",
+      "map_section": "MAPSEC_0XEB",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1889,7 +1889,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xEC",
+      "map_section": "MAPSEC_0XEC",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1897,7 +1897,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xED",
+      "map_section": "MAPSEC_0XED",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1905,7 +1905,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xEE",
+      "map_section": "MAPSEC_0XEE",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1913,7 +1913,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xEF",
+      "map_section": "MAPSEC_0XEF",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1921,7 +1921,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xF0",
+      "map_section": "MAPSEC_0XF0",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1937,7 +1937,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xF2",
+      "map_section": "MAPSEC_0XF2",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1945,7 +1945,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xF3",
+      "map_section": "MAPSEC_0XF3",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1953,7 +1953,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xF4",
+      "map_section": "MAPSEC_0XF4",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1961,7 +1961,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xF5",
+      "map_section": "MAPSEC_0XF5",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1969,7 +1969,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xF6",
+      "map_section": "MAPSEC_0XF6",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1977,7 +1977,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xF7",
+      "map_section": "MAPSEC_0XF7",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1985,7 +1985,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xF8",
+      "map_section": "MAPSEC_0XF8",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -1993,7 +1993,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xF9",
+      "map_section": "MAPSEC_0XF9",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,
@@ -2001,7 +2001,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0xFA",
+      "map_section": "MAPSEC_0XFA",
       "name": "Unknown Place",
       "x": 0,
       "y": 0,

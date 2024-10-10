@@ -6,7 +6,7 @@ MauvilleCity_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 MauvilleCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_MAUVILLE_CITY
+	setrespawn HEAL_LOCATION_JOHTO_MAHOGANY_TOWN
 	call Common_EventScript_UpdateBrineyLocation
 	goto MauvilleCity_PokemonCenter_1F_EventScript_SetMauvilleOldManGfx
 	end

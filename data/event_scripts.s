@@ -1083,3 +1083,5 @@ EventScript_StartsLightOrbsUp::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/SafariZone_SouthFirstConstruction/scripts.inc"
+
+	.include "data/maps/JohtoRoute47/scripts.inc"

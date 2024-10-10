@@ -144,10 +144,10 @@
     {
       "id": "LAYOUT_VERDANTURF_TOWN",
       "name": "VerdanturfTown_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 42,
+      "height": 58,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/VerdanturfTown/border.bin",
       "blockdata_filepath": "data/layouts/VerdanturfTown/map.bin"
     },
@@ -444,10 +444,10 @@
     {
       "id": "LAYOUT_ROUTE129",
       "name": "Route129_Layout",
-      "width": 80,
-      "height": 40,
+      "width": 72,
+      "height": 72,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route129/border.bin",
       "blockdata_filepath": "data/layouts/Route129/map.bin"
     },
@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/SafariZone_SouthFirstConstruction/border.bin",
       "blockdata_filepath": "data/layouts/SafariZone_SouthFirstConstruction/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE47",
+      "name": "JohtoRoute47_Layout",
+      "width": 92,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/JohtoRoute47/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute47/map.bin"
     }
   ]
 }

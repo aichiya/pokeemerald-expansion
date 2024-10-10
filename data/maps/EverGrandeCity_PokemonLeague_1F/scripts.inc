@@ -8,7 +8,7 @@ EverGrandeCity_PokemonLeague_1F_MapScripts::
 	.byte 0
 
 EverGrandeCity_PokemonLeague_1F_OnTransition:
-	setrespawn HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE
+	setrespawn HEAL_LOCATION_JOHTO_SPACE_HYPER_VESSEL_EMBEDDED_TOWER
 	setflag FLAG_LANDMARK_POKEMON_LEAGUE
 	call_if_unset FLAG_ENTERED_ELITE_FOUR, EverGrandeCity_PokemonLeague_1F_EventScript_GuardsBlockDoor
 	end

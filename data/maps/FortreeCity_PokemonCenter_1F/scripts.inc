@@ -6,7 +6,7 @@ FortreeCity_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 FortreeCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_FORTREE_CITY
+	setrespawn HEAL_LOCATION_JOHTO_BLACKTHORN_CITY
 	end
 
 FortreeCity_PokemonCenter_1F_EventScript_Nurse::

@@ -2,11 +2,11 @@
   "id": "MAP_VERDANTURF_TOWN",
   "name": "VerdanturfTown",
   "layout": "LAYOUT_VERDANTURF_TOWN",
-  "music": "MUS_VERDANTURF",
+  "music": "MUS_HG_VIOLET",
   "region_map_section": "MAPSEC_REV_JOHTO_CIANWOOD_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_TOWN",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -14,14 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE116",
-      "offset": -80,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_ROUTE117",
+      "map": "MAP_JOHTO_ROUTE47",
       "offset": 0,
-      "direction": "right"
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -80,29 +75,29 @@
   ],
   "warp_events": [
     {
-      "x": 3,
-      "y": 7,
+      "x": 14,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_BATTLE_TENT_LOBBY",
       "dest_warp_id": "0"
     },
     {
-      "x": 12,
-      "y": 3,
+      "x": 25,
+      "y": 29,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_MART",
       "dest_warp_id": "0"
     },
     {
-      "x": 16,
-      "y": 3,
+      "x": 31,
+      "y": 33,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 10,
-      "y": 14,
+      "x": 19,
+      "y": 35,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_WANDAS_HOUSE",
       "dest_warp_id": "0"
@@ -115,21 +110,30 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 1,
-      "y": 14,
+      "x": 21,
+      "y": 24,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_FRIENDSHIP_RATERS_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 17,
-      "y": 15,
+      "x": 26,
+      "y": 37,
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_ROUTE47",
+      "dest_warp_id": "4"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

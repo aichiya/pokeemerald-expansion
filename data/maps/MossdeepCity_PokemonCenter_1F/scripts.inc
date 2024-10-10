@@ -6,7 +6,7 @@ MossdeepCity_PokemonCenter_1F_MapScripts::
 	.byte 0
 
 MossdeepCity_PokemonCenter_1F_OnTransition:
-	setrespawn HEAL_LOCATION_MOSSDEEP_CITY
+	setrespawn HEAL_LOCATION_JOHTO_INDIGO_PLATEAU
 	end
 
 MossdeepCity_PokemonCenter_1F_EventScript_Nurse::

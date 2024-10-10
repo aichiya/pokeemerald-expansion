@@ -3,7 +3,7 @@
   "name": "MarineCave_End",
   "layout": "LAYOUT_MARINE_CAVE_END",
   "music": "MUS_PETALBURG_WOODS",
-  "region_map_section": "MAPSEC_REV_JAVA_SULTAN_PALACE",
+  "region_map_section": "MAPSEC_JAVA_SULTAN_PALACE",
   "requires_flash": false,
   "weather": "WEATHER_FOG_HORIZONTAL",
   "map_type": "MAP_TYPE_UNDERGROUND",

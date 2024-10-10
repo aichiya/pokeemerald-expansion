@@ -1085,3 +1085,5 @@ EventScript_StartsLightOrbsUp::
 	.include "data/maps/SafariZone_SouthFirstConstruction/scripts.inc"
 
 	.include "data/maps/JohtoRoute47/scripts.inc"
+
+	.include "data/maps/JohtoRoute41/scripts.inc"

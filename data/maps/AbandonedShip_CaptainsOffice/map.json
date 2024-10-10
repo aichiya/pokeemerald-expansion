@@ -3,7 +3,7 @@
   "name": "AbandonedShip_CaptainsOffice",
   "layout": "LAYOUT_ABANDONED_SHIP_CAPTAINS_OFFICE",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_REV_JOHTO_ROUTE_35",
+  "region_map_section": "MAPSEC_JOHTO_ROUTE_35",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",

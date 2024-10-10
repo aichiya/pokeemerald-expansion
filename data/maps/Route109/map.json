@@ -3,7 +3,7 @@
   "name": "Route109",
   "layout": "LAYOUT_ROUTE109",
   "music": "MUS_ROUTE104",
-  "region_map_section": "MAPSEC_REV_GENSOKYO_PALENQUIN_SHIP",
+  "region_map_section": "MAPSEC_GENSOKYO_PALENQUIN_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

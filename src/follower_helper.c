@@ -246,7 +246,7 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .conditions =
         {
             MATCH_TYPES(TYPE_DRAGON, TYPE_DRAGON),
-            MATCH_MAPSEC(MAPSEC_SKY_PILLAR),
+            MATCH_MAPSEC(MAPSEC_JOHTO_BELL_TOWER),
         },
     },
     [COND_MSG_FEAR] =
@@ -257,7 +257,7 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .conditions =
         {
             MATCH_NOT_TYPES(TYPE_GHOST, TYPE_GHOST),
-            MATCH_MAPSEC(MAPSEC_MT_PYRE),
+            MATCH_MAPSEC(MAPSEC_JOHTO_ROUTE_39),
             MATCH_MUSIC(MUS_MT_PYRE),
         },
     },
@@ -327,7 +327,7 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .emotion = FOLLOWER_EMOTION_PENSIVE,
         .conditions =
         {
-            MATCH_MAPSEC(MAPSEC_PETALBURG_WOODS),
+            MATCH_MAPSEC(MAPSEC_JOHTO_ROUTE_33),
         },
     },
     [COND_MSG_ICE] =

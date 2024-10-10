@@ -1067,15 +1067,15 @@ static bool32 CheckMatchCallChance(void)
 
 static bool32 MapAllowsMatchCall(void)
 {
-    if (!Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) || gMapHeader.regionMapSectionId == MAPSEC_REV_JOHTO_MT_SILVER_CAVE)
+    if (!Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) || gMapHeader.regionMapSectionId == MAPSEC_JOHTO_MT_SILVER_CAVE)
         return FALSE;
 
-    if (gMapHeader.regionMapSectionId == MAPSEC_REV_JOHTO_MORIYA_SHRINE
+    if (gMapHeader.regionMapSectionId == MAPSEC_JOHTO_MORIYA_SHRINE
      && FlagGet(FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA) == TRUE
      && FlagGet(FLAG_NEVER_SET_0x0DC) == FALSE)
         return FALSE;
 
-    if (gMapHeader.regionMapSectionId == MAPSEC_REV_JOHTO_ROUTE_31
+    if (gMapHeader.regionMapSectionId == MAPSEC_JOHTO_ROUTE_31
      && FlagGet(FLAG_MET_ARCHIE_METEOR_FALLS) == TRUE
      && FlagGet(FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY) == FALSE)
         return FALSE;

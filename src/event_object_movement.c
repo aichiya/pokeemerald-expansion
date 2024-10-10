@@ -2354,42 +2354,42 @@ void GetFollowerAction(struct ScriptContext *ctx) // Essentially a big switch fo
     {
         switch (gMapHeader.regionMapSectionId)
         {
-        case MAPSEC_RUSTBORO_CITY:
-        case MAPSEC_PEWTER_CITY:
+        case MAPSEC_JOHTO_LAKE_OF_RAGE:
+        case MAPSEC_JOHTO_RADIO_TOWER:
             multi = TYPE_ROCK;
             break;
-        case MAPSEC_DEWFORD_TOWN:
+        case MAPSEC_JOHTO_CHERRYGROVE_CITY:
             multi = TYPE_FIGHTING;
             break;
-        case MAPSEC_MAUVILLE_CITY:
-        case MAPSEC_VERMILION_CITY:
+        case MAPSEC_JOHTO_MAHOGANY_TOWN:
+        case MAPSEC_JOHTO_SLOWPOKE_WELL:
             multi = TYPE_ELECTRIC;
             break;
-        case MAPSEC_LAVARIDGE_TOWN:
-        case MAPSEC_CINNABAR_ISLAND:
+        case MAPSEC_JOHTO_VIOLET_CITY:
+        case MAPSEC_JOHTO_ILEX_FOREST:
             multi = TYPE_FIRE;
             break;
-        case MAPSEC_PETALBURG_CITY:
+        case MAPSEC_JOHTO_OLIVINE_CITY:
             multi = TYPE_NORMAL;
             break;
-        case MAPSEC_FORTREE_CITY:
+        case MAPSEC_JOHTO_BLACKTHORN_CITY:
             multi = TYPE_FLYING;
             break;
-        case MAPSEC_MOSSDEEP_CITY:
-        case MAPSEC_SAFFRON_CITY:
+        case MAPSEC_JOHTO_INDIGO_PLATEAU:
+        case MAPSEC_JOHTO_MT_MORTAR:
             multi = TYPE_PSYCHIC;
             break;
-        case MAPSEC_SOOTOPOLIS_CITY:
-        case MAPSEC_CERULEAN_CITY:
+        case MAPSEC_JOHTO_MORIYA_SHRINE:
+        case MAPSEC_JOHTO_RUINS_OF_ALPH:
             multi = TYPE_WATER;
             break;
-        case MAPSEC_CELADON_CITY:
+        case MAPSEC_JOHTO_LIGHTHOUSE:
             multi = TYPE_GRASS;
             break;
-        case MAPSEC_FUCHSIA_CITY:
+        case MAPSEC_JOHTO_TEAM_ROCKET_HQ:
             multi = TYPE_POISON;
             break;
-        case MAPSEC_VIRIDIAN_CITY:
+        case MAPSEC_JOHTO_NATIONAL_PARK:
             multi = TYPE_GROUND;
             break;
         default:

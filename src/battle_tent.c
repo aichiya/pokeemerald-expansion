@@ -285,7 +285,7 @@ static void SwapRentalMons(void)
 
 bool8 InSlateportBattleTent(void)
 {
-    return gMapHeader.regionMapSectionId == MAPSEC_REV_JOHTO_ECRUTEAK_CITY
+    return gMapHeader.regionMapSectionId == MAPSEC_JOHTO_ECRUTEAK_CITY
            && (gMapHeader.mapLayoutId == LAYOUT_BATTLE_TENT_CORRIDOR || gMapHeader.mapLayoutId == LAYOUT_BATTLE_TENT_BATTLE_ROOM);
 }
 

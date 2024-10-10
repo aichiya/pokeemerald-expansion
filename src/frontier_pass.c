@@ -617,7 +617,7 @@ static u32 AllocateFrontierPassData(void (*callback)(void))
 
     sPassData->callback = callback;
     i = GetCurrentRegionMapSectionId();
-    if (i != MAPSEC_BATTLE_FRONTIER && i != MAPSEC_REV_JAVA_POJOK_CLIFF)
+    if (i != MAPSEC_BATTLE_FRONTIER && i != MAPSEC_JAVA_POJOK_CLIFF)
     {
         // Player is not in the frontier, set
         // cursor position to the Trainer Card
@@ -1653,7 +1653,7 @@ static void InitFrontierMapSprites(void)
 
     // Create player indicator head sprite only if it's in vicinity of battle frontier.
     id = GetCurrentRegionMapSectionId();
-    if (id == MAPSEC_BATTLE_FRONTIER || id == MAPSEC_REV_JAVA_POJOK_CLIFF)
+    if (id == MAPSEC_BATTLE_FRONTIER || id == MAPSEC_JAVA_POJOK_CLIFF)
     {
         s8 mapNum = gSaveBlock1Ptr->location.mapNum;
 

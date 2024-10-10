@@ -3,7 +3,7 @@
   "name": "LilycoveCity_DepartmentStore_5F",
   "layout": "LAYOUT_LILYCOVE_CITY_DEPARTMENT_STORE_5F",
   "music": "MUS_POKE_MART",
-  "region_map_section": "MAPSEC_REV_JOHTO_MT_SILVER",
+  "region_map_section": "MAPSEC_JOHTO_MT_SILVER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

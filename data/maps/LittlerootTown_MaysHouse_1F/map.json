@@ -3,7 +3,7 @@
   "name": "LittlerootTown_MaysHouse_1F",
   "layout": "LAYOUT_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
   "music": "MUS_LITTLEROOT",
-  "region_map_section": "MAPSEC_REV_JOHTO_TWINRIVER_CITY",
+  "region_map_section": "MAPSEC_JOHTO_TWINRIVER_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

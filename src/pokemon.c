@@ -5433,7 +5433,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
             case EVO_LEVEL_VOID:
                 if ((personality % evolutions[i].param) == 0
                    && level >= 1
-                   && gMapHeader.regionMapSectionId == MAPSEC_REV_KEY_ILLUSIONARY_WORLD2)
+                   && gMapHeader.regionMapSectionId == MAPSEC_KEY_ILLUSIONARY_WORLD2)
                     targetSpecies = evolutions[i].targetSpecies;
                 break;
             }

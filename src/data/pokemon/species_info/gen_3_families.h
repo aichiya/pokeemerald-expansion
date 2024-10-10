@@ -3685,7 +3685,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sNosepassLevelUpLearnset,
         .teachableLearnset = sNosepassTeachableLearnset,
         .eggMoveLearnset = sNosepassEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_MAPSEC, MAPSEC_NEW_MAUVILLE, SPECIES_PROBOPASS},
+        .evolutions = EVOLUTION({EVO_MAPSEC, MAPSEC_JOHTO_ROUTE_36, SPECIES_PROBOPASS},
                                 {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_PROBOPASS}),
     },
 

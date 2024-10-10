@@ -3,7 +3,7 @@
   "name": "Route111_WinstrateFamilysHouse",
   "layout": "LAYOUT_HOUSE2",
   "music": "MUS_RUSTBORO",
-  "region_map_section": "MAPSEC_REV_GENSOKYO_GARDEN_OF_THE_SUN",
+  "region_map_section": "MAPSEC_GENSOKYO_GARDEN_OF_THE_SUN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

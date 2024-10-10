@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/JohtoRoute47/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute47/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE41",
+      "name": "JohtoRoute41_Layout",
+      "width": 50,
+      "height": 54,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/JohtoRoute41/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute41/map.bin"
     }
   ]
 }

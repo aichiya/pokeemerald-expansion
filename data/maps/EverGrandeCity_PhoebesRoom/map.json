@@ -3,7 +3,7 @@
   "name": "EverGrandeCity_PhoebesRoom",
   "layout": "LAYOUT_EVER_GRANDE_CITY_PHOEBES_ROOM",
   "music": "MUS_VICTORY_ROAD",
-  "region_map_section": "MAPSEC_REV_JOHTO_SPACE_HYPER_VESSEL",
+  "region_map_section": "MAPSEC_JOHTO_SPACE_HYPER_VESSEL",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

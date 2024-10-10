@@ -3,7 +3,7 @@
   "name": "VerdanturfTown",
   "layout": "LAYOUT_VERDANTURF_TOWN",
   "music": "MUS_HG_VIOLET",
-  "region_map_section": "MAPSEC_REV_JOHTO_CIANWOOD_CITY",
+  "region_map_section": "MAPSEC_JOHTO_CIANWOOD_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_CITY",
@@ -17,6 +17,11 @@
       "map": "MAP_JOHTO_ROUTE47",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_JOHTO_ROUTE41",
+      "offset": 5,
+      "direction": "right"
     }
   ],
   "object_events": [

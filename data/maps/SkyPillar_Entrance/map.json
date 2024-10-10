@@ -3,7 +3,7 @@
   "name": "SkyPillar_Entrance",
   "layout": "LAYOUT_SKY_PILLAR_ENTRANCE",
   "music": "MUS_MT_CHIMNEY",
-  "region_map_section": "MAPSEC_REV_JOHTO_BELL_TOWER",
+  "region_map_section": "MAPSEC_JOHTO_BELL_TOWER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

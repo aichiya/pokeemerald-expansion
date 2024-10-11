@@ -17,6 +17,11 @@
       "map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_JOHTO_ROUTE40",
+      "offset": 40,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -191,8 +196,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SUDOWOODO",
-      "x": 54,
-      "y": 62,
+      "x": 61,
+      "y": 56,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -322,7 +327,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
       "x": 58,
-      "y": 55,
+      "y": 47,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 1,
@@ -459,7 +464,9 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

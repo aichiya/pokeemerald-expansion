@@ -17,6 +17,11 @@
       "map": "MAP_VERDANTURF_TOWN",
       "offset": -5,
       "direction": "left"
+    },
+    {
+      "map": "MAP_JOHTO_ROUTE40",
+      "offset": 18,
+      "direction": "up"
     }
   ],
   "object_events": [

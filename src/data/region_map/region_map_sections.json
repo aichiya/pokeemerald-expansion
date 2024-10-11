@@ -660,16 +660,16 @@
       "map_section": "MAPSEC_JOHTO_ROUTE_49",
       "name": "Route 49",
       "x": 3,
-      "y": 3,
+      "y": 4,
       "width": 1,
-      "height": 4
+      "height": 3
     },
     {
       "map_section": "MAPSEC_JOHTO_ROUTE_50",
       "name": "Route 50",
-      "x": 4,
+      "x": 3,
       "y": 3,
-      "width": 2,
+      "width": 3,
       "height": 1
     },
     {

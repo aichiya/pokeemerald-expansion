@@ -4440,6 +4440,26 @@
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/JohtoRoute41/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute41/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE40",
+      "name": "JohtoRoute40_Layout",
+      "width": 32,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/JohtoRoute40/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute40/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE49",
+      "name": "JohtoRoute49_Layout",
+      "width": 60,
+      "height": 120,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/JohtoRoute49/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute49/map.bin"
     }
   ]
 }

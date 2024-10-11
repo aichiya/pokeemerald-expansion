@@ -1,0 +1,34 @@
+{
+  "id": "MAP_JOHTO_ROUTE49",
+  "name": "JohtoRoute49",
+  "layout": "LAYOUT_JOHTO_ROUTE49",
+  "music": "MUS_GS2_005_TROPICAL_PARADISE",
+  "region_map_section": "MAPSEC_JOHTO_ROUTE_49",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_LITTLEROOT_TOWN",
+      "offset": -16,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

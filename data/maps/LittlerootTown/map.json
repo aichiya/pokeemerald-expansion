@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE129",
       "offset": 0,
       "direction": "down"
+    },
+    {
+      "map": "MAP_JOHTO_ROUTE49",
+      "offset": 16,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -211,8 +216,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 52,
-      "y": 4,
+      "x": 49,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_LITTLEROOT_TOWN",
       "dest_warp_id": "0"
@@ -327,7 +332,7 @@
     {
       "type": "sign",
       "x": 51,
-      "y": 6,
+      "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LittlerootTown_EventScript_BirchsLabSign"

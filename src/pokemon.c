@@ -6499,7 +6499,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_OLD_COUPLE:
             return MUS_DBGT_DANDANKOKORO_RECAP;
         case TRAINER_CLASS_AROMA_LADY:
-            return MUS_GBF_VS_ROSE_QUEEN;
+            return MUS_ETC_HANA_NI_NATTE;
         case TRAINER_CLASS_EXPERT:
             return MUS_FFURY_GEESE;
         case TRAINER_CLASS_BIRD_KEEPER:
@@ -6522,6 +6522,8 @@ u16 GetBattleBGM(void)
             return MUS_MVC_MEGAMAN;
         case TRAINER_CLASS_LADY:
             return MUS_MTADV_PEACH_TOUR_MATCH;
+        case TRAINER_CLASS_BEAUTY:
+            return MUS_GBF_VS_ROSE_QUEEN;
 /*
         case TRAINER_CLASS_PKMN_TRAINER_1:
         case TRAINER_CLASS_PKMN_TRAINER_2:
@@ -6530,7 +6532,6 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_INTERVIEWER:
         case TRAINER_CLASS_TUBER_F:
         case TRAINER_CLASS_TUBER_M:
-        case TRAINER_CLASS_BEAUTY:
         case TRAINER_CLASS_RICH_BOY:
         case TRAINER_CLASS_POKEMANIAC:
         case TRAINER_CLASS_CAMPER:

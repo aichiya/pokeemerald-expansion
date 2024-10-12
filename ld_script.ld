@@ -2271,6 +2271,8 @@ SECTIONS {
         sound/songs/mus_mtadv_peach_tour_match.o(.rodata);
         sound/songs/mus_dgmn_card2_butterfly.o(.rodata);
         sound/songs/mus_dgmn_card2_butterfly_no_intro.o(.rodata);
+        sound/songs/mus_etc_hana_ni_natte.o(.rodata);
+        sound/songs/mus_th_iro_wa_nioedo_cut.o(.rodata);
     } > ROM =0
 
     lib_rodata :

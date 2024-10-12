@@ -1621,6 +1621,8 @@ gSongTable::
 	song mus_mtadv_peach_tour_match, 0, 0
 	song mus_dgmn_card2_butterfly, 0, 0
 	song mus_dgmn_card2_butterfly_no_intro, 0, 0
+	song mus_etc_hana_ni_natte, 0, 0
+	song mus_th_iro_wa_nioedo_cut, 0, 0
 
 	.align 2
 dummy_song_header:

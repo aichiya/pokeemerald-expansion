@@ -6524,11 +6524,15 @@ u16 GetBattleBGM(void)
             return MUS_MTADV_PEACH_TOUR_MATCH;
         case TRAINER_CLASS_BEAUTY:
             return MUS_GBF_VS_ROSE_QUEEN;
+        case TRAINER_CLASS_PSYCHIC:
+            return MUS_FF6_VS_BOSS;
+        case TRAINER_CLASS_SWIMMER_F:
+        case TRAINER_CLASS_SWIMMER_M:
+            return MUS_DGMN_STORY1_VS_DIGIMON;
 /*
         case TRAINER_CLASS_PKMN_TRAINER_1:
         case TRAINER_CLASS_PKMN_TRAINER_2:
         case TRAINER_CLASS_COLLECTOR:
-        case TRAINER_CLASS_SWIMMER_M:
         case TRAINER_CLASS_INTERVIEWER:
         case TRAINER_CLASS_TUBER_F:
         case TRAINER_CLASS_TUBER_M:
@@ -6537,14 +6541,12 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_CAMPER:
         case TRAINER_CLASS_PICNICKER:
         case TRAINER_CLASS_BUG_MANIAC:
-        case TRAINER_CLASS_PSYCHIC:
         case TRAINER_CLASS_WINSTRATE:
         case TRAINER_CLASS_POKEFAN:
         case TRAINER_CLASS_FISHERMAN:
         case TRAINER_CLASS_TRIATHLETE:
         case TRAINER_CLASS_NINJA_BOY:
         case TRAINER_CLASS_PARASOL_LADY:
-        case TRAINER_CLASS_SWIMMER_F:
         case TRAINER_CLASS_TWINS:
         case TRAINER_CLASS_SAILOR:
         case TRAINER_CLASS_RIVAL:

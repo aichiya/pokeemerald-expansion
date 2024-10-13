@@ -1592,8 +1592,9 @@
 #define MUS_DGMN_CARD2_BUTTERFLY_NO_INTRO 1619
 #define MUS_ETC_HANA_NI_NATTE 1620
 #define MUS_TH_IRO_WA_NIOEDO_CUT 1621
+#define MUS_FF6_VS_BOSS 1622
 
-#define END_MUS 					MUS_TH_IRO_WA_NIOEDO_CUT
+#define END_MUS 					MUS_FF6_VS_BOSS
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

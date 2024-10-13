@@ -5821,6 +5821,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_DGMN_CARD2_BUTTERFLY_NO_INTRO) \
     X(MUS_ETC_HANA_NI_NATTE) \
     X(MUS_TH_IRO_WA_NIOEDO_CUT) \
+    X(MUS_FF6_VS_BOSS) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

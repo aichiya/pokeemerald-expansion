@@ -5429,7 +5429,7 @@ static void BufferMonTrainerMemo(void)
         }
         else if (sum->metGame == 0)
         {
-            text = gText_MetLocationPlacholder;
+            text = gText_ApparentlyTrimmedGensokyoGeneric;
         }
         else if (sum->metGame == VERSION_RUBY
             || sum->metGame == VERSION_SAPPHIRE

@@ -4151,5 +4151,6 @@ extern const u8 gText_XNatureEvent[];
 extern const u8 gText_XNatureCensored[];
 extern const u8 gText_Censored3[];
 extern const u8 gText_MetLocationPlacholder[];
+extern const u8 gText_ApparentlyTrimmedGensokyoGeneric[];
 
 #endif // GUARD_STRINGS_H

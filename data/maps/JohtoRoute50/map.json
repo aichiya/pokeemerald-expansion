@@ -1,12 +1,12 @@
 {
-  "id": "MAP_JOHTO_ROUTE40",
-  "name": "JohtoRoute40",
-  "layout": "LAYOUT_JOHTO_ROUTE40",
-  "music": "MUS_HG_ROUTE42",
-  "region_map_section": "MAPSEC_JOHTO_ROUTE_40",
+  "id": "MAP_JOHTO_ROUTE50",
+  "name": "JohtoRoute50",
+  "layout": "LAYOUT_JOHTO_ROUTE50",
+  "music": "MUS_CV_DOS_BLOODY_TEARS",
+  "region_map_section": "MAPSEC_JOHTO_ROUTE_50",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_JOHTO_ROUTE41",
-      "offset": -18,
+      "map": "MAP_JOHTO_ROUTE49",
+      "offset": 0,
       "direction": "down"
     },
     {
       "map": "MAP_ROUTE130",
       "offset": 0,
-      "direction": "up"
+      "direction": "right"
     }
   ],
   "object_events": [

@@ -24,8 +24,8 @@
       "direction": "down"
     },
     {
-      "map": "MAP_SAFARI_ZONE_NORTHEAST",
-      "offset": 0,
+      "map": "MAP_LITTLEROOT_TOWN",
+      "offset": 10,
       "direction": "right"
     }
   ],

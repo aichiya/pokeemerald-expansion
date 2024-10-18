@@ -17,6 +17,11 @@
       "map": "MAP_LITTLEROOT_TOWN",
       "offset": -16,
       "direction": "down"
+    },
+    {
+      "map": "MAP_JOHTO_ROUTE50",
+      "offset": 0,
+      "direction": "up"
     }
   ],
   "object_events": [

@@ -22,6 +22,16 @@
       "map": "MAP_JOHTO_ROUTE49",
       "offset": 16,
       "direction": "up"
+    },
+    {
+      "map": "MAP_SAFARI_ZONE_SOUTH",
+      "offset": 30,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_SAFARI_ZONE_NORTH",
+      "offset": -10,
+      "direction": "left"
     }
   ],
   "object_events": [

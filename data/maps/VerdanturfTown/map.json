@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_JOHTO_ROUTE47",
-      "offset": 0,
+      "offset": 20,
       "direction": "left"
     },
     {
       "map": "MAP_JOHTO_ROUTE41",
-      "offset": 5,
+      "offset": 4,
       "direction": "right"
     }
   ],

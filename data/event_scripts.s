@@ -1091,3 +1091,5 @@ EventScript_StartsLightOrbsUp::
 	.include "data/maps/JohtoRoute40/scripts.inc"
 
 	.include "data/maps/JohtoRoute49/scripts.inc"
+
+	.include "data/maps/JohtoRoute50/scripts.inc"

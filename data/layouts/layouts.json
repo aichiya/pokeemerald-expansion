@@ -2624,8 +2624,8 @@
     {
       "id": "LAYOUT_ROUTE130",
       "name": "Route130_Layout",
-      "width": 80,
-      "height": 40,
+      "width": 40,
+      "height": 80,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Route130/border.bin",
@@ -4445,7 +4445,7 @@
       "id": "LAYOUT_JOHTO_ROUTE40",
       "name": "JohtoRoute40_Layout",
       "width": 32,
-      "height": 60,
+      "height": 200,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/JohtoRoute40/border.bin",
@@ -4460,6 +4460,16 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/JohtoRoute49/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute49/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE50",
+      "name": "JohtoRoute50_Layout",
+      "width": 136,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/JohtoRoute50/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute50/map.bin"
     }
   ]
 }

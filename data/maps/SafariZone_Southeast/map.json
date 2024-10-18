@@ -14,11 +14,6 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_SAFARI_ZONE_SOUTH",
-      "offset": 0,
-      "direction": "left"
-    },
-    {
       "map": "MAP_SAFARI_ZONE_NORTHEAST",
       "offset": 0,
       "direction": "up"
@@ -91,8 +86,12 @@
       "flag": "FLAG_HIDE_SAFARI_ZONE_SOUTH_EAST_EXPANSION"
     }
   ],
-  "warp_events": [],
-  "coord_events": [],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "hidden_item",

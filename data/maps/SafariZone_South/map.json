@@ -24,8 +24,8 @@
       "direction": "left"
     },
     {
-      "map": "MAP_SAFARI_ZONE_SOUTHEAST",
-      "offset": 0,
+      "map": "MAP_LITTLEROOT_TOWN",
+      "offset": -30,
       "direction": "right"
     }
   ],
@@ -118,6 +118,10 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
 }

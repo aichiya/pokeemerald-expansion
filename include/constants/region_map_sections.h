@@ -45,12 +45,12 @@
 #define MAPSEC_JAVA_SEMARANG            0x29
 #define MAPSEC_JAVA_SURABAYA            0x2A
 #define MAPSEC_JAVA_JAKARTA             0x2B
-#define MAPSEC_0X2C                         0x2C
-#define MAPSEC_0X2D                         0x2D
-#define MAPSEC_0X2E                         0x2E
-#define MAPSEC_0X2F                         0x2F
-#define MAPSEC_0X30                         0x30
-#define MAPSEC_0X31                         0x31
+#define MAPSEC_JOHTO_ROUTE_48_POKEMON_CENTER 0x2C
+#define MAPSEC_JOHTO_NOBELESSE_CITY     0x2D
+#define MAPSEC_0X2E                     0x2E
+#define MAPSEC_0X2F                     0x2F
+#define MAPSEC_0X30                     0x30
+#define MAPSEC_0X31                     0x31
 #define MAPSEC_JOHTO_ROUTE_23           0x32
 #define MAPSEC_JOHTO_ROUTE_26           0x33
 #define MAPSEC_JOHTO_ROUTE_27           0x34
@@ -59,7 +59,7 @@
 #define MAPSEC_JOHTO_ROUTE_30           0x37
 #define MAPSEC_JOHTO_ROUTE_31           0x38
 #define MAPSEC_JOHTO_ROUTE_32           0x39
-#define MAPSEC_BATTLE_FRONTIER              0x3A
+#define MAPSEC_BATTLE_FRONTIER          0x3A
 #define MAPSEC_JOHTO_ROUTE_33           0x3B
 #define MAPSEC_JOHTO_ROUTE_34           0x3C
 #define MAPSEC_JOHTO_ROUTE_35           0x3D
@@ -74,21 +74,21 @@
 #define MAPSEC_JOHTO_ROUTE_44           0x46
 #define MAPSEC_JOHTO_ROUTE_45           0x47
 #define MAPSEC_JOHTO_ROUTE_46           0x48
-#define MAPSEC_BATTLE_TOWER                 0x49
-#define MAPSEC_BATTLE_FACTORY               0x4A
-#define MAPSEC_BATTLE_ARENA                 0x4B
-#define MAPSEC_BATTLE_DOME                  0x4C
-#define MAPSEC_BATTLE_PIKE                  0x4D
-#define MAPSEC_BATTLE_PALACE                0x4E
-#define MAPSEC_BATTLE_PYRAMID               0x4F
+#define MAPSEC_BATTLE_TOWER             0x49
+#define MAPSEC_BATTLE_FACTORY           0x4A
+#define MAPSEC_BATTLE_ARENA             0x4B
+#define MAPSEC_BATTLE_DOME              0x4C
+#define MAPSEC_BATTLE_PIKE              0x4D
+#define MAPSEC_BATTLE_PALACE            0x4E
+#define MAPSEC_BATTLE_PYRAMID           0x4F
 #define MAPSEC_JOHTO_ROUTE_47           0x50
 #define MAPSEC_JOHTO_ROUTE_48           0x51
 #define MAPSEC_JOHTO_ROUTE_49           0x52
 #define MAPSEC_JOHTO_ROUTE_50           0x53
 #define MAPSEC_JOHTO_SPROUT_TOWER       0x54
 #define MAPSEC_JOHTO_BELL_TOWER         0x55
-#define MAPSEC_SECRET_BASE                  0x56
-#define MAPSEC_DYNAMIC                      0x57
+#define MAPSEC_SECRET_BASE              0x56
+#define MAPSEC_DYNAMIC                  0x57
 #define MAPSEC_JOHTO_BURNED_TOWER       0x58
 #define MAPSEC_JOHTO_NATIONAL_PARK      0x59
 #define MAPSEC_JOHTO_RADIO_TOWER        0x5A
@@ -214,8 +214,8 @@
 #define MAPSEC_JAVA_LOST_AGE2           0xD2
 #define MAPSEC_JAVA_LOST_AGE3           0xD3
 #define MAPSEC_JAVA_LOST_AGE4           0xD4
-#define MAPSEC_0XD5                         0xD5	
-#define MAPSEC_0XD6                         0xD6	
+#define MAPSEC_JOHTO_ROUTE_51           0xD5	
+#define MAPSEC_JOHTO_SEA_DRAGON_PALACE  0xD6	
 #define MAPSEC_0XD7                         0xD7	
 #define MAPSEC_0XD8                         0xD8	
 #define MAPSEC_0XD9                         0xD9	
@@ -259,7 +259,7 @@
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF
 
-#define KANTO_MAPSEC_START  MAPSEC_0XD5
+#define KANTO_MAPSEC_START  MAPSEC_0XD7
 #define KANTO_MAPSEC_END    MAPSEC_0XDF
 #define KANTO_MAPSEC_COUNT (KANTO_MAPSEC_END - KANTO_MAPSEC_START + 1)
 

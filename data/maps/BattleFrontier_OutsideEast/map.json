@@ -17,11 +17,6 @@
       "map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
       "offset": 0,
       "direction": "left"
-    },
-    {
-      "map": "MAP_JOHTO_ROUTE40",
-      "offset": 40,
-      "direction": "down"
     }
   ],
   "object_events": [

@@ -3233,7 +3233,14 @@ static void BufferMonTrainerMemo(void)
         {
             if (sum->metGame == 0)
             {
-                text = gText_MetLocationPlacholder;
+                if (sum->metLocation == MAPSEC_ETC_TRIMMED_GENSOKYO)
+                {
+                    text = gText_DebugLocationTrimmedGensokyo;
+                }
+                else
+                {
+                    text = gText_MetLocationPlacholder;
+                }
             }
             else if (sum->metGame == VERSION_RUBY
                 || sum->metGame == VERSION_SAPPHIRE
@@ -5429,7 +5436,14 @@ static void BufferMonTrainerMemo(void)
         }
         else if (sum->metGame == 0)
         {
-            text = gText_ApparentlyTrimmedGensokyoGeneric;
+            if (sum->metLocation == MAPSEC_ETC_TRIMMED_GENSOKYO)
+            {
+                text = gText_ApparentlyTrimmedGensokyoGeneric;
+            }
+            else
+            {
+                text = gText_MetLocationPlacholder;
+            }
         }
         else if (sum->metGame == VERSION_RUBY
             || sum->metGame == VERSION_SAPPHIRE

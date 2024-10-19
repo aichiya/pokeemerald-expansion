@@ -649,5 +649,7 @@ extern const u8 Common_Movement_FollowerSafeStart[];
 extern const u8 Common_Movement_FollowerSafeEnd[];
 
 extern const u8 EventScript_StartsLightOrbsUp[];
+extern const u8 EventScript_TrimmedGensokyoWaterEncounter[];
+extern const u8 EventScript_TrimmedGensokyoLandEncounter[];
 
 #endif // GUARD_EVENT_SCRIPTS_H

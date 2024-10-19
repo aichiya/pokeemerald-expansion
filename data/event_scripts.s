@@ -56,6 +56,8 @@
 #include "constants/union_room.h"
 #include "constants/vars.h"
 #include "constants/weather.h"
+#include "constants/region_map_sections.h"
+
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
 	.include "constants/constants.inc"
@@ -1025,6 +1027,26 @@ EventScript_StartsLightOrbsUp::
 	release
 	end
 
+EventScript_TrimmedGensokyoWaterEncounter::
+    lockall
+	setvar VAR_GIFTMON_METLOC_SETTING, MAPSEC_ETC_TRIMMED_GENSOKYO
+	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_SPECIAL_GIFT
+	setvar VAR_GIFTMON_OT_SETTING, 69
+	setwildbattle SPECIES_STARYU, 30, ITEM_STAR_PIECE
+	dowildbattle
+	releaseall
+	end
+
+EventScript_TrimmedGensokyoLandEncounter::
+    lockall
+	setvar VAR_GIFTMON_METLOC_SETTING, MAPSEC_ETC_TRIMMED_GENSOKYO
+	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_SPECIAL_GIFT
+	setvar VAR_GIFTMON_OT_SETTING, 69
+	setwildbattle SPECIES_EEVEE, 30, ITEM_STAR_PIECE
+	dowildbattle
+	releaseall
+	end
+
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"
 	.include "data/scripts/abnormal_weather.inc"
@@ -1093,3 +1115,5 @@ EventScript_StartsLightOrbsUp::
 	.include "data/maps/JohtoRoute49/scripts.inc"
 
 	.include "data/maps/JohtoRoute50/scripts.inc"
+
+	.include "data/maps/TrimmedGensokyo/scripts.inc"

@@ -4470,6 +4470,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/JohtoRoute50/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute50/map.bin"
+    },
+    {
+      "id": "LAYOUT_TRIMMED_GENSOKYO",
+      "name": "TrimmedGensokyo_Layout",
+      "width": 86,
+      "height": 86,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/TrimmedGensokyo/border.bin",
+      "blockdata_filepath": "data/layouts/TrimmedGensokyo/map.bin"
     }
   ]
 }

@@ -2941,3 +2941,4 @@ const u8 gText_Censored3[] = _("{EMOJI_SQUARE}{EMOJI_SQUARE}{EMOJI_SQUARE}");
 const u8 gText_YouCantReleaseThisMon[] = _("Can't release this Fragment.");
 const u8 gText_MetLocationPlacholder[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nGame ID {DYNAMIC 0}0{DYNAMIC 1} is reserved\nfor shenanigans.");
 const u8 gText_ApparentlyTrimmedGensokyoGeneric[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\napparently met at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\n{DYNAMIC 0}The Trimmed Gensokyo{DYNAMIC 1}.");
+const u8 gText_DebugLocationTrimmedGensokyo[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\nDebug Location: {DYNAMIC 0}Gensokyo\nthat Got Trimmed Too Much{DYNAMIC 1}.");

@@ -38,6 +38,8 @@
 #include "constants/trainer_hill.h"
 #include "field_weather.h"
 #include "constants/weather.h"
+#include "wild_encounter.h"
+#include "random.h"
 
 static EWRAM_DATA u8 sWildEncounterImmunitySteps = 0;
 static EWRAM_DATA u16 sPrevMetatileBehavior = 0;
@@ -631,6 +633,22 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
         {
             ScriptContext_SetupScript(EventScript_StartsLightOrbsUp);
             return TRUE;
+        }
+        if (Random() % 100 <= 4
+          && GetCurrentRegionMapSectionId() == MAPSEC_ETC_TRIMMED_GENSOKYO
+          && !(gMapHeader.mapType == MAP_TYPE_SECRET_BASE || gMapHeader.mapType == MAP_TYPE_INDOOR || gMapHeader.mapType == MAP_TYPE_NONE))
+        {
+            if (MetatileBehavior_IsWaterWildEncounter(metatileBehavior) == TRUE
+              || (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING) && MetatileBehavior_IsBridgeOverWater(metatileBehavior) == TRUE))
+            {
+                ScriptContext_SetupScript(EventScript_TrimmedGensokyoWaterEncounter);
+                return TRUE;
+            }
+            else
+            {
+                ScriptContext_SetupScript(EventScript_TrimmedGensokyoLandEncounter);
+                return TRUE;
+            }
         }
     }
 

@@ -1183,6 +1183,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     u8 availableIVs[NUM_STATS];
     u8 selectedIvs[LEGENDARY_PERFECT_IV_COUNT];
     bool32 isShiny;
+    u8 gameMet;
 
     if(GetCurrentWeather() == WEATHER_LIGHT_ORB_UP)
     {
@@ -1272,12 +1273,19 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     SetBoxMonData(boxMon, MON_DATA_MET_LEVEL, &level);
     if (FlagGet(FLAG_IDENTIFIER_NEGA_WORLD))
     {
-        u8 gameMet = VERSION_IDENTIFIER_NEGA;
+        gameMet = VERSION_IDENTIFIER_NEGA;
         SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
     }
     else
     {
         SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gGameVersion);
+    }
+    if (VarGet(VAR_GIFTMON_METLOC_SETTING) == MAPSEC_ETC_TRIMMED_GENSOKYO
+      || VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_SPECIAL_GIFT
+      || VarGet(VAR_GIFTMON_OT_SETTING) == 69)
+    {
+        gameMet = VERSION_ZERO;
+        SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
     }
     value = ITEM_POKE_BALL;
     SetBoxMonData(boxMon, MON_DATA_POKEBALL, &value);
@@ -1379,6 +1387,9 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
 
     GiveBoxMonInitialMoveset(boxMon);
     FlagClear(FLAG_FORCE_SHINY);
+    VarSet(VAR_GIFTMON_METLOC_SETTING, 0);
+    VarSet(VAR_GIFTMON_OT_SETTING, 0);
+    VarSet(VAR_GIFTMON_VERSION_SETTING, 0);
 }
 
 void CreateMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 nature)
@@ -1859,6 +1870,13 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
             SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
             VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
             u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 69)
+        {
+            u8 location = MAPSEC_ETC_TRIMMED_GENSOKYO;
+            SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &location);
+            u8 gameMet = VERSION_ZERO;
             SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gameMet);
         }
     }

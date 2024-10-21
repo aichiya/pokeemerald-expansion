@@ -17,7 +17,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 77,
+      "y": 60,
+      "elevation": 0,
+      "dest_map": "MAP_TRIMMED_GENSOKYO",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 59,
+      "y": 65,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

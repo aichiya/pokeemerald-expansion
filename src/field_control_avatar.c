@@ -634,7 +634,7 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(EventScript_StartsLightOrbsUp);
             return TRUE;
         }
-        if (Random() % 100 <= 4
+        if (Random() % 100 <= 2
           && GetCurrentRegionMapSectionId() == MAPSEC_ETC_TRIMMED_GENSOKYO
           && !(gMapHeader.mapType == MAP_TYPE_SECRET_BASE || gMapHeader.mapType == MAP_TYPE_INDOOR || gMapHeader.mapType == MAP_TYPE_NONE))
         {

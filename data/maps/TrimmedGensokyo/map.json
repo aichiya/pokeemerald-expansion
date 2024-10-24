@@ -196,7 +196,7 @@
     },
     {
       "x": 1,
-      "y": 79,
+      "y": 80,
       "elevation": 0,
       "dest_map": "MAP_TRIMMED_GENSOKYO",
       "dest_warp_id": "0"
@@ -220,14 +220,14 @@
       "y": 79,
       "elevation": 0,
       "dest_map": "MAP_TRIMMED_GENSOKYO",
-      "dest_warp_id": "0"
+      "dest_warp_id": "36"
     },
     {
       "x": 45,
       "y": 80,
       "elevation": 0,
       "dest_map": "MAP_TRIMMED_GENSOKYO",
-      "dest_warp_id": "0"
+      "dest_warp_id": "36"
     },
     {
       "x": 12,
@@ -319,6 +319,13 @@
       "elevation": 0,
       "dest_map": "MAP_TRIMMED_GENSOKYO",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 54,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_TRIMMED_GENSOKYO",
+      "dest_warp_id": "21"
     }
   ],
   "coord_events": [

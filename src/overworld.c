@@ -860,7 +860,7 @@ if (I_VS_SEEKER_CHARGING != 0)
     }
     else
     {
-        if (gMapHeader.regionMapSectionId != MAPSEC_BATTLE_FRONTIER
+        if (gMapHeader.regionMapSectionId != MAPSEC_ETC_TRIMMED_GENSOKYO
          || gMapHeader.regionMapSectionId != sLastMapSectionId)
             ShowMapNamePopup();
     }

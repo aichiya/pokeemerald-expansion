@@ -2360,7 +2360,7 @@ s32 GetDrainedBigRootHp(u32 battler, s32 hp)
 
 static inline bool32 IsBattlerProtectedByMagicGuard(u32 battler, u32 ability)
 {
-    if (!(ability = ABILITY_MAGIC_GUARD || ability = ABILITY_FANTASY_BREAKER))
+    if (!(ability == ABILITY_MAGIC_GUARD || ability == ABILITY_FANTASY_BREAKER))
         return FALSE;
 
     RecordAbilityBattle(battler, ability);
@@ -2494,7 +2494,7 @@ u8 DoBattlerEndTurnEffects(void)
             if ((gStatuses3[battler] & STATUS3_LEECHSEED)
              && IsBattlerAlive(gStatuses3[battler] & STATUS3_LEECHSEED_BATTLER)
              && IsBattlerAlive(battler)
-             && ability != ABILITY_PURE_WHITE)
+             && ability != ABILITY_PURE_WHITE
              && !IsBattlerProtectedByMagicGuard(battler, ability))
             {
                 gBattlerTarget = gStatuses3[battler] & STATUS3_LEECHSEED_BATTLER; // Notice gBattlerTarget is actually the HP receiver.
@@ -2608,7 +2608,7 @@ u8 DoBattlerEndTurnEffects(void)
         case ENDTURN_BURN:  // burn
             if ((gBattleMons[battler].status1 & STATUS1_BURN)
              && IsBattlerAlive(battler)
-             && ability != ABILITY_PURE_WHITE)
+             && ability != ABILITY_PURE_WHITE
              && !IsBattlerProtectedByMagicGuard(battler, ability))
             {
                 gBattleMoveDamage = GetNonDynamaxMaxHP(battler) / (B_BURN_DAMAGE >= GEN_7 ? 16 : 8);
@@ -2628,7 +2628,7 @@ u8 DoBattlerEndTurnEffects(void)
         case ENDTURN_FROSTBITE:  // burn
             if ((gBattleMons[battler].status1 & STATUS1_FROSTBITE)
              && IsBattlerAlive(battler)
-             && ability != ABILITY_PURE_WHITE)
+             && ability != ABILITY_PURE_WHITE
              && !IsBattlerProtectedByMagicGuard(battler, ability))
             {
                 gBattleMoveDamage = GetNonDynamaxMaxHP(battler) / (B_BURN_DAMAGE >= GEN_7 ? 16 : 8);
@@ -2642,7 +2642,7 @@ u8 DoBattlerEndTurnEffects(void)
         case ENDTURN_NIGHTMARES:  // spooky nightmares
             if ((gBattleMons[battler].status2 & STATUS2_NIGHTMARE)
              && IsBattlerAlive(battler)
-             && ability != ABILITY_PURE_WHITE)
+             && ability != ABILITY_PURE_WHITE
              && !IsBattlerProtectedByMagicGuard(battler, ability))
             {
                 // R/S does not perform this sleep check, which causes the nightmare effect to
@@ -2665,7 +2665,7 @@ u8 DoBattlerEndTurnEffects(void)
         case ENDTURN_CURSE:  // curse
             if ((gBattleMons[battler].status2 & STATUS2_CURSED)
              && IsBattlerAlive(battler)
-             && ability != ABILITY_PURE_WHITE)
+             && ability != ABILITY_PURE_WHITE
              && !IsBattlerProtectedByMagicGuard(battler, ability))
             {
                 gBattleMoveDamage = GetNonDynamaxMaxHP(battler) / 4;

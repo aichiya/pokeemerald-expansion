@@ -272,7 +272,7 @@ mus_etc_hana_ni_natte_0_35:
 @ 062   ----------------------------------------
         .byte   W96
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_0_LOOP
         .byte   FINE
@@ -511,7 +511,7 @@ mus_etc_hana_ni_natte_1_20:
 @ 062   ----------------------------------------
         .byte   W96
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_1_LOOP
         .byte   FINE
@@ -851,7 +851,7 @@ mus_etc_hana_ni_natte_2_50:
 @ 062   ----------------------------------------
         .byte   W96
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_2_LOOP
         .byte   FINE
@@ -1148,7 +1148,7 @@ mus_etc_hana_ni_natte_3_45:
 @ 062   ----------------------------------------
         .byte   W96
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_3_LOOP
         .byte   FINE
@@ -1519,7 +1519,7 @@ mus_etc_hana_ni_natte_4_39:
 @ 062   ----------------------------------------
         .byte   W96
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_4_LOOP
         .byte   FINE
@@ -2194,7 +2194,7 @@ mus_etc_hana_ni_natte_5_48:
 @ 062   ----------------------------------------
         .byte   W96
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_5_LOOP
         .byte   FINE
@@ -2551,7 +2551,7 @@ mus_etc_hana_ni_natte_6_41:
         .byte                   Gn3
         .byte   W12
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_6_LOOP
         .byte   FINE
@@ -2899,7 +2899,7 @@ mus_etc_hana_ni_natte_7_60:
         .byte                   Gn3
         .byte   W12
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_7_LOOP
         .byte   FINE
@@ -3275,7 +3275,7 @@ mus_etc_hana_ni_natte_8_34:
         .byte           N23   , Dn3
         .byte   W12
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_8_LOOP
         .byte   FINE
@@ -3614,7 +3614,7 @@ mus_etc_hana_ni_natte_9_LOOP:
         .byte           N23   , Gn3
         .byte   W12
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_9_LOOP
         .byte   FINE
@@ -4511,7 +4511,7 @@ mus_etc_hana_ni_natte_10_50:
         .byte           N24   , Cn1
         .byte   W36
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_10_LOOP
         .byte   FINE
@@ -4891,7 +4891,7 @@ mus_etc_hana_ni_natte_11_48:
 @ 062   ----------------------------------------
         .byte   W96
 @ 063   ----------------------------------------
-        .byte   W11
+        .byte   W24
         .byte   GOTO
          .word  mus_etc_hana_ni_natte_11_LOOP
         .byte   FINE

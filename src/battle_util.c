@@ -10028,7 +10028,14 @@ static inline u32 CalcDefenseStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 
         spDef = gBattleMons[battlerDef].spDefense;
     }
 
-    if (gMovesInfo[move].effect == EFFECT_PSYSHOCK || IS_MOVE_PHYSICAL(move)) // uses defense stat instead of sp.def
+
+    if (gMovesInfo[move].effect == EFFECT_REVERSE_PSYSHOCK && IS_MOVE_PHYSICAL(move))
+    {
+        defStat = spDef;
+        defStage = gBattleMons[battlerDef].statStages[STAT_SPDEF];
+        usesDefStat = FALSE;
+    }
+    else if (gMovesInfo[move].effect == EFFECT_PSYSHOCK || IS_MOVE_PHYSICAL(move)) // uses defense stat instead of sp.def
     {
         defStat = def;
         defStage = gBattleMons[battlerDef].statStages[STAT_DEF];

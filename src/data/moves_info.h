@@ -9922,11 +9922,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Force Palm"),
         .description = COMPOUND_STRING(
-            "A shock wave attack that\n"
-            "may paralyze the foe."),
-        .effect = EFFECT_HIT,
+            "The foe uses Sp.Def.\n"
+            "May paralyze the foe."),
+        .effect = EFFECT_REVERSE_PSYSHOCK,
         .power = 60,
-        .type = TYPE_FIGHTING,
+        .type = TYPE_NEW_DREAM,
         .accuracy = 100,
         .pp = 10,
         .target = MOVE_TARGET_SELECTED,
@@ -14628,10 +14628,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_KINGS_SHIELD] =
     {
-        .name = HANDLE_EXPANDED_MOVE_NAME("King'sShield", "King's Shield"),
+        .name = HANDLE_EXPANDED_MOVE_NAME("Klein Field", "Klein Field"),
         .description = COMPOUND_STRING(
             "Evades damage, and sharply\n"
-            "reduces Attack if struck."),
+            "reduces accuracy if struck."),
         .effect = EFFECT_PROTECT,
         .power = 0,
         .type = TYPE_STEEL,

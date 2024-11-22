@@ -1329,9 +1329,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_STANCE_CHANGE] =
     {
     #if B_EXPANDED_ABILITY_NAMES == TRUE
-        .name = _("Stance Change"),
+        .name = _("Saboten Shift"),
     #else
-        .name = _("StanceChange"),
+        .name = _("Saboten S."),
     #endif
         .description = COMPOUND_STRING("Transforms as it battles."),
         .aiRating = 10,

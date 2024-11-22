@@ -18089,63 +18089,63 @@ Move_RAGING_DEMON::
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_MEGA_KICK2, +63
 	delay 10
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 0
+	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 8, 0
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_COMET_PUNCH, +63
-	delay 10
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 0
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
-	playsewithpan SE_M_VITAL_THROW2, +63
-	delay 10
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 0
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
-	playsewithpan SE_M_MEGA_KICK2, +63
-	delay 10
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 0
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
-	playsewithpan SE_M_COMET_PUNCH, +63
-	delay 10
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 0
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
-	playsewithpan SE_M_VITAL_THROW2, +63
-	delay 10
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 0
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
-	playsewithpan SE_M_MEGA_KICK2, +63
-	delay 10
-
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 9, 0
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
-	playsewithpan SE_M_COMET_PUNCH, +63
-	delay 9
+	delay 8
 	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 8, 0
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_VITAL_THROW2, +63
 	delay 8
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 7, 0
+	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 8, 0
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_MEGA_KICK2, +63
-	delay 7
+	delay 8
 	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 6, 0
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_COMET_PUNCH, +63
 	delay 6
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 5, 0
+	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 6, 0
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_VITAL_THROW2, +63
-	delay 5
+	delay 6
+	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 6, 0
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
+	playsewithpan SE_M_MEGA_KICK2, +63
+	delay 6
+
+	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 4, 0
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
+	playsewithpan SE_M_COMET_PUNCH, +63
+	delay 4
+	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 4, 0
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
+	playsewithpan SE_M_VITAL_THROW2, +63
+	delay 4
 	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 4, 0
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_MEGA_KICK2, +63
 	delay 4
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 3, 0
+	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 2, 0
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_COMET_PUNCH, +63
-	delay 3
+	delay 2
 	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 2, 0
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_VITAL_THROW2, +63
 	delay 2
+	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 2, 0
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
+	playsewithpan SE_M_MEGA_KICK2, +63
+	delay 2
+	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 1, 0
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
+	playsewithpan SE_M_COMET_PUNCH, +63
+	delay 1
+	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 1, 0
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
+	playsewithpan SE_M_VITAL_THROW2, +63
+	delay 1
 	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 0
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
 	playsewithpan SE_M_MEGA_KICK2, +63

@@ -2889,7 +2889,7 @@ gCryTable_Reverse::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MEWTWO
 .if P_FAMILY_MEW == TRUE
-	cry_reverse Cry_THTenshiLine
+	cry_reverse Cry_THKanakoLine
 .endif @ P_FAMILY_MEW
 .if P_FAMILY_CHIKORITA == TRUE
 	cry_reverse Cry_Chikorita

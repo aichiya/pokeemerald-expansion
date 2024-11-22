@@ -20876,6 +20876,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = Move_SPIRIT_CAMERA,
     },
 
+    [MOVE_RAGING_DEMON] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("Isshun 1K", "Isshun Sengeki"),
+        .description = COMPOUND_STRING(
+            "The foe's uses Sp.Def.\n"
+            "May lower Sp. Atk."),
+        .effect = EFFECT_REVERSE_PSYSHOCK,
+        .power = 100,
+        .type = TYPE_NEW_DREAM,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
+            .chance = 50,
+        }),
+        .battleAnimScript = Move_RAGING_DEMON,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

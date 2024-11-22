@@ -20881,7 +20881,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = HANDLE_EXPANDED_MOVE_NAME("Isshun 1K", "Isshun Sengeki"),
         .description = COMPOUND_STRING(
             "The foe's uses Sp.Def.\n"
-            "May lower Sp. Atk."),
+            "May lower the foe's Sp. Def."),
         .effect = EFFECT_REVERSE_PSYSHOCK,
         .power = 100,
         .type = TYPE_NEW_DREAM,

@@ -2275,6 +2275,9 @@ SECTIONS {
         sound/songs/mus_etc_hana_ni_natte.o(.rodata);
         sound/songs/mus_th_iro_wa_nioedo_cut.o(.rodata);
         sound/songs/mus_ff6_vs_boss.o(.rodata);
+        sound/songs/mus_fate_hikari.o(.rodata);
+        sound/songs/mus_ls_kanata_kara_piano.o(.rodata);
+        sound/songs/mus_sny_mikuru.o(.rodata);
     } > ROM =0
 
     lib_rodata :

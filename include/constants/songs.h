@@ -1593,8 +1593,11 @@
 #define MUS_ETC_HANA_NI_NATTE 1620
 #define MUS_TH_IRO_WA_NIOEDO_CUT 1621
 #define MUS_FF6_VS_BOSS 1622
+#define MUS_FATE_HIKARI 1623
+#define MUS_LS_KANATA_KARA 1624
+#define MUS_SNY_MIKURU 1625
 
-#define END_MUS 					MUS_FF6_VS_BOSS
+#define END_MUS 					MUS_SNY_MIKURU
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

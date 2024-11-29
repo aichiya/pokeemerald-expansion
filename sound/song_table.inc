@@ -1624,6 +1624,9 @@ gSongTable::
 	song mus_etc_hana_ni_natte, 0, 0
 	song mus_th_iro_wa_nioedo_cut, 0, 0
 	song mus_ff6_vs_boss, 0, 0
+	song mus_fate_hikari, 0, 0
+	song mus_ls_kanata_kara_piano, 0, 0
+	song mus_sny_mikuru, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -194,7 +194,7 @@ gCryTable::
 	cry Cry_SlowbroMega
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GALARIAN_FORMS == TRUE
-	cry Cry_SlowpokeGalarian
+	cry Cry_SlowpokeGalar
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_SLOWPOKE
 .if P_FAMILY_MAGNEMITE == TRUE
@@ -2622,7 +2622,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_SlowbroMega
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GALARIAN_FORMS == TRUE
-	cry_reverse Cry_SlowpokeGalarian
+	cry_reverse Cry_SlowpokeGalar
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_SLOWPOKE
 .if P_FAMILY_MAGNEMITE == TRUE

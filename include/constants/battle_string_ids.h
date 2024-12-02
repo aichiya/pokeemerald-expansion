@@ -712,18 +712,34 @@
 #define STRINGID_FOGLIFTED                            710
 #define STRINGID_PKMNMADESHELLGLEAM                   711
 #define STRINGID_FICKLEBEAMDOUBLED                    712
+#define STRINGID_COMMANDERACTIVATES                   713
+#define STRINGID_POKEFLUTECATCHY                      714
+#define STRINGID_POKEFLUTE                            715
+#define STRINGID_MONHEARINGFLUTEAWOKE                 716
+#define STRINGID_SUNLIGHTISHARSH                      717
+#define STRINGID_ITISHAILING                          718
+#define STRINGID_ITISSNOWING                          719
+#define STRINGID_ISCOVEREDWITHGRASS                   720
+#define STRINGID_MISTSWIRLSAROUND                     721
+#define STRINGID_ELECTRICCURRENTISRUNNING             722
+#define STRINGID_SEEMSWEIRD                           723
+#define STRINGID_WAGGLINGAFINGER                      724
 
-#define STRINGID_FANTASYBREAKERENTERS                 713
-#define STRINGID_YORIGAMICURSE                        714
-#define STRINGID_PKMNRAISEDEVASION                    715
-#define STRINGID_TIMEJACKERENTERS                     716
-#define STRINGID_LEECHSEEDHEALSABILITYPUREWHITE       717
-#define STRINGID_PKMNFLUFFIEDINTO                     718
-#define STRINGID_PARTYGOTWIPEDOUT                     719
-#define STRINGID_PKMNCUTSSPATTACKWITH                 720
-#define STRINGID_PKMNISWISHING                        721
+#define STRINGID_LAST_EXPANSION                       STRINGID_WAGGLINGAFINGER
 
-#define BATTLESTRINGS_COUNT                           722
+#define STRINGID_FANTASYBREAKERENTERS                 (STRINGID_LAST_EXPANSION + 1)
+#define STRINGID_YORIGAMICURSE                        (STRINGID_LAST_EXPANSION + 2)
+#define STRINGID_PKMNRAISEDEVASION                    (STRINGID_LAST_EXPANSION + 3)
+#define STRINGID_TIMEJACKERENTERS                     (STRINGID_LAST_EXPANSION + 4)
+#define STRINGID_LEECHSEEDHEALSABILITYPUREWHITE       (STRINGID_LAST_EXPANSION + 5)
+#define STRINGID_PKMNFLUFFIEDINTO                     (STRINGID_LAST_EXPANSION + 6)
+#define STRINGID_PARTYGOTWIPEDOUT                     (STRINGID_LAST_EXPANSION + 7)
+#define STRINGID_PKMNCUTSSPATTACKWITH                 (STRINGID_LAST_EXPANSION + 8)
+#define STRINGID_PKMNISWISHING                        (STRINGID_LAST_EXPANSION + 9)
+
+#define STRINGID_LAST_CUSTOM_ADDED                    STRINGID_PKMNISWISHING
+
+#define BATTLESTRINGS_COUNT                           (STRINGID_LAST_CUSTOM_ADDED + 1)
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

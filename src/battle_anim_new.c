@@ -99,7 +99,6 @@ static void SpriteCB_GlacialLance_Step1(struct Sprite* sprite);
 static void SpriteCB_GlacialLance_Step2(struct Sprite* sprite);
 static void SpriteCB_GlacialLance(struct Sprite* sprite);
 static void SpriteCB_TripleArrowKick(struct Sprite* sprite);
-static void AnimMakingItRain(struct Sprite *sprite);
 
 static void AnimDimensionShotWalls(struct Sprite *);
 static void AnimDimensionShotWalls_Step(struct Sprite *);
@@ -2179,18 +2178,7 @@ const struct SpriteTemplate gSpiritShackleArrowTemplate =
     .anims = gDummySpriteAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSonicBoomProjectile
-};
-
-const struct SpriteTemplate gSpiritShackleChainTemplate =
-{
-    .tileTag = ANIM_TAG_CHAIN_LINK,
-    .paletteTag = ANIM_TAG_CHAIN_LINK,
-    .oam = &gOamData_AffineOff_ObjNormal_32x16,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimThunderWave
+    .callback = AnimTranslateStinger
 };
 
 //darkest lariat
@@ -7390,6 +7378,39 @@ const struct SpriteTemplate gMoonUpSpriteTemplate =
     .callback = AnimWeatherBallUp,
 };
 
+const union AnimCmd gSproutAnimCmds[] =
+{
+    ANIMCMD_FRAME(96, 5),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gSproutAnimTable[] =
+{
+    gSproutAnimCmds,
+};
+
+const struct SpriteTemplate gSproutGrowSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPROUT,
+    .paletteTag = ANIM_TAG_SPROUT,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gSproutAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteOnMonPos,
+};
+
+const struct SpriteTemplate gFreezyFrostRisingSpearSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ICICLE_SPEAR,
+    .paletteTag = ANIM_TAG_ICICLE_SPEAR,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_GeyserTarget
+};
+
 // functions
 //general
 void AnimTask_IsTargetPartner(u8 taskId)
@@ -7406,7 +7427,7 @@ static u8 LoadBattleAnimTarget(u8 arg)
 {
     u8 battler;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+    if (IsDoubleBattle())
     {
         switch (gBattleAnimArgs[arg])
         {
@@ -7437,7 +7458,7 @@ static u8 LoadBattleAnimTarget(u8 arg)
 
 static u8 GetProperCentredCoord(u8 battler, u8 coordType)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+    if (IsDoubleBattle())
         return (GetBattlerSpriteCoord2(battler, coordType) + GetBattlerSpriteCoord2(BATTLE_PARTNER(battler), coordType)) / 2;
 
     return GetBattlerSpriteCoord(battler, coordType);
@@ -7627,14 +7648,14 @@ static void SpriteCB_SpriteToCentreOfSide(struct Sprite *sprite)
 
         if (gBattleAnimArgs[2] == 0) //Attacker
         {
-            if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+            if (IsDoubleBattle())
                 InitSpritePosToAnimAttackersCentre(sprite, var);
             else
                 InitSpritePosToAnimAttacker(sprite, var);
         }
         else
         {
-            if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+            if (IsDoubleBattle())
                 InitSpritePosToAnimTargetsCentre(sprite, var);
             else
                 InitSpritePosToAnimTarget(sprite, var);
@@ -7718,7 +7739,7 @@ static void SpriteCB_GrowingSuperpower(struct Sprite *sprite)
 
 static void SpriteCB_CentredSpiderWeb(struct Sprite *sprite)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+    if (IsDoubleBattle())
         InitSpritePosToAnimTargetsCentre(sprite, FALSE);
     else
         InitSpritePosToAnimTarget(sprite, FALSE);
@@ -7732,14 +7753,14 @@ static void SpriteCB_CoreEnforcerHits(struct Sprite *sprite)
 
     if (gBattleAnimArgs[2] == 0)
     {
-        if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+        if (IsDoubleBattle())
             InitSpritePosToAnimAttackersCentre(sprite, FALSE);
         else
             InitSpritePosToAnimAttacker(sprite, FALSE);
     }
     else
     {
-        if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+        if (IsDoubleBattle())
             InitSpritePosToAnimTargetsCentre(sprite, FALSE);
         else
             InitSpritePosToAnimTarget(sprite, FALSE);
@@ -7751,7 +7772,7 @@ static void SpriteCB_CoreEnforcerHits(struct Sprite *sprite)
 
 static void SpriteCB_CoreEnforcerBeam(struct Sprite *sprite)
 {
-    if (!(gBattleTypeFlags & BATTLE_TYPE_DOUBLE))
+    if (!IsDoubleBattle())
     {
         AnimSolarBeamBigOrb(sprite);
     }
@@ -8023,14 +8044,14 @@ void SpriteCB_RandomCentredHits(struct Sprite *sprite)
 
     if (gBattleAnimArgs[0] == 0)
     {
-        if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+        if (IsDoubleBattle())
             InitSpritePosToAnimAttackersCentre(sprite, FALSE);
         else
             InitSpritePosToAnimAttacker(sprite, FALSE);
     }
     else
     {
-        if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+        if (IsDoubleBattle())
             InitSpritePosToAnimTargetsCentre(sprite, FALSE);
         else
             InitSpritePosToAnimTarget(sprite, FALSE);
@@ -8335,7 +8356,7 @@ static void SpriteCB_BeamUpStep(struct Sprite *sprite)
 
 static void SpriteCB_CentredElectricity(struct Sprite *sprite)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
+    if (IsDoubleBattle())
         InitSpritePosToAnimTargetsCentre(sprite, FALSE);
     else
         InitSpritePosToAnimTarget(sprite, FALSE);
@@ -9376,22 +9397,12 @@ void AnimTask_StickySyrup(u8 taskId)
     DestroyAnimVisualTask(taskId);
 }
 
-static void AnimMakingItRain(struct Sprite *sprite)
+void AnimTask_RandomBool(u8 taskId)
 {
-    if (gBattleAnimArgs[3] != 0)
-        SetAverageBattlerPositions(gBattleAnimTarget, FALSE, &sprite->x, &sprite->y);   //coin shower on target
+    if (RandomPercentage(RNG_NONE, 50))
+        gBattleAnimArgs[ARG_RET_ID] = TRUE;
+    else
+        gBattleAnimArgs[ARG_RET_ID] = FALSE;
 
-    sprite->x += gBattleAnimArgs[0];
-    sprite->y += 14;
-    StartSpriteAnim(sprite, gBattleAnimArgs[1]);
-    AnimateSprite(sprite);
-    sprite->data[0] = 0;
-    sprite->data[1] = 0;
-    sprite->data[2] = 4;
-    sprite->data[3] = 16;
-    sprite->data[4] = -70;
-    sprite->data[5] = gBattleAnimArgs[2];
-    StoreSpriteCallbackInData6(sprite, AnimFallingRock_Step);
-    sprite->callback = TranslateSpriteInEllipse;
-    sprite->callback(sprite);
+    DestroyAnimVisualTask(taskId);
 }

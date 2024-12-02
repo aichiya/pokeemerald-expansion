@@ -20694,7 +20694,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .priority = 3,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_RESET_STATS },
-        .battleAnimScript = Move_ULTRA_INSTINCT,
+        .battleAnimScript = gBattleAnimMove_UltraInstinct,
     },
 
     [MOVE_A_TRANCE] =
@@ -20724,7 +20724,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = Move_A_TRANCE,
+        .battleAnimScript = gBattleAnimMove_ATrance,
     },
 
     [MOVE_TWIN_SPARK] =
@@ -20747,7 +20747,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             .self = TRUE,
             .chance = 100,
         }),
-        .battleAnimScript = Move_TWIN_SPARK,
+        .battleAnimScript = gBattleAnimMove_TwinSpark,
     },
 
     [MOVE_DIMENSION_KICK] =
@@ -20775,7 +20775,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .ignoresTargetAbility = TRUE,
         .ignoresProtect = TRUE,
         .ignoresSubstitute = TRUE,
-        .battleAnimScript = Move_DIMENSION_KICK,
+        .battleAnimScript = gBattleAnimMove_DimensionKick,
     },
 
     [MOVE_DIMENSION_SHOT] =
@@ -20803,7 +20803,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .ignoresTargetAbility = TRUE,
         .ignoresProtect = TRUE,
         .ignoresSubstitute = TRUE,
-        .battleAnimScript = Move_DIMENSION_SHOT,
+        .battleAnimScript = gBattleAnimMove_DImensionShot,
     },
 
     [MOVE_FLUFFICATION] =
@@ -20834,7 +20834,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = Move_FLUFFICATION,
+        .battleAnimScript = gBattleAnimMove_Fluffication,
     },
 
     [MOVE_ILLUSIONARY_DOMINATION] =
@@ -20853,7 +20853,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .battleAnimScript = Move_ILLUSIONARY_DOMINATION,
+        .battleAnimScript = gBattleAnimMove_IllusionaryDomination,
     },
 
     [MOVE_SPIRIT_CAMERA] =
@@ -20879,7 +20879,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = Move_SPIRIT_CAMERA,
+        .battleAnimScript = gBattleAnimMove_SpiritCamera,
     },
 
     [MOVE_RAGING_DEMON] =
@@ -20900,7 +20900,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
             .chance = 50,
         }),
-        .battleAnimScript = Move_RAGING_DEMON,
+        .battleAnimScript = gBattleAnimMove_RagingDemon,
     },
 
     // Z-Moves

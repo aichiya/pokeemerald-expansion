@@ -1319,12 +1319,12 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_VISITED_JAVA_SEMARANG) &&
                 FlagGet(FLAG_VISITED_JAVA_SURABAYA) &&
                 FlagGet(FLAG_VISITED_JAVA_JAKARTA) &&
-                FlagGet(FLAG_VISITED_INMAP0x2C) &&
-                FlagGet(FLAG_VISITED_INMAP0x2D) &&
-                FlagGet(FLAG_VISITED_INMAP0x2E) &&
-                FlagGet(FLAG_VISITED_INMAP0x2F) &&
-                FlagGet(FLAG_VISITED_INMAP0x30) &&
-                FlagGet(FLAG_VISITED_INMAP0x31);
+                FlagGet(FLAG_VISITED_INMAP0X2C) &&
+                FlagGet(FLAG_VISITED_INMAP0X2D) &&
+                FlagGet(FLAG_VISITED_INMAP0X2E) &&
+                FlagGet(FLAG_VISITED_INMAP0X2F) &&
+                FlagGet(FLAG_VISITED_INMAP0X30) &&
+                FlagGet(FLAG_VISITED_INMAP0X31);
             break;
         case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL:
             result = FlagGet(FLAG_BADGE01_GET) &&
@@ -2861,12 +2861,12 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_VISITED_JAVA_SEMARANG);
         FlagClear(FLAG_VISITED_JAVA_SURABAYA);
         FlagClear(FLAG_VISITED_JAVA_JAKARTA);
-        FlagClear(FLAG_VISITED_INMAP0x2C);
-        FlagClear(FLAG_VISITED_INMAP0x2D);
-        FlagClear(FLAG_VISITED_INMAP0x2E);
-        FlagClear(FLAG_VISITED_INMAP0x2F);
-        FlagClear(FLAG_VISITED_INMAP0x30);
-        FlagClear(FLAG_VISITED_INMAP0x31);
+        FlagClear(FLAG_VISITED_INMAP0X2C);
+        FlagClear(FLAG_VISITED_INMAP0X2D);
+        FlagClear(FLAG_VISITED_INMAP0X2E);
+        FlagClear(FLAG_VISITED_INMAP0X2F);
+        FlagClear(FLAG_VISITED_INMAP0X30);
+        FlagClear(FLAG_VISITED_INMAP0X31);
     }
     else
     {
@@ -2917,12 +2917,12 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_VISITED_JAVA_SEMARANG);
         FlagSet(FLAG_VISITED_JAVA_SURABAYA);
         FlagSet(FLAG_VISITED_JAVA_JAKARTA);
-        FlagSet(FLAG_VISITED_INMAP0x2C);
-        FlagSet(FLAG_VISITED_INMAP0x2D);
-        FlagSet(FLAG_VISITED_INMAP0x2E);
-        FlagSet(FLAG_VISITED_INMAP0x2F);
-        FlagSet(FLAG_VISITED_INMAP0x30);
-        FlagSet(FLAG_VISITED_INMAP0x31);
+        FlagSet(FLAG_VISITED_INMAP0X2C);
+        FlagSet(FLAG_VISITED_INMAP0X2D);
+        FlagSet(FLAG_VISITED_INMAP0X2E);
+        FlagSet(FLAG_VISITED_INMAP0X2F);
+        FlagSet(FLAG_VISITED_INMAP0X30);
+        FlagSet(FLAG_VISITED_INMAP0X31);
     }
 }
 

@@ -1928,7 +1928,8 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
     else
     {
         u32 iv;
-        value = Random();
+        u32 ivRandom = Random32();
+        value = (u16)ivRandom;
 
         iv = value & MAX_IV_MASK;
         SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
@@ -1937,7 +1938,7 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
         iv = (value & (MAX_IV_MASK << 10)) >> 10;
         SetBoxMonData(boxMon, MON_DATA_DEF_IV, &iv);
 
-        value = Random();
+        value = (u16)(ivRandom >> 16);
 
         iv = value & MAX_IV_MASK;
         SetBoxMonData(boxMon, MON_DATA_SPEED_IV, &iv);
@@ -1946,21 +1947,7 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
         iv = (value & (MAX_IV_MASK << 10)) >> 10;
         SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
 
-        if (gSpeciesInfo[species].allPerfectIVs)
-        {
-            iv = MAX_PER_STAT_IVS;
-            SetBoxMonData(boxMon, MON_DATA_HP_IV, &iv);
-            SetBoxMonData(boxMon, MON_DATA_ATK_IV, &iv);
-            SetBoxMonData(boxMon, MON_DATA_DEF_IV, &iv);
-            SetBoxMonData(boxMon, MON_DATA_SPEED_IV, &iv);
-            SetBoxMonData(boxMon, MON_DATA_SPATK_IV, &iv);
-            SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
-        }
-        else if (P_LEGENDARY_PERFECT_IVS >= GEN_6
-         && (gSpeciesInfo[species].isLegendary
-          || gSpeciesInfo[species].isMythical
-          || gSpeciesInfo[species].isUltraBeast
-          || gSpeciesInfo[species].isTotem))
+        if (gSpeciesInfo[species].perfectIVCount != 0)
         {
             iv = MAX_PER_STAT_IVS;
             // Initialize a list of IV indices.
@@ -1969,14 +1956,14 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
                 availableIVs[i] = i;
             }
 
-            // Select the 3 IVs that will be perfected.
-            for (i = 0; i < LEGENDARY_PERFECT_IV_COUNT; i++)
+            // Select the IVs that will be perfected.
+            for (i = 0; i < NUM_STATS && i < gSpeciesInfo[species].perfectIVCount; i++)
             {
                 u8 index = Random() % (NUM_STATS - i);
                 selectedIvs[i] = availableIVs[index];
                 RemoveIVIndexFromList(availableIVs, index);
             }
-            for (i = 0; i < LEGENDARY_PERFECT_IV_COUNT; i++)
+            for (i = 0; i < NUM_STATS && i < gSpeciesInfo[species].perfectIVCount; i++)
             {
                 switch (selectedIvs[i])
                 {
@@ -6586,195 +6573,195 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_BUG_CATCHER:
         case TRAINER_CLASS_SIS_AND_BRO:
         case TRAINER_CLASS_RS_PROTAG:
-        case TRAINER_CLASS_0x42:
-        case TRAINER_CLASS_0x43:
-        case TRAINER_CLASS_0x44:
-        case TRAINER_CLASS_0x45:
-        case TRAINER_CLASS_0x46:
-        case TRAINER_CLASS_0x47:
-        case TRAINER_CLASS_0x48:
-        case TRAINER_CLASS_0x49:
-        case TRAINER_CLASS_0x4A:
-        case TRAINER_CLASS_0x4B:
-        case TRAINER_CLASS_0x4C:
-        case TRAINER_CLASS_0x4D:
-        case TRAINER_CLASS_0x4E:
-        case TRAINER_CLASS_0x4F:
-        case TRAINER_CLASS_0x50:
-        case TRAINER_CLASS_0x51:
-        case TRAINER_CLASS_0x52:
-        case TRAINER_CLASS_0x53:
-        case TRAINER_CLASS_0x54:
-        case TRAINER_CLASS_0x55:
-        case TRAINER_CLASS_0x56:
-        case TRAINER_CLASS_0x57:
-        case TRAINER_CLASS_0x58:
-        case TRAINER_CLASS_0x59:
-        case TRAINER_CLASS_0x5A:
-        case TRAINER_CLASS_0x5B:
-        case TRAINER_CLASS_0x5C:
-        case TRAINER_CLASS_0x5D:
-        case TRAINER_CLASS_0x5E:
-        case TRAINER_CLASS_0x5F:
-        case TRAINER_CLASS_0x60:
-        case TRAINER_CLASS_0x61:
-        case TRAINER_CLASS_0x62:
-        case TRAINER_CLASS_0x63:
-        case TRAINER_CLASS_0x64:
-        case TRAINER_CLASS_0x65:
-        case TRAINER_CLASS_0x66:
-        case TRAINER_CLASS_0x67:
-        case TRAINER_CLASS_0x68:
-        case TRAINER_CLASS_0x69:
-        case TRAINER_CLASS_0x6A:
-        case TRAINER_CLASS_0x6B:
-        case TRAINER_CLASS_0x6C:
-        case TRAINER_CLASS_0x6D:
-        case TRAINER_CLASS_0x6E:
-        case TRAINER_CLASS_0x6F:
-        case TRAINER_CLASS_0x70:
-        case TRAINER_CLASS_0x71:
-        case TRAINER_CLASS_0x72:
-        case TRAINER_CLASS_0x73:
-        case TRAINER_CLASS_0x74:
-        case TRAINER_CLASS_0x75:
-        case TRAINER_CLASS_0x76:
-        case TRAINER_CLASS_0x77:
-        case TRAINER_CLASS_0x78:
-        case TRAINER_CLASS_0x79:
-        case TRAINER_CLASS_0x7A:
-        case TRAINER_CLASS_0x7B:
-        case TRAINER_CLASS_0x7C:
-        case TRAINER_CLASS_0x7D:
-        case TRAINER_CLASS_0x7E:
-        case TRAINER_CLASS_0x7F:
-        case TRAINER_CLASS_0x80:
-        case TRAINER_CLASS_0x81:
-        case TRAINER_CLASS_0x82:
-        case TRAINER_CLASS_0x83:
-        case TRAINER_CLASS_0x84:
-        case TRAINER_CLASS_0x85:
-        case TRAINER_CLASS_0x86:
-        case TRAINER_CLASS_0x87:
-        case TRAINER_CLASS_0x88:
-        case TRAINER_CLASS_0x89:
-        case TRAINER_CLASS_0x8A:
-        case TRAINER_CLASS_0x8B:
-        case TRAINER_CLASS_0x8C:
-        case TRAINER_CLASS_0x8D:
-        case TRAINER_CLASS_0x8E:
-        case TRAINER_CLASS_0x8F:
-        case TRAINER_CLASS_0x90:
-        case TRAINER_CLASS_0x91:
-        case TRAINER_CLASS_0x92:
-        case TRAINER_CLASS_0x93:
-        case TRAINER_CLASS_0x94:
-        case TRAINER_CLASS_0x95:
-        case TRAINER_CLASS_0x96:
-        case TRAINER_CLASS_0x97:
-        case TRAINER_CLASS_0x98:
-        case TRAINER_CLASS_0x99:
-        case TRAINER_CLASS_0x9A:
-        case TRAINER_CLASS_0x9B:
-        case TRAINER_CLASS_0x9C:
-        case TRAINER_CLASS_0x9D:
-        case TRAINER_CLASS_0x9E:
-        case TRAINER_CLASS_0x9F:
-        case TRAINER_CLASS_0xA0:
-        case TRAINER_CLASS_0xA1:
-        case TRAINER_CLASS_0xA2:
-        case TRAINER_CLASS_0xA3:
-        case TRAINER_CLASS_0xA4:
-        case TRAINER_CLASS_0xA5:
-        case TRAINER_CLASS_0xA6:
-        case TRAINER_CLASS_0xA7:
-        case TRAINER_CLASS_0xA8:
-        case TRAINER_CLASS_0xA9:
-        case TRAINER_CLASS_0xAA:
-        case TRAINER_CLASS_0xAB:
-        case TRAINER_CLASS_0xAC:
-        case TRAINER_CLASS_0xAD:
-        case TRAINER_CLASS_0xAE:
-        case TRAINER_CLASS_0xAF:
-        case TRAINER_CLASS_0xB0:
-        case TRAINER_CLASS_0xB1:
-        case TRAINER_CLASS_0xB2:
-        case TRAINER_CLASS_0xB3:
-        case TRAINER_CLASS_0xB4:
-        case TRAINER_CLASS_0xB5:
-        case TRAINER_CLASS_0xB6:
-        case TRAINER_CLASS_0xB7:
-        case TRAINER_CLASS_0xB8:
-        case TRAINER_CLASS_0xB9:
-        case TRAINER_CLASS_0xBA:
-        case TRAINER_CLASS_0xBB:
-        case TRAINER_CLASS_0xBC:
-        case TRAINER_CLASS_0xBD:
-        case TRAINER_CLASS_0xBE:
-        case TRAINER_CLASS_0xBF:
-        case TRAINER_CLASS_0xC0:
-        case TRAINER_CLASS_0xC1:
-        case TRAINER_CLASS_0xC2:
-        case TRAINER_CLASS_0xC3:
-        case TRAINER_CLASS_0xC4:
-        case TRAINER_CLASS_0xC5:
-        case TRAINER_CLASS_0xC6:
-        case TRAINER_CLASS_0xC7:
-        case TRAINER_CLASS_0xC8:
-        case TRAINER_CLASS_0xC9:
-        case TRAINER_CLASS_0xCA:
-        case TRAINER_CLASS_0xCB:
-        case TRAINER_CLASS_0xCC:
-        case TRAINER_CLASS_0xCD:
-        case TRAINER_CLASS_0xCE:
-        case TRAINER_CLASS_0xCF:
-        case TRAINER_CLASS_0xD0:
-        case TRAINER_CLASS_0xD1:
-        case TRAINER_CLASS_0xD2:
-        case TRAINER_CLASS_0xD3:
-        case TRAINER_CLASS_0xD4:
-        case TRAINER_CLASS_0xD5:
-        case TRAINER_CLASS_0xD6:
-        case TRAINER_CLASS_0xD7:
-        case TRAINER_CLASS_0xD8:
-        case TRAINER_CLASS_0xD9:
-        case TRAINER_CLASS_0xDA:
-        case TRAINER_CLASS_0xDB:
-        case TRAINER_CLASS_0xDC:
-        case TRAINER_CLASS_0xDD:
-        case TRAINER_CLASS_0xDE:
-        case TRAINER_CLASS_0xDF:
-        case TRAINER_CLASS_0xE0:
-        case TRAINER_CLASS_0xE1:
-        case TRAINER_CLASS_0xE2:
-        case TRAINER_CLASS_0xE3:
-        case TRAINER_CLASS_0xE4:
-        case TRAINER_CLASS_0xE5:
-        case TRAINER_CLASS_0xE6:
-        case TRAINER_CLASS_0xE7:
-        case TRAINER_CLASS_0xE8:
-        case TRAINER_CLASS_0xE9:
-        case TRAINER_CLASS_0xEA:
-        case TRAINER_CLASS_0xEB:
-        case TRAINER_CLASS_0xEC:
-        case TRAINER_CLASS_0xED:
-        case TRAINER_CLASS_0xEE:
-        case TRAINER_CLASS_0xEF:
-        case TRAINER_CLASS_0xF0:
-        case TRAINER_CLASS_0xF1:
-        case TRAINER_CLASS_0xF2:
-        case TRAINER_CLASS_0xF3:
-        case TRAINER_CLASS_0xF4:
-        case TRAINER_CLASS_0xF5:
-        case TRAINER_CLASS_0xF6:
-        case TRAINER_CLASS_0xF7:
-        case TRAINER_CLASS_0xF8:
-        case TRAINER_CLASS_0xF9:
-        case TRAINER_CLASS_0xFA:
-        case TRAINER_CLASS_0xFB:
-        case TRAINER_CLASS_0xFC:
-        case TRAINER_CLASS_0xFD:
-        case TRAINER_CLASS_0xFE:
+        case TRAINER_CLASS_0X42:
+        case TRAINER_CLASS_0X43:
+        case TRAINER_CLASS_0X44:
+        case TRAINER_CLASS_0X45:
+        case TRAINER_CLASS_0X46:
+        case TRAINER_CLASS_0X47:
+        case TRAINER_CLASS_0X48:
+        case TRAINER_CLASS_0X49:
+        case TRAINER_CLASS_0X4A:
+        case TRAINER_CLASS_0X4B:
+        case TRAINER_CLASS_0X4C:
+        case TRAINER_CLASS_0X4D:
+        case TRAINER_CLASS_0X4E:
+        case TRAINER_CLASS_0X4F:
+        case TRAINER_CLASS_0X50:
+        case TRAINER_CLASS_0X51:
+        case TRAINER_CLASS_0X52:
+        case TRAINER_CLASS_0X53:
+        case TRAINER_CLASS_0X54:
+        case TRAINER_CLASS_0X55:
+        case TRAINER_CLASS_0X56:
+        case TRAINER_CLASS_0X57:
+        case TRAINER_CLASS_0X58:
+        case TRAINER_CLASS_0X59:
+        case TRAINER_CLASS_0X5A:
+        case TRAINER_CLASS_0X5B:
+        case TRAINER_CLASS_0X5C:
+        case TRAINER_CLASS_0X5D:
+        case TRAINER_CLASS_0X5E:
+        case TRAINER_CLASS_0X5F:
+        case TRAINER_CLASS_0X60:
+        case TRAINER_CLASS_0X61:
+        case TRAINER_CLASS_0X62:
+        case TRAINER_CLASS_0X63:
+        case TRAINER_CLASS_0X64:
+        case TRAINER_CLASS_0X65:
+        case TRAINER_CLASS_0X66:
+        case TRAINER_CLASS_0X67:
+        case TRAINER_CLASS_0X68:
+        case TRAINER_CLASS_0X69:
+        case TRAINER_CLASS_0X6A:
+        case TRAINER_CLASS_0X6B:
+        case TRAINER_CLASS_0X6C:
+        case TRAINER_CLASS_0X6D:
+        case TRAINER_CLASS_0X6E:
+        case TRAINER_CLASS_0X6F:
+        case TRAINER_CLASS_0X70:
+        case TRAINER_CLASS_0X71:
+        case TRAINER_CLASS_0X72:
+        case TRAINER_CLASS_0X73:
+        case TRAINER_CLASS_0X74:
+        case TRAINER_CLASS_0X75:
+        case TRAINER_CLASS_0X76:
+        case TRAINER_CLASS_0X77:
+        case TRAINER_CLASS_0X78:
+        case TRAINER_CLASS_0X79:
+        case TRAINER_CLASS_0X7A:
+        case TRAINER_CLASS_0X7B:
+        case TRAINER_CLASS_0X7C:
+        case TRAINER_CLASS_0X7D:
+        case TRAINER_CLASS_0X7E:
+        case TRAINER_CLASS_0X7F:
+        case TRAINER_CLASS_0X80:
+        case TRAINER_CLASS_0X81:
+        case TRAINER_CLASS_0X82:
+        case TRAINER_CLASS_0X83:
+        case TRAINER_CLASS_0X84:
+        case TRAINER_CLASS_0X85:
+        case TRAINER_CLASS_0X86:
+        case TRAINER_CLASS_0X87:
+        case TRAINER_CLASS_0X88:
+        case TRAINER_CLASS_0X89:
+        case TRAINER_CLASS_0X8A:
+        case TRAINER_CLASS_0X8B:
+        case TRAINER_CLASS_0X8C:
+        case TRAINER_CLASS_0X8D:
+        case TRAINER_CLASS_0X8E:
+        case TRAINER_CLASS_0X8F:
+        case TRAINER_CLASS_0X90:
+        case TRAINER_CLASS_0X91:
+        case TRAINER_CLASS_0X92:
+        case TRAINER_CLASS_0X93:
+        case TRAINER_CLASS_0X94:
+        case TRAINER_CLASS_0X95:
+        case TRAINER_CLASS_0X96:
+        case TRAINER_CLASS_0X97:
+        case TRAINER_CLASS_0X98:
+        case TRAINER_CLASS_0X99:
+        case TRAINER_CLASS_0X9A:
+        case TRAINER_CLASS_0X9B:
+        case TRAINER_CLASS_0X9C:
+        case TRAINER_CLASS_0X9D:
+        case TRAINER_CLASS_0X9E:
+        case TRAINER_CLASS_0X9F:
+        case TRAINER_CLASS_0XA0:
+        case TRAINER_CLASS_0XA1:
+        case TRAINER_CLASS_0XA2:
+        case TRAINER_CLASS_0XA3:
+        case TRAINER_CLASS_0XA4:
+        case TRAINER_CLASS_0XA5:
+        case TRAINER_CLASS_0XA6:
+        case TRAINER_CLASS_0XA7:
+        case TRAINER_CLASS_0XA8:
+        case TRAINER_CLASS_0XA9:
+        case TRAINER_CLASS_0XAA:
+        case TRAINER_CLASS_0XAB:
+        case TRAINER_CLASS_0XAC:
+        case TRAINER_CLASS_0XAD:
+        case TRAINER_CLASS_0XAE:
+        case TRAINER_CLASS_0XAF:
+        case TRAINER_CLASS_0XB0:
+        case TRAINER_CLASS_0XB1:
+        case TRAINER_CLASS_0XB2:
+        case TRAINER_CLASS_0XB3:
+        case TRAINER_CLASS_0XB4:
+        case TRAINER_CLASS_0XB5:
+        case TRAINER_CLASS_0XB6:
+        case TRAINER_CLASS_0XB7:
+        case TRAINER_CLASS_0XB8:
+        case TRAINER_CLASS_0XB9:
+        case TRAINER_CLASS_0XBA:
+        case TRAINER_CLASS_0XBB:
+        case TRAINER_CLASS_0XBC:
+        case TRAINER_CLASS_0XBD:
+        case TRAINER_CLASS_0XBE:
+        case TRAINER_CLASS_0XBF:
+        case TRAINER_CLASS_0XC0:
+        case TRAINER_CLASS_0XC1:
+        case TRAINER_CLASS_0XC2:
+        case TRAINER_CLASS_0XC3:
+        case TRAINER_CLASS_0XC4:
+        case TRAINER_CLASS_0XC5:
+        case TRAINER_CLASS_0XC6:
+        case TRAINER_CLASS_0XC7:
+        case TRAINER_CLASS_0XC8:
+        case TRAINER_CLASS_0XC9:
+        case TRAINER_CLASS_0XCA:
+        case TRAINER_CLASS_0XCB:
+        case TRAINER_CLASS_0XCC:
+        case TRAINER_CLASS_0XCD:
+        case TRAINER_CLASS_0XCE:
+        case TRAINER_CLASS_0XCF:
+        case TRAINER_CLASS_0XD0:
+        case TRAINER_CLASS_0XD1:
+        case TRAINER_CLASS_0XD2:
+        case TRAINER_CLASS_0XD3:
+        case TRAINER_CLASS_0XD4:
+        case TRAINER_CLASS_0XD5:
+        case TRAINER_CLASS_0XD6:
+        case TRAINER_CLASS_0XD7:
+        case TRAINER_CLASS_0XD8:
+        case TRAINER_CLASS_0XD9:
+        case TRAINER_CLASS_0XDA:
+        case TRAINER_CLASS_0XDB:
+        case TRAINER_CLASS_0XDC:
+        case TRAINER_CLASS_0XDD:
+        case TRAINER_CLASS_0XDE:
+        case TRAINER_CLASS_0XDF:
+        case TRAINER_CLASS_0XE0:
+        case TRAINER_CLASS_0XE1:
+        case TRAINER_CLASS_0XE2:
+        case TRAINER_CLASS_0XE3:
+        case TRAINER_CLASS_0XE4:
+        case TRAINER_CLASS_0XE5:
+        case TRAINER_CLASS_0XE6:
+        case TRAINER_CLASS_0XE7:
+        case TRAINER_CLASS_0XE8:
+        case TRAINER_CLASS_0XE9:
+        case TRAINER_CLASS_0XEA:
+        case TRAINER_CLASS_0XEB:
+        case TRAINER_CLASS_0XEC:
+        case TRAINER_CLASS_0XED:
+        case TRAINER_CLASS_0XEE:
+        case TRAINER_CLASS_0XEF:
+        case TRAINER_CLASS_0XF0:
+        case TRAINER_CLASS_0XF1:
+        case TRAINER_CLASS_0XF2:
+        case TRAINER_CLASS_0XF3:
+        case TRAINER_CLASS_0XF4:
+        case TRAINER_CLASS_0XF5:
+        case TRAINER_CLASS_0XF6:
+        case TRAINER_CLASS_0XF7:
+        case TRAINER_CLASS_0XF8:
+        case TRAINER_CLASS_0XF9:
+        case TRAINER_CLASS_0XFA:
+        case TRAINER_CLASS_0XFB:
+        case TRAINER_CLASS_0XFC:
+        case TRAINER_CLASS_0XFD:
+        case TRAINER_CLASS_0XFE:
 */
         default:
             return MUS_VS_TRAINER;

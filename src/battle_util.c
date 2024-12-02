@@ -4341,6 +4341,17 @@ u32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 mov
         if (moveType == TYPE_FIRE && (B_FLASH_FIRE_FROZEN >= GEN_5 || !(gBattleMons[battlerDef].status1 & STATUS1_FREEZE)))
             effect = MOVE_ABSORBED_BY_BOOST_FLASH_FIRE;
         break;
+    case ABILITY_MAKAI_GODDESS:
+        if (moveType == TYPE_NEW_DARK || moveType == TYPE_NEW_DIVINE)
+            effect = MOVE_ABSORBED_BY_DRAIN_HP_ABILITY;
+        break;
+    case ABILITY_FANTASY_BREAKER:
+        if (moveType <= NUMBER_OF_MON_TYPES && FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE)
+        {
+            if (gBattleMons[gBattlerAttacker].ability != ABILITY_FANTASY_BREAKER)
+                effect = MOVE_ABSORBED_BY_DRAIN_HP_ABILITY;
+        }
+        break;
     }
 
     return effect;
@@ -6086,7 +6097,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 for (i = STAT_ATK; i < statsNum; i++)
                 {
                     if (CompareStat(battler, i, MAX_STAT_STAGE, CMP_LESS_THAN))
-                        validToRaise |= gBitTable[i];
+                        validToRaise |= 1u << i;
                 }
 
                 if (validToRaise != 0) // Can raise one stat
@@ -6097,7 +6108,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                         do
                         {
                             i = (Random() % statsNum) + STAT_ATK;
-                        } while (!(validToRaise & gBitTable[i]));
+                        } while (!(validToRaise & (1u << i)));
                         SET_STATCHANGER(i, MAX_STAT_STAGE, FALSE);
                     }
                     BattleScriptPushCursor();
@@ -9723,7 +9734,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
          || gBattleMons[battlerDef].item == ITEM_BERSERK_GENE)
         {
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.1));
-            if (updateFlags)
+            if (damageCalcData->updateFlags)
                 RecordAbilityBattle(battlerDef, defAbility);
         }
         break;

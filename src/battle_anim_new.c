@@ -7333,18 +7333,6 @@ const struct SpriteTemplate gDimensionShot2Template =
     .callback = AnimDimensionShotWalls,
 };
 
-// Make It Rain
-const struct SpriteTemplate gMakingItRainTemplate =
-{
-    .tileTag = ANIM_TAG_COIN,
-    .paletteTag = ANIM_TAG_COIN,
-    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
-    .anims = gCoinAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimMakingItRain,
-};
-
 const struct SpriteTemplate gRedExplosionSpriteTemplate =
 {
     .tileTag = ANIM_TAG_RED_EXPLOSION,

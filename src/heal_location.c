@@ -67,10 +67,10 @@ static bool32 IsLastHealLocation(u32 healLocation)
 
 bool32 IsLastHealLocationPlayerHouse()
 {
-    if (IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE)
-        || IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F)
-        || IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE)
-        || IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F))
+    if (IsLastHealLocation(HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_FEMALE)
+        || IsLastHealLocation(HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_2F_FEMALE)
+        || IsLastHealLocation(HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_MALE)
+        || IsLastHealLocation(HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_2F_MALE))
         return TRUE;
 
     return FALSE;

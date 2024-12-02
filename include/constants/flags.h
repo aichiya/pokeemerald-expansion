@@ -1390,7 +1390,7 @@
 #define FLAG_TERA_ORB_CHARGED                       (SYSTEM_FLAGS + 0x21)
 #define FLAG_TERA_ORB_NO_COST                       (SYSTEM_FLAGS + 0x22)
 #define FLAG_ENABLE_LIGHT_ORB_UP                    (SYSTEM_FLAGS + 0x23)
-#define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag
+#define FLAG_NO_RUNNING_AWAY                        (SYSTEM_FLAGS + 0x24)
 #define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
 #define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
@@ -1550,12 +1550,12 @@
 #define FLAG_VISITED_JAVA_SEMARANG                  (SYSTEM_FLAGS + 0xAE)
 #define FLAG_VISITED_JAVA_SURABAYA                  (SYSTEM_FLAGS + 0xAF)
 #define FLAG_VISITED_JAVA_JAKARTA                   (SYSTEM_FLAGS + 0xB0)
-#define FLAG_VISITED_INMAP0x2C                      (SYSTEM_FLAGS + 0xB1)
-#define FLAG_VISITED_INMAP0x2D                      (SYSTEM_FLAGS + 0xB2)
-#define FLAG_VISITED_INMAP0x2E                      (SYSTEM_FLAGS + 0xB3)
-#define FLAG_VISITED_INMAP0x2F                      (SYSTEM_FLAGS + 0xB4)
-#define FLAG_VISITED_INMAP0x30                      (SYSTEM_FLAGS + 0xB5)
-#define FLAG_VISITED_INMAP0x31                      (SYSTEM_FLAGS + 0xB6)
+#define FLAG_VISITED_INMAP0X2C                      (SYSTEM_FLAGS + 0xB1)
+#define FLAG_VISITED_INMAP0X2D                      (SYSTEM_FLAGS + 0xB2)
+#define FLAG_VISITED_INMAP0X2E                      (SYSTEM_FLAGS + 0xB3)
+#define FLAG_VISITED_INMAP0X2F                      (SYSTEM_FLAGS + 0xB4)
+#define FLAG_VISITED_INMAP0X30                      (SYSTEM_FLAGS + 0xB5)
+#define FLAG_VISITED_INMAP0X31                      (SYSTEM_FLAGS + 0xB6)
 #define FLAG_UNUSED_0x917                           (SYSTEM_FLAGS + 0xB7) // Unused Flag
 #define FLAG_UNUSED_0x918                           (SYSTEM_FLAGS + 0xB8) // Unused Flag
 #define FLAG_UNUSED_0x919                           (SYSTEM_FLAGS + 0xB9) // Unused Flag

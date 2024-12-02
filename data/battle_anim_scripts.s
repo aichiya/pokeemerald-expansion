@@ -18100,7 +18100,7 @@ gBattleAnimMove_TachyonCutter::
 gBattleAnimMove_SupercellSlam::
 	end @to do
 
-Move_ULTRA_INSTINCT::
+gBattleAnimMove_UltraInstinct::
 @	loadspritegfx ANIM_TAG_SPARK_2 @spark
 @	loadspritegfx ANIM_TAG_LEAF @green
 @	loadspritegfx ANIM_TAG_ELECTRIC_ORBS @charge particles
@@ -18180,7 +18180,7 @@ Move_ULTRA_INSTINCT::
 	waitbgfadeout
 	end
 
-Move_A_TRANCE::
+gBattleAnimMove_ATrance::
 	monbg ANIM_ATTACKER
 	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
 	waitplaysewithpan SE_M_MINIMIZE, SOUND_PAN_ATTACKER, 48
@@ -18189,7 +18189,7 @@ Move_A_TRANCE::
 	clearmonbg ANIM_ATTACKER
 	end
 
-Move_TWIN_SPARK::
+gBattleAnimMove_TwinSpark::
 	loadspritegfx ANIM_TAG_ORBS
 @	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 4, 0, 16, RGB_GREEN
 @	waitforvisualfinish
@@ -18259,7 +18259,7 @@ Move_TWIN_SPARK::
 	delay 1
 	end
 
-Move_DIMENSION_KICK::
+gBattleAnimMove_DimensionKick::
 	loadspritegfx ANIM_TAG_ROUND_SHADOW @fly
 	loadspritegfx ANIM_TAG_AIR_WAVE_2 @black color
 	loadspritegfx ANIM_TAG_ROCKS @rock colour
@@ -18325,7 +18325,7 @@ DimensionKickWall:
 	delay 0x1
 	return
 
-Move_DIMENSION_SHOT::
+gBattleAnimMove_DImensionShot::
 	loadspritegfx ANIM_TAG_BLUE_LIGHT_WALL @wall
 	loadspritegfx ANIM_TAG_EXPLOSION
 	fadetobg BG_TRICK_ROOM
@@ -18395,7 +18395,7 @@ DimensionShotExplode:
 	delay 6
 	return
 
-Move_FLUFFICATION::
+gBattleAnimMove_Fluffication::
 	loadspritegfx ANIM_TAG_SPOTLIGHT
 	loadspritegfx ANIM_TAG_CONFETTI
 	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_ENCORE2, SOUND_PAN_TARGET
@@ -18443,7 +18443,7 @@ Move_FLUFFICATION::
 	clearmonbg ANIM_TARGET
 	end
 
-Move_ILLUSIONARY_DOMINATION::
+gBattleAnimMove_IllusionaryDomination::
 	call SetHighSpeedBg
 	loadspritegfx ANIM_TAG_BIRD @ ANIM_TAG_SPARK
 	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
@@ -18492,7 +18492,7 @@ Move_ILLUSIONARY_DOMINATION::
     call UnsetHighSpeedBg
 	end
     
-Move_SPIRIT_CAMERA::
+gBattleAnimMove_SpiritCamera::
 	loadspritegfx ANIM_TAG_LOCK_ON
 	createsprite gLockOnTargetSpriteTemplate, ANIM_ATTACKER, 40
 	createsprite gLockOnMoveTargetSpriteTemplate, ANIM_ATTACKER, 40, 1
@@ -18507,7 +18507,7 @@ Move_SPIRIT_CAMERA::
 	waitforvisualfinish
 	end
 
-Move_RAGING_DEMON::
+gBattleAnimMove_RagingDemon::
 	loadspritegfx ANIM_TAG_IMPACT
 	loadspritegfx ANIM_TAG_HANDS_AND_FEET
 	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT

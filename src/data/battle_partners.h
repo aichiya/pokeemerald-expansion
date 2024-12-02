@@ -103,65 +103,105 @@
             },
         },
     },
-
+#line 45
     [PARTNER_TRAINER2] =
     {
+#line 46
         .trainerName = _("Marisa"),
-        .trainerClass = TRAINER_CLASS_RIVAL,
+#line 47
+        .trainerClass = TRAINER_CLASS_0XA0,
+#line 48
         .trainerPic = TRAINER_BACK_PIC_TH_MARISA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-		.partySize = 3,
-		.party = (const struct TrainerMon[])
+        .encounterMusic_gender = 
+#line 49
+F_TRAINER_FEMALE | 
+#line 50
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
         {
-			{
-				.species = SPECIES_MEW,
-				.lvl = 77,
-				.nature = NATURE_TIMID,
-				.heldItem = ITEM_MEWNIUM_Z,
-				.ball = ITEM_CHERISH_BALL,
-				.isShiny = TRUE,
-				.iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-				.ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
-				.moves = {
-					MOVE_LIGHT_SCREEN,
-					MOVE_PSYCHIC,
-					MOVE_REFLECT,
-					MOVE_HELPING_HAND,
-				},
-				.dynamaxLevel = 10,
-				.shouldUseDynamax = TRUE,
-			},
-			{
-				.species = SPECIES_SCIZOR,
-				.lvl = 77,
-				.nature = NATURE_ADAMANT,
-				.heldItem = ITEM_LIFE_ORB,
-				.isShiny = TRUE,
-				.ability = 3,
-				.iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-				.ev = TRAINER_PARTY_EVS(252, 252, 6, 0, 0, 0),
-				.moves = {
-					MOVE_BULLET_PUNCH,
-					MOVE_AERIAL_ACE,
-					MOVE_BUG_BITE,
-					MOVE_SWORDS_DANCE,
-				},
-			},
-			{
-				.species = SPECIES_DIALGA,
-				.lvl = 77,
-				.nature = NATURE_MODEST,
-				.heldItem = ITEM_WHITE_HERB,
-				.isShiny = TRUE,
-				.iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-				.ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
-				.moves = {
-					MOVE_THUNDERBOLT,
-					MOVE_FLASH_CANNON,
-					MOVE_DRACO_METEOR,
-					MOVE_EARTH_POWER,
-				},
-			},
-		},
+            {
+#line 52
+            .nickname = COMPOUND_STRING("MiyuCat"),
+#line 52
+            .species = SPECIES_MEW,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 52
+            .heldItem = ITEM_BRIGHT_POWDER,
+#line 56
+            .ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
+#line 55
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 54
+            .lvl = 100,
+#line 53
+            .nature = NATURE_MODEST,
+#line 57
+            .isShiny = TRUE,
+#line 58
+            .dynamaxLevel = 10,
+            .shouldUseDynamax = TRUE,
+            .moves = {
+#line 60
+                MOVE_DIMENSION_KICK,
+                MOVE_DIMENSION_SHOT,
+                MOVE_FLUFFICATION,
+                MOVE_TWIN_SPARK,
+            },
+            },
+            {
+#line 65
+            .species = SPECIES_CELEBI,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 65
+            .heldItem = ITEM_BRIGHT_POWDER,
+#line 69
+            .ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
+#line 68
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 67
+            .lvl = 100,
+#line 66
+            .nature = NATURE_MODEST,
+#line 70
+            .isShiny = TRUE,
+#line 71
+            .dynamaxLevel = 10,
+            .shouldUseDynamax = TRUE,
+            .moves = {
+#line 73
+                MOVE_DIMENSION_KICK,
+                MOVE_DIMENSION_SHOT,
+                MOVE_FLUFFICATION,
+                MOVE_TWIN_SPARK,
+            },
+            },
+            {
+#line 78
+            .species = SPECIES_JIRACHI,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 78
+            .heldItem = ITEM_BRIGHT_POWDER,
+#line 82
+            .ev = TRAINER_PARTY_EVS(6, 0, 0, 252, 252, 0),
+#line 81
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 80
+            .lvl = 100,
+#line 79
+            .nature = NATURE_MODEST,
+#line 83
+            .isShiny = TRUE,
+#line 84
+            .dynamaxLevel = 10,
+            .shouldUseDynamax = TRUE,
+            .moves = {
+#line 86
+                MOVE_DIMENSION_KICK,
+                MOVE_DIMENSION_SHOT,
+                MOVE_FLUFFICATION,
+                MOVE_TWIN_SPARK,
+            },
+            },
+        },
     },
-	

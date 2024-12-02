@@ -12814,13 +12814,13 @@ static void Cmd_transformdataexecutiondecade(void)
                     gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_SERENE_GRACE;
                     break;
                 default:
-                    speciesBuffer = SPECIES_MAGEARNA_ORIGINAL_COLOR;
+                    speciesBuffer = SPECIES_MAGEARNA_ORIGINAL;
                     PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
 
             //      battleMonAttacker = (u8 *)(&gBattleMons[gBattlerAttacker]);
             //      battleMonTarget = (u8 *)(&gBattleMons[gBattlerTarget]);
 
-                    gBattleMons[gBattlerAttacker].species = SPECIES_MAGEARNA_ORIGINAL_COLOR;
+                    gBattleMons[gBattlerAttacker].species = SPECIES_MAGEARNA_ORIGINAL;
                     gBattleMons[gBattlerAttacker].attack = 226;
                     gBattleMons[gBattlerAttacker].defense = 266;
                     gBattleMons[gBattlerAttacker].speed = 135;
@@ -12850,7 +12850,7 @@ static void Cmd_transformdataexecutiondecade(void)
                     gBattleMons[gBattlerAttacker].types[1] = TYPE_FAIRY;
                     gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
                     
-                    VarSet(VAR_UNUSED_0x40F8, SPECIES_MAGEARNA_ORIGINAL_COLOR);
+                    VarSet(VAR_UNUSED_0x40F8, SPECIES_MAGEARNA_ORIGINAL);
                     gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_SOUL_HEART;
                     break;
             }

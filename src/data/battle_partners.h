@@ -107,11 +107,11 @@
     [PARTNER_TRAINER2] =
     {
 #line 46
-        .trainerName = _("Marisa"),
+        .trainerName = _("???"),
 #line 47
-        .trainerClass = TRAINER_CLASS_0XA0,
+        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 48
-        .trainerPic = TRAINER_BACK_PIC_TH_MARISA,
+        .trainerPic = TRAINER_BACK_PIC_BRENDAN,
         .encounterMusic_gender = 
 #line 49
 F_TRAINER_FEMALE | 
@@ -122,7 +122,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 52
-            .nickname = COMPOUND_STRING("MiyuCat"),
+            .nickname = COMPOUND_STRING("Miyu"),
 #line 52
             .species = SPECIES_MEW,
             .gender = TRAINER_MON_RANDOM_GENDER,
@@ -151,6 +151,8 @@ F_TRAINER_FEMALE |
             },
             {
 #line 65
+            .nickname = COMPOUND_STRING("Asahina"),
+#line 65
             .species = SPECIES_CELEBI,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 65
@@ -177,6 +179,8 @@ F_TRAINER_FEMALE |
             },
             },
             {
+#line 78
+            .nickname = COMPOUND_STRING("Wishmaker"),
 #line 78
             .species = SPECIES_JIRACHI,
             .gender = TRAINER_MON_RANDOM_GENDER,

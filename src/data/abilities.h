@@ -1943,7 +1943,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_NEUTRALIZING_GAS] =
     {
-        .name = _("Neutralizing Gas"),
+        .name = _("8-bit Sensation"),
         .description = COMPOUND_STRING("All Abilities are nullified."),
         .aiRating = 5,
         .cantBeCopied = TRUE,

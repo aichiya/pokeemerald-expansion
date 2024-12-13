@@ -5009,6 +5009,15 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_DIMENSION_OVERSEER:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gBattlerAttacker = battler;
+                gBattlerTarget = gBattlerAttacker;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_DimensionWallInitiate);
+                effect++;
+            }
         case ABILITY_DEUS_EX_MACHINA:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
@@ -5025,7 +5034,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 {
                     gWishFutureKnock.wishCounter[gBattlerAttacker] = 2;
                     gWishFutureKnock.wishPartyId[gBattlerAttacker] = gBattlerPartyIndexes[gBattlerAttacker];
-//                    BattleScriptPushCursorAndCallback(BattleScript_DeusExMachinaWishInitiate);
+                    BattleScriptPushCursorAndCallback(BattleScript_DeusExMachinaWishInitiate);
                     effect++;
                 }
                 if (IsBattlerAlive(BATTLE_OPPOSITE(battler)))

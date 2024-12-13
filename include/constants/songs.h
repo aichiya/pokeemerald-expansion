@@ -1597,8 +1597,9 @@
 #define MUS_LS_KANATA_KARA 1624
 #define MUS_SNY_MIKURU 1625
 #define MUS_FATE_HAKUNO_FATAL_BATTLE 1626
+#define MUS_GSC_VS_CHAMPION_8BIT 1627
 
-#define END_MUS 					MUS_FATE_HAKUNO_FATAL_BATTLE
+#define END_MUS 					MUS_GSC_VS_CHAMPION_8BIT
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

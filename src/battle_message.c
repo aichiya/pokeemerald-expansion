@@ -893,6 +893,8 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNFLUFFIEDINTO]                     = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} got fluffied and\ntransformed into {B_BUFF1}!"),
     [STRINGID_PARTYGOTWIPEDOUT]                     = COMPOUND_STRING("The opposing party got wiped out."),
     [STRINGID_PKMNCUTSSPATTACKWITH]                 = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\ndisturbs {B_DEF_NAME_WITH_PREFIX}'s SP. ATK!"),
+    [STRINGID_PKMNISWISHING]                        = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} is wishing!"),
+    [STRINGID_SETUPDIMENSIONWALL]                   = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} set up Aurora Curtain!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

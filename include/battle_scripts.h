@@ -532,6 +532,7 @@ extern const u8 BattleScript_DeusExMachinaDoomDesireFailed[];
 extern const u8 BattleScript_DeusExMachinaDoomDesireInitiate[];
 extern const u8 BattleScript_DeusExMachinaWishFailed[];
 extern const u8 BattleScript_DeusExMachinaWishInitiate[];
+extern const u8 BattleScript_DimensionWallInitiate[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

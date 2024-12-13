@@ -10379,3 +10379,11 @@ BattleScript_DeusExMachinaDoomDesireInitiate::
 	printfromtable gFutureMoveUsedStringIds
 	waitmessage B_WAIT_TIME_LONG
 	end3
+
+BattleScript_DimensionWallInitiate::
+	call BattleScript_AbilityPopUpTarget
+	printstring STRINGID_SETUPDIMENSIONWALL
+	setlightscreen
+	setsafeguard
+	waitmessage B_WAIT_TIME_LONG
+	end3

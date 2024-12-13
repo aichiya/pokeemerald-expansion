@@ -2444,8 +2444,8 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_DIMENSION_OVERSEER] = // to do
     {
         .name = _("Dimension Seer"),
-        .description = COMPOUND_STRING("Unknown ability."),
-        .aiRating = 9,
+        .description = COMPOUND_STRING("Walls & Safeguard on switch."),
+        .aiRating = 10,
     },
     
     [ABILITY_DOLL_WALL] = // to do

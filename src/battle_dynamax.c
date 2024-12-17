@@ -616,6 +616,7 @@ void BS_SetMaxMoveEffect(void)
         case MAX_EFFECT_GRASSY_TERRAIN:
         case MAX_EFFECT_ELECTRIC_TERRAIN:
         case MAX_EFFECT_PSYCHIC_TERRAIN:
+        case MAX_EFFECT_UBW:
         {
             u32 statusFlag = 0;
             switch (gMovesInfo[gCurrentMove].argument)
@@ -635,6 +636,10 @@ void BS_SetMaxMoveEffect(void)
                 case MAX_EFFECT_PSYCHIC_TERRAIN:
                     statusFlag = STATUS_FIELD_PSYCHIC_TERRAIN;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_PSYCHIC;
+                    break;
+                case MAX_EFFECT_UBW:
+                    statusFlag = STATUS_FIELD_UBW;
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_UBW_SET;
                     break;
             }
             if (!(gFieldStatuses & statusFlag) && statusFlag != 0)

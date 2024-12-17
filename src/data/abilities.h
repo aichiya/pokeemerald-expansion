@@ -2587,4 +2587,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
     },
 
+    [ABILITY_KRIS_WORKS] =
+    {
+        .name = _("Kris Works"),
+        .description = COMPOUND_STRING("Deploys world of kris."),
+        .aiRating = 8,
+    },
+
 };

@@ -1675,6 +1675,7 @@ enum
     ENDTURN_RAINBOW,
     ENDTURN_SEA_OF_FIRE,
     ENDTURN_SWAMP,
+    ENDTURN_UBW,
     ENDTURN_FIELD_COUNT,
 };
 
@@ -2123,6 +2124,10 @@ u8 DoFieldEndTurnEffects(void)
             break;
         case ENDTURN_PSYCHIC_TERRAIN:
             effect = EndTurnTerrain(STATUS_FIELD_PSYCHIC_TERRAIN, B_MSG_TERRAIN_END_PSYCHIC);
+            gBattleStruct->turnCountersTracker++;
+            break;
+        case ENDTURN_UBW:
+            effect = EndTurnTerrain(STATUS_FIELD_UBW, B_MSG_UBW_END);
             gBattleStruct->turnCountersTracker++;
             break;
         case ENDTURN_WATER_SPORT:
@@ -4152,6 +4157,8 @@ bool32 ChangeTypeBasedOnTerrain(u32 battler)
         battlerType = TYPE_FAIRY;
     else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
         battlerType = TYPE_PSYCHIC;
+    else if (gFieldStatuses & STATUS_FIELD_UBW)
+        battlerType = TYPE_STEEL;
     else // failsafe
         return FALSE;
 
@@ -4433,6 +4440,18 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 {
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_PSYCHIC;
                     gFieldStatuses |= STATUS_FIELD_PSYCHIC_TERRAIN;
+                    if (timerVal == 0)
+                        gFieldStatuses |= STATUS_FIELD_TERRAIN_PERMANENT;
+                    else
+                        gFieldTimers.terrainTimer = timerVal;
+                    effect = 2;
+                }
+                break;
+            case STARTING_STATUS_UBW:
+                if (!(gFieldStatuses & STATUS_FIELD_UBW))
+                {
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_UBW_SET;
+                    gFieldStatuses |= STATUS_FIELD_UBW;
                     if (timerVal == 0)
                         gFieldStatuses |= STATUS_FIELD_TERRAIN_PERMANENT;
                     else
@@ -4986,6 +5005,13 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             if (TryChangeBattleTerrain(battler, STATUS_FIELD_PSYCHIC_TERRAIN, &gFieldTimers.terrainTimer))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_PsychicSurgeActivates);
+                effect++;
+            }
+            break;
+        case ABILITY_KRIS_WORKS:
+            if (TryChangeBattleTerrain(battler, STATUS_FIELD_UBW, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_UBWActivates);
                 effect++;
             }
             break;
@@ -7997,6 +8023,9 @@ u32 ItemBattleEffects(enum ItemEffect caseID, u32 battler, bool32 moveTurn)
                 case HOLD_EFFECT_PARAM_PSYCHIC_TERRAIN:
                     effect = TryHandleSeed(battler, STATUS_FIELD_PSYCHIC_TERRAIN, STAT_SPDEF, gLastUsedItem, caseID);
                     break;
+                case HOLD_EFFECT_PARAM_UBW:
+                    effect = TryHandleSeed(battler, STATUS_FIELD_UBW, STAT_ATK, gLastUsedItem, caseID);
+                    break;
                 }
                 break;
             case HOLD_EFFECT_EJECT_PACK:
@@ -9547,6 +9576,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
     if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_PSYCHIC_TERRAIN) && moveType == TYPE_PSYCHIC)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_UBW) && moveType == TYPE_NEW_STEEL)
+        modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    if (IsBattlerTerrainAffected(battlerDef, STATUS_FIELD_UBW) && moveType == TYPE_NEW_MIASMA)
+        modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
 
     if (moveType == TYPE_ELECTRIC && ((gFieldStatuses & STATUS_FIELD_MUDSPORT)
     || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0)))
@@ -10293,6 +10326,9 @@ static inline uq4_12_t GetTargetDamageModifier(struct DamageCalculationData *dam
 static inline uq4_12_t GetParentalBondModifier(u32 battlerAtk)
 {
     if (gSpecialStatuses[battlerAtk].parentalBondState != PARENTAL_BOND_2ND_HIT)
+        return UQ_4_12(1.0);
+    else if (gSpecialStatuses[battlerAtk].parentalBondState == PARENTAL_BOND_2ND_HIT
+        && gMovesInfo[gCurrentMove].slicingMove == TRUE)
         return UQ_4_12(1.0);
     return B_PARENTAL_BOND_DMG >= GEN_7 ? UQ_4_12(0.25) : UQ_4_12(0.5);
 }

@@ -737,8 +737,10 @@
 #define STRINGID_PKMNCUTSSPATTACKWITH                 (STRINGID_LAST_EXPANSION + 8)
 #define STRINGID_PKMNISWISHING                        (STRINGID_LAST_EXPANSION + 9)
 #define STRINGID_SETUPDIMENSIONWALL                   (STRINGID_LAST_EXPANSION + 10)
+#define STRINGID_UNLIMITEDKRISWORKS                   (STRINGID_LAST_EXPANSION + 11)
+#define STRINGID_UBWFADED                             (STRINGID_LAST_EXPANSION + 12)
 
-#define STRINGID_LAST_CUSTOM_ADDED                    STRINGID_SETUPDIMENSIONWALL
+#define STRINGID_LAST_CUSTOM_ADDED                    STRINGID_UBWFADED
 
 #define BATTLESTRINGS_COUNT                           (STRINGID_LAST_CUSTOM_ADDED + 1)
 
@@ -1014,7 +1016,9 @@
 #define B_MSG_TERRAIN_END_ELECTRIC  5
 #define B_MSG_TERRAIN_END_PSYCHIC   6
 #define B_MSG_TERRAIN_END_GRASSY    7
-#define B_MSG_TERRAIN_COUNT         8
+#define B_MSG_UBW_END               8
+#define B_MSG_UBW_SET               9
+#define B_MSG_TERRAIN_COUNT         10
 
 // gStartingStatusStringIds
 #define B_MSG_TERRAIN_SET_MISTY     0
@@ -1026,7 +1030,8 @@
 #define B_MSG_SET_WONDER_ROOM       6
 #define B_MSG_SET_TAILWIND_PLAYER   7
 #define B_MSG_SET_TAILWIND_OPPONENT 8
-#define B_MSG_STARTING_STATUS_COUNT 9
+#define B_MSG_UBW_SET               9
+#define B_MSG_STARTING_STATUS_COUNT 10
 
 
 // gWrappedStringIds

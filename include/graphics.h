@@ -3389,4 +3389,10 @@ extern const u32 gBattleIcons_Gfx2[];
 extern const u32 gBattleIcons_Pal1[];
 extern const u32 gBattleIcons_Pal2[];
 
+// custom
+
+extern const u32 gBattleAnimBgImage_UBWField[];
+extern const u32 gBattleAnimBgPalette_UBWField[];
+extern const u32 gBattleAnimBgTilemap_UBWField[];
+
 #endif //GUARD_GRAPHICS_H

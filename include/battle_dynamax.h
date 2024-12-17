@@ -54,6 +54,7 @@ enum MaxMoveEffect
 	MAX_EFFECT_FIRE_SPIN_FOES,
 	MAX_EFFECT_FIXED_POWER,
 	MAX_EFFECT_BYPASS_PROTECT,
+	MAX_EFFECT_UBW,
 };
 
 bool32 CanDynamax(u32 battler);

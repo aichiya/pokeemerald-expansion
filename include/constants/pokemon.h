@@ -335,6 +335,7 @@ enum EvolutionMethods {
     EVO_DEFEAT_THREE_WITH_ITEM,          // Pokémon levels up after having defeat 3 Pokémon of the same species holding the specified item
     EVO_OVERWORLD_STEPS,                 // Pokémon levels up after having taken a specific amount of steps in the overworld
 	EVO_LEVEL_VOID,
+    EVO_RECOIL_DAMAGE_GENDERLESS,
 };
 
 enum EvolutionMode {

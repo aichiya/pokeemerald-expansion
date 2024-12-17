@@ -5450,6 +5450,10 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode mode, u16 
                    && gMapHeader.regionMapSectionId == MAPSEC_KEY_ILLUSIONARY_WORLD2)
                     targetSpecies = evolutions[i].targetSpecies;
                 break;
+            case EVO_RECOIL_DAMAGE_GENDERLESS:
+                if (evolutionTracker >= evolutions[i].param && GetMonGender(mon) == MON_GENDERLESS)
+                    targetSpecies = evolutions[i].targetSpecies;
+                break;
             }
         }
         break;

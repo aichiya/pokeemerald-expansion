@@ -1628,6 +1628,7 @@ gSongTable::
 	song mus_ls_kanata_kara_piano, 0, 0
 	song mus_sny_mikuru, 0, 0
 	song mus_fate_hakuno_fatal_battle, 0, 0
+	song mus_hi3_rubia, 0, 0
 
 	.align 2
 dummy_song_header:

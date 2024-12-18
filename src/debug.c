@@ -5846,7 +5846,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_LS_KANATA_KARA) \
     X(MUS_SNY_MIKURU) \
     X(MUS_FATE_HAKUNO_FATAL_BATTLE) \
-    X(MUS_GSC_VS_CHAMPION_8BIT) \
+    X(MUS_HI3_RUBIA) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

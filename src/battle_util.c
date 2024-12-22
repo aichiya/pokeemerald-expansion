@@ -1941,9 +1941,13 @@ u8 DoFieldEndTurnEffects(void)
                         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_RAIN_STOPPED;
                     }
                     else if (gBattleWeather & B_WEATHER_RAIN_DOWNPOUR)
+                    {
                         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DOWNPOUR_CONTINUES;
+                    }
                     else
+                    {
                         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_RAIN_CONTINUES;
+                    }
                 }
                 else if (gBattleWeather & B_WEATHER_RAIN_DOWNPOUR)
                 {
@@ -12163,7 +12167,12 @@ bool32 MoveIsAffectedBySheerForce(u32 move)
     u32 i;
     for (i = 0; i < gMovesInfo[move].numAdditionalEffects; i++)
     {
+        if (gMovesInfo[move].additionalEffects[i].sheerForceBoost == SHEER_FORCE_NO_BOOST)
+            continue;
+
         if (gMovesInfo[move].additionalEffects[i].chance > 0)
+            return TRUE;
+        if (gMovesInfo[move].additionalEffects[i].sheerForceBoost == SHEER_FORCE_BOOST)
             return TRUE;
     }
     return FALSE;

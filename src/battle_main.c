@@ -24,6 +24,7 @@
 #include "event_data.h"
 #include "evolution_scene.h"
 #include "field_weather.h"
+#include "generational_changes.h"
 #include "graphics.h"
 #include "gpu_regs.h"
 #include "international_string_util.h"
@@ -5042,8 +5043,8 @@ s8 GetMovePriority(u32 battler, u16 move)
     if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX && gMovesInfo[move].category == DAMAGE_CATEGORY_STATUS)
         return gMovesInfo[MOVE_MAX_GUARD].priority;
 
-    else if (ability == ABILITY_GALE_WINGS
-        && (B_GALE_WINGS < GEN_7 || BATTLER_MAX_HP(battler))
+    if (ability == ABILITY_GALE_WINGS
+        && (GetGenConfig(GEN_CONFIG_GALE_WINGS) < GEN_7 || BATTLER_MAX_HP(battler))
         && gMovesInfo[move].type == TYPE_FLYING)
     {
         priority++;

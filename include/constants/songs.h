@@ -1598,8 +1598,11 @@
 #define MUS_SNY_MIKURU 1625
 #define MUS_FATE_HAKUNO_FATAL_BATTLE 1626
 #define MUS_HI3_RUBIA 1627
+#define MUS_OMORI_WORLDS_END_VALENTINE 1628
+#define MUS_BGHS_BELIEVE 1629
+#define MUS_PKMN_XD_VS_CIPHER_PEON 1630
 
-#define END_MUS 					MUS_HI3_RUBIA
+#define END_MUS 					MUS_PKMN_XD_VS_CIPHER_PEON
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

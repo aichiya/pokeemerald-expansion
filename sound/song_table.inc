@@ -1629,6 +1629,9 @@ gSongTable::
 	song mus_sny_mikuru, 0, 0
 	song mus_fate_hakuno_fatal_battle, 0, 0
 	song mus_hi3_rubia, 0, 0
+	song mus_omori_worlds_end_valentine 0, 0
+	song mus_bghs_believe, 0, 0
+	song mus_pkmn_xd_vs_cipher_peon 0, 0
 
 	.align 2
 dummy_song_header:

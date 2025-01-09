@@ -2477,6 +2477,11 @@ static void Cmd_datahpupdate(void)
                 if (gSpecialStatuses[battler].shellBellDmg == 0 && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE))
                     gSpecialStatuses[battler].shellBellDmg = gHpDealt;
 
+                // Record damage for foreseen moves
+                if (gWishFutureKnock.futureSightDmg[battler] == 0
+                  && gMovesInfo[gWishFutureKnock.futureSightMove[battler]].effect == EFFECT_FUTURE_SIGHT)
+                    gWishFutureKnock.futureSightDmg[battler] = gHpDealt;
+                
                 // Note: While physicalDmg/specialDmg below are only distinguished between for Counter/Mirror Coat, they are
                 //       used in combination as general damage trackers for other purposes. specialDmg is additionally used
                 //       to help determine if a fire move should defrost the target.
@@ -6499,18 +6504,22 @@ static void Cmd_moveend(void)
                             gLastUsedItem = gBattleMons[battler].item;
                             if (gMovesInfo[gCurrentMove].effect == EFFECT_HIT_ESCAPE)
                                 gBattlescriptCurrInstr = BattleScript_MoveEnd;  // Prevent user switch-in selection
-                            effect = TRUE;
-                            BattleScriptPushCursor();
-                            gBattleStruct->usedEjectItem |= 1u << battler;
                             if (ejectButtonBattlers & (1u << battler))
                             {
+                                effect = TRUE;
+                                gBattleStruct->usedEjectItem |= 1u << battler;
+                                BattleScriptPushCursor();
                                 gBattlescriptCurrInstr = BattleScript_EjectButtonActivates;
                                 AI_DATA->ejectButtonSwitch = TRUE;
                             }
                             else // Eject Pack
                             {
-                                if (!(gBattleResources->flags->flags[gBattlerTarget] & RESOURCE_FLAG_EMERGENCY_EXIT))
+                                if (!(gBattleResources->flags->flags[gBattlerTarget] & RESOURCE_FLAG_EMERGENCY_EXIT)
+                                    && !(gMovesInfo[gCurrentMove].effect == EFFECT_PARTING_SHOT && CanBattlerSwitch(gBattlerAttacker)))
                                 {
+                                    effect = TRUE;
+                                    gBattleStruct->usedEjectItem |= 1u << battler;
+                                    BattleScriptPushCursor();
                                     gBattlescriptCurrInstr = BattleScript_EjectPackActivates;
                                     AI_DATA->ejectPackSwitch = TRUE;
                                     gSpecialStatuses[gBattlerAttacker].preventLifeOrbDamage = TRUE;
@@ -10193,7 +10202,7 @@ static void Cmd_various(void)
         // Change stats.
         else if (cmd->case_ == 1)
         {
-            RecalcBattlerStats(battler, mon);
+            RecalcBattlerStats(battler, mon, FALSE);
         }
         // Update healthbox.
         else
@@ -14263,6 +14272,7 @@ static void Cmd_trysetfutureattack(void)
         gWishFutureKnock.futureSightBattlerIndex[gBattlerTarget] = gBattlerAttacker;
         gWishFutureKnock.futureSightPartyIndex[gBattlerTarget] = gBattlerPartyIndexes[gBattlerAttacker];
         gWishFutureKnock.futureSightCounter[gBattlerTarget] = 3;
+        gWishFutureKnock.futureSightDmg[gBattlerTarget] = 0;
 
         if (gCurrentMove == MOVE_DOOM_DESIRE)
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DOOM_DESIRE;

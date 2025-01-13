@@ -5193,7 +5193,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "Locks on to the foe.\n"
             "Raises accuracy sharply."),
-        .effect = EFFECT_ATTACK_ACCURACY_UP,  // to do: EFFECT_ACCURACY_UP_2
+        .effect = EFFECT_ACCURACY_UP_2,
         .power = 0,
         .type = TYPE_NEW_REASON,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_4 ? 0 : 100,
@@ -16854,7 +16854,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_SunsteelStrike,
+        .battleAnimScript = gBattleAnimMove_CompleteSmash,
     },
 
     [MOVE_MOONGEIST_BEAM] =  // Edited

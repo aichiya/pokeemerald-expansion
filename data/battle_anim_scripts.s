@@ -12094,6 +12094,18 @@ SpectralThiefBuffUp:
 	createsprite gSpectralThiefBlackBuffTemplate, ANIM_ATTACKER, 2, 0x0, 0xfff4, 0x0, 0x1
 	return
 
+gBattleAnimMove_CompleteSmash::
+	monbg ANIM_ATK_PARTNER
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 2, 0, 10, RGB_BLACK
+	waitforvisualfinish
+	playsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER
+	waitplaysewithpan SE_M_DETECT, SOUND_PAN_ATTACKER, 30
+	createvisualtask AnimTask_RolePlaySilhouette, 2
+	waitforvisualfinish
+	clearmonbg ANIM_ATK_PARTNER
+	delay 8
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 2, 10, 0, RGB_BLACK
+	delay 1
 gBattleAnimMove_SunsteelStrike::
 	loadspritegfx ANIM_TAG_ROUND_SHADOW @fly
 	loadspritegfx ANIM_TAG_AIR_WAVE_2 @black color
@@ -34378,6 +34390,17 @@ GuardianOfAlolaRockGeyser:
 
 
 gBattleAnimMove_SearingSunrazeSmash::
+	monbg ANIM_ATK_PARTNER
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 2, 0, 10, RGB_BLACK
+	waitforvisualfinish
+	playsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER
+	waitplaysewithpan SE_M_DETECT, SOUND_PAN_ATTACKER, 30
+	createvisualtask AnimTask_RolePlaySilhouette, 2
+	waitforvisualfinish
+	clearmonbg ANIM_ATK_PARTNER
+	delay 8
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 2, 10, 0, RGB_BLACK
+	delay 1
 	loadspritegfx ANIM_TAG_FOCUS_ENERGY @focus energy
 	loadspritegfx ANIM_TAG_SPARKLE_2 @sparkles
 	invisible ANIM_TARGET

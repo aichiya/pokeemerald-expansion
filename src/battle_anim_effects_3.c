@@ -3506,45 +3506,91 @@ void AnimTask_RolePlaySilhouette(u8 taskId)
     }
     else
     {
-        if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        if (gCurrentMove == MOVE_SUNSTEEL_STRIKE || gCurrentMove == MOVE_SEARING_SUNRAZE_SMASH)
         {
-            isBackPic = FALSE;
-            personality = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_PERSONALITY);
-            isShiny = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_IS_SHINY);
-            if (gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies == SPECIES_NONE)
+            if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
             {
-                if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
-                    species = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                isBackPic = FALSE;
+                personality = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_PERSONALITY);
+                isShiny = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_IS_SHINY);
+                if (gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies == SPECIES_NONE)
+                {
+                    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
+                        species = SPECIES_NECROZMA_ULTRA;
+                    else
+                        species = SPECIES_NECROZMA_ULTRA;
+                }
                 else
-                    species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                {
+                    species = SPECIES_NECROZMA_ULTRA;
+                }
+
+                xOffset = 20;
+                priority = GetBattlerSpriteBGPriority(gBattleAnimAttacker);
             }
             else
             {
-                species = gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies;
-            }
+                isBackPic = TRUE;
+                personality = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_PERSONALITY);
+                isShiny = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_IS_SHINY);
+                if (gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies == SPECIES_NONE)
+                {
+                    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
+                        species = SPECIES_NECROZMA_ULTRA;
+                    else
+                        species = SPECIES_NECROZMA_ULTRA;
+                }
+                else
+                {
+                    species = SPECIES_NECROZMA_ULTRA;
+                }
 
-            xOffset = 20;
-            priority = GetBattlerSpriteBGPriority(gBattleAnimAttacker);
+                xOffset = -20;
+                priority = GetBattlerSpriteBGPriority(gBattleAnimAttacker);
+            }
         }
         else
         {
-            isBackPic = TRUE;
-            personality = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_PERSONALITY);
-            isShiny = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_IS_SHINY);
-            if (gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies == SPECIES_NONE)
+            if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
             {
-                if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
-                    species = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                isBackPic = FALSE;
+                personality = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_PERSONALITY);
+                isShiny = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_IS_SHINY);
+                if (gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies == SPECIES_NONE)
+                {
+                    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
+                        species = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                    else
+                        species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                }
                 else
-                    species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                {
+                    species = gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies;
+                }
+
+                xOffset = 20;
+                priority = GetBattlerSpriteBGPriority(gBattleAnimAttacker);
             }
             else
             {
-                species = gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies;
-            }
+                isBackPic = TRUE;
+                personality = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_PERSONALITY);
+                isShiny = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_IS_SHINY);
+                if (gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies == SPECIES_NONE)
+                {
+                    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
+                        species = GetMonData(&gPlayerParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                    else
+                        species = GetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattleAnimTarget]], MON_DATA_SPECIES);
+                }
+                else
+                {
+                    species = gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies;
+                }
 
-            xOffset = -20;
-            priority = GetBattlerSpriteBGPriority(gBattleAnimAttacker);
+                xOffset = -20;
+                priority = GetBattlerSpriteBGPriority(gBattleAnimAttacker);
+            }
         }
     }
 

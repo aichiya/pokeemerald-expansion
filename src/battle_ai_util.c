@@ -3040,7 +3040,7 @@ bool32 AI_CanBeInfatuated(u32 battlerAtk, u32 battlerDef, u32 defAbility)
     if ((gBattleMons[battlerDef].status2 & STATUS2_INFATUATION)
       || AI_DATA->effectiveness[battlerAtk][battlerDef][AI_THINKING_STRUCT->movesetIndex] == AI_EFFECTIVENESS_x0
       || defAbility == ABILITY_OBLIVIOUS
-      || !AreBattlersOfOppositeGender(battlerAtk, battlerDef)
+//      || !AreBattlersOfOppositeGender(battlerAtk, battlerDef)
       || AI_IsAbilityOnSide(battlerDef, ABILITY_AROMA_VEIL))
         return FALSE;
     return TRUE;

@@ -669,6 +669,7 @@ extern const u8 gBattleAnimMove_Accelerock[];
 extern const u8 gBattleAnimMove_Liquidation[];
 extern const u8 gBattleAnimMove_PrismaticLaser[];
 extern const u8 gBattleAnimMove_SpectralThief[];
+extern const u8 gBattleAnimMove_CompleteSmash[];
 extern const u8 gBattleAnimMove_SunsteelStrike[];
 extern const u8 gBattleAnimMove_MoongeistBeam[];
 extern const u8 gBattleAnimMove_TearfulLook[];

@@ -17302,7 +17302,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Eliminates all stat changes."),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 100 : 90,
-        .type = TYPE_ICE,
+        .type = TYPE_NEW_ICE,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_8 ? 90 : 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_8 ? 10 : 15,
         .target = MOVE_TARGET_SELECTED,

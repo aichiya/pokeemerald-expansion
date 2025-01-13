@@ -851,22 +851,22 @@ static bool8 DoesTypePreventStatus(u16 species, u32 status)
     switch (status)
     {
     case STATUS1_TOXIC_POISON:
-        if (gSpeciesInfo[species].types[0] == TYPE_STEEL || gSpeciesInfo[species].types[0] == TYPE_POISON
-            || gSpeciesInfo[species].types[1] == TYPE_STEEL || gSpeciesInfo[species].types[1] == TYPE_POISON)
+        if (gSpeciesInfo[species].types[0] == TYPE_NEW_STEEL || gSpeciesInfo[species].types[0] == TYPE_NEW_MIASMA
+            || gSpeciesInfo[species].types[1] == TYPE_NEW_STEEL || gSpeciesInfo[species].types[1] == TYPE_NEW_MIASMA)
             ret = TRUE;
         break;
     case STATUS1_FREEZE:
     case STATUS1_FROSTBITE:
-        if (gSpeciesInfo[species].types[0] == TYPE_ICE || gSpeciesInfo[species].types[1] == TYPE_ICE)
+        if (gSpeciesInfo[species].types[0] == TYPE_NEW_ICE || gSpeciesInfo[species].types[1] == TYPE_NEW_ICE)
             ret = TRUE;
         break;
     case STATUS1_PARALYSIS:
-        if (gSpeciesInfo[species].types[0] == TYPE_GROUND || gSpeciesInfo[species].types[1] == TYPE_GROUND
-            || (B_PARALYZE_ELECTRIC >= GEN_6 && (gSpeciesInfo[species].types[0] == TYPE_ELECTRIC || gSpeciesInfo[species].types[1] == TYPE_ELECTRIC)))
+        if (gSpeciesInfo[species].types[0] == TYPE_NEW_EARTH || gSpeciesInfo[species].types[1] == TYPE_NEW_EARTH
+            || (B_PARALYZE_ELECTRIC >= GEN_6 && (gSpeciesInfo[species].types[0] == TYPE_ELECTRIC || gSpeciesInfo[species].types[1] == TYPE_NEW_ELECTRIC)))
             ret = TRUE;
         break;
     case STATUS1_BURN:
-        if (gSpeciesInfo[species].types[0] == TYPE_FIRE || gSpeciesInfo[species].types[1] == TYPE_FIRE)
+        if (gSpeciesInfo[species].types[0] == TYPE_NEW_FIRE || gSpeciesInfo[species].types[1] == TYPE_NEW_FIRE)
             ret = TRUE;
         break;
     case STATUS1_SLEEP:

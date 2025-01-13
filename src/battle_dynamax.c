@@ -335,8 +335,8 @@ u8 GetMaxMovePower(u32 move)
     }
 
     tier = GetMaxPowerTier(move);
-    if (gMovesInfo[move].type == TYPE_FIGHTING
-     || gMovesInfo[move].type == TYPE_POISON
+    if (gMovesInfo[move].type == TYPE_NEW_DREAM
+     || gMovesInfo[move].type == TYPE_NEW_MIASMA
      || move == MOVE_MULTI_ATTACK)
     {
         switch (tier)
@@ -454,16 +454,16 @@ void ChooseDamageNonTypesString(u8 type)
 {
     switch (type)
     {
-        case TYPE_GRASS:
+        case TYPE_NEW_NATURE:
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRAPPED_WITH_VINES;
             break;
-        case TYPE_WATER:
+        case TYPE_NEW_WATER:
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CAUGHT_IN_VORTEX;
             break;
-        case TYPE_FIRE:
+        case TYPE_NEW_FIRE:
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SURROUNDED_BY_FIRE;
             break;
-        case TYPE_ROCK:
+        case TYPE_NEW_EARTH:
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SURROUNDED_BY_ROCKS;
             break;
     }

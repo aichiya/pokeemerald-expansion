@@ -2474,14 +2474,14 @@ static void Cmd_datahpupdate(void)
                 }
 
                 // Record damage for Shell Bell
-                if (gSpecialStatuses[battler].shellBellDmg == 0 && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE))
+                if (gSpecialStatuses[gBattlerTarget].shellBellDmg == IGNORE_SHELL_BELL)
+                    gSpecialStatuses[battler].shellBellDmg = 0;
+                else if (gSpecialStatuses[battler].shellBellDmg == 0 && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE))
                     gSpecialStatuses[battler].shellBellDmg = gHpDealt;
 
                 // Record damage for foreseen moves
-                if (gWishFutureKnock.futureSightDmg[battler] == 0
-                  && gMovesInfo[gWishFutureKnock.futureSightMove[battler]].effect == EFFECT_FUTURE_SIGHT)
-                    gWishFutureKnock.futureSightDmg[battler] = gHpDealt;
-                
+                gWishFutureKnock.futureSightDmg = gHpDealt;
+
                 // Note: While physicalDmg/specialDmg below are only distinguished between for Counter/Mirror Coat, they are
                 //       used in combination as general damage trackers for other purposes. specialDmg is additionally used
                 //       to help determine if a fire move should defrost the target.
@@ -6978,7 +6978,7 @@ static void Cmd_switchinanim(void)
 {
     u32 battler;
 
-    CMD_ARGS(u8 battler, bool8 dontClearSubstitute);
+    CMD_ARGS(u8 battler, bool8 dontClearTransform, bool8 dontClearSubstitute);
 
     if (gBattleControllerExecFlags)
         return;
@@ -6995,7 +6995,7 @@ static void Cmd_switchinanim(void)
 
     gAbsentBattlerFlags &= ~(1u << battler);
 
-    BtlController_EmitSwitchInAnim(battler, BUFFER_A, gBattlerPartyIndexes[battler], cmd->dontClearSubstitute);
+    BtlController_EmitSwitchInAnim(battler, BUFFER_A, gBattlerPartyIndexes[battler], cmd->dontClearTransform, cmd->dontClearSubstitute);
     MarkBattlerForControllerExec(battler);
 
     gBattlescriptCurrInstr = cmd->nextInstr;
@@ -14272,7 +14272,7 @@ static void Cmd_trysetfutureattack(void)
         gWishFutureKnock.futureSightBattlerIndex[gBattlerTarget] = gBattlerAttacker;
         gWishFutureKnock.futureSightPartyIndex[gBattlerTarget] = gBattlerPartyIndexes[gBattlerAttacker];
         gWishFutureKnock.futureSightCounter[gBattlerTarget] = 3;
-        gWishFutureKnock.futureSightDmg[gBattlerTarget] = 0;
+        gWishFutureKnock.futureSightDmg = 0;
 
         if (gCurrentMove == MOVE_DOOM_DESIRE)
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DOOM_DESIRE;

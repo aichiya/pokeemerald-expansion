@@ -925,84 +925,179 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
     struct Pokemon *monAtk = GetPartyBattlerData(battlerAtk);
     struct Pokemon *monDef = GetPartyBattlerData(battlerDef);
     void *dst;
-
-    if (IsContest())
+    
+    if (gCurrentMove == MOVE_FLUFFICATION)
     {
-        position = B_POSITION_PLAYER_LEFT;
-        targetSpecies = gContestResources->moveAnim->targetSpecies;
-        personalityValue = gContestResources->moveAnim->personality;
-        isShiny = gContestResources->moveAnim->isShiny;
-
-        HandleLoadSpecialPokePic(FALSE,
-                                 gMonSpritesGfxPtr->spritesGfx[position],
-                                 targetSpecies,
-                                 gContestResources->moveAnim->targetPersonality);
-    }
-    else
-    {
-        position = GetBattlerPosition(battlerAtk);
-        if (gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies == SPECIES_NONE)
+        if (IsContest())
         {
-            // Get base form if its currently Gigantamax
-            if (IsGigantamaxed(battlerDef))
-                targetSpecies = gBattleStruct->changedSpecies[GetBattlerSide(battlerDef)][gBattlerPartyIndexes[battlerDef]];
-            else
-                targetSpecies = GetMonData(monDef, MON_DATA_SPECIES);
-            personalityValue = GetMonData(monAtk, MON_DATA_PERSONALITY);
-            isShiny = GetMonData(monAtk, MON_DATA_IS_SHINY);
+            position = B_POSITION_PLAYER_LEFT;
+            targetSpecies = gContestResources->moveAnim->targetSpecies;
+            personalityValue = gContestResources->moveAnim->personality;
+            isShiny = gContestResources->moveAnim->isShiny;
+
+            HandleLoadSpecialPokePic(FALSE,
+                                    gMonSpritesGfxPtr->spritesGfx[position],
+                                    targetSpecies,
+                                    gContestResources->moveAnim->targetPersonality);
         }
         else
         {
-            targetSpecies = gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies;
-            if (B_TRANSFORM_SHINY >= GEN_4 && trackEnemyPersonality && !megaEvo)
+            position = GetBattlerPosition(battlerDef);
+            if (gBattleSpritesDataPtr->battlerData[battlerDef].transformSpecies == SPECIES_NONE)
             {
+                // Get base form if its currently Gigantamax
+                if (IsGigantamaxed(battlerDef))
+                    targetSpecies = SPECIES_MAGIKARP;
+                else
+                    targetSpecies = SPECIES_MAGIKARP;
                 personalityValue = GetMonData(monDef, MON_DATA_PERSONALITY);
                 isShiny = GetMonData(monDef, MON_DATA_IS_SHINY);
             }
             else
             {
-                personalityValue = GetMonData(monAtk, MON_DATA_PERSONALITY);
-                isShiny = GetMonData(monAtk, MON_DATA_IS_SHINY);
+                targetSpecies = SPECIES_MAGIKARP;
+                if (B_TRANSFORM_SHINY >= GEN_4 && trackEnemyPersonality && !megaEvo)
+                {
+                    personalityValue = GetMonData(monDef, MON_DATA_PERSONALITY);
+                    isShiny = GetMonData(monDef, MON_DATA_IS_SHINY);
+                }
+                else
+                {
+                    personalityValue = GetMonData(monDef, MON_DATA_PERSONALITY);
+                    isShiny = GetMonData(monDef, MON_DATA_IS_SHINY);
+                }
+            }
+
+            HandleLoadSpecialPokePic((GetBattlerSide(battlerDef) != B_SIDE_PLAYER),
+                                    gMonSpritesGfxPtr->spritesGfx[position],
+                                    targetSpecies,
+                                    personalityValue);
+        }
+        src = gMonSpritesGfxPtr->spritesGfx[position];
+        dst = (void *)(OBJ_VRAM0 + gSprites[gBattlerSpriteIds[battlerDef]].oam.tileNum * 32);
+        DmaCopy32(3, src, dst, MON_PIC_SIZE);
+        paletteOffset = OBJ_PLTT_ID(battlerDef);
+        lzPaletteData = GetMonSpritePalFromSpeciesAndPersonality(targetSpecies, isShiny, personalityValue);
+        LZDecompressWram(lzPaletteData, gDecompressionBuffer);
+        LoadPalette(gDecompressionBuffer, paletteOffset, PLTT_SIZE_4BPP);
+
+        if (!megaEvo)
+        {
+            BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
+            CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
+            if (!IsContest())
+            {
+                gBattleSpritesDataPtr->battlerData[battlerDef].transformSpecies = targetSpecies;
             }
         }
 
-        HandleLoadSpecialPokePic((GetBattlerSide(battlerAtk) != B_SIDE_PLAYER),
-                                 gMonSpritesGfxPtr->spritesGfx[position],
-                                 targetSpecies,
-                                 personalityValue);
-    }
-
-    if (!megaEvo)
-    {
-        BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
-        CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
-        if (!IsContest())
+        // dynamax tint
+        if (GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX)
         {
-            gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies = targetSpecies;
+            // Calyrex and its forms have a blue dynamax aura instead of red.
+            if (GET_BASE_SPECIES_ID(targetSpecies) == SPECIES_CALYREX)
+                BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
+            else
+                BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
+            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
         }
-    }
 
-    // dynamax tint
-    if (GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX)
+        // Terastallization's tint
+        if (GetActiveGimmick(battlerAtk) == GIMMICK_TERA)
+        {
+            BlendPalette(paletteOffset, 16, 8, GetTeraTypeRGB(GetBattlerTeraType(battlerDef)));
+            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
+        }
+
+        gSprites[gBattlerSpriteIds[battlerAtk]].y = GetBattlerSpriteDefault_Y(battlerDef);
+        StartSpriteAnim(&gSprites[gBattlerSpriteIds[battlerDef]], 0);
+    }
+    else
     {
-        // Calyrex and its forms have a blue dynamax aura instead of red.
-        if (GET_BASE_SPECIES_ID(targetSpecies) == SPECIES_CALYREX)
-            BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
+        if (IsContest())
+        {
+            position = B_POSITION_PLAYER_LEFT;
+            targetSpecies = gContestResources->moveAnim->targetSpecies;
+            personalityValue = gContestResources->moveAnim->personality;
+            isShiny = gContestResources->moveAnim->isShiny;
+
+            HandleLoadSpecialPokePic(FALSE,
+                                    gMonSpritesGfxPtr->spritesGfx[position],
+                                    targetSpecies,
+                                    gContestResources->moveAnim->targetPersonality);
+        }
         else
-            BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
-        CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
-    }
+        {
+            position = GetBattlerPosition(battlerAtk);
+            if (gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies == SPECIES_NONE)
+            {
+                // Get base form if its currently Gigantamax
+                if (IsGigantamaxed(battlerDef))
+                    targetSpecies = gBattleStruct->changedSpecies[GetBattlerSide(battlerDef)][gBattlerPartyIndexes[battlerDef]];
+                else
+                    targetSpecies = GetMonData(monDef, MON_DATA_SPECIES);
+                personalityValue = GetMonData(monAtk, MON_DATA_PERSONALITY);
+                isShiny = GetMonData(monAtk, MON_DATA_IS_SHINY);
+            }
+            else
+            {
+                targetSpecies = gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies;
+                if (B_TRANSFORM_SHINY >= GEN_4 && trackEnemyPersonality && !megaEvo)
+                {
+                    personalityValue = GetMonData(monDef, MON_DATA_PERSONALITY);
+                    isShiny = GetMonData(monDef, MON_DATA_IS_SHINY);
+                }
+                else
+                {
+                    personalityValue = GetMonData(monAtk, MON_DATA_PERSONALITY);
+                    isShiny = GetMonData(monAtk, MON_DATA_IS_SHINY);
+                }
+            }
 
-    // Terastallization's tint
-    if (GetActiveGimmick(battlerAtk) == GIMMICK_TERA)
-    {
-        BlendPalette(paletteOffset, 16, 8, GetTeraTypeRGB(GetBattlerTeraType(battlerAtk)));
-        CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
-    }
+            HandleLoadSpecialPokePic((GetBattlerSide(battlerAtk) != B_SIDE_PLAYER),
+                                    gMonSpritesGfxPtr->spritesGfx[position],
+                                    targetSpecies,
+                                    personalityValue);
+        }
+        src = gMonSpritesGfxPtr->spritesGfx[position];
+        dst = (void *)(OBJ_VRAM0 + gSprites[gBattlerSpriteIds[battlerAtk]].oam.tileNum * 32);
+        DmaCopy32(3, src, dst, MON_PIC_SIZE);
+        paletteOffset = OBJ_PLTT_ID(battlerAtk);
+        lzPaletteData = GetMonSpritePalFromSpeciesAndPersonality(targetSpecies, isShiny, personalityValue);
+        LZDecompressWram(lzPaletteData, gDecompressionBuffer);
+        LoadPalette(gDecompressionBuffer, paletteOffset, PLTT_SIZE_4BPP);
 
-    gSprites[gBattlerSpriteIds[battlerAtk]].y = GetBattlerSpriteDefault_Y(battlerAtk);
-    StartSpriteAnim(&gSprites[gBattlerSpriteIds[battlerAtk]], 0);
-	
+        if (!megaEvo)
+        {
+            BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
+            CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
+            if (!IsContest())
+            {
+                gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies = targetSpecies;
+            }
+        }
+
+        // dynamax tint
+        if (GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX)
+        {
+            // Calyrex and its forms have a blue dynamax aura instead of red.
+            if (GET_BASE_SPECIES_ID(targetSpecies) == SPECIES_CALYREX)
+                BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
+            else
+                BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
+            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
+        }
+
+        // Terastallization's tint
+        if (GetActiveGimmick(battlerAtk) == GIMMICK_TERA)
+        {
+            BlendPalette(paletteOffset, 16, 8, GetTeraTypeRGB(GetBattlerTeraType(battlerAtk)));
+            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
+        }
+
+        gSprites[gBattlerSpriteIds[battlerAtk]].y = GetBattlerSpriteDefault_Y(battlerAtk);
+        StartSpriteAnim(&gSprites[gBattlerSpriteIds[battlerAtk]], 0);
+    }
 	VarSet(VAR_UNUSED_0x40F8, 0);
 }
 

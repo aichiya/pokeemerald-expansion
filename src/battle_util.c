@@ -10995,7 +10995,7 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(u32 move, u32 mov
     if (!IsBattlerGrounded(battlerDef) && (gMovesInfo[move].ignoreTypeIfFlyingAndUngrounded)
         && (GetBattlerType(battlerDef, 0, FALSE) == TYPE_NEW_FLYING || GetBattlerType(battlerDef, 1, FALSE) == TYPE_NEW_FLYING || GetBattlerType(battlerDef, 2, FALSE) == TYPE_NEW_FLYING))
     {
-        if (moveType = TYPE_NEW_EARTH)
+        if (moveType == TYPE_NEW_EARTH)
             modifier = UQ_4_12(2.0);
         else
             modifier = UQ_4_12(1.0);

@@ -1601,8 +1601,9 @@
 #define MUS_OMORI_WORLDS_END_VALENTINE 1628
 #define MUS_BGHS_BELIEVE 1629
 #define MUS_PKMN_XD_VS_CIPHER_PEON 1630
+#define MUS_LENEN_BW_TWIN_BIRDS 1631
 
-#define END_MUS 					MUS_PKMN_XD_VS_CIPHER_PEON
+#define END_MUS 					MUS_LENEN_BW_TWIN_BIRDS
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

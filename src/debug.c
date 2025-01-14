@@ -5850,6 +5850,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_OMORI_WORLDS_END_VALENTINE) \
     X(MUS_BGHS_BELIEVE) \
     X(MUS_PKMN_XD_VS_CIPHER_PEON) \
+    X(MUS_LENEN_BW_TWIN_BIRDS) \ 
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

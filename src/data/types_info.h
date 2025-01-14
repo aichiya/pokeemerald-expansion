@@ -299,8 +299,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_GRASS] =
     {
-        .name = _("Grass"),
-        .generic = _("a Grass move"),
+        .name = _("Nature"),
+        .generic = _("a Nature move"),
         .palette = 15,
         .zMove = MOVE_BLOOM_DOOM,
         .maxMove = MOVE_MAX_OVERGROWTH,

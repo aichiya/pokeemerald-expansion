@@ -2332,7 +2332,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "Throws rocks that may\n"
             "cause flinching."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
         .power = 85,
         .type = TYPE_NEW_EARTH,
         .accuracy = 90,
@@ -2340,6 +2340,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ignoreTypeIfFlyingAndUngrounded = TRUE,
+        .argument = TYPE_NEW_FLYING,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FLINCH,
             .chance = 30,
@@ -4115,10 +4117,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Stone Rain"),
         .description = COMPOUND_STRING(
-            "Rain of stone hits airborne\n"
-            "enemies. Hits physically."),
+            "Rain of stones hits flying\n"
+            "foes. Hits physically."),
         .effect = EFFECT_PSYSHOCK,
-        .power = 75,
+        .power = 100,
         .type = TYPE_NEW_EARTH,
         .accuracy = 90,
         .pp = 10,
@@ -4127,6 +4129,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .damagesAirborne = TRUE,
         .ignoreTypeIfFlyingAndUngrounded = TRUE,
+//        .argument = TYPE_NEW_FLYING,
 //        .additionalEffects = ADDITIONAL_EFFECTS({
 //            .moveEffect = MOVE_EFFECT_FLINCH,
 //            .chance = 30,
@@ -6917,7 +6920,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "A swift bullet that\n"
             "will strike first."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
         .power = 40,
         .type = TYPE_NEW_EARTH,
         .accuracy = 100,
@@ -6925,7 +6928,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 1,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .metronomeBanned = B_UPDATED_MOVE_FLAGS >= GEN_4,
+        .argument = TYPE_NEW_FLYING,
+        .ignoreTypeIfFlyingAndUngrounded = TRUE,
+        .ballisticMove = TRUE,
+//        .metronomeBanned = B_UPDATED_MOVE_FLAGS >= GEN_4,
 //        .copycatBanned = TRUE,
 //        .sleepTalkBanned = TRUE,
 //        .instructBanned = TRUE,
@@ -8199,7 +8205,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "Stops the foe from moving\n"
             "with rocks and cuts Speed."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 50,
         .type = TYPE_NEW_EARTH,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_6 ? 95 : 80,
@@ -8207,6 +8213,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ignoreTypeIfFlyingAndUngrounded = TRUE,
+        .argument = TYPE_NEW_FLYING,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
             .chance = 100,
@@ -9026,7 +9034,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "Hurls boulders 2-5 times.\n"
             "Also hits flying foe."),
-        .effect = EFFECT_MULTI_HIT,
+        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
         .power = 25,
         .type = TYPE_NEW_EARTH,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 90 : 80,
@@ -9035,6 +9043,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .ignoreTypeIfFlyingAndUngrounded = TRUE,
+        .argument = TYPE_NEW_FLYING,
         .ballisticMove = B_UPDATED_MOVE_FLAGS >= GEN_6,
         .contestEffect = CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -11199,7 +11208,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "Violent rock crush. May\n"
             "raises user defense."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
         .power = 120,
         .type = TYPE_NEW_EARTH,
         .accuracy = 80,
@@ -11208,6 +11217,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .ballisticMove = TRUE,
+        .ignoreTypeIfFlyingAndUngrounded = TRUE,
+        .argument = TYPE_NEW_FLYING,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_DEF_PLUS_1,
             .self = TRUE,
@@ -11329,13 +11340,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "High critical-hit ratio."),
         .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
         .power = 100,
-        .type = TYPE_ROCK,
+        .type = TYPE_NEW_EARTH,
         .accuracy = 80,
         .criticalHitStage = 2,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ignoreTypeIfFlyingAndUngrounded = TRUE,
         .argument = TYPE_NEW_FLYING,
         .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -12183,14 +12195,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = gBattleAnimMove_MagicRoom,
     },
 
-    [MOVE_SMACK_DOWN] =  // Edited effect
+    [MOVE_SMACK_DOWN] =  // MOVE_NEW_SHOT_DOWN Edited effect power
     {
-        .name = COMPOUND_STRING("Smack Down"),
+        .name = COMPOUND_STRING("Shot Down"),
         .description = COMPOUND_STRING(
             "Throws a rock to knock the\n"
             "foe down to the ground."),
         .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
-        .power = 50,
+        .power = 60,
         .type = TYPE_NEW_EARTH,
         .accuracy = 100,
         .pp = 15,
@@ -16401,9 +16413,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = gBattleAnimMove_RevelationDance,
     },
 
-    [MOVE_CORE_ENFORCER] =  // MOVE_NEW_DESTRUCTION_RAY Edited name
+    [MOVE_CORE_ENFORCER] =  // MOVE_NEW_PURIFICATION_RAY Edited name
     {
-        .name = COMPOUND_STRING("Destruction Ray"),
+        .name = COMPOUND_STRING("Purification Ray"),
         .description = COMPOUND_STRING(
             "Hits with a ray that\n"
             "nullifies the foe's ability."),
@@ -16736,8 +16748,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Rock Turbo"),
         .description = COMPOUND_STRING(
-            "Strike that goes first.\n"
-            "Effective vs. flying foes."),
+            "Strike that goes first\n"
+            "with a high-pressured rock."),
         .effect = EFFECT_HIT,
         .power = 40,
         .type = TYPE_NEW_EARTH,
@@ -16746,7 +16758,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 1,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .ignoreTypeIfFlyingAndUngrounded = TRUE,
+//        .ignoreTypeIfFlyingAndUngrounded = TRUE,
         .makesContact = TRUE,
         .contestEffect = CONTEST_EFFECT_NEXT_APPEAL_EARLIER,
         .contestCategory = CONTEST_CATEGORY_TOUGH,

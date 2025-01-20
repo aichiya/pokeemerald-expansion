@@ -2,7 +2,7 @@
   "id": "MAP_SLATEPORT_CITY",
   "name": "SlateportCity",
   "layout": "LAYOUT_SLATEPORT_CITY",
-  "music": "MUS_SLATEPORT",
+  "music": "MUS_HG_ECRUTEAK",
   "region_map_section": "MAPSEC_JOHTO_ECRUTEAK_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -14,19 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE110",
-      "offset": 0,
-      "direction": "up"
+      "map": "MAP_JOHTO_ROUTE38",
+      "offset": 28,
+      "direction": "left"
     },
     {
-      "map": "MAP_ROUTE109",
-      "offset": 0,
+      "map": "MAP_JOHTO_ROUTE37",
+      "offset": 14,
       "direction": "down"
-    },
-    {
-      "map": "MAP_ROUTE134",
-      "offset": 0,
-      "direction": "right"
     }
   ],
   "object_events": [

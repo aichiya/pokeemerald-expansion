@@ -4,20 +4,20 @@
     {
       "id": "LAYOUT_PETALBURG_CITY",
       "name": "PetalburgCity_Layout",
-      "width": 30,
-      "height": 30,
+      "width": 46,
+      "height": 42,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/PetalburgCity/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgCity/map.bin"
     },
     {
       "id": "LAYOUT_SLATEPORT_CITY",
       "name": "SlateportCity_Layout",
-      "width": 40,
+      "width": 48,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/SlateportCity/border.bin",
       "blockdata_filepath": "data/layouts/SlateportCity/map.bin"
     },
@@ -124,20 +124,20 @@
     {
       "id": "LAYOUT_LAVARIDGE_TOWN",
       "name": "LavaridgeTown_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 44,
+      "height": 46,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/LavaridgeTown/border.bin",
       "blockdata_filepath": "data/layouts/LavaridgeTown/map.bin"
     },
     {
       "id": "LAYOUT_FALLARBOR_TOWN",
       "name": "FallarborTown_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 44,
+      "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/FallarborTown/border.bin",
       "blockdata_filepath": "data/layouts/FallarborTown/map.bin"
     },
@@ -154,10 +154,10 @@
     {
       "id": "LAYOUT_PACIFIDLOG_TOWN",
       "name": "PacifidlogTown_Layout",
-      "width": 20,
-      "height": 40,
+      "width": 60,
+      "height": 46,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/PacifidlogTown/border.bin",
       "blockdata_filepath": "data/layouts/PacifidlogTown/map.bin"
     },
@@ -2627,7 +2627,7 @@
       "width": 40,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/Route130/border.bin",
       "blockdata_filepath": "data/layouts/Route130/map.bin"
     },
@@ -4434,10 +4434,10 @@
     {
       "id": "LAYOUT_JOHTO_ROUTE41",
       "name": "JohtoRoute41_Layout",
-      "width": 50,
+      "width": 105,
       "height": 54,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/JohtoRoute41/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute41/map.bin"
     },
@@ -4447,7 +4447,7 @@
       "width": 32,
       "height": 200,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/JohtoRoute40/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute40/map.bin"
     },
@@ -4467,7 +4467,7 @@
       "width": 136,
       "height": 32,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
       "border_filepath": "data/layouts/JohtoRoute50/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute50/map.bin"
     },
@@ -4480,6 +4480,126 @@
       "secondary_tileset": "gTileset_TrimmedGensokyo",
       "border_filepath": "data/layouts/TrimmedGensokyo/border.bin",
       "blockdata_filepath": "data/layouts/TrimmedGensokyo/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE51",
+      "name": "JohtoRoute51_Layout",
+      "width": 76,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/JohtoRoute51/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute51/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE39",
+      "name": "JohtoRoute39_Layout",
+      "width": 22,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/JohtoRoute39/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute39/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE38",
+      "name": "JohtoRoute38_Layout",
+      "width": 40,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/JohtoRoute38/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute38/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE37",
+      "name": "JohtoRoute37_Layout",
+      "width": 50,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/JohtoRoute37/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute37/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE36",
+      "name": "JohtoRoute36_Layout",
+      "width": 50,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/JohtoRoute36/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute36/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE35",
+      "name": "JohtoRoute35_Layout",
+      "width": 48,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/JohtoRoute35/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute35/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE34",
+      "name": "JohtoRoute34_Layout",
+      "width": 30,
+      "height": 104,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/JohtoRoute34/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute34/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_GOLDENROD_DOME",
+      "name": "JohtoGoldenrodDome_Layout",
+      "width": 43,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideWest",
+      "border_filepath": "data/layouts/JohtoGoldenrodDome/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoGoldenrodDome/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE32",
+      "name": "JohtoRoute32_Layout",
+      "width": 30,
+      "height": 140,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/JohtoRoute32/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute32/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE33",
+      "name": "JohtoRoute33_Layout",
+      "width": 30,
+      "height": 70,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/JohtoRoute33/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute33/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ILEX_FOREST_OUTER",
+      "name": "JohtoIlexForestOuter_Layout",
+      "width": 25,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/JohtoIlexForestOuter/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoIlexForestOuter/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_RUINS_OF_ALPH",
+      "name": "JohtoRuinsOfAlph_Layout",
+      "width": 26,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/JohtoRuinsOfAlph/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRuinsOfAlph/map.bin"
     }
   ]
 }

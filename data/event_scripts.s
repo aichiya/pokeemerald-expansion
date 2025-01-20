@@ -1118,12 +1118,13 @@ EventScript_TrimmedGensokyoWaterEncounter::
 
 EventScript_TrimmedGensokyoLandEncounter::
     lockall
-	setvar VAR_GIFTMON_METLOC_SETTING, MAPSEC_ETC_TRIMMED_GENSOKYO
-	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_SPECIAL_GIFT
-	setvar VAR_GIFTMON_OT_SETTING, 69
-	setwildbattle SPECIES_PIDGEOT, 69, ITEM_STAR_PIECE
-	dowildbattle
-	releaseall
+	goto TrimmedGensokyo_EventScript_Debug1
+@	setvar VAR_GIFTMON_METLOC_SETTING, MAPSEC_ETC_TRIMMED_GENSOKYO
+@	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_SPECIAL_GIFT
+@	setvar VAR_GIFTMON_OT_SETTING, 69
+@	setwildbattle SPECIES_PIDGEOT, 69, ITEM_STAR_PIECE
+@	dowildbattle
+@	releaseall
 	end
 
 	.include "data/scripts/pc_transfer.inc"
@@ -1194,3 +1195,27 @@ EventScript_TrimmedGensokyoLandEncounter::
 	.include "data/maps/JohtoRoute50/scripts.inc"
 
 	.include "data/maps/TrimmedGensokyo/scripts.inc"
+
+	.include "data/maps/JohtoRoute51/scripts.inc"
+
+	.include "data/maps/JohtoRoute39/scripts.inc"
+
+	.include "data/maps/JohtoRoute38/scripts.inc"
+
+	.include "data/maps/JohtoRoute37/scripts.inc"
+
+	.include "data/maps/JohtoRoute36/scripts.inc"
+
+	.include "data/maps/JohtoRoute35/scripts.inc"
+
+	.include "data/maps/JohtoRoute34/scripts.inc"
+
+	.include "data/maps/JohtoGoldenrodDome/scripts.inc"
+
+	.include "data/maps/JohtoRoute32/scripts.inc"
+
+	.include "data/maps/JohtoRoute33/scripts.inc"
+
+	.include "data/maps/JohtoIlexForestOuter/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph/scripts.inc"

@@ -1,0 +1,44 @@
+{
+  "id": "MAP_JOHTO_ROUTE51",
+  "name": "JohtoRoute51",
+  "layout": "LAYOUT_JOHTO_ROUTE51",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_JOHTO_ROUTE_51",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_JOHTO_ROUTE50",
+      "offset": -60,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_JOHTO_ROUTE49",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE130",
+      "offset": -32,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

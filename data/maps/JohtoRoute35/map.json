@@ -1,0 +1,44 @@
+{
+  "id": "MAP_JOHTO_ROUTE35",
+  "name": "JohtoRoute35",
+  "layout": "LAYOUT_JOHTO_ROUTE35",
+  "music": "MUS_HG_ROUTE34",
+  "region_map_section": "MAPSEC_JOHTO_ROUTE_35",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_JOHTO_ROUTE36",
+      "offset": 24,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_PACIFIDLOG_TOWN",
+      "offset": -7,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_JOHTO_RUINS_OF_ALPH",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

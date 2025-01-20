@@ -2,11 +2,11 @@
   "id": "MAP_PACIFIDLOG_TOWN",
   "name": "PacifidlogTown",
   "layout": "LAYOUT_PACIFIDLOG_TOWN",
-  "music": "MUS_LILYCOVE",
+  "music": "MUS_HG_GOLDENROD",
   "region_map_section": "MAPSEC_JOHTO_GOLDENROD_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_TOWN",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -14,14 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE132",
-      "offset": 0,
-      "direction": "left"
+      "map": "MAP_JOHTO_ROUTE35",
+      "offset": 7,
+      "direction": "up"
     },
     {
-      "map": "MAP_ROUTE131",
-      "offset": 0,
-      "direction": "right"
+      "map": "MAP_JOHTO_ROUTE34",
+      "offset": 12,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_JOHTO_GOLDENROD_DOME",
+      "offset": 20,
+      "direction": "left"
     }
   ],
   "object_events": [

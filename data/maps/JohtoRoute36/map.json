@@ -1,0 +1,49 @@
+{
+  "id": "MAP_JOHTO_ROUTE36",
+  "name": "JohtoRoute36",
+  "layout": "LAYOUT_JOHTO_ROUTE36",
+  "music": "MUS_HG_ROUTE34",
+  "region_map_section": "MAPSEC_JOHTO_ROUTE_36",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_JOHTO_ROUTE37",
+      "offset": 10,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_JOHTO_ROUTE35",
+      "offset": -24,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_LAVARIDGE_TOWN",
+      "offset": -6,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_JOHTO_RUINS_OF_ALPH",
+      "offset": 24,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

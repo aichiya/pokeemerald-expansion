@@ -1956,7 +1956,7 @@
 	@ Gives the player an Egg of the specified species.
 	@ VAR_RESULT will be set to MON_GIVEN_TO_PARTY, MON_GIVEN_TO_PC, or MON_CANT_GIVE depending on the outcome.
 	.macro giveeggmiracle species:req
-	.byte 0xe5
+	.byte SCR_OP_GIVEEGGMIRACLE
 	.2byte \species
 	.endm
 

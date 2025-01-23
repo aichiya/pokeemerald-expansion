@@ -2,7 +2,7 @@
   "id": "MAP_LILYCOVE_CITY",
   "name": "LilycoveCity",
   "layout": "LAYOUT_LILYCOVE_CITY",
-  "music": "MUS_LILYCOVE",
+  "music": "MUS_HG_POKEMON_LEAGUE",
   "region_map_section": "MAPSEC_JOHTO_MT_SILVER",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -14,13 +14,8 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE121",
-      "offset": 10,
-      "direction": "left"
-    },
-    {
-      "map": "MAP_ROUTE124",
-      "offset": -10,
+      "map": "MAP_JOHTO_ROUTE28",
+      "offset": 18,
       "direction": "right"
     }
   ],
@@ -131,8 +126,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 57,
-      "y": 17,
+      "x": 29,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -144,8 +139,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
-      "x": 73,
-      "y": 15,
+      "x": 30,
+      "y": 24,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -157,8 +152,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 61,
-      "y": 36,
+      "x": 38,
+      "y": 31,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -170,8 +165,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
-      "x": 43,
-      "y": 18,
+      "x": 35,
+      "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -183,8 +178,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
-      "x": 46,
-      "y": 12,
+      "x": 33,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -196,8 +191,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
-      "x": 45,
-      "y": 12,
+      "x": 32,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -222,8 +217,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 50,
-      "y": 7,
+      "x": 23,
+      "y": 9,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -356,8 +351,8 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 70,
-      "y": 5,
+      "x": 32,
+      "y": 8,
       "elevation": 1,
       "dest_map": "MAP_AQUA_HIDEOUT_1F",
       "dest_warp_id": "0"
@@ -370,15 +365,15 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 42,
-      "y": 6,
+      "x": 37,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_LILYCOVE_CITY_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 55,
-      "y": 15,
+      "x": 30,
+      "y": 10,
       "elevation": 0,
       "dest_map": "MAP_LILYCOVE_CITY_HOUSE2",
       "dest_warp_id": "0"

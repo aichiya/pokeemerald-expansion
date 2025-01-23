@@ -2,7 +2,7 @@
   "id": "MAP_RUSTBORO_CITY",
   "name": "RustboroCity",
   "layout": "LAYOUT_RUSTBORO_CITY",
-  "music": "MUS_RUSTBORO",
+  "music": "MUS_RG_SEVII_ROUTE",
   "region_map_section": "MAPSEC_JOHTO_LAKE_OF_RAGE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -14,19 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE115",
-      "offset": 0,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_ROUTE104",
-      "offset": 0,
+      "map": "MAP_JOHTO_ROUTE43",
+      "offset": 8,
       "direction": "down"
-    },
-    {
-      "map": "MAP_ROUTE116",
-      "offset": 0,
-      "direction": "right"
     }
   ],
   "object_events": [

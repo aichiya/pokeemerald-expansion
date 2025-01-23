@@ -1,0 +1,39 @@
+{
+  "id": "MAP_JOHTO_ROUTE31",
+  "name": "JohtoRoute31",
+  "layout": "LAYOUT_JOHTO_ROUTE31",
+  "music": "MUS_HG_ROUTE30",
+  "region_map_section": "MAPSEC_JOHTO_ROUTE_31",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_LAVARIDGE_TOWN",
+      "offset": -22,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_JOHTO_ROUTE30",
+      "offset": 18,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

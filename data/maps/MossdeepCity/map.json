@@ -2,7 +2,7 @@
   "id": "MAP_MOSSDEEP_CITY",
   "name": "MossdeepCity",
   "layout": "LAYOUT_MOSSDEEP_CITY",
-  "music": "MUS_RUSTBORO",
+  "music": "MUS_HG_POKEMON_LEAGUE",
   "region_map_section": "MAPSEC_JOHTO_INDIGO_PLATEAU",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -14,26 +14,16 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE125",
-      "offset": 0,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_ROUTE127",
+      "map": "MAP_JOHTO_ROUTE26",
       "offset": 0,
       "direction": "down"
-    },
-    {
-      "map": "MAP_ROUTE124",
-      "offset": -40,
-      "direction": "left"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
-      "x": 38,
-      "y": 12,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -45,8 +35,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 50,
-      "y": 34,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -58,8 +48,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
-      "x": 32,
-      "y": 12,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -71,8 +61,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 26,
-      "y": 21,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 0,
@@ -84,8 +74,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
-      "x": 45,
-      "y": 18,
+      "x": 0,
+      "y": 0,
       "elevation": 7,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -97,8 +87,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 62,
-      "y": 35,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -110,8 +100,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_1",
-      "x": 55,
-      "y": 5,
+      "x": 0,
+      "y": 0,
       "elevation": 7,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -123,8 +113,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "x": 56,
-      "y": 21,
+      "x": 0,
+      "y": 0,
       "elevation": 7,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -136,8 +126,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
-      "x": 23,
-      "y": 13,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -149,8 +139,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 44,
-      "y": 23,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -162,8 +152,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 44,
-      "y": 24,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -175,8 +165,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 44,
-      "y": 25,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -188,8 +178,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
-      "x": 44,
-      "y": 26,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -201,8 +191,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAXIE",
-      "x": 45,
-      "y": 25,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -214,8 +204,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 19,
-      "y": 25,
+      "x": 0,
+      "y": 0,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 3,
@@ -227,8 +217,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCOTT",
-      "x": 61,
-      "y": 29,
+      "x": 0,
+      "y": 0,
       "elevation": 5,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
@@ -240,8 +230,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 31,
-      "y": 29,
+      "x": 0,
+      "y": 0,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 3,
@@ -254,71 +244,71 @@
   ],
   "warp_events": [
     {
-      "x": 28,
-      "y": 9,
+      "x": 1,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 38,
-      "y": 9,
+      "x": 2,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_GYM",
       "dest_warp_id": "0"
     },
     {
-      "x": 28,
-      "y": 16,
+      "x": 3,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 67,
-      "y": 25,
+      "x": 4,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_HOUSE2",
       "dest_warp_id": "0"
     },
     {
-      "x": 37,
-      "y": 18,
+      "x": 5,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_MART",
       "dest_warp_id": "0"
     },
     {
-      "x": 49,
-      "y": 6,
+      "x": 6,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_HOUSE3",
       "dest_warp_id": "0"
     },
     {
-      "x": 19,
-      "y": 10,
+      "x": 7,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_STEVENS_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
-      "y": 16,
+      "x": 8,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_HOUSE4",
       "dest_warp_id": "1"
     },
     {
-      "x": 64,
-      "y": 15,
+      "x": 9,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_SPACE_CENTER_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 36,
-      "y": 24,
+      "x": 10,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_MOSSDEEP_CITY_GAME_CORNER_1F",
       "dest_warp_id": "0"
@@ -327,8 +317,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 25,
-      "y": 25,
+      "x": 1,
+      "y": 2,
       "elevation": 0,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -336,8 +326,8 @@
     },
     {
       "type": "trigger",
-      "x": 26,
-      "y": 25,
+      "x": 2,
+      "y": 2,
       "elevation": 0,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -345,8 +335,8 @@
     },
     {
       "type": "trigger",
-      "x": 32,
-      "y": 27,
+      "x": 3,
+      "y": 2,
       "elevation": 0,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -354,8 +344,8 @@
     },
     {
       "type": "trigger",
-      "x": 33,
-      "y": 27,
+      "x": 4,
+      "y": 2,
       "elevation": 0,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -363,8 +353,8 @@
     },
     {
       "type": "trigger",
-      "x": 42,
-      "y": 21,
+      "x": 5,
+      "y": 2,
       "elevation": 5,
       "var": "VAR_MOSSDEEP_CITY_STATE",
       "var_value": "1",
@@ -372,8 +362,8 @@
     },
     {
       "type": "trigger",
-      "x": 41,
-      "y": 22,
+      "x": 6,
+      "y": 2,
       "elevation": 5,
       "var": "VAR_MOSSDEEP_CITY_STATE",
       "var_value": "1",
@@ -381,8 +371,8 @@
     },
     {
       "type": "trigger",
-      "x": 41,
-      "y": 23,
+      "x": 7,
+      "y": 2,
       "elevation": 5,
       "var": "VAR_MOSSDEEP_CITY_STATE",
       "var_value": "1",
@@ -390,8 +380,8 @@
     },
     {
       "type": "trigger",
-      "x": 41,
-      "y": 24,
+      "x": 8,
+      "y": 2,
       "elevation": 5,
       "var": "VAR_MOSSDEEP_CITY_STATE",
       "var_value": "1",
@@ -399,8 +389,8 @@
     },
     {
       "type": "trigger",
-      "x": 40,
-      "y": 25,
+      "x": 9,
+      "y": 2,
       "elevation": 5,
       "var": "VAR_MOSSDEEP_CITY_STATE",
       "var_value": "1",
@@ -408,8 +398,8 @@
     },
     {
       "type": "trigger",
-      "x": 40,
-      "y": 26,
+      "x": 10,
+      "y": 2,
       "elevation": 5,
       "var": "VAR_MOSSDEEP_CITY_STATE",
       "var_value": "1",
@@ -419,64 +409,64 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 25,
-      "y": 16,
+      "x": 1,
+      "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MossdeepCity_EventScript_CitySign"
     },
     {
       "type": "sign",
-      "x": 34,
-      "y": 9,
+      "x": 2,
+      "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MossdeepCity_EventScript_GymSign"
     },
     {
       "type": "sign",
-      "x": 29,
-      "y": 16,
+      "x": 3,
+      "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
     },
     {
       "type": "sign",
-      "x": 38,
-      "y": 18,
+      "x": 4,
+      "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"
     },
     {
       "type": "sign",
-      "x": 66,
-      "y": 16,
+      "x": 5,
+      "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MossdeepCity_EventScript_SpaceCenterSign"
     },
     {
       "type": "sign",
-      "x": 30,
-      "y": 16,
+      "x": 6,
+      "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
     },
     {
       "type": "sign",
-      "x": 39,
-      "y": 18,
+      "x": 7,
+      "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemartSign"
     },
     {
       "type": "sign",
-      "x": 57,
-      "y": 21,
+      "x": 8,
+      "y": 3,
       "elevation": 7,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "MossdeepCity_EventScript_WhiteRock"

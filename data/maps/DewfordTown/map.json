@@ -2,7 +2,7 @@
   "id": "MAP_DEWFORD_TOWN",
   "name": "DewfordTown",
   "layout": "LAYOUT_DEWFORD_TOWN",
-  "music": "MUS_DEWFORD",
+  "music": "MUS_HG_CHERRYGROVE",
   "region_map_section": "MAPSEC_JOHTO_CHERRYGROVE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -14,13 +14,13 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE106",
-      "offset": -60,
+      "map": "MAP_JOHTO_ROUTE30",
+      "offset": 16,
       "direction": "up"
     },
     {
-      "map": "MAP_ROUTE107",
-      "offset": 0,
+      "map": "MAP_JOHTO_ROUTE29",
+      "offset": -4,
       "direction": "right"
     }
   ],

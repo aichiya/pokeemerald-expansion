@@ -2,7 +2,7 @@
   "id": "MAP_PETALBURG_CITY",
   "name": "PetalburgCity",
   "layout": "LAYOUT_PETALBURG_CITY",
-  "music": "MUS_PETALBURG",
+  "music": "MUS_HG_VIOLET",
   "region_map_section": "MAPSEC_JOHTO_OLIVINE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

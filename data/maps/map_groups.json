@@ -109,7 +109,18 @@
     "JohtoRoute32",
     "JohtoRoute33",
     "JohtoIlexForestOuter",
-    "JohtoRuinsOfAlph"
+    "JohtoRuinsOfAlph",
+    "JohtoRoute42",
+    "JohtoRoute43",
+    "JohtoRoute44",
+    "JohtoRoute31",
+    "JohtoRoute30",
+    "JohtoRoute29",
+    "JohtoRoute46",
+    "JohtoRoute45",
+    "JohtoRoute27",
+    "JohtoRoute26",
+    "JohtoRoute28"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

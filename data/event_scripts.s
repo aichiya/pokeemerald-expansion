@@ -1220,3 +1220,25 @@ EventScript_TrimmedGensokyoLandEncounter::
 	.include "data/maps/JohtoIlexForestOuter/scripts.inc"
 
 	.include "data/maps/JohtoRuinsOfAlph/scripts.inc"
+
+	.include "data/maps/JohtoRoute42/scripts.inc"
+
+	.include "data/maps/JohtoRoute43/scripts.inc"
+
+	.include "data/maps/JohtoRoute44/scripts.inc"
+
+	.include "data/maps/JohtoRoute31/scripts.inc"
+
+	.include "data/maps/JohtoRoute30/scripts.inc"
+
+	.include "data/maps/JohtoRoute29/scripts.inc"
+
+	.include "data/maps/JohtoRoute46/scripts.inc"
+
+	.include "data/maps/JohtoRoute45/scripts.inc"
+
+	.include "data/maps/JohtoRoute27/scripts.inc"
+
+	.include "data/maps/JohtoRoute26/scripts.inc"
+
+	.include "data/maps/JohtoRoute28/scripts.inc"

@@ -2,7 +2,7 @@
   "id": "MAP_OLDALE_TOWN",
   "name": "OldaleTown",
   "layout": "LAYOUT_OLDALE_TOWN",
-  "music": "MUS_OLDALE",
+  "music": "MUS_HG_NEW_BARK",
   "region_map_section": "MAPSEC_JOHTO_NEW_BARK_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE103",
-      "offset": 0,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_ROUTE102",
+      "map": "MAP_JOHTO_ROUTE29",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_JOHTO_ROUTE27",
+      "offset": 0,
+      "direction": "right"
     }
   ],
   "object_events": [

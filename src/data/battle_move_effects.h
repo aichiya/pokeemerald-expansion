@@ -2220,6 +2220,12 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 0, // TODO: Assign points
     },
 
+    [EFFECT_RAPID_SPIN] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 0, // TODO: Assign points
+    },
+
     [EFFECT_ULTRA_INSTINCT] =
     {
         .battleScript = BattleScript_EffectUltraInstinct,
@@ -2249,7 +2255,6 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
-
     [EFFECT_REVERSE_PSYSHOCK] =
     {
         .battleScript = BattleScript_EffectHit,
@@ -2261,5 +2266,4 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectUBWField,
         .battleTvScore = 0, // TODO: Assign points
     },
-
 };

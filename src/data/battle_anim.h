@@ -2022,4 +2022,5 @@ const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
     [BG_RAINBOW]                   = {gBattleAnimBgImage_Rainbow,                 gBattleAnimBGPalette_Rainbow,                 gBattleAnimBgTilemap_Rainbow},
     [BG_SWAMP]                     = {gBattleAnimBgImage_Swamp,                   gBattleAnimBGPalette_Swamp,                   gBattleAnimBgTilemap_Swamp},
     [BG_UBW]                       = {gBattleAnimBgImage_UBWField,                gBattleAnimBgPalette_UBWField,                gBattleAnimBgTilemap_UBWField},
+    [BG_SABOTEN_MATRIX]            = {gBattleAnimBgImage_SabotenMatrix,           gBattleAnimBgPalette_SabotenMatrix,           gBattleAnimBgTilemap_SabotenMatrix},
 };

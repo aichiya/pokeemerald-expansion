@@ -529,7 +529,10 @@
 #define BG_CHLOROBLAST 80
 #define BG_RAINBOW 81
 #define BG_SWAMP 82
-#define BG_UBW 83
+
+#define BG_LAST_EXPANSION BG_SWAMP
+#define BG_UBW            (BG_LAST_EXPANSION + 1)
+#define BG_SABOTEN_MATRIX (BG_LAST_EXPANSION + 2)
 
 // table ids for general animations (sBattleAnims_General)
 #define B_ANIM_STATS_CHANGE             0

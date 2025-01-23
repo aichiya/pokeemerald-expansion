@@ -1597,6 +1597,10 @@ const u32 gBattleAnimBgTilemap_ZMoveMountain[] = INCBIN_U32("graphics/battle_ani
 
 const u32 gBattleAnimBgPalette_SteelBeam[] = INCBIN_U32("graphics/battle_anims/backgrounds/steel_beam.gbapal.lz");
 
+const u32 gBattleAnimBgPalette_SabotenMatrix[] = INCBIN_U32("graphics/battle_anims/backgrounds/saboten_matrix.gbapal.lz");
+const u32 gBattleAnimBgImage_SabotenMatrix[] = INCBIN_U32("graphics/battle_anims/backgrounds/saboten_matrix.4bpp.lz");
+const u32 gBattleAnimBgTilemap_SabotenMatrix[] = INCBIN_U32("graphics/battle_anims/backgrounds/saboten_matrix.bin.lz");
+
 // misc
 const u32 gBerryBlenderCenter_Gfx[] = INCBIN_U32("graphics/berry_blender/center.8bpp.lz");
 const u32 gBerryBlenderOuter_Gfx[] = INCBIN_U32("graphics/berry_blender/outer.4bpp.lz");

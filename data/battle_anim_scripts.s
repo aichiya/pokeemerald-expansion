@@ -34448,9 +34448,9 @@ gBattleAnimMove_SearingSunrazeSmash::
 	createsprite gSearingSunrazeSmashBlueRingInwardsSpriteTemplate, ANIM_ATTACKER, 40, 0x0, 0x0, ANIM_TARGET, 0x0
 	delay 0x8
 	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_ATTACKER
-	fadetobg BG_COSMIC
+	fadetobg BG_SABOTEN_MATRIX @ BG_COSMIC
 	waitbgfadeout
-	createvisualtask AnimTask_StartSlidingBg, 0x5, 0xf700, 0x0, 0x1, 0xffff
+	createvisualtask AnimTask_StartSlidingBg, 0x5, 0x600, 0x0, 0x1, 0xffff
 	createvisualtask AnimTask_RotateMonSpriteToSide, 2, 1, 0, ANIM_TARGET, 1 @ fix tgt rotation
 	invisible ANIM_TARGET
 	waitbgfadein

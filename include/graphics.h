@@ -3395,4 +3395,8 @@ extern const u32 gBattleAnimBgImage_UBWField[];
 extern const u32 gBattleAnimBgPalette_UBWField[];
 extern const u32 gBattleAnimBgTilemap_UBWField[];
 
+extern const u32 gBattleAnimBgImage_SabotenMatrix[];
+extern const u32 gBattleAnimBgPalette_SabotenMatrix[];
+extern const u32 gBattleAnimBgTilemap_SabotenMatrix[];
+
 #endif //GUARD_GRAPHICS_H

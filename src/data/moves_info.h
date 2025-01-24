@@ -21207,6 +21207,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = gBattleAnimMove_RagingDemon,
     },
 
+    [MOVE_SCULPTING_ART] =  // Added
+    {
+        .name = COMPOUND_STRING("Idola Diabolus"),
+        .description = COMPOUND_STRING(
+            "Damages the foe and may\n"
+            "cause freezing or paralyze."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_NEW_DIVINE,
+        .accuracy = 90,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+            .chance = 30,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 30,
+        }),
+        .battleAnimScript = gBattleAnimMove_SculptingArt,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =  // Edited
     {

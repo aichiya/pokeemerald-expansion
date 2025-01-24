@@ -860,6 +860,7 @@ extern const u8 gBattleAnimMove_Fluffication[];
 extern const u8 gBattleAnimMove_IllusionaryDomination[];
 extern const u8 gBattleAnimMove_SpiritCamera[];
 extern const u8 gBattleAnimMove_RagingDemon[];
+extern const u8 gBattleAnimMove_SculptingArt[];
 extern const u8 gBattleAnimMove_BreakneckBlitz[];
 extern const u8 gBattleAnimMove_AllOutPummeling[];
 extern const u8 gBattleAnimMove_SupersonicSkystrike[];

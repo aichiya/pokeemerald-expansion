@@ -1601,6 +1601,10 @@ const u32 gBattleAnimBgPalette_SabotenMatrix[] = INCBIN_U32("graphics/battle_ani
 const u32 gBattleAnimBgImage_SabotenMatrix[] = INCBIN_U32("graphics/battle_anims/backgrounds/saboten_matrix.4bpp.lz");
 const u32 gBattleAnimBgTilemap_SabotenMatrix[] = INCBIN_U32("graphics/battle_anims/backgrounds/saboten_matrix.bin.lz");
 
+const u32 gBattleAnimBgPalette_ElectricHeritage[] = INCBIN_U32("graphics/battle_anims/backgrounds/electric_heritage.gbapal.lz");
+const u32 gBattleAnimBgImage_ElectricHeritage[] = INCBIN_U32("graphics/battle_anims/backgrounds/electric_heritage.4bpp.lz");
+const u32 gBattleAnimBgTilemap_ElectricHeritage[] = INCBIN_U32("graphics/battle_anims/backgrounds/electric_heritage.bin.lz");
+
 // misc
 const u32 gBerryBlenderCenter_Gfx[] = INCBIN_U32("graphics/berry_blender/center.8bpp.lz");
 const u32 gBerryBlenderOuter_Gfx[] = INCBIN_U32("graphics/berry_blender/outer.4bpp.lz");

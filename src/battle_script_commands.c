@@ -6812,7 +6812,7 @@ static void Cmd_moveend(void)
                 gBattleStruct->pledgeMove = FALSE;
             if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_Z_MOVE)
                 SetActiveGimmick(gBattlerAttacker, GIMMICK_NONE);
-            if (B_CHARGE <= GEN_8 || moveType == TYPE_NEW_ELECTRIC)
+            if (B_CHARGE >= GEN_9 && moveType == TYPE_NEW_ELECTRIC && (TARGET_TURN_DAMAGED || gMoveResultFlags & MOVE_RESULT_NO_EFFECT))
                 gStatuses3[gBattlerAttacker] &= ~(STATUS3_CHARGED_UP);
             memset(gQueuedStatBoosts, 0, sizeof(gQueuedStatBoosts));
 
@@ -10582,16 +10582,16 @@ static void Cmd_various(void)
             switch (GetBattlerHoldEffectParam(battler))
             {
             case HOLD_EFFECT_PARAM_ELECTRIC_TERRAIN:
-                effect = TryHandleSeed(battler, STATUS_FIELD_ELECTRIC_TERRAIN, STAT_DEF, item, ITEMEFFECT_ON_SWITCH_IN_FIRST_TURN);
+                effect = TryHandleSeed(battler, STATUS_FIELD_ELECTRIC_TERRAIN, STAT_DEF, item, ITEMEFFECT_NONE);
                 break;
             case HOLD_EFFECT_PARAM_GRASSY_TERRAIN:
-                effect = TryHandleSeed(battler, STATUS_FIELD_GRASSY_TERRAIN, STAT_DEF, item, ITEMEFFECT_ON_SWITCH_IN_FIRST_TURN);
+                effect = TryHandleSeed(battler, STATUS_FIELD_GRASSY_TERRAIN, STAT_DEF, item, ITEMEFFECT_NONE);
                 break;
             case HOLD_EFFECT_PARAM_MISTY_TERRAIN:
-                effect = TryHandleSeed(battler, STATUS_FIELD_MISTY_TERRAIN, STAT_SPDEF, item, ITEMEFFECT_ON_SWITCH_IN_FIRST_TURN);
+                effect = TryHandleSeed(battler, STATUS_FIELD_MISTY_TERRAIN, STAT_SPDEF, item, ITEMEFFECT_NONE);
                 break;
             case HOLD_EFFECT_PARAM_PSYCHIC_TERRAIN:
-                effect = TryHandleSeed(battler, STATUS_FIELD_PSYCHIC_TERRAIN, STAT_SPDEF, item, ITEMEFFECT_ON_SWITCH_IN_FIRST_TURN);
+                effect = TryHandleSeed(battler, STATUS_FIELD_PSYCHIC_TERRAIN, STAT_SPDEF, item, ITEMEFFECT_NONE);
                 break;
             case HOLD_EFFECT_PARAM_UBW:
                 effect = TryHandleSeed(battler, STATUS_FIELD_UBW, STAT_ATK, item, ITEMEFFECT_NONE);

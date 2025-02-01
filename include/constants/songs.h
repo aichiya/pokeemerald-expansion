@@ -1604,8 +1604,10 @@
 #define MUS_BGHS_BELIEVE 1629
 #define MUS_PKMN_XD_VS_CIPHER_PEON 1630
 #define MUS_LENEN_BW_TWIN_BIRDS 1631
+#define MUS_PKMN_BW_VS_WILD 1632
+#define MUS_VCID_TRIPLE_BAKA 1633
 
-#define END_MUS 					MUS_LENEN_BW_TWIN_BIRDS
+#define END_MUS 					MUS_VCID_TRIPLE_BAKA
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -6075,11 +6075,12 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     u32 moveType = gMovesInfo[move].type;
     u32 moveEffect = gMovesInfo[move].effect;
     u32 species, heldItem, holdEffect, ability, type1, type2, type3;
+    bool32 monInBattle = gMain.inBattle && gPartyMenu.menuType != PARTY_MENU_TYPE_IN_BATTLE;
 
     if (move == MOVE_STRUGGLE)
         return TYPE_NEW_ILLUSION;
 
-    if (gMain.inBattle)
+    if (monInBattle)
     {
         species = gBattleMons[battler].species;
         heldItem = gBattleMons[battler].item;
@@ -6103,18 +6104,21 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     switch (moveEffect)
     {
     case EFFECT_WEATHER_BALL:
-        if (gMain.inBattle && WEATHER_HAS_EFFECT)
+        if (monInBattle)
         {
-            if (gBattleWeather & B_WEATHER_RAIN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
-                return TYPE_NEW_WATER;
-            else if (gBattleWeather & B_WEATHER_SANDSTORM)
-                return TYPE_NEW_EARTH;
-            else if (gBattleWeather & B_WEATHER_SUN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
-                return TYPE_NEW_FIRE;
-            else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL))
-                return TYPE_NEW_ICE;
-            else
-                return moveType;
+            if (WEATHER_HAS_EFFECT)
+            {
+                if (gBattleWeather & B_WEATHER_RAIN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
+                    return TYPE_NEW_WATER;
+                else if (gBattleWeather & B_WEATHER_SANDSTORM)
+                    return TYPE_NEW_EARTH;
+                else if (gBattleWeather & B_WEATHER_SUN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
+                    return TYPE_NEW_FIRE;
+                else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL))
+                    return TYPE_NEW_ICE;
+                else
+                    return moveType;
+            }
         }
         else
         {
@@ -6141,7 +6145,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
         {
             /*
             u32 typeBits = 0;
-            if (gMain.inBattle)
+            if (monInBattle)
             {
                 typeBits = ((gBattleMons[battler].hpIV & 1) << 0)
                         | ((gBattleMons[battler].attackIV & 1) << 1)
@@ -6212,7 +6216,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
             else if (hiddenPowerType == 16)
                 return TYPE_NEW_DARK;
             else
-                return TYPE_NEW_ILLUSION;
+                return TYPE_NEW_ELECTRIC;
         }
         break;
     case EFFECT_CHANGE_TYPE_ON_ITEM:
@@ -6264,7 +6268,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
         else
             return moveType;
     case EFFECT_TERRAIN_PULSE:
-        if (gMain.inBattle)
+        if (monInBattle)
         {
             if (IsBattlerTerrainAffected(battler, STATUS_FIELD_TERRAIN_ANY))
             {

@@ -21067,7 +21067,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .argument = TYPE_NEW_FIRE,
+//        .argument = TYPE_NEW_FIRE,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FEINT,
@@ -21095,7 +21095,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .argument = TYPE_NEW_FIRE,
+//        .argument = TYPE_NEW_FIRE,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FEINT,
@@ -21230,6 +21230,117 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             .chance = 30,
         }),
         .battleAnimScript = gBattleAnimMove_SculptingArt,
+    },
+
+    [MOVE_PLASMA_BLADE] =  // Added
+    {
+        .name = COMPOUND_STRING("Plasma Blade"),
+        .description = COMPOUND_STRING(
+            "Uses plasma sword. High crit.\n"
+            "May burn or paralyze."),
+        .effect = EFFECT_HIT,
+        .power = 70,
+        .type = TYPE_NEW_ELECTRIC,
+        .accuracy = 100,
+        .criticalHitStage = 2,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 20,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 20,
+        }),
+        .makesContact = TRUE,
+        .slicingMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
+        .battleAnimScript = gBattleAnimMove_PlasmaBlade,
+    },
+
+    [MOVE_01_CRUSHER] =  // Added
+    {
+        .name = COMPOUND_STRING("Binary Crusher"),
+        .description = COMPOUND_STRING(
+            "Damages and may lower Sp.Def.\n"
+            "Also, effective vs. Electric."),
+        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
+        .power = 70,
+        .type = TYPE_NEW_ELECTRIC,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = TYPE_NEW_ELECTRIC,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PARALYSIS,
+            .chance = 20,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
+            .chance = 20,
+        }),
+        .battleAnimScript = gBattleAnimMove_01Crusher,
+    },
+
+    [MOVE_DIMENSION_SLASH] =  // Added
+    {
+        .name = COMPOUND_STRING("Dimension Slash"),
+        .description = COMPOUND_STRING(
+            "Slash that may flinch foe\n"
+            "and destroys protection."),
+        .effect = EFFECT_BRICK_BREAK,
+        .power = 100,
+        .type = TYPE_NEW_STEEL,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+//        .argument = TYPE_NEW_FIRE,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FEINT,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+        .slicingMove = TRUE,
+        .ignoresTargetAbility = TRUE,
+        .ignoresProtect = TRUE,
+        .ignoresSubstitute = TRUE,
+        .battleAnimScript = gBattleAnimMove_DimensionSlash,
+    },
+
+    [MOVE_NEPTUNE_BREAK] =  // Added
+    {
+        .name = COMPOUND_STRING("Neptune Break"),
+        .description = COMPOUND_STRING(
+            "A high-crit attack that\n"
+            "may lower foe's Defense."),
+        .effect = EFFECT_HIT,
+        .power = 120,
+        .type = TYPE_NEW_DIVINE,
+        .accuracy = 90,
+        .criticalHitStage = 2,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .slicingMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
+        .battleAnimScript = gBattleAnimMove_NeptuneBreak,
     },
 
     // Z-Moves

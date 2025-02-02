@@ -18804,7 +18804,6 @@ gBattleAnimMove_NeptuneBreak::
 	createsprite gVoltTackleOrbSlideSpriteTemplate, ANIM_ATTACKER, 1
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_ATTACKER
 	waitforvisualfinish
-
 	createsprite gSlashSliceSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	delay 4
@@ -18833,7 +18832,6 @@ gBattleAnimMove_NeptuneBreak::
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	waitforvisualfinish
-	
 	call UnsetHighSpeedBg
 	createvisualtask AnimTask_VoltTackleAttackerReappear, 5
 	waitforvisualfinish

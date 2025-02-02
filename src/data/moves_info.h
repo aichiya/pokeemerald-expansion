@@ -8588,25 +8588,20 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .battleAnimScript = gBattleAnimMove_AerialAce,
     },
 
-    [MOVE_ICICLE_SPEAR] =  // MOVE_NEW_ICE_BLADE Reworked
+    [MOVE_ICICLE_SPEAR] =  // Edited
     {
-        .name = COMPOUND_STRING("Ice Blade"),
+        .name = COMPOUND_STRING("Icicle Spear"),
         .description = COMPOUND_STRING(
-            "Slicing move that also\n"
-            "may cause freezing."),
-        .effect = EFFECT_HIT,
-        .power = 80,
+            "Attacks the foe by firing\n"
+            "2 to 5 icicles in a row."),
+        .effect = EFFECT_MULTI_HIT,
+        .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 25 : 10,
         .type = TYPE_NEW_ICE,
         .accuracy = 100,
-        .pp = 10,
+        .pp = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
-            .chance = 20,
-        }),
-        .slicingMove = TRUE,
         .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -21341,6 +21336,34 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
         .battleAnimScript = gBattleAnimMove_NeptuneBreak,
+    },
+
+    [MOVE_ICE_BLADE] =  // Added
+    {
+        .name = COMPOUND_STRING("Ice Blade"),
+        .description = COMPOUND_STRING(
+            "A chill slash with high critical\n"
+            "hit rate. May cause freezing."),
+        .effect = EFFECT_HIT,
+        .power = 70,
+        .type = TYPE_NEW_ICE,
+        .accuracy = 100,
+        .criticalHitStage = 2,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+            .chance = 10,
+        }),
+        .makesContact = TRUE,
+        .slicingMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
+        .battleAnimScript = gBattleAnimMove_IceBlade,
     },
 
     // Z-Moves

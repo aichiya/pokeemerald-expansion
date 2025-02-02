@@ -1635,6 +1635,7 @@ gSongTable::
 	song mus_lenen_bw_twin_birds, 0, 0
 	song mus_bw_vs_wild, 0, 0
 	song mus_vcid_triple_baka, 0, 0
+	song mus_nep_outside_the_dimension, 0, 0
 
 	.align 2
 dummy_song_header:

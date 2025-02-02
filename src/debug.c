@@ -5853,6 +5853,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_LENEN_BW_TWIN_BIRDS) \
     X(MUS_PKMN_BW_VS_WILD) \
     X(MUS_VCID_TRIPLE_BAKA) \
+    X(MUS_NEP_OUTSIDE_THE_DIMENSION) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

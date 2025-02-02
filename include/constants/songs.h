@@ -1606,8 +1606,9 @@
 #define MUS_LENEN_BW_TWIN_BIRDS 1631
 #define MUS_PKMN_BW_VS_WILD 1632
 #define MUS_VCID_TRIPLE_BAKA 1633
+#define MUS_NEP_OUTSIDE_THE_DIMENSION 1634
 
-#define END_MUS 					MUS_VCID_TRIPLE_BAKA
+#define END_MUS 					MUS_NEP_OUTSIDE_THE_DIMENSION
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

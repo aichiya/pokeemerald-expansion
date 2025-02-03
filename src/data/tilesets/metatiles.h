@@ -210,3 +210,6 @@ const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_TrimmedGensokyo[] = INCBIN_U16("data/tilesets/secondary/trimmed_gensokyo/metatiles.bin");
 const u16 gMetatileAttributes_TrimmedGensokyo[] = INCBIN_U16("data/tilesets/secondary/trimmed_gensokyo/metatile_attributes.bin");
+
+const u16 gMetatiles_GeneralSnow[] = INCBIN_U16("data/tilesets/primary/general_snow/metatiles.bin");
+const u16 gMetatileAttributes_GeneralSnow[] = INCBIN_U16("data/tilesets/primary/general_snow/metatile_attributes.bin");

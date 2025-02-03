@@ -384,10 +384,10 @@
     {
       "id": "LAYOUT_ROUTE123",
       "name": "Route123_Layout",
-      "width": 140,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
+      "width": 86,
+      "height": 86,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/Route123/border.bin",
       "blockdata_filepath": "data/layouts/Route123/map.bin"
     },

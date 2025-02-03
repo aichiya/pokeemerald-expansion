@@ -2,11 +2,11 @@
   "id": "MAP_ROUTE123",
   "name": "Route123",
   "layout": "LAYOUT_ROUTE123",
-  "music": "MUS_ROUTE122",
+  "music": "MUS_GS2_062_PROX",
   "region_map_section": "MAPSEC_KEY_ILLUSIONARY_WORLD1",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_ROUTE",
+  "weather": "WEATHER_SNOW",
+  "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -14,12 +14,42 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE122",
-      "offset": 100,
+      "map": "MAP_ROUTE123",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE123",
+      "offset": 0,
       "direction": "up"
     },
     {
-      "map": "MAP_ROUTE118",
+      "map": "MAP_ROUTE123",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE123",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE123",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE123",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE123",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE123",
       "offset": 0,
       "direction": "left"
     }
@@ -587,8 +617,8 @@
   ],
   "warp_events": [
     {
-      "x": 22,
-      "y": 6,
+      "x": 29,
+      "y": 75,
       "elevation": 0,
       "dest_map": "MAP_ROUTE123_BERRY_MASTERS_HOUSE",
       "dest_warp_id": "0"

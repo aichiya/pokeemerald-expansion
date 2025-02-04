@@ -1242,3 +1242,43 @@ EventScript_TrimmedGensokyoLandEncounter::
 	.include "data/maps/JohtoRoute26/scripts.inc"
 
 	.include "data/maps/JohtoRoute28/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiRoad/scripts.inc"
+
+	.include "data/maps/GensokyoNorthernRoad1/scripts.inc"
+
+	.include "data/maps/GensokyoNorthernRoad2/scripts.inc"
+
+	.include "data/maps/GensokyoNorthernRoad3/scripts.inc"
+
+	.include "data/maps/GensokyoNorthernRoad4/scripts.inc"
+
+	.include "data/maps/GensokyoMistyLake/scripts.inc"
+
+	.include "data/maps/GensokyoWesternRoad1/scripts.inc"
+
+	.include "data/maps/GensokyoWesternRoad2/scripts.inc"
+
+	.include "data/maps/GensokyoBambooForestOuter/scripts.inc"
+
+	.include "data/maps/GensokyoRoadOfReconsideration1/scripts.inc"
+
+	.include "data/maps/GensokyoRoadOfReconsideration2/scripts.inc"
+
+	.include "data/maps/GensokyoRoadOfReconsideration3/scripts.inc"
+
+	.include "data/maps/GensokyoEasternRoad1/scripts.inc"
+
+	.include "data/maps/GensokyoMontainRoad1/scripts.inc"
+
+	.include "data/maps/GensokyoMountainRoad2/scripts.inc"
+
+	.include "data/maps/GensokyoSouthernRoad1/scripts.inc"
+
+	.include "data/maps/GensokyoSouthernRoad2/scripts.inc"
+
+	.include "data/maps/GensokyoSouthernRoad3/scripts.inc"
+
+	.include "data/maps/GensokyoSouthernRoad4/scripts.inc"
+
+	.include "data/maps/GensokyoSouthernRoad5/scripts.inc"

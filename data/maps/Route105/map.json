@@ -6,23 +6,13 @@
   "region_map_section": "MAPSEC_GENSOKYO_HAKUGYOKUROU",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_ROUTE",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
-    {
-      "map": "MAP_ROUTE104",
-      "offset": 0,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_ROUTE106",
-      "offset": 0,
-      "direction": "down"
-    },
     {
       "map": "MAP_UNDERWATER_ROUTE105",
       "offset": 0,
@@ -144,7 +134,9 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "hidden_item",

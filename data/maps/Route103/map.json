@@ -6,7 +6,7 @@
   "region_map_section": "MAPSEC_GENSOKYO_KOURINDOU",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_ROUTE",
+  "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -14,9 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE110",
-      "offset": -60,
-      "direction": "right"
+      "map": "MAP_GENSOKYO_ROAD_OF_RECONSIDERATION1",
+      "offset": 26,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_GENSOKYO_WESTERN_ROAD2",
+      "offset": 12,
+      "direction": "down"
     }
   ],
   "object_events": [

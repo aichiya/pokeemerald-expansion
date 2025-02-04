@@ -164,10 +164,10 @@
     {
       "id": "LAYOUT_ROUTE101",
       "name": "Route101_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 31,
+      "height": 48,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Unused1",
       "border_filepath": "data/layouts/Route101/border.bin",
       "blockdata_filepath": "data/layouts/Route101/map.bin"
     },
@@ -175,7 +175,7 @@
       "id": "LAYOUT_ROUTE102",
       "name": "Route102_Layout",
       "width": 50,
-      "height": 20,
+      "height": 45,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route102/border.bin",
@@ -184,8 +184,8 @@
     {
       "id": "LAYOUT_ROUTE103",
       "name": "Route103_Layout",
-      "width": 80,
-      "height": 22,
+      "width": 36,
+      "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route103/border.bin",
@@ -194,28 +194,28 @@
     {
       "id": "LAYOUT_ROUTE104",
       "name": "Route104_Layout",
-      "width": 40,
-      "height": 80,
+      "width": 26,
+      "height": 28,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_Unused1",
       "border_filepath": "data/layouts/Route104/border.bin",
       "blockdata_filepath": "data/layouts/Route104/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE105",
       "name": "Route105_Layout",
-      "width": 40,
-      "height": 80,
+      "width": 60,
+      "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_Unused1",
       "border_filepath": "data/layouts/Route105/border.bin",
       "blockdata_filepath": "data/layouts/Route105/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE106",
       "name": "Route106_Layout",
-      "width": 80,
-      "height": 20,
+      "width": 60,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/Route106/border.bin",
@@ -224,10 +224,10 @@
     {
       "id": "LAYOUT_ROUTE107",
       "name": "Route107_Layout",
-      "width": 60,
-      "height": 20,
+      "width": 48,
+      "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_Unused1",
       "border_filepath": "data/layouts/Route107/border.bin",
       "blockdata_filepath": "data/layouts/Route107/map.bin"
     },
@@ -244,8 +244,8 @@
     {
       "id": "LAYOUT_ROUTE109",
       "name": "Route109_Layout",
-      "width": 40,
-      "height": 63,
+      "width": 46,
+      "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Slateport",
       "border_filepath": "data/layouts/Route109/border.bin",
@@ -264,8 +264,8 @@
     {
       "id": "LAYOUT_ROUTE111",
       "name": "Route111_Layout",
-      "width": 40,
-      "height": 140,
+      "width": 52,
+      "height": 56,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route111/border.bin",
@@ -4710,6 +4710,206 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/JohtoRoute28/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute28/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_ROAD",
+      "name": "GensokyoYoukaiRoad_Layout",
+      "width": 80,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoYoukaiRoad/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiRoad/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NORTHERN_ROAD1",
+      "name": "GensokyoNorthernRoad1_Layout",
+      "width": 16,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoNorthernRoad1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNorthernRoad1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NORTHERN_ROAD2",
+      "name": "GensokyoNorthernRoad2_Layout",
+      "width": 46,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoNorthernRoad2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNorthernRoad2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NORTHERN_ROAD3",
+      "name": "GensokyoNorthernRoad3_Layout",
+      "width": 22,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoNorthernRoad3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNorthernRoad3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NORTHERN_ROAD4",
+      "name": "GensokyoNorthernRoad4_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoNorthernRoad4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNorthernRoad4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_MISTY_LAKE",
+      "name": "GensokyoMistyLake_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoMistyLake/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoMistyLake/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_WESTERN_ROAD1",
+      "name": "GensokyoWesternRoad1_Layout",
+      "width": 88,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoWesternRoad1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoWesternRoad1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_WESTERN_ROAD2",
+      "name": "GensokyoWesternRoad2_Layout",
+      "width": 34,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused2",
+      "border_filepath": "data/layouts/GensokyoWesternRoad2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoWesternRoad2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_BAMBOO_FOREST_OUTER",
+      "name": "GensokyoBambooForestOuter_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoBambooForestOuter/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoBambooForestOuter/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_ROAD_OF_RECONSIDERATION1",
+      "name": "GensokyoRoadOfReconsideration1_Layout",
+      "width": 26,
+      "height": 58,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoRoadOfReconsideration1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoRoadOfReconsideration1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_ROAD_OF_RECONSIDERATION2",
+      "name": "GensokyoRoadOfReconsideration2_Layout",
+      "width": 22,
+      "height": 56,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoRoadOfReconsideration2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoRoadOfReconsideration2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_ROAD_OF_RECONSIDERATION3",
+      "name": "GensokyoRoadOfReconsideration3_Layout",
+      "width": 60,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoRoadOfReconsideration3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoRoadOfReconsideration3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_EASTERN_ROAD1",
+      "name": "GensokyoEasternRoad1_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoEasternRoad1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoEasternRoad1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_MONTAIN_ROAD1",
+      "name": "GensokyoMontainRoad1_Layout",
+      "width": 80,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoMontainRoad1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoMontainRoad1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_MOUNTAIN_ROAD2",
+      "name": "GensokyoMountainRoad2_Layout",
+      "width": 24,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoMountainRoad2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoMountainRoad2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SOUTHERN_ROAD1",
+      "name": "GensokyoSouthernRoad1_Layout",
+      "width": 42,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoSouthernRoad1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoSouthernRoad1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SOUTHERN_ROAD2",
+      "name": "GensokyoSouthernRoad2_Layout",
+      "width": 42,
+      "height": 42,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoSouthernRoad2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoSouthernRoad2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SOUTHERN_ROAD3",
+      "name": "GensokyoSouthernRoad3_Layout",
+      "width": 38,
+      "height": 38,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoSouthernRoad3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoSouthernRoad3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SOUTHERN_ROAD4",
+      "name": "GensokyoSouthernRoad4_Layout",
+      "width": 64,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoSouthernRoad4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoSouthernRoad4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SOUTHERN_ROAD5",
+      "name": "GensokyoSouthernRoad5_Layout",
+      "width": 32,
+      "height": 46,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/GensokyoSouthernRoad5/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoSouthernRoad5/map.bin"
     }
   ]
 }

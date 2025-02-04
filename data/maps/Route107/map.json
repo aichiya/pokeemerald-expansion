@@ -14,7 +14,17 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE108",
+      "map": "MAP_GENSOKYO_NORTHERN_ROAD3",
+      "offset": 16,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_GENSOKYO_NORTHERN_ROAD4",
+      "offset": 4,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_GENSOKYO_MISTY_LAKE",
       "offset": 0,
       "direction": "right"
     }

@@ -1,0 +1,39 @@
+{
+  "id": "MAP_GENSOKYO_SOUTHERN_ROAD4",
+  "name": "GensokyoSouthernRoad4",
+  "layout": "LAYOUT_GENSOKYO_SOUTHERN_ROAD4",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_GENSOKYO_SOUTHERN_ROAD4",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_GENSOKYO_SOUTHERN_ROAD3",
+      "offset": -14,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_GENSOKYO_SOUTHERN_ROAD5",
+      "offset": -18,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

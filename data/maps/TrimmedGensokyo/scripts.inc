@@ -4,6 +4,8 @@ TrimmedGensokyo_MapScripts::
 TrimmedGensokyo_EventScript_Debug1::
 	lock
 	faceplayer
+	setflag FLAG_TERA_ORB_CHARGED
+	setflag FLAG_TERA_ORB_NO_COST
 	givemongift1 SPECIES_MEW, 69, ITEM_NONE, ITEM_CHERISH_BALL, NATURE_ADAMANT, 0, 1, 4, 252, 0, 252, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_ILLUSIONARY_DOMINATION, MOVE_DIMENSION_SHOT, MOVE_TERA_BLAST, MOVE_FLUFFICATION, 0, 0, TYPE_NEW_WIND
 	msgbox TrimmedGensokyo_Text_Debug1_1, MSGBOX_DEFAULT
 	closemessage

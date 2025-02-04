@@ -14,14 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE113",
-      "offset": 0,
-      "direction": "left"
-    },
-    {
-      "map": "MAP_ROUTE112",
-      "offset": 20,
-      "direction": "left"
+      "map": "MAP_GENSOKYO_SOUTHERN_ROAD5",
+      "offset": 10,
+      "direction": "down"
     }
   ],
   "object_events": [

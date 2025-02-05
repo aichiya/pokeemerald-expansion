@@ -4717,7 +4717,7 @@
       "width": 80,
       "height": 42,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Unused1",
+      "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/GensokyoYoukaiRoad/border.bin",
       "blockdata_filepath": "data/layouts/GensokyoYoukaiRoad/map.bin"
     },

@@ -1282,3 +1282,5 @@ EventScript_TrimmedGensokyoLandEncounter::
 	.include "data/maps/GensokyoSouthernRoad4/scripts.inc"
 
 	.include "data/maps/GensokyoSouthernRoad5/scripts.inc"
+
+	.include "data/maps/JavaMountMerapi/scripts.inc"

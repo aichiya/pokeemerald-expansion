@@ -1607,8 +1607,10 @@
 #define MUS_PKMN_BW_VS_WILD 1632
 #define MUS_VCID_TRIPLE_BAKA 1633
 #define MUS_NEP_OUTSIDE_THE_DIMENSION 1634
+#define MUS_GI_ORMOS 1635
+#define MUS_ETC_JOGJA_ISTIMEWA 1636
 
-#define END_MUS 					MUS_NEP_OUTSIDE_THE_DIMENSION
+#define END_MUS 					MUS_ETC_JOGJA_ISTIMEWA
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

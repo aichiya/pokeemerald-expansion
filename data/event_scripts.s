@@ -1284,3 +1284,47 @@ EventScript_TrimmedGensokyoLandEncounter::
 	.include "data/maps/GensokyoSouthernRoad5/scripts.inc"
 
 	.include "data/maps/JavaMountMerapi/scripts.inc"
+
+	.include "data/maps/JavaTempleRuins/scripts.inc"
+
+	.include "data/maps/JavaTrappyPass/scripts.inc"
+
+	.include "data/maps/JavaTrappyPassNorth/scripts.inc"
+
+	.include "data/maps/JavaRiveryPass/scripts.inc"
+
+	.include "data/maps/JavaNorthernPass/scripts.inc"
+
+	.include "data/maps/JavaSouthernPass/scripts.inc"
+
+	.include "data/maps/JavaMiddlePass/scripts.inc"
+
+	.include "data/maps/JavaMountBromo/scripts.inc"
+
+	.include "data/maps/JavaEasternPass/scripts.inc"
+
+	.include "data/maps/JavaSouthLineRoute/scripts.inc"
+
+	.include "data/maps/JavaNorthLineRoute/scripts.inc"
+
+	.include "data/maps/JavaSeaBreakRoute1/scripts.inc"
+
+	.include "data/maps/JavaSeaBreakRoute2/scripts.inc"
+
+	.include "data/maps/JavaTabecRoute/scripts.inc"
+
+	.include "data/maps/JavaJaboRoute/scripts.inc"
+
+	.include "data/maps/JavaEastSeaRoute1/scripts.inc"
+
+	.include "data/maps/JavaEastSeaRoute2/scripts.inc"
+
+	.include "data/maps/JavaWesternPass/scripts.inc"
+
+	.include "data/maps/JavaNaturePreserve1/scripts.inc"
+
+	.include "data/maps/JavaNaturePreserve2/scripts.inc"
+
+	.include "data/maps/JavaNaturePreserve3/scripts.inc"
+
+	.include "data/maps/JavaSeaOfSand/scripts.inc"

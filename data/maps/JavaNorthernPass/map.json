@@ -1,0 +1,39 @@
+{
+  "id": "MAP_JAVA_NORTHERN_PASS",
+  "name": "JavaNorthernPass",
+  "layout": "LAYOUT_JAVA_NORTHERN_PASS",
+  "music": "MUS_THPPZGSK_JAPANESEFLOWER",
+  "region_map_section": "MAPSEC_JAVA_NORTHERN_PASS",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_JAVA_TRAPPY_PASS_NORTH",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE127",
+      "offset": 122,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

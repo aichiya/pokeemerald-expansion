@@ -2,17 +2,33 @@
   "id": "MAP_ROUTE131",
   "name": "Route131",
   "layout": "LAYOUT_ROUTE131",
-  "music": "MUS_ROUTE119",
-  "region_map_section": "MAPSEC_0X2E",
+  "music": "MUS_RG_SEVII_45",
+  "region_map_section": "MAPSEC_JAVA_MALANG",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_JAVA_SOUTHERN_PASS",
+      "offset": -82,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_JAVA_MOUNT_BROMO",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_JAVA_EASTERN_PASS",
+      "offset": 40,
+      "direction": "up"
+    }
+  ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",

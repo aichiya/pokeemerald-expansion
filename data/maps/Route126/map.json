@@ -2,11 +2,11 @@
   "id": "MAP_ROUTE126",
   "name": "Route126",
   "layout": "LAYOUT_ROUTE126",
-  "music": "MUS_ROUTE120",
+  "music": "MUS_GI_ORMOS",
   "region_map_section": "MAPSEC_JAVA_SEMARANG",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -17,6 +17,16 @@
       "map": "MAP_UNDERWATER_ROUTE126",
       "offset": 0,
       "direction": "dive"
+    },
+    {
+      "map": "MAP_JAVA_RIVERY_PASS",
+      "offset": 30,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_JAVA_NORTH_LINE_ROUTE",
+      "offset": 6,
+      "direction": "left"
     }
   ],
   "object_events": [

@@ -132,9 +132,9 @@ static const u16 sLandmarkData[][2] =
 {
     {MAPSEC_JOHTO_BELL_TOWER,       FLAG_LANDMARK_SKY_PILLAR},
     {MAPSEC_JOHTO_ROUTE_42,  FLAG_LANDMARK_SEAFLOOR_CAVERN},
-    {MAPSEC_JAVA_LOST_AGE2,                   FLAG_LANDMARK_ALTERING_CAVE},
+    {MAPSEC_JAVA_MISTIC_WOODS,                   FLAG_LANDMARK_ALTERING_CAVE},
     {MAPSEC_JAVA_MIDDLE_PASS,     FLAG_LANDMARK_MIRAGE_TOWER},
-    {MAPSEC_JAVA_LOST_AGE1,                   FLAG_LANDMARK_DESERT_UNDERPASS},
+    {MAPSEC_JAVA_MT_BROMO,                   FLAG_LANDMARK_DESERT_UNDERPASS},
     {MAPSEC_JAVA_POJOK_CLIFF, FLAG_LANDMARK_ARTISAN_CAVE},
     {MAPSEC_NONE}
 };
@@ -376,7 +376,7 @@ static u16 GetRegionMapSectionId(u8 mapGroup, u8 mapNum)
 static bool8 MapHasSpecies(const struct WildPokemonHeader *info, u16 species)
 {
     // If this is a header for Altering Cave, skip it if it's not the current Altering Cave encounter set
-    if (GetRegionMapSectionId(info->mapGroup, info->mapNum) == MAPSEC_JAVA_LOST_AGE2)
+    if (GetRegionMapSectionId(info->mapGroup, info->mapNum) == MAPSEC_JAVA_MISTIC_WOODS)
     {
         sPokedexAreaScreen->alteringCaveCounter++;
         if (sPokedexAreaScreen->alteringCaveCounter != sPokedexAreaScreen->alteringCaveId + 1)

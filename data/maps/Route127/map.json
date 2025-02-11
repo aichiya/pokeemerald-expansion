@@ -2,11 +2,11 @@
   "id": "MAP_ROUTE127",
   "name": "Route127",
   "layout": "LAYOUT_ROUTE127",
-  "music": "MUS_ROUTE120",
+  "music": "MUS_DGMN_DW1_FILECITY_DAY",
   "region_map_section": "MAPSEC_JAVA_SURABAYA",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -17,6 +17,16 @@
       "map": "MAP_UNDERWATER_ROUTE127",
       "offset": 0,
       "direction": "dive"
+    },
+    {
+      "map": "MAP_JAVA_NORTHERN_PASS",
+      "offset": -122,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_JAVA_EASTERN_PASS",
+      "offset": 0,
+      "direction": "down"
     }
   ],
   "object_events": [

@@ -3,7 +3,7 @@
   "name": "Route132",
   "layout": "LAYOUT_ROUTE132",
   "music": "MUS_ROUTE119",
-  "region_map_section": "MAPSEC_0X2F",
+  "region_map_section": "MAPSEC_JAVA_DEVATA_ISLETS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_OCEAN_ROUTE",
@@ -12,7 +12,18 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_JAVA_EASTERN_PASS",
+      "offset": -14,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_JAVA_EAST_SEA_ROUTE1",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",

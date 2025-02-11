@@ -3,7 +3,7 @@
   "name": "NavelRock_Exterior",
   "layout": "LAYOUT_NAVEL_ROCK_EXTERIOR",
   "music": "MUS_RG_SEVII_ROUTE",
-  "region_map_section": "MAPSEC_JAVA_LOST_AGE3",
+  "region_map_section": "MAPSEC_JAVA_NORTH_LINE_ROUTE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

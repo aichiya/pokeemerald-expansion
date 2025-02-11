@@ -1308,10 +1308,10 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_VISITED_GENSOKYO_PALENQUIN_SHIP) &&
                 FlagGet(FLAG_VISITED_GENSOKYO_SANZU_RIVER) &&
                 FlagGet(FLAG_VISITED_GENSOKYO_GARDEN_OF_THE_SUN) &&
-                FlagGet(FLAG_VISITED_GENSOKYO_NAMELESS_HILL) &&
+                FlagGet(FLAG_VISITED_JAVA_KEMBANG_TOWN) &&
                 FlagGet(FLAG_VISITED_GENSOKYO_EIENTEI) &&
                 FlagGet(FLAG_VISITED_GENSOKYO_ANIMAL_REALM) &&
-                FlagGet(FLAG_VISITED_GENSOKYO_MUGENKAN) &&
+                FlagGet(FLAG_VISITED_JAVA_NEO_BANJAR_CITY) &&
                 FlagGet(FLAG_VISITED_GENSOKYO_FANTASY_WORLD) &&
                 FlagGet(FLAG_VISITED_GENSOKYO_DREAM_WORLD) &&
                 FlagGet(FLAG_VISITED_GENSOKYO_MAKAI) &&
@@ -1325,12 +1325,12 @@ static u8 Debug_CheckToggleFlags(u8 id)
                 FlagGet(FLAG_VISITED_JAVA_SEMARANG) &&
                 FlagGet(FLAG_VISITED_JAVA_SURABAYA) &&
                 FlagGet(FLAG_VISITED_JAVA_JAKARTA) &&
-                FlagGet(FLAG_VISITED_INMAP0X2C) &&
-                FlagGet(FLAG_VISITED_INMAP0X2D) &&
-                FlagGet(FLAG_VISITED_INMAP0X2E) &&
-                FlagGet(FLAG_VISITED_INMAP0X2F) &&
-                FlagGet(FLAG_VISITED_INMAP0X30) &&
-                FlagGet(FLAG_VISITED_INMAP0X31);
+                FlagGet(FLAG_VISITED_JOHTO_ROUTE_48_POKEMON_CENTER) &&
+                FlagGet(FLAG_VISITED_JOHTO_NOBELESSE_CITY) &&
+                FlagGet(FLAG_VISITED_JAVA_MALANG) &&
+                FlagGet(FLAG_VISITED_JAVA_DEVATA_ISLETS) &&
+                FlagGet(FLAG_VISITED_JAVA_KASEPUHAN_TOWN) &&
+                FlagGet(FLAG_VISITED_JAVA_CILA_PRISON_TOWN);
             break;
         case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL:
             result = FlagGet(FLAG_BADGE01_GET) &&
@@ -2855,10 +2855,10 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_VISITED_GENSOKYO_PALENQUIN_SHIP);
         FlagClear(FLAG_VISITED_GENSOKYO_SANZU_RIVER);
         FlagClear(FLAG_VISITED_GENSOKYO_GARDEN_OF_THE_SUN);
-        FlagClear(FLAG_VISITED_GENSOKYO_NAMELESS_HILL);
+        FlagClear(FLAG_VISITED_JAVA_KEMBANG_TOWN);
         FlagClear(FLAG_VISITED_GENSOKYO_EIENTEI);
         FlagClear(FLAG_VISITED_GENSOKYO_ANIMAL_REALM);
-        FlagClear(FLAG_VISITED_GENSOKYO_MUGENKAN);
+        FlagClear(FLAG_VISITED_JAVA_NEO_BANJAR_CITY);
         FlagClear(FLAG_VISITED_GENSOKYO_FANTASY_WORLD);
         FlagClear(FLAG_VISITED_GENSOKYO_DREAM_WORLD);
         FlagClear(FLAG_VISITED_GENSOKYO_MAKAI);
@@ -2872,12 +2872,12 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagClear(FLAG_VISITED_JAVA_SEMARANG);
         FlagClear(FLAG_VISITED_JAVA_SURABAYA);
         FlagClear(FLAG_VISITED_JAVA_JAKARTA);
-        FlagClear(FLAG_VISITED_INMAP0X2C);
-        FlagClear(FLAG_VISITED_INMAP0X2D);
-        FlagClear(FLAG_VISITED_INMAP0X2E);
-        FlagClear(FLAG_VISITED_INMAP0X2F);
-        FlagClear(FLAG_VISITED_INMAP0X30);
-        FlagClear(FLAG_VISITED_INMAP0X31);
+        FlagClear(FLAG_VISITED_JOHTO_ROUTE_48_POKEMON_CENTER);
+        FlagClear(FLAG_VISITED_JOHTO_NOBELESSE_CITY);
+        FlagClear(FLAG_VISITED_JAVA_MALANG);
+        FlagClear(FLAG_VISITED_JAVA_DEVATA_ISLETS);
+        FlagClear(FLAG_VISITED_JAVA_KASEPUHAN_TOWN);
+        FlagClear(FLAG_VISITED_JAVA_CILA_PRISON_TOWN);
     }
     else
     {
@@ -2911,10 +2911,10 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_VISITED_GENSOKYO_PALENQUIN_SHIP);
         FlagSet(FLAG_VISITED_GENSOKYO_SANZU_RIVER);
         FlagSet(FLAG_VISITED_GENSOKYO_GARDEN_OF_THE_SUN);
-        FlagSet(FLAG_VISITED_GENSOKYO_NAMELESS_HILL);
+        FlagSet(FLAG_VISITED_JAVA_KEMBANG_TOWN);
         FlagSet(FLAG_VISITED_GENSOKYO_EIENTEI);
         FlagSet(FLAG_VISITED_GENSOKYO_ANIMAL_REALM);
-        FlagSet(FLAG_VISITED_GENSOKYO_MUGENKAN);
+        FlagSet(FLAG_VISITED_JAVA_NEO_BANJAR_CITY);
         FlagSet(FLAG_VISITED_GENSOKYO_FANTASY_WORLD);
         FlagSet(FLAG_VISITED_GENSOKYO_DREAM_WORLD);
         FlagSet(FLAG_VISITED_GENSOKYO_MAKAI);
@@ -2928,12 +2928,12 @@ static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId)
         FlagSet(FLAG_VISITED_JAVA_SEMARANG);
         FlagSet(FLAG_VISITED_JAVA_SURABAYA);
         FlagSet(FLAG_VISITED_JAVA_JAKARTA);
-        FlagSet(FLAG_VISITED_INMAP0X2C);
-        FlagSet(FLAG_VISITED_INMAP0X2D);
-        FlagSet(FLAG_VISITED_INMAP0X2E);
-        FlagSet(FLAG_VISITED_INMAP0X2F);
-        FlagSet(FLAG_VISITED_INMAP0X30);
-        FlagSet(FLAG_VISITED_INMAP0X31);
+        FlagSet(FLAG_VISITED_JOHTO_ROUTE_48_POKEMON_CENTER);
+        FlagSet(FLAG_VISITED_JOHTO_NOBELESSE_CITY);
+        FlagSet(FLAG_VISITED_JAVA_MALANG);
+        FlagSet(FLAG_VISITED_JAVA_DEVATA_ISLETS);
+        FlagSet(FLAG_VISITED_JAVA_KASEPUHAN_TOWN);
+        FlagSet(FLAG_VISITED_JAVA_CILA_PRISON_TOWN);
     }
 }
 

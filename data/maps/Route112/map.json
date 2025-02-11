@@ -3,7 +3,7 @@
   "name": "Route112",
   "layout": "LAYOUT_ROUTE112",
   "music": "MUS_ROUTE110",
-  "region_map_section": "MAPSEC_GENSOKYO_NAMELESS_HILL",
+  "region_map_section": "MAPSEC_JAVA_KEMBANG_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
@@ -12,7 +12,18 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_JAVA_JABO_ROUTE",
+      "offset": -22,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_JAVA_WESTERN_PASS",
+      "offset": -54,
+      "direction": "right"
+    }
+  ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",

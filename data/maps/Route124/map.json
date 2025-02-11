@@ -22,6 +22,16 @@
       "map": "MAP_JAVA_MOUNT_MERAPI",
       "offset": 16,
       "direction": "up"
+    },
+    {
+      "map": "MAP_JAVA_TEMPLE_RUINS",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_JAVA_SOUTH_LINE_ROUTE",
+      "offset": 0,
+      "direction": "left"
     }
   ],
   "object_events": [

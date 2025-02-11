@@ -5,7 +5,7 @@
   "music": "MUS_B_FRONTIER",
   "region_map_section": "MAPSEC_BATTLE_FRONTIER",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -14,9 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_BATTLE_FRONTIER_OUTSIDE_WEST",
-      "offset": 0,
-      "direction": "left"
+      "map": "MAP_ROUTE115",
+      "offset": -38,
+      "direction": "down"
     }
   ],
   "object_events": [

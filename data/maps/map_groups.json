@@ -141,7 +141,26 @@
     "GensokyoSouthernRoad3",
     "GensokyoSouthernRoad4",
     "GensokyoSouthernRoad5",
-    "JavaMountMerapi"
+    "JavaMountMerapi",
+    "JavaTempleRuins",
+    "JavaTrappyPass",
+    "JavaTrappyPassNorth",
+    "JavaRiveryPass",
+    "JavaNorthernPass",
+    "JavaSouthernPass",
+    "JavaMiddlePass",
+    "JavaMountBromo",
+    "JavaEasternPass",
+    "JavaSouthLineRoute",
+    "JavaNorthLineRoute",
+    "JavaSeaBreakRoute1",
+    "JavaSeaBreakRoute2",
+    "JavaTabecRoute",
+    "JavaJaboRoute",
+    "JavaEastSeaRoute1",
+    "JavaEastSeaRoute2",
+    "JavaWesternPass",
+    "JavaSeaOfSand"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -634,7 +653,10 @@
     "NavelRock_Bottom",
     "TrainerHill_Elevator",
     "SafariZone_SouthFirstConstruction",
-    "TrimmedGensokyo"
+    "TrimmedGensokyo",
+    "JavaNaturePreserve1",
+    "JavaNaturePreserve2",
+    "JavaNaturePreserve3"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

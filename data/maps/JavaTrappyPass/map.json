@@ -1,0 +1,39 @@
+{
+  "id": "MAP_JAVA_TRAPPY_PASS",
+  "name": "JavaTrappyPass",
+  "layout": "LAYOUT_JAVA_TRAPPY_PASS",
+  "music": "MUS_THPPZGSK_DEEPMOUNTAIN",
+  "region_map_section": "MAPSEC_JAVA_TRAPPY_PASS",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_JAVA_TEMPLE_RUINS",
+      "offset": -26,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE125",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

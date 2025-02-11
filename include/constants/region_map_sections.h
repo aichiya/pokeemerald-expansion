@@ -28,10 +28,10 @@
 #define MAPSEC_GENSOKYO_PALENQUIN_SHIP  0x18
 #define MAPSEC_GENSOKYO_SANZU_RIVER     0x19
 #define MAPSEC_GENSOKYO_GARDEN_OF_THE_SUN 0x1A
-#define MAPSEC_GENSOKYO_NAMELESS_HILL   0x1B
+#define MAPSEC_JAVA_KEMBANG_TOWN        0x1B
 #define MAPSEC_GENSOKYO_EIENTEI         0x1C
 #define MAPSEC_GENSOKYO_ANIMAL_REALM    0x1D
-#define MAPSEC_GENSOKYO_MUGENKAN        0x1E
+#define MAPSEC_JAVA_NEO_BANJAR_CITY     0x1E
 #define MAPSEC_GENSOKYO_FANTASY_WORLD   0x1F
 #define MAPSEC_GENSOKYO_DREAM_WORLD     0x20
 #define MAPSEC_GENSOKYO_MAKAI           0x21
@@ -47,10 +47,10 @@
 #define MAPSEC_JAVA_JAKARTA             0x2B
 #define MAPSEC_JOHTO_ROUTE_48_POKEMON_CENTER 0x2C
 #define MAPSEC_JOHTO_NOBELESSE_CITY     0x2D
-#define MAPSEC_0X2E                     0x2E
-#define MAPSEC_0X2F                     0x2F
-#define MAPSEC_0X30                     0x30
-#define MAPSEC_0X31                     0x31
+#define MAPSEC_JAVA_MALANG              0x2E
+#define MAPSEC_JAVA_DEVATA_ISLETS       0x2F
+#define MAPSEC_JAVA_KASEPUHAN_TOWN      0x30
+#define MAPSEC_JAVA_CILA_PRISON_TOWN    0x31
 #define MAPSEC_JOHTO_ROUTE_23           0x32
 #define MAPSEC_JOHTO_ROUTE_26           0x33
 #define MAPSEC_JOHTO_ROUTE_27           0x34
@@ -210,17 +210,17 @@
 #define MAPSEC_JAVA_THOUSAND_DOORS      0xCE
 #define MAPSEC_JAVA_MT_MERAPI_CAVE      0xCF
 #define MAPSEC_JAVA_NATIONAL_MONUMENT   0xD0
-#define MAPSEC_JAVA_LOST_AGE1           0xD1
-#define MAPSEC_JAVA_LOST_AGE2           0xD2
-#define MAPSEC_JAVA_LOST_AGE3           0xD3
-#define MAPSEC_JAVA_LOST_AGE4           0xD4
+#define MAPSEC_JAVA_MT_BROMO            0xD1
+#define MAPSEC_JAVA_MISTIC_WOODS        0xD2
+#define MAPSEC_JAVA_NORTH_LINE_ROUTE    0xD3
+#define MAPSEC_JAVA_SOUTH_LINE_ROUTE    0xD4
 #define MAPSEC_JOHTO_ROUTE_51           0xD5	
 #define MAPSEC_JOHTO_SEA_DRAGON_PALACE  0xD6	
-#define MAPSEC_0XD7                         0xD7	
-#define MAPSEC_0XD8                         0xD8	
-#define MAPSEC_0XD9                         0xD9	
-#define MAPSEC_0XDA                         0xDA	
-#define MAPSEC_0XDB                         0xDB	
+#define MAPSEC_JAVA_NORTH_JABO_ROUTE    0xD7	
+#define MAPSEC_JAVA_NORTH_TABEC_ROUTE   0xD8	
+#define MAPSEC_JAVA_EAST_SEA_ROUTE1     0xD9	
+#define MAPSEC_JAVA_EAST_SEA_ROUTE2     0xDA	
+#define MAPSEC_JAVA_MYSTIC_WOODS        0xDB	
 #define MAPSEC_0XDC                         0xDC	
 #define MAPSEC_0XDD                         0xDD	
 #define MAPSEC_0XDE                         0xDE	
@@ -259,7 +259,7 @@
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF
 
-#define KANTO_MAPSEC_START  MAPSEC_0XD7
+#define KANTO_MAPSEC_START  MAPSEC_0XDD
 #define KANTO_MAPSEC_END    MAPSEC_0XDF
 #define KANTO_MAPSEC_COUNT (KANTO_MAPSEC_END - KANTO_MAPSEC_START + 1)
 

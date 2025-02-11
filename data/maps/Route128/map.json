@@ -2,11 +2,11 @@
   "id": "MAP_ROUTE128",
   "name": "Route128",
   "layout": "LAYOUT_ROUTE128",
-  "music": "MUS_ROUTE120",
+  "music": "MUS_PKMN_SLP_TAUPE_HOLLOW_PIANO",
   "region_map_section": "MAPSEC_JAVA_JAKARTA",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -17,6 +17,21 @@
       "map": "MAP_UNDERWATER_ROUTE128",
       "offset": 0,
       "direction": "dive"
+    },
+    {
+      "map": "MAP_JAVA_TABEC_ROUTE",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_JAVA_SEA_BREAK_ROUTE2",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_JAVA_JABO_ROUTE",
+      "offset": 36,
+      "direction": "down"
     }
   ],
   "object_events": [

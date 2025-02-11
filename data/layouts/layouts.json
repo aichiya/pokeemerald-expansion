@@ -274,10 +274,10 @@
     {
       "id": "LAYOUT_ROUTE112",
       "name": "Route112_Layout",
-      "width": 40,
+      "width": 34,
       "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
+      "secondary_tileset": "gTileset_EverGrande",
       "border_filepath": "data/layouts/Route112/border.bin",
       "blockdata_filepath": "data/layouts/Route112/map.bin"
     },
@@ -304,10 +304,10 @@
     {
       "id": "LAYOUT_ROUTE115",
       "name": "Route115_Layout",
-      "width": 40,
-      "height": 80,
+      "width": 60,
+      "height": 44,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
+      "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/Route115/border.bin",
       "blockdata_filepath": "data/layouts/Route115/map.bin"
     },
@@ -394,7 +394,7 @@
     {
       "id": "LAYOUT_ROUTE124",
       "name": "Route124_Layout",
-      "width": 90,
+      "width": 82,
       "height": 80,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
@@ -404,40 +404,40 @@
     {
       "id": "LAYOUT_ROUTE125",
       "name": "Route125_Layout",
-      "width": 80,
-      "height": 40,
+      "width": 40,
+      "height": 34,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/Route125/border.bin",
       "blockdata_filepath": "data/layouts/Route125/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE126",
       "name": "Route126_Layout",
-      "width": 80,
-      "height": 80,
+      "width": 46,
+      "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
+      "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/Route126/border.bin",
       "blockdata_filepath": "data/layouts/Route126/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE127",
       "name": "Route127_Layout",
-      "width": 80,
-      "height": 80,
+      "width": 60,
+      "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
+      "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/Route127/border.bin",
       "blockdata_filepath": "data/layouts/Route127/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE128",
       "name": "Route128_Layout",
-      "width": 120,
-      "height": 40,
+      "width": 62,
+      "height": 82,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route128/border.bin",
       "blockdata_filepath": "data/layouts/Route128/map.bin"
     },
@@ -454,40 +454,40 @@
     {
       "id": "LAYOUT_ROUTE130_MIRAGE_ISLAND",
       "name": "Route130_MirageIsland_Layout",
-      "width": 80,
-      "height": 40,
+      "width": 40,
+      "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/Route130_MirageIsland/border.bin",
       "blockdata_filepath": "data/layouts/Route130_MirageIsland/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE131",
       "name": "Route131_Layout",
-      "width": 60,
-      "height": 40,
+      "width": 48,
+      "height": 31,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
+      "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/Route131/border.bin",
       "blockdata_filepath": "data/layouts/Route131/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE132",
       "name": "Route132_Layout",
-      "width": 80,
-      "height": 40,
+      "width": 86,
+      "height": 50,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
+      "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/Route132/border.bin",
       "blockdata_filepath": "data/layouts/Route132/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE133",
       "name": "Route133_Layout",
-      "width": 80,
-      "height": 40,
+      "width": 30,
+      "height": 50,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
       "border_filepath": "data/layouts/Route133/border.bin",
       "blockdata_filepath": "data/layouts/Route133/map.bin"
     },
@@ -495,9 +495,9 @@
       "id": "LAYOUT_ROUTE134",
       "name": "Route134_Layout",
       "width": 80,
-      "height": 40,
+      "height": 50,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
+      "secondary_tileset": "gTileset_Sootopolis",
       "border_filepath": "data/layouts/Route134/border.bin",
       "blockdata_filepath": "data/layouts/Route134/map.bin"
     },
@@ -3184,10 +3184,10 @@
     {
       "id": "LAYOUT_ROUTE131_SKY_PILLAR",
       "name": "Route131_SkyPillar_Layout",
-      "width": 60,
-      "height": 40,
+      "width": 48,
+      "height": 31,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Pacifidlog",
+      "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/Route131_SkyPillar/border.bin",
       "blockdata_filepath": "data/layouts/Route131_SkyPillar/map.bin"
     },
@@ -3444,10 +3444,10 @@
     {
       "id": "LAYOUT_BATTLE_FRONTIER_OUTSIDE_EAST",
       "name": "BattleFrontier_OutsideEast_Layout",
-      "width": 72,
-      "height": 72,
+      "width": 40,
+      "height": 60,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "secondary_tileset": "gTileset_EverGrande",
       "border_filepath": "data/layouts/BattleFrontier_OutsideEast/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_OutsideEast/map.bin"
     },
@@ -4920,6 +4920,226 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/JavaMountMerapi/border.bin",
       "blockdata_filepath": "data/layouts/JavaMountMerapi/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_TEMPLE_RUINS",
+      "name": "JavaTempleRuins_Layout",
+      "width": 56,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JavaTempleRuins/border.bin",
+      "blockdata_filepath": "data/layouts/JavaTempleRuins/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_TRAPPY_PASS",
+      "name": "JavaTrappyPass_Layout",
+      "width": 30,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/JavaTrappyPass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaTrappyPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_TRAPPY_PASS_NORTH",
+      "name": "JavaTrappyPassNorth_Layout",
+      "width": 30,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JavaTrappyPassNorth/border.bin",
+      "blockdata_filepath": "data/layouts/JavaTrappyPassNorth/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_RIVERY_PASS",
+      "name": "JavaRiveryPass_Layout",
+      "width": 50,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/JavaRiveryPass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaRiveryPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_NORTHERN_PASS",
+      "name": "JavaNorthernPass_Layout",
+      "width": 150,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/JavaNorthernPass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaNorthernPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_SOUTHERN_PASS",
+      "name": "JavaSouthernPass_Layout",
+      "width": 108,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/JavaSouthernPass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaSouthernPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_MIDDLE_PASS",
+      "name": "JavaMiddlePass_Layout",
+      "width": 72,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/JavaMiddlePass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaMiddlePass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_MOUNT_BROMO",
+      "name": "JavaMountBromo_Layout",
+      "width": 40,
+      "height": 73,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/JavaMountBromo/border.bin",
+      "blockdata_filepath": "data/layouts/JavaMountBromo/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_EASTERN_PASS",
+      "name": "JavaEasternPass_Layout",
+      "width": 100,
+      "height": 59,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/JavaEasternPass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaEasternPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_SOUTH_LINE_ROUTE",
+      "name": "JavaSouthLineRoute_Layout",
+      "width": 90,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/JavaSouthLineRoute/border.bin",
+      "blockdata_filepath": "data/layouts/JavaSouthLineRoute/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_NORTH_LINE_ROUTE",
+      "name": "JavaNorthLineRoute_Layout",
+      "width": 126,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/JavaNorthLineRoute/border.bin",
+      "blockdata_filepath": "data/layouts/JavaNorthLineRoute/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_SEA_BREAK_ROUTE1",
+      "name": "JavaSeaBreakRoute1_Layout",
+      "width": 50,
+      "height": 82,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/JavaSeaBreakRoute1/border.bin",
+      "blockdata_filepath": "data/layouts/JavaSeaBreakRoute1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_SEA_BREAK_ROUTE2",
+      "name": "JavaSeaBreakRoute2_Layout",
+      "width": 142,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/JavaSeaBreakRoute2/border.bin",
+      "blockdata_filepath": "data/layouts/JavaSeaBreakRoute2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_TABEC_ROUTE",
+      "name": "JavaTabecRoute_Layout",
+      "width": 50,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/JavaTabecRoute/border.bin",
+      "blockdata_filepath": "data/layouts/JavaTabecRoute/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_JABO_ROUTE",
+      "name": "JavaJaboRoute_Layout",
+      "width": 42,
+      "height": 68,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/JavaJaboRoute/border.bin",
+      "blockdata_filepath": "data/layouts/JavaJaboRoute/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_EAST_SEA_ROUTE1",
+      "name": "JavaEastSeaRoute1_Layout",
+      "width": 40,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/JavaEastSeaRoute1/border.bin",
+      "blockdata_filepath": "data/layouts/JavaEastSeaRoute1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_EAST_SEA_ROUTE2",
+      "name": "JavaEastSeaRoute2_Layout",
+      "width": 60,
+      "height": 100,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/JavaEastSeaRoute2/border.bin",
+      "blockdata_filepath": "data/layouts/JavaEastSeaRoute2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_WESTERN_PASS",
+      "name": "JavaWesternPass_Layout",
+      "width": 30,
+      "height": 140,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/JavaWesternPass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaWesternPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_NATURE_PRESERVE1",
+      "name": "JavaNaturePreserve1_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/JavaNaturePreserve1/border.bin",
+      "blockdata_filepath": "data/layouts/JavaNaturePreserve1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_NATURE_PRESERVE2",
+      "name": "JavaNaturePreserve2_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/JavaNaturePreserve2/border.bin",
+      "blockdata_filepath": "data/layouts/JavaNaturePreserve2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_NATURE_PRESERVE3",
+      "name": "JavaNaturePreserve3_Layout",
+      "width": 66,
+      "height": 44,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/JavaNaturePreserve3/border.bin",
+      "blockdata_filepath": "data/layouts/JavaNaturePreserve3/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_SEA_OF_SAND",
+      "name": "JavaSeaOfSand_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/JavaSeaOfSand/border.bin",
+      "blockdata_filepath": "data/layouts/JavaSeaOfSand/map.bin"
     }
   ]
 }

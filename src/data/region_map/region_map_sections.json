@@ -217,8 +217,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_NAMELESS_HILL",
-      "name": "The Nameless Hill",
+      "map_section": "MAPSEC_JAVA_KEMBANG_TOWN",
+      "name": "Kembang Town",
       "x": 15,
       "y": 29,
       "width": 1,
@@ -241,8 +241,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_GENSOKYO_MUGENKAN",
-      "name": "Mugenkan",
+      "map_section": "MAPSEC_JAVA_NEO_BANJAR_CITY",
+      "name": "Neo Banjar City",
       "x": 27,
       "y": 17,
       "width": 1,
@@ -346,7 +346,7 @@
     },
     {
       "map_section": "MAPSEC_JAVA_JAKARTA",
-      "name": "Jakarta City",
+      "name": "City of Jabo de Tabec",
       "x": 38,
       "y": 4,
       "width": 1,
@@ -369,32 +369,32 @@
       "height": 2
     },
     {
-      "map_section": "MAPSEC_0X2E",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_JAVA_MALANG",
+      "name": "Malang Town",
       "x": 38,
       "y": 7,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0X2F",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_JAVA_DEVATA_ISLETS",
+      "name": "Devata Islets",
       "x": 38,
       "y": 8,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0X30",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_JAVA_KASEPUHAN_TOWN",
+      "name": "Kasepuhan Town",
       "x": 38,
       "y": 9,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0X31",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_JAVA_CILA_PRISON_TOWN",
+      "name": "Cila Prison Town",
       "x": 38,
       "y": 10,
       "width": 1,
@@ -466,7 +466,7 @@
     },
     {
       "map_section": "MAPSEC_BATTLE_FRONTIER",
-      "name": "Battle Frontier",
+      "name": "Neo Banjar City",
       "x": 5,
       "y": 2,
       "width": 1,
@@ -1514,7 +1514,7 @@
     },
     {
       "map_section": "MAPSEC_ETC_DENLINER",
-      "name": "The Den-Liner",
+      "name": "The DenLiner",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1673,32 +1673,32 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_LOST_AGE1",
-      "name": "The Lost Age",
+      "map_section": "MAPSEC_JAVA_MT_BROMO",
+      "name": "Mt. Bromo",
       "x": 2,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_LOST_AGE2",
-      "name": "The Lost Age",
+      "map_section": "MAPSEC_JAVA_MISTIC_WOODS",
+      "name": "Mistic Woods",
       "x": 6,
       "y": 8,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_LOST_AGE3",
-      "name": "The Lost Age",
+      "map_section": "MAPSEC_JAVA_NORTH_LINE_ROUTE",
+      "name": "North Line Route",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_JAVA_LOST_AGE4",
-      "name": "The Lost Age",
+      "map_section": "MAPSEC_JAVA_SOUTH_LINE_ROUTE",
+      "name": "South Line Route",
       "x": 8,
       "y": 4,
       "width": 1,
@@ -1721,40 +1721,40 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0XD7",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_JAVA_NORTH_JABO_ROUTE",
+      "name": "Jabo Route",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0XD8",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_JAVA_NORTH_TABEC_ROUTE",
+      "name": "Tabec Route",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0XD9",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_JAVA_EAST_SEA_ROUTE1",
+      "name": "East Sea Route",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0XDA",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_JAVA_EAST_SEA_ROUTE2",
+      "name": "East Sea Route",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_0XDB",
-      "name": "Unknown Place",
+      "map_section": "MAPSEC_JAVA_MYSTIC_WOODS",
+      "name": "Mystic Woods",
       "x": 0,
       "y": 0,
       "width": 1,

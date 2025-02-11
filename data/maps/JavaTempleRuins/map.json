@@ -1,0 +1,44 @@
+{
+  "id": "MAP_JAVA_TEMPLE_RUINS",
+  "name": "JavaTempleRuins",
+  "layout": "LAYOUT_JAVA_TEMPLE_RUINS",
+  "music": "MUS_GS2_721_CONTIGO",
+  "region_map_section": "MAPSEC_JAVA_SOUTHERN_PASS",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE124",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_JAVA_TRAPPY_PASS",
+      "offset": 26,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_JAVA_SOUTHERN_PASS",
+      "offset": 26,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

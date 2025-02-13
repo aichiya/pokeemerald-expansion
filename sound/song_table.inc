@@ -1638,6 +1638,7 @@ gSongTable::
 	song mus_nep_outside_the_dimension, 0, 0
 	song mus_gi_ormos, 0, 0
 	song mus_etc_jogja_istimewa, 0, 0
+	song mus_etc_symphoni_yang_indah, 0, 0
 
 	.align 2
 dummy_song_header:

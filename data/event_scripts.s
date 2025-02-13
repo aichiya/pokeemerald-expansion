@@ -1328,3 +1328,27 @@ EventScript_TrimmedGensokyoLandEncounter::
 	.include "data/maps/JavaNaturePreserve3/scripts.inc"
 
 	.include "data/maps/JavaSeaOfSand/scripts.inc"
+
+	.include "data/maps/JavaOldYogyakartaCity/scripts.inc"
+
+	.include "data/maps/JavaOldSoloTown/scripts.inc"
+
+	.include "data/maps/JavaOldSemarangTown/scripts.inc"
+
+	.include "data/maps/JavaOldSurabayaCity/scripts.inc"
+
+	.include "data/maps/JavaOldMountMerapi/scripts.inc"
+
+	.include "data/maps/JavaOldNorthPlain/scripts.inc"
+
+	.include "data/maps/JavaOldSouthernPass/scripts.inc"
+
+	.include "data/maps/JavaOldPojokCliff/scripts.inc"
+
+	.include "data/maps/JavaOldTrappyPass/scripts.inc"
+
+	.include "data/maps/JavaOldRiveryPass/scripts.inc"
+
+	.include "data/maps/JavaOldNorthernPass/scripts.inc"
+
+	.include "data/maps/JavaOldMountAurora/scripts.inc"

@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE128",
   "name": "Route128",
   "layout": "LAYOUT_ROUTE128",
-  "music": "MUS_PKMN_SLP_TAUPE_HOLLOW_PIANO",
+  "music": "MUS_ETC_SYMPHONI_YANG_INDAH",
   "region_map_section": "MAPSEC_JAVA_JAKARTA",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -656,7 +656,19 @@
     "TrimmedGensokyo",
     "JavaNaturePreserve1",
     "JavaNaturePreserve2",
-    "JavaNaturePreserve3"
+    "JavaNaturePreserve3",
+    "JavaOldYogyakartaCity",
+    "JavaOldSoloTown",
+    "JavaOldSemarangTown",
+    "JavaOldSurabayaCity",
+    "JavaOldMountMerapi",
+    "JavaOldNorthPlain",
+    "JavaOldSouthernPass",
+    "JavaOldPojokCliff",
+    "JavaOldTrappyPass",
+    "JavaOldRiveryPass",
+    "JavaOldNorthernPass",
+    "JavaOldMountAurora"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

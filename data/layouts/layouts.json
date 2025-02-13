@@ -5140,6 +5140,126 @@
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/JavaSeaOfSand/border.bin",
       "blockdata_filepath": "data/layouts/JavaSeaOfSand/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_YOGYAKARTA_CITY",
+      "name": "JavaOldYogyakartaCity_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/JavaOldYogyakartaCity/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldYogyakartaCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_SOLO_TOWN",
+      "name": "JavaOldSoloTown_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/JavaOldSoloTown/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldSoloTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_SEMARANG_TOWN",
+      "name": "JavaOldSemarangTown_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JavaOldSemarangTown/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldSemarangTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_SURABAYA_CITY",
+      "name": "JavaOldSurabayaCity_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "border_filepath": "data/layouts/JavaOldSurabayaCity/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldSurabayaCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_MOUNT_MERAPI",
+      "name": "JavaOldMountMerapi_Layout",
+      "width": 50,
+      "height": 60,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/JavaOldMountMerapi/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldMountMerapi/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_NORTH_PLAIN",
+      "name": "JavaOldNorthPlain_Layout",
+      "width": 24,
+      "height": 100,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/JavaOldNorthPlain/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldNorthPlain/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_SOUTHERN_PASS",
+      "name": "JavaOldSouthernPass_Layout",
+      "width": 100,
+      "height": 20,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/JavaOldSouthernPass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldSouthernPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_POJOK_CLIFF",
+      "name": "JavaOldPojokCliff_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/JavaOldPojokCliff/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldPojokCliff/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_TRAPPY_PASS",
+      "name": "JavaOldTrappyPass_Layout",
+      "width": 24,
+      "height": 200,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/JavaOldTrappyPass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldTrappyPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_RIVERY_PASS",
+      "name": "JavaOldRiveryPass_Layout",
+      "width": 50,
+      "height": 30,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/JavaOldRiveryPass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldRiveryPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_NORTHERN_PASS",
+      "name": "JavaOldNorthernPass_Layout",
+      "width": 110,
+      "height": 20,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/JavaOldNorthernPass/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldNorthernPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_JAVA_OLD_MOUNT_AURORA",
+      "name": "JavaOldMountAurora_Layout",
+      "width": 36,
+      "height": 130,
+      "primary_tileset": "gTileset_GeneralSnow",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/JavaOldMountAurora/border.bin",
+      "blockdata_filepath": "data/layouts/JavaOldMountAurora/map.bin"
     }
   ]
 }

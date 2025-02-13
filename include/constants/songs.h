@@ -1609,8 +1609,9 @@
 #define MUS_NEP_OUTSIDE_THE_DIMENSION 1634
 #define MUS_GI_ORMOS 1635
 #define MUS_ETC_JOGJA_ISTIMEWA 1636
+#define MUS_ETC_SYMPHONI_YANG_INDAH 1637
 
-#define END_MUS 					MUS_ETC_JOGJA_ISTIMEWA
+#define END_MUS 					MUS_ETC_SYMPHONI_YANG_INDAH
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

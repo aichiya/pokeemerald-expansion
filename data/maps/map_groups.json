@@ -668,7 +668,11 @@
     "JavaOldTrappyPass",
     "JavaOldRiveryPass",
     "JavaOldNorthernPass",
-    "JavaOldMountAurora"
+    "JavaOldMountAurora",
+    "AnotherWorldTrappyPass",
+    "AnotherWorldDeathForest",
+    "AnotherWorldEcruteakCity",
+    "AnotherWorldUnderworldMushroomBiome"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

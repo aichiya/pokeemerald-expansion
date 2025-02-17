@@ -4837,7 +4837,7 @@
       "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Unused1",
+      "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/GensokyoEasternRoad1/border.bin",
       "blockdata_filepath": "data/layouts/GensokyoEasternRoad1/map.bin"
     },
@@ -5260,6 +5260,46 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/JavaOldMountAurora/border.bin",
       "blockdata_filepath": "data/layouts/JavaOldMountAurora/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANOTHER_WORLD_TRAPPY_PASS",
+      "name": "AnotherWorldTrappyPass_Layout",
+      "width": 24,
+      "height": 200,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AnotherWorldTrappyPass/border.bin",
+      "blockdata_filepath": "data/layouts/AnotherWorldTrappyPass/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANOTHER_WORLD_DEATH_FOREST",
+      "name": "AnotherWorldDeathForest_Layout",
+      "width": 72,
+      "height": 82,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/AnotherWorldDeathForest/border.bin",
+      "blockdata_filepath": "data/layouts/AnotherWorldDeathForest/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANOTHER_WORLD_ECRUTEAK_CITY",
+      "name": "AnotherWorldEcruteakCity_Layout",
+      "width": 40,
+      "height": 36,
+      "primary_tileset": "gTileset_GeneralGSC",
+      "secondary_tileset": "gTileset_RoofGSC",
+      "border_filepath": "data/layouts/AnotherWorldEcruteakCity/border.bin",
+      "blockdata_filepath": "data/layouts/AnotherWorldEcruteakCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANOTHER_WORLD_UNDERWORLD_MUSHROOM_BIOME",
+      "name": "AnotherWorldUnderworldMushroomBiome_Layout",
+      "width": 74,
+      "height": 76,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AnotherWorldUnderworldMushroomBiome/border.bin",
+      "blockdata_filepath": "data/layouts/AnotherWorldUnderworldMushroomBiome/map.bin"
     }
   ]
 }

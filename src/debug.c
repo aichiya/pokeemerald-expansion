@@ -5857,6 +5857,8 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_GI_ORMOS) \
     X(MUS_ETC_JOGJA_ISTIMEWA) \
     X(MUS_ETC_SYMPHONI_YANG_INDAH) \
+    X(MUS_GSC_PEWTER_CITY_GBC_STYLE) \
+    X(MUS_GSC_ECRUTEAK_CITY_GBC_STYLE) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

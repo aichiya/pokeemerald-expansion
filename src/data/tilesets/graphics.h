@@ -1672,3 +1672,41 @@ const u16 gTilesetPalettes_GeneralSnow[][16] =
 };
 
 const u32 gTilesetTiles_GeneralSnow[] = INCBIN_U32("data/tilesets/primary/general_snow/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_GeneralGSC[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/general_gsc/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_GeneralGSC[] = INCBIN_U32("data/tilesets/primary/general_gsc/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_RoofGSC[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/roof_gsc/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_RoofGSC[] = INCBIN_U32("data/tilesets/secondary/roof_gsc/tiles.4bpp.lz");

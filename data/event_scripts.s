@@ -1352,3 +1352,11 @@ EventScript_TrimmedGensokyoLandEncounter::
 	.include "data/maps/JavaOldNorthernPass/scripts.inc"
 
 	.include "data/maps/JavaOldMountAurora/scripts.inc"
+
+	.include "data/maps/AnotherWorldTrappyPass/scripts.inc"
+
+	.include "data/maps/AnotherWorldDeathForest/scripts.inc"
+
+	.include "data/maps/AnotherWorldEcruteakCity/scripts.inc"
+
+	.include "data/maps/AnotherWorldUnderworldMushroomBiome/scripts.inc"

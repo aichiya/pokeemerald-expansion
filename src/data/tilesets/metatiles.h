@@ -213,3 +213,9 @@ const u16 gMetatileAttributes_TrimmedGensokyo[] = INCBIN_U16("data/tilesets/seco
 
 const u16 gMetatiles_GeneralSnow[] = INCBIN_U16("data/tilesets/primary/general_snow/metatiles.bin");
 const u16 gMetatileAttributes_GeneralSnow[] = INCBIN_U16("data/tilesets/primary/general_snow/metatile_attributes.bin");
+
+const u16 gMetatiles_GeneralGSC[] = INCBIN_U16("data/tilesets/primary/general_gsc/metatiles.bin");
+const u16 gMetatileAttributes_GeneralGSC[] = INCBIN_U16("data/tilesets/primary/general_gsc/metatile_attributes.bin");
+
+const u16 gMetatiles_RoofGSC[] = INCBIN_U16("data/tilesets/secondary/roof_gsc/metatiles.bin");
+const u16 gMetatileAttributes_RoofGSC[] = INCBIN_U16("data/tilesets/secondary/roof_gsc/metatile_attributes.bin");

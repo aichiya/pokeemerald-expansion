@@ -181,3 +181,51 @@ ProgrammableWaveData_GoldenSun2pcm001::
 
 ProgrammableWaveData_GoldenSun2pcm002::
     .incbin "sound/programmable_wave_samples/golden_sun_2_pcm_002.pcm"
+
+ProgrammableWaveData_PkmnGSCRGBY00::
+    .incbin "sound/programmable_wave_samples/gscrgby00.pcm"
+
+ProgrammableWaveData_PkmnGSCRGBY01::
+    .incbin "sound/programmable_wave_samples/gscrgby01.pcm"
+
+ProgrammableWaveData_PkmnGSCRGBY02::
+    .incbin "sound/programmable_wave_samples/gscrgby02.pcm"
+
+ProgrammableWaveData_PkmnGSCRGBY03::
+    .incbin "sound/programmable_wave_samples/gscrgby03.pcm"
+
+ProgrammableWaveData_PkmnGSCRGBY04::
+    .incbin "sound/programmable_wave_samples/gscrgby04.pcm"
+
+ProgrammableWaveData_PkmnRGBY05::
+    .incbin "sound/programmable_wave_samples/rgby05.pcm"
+
+ProgrammableWaveData_PkmnGSC05::
+    .incbin "sound/programmable_wave_samples/gsc05.pcm"
+
+ProgrammableWaveData_PkmnGSC06::
+    .incbin "sound/programmable_wave_samples/gsc06.pcm"
+
+ProgrammableWaveData_PkmnGSC07::
+    .incbin "sound/programmable_wave_samples/gsc07.pcm"
+
+ProgrammableWaveData_PkmnGSC08::
+    .incbin "sound/programmable_wave_samples/gsc08.pcm"
+
+ProgrammableWaveData_PkmnGSC09::
+    .incbin "sound/programmable_wave_samples/gsc09.pcm"
+
+ProgrammableWaveData_PkmnGSC10::
+    .incbin "sound/programmable_wave_samples/gsc10.pcm"
+
+ProgrammableWaveData_PkmnGSC11::
+    .incbin "sound/programmable_wave_samples/gsc11.pcm"
+
+ProgrammableWaveData_PkmnGSC12::
+    .incbin "sound/programmable_wave_samples/gsc12.pcm"
+
+ProgrammableWaveData_PkmnGSC13::
+    .incbin "sound/programmable_wave_samples/gsc13.pcm"
+
+ProgrammableWaveData_PkmnGSC14::
+    .incbin "sound/programmable_wave_samples/gsc14.pcm"

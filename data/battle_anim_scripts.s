@@ -19010,50 +19010,52 @@ DefectiveMiracleHit:
 	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 168
 	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 210
 	delay 13	
+@	setarg 7, 0xFFFF
+	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
+	delay 13
+	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
+	delay 13
+	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
+	delay 13
+	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
+	delay 30
 	setarg 7, 0xFFFF
-	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
-	delay 13
-	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
-	delay 13
-	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
-	delay 13
-	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
-	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff

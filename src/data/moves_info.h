@@ -21367,19 +21367,19 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Defective Miracle"),
         .description = COMPOUND_STRING(
-            "Hits and may lower foes Accuracy.\n"
-            "Effective vs. Dark- or Divine-type."),
+            "Hits and may lower Accuracy.\n"
+            "Good vs. Dark- or Divine-type."),
         .effect = EFFECT_DEFECTIVE_MIRACLE,
-        .power = 80,
+        .power = 100,
         .type = TYPE_NEW_NETHER,
-        .accuracy = 100,
+        .accuracy = 90,
         .pp = 5,
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ACC_MINUS_2,
-            .chance = 30,
+            .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
+            .chance = 50,
         }),
         .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
         .contestCategory = CONTEST_CATEGORY_COOL,

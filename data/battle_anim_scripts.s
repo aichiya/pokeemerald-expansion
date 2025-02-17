@@ -18863,6 +18863,208 @@ gBattleAnimMove_IceBlade::
 	delay 1
 	end
 
+gBattleAnimMove_DefectiveMiracle::
+	loadspritegfx ANIM_TAG_YELLOW_STAR
+	loadspritegfx ANIM_TAG_IMPACT
+	loadspritegfx ANIM_TAG_SPARKLE_6
+	panse SE_M_GUST, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET 2, 0
+	playsewithpan 228, 0
+	delay 0
+	monbg ANIM_DEF_PARTNER
+	delay 0
+@	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, 1, 0, 0, 0, 0
+	delay 0
+	setalpha 12, 8
+	createvisualtask AnimTask_GetAttackerSide, 2, 0
+	jumpargeq 7, 1, DefectiveMiracleFadeToBg
+	fadetobg BG_GHOST
+	waitbgfadeout
+	createvisualtask AnimTask_StartSlidingBg, 5, RGB(0, 16, 1), 0, 0, -1
+	goto DefectiveMiracleHit
+DefectiveMiracleFadeToBg:
+	fadetobg BG_GHOST
+	waitbgfadeout
+	createvisualtask AnimTask_StartSlidingBg, 5, -1535, 0, 0, -1
+	goto DefectiveMiracleHit
+DefectiveMiracleHit:
+	waitbgfadein
+	delay 0
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, 1, 0, 4, 4, RGB_BLACK
+	waitbgfadein
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_TARGET, 66, -32, 16, 0, 6, 2, 3, 1
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_TARGET, 66, -8, 18, 64, 3, 2, 2, 1
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_ATTACKER, 120, -24, 18, 90, 5, 1, 2, 1
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_ATTACKER, 120, -40, 14, 128, 4, 1, 2, 1
+	delay 0
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_TARGET, 66, -32, 16, 0, 6, 2, 3, 1
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_TARGET, 66, -8, 18, 64, 3, 2, 2, 1
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_ATTACKER, 120, -24, 18, 90, 5, 1, 2, 1
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_ATTACKER, 120, -40, 14, 128, 4, 1, 2, 1
+	delay 0
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_TARGET, 66, -32, 16, 0, 6, 2, 3, 1
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_TARGET, 66, -8, 18, 64, 3, 2, 2, 1
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_ATTACKER, 120, -24, 18, 90, 5, 1, 2, 1
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_ATTACKER, 120, -40, 14, 128, 4, 1, 2, 1
+	delay 6
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_TARGET, 66, -4, 16, 0, 6, 1, 2, 1
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_TARGET, 66, -16, 12, 192, 5, 2, 3, 1
+	delay 0
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_TARGET, 66, -4, 16, 0, 6, 1, 2, 1
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_TARGET, 66, -16, 12, 192, 5, 2, 3, 1
+	delay 0
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_TARGET, 66, -4, 16, 0, 6, 1, 2, 1
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_TARGET, 66, -16, 12, 192, 5, 2, 3, 1
+@	waitforvisualfinish
+	playsewithpan SE_M_GUST2, SOUND_PAN_TARGET
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	createsprite gSwiftStarSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 20, 1
+	delay 5
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	createsprite gSwiftStarSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 5, 22, -18, 1
+	delay 5
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	createsprite gSwiftStarSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, -10, 22, 15, 1
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 18, 1
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 2, 0, 18, 1
+	delay 5
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	createsprite gSwiftStarSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -20, 1
+	delay 5
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	createsprite gSwiftStarSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 12, 1
+	delay 5
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_TARGET, 66, -32, 16, 0, 6, 2, 3, 1
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_TARGET, 66, -8, 18, 64, 3, 2, 2, 1
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_ATTACKER, 120, -24, 18, 90, 5, 1, 2, 1
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_ATTACKER, 120, -40, 14, 128, 4, 1, 2, 1
+	delay 0
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_TARGET, 66, -32, 16, 0, 6, 2, 3, 1
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_TARGET, 66, -8, 18, 64, 3, 2, 2, 1
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_ATTACKER, 120, -24, 18, 90, 5, 1, 2, 1
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_ATTACKER, 120, -40, 14, 128, 4, 1, 2, 1
+	delay 0
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_TARGET, 66, -32, 16, 0, 6, 2, 3, 1
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_TARGET, 66, -8, 18, 64, 3, 2, 2, 1
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_ATTACKER, 120, -24, 18, 90, 5, 1, 2, 1
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_ATTACKER, 120, -40, 14, 128, 4, 1, 2, 1
+	delay 6
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_TARGET, 66, -4, 16, 0, 6, 1, 2, 1
+	createsprite gSilverWindBigSparkSpriteTemplate, ANIM_TARGET, 66, -16, 12, 192, 5, 2, 3, 1
+	delay 0
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_TARGET, 66, -4, 16, 0, 6, 1, 2, 1
+	createsprite gSilverWindMediumSparkSpriteTemplate, ANIM_TARGET, 66, -16, 12, 192, 5, 2, 3, 1
+	delay 0
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_TARGET, 66, -4, 16, 0, 6, 1, 2, 1
+	createsprite gSilverWindSmallSparkSpriteTemplate, ANIM_TARGET, 66, -16, 12, 192, 5, 2, 3, 1
+@	waitforvisualfinish
+	playsewithpan SE_M_GUST2, SOUND_PAN_TARGET
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	createsprite gSwiftStarSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 20, 1
+	delay 5
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	createsprite gSwiftStarSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 5, 22, -18, 1
+	delay 5
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	createsprite gSwiftStarSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, -10, 22, 15, 1
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 18, 1
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 2, 0, 18, 1
+	delay 5
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	createsprite gSwiftStarSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -20, 1
+	delay 5
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	createsprite gSwiftStarSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 12, 1
+	delay 5
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+@	waitforvisualfinish
+	delay 30
+	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_ATTACKER, RGB(31, 31, 19), 12, 5, 1
+	delay 4
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	playsewithpan SE_M_REVERSAL, SOUND_PAN_ATTACKER
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 0
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 42
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 84
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 126
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 168
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 210
+	delay 13
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 0
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 42
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 84
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 126
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 168
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 210
+	delay 13
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 0
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 42
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 84
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 126
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 168
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 210
+	delay 13
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 0
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 42
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 84
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 126
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 168
+	createsprite gDefectiveMiracleStarSpriteTemplate, ANIM_ATTACKER, 2, 26, 210
+	delay 13	
+	setarg 7, 0xFFFF
+	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
+	delay 13
+	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
+	delay 13
+	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
+	delay 13
+	playsewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 0
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 32
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 64
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 96
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 128
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 160
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 192
+	createsprite gDefectiveMiracleStarScatterSpriteTemplate, ANIM_TARGET, 2, 224
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	delay 0
+	restorebg
+	waitbgfadeout
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, 1, 0, 4, 0, RGB_BLACK
+	setarg 7, -1
+	waitbgfadein
+	end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
 gBattleAnimMove_MirrorMove::

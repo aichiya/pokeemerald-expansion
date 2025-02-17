@@ -866,6 +866,7 @@ extern const u8 gBattleAnimMove_01Crusher[];
 extern const u8 gBattleAnimMove_DimensionSlash[];
 extern const u8 gBattleAnimMove_NeptuneBreak[];
 extern const u8 gBattleAnimMove_IceBlade[];
+extern const u8 gBattleAnimMove_DefectiveMiracle[];
 extern const u8 gBattleAnimMove_BreakneckBlitz[];
 extern const u8 gBattleAnimMove_AllOutPummeling[];
 extern const u8 gBattleAnimMove_SupersonicSkystrike[];

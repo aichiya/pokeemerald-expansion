@@ -1021,6 +1021,40 @@ const struct SpriteTemplate gPowerGemOrbScatterSpriteTemplate =
     .callback = AnimOrbitScatter,
 };
 
+const union AffineAnimCmd gDefectiveMiracleStarAffineAnimCmds[] =
+{
+    AFFINEANIMCMD_FRAME(0x80, 0x80, 0, 0),
+    AFFINEANIMCMD_FRAME(0x8, 0x8, 0, 1),
+    AFFINEANIMCMD_JUMP(1),
+};
+
+const union AffineAnimCmd *const gDefectiveMiracleStarAffineAnimTable[] =
+{
+    gDefectiveMiracleStarAffineAnimCmds,
+};
+
+const struct SpriteTemplate gDefectiveMiracleStarSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_YELLOW_STAR,
+    .paletteTag = ANIM_TAG_YELLOW_STAR,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDefectiveMiracleStarAffineAnimTable,
+    .callback = AnimOrbitFast,
+};
+
+const struct SpriteTemplate gDefectiveMiracleStarScatterSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_YELLOW_STAR,
+    .paletteTag = ANIM_TAG_YELLOW_STAR,
+    .oam = &gOamData_AffineDouble_ObjNormal_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDefectiveMiracleStarAffineAnimTable,
+    .callback = AnimOrbitScatter,
+};
+
 const union AffineAnimCmd gSpitUpOrbAffineAnimCmds[] =
 {
     AFFINEANIMCMD_FRAME(0x80, 0x80, 0, 0),

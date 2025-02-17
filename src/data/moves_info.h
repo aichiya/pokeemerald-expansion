@@ -21363,6 +21363,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_IceBlade,
     },
 
+    [MOVE_DEFECTIVE_MIRACLE] =  // Added
+    {
+        .name = COMPOUND_STRING("Defective Miracle"),
+        .description = COMPOUND_STRING(
+            "Hits and may lower foes Accuracy.\n"
+            "Effective vs. Dark- or Divine-type."),
+        .effect = EFFECT_DEFECTIVE_MIRACLE,
+        .power = 80,
+        .type = TYPE_NEW_NETHER,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ACC_MINUS_2,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
+        .battleAnimScript = gBattleAnimMove_DefectiveMiracle,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =  // Edited
     {

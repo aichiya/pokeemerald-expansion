@@ -142,8 +142,8 @@ bool32 HandleMoveTargetRedirection(void)
     else if (IsDoubleBattle()
            && gSideTimers[side].followmeTimer == 0
            && (!IS_MOVE_STATUS(gCurrentMove) || (moveTarget != MOVE_TARGET_USER && moveTarget != MOVE_TARGET_ALL_BATTLERS))
-           && ((ability != ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
-            || (ability != ABILITY_STORM_DRAIN && moveType == TYPE_WATER)))
+           && ((ability != ABILITY_LIGHTNING_ROD && moveType == TYPE_NEW_ELECTRIC)
+            || (ability != ABILITY_STORM_DRAIN && moveType == TYPE_NEW_WATER)))
     {
         // Find first battler that redirects the move (in turn order)
         u32 battler;
@@ -153,8 +153,8 @@ bool32 HandleMoveTargetRedirection(void)
             if ((B_REDIRECT_ABILITY_ALLIES >= GEN_4 || !IsAlly(gBattlerAttacker, battler))
                 && battler != gBattlerAttacker
                 && gBattleStruct->moveTarget[gBattlerAttacker] != battler
-                && ((ability == ABILITY_LIGHTNING_ROD && moveType == TYPE_ELECTRIC)
-                 || (ability == ABILITY_STORM_DRAIN && moveType == TYPE_WATER))
+                && ((ability == ABILITY_LIGHTNING_ROD && moveType == TYPE_NEW_ELECTRIC)
+                 || (ability == ABILITY_STORM_DRAIN && moveType == TYPE_NEW_WATER))
                 && GetBattlerTurnOrderNum(battler) < redirectorOrderNum
                 && gMovesInfo[gCurrentMove].effect != EFFECT_SNIPE_SHOT
                 && gMovesInfo[gCurrentMove].effect != EFFECT_PLEDGE

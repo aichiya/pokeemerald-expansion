@@ -1641,6 +1641,7 @@ gSongTable::
 	song mus_etc_symphoni_yang_indah, 0, 0
 	song mus_gsc_pewter_gbc_style, 0, 0
 	song mus_gsc_ecruteak_city_gbc_style, 0, 0
+	song mus_dp_game_corner, 0, 0
 
 	.align 2
 dummy_song_header:

@@ -1612,8 +1612,9 @@
 #define MUS_ETC_SYMPHONI_YANG_INDAH 1637
 #define MUS_GSC_PEWTER_CITY_GBC_STYLE 1638
 #define MUS_GSC_ECRUTEAK_CITY_GBC_STYLE 1639
+#define MUS_PKMN_DP_GAME_CORNER 1640
 
-#define END_MUS 					MUS_GSC_ECRUTEAK_CITY_GBC_STYLE
+#define END_MUS 					MUS_PKMN_DP_GAME_CORNER
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

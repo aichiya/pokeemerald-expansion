@@ -2594,4 +2594,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
+    [ABILITY_PRIEST_HUNTER] =
+    {
+        .name = _("Priest Hunter"),
+        .description = COMPOUND_STRING("Strong vs. priest, sage, etc."),
+        .aiRating = 8,
+    },
+
 };

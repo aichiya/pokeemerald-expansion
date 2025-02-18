@@ -10901,6 +10901,13 @@ static inline void MulByTypeEffectiveness(uq4_12_t *modifier, u32 move, u32 move
         mod = UQ_4_12(2.0);
     if (moveType == TYPE_NEW_EARTH && defType == TYPE_NEW_FLYING && IsBattlerGrounded(battlerDef) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
+    if (abilityAtk == ABILITY_PRIEST_HUNTER &&
+        (gBattleMons[battlerDef].species == SPECIES_CHARIZARD
+        || gBattleMons[battlerDef].species == SPECIES_VENUSAUR
+        || gBattleMons[battlerDef].species == SPECIES_BLASTOISE
+        || gBattleMons[battlerDef].species == SPECIES_MEW
+        || gBattleMons[battlerDef].species == SPECIES_CELEBI))
+        mod = UQ_4_12(2.0);
     if (moveType == TYPE_STELLAR && GetActiveGimmick(battlerDef) == GIMMICK_TERA)
         mod = UQ_4_12(2.0);
 

@@ -1403,8 +1403,8 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_FAIRY_AURA] =
     {
-        .name = _("Fairy Aura"),
-        .description = COMPOUND_STRING("Boosts Fairy moves."),
+        .name = _("Divine Aura"),
+        .description = COMPOUND_STRING("Boosts Divine moves."),
         .aiRating = 6,
     },
 
@@ -1734,7 +1734,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_MISTY_SURGE] =
     {
-        .name = _("Misty Surge"),
+        .name = _("Divine Surge"),
         .description = COMPOUND_STRING("Field becomes misty."),
         .aiRating = 8,
     },

@@ -12590,82 +12590,89 @@ PlasmaFistsImpact:
 	return
 
 gBattleAnimMove_PhotonGeyser::
-	loadspritegfx ANIM_TAG_SHOCK_3 @charge
-	loadspritegfx ANIM_TAG_SPARK_2 @ElectricityEffect
-	loadspritegfx ANIM_TAG_SMALL_RED_EYE @red color
-	loadspritegfx ANIM_TAG_THIN_RING @calm mind
+@	loadspritegfx ANIM_TAG_SHOCK_3 @charge
+@	loadspritegfx ANIM_TAG_SPARK_2 @ElectricityEffect
+@	loadspritegfx ANIM_TAG_SMALL_RED_EYE @red color
+@	loadspritegfx ANIM_TAG_THIN_RING @calm mind
 	loadspritegfx ANIM_TAG_SMALL_EMBER @yellow color
-	loadspritegfx ANIM_TAG_ORBS @recover
-	monbg ANIM_ATTACKER
-	setalpha 12, 8
-	createsprite gPhotonGeyserChargeTemplate, ANIM_ATTACKER, 2, 0x0
-	call PhotonGeyserSparks1
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0xffd8, 0xffd8, 0x10
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0x28, 0x10
-	delay 0xA
-	call PhotonGeyserSparks2
-	delay 0xA
-	call PhotonGeyserSparks1
-	delay 0xA
-	call PhotonGeyserSparks2
-	delay 0xA
-	call PhotonGeyserSparks1
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0xffd8, 0x10
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0x28, 0x14, 0x10
-	delay 0xA
-	call PhotonGeyserSparks2
-	delay 0xA
-	call PhotonGeyserSparks1
-	delay 0xA
-	call PhotonGeyserSparks2
-	delay 0xA
-	call PhotonGeyserSparks1
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0xffd8, 0x0, 0x10
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0x28, 0x0, 0x10
-	delay 0xA
-	call PhotonGeyserSparks2
-	delay 0xA
-	call PhotonGeyserSparks1
-	delay 0xA
-	call PhotonGeyserSparks2
-	waitforvisualfinish
-	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BG, 0x1, 0x0, 0xF, 0x0
-	clearmonbg ANIM_ATTACKER
-	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_ATTACKER
-	unloadspritegfx ANIM_TAG_ORBS @recover
-	unloadspritegfx ANIM_TAG_SHOCK_3 @charge
-	loadspritegfx ANIM_TAG_YELLOW_BALL @confuse ray (for zap cannon)
-	loadspritegfx ANIM_TAG_BLACK_BALL_2 @zap cannon
-	loadspritegfx ANIM_TAG_AIR_WAVE_2 @white/gray color
-	createsprite gPhotonGeyserWhiteRingTemplate, ANIM_ATTACKER, 3, 0x0, 0x0, 0x0, 0x0, 0x1f, 0x8
-	createsprite gPhotonGeyserZapBallTemplate, ANIM_TARGET, 3, 0xa, 0x0, 0x0, 0x0, 0x1e, 0x0
-	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x0, 0x28, 0x0
-	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x40, 0x28, 0x1
-	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x80, 0x28, 0x0
-	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x0, 0x28, 0x2
-	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0x20, 0x28, 0x0
-	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0x60, 0x28, 0x1
-	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0xa0, 0x28, 0x0
-	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0xe0, 0x28, 0x2
-	waitforvisualfinish
-	monbg ANIM_TARGET
-	createsprite gPhotonGeyserYellowRingTemplate, ANIM_ATTACKER, 3, 0x0, 0x0, 0x1, 0x0, 0x1f, 0x8
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 5, 1
-	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
-	unloadspritegfx ANIM_TAG_YELLOW_BALL @confuse ray (for zap cannon)
-	unloadspritegfx ANIM_TAG_BLACK_BALL_2 @zap cannon
-	unloadspritegfx ANIM_TAG_AIR_WAVE_2 @white/gray color
+@	loadspritegfx ANIM_TAG_ORBS @recover
+	fadetobg BG_COSMIC
+	waitbgfadeout
+	createvisualtask AnimTask_StartSlidingBg, 0x5, 0x0, 0xFC00, 0x1, 0xffff
+	waitbgfadein
+@	monbg ANIM_ATTACKER
+@	setalpha 12, 8
+@	createsprite gPhotonGeyserChargeTemplate, ANIM_ATTACKER, 2, 0x0
+@	call PhotonGeyserSparks1
+@	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0xffd8, 0xffd8, 0x10
+@	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0x28, 0x10
+@	delay 0xA
+@	call PhotonGeyserSparks2
+@	delay 0xA
+@	call PhotonGeyserSparks1
+@	delay 0xA
+@	call PhotonGeyserSparks2
+@	delay 0xA
+@	call PhotonGeyserSparks1
+@	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0x0, 0xffd8, 0x10
+@	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0x28, 0x14, 0x10
+@	delay 0xA
+@	call PhotonGeyserSparks2
+@	delay 0xA
+@	call PhotonGeyserSparks1
+@	delay 0xA
+@	call PhotonGeyserSparks2
+@	delay 0xA
+@	call PhotonGeyserSparks1
+@	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0xffd8, 0x0, 0x10
+@	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 0x28, 0x0, 0x10
+@	delay 0xA
+@	call PhotonGeyserSparks2
+@	delay 0xA
+@	call PhotonGeyserSparks1
+@	delay 0xA
+@	call PhotonGeyserSparks2
+@	waitforvisualfinish
+@	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BG, 0x1, 0x0, 0xF, 0x0
+@	clearmonbg ANIM_ATTACKER
+@	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_ATTACKER
+@	unloadspritegfx ANIM_TAG_ORBS @recover
+@	unloadspritegfx ANIM_TAG_SHOCK_3 @charge
+@	loadspritegfx ANIM_TAG_YELLOW_BALL @confuse ray (for zap cannon)
+@	loadspritegfx ANIM_TAG_BLACK_BALL_2 @zap cannon
+@	loadspritegfx ANIM_TAG_AIR_WAVE_2 @white/gray color
+@	createsprite gPhotonGeyserWhiteRingTemplate, ANIM_ATTACKER, 3, 0x0, 0x0, 0x0, 0x0, 0x1f, 0x8
+@	createsprite gPhotonGeyserZapBallTemplate, ANIM_TARGET, 3, 0xa, 0x0, 0x0, 0x0, 0x1e, 0x0
+@	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x0, 0x28, 0x0
+@	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x40, 0x28, 0x1
+@	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x80, 0x28, 0x0
+@	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x10, 0x1e, 0x0, 0x28, 0x2
+@	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0x20, 0x28, 0x0
+@	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0x60, 0x28, 0x1
+@	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0xa0, 0x28, 0x0
+@	createsprite gPhotonGeyserZapCannonSparkTemplate, ANIM_TARGET, 4, 0xa, 0x0, 0x8, 0x1e, 0xe0, 0x28, 0x2
+@	waitforvisualfinish
+@	monbg ANIM_TARGET
+@	createsprite gPhotonGeyserYellowRingTemplate, ANIM_ATTACKER, 3, 0x0, 0x0, 0x1, 0x0, 0x1f, 0x8
+@	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 5, 1
+@	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
+@	unloadspritegfx ANIM_TAG_YELLOW_BALL @confuse ray (for zap cannon)
+@	unloadspritegfx ANIM_TAG_BLACK_BALL_2 @zap cannon
+@	unloadspritegfx ANIM_TAG_AIR_WAVE_2 @white/gray color
 	@Shoot beam to the sky
 	loadspritegfx ANIM_TAG_STRAIGHT_BEAM
+	loadspritegfx ANIM_TAG_EXPLOSION
 	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_TARGET, 0x6, 0x0, 0x10, 0x43FF  @Light yellow
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 4, 0, 96, 1
 	panse SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 0x2, 0x0
 	call PhotonGeyserBeam
+	call DimensionShotExplode
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_TARGET, 0x1, 0x10, 0x0, 0x43FF  @Light yellow
 	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BG, 0x1, 0xF, 0x0, 0x0
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
+	call UnsetPsychicBg
 	blendoff
 	end
 PhotonGeyserSparks1:

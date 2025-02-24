@@ -397,6 +397,7 @@ const u8 gBattleBackgroundTerrainNames[][26] =
     [BATTLE_TERRAIN_MOUNTAIN]   = _("NORMAL - MOUNTAIN        "),
     [BATTLE_TERRAIN_CAVE]       = _("NORMAL - CAVE            "),
     [BATTLE_TERRAIN_BUILDING]   = _("NORMAL - BUILDING        "),
+    [BATTLE_TERRAIN_BLANK_GBC]  = _("NORMAL - BLANK GBC       "),
     [BATTLE_TERRAIN_PLAIN]      = _("NORMAL - PLAIN           "),
 };
 const u8 sShadowSizeLabels[][4] =

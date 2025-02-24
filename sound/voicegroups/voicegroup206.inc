@@ -14,29 +14,29 @@ voicegroup206::
 	voice_square_2_alt 60, 0, 0, 0, 3, 9, 7                                               @ 011 | GB Square2 | Ecruteak GBC Ch. 2.3.2 duty_cycle 0 note_type 6, 9, 3
 	voice_square_2_alt 60, 0, 1, 0, 3, 9, 7                                               @ 012 | GB Square2 | Ecruteak GBC Ch. 2.3.3 duty_cycle 1 note_type 6, 9, 3
 	voice_square_2_alt 60, 0, 1, 0, 8, 12, 3                                              @ 013 | GB Square2 | Ecruteak GBC Ch. 2.4 note_type 12, 8, 3
-	voice_square_2_alt 60, 0, 1, 0, 8, 12, 0                                               @ 014 | GB Square2 | Ecruteak GBC Ch. 2.5 note_type 6, 8, 0
+	voice_square_2_alt 60, 0, 1, 0, 8, 12, 0                                              @ 014 | GB Square2 | Ecruteak GBC Ch. 2.5 note_type 6, 8, 0
 	voice_square_2_alt 60, 0, 1, 0, 8, 12, 7                                              @ 015 | GB Square2 | Ecruteak GBC Ch. 2.6 note_type 12, 8, 7
 	voice_square_2_alt 60, 0, 1, 0, 6, 6, 7                                               @ 016 | GB Square2 | Ecruteak GBC Ch. 2.1.2 duty_cycle 1 vibrato 18, 2, 5 note_type 6, 6, 7
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_PkmnGSC05, 0, 2, 12, 7        @ 017 | GB Wave    | Ecruteak GBC Ch. 3.1 vibrato 18, 2, 5 note_type 12, 2, 5
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_PkmnGSC05, 0, 2, 12, 7        @ 018 | GB Wave    | Ecruteak GBC Ch. 3.2 note_type 12, 2, 5
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_PkmnGSC05, 0, 2, 6, 7         @ 019 | GB Wave    | Ecruteak GBC Ch. 3.3 note_type 6, 2, 5
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 020 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 021 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 022 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 023 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 024 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 025 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 026 | ---
+	voice_square_1_alt 60, 0, 0, 0, 0, 2, 5, 2                                            @ 020 | GB Square1 | Trainer Battle GBC Ch. 1.1 duty_cycle 3 vibrato 18, 1, 5 note_type 12, 9, 2
+	voice_square_1_alt 60, 0, 0, 3, 0, 2, 7, 3                                            @ 021 | GB Square1 | Trainer Battle GBC Ch. 1.2 duty_cycle 3 vibrato 0, 0, 0 note_type 12, 10, 3
+	voice_square_2_alt 60, 0, 3, 0, 2, 7, 3                                               @ 022 | GB Square2 | Trainer Battle GBC Ch. 2 duty_cycle 1 vibrato 8, 3, 6 note_type 12, 12, 2
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 0, 2, 7, 3                 @ 023 | GB Wave    | Trainer Battle GBC Ch. 3.1 vibrato 0, 0, 0 note_type 12, 1, 9
+	voice_square_1_alt 60, 0, 0, 2, 0, 1, 5, 2                                            @ 024 | GB Square1 | Reincarnation GBC Ch. 1
+	voice_square_2_alt 60, 0, 3, 0, 2, 7, 4                                               @ 025 | GB Square2 | Reincarnation GBC Ch. 2
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_6, 0, 7, 15, 0                @ 026 | GB Wave    | Reincarnation GBC Ch. 3
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 027 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 028 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 029 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 030 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 031 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 032 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 033 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 034 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 035 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 036 | ---
+	voice_square_1_alt 60, 0, 0, 1, 0, 2, 7, 3                                            @ 030 | GB Square1 | Faith is for the Transient People GBC Ch. 1
+	voice_square_2_alt 60, 0, 3, 0, 2, 7, 3                                               @ 031 | GB Square2 | Faith is for the Transient People GBC Ch. 2.1
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 0, 2, 7, 3                 @ 032 | GB Wave    | Faith is for the Transient People GBC Ch. 3
+	voice_square_2_alt 60, 0, 2, 0, 1, 5, 2                                               @ 033 | GB Square2 | Faith is for the Transient People GBC Ch. 2.2
+	voice_square_1_alt 60, 0, 0, 1, 0, 2, 7, 3                                            @ 034 | GB Square1 | Street GBC Ch. 1
+	voice_square_2_alt 60, 0, 3, 0, 2, 7, 3                                               @ 035 | GB Square2 | Street GBC Ch. 2
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 0, 2, 7, 3                 @ 036 | GB Wave    | Street GBC Ch. 3
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 037 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 038 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 039 | ---
@@ -111,9 +111,9 @@ voicegroup206::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 108 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 109 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 110 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 111 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 112 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 113 | ---
+	voice_square_1_alt 60, 0, 0, 2, 0, 1, 5, 2                                            @ 111 | GB Square1 | Generic GBC Ch. 1
+	voice_square_2_alt 60, 0, 3, 0, 2, 7, 4                                               @ 112 | GB Square2 | Generic GBC Ch. 2
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_6, 0, 7, 15, 0                @ 113 | GB Wave    | Generic GBC Ch. 3
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 114 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 115 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 116 | ---

@@ -764,6 +764,9 @@ u8 BattleSetup_GetTerrainId(void)
     PlayerGetDestCoords(&x, &y);
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
 
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ANOTHER_WORLD_ECRUTEAK_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ANOTHER_WORLD_ECRUTEAK_CITY))
+        return BATTLE_TERRAIN_BLANK_GBC;
+
     if (MetatileBehavior_IsTallGrass(tileBehavior))
         return BATTLE_TERRAIN_GRASS;
     if (MetatileBehavior_IsLongGrass(tileBehavior))

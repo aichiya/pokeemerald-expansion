@@ -28191,6 +28191,7 @@ gBattleAnimMove_SecretPower::
 	jumpargeq 0, BATTLE_TERRAIN_DISTORTION_WORLD, gBattleAnimMove_Pound
 	jumpargeq 0, BATTLE_TERRAIN_SPACE,          gBattleAnimMove_Swift
 	jumpargeq 0, BATTLE_TERRAIN_ULTRA_SPACE,    gBattleAnimMove_Psywave
+	jumpargeq 0, BATTLE_TERRAIN_BLANK_GBC,      gBattleAnimMove_CoreEnforcer
 .if B_SECRET_POWER_ANIMATION >= GEN_7
 	jumpargeq 0, BATTLE_TERRAIN_SNOW,           gBattleAnimMove_IceShard
 	jumpargeq 0, BATTLE_TERRAIN_BUILDING,       gBattleAnimMove_SpitUp

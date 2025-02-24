@@ -693,6 +693,15 @@ const struct BattleBackground sBattleTerrainTable[] =
         .palette = gBattleTerrainPalette_Building,
     },
 
+    [BATTLE_TERRAIN_BLANK_GBC] =
+    {
+        .tileset = gBattleTerrainTiles_BlankGBC,
+        .tilemap = gBattleTerrainTilemap_BlankGBC,
+        .entryTileset = gBattleTerrainAnimTiles_BlankGBC,
+        .entryTilemap = gBattleTerrainAnimTilemap_BlankGBC,
+        .palette = gBattleTerrainPalette_BlankGBC,
+    },
+
     [BATTLE_TERRAIN_PLAIN] =
     {
         .tileset = gBattleTerrainTiles_Building,

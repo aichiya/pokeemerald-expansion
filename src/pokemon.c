@@ -6436,11 +6436,40 @@ bool32 IsSpeciesInHoennDex(u16 species)
 
 u16 GetBattleBGM(void)
 {
-    if (FlagGet(FLAG_CUSTOM_BGM_BATTLE)){
+    if (FlagGet(FLAG_CUSTOM_BGM_BATTLE))
+    {
         FlagClear(FLAG_CUSTOM_BGM_BATTLE);
         return VarGet(VAR_SETTING_MUSIC);
     }
-    if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
+    else if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ANOTHER_WORLD_ECRUTEAK_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ANOTHER_WORLD_ECRUTEAK_CITY))
+    {
+        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        {
+            u8 trainerClass;
+
+            if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
+                trainerClass = GetFrontierOpponentClass(gTrainerBattleOpponent_A);
+            else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
+                trainerClass = TRAINER_CLASS_EXPERT;
+            else
+                trainerClass = GetTrainerClassFromId(gTrainerBattleOpponent_A);
+
+            switch (trainerClass)
+            {
+            case TRAINER_CLASS_LEADER:
+                return MUS_THPPRE_REINCARNATION_GBC_STYLE;
+            case TRAINER_CLASS_COLLECTOR:
+                return MUS_THPPRE_REINCARNATION_GBC_STYLE; // MUS_THPPORDX_FAITH_GBC_STYLE;
+            default:
+                return MUS_THPPORDX_MASTERSPARK_GBC_STYLE;
+            }
+        }
+        else
+        {
+            return MUS_THPPORDX_MASTERSPARK_GBC_STYLE;
+        }
+    }
+    else if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
     {
         switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
         {

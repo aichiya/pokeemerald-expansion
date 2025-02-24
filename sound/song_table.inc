@@ -1646,7 +1646,10 @@ gSongTable::
 	song mus_thppre_reincarnation_gbc_style, 0, 0
 	song mus_thppordx_faith_gbc_style, 0, 0
 	song mus_thppre_skyscraper_gbc_style, 0, 0
-	song mus_thppre_street_gbc_style, 0,0
+	song mus_thppre_street_gbc_style, 0, 0
+	song mus_dcd_treasure_sniper, 0, 0
+	song mus_pc_eien_no_tomodachi_2, 0, 0
+	song mus_etc_sampai_jumpa, 0, 0
 
 	.align 2
 dummy_song_header:

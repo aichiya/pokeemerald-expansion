@@ -1618,8 +1618,11 @@
 #define MUS_THPPORDX_FAITH_GBC_STYLE 1643
 #define MUS_THPPRE_SKYSCRAPER_GBC_STYLE 1644
 #define MUS_THPPRE_STREET_GBC_STYLE 1645
+#define MUS_DCD_TREASURE_SNIPER 1646
+#define MUS_PC_EIEN_NO_TOMODACHI_2 1647
+#define MUS_ETC_SAMPAI_JUMPA 1648
 
-#define END_MUS 					MUS_THPPRE_STREET_GBC_STYLE
+#define END_MUS 					MUS_ETC_SAMPAI_JUMPA
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

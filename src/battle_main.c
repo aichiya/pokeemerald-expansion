@@ -560,9 +560,9 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_0XF9] = { _("Trainer 0xF9") },
     [TRAINER_CLASS_0XFA] = { _("Trainer 0xFA") },
     [TRAINER_CLASS_0XFB] = { _("Trainer 0xFB") },
-    [TRAINER_CLASS_0XFC] = { _("Trainer 0xFC") },
-    [TRAINER_CLASS_0XFD] = { _("Trainer 0xFD") },
-    [TRAINER_CLASS_0XFE] = { _("Trainer 0xFE") },
+    [TRAINER_CLASS_0XFC] = { _("Kamen Rider") }, // Decade
+    [TRAINER_CLASS_0XFD] = { _("Kamen Rider") }, // DiEnd
+    [TRAINER_CLASS_0XFE] = { _("Kamen Rider") }, // DeLast
 };
 
 static void (* const sTurnActionsFuncsTable[])(void) =

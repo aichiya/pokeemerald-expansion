@@ -6585,6 +6585,10 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_SWIMMER_F:
         case TRAINER_CLASS_SWIMMER_M:
             return MUS_DGMN_STORY1_VS_DIGIMON;
+        case TRAINER_CLASS_0XFC:
+            return MUS_DCD_JTD_SYMPHONY_LOOP;
+        case TRAINER_CLASS_0XFD:
+            return MUS_DCD_TREASURE_SNIPER;
 /*
         case TRAINER_CLASS_PKMN_TRAINER_1:
         case TRAINER_CLASS_PKMN_TRAINER_2:
@@ -6795,8 +6799,6 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_0XF9:
         case TRAINER_CLASS_0XFA:
         case TRAINER_CLASS_0XFB:
-        case TRAINER_CLASS_0XFC:
-        case TRAINER_CLASS_0XFD:
         case TRAINER_CLASS_0XFE:
 */
         default:

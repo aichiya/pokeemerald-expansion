@@ -10384,3 +10384,12 @@ BattleScript_DimensionWallInitiate::
 	setsafeguard
 	waitmessage B_WAIT_TIME_LONG
 	end3
+
+BattleScript_GreatBloomingActivates::
+	attackstring
+	ppreduce
+	call BattleScript_AbilityPopUpTarget
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_ITDOESNTAFFECT
+	waitmessage B_WAIT_TIME_MED
+	goto BattleScript_MoveEnd

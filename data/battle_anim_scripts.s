@@ -18944,6 +18944,129 @@ gBattleAnimMove_DefectiveMiracle::
 	waitbgfadeout
 	end
 
+gBattleAnimMove_MindHack::
+	loadspritegfx ANIM_TAG_IMPACT @hit
+	loadspritegfx ANIM_TAG_BLUE_LIGHT_WALL @reflect
+	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT @charge
+	loadspritegfx ANIM_TAG_THIN_RING @ring
+	loadspritegfx ANIM_TAG_PINK_PETAL @pink
+	loadspritegfx ANIM_TAG_TORN_METAL @brick break shatter
+MindHackCheckBattler:
+	createvisualtask AnimTask_IsTargetPlayerSide, 0x2
+	jumpargeq 0x7 ANIM_TARGET MindHackOnPlayer
+MindHackOnOpponent:
+	call MindHackFlingOpponent
+	waitforvisualfinish
+	goto MindHackFinish
+MindHackOnPlayer:
+	call MindHackFlingPlayer
+	waitforvisualfinish
+	call MindHackFlingPlayer
+	waitforvisualfinish
+MindHackFinish:
+	delay 0x8
+	playsewithpan SE_M_EXPLOSION, SOUND_PAN_TARGET
+	restorebg
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 15, 1
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -4, -4, 15, ANIM_TARGET, 1
+	createsprite gBrickBreakWallShardSpriteTemplate ANIM_TARGET, 2, 0x1, 0x0, 0x0, 0x0  		@ -8, -12
+	createsprite gBrickBreakWallShardSpriteTemplate ANIM_TARGET, 2, 0x1, 0x1, 0x0, 0x0
+	createsprite gBrickBreakWallShardSpriteTemplate ANIM_TARGET, 2, 0x1, 0x2, 0x0, 0x0
+	createsprite gBrickBreakWallShardSpriteTemplate ANIM_TARGET, 2, 0x1, 0x3, 0x0, 0x0
+	waitbgfadeout
+	createvisualtask AnimTask_AllBattlersVisible, 0xA
+	waitforvisualfinish
+	end
+MindHackFlingOpponent:
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0xffe6, 0x10, 0x1, 0x4	@ -26, +16
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0x1a, 0xfff0, 0x1, 0x1	@ 26, -16
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x4
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x1a, 0xfff0, 0x1, 0x4	@ -26,-16
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0xffe6, 0x10, 0x1, 0x1	@ 26, 16
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x4
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x20, 0x1, 0x4	@ 0,32
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0x0, 0xffe0, 0x1, 0x1	@ 0, -32
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x4
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0xffe0, 0x1, 0x4	@ 0,-32
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0x0, 0x20, 0x1, 0x1	@ 0, 32
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x4
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x1a, 0x10, 0x1, 0x4	@ 26,16
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0xffe6, 0xfff0, 0x1, 0x1	@ -26, -16
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x4
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0xffe6, 0xffe0, 0x1, 0x4	@ 26,-16
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0x1a, 0x10, 0x1, 0x1	@ 0, 32
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x5
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0xffe6, 0x10, 0x1, 0x4	@ -26, +16
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0x1a, 0xfff0, 0x1, 0x1	@ 26, -16
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x4
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x1a, 0xfff0, 0x1, 0x4	@ -26,-16
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0xffe6, 0x10, 0x1, 0x1	@ 26, 16
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x4
+	waitforvisualfinish
+	return
+MindHackFlingPlayer:
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0xffe6, 0x10, 0x1, 0x4	@ -26,-16
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0x1a, 0xfff0, 0x1, 0x1	@ 26, 16
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x4
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x20, 0x0, 0x1, 0x4	@ 32,0
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0xffe0, 0x0, 0x1, 0x1	@
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x4
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0xffe0, 0x0, 0x1, 0x4	@ -32,0
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0x20, 0x0, 0x1, 0x1	@ 32, 0
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x4
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0xa, 0x20, 0x1, 0x4	@ 10, -32
+	waitforvisualfinish
+	createsprite gShatteredPsycheReflectHitSpriteTemplate, ANIM_TARGET, 3, 0xfff6, 0x5, 0x1, 0x1	@ 10, -32
+	playsewithpan SE_M_BRICK_BREAK, SOUND_PAN_TARGET
+	delay 0x2
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_TARGET, 0x0, 0x5
+	waitforvisualfinish
+	return
+
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
 gBattleAnimMove_MirrorMove::

@@ -534,6 +534,7 @@ extern const u8 BattleScript_DeusExMachinaWishInitiate[];
 extern const u8 BattleScript_DimensionWallInitiate[];
 extern const u8 BattleScript_UBWActivates[];
 extern const u8 BattleScript_EffectUBWField[];
+extern const u8 BattleScript_GreatBloomingActivates[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

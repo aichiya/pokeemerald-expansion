@@ -4297,6 +4297,14 @@ u32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 move, u32 abilityDef
                 effect = MOVE_BLOCKED_BY_GOOD_AS_GOLD;
         }
         break;
+    case ABILITY_GREAT_BLOOMING:
+        if (IS_MOVE_STATUS(move))
+        {
+            u32 moveTarget = GetBattlerMoveTargetType(battlerAtk, move);
+            if (!(moveTarget & MOVE_TARGET_OPPONENTS_FIELD) && !(moveTarget & MOVE_TARGET_ALL_BATTLERS))
+                effect = MOVE_BLOCKED_BY_GOOD_AS_GOLD;
+        }
+        break;
     }
 
     if (!effect)
@@ -5703,6 +5711,9 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 break;
             case MOVE_BLOCKED_BY_GOOD_AS_GOLD:
                 battleScriptBlocksMove = BattleScript_GoodAsGoldActivates;
+                break;
+            case MOVE_BLOCKED_BY_GREAT_BLOOMING:
+                battleScriptBlocksMove = BattleScript_GreatBloomingActivates;
                 break;
             default:
                 if (GetChosenMovePriority(gBattlerAttacker) > 0
@@ -9948,6 +9959,19 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
             atkStage = gBattleMons[battlerDef].statStages[STAT_SPATK];
         }
     }
+    else if (gMovesInfo[move].effect == EFFECT_MIND_HACK)
+    {
+        if (IS_MOVE_SPECIAL(move))
+        {
+            atkStat = gBattleMons[battlerDef].spAttack;
+            atkStage = gBattleMons[battlerDef].statStages[STAT_SPATK];
+        }
+        else
+        {
+            atkStat = gBattleMons[battlerDef].attack;
+            atkStage = gBattleMons[battlerDef].statStages[STAT_ATK];
+        }
+    }
     else if (gMovesInfo[move].effect == EFFECT_BODY_PRESS)
     {
         if (IS_MOVE_PHYSICAL(move))
@@ -10001,9 +10025,15 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
     switch (atkAbility)
     {
     case ABILITY_HUGE_POWER:
-    case ABILITY_PURE_POWER:
         if (IS_MOVE_PHYSICAL(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
+        break;
+    case ABILITY_PURE_POWER:
+        if (IS_MOVE_SPECIAL(move))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
+        break;
+    case ABILITY_GREAT_BLOOMING:
+        modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_SLOW_START:
         if (gDisableStructs[battlerAtk].slowStartTimer != 0)
@@ -10093,7 +10123,7 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_ROCKY_PAYLOAD:
-        if (moveType == TYPE_NEW_HEART)
+        if (moveType == TYPE_NEW_EARTH)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_PROTOSYNTHESIS:

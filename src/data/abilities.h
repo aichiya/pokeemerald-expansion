@@ -515,8 +515,8 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SWARM] =
     {
-        .name = _("Swarm"),
-        .description = COMPOUND_STRING("Ups Bug moves in a pinch."),
+        .name = _("Horde"),
+        .description = COMPOUND_STRING("Ups Beast moves in a pinch."),
         .aiRating = 5,
     },
 
@@ -560,7 +560,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_PURE_POWER] =
     {
         .name = _("Pure Power"),
-        .description = COMPOUND_STRING("Raises Attack."),
+        .description = COMPOUND_STRING("Raises Special Attack."),
         .aiRating = 10,
     },
 
@@ -2107,8 +2107,8 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_ROCKY_PAYLOAD] =
     {
-        .name = _("Rocky Payload"),
-        .description = COMPOUND_STRING("Powers up Rock moves."),
+        .name = _("Gaia Force"),
+        .description = COMPOUND_STRING("Powers up Earth moves."),
         .aiRating = 6,
     },
 
@@ -2191,7 +2191,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SWORD_OF_RUIN] =
     {
-        .name = _("Sword of Ruin"),
+        .name = _("Ibaraki-douji"),
         .description = COMPOUND_STRING("Lowers foes' Defense."),
         .aiRating = 5,
         .breakable = TRUE,
@@ -2199,7 +2199,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_TABLETS_OF_RUIN] =
     {
-        .name = _("Tablets of Ruin"),
+        .name = _("Shuten-douji"),
         .description = COMPOUND_STRING("Lowers foes' damage."),
         .aiRating = 5,
         .breakable = TRUE,
@@ -2380,8 +2380,8 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_TERA_SHELL] =
     {
-        .name = _("Tera Shell"),
-        .description = COMPOUND_STRING("Resists all at full HP."),
+        .name = _("Nanomach Guard"),
+        .description = COMPOUND_STRING("Resists all moves."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -2476,7 +2476,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 10,
     },
     
-    [ABILITY_DEUS_EX_MACHINA] = // to do
+    [ABILITY_DEUS_EX_MACHINA] =
     {
         .name = _("Shoujo Gensou"),
         .description = COMPOUND_STRING("Creates wishes."),
@@ -2535,7 +2535,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeOverwritten = TRUE,
     },
     
-    [ABILITY_WINNING_COMBINATION_3] = // to do Yorigami sisters: Curse on switch in, shadow tags
+    [ABILITY_WINNING_COMBINATION_3] = // Yorigami sisters: Curse on switch in, shadow tags
     {
         .name = _("Combination J-S"),
         .description = COMPOUND_STRING("Combination of abilities."),
@@ -2547,10 +2547,10 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeOverwritten = TRUE,
     },
     
-    [ABILITY_GREAT_BLOOMING] = // to do
+    [ABILITY_GREAT_BLOOMING] = // Raises Atk and Sp.Atk 1.5x + Good as Gold
     {
         .name = _("Great Blooming"),
-        .description = COMPOUND_STRING("Unknown ability."),
+        .description = COMPOUND_STRING("Protection and power-up."),
         .aiRating = 10,
     },
     

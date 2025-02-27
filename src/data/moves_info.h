@@ -21389,6 +21389,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_DefectiveMiracle,
     },
 
+    [MOVE_MIND_HACK] =  // Added
+    {
+        .name = COMPOUND_STRING("Mind Hack"),
+        .description = COMPOUND_STRING(
+            "The higher the foe's Sp. Atk\n"
+            "the more damage caused."),
+        .effect = EFFECT_MIND_HACK,
+        .power = 95,
+        .type = TYPE_NEW_HEART,
+        .accuracy = 100,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_MindHack,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =  // Edited
     {

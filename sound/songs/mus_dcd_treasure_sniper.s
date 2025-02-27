@@ -3944,8 +3944,8 @@ mus_dcd_treasure_sniper_6:
         .byte   KEYSH , mus_dcd_treasure_sniper_key+0
 @ 000   ----------------------------------------
         .byte           PAN   , c_v-2
-        .byte           VOL   , 88*mus_dcd_treasure_sniper_mvl/mxv
-        .byte           VOICE , 48
+        .byte           VOL   , 108*mus_dcd_treasure_sniper_mvl/mxv
+        .byte           VOICE , 95
         .byte           MOD , 2
         .byte   W96
 @ 001   ----------------------------------------

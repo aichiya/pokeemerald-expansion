@@ -5868,6 +5868,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_DCD_TREASURE_SNIPER) \
     X(MUS_PC_EIEN_NO_TOMODACHI_2) \
     X(MUS_ETC_SAMPAI_JUMPA) \
+    X(MUS_YYYI_HANAKOTOBA) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

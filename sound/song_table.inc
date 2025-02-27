@@ -1650,6 +1650,7 @@ gSongTable::
 	song mus_dcd_treasure_sniper, 0, 0
 	song mus_pc_eien_no_tomodachi_2, 0, 0
 	song mus_etc_sampai_jumpa, 0, 0
+	song mus_yyyi_hanakotoba, 0, 0
 
 	.align 2
 dummy_song_header:

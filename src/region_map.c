@@ -733,6 +733,10 @@ static u8 ProcessRegionMapInput_Full(void)
     {
         input = MAP_INPUT_B_BUTTON;
     }
+    else if (JOY_NEW(R_BUTTON))
+    {
+        input = MAP_INPUT_R_BUTTON;
+    }
     if (input == MAP_INPUT_MOVE_START)
     {
         sRegionMap->cursorMovementFrameCounter = 4;
@@ -811,6 +815,10 @@ static u8 ProcessRegionMapInput_Zoomed(void)
     if (JOY_NEW(B_BUTTON))
     {
         input = MAP_INPUT_B_BUTTON;
+    }
+    else if (JOY_NEW(R_BUTTON))
+    {
+        input = MAP_INPUT_R_BUTTON;
     }
     if (input == MAP_INPUT_MOVE_START)
     {
@@ -2113,27 +2121,9 @@ static void CB_ExitFlyMap(void)
             FreeRegionMapIconResources();
             if (sFlyMap->choseFlyLocation)
             {
-                switch (sFlyMap->regionMap.mapSecId)
-                {
-                case MAPSEC_BATTLE_TOWER:
-                    SetWarpDestinationToHealLocation(HEAL_LOCATION_SOUTHERN_ISLAND_EXTERIOR);
-                    break;
-                case MAPSEC_BATTLE_FRONTIER:
-                    SetWarpDestinationToHealLocation(HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST);
-                    break;
-                case MAPSEC_JOHTO_TWINRIVER_CITY:
-                    SetWarpDestinationToHealLocation(gSaveBlock2Ptr->playerGender == MALE ? HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_MALE : HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_FEMALE);
-                    break;
-                case MAPSEC_JOHTO_SPACE_HYPER_VESSEL:
-                    SetWarpDestinationToHealLocation(FlagGet(FLAG_LANDMARK_POKEMON_LEAGUE) && sFlyMap->regionMap.posWithinMapSec == 0 ? HEAL_LOCATION_JOHTO_SPACE_HYPER_VESSEL_EMBEDDED_TOWER : HEAL_LOCATION_JOHTO_SPACE_HYPER_VESSEL_FRONT);
-                    break;
-                default:
-                    if (sMapHealLocations[sFlyMap->regionMap.mapSecId][2] != HEAL_LOCATION_NONE)
-                        SetWarpDestinationToHealLocation(sMapHealLocations[sFlyMap->regionMap.mapSecId][2]);
-                    else
-                        SetWarpDestinationToMapWarp(sMapHealLocations[sFlyMap->regionMap.mapSecId][0], sMapHealLocations[sFlyMap->regionMap.mapSecId][1], WARP_ID_NONE);
-                    break;
-                }
+                struct RegionMap* tempRegionMap = &sFlyMap->regionMap;
+
+                SetFlyDestination(tempRegionMap);
                 ReturnToFieldFromFlyMapSelect();
             }
             else
@@ -2145,4 +2135,34 @@ static void CB_ExitFlyMap(void)
         }
         break;
     }
+}
+
+u32 FilterFlyDestination(struct RegionMap* regionMap)
+{
+    switch (regionMap->mapSecId)
+    {
+    case MAPSEC_SOUTHERN_ISLAND:
+        return HEAL_LOCATION_SOUTHERN_ISLAND_EXTERIOR;
+    case MAPSEC_BATTLE_FRONTIER:
+        return HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST;
+    case MAPSEC_LITTLEROOT_TOWN:
+        return (gSaveBlock2Ptr->playerGender == MALE ? HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_MALE : HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_FEMALE);
+    case MAPSEC_EVER_GRANDE_CITY:
+        return (FlagGet(FLAG_LANDMARK_POKEMON_LEAGUE) && regionMap->posWithinMapSec == 0 ? HEAL_LOCATION_JOHTO_SPACE_HYPER_VESSEL_EMBEDDED_TOWER : HEAL_LOCATION_JOHTO_SPACE_HYPER_VESSEL_FRONT);
+    default:
+        if (sMapHealLocations[regionMap->mapSecId][2] != HEAL_LOCATION_NONE)
+            return sMapHealLocations[regionMap->mapSecId][2];
+        else
+            return WARP_ID_NONE;
+    }
+}
+
+void SetFlyDestination(struct RegionMap* regionMap)
+{
+    u32 flyDestination = FilterFlyDestination(regionMap);
+
+    if (flyDestination != WARP_ID_NONE)
+        SetWarpDestinationToHealLocation(flyDestination);
+    else
+        SetWarpDestinationToMapWarp(sMapHealLocations[regionMap->mapSecId][0], sMapHealLocations[regionMap->mapSecId][1], WARP_ID_NONE);
 }

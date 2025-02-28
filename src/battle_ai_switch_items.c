@@ -609,7 +609,7 @@ static bool32 ShouldSwitchIfBadlyStatused(u32 battler)
     //Perish Song
     if (gStatuses3[battler] & STATUS3_PERISH_SONG
         && gDisableStructs[battler].perishSongTimer == 0
-        && !(monAbility == ABILITY_SOUNDPROOF || monAbility == ABILITY_FANTASY_BREAKER))
+        && !(monAbility == ABILITY_SOUNDPROOF || monAbility == ABILITY_FANTASY_BREAKER)
         && RandomPercentage(RNG_AI_SWITCH_PERISH_SONG, GetSwitchChance(SHOULD_SWITCH_PERISH_SONG)))
         return SetSwitchinAndSwitch(battler, PARTY_SIZE);
 

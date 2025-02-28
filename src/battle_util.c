@@ -2419,12 +2419,12 @@ u8 DoBattlerEndTurnEffects(void)
              && IsBattlerAlive(battler)
              && ability == ABILITY_PURE_WHITE)
             {
-                if (!BATTLER_MAX_HP(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+                if (!IsBattlerAtMaxHp(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
                 {
-                    gBattleMoveDamage = GetNonDynamaxMaxHP(battler) / 8;
-                    if (gBattleMoveDamage == 0)
-                        gBattleMoveDamage = 1;
-                    gBattleMoveDamage *= -1;
+                    gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
+                    if (gBattleStruct->moveDamage[battler] == 0)
+                        gBattleStruct->moveDamage[battler] = 1;
+                    gBattleStruct->moveDamage[battler] *= -1;
                     BattleScriptExecute(BattleScript_LeechSeedOnAbilityPureWhiteActivates);
                     effect++;
                 }
@@ -2450,12 +2450,12 @@ u8 DoBattlerEndTurnEffects(void)
                 }
                 else if (ability == ABILITY_PURE_WHITE)
                 {
-                    if (!BATTLER_MAX_HP(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+                    if (!IsBattlerAtMaxHp(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
                     {
-                        gBattleMoveDamage = GetNonDynamaxMaxHP(battler) / 8;
-                        if (gBattleMoveDamage == 0)
-                            gBattleMoveDamage = 1;
-                        gBattleMoveDamage *= -1;
+                        gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
+                        if (gBattleStruct->moveDamage[battler] == 0)
+                            gBattleStruct->moveDamage[battler] = 1;
+                        gBattleStruct->moveDamage[battler] *= -1;
                         BattleScriptExecute(BattleScript_PoisonHealActivates);
                         effect++;
                     }
@@ -2490,12 +2490,12 @@ u8 DoBattlerEndTurnEffects(void)
                 }
                 else if (ability == ABILITY_PURE_WHITE)
                 {
-                    if (!BATTLER_MAX_HP(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+                    if (!IsBattlerAtMaxHp(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
                     {
-                        gBattleMoveDamage = GetNonDynamaxMaxHP(battler) / 8;
-                        if (gBattleMoveDamage == 0)
-                            gBattleMoveDamage = 1;
-                        gBattleMoveDamage *= -1;
+                        gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
+                        if (gBattleStruct->moveDamage[battler] == 0)
+                            gBattleStruct->moveDamage[battler] = 1;
+                        gBattleStruct->moveDamage[battler] *= -1;
                         BattleScriptExecute(BattleScript_PoisonHealActivates);
                         effect++;
                     }
@@ -4371,11 +4371,11 @@ bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 move, u32 ability
         }
         break;
     case ABILITY_GREAT_BLOOMING:
-        if (IS_MOVE_STATUS(move))
+        if (IsBattleMoveStatus(move))
         {
             u32 moveTarget = GetBattlerMoveTargetType(battlerAtk, move);
             if (!(moveTarget & MOVE_TARGET_OPPONENTS_FIELD) && !(moveTarget & MOVE_TARGET_ALL_BATTLERS))
-                effect = MOVE_BLOCKED_BY_GOOD_AS_GOLD;
+                battleScriptBlocksMove = BattleScript_GreatBloomingActivates;
         }
         break;
     }
@@ -4677,16 +4677,11 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect = (effect == 1) ? 2 : 0;
                 break;
             case STARTING_STATUS_UBW:
-                if (!(gFieldStatuses & STATUS_FIELD_UBW))
-                {
-                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_UBW_SET;
-                    gFieldStatuses |= STATUS_FIELD_UBW;
-                    if (timerVal == 0)
-                        gFieldStatuses |= STATUS_FIELD_TERRAIN_PERMANENT;
-                    else
-                        gFieldTimers.terrainTimer = timerVal;
-                    effect = 2;
-                }
+                effect = SetStartingFieldStatus(STATUS_FIELD_UBW,
+                                                B_MSG_UBW_SET,
+                                                0,
+                                                &gFieldTimers.terrainTimer);
+                effect = (effect == 1) ? 2 : 0;
                 break;
             case STARTING_STATUS_TRICK_ROOM:
                 effect = SetStartingFieldStatus(STATUS_FIELD_TRICK_ROOM,
@@ -5697,14 +5692,14 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 break;
             case ABILITY_WINNING_COMBINATION_2:
                 if (IsBattlerWeatherAffected(battler, B_WEATHER_SUN)
-                 && !BATTLER_MAX_HP(battler)
+                 && !IsBattlerAtMaxHp(battler)
                  && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
                 {
                     BattleScriptPushCursorAndCallback(BattleScript_RainDishActivates);
-                    gBattleMoveDamage = GetNonDynamaxMaxHP(battler) / (gLastUsedAbility == ABILITY_RAIN_DISH ? 16 : 8);
-                    if (gBattleMoveDamage == 0)
-                        gBattleMoveDamage = 1;
-                    gBattleMoveDamage *= -1;
+                    gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / (gLastUsedAbility == ABILITY_RAIN_DISH ? 16 : 8);
+                    if (gBattleStruct->moveDamage[battler] == 0)
+                        gBattleStruct->moveDamage[battler] = 1;
+                    gBattleStruct->moveDamage[battler] *= -1;
                     effect++;
                 }
                 if (IsBattlerWeatherAffected(battler, B_WEATHER_SUN)
@@ -6258,7 +6253,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         }
             break;
         case ABILITY_ULTRA_EGO:
-            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+            if (!(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
              && IsBattlerTurnDamaged(gBattlerTarget)
              && IsBattlerAlive(battler))
             {
@@ -10119,10 +10114,6 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
         if (IsBattleMoveSpecial(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
-    case ABILITY_PURE_POWER:
-        if (IS_MOVE_SPECIAL(move))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
-        break;
     case ABILITY_GREAT_BLOOMING:
         modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
@@ -10193,7 +10184,7 @@ static inline u32 CalcAttackStat(struct DamageCalculationData *damageCalcData, u
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_WINNING_COMBINATION_2: // Aki Sisters
-        if (IS_MOVE_SPECIAL(move) && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SUN))
+        if (IsBattleMoveSpecial(move) && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SUN))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_TRANSISTOR:

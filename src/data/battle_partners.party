@@ -11,6 +11,7 @@ Class: Rival
 Pic: Steven
 Gender: Male
 Music: Male
+Difficulty: Normal
 
 Metang
 Brave Nature
@@ -48,6 +49,7 @@ Class: TRAINER_CLASS_PKMN_TRAINER_1
 Pic: TRAINER_BACK_PIC_BRENDAN
 Gender: Female
 Music: Female
+Difficulty: Normal
 
 Miyu (SPECIES_MEW) @ ITEM_BRIGHT_POWDER
 Modest Nature

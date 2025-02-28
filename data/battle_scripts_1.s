@@ -110,7 +110,7 @@ BattleScript_UltraInstinctTrySpeed:
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctEnd:
-	bichalfword gMoveResultFlags, MOVE_RESULT_NO_EFFECT
+@	bichalfword gMoveResultFlags, MOVE_RESULT_NO_EFFECT
 	healthbarupdate BS_ATTACKER
 	datahpupdate BS_ATTACKER
 	goto BattleScript_MoveEnd

@@ -13280,9 +13280,9 @@ static void Cmd_transformdataexecutiondecade(void)
     gBattlescriptCurrInstr = cmd->nextInstr;
     if (gBattleMons[gBattlerTarget].status2 & STATUS2_TRANSFORMED
         || gBattleStruct->illusion[gBattlerTarget].on
-        || gStatuses3[gBattlerTarget] & STATUS3_SEMI_INVULNERABLE)
+        || gStatuses3[gBattlerTarget] & STATUS3_SEMI_INVULNERABLE_NO_COMMANDER)
     {
-        gMoveResultFlags |= MOVE_RESULT_FAILED;
+        gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_FAILED;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORM_FAILED;
     }
     else
@@ -13345,7 +13345,7 @@ static void Cmd_transformdataexecutiondecade(void)
             gBattleMons[gBattlerTarget].types[0] = TYPE_NEW_NATURE;
             gBattleMons[gBattlerTarget].types[1] = TYPE_NEW_ELECTRIC;
             gBattleMons[gBattlerTarget].types[2] = TYPE_MYSTERY;
-            gBattleStruct->overwrittenAbilities[gBattlerTarget] = ABILITY_LIMBER;
+            gDisableStructs[gBattlerTarget].overwrittenAbility = ABILITY_LIMBER;
 
             for (i = 0; i < MAX_MON_MOVES; i++)
             {
@@ -13414,7 +13414,7 @@ static void Cmd_transformdataexecutiondecade(void)
                     gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
                     
                     VarSet(VAR_UNUSED_0x40F8, SPECIES_NECROZMA_ULTRA);
-                    gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_NEUROFORCE;
+                    gDisableStructs[gBattlerAttacker].overwrittenAbility = ABILITY_NEUROFORCE;
                     break;
                 case 1:
                     speciesBuffer = SPECIES_SHAYMIN_SKY;
@@ -13454,7 +13454,7 @@ static void Cmd_transformdataexecutiondecade(void)
                     gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
                     
                     VarSet(VAR_UNUSED_0x40F8, SPECIES_SHAYMIN_SKY);
-                    gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_SERENE_GRACE;
+                    gDisableStructs[gBattlerAttacker].overwrittenAbility = ABILITY_SERENE_GRACE;
                     break;
                 default:
                     speciesBuffer = SPECIES_MAGEARNA_ORIGINAL;
@@ -13494,7 +13494,7 @@ static void Cmd_transformdataexecutiondecade(void)
                     gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
                     
                     VarSet(VAR_UNUSED_0x40F8, SPECIES_MAGEARNA_ORIGINAL);
-                    gBattleStruct->overwrittenAbilities[gBattlerAttacker] = ABILITY_SOUL_HEART;
+                    gDisableStructs[gBattlerAttacker].overwrittenAbility = ABILITY_SOUL_HEART;
                     break;
             }
 
@@ -14279,7 +14279,7 @@ static void Cmd_cursetarget(void)
     else if (gBattleMons[gBattlerAttacker].ability == ABILITY_WINNING_COMBINATION_3)
     {
         gBattleMons[gBattlerTarget].status2 |= STATUS2_CURSED;
-        gBattleMoveDamage = 0;
+        gBattleStruct->moveDamage[gBattlerAttacker] = 0;
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
     else

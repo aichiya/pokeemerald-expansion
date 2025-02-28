@@ -9,7 +9,7 @@ AnotherWorldEcruteakCity_Script1::
 	msgbox AnotherWorldEcruteakCity_Script1_Text1, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_VIOLET, 0, TrimmedGensokyo_Text_Debug1_2
+@@@	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_VIOLET, 0, TrimmedGensokyo_Text_Debug1_2
 	release
 	end
 	

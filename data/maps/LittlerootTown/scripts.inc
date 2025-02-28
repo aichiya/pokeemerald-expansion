@@ -456,7 +456,7 @@ LittlerootTown_EventScript_TownSign::
 @	dowildbattle
 @   setflag FLAG_CUSTOM_BGM_BATTLE
 @	setvar VAR_MUSIC_SETTING, MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_CINDY_6, 0, LittlerootTown_Text_TownSign
+@@@	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_CINDY_6, 0, LittlerootTown_Text_TownSign
 @   setwildbattle SPECIES_CELEBI, 50, ITEM_NONE
 @	dowildbattle
     delay 4
@@ -536,7 +536,7 @@ LittlerootTown_EventScript_BirchsHouseSignFemale::
 LittlerootTown_EventScript_MaysHouseSign::
 	lockall
     special PartyMonBecomeEgg
-	trainerbattle TRAINER_BATTLE_SINGLE, 231, 0, LittlerootTown_Text_TownSign, LittlerootTown_Text_TownSign
+@@@	trainerbattle TRAINER_BATTLE_SINGLE, 231, 0, LittlerootTown_Text_TownSign, LittlerootTown_Text_TownSign
 	releaseall
 	end
 

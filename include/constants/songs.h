@@ -1622,8 +1622,9 @@
 #define MUS_PC_EIEN_NO_TOMODACHI_2 1647
 #define MUS_ETC_SAMPAI_JUMPA 1648
 #define MUS_YYYI_HANAKOTOBA 1649
+#define MUS_DGMN_BOKURA 1650
 
-#define END_MUS 					MUS_YYYI_HANAKOTOBA
+#define END_MUS 					MUS_DGMN_BOKURA
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

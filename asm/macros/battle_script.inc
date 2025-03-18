@@ -1623,6 +1623,11 @@
 	.4byte \ptr
 	.endm
 
+	.macro undodynamax battler:req
+	callnative BS_UndoDynamax
+	.byte \battler
+	.endm
+
 	.macro trytrainerslidezmovemsg
 	callnative BS_TryTrainerSlideZMoveMsg
 	.endm
@@ -2385,7 +2390,7 @@
 	callnative BS_SwapStats
 	.byte \stat
 	.endm
-    
+
 	.macro restoresavedmove
 	callnative BS_RestoreSavedMove
 	.endm

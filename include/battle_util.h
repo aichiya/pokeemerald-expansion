@@ -135,7 +135,6 @@ enum
     CANCELLER_STANCE_CHANGE_2,
     CANCELLER_WEATHER_PRIMAL,
     CANCELLER_DYNAMAX_BLOCKED,
-    CANCELLER_POWDER_MOVE,
     CANCELLER_POWDER_STATUS,
     CANCELLER_PROTEAN,
     CANCELLER_PSYCHIC_TERRAIN,
@@ -354,5 +353,6 @@ bool32 IsPursuitTargetSet(void);
 void ClearPursuitValuesIfSet(u32 battler);
 void ClearPursuitValues(void);
 bool32 HasWeatherEffect(void);
+bool32 IsMovePowderBlocked(u32 battlerAtk, u32 battlerDef, u32 move);
 
 #endif // GUARD_BATTLE_UTIL_H

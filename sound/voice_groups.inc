@@ -211,6 +211,7 @@
 .include "sound/voicegroups/voicegroup204.inc" @ [Main] Custom 4
 .include "sound/voicegroups/voicegroup205.inc" @ [Main] Custom 5
 .include "sound/voicegroups/voicegroup206.inc" @ Simulated GB/GBC
+.include "sound/voicegroups/voicegroup207.inc" @ Experimental
 
 .include "sound/voicegroups/voicegroup210.inc" @ [Main] THPPRF custom
 .include "sound/voicegroups/voicegroup211.inc" @ [Main] THPPZGS custom

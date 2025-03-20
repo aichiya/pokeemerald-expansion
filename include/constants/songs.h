@@ -1623,8 +1623,12 @@
 #define MUS_ETC_SAMPAI_JUMPA 1648
 #define MUS_YYYI_HANAKOTOBA 1649
 #define MUS_DGMN_BOKURA 1650
+#define MUS_KITARO_MATSURI 1651
+#define MUS_ETC_PINBALL 1652
+#define MUS_TH_FAITH3 1653
+#define MUS_GSC_PEWTER_TEST 1654
 
-#define END_MUS 					MUS_DGMN_BOKURA
+#define END_MUS 					MUS_GSC_PEWTER_TEST
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

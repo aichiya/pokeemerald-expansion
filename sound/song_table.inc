@@ -1652,6 +1652,10 @@ gSongTable::
 	song mus_etc_sampai_jumpa, 0, 0
 	song mus_yyyi_hanakotoba, 0, 0
 	song mus_dgmn_bokura, 0, 0
+	song mus_kitaro_matsuri, 0, 0
+	song mus_etc_pinball, 0, 0
+	song mus_th_faith3, 0, 0
+	song mus_gsc_pewter_test, 0, 0
 
 	.align 2
 dummy_song_header:

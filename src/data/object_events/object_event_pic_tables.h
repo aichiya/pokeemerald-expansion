@@ -1344,6 +1344,14 @@ static const struct SpriteFrameImage sPicTable_HoOhOld[] = {
     overworld_frame(gObjectEventPic_HoOhOld, 4, 4, 1),
 };
 
+static const struct SpriteFrameImage sPicTable_Kris[] = {
+    overworld_ascending_frames(gObjectEventPic_Kris, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Miku[] = {
+    overworld_ascending_frames(gObjectEventPic_Miku, 2, 4),
+};
+
 static const struct SpriteFrameImage sPicTable_RubySapphireBrendan[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireBrendanNormal, 2, 4),
 };

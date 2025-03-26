@@ -1627,8 +1627,9 @@
 #define MUS_ETC_PINBALL 1652
 #define MUS_TH_FAITH3 1653
 #define MUS_GSC_PEWTER_TEST 1654
+#define MUS_YGOFM_FREE_DUEL 1655
 
-#define END_MUS 					MUS_GSC_PEWTER_TEST
+#define END_MUS 					MUS_YGOFM_FREE_DUEL
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

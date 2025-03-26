@@ -1656,6 +1656,7 @@ gSongTable::
 	song mus_etc_pinball, 0, 0
 	song mus_th_faith3, 0, 0
 	song mus_gsc_pewter_test, 0, 0
+	song mus_ygofm_free_duel, 0, 0
 
 	.align 2
 dummy_song_header:

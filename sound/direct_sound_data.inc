@@ -8384,7 +8384,7 @@ Cry_THZombiefairy::
     .incbin "sound/direct_sound_samples/cries_add/cry_th_zombie_fairy.bin"
 
 @ Touhou Puppet Play Cries End // Touhou Puppet Play Cries End
-
+/*
 @ Start song sample CtC G Free
 
     .align 2
@@ -8588,7 +8588,7 @@ DirectSoundWaveData_SongSampleTHCtCGFree049::
     .incbin "sound/direct_sound_samples/song_samples/song_sample_th_ctc_gfree_049.bin"
 
 @ End song sample CtC G Free
-
+*/
     .align 2
 Cry_ETCCureUnionLine::
     .incbin "sound/direct_sound_samples/cries_add/cry_etc_union_line.bin"

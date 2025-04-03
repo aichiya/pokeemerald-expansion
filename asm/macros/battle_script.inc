@@ -1756,10 +1756,6 @@
 	.byte \battler
 	.endm
 
-	.macro hitswitchtargetfailed
-	callnative BS_HitSwitchTargetFailed
-	.endm
-
 	.macro tryrevivalblessing, failInstr:req
 	callnative BS_TryRevivalBlessing
 	.4byte \failInstr

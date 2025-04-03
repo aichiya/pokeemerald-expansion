@@ -7220,9 +7220,7 @@ static void Cmd_moveend(void)
                     if (GetBattlerHoldEffect(i, TRUE) == HOLD_EFFECT_RED_CARD)
                         redCardBattlers |= (1u << i);
                 }
-                if (redCardBattlers
-                  && (moveEffect != EFFECT_HIT_SWITCH_TARGET || gBattleStruct->hitSwitchTargetFailed)
-                  && IsBattlerAlive(gBattlerAttacker))
+                if (redCardBattlers && IsBattlerAlive(gBattlerAttacker))
                 {
                     // Since we check if battler was damaged, we don't need to check move result.
                     // In fact, doing so actually prevents multi-target moves from activating red card properly
@@ -7237,7 +7235,8 @@ static void Cmd_moveend(void)
                           && IsBattlerAlive(battler)
                           && !DoesSubstituteBlockMove(gBattlerAttacker, battler, gCurrentMove)
                           && IsBattlerTurnDamaged(battler)
-                          && CanBattlerSwitch(gBattlerAttacker))
+                          && CanBattlerSwitch(gBattlerAttacker)
+                          && !(moveEffect == EFFECT_HIT_SWITCH_TARGET && CanBattlerSwitch(battler)))
                         {
                             effect = TRUE;
                             gBattleScripting.moveendState = MOVEEND_OPPORTUNIST;
@@ -7251,7 +7250,8 @@ static void Cmd_moveend(void)
                                 gBattlescriptCurrInstr = BattleScript_MoveEnd;  // Prevent user switch-in selection
                             BattleScriptPushCursor();
                             if (gBattleStruct->commanderActive[gBattlerAttacker] != SPECIES_NONE
-                             || GetBattlerAbility(gBattlerAttacker) == ABILITY_GUARD_DOG)
+                             || GetBattlerAbility(gBattlerAttacker) == ABILITY_GUARD_DOG
+                             || GetActiveGimmick(gBattlerAttacker) == GIMMICK_DYNAMAX)
                                 gBattlescriptCurrInstr = BattleScript_RedCardActivationNoSwitch;
                             else
                                 gBattlescriptCurrInstr = BattleScript_RedCardActivates;
@@ -7426,7 +7426,6 @@ static void Cmd_moveend(void)
             gSpecialStatuses[gBattlerTarget].berryReduced = FALSE;
             gSpecialStatuses[gBattlerTarget].distortedTypeMatchups = FALSE;
             gBattleScripting.moveEffect = 0;
-            gBattleStruct->hitSwitchTargetFailed = FALSE;
             gBattleStruct->isAtkCancelerForCalledMove = FALSE;
             gBattleStruct->swapDamageCategory = FALSE;
             gBattleStruct->categoryOverride = FALSE;
@@ -18686,13 +18685,6 @@ void BS_StoreHealingWish(void)
         gBattleStruct->battlerState[battler].storedLunarDance = TRUE;
     else
         gBattleStruct->battlerState[battler].storedHealingWish = TRUE;
-    gBattlescriptCurrInstr = cmd->nextInstr;
-}
-
-void BS_HitSwitchTargetFailed(void)
-{
-    NATIVE_ARGS();
-    gBattleStruct->hitSwitchTargetFailed = TRUE;
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 

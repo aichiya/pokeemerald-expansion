@@ -5163,6 +5163,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_TH_FAITH3) \
     X(MUS_GSC_PEWTER_TEST) \
     X(MUS_YGOFM_FREE_DUEL) \
+    X(MUS_GSC_GYM_GSSYNTH_TEST) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

@@ -8824,3 +8824,78 @@ DirectSoundWaveData_GoldenSun2InstrumentSample054::
     .incbin "sound/direct_sound_samples/golden_sun_2/golden_sun_2_instrument_sample_054.bin"
 
 @ End Golden Sun 2 Instruments
+
+DirectSoundWave_SynthActualSample::  @ This wave sample must be right before synth data (see DirectSoundSynth_XXXX). You can add many as many DirectSoundSynth_XXXX after this. The actual sample is not necessary to be in a voicegroup
+    .incbin "sound/direct_sound_samples/synth/direct_sound_synth_actual_sample.bin"
+
+DirectSoundSynth_Type_00_Param_0040A080:: @ gunshot like
+    .4byte 0x40000000  @ Recognized as a Direct Sound wave sample in a voicegroup
+    .byte  0x20        @ Unknown
+    .byte  0x89        @ Unknown
+    .byte  0x05        @ Unknown, supposedly sample playback speed
+    .byte  0x01        @ Pitch control? 0x0 will be muted
+    .4byte 0x00000000  @ Unknown
+    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
+    .byte  0x80        @ Unknown
+    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
+    .byte  0x00        @ Parameter 1
+    .byte  0x40        @ Parameter 2
+    .byte  0xA0        @ Parameter 3
+    .byte  0x80        @ Parameter 4 
+    .2byte 0x0000      @ Padding
+
+DirectSoundSynth_Type_00_Param_E0F0A080::
+    .4byte 0x40000000  @ Recognized as a Direct Sound wave sample in a voicegroup
+    .byte  0x20        @ Unknown
+    .byte  0x89        @ Unknown
+    .byte  0x05        @ Unknown, supposedly sample playback speed
+    .byte  0x01        @ Pitch control? 0x0 will be muted
+    .4byte 0x00000000  @ Unknown
+    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
+    .byte  0x80        @ Unknown
+    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
+    .byte  0xE0        @ Parameter 1
+    .byte  0xF0        @ Parameter 2
+    .byte  0xA0        @ Parameter 3
+    .byte  0x80        @ Parameter 4 
+    .2byte 0x0000      @ Padding
+
+DirectSoundSynth_Type_01::
+    .4byte 0x40000000  @ Recognized as a Direct Sound wave sample in a voicegroup
+    .byte  0x20        @ Unknown
+    .byte  0x89        @ Unknown
+    .byte  0x05        @ Unknown, supposedly sample playback speed
+    .byte  0x01        @ Pitch control?
+    .4byte 0x00000000  @ Unknown
+    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
+    .byte  0x80        @ Unknown
+    .byte  0x01        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
+    .2byte 0x0000      @ Padding
+
+DirectSoundSynth_Type_02::
+    .4byte 0x40000000  @ Recognized as a Direct Sound wave sample in a voicegroup
+	.byte  0x20        @ Unknown
+	.byte  0x89        @ Unknown
+	.byte  0x05        @ Unknown, supposedly sample playback speed
+	.byte  0x01        @ Pitch control?
+	.4byte 0x00000000  @ Unknown
+	.4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
+	.byte  0x80        @ Unknown
+	.byte  0x02        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
+	.2byte 0x0000      @ Padding
+
+DirectSoundSynth_Type_00_Param_0000C0A0::
+    .4byte 0x40000000  @ Recognized as a Direct Sound wave sample in a voicegroup
+    .byte  0x20        @ Unknown
+    .byte  0x89        @ Unknown
+    .byte  0x05        @ Unknown, supposedly sample playback speed
+    .byte  0x01        @ Pitch control? 0x0 will be muted
+    .4byte 0x00000000  @ Unknown
+    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
+    .byte  0x80        @ Unknown
+    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
+    .byte  0x00        @ Parameter 1
+    .byte  0x00        @ Parameter 2
+    .byte  0xC0        @ Parameter 3
+    .byte  0xA0        @ Parameter 4 
+    .2byte 0x0000      @ Padding

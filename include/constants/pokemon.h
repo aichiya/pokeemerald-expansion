@@ -34,6 +34,7 @@
 #define TYPE_NEW_EMOTION      TYPE_BUG
 #define TYPE_NEW_HEART        TYPE_BUG
 #define TYPE_NEW_NETHER       TYPE_GHOST
+#define TYPE_NEW_METAL        TYPE_STEEL
 #define TYPE_NEW_STEEL        TYPE_STEEL
 #define TYPE_NEW_MYSTERY      TYPE_MYSTERY
 #define TYPE_NEW_FIRE         TYPE_FIRE

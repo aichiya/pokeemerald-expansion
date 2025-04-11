@@ -892,7 +892,7 @@ void HandleAction_ActionFinished(void)
 static const u8 sHoldEffectToType[][2] =
 {
     {HOLD_EFFECT_BUG_POWER, TYPE_NEW_HEART},
-    {HOLD_EFFECT_STEEL_POWER, TYPE_NEW_STEEL},
+    {HOLD_EFFECT_STEEL_POWER, TYPE_NEW_METAL},
     {HOLD_EFFECT_GROUND_POWER, TYPE_NEW_EARTH},
     {HOLD_EFFECT_ROCK_POWER, TYPE_NEW_BEAST},
     {HOLD_EFFECT_GRASS_POWER, TYPE_NEW_NATURE},
@@ -2291,7 +2291,7 @@ u8 DoBattlerEndTurnEffects(void)
                   && ability != ABILITY_SAND_FORCE
                   && ability != ABILITY_SAND_RUSH
                   && ability != ABILITY_OVERCOAT
-                  && !IS_BATTLER_ANY_TYPE(gBattlerAttacker, TYPE_NEW_WIND, TYPE_NEW_EARTH, TYPE_NEW_STEEL)
+                  && !IS_BATTLER_ANY_TYPE(gBattlerAttacker, TYPE_NEW_WIND, TYPE_NEW_EARTH, TYPE_NEW_METAL)
                   && !(gStatuses3[gBattlerAttacker] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
                   && GetBattlerHoldEffect(gBattlerAttacker, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES)
             {
@@ -2905,7 +2905,7 @@ u8 DoBattlerEndTurnEffects(void)
              && !IsMagicGuardProtected(battler, ability))
             {
                 gBattlerTarget = battler;
-                if (IS_BATTLER_ANY_TYPE(battler, TYPE_NEW_STEEL, TYPE_NEW_WATER))
+                if (IS_BATTLER_ANY_TYPE(battler, TYPE_NEW_METAL, TYPE_NEW_WATER))
                     gBattleStruct->moveDamage[battler] = gBattleMons[battler].maxHP / 4;
                 else
                     gBattleStruct->moveDamage[battler] = gBattleMons[battler].maxHP / 8;
@@ -4226,7 +4226,7 @@ bool32 ChangeTypeBasedOnTerrain(u32 battler)
     else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
         battlerType = TYPE_NEW_REASON;
     else if (gFieldStatuses & STATUS_FIELD_UBW)
-        battlerType = TYPE_NEW_STEEL;
+        battlerType = TYPE_NEW_METAL;
     else // failsafe
         return FALSE;
 
@@ -7189,7 +7189,7 @@ u32 IsAbilityPreventingEscape(u32 battler)
         return id;
     if ((id = IsAbilityOnOpposingSide(battler, ABILITY_ARENA_TRAP)) && IsBattlerGrounded(battler))
         return id;
-    if ((id = IsAbilityOnOpposingSide(battler, ABILITY_MAGNET_PULL)) && IS_BATTLER_OF_TYPE(battler, TYPE_NEW_STEEL))
+    if ((id = IsAbilityOnOpposingSide(battler, ABILITY_MAGNET_PULL)) && IS_BATTLER_OF_TYPE(battler, TYPE_NEW_METAL))
         return id;
     if ((id = IsAbilityOnOpposingSide(battler, ABILITY_WINNING_COMBINATION_3)))
         return id;
@@ -9430,7 +9430,7 @@ const struct TypePower gNaturalGiftTable[] =
     [ITEM_TO_BERRY(ITEM_MAGO_BERRY)] = {TYPE_NEW_NETHER, 80},
     [ITEM_TO_BERRY(ITEM_AGUAV_BERRY)] = {TYPE_NEW_DIVINE, 80},
     [ITEM_TO_BERRY(ITEM_IAPAPA_BERRY)] = {TYPE_NEW_DARK, 80},
-    [ITEM_TO_BERRY(ITEM_RAZZ_BERRY)] = {TYPE_NEW_STEEL, 80},
+    [ITEM_TO_BERRY(ITEM_RAZZ_BERRY)] = {TYPE_NEW_METAL, 80},
     [ITEM_TO_BERRY(ITEM_OCCA_BERRY)] = {TYPE_NEW_FIRE, 80},
     [ITEM_TO_BERRY(ITEM_PASSHO_BERRY)] = {TYPE_NEW_WATER, 80},
     [ITEM_TO_BERRY(ITEM_WACAN_BERRY)] = {TYPE_NEW_WIND, 80},
@@ -9446,7 +9446,7 @@ const struct TypePower gNaturalGiftTable[] =
     [ITEM_TO_BERRY(ITEM_KASIB_BERRY)] = {TYPE_NEW_NETHER, 80},
     [ITEM_TO_BERRY(ITEM_HABAN_BERRY)] = {TYPE_NEW_DIVINE, 80},
     [ITEM_TO_BERRY(ITEM_COLBUR_BERRY)] = {TYPE_NEW_DARK, 80},
-    [ITEM_TO_BERRY(ITEM_BABIRI_BERRY)] = {TYPE_NEW_STEEL, 80},
+    [ITEM_TO_BERRY(ITEM_BABIRI_BERRY)] = {TYPE_NEW_METAL, 80},
     [ITEM_TO_BERRY(ITEM_CHILAN_BERRY)] = {TYPE_NEW_ILLUSION, 80},
     [ITEM_TO_BERRY(ITEM_ROSELI_BERRY)] = {TYPE_NEW_ELECTRIC, 80},
     [ITEM_TO_BERRY(ITEM_BLUK_BERRY)] = {TYPE_NEW_FIRE, 90},
@@ -9464,7 +9464,7 @@ const struct TypePower gNaturalGiftTable[] =
     [ITEM_TO_BERRY(ITEM_RABUTA_BERRY)] = {TYPE_NEW_NETHER, 90},
     [ITEM_TO_BERRY(ITEM_NOMEL_BERRY)] = {TYPE_NEW_DIVINE, 90},
     [ITEM_TO_BERRY(ITEM_SPELON_BERRY)] = {TYPE_NEW_DARK, 90},
-    [ITEM_TO_BERRY(ITEM_PAMTRE_BERRY)] = {TYPE_NEW_STEEL, 90},
+    [ITEM_TO_BERRY(ITEM_PAMTRE_BERRY)] = {TYPE_NEW_METAL, 90},
     [ITEM_TO_BERRY(ITEM_WATMEL_BERRY)] = {TYPE_NEW_FIRE, 100},
     [ITEM_TO_BERRY(ITEM_DURIN_BERRY)] = {TYPE_NEW_WATER, 100},
     [ITEM_TO_BERRY(ITEM_BELUE_BERRY)] = {TYPE_NEW_WIND, 100},
@@ -9836,7 +9836,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
     if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_PSYCHIC_TERRAIN) && moveType == TYPE_NEW_REASON)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
-    if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_UBW) && moveType == TYPE_NEW_STEEL)
+    if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_UBW) && moveType == TYPE_NEW_METAL)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
     if (IsBattlerTerrainAffected(battlerDef, STATUS_FIELD_UBW) && moveType == TYPE_NEW_MIASMA)
         modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
@@ -9876,7 +9876,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
     case ABILITY_SAND_FORCE:
-        if ((moveType == TYPE_NEW_STEEL || moveType == TYPE_NEW_EARTH)
+        if ((moveType == TYPE_NEW_METAL || moveType == TYPE_NEW_EARTH)
             && weather & B_WEATHER_SANDSTORM)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
@@ -9907,7 +9907,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
            modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
         break;
     case ABILITY_STEELWORKER:
-        if (moveType == TYPE_NEW_STEEL)
+        if (moveType == TYPE_NEW_METAL)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_PIXILATE:
@@ -9935,7 +9935,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
     case ABILITY_STEELY_SPIRIT:
-        if (moveType == TYPE_NEW_STEEL)
+        if (moveType == TYPE_NEW_METAL)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_SHARPNESS:
@@ -9974,7 +9974,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
             break;
         case ABILITY_STEELY_SPIRIT:
-            if (moveType == TYPE_NEW_STEEL)
+            if (moveType == TYPE_NEW_METAL)
                 modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
             break;
         }
@@ -10051,7 +10051,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
     case HOLD_EFFECT_ADAMANT_ORB:
-        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_DIALGA && (moveType == TYPE_NEW_STEEL || moveType == TYPE_NEW_ILLUSION))
+        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_DIALGA && (moveType == TYPE_NEW_METAL || moveType == TYPE_NEW_ILLUSION))
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
     case HOLD_EFFECT_GRISEOUS_ORB:

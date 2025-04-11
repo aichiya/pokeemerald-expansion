@@ -4853,7 +4853,7 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
                         ADJUST_SCORE(BEST_EFFECT);
                     break;
                 case MOVE_EFFECT_SALT_CURE:
-                    if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_NEW_WATER) || IS_BATTLER_OF_TYPE(battlerDef, TYPE_NEW_STEEL))
+                    if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_NEW_WATER) || IS_BATTLER_OF_TYPE(battlerDef, TYPE_NEW_METAL))
                         ADJUST_SCORE(DECENT_EFFECT);
                     break;
 

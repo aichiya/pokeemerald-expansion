@@ -1629,7 +1629,7 @@ bool32 ShouldSetSandstorm(u32 battler, u32 ability, u32 holdEffect)
       || ability == ABILITY_MAGIC_GUARD
       || ability == ABILITY_FANTASY_BREAKER
       || holdEffect == HOLD_EFFECT_SAFETY_GOGGLES
-      || IS_BATTLER_ANY_TYPE(battler, TYPE_NEW_EARTH, TYPE_NEW_STEEL)
+      || IS_BATTLER_ANY_TYPE(battler, TYPE_NEW_EARTH, TYPE_NEW_METAL)
       || HasMoveEffect(battler, EFFECT_SHORE_UP)
       || HasMoveEffect(battler, EFFECT_WEATHER_BALL))
     {
@@ -2668,7 +2668,7 @@ static u32 GetPoisonDamage(u32 battlerId)
 
 static bool32 BattlerAffectedBySandstorm(u32 battlerId, u32 ability)
 {
-    if (!IS_BATTLER_ANY_TYPE(battlerId, TYPE_NEW_EARTH, TYPE_NEW_STEEL)
+    if (!IS_BATTLER_ANY_TYPE(battlerId, TYPE_NEW_EARTH, TYPE_NEW_METAL)
       && ability != ABILITY_SAND_VEIL
       && ability != ABILITY_SAND_FORCE
       && ability != ABILITY_SAND_RUSH
@@ -3065,7 +3065,7 @@ bool32 AI_CanPoison(u32 battlerAtk, u32 battlerDef, u32 defAbility, u32 move, u3
       || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
       || PartnerMoveEffectIsStatusSameTarget(BATTLE_PARTNER(battlerAtk), battlerDef, partnerMove))
         return FALSE;
-    else if (defAbility != ABILITY_CORROSION && IS_BATTLER_ANY_TYPE(battlerDef, TYPE_NEW_MIASMA, TYPE_NEW_STEEL))
+    else if (defAbility != ABILITY_CORROSION && IS_BATTLER_ANY_TYPE(battlerDef, TYPE_NEW_MIASMA, TYPE_NEW_METAL))
         return FALSE;
     else if (IsValidDoubleBattle(battlerAtk) && AI_DATA->abilities[BATTLE_PARTNER(battlerDef)] == ABILITY_PASTEL_VEIL)
         return FALSE;

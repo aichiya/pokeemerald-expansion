@@ -1422,7 +1422,7 @@ static u32 GetSwitchinHazardsDamage(u32 battler, struct BattlePokemon *battleMon
         }
 
         if ((hazardFlags & SIDE_STATUS_TOXIC_SPIKES) && (defType1 != TYPE_NEW_MIASMA && defType2 != TYPE_NEW_MIASMA
-            && defType1 != TYPE_NEW_STEEL && defType2 != TYPE_NEW_STEEL
+            && defType1 != TYPE_NEW_METAL && defType2 != TYPE_NEW_METAL
             && ability != ABILITY_IMMUNITY && ability != ABILITY_POISON_HEAL && ability != ABILITY_COMATOSE
             && status == 0
             && !(hazardFlags & SIDE_STATUS_SAFEGUARD)
@@ -1473,7 +1473,7 @@ static s32 GetSwitchinWeatherImpact(void)
             else if ((gBattleWeather & B_WEATHER_SANDSTORM)
                 && (AI_DATA->switchinCandidate.battleMon.types[0] != TYPE_NEW_EARTH && AI_DATA->switchinCandidate.battleMon.types[1] != TYPE_NEW_EARTH
 //                && AI_DATA->switchinCandidate.battleMon.types[0] != TYPE_ROCK && AI_DATA->switchinCandidate.battleMon.types[1] != TYPE_ROCK
-                && AI_DATA->switchinCandidate.battleMon.types[0] != TYPE_NEW_STEEL && AI_DATA->switchinCandidate.battleMon.types[1] != TYPE_NEW_STEEL
+                && AI_DATA->switchinCandidate.battleMon.types[0] != TYPE_NEW_METAL && AI_DATA->switchinCandidate.battleMon.types[1] != TYPE_NEW_METAL
                 && ability != ABILITY_SAND_VEIL && ability != ABILITY_SAND_RUSH && ability != ABILITY_SAND_FORCE))
             {
                 weatherImpact = maxHP / 16;
@@ -1840,7 +1840,7 @@ static bool32 CanAbilityTrapOpponent(u16 ability, u32 opponent)
     }
     else if (ability == ABILITY_ARENA_TRAP && IsBattlerGrounded(opponent))
         return TRUE;
-    else if (ability == ABILITY_MAGNET_PULL && IS_BATTLER_OF_TYPE(opponent, TYPE_NEW_STEEL))
+    else if (ability == ABILITY_MAGNET_PULL && IS_BATTLER_OF_TYPE(opponent, TYPE_NEW_METAL))
         return TRUE;
     else
         return FALSE;

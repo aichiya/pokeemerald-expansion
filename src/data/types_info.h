@@ -14,7 +14,7 @@
 const uq4_12_t gTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPES] =
 {//                                         Defender -->
  //  Attacker                                   None   Normal Fighting Flying  Poison  Ground   Rock    Bug     Ghost   Steel  Mystery  Fire   Water   Grass  Electric Psychic   Ice   Dragon   Dark   Fairy   Stellar
- //  Attacker                       New Type    None   Illusi Dream    Flying  Miasma  Earth   Beast   Heart   Nether   Steel  Mystery  Fire   Water  Nature    Wind   Reason    Ice   Divine   Dark  Electric Stellar
+ //  Attacker                       New Type    None   Illusi Dream    Flying  Miasma  Earth   Beast   Heart   Nether   Metal  Mystery  Fire   Water  Nature    Wind   Reason    Ice   Divine   Dark  Electric Stellar
     [TYPE_NONE]                             = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
     [TYPE_NORMAL]   /*[TYPE_NEW_ILLUSION]*/ = {______, ______, X(0.5), ______, ______, ______, ______, ______, X(0.0), ______, ______, ______, ______, ______, ______, ______, ______, ______, X(0.5), ______, ______},
     [TYPE_FIGHTING] /*[TYPE_NEW_DREAM]*/    = {______, X(2.0), X(0.5), X(0.5), ______, ______, ______, X(2.0), ______, X(2.0), ______, ______, ______, ______, ______, X(0.5), X(2.0), ______, ______, ______, ______},
@@ -24,7 +24,7 @@ const uq4_12_t gTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPES]
     [TYPE_ROCK]     /*[TYPE_NEW_BEAST]*/    = {______, ______, ______, X(0.5), ______, ______, ______, ______, X(2.0), ______, ______, ______, ______, X(0.5), ______, ______, ______, X(2.0), ______, ______, ______},
     [TYPE_BUG]      /*[TYPE_NEW_HEART]*/    = {______, ______, X(0.5), ______, X(0.5), ______, ______, X(0.5), ______, ______, ______, ______, ______, ______, ______, X(2.0), ______, X(0.5), X(2.0), ______, ______},
     [TYPE_GHOST]    /*[TYPE_NEW_NETHER]*/   = {______, X(0.0), ______, ______, ______, ______, X(0.5), X(0.5), X(2.0), ______, ______, ______, ______, ______, ______, X(2.0), ______, ______, X(0.0), ______, ______},
-    [TYPE_STEEL]    /*[TYPE_NEW_STEEL]*/    = {______, ______, ______, ______, ______, ______, ______, ______, ______, X(0.5), ______, X(0.5), X(0.5), ______, ______, ______, X(2.0), ______, X(2.0), X(0.5), ______},
+    [TYPE_STEEL]    /*[TYPE_NEW_METAL]*/    = {______, ______, ______, ______, ______, ______, ______, ______, ______, X(0.5), ______, X(0.5), X(0.5), ______, ______, ______, X(2.0), ______, X(2.0), X(0.5), ______},
     [TYPE_MYSTERY]  /*[TYPE_NEW_MYSTERY]*/  = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
     [TYPE_FIRE]     /*[TYPE_NEW_FIRE]*/     = {______, ______, ______, ______, ______, X(0.5), X(2.0), ______, ______, X(2.0), ______, X(0.5), X(0.5), X(2.0), X(0.5), ______, X(2.0), X(0.5), ______, ______, ______},
     [TYPE_WATER]    /*[TYPE_NEW_WATER]*/    = {______, ______, ______, ______, ______, X(2.0), X(2.0), ______, ______, ______, ______, X(2.0), X(0.5), X(0.5), ______, ______, X(0.5), X(0.5), ______, ______, ______},
@@ -237,8 +237,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_STEEL] =
     {
-        .name = _("Steel"),
-        .generic = _("a Steel move"),
+        .name = _("Metal"),
+        .generic = _("a Metal move"),
         .palette = 13,
         .zMove = MOVE_CORKSCREW_CRASH,
         .maxMove = MOVE_MAX_STEELSPIKE,

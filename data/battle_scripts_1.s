@@ -816,7 +816,7 @@ BattleScript_SkyDropTurn2:
 	call BattleScript_TwoTurnMovesSecondTurnRet
 	attackstring
 	clearskydrop BattleScript_SkyDropChangedTarget
-	jumpiftype BS_TARGET, TYPE_FLYING, BattleScript_SkyDropFlyingType
+	jumpiftype BS_TARGET, TYPE_NEW_FLYING, BattleScript_SkyDropFlyingType
 	goto BattleScript_HitFromCritCalc
 BattleScript_SkyDropFlyingType:
 	makevisible BS_TARGET
@@ -1607,14 +1607,14 @@ BattleScript_EffectFlowerShield::
 	ppreduce
 	selectfirstvalidtarget
 BattleScript_FlowerShieldIsAnyGrass:
-	jumpiftype BS_TARGET, TYPE_GRASS, BattleScript_FlowerShieldLoopStart
+	jumpiftype BS_TARGET, TYPE_NEW_NATURE, BattleScript_FlowerShieldLoopStart
 	jumpifnexttargetvalid BattleScript_FlowerShieldIsAnyGrass
 	goto BattleScript_ButItFailed
 BattleScript_FlowerShieldLoopStart:
 	selectfirstvalidtarget
 BattleScript_FlowerShieldLoop:
 	movevaluescleanup
-	jumpiftype BS_TARGET, TYPE_GRASS, BattleScript_FlowerShieldLoop2
+	jumpiftype BS_TARGET, TYPE_NEW_NATURE, BattleScript_FlowerShieldLoop2
 	goto BattleScript_FlowerShieldMoveTargetEnd
 BattleScript_FlowerShieldLoop2:
 	setstatchanger STAT_DEF, 1, FALSE
@@ -4180,7 +4180,7 @@ BattleScript_EffectMeanLook::
 	jumpifstatus2 BS_TARGET, STATUS2_ESCAPE_PREVENTION, BattleScript_ButItFailed
 	jumpifsubstituteblocks BattleScript_ButItFailed
 .if B_GHOSTS_ESCAPE >= GEN_6
-	jumpiftype BS_TARGET, TYPE_GHOST, BattleScript_ButItFailed
+	jumpiftype BS_TARGET, TYPE_NEW_NETHER, BattleScript_ButItFailed
 .endif
 	attackanimation
 	waitanimation
@@ -4217,9 +4217,9 @@ BattleScript_EffectMinimize::
 	goto BattleScript_EffectStatUpAfterAtkCanceler
 
 BattleScript_EffectCurse::
-	jumpiftype BS_ATTACKER, TYPE_GHOST, BattleScript_GhostCurse
+	jumpiftype BS_ATTACKER, TYPE_NEW_NETHER, BattleScript_GhostCurse
 	attackcanceler
-	jumpiftype BS_ATTACKER, TYPE_GHOST, BattleScript_DoGhostCurse
+	jumpiftype BS_ATTACKER, TYPE_NEW_NETHER, BattleScript_DoGhostCurse
 	attackstring
 	ppreduce
 	jumpifstat BS_ATTACKER, CMP_GREATER_THAN, STAT_SPEED, MIN_STAT_STAGE, BattleScript_CurseTrySpeed
@@ -4934,7 +4934,7 @@ BattleScript_EffectWillOWisp::
 	ppreduce
 	jumpifsubstituteblocks BattleScript_ButItFailed
 	jumpifstatus BS_TARGET, STATUS1_BURN, BattleScript_AlreadyBurned
-	jumpiftype BS_TARGET, TYPE_FIRE, BattleScript_NotAffected
+	jumpiftype BS_TARGET, TYPE_NEW_FIRE, BattleScript_NotAffected
 	jumpifability BS_TARGET, ABILITY_WATER_VEIL, BattleScript_WaterVeilPrevents
 	jumpifability BS_TARGET, ABILITY_WATER_BUBBLE, BattleScript_WaterVeilPrevents
 	jumpifability BS_TARGET, ABILITY_COMATOSE, BattleScript_AbilityProtectsDoesntAffect
@@ -7301,7 +7301,7 @@ BattleScript_PowderMoveNoEffect::
 	attackstring
 	ppreduce
 	pause B_WAIT_TIME_SHORT
-	jumpiftype BS_TARGET, TYPE_GRASS, BattleScript_PowderMoveNoEffectPrint
+	jumpiftype BS_TARGET, TYPE_NEW_NATURE, BattleScript_PowderMoveNoEffectPrint
 	jumpifability BS_TARGET, ABILITY_OVERCOAT, BattleScript_PowderMoveNoEffectOvercoat
 	printstring STRINGID_SAFETYGOGGLESPROTECTED
 	goto BattleScript_PowderMoveNoEffectWaitMsg

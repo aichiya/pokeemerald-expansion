@@ -6159,7 +6159,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
         else if (hiddenPowerType == 7)
             return TYPE_NEW_NETHER;
         else if (hiddenPowerType == 8)
-            return TYPE_NEW_STEEL;
+            return TYPE_NEW_METAL;
         else if (hiddenPowerType == 9)
             return TYPE_NEW_FIRE;
         else if (hiddenPowerType == 10)
@@ -6241,7 +6241,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
                 else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
                     return TYPE_NEW_REASON;
                 else if (gFieldStatuses & STATUS_FIELD_UBW)
-                    return TYPE_NEW_STEEL;
+                    return TYPE_NEW_METAL;
                 else //failsafe
                     return moveType;
             }

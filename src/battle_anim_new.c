@@ -8857,15 +8857,15 @@ void AnimTask_TerrainPulse(u8 taskId)
     if (IsBattlerTerrainAffected(gBattleAnimAttacker, STATUS_FIELD_TERRAIN_ANY))
     {
         if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
-            gBattleAnimArgs[0] = TYPE_ELECTRIC;
+            gBattleAnimArgs[0] = TYPE_NEW_ELECTRIC;
         else if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
-            gBattleAnimArgs[0] = TYPE_GRASS;
+            gBattleAnimArgs[0] = TYPE_NEW_NATURE;
         else if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
-            gBattleAnimArgs[0] = TYPE_FAIRY;
+            gBattleAnimArgs[0] = TYPE_NEW_DIVINE;
         else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
-            gBattleAnimArgs[0] = TYPE_PSYCHIC;
+            gBattleAnimArgs[0] = TYPE_NEW_REASON;
         else if (gFieldStatuses & STATUS_FIELD_UBW)
-            gBattleAnimArgs[0] = TYPE_STEEL;
+            gBattleAnimArgs[0] = TYPE_NEW_METAL;
         else //failsafe
             gBattleAnimArgs[0] = 0;
     }

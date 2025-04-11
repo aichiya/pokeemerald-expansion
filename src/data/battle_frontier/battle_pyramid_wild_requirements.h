@@ -167,7 +167,7 @@ static const struct BattlePyramidRequirement sBattlePyramidRequirementsByRound[]
     },
     [6] = /* ice types */
     {
-        .type = TYPE_ICE,
+        .type = TYPE_NEW_ICE,
     },
 
     [7] = /* pokemon with explosion effects */
@@ -178,15 +178,15 @@ static const struct BattlePyramidRequirement sBattlePyramidRequirementsByRound[]
     },
     [8] = /* psychic types */
     {
-        .type = TYPE_PSYCHIC,
+        .type = TYPE_NEW_REASON,
     },
     [9] = /* rock types */
     {
-        .type = TYPE_ROCK,
+        .type = TYPE_NEW_EARTH,
     },
     [10] = /* fighting types */
     {
-        .type = TYPE_FIGHTING,
+        .type = TYPE_NEW_DREAM,
     },
     [11] = /* pokemon with weather-altering effects */
     {
@@ -198,27 +198,27 @@ static const struct BattlePyramidRequirement sBattlePyramidRequirementsByRound[]
     },
     [12] = /* bug types */
     {
-        .type = TYPE_BUG,
+        .type = TYPE_NEW_BEAST,
     },
     [13] = /* dark types */
     {
-        .type = TYPE_DARK,
+        .type = TYPE_NEW_DARK,
     },
     [14] = /* water types */
     {
-        .type = TYPE_WATER,
+        .type = TYPE_NEW_WATER,
     },
     [15] = /* ghost types */
     {
-        .type = TYPE_GHOST,
+        .type = TYPE_NEW_NETHER,
     },
     [16] = /* steel types */
     {
-        .type = TYPE_STEEL,
+        .type = TYPE_NEW_METAL,
     },
     [17] = /* flying/dragon types */
     {
-        .type = TYPE_DRAGON,
+        .type = TYPE_NEW_DIVINE,
     },
     [18] = /* evolve via water/thunder/fire stone */
     {
@@ -228,7 +228,7 @@ static const struct BattlePyramidRequirement sBattlePyramidRequirementsByRound[]
     },
     [19] = /* normal with powerful moves */
     {
-        .type = TYPE_NORMAL,
+        .type = TYPE_NEW_ILLUSION,
         .moves = sPowerfulNormalMoves,
         .nMoves = NELEMS(sPowerfulNormalMoves),
     },

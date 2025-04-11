@@ -1096,7 +1096,7 @@ static const u8 sTerrainToType[BATTLE_TERRAIN_COUNT] =
     [BATTLE_TERRAIN_WATER]            = TYPE_NEW_WATER,
     [BATTLE_TERRAIN_POND]             = TYPE_NEW_WATER,
     [BATTLE_TERRAIN_CAVE]             = TYPE_NEW_EARTH,
-    [BATTLE_TERRAIN_BUILDING]         = TYPE_NEW_STEEL,
+    [BATTLE_TERRAIN_BUILDING]         = TYPE_NEW_METAL,
     [BATTLE_TERRAIN_BLANK_GBC]        = TYPE_NEW_DREAM,
     [BATTLE_TERRAIN_SOARING]          = TYPE_NEW_FLYING,
     [BATTLE_TERRAIN_SKY_PILLAR]       = TYPE_NEW_FLYING,
@@ -8259,7 +8259,7 @@ static bool32 DoSwitchInEffectsForBattler(u32 battler)
         {
             i = GetBattlerAbility(battler);
             if (!(gBattleMons[battler].status1 & STATUS1_ANY)
-                && !IS_BATTLER_OF_TYPE(battler, TYPE_NEW_STEEL)
+                && !IS_BATTLER_OF_TYPE(battler, TYPE_NEW_METAL)
                 && i != ABILITY_IMMUNITY
                 && i != ABILITY_PURIFYING_SALT
                 && !IsAbilityOnSide(battler, ABILITY_PASTEL_VEIL)
@@ -9603,7 +9603,7 @@ static bool32 HasAttackerFaintedTarget(void)
 bool32 CanPoisonType(u8 battlerAttacker, u8 battlerTarget)
 {
     return GetBattlerAbility(battlerAttacker) == ABILITY_CORROSION
-        || !IS_BATTLER_ANY_TYPE(battlerTarget, TYPE_NEW_MIASMA, TYPE_NEW_STEEL);
+        || !IS_BATTLER_ANY_TYPE(battlerTarget, TYPE_NEW_MIASMA, TYPE_NEW_METAL);
 }
 
 bool32 CanParalyzeType(u8 battlerAttacker, u8 battlerTarget)
@@ -13615,7 +13615,7 @@ static void Cmd_transformdataexecutiondecade(void)
             //            gBattleMons[gBattlerAttacker].statStages[6] = gBattleMons[gBattlerAttacker].statStages[7];
             //            gBattleMons[gBattlerAttacker].statStages[7] = gBattleMons[gBattlerAttacker].statStages[8];
                     gBattleMons[gBattlerAttacker].ability = ABILITY_SOUL_HEART;
-                    gBattleMons[gBattlerAttacker].types[0] = TYPE_NEW_STEEL;
+                    gBattleMons[gBattlerAttacker].types[0] = TYPE_NEW_METAL;
                     gBattleMons[gBattlerAttacker].types[1] = TYPE_NEW_HEART;
                     gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
                     
@@ -16135,7 +16135,7 @@ static void Cmd_settypetoterrain(void)
         terrainType = TYPE_NEW_REASON;
         break;
     case STATUS_FIELD_UBW:
-        terrainType = TYPE_NEW_STEEL;
+        terrainType = TYPE_NEW_METAL;
         break;
     default:
         terrainType = sTerrainToType[gBattleTerrain];

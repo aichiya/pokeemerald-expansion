@@ -11529,15 +11529,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Captivate,
     },
 
-    [MOVE_STEALTH_ROCK] =  // MOVE_NEW_STEALTH_SPIKES Edited
+    [MOVE_STEALTH_ROCK] =  // MOVE_NEW_STEALTH_TUSK Edited
     {
-        .name = COMPOUND_STRING("Stealth Metal"),
+        .name = COMPOUND_STRING("Stealth Tusks"),
         .description = COMPOUND_STRING(
-            "Sets floating stones that\n"
+            "Sets floating tusks that\n"
             "hurt a foe switching in."),
-        .effect = EFFECT_STEALTH_ROCK,  // To do steel effectiveness
+        .effect = EFFECT_STEALTH_ROCK,
         .power = 0,
-        .type = TYPE_NEW_STEEL,
+        .type = TYPE_NEW_BEAST,
         .accuracy = 0,
         .pp = 20,
         .target = MOVE_TARGET_OPPONENTS_FIELD,
@@ -19195,13 +19195,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_STONE_AXE] =  // MOVE_NEW_CHIPPER_AXE Edited 
     {
-        .name = COMPOUND_STRING("Chipper Axe"),
+        .name = COMPOUND_STRING("Beast-Fang Axe"),
         .description = COMPOUND_STRING(
             "High critical hit ratio. Sets\n"
             "Splinters that hurt the foe."),
         .effect = EFFECT_HIT,
         .power = 65,
-        .type = TYPE_NEW_STEEL,
+        .type = TYPE_NEW_BEAST,
         .accuracy = 90,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,

@@ -765,12 +765,20 @@ BattleScript_EffectCourtChange::
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
 	ppreduce
+	jumpifabilitypresent ABILITY_WORLD_END_GARDEN, BattleScript_CourtChangePrevented
 	swapsidestatuses
 	attackanimation
 	waitanimation
 	printstring STRINGID_COURTCHANGE
+BattleScript_CourtChangeEffect_WaitString:
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
+
+BattleScript_CourtChangePrevented:
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_WORLDENDGARDENPREVENTSCOURTCHANGE
+	goto BattleScript_CourtChangeEffect_WaitString
 
 BattleScript_BeakBlastSetUp::
 	setbeakblast
@@ -861,6 +869,8 @@ BattleScript_EffectFling::
 	waitmessage B_WAIT_TIME_MED
 	jumpiflastuseditemberry BattleScript_EffectFlingConsumeBerry
 	jumpifability BS_TARGET, ABILITY_SHIELD_DUST, BattleScript_FlingBlockedByShieldDust
+	jumpifability BS_TARGET, ABILITY_ADVENT, BattleScript_FlingBlockedByShieldDust
+	jumpifability BS_TARGET, ABILITY_PRISMA_ZWEI, BattleScript_FlingBlockedByShieldDust
 	jumpiflastuseditemholdeffect BS_ATTACKER, HOLD_EFFECT_FLAME_ORB, BattleScript_FlingFlameOrb
 	jumpiflastuseditemholdeffect BS_ATTACKER, HOLD_EFFECT_FLINCH, BattleScript_FlingFlinch
 	jumpiflastuseditemholdeffect BS_ATTACKER, HOLD_EFFECT_LIGHT_BALL, BattleScript_FlingLightBall
@@ -10379,6 +10389,16 @@ BattleScript_DimensionWallInitiate::
 	call BattleScript_AbilityPopUpTarget
 	printstring STRINGID_SETUPDIMENSIONWALL
 	setlightscreen
+	setreflect
+	setsafeguard
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_HakureiBarrierInitiate::
+	call BattleScript_AbilityPopUpTarget
+	printstring STRINGID_SETUPHAKUREIBARRIER
+	setlightscreen
+	setreflect
 	setsafeguard
 	waitmessage B_WAIT_TIME_LONG
 	end3
@@ -10392,3 +10412,136 @@ BattleScript_GreatBloomingActivates::
 	waitmessage B_WAIT_TIME_MED
 	goto BattleScript_MoveEnd
 
+BattleScript_PosterGirlActivates::
+	copybyte sSAVED_BATTLER, gBattlerTarget
+.if B_ABILITY_POP_UP == TRUE
+	showabilitypopup BS_ATTACKER
+	pause B_WAIT_TIME_LONG
+	destroyabilitypopup
+.endif
+	setbyte gBattlerTarget, 0
+BattleScript_PosterGirlLoop:
+	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_PosterGirlIncrement
+	jumpiftargetally BattleScript_PosterGirlIncrement
+	jumpifabsent BS_TARGET, BattleScript_PosterGirlIncrement
+	jumpifstatus2 BS_TARGET, STATUS2_INFATUATION, BattleScript_PosterGirlIncrement
+BattleScript_PosterGirlAttractEffect:
+	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_PosterGirlIncrement
+	tryinfatuating BattleScript_PosterGirlLoop
+@	attackanimation
+@	waitanimation
+	printstring STRINGID_PKMNFELLINLOVE
+	waitmessage B_WAIT_TIME_LONG
+	call BattleScript_TryDestinyKnotAttacker
+BattleScript_PosterGirlIncrement:
+	addbyte gBattlerTarget, 1
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_PosterGirlLoop
+BattleScript_PosterGirlEnd:
+	copybyte sBATTLER, gBattlerAttacker
+	destroyabilitypopup
+	copybyte gBattlerTarget, sSAVED_BATTLER
+	pause B_WAIT_TIME_MED
+	end3
+
+BattleScript_WorldEndGardenActivates::
+	copybyte sSAVED_BATTLER, gBattlerTarget
+.if B_ABILITY_POP_UP == TRUE
+	showabilitypopup BS_ATTACKER
+	pause B_WAIT_TIME_LONG
+	destroyabilitypopup
+.endif
+	printstring STRINGID_CAUSESCHAOSONTHEOPPOSINGSIDE
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_MirrorWallActivates::
+	call BattleScript_AbilityPopUp
+	call BattleScript_HurtAttacker
+	return
+
+BattleScript_MisfortuneAuraActivates::
+	savetarget
+.if B_ABILITY_POP_UP == TRUE
+	showabilitypopup BS_ATTACKER
+	pause B_WAIT_TIME_LONG
+	destroyabilitypopup
+.endif
+	setbyte gBattlerTarget, 0
+BattleScript_MisfortuneAuraLoop:
+	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_MisfortuneAuraLoopIncrement
+	jumpiftargetally BattleScript_MisfortuneAuraLoopIncrement
+	jumpifabsent BS_TARGET, BattleScript_MisfortuneAuraLoopIncrement
+	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_MisfortuneAuraLoopIncrement
+.if B_UPDATED_INTIMIDATE >= GEN_8 @These abilties specifically prevent just intimidate, without blocking stat decreases
+@	jumpifability BS_TARGET, ABILITY_INNER_FOCUS, BattleScript_MisfortuneAuraPrevented
+@	jumpifability BS_TARGET, ABILITY_SCRAPPY, BattleScript_MisfortuneAuraPrevented
+@	jumpifability BS_TARGET, ABILITY_OWN_TEMPO, BattleScript_MisfortuneAuraPrevented
+@	jumpifability BS_TARGET, ABILITY_OBLIVIOUS, BattleScript_MisfortuneAuraPrevented
+.endif
+@	jumpifability BS_TARGET, ABILITY_GUARD_DOG, BattleScript_MisfortuneAuraInReverse
+BattleScript_MisfortuneAuraEffect:
+	copybyte sBATTLER, gBattlerAttacker
+	setstatchanger STAT_ACC, 2, TRUE
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_MisfortuneAuraLoopIncrement
+	setgraphicalstatchangevalues
+	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_MisfortuneAuraContrary
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_MisfortuneAuraWontDecrease
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_PKMNCUTSACCWITH
+BattleScript_MisfortuneAuraEffect_WaitString:
+	waitmessage B_WAIT_TIME_LONG
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_TryMisfortuneAuraHoldEffects
+BattleScript_MisfortuneAuraLoopIncrement:
+	addbyte gBattlerTarget, 1
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_MisfortuneAuraLoop
+	copybyte sBATTLER, gBattlerAttacker
+	destroyabilitypopup
+	restoretarget
+	pause B_WAIT_TIME_MED
+	end3
+
+BattleScript_MisfortuneAuraPrevented:
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_PKMNPREVENTSSTATLOSSWITH
+	goto BattleScript_MisfortuneAuraEffect_WaitString
+
+BattleScript_MisfortuneAuraWontDecrease:
+	printstring STRINGID_STATSWONTDECREASE
+	goto BattleScript_MisfortuneAuraEffect_WaitString
+
+BattleScript_MisfortuneAuraContrary:
+	call BattleScript_AbilityPopUpTarget
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_MisfortuneAuraContrary_WontIncrease
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatUpStringIds
+	goto BattleScript_MisfortuneAuraEffect_WaitString
+BattleScript_MisfortuneAuraContrary_WontIncrease:
+	printstring STRINGID_TARGETSTATWONTGOHIGHER
+	goto BattleScript_MisfortuneAuraEffect_WaitString
+
+BattleScript_MisfortuneAuraInReverse:
+	copybyte sBATTLER, gBattlerTarget
+	call BattleScript_AbilityPopUpTarget
+	pause B_WAIT_TIME_SHORT
+	modifybattlerstatstage BS_TARGET, STAT_ACC, INCREASE, 2, BattleScript_MisfortuneAuraLoopIncrement, ANIM_ON
+	call BattleScript_TryMisfortuneAuraHoldEffects
+	goto BattleScript_MisfortuneAuraLoopIncrement
+
+BattleScript_TryMisfortuneAuraHoldEffects:
+	itemstatchangeeffects BS_TARGET
+	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryMisfortuneAuraHoldEffectsRet
+	jumpifstat BS_TARGET, CMP_EQUAL, STAT_ACC, 12, BattleScript_TryMisfortuneAuraHoldEffectsRet
+	setstatchanger STAT_ACC, 2, FALSE
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryMisfortuneAuraHoldEffectsRet
+	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	copybyte sBATTLER, gBattlerTarget
+	setlastuseditem BS_TARGET
+	printstring STRINGID_USINGITEMSTATOFPKMNROSE
+	waitmessage B_WAIT_TIME_LONG
+	removeitem BS_TARGET
+BattleScript_TryMisfortuneAuraHoldEffectsRet:
+	return

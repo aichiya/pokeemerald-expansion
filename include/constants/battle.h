@@ -256,8 +256,8 @@
 // Used for damaging entry hazards based on type
 enum TypeSideHazard
 {
-    TYPE_SIDE_HAZARD_POINTED_STONES = TYPE_ROCK,
-    TYPE_SIDE_HAZARD_SHARP_STEEL    = TYPE_STEEL,
+    TYPE_SIDE_HAZARD_POINTED_STONES = TYPE_NEW_BEAST,
+    TYPE_SIDE_HAZARD_SHARP_STEEL    = TYPE_NEW_STEEL,
 };
 
 // Field affecting statuses.

@@ -465,6 +465,9 @@ void ChooseDamageNonTypesString(u8 type)
         case TYPE_NEW_EARTH:
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SURROUNDED_BY_ROCKS;
             break;
+        case TYPE_NEW_ILLUSION:
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRAPPED_IN_THE_WORLD_END_GARDEN;
+            break;
     }
 }
 

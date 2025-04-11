@@ -4925,6 +4925,8 @@ u32 GetBattlerTotalSpeedStatArgs(u32 battler, u32 ability, u32 holdEffect)
             speed *= 2;
         else if (ability == ABILITY_SLUSH_RUSH  && (gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW)))
             speed *= 2;
+        else if (ability == ABILITY_SABOTEN_CORE)
+            speed = (speed * 130) / 100;
     }
 
     // other abilities
@@ -6130,85 +6132,52 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
         }
         break;
     case EFFECT_HIDDEN_POWER:
+        u32 hiddenPowerType;
+        if (monInBattle)
         {
-            /*
-            u32 typeBits = 0;
-            if (monInBattle)
-            {
-                typeBits = ((gBattleMons[battler].hpIV & 1) << 0)
-                        | ((gBattleMons[battler].attackIV & 1) << 1)
-                        | ((gBattleMons[battler].defenseIV & 1) << 2)
-                        | ((gBattleMons[battler].speedIV & 1) << 3)
-                        | ((gBattleMons[battler].spAttackIV & 1) << 4)
-                        | ((gBattleMons[battler].spDefenseIV & 1) << 5);
-            }
-            else
-            {
-                typeBits = ((GetMonData(mon, MON_DATA_HP_IV) & 1) << 0)
-                        | ((GetMonData(mon, MON_DATA_ATK_IV) & 1) << 1)
-                        | ((GetMonData(mon, MON_DATA_DEF_IV) & 1) << 2)
-                        | ((GetMonData(mon, MON_DATA_SPEED_IV) & 1) << 3)
-                        | ((GetMonData(mon, MON_DATA_SPATK_IV) & 1) << 4)
-                        | ((GetMonData(mon, MON_DATA_SPDEF_IV) & 1) << 5);
-            }
-
-            u32 hpTypes[NUMBER_OF_MON_TYPES] = {0};
-            u32 i, hpTypeCount = 0;
-            for (i = 0; i < NUMBER_OF_MON_TYPES; i++)
-            {
-                if (gTypesInfo[i].isHiddenPowerType)
-                    hpTypes[hpTypeCount++] = i;
-            }
-            moveType = ((hpTypeCount - 1) * typeBits) / 63;
-            return ((hpTypes[moveType] | F_DYNAMIC_TYPE_IGNORE_PHYSICALITY) & 0x3F);
-            */
-            u32 hiddenPowerType;
-            if (gMain.inBattle)
-            {
-                hiddenPowerType = gBattleMons[battler].personality % 18;
-            }
-            else
-            {
-                hiddenPowerType = GetMonData(mon, MON_DATA_PERSONALITY) % 18;
-            }
-            
-            if (hiddenPowerType == 0)
-                return TYPE_NEW_ILLUSION;
-            else if (hiddenPowerType == 1)
-                return TYPE_NEW_DREAM;
-            else if (hiddenPowerType == 2)
-                return TYPE_NEW_FLYING;
-            else if (hiddenPowerType == 3)
-                return TYPE_NEW_MIASMA;
-            else if (hiddenPowerType == 4)
-                return TYPE_NEW_EARTH;
-            else if (hiddenPowerType == 5)
-                return TYPE_NEW_BEAST;
-            else if (hiddenPowerType == 6)
-                return TYPE_NEW_HEART;
-            else if (hiddenPowerType == 7)
-                return TYPE_NEW_NETHER;
-            else if (hiddenPowerType == 8)
-                return TYPE_NEW_STEEL;
-            else if (hiddenPowerType == 9)
-                return TYPE_NEW_FIRE;
-            else if (hiddenPowerType == 10)
-                return TYPE_NEW_WATER;
-            else if (hiddenPowerType == 11)
-                return TYPE_NEW_NATURE;
-            else if (hiddenPowerType == 12)
-                return TYPE_NEW_WIND;
-            else if (hiddenPowerType == 13)
-                return TYPE_NEW_REASON;
-            else if (hiddenPowerType == 14)
-                return TYPE_NEW_ICE;
-            else if (hiddenPowerType == 15)
-                return TYPE_NEW_DIVINE;
-            else if (hiddenPowerType == 16)
-                return TYPE_NEW_DARK;
-            else
-                return TYPE_NEW_ELECTRIC;
+            hiddenPowerType = gBattleMons[battler].personality % 18;
         }
+        else
+        {
+            hiddenPowerType = GetMonData(mon, MON_DATA_PERSONALITY) % 18;
+        }
+        
+        if (hiddenPowerType == 0)
+            return TYPE_NEW_ILLUSION;
+        else if (hiddenPowerType == 1)
+            return TYPE_NEW_DREAM;
+        else if (hiddenPowerType == 2)
+            return TYPE_NEW_FLYING;
+        else if (hiddenPowerType == 3)
+            return TYPE_NEW_MIASMA;
+        else if (hiddenPowerType == 4)
+            return TYPE_NEW_EARTH;
+        else if (hiddenPowerType == 5)
+            return TYPE_NEW_BEAST;
+        else if (hiddenPowerType == 6)
+            return TYPE_NEW_HEART;
+        else if (hiddenPowerType == 7)
+            return TYPE_NEW_NETHER;
+        else if (hiddenPowerType == 8)
+            return TYPE_NEW_STEEL;
+        else if (hiddenPowerType == 9)
+            return TYPE_NEW_FIRE;
+        else if (hiddenPowerType == 10)
+            return TYPE_NEW_WATER;
+        else if (hiddenPowerType == 11)
+            return TYPE_NEW_NATURE;
+        else if (hiddenPowerType == 12)
+            return TYPE_NEW_WIND;
+        else if (hiddenPowerType == 13)
+            return TYPE_NEW_REASON;
+        else if (hiddenPowerType == 14)
+            return TYPE_NEW_ICE;
+        else if (hiddenPowerType == 15)
+            return TYPE_NEW_DIVINE;
+        else if (hiddenPowerType == 16)
+            return TYPE_NEW_DARK;
+        else
+            return TYPE_NEW_ELECTRIC;
         break;
     case EFFECT_CHANGE_TYPE_ON_ITEM:
         if (holdEffect == GetMoveEffectArg_HoldEffect(move))

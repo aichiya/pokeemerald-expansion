@@ -528,6 +528,11 @@ extern const u8 BattleScript_DimensionWallInitiate[];
 extern const u8 BattleScript_UBWActivates[];
 extern const u8 BattleScript_EffectUBWField[];
 extern const u8 BattleScript_GreatBloomingActivates[];
+extern const u8 BattleScript_HakureiBarrierInitiate[];
+extern const u8 BattleScript_PosterGirlActivates[];
+extern const u8 BattleScript_WorldEndGardenActivates[];
+extern const u8 BattleScript_MirrorWallActivates[];
+extern const u8 BattleScript_MisfortuneAuraActivates[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

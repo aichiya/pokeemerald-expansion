@@ -570,7 +570,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNSURROUNDEDWITHVEILOFWATER]        = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} surrounded itself with a veil of water!"),
     [STRINGID_PKMNLEVITATEDONELECTROMAGNETISM]      = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} levitated with electromagnetism!"),
     [STRINGID_PKMNTWISTEDDIMENSIONS]                = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} twisted the dimensions!"),
-    [STRINGID_POINTEDSTONESFLOAT]                   = COMPOUND_STRING("Pointed stones float in the air around {B_DEF_TEAM2} team!"),
+    [STRINGID_POINTEDSTONESFLOAT]                   = COMPOUND_STRING("Sharp tusks float in the air around {B_DEF_TEAM2} team!"),
     [STRINGID_CLOAKEDINMYSTICALMOONLIGHT]           = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} became cloaked in mystical moonlight!"),
     [STRINGID_TRAPPEDBYSWIRLINGMAGMA]               = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} became trapped by swirling magma!"),
     [STRINGID_VANISHEDINSTANTLY]                    = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} vanished instantly!"),
@@ -635,7 +635,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_MAGICBOUNCEACTIVATES]                 = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} bounced the {B_ATK_NAME_WITH_PREFIX2} back!"),
     [STRINGID_PROTEANTYPECHANGE]                    = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}'s {B_ATK_ABILITY} transformed it into the {B_BUFF1} type!"),
     [STRINGID_SYMBIOSISITEMPASS]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} passed its {B_LAST_ITEM} to {B_EFF_NAME_WITH_PREFIX2} through {B_LAST_ABILITY}!"),
-    [STRINGID_STEALTHROCKDMG]                       = COMPOUND_STRING("Pointed stones dug into {B_SCR_NAME_WITH_PREFIX2}!"),
+    [STRINGID_STEALTHROCKDMG]                       = COMPOUND_STRING("Pointed tusks jabbed into {B_SCR_NAME_WITH_PREFIX2}!"),
     [STRINGID_TOXICSPIKESABSORBED]                  = COMPOUND_STRING("The poison spikes disappeared from the ground around {B_SCR_TEAM2} team!"),
     [STRINGID_TOXICSPIKESPOISONED]                  = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} was poisoned!"),
     [STRINGID_STICKYWEBSWITCHIN]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} was caught in a sticky web!"),
@@ -905,6 +905,12 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_SETUPDIMENSIONWALL]                   = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} set up Aurora Curtain!"),
     [STRINGID_UNLIMITEDKRISWORKS]                   = COMPOUND_STRING("Reality marble is deployed on the field!"),
     [STRINGID_UBWFADED]                             = COMPOUND_STRING("Reality marble is faded!"),
+    [STRINGID_SETUPHAKUREIBARRIER]                  = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} set up protections!"),
+    [STRINGID_CAUSESCHAOSONTHEOPPOSINGSIDE]         = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} causes chaos on {B_DEF_TEAM1} side!"),
+    [STRINGID_TEAMTRAPPEDINTHEWORLDENDGARDEN]       = COMPOUND_STRING("{B_DEF_TEAM1} Pokémon became trapped in the World End Garden!"),
+    [STRINGID_PKMNHURTBYWORLDENDGARDEN]             = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is suffering from the World End Garden!"),
+    [STRINGID_WORLDENDGARDENPREVENTSCOURTCHANGE]    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} prevents Court Change!"),
+    [STRINGID_PKMNCUTSACCWITH]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nlowers {B_DEF_NAME_WITH_PREFIX}'s Accuracy!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1412,6 +1418,7 @@ const u16 gDamageNonTypesStartStringIds[] =
     [B_MSG_CAUGHT_IN_VORTEX]    = STRINGID_TEAMCAUGHTINVORTEX,
     [B_MSG_SURROUNDED_BY_FIRE]  = STRINGID_TEAMSURROUNDEDBYFIRE,
     [B_MSG_SURROUNDED_BY_ROCKS] = STRINGID_TEAMSURROUNDEDBYROCKS,
+    [B_MSG_TRAPPED_IN_THE_WORLD_END_GARDEN] = STRINGID_TEAMTRAPPEDINTHEWORLDENDGARDEN,
 };
 
 const u16 gDamageNonTypesDmgStringIds[] =
@@ -1420,6 +1427,7 @@ const u16 gDamageNonTypesDmgStringIds[] =
     [B_MSG_HURT_BY_VORTEX]       = STRINGID_PKMNHURTBYVORTEX,
     [B_MSG_BURNING_UP]           = STRINGID_PKMNBURNINGUP,
     [B_MSG_HURT_BY_ROCKS_THROWN] = STRINGID_PKMNHURTBYROCKSTHROWN,
+    [B_MSG_HURT_BY_WORLD_END_GARDEN] = STRINGID_PKMNHURTBYWORLDENDGARDEN,
 };
 
 const u16 gFlufficationUsedStringIds[] =

@@ -193,7 +193,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_WONDER_GUARD] =
     {
-        .name = _("Wonder Guard"),
+        .name = _("Ghost Trick"),
         .description = COMPOUND_STRING("“Supereffective” hits."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
@@ -515,7 +515,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SWARM] =
     {
-        .name = _("Horde"),
+        .name = _("Natural Instinct"),
         .description = COMPOUND_STRING("Ups Beast moves in a pinch."),
         .aiRating = 5,
     },
@@ -2191,7 +2191,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_SWORD_OF_RUIN] =
     {
-        .name = _("Ibaraki-douji"),
+        .name = _("Hoshiguma-douji"),
         .description = COMPOUND_STRING("Lowers foes' Defense."),
         .aiRating = 5,
         .breakable = TRUE,
@@ -2207,7 +2207,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_BEADS_OF_RUIN] =
     {
-        .name = _("Beads of Ruin"),
+        .name = _("Ibaraki-douji"),
         .description = COMPOUND_STRING("Lowers foes' Sp. Defense."),
         .aiRating = 5,
         .breakable = TRUE,
@@ -2279,7 +2279,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_EARTH_EATER] =
     {
-        .name = _("Sculptor God"),
+        .name = _("Earth Eater"),
         .description = COMPOUND_STRING("Earth moves heal HP."),
         .aiRating = 7,
         .breakable = TRUE,
@@ -2589,8 +2589,8 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_KRIS_WORKS] =
     {
-        .name = _("Kris Works"),
-        .description = COMPOUND_STRING("Deploys world of kris."),
+        .name = _("Blade Works"),
+        .description = COMPOUND_STRING("Deploys world of blades."),
         .aiRating = 8,
     },
 
@@ -2601,4 +2601,137 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
+    [ABILITY_ADVENT] =
+    {
+        .name = _("Advent"),
+        .description = COMPOUND_STRING("Prevents added effects."),
+        .aiRating = 5,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_SECOND_ADVENT] =
+    {
+        .name = _("Second Advent"),
+        .description = COMPOUND_STRING("Avoids status problems."),
+        .aiRating = 8,
+        .breakable = TRUE,
+    },
+    
+    [ABILITY_HAKUREI_BARRIER] =
+    {
+        .name = _("Hakurei Barrier"),
+        .description = COMPOUND_STRING("Walls & safeguard on switch."),
+        .aiRating = 10,
+    },
+    
+    [ABILITY_HAKUREI_MIKO] =
+    {
+        .name = _("Hakurei Miko"),
+        .description = COMPOUND_STRING("Prevents stat reductions."),
+        .aiRating = 4,
+        .breakable = TRUE,
+    },
+    
+    [ABILITY_SABOTEN_CORE] =
+    {
+        .name = _("Saboten Core"),
+        .description = COMPOUND_STRING("Increase all stats."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
+    },
+    
+    [ABILITY_PRISMA_ZWEI] =
+    {
+        .name = _("Prisma Zwei"),
+        .description = COMPOUND_STRING("Prevents & avoids status."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
+    },
+
+    [ABILITY_KALEID_RUBY] =
+    {
+        .name = _("Kaleid Ruby"),
+        .description = COMPOUND_STRING("Ups Sp. Attack on entry."),
+        .aiRating = 3,
+    },
+
+    [ABILITY_KALEID_SAPPHIRE] =
+    {
+        .name = _("Kaleid Sapphire"),
+        .description = COMPOUND_STRING("Ups Speed on entry."),
+        .aiRating = 3,
+    },
+
+    [ABILITY_ULTRA_MEDICINE] =
+    {
+        .name = _("Ultra Medicine"),
+        .description = COMPOUND_STRING("Ups Evasion on entry."),
+        .aiRating = 3,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
+    },
+
+    [ABILITY_SCULPTOR_GOD] =
+    {
+        .name = _("Sculptor God"),
+        .description = COMPOUND_STRING("Earth moves heal HP."),
+        .aiRating = 7,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_POSTER_GIRL] =
+    {
+        .name = _("Poster Girl"),
+        .description = COMPOUND_STRING("Influates on entry."),
+        .aiRating = 3,
+        .breakable = TRUE,
+    },
+
+    [ABILITY_WORLD_END_GARDEN] =
+    {
+        .name = _("World End Garden"),
+        .description = COMPOUND_STRING("Tortures foes on entry."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
+    },
+
+    [ABILITY_FOCUS] =
+    {
+        .name = _("Focus"),
+        .description = COMPOUND_STRING("Raises accuracy."),
+        .aiRating = 7,
+    },
+
+    [ABILITY_MIRROR_WALL] =
+    {
+        .name = _("Mirror Wall"),
+        .description = COMPOUND_STRING("Bounces some special damages."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_MISFORTUNE_AURA] =
+    {
+        .name = _("Misfortune Aura"),
+        .description = COMPOUND_STRING("Reduces foes accuracy."),
+        .aiRating = 6,
+    },
 };

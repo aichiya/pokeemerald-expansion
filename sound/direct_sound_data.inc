@@ -8829,12 +8829,9 @@ DirectSoundWave_SynthActualSample::  @ This wave sample must be right before syn
     .incbin "sound/direct_sound_samples/synth/direct_sound_synth_actual_sample.bin"
 
 DirectSoundSynth_Type_00_Param_0040A080:: @ gunshot like
-    .4byte 0x40000000  @ Recognized as a Direct Sound wave sample in a voicegroup
-    .byte  0x20        @ Unknown
-    .byte  0x89        @ Unknown
-    .byte  0x05        @ Unknown, supposedly sample playback speed
-    .byte  0x01        @ Pitch control? 0x0 will be muted
-    .4byte 0x00000000  @ Unknown
+    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
+    .4byte 0x01058920  @ Frequency/Pitch control
+    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
     .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
     .byte  0x80        @ Unknown
     .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
@@ -8845,12 +8842,9 @@ DirectSoundSynth_Type_00_Param_0040A080:: @ gunshot like
     .2byte 0x0000      @ Padding
 
 DirectSoundSynth_Type_00_Param_E0F0A080::
-    .4byte 0x40000000  @ Recognized as a Direct Sound wave sample in a voicegroup
-    .byte  0x20        @ Unknown
-    .byte  0x89        @ Unknown
-    .byte  0x05        @ Unknown, supposedly sample playback speed
-    .byte  0x01        @ Pitch control? 0x0 will be muted
-    .4byte 0x00000000  @ Unknown
+    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
+    .4byte 0x01058920  @ Frequency/Pitch control
+    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
     .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
     .byte  0x80        @ Unknown
     .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
@@ -8861,36 +8855,27 @@ DirectSoundSynth_Type_00_Param_E0F0A080::
     .2byte 0x0000      @ Padding
 
 DirectSoundSynth_Type_01::
-    .4byte 0x40000000  @ Recognized as a Direct Sound wave sample in a voicegroup
-    .byte  0x20        @ Unknown
-    .byte  0x89        @ Unknown
-    .byte  0x05        @ Unknown, supposedly sample playback speed
-    .byte  0x01        @ Pitch control?
-    .4byte 0x00000000  @ Unknown
+    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
+    .4byte 0x01058920  @ Frequency/Pitch control
+    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
     .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
     .byte  0x80        @ Unknown
     .byte  0x01        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
     .2byte 0x0000      @ Padding
 
 DirectSoundSynth_Type_02::
-    .4byte 0x40000000  @ Recognized as a Direct Sound wave sample in a voicegroup
-	.byte  0x20        @ Unknown
-	.byte  0x89        @ Unknown
-	.byte  0x05        @ Unknown, supposedly sample playback speed
-	.byte  0x01        @ Pitch control?
-	.4byte 0x00000000  @ Unknown
-	.4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-	.byte  0x80        @ Unknown
-	.byte  0x02        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-	.2byte 0x0000      @ Padding
+    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
+    .4byte 0x01058920  @ Frequiency/Pitch control
+    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
+    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
+    .byte  0x80        @ Unknown
+    .byte  0x02        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
+    .2byte 0x0000      @ Padding
 
 DirectSoundSynth_Type_00_Param_0000C0A0::
-    .4byte 0x40000000  @ Recognized as a Direct Sound wave sample in a voicegroup
-    .byte  0x20        @ Unknown
-    .byte  0x89        @ Unknown
-    .byte  0x05        @ Unknown, supposedly sample playback speed
-    .byte  0x01        @ Pitch control? 0x0 will be muted
-    .4byte 0x00000000  @ Unknown
+    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
+    .4byte 0x01058920  @ Frequency/Pitch control
+    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
     .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
     .byte  0x80        @ Unknown
     .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding

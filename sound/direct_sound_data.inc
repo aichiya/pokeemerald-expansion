@@ -8825,9 +8825,7 @@ DirectSoundWaveData_GoldenSun2InstrumentSample054::
 
 @ End Golden Sun 2 Instruments
 
-DirectSoundWave_SynthActualSample::  @ This wave sample must be right before synth data (see DirectSoundSynth_XXXX). You can add many as many DirectSoundSynth_XXXX after this. The actual sample is not necessary to be in a voicegroup
-    .incbin "sound/direct_sound_samples/synth/direct_sound_synth_actual_sample.bin"
-
+    .align 2
 DirectSoundSynth_Type_00_Param_0040A080:: @ gunshot like
     .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
     .4byte 0x01058920  @ Frequency/Pitch control
@@ -8841,6 +8839,7 @@ DirectSoundSynth_Type_00_Param_0040A080:: @ gunshot like
     .byte  0x80        @ Parameter 4 
     .2byte 0x0000      @ Padding
 
+    .align 2
 DirectSoundSynth_Type_00_Param_E0F0A080::
     .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
     .4byte 0x01058920  @ Frequency/Pitch control
@@ -8854,6 +8853,7 @@ DirectSoundSynth_Type_00_Param_E0F0A080::
     .byte  0x80        @ Parameter 4 
     .2byte 0x0000      @ Padding
 
+    .align 2
 DirectSoundSynth_Type_01::
     .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
     .4byte 0x01058920  @ Frequency/Pitch control
@@ -8863,6 +8863,7 @@ DirectSoundSynth_Type_01::
     .byte  0x01        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
     .2byte 0x0000      @ Padding
 
+    .align 2
 DirectSoundSynth_Type_02::
     .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
     .4byte 0x01058920  @ Frequiency/Pitch control
@@ -8872,6 +8873,7 @@ DirectSoundSynth_Type_02::
     .byte  0x02        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
     .2byte 0x0000      @ Padding
 
+    .align 2
 DirectSoundSynth_Type_00_Param_0000C0A0::
     .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
     .4byte 0x01058920  @ Frequency/Pitch control

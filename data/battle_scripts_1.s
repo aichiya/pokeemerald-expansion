@@ -10147,9 +10147,12 @@ BattleScript_DynamaxEnds::
 
 BattleScript_DynamaxEnds_Ret::
 	flushtextbox
+	spriteignore0hp TRUE
 	updatedynamax
 	playanimation BS_SCRIPTING, B_ANIM_FORM_CHANGE
 	waitanimation
+	spriteignore0hp FALSE
+	pause B_WAIT_TIME_SHORT
 	return
 
 BattleScript_MoveBlockedByDynamax::

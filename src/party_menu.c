@@ -6444,6 +6444,7 @@ static void SpriteCB_FormChangeIconMosaic(struct Sprite *sprite)
 static void Task_TryItemUseFormChange(u8 taskId)
 {
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    struct BoxPokemon *boxMon = &mon->box;
     u16 targetSpecies;
     struct Sprite *icon = &gSprites[sPartyMenuBoxes[gPartyMenu.slotId].monSpriteId];
 
@@ -6485,6 +6486,7 @@ static void Task_TryItemUseFormChange(u8 taskId)
     case 4:
         targetSpecies = gTasks[taskId].tTargetSpecies;
         PlayCry_Normal(targetSpecies, 0);
+        GiveBoxMonInitialMoveset(boxMon);
         gTasks[taskId].tState++;
         break;
     case 5:

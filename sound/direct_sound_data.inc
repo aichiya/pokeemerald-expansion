@@ -8886,3 +8886,31 @@ DirectSoundSynth_Type_00_Param_0000C0A0::
     .byte  0xC0        @ Parameter 3
     .byte  0xA0        @ Parameter 4 
     .2byte 0x0000      @ Padding
+
+    .align 2
+DirectSoundSynth_Type_00_Custom4::
+    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
+    .4byte 0x01058920  @ Frequency/Pitch control
+    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
+    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
+    .byte  0x80        @ Unknown
+    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
+    .byte  0x40        @ Parameter 1
+    .byte  0x00        @ Parameter 2
+    .byte  0xA0        @ Parameter 3
+    .byte  0xA0        @ Parameter 4 
+    .2byte 0x0000      @ Padding
+
+    .align 2
+DirectSoundSynth_Type_00_Custom5::
+    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
+    .4byte 0x01058920  @ Frequency/Pitch control
+    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
+    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
+    .byte  0x80        @ Unknown
+    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
+    .byte  0x40        @ Parameter 1
+    .byte  0x00        @ Parameter 2
+    .byte  0xA0        @ Parameter 3
+    .byte  0x40        @ Parameter 4 
+    .2byte 0x0000      @ Padding

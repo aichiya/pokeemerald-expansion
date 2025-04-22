@@ -1629,8 +1629,10 @@
 #define MUS_GSC_PEWTER_TEST 1654
 #define MUS_YGOFM_FREE_DUEL 1655
 #define MUS_GSC_GYM_GSSYNTH_TEST 1656
+#define MUS_THPPORDX_FAITH_SYNTH 1657
+#define MUS_THPPRE_REINCARNATION_SYNTH 1658
 
-#define END_MUS 					MUS_GSC_GYM_GSSYNTH_TEST
+#define END_MUS 					MUS_THPPRE_REINCARNATION_SYNTH
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

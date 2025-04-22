@@ -1658,6 +1658,8 @@ gSongTable::
 	song mus_gsc_pewter_test, 0, 0
 	song mus_ygofm_free_duel, 0, 0
 	song mus_gsc_gym_gssynth_test, 0, 0
+	song mus_thppordx_faith_synth, 0, 0
+	song mus_thppre_reincarnation_synth, 0, 0
 
 	.align 2
 dummy_song_header:

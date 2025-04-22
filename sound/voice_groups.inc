@@ -213,7 +213,7 @@
 .include "sound/voicegroups/voicegroup206.inc" @ Simulated GB/GBC
 .include "sound/voicegroups/voicegroup207.inc" @ Experimental
 .include "sound/voicegroups/voicegroup208.inc" @ DirectSound Synth Test
-
+.include "sound/voicegroups/voicegroup209.inc" @ DirectSound Synth
 .include "sound/voicegroups/voicegroup210.inc" @ [Main] THPPRF custom
 .include "sound/voicegroups/voicegroup211.inc" @ [Main] THPPZGS custom
 

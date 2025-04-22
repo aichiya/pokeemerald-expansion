@@ -1335,7 +1335,7 @@
 	.byte \stat
 	.endm
 
-	.macro jumpifoppositegenders jumpInstr:req
+	.macro jumpifcaptivateaffected jumpInstr:req
 	.byte 0xfc
 	.4byte \jumpInstr
 	.endm
@@ -1376,6 +1376,10 @@
 	callnative BS_RestoreAttacker
 	.endm
 
+	.macro jumpifintimidateabilityprevented
+	callnative BS_JumpIfIntimidateAbilityPrevented
+	.endm
+
 	.macro metalburstdamagecalculator failInstr:req
 	callnative BS_CalcMetalBurstDmg
 	.4byte \failInstr
@@ -1390,6 +1394,10 @@
 	.macro itemstatchangeeffects battler:req
 	callnative BS_RunStatChangeItems
 	.byte \battler
+	.endm
+
+	.macro tryintimidatejectpack
+	callnative BS_TryIntimidatEjectpack
 	.endm
 
 	.macro allyswitchswapbattlers

@@ -599,8 +599,6 @@ static void Cmd_trainerslideout(void);
 static void Cmd_settelekinesis(void);
 static void Cmd_swapstatstages(void);
 static void Cmd_averagestats(void);
-static void Cmd_jumpifoppositegenders(void);
-static void Cmd_ishplessthanquarter(void); // Cmd_unused(void);
 static void Cmd_jumpifcaptivateaffected(void);
 static void Cmd_ishplessthanquarter(void); // Cmd_unused(void);
 static void Cmd_tryworryseed(void);

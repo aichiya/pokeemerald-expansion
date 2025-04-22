@@ -911,6 +911,9 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_PKMNHURTBYWORLDENDGARDEN]             = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is suffering from the World End Garden!"),
     [STRINGID_WORLDENDGARDENPREVENTSCOURTCHANGE]    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} prevents Court Change!"),
     [STRINGID_PKMNCUTSACCWITH]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nlowers {B_DEF_NAME_WITH_PREFIX}'s Accuracy!"),
+    [STRINGID_FLORAELVISSAFEGUARD]                  = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY} activates Safeguard!"),
+    [STRINGID_PKMNRAISEDATTACK]                     = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nraised its attack!"),
+    [STRINGID_DIVINETREEBLESSING]                   = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} received blessings from the Divine Tree!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

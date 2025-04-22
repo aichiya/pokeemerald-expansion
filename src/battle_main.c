@@ -6277,6 +6277,22 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     {
         return TYPE_NEW_WATER;
     }
+    else if (IsSoundMove(move) && ability == ABILITY_FORTESSIMO)
+    {
+        u32 teraType;
+        if (GetActiveGimmick(battler) == GIMMICK_TERA && ((teraType = GetMonData(mon, MON_DATA_TERA_TYPE)) != TYPE_STELLAR))
+            return teraType;
+        else if (type1 != TYPE_MYSTERY && !(gDisableStructs[battler].roostActive && type1 == TYPE_NEW_FLYING))
+            return type1;
+        else if (type2 != TYPE_MYSTERY && !(gDisableStructs[battler].roostActive && type2 == TYPE_NEW_FLYING))
+            return type2;
+        else if (gDisableStructs[battler].roostActive)
+            return (B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NEW_ILLUSION : TYPE_MYSTERY);
+        else if (type3 != TYPE_MYSTERY)
+            return type3;
+        else
+            return TYPE_MYSTERY;
+    }
     else if (moveEffect == EFFECT_AURA_WHEEL && species == SPECIES_MORPEKO_HANGRY)
     {
         return TYPE_NEW_DARK;

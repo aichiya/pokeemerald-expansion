@@ -533,6 +533,9 @@ extern const u8 BattleScript_PosterGirlActivates[];
 extern const u8 BattleScript_WorldEndGardenActivates[];
 extern const u8 BattleScript_MirrorWallActivates[];
 extern const u8 BattleScript_MisfortuneAuraActivates[];
+extern const u8 BattleScript_FloraElvisAtkBoostActivates[];
+extern const u8 BattleScript_FloraElvisSafeguardActivates[];
+extern const u8 BattleScript_LifeForceActivates[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

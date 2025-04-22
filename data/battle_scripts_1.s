@@ -10405,13 +10405,13 @@ BattleScript_HakureiBarrierInitiate::
 	end3
 
 BattleScript_GreatBloomingActivates::
-	attackstring
-	ppreduce
 	call BattleScript_AbilityPopUpTarget
-	pause B_WAIT_TIME_SHORT
-	printstring STRINGID_ITDOESNTAFFECT
-	waitmessage B_WAIT_TIME_MED
-	goto BattleScript_MoveEnd
+	printstring STRINGID_DIVINETREEBLESSING
+	setlightscreen
+	setreflect
+	setsafeguard
+	waitmessage B_WAIT_TIME_LONG
+	end3
 
 BattleScript_PosterGirlActivates::
 	copybyte sSAVED_BATTLER, gBattlerTarget
@@ -10453,6 +10453,22 @@ BattleScript_WorldEndGardenActivates::
 .endif
 	printstring STRINGID_CAUSESCHAOSONTHEOPPOSINGSIDE
 	waitmessage B_WAIT_TIME_LONG
+BattleScript_WorldEndGardenLoop:
+	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_WorldEndGardenLoopIncrement
+	jumpiftargetally BattleScript_WorldEndGardenLoopIncrement
+	jumpifabsent BS_TARGET, BattleScript_WorldEndGardenLoopIncrement
+BattleScript_WorldEndGardenEffect:
+	setseeded
+	printfromtable gLeechSeedStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_WorldEndGardenLoopIncrement:
+	addbyte gBattlerTarget, 1
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_WorldEndGardenLoop
+BattleScript_WorldEndGardenEnd:
+	copybyte sBATTLER, gBattlerAttacker
+	destroyabilitypopup
+	copybyte gBattlerTarget, sSAVED_BATTLER
+	pause B_WAIT_TIME_MED
 	end3
 
 BattleScript_MirrorWallActivates::
@@ -10546,3 +10562,24 @@ BattleScript_TryMisfortuneAuraHoldEffects:
 	removeitem BS_TARGET
 BattleScript_TryMisfortuneAuraHoldEffectsRet:
 	return
+
+BattleScript_FloraElvisAtkBoostActivates::
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_FloraElvisAtkBoostActivatesEnd
+	call BattleScript_AbilityPopUp
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_PKMNRAISEDATTACK
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_FloraElvisAtkBoostActivatesEnd:
+	end3
+
+BattleScript_FloraElvisSafeguardActivates::
+	call BattleScript_AbilityPopUpTarget
+	printstring STRINGID_FLORAELVISSAFEGUARD
+	setsafeguard
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_LifeForceActivates::
+	call BattleScript_AbilityHpHeal
+	end3

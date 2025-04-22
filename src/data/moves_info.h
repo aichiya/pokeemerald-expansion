@@ -21546,6 +21546,61 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_MindHack,
     },
 
+    [MOVE_ADVENT_LYCORIS] =  // Added
+    {
+        .name = COMPOUND_STRING("Advent Lycoris"),
+        .description = COMPOUND_STRING(
+            "Powerful claw that hurts\n"
+            "for "BINDING_TURNS" turns."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_NEW_DIVINE,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .criticalHitStage = 2,
+        .slicingMove = TRUE,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_WRAP,
+        }),
+        .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_NightSlash, // to do
+    },
+
+    [MOVE_ADVENT_GERBERA] =  // Added
+    {
+        .name = COMPOUND_STRING("Advent Gerbera"),
+        .description = COMPOUND_STRING(
+            "Powerful slash that may\n"
+            "burn the foe."),
+        .effect = EFFECT_HIT,
+        .power = 120,
+        .type = TYPE_NEW_DIVINE,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .criticalHitStage = 2,
+        .slicingMove = TRUE,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_NeptuneBreak, // to do
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =  // Edited
     {

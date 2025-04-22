@@ -12127,7 +12127,7 @@ static void Cmd_setseeded(void)
         gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LEECH_SEED_MISS;
     }
-    else if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_NEW_NATURE))
+    else if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_NEW_NATURE) && GetBattlerAbility(gBattlerAttacker) != ABILITY_WORLD_END_GARDEN)
     {
         gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LEECH_SEED_FAIL;

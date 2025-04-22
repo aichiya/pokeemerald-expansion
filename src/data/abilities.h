@@ -2724,7 +2724,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_MIRROR_WALL] =
     {
         .name = _("Mirror Wall"),
-        .description = COMPOUND_STRING("Bounces some special damages."),
+        .description = COMPOUND_STRING("Bounces some sp. damages."),
         .aiRating = 6,
     },
 
@@ -2733,5 +2733,32 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Misfortune Aura"),
         .description = COMPOUND_STRING("Reduces foes accuracy."),
         .aiRating = 6,
+    },
+
+    [ABILITY_FLORA_ELVIS] =
+    {
+        .name = _("Flora Elvis"),
+        .description = COMPOUND_STRING("Ups attack + protection."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
+    },
+
+    [ABILITY_FORTESSIMO] =
+    {
+        .name = _("Fortessimo"),
+        .description = COMPOUND_STRING("Powers up sound moves."),
+        .aiRating = 6,
+    },
+
+    [ABILITY_LIFE_FORCE] =
+    {
+        .name = _("Life Force"),
+        .description = COMPOUND_STRING("Small HP recovery each turn."),
+        .aiRating = 3,
     },
 };

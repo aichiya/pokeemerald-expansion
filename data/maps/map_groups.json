@@ -672,7 +672,8 @@
     "AnotherWorldTrappyPass",
     "AnotherWorldDeathForest",
     "AnotherWorldEcruteakCity",
-    "AnotherWorldUnderworldMushroomBiome"
+    "AnotherWorldUnderworldMushroomBiome",
+    "AnotherWorldViridianCity"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",

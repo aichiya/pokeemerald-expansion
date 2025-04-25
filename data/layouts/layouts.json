@@ -5300,6 +5300,16 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/AnotherWorldUnderworldMushroomBiome/border.bin",
       "blockdata_filepath": "data/layouts/AnotherWorldUnderworldMushroomBiome/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANOTHER_WORLD_VIRIDIAN_CITY",
+      "name": "AnotherWorldViridianCity_Layout",
+      "width": 40,
+      "height": 36,
+      "primary_tileset": "gTileset_GeneralGSC",
+      "secondary_tileset": "gTileset_RoofGSC",
+      "border_filepath": "data/layouts/AnotherWorldViridianCity/border.bin",
+      "blockdata_filepath": "data/layouts/AnotherWorldViridianCity/map.bin"
     }
   ]
 }

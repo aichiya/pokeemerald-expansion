@@ -1363,3 +1363,5 @@ EventScript_TrimmedGensokyoLandEncounter::
 
 	.include "data/maps/AnotherWorldUnderworldMushroomBiome/scripts.inc"
 
+
+	.include "data/maps/AnotherWorldViridianCity/scripts.inc"

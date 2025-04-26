@@ -574,3 +574,4 @@ gSpecials::
 	def_special GiveLeadMonAllRibbons
 	def_special SetLeadMonAllContestStats
 	def_special PartyMonBecomeEggRandom
+	def_special PrepareSecretBasePseudoTrainerBattleByVar

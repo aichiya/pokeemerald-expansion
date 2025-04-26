@@ -8774,10 +8774,38 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
     u32 lastMonLevel = 0;
     u32 moneyReward;
     u8 trainerMoney = 0;
+    u16 pseudoTrainerNum;
+    s32 highestEnemyPartyLevel = 0;
+    u8 secretBaseTrainerMoney = 5;
+    s32 i;
 
     if (trainerId == TRAINER_SECRET_BASE)
     {
-        moneyReward = 20 * gBattleResources->secretBase->party.levels[0] * gBattleStruct->moneyMultiplier;
+        pseudoTrainerNum = VarGet(VAR_SECRET_BASE_PSEUDO_TRAINER_NUM);
+        if (pseudoTrainerNum < 101 && pseudoTrainerNum != 0)
+            moneyReward = pseudoTrainerNum * 400 * gBattleStruct->moneyMultiplier;
+        else if (pseudoTrainerNum > 1000)
+            moneyReward = 40000 * gBattleStruct->moneyMultiplier;
+        else
+        {
+            for (i = 0; i < PARTY_SIZE; i++)
+            {
+                if (GetMonData(&gEnemyParty[i], MON_DATA_SPECIES, NULL)
+                    && GetMonData(&gEnemyParty[i], MON_DATA_SPECIES_OR_EGG, NULL) != SPECIES_EGG)
+                {
+                    s32 level = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL, NULL);
+                    if (level > highestEnemyPartyLevel)
+                        highestEnemyPartyLevel = level;
+                }
+            }
+    
+            if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
+                moneyReward = 4 * highestEnemyPartyLevel * gBattleStruct->moneyMultiplier * secretBaseTrainerMoney;
+            else if (IsDoubleBattle())
+                moneyReward = 4 * highestEnemyPartyLevel * gBattleStruct->moneyMultiplier * 2 * secretBaseTrainerMoney;
+            else
+                moneyReward = 4 * highestEnemyPartyLevel * gBattleStruct->moneyMultiplier * secretBaseTrainerMoney;
+        }
     }
     else
     {

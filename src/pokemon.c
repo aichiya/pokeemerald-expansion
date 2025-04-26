@@ -954,22 +954,62 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
     },
 };
 
-#define NUM_SECRET_BASE_CLASSES 5
+#define NUM_SECRET_BASE_CLASSES 25
 static const u8 sSecretBaseFacilityClasses[GENDER_COUNT][NUM_SECRET_BASE_CLASSES] =
 {
     [MALE] = {
-        FACILITY_CLASS_YOUNGSTER,
-        FACILITY_CLASS_BUG_CATCHER,
-        FACILITY_CLASS_RICH_BOY,
-        FACILITY_CLASS_CAMPER,
-        FACILITY_CLASS_COOLTRAINER_M
+        FACILITY_CLASS_YOUNGSTER, // 1
+        FACILITY_CLASS_SCHOOL_KID_M, // 2
+        FACILITY_CLASS_RICH_BOY, // 3
+        FACILITY_CLASS_CAMPER, // 4
+        FACILITY_CLASS_COOLTRAINER_M, // 5
+        FACILITY_CLASS_RED, // 6
+        FACILITY_CLASS_RS_BRENDAN, // 7
+        FACILITY_CLASS_BRENDAN, // 8
+        FACILITY_CLASS_POKEFAN_M, // 9
+        FACILITY_CLASS_DRAGON_TAMER, // 10
+        FACILITY_CLASS_AQUA_GRUNT_M, // 11
+        FACILITY_CLASS_MAGMA_GRUNT_M, // 12
+        FACILITY_CLASS_PSYCHIC_M, // 13
+        FACILITY_CLASS_EXPERT_M, // 14
+        FACILITY_CLASS_BLACK_BELT, // 15
+        FACILITY_CLASS_PKMN_RANGER_M, // 16
+        FACILITY_CLASS_GENTLEMAN, // 17
+        FACILITY_CLASS_COLLECTOR, // 18
+        FACILITY_CLASS_RUIN_MANIAC, // 19
+        FACILITY_CLASS_SWIMMER_M, // 20
+        FACILITY_CLASS_CYCLING_TRIATHLETE_M, // 21
+        FACILITY_CLASS_RUNNING_TRIATHLETE_M, // 22
+        FACILITY_CLASS_SWIMMING_TRIATHLETE_M, // 23
+        FACILITY_CLASS_PKMN_BREEDER_M, // 24
+        FACILITY_CLASS_TUBER_M // 25
     },
     [FEMALE] = {
-        FACILITY_CLASS_LASS,
-        FACILITY_CLASS_SCHOOL_KID_F,
-        FACILITY_CLASS_LADY,
-        FACILITY_CLASS_PICNICKER,
-        FACILITY_CLASS_COOLTRAINER_F
+        FACILITY_CLASS_LASS, // 1
+        FACILITY_CLASS_SCHOOL_KID_F, // 2
+        FACILITY_CLASS_LADY, // 3
+        FACILITY_CLASS_PICNICKER, // 4
+        FACILITY_CLASS_COOLTRAINER_F, // 5
+        FACILITY_CLASS_LEAF, // 6
+        FACILITY_CLASS_RS_MAY, // 7
+        FACILITY_CLASS_MAY, // 8
+        FACILITY_CLASS_POKEFAN_F, // 9
+        FACILITY_CLASS_PARASOL_LADY, // 10
+        FACILITY_CLASS_AQUA_GRUNT_F, // 11
+        FACILITY_CLASS_MAGMA_GRUNT_F, // 12
+        FACILITY_CLASS_PSYCHIC_F, // 13
+        FACILITY_CLASS_EXPERT_F, // 14
+        FACILITY_CLASS_BATTLE_GIRL, // 15
+        FACILITY_CLASS_PKMN_RANGER_F, // 16
+        FACILITY_CLASS_AROMA_LADY, // 17
+        FACILITY_CLASS_BEAUTY, // 18
+        FACILITY_CLASS_HEX_MANIAC, // 19
+        FACILITY_CLASS_SWIMMER_F, // 20
+        FACILITY_CLASS_CYCLING_TRIATHLETE_F, // 21
+        FACILITY_CLASS_RUNNING_TRIATHLETE_F, // 22
+        FACILITY_CLASS_SWIMMING_TRIATHLETE_F, // 23
+        FACILITY_CLASS_PKMN_BREEDER_F, // 24
+        FACILITY_CLASS_TUBER_F // 25
     }
 };
 
@@ -4228,33 +4268,69 @@ u16 GetMonAbility(struct Pokemon *mon)
 void CreateSecretBaseEnemyParty(struct SecretBase *secretBaseRecord)
 {
     s32 i, j;
-
+    u32 monIv = 31;
+    
     ZeroEnemyPartyMons();
     *gBattleResources->secretBase = *secretBaseRecord;
 
-    for (i = 0; i < PARTY_SIZE; i++)
-    {
-        if (gBattleResources->secretBase->party.species[i])
+    if (VarGet(VAR_SECRET_BASE_PSEUDO_TRAINER_NUM) == PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER
+        || VarGet(VAR_SECRET_BASE_PSEUDO_TRAINER_NUM) == PSEUDO_TRAINER_MIRROR_SAME_GENDER)
+    {      
+        for (i = 0; i < PARTY_SIZE; i++)
         {
-            CreateMon(&gEnemyParty[i],
-                gBattleResources->secretBase->party.species[i],
-                gBattleResources->secretBase->party.levels[i],
-                15,
-                TRUE,
-                gBattleResources->secretBase->party.personality[i],
-                OT_ID_RANDOM_NO_SHINY,
-                0);
+            CopyMon(&gEnemyParty[i], &gPlayerParty[i], sizeof(struct Pokemon));
+            HealPokemon(&gEnemyParty[i]);
+            CalculateMonStats(&gEnemyParty[i]);
+        }
+    }
+    else if (VarGet(VAR_SECRET_BASE_PSEUDO_TRAINER_NUM) == PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER_CHECK_PARTY_LEVEL
+        || VarGet(VAR_SECRET_BASE_PSEUDO_TRAINER_NUM) == PSEUDO_TRAINER_MIRROR_SAME_GENDER_CHECK_PARTY_LEVEL)
+    {
+        u8 highestPartyLevel = GetHighestLevelInPlayerParty();
 
-            SetMonData(&gEnemyParty[i], MON_DATA_HELD_ITEM, &gBattleResources->secretBase->party.heldItems[i]);
-
-            for (j = 0; j < NUM_STATS; j++)
-                SetMonData(&gEnemyParty[i], MON_DATA_HP_EV + j, &gBattleResources->secretBase->party.EVs[i]);
-
-            for (j = 0; j < MAX_MON_MOVES; j++)
+        for (i = 0; i < PARTY_SIZE; i++)
+        {          
+            CopyMon(&gEnemyParty[i], &gPlayerParty[i], sizeof(struct Pokemon));
+            HealPokemon(&gEnemyParty[i]);
+            SetMonData(&gEnemyParty[i], MON_DATA_LEVEL, &highestPartyLevel);
+            u32 dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(&gEnemyParty[i], MON_DATA_SPECIES, NULL)].growthRate][highestPartyLevel];
+            SetMonData(&gEnemyParty[i], MON_DATA_EXP, &dataUnsigned);
+            CalculateMonStats(&gEnemyParty[i]);
+        }
+    }
+    else
+    {
+        for (i = 0; i < PARTY_SIZE; i++)
+        {
+            if (gBattleResources->secretBase->party.species[i])
             {
-                SetMonData(&gEnemyParty[i], MON_DATA_MOVE1 + j, &gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
-                u32 pp = GetMovePP(gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
-                SetMonData(&gEnemyParty[i], MON_DATA_PP1 + j, &pp);
+                CreateMon(&gEnemyParty[i],
+                    gBattleResources->secretBase->party.species[i],
+                    gBattleResources->secretBase->party.levels[i],
+                    15,
+                    TRUE,
+                    gBattleResources->secretBase->party.personality[i],
+                    OT_ID_PRESET,
+                    gBattleResources->secretBase->trainerId[0]);
+
+                SetMonData(&gEnemyParty[i], MON_DATA_HELD_ITEM, &gBattleResources->secretBase->party.heldItems[i]);
+
+                SetMonData(&gEnemyParty[i], MON_DATA_HP_IV, &monIv);
+                SetMonData(&gEnemyParty[i], MON_DATA_ATK_IV, &monIv);
+                SetMonData(&gEnemyParty[i], MON_DATA_DEF_IV, &monIv);
+                SetMonData(&gEnemyParty[i], MON_DATA_SPEED_IV, &monIv);
+                SetMonData(&gEnemyParty[i], MON_DATA_SPATK_IV, &monIv);
+                SetMonData(&gEnemyParty[i], MON_DATA_SPDEF_IV, &monIv);
+
+                for (j = 0; j < NUM_STATS; j++)
+                    SetMonData(&gEnemyParty[i], MON_DATA_HP_EV + j, &gBattleResources->secretBase->party.EVs[i]);
+
+                for (j = 0; j < MAX_MON_MOVES; j++)
+                {
+                    SetMonData(&gEnemyParty[i], MON_DATA_MOVE1 + j, &gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
+                    u32 pp = GetMovePP(gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
+                    SetMonData(&gEnemyParty[i], MON_DATA_PP1 + j, &pp);
+                }
             }
         }
     }
@@ -6536,11 +6612,14 @@ u16 GetBattleBGM(void)
     else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         u8 trainerClass;
+        u8 facilityClassSecretBase = sSecretBaseFacilityClasses[gSaveBlock1Ptr->secretBases[0].gender][gSaveBlock1Ptr->secretBases[0].trainerId[0] % NUM_SECRET_BASE_CLASSES];
 
         if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
             trainerClass = GetFrontierOpponentClass(TRAINER_BATTLE_PARAM.opponentA);
         else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
             trainerClass = TRAINER_CLASS_EXPERT;
+        else if (gBattleTypeFlags & BATTLE_TYPE_SECRET_BASE)
+            trainerClass = gFacilityClassToTrainerClass[facilityClassSecretBase];
         else
             trainerClass = GetTrainerClassFromId(TRAINER_BATTLE_PARAM.opponentA);
 

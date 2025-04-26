@@ -734,4 +734,15 @@
 #define TRAINER_MON_FEMALE        2
 #define TRAINER_MON_RANDOM_GENDER 3
 
+// Secret base pseudo trainer, controlled by the value of VAR_SECRET_BASE_PSEUDO_TRAINER_NUM
+#define PSEUDO_TRAINER_00001                                      1
+#define PSEUDO_TRAINER_ALFA                                       PSEUDO_TRAINER_00001
+#define PSEUDO_TRAINER_00002                                      2
+#define PSEUDO_TRAINER_BB                                         PSEUDO_TRAINER_00002
+
+#define PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER                     1001
+#define PSEUDO_TRAINER_MIRROR_SAME_GENDER                         1002
+#define PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER_CHECK_PARTY_LEVEL   1003
+#define PSEUDO_TRAINER_MIRROR_SAME_GENDER_CHECK_PARTY_LEVEL       1004
+
 #endif  // GUARD_TRAINERS_H

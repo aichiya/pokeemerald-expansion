@@ -46,6 +46,8 @@
 #include "constants/secret_bases.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
+#include "constants/moves.h"
+#include "constants/species.h"
 
 #define TAG_SCROLL_ARROW 5112
 
@@ -159,20 +161,60 @@ static const struct YesNoFuncTable sDeleteRegistryYesNoFuncs =
     .noFunc = DeleteRegistry_No,
 };
 
-static const u16 sSecretBaseOwnerGfxIds[10] =
+static const u16 sSecretBaseOwnerGfxIds[50] =
 {
     // Male
-    OBJ_EVENT_GFX_YOUNGSTER,
-    OBJ_EVENT_GFX_BUG_CATCHER,
-    OBJ_EVENT_GFX_RICH_BOY,
-    OBJ_EVENT_GFX_CAMPER,
-    OBJ_EVENT_GFX_MAN_3,
+    OBJ_EVENT_GFX_YOUNGSTER, // 1
+    OBJ_EVENT_GFX_SCHOOL_KID_M, // 2
+    OBJ_EVENT_GFX_RICH_BOY, // 3
+    OBJ_EVENT_GFX_CAMPER, // 4
+    OBJ_EVENT_GFX_MAN_3, // 5
+    OBJ_EVENT_GFX_RED, // 6
+    OBJ_EVENT_GFX_LINK_RS_BRENDAN, // 7
+    OBJ_EVENT_GFX_BRENDAN_NORMAL, // 8
+    OBJ_EVENT_GFX_POKEFAN_M, // 9
+    OBJ_EVENT_GFX_MAN_3, // 10
+    OBJ_EVENT_GFX_AQUA_MEMBER_M, // 11
+    OBJ_EVENT_GFX_MAGMA_MEMBER_M, // 12
+    OBJ_EVENT_GFX_PSYCHIC_M, // 13
+    OBJ_EVENT_GFX_EXPERT_M, // 14
+    OBJ_EVENT_GFX_BLACK_BELT, // 15
+    OBJ_EVENT_GFX_MAN_5, // 16
+    OBJ_EVENT_GFX_GENTLEMAN, // 17
+    OBJ_EVENT_GFX_MANIAC, // 18
+    OBJ_EVENT_GFX_HIKER, // 19
+    OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M, // 20
+    OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M, // 21
+    OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M, // 22
+    OBJ_EVENT_GFX_RUNNING_TRIATHLETE_M, // 23
+    OBJ_EVENT_GFX_MAN_4, // 24
+    OBJ_EVENT_GFX_TUBER_M, // 25
     // Female
-    OBJ_EVENT_GFX_LASS,
-    OBJ_EVENT_GFX_GIRL_3,
-    OBJ_EVENT_GFX_WOMAN_2,
-    OBJ_EVENT_GFX_PICNICKER,
-    OBJ_EVENT_GFX_WOMAN_5,
+    OBJ_EVENT_GFX_LASS, // 1
+    OBJ_EVENT_GFX_GIRL_3, // 2
+    OBJ_EVENT_GFX_WOMAN_2, // 3
+    OBJ_EVENT_GFX_PICNICKER, // 4
+    OBJ_EVENT_GFX_WOMAN_5, // 5
+    OBJ_EVENT_GFX_LEAF, // 6
+    OBJ_EVENT_GFX_LINK_RS_MAY, // 7
+    OBJ_EVENT_GFX_MAY_NORMAL, // 8
+    OBJ_EVENT_GFX_POKEFAN_M, // 9
+    OBJ_EVENT_GFX_WOMAN_5, // 10
+    OBJ_EVENT_GFX_AQUA_MEMBER_F, // 11
+    OBJ_EVENT_GFX_MAGMA_MEMBER_F, // 12
+    OBJ_EVENT_GFX_HEX_MANIAC, // 13
+    OBJ_EVENT_GFX_EXPERT_F, // 14
+    OBJ_EVENT_GFX_GIRL_3, // 15
+    OBJ_EVENT_GFX_PICNICKER, // 16
+    OBJ_EVENT_GFX_GIRL_2, // 17
+    OBJ_EVENT_GFX_BEAUTY, // 18
+    OBJ_EVENT_GFX_HEX_MANIAC, // 19
+    OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F, // 20
+    OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F, // 21
+    OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F, // 22
+    OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F, // 23
+    OBJ_EVENT_GFX_WOMAN_2, // 24
+    OBJ_EVENT_GFX_TUBER_F, // 25
 };
 
 static const struct WindowTemplate sRegistryWindowTemplates[] =
@@ -1164,7 +1206,7 @@ void PrepSecretBaseBattleFlags(void)
 {
     TryGainNewFanFromCounter(FANCOUNTER_BATTLED_AT_BASE);
     TRAINER_BATTLE_PARAM.opponentA = TRAINER_SECRET_BASE;
-    gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_SECRET_BASE;
+    gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_SECRET_BASE | BATTLE_TYPE_DOUBLE;
 }
 
 void SetBattledOwnerFromResult(void)
@@ -2074,4 +2116,600 @@ void CheckInteractedWithFriendsSandOrnament(void)
                 VarSet(VAR_SECRET_BASE_HIGH_TV_FLAGS, VarGet(VAR_SECRET_BASE_HIGH_TV_FLAGS) | SECRET_BASE_USED_SAND_ORNAMENT);
             break;
     }
+}
+
+const u8 gText_PseudoTrainerNameDefault[] = _("Aichiya");
+const u8 gText_PseudoTrainerName001[] = _("Alfa");
+const u8 gText_PseudoTrainerName002[] = _("BB");
+
+void PrepareSecretBasePseudoTrainerBattleByVar(void)
+{
+    struct SecretBaseParty *party;
+    u16 trainerNum;
+    
+    trainerNum = VarGet(VAR_SECRET_BASE_PSEUDO_TRAINER_NUM);
+
+    FlagClear(FLAG_DAILY_SECRET_BASE);
+
+    switch(trainerNum)
+    {
+        case PSEUDO_TRAINER_ALFA:
+            party = &gSaveBlock1Ptr->secretBases[0].party;
+
+            gSaveBlock1Ptr->secretBases[0].secretBaseId = 1;
+            gSaveBlock1Ptr->secretBases[0].trainerId[0] = NATURE_MODEST;
+            gSaveBlock1Ptr->secretBases[0].trainerId[1] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[2] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[3] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerName[0] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[1] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[2] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[3] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[4] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[5] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[6] = 0xFF;
+            StringCopyN(gSaveBlock1Ptr->secretBases[0].trainerName, gText_PseudoTrainerName001, GetNameLength(gText_PseudoTrainerName001));
+            gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
+
+            party->moves[0*MAX_MON_MOVES + 0] = MOVE_DEFECTIVE_MIRACLE;
+            party->moves[0*MAX_MON_MOVES + 1] = MOVE_DIMENSION_SLASH;
+            party->moves[0*MAX_MON_MOVES + 2] = MOVE_FLUFFICATION;
+            party->moves[0*MAX_MON_MOVES + 3] = MOVE_CALM_MIND;
+            party->species[0] = SPECIES_NECROZMA_ULTRA;
+            party->heldItems[0] = ITEM_LEFTOVERS;
+            party->levels[0] = 50;
+            party->personality[0] = NATURE_MODEST;
+            party->EVs[0] = 510 / 6;
+
+            party->moves[1*MAX_MON_MOVES + 0] = MOVE_DIMENSION_SHOT;
+            party->moves[1*MAX_MON_MOVES + 1] = MOVE_ICE_BLADE;
+            party->moves[1*MAX_MON_MOVES + 2] = MOVE_TWIN_SPARK;
+            party->moves[1*MAX_MON_MOVES + 3] = MOVE_NEPTUNE_BREAK;
+            party->species[1] = SPECIES_MEW;
+            party->heldItems[1] = ITEM_LIFE_ORB;
+            party->levels[1] = 100;
+            party->personality[1] = NATURE_MODEST + 0x80000000;
+            party->EVs[1] = 510 / 6;
+
+            party->moves[2*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[2] = SPECIES_NONE;
+            party->heldItems[2] = ITEM_NONE;
+            party->levels[2] = 100;
+            party->personality[2] = 3;
+            party->EVs[2] = 510 / 6;
+
+            party->moves[3*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[3] = SPECIES_NONE;
+            party->heldItems[3] = ITEM_NONE;
+            party->levels[3] = 0;
+            party->personality[3] = 0;
+            party->EVs[3] = 0;
+
+            party->moves[4*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[4] = SPECIES_NONE;
+            party->heldItems[4] = ITEM_NONE;
+            party->levels[4] = 0;
+            party->personality[4] = 0;
+            party->EVs[4] = 0;
+
+            party->moves[5*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[5] = SPECIES_NONE;
+            party->heldItems[5] = ITEM_NONE;
+            party->levels[5] = 0;
+            party->personality[5] = 0;
+            party->EVs[5] = 0;
+
+            break;
+        case PSEUDO_TRAINER_BB:
+            party = &gSaveBlock1Ptr->secretBases[0].party;
+
+            gSaveBlock1Ptr->secretBases[0].secretBaseId = 1;
+            gSaveBlock1Ptr->secretBases[0].trainerId[0] = 2;
+            gSaveBlock1Ptr->secretBases[0].trainerId[1] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[2] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[3] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerName[0] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[1] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[2] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[3] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[4] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[5] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[6] = 0xFF;
+            StringCopyN(gSaveBlock1Ptr->secretBases[0].trainerName, gText_PseudoTrainerName002, GetNameLength(gText_PseudoTrainerName002));
+            gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
+
+            party->moves[0*MAX_MON_MOVES + 0] = MOVE_SLASH;
+            party->moves[0*MAX_MON_MOVES + 1] = MOVE_FLAMETHROWER;
+            party->moves[0*MAX_MON_MOVES + 2] = MOVE_DRAGON_RAGE;
+            party->moves[0*MAX_MON_MOVES + 3] = MOVE_AIR_SLASH;
+            party->species[0] = SPECIES_CHARIZARD;
+            party->heldItems[0] = ITEM_NONE;
+            party->levels[0] = 40;
+            party->personality[0] = 0;
+            party->EVs[0] = 85;
+
+            party->moves[1*MAX_MON_MOVES + 0] = MOVE_VOLT_TACKLE;
+            party->moves[1*MAX_MON_MOVES + 1] = MOVE_THUNDER_WAVE;
+            party->moves[1*MAX_MON_MOVES + 2] = MOVE_IRON_TAIL;
+            party->moves[1*MAX_MON_MOVES + 3] = MOVE_ENERGY_BALL;
+            party->species[1] = SPECIES_PIKACHU;
+            party->heldItems[1] = ITEM_NONE;
+            party->levels[1] = 80;
+            party->personality[1] = 19;
+            party->EVs[1] = 85;
+
+            party->moves[2*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[2] = SPECIES_NONE;
+            party->heldItems[2] = ITEM_NONE;
+            party->levels[2] = 0;
+            party->personality[2] = 0;
+            party->EVs[2] = 0;
+
+            party->moves[3*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[3] = SPECIES_NONE;
+            party->heldItems[3] = ITEM_NONE;
+            party->levels[3] = 0;
+            party->personality[3] = 0;
+            party->EVs[3] = 0;
+
+            party->moves[4*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[4] = SPECIES_NONE;
+            party->heldItems[4] = ITEM_NONE;
+            party->levels[4] = 0;
+            party->personality[4] = 0;
+            party->EVs[4] = 0;
+
+            party->moves[5*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[5] = SPECIES_NONE;
+            party->heldItems[5] = ITEM_NONE;
+            party->levels[5] = 0;
+            party->personality[5] = 0;
+            party->EVs[5] = 0;
+
+            break;
+        case PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER:
+            party = &gSaveBlock1Ptr->secretBases[0].party;
+
+            gSaveBlock1Ptr->secretBases[0].secretBaseId = 1;
+            gSaveBlock1Ptr->secretBases[0].trainerId[0] = 7;
+            gSaveBlock1Ptr->secretBases[0].trainerId[1] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[2] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[3] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerName[0] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[1] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[2] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[3] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[4] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[5] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[6] = 0xFF;
+            StringCopyN(gSaveBlock1Ptr->secretBases[0].trainerName, gSaveBlock2Ptr->playerName, GetNameLength(gSaveBlock2Ptr->playerName));
+            if (gSaveBlock2Ptr->playerGender == 0)
+                gSaveBlock1Ptr->secretBases[0].gender = 1;
+            else
+                gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
+
+            party->moves[0*MAX_MON_MOVES + 0] = MOVE_TRANSFORM;
+            party->moves[0*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[0*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[0*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[0] = SPECIES_MEW;
+            party->heldItems[0] = ITEM_NONE;
+            party->levels[0] = 5;
+            party->personality[0] = 7;
+            party->EVs[0] = 85;
+
+            party->moves[1*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[1] = SPECIES_NONE;
+            party->heldItems[1] = ITEM_NONE;
+            party->levels[1] = 0;
+            party->personality[1] = 0;
+            party->EVs[1] = 0;
+
+            party->moves[2*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[2] = SPECIES_NONE;
+            party->heldItems[2] = ITEM_NONE;
+            party->levels[2] = 0;
+            party->personality[2] = 0;
+            party->EVs[2] = 0;
+
+            party->moves[3*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[3] = SPECIES_NONE;
+            party->heldItems[3] = ITEM_NONE;
+            party->levels[3] = 0;
+            party->personality[3] = 0;
+            party->EVs[3] = 0;
+
+            party->moves[4*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[4] = SPECIES_NONE;
+            party->heldItems[4] = ITEM_NONE;
+            party->levels[4] = 0;
+            party->personality[4] = 0;
+            party->EVs[4] = 0;
+
+            party->moves[5*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[5] = SPECIES_NONE;
+            party->heldItems[5] = ITEM_NONE;
+            party->levels[5] = 0;
+            party->personality[5] = 0;
+            party->EVs[5] = 0;
+
+            break;
+        case PSEUDO_TRAINER_MIRROR_SAME_GENDER: // vs. same gender mirror battle
+            party = &gSaveBlock1Ptr->secretBases[0].party;
+
+            gSaveBlock1Ptr->secretBases[0].secretBaseId = 1;
+            gSaveBlock1Ptr->secretBases[0].trainerId[0] = 7;
+            gSaveBlock1Ptr->secretBases[0].trainerId[1] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[2] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[3] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerName[0] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[1] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[2] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[3] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[4] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[5] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[6] = 0xFF;
+            StringCopyN(gSaveBlock1Ptr->secretBases[0].trainerName, gSaveBlock2Ptr->playerName, GetNameLength(gSaveBlock2Ptr->playerName));
+            if (gSaveBlock2Ptr->playerGender == 1)
+                gSaveBlock1Ptr->secretBases[0].gender = 1;
+            else
+                gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
+
+            party->moves[0*MAX_MON_MOVES + 0] = MOVE_TRANSFORM;
+            party->moves[0*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[0*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[0*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[0] = SPECIES_MEW;
+            party->heldItems[0] = ITEM_NONE;
+            party->levels[0] = 5;
+            party->personality[0] = 7;
+            party->EVs[0] = 85;
+
+            party->moves[1*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[1] = SPECIES_NONE;
+            party->heldItems[1] = ITEM_NONE;
+            party->levels[1] = 0;
+            party->personality[1] = 0;
+            party->EVs[1] = 0;
+
+            party->moves[2*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[2] = SPECIES_NONE;
+            party->heldItems[2] = ITEM_NONE;
+            party->levels[2] = 0;
+            party->personality[2] = 0;
+            party->EVs[2] = 0;
+
+            party->moves[3*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[3] = SPECIES_NONE;
+            party->heldItems[3] = ITEM_NONE;
+            party->levels[3] = 0;
+            party->personality[3] = 0;
+            party->EVs[3] = 0;
+
+            party->moves[4*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[4] = SPECIES_NONE;
+            party->heldItems[4] = ITEM_NONE;
+            party->levels[4] = 0;
+            party->personality[4] = 0;
+            party->EVs[4] = 0;
+
+            party->moves[5*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[5] = SPECIES_NONE;
+            party->heldItems[5] = ITEM_NONE;
+            party->levels[5] = 0;
+            party->personality[5] = 0;
+            party->EVs[5] = 0;
+
+            break;
+        case PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER_CHECK_PARTY_LEVEL:
+            party = &gSaveBlock1Ptr->secretBases[0].party;
+
+            gSaveBlock1Ptr->secretBases[0].secretBaseId = 1;
+            gSaveBlock1Ptr->secretBases[0].trainerId[0] = 7;
+            gSaveBlock1Ptr->secretBases[0].trainerId[1] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[2] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[3] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerName[0] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[1] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[2] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[3] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[4] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[5] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[6] = 0xFF;
+            StringCopyN(gSaveBlock1Ptr->secretBases[0].trainerName, gSaveBlock2Ptr->playerName, GetNameLength(gSaveBlock2Ptr->playerName));
+            if (gSaveBlock2Ptr->playerGender == 0)
+                gSaveBlock1Ptr->secretBases[0].gender = 1;
+            else
+                gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
+
+            party->moves[0*MAX_MON_MOVES + 0] = MOVE_TRANSFORM;
+            party->moves[0*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[0*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[0*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[0] = SPECIES_MEW;
+            party->heldItems[0] = ITEM_NONE;
+            party->levels[0] = 5;
+            party->personality[0] = 7;
+            party->EVs[0] = 85;
+
+            party->moves[1*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[1] = SPECIES_NONE;
+            party->heldItems[1] = ITEM_NONE;
+            party->levels[1] = 0;
+            party->personality[1] = 0;
+            party->EVs[1] = 0;
+
+            party->moves[2*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[2] = SPECIES_NONE;
+            party->heldItems[2] = ITEM_NONE;
+            party->levels[2] = 0;
+            party->personality[2] = 0;
+            party->EVs[2] = 0;
+
+            party->moves[3*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[3] = SPECIES_NONE;
+            party->heldItems[3] = ITEM_NONE;
+            party->levels[3] = 0;
+            party->personality[3] = 0;
+            party->EVs[3] = 0;
+
+            party->moves[4*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[4] = SPECIES_NONE;
+            party->heldItems[4] = ITEM_NONE;
+            party->levels[4] = 0;
+            party->personality[4] = 0;
+            party->EVs[4] = 0;
+
+            party->moves[5*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[5] = SPECIES_NONE;
+            party->heldItems[5] = ITEM_NONE;
+            party->levels[5] = 0;
+            party->personality[5] = 0;
+            party->EVs[5] = 0;
+
+            break;
+        case PSEUDO_TRAINER_MIRROR_SAME_GENDER_CHECK_PARTY_LEVEL:
+            party = &gSaveBlock1Ptr->secretBases[0].party;
+
+            gSaveBlock1Ptr->secretBases[0].secretBaseId = 1;
+            gSaveBlock1Ptr->secretBases[0].trainerId[0] = 7;
+            gSaveBlock1Ptr->secretBases[0].trainerId[1] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[2] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[3] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerName[0] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[1] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[2] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[3] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[4] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[5] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[6] = 0xFF;
+            StringCopyN(gSaveBlock1Ptr->secretBases[0].trainerName, gSaveBlock2Ptr->playerName, GetNameLength(gSaveBlock2Ptr->playerName));
+            if (gSaveBlock2Ptr->playerGender == 1)
+                gSaveBlock1Ptr->secretBases[0].gender = 1;
+            else
+                gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
+
+            party->moves[0*MAX_MON_MOVES + 0] = MOVE_TRANSFORM;
+            party->moves[0*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[0*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[0*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[0] = SPECIES_MEW;
+            party->heldItems[0] = ITEM_NONE;
+            party->levels[0] = 5;
+            party->personality[0] = 7;
+            party->EVs[0] = 85;
+
+            party->moves[1*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[1] = SPECIES_NONE;
+            party->heldItems[1] = ITEM_NONE;
+            party->levels[1] = 0;
+            party->personality[1] = 0;
+            party->EVs[1] = 0;
+
+            party->moves[2*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[2] = SPECIES_NONE;
+            party->heldItems[2] = ITEM_NONE;
+            party->levels[2] = 0;
+            party->personality[2] = 0;
+            party->EVs[2] = 0;
+
+            party->moves[3*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[3] = SPECIES_NONE;
+            party->heldItems[3] = ITEM_NONE;
+            party->levels[3] = 0;
+            party->personality[3] = 0;
+            party->EVs[3] = 0;
+
+            party->moves[4*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[4] = SPECIES_NONE;
+            party->heldItems[4] = ITEM_NONE;
+            party->levels[4] = 0;
+            party->personality[4] = 0;
+            party->EVs[4] = 0;
+
+            party->moves[5*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[5] = SPECIES_NONE;
+            party->heldItems[5] = ITEM_NONE;
+            party->levels[5] = 0;
+            party->personality[5] = 0;
+            party->EVs[5] = 0;
+
+            break;
+        default:
+            party = &gSaveBlock1Ptr->secretBases[0].party;
+
+            gSaveBlock1Ptr->secretBases[0].secretBaseId = 1;
+            gSaveBlock1Ptr->secretBases[0].trainerId[0] = 7;
+            gSaveBlock1Ptr->secretBases[0].trainerId[1] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[2] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerId[3] = 0;
+            gSaveBlock1Ptr->secretBases[0].trainerName[0] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[1] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[2] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[3] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[4] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[5] = 0xFF;
+            gSaveBlock1Ptr->secretBases[0].trainerName[6] = 0xFF;
+            StringCopyN(gSaveBlock1Ptr->secretBases[0].trainerName, gText_PseudoTrainerNameDefault, GetNameLength(gText_PseudoTrainerNameDefault));
+            gSaveBlock1Ptr->secretBases[0].gender = 1;
+            gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
+
+            party->moves[0*MAX_MON_MOVES + 0] = MOVE_PSYCHIC;
+            party->moves[0*MAX_MON_MOVES + 1] = MOVE_PHOTON_GEYSER;
+            party->moves[0*MAX_MON_MOVES + 2] = MOVE_01_CRUSHER;
+            party->moves[0*MAX_MON_MOVES + 3] = MOVE_ADVENT_LYCORIS;
+            party->species[0] = SPECIES_MEW;
+            party->heldItems[0] = ITEM_MEWNIUM_Z;
+            party->levels[0] = 7;
+            party->personality[0] = 7;
+            party->EVs[0] = 85;
+
+            party->moves[1*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[1*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[1] = SPECIES_NONE;
+            party->heldItems[1] = ITEM_NONE;
+            party->levels[1] = 0;
+            party->personality[1] = 0;
+            party->EVs[1] = 0;
+
+            party->moves[2*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[2*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[2] = SPECIES_NONE;
+            party->heldItems[2] = ITEM_NONE;
+            party->levels[2] = 0;
+            party->personality[2] = 0;
+            party->EVs[2] = 0;
+
+            party->moves[3*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[3*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[3] = SPECIES_NONE;
+            party->heldItems[3] = ITEM_NONE;
+            party->levels[3] = 0;
+            party->personality[3] = 0;
+            party->EVs[3] = 0;
+
+            party->moves[4*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[4*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[4] = SPECIES_NONE;
+            party->heldItems[4] = ITEM_NONE;
+            party->levels[4] = 0;
+            party->personality[4] = 0;
+            party->EVs[4] = 0;
+
+            party->moves[5*MAX_MON_MOVES + 0] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[5*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[5] = SPECIES_NONE;
+            party->heldItems[5] = ITEM_NONE;
+            party->levels[5] = 0;
+            party->personality[5] = 0;
+            party->EVs[5] = 0;
+
+            break;
+
+    }
+    
+    gSpecialVar_0x8004 = GetSecretBaseOwnerType(0);
+    gSaveBlock1Ptr->secretBases[0].battledOwnerToday = 0;
+    gSpecialVar_Result = gSaveBlock1Ptr->secretBases[0].battledOwnerToday;
+    FlagClear(FLAG_DAILY_SECRET_BASE);
 }

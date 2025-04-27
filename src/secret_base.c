@@ -2644,13 +2644,13 @@ void PrepareSecretBasePseudoTrainerBattleByVar(void)
             gSaveBlock1Ptr->secretBases[0].gender = 1;
             gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
 
-            party->moves[0*MAX_MON_MOVES + 0] = MOVE_PSYCHIC;
-            party->moves[0*MAX_MON_MOVES + 1] = MOVE_PHOTON_GEYSER;
-            party->moves[0*MAX_MON_MOVES + 2] = MOVE_01_CRUSHER;
-            party->moves[0*MAX_MON_MOVES + 3] = MOVE_ADVENT_LYCORIS;
-            party->species[0] = SPECIES_MEW;
+            party->moves[0*MAX_MON_MOVES + 0] = MOVE_ADVENT_LYCORIS;
+            party->moves[0*MAX_MON_MOVES + 1] = MOVE_NONE;
+            party->moves[0*MAX_MON_MOVES + 2] = MOVE_NONE;
+            party->moves[0*MAX_MON_MOVES + 3] = MOVE_NONE;
+            party->species[0] = SPECIES_KECLEON;
             party->heldItems[0] = ITEM_MEWNIUM_Z;
-            party->levels[0] = 7;
+            party->levels[0] = 50;
             party->personality[0] = 7;
             party->EVs[0] = 85;
 

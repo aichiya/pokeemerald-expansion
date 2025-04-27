@@ -21601,6 +21601,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_NeptuneBreak, // to do
     },
 
+    [MOVE_CHAOS_JUDGMENT] =  // Edited desc power
+    {
+        .name = COMPOUND_STRING("Chaos Judgment"),
+        .description = COMPOUND_STRING(
+            "An attack based on\n"
+            "the foe's type."),
+        .effect = EFFECT_REVELATION_DANCE,
+        .power = 100,
+        .type = TYPE_NEW_ILLUSION,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = { .type = TYPE_NEW_DARK },
+        .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Judgment,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =  // Edited
     {

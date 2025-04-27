@@ -15,7 +15,7 @@ TrimmedGensokyo_EventScript_Debug1::
 	closemessage
 	delay 30
 @	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
-	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, 0
+	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, 1001
 	special PrepareSecretBasePseudoTrainerBattleByVar
 	special PrepSecretBaseBattleFlags
     setvar VAR_0x8004, SPECIAL_BATTLE_SECRET_BASE
@@ -27,10 +27,8 @@ TrimmedGensokyo_EventScript_Debug1::
 	end
 	
 TrimmedGensokyo_Text_Debug1_1:
-	.string "Trainer battle music test for:\n"
-	.string "Aroma Lady Trainer Class\p"
-	.string "{COLOR}{GREEN}Hana ni Natte\n"
-	.string "{COLOR}{DARK_GRAY}From: {COLOR}{GREEN}Kusuriya no hitorigoto$"
+	.string "Trainer battle test:\n"
+	.string "mirror battle$"
     
 TrimmedGensokyo_Text_Debug1_2:
 	.string "I'm not feeling very good.$"

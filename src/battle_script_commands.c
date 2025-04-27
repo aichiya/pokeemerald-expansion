@@ -296,7 +296,8 @@ static const u16 sTrappingMoves[NUM_TRAPPING_MOVES] =
     MOVE_MAGMA_STORM,
     MOVE_INFESTATION,
     MOVE_SNAP_TRAP,
-    MOVE_THUNDER_CAGE
+    MOVE_THUNDER_CAGE,
+    MOVE_ADVENT_LYCORIS
 };
 
 static const u16 sWhiteOutBadgeMoney[9] = { 8, 16, 24, 36, 48, 64, 80, 100, 120 };
@@ -1142,6 +1143,9 @@ static bool32 NoTargetPresent(u8 battler, u32 move)
 
 bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
 {
+    u32 legendMoveType = TYPE_NEW_ILLUSION;
+    u32 targetAbility = GetBattlerAbility(gBattlerTarget);
+
       if ((ability == ABILITY_PROTEAN || ability == ABILITY_LIBERO)
          && !gDisableStructs[gBattlerAttacker].usedProteanLibero
          && (gBattleMons[battler].types[0] != moveType || gBattleMons[battler].types[1] != moveType
@@ -1151,6 +1155,1270 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
     {
         SET_BATTLER_TYPE(battler, moveType);
         return TRUE;
+    }
+    else if (ability == ABILITY_MULTITYPE_LEGEND 
+        && (gBattleMons[battler].types[0] != moveType || gBattleMons[battler].types[1] != moveType
+            || (gBattleMons[battler].types[2] != moveType && gBattleMons[battler].types[2] != TYPE_MYSTERY))
+        && GetActiveGimmick(battler) != GIMMICK_TERA)
+    {
+        if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else if (targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else
+                legendMoveType = TYPE_NEW_FLYING;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+        {
+            if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else
+                legendMoveType = TYPE_NEW_STEEL;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+        {
+            if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else
+                legendMoveType = TYPE_NEW_DREAM;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_BEAST && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_HEART;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else if (targetAbility != ABILITY_MAKAI_GODDESS)
+                legendMoveType = TYPE_NEW_DIVINE;
+            else if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_HEART;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_HEART;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else if (targetAbility != ABILITY_MAKAI_GODDESS)
+                legendMoveType = TYPE_NEW_DIVINE;
+            else if (targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else
+                legendMoveType = TYPE_NEW_HEART;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+        {
+            if (targetAbility != ABILITY_MAKAI_GODDESS)
+                legendMoveType = TYPE_NEW_DIVINE;
+            else
+                legendMoveType = TYPE_NEW_STEEL;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_STEEL;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_STEEL;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else if (targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else
+                legendMoveType = TYPE_NEW_STEEL;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_HEART;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else if (targetAbility != ABILITY_MAKAI_GODDESS)
+                legendMoveType = TYPE_NEW_DIVINE;
+            else if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else
+                legendMoveType = TYPE_NEW_HEART;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_REASON;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_BEAST;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_BEAST;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_BEAST;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_BEAST;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+        {
+            if (targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_REASON;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_REASON;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_REASON;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_REASON;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+        {
+            if (targetAbility != ABILITY_MAKAI_GODDESS)
+                legendMoveType = TYPE_NEW_DARK;
+            else
+                legendMoveType = TYPE_NEW_NETHER;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_REASON;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+        {
+            if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_ICE;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_WIND;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_WIND;
+
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_ICE;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_ICE;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_ICE;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+        {
+            if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_ELECTRIC;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+        {
+            if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_FIRE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_HEART;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_HEART;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_BEAST;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_BEAST;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_REASON;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_ICE;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_ICE;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+        {
+            if (targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_REASON;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_MYSTERY;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_NETHER;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_NETHER;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_DREAM;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_DREAM;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_DREAM;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_DREAM;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_ICE;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_FLYING;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_HEART; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_WIND;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+        {
+            if (targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else if (!(targetAbility == ABILITY_VOLT_ABSORB || targetAbility == ABILITY_MOTOR_DRIVE || targetAbility == ABILITY_LIGHTNING_ROD))
+                legendMoveType = TYPE_NEW_ELECTRIC;
+            else if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_BEAST; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_NETHER; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_DREAM;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_DREAM;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_WATER;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_WATER;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_WIND;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_ICE;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+                legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_WIND;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else if (!(targetAbility == ABILITY_VOLT_ABSORB || targetAbility == ABILITY_MOTOR_DRIVE || targetAbility == ABILITY_LIGHTNING_ROD))
+                legendMoveType = TYPE_NEW_ELECTRIC;
+            else if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_WIND;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_WIND;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_STEEL;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_WIND;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+        {
+            if (targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_WIND;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_WIND;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_NETHER;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+        {
+            if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else if (!(targetAbility == ABILITY_VOLT_ABSORB || targetAbility == ABILITY_MOTOR_DRIVE || targetAbility == ABILITY_LIGHTNING_ROD))
+                legendMoveType = TYPE_NEW_ELECTRIC;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+        {
+            if (!(targetAbility == ABILITY_VOLT_ABSORB || targetAbility == ABILITY_MOTOR_DRIVE || targetAbility == ABILITY_LIGHTNING_ROD))
+                legendMoveType = TYPE_NEW_ELECTRIC;
+            else
+                legendMoveType = TYPE_NEW_MIASMA;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FLYING && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_ICE;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+        {
+            if (targetAbility != ABILITY_MAKAI_GODDESS)
+                legendMoveType = TYPE_NEW_DIVINE;
+            else
+                legendMoveType = TYPE_NEW_STEEL;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_WIND;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_MYSTERY; // TYPE_NEW_ILLUSION;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_HEART && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+        {
+            if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else
+                legendMoveType = TYPE_NEW_STEEL;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_STEEL;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_STEEL;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+        {
+            if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else
+                legendMoveType = TYPE_NEW_STEEL;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ICE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_WIND;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ILLUSION && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_STEEL; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_REASON;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_REASON;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_REASON;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+        {
+            if (targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else
+                legendMoveType = TYPE_NEW_REASON;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_NETHER; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_NETHER; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_WATER;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_MYSTERY;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+                legendMoveType = TYPE_NEW_WIND;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_WIND;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_MYSTERY; // TYPE_NEW_ILLUSION;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_NATURE;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_ICE;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_ICE;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+        {
+            if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else
+                legendMoveType = TYPE_NEW_FLYING;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+        {
+            if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else
+                legendMoveType = TYPE_NEW_DREAM;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NATURE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_ICE;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+                legendMoveType = TYPE_NEW_BEAST; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+                legendMoveType = TYPE_NEW_BEAST; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_NETHER;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_NETHER;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_NETHER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+        {
+            if (targetAbility != ABILITY_MAKAI_GODDESS)
+                legendMoveType = TYPE_NEW_DARK;
+            else
+                legendMoveType = TYPE_NEW_NETHER;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+                legendMoveType = TYPE_NEW_HEART; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+                legendMoveType = TYPE_NEW_HEART; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_MYSTERY; // TYPE_NEW_ILLUSION;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_NETHER; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_NETHER;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_NETHER; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_REASON && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+        {
+            if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else
+                legendMoveType = TYPE_NEW_DREAM;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_HEART; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_DREAM;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_DREAM;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_DREAM;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_DREAM;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+        {
+            if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else if (!(targetAbility == ABILITY_VOLT_ABSORB || targetAbility == ABILITY_MOTOR_DRIVE || targetAbility == ABILITY_LIGHTNING_ROD))
+                legendMoveType = TYPE_NEW_ELECTRIC;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget))
+                legendMoveType = TYPE_NEW_DREAM;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_DREAM;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+        {
+            if (targetAbility != ABILITY_FLASH_FIRE)
+                legendMoveType = TYPE_NEW_FIRE;
+            else
+                legendMoveType = TYPE_NEW_DREAM;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_HEART; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+                legendMoveType = TYPE_NEW_FLYING;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+        {
+            if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else if (!(targetAbility == ABILITY_VOLT_ABSORB || targetAbility == ABILITY_MOTOR_DRIVE || targetAbility == ABILITY_LIGHTNING_ROD))
+                legendMoveType = TYPE_NEW_ELECTRIC;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+            if (!(targetAbility == ABILITY_VOLT_ABSORB || targetAbility == ABILITY_MOTOR_DRIVE || targetAbility == ABILITY_LIGHTNING_ROD))
+                legendMoveType = TYPE_NEW_ELECTRIC;
+            else
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+                legendMoveType = TYPE_NEW_MIASMA;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WATER && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+        {
+            if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_MIASMA;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_BEAST)
+        {
+            if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
+        {
+            if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
+        {
+            if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
+        {
+            if (!IsBattlerGrounded(gBattlerTarget) && !(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+                legendMoveType = TYPE_NEW_WATER;
+            else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
+                legendMoveType = TYPE_NEW_EARTH;
+            else
+                legendMoveType = TYPE_NEW_MYSTERY;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FLYING)
+                legendMoveType = TYPE_NEW_ICE;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_HEART)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ICE)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ILLUSION)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
+                legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
+        {
+            if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NATURE)
+                legendMoveType = TYPE_NEW_ICE;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
+                legendMoveType = TYPE_NEW_BEAST;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
+                legendMoveType = TYPE_NEW_HEART;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
+                legendMoveType = TYPE_NEW_DREAM;
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WATER)
+        {
+            if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_MIASMA;
+        }
+        else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
+        {
+            if (targetAbility != ABILITY_SAP_SIPPER)
+                legendMoveType = TYPE_NEW_NATURE;
+            else
+                legendMoveType = TYPE_NEW_ICE;
+        }
+        else
+                legendMoveType = TYPE_NEW_MYSTERY;
+
+        SET_BATTLER_TYPE(battler, legendMoveType);
+        return TRUE;
+        
     }
     return FALSE;
 }

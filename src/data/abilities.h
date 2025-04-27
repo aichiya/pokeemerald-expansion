@@ -2761,4 +2761,17 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Small HP recovery each turn."),
         .aiRating = 3,
     },
+
+    [ABILITY_MULTITYPE_LEGEND] =
+    {
+        .name = _("Multitype"),
+        .description = COMPOUND_STRING("Shifting type in battle"),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
+    },
 };

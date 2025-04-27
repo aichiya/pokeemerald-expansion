@@ -11414,64 +11414,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 50,
-                "max_level": 50,
+                "min_level": 60,
+                "max_level": 60,
                 "species": "SPECIES_EEVEE"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_GENGAR"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_GHOLDENGO"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_CHARIZARD"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_DRIFBLIM"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_DIANCIE"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_CORVIKNIGHT"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_ZYGARDE"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_MILOTIC"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_EMOLGA"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_DRAGONITE"
               },
               {
-                "min_level": 50,
-                "max_level": 50,
-                "species": "SPECIES_EEVEE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_FLOETTE_ETERNAL"
               }
             ]
           },

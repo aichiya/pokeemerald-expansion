@@ -223,6 +223,10 @@ static bool32 ShouldTeraShellDistortTypeMatchups(u32 move, u32 battlerDef, u32 a
      && !IsBattleMoveStatus(move)
      && abilityDef == ABILITY_TERA_SHELL)
         return TRUE;
+    else if (!gSpecialStatuses[battlerDef].distortedTypeMatchups
+     && !IsBattleMoveStatus(move)
+     && abilityDef == ABILITY_MULTITYPE_LEGEND)
+        return TRUE;
 
     return FALSE;
 }
@@ -11134,6 +11138,7 @@ static inline void MulByTypeEffectiveness(uq4_12_t *modifier, u32 move, u32 move
     uq4_12_t mod = GetTypeModifier(moveType, defType);
     u32 abilityAtk = GetBattlerAbility(battlerAtk);
     u32 abilityDef = GetBattlerAbility(battlerDef);
+    u32 moveEffect = GetMoveEffect(move);
 
     if (mod == UQ_4_12(0.0) && GetBattlerHoldEffect(battlerDef, TRUE) == HOLD_EFFECT_RING_TARGET)
     {
@@ -11191,7 +11196,13 @@ static inline void MulByTypeEffectiveness(uq4_12_t *modifier, u32 move, u32 move
             gSpecialStatuses[battlerDef].teraShellAbilityDone = TRUE;
         }
     }
-
+    if (moveEffect == EFFECT_SUPER_EFFECTIVE_ON_FOES_TYPES)
+    {
+        if (abilityDef == ABILITY_MULTITYPE_LEGEND)
+            mod = UQ_4_12(1.0);
+        else
+            mod = UQ_4_12(2.0);
+    }
     if (FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE)
     {
         if (abilityAtk == ABILITY_FANTASY_BREAKER && abilityDef == ABILITY_FANTASY_BREAKER)

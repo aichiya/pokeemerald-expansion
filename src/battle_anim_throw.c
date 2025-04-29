@@ -190,7 +190,7 @@ static const struct CompressedSpriteSheet sBallParticleSpriteSheets[] =
     [BALL_CHERISH]  = {gBattleAnimSpriteGfx_Particles2,     0x100, TAG_PARTICLES_CHERISHBALL},
 };
 
-static const struct CompressedSpritePalette sBallParticlePalettes[] =
+static const struct SpritePalette sBallParticlePalettes[] =
 {
     [BALL_STRANGE]  = {gBattleAnimSpritePal_CircleImpact,   TAG_PARTICLES_STRANGEBALL},
     [BALL_POKE]     = {gBattleAnimSpritePal_CircleImpact,   TAG_PARTICLES_POKEBALL},
@@ -706,7 +706,7 @@ void AnimTask_UnusedLevelUpHealthBox(u8 taskId)
     GetBattleAnimBg1Data(&animBgData);
     AnimLoadCompressedBgTilemap(animBgData.bgId, UnusedLevelupAnimationTilemap);
     AnimLoadCompressedBgGfx(animBgData.bgId, UnusedLevelupAnimationGfx, animBgData.tilesOffset);
-    LoadCompressedPalette(gCureBubblesPal, BG_PLTT_ID(animBgData.paletteId), PLTT_SIZE_4BPP);
+    LoadPalette(gCureBubblesPal, BG_PLTT_ID(animBgData.paletteId), PLTT_SIZE_4BPP);
 
     gBattle_BG1_X = -gSprites[spriteId3].x + 32;
     gBattle_BG1_Y = -gSprites[spriteId3].y - 32;
@@ -1770,7 +1770,7 @@ static void LoadBallParticleGfx(u8 ballId)
     if (GetSpriteTileStartByTag(sBallParticleSpriteSheets[ballId].tag) == 0xFFFF)
     {
         LoadCompressedSpriteSheetUsingHeap(&sBallParticleSpriteSheets[ballId]);
-        LoadCompressedSpritePaletteUsingHeap(&sBallParticlePalettes[ballId]);
+        LoadSpritePalette(&sBallParticlePalettes[ballId]);
     }
 }
 
@@ -2460,8 +2460,8 @@ void TryShinyAnimation(u8 battler, struct Pokemon *mon)
             {
                 if (GetSpriteTileStartByTag(ANIM_TAG_SMALL_CLOUD) == 0xFFFF)
                 {
-                    LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_SMALL_CLOUD - ANIM_SPRITES_START]);
-                    LoadCompressedSpritePaletteUsingHeap(&gBattleAnimPaletteTable[ANIM_TAG_LETTER_Z - ANIM_SPRITES_START]);
+                    LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
+                    LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
                 }
 
                 taskCirc = CreateTask(Task_ShinyStarsNega, 10);
@@ -2477,7 +2477,7 @@ void TryShinyAnimation(u8 battler, struct Pokemon *mon)
                 if (GetSpriteTileStartByTag(ANIM_TAG_GOLD_STARS) == 0xFFFF)
                 {
                     LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
-                    LoadCompressedSpritePaletteUsingHeap(&gBattleAnimPaletteTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
+                    LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
                 }
 
                 taskCirc = CreateTask(Task_ShinyStars, 10);
@@ -2707,7 +2707,7 @@ void AnimTask_LoadPokeblockGfx(u8 taskId)
     u8 UNUSED paletteIndex;
 
     LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_POKEBLOCK - ANIM_SPRITES_START]);
-    LoadCompressedSpritePaletteUsingHeap(&gBattleAnimPaletteTable[ANIM_TAG_POKEBLOCK - ANIM_SPRITES_START]);
+    LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_POKEBLOCK - ANIM_SPRITES_START]);
     paletteIndex = IndexOfSpritePaletteTag(ANIM_TAG_POKEBLOCK);
     DestroyAnimVisualTask(taskId);
 }

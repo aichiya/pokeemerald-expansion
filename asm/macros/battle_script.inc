@@ -829,7 +829,7 @@
 	.4byte \failInstr
 	.endm
 
-	.macro damagetohalftargethp
+	.macro unused_0x94
 	.byte 0x94
 	.endm
 
@@ -877,11 +877,11 @@
 	.byte 0x9e
 	.endm
 
-	.macro dmgtolevel
+	.macro unused_0x9f
 	.byte 0x9f
 	.endm
 
-	.macro psywavedamageeffect
+	.macro unused_0xA0
 	.byte 0xa0
 	.endm
 
@@ -1007,7 +1007,7 @@
 	.4byte \jumpInstr
 	.endm
 
-	.macro unused_bb
+	.macro tryhealingitem
 	.byte 0xbb
 	.endm
 
@@ -1140,9 +1140,8 @@
 	.4byte \failInstr
 	.endm
 
-	.macro trywish turnNumber:req, failInstr:req
+	.macro trywish failInstr:req
 	.byte 0xd4
-	.byte \turnNumber
 	.4byte \failInstr
 	.endm
 
@@ -1526,12 +1525,6 @@
 	.4byte \jumpInstr
 	.endm
 
-	.macro jumpifemergencyexited battler:req, jumpInstr:req
-	callnative BS_JumpIfEmergencyExited
-	.byte \battler
-	.4byte \jumpInstr
-	.endm
-
 	.macro jumpifelectricabilityaffected battler:req, ability:req, jumpInstr:req
 	callnative BS_JumpIfElectricAbilityAffected
 	.byte \battler
@@ -1661,10 +1654,6 @@
 
 	.macro trytriggerstatusform
 	callnative BS_TryTriggerStatusForm
-	.endm
-
-	.macro setdynamicmovecategory
-	callnative BS_SetDynamicMoveCategory
 	.endm
 
 	.macro tryupperhand failInstr:req
@@ -1835,6 +1824,12 @@
 	.4byte \failInstr
 	.endm
 
+	.macro jumpifcangigantamax battler:req, jumpInstr:req
+	callnative BS_JumpIfCanGigantamax
+	.byte \battler
+	.4byte \jumpInstr
+	.endm
+
 @ various command changed to more readable macros
 	.macro cancelmultiturnmoves battler:req
 	various \battler, VARIOUS_CANCEL_MULTI_TURN_MOVES
@@ -1960,14 +1955,6 @@
 	various \battler, VARIOUS_RESTORE_PP
 	.endm
 
-	.macro tryactivatemoxie battler:req
-	various \battler, VARIOUS_TRY_ACTIVATE_MOXIE
-	.endm
-
-	.macro tryactivatebeastboost battler:req
-	various \battler, VARIOUS_TRY_ACTIVATE_BEAST_BOOST
-	.endm
-
 	.macro tryactivatereceiver battler:req
 	various \battler, VARIOUS_TRY_ACTIVATE_RECEIVER
 	.endm
@@ -2051,10 +2038,6 @@
 	.macro jumpifcantuselastresort battler:req, jumpInstr:req
 	various \battler, VARIOUS_TRY_LAST_RESORT
 	.4byte \jumpInstr
-	.endm
-
-	.macro setargtobattledamage
-	various BS_ATTACKER, VARIOUS_SET_ARG_TO_BATTLE_DAMAGE
 	.endm
 
 	.macro tryautotomize battler:req, failInstr:req
@@ -2251,10 +2234,6 @@
 	.4byte \jumpInstr
 	.endm
 
-	.macro tryactivategrimneigh, battler:req
-	various \battler, VARIOUS_TRY_ACTIVATE_GRIM_NEIGH
-	.endm
-
 	.macro consumeberry battler:req, fromBattler:req
 	various \battler, VARIOUS_CONSUME_BERRY
 	.byte \fromBattler
@@ -2313,10 +2292,6 @@
 	.macro jumpifnotrototilleraffected battler:req, jumpInstr:req
 	various \battler, VARIOUS_JUMP_IF_NOT_ROTOTILLER_AFFECTED
 	.4byte \jumpInstr
-	.endm
-
-	.macro tryactivatebattlebond battler:req
-	various \battler, VARIOUS_TRY_ACTIVATE_BATTLE_BOND
 	.endm
 
 	.macro jumpifcantreverttoprimal jumpInstr:req

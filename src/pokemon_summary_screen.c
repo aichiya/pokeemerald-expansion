@@ -1061,7 +1061,7 @@ static const struct CompressedSpriteSheet sMoveSelectorSpriteSheet =
     .size = 0x400,
     .tag = TAG_MOVE_SELECTOR
 };
-static const struct CompressedSpritePalette sMoveSelectorSpritePal =
+static const struct SpritePalette sMoveSelectorSpritePal =
 {
     .data = gSummaryMoveSelect_Pal,
     .tag = TAG_MOVE_SELECTOR
@@ -1140,7 +1140,7 @@ static const struct CompressedSpriteSheet sStatusIconsSpriteSheet =
     .size = 0x400,
     .tag = TAG_MON_STATUS
 };
-static const struct CompressedSpritePalette sStatusIconsSpritePalette =
+static const struct SpritePalette sStatusIconsSpritePalette =
 {
     .data = gStatusPal_Icons,
     .tag = TAG_MON_STATUS
@@ -1441,7 +1441,7 @@ static bool8 DecompressGraphics(void)
         sMonSummaryScreen->switchCounter++;
         break;
     case 6:
-        LoadCompressedPalette(gSummaryScreen_Pal, BG_PLTT_ID(0), 8 * PLTT_SIZE_4BPP);
+        LoadPalette(gSummaryScreen_Pal, BG_PLTT_ID(0), 8 * PLTT_SIZE_4BPP);
         LoadPalette(&gPPTextPalette, BG_PLTT_ID(8) + 1, PLTT_SIZEOF(16 - 1));
         sMonSummaryScreen->switchCounter++;
         break;
@@ -1458,15 +1458,15 @@ static bool8 DecompressGraphics(void)
         sMonSummaryScreen->switchCounter++;
         break;
     case 10:
-        LoadCompressedSpritePalette(&sStatusIconsSpritePalette);
+        LoadSpritePalette(&sStatusIconsSpritePalette);
         sMonSummaryScreen->switchCounter++;
         break;
     case 11:
-        LoadCompressedSpritePalette(&sMoveSelectorSpritePal);
+        LoadSpritePalette(&sMoveSelectorSpritePal);
         sMonSummaryScreen->switchCounter++;
         break;
     case 12:
-        LoadCompressedPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
+        LoadPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
         LoadCompressedSpriteSheet(&gSpriteSheet_CategoryIcons);
         LoadSpritePalette(&gSpritePal_CategoryIcons);
         sMonSummaryScreen->switchCounter = 0;
@@ -1722,7 +1722,7 @@ static void Task_HandleInput(u8 taskId)
                     PlaySE(SE_SELECT);
                     BeginCloseSummaryScreen(taskId);
                 }
-                else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES 
+                else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES
                          || sMonSummaryScreen->currPageIndex == PSS_PAGE_CONTEST_MOVES)
                 {
                     PlaySE(SE_SELECT);
@@ -1775,7 +1775,7 @@ static u8 IncrementSkillsStatsMode(u8 mode)
             sMonSummaryScreen->skillsPageMode = SUMMARY_SKILLS_MODE_EVS;
             return SUMMARY_SKILLS_MODE_EVS;
         }
-        else 
+        else
         {
             sMonSummaryScreen->skillsPageMode = SUMMARY_SKILLS_MODE_IVS;
             return SUMMARY_SKILLS_MODE_IVS;
@@ -1958,7 +1958,7 @@ static void Task_ChangeSummaryMon(u8 taskId)
         if (P_SUMMARY_SCREEN_RENAME && sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
             ShowUtilityPrompt(SUMMARY_MODE_NORMAL);
         if (ShouldShowIvEvPrompt() && sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
-        {   
+        {
             sMonSummaryScreen->skillsPageMode = SUMMARY_SKILLS_MODE_STATS;
             ChangeStatLabel(SUMMARY_SKILLS_MODE_STATS);
         }
@@ -2110,7 +2110,7 @@ static void ChangePage(u8 taskId, s8 delta)
     CreateTextPrinterTask(sMonSummaryScreen->currPageIndex);
     HidePageSpecificSprites();
 
-    if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS 
+    if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS
         || (sMonSummaryScreen->currPageIndex + delta) == PSS_PAGE_SKILLS)
     {
         struct Pokemon *mon = &sMonSummaryScreen->currentMon;
@@ -2246,7 +2246,7 @@ static void SwitchToMoveSelection(u8 taskId)
     {
         if (ShouldShowMoveRelearner())
             ClearWindowTilemap(PSS_LABEL_WINDOW_PROMPT_RELEARN);
-        
+
         ShowUtilityPrompt(SUMMARY_MODE_SELECT_MOVE);
     }
     else
@@ -8262,10 +8262,10 @@ static void BufferStat(u8 *dst, u8 statIndex, u32 stat, u32 strId, u32 n)
     else
         txtPtr = StringCopy(dst, sTextNatureNeutral);
 
-    if (!P_SUMMARY_SCREEN_IV_EV_VALUES 
+    if (!P_SUMMARY_SCREEN_IV_EV_VALUES
         && sMonSummaryScreen->skillsPageMode == SUMMARY_SKILLS_MODE_IVS)
         StringAppend(dst, GetLetterGrade(stat));
-    else 
+    else
         ConvertIntToDecimalStringN(txtPtr, stat, STR_CONV_MODE_RIGHT_ALIGN, n);
 
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(strId, dst);
@@ -8279,7 +8279,7 @@ static const u8 *GetLetterGrade(u32 stat)
     static const u8 gText_GradeB[] = _("B");
     static const u8 gText_GradeA[] = _("A");
     static const u8 gText_GradeS[] = _("S");
-    
+
     if (stat > 0 && stat <= 15)
         return gText_GradeD;
     else if (stat > 15 && stat <= 25)
@@ -8321,7 +8321,7 @@ static void BufferLeftColumnIvEvStats(void)
     u8 *hpIvEvString = Alloc(20);
     u8 *attackIvEvString = Alloc(20);
     u8 *defenseIvEvString = Alloc(20);
-    
+
     DynamicPlaceholderTextUtil_Reset();
 
     BufferStat(hpIvEvString, STAT_HP, sMonSummaryScreen->summary.currentHP, 0, 7);
@@ -8338,7 +8338,7 @@ static void BufferLeftColumnIvEvStats(void)
 static void PrintLeftColumnStats(void)
 {
     int x;
-    
+
     if (sMonSummaryScreen->skillsPageMode == SUMMARY_SKILLS_MODE_IVS && !P_SUMMARY_SCREEN_IV_EV_VALUES)
         x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 46);
     else
@@ -8361,7 +8361,7 @@ static void BufferRightColumnStats(void)
 static void PrintRightColumnStats(void)
 {
     int x;
-    
+
     if (sMonSummaryScreen->skillsPageMode == SUMMARY_SKILLS_MODE_IVS && !P_SUMMARY_SCREEN_IV_EV_VALUES)
         x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 20);
     else
@@ -8897,7 +8897,7 @@ static u8 LoadMonGfxAndSprite(struct Pokemon *mon, s16 *state)
         (*state)++;
         return 0xFF;
     case 1:
-        LoadCompressedSpritePaletteWithTag(GetMonSpritePalFromSpeciesAndPersonality(summary->species2, summary->isShiny, summary->pid), summary->species2);
+        LoadSpritePaletteWithTag(GetMonSpritePalFromSpeciesAndPersonality(summary->species2, summary->isShiny, summary->pid), summary->species2);
         SetMultiuseSpriteTemplateToPokemon(summary->species2, B_POSITION_OPPONENT_LEFT);
         (*state)++;
         return 0xFF;

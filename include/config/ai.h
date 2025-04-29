@@ -44,8 +44,18 @@
 #define SHOULD_SWITCH_REGENERATOR_PERCENTAGE                        50
 #define SHOULD_SWITCH_REGENERATOR_STATS_RAISED_PERCENTAGE           20
 
+// AI switchin considerations
+#define ALL_MOVES_BAD_STATUS_MOVES_BAD                          FALSE // If the AI has no moves that affect the target, ShouldSwitchIfAllMovesBad can prompt a switch. Enabling this config will ignore status moves that can affect the target when making this decision.
+
 // AI held item-based move scoring
 #define LOW_ACCURACY_THRESHOLD                                  75 // Moves with accuracy equal OR below this value are considered low accuracy 
+
+// AI move scoring
+#define STATUS_MOVE_FOCUS_PUNCH_CHANCE                          50 // Chance the AI will use a status move if the player's best move is Focus Punch
+
+// AI damage calc considerations
+#define RISKY_AI_CRIT_STAGE_THRESHOLD                           2   // Stat stages at which Risky will assume it gets a crit
+#define RISKY_AI_CRIT_THRESHOLD_GEN_1                           128 // "Stat stage" at which Risky will assume it gets a crit with gen 1 mechanics (this translates to an X / 255 % crit threshold)
 
 // AI prediction chances
 #define PREDICT_SWITCH_CHANCE                                   50

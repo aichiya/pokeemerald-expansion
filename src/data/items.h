@@ -14108,4 +14108,1111 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_MEMORY_SHARD_G1] =
+    {
+        .name = _("Memory Shard G1"),
+        .pluralName = _("Memory Shard G1"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe creation of\nBoneka in Gensokyo."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_G2] =
+    {
+        .name = _("Memory Shard G2"),
+        .pluralName = _("Memory Shard G2"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe evil spirit of\nBoneka in Gensokyo."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_G3] =
+    {
+        .name = _("Memory Shard G3"),
+        .pluralName = _("Memory Shard G3"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe story of Concealed\nThe Conclusion."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_G4] =
+    {
+        .name = _("Memory Shard G4"),
+        .pluralName = _("Memory Shard G4"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe modern Boneka\nappearance."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_G5] =
+    {
+        .name = _("Memory Shard G5"),
+        .pluralName = _("Memory Shard G5"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe landscape of\nGensokyo."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_G6] =
+    {
+        .name = _("Memory Shard G6"),
+        .pluralName = _("Memory Shard G6"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_G7] =
+    {
+        .name = _("Memory Shard G7"),
+        .pluralName = _("Memory Shard G7"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_G8] =
+    {
+        .name = _("Memory Shard G8"),
+        .pluralName = _("Memory Shard G8"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_G9] =
+    {
+        .name = _("Memory Shard G9"),
+        .pluralName = _("Memory Shard G9"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_GENSOKYO_MEMORY] =
+    {
+        .name = _("Gensokyo Memory"),
+        .pluralName = _("Gensokyo Memory"),
+        .price = 0,
+        .description = COMPOUND_STRING("A crystal containing\nthe memories of\nGensokyo."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_StellarTeraShard,
+        .iconPalette = gItemIconPalette_StellarTeraShard,
+    },
+
+    [ITEM_MEMORY_SHARD_H1] =
+    {
+        .name = _("Memory Shard H1"),
+        .pluralName = _("Memory Shard H1"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe invasion of\nvertexes in 2018."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_H2] =
+    {
+        .name = _("Memory Shard H2"),
+        .pluralName = _("Memory Shard H2"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nbraves from 300\nyears in the future."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_H3] =
+    {
+        .name = _("Memory Shard H3"),
+        .pluralName = _("Memory Shard H3"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nbraves from 297\nyears in the future."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_H4] =
+    {
+        .name = _("Memory Shard H4"),
+        .pluralName = _("Memory Shard H4"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nbraves from the\nbonquet briliance."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_H5] =
+    {
+        .name = _("Memory Shard H5"),
+        .pluralName = _("Memory Shard H5"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nbraves from the\nopposing gods."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_H6] =
+    {
+        .name = _("Memory Shard H6"),
+        .pluralName = _("Memory Shard H6"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_H7] =
+    {
+        .name = _("Memory Shard H7"),
+        .pluralName = _("Memory Shard H7"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_H8] =
+    {
+        .name = _("Memory Shard H8"),
+        .pluralName = _("Memory Shard H8"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_H9] =
+    {
+        .name = _("Memory Shard H9"),
+        .pluralName = _("Memory Shard H9"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_HERO_MEMORY] =
+    {
+        .name = _("Hero Memory"),
+        .pluralName = _("Hero Memory"),
+        .price = 0,
+        .description = COMPOUND_STRING("A crystal containing\nthe memories of\nBraves."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_StellarTeraShard,
+        .iconPalette = gItemIconPalette_StellarTeraShard,
+    },
+
+    [ITEM_MEMORY_SHARD_K1] =
+    {
+        .name = _("Memory Shard K1"),
+        .pluralName = _("Memory Shard K1"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nliving as a crow."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_K2] =
+    {
+        .name = _("Memory Shard K2"),
+        .pluralName = _("Memory Shard K2"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nDeus Ex-Machina."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_K3] =
+    {
+        .name = _("Memory Shard K3"),
+        .pluralName = _("Memory Shard K3"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nschool on the hill\nof the mountain."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_K4] =
+    {
+        .name = _("Memory Shard K4"),
+        .pluralName = _("Memory Shard K4"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nschool and friends."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_K5] =
+    {
+        .name = _("Memory Shard K5"),
+        .pluralName = _("Memory Shard K5"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_K6] =
+    {
+        .name = _("Memory Shard K6"),
+        .pluralName = _("Memory Shard K6"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_K7] =
+    {
+        .name = _("Memory Shard K7"),
+        .pluralName = _("Memory Shard K7"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_K8] =
+    {
+        .name = _("Memory Shard K8"),
+        .pluralName = _("Memory Shard K8"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_K9] =
+    {
+        .name = _("Memory Shard K9"),
+        .pluralName = _("Memory Shard K9"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_KEY_MEMORY] =
+    {
+        .name = _("Key Memory"),
+        .pluralName = _("Key Memory"),
+        .price = 0,
+        .description = COMPOUND_STRING("A crystal containing\nthe memories of\nsad stories."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_StellarTeraShard,
+        .iconPalette = gItemIconPalette_StellarTeraShard,
+    },
+
+    [ITEM_MEMORY_SHARD_C1] =
+    {
+        .name = _("Memory Shard C1"),
+        .pluralName = _("Memory Shard C1"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe false future."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_C2] =
+    {
+        .name = _("Memory Shard C2"),
+        .pluralName = _("Memory Shard C2"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe emmisaries of\nlight."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_C3] =
+    {
+        .name = _("Memory Shard C3"),
+        .pluralName = _("Memory Shard C3"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe transformable\ntwo fighters."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_C4] =
+    {
+        .name = _("Memory Shard C4"),
+        .pluralName = _("Memory Shard C4"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe dream and the\nwishes."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_C5] =
+    {
+        .name = _("Memory Shard C5"),
+        .pluralName = _("Memory Shard C5"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe dancing peach."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_C6] =
+    {
+        .name = _("Memory Shard C6"),
+        .pluralName = _("Memory Shard C6"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe language of\nflowers."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_C7] =
+    {
+        .name = _("Memory Shard C7"),
+        .pluralName = _("Memory Shard C7"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe rhythm and\nthe melody."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_C8] =
+    {
+        .name = _("Memory Shard C8"),
+        .pluralName = _("Memory Shard C8"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nultra smile."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_C9] =
+    {
+        .name = _("Memory Shard C9"),
+        .pluralName = _("Memory Shard C9"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe strongest\nstudent council president."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_CURE_MEMORY] =
+    {
+        .name = _("Cure Memory"),
+        .pluralName = _("Cure Memory"),
+        .price = 0,
+        .description = COMPOUND_STRING("A crystal containing\nthe memories of\nfigting magical girls."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_StellarTeraShard,
+        .iconPalette = gItemIconPalette_StellarTeraShard,
+    },
+
+    [ITEM_MEMORY_SHARD_B1] =
+    {
+        .name = _("Memory Shard B1"),
+        .pluralName = _("Memory Shard B1"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\na line without\nthe Judgment Day."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_B2] =
+    {
+        .name = _("Memory Shard B2"),
+        .pluralName = _("Memory Shard B2"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe Fortissimo."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_B3] =
+    {
+        .name = _("Memory Shard B3"),
+        .pluralName = _("Memory Shard B3"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_B4] =
+    {
+        .name = _("Memory Shard B4"),
+        .pluralName = _("Memory Shard B4"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_B5] =
+    {
+        .name = _("Memory Shard B5"),
+        .pluralName = _("Memory Shard B5"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_B6] =
+    {
+        .name = _("Memory Shard B6"),
+        .pluralName = _("Memory Shard B6"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_B7] =
+    {
+        .name = _("Memory Shard B7"),
+        .pluralName = _("Memory Shard B7"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_B8] =
+    {
+        .name = _("Memory Shard B8"),
+        .pluralName = _("Memory Shard B8"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_B9] =
+    {
+        .name = _("Memory Shard B9"),
+        .pluralName = _("Memory Shard B9"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_BATTLE_MEMORY] =
+    {
+        .name = _("Battle Memory"),
+        .pluralName = _("Battle Memory"),
+        .price = 0,
+        .description = COMPOUND_STRING("A crystal containing\nthe memories of\nbattle girls."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_StellarTeraShard,
+        .iconPalette = gItemIconPalette_StellarTeraShard,
+    },
+
+    [ITEM_MEMORY_SHARD_M1] =
+    {
+        .name = _("Memory Shard M1"),
+        .pluralName = _("Memory Shard M1"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthey who are called moe."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_M2] =
+    {
+        .name = _("Memory Shard M2"),
+        .pluralName = _("Memory Shard M2"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\ncrossing the other\nside of Pokemon."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_M3] =
+    {
+        .name = _("Memory Shard M3"),
+        .pluralName = _("Memory Shard M3"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_M4] =
+    {
+        .name = _("Memory Shard M4"),
+        .pluralName = _("Memory Shard M4"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_M5] =
+    {
+        .name = _("Memory Shard M5"),
+        .pluralName = _("Memory Shard M5"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_M6] =
+    {
+        .name = _("Memory Shard M6"),
+        .pluralName = _("Memory Shard M6"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_M7] =
+    {
+        .name = _("Memory Shard M7"),
+        .pluralName = _("Memory Shard M7"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_M8] =
+    {
+        .name = _("Memory Shard M8"),
+        .pluralName = _("Memory Shard M8"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_M9] =
+    {
+        .name = _("Memory Shard M9"),
+        .pluralName = _("Memory Shard M9"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_ANOTHER_MEMORY] =
+    {
+        .name = _("Another Memory"),
+        .pluralName = _("Another Memory"),
+        .price = 0,
+        .description = COMPOUND_STRING("A crystal containing\nthe memories of\nPokemon another side."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_StellarTeraShard,
+        .iconPalette = gItemIconPalette_StellarTeraShard,
+    },
+
+    [ITEM_MEMORY_SHARD_X1] =
+    {
+        .name = _("Memory Shard X1"),
+        .pluralName = _("Memory Shard X1"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:\nthe passed away\nKamen Rider."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_X2] =
+    {
+        .name = _("Memory Shard X2"),
+        .pluralName = _("Memory Shard X2"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_X3] =
+    {
+        .name = _("Memory Shard X3"),
+        .pluralName = _("Memory Shard X3"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_X4] =
+    {
+        .name = _("Memory Shard X4"),
+        .pluralName = _("Memory Shard X4"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_X5] =
+    {
+        .name = _("Memory Shard X5"),
+        .pluralName = _("Memory Shard X5"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_X6] =
+    {
+        .name = _("Memory Shard X6"),
+        .pluralName = _("Memory Shard X6"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_X7] =
+    {
+        .name = _("Memory Shard X7"),
+        .pluralName = _("Memory Shard X7"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_X8] =
+    {
+        .name = _("Memory Shard X8"),
+        .pluralName = _("Memory Shard X8"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_MEMORY_SHARD_X9] =
+    {
+        .name = _("Memory Shard X9"),
+        .pluralName = _("Memory Shard X9"),
+        .price = 0,
+        .description = COMPOUND_STRING("Memory shard:"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CometShard,
+        .iconPalette = gItemIconPalette_CometShard,
+    },
+
+    [ITEM_EXTRA_MEMORY] =
+    {
+        .name = _("Extra Memory"),
+        .pluralName = _("Extra Memory"),
+        .price = 0,
+        .description = COMPOUND_STRING("A crystal containing\nvarious memories from\nother worlds."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_StellarTeraShard,
+        .iconPalette = gItemIconPalette_StellarTeraShard,
+    },
+
+    [ITEM_SHARD_OF_DREAM] =
+    {
+        .name = _("Shard of Dream"),
+        .pluralName = _("Shard of Dream"),
+        .price = 0,
+        .description = COMPOUND_STRING("A shard of dream."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ClearAmulet,
+        .iconPalette = gItemIconPalette_ClearAmulet,
+    },
+
+    [ITEM_TOPAZ] =
+    {
+        .name = _("Topaz"),
+        .pluralName = _("Topaz"),
+        .price = 0,
+        .description = COMPOUND_STRING("A beautiful yellow-\ncolored gem."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Ruby,
+    },
+
+    [ITEM_AMETHYST] =
+    {
+        .name = _("Amethyst"),
+        .pluralName = _("Amethyst"),
+        .price = 0,
+        .description = COMPOUND_STRING("A beautiful purple-\ncolored gem."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Ruby,
+    },
+
+    [ITEM_EMERALD] =
+    {
+        .name = _("Emerald"),
+        .pluralName = _("Emerald"),
+        .price = 0,
+        .description = COMPOUND_STRING("A beautiful green-\ncolored gem."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Ruby,
+    },
+
+    [ITEM_DIAMOND] =
+    {
+        .name = _("Diamond"),
+        .pluralName = _("Diamond"),
+        .price = 0,
+        .description = COMPOUND_STRING("A beautiful light\nblue-colored gem."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Ruby,
+    },
+
+    [ITEM_PEARL_GEMSTONE] =
+    {
+        .name = _("Pearl Gemstone"),
+        .pluralName = _("Pearl Gemstone"),
+        .price = 0,
+        .description = COMPOUND_STRING("A beautiful pink-\ncolored gem."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Ruby,
+    },
+
+    [ITEM_EMOTION_STONE] =
+    {
+        .name = _("Emotion Stone"),
+        .pluralName = _("Emotion Stone"),
+        .price = 0,
+        .description = COMPOUND_STRING("A stone that holds\ncrystalized emotion\nof people."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_LifeOrb,
+        .iconPalette = gItemIconPalette_LifeOrb,
+    },
+
+    [ITEM_ANCIENT_KRIS] =
+    {
+        .name = _("Ancient Kris"),
+        .pluralName = _("Ancient Kris"),
+        .price = 0,
+        .description = COMPOUND_STRING("An ancient weapon\nfrom hundred years\nago."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_RustedSword,
+        .iconPalette = gItemIconPalette_RustedWeapons,
+    },
+
+    [ITEM_7_FLOWERS] =
+    {
+        .name = _("7 Flowers"),
+        .pluralName = _("7 Flowers"),
+        .price = 0,
+        .description = COMPOUND_STRING("Flowers that used\nfor cleaning and\npreserving Krises."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gracidea,
+        .iconPalette = gItemIconPalette_Gracidea,
+    },
+
 };

@@ -21318,7 +21318,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 170,
         .type = TYPE_NEW_FLYING,
         .accuracy = 90,
-        .recoil = 33,
+        .argument = { .recoilPercentage = 33 },
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

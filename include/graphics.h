@@ -3401,15 +3401,15 @@ extern const u16 gBattleIcons_Pal2[];
 // custom
 
 extern const u32 gBattleAnimBgImage_UBWField[];
-extern const u32 gBattleAnimBgPalette_UBWField[];
+extern const u16 gBattleAnimBgPalette_UBWField[];
 extern const u32 gBattleAnimBgTilemap_UBWField[];
 
 extern const u32 gBattleAnimBgImage_SabotenMatrix[];
-extern const u32 gBattleAnimBgPalette_SabotenMatrix[];
+extern const u16 gBattleAnimBgPalette_SabotenMatrix[];
 extern const u32 gBattleAnimBgTilemap_SabotenMatrix[];
 
 extern const u32 gBattleAnimBgImage_ElectricHeritage[];
-extern const u32 gBattleAnimBgPalette_ElectricHeritage[];
+extern const u16 gBattleAnimBgPalette_ElectricHeritage[];
 extern const u32 gBattleAnimBgTilemap_ElectricHeritage[];
 
 #endif //GUARD_GRAPHICS_H

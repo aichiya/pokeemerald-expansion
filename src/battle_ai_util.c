@@ -1867,8 +1867,8 @@ bool32 ShouldLowerStat(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 stat)
     case ABILITY_CLEAR_BODY:
     case ABILITY_WHITE_SMOKE:
     case ABILITY_FULL_METAL_BODY:
-	case ABILITY_HAKUREI_MIKO;
-	case ABILITY_WINNING_COMBINATION_1;
+	case ABILITY_HAKUREI_MIKO:
+	case ABILITY_WINNING_COMBINATION_1:
         return FALSE;
     }
 

@@ -5636,16 +5636,6 @@ u32 GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode mode, u16 
                 if (mode == EVO_MODE_BATTLE_ONLY && evolutions[i].param <= level)
                     conditionsMet = TRUE;
                 break;
-            case EVO_LEVEL_VOID:
-                if ((personality % evolutions[i].param) == 0
-                   && level >= 1
-                   && gMapHeader.regionMapSectionId == MAPSEC_KEY_ILLUSIONARY_WORLD2)
-                    targetSpecies = evolutions[i].targetSpecies;
-                break;
-            case EVO_RECOIL_DAMAGE_GENDERLESS:
-                if (evolutionTracker >= evolutions[i].param && GetMonGender(mon) == MON_GENDERLESS)
-                    targetSpecies = evolutions[i].targetSpecies;
-                break;
             }
 
             if (conditionsMet && DoesMonMeetAdditionalConditions(mon, evolutions[i].params, NULL, PARTY_SIZE, canStopEvo, evoState))

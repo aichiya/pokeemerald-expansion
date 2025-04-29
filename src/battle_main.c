@@ -5014,7 +5014,6 @@ s32 GetChosenMovePriority(u32 battler, u32 ability)
 s32 GetBattleMovePriority(u32 battler, u32 ability, u32 move)
 {
     s32 priority = 0;
-    u16 ability = GetBattlerAbility(battler);
     u8 rngTimeJacker;
 
     if (GetActiveGimmick(battler) == GIMMICK_Z_MOVE && !IsBattleMoveStatus(move))

@@ -1537,7 +1537,7 @@ const u32 gBattleAnimBgTilemap_MistyTerrain[] = INCBIN_U32("graphics/battle_anim
 #endif
 
 const u32 gBattleAnimBgImage_UBWField[] = INCBIN_U32("graphics/battle_anims/backgrounds/ubw_field.4bpp.lz");
-const u32 gBattleAnimBgPalette_UBWField[] = INCBIN_U32("graphics/battle_anims/backgrounds/ubw_field.gbapal.lz");
+const u16 gBattleAnimBgPalette_UBWField[] = INCBIN_U16("graphics/battle_anims/backgrounds/ubw_field.gbapal");
 const u32 gBattleAnimBgTilemap_UBWField[] = INCBIN_U32("graphics/battle_anims/backgrounds/ubw_field.bin.lz");
 
 const u32 gBattleAnimBgImage_Nightmare[] = INCBIN_U32("graphics/battle_anims/backgrounds/nightmare.4bpp.lz");
@@ -1603,11 +1603,11 @@ const u32 gBattleAnimBgTilemap_ZMoveMountain[] = INCBIN_U32("graphics/battle_ani
 
 const u16 gBattleAnimBgPalette_SteelBeam[] = INCBIN_U16("graphics/battle_anims/backgrounds/steel_beam.gbapal");
 
-const u32 gBattleAnimBgPalette_SabotenMatrix[] = INCBIN_U32("graphics/battle_anims/backgrounds/saboten_matrix.gbapal.lz");
+const u16 gBattleAnimBgPalette_SabotenMatrix[] = INCBIN_U16("graphics/battle_anims/backgrounds/saboten_matrix.gbapal");
 const u32 gBattleAnimBgImage_SabotenMatrix[] = INCBIN_U32("graphics/battle_anims/backgrounds/saboten_matrix.4bpp.lz");
 const u32 gBattleAnimBgTilemap_SabotenMatrix[] = INCBIN_U32("graphics/battle_anims/backgrounds/saboten_matrix.bin.lz");
 
-const u32 gBattleAnimBgPalette_ElectricHeritage[] = INCBIN_U32("graphics/battle_anims/backgrounds/electric_heritage.gbapal.lz");
+const u16 gBattleAnimBgPalette_ElectricHeritage[] = INCBIN_U16("graphics/battle_anims/backgrounds/electric_heritage.gbapal");
 const u32 gBattleAnimBgImage_ElectricHeritage[] = INCBIN_U32("graphics/battle_anims/backgrounds/electric_heritage.4bpp.lz");
 const u32 gBattleAnimBgTilemap_ElectricHeritage[] = INCBIN_U32("graphics/battle_anims/backgrounds/electric_heritage.bin.lz");
 

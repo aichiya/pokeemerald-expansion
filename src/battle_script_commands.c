@@ -2559,10 +2559,6 @@ static void Cmd_attackcanceler(void)
         return;
     }
 
-    if (AbilityBattleEffects(ABILITYEFFECT_MOVES_BLOCK, gBattlerTarget, 0, 0, 0))
-        return;
-    if (GetMoveEffect(gCurrentMove) == EFFECT_PARALYZE && AbilityBattleEffects(ABILITYEFFECT_ABSORBING, gBattlerTarget, 0, 0, gCurrentMove))
-
     u32 abilityDef = GetBattlerAbility(gBattlerTarget);
     if (CanAbilityBlockMove(gBattlerAttacker,
                             gBattlerTarget,

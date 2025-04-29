@@ -578,6 +578,20 @@ static bool32 HandleEndTurnLeechSeed(u32 battler)
         }
         effect = TRUE;
     }
+    else if ((gStatuses3[battler] & STATUS3_LEECHSEED)
+     && IsBattlerAlive(gStatuses3[battler] & STATUS3_LEECHSEED_BATTLER
+     && GetBattlerAbility(battler) == ABILITY_FANTASY_BREAKER))
+    {
+       if (!IsBattlerAtMaxHp(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+       {
+           gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
+           if (gBattleStruct->moveDamage[battler] == 0)
+               gBattleStruct->moveDamage[battler] = 1;
+           gBattleStruct->moveDamage[battler] *= -1;
+           BattleScriptExecute(BattleScript_LeechSeedOnAbilityPureWhiteActivates);
+           effect = TRUE;
+       }
+    }
 
     return effect;
 }
@@ -595,6 +609,18 @@ static bool32 HandleEndTurnPoison(u32 battler)
      && !IsBattlerProtectedByMagicGuard(battler, ability))
     {
         if (ability == ABILITY_POISON_HEAL)
+        {
+            if (!IsBattlerAtMaxHp(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+            {
+                gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
+                if (gBattleStruct->moveDamage[battler] == 0)
+                    gBattleStruct->moveDamage[battler] = 1;
+                gBattleStruct->moveDamage[battler] *= -1;
+                BattleScriptExecute(BattleScript_PoisonHealActivates);
+                effect = TRUE;
+            }
+        }
+        else if (ability == ABILITY_PURE_WHITE)
         {
             if (!IsBattlerAtMaxHp(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
             {
@@ -640,7 +666,8 @@ static bool32 HandleEndTurnBurn(u32 battler)
 
     if (gBattleMons[battler].status1 & STATUS1_BURN
      && IsBattlerAlive(battler)
-     && !IsBattlerProtectedByMagicGuard(battler, ability))
+     && !IsBattlerProtectedByMagicGuard(battler, ability)
+     && ability != ABILITY_PURE_WHITE)
     {
         gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / (B_BURN_DAMAGE >= GEN_7 ? 16 : 8);
         if (ability == ABILITY_HEATPROOF)
@@ -662,11 +689,14 @@ static bool32 HandleEndTurnFrostbite(u32 battler)
 {
     bool32 effect = FALSE;
 
+    u32 ability = GetBattlerAbility(battler);
+
     gBattleStruct->turnEffectsBattlerId++;
 
     if (gBattleMons[battler].status1 & STATUS1_FROSTBITE
      && IsBattlerAlive(battler)
-     && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler)))
+     && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler))
+     && ability != ABILITY_PURE_WHITE)
     {
         gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / (B_BURN_DAMAGE >= GEN_7 ? 16 : 8);
         if (gBattleStruct->moveDamage[battler] == 0)
@@ -682,11 +712,14 @@ static bool32 HandleEndTurnNightmare(u32 battler)
 {
     bool32 effect = FALSE;
 
+    u32 ability = GetBattlerAbility(battler);
+
     gBattleStruct->turnEffectsBattlerId++;
 
     if (gBattleMons[battler].status2 & STATUS2_NIGHTMARE
      && IsBattlerAlive(battler)
-     && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler)))
+     && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler))
+     && ability != ABILITY_PURE_WHITE)
     {
         if (gBattleMons[battler].status1 & STATUS1_SLEEP)
         {
@@ -709,11 +742,14 @@ static bool32 HandleEndTurnCurse(u32 battler)
 {
     bool32 effect = FALSE;
 
+    u32 ability = GetBattlerAbility(battler);
+
     gBattleStruct->turnEffectsBattlerId++;
 
     if (gBattleMons[battler].status2 & STATUS2_CURSED
      && IsBattlerAlive(battler)
-     && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler)))
+     && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler))
+     && ability != ABILITY_PURE_WHITE)
     {
         gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 4;
         if (gBattleStruct->moveDamage[battler] == 0)
@@ -729,11 +765,13 @@ static bool32 HandleEndTurnWrap(u32 battler)
 {
     bool32 effect = FALSE;
 
+    u32 ability = GetBattlerAbility(battler);
+
     gBattleStruct->turnEffectsBattlerId++;
 
     if (gBattleMons[battler].status2 & STATUS2_WRAPPED && IsBattlerAlive(battler))
     {
-        if (--gDisableStructs[battler].wrapTurns != 0 && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler)))
+        if (--gDisableStructs[battler].wrapTurns != 0 && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler)) && ability != ABILITY_PURE_WHITE)
         {
             gBattleScripting.animArg1 = gBattleStruct->wrappedMove[battler];
             gBattleScripting.animArg2 = gBattleStruct->wrappedMove[battler] >> 8;
@@ -763,11 +801,14 @@ static bool32 HandleEndTurnSaltCure(u32 battler)
 {
     bool32 effect = FALSE;
 
+    u32 ability = GetBattlerAbility(battler);
+
     gBattleStruct->turnEffectsBattlerId++;
 
     if (gStatuses4[battler] & STATUS4_SALT_CURE
      && IsBattlerAlive(battler)
-     && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler)))
+     && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler))
+     && ability != ABILITY_PURE_WHITE)
     {
         if (IS_BATTLER_ANY_TYPE(battler, TYPE_STEEL, TYPE_WATER))
             gBattleStruct->moveDamage[battler] = gBattleMons[battler].maxHP / 4;
@@ -1029,12 +1070,14 @@ static bool32 HandleEndTurnPerishSong(u32 battler)
 {
     bool32 effect = FALSE;
 
+    u32 ability = GetBattlerAbility(battler);
+
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (IsBattlerAlive(battler) && gStatuses3[battler] & STATUS3_PERISH_SONG)
+    if (IsBattlerAlive(battler) && gStatuses3[battler] & STATUS3_PERISH_SONG && ability != ABILITY_PURE_WHITE)
     {
         PREPARE_BYTE_NUMBER_BUFFER(gBattleTextBuff1, 1, gDisableStructs[battler].perishSongTimer);
-        if (gDisableStructs[battler].perishSongTimer == 0)
+        if (gDisableStructs[battler].perishSongTimer == 0 && ability)
         {
             gStatuses3[battler] &= ~STATUS3_PERISH_SONG;
             gBattleStruct->moveDamage[battler] = gBattleMons[battler].hp;
@@ -1333,6 +1376,8 @@ static bool32 HandleEndTurnTerrain(u32 battler)
         effect = EndTurnTerrain(STATUS_FIELD_GRASSY_TERRAIN, B_MSG_TERRAIN_END_GRASSY);
     else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
         effect = EndTurnTerrain(STATUS_FIELD_PSYCHIC_TERRAIN, B_MSG_TERRAIN_END_PSYCHIC);
+    else if (gFieldStatuses & STATUS_FIELD_UBW)
+        effect = EndTurnTerrain(STATUS_FIELD_UBW, B_MSG_UBW_END);
 
     return effect;
 }
@@ -1408,6 +1453,10 @@ static bool32 HandleEndTurnThirdEventBlock(u32 battler)
         case ABILITY_HARVEST:
         case ABILITY_MOODY:
         case ABILITY_PICKUP:
+        case ABILITY_LIFE_FORCE:
+        case ABILITY_FLORA_ELVIS:
+        case ABILITY_SHICHININ_MISAKI:
+        case ABILITY_GRIMOIRE_USER:
         case ABILITY_SPEED_BOOST:
             if (AbilityBattleEffects(ABILITYEFFECT_ENDTURN, battler, ability, 0, MOVE_NONE))
                 effect = TRUE;

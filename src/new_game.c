@@ -48,6 +48,8 @@
 #include "constants/items.h"
 #include "difficulty.h"
 #include "follower_npc.h"
+#include "derby.h"
+#include "constants/flags.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
 
@@ -177,6 +179,7 @@ void NewGameInitData(void)
     ClearBerryTrees();
     SetMoney(&gSaveBlock1Ptr->money, 3000);
     SetCoins(0);
+    GetNewDerby();
     ResetLinkContestBoolean();
     ResetGameStats();
     ClearAllContestWinnerPics();

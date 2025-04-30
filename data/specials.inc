@@ -575,3 +575,11 @@ gSpecials::
 	def_special SetLeadMonAllContestStats
 	def_special PartyMonBecomeEggRandom
 	def_special PrepareSecretBasePseudoTrainerBattleByVar
+	def_special StartBlackJack
+	def_special StartGacha
+	def_special StartBlockStacker
+	def_special StartDerby
+	def_special GetNewDerby
+	def_special StartSnake
+	def_special StartFlappyBird
+	def_special Special_ViewVoltorbFlip

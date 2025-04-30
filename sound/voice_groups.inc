@@ -328,6 +328,8 @@
 .include "sound/voicegroups/voicegroup713.inc" @ Modified HGSS Music Box Multi Sample
 .include "sound/voicegroups/voicegroup714.inc" @ Modified HGSS Piano Multi Sample
 
+.include "sound/voicegroups/voicegroup801.inc" @ Game corner expansion
+
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
 
 .include "sound/voicegroups/voicegroup999.inc" @ Test Instrument

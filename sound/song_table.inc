@@ -1660,6 +1660,15 @@ gSongTable::
 	song mus_gsc_gym_gssynth_test, 0, 0
 	song mus_thppordx_faith_synth, 0, 0
 	song mus_thppre_reincarnation_synth, 0, 0
+	song mus_casino_plus_1, 0, 0
+	song mus_casino_plus_2, 0, 0
+	song mus_casino_plus_3, 0, 0
+	song mus_casino_plus_4, 0, 0
+	song mus_casino_plus_5, 0, 0
+	song mus_casino_plus_6, 0, 0
+	song mus_casino_plus_7, 0, 0
+	song mus_casino_plus_8, 0, 0
+	song mus_casino_plus_9, 0, 0
 
 	.align 2
 dummy_song_header:

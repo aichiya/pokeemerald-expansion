@@ -1632,7 +1632,17 @@
 #define MUS_THPPORDX_FAITH_SYNTH 1657
 #define MUS_THPPRE_REINCARNATION_SYNTH 1658
 
-#define END_MUS 					MUS_THPPRE_REINCARNATION_SYNTH
+#define MUS_CASINO_PLUS_1           1659
+#define MUS_CASINO_PLUS_2           1660
+#define MUS_CASINO_PLUS_3           1661
+#define MUS_CASINO_PLUS_4           1662
+#define MUS_CASINO_PLUS_5           1663
+#define MUS_CASINO_PLUS_6           1664
+#define MUS_CASINO_PLUS_7           1665
+#define MUS_CASINO_PLUS_8           1666
+#define MUS_CASINO_PLUS_9           1667
+
+#define END_MUS 					MUS_CASINO_PLUS_9
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

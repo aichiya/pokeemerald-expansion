@@ -778,6 +778,25 @@ static const struct MenuAction MultichoiceList_BerryPlot[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_GCNew[] =
+{
+    {COMPOUND_STRING("RARE CANDY")},
+	{COMPOUND_STRING("SUN STONE")},
+	{COMPOUND_STRING("MOON STONE")},
+	{COMPOUND_STRING("CHOICE BAND")},
+	{COMPOUND_STRING("BRIGHT POWDER")},
+	{gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_GCNew2[] =
+{
+	{COMPOUND_STRING("FIRE STONE")},
+	{COMPOUND_STRING("THUNDER STONE")},
+	{COMPOUND_STRING("WATER STONE")},
+	{COMPOUND_STRING("LEAF STONE")},
+	{gText_Exit},
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -906,6 +925,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
+    [MULTI_GAMECORNER_NEW]             = MULTICHOICE(MultichoiceList_GCNew),
+    [MULTI_GAMECORNER_NEW2]            = MULTICHOICE(MultichoiceList_GCNew2),
 };
 
 const u8 *const gStdStrings[] =

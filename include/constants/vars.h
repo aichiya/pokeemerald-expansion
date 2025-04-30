@@ -274,7 +274,33 @@
 #define VAR_GIFTMON2_IDENTIFIER                          0x40FE // Unused Var
 #define VAR_GIFTMON1_IDENTIFIER                          0x40FF // Unused Var
 
-#define VARS_END                                         0x40FF
+#define VARS_END_OFFICIAL                                VAR_GIFTMON1_IDENTIFIER
+
+#define VAR_GAME_CORNER_ID_CHECK                         (VARS_END_OFFICIAL + 1)
+#define VAR_GAME_CORNER_WINNINGS                         (VARS_END_OFFICIAL + 2)
+#define VAR_FLAPPY_HIGH_SCORE                            (VARS_END_OFFICIAL + 3)
+#define VAR_BLACKJACK_PLAYER                             (VARS_END_OFFICIAL + 4)
+#define VAR_BLACKJACK_DEALER                             (VARS_END_OFFICIAL + 5)
+#define VAR_BLACKJACK_BET                                (VARS_END_OFFICIAL + 6)
+#define VAR_BLACKJACK_OPTIONS                            (VARS_END_OFFICIAL + 7)
+#define VAR_BLACKJACK_OPTION1_TILE                       (VARS_END_OFFICIAL + 8)
+#define VAR_BLACKJACK_OPTION2_TILE                       (VARS_END_OFFICIAL + 9)
+#define VAR_BLACKJACK_OPTION3_TILE                       (VARS_END_OFFICIAL + 10)
+#define VAR_DERBY_RACER_NAME_1                           (VARS_END_OFFICIAL + 11)
+#define VAR_DERBY_RACER_NAME_2                           (VARS_END_OFFICIAL + 12)
+#define VAR_DERBY_RACER_NAME_3                           (VARS_END_OFFICIAL + 13)
+#define VAR_DERBY_RACER_NAME_4                           (VARS_END_OFFICIAL + 14)
+#define VAR_DERBY_RACER_NAME_5                           (VARS_END_OFFICIAL + 15)
+#define VAR_DERBY_RACER_NAME_6                           (VARS_END_OFFICIAL + 16)
+#define VAR_DERBY_RACER_1                                (VARS_END_OFFICIAL + 17)
+#define VAR_DERBY_RACER_2                                (VARS_END_OFFICIAL + 18)
+#define VAR_DERBY_RACER_3                                (VARS_END_OFFICIAL + 19)
+#define VAR_DERBY_RACER_4                                (VARS_END_OFFICIAL + 20)
+#define VAR_DERBY_RACER_5                                (VARS_END_OFFICIAL + 21)
+#define VAR_DERBY_RACER_6                                (VARS_END_OFFICIAL + 22)   
+#define VAR_FLIP_LEVEL                                   (VARS_END_OFFICIAL + 23)
+
+#define VARS_END                                         VAR_FLIP_LEVEL
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
 
 #define SPECIAL_VARS_START            0x8000

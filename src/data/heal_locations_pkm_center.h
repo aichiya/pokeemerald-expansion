@@ -217,7 +217,7 @@ static const struct HealLocation sHealLocationsPokemonCenter[HEAL_LOCATION_COUNT
         .x = 1,
         .y = 1,
     },
-    [HEAL_LOCATION_GENSOKYO_NAMELESS_HILL - 1] =
+    [HEAL_LOCATION_JAVA_KEMBANG_TOWN - 1] =
     {
         .group = MAP_GROUP(ROUTE112),
         .map = MAP_NUM(ROUTE112),
@@ -336,42 +336,42 @@ static const struct HealLocation sHealLocationsPokemonCenter[HEAL_LOCATION_COUNT
         .x = 1,
         .y = 1,
     },
-    [HEAL_LOCATION_INMAP0X2C - 1] =
+    [HEAL_LOCATION_JOHTO_ROUTE_48_POKEMON_CENTER - 1] =
     {
         .group = MAP_GROUP(ROUTE129),
         .map = MAP_NUM(ROUTE129),
         .x = 19,
         .y = 44,
     },
-    [HEAL_LOCATION_INMAP0X2D - 1] =
+    [HEAL_LOCATION_JOHTO_NOBELESSE_CITY - 1] =
     {
         .group = MAP_GROUP(ROUTE130),
         .map = MAP_NUM(ROUTE130),
         .x = 19,
         .y = 21,
     },
-    [HEAL_LOCATION_INMAP0X2E - 1] =
+    [HEAL_LOCATION_JAVA_MALANG - 1] =
     {
         .group = MAP_GROUP(ROUTE131),
         .map = MAP_NUM(ROUTE131),
         .x = 1,
         .y = 1,
     },
-    [HEAL_LOCATION_INMAP0X2F - 1] =
+    [HEAL_LOCATION_JAVA_DEVATA_ISLETS - 1] =
     {
         .group = MAP_GROUP(ROUTE132),
         .map = MAP_NUM(ROUTE132),
         .x = 1,
         .y = 1,
     },
-    [HEAL_LOCATION_INMAP0X30 - 1] =
+    [HEAL_LOCATION_JAVA_KASEPUHAN_TOWN - 1] =
     {
         .group = MAP_GROUP(ROUTE133),
         .map = MAP_NUM(ROUTE133),
         .x = 1,
         .y = 1,
     },
-    [HEAL_LOCATION_INMAP0X31 - 1] =
+    [HEAL_LOCATION_JAVA_CILA_PRISON_TOWN - 1] =
     {
         .group = MAP_GROUP(ROUTE134),
         .map = MAP_NUM(ROUTE134),
@@ -421,7 +421,7 @@ static const u8 sHealNpcLocalId[HEAL_LOCATION_COUNT - 1] =
     [HEAL_LOCATION_GENSOKYO_PALENQUIN_SHIP - 1] = 0,
     [HEAL_LOCATION_GENSOKYO_SANZU_RIVER - 1] = 0,
     [HEAL_LOCATION_GENSOKYO_GARDEN_OF_THE_SUN - 1] = 0,
-    [HEAL_LOCATION_GENSOKYO_NAMELESS_HILL - 1] = 0,
+    [HEAL_LOCATION_JAVA_KEMBANG_TOWN - 1] = 0,
     [HEAL_LOCATION_GENSOKYO_EIENTEI - 1] = 0,
     [HEAL_LOCATION_GENSOKYO_ANIMAL_REALM - 1] = 0,
     [HEAL_LOCATION_JAVA_NEO_BANJAR_CITY - 1] = 0,
@@ -438,10 +438,10 @@ static const u8 sHealNpcLocalId[HEAL_LOCATION_COUNT - 1] =
     [HEAL_LOCATION_JAVA_SEMARANG - 1] = 0,
     [HEAL_LOCATION_JAVA_SURABAYA - 1] = 0,
     [HEAL_LOCATION_JAVA_JAKARTA - 1] = 0,
-    [HEAL_LOCATION_INMAP0X2C - 1] = 0,
-    [HEAL_LOCATION_INMAP0X2D - 1] = 0,
-    [HEAL_LOCATION_INMAP0X2E - 1] = 0,
-    [HEAL_LOCATION_INMAP0X2F - 1] = 0,
-    [HEAL_LOCATION_INMAP0X30 - 1] = 0,
-    [HEAL_LOCATION_INMAP0X31 - 1] = 0,
+    [HEAL_LOCATION_JOHTO_ROUTE_48_POKEMON_CENTER - 1] = 0,
+    [HEAL_LOCATION_JOHTO_NOBELESSE_CITY - 1] = 0,
+    [HEAL_LOCATION_JAVA_MALANG - 1] = 0,
+    [HEAL_LOCATION_JAVA_DEVATA_ISLETS - 1] = 0,
+    [HEAL_LOCATION_JAVA_KASEPUHAN_TOWN - 1] = 0,
+    [HEAL_LOCATION_JAVA_CILA_PRISON_TOWN - 1] = 0,
 };

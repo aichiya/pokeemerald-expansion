@@ -18,11 +18,6 @@ static u16 sSavedIme;
 // iwram common
 COMMON_DATA struct Time gLocalTime = {0};
 
-struct Time* GetFakeRtc(void)
-{
-    return &gSaveBlock2Ptr->fakeRTC;
-}
-
 // const rom
 
 static const struct SiiRtcInfo sRtcDummy = {0, MONTH_JAN, 1}; // 2000 Jan 1
@@ -99,7 +94,7 @@ u16 ConvertDateToDayCount(u8 year, u8 month, u8 day)
 
     return dayCount;
 }
-/*
+
 u16 RtcGetDayCount(struct SiiRtcInfo *rtc)
 {
     u8 year, month, day;
@@ -109,12 +104,7 @@ u16 RtcGetDayCount(struct SiiRtcInfo *rtc)
     day = ConvertBcdToBinary(rtc->day);
     return ConvertDateToDayCount(year, month, day);
 }
-*/
-u16 RtcGetDayCount(struct SiiRtcInfo *rtc)
-{
-    return rtc->day;
-}
-/*
+
 void RtcInit(void)
 {
     if (OW_USE_FAKE_RTC)
@@ -141,22 +131,12 @@ void RtcInit(void)
     RtcGetRawInfo(&sRtc);
     sErrorStatus = RtcCheckInfo(&sRtc);
 }
-*/
-void RtcInit(void)
-{
 
-}
-/*
 u16 RtcGetErrorStatus(void)
 {
     return (OW_USE_FAKE_RTC) ? 0 : sErrorStatus;
 }
-*/
-u16 RtcGetErrorStatus(void)
-{
-    return 0;
-}
-/*
+
 void RtcGetInfo(struct SiiRtcInfo *rtc)
 {
     if (OW_USE_FAKE_RTC)
@@ -165,15 +145,6 @@ void RtcGetInfo(struct SiiRtcInfo *rtc)
         *rtc = sRtcDummy;
     else
         RtcGetRawInfo(rtc);
-}
-*/
-void RtcGetInfo(struct SiiRtcInfo *rtc)
-{
-    struct Time* time = GetFakeRtc();
-    rtc->second = time->seconds;
-    rtc->minute = time->minutes;
-    rtc->hour = time->hours;
-    rtc->day = time->days;
 }
 
 void RtcGetDateTime(struct SiiRtcInfo *rtc)
@@ -195,7 +166,7 @@ void RtcGetRawInfo(struct SiiRtcInfo *rtc)
     RtcGetStatus(rtc);
     RtcGetDateTime(rtc);
 }
-/*
+
 u16 RtcCheckInfo(struct SiiRtcInfo *rtc)
 {
     u16 errorFlags = 0;
@@ -255,12 +226,7 @@ u16 RtcCheckInfo(struct SiiRtcInfo *rtc)
 
     return errorFlags;
 }
-*/
-u16 RtcCheckInfo(struct SiiRtcInfo *rtc)
-{
-    return 0;
-}
-/*
+
 void RtcReset(void)
 {
     if (OW_USE_FAKE_RTC)
@@ -272,11 +238,6 @@ void RtcReset(void)
     RtcDisableInterrupts();
     SiiRtcReset();
     RtcRestoreInterrupts();
-}
-*/
-void RtcReset(void)
-{
-    memset(GetFakeRtc(), 0, sizeof(struct Time));
 }
 
 void FormatDecimalTime(u8 *dest, s32 hour, s32 minute, s32 second)
@@ -323,40 +284,13 @@ void FormatHexDate(u8 *dest, s32 year, s32 month, s32 day)
     dest = ConvertIntToHexStringN(dest, day, STR_CONV_MODE_LEADING_ZEROS, 2);
     *dest = EOS;
 }
-/*
+
 void RtcCalcTimeDifference(struct SiiRtcInfo *rtc, struct Time *result, struct Time *t)
 {
     u16 days = RtcGetDayCount(rtc);
     result->seconds = ConvertBcdToBinary(rtc->second) - t->seconds;
     result->minutes = ConvertBcdToBinary(rtc->minute) - t->minutes;
     result->hours = ConvertBcdToBinary(rtc->hour) - t->hours;
-    result->days = days - t->days;
-
-    if (result->seconds < 0)
-    {
-        result->seconds += SECONDS_PER_MINUTE;
-        --result->minutes;
-    }
-
-    if (result->minutes < 0)
-    {
-        result->minutes += MINUTES_PER_HOUR;
-        --result->hours;
-    }
-
-    if (result->hours < 0)
-    {
-        result->hours += HOURS_PER_DAY;
-        --result->days;
-    }
-}
-*/
-void RtcCalcTimeDifference(struct SiiRtcInfo *rtc, struct Time *result, struct Time *t)
-{
-    u16 days = RtcGetDayCount(rtc);
-    result->seconds = rtc->second - t->seconds;
-    result->minutes = rtc->minute - t->minutes;
-    result->hours = rtc->hour - t->hours;
     result->days = days - t->days;
 
     if (result->seconds < 0)
@@ -453,50 +387,6 @@ u32 RtcGetMinuteCount(void)
 u32 RtcGetLocalDayCount(void)
 {
     return RtcGetDayCount(&sRtc);
-}
-
-void RtcAdvanceTime(u32 hours, u32 minutes, u32 seconds)
-{
-    struct Time* time = GetFakeRtc();
-    seconds += time->seconds;
-    minutes += time->minutes;
-    hours += time->hours;
-
-    while(seconds >= SECONDS_PER_MINUTE)
-    {
-        minutes++;
-        seconds -= SECONDS_PER_MINUTE;   
-    }
-
-    while(minutes >= MINUTES_PER_HOUR)
-    {
-        hours++;
-        minutes -= MINUTES_PER_HOUR;
-    }
-
-    while(hours >= HOURS_PER_DAY)
-    {
-        time->days++;
-        hours -= HOURS_PER_DAY;
-    }
-
-    time->seconds = seconds;
-    time->minutes = minutes;
-    time->hours = hours;
-}
-
-void RtcAdvanceTimeTo(u32 hour, u32 minute, u32 second)
-{
-    struct Time diff, target;
-    RtcCalcLocalTime();
-   
-    target.hours = hour;
-    target.minutes = minute;
-    target.seconds = second;
-    target.days = gLocalTime.days;
-   
-    CalcTimeDifference(&diff, &gLocalTime, &target);
-    RtcAdvanceTime(diff.hours, diff.minutes, diff.seconds);
 }
 
 void FormatDecimalTimeWithoutSeconds(u8 *txtPtr, s8 hour, s8 minute, bool32 is24Hour)

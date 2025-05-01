@@ -1206,7 +1206,10 @@ void PrepSecretBaseBattleFlags(void)
 {
     TryGainNewFanFromCounter(FANCOUNTER_BATTLED_AT_BASE);
     TRAINER_BATTLE_PARAM.opponentA = TRAINER_SECRET_BASE;
-    gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_SECRET_BASE | BATTLE_TYPE_DOUBLE;
+    if (gSaveBlock1Ptr->secretBases[0].battleType == 1)
+        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_SECRET_BASE | BATTLE_TYPE_DOUBLE;
+    else
+        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_SECRET_BASE;
 }
 
 void SetBattledOwnerFromResult(void)
@@ -2150,6 +2153,7 @@ void PrepareSecretBasePseudoTrainerBattleByVar(void)
             gSaveBlock1Ptr->secretBases[0].trainerName[6] = 0xFF;
             StringCopyN(gSaveBlock1Ptr->secretBases[0].trainerName, gText_PseudoTrainerName001, GetNameLength(gText_PseudoTrainerName001));
             gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].battleType = 1;
             gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
 
             party->moves[0*MAX_MON_MOVES + 0] = MOVE_DEFECTIVE_MIRACLE;
@@ -2230,6 +2234,7 @@ void PrepareSecretBasePseudoTrainerBattleByVar(void)
             gSaveBlock1Ptr->secretBases[0].trainerName[6] = 0xFF;
             StringCopyN(gSaveBlock1Ptr->secretBases[0].trainerName, gText_PseudoTrainerName002, GetNameLength(gText_PseudoTrainerName002));
             gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].battleType = 0;
             gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
 
             party->moves[0*MAX_MON_MOVES + 0] = MOVE_SLASH;
@@ -2313,6 +2318,7 @@ void PrepareSecretBasePseudoTrainerBattleByVar(void)
                 gSaveBlock1Ptr->secretBases[0].gender = 1;
             else
                 gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].battleType = 1;
             gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
 
             party->moves[0*MAX_MON_MOVES + 0] = MOVE_TRANSFORM;
@@ -2396,6 +2402,7 @@ void PrepareSecretBasePseudoTrainerBattleByVar(void)
                 gSaveBlock1Ptr->secretBases[0].gender = 1;
             else
                 gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].battleType = 0;
             gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
 
             party->moves[0*MAX_MON_MOVES + 0] = MOVE_TRANSFORM;
@@ -2479,6 +2486,7 @@ void PrepareSecretBasePseudoTrainerBattleByVar(void)
                 gSaveBlock1Ptr->secretBases[0].gender = 1;
             else
                 gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].battleType = 1;
             gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
 
             party->moves[0*MAX_MON_MOVES + 0] = MOVE_TRANSFORM;
@@ -2562,6 +2570,7 @@ void PrepareSecretBasePseudoTrainerBattleByVar(void)
                 gSaveBlock1Ptr->secretBases[0].gender = 1;
             else
                 gSaveBlock1Ptr->secretBases[0].gender = 0;
+            gSaveBlock1Ptr->secretBases[0].battleType = 0;
             gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
 
             party->moves[0*MAX_MON_MOVES + 0] = MOVE_TRANSFORM;
@@ -2642,6 +2651,7 @@ void PrepareSecretBasePseudoTrainerBattleByVar(void)
             gSaveBlock1Ptr->secretBases[0].trainerName[6] = 0xFF;
             StringCopyN(gSaveBlock1Ptr->secretBases[0].trainerName, gText_PseudoTrainerNameDefault, GetNameLength(gText_PseudoTrainerNameDefault));
             gSaveBlock1Ptr->secretBases[0].gender = 1;
+            gSaveBlock1Ptr->secretBases[0].battleType = 0;
             gSaveBlock1Ptr->secretBases[0].language = GAME_LANGUAGE;
 
             party->moves[0*MAX_MON_MOVES + 0] = MOVE_ADVENT_LYCORIS;

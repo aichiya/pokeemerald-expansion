@@ -15,7 +15,7 @@ TrimmedGensokyo_EventScript_Debug1::
 	closemessage
 	delay 30
 @	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
-	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, 1001
+	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, 1
 	special PrepareSecretBasePseudoTrainerBattleByVar
 	special PrepSecretBaseBattleFlags
     setvar VAR_0x8004, SPECIAL_BATTLE_SECRET_BASE

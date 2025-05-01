@@ -1391,8 +1391,8 @@
 #define FLAG_TERA_ORB_NO_COST                       (SYSTEM_FLAGS + 0x22)
 #define FLAG_ENABLE_LIGHT_ORB_UP                    (SYSTEM_FLAGS + 0x23)
 #define FLAG_NO_RUNNING_AWAY                        (SYSTEM_FLAGS + 0x24)
-#define FLAG_UNUSED_0x885                           (SYSTEM_FLAGS + 0x25) // Unused Flag
-#define FLAG_UNUSED_0x886                           (SYSTEM_FLAGS + 0x26) // Unused Flag
+#define FLAG_PAUSE_TIME                             (SYSTEM_FLAGS + 0x25)
+#define FLAG_FLY_POKE_RIDER                         (SYSTEM_FLAGS + 0x26)
 #define FLAG_UNUSED_0x887                           (SYSTEM_FLAGS + 0x27) // Unused Flag
 
 #define FLAG_SYS_USE_FLASH                          (SYSTEM_FLAGS + 0x28)

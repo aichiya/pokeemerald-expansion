@@ -799,7 +799,8 @@
 	2:
 	.endm
 
-	.macro unused_0x8d
+	.macro trynonvolatilestatus
+	.byte 0x8d
 	.endm
 
 	.macro initmultihitstring
@@ -1100,7 +1101,7 @@
 	.byte \battler
 	.endm
 
-	.macro callterrainattack
+	.macro callenvironmentattack
 	.byte 0xcc
 	.endm
 
@@ -1239,8 +1240,13 @@
 	.byte 0xe6
 	.endm
 
-	.macro unused_0xE7
+@	.macro unused_0xE7
+@	.byte 0xe7
+@	.endm
+
+	.macro ishplessthanquarter failInstr:req
 	.byte 0xe7
+	.4byte \failInstr
 	.endm
 
 	.macro settypebasedhalvers failInstr:req
@@ -1258,7 +1264,7 @@
 	.4byte \failInstr
 	.endm
 
-	.macro settypetoterrain failInstr:req
+	.macro settypetoenvironment failInstr:req
 	.byte 0xeb
 	.4byte \failInstr
 	.endm
@@ -1339,14 +1345,8 @@
 	.4byte \jumpInstr
 	.endm
 
-@	.macro unused ptr:req
-@	.byte 0xfd
-@	.4byte \ptr
-@	.endm
-
-	.macro ishplessthanquarter failInstr:req
+	.macro setnonvolatilestatus
 	.byte 0xfd
-	.4byte \failInstr
 	.endm
 
 	.macro tryworryseed failInstr:req
@@ -2176,18 +2176,6 @@
 	.macro jumpifshieldsdown battler:req, jumpInstr:req
 	various \battler, VARIOUS_JUMP_IF_SHIELDS_DOWN_PROTECTED
 	.4byte \jumpInstr
-	.endm
-
-	.macro trypoisontype attacker:req, target:req, failInstr:req
-	various \attacker, VARIOUS_POISON_TYPE_IMMUNITY
-	.byte \target
-	.4byte \failInstr
-	.endm
-
-	.macro tryparalyzetype attacker:req, target:req, failInstr:req
-	various \attacker, VARIOUS_PARALYZE_TYPE_IMMUNITY
-	.byte \target
-	.4byte \failInstr
 	.endm
 
 	.macro trysetfairylock failInstr:req

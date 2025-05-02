@@ -5280,7 +5280,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     case BATTLE_ENVIRONMENT_ULTRA_SPACE:
                         gBattleScripting.moveEffect = MOVE_EFFECT_DEF_MINUS_1;
                         break;
-                    case BATTLE_TERRAIN_BLANK_GBC:
+                    case BATTLE_ENVIRONMENT_BLANK_GBC:
                         gBattleScripting.moveEffect = MOVE_EFFECT_CORE_ENFORCER;
                         break;
                     default:

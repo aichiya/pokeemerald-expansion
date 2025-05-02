@@ -280,11 +280,11 @@ extern const u16 gBattleEnvironmentPalette_StadiumPhoebe[];
 extern const u16 gBattleEnvironmentPalette_StadiumGlacia[];
 extern const u16 gBattleEnvironmentPalette_StadiumDrake[];
 extern const u16 gBattleEnvironmentPalette_StadiumWallace[];
-extern const u16 gBattleEnvironmentTiles_BlankGBC[];
+extern const u32 gBattleEnvironmentTiles_BlankGBC[];
 extern const u16 gBattleEnvironmentPalette_BlankGBC[];
-extern const u16 gBattleEnvironmentTilemap_BlankGBC[];
-extern const u16 gBattleEnvironmentAnimTiles_BlankGBC[];
-extern const u16 gBattleEnvironmentAnimTilemap_BlankGBC[];
+extern const u32 gBattleEnvironmentTilemap_BlankGBC[];
+extern const u32 gBattleEnvironmentAnimTiles_BlankGBC[];
+extern const u32 gBattleEnvironmentAnimTilemap_BlankGBC[];
 
 // Pokédex
 extern const u32 gPokedexInterface_Gfx[];

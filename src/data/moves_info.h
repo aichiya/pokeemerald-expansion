@@ -2089,7 +2089,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "that may poison the foe."),
         .effect = EFFECT_POISON,
         .power = 0,
-        .type = TYPE_NEW_POISON,
+        .type = TYPE_NEW_MIASMA,
         .accuracy = 75,
         .pp = 35,
         .target = MOVE_TARGET_SELECTED,

@@ -3412,4 +3412,8 @@ extern const u32 gBattleAnimBgImage_ElectricHeritage[];
 extern const u16 gBattleAnimBgPalette_ElectricHeritage[];
 extern const u32 gBattleAnimBgTilemap_ElectricHeritage[];
 
+extern const u32 gBattleAnimBgImage_DarknessTerrain[];
+extern const u16 gBattleAnimBgPalette_DarknessTerrain[];
+extern const u32 gBattleAnimBgTilemap_DarknessTerrain[];
+
 #endif //GUARD_GRAPHICS_H

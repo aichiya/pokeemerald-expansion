@@ -2774,4 +2774,12 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeOverwritten = TRUE,
         .failsOnImposter = TRUE,
     },
+
+    [ABILITY_DARKNESS_SURGE] =
+    {
+        .name = _("Darkness Surge"),
+        .description = COMPOUND_STRING("Field becomes darkness."),
+        .aiRating = 8,
+    },
+
 };

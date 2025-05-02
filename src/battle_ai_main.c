@@ -2428,6 +2428,10 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             if (PartnerMoveEffectIsTerrain(BATTLE_PARTNER(battlerAtk), aiData->partnerMove) || gFieldStatuses & STATUS_FIELD_UBW)
                 ADJUST_SCORE(-10);
             break;
+        case EFFECT_DARKNESS_TERRAIN:
+            if (PartnerMoveEffectIsTerrain(BATTLE_PARTNER(battlerAtk), aiData->partnerMove) || gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
+                ADJUST_SCORE(-10);
+            break;
         case EFFECT_PLEDGE:
             if (isDoubleBattle && gBattleMons[BATTLE_PARTNER(battlerAtk)].hp > 0)
             {
@@ -4458,6 +4462,8 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
             ADJUST_SCORE(BEST_EFFECT);
     case EFFECT_GRASSY_TERRAIN:
     case EFFECT_PSYCHIC_TERRAIN:
+    case EFFECT_UBW:
+    case EFFECT_DARKNESS_TERRAIN:
         ADJUST_SCORE(GOOD_EFFECT);
         if (aiData->holdEffects[battlerAtk] == HOLD_EFFECT_TERRAIN_EXTENDER)
             ADJUST_SCORE(GOOD_EFFECT);
@@ -5046,6 +5052,8 @@ static s32 AI_ForceSetupFirstTurn(u32 battlerAtk, u32 battlerDef, u32 move, s32 
     case EFFECT_CHILLY_RECEPTION:
     case EFFECT_GEOMANCY:
     case EFFECT_VICTORY_DANCE:
+    case EFFECT_UBW:
+    case EFFECT_DARKNESS_TERRAIN:
         ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_HIT:
@@ -5478,6 +5486,10 @@ static s32 AI_PowerfulStatus(u32 battlerAtk, u32 battlerDef, u32 move, s32 score
         if (!(gFieldStatuses & STATUS_FIELD_UBW))
             ADJUST_SCORE(POWERFUL_STATUS_MOVE);
         break;
+    case EFFECT_DARKNESS_TERRAIN:
+        if (!(gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN))
+            ADJUST_SCORE(POWERFUL_STATUS_MOVE);
+        break;
     case EFFECT_SANDSTORM:
         if (!(AI_GetWeather() & (B_WEATHER_SANDSTORM | B_WEATHER_PRIMAL_ANY)))
             ADJUST_SCORE(POWERFUL_STATUS_MOVE);
@@ -5568,6 +5580,8 @@ static s32 AI_PredictSwitch(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
     case EFFECT_PSYCHIC_TERRAIN:
     case EFFECT_GRASSY_TERRAIN:
     case EFFECT_MISTY_TERRAIN:
+    case EFFECT_UBW:
+    case EFFECT_DARKNESS_TERRAIN:
         ADJUST_SCORE(GOOD_EFFECT);
         break;
     case EFFECT_HIT_SWITCH_TARGET:

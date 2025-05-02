@@ -1378,6 +1378,8 @@ static bool32 HandleEndTurnTerrain(u32 battler)
         effect = EndTurnTerrain(STATUS_FIELD_PSYCHIC_TERRAIN, B_MSG_TERRAIN_END_PSYCHIC);
     else if (gFieldStatuses & STATUS_FIELD_UBW)
         effect = EndTurnTerrain(STATUS_FIELD_UBW, B_MSG_UBW_END);
+    else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
+        effect = EndTurnTerrain(STATUS_FIELD_DARKNESS_TERRAIN, B_MSG_TERRAIN_END_DARKNESS);
 
     return effect;
 }

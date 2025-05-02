@@ -4060,6 +4060,7 @@ static bool32 IsDomeComboMoveEffect(enum BattleMoveEffects effect)
     case EFFECT_MISTY_TERRAIN:
     case EFFECT_PSYCHIC_TERRAIN:
     case EFFECT_UBW:
+    case EFFECT_DARKNESS_TERRAIN:
     // Moves dependent on weather
     case EFFECT_SYNTHESIS:
     case EFFECT_MORNING_SUN:

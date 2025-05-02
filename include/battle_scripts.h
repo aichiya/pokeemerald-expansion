@@ -549,6 +549,8 @@ extern const u8 BattleScript_MisfortuneAuraActivates[];
 extern const u8 BattleScript_FloraElvisAtkBoostActivates[];
 extern const u8 BattleScript_FloraElvisSafeguardActivates[];
 extern const u8 BattleScript_LifeForceActivates[];
+extern const u8 BattleScript_DarknessSurgeActivates[];
+extern const u8 BattleScript_EffectDarknessTerrain[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

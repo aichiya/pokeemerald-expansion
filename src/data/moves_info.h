@@ -21673,6 +21673,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Judgment,
     },
 
+    [MOVE_DARKNESS_TERRAIN] =  // MOVE_NEW_DARKNESS_FIELD
+    {
+        .name = COMPOUND_STRING("Darkness Field"),
+        .description = COMPOUND_STRING(
+            "The ground turns dark for\n"
+            "5 turns. Powers up Dark moves."),
+        .effect = EFFECT_DARKNESS_TERRAIN,
+        .power = 0,
+        .type = TYPE_NEW_DARK,
+        .accuracy = 0,
+        .pp = 10,
+        .target = MOVE_TARGET_ALL_BATTLERS,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = COMBO_STARTER_DARKNESS_TERRAIN,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_PsychicTerrain,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =  // Edited
     {

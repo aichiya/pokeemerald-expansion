@@ -2897,6 +2897,14 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
 
     calc = gAccuracyStageRatios[buff].dividend * moveAcc;
     calc /= gAccuracyStageRatios[buff].divisor;
+    
+    u32 attackerSpeciesType1 = gBattleMons[battlerAtk].types[0];
+    u32 attackerSpeciesType2 = gBattleMons[battlerAtk].types[1];
+    u32 attackerSpeciesType3 = gBattleMons[battlerAtk].types[2];
+
+    if ((gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN) 
+      && !(attackerSpeciesType1 == TYPE_NEW_DARK || attackerSpeciesType2 == TYPE_NEW_DARK || attackerSpeciesType3 == TYPE_NEW_DARK)) 
+        calc = (calc * 80) / 100; // 1.2 loss non-dark type attacker when darkness terrain on field
 
     // Attacker's ability
     switch (atkAbility)
@@ -5221,6 +5229,9 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     case STATUS_FIELD_UBW:
                         gBattleScripting.moveEffect = MOVE_EFFECT_FLINCH;
                         break;
+                    case STATUS_FIELD_DARKNESS_TERRAIN:
+                        gBattleScripting.moveEffect = MOVE_EFFECT_FLINCH;
+                        break;
                     default:
                         gBattleScripting.moveEffect = MOVE_EFFECT_PARALYSIS;
                         break;
@@ -5555,6 +5566,8 @@ void SetMoveEffect(bool32 primary, bool32 certain)
             case MOVE_EFFECT_GRASSY_TERRAIN:
             case MOVE_EFFECT_ELECTRIC_TERRAIN:
             case MOVE_EFFECT_PSYCHIC_TERRAIN:
+            case MOVE_EFFECT_UBW:
+            case MOVE_EFFECT_DARKNESS_TERRAIN:
             {
                 u32 statusFlag = 0;
                 switch (gBattleScripting.moveEffect)
@@ -5574,6 +5587,14 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     case MOVE_EFFECT_PSYCHIC_TERRAIN:
                         statusFlag = STATUS_FIELD_PSYCHIC_TERRAIN;
                         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_PSYCHIC;
+                        break;
+                    case MOVE_EFFECT_UBW:
+                        statusFlag = STATUS_FIELD_UBW;
+                        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_UBW_SET;
+                        break;
+                    case MOVE_EFFECT_DARKNESS_TERRAIN:
+                        statusFlag = STATUS_FIELD_DARKNESS_TERRAIN;
+                        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_DARKNESS;
                         break;
                 }
                 if (!(gFieldStatuses & statusFlag) && statusFlag != 0)
@@ -10999,6 +11020,9 @@ static void RemoveAllTerrains(void)
     case STATUS_FIELD_UBW:
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_UBW_END;
         break;
+    case STATUS_FIELD_DARKNESS_TERRAIN:
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_END_DARKNESS;
+        break;
     default:
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_COUNT;  // failsafe
         break;
@@ -12564,6 +12588,9 @@ static void Cmd_various(void)
                 break;
             case HOLD_EFFECT_PARAM_UBW:
                 effect = TryHandleSeed(battler, STATUS_FIELD_UBW, STAT_ATK, item, ITEMEFFECT_NONE);
+                break;
+            case HOLD_EFFECT_PARAM_DARKNESS_TERRAIN:
+                effect = TryHandleSeed(battler, STATUS_FIELD_DARKNESS_TERRAIN, STAT_SPATK, item, ITEMEFFECT_NONE);
                 break;
             }
 
@@ -16335,6 +16362,8 @@ u32 GetNaturePowerMove(u32 battler)
         move = MOVE_PSYCHIC;
     else if (gFieldStatuses & STATUS_FIELD_UBW)
         move = MOVE_FLASH_CANNON;
+    else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
+        move = MOVE_DARK_PULSE;
     else if (sNaturePowerMoves[gBattleEnvironment] == MOVE_NONE)
         move = MOVE_TRI_ATTACK;
 
@@ -17297,6 +17326,9 @@ static void Cmd_settypetoenvironment(void)
         break;
     case STATUS_FIELD_UBW:
         environmentType = TYPE_NEW_METAL;
+        break;
+    case STATUS_FIELD_DARKNESS_TERRAIN:
+        environmentType = TYPE_NEW_DARK;
         break;
     default:
         environmentType = sEnvironmentToType[gBattleEnvironment];
@@ -18999,6 +19031,10 @@ void BS_SetRemoveTerrain(void)
     case EFFECT_UBW:
         statusFlag = STATUS_FIELD_UBW;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_UBW_SET;
+        break;
+    case EFFECT_DARKNESS_TERRAIN:
+        statusFlag = STATUS_FIELD_DARKNESS_TERRAIN;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_DARKNESS;
         break;
     case EFFECT_HIT_SET_REMOVE_TERRAIN:
         switch (GetMoveEffectArg_MoveProperty(gCurrentMove))

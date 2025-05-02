@@ -19256,6 +19256,43 @@ MindHackFlingPlayer:
 	waitforvisualfinish
 	return
 
+gBattleAnimMove_DarknessTerrain::
+	loadspritegfx ANIM_TAG_ORBS @Recover Ball
+	loadspritegfx ANIM_TAG_GREEN_SPARKLE @Green Star
+	loadspritegfx ANIM_TAG_POISON_BUBBLE @Purple Colour
+	playsewithpan SE_M_HEAL_BELL, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	waitforvisualfinish
+	delay 30
+	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_ATTACKER, RGB(27, 0, 13), 12, 5, 1
+	delay 4
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	playsewithpan SE_M_REVERSAL, SOUND_PAN_ATTACKER
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 0
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 42
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 84
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 126
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 168
+	createsprite gPsychicTerrainOrbsTemplate, ANIM_ATTACKER, 2, 26, 210
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 3, 0, 4, RGB(27, 0, 13)
+	delay 52
+	setarg 7, 0xFFFF
+	playsewithpan SE_M_ATTRACT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -7, -7, 11, ANIM_ATTACKER, 0
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 0
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 32
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 64
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 96
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 128
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 160
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 192
+	createsprite gPsychicTerrainStarTemplate, ANIM_TARGET, 2, 224
+	loopsewithpan SE_M_SUPERSONIC, SOUND_PAN_TARGET, 0xa, 0x3
+	waitforvisualfinish
+	delay 4
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 3, 4, 0, RGB(27, 0, 13)
+	waitforvisualfinish
+	end
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
@@ -28483,6 +28520,7 @@ gBattleAnimMove_SecretPower::
 	jumpargeq 0, STATUS_FIELD_ELECTRIC_TERRAIN, gBattleAnimMove_ThunderShock
 	jumpargeq 0, STATUS_FIELD_PSYCHIC_TERRAIN,  gBattleAnimMove_Confusion
 	jumpargeq 0, STATUS_FIELD_UBW,              gBattleAnimMove_FlashCannon
+	jumpargeq 0, STATUS_FIELD_DARKNESS_TERRAIN, gBattleAnimMove_DarkPulse
 	createvisualtask AnimTask_GetBattleEnvironment, 5
 	jumpargeq 0, BATTLE_ENVIRONMENT_GRASS,          gBattleAnimMove_NeedleArm
 	jumpargeq 0, BATTLE_ENVIRONMENT_LONG_GRASS,     gBattleAnimMove_MagicalLeaf

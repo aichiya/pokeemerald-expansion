@@ -1540,6 +1540,10 @@ const u32 gBattleAnimBgImage_UBWField[] = INCBIN_U32("graphics/battle_anims/back
 const u16 gBattleAnimBgPalette_UBWField[] = INCBIN_U16("graphics/battle_anims/backgrounds/ubw_field.gbapal");
 const u32 gBattleAnimBgTilemap_UBWField[] = INCBIN_U32("graphics/battle_anims/backgrounds/ubw_field.bin.lz");
 
+const u32 gBattleAnimBgImage_DarknessTerrain[] = INCBIN_U32("graphics/battle_anims/backgrounds/darkness_terrain.4bpp.lz");
+const u16 gBattleAnimBgPalette_DarknessTerrain[] = INCBIN_U16("graphics/battle_anims/backgrounds/darkness_terrain.gbapal");
+const u32 gBattleAnimBgTilemap_DarknessTerrain[] = INCBIN_U32("graphics/battle_anims/backgrounds/darkness_terrain.bin.lz");
+
 const u32 gBattleAnimBgImage_Nightmare[] = INCBIN_U32("graphics/battle_anims/backgrounds/nightmare.4bpp.lz");
 const u16 gBattleAnimBgPalette_Nightmare[] = INCBIN_U16("graphics/battle_anims/backgrounds/nightmare.gbapal");
 const u32 gBattleAnimBgTilemap_Nightmare[] = INCBIN_U32("graphics/battle_anims/backgrounds/nightmare.bin.lz");

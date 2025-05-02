@@ -2881,6 +2881,8 @@ bool32 ChangeTypeBasedOnTerrain(u32 battler)
         battlerType = TYPE_NEW_REASON;
     else if (gFieldStatuses & STATUS_FIELD_UBW)
         battlerType = TYPE_NEW_METAL;
+    else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
+        battlerType = TYPE_NEW_DARK;
     else // failsafe
         return FALSE;
 
@@ -3339,6 +3341,13 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             case STARTING_STATUS_UBW:
                 effect = SetStartingFieldStatus(STATUS_FIELD_UBW,
                                                 B_MSG_UBW_SET,
+                                                0,
+                                                &gFieldTimers.terrainTimer);
+                effect = (effect == 1) ? 2 : 0;
+                break;
+            case STARTING_STATUS_DARKNESS_TERRAIN:
+                effect = SetStartingFieldStatus(STATUS_FIELD_DARKNESS_TERRAIN,
+                                                B_MSG_TERRAIN_SET_DARKNESS,
                                                 0,
                                                 &gFieldTimers.terrainTimer);
                 effect = (effect == 1) ? 2 : 0;
@@ -3913,6 +3922,13 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             if (TryChangeBattleTerrain(battler, STATUS_FIELD_UBW, &gFieldTimers.terrainTimer))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_UBWActivates);
+                effect++;
+            }
+            break;
+        case ABILITY_DARKNESS_SURGE:
+            if (TryChangeBattleTerrain(battler, STATUS_FIELD_DARKNESS_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_DarknessSurgeActivates);
                 effect++;
             }
             break;
@@ -7248,6 +7264,9 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler, bool32 moveTurn)
                 case HOLD_EFFECT_PARAM_UBW:
                     effect = TryHandleSeed(battler, STATUS_FIELD_UBW, STAT_ATK, gLastUsedItem, caseID);
                     break;
+                case HOLD_EFFECT_PARAM_DARKNESS_TERRAIN:
+                    effect = TryHandleSeed(battler, STATUS_FIELD_DARKNESS_TERRAIN, STAT_SPATK, gLastUsedItem, caseID);
+                    break;
                 }
                 break;
             case HOLD_EFFECT_EJECT_PACK:
@@ -8838,6 +8857,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
     if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_UBW) && moveType == TYPE_NEW_METAL)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
     if (IsBattlerTerrainAffected(battlerDef, STATUS_FIELD_UBW) && moveType == TYPE_NEW_MIASMA)
+        modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
+    if (IsBattlerTerrainAffected(battlerAtk, STATUS_FIELD_DARKNESS_TERRAIN) && moveType == TYPE_NEW_DARK)
+        modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+    if (IsBattlerTerrainAffected(battlerDef, STATUS_FIELD_DARKNESS_TERRAIN) && moveType == TYPE_NEW_DIVINE)
         modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
 
     if (moveType == TYPE_NEW_ELECTRIC && ((gFieldStatuses & STATUS_FIELD_MUDSPORT)

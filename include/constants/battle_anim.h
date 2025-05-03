@@ -420,6 +420,9 @@
 #define ANIM_TAG_STARSTORM                  (ANIM_SPRITES_START + 406)
 #define ANIM_TAG_SALT_PARTICLE              (ANIM_SPRITES_START + 407)
 
+#define LAST_ANIME_TAG_EXPANSION            ANIM_TAG_SALT_PARTICLE
+#define ANIM_TAG_FLOWER_LYCORIS             (LAST_ANIME_TAG_EXPANSION + 1)
+
 // battlers
 #define ANIM_ATTACKER         0
 #define ANIM_TARGET           1
@@ -637,6 +640,7 @@
 #define TRAP_ANIM_INFESTATION 6
 #define TRAP_ANIM_SNAP_TRAP 7
 #define TRAP_ANIM_THUNDER_CAGE 8
+#define TRAP_ANIM_ADVENT_LYCORIS 9
 
 // Weather defines for battle animation scripts.
 #define ANIM_WEATHER_NONE 0

@@ -2120,3 +2120,5 @@ const u32 gBattleIcons_Gfx2[] = INCBIN_U32("graphics/types/battle_icons2.4bpp.lz
 const u16 gBattleIcons_Pal1[] = INCBIN_U16("graphics/types/battle_icons1.gbapal");
 const u16 gBattleIcons_Pal2[] = INCBIN_U16("graphics/types/battle_icons2.gbapal");
 
+const u32 gBattleAnimSpriteGfx_FlowerLycoris[] = INCBIN_U32("graphics/battle_anims/sprites/flower_lycoris.4bpp.lz");
+const u16 gBattleAnimSpritePal_FlowerLycoris[] = INCBIN_U16("graphics/battle_anims/sprites/flower_lycoris.gbapal");

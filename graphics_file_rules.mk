@@ -371,6 +371,10 @@ $(BTLANMSPRGFXDIR)/flower.4bpp: $(BTLANMSPRGFXDIR)/flower_0.4bpp \
                                 $(BTLANMSPRGFXDIR)/flower_1.4bpp
 	@cat $^ >$@
 
+$(BTLANMSPRGFXDIR)/flower_lycoris.4bpp: $(BTLANMSPRGFXDIR)/flower_lycoris_0.4bpp \
+                                $(BTLANMSPRGFXDIR)/flower_lycoris_1.4bpp
+	@cat $^ >$@
+
 $(BTLANMSPRGFXDIR)/spark.4bpp: $(BTLANMSPRGFXDIR)/spark_0.4bpp \
                                $(BTLANMSPRGFXDIR)/spark_1.4bpp
 	@cat $^ >$@

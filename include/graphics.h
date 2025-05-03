@@ -3416,4 +3416,7 @@ extern const u32 gBattleAnimBgImage_DarknessTerrain[];
 extern const u16 gBattleAnimBgPalette_DarknessTerrain[];
 extern const u32 gBattleAnimBgTilemap_DarknessTerrain[];
 
+extern const u32 gBattleAnimSpriteGfx_FlowerLycoris[];
+extern const u16 gBattleAnimSpritePal_FlowerLycoris[];
+
 #endif //GUARD_GRAPHICS_H

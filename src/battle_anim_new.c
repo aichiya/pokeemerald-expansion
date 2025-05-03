@@ -1349,6 +1349,48 @@ const struct SpriteTemplate gPetalBlizzardTwister2Template =
     .callback = AnimMoveTwisterParticle
 };
 
+//lycoris vortex
+static const union AnimCmd sAnimCmd_LycorisVortex1_0[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_JUMP(0),
+};
+static const union AnimCmd *const sAnimCmdTable_LycorisVortex1[] =
+{
+    sAnimCmd_LycorisVortex1_0,
+};
+const struct SpriteTemplate gLycorisVortexTwister1Template =
+{
+    .tileTag = ANIM_TAG_FLOWER_LYCORIS,
+    .paletteTag = ANIM_TAG_FLOWER_LYCORIS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnimCmdTable_LycorisVortex1,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimMoveTwisterParticle
+};
+static const u16 sLycorisVortexFlowerOam[] = {0x0, 0x2000,0x0800,0x0};  //todo: convert to oam data
+static const union AnimCmd sAnimCmd_LycorisVortex2_0[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(4, 0),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sAnimCmdTable_LycorisVortex2[] =
+{
+    sAnimCmd_LycorisVortex2_0,
+};
+const struct SpriteTemplate gLycorisVortexTwister2Template =
+{
+    .tileTag = ANIM_TAG_FLOWER_LYCORIS,
+    .paletteTag = ANIM_TAG_FLOWER_LYCORIS,
+    .oam = (const struct OamData *) &sLycorisVortexFlowerOam,
+    .anims = sAnimCmdTable_LycorisVortex2,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimMoveTwisterParticle
+};
+
 //crafty shield
 const struct SpriteTemplate gCraftyShieldPinkConversionTemplate =
 {

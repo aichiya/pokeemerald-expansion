@@ -29,6 +29,10 @@ static void AnimPetalDanceBigFlower_Step(struct Sprite *);
 static void AnimPetalDanceBigFlowerTarget_Step(struct Sprite *);
 static void AnimPetalDanceSmallFlower_Step(struct Sprite *);
 static void AnimPetalDanceSmallFlowerTarget_Step(struct Sprite *);
+static void AnimPetalDanceBigFlowerLycoris_Step(struct Sprite *);
+static void AnimPetalDanceBigFlowerLycorisTarget_Step(struct Sprite *);
+static void AnimPetalDanceSmallFlowerLycoris_Step(struct Sprite *);
+static void AnimPetalDanceSmallFlowerLycorisTarget_Step(struct Sprite *);
 static void AnimRazorLeafParticle(struct Sprite *);
 static void AnimRazorLeafParticle_Step1(struct Sprite *);
 static void AnimRazorLeafParticle_Step2(struct Sprite *);
@@ -759,6 +763,72 @@ const struct SpriteTemplate gPetalDanceSmallFlowerTargetSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimPetalDanceSmallFlowerTarget,
+};
+
+const union AnimCmd gPetalDanceBigFlowerLycorisAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd gPetalDanceSmallFlowerLycorisAnimCmds[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gPetalDanceBigFlowerLycorisAnimTable[] =
+{
+    gPetalDanceBigFlowerLycorisAnimCmds,
+};
+
+const union AnimCmd *const gPetalDanceSmallFlowerLycorisAnimTable[] =
+{
+    gPetalDanceSmallFlowerLycorisAnimCmds,
+};
+
+const struct SpriteTemplate gPetalDanceBigFlowerLycorisSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER_LYCORIS,
+    .paletteTag = ANIM_TAG_FLOWER_LYCORIS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gPetalDanceBigFlowerLycorisAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimPetalDanceBigFlowerLycoris,
+};
+
+const struct SpriteTemplate gPetalDanceSmallFlowerLycorisSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER_LYCORIS,
+    .paletteTag = ANIM_TAG_FLOWER_LYCORIS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gPetalDanceSmallFlowerLycorisAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimPetalDanceSmallFlowerLycoris,
+};
+
+const struct SpriteTemplate gPetalDanceBigFlowerLycorisTargetSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER_LYCORIS,
+    .paletteTag = ANIM_TAG_FLOWER_LYCORIS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gPetalDanceBigFlowerLycorisAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimPetalDanceBigFlowerLycorisTarget,
+};
+
+const struct SpriteTemplate gPetalDanceSmallFlowerLycorisTargetSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER_LYCORIS,
+    .paletteTag = ANIM_TAG_FLOWER_LYCORIS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gPetalDanceSmallFlowerLycorisAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimPetalDanceSmallFlowerLycorisTarget,
 };
 
 const union AnimCmd gRazorLeafParticleAnimCmds1[] =
@@ -4024,6 +4094,156 @@ void AnimPetalDanceSmallFlowerTarget(struct Sprite *sprite)
 }
 
 static void AnimPetalDanceSmallFlowerTarget_Step(struct Sprite *sprite)
+{
+    if (!AnimTranslateLinear(sprite))
+    {
+        sprite->x2 += Sin(sprite->data[5], 8);
+        if ((u16)(sprite->data[5] - 59) < 5 || (u16)(sprite->data[5] - 187) < 5)
+            sprite->oam.matrixNum ^= ST_OAM_HFLIP;
+
+        sprite->data[5] += 5;
+        sprite->data[5] &= 0xFF;
+    }
+    else
+    {
+       DestroyAnimSprite(sprite);
+    }
+}
+
+// Rotates a big flower around the attacking mon, and slowly floats
+// downward.
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+// arg 2: target y pixel offset
+// arg 3: duration
+void AnimPetalDanceBigFlowerLycoris(struct Sprite *sprite)
+{
+    InitSpritePosToAnimAttacker(sprite, FALSE);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[2];
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0x40;
+    sprite->callback = AnimPetalDanceBigFlowerLycoris_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimPetalDanceBigFlowerLycoris_Step(struct Sprite *sprite)
+{
+    if (!AnimTranslateLinear(sprite))
+    {
+        sprite->x2 += Sin(sprite->data[5], 32);
+        sprite->y2 += Cos(sprite->data[5], -5);
+        if ((u16)(sprite->data[5] - 0x40) < 0x80)
+            sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimAttacker) - 1;
+        else
+            sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimAttacker) + 1;
+
+        sprite->data[5] = (sprite->data[5] + 5) & 0xFF;
+    }
+    else
+    {
+        DestroyAnimSprite(sprite);
+    }
+}
+
+// Rotates a big flower around the attacking mon, and slowly floats
+// downward.
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+// arg 2: target y pixel offset
+// arg 3: duration
+void AnimPetalDanceBigFlowerLycorisTarget(struct Sprite *sprite)
+{
+    InitSpritePosToAnimTarget(sprite, FALSE);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[2];
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0x40;
+    sprite->callback = AnimPetalDanceBigFlowerLycorisTarget_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimPetalDanceBigFlowerLycorisTarget_Step(struct Sprite *sprite)
+{
+    if (!AnimTranslateLinear(sprite))
+    {
+        sprite->x2 += Sin(sprite->data[5], 32);
+        sprite->y2 += Cos(sprite->data[5], -5);
+        if ((u16)(sprite->data[5] - 0x40) < 0x80)
+            sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimTarget) - 1;
+        else
+            sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimTarget) + 1;
+
+        sprite->data[5] = (sprite->data[5] + 5) & 0xFF;
+    }
+    else
+    {
+        DestroyAnimSprite(sprite);
+    }
+}
+
+// Slowly floats a small flower downard, while swaying from right to left.
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+// arg 2: target y pixel offset
+// arg 3: duration
+void AnimPetalDanceSmallFlowerLycoris(struct Sprite *sprite)
+{
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[2];
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0x40;
+    sprite->callback = AnimPetalDanceSmallFlowerLycoris_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimPetalDanceSmallFlowerLycoris_Step(struct Sprite *sprite)
+{
+    if (!AnimTranslateLinear(sprite))
+    {
+        sprite->x2 += Sin(sprite->data[5], 8);
+        if ((u16)(sprite->data[5] - 59) < 5 || (u16)(sprite->data[5] - 187) < 5)
+            sprite->oam.matrixNum ^= ST_OAM_HFLIP;
+
+        sprite->data[5] += 5;
+        sprite->data[5] &= 0xFF;
+    }
+    else
+    {
+       DestroyAnimSprite(sprite);
+    }
+}
+
+// Slowly floats a small flower downard, while swaying from right to left.
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+// arg 2: target y pixel offset
+// arg 3: duration
+void AnimPetalDanceSmallFlowerLycorisTarget(struct Sprite *sprite)
+{
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[2];
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0x40;
+    sprite->callback = AnimPetalDanceSmallFlowerLycorisTarget_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimPetalDanceSmallFlowerLycorisTarget_Step(struct Sprite *sprite)
 {
     if (!AnimTranslateLinear(sprite))
     {

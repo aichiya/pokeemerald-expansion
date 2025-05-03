@@ -19256,9 +19256,66 @@ MindHackFlingPlayer:
 	waitforvisualfinish
 	return
 
+gBattleAnimMove_AdventLycoris::
+	loadspritegfx ANIM_TAG_FLOWER_LYCORIS
+	loadspritegfx ANIM_TAG_SLASH
+	loadspritegfx ANIM_TAG_SMALL_EMBER
+	monbg ANIM_DEF_PARTNER
+	setalpha 12, 8
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_RED
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 1, 5, 5, 13, RGB_YELLOW
+	playsewithpan SE_M_PETAL_DANCE, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 12, 6, 6, 3
+	createsprite gPetalDanceBigFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, 8, 140
+	createsprite gPetalDanceSmallFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, 16, -24, 8, 100
+	createsprite gPetalDanceSmallFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, -16, -24, 8, 100
+	delay 15
+	createsprite gPetalDanceBigFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, 8, 140
+	createsprite gPetalDanceSmallFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, 32, -24, 8, 100
+	createsprite gPetalDanceSmallFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, -32, -24, 8, 100
+	delay 15
+	createsprite gPetalDanceBigFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, 8, 140
+	createsprite gPetalDanceSmallFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, 24, -24, 8, 100
+	createsprite gPetalDanceSmallFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, -24, -24, 8, 100
+	delay 30
+	createsprite gPetalDanceSmallFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, 16, -24, 0, 100
+	createsprite gPetalDanceSmallFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, -16, -24, 0, 100
+	delay 30
+	createsprite gPetalDanceSmallFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, 20, -16, 14, 80
+	createsprite gPetalDanceSmallFlowerLycorisSpriteTemplate, ANIM_ATTACKER, 2, -20, -14, 16, 80
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 24, 0, 0, 5
+	delay 3
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 5, 5, 13, RGB_RED
+	createsprite gSlashSliceSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	playsewithpan SE_M_REFLECT, SOUND_PAN_TARGET
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 7
+	createsprite gPetalDanceBigFlowerLycorisTargetSpriteTemplate, ANIM_TARGET, 2, 0, -24, 8, 140
+	createsprite gPetalDanceSmallFlowerLycorisTargetSpriteTemplate, ANIM_TARGET, 2, 32, -24, 8, 100
+	createsprite gPetalDanceSmallFlowerLycorisTargetSpriteTemplate, ANIM_TARGET, 2, -32, -24, 8, 100
+	delay 4
+	call FireSpreadEffect
+	createsprite gSlashSliceSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
+	delay 20
+	createsprite gPetalDanceBigFlowerLycorisTargetSpriteTemplate, ANIM_TARGET, 2, 0, -24, 8, 140
+	createsprite gPetalDanceSmallFlowerLycorisTargetSpriteTemplate, ANIM_TARGET, 2, 32, -24, 8, 100
+	createsprite gPetalDanceSmallFlowerLycorisTargetSpriteTemplate, ANIM_TARGET, 2, -32, -24, 8, 100
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 6, 0, RGB_RED
+	waitforvisualfinish
+	end
+
 gBattleAnimMove_AdventGerbera::
 	loadspritegfx ANIM_TAG_FLOWER
 	loadspritegfx ANIM_TAG_SLASH
+	loadspritegfx ANIM_TAG_SMALL_EMBER
 	monbg ANIM_DEF_PARTNER
 	setalpha 12, 8
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_RED
@@ -19286,7 +19343,7 @@ gBattleAnimMove_AdventGerbera::
 	waitforvisualfinish
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 24, 0, 0, 5
 	delay 3
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 5, 5, 13, RGB_YELLOW
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 5, 5, 13, RGB_RED
 	createsprite gSlashSliceSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	playsewithpan SE_M_REFLECT, SOUND_PAN_TARGET
@@ -19295,11 +19352,12 @@ gBattleAnimMove_AdventGerbera::
 	createsprite gPetalDanceSmallFlowerTargetSpriteTemplate, ANIM_TARGET, 2, 32, -24, 8, 100
 	createsprite gPetalDanceSmallFlowerTargetSpriteTemplate, ANIM_TARGET, 2, -32, -24, 8, 100
 	delay 4
+	call FireSpreadEffect
 	createsprite gSlashSliceSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
-	delay 8
+	delay 20
 	createsprite gPetalDanceBigFlowerTargetSpriteTemplate, ANIM_TARGET, 2, 0, -24, 8, 140
 	createsprite gPetalDanceSmallFlowerTargetSpriteTemplate, ANIM_TARGET, 2, 32, -24, 8, 100
 	createsprite gPetalDanceSmallFlowerTargetSpriteTemplate, ANIM_TARGET, 2, -32, -24, 8, 100
@@ -29336,6 +29394,7 @@ gBattleAnimGeneral_TurnTrap::
 	jumpargeq 0, TRAP_ANIM_INFESTATION, Status_Infestation
 	jumpargeq 0, TRAP_ANIM_SNAP_TRAP, Status_Snap_Trap
 	jumpargeq 0, TRAP_ANIM_THUNDER_CAGE, Status_Thunder_Cage
+	jumpargeq 0, TRAP_ANIM_ADVENT_LYCORIS, Status_AdventLycoris
 	goto Status_BindWrap
 Status_BindWrap:
 	loadspritegfx ANIM_TAG_TENDRILS
@@ -29425,6 +29484,55 @@ Status_Clamp:
 Status_Thunder_Cage:
 	@ TODO
 	goto gBattleAnimMove_ThunderCage
+
+Status_AdventLycoris:
+	loadspritegfx ANIM_TAG_FLOWER_LYCORIS
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_DEF_PARTNER
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_RED
+	waitforvisualfinish
+	playsewithpan SE_M_TWISTER, SOUND_PAN_TARGET
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 120, 70, 5, 70, 30
+	delay 1
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 115, 55, 6, 60, 25
+	delay 1
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 115, 60, 7, 60, 30
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 115, 55, 10, 60, 30
+	delay 3
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 100, 50, 4, 50, 26
+	delay 1
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 105, 25, 8, 60, 20
+	delay 1
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 115, 40, 10, 48, 30
+	delay 3
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 120, 30, 6, 45, 25
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 115, 35, 10, 60, 30
+	delay 3
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 105, 20, 8, 40, 0
+	delay 3
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 20, 255, 15, 32, 0
+	createsprite gLycorisVortexTwister1Template, ANIM_TARGET, 2, 110, 10, 8, 32, 20
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	waitforvisualfinish
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 3, 0, 12, 1
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_DEF_PARTNER, 3, 0, 12, 1
+	delay 4
+	createsprite gRandomPosHitSplatSpriteTemplate, ANIM_TARGET, 3, ANIM_TARGET, 3
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	delay 4
+	createsprite gRandomPosHitSplatSpriteTemplate, ANIM_TARGET, 3, ANIM_TARGET, 3
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	delay 4
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, 32, 20, ANIM_TARGET, 3
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 6, 0, RGB_RED
+	waitforvisualfinish
+	end
 
 Status_Snap_Trap:
 	goto gBattleAnimMove_SnapTrap

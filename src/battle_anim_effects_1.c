@@ -26,7 +26,9 @@ static void AnimAbsorptionOrb_Step(struct Sprite *);
 static void AnimHyperBeamOrb_Step(struct Sprite *);
 static void AnimSporeParticle_Step(struct Sprite *);
 static void AnimPetalDanceBigFlower_Step(struct Sprite *);
+static void AnimPetalDanceBigFlowerTarget_Step(struct Sprite *);
 static void AnimPetalDanceSmallFlower_Step(struct Sprite *);
+static void AnimPetalDanceSmallFlowerTarget_Step(struct Sprite *);
 static void AnimRazorLeafParticle(struct Sprite *);
 static void AnimRazorLeafParticle_Step1(struct Sprite *);
 static void AnimRazorLeafParticle_Step2(struct Sprite *);
@@ -735,6 +737,28 @@ const struct SpriteTemplate gPetalDanceSmallFlowerSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimPetalDanceSmallFlower,
+};
+
+const struct SpriteTemplate gPetalDanceBigFlowerTargetSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER,
+    .paletteTag = ANIM_TAG_FLOWER,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gPetalDanceBigFlowerAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimPetalDanceBigFlowerTarget,
+};
+
+const struct SpriteTemplate gPetalDanceSmallFlowerTargetSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER,
+    .paletteTag = ANIM_TAG_FLOWER,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gPetalDanceSmallFlowerAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimPetalDanceSmallFlowerTarget,
 };
 
 const union AnimCmd gRazorLeafParticleAnimCmds1[] =
@@ -3905,6 +3929,45 @@ static void AnimPetalDanceBigFlower_Step(struct Sprite *sprite)
     }
 }
 
+// Rotates a big flower around the attacking mon, and slowly floats
+// downward.
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+// arg 2: target y pixel offset
+// arg 3: duration
+void AnimPetalDanceBigFlowerTarget(struct Sprite *sprite)
+{
+    InitSpritePosToAnimTarget(sprite, FALSE);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[2];
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0x40;
+    sprite->callback = AnimPetalDanceBigFlowerTarget_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimPetalDanceBigFlowerTarget_Step(struct Sprite *sprite)
+{
+    if (!AnimTranslateLinear(sprite))
+    {
+        sprite->x2 += Sin(sprite->data[5], 32);
+        sprite->y2 += Cos(sprite->data[5], -5);
+        if ((u16)(sprite->data[5] - 0x40) < 0x80)
+            sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimTarget) - 1;
+        else
+            sprite->subpriority = GetBattlerSpriteSubpriority(gBattleAnimTarget) + 1;
+
+        sprite->data[5] = (sprite->data[5] + 5) & 0xFF;
+    }
+    else
+    {
+        DestroyAnimSprite(sprite);
+    }
+}
+
 // Slowly floats a small flower downard, while swaying from right to left.
 // arg 0: initial x pixel offset
 // arg 1: initial y pixel offset
@@ -3925,6 +3988,42 @@ void AnimPetalDanceSmallFlower(struct Sprite *sprite)
 }
 
 static void AnimPetalDanceSmallFlower_Step(struct Sprite *sprite)
+{
+    if (!AnimTranslateLinear(sprite))
+    {
+        sprite->x2 += Sin(sprite->data[5], 8);
+        if ((u16)(sprite->data[5] - 59) < 5 || (u16)(sprite->data[5] - 187) < 5)
+            sprite->oam.matrixNum ^= ST_OAM_HFLIP;
+
+        sprite->data[5] += 5;
+        sprite->data[5] &= 0xFF;
+    }
+    else
+    {
+       DestroyAnimSprite(sprite);
+    }
+}
+
+// Slowly floats a small flower downard, while swaying from right to left.
+// arg 0: initial x pixel offset
+// arg 1: initial y pixel offset
+// arg 2: target y pixel offset
+// arg 3: duration
+void AnimPetalDanceSmallFlowerTarget(struct Sprite *sprite)
+{
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x;
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[2];
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0x40;
+    sprite->callback = AnimPetalDanceSmallFlowerTarget_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimPetalDanceSmallFlowerTarget_Step(struct Sprite *sprite)
 {
     if (!AnimTranslateLinear(sprite))
     {

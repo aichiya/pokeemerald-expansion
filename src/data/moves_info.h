@@ -21648,7 +21648,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_NeptuneBreak, // to do
+        .battleAnimScript = gBattleAnimMove_AdventGerbera,
     },
 
     [MOVE_CHAOS_JUDGMENT] =  // Edited desc power

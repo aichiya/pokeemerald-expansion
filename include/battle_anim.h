@@ -255,6 +255,8 @@ void AnimSporeParticle(struct Sprite *sprite);
 void AnimAbsorptionOrb(struct Sprite *sprite);
 void AnimPetalDanceSmallFlower(struct Sprite *sprite);
 void AnimPetalDanceBigFlower(struct Sprite *sprite);
+void AnimPetalDanceSmallFlowerTarget(struct Sprite *sprite);
+void AnimPetalDanceBigFlowerTarget(struct Sprite *sprite);
 void AnimEndureEnergy(struct Sprite *sprite);
 void AnimMimicOrb(struct Sprite *sprite);
 void AnimSolarBeamBigOrb(struct Sprite *sprite);

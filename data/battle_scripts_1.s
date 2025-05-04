@@ -8373,7 +8373,7 @@ BattleScript_BattlerAbilityStatRaiseOnSwitchIn::
 BattleScript_ScriptingAbilityStatRaise::
 	copybyte gBattlerAbility, sBATTLER
 	call BattleScript_AbilityPopUp
-	copybyte sSAVED_DMG, gBattlerAttacker
+	saveattacker
 	copybyte gBattlerAttacker, sBATTLER
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, NULL
 	setgraphicalstatchangevalues
@@ -8381,7 +8381,7 @@ BattleScript_ScriptingAbilityStatRaise::
 	waitanimation
 	printstring STRINGID_ATTACKERABILITYSTATRAISE
 	waitmessage B_WAIT_TIME_LONG
-	copybyte gBattlerAttacker, sSAVED_DMG
+	restoreattacker
 	return
 
 BattleScript_WeakArmorActivates::

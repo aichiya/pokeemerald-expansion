@@ -1669,6 +1669,13 @@ gSongTable::
 	song mus_casino_plus_7, 0, 0
 	song mus_casino_plus_8, 0, 0
 	song mus_casino_plus_9, 0, 0
+	song mus_th_yachie_keiki_saki, 0, 0
+	song mus_thpprf_girls_sealing_club, 0, 0
+	song mus_thpprf_nobeta_1, 0, 0
+	song mus_thpprf_nobeta_2, 0, 0
+	song mus_etc_tentang_engkau_dan_dia, 0, 0
+	song mus_etc_sebelum_cahaya, 0, 0
+	song mus_etc_mungkin_nanti, 0, 0
 
 	.align 2
 dummy_song_header:

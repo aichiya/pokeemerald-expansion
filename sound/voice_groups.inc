@@ -329,6 +329,7 @@
 .include "sound/voicegroups/voicegroup714.inc" @ Modified HGSS Piano Multi Sample
 
 .include "sound/voicegroups/voicegroup801.inc" @ Game corner expansion
+.include "sound/voicegroups/voicegroup802.inc" @ ラフィーニャ / ジャスミン / @redspinelj
 
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
 

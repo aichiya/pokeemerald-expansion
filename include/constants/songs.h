@@ -1642,7 +1642,15 @@
 #define MUS_CASINO_PLUS_8           1666
 #define MUS_CASINO_PLUS_9           1667
 
-#define END_MUS 					MUS_CASINO_PLUS_9
+#define MUS_TH_YACHIE_KEIKI_SAKI 1668
+#define MUS_THPPRF_GIRLS_SEALING_CLUB 1669
+#define MUS_THPPRF_NOBETA_1 1670
+#define MUS_THPPRF_NOBETA_2 1671
+#define MUS_ETC_TENTANG_ENGKAU_DAN_DIA 1672
+#define MUS_ETC_SEBELUM_CAHAYA 1673
+#define MUS_ETC_MUNGKIN_NANTI 1674
+
+#define END_MUS 					MUS_ETC_MUNGKIN_NANTI
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

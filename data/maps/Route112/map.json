@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE112",
   "name": "Route112",
   "layout": "LAYOUT_ROUTE112",
-  "music": "MUS_ROUTE110",
+  "music": "MUS_ETC_MUNGKIN_NANTI",
   "region_map_section": "MAPSEC_JAVA_KEMBANG_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

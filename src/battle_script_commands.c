@@ -8270,7 +8270,7 @@ static void Cmd_moveend(void)
                 && IsBattlerTurnDamaged(gBattlerTarget)
                 && IsBattlerAlive(gBattlerTarget)
                 && gBattlerAttacker != gBattlerTarget
-                && (moveType == TYPE_FIRE || CanBurnHitThaw(gCurrentMove))
+                && (moveType == TYPE_NEW_FIRE || CanBurnHitThaw(gCurrentMove))
                 && !(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT))
             {
                 gBattleMons[gBattlerTarget].status1 &= ~STATUS1_FREEZE;

@@ -973,13 +973,13 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
     }
 
     // Don't use anything but super effective thawing moves if target is frozen if any other attack available
-    if (((GetMoveType(move) == TYPE_FIRE && GetMovePower(move) != 0) || CanBurnHitThaw(move)) && effectiveness < UQ_4_12(2.0) && (gBattleMons[battlerDef].status1 & (STATUS1_FROSTBITE | STATUS1_FREEZE)))
+    if (((GetMoveType(move) == TYPE_NEW_FIRE && GetMovePower(move) != 0) || CanBurnHitThaw(move)) && effectiveness < UQ_4_12(2.0) && (gBattleMons[battlerDef].status1 & (STATUS1_FROSTBITE | STATUS1_FREEZE)))
     {
         u32 aiMove;
         for (i = 0; i < MAX_MON_MOVES; i++)
         {
             aiMove = gBattleMons[battlerAtk].moves[i];
-            if (GetMoveType(aiMove) != TYPE_FIRE && !CanBurnHitThaw(aiMove) && GetMovePower(gBattleMons[battlerAtk].moves[i]) != 0)
+            if (GetMoveType(aiMove) != TYPE_NEW_FIRE && !CanBurnHitThaw(aiMove) && GetMovePower(gBattleMons[battlerAtk].moves[i]) != 0)
             {
                 ADJUST_SCORE(-1);
                 break;
@@ -1055,7 +1055,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             break;
         case ABILITY_RATTLED:
             if (!IsBattleMoveStatus(move)
-              && (moveType == TYPE_DARK || moveType == TYPE_GHOST || moveType == TYPE_BUG))
+              && (moveType == TYPE_NEW_DARK || moveType == TYPE_NEW_NETHER || moveType == TYPE_NEW_BEAST))
                 RETURN_SCORE_MINUS(10);
             break;
         case ABILITY_AROMA_VEIL:
@@ -1100,11 +1100,11 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             switch (aiData->abilities[BATTLE_PARTNER(battlerDef)])
             {
             case ABILITY_LIGHTNING_ROD:
-                if (moveType == TYPE_ELECTRIC && !IsMoveRedirectionPrevented(battlerAtk, move, aiData->abilities[battlerAtk]))
+                if (moveType == TYPE_NEW_ELECTRIC && !IsMoveRedirectionPrevented(battlerAtk, move, aiData->abilities[battlerAtk]))
                     RETURN_SCORE_MINUS(20);
                 break;
             case ABILITY_STORM_DRAIN:
-                if (moveType == TYPE_WATER && !IsMoveRedirectionPrevented(battlerAtk, move, aiData->abilities[battlerAtk]))
+                if (moveType == TYPE_NEW_WATER && !IsMoveRedirectionPrevented(battlerAtk, move, aiData->abilities[battlerAtk]))
                     RETURN_SCORE_MINUS(20);
                 break;
             case ABILITY_MAGIC_BOUNCE:

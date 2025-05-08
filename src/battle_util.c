@@ -2323,12 +2323,12 @@ static void CancellerWeatherPrimal(u32 *effect)
     if (HasWeatherEffect() && GetMovePower(gCurrentMove) > 0)
     {
         u32 moveType = GetBattleMoveType(gCurrentMove);
-        if (moveType == TYPE_FIRE && (gBattleWeather & B_WEATHER_RAIN_PRIMAL) && (B_POWDER_RAIN >= GEN_7 || !TryActivatePowderStatus(gCurrentMove)))
+        if (moveType == TYPE_NEW_FIRE && (gBattleWeather & B_WEATHER_RAIN_PRIMAL) && (B_POWDER_RAIN >= GEN_7 || !TryActivatePowderStatus(gCurrentMove)))
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_PRIMAL_WEATHER_FIZZLED_BY_RAIN;
             *effect = 1;
         }
-        else if (moveType == TYPE_WATER && (gBattleWeather & B_WEATHER_SUN_PRIMAL))
+        else if (moveType == TYPE_NEW_WATER && (gBattleWeather & B_WEATHER_SUN_PRIMAL))
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_PRIMAL_WEATHER_EVAPORATED_IN_SUN;
             *effect = 1;

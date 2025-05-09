@@ -40,7 +40,7 @@ voice_keysplit voicegroup250, KeySplitTable32                                   
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 037 | --- | 
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_synth_bass, 255, 252, 0, 146     @ 038 | Direct | GBA Synth Bass
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 039 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 040 | --- | 
+	voice_keysplit voicegroup256, KeySplitTable46                                         @ 040 | Direct | Multi | HGSS Violin
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 041 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 042 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 043 | --- | 
@@ -73,7 +73,7 @@ voice_keysplit voicegroup250, KeySplitTable32                                   
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 070 | --- | 
 	voice_keysplit voicegroup266, KeySplitTable52                                         @ 071 | Direct | HGSS clarinet
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 072 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 073 | --- | 
+	voice_keysplit voicegroup267, KeySplitTable53                                         @ 073 | Direct | Multi | HGSS Flute
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 074 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 075 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 076 | --- | 

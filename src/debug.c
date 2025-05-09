@@ -5513,6 +5513,8 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_ETC_TENTANG_ENGKAU_DAN_DIA) \
     X(MUS_ETC_SEBELUM_CAHAYA) \
     X(MUS_ETC_MUNGKIN_NANTI) \
+    X(MUS_TH_FUTO_TOJIKO_MIKO) \
+    X(MUS_TH_SATONO_MAI_OKINA) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

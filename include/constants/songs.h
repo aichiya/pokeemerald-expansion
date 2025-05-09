@@ -1649,8 +1649,10 @@
 #define MUS_ETC_TENTANG_ENGKAU_DAN_DIA 1672
 #define MUS_ETC_SEBELUM_CAHAYA 1673
 #define MUS_ETC_MUNGKIN_NANTI 1674
+#define MUS_TH_FUTO_TOJIKO_MIKO 1675
+#define MUS_TH_SATONO_MAI_OKINA 1676
 
-#define END_MUS 					MUS_ETC_MUNGKIN_NANTI
+#define END_MUS 					MUS_TH_SATONO_MAI_OKINA
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -1676,6 +1676,8 @@ gSongTable::
 	song mus_etc_tentang_engkau_dan_dia, 0, 0
 	song mus_etc_sebelum_cahaya, 0, 0
 	song mus_etc_mungkin_nanti, 0, 0
+	song mus_th_futo_tojiko_miko, 0, 0
+	song mus_th_satono_mai_okina, 0, 0
 
 	.align 2
 dummy_song_header:

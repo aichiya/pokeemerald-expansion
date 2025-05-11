@@ -1652,7 +1652,14 @@
 #define MUS_TH_FUTO_TOJIKO_MIKO 1675
 #define MUS_TH_SATONO_MAI_OKINA 1676
 
-#define END_MUS 					MUS_TH_SATONO_MAI_OKINA
+#define MUS_BW_VS_WCS_CHAMPION 1677
+#define MUS_BW_MUSICAL_DLC_RELIC 1678
+#define MUS_BW_VS_TRAINER 1679
+#define MUS_BW_VS_SUBWAY_TRAINER 1680
+#define MUS_BW_VS_GYM_LEADER 1681
+#define MUS_BW_ENTRALINK 1682
+
+#define END_MUS 					MUS_BW_ENTRALINK
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

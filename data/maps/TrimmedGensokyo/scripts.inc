@@ -15,6 +15,8 @@ TrimmedGensokyo_EventScript_Debug1::
 	closemessage
 	delay 30
 @	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
+    setflag FLAG_CUSTOM_BGM_BATTLE
+	setvar VAR_SETTING_MUSIC, MUS_BW_VS_SUBWAY_TRAINER
 	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, 1
 	special PrepareSecretBasePseudoTrainerBattleByVar
 	special PrepSecretBaseBattleFlags
@@ -27,8 +29,8 @@ TrimmedGensokyo_EventScript_Debug1::
 	end
 	
 TrimmedGensokyo_Text_Debug1_1:
-	.string "Trainer battle test:\n"
-	.string "mirror battle$"
+	.string "Test:\n"
+	.string "Pseudo Secret Base Trainer Battle.$"
     
 TrimmedGensokyo_Text_Debug1_2:
 	.string "I'm not feeling very good.$"

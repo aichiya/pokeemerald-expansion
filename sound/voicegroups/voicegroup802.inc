@@ -30,7 +30,7 @@ voicegroup802::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 027 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 028 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 029 | --- | 
-voice_keysplit voicegroup250, KeySplitTable32                                             @ 030 | Direct | HGSS distortion guitar 2
+	voice_keysplit voicegroup250, KeySplitTable32                                         @ 030 | Direct | HGSS distortion guitar 2
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 031 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 032 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 033 | --- | 

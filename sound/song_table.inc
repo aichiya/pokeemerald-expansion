@@ -1678,6 +1678,12 @@ gSongTable::
 	song mus_etc_mungkin_nanti, 0, 0
 	song mus_th_futo_tojiko_miko, 0, 0
 	song mus_th_satono_mai_okina, 0, 0
+	song mus_bw_vs_wcs_champion, 0, 0
+	song mus_bw_musical_dlc_relic, 0, 0
+	song mus_bw_vs_trainer, 0, 0
+	song mus_bw_vs_subway_trainer, 0, 0
+	song mus_bw_vs_gym_leader, 0, 0
+	song mus_bw_entralink, 0, 0
 
 	.align 2
 dummy_song_header:

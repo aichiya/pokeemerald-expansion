@@ -513,10 +513,7 @@ bool8 TryHandleLaunchBattleTableAnimation(u8 activeBattler, u8 atkBattler, u8 de
     }
 
     if (tableId == B_ANIM_ILLUSION_OFF)
-    {
-        gBattleStruct->illusion[activeBattler].broken = 1;
-        gBattleStruct->illusion[activeBattler].on = 0;
-    }
+        gBattleStruct->illusion[activeBattler].state = ILLUSION_OFF;
 
     gBattleAnimAttacker = atkBattler;
     gBattleAnimTarget = defBattler;
@@ -873,11 +870,11 @@ bool8 BattleInitAllSprites(u8 *state1, u8 *battler)
         if (GetBattlerSide(*battler) == B_SIDE_PLAYER)
         {
             if (!(gBattleTypeFlags & BATTLE_TYPE_SAFARI))
-                UpdateHealthboxAttribute(gHealthboxSpriteIds[*battler], GetPartyBattlerData(*battler), HEALTHBOX_ALL);
+                UpdateHealthboxAttribute(gHealthboxSpriteIds[*battler], GetBattlerMon(*battler), HEALTHBOX_ALL);
         }
         else
         {
-            UpdateHealthboxAttribute(gHealthboxSpriteIds[*battler], GetPartyBattlerData(*battler), HEALTHBOX_ALL);
+            UpdateHealthboxAttribute(gHealthboxSpriteIds[*battler], GetBattlerMon(*battler), HEALTHBOX_ALL);
         }
         SetHealthboxSpriteInvisible(gHealthboxSpriteIds[*battler]);
         (*battler)++;
@@ -922,14 +919,15 @@ void CopyBattleSpriteInvisibility(u8 battler)
     gBattleSpritesDataPtr->battlerData[battler].invisible = gSprites[gBattlerSpriteIds[battler]].invisible;
 }
 
+// Check Fluffication and A-Trance
 void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bool8 trackEnemyPersonality)
 {
     u32 personalityValue, position, paletteOffset, targetSpecies;
     bool32 isShiny;
     const void *src;
     const u16 *paletteData;
-    struct Pokemon *monAtk = GetPartyBattlerData(battlerAtk);
-    struct Pokemon *monDef = GetPartyBattlerData(battlerDef);
+    struct Pokemon *monAtk = GetBattlerMon(battlerAtk);
+    struct Pokemon *monDef = GetBattlerMon(battlerDef);
     void *dst;
     
     if (gCurrentMove == MOVE_FLUFFICATION)
@@ -1100,13 +1098,15 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
             position = GetBattlerPosition(battlerAtk);
             if (gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies == SPECIES_NONE)
             {
-                // Get base form if its currently Gigantamax
-                if (IsGigantamaxed(battlerDef))
-                    targetSpecies = gBattleStruct->changedSpecies[GetBattlerSide(battlerDef)][gBattlerPartyIndexes[battlerDef]];
-                else
-                    targetSpecies = GetMonData(monDef, MON_DATA_SPECIES);
-                personalityValue = GetMonData(monAtk, MON_DATA_PERSONALITY);
-                isShiny = GetMonData(monAtk, MON_DATA_IS_SHINY);
+				// Get base form if its currently Gigantamax
+				if (IsGigantamaxed(battlerDef))
+					targetSpecies = gBattleStruct->changedSpecies[GetBattlerSide(battlerDef)][gBattlerPartyIndexes[battlerDef]];
+				else if (gBattleStruct->illusion[battlerDef].state == ILLUSION_ON)
+					targetSpecies = GetIllusionMonSpecies(battlerDef);
+				else
+					targetSpecies = GetMonData(monDef, MON_DATA_SPECIES);
+				personalityValue = GetMonData(monAtk, MON_DATA_PERSONALITY);
+				isShiny = GetMonData(monAtk, MON_DATA_IS_SHINY);
             }
             else
             {
@@ -1198,7 +1198,7 @@ void BattleLoadSubstituteOrMonSpriteGfx(u8 battler, bool8 loadMonSprite)
     else
     {
         if (!IsContest())
-            BattleLoadMonSpriteGfx(GetPartyBattlerData(battler), battler);
+            BattleLoadMonSpriteGfx(GetBattlerMon(battler), battler);
     }
 }
 

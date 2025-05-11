@@ -321,7 +321,7 @@ void AnimTask_DrawFallingWhiteLinesOnAttacker(u8 taskId)
     if (IsContest())
         species = gContestResources->moveAnim->species;
     else
-        species = GetMonData(GetPartyBattlerData(gBattleAnimAttacker), MON_DATA_SPECIES);
+        species = GetMonData(GetBattlerMon(gBattleAnimAttacker), MON_DATA_SPECIES);
 
     spriteId = GetAnimBattlerSpriteId(ANIM_ATTACKER);
     newSpriteId = CreateInvisibleSpriteCopy(gBattleAnimAttacker, spriteId, species);
@@ -456,7 +456,7 @@ static void StatsChangeAnimation_Step1(u8 taskId)
     if (IsContest())
         sAnimStatsChangeData->species = gContestResources->moveAnim->species;
     else
-        sAnimStatsChangeData->species = GetMonData(GetPartyBattlerData(sAnimStatsChangeData->battler1), MON_DATA_SPECIES);
+        sAnimStatsChangeData->species = GetMonData(GetBattlerMon(sAnimStatsChangeData->battler1), MON_DATA_SPECIES);
 
     gTasks[taskId].func = StatsChangeAnimation_Step2;
 }
@@ -835,7 +835,7 @@ void StartMonScrollingBgMask(u8 taskId, int UNUSED unused, u16 scrollSpeed, u8 b
     if (IsContest())
         species = gContestResources->moveAnim->species;
     else
-        species = GetMonData(GetPartyBattlerData(battler), MON_DATA_SPECIES);
+        species = GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES);
 
     spriteId = CreateInvisibleSpriteCopy(battler, gBattlerSpriteIds[battler], species);
     if (includePartner)

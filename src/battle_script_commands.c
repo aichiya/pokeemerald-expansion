@@ -3701,7 +3701,7 @@ static inline bool32 TryActivateWeakenessBerry(u32 battlerDef)
         gSpecialStatuses[battlerDef].berryReduced = FALSE;
         gBattleScripting.battler = battlerDef;
         gLastUsedItem = gBattleMons[battlerDef].item;
-        gBattleStruct->ateBerry[battlerDef & BIT_SIDE] |= 1u << gBattlerPartyIndexes[battlerDef];
+        gBattleStruct->partyState[GetBattlerSide(battlerDef)][gBattlerPartyIndexes[battlerDef]].ateBerry = TRUE;
         BattleScriptPushCursor();
         gBattlescriptCurrInstr = BattleScript_BerryReduceDmg;
         return TRUE;
@@ -4579,7 +4579,6 @@ void SetMoveEffect(bool32 primary, bool32 certain)
     case MOVE_EFFECT_KNOCK_OFF:
     case MOVE_EFFECT_SMACK_DOWN:
     case MOVE_EFFECT_REMOVE_STATUS:
-    case MOVE_EFFECT_STOCKPILE_WORE_OFF:
         gBattleStruct->moveEffect2 = gBattleScripting.moveEffect;
         gBattlescriptCurrInstr++;
         return;
@@ -5197,7 +5196,7 @@ void SetMoveEffect(bool32 primary, bool32 certain)
             case MOVE_EFFECT_SYRUP_BOMB:
                 if (!(gStatuses4[gEffectBattler] & STATUS4_SYRUP_BOMB))
                 {
-                    struct Pokemon *mon = GetPartyBattlerData(gBattlerAttacker);
+                    struct Pokemon *mon = GetBattlerMon(gBattlerAttacker);
 
                     gStatuses4[gEffectBattler] |= STATUS4_SYRUP_BOMB;
                     gDisableStructs[gEffectBattler].syrupBombTimer = 3;
@@ -5950,7 +5949,7 @@ static void Cmd_tryfaintmon(void)
             {
                 if (gBattleResults.opponentFaintCounter < 255)
                     gBattleResults.opponentFaintCounter++;
-                gBattleResults.lastOpponentSpecies = GetMonData(GetPartyBattlerData(battler), MON_DATA_SPECIES, NULL);
+                gBattleResults.lastOpponentSpecies = GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES, NULL);
                 gSideTimers[B_SIDE_OPPONENT].retaliateTimer = 2;
             }
             if ((gHitMarker & HITMARKER_DESTINYBOND) && IsBattlerAlive(gBattlerAttacker)
@@ -6467,7 +6466,7 @@ static void Cmd_getexp(void)
             {
                 u16 temp, battler = 0xFF;
                 if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && gBattlerPartyIndexes[expBattler] == *expMonId)
-                    HandleLowHpMusicChange(GetPartyBattlerData(expBattler), expBattler);
+                    HandleLowHpMusicChange(GetBattlerMon(expBattler), expBattler);
 
                 PREPARE_MON_NICK_WITH_PREFIX_BUFFER(gBattleTextBuff1, expBattler, *expMonId);
                 PREPARE_BYTE_NUMBER_BUFFER(gBattleTextBuff2, 3, GetMonData(&gPlayerParty[*expMonId], MON_DATA_LEVEL));
@@ -7543,14 +7542,14 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
 
             u32 side = GetBattlerSide(battlerAtk);
 
-            if (gBattleStruct->battleBondBoost[side] & (1u << gBattlerPartyIndexes[battlerAtk]))
+            if (gBattleStruct->partyState[side][gBattlerPartyIndexes[battlerAtk]].battleBondBoost)
                 break;
 
             if (GetGenConfig(GEN_CONFIG_BATTLE_BOND) < GEN_9 && gBattleMons[battlerAtk].species == SPECIES_GRENINJA_BATTLE_BOND)
             {
                 // TODO: Convert this to a proper FORM_CHANGE type.
                 gLastUsedAbility = abilityAtk;
-                gBattleStruct->battleBondBoost[side] |= 1u << gBattlerPartyIndexes[battlerAtk];
+                gBattleStruct->partyState[side][gBattlerPartyIndexes[battlerAtk]].battleBondBoost = TRUE;
                 PREPARE_SPECIES_BUFFER(gBattleTextBuff1, gBattleMons[battlerAtk].species);
                 gBattleStruct->changedSpecies[side][gBattlerPartyIndexes[battlerAtk]] = gBattleMons[battlerAtk].species;
                 gBattleMons[battlerAtk].species = SPECIES_GRENINJA_ASH;
@@ -7584,7 +7583,7 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
 
                     gLastUsedAbility = abilityAtk;
                     gBattlerAbility = battlerAtk;
-                    gBattleStruct->battleBondBoost[side] |= 1u << gBattlerPartyIndexes[battlerAtk];
+                    gBattleStruct->partyState[side][gBattlerPartyIndexes[battlerAtk]].battleBondBoost = TRUE;
                     BattleScriptPushCursor();
                     gBattlescriptCurrInstr = BattleScript_EffectBattleBondStatIncrease;
                     effect = TRUE;
@@ -7789,6 +7788,8 @@ static void Cmd_moveend(void)
         case MOVEEND_ABILITIES: // Such as abilities activating on contact(Poison Spore, Rough Skin, etc.).
             if (AbilityBattleEffects(ABILITYEFFECT_MOVE_END, gBattlerTarget, 0, 0, 0))
                 effect = TRUE;
+            else if (TryClearIllusion(gBattlerTarget, ABILITYEFFECT_MOVE_END))
+                effect = TRUE;
             gBattleScripting.moveendState++;
             break;
         case MOVEEND_ABILITIES_ATTACKER: // Poison Touch, possibly other in the future
@@ -7849,15 +7850,6 @@ static void Cmd_moveend(void)
                 if (!DoesSubstituteBlockMove(gBattlerAttacker, gBattlerTarget, gCurrentMove))
                 {
                     effect = TryKnockOffBattleScript(gBattlerTarget);
-                }
-                break;
-            case MOVE_EFFECT_STOCKPILE_WORE_OFF:
-                if (gDisableStructs[gBattlerAttacker].stockpileCounter != 0)
-                {
-                    gDisableStructs[gBattlerAttacker].stockpileCounter = 0;
-                    effect = TRUE;
-                    BattleScriptPush(gBattlescriptCurrInstr);
-                    gBattlescriptCurrInstr = BattleScript_MoveEffectStockpileWoreOff;
                 }
                 break;
             case MOVE_EFFECT_SMACK_DOWN:
@@ -9669,6 +9661,8 @@ static bool32 DoSwitchInEffectsForBattler(u32 battler)
                     return TRUE;
                 break;
             }
+            if (TryClearIllusion(i, ABILITYEFFECT_ON_SWITCHIN))
+                return TRUE;
         }
 
         gDisableStructs[battler].stickyWebDone = FALSE;
@@ -10440,7 +10434,7 @@ static bool32 TryCheekPouch(u32 battler, u32 itemId)
     if (ItemId_GetPocket(itemId) == POCKET_BERRIES
         && GetBattlerAbility(battler) == ABILITY_CHEEK_POUCH
         && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
-        && gBattleStruct->ateBerry[GetBattlerSide(battler)] & (1u << gBattlerPartyIndexes[battler])
+        && gBattleStruct->partyState[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]].ateBerry
         && !IsBattlerAtMaxHp(battler))
     {
         gBattleStruct->cheekPouchActivated = TRUE;
@@ -10948,7 +10942,7 @@ static void Cmd_useitemonopponent(void)
     CMD_ARGS();
 
     gBattlerInMenuId = gBattlerAttacker;
-    PokemonUseItemEffects(GetPartyBattlerData(gBattlerAttacker), gLastUsedItem, gBattlerPartyIndexes[gBattlerAttacker], 0, TRUE);
+    PokemonUseItemEffects(GetBattlerMon(gBattlerAttacker), gLastUsedItem, gBattlerPartyIndexes[gBattlerAttacker], 0, TRUE);
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
@@ -11284,7 +11278,7 @@ void BS_CourtChangeSwapSideStatuses(void)
 
 static void HandleScriptMegaPrimalBurst(u32 caseId, u32 battler, u32 type)
 {
-    struct Pokemon *mon = GetPartyBattlerData(battler);
+    struct Pokemon *mon = GetBattlerMon(battler);
     u32 side = GetBattlerSide(battler);
 
     // Change species.
@@ -11535,14 +11529,8 @@ static void Cmd_various(void)
     case VARIOUS_TRY_ILLUSION_OFF:
     {
         VARIOUS_ARGS();
-        if (GetIllusionMonPtr(battler) != NULL)
-        {
-            gBattleScripting.battler = battler;
-            gBattlescriptCurrInstr = cmd->nextInstr;
-            BattleScriptPushCursor();
-            gBattlescriptCurrInstr = BattleScript_IllusionOff;
+        if (TryClearIllusion(battler, ABILITYEFFECT_MOVE_END))
             return;
-        }
         break;
     }
     case VARIOUS_SET_SPRITEIGNORE0HP:
@@ -11556,9 +11544,9 @@ static void Cmd_various(void)
     {
         VARIOUS_ARGS();
         if (GetBattlerSide(battler) == B_SIDE_PLAYER)
-            mon = GetPartyBattlerData(battler);
+            mon = GetBattlerMon(battler);
         else
-            mon = GetPartyBattlerData(battler);
+            mon = GetBattlerMon(battler);
         UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], mon, HEALTHBOX_NICK);
         break;
     }
@@ -11869,7 +11857,7 @@ static void Cmd_various(void)
             gAbsentBattlerFlags |= 1u << battler;
             gHitMarker |= HITMARKER_FAINTED(battler);
             gBattleMons[battler].hp = 0;
-            SetMonData(GetPartyBattlerData(battler), MON_DATA_HP, &gBattleMons[battler].hp);
+            SetMonData(GetBattlerMon(battler), MON_DATA_HP, &gBattleMons[battler].hp);
             SetHealthboxSpriteInvisible(gHealthboxSpriteIds[battler]);
             FaintClearSetData(battler);
         }
@@ -12149,7 +12137,7 @@ static void Cmd_various(void)
     case VARIOUS_HANDLE_FORM_CHANGE:
     {
         VARIOUS_ARGS(u8 case_);
-        mon = GetPartyBattlerData(battler);
+        mon = GetBattlerMon(battler);
 
         // Change species.
         if (cmd->case_ == 0)
@@ -12387,13 +12375,13 @@ static void Cmd_various(void)
             if (IsBattlerAlive(battler))
             {
                 SetBattlerShadowSpriteCallback(battler, gBattleMons[battler].species);
-                BattleLoadMonSpriteGfx(GetPartyBattlerData(battler), battler);
+                BattleLoadMonSpriteGfx(GetBattlerMon(battler), battler);
             }
             i = BATTLE_PARTNER(battler);
             if (IsBattlerAlive(i))
             {
                 SetBattlerShadowSpriteCallback(i, gBattleMons[i].species);
-                BattleLoadMonSpriteGfx(GetPartyBattlerData(i), i);
+                BattleLoadMonSpriteGfx(GetBattlerMon(i), i);
             }
         }
         gBattlescriptCurrInstr = cmd->nextInstr;
@@ -12788,7 +12776,7 @@ static void Cmd_various(void)
         if (cmd->fromBattler)
             gLastUsedItem = gBattleMons[battler].item;
 
-        gBattleStruct->ateBerry[battler & BIT_SIDE] |= 1u << gBattlerPartyIndexes[battler];
+        gBattleStruct->partyState[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]].ateBerry = TRUE;
         gBattleScripting.battler = gEffectBattler = gBattlerTarget = battler;    // Cover all berry effect battler cases. e.g. ChangeStatBuffs uses target ID
         if (ItemBattleEffects(ITEMEFFECT_USE_LAST_ITEM, battler, FALSE))
             return;
@@ -13433,10 +13421,6 @@ static void Cmd_stockpiletobasedamage(void)
         if (gBattleCommunication[MISS_TYPE] != B_MSG_PROTECTED)
             gBattleScripting.animTurn = gDisableStructs[gBattlerAttacker].stockpileCounter;
 
-        if (!(gSpecialStatuses[gBattlerAttacker].parentalBondState == PARENTAL_BOND_1ST_HIT && IsBattlerAlive(gBattlerTarget)))
-        {
-            gBattleStruct->moveEffect2 = MOVE_EFFECT_STOCKPILE_WORE_OFF;
-        }
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
 }
@@ -13467,7 +13451,6 @@ static void Cmd_stockpiletohpheal(void)
             {
                 gBattleStruct->moveDamage[gBattlerAttacker] = GetNonDynamaxMaxHP(gBattlerAttacker) / (1 << (3 - gDisableStructs[gBattlerAttacker].stockpileCounter));
                 gBattleScripting.animTurn = gDisableStructs[gBattlerAttacker].stockpileCounter;
-                gBattleStruct->moveEffect2 = MOVE_EFFECT_STOCKPILE_WORE_OFF;
             }
             else // Snatched move
             {
@@ -13482,6 +13465,24 @@ static void Cmd_stockpiletohpheal(void)
             gBattlescriptCurrInstr = cmd->nextInstr;
             gBattlerTarget = gBattlerAttacker;
         }
+    }
+}
+
+void BS_RemoveStockpileCounters(void)
+{
+    NATIVE_ARGS();
+
+    if (GetMoveEffect(gCurrentMove) == EFFECT_SWALLOW
+     && gSpecialStatuses[gBattlerAttacker].parentalBondState == PARENTAL_BOND_1ST_HIT
+     && IsBattlerAlive(gBattlerTarget))
+    {
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
+    else
+    {
+        gDisableStructs[gBattlerAttacker].stockpileCounter = 0;
+        BattleScriptPush(cmd->nextInstr);
+        gBattlescriptCurrInstr = BattleScript_MoveEffectStockpileWoreOff;
     }
 }
 
@@ -14516,7 +14517,7 @@ static void Cmd_transformdataexecution(void)
     gChosenMove = MOVE_UNAVAILABLE;
     gBattlescriptCurrInstr = cmd->nextInstr;
     if (gBattleMons[gBattlerTarget].status2 & STATUS2_TRANSFORMED
-        || gBattleStruct->illusion[gBattlerTarget].on
+        || gBattleStruct->illusion[gBattlerTarget].state == ILLUSION_ON
         || gStatuses3[gBattlerTarget] & STATUS3_SEMI_INVULNERABLE_NO_COMMANDER)
     {
         gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_FAILED;
@@ -17532,8 +17533,8 @@ static void Cmd_handleballthrow(void)
             case BALL_LOVE:
                 if (gBattleMons[gBattlerTarget].species == gBattleMons[gBattlerAttacker].species)
                 {
-                    u8 gender1 = GetMonGender(GetPartyBattlerData(gBattlerTarget));
-                    u8 gender2 = GetMonGender(GetPartyBattlerData(gBattlerAttacker));
+                    u8 gender1 = GetMonGender(GetBattlerMon(gBattlerTarget));
+                    u8 gender2 = GetMonGender(GetBattlerMon(gBattlerAttacker));
 
                     if (gender1 != gender2 && gender1 != MON_GENDERLESS && gender2 != MON_GENDERLESS)
                         ballMultiplier = 800;
@@ -17615,7 +17616,7 @@ static void Cmd_handleballthrow(void)
             MarkBattlerForControllerExec(gBattlerAttacker);
             TryBattleFormChange(gBattlerTarget, FORM_CHANGE_END_BATTLE);
             gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
-            SetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_POKEBALL, &ballId);
+            SetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_POKEBALL, &ballId);
 
             if (CalculatePlayerPartyCount() == PARTY_SIZE)
                 gBattleCommunication[MULTISTRING_CHOOSER] = 0;
@@ -17624,15 +17625,15 @@ static void Cmd_handleballthrow(void)
 
             if (ballId == BALL_HEAL)
             {
-                MonRestorePP(GetPartyBattlerData(gBattlerTarget));
-                HealStatusConditions(GetPartyBattlerData(gBattlerTarget), STATUS1_ANY, gBattlerTarget);
+                MonRestorePP(GetBattlerMon(gBattlerTarget));
+                HealStatusConditions(GetBattlerMon(gBattlerTarget), STATUS1_ANY, gBattlerTarget);
                 gBattleMons[gBattlerTarget].hp = gBattleMons[gBattlerTarget].maxHP;
-                SetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
+                SetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
             }
             else if (ballId == BALL_FRIEND)
             {
                 u32 friendship = (B_FRIEND_BALL_MODIFIER >= GEN_8 ? 150 : 200);
-                SetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_FRIENDSHIP, &friendship);
+                SetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_FRIENDSHIP, &friendship);
             }
         }
         else // mon may be caught, calculate shakes
@@ -17674,7 +17675,7 @@ static void Cmd_handleballthrow(void)
 
                 TryBattleFormChange(gBattlerTarget, FORM_CHANGE_END_BATTLE);
                 gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
-                SetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_POKEBALL, &ballId);
+                SetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_POKEBALL, &ballId);
 
                 if (CalculatePlayerPartyCount() == PARTY_SIZE)
                     gBattleCommunication[MULTISTRING_CHOOSER] = 0;
@@ -17683,15 +17684,15 @@ static void Cmd_handleballthrow(void)
 
                 if (ballId == BALL_HEAL)
                 {
-                    MonRestorePP(GetPartyBattlerData(gBattlerTarget));
-                    HealStatusConditions(GetPartyBattlerData(gBattlerTarget), STATUS1_ANY, gBattlerTarget);
+                    MonRestorePP(GetBattlerMon(gBattlerTarget));
+                    HealStatusConditions(GetBattlerMon(gBattlerTarget), STATUS1_ANY, gBattlerTarget);
                     gBattleMons[gBattlerTarget].hp = gBattleMons[gBattlerTarget].maxHP;
-                    SetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
+                    SetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
                 }
                 else if (ballId == BALL_FRIEND)
                 {
                     u32 friendship = (B_FRIEND_BALL_MODIFIER >= GEN_8 ? 150 : 200);
-                    SetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_FRIENDSHIP, &friendship);
+                    SetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_FRIENDSHIP, &friendship);
                 }
             }
             else // not caught
@@ -17813,22 +17814,22 @@ static void Cmd_givecaughtmon(void)
         {
             u16 lostItem = gBattleStruct->itemLost[B_SIDE_OPPONENT][gBattlerPartyIndexes[GetCatchingBattler()]].originalItem;
             if (lostItem != ITEM_NONE && ItemId_GetPocket(lostItem) != POCKET_BERRIES)
-                SetMonData(GetPartyBattlerData(GetCatchingBattler()), MON_DATA_HELD_ITEM, &lostItem);  // Restore non-berry items
+                SetMonData(GetBattlerMon(GetCatchingBattler()), MON_DATA_HELD_ITEM, &lostItem);  // Restore non-berry items
         }
 
-        if (GiveMonToPlayer(GetPartyBattlerData(GetCatchingBattler())) != MON_GIVEN_TO_PARTY
+        if (GiveMonToPlayer(GetBattlerMon(GetCatchingBattler())) != MON_GIVEN_TO_PARTY
          && gBattleCommunication[MULTISTRING_CHOOSER] != B_MSG_SWAPPED_INTO_PARTY)
         {
             if (!ShouldShowBoxWasFullMessage())
             {
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SENT_SOMEONES_PC;
                 StringCopy(gStringVar1, GetBoxNamePtr(VarGet(VAR_PC_BOX_TO_SEND_MON)));
-                GetMonData(GetPartyBattlerData(GetCatchingBattler()), MON_DATA_NICKNAME, gStringVar2);
+                GetMonData(GetBattlerMon(GetCatchingBattler()), MON_DATA_NICKNAME, gStringVar2);
             }
             else
             {
                 StringCopy(gStringVar1, GetBoxNamePtr(VarGet(VAR_PC_BOX_TO_SEND_MON))); // box the mon was sent to
-                GetMonData(GetPartyBattlerData(GetCatchingBattler()), MON_DATA_NICKNAME, gStringVar2);
+                GetMonData(GetBattlerMon(GetCatchingBattler()), MON_DATA_NICKNAME, gStringVar2);
                 StringCopy(gStringVar3, GetBoxNamePtr(GetPCBoxToSendMon())); //box the mon was going to be sent to
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SOMEONES_BOX_FULL;
             }
@@ -17838,9 +17839,9 @@ static void Cmd_givecaughtmon(void)
                 gBattleCommunication[MULTISTRING_CHOOSER]++;
         }
 
-        gBattleResults.caughtMonSpecies = GetMonData(GetPartyBattlerData(GetCatchingBattler()), MON_DATA_SPECIES, NULL);
-        GetMonData(GetPartyBattlerData(GetCatchingBattler()), MON_DATA_NICKNAME, gBattleResults.caughtMonNick);
-        gBattleResults.caughtMonBall = GetMonData(GetPartyBattlerData(GetCatchingBattler()), MON_DATA_POKEBALL, NULL);
+        gBattleResults.caughtMonSpecies = GetMonData(GetBattlerMon(GetCatchingBattler()), MON_DATA_SPECIES, NULL);
+        GetMonData(GetBattlerMon(GetCatchingBattler()), MON_DATA_NICKNAME, gBattleResults.caughtMonNick);
+        gBattleResults.caughtMonBall = GetMonData(GetBattlerMon(GetCatchingBattler()), MON_DATA_POKEBALL, NULL);
 
         gSelectedMonPartyId = PARTY_SIZE;
         gBattleCommunication[MULTIUSE_STATE] = 0;
@@ -17857,8 +17858,8 @@ static void Cmd_trysetcaughtmondexflags(void)
 {
     CMD_ARGS(const u8 *failInstr);
 
-    u32 species = GetMonData(GetPartyBattlerData(GetCatchingBattler()), MON_DATA_SPECIES, NULL);
-    u32 personality = GetMonData(GetPartyBattlerData(GetCatchingBattler()), MON_DATA_PERSONALITY, NULL);
+    u32 species = GetMonData(GetBattlerMon(GetCatchingBattler()), MON_DATA_SPECIES, NULL);
+    u32 personality = GetMonData(GetBattlerMon(GetCatchingBattler()), MON_DATA_PERSONALITY, NULL);
 
     if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
     {
@@ -17875,7 +17876,7 @@ static void Cmd_displaydexinfo(void)
 {
     CMD_ARGS();
 
-    u16 species = GetMonData(GetPartyBattlerData(GetCatchingBattler()), MON_DATA_SPECIES, NULL);
+    u16 species = GetMonData(GetBattlerMon(GetCatchingBattler()), MON_DATA_SPECIES, NULL);
 
     switch (gBattleCommunication[0])
     {
@@ -17886,7 +17887,7 @@ static void Cmd_displaydexinfo(void)
     case 1:
         if (!gPaletteFade.active)
         {
-            struct Pokemon *mon = GetPartyBattlerData(GetCatchingBattler());
+            struct Pokemon *mon = GetBattlerMon(GetCatchingBattler());
             FreeAllWindowBuffers();
             gBattleCommunication[TASK_ID] = DisplayCaughtMonDexPage(species,
                                                                     GetMonData(mon, MON_DATA_IS_SHINY),
@@ -18042,14 +18043,14 @@ static void Cmd_trygivecaughtmonnick(void)
     case 2:
         if (!gPaletteFade.active)
         {
-            GetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_NICKNAME, gBattleStruct->caughtMonNick);
+            GetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_NICKNAME, gBattleStruct->caughtMonNick);
             FreeAllWindowBuffers();
             MainCallback callback = CalculatePlayerPartyCount() == PARTY_SIZE ? ReshowBlankBattleScreenAfterMenu : BattleMainCB2;
 
             DoNamingScreen(NAMING_SCREEN_CAUGHT_MON, gBattleStruct->caughtMonNick,
-                           GetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_SPECIES),
-                           GetMonGender(GetPartyBattlerData(gBattlerTarget)),
-                           GetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_PERSONALITY, NULL),
+                           GetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_SPECIES),
+                           GetMonGender(GetBattlerMon(gBattlerTarget)),
+                           GetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_PERSONALITY, NULL),
                            callback);
 
             gBattleCommunication[MULTIUSE_STATE]++;
@@ -18058,7 +18059,7 @@ static void Cmd_trygivecaughtmonnick(void)
     case 3:
         if (gMain.callback2 == BattleMainCB2 && !gPaletteFade.active)
         {
-            SetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_NICKNAME, gBattleStruct->caughtMonNick);
+            SetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_NICKNAME, gBattleStruct->caughtMonNick);
             gBattleCommunication[MULTIUSE_STATE]++;
         }
         break;
@@ -19474,23 +19475,23 @@ static void TryUpdateEvolutionTracker(u32 evolutionCondition, u32 upAmount, u16 
                 if (evolutions[i].params[j].condition == evolutionCondition)
                 {
                     // We only have 10 bits to use
-                    u16 val = min(1023, GetMonData(GetPartyBattlerData(gBattlerAttacker), MON_DATA_EVOLUTION_TRACKER) + upAmount);
+                    u16 val = min(1023, GetMonData(GetBattlerMon(gBattlerAttacker), MON_DATA_EVOLUTION_TRACKER) + upAmount);
                     // Reset progress if you faint for the recoil method.
                     switch (evolutionCondition)
                     {
                         case IF_USED_MOVE_X_TIMES:
                             if (evolutions[i].params[j].arg1 == usedMove)
-                                SetMonData(GetPartyBattlerData(gBattlerAttacker), MON_DATA_EVOLUTION_TRACKER, &val);
+                                SetMonData(GetBattlerMon(gBattlerAttacker), MON_DATA_EVOLUTION_TRACKER, &val);
                             break;
                         case IF_RECOIL_DAMAGE_GE:
                             if (gBattleMons[gBattlerAttacker].hp == 0)
                                 val = 0;
-                            SetMonData(GetPartyBattlerData(gBattlerAttacker), MON_DATA_EVOLUTION_TRACKER, &val);
+                            SetMonData(GetBattlerMon(gBattlerAttacker), MON_DATA_EVOLUTION_TRACKER, &val);
                             break;
                         case IF_DEFEAT_X_WITH_ITEMS:
-                            if (GetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_SPECIES) == evolutions[i].params[j].arg1
-                             && GetMonData(GetPartyBattlerData(gBattlerTarget), MON_DATA_HELD_ITEM) == evolutions[i].params[j].arg2)
-                                SetMonData(GetPartyBattlerData(gBattlerAttacker), MON_DATA_EVOLUTION_TRACKER, &val);
+                            if (GetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_SPECIES) == evolutions[i].params[j].arg1
+                             && GetMonData(GetBattlerMon(gBattlerTarget), MON_DATA_HELD_ITEM) == evolutions[i].params[j].arg2)
+                                SetMonData(GetBattlerMon(gBattlerAttacker), MON_DATA_EVOLUTION_TRACKER, &val);
                             break;
                     }
                     return;
@@ -20426,7 +20427,7 @@ void BS_JumpIfCanGigantamax(void)
     NATIVE_ARGS(u8 battler, const u8 *jumpInstr);
     u32 battler = GetBattlerForBattleScript(cmd->battler);
 
-    if (GetMonData(GetPartyBattlerData(battler), MON_DATA_GIGANTAMAX_FACTOR)
+    if (GetMonData(GetBattlerMon(battler), MON_DATA_GIGANTAMAX_FACTOR)
       && GetGMaxTargetSpecies(gBattleMons[battler].species) != SPECIES_NONE)
         gBattlescriptCurrInstr = cmd->jumpInstr;
     else

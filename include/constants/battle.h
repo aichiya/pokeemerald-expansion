@@ -607,4 +607,10 @@ enum StartingStatus
     STARTING_STATUS_DARKNESS_TERRAIN,
 };
 
+enum SlideMsgStates
+{
+    PRINT_SLIDE_MESSAGE,
+    RESTORE_BATTLER_SLIDE_CONTROL,
+};
+
 #endif // GUARD_CONSTANTS_BATTLE_H

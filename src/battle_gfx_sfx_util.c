@@ -352,7 +352,7 @@ static u16 GetBattlePalaceTarget(u32 battler)
     {
         u8 opposing1, opposing2;
 
-        if (GetBattlerSide(battler) == B_SIDE_PLAYER)
+        if (IsOnPlayerSide(battler))
         {
             opposing1 = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
             opposing2 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
@@ -643,7 +643,7 @@ void BattleLoadMonSpriteGfx(struct Pokemon *mon, u32 battler)
     }
 
     position = GetBattlerPosition(battler);
-    HandleLoadSpecialPokePic((GetBattlerSide(battler) == B_SIDE_OPPONENT),
+    HandleLoadSpecialPokePic(!IsOnPlayerSide(battler),
                              gMonSpritesGfxPtr->spritesGfx[position],
                              species, personalityValue);
 
@@ -867,7 +867,7 @@ bool8 BattleInitAllSprites(u8 *state1, u8 *battler)
         }
         break;
     case 5:
-        if (GetBattlerSide(*battler) == B_SIDE_PLAYER)
+        if (IsOnPlayerSide(*battler))
         {
             if (!(gBattleTypeFlags & BATTLE_TYPE_SAFARI))
                 UpdateHealthboxAttribute(gHealthboxSpriteIds[*battler], GetBattlerMon(*battler), HEALTHBOX_ALL);
@@ -1036,7 +1036,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
             personalityValue = GetMonData(monAtk, MON_DATA_PERSONALITY);
             isShiny = GetMonData(monAtk, MON_DATA_IS_SHINY);
             
-			HandleLoadSpecialPokePic((GetBattlerSide(battlerAtk) != B_SIDE_PLAYER),
+            HandleLoadSpecialPokePic(!IsOnPlayerSide(battlerDef),
                                     gMonSpritesGfxPtr->spritesGfx[position],
                                     targetSpecies,
                                     personalityValue);
@@ -1123,7 +1123,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
                 }
             }
 
-            HandleLoadSpecialPokePic((GetBattlerSide(battlerAtk) != B_SIDE_PLAYER),
+            HandleLoadSpecialPokePic(!IsOnPlayerSide(battlerAtk),
                                     gMonSpritesGfxPtr->spritesGfx[position],
                                     targetSpecies,
                                     personalityValue);
@@ -1182,7 +1182,7 @@ void BattleLoadSubstituteOrMonSpriteGfx(u8 battler, bool8 loadMonSprite)
 
         if (IsContest())
             LZDecompressVram(gBattleAnimSpriteGfx_SubstituteBack, gMonSpritesGfxPtr->spritesGfx[position]);
-        else if (GetBattlerSide(battler) != B_SIDE_PLAYER)
+        else if (!IsOnPlayerSide(battler))
             LZDecompressVram(gBattleAnimSpriteGfx_Substitute, gMonSpritesGfxPtr->spritesGfx[position]);
         else
             LZDecompressVram(gBattleAnimSpriteGfx_SubstituteBack, gMonSpritesGfxPtr->spritesGfx[position]);
@@ -1468,7 +1468,7 @@ void SetBattlerShadowSpriteCallback(u8 battler, u16 species)
 {
     if (B_ENEMY_MON_SHADOW_STYLE >= GEN_4 && P_GBA_STYLE_SPECIES_GFX == FALSE)
     {
-        if (GetBattlerSide(battler) == B_SIDE_PLAYER || gBattleScripting.monCaught)
+        if (IsOnPlayerSide(battler) || gBattleScripting.monCaught)
         {
             gSprites[gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdPrimary].callback = SpriteCB_SetInvisible;
             gSprites[gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdSecondary].callback = SpriteCB_SetInvisible;
@@ -1495,7 +1495,7 @@ void SetBattlerShadowSpriteCallback(u8 battler, u16 species)
     }
     else
     {
-        if (GetBattlerSide(battler) == B_SIDE_PLAYER || gBattleScripting.monCaught)
+        if (IsOnPlayerSide(battler) || gBattleScripting.monCaught)
         {
             gSprites[gBattleSpritesDataPtr->healthBoxesData[battler].shadowSpriteIdPrimary].callback = SpriteCB_SetInvisible;
             return;

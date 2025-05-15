@@ -60,6 +60,7 @@
 #include "constants/vars.h"
 #include "constants/weather.h"
 #include "constants/region_map_sections.h"
+#include "constants/rgb.h"
 
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
@@ -1129,6 +1130,25 @@ EventScript_TrimmedGensokyoLandEncounter::
 @	dowildbattle
 @	releaseall
 	end
+
+Script_SetGrayscaleTint::
+	setvar VAR_GLOBAL_TINT_SETTING, GLOBAL_FIELD_TINT_GRAYSCALE
+	callnative PrepareGlobalFieldPaletteTint
+	callnative InitMapView
+	return
+
+Script_SetSepiaTint::
+	setvar VAR_GLOBAL_TINT_SETTING, GLOBAL_FIELD_TINT_SEPIA
+	callnative PrepareGlobalFieldPaletteTint
+	callnative InitMapView
+	return
+
+Script_RemoveTint::
+	setvar VAR_GLOBAL_TINT_SETTING, GLOBAL_FIELD_TINT_NONE
+	callnative PrepareGlobalFieldPaletteTint
+	callnative RemoveTintFromObjectEvents
+	callnative InitMapView
+	return
 
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"

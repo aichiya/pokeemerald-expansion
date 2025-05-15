@@ -240,7 +240,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
          && ability != ABILITY_SAND_FORCE
          && ability != ABILITY_SAND_RUSH
          && ability != ABILITY_OVERCOAT
-         && !IS_BATTLER_ANY_TYPE(gBattlerAttacker, TYPE_ROCK, TYPE_GROUND, TYPE_STEEL)
+         && !IS_BATTLER_ANY_TYPE(gBattlerAttacker, TYPE_NEW_EARTH, TYPE_NEW_METAL)
          && !(gStatuses3[gBattlerAttacker] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
          && GetBattlerHoldEffect(gBattlerAttacker, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
          && !IsBattlerProtectedByMagicGuard(battler, ability))
@@ -264,7 +264,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
         {
             if (ability != ABILITY_SNOW_CLOAK
              && ability != ABILITY_OVERCOAT
-             && !IS_BATTLER_OF_TYPE(battler, TYPE_ICE)
+             && !IS_BATTLER_OF_TYPE(battler, TYPE_NEW_ICE)
              && !(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
              && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
              && !IsBattlerProtectedByMagicGuard(battler, ability))
@@ -823,7 +823,7 @@ static bool32 HandleEndTurnSaltCure(u32 battler)
      && !IsBattlerProtectedByMagicGuard(battler, GetBattlerAbility(battler))
      && ability != ABILITY_PURE_WHITE)
     {
-        if (IS_BATTLER_ANY_TYPE(battler, TYPE_STEEL, TYPE_WATER))
+        if (IS_BATTLER_ANY_TYPE(battler, TYPE_NEW_METAL, TYPE_NEW_WATER))
             gBattleStruct->moveDamage[battler] = gBattleMons[battler].maxHP / 4;
         else
             gBattleStruct->moveDamage[battler] = gBattleMons[battler].maxHP / 8;

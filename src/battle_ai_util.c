@@ -368,7 +368,7 @@ bool32 IsBattlerTrapped(u32 battlerAtk, u32 battlerDef)
         && IsBattlerGrounded(battlerAtk))
         return TRUE;
     if (AI_IsAbilityOnSide(battlerAtk, ABILITY_MAGNET_PULL)
-        && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_STEEL))
+        && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_NEW_METAL))
         return TRUE;
 
     return FALSE;
@@ -1858,7 +1858,7 @@ bool32 ShouldLowerStat(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 stat)
         if (stat == STAT_ACC)
             return FALSE;
     case ABILITY_FLOWER_VEIL:
-        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_GRASS))
+        if (IS_BATTLER_OF_TYPE(battlerDef, TYPE_NEW_NATURE))
             return FALSE;
         break;
     case ABILITY_CONTRARY:

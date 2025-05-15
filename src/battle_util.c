@@ -1874,7 +1874,7 @@ static inline bool32 TryActivatePowderStatus(u32 move)
     u32 partnerMove = gBattleMons[BATTLE_PARTNER(gBattlerAttacker)].moves[gBattleStruct->chosenMovePositions[BATTLE_PARTNER(gBattlerAttacker)]];
     if (!(gBattleMons[gBattlerAttacker].status2 & STATUS2_POWDER))
         return FALSE;
-    if (GetBattleMoveType(move) == TYPE_FIRE && !gBattleStruct->pledgeMove)
+    if (GetBattleMoveType(move) == TYPE_NEW_FIRE && !gBattleStruct->pledgeMove)
         return TRUE;
     if (move == MOVE_FIRE_PLEDGE && partnerMove == MOVE_GRASS_PLEDGE)
         return TRUE;
@@ -2267,7 +2267,7 @@ static void CancellerThaw(u32 *effect)
 {
     if (gBattleMons[gBattlerAttacker].status1 & STATUS1_FREEZE)
     {
-        if (!(IsMoveEffectRemoveSpeciesType(gCurrentMove, MOVE_EFFECT_REMOVE_ARG_TYPE, TYPE_FIRE) && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_FIRE)))
+        if (!(IsMoveEffectRemoveSpeciesType(gCurrentMove, MOVE_EFFECT_REMOVE_ARG_TYPE, TYPE_NEW_FIRE) && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_NEW_FIRE)))
         {
             gBattleMons[gBattlerAttacker].status1 &= ~STATUS1_FREEZE;
             BattleScriptPushCursor();
@@ -2278,7 +2278,7 @@ static void CancellerThaw(u32 *effect)
     }
     if (gBattleMons[gBattlerAttacker].status1 & STATUS1_FROSTBITE && MoveThawsUser(gCurrentMove))
     {
-        if (!(IsMoveEffectRemoveSpeciesType(gCurrentMove, MOVE_EFFECT_REMOVE_ARG_TYPE, TYPE_FIRE) && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_FIRE)))
+        if (!(IsMoveEffectRemoveSpeciesType(gCurrentMove, MOVE_EFFECT_REMOVE_ARG_TYPE, TYPE_NEW_FIRE) && !IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_NEW_FIRE)))
         {
             gBattleMons[gBattlerAttacker].status1 &= ~STATUS1_FROSTBITE;
             BattleScriptPushCursor();
@@ -5950,7 +5950,7 @@ u32 IsAbilityPreventingEscape(u32 battler)
         if (ability == ABILITY_ARENA_TRAP && IsBattlerGrounded(battler))
             return battlerDef + 1;
 
-        if (ability == ABILITY_MAGNET_PULL && IS_BATTLER_OF_TYPE(battler, TYPE_STEEL))
+        if (ability == ABILITY_MAGNET_PULL && IS_BATTLER_OF_TYPE(battler, TYPE_NEW_METAL))
             return battlerDef + 1;
         
 		if (ability == ABILITY_WINNING_COMBINATION_3  && (B_SHADOW_TAG_ESCAPE <= GEN_3 || !(GetBattlerAbility(battler) == ABILITY_SHADOW_TAG || GetBattlerAbility(battler) == ABILITY_WINNING_COMBINATION_3 || GetBattlerAbility(battler) == ABILITY_WORLD_END_GARDEN)))
@@ -10326,8 +10326,8 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(u32 move, u32 mov
 
     // Iron Ball ignores type modifiers for flying-type mons if it is the only source of grounding
     if (B_IRON_BALL >= GEN_5
-        && moveType == TYPE_GROUND
-        && IS_BATTLER_OF_TYPE(battlerDef, TYPE_FLYING)
+        && moveType == TYPE_NEW_EARTH
+        && IS_BATTLER_OF_TYPE(battlerDef, TYPE_NEW_FLYING)
         && GetBattlerHoldEffect(battlerDef, TRUE) == HOLD_EFFECT_IRON_BALL
         && !IsBattlerGroundedInverseCheck(battlerDef, NOT_INVERSE_BATTLE, IGNORE_IRON_BALL)
         && !FlagGet(B_FLAG_INVERSE_BATTLE))

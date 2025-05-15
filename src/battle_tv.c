@@ -889,8 +889,8 @@ static void AddMovePoints(u8 caseId, u16 arg1, u8 arg2, u8 arg3)
         {
             switch (GetMoveType(move))
             {
-            case TYPE_WATER: points += 3; break;
-            case TYPE_FIRE:  points -= 4; break;
+            case TYPE_NEW_WATER: points += 3; break;
+            case TYPE_NEW_FIRE:  points -= 4; break;
             default: break;
             }
         }
@@ -919,7 +919,7 @@ static void AddMovePoints(u8 caseId, u16 arg1, u8 arg2, u8 arg3)
     {
         s32 points = 0;
 
-        if (!IsBattleMoveStatus(move) && GetMoveType(move) == TYPE_FIRE)
+        if (!IsBattleMoveStatus(move) && GetMoveType(move) == TYPE_NEW_FIRE)
             points += 3;
 
         switch (GetMoveEffect(move))
@@ -958,7 +958,7 @@ static void AddMovePoints(u8 caseId, u16 arg1, u8 arg2, u8 arg3)
         break;
     }
     case PTS_ELECTRIC:
-        if (!IsBattleMoveStatus(move) && GetMoveType(move) == TYPE_ELECTRIC)
+        if (!IsBattleMoveStatus(move) && GetMoveType(move) == TYPE_NEW_ELECTRIC)
             movePoints->points[atkSide][gBattlerPartyIndexes[gBattlerAttacker] * 4 + arg2] += 3;
         break;
 #undef move

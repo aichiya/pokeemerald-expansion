@@ -34,6 +34,16 @@ static const TaskFunc sBattleIntroSlideFuncs[] =
     [BATTLE_ENVIRONMENT_CAVE]       = BattleIntroSlide1,
     [BATTLE_ENVIRONMENT_BUILDING]   = BattleIntroSlide3,
     [BATTLE_ENVIRONMENT_BLANK_GBC]  = BattleIntroSlide1,
+    [BATTLE_ENVIRONMENT_GRASS_MONO]      = BattleIntroSlide1,
+    [BATTLE_ENVIRONMENT_LONG_GRASS_MONO] = BattleIntroSlide1,
+    [BATTLE_ENVIRONMENT_SAND_MONO]       = BattleIntroSlide2,
+    [BATTLE_ENVIRONMENT_UNDERWATER_MONO] = BattleIntroSlide2,
+    [BATTLE_ENVIRONMENT_WATER_MONO]      = BattleIntroSlide2,
+    [BATTLE_ENVIRONMENT_POND_MONO]       = BattleIntroSlide1,
+    [BATTLE_ENVIRONMENT_MOUNTAIN_MONO]   = BattleIntroSlide1,
+    [BATTLE_ENVIRONMENT_CAVE_MONO]       = BattleIntroSlide1,
+    [BATTLE_ENVIRONMENT_BUILDING_MONO]   = BattleIntroSlide3,
+    [BATTLE_ENVIRONMENT_PLAIN_MONO]   = BattleIntroSlide3,
     [BATTLE_ENVIRONMENT_PLAIN]      = BattleIntroSlide3,
 };
 

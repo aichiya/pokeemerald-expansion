@@ -398,6 +398,16 @@ const u8 gBattleBackgroundTerrainNames[][26] =
     [BATTLE_ENVIRONMENT_CAVE]       = _("NORMAL - CAVE            "),
     [BATTLE_ENVIRONMENT_BUILDING]   = _("NORMAL - BUILDING        "),
     [BATTLE_ENVIRONMENT_BLANK_GBC]  = _("NORMAL - BLANK GBC       "),
+    [BATTLE_ENVIRONMENT_GRASS_MONO]      = _("MONO - GRASS           "),
+    [BATTLE_ENVIRONMENT_LONG_GRASS_MONO] = _("MONO - LONG GRASS      "),
+    [BATTLE_ENVIRONMENT_SAND_MONO]       = _("MONO - SAND            "),
+    [BATTLE_ENVIRONMENT_UNDERWATER_MONO] = _("MONO - UNDERWATER      "),
+    [BATTLE_ENVIRONMENT_WATER_MONO]      = _("MONO - WATER           "),
+    [BATTLE_ENVIRONMENT_POND_MONO]       = _("MONO - POND            "),
+    [BATTLE_ENVIRONMENT_MOUNTAIN_MONO]   = _("MONO - MOUNTAIN        "),
+    [BATTLE_ENVIRONMENT_CAVE_MONO]       = _("MONO - CAVE            "),
+    [BATTLE_ENVIRONMENT_BUILDING_MONO]   = _("MONO - BUILDING        "),
+    [BATTLE_ENVIRONMENT_PLAIN_MONO]      = _("MONO - PLAIN           "),
     [BATTLE_ENVIRONMENT_PLAIN]      = _("NORMAL - PLAIN           "),
 };
 const u8 sShadowSizeLabels[][4] =

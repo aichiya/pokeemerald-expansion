@@ -648,11 +648,26 @@ u8 BattleSetup_GetEnvironmentId(void)
         return BATTLE_ENVIRONMENT_BLANK_GBC;
 
     if (MetatileBehavior_IsTallGrass(tileBehavior))
-        return BATTLE_ENVIRONMENT_GRASS;
+    {
+        if (gSaveBlock3Ptr->globalMapTint == 0)
+            return BATTLE_ENVIRONMENT_GRASS;
+        else
+            return BATTLE_ENVIRONMENT_GRASS_MONO;
+    }
     if (MetatileBehavior_IsLongGrass(tileBehavior))
-        return BATTLE_ENVIRONMENT_LONG_GRASS;
+    {
+        if (gSaveBlock3Ptr->globalMapTint == 0)
+            return BATTLE_ENVIRONMENT_LONG_GRASS;
+        else
+            return BATTLE_ENVIRONMENT_LONG_GRASS_MONO;
+    }
     if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))
-        return BATTLE_ENVIRONMENT_SAND;
+    {
+        if (gSaveBlock3Ptr->globalMapTint == 0)
+            return BATTLE_ENVIRONMENT_SAND;
+        else
+            return BATTLE_ENVIRONMENT_SAND_MONO;
+    }
 
     switch (gMapHeader.mapType)
     {
@@ -662,41 +677,116 @@ u8 BattleSetup_GetEnvironmentId(void)
         break;
     case MAP_TYPE_UNDERGROUND:
         if (MetatileBehavior_IsIndoorEncounter(tileBehavior))
-            return BATTLE_ENVIRONMENT_BUILDING;
-        if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
-            return BATTLE_ENVIRONMENT_POND;
-        return BATTLE_ENVIRONMENT_CAVE;
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_BUILDING;
+            else
+                return BATTLE_ENVIRONMENT_BUILDING_MONO;
+        }
+        else if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_POND;
+            else
+                return BATTLE_ENVIRONMENT_POND_MONO;
+        }
+        else
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_CAVE;
+            else
+                return BATTLE_ENVIRONMENT_CAVE_MONO;
+        }
     case MAP_TYPE_INDOOR:
     case MAP_TYPE_SECRET_BASE:
-        return BATTLE_ENVIRONMENT_BUILDING;
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_BUILDING;
+            else
+                return BATTLE_ENVIRONMENT_BUILDING_MONO;
+        }
     case MAP_TYPE_UNDERWATER:
-        return BATTLE_ENVIRONMENT_UNDERWATER;
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_UNDERWATER;
+            else
+                return BATTLE_ENVIRONMENT_UNDERWATER_MONO;
+        }
     case MAP_TYPE_OCEAN_ROUTE:
         if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
-            return BATTLE_ENVIRONMENT_WATER;
-        return BATTLE_ENVIRONMENT_PLAIN;
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_WATER;
+            else
+                return BATTLE_ENVIRONMENT_WATER_MONO;
+        }
+        else
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_PLAIN;
+            else
+                return BATTLE_ENVIRONMENT_PLAIN_MONO;
+        }
     }
     if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior))
-        return BATTLE_ENVIRONMENT_WATER;
+    {
+        if (gSaveBlock3Ptr->globalMapTint == 0)
+            return BATTLE_ENVIRONMENT_WATER;
+        else
+            return BATTLE_ENVIRONMENT_WATER_MONO;
+    }
     if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
-        return BATTLE_ENVIRONMENT_POND;
+    {
+        if (gSaveBlock3Ptr->globalMapTint == 0)
+            return BATTLE_ENVIRONMENT_POND;
+        else
+            return BATTLE_ENVIRONMENT_POND_MONO;
+    }
     if (MetatileBehavior_IsMountain(tileBehavior))
-        return BATTLE_ENVIRONMENT_MOUNTAIN;
+    {
+        if (gSaveBlock3Ptr->globalMapTint == 0)
+            return BATTLE_ENVIRONMENT_MOUNTAIN;
+        else
+            return BATTLE_ENVIRONMENT_MOUNTAIN_MONO;
+    }
     if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
     {
         // Is BRIDGE_TYPE_POND_*?
         if (MetatileBehavior_GetBridgeType(tileBehavior) != BRIDGE_TYPE_OCEAN)
-            return BATTLE_ENVIRONMENT_POND;
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_POND;
+            else
+                return BATTLE_ENVIRONMENT_POND_MONO;
+        }
 
         if (MetatileBehavior_IsBridgeOverWater(tileBehavior) == TRUE)
-            return BATTLE_ENVIRONMENT_WATER;
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_WATER;
+            else
+                return BATTLE_ENVIRONMENT_WATER_MONO;
+        }
     }
     if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE113) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE113))
-        return BATTLE_ENVIRONMENT_SAND;
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_SAND;
+            else
+                return BATTLE_ENVIRONMENT_SAND_MONO;
+        }
     if (GetSavedWeather() == WEATHER_SANDSTORM)
-        return BATTLE_ENVIRONMENT_SAND;
+        {
+            if (gSaveBlock3Ptr->globalMapTint == 0)
+                return BATTLE_ENVIRONMENT_SAND;
+            else
+                return BATTLE_ENVIRONMENT_SAND_MONO;
+        }
 
-    return BATTLE_ENVIRONMENT_PLAIN;
+    if (gSaveBlock3Ptr->globalMapTint == 0)
+        return BATTLE_ENVIRONMENT_PLAIN;
+    else
+        return BATTLE_ENVIRONMENT_PLAIN_MONO;
 }
 
 static u8 GetBattleTransitionTypeByMap(void)

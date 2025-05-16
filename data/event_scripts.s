@@ -1143,6 +1143,12 @@ Script_SetSepiaTint::
 	callnative InitMapView
 	return
 
+Script_SetRedBloodTint::
+	setvar VAR_GLOBAL_TINT_SETTING, GLOBAL_FIELD_TINT_RED_BLOOD
+	callnative PrepareGlobalFieldPaletteTint
+	callnative InitMapView
+	return
+
 Script_RemoveTint::
 	setvar VAR_GLOBAL_TINT_SETTING, GLOBAL_FIELD_TINT_NONE
 	callnative PrepareGlobalFieldPaletteTint

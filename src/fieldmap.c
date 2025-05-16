@@ -883,6 +883,9 @@ static void ApplyGlobalTintToPaletteEntries(u16 offset, u16 size)
         case GLOBAL_FIELD_TINT_SEPIA:
             TintPalette_SepiaTone(gPlttBufferUnfaded + offset, size);
             break;
+        case GLOBAL_FIELD_TINT_RED_BLOOD:
+            TintPalette_CustomTone(gPlttBufferUnfaded + offset, size, 510, 80, 80);
+            break;
         default:
             return;
     }

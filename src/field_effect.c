@@ -809,6 +809,9 @@ void ApplyGlobalFieldPaletteTint(u8 paletteIdx)
     case GLOBAL_FIELD_TINT_SEPIA:
         TintPalette_SepiaTone(&gPlttBufferUnfaded[(paletteIdx + 16) * 16], 0x10);
         break;
+    case GLOBAL_FIELD_TINT_RED_BLOOD:
+        TintPalette_CustomTone(&gPlttBufferUnfaded[(paletteIdx + 16) * 16], 0x10, 510, 80, 80);
+        break;
     default:
         return;
     }

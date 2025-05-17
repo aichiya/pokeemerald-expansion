@@ -14715,8 +14715,8 @@ static void Cmd_transformdataexecutiondecade(void)
             RecordAllMoves(gBattlerTarget);
             RecordAbilityBattle(gBattlerTarget, gBattleMons[gBattlerTarget].ability);
 
-            BtlController_EmitResetActionMoveSelection(gBattlerTarget, BUFFER_A, RESET_MOVE_SELECTION);
-            MarkBattlerForControllerExec(gBattlerTarget);
+            BtlController_EmitResetActionMoveSelection(gBattlerAttacker, B_COMM_TO_CONTROLLER, RESET_MOVE_SELECTION);
+            MarkBattlerForControllerExec(gBattlerAttacker);
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORMED;
 
         }
@@ -14870,7 +14870,7 @@ static void Cmd_transformdataexecutiondecade(void)
             RecordAllMoves(gBattlerAttacker);
             RecordAbilityBattle(gBattlerAttacker, gBattleMons[gBattlerAttacker].ability);
 
-            BtlController_EmitResetActionMoveSelection(gBattlerAttacker, BUFFER_A, RESET_MOVE_SELECTION);
+            BtlController_EmitResetActionMoveSelection(gBattlerAttacker, B_COMM_TO_CONTROLLER, RESET_MOVE_SELECTION);
             MarkBattlerForControllerExec(gBattlerAttacker);
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORMED;
         }
@@ -17191,7 +17191,7 @@ static void Cmd_unused_0xE6(void)
         SetMonData(&gPlayerParty[5], MON_DATA_HP, &setHP);
         gBattleMons[gBattlerTarget].hp = 0;
     }
-    BtlController_EmitSetMonData(gBattlerTarget, BUFFER_A, REQUEST_HP_BATTLE, 0, sizeof(gBattleMons[gBattlerTarget].hp), &gBattleMons[gBattlerTarget].hp);
+    BtlController_EmitSetMonData(gBattlerTarget, B_COMM_TO_CONTROLLER, REQUEST_HP_BATTLE, 0, sizeof(gBattleMons[gBattlerTarget].hp), &gBattleMons[gBattlerTarget].hp);
     MarkBattlerForControllerExec(gBattlerTarget);
     gBattlescriptCurrInstr = cmd->nextInstr;
 }

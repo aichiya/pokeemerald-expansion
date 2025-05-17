@@ -6198,8 +6198,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Vital Throw"),
         .description = COMPOUND_STRING(
             "Moves last, never misses,\n"
-            "may removes the foe's item."),
-        .effect = EFFECT_HIT,
+            "and removes the foe's item."),
+        .effect = EFFECT_KNOCK_OFF,
         .power = 80,
         .type = TYPE_NEW_HEART,
         .accuracy = 0,
@@ -6207,10 +6207,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = MOVE_TARGET_SELECTED,
         .priority = -1,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_KNOCK_OFF,
-            .chance = 50,
-        }),
         .makesContact = TRUE,
         .contestEffect = CONTEST_EFFECT_NEXT_APPEAL_LATER,
         .contestCategory = CONTEST_CATEGORY_COOL,
@@ -19690,7 +19686,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hits with brutally hot sand.\n"
             "May inflict a burn or acc down."),
-        .effect = EFFECT_RAIN_ALWAYS_HIT,
+        .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_9 ? 100 : 95,
         .type = TYPE_NEW_WIND,
         .accuracy = 80,

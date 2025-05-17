@@ -5521,6 +5521,9 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_BW_VS_SUBWAY_TRAINER) \
     X(MUS_BW_VS_GYM_LEADER) \
     X(MUS_BW_ENTRALINK) \
+    X(MUS_TH_INVISIBLE_FULL_MOON) \
+    X(MUS_TH_SEA_THAT_REFLECTS) \
+    X(MUS_TH_SEA_THAT_REFLECTS2) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

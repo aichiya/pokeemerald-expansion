@@ -11416,12 +11416,7 @@
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_EEVEE"
-              },
-              {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GENGAR"
+                "species": "SPECIES_GHOLDENGO"
               },
               {
                 "min_level": 60,
@@ -11431,47 +11426,52 @@
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_CHARIZARD"
+                "species": "SPECIES_GHOLDENGO"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_DRIFBLIM"
+                "species": "SPECIES_GHOLDENGO"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_DIANCIE"
+                "species": "SPECIES_GHOLDENGO"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_CORVIKNIGHT"
+                "species": "SPECIES_GHOLDENGO"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_ZYGARDE"
+                "species": "SPECIES_GHOLDENGO"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_MILOTIC"
+                "species": "SPECIES_GHOLDENGO"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_EMOLGA"
+                "species": "SPECIES_GHOLDENGO"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_DRAGONITE"
+                "species": "SPECIES_GHOLDENGO"
               },
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_FLOETTE_ETERNAL"
+                "species": "SPECIES_GHOLDENGO"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_GHOLDENGO"
               }
             ]
           },

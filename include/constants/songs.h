@@ -1659,7 +1659,11 @@
 #define MUS_BW_VS_GYM_LEADER 1681
 #define MUS_BW_ENTRALINK 1682
 
-#define END_MUS 					MUS_BW_ENTRALINK
+#define MUS_TH_INVISIBLE_FULL_MOON 1683
+#define MUS_TH_SEA_THAT_REFLECTS 1684
+#define MUS_TH_SEA_THAT_REFLECTS2 1685
+
+#define END_MUS 					MUS_TH_SEA_THAT_REFLECTS2
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

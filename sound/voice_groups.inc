@@ -345,6 +345,8 @@
 
 .include "sound/voicegroups/voicegroup801.inc" @ Game corner expansion
 .include "sound/voicegroups/voicegroup802.inc" @ ラフィーニャ / ジャスミン / @redspinelj
+.include "sound/voicegroups/voicegroup803.inc" @ Velo: IFM
+.include "sound/voicegroups/voicegroup804.inc" @ Velo: IFM Drum
 
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
 

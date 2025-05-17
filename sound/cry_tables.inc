@@ -2358,7 +2358,7 @@ gCryTable::
 .endif @ P_FAMILY_FRIGIBAX
 .if P_FAMILY_GIMMIGHOUL == TRUE
 	cry Cry_Unown @ Cry_Gimmighoul
-	cry Cry_Unown @ Cry_Gholdengo
+	cry Cry_THReisenLine @ Cry_Gholdengo
 .endif @ P_FAMILY_GIMMIGHOUL
 .if P_FAMILY_WO_CHIEN == TRUE
 	cry Cry_Unown @ Cry_WoChien
@@ -4786,7 +4786,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_FRIGIBAX
 .if P_FAMILY_GIMMIGHOUL == TRUE
 	cry_reverse Cry_Unown @ Cry_Gimmighoul
-	cry_reverse Cry_Unown @ Cry_Gholdengo
+	cry_reverse Cry_THReisenLine @ Cry_Gholdengo
 .endif @ P_FAMILY_GIMMIGHOUL
 .if P_FAMILY_WO_CHIEN == TRUE
 	cry_reverse Cry_Unown @ Cry_WoChien

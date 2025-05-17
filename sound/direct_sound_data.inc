@@ -8934,3 +8934,7 @@ DirectSoundWaveData_pinball_16_drawbar_organ::
 	.align 2
 DirectSoundWaveData_pinball_52_clarinet::
 	.incbin "sound/direct_sound_samples/pinball_52_clarinet.bin"
+
+	.align 2
+DirectSoundWaveData_bw_seashorec4::
+	.incbin "sound/direct_sound_samples/bw_seashorec4.bin"

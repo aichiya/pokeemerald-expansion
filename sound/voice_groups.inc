@@ -347,6 +347,7 @@
 .include "sound/voicegroups/voicegroup802.inc" @ ラフィーニャ / ジャスミン / @redspinelj
 .include "sound/voicegroups/voicegroup803.inc" @ Velo: IFM
 .include "sound/voicegroups/voicegroup804.inc" @ Velo: IFM Drum
+.include "sound/voicegroups/voicegroup805.inc" @ Megaman Battle Network 6 Mapping (Partial)
 
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
 

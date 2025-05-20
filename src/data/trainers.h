@@ -42195,7 +42195,7 @@ F_TRAINER_FEMALE |
 #line 16883
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 16884
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -42288,7 +42288,7 @@ F_TRAINER_FEMALE |
 #line 16921
         .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
 #line 16922
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 16923
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -42382,7 +42382,7 @@ F_TRAINER_FEMALE |
 #line 16961
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16962
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -42414,7 +42414,7 @@ F_TRAINER_FEMALE |
 #line 16973
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16974
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -42446,7 +42446,7 @@ F_TRAINER_FEMALE |
 #line 16985
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16986
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -42478,7 +42478,7 @@ F_TRAINER_FEMALE |
 #line 16997
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 16998
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -42510,7 +42510,7 @@ F_TRAINER_FEMALE |
 #line 17009
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17010
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -42542,7 +42542,7 @@ F_TRAINER_FEMALE |
 #line 17021
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17022
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -42574,7 +42574,7 @@ F_TRAINER_FEMALE |
 #line 17033
             TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 17034
-        .doubleBattle = FALSE,
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {

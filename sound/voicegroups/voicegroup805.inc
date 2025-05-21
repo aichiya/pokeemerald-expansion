@@ -2,13 +2,13 @@
 voicegroup805::
 	voice_keysplit_all voicegroup804                                                      @ 000 | GBA Drum | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 001 | --- | 
-	voice_square_1_alt 60, 0, 0, 1, 0, 7, 3, 1                                                @ 002 | GB Square-1 | 
-	voice_square_1_alt 60, 0, 0, 2, 0, 0, 13, 1                                               @ 003 | GB Square-1 | 
+	voice_square_1_alt 60, 0, 0, 1, 0, 7, 3, 1                                            @ 002 | GB Square-1 | 
+	voice_square_1_alt 60, 0, 0, 2, 0, 0, 13, 1                                           @ 003 | GB Square-1 | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 004 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 005 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 006 | --- | 
-	voice_square_2_alt 60, 0, 2, 0, 0, 10, 4                                                  @ 007 | GB Square-2 | 
-	voice_square_2_alt 60, 0, 3, 0, 0, 13, 2                                                  @ 008 | GB Square-2 | 
+	voice_square_2_alt 60, 0, 2, 0, 0, 10, 4                                              @ 007 | GB Square-2 | 
+	voice_square_2_alt 60, 0, 3, 0, 0, 13, 2                                              @ 008 | GB Square-2 | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 009 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 010 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 011 | --- | 
@@ -35,7 +35,7 @@ voicegroup805::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 032 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 033 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 034 | --- | 
-	voice_directsound 60, 0, DirectSoundWaveData_trinity_30303_mega_bass, 128, 249, 25, 204                @ 109 | Direct | GBA Trinity Mega Bass
+	voice_directsound 60, 0, DirectSoundSynth_Type_01, 255, 0, 255, 165                   @ 035 | GBA Synth | 
 	voice_keysplit voicegroup244, KeySplitTable40                                         @ 036 | Direct | HGSS drawbar organ
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 037 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 038 | --- | 
@@ -51,8 +51,8 @@ voicegroup805::
 	voice_keysplit voicegroup196, KeySplitTable2                                          @ 048 | Direct | Multi | GBA String
 	voice_keysplit voicegroup255, KeySplitTable45                                         @ 049 | Direct | Multi | HGSS String
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 050 | --- | 
-	voice_directsound 60, 0, DirectSoundWaveData_puresquare_50, 255, 242, 25, 0                               @ 48 | Direct | HGSS sampled square 2
-	voice_directsound 60, 0, DirectSoundWaveData_trinity_30303_mega_bass, 128, 249, 25, 204                @ 109 | Direct | GBA Trinity Mega Bass
+	voice_directsound 60, 0, DirectSoundSynth_Type_02, 255, 165, 255, 178                 @ 051 | GBA Synth | 
+	voice_directsound 60, 0, DirectSoundWaveData_trinity_30303_mega_bass, 128, 249, 25, 204  @ 052 | Direct | GBA Trinity Mega Bass
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 053 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 054 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 055 | --- | 

@@ -5574,6 +5574,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_TH_SEA_THAT_REFLECTS) \
     X(MUS_TH_SEA_THAT_REFLECTS2) \
     X(MUS_MMBN6_VS_VIRUS) \
+    X(MUS_MMBN6_NAVI_CUST) \
 
 #define SOUND_LIST_SE \
     X(SE_USE_ITEM) \

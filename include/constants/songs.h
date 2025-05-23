@@ -1663,8 +1663,9 @@
 #define MUS_TH_SEA_THAT_REFLECTS 1684
 #define MUS_TH_SEA_THAT_REFLECTS2 1685
 #define MUS_MMBN6_VS_VIRUS 1686
+#define MUS_MMBN6_NAVI_CUST 1687
 
-#define END_MUS 					MUS_MMBN6_VS_VIRUS
+#define END_MUS 					MUS_MMBN6_NAVI_CUST
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

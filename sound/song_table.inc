@@ -1688,6 +1688,7 @@ gSongTable::
 	song mus_th_sea_that_reflects, 0, 0
 	song mus_th_sea_that_reflects2, 0, 0
 	song mus_mmbn6_vs_virus, 0, 0
+	song mus_mmbn6_navi_cust, 0, 0
 
 	.align 2
 dummy_song_header:

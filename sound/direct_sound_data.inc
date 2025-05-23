@@ -8938,3 +8938,11 @@ DirectSoundWaveData_pinball_52_clarinet::
 	.align 2
 DirectSoundWaveData_bw_seashorec4::
 	.incbin "sound/direct_sound_samples/bw_seashorec4.bin"
+
+	.align 2
+DirectSoundWaveData_mmbn6_drumkit_35::
+	.incbin "sound/direct_sound_samples/mmbn6_drumkit_35.bin"
+
+	.align 2
+DirectSoundWaveData_mmbn6_drumkit_37::
+	.incbin "sound/direct_sound_samples/mmbn6_drumkit_37.bin"

@@ -907,7 +907,7 @@ bool8 ScrCmd_gettime(struct ScriptContext *ctx)
 bool8 ScrCmd_gettimeofday(struct ScriptContext *ctx)
 {
     Script_RequestEffects(SCREFF_V1);
-    
+
     gSpecialVar_0x8000 = GetTimeOfDay();
     return FALSE;
 }
@@ -2429,7 +2429,7 @@ bool8 ScrCmd_updatecoinsbox(struct ScriptContext *ctx)
 bool8 ScrCmd_trainerbattle(struct ScriptContext *ctx)
 {
     Script_RequestEffects(SCREFF_V1 | SCREFF_TRAINERBATTLE);
-    
+
     TrainerBattleLoadArgs(ctx->scriptPtr);
     ctx->scriptPtr = BattleSetup_ConfigureTrainerBattle(ctx->scriptPtr);
     return FALSE;
@@ -3181,7 +3181,7 @@ bool8 ScrCmd_addtime(struct ScriptContext *ctx)
     u32 minutes = ScriptReadWord(ctx);
 
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
-    
+
     FakeRtc_AdvanceTimeBy(days, hours, minutes, 0);
 
     return FALSE;
@@ -3192,7 +3192,7 @@ bool8 ScrCmd_adddays(struct ScriptContext *ctx)
     u32 days = ScriptReadWord(ctx);
 
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
-    
+
     FakeRtc_AdvanceTimeBy(days, 0, 0, 0);
 
     return FALSE;
@@ -3203,7 +3203,7 @@ bool8 ScrCmd_addhours(struct ScriptContext *ctx)
     u32 hours = ScriptReadWord(ctx);
 
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
-    
+
     FakeRtc_AdvanceTimeBy(0, hours, 0, 0);
 
     return FALSE;
@@ -3214,7 +3214,7 @@ bool8 ScrCmd_addminutes(struct ScriptContext *ctx)
     u32 minutes = ScriptReadWord(ctx);
 
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
-    
+
     FakeRtc_AdvanceTimeBy(0, 0, minutes, 0);
 
     return FALSE;
@@ -3226,7 +3226,7 @@ bool8 ScrCmd_fwdtime(struct ScriptContext *ctx)
     u32 minutes = ScriptReadWord(ctx);
 
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
-    
+
     FakeRtc_ForwardTimeTo(hours, minutes, 0);
 
     return FALSE;
@@ -3235,12 +3235,12 @@ bool8 ScrCmd_fwdtime(struct ScriptContext *ctx)
 bool8 ScrCmd_fwdweekday(struct ScriptContext *ctx)
 {
     struct SiiRtcInfo *rtc = FakeRtc_GetCurrentTime();
-    
+
     u32 weekdayTarget = ScriptReadWord(ctx);
     u32 daysToAdd = ((weekdayTarget - rtc->dayOfWeek) + WEEKDAY_COUNT) % WEEKDAY_COUNT;
-    
+
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
-    
+
     FakeRtc_AdvanceTimeBy(daysToAdd, 0, 0, 0);
     return FALSE;
 }

@@ -6106,7 +6106,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
         break;
     case EFFECT_HIDDEN_POWER:
         u32 hiddenPowerType;
-        if (monInBattle)
+        if (state == MON_IN_BATTLE)
         {
             hiddenPowerType = gBattleMons[battler].personality % 18;
         }

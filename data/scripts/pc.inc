@@ -4,6 +4,8 @@ EventScript_PC::
 	special DoPCTurnOnEffect
 	playse SE_PC_ON
 	msgbox Text_BootUpPC, MSGBOX_DEFAULT
+	waitse
+	playbgm MUS_MMBN6_NAVI_CUST, FALSE
 	goto EventScript_PCMainMenu
 	end
 
@@ -54,6 +56,7 @@ EventScript_TurnOffPC::
 	setvar VAR_0x8004, PC_LOCATION_OTHER
 	playse SE_PC_OFF
 	special DoPCTurnOffEffect
+	callnative Overworld_PlaySpecialMapMusic
 	releaseall
 	end
 
@@ -67,6 +70,8 @@ EventScript_AccessHallOfFame::
 
 EventScript_AccessPokemonBoxLink::
 	playse SE_PC_LOGIN
+	waitse
+	playbgm MUS_MMBN6_NAVI_CUST, FALSE
 	msgbox gText_StorageSystemOpened, MSGBOX_DEFAULT
 	special ShowPokemonStorageSystemPC
 	waitstate

@@ -5744,7 +5744,7 @@ BattleScript_DamagingWeather::
 	printfromtable gSandStormHailDmgStringIds
 	waitmessage B_WAIT_TIME_LONG
 	effectivenesssound
-	hitanimation BS_SCRIPTING
+	hitanimation BS_ATTACKER
 	goto BattleScript_DoTurnDmg
 
 BattleScript_FogEnded_Ret::
@@ -5824,7 +5824,7 @@ BattleScript_MagicRoomEnds::
 	setbyte gBattlerTarget, 0
 BattleScript_MagicRoomHealingItemsLoop:
 	copyarraywithindex gBattlerAttacker, gBattlerByTurnOrder, gBattlerTarget, 1
-	tryhealingitem
+	tryrestorehpberry
 	addbyte gBattlerTarget, 1
 	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_MagicRoomHealingItemsLoop
 	end2
@@ -6621,6 +6621,14 @@ BattleScript_WishButFullHp::
 	waitmessage B_WAIT_TIME_LONG
 	end2
 
+BattleScript_WishButHealBlocked::
+	printstring STRINGID_PKMNWISHCAMETRUE
+	waitmessage B_WAIT_TIME_LONG
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_HEALBLOCKPREVENTSUSAGE
+	waitmessage B_WAIT_TIME_LONG
+	end2
+
 BattleScript_IngrainTurnHeal::
 	playanimation BS_ATTACKER, B_ANIM_INGRAIN_HEAL
 	printstring STRINGID_PKMNABSORBEDNUTRIENTS
@@ -7096,7 +7104,7 @@ BattleScript_DoTurnDmg:
 	datahpupdate BS_ATTACKER
 	tryfaintmon BS_ATTACKER
 	checkteamslost BattleScript_DoTurnDmgEnd
-	tryhealingitem
+	tryrestorehpberry
 BattleScript_DoTurnDmgEnd:
 	end2
 
@@ -7345,7 +7353,7 @@ BattleScript_YawnEnd:
 BattleScript_EmbargoEndTurn::
 	printstring STRINGID_EMBARGOENDS
 	waitmessage B_WAIT_TIME_LONG
-	tryhealingitem
+	tryrestorehpberry
 	end2
 
 BattleScript_TelekinesisEndTurn::
@@ -7669,7 +7677,7 @@ BattleScript_PickupActivates::
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_XFOUNDONEY
 	waitmessage B_WAIT_TIME_LONG
-	tryhealingitem
+	tryrestorehpberry
 BattleScript_PickupActivatesEnd:
 	end3
 
@@ -7679,7 +7687,7 @@ BattleScript_HarvestActivates::
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_HARVESTBERRY
 	waitmessage B_WAIT_TIME_LONG
-	tryhealingitem
+	tryrestorehpberry
 BattleScript_HarvestActivatesEnd:
 	end3
 

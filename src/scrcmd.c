@@ -83,7 +83,7 @@ static void DynamicMultichoiceSortList(struct ListMenuItem *items, u32 count);
 
 // This is defined in here so the optimizer can't see its value when compiling
 // script.c.
-void * const gNullScriptPtr = NULL;
+void *const gNullScriptPtr = NULL;
 
 static const u8 sScriptConditionTable[6][3] =
 {
@@ -1420,6 +1420,10 @@ bool8 ScrCmd_setobjectxy(struct ScriptContext *ctx)
     u16 y = VarGet(ScriptReadHalfword(ctx));
 
     Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
+
+    // Don't do follower NPC post-warp position set after setobjectxy.
+    if (localId == OBJ_EVENT_ID_NPC_FOLLOWER)
+        SetFollowerNPCData(FNPC_DATA_COME_OUT_DOOR, FNPC_DOOR_NO_POS_SET);
 
     TryMoveObjectEventToMapCoords(localId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, x, y);
     return FALSE;

@@ -43,14 +43,14 @@ voicegroup806::
 	voice_directsound 60, 64, DirectSoundWaveData_dp_093snare, 255, 0, 255, 0                                           @ 040 | En1 | NC
 	voice_directsound_no_resample 60, 64, DirectSoundWaveData_unknown_close_hihat, 255, 255, 190, 0                     @ 041 | Fn1 |   VI
 	voice_noise 0x53, 0, 0, 0, 0, 11, 0                                                                                 @ 042 | Fs1 | NCVI
-	voice_directsound 54, 20, DirectSoundWaveData_hg_135tom, 255, 0, 255, 171                                    @ 043 | Gn1 |   VI
+	voice_directsound 54, 20, DirectSoundWaveData_hg_135tom, 255, 0, 255, 171                                           @ 043 | Gn1 |   VI
 	voice_noise 0x4F, 0, 0, 5, 5, 6, 4                                                                                  @ 044 | Gs1 | 
 	voice_directsound 60, 64, DirectSoundWaveData_dp_093snare, 255, 255, 120, 0                                         @ 045 | An1 | NC
 	voice_noise 0x53, 0, 0, 0, 2, 11, 3                                                                                 @ 046 | As1 | NCVI
-	voice_directsound 60, 64, DirectSoundWaveData_hg_135tom, 255, 0, 255, 171                                      @ 047 | Bn1 |   VI
-	voice_directsound 66, 108, DirectSoundWaveData_hg_135tom, 255, 0, 255, 171                                   @ 048 | Cn2 |   VI
+	voice_directsound 60, 64, DirectSoundWaveData_hg_135tom, 255, 0, 255, 171                                           @ 047 | Bn1 |   VI
+	voice_directsound 66, 108, DirectSoundWaveData_hg_135tom, 255, 0, 255, 171                                          @ 048 | Cn2 |   VI
 	voice_noise 0x47, 0, 0, 0, 7, 0, 1                                                                                  @ 049 | Cs2 | NCVI
-	voice_directsound 62, 84, DirectSoundWaveData_hg_135tom, 255, 0, 255, 171                                   @ 050 | Dn2 | 
+	voice_directsound 62, 84, DirectSoundWaveData_hg_135tom, 255, 0, 255, 171                                           @ 050 | Dn2 | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                             @ 051 | Ds2 | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                             @ 052 | En2 | 
 	voice_directsound_no_resample 70, 49, DirectSoundWaveData_unknown_bell, 255, 165, 103, 231                          @ 053 | Fn2 | 

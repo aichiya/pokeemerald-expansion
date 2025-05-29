@@ -255,6 +255,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_LILYCOVE_WOMAN_1",
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
       "x": 41,
       "y": 25,
@@ -268,6 +269,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_LILYCOVE_MAN_1",
       "graphics_id": "OBJ_EVENT_GFX_MAN_2",
       "x": 40,
       "y": 25,

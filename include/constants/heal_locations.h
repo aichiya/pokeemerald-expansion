@@ -1,7 +1,6 @@
 #ifndef GUARD_CONSTANTS_HEAL_LOCATIONS_H
 #define GUARD_CONSTANTS_HEAL_LOCATIONS_H
 
-
 //
 // DO NOT MODIFY THIS FILE! It is auto-generated from src/data/heal_locations.json and Inja template src/data/heal_locations.constants.json.txt
 //

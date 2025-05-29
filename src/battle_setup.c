@@ -645,7 +645,7 @@ u8 BattleSetup_GetEnvironmentId(void)
 
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
 
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ANOTHER_WORLD_ECRUTEAK_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ANOTHER_WORLD_ECRUTEAK_CITY))
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ANOTHER_WORLD_ECRUTEAK_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ANOTHER_WORLD_ECRUTEAK_CITY))
         return BATTLE_ENVIRONMENT_BLANK_GBC;
 
     if (MetatileBehavior_IsTallGrass(tileBehavior))

@@ -1,121 +1,121 @@
 {
   "heal_locations": [
     {
-      "id": "HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
+      "id": "HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_2F_MALE",
       "map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F",
       "x": 4,
       "y": 2
     },
     {
-      "id": "HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
+      "id": "HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_2F_FEMALE",
       "map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_2F",
       "x": 4,
       "y": 2
     },
     {
-      "id": "HEAL_LOCATION_PETALBURG_CITY",
+      "id": "HEAL_LOCATION_JOHTO_OLIVINE_CITY",
       "map": "MAP_PETALBURG_CITY",
       "x": 20,
       "y": 17
     },
     {
-      "id": "HEAL_LOCATION_SLATEPORT_CITY",
+      "id": "HEAL_LOCATION_JOHTO_ECRUTEAK_CITY",
       "map": "MAP_SLATEPORT_CITY",
       "x": 19,
       "y": 20
     },
     {
-      "id": "HEAL_LOCATION_MAUVILLE_CITY",
+      "id": "HEAL_LOCATION_JOHTO_MAHOGANY_TOWN",
       "map": "MAP_MAUVILLE_CITY",
       "x": 22,
       "y": 6
     },
     {
-      "id": "HEAL_LOCATION_RUSTBORO_CITY",
+      "id": "HEAL_LOCATION_JOHTO_LAKE_OF_RAGE",
       "map": "MAP_RUSTBORO_CITY",
       "x": 16,
       "y": 39
     },
     {
-      "id": "HEAL_LOCATION_FORTREE_CITY",
+      "id": "HEAL_LOCATION_JOHTO_BLACKTHORN_CITY",
       "map": "MAP_FORTREE_CITY",
       "x": 5,
       "y": 7
     },
     {
-      "id": "HEAL_LOCATION_LILYCOVE_CITY",
+      "id": "HEAL_LOCATION_JOHTO_MT_SILVER",
       "map": "MAP_LILYCOVE_CITY",
       "x": 24,
       "y": 15
     },
     {
-      "id": "HEAL_LOCATION_MOSSDEEP_CITY",
+      "id": "HEAL_LOCATION_JOHTO_INDIGO_PLATEAU",
       "map": "MAP_MOSSDEEP_CITY",
       "x": 28,
       "y": 17
     },
     {
-      "id": "HEAL_LOCATION_SOOTOPOLIS_CITY",
+      "id": "HEAL_LOCATION_JOHTO_MORIYA_SHRINE",
       "map": "MAP_SOOTOPOLIS_CITY",
       "x": 43,
       "y": 32
     },
     {
-      "id": "HEAL_LOCATION_EVER_GRANDE_CITY",
+      "id": "HEAL_LOCATION_JOHTO_SPACE_HYPER_VESSEL_FRONT",
       "map": "MAP_EVER_GRANDE_CITY",
       "x": 27,
       "y": 49
     },
     {
-      "id": "HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE",
+      "id": "HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_MALE",
       "map": "MAP_LITTLEROOT_TOWN",
       "x": 5,
       "y": 9
     },
     {
-      "id": "HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE",
+      "id": "HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_FEMALE",
       "map": "MAP_LITTLEROOT_TOWN",
       "x": 14,
       "y": 9
     },
     {
-      "id": "HEAL_LOCATION_OLDALE_TOWN",
+      "id": "HEAL_LOCATION_JOHTO_NEW_BARK_TOWN",
       "map": "MAP_OLDALE_TOWN",
       "x": 6,
       "y": 17
     },
     {
-      "id": "HEAL_LOCATION_DEWFORD_TOWN",
+      "id": "HEAL_LOCATION_JOHTO_CHERRYGROVE_CITY",
       "map": "MAP_DEWFORD_TOWN",
       "x": 2,
       "y": 11
     },
     {
-      "id": "HEAL_LOCATION_LAVARIDGE_TOWN",
+      "id": "HEAL_LOCATION_JOHTO_VIOLET_CITY",
       "map": "MAP_LAVARIDGE_TOWN",
       "x": 9,
       "y": 7
     },
     {
-      "id": "HEAL_LOCATION_FALLARBOR_TOWN",
+      "id": "HEAL_LOCATION_JOHTO_AZALEA_TOWN",
       "map": "MAP_FALLARBOR_TOWN",
       "x": 14,
       "y": 8
     },
     {
-      "id": "HEAL_LOCATION_VERDANTURF_TOWN",
+      "id": "HEAL_LOCATION_JOHTO_CIANWOOD_CITY",
       "map": "MAP_VERDANTURF_TOWN",
       "x": 16,
       "y": 4
     },
     {
-      "id": "HEAL_LOCATION_PACIFIDLOG_TOWN",
+      "id": "HEAL_LOCATION_JOHTO_GOLDENROD_CITY",
       "map": "MAP_PACIFIDLOG_TOWN",
       "x": 8,
       "y": 16
     },
     {
-      "id": "HEAL_LOCATION_EVER_GRANDE_CITY_POKEMON_LEAGUE",
+      "id": "HEAL_LOCATION_JOHTO_SPACE_HYPER_VESSEL_EMBEDDED_TOWER",
       "map": "MAP_EVER_GRANDE_CITY",
       "x": 18,
       "y": 6
@@ -131,6 +131,210 @@
       "map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
       "x": 3,
       "y": 52
+    },
+        {
+      "id": "HEAL_LOCATION_GENSOKYO_HAKUREI_SHRINE",
+      "map": "MAP_ROUTE101",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_HUMAN_VILLAGE",
+      "map": "MAP_ROUTE102",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_KOURINDOU",
+      "map": "MAP_ROUTE103",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_MUENZUKA",
+      "map": "MAP_ROUTE104",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_HAKUGYOKUROU",
+      "map": "MAP_ROUTE105",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_MORIYA_SHRINE",
+      "map": "MAP_ROUTE106",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_SCARLET_DEVIL_MANSION",
+      "map": "MAP_ROUTE107",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_CHIREIDEN",
+      "map": "MAP_ROUTE108",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_PALENQUIN_SHIP",
+      "map": "MAP_ROUTE109",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_SANZU_RIVER",
+      "map": "MAP_ROUTE110",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_GARDEN_OF_THE_SUN",
+      "map": "MAP_ROUTE111",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_KEMBANG_TOWN",
+      "map": "MAP_ROUTE112",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_EIENTEI",
+      "map": "MAP_ROUTE113",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_ANIMAL_REALM",
+      "map": "MAP_ROUTE114",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_NEO_BANJAR_CITY",
+      "map": "MAP_ROUTE115",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_FANTASY_WORLD",
+      "map": "MAP_ROUTE116",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_DREAM_WORLD",
+      "map": "MAP_ROUTE117",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_MAKAI",
+      "map": "MAP_ROUTE118",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_LUNAR_CAPITAL",
+      "map": "MAP_ROUTE119",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_GENSOKYO_FANTASY_LEAGUE",
+      "map": "MAP_ROUTE120",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_YYYI_SEA_OF_TREES1",
+      "map": "MAP_ROUTE121",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_YYYI_SEA_OF_FLAME1",
+      "map": "MAP_ROUTE122",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_KEY_ILLUSIONARY_WORLD1",
+      "map": "MAP_ROUTE123",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_YOGYAKARTA",
+      "map": "MAP_ROUTE124",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_SOLO",
+      "map": "MAP_ROUTE125",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_SEMARANG",
+      "map": "MAP_ROUTE126",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_SURABAYA",
+      "map": "MAP_ROUTE127",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_JAKARTA", 
+      "map": "MAP_ROUTE128",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JOHTO_ROUTE_48_POKEMON_CENTER",
+      "map": "MAP_ROUTE129",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JOHTO_NOBELESSE_CITY",
+      "map": "MAP_ROUTE130",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_MALANG",
+      "map": "MAP_ROUTE131",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_DEVATA_ISLETS",
+      "map": "MAP_ROUTE132",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_KASEPUHAN_TOWN",
+      "map": "MAP_ROUTE133",
+      "x": 1,
+      "y": 1
+    },
+    {
+      "id": "HEAL_LOCATION_JAVA_CILA_PRISON_TOWN",
+      "map": "MAP_ROUTE134",
+      "x": 1,
+      "y": 1
     }
   ]
 }

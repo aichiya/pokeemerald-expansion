@@ -6614,7 +6614,7 @@ u16 GetBattleBGM(void)
         FlagClear(FLAG_CUSTOM_BGM_BATTLE);
         return VarGet(VAR_SETTING_MUSIC);
     }
-    else if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ANOTHER_WORLD_ECRUTEAK_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ANOTHER_WORLD_ECRUTEAK_CITY))
+    else if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ANOTHER_WORLD_ECRUTEAK_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ANOTHER_WORLD_ECRUTEAK_CITY))
     {
         if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
         {

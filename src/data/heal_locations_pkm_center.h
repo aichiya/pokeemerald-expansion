@@ -142,239 +142,239 @@ static const struct HealLocation sHealLocationsPokemonCenter[NUM_HEAL_LOCATIONS 
     },
     [HEAL_LOCATION_GENSOKYO_HAKUREI_SHRINE - 1] =
     {
-        .group = MAP_GROUP(ROUTE101),
-        .map = MAP_NUM(ROUTE101), 
+        .mapGroup = MAP_GROUP(MAP_ROUTE101),
+        .mapNum = MAP_NUM(MAP_ROUTE101), 
         .x = 1, 
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_HUMAN_VILLAGE - 1] =
     {
-        .group = MAP_GROUP(ROUTE102),
-        .map = MAP_NUM(ROUTE102), 
+        .mapGroup = MAP_GROUP(MAP_ROUTE102),
+        .mapNum = MAP_NUM(MAP_ROUTE102), 
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_KOURINDOU - 1] =
     {
-        .group = MAP_GROUP(ROUTE103),
-        .map = MAP_NUM(ROUTE103),
+        .mapGroup = MAP_GROUP(MAP_ROUTE103),
+        .mapNum = MAP_NUM(MAP_ROUTE103),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_MUENZUKA - 1] =
     {
-        .group = MAP_GROUP(ROUTE104),
-        .map = MAP_NUM(ROUTE104),
+        .mapGroup = MAP_GROUP(MAP_ROUTE104),
+        .mapNum = MAP_NUM(MAP_ROUTE104),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_HAKUGYOKUROU - 1] =
     {
-        .group = MAP_GROUP(ROUTE105),
-        .map = MAP_NUM(ROUTE105),
+        .mapGroup = MAP_GROUP(MAP_ROUTE105),
+        .mapNum = MAP_NUM(MAP_ROUTE105),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_MORIYA_SHRINE - 1] =
     {
-        .group = MAP_GROUP(ROUTE106),
-        .map = MAP_NUM(ROUTE106),
+        .mapGroup = MAP_GROUP(MAP_ROUTE106),
+        .mapNum = MAP_NUM(MAP_ROUTE106),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_SCARLET_DEVIL_MANSION - 1] =
     {
-        .group = MAP_GROUP(ROUTE107),
-        .map = MAP_NUM(ROUTE107),
+        .mapGroup = MAP_GROUP(MAP_ROUTE107),
+        .mapNum = MAP_NUM(MAP_ROUTE107),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_CHIREIDEN - 1] =
     {
-        .group = MAP_GROUP(ROUTE108),
-        .map = MAP_NUM(ROUTE108),
+        .mapGroup = MAP_GROUP(MAP_ROUTE108),
+        .mapNum = MAP_NUM(MAP_ROUTE108),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_PALENQUIN_SHIP - 1] =
     {
-        .group = MAP_GROUP(ROUTE109),
-        .map = MAP_NUM(ROUTE109),
+        .mapGroup = MAP_GROUP(MAP_ROUTE109),
+        .mapNum = MAP_NUM(MAP_ROUTE109),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_SANZU_RIVER - 1] =
     {
-        .group = MAP_GROUP(ROUTE110),
-        .map = MAP_NUM(ROUTE110),
+        .mapGroup = MAP_GROUP(MAP_ROUTE110),
+        .mapNum = MAP_NUM(MAP_ROUTE110),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_GARDEN_OF_THE_SUN - 1] =
     {
-        .group = MAP_GROUP(ROUTE111),
-        .map = MAP_NUM(ROUTE111),
+        .mapGroup = MAP_GROUP(MAP_ROUTE111),
+        .mapNum = MAP_NUM(MAP_ROUTE111),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JAVA_KEMBANG_TOWN - 1] =
     {
-        .group = MAP_GROUP(ROUTE112),
-        .map = MAP_NUM(ROUTE112),
+        .mapGroup = MAP_GROUP(MAP_ROUTE112),
+        .mapNum = MAP_NUM(MAP_ROUTE112),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_EIENTEI - 1] =
     {
-        .group = MAP_GROUP(ROUTE113),
-        .map = MAP_NUM(ROUTE113),
+        .mapGroup = MAP_GROUP(MAP_ROUTE113),
+        .mapNum = MAP_NUM(MAP_ROUTE113),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_ANIMAL_REALM - 1] =
     {
-        .group = MAP_GROUP(ROUTE114),
-        .map = MAP_NUM(ROUTE114),
+        .mapGroup = MAP_GROUP(MAP_ROUTE114),
+        .mapNum = MAP_NUM(MAP_ROUTE114),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JAVA_NEO_BANJAR_CITY - 1] =
     {
-        .group = MAP_GROUP(ROUTE115),
-        .map = MAP_NUM(ROUTE115),
+        .mapGroup = MAP_GROUP(MAP_ROUTE115),
+        .mapNum = MAP_NUM(MAP_ROUTE115),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_FANTASY_WORLD - 1] =
     {
-        .group = MAP_GROUP(ROUTE116),
-        .map = MAP_NUM(ROUTE116),
+        .mapGroup = MAP_GROUP(MAP_ROUTE116),
+        .mapNum = MAP_NUM(MAP_ROUTE116),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_DREAM_WORLD - 1] =
     {
-        .group = MAP_GROUP(ROUTE117),
-        .map = MAP_NUM(ROUTE117),
+        .mapGroup = MAP_GROUP(MAP_ROUTE117),
+        .mapNum = MAP_NUM(MAP_ROUTE117),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_MAKAI - 1] =
     {
-        .group = MAP_GROUP(ROUTE118),
-        .map = MAP_NUM(ROUTE118),
+        .mapGroup = MAP_GROUP(MAP_ROUTE118),
+        .mapNum = MAP_NUM(MAP_ROUTE118),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_LUNAR_CAPITAL - 1] =
     {
-        .group = MAP_GROUP(ROUTE119),
-        .map = MAP_NUM(ROUTE119),
+        .mapGroup = MAP_GROUP(MAP_ROUTE119),
+        .mapNum = MAP_NUM(MAP_ROUTE119),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_GENSOKYO_FANTASY_LEAGUE - 1] =
     {
-        .group = MAP_GROUP(ROUTE120),
-        .map = MAP_NUM(ROUTE120),
+        .mapGroup = MAP_GROUP(MAP_ROUTE120),
+        .mapNum = MAP_NUM(MAP_ROUTE120),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_YYYI_SEA_OF_TREES1 - 1] =
     {
-        .group = MAP_GROUP(ROUTE121),
-        .map = MAP_NUM(ROUTE121),
+        .mapGroup = MAP_GROUP(MAP_ROUTE121),
+        .mapNum = MAP_NUM(MAP_ROUTE121),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_YYYI_SEA_OF_FLAME1 - 1] =
     {
-        .group = MAP_GROUP(ROUTE122),
-        .map = MAP_NUM(ROUTE122),
+        .mapGroup = MAP_GROUP(MAP_ROUTE122),
+        .mapNum = MAP_NUM(MAP_ROUTE122),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_KEY_ILLUSIONARY_WORLD1 - 1] =
     {
-        .group = MAP_GROUP(ROUTE123),
-        .map = MAP_NUM(ROUTE123),
+        .mapGroup = MAP_GROUP(MAP_ROUTE123),
+        .mapNum = MAP_NUM(MAP_ROUTE123),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JAVA_YOGYAKARTA - 1] =
     {
-        .group = MAP_GROUP(ROUTE124),
-        .map = MAP_NUM(ROUTE124),
+        .mapGroup = MAP_GROUP(MAP_ROUTE124),
+        .mapNum = MAP_NUM(MAP_ROUTE124),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JAVA_SOLO - 1] =
     {
-        .group = MAP_GROUP(ROUTE125),
-        .map = MAP_NUM(ROUTE125),
+        .mapGroup = MAP_GROUP(MAP_ROUTE125),
+        .mapNum = MAP_NUM(MAP_ROUTE125),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JAVA_SEMARANG - 1] =
     {
-        .group = MAP_GROUP(ROUTE126),
-        .map = MAP_NUM(ROUTE126),
+        .mapGroup = MAP_GROUP(MAP_ROUTE126),
+        .mapNum = MAP_NUM(MAP_ROUTE126),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JAVA_SURABAYA - 1] =
     {
-        .group = MAP_GROUP(ROUTE127),
-        .map = MAP_NUM(ROUTE127),
+        .mapGroup = MAP_GROUP(MAP_ROUTE127),
+        .mapNum = MAP_NUM(MAP_ROUTE127),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JAVA_JAKARTA - 1] = 
     {
-        .group = MAP_GROUP(ROUTE128),
-        .map = MAP_NUM(ROUTE128),
+        .mapGroup = MAP_GROUP(MAP_ROUTE128),
+        .mapNum = MAP_NUM(MAP_ROUTE128),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JOHTO_ROUTE_48_POKEMON_CENTER - 1] =
     {
-        .group = MAP_GROUP(ROUTE129),
-        .map = MAP_NUM(ROUTE129),
+        .mapGroup = MAP_GROUP(MAP_ROUTE129),
+        .mapNum = MAP_NUM(MAP_ROUTE129),
         .x = 19,
         .y = 44,
     },
     [HEAL_LOCATION_JOHTO_NOBELESSE_CITY - 1] =
     {
-        .group = MAP_GROUP(ROUTE130),
-        .map = MAP_NUM(ROUTE130),
+        .mapGroup = MAP_GROUP(MAP_ROUTE130),
+        .mapNum = MAP_NUM(MAP_ROUTE130),
         .x = 19,
         .y = 21,
     },
     [HEAL_LOCATION_JAVA_MALANG - 1] =
     {
-        .group = MAP_GROUP(ROUTE131),
-        .map = MAP_NUM(ROUTE131),
+        .mapGroup = MAP_GROUP(MAP_ROUTE131),
+        .mapNum = MAP_NUM(MAP_ROUTE131),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JAVA_DEVATA_ISLETS - 1] =
     {
-        .group = MAP_GROUP(ROUTE132),
-        .map = MAP_NUM(ROUTE132),
+        .mapGroup = MAP_GROUP(MAP_ROUTE132),
+        .mapNum = MAP_NUM(MAP_ROUTE132),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JAVA_KASEPUHAN_TOWN - 1] =
     {
-        .group = MAP_GROUP(ROUTE133),
-        .map = MAP_NUM(ROUTE133),
+        .mapGroup = MAP_GROUP(MAP_ROUTE133),
+        .mapNum = MAP_NUM(MAP_ROUTE133),
         .x = 1,
         .y = 1,
     },
     [HEAL_LOCATION_JAVA_CILA_PRISON_TOWN - 1] =
     {
-        .group = MAP_GROUP(ROUTE134),
-        .map = MAP_NUM(ROUTE134),
+        .mapGroup = MAP_GROUP(MAP_ROUTE134),
+        .mapNum = MAP_NUM(MAP_ROUTE134),
         .x = 1,
         .y = 1,
     },

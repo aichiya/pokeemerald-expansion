@@ -92,32 +92,32 @@ voicegroup202::
 	voice_square_2_alt 60, 0, 0, 0, 2, 5, 2                                                                   @ 89 | Square-2 | Note off with noise 12.5% 0 2 5 2
 	voice_square_1_alt 60, 0, 0, 0, 0, 2, 5, 2                                                                @ 90 | Square-1 | Note off with noise 12.5% 0 2 5 2
 	voice_square_2_alt 60, 0, 3, 0, 2, 7, 3                                                                   @ 91 | Square-2 | Note off with noise 75.0% 0 2 7 3
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm82, 0, 4, 6, 0                          @ 92 | Wave | Note off with noise 0 4 6 0
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm83, 1, 7, 0, 6                          @ 93 | Wave | Note off with noise 1 7 0 6
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm84, 0, 4, 6, 0                          @ 94 | Wave | Note off with noise 0 4 6 0
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm85, 0, 2, 9, 0                          @ 95 | Wave | Note off with noise 0 2 9 0
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm86, 1, 5, 0, 3                          @ 96 | Wave | Note off with noise 1 5 0 3
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm87, 0, 7, 15, 1                         @ 97 | Wave | Note off with noise 0 7 15 1
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm88, 0, 7, 15, 0                         @ 98 | Wave | Note off with noise 0 7 15 0
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm89, 0, 1, 9, 2                          @ 99 | Wave | Note off with noise 0 1 9 2
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_90, 255, 240, 128, 64                                 @ 100 | Direct | ReimuFate Custom 090
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_91, 255, 240, 128, 64                                 @ 101 | Direct | ReimuFate Custom 091
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm92, 0, 2, 9, 1                          @ 102 | Wave | Note off with noise 0 2 9 1
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 4, 6, 0                                     @ 92 | Wave | Note off with noise 0 4 6 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_2, 1, 7, 0, 6                                     @ 93 | Wave | Note off with noise 1 7 0 6
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_16, 0, 4, 6, 0                                    @ 94 | Wave | Note off with noise 0 4 6 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_3, 0, 2, 9, 0                                     @ 95 | Wave | Note off with noise 0 2 9 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 1, 5, 0, 3                                     @ 96 | Wave | Note off with noise 1 5 0 3
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_3, 0, 7, 15, 1                                    @ 97 | Wave | Note off with noise 0 7 15 1
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 7, 15, 0                                    @ 98 | Wave | Note off with noise 0 7 15 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_15, 0, 1, 9, 2                                    @ 99 | Wave | Note off with noise 0 1 9 2
+	voice_directsound 60, 0, DirectSoundWaveData_thppme_puresquare50, 255, 240, 128, 64                       @ 100 | Direct | THPP Pure Square 50
+	voice_directsound 60, 0, DirectSoundWaveData_thppme_puresquare25, 255, 240, 128, 64                       @ 101 | Direct | THPP Pure Square 25
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_2, 0, 2, 9, 1                                     @ 102 | Wave | Note off with noise 0 2 9 1
 	voice_square_2_alt 60, 0, 3, 0, 3, 7, 1                                                                   @ 103 | Square-2 | Note off with noise 75.0% 0 3 7 1
 	voice_square_1_alt 60, 0, 0, 3, 0, 2, 7, 3                                                                @ 104 | Square-1 | Note off with noise 75.0% 0 2 7 3
 	voice_square_2_alt 60, 0, 1, 0, 2, 9, 1                                                                   @ 105 | Square-2 | Note off with noise 25.0% 0 2 9 1
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm96, 0, 3, 7, 2                          @ 106 | Wave | Note off with noise 0 3 7 2
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm97, 0, 2, 7, 3                          @ 107 | Wave | Note off with noise 0 2 7 3
-	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thpprf_pcm98, 0, 2, 7, 3                          @ 108 | Wave | Note off with noise 0 2 7 3
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_3, 170, 180, 160, 235                                 @ 109 | Direct | ReimuFate Custom 003
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243                                 @ 110 | Direct | ReimuFate Custom 004
-	voice_directsound 60, 65, DirectSoundWaveData_thpprf_5, 255, 205, 220, 243                                @ 111 | Direct | ReimuFate Custom 005
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_6, 170, 160, 180, 210                                 @ 112 | Direct | ReimuFate Custom 006
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_7, 255, 0, 255, 235                                   @ 113 | Direct | ReimuFate Custom 007 Music Box?
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_8, 250, 250, 250, 190                                 @ 114 | Direct | ReimuFate Custom 008
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_11, 170, 160, 180, 210                                @ 115 | Direct | ReimuFate Custom 011
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_36, 255, 165, 180, 216                                @ 116 | Direct | ReimuFate Custom 036
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_39, 255, 0, 255, 127                                  @ 117 | Direct | ReimuFate Custom 039
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 0, 3, 7, 2                                     @ 106 | Wave | Note off with noise 0 3 7 2
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thppme_pcm_fff740, 0, 2, 7, 3                     @ 107 | Wave | Note off with noise 0 2 7 3
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 0, 2, 7, 3                                     @ 108 | Wave | Note off with noise 0 2 7 3
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_church_organ, 170, 180, 160, 235                      @ 109 | Direct | RF Church Organ
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_choir_ohhs, 255, 188, 220, 243                        @ 110 | Direct | RF Choir Ohhs
+	voice_directsound 60, 65, DirectSoundWaveData_thpprf_choir_ahhs, 255, 205, 220, 243                       @ 111 | Direct | RF Choir Ahhs
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_applause, 170, 160, 180, 210                          @ 112 | Direct | RF Applause 1
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_music_box, 255, 0, 255, 235                           @ 113 | Direct | RF Music Box
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_overdrive_guitar, 250, 250, 250, 190                  @ 114 | Direct | RF Overdrive Guitar
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_applause2, 170, 160, 180, 210                         @ 115 | Direct | RF Applause 2
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_thpprf_unison_slap, 255, 165, 180, 216                @ 116 | Direct | RF Unison Slap Bass
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_square_wave, 255, 0, 255, 127                         @ 117 | Direct | RF Sampled Square Wave
 	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_09263c, 255, 0, 255, 0                 @ 118 | Direct | GBA Precure Orchestral Hit
 	voice_keysplit_all voicegroup192                                                                          @ 119 | Direct | Drum | GBA Emerald Drum
 	voice_keysplit_all voicegroup506                                                                          @ 120 | Direct | Drum | GBA PMD Drum 1

@@ -63,7 +63,7 @@ voicegroup275::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 060 | --- |  voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 061 | --- |  voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 062 | --- |  voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243             @ 063 | RSE Choir |  voice_keysplit voicegroup303, KeySplitTable81    @ choir full
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_choir_ohhs, 255, 188, 220, 243    @ 063 | RF Choir Ohhs |  voice_keysplit voicegroup303, KeySplitTable81    @ choir full
 	voice_directsound 60, 0, DirectSoundWaveData_dp_altosax_c3_16, 255, 216, 252, 192     @ 064 | HGSS Altosax |  voice_keysplit voicegroup314, KeySplitTable71    @ alto sax
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 065 | --- |  voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 066 | --- |  voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

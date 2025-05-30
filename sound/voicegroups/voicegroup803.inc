@@ -8,7 +8,7 @@ voicegroup803::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 005 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 006 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 007 | --- | 
-	voice_directsound 60, 0, DirectSoundWaveData_GoldenSun2InstrumentSample001, 255, 0, 255, 165  @ 008 | GS2 Celesta | 
+	voice_directsound 60, 0, DirectSoundWaveData_golden_sun_2_celesta, 255, 0, 255, 165   @ 008 | GS2 Celesta | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 009 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 010 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 011 | --- | 
@@ -52,7 +52,7 @@ voicegroup803::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 049 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 050 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 051 | --- | 
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243             @ 052 | RSE Voice Ahhs | 
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_choir_ohhs, 255, 188, 220, 243    @ 052 | RF Voice Ohhs | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 053 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 054 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 055 | --- | 

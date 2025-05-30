@@ -78,7 +78,7 @@ voicegroup276::
 	voice_keysplit voicegroup269, KeySplitTable55                                         @ 075 | HGSS Orchestra Hit |  voice_directsound 60, 0, DirectSoundWaveData_bw_stringhit_plasma, 255, 248, 25, 205
 	voice_keysplit voicegroup268, KeySplitTable54                                         @ 076 | HGSS Basson |  voice_directsound 60, 0, DirectSoundWaveData_bw_brassg5_n, 255, 197, 255, 171
 	voice_directsound 60, 0, DirectSoundWaveData_dp_synthkick, 255, 251, 0, 205           @ 077 | HGSS Synth Kick |  voice_directsound 60, 0, DirectSoundWaveData_bw_steeldrumg4_n, 255, 251, 0, 205
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243             @ 078 | RF Voice Ahhs |  voice_keysplit voicegroup303, KeySplitTable81    @ choir full
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_choir_ohhs, 255, 188, 220, 243    @ 078 | RF Voice Ohhs |  voice_keysplit voicegroup303, KeySplitTable81    @ choir full
 	voice_directsound 60, 0, DirectSoundWaveData_hg_059harpc4, 255, 246, 0, 205           @ 079 | HGSS Harp Part |  voice_directsound 60, 0, DirectSoundWaveData_hg_059harpc4, 255, 246, 0, 205
 	voice_directsound 60, 0, DirectSoundWaveData_hg_130jdrumh, 255, 0, 227, 171           @ 080 | HGSS Taiko High |  voice_directsound 60, 0, DirectSoundWaveData_bw_taikog4_ghetsis, 255, 248, 0, 205
 	voice_directsound 60, 0, DirectSoundWaveData_hg_128jdruml, 255, 0, 227, 171           @ 081 | HGSS Taiko Low |  voice_directsound 60, 0, DirectSoundWaveData_bw_clocktick_n, 255, 197, 255, 171

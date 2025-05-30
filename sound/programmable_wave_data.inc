@@ -77,45 +77,6 @@ ProgrammableWaveData_24::
 ProgrammableWaveData_25::
 	.incbin "sound/programmable_wave_samples/25.pcm"
 
-ProgrammableWaveData_thpprf_pcm15::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm15.pcm"
-
-ProgrammableWaveData_thpprf_pcm82::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm82.pcm"
-
-ProgrammableWaveData_thpprf_pcm83::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm83.pcm"
-
-ProgrammableWaveData_thpprf_pcm84::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm84.pcm"
-
-ProgrammableWaveData_thpprf_pcm85::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm85.pcm"
-
-ProgrammableWaveData_thpprf_pcm86::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm86.pcm"
-
-ProgrammableWaveData_thpprf_pcm87::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm87.pcm"
-
-ProgrammableWaveData_thpprf_pcm88::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm88.pcm"
-
-ProgrammableWaveData_thpprf_pcm89::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm89.pcm"
-
-ProgrammableWaveData_thpprf_pcm92::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm92.pcm"
-
-ProgrammableWaveData_thpprf_pcm96::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm96.pcm"
-
-ProgrammableWaveData_thpprf_pcm97::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm97.pcm"
-
-ProgrammableWaveData_thpprf_pcm98::
-	.incbin "sound/programmable_wave_samples/thpprf_pcm98.pcm"
-
 ProgrammableWaveData_pc_fwpcmh_wave_0827e8::
 	.incbin "sound/programmable_wave_samples/pc_fwpcmh_wave_0827e8.pcm"
 
@@ -229,3 +190,21 @@ ProgrammableWaveData_PkmnGSC13::
 
 ProgrammableWaveData_PkmnGSC14::
     .incbin "sound/programmable_wave_samples/gsc14.pcm"
+
+ProgrammableWaveData_thppme_pcm_fff6f0::
+	.incbin "sound/programmable_wave_samples/thppme_pcm_fff6f0.pcm"
+
+ProgrammableWaveData_thppme_pcm_fff700::
+	.incbin "sound/programmable_wave_samples/thppme_pcm_fff700.pcm"
+
+ProgrammableWaveData_thppme_pcm_fff710::
+	.incbin "sound/programmable_wave_samples/thppme_pcm_fff710.pcm"
+
+ProgrammableWaveData_thppme_pcm_fff720::
+	.incbin "sound/programmable_wave_samples/thppme_pcm_fff720.pcm"
+
+ProgrammableWaveData_thppme_pcm_fff730::
+	.incbin "sound/programmable_wave_samples/thppme_pcm_fff730.pcm"
+
+ProgrammableWaveData_thppme_pcm_fff740::
+	.incbin "sound/programmable_wave_samples/thppme_pcm_fff740.pcm"

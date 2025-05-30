@@ -59,7 +59,7 @@ voicegroup201::                                                                 
 	voice_keysplit voicegroup197, KeySplitTable3                                                           @ 056 | Direct | Multi | GBA Trumpet
 	voice_directsound 60, 0, DirectSoundWaveData_trinity_big_boned, 255, 165, 154, 127                     @ 057 | Direct | GBA Trinity Big Boned
 	voice_keysplit voicegroup198, KeySplitTable4                                                           @ 058 | Direct | Multi | GBA Tuba
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_103, 240, 200, 245, 220                            @ 059 | Direct | ReimuFate Custom 003 Sweet Trumpet
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_romantic_trumpet, 240, 200, 245, 220               @ 059 | Direct | RF Romantic Trumpet 1
 	voice_keysplit voicegroup199, KeySplitTable5                                                           @ 060 | Direct | Multi | GBA French Horn
 	voice_keysplit voicegroup259, KeySplitTable40                                                          @ 061 | Direct | Multi | HGSS Harp
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 165, 180, 165  @ 062 | Direct | GBA Distortion Guitar 2
@@ -98,15 +98,15 @@ voicegroup201::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_dp_altosax_c3_16, 255, 216, 252, 192                      @ 095 | Direct | HGSS Altosax
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 0, 255, 165                     @ 096 | Direct | GBA Sampled Square 1
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 226, 0, 165                     @ 097 | Direct | GBA Sampled Square 2
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_7, 255, 0, 255, 235                                @ 098 | Direct | ReimuFate Custom 007 Music Box?
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_8, 250, 250, 250, 190                              @ 099 | Direct | ReimuFate Custom 008 Guitar?
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_57, 255, 0, 255, 192                               @ 100 | Direct | ReimuFate Custom 057
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_music_box, 255, 0, 255, 235                        @ 098 | Direct | RF Music Box
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_overdrive_guitar, 250, 250, 250, 190               @ 099 | Direct | RF Overdrive Guitar
+	voice_directsound 60, 0, DirectSoundWaveData_thppme_trombone, 255, 0, 255, 192                         @ 100 | Direct | THPP Trombones
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_3, 0, 7, 15, 0                                 @ 101 | Wave | GBA Programmable Wave 3
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_18, 0, 7, 15, 0                                @ 102 | Wave | GBA Programmable Wave 18
 	voice_keysplit voicegroup235, KeySplitTable37                                                          @ 103 | Direct | Multi | HGSS Piano Octave
 	voice_keysplit voicegroup236, KeySplitTable9                                                           @ 104 | Direct | Multi | HGSS Rhodes 1
 	voice_keysplit voicegroup237, KeySplitTable9                                                           @ 105 | Direct | Multi | HGSS Rhodes 2
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_36, 255, 165, 180, 216                             @ 106 | Direct | ReimuFate Custom 036 Slap Bass?
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_thpprf_unison_slap, 255, 165, 180, 216             @ 106 | Direct | RF Unison Slap Bass
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_koto_low, 255, 0, 206, 242                        @ 107 | Direct | GBA Koto 1
 	voice_directsound 60, 0, DirectSoundWaveData_dp_woodbass_d3_16, 255, 251, 0, 171                       @ 108 | Direct | HGSS Wood Bass
 	voice_directsound 60, 0, DirectSoundWaveData_trinity_30303_mega_bass, 128, 249, 25, 204                @ 109 | Direct | GBA Trinity Mega Bass
@@ -114,10 +114,10 @@ voicegroup201::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_dp_whistle_c5_16, 255, 246, 78, 192                       @ 111 | Direct | HGSS Whistle
 	voice_keysplit voicegroup240, KeySplitTable39                                                          @ 112 | Direct | Multi | HGSS Xylophone
 	voice_keysplit voicegroup241, KeySplitTable25                                                          @ 113 | Direct | Multi | HGSS Tubular Bell
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_3, 170, 180, 160, 235                              @ 114 | Direct | ReimuFate Custom 003
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243                              @ 115 | Direct | ReimuFate Custom 004
-	voice_directsound 60, 65, DirectSoundWaveData_thpprf_5, 255, 205, 220, 243                             @ 116 | Direct | ReimuFate Custom 005
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_6, 170, 160, 180, 210                              @ 117 | Direct | ReimuFate Custom 006
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_church_organ, 170, 180, 160, 235                   @ 114 | Direct | RF Church Organ
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_choir_ohhs, 255, 188, 220, 243                     @ 115 | Direct | RF Choir Ohhs
+	voice_directsound 60, 65, DirectSoundWaveData_thpprf_choir_ahhs, 255, 205, 220, 243                    @ 116 | Direct | RF Choir Ahhs
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_applause, 170, 160, 180, 210                       @ 117 | Direct | RF Appause 1
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_2, 1, 7, 2, 15                                 @ 118 | Wave | GBA Programmable Wave 2
 	voice_directsound 60, 0, DirectSoundWaveData_dp_reverscyn_16, 255, 0, 255, 16                          @ 119 | Direct | HGSS Reverse Cymbal
 	voice_keysplit_all voicegroup230                                                                       @ 120 | Direct | Drum | HGSS Drum

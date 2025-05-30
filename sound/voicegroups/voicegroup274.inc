@@ -63,9 +63,9 @@ voicegroup274::
 	voice_keysplit voicegroup197, KeySplitTable3                                          @ 060 | RSE Trumpets |  voice_keysplit voicegroup261, KeySplitTable112   @ trumpets | 65
 	voice_keysplit voicegroup235, KeySplitTable37                                         @ 061 | HGSS Piano Octave |  voice_keysplit voicegroup234, KeySplitTable36    @ piano 2
 	voice_directsound 60, 0, DirectSoundWaveData_dp_reverscyn_16, 255, 0, 255, 16         @ 062 | HGSS Reverse Cymbal |  voice_directsound 60, 0, DirectSoundWaveData_bw_reversecymbale2, 255, 0, 255, 236
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243             @ 063 | RSE Female Choir |  voice_keysplit voicegroup324, KeySplitTable62    @ choir male
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243             @ 064 | RSE Male Choir |  voice_keysplit voicegroup325, KeySplitTable63    @ choir female
-	voice_directsound 60, 0, DirectSoundWaveData_thpprf_4, 255, 188, 220, 243             @ 065 | RSE Choir |  voice_keysplit voicegroup303, KeySplitTable81    @ choir full
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_choir_ohhs, 255, 188, 220, 243    @ 063 | RF Choir Ohhs |  voice_keysplit voicegroup324, KeySplitTable62    @ choir male
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_choir_ohhs, 255, 188, 220, 243    @ 064 | RF Choir Ohhs |  voice_keysplit voicegroup325, KeySplitTable63    @ choir female
+	voice_directsound 60, 0, DirectSoundWaveData_thpprf_choir_ohhs, 255, 188, 220, 243    @ 065 | RF Choir Ohhs |  voice_keysplit voicegroup303, KeySplitTable81    @ choir full
 	voice_directsound 60, 0, DirectSoundWaveData_dp_orchhitminor60, 255, 197, 255, 171    @ 066 | HGSS Orchestral Hit Minor |  voice_directsound 60, 0, DirectSoundWaveData_dp_orchhitminor60, 255, 0, 255, 205
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 128, 249, 0, 188 @ 067 | RSE Electric Piano |  voice_keysplit voicegroup332, KeySplitTable114   @ piano (longer decay)
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 068 | --- |  voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

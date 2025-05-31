@@ -132,7 +132,7 @@
       "x": 3,
       "y": 52
     },
-        {
+    {
       "id": "HEAL_LOCATION_GENSOKYO_HAKUREI_SHRINE",
       "map": "MAP_ROUTE101",
       "x": 1,
@@ -295,7 +295,7 @@
       "y": 1
     },
     {
-      "id": "HEAL_LOCATION_JAVA_JAKARTA", 
+      "id": "HEAL_LOCATION_JAVA_JAKARTA",
       "map": "MAP_ROUTE128",
       "x": 1,
       "y": 1

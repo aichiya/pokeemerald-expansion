@@ -747,7 +747,7 @@ void CB2_ShowVoltorbFlip(void)
     while (FreeTempTileDataBuffersIfPossible())
         ;
 	
-    LZDecompressWram(sVoltorbFlipTilemap, sVoltorbFlipTilemapPtr);
+    DecompressDataWithHeaderWram(sVoltorbFlipTilemap, sVoltorbFlipTilemapPtr);
     CopyBgTilemapBufferToVram(1);
     BlendPalettes(PALETTES_ALL, 16, RGB_BLACK);
     BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);

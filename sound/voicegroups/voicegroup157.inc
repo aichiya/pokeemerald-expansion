@@ -1,6 +1,6 @@
 	.align 2
 voicegroup157::
-	voice_keysplit_all voicegroup002
+	voice_keysplit_all voicegroup807
 	voice_keysplit voicegroup005, KeySplitTable1
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -49,7 +49,7 @@ voicegroup157::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_keysplit voicegroup006, KeySplitTable2
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_keysplit voicegroup006, KeySplitTableGBAStringEnsembleCustom
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -78,14 +78,14 @@ voicegroup157::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thppme_pcm_fff740, 0, 2, 7, 1
+	voice_square_2_alt 60, 0, 3, 0, 2, 7, 1
 	voice_square_1_alt 60, 0, 0, 1, 0, 2, 7, 2
 	voice_square_2_alt 60, 0, 3, 0, 3, 3, 0
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_7, 0, 3, 6, 5
 	voice_square_1_alt 60, 0, 0, 0, 0, 2, 7, 2
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 7, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_thppme_puresquare25, 255, 192, 128, 16
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_6, 0, 7, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

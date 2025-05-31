@@ -349,7 +349,11 @@
 .include "sound/voicegroups/voicegroup804.inc" @ Velo: IFM Drum
 .include "sound/voicegroups/voicegroup805.inc" @ Megaman Battle Network 6 Mapping (Partial)
 .include "sound/voicegroups/voicegroup806.inc" @ Megaman Battle Network 6 Drum Mapping (Partial)
-
+.include "sound/voicegroups/voicegroup807.inc" @ THPP Music Expansion Drum 1
+.include "sound/voicegroups/voicegroup808.inc" @ THPP Music Expansion Drum 2
+.include "sound/voicegroups/voicegroup809.inc" @ THPP Music Expansion 1 - Mr. Unknown's
+.include "sound/voicegroups/voicegroup810.inc" @ THPP Music Expansion 2 - Reincarnation
+.include "sound/voicegroups/voicegroup811.inc" @ THPP Music Expansion 3 - Uda's
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
 
 .include "sound/voicegroups/voicegroup999.inc" @ Test Instrument

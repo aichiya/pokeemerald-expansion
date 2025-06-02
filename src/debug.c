@@ -5267,7 +5267,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_TY_THE_LEVEL) \
     X(MUS_TH_TSUKI_NI_MURAKUMO) \
     X(MUS_GS2_VS_DOOM_DRAGON) \
-    X(MUS_DUMMY_1374) \
+    X(MUS_ETC_NEGERI_DI_AWAN) \
     X(MUS_DUMMY_1375) \
     X(MUS_DUMMY_1376) \
     X(MUS_DUMMY_1377) \

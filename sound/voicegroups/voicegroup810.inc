@@ -82,7 +82,7 @@ voicegroup810::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_2_alt 60, 0, 2, 0, 0, 15, 0
 	voice_square_1_alt 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thppme_pcm_fff740, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_16, 0, 7, 15, 0
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_15, 0, 7, 15, 0

@@ -102,5 +102,5 @@ const u32 gBattleEnvironmentAnimTilemap_Rayquaza[] = INCBIN_U32("graphics/battle
 const u32 gBattleEnvironmentTiles_BlankGBC[] = INCBIN_U32("graphics/battle_terrain/blank/tiles.4bpp.smol");
 const u16 gBattleEnvironmentPalette_BlankGBC[] = INCBIN_U16("graphics/battle_terrain/blank/palette.gbapal");
 const u32 gBattleEnvironmentTilemap_BlankGBC[] = INCBIN_U32("graphics/battle_terrain/blank/map.bin.smolTM");
-const u32 gBattleEnvironmentAnimTiles_BlankGBC[] = INCBIN_U32("graphics/battle_terrain/blank/anim_tiles.4bpp.lz");
+const u32 gBattleEnvironmentAnimTiles_BlankGBC[] = INCBIN_U32("graphics/battle_terrain/blank/anim_tiles.4bpp.smol");
 const u32 gBattleEnvironmentAnimTilemap_BlankGBC[] = INCBIN_U32("graphics/battle_terrain/blank/anim_map.bin.smolTM");

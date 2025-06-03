@@ -46,7 +46,7 @@ voicegroup805::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 043 | --- | 
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_church_organ3_low, 255, 76, 154, 188              @ 019 | Direct | GBA Crunch Organ 1
 	voice_directsound 60, 0, DirectSoundWaveData_dp_sawtoothlead60, 255, 197, 255, 171    @ 045 | Direct | HGSS Sawtooth
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_09263c, 255, 0, 255, 0 @ 056 | Direct | FwPCMH Orchestral Hit
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_orchestra_hit, 255, 0, 255, 0  @ 046 | Direct | FwPCMH Orchestral Hit
 	voice_keysplit voicegroup248, KeySplitTable41                                                          @ 026 | Direct | Multi | HGSS Martin Guitar
 	voice_keysplit voicegroup196, KeySplitTable2                                          @ 048 | Direct | Multi | GBA String
 	voice_keysplit voicegroup255, KeySplitTable45                                         @ 049 | Direct | Multi | HGSS String

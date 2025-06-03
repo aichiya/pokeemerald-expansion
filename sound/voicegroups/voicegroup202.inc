@@ -118,7 +118,7 @@ voicegroup202::
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_applause2, 170, 160, 180, 210                         @ 115 | Direct | RF Applause 2
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_thpprf_unison_slap, 255, 165, 180, 216                @ 116 | Direct | RF Unison Slap Bass
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_square_wave, 255, 0, 255, 127                         @ 117 | Direct | RF Sampled Square Wave
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_09263c, 255, 0, 255, 0                 @ 118 | Direct | GBA Precure Orchestral Hit
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_orchestra_hit, 255, 0, 255, 0                      @ 118 | Direct | GBA Precure Orchestral Hit
 	voice_keysplit_all voicegroup192                                                                          @ 119 | Direct | Drum | GBA Emerald Drum
 	voice_keysplit_all voicegroup506                                                                          @ 120 | Direct | Drum | GBA PMD Drum 1
 	voice_keysplit_all voicegroup507                                                                          @ 127 | Direct | Drum | GBA PMD Drum 2

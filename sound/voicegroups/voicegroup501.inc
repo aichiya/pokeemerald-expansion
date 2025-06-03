@@ -1,23 +1,23 @@
 	.align 2
 voicegroup501::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                              @ 000 |
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_083204, 255, 0, 255, 0            @ 001 | Direct | Piano
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_085a14, 255, 0, 255, 0            @ 002 | Direct | Tubular Bell
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_0888a8, 255, 0, 255, 0            @ 003 | Direct | Overdriven Guitar ?
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_089d10, 255, 0, 255, 0            @ 004 | Direct | Fingered Bass ?
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_08d118, 255, 0, 255, 0            @ 005 | Direct | Slap Bass ?
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_08ff6c, 255, 0, 255, 0            @ 006 | Direct | String ?
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_09263c, 255, 0, 255, 0            @ 007 | Direct | Orchestral Hit
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_094448, 255, 0, 255, 0            @ 008 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_096888, 255, 0, 255, 0            @ 009 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_09a15c, 255, 0, 255, 0            @ 010 | Direct | Music Box
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_09c1b0, 255, 0, 255, 0            @ 011 | Direct | Sawtooth ?
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_09e45c, 255, 0, 255, 0            @ 012 | Direct | Drum part
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_0a01e0, 255, 0, 255, 0            @ 013 | Direct | Electric Piano 1 ?
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_0a1730, 255, 0, 255, 0            @ 014 | Direct | Electric Piano 2 ?
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_0a3118, 255, 0, 255, 0            @ 015 | Direct | Drum part
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_0a4a98, 255, 0, 255, 0            @ 016 | Direct | Organ ?
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_0a6350, 255, 0, 255, 0            @ 017 | Direct | Drum part
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_piano, 255, 0, 255, 0                         @ 001 | Direct | Piano
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_tubular_bell, 255, 0, 255, 0                  @ 002 | Direct | Tubular Bell
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_distortion_guitar, 255, 0, 255, 0             @ 003 | Direct | Distortion Guitar
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_accoustic_bass, 255, 0, 255, 0                @ 004 | Direct | Accoustic Bass
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_drum_and_bass, 255, 0, 255, 0                 @ 005 | Direct | Drum Bass
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_strings, 255, 0, 255, 0                       @ 006 | Direct | Strings
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_orchestra_hit, 255, 0, 255, 0                 @ 007 | Direct | Orchestral Hit
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_guitar_separates_power_chord, 255, 0, 255, 0  @ 008 | Direct | Guitar Power
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_church_organ, 255, 0, 255, 0                  @ 009 | Direct | Church Organ
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_xylophone, 255, 0, 255, 0                     @ 010 | Direct | Xylophone
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_synth_strings, 255, 0, 255, 0                 @ 011 | Direct | Synth Strings
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_snare, 255, 0, 255, 0                         @ 012 | Direct | Snare
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_electric_piano, 255, 0, 255, 0                @ 013 | Direct | Electric Piano
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_square_wave, 255, 0, 255, 0                   @ 014 | Direct | Square Wave
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_tom, 255, 0, 255, 0                           @ 015 | Direct | Tom
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_organ, 255, 0, 255, 0                         @ 016 | Direct | Organ
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_tambourine, 255, 0, 255, 0                    @ 017 | Direct | Tambourine
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                              @ 018 |
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                              @ 019 |
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                              @ 020 |
@@ -51,13 +51,13 @@ voicegroup501::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                              @ 048 |
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                              @ 049 |
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                              @ 050 |
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_vocal_dualaurawave, 255, 0, 255, 0    @ 051 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_vocal_cureblack, 255, 0, 255, 0       @ 052 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_vocal_curewhite, 255, 0, 255, 0       @ 053 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_vocal_shiningstream, 255, 0, 255, 0   @ 054 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_vocal_kagayakuinochi, 255, 0, 255, 0  @ 055 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_vocal_extreme, 255, 0, 255, 0         @ 056 | Direct |
-	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_directsound_vocal_luminario, 255, 0, 255, 0       @ 057 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_vocal_dualaurawave, 255, 0, 255, 0            @ 051 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_vocal_cureblack, 255, 0, 255, 0               @ 052 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_vocal_curewhite, 255, 0, 255, 0               @ 053 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_vocal_shiningstream, 255, 0, 255, 0           @ 054 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_vocal_kagayakuinochi, 255, 0, 255, 0          @ 055 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_vocal_extreme, 255, 0, 255, 0                 @ 056 | Direct |
+	voice_directsound 60, 0, DirectSoundWaveData_pc_fwpcmh_vocal_luminario, 255, 0, 255, 0               @ 057 | Direct |
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                              @ 058 |
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                              @ 059 |
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                              @ 060 |

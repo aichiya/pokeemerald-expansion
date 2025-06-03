@@ -7234,168 +7234,136 @@ DirectSoundWaveData_thpprf_romantic_trumpet2::
 	.incbin "sound/direct_sound_samples/thpprf_romantic_trumpet2.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_083204::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_083204.bin"
+DirectSoundWaveData_pc_fwpcmh_piano::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_piano.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_085a14::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_085a14.bin"
+DirectSoundWaveData_pc_fwpcmh_tubular_bell::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_tubular_bell.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_0888a8::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0888a8.bin"
+DirectSoundWaveData_pc_fwpcmh_distortion_guitar::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_distortion_guitar.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_089d10::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_089d10.bin"
+DirectSoundWaveData_pc_fwpcmh_accoustic_bass::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_accoustic_bass.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_08d118::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_08d118.bin"
+DirectSoundWaveData_pc_fwpcmh_drum_and_bass::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_drum_and_bass.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_08ff6c::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_08ff6c.bin"
+DirectSoundWaveData_pc_fwpcmh_strings::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_strings.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_09263c::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_09263c.bin"
+DirectSoundWaveData_pc_fwpcmh_orchestra_hit::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_orchestra_hit.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_094448::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_094448.bin"
+DirectSoundWaveData_pc_fwpcmh_guitar_separates_power_chord::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_guitar_separates_power_chord.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_096888::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_096888.bin"
+DirectSoundWaveData_pc_fwpcmh_church_organ::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_church_organ.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_09a15c::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_09a15c.bin"
+DirectSoundWaveData_pc_fwpcmh_xylophone::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_xylophone.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_09c1b0::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_09c1b0.bin"
+DirectSoundWaveData_pc_fwpcmh_synth_strings::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_synth_strings.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_09e45c::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_09e45c.bin"
+DirectSoundWaveData_pc_fwpcmh_snare::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_snare.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_0a01e0::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0a01e0.bin"
+DirectSoundWaveData_pc_fwpcmh_electric_piano::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_electric_piano.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_0a1730::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0a1730.bin"
+DirectSoundWaveData_pc_fwpcmh_square_wave::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_square_wave.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_0a3118::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0a3118.bin"
+DirectSoundWaveData_pc_fwpcmh_tom::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_tom.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_0a4a98::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0a4a98.bin"
+DirectSoundWaveData_pc_fwpcmh_organ::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_organ.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_0a6350::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_0a6350.bin"
+DirectSoundWaveData_pc_fwpcmh_tambourine::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_tambourine.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_09e45c::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_09e45c.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_futariwaprecure::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_futariwaprecure.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_0a6350::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_0a6350.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_shimobe::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_shimobe.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_215504::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_215504.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_kaere::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_kaere.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_219b54::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_219b54.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_hikari::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_hikari.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_21e6b4::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_21e6b4.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_subete::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_subete.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_221568::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_221568.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_yuuki::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_yuuki.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_22647c::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_22647c.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_kibou::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_kibou.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_22b19c::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_22b19c.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_kizuna::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_kizuna.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_231334::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_231334.bin"
+DirectSoundWaveData_pc_fwpcmh_kick::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_kick.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_2367b4::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_2367b4.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_dualaurawave::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_dualaurawave.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_23b584::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_23b584.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_cureblack::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_cureblack.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_23fdd8::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_23fdd8.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_curewhite::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_curewhite.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_242ad8::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_242ad8.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_shiningstream::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_shiningstream.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_245688::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_245688.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_kagayakuinochi::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_kagayakuinochi.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_24ad9c::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_24ad9c.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_extreme::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_extreme.bin"
 
 	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_24e70c::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_24e70c.bin"
-
-	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_drumset_251bec::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_drumset_251bec.bin"
-
-	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_vocal_dualaurawave::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_dualaurawave.bin"
-
-	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_vocal_cureblack::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_cureblack.bin"
-
-	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_vocal_curewhite::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_curewhite.bin"
-
-	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_vocal_shiningstream::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_shiningstream.bin"
-
-	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_vocal_kagayakuinochi::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_kagayakuinochi.bin"
-
-	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_vocal_extreme::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_extreme.bin"
-
-	.align 2
-DirectSoundWaveData_pc_fwpcmh_directsound_vocal_luminario::
-	.incbin "sound/direct_sound_samples/fwpcmh/pc_fwpcmh_directsound_vocal_luminario.bin"
+DirectSoundWaveData_pc_fwpcmh_vocal_luminario::
+	.incbin "sound/direct_sound_samples/pc_fwpcmh_vocal_luminario.bin"
 
     .align 2
 DirectSoundWaveData_pmd_pcm_1E88420::

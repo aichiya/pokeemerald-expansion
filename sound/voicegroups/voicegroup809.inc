@@ -33,7 +33,7 @@ voicegroup809::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_high, 255, 0, 255, 127   @ 030 | Direct | GBA Distortion Guitar 1
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_special_scream_drive, 255, 0, 255, 165               @ 031 | Direct | GBA Special Scream Drive
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_directsound_reverse 60, 0, DirectSoundWaveData_thppme_puresquare25, 255, 232, 80, 128            @ 033 | Direct | THPP Sampled Square 25%
+	voice_directsound 60, 0, DirectSoundWaveData_thppme_puresquare25, 255, 232, 80, 128                    @ 033 | Direct | THPP Sampled Square 25%
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fretless_bass, 255, 253, 0, 188                   @ 035 | Direct | GBA Fretless Bass
 	voice_directsound 60, 0, DirectSoundWaveData_unused_sc88pro_unison_slap, 255, 165, 180, 216            @ 036 | Direct | GBA Unison Bass

@@ -6254,7 +6254,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
     {
         return TYPE_NEW_WATER;
     }
-    else if (IsSoundMove(move) && ability == ABILITY_FORTESSIMO)
+    else if (IsSoundMove(move) && ability == ABILITY_FORTISSIMO)
     {
         u32 teraType;
         if (GetActiveGimmick(battler) == GIMMICK_TERA && ((teraType = GetMonData(mon, MON_DATA_TERA_TYPE)) != TYPE_STELLAR))

@@ -2748,9 +2748,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .failsOnImposter = TRUE,
     },
 
-    [ABILITY_FORTESSIMO] =
+    [ABILITY_FORTISSIMO] =
     {
-        .name = _("Fortessimo"),
+        .name = _("Fortissimo"),
         .description = COMPOUND_STRING("Powers up sound moves."),
         .aiRating = 6,
     },

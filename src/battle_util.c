@@ -8838,7 +8838,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageCalculationData *
         if (gBattleMons[battlerAtk].status1 & STATUS1_ANY)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
-    case ABILITY_FORTESSIMO:
+    case ABILITY_FORTISSIMO:
         if (IsSoundMove(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;

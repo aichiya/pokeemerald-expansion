@@ -851,22 +851,22 @@ static bool8 DoesTypePreventStatus(u16 species, u32 status)
     switch (status)
     {
     case STATUS1_TOXIC_POISON:
-        if (gSpeciesInfo[species].types[0] == TYPE_NEW_METAL || gSpeciesInfo[species].types[0] == TYPE_NEW_MIASMA
-            || gSpeciesInfo[species].types[1] == TYPE_NEW_METAL || gSpeciesInfo[species].types[1] == TYPE_NEW_MIASMA)
+        if (GetSpeciesType(species, 0) == TYPE_NEW_METAL || GetSpeciesType(species, 0) == TYPE_NEW_MIASMA
+            || GetSpeciesType(species, 1) == TYPE_NEW_METAL || GetSpeciesType(species, 1) == TYPE_NEW_MIASMA)
             ret = TRUE;
         break;
     case STATUS1_FREEZE:
     case STATUS1_FROSTBITE:
-        if (gSpeciesInfo[species].types[0] == TYPE_NEW_ICE || gSpeciesInfo[species].types[1] == TYPE_NEW_ICE)
+        if (GetSpeciesType(species, 0) == TYPE_NEW_ICE || GetSpeciesType(species, 1) == TYPE_NEW_ICE)
             ret = TRUE;
         break;
     case STATUS1_PARALYSIS:
-        if (gSpeciesInfo[species].types[0] == TYPE_NEW_EARTH || gSpeciesInfo[species].types[1] == TYPE_NEW_EARTH
-            || (B_PARALYZE_ELECTRIC >= GEN_6 && (gSpeciesInfo[species].types[0] == TYPE_NEW_ELECTRIC || gSpeciesInfo[species].types[1] == TYPE_NEW_ELECTRIC)))
+        if (GetSpeciesType(species, 0) == TYPE_NEW_EARTH || GetSpeciesType(species, 1) == TYPE_NEW_EARTH
+            || (B_PARALYZE_ELECTRIC >= GEN_6 && (GetSpeciesType(species, 0) == TYPE_NEW_ELECTRIC || GetSpeciesType(species, 1) == TYPE_NEW_ELECTRIC)))
             ret = TRUE;
         break;
     case STATUS1_BURN:
-        if (gSpeciesInfo[species].types[0] == TYPE_NEW_FIRE || gSpeciesInfo[species].types[1] == TYPE_NEW_FIRE)
+        if (GetSpeciesType(species, 0) == TYPE_NEW_FIRE || GetSpeciesType(species, 1) == TYPE_NEW_FIRE)
             ret = TRUE;
         break;
     case STATUS1_SLEEP:
@@ -1141,7 +1141,7 @@ bool32 TryGenerateBattlePikeWildMon(bool8 checkKeenEyeIntimidate)
                MON_DATA_EXP,
                &gExperienceTables[gSpeciesInfo[wildMons[headerId][pikeMonId].species].growthRate][monLevel]);
 
-    if (gSpeciesInfo[wildMons[headerId][pikeMonId].species].abilities[1])
+    if (GetSpeciesAbility(wildMons[headerId][pikeMonId].species, 1))
         abilityNum = Random() % 2;
     else
         abilityNum = 0;

@@ -5411,7 +5411,7 @@ static void SetMoveSpecificAnimData(u8 contestant)
     switch (move)
     {
     case MOVE_CURSE:
-        if (gSpeciesInfo[species].types[0] == TYPE_NEW_NETHER || gSpeciesInfo[species].types[1] == TYPE_NEW_NETHER)
+        if (GetSpeciesType(species, 0) == TYPE_NEW_NETHER || GetSpeciesType(species, 1) == TYPE_NEW_NETHER)
             gAnimMoveTurn = 0;
         else
             gAnimMoveTurn = 1;

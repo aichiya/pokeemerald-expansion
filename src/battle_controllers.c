@@ -27,6 +27,7 @@
 #include "constants/abilities.h"
 #include "constants/songs.h"
 #include "pokemon_animation.h"
+#include "overworld.h"
 
 static EWRAM_DATA u8 sLinkSendTaskId = 0;
 static EWRAM_DATA u8 sLinkReceiveTaskId = 0;
@@ -2670,13 +2671,27 @@ void BtlController_HandleFaintAnimation(u32 battler)
                 HandleLowHpMusicChange(GetBattlerMon(battler), battler);
                 gSprites[gBattlerSpriteIds[battler]].sSpeedX = 0;
                 gSprites[gBattlerSpriteIds[battler]].sSpeedY = 5;
-                PlaySE12WithPanning(SE_FAINT, SOUND_PAN_ATTACKER);
+                if (GetCurrentRegionMapSectionId() == MAPSEC_ETC_TRIMMED_GENSOKYO)
+                {
+                    PlaySE12WithPanning(SE_TH_PICHUUN, SOUND_PAN_ATTACKER);
+                }
+                else
+                {
+                    PlaySE12WithPanning(SE_FAINT, SOUND_PAN_ATTACKER);
+                }
                 gSprites[gBattlerSpriteIds[battler]].callback = SpriteCB_FaintSlideAnim;
                 gBattlerControllerFuncs[battler] = Controller_FaintPlayerMon;
             }
             else
             {
-                PlaySE12WithPanning(SE_FAINT, SOUND_PAN_TARGET);
+                if (GetCurrentRegionMapSectionId() == MAPSEC_ETC_TRIMMED_GENSOKYO)
+                {
+                    PlaySE12WithPanning(SE_TH_PICHUUN, SOUND_PAN_TARGET);
+                }
+                else
+                {
+                    PlaySE12WithPanning(SE_FAINT, SOUND_PAN_TARGET);
+                }
                 gSprites[gBattlerSpriteIds[battler]].callback = SpriteCB_FaintOpponentMon;
                 gBattlerControllerFuncs[battler] = Controller_FaintOpponentMon;
             }

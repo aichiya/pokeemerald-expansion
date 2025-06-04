@@ -356,6 +356,7 @@
 .include "sound/voicegroups/voicegroup811.inc" @ THPP Music Expansion 3 - Uda's
 .include "sound/voicegroups/voicegroup812.inc" @ Shizukana Shizukana Native Faith
 .include "sound/voicegroups/voicegroup813.inc" @ Shizukana Shizukana Native Faith Piano Split
+.include "sound/voicegroups/voicegroup900.inc" @ New Sound Effects
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
 
 .include "sound/voicegroups/voicegroup999.inc" @ Test Instrument

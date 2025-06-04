@@ -276,7 +276,10 @@
 #define SE_PIKE_CURTAIN_CLOSE       267 // SE_CURTAIN
 #define SE_PIKE_CURTAIN_OPEN        268 // SE_CURTAIN1
 #define SE_SUDOWOODO_SHAKE          269 // SE_USSOKI
-#define END_SE                      SE_SUDOWOODO_SHAKE
+// New SFX
+#define SE_TH_PICHUUN               270
+#define SE_TH_SPELL                 271
+#define END_SE                      SE_TH_SPELL
 
 // Music
 #define START_MUS                   350

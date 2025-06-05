@@ -286,7 +286,7 @@ enum ROMInfoDebugMenu
 
 // *******************************
 // Constants
-#define DEBUG_MENU_FONT FONT_NORMAL
+#define DEBUG_MENU_FONT FONT_NARROWER
 
 #define DEBUG_MENU_WIDTH_MAIN 17
 #define DEBUG_MENU_HEIGHT_MAIN 9
@@ -297,7 +297,7 @@ enum ROMInfoDebugMenu
 #define DEBUG_MENU_WIDTH_WEATHER 15
 #define DEBUG_MENU_HEIGHT_WEATHER 3
 
-#define DEBUG_MENU_WIDTH_SOUND 20
+#define DEBUG_MENU_WIDTH_SOUND 28
 #define DEBUG_MENU_HEIGHT_SOUND 6
 
 #define DEBUG_MENU_WIDTH_FLAGVAR 4
@@ -4198,7 +4198,7 @@ static void DebugAction_Sound_MUS(u8 taskId)
     // Display initial song
     StringCopy(gStringVar2, gText_DigitIndicator[0]);
     ConvertIntToDecimalStringN(gStringVar3, START_MUS, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_ITEMS);
-    StringCopyPadded(gStringVar1, sBGMNames[0], CHAR_SPACE, 35);
+    StringCopyPadded(gStringVar1, sBGMNames[0], CHAR_SPACE, 60);
     StringExpandPlaceholders(gStringVar4, sDebugText_Sound_Music_ID);
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 
@@ -4218,7 +4218,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
         Debug_HandleInput_Numeric(taskId, START_MUS, END_MUS, DEBUG_NUMBER_DIGITS_ITEMS);
 
         StringCopy(gStringVar2, gText_DigitIndicator[gTasks[taskId].tDigit]);
-        StringCopyPadded(gStringVar1, sBGMNames[gTasks[taskId].tInput - START_MUS], CHAR_SPACE, 35);
+        StringCopyPadded(gStringVar1, sBGMNames[gTasks[taskId].tInput - START_MUS], CHAR_SPACE, 60);
         ConvertIntToDecimalStringN(gStringVar3, gTasks[taskId].tInput, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_ITEMS);
         StringExpandPlaceholders(gStringVar4, sDebugText_Sound_Music_ID);
         AddTextPrinterParameterized(gTasks[taskId].tSubWindowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);

@@ -6018,6 +6018,8 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(SE_SUDOWOODO_SHAKE) \
     X(SE_TH_PICHUUN) \
     X(SE_TH_SPELL) \
+    X(SE_YYYI_JUKAI_WARNING) \
+    X(SE_ETC_ZERONOS) \
 
 // Create BGM list
 #define X(songId) static const u8 sBGMName_##songId[] = _(#songId);

@@ -1,9 +1,9 @@
 	.align 2
 voicegroup900::
-	stream_directsound 60, 0, DirectSoundWaveData_se_th_pichuun, 255, 0, 255, 0            @ 000 | --- |
-	stream_directsound 60, 0, DirectSoundWaveData_se_th_spell, 255, 0, 255, 0              @ 000 | --- |
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 002 | --- |
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 003 | --- |
+	stream_directsound 60, 0, DirectSoundWaveData_se_th_pichuun, 255, 0, 255, 0           @ 000 | --- |
+	stream_directsound 60, 0, DirectSoundWaveData_se_th_spell, 255, 0, 255, 0             @ 001 | --- |
+	stream_directsound 60, 0, DirectSoundWaveData_se_yyyi_jukai_warning, 255, 0, 255, 0   @ 002 | --- |
+	stream_directsound 60, 0, DirectSoundWaveData_se_etc_zeronos, 255, 0, 255, 0          @ 003 | --- |
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 004 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 005 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 006 | --- | 

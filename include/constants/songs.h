@@ -279,7 +279,9 @@
 // New SFX
 #define SE_TH_PICHUUN               270
 #define SE_TH_SPELL                 271
-#define END_SE                      SE_TH_SPELL
+#define SE_YYYI_JUKAI_WARNING       272
+#define SE_ETC_ZERONOS              273
+#define END_SE                      SE_ETC_ZERONOS
 
 // Music
 #define START_MUS                   350

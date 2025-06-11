@@ -1574,7 +1574,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             break;
         case EFFECT_EVASION_DOWN:
         case EFFECT_EVASION_DOWN_2:
-            if (!ShouldLowerStat(battlerAtk, battlerDef, aiData->abilities[battlerDef], STAT_EVASION))
+            if (!CanLowerStat(battlerAtk, battlerDef, aiData->abilities[battlerDef], STAT_EVASION))
                 ADJUST_SCORE(-10);
             else if (aiData->abilities[battlerDef] == ABILITY_SHICHININ_MISAKI)
                 ADJUST_SCORE(-10);

@@ -1843,6 +1843,10 @@ const u16 gIntroCopyright_Pal[] = INCBIN_U16("graphics/intro/copyright.gbapal");
 const u32 gIntroCopyright_Gfx[] = INCBIN_U32("graphics/intro/copyright.4bpp.smol");
 const u32 gIntroCopyright_Tilemap[] = INCBIN_U32("graphics/intro/copyright.bin.smolTM");
 
+const u16 gIntroAntiPiracy_Pal[] = INCBIN_U16("graphics/intro/antipiracy/alice_not_like_this.gbapal");
+const u32 gIntroAntiPiracy_Gfx[] = INCBIN_U32("graphics/intro/antipiracy/alice_not_like_this.4bpp.smol");
+const u32 gIntroAntiPiracy_Tilemap[] = INCBIN_U32("graphics/intro/antipiracy/alice_not_like_this.bin.smolTM");
+
 const u16 gPokedexAreaScreenAreaUnknown_Pal[] = INCBIN_U16("graphics/pokedex/area_unknown.gbapal");
 const u32 gPokedexAreaScreenAreaUnknown_Gfx[] = INCBIN_U32("graphics/pokedex/area_unknown.4bpp.smol");
 

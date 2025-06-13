@@ -1826,8 +1826,9 @@
 #define MUS_THPPME_450_COMPLETE_DARKNESS 1841
 #define MUS_THPPME_451_STARRY_SKY 1842
 #define MUS_THPPME_452_REVERSE_IDEOLOGY 1843
+#define MUS_ILLYA_SHOUJO_YO_HOSHI_NI_NARE 1844
 
-#define END_MUS 					MUS_THPPME_452_REVERSE_IDEOLOGY
+#define END_MUS 		    MUS_ILLYA_SHOUJO_YO_HOSHI_NI_NARE
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

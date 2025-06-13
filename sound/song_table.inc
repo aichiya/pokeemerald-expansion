@@ -1845,6 +1845,7 @@ gSongTable::
 	song mus_thppme_450_complete_darkness, 0, 0
 	song mus_thppme_451_starry_sky, 0, 0
 	song mus_thppme_452_reverse_ideology, 0, 0
+	song mus_illya_shoujo_yo_hoshi_ni_nare, 0, 0
 
 	.align 2
 dummy_song_header:

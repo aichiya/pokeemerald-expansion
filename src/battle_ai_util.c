@@ -4939,7 +4939,7 @@ bool32 ShouldTriggerAbility(u32 battler, u32 ability)
             return BattlerStatCanRise(battler, ability, STAT_SPEED);
 
         case ABILITY_FLASH_FIRE:
-            return (HasMoveWithType(battler, TYPE_FIRE) && !gDisableStructs[battler].flashFireBoosted);
+            return (HasMoveWithType(battler, TYPE_NEW_FIRE) && !gDisableStructs[battler].flashFireBoosted);
 
         case ABILITY_WATER_COMPACTION:
         case ABILITY_WELL_BAKED_BODY:

@@ -8949,8 +8949,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
          || gBattleMons[battlerDef].item == ITEM_BERSERK_GENE)
         {
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.1));
-            if (damageCalcData->updateFlags)
-                RecordAbilityBattle(battlerDef, defAbility);
+            if (ctx->updateFlags)
+                RecordAbilityBattle(battlerDef, ctx->abilityDef);
         }
         break;
     case ABILITY_SABOTEN_CORE:
@@ -10058,11 +10058,11 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
     if (GetMoveEffect(ctx->move) == EFFECT_DEFECTIVE_MIRACLE && (defType == TYPE_NEW_DARK || defType == TYPE_NEW_DIVINE))
         mod = UQ_4_12(2.0);
     if (ctx->abilityAtk == ABILITY_PRIEST_HUNTER &&
-        (gBattleMons[battlerDef].species == SPECIES_CHARIZARD
-        || gBattleMons[battlerDef].species == SPECIES_VENUSAUR
-        || gBattleMons[battlerDef].species == SPECIES_BLASTOISE
-        || gBattleMons[battlerDef].species == SPECIES_MEW
-        || gBattleMons[battlerDef].species == SPECIES_CELEBI))
+        (gBattleMons[ctx->battlerDef].species == SPECIES_CHARIZARD
+        || gBattleMons[ctx->battlerDef].species == SPECIES_VENUSAUR
+        || gBattleMons[ctx->battlerDef].species == SPECIES_BLASTOISE
+        || gBattleMons[ctx->battlerDef].species == SPECIES_MEW
+        || gBattleMons[ctx->battlerDef].species == SPECIES_CELEBI))
         mod = UQ_4_12(2.0);
     if (ctx->moveType == TYPE_NEW_EARTH && defType == TYPE_NEW_FLYING && IsBattlerGrounded(ctx->battlerDef) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
@@ -10177,7 +10177,7 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(struct DamageCont
         if (B_GLARE_GHOST < GEN_4 && ctx->move == MOVE_GLARE && IS_BATTLER_OF_TYPE(ctx->battlerDef, TYPE_NEW_NETHER))
             modifier = UQ_4_12(0.0);
     }
-    else if (ctx->moveType == TYPE_GROUND && !IsBattlerGroundedInverseCheck(ctx->battlerDef, INVERSE_BATTLE, CHECK_IRON_BALL) && !(MoveIgnoresTypeIfFlyingAndUngrounded(ctx->move)))
+    else if (ctx->moveType == TYPE_NEW_EARTH && !IsBattlerGroundedInverseCheck(ctx->battlerDef, INVERSE_BATTLE, CHECK_IRON_BALL) && !(MoveIgnoresTypeIfFlyingAndUngrounded(ctx->move)))
     {
         modifier = UQ_4_12(0.0);
         if (ctx->updateFlags && ctx->abilityDef == ABILITY_LEVITATE)
@@ -10199,7 +10199,7 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(struct DamageCont
      && MoveIgnoresTypeIfFlyingAndUngrounded(ctx->move)
      && IS_BATTLER_OF_TYPE(ctx->battlerDef, TYPE_NEW_FLYING))
     {
-        if (moveType == TYPE_NEW_EARTH)
+        if (ctx->moveType == TYPE_NEW_EARTH)
             modifier = UQ_4_12(2.0);
         else
             modifier = UQ_4_12(1.0);
@@ -10207,7 +10207,7 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(struct DamageCont
 
     // Iron Ball ignores type modifiers for flying-type mons if it is the only source of grounding
     if (B_IRON_BALL >= GEN_5
-        && ctx->moveType == TYPE_GROUND
+        && ctx->moveType == TYPE_NEW_EARTH
         && IS_BATTLER_OF_TYPE(ctx->battlerDef, TYPE_NEW_FLYING)
         && GetBattlerHoldEffect(ctx->battlerDef, TRUE) == HOLD_EFFECT_IRON_BALL
         && !IsBattlerGroundedInverseCheck(ctx->battlerDef, NOT_INVERSE_BATTLE, IGNORE_IRON_BALL)

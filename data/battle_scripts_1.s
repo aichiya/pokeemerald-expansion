@@ -10239,7 +10239,7 @@ BattleScript_WinningCombination3Loop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_WinningCombination3Increment
 	jumpiftargetally BattleScript_WinningCombination3Increment
 	jumpifabsent BS_TARGET, BattleScript_WinningCombination3Increment
-	jumpifstatus2 BS_TARGET, STATUS2_CURSED, BattleScript_WinningCombination3Increment
+	jumpifvolatile BS_TARGET, VOLATILE_CURSED, BattleScript_WinningCombination3Increment
 BattleScript_WinningCombination3CurseEffect:
 	copybyte sBATTLER, gBattlerAttacker
 	cursetarget BattleScript_ButItFailed
@@ -10280,7 +10280,7 @@ BattleScript_ManaDisturptorLoop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_ManaDisturptorLoopIncrement
 	jumpiftargetally BattleScript_ManaDisturptorLoopIncrement
 	jumpifabsent BS_TARGET, BattleScript_ManaDisturptorLoopIncrement
-	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_ManaDisturptorLoopIncrement
+	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_ManaDisturptorLoopIncrement
 .if B_UPDATED_INTIMIDATE >= GEN_8 @These abilties specifically prevent just intimidate, without blocking stat decreases
 	jumpifability BS_TARGET, ABILITY_INNER_FOCUS, BattleScript_ManaDisturptorPrevented
 @	jumpifability BS_TARGET, ABILITY_SCRAPPY, BattleScript_ManaDisturptorPrevented
@@ -10412,7 +10412,7 @@ BattleScript_PosterGirlLoop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_PosterGirlIncrement
 	jumpiftargetally BattleScript_PosterGirlIncrement
 	jumpifabsent BS_TARGET, BattleScript_PosterGirlIncrement
-	jumpifstatus2 BS_TARGET, STATUS2_INFATUATION, BattleScript_PosterGirlIncrement
+	jumpifvolatile BS_TARGET, VOLATILE_INFATUATION, BattleScript_PosterGirlIncrement
 BattleScript_PosterGirlAttractEffect:
 	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_PosterGirlIncrement
 	tryinfatuating BattleScript_PosterGirlLoop
@@ -10475,7 +10475,7 @@ BattleScript_MisfortuneAuraLoop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_MisfortuneAuraLoopIncrement
 	jumpiftargetally BattleScript_MisfortuneAuraLoopIncrement
 	jumpifabsent BS_TARGET, BattleScript_MisfortuneAuraLoopIncrement
-	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_MisfortuneAuraLoopIncrement
+	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_MisfortuneAuraLoopIncrement
 .if B_UPDATED_INTIMIDATE >= GEN_8 @These abilties specifically prevent just intimidate, without blocking stat decreases
 @	jumpifability BS_TARGET, ABILITY_INNER_FOCUS, BattleScript_MisfortuneAuraPrevented
 @	jumpifability BS_TARGET, ABILITY_SCRAPPY, BattleScript_MisfortuneAuraPrevented

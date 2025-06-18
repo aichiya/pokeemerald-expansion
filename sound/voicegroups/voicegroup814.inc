@@ -1,10 +1,10 @@
 	.align 2
-voicegroup813::
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_piano1_48, 128, 252, 16, 239
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_piano1_60, 128, 250, 16, 221
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_piano1_72, 128, 250, 16, 221
-	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_piano1_84, 128, 247, 16, 221
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 004 | --- | 
+voicegroup814::
+	voice_keysplit_all voicegroup807                                                      @ 000 | Direct | Drum | FLRG Drum
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 001 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 002 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 003 | --- | 
+	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 128, 249, 0, 188  @ 004 | Direct | GBA Electric Piano 1
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 005 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 006 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 007 | --- | 
@@ -24,10 +24,10 @@ voicegroup813::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 021 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 022 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 023 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 024 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 025 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 026 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 027 | --- | 
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_nylon_str_guitar, 128, 249, 25, 204   @ 024 | Direct | GBA Nylon Guitar 1
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_nylon_str_guitar, 255, 165, 128, 204  @ 025 | Direct | GBA Nylon Guitar 2
+	voice_keysplit voicegroup248, KeySplitTable41                                         @ 026 | Direct | Multi | HGSS Martin Guitar
+	voice_keysplit voicegroup251, KeySplitTable41                                         @ 027 | Direct | Multi | HGSS Clean Guitar
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 028 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 029 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 030 | --- | 
@@ -38,7 +38,7 @@ voicegroup813::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 035 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 036 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 037 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 038 | --- | 
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_synth_bass, 255, 252, 0, 146     @ 038 | Direct | GBA Synth Bass
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 039 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 040 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 041 | --- | 
@@ -48,7 +48,7 @@ voicegroup813::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 045 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 046 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 047 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 048 | --- | 
+	voice_keysplit voicegroup196, KeySplitTable2                                          @ 048 | Direct | Multi | GBA String
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 049 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 050 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 051 | --- | 
@@ -86,7 +86,7 @@ voicegroup813::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 083 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 084 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 085 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 086 | --- | 
+	voice_square_2_alt 60, 0, 3, 0, 1, 4, 1                                               @ 086 | Square2 | GBA
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 087 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 088 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 089 | --- | 
@@ -100,7 +100,7 @@ voicegroup813::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 097 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 098 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 099 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 100 | --- | 
+	stream_directsound 60, 0, DirectSoundWaveData_se_etc_zeronos, 255, 0, 255, 0          @ 100 | Direct Compressed | Zeronos Effect
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 101 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 102 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 103 | --- | 
@@ -119,12 +119,12 @@ voicegroup813::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 116 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 117 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 118 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 119 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 120 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 121 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 122 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 123 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 124 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 125 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 126 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 127 | --- | 
+	voice_directsound 60, 0, DirectSoundWaveData_dp_reverscyn_16, 255, 0, 255, 16         @ 119 | Direct | HGSS Reverse Cymbal
+	voice_keysplit_all voicegroup230                                                      @ 120 | Direct | Drum | HGSS Drum
+	voice_keysplit_all voicegroup231                                                      @ 121 | Direct | Drum | HGSS Taiko Drum
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 235, 0, 216  @ 122 | Direct | GBA Cymbal 1
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 246, 0, 216  @ 123 | Direct | GBA Cymbal 2
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_tr909_hand_clap, 255, 255, 255, 127       @ 124 | Direct | GBA Hand Clap
+	voice_directsound 60, 0, DirectSoundWaveData_dp_sawtoothlead60, 255, 197, 255, 171             @ 125 | Direct | HGSS Sawtooth
+	voice_noise_alt 60, 0, 0, 0, 2, 6, 2                                                           @ 126 | Noise | GBA Noise 1
+	voice_noise_alt 60, 0, 0, 0, 1, 6, 0                                                  @ 127 | Noise | GBA Noise 2

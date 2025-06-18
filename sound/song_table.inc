@@ -1377,7 +1377,7 @@ gSongTable::
 	song mus_gs2_vs_doom_dragon, 0, 0
 	song mus_etc_negeri_di_awan, 0, 0
 	song mus_th_shizukana_shizukana_native_faith, 0, 0
-	song dummy_song_header, 0, 0
+	song mus_etc_climax_jump, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0

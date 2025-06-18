@@ -247,7 +247,7 @@ BattleScript_EffectShedTail::
 	attackstring
 	ppreduce
 	waitstate
-	jumpifstatus2 BS_ATTACKER, STATUS2_SUBSTITUTE, BattleScript_AlreadyHasSubstitute
+	jumpifvolatile BS_ATTACKER, VOLATILE_SUBSTITUTE, BattleScript_AlreadyHasSubstitute
 	jumpifbattletype BATTLE_TYPE_ARENA, BattleScript_ButItFailed
 	jumpifcantswitch SWITCH_IGNORE_ESCAPE_PREVENTION | BS_ATTACKER, BattleScript_ButItFailed
 	setsubstitute
@@ -798,7 +798,7 @@ BattleScript_BeakBlastBurn::
 
 BattleScript_EffectSkyDrop::
 	attackcanceler
-	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_SkyDropTurn2
+	jumpifvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS, BattleScript_SkyDropTurn2
 	ppreduce
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
@@ -825,8 +825,8 @@ BattleScript_SkyDropFlyingType:
 	printstring STRINGID_ITDOESNTAFFECT
 	waitmessage B_WAIT_TIME_LONG
 	makevisible BS_ATTACKER
-	jumpifstatus2 BS_TARGET, STATUS2_CONFUSION, BattleScript_SkyDropFlyingAlreadyConfused
-	jumpifstatus2 BS_TARGET, STATUS2_LOCK_CONFUSE, BattleScript_SkyDropFlyingConfuseLock
+	jumpifvolatile BS_TARGET, VOLATILE_CONFUSION, BattleScript_SkyDropFlyingAlreadyConfused
+	jumpifvolatile BS_TARGET, VOLATILE_LOCK_CONFUSE, BattleScript_SkyDropFlyingConfuseLock
 	goto BattleScript_MoveEnd
 BattleScript_SkyDropChangedTarget:
 	pause B_WAIT_TIME_SHORT
@@ -839,8 +839,8 @@ BattleScript_SkyDropChangedTarget:
 BattleScript_SkyDropFlyingConfuseLock:
 	seteffectprimary MOVE_EFFECT_CONFUSION
 BattleScript_SkyDropFlyingAlreadyConfused:
-	clearstatus2 BS_TARGET, STATUS2_LOCK_CONFUSE
-	jumpifstatus2 BS_TARGET, STATUS2_CONFUSION, BattleScript_MoveEnd
+	clearvolatile BS_TARGET, VOLATILE_LOCK_CONFUSE
+	jumpifvolatile BS_TARGET, VOLATILE_CONFUSION, BattleScript_MoveEnd
 	setbyte BS_ATTACKER, BS_TARGET
 	goto BattleScript_ThrashConfuses
 
@@ -1031,7 +1031,7 @@ BattleScript_EffectNoRetreat::
 	attackanimation
 	waitanimation
 	call BattleScript_AllStatsUp
-	jumpifstatus2 BS_TARGET, STATUS2_ESCAPE_PREVENTION, BattleScript_MoveEnd
+	jumpifvolatile BS_TARGET, VOLATILE_ESCAPE_PREVENTION, BattleScript_MoveEnd
 	seteffectprimary MOVE_EFFECT_PREVENT_ESCAPE | MOVE_EFFECT_AFFECTS_USER
 	printstring STRINGID_CANTESCAPEDUETOUSEDMOVE
 	waitmessage B_WAIT_TIME_LONG
@@ -1198,13 +1198,6 @@ BattleScript_JungleHealingTryRestoreAlly:
 	jumpifnoally BS_TARGET, BattleScript_MoveEnd
 	setallytonexttarget JungleHealing_RestoreTargetHealth
 	goto BattleScript_MoveEnd
-
-BattleScript_EffectRelicSong::
-	call BattleScript_EffectHit_Ret
-	tryfaintmon BS_TARGET
-	moveendall
-	tryrelicsong
-	end
 
 BattleScript_EffectAllySwitch::
 	attackcanceler
@@ -1464,7 +1457,7 @@ BattleScript_EffectPowder::
 	accuracycheck BattleScript_PrintMoveMissed, NO_ACC_CALC_CHECK_LOCK_ON
 	attackstring
 	ppreduce
-	jumpifstatus2 BS_TARGET, STATUS2_POWDER, BattleScript_ButItFailed
+	jumpifvolatile BS_TARGET, VOLATILE_POWDER, BattleScript_ButItFailed
 	setpowder BS_TARGET
 	attackanimation
 	waitanimation
@@ -1582,7 +1575,7 @@ BattleScript_EffectGearUpEnd:
 BattleScript_EffectAcupressure::
 	attackcanceler
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_EffectAcupressureTry
-	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_PrintMoveMissed
+	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_PrintMoveMissed
 BattleScript_EffectAcupressureTry:
 	attackstring
 	ppreduce
@@ -3290,7 +3283,7 @@ BattleScript_StatDownEnd::
 BattleScript_MirrorArmorReflect::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
-	jumpifstatus2 BS_ATTACKER, STATUS2_SUBSTITUTE, BattleScript_MirrorArmorDoesntAffect
+	jumpifvolatile BS_ATTACKER, VOLATILE_SUBSTITUTE, BattleScript_MirrorArmorDoesntAffect
 BattleScript_MirrorArmorReflectStatLoss:
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_MIRROR_ARMOR | STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_MirrorArmorReflectEnd
 	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_MirrorArmorReflectAnim
@@ -3346,7 +3339,6 @@ BattleScript_EffectBide::
 	ppreduce
 	attackanimation
 	waitanimation
-	orword gHitMarker, HITMARKER_CHARGING
 	setbide
 	goto BattleScript_MoveEnd
 
@@ -3518,7 +3510,8 @@ BattleScript_EffectFocusEnergy::
 	attackcanceler
 	attackstring
 	ppreduce
-	jumpifstatus2 BS_ATTACKER, STATUS2_FOCUS_ENERGY_ANY, BattleScript_ButItFailed
+	jumpifvolatile BS_ATTACKER, VOLATILE_DRAGON_CHEER, BattleScript_ButItFailed
+	jumpifvolatile BS_ATTACKER, VOLATILE_FOCUS_ENERGY, BattleScript_ButItFailed
 	setfocusenergy BS_TARGET
 	attackanimation
 	waitanimation
@@ -3532,7 +3525,7 @@ BattleScript_EffectConfuse::
 	ppreduce
 	jumpifability BS_TARGET, ABILITY_OWN_TEMPO, BattleScript_OwnTempoPrevents
 	jumpifsubstituteblocks BattleScript_ButItFailed
-	jumpifstatus2 BS_TARGET, STATUS2_CONFUSION, BattleScript_AlreadyConfused
+	jumpifvolatile BS_TARGET, VOLATILE_CONFUSION, BattleScript_AlreadyConfused
 	jumpifterrainaffected BS_TARGET, STATUS_FIELD_MISTY_TERRAIN, BattleScript_MistyTerrainPrevents
 	accuracycheck BattleScript_ButItFailed, ACC_CURR_MOVE
 	jumpifsafeguard BattleScript_SafeguardProtected
@@ -3660,7 +3653,7 @@ BattleScript_PowerHerbActivation:
 	return
 
 BattleScript_EffectTwoTurnsAttack::
-	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
+	jumpifvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
 	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
 	tryfiretwoturnmovewithoutcharging BS_ATTACKER, BattleScript_EffectHit @ e.g. Solar Beam
 	call BattleScript_FirstChargingTurn
@@ -3669,7 +3662,7 @@ BattleScript_EffectTwoTurnsAttack::
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectGeomancy::
-	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_GeomancySecondTurn
+	jumpifvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS, BattleScript_GeomancySecondTurn
 	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_GeomancySecondTurn
 	call BattleScript_FirstChargingTurn
 	jumpifnoholdeffect BS_ATTACKER, HOLD_EFFECT_POWER_HERB, BattleScript_MoveEnd
@@ -3677,7 +3670,7 @@ BattleScript_EffectGeomancy::
 BattleScript_GeomancySecondTurn:
 	attackcanceler
 	setbyte sB_ANIM_TURN, 1
-	clearstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS
+	clearvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS
 	orword gHitMarker, HITMARKER_NO_PPDEDUCT
 	attackstring
 	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_SPATK, MAX_STAT_STAGE, BattleScript_GeomancyDoMoveAnim
@@ -3722,7 +3715,6 @@ BattleScript_FirstChargingTurn::
 	ppreduce
 BattleScript_FirstChargingTurnAfterAttackString:
 	setsemiinvulnerablebit @ only for moves with EFFECT_SEMI_INVULNERABLE/EFFECT_SKY_DROP
-	orword gHitMarker, HITMARKER_CHARGING
 	seteffectprimary MOVE_EFFECT_CHARGING | MOVE_EFFECT_AFFECTS_USER
 	twoturnmoveschargestringandanimation
 	setadditionaleffects @ only onChargeTurnOnly effects will work here
@@ -3749,7 +3741,7 @@ BattleScript_TwoTurnMovesSecondTurn::
 BattleScript_TwoTurnMovesSecondTurnRet:
 	setbyte sB_ANIM_TURN, 1
 	setbyte sB_ANIM_TARGETS_HIT, 0
-	clearstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS
+	clearvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS
 	clearsemiinvulnerablebit @ only for moves with EFFECT_SEMI_INVULNERABLE/EFFECT_SKY_DROP
 	return
 
@@ -3758,7 +3750,7 @@ BattleScript_EffectSubstitute::
 	ppreduce
 	attackstring
 	waitstate
-	jumpifstatus2 BS_ATTACKER, STATUS2_SUBSTITUTE, BattleScript_AlreadyHasSubstitute
+	jumpifvolatile BS_ATTACKER, VOLATILE_SUBSTITUTE, BattleScript_AlreadyHasSubstitute
 	setsubstitute
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_SUBSTITUTE_FAILED, BattleScript_SubstituteString
 	orword gHitMarker, HITMARKER_PASSIVE_DAMAGE
@@ -3789,7 +3781,7 @@ BattleScript_EffectRage::
 	seteffectprimary MOVE_EFFECT_RAGE
 	goto BattleScript_HitFromAtkString
 BattleScript_RageMiss::
-	clearstatus2 BS_ATTACKER, STATUS2_RAGE
+	clearvolatile BS_ATTACKER, VOLATILE_RAGE
 	goto BattleScript_PrintMoveMissed
 
 BattleScript_EffectMimic::
@@ -4056,7 +4048,7 @@ BattleScript_EffectMeanLook::
 	attackstring
 	ppreduce
 	accuracycheck BattleScript_ButItFailed, NO_ACC_CALC_CHECK_LOCK_ON
-	jumpifstatus2 BS_TARGET, STATUS2_ESCAPE_PREVENTION, BattleScript_ButItFailed
+	jumpifvolatile BS_TARGET, VOLATILE_ESCAPE_PREVENTION, BattleScript_ButItFailed
 	jumpifsubstituteblocks BattleScript_ButItFailed
 .if B_GHOSTS_ESCAPE >= GEN_6
 	jumpiftype BS_TARGET, TYPE_NEW_NETHER, BattleScript_ButItFailed
@@ -4073,7 +4065,7 @@ BattleScript_EffectNightmare::
 	attackstring
 	ppreduce
 	jumpifsubstituteblocks BattleScript_ButItFailed
-	jumpifstatus2 BS_TARGET, STATUS2_NIGHTMARE, BattleScript_ButItFailed
+	jumpifvolatile BS_TARGET, VOLATILE_NIGHTMARE, BattleScript_ButItFailed
 	jumpifstatus BS_TARGET, STATUS1_SLEEP, BattleScript_NightmareWorked
 	jumpifability BS_TARGET, ABILITY_COMATOSE, BattleScript_NightmareWorked
 	goto BattleScript_ButItFailed
@@ -4185,7 +4177,7 @@ BattleScript_EffectForesight::
 	attackstring
 	ppreduce
 	accuracycheck BattleScript_ButItFailed, NO_ACC_CALC_CHECK_LOCK_ON
-	jumpifstatus2 BS_TARGET, STATUS2_FORESIGHT, BattleScript_ButItFailed
+	jumpifvolatile BS_TARGET, VOLATILE_FORESIGHT, BattleScript_ButItFailed
 	setforesight
 BattleScript_IdentifiedFoe:
 	attackanimation
@@ -4236,7 +4228,7 @@ BattleScript_EffectSandstorm::
 BattleScript_EffectRollout::
 	attackcanceler
 	attackstring
-	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_RolloutCheckAccuracy
+	jumpifvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS, BattleScript_RolloutCheckAccuracy
 	ppreduce
 BattleScript_RolloutCheckAccuracy::
 	accuracycheck BattleScript_RolloutHit, ACC_CURR_MOVE
@@ -4662,7 +4654,7 @@ BattleScript_EffectUproar::
 	attackcanceler
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
-	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_UproarHit
+	jumpifvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS, BattleScript_UproarHit
 	ppreduce
 BattleScript_UproarHit::
 	goto BattleScript_HitFromCritCalc
@@ -4822,7 +4814,7 @@ BattleScript_EffectNonVolatileStatus::
 	accuracycheck BattleScript_ButItFailed, ACC_CURR_MOVE
 	attackanimation
 	waitanimation
-	setnonvolatilestatus
+	setnonvolatilestatus TRIGGER_ON_MOVE
 	resultmessage
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
@@ -5935,7 +5927,7 @@ BattleScript_BideStoringEnergy::
 
 BattleScript_BideAttack::
 	attackcanceler
-	clearstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS
+	clearvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS
 	printstring STRINGID_PKMNUNLEASHEDENERGY
 	waitmessage B_WAIT_TIME_LONG
 	accuracycheck BattleScript_MoveMissed, ACC_CURR_MOVE
@@ -5958,7 +5950,7 @@ BattleScript_BideAttack::
 
 BattleScript_BideNoEnergyToAttack::
 	attackcanceler
-	clearstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS
+	clearvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS
 	printstring STRINGID_PKMNUNLEASHEDENERGY
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_ButItFailed
@@ -7822,7 +7814,7 @@ BattleScript_IntimidateLoop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_IntimidateLoopIncrement
 	jumpiftargetally BattleScript_IntimidateLoopIncrement
 	jumpifabsent BS_TARGET, BattleScript_IntimidateLoopIncrement
-	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_IntimidateLoopIncrement
+	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_IntimidateLoopIncrement
 	jumpifintimidateabilityprevented
 BattleScript_IntimidateEffect:
 	copybyte sBATTLER, gBattlerAttacker
@@ -7893,7 +7885,7 @@ BattleScript_SupersweetSyrupLoop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_SupersweetSyrupLoopIncrement
 	jumpiftargetally BattleScript_SupersweetSyrupLoopIncrement
 	jumpifabsent BS_TARGET, BattleScript_SupersweetSyrupLoopIncrement
-	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_SupersweetSyrupLoopIncrement
+	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_SupersweetSyrupLoopIncrement
 BattleScript_SupersweetSyrupEffect:
 	copybyte sBATTLER, gBattlerAttacker
 	setstatchanger STAT_EVASION, 1, TRUE
@@ -8660,9 +8652,9 @@ BattleScript_KingsShieldEffect::
 	return
 
 BattleScript_BanefulBunkerEffect::
-	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_STATUS_ABILITY_EFFECT | HITMARKER_PASSIVE_DAMAGE
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
 	clearmoveresultflags MOVE_RESULT_NO_EFFECT
-	seteffectsecondary
+	setnonvolatilestatus TRIGGER_ON_ATTACKER
 	setmoveresultflags MOVE_RESULT_MISSED
 	return
 
@@ -8685,7 +8677,7 @@ BattleScript_GooeyActivates::
 BattleScript_AbilityStatusEffect::
 	waitstate
 	call BattleScript_AbilityPopUp
-	seteffectsecondary
+	setnonvolatilestatus TRIGGER_ON_ABILITY
 	return
 
 BattleScript_BattleBondActivatesOnMoveEndAttacker::
@@ -8733,7 +8725,7 @@ BattleScript_DancerActivates::
 BattleScript_SynchronizeActivates::
 	waitstate
 	call BattleScript_AbilityPopUp
-	seteffectprimary
+	setnonvolatilestatus TRIGGER_ON_ABILITY
 	return
 
 BattleScript_NoItemSteal::

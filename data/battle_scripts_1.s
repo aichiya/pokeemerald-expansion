@@ -73,35 +73,33 @@ BattleScript_UltraInstinctTryAcc:
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
 	attackanimation
 	waitanimation
-	setbyte sSTAT_ANIM_PLAYED, FALSE
-	playstatchangeanimation BS_ATTACKER, BIT_ATK | BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF | BIT_ACC | BIT_EVASION, STAT_CHANGE_BY_TWO
 	setstatchanger STAT_ACC, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryEvasion
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryEvasion, BIT_ATK | BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF | BIT_EVASION
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTryEvasion:
 	setstatchanger STAT_EVASION, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryAttack
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryAttack, BIT_ATK | BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTryAttack:
 	setstatchanger STAT_ATK, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryDefense
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryDefense, BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTryDefense:
     setstatchanger STAT_DEF, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpAttack
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpAttack, BIT_SPEED | BIT_SPATK | BIT_SPDEF
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTrySpAttack:
     setstatchanger STAT_SPATK, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpDefense
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpDefense, BIT_SPEED | BIT_SPDEF
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTrySpDefense:
     setstatchanger STAT_SPDEF, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpeed
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpeed, BIT_SPEED
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTrySpeed:
@@ -7332,10 +7330,8 @@ BattleScript_LeechSeedOnAbilityPureWhiteActivates::
 	end2
 
 BattleScript_ShichininMisakiActivates::
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_ShichininMisakiActivatesEnd
 	call BattleScript_AbilityPopUp
-	setgraphicalstatchangevalues
-	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_ShichininMisakiActivatesEnd
 	printstring STRINGID_PKMNRAISEDEVASION
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_ShichininMisakiActivatesEnd:
@@ -7345,8 +7341,6 @@ BattleScript_UltraEgoActivates::
 	call BattleScript_AbilityPopUp
 BattleScript_UltraEgoActivatesNoPopUp:
 	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, NULL
-	setgraphicalstatchangevalues
-	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	printstring STRINGID_TARGETSSTATWASMAXEDOUT
 	waitmessage B_WAIT_TIME_LONG
 	return
@@ -9993,15 +9987,17 @@ BattleScript_ManaDisturptorEffect:
 	copybyte sBATTLER, gBattlerAttacker
 	setstatchanger STAT_SPATK, 1, TRUE
 	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_ManaDisturptorLoopIncrement
-	setgraphicalstatchangevalues
 	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_ManaDisturptorContrary
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_ManaDisturptorWontDecrease
-	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	printstring STRINGID_PKMNCUTSSPATTACKWITH
 BattleScript_ManaDisturptorEffect_WaitString:
 	waitmessage B_WAIT_TIME_LONG
+	saveattacker
+	savetarget
 	copybyte sBATTLER, gBattlerTarget
 	call BattleScript_TryManaDisturptorHoldEffects
+	restoreattacker
+	restoretarget
 BattleScript_ManaDisturptorLoopIncrement:
 	addbyte gBattlerTarget, 1
 	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_ManaDisturptorLoop
@@ -10009,6 +10005,7 @@ BattleScript_ManaDisturptorLoopIncrement:
 	destroyabilitypopup
 	restoretarget
 	pause B_WAIT_TIME_MED
+	tryintimidatejectpack
 	end3
 
 BattleScript_ManaDisturptorPrevented:
@@ -10044,10 +10041,8 @@ BattleScript_TryManaDisturptorHoldEffects:
 	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryManaDisturptorHoldEffectsRet
 	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPEED, 12, BattleScript_TryManaDisturptorHoldEffectsRet
 	setstatchanger STAT_SPEED, 1, FALSE
-	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryManaDisturptorHoldEffectsRet
 	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
-	setgraphicalstatchangevalues
-	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryManaDisturptorHoldEffectsRet
 	copybyte sBATTLER, gBattlerTarget
 	setlastuseditem BS_TARGET
 	printstring STRINGID_USINGITEMSTATOFPKMNROSE
@@ -10188,15 +10183,17 @@ BattleScript_MisfortuneAuraEffect:
 	copybyte sBATTLER, gBattlerAttacker
 	setstatchanger STAT_ACC, 2, TRUE
 	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_MisfortuneAuraLoopIncrement
-	setgraphicalstatchangevalues
 	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_MisfortuneAuraContrary
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_MisfortuneAuraWontDecrease
-	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	printstring STRINGID_PKMNCUTSACCWITH
 BattleScript_MisfortuneAuraEffect_WaitString:
 	waitmessage B_WAIT_TIME_LONG
+	saveattacker
+	savetarget
 	copybyte sBATTLER, gBattlerTarget
 	call BattleScript_TryMisfortuneAuraHoldEffects
+	restoreattacker
+	restoretarget
 BattleScript_MisfortuneAuraLoopIncrement:
 	addbyte gBattlerTarget, 1
 	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_MisfortuneAuraLoop
@@ -10204,6 +10201,7 @@ BattleScript_MisfortuneAuraLoopIncrement:
 	destroyabilitypopup
 	restoretarget
 	pause B_WAIT_TIME_MED
+	tryintimidatejectpack
 	end3
 
 BattleScript_MisfortuneAuraPrevented:
@@ -10239,10 +10237,8 @@ BattleScript_TryMisfortuneAuraHoldEffects:
 	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryMisfortuneAuraHoldEffectsRet
 	jumpifstat BS_TARGET, CMP_EQUAL, STAT_ACC, 12, BattleScript_TryMisfortuneAuraHoldEffectsRet
 	setstatchanger STAT_ACC, 2, FALSE
-	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryMisfortuneAuraHoldEffectsRet
 	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
-	setgraphicalstatchangevalues
-	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryMisfortuneAuraHoldEffectsRet
 	copybyte sBATTLER, gBattlerTarget
 	setlastuseditem BS_TARGET
 	printstring STRINGID_USINGITEMSTATOFPKMNROSE
@@ -10254,8 +10250,6 @@ BattleScript_TryMisfortuneAuraHoldEffectsRet:
 BattleScript_FloraElvisAtkBoostActivates::
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_FloraElvisAtkBoostActivatesEnd
 	call BattleScript_AbilityPopUp
-	setgraphicalstatchangevalues
-	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	printstring STRINGID_PKMNRAISEDATTACK
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_FloraElvisAtkBoostActivatesEnd:

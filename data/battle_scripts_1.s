@@ -74,37 +74,37 @@ BattleScript_UltraInstinctTryAcc:
 	attackanimation
 	waitanimation
 	setstatchanger STAT_ACC, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryEvasion, BIT_ATK | BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF | BIT_EVASION
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryEvasion, BIT_ATK | BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF | BIT_EVASION
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTryEvasion:
 	setstatchanger STAT_EVASION, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryAttack, BIT_ATK | BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryAttack, BIT_ATK | BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTryAttack:
 	setstatchanger STAT_ATK, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryDefense, BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTryDefense, BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTryDefense:
     setstatchanger STAT_DEF, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpAttack, BIT_SPEED | BIT_SPATK | BIT_SPDEF
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpAttack, BIT_SPEED | BIT_SPATK | BIT_SPDEF
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTrySpAttack:
     setstatchanger STAT_SPATK, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpDefense, BIT_SPEED | BIT_SPDEF
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpDefense, BIT_SPEED | BIT_SPDEF
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTrySpDefense:
     setstatchanger STAT_SPDEF, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpeed, BIT_SPEED
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctTrySpeed, BIT_SPEED
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctTrySpeed:
     setstatchanger STAT_SPEED, MAX_STAT_STAGE, FALSE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctEnd
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraInstinctEnd
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_UltraInstinctEnd:
@@ -7330,7 +7330,7 @@ BattleScript_LeechSeedOnAbilityPureWhiteActivates::
 
 BattleScript_ShichininMisakiActivates::
 	call BattleScript_AbilityPopUp
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_ShichininMisakiActivatesEnd
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_ShichininMisakiActivatesEnd
 	printstring STRINGID_PKMNRAISEDEVASION
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_ShichininMisakiActivatesEnd:
@@ -7339,7 +7339,7 @@ BattleScript_ShichininMisakiActivatesEnd:
 BattleScript_UltraEgoActivates::
 	call BattleScript_AbilityPopUp
 BattleScript_UltraEgoActivatesNoPopUp:
-	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN, NULL
+	statbuffchange BS_ATTACKER, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, NULL
 	printstring STRINGID_TARGETSSTATWASMAXEDOUT
 	waitmessage B_WAIT_TIME_LONG
 	return
@@ -9985,7 +9985,7 @@ BattleScript_ManaDisturptorLoop:
 BattleScript_ManaDisturptorEffect:
 	copybyte sBATTLER, gBattlerAttacker
 	setstatchanger STAT_SPATK, 1, TRUE
-	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_ManaDisturptorLoopIncrement
+	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_ManaDisturptorLoopIncrement
 	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_ManaDisturptorContrary
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_ManaDisturptorWontDecrease
 	printstring STRINGID_PKMNCUTSSPATTACKWITH
@@ -10004,7 +10004,7 @@ BattleScript_ManaDisturptorLoopIncrement:
 	destroyabilitypopup
 	restoretarget
 	pause B_WAIT_TIME_MED
-	tryintimidatejectpack
+	tryintimidateejectpack
 	end3
 
 BattleScript_ManaDisturptorPrevented:
@@ -10041,7 +10041,7 @@ BattleScript_TryManaDisturptorHoldEffects:
 	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPEED, 12, BattleScript_TryManaDisturptorHoldEffectsRet
 	setstatchanger STAT_SPEED, 1, FALSE
 	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
-	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryManaDisturptorHoldEffectsRet
+	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryManaDisturptorHoldEffectsRet
 	copybyte sBATTLER, gBattlerTarget
 	setlastuseditem BS_TARGET
 	printstring STRINGID_USINGITEMSTATOFPKMNROSE
@@ -10180,8 +10180,8 @@ BattleScript_MisfortuneAuraLoop:
 @	jumpifability BS_TARGET, ABILITY_GUARD_DOG, BattleScript_MisfortuneAuraInReverse
 BattleScript_MisfortuneAuraEffect:
 	copybyte sBATTLER, gBattlerAttacker
-	setstatchanger STAT_ACC, 2, TRUE
-	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_MisfortuneAuraLoopIncrement
+	setstatchanger STAT_ACC, 1, TRUE
+	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_MisfortuneAuraLoopIncrement
 	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_MisfortuneAuraContrary
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_MisfortuneAuraWontDecrease
 	printstring STRINGID_PKMNCUTSACCWITH
@@ -10200,7 +10200,7 @@ BattleScript_MisfortuneAuraLoopIncrement:
 	destroyabilitypopup
 	restoretarget
 	pause B_WAIT_TIME_MED
-	tryintimidatejectpack
+	tryintimidateejectpack
 	end3
 
 BattleScript_MisfortuneAuraPrevented:
@@ -10227,7 +10227,7 @@ BattleScript_MisfortuneAuraInReverse:
 	copybyte sBATTLER, gBattlerTarget
 	call BattleScript_AbilityPopUpTarget
 	pause B_WAIT_TIME_SHORT
-	modifybattlerstatstage BS_TARGET, STAT_ACC, INCREASE, 2, BattleScript_MisfortuneAuraLoopIncrement, ANIM_ON
+	modifybattlerstatstage BS_TARGET, STAT_ACC, INCREASE, 1, BattleScript_MisfortuneAuraLoopIncrement, ANIM_ON
 	call BattleScript_TryMisfortuneAuraHoldEffects
 	goto BattleScript_MisfortuneAuraLoopIncrement
 
@@ -10235,9 +10235,9 @@ BattleScript_TryMisfortuneAuraHoldEffects:
 	itemstatchangeeffects BS_TARGET
 	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryMisfortuneAuraHoldEffectsRet
 	jumpifstat BS_TARGET, CMP_EQUAL, STAT_ACC, 12, BattleScript_TryMisfortuneAuraHoldEffectsRet
-	setstatchanger STAT_ACC, 2, FALSE
+	setstatchanger STAT_ACC, 1, FALSE
 	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
-	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryMisfortuneAuraHoldEffectsRet
+	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryMisfortuneAuraHoldEffectsRet
 	copybyte sBATTLER, gBattlerTarget
 	setlastuseditem BS_TARGET
 	printstring STRINGID_USINGITEMSTATOFPKMNROSE
@@ -10247,7 +10247,7 @@ BattleScript_TryMisfortuneAuraHoldEffectsRet:
 	return
 
 BattleScript_FloraElvisAtkBoostActivates::
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_FloraElvisAtkBoostActivatesEnd
+	statbuffchange BS_ATTACKER, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_FloraElvisAtkBoostActivatesEnd
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_PKMNRAISEDATTACK
 	waitmessage B_WAIT_TIME_LONG

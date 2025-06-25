@@ -6631,6 +6631,20 @@ BattleScript_WishMegaEvolution::
 	printstring STRINGID_FERVENTWISHREACHED
 	goto BattleScript_MegaEvolutionAfterString
 
+BattleScript_WishMegaEvolutionIllya::
+	flushtextbox
+	trytrainerslidemegaevolutionmsg
+	printstring STRINGID_FERVENTWISHREACHED
+	waitmessage B_WAIT_TIME_LONG
+	handlemegaevo BS_SCRIPTING, 0
+	playanimation BS_SCRIPTING, B_ANIM_MEGA_EVOLUTION
+	waitanimation
+	handlemegaevo BS_SCRIPTING, 1
+	printstring STRINGID_TRANSFORMEDINTOZWEIFORM
+	waitmessage B_WAIT_TIME_LONG
+	switchinabilities BS_SCRIPTING
+	end3
+
 BattleScript_PrimalReversion::
 	flushtextbox
 	handleprimalreversion BS_SCRIPTING, 0
@@ -10264,3 +10278,18 @@ BattleScript_FloraElvisSafeguardActivates::
 BattleScript_LifeForceActivates::
 	call BattleScript_AbilityHpHeal
 	end3
+
+BattleScript_SpAtkSpDefDown::
+	setstatchanger STAT_SPATK, 1, TRUE
+	statbuffchange BS_ATTACKER, STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_SpAtkSpDefDownTrySpDef, BIT_SPDEF
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_DefSpDefDownTrySpDef
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_SpAtkSpDefDownTrySpDef::
+	setstatchanger STAT_SPDEF, 1, TRUE
+	statbuffchange BS_ATTACKER, STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_SpAtkSpDefDownRet
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_SpAtkSpDefDownRet
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_SpAtkSpDefDownRet::
+	return

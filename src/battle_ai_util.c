@@ -1038,6 +1038,7 @@ static bool32 AI_IsMoveEffectInMinus(u32 battlerAtk, u32 battlerDef, u32 move, s
                 case MOVE_EFFECT_ACC_MINUS_2:
                 case MOVE_EFFECT_V_CREATE:
                 case MOVE_EFFECT_ATK_DEF_DOWN:
+                case MOVE_EFFECT_SPATK_SPDEF_DOWN:
                 case MOVE_EFFECT_DEF_SPDEF_DOWN:
                     if ((additionalEffect->self && abilityAtk != ABILITY_CONTRARY)
                         || (noOfHitsToKo != 1 && abilityDef == ABILITY_CONTRARY && !DoesBattlerIgnoreAbilityChecks(battlerAtk, abilityAtk, move)))
@@ -2586,6 +2587,7 @@ bool32 IsSelfStatLoweringEffect(enum BattleMoveEffects effect)
     case MOVE_EFFECT_V_CREATE:
     case MOVE_EFFECT_ATK_DEF_DOWN:
     case MOVE_EFFECT_DEF_SPDEF_DOWN:
+    case MOVE_EFFECT_SPATK_SPDEF_DOWN:
         return TRUE;
     default:
         return FALSE;

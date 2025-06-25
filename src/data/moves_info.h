@@ -21763,6 +21763,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_PsychicTerrain,
     },
 
+    [MOVE_QUINTETT_FEUER] =  // Edited
+    {
+        .name = COMPOUND_STRING("Quintett Feuer"),
+        .description = COMPOUND_STRING(
+            "Multi-type magical attack,\n"
+            "but lowers stats."),
+        .effect = EFFECT_QUINTETT_FEUER,
+        .power = 140,
+        .type = TYPE_NEW_REASON,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SPATK_SPDEF_DOWN,
+            .self = TRUE,
+        }),
+        .contestEffect = CONTEST_EFFECT_USER_MORE_EASILY_STARTLED,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_CALM_MIND},
+        .battleAnimScript = gBattleAnimMove_QuintettFeuer,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =  // Edited
     {

@@ -10105,6 +10105,15 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         mod = UQ_4_12(1.0);
     if (GetMoveEffect(ctx->move) == EFFECT_SUPER_EFFECTIVE_ON_ARG && defType == GetMoveArgType(ctx->move))
         mod = UQ_4_12(2.0);
+    if (GetMoveEffect(ctx->move) == EFFECT_QUINTETT_FEUER && 
+        (defType == TYPE_NEW_EARTH
+        || defType == TYPE_NEW_ELECTRIC
+        || defType == TYPE_NEW_ICE
+        || defType == TYPE_NEW_MIASMA
+        || defType == TYPE_NEW_NATURE
+        || defType == TYPE_NEW_WATER
+        || defType == TYPE_NEW_WIND))
+        mod = UQ_4_12(2.0);
     if (GetMoveEffect(ctx->move) == EFFECT_DEFECTIVE_MIRACLE && defType == TYPE_NEW_ILLUSION && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
     if (GetMoveEffect(ctx->move) == EFFECT_DEFECTIVE_MIRACLE && (defType == TYPE_NEW_DARK || defType == TYPE_NEW_DIVINE))
@@ -10546,7 +10555,12 @@ void ActivateMegaEvolution(u32 battler)
     gLastUsedItem = gBattleMons[battler].item;
     SetActiveGimmick(battler, GIMMICK_MEGA);
     if (GetBattleFormChangeTargetSpecies(battler, FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE) != gBattleMons[battler].species)
-        BattleScriptExecute(BattleScript_WishMegaEvolution);
+    {
+        if (gBattleMons[battler].species == SPECIES_RAYQUAZA || gBattleMons[battler].species == SPECIES_RAYQUAZA_MEGA)
+            BattleScriptExecute(BattleScript_WishMegaEvolutionIllya);
+        else
+            BattleScriptExecute(BattleScript_WishMegaEvolution);
+    }
     else
         BattleScriptExecute(BattleScript_MegaEvolution);
 }

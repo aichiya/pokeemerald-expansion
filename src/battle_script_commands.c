@@ -5035,6 +5035,13 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
             gBattlescriptCurrInstr = BattleScript_DefSpDefDown;
         }
         break;
+    case MOVE_EFFECT_SPATK_SPDEF_DOWN: // Quintett Feuer
+        if (!NoAliveMonsForEitherParty())
+        {
+            BattleScriptPush(gBattlescriptCurrInstr + 1);
+            gBattlescriptCurrInstr = BattleScript_SpAtkSpDefDown;
+        }
+        break;
     case MOVE_EFFECT_RECOIL_HP_25: // Struggle
         gBattleStruct->moveDamage[gEffectBattler] = (gBattleMons[gEffectBattler].maxHP) / 4;
         if (gBattleStruct->moveDamage[gEffectBattler] == 0)

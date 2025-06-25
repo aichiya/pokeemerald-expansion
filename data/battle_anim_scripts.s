@@ -20414,6 +20414,125 @@ gBattleAnimMove_DarknessTerrain::
 	waitforvisualfinish
 	end
 
+gBattleAnimMove_QuintettFeuer::
+	loadspritegfx ANIM_TAG_ZYGARDE_HEXES @Hex
+	loadspritegfx ANIM_TAG_GUARD_RING @safeguard
+	loadspritegfx ANIM_TAG_PAW_PRINT @yellow color
+	loadspritegfx ANIM_TAG_WHIP_HIT @green color
+	loadspritegfx ANIM_TAG_SWEAT_BEAD @blue color
+	loadspritegfx ANIM_TAG_SMALL_EMBER @dragon claw buff / red color
+	monbg ANIM_ATK_PARTNER
+	setalpha 8, 8
+	loadspritegfx ANIM_TAG_FOCUS_ENERGY @endure buff effect
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 0, 12, RGB_BLACK
+	waitforvisualfinish
+	playsewithpan SE_M_COSMIC_POWER, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 0, 2, 95, 1
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 2, 0, 5, RGB_RED
+	call GeomancyRingBuff
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 2, 0, 5, RGB(0, 22, 0)
+	call GeomancyRingBuff
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 2, 0, 5, RGB(0, 3, 31)
+	call GeomancyRingBuff
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 8, 0, RGB_BLACK
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 2, 5, 0, RGB(0, 3, 31)
+	waitforvisualfinish
+	clearmonbg ANIM_ATK_PARTNER
+	blendoff
+	unloadspritegfx ANIM_TAG_ZYGARDE_HEXES @Hex
+	unloadspritegfx ANIM_TAG_GUARD_RING @safeguard
+	unloadspritegfx ANIM_TAG_PAW_PRINT @yellow color
+	unloadspritegfx ANIM_TAG_WHIP_HIT @green color
+	unloadspritegfx ANIM_TAG_SWEAT_BEAD @blue color
+	unloadspritegfx ANIM_TAG_SMALL_EMBER @dragon claw buff / red color
+	delay 1
+	loadspritegfx ANIM_TAG_HYDRO_PUMP
+	loadspritegfx ANIM_TAG_ROUND_SHADOW
+	loadspritegfx ANIM_TAG_BLUE_STAR
+@	loadspritegfx ANIM_TAG_PURPLE_DRAKE
+	loadspritegfx ANIM_TAG_EXPLOSION
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_HYDRO_PUMP, 0, 12, 12, RGB(31, 4, 10)    @Pinkish Red
+@	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_ROUND_SHADOW, 0, 13, 13, RGB(31, 4, 10)  @Pinkish Red
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_EXPLOSION, 0, 12, 12, RGB(11, 1, 22)
+	fadetobgfromset BG_SPACIAL_REND_ON_OPPONENT BG_SPACIAL_REND_ON_PLAYER BG_SPACIAL_REND_ON_OPPONENT
+	playsewithpan SE_M_FLY, SOUND_PAN_ATTACKER
+	invisible ANIM_ATTACKER
+@	createsprite gDevastatingDrakeDrakeUpSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0x04E0, 36, 21, 1, ANIM_ATTACKER
+    createsprite gFlyBallUpSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 13, 336
+	waitforvisualfinish
+	delay 10
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_ROUND_SHADOW, 0, 13, 13, RGB(31, 4, 10)  @Pinkish Red
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_SOLAR_BEAM, 0xf0, 0xffc0, SOUND_PAN_TARGET, 0x1, 0xf, 0x0, 0x5
+	call OblivionWingBeam
+	call OblivionWingBeam
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 50, 1
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 4, 0, 12, RGB(31, 4, 10) @Pinkish Red
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	call OblivionWingBeam
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 50, 1
+	call QuintettFeuerGeyser
+	delay 5
+	call QuintettFeuerGeyser
+	delay 5
+	call QuintettFeuerGeyser
+	delay 5
+	visible ANIM_ATTACKER
+	waitforvisualfinish
+	restorebg
+	waitbgfadein
+	blendoff
+	end
+QuintettFeuerGeyser:
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, 3, 5, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, -11, -15, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, 8, -5, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, -6, 18, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, 3, -11, ANIM_TARGET, 0
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, -11, -31, ANIM_TARGET, 0
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, 8, -21, ANIM_TARGET, 0
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, -6, 2, ANIM_TARGET, 0
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, 0, -11, ANIM_TARGET, 0
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, 3, -27, ANIM_TARGET, 0
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, -11, -47, ANIM_TARGET, 0
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, 8, -47, ANIM_TARGET, 0
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, -6, -14, ANIM_TARGET, 0
+	delay 0
+	createsprite gDevastatingDrakeExplosionSpriteTemplate, ANIM_TARGET, 4, 0, -27, ANIM_TARGET, 0
+	delay 0
+	return
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
 gBattleAnimMove_MirrorMove::

@@ -920,6 +920,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_ADVENTLYCORISTRAPPED]                 = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} continously hurts {B_DEF_NAME_WITH_PREFIX2}!"),
     [STRINGID_TERRAINBECOMESDARKNESS]               = COMPOUND_STRING("Darkness appeared to cover the battlefield!"),
     [STRINGID_DARKNESSTERRAINENDS]                  = COMPOUND_STRING("The darkness disappeared from the battlefield."),
+    [STRINGID_TRANSFORMEDINTOZWEIFORM]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} has transformed into Zwei Form!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

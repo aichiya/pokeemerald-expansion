@@ -734,6 +734,7 @@ TEST("Battle strings fit on the battle message window")
     case STRINGID_PKMNTRANSFORMEDINTO:
     case STRINGID_WILDPKMNFLED:
     case STRINGID_MEGAEVOEVOLVED:
+    case STRINGID_TRANSFORMEDINTOZWEIFORM:
     case STRINGID_PKMNREVIVEDREADYTOFIGHT:
     case STRINGID_ITEMRESTOREDSPECIESHEALTH: // Should probably use nickname instead?
     case STRINGID_ITEMCUREDSPECIESSTATUS: // Should probably use nickname instead?

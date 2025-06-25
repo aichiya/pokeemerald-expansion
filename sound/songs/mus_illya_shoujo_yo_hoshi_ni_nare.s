@@ -2,7 +2,8 @@
 
 	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_grp, voicegroup201
 	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_pri, 0
-	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_rev, 0
+	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_mvl, 70
+	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_rev, reverb_set+50
 	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_key, 0
 
         .section .rodata
@@ -18,7 +19,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_0:
         .byte           VOICE , 48
         .byte           BENDR , 12
         .byte           PAN   , c_v-42
-        .byte           VOL   , 83
+        .byte           VOL   , 83*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W48
         .byte           N04   , Gn3 , v116
         .byte   W06
@@ -425,7 +426,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_0_11:
         .byte                   Dn5 , v056
         .byte   W48
 @ 018   ----------------------------------------
-        .byte           VOL   , 124
+        .byte           VOL   , 124*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           PAN   , c_v+19
         .byte           N23   , Dn5 , v100
         .byte   W24
@@ -590,56 +591,56 @@ mus_illya_shoujo_yo_hoshi_ni_nare_0_28:
         .byte   W60
 @ 043   ----------------------------------------
         .byte   W48
-        .byte           VOL   , 121
+        .byte           VOL   , 121*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   120
+        .byte                   120*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   116
+        .byte                   116*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   112
+        .byte                   112*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   108
+        .byte                   108*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   102
+        .byte                   102*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   96
+        .byte                   96*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   91
+        .byte                   91*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
 @ 044   ----------------------------------------
-        .byte                   84
+        .byte                   84*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   79
+        .byte                   79*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   72
+        .byte                   72*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   66
+        .byte                   66*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   55
+        .byte                   55*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   43
+        .byte                   43*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   30
+        .byte                   30*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   20
+        .byte                   20*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W05
         .byte           EOT
         .byte   W01
-        .byte           VOL   , 15
+        .byte           VOL   , 15*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
-        .byte                   122
+        .byte                   122*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
 @ 045   ----------------------------------------
         .byte   W96
 @ 046   ----------------------------------------
         .byte   W48
-        .byte                   83
+        .byte                   83*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           PAN   , c_v-42
         .byte   GOTO
          .word  mus_illya_shoujo_yo_hoshi_ni_nare_0_LOOP
         .byte   W36
         .byte                   c_v+19
-        .byte           VOL   , 122
+        .byte           VOL   , 122*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   FINE
 
 @****************** Track 1 (Midi-Chn.1) ******************@
@@ -650,7 +651,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_1:
         .byte           VOICE , 48
         .byte           BENDR , 12
         .byte           PAN   , c_v+55
-        .byte           VOL   , 79
+        .byte           VOL   , 79*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W48
         .byte   W03
         .byte           N03   , Gn3 , v048
@@ -1072,7 +1073,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_1_11:
         .byte   W44
         .byte   W01
 @ 018   ----------------------------------------
-        .byte           VOL   , 120
+        .byte           VOL   , 120*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N23   , Fs4 , v072
         .byte   W24
         .byte                   En4
@@ -1213,11 +1214,11 @@ mus_illya_shoujo_yo_hoshi_ni_nare_1_29:
         .byte   W96
 @ 046   ----------------------------------------
         .byte   W48
-        .byte           VOL   , 79
+        .byte           VOL   , 79*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   GOTO
          .word  mus_illya_shoujo_yo_hoshi_ni_nare_1_LOOP
         .byte   W36
-        .byte                   120
+        .byte                   120*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   FINE
 
 @****************** Track 2 (Midi-Chn.2) ******************@
@@ -1226,7 +1227,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2:
         .byte   KEYSH , mus_illya_shoujo_yo_hoshi_ni_nare_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 83
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           BENDR , 12
         .byte   W48
         .byte           N06   , Bn1 , v040
@@ -1336,7 +1337,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_LOOP:
         .byte   W96
 @ 010   ----------------------------------------
         .byte   W48
-        .byte           VOL   , 118
+        .byte           VOL   , 118*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           PAN   , c_v-51
         .byte           N06   , Gn3 , v080
         .byte   W06
@@ -1346,7 +1347,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_LOOP:
         .byte   W06
         .byte                   Dn4
         .byte   W06
-        .byte           VOL   , 122
+        .byte           VOL   , 122*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N06   , Gn3
         .byte   W06
         .byte                   An3
@@ -1357,7 +1358,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_LOOP:
         .byte   W06
 @ 011   ----------------------------------------
 mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
-        .byte           VOL   , 124
+        .byte           VOL   , 124*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           PAN   , c_v-32
         .byte           N06   , Gn3 , v080
         .byte   W06
@@ -1367,7 +1368,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   W06
         .byte                   Dn4
         .byte   W06
-        .byte           VOL   , 122
+        .byte           VOL   , 122*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N06   , Gn3
         .byte   W06
         .byte                   An3
@@ -1376,7 +1377,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   W06
         .byte                   Dn4
         .byte   W06
-        .byte           VOL   , 118
+        .byte           VOL   , 118*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           PAN   , c_v+0
         .byte           N06   , Gn3
         .byte   W06
@@ -1386,7 +1387,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   W06
         .byte                   Dn4
         .byte   W06
-        .byte           VOL   , 112
+        .byte           VOL   , 112*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N06   , Gn3
         .byte   W06
         .byte                   An3
@@ -1397,7 +1398,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   W06
         .byte   PEND
 @ 012   ----------------------------------------
-        .byte           VOL   , 106
+        .byte           VOL   , 106*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           PAN   , c_v+32
         .byte           N06   , Gn3
         .byte   W06
@@ -1485,7 +1486,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   W06
         .byte                   Dn4
         .byte   W06
-        .byte           VOL   , 118
+        .byte           VOL   , 118*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           PAN   , c_v-51
         .byte           N06   , Gn3 , v080
         .byte   W06
@@ -1495,7 +1496,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   W06
         .byte                   Dn4
         .byte   W06
-        .byte           VOL   , 122
+        .byte           VOL   , 122*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N06   , Gn3
         .byte   W06
         .byte                   An3
@@ -1508,7 +1509,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   PATT
          .word  mus_illya_shoujo_yo_hoshi_ni_nare_2_11
 @ 016   ----------------------------------------
-        .byte           VOL   , 106
+        .byte           VOL   , 106*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           PAN   , c_v+32
         .byte           N06   , Gn3 , v080
         .byte   W06
@@ -1518,7 +1519,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   W06
         .byte                   Dn4
         .byte   W06
-        .byte           VOL   , 85
+        .byte           VOL   , 85*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N06   , Gn3
         .byte   W06
         .byte                   An3
@@ -1578,7 +1579,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   W96
 @ 026   ----------------------------------------
         .byte   W48
-        .byte           VOL   , 64
+        .byte           VOL   , 64*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N24   , En3 , v112
         .byte   W24
         .byte           N12   , Fs3
@@ -1591,7 +1592,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   W12
         .byte           N36   , En3
         .byte   W12
-        .byte           VOL   , 86
+        .byte           VOL   , 86*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
         .byte           N48   , Dn3
         .byte   W24
@@ -1601,7 +1602,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte   W12
         .byte                   Dn3
         .byte   W12
-        .byte           VOL   , 105
+        .byte           VOL   , 105*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N24   , En3
         .byte   W24
         .byte           N12   , Fs3
@@ -1617,7 +1618,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte           N32   , An3 , v112 , gtp2
         .byte   W36
 @ 030   ----------------------------------------
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N48   , An4 , v116
         .byte   W14
         .byte           BEND  , c_v+7
@@ -1653,21 +1654,21 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_11:
         .byte           TIE   , Dn4 , v116
         .byte   W48
 @ 033   ----------------------------------------
-        .byte           VOL   , 114
+        .byte           VOL   , 114*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
-        .byte                   100
+        .byte                   100*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
-        .byte                   82
+        .byte                   82*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
-        .byte                   67
+        .byte                   67*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
 @ 034   ----------------------------------------
-        .byte                   49
+        .byte                   49*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
-        .byte                   33
+        .byte                   33*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
         .byte           EOT
-        .byte           VOL   , 64
+        .byte           VOL   , 64*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W48
 @ 035   ----------------------------------------
         .byte   W96
@@ -1726,14 +1727,14 @@ mus_illya_shoujo_yo_hoshi_ni_nare_2_43:
         .byte                   Dn3
         .byte   W36
         .byte           VOICE , 82
-        .byte           VOL   , 127
+        .byte           VOL   , 127*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           PAN   , c_v+0
         .byte   GOTO
          .word  mus_illya_shoujo_yo_hoshi_ni_nare_2_LOOP
         .byte   W36
         .byte           VOICE , 83
         .byte           PAN   , c_v-57
-        .byte           VOL   , 64
+        .byte           VOL   , 64*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           VOICE , 29
         .byte   FINE
 
@@ -1744,7 +1745,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_3:
 @ 000   ----------------------------------------
         .byte           VOICE , 29
         .byte           PAN   , c_v+20
-        .byte           VOL   , 119
+        .byte           VOL   , 119*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           BENDR , 12
         .byte   W48
         .byte           VOICE , 27
@@ -1817,7 +1818,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_3_3:
         .byte           N09   , Gn2 , v084
         .byte   W12
 mus_illya_shoujo_yo_hoshi_ni_nare_3_LOOP:
-        .byte           VOL   , 88
+        .byte           VOL   , 88*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           VOICE , 29
         .byte   W24
         .byte           N24   , Cn4 , v060
@@ -1856,35 +1857,35 @@ mus_illya_shoujo_yo_hoshi_ni_nare_3_9:
         .byte   W48
 @ 016   ----------------------------------------
         .byte   W48
-        .byte           VOL   , 14
+        .byte           VOL   , 14*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N96   , An4 , v084
         .byte   W06
-        .byte           VOL   , 16
+        .byte           VOL   , 16*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   23
+        .byte                   23*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   28
+        .byte                   28*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   31
+        .byte                   31*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   40
+        .byte                   40*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   48
+        .byte                   48*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   56
+        .byte                   56*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
 @ 017   ----------------------------------------
-        .byte                   61
+        .byte                   61*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   66
+        .byte                   66*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   71
+        .byte                   71*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   78
+        .byte                   78*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   84
+        .byte                   84*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
-        .byte                   88
+        .byte                   88*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W60
 @ 018   ----------------------------------------
         .byte   W96
@@ -1966,7 +1967,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_4:
         .byte           VOICE , 30
         .byte           N48   , En2 , v100
         .byte           N48   , Bn0
-        .byte           VOL   , 119
+        .byte           VOL   , 119*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           BEND  , c_v-36
         .byte           BENDR , 12
         .byte   W01
@@ -2081,7 +2082,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_4_3:
 mus_illya_shoujo_yo_hoshi_ni_nare_4_LOOP:
         .byte           VOICE , 29
         .byte           PAN   , c_v-53
-        .byte           VOL   , 33
+        .byte           VOL   , 33*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W30
         .byte           N24   , Cn4 , v064
         .byte   W18
@@ -2122,22 +2123,22 @@ mus_illya_shoujo_yo_hoshi_ni_nare_4_9:
         .byte   W42
 @ 016   ----------------------------------------
         .byte   W48
-        .byte           VOL   , 16
+        .byte           VOL   , 16*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           N96   , An4 , v024
         .byte   W18
-        .byte           VOL   , 20
+        .byte           VOL   , 20*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
-        .byte                   23
+        .byte                   23*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
 @ 017   ----------------------------------------
-        .byte                   26
+        .byte                   26*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
-        .byte                   32
+        .byte                   32*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
-        .byte                   37
+        .byte                   37*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
-        .byte                   44
+        .byte                   44*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W60
 @ 018   ----------------------------------------
         .byte   W96
@@ -2288,7 +2289,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_4_9:
         .byte                   c_v-64
         .byte   W20
         .byte           VOICE , 29
-        .byte           VOL   , 33
+        .byte           VOL   , 33*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           PAN   , c_v-53
         .byte           BEND  , c_v+0
         .byte   GOTO
@@ -2297,7 +2298,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_4_9:
         .byte                   c_v-36
         .byte           VOICE , 30
         .byte           PAN   , c_v+0
-        .byte           VOL   , 119
+        .byte           VOL   , 119*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           VOICE , 28
         .byte   FINE
 
@@ -2308,7 +2309,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_5:
 @ 000   ----------------------------------------
         .byte           VOICE , 127
         .byte           BENDR , 12
-        .byte           VOL   , 74
+        .byte           VOL   , 74*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W48
         .byte           N03   , Cs4 , v096
         .byte   W06
@@ -2434,7 +2435,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_6:
         .byte           VOICE , 49
         .byte           BENDR , 12
         .byte           PAN   , c_v-25
-        .byte           VOL   , 113
+        .byte           VOL   , 113*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W96
 @ 001   ----------------------------------------
         .byte   W96
@@ -2623,7 +2624,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_7:
         .byte           VOICE , 9
         .byte           BENDR , 12
         .byte           PAN   , c_v-31
-        .byte           VOL   , 82
+        .byte           VOL   , 82*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W96
 @ 001   ----------------------------------------
         .byte   W96
@@ -2846,7 +2847,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_8:
         .byte           VOICE , 60
         .byte           BENDR , 12
         .byte           PAN   , c_v+15
-        .byte           VOL   , 123
+        .byte           VOL   , 123*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W96
 @ 001   ----------------------------------------
         .byte   W96
@@ -2910,32 +2911,32 @@ mus_illya_shoujo_yo_hoshi_ni_nare_8_21:
 @ 022   ----------------------------------------
         .byte                   An3
         .byte   W48
-        .byte           VOL   , 54
+        .byte           VOL   , 54*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N24   , Gn3 , v124
         .byte   W24
-        .byte           VOL   , 91
+        .byte           VOL   , 91*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N24   , Gn2
         .byte   W24
 @ 023   ----------------------------------------
 mus_illya_shoujo_yo_hoshi_ni_nare_8_23:
-        .byte           VOL   , 63
+        .byte           VOL   , 63*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           TIE   , Gn3 , v124
         .byte   W06
-        .byte           VOL   , 70
+        .byte           VOL   , 70*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   76
+        .byte                   76*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   82
+        .byte                   82*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   88
+        .byte                   88*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   95
+        .byte                   95*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   105
+        .byte                   105*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   115
+        .byte                   115*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
-        .byte                   124
+        .byte                   124*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W48
         .byte   PEND
 @ 024   ----------------------------------------
@@ -3005,10 +3006,10 @@ mus_illya_shoujo_yo_hoshi_ni_nare_8_29:
 @ 034   ----------------------------------------
         .byte           N48   , An3 , v080
         .byte   W48
-        .byte           VOL   , 54
+        .byte           VOL   , 54*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N24   , Gn3 , v124
         .byte   W24
-        .byte           VOL   , 90
+        .byte           VOL   , 90*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           N24   , Gn2
         .byte   W24
 @ 035   ----------------------------------------
@@ -3041,27 +3042,27 @@ mus_illya_shoujo_yo_hoshi_ni_nare_8_29:
         .byte   W60
 @ 043   ----------------------------------------
         .byte   W48
-        .byte           VOL   , 111
+        .byte           VOL   , 111*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
-        .byte                   98
+        .byte                   98*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
 @ 044   ----------------------------------------
-        .byte                   76
+        .byte                   76*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
-        .byte                   56
+        .byte                   56*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W24
         .byte           EOT
-        .byte           VOL   , 122
+        .byte           VOL   , 122*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W48
 @ 045   ----------------------------------------
         .byte   W96
 @ 046   ----------------------------------------
         .byte   W48
-        .byte                   123
+        .byte                   123*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   GOTO
          .word  mus_illya_shoujo_yo_hoshi_ni_nare_8_LOOP
         .byte   W36
-        .byte                   122
+        .byte                   122*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   FINE
 
 @***************** Track 9 (Midi-Chn.10) ******************@
@@ -3072,7 +3073,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_9:
         .byte           VOICE , 117
         .byte           BEND  , c_v-64
         .byte           BENDR , 12
-        .byte           VOL   , 113
+        .byte           VOL   , 113*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W96
 @ 001   ----------------------------------------
         .byte   W96
@@ -3163,80 +3164,80 @@ mus_illya_shoujo_yo_hoshi_ni_nare_9_LOOP:
 @ 043   ----------------------------------------
         .byte   W96
 @ 044   ----------------------------------------
-        .byte           VOL   , 8
+        .byte           VOL   , 8*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           TIE   , Bn2 , v124
         .byte   W12
-        .byte           VOL   , 12
+        .byte           VOL   , 12*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
-        .byte                   16
+        .byte                   16*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
-        .byte                   20
+        .byte                   20*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
         .byte           BEND  , c_v-39
-        .byte           VOL   , 23
+        .byte           VOL   , 23*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           BEND  , c_v-36
         .byte   W06
         .byte                   c_v-33
-        .byte           VOL   , 26
+        .byte           VOL   , 26*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           BEND  , c_v-32
         .byte   W06
         .byte                   c_v-30
-        .byte           VOL   , 30
+        .byte           VOL   , 30*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           BEND  , c_v-27
         .byte   W06
         .byte                   c_v-24
-        .byte           VOL   , 33
+        .byte           VOL   , 33*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           BEND  , c_v-20
         .byte   W06
 @ 045   ----------------------------------------
         .byte                   c_v-15
-        .byte           VOL   , 39
+        .byte           VOL   , 39*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           BEND  , c_v-12
         .byte   W06
         .byte                   c_v-7
-        .byte           VOL   , 48
+        .byte           VOL   , 48*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           BEND  , c_v-2
         .byte   W06
         .byte           EOT
         .byte           BEND  , c_v+7
-        .byte           VOL   , 55
+        .byte           VOL   , 55*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte           TIE
         .byte   W06
         .byte           BEND  , c_v+15
         .byte   W06
         .byte                   c_v+26
-        .byte           VOL   , 61
+        .byte           VOL   , 61*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           BEND  , c_v+37
         .byte   W06
         .byte                   c_v+44
-        .byte           VOL   , 69
+        .byte           VOL   , 69*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           BEND  , c_v+49
         .byte   W06
         .byte                   c_v+55
-        .byte           VOL   , 76
+        .byte           VOL   , 76*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           BEND  , c_v+61
         .byte   W06
         .byte                   c_v+63
-        .byte           VOL   , 80
+        .byte           VOL   , 80*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
-        .byte                   86
+        .byte                   86*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
 @ 046   ----------------------------------------
-        .byte                   94
+        .byte                   94*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
-        .byte                   103
+        .byte                   103*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W12
         .byte           BEND  , c_v+50
-        .byte           VOL   , 113
+        .byte           VOL   , 113*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W06
         .byte           BEND  , c_v+32
         .byte   W06
@@ -3258,7 +3259,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_10:
 @ 000   ----------------------------------------
         .byte           VOICE , 42
         .byte           BENDR , 12
-        .byte           VOL   , 100
+        .byte           VOL   , 100*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W48
         .byte           N12   , Bn0 , v116
         .byte   W12
@@ -3607,7 +3608,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_11:
         .byte           VOICE , 0
         .byte           N48   , Gn0 , v116
         .byte           BENDR , 12
-        .byte           VOL   , 103
+        .byte           VOL   , 103*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W48
         .byte           N48   , Dn0
         .byte           N24   , Cs2
@@ -4218,7 +4219,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_12:
 @ 000   ----------------------------------------
         .byte           VOICE , 0
         .byte           BENDR , 12
-        .byte           VOL   , 103
+        .byte           VOL   , 103*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W48
         .byte           N09   , Cn1 , v124
         .byte   W24
@@ -4400,7 +4401,7 @@ mus_illya_shoujo_yo_hoshi_ni_nare_13:
         .byte           N40   , En1 , v096
         .byte           BENDR , 12
         .byte           PAN   , c_v+20
-        .byte           VOL   , 79
+        .byte           VOL   , 79*mus_illya_shoujo_yo_hoshi_ni_nare_mvl/mxv
         .byte   W40
         .byte           N96   , Bn1
         .byte   W56

@@ -1215,6 +1215,7 @@ bool8 ShouldLightOrbsStart(void)
         return TRUE;
     else
         return FALSE;
+}
 
 static const u8 sWeatherNames[WEATHER_COUNT][24] = {
     [WEATHER_NONE]               = _("NONE"),

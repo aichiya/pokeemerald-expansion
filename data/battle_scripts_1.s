@@ -10035,7 +10035,6 @@ BattleScript_ManaDisturptorLoopIncrement:
 	destroyabilitypopup
 	restoretarget
 	pause B_WAIT_TIME_MED
-	tryintimidateejectpack
 	end3
 
 BattleScript_ManaDisturptorPrevented:
@@ -10231,7 +10230,6 @@ BattleScript_MisfortuneAuraLoopIncrement:
 	destroyabilitypopup
 	restoretarget
 	pause B_WAIT_TIME_MED
-	tryintimidateejectpack
 	end3
 
 BattleScript_MisfortuneAuraPrevented:

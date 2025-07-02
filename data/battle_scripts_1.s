@@ -10322,3 +10322,65 @@ BattleScript_SpAtkSpDefDownTrySpDef::
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_SpAtkSpDefDownRet::
 	return
+
+BattleScript_EffectUehehehehehe::
+	jumpiftargetally BattleScript_EffectUeheheheheheAlly
+	goto BattleScript_EffectAttract
+
+BattleScript_EffectUeheheheheheFoe::
+	attackcanceler
+	attackstring
+	ppreduce
+	accuracycheck BattleScript_ButItFailed, ACC_CURR_MOVE
+	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_AromaVeilProtects
+	tryinfatuating BattleScript_ButItFailed
+	attackanimation
+	waitanimation
+	printstring STRINGID_PKMNFELLINLOVE
+	waitmessage B_WAIT_TIME_LONG
+	call BattleScript_TryDestinyKnotAttacker
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectUeheheheheheAlly::
+	attackcanceler
+	attackstring
+	ppreduce
+	accuracycheck BattleScript_ButItFailed, ACC_CURR_MOVE
+	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_AromaVeilProtects
+BattleScript_AllStatsUpOnTarget::
+	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_AllStatsUpOnTargetAtk
+	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_DEF, MAX_STAT_STAGE, BattleScript_AllStatsUpOnTargetAtk
+	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_SPEED, MAX_STAT_STAGE, BattleScript_AllStatsUpOnTargetAtk
+	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_SPATK, MAX_STAT_STAGE, BattleScript_AllStatsUpOnTargetAtk
+	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPDEF, MAX_STAT_STAGE, BattleScript_AllStatsUpOnTargetFailed
+BattleScript_AllStatsUpOnTargetAtk::
+	attackanimation
+	waitanimation
+	setstatchanger STAT_ATK, 1, FALSE
+	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_AllStatsUpOnTargetDef, BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AllStatsUpOnTargetDef::
+	setstatchanger STAT_DEF, 1, FALSE
+	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_AllStatsUpOnTargetSpeed, BIT_SPEED | BIT_SPATK | BIT_SPDEF
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AllStatsUpOnTargetSpeed::
+	setstatchanger STAT_SPEED, 1, FALSE
+	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_AllStatsUpOnTargetSpAtk, BIT_SPATK | BIT_SPDEF
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AllStatsUpOnTargetSpAtk::
+	setstatchanger STAT_SPATK, 1, FALSE
+	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_AllStatsUpOnTargetSpDef, BIT_SPDEF
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AllStatsUpOnTargetSpDef::
+	setstatchanger STAT_SPDEF, 1, FALSE
+	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_AllStatsUpOnTargetSuccess
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AllStatsUpOnTargetSuccess::
+	goto BattleScript_MoveEnd
+BattleScript_AllStatsUpOnTargetFailed::
+	goto BattleScript_ButItFailed

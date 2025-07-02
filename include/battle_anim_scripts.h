@@ -871,6 +871,7 @@ extern const u8 gBattleAnimMove_MindHack[];
 extern const u8 gBattleAnimMove_AdventLycoris[];
 extern const u8 gBattleAnimMove_AdventGerbera[];
 extern const u8 gBattleAnimMove_QuintettFeuer[];
+extern const u8 gBattleAnimMove_Uehehehehehe[];
 extern const u8 gBattleAnimMove_BreakneckBlitz[];
 extern const u8 gBattleAnimMove_AllOutPummeling[];
 extern const u8 gBattleAnimMove_SupersonicSkystrike[];

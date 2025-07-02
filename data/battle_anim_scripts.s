@@ -20533,6 +20533,36 @@ QuintettFeuerGeyser:
 	delay 0
 	return
 
+gBattleAnimMove_Uehehehehehe::
+	loadspritegfx ANIM_TAG_SWEAT_BEAD
+	loadspritegfx ANIM_TAG_RED_HEART
+	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 48, 1
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 31, 4, 0, 16, 0
+	playsewithpan SE_M_PSYBEAM, 192
+	waitforvisualfinish
+@	loopsewithpan SE_M_TAIL_WHIP, 192, 5, 8
+	delay 25
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 0, F_PAL_BG, 0, 0, 7, RGB_RED
+	playsewithpan SE_M_CHARM, SOUND_PAN_ATTACKER
+	createsprite gRedHeartCharmSpriteTemplate, ANIM_TARGET, 3, 0, 20
+	delay 15
+	playsewithpan SE_M_CHARM, SOUND_PAN_ATTACKER
+	createsprite gRedHeartCharmSpriteTemplate, ANIM_TARGET, 3, -20, 20
+	delay 15
+	playsewithpan SE_M_CHARM, SOUND_PAN_ATTACKER
+	playsewithpan SE_M_ATTRACT, SOUND_PAN_TARGET
+	createsprite gRedHeartCharmSpriteTemplate, ANIM_TARGET, 3, 20, 20
+	createsprite gRedHeartBurstSpriteTemplate, ANIM_TARGET, 3, 160, -32
+	createsprite gRedHeartBurstSpriteTemplate, ANIM_TARGET, 3, -256, -40
+	createsprite gRedHeartBurstSpriteTemplate, ANIM_TARGET, 3, 128, -16
+	createsprite gRedHeartBurstSpriteTemplate, ANIM_TARGET, 3, 416, -38
+	createsprite gRedHeartBurstSpriteTemplate, ANIM_TARGET, 3, -128, -22
+	createsprite gRedHeartBurstSpriteTemplate, ANIM_TARGET, 3, -384, -31
+	delay 25
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 31, 4, 16, 0, 0
+	waitforvisualfinish
+	end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
 gBattleAnimMove_MirrorMove::

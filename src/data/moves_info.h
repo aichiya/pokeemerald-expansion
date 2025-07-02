@@ -21788,6 +21788,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_QuintettFeuer,
     },
 
+    [MOVE_UEHEHEHEHEHE] =  // Edited acc
+    {
+        .name = COMPOUND_STRING("Uehehehehehe"),
+        .description = COMPOUND_STRING(
+            "Diffirent effects based\n"
+            "on the target."),
+        .effect = EFFECT_UEHEHEHEHEHE,
+        .power = 0,
+        .type = TYPE_NEW_HEART,
+        .accuracy = 90,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_RESET_STATS },
+        .magicCoatAffected = TRUE,
+        .ignoresSubstitute = TRUE,
+        .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Uehehehehehe,
+        .validApprenticeMove = TRUE,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =  // Edited
     {

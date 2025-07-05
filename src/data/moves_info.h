@@ -6089,7 +6089,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "User spins and removes some\n"
         #if B_SPEED_BUFFING_RAPID_SPIN >= GEN_8
             "effects, while upping speed."),
-        #else 
+        #else
             "effects."),
         #endif
         .effect = EFFECT_RAPID_SPIN,
@@ -18358,12 +18358,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Scatters water to restore\n"
             "the HP of itself and allies."),
-        .effect = EFFECT_JUNGLE_HEALING,
+        .effect = EFFECT_LIFE_DEW,
         .power = 0,
         .type = TYPE_NEW_WATER,
         .accuracy = 0,
         .pp = 10,
-        .target = MOVE_TARGET_ALL_BATTLERS,
+        .target = MOVE_TARGET_USER,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
         .snatchAffected = TRUE,
@@ -18529,9 +18529,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Field Dispertion"),
         .description = COMPOUND_STRING(
-            "Destroys terrain. Fails if\n"
-            "ground isn't terrain."),
-        .effect = EFFECT_HIT_SET_REMOVE_TERRAIN,
+            "Destroys existing field.\n"
+            "Fails if there is no field."),
+        .effect = EFFECT_STEEL_ROLLER,
         .power = 160,
         .type = TYPE_NEW_DARK,
         .accuracy = 100,
@@ -18540,7 +18540,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .argument = { .moveProperty = ARG_TRY_REMOVE_TERRAIN_FAIL }, // Remove a field terrain if there is one and hit, otherwise fail.
         .skyBattleBanned = TRUE,
         .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -19970,7 +19969,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Ice-covered feet hit a foe\n"
             "and destroy the terrain."),
-        .effect = EFFECT_HIT_SET_REMOVE_TERRAIN,
+        .effect = EFFECT_ICE_SPINNER,
         .power = 80,
         .type = TYPE_NEW_ICE,
         .accuracy = 100,
@@ -19979,7 +19978,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .argument = { .moveProperty = ARG_TRY_REMOVE_TERRAIN_HIT }, // Remove the active field terrain if there is one.
         .skyBattleBanned = B_EXTRAPOLATED_MOVE_FLAGS,
         .battleAnimScript = gBattleAnimMove_IceSpinner,
     },
@@ -22194,7 +22192,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Mew attacks with full force.\n"
             "Psychically charges terrain."),
-        .effect = EFFECT_HIT_SET_REMOVE_TERRAIN,
+        .effect = EFFECT_HIT_SET_TERRAIN,
         .power = 185,
         .type = TYPE_NEW_REASON,
         .accuracy = 0,
@@ -22202,7 +22200,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .argument = { .moveProperty = ARG_SET_PSYCHIC_TERRAIN }, // Set Psychic Terrain. If there's a different field terrain active, overwrite it.
+        .argument = { .moveProperty = STATUS_FIELD_PSYCHIC_TERRAIN },
         .battleAnimScript = gBattleAnimMove_GenesisSupernova,
     },
     [MOVE_SINISTER_ARROW_RAID] =  // Edited
@@ -22259,7 +22257,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Lycanroc attacks with full\n"
             "force. Removes all terrain."),
-        .effect = EFFECT_HIT_SET_REMOVE_TERRAIN,
+        .effect = EFFECT_ICE_SPINNER,
         .power = 190,
         .type = TYPE_NEW_EARTH,
         .accuracy = 0,
@@ -22267,7 +22265,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .moveProperty = ARG_TRY_REMOVE_TERRAIN_HIT },  // Remove the active field terrain if there is one.
         .battleAnimScript = gBattleAnimMove_SplinteredStormshards,
     },
     [MOVE_LETS_SNUGGLE_FOREVER] =

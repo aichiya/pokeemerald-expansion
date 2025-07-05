@@ -742,120 +742,120 @@
 #define MUS_PC_OPENMYHEART						797
 #define MUS_GS_GS1ALLEGRO						798
 
-#define MUS_THPPZGSK_PRIMALSCENE				799
-#define MUS_THPPZGSK_PLASTICMIND				800
-#define	MUS_THPPZGSK_FATEOFSIXTYYEARS_B			801
-#define MUS_THPPZGSK_DREAMBATTLE				802
-#define MUS_THPPZGSK_MASTERSPARK_A				803
-#define MUS_THPPZGSK_MASTERSPARK_B				804
-#define MUS_THPPZGSK_FAITH						805
-#define MUS_THPPZGSK_SUWAFOUGHTENFIELD			806
-#define	MUS_THPPZGSK_MISSINGPOWER				807
-#define MUS_THPPZGSK_BORDEROFLIFE				808
-#define MUS_THPPZGSK_NUCLEARFUSION				809
-#define MUS_THPPZGSK_DREAMEXPRESS				810
-#define MUS_THPPZGSK_FAIRYWARS					811
-#define MUS_THPPZGSK_MAGUSNIGHT					812
-#define MUS_THPPZGSK_WITCHBALL					813
-#define MUS_THPPZGSK_WINDGODGIRL				814
-#define MUS_THPPZGSK_MYSTERIOUSMOUNTAIN			815
-#define MUS_THPPZGSK_LUNADIAL					816
-#define MUS_THPPZGSK_LUNATICPRINCESS			817
-#define MUS_THPPZGSK_CANDIDFRIEND				818
-#define MUS_THPPZGSK_PHANTOMENSEMBLE_A			819
-#define MUS_THPPZGSK_PHANTOMENSEMBLE_B			820
-#define MUS_THPPZGSK_388						821
-#define MUS_THPPZGSK_ABSORBEDCURIOUSITY			822
-#define MUS_THPPZGSK_AGODTHATLOVESPEOPLE		823
-#define MUS_THPPZGSK_ALICEINWONDERLAND			824
-#define MUS_THPPZGSK_DARKBLOWHOLE				825
-#define MUS_THPPZGSK_DEEPMOUNTAIN				826
-#define MUS_THPPZGSK_DREAMLAND					827
-#define MUS_THPPZGSK_ENDOFSPRING				828
-#define MUS_THPPZGSK_FALLOFFALL					829
-#define	MUS_THPPZGSK_FATEOFSIXTYYEARS_A			830
-#define MUS_THPPZGSK_FIRESOFHOKKAI				831
-#define MUS_THPPZGSK_FLOWERLAND					832
-#define MUS_THPPZGSK_FLOWERSREMAININFANTASY		833
-#define MUS_THPPZGSK_GHOSTLYEYES				834
-#define MUS_THPPZGSK_JAPANESEFLOWER				835
-#define MUS_THPPZGSK_LOCKEDGIRL					836
-#define MUS_THPPZGSK_MEGAMARI_A					837
-#define MUS_THPPZGSK_MEGAMARI_B					838
-#define MUS_THPPZGSK_MOUNDOFSHIGAN				839
-#define MUS_THPPZGSK_NECROFANTASY				840
-#define MUS_THPPZGSK_SAKEDISH					841
-#define MUS_THPPZGSK_SEPTETTE					842
-#define MUS_THPPZGSK_SHANGHAIALICE				843
-#define MUS_THPPZGSK_SKYSCRAPER					844
-#define	MUS_THPPZGSK_THIRDEYE					845
-#define MUS_THPP_DOLLJUDGEMENT					846 // VS
-#define MUS_THPP_FAITH							847 // VS
-#define	MUS_THPP_TEPESSEPTETTE					848 // VS
-#define MUS_THPP_NECROFANTASIA					849 // VS
-#define	MUS_THPP_REINCARNATION					850 // VS
-#define MUS_THPP_NOWUNTILTHEMOMENT				851 // VS
-#define MUS_THPP_CIVILIZATIONOFMAGIC			852 // VS
-#define MUS_THPP_SPRINGLANE						853 // City/Town
-#define	MUS_THPP_BELOVEDTOMBOYISHGIRL			854 // City/Town
-#define MUS_THPP_TOMORROWSPECIAL				855 // City/Town
-#define MUS_THPP_THEUMBRELLA					856 // City/Town
-#define MUS_THPP_OLDWORLD						857 // City/Town
-#define MUS_THPP_LULLABYDESERTEDHELL			858 // City/Town
-#define	MUS_THPP_ULTIMATETRUTH					859 // City/Town
-#define MUS_THPP_ETERNALMIKO					860 // !Broken loop from the source | City/Town
-#define MUS_THPP_LOSTDREAM						861 // City/Town
-#define MUS_THPP_ALICEINWONDERLAND				862 // City/Town
-#define MUS_THPP_SOULASREDASONI					863 // Route
-#define MUS_THPP_KIDSFESTIVAL_A					864 // Route
-#define MUS_THPP_KIDSFESTIVAL_B					865 // Route
-#define MUS_THPP_LUNATEELF						866 // Route
-#define MUS_THPP_GENSOKYOGODSLOVED				867 // Route
-#define MUS_THPP_HISTORYOFTHEMOON				868 // PC
-#define MUS_THPP_CURIOUSSHANGHAI				869 // Game Corner
-#define MUS_THPP_DARKROAD						870 // Evil Lurks
-#define MUS_THPP_SKYSCRAPER						871 // Gym
-#define MUS_THPP_DEAFTOALL_A					872 // Forest
-#define MUS_THPP_THEBRIDGE						873 // Caves
-#define MUS_THPP_THIRDEYE						874 // Mansion
-#define MUS_THPP_SEPTETTE						875 // League
-#define MUS_THPP_PLAINASIA						876 // Lab
-#define MUS_THPP_INTERDIMENSIONALVOYAGE			877 // Ship
-#define MUS_THPP_ANCIENTTEMPLE					878 // Cemetery
-#define MUS_THPP_HEIANALIEN						879 // !Need to fix the modulation | Silph
-#define MUS_THPP_CITYOFFLOWER					880
-#define MUS_THPP_ENDOFDAYLIGHT					881
-#define MUS_THPP_BELLOFAVICI					882
-#define MUS_THPP_HAKUREISHRINEGROUND			883
-#define MUS_THPP_BADAPPLE						884
-#define MUS_THPP_GREENWICH						885
-#define MUS_THPP_LEGENDOFHOURAI					886
-#define MUS_THPP_WINDGODGIRL					887 // Cycling
-#define MUS_THPP_CANDIDFRIEND					888 // Surfing
-#define MUS_THPP_THEPUPPET						889 // Introduction
-#define MUS_THPP_DREAMBATTLE					890 // Title
-#define MUS_THPP_BROKENMOON						891 // Hall of Fame
-#define MUS_THPP_EDMADLEY						892 // Credits
-#define MUS_THPP_BOKURANOHISOUTENSOKU_A			893 // Evo
-#define MUS_THPP_BOKURANOHISOUTENSOKU_B			894 // Evo
-#define MUS_THPP_DEAFTOALL_B					895 // !Need to fix the modulation | Lullaby
-#define MUS_THPP_PHANTOMENSEMBLE				896 // Flute
-#define MUS_THPP_IMMORTALSMOKE_A				897 // Victory
-#define MUS_THPP_IMMORTALSMOKE_B				898 // Victory
-#define MUS_THPP_INADAHIME						899 // !Need to fix the modulation | Victory
-#define MUS_THPP_CORPSEVOYAGE					900 // Victory
-#define MUS_THPP_JINGLE							901 // Caught
-#define MUS_THPP_SACREDLOT						902 // Encounter
-#define MUS_THPP_LOSTPLACE						903 // Encounter
-#define MUS_THPP_SAKEDISH						904 // Encounter
-#define MUS_THPP_THEOLDMAN						905 // Encounter
-#define MUS_THPP_DREAMMORESCARLET				906 // !Need to fix the modulation | Encounter
-#define MUS_THPP_342							907 // Encounter
-#define MUS_THPP_FLYABOVEHATOYAMA_A				908 // Rival
-#define MUS_THPP_FLYABOVEHATOYAMA_B				909 // Rival
-#define MUS_THPP_SUPERNEOEXPRESS				910 // Follow me
-#define MUS_THPPZGSK_HISTORYOFTHEMOON			911 // PC longer version, loop fixed
-#define MUS_THPPZGSK_DOLLJUDGEMENT				912 // VS longer version, loop fixed
+#define MUS_DUMMY_799                           799
+#define MUS_DUMMY_800                           800
+#define MUS_DUMMY_801                           801
+#define MUS_DUMMY_802                           802
+#define MUS_DUMMY_803                           803
+#define MUS_DUMMY_804                           804
+#define MUS_DUMMY_805                           805
+#define MUS_DUMMY_806                           806
+#define MUS_DUMMY_807                           807
+#define MUS_DUMMY_808                           808
+#define MUS_DUMMY_809                           809
+#define MUS_DUMMY_810                           810
+#define MUS_DUMMY_811                           811
+#define MUS_DUMMY_812                           812
+#define MUS_DUMMY_813                           813
+#define MUS_DUMMY_814                           814
+#define MUS_DUMMY_815                           815
+#define MUS_DUMMY_816                           816
+#define MUS_DUMMY_817                           817
+#define MUS_DUMMY_818                           818
+#define MUS_DUMMY_819                           819
+#define MUS_DUMMY_820                           820
+#define MUS_DUMMY_821                           821
+#define MUS_DUMMY_822                           822
+#define MUS_DUMMY_823                           823
+#define MUS_DUMMY_824                           824
+#define MUS_DUMMY_825                           825
+#define MUS_DUMMY_826                           826
+#define MUS_DUMMY_827                           827
+#define MUS_DUMMY_828                           828
+#define MUS_DUMMY_829                           829
+#define MUS_DUMMY_830                           830
+#define MUS_DUMMY_831                           831
+#define MUS_DUMMY_832                           832
+#define MUS_DUMMY_833                           833
+#define MUS_DUMMY_834                           834
+#define MUS_DUMMY_835                           835
+#define MUS_DUMMY_836                           836
+#define MUS_DUMMY_837                           837
+#define MUS_DUMMY_838                           838
+#define MUS_DUMMY_839                           839
+#define MUS_DUMMY_840                           840
+#define MUS_DUMMY_841                           841
+#define MUS_DUMMY_842                           842
+#define MUS_DUMMY_843                           843
+#define MUS_DUMMY_844                           844
+#define MUS_DUMMY_845                           845
+#define MUS_DUMMY_846                           846
+#define MUS_DUMMY_847                           847
+#define MUS_DUMMY_848                           848
+#define MUS_DUMMY_849                           849
+#define MUS_DUMMY_850                           850
+#define MUS_DUMMY_851                           851
+#define MUS_DUMMY_852                           852
+#define MUS_DUMMY_853                           853
+#define MUS_DUMMY_854                           854
+#define MUS_DUMMY_855                           855
+#define MUS_DUMMY_856                           856
+#define MUS_DUMMY_857                           857
+#define MUS_DUMMY_858                           858
+#define MUS_DUMMY_859                           859
+#define MUS_DUMMY_860                           860
+#define MUS_DUMMY_861                           861
+#define MUS_DUMMY_862                           862
+#define MUS_DUMMY_863                           863
+#define MUS_DUMMY_864                           864
+#define MUS_DUMMY_865                           865
+#define MUS_DUMMY_866                           866
+#define MUS_DUMMY_867                           867
+#define MUS_DUMMY_868                           868
+#define MUS_DUMMY_869                           869
+#define MUS_DUMMY_870                           870
+#define MUS_DUMMY_871                           871
+#define MUS_DUMMY_872                           872
+#define MUS_DUMMY_873                           873
+#define MUS_DUMMY_874                           874
+#define MUS_DUMMY_875                           875
+#define MUS_DUMMY_876                           876
+#define MUS_DUMMY_877                           877
+#define MUS_DUMMY_878                           878
+#define MUS_DUMMY_879                           879
+#define MUS_DUMMY_880                           880
+#define MUS_DUMMY_881                           881
+#define MUS_DUMMY_882                           882
+#define MUS_DUMMY_883                           883
+#define MUS_DUMMY_884                           884
+#define MUS_DUMMY_885                           885
+#define MUS_DUMMY_886                           886
+#define MUS_DUMMY_887                           887
+#define MUS_DUMMY_888                           888
+#define MUS_DUMMY_889                           889
+#define MUS_DUMMY_890                           890
+#define MUS_DUMMY_891                           891
+#define MUS_DUMMY_892                           892
+#define MUS_DUMMY_893                           893
+#define MUS_DUMMY_894                           894
+#define MUS_DUMMY_895                           895
+#define MUS_DUMMY_896                           896
+#define MUS_DUMMY_897                           897
+#define MUS_DUMMY_898                           898
+#define MUS_DUMMY_899                           899
+#define MUS_DUMMY_900                           900
+#define MUS_DUMMY_901                           901
+#define MUS_DUMMY_902                           902
+#define MUS_DUMMY_903                           903
+#define MUS_DUMMY_904                           904
+#define MUS_DUMMY_905                           905
+#define MUS_DUMMY_906                           906
+#define MUS_DUMMY_907                           907
+#define MUS_DUMMY_908                           908
+#define MUS_DUMMY_909                           909
+#define MUS_DUMMY_910                           910
+#define MUS_DUMMY_911                           911
+#define MUS_DUMMY_912                           912
 
 #define MUS_KEY_NAGISA_CUT						913
 #define MUS_INSTRUMENT_TEST						914

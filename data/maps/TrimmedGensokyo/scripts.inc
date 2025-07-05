@@ -16,8 +16,8 @@ TrimmedGensokyo_EventScript_Debug1::
 	delay 30
 @	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
     setflag FLAG_CUSTOM_BGM_BATTLE
-	setvar VAR_SETTING_MUSIC, MUS_BW_VS_SUBWAY_TRAINER
-	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, 1
+	setvar VAR_SETTING_MUSIC, MUS_ILLYA_SHOUJO_YO_HOSHI_NI_NARE
+	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER_CHECK_PARTY_LEVEL
 	special PrepareSecretBasePseudoTrainerBattleByVar
 	special PrepSecretBaseBattleFlags
     setvar VAR_0x8004, SPECIAL_BATTLE_SECRET_BASE

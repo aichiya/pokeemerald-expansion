@@ -4147,12 +4147,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 gSideStatuses[targetSide] &= ~SIDE_STATUS_LIGHTSCREEN;
                 gSideTimers[targetSide].lightscreenTimer = 0;
 
-                gSideStatuses[targetSide] |= SIDE_STATUS_STICKY_WEB;
-                gSideTimers[targetSide].stickyWebAmount = 1;
-
-                gSideStatuses[targetSide] |= SIDE_STATUS_SPIKES;
-                gSideTimers[targetSide].spikesAmount = 3;
-
                 gSideStatuses[targetSide] &= ~SIDE_STATUS_SAFEGUARD;
                 gSideTimers[targetSide].safeguardTimer = 0;
 
@@ -4168,15 +4162,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 gSideStatuses[targetSide] &= ~SIDE_STATUS_LUCKY_CHANT;
                 gSideTimers[targetSide].luckyChantTimer = 0;
 
-                gSideStatuses[targetSide] |= SIDE_STATUS_TOXIC_SPIKES;
-                gSideTimers[targetSide].toxicSpikesAmount = 2;
-
-                gSideStatuses[targetSide] |= SIDE_STATUS_STEALTH_ROCK;
-                gSideTimers[targetSide].stealthRockAmount = 1;
-                
-                gSideStatuses[targetSide] |= SIDE_STATUS_STEELSURGE;
-                gSideTimers[targetSide].steelsurgeAmount = 1;
-
                 gSideStatuses[targetSide] |= SIDE_STATUS_DAMAGE_NON_TYPES;
                 gSideTimers[targetSide].damageNonTypesTimer = 5; // damage is dealt for 4 turns, ends on 5th
                 gSideTimers[targetSide].damageNonTypesType = TYPE_NEW_ILLUSION;
@@ -4189,6 +4174,17 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
 
                 gSideStatuses[targetSide] |= SIDE_STATUS_SWAMP;
                 gSideTimers[targetSide].swampTimer = 4;
+
+                gSideTimers[targetSide].toxicSpikesAmount = 2;
+
+                gSideTimers[targetSide].spikesAmount = 3;
+
+                if (!IsHazardOnSide(targetSide, HAZARDS_STICKY_WEB))
+                    PushHazardTypeToQueue(targetSide, HAZARDS_TOXIC_SPIKES);
+                if (!IsHazardOnSide(targetSide, HAZARDS_STEALTH_ROCK))
+                    PushHazardTypeToQueue(targetSide, HAZARDS_STEALTH_ROCK);
+                if (!IsHazardOnSide(targetSide, HAZARDS_STEELSURGE))
+                    PushHazardTypeToQueue(targetSide, HAZARDS_STEELSURGE);
 
                 u8 attackerSide = GetBattlerSide(gBattlerAttacker);
 

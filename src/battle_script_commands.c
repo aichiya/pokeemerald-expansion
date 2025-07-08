@@ -9527,7 +9527,7 @@ void TryHazardsOnSwitchIn(u32 battler, u32 side, enum Hazards hazardType)
         }
         break;
     case HAZARDS_STEALTH_ROCK:
-        if (IsBattlerAffectedByHazards(battler, FALSE) && !(GetBattlerAbility(battler) == ABILITY_MAGIC_GUARD || GetBattlerAbility(battler) == ABILITY_FANTASY_BREAKER)))
+        if (IsBattlerAffectedByHazards(battler, FALSE) && !(GetBattlerAbility(battler) == ABILITY_MAGIC_GUARD || GetBattlerAbility(battler) == ABILITY_FANTASY_BREAKER))
         {
             gBattleStruct->moveDamage[battler] = GetStealthHazardDamage(TYPE_SIDE_HAZARD_POINTED_STONES, battler);
             if (gBattleStruct->moveDamage[battler] != 0)
@@ -9535,7 +9535,7 @@ void TryHazardsOnSwitchIn(u32 battler, u32 side, enum Hazards hazardType)
         }
         break;
     case HAZARDS_STEELSURGE:
-        if (IsBattlerAffectedByHazards(battler, FALSE) && !(GetBattlerAbility(battler) == ABILITY_MAGIC_GUARD || GetBattlerAbility(battler) == ABILITY_FANTASY_BREAKER)))
+        if (IsBattlerAffectedByHazards(battler, FALSE) && !(GetBattlerAbility(battler) == ABILITY_MAGIC_GUARD || GetBattlerAbility(battler) == ABILITY_FANTASY_BREAKER))
         {
             gBattleStruct->moveDamage[battler] = GetStealthHazardDamage(TYPE_SIDE_HAZARD_SHARP_STEEL, battler);
             if (gBattleStruct->moveDamage[battler] != 0)

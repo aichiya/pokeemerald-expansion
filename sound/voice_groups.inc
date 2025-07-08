@@ -351,12 +351,25 @@
 .include "sound/voicegroups/voicegroup806.inc" @ Megaman Battle Network 6 Drum Mapping (Partial)
 .include "sound/voicegroups/voicegroup807.inc" @ THPP Music Expansion Drum 1
 .include "sound/voicegroups/voicegroup808.inc" @ THPP Music Expansion Drum 2
-.include "sound/voicegroups/voicegroup809.inc" @ THPP Music Expansion 1 - Mr. Unknown's
-.include "sound/voicegroups/voicegroup810.inc" @ THPP Music Expansion 2 - Reincarnation
-.include "sound/voicegroups/voicegroup811.inc" @ THPP Music Expansion 3 - Uda's
+.include "sound/voicegroups/voicegroup809.inc" @ THPP Music Expansion Main 1 - Mr. Unknown's
+.include "sound/voicegroups/voicegroup810.inc" @ THPP Music Expansion Main 2 - Reincarnation
+.include "sound/voicegroups/voicegroup811.inc" @ THPP Music Expansion Main 3 - Uda's
 .include "sound/voicegroups/voicegroup812.inc" @ Shizukana Shizukana Native Faith
 .include "sound/voicegroups/voicegroup813.inc" @ Shizukana Shizukana Native Faith Piano Split
 .include "sound/voicegroups/voicegroup814.inc" @ Climax Jump
+.include "sound/voicegroups/voicegroup815.inc" @ THPP Zoku Gensokyo - Main Voicegroup
+.include "sound/voicegroups/voicegroup816.inc" @ THPP Zoku Gensokyo - Drum Kit
+.include "sound/voicegroups/voicegroup817.inc" @ THPP Zoku Gensokyo - Custom voicegroup156
+.include "sound/voicegroups/voicegroup818.inc" @ THPP Zoku Gensokyo - Custom voicegroup143
+.include "sound/voicegroups/voicegroup819.inc" @ THPP Zoku Gensokyo - Custom voicegroup157
+.include "sound/voicegroups/voicegroup820.inc" @ THPP Zoku Gensokyo - Custom voicegroup158
+.include "sound/voicegroups/voicegroup821.inc" @ THPP Zoku Gensokyo - Custom voicegroup026
+.include "sound/voicegroups/voicegroup822.inc" @ THPP Zoku Gensokyo - Custom voicegroup133
+.include "sound/voicegroups/voicegroup823.inc" @ THPP Zoku Gensokyo - Custom voicegroup137
+.include "sound/voicegroups/voicegroup824.inc" @ THPP Zoku Gensokyo - Custom voicegroup142
+.include "sound/voicegroups/voicegroup825.inc" @ THPP Zoku Gensokyo - Custom voicegroup165
+.include "sound/voicegroups/voicegroup826.inc" @ THPP Zoku Gensokyo - Custom voicegroup162
+
 .include "sound/voicegroups/voicegroup900.inc" @ New Sound Effects
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
 

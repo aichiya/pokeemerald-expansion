@@ -9066,3 +9066,19 @@ DirectSoundWaveData_thppme_square::
 	.align 2
 DirectSoundWaveData_thppme_trombone::
 	.incbin "sound/direct_sound_samples/thppme_trombone.bin"
+
+	.align 2
+DirectSoundWaveData_thppzgsk_square:: @ 0xFFF5F0
+	.incbin "sound/direct_sound_samples/thppzgsk_square.bin"
+
+	.align 2
+DirectSoundWaveData_thppzgsk_flute::
+	.incbin "sound/direct_sound_samples/thppzgsk_flute.bin"
+
+	.align 2
+DirectSoundWaveData_thppzgsk_square2:: @ 0xFFF720
+	.incbin "sound/direct_sound_samples/thppzgsk_square2.bin"
+
+	.align 2
+DirectSoundWaveData_thppzgsk_square3:: @ 0xFFF770
+	.incbin "sound/direct_sound_samples/thppzgsk_square3.bin"

@@ -46,7 +46,7 @@ voicegroup807::
 	voice_directsound 68, 34, DirectSoundWaveData_sd90_ambient_tom, 255, 0, 255, 226                               @ 043 | Gn1 | ---
 	voice_directsound_no_resample 60, 64, DirectSoundWaveData_sc88pro_rnd_snare, 255, 0, 255, 242                  @ 044 | Gs1 | ---
 	voice_directsound 72, 44, DirectSoundWaveData_sd90_ambient_tom, 255, 0, 255, 226                               @ 045 | An1 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                        @ 046 | As1 | ---
+	voice_directsound_no_resample 60, 80, DirectSoundWaveData_thppme_open_hihat, 255, 232, 0, 232                  @ 046 | As1 | 0xff9334
 	voice_directsound 76, 84, DirectSoundWaveData_sd90_ambient_tom, 255, 0, 255, 226                               @ 047 | Bn1 | ---
 	voice_directsound 80, 94, DirectSoundWaveData_sd90_ambient_tom, 255, 0, 255, 226                               @ 048 | Cn2 | ---
 	voice_directsound_no_resample 33, 89, DirectSoundWaveData_sc88pro_orchestra_cymbal_crash, 255, 235, 0, 231     @ 049 | Cs2 | ---

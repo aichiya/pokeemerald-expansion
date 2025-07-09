@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds5fpc_bgm_mg_10_grp, voicegroup201
 	.equ	mus_pc_ds5fpc_bgm_mg_10_pri, 0
-	.equ	mus_pc_ds5fpc_bgm_mg_10_rev, 0
+	.equ	mus_pc_ds5fpc_bgm_mg_10_rev, reverb_set+50
 	.equ	mus_pc_ds5fpc_bgm_mg_10_mvl, 100
 	.equ	mus_pc_ds5fpc_bgm_mg_10_key, 0
 	.equ	mus_pc_ds5fpc_bgm_mg_10_tbs, 1

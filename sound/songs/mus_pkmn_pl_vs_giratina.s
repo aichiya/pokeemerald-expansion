@@ -2,7 +2,7 @@
 
 	.equ	mus_pkmn_pl_vs_giratina_grp, voicegroup203
 	.equ	mus_pkmn_pl_vs_giratina_pri, 0
-	.equ	mus_pkmn_pl_vs_giratina_rev, 0
+	.equ	mus_pkmn_pl_vs_giratina_rev, reverb_set+50
 	.equ	mus_pkmn_pl_vs_giratina_mvl, 92
 	.equ	mus_pkmn_pl_vs_giratina_key, 0
 	.equ	mus_pkmn_pl_vs_giratina_tbs, 1

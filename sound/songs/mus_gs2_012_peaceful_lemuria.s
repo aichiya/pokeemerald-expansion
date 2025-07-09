@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_012_peaceful_lemuria_grp, voicegroup601
         .equ    mus_gs2_012_peaceful_lemuria_pri, 0
-        .equ    mus_gs2_012_peaceful_lemuria_rev, 0
+        .equ    mus_gs2_012_peaceful_lemuria_rev, reverb_set+50
         .equ    mus_gs2_012_peaceful_lemuria_key, 0
 
         .section .rodata

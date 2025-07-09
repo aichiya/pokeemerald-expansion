@@ -2,7 +2,7 @@
 
         .equ    mus_ls_kanata_kara_piano_grp, voicegroup205
         .equ    mus_ls_kanata_kara_piano_pri, 0
-        .equ    mus_ls_kanata_kara_piano_rev, 0
+        .equ    mus_ls_kanata_kara_piano_rev, reverb_set+50
         .equ    mus_ls_kanata_kara_piano_key, 0
 
         .section .rodata

@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_seraphicchiken_grp, voicegroup210
 	.equ	mus_thpprf_seraphicchiken_pri, 0
-	.equ	mus_thpprf_seraphicchiken_rev, 0
+	.equ	mus_thpprf_seraphicchiken_rev, reverb_set+50
 	.equ	mus_thpprf_seraphicchiken_mvl, 96
 	.equ	mus_thpprf_seraphicchiken_key, 0
 	.equ	mus_thpprf_seraphicchiken_tbs, 1

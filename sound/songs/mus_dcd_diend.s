@@ -2,7 +2,7 @@
 
 	.equ	mus_dcd_diend_grp, voicegroup201
 	.equ	mus_dcd_diend_pri, 0
-	.equ	mus_dcd_diend_rev, 50
+	.equ	mus_dcd_diend_rev, reverb_set+50
 	.equ	mus_dcd_diend_mvl, 100
 	.equ	mus_dcd_diend_key, 0
 	.equ	mus_dcd_diend_tbs, 1

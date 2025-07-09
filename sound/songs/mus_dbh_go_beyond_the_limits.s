@@ -2,7 +2,7 @@
 
         .equ    mus_dbh_go_beyond_the_limits_grp, voicegroup201
         .equ    mus_dbh_go_beyond_the_limits_pri, 0
-        .equ    mus_dbh_go_beyond_the_limits_rev, 0
+        .equ    mus_dbh_go_beyond_the_limits_rev, reverb_set+50
         .equ    mus_dbh_go_beyond_the_limits_key, 0
 
         .section .rodata

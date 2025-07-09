@@ -3,7 +3,7 @@
         .equ    mus_th_satono_mai_okina_grp, voicegroup802
         .equ    mus_th_satono_mai_okina_pri, 0
         .equ    mus_th_satono_mai_okina_mvl, 100
-        .equ    mus_th_satono_mai_okina_rev, 50
+        .equ    mus_th_satono_mai_okina_rev, reverb_set+50
         .equ    mus_th_satono_mai_okina_key, 0
 
         .section .rodata

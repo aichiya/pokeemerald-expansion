@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_034_karst_agatio_grp, voicegroup601
         .equ    mus_gs2_034_karst_agatio_pri, 0
-        .equ    mus_gs2_034_karst_agatio_rev, 0
+        .equ    mus_gs2_034_karst_agatio_rev, reverb_set+50
         .equ    mus_gs2_034_karst_agatio_key, 0
 
         .section .rodata

@@ -2,7 +2,7 @@
 
 	.equ	mus_dcd_jtdorchestra_grp, voicegroup201
 	.equ	mus_dcd_jtdorchestra_pri, 0
-	.equ	mus_dcd_jtdorchestra_rev, 188
+	.equ	mus_dcd_jtdorchestra_rev, reverb_set+50
 	.equ	mus_dcd_jtdorchestra_mvl, 118
 	.equ	mus_dcd_jtdorchestra_key, 0
 	.equ	mus_dcd_jtdorchestra_tbs, 1

@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds2fwpcss_bgm_minigame_07_grp, voicegroup201
 	.equ	mus_pc_ds2fwpcss_bgm_minigame_07_pri, 0
-	.equ	mus_pc_ds2fwpcss_bgm_minigame_07_rev, 0
+	.equ	mus_pc_ds2fwpcss_bgm_minigame_07_rev, reverb_set+50
 	.equ	mus_pc_ds2fwpcss_bgm_minigame_07_mvl, 100
 	.equ	mus_pc_ds2fwpcss_bgm_minigame_07_key, 0
 	.equ	mus_pc_ds2fwpcss_bgm_minigame_07_tbs, 1

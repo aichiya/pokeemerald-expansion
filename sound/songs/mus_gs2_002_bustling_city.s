@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_002_bustling_city_grp, voicegroup601
         .equ    mus_gs2_002_bustling_city_pri, 0
-        .equ    mus_gs2_002_bustling_city_rev, 0
+        .equ    mus_gs2_002_bustling_city_rev, reverb_set+50
         .equ    mus_gs2_002_bustling_city_key, 0
 
         .section .rodata

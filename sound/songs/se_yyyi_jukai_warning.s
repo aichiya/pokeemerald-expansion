@@ -2,7 +2,7 @@
 
 	.equ	se_yyyi_jukai_warning_grp, voicegroup900
 	.equ	se_yyyi_jukai_warning_pri, 0
-	.equ	se_yyyi_jukai_warning_rev, 0
+	.equ	se_yyyi_jukai_warning_rev, reverb_set+50
 	.equ	se_yyyi_jukai_warning_mvl, 127
 	.equ	se_yyyi_jukai_warning_key, 0
 	.equ	se_yyyi_jukai_warning_tbs, 1

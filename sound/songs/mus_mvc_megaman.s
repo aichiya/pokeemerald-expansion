@@ -3,7 +3,7 @@
         .equ    mus_mvc_megaman_grp, voicegroup205
         .equ    mus_mvc_megaman_pri, 0
 	.equ	mus_mvc_megaman_mvl, 150
-        .equ    mus_mvc_megaman_rev, 0
+        .equ    mus_mvc_megaman_rev, reverb_set+50
         .equ    mus_mvc_megaman_key, 0
 
         .section .rodata

@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_hartmannsyoukai_grp, voicegroup210
 	.equ	mus_thpprf_hartmannsyoukai_pri, 0
-	.equ	mus_thpprf_hartmannsyoukai_rev, 0
+	.equ	mus_thpprf_hartmannsyoukai_rev, reverb_set+50
 	.equ	mus_thpprf_hartmannsyoukai_mvl, 96
 	.equ	mus_thpprf_hartmannsyoukai_key, 0
 	.equ	mus_thpprf_hartmannsyoukai_tbs, 1

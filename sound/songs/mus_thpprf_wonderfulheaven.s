@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_wonderfulheaven_grp, voicegroup210
 	.equ	mus_thpprf_wonderfulheaven_pri, 0
-	.equ	mus_thpprf_wonderfulheaven_rev, 0
+	.equ	mus_thpprf_wonderfulheaven_rev, reverb_set+50
 	.equ	mus_thpprf_wonderfulheaven_mvl, 100
 	.equ	mus_thpprf_wonderfulheaven_key, 0
 	.equ	mus_thpprf_wonderfulheaven_tbs, 1

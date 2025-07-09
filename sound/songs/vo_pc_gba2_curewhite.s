@@ -2,7 +2,7 @@
 
 	.equ	vo_pc_gba2_curewhite_grp, voicegroup501
 	.equ	vo_pc_gba2_curewhite_pri, 0
-	.equ	vo_pc_gba2_curewhite_rev, 50
+	.equ	vo_pc_gba2_curewhite_rev, reverb_set+50
 	.equ	vo_pc_gba2_curewhite_mvl, 91
 	.equ	vo_pc_gba2_curewhite_key, 0
 	.equ	vo_pc_gba2_curewhite_tbs, 1

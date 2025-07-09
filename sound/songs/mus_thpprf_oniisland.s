@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_oniisland_grp, voicegroup210
 	.equ	mus_thpprf_oniisland_pri, 0
-	.equ	mus_thpprf_oniisland_rev, 0
+	.equ	mus_thpprf_oniisland_rev, reverb_set+50
 	.equ	mus_thpprf_oniisland_mvl, 96
 	.equ	mus_thpprf_oniisland_key, 0
 	.equ	mus_thpprf_oniisland_tbs, 1

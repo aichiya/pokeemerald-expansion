@@ -2,7 +2,7 @@
 
         .equ    mus_pkmn_battle_madley_1_grp, voicegroup201
         .equ    mus_pkmn_battle_madley_1_pri, 0
-        .equ    mus_pkmn_battle_madley_1_rev, 0
+        .equ    mus_pkmn_battle_madley_1_rev, reverb_set+50
         .equ    mus_pkmn_battle_madley_1_key, 0
 
         .section .rodata

@@ -3,7 +3,7 @@
         .equ    mus_omori_worlds_end_valentine_grp, voicegroup201
         .equ    mus_omori_worlds_end_valentine_pri, 0
         .equ    mus_omori_worlds_end_valentine_mvl, 100
-        .equ    mus_omori_worlds_end_valentine_rev, 0
+        .equ    mus_omori_worlds_end_valentine_rev, reverb_set+50
         .equ    mus_omori_worlds_end_valentine_key, 0
 
         .section .rodata

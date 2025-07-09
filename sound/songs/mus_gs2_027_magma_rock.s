@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_027_magma_rock_grp, voicegroup601
         .equ    mus_gs2_027_magma_rock_pri, 0
-        .equ    mus_gs2_027_magma_rock_rev, 0
+        .equ    mus_gs2_027_magma_rock_rev, reverb_set+50
         .equ    mus_gs2_027_magma_rock_key, 0
 
         .section .rodata

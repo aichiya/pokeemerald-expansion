@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story2_board_sea_grp, voicegroup201
 	.equ	mus_dgmn_story2_board_sea_pri, 0
-	.equ	mus_dgmn_story2_board_sea_rev, 0
+	.equ	mus_dgmn_story2_board_sea_rev, reverb_set+50
 	.equ	mus_dgmn_story2_board_sea_mvl, 100
 	.equ	mus_dgmn_story2_board_sea_key, 0
 	.equ	mus_dgmn_story2_board_sea_tbs, 1

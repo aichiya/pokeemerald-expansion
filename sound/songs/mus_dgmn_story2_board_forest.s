@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story2_board_forest_grp, voicegroup201
 	.equ	mus_dgmn_story2_board_forest_pri, 0
-	.equ	mus_dgmn_story2_board_forest_rev, 0
+	.equ	mus_dgmn_story2_board_forest_rev, reverb_set+50
 	.equ	mus_dgmn_story2_board_forest_mvl, 100
 	.equ	mus_dgmn_story2_board_forest_key, 0
 	.equ	mus_dgmn_story2_board_forest_tbs, 1

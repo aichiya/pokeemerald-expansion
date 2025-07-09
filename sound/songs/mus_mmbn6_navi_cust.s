@@ -3,7 +3,7 @@
         .equ    mus_mmbn6_navi_cust_grp, voicegroup805
         .equ    mus_mmbn6_navi_cust_pri, 0
         .equ    mus_mmbn6_navi_cust_mvl, 100
-        .equ    mus_mmbn6_navi_cust_rev, 50
+        .equ    mus_mmbn6_navi_cust_rev, reverb_set+50
         .equ    mus_mmbn6_navi_cust_key, 0
 
         .section .rodata

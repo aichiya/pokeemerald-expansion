@@ -2,7 +2,7 @@
 
 	.equ	se_etc_zeronos_grp, voicegroup900
 	.equ	se_etc_zeronos_pri, 0
-	.equ	se_etc_zeronos_rev, 0
+	.equ	se_etc_zeronos_rev, reverb_set+50
 	.equ	se_etc_zeronos_mvl, 127
 	.equ	se_etc_zeronos_key, 0
 	.equ	se_etc_zeronos_tbs, 1

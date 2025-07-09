@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_dw1_monochromon_grp, voicegroup201
 	.equ	mus_dgmn_dw1_monochromon_pri, 0
-	.equ	mus_dgmn_dw1_monochromon_rev, 0
+	.equ	mus_dgmn_dw1_monochromon_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_monochromon_mvl, 100
 	.equ	mus_dgmn_dw1_monochromon_key, 0
 	.equ	mus_dgmn_dw1_monochromon_tbs, 1

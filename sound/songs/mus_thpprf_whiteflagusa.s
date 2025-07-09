@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_whiteflagusa_grp, voicegroup210
 	.equ	mus_thpprf_whiteflagusa_pri, 0
-	.equ	mus_thpprf_whiteflagusa_rev, 0
+	.equ	mus_thpprf_whiteflagusa_rev, reverb_set+50
 	.equ	mus_thpprf_whiteflagusa_mvl, 108
 	.equ	mus_thpprf_whiteflagusa_key, 0
 	.equ	mus_thpprf_whiteflagusa_tbs, 1

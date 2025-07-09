@@ -2,7 +2,7 @@
 
         .equ    mus_th_iro_wa_nioedo_cut_grp, voicegroup201
         .equ    mus_th_iro_wa_nioedo_cut_pri, 0
-        .equ    mus_th_iro_wa_nioedo_cut_rev, 0
+        .equ    mus_th_iro_wa_nioedo_cut_rev, reverb_set+50
         .equ    mus_th_iro_wa_nioedo_cut_key, 0
         .equ    mus_th_iro_wa_nioedo_cut_mvl, 127
 

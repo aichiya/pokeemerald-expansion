@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_753_vs_fusion_dragon_grp, voicegroup601
         .equ    mus_gs2_753_vs_fusion_dragon_pri, 0
-        .equ    mus_gs2_753_vs_fusion_dragon_rev, 0
+        .equ    mus_gs2_753_vs_fusion_dragon_rev, reverb_set+50
         .equ    mus_gs2_753_vs_fusion_dragon_key, 0
 
         .section .rodata

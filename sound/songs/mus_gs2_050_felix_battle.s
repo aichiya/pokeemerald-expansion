@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_050_felix_battle_grp, voicegroup601
         .equ    mus_gs2_050_felix_battle_pri, 0
-        .equ    mus_gs2_050_felix_battle_rev, 0
+        .equ    mus_gs2_050_felix_battle_rev, reverb_set+50
         .equ    mus_gs2_050_felix_battle_key, 0
 
         .section .rodata

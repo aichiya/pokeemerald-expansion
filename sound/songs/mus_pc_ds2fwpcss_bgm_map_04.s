@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds2fwpcss_bgm_map_04_grp, voicegroup201
 	.equ	mus_pc_ds2fwpcss_bgm_map_04_pri, 0
-	.equ	mus_pc_ds2fwpcss_bgm_map_04_rev, 0
+	.equ	mus_pc_ds2fwpcss_bgm_map_04_rev, reverb_set+50
 	.equ	mus_pc_ds2fwpcss_bgm_map_04_mvl, 100
 	.equ	mus_pc_ds2fwpcss_bgm_map_04_key, 0
 	.equ	mus_pc_ds2fwpcss_bgm_map_04_tbs, 1

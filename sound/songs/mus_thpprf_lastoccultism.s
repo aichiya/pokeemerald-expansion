@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_lastoccultism_grp, voicegroup210
 	.equ	mus_thpprf_lastoccultism_pri, 0
-	.equ	mus_thpprf_lastoccultism_rev, 0
+	.equ	mus_thpprf_lastoccultism_rev, reverb_set+50
 	.equ	mus_thpprf_lastoccultism_mvl, 100
 	.equ	mus_thpprf_lastoccultism_key, 0
 	.equ	mus_thpprf_lastoccultism_tbs, 1

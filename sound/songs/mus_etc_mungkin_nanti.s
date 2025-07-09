@@ -3,7 +3,7 @@
         .equ    mus_etc_mungkin_nanti_grp, voicegroup201
         .equ    mus_etc_mungkin_nanti_pri, 0
         .equ    mus_etc_mungkin_nanti_mvl, 127
-        .equ    mus_etc_mungkin_nanti_rev, 50
+        .equ    mus_etc_mungkin_nanti_rev, reverb_set+50
         .equ    mus_etc_mungkin_nanti_key, 0
 
         .section .rodata

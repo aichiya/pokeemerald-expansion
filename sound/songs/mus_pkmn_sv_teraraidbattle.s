@@ -2,7 +2,7 @@
 
 	.equ	mus_pkmn_sv_teraraidbattle_grp, voicegroup201
 	.equ	mus_pkmn_sv_teraraidbattle_pri, 0
-	.equ	mus_pkmn_sv_teraraidbattle_rev, 0
+	.equ	mus_pkmn_sv_teraraidbattle_rev, reverb_set+50
 	.equ	mus_pkmn_sv_teraraidbattle_mvl, 127
 	.equ	mus_pkmn_sv_teraraidbattle_key, 0
 	.equ	mus_pkmn_sv_teraraidbattle_tbs, 1

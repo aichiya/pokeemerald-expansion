@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story2_vs_multiplayer_grp, voicegroup201
 	.equ	mus_dgmn_story2_vs_multiplayer_pri, 0
-	.equ	mus_dgmn_story2_vs_multiplayer_rev, 0
+	.equ	mus_dgmn_story2_vs_multiplayer_rev, reverb_set+50
 	.equ	mus_dgmn_story2_vs_multiplayer_mvl, 100
 	.equ	mus_dgmn_story2_vs_multiplayer_key, 0
 	.equ	mus_dgmn_story2_vs_multiplayer_tbs, 1

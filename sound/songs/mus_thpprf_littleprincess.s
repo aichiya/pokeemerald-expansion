@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_littleprincess_grp, voicegroup210
 	.equ	mus_thpprf_littleprincess_pri, 0
-	.equ	mus_thpprf_littleprincess_rev, 0
+	.equ	mus_thpprf_littleprincess_rev, reverb_set+50
 	.equ	mus_thpprf_littleprincess_mvl, 127
 	.equ	mus_thpprf_littleprincess_key, 0
 	.equ	mus_thpprf_littleprincess_tbs, 1

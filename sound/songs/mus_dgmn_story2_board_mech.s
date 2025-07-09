@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story2_board_mech_grp, voicegroup201
 	.equ	mus_dgmn_story2_board_mech_pri, 0
-	.equ	mus_dgmn_story2_board_mech_rev, 0
+	.equ	mus_dgmn_story2_board_mech_rev, reverb_set+50
 	.equ	mus_dgmn_story2_board_mech_mvl, 100
 	.equ	mus_dgmn_story2_board_mech_key, 0
 	.equ	mus_dgmn_story2_board_mech_tbs, 1

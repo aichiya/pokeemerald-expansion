@@ -3,7 +3,7 @@
         .equ    mus_gi_ormos_grp, voicegroup205
         .equ    mus_gi_ormos_pri, 0
         .equ    mus_gi_ormos_mvl, 127
-        .equ    mus_gi_ormos_rev, 0
+        .equ    mus_gi_ormos_rev, reverb_set+50
         .equ    mus_gi_ormos_key, 0
 
         .section .rodata

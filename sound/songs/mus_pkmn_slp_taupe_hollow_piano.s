@@ -2,7 +2,7 @@
 
         .equ    mus_pkmn_slp_taupe_hollow_piano_grp, voicegroup201
         .equ    mus_pkmn_slp_taupe_hollow_piano_pri, 0
-        .equ    mus_pkmn_slp_taupe_hollow_piano_rev, 0
+        .equ    mus_pkmn_slp_taupe_hollow_piano_rev, reverb_set+50
         .equ    mus_pkmn_slp_taupe_hollow_piano_key, 0
 
         .section .rodata

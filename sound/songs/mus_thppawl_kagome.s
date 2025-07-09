@@ -2,7 +2,7 @@
 
 	.equ	mus_thppawl_kagome_grp, voicegroup201
 	.equ	mus_thppawl_kagome_pri, 0
-	.equ	mus_thppawl_kagome_rev, 50
+	.equ	mus_thppawl_kagome_rev, reverb_set+50
 	.equ	mus_thppawl_kagome_mvl, 108
 	.equ	mus_thppawl_kagome_key, 0
 	.equ	mus_thppawl_kagome_tbs, 1

@@ -2,7 +2,7 @@
 
         .equ    mus_thppme_360_grimoire_of_alice_grp, voicegroup157
         .equ    mus_thppme_360_grimoire_of_alice_pri, 0
-        .equ    mus_thppme_360_grimoire_of_alice_rev, 50
+        .equ    mus_thppme_360_grimoire_of_alice_rev, reverb_set+50
         .equ    mus_thppme_360_grimoire_of_alice_key, 0
 
         .section .rodata

@@ -2,7 +2,7 @@
 
         .equ    mus_pc_ureshikute_grp, voicegroup201
         .equ    mus_pc_ureshikute_pri, 0
-        .equ    mus_pc_ureshikute_rev, 0
+        .equ    mus_pc_ureshikute_rev, reverb_set+50
         .equ    mus_pc_ureshikute_key, 0
 
         .section .rodata

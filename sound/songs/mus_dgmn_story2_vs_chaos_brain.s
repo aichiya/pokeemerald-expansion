@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story2_vs_chaos_brain_grp, voicegroup201
 	.equ	mus_dgmn_story2_vs_chaos_brain_pri, 0
-	.equ	mus_dgmn_story2_vs_chaos_brain_rev, 0
+	.equ	mus_dgmn_story2_vs_chaos_brain_rev, reverb_set+50
 	.equ	mus_dgmn_story2_vs_chaos_brain_mvl, 100
 	.equ	mus_dgmn_story2_vs_chaos_brain_key, 0
 	.equ	mus_dgmn_story2_vs_chaos_brain_tbs, 1

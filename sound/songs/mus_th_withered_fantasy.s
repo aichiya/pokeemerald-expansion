@@ -2,7 +2,7 @@
 
         .equ    mus_th_withered_fantasy_grp, voicegroup201
         .equ    mus_th_withered_fantasy_pri, 0
-        .equ    mus_th_withered_fantasy_rev, 0
+        .equ    mus_th_withered_fantasy_rev, reverb_set+50
         .equ    mus_th_withered_fantasy_key, 0
 
         .section .rodata

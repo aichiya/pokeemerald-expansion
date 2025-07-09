@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_dreambattle_grp, voicegroup210
 	.equ	mus_thpprf_dreambattle_pri, 0
-	.equ	mus_thpprf_dreambattle_rev, 0
+	.equ	mus_thpprf_dreambattle_rev, reverb_set+50
 	.equ	mus_thpprf_dreambattle_mvl, 100
 	.equ	mus_thpprf_dreambattle_key, 0
 	.equ	mus_thpprf_dreambattle_tbs, 1

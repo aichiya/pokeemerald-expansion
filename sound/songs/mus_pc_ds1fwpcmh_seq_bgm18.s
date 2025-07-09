@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds1fwpcmh_seq_bgm18_grp, voicegroup201
 	.equ	mus_pc_ds1fwpcmh_seq_bgm18_pri, 0
-	.equ	mus_pc_ds1fwpcmh_seq_bgm18_rev, 0
+	.equ	mus_pc_ds1fwpcmh_seq_bgm18_rev, reverb_set+50
 	.equ	mus_pc_ds1fwpcmh_seq_bgm18_mvl, 100
 	.equ	mus_pc_ds1fwpcmh_seq_bgm18_key, 0
 	.equ	mus_pc_ds1fwpcmh_seq_bgm18_tbs, 1

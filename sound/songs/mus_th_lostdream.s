@@ -2,7 +2,7 @@
 
 	.equ	mus_th_lostdream_grp, voicegroup201
 	.equ	mus_th_lostdream_pri, 0
-	.equ	mus_th_lostdream_rev, 0
+	.equ	mus_th_lostdream_rev, reverb_set+50
 	.equ	mus_th_lostdream_mvl, 100
 	.equ	mus_th_lostdream_key, 0
 	.equ	mus_th_lostdream_tbs, 1

@@ -3,7 +3,7 @@
         .equ    mus_dgmn_card2_butterfly_grp, voicegroup200
         .equ    mus_dgmn_card2_butterfly_pri, 0
         .equ    mus_dgmn_card2_butterfly_mvl, 127
-        .equ    mus_dgmn_card2_butterfly_rev, 0
+        .equ    mus_dgmn_card2_butterfly_rev, reverb_set+50
         .equ    mus_dgmn_card2_butterfly_key, 0
 
         .section .rodata

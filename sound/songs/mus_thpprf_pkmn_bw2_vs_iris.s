@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_pkmn_bw2_vs_iris_grp, voicegroup210
 	.equ	mus_thpprf_pkmn_bw2_vs_iris_pri, 0
-	.equ	mus_thpprf_pkmn_bw2_vs_iris_rev, 0
+	.equ	mus_thpprf_pkmn_bw2_vs_iris_rev, reverb_set+50
 	.equ	mus_thpprf_pkmn_bw2_vs_iris_mvl, 100
 	.equ	mus_thpprf_pkmn_bw2_vs_iris_key, 0
 	.equ	mus_thpprf_pkmn_bw2_vs_iris_tbs, 1

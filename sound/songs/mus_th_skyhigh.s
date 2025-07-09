@@ -2,7 +2,7 @@
 
 	.equ	mus_th_skyhigh_grp, voicegroup200
 	.equ	mus_th_skyhigh_pri, 0
-	.equ	mus_th_skyhigh_rev, 0
+	.equ	mus_th_skyhigh_rev, reverb_set+50
 	.equ	mus_th_skyhigh_mvl, 127
 	.equ	mus_th_skyhigh_key, 0
 	.equ	mus_th_skyhigh_tbs, 1

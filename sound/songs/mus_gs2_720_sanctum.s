@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_720_sanctum_grp, voicegroup601
         .equ    mus_gs2_720_sanctum_pri, 0
-        .equ    mus_gs2_720_sanctum_rev, 0
+        .equ    mus_gs2_720_sanctum_rev, reverb_set+50
         .equ    mus_gs2_720_sanctum_key, 0
 
         .section .rodata

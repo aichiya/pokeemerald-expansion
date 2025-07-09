@@ -2,7 +2,7 @@
 
         .equ    mus_th_bluesea_grp, voicegroup201
         .equ    mus_th_bluesea_pri, 0
-        .equ    mus_th_bluesea_rev, 0
+        .equ    mus_th_bluesea_rev, reverb_set+50
         .equ    mus_th_bluesea_key, 0
 
         .section .rodata

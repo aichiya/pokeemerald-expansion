@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_dw1_filecity_night_grp, voicegroup201
 	.equ	mus_dgmn_dw1_filecity_night_pri, 0
-	.equ	mus_dgmn_dw1_filecity_night_rev, 0
+	.equ	mus_dgmn_dw1_filecity_night_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_filecity_night_mvl, 100
 	.equ	mus_dgmn_dw1_filecity_night_key, 0
 	.equ	mus_dgmn_dw1_filecity_night_tbs, 1

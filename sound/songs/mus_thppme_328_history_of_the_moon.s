@@ -2,7 +2,7 @@
 
         .equ    mus_thppme_328_history_of_the_moon_grp, voicegroup162
         .equ    mus_thppme_328_history_of_the_moon_pri, 0
-        .equ    mus_thppme_328_history_of_the_moon_rev, 50
+        .equ    mus_thppme_328_history_of_the_moon_rev, reverb_set+50
         .equ    mus_thppme_328_history_of_the_moon_key, 0
 
         .section .rodata

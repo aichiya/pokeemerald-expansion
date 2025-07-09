@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_idolatrizeworld_grp, voicegroup210
 	.equ	mus_thpprf_idolatrizeworld_pri, 0
-	.equ	mus_thpprf_idolatrizeworld_rev, 0
+	.equ	mus_thpprf_idolatrizeworld_rev, reverb_set+50
 	.equ	mus_thpprf_idolatrizeworld_mvl, 108
 	.equ	mus_thpprf_idolatrizeworld_key, 0
 	.equ	mus_thpprf_idolatrizeworld_tbs, 1

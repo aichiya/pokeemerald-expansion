@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_heianalien_grp, voicegroup210
 	.equ	mus_thpprf_heianalien_pri, 0
-	.equ	mus_thpprf_heianalien_rev, 0
+	.equ	mus_thpprf_heianalien_rev, reverb_set+50
 	.equ	mus_thpprf_heianalien_mvl, 92
 	.equ	mus_thpprf_heianalien_key, 0
 	.equ	mus_thpprf_heianalien_tbs, 1

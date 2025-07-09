@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_legendoftohno_grp, voicegroup210
 	.equ	mus_thpprf_legendoftohno_pri, 0
-	.equ	mus_thpprf_legendoftohno_rev, 0
+	.equ	mus_thpprf_legendoftohno_rev, reverb_set+50
 	.equ	mus_thpprf_legendoftohno_mvl, 100
 	.equ	mus_thpprf_legendoftohno_key, 0
 	.equ	mus_thpprf_legendoftohno_tbs, 1

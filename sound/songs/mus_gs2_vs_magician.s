@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_vs_magician_grp, voicegroup601
         .equ    mus_gs2_vs_magician_pri, 0
-        .equ    mus_gs2_vs_magician_rev, 50
+        .equ    mus_gs2_vs_magician_rev, reverb_set+50
         .equ    mus_gs2_vs_magician_key, 0
 
         .section .rodata

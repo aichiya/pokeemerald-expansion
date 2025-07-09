@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_trueadministrator_grp, voicegroup210
 	.equ	mus_thpprf_trueadministrator_pri, 0
-	.equ	mus_thpprf_trueadministrator_rev, 0
+	.equ	mus_thpprf_trueadministrator_rev, reverb_set+50
 	.equ	mus_thpprf_trueadministrator_mvl, 100
 	.equ	mus_thpprf_trueadministrator_key, 0
 	.equ	mus_thpprf_trueadministrator_tbs, 1

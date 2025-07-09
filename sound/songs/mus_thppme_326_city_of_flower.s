@@ -2,7 +2,7 @@
 
         .equ    mus_thppme_326_city_of_flower_grp, voicegroup132
         .equ    mus_thppme_326_city_of_flower_pri, 0
-        .equ    mus_thppme_326_city_of_flower_rev, 50
+        .equ    mus_thppme_326_city_of_flower_rev, reverb_set+50
         .equ    mus_thppme_326_city_of_flower_key, 0
 
         .section .rodata

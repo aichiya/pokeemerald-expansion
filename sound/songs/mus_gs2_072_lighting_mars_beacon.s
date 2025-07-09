@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_072_lighting_mars_beacon_grp, voicegroup601
         .equ    mus_gs2_072_lighting_mars_beacon_pri, 0
-        .equ    mus_gs2_072_lighting_mars_beacon_rev, 0
+        .equ    mus_gs2_072_lighting_mars_beacon_rev, reverb_set+50
         .equ    mus_gs2_072_lighting_mars_beacon_key, 0
 
         .section .rodata

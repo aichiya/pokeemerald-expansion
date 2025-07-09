@@ -3,7 +3,7 @@
         .equ    mus_hi3_rubia_grp, voicegroup205
         .equ    mus_hi3_rubia_pri, 0
         .equ    mus_hi3_rubia_mvl, 127
-        .equ    mus_hi3_rubia_rev, 0
+        .equ    mus_hi3_rubia_rev, reverb_set+50
         .equ    mus_hi3_rubia_key, 0
 
         .section .rodata

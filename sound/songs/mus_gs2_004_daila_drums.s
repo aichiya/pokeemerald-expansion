@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_004_daila_drums_grp, voicegroup601
         .equ    mus_gs2_004_daila_drums_pri, 0
-        .equ    mus_gs2_004_daila_drums_rev, 0
+        .equ    mus_gs2_004_daila_drums_rev, reverb_set+50
         .equ    mus_gs2_004_daila_drums_key, 0
 
         .section .rodata

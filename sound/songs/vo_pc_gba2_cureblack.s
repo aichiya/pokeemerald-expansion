@@ -2,7 +2,7 @@
 
 	.equ	vo_pc_gba2_cureblack_grp, voicegroup501
 	.equ	vo_pc_gba2_cureblack_pri, 0
-	.equ	vo_pc_gba2_cureblack_rev, 0
+	.equ	vo_pc_gba2_cureblack_rev, reverb_set+50
 	.equ	vo_pc_gba2_cureblack_mvl, 92
 	.equ	vo_pc_gba2_cureblack_key, 0
 	.equ	vo_pc_gba2_cureblack_tbs, 1

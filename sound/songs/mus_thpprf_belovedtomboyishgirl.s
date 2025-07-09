@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_belovedtomboyishgirl_grp, voicegroup210
 	.equ	mus_thpprf_belovedtomboyishgirl_pri, 0
-	.equ	mus_thpprf_belovedtomboyishgirl_rev, 0
+	.equ	mus_thpprf_belovedtomboyishgirl_rev, reverb_set+50
 	.equ	mus_thpprf_belovedtomboyishgirl_mvl, 92
 	.equ	mus_thpprf_belovedtomboyishgirl_key, 0
 	.equ	mus_thpprf_belovedtomboyishgirl_tbs, 1

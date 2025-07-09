@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_marithemagician_grp, voicegroup210
 	.equ	mus_thpprf_marithemagician_pri, 0
-	.equ	mus_thpprf_marithemagician_rev, 0
+	.equ	mus_thpprf_marithemagician_rev, reverb_set+50
 	.equ	mus_thpprf_marithemagician_mvl, 100
 	.equ	mus_thpprf_marithemagician_key, 0
 	.equ	mus_thpprf_marithemagician_tbs, 1

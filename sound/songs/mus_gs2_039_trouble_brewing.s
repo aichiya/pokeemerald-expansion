@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_039_trouble_brewing_grp, voicegroup601
         .equ    mus_gs2_039_trouble_brewing_pri, 0
-        .equ    mus_gs2_039_trouble_brewing_rev, 0
+        .equ    mus_gs2_039_trouble_brewing_rev, reverb_set+50
         .equ    mus_gs2_039_trouble_brewing_key, 0
 
         .section .rodata

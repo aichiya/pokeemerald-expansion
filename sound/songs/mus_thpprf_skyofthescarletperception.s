@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_skyofthescarletperception_grp, voicegroup210
 	.equ	mus_thpprf_skyofthescarletperception_pri, 0
-	.equ	mus_thpprf_skyofthescarletperception_rev, 0
+	.equ	mus_thpprf_skyofthescarletperception_rev, reverb_set+50
 	.equ	mus_thpprf_skyofthescarletperception_mvl, 92
 	.equ	mus_thpprf_skyofthescarletperception_key, 0
 	.equ	mus_thpprf_skyofthescarletperception_tbs, 1

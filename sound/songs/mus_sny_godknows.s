@@ -2,7 +2,7 @@
 
 	.equ	mus_sny_godknows_grp, voicegroup201
 	.equ	mus_sny_godknows_pri, 0
-	.equ	mus_sny_godknows_rev, 0
+	.equ	mus_sny_godknows_rev, reverb_set+50
 	.equ	mus_sny_godknows_mvl, 100
 	.equ	mus_sny_godknows_key, 0
 	.equ	mus_sny_godknows_tbs, 1

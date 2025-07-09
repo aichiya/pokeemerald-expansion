@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_799_golden_sun_sets_grp, voicegroup601
         .equ    mus_gs2_799_golden_sun_sets_pri, 0
-        .equ    mus_gs2_799_golden_sun_sets_rev, 0
+        .equ    mus_gs2_799_golden_sun_sets_rev, reverb_set+50
         .equ    mus_gs2_799_golden_sun_sets_key, 0
 
         .section .rodata

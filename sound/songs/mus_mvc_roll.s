@@ -3,7 +3,7 @@
         .equ    mus_mvc_roll_grp, voicegroup205
         .equ    mus_mvc_roll_pri, 0
 	.equ	mus_mvc_roll_mvl, 100
-        .equ    mus_mvc_roll_rev, 0
+        .equ    mus_mvc_roll_rev, reverb_set+50
         .equ    mus_mvc_roll_key, 0
 
         .section .rodata

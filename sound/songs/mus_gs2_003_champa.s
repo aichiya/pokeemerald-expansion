@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_003_champa_grp, voicegroup601
         .equ    mus_gs2_003_champa_pri, 0
-        .equ    mus_gs2_003_champa_rev, 0
+        .equ    mus_gs2_003_champa_rev, reverb_set+50
         .equ    mus_gs2_003_champa_key, 0
 
         .section .rodata

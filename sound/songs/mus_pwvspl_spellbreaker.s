@@ -2,7 +2,7 @@
 
 	.equ	mus_pwvspl_spellbreaker_grp, voicegroup204
 	.equ	mus_pwvspl_spellbreaker_pri, 0
-	.equ	mus_pwvspl_spellbreaker_rev, 50
+	.equ	mus_pwvspl_spellbreaker_rev, reverb_set+50
 	.equ	mus_pwvspl_spellbreaker_mvl, 100
 	.equ	mus_pwvspl_spellbreaker_key, 0
 	.equ	mus_pwvspl_spellbreaker_tbs, 1

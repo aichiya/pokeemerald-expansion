@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_060_ivan_theme_grp, voicegroup601
         .equ    mus_gs2_060_ivan_theme_pri, 0
-        .equ    mus_gs2_060_ivan_theme_rev, 0
+        .equ    mus_gs2_060_ivan_theme_rev, reverb_set+50
         .equ    mus_gs2_060_ivan_theme_key, 0
 
         .section .rodata

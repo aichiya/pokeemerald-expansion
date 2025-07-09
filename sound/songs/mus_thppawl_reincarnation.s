@@ -2,7 +2,7 @@
 
 	.equ	mus_thppawl_reincarnation_grp, voicegroup201
 	.equ	mus_thppawl_reincarnation_pri, 0
-	.equ	mus_thppawl_reincarnation_rev, 0
+	.equ	mus_thppawl_reincarnation_rev, reverb_set+50
 	.equ	mus_thppawl_reincarnation_mvl, 108
 	.equ	mus_thppawl_reincarnation_key, 0
 	.equ	mus_thppawl_reincarnation_tbs, 1

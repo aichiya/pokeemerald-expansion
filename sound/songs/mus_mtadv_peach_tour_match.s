@@ -3,7 +3,7 @@
         .equ    mus_mtadv_peach_tour_match_grp, voicegroup601
         .equ    mus_mtadv_peach_tour_match_pri, 0
         .equ    mus_mtadv_peach_tour_match_mvl, 162
-        .equ    mus_mtadv_peach_tour_match_rev, 0
+        .equ    mus_mtadv_peach_tour_match_rev, reverb_set+50
         .equ    mus_mtadv_peach_tour_match_key, 0
 
         .section .rodata

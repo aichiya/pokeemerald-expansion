@@ -3,7 +3,7 @@
         .equ    mus_ygofm_free_duel_grp, voicegroup201
         .equ    mus_ygofm_free_duel_pri, 0
         .equ    mus_ygofm_free_duel_mvl, 80
-        .equ    mus_ygofm_free_duel_rev, 50
+        .equ    mus_ygofm_free_duel_rev, reverb_set+50
         .equ    mus_ygofm_free_duel_key, 0
 
         .section .rodata

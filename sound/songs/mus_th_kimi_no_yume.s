@@ -2,7 +2,7 @@
 
 	.equ	mus_th_kimi_no_yume_grp, voicegroup201
 	.equ	mus_th_kimi_no_yume_pri, 0
-	.equ	mus_th_kimi_no_yume_rev, 0
+	.equ	mus_th_kimi_no_yume_rev, reverb_set+50
 	.equ	mus_th_kimi_no_yume_mvl, 100
 	.equ	mus_th_kimi_no_yume_key, 0
 	.equ	mus_th_kimi_no_yume_tbs, 1

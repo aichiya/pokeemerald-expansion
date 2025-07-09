@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_farsideofthemoon_grp, voicegroup210
 	.equ	mus_thpprf_farsideofthemoon_pri, 0
-	.equ	mus_thpprf_farsideofthemoon_rev, 0
+	.equ	mus_thpprf_farsideofthemoon_rev, reverb_set+50
 	.equ	mus_thpprf_farsideofthemoon_mvl, 96
 	.equ	mus_thpprf_farsideofthemoon_key, 0
 	.equ	mus_thpprf_farsideofthemoon_tbs, 1

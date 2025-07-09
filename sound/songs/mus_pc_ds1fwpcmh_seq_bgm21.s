@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds1fwpcmh_seq_bgm21_grp, voicegroup201
 	.equ	mus_pc_ds1fwpcmh_seq_bgm21_pri, 0
-	.equ	mus_pc_ds1fwpcmh_seq_bgm21_rev, 0
+	.equ	mus_pc_ds1fwpcmh_seq_bgm21_rev, reverb_set+50
 	.equ	mus_pc_ds1fwpcmh_seq_bgm21_mvl, 100
 	.equ	mus_pc_ds1fwpcmh_seq_bgm21_key, 0
 	.equ	mus_pc_ds1fwpcmh_seq_bgm21_tbs, 1

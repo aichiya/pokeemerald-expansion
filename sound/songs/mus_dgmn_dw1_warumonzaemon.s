@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_dw1_warumonzaemon_grp, voicegroup201
 	.equ	mus_dgmn_dw1_warumonzaemon_pri, 0
-	.equ	mus_dgmn_dw1_warumonzaemon_rev, 0
+	.equ	mus_dgmn_dw1_warumonzaemon_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_warumonzaemon_mvl, 100
 	.equ	mus_dgmn_dw1_warumonzaemon_key, 0
 	.equ	mus_dgmn_dw1_warumonzaemon_tbs, 1

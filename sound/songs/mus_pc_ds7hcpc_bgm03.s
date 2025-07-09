@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds7hcpc_bgm03_grp, voicegroup201
 	.equ	mus_pc_ds7hcpc_bgm03_pri, 0
-	.equ	mus_pc_ds7hcpc_bgm03_rev, 0
+	.equ	mus_pc_ds7hcpc_bgm03_rev, reverb_set+50
 	.equ	mus_pc_ds7hcpc_bgm03_mvl, 100
 	.equ	mus_pc_ds7hcpc_bgm03_key, 0
 	.equ	mus_pc_ds7hcpc_bgm03_tbs, 1

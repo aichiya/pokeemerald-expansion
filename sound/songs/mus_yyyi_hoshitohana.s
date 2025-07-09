@@ -2,7 +2,7 @@
 
 	.equ	mus_yyyi_hoshitohana_grp, voicegroup201
 	.equ	mus_yyyi_hoshitohana_pri, 0
-	.equ	mus_yyyi_hoshitohana_rev, 0
+	.equ	mus_yyyi_hoshitohana_rev, reverb_set+50
 	.equ	mus_yyyi_hoshitohana_mvl, 127
 	.equ	mus_yyyi_hoshitohana_key, 0
 	.equ	mus_yyyi_hoshitohana_tbs, 1

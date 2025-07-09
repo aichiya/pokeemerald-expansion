@@ -2,7 +2,7 @@
 
         .equ    mus_thppme_293_lunate_elf_grp, voicegroup152
         .equ    mus_thppme_293_lunate_elf_pri, 0
-        .equ    mus_thppme_293_lunate_elf_rev, 50
+        .equ    mus_thppme_293_lunate_elf_rev, reverb_set+50
         .equ    mus_thppme_293_lunate_elf_key, 0
 
         .section .rodata

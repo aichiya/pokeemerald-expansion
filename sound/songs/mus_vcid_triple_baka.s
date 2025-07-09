@@ -3,7 +3,7 @@
         .equ    mus_vcid_triple_baka_grp, voicegroup201
         .equ    mus_vcid_triple_baka_pri, 0
         .equ    mus_vcid_triple_baka_mvl, 127
-        .equ    mus_vcid_triple_baka_rev, 0
+        .equ    mus_vcid_triple_baka_rev, reverb_set+50
         .equ    mus_vcid_triple_baka_key, 0
 
         .section .rodata

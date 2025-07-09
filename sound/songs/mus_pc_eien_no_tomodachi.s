@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_eien_no_tomodachi_grp, voicegroup202
 	.equ	mus_pc_eien_no_tomodachi_pri, 0
-	.equ	mus_pc_eien_no_tomodachi_rev, 0
+	.equ	mus_pc_eien_no_tomodachi_rev, reverb_set+50
 	.equ	mus_pc_eien_no_tomodachi_mvl, 110
 	.equ	mus_pc_eien_no_tomodachi_key, 0
 	.equ	mus_pc_eien_no_tomodachi_tbs, 1

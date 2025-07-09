@@ -2,7 +2,7 @@
 
 	.equ	mus_pkmn_usum_vs_wild_grp, voicegroup201
 	.equ	mus_pkmn_usum_vs_wild_pri, 0
-	.equ	mus_pkmn_usum_vs_wild_rev, 0
+	.equ	mus_pkmn_usum_vs_wild_rev, reverb_set+50
 	.equ	mus_pkmn_usum_vs_wild_mvl, 82
 	.equ	mus_pkmn_usum_vs_wild_key, 0
 	.equ	mus_pkmn_usum_vs_wild_tbs, 1

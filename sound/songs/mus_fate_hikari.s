@@ -2,7 +2,7 @@
 
         .equ    mus_fate_hikari_grp, voicegroup205
         .equ    mus_fate_hikari_pri, 0
-        .equ    mus_fate_hikari_rev, 0
+        .equ    mus_fate_hikari_rev, reverb_set+50
         .equ    mus_fate_hikari_key, 0
 
         .section .rodata

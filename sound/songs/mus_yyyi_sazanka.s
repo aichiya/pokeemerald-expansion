@@ -2,7 +2,7 @@
 
 	.equ	mus_yyyi_sazanka_grp, voicegroup201
 	.equ	mus_yyyi_sazanka_pri, 0
-	.equ	mus_yyyi_sazanka_rev, 0
+	.equ	mus_yyyi_sazanka_rev, reverb_set+50
 	.equ	mus_yyyi_sazanka_mvl, 127
 	.equ	mus_yyyi_sazanka_key, 0
 	.equ	mus_yyyi_sazanka_tbs, 1

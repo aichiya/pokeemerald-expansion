@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_036_karst_appears_grp, voicegroup601
         .equ    mus_gs2_036_karst_appears_pri, 0
-        .equ    mus_gs2_036_karst_appears_rev, 0
+        .equ    mus_gs2_036_karst_appears_rev, reverb_set+50
         .equ    mus_gs2_036_karst_appears_key, 0
 
         .section .rodata

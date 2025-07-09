@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_726_imil_grp, voicegroup601
         .equ    mus_gs2_726_imil_pri, 0
-        .equ    mus_gs2_726_imil_rev, 0
+        .equ    mus_gs2_726_imil_rev, reverb_set+50
         .equ    mus_gs2_726_imil_key, 0
 
         .section .rodata

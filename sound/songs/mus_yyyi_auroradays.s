@@ -2,7 +2,7 @@
 
 	.equ	mus_yyyi_auroradays_grp, voicegroup201
 	.equ	mus_yyyi_auroradays_pri, 0
-	.equ	mus_yyyi_auroradays_rev, 0
+	.equ	mus_yyyi_auroradays_rev, reverb_set+50
 	.equ	mus_yyyi_auroradays_mvl, 127
 	.equ	mus_yyyi_auroradays_key, 0
 	.equ	mus_yyyi_auroradays_tbs, 1

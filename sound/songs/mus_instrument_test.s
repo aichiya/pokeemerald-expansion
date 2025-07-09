@@ -2,7 +2,7 @@
 
 	.equ	mus_instrument_test_grp, voicegroup505
 	.equ	mus_instrument_test_pri, 0
-	.equ	mus_instrument_test_rev, 0
+	.equ	mus_instrument_test_rev, reverb_set+50
 	.equ	mus_instrument_test_mvl, 127
 	.equ	mus_instrument_test_key, 0
 	.equ	mus_instrument_test_tbs, 1

@@ -2,7 +2,7 @@
 
 	.equ	mus_gi_moonlikesmile_grp, voicegroup201
 	.equ	mus_gi_moonlikesmile_pri, 0
-	.equ	mus_gi_moonlikesmile_rev, 0
+	.equ	mus_gi_moonlikesmile_rev, reverb_set+50
 	.equ	mus_gi_moonlikesmile_mvl, 100
 	.equ	mus_gi_moonlikesmile_key, 0
 	.equ	mus_gi_moonlikesmile_tbs, 1

@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_openmyheart_grp, voicegroup201
 	.equ	mus_pc_openmyheart_pri, 0
-	.equ	mus_pc_openmyheart_rev, 0
+	.equ	mus_pc_openmyheart_rev, reverb_set+50
 	.equ	mus_pc_openmyheart_mvl, 127
 	.equ	mus_pc_openmyheart_key, 0
 	.equ	mus_pc_openmyheart_tbs, 1

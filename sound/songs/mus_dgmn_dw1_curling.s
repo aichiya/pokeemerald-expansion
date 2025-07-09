@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_dw1_curling_grp, voicegroup201
 	.equ	mus_dgmn_dw1_curling_pri, 0
-	.equ	mus_dgmn_dw1_curling_rev, 0
+	.equ	mus_dgmn_dw1_curling_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_curling_mvl, 100
 	.equ	mus_dgmn_dw1_curling_key, 0
 	.equ	mus_dgmn_dw1_curling_tbs, 1

@@ -2,7 +2,7 @@
 
         .equ    mus_key_clannad_tokino_grp, voicegroup201
         .equ    mus_key_clannad_tokino_pri, 0
-        .equ    mus_key_clannad_tokino_rev, 0
+        .equ    mus_key_clannad_tokino_rev, reverb_set+50
         .equ    mus_key_clannad_tokino_key, 0
 
         .section .rodata

@@ -2,7 +2,7 @@
 
 	.equ	mus_thppawl_extendash_grp, voicegroup201
 	.equ	mus_thppawl_extendash_pri, 0
-	.equ	mus_thppawl_extendash_rev, 0
+	.equ	mus_thppawl_extendash_rev, reverb_set+50
 	.equ	mus_thppawl_extendash_mvl, 100
 	.equ	mus_thppawl_extendash_key, 0
 	.equ	mus_thppawl_extendash_tbs, 1

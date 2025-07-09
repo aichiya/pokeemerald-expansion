@@ -2,7 +2,7 @@
 
 	.equ	mus_yyyi_battle_02_test_grp, voicegroup202
 	.equ	mus_yyyi_battle_02_test_pri, 0
-	.equ	mus_yyyi_battle_02_test_rev, 0
+	.equ	mus_yyyi_battle_02_test_rev, reverb_set+50
 	.equ	mus_yyyi_battle_02_test_mvl, 100
 	.equ	mus_yyyi_battle_02_test_key, 0
 	.equ	mus_yyyi_battle_02_test_tbs, 1

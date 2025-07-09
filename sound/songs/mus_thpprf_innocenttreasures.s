@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_innocenttreasures_grp, voicegroup210
 	.equ	mus_thpprf_innocenttreasures_pri, 0
-	.equ	mus_thpprf_innocenttreasures_rev, 0
+	.equ	mus_thpprf_innocenttreasures_rev, reverb_set+50
 	.equ	mus_thpprf_innocenttreasures_mvl, 100
 	.equ	mus_thpprf_innocenttreasures_key, 0
 	.equ	mus_thpprf_innocenttreasures_tbs, 1

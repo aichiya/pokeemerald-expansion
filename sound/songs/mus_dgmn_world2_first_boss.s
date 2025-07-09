@@ -2,7 +2,7 @@
 
         .equ    mus_dgmn_world2_first_boss_grp, voicegroup201
         .equ    mus_dgmn_world2_first_boss_pri, 0
-        .equ    mus_dgmn_world2_first_boss_rev, 0
+        .equ    mus_dgmn_world2_first_boss_rev, reverb_set+50
         .equ    mus_dgmn_world2_first_boss_key, 0
 
         .section .rodata

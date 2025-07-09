@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_076_trial_road_grp, voicegroup601
         .equ    mus_gs2_076_trial_road_pri, 0
-        .equ    mus_gs2_076_trial_road_rev, 0
+        .equ    mus_gs2_076_trial_road_rev, reverb_set+50
         .equ    mus_gs2_076_trial_road_key, 0
 
         .section .rodata

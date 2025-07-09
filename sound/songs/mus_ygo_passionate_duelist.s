@@ -2,7 +2,7 @@
 
 	.equ	mus_ygo_passionate_duelist_grp, voicegroup201
 	.equ	mus_ygo_passionate_duelist_pri, 0
-	.equ	mus_ygo_passionate_duelist_rev, 0
+	.equ	mus_ygo_passionate_duelist_rev, reverb_set+50
 	.equ	mus_ygo_passionate_duelist_mvl, 127
 	.equ	mus_ygo_passionate_duelist_key, 0
 	.equ	mus_ygo_passionate_duelist_tbs, 1

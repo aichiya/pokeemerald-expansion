@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_girlssealingclub_grp, voicegroup210
 	.equ	mus_thpprf_girlssealingclub_pri, 0
-	.equ	mus_thpprf_girlssealingclub_rev, 0
+	.equ	mus_thpprf_girlssealingclub_rev, reverb_set+50
 	.equ	mus_thpprf_girlssealingclub_mvl, 108
 	.equ	mus_thpprf_girlssealingclub_key, 0
 	.equ	mus_thpprf_girlssealingclub_tbs, 1

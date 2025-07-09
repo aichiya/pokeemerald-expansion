@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_053_flame_dragons_grp, voicegroup601
         .equ    mus_gs2_053_flame_dragons_pri, 0
-        .equ    mus_gs2_053_flame_dragons_rev, 0
+        .equ    mus_gs2_053_flame_dragons_rev, reverb_set+50
         .equ    mus_gs2_053_flame_dragons_key, 0
 
         .section .rodata

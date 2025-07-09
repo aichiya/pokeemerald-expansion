@@ -2,7 +2,7 @@
 
 	.equ	mus_dbs_royal_blue_grp, voicegroup201
 	.equ	mus_dbs_royal_blue_pri, 0
-	.equ	mus_dbs_royal_blue_rev, 0
+	.equ	mus_dbs_royal_blue_rev, reverb_set+50
 	.equ	mus_dbs_royal_blue_mvl, 110
 	.equ	mus_dbs_royal_blue_key, 0
 	.equ	mus_dbs_royal_blue_tbs, 1

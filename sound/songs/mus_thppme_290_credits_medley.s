@@ -2,7 +2,7 @@
 
         .equ    mus_thppme_290_credits_medley_grp, voicegroup149
         .equ    mus_thppme_290_credits_medley_pri, 0
-        .equ    mus_thppme_290_credits_medley_rev, 50
+        .equ    mus_thppme_290_credits_medley_rev, reverb_set+50
         .equ    mus_thppme_290_credits_medley_key, 0
 
         .section .rodata

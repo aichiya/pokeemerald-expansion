@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_purefuries_grp, voicegroup210
 	.equ	mus_thpprf_purefuries_pri, 0
-	.equ	mus_thpprf_purefuries_rev, 0
+	.equ	mus_thpprf_purefuries_rev, reverb_set+50
 	.equ	mus_thpprf_purefuries_mvl, 92
 	.equ	mus_thpprf_purefuries_key, 0
 	.equ	mus_thpprf_purefuries_tbs, 1

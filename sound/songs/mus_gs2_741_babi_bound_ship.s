@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_741_babi_bound_ship_grp, voicegroup601
         .equ    mus_gs2_741_babi_bound_ship_pri, 0
-        .equ    mus_gs2_741_babi_bound_ship_rev, 0
+        .equ    mus_gs2_741_babi_bound_ship_rev, reverb_set+50
         .equ    mus_gs2_741_babi_bound_ship_key, 0
 
         .section .rodata

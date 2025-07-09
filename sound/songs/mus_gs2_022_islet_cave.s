@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_022_islet_cave_grp, voicegroup601
         .equ    mus_gs2_022_islet_cave_pri, 0
-        .equ    mus_gs2_022_islet_cave_rev, 0
+        .equ    mus_gs2_022_islet_cave_rev, reverb_set+50
         .equ    mus_gs2_022_islet_cave_key, 0
 
         .section .rodata

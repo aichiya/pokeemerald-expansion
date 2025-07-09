@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_010_kimbombo_ceremony_grp, voicegroup601
         .equ    mus_gs2_010_kimbombo_ceremony_pri, 0
-        .equ    mus_gs2_010_kimbombo_ceremony_rev, 0
+        .equ    mus_gs2_010_kimbombo_ceremony_rev, reverb_set+50
         .equ    mus_gs2_010_kimbombo_ceremony_key, 0
 
         .section .rodata

@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_038_crying_in_sorrow_grp, voicegroup601
         .equ    mus_gs2_038_crying_in_sorrow_pri, 0
-        .equ    mus_gs2_038_crying_in_sorrow_rev, 0
+        .equ    mus_gs2_038_crying_in_sorrow_rev, reverb_set+50
         .equ    mus_gs2_038_crying_in_sorrow_key, 0
 
         .section .rodata

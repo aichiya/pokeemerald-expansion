@@ -2,7 +2,7 @@
 
 	.equ	vo_pc_gba2_extreme_grp, voicegroup501
 	.equ	vo_pc_gba2_extreme_pri, 0
-	.equ	vo_pc_gba2_extreme_rev, 50
+	.equ	vo_pc_gba2_extreme_rev, reverb_set+50
 	.equ	vo_pc_gba2_extreme_mvl, 92
 	.equ	vo_pc_gba2_extreme_key, 0
 	.equ	vo_pc_gba2_extreme_tbs, 1

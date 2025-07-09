@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_071_password_grp, voicegroup601
         .equ    mus_gs2_071_password_pri, 0
-        .equ    mus_gs2_071_password_rev, 0
+        .equ    mus_gs2_071_password_rev, reverb_set+50
         .equ    mus_gs2_071_password_key, 0
 
         .section .rodata

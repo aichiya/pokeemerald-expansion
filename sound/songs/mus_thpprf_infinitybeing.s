@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_infinitybeing_grp, voicegroup210
 	.equ	mus_thpprf_infinitybeing_pri, 0
-	.equ	mus_thpprf_infinitybeing_rev, 0
+	.equ	mus_thpprf_infinitybeing_rev, reverb_set+50
 	.equ	mus_thpprf_infinitybeing_mvl, 92
 	.equ	mus_thpprf_infinitybeing_key, 0
 	.equ	mus_thpprf_infinitybeing_tbs, 1

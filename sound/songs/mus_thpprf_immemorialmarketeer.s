@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_immemorialmarketeer_grp, voicegroup210
 	.equ	mus_thpprf_immemorialmarketeer_pri, 0
-	.equ	mus_thpprf_immemorialmarketeer_rev, 0
+	.equ	mus_thpprf_immemorialmarketeer_rev, reverb_set+50
 	.equ	mus_thpprf_immemorialmarketeer_mvl, 92
 	.equ	mus_thpprf_immemorialmarketeer_key, 0
 	.equ	mus_thpprf_immemorialmarketeer_tbs, 1

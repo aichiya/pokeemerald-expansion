@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_014_kalt_island_grp, voicegroup601
         .equ    mus_gs2_014_kalt_island_pri, 0
-        .equ    mus_gs2_014_kalt_island_rev, 0
+        .equ    mus_gs2_014_kalt_island_rev, reverb_set+50
         .equ    mus_gs2_014_kalt_island_key, 0
 
         .section .rodata

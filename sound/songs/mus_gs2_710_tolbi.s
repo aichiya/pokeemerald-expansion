@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_710_tolbi_grp, voicegroup601
         .equ    mus_gs2_710_tolbi_pri, 0
-        .equ    mus_gs2_710_tolbi_rev, 0
+        .equ    mus_gs2_710_tolbi_rev, reverb_set+50
         .equ    mus_gs2_710_tolbi_key, 0
 
         .section .rodata

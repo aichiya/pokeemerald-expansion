@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_703_castle_grp, voicegroup601
         .equ    mus_gs2_703_castle_pri, 0
-        .equ    mus_gs2_703_castle_rev, 0
+        .equ    mus_gs2_703_castle_rev, reverb_set+50
         .equ    mus_gs2_703_castle_key, 0
 
         .section .rodata

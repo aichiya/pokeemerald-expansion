@@ -3,7 +3,7 @@
         .equ    mus_ff6_vs_boss_grp, voicegroup205
         .equ    mus_ff6_vs_boss_pri, 0
         .equ    mus_ff6_vs_boss_mvl, 254
-        .equ    mus_ff6_vs_boss_rev, 0
+        .equ    mus_ff6_vs_boss_rev, reverb_set+50
         .equ    mus_ff6_vs_boss_key, 0
 
         .section .rodata

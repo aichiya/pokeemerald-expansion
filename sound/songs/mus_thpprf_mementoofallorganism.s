@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_mementoofallorganism_grp, voicegroup210
 	.equ	mus_thpprf_mementoofallorganism_pri, 0
-	.equ	mus_thpprf_mementoofallorganism_rev, 0
+	.equ	mus_thpprf_mementoofallorganism_rev, reverb_set+50
 	.equ	mus_thpprf_mementoofallorganism_mvl, 108
 	.equ	mus_thpprf_mementoofallorganism_key, 0
 	.equ	mus_thpprf_mementoofallorganism_tbs, 1

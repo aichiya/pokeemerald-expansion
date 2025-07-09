@@ -2,7 +2,7 @@
 
         .equ    mus_dgmn_brave_heart_grp, voicegroup201
         .equ    mus_dgmn_brave_heart_pri, 0
-        .equ    mus_dgmn_brave_heart_rev, 0
+        .equ    mus_dgmn_brave_heart_rev, reverb_set+50
         .equ    mus_dgmn_brave_heart_key, 0
 
         .section .rodata

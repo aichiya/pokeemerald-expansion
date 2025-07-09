@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_743_venus_lighthouse_grp, voicegroup601
         .equ    mus_gs2_743_venus_lighthouse_pri, 0
-        .equ    mus_gs2_743_venus_lighthouse_rev, 0
+        .equ    mus_gs2_743_venus_lighthouse_rev, reverb_set+50
         .equ    mus_gs2_743_venus_lighthouse_key, 0
 
         .section .rodata

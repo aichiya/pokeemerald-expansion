@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_064_lighting_beacons_grp, voicegroup601
         .equ    mus_gs2_064_lighting_beacons_pri, 0
-        .equ    mus_gs2_064_lighting_beacons_rev, 0
+        .equ    mus_gs2_064_lighting_beacons_rev, reverb_set+50
         .equ    mus_gs2_064_lighting_beacons_key, 0
 
         .section .rodata

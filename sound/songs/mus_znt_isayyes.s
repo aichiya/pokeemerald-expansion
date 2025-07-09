@@ -2,7 +2,7 @@
 
 	.equ	mus_znt_isayyes_grp, voicegroup201
 	.equ	mus_znt_isayyes_pri, 0
-	.equ	mus_znt_isayyes_rev, 0
+	.equ	mus_znt_isayyes_rev, reverb_set+50
 	.equ	mus_znt_isayyes_mvl, 100
 	.equ	mus_znt_isayyes_key, 0
 	.equ	mus_znt_isayyes_tbs, 1

@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_groundscolorisyellow_grp, voicegroup210
 	.equ	mus_thpprf_groundscolorisyellow_pri, 0
-	.equ	mus_thpprf_groundscolorisyellow_rev, 0
+	.equ	mus_thpprf_groundscolorisyellow_rev, reverb_set+50
 	.equ	mus_thpprf_groundscolorisyellow_mvl, 100
 	.equ	mus_thpprf_groundscolorisyellow_key, 0
 	.equ	mus_thpprf_groundscolorisyellow_tbs, 1

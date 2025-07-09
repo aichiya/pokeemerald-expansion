@@ -3,7 +3,7 @@
         .equ    mus_etc_hana_ni_natte_grp, voicegroup205
         .equ    mus_etc_hana_ni_natte_pri, 0
         .equ    mus_etc_hana_ni_natte_mvl, 127
-        .equ    mus_etc_hana_ni_natte_rev, 0
+        .equ    mus_etc_hana_ni_natte_rev, reverb_set+50
         .equ    mus_etc_hana_ni_natte_key, 0
 
         .section .rodata

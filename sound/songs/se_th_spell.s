@@ -2,7 +2,7 @@
 
 	.equ	se_th_spell_grp, voicegroup900
 	.equ	se_th_spell_pri, 0
-	.equ	se_th_spell_rev, 0
+	.equ	se_th_spell_rev, reverb_set+50
 	.equ	se_th_spell_mvl, 127
 	.equ	se_th_spell_key, 0
 	.equ	se_th_spell_tbs, 1

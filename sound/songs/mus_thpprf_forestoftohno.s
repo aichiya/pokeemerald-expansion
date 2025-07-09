@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_forestoftohno_grp, voicegroup210
 	.equ	mus_thpprf_forestoftohno_pri, 0
-	.equ	mus_thpprf_forestoftohno_rev, 0
+	.equ	mus_thpprf_forestoftohno_rev, reverb_set+50
 	.equ	mus_thpprf_forestoftohno_mvl, 108
 	.equ	mus_thpprf_forestoftohno_key, 0
 	.equ	mus_thpprf_forestoftohno_tbs, 1

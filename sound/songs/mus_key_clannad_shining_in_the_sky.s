@@ -3,7 +3,7 @@
         .equ    mus_key_clannad_shining_in_the_sky_grp, voicegroup205
         .equ    mus_key_clannad_shining_in_the_sky_pri, 0
         .equ    mus_key_clannad_shining_in_the_sky_mvl, 135
-        .equ    mus_key_clannad_shining_in_the_sky_rev, 0
+        .equ    mus_key_clannad_shining_in_the_sky_rev, reverb_set+50
         .equ    mus_key_clannad_shining_in_the_sky_key, 0
 
         .section .rodata

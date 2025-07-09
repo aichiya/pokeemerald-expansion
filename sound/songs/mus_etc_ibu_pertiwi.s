@@ -2,7 +2,7 @@
 
         .equ    mus_etc_ibu_pertiwi_grp, voicegroup201
         .equ    mus_etc_ibu_pertiwi_pri, 0
-        .equ    mus_etc_ibu_pertiwi_rev, 0
+        .equ    mus_etc_ibu_pertiwi_rev, reverb_set+50
         .equ    mus_etc_ibu_pertiwi_key, 0
 
         .section .rodata

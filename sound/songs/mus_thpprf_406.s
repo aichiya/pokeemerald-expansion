@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_406_grp, voicegroup210
 	.equ	mus_thpprf_406_pri, 0
-	.equ	mus_thpprf_406_rev, 0
+	.equ	mus_thpprf_406_rev, reverb_set+50
 	.equ	mus_thpprf_406_mvl, 127
 	.equ	mus_thpprf_406_key, 0
 	.equ	mus_thpprf_406_tbs, 1

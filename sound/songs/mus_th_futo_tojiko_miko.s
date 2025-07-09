@@ -3,7 +3,7 @@
         .equ    mus_th_futo_tojiko_miko_grp, voicegroup802
         .equ    mus_th_futo_tojiko_miko_pri, 0
         .equ    mus_th_futo_tojiko_miko_mvl, 100
-        .equ    mus_th_futo_tojiko_miko_rev, 50
+        .equ    mus_th_futo_tojiko_miko_rev, reverb_set+50
         .equ    mus_th_futo_tojiko_miko_key, 0
 
         .section .rodata

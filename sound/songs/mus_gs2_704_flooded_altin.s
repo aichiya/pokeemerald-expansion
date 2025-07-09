@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_704_flooded_altin_grp, voicegroup601
         .equ    mus_gs2_704_flooded_altin_pri, 0
-        .equ    mus_gs2_704_flooded_altin_rev, 0
+        .equ    mus_gs2_704_flooded_altin_rev, reverb_set+50
         .equ    mus_gs2_704_flooded_altin_key, 0
 
         .section .rodata

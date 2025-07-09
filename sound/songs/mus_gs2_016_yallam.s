@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_016_yallam_grp, voicegroup601
         .equ    mus_gs2_016_yallam_pri, 0
-        .equ    mus_gs2_016_yallam_rev, 0
+        .equ    mus_gs2_016_yallam_rev, reverb_set+50
         .equ    mus_gs2_016_yallam_key, 0
 
         .section .rodata

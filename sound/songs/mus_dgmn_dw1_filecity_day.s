@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_dw1_filecity_day_grp, voicegroup201
 	.equ	mus_dgmn_dw1_filecity_day_pri, 0
-	.equ	mus_dgmn_dw1_filecity_day_rev, 0
+	.equ	mus_dgmn_dw1_filecity_day_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_filecity_day_mvl, 100
 	.equ	mus_dgmn_dw1_filecity_day_key, 0
 	.equ	mus_dgmn_dw1_filecity_day_tbs, 1

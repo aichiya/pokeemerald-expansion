@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_705_lama_temple_grp, voicegroup601
         .equ    mus_gs2_705_lama_temple_pri, 0
-        .equ    mus_gs2_705_lama_temple_rev, 0
+        .equ    mus_gs2_705_lama_temple_rev, reverb_set+50
         .equ    mus_gs2_705_lama_temple_key, 0
 
         .section .rodata

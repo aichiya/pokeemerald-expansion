@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_709_lucky_pool_grp, voicegroup601
         .equ    mus_gs2_709_lucky_pool_pri, 0
-        .equ    mus_gs2_709_lucky_pool_rev, 0
+        .equ    mus_gs2_709_lucky_pool_rev, reverb_set+50
         .equ    mus_gs2_709_lucky_pool_key, 0
 
         .section .rodata

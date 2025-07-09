@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_007_izumo_under_the_serpent_grp, voicegroup601
         .equ    mus_gs2_007_izumo_under_the_serpent_pri, 0
-        .equ    mus_gs2_007_izumo_under_the_serpent_rev, 0
+        .equ    mus_gs2_007_izumo_under_the_serpent_rev, reverb_set+50
         .equ    mus_gs2_007_izumo_under_the_serpent_key, 0
 
         .section .rodata

@@ -2,7 +2,7 @@
 
         .equ    mus_th_primal_scene_solo_grp, voicegroup999
         .equ    mus_th_primal_scene_solo_pri, 0
-        .equ    mus_th_primal_scene_solo_rev, 0
+        .equ    mus_th_primal_scene_solo_rev, reverb_set+50
         .equ    mus_th_primal_scene_solo_key, 0
 
         .section .rodata

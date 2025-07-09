@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ultracurehappytanjou_grp, voicegroup201
 	.equ	mus_pc_ultracurehappytanjou_pri, 0
-	.equ	mus_pc_ultracurehappytanjou_rev, 0
+	.equ	mus_pc_ultracurehappytanjou_rev, reverb_set+50
 	.equ	mus_pc_ultracurehappytanjou_mvl, 127
 	.equ	mus_pc_ultracurehappytanjou_key, 0
 	.equ	mus_pc_ultracurehappytanjou_tbs, 1

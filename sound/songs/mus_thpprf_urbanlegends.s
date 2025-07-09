@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_urbanlegends_grp, voicegroup210
 	.equ	mus_thpprf_urbanlegends_pri, 0
-	.equ	mus_thpprf_urbanlegends_rev, 0
+	.equ	mus_thpprf_urbanlegends_rev, reverb_set+50
 	.equ	mus_thpprf_urbanlegends_mvl, 108
 	.equ	mus_thpprf_urbanlegends_key, 0
 	.equ	mus_thpprf_urbanlegends_tbs, 1

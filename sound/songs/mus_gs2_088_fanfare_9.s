@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_088_fanfare_9_grp, voicegroup601
         .equ    mus_gs2_088_fanfare_9_pri, 0
-        .equ    mus_gs2_088_fanfare_9_rev, 0
+        .equ    mus_gs2_088_fanfare_9_rev, reverb_set+50
         .equ    mus_gs2_088_fanfare_9_key, 0
 
         .section .rodata

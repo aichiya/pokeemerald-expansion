@@ -2,7 +2,7 @@
 
 	.equ	vo_pc_gba2_shiningstream_grp, voicegroup501
 	.equ	vo_pc_gba2_shiningstream_pri, 0
-	.equ	vo_pc_gba2_shiningstream_rev, 50
+	.equ	vo_pc_gba2_shiningstream_rev, reverb_set+50
 	.equ	vo_pc_gba2_shiningstream_mvl, 92
 	.equ	vo_pc_gba2_shiningstream_key, 0
 	.equ	vo_pc_gba2_shiningstream_tbs, 1

@@ -2,7 +2,7 @@
 
         .equ    mus_ty_tunneling_troll_grp, voicegroup201
         .equ    mus_ty_tunneling_troll_pri, 0
-        .equ    mus_ty_tunneling_troll_rev, 0
+        .equ    mus_ty_tunneling_troll_rev, reverb_set+50
         .equ    mus_ty_tunneling_troll_key, 0
 
         .section .rodata

@@ -3,7 +3,7 @@
         .equ    mus_mmbn6_vs_virus_grp, voicegroup805
         .equ    mus_mmbn6_vs_virus_pri, 0
         .equ    mus_mmbn6_vs_virus_mvl, 100
-        .equ    mus_mmbn6_vs_virus_rev, 50
+        .equ    mus_mmbn6_vs_virus_rev, reverb_set+50
         .equ    mus_mmbn6_vs_virus_key, 0
 
         .section .rodata

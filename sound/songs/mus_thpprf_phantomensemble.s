@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_phantomensemble_grp, voicegroup210
 	.equ	mus_thpprf_phantomensemble_pri, 0
-	.equ	mus_thpprf_phantomensemble_rev, 0
+	.equ	mus_thpprf_phantomensemble_rev, reverb_set+50
 	.equ	mus_thpprf_phantomensemble_mvl, 100
 	.equ	mus_thpprf_phantomensemble_key, 0
 	.equ	mus_thpprf_phantomensemble_tbs, 1

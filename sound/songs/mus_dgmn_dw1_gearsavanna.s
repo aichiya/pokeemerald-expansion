@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_dw1_gearsavanna_grp, voicegroup201
 	.equ	mus_dgmn_dw1_gearsavanna_pri, 0
-	.equ	mus_dgmn_dw1_gearsavanna_rev, 0
+	.equ	mus_dgmn_dw1_gearsavanna_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_gearsavanna_mvl, 100
 	.equ	mus_dgmn_dw1_gearsavanna_key, 0
 	.equ	mus_dgmn_dw1_gearsavanna_tbs, 1

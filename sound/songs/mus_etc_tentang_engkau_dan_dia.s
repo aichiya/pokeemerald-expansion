@@ -3,7 +3,7 @@
         .equ    mus_etc_tentang_engkau_dan_dia_grp, voicegroup201
         .equ    mus_etc_tentang_engkau_dan_dia_pri, 0
         .equ    mus_etc_tentang_engkau_dan_dia_mvl, 100
-        .equ    mus_etc_tentang_engkau_dan_dia_rev, 50
+        .equ    mus_etc_tentang_engkau_dan_dia_rev, reverb_set+50
         .equ    mus_etc_tentang_engkau_dan_dia_key, 0
 
         .section .rodata

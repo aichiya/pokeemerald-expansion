@@ -2,7 +2,7 @@
 
         .equ    mus_dbgt_dandankokoro_recap_grp, voicegroup201
         .equ    mus_dbgt_dandankokoro_recap_pri, 0
-        .equ    mus_dbgt_dandankokoro_recap_rev, 0
+        .equ    mus_dbgt_dandankokoro_recap_rev, reverb_set+50
         .equ    mus_dbgt_dandankokoro_recap_key, 0
 
         .section .rodata

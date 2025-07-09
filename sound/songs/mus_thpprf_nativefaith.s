@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_nativefaith_grp, voicegroup210
 	.equ	mus_thpprf_nativefaith_pri, 0
-	.equ	mus_thpprf_nativefaith_rev, 0
+	.equ	mus_thpprf_nativefaith_rev, reverb_set+50
 	.equ	mus_thpprf_nativefaith_mvl, 96
 	.equ	mus_thpprf_nativefaith_key, 0
 	.equ	mus_thpprf_nativefaith_tbs, 1

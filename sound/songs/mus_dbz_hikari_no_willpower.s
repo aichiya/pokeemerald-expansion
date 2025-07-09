@@ -2,7 +2,7 @@
 
         .equ    mus_dbz_hikari_no_willpower_grp, voicegroup201
         .equ    mus_dbz_hikari_no_willpower_pri, 0
-        .equ    mus_dbz_hikari_no_willpower_rev, 0
+        .equ    mus_dbz_hikari_no_willpower_rev, reverb_set+50
         .equ    mus_dbz_hikari_no_willpower_key, 0
 
         .section .rodata

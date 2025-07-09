@@ -2,7 +2,7 @@
 
 	.equ	mus_sh_pandora_grp, voicegroup201
 	.equ	mus_sh_pandora_pri, 0
-	.equ	mus_sh_pandora_rev, 0
+	.equ	mus_sh_pandora_rev, reverb_set+50
 	.equ	mus_sh_pandora_mvl, 127
 	.equ	mus_sh_pandora_key, 0
 	.equ	mus_sh_pandora_tbs, 1

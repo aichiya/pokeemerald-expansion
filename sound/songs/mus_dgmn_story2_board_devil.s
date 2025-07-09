@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story2_board_devil_grp, voicegroup201
 	.equ	mus_dgmn_story2_board_devil_pri, 0
-	.equ	mus_dgmn_story2_board_devil_rev, 0
+	.equ	mus_dgmn_story2_board_devil_rev, reverb_set+50
 	.equ	mus_dgmn_story2_board_devil_mvl, 100
 	.equ	mus_dgmn_story2_board_devil_key, 0
 	.equ	mus_dgmn_story2_board_devil_tbs, 1

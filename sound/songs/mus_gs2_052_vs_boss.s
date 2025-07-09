@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_052_vs_boss_grp, voicegroup601
         .equ    mus_gs2_052_vs_boss_pri, 0
-        .equ    mus_gs2_052_vs_boss_rev, 0
+        .equ    mus_gs2_052_vs_boss_rev, reverb_set+50
         .equ    mus_gs2_052_vs_boss_key, 0
 
         .section .rodata

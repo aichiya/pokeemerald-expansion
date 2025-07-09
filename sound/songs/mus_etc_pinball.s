@@ -3,7 +3,7 @@
         .equ    mus_etc_pinball_grp, voicegroup201
         .equ    mus_etc_pinball_pri, 0
         .equ    mus_etc_pinball_mvl, 100
-        .equ    mus_etc_pinball_rev, 0
+        .equ    mus_etc_pinball_rev, reverb_set+50
         .equ    mus_etc_pinball_key, 0
 
         .section .rodata

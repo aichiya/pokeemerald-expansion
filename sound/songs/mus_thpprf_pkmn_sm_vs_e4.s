@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_pkmn_sm_vs_e4_grp, voicegroup210
 	.equ	mus_thpprf_pkmn_sm_vs_e4_pri, 0
-	.equ	mus_thpprf_pkmn_sm_vs_e4_rev, 0
+	.equ	mus_thpprf_pkmn_sm_vs_e4_rev, reverb_set+50
 	.equ	mus_thpprf_pkmn_sm_vs_e4_mvl, 92
 	.equ	mus_thpprf_pkmn_sm_vs_e4_key, 0
 	.equ	mus_thpprf_pkmn_sm_vs_e4_tbs, 1

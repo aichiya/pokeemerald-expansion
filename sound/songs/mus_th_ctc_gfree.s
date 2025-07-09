@@ -2,7 +2,7 @@
 
 	.equ	mus_th_ctc_gfree_grp, voicegroup901
 	.equ	mus_th_ctc_gfree_pri, 0
-	.equ	mus_th_ctc_gfree_rev, 0
+	.equ	mus_th_ctc_gfree_rev, reverb_set+50
 	.equ	mus_th_ctc_gfree_mvl, 127
 	.equ	mus_th_ctc_gfree_key, 0
 	.equ	mus_th_ctc_gfree_tbs, 1

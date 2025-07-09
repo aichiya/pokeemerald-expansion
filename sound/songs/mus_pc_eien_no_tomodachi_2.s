@@ -3,7 +3,7 @@
         .equ    mus_pc_eien_no_tomodachi_2_grp, voicegroup201
         .equ    mus_pc_eien_no_tomodachi_2_pri, 0
         .equ    mus_pc_eien_no_tomodachi_2_mvl, 100
-        .equ    mus_pc_eien_no_tomodachi_2_rev, 0
+        .equ    mus_pc_eien_no_tomodachi_2_rev, reverb_set+50
         .equ    mus_pc_eien_no_tomodachi_2_key, 0
 
         .section .rodata

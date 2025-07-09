@@ -2,7 +2,7 @@
 
         .equ    mus_pkmn_temporal_spire_grp, voicegroup201
         .equ    mus_pkmn_temporal_spire_pri, 0
-        .equ    mus_pkmn_temporal_spire_rev, 0
+        .equ    mus_pkmn_temporal_spire_rev, reverb_set+50
         .equ    mus_pkmn_temporal_spire_key, 0
 
         .section .rodata

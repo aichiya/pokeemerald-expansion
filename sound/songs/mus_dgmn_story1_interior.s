@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story1_interior_grp, voicegroup201
 	.equ	mus_dgmn_story1_interior_pri, 0
-	.equ	mus_dgmn_story1_interior_rev, 0
+	.equ	mus_dgmn_story1_interior_rev, reverb_set+50
 	.equ	mus_dgmn_story1_interior_mvl, 100
 	.equ	mus_dgmn_story1_interior_key, 0
 	.equ	mus_dgmn_story1_interior_tbs, 1

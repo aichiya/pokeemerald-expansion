@@ -2,7 +2,7 @@
 
 	.equ	se_th_pichuun_grp, voicegroup900
 	.equ	se_th_pichuun_pri, 0
-	.equ	se_th_pichuun_rev, 0
+	.equ	se_th_pichuun_rev, reverb_set+50
 	.equ	se_th_pichuun_mvl, 127
 	.equ	se_th_pichuun_key, 0
 	.equ	se_th_pichuun_tbs, 1

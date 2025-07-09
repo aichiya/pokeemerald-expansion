@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_368_grp, voicegroup210
 	.equ	mus_thpprf_368_pri, 0
-	.equ	mus_thpprf_368_rev, 0
+	.equ	mus_thpprf_368_rev, reverb_set+50
 	.equ	mus_thpprf_368_mvl, 100
 	.equ	mus_thpprf_368_key, 0
 	.equ	mus_thpprf_368_tbs, 1

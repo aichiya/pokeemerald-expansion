@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds2fwpcss_bgm_change_grp, voicegroup201
 	.equ	mus_pc_ds2fwpcss_bgm_change_pri, 0
-	.equ	mus_pc_ds2fwpcss_bgm_change_rev, 0
+	.equ	mus_pc_ds2fwpcss_bgm_change_rev, reverb_set+50
 	.equ	mus_pc_ds2fwpcss_bgm_change_mvl, 100
 	.equ	mus_pc_ds2fwpcss_bgm_change_key, 0
 	.equ	mus_pc_ds2fwpcss_bgm_change_tbs, 1

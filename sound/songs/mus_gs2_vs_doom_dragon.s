@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_vs_doom_dragon_grp, voicegroup601
         .equ    mus_gs2_vs_doom_dragon_pri, 0
-        .equ    mus_gs2_vs_doom_dragon_rev, 50
+        .equ    mus_gs2_vs_doom_dragon_rev, reverb_set+50
         .equ    mus_gs2_vs_doom_dragon_key, 0
 
         .section .rodata

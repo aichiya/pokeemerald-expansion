@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_allhenshin_grp, voicegroup201
 	.equ	mus_pc_allhenshin_pri, 0
-	.equ	mus_pc_allhenshin_rev, 0
+	.equ	mus_pc_allhenshin_rev, reverb_set+50
 	.equ	mus_pc_allhenshin_mvl, 100
 	.equ	mus_pc_allhenshin_key, 0
 	.equ	mus_pc_allhenshin_tbs, 1

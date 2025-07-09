@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds5fpc_bgm_battle_05_grp, voicegroup201
 	.equ	mus_pc_ds5fpc_bgm_battle_05_pri, 0
-	.equ	mus_pc_ds5fpc_bgm_battle_05_rev, 0
+	.equ	mus_pc_ds5fpc_bgm_battle_05_rev, reverb_set+50
 	.equ	mus_pc_ds5fpc_bgm_battle_05_mvl, 100
 	.equ	mus_pc_ds5fpc_bgm_battle_05_key, 0
 	.equ	mus_pc_ds5fpc_bgm_battle_05_tbs, 1

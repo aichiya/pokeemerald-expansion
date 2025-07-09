@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_gensokyogodsloved_grp, voicegroup210
 	.equ	mus_thpprf_gensokyogodsloved_pri, 0
-	.equ	mus_thpprf_gensokyogodsloved_rev, 0
+	.equ	mus_thpprf_gensokyogodsloved_rev, reverb_set+50
 	.equ	mus_thpprf_gensokyogodsloved_mvl, 92
 	.equ	mus_thpprf_gensokyogodsloved_key, 0
 	.equ	mus_thpprf_gensokyogodsloved_tbs, 1

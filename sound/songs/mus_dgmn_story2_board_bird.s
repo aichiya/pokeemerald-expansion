@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story2_board_bird_grp, voicegroup201
 	.equ	mus_dgmn_story2_board_bird_pri, 0
-	.equ	mus_dgmn_story2_board_bird_rev, 0
+	.equ	mus_dgmn_story2_board_bird_rev, reverb_set+50
 	.equ	mus_dgmn_story2_board_bird_mvl, 100
 	.equ	mus_dgmn_story2_board_bird_key, 0
 	.equ	mus_dgmn_story2_board_bird_tbs, 1

@@ -2,7 +2,7 @@
 
         .equ    mus_ty_the_level_grp, voicegroup201
         .equ    mus_ty_the_level_pri, 0
-        .equ    mus_ty_the_level_rev, 0
+        .equ    mus_ty_the_level_rev, reverb_set+50
         .equ    mus_ty_the_level_key, 0
 
         .section .rodata

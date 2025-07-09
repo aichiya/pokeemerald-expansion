@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_badapple_grp, voicegroup210
 	.equ	mus_thpprf_badapple_pri, 0
-	.equ	mus_thpprf_badapple_rev, 0
+	.equ	mus_thpprf_badapple_rev, reverb_set+50
 	.equ	mus_thpprf_badapple_mvl, 96
 	.equ	mus_thpprf_badapple_key, 0
 	.equ	mus_thpprf_badapple_tbs, 1

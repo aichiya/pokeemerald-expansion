@@ -2,7 +2,7 @@
 
         .equ    mus_sny_mikuru_grp, voicegroup205
         .equ    mus_sny_mikuru_pri, 0
-        .equ    mus_sny_mikuru_rev, 0
+        .equ    mus_sny_mikuru_rev, reverb_set+50
         .equ    mus_sny_mikuru_key, 0
 
         .section .rodata

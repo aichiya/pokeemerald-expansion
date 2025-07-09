@@ -2,7 +2,7 @@
 
         .equ    mus_sny_harehareyukai_grp, voicegroup201
         .equ    mus_sny_harehareyukai_pri, 0
-        .equ    mus_sny_harehareyukai_rev, 0
+        .equ    mus_sny_harehareyukai_rev, reverb_set+50
         .equ    mus_sny_harehareyukai_key, 0
 
         .section .rodata

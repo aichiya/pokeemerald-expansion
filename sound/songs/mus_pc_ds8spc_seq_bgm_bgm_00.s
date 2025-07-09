@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds8spc_seq_bgm_bgm_00_grp, voicegroup201
 	.equ	mus_pc_ds8spc_seq_bgm_bgm_00_pri, 0
-	.equ	mus_pc_ds8spc_seq_bgm_bgm_00_rev, 0
+	.equ	mus_pc_ds8spc_seq_bgm_bgm_00_rev, reverb_set+50
 	.equ	mus_pc_ds8spc_seq_bgm_bgm_00_mvl, 100
 	.equ	mus_pc_ds8spc_seq_bgm_bgm_00_key, 0
 	.equ	mus_pc_ds8spc_seq_bgm_bgm_00_tbs, 1

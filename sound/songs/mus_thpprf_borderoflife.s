@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_borderoflife_grp, voicegroup210
 	.equ	mus_thpprf_borderoflife_pri, 0
-	.equ	mus_thpprf_borderoflife_rev, 0
+	.equ	mus_thpprf_borderoflife_rev, reverb_set+50
 	.equ	mus_thpprf_borderoflife_mvl, 96
 	.equ	mus_thpprf_borderoflife_key, 0
 	.equ	mus_thpprf_borderoflife_tbs, 1

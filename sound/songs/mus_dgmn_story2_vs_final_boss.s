@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story2_vs_final_boss_grp, voicegroup201
 	.equ	mus_dgmn_story2_vs_final_boss_pri, 0
-	.equ	mus_dgmn_story2_vs_final_boss_rev, 0
+	.equ	mus_dgmn_story2_vs_final_boss_rev, reverb_set+50
 	.equ	mus_dgmn_story2_vs_final_boss_mvl, 100
 	.equ	mus_dgmn_story2_vs_final_boss_key, 0
 	.equ	mus_dgmn_story2_vs_final_boss_tbs, 1

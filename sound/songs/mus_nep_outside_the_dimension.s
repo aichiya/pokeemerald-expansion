@@ -3,7 +3,7 @@
         .equ    mus_nep_outside_the_dimension_grp, voicegroup201
         .equ    mus_nep_outside_the_dimension_pri, 0
         .equ    mus_nep_outside_the_dimension_mvl, 127
-        .equ    mus_nep_outside_the_dimension_rev, 0
+        .equ    mus_nep_outside_the_dimension_rev, reverb_set+50
         .equ    mus_nep_outside_the_dimension_key, 0
 
         .section .rodata

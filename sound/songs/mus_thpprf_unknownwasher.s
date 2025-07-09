@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_unknownwasher_grp, voicegroup210
 	.equ	mus_thpprf_unknownwasher_pri, 0
-	.equ	mus_thpprf_unknownwasher_rev, 0
+	.equ	mus_thpprf_unknownwasher_rev, reverb_set+50
 	.equ	mus_thpprf_unknownwasher_mvl, 96
 	.equ	mus_thpprf_unknownwasher_key, 0
 	.equ	mus_thpprf_unknownwasher_tbs, 1

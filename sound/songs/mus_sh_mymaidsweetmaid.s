@@ -2,7 +2,7 @@
 
 	.equ	mus_sh_mymaidsweetmaid_grp, voicegroup200
 	.equ	mus_sh_mymaidsweetmaid_pri, 0
-	.equ	mus_sh_mymaidsweetmaid_rev, 0
+	.equ	mus_sh_mymaidsweetmaid_rev, reverb_set+50
 	.equ	mus_sh_mymaidsweetmaid_mvl, 76
 	.equ	mus_sh_mymaidsweetmaid_key, 0
 	.equ	mus_sh_mymaidsweetmaid_tbs, 1

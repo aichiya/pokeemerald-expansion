@@ -2,7 +2,7 @@
 
         .equ    mus_th_kimi_to_yume_no_nakade_test_grp, voicegroup205
         .equ    mus_th_kimi_to_yume_no_nakade_test_pri, 0
-        .equ    mus_th_kimi_to_yume_no_nakade_test_rev, 0
+        .equ    mus_th_kimi_to_yume_no_nakade_test_rev, reverb_set+50
         .equ    mus_th_kimi_to_yume_no_nakade_test_key, 0
 
         .section .rodata

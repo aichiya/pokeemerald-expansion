@@ -2,7 +2,7 @@
 
         .equ    mus_thpprf_nobeta_1_grp, voicegroup210
         .equ    mus_thpprf_nobeta_1_pri, 0
-        .equ    mus_thpprf_nobeta_1_rev, 50
+        .equ    mus_thpprf_nobeta_1_rev, reverb_set+50
         .equ    mus_thpprf_nobeta_1_key, 0
 
         .section .rodata

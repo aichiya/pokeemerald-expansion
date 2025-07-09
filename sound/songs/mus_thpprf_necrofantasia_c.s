@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_necrofantasia_c_grp, voicegroup210
 	.equ	mus_thpprf_necrofantasia_c_pri, 0
-	.equ	mus_thpprf_necrofantasia_c_rev, 0
+	.equ	mus_thpprf_necrofantasia_c_rev, reverb_set+50
 	.equ	mus_thpprf_necrofantasia_c_mvl, 127
 	.equ	mus_thpprf_necrofantasia_c_key, 0
 	.equ	mus_thpprf_necrofantasia_c_tbs, 1

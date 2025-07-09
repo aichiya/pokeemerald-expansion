@@ -3,7 +3,7 @@
         .equ    mus_th_yachie_keiki_saki_grp, voicegroup802
         .equ    mus_th_yachie_keiki_saki_pri, 0
         .equ    mus_th_yachie_keiki_saki_mvl, 100
-        .equ    mus_th_yachie_keiki_saki_rev, 50
+        .equ    mus_th_yachie_keiki_saki_rev, reverb_set+50
         .equ    mus_th_yachie_keiki_saki_key, 0
 
         .section .rodata

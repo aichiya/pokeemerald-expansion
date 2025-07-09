@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds2fwpcss_bgm_result_grp, voicegroup201
 	.equ	mus_pc_ds2fwpcss_bgm_result_pri, 0
-	.equ	mus_pc_ds2fwpcss_bgm_result_rev, 0
+	.equ	mus_pc_ds2fwpcss_bgm_result_rev, reverb_set+50
 	.equ	mus_pc_ds2fwpcss_bgm_result_mvl, 100
 	.equ	mus_pc_ds2fwpcss_bgm_result_key, 0
 	.equ	mus_pc_ds2fwpcss_bgm_result_tbs, 1

@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_antimonytitle_grp, voicegroup210
 	.equ	mus_thpprf_antimonytitle_pri, 0
-	.equ	mus_thpprf_antimonytitle_rev, 0
+	.equ	mus_thpprf_antimonytitle_rev, reverb_set+50
 	.equ	mus_thpprf_antimonytitle_mvl, 92
 	.equ	mus_thpprf_antimonytitle_key, 0
 	.equ	mus_thpprf_antimonytitle_tbs, 1

@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_shinkirou_grp, voicegroup210
 	.equ	mus_thpprf_shinkirou_pri, 0
-	.equ	mus_thpprf_shinkirou_rev, 0
+	.equ	mus_thpprf_shinkirou_rev, reverb_set+50
 	.equ	mus_thpprf_shinkirou_mvl, 92
 	.equ	mus_thpprf_shinkirou_key, 0
 	.equ	mus_thpprf_shinkirou_tbs, 1

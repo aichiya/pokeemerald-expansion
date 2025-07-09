@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story2_board_dragon_grp, voicegroup201
 	.equ	mus_dgmn_story2_board_dragon_pri, 0
-	.equ	mus_dgmn_story2_board_dragon_rev, 0
+	.equ	mus_dgmn_story2_board_dragon_rev, reverb_set+50
 	.equ	mus_dgmn_story2_board_dragon_mvl, 100
 	.equ	mus_dgmn_story2_board_dragon_key, 0
 	.equ	mus_dgmn_story2_board_dragon_tbs, 1

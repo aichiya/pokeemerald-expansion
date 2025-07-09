@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_062_prox_grp, voicegroup601
         .equ    mus_gs2_062_prox_pri, 0
-        .equ    mus_gs2_062_prox_rev, 0
+        .equ    mus_gs2_062_prox_rev, reverb_set+50
         .equ    mus_gs2_062_prox_key, 0
 
         .section .rodata

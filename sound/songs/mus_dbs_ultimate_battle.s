@@ -2,7 +2,7 @@
 
 	.equ	mus_dbs_ultimate_battle_grp, voicegroup202
 	.equ	mus_dbs_ultimate_battle_pri, 0
-	.equ	mus_dbs_ultimate_battle_rev, 0
+	.equ	mus_dbs_ultimate_battle_rev, reverb_set+50
 	.equ	mus_dbs_ultimate_battle_mvl, 100
 	.equ	mus_dbs_ultimate_battle_key, 0
 	.equ	mus_dbs_ultimate_battle_tbs, 1

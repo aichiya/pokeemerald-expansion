@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_049_jenna_battle_grp, voicegroup601
         .equ    mus_gs2_049_jenna_battle_pri, 0
-        .equ    mus_gs2_049_jenna_battle_rev, 0
+        .equ    mus_gs2_049_jenna_battle_rev, reverb_set+50
         .equ    mus_gs2_049_jenna_battle_key, 0
 
         .section .rodata

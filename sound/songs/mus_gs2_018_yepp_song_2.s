@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_018_yepp_song_2_grp, voicegroup601
         .equ    mus_gs2_018_yepp_song_2_pri, 0
-        .equ    mus_gs2_018_yepp_song_2_rev, 0
+        .equ    mus_gs2_018_yepp_song_2_rev, reverb_set+50
         .equ    mus_gs2_018_yepp_song_2_key, 0
 
         .section .rodata

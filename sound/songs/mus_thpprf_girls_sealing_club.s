@@ -2,7 +2,7 @@
 
         .equ    mus_thpprf_girls_sealing_club_grp, voicegroup210
         .equ    mus_thpprf_girls_sealing_club_pri, 0
-        .equ    mus_thpprf_girls_sealing_club_rev, 50
+        .equ    mus_thpprf_girls_sealing_club_rev, reverb_set+50
         .equ    mus_thpprf_girls_sealing_club_key, 0
 
         .section .rodata

@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_easygoingegoist_grp, voicegroup210
 	.equ	mus_thpprf_easygoingegoist_pri, 0
-	.equ	mus_thpprf_easygoingegoist_rev, 0
+	.equ	mus_thpprf_easygoingegoist_rev, reverb_set+50
 	.equ	mus_thpprf_easygoingegoist_mvl, 96
 	.equ	mus_thpprf_easygoingegoist_key, 0
 	.equ	mus_thpprf_easygoingegoist_tbs, 1

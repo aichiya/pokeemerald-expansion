@@ -3,7 +3,7 @@
         .equ    mus_th_invisible_full_moon_grp, voicegroup803
         .equ    mus_th_invisible_full_moon_pri, 0
         .equ    mus_th_invisible_full_moon_mvl, 90
-        .equ    mus_th_invisible_full_moon_rev, 50
+        .equ    mus_th_invisible_full_moon_rev, reverb_set+50
         .equ    mus_th_invisible_full_moon_key, 0
 
         .section .rodata

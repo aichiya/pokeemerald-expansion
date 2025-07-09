@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_015_garoh_grp, voicegroup601
         .equ    mus_gs2_015_garoh_pri, 0
-        .equ    mus_gs2_015_garoh_rev, 0
+        .equ    mus_gs2_015_garoh_rev, reverb_set+50
         .equ    mus_gs2_015_garoh_key, 0
 
         .section .rodata

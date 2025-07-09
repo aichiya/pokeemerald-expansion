@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_grp, voicegroup201
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_pri, 0
-	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_rev, 50
+	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_rev, reverb_set+50
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_mvl, 92
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_key, 0
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_tbs, 1

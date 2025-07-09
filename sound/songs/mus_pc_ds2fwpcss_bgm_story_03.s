@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds2fwpcss_bgm_story_03_grp, voicegroup201
 	.equ	mus_pc_ds2fwpcss_bgm_story_03_pri, 0
-	.equ	mus_pc_ds2fwpcss_bgm_story_03_rev, 0
+	.equ	mus_pc_ds2fwpcss_bgm_story_03_rev, reverb_set+50
 	.equ	mus_pc_ds2fwpcss_bgm_story_03_mvl, 100
 	.equ	mus_pc_ds2fwpcss_bgm_story_03_key, 0
 	.equ	mus_pc_ds2fwpcss_bgm_story_03_tbs, 1

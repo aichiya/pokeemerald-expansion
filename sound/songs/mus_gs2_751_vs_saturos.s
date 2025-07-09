@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_751_vs_saturos_grp, voicegroup601
         .equ    mus_gs2_751_vs_saturos_pri, 0
-        .equ    mus_gs2_751_vs_saturos_rev, 0
+        .equ    mus_gs2_751_vs_saturos_rev, reverb_set+50
         .equ    mus_gs2_751_vs_saturos_key, 0
 
         .section .rodata

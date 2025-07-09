@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_029_tundaria_tower_grp, voicegroup601
         .equ    mus_gs2_029_tundaria_tower_pri, 0
-        .equ    mus_gs2_029_tundaria_tower_rev, 0
+        .equ    mus_gs2_029_tundaria_tower_rev, reverb_set+50
         .equ    mus_gs2_029_tundaria_tower_key, 0
 
         .section .rodata

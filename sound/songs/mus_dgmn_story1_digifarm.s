@@ -2,7 +2,7 @@
 
 	.equ	mus_dgmn_story1_digifarm_grp, voicegroup201
 	.equ	mus_dgmn_story1_digifarm_pri, 0
-	.equ	mus_dgmn_story1_digifarm_rev, 0
+	.equ	mus_dgmn_story1_digifarm_rev, reverb_set+50
 	.equ	mus_dgmn_story1_digifarm_mvl, 100
 	.equ	mus_dgmn_story1_digifarm_key, 0
 	.equ	mus_dgmn_story1_digifarm_tbs, 1

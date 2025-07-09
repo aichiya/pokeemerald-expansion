@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_725_desert_grp, voicegroup601
         .equ    mus_gs2_725_desert_pri, 0
-        .equ    mus_gs2_725_desert_rev, 0
+        .equ    mus_gs2_725_desert_rev, reverb_set+50
         .equ    mus_gs2_725_desert_key, 0
 
         .section .rodata

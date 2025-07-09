@@ -3,7 +3,7 @@
         .equ    mus_dgmn_card2_vs_regular_grp, voicegroup205
         .equ    mus_dgmn_card2_vs_regular_pri, 0
         .equ    mus_dgmn_card2_vs_regular_mvl, 100
-        .equ    mus_dgmn_card2_vs_regular_rev, 0
+        .equ    mus_dgmn_card2_vs_regular_rev, reverb_set+50
         .equ    mus_dgmn_card2_vs_regular_key, 0
 
         .section .rodata

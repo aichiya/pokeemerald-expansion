@@ -2,7 +2,7 @@
 
 	.equ	mus_sh_velvetmaiden_grp, voicegroup201
 	.equ	mus_sh_velvetmaiden_pri, 0
-	.equ	mus_sh_velvetmaiden_rev, 0
+	.equ	mus_sh_velvetmaiden_rev, reverb_set+50
 	.equ	mus_sh_velvetmaiden_mvl, 86
 	.equ	mus_sh_velvetmaiden_key, 0
 	.equ	mus_sh_velvetmaiden_tbs, 1

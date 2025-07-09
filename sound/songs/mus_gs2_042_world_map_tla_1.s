@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_042_world_map_tla_1_grp, voicegroup601
         .equ    mus_gs2_042_world_map_tla_1_pri, 0
-        .equ    mus_gs2_042_world_map_tla_1_rev, 0
+        .equ    mus_gs2_042_world_map_tla_1_rev, reverb_set+50
         .equ    mus_gs2_042_world_map_tla_1_key, 0
 
         .section .rodata

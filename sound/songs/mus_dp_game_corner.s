@@ -2,7 +2,7 @@
 
         .equ    mus_dp_game_corner_grp, voicegroup203
         .equ    mus_dp_game_corner_pri, 0
-        .equ    mus_dp_game_corner_rev, 0
+        .equ    mus_dp_game_corner_rev, reverb_set+50
         .equ    mus_dp_game_corner_key, 0
 
         .section .rodata

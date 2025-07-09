@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_372_grp, voicegroup210
 	.equ	mus_thpprf_372_pri, 0
-	.equ	mus_thpprf_372_rev, 0
+	.equ	mus_thpprf_372_rev, reverb_set+50
 	.equ	mus_thpprf_372_mvl, 108
 	.equ	mus_thpprf_372_key, 0
 	.equ	mus_thpprf_372_tbs, 1

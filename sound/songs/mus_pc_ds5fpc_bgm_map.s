@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds5fpc_bgm_map_grp, voicegroup201
 	.equ	mus_pc_ds5fpc_bgm_map_pri, 0
-	.equ	mus_pc_ds5fpc_bgm_map_rev, 0
+	.equ	mus_pc_ds5fpc_bgm_map_rev, reverb_set+50
 	.equ	mus_pc_ds5fpc_bgm_map_mvl, 100
 	.equ	mus_pc_ds5fpc_bgm_map_key, 0
 	.equ	mus_pc_ds5fpc_bgm_map_tbs, 1

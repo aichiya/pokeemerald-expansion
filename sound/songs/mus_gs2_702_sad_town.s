@@ -2,7 +2,7 @@
 
         .equ    mus_gs2_702_sad_town_grp, voicegroup601
         .equ    mus_gs2_702_sad_town_pri, 0
-        .equ    mus_gs2_702_sad_town_rev, 0
+        .equ    mus_gs2_702_sad_town_rev, reverb_set+50
         .equ    mus_gs2_702_sad_town_key, 0
 
         .section .rodata

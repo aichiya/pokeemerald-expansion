@@ -2,7 +2,7 @@
 
         .equ    mus_dbz_first_prologue_grp, voicegroup201
         .equ    mus_dbz_first_prologue_pri, 0
-        .equ    mus_dbz_first_prologue_rev, 0
+        .equ    mus_dbz_first_prologue_rev, reverb_set+50
         .equ    mus_dbz_first_prologue_key, 0
 
         .section .rodata

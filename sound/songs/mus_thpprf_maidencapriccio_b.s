@@ -2,7 +2,7 @@
 
 	.equ	mus_thpprf_maidencapriccio_b_grp, voicegroup210
 	.equ	mus_thpprf_maidencapriccio_b_pri, 0
-	.equ	mus_thpprf_maidencapriccio_b_rev, 0
+	.equ	mus_thpprf_maidencapriccio_b_rev, reverb_set+50
 	.equ	mus_thpprf_maidencapriccio_b_mvl, 96
 	.equ	mus_thpprf_maidencapriccio_b_key, 0
 	.equ	mus_thpprf_maidencapriccio_b_tbs, 1

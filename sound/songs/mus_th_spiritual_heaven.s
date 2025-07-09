@@ -2,7 +2,7 @@
 
         .equ    mus_th_spiritual_heaven_grp, voicegroup205
         .equ    mus_th_spiritual_heaven_pri, 0
-        .equ    mus_th_spiritual_heaven_rev, 0
+        .equ    mus_th_spiritual_heaven_rev, reverb_set+50
         .equ    mus_th_spiritual_heaven_key, 0
 
         .section .rodata

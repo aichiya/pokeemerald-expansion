@@ -2,7 +2,7 @@
 
 	.equ	mus_dcd_black_grp, voicegroup504
 	.equ	mus_dcd_black_pri, 0
-	.equ	mus_dcd_black_rev, 0
+	.equ	mus_dcd_black_rev, reverb_set+50
 	.equ	mus_dcd_black_mvl, 100
 	.equ	mus_dcd_black_key, 0
 	.equ	mus_dcd_black_tbs, 1

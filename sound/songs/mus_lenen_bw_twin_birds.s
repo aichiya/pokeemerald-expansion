@@ -3,7 +3,7 @@
         .equ    mus_lenen_bw_twin_birds_grp, voicegroup201
         .equ    mus_lenen_bw_twin_birds_pri, 0
         .equ    mus_lenen_bw_twin_birds_mvl, 127
-        .equ    mus_lenen_bw_twin_birds_rev, 0
+        .equ    mus_lenen_bw_twin_birds_rev, reverb_set+50
         .equ    mus_lenen_bw_twin_birds_key, 0
 
         .section .rodata

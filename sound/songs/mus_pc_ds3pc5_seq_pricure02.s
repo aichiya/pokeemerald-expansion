@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_ds3pc5_seq_pricure02_grp, voicegroup201
 	.equ	mus_pc_ds3pc5_seq_pricure02_pri, 0
-	.equ	mus_pc_ds3pc5_seq_pricure02_rev, 0
+	.equ	mus_pc_ds3pc5_seq_pricure02_rev, reverb_set+50
 	.equ	mus_pc_ds3pc5_seq_pricure02_mvl, 100
 	.equ	mus_pc_ds3pc5_seq_pricure02_key, 0
 	.equ	mus_pc_ds3pc5_seq_pricure02_tbs, 1

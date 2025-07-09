@@ -2,7 +2,7 @@
 
 	.equ	mus_pc_gba2_017_grp, voicegroup501
 	.equ	mus_pc_gba2_017_pri, 0
-	.equ	mus_pc_gba2_017_rev, 50
+	.equ	mus_pc_gba2_017_rev, reverb_set+50
 	.equ	mus_pc_gba2_017_mvl, 92
 	.equ	mus_pc_gba2_017_key, 0
 	.equ	mus_pc_gba2_017_tbs, 1

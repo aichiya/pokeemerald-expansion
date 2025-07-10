@@ -12215,6 +12215,10 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
     u32 atkParam = GetBattlerHoldEffectParam(battlerAtk);
     u32 defParam = GetBattlerHoldEffectParam(battlerDef);
 
+    u8 attackerSpeciesType1 = gBattleMons[battlerAtk].types[0];
+    u8 attackerSpeciesType2 = gBattleMons[battlerAtk].types[1];
+    u8 attackerSpeciesType3 = gBattleMons[battlerAtk].types[2];
+
     gPotentialItemEffectBattler = battlerDef;
     accStage = gBattleMons[battlerAtk].statStages[STAT_ACC];
     evasionStage = gBattleMons[battlerDef].statStages[STAT_EVASION];
@@ -12319,6 +12323,10 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
 
     if (gFieldStatuses & STATUS_FIELD_GRAVITY)
         calc = (calc * 5) / 3; // 1.66 Gravity acc boost
+    
+    if ((gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN) 
+      && !(attackerSpeciesType1 == TYPE_NEW_DARK || attackerSpeciesType2 == TYPE_NEW_DARK || attackerSpeciesType3 == TYPE_NEW_DARK)) 
+        calc = (calc * 80) / 100; // 1.2 loss non-dark type attacker when darkness terrain on field
 
     if (B_AFFECTION_MECHANICS == TRUE && GetBattlerAffectionHearts(battlerDef) == AFFECTION_FIVE_HEARTS)
         calc = (calc * 90) / 100;

@@ -883,6 +883,7 @@ u32 GetTeraTypeFromPersonality(struct Pokemon *mon);
 struct Pokemon *GetSavedPlayerPartyMon(u32 index);
 u8 *GetSavedPlayerPartyCount(void);
 void SavePlayerPartyMon(u32 index, struct Pokemon *mon);
+u32 IsSpeciesOfType(u32 species, u32 type);
 
 void CreateMonGift1(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 hasFixedPersonality, u32 fixedPersonality, u8 otIdType, u32 fixedOtId);
 void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, u8 hasFixedPersonality, u32 fixedPersonality, u8 otIdType, u32 fixedOtId);

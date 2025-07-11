@@ -20324,3 +20324,96 @@ void BS_TrySynchronoise(void)
     else
         gBattlescriptCurrInstr = cmd->jumpInstr;
 }
+
+// The order of this is assumed to be the same as the types
+static const u16 sGrimoireCallMoves[] = {
+    MOVE_FACADE,              // Physical Illusion
+    MOVE_DRAGON_PULSE,        // Special Illusion Pulse Wave
+    MOVE_BRICK_BREAK,         // Physical Dream
+    MOVE_AURA_SPHERE,         // Special Dream
+    MOVE_DRILL_PECK,          // Physical Flying
+    MOVE_FEATHER_DANCE,       // Special Flying
+    MOVE_POISON_JAB,          // Physical Miasma
+    MOVE_POISON_GAS,          // Special Miasma Mistfall Gas
+    MOVE_ROCK_TOMB,           // Physical Earth
+    MOVE_SCORCHING_SANDS,     // Special Earth
+    MOVE_HORN_LEECH,          // Physical Beast Draining Stab
+    MOVE_BUG_BUZZ,            // Special Beast
+    MOVE_DIZZY_PUNCH,         // Physical Heart
+    MOVE_MOONBLAST,           // Special Heart
+    MOVE_SPIRIT_SHACKLE,      // Physical Nether
+    MOVE_NIGHTMARE,           // Special Nether
+    MOVE_ANCHOR_SHOT,         // Physical Metal
+    MOVE_FLASH_CANNON,        // Special Metal
+    MOVE_FIRE_LASH,           // Physical Fire
+    MOVE_FLAMETHROWER,        // Special Fire
+    MOVE_WATERFALL,           // Physical Water
+    MOVE_SCALD,               // Special Water
+    MOVE_LEAF_BLADE,          // Physical Nature
+    MOVE_ENERGY_BALL,         // Special Nature
+    MOVE_GYRO_BALL,           // Physical Wind
+    MOVE_AEROBLAST,           // Special Wind
+    MOVE_PSYCHO_CUT,          // Physical Reason
+    MOVE_EERIE_SPELL,         // Special Reason
+    MOVE_ICICLE_CRASH,        // Physical Ice
+    MOVE_ICE_BEAM,            // Special Ice
+    MOVE_SACRED_SWORD,        // Physical Divine
+    MOVE_FLASH,               // Special Divine
+    MOVE_DRAGON_CLAW,         // Physical Dark
+    MOVE_DARK_PULSE,          // Special Dark
+    MOVE_PLASMA_BLADE,        // Physical Electric
+    MOVE_THUNDERBOLT,         // Special Electric
+};
+
+void BS_TryGrimoireCall(void)
+{
+    NATIVE_ARGS();
+
+    struct DamageContext ctx;
+
+    u32 i = 0;
+    u16 moveUsed = MOVE_NONE;
+    u16 highestDamage = 0;
+    s32 calcDamage;
+
+    ctx.battlerAtk = gBattlerAttacker;
+    ctx.battlerDef = gBattlerTarget;
+    ctx.randomFactor = TRUE; // All the other factors won't be factored in otherwise
+    ctx.updateFlags = FALSE;
+    ctx.isCrit = FALSE;
+    ctx.fixedBasePower = 0;
+
+    // Try to look for a move that deals the most damage with almost everything in mind
+    for (i = 0; i < ARRAY_COUNT(sGrimoireCallMoves); i++)
+    {
+        ctx.move = sGrimoireCallMoves[i];
+        ctx.moveType = CheckDynamicMoveType(GetBattlerMon(ctx.battlerAtk), ctx.move, ctx.battlerAtk, MON_IN_BATTLE);
+        calcDamage = CalculateMoveDamage(&ctx);
+
+        if (CanAbilityAbsorbMove(ctx.battlerAtk, ctx.battlerDef, GetBattlerAbility(ctx.battlerDef), ctx.move, ctx.moveType, CHECK_TRIGGER))
+            calcDamage = 0;
+
+        if (calcDamage > highestDamage)
+        {
+            moveUsed = ctx.move;
+            highestDamage = calcDamage;
+        }
+    }
+
+    // somehow didn't find one that does more than 0
+    if (moveUsed == MOVE_NONE)
+        moveUsed = sGrimoireCallMoves[Random() % ARRAY_COUNT(sGrimoireCallMoves)];
+
+    if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_Z_MOVE)
+    {
+        gBattleStruct->zmove.baseMoves[gBattlerAttacker] = moveUsed;
+        gCalledMove = GetTypeBasedZMove(moveUsed);
+    }
+    else
+    {
+        gCalledMove = moveUsed;
+    }
+
+    gHitMarker &= ~HITMARKER_ATTACKSTRING_PRINTED;
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}

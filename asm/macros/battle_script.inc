@@ -2475,6 +2475,10 @@
 	.4byte \jumpInstr
 	.endm
 
+	.macro trygrimoirecall
+	callnative BS_TryGrimoireCall
+	.endm
+
 	.macro setallytonexttarget jumpInstr:req
 	jumpifbyte CMP_GREATER_THAN, gBattlerTarget, 0x1, 1f
 	addbyte gBattlerTarget, 0x2

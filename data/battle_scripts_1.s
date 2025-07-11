@@ -10328,3 +10328,11 @@ BattleScript_AllStatsUpOnTargetSuccess::
 	goto BattleScript_MoveEnd
 BattleScript_AllStatsUpOnTargetFailed::
 	goto BattleScript_ButItFailed
+
+BattleScript_EffectGrimoireCall::
+	attackcanceler
+	attackstring
+	trygrimoirecall
+	attackanimation
+	waitanimation
+	jumptocalledmove TRUE

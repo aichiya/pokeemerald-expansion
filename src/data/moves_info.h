@@ -10620,7 +10620,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_DRAGON_PULSE] =  // MOVE_NEW_PULSE_WAVE name desc effect
     {
-        .name = COMPOUND_STRING("Dragon Pulse"),
+        .name = COMPOUND_STRING("Pulse Wave"),
         .description = COMPOUND_STRING(
             "Generates a shock wave\n"
             "that may confuse the foe."),
@@ -21792,6 +21792,36 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_Uehehehehehe,
         .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_GRIMOIRE_CALL] =
+    {
+        .name = COMPOUND_STRING("Grimoire Call"),
+        .description = COMPOUND_STRING(
+            "Calls a move that suits\n"
+            "the target."),
+        .effect = EFFECT_GRIMOIRE_CALL,
+        .power = 0,
+        .type = TYPE_NEW_ILLUSION,
+        .accuracy = 0,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_ATK_UP_1 },
+        .mirrorMoveBanned = TRUE,
+        .metronomeBanned = TRUE,
+        .copycatBanned = TRUE,
+        .sleepTalkBanned = TRUE,
+        .instructBanned = TRUE,
+        .encoreBanned = TRUE,
+        .assistBanned = TRUE,
+        .mimicBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_FairyLock,
     },
 
     // Z-Moves

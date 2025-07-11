@@ -2302,4 +2302,10 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectUehehehehehe,
         .battleTvScore = 0, // TODO: Assign points
     },
+
+    [EFFECT_GRIMOIRE_CALL] =
+    {
+        .battleScript = BattleScript_EffectGrimoireCall,
+        .battleTvScore = 0, // TODO: Assign points
+    },
 };

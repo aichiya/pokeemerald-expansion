@@ -3619,10 +3619,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Cloyster[] = INCBIN_U32("graphics/pokemon/cloyster/anim_front.4bpp.smol");
-    const u16 gMonPalette_Cloyster[] = INCBIN_U16("graphics/pokemon/cloyster/normal.gbapal");
-    const u32 gMonBackPic_Cloyster[] = INCBIN_U32("graphics/pokemon/cloyster/back.4bpp.smol");
-    const u16 gMonShinyPalette_Cloyster[] = INCBIN_U16("graphics/pokemon/cloyster/shiny.gbapal");
+    const u32 gMonFrontPic_Cloyster[] = INCBIN_U32("graphics/pokemon/_add/moe/cloyster/anim_front.4bpp.smol");
+    const u16 gMonPalette_Cloyster[] = INCBIN_U16("graphics/pokemon/_add/moe/cloyster/normal.gbapal");
+    const u32 gMonBackPic_Cloyster[] = INCBIN_U32("graphics/pokemon/_add/moe/cloyster/back.4bpp.smol");
+    const u16 gMonShinyPalette_Cloyster[] = INCBIN_U16("graphics/pokemon/_add/moe/cloyster/shiny.gbapal");
 #else
     const u32 gMonFrontPic_Cloyster[] = INCBIN_U32("graphics/pokemon/cloyster/anim_front_gba.4bpp.smol");
     const u16 gMonPalette_Cloyster[] = INCBIN_U16("graphics/pokemon/cloyster/normal_gba.gbapal");
@@ -3630,12 +3630,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Cloyster[] = INCBIN_U16("graphics/pokemon/cloyster/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Cloyster[] = INCBIN_U8("graphics/pokemon/cloyster/icon.4bpp");
+    const u8 gMonIcon_Cloyster[] = INCBIN_U8("graphics/pokemon/_add/moe/cloyster/icon.4bpp");
 #else
     const u8 gMonIcon_Cloyster[] = INCBIN_U8("graphics/pokemon/cloyster/icon_gba.4bpp");
 #endif //P_GBA_STYLE_SPECIES_ICONS
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cloyster[] = INCBIN_U8("graphics/pokemon/cloyster/footprint.1bpp");
+    const u8 gMonFootprint_Cloyster[] = INCBIN_U8("graphics/pokemon/_add/moe/cloyster/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Cloyster[] = INCBIN_COMP("graphics/pokemon/cloyster/overworld.4bpp");
@@ -5635,10 +5635,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES && P_CUSTOM_GENDER_DIFF_ICONS
 
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Vaporeon[] = INCBIN_U32("graphics/pokemon/vaporeon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Vaporeon[] = INCBIN_U16("graphics/pokemon/vaporeon/normal.gbapal");
-    const u32 gMonBackPic_Vaporeon[] = INCBIN_U32("graphics/pokemon/vaporeon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Vaporeon[] = INCBIN_U16("graphics/pokemon/vaporeon/shiny.gbapal");
+    const u32 gMonFrontPic_Vaporeon[] = INCBIN_U32("graphics/pokemon/_add/moe/vaporeon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Vaporeon[] = INCBIN_U16("graphics/pokemon/_add/moe/vaporeon/normal.gbapal");
+    const u32 gMonBackPic_Vaporeon[] = INCBIN_U32("graphics/pokemon/_add/moe/vaporeon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Vaporeon[] = INCBIN_U16("graphics/pokemon/_add/moe/vaporeon/shiny.gbapal");
 #else
     const u32 gMonFrontPic_Vaporeon[] = INCBIN_U32("graphics/pokemon/vaporeon/anim_front_gba.4bpp.smol");
     const u16 gMonPalette_Vaporeon[] = INCBIN_U16("graphics/pokemon/vaporeon/normal_gba.gbapal");
@@ -5646,12 +5646,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Vaporeon[] = INCBIN_U16("graphics/pokemon/vaporeon/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Vaporeon[] = INCBIN_U8("graphics/pokemon/vaporeon/icon.4bpp");
+    const u8 gMonIcon_Vaporeon[] = INCBIN_U8("graphics/pokemon/_add/moe/vaporeon/icon.4bpp");
 #else
     const u8 gMonIcon_Vaporeon[] = INCBIN_U8("graphics/pokemon/vaporeon/icon_gba.4bpp");
 #endif //P_GBA_STYLE_SPECIES_ICONS
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Vaporeon[] = INCBIN_U8("graphics/pokemon/vaporeon/footprint.1bpp");
+    const u8 gMonFootprint_Vaporeon[] = INCBIN_U8("graphics/pokemon/_add/moe/vaporeon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Vaporeon[] = INCBIN_COMP("graphics/pokemon/vaporeon/overworld.4bpp");
@@ -6392,10 +6392,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
 #if P_FAMILY_MEW
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Mew[] = INCBIN_U32("graphics/pokemon/mew/anim_front.4bpp.smol");
-    const u16 gMonPalette_Mew[] = INCBIN_U16("graphics/pokemon/mew/normal.gbapal");
-    const u32 gMonBackPic_Mew[] = INCBIN_U32("graphics/pokemon/mew/back.4bpp.smol");
-    const u16 gMonShinyPalette_Mew[] = INCBIN_U16("graphics/pokemon/mew/shiny.gbapal");
+    const u32 gMonFrontPic_Mew[] = INCBIN_U32("graphics/pokemon/_add/moe/mew/anim_front.4bpp.smol");
+    const u16 gMonPalette_Mew[] = INCBIN_U16("graphics/pokemon/_add/moe/mew/normal.gbapal");
+    const u32 gMonBackPic_Mew[] = INCBIN_U32("graphics/pokemon/_add/moe/mew/back.4bpp.smol");
+    const u16 gMonShinyPalette_Mew[] = INCBIN_U16("graphics/pokemon/_add/moe/mew/shiny.gbapal");
 #else
     const u32 gMonFrontPic_Mew[] = INCBIN_U32("graphics/pokemon/mew/anim_front_gba.4bpp.smol");
     const u16 gMonPalette_Mew[] = INCBIN_U16("graphics/pokemon/mew/normal_gba.gbapal");
@@ -6403,12 +6403,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Mew[] = INCBIN_U16("graphics/pokemon/mew/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Mew[] = INCBIN_U8("graphics/pokemon/mew/icon.4bpp");
+    const u8 gMonIcon_Mew[] = INCBIN_U8("graphics/pokemon/_add/moe/mew/icon.4bpp");
 #else
     const u8 gMonIcon_Mew[] = INCBIN_U8("graphics/pokemon/mew/icon_gba.4bpp");
 #endif //P_GBA_STYLE_SPECIES_ICONS
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Mew[] = INCBIN_U8("graphics/pokemon/mew/footprint.1bpp");
+    const u8 gMonFootprint_Mew[] = INCBIN_U8("graphics/pokemon/_add/moe/mew/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Mew[] = INCBIN_COMP("graphics/pokemon/mew/overworld.4bpp");

@@ -3433,4 +3433,11 @@ extern const u32 gBattleAnimBgTilemap_DarknessTerrain[];
 extern const u32 gBattleAnimSpriteGfx_FlowerLycoris[];
 extern const u16 gBattleAnimSpritePal_FlowerLycoris[];
 
+extern const u32 gBattleAnimSpriteGfx_ApollonArrow[];
+extern const u16 gBattleAnimSpritePal_ApollonArrow[];
+extern const u32 gBattleAnimSpriteGfx_Hexagram[];
+extern const u16 gBattleAnimSpritePal_Hexagram[];
+extern const u32 gBattleAnimSpriteGfx_SpatialTear[];
+extern const u16 gBattleAnimSpritePal_SpatialTear[];
+
 #endif //GUARD_GRAPHICS_H

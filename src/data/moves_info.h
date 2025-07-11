@@ -21821,7 +21821,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_FairyLock,
+        .battleAnimScript = gBattleAnimMove_GrimoireCall,
+    },
+
+    [MOVE_RAIN_OF_ARROWS] =  // Edited
+    {
+        .name = COMPOUND_STRING("Rain of Arrows"),
+        .description = COMPOUND_STRING(
+            "Shots arrows to the target.\n"
+            "May lower the foe's Attack."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_ILLUSION,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_ATK_MINUS_1,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
+        .battleAnimScript = gBattleAnimMove_RainOfArrows,
     },
 
     // Z-Moves

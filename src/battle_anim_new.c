@@ -102,6 +102,8 @@ static void SpriteCB_TripleArrowKick(struct Sprite* sprite);
 
 static void AnimDimensionShotWalls(struct Sprite *);
 static void AnimDimensionShotWalls_Step(struct Sprite *);
+static void AnimApollonArrow1(struct Sprite *);
+static void AnimApollonArrow2(struct Sprite *);
 
 // const data
 // general
@@ -9537,3 +9539,74 @@ const union AffineAnimCmd* const gSpriteAffineAnimTable_MegaSymbol[] =
 {
     sSpriteAffineAnim_MegaSymbol,
 };
+
+const struct SpriteTemplate gApollonArrow1SpriteTemplate =    
+{
+    .tileTag = ANIM_TAG_APOLLON_ARROW,
+    .paletteTag = ANIM_TAG_APOLLON_ARROW,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimApollonArrow1,
+};
+
+const struct SpriteTemplate gApollonArrow2SpriteTemplate =    
+{
+    .tileTag = ANIM_TAG_APOLLON_ARROW,
+    .paletteTag = ANIM_TAG_APOLLON_ARROW,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimApollonArrow2,
+};
+
+static void AnimApollonArrow1(struct Sprite *sprite)
+{
+    bool8 respectMonPicOffsets;
+    u8 coordType;
+
+    if (!(gBattleAnimArgs[5] & 0xFF00))
+        respectMonPicOffsets = TRUE;
+    else
+        respectMonPicOffsets = FALSE;
+    if (!(gBattleAnimArgs[5] & 0xFF))
+        coordType = BATTLER_COORD_Y_PIC_OFFSET;
+    else
+        coordType = BATTLER_COORD_Y;
+    InitSpritePosToAnimAttacker(sprite, respectMonPicOffsets);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + gBattleAnimArgs[2];
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, coordType) + gBattleAnimArgs[3];
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+static void AnimApollonArrow2(struct Sprite *sprite)
+{
+    bool8 respectMonPicOffsets;
+    u8 coordType;
+
+    if (!(gBattleAnimArgs[5] & 0xFF00))
+        respectMonPicOffsets = TRUE;
+    else
+        respectMonPicOffsets = FALSE;
+    if (!(gBattleAnimArgs[5] & 0xFF))
+        coordType = BATTLER_COORD_Y_PIC_OFFSET;
+    else
+        coordType = BATTLER_COORD_Y;
+    sprite->x = GetBattlerSpriteCoord2(gBattleAnimTarget, BATTLER_COORD_X);
+    sprite->y = GetBattlerSpriteCoord2(gBattleAnimTarget, BATTLER_COORD_Y);
+    sprite->x += gBattleAnimArgs[0];
+    sprite->y += gBattleAnimArgs[1];
+
+    TrySetSpriteRotScale(sprite, 0, 0x100, 0x100, 0x8000);
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2];
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, coordType) + gBattleAnimArgs[3];
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}

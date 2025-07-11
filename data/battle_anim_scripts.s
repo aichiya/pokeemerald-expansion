@@ -20563,6 +20563,58 @@ gBattleAnimMove_Uehehehehehe::
 	waitforvisualfinish
 	end
 
+gBattleAnimMove_GrimoireCall::
+	loadspritegfx ANIM_TAG_LEER
+	loadspritegfx ANIM_TAG_HEXAGRAM
+	monbg ANIM_ATTACKER
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 1, 1, 0, 8, RGB(14, 0, 14)
+	waitforvisualfinish
+	playsewithpan SE_M_LEER, SOUND_PAN_ATTACKER
+	createsprite gLeerSpriteTemplate, ANIM_ATTACKER, 2, 24, -12
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -5, -5, 10, 0, 1
+	waitforvisualfinish
+	delay 7
+	createsprite gHexagramSpriteTemplate, ANIM_ATTACKER, 41, 0, 0, 0, 0
+	loopsewithpan SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER, 5, 8
+	waitforvisualfinish
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 1, 1, 8, 0, RGB(14, 0, 14)
+	waitforvisualfinish
+	clearmonbg ANIM_ATTACKER
+	blendoff
+	delay 1
+	waitforvisualfinish
+	end
+
+gBattleAnimMove_RainOfArrows::
+	loadspritegfx ANIM_TAG_APOLLON_ARROW
+	createsprite gApollonArrow1SpriteTemplate, ANIM_ATTACKER, 2, 0, 32, 0, -96, 25, 0
+	playsewithpan SE_M_WING_ATTACK, 64
+    delay 6
+	createsprite gApollonArrow1SpriteTemplate, ANIM_ATTACKER, 2, -10, 32, -10, -96, 25, 0
+	createsprite gApollonArrow1SpriteTemplate, ANIM_ATTACKER, 2, 10, 32, 10, -96, 25, 0
+	playsewithpan SE_M_WING_ATTACK, 64
+    delay 6
+	createsprite gApollonArrow1SpriteTemplate, ANIM_ATTACKER, 2, -20, 32, -20, -96, 25, 0
+	createsprite gApollonArrow1SpriteTemplate, ANIM_ATTACKER, 2, 20, 32, 20, -96, 25, 0
+	playsewithpan SE_M_WING_ATTACK, 64
+	waitforvisualfinish
+	playsewithpan SE_M_SKETCH, 0
+	createsprite gApollonArrow2SpriteTemplate, ANIM_TARGET, 2, 0, -96, 0, 32, 25, 0
+	playsewithpan SE_M_WING_ATTACK, 64
+    delay 6
+	createsprite gApollonArrow2SpriteTemplate, ANIM_TARGET, 2, -10, -96, -10, 32, 25, 0
+	createsprite gApollonArrow2SpriteTemplate, ANIM_TARGET, 2, 10, -96, 10, 32, 25, 0
+	playsewithpan SE_M_WING_ATTACK, 64
+    delay 6
+	createsprite gApollonArrow2SpriteTemplate, ANIM_TARGET, 2, -20, -96, -20, 32, 25, 0
+	createsprite gApollonArrow2SpriteTemplate, ANIM_TARGET, 2, 20, -96, 20, 32, 25, 0
+	playsewithpan SE_M_WING_ATTACK, 64
+    delay 10
+	createvisualtask AnimTask_ShakeMon2, 2, 1, 8, 0, 16, 1
+	loopsewithpan SE_M_HORN_ATTACK, 63, 3, 5
+	waitforvisualfinish
+    end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
 gBattleAnimMove_MirrorMove::

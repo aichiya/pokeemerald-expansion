@@ -2,7 +2,7 @@
   "id": "MAP_JAVA_EASTERN_PASS",
   "name": "JavaEasternPass",
   "layout": "LAYOUT_JAVA_EASTERN_PASS",
-  "music": "MUS_THPPZGSK_MEGAMARI_A",
+  "music": "MUS_THPPZGSK_359A_MEGAMARI_OPENING",
   "region_map_section": "MAPSEC_JAVA_EASTERN_PASS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -2,7 +2,7 @@
   "id": "MAP_ANOTHER_WORLD_TRAPPY_PASS",
   "name": "AnotherWorldTrappyPass",
   "layout": "LAYOUT_ANOTHER_WORLD_TRAPPY_PASS",
-  "music": "MUS_THPPZGSK_ENDOFSPRING",
+  "music": "MUS_THPPZGSK_384A_THE_END_OF_SPRING",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

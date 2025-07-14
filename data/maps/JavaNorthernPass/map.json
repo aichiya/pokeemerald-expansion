@@ -2,7 +2,7 @@
   "id": "MAP_JAVA_NORTHERN_PASS",
   "name": "JavaNorthernPass",
   "layout": "LAYOUT_JAVA_NORTHERN_PASS",
-  "music": "MUS_THPPZGSK_JAPANESEFLOWER",
+  "music": "MUS_THPPZGSK_372A_FLOWER_OF_JAPAN",
   "region_map_section": "MAPSEC_JAVA_NORTHERN_PASS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

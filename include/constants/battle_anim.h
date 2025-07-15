@@ -424,7 +424,7 @@
 #define ANIM_TAG_TATSUGIRI_DROOPY           (ANIM_SPRITES_START + 410)
 #define ANIM_TAG_TATSUGIRI_STRETCHY         (ANIM_SPRITES_START + 411)
 
-#define LAST_ANIM_TAG_EXPANSION             ANIM_TAG_SALT_PARTICLE
+#define LAST_ANIM_TAG_EXPANSION             ANIM_TAG_TATSUGIRI_STRETCHY
 #define ANIM_TAG_FLOWER_LYCORIS             (LAST_ANIM_TAG_EXPANSION + 1)
 #define ANIM_TAG_APOLLON_ARROW              (LAST_ANIM_TAG_EXPANSION + 2)
 #define ANIM_TAG_HEXAGRAM                   (LAST_ANIM_TAG_EXPANSION + 3)
@@ -603,8 +603,10 @@
 #define B_ANIM_TERA_ACTIVATE            51
 #define B_ANIM_SIMPLE_HEAL              52
 #define B_ANIM_POWER_CONSTRUCT          53
+#define B_ANIM_COUNTER_SLASH            54
 
-#define NUM_B_ANIMS_GENERAL             54
+#define LAST_B_ANIMS_GENERAL            B_ANIM_COUNTER_SLASH
+#define NUM_B_ANIMS_GENERAL             (LAST_B_ANIMS_GENERAL + 1)
 
 // special animations table (sBattleAnims_Special)
 #define B_ANIM_LVL_UP                   0

@@ -10330,3 +10330,17 @@ BattleScript_EffectGrimoireCall::
 	attackanimation
 	waitanimation
 	jumptocalledmove TRUE
+
+BattleScript_TsubameGaeshiActivates::
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_COUNTEREDWITHSOMETHING
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_SCRIPTING, B_ANIM_COUNTER_SLASH
+	waitanimation
+	restoretarget
+	restoreattacker
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	tryfaintmon BS_ATTACKER
+	return

@@ -2782,4 +2782,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
+    [ABILITY_TSUBAME_GAESHI] =
+    {
+        .name = _("Tsubame Gaeshi"),
+        .description = COMPOUND_STRING("Auto-counter slicing moves."),
+        .aiRating = 8,
+    },
+
 };

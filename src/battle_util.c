@@ -4180,7 +4180,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 gSideTimers[targetSide].spikesAmount = 3;
 
                 if (!IsHazardOnSide(targetSide, HAZARDS_STICKY_WEB))
-                    PushHazardTypeToQueue(targetSide, HAZARDS_TOXIC_SPIKES);
+                    PushHazardTypeToQueue(targetSide, HAZARDS_STICKY_WEB);
                 if (!IsHazardOnSide(targetSide, HAZARDS_STEALTH_ROCK))
                     PushHazardTypeToQueue(targetSide, HAZARDS_STEALTH_ROCK);
                 if (!IsHazardOnSide(targetSide, HAZARDS_STEELSURGE))
@@ -5009,6 +5009,23 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_MirrorWallActivates;
+                effect++;
+            }
+            break;
+        case ABILITY_TSUBAME_GAESHI:
+            if (IsBattlerAlive(gBattlerAttacker)
+             && IsBattlerAlive(gBattlerTarget)
+             && IsSlicingMove(move)
+             && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+             && IsBattlerTurnDamaged(gBattlerTarget))
+            {
+                SaveBattlerAttacker(gBattlerAttacker);
+                SaveBattlerTarget(gBattlerTarget);
+                gBattleStruct->moveDamage[gBattlerAttacker] = gBattleStruct->moveDamage[gBattlerTarget] * 150 / 100;
+                if (gBattleStruct->moveDamage[gBattlerAttacker] == 0)
+                    gBattleStruct->moveDamage[gBattlerAttacker] = 1;
+                PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
+                BattleScriptCall(BattleScript_TsubameGaeshiActivates);
                 effect++;
             }
             break;

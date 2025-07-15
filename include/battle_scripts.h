@@ -559,6 +559,7 @@ extern const u8 BattleScript_DarknessSurgeActivates[];
 extern const u8 BattleScript_EffectDarknessTerrain[];
 extern const u8 BattleScript_EffectUehehehehehe[];
 extern const u8 BattleScript_EffectGrimoireCall[];
+extern const u8 BattleScript_TsubameGaeshiActivates[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

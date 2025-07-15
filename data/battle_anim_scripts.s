@@ -22473,6 +22473,22 @@ gBattleAnimMove_RainOfArrows::
 	waitforvisualfinish
     end
 
+gBattleAnimGeneral_CounterSlash::
+	loadspritegfx ANIM_TAG_SPARKLE_4
+	loadspritegfx ANIM_TAG_SLASH
+	playsewithpan SE_M_DETECT, SOUND_PAN_TARGET
+	createsprite gSpinningSparkleSpriteTemplate, ANIM_TARGET, 13, 20, -20
+	waitforvisualfinish
+	delay 7
+	createsprite gSlashSliceSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, -8, 0
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_ATTACKER
+	delay 4
+	createsprite gSlashSliceSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 8, 0
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 4, ANIM_ATTACKER, 18, 1
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_ATTACKER
+	waitforvisualfinish
+	end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
 gBattleAnimMove_MirrorMove::

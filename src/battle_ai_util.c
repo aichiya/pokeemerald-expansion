@@ -141,6 +141,15 @@ bool32 IsAiBattlerAssumingStab()
     return FALSE;
 }
 
+bool32 IsAiBattlerAssumingStatusMoves()
+{
+    if (gAiThinkingStruct->aiFlags[B_POSITION_OPPONENT_LEFT] & AI_FLAG_ASSUME_STATUS_MOVES
+     || gAiThinkingStruct->aiFlags[B_POSITION_OPPONENT_RIGHT] & AI_FLAG_ASSUME_STATUS_MOVES)
+        return TRUE;
+
+    return FALSE;
+}
+
 bool32 IsAiBattlerPredictingAbility(u32 battlerId)
 {
     if (gAiThinkingStruct->aiFlags[B_POSITION_OPPONENT_LEFT] & AI_FLAG_WEIGH_ABILITY_PREDICTION
@@ -247,6 +256,66 @@ void SaveBattlerData(u32 battlerId)
     // Save and restore types even for AI controlled battlers in case it gets changed during move evaluation process.
     gAiThinkingStruct->saved[battlerId].types[0] = gBattleMons[battlerId].types[0];
     gAiThinkingStruct->saved[battlerId].types[1] = gBattleMons[battlerId].types[1];
+}
+
+bool32 ShouldRecordStatusMove(u32 move)
+{
+    if (ASSUME_STATUS_MOVES_HAS_TUNING)
+    {
+        switch (GetMoveEffect(move))
+        {
+        // variable odds by additional effect
+        case EFFECT_NON_VOLATILE_STATUS:
+            if (GetMoveNonVolatileStatus(move) == MOVE_EFFECT_SLEEP && RandomPercentage(RNG_AI_ASSUME_STATUS_SLEEP, ASSUME_STATUS_HIGH_ODDS))
+                return TRUE;
+            else if (RandomPercentage(RNG_AI_ASSUME_STATUS_NONVOLATILE, ASSUME_STATUS_MEDIUM_ODDS))
+                return TRUE;
+            break;
+        // High odds
+        case EFFECT_AURORA_VEIL:
+        case EFFECT_CHILLY_RECEPTION:
+        case EFFECT_FIRST_TURN_ONLY:
+        case EFFECT_FOLLOW_ME:
+        case EFFECT_INSTRUCT:
+        case EFFECT_JUNGLE_HEALING:
+        case EFFECT_SHED_TAIL:
+            return RandomPercentage(RNG_AI_ASSUME_STATUS_HIGH_ODDS, ASSUME_STATUS_HIGH_ODDS);
+        // Medium odds
+        case EFFECT_AFTER_YOU:
+        case EFFECT_DOODLE:
+        case EFFECT_ENCORE:
+        case EFFECT_HAZE:
+        case EFFECT_PARTING_SHOT:
+        case EFFECT_PROTECT:
+        case EFFECT_REST:
+        case EFFECT_ROAR:
+        case EFFECT_ROOST:
+        case EFFECT_SLEEP_TALK:
+        case EFFECT_TAUNT:
+        case EFFECT_TAILWIND:
+        case EFFECT_TRICK:
+        case EFFECT_TRICK_ROOM:
+        // defoggables / screens and hazards
+        case EFFECT_LIGHT_SCREEN:
+        case EFFECT_REFLECT:
+        case EFFECT_SPIKES:
+        case EFFECT_STEALTH_ROCK:
+        case EFFECT_STICKY_WEB:
+        case EFFECT_TOXIC_SPIKES:
+            return RandomPercentage(RNG_AI_ASSUME_STATUS_MEDIUM_ODDS, ASSUME_STATUS_MEDIUM_ODDS);
+        // Low odds
+        case EFFECT_ENTRAINMENT:
+        case EFFECT_FIXED_PERCENT_DAMAGE:
+        case EFFECT_GASTRO_ACID:
+        case EFFECT_IMPRISON:
+        case EFFECT_TELEPORT:
+            return RandomPercentage(RNG_AI_ASSUME_STATUS_LOW_ODDS, ASSUME_STATUS_LOW_ODDS);
+        default:
+            break;
+        }
+    }
+
+    return RandomPercentage(RNG_AI_ASSUME_ALL_STATUS, ASSUME_ALL_STATUS_ODDS) && IsBattleMoveStatus(move);
 }
 
 static bool32 ShouldFailForIllusion(u32 illusionSpecies, u32 battlerId)
@@ -1281,7 +1350,7 @@ bool32 CanTargetFaintAi(u32 battlerDef, u32 battlerAtk)
     return FALSE;
 }
 
-u32 NoOfHitsForTargetToFaintAI(u32 battlerDef, u32 battlerAtk)
+u32 NoOfHitsForTargetToFaintBattler(u32 battlerDef, u32 battlerAtk)
 {
     u32 i;
     u32 currNumberOfHits;
@@ -1290,6 +1359,32 @@ u32 NoOfHitsForTargetToFaintAI(u32 battlerDef, u32 battlerAtk)
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         currNumberOfHits = GetNoOfHitsToKOBattler(battlerDef, battlerAtk, i, AI_DEFENDING);
+        if (currNumberOfHits != 0)
+        {
+            if (currNumberOfHits < leastNumberOfHits)
+                leastNumberOfHits = currNumberOfHits;
+        }
+    }
+    return leastNumberOfHits;
+}
+
+u32 NoOfHitsForTargetToFaintBattlerWithMod(u32 battlerDef, u32 battlerAtk, s32 hpMod)
+{
+    u32 i;
+    u32 currNumberOfHits;
+    u32 leastNumberOfHits = UNKNOWN_NO_OF_HITS;
+    u32 hpCheck = gBattleMons[battlerAtk].hp + hpMod;
+    u32 damageDealt = 0;
+
+    if (hpCheck > gBattleMons[battlerAtk].maxHP)
+        hpCheck = gBattleMons[battlerAtk].maxHP;
+
+    for (i = 0; i < MAX_MON_MOVES; i++)
+    {
+        damageDealt = AI_GetDamage(battlerDef, battlerAtk, i, AI_DEFENDING, gAiLogicData);
+        if (damageDealt == 0)
+            continue;
+        currNumberOfHits = hpCheck / (damageDealt + 1) + 1;
         if (currNumberOfHits != 0)
         {
             if (currNumberOfHits < leastNumberOfHits)
@@ -1372,6 +1467,26 @@ bool32 CanAIFaintTarget(u32 battlerAtk, u32 battlerDef, u32 numHits)
         }
     }
 
+    return FALSE;
+}
+
+// Can battler KO the target ignoring any Endure effects (Sturdy, Focus Sash, etc.)
+bool32 CanBattlerKOTargetIgnoringSturdy(u32 battlerAtk, u32 battlerDef)
+{
+    struct AiLogicData *aiData = gAiLogicData;
+    s32 moveIndex, dmg;
+    u16 *moves = GetMovesArray(battlerAtk);
+    u32 moveLimitations = aiData->moveLimitations[battlerAtk];
+
+    for (moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        if (IsMoveUnusable(moveIndex, moves[moveIndex], moveLimitations))
+            continue;
+        dmg = AI_GetDamage(battlerAtk, battlerDef, moveIndex, AI_ATTACKING, aiData);
+
+        if (gBattleMons[battlerDef].hp <= dmg && CanEndureHit(battlerAtk, battlerDef, moves[moveIndex]))
+            return TRUE;
+    }
     return FALSE;
 }
 
@@ -3628,21 +3743,30 @@ bool32 ShouldAbsorb(u32 battlerAtk, u32 battlerDef, u32 move, s32 damage)
     return FALSE;
 }
 
-bool32 ShouldRecover(u32 battlerAtk, u32 battlerDef, u32 move, u32 healPercent, enum DamageCalcContext calcContext)
+bool32 ShouldRecover(u32 battlerAtk, u32 battlerDef, u32 move, u32 healPercent)
 {
-    if (move == 0xFFFF || AI_IsFaster(battlerAtk, battlerDef, move))
+    u32 maxHP = gBattleMons[battlerAtk].maxHP;
+    u32 healAmount = (healPercent * maxHP) / 100;
+    if (healAmount > maxHP)
+        healAmount = maxHP;
+    if (gStatuses3[battlerAtk] & STATUS3_HEAL_BLOCK)
+        healAmount = 0;
+    if (AI_IsFaster(battlerAtk, battlerDef, move))
     {
-        // using item or user going first
-        s32 damage = AI_GetDamage(battlerAtk, battlerDef, gAiThinkingStruct->movesetIndex, calcContext, gAiLogicData);
-        s32 healAmount = (healPercent * damage) / 100;
-        if (gStatuses3[battlerAtk] & STATUS3_HEAL_BLOCK)
-            healAmount = 0;
-
         if (CanTargetFaintAi(battlerDef, battlerAtk)
           && !CanTargetFaintAiWithMod(battlerDef, battlerAtk, healAmount, 0))
             return TRUE;    // target can faint attacker unless they heal
-        else if (!CanTargetFaintAi(battlerDef, battlerAtk) && gAiLogicData->hpPercents[battlerAtk] < 60 && (Random() % 3))
-            return TRUE;    // target can't faint attacker at all, attacker health is about half, 2/3rds rate of encouraging healing
+        else if (!CanTargetFaintAi(battlerDef, battlerAtk) && gAiLogicData->hpPercents[battlerAtk] < ENABLE_RECOVERY_THRESHOLD && RandomPercentage(RNG_AI_SHOULD_RECOVER, SHOULD_RECOVER_CHANCE))
+            return TRUE;    // target can't faint attacker at all, generally safe
+    }
+    else
+    {
+        if (!CanTargetFaintAi(battlerDef, battlerAtk)
+          && GetBestDmgFromBattler(battlerDef, battlerAtk, AI_DEFENDING) < healAmount
+          && NoOfHitsForTargetToFaintBattler(battlerDef, battlerAtk) < NoOfHitsForTargetToFaintBattlerWithMod(battlerDef, battlerAtk, healAmount))
+            return TRUE;    // target can't faint attacker and is dealing less damage than we're healing
+        else if (!CanTargetFaintAi(battlerDef, battlerAtk) && gAiLogicData->hpPercents[battlerAtk] < ENABLE_RECOVERY_THRESHOLD && RandomPercentage(RNG_AI_SHOULD_RECOVER, SHOULD_RECOVER_CHANCE))
+            return TRUE;    // target can't faint attacker at all, generally safe
     }
     return FALSE;
 }
@@ -3892,7 +4016,7 @@ bool32 ShouldUseWishAromatherapy(u32 battlerAtk, u32 battlerDef, u32 move)
         switch (GetMoveEffect(move))
         {
         case EFFECT_WISH:
-            return ShouldRecover(battlerAtk, battlerDef, move, 50, AI_DEFENDING); // Switch recovery isn't good idea in doubles
+            return ShouldRecover(battlerAtk, battlerDef, move, 50); // Switch recovery isn't good idea in doubles
         case EFFECT_HEAL_BELL:
             if (hasStatus)
                 return TRUE;
@@ -4160,10 +4284,39 @@ bool32 IsRecycleEncouragedItem(u32 item)
     return FALSE;
 }
 
+bool32 HasMoveThatChangesKOThreshold(u32 battlerId, u32 noOfHitsToFaint, u32 aiIsFaster)
+{
+    s32 i;
+    u16 *moves = GetMovesArray(battlerId);
+
+    for (i = 0; i < MAX_MON_MOVES; i++)
+    {
+        if (moves[i] == MOVE_NONE || moves[i] == MOVE_UNAVAILABLE)
+            continue;
+        if (noOfHitsToFaint <= 2)
+        {
+            if (GetMovePriority(moves[i]) > 0)
+                return TRUE;
+
+            switch (gMovesInfo[moves[i]].additionalEffects[i].moveEffect)
+            {
+                case MOVE_EFFECT_SPD_MINUS_1:
+                case MOVE_EFFECT_SPD_MINUS_2:
+                {
+                    if(aiIsFaster)
+                        return TRUE;
+                }
+            }
+        }
+    }
+
+    return FALSE;
+}
+
 static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, enum StatChange statId, bool32 considerContrary)
 {
     enum AIScore tempScore = NO_INCREASE;
-    u32 noOfHitsToFaint = NoOfHitsForTargetToFaintAI(battlerDef, battlerAtk);
+    u32 noOfHitsToFaint = NoOfHitsForTargetToFaintBattler(battlerDef, battlerAtk);
     u32 aiIsFaster = AI_IsFaster(battlerAtk, battlerDef, TRUE);
     u32 shouldSetUp = ((noOfHitsToFaint >= 2 && aiIsFaster) || (noOfHitsToFaint >= 3 && !aiIsFaster) || noOfHitsToFaint == UNKNOWN_NO_OF_HITS);
     u32 i;
@@ -4206,6 +4359,14 @@ static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, 
     if (gBattleMons[battlerAtk].statStages[statId] >= MAX_STAT_STAGE - 5 && (HasBattlerSideMoveWithEffect(battlerDef, EFFECT_HAZE)
         || HasBattlerSideMoveWithAdditionalEffect(battlerDef, MOVE_EFFECT_CLEAR_SMOG)
         || HasBattlerSideMoveWithAdditionalEffect(battlerDef, MOVE_EFFECT_HAZE)))
+        return NO_INCREASE;
+
+    // Don't increase stats if AI could KO target through Sturdy effect, as otherwise it always 2HKOs
+    if (CanBattlerKOTargetIgnoringSturdy(battlerAtk, battlerDef))
+        return NO_INCREASE;
+
+    // Don't increase stats if player has a move that can change the KO threshold
+    if (HasMoveThatChangesKOThreshold(battlerDef, noOfHitsToFaint, aiIsFaster))
         return NO_INCREASE;
 
     // Predicting switch

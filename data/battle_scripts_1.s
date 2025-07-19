@@ -9905,12 +9905,8 @@ BattleScript_ForfeitBattleGaveMoney::
 	end2
 
 BattleScript_WinningCombination3Activates::
-	copybyte sSAVED_BATTLER, gBattlerTarget
-.if B_ABILITY_POP_UP == TRUE
-	showabilitypopup BS_ATTACKER
-	pause B_WAIT_TIME_LONG
-	destroyabilitypopup
-.endif
+	savetarget
+	call BattleScript_AbilityPopUp
 	setbyte gBattlerTarget, 0
 BattleScript_WinningCombination3Loop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_WinningCombination3Increment
@@ -9947,11 +9943,7 @@ BattleScript_WinningCombination3End:
 
 BattleScript_ManaDisturptorActivates::
 	savetarget
-.if B_ABILITY_POP_UP == TRUE
-	showabilitypopup BS_ATTACKER
-	pause B_WAIT_TIME_LONG
-	destroyabilitypopup
-.endif
+	call BattleScript_AbilityPopUp
 	setbyte gBattlerTarget, 0
 BattleScript_ManaDisturptorLoop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_ManaDisturptorLoopIncrement
@@ -10078,12 +10070,8 @@ BattleScript_GreatBloomingActivates::
 	end3
 
 BattleScript_PosterGirlActivates::
-	copybyte sSAVED_BATTLER, gBattlerTarget
-.if B_ABILITY_POP_UP == TRUE
-	showabilitypopup BS_ATTACKER
-	pause B_WAIT_TIME_LONG
-	destroyabilitypopup
-.endif
+	savetarget
+	call BattleScript_AbilityPopUp
 	setbyte gBattlerTarget, 0
 BattleScript_PosterGirlLoop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_PosterGirlIncrement
@@ -10109,12 +10097,9 @@ BattleScript_PosterGirlEnd:
 	end3
 
 BattleScript_WorldEndGardenActivates::
-	copybyte sSAVED_BATTLER, gBattlerTarget
-.if B_ABILITY_POP_UP == TRUE
-	showabilitypopup BS_ATTACKER
-	pause B_WAIT_TIME_LONG
-	destroyabilitypopup
-.endif
+	savetarget
+	call BattleScript_AbilityPopUp
+	setbyte gBattlerTarget, 0
 	printstring STRINGID_CAUSESCHAOSONTHEOPPOSINGSIDE
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_WorldEndGardenLoop:
@@ -10142,11 +10127,7 @@ BattleScript_MirrorWallActivates::
 
 BattleScript_MisfortuneAuraActivates::
 	savetarget
-.if B_ABILITY_POP_UP == TRUE
-	showabilitypopup BS_ATTACKER
-	pause B_WAIT_TIME_LONG
-	destroyabilitypopup
-.endif
+	call BattleScript_AbilityPopUp
 	setbyte gBattlerTarget, 0
 BattleScript_MisfortuneAuraLoop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_MisfortuneAuraLoopIncrement

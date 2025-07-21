@@ -46,6 +46,7 @@ static enum FieldEffectOutcome BenefitsFromMistyTerrain(u32 battler);
 static enum FieldEffectOutcome BenefitsFromPsychicTerrain(u32 battler);
 static enum FieldEffectOutcome BenefitsFromUBW(u32 battler);
 static enum FieldEffectOutcome BenefitsFromDarknessTerrain(u32 battler);
+static enum FieldEffectOutcome BenefitsFromMiasmaTerrain(u32 battler);
 static enum FieldEffectOutcome BenefitsFromTrickRoom(u32 battler);
 
 bool32 WeatherChecker(u32 battler, u32 weather, enum FieldEffectOutcome desiredResult)
@@ -110,8 +111,10 @@ bool32 FieldStatusChecker(u32 battler, u32 fieldStatus, enum FieldEffectOutcome 
             result = BenefitsFromPsychicTerrain(battler);
         if (fieldStatus & STATUS_FIELD_UBW)
             result = BenefitsFromUBW(battler);
-        if (fieldStatus & STATUS_FIELD_PSYCHIC_TERRAIN)
+        if (fieldStatus & STATUS_FIELD_DARKNESS_TERRAIN)
             result = BenefitsFromDarknessTerrain(battler);
+        if (fieldStatus & STATUS_FIELD_MIASMA_TERRAIN)
+            result = BenefitsFromMiasmaTerrain(battler);
 
         // other field statuses
         if (fieldStatus & STATUS_FIELD_TRICK_ROOM)
@@ -466,6 +469,26 @@ static enum FieldEffectOutcome BenefitsFromDarknessTerrain(u32 battler)
         return FIELD_EFFECT_POSITIVE;
 
     if (grounded && HasDamagingMoveOfType(battler, TYPE_NEW_DARK))
+        return FIELD_EFFECT_POSITIVE;
+
+    return FIELD_EFFECT_NEUTRAL;
+}
+
+static enum FieldEffectOutcome BenefitsFromMiasmaTerrain(u32 battler)
+{
+    if (DoesAbilityBenefitFromFieldStatus(gAiLogicData->abilities[battler], STATUS_FIELD_MIASMA_TERRAIN))
+        return FIELD_EFFECT_POSITIVE;
+
+    bool32 grounded = IsBattlerGrounded(battler);
+    bool32 allyGrounded = FALSE;
+    if (IsDoubleBattle() && IsBattlerAlive(BATTLE_PARTNER(battler)))
+        allyGrounded = IsBattlerGrounded(BATTLE_PARTNER(battler));
+
+    // harass steel
+    if (HasDamagingMoveOfType(FOE(battler), TYPE_NEW_STEEL) || HasDamagingMoveOfType(BATTLE_PARTNER(FOE(battler)), TYPE_NEW_STEEL))
+        return FIELD_EFFECT_POSITIVE;
+
+    if (HasDamagingMoveOfType(battler, TYPE_NEW_MIASMA))
         return FIELD_EFFECT_POSITIVE;
 
     return FIELD_EFFECT_NEUTRAL;

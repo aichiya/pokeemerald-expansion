@@ -4873,6 +4873,9 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
 			case STATUS_FIELD_DARKNESS_TERRAIN:
 				gBattleScripting.moveEffect = MOVE_EFFECT_ACC_MINUS_1;
 				break;
+			case STATUS_FIELD_MIASMA_TERRAIN:
+				gBattleScripting.moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1;
+				break;
             default:
                 gBattleScripting.moveEffect = MOVE_EFFECT_PARALYSIS;
                 break;
@@ -5152,6 +5155,7 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
     case MOVE_EFFECT_PSYCHIC_TERRAIN:
     case MOVE_EFFECT_UBW:
     case MOVE_EFFECT_DARKNESS_TERRAIN:
+    case MOVE_EFFECT_MIASMA_TERRAIN:
     {
         u32 statusFlag = 0;
         switch (gBattleScripting.moveEffect)
@@ -5179,6 +5183,10 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
 			case MOVE_EFFECT_DARKNESS_TERRAIN:
 				statusFlag = STATUS_FIELD_DARKNESS_TERRAIN;
 				gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_DARKNESS;
+				break;
+			case MOVE_EFFECT_MIASMA_TERRAIN:
+				statusFlag = STATUS_FIELD_MIASMA_TERRAIN;
+				gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_MIASMA;
 				break;
         }
         if (!(gFieldStatuses & statusFlag) && statusFlag != 0)
@@ -10541,6 +10549,9 @@ static void RemoveAllTerrains(void)
     case STATUS_FIELD_DARKNESS_TERRAIN:
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_END_DARKNESS;
         break;
+    case STATUS_FIELD_MIASMA_TERRAIN:
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_END_MIASMA;
+        break;
     default:
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_COUNT;  // failsafe
         break;
@@ -14358,6 +14369,8 @@ u32 GetNaturePowerMove(u32 battler)
         move = MOVE_FLASH_CANNON;
     else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
         move = MOVE_DARK_PULSE;
+    else if (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
+        move = MOVE_SLUDGE_BOMB;
     else if (gBattleEnvironmentInfo[gBattleEnvironment].naturePower == MOVE_NONE)
         move = MOVE_TRI_ATTACK;
 
@@ -15326,6 +15339,9 @@ static void Cmd_settypetoenvironment(void)
         break;
     case STATUS_FIELD_DARKNESS_TERRAIN:
         environmentType = TYPE_NEW_DARK;
+        break;
+    case STATUS_FIELD_MIASMA_TERRAIN:
+        environmentType = TYPE_NEW_MIASMA;
         break;
     default:
         environmentType = gBattleEnvironmentInfo[gBattleEnvironment].camouflageType;
@@ -17037,6 +17053,10 @@ void BS_SetTerrain(void)
     case EFFECT_DARKNESS_TERRAIN:
         statusFlag = STATUS_FIELD_DARKNESS_TERRAIN;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_DARKNESS;
+        break;
+    case EFFECT_MIASMA_TERRAIN:
+        statusFlag = STATUS_FIELD_MIASMA_TERRAIN;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_MIASMA;
         break;
     case EFFECT_HIT_SET_TERRAIN:
         statusFlag = GetMoveTerrainFlag(gCurrentMove);
@@ -19764,6 +19784,9 @@ void BS_TryTerrainSeed(void)
 			break;
 		case HOLD_EFFECT_PARAM_DARKNESS_TERRAIN:
 			effect = TryHandleSeed(battler, STATUS_FIELD_DARKNESS_TERRAIN, STAT_SPATK, item, ITEMEFFECT_NONE);
+			break;
+		case HOLD_EFFECT_PARAM_MIASMA_TERRAIN:
+			effect = TryHandleSeed(battler, STATUS_FIELD_MIASMA_TERRAIN, STAT_ATK, item, ITEMEFFECT_NONE);
 			break;
         }
 

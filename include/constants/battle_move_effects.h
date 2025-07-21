@@ -368,6 +368,7 @@ enum __attribute__((packed)) BattleMoveEffects
     EFFECT_QUINTETT_FEUER,
     EFFECT_UEHEHEHEHEHE,
     EFFECT_GRIMOIRE_CALL,
+    EFFECT_MIASMA_TERRAIN,
     NUM_BATTLE_MOVE_EFFECTS,
 };
 

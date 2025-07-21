@@ -2228,6 +2228,7 @@ BattleScript_AttackAccUpTryAcc::
 BattleScript_AttackAccUpEnd:
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectMiasmaTerrain::
 BattleScript_EffectDarknessTerrain::
 BattleScript_EffectUBWField::
 BattleScript_EffectMistyTerrain::
@@ -7863,6 +7864,15 @@ BattleScript_DarknessSurgeActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_TERRAINBECOMESDARKNESS
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
+	call BattleScript_ActivateTerrainEffects
+	end3
+
+BattleScript_MiasmaSurgeActivates::
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_MIASMACOVERINGTHEFIELD
 	waitmessage B_WAIT_TIME_LONG
 	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
 	call BattleScript_ActivateTerrainEffects

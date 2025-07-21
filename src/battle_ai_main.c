@@ -2539,6 +2539,10 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             if (PartnerMoveEffectIsTerrain(BATTLE_PARTNER(battlerAtk), aiData->partnerMove) || gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
                 ADJUST_SCORE(-10);
             break;
+        case EFFECT_MIASMA_TERRAIN:
+            if (PartnerMoveEffectIsTerrain(BATTLE_PARTNER(battlerAtk), aiData->partnerMove) || gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
+                ADJUST_SCORE(-10);
+            break;
         case EFFECT_STEEL_ROLLER:
             if (!(gFieldStatuses & STATUS_FIELD_TERRAIN_ANY))
                 ADJUST_SCORE(-10);
@@ -4946,6 +4950,14 @@ case EFFECT_GUARD_SPLIT:
                 ADJUST_SCORE(WEAK_EFFECT);
         }
         break;
+    case EFFECT_MIASMA_TERRAIN:
+        if (ShouldSetFieldStatus(battlerAtk, STATUS_FIELD_MIASMA_TERRAIN))
+        {
+            ADJUST_SCORE(GOOD_EFFECT);
+            if (aiData->holdEffects[battlerAtk] == HOLD_EFFECT_TERRAIN_EXTENDER || HasBattlerSideMoveWithEffect(battlerAtk, EFFECT_TERRAIN_PULSE))
+                ADJUST_SCORE(WEAK_EFFECT);
+        }
+        break;
     case EFFECT_STEEL_ROLLER:
         {
             u32 terrain = gFieldStatuses & STATUS_FIELD_TERRAIN_ANY;
@@ -5569,6 +5581,7 @@ static s32 AI_ForceSetupFirstTurn(u32 battlerAtk, u32 battlerDef, u32 move, s32 
     case EFFECT_STONE_AXE:
     case EFFECT_UBW:
     case EFFECT_DARKNESS_TERRAIN:
+    case EFFECT_MIASMA_TERRAIN:
         ADJUST_SCORE(DECENT_EFFECT);
         break;
     default:
@@ -5996,6 +6009,10 @@ static s32 AI_PowerfulStatus(u32 battlerAtk, u32 battlerDef, u32 move, s32 score
         if (!(gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN))
             ADJUST_SCORE(POWERFUL_STATUS_MOVE);
         break;
+    case EFFECT_MIASMA_TERRAIN:
+        if (!(gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN))
+            ADJUST_SCORE(POWERFUL_STATUS_MOVE);
+        break;
     case EFFECT_SANDSTORM:
         if (!(AI_GetWeather() & (B_WEATHER_SANDSTORM | B_WEATHER_PRIMAL_ANY)))
             ADJUST_SCORE(POWERFUL_STATUS_MOVE);
@@ -6105,6 +6122,7 @@ static s32 AI_PredictSwitch(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
     case EFFECT_MISTY_TERRAIN:
     case EFFECT_UBW:
     case EFFECT_DARKNESS_TERRAIN:
+    case EFFECT_MIASMA_TERRAIN:
         ADJUST_SCORE(GOOD_EFFECT);
         break;
     case EFFECT_HIT_SWITCH_TARGET:

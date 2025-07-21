@@ -21733,7 +21733,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = COMBO_STARTER_DARKNESS_TERRAIN,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_PsychicTerrain,
+        .battleAnimScript = gBattleAnimMove_DarknessTerrain,
     },
 
     [MOVE_QUINTETT_FEUER] =  // Edited
@@ -21839,6 +21839,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
         .battleAnimScript = gBattleAnimMove_RainOfArrows,
+    },
+
+    [MOVE_MIASMA_TERRAIN] =  // MOVE_NEW_MIASMA_FIELD
+    {
+        .name = COMPOUND_STRING("Miasma Field"),
+        .description = COMPOUND_STRING(
+            "Miasma covers the field. Ups\n"
+            "miasma moves and ignores steel."),
+        .effect = EFFECT_MIASMA_TERRAIN,
+        .power = 0,
+        .type = TYPE_NEW_MIASMA,
+        .accuracy = 0,
+        .pp = 10,
+        .target = MOVE_TARGET_ALL_BATTLERS,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = COMBO_STARTER_MIASMA_TERRAIN,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_MiasmaTerrain,
     },
 
     // Z-Moves

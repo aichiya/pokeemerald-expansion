@@ -9226,6 +9226,8 @@ void AnimTask_TerrainPulse(u8 taskId)
             gBattleAnimArgs[0] = TYPE_NEW_METAL;
         else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
             gBattleAnimArgs[0] = TYPE_NEW_DARK;
+        else if (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
+            gBattleAnimArgs[0] = TYPE_NEW_MIASMA;
         else //failsafe
             gBattleAnimArgs[0] = 0;
     }

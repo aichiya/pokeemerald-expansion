@@ -2326,4 +2326,10 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectGrimoireCall,
         .battleTvScore = 0, // TODO: Assign points
     },
+
+    [EFFECT_MIASMA_TERRAIN] =
+    {
+        .battleScript = BattleScript_EffectMiasmaTerrain,
+        .battleTvScore = 0, // TODO: Assign points
+    },
 };

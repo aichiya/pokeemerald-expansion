@@ -3860,7 +3860,8 @@ bool32 PartnerMoveEffectIsTerrain(u32 battlerAtkPartner, u32 partnerMove)
       || partnerEffect == EFFECT_ELECTRIC_TERRAIN
       || partnerEffect == EFFECT_PSYCHIC_TERRAIN
       || partnerEffect == EFFECT_UBW
-      || partnerEffect == EFFECT_DARKNESS_TERRAIN))
+      || partnerEffect == EFFECT_DARKNESS_TERRAIN
+      || partnerEffect == EFFECT_MIASMA_TERRAIN))
         return TRUE;
 
     return FALSE;

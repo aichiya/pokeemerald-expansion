@@ -22234,6 +22234,7 @@ gBattleAnimMove_AdventGerbera::
 	waitforvisualfinish
 	end
 
+gBattleAnimMove_MiasmaTerrain::
 gBattleAnimMove_DarknessTerrain::
 	loadspritegfx ANIM_TAG_ORBS @Recover Ball
 	loadspritegfx ANIM_TAG_GREEN_SPARKLE @Green Star
@@ -31716,6 +31717,7 @@ gBattleAnimMove_SecretPower::
 	jumpargeq 0, STATUS_FIELD_PSYCHIC_TERRAIN,  gBattleAnimMove_Confusion
 	jumpargeq 0, STATUS_FIELD_UBW,              gBattleAnimMove_FlashCannon
 	jumpargeq 0, STATUS_FIELD_DARKNESS_TERRAIN, gBattleAnimMove_DarkPulse
+	jumpargeq 0, STATUS_FIELD_MIASMA_TERRAIN,   gBattleAnimMove_SludgeBomb
 	createvisualtask AnimTask_GetBattleEnvironment, 5
 	jumpargeq 0, BATTLE_ENVIRONMENT_GRASS,          gBattleAnimMove_NeedleArm
 	jumpargeq 0, BATTLE_ENVIRONMENT_LONG_GRASS,     gBattleAnimMove_MagicalLeaf

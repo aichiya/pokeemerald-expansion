@@ -4921,7 +4921,9 @@ void SwapTurnOrder(u8 id1, u8 id2)
 u32 GetBattlerTotalSpeedStatArgs(u32 battler, u32 ability, enum ItemHoldEffect holdEffect)
 {
     u32 speed = gBattleMons[battler].speed;
-
+    u8 type1 = gBattleMons[battler].types[0];
+    u8 type2 = gBattleMons[battler].types[1];
+    u8 type3 = gBattleMons[battler].types[2];
     // stat stages
     speed *= gStatStageRatios[gBattleMons[battler].statStages[STAT_SPEED]][0];
     speed /= gStatStageRatios[gBattleMons[battler].statStages[STAT_SPEED]][1];
@@ -4985,6 +4987,9 @@ u32 GetBattlerTotalSpeedStatArgs(u32 battler, u32 ability, enum ItemHoldEffect h
 
     if (gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_SWAMP)
         speed /= 4;
+
+    if ((gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN) && !(type1 == TYPE_NEW_MIASMA || type2 == TYPE_NEW_MIASMA || type3 == TYPE_NEW_MIASMA))
+        speed = (speed * 80) / 100;
 
     return speed;
 }
@@ -6247,6 +6252,8 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
                     return TYPE_NEW_METAL;
                 else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
                     return TYPE_NEW_DARK;
+                else if (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
+                    return TYPE_NEW_MIASMA;
                 else //failsafe
                     return moveType;
             }

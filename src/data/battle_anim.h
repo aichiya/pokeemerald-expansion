@@ -2047,4 +2047,5 @@ const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
     [BG_SABOTEN_MATRIX]            = {gBattleAnimBgImage_SabotenMatrix,           gBattleAnimBgPalette_SabotenMatrix,           gBattleAnimBgTilemap_SabotenMatrix},
     [BG_ELECTRIC_HERITAGE]         = {gBattleAnimBgImage_ElectricHeritage,        gBattleAnimBgPalette_ElectricHeritage,        gBattleAnimBgTilemap_ElectricHeritage},
     [BG_DARKNESS_TERRAIN]          = {gBattleAnimBgImage_DarknessTerrain,         gBattleAnimBgPalette_DarknessTerrain,         gBattleAnimBgTilemap_DarknessTerrain},
+    [BG_MIASMA_TERRAIN]            = {gBattleAnimBgImage_MiasmaTerrain,           gBattleAnimBgPalette_MiasmaTerrain,           gBattleAnimBgTilemap_MiasmaTerrain},
 };

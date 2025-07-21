@@ -2789,4 +2789,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
+    [ABILITY_MIASMA_SURGE] =
+    {
+        .name = _("Miasma Surge"),
+        .description = COMPOUND_STRING("Miasma covers the field."),
+        .aiRating = 8,
+    },
+
 };

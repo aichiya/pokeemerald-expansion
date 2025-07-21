@@ -2930,6 +2930,8 @@ bool32 ChangeTypeBasedOnTerrain(u32 battler)
         battlerType = TYPE_NEW_METAL;
     else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
         battlerType = TYPE_NEW_DARK;
+    else if (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
+        battlerType = TYPE_NEW_MIASMA;
     else // failsafe
         return FALSE;
 
@@ -3397,6 +3399,13 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             case STARTING_STATUS_DARKNESS_TERRAIN:
                 effect = SetStartingFieldStatus(STATUS_FIELD_DARKNESS_TERRAIN,
                                                 B_MSG_TERRAIN_SET_DARKNESS,
+                                                0,
+                                                &gFieldTimers.terrainTimer);
+                effect = (effect == 1) ? 2 : 0;
+                break;
+            case STARTING_STATUS_MIASMA_TERRAIN:
+                effect = SetStartingFieldStatus(STATUS_FIELD_MIASMA_TERRAIN,
+                                                B_MSG_TERRAIN_SET_MIASMA,
                                                 0,
                                                 &gFieldTimers.terrainTimer);
                 effect = (effect == 1) ? 2 : 0;
@@ -3995,6 +4004,13 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_MIASMA_SURGE:
+            if (TryChangeBattleTerrain(battler, STATUS_FIELD_MIASMA_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_MiasmaSurgeActivates);
+                effect++;
+            }
+            break;
         case ABILITY_INTIMIDATE:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
@@ -4273,6 +4289,11 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_ULTRA_MEDICINE:
+            if (TryChangeBattleTerrain(battler, STATUS_FIELD_MIASMA_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_MiasmaSurgeActivates);
+                effect++;
+            }
             if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_EVASION, MAX_STAT_STAGE, CMP_LESS_THAN))
             {
                 gBattleScripting.savedBattler = gBattlerAttacker;
@@ -6100,7 +6121,7 @@ bool32 CanSetNonVolatileStatus(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u
         {
             battleScript = BattleScript_AlreadyPoisoned;
         }
-        else if (abilityAtk != ABILITY_CORROSION && IS_BATTLER_ANY_TYPE(battlerDef, TYPE_NEW_MIASMA, TYPE_NEW_METAL))
+        else if ((abilityAtk != ABILITY_CORROSION || (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)) && IS_BATTLER_ANY_TYPE(battlerDef, TYPE_NEW_MIASMA, TYPE_NEW_METAL))
         {
             battleScript = BattleScript_NotAffected;
         }
@@ -7211,6 +7232,9 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler)
                     break;
                 case HOLD_EFFECT_PARAM_DARKNESS_TERRAIN:
                     effect = TryHandleSeed(battler, STATUS_FIELD_DARKNESS_TERRAIN, STAT_SPATK, gLastUsedItem, caseID);
+                    break;
+                case HOLD_EFFECT_PARAM_MIASMA_TERRAIN:
+                    effect = TryHandleSeed(battler, STATUS_FIELD_MIASMA_TERRAIN, STAT_ATK, gLastUsedItem, caseID);
                     break;
                 }
                 break;
@@ -8817,6 +8841,9 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
     if (IsBattlerTerrainAffected(battlerDef, STATUS_FIELD_DARKNESS_TERRAIN) && moveType == TYPE_NEW_DIVINE)
         modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
 
+    if ((gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN) && moveType == TYPE_NEW_MIASMA)
+        modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+
     if (IsFieldMudSportAffected(ctx->moveType))
         modifier = uq4_12_multiply(modifier, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5));
     if (IsFieldWaterSportAffected(ctx->moveType))
@@ -10162,6 +10189,8 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         || gBattleMons[ctx->battlerDef].species == SPECIES_MEW
         || gBattleMons[ctx->battlerDef].species == SPECIES_CELEBI))
         mod = UQ_4_12(2.0);
+    if (ctx->moveType == TYPE_NEW_MIASMA && defType == TYPE_NEW_STEEL && (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN) && mod == UQ_4_12(0.0))
+        mod = UQ_4_12(1.0);
     if (ctx->moveType == TYPE_NEW_EARTH && defType == TYPE_NEW_FLYING && IsBattlerGrounded(ctx->battlerDef) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
     if (ctx->moveType == TYPE_STELLAR && GetActiveGimmick(ctx->battlerDef) == GIMMICK_TERA)

@@ -903,5 +903,7 @@ extern const u8 BattleScript_EffectFluffication[];
 extern const u8 BattleScript_EffectWipesOutFoesParty[];
 extern const u8 BattleScript_SpAtkSpDefDown[];
 extern const u8 BattleScript_WishMegaEvolutionIllya[];
+extern const u8 BattleScript_EffectGaiaForce[];
+extern const u8 BattleScript_EffectAstromancy[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

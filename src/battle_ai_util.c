@@ -2634,6 +2634,7 @@ bool32 IsStatRaisingEffect(enum BattleMoveEffects effect)
     case EFFECT_BULK_UP:
     case EFFECT_GEOMANCY:
     case EFFECT_STOCKPILE:
+    case EFFECT_ASTROMANCY:
     case EFFECT_VICTORY_DANCE:
         return TRUE;
     case EFFECT_CHARGE:

@@ -113,6 +113,44 @@ BattleScript_UltraInstinctEnd:
 	datahpupdate BS_ATTACKER
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectAstromancy::
+	jumpifvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS, BattleScript_AstromancySecondTurn
+	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_AstromancySecondTurn
+	call BattleScript_FirstChargingTurn
+	jumpifnoholdeffect BS_ATTACKER, HOLD_EFFECT_POWER_HERB, BattleScript_MoveEnd
+	call BattleScript_PowerHerbActivation
+BattleScript_AstromancySecondTurn:
+	attackcanceler
+	setbyte sB_ANIM_TURN, 1
+	clearvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS
+	orword gHitMarker, HITMARKER_NO_PPDEDUCT
+	attackstring
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_AstromancyDoMoveAnim
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_DEF, MAX_STAT_STAGE, BattleScript_AstromancyDoMoveAnim
+	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_SPEED, MAX_STAT_STAGE, BattleScript_CantRaiseMultipleStats
+BattleScript_AstromancyDoMoveAnim::
+	attackanimation
+	waitanimation
+	setstatchanger STAT_ATK, 2, FALSE
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_GeomancyTrySpDef, BIT_DEF | BIT_SPEED
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_AstromancyTryDef
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AstromancyTryDef::
+	setstatchanger STAT_DEF, 2, FALSE
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_GeomancyTrySpeed, BIT_SPEED
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_AstromancyTrySpeed
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AstromancyTrySpeed::
+	setstatchanger STAT_SPEED, 2, FALSE
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_GeomancyEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_AstromancyEnd
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AstromancyEnd::
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectFickleBeam::
 	attackcanceler
 	attackstring
@@ -10321,3 +10359,13 @@ BattleScript_TsubameGaeshiActivates::
 	datahpupdate BS_ATTACKER
 	tryfaintmon BS_ATTACKER
 	return
+
+BattleScript_EffectGaiaForce::
+	jumpiftype BS_ATTACKER, TYPE_NEW_DARK, BattleScript_EffectGaiaForceChangeDark
+	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_DARKNESS_TERRAIN, BattleScript_EffectGaiaForceChangeDark
+	goto BattleScript_EffectHit
+	goto BattleScript_MoveEnd
+BattleScript_EffectGaiaForceChangeDark:
+	setbyte sB_ANIM_TURN, 1
+	goto BattleScript_EffectHit
+	goto BattleScript_MoveEnd

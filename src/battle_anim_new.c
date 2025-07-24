@@ -1864,6 +1864,40 @@ const struct SpriteTemplate gOblivionWingBeamTemplate =
     .callback = TranslateAnimSpriteToTargetMonLocation
 };
 
+//gaia force series
+const struct SpriteTemplate gGaiaForceSphereTemplate =
+{
+    .tileTag = ANIM_TAG_GAIA_FORCE,
+    .paletteTag = ANIM_TAG_GAIA_FORCE,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = sSpriteAffineAnimTable_GrowingRing,
+    .callback = TranslateAnimSpriteToTargetMonLocation
+};
+
+const struct SpriteTemplate gGaiaForceDarknessSphereTemplate =
+{
+    .tileTag = ANIM_TAG_GAIA_FORCE_OF_DARKNESS,
+    .paletteTag = ANIM_TAG_GAIA_FORCE_OF_DARKNESS,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = sSpriteAffineAnimTable_GrowingRing,
+    .callback = TranslateAnimSpriteToTargetMonLocation
+};
+
+const struct SpriteTemplate gPoseidonForceSphereTemplate =
+{
+    .tileTag = ANIM_TAG_POSEIDON_FORCE,
+    .paletteTag = ANIM_TAG_POSEIDON_FORCE,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = sSpriteAffineAnimTable_GrowingRing,
+    .callback = TranslateAnimSpriteToTargetMonLocation
+};
+
 //thousand arrows
 const struct SpriteTemplate gThousandArrowsGreenChargeTemplate =
 {

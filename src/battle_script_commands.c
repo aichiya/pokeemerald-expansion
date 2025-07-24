@@ -18587,7 +18587,7 @@ void BS_TryGrimoireCall(void)
     {
         gCalledMove = moveUsed;
     }
-
+    gBattleStruct->categoryOverride = GetMoveCategory(moveUsed);
     gHitMarker &= ~HITMARKER_ATTACKSTRING_PRINTED;
 
     gBattlescriptCurrInstr = cmd->nextInstr;

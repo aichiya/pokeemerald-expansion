@@ -21865,6 +21865,85 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_MiasmaTerrain,
     },
 
+    [MOVE_GAIA_FORCE] =
+    {
+        .name = COMPOUND_STRING("Gaia Force"),
+        .description = COMPOUND_STRING(
+            "Huge ball that affected\n"
+            "by darkness. May burn foe."),
+        .effect = EFFECT_GAIA_FORCE,
+        .power = 100,
+        .type = TYPE_NEW_FIRE,
+        .accuracy = 95,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 20,
+        }),
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
+        .battleAnimScript = gBattleAnimMove_GaiaForce,
+    },
+
+    [MOVE_POSEIDON_FORCE] =  // Edited
+    {
+        .name = COMPOUND_STRING("Poseidon Force"),
+        .description = COMPOUND_STRING(
+            "Throws huge energy ball.\n"
+            "May flinch the target."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_NEW_WATER,
+        .accuracy = 95,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS(
+        {
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 20,
+        }),
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
+        .battleAnimScript = gBattleAnimMove_PoseidonForce,
+    },
+
+    [MOVE_ASTROMANCY] =  // Edited
+    {
+        .name = COMPOUND_STRING("Astromancy"),
+        .description = COMPOUND_STRING(
+            "Raises Attack, Defense and\n"
+            "Speed on the 2nd turn."),
+        .effect = EFFECT_ASTROMANCY,
+        .power = 0,
+        .type = TYPE_NEW_DREAM,
+        .accuracy = 0,
+        .pp = 10,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_ALL_STATS_UP_1 },
+        .sleepTalkBanned = TRUE,
+        .instructBanned = TRUE,
+        .skyBattleBanned = TRUE,
+        .argument.twoTurnAttack = { .stringId = STRINGID_READINGTHESTARFORMATION },
+        .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Astromancy,
+    },
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =  // Edited
     {

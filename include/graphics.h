@@ -3452,4 +3452,10 @@ extern const u16 gBattleAnimSpritePal_Hexagram[];
 extern const u32 gBattleAnimSpriteGfx_SpatialTear[];
 extern const u16 gBattleAnimSpritePal_SpatialTear[];
 
+extern const u32 gBattleAnimSpriteGfx_GaiaForce[];
+extern const u16 gBattleAnimSpritePal_GaiaForce[];
+extern const u16 gBattleAnimSpritePal_GaiaForceDarkness[];
+extern const u16 gBattleAnimSpritePal_GaiaForcePoseidon[];
+extern const u16 gBattleAnimSpritePal_ExplosionPurple[];
+
 #endif //GUARD_GRAPHICS_H

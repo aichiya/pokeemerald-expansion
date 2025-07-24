@@ -2332,4 +2332,16 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectMiasmaTerrain,
         .battleTvScore = 0, // TODO: Assign points
     },
+
+    [EFFECT_GAIA_FORCE] =
+    {
+        .battleScript = BattleScript_EffectGaiaForce,
+        .battleTvScore = 0, // TODO: Assign points
+    },
+
+    [EFFECT_ASTROMANCY] =
+    {
+        .battleScript = BattleScript_EffectAstromancy,
+        .battleTvScore = 0, // TODO: Assign points
+    },
 };

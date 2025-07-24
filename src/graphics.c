@@ -2153,3 +2153,9 @@ const u16 gBattleIcons_Pal2[] = INCBIN_U16("graphics/types/battle_icons2.gbapal"
 
 const u32 gBattleAnimSpriteGfx_FlowerLycoris[] = INCBIN_U32("graphics/battle_anims/sprites/flower_lycoris.4bpp.smol");
 const u16 gBattleAnimSpritePal_FlowerLycoris[] = INCBIN_U16("graphics/battle_anims/sprites/flower_lycoris.gbapal");
+
+const u32 gBattleAnimSpriteGfx_GaiaForce[] = INCBIN_U32("graphics/battle_anims/sprites/gaia_force.4bpp.smol");
+const u16 gBattleAnimSpritePal_GaiaForce[] = INCBIN_U16("graphics/battle_anims/sprites/gaia_force.gbapal");
+const u16 gBattleAnimSpritePal_GaiaForceDarkness[] = INCBIN_U16("graphics/battle_anims/sprites/gaia_force_darkness.gbapal");
+const u16 gBattleAnimSpritePal_GaiaForcePoseidon[] = INCBIN_U16("graphics/battle_anims/sprites/gaia_force_poseidon.gbapal");
+const u16 gBattleAnimSpritePal_ExplosionPurple[] = INCBIN_U16("graphics/battle_anims/sprites/explosion_purple.gbapal");

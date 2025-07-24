@@ -926,6 +926,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_COUNTEREDWITHSOMETHING]               = COMPOUND_STRING("{B_SCR_ABILITY} allowed {B_DEF_NAME_WITH_PREFIX} to counter {B_ATK_NAME_WITH_PREFIX}!"),
     [STRINGID_MIASMACOVERINGTHEFIELD]               = COMPOUND_STRING("Miasma appeared to cover the battlefield!"),
     [STRINGID_MIASMATERRAINENDS]                    = COMPOUND_STRING("The miasma disappeared from the battlefield."),
+    [STRINGID_READINGTHESTARFORMATION]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is reading the star formation!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

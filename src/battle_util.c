@@ -3044,7 +3044,7 @@ bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u32 a
     case ABILITY_DAZZLING:
     case ABILITY_QUEENLY_MAJESTY:
     case ABILITY_ARMOR_TAIL:
-        if (atkPriority > 0 && !IsBattlerAlly(battlerAtk, battlerDef))
+        if (atkPriority > 0 && !IsBattlerAlly(battlerAtk, battlerDef) && !IsAbilityOnField(ABILITY_TIME_JACKER))
         {
             if (gBattleMons[battlerAtk].volatiles.multipleTurns)
                 gHitMarker |= HITMARKER_NO_PPDEDUCT;
@@ -3057,7 +3057,8 @@ bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u32 a
     case ABILITY_PRISMA_ZWEI:
         if (IsBattleMoveStatus(move))
         {
-            if (!(GetBattlerMoveTargetType(battlerAtk, move) & (MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_ALL_BATTLERS)))
+            if (!(GetBattlerMoveTargetType(battlerAtk, move) & (MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_ALL_BATTLERS))
+             && GetMoveEffect(move) != EFFECT_GRIMOIRE_CALL)
                 battleScriptBlocksMove = BattleScript_GoodAsGoldActivates;
         }
         break;

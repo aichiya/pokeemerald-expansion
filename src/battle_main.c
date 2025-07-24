@@ -6187,6 +6187,13 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
         else
             return TYPE_NEW_ELECTRIC;
         break;
+    case EFFECT_GAIA_FORCE:
+        if (type1 == TYPE_NEW_DARK 
+         || type2 == TYPE_NEW_DARK
+         || type3 == TYPE_NEW_DARK
+         || (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN))
+            return TYPE_NEW_DARK;
+        break;
     case EFFECT_CHANGE_TYPE_ON_ITEM:
         if (holdEffect == GetMoveEffectArg_HoldEffect(move))
             return GetItemSecondaryId(heldItem);

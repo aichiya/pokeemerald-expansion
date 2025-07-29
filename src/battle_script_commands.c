@@ -12636,9 +12636,9 @@ static void Cmd_transformdataexecutiondecade(void)
             gDisableStructs[gBattlerTarget].mimickedMoves = 0;
             gDisableStructs[gBattlerTarget].usedMoves = 0;
 
-            timesGotHit = gBattleStruct->timesGotHit[GetBattlerSide(gBattlerTarget)][gBattlerPartyIndexes[gBattlerTarget]];
-            gBattleStruct->timesGotHit[GetBattlerSide(gBattlerAttacker)][gBattlerPartyIndexes[gBattlerAttacker]] = timesGotHit;
-            
+            timesGotHit = GetBattlerPartyState(gBattlerTarget)->timesGotHit;
+            GetBattlerPartyState(gBattlerAttacker)->timesGotHit = timesGotHit;
+
             PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
 
             gBattleMons[gBattlerTarget].species = speciesBuffer;
@@ -12681,9 +12681,9 @@ static void Cmd_transformdataexecutiondecade(void)
             gDisableStructs[gBattlerAttacker].mimickedMoves = 0;
             gDisableStructs[gBattlerAttacker].usedMoves = 0;
 
-            timesGotHit = gBattleStruct->timesGotHit[GetBattlerSide(gBattlerTarget)][gBattlerPartyIndexes[gBattlerTarget]];
-            gBattleStruct->timesGotHit[GetBattlerSide(gBattlerAttacker)][gBattlerPartyIndexes[gBattlerAttacker]] = timesGotHit;
-            
+            timesGotHit = GetBattlerPartyState(gBattlerTarget)->timesGotHit;
+            GetBattlerPartyState(gBattlerAttacker)->timesGotHit = timesGotHit;
+
             switch(Random() % 3)
             {
                 case 0:

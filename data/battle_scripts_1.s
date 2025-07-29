@@ -10325,3 +10325,27 @@ BattleScript_TsubameGaeshiActivates::
 	datahpupdate BS_ATTACKER
 	tryfaintmon BS_ATTACKER
 	return
+
+BattleScript_EffectSpAtkSpDefUp2::
+	attackcanceler
+	attackstring
+	ppreduce
+BattleScript_EffectSpAtkSpDefUp2FromStatUp::
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_SPATK, MAX_STAT_STAGE, BattleScript_SpAtkSpDefUp2DoMoveAnim
+	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_SPDEF, MAX_STAT_STAGE, BattleScript_CantRaiseMultipleStats
+BattleScript_SpAtkSpDefUp2DoMoveAnim::
+	attackanimation
+	waitanimation
+	setstatchanger STAT_SPATK, 2, FALSE
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_SpAtkSpDefUp2TrySpDef, BIT_SPDEF
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_SpAtkSpDefUp2TrySpDef
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_SpAtkSpDefUp2TrySpDef::
+	setstatchanger STAT_SPDEF, 2, FALSE
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_EffectSpAtkSpDefUp2End
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_EffectSpAtkSpDefUp2End
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_EffectSpAtkSpDefUp2End::
+	goto BattleScript_MoveEnd

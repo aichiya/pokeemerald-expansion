@@ -32491,6 +32491,9 @@ gBattleAnimGeneral_TurnTrap::
 	jumpargeq 0, TRAP_ANIM_SNAP_TRAP, Status_Snap_Trap
 	jumpargeq 0, TRAP_ANIM_THUNDER_CAGE, Status_Thunder_Cage
 	jumpargeq 0, TRAP_ANIM_ADVENT_LYCORIS, Status_AdventLycoris
+	jumpargeq 0, TRAP_ANIM_CLASSIC_FIRE_SPIN, Status_FireSpin
+	jumpargeq 0, TRAP_ANIM_CLASSIC_WHIRLPOOL, Status_Whirlpool
+	jumpargeq 0, TRAP_ANIM_CLASSIC_CLAMP,     Status_Clamp
 	goto Status_BindWrap
 Status_BindWrap:
 	loadspritegfx ANIM_TAG_TENDRILS

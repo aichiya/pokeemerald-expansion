@@ -2818,6 +2818,15 @@ void AnimTask_GetTrappedMoveAnimId(u8 taskId)
     case MOVE_ADVENT_LYCORIS:
         gBattleAnimArgs[0] = TRAP_ANIM_ADVENT_LYCORIS;
         break;
+    case MOVE_CLASSIC_FIRE_SPIN:
+        gBattleAnimArgs[0] = TRAP_ANIM_FIRE_SPIN;
+        break;
+    case MOVE_CLASSIC_WHIRLPOOL:
+        gBattleAnimArgs[0] = TRAP_ANIM_WHIRLPOOL;
+        break;
+    case MOVE_CLASSIC_CLAMP:
+        gBattleAnimArgs[0] = TRAP_ANIM_CLAMP;
+        break;
     default:
         gBattleAnimArgs[0] = TRAP_ANIM_BIND;
         break;

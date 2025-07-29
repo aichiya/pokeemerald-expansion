@@ -429,6 +429,10 @@
 #define ANIM_TAG_APOLLON_ARROW              (LAST_ANIM_TAG_EXPANSION + 2)
 #define ANIM_TAG_HEXAGRAM                   (LAST_ANIM_TAG_EXPANSION + 3)
 #define ANIM_TAG_SPATIAL_TEAR               (LAST_ANIM_TAG_EXPANSION + 4)
+#define ANIM_TAG_GAIA_FORCE                 (LAST_ANIM_TAG_EXPANSION + 5)
+#define ANIM_TAG_GAIA_FORCE_OF_DARKNESS     (LAST_ANIM_TAG_EXPANSION + 6)
+#define ANIM_TAG_POSEIDON_FORCE             (LAST_ANIM_TAG_EXPANSION + 7)
+#define ANIM_TAG_EXPLOSION_PURPLE           (LAST_ANIM_TAG_EXPANSION + 8)
 
 // battlers
 #define ANIM_ATTACKER         0
@@ -542,11 +546,12 @@
 #define BG_RAINBOW 81
 #define BG_SWAMP 82
 
-#define BG_LAST_EXPANSION BG_SWAMP
-#define BG_UBW            (BG_LAST_EXPANSION + 1)
-#define BG_SABOTEN_MATRIX (BG_LAST_EXPANSION + 2)
-#define BG_ELECTRIC_HERITAGE (BG_LAST_EXPANSION + 3)
-#define BG_DARKNESS_TERRAIN (BG_LAST_EXPANSION + 4)
+#define BG_LAST_EXPANSION               BG_SWAMP
+#define BG_UBW                          (BG_LAST_EXPANSION + 1)
+#define BG_SABOTEN_MATRIX               (BG_LAST_EXPANSION + 2)
+#define BG_ELECTRIC_HERITAGE            (BG_LAST_EXPANSION + 3)
+#define BG_DARKNESS_TERRAIN             (BG_LAST_EXPANSION + 4)
+#define BG_MIASMA_TERRAIN               (BG_LAST_EXPANSION + 5)
 
 // table ids for general animations (sBattleAnims_General)
 #define B_ANIM_STATS_CHANGE             0

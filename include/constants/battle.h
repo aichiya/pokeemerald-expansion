@@ -341,8 +341,9 @@ enum TypeSideHazard
 #define STATUS_FIELD_FAIRY_LOCK                     (1 << 11)
 #define STATUS_FIELD_UBW                            (1 << 12)
 #define STATUS_FIELD_DARKNESS_TERRAIN               (1 << 13)
+#define STATUS_FIELD_MIASMA_TERRAIN                 (1 << 14)
 
-#define STATUS_FIELD_TERRAIN_ANY        (STATUS_FIELD_GRASSY_TERRAIN | STATUS_FIELD_MISTY_TERRAIN | STATUS_FIELD_ELECTRIC_TERRAIN | STATUS_FIELD_PSYCHIC_TERRAIN | STATUS_FIELD_UBW | STATUS_FIELD_DARKNESS_TERRAIN)
+#define STATUS_FIELD_TERRAIN_ANY        (STATUS_FIELD_GRASSY_TERRAIN | STATUS_FIELD_MISTY_TERRAIN | STATUS_FIELD_ELECTRIC_TERRAIN | STATUS_FIELD_PSYCHIC_TERRAIN | STATUS_FIELD_UBW | STATUS_FIELD_DARKNESS_TERRAIN | STATUS_FIELD_MIASMA_TERRAIN)
 
 // Flags describing move's result
 #define MOVE_RESULT_MISSED                (1 << 0)
@@ -389,9 +390,12 @@ enum BattleWeather
 #define B_WEATHER_STRONG_WINDS  (1 << BATTLE_WEATHER_STRONG_WINDS)
 
 #define B_WEATHER_ANY           (B_WEATHER_RAIN | B_WEATHER_SANDSTORM | B_WEATHER_SUN | B_WEATHER_HAIL | B_WEATHER_STRONG_WINDS | B_WEATHER_SNOW | B_WEATHER_FOG)
+#define B_WEATHER_DAMAGING_ANY  (B_WEATHER_HAIL | B_WEATHER_SANDSTORM)
+#define B_WEATHER_ICY_ANY       (B_WEATHER_HAIL | B_WEATHER_SNOW)
+#define B_WEATHER_LOW_LIGHT     (B_WEATHER_FOG | B_WEATHER_ICY_ANY | B_WEATHER_RAIN | B_WEATHER_SANDSTORM)
 #define B_WEATHER_PRIMAL_ANY    (B_WEATHER_RAIN_PRIMAL | B_WEATHER_SUN_PRIMAL | B_WEATHER_STRONG_WINDS)
 
-enum MoveEffects
+enum __attribute__((packed)) MoveEffects
 {
     MOVE_EFFECT_NONE,
     MOVE_EFFECT_SLEEP,
@@ -424,7 +428,6 @@ enum MoveEffects
     MOVE_EFFECT_REMOVE_ARG_TYPE,
     MOVE_EFFECT_RECHARGE,
     MOVE_EFFECT_RAGE,
-    MOVE_EFFECT_STEAL_ITEM,
     MOVE_EFFECT_PREVENT_ESCAPE,
     MOVE_EFFECT_NIGHTMARE,
     MOVE_EFFECT_ALL_STATS_UP,
@@ -460,8 +463,6 @@ enum MoveEffects
     MOVE_EFFECT_TRAP_BOTH,
     MOVE_EFFECT_ROUND,
     MOVE_EFFECT_DIRE_CLAW,
-    MOVE_EFFECT_STEALTH_ROCK,
-    MOVE_EFFECT_SPIKES,
     MOVE_EFFECT_SYRUP_BOMB,
     MOVE_EFFECT_FLORAL_HEALING,
     MOVE_EFFECT_SECRET_POWER,
@@ -475,6 +476,11 @@ enum MoveEffects
     MOVE_EFFECT_LIGHT_SCREEN,
     MOVE_EFFECT_SALT_CURE,
     MOVE_EFFECT_EERIE_SPELL,
+
+    // Max move effects happen earlier in the execution chain.
+    // For example stealth rock from G-Max Stonesurge is set up before abilities but from Stone Axe after.
+    // Stone Axe can also fail to set up rocks if user faints where as Stonesurge will always go up.
+    // This means we need to be careful if we want to re-use those effects for (new) vanilla moves
     MOVE_EFFECT_RAISE_TEAM_ATTACK,
     MOVE_EFFECT_RAISE_TEAM_DEFENSE,
     MOVE_EFFECT_RAISE_TEAM_SPEED,
@@ -516,7 +522,8 @@ enum MoveEffects
     MOVE_EFFECT_LOWER_EVASIVENESS_SIDE,
     MOVE_EFFECT_AROMATHERAPY,
     MOVE_EFFECT_CONFUSE_SIDE,
-    MOVE_EFFECT_STEELSURGE,
+    MOVE_EFFECT_STEELSURGE, // Steel type rocks
+    MOVE_EFFECT_STEALTH_ROCK, // Max Move rocks, not to be confused for rocks set up from Ceasless Edge (same but differ in execution order)
     MOVE_EFFECT_TORMENT_SIDE,
     MOVE_EFFECT_LOWER_SPEED_2_SIDE,
     MOVE_EFFECT_FIRE_SPIN_SIDE,
@@ -524,6 +531,9 @@ enum MoveEffects
     MOVE_EFFECT_UBW,
     MOVE_EFFECT_DARKNESS_TERRAIN,
     MOVE_EFFECT_SPATK_SPDEF_DOWN,
+    MOVE_EFFECT_MIASMA_TERRAIN,
+    // Max move effects end. They can be used for (custom) normal moves.
+
     NUM_MOVE_EFFECTS
 };
 
@@ -696,6 +706,7 @@ enum StartingStatus
     STARTING_STATUS_SWAMP_OPPONENT,
 	STARTING_STATUS_UBW,
     STARTING_STATUS_DARKNESS_TERRAIN,
+    STARTING_STATUS_MIASMA_TERRAIN,
 };
 
 enum SlideMsgStates

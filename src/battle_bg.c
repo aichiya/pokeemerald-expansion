@@ -1143,6 +1143,9 @@ void DrawTerrainTypeBattleBackground(void)
     case STATUS_FIELD_DARKNESS_TERRAIN:
         LoadMoveBg(BG_DARKNESS_TERRAIN);
         break;
+    case STATUS_FIELD_MIASMA_TERRAIN:
+        LoadMoveBg(BG_MIASMA_TERRAIN);
+        break;
     default:
         DrawMainBattleBackground();
         break;

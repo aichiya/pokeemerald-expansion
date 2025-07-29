@@ -1908,7 +1908,8 @@ static inline bool32 TryFormChangeBeforeMove(void)
     if (!result)
         return FALSE;
 
-    BattleScriptCall(BattleScript_AttackerFormChange);
+    gBattleScripting.battler = gBattlerAttacker;
+    BattleScriptCall(BattleScript_BattlerFormChange);
     return TRUE;
 }
 
@@ -2929,6 +2930,8 @@ bool32 ChangeTypeBasedOnTerrain(u32 battler)
         battlerType = TYPE_NEW_METAL;
     else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
         battlerType = TYPE_NEW_DARK;
+    else if (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
+        battlerType = TYPE_NEW_MIASMA;
     else // failsafe
         return FALSE;
 
@@ -3041,7 +3044,7 @@ bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u32 a
     case ABILITY_DAZZLING:
     case ABILITY_QUEENLY_MAJESTY:
     case ABILITY_ARMOR_TAIL:
-        if (atkPriority > 0 && !IsBattlerAlly(battlerAtk, battlerDef))
+        if (atkPriority > 0 && !IsBattlerAlly(battlerAtk, battlerDef) && !IsAbilityOnField(ABILITY_TIME_JACKER))
         {
             if (gBattleMons[battlerAtk].volatiles.multipleTurns)
                 gHitMarker |= HITMARKER_NO_PPDEDUCT;
@@ -3054,7 +3057,8 @@ bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u32 a
     case ABILITY_PRISMA_ZWEI:
         if (IsBattleMoveStatus(move))
         {
-            if (!(GetBattlerMoveTargetType(battlerAtk, move) & (MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_ALL_BATTLERS)))
+            if (!(GetBattlerMoveTargetType(battlerAtk, move) & (MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_ALL_BATTLERS))
+             && GetMoveEffect(move) != EFFECT_GRIMOIRE_CALL)
                 battleScriptBlocksMove = BattleScript_GoodAsGoldActivates;
         }
         break;
@@ -3400,6 +3404,13 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                                                 &gFieldTimers.terrainTimer);
                 effect = (effect == 1) ? 2 : 0;
                 break;
+            case STARTING_STATUS_MIASMA_TERRAIN:
+                effect = SetStartingFieldStatus(STATUS_FIELD_MIASMA_TERRAIN,
+                                                B_MSG_TERRAIN_SET_MIASMA,
+                                                0,
+                                                &gFieldTimers.terrainTimer);
+                effect = (effect == 1) ? 2 : 0;
+                break;
             case STARTING_STATUS_TRICK_ROOM:
                 effect = SetStartingFieldStatus(STATUS_FIELD_TRICK_ROOM,
                                                 B_MSG_SET_TRICK_ROOM,
@@ -3705,7 +3716,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_UNNERVE:
             if (!gSpecialStatuses[battler].switchInAbilityDone && !gDisableStructs[battler].unnerveActivated)
             {
-                gBattleScripting.battler = GetOppositeBattler(battler);
+                gEffectBattler = GetOppositeBattler(battler);
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_UNNERVE;
                 gDisableStructs[battler].unnerveActivated = TRUE;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
@@ -3717,7 +3728,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_AS_ONE_SHADOW_RIDER:
             if (!gSpecialStatuses[battler].switchInAbilityDone && !gDisableStructs[battler].unnerveActivated)
             {
-                gBattleScripting.battler = GetOppositeBattler(battler);
+                gEffectBattler = GetOppositeBattler(battler);
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_ASONE;
                 gDisableStructs[battler].unnerveActivated = TRUE;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
@@ -3831,6 +3842,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 if (CompareStat(battler, statId, MAX_STAT_STAGE, CMP_LESS_THAN))
                 {
                     SET_STATCHANGER(statId, 1, FALSE);
+                    SaveBattlerAttacker(gBattlerAttacker);
+                    gBattlerAttacker = battler;
                     PREPARE_STAT_BUFFER(gBattleTextBuff1, statId);
                     BattleScriptPushCursorAndCallback(BattleScript_AttackerAbilityStatRaiseEnd3);
                     effect++;
@@ -3992,10 +4005,18 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_MIASMA_SURGE:
+            if (TryChangeBattleTerrain(battler, STATUS_FIELD_MIASMA_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_MiasmaSurgeActivates);
+                effect++;
+            }
+            break;
         case ABILITY_INTIMIDATE:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
-                gBattlerAbility = gBattlerAttacker = battler;
+                SaveBattlerAttacker(gBattlerAttacker);
+                gBattlerAttacker = battler;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 SET_STATCHANGER(STAT_ATK, 1, TRUE);
                 BattleScriptPushCursorAndCallback(BattleScript_IntimidateActivates);
@@ -4197,7 +4218,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             if (!gSpecialStatuses[battler].switchInAbilityDone
              && !gBattleStruct->partyState[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]].supersweetSyrup)
             {
-                gBattlerAbility = gBattlerAttacker = battler;
+                SaveBattlerAttacker(gBattlerAttacker);
+                gBattlerAttacker = battler;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 gBattleStruct->partyState[GetBattlerSide(battler)][gBattlerPartyIndexes[battler]].supersweetSyrup = TRUE;
                 BattleScriptPushCursorAndCallback(BattleScript_SupersweetSyrupActivates);
@@ -4229,7 +4251,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_SHIELDS_DOWN:
             if (TryBattleFormChange(battler, FORM_CHANGE_BATTLE_HP_PERCENT))
             {
-                BattleScriptPushCursorAndCallback(BattleScript_AttackerFormChangeEnd3);
+                BattleScriptPushCursorAndCallback(BattleScript_BattlerFormChangeEnd3);
                 effect++;
             }
             break;
@@ -4268,6 +4290,11 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_ULTRA_MEDICINE:
+            if (TryChangeBattleTerrain(battler, STATUS_FIELD_MIASMA_TERRAIN, &gFieldTimers.terrainTimer))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_MiasmaSurgeActivates);
+                effect++;
+            }
             if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_EVASION, MAX_STAT_STAGE, CMP_LESS_THAN))
             {
                 gBattleScripting.savedBattler = gBattlerAttacker;
@@ -4397,10 +4424,9 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
              && CountBattlerStatIncreases(BATTLE_PARTNER(battler), FALSE))
             {
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
-                gBattlerAttacker = gBattlerAbility = battler;
                 for (i = 0; i < NUM_BATTLE_STATS; i++)
                     gBattleMons[battler].statStages[i] = gBattleMons[BATTLE_PARTNER(battler)].statStages[i];
-                gBattleScripting.battler = BATTLE_PARTNER(battler);
+                gEffectBattler = BATTLE_PARTNER(battler);
                 BattleScriptPushCursorAndCallback(BattleScript_CostarActivates);
                 effect++;
             }
@@ -4428,10 +4454,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
              && gBattleMons[partner].hp < gBattleMons[partner].maxHP
              && IsBattlerAlive(partner))
             {
-                SaveBattlerAttacker(gBattlerAttacker);
-                SaveBattlerTarget(gBattlerTarget);
-                gBattlerTarget = partner;
-                gBattlerAttacker = battler;
+                gEffectBattler = partner;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 gBattleStruct->moveDamage[partner] = (GetNonDynamaxMaxHP(partner) / 4) * -1;
                 BattleScriptPushCursorAndCallback(BattleScript_HospitalityActivates);
@@ -4471,7 +4494,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             {
                 gBattleScripting.abilityPopupOverwrite = gLastUsedAbility = ABILITY_TERA_SHIFT;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
-                BattleScriptPushCursorAndCallback(BattleScript_AttackerFormChangeWithStringEnd3);
+                BattleScriptPushCursorAndCallback(BattleScript_BattlerFormChangeWithStringEnd3);
                 effect++;
             }
             break;
@@ -4745,7 +4768,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             case ABILITY_SHIELDS_DOWN:
                 if (TryBattleFormChange(battler, FORM_CHANGE_BATTLE_HP_PERCENT))
                 {
-                    BattleScriptPushCursorAndCallback(BattleScript_AttackerFormChangeEnd3);
+                    gBattleScripting.battler = battler;
+                    BattleScriptPushCursorAndCallback(BattleScript_BattlerFormChangeEnd3);
                     effect++;
                 }
                 break;
@@ -4777,7 +4801,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                  && TryBattleFormChange(battler, FORM_CHANGE_BATTLE_TURN_END))
                 {
                     gBattleScripting.battler = battler;
-                    BattleScriptPushCursorAndCallback(BattleScript_AttackerFormChangeEnd3NoPopup);
+                    BattleScriptPushCursorAndCallback(BattleScript_BattlerFormChangeEnd3NoPopup);
                     effect++;
                 }
                 break;
@@ -4802,6 +4826,16 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
     case ABILITYEFFECT_MOVE_END: // Think contact abilities.
         switch (gLastUsedAbility)
         {
+        case ABILITY_STICKY_HOLD:
+            if (gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff && IsBattlerAlive(gBattlerTarget))
+            {
+                gBattleStruct->battlerState[gBattlerTarget].itemCanBeKnockedOff = FALSE;
+                gBattlerAbility = gBattlerTarget;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_StickyHoldActivates;
+                effect++;
+            }
+            break;
         case ABILITY_JUSTIFIED:
             if (IsBattlerTurnDamaged(battler)
              && IsBattlerAlive(battler)
@@ -5428,7 +5462,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
              && ((gCurrentMove == MOVE_SURF && IsBattlerTurnDamaged(gBattlerTarget)) || gStatuses3[gBattlerAttacker] & STATUS3_UNDERWATER)
              && TryBattleFormChange(gBattlerAttacker, FORM_CHANGE_BATTLE_HP_PERCENT))
             {
-                BattleScriptCall(BattleScript_AttackerFormChange);
+                gBattleScripting.battler = gBattlerAttacker;
+                BattleScriptCall(BattleScript_BattlerFormChange);
                 effect++;
             }
             break;
@@ -6087,7 +6122,7 @@ bool32 CanSetNonVolatileStatus(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u
         {
             battleScript = BattleScript_AlreadyPoisoned;
         }
-        else if (abilityAtk != ABILITY_CORROSION && IS_BATTLER_ANY_TYPE(battlerDef, TYPE_NEW_MIASMA, TYPE_NEW_METAL))
+        else if ((abilityAtk != ABILITY_CORROSION || (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)) && IS_BATTLER_ANY_TYPE(battlerDef, TYPE_NEW_MIASMA, TYPE_NEW_METAL))
         {
             battleScript = BattleScript_NotAffected;
         }
@@ -7199,6 +7234,9 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler)
                 case HOLD_EFFECT_PARAM_DARKNESS_TERRAIN:
                     effect = TryHandleSeed(battler, STATUS_FIELD_DARKNESS_TERRAIN, STAT_SPATK, gLastUsedItem, caseID);
                     break;
+                case HOLD_EFFECT_PARAM_MIASMA_TERRAIN:
+                    effect = TryHandleSeed(battler, STATUS_FIELD_MIASMA_TERRAIN, STAT_ATK, gLastUsedItem, caseID);
+                    break;
                 }
                 break;
             case HOLD_EFFECT_EJECT_PACK:
@@ -7430,6 +7468,12 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler)
     case ITEMEFFECT_MOVE_END:
         for (battler = 0; battler < gBattlersCount; battler++)
         {
+            // If item can be  knocked off berry activation will be blocked, but not other items
+            if (gBattleStruct->battlerState[battler].itemCanBeKnockedOff
+             && (GetItemPocket(gBattleMons[battler].item) == POCKET_BERRIES
+              || GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_RESTORE_HP))
+                continue;
+
             gLastUsedItem = gBattleMons[battler].item;
             effect = ItemEffectMoveEnd(battler, GetBattlerHoldEffect(battler, TRUE));
             if (effect)
@@ -8798,6 +8842,9 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
     if (IsBattlerTerrainAffected(battlerDef, STATUS_FIELD_DARKNESS_TERRAIN) && moveType == TYPE_NEW_DIVINE)
         modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
 
+    if ((gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN) && moveType == TYPE_NEW_MIASMA)
+        modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
+
     if (IsFieldMudSportAffected(ctx->moveType))
         modifier = uq4_12_multiply(modifier, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.33 : 0.5));
     if (IsFieldWaterSportAffected(ctx->moveType))
@@ -10143,6 +10190,8 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         || gBattleMons[ctx->battlerDef].species == SPECIES_MEW
         || gBattleMons[ctx->battlerDef].species == SPECIES_CELEBI))
         mod = UQ_4_12(2.0);
+    if (ctx->moveType == TYPE_NEW_MIASMA && defType == TYPE_NEW_STEEL && (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN) && mod == UQ_4_12(0.0))
+        mod = UQ_4_12(1.0);
     if (ctx->moveType == TYPE_NEW_EARTH && defType == TYPE_NEW_FLYING && IsBattlerGrounded(ctx->battlerDef) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
     if (ctx->moveType == TYPE_STELLAR && GetActiveGimmick(ctx->battlerDef) == GIMMICK_TERA)

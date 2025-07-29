@@ -3438,6 +3438,10 @@ extern const u32 gBattleAnimBgImage_DarknessTerrain[];
 extern const u16 gBattleAnimBgPalette_DarknessTerrain[];
 extern const u32 gBattleAnimBgTilemap_DarknessTerrain[];
 
+extern const u32 gBattleAnimBgImage_MiasmaTerrain[];
+extern const u16 gBattleAnimBgPalette_MiasmaTerrain[];
+extern const u32 gBattleAnimBgTilemap_MiasmaTerrain[];
+
 extern const u32 gBattleAnimSpriteGfx_FlowerLycoris[];
 extern const u16 gBattleAnimSpritePal_FlowerLycoris[];
 
@@ -3447,5 +3451,11 @@ extern const u32 gBattleAnimSpriteGfx_Hexagram[];
 extern const u16 gBattleAnimSpritePal_Hexagram[];
 extern const u32 gBattleAnimSpriteGfx_SpatialTear[];
 extern const u16 gBattleAnimSpritePal_SpatialTear[];
+
+extern const u32 gBattleAnimSpriteGfx_GaiaForce[];
+extern const u16 gBattleAnimSpritePal_GaiaForce[];
+extern const u16 gBattleAnimSpritePal_GaiaForceDarkness[];
+extern const u16 gBattleAnimSpritePal_GaiaForcePoseidon[];
+extern const u16 gBattleAnimSpritePal_ExplosionPurple[];
 
 #endif //GUARD_GRAPHICS_H

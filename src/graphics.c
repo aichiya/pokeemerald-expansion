@@ -1566,6 +1566,10 @@ const u32 gBattleAnimBgImage_DarknessTerrain[] = INCBIN_U32("graphics/battle_ani
 const u16 gBattleAnimBgPalette_DarknessTerrain[] = INCBIN_U16("graphics/battle_anims/backgrounds/darkness_terrain.gbapal");
 const u32 gBattleAnimBgTilemap_DarknessTerrain[] = INCBIN_U32("graphics/battle_anims/backgrounds/darkness_terrain.bin.smolTM");
 
+const u32 gBattleAnimBgImage_MiasmaTerrain[] = INCBIN_U32("graphics/battle_anims/backgrounds/miasma_terrain.4bpp.smol");
+const u16 gBattleAnimBgPalette_MiasmaTerrain[] = INCBIN_U16("graphics/battle_anims/backgrounds/miasma_terrain.gbapal");
+const u32 gBattleAnimBgTilemap_MiasmaTerrain[] = INCBIN_U32("graphics/battle_anims/backgrounds/miasma_terrain.bin.smolTM");
+
 const u32 gBattleAnimBgImage_Nightmare[] = INCBIN_U32("graphics/battle_anims/backgrounds/nightmare.4bpp.smol");
 
 const u16 gBattleAnimBgPalette_Nightmare[] = INCBIN_U16("graphics/battle_anims/backgrounds/nightmare.gbapal");
@@ -2149,3 +2153,9 @@ const u16 gBattleIcons_Pal2[] = INCBIN_U16("graphics/types/battle_icons2.gbapal"
 
 const u32 gBattleAnimSpriteGfx_FlowerLycoris[] = INCBIN_U32("graphics/battle_anims/sprites/flower_lycoris.4bpp.smol");
 const u16 gBattleAnimSpritePal_FlowerLycoris[] = INCBIN_U16("graphics/battle_anims/sprites/flower_lycoris.gbapal");
+
+const u32 gBattleAnimSpriteGfx_GaiaForce[] = INCBIN_U32("graphics/battle_anims/sprites/gaia_force.4bpp.smol");
+const u16 gBattleAnimSpritePal_GaiaForce[] = INCBIN_U16("graphics/battle_anims/sprites/gaia_force.gbapal");
+const u16 gBattleAnimSpritePal_GaiaForceDarkness[] = INCBIN_U16("graphics/battle_anims/sprites/gaia_force_darkness.gbapal");
+const u16 gBattleAnimSpritePal_GaiaForcePoseidon[] = INCBIN_U16("graphics/battle_anims/sprites/gaia_force_poseidon.gbapal");
+const u16 gBattleAnimSpritePal_ExplosionPurple[] = INCBIN_U16("graphics/battle_anims/sprites/explosion_purple.gbapal");

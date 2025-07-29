@@ -4510,7 +4510,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "While attacking, it may\n"
             "steal the foe's held item."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_STEAL_ITEM,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 40,
         .type = TYPE_NEW_DARK,
         .accuracy = 100,
@@ -4519,9 +4519,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_STEAL_ITEM,
-        }),
         .ignoresKingsRock = (B_UPDATED_MOVE_FLAGS == GEN_3 || B_UPDATED_MOVE_FLAGS == GEN_4),
         .meFirstBanned = TRUE,
         .metronomeBanned = TRUE,
@@ -9080,7 +9077,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Cutely begs to obtain an\n"
             "item held by the foe."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_STEAL_ITEM,
         .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 60 : 40,
         .type = TYPE_NEW_HEART,
         .accuracy = 100,
@@ -9093,9 +9090,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .metronomeBanned = TRUE,
         .copycatBanned = TRUE,
         .assistBanned = TRUE,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_STEAL_ITEM,
-        }),
         .contestEffect = CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONES,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
@@ -19279,7 +19273,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "High critical hit ratio. Sets\n"
             "Splinters that hurt the foe."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_STONE_AXE,
         .power = 65,
         .type = TYPE_NEW_BEAST,
         .accuracy = 90,
@@ -19290,8 +19284,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .slicingMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_STEALTH_ROCK,
-            .chance = 100,
+            .sheerForceBoost = SHEER_FORCE_BOOST,
         }),
         .battleAnimScript = gBattleAnimMove_StoneAxe,
     },
@@ -19605,7 +19598,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "High critical hit ratio. Sets\n"
             "Splinters that hurt the foe."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_CEASELESS_EDGE,
         .power = 65,
         .type = TYPE_NEW_DARK,
         .accuracy = 90,
@@ -19616,8 +19609,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .slicingMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPIKES,
-            .chance = 100,
+            .sheerForceBoost = SHEER_FORCE_BOOST,
         }),
         .battleAnimScript = gBattleAnimMove_CeaselessEdge,
     },
@@ -21743,7 +21735,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = COMBO_STARTER_DARKNESS_TERRAIN,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_PsychicTerrain,
+        .battleAnimScript = gBattleAnimMove_DarknessTerrain,
     },
 
     [MOVE_QUINTETT_FEUER] =  // Edited
@@ -21849,6 +21841,109 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
         .battleAnimScript = gBattleAnimMove_RainOfArrows,
+    },
+
+    [MOVE_MIASMA_TERRAIN] =  // MOVE_NEW_MIASMA_FIELD
+    {
+        .name = COMPOUND_STRING("Miasma Field"),
+        .description = COMPOUND_STRING(
+            "Miasma covers the field. Ups\n"
+            "miasma moves and ignores steel."),
+        .effect = EFFECT_MIASMA_TERRAIN,
+        .power = 0,
+        .type = TYPE_NEW_MIASMA,
+        .accuracy = 0,
+        .pp = 10,
+        .target = MOVE_TARGET_ALL_BATTLERS,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = COMBO_STARTER_MIASMA_TERRAIN,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_MiasmaTerrain,
+    },
+
+    [MOVE_GAIA_FORCE] =
+    {
+        .name = COMPOUND_STRING("Gaia Force"),
+        .description = COMPOUND_STRING(
+            "Huge ball that affected\n"
+            "by darkness. May burn foe."),
+        .effect = EFFECT_GAIA_FORCE,
+        .power = 100,
+        .type = TYPE_NEW_FIRE,
+        .accuracy = 95,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 20,
+        }),
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
+        .battleAnimScript = gBattleAnimMove_GaiaForce,
+    },
+
+    [MOVE_POSEIDON_FORCE] =  // Edited
+    {
+        .name = COMPOUND_STRING("Poseidon Force"),
+        .description = COMPOUND_STRING(
+            "Throws huge energy ball.\n"
+            "May flinch the target."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_NEW_WATER,
+        .accuracy = 95,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS(
+        {
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 20,
+        }),
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
+        .battleAnimScript = gBattleAnimMove_PoseidonForce,
+    },
+
+    [MOVE_ASTROMANCY] =  // Edited
+    {
+        .name = COMPOUND_STRING("Astromancy"),
+        .description = COMPOUND_STRING(
+            "Raises Attack, Defense and\n"
+            "Speed on the 2nd turn."),
+        .effect = EFFECT_ASTROMANCY,
+        .power = 0,
+        .type = TYPE_NEW_DREAM,
+        .accuracy = 0,
+        .pp = 10,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_ALL_STATS_UP_1 },
+        .sleepTalkBanned = TRUE,
+        .instructBanned = TRUE,
+        .skyBattleBanned = TRUE,
+        .argument.twoTurnAttack = { .stringId = STRINGID_READINGTHESTARFORMATION },
+        .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Astromancy,
     },
 
     [MOVE_WIDE_SLASH] =

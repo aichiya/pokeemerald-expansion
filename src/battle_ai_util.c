@@ -3,6 +3,7 @@
 #include "malloc.h"
 #include "battle.h"
 #include "battle_anim.h"
+#include "battle_ai_field_statuses.h"
 #include "battle_ai_util.h"
 #include "battle_ai_main.h"
 #include "battle_ai_switch_items.h"
@@ -852,7 +853,7 @@ struct SimulatedDamage AI_CalcDamage(u32 move, u32 battlerAtk, u32 battlerDef, u
     SetDynamicMoveCategory(battlerAtk, battlerDef, move);
     SetTypeBeforeUsingMove(move, battlerAtk);
 
-    // We can set those globals because they are going to get rerolled on attack execution 
+    // We can set those globals because they are going to get rerolled on attack execution
     gBattleStruct->magnitudeBasePower = 70;
     gBattleStruct->presentBasePower = 80;
 
@@ -1021,6 +1022,8 @@ static bool32 AI_IsMoveEffectInPlus(u32 battlerAtk, u32 battlerDef, u32 move, s3
                             return TRUE;
                     }
                     break;
+                default:
+                    break;
             }
         }
         else // consider move effects that hinder the target
@@ -1071,6 +1074,8 @@ static bool32 AI_IsMoveEffectInPlus(u32 battlerAtk, u32 battlerDef, u32 move, s3
                 case MOVE_EFFECT_EVS_MINUS_2:
                     if (CanLowerStat(battlerAtk, battlerDef, abilityDef, STAT_ATK + (additionalEffect->moveEffect - MOVE_EFFECT_ATK_MINUS_2)) && noOfHitsToKo != 1)
                         return TRUE;
+                    break;
+                default:
                     break;
             }
         }
@@ -1148,6 +1153,8 @@ static bool32 AI_IsMoveEffectInMinus(u32 battlerAtk, u32 battlerDef, u32 move, s
                     if ((additionalEffect->self && abilityAtk == ABILITY_CONTRARY)
                         || (noOfHitsToKo != 1 && !(abilityDef == ABILITY_CONTRARY && !DoesBattlerIgnoreAbilityChecks(battlerAtk, abilityAtk, move))))
                         return TRUE;
+                    break;
+                default:
                     break;
             }
         }
@@ -1639,6 +1646,33 @@ u32 AI_GetWeather(void)
     return gBattleWeather;
 }
 
+u32 AI_GetSwitchinWeather(struct BattlePokemon battleMon)
+{
+    u32 ability = battleMon.ability;
+    // Forced weather behaviour
+    if (!AI_WeatherHasEffect())
+        return B_WEATHER_NONE;
+    if (ability == ABILITY_CLOUD_NINE || ability == ABILITY_AIR_LOCK)
+        return B_WEATHER_NONE;
+    if (gBattleWeather & B_WEATHER_PRIMAL_ANY)
+        return gBattleWeather;
+
+    // Switchin will introduce new weather
+    switch(ability)
+    {
+    case ABILITY_DRIZZLE:
+        return B_WEATHER_RAIN_NORMAL;
+    case ABILITY_DROUGHT:
+        return B_WEATHER_SUN_NORMAL;
+    case ABILITY_SAND_STREAM:
+        return B_WEATHER_SANDSTORM;
+    case ABILITY_SNOW_WARNING:
+        return B_SNOW_WARNING >= GEN_9 ? B_WEATHER_SNOW : B_WEATHER_HAIL;
+    default:
+        return gBattleWeather;
+    }
+}
+
 enum WeatherState IsWeatherActive(u32 flags)
 {
     enum WeatherState state = WEATHER_INACTIVE;
@@ -1714,6 +1748,8 @@ bool32 IsHazardMove(u32 move)
         {
         case MOVE_EFFECT_STEELSURGE:
             return TRUE;
+        default:
+            break;
         }
     }
     return FALSE;
@@ -1742,6 +1778,8 @@ bool32 IsHazardClearingMove(u32 move)
         {
         case MOVE_EFFECT_DEFOG:
             return TRUE;
+        default:
+            break;
         }
     }
 
@@ -1851,7 +1889,7 @@ bool32 IsMoveEncouragedToHit(u32 battlerAtk, u32 battlerDef, u32 move)
 
     if ((weather & B_WEATHER_RAIN) && MoveAlwaysHitsInRain(move))
         return TRUE;
-    if ((weather & (B_WEATHER_HAIL | B_WEATHER_SNOW)) && MoveAlwaysHitsInHailSnow(move))
+    if ((weather & B_WEATHER_ICY_ANY) && MoveAlwaysHitsInHailSnow(move))
         return TRUE;
     if (B_MINIMIZE_DMG_ACC >= GEN_6 && (gStatuses3[battlerDef] & STATUS3_MINIMIZED) && MoveIncreasesPowerToMinimizedTargets(move))
         return TRUE;
@@ -1893,112 +1931,24 @@ bool32 ShouldTryOHKO(u32 battlerAtk, u32 battlerDef, u32 atkAbility, u32 defAbil
     return FALSE;
 }
 
-bool32 ShouldSetSandstorm(u32 battler, u32 ability, enum ItemHoldEffect holdEffect)
+bool32 ShouldSetWeather(u32 battler, u32 weather)
 {
-    if (IsWeatherActive(B_WEATHER_SANDSTORM | B_WEATHER_PRIMAL_ANY) != WEATHER_INACTIVE)
-        return FALSE;
-
-    if (ability == ABILITY_SAND_VEIL
-     || ability == ABILITY_SAND_RUSH
-     || ability == ABILITY_SAND_FORCE
-     || ability == ABILITY_OVERCOAT
-     || ability == ABILITY_MAGIC_GUARD
-     || ability == ABILITY_FANTASY_BREAKER
-     || holdEffect == HOLD_EFFECT_SAFETY_GOGGLES
-     || IS_BATTLER_ANY_TYPE(battler, TYPE_NEW_EARTH, TYPE_NEW_METAL)
-     || HasMoveWithEffect(battler, EFFECT_SHORE_UP)
-     || HasMoveWithEffect(battler, EFFECT_WEATHER_BALL))
-    {
-        return TRUE;
-    }
-    return FALSE;
+    return WeatherChecker(battler, weather, FIELD_EFFECT_POSITIVE);
 }
 
-bool32 ShouldSetHail(u32 battler, u32 ability, enum ItemHoldEffect holdEffect)
+bool32 ShouldClearWeather(u32 battler, u32 weather)
 {
-    if (IsWeatherActive(B_WEATHER_HAIL | B_WEATHER_SNOW | B_WEATHER_PRIMAL_ANY) != WEATHER_INACTIVE)
-        return FALSE;
-
-    if (ability == ABILITY_SNOW_CLOAK
-     || ability == ABILITY_ICE_BODY
-     || ability == ABILITY_FORECAST
-     || ability == ABILITY_SLUSH_RUSH
-     || ability == ABILITY_MAGIC_GUARD
-     || ability == ABILITY_FANTASY_BREAKER
-     || ability == ABILITY_OVERCOAT
-     || holdEffect == HOLD_EFFECT_SAFETY_GOGGLES
-     || IS_BATTLER_OF_TYPE(battler, TYPE_NEW_ICE)
-     || HasMoveWithFlag(battler, MoveAlwaysHitsInHailSnow)
-     || HasMoveWithEffect(battler, EFFECT_AURORA_VEIL)
-     || HasMoveWithEffect(battler, EFFECT_WEATHER_BALL))
-    {
-        return TRUE;
-    }
-    return FALSE;
+    return WeatherChecker(battler, weather, FIELD_EFFECT_NEGATIVE);
 }
 
-bool32 ShouldSetRain(u32 battlerAtk, u32 atkAbility, enum ItemHoldEffect holdEffect)
+bool32 ShouldSetFieldStatus(u32 battler, u32 fieldStatus)
 {
-    if (IsWeatherActive(B_WEATHER_RAIN | B_WEATHER_PRIMAL_ANY) != WEATHER_INACTIVE)
-        return FALSE;
-
-    if (holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA
-     && (atkAbility == ABILITY_SWIFT_SWIM
-      || atkAbility == ABILITY_FORECAST
-      || atkAbility == ABILITY_HYDRATION
-      || atkAbility == ABILITY_RAIN_DISH
-      || atkAbility == ABILITY_DRY_SKIN
-      || HasMoveWithFlag(battlerAtk, MoveAlwaysHitsInRain)
-      || HasMoveWithEffect(battlerAtk, EFFECT_WEATHER_BALL)
-      || HasMoveWithType(battlerAtk, TYPE_NEW_WATER)))
-    {
-        return TRUE;
-    }
-    return FALSE;
+    return FieldStatusChecker(battler, fieldStatus, FIELD_EFFECT_POSITIVE);
 }
 
-bool32 ShouldSetSun(u32 battlerAtk, u32 atkAbility, enum ItemHoldEffect holdEffect)
+bool32 ShouldClearFieldStatus(u32 battler, u32 fieldStatus)
 {
-    if (IsWeatherActive(B_WEATHER_SUN | B_WEATHER_PRIMAL_ANY) != WEATHER_INACTIVE)
-        return FALSE;
-
-    if (holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA
-     && (atkAbility == ABILITY_CHLOROPHYLL
-      || atkAbility == ABILITY_FLOWER_GIFT
-      || atkAbility == ABILITY_FORECAST
-      || atkAbility == ABILITY_LEAF_GUARD
-      || atkAbility == ABILITY_SOLAR_POWER
-      || atkAbility == ABILITY_HARVEST
-      || HasMoveWithEffect(battlerAtk, EFFECT_SOLAR_BEAM)
-      || HasMoveWithEffect(battlerAtk, EFFECT_MORNING_SUN)
-      || HasMoveWithEffect(battlerAtk, EFFECT_SYNTHESIS)
-      || HasMoveWithEffect(battlerAtk, EFFECT_MOONLIGHT)
-      || HasMoveWithEffect(battlerAtk, EFFECT_WEATHER_BALL)
-      || HasMoveWithEffect(battlerAtk, EFFECT_GROWTH)
-      || HasMoveWithType(battlerAtk, TYPE_NEW_FIRE)))
-    {
-        return TRUE;
-    }
-    return FALSE;
-}
-
-bool32 ShouldSetSnow(u32 battler, u32 ability, enum ItemHoldEffect holdEffect)
-{
-    if (IsWeatherActive(B_WEATHER_SNOW | B_WEATHER_HAIL | B_WEATHER_PRIMAL_ANY) != WEATHER_INACTIVE)
-        return FALSE;
-
-    if (ability == ABILITY_SNOW_CLOAK
-     || ability == ABILITY_ICE_BODY
-     || ability == ABILITY_FORECAST
-     || ability == ABILITY_SLUSH_RUSH
-     || IS_BATTLER_OF_TYPE(battler, TYPE_NEW_ICE)
-     || HasMoveWithFlag(battler, MoveAlwaysHitsInHailSnow)
-     || HasMoveWithEffect(battler, EFFECT_AURORA_VEIL)
-     || HasMoveWithEffect(battler, EFFECT_WEATHER_BALL))
-    {
-        return TRUE;
-    }
-    return FALSE;
+    return FieldStatusChecker(battler, fieldStatus, FIELD_EFFECT_NEGATIVE);
 }
 
 bool32 IsBattlerDamagedByStatus(u32 battler)
@@ -2684,6 +2634,7 @@ bool32 IsStatRaisingEffect(enum BattleMoveEffects effect)
     case EFFECT_BULK_UP:
     case EFFECT_GEOMANCY:
     case EFFECT_STOCKPILE:
+    case EFFECT_ASTROMANCY:
     case EFFECT_VICTORY_DANCE:
         return TRUE;
     case EFFECT_CHARGE:
@@ -2722,7 +2673,7 @@ bool32 IsStatLoweringEffect(enum BattleMoveEffects effect)
     }
 }
 
-bool32 IsSelfStatLoweringEffect(enum BattleMoveEffects effect)
+bool32 IsSelfStatLoweringEffect(enum MoveEffects effect)
 {
     // Self stat lowering moves like Overheart, Superpower etc.
     switch (effect)
@@ -2751,7 +2702,7 @@ bool32 IsSelfStatLoweringEffect(enum BattleMoveEffects effect)
     }
 }
 
-bool32 IsSelfStatRaisingEffect(enum BattleMoveEffects effect)
+bool32 IsSelfStatRaisingEffect(enum MoveEffects effect)
 {
     // Self stat lowering moves like Power Up Punch or Charge Beam
     switch (effect)
@@ -2851,6 +2802,8 @@ static inline bool32 IsMoveSleepClauseTrigger(u32 move)
         case MOVE_EFFECT_EFFECT_SPORE_SIDE:
         case MOVE_EFFECT_YAWN_FOE:
             return TRUE;
+        default:
+            break;
         }
     }
     return FALSE;
@@ -3784,7 +3737,7 @@ bool32 ShouldSetScreen(u32 battlerAtk, u32 battlerDef, enum BattleMoveEffects mo
     {
     case EFFECT_AURORA_VEIL:
         // Use only in Hail and only if AI doesn't already have Reflect, Light Screen or Aurora Veil itself active.
-        if ((AI_GetWeather() & (B_WEATHER_HAIL | B_WEATHER_SNOW))
+        if ((AI_GetWeather() & (B_WEATHER_ICY_ANY))
             && !(gSideStatuses[atkSide] & (SIDE_STATUS_REFLECT | SIDE_STATUS_LIGHTSCREEN | SIDE_STATUS_AURORA_VEIL)))
             return TRUE;
         break;
@@ -3908,7 +3861,8 @@ bool32 PartnerMoveEffectIsTerrain(u32 battlerAtkPartner, u32 partnerMove)
       || partnerEffect == EFFECT_ELECTRIC_TERRAIN
       || partnerEffect == EFFECT_PSYCHIC_TERRAIN
       || partnerEffect == EFFECT_UBW
-      || partnerEffect == EFFECT_DARKNESS_TERRAIN))
+      || partnerEffect == EFFECT_DARKNESS_TERRAIN
+      || partnerEffect == EFFECT_MIASMA_TERRAIN))
         return TRUE;
 
     return FALSE;
@@ -4066,7 +4020,7 @@ s32 AI_CalcPartyMonDamage(u32 move, u32 battlerAtk, u32 battlerDef, struct Battl
         gAiThinkingStruct->saved[battlerAtk].saved = FALSE;
     }
 
-    dmg = AI_CalcDamage(move, battlerAtk, battlerDef, &effectiveness, NO_GIMMICK, NO_GIMMICK, AI_GetWeather());
+    dmg = AI_CalcDamage(move, battlerAtk, battlerDef, &effectiveness, NO_GIMMICK, NO_GIMMICK, AI_GetSwitchinWeather(switchinCandidate));
     // restores original gBattleMon struct
     FreeRestoreBattleMons(savedBattleMons);
 
@@ -4284,7 +4238,7 @@ bool32 IsRecycleEncouragedItem(u32 item)
     return FALSE;
 }
 
-bool32 HasMoveThatChangesKOThreshold(u32 battlerId, u32 noOfHitsToFaint, u32 aiIsFaster)
+static bool32 HasMoveThatChangesKOThreshold(u32 battlerId, u32 noOfHitsToFaint, u32 aiIsFaster)
 {
     s32 i;
     u16 *moves = GetMovesArray(battlerId);
@@ -4300,12 +4254,14 @@ bool32 HasMoveThatChangesKOThreshold(u32 battlerId, u32 noOfHitsToFaint, u32 aiI
 
             switch (gMovesInfo[moves[i]].additionalEffects[i].moveEffect)
             {
-                case MOVE_EFFECT_SPD_MINUS_1:
-                case MOVE_EFFECT_SPD_MINUS_2:
-                {
-                    if(aiIsFaster)
-                        return TRUE;
-                }
+            case MOVE_EFFECT_SPD_MINUS_1:
+            case MOVE_EFFECT_SPD_MINUS_2:
+            {
+                if(aiIsFaster)
+                    return TRUE;
+            }
+            default:
+                break;
             }
         }
     }
@@ -4313,13 +4269,41 @@ bool32 HasMoveThatChangesKOThreshold(u32 battlerId, u32 noOfHitsToFaint, u32 aiI
     return FALSE;
 }
 
-static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, enum StatChange statId, bool32 considerContrary)
+static u32 GetStatBeingChanged(enum StatChange statChange)
+{
+    switch(statChange)
+    {
+        case STAT_CHANGE_ATK:
+        case STAT_CHANGE_ATK_2:
+            return STAT_ATK;
+        case STAT_CHANGE_DEF:
+        case STAT_CHANGE_DEF_2:
+            return STAT_DEF;
+        case STAT_CHANGE_SPEED:
+        case STAT_CHANGE_SPEED_2:
+            return STAT_SPEED;
+        case STAT_CHANGE_SPATK:
+        case STAT_CHANGE_SPATK_2:
+            return STAT_SPATK;
+        case STAT_CHANGE_SPDEF:
+        case STAT_CHANGE_SPDEF_2:
+            return STAT_SPDEF;
+        case STAT_CHANGE_ACC:
+            return STAT_ACC;
+        case STAT_CHANGE_EVASION:
+            return STAT_EVASION;
+    }
+    return 0; // STAT_HP, should never be getting changed
+}
+
+static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, enum StatChange statChange, bool32 considerContrary)
 {
     enum AIScore tempScore = NO_INCREASE;
     u32 noOfHitsToFaint = NoOfHitsForTargetToFaintBattler(battlerDef, battlerAtk);
     u32 aiIsFaster = AI_IsFaster(battlerAtk, battlerDef, TRUE);
     u32 shouldSetUp = ((noOfHitsToFaint >= 2 && aiIsFaster) || (noOfHitsToFaint >= 3 && !aiIsFaster) || noOfHitsToFaint == UNKNOWN_NO_OF_HITS);
     u32 i;
+    u32 statId = GetStatBeingChanged(statChange);
 
     if (considerContrary && gAiLogicData->abilities[battlerAtk] == ABILITY_CONTRARY)
         return NO_INCREASE;
@@ -4387,7 +4371,7 @@ static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, 
         tempScore += WEAK_EFFECT;
     }
 
-    switch (statId)
+    switch (statChange)
     {
     case STAT_CHANGE_ATK:
         if (HasMoveWithCategory(battlerAtk, DAMAGE_CATEGORY_PHYSICAL) && shouldSetUp)
@@ -4450,7 +4434,7 @@ static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, 
         }
         break;
     case STAT_CHANGE_ACC:
-        if (gBattleMons[battlerAtk].statStages[STAT_ACC] <= 3) // Increase only if necessary
+        if (gBattleMons[battlerAtk].statStages[statId] <= 3) // Increase only if necessary
             tempScore += DECENT_EFFECT;
         break;
     case STAT_CHANGE_EVASION:
@@ -4464,14 +4448,14 @@ static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, 
     return tempScore;
 }
 
-u32 IncreaseStatUpScore(u32 battlerAtk, u32 battlerDef, enum StatChange statId)
+u32 IncreaseStatUpScore(u32 battlerAtk, u32 battlerDef, enum StatChange statChange)
 {
-    return IncreaseStatUpScoreInternal(battlerAtk, battlerDef, statId, TRUE);
+    return IncreaseStatUpScoreInternal(battlerAtk, battlerDef, statChange, TRUE);
 }
 
-u32 IncreaseStatUpScoreContrary(u32 battlerAtk, u32 battlerDef, enum StatChange statId)
+u32 IncreaseStatUpScoreContrary(u32 battlerAtk, u32 battlerDef, enum StatChange statChange)
 {
-    return IncreaseStatUpScoreInternal(battlerAtk, battlerDef, statId, FALSE);
+    return IncreaseStatUpScoreInternal(battlerAtk, battlerDef, statChange, FALSE);
 }
 
 void IncreasePoisonScore(u32 battlerAtk, u32 battlerDef, u32 move, s32 *score)

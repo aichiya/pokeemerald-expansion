@@ -481,10 +481,16 @@ static bool32 HandleEndTurnFirstEventBlock(u32 battler)
         gBattleStruct->eventBlockCounter++;
         break;
     case FIRST_EVENT_BLOCK_GRASSY_TERRAIN_HEAL:
-        if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN && IsBattlerAlive(battler) && !IsBattlerAtMaxHp(battler) && IsBattlerGrounded(battler))
+        if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN
+         && IsBattlerAlive(battler)
+         && !IsBattlerAtMaxHp(battler)
+         && !(gStatuses3[battler] & (STATUS3_SEMI_INVULNERABLE | STATUS3_HEAL_BLOCK))
+         && IsBattlerGrounded(battler))
         {
             gBattlerAttacker = battler;
             gBattleStruct->moveDamage[battler] = -(GetNonDynamaxMaxHP(battler) / 16);
+            if (gBattleStruct->moveDamage[battler] == 0)
+                gBattleStruct->moveDamage[battler] = -1;
             BattleScriptExecute(BattleScript_GrassyTerrainHeals);
             effect = TRUE;
         }
@@ -1374,6 +1380,8 @@ static bool32 HandleEndTurnTerrain(u32 battler)
         effect = EndTurnTerrain(STATUS_FIELD_UBW, B_MSG_UBW_END);
     else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
         effect = EndTurnTerrain(STATUS_FIELD_DARKNESS_TERRAIN, B_MSG_TERRAIN_END_DARKNESS);
+    else if (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
+        effect = EndTurnTerrain(STATUS_FIELD_MIASMA_TERRAIN, B_MSG_TERRAIN_END_MIASMA);
 
     return effect;
 }

@@ -1477,6 +1477,10 @@ const struct CompressedSpriteSheet gBattleAnimPicTable[] =
     {gBattleAnimSpriteGfx_ApollonArrow, 0x1000, ANIM_TAG_APOLLON_ARROW},
     {gBattleAnimSpriteGfx_Hexagram, 0x0800, ANIM_TAG_HEXAGRAM},
     {gBattleAnimSpriteGfx_SpatialTear, 0x0080, ANIM_TAG_SPATIAL_TEAR},
+    {gBattleAnimSpriteGfx_GaiaForce, 0x0800, ANIM_TAG_GAIA_FORCE},
+    {gBattleAnimSpriteGfx_GaiaForce, 0x0800, ANIM_TAG_GAIA_FORCE_OF_DARKNESS},
+    {gBattleAnimSpriteGfx_GaiaForce, 0x0800, ANIM_TAG_POSEIDON_FORCE},
+    {gBattleAnimSpriteGfx_Explosion, 0x0800, ANIM_TAG_EXPLOSION_PURPLE},
 };
 
 const struct SpritePalette gBattleAnimPaletteTable[] =
@@ -1955,6 +1959,10 @@ const struct SpritePalette gBattleAnimPaletteTable[] =
     {gBattleAnimSpritePal_ApollonArrow, ANIM_TAG_APOLLON_ARROW},
     {gBattleAnimSpritePal_Hexagram, ANIM_TAG_HEXAGRAM},
     {gBattleAnimSpritePal_SpatialTear, ANIM_TAG_SPATIAL_TEAR},
+    {gBattleAnimSpritePal_GaiaForce, ANIM_TAG_GAIA_FORCE},
+    {gBattleAnimSpritePal_GaiaForceDarkness, ANIM_TAG_GAIA_FORCE_OF_DARKNESS},
+    {gBattleAnimSpritePal_GaiaForcePoseidon, ANIM_TAG_POSEIDON_FORCE},
+    {gBattleAnimSpritePal_ExplosionPurple, ANIM_TAG_EXPLOSION_PURPLE},
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
@@ -2047,4 +2055,5 @@ const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
     [BG_SABOTEN_MATRIX]            = {gBattleAnimBgImage_SabotenMatrix,           gBattleAnimBgPalette_SabotenMatrix,           gBattleAnimBgTilemap_SabotenMatrix},
     [BG_ELECTRIC_HERITAGE]         = {gBattleAnimBgImage_ElectricHeritage,        gBattleAnimBgPalette_ElectricHeritage,        gBattleAnimBgTilemap_ElectricHeritage},
     [BG_DARKNESS_TERRAIN]          = {gBattleAnimBgImage_DarknessTerrain,         gBattleAnimBgPalette_DarknessTerrain,         gBattleAnimBgTilemap_DarknessTerrain},
+    [BG_MIASMA_TERRAIN]            = {gBattleAnimBgImage_MiasmaTerrain,           gBattleAnimBgPalette_MiasmaTerrain,           gBattleAnimBgTilemap_MiasmaTerrain},
 };

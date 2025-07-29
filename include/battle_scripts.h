@@ -372,10 +372,10 @@ extern const u8 BattleScript_IllusionOffEnd3[];
 extern const u8 BattleScript_IllusionOffAndTerastallization[];
 extern const u8 BattleScript_DancerActivates[];
 extern const u8 BattleScript_AftermathDmg[];
-extern const u8 BattleScript_AttackerFormChange[];
-extern const u8 BattleScript_AttackerFormChangeEnd3[];
+extern const u8 BattleScript_BattlerFormChange[];
+extern const u8 BattleScript_BattlerFormChangeEnd3[];
 extern const u8 BattleScript_AttackerFormChangeWithString[];
-extern const u8 BattleScript_AttackerFormChangeWithStringEnd3[];
+extern const u8 BattleScript_BattlerFormChangeWithStringEnd3[];
 extern const u8 BattleScript_TargetFormChange[];
 extern const u8 BattleScript_AnticipationActivates[];
 extern const u8 BattleScript_SlowStartEnds[];
@@ -448,7 +448,7 @@ extern const u8 BattleScript_WanderingSpiritActivates[];
 extern const u8 BattleScript_MirrorArmorReflect[];
 extern const u8 BattleScript_GooeyActivates[];
 extern const u8 BattleScript_PastelVeilActivates[];
-extern const u8 BattleScript_AttackerFormChangeEnd3NoPopup[];
+extern const u8 BattleScript_BattlerFormChangeEnd3NoPopup[];
 extern const u8 BattleScript_AttackerFormChangeMoveEffect[];
 extern const u8 BattleScript_BothCanNoLongerEscape[];
 extern const u8 BattleScript_OctolockEndTurn[];
@@ -560,6 +560,8 @@ extern const u8 BattleScript_EffectDarknessTerrain[];
 extern const u8 BattleScript_EffectUehehehehehe[];
 extern const u8 BattleScript_EffectGrimoireCall[];
 extern const u8 BattleScript_TsubameGaeshiActivates[];
+extern const u8 BattleScript_MiasmaSurgeActivates[];
+extern const u8 BattleScript_EffectMiasmaTerrain[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];
@@ -901,6 +903,8 @@ extern const u8 BattleScript_EffectFluffication[];
 extern const u8 BattleScript_EffectWipesOutFoesParty[];
 extern const u8 BattleScript_SpAtkSpDefDown[];
 extern const u8 BattleScript_WishMegaEvolutionIllya[];
+extern const u8 BattleScript_EffectGaiaForce[];
+extern const u8 BattleScript_EffectAstromancy[];
 extern const u8 BattleScript_EffectSpAtkSpDefUp2[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

@@ -1004,6 +1004,12 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 2,
     },
 
+    [EFFECT_STEAL_ITEM] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 3,
+    },
+
     [EFFECT_ENDEAVOR] =
     {
         .battleScript = BattleScript_EffectEndeavor,
@@ -2224,6 +2230,18 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectSteelRoller,
         .battleTvScore = 0, // TODO: Assign points
     },
+
+    [EFFECT_STONE_AXE] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 0, // TODO: Assign points
+    },
+
+    [EFFECT_CEASELESS_EDGE] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 0, // TODO: Assign points
+    },
 	
     [EFFECT_ULTRA_INSTINCT] =
     {
@@ -2306,6 +2324,24 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
     [EFFECT_GRIMOIRE_CALL] =
     {
         .battleScript = BattleScript_EffectGrimoireCall,
+        .battleTvScore = 0, // TODO: Assign points
+    },
+
+    [EFFECT_MIASMA_TERRAIN] =
+    {
+        .battleScript = BattleScript_EffectMiasmaTerrain,
+        .battleTvScore = 0, // TODO: Assign points
+    },
+
+    [EFFECT_GAIA_FORCE] =
+    {
+        .battleScript = BattleScript_EffectGaiaForce,
+        .battleTvScore = 0, // TODO: Assign points
+    },
+
+    [EFFECT_ASTROMANCY] =
+    {
+        .battleScript = BattleScript_EffectAstromancy,
         .battleTvScore = 0, // TODO: Assign points
     },
 

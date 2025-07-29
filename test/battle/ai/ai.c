@@ -675,6 +675,19 @@ AI_SINGLE_BATTLE_TEST("AI won't use Sucker Punch if it expects a move of the sam
     }
 }
 
+AI_SINGLE_BATTLE_TEST("AI won't use Sucker Punch if it expects a status move a percentage of the time")
+{
+    PASSES_RANDOMLY(SUCKER_PUNCH_CHANCE, 100, RNG_AI_SUCKER_PUNCH);
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_SUCKER_PUNCH) == EFFECT_SUCKER_PUNCH);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
+        PLAYER(SPECIES_ZIGZAGOON) { Moves(MOVE_GROWL, MOVE_SCRATCH); }
+        OPPONENT(SPECIES_ZIGZAGOON) { Moves(MOVE_SUCKER_PUNCH, MOVE_SCRATCH); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_SCRATCH); EXPECT_MOVE(opponent, MOVE_SUCKER_PUNCH); }
+    }
+}
+
 AI_SINGLE_BATTLE_TEST("AI won't use thawing moves if target is frozen unless it is super effective or it has no other options")
 {
     u32 aiFlags = 0; u32 status = 0; u32 aiMove = 0;
@@ -995,5 +1008,17 @@ AI_SINGLE_BATTLE_TEST("AI will use recovery move if is in no immediate danger be
         OPPONENT(SPECIES_GASTRODON) { Speed(5); Moves(MOVE_SCALD, MOVE_RECOVER); HP(200); MaxHP(400); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); EXPECT_MOVE(opponent, MOVE_RECOVER); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI has a chance to prioritize last chance priority damage over slow KO")
+{
+    PASSES_RANDOMLY(PRIORITIZE_LAST_CHANCE_CHANCE, 100, RNG_AI_PRIORITIZE_LAST_CHANCE);
+    GIVEN {
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
+        PLAYER(SPECIES_CAMERUPT) { Speed(2); Moves(MOVE_FLAMETHROWER, MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_FLOATZEL) { Level(90); Speed(1); HP(1); Moves(MOVE_WAVE_CRASH, MOVE_AQUA_JET); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_CELEBRATE); EXPECT_MOVE(opponent, MOVE_AQUA_JET); }
     }
 }

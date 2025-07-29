@@ -13,6 +13,7 @@
 
 // AI smart switching chances; if you want more complex behaviour, modify GetSwitchChance
 #define SHOULD_SWITCH_ABSORBS_MOVE_PERCENTAGE                       100
+#define SHOULD_SWITCH_ABSORBS_HIDDEN_POWER_PERCENTAGE               50
 #define SHOULD_SWITCH_TRAPPER_PERCENTAGE                            100
 #define SHOULD_SWITCH_FREE_TURN_PERCENTAGE                          100
 #define STAY_IN_ABSORBING_PERCENTAGE                                66  // Chance to stay in if outgoing mon has super effective move against player, will prevent switching out for an absorber with this likelihood
@@ -58,6 +59,9 @@
 #define BOOST_INTO_HAZE_CHANCE                                  0 // Chance the AI will use a stat boosting move if the player has used Haze
 #define SHOULD_RECOVER_CHANCE                                   50 // Chance the AI will give recovery moves score increase if less than ENABLE_RECOVERY_THRESHOLD and in no immediate danger
 #define ENABLE_RECOVERY_THRESHOLD                               60 // HP percentage beneath which SHOULD_RECOVER_CHANCE is active
+#define SUCKER_PUNCH_CHANCE                                     50 // Chance for the AI to not use Sucker Punch if the player has a status move
+#define SUCKER_PUNCH_PREDICTION_CHANCE                          50 // Additional chance for the AI to not use Sucker Punch if actively predicting a status move if SUCKER_PUNCH_CHANCE fails
+#define PRIORITIZE_LAST_CHANCE_CHANCE                           50 // Chance the AI will prioritize Last Chance (priority move in the face of being outsped and KO'd) over Slow KO
 
 // AI damage calc considerations
 #define RISKY_AI_CRIT_STAGE_THRESHOLD                           2   // Stat stages at which Risky will assume it gets a crit

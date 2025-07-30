@@ -2350,4 +2350,36 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleScript = BattleScript_EffectSpAtkSpDefUp2,
         .battleTvScore = 0, // TODO: Assign points
     },
+
+    [EFFECT_SHADOW_MOVE_HIT] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 1,
+    },
+
+    [EFFECT_SHADOW_MOVE_HALF] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 5,
+        .encourageEncore = TRUE,
+    },
+	
+    [EFFECT_SHADOW_MOVE_RECOIL] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 0, // TODO: Assign points
+    },
+	
+    [EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP] =
+    {
+        .battleScript = BattleScript_EffectHit,
+        .battleTvScore = 0, // TODO: Assign points
+    },
+
+    [EFFECT_SHADOW_MOVE_SKY] =
+    {
+        .battleScript = BattleScript_EffectShadowSky,
+        .battleTvScore = 4,
+        .encourageEncore = TRUE,
+    },
 };

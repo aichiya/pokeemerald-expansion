@@ -270,6 +270,62 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
             }
         }
         break;
+    case BATTLE_WEATHER_SHADOW_SKY:
+        if (!(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
+         && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
+         && !gBattleMons[battler].isShadow)
+        {
+            gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 16;
+            if (gBattleStruct->moveDamage[battler] == 0)
+                gBattleStruct->moveDamage[battler] = 1;
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SHADOWSKY;
+            BattleScriptExecute(BattleScript_DamagingWeather);
+            effect = TRUE;
+        }
+        else
+        {
+            if (gBattleMons[battler].isShadow
+             && !IsBattlerAtMaxHp(battler)
+             && !(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
+             && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_ShadowSkyHeal);
+                gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 16;
+                if (gBattleStruct->moveDamage[battler] == 0)
+                    gBattleStruct->moveDamage[battler] = 1;
+                gBattleStruct->moveDamage[battler] *= -1;
+                effect = TRUE;
+            }
+        }
+        break;
+    case BATTLE_WEATHER_SHADOW_SKY_DEEP:
+        if (!(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
+         && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
+         && !gBattleMons[battler].isShadow)
+        {
+            gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
+            if (gBattleStruct->moveDamage[battler] == 0)
+                gBattleStruct->moveDamage[battler] = 1;
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SHADOWSKY;
+            BattleScriptExecute(BattleScript_DamagingWeather);
+            effect = TRUE;
+        }
+        else
+        {
+            if (gBattleMons[battler].isShadow
+             && !IsBattlerAtMaxHp(battler)
+             && !(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
+             && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_ShadowSkyHeal);
+                gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
+                if (gBattleStruct->moveDamage[battler] == 0)
+                    gBattleStruct->moveDamage[battler] = 1;
+                gBattleStruct->moveDamage[battler] *= -1;
+                effect = TRUE;
+            }
+        }
+        break;
     }
 
     return effect;

@@ -372,6 +372,11 @@ enum __attribute__((packed)) BattleMoveEffects
     EFFECT_GAIA_FORCE,
     EFFECT_ASTROMANCY,
     EFFECT_SPATK_SPDEF_UP2,
+    EFFECT_SHADOW_MOVE_HIT,
+    EFFECT_SHADOW_MOVE_HALF, // Shadow Half
+    EFFECT_SHADOW_MOVE_RECOIL, // Shadow Rush
+    EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP, // Shadow End
+    EFFECT_SHADOW_MOVE_SKY, // Shadow Sky
     NUM_BATTLE_MOVE_EFFECTS,
 };
 

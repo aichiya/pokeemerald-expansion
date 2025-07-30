@@ -28456,7 +28456,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A standard darkness-powered\n"
             "move."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SHADOW_MOVE_HIT,
         .power = 40,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28481,7 +28481,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A reckless charge attack\n"
             "that also hurts the user."),
-        .effect = EFFECT_RECOIL,
+        .effect = EFFECT_SHADOW_MOVE_RECOIL,
         .power = 90,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28489,7 +28489,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .argument = { .recoilPercentage = 12 },
+        .argument = { .recoilPercentage = 6 },
         .makesContact = TRUE,
         .mirrorMoveBanned = TRUE,
         .metronomeBanned = TRUE,
@@ -28506,7 +28506,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A full-body slam powered\n"
             "with darkness."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SHADOW_MOVE_HIT,
         .power = 75,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28530,7 +28530,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A life-risking smash after\n"
             "succumbed by darkness."),
-        .effect = EFFECT_RECOIL,
+        .effect = EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP,
         .power = 120,
         .type = TYPE_MYSTERY,
         .accuracy = 60,
@@ -28555,7 +28555,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks foes with\n"
             "wave of darkness energy."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SHADOW_MOVE_HIT,
         .power = 50,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28578,7 +28578,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Damages foes by emitting\n"
             "a deep darkness."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SHADOW_MOVE_HIT,
         .power = 70,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28601,7 +28601,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Whips up a darkness tornado\n"
             "to tear at foes."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SHADOW_MOVE_HIT,
         .power = 95,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28625,7 +28625,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A dark fire attack that\n"
             "may inflict a burn."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SHADOW_MOVE_HIT,
         .power = 75,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28643,7 +28643,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Flamethrower,
+        .battleAnimScript = gBattleAnimMove_ShadowFire,
     },
 
     [MOVE_SHADOW_BOLT] =
@@ -28652,7 +28652,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A dark electric attack\n"
             "that may paralyze the foe."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SHADOW_MOVE_HIT,
         .power = 75,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28670,7 +28670,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Thunderbolt,
+        .battleAnimScript = gBattleAnimMove_ShadowBolt,
     },
 
     [MOVE_SHADOW_CHILL] =
@@ -28679,7 +28679,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Blasts the foe with an icy\n"
             "beam. May cause frostbite."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SHADOW_MOVE_HIT,
         .power = 75,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28697,16 +28697,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_IceBeam,
+        .battleAnimScript = gBattleAnimMove_ShadowChill,
     },
 
     [MOVE_SHADOW_BLAST] =
     {
-        .name = COMPOUND_STRING("Aeroblast"),
+        .name = COMPOUND_STRING("Shadow Blast"),
         .description = COMPOUND_STRING(
             "Wicked dark windy blades.\n"
             "High critical-hit ratio."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SHADOW_MOVE_HIT,
         .power = 80,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28732,7 +28732,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powers up shadow types,\n"
             "and hurts non-shadow."),
-        .effect = EFFECT_RAIN_DANCE,
+        .effect = EFFECT_SHADOW_MOVE_SKY,
         .power = 0,
         .type = TYPE_MYSTERY,
         .accuracy = 0,
@@ -28748,7 +28748,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_RainDance,
+        .battleAnimScript = gBattleAnimMove_ShadowSky,
     },
 
     [MOVE_SHADOW_HOLD] =
@@ -28882,21 +28882,22 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Halves all battler's HP\n"
             "by the power of darkness."),
-        .effect = EFFECT_FIXED_PERCENT_DAMAGE,
+        .effect = EFFECT_SHADOW_MOVE_HALF,
         .power = 1,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
         .pp = 40,
-        .target = MOVE_TARGET_ALL_BATTLERS,
+        .target = MOVE_TARGET_FOES_AND_ALLY,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = { .damagePercentage = 50 },
         .mirrorMoveBanned = TRUE,
         .metronomeBanned = TRUE,
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_RoarOfTime,
+        .battleAnimScript = gBattleAnimMove_ShadowHalf,
     },
 
     // Z-Moves

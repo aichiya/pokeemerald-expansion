@@ -238,6 +238,7 @@ enum
     VARIOUS_SHOW_HP,
     VARIOUS_SUBSTITUTE_HP,
     VARIOUS_IN_LOVE,
+    VARIOUS_IS_SHADOW,
 };
 
 enum
@@ -519,6 +520,7 @@ static const struct ListMenuItem sVariousListItems[] =
     {COMPOUND_STRING("Show HP"),       VARIOUS_SHOW_HP},
     {COMPOUND_STRING("Substitute HP"), VARIOUS_SUBSTITUTE_HP},
     {COMPOUND_STRING("In Love"),       VARIOUS_IN_LOVE},
+    {COMPOUND_STRING("Is Shadow"),     VARIOUS_IS_SHADOW},
 };
 
 static const struct ListMenuItem sSecondaryListItems[] =
@@ -1944,7 +1946,7 @@ static void SetUpModifyArrows(struct BattleDebugMenu *data)
     case LIST_ITEM_MOVES:
         data->modifyArrows.minValue = 0;
         data->modifyArrows.maxValue = MOVES_COUNT - 1;
-        data->modifyArrows.maxDigits = 3;
+        data->modifyArrows.maxDigits = 4;
         if (data->currentSecondaryListItemId == 4)
         {
             data->modifyArrows.modifiedValPtr = &gBattleMons[data->battlerId].moves[0];
@@ -2050,6 +2052,15 @@ static void SetUpModifyArrows(struct BattleDebugMenu *data)
             data->modifyArrows.modifiedValPtr = NULL;
             data->modifyArrows.typeOfVal = VAR_IN_LOVE;
             data->modifyArrows.currValue = gBattleMons[data->battlerId].volatiles.infatuation;
+        }
+        else if (data->currentSecondaryListItemId == VARIOUS_IS_SHADOW)
+        {
+            data->modifyArrows.minValue = 0;
+            data->modifyArrows.maxValue = 1;
+            data->modifyArrows.maxDigits = 1;
+            data->modifyArrows.modifiedValPtr = &gBattleMons[data->battlerId].isShadow;
+            data->modifyArrows.typeOfVal = VAL_U8;
+            data->modifyArrows.currValue = gBattleMons[data->battlerId].isShadow;
         }
         break;
     case LIST_ITEM_STATUS1:

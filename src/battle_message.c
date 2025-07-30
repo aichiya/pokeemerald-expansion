@@ -911,7 +911,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_UNLIMITEDKRISWORKS]                   = COMPOUND_STRING("Reality marble is deployed on the field!"),
     [STRINGID_UBWFADED]                             = COMPOUND_STRING("Reality marble is faded!"),
     [STRINGID_SETUPHAKUREIBARRIER]                  = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} set up protections!"),
-    [STRINGID_CAUSESCHAOSONTHEOPPOSINGSIDE]         = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} causes chaos on {B_DEF_TEAM1} side!"),
+    [STRINGID_CAUSESCHAOSONTHEOPPOSINGSIDE]         = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} causes chaos on the opposing side!"),
     [STRINGID_TEAMTRAPPEDINTHEWORLDENDGARDEN]       = COMPOUND_STRING("{B_DEF_TEAM1} Pokémon became trapped in the World End Garden!"),
     [STRINGID_PKMNHURTBYWORLDENDGARDEN]             = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is suffering from the World End Garden!"),
     [STRINGID_WORLDENDGARDENPREVENTSCOURTCHANGE]    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} prevents Court Change!"),
@@ -927,6 +927,11 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_MIASMACOVERINGTHEFIELD]               = COMPOUND_STRING("Miasma appeared to cover the battlefield!"),
     [STRINGID_MIASMATERRAINENDS]                    = COMPOUND_STRING("The miasma disappeared from the battlefield."),
     [STRINGID_READINGTHESTARFORMATION]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is reading the star formation!"),
+    [STRINGID_FLASHINGLIGHTSKTIKESPKMN]             = COMPOUND_STRING("The flashing light strikes {B_ATK_NAME_WITH_PREFIX}!"),
+    [STRINGID_RECOVEREDBYSHADOWSKY]                 = COMPOUND_STRING("The flashing light recovered {B_ATK_NAME_WITH_PREFIX}!"),
+    [STRINGID_SHADOWYAURAFILLED]                    = COMPOUND_STRING("A shadowy aura filled the sky!"),
+    [STRINGID_DARKNESSDISAPPEARED]                  = COMPOUND_STRING("The shadowy aura disappeared from the sky!"),
+    [STRINGID_SHADOWYAURADEEPEN]                    = COMPOUND_STRING("The shadowy aura continously stays on the sky!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1065,6 +1070,7 @@ const u16 gMoveWeatherChangeStringIds[] =
     [B_MSG_STARTED_HAIL]      = STRINGID_STARTEDHAIL,
     [B_MSG_STARTED_SNOW]      = STRINGID_STARTEDSNOW,
     [B_MSG_STARTED_FOG]       = STRINGID_FOGCREPTUP, // Unused, can use for custom moves that set fog
+    [B_MSG_STARTED_SHADOW_SKY] = STRINGID_SHADOWYAURAFILLED,
 };
 
 const u16 gWeatherEndsStringIds[B_MSG_WEATHER_END_COUNT] =
@@ -1076,6 +1082,7 @@ const u16 gWeatherEndsStringIds[B_MSG_WEATHER_END_COUNT] =
     [B_MSG_WEATHER_END_SNOW]         = STRINGID_SNOWSTOPPED,
     [B_MSG_WEATHER_END_FOG]          = STRINGID_FOGLIFTED,
     [B_MSG_WEATHER_END_STRONG_WINDS] = STRINGID_STRONGWINDSDISSIPATED,
+    [B_MSG_WEATHER_END_SHADOW_SKY]   = STRINGID_DARKNESSDISAPPEARED,
 };
 
 const u16 gWeatherTurnStringIds[] =
@@ -1088,12 +1095,14 @@ const u16 gWeatherTurnStringIds[] =
     [B_MSG_WEATHER_TURN_SNOW]         = STRINGID_SNOWCONTINUES,
     [B_MSG_WEATHER_TURN_FOG]          = STRINGID_FOGISDEEP,
     [B_MSG_WEATHER_TURN_STRONG_WINDS] = STRINGID_MYSTERIOUSAIRCURRENTBLOWSON,
+    [B_MSG_WEATHER_TURN_SHADOW_SKY]   = STRINGID_SHADOWYAURADEEPEN,
 };
 
 const u16 gSandStormHailDmgStringIds[] =
 {
     [B_MSG_SANDSTORM] = STRINGID_PKMNBUFFETEDBYSANDSTORM,
-    [B_MSG_HAIL]      = STRINGID_PKMNPELTEDBYHAIL
+    [B_MSG_HAIL]      = STRINGID_PKMNPELTEDBYHAIL,
+    [B_MSG_SHADOWSKY] = STRINGID_FLASHINGLIGHTSKTIKESPKMN
 };
 
 const u16 gProtectLikeUsedStringIds[] =

@@ -1370,6 +1370,7 @@ static u32 GetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId, u8 *
         battleMon.otId = GetMonData(&party[monId], MON_DATA_OT_ID);
         battleMon.metLevel = GetMonData(&party[monId], MON_DATA_MET_LEVEL);
         battleMon.isShiny = GetMonData(&party[monId], MON_DATA_IS_SHINY);
+        battleMon.isShadow = GetMonData(&party[monId], MON_DATA_IS_SHADOW);
         GetMonData(&party[monId], MON_DATA_NICKNAME, nickname);
         StringCopy_Nickname(battleMon.nickname, nickname);
         GetMonData(&party[monId], MON_DATA_OT_NAME, battleMon.otName);
@@ -1638,6 +1639,10 @@ static u32 GetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId, u8 *
         dst[0] = GetMonData(&party[monId], MON_DATA_TOUGH_RIBBON);
         size = 1;
         break;
+    case REQUEST_IS_SHADOW_BATTLE:
+        dst[0] = GetMonData(&party[monId], MON_DATA_IS_SHADOW);
+        size = 1;
+        break;
     }
 
     return size;
@@ -1855,6 +1860,9 @@ static void SetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId)
         break;
     case REQUEST_TOUGH_RIBBON_BATTLE:
         SetMonData(&party[monId], MON_DATA_TOUGH_RIBBON, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_IS_SHADOW_BATTLE:
+        SetMonData(&party[monId], MON_DATA_IS_SHADOW, &gBattleResources->bufferA[battler][3]);
         break;
     }
 

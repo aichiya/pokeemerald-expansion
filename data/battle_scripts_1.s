@@ -7235,6 +7235,8 @@ BattleScript_MoveEffectConfusion::
 
 BattleScript_MoveEffectRecoil::
 	jumpifmove MOVE_STRUGGLE, BattleScript_DoRecoil
+	jumpifmove MOVE_SHADOW_END, BattleScript_DoRecoil
+	jumpifmove MOVE_SHADOW_RUSH, BattleScript_DoRecoil
 	jumpifability BS_ATTACKER, ABILITY_ROCK_HEAD, BattleScript_RecoilEnd
 	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_RecoilEnd
 	jumpifability BS_ATTACKER, ABILITY_FANTASY_BREAKER, BattleScript_RecoilEnd
@@ -10393,3 +10395,20 @@ BattleScript_EffectGaiaForceChangeDark:
 	setbyte sB_ANIM_TURN, 1
 	goto BattleScript_EffectHit
 	goto BattleScript_MoveEnd
+
+BattleScript_EffectShadowSky::
+	attackcanceler
+	attackstring
+	ppreduce
+	call BattleScript_CheckPrimalWeather
+	setfieldweather BATTLE_WEATHER_SHADOW_SKY
+	goto BattleScript_MoveWeatherChange
+	goto BattleScript_MoveEnd
+
+BattleScript_ShadowSkyHeal::
+	playanimation BS_ATTACKER, B_ANIM_SIMPLE_HEAL
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	printstring STRINGID_RECOVEREDBYSHADOWSKY
+	waitmessage B_WAIT_TIME_LONG
+	end3

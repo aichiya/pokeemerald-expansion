@@ -201,6 +201,24 @@ static const struct BattleWeatherInfo sBattleWeatherInfo[BATTLE_WEATHER_COUNT] =
         .continuesMessage = B_MSG_WEATHER_TURN_STRONG_WINDS,
         .animation = B_ANIM_STRONG_WINDS,
     },
+
+    [BATTLE_WEATHER_SHADOW_SKY] =
+    {
+        .flag = B_WEATHER_SHADOW_SKY_NORMAL,
+        .rock = HOLD_EFFECT_SHADOW_ROCK,
+        .endMessage = B_MSG_WEATHER_END_SHADOW_SKY,
+        .continuesMessage = B_MSG_WEATHER_TURN_SHADOW_SKY,
+        .animation = B_ANIM_SHADOW_SKY_CONTINUES,
+    },
+
+    [BATTLE_WEATHER_SHADOW_SKY_DEEP] =
+    {
+        .flag = B_WEATHER_SHADOW_SKY_DEEP,
+        .rock = HOLD_EFFECT_SHADOW_ROCK,
+        .endMessage = B_MSG_WEATHER_END_SHADOW_SKY,
+        .continuesMessage = B_MSG_WEATHER_TURN_SHADOW_SKY,
+        .animation = B_ANIM_SHADOW_SKY_CONTINUES,
+    },
 };
 
 // Helper function for actual dmg calcs during battle. For simulated AI dmg, CalcTypeEffectivenessMultiplier should be used directly
@@ -4223,6 +4241,10 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
 
                 gSideTimers[targetSide].spikesAmount = 3;
 
+                if (!IsHazardOnSide(targetSide, HAZARDS_TOXIC_SPIKES))
+                    PushHazardTypeToQueue(targetSide, HAZARDS_TOXIC_SPIKES);
+                if (!IsHazardOnSide(targetSide, HAZARDS_SPIKES))
+                    PushHazardTypeToQueue(targetSide, HAZARDS_SPIKES);
                 if (!IsHazardOnSide(targetSide, HAZARDS_STICKY_WEB))
                     PushHazardTypeToQueue(targetSide, HAZARDS_STICKY_WEB);
                 if (!IsHazardOnSide(targetSide, HAZARDS_STEALTH_ROCK))
@@ -8792,7 +8814,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
             modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
         break;
     case EFFECT_SOLAR_BEAM:
-        if (IsBattlerWeatherAffected(battlerAtk, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG)))
+        if (IsBattlerWeatherAffected(battlerAtk, (B_WEATHER_HAIL | B_WEATHER_SANDSTORM | B_WEATHER_RAIN | B_WEATHER_SNOW | B_WEATHER_FOG | B_WEATHER_SHADOW_SKY)))
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
         break;
     case EFFECT_STOMPING_TANTRUM:
@@ -8808,6 +8830,13 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         if (B_KNOCK_OFF_DMG >= GEN_6
             && gBattleMons[battlerDef].item != ITEM_NONE
             && CanBattlerGetOrLoseItem(battlerDef, gBattleMons[battlerDef].item))
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
+    case EFFECT_SHADOW_MOVE_HIT:
+    case EFFECT_SHADOW_MOVE_RECOIL:
+    case EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP:
+    case EFFECT_SHADOW_MOVE_HALF:
+        if (gBattleWeather & B_WEATHER_SHADOW_SKY)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     default:
@@ -10003,6 +10032,7 @@ s32 DoFixedDamageMoveCalc(struct DamageContext *ctx)
         dmg = GetMoveFixedHPDamage(ctx->move);
         break;
     case EFFECT_FIXED_PERCENT_DAMAGE:
+    case EFFECT_SHADOW_MOVE_HALF:
         dmg = GetNonDynamaxHP(ctx->battlerDef) * GetMoveDamagePercentage(ctx->move) / 100;
         break;
     case EFFECT_FINAL_GAMBIT:
@@ -10212,13 +10242,33 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
             gSpecialStatuses[ctx->battlerDef].teraShellAbilityDone = TRUE;
         }
     }
-    if (ctx->moveType == EFFECT_SUPER_EFFECTIVE_ON_FOES_TYPES)
+
+    if (GetMoveEffect(ctx->move) == EFFECT_SUPER_EFFECTIVE_ON_FOES_TYPES)
     {
         if (ctx->abilityDef == ABILITY_MULTITYPE_LEGEND)
             mod = UQ_4_12(1.0);
         else
             mod = UQ_4_12(2.0);
     }
+
+    if ((GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_HIT
+      || GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_HALF
+      || GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_RECOIL
+      || GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP) 
+      && gBattleMons[ctx->battlerDef].isShadow == FALSE) 
+    {
+        mod = UQ_4_12(2.0);
+    }
+
+    if ((GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_HIT
+      || GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_HALF
+      || GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_RECOIL
+      || GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP) 
+      && gBattleMons[ctx->battlerDef].isShadow == TRUE) 
+    {
+        mod = UQ_4_12(0.5);
+    }
+
     if (FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE)
     {
         if (ctx->abilityAtk == ABILITY_FANTASY_BREAKER && ctx->abilityDef == ABILITY_FANTASY_BREAKER)
@@ -10376,6 +10426,18 @@ uq4_12_t CalcTypeEffectivenessMultiplier(struct DamageContext *ctx)
             modifier = CalcTypeEffectivenessMultiplierInternal(ctx, modifier);
         }
     }
+    else if (ctx->move != MOVE_STRUGGLE && (GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_HIT
+                                         || GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_HALF
+                                         || GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_RECOIL
+                                         || GetMoveEffect(ctx->move) == EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP))
+    {
+        modifier = CalcTypeEffectivenessMultiplierInternal(ctx, modifier);
+        if (GetMoveEffect(ctx->move) == EFFECT_TWO_TYPED_MOVE)
+        {
+            ctx->moveType = GetMoveArgType(ctx->move);
+            modifier = CalcTypeEffectivenessMultiplierInternal(ctx, modifier);
+        }
+    }
 
     if (ctx->updateFlags)
         UpdateMoveResultFlags(modifier, &gBattleStruct->moveResultFlags[ctx->battlerDef]);
@@ -10388,6 +10450,26 @@ uq4_12_t CalcPartyMonTypeEffectivenessMultiplier(u16 move, u16 speciesDef, u16 a
     u32 moveType = GetBattleMoveType(move);
 
     if (move != MOVE_STRUGGLE && moveType != TYPE_MYSTERY)
+    {
+        struct DamageContext ctx = {0};
+        ctx.move = move;
+        ctx.moveType = moveType;
+        ctx.updateFlags = FALSE;
+        ctx.abilityDef = abilityDef;
+
+        MulByTypeEffectiveness(&ctx, &modifier, GetSpeciesType(speciesDef, 0));
+        if (GetSpeciesType(speciesDef, 1) != GetSpeciesType(speciesDef, 0))
+            MulByTypeEffectiveness(&ctx, &modifier, GetSpeciesType(speciesDef, 1));
+
+        if (ctx.moveType == TYPE_NEW_EARTH && abilityDef == ABILITY_LEVITATE && !(gFieldStatuses & STATUS_FIELD_GRAVITY))
+            modifier = UQ_4_12(0.0);
+        if (abilityDef == ABILITY_WONDER_GUARD && modifier <= UQ_4_12(1.0) && GetMovePower(move) != 0)
+            modifier = UQ_4_12(0.0);
+    }
+    else if (move != MOVE_STRUGGLE && (GetMoveEffect(move) == EFFECT_SHADOW_MOVE_HIT
+                                    || GetMoveEffect(move) == EFFECT_SHADOW_MOVE_HALF
+                                    || GetMoveEffect(move) == EFFECT_SHADOW_MOVE_RECOIL
+                                    || GetMoveEffect(move) == EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP))
     {
         struct DamageContext ctx = {0};
         ctx.move = move;

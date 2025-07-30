@@ -851,6 +851,7 @@ extern const u8 gBattleAnimMove_SupercellSlam[];
 extern const u8 gBattleAnimMove_PsychicNoise[];
 extern const u8 gBattleAnimMove_UpperHand[];
 extern const u8 gBattleAnimMove_MalignantChain[];
+// Custom Added Start
 extern const u8 gBattleAnimMove_UltraInstinct[];
 extern const u8 gBattleAnimMove_ATrance[];
 extern const u8 gBattleAnimMove_TwinSpark[];
@@ -879,6 +880,12 @@ extern const u8 gBattleAnimMove_GaiaForce[];
 extern const u8 gBattleAnimMove_PoseidonForce[];
 extern const u8 gBattleAnimMove_MiasmaTerrain[];
 extern const u8 gBattleAnimMove_Astromancy[];
+extern const u8 gBattleAnimMove_ShadowFire[];
+extern const u8 gBattleAnimMove_ShadowBolt[];
+extern const u8 gBattleAnimMove_ShadowChill[];
+extern const u8 gBattleAnimMove_ShadowHalf[];
+extern const u8 gBattleAnimMove_ShadowSky[];
+// Custom Added End
 extern const u8 gBattleAnimMove_BreakneckBlitz[];
 extern const u8 gBattleAnimMove_AllOutPummeling[];
 extern const u8 gBattleAnimMove_SupersonicSkystrike[];
@@ -1034,6 +1041,7 @@ extern const u8 gBattleAnimGeneral_TeraActivate[];
 extern const u8 gBattleAnimGeneral_SimpleHeal[];
 extern const u8 gBattleAnimGeneral_PowerConstruct[];
 extern const u8 gBattleAnimGeneral_CounterSlash[];
+extern const u8 gBattleAnimGeneral_ShadowSky[];
 
 // special animations
 extern const u8 gBattleAnimSpecial_LevelUp[];

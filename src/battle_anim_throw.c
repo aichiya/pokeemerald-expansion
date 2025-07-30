@@ -2460,8 +2460,8 @@ void TryShinyAnimation(u8 battler, struct Pokemon *mon)
             {
                 if (GetSpriteTileStartByTag(ANIM_TAG_SMALL_CLOUD) == 0xFFFF)
                 {
-                    LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
-                    LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
+                    LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_SMALL_CLOUD - ANIM_SPRITES_START]);
+                    LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_SMALL_CLOUD - ANIM_SPRITES_START]);
                 }
 
                 taskCirc = CreateTask(Task_ShinyStarsNega, 10);

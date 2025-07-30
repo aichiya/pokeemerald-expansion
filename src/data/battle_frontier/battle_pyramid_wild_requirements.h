@@ -108,6 +108,7 @@ static const u16 sWeatherChangingMoves[] = {
     MOVE_SANDSTORM,
     MOVE_HAIL,
     MOVE_SUNNY_DAY,
+    MOVE_SHADOW_SKY,
 };
 
 // MOVE_EFFECT_RECHARGE, recoil

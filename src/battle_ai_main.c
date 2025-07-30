@@ -1280,6 +1280,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
     {
         switch (moveEffect)
         {
+            case EFFECT_SHADOW_MOVE_SKY:
             case EFFECT_SUNNY_DAY:
             case EFFECT_RAIN_DANCE:
             case EFFECT_HAIL:
@@ -1905,6 +1906,11 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             break;
         case EFFECT_SANDSTORM:
             if (weather & (B_WEATHER_SANDSTORM | B_WEATHER_PRIMAL_ANY)
+             || IsMoveEffectWeather(aiData->partnerMove))
+                ADJUST_SCORE(-8);
+            break;
+        case EFFECT_SHADOW_MOVE_SKY:
+            if (weather & (B_WEATHER_SHADOW_SKY | B_WEATHER_PRIMAL_ANY)
              || IsMoveEffectWeather(aiData->partnerMove))
                 ADJUST_SCORE(-8);
             break;
@@ -3008,6 +3014,7 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             }
             break;
         // Don't change weather if ally already decided to do so.
+        case EFFECT_SHADOW_MOVE_SKY:
         case EFFECT_SUNNY_DAY:
         case EFFECT_HAIL:
         case EFFECT_SNOWSCAPE:
@@ -5656,6 +5663,7 @@ static s32 AI_ForceSetupFirstTurn(u32 battlerAtk, u32 battlerDef, u32 move, s32 
     case EFFECT_UBW:
     case EFFECT_DARKNESS_TERRAIN:
     case EFFECT_MIASMA_TERRAIN:
+    case EFFECT_SHADOW_MOVE_SKY:
         ADJUST_SCORE(DECENT_EFFECT);
         break;
     default:
@@ -5919,6 +5927,7 @@ static s32 AI_HPAware(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             case EFFECT_SNOWSCAPE:
             case EFFECT_RAIN_DANCE:
             case EFFECT_FILLET_AWAY:
+            case EFFECT_SHADOW_MOVE_SKY:
                 ADJUST_SCORE(-2);
                 break;
             default:
@@ -6091,6 +6100,10 @@ static s32 AI_PowerfulStatus(u32 battlerAtk, u32 battlerDef, u32 move, s32 score
         if (!(AI_GetWeather() & (B_WEATHER_SANDSTORM | B_WEATHER_PRIMAL_ANY)))
             ADJUST_SCORE(POWERFUL_STATUS_MOVE);
         break;
+    case EFFECT_SHADOW_MOVE_SKY:
+        if (IsWeatherActive(B_WEATHER_SHADOW_SKY | B_WEATHER_PRIMAL_ANY) == WEATHER_INACTIVE)
+            ADJUST_SCORE(POWERFUL_STATUS_MOVE);
+        break;
     case EFFECT_SUNNY_DAY:
         if (IsWeatherActive(B_WEATHER_SUN | B_WEATHER_PRIMAL_ANY) == WEATHER_INACTIVE)
             ADJUST_SCORE(POWERFUL_STATUS_MOVE);
@@ -6188,6 +6201,7 @@ static s32 AI_PredictSwitch(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
     case EFFECT_SANDSTORM:
     case EFFECT_SNOWSCAPE:
     case EFFECT_HAIL:
+    case EFFECT_SHADOW_MOVE_SKY:
     case EFFECT_SUNNY_DAY:
     case EFFECT_AQUA_RING:
     case EFFECT_ELECTRIC_TERRAIN:

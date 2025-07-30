@@ -64,6 +64,7 @@ enum {
     REQUEST_CUTE_RIBBON_BATTLE,
     REQUEST_SMART_RIBBON_BATTLE,
     REQUEST_TOUGH_RIBBON_BATTLE,
+    REQUEST_IS_SHADOW_BATTLE,
 };
 
 // Accessors for gBattleControllerExecFlags.

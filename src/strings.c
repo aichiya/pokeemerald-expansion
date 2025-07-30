@@ -2335,7 +2335,7 @@ const u8 gText_Gen4MetLocProbably255[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DY
 
 const u8 gText_XNatureMetAtYZNega[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nmet at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}, {COLOR}{BLUE}{SHADOW}{DYNAMIC_COLOR2}Anti-World{COLOR}{WHITE}{SHADOW}{DARK_GRAY}:\n{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}.");
 const u8 gText_XNatureHatchedAtYZNega[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nobtained from {DYNAMIC 0}Wonder Gacha{DYNAMIC 1}.");
-const u8 gText_XNatureProbablyMetAtNega[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, {COLOR}{BLUE}{SHADOW}{DYNAMIC_COLOR2}(Nega World){COLOR}{WHITE}{SHADOW}{DARK_GRAY},\nprobably met at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\n{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}.");
+const u8 gText_XNatureProbablyMetAtNega[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nprobably met at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\n{COLOR}{BLUE}{SHADOW}{DYNAMIC_COLOR2}Anti-World{COLOR}{WHITE}{SHADOW}{DARK_GRAY}: {DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}.");
 const u8 gText_XNatureAnotherReality[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\na fragment of your power\nfrom another reality.");
 
 const u8 gText_XNatureMiracle[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nobtained {COLOR}{BLUE}{SHADOW}{DYNAMIC_COLOR2}miraculously{COLOR}{WHITE}{SHADOW}{DARK_GRAY} from\n{DYNAMIC 0}Wonder Gacha{DYNAMIC 1}.");
@@ -2411,3 +2411,5 @@ const u8 gText_YouCantReleaseThisMon[] = _("Can't release this Fragment.");
 const u8 gText_MetLocationPlacholder[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nGame ID {DYNAMIC 0}0{DYNAMIC 1} is reserved\nfor shenanigans.");
 const u8 gText_ApparentlyTrimmedGensokyoGeneric[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\napparently met at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\n{DYNAMIC 0}The Trimmed Gensokyo{DYNAMIC 1}.");
 const u8 gText_DebugLocationTrimmedGensokyo[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\nDebug Location: {DYNAMIC 0}Gensokyo\nthat Got Trimmed Too Much{DYNAMIC 1}.");
+const u8 gText_SpecialGiftMarkEmoji[] = _("{COLOR}{LIGHT_BLUE}{SHADOW}{DYNAMIC_COLOR1}{EMOJI_SPIRAL}{COLOR}{WHITE}{SHADOW}{DARK_GRAY}");
+const u8 gText_AntiWorldMarkEmoji[] = _("{COLOR}{BLUE}{SHADOW}{DYNAMIC_COLOR2}{EMOJI_EVIL}{COLOR}{WHITE}{SHADOW}{DARK_GRAY}");

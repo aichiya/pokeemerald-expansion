@@ -3532,5 +3532,7 @@ extern const u8 gText_Censored3[];
 extern const u8 gText_MetLocationPlacholder[];
 extern const u8 gText_ApparentlyTrimmedGensokyoGeneric[];
 extern const u8 gText_DebugLocationTrimmedGensokyo[];
+extern const u8 gText_SpecialGiftMarkEmoji[];
+extern const u8 gText_AntiWorldMarkEmoji[];
 
 #endif // GUARD_STRINGS_H

@@ -92,6 +92,8 @@
 #define PSS_DATA_WINDOW_INFO_ID 1
 #define PSS_DATA_WINDOW_INFO_ABILITY 2
 #define PSS_DATA_WINDOW_INFO_MEMO 3
+#define PSS_DATA_WINDOW_SPECIAL_GIFT_MARK 4
+#define PSS_DATA_WINDOW_ANTI_WORLD_OR_SHADOW_MARK 5
 
 // Dynamic fields for the Pokémon Skills page
 #define PSS_DATA_WINDOW_SKILLS_HELD_ITEM 0
@@ -168,6 +170,7 @@ static EWRAM_DATA struct PokemonSummaryScreenData
         u32 OTID; // 0x48
         u8 teraType;
         u8 mintNature;
+        u8 isShadow;
     } summary;
     u16 bgTilemapBuffers[PSS_PAGE_COUNT][2][0x400];
     u8 mode;
@@ -336,6 +339,8 @@ static const u8 *GetLetterGrade(u32 stat);
 static u8 AddWindowFromTemplateList(const struct WindowTemplate *template, u8 templateId);
 static u8 IncrementSkillsStatsMode(u8 mode);
 static void ClearStatLabel(u32 length, u32 statsCoordX, u32 statsCoordY);
+static void PrintMonSpecialGiftMark(void);
+static void PrintMonAntiWorldOrShadowMark(void);
 
 static const struct BgTemplate sBgTemplates[] =
 {
@@ -626,6 +631,24 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .height = 6,
         .paletteNum = 6,
         .baseBlock = 575,
+    },
+    [PSS_DATA_WINDOW_SPECIAL_GIFT_MARK] = {
+        .bg = 0,
+        .tilemapLeft = 27,
+        .tilemapTop = 14,
+        .width = 1,
+        .height = 2,
+        .paletteNum = 6,
+        .baseBlock = 683,
+    },
+    [PSS_DATA_WINDOW_ANTI_WORLD_OR_SHADOW_MARK] = {
+        .bg = 0,
+        .tilemapLeft = 28,
+        .tilemapTop = 14,
+        .width = 1,
+        .height = 2,
+        .paletteNum = 6,
+        .baseBlock = 685,
     },
 };
 static const struct WindowTemplate sPageSkillsTemplate[] =
@@ -1538,6 +1561,7 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *mon)
         sum->ribbonCount = GetMonData(mon, MON_DATA_RIBBON_COUNT);
         sum->teraType = GetMonData(mon, MON_DATA_TERA_TYPE);
         sum->isShiny = GetMonData(mon, MON_DATA_IS_SHINY);
+        sum->isShadow = GetMonData(mon, MON_DATA_IS_SHADOW);
         sMonSummaryScreen->relearnableMovesNum = P_SUMMARY_SCREEN_MOVE_RELEARNER ? GetNumberOfRelearnableMoves(mon) : 0;
         return TRUE;
     }
@@ -3407,6 +3431,8 @@ static void PrintInfoPageText(void)
         PrintMonAbilityDescription();
         BufferMonTrainerMemo();
         PrintMonTrainerMemo();
+        PrintMonSpecialGiftMark();
+        PrintMonAntiWorldOrShadowMark();
     }
 }
 
@@ -3434,6 +3460,12 @@ static void Task_PrintInfoPage(u8 taskId)
         PrintMonTrainerMemo();
         break;
     case 7:
+        PrintMonSpecialGiftMark();
+        break;
+    case 8:
+        PrintMonAntiWorldOrShadowMark();
+        break;
+    case 9:
         DestroyTask(taskId);
         return;
     }
@@ -8017,6 +8049,26 @@ static void BufferMonTrainerMemo(void)
 static void PrintMonTrainerMemo(void)
 {
     PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_MEMO), gStringVar4, 0, 1, 0, 0);
+}
+
+static void PrintMonSpecialGiftMark(void)
+{
+    const u8 *mark;
+    mark = gText_SpecialGiftMarkEmoji;
+    struct PokeSummary *sum = &sMonSummaryScreen->summary;
+    if (sum->metGame == VERSION_IDENTIFIER_SPECIAL_GIFT
+     || sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
+        PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_SPECIAL_GIFT_MARK), mark, 0, 0, 0, 0);
+}
+
+static void PrintMonAntiWorldOrShadowMark(void)
+{
+    const u8 *mark;
+    mark = gText_AntiWorldMarkEmoji;
+    struct PokeSummary *sum = &sMonSummaryScreen->summary;
+    if (sum->metGame == VERSION_IDENTIFIER_NEGA
+     || sum->isShadow == TRUE)
+        PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_ANTI_WORLD_OR_SHADOW_MARK), mark, 0, 0, 0, 0);
 }
 
 static void BufferNatureString(void)

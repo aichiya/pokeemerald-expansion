@@ -391,6 +391,9 @@ struct BattlePokemon
     /*0x61*/ u8 metLevel;
     /*0x62*/ bool8 isShiny;
     /*0x63*/ bool8 isShadow;
+    /*0x64*/ u8 metGame;
+    /*0x65*/ u8 metLocation;
+    /*0x66*/ u8 franchiseOfOrigin;
 };
 
 struct EvolutionParam

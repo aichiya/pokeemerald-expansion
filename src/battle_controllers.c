@@ -1336,6 +1336,7 @@ static u32 GetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId, u8 *
     s16 data16;
     u32 data32;
     s32 size = 0;
+    bool8 setShadow = TRUE;
 
     switch (gBattleResources->bufferA[battler][1])
     {
@@ -1370,7 +1371,18 @@ static u32 GetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId, u8 *
         battleMon.otId = GetMonData(&party[monId], MON_DATA_OT_ID);
         battleMon.metLevel = GetMonData(&party[monId], MON_DATA_MET_LEVEL);
         battleMon.isShiny = GetMonData(&party[monId], MON_DATA_IS_SHINY);
-        battleMon.isShadow = GetMonData(&party[monId], MON_DATA_IS_SHADOW);
+        if (GetMonData(&party[monId], MON_DATA_MET_GAME) == VERSION_IDENTIFIER_NEGA)
+        {
+            battleMon.isShadow = 1;
+            SetMonData(&party[monId], MON_DATA_IS_SHADOW, &setShadow);
+        }
+        else
+        {
+            battleMon.isShadow = GetMonData(&party[monId], MON_DATA_IS_SHADOW);
+        }
+        battleMon.metGame = GetMonData(&party[monId], MON_DATA_MET_GAME);
+        battleMon.metLocation = GetMonData(&party[monId], MON_DATA_MET_LOCATION);
+        battleMon.franchiseOfOrigin = gSpeciesInfo[battleMon.species].bodyColor;
         GetMonData(&party[monId], MON_DATA_NICKNAME, nickname);
         StringCopy_Nickname(battleMon.nickname, nickname);
         GetMonData(&party[monId], MON_DATA_OT_NAME, battleMon.otName);
@@ -1643,6 +1655,10 @@ static u32 GetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId, u8 *
         dst[0] = GetMonData(&party[monId], MON_DATA_IS_SHADOW);
         size = 1;
         break;
+    case REQUEST_FRANCHISE_OF_ORIGIN_BATTLE:
+        dst[0] = gSpeciesInfo[battler].bodyColor;
+        size = 1;
+        break;
     }
 
     return size;
@@ -1863,6 +1879,8 @@ static void SetBattlerMonData(u32 battler, struct Pokemon *party, u32 monId)
         break;
     case REQUEST_IS_SHADOW_BATTLE:
         SetMonData(&party[monId], MON_DATA_IS_SHADOW, &gBattleResources->bufferA[battler][3]);
+        break;
+    case REQUEST_FRANCHISE_OF_ORIGIN_BATTLE:
         break;
     }
 

@@ -239,6 +239,9 @@ enum
     VARIOUS_SUBSTITUTE_HP,
     VARIOUS_IN_LOVE,
     VARIOUS_IS_SHADOW,
+    VARIOUS_MET_GAME,
+    VARIOUS_MET_LOCATION,
+    VARIOUS_FRANCHISE_OF_ORIGIN,
 };
 
 enum
@@ -521,6 +524,9 @@ static const struct ListMenuItem sVariousListItems[] =
     {COMPOUND_STRING("Substitute HP"), VARIOUS_SUBSTITUTE_HP},
     {COMPOUND_STRING("In Love"),       VARIOUS_IN_LOVE},
     {COMPOUND_STRING("Is Shadow"),     VARIOUS_IS_SHADOW},
+    {COMPOUND_STRING("Game of Origin"), VARIOUS_MET_GAME},
+    {COMPOUND_STRING("Met Location"),  VARIOUS_MET_LOCATION},
+    {COMPOUND_STRING("Franchise"),     VARIOUS_FRANCHISE_OF_ORIGIN},
 };
 
 static const struct ListMenuItem sSecondaryListItems[] =
@@ -2062,6 +2068,33 @@ static void SetUpModifyArrows(struct BattleDebugMenu *data)
             data->modifyArrows.typeOfVal = VAL_U8;
             data->modifyArrows.currValue = gBattleMons[data->battlerId].isShadow;
         }
+        else if (data->currentSecondaryListItemId == VARIOUS_MET_GAME)
+        {
+            data->modifyArrows.minValue = 0;
+            data->modifyArrows.maxValue = 15;
+            data->modifyArrows.maxDigits = 2;
+            data->modifyArrows.modifiedValPtr = &gBattleMons[data->battlerId].metGame;
+            data->modifyArrows.typeOfVal = VAL_U8;
+            data->modifyArrows.currValue = gBattleMons[data->battlerId].metGame;
+        }
+        else if (data->currentSecondaryListItemId == VARIOUS_MET_LOCATION)
+        {
+            data->modifyArrows.minValue = 0;
+            data->modifyArrows.maxValue = 255;
+            data->modifyArrows.maxDigits = 3;
+            data->modifyArrows.modifiedValPtr = &gBattleMons[data->battlerId].metLocation;
+            data->modifyArrows.typeOfVal = VAL_U8;
+            data->modifyArrows.currValue = gBattleMons[data->battlerId].metLocation;
+        }
+        else if (data->currentSecondaryListItemId == VARIOUS_FRANCHISE_OF_ORIGIN)
+        {
+            data->modifyArrows.minValue = 0;
+            data->modifyArrows.maxValue = 8;
+            data->modifyArrows.maxDigits = 1;
+            data->modifyArrows.modifiedValPtr = &gBattleMons[data->battlerId].franchiseOfOrigin;
+            data->modifyArrows.typeOfVal = VAL_U8;
+            data->modifyArrows.currValue = gBattleMons[data->battlerId].franchiseOfOrigin;
+        }
         break;
     case LIST_ITEM_STATUS1:
         data->modifyArrows.modifiedValPtr = &gBattleMons[data->battlerId].status1;
@@ -2225,6 +2258,9 @@ static void UpdateMonData(struct BattleDebugMenu *data)
             SetMonData(mon, MON_DATA_STATUS, &battleMon->status1);
             SetMonData(mon, MON_DATA_HP, &battleMon->hp);
             SetMonData(mon, MON_DATA_MAX_HP, &battleMon->maxHP);
+            SetMonData(mon, MON_DATA_IS_SHADOW, &battleMon->isShadow);
+            SetMonData(mon, MON_DATA_MET_GAME, &battleMon->metGame);
+            SetMonData(mon, MON_DATA_MET_LOCATION, &battleMon->metLocation);
             for (j = 0; j < 4; j++)
                 SetMonData(mon, MON_DATA_MOVE1 + j, &battleMon->moves[j]);
         }

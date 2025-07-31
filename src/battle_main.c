@@ -6113,7 +6113,7 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
                     return TYPE_NEW_FIRE;
                 else if (gBattleWeather & (B_WEATHER_SNOW | B_WEATHER_HAIL))
                     return TYPE_NEW_ICE;
-                else if (gBattleWeather & B_WEATHER_SHADOW_SKY)
+                else if (gBattleWeather & B_WEATHER_EX_SHADOW_SKY)
                     return TYPE_NEW_MYSTERY;
                 else
                     return moveType;

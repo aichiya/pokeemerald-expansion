@@ -2834,10 +2834,10 @@ static void Cmd_ppreduce(void)
              ppToDeduct++;
     }
 
-    if(GetMoveEffect(gCurrentMove) == EFFECT_SHADOW_MOVE_HIT
-     || GetMoveEffect(gCurrentMove) == EFFECT_SHADOW_MOVE_HALF
-     || GetMoveEffect(gCurrentMove) == EFFECT_SHADOW_MOVE_RECOIL
-     || GetMoveEffect(gCurrentMove) == EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP)
+    if(GetMoveEffect(gCurrentMove) == EFFECT_EX_SHADOW_MOVE_HIT
+     || GetMoveEffect(gCurrentMove) == EFFECT_EX_SHADOW_MOVE_HALF
+     || GetMoveEffect(gCurrentMove) == EFFECT_EX_SHADOW_MOVE_RECOIL
+     || GetMoveEffect(gCurrentMove) == EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP)
         ppToDeduct = 0;
 
     if (!(gHitMarker & (HITMARKER_NO_PPDEDUCT | HITMARKER_NO_ATTACKSTRING)) && gBattleMons[gBattlerAttacker].pp[gCurrMovePos])
@@ -5117,7 +5117,7 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
             gBattlescriptCurrInstr = BattleScript_EffectLowerStatFoes;
         }
         break;
-    case MOVE_EFFECT_SHADOW_SKY:
+    case MOVE_EFFECT_EX_SHADOW_SKY:
     case MOVE_EFFECT_SUN:
     case MOVE_EFFECT_RAIN:
     case MOVE_EFFECT_SANDSTORM:
@@ -5126,9 +5126,9 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
         u8 weather = 0, msg = 0;
         switch (gBattleScripting.moveEffect)
         {
-            case MOVE_EFFECT_SHADOW_SKY:
-                weather = BATTLE_WEATHER_SHADOW_SKY;
-                msg = B_MSG_STARTED_SHADOW_SKY;
+            case MOVE_EFFECT_EX_SHADOW_SKY:
+                weather = BATTLE_WEATHER_EX_SHADOW_SKY;
+                msg = B_MSG_STARTED_EX_SHADOW_SKY;
                 break;
             case MOVE_EFFECT_SUN:
                 weather = BATTLE_WEATHER_SUN;
@@ -7191,7 +7191,7 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
             effect = TRUE;
         }
         break;
-    case EFFECT_SHADOW_MOVE_RECOIL:
+    case EFFECT_EX_SHADOW_MOVE_RECOIL:
         if (IsBattlerTurnDamaged(gBattlerTarget) && IsBattlerAlive(gBattlerAttacker))
         {
             gBattleStruct->moveDamage[gBattlerAttacker] = max(1, gBattleScripting.savedDmg * max(1, GetMoveRecoil(gCurrentMove)) / 100);
@@ -7199,7 +7199,7 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
             effect = TRUE;
         }
         break;
-    case EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP:
+    case EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP:
         if (IsBattlerTurnDamaged(gBattlerTarget) && IsBattlerAlive(gBattlerAttacker))
         {
             gBattleStruct->moveDamage[gBattlerAttacker] = max(1, GetNonDynamaxHP(gBattlerAttacker) * max(1, GetMoveRecoil(gCurrentMove)) / 100);
@@ -7233,7 +7233,7 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
             effect = TRUE;
         }
         break;
-    case EFFECT_SHADOW_MOVE_HALF:
+    case EFFECT_EX_SHADOW_MOVE_HALF:
         if (IsBattlerTurnDamaged(gBattlerTarget) && IsBattlerAlive(gBattlerAttacker))
         {
             gBattleStruct->moveDamage[gBattlerAttacker] = (GetNonDynamaxHP(gBattlerAttacker) + 1) / 2; // Half of Max HP Rounded UP
@@ -10526,8 +10526,8 @@ static void RemoveAllWeather(void)
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_SNOW;
     else if (gBattleWeather & B_WEATHER_FOG)
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_FOG;
-    else if (gBattleWeather & B_WEATHER_SHADOW_SKY)
-        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_SHADOW_SKY;
+    else if (gBattleWeather & B_WEATHER_EX_SHADOW_SKY)
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_EX_SHADOW_SKY;
     else
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_COUNT;  // failsafe
 
@@ -11152,8 +11152,8 @@ static void Cmd_setfieldweather(void)
     case BATTLE_WEATHER_SNOW:
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SNOW;
         break;
-    case BATTLE_WEATHER_SHADOW_SKY:
-        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SHADOW_SKY;
+    case BATTLE_WEATHER_EX_SHADOW_SKY:
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_EX_SHADOW_SKY;
         break;
     }
 

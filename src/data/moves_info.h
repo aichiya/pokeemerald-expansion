@@ -28450,13 +28450,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
 // ============= Start Shadow Moves ===================
 
-    [MOVE_SHADOW_BLITZ] =
+    [MOVE_EX_SHADOW_BLITZ] =
     {
         .name = COMPOUND_STRING("Shadow Blitz"),
         .description = COMPOUND_STRING(
             "A standard darkness-powered\n"
             "move."),
-        .effect = EFFECT_SHADOW_MOVE_HIT,
+        .effect = EFFECT_EX_SHADOW_MOVE_HIT,
         .power = 40,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28475,13 +28475,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Pound,
     },
 
-    [MOVE_SHADOW_RUSH] =
+    [MOVE_EX_SHADOW_RUSH] =
     {
         .name = COMPOUND_STRING("Shadow Rush"),
         .description = COMPOUND_STRING(
             "A reckless charge attack\n"
             "that also hurts the user."),
-        .effect = EFFECT_SHADOW_MOVE_RECOIL,
+        .effect = EFFECT_EX_SHADOW_MOVE_RECOIL,
         .power = 90,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28500,13 +28500,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_TakeDown,
     },
 	
-    [MOVE_SHADOW_BREAK] =
+    [MOVE_EX_SHADOW_BREAK] =
     {
         .name = COMPOUND_STRING("Shadow Break"),
         .description = COMPOUND_STRING(
             "A full-body slam powered\n"
             "with darkness."),
-        .effect = EFFECT_SHADOW_MOVE_HIT,
+        .effect = EFFECT_EX_SHADOW_MOVE_HIT,
         .power = 75,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28524,13 +28524,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_BodySlam,
     },
 	
-    [MOVE_SHADOW_END] =
+    [MOVE_EX_SHADOW_END] =
     {
         .name = COMPOUND_STRING("Shadow End"),
         .description = COMPOUND_STRING(
             "A life-risking smash after\n"
             "succumbed by darkness."),
-        .effect = EFFECT_SHADOW_MOVE_RECOIL_CURRENT_HP,
+        .effect = EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP,
         .power = 120,
         .type = TYPE_MYSTERY,
         .accuracy = 60,
@@ -28549,13 +28549,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_HeadSmash,
     },
 
-    [MOVE_SHADOW_WAVE] =
+    [MOVE_EX_SHADOW_WAVE] =
     {
         .name = COMPOUND_STRING("Shadow Wave"),
         .description = COMPOUND_STRING(
             "Attacks foes with\n"
             "wave of darkness energy."),
-        .effect = EFFECT_SHADOW_MOVE_HIT,
+        .effect = EFFECT_EX_SHADOW_MOVE_HIT,
         .power = 50,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28572,13 +28572,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_PoisonGas,
     },
 
-    [MOVE_SHADOW_RAVE] =
+    [MOVE_EX_SHADOW_RAVE] =
     {
         .name = COMPOUND_STRING("Shadow Rave"),
         .description = COMPOUND_STRING(
             "Damages foes by emitting\n"
             "a deep darkness."),
-        .effect = EFFECT_SHADOW_MOVE_HIT,
+        .effect = EFFECT_EX_SHADOW_MOVE_HIT,
         .power = 70,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28595,13 +28595,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_DazzlingGleam,
     },
 
-    [MOVE_SHADOW_STORM] =
+    [MOVE_EX_SHADOW_STORM] =
     {
         .name = COMPOUND_STRING("Shadow Storm"),
         .description = COMPOUND_STRING(
             "Whips up a darkness tornado\n"
             "to tear at foes."),
-        .effect = EFFECT_SHADOW_MOVE_HIT,
+        .effect = EFFECT_EX_SHADOW_MOVE_HIT,
         .power = 95,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28619,13 +28619,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Twister,
     },
 
-    [MOVE_SHADOW_FIRE] =
+    [MOVE_EX_SHADOW_FIRE] =
     {
         .name = COMPOUND_STRING("Shadow Fire"),
         .description = COMPOUND_STRING(
             "A dark fire attack that\n"
             "may inflict a burn."),
-        .effect = EFFECT_SHADOW_MOVE_HIT,
+        .effect = EFFECT_EX_SHADOW_MOVE_HIT,
         .power = 75,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28646,13 +28646,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_ShadowFire,
     },
 
-    [MOVE_SHADOW_BOLT] =
+    [MOVE_EX_SHADOW_BOLT] =
     {
         .name = COMPOUND_STRING("Shadow Bolt"),
         .description = COMPOUND_STRING(
             "A dark electric attack\n"
             "that may paralyze the foe."),
-        .effect = EFFECT_SHADOW_MOVE_HIT,
+        .effect = EFFECT_EX_SHADOW_MOVE_HIT,
         .power = 75,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28673,13 +28673,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_ShadowBolt,
     },
 
-    [MOVE_SHADOW_CHILL] =
+    [MOVE_EX_SHADOW_CHILL] =
     {
         .name = COMPOUND_STRING("Shadow Chill"),
         .description = COMPOUND_STRING(
             "Blasts the foe with an icy\n"
             "beam. May cause frostbite."),
-        .effect = EFFECT_SHADOW_MOVE_HIT,
+        .effect = EFFECT_EX_SHADOW_MOVE_HIT,
         .power = 75,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28700,13 +28700,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_ShadowChill,
     },
 
-    [MOVE_SHADOW_BLAST] =
+    [MOVE_EX_SHADOW_BLAST] =
     {
         .name = COMPOUND_STRING("Shadow Blast"),
         .description = COMPOUND_STRING(
             "Wicked dark windy blades.\n"
             "High critical-hit ratio."),
-        .effect = EFFECT_SHADOW_MOVE_HIT,
+        .effect = EFFECT_EX_SHADOW_MOVE_HIT,
         .power = 80,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -28726,13 +28726,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Aeroblast,
     },
 
-    [MOVE_SHADOW_SKY] =
+    [MOVE_EX_SHADOW_SKY] =
     {
         .name = COMPOUND_STRING("Shadow Sky"),
         .description = COMPOUND_STRING(
             "Powers up shadow types,\n"
             "and hurts non-shadow."),
-        .effect = EFFECT_SHADOW_MOVE_SKY,
+        .effect = EFFECT_EX_SHADOW_MOVE_SKY,
         .power = 0,
         .type = TYPE_MYSTERY,
         .accuracy = 0,
@@ -28751,7 +28751,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_ShadowSky,
     },
 
-    [MOVE_SHADOW_HOLD] =
+    [MOVE_EX_SHADOW_HOLD] =
     {
         .name = COMPOUND_STRING("Shadow Hold"),
         .description = COMPOUND_STRING(
@@ -28776,7 +28776,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_FairyLock,
     },
 
-    [MOVE_SHADOW_MIST] =
+    [MOVE_EX_SHADOW_MIST] =
     {
         .name = COMPOUND_STRING("Shadow Mist"),
         .description = COMPOUND_STRING(
@@ -28801,7 +28801,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Mist,
     },
 
-    [MOVE_SHADOW_PANIC] =
+    [MOVE_EX_SHADOW_PANIC] =
     {
         .name = COMPOUND_STRING("Shadow Panic"),
         .description = COMPOUND_STRING(
@@ -28827,7 +28827,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_HyperVoice,
     },
 
-    [MOVE_SHADOW_DOWN] =
+    [MOVE_EX_SHADOW_DOWN] =
     {
         .name = COMPOUND_STRING("Shadow Down"),
         .description = COMPOUND_STRING(
@@ -28852,7 +28852,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_DestinyBond,
     },
 
-    [MOVE_SHADOW_SHED] =
+    [MOVE_EX_SHADOW_SHED] =
     {
         .name = COMPOUND_STRING("Shadow Shed"),
         .description = COMPOUND_STRING(
@@ -28876,13 +28876,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Defog,
     },
 
-    [MOVE_SHADOW_HALF] =
+    [MOVE_EX_SHADOW_HALF] =
     {
         .name = COMPOUND_STRING("Shadow Half"),
         .description = COMPOUND_STRING(
             "Halves all battler's HP\n"
             "by the power of darkness."),
-        .effect = EFFECT_SHADOW_MOVE_HALF,
+        .effect = EFFECT_EX_SHADOW_MOVE_HALF,
         .power = 1,
         .type = TYPE_MYSTERY,
         .accuracy = 100,

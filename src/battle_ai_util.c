@@ -317,7 +317,7 @@ bool32 ShouldRecordStatusMove(u32 move)
         // Low odds
         case EFFECT_ENTRAINMENT:
         case EFFECT_FIXED_PERCENT_DAMAGE:
-        case EFFECT_SHADOW_MOVE_HALF:
+        case EFFECT_EX_SHADOW_MOVE_HALF:
         case EFFECT_GASTRO_ACID:
         case EFFECT_IMPRISON:
         case EFFECT_TELEPORT:
@@ -3849,7 +3849,7 @@ bool32 IsMoveEffectWeather(u32 move)
       || effect == EFFECT_HAIL
       || effect == EFFECT_SNOWSCAPE
       || effect == EFFECT_CHILLY_RECEPTION
-      || effect == EFFECT_SHADOW_MOVE_SKY))
+      || effect == EFFECT_EX_SHADOW_MOVE_SKY))
         return TRUE;
     return FALSE;
 }

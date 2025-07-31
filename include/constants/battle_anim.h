@@ -609,9 +609,9 @@
 #define B_ANIM_SIMPLE_HEAL              52
 #define B_ANIM_POWER_CONSTRUCT          53
 #define B_ANIM_COUNTER_SLASH            54
-#define B_ANIM_SHADOW_SKY_CONTINUES     55
+#define B_ANIM_EX_SHADOW_SKY_CONTINUES     55
 
-#define LAST_B_ANIMS_GENERAL            B_ANIM_SHADOW_SKY_CONTINUES
+#define LAST_B_ANIMS_GENERAL            B_ANIM_EX_SHADOW_SKY_CONTINUES
 #define NUM_B_ANIMS_GENERAL             (LAST_B_ANIMS_GENERAL + 1)
 
 // special animations table (sBattleAnims_Special)

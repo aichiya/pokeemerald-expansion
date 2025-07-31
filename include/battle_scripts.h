@@ -562,7 +562,7 @@ extern const u8 BattleScript_EffectGrimoireCall[];
 extern const u8 BattleScript_TsubameGaeshiActivates[];
 extern const u8 BattleScript_MiasmaSurgeActivates[];
 extern const u8 BattleScript_EffectMiasmaTerrain[];
-extern const u8 BattleScript_EffectShadowSky[];
+extern const u8 BattleScript_EffectExShadowSky[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];
@@ -907,6 +907,6 @@ extern const u8 BattleScript_WishMegaEvolutionIllya[];
 extern const u8 BattleScript_EffectGaiaForce[];
 extern const u8 BattleScript_EffectAstromancy[];
 extern const u8 BattleScript_EffectSpAtkSpDefUp2[];
-extern const u8 BattleScript_ShadowSkyHeal[];
+extern const u8 BattleScript_ExShadowSkyHeal[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

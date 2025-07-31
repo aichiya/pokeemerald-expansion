@@ -928,10 +928,10 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_MIASMATERRAINENDS]                    = COMPOUND_STRING("The miasma disappeared from the battlefield."),
     [STRINGID_READINGTHESTARFORMATION]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is reading the star formation!"),
     [STRINGID_FLASHINGLIGHTSKTIKESPKMN]             = COMPOUND_STRING("The flashing light strikes {B_ATK_NAME_WITH_PREFIX}!"),
-    [STRINGID_RECOVEREDBYSHADOWSKY]                 = COMPOUND_STRING("The flashing light recovered {B_ATK_NAME_WITH_PREFIX}!"),
-    [STRINGID_SHADOWYAURAFILLED]                    = COMPOUND_STRING("A shadowy aura filled the sky!"),
-    [STRINGID_DARKNESSDISAPPEARED]                  = COMPOUND_STRING("The shadowy aura disappeared from the sky!"),
-    [STRINGID_SHADOWYAURADEEPEN]                    = COMPOUND_STRING("The shadowy aura continously stays on the sky!"),
+    [STRINGID_RECOVEREDBYEXSHADOWSKY]               = COMPOUND_STRING("The flashing light recovered {B_ATK_NAME_WITH_PREFIX}!"),
+    [STRINGID_EXSHADOWYAURAFILLED]                  = COMPOUND_STRING("A shadowy aura filled the sky!"),
+    [STRINGID_EXSHADOWDISAPPEARED]                  = COMPOUND_STRING("The shadowy aura disappeared from the sky!"),
+    [STRINGID_EXSHADOWYAURADEEPEN]                  = COMPOUND_STRING("The shadowy aura continously stays on the sky!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1070,7 +1070,7 @@ const u16 gMoveWeatherChangeStringIds[] =
     [B_MSG_STARTED_HAIL]      = STRINGID_STARTEDHAIL,
     [B_MSG_STARTED_SNOW]      = STRINGID_STARTEDSNOW,
     [B_MSG_STARTED_FOG]       = STRINGID_FOGCREPTUP, // Unused, can use for custom moves that set fog
-    [B_MSG_STARTED_SHADOW_SKY] = STRINGID_SHADOWYAURAFILLED,
+    [B_MSG_STARTED_EX_SHADOW_SKY] = STRINGID_EXSHADOWYAURAFILLED,
 };
 
 const u16 gWeatherEndsStringIds[B_MSG_WEATHER_END_COUNT] =
@@ -1082,7 +1082,7 @@ const u16 gWeatherEndsStringIds[B_MSG_WEATHER_END_COUNT] =
     [B_MSG_WEATHER_END_SNOW]         = STRINGID_SNOWSTOPPED,
     [B_MSG_WEATHER_END_FOG]          = STRINGID_FOGLIFTED,
     [B_MSG_WEATHER_END_STRONG_WINDS] = STRINGID_STRONGWINDSDISSIPATED,
-    [B_MSG_WEATHER_END_SHADOW_SKY]   = STRINGID_DARKNESSDISAPPEARED,
+    [B_MSG_WEATHER_END_EX_SHADOW_SKY]   = STRINGID_EXSHADOWDISAPPEARED,
 };
 
 const u16 gWeatherTurnStringIds[] =
@@ -1095,14 +1095,14 @@ const u16 gWeatherTurnStringIds[] =
     [B_MSG_WEATHER_TURN_SNOW]         = STRINGID_SNOWCONTINUES,
     [B_MSG_WEATHER_TURN_FOG]          = STRINGID_FOGISDEEP,
     [B_MSG_WEATHER_TURN_STRONG_WINDS] = STRINGID_MYSTERIOUSAIRCURRENTBLOWSON,
-    [B_MSG_WEATHER_TURN_SHADOW_SKY]   = STRINGID_SHADOWYAURADEEPEN,
+    [B_MSG_WEATHER_TURN_EX_SHADOW_SKY]   = STRINGID_EXSHADOWYAURADEEPEN,
 };
 
 const u16 gSandStormHailDmgStringIds[] =
 {
     [B_MSG_SANDSTORM] = STRINGID_PKMNBUFFETEDBYSANDSTORM,
     [B_MSG_HAIL]      = STRINGID_PKMNPELTEDBYHAIL,
-    [B_MSG_SHADOWSKY] = STRINGID_FLASHINGLIGHTSKTIKESPKMN
+    [B_MSG_EXSHADOWSKY] = STRINGID_FLASHINGLIGHTSKTIKESPKMN
 };
 
 const u16 gProtectLikeUsedStringIds[] =

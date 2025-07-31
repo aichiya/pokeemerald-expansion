@@ -270,7 +270,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
             }
         }
         break;
-    case BATTLE_WEATHER_SHADOW_SKY:
+    case BATTLE_WEATHER_EX_SHADOW_SKY:
         if (!(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
          && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
          && !gBattleMons[battler].isShadow)
@@ -278,7 +278,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
             gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 16;
             if (gBattleStruct->moveDamage[battler] == 0)
                 gBattleStruct->moveDamage[battler] = 1;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SHADOWSKY;
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_EXSHADOWSKY;
             BattleScriptExecute(BattleScript_DamagingWeather);
             effect = TRUE;
         }
@@ -289,7 +289,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
              && !(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
              && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
             {
-                BattleScriptPushCursorAndCallback(BattleScript_ShadowSkyHeal);
+                BattleScriptPushCursorAndCallback(BattleScript_ExShadowSkyHeal);
                 gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 16;
                 if (gBattleStruct->moveDamage[battler] == 0)
                     gBattleStruct->moveDamage[battler] = 1;
@@ -298,7 +298,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
             }
         }
         break;
-    case BATTLE_WEATHER_SHADOW_SKY_DEEP:
+    case BATTLE_WEATHER_EX_SHADOW_SKY_DEEP:
         if (!(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
          && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
          && !gBattleMons[battler].isShadow)
@@ -306,7 +306,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
             gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
             if (gBattleStruct->moveDamage[battler] == 0)
                 gBattleStruct->moveDamage[battler] = 1;
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SHADOWSKY;
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_EXSHADOWSKY;
             BattleScriptExecute(BattleScript_DamagingWeather);
             effect = TRUE;
         }
@@ -317,7 +317,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
              && !(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
              && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
             {
-                BattleScriptPushCursorAndCallback(BattleScript_ShadowSkyHeal);
+                BattleScriptPushCursorAndCallback(BattleScript_ExShadowSkyHeal);
                 gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
                 if (gBattleStruct->moveDamage[battler] == 0)
                     gBattleStruct->moveDamage[battler] = 1;

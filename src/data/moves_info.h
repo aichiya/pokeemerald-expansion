@@ -23362,7 +23362,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
-        .battleAnimScript = gBattleAnimMove_Flamethrower,
+        .battleAnimScript = gBattleAnimMove_ClassicFlamethrower,
     },
 
     [MOVE_CLASSIC_MIST] =
@@ -23612,7 +23612,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_HyperBeam,
+        .battleAnimScript = gBattleAnimMove_ClassicHyperBeam,
     },
 
     [MOVE_CLASSIC_PECK] = // MOVE_NEW_CLASSIC_FEATHER_JAB
@@ -24167,7 +24167,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_CHARGE},
-        .battleAnimScript = gBattleAnimMove_Thunderbolt,
+        .battleAnimScript = gBattleAnimMove_ClassicThunderbolt,
     },
 
     [MOVE_CLASSIC_THUNDER_WAVE] =
@@ -25416,7 +25416,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Amnesia,
+        .battleAnimScript = gBattleAnimMove_ClassicAmnesia,
     },
 
     [MOVE_CLASSIC_KINESIS] = // MOVE_NEw_CLASSIC_LUNA_DIAL

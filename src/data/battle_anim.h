@@ -1481,6 +1481,13 @@ const struct CompressedSpriteSheet gBattleAnimPicTable[] =
     {gBattleAnimSpriteGfx_GaiaForce, 0x0800, ANIM_TAG_GAIA_FORCE_OF_DARKNESS},
     {gBattleAnimSpriteGfx_GaiaForce, 0x0800, ANIM_TAG_POSEIDON_FORCE},
     {gBattleAnimSpriteGfx_Explosion, 0x0800, ANIM_TAG_EXPLOSION_PURPLE},
+    {gBattleAnimSpriteGfx_ClassicOrb, 0x0180, ANIM_TAG_CLASSIC_ORB},
+    {gBattleAnimSpriteGfx_ClassicLaserBeam, 0x0100, ANIM_TAG_CLASSIC_LASER_BEAM},
+    {gBattleAnimSpriteGfx_ClassicFire, 0x1000, ANIM_TAG_CLASSIC_FIRE},
+    {gBattleAnimSpriteGfx_ClassicLightning, 0x0A00, ANIM_TAG_CLASSIC_LIGHTNING},
+    {gBattleAnimSpriteGfx_ClassicLightning2, 0x0800, ANIM_TAG_CLASSIC_LIGHTNING_2},
+    {gBattleAnimSpriteGfx_ClassicExplosion, 0x0800, ANIM_TAG_CLASSIC_EXPLOSION},
+    {gBattleAnimSpriteGfx_ClassicAmnesia, 0x0200, ANIM_TAG_CLASSIC_AMNESIA},
 };
 
 const struct SpritePalette gBattleAnimPaletteTable[] =
@@ -1963,6 +1970,13 @@ const struct SpritePalette gBattleAnimPaletteTable[] =
     {gBattleAnimSpritePal_GaiaForceDarkness, ANIM_TAG_GAIA_FORCE_OF_DARKNESS},
     {gBattleAnimSpritePal_GaiaForcePoseidon, ANIM_TAG_POSEIDON_FORCE},
     {gBattleAnimSpritePal_ExplosionPurple, ANIM_TAG_EXPLOSION_PURPLE},
+    {gBattleAnimSpritePal_ClassicOrb, ANIM_TAG_CLASSIC_ORB},
+    {gBattleAnimSpritePal_ClassicLaserBeam, ANIM_TAG_CLASSIC_LASER_BEAM},
+    {gBattleAnimSpritePal_ClassicFire, ANIM_TAG_CLASSIC_FIRE},
+    {gBattleAnimSpritePal_ClassicLightning, ANIM_TAG_LIGHTNING},
+    {gBattleAnimSpritePal_ClassicLightning2, ANIM_TAG_LIGHTNING_2},
+    {gBattleAnimSpritePal_ClassicExplosion, ANIM_TAG_CLASSIC_EXPLOSION},
+    {gBattleAnimSpritePal_ClassicAmnesia, ANIM_TAG_CLASSIC_AMNESIA},
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =

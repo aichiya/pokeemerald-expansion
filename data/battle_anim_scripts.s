@@ -22967,6 +22967,181 @@ gBattleAnimMove_ShadowSky::
 	blendoff
 	end
 
+gBattleAnimMove_ClassicHyperBeam::
+	@loadspritegfx ANIM_TAG_ORBS
+	loadspritegfx ANIM_TAG_RAINBOW_RINGS
+	loadspritegfx ANIM_TAG_IMPACT
+	@monbg ANIM_DEF_PARTNER
+	@splitbgprio_foes ANIM_TARGET
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	@createsprite gClassicOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	@delay 1
+	@createsprite gClassicOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	@delay 1
+	@createsprite gClassicOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	waitforvisualfinish
+	@clearmonbg ANIM_DEF_PARTNER
+	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_ATTACKER
+	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_HYPER_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 1, 15, 0, 5
+	call gBattleAnimMove_ClassicLaserBeamCreateTube
+	waitforvisualfinish
+	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, 8, ANIM_TARGET, 2
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 2
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 8, -8, ANIM_TARGET, 2
+	delay 8
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
+	waitforvisualfinish
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	end
+gBattleAnimMove_ClassicLaserBeamCreateTube:
+	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	return
+
+gBattleAnimMove_ClassicFlamethrower::
+	loadspritegfx ANIM_TAG_CLASSIC_FIRE
+	playsewithpan SE_M_DRAGON_RAGE, SOUND_PAN_ATTACKER
+	call gBattleAnimMove_ClassicFlamethrowerSpray
+	waitforvisualfinish
+	createsprite gClassicSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
+	delay 16
+	createsprite gClassicSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
+	createsprite gClassicSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 0, 48, 30, 160, 0
+	waitforvisualfinish
+	end
+gBattleAnimMove_ClassicFlamethrowerSpray:
+	createsprite gClassicFlamethrowerSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 5
+	createsprite gClassicFlamethrowerSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 5
+	createsprite gClassicFlamethrowerSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 5
+	createsprite gClassicFlamethrowerSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 5
+	createsprite gClassicFlamethrowerSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 5
+	createsprite gClassicFlamethrowerSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	return
+
+gBattleAnimMove_ClassicThunderbolt::
+	loadspritegfx ANIM_TAG_CLASSIC_LIGHTNING
+	loadspritegfx ANIM_TAG_CLASSIC_EXPLOSION
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	playsewithpan SE_M_EARTHQUAKE, SOUND_PAN_TARGET
+	createsprite gClassicRBLightningBallSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -32, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -24, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,   4,  32, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,   4,  24, 0, 1
+	delay 1
+	playsewithpan SE_M_EARTHQUAKE, SOUND_PAN_TARGET
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -32,   4, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -24,   4, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  32,  -4, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  24,  -4, 0, 1
+	delay 1
+	playsewithpan SE_M_EARTHQUAKE, SOUND_PAN_TARGET
+	delay 1
+	playsewithpan SE_M_EARTHQUAKE, SOUND_PAN_TARGET
+	delay 1
+	playsewithpan SE_M_EARTHQUAKE, SOUND_PAN_TARGET
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -20, -28, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -12, -20, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  20,  28, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  12,  20, 0, 1
+	delay 1
+	playsewithpan SE_M_EARTHQUAKE, SOUND_PAN_TARGET
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -20,  28, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -12,  20, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  20, -28, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  12, -20, 0, 1
+	delay 3
+	call gBattleAnimMove_ClassicThunderBoltLoop
+	call gBattleAnimMove_ClassicThunderBoltLoop
+	call gBattleAnimMove_ClassicThunderBoltLoop
+	call gBattleAnimMove_ClassicThunderBoltLoop
+	call gBattleAnimMove_ClassicThunderBoltLoop
+	call gBattleAnimMove_ClassicThunderBoltLoop
+	call gBattleAnimMove_ClassicThunderBoltLoop
+	call gBattleAnimMove_ClassicThunderBoltLoop
+	delay 6
+	clearmonbg ANIM_TARGET
+	blendoff
+	end
+gBattleAnimMove_ClassicThunderBoltLoop:
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gClassicRBLightningBallSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -32, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -24, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,   4,  32, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,   4,  24, 0, 1
+	delay 1
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -32,   4, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -24,   4, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  32,  -4, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  24,  -4, 0, 1
+	delay 3
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -20, -28, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -12, -20, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  20,  28, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  12,  20, 0, 1
+	delay 1
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -20,  28, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -12,  20, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  20, -28, 0, 1
+	createsprite gClassicRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  12, -20, 0, 1
+	delay 3
+	return
+
+gBattleAnimMove_ClassicAmnesia::
+	loadspritegfx ANIM_TAG_CLASSIC_AMNESIA
+	monbg ANIM_ATTACKER
+	splitbgprio ANIM_ATTACKER
+	setalpha 8, 8
+	createsprite gClassicQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 16, -16, 30
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
+	delay 15
+	createsprite gClassicQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 32, 0, 30
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
+	waitforvisualfinish
+	createsprite gClassicQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 16, -16, 30
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
+	delay 15
+	createsprite gClassicQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 32, 0, 30
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
+	waitforvisualfinish
+	clearmonbg ANIM_ATTACKER
+	blendoff
+	end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
 gBattleAnimMove_MirrorMove::

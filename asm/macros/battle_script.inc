@@ -1208,13 +1208,9 @@
 	.4byte \failInstr
 	.endm
 
-@	.macro unused2 ptr:req
-@	.byte 0xe1
-@	.4byte \ptr
-@	.endm
-
-	.macro transformdataexecutiondecade
+	.macro unused2 ptr:req
 	.byte 0xe1
+	.4byte \ptr
 	.endm
 
 	.macro switchoutabilities battler:req
@@ -1952,6 +1948,10 @@
 
 	.macro trygrimoirecall
 	callnative BS_TryGrimoireCall
+	.endm
+
+	.macro transformdataexecutiondecade
+	callnative BS_TransformDataExecutionDecade
 	.endm
 
 	.macro jumpifroarfails jumpInstr:req

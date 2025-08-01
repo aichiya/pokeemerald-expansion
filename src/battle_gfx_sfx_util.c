@@ -1014,7 +1014,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
         if (IsContest())
         {
             position = B_POSITION_PLAYER_LEFT;
-            targetSpecies = VarGet(VAR_UNUSED_0x40F8);
+            targetSpecies = gDisableStructs[gBattlerAttacker].transformationDCDTemp;
             personalityValue = gContestResources->moveAnim->personality;
             isShiny = gContestResources->moveAnim->isShiny;
 
@@ -1026,11 +1026,11 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
         else
         {
             position = GetBattlerPosition(battlerAtk);
-            targetSpecies = VarGet(VAR_UNUSED_0x40F8);
+            targetSpecies = gDisableStructs[gBattlerAttacker].transformationDCDTemp;
             personalityValue = GetMonData(monAtk, MON_DATA_PERSONALITY);
             isShiny = GetMonData(monAtk, MON_DATA_IS_SHINY);
             
-            HandleLoadSpecialPokePic(!IsOnPlayerSide(battlerDef),
+            HandleLoadSpecialPokePic(!IsOnPlayerSide(battlerAtk),
                                     gMonSpritesGfxPtr->spritesGfx[position],
                                     targetSpecies,
                                     personalityValue);
@@ -1160,7 +1160,6 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
         gSprites[gBattlerSpriteIds[battlerAtk]].y = GetBattlerSpriteDefault_Y(battlerAtk);
         StartSpriteAnim(&gSprites[gBattlerSpriteIds[battlerAtk]], 0);
     }
-	VarSet(VAR_UNUSED_0x40F8, 0);
 }
 
 void BattleLoadSubstituteOrMonSpriteGfx(u8 battler, bool8 loadMonSprite)

@@ -5360,7 +5360,8 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(SE_TH_PICHUUN)                \
     X(SE_TH_SPELL)                  \
     X(SE_YYYI_JUKAI_WARNING)        \
-    X(SE_ETC_ZERONOS)
+    X(SE_ETC_ZERONOS)               \
+    X(SE_M_CLASSIC_HYPER_BEAM)
 
 // Create BGM list
 #define X(songId) static const u8 sBGMName_##songId[] = _(#songId);

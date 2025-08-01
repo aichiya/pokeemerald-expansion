@@ -3100,7 +3100,8 @@ bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u32 a
         if (IsBattleMoveStatus(move))
         {
             if (!(GetBattlerMoveTargetType(battlerAtk, move) & (MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_ALL_BATTLERS))
-             && GetMoveEffect(move) != EFFECT_GRIMOIRE_CALL)
+             && GetMoveEffect(move) != EFFECT_GRIMOIRE_CALL
+             && GetMoveEffect(move) != EFFECT_A_TRANCE)
                 battleScriptBlocksMove = BattleScript_GoodAsGoldActivates;
         }
         break;

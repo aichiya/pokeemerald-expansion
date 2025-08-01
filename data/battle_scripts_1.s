@@ -55,7 +55,7 @@ BattleScript_EffectATrance::
 	waitanimation
 	printfromtable gTransformUsedStringIds
 	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
+	jumptocalledmove TRUE
 
 BattleScript_EffectUltraInstinct::
 	attackcanceler

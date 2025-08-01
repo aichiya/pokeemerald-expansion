@@ -4,8 +4,8 @@ voicegroup900::
 	stream_directsound 60, 0, DirectSoundWaveData_se_th_spell, 255, 0, 255, 0             @ 001 | --- |
 	stream_directsound 60, 0, DirectSoundWaveData_se_yyyi_jukai_warning, 255, 0, 255, 0   @ 002 | --- |
 	stream_directsound 60, 0, DirectSoundWaveData_se_etc_zeronos, 255, 0, 255, 0          @ 003 | --- |
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 004 | --- | 
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 005 | --- | 
+	voice_square_2_alt 60, 0, 2, 0, 7, 15, 0                                               @ 004 | --- | 
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_1, 0, 7, 15, 0                @ 005 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 006 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 007 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 008 | --- | 

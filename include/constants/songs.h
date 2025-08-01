@@ -281,7 +281,8 @@
 #define SE_TH_SPELL                 271
 #define SE_YYYI_JUKAI_WARNING       272
 #define SE_ETC_ZERONOS              273
-#define END_SE                      SE_ETC_ZERONOS
+#define SE_M_CLASSIC_HYPER_BEAM     274
+#define END_SE                      SE_M_CLASSIC_HYPER_BEAM
 
 // Music
 #define START_MUS                   350

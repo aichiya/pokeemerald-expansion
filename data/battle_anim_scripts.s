@@ -22434,7 +22434,7 @@ gBattleAnimMove_GrimoireCall::
 	waitforvisualfinish
 	delay 7
 	createsprite gHexagramSpriteTemplate, ANIM_ATTACKER, 41, 0, 0, 0, 0
-	loopsewithpan SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER, 5, 8
+	playsewithpan SE_M_REVERSAL, SOUND_PAN_ATTACKER
 	waitforvisualfinish
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 1, 1, 8, 0, RGB(14, 0, 14)
 	waitforvisualfinish
@@ -22981,10 +22981,10 @@ gBattleAnimMove_ClassicHyperBeam::
 	@createsprite gClassicOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
 	waitforvisualfinish
 	@clearmonbg ANIM_DEF_PARTNER
-	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_ATTACKER
+	playsewithpan SE_M_CLASSIC_HYPER_BEAM, SOUND_PAN_ATTACKER
 	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
 	delay 1
-	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_HYPER_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 1, 15, 0, 5
+@	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_CLASSIC_HYPER_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 1, 15, 0, 5
 	call gBattleAnimMove_ClassicLaserBeamCreateTube
 	waitforvisualfinish
 	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2

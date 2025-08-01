@@ -275,7 +275,7 @@ gSongTable::
 	song se_th_spell, 1, 1
 	song se_yyyi_jukai_warning, 1, 1
 	song se_etc_zeronos, 1, 1
-	song dummy_song_header, 0, 0
+	song se_m_classic_hyper_beam, 1, 1
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0

@@ -22968,21 +22968,21 @@ gBattleAnimMove_ShadowSky::
 	end
 
 gBattleAnimMove_ClassicHyperBeam::
-	@loadspritegfx ANIM_TAG_ORBS
-	loadspritegfx ANIM_TAG_RAINBOW_RINGS
+	loadspritegfx ANIM_TAG_CLASSIC_ORBS
+	loadspritegfx ANIM_TAG_CLASSIC_LASER_BEAM
 	loadspritegfx ANIM_TAG_IMPACT
-	@monbg ANIM_DEF_PARTNER
-	@splitbgprio_foes ANIM_TARGET
+	splitbgprio_foes ANIM_ATTACKER
+	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
-	@createsprite gClassicOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
-	@delay 1
-	@createsprite gClassicOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
-	@delay 1
-	@createsprite gClassicOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	createsprite gClassicOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
+	delay 1
+	createsprite gClassicOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
+	delay 1
+	createsprite gClassicOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	@clearmonbg ANIM_DEF_PARTNER
 	playsewithpan SE_M_CLASSIC_HYPER_BEAM, SOUND_PAN_ATTACKER
-	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	createsprite gClassicAuroraBeamOrbSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
 	delay 1
 @	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_CLASSIC_HYPER_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 1, 15, 0, 5
 	call gBattleAnimMove_ClassicLaserBeamCreateTube
@@ -22997,6 +22997,7 @@ gBattleAnimMove_ClassicHyperBeam::
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	waitforvisualfinish
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	clearmonbg ANIM_ATTACKER
 	end
 gBattleAnimMove_ClassicLaserBeamCreateTube:
 	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257

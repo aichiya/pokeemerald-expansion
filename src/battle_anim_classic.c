@@ -83,8 +83,8 @@ static const union AffineAnimCmd *const sAffineAnims_Generic0EndsAffine[] =
 
 const struct SpriteTemplate gClassicOrbSpiralInwardSpriteTemplate =
 {
-    .tileTag = ANIM_TAG_CLASSIC_ORB,
-    .paletteTag = ANIM_TAG_CLASSIC_ORB,
+    .tileTag = ANIM_TAG_CLASSIC_ORBS,
+    .paletteTag = ANIM_TAG_CLASSIC_ORBS,
     .oam = &gOamData_AffineOff_ObjNormal_8x8,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
@@ -462,7 +462,7 @@ void AnimClassicSpriteSpiralToMonPos(struct Sprite *sprite)
     else
         InitSpritePosToAnimTarget(sprite, TRUE);
 
-    StartSpriteAnim(sprite, gBattleAnimArgs[7]); // Anim Number
+    StartSpriteAnim(sprite, gBattleAnimArgs[8]); // Anim Number
     
     sprite->x += gBattleAnimArgs[0];
     sprite->y += gBattleAnimArgs[1];

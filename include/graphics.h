@@ -3458,8 +3458,8 @@ extern const u16 gBattleAnimSpritePal_GaiaForceDarkness[];
 extern const u16 gBattleAnimSpritePal_GaiaForcePoseidon[];
 extern const u16 gBattleAnimSpritePal_ExplosionPurple[];
 
-extern const u32 gBattleAnimSpriteGfx_ClassicOrb[];
-extern const u16 gBattleAnimSpritePal_ClassicOrb[];
+extern const u32 gBattleAnimSpriteGfx_ClassicOrbs[];
+extern const u16 gBattleAnimSpritePal_ClassicOrbs[];
 extern const u32 gBattleAnimSpriteGfx_ClassicLaserBeam[];
 extern const u16 gBattleAnimSpritePal_ClassicLaserBeam[];
 extern const u32 gBattleAnimSpriteGfx_ClassicFire[];

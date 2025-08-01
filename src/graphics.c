@@ -2160,8 +2160,8 @@ const u16 gBattleAnimSpritePal_GaiaForceDarkness[] = INCBIN_U16("graphics/battle
 const u16 gBattleAnimSpritePal_GaiaForcePoseidon[] = INCBIN_U16("graphics/battle_anims/sprites/gaia_force_poseidon.gbapal");
 const u16 gBattleAnimSpritePal_ExplosionPurple[] = INCBIN_U16("graphics/battle_anims/sprites/explosion_purple.gbapal");
 
-const u32 gBattleAnimSpriteGfx_ClassicOrb[] = INCBIN_U32("graphics/battle_anims/sprites/classic_orb.4bpp.smol");
-const u16 gBattleAnimSpritePal_ClassicOrb[] = INCBIN_U16("graphics/battle_anims/sprites/classic_orb.gbapal");
+const u32 gBattleAnimSpriteGfx_ClassicOrbs[] = INCBIN_U32("graphics/battle_anims/sprites/classic_orbs.4bpp.smol");
+const u16 gBattleAnimSpritePal_ClassicOrbs[] = INCBIN_U16("graphics/battle_anims/sprites/classic_orbs.gbapal");
 const u32 gBattleAnimSpriteGfx_ClassicLaserBeam[] = INCBIN_U32("graphics/battle_anims/sprites/classic_laser_beam.4bpp.smol");
 const u16 gBattleAnimSpritePal_ClassicLaserBeam[] = INCBIN_U16("graphics/battle_anims/sprites/classic_laser_beam.gbapal");
 const u32 gBattleAnimSpriteGfx_ClassicFire[] = INCBIN_U32("graphics/battle_anims/sprites/classic_fire.4bpp.smol");

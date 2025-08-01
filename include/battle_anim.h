@@ -42,7 +42,7 @@ struct BattleAnimBackground
     const u32 *tilemap;
 };
 
-#define ANIM_ARGS_COUNT 8
+#define ANIM_ARGS_COUNT 9
 
 extern void (*gAnimScriptCallback)(void);
 extern bool8 gAnimScriptActive;

@@ -18564,11 +18564,11 @@ void BS_TransformDataExecutionDecade(void)
                     }
                     case MOVE_SCORCHING_SANDS:     // Special Earth
                     {
-                        speciesBuffer = SPECIES_ETERNATUS;
+                        speciesBuffer = SPECIES_GROUDON_PRIMAL;
                         gBattleMons[gBattlerAttacker].moves[0] = moveUsed;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_DYNAMAX_CANNON;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_SHADOW_FORCE;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_MIASMA_TERRAIN;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_PRECIPICE_BLADES;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_FLAMETHROWER;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_ROCK_SLIDE;
                         break;
                     }
                     case MOVE_BUG_BUZZ:            // Special Beast

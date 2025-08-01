@@ -2458,10 +2458,10 @@ void TryShinyAnimation(u8 battler, struct Pokemon *mon)
         {
             if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_NEGA)
             {
-                if (GetSpriteTileStartByTag(ANIM_TAG_SMALL_CLOUD) == 0xFFFF)
+                if (GetSpriteTileStartByTag(ANIM_TAG_EXPLOSION_PURPLE) == 0xFFFF)
                 {
-                    LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_SMALL_CLOUD - ANIM_SPRITES_START]);
-                    LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_SMALL_CLOUD - ANIM_SPRITES_START]);
+                    LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_EXPLOSION_PURPLE - ANIM_SPRITES_START]);
+                    LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_EXPLOSION_PURPLE - ANIM_SPRITES_START]);
                 }
 
                 taskCirc = CreateTask(Task_ShinyStarsNega, 10);
@@ -2627,7 +2627,7 @@ static void Task_ShinyStarsNega(u8 taskId)
             else
                 pan = 63;
 
-            PlaySE12WithPanning(SE_M_HAZE, pan);
+            PlaySE12WithPanning(SE_M_PSYBEAM, pan);
         }
     }
 

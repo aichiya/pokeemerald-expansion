@@ -2678,7 +2678,7 @@ bool32 IsStatLoweringEffect(enum BattleMoveEffects effect)
     }
 }
 
-bool32 IsSelfStatLoweringEffect(enum MoveEffects effect)
+bool32 IsSelfStatLoweringEffect(enum MoveEffect effect)
 {
     // Self stat lowering moves like Overheart, Superpower etc.
     switch (effect)
@@ -2707,7 +2707,7 @@ bool32 IsSelfStatLoweringEffect(enum MoveEffects effect)
     }
 }
 
-bool32 IsSelfStatRaisingEffect(enum MoveEffects effect)
+bool32 IsSelfStatRaisingEffect(enum MoveEffect effect)
 {
     // Self stat lowering moves like Power Up Punch or Charge Beam
     switch (effect)

@@ -232,9 +232,10 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
          && ability != ABILITY_SAND_FORCE
          && ability != ABILITY_SAND_RUSH
          && ability != ABILITY_OVERCOAT
-         && !IS_BATTLER_ANY_TYPE(gBattlerAttacker, TYPE_NEW_EARTH, TYPE_NEW_METAL)
-         && !(gStatuses3[gBattlerAttacker] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
-         && GetBattlerHoldEffect(gBattlerAttacker, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
+         && !IS_BATTLER_ANY_TYPE(battler, TYPE_NEW_EARTH, TYPE_STEEL)
+         && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
+         && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
+         && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
          && !IsAbilityAndRecord(battler, ability, ABILITY_MAGIC_GUARD))
         {
             gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 16;
@@ -257,7 +258,8 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
             if (ability != ABILITY_SNOW_CLOAK
              && ability != ABILITY_OVERCOAT
              && !IS_BATTLER_OF_TYPE(battler, TYPE_NEW_ICE)
-             && !(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
+             && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
+             && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
              && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
              && !IsAbilityAndRecord(battler, ability, ABILITY_MAGIC_GUARD))
             {
@@ -362,7 +364,7 @@ static bool32 HandleEndTurnEmergencyExit(u32 battler)
          && (CanBattlerSwitch(battler) || !(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
          && !(gBattleTypeFlags & BATTLE_TYPE_ARENA)
          && CountUsablePartyMons(battler) > 0
-         && !(gStatuses3[battler] & STATUS3_SKY_DROPPED)) // Not currently held by Sky Drop
+         && gBattleMons[battler].volatiles.semiInvulnerable != STATE_SKY_DROP) // Not currently held by Sky Drop
         {
             gBattlerAbility = battler;
             gLastUsedAbility = ability;
@@ -514,7 +516,7 @@ static bool32 HandleEndTurnFirstEventBlock(u32 battler)
         gBattleStruct->eventBlockCounter++;
         break;
     case FIRST_EVENT_BLOCK_THRASH:
-        if (gBattleMons[battler].volatiles.lockConfusionTurns && !(gStatuses3[battler] & STATUS3_SKY_DROPPED))
+        if (gBattleMons[battler].volatiles.lockConfusionTurns && gBattleMons[battler].volatiles.semiInvulnerable != STATE_SKY_DROP)
         {
             gBattleMons[battler].volatiles.lockConfusionTurns--;
             if (WasUnableToUseMove(battler))
@@ -540,7 +542,8 @@ static bool32 HandleEndTurnFirstEventBlock(u32 battler)
         if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN
          && IsBattlerAlive(battler)
          && !IsBattlerAtMaxHp(battler)
-         && !(gStatuses3[battler] & (STATUS3_SEMI_INVULNERABLE | STATUS3_HEAL_BLOCK))
+         && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
+         && !IsSemiInvulnerable(battler, CHECK_ALL)
          && IsBattlerGrounded(battler))
         {
             gBattlerAttacker = battler;
@@ -887,7 +890,7 @@ static bool32 HandleEndTurnSaltCure(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (gStatuses4[battler] & STATUS4_SALT_CURE
+    if (gBattleMons[battler].volatiles.saltCure
      && IsBattlerAlive(battler)
      && !(IsAbilityAndRecord(battler, GetBattlerAbility(battler), ABILITY_MAGIC_GUARD) || IsAbilityAndRecord(battler, GetBattlerAbility(battler), ABILITY_PURE_WHITE)))
     {
@@ -928,10 +931,10 @@ static bool32 HandleEndTurnSyrupBomb(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if ((gStatuses4[battler] & STATUS4_SYRUP_BOMB) && (IsBattlerAlive(battler)))
+    if (gBattleMons[battler].volatiles.syrupBomb && (IsBattlerAlive(battler)))
     {
         if (gDisableStructs[battler].syrupBombTimer > 0 && --gDisableStructs[battler].syrupBombTimer == 0)
-            gStatuses4[battler] &= ~STATUS4_SYRUP_BOMB;
+            gBattleMons[battler].volatiles.syrupBomb = FALSE;
         PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_SYRUP_BOMB);
         gBattlescriptCurrInstr = BattleScript_SyrupBombEndTurn;
         BattleScriptExecute(gBattlescriptCurrInstr);

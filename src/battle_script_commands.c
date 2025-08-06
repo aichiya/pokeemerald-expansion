@@ -13379,7 +13379,7 @@ static void Cmd_cursetarget(void)
     }
     else if (gBattleMons[gBattlerAttacker].ability == ABILITY_WINNING_COMBINATION_3)
     {
-        gBattleMons[gBattlerTarget].status2 |= STATUS2_CURSED;
+        gBattleMons[gBattlerTarget].volatiles.cursed = TRUE;
         gBattleStruct->moveDamage[gBattlerAttacker] = 0;
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
@@ -18410,9 +18410,9 @@ void BS_TransformDataExecutionDecade(void)
     {
         gCalledMove = moveUsed;
         gChosenMove = MOVE_UNAVAILABLE;
-        if (gBattleMons[gBattlerTarget].status2 & STATUS2_TRANSFORMED
+        if (gBattleMons[gBattlerTarget].volatiles.transformed
             || gBattleStruct->illusion[gBattlerTarget].state == ILLUSION_ON
-            || gStatuses3[gBattlerTarget] & STATUS3_SEMI_INVULNERABLE_NO_COMMANDER)
+            || IsSemiInvulnerable(gBattlerTarget, EXCLUDE_COMMANDER))
         {
             gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_FAILED;
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORM_FAILED;
@@ -18449,7 +18449,7 @@ void BS_TransformDataExecutionDecade(void)
                 calcSpDef = (((2 * baseSpDef + ivSpDef) * currentLevel) / 100) + 5;
                 calcSpd = (((2 * baseSpd + ivSpd) * currentLevel) / 100) + 5;
 
-                gBattleMons[gBattlerTarget].status2 |= STATUS2_TRANSFORMED;
+                gBattleMons[gBattlerTarget].volatiles.transformed = TRUE;
                 gDisableStructs[gBattlerTarget].disabledMove = MOVE_NONE;
                 gDisableStructs[gBattlerTarget].disableTimer = 0;
                 gDisableStructs[gBattlerTarget].transformedMonPersonality = gBattleMons[gBattlerTarget].personality;
@@ -18494,7 +18494,7 @@ void BS_TransformDataExecutionDecade(void)
             }
             else
             {
-                gBattleMons[gBattlerAttacker].status2 |= STATUS2_TRANSFORMED;
+                gBattleMons[gBattlerAttacker].volatiles.transformed = TRUE;
                 gDisableStructs[gBattlerAttacker].disabledMove = MOVE_NONE;
                 gDisableStructs[gBattlerAttacker].disableTimer = 0;
                 gDisableStructs[gBattlerAttacker].transformedMonPersonality = gBattleMons[gBattlerAttacker].personality;

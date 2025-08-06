@@ -273,7 +273,8 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
         }
         break;
     case BATTLE_WEATHER_EX_SHADOW_SKY:
-        if (!(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
+        if (gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
+         && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
          && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
          && !gBattleMons[battler].isShadow)
         {
@@ -288,7 +289,8 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
         {
             if (gBattleMons[battler].isShadow
              && !IsBattlerAtMaxHp(battler)
-             && !(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
+             && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
+             && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
              && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_ExShadowSkyHeal);
@@ -301,7 +303,8 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
         }
         break;
     case BATTLE_WEATHER_EX_SHADOW_SKY_DEEP:
-        if (!(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
+        if (gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
+         && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
          && GetBattlerHoldEffect(battler, TRUE) != HOLD_EFFECT_SAFETY_GOGGLES
          && !gBattleMons[battler].isShadow)
         {
@@ -316,7 +319,8 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
         {
             if (gBattleMons[battler].isShadow
              && !IsBattlerAtMaxHp(battler)
-             && !(gStatuses3[battler] & (STATUS3_UNDERGROUND | STATUS3_UNDERWATER))
+             && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
+             && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
              && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_ExShadowSkyHeal);

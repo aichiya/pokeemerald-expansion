@@ -207,7 +207,7 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
     //Variable initialization
     u8 opposingPosition;
     s32 i, damageDealt = 0, maxDamageDealt = 0, damageTaken = 0, maxDamageTaken = 0, maxDamageTakenPriority = 0;
-    u32 aiMove, playerMove, bestPlayerPriorityMove = MOVE_NONE, aiAbility = gAiLogicData->abilities[battler], opposingBattler;
+    u32 aiMove, playerMove, bestPlayerPriorityMove = MOVE_NONE, bestPlayerMove = MOVE_NONE, expectedMove = MOVE_NONE, aiAbility = gAiLogicData->abilities[battler], opposingBattler;
     bool32 getsOneShot = FALSE, hasStatusMove = FALSE, hasSuperEffectiveMove = FALSE;
     u32 typeMatchup;
     enum BattleMoveEffects aiMoveEffect;
@@ -236,6 +236,7 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
             if (damageTaken > maxDamageTaken && !AI_DoesChoiceEffectBlockMove(opposingBattler, playerMove))
             {
                 maxDamageTaken = damageTaken;
+                bestPlayerMove = playerMove;
             }
             if (GetBattleMovePriority(opposingBattler, gAiLogicData->abilities[battler], playerMove) > 0 && damageTaken > maxDamageTakenPriority && !AI_DoesChoiceEffectBlockMove(opposingBattler, playerMove))
             {
@@ -247,6 +248,7 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
 
     hitsToKoAI = GetNoOfHitsToKOBattlerDmg(maxDamageTaken, battler);
     hitsToKoAIPriority = GetNoOfHitsToKOBattlerDmg(maxDamageTakenPriority, battler);
+    expectedMove = gAiThinkingStruct->aiFlags[battler] & AI_FLAG_PREDICT_MOVE ? GetIncomingMove(battler, opposingBattler, gAiLogicData) : bestPlayerMove;
 
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
@@ -279,10 +281,12 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
 
                 // Get maximum damage mon can deal
                 damageDealt = AI_GetDamage(battler, opposingBattler, i, AI_ATTACKING, gAiLogicData);
+                if (damageDealt > maxDamageDealt)
+                    maxDamageDealt = damageDealt;
                 if (!canBattlerWin1v1 ) // Once we can win a 1v1 we don't need to track this, but want to run the rest of the function to keep the runtime the same regardless of when we find the winning move
                 {
                     hitsToKoPlayer = GetNoOfHitsToKOBattlerDmg(damageDealt, opposingBattler);
-                    isBattlerFirst = AI_IsFaster(battler, opposingBattler, aiMove, GetIncomingMove(battler, opposingBattler, gAiLogicData), CONSIDER_PRIORITY);
+                    isBattlerFirst = AI_IsFaster(battler, opposingBattler, aiMove, expectedMove, CONSIDER_PRIORITY);
                     isBattlerFirstPriority = AI_IsFaster(battler, opposingBattler, aiMove, bestPlayerPriorityMove, CONSIDER_PRIORITY);
                     canBattlerWin1v1 = CanBattlerWin1v1(hitsToKoAI, hitsToKoPlayer, isBattlerFirst) && CanBattlerWin1v1(hitsToKoAIPriority, hitsToKoPlayer, isBattlerFirstPriority);
                 }
@@ -310,11 +314,8 @@ static bool32 ShouldSwitchIfHasBadOdds(u32 battler)
 
     // Start assessing whether or not mon has bad odds
     // Jump straight to switching out in cases where mon gets OHKO'd
-    if (((getsOneShot && gBattleMons[opposingBattler].speed > gBattleMons[battler].speed) // If the player OHKOs and outspeeds OR OHKOs, doesn't outspeed but isn't 2HKO'd
-            || (getsOneShot && gBattleMons[opposingBattler].speed <= gBattleMons[battler].speed && maxDamageDealt < gBattleMons[opposingBattler].hp / 2))
-        && (gBattleMons[battler].hp >= gBattleMons[battler].maxHP / 2 // And the current mon has at least 1/2 their HP, or 1/4 HP and Regenerator
-            || (aiAbility == ABILITY_REGENERATOR
-            && gBattleMons[battler].hp >= gBattleMons[battler].maxHP / 4)))
+    if ((getsOneShot && !canBattlerWin1v1) && (gBattleMons[battler].hp >= gBattleMons[battler].maxHP / 2 // And the current mon has at least 1/2 their HP, or 1/4 HP and Regenerator
+            || (aiAbility == ABILITY_REGENERATOR && gBattleMons[battler].hp >= gBattleMons[battler].maxHP / 4)))
     {
         // 50% chance to stay in regardless
         if (RandomPercentage(RNG_AI_SWITCH_HASBADODDS, (100 - GetSwitchChance(SHOULD_SWITCH_HASBADODDS))) && !gAiLogicData->aiPredictionInProgress)
@@ -1445,33 +1446,18 @@ static u32 GetBestMonBatonPass(struct Pokemon *party, int firstId, int lastId, u
 static u32 GetBestMonTypeMatchup(struct Pokemon *party, int firstId, int lastId, u8 invalidMons, u32 battler, u32 opposingBattler)
 {
     int i, bits = 0;
-
     while (bits != 0x3F) // All mons were checked.
     {
-        uq4_12_t bestResist = UQ_4_12(1.0);
+        u32 bestResist = UQ_4_12(2.0);
         int bestMonId = PARTY_SIZE;
         // Find the mon whose type is the most suitable defensively.
         for (i = firstId; i < lastId; i++)
         {
             if (!((1u << i) & invalidMons) && !((1u << i) & bits))
             {
-                u16 species = GetMonData(&party[i], MON_DATA_SPECIES);
-                uq4_12_t typeEffectiveness = UQ_4_12(1.0);
+                InitializeSwitchinCandidate(&party[i]);
 
-                u8 atkType1 = gBattleMons[opposingBattler].types[0];
-                u8 atkType2 = gBattleMons[opposingBattler].types[1];
-                u8 defType1 = GetSpeciesType(species, 0);
-                u8 defType2 = GetSpeciesType(species, 1);
-
-                typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType1)));
-                if (atkType2 != atkType1)
-                    typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType1)));
-                if (defType2 != defType1)
-                {
-                    typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType1, defType2)));
-                    if (atkType2 != atkType1)
-                        typeEffectiveness = uq4_12_multiply(typeEffectiveness, (GetTypeModifier(atkType2, defType2)));
-                }
+                u32 typeEffectiveness = GetBattleMonTypeMatchup(gBattleMons[opposingBattler], gAiLogicData->switchinCandidate.battleMon);
                 if (typeEffectiveness < bestResist)
                 {
                     bestResist = typeEffectiveness;

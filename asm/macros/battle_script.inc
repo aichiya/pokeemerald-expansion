@@ -2546,3 +2546,8 @@
 	callnative BS_TryBoosterEnergy
 	.byte \onFieldStatus
 	.endm
+
+	.macro setmiasmaterrainfromability failInstr:req
+	callnative BS_SetMiasmaTerrainFromAbility
+	.4byte \failInstr
+	.endm

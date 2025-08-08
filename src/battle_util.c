@@ -4306,8 +4306,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_GRIMOIRE_USER:
             if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_SPATK, MAX_STAT_STAGE, CMP_LESS_THAN))
             {
-                gBattleScripting.savedBattler = gBattlerAttacker;
-                gBattlerAttacker = battler;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 SET_STATCHANGER(STAT_SPATK, 2, FALSE);
                 BattleScriptPushCursorAndCallback(BattleScript_BattlerAbilityStatRaiseOnSwitchIn);
@@ -4318,8 +4316,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_KALEID_RUBY:
             if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_SPATK, MAX_STAT_STAGE, CMP_LESS_THAN))
             {
-                gBattleScripting.savedBattler = gBattlerAttacker;
-                gBattlerAttacker = battler;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 SET_STATCHANGER(STAT_SPATK, 1, FALSE);
                 BattleScriptPushCursorAndCallback(BattleScript_BattlerAbilityStatRaiseOnSwitchIn);
@@ -4329,8 +4325,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_KALEID_SAPPHIRE:
             if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_SPEED, MAX_STAT_STAGE, CMP_LESS_THAN))
             {
-                gBattleScripting.savedBattler = gBattlerAttacker;
-                gBattlerAttacker = battler;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
                 SET_STATCHANGER(STAT_SPEED, 1, FALSE);
                 BattleScriptPushCursorAndCallback(BattleScript_BattlerAbilityStatRaiseOnSwitchIn);
@@ -4338,18 +4332,12 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_ULTRA_MEDICINE:
-            if (TryChangeBattleTerrain(battler, STATUS_FIELD_MIASMA_TERRAIN, &gFieldTimers.terrainTimer))
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
-                BattleScriptPushCursorAndCallback(BattleScript_MiasmaSurgeActivates);
-                effect++;
-            }
-            if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_EVASION, MAX_STAT_STAGE, CMP_LESS_THAN))
-            {
-                gBattleScripting.savedBattler = gBattlerAttacker;
                 gBattlerAttacker = battler;
+                gBattlerTarget = battler;
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
-                SET_STATCHANGER(STAT_EVASION, MAX_STAT_STAGE, FALSE);
-                BattleScriptPushCursorAndCallback(BattleScript_BattlerAbilityStatRaiseOnSwitchIn);
+                BattleScriptPushCursorAndCallback(BattleScript_UltraMedicineActivates);
                 effect++;
             }
             break;

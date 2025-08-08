@@ -10371,6 +10371,65 @@ BattleScript_TsubameGaeshiActivates::
 	tryfaintmon BS_ATTACKER
 	return
 
+BattleScript_UltraMedicineActivates::
+	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_MIASMA_TERRAIN, BattleScript_UltraMedicineAlreadyMiasmaTerrain
+	setmiasmaterrainfromability BattleScript_UltraMedicineAlreadyMiasmaTerrain
+	call BattleScript_AbilityPopUpScripting
+	printstring STRINGID_MIASMACOVERINGTHEFIELD
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
+	call BattleScript_ActivateTerrainEffects
+BattleScript_UltraMedicineAlreadyMiasmaTerrain:
+	jumpifstat BS_SCRIPTING, CMP_LESS_THAN, STAT_ACC, MAX_STAT_STAGE, BattleScript_UltraMedicineAllStatsUpActivatesTryAcc
+	jumpifstat BS_SCRIPTING, CMP_LESS_THAN, STAT_EVASION, MAX_STAT_STAGE, BattleScript_UltraMedicineAllStatsUpActivatesTryAcc
+	jumpifstat BS_SCRIPTING, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_UltraMedicineAllStatsUpActivatesTryAcc
+	jumpifstat BS_SCRIPTING, CMP_LESS_THAN, STAT_DEF, MAX_STAT_STAGE, BattleScript_UltraMedicineAllStatsUpActivatesTryAcc
+	jumpifstat BS_SCRIPTING, CMP_LESS_THAN, STAT_SPATK, MAX_STAT_STAGE, BattleScript_UltraMedicineAllStatsUpActivatesTryAcc
+	jumpifstat BS_SCRIPTING, CMP_LESS_THAN, STAT_SPDEF, MAX_STAT_STAGE, BattleScript_UltraMedicineAllStatsUpActivatesTryAcc
+	jumpifstat BS_SCRIPTING, CMP_EQUAL, STAT_SPEED, MAX_STAT_STAGE, BattleScript_UltraMedicineAllStatsUpActivatesRet
+BattleScript_UltraMedicineAllStatsUpActivatesTryAcc:
+	call BattleScript_AbilityPopUpScripting
+	pause B_WAIT_TIME_SHORT
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+	playanimation BS_SCRIPTING, B_ANIM_ULTRA_MEDICINE
+	waitanimation
+	setstatchanger STAT_ACC, MAX_STAT_STAGE, FALSE
+	statbuffchange BS_SCRIPTING, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraMedicineAllStatsUpActivatesTryEvasion, BIT_ATK | BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF | BIT_EVASION
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraMedicineAllStatsUpActivatesTryEvasion:
+	setstatchanger STAT_EVASION, MAX_STAT_STAGE, FALSE
+	statbuffchange BS_SCRIPTING, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraMedicineAllStatsUpActivatesTryAttack, BIT_ATK | BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraMedicineAllStatsUpActivatesTryAttack:
+	setstatchanger STAT_ATK, MAX_STAT_STAGE, FALSE
+	statbuffchange BS_SCRIPTING, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraMedicineAllStatsUpActivatesTryDefense, BIT_DEF | BIT_SPEED | BIT_SPATK | BIT_SPDEF
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraMedicineAllStatsUpActivatesTryDefense:
+    setstatchanger STAT_DEF, MAX_STAT_STAGE, FALSE
+	statbuffchange BS_SCRIPTING, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraMedicineAllStatsUpActivatesTrySpAttack, BIT_SPEED | BIT_SPATK | BIT_SPDEF
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraMedicineAllStatsUpActivatesTrySpAttack:
+    setstatchanger STAT_SPATK, MAX_STAT_STAGE, FALSE
+	statbuffchange BS_SCRIPTING, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraMedicineAllStatsUpActivatesSpDefense, BIT_SPEED | BIT_SPDEF
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraMedicineAllStatsUpActivatesSpDefense:
+    setstatchanger STAT_SPDEF, MAX_STAT_STAGE, FALSE
+	statbuffchange BS_SCRIPTING, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraMedicineAllStatsUpActivatesTrySpeed, BIT_SPEED
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraMedicineAllStatsUpActivatesTrySpeed:
+    setstatchanger STAT_SPEED, MAX_STAT_STAGE, FALSE
+	statbuffchange BS_SCRIPTING, STAT_CHANGE_ALLOW_PTR, BattleScript_UltraMedicineAllStatsUpActivatesRet
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_UltraMedicineAllStatsUpActivatesRet:
+	end3
+
 BattleScript_EffectSpAtkSpDefUp2::
 	attackcanceler
 	attackstring

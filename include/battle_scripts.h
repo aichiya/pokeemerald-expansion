@@ -563,6 +563,7 @@ extern const u8 BattleScript_TsubameGaeshiActivates[];
 extern const u8 BattleScript_MiasmaSurgeActivates[];
 extern const u8 BattleScript_EffectMiasmaTerrain[];
 extern const u8 BattleScript_EffectExShadowSky[];
+extern const u8 BattleScript_UltraMedicineActivates[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

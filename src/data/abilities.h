@@ -2675,7 +2675,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ULTRA_MEDICINE] =
     {
         .name = _("Ultra Medicine"),
-        .description = COMPOUND_STRING("Ups Evasion on entry."),
+        .description = COMPOUND_STRING("Medicine Melancholy Burst Out."),
         .aiRating = 3,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,

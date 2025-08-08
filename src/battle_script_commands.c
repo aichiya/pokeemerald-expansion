@@ -18733,6 +18733,20 @@ void BS_TransformDataExecutionDecade(void)
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
+
+void BS_SetMiasmaTerrainFromAbility(void)
+{
+    NATIVE_ARGS(const u8 *jumpInstr);
+
+    u32 statusFlag = STATUS_FIELD_MIASMA_TERRAIN;
+    enum ItemHoldEffect atkHoldEffect = GetBattlerHoldEffect(gBattlerAttacker, TRUE);
+
+    gFieldStatuses &= ~STATUS_FIELD_TERRAIN_ANY;
+    gFieldStatuses |= statusFlag;
+    gFieldTimers.terrainTimer = gBattleTurnCounter + (atkHoldEffect == HOLD_EFFECT_TERRAIN_EXTENDER) ? 8 : 5;
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
 void BS_JumpIfRoarFails(void)
 {
     NATIVE_ARGS(const u8 *jumpInstr);

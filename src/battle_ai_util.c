@@ -3897,12 +3897,15 @@ static u32 GetAIEffectGroup(enum BattleMoveEffects effect)
     case EFFECT_HAIL:
     case EFFECT_SNOWSCAPE:
     case EFFECT_CHILLY_RECEPTION:
+    case EFFECT_EX_SHADOW_MOVE_SKY:
         aiEffect |= AI_EFFECT_WEATHER;
         break;
     case EFFECT_ELECTRIC_TERRAIN:
     case EFFECT_GRASSY_TERRAIN:
     case EFFECT_MISTY_TERRAIN:
     case EFFECT_PSYCHIC_TERRAIN:
+    case EFFECT_DARKNESS_TERRAIN:
+    case EFFECT_MIASMA_TERRAIN:
     case EFFECT_STEEL_ROLLER:
     case EFFECT_ICE_SPINNER:
         aiEffect |= AI_EFFECT_TERRAIN;
@@ -3972,12 +3975,15 @@ static u32 GetAIEffectGroupFromMove(u32 battler, u32 move)
         case MOVE_EFFECT_RAIN:
         case MOVE_EFFECT_SANDSTORM:
         case MOVE_EFFECT_HAIL:
+        case MOVE_EFFECT_EX_SHADOW_SKY:
             aiEffect |= AI_EFFECT_WEATHER;
             break;
         case MOVE_EFFECT_ELECTRIC_TERRAIN:
         case MOVE_EFFECT_GRASSY_TERRAIN:
         case MOVE_EFFECT_MISTY_TERRAIN:
         case MOVE_EFFECT_PSYCHIC_TERRAIN:
+        case MOVE_EFFECT_DARKNESS_TERRAIN:
+        case MOVE_EFFECT_MIASMA_TERRAIN:
             aiEffect |= AI_EFFECT_TERRAIN;
             break;
         case MOVE_EFFECT_DEFOG:

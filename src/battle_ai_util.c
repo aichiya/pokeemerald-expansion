@@ -3904,6 +3904,7 @@ static u32 GetAIEffectGroup(enum BattleMoveEffects effect)
     case EFFECT_GRASSY_TERRAIN:
     case EFFECT_MISTY_TERRAIN:
     case EFFECT_PSYCHIC_TERRAIN:
+    case EFFECT_UBW:
     case EFFECT_DARKNESS_TERRAIN:
     case EFFECT_MIASMA_TERRAIN:
     case EFFECT_STEEL_ROLLER:
@@ -3982,6 +3983,7 @@ static u32 GetAIEffectGroupFromMove(u32 battler, u32 move)
         case MOVE_EFFECT_GRASSY_TERRAIN:
         case MOVE_EFFECT_MISTY_TERRAIN:
         case MOVE_EFFECT_PSYCHIC_TERRAIN:
+        case MOVE_EFFECT_UBW:
         case MOVE_EFFECT_DARKNESS_TERRAIN:
         case MOVE_EFFECT_MIASMA_TERRAIN:
             aiEffect |= AI_EFFECT_TERRAIN;

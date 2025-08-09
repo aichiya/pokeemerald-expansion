@@ -1618,7 +1618,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             break;
         case EFFECT_EVASION_DOWN:
         case EFFECT_EVASION_DOWN_2:
-            if (!CanLowerStat(battlerAtk, battlerDef, aiData->abilities[battlerDef], STAT_EVASION))
+            if (!CanLowerStat(battlerAtk, battlerDef, aiData, STAT_EVASION))
                 ADJUST_SCORE(-10);
             else if (aiData->abilities[battlerDef] == ABILITY_SHICHININ_MISAKI)
                 ADJUST_SCORE(-10);
@@ -1937,7 +1937,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             break;
         case EFFECT_EX_SHADOW_MOVE_SKY:
             if (weather & (B_WEATHER_EX_SHADOW_SKY | B_WEATHER_PRIMAL_ANY)
-             || IsMoveEffectWeather(aiData->partnerMove))
+             || (HasPartner(battlerAtk) && AreMovesEquivalent(battlerAtk, BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove)))
                 ADJUST_SCORE(-8);
             break;
         case EFFECT_SUNNY_DAY:
@@ -2572,15 +2572,18 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_UBW:
-            if (PartnerMoveEffectIsTerrain(BATTLE_PARTNER(battlerAtk), aiData->partnerMove) || gFieldStatuses & STATUS_FIELD_UBW)
+            if (gFieldStatuses & STATUS_FIELD_UBW
+             || (HasPartner(battlerAtk) && AreMovesEquivalent(battlerAtk, BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove)))
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_DARKNESS_TERRAIN:
-            if (PartnerMoveEffectIsTerrain(BATTLE_PARTNER(battlerAtk), aiData->partnerMove) || gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
+            if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN
+             || (HasPartner(battlerAtk) && AreMovesEquivalent(battlerAtk, BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove)))
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_MIASMA_TERRAIN:
-            if (PartnerMoveEffectIsTerrain(BATTLE_PARTNER(battlerAtk), aiData->partnerMove) || gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
+            if (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN
+             || (HasPartner(battlerAtk) && AreMovesEquivalent(battlerAtk, BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove)))
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_STEEL_ROLLER:

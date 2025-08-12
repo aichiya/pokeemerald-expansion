@@ -1865,6 +1865,17 @@ const struct SpriteTemplate gOblivionWingBeamTemplate =
 };
 
 //gaia force series
+
+static const union AffineAnimCmd sSpriteAffineAnim_GrowingForceBall[] =
+{
+    AFFINEANIMCMD_FRAME(8, 8, 0, 16), //Double in size
+    AFFINEANIMCMD_END,
+};
+static const union AffineAnimCmd* const sSpriteAffineAnimTable_GrowingForceBall[] =
+{
+    sSpriteAffineAnim_GrowingForceBall,
+};
+
 const struct SpriteTemplate gGaiaForceSphereTemplate =
 {
     .tileTag = ANIM_TAG_GAIA_FORCE,
@@ -1872,7 +1883,7 @@ const struct SpriteTemplate gGaiaForceSphereTemplate =
     .oam = &gOamData_AffineDouble_ObjNormal_64x64,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
-    .affineAnims = sSpriteAffineAnimTable_GrowingRing,
+    .affineAnims = sSpriteAffineAnimTable_GrowingForceBall,
     .callback = TranslateAnimSpriteToTargetMonLocation
 };
 
@@ -1883,7 +1894,7 @@ const struct SpriteTemplate gGaiaForceDarknessSphereTemplate =
     .oam = &gOamData_AffineDouble_ObjNormal_64x64,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
-    .affineAnims = sSpriteAffineAnimTable_GrowingRing,
+    .affineAnims = sSpriteAffineAnimTable_GrowingForceBall,
     .callback = TranslateAnimSpriteToTargetMonLocation
 };
 
@@ -1894,7 +1905,7 @@ const struct SpriteTemplate gPoseidonForceSphereTemplate =
     .oam = &gOamData_AffineDouble_ObjNormal_64x64,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
-    .affineAnims = sSpriteAffineAnimTable_GrowingRing,
+    .affineAnims = sSpriteAffineAnimTable_GrowingForceBall,
     .callback = TranslateAnimSpriteToTargetMonLocation
 };
 

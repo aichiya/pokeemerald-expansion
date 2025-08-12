@@ -458,6 +458,7 @@ enum __attribute__((packed)) MoveEffect
     MOVE_EFFECT_DARKNESS_TERRAIN,
     MOVE_EFFECT_SPATK_SPDEF_DOWN,
     MOVE_EFFECT_MIASMA_TERRAIN,
+    MOVE_EFFECT_FIVE_ELEMENT,
     MOVE_EFFECT_EX_SHADOW_SKY,
 
     // Max move effects happen earlier in the execution chain.

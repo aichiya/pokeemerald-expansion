@@ -22026,6 +22026,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_AirCutter,
     },
 
+    [MOVE_FIVE_ELEMENT] =  // Edited
+    {
+        .name = COMPOUND_STRING("Five-Element"),
+        .description = COMPOUND_STRING(
+            "Multi-element magic attack.\n"
+            "May inflict a status problem."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_NEW_REASON,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FIVE_ELEMENT,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_LOCK_ON},
+        .battleAnimScript = gBattleAnimMove_TriAttack,
+        .validApprenticeMove = TRUE,
+    },
+
 // ============= Start Classing Moves ===================
 
     [MOVE_CLASSIC_POUND] =

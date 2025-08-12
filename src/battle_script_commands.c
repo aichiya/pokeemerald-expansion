@@ -4462,6 +4462,25 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
             SetMoveEffect(battler, effectBattler, primary, certain);
         }
         break;
+    case MOVE_EFFECT_FIVE_ELEMENT:
+        if (gBattleMons[gEffectBattler].status1)
+        {
+            gBattlescriptCurrInstr++;
+        }
+        else
+        {
+            static const u8 sFiveElementEffects[] =
+            {
+                MOVE_EFFECT_BURN,
+                MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+                MOVE_EFFECT_PARALYSIS,
+                MOVE_EFFECT_SLEEP,
+                MOVE_EFFECT_TOXIC
+            };
+            gBattleScripting.moveEffect = RandomElement(RNG_FIVE_ELEMENT, sFiveElementEffects);
+            SetMoveEffect(battler, effectBattler, primary, certain);
+        }
+        break;
     case MOVE_EFFECT_WRAP:
         if (gBattleMons[gEffectBattler].volatiles.wrapped)
         {

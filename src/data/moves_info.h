@@ -22047,9 +22047,33 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
-        .contestComboMoves = {COMBO_STARTER_LOCK_ON},
+        .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_TriAttack,
-        .validApprenticeMove = TRUE,
+    },
+
+    [MOVE_STRAWBERRY_CROSS] =
+    {
+        .name = COMPOUND_STRING("Strawberry Cross"),
+        .description = COMPOUND_STRING(
+            "Dim.Dream Cross. May inflict\n"
+            "burn or freeze to the target."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_NEW_REASON,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STRAWBERRY_CROSS,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_SwordsDance,
     },
 
 // ============= Start Classing Moves ===================

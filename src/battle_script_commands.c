@@ -4481,6 +4481,22 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
             SetMoveEffect(battler, effectBattler, primary, certain);
         }
         break;
+    case MOVE_EFFECT_STRAWBERRY_CROSS:
+        if (gBattleMons[gEffectBattler].status1)
+        {
+            gBattlescriptCurrInstr++;
+        }
+        else
+        {
+            static const u8 sStrawberryCrossEffects[] =
+            {
+                MOVE_EFFECT_BURN,
+                MOVE_EFFECT_FREEZE_OR_FROSTBITE
+            };
+            gBattleScripting.moveEffect = RandomElement(RNG_STRAWBERRY_CROSS, sStrawberryCrossEffects);
+            SetMoveEffect(battler, effectBattler, primary, certain);
+        }
+        break;
     case MOVE_EFFECT_WRAP:
         if (gBattleMons[gEffectBattler].volatiles.wrapped)
         {

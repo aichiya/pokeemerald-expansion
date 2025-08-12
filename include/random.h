@@ -216,6 +216,7 @@ enum RandomTag
     RNG_AI_APPLY_TAILWIND_ON_LAST_TURN_OF_TRICK_ROOM,
     RNG_TRANSFORM_DECADE,
     RNG_FIVE_ELEMENT,
+    RNG_STRAWBERRY_CROSS,
 };
 
 #define RandomWeighted(tag, ...) \

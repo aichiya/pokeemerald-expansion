@@ -7225,7 +7225,6 @@ static void AnimTask_AllySwitchDataSwap(u8 taskId)
     SWAP(gBattleSpritesDataPtr->battlerData[battlerAtk].invisible, gBattleSpritesDataPtr->battlerData[battlerPartner].invisible, temp);
     SWAP(gTransformedPersonalities[battlerAtk], gTransformedPersonalities[battlerPartner], temp);
     SWAP(gTransformedShininess[battlerAtk], gTransformedShininess[battlerPartner], temp);
-    SWAP(gStatuses3[battlerAtk], gStatuses3[battlerPartner], temp);
 
     SwapBattlerMoveData(battlerAtk, battlerPartner);
 

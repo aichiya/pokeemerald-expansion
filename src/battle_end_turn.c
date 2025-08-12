@@ -163,14 +163,14 @@ static bool32 HandleEndTurnVarious(u32 battler)
 
     for (i = 0; i < gBattlersCount; i++)
     {
-        if (gStatuses3[i] & STATUS3_ALWAYS_HITS)
-            gStatuses3[i] -= STATUS3_ALWAYS_HITS_TURN(1);
+        if (gBattleMons[i].volatiles.lockOn > 0)
+            gBattleMons[i].volatiles.lockOn--;
 
         if (gDisableStructs[i].chargeTimer && --gDisableStructs[i].chargeTimer == 0)
-            gStatuses3[i] &= ~STATUS3_CHARGED_UP;
+            gBattleMons[i].volatiles.charge = FALSE;
 
-        if (gStatuses3[i] & STATUS3_LASER_FOCUS && gDisableStructs[i].laserFocusTimer == gBattleTurnCounter)
-            gStatuses3[i] &= ~STATUS3_LASER_FOCUS;
+        if (gBattleMons[i].volatiles.laserFocus && gDisableStructs[i].laserFocusTimer == gBattleTurnCounter)
+            gBattleMons[i].volatiles.laserFocus = FALSE;
 
         gBattleStruct->hpBefore[i] = gBattleMons[i].hp;
     }
@@ -469,7 +469,7 @@ static bool32 HandleEndTurnWish(u32 battler)
         }
 
         gBattleStruct->moveDamage[battler] *= -1;
-        if (gStatuses3[battler] & STATUS3_HEAL_BLOCK)
+        if (gBattleMons[battler].volatiles.healBlock)
             BattleScriptExecute(BattleScript_WishButHealBlocked);
         else if (gBattleMons[battler].hp == gBattleMons[battler].maxHP)
             BattleScriptExecute(BattleScript_WishButFullHp);
@@ -546,7 +546,7 @@ static bool32 HandleEndTurnFirstEventBlock(u32 battler)
         if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN
          && IsBattlerAlive(battler)
          && !IsBattlerAtMaxHp(battler)
-         && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
+         && !gBattleMons[battler].volatiles.healBlock
          && !IsSemiInvulnerable(battler, CHECK_ALL)
          && IsBattlerGrounded(battler))
         {
@@ -602,8 +602,8 @@ static bool32 HandleEndTurnAquaRing(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (gStatuses3[battler] & STATUS3_AQUA_RING
-     && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
+    if (gBattleMons[battler].volatiles.aquaRing
+     && !gBattleMons[battler].volatiles.healBlock
      && !IsBattlerAtMaxHp(battler)
      && IsBattlerAlive(battler))
     {
@@ -621,8 +621,8 @@ static bool32 HandleEndTurnIngrain(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (gStatuses3[battler] & STATUS3_ROOTED
-     && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK)
+    if (gBattleMons[battler].volatiles.root
+     && !gBattleMons[battler].volatiles.healBlock
      && !IsBattlerAtMaxHp(battler)
      && IsBattlerAlive(battler))
     {
@@ -640,12 +640,12 @@ static bool32 HandleEndTurnLeechSeed(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (gStatuses3[battler] & STATUS3_LEECHSEED
-     && IsBattlerAlive(gStatuses3[battler] & STATUS3_LEECHSEED_BATTLER)
+    if (gBattleMons[battler].volatiles.leechSeed
+     && IsBattlerAlive(gBattleMons[battler].volatiles.leechSeed - 1)
      && IsBattlerAlive(battler)
      && !IsAbilityAndRecord(battler, GetBattlerAbility(battler), ABILITY_MAGIC_GUARD))
     {
-        gBattlerTarget = gStatuses3[battler] & STATUS3_LEECHSEED_BATTLER; // Notice gBattlerTarget is actually the HP receiver.
+        gBattlerTarget = gBattleMons[battler].volatiles.leechSeed - 1; // leech seed receiver
         gBattleScripting.animArg1 = gBattlerTarget;
         gBattleScripting.animArg2 = gBattlerAttacker;
         gBattleStruct->moveDamage[gBattlerAttacker] = max(1, GetNonDynamaxMaxHP(battler) / 8);
@@ -657,7 +657,7 @@ static bool32 HandleEndTurnLeechSeed(u32 battler)
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LEECH_SEED_OOZE;
             BattleScriptExecute(BattleScript_LeechSeedTurnDrainLiquidOoze);
         }
-        else if (gStatuses3[gBattlerTarget] & STATUS3_HEAL_BLOCK)
+        else if (gBattleMons[gBattlerTarget].volatiles.healBlock)
         {
             BattleScriptExecute(BattleScript_LeechSeedTurnDrainHealBlock);
         }
@@ -700,7 +700,7 @@ static bool32 HandleEndTurnPoison(u32 battler)
     {
         if (ability == ABILITY_POISON_HEAL)
         {
-            if (!IsBattlerAtMaxHp(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+            if (!IsBattlerAtMaxHp(battler) && !gBattleMons[battler].volatiles.healBlock)
             {
                 gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
                 if (gBattleStruct->moveDamage[battler] == 0)
@@ -1042,9 +1042,9 @@ static bool32 HandleEndTurnMagnetRise(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (gStatuses3[battler] & STATUS3_MAGNET_RISE && gDisableStructs[battler].magnetRiseTimer == gBattleTurnCounter)
+    if (gBattleMons[battler].volatiles.magnetRise && gDisableStructs[battler].magnetRiseTimer == gBattleTurnCounter)
     {
-        gStatuses3[battler] &= ~STATUS3_MAGNET_RISE;
+        gBattleMons[battler].volatiles.magnetRise = FALSE;
         BattleScriptExecute(BattleScript_BufferEndTurn);
         PREPARE_STRING_BUFFER(gBattleTextBuff1, STRINGID_ELECTROMAGNETISM);
         effect = TRUE;
@@ -1059,9 +1059,9 @@ static bool32 HandleEndTurnTelekinesis(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (gStatuses3[battler] & STATUS3_TELEKINESIS && gDisableStructs[battler].telekinesisTimer == gBattleTurnCounter)
+    if (gBattleMons[battler].volatiles.telekinesis && gDisableStructs[battler].telekinesisTimer == gBattleTurnCounter)
     {
-        gStatuses3[battler] &= ~STATUS3_TELEKINESIS;
+        gBattleMons[battler].volatiles.telekinesis = FALSE;
         BattleScriptExecute(BattleScript_TelekinesisEndTurn);
         effect = TRUE;
     }
@@ -1075,9 +1075,9 @@ static bool32 HandleEndTurnHealBlock(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (gStatuses3[battler] & STATUS3_HEAL_BLOCK && gDisableStructs[battler].healBlockTimer == gBattleTurnCounter)
+    if (gBattleMons[battler].volatiles.healBlock && gDisableStructs[battler].healBlockTimer == gBattleTurnCounter)
     {
-        gStatuses3[battler] &= ~STATUS3_HEAL_BLOCK;
+        gBattleMons[battler].volatiles.healBlock = FALSE;
         BattleScriptExecute(BattleScript_BufferEndTurn);
         PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_HEAL_BLOCK);
         effect = TRUE;
@@ -1092,9 +1092,9 @@ static bool32 HandleEndTurnEmbargo(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (gStatuses3[battler] & STATUS3_EMBARGO && gDisableStructs[battler].embargoTimer == gBattleTurnCounter)
+    if (gBattleMons[battler].volatiles.embargo && gDisableStructs[battler].embargoTimer == gBattleTurnCounter)
     {
-        gStatuses3[battler] &= ~STATUS3_EMBARGO;
+        gBattleMons[battler].volatiles.embargo = FALSE;
         BattleScriptExecute(BattleScript_EmbargoEndTurn);
         effect = TRUE;
     }
@@ -1110,10 +1110,11 @@ static bool32 HandleEndTurnYawn(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (gStatuses3[battler] & STATUS3_YAWN)
+    if (gBattleMons[battler].volatiles.yawn > 0)
     {
-        gStatuses3[battler] -= STATUS3_YAWN_TURN(1);
-        if (!(gStatuses3[battler] & STATUS3_YAWN) && !(gBattleMons[battler].status1 & STATUS1_ANY)
+        gBattleMons[battler].volatiles.yawn--;
+        if (!gBattleMons[battler].volatiles.yawn
+         && !(gBattleMons[battler].status1 & STATUS1_ANY)
          && ability != ABILITY_VITAL_SPIRIT
          && ability != ABILITY_INSOMNIA
          && !UproarWakeUpCheck(battler)
@@ -1162,12 +1163,12 @@ static bool32 HandleEndTurnPerishSong(u32 battler)
 
     gBattleStruct->turnEffectsBattlerId++;
 
-    if (IsBattlerAlive(battler) && gStatuses3[battler] & STATUS3_PERISH_SONG && ability != ABILITY_PURE_WHITE)
+    if (IsBattlerAlive(battler) && gBattleMons[battler].volatiles.perishSong && ability != ABILITY_PURE_WHITE)
     {
         PREPARE_BYTE_NUMBER_BUFFER(gBattleTextBuff1, 1, gDisableStructs[battler].perishSongTimer);
         if (gDisableStructs[battler].perishSongTimer == 0 && ability)
         {
-            gStatuses3[battler] &= ~STATUS3_PERISH_SONG;
+            gBattleMons[battler].volatiles.perishSong = FALSE;
             gBattleStruct->moveDamage[battler] = gBattleMons[battler].hp;
             BattleScriptExecute(BattleScript_PerishSongTakesLife);
         }

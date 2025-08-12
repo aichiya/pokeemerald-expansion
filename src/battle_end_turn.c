@@ -291,7 +291,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
              && !IsBattlerAtMaxHp(battler)
              && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
              && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
-             && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+             && !gBattleMons[battler].volatiles.healBlock)
             {
                 BattleScriptPushCursorAndCallback(BattleScript_ExShadowSkyHeal);
                 gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 16;
@@ -321,7 +321,7 @@ static bool32 HandleEndTurnWeatherDamage(u32 battler)
              && !IsBattlerAtMaxHp(battler)
              && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
              && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
-             && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+             && !gBattleMons[battler].volatiles.healBlock)
             {
                 BattleScriptPushCursorAndCallback(BattleScript_ExShadowSkyHeal);
                 gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
@@ -668,11 +668,11 @@ static bool32 HandleEndTurnLeechSeed(u32 battler)
         }
         effect = TRUE;
     }
-    else if ((gStatuses3[battler] & STATUS3_LEECHSEED)
-     && IsBattlerAlive(gStatuses3[battler] & STATUS3_LEECHSEED_BATTLER
-     && GetBattlerAbility(battler) == ABILITY_FANTASY_BREAKER))
+    else if (gBattleMons[battler].volatiles.leechSeed
+     && IsBattlerAlive(gBattleMons[battler].volatiles.leechSeed - 1)
+     && GetBattlerAbility(battler) == ABILITY_FANTASY_BREAKER)
     {
-       if (!IsBattlerAtMaxHp(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+       if (!IsBattlerAtMaxHp(battler) && !gBattleMons[battler].volatiles.healBlock)
        {
            gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
            if (gBattleStruct->moveDamage[battler] == 0)
@@ -712,7 +712,7 @@ static bool32 HandleEndTurnPoison(u32 battler)
         }
         else if (ability == ABILITY_PURE_WHITE)
         {
-            if (!IsBattlerAtMaxHp(battler) && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+            if (!IsBattlerAtMaxHp(battler) && !gBattleMons[battler].volatiles.healBlock)
             {
                 gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
                 if (gBattleStruct->moveDamage[battler] == 0)

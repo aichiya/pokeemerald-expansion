@@ -4630,7 +4630,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             case ABILITY_WINNING_COMBINATION_2:
                 if (IsBattlerWeatherAffected(battler, B_WEATHER_SUN)
                  && !IsBattlerAtMaxHp(battler)
-                 && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+                 && !gBattleMons[battler].volatiles.healBlock)
                 {
                     BattleScriptPushCursorAndCallback(BattleScript_RainDishActivates);
                     gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
@@ -4692,7 +4692,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 break;
             case ABILITY_LIFE_FORCE:
                 if (!IsBattlerAtMaxHp(battler)
-                 && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+                 && !gBattleMons[battler].volatiles.healBlock)
                 {
                     BattleScriptPushCursorAndCallback(BattleScript_LifeForceActivates);
                     gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 16;

@@ -4341,6 +4341,16 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_ULTRA_MEDICINE_V2:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gBattlerAttacker = battler;
+                gBattlerTarget = battler;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_UltraMedicineV2Activates);
+                effect++;
+            }
+            break;
         case ABILITY_INTREPID_SWORD:
             if (!gSpecialStatuses[battler].switchInAbilityDone && CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN)
              && !GetBattlerPartyState(battler)->intrepidSwordBoost)
@@ -9218,6 +9228,9 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
     case ABILITY_GREAT_BLOOMING:
         modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_ULTRA_MEDICINE_V2:
+        modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(4.0));
+        break;
     case ABILITY_SABOTEN_CORE:
         modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.3));
         break;
@@ -9525,6 +9538,9 @@ static inline u32 CalcDefenseStat(struct DamageContext *ctx)
     case ABILITY_PURIFYING_SALT:
         if (moveType == TYPE_NEW_NETHER)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
+        break;
+    case ABILITY_ULTRA_MEDICINE_V2:
+        modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(4.0));
         break;
     }
 
@@ -12448,6 +12464,8 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
         if (IsBattleMovePhysical(move))
             calc = (calc * 80) / 100; // 1.2 hustle loss
         break;
+    case ABILITY_ULTRA_MEDICINE_V2:
+        calc = (calc * 90) / 30; // 3.0x max acc
     }
 
     // Target's ability
@@ -12460,6 +12478,9 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, u32 atkAbility, u
     case ABILITY_SNOW_CLOAK:
         if (HasWeatherEffect() && (gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW)))
             calc = (calc * 80) / 100; // 1.2 snow cloak loss
+        break;
+    case ABILITY_ULTRA_MEDICINE_V2:
+        calc = (calc * 30) / 90; // 1/3 max evasion
         break;
     case ABILITY_TANGLED_FEET:
         if (gBattleMons[battlerDef].volatiles.confusionTurns)

@@ -10391,6 +10391,23 @@ BattleScript_UltraMedicineAllStatsUpActivatesTrySpeed:
 BattleScript_UltraMedicineAllStatsUpActivatesRet:
 	end3
 
+BattleScript_UltraMedicineV2Activates::
+	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_MIASMA_TERRAIN, BattleScript_UltraMedicineV2AlreadyMiasmaTerrain
+	setmiasmaterrainfromability BattleScript_UltraMedicineV2AlreadyMiasmaTerrain
+	call BattleScript_AbilityPopUpScripting
+	printstring STRINGID_MIASMACOVERINGTHEFIELD
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
+	call BattleScript_ActivateTerrainEffects
+BattleScript_UltraMedicineV2AlreadyMiasmaTerrain:
+	call BattleScript_AbilityPopUpScripting
+	pause B_WAIT_TIME_SHORT
+	playanimation BS_SCRIPTING, B_ANIM_ULTRA_MEDICINE
+	waitanimation
+	printstring STRINGID_PKMNSTATSHIGHTENED
+	waitmessage B_WAIT_TIME_LONG
+	end3
+
 BattleScript_EffectSpAtkSpDefUp2::
 	attackcanceler
 	attackstring

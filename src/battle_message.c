@@ -931,6 +931,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_EXSHADOWYAURAFILLED]                  = COMPOUND_STRING("A shadowy aura filled the sky!"),
     [STRINGID_EXSHADOWDISAPPEARED]                  = COMPOUND_STRING("The shadowy aura disappeared from the sky!"),
     [STRINGID_EXSHADOWYAURADEEPEN]                  = COMPOUND_STRING("The shadowy aura continously stays on the sky!"),
+    [STRINGID_PKMNSTATSHIGHTENED]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}'s stats hightened!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

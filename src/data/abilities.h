@@ -2796,4 +2796,17 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
+    [ABILITY_ULTRA_MEDICINE_V2] =
+    {
+        .name = _("Ultra Medicine"),
+        .description = COMPOUND_STRING("Medicine Melancholy Burst Out."),
+        .aiRating = 10,
+        .cantBeCopied = TRUE,
+        .cantBeSwapped = TRUE,
+        .cantBeTraced = TRUE,
+        .cantBeSuppressed = TRUE,
+        .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
+    },
+
 };

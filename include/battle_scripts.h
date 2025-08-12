@@ -564,6 +564,7 @@ extern const u8 BattleScript_MiasmaSurgeActivates[];
 extern const u8 BattleScript_EffectMiasmaTerrain[];
 extern const u8 BattleScript_EffectExShadowSky[];
 extern const u8 BattleScript_UltraMedicineActivates[];
+extern const u8 BattleScript_UltraMedicineV2Activates[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];

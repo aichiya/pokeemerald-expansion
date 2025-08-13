@@ -22152,6 +22152,885 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_SuperSpiritBomb,
     },
 
+    [MOVE_MOCKUP_PHYSICAL_ILLUSION] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Illusion-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Illusion-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_ILLUSION,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_DREAM] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Dream-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Dream-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_DREAM,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_FLYING] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Flying-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Flying-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_FLYING,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_MIASMA] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Miasma-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Miasma-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_MIASMA,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_EARTH] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Earth-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Earth-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_EARTH,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_BEAST] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Beast-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Beast-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_BEAST,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_HEART] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Heart-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Heart-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_HEART,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_NETHER] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Nether-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Nether-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_NETHER,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_METAL] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Metal-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Metal-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_METAL,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_MYSTERY] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Mystery-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Mystery-type move."),
+        .effect = EFFECT_HIT,
+        .power = 140,
+        .type = TYPE_NEW_MYSTERY,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_FIRE] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Fire-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Fire-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_FIRE,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_WATER] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Water-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Water-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_WATER,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_NATURE] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Nature-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Nature-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_NATURE,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_WIND] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Wind-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Wind-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_WIND,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_REASON] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Reason-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Reason-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_REASON,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_ICE] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Ice-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Ice-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_ICE,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_DIVINE] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Divine-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Divine-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_DIVINE,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_DARK] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Dark-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Dark-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_DARK,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_ELECTRIC] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Electric-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Electric-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_ELECTRIC,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_PHYSICAL_STELLAR] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Stellar-P"),
+        .description = COMPOUND_STRING(
+            "Test move for a physical\n"
+            "Stellar-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_STELLAR,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Pound,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_ILLUSION] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Illusion-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_ILLUSION,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_DREAM] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Dream-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_DREAM,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_FLYING] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Flying-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_FLYING,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_MIASMA] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Miasma-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_MIASMA,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_EARTH] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Earth-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_EARTH,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_BEAST] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Beast-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_BEAST,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_HEART] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Heart-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_HEART,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_NETHER] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Nether-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_NETHER,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_METAL] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Metal-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_METAL,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_MYSTERY] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Mystery-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 140,
+        .type = TYPE_NEW_MYSTERY,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_FIRE] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Fire-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_FIRE,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_WATER] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Water-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_WATER,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_NATURE] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Nature-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_NATURE,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_WIND] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Wind-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_WIND,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_REASON] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Reason-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_REASON,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_ICE] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Ice-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_ICE,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_DIVINE] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Divine-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_DIVINE,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_DARK] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Dark-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_DARK,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_ELECTRIC] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Electric-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_ELECTRIC,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
+
+    [MOVE_MOCKUP_SPECIAL_STELLAR] =
+    {
+        .name = COMPOUND_STRING("Mock-Up Stellar-S"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_STELLAR,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Swift,
+    },
 
 // ============= Start Classing Moves ===================
 

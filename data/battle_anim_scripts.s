@@ -23150,9 +23150,10 @@ gBattleAnimGeneral_UltraMedicineBurstOut::
 	loadspritegfx ANIM_TAG_FIRE_PLUME @blast burn
 	loadspritegfx ANIM_TAG_EXPLOSION_2 @explode
 	loadspritegfx ANIM_TAG_STRAIGHT_BEAM
+	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
 	panse SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 0x2, 0x0
 	monbg ANIM_TARGET
-	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_FIRE_PLUME, 0, 8, 8, RGB(25, 0, 31)
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_CIRCLE_OF_LIGHT, 0, 8, 8, RGB(25, 0, 31)
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_EXPLOSION_2, 0, 8, 8, RGB(25, 0, 31)
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_STRAIGHT_BEAM, 0, 8, 8, RGB(25, 0, 31)
 	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_TARGET, 0x6, 0x0, 0x10, RGB(25, 0, 31)

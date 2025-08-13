@@ -1009,7 +1009,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
         gSprites[gBattlerSpriteIds[battlerAtk]].y = GetBattlerSpriteDefault_Y(battlerDef);
         StartSpriteAnim(&gSprites[gBattlerSpriteIds[battlerDef]], 0);
     }
-    else if (gCurrentMove == MOVE_A_TRANCE)
+    else if (gCurrentMove == MOVE_RIDE_TRANSFORM)
     {
         if (IsContest())
         {

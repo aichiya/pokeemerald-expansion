@@ -21231,9 +21231,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_UltraInstinct,
     },
 
-    [MOVE_A_TRANCE] =  // Added
+    [MOVE_RIDE_TRANSFORM] =  // Added
     {
-        .name = COMPOUND_STRING("A-Trance"),
+        .name = COMPOUND_STRING("Ride Transform"),
         .description = COMPOUND_STRING(
             "Tranforms into something\n"
             "else temporarily."),
@@ -21418,7 +21418,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Isshun Sengeki"),
         .description = COMPOUND_STRING(
-            "The foe's uses Sp.Def.\n"
+            "The foe uses Sp.Def.\n"
             "May lower the foe's Sp. Def."),
         .effect = EFFECT_REVERSE_PSYSHOCK,
         .power = 100,
@@ -21436,7 +21436,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_RagingDemon,
     },
 
-    [MOVE_SCULPTING_ART] =  // Added
+    [MOVE_IDOLA_DIABOLUS] =  // Added
     {
         .name = COMPOUND_STRING("Idola Diabolus"),
         .description = COMPOUND_STRING(
@@ -21493,7 +21493,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_PlasmaBlade,
     },
 
-    [MOVE_01_CRUSHER] =  // Added
+    [MOVE_BINARY_CRUSHER] =  // Added
     {
         .name = COMPOUND_STRING("Binary Crusher"),
         .description = COMPOUND_STRING(

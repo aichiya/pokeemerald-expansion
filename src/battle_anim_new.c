@@ -1909,6 +1909,55 @@ const struct SpriteTemplate gPoseidonForceSphereTemplate =
     .callback = TranslateAnimSpriteToTargetMonLocation
 };
 
+
+static const union AffineAnimCmd sSpriteAffineAnim_SpiritBombSphere[] =
+{
+    AFFINEANIMCMD_FRAME(-1, -1, 0, 8),
+    AFFINEANIMCMD_END,
+};
+static const union AffineAnimCmd* const sSpriteAffineAnimTable_SpiritBombSphere[] =
+{
+    sSpriteAffineAnim_SpiritBombSphere,
+};
+
+const struct SpriteTemplate gSpiritBombTemplate =
+{
+    .tileTag = ANIM_TAG_POSEIDON_FORCE,
+    .paletteTag = ANIM_TAG_POSEIDON_FORCE,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = sSpriteAffineAnimTable_SpiritBombSphere,
+    .callback = TranslateAnimSpriteToTargetMonLocation
+};
+
+static const union AffineAnimCmd sSpriteAffineAnim_OmegaBlasterSphere[] =
+{
+    AFFINEANIMCMD_FRAME( 1,  1, 0,  2),
+    AFFINEANIMCMD_FRAME( 2,  2, 0,  4),
+    AFFINEANIMCMD_FRAME( 3,  3, 0,  6),
+    AFFINEANIMCMD_FRAME( 4,  4, 0,  8),
+    AFFINEANIMCMD_FRAME( 5,  5, 0, 10),
+    AFFINEANIMCMD_FRAME( 6,  6, 0, 12),
+    AFFINEANIMCMD_FRAME( 6,  6, 0, 13),
+    AFFINEANIMCMD_END,
+};
+static const union AffineAnimCmd* const sSpriteAffineAnimTable_OmegaBlasterSphere[] =
+{
+    sSpriteAffineAnim_OmegaBlasterSphere,
+};
+
+const struct SpriteTemplate gOmegaBlasterTemplate =
+{
+    .tileTag = ANIM_TAG_POSEIDON_FORCE,
+    .paletteTag = ANIM_TAG_POSEIDON_FORCE,
+    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = sSpriteAffineAnimTable_OmegaBlasterSphere,
+    .callback = TranslateAnimSpriteToTargetMonLocation
+};
+
 //thousand arrows
 const struct SpriteTemplate gThousandArrowsGreenChargeTemplate =
 {

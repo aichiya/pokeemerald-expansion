@@ -22076,6 +22076,83 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_SwordsDance,
     },
 
+    [MOVE_SPIRIT_BOMB] =
+    {
+        .name = COMPOUND_STRING("Spirit Bomb"),
+        .description = COMPOUND_STRING(
+            "Super effective against\n"
+            "Nether or Dark foes."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_ILLUSION,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_SpiritBomb,
+    },
+
+    [MOVE_OMEGA_BLASTER] =
+    {
+        .name = COMPOUND_STRING("Omega Blaster"),
+        .description = COMPOUND_STRING(
+            "Attacks using huge ki\n"
+            "energy ball. May flinch."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_NEW_ILLUSION,
+        .accuracy = 95,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+        .ballisticMove = TRUE,
+        .minimizeDoubleDamage = TRUE,
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_OmegaBlaster,
+    },
+
+    [MOVE_SUPER_SPIRIT_BOMB] =
+    {
+        .name = COMPOUND_STRING("Super Spirit Bomb"),
+        .description = COMPOUND_STRING(
+            "Super effective against\n"
+            "Nether or Dark foes."),
+        .effect = EFFECT_TWO_TURNS_ATTACK,
+        .power = 160,
+        .type = TYPE_NEW_ILLUSION,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .criticalHitStage = 2,
+        .sleepTalkBanned = TRUE,
+        .instructBanned = TRUE,
+        .metronomeBanned = TRUE,
+        .argument.twoTurnAttack = { .stringId = STRINGID_GATHERINGENERGYINTHESKY },
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_SuperSpiritBomb,
+    },
+
+
 // ============= Start Classing Moves ===================
 
     [MOVE_CLASSIC_POUND] =

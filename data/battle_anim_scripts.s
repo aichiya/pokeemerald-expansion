@@ -23172,6 +23172,131 @@ gBattleAnimGeneral_UltraMedicineBurstOut::
 	waitbgfadeout
 	end
 
+gBattleAnimMove_SpiritBomb::
+    loadspritegfx ANIM_TAG_POSEIDON_FORCE
+	loadspritegfx ANIM_TAG_EXPLOSION
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_POSEIDON_FORCE, 0, 4, 4, RGB_CYAN
+	delay 30
+	createsprite gSpiritBombTemplate, ANIM_TARGET, 2, 0, 0, 0, 20, 0x50, 0x0
+@	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_BG, 1, 0, 14, RGB_CYAN
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	delay 0x30 @ waitforvisualfinish
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 50, 1
+	call SpiritBombExplode
+	delay 5
+@	call SpiritBombExplode
+@	delay 5
+@	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_BG, 1, 14, 0, RGB_CYAN
+@	call SpiritBombExplode
+@	delay 5
+@	visible ANIM_ATTACKER
+	waitforvisualfinish
+	end
+SpiritBombExplode:
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 6, 5, 1, 0
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -16, -15, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 16, -5, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -12, 18, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 6, 5, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -16, -15, 1, 0
+	delay 6
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 16, -5, 1, 0
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -12, 18, 1, 0
+	delay 6
+	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
+	delay 6
+	return
+
+
+gBattleAnimMove_OmegaBlaster::
+    loadspritegfx ANIM_TAG_POSEIDON_FORCE
+	loadspritegfx ANIM_TAG_EXPLOSION
+	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_POSEIDON_FORCE, 0, 8, 8, RGB_GREEN
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_CIRCLE_OF_LIGHT, 0, 8, 8, RGB_GREEN
+	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_BG, 1, 0, 14, RGB_GREEN
+	monbg ANIM_ATTACKER
+	createsprite gOmegaBlasterEnergyPrepTemplate, ANIM_ATTACKER, 0x4000, 0, 0, 0, 0x40
+	playsewithpan SE_M_REVERSAL, SOUND_PAN_ATTACKER
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_BG, 1, 14, 0, RGB_GREEN
+	clearmonbg ANIM_ATTACKER
+	delay 30
+	createsprite gOmegaBlasterTemplate, ANIM_TARGET, 2, 0, 0, 0, 20, 0x60, 0x0
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	delay 0x30 @ waitforvisualfinish
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 50, 1
+	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_BG, 1, 0, 14, RGB_GREEN
+	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_TARGET, 3, 0x0, 0x10, RGB_GREEN
+	call SpiritBombExplode
+	delay 5
+@	call SpiritBombExplode
+@	delay 5
+	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_BG, 1, 14, 0, RGB_GREEN
+	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_TARGET, 3, 0x10, 0x0, RGB_GREEN
+@	call SpiritBombExplode
+@	delay 5
+@	visible ANIM_ATTACKER
+	waitforvisualfinish
+	end
+
+gBattleAnimMove_SuperSpiritBomb::
+	choosetwoturnanim SuperSpiritBombSetUp, SuperSpiritBombUnleash
+SuperSpiritBombEnd:
+	end
+SuperSpiritBombSetUp:
+	loadspritegfx ANIM_TAG_SUNLIGHT
+	monbg ANIM_ATK_PARTNER
+	setalpha 13, 3
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS_2), 1, 0, 6, RGB_WHITE
+	waitforvisualfinish
+	panse_adjustnone SE_M_PETAL_DANCE, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +1, 0
+	call SunnyDayLightRay
+	call SunnyDayLightRay
+	call SunnyDayLightRay
+	call SunnyDayLightRay
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS_2), 1, 6, 0, RGB_WHITE
+	waitforvisualfinish
+	clearmonbg ANIM_ATK_PARTNER
+	blendoff
+	goto SuperSpiritBombEnd
+SuperSpiritBombUnleash:
+    loadspritegfx ANIM_TAG_POSEIDON_FORCE
+	loadspritegfx ANIM_TAG_EXPLOSION
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS_2), 1, 0, 6, RGB_WHITE
+	delay 30
+	createsprite gOmegaBlasterTemplate, ANIM_TARGET, 2, 0, -90, 0, 20, 0x60, 0x0
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	delay 0x30 @ waitforvisualfinish
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 50, 1
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS_2), 1, 6, 0, RGB_WHITE
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 5, 5, 2, 0, 16, RGB_WHITEALPHA
+	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_TARGET, 3, 0x0, 0x10, RGB_CYAN
+	call SpiritBombExplode
+	call SpiritBombExplode
+	call SpiritBombExplode
+	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_TARGET, 3, 0x10, 0x0, RGB_CYAN
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 5, 5, 2, 16, 0, RGB_WHITEALPHA
+	waitforvisualfinish
+	goto SuperSpiritBombEnd
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
 gBattleAnimMove_MirrorMove::

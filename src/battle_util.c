@@ -10198,6 +10198,9 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         mod = UQ_4_12(1.0);
     if (GetMoveEffect(ctx->move) == EFFECT_SUPER_EFFECTIVE_ON_ARG && defType == GetMoveArgType(ctx->move))
         mod = UQ_4_12(2.0);
+    if ((gCurrentMove == MOVE_SPIRIT_BOMB || gCurrentMove == MOVE_SUPER_SPIRIT_BOMB)
+     || (defType == TYPE_NEW_DARK || defType == TYPE_NEW_NETHER))
+        mod = UQ_4_12(2.0);
     if (GetMoveEffect(ctx->move) == EFFECT_QUINTETT_FEUER && 
         (defType == TYPE_NEW_EARTH
         || defType == TYPE_NEW_ELECTRIC

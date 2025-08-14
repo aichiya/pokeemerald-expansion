@@ -4261,6 +4261,20 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        case ABILITY_RIDE_SUMMON:
+            if (!gSpecialStatuses[battler].switchInAbilityDone && !gBattleMons[battler].volatiles.substitute)
+            {
+                gBattlerAttacker = battler;
+                gBattlerTarget = battler;
+                gBattleMons[gBattlerAttacker].volatiles.substitute = TRUE;
+                gDisableStructs[gBattlerAttacker].substituteHP = gBattleMons[gBattlerAttacker].maxHP / 4;
+                gBattleMons[gBattlerAttacker].volatiles.wrapped = FALSE;
+                gHitMarker |= HITMARKER_IGNORE_SUBSTITUTE;
+                gSpecialStatuses[battler].switchInAbilityDone = TRUE;
+                BattleScriptPushCursorAndCallback(BattleScript_RideSummonActivates);
+                effect++;
+            }
+            break;
         case ABILITY_SUPERSWEET_SYRUP:
             if (!gSpecialStatuses[battler].switchInAbilityDone
              && !GetBattlerPartyState(battler)->supersweetSyrup)

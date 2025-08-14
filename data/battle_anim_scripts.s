@@ -23298,6 +23298,10 @@ SuperSpiritBombUnleash:
 	waitforvisualfinish
 	goto SuperSpiritBombEnd
 
+gBattleAnimGeneral_RideSummonSubstitute::
+    goto gBattleAnimMove_Substitute
+	end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
 gBattleAnimMove_MirrorMove::

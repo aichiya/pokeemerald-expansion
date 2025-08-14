@@ -10461,3 +10461,12 @@ BattleScript_ExShadowSkyHeal::
 	printstring STRINGID_RECOVEREDBYEXSHADOWSKY
 	waitmessage B_WAIT_TIME_LONG
 	end3
+
+BattleScript_RideSummonActivates::
+	call BattleScript_AbilityPopUpScripting
+	pause B_WAIT_TIME_SHORT
+	playanimation BS_SCRIPTING, B_ANIM_RIDE_SUMMON
+	waitanimation
+	printstring STRINGID_PKMNMADESUBSTITUTE
+	waitmessage B_WAIT_TIME_LONG
+	end3

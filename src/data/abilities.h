@@ -2809,4 +2809,10 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .failsOnImposter = TRUE,
     },
 
+    [ABILITY_RIDE_SUMMON] =
+    {
+        .name = _("Ride Summon"),
+        .description = COMPOUND_STRING("Substitute on entry."),
+        .aiRating = 8,
+    },
 };

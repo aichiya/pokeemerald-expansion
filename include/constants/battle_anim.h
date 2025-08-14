@@ -616,10 +616,11 @@
 #define B_ANIM_SIMPLE_HEAL              52
 #define B_ANIM_POWER_CONSTRUCT          53
 #define B_ANIM_COUNTER_SLASH            54
-#define B_ANIM_EX_SHADOW_SKY_CONTINUES     55
+#define B_ANIM_EX_SHADOW_SKY_CONTINUES  55
 #define B_ANIM_ULTRA_MEDICINE           56
+#define B_ANIM_RIDE_SUMMON              57
 
-#define LAST_B_ANIMS_GENERAL            B_ANIM_ULTRA_MEDICINE
+#define LAST_B_ANIMS_GENERAL            B_ANIM_RIDE_SUMMON
 #define NUM_B_ANIMS_GENERAL             (LAST_B_ANIMS_GENERAL + 1)
 
 // special animations table (sBattleAnims_Special)

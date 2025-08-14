@@ -256,6 +256,7 @@ static const u8* const sBattleAnims_General[NUM_B_ANIMS_GENERAL] =
     [B_ANIM_COUNTER_SLASH]          = gBattleAnimGeneral_CounterSlash,
     [B_ANIM_EX_SHADOW_SKY_CONTINUES]   = gBattleAnimGeneral_ShadowSky,
     [B_ANIM_ULTRA_MEDICINE]         = gBattleAnimGeneral_UltraMedicineBurstOut,
+    [B_ANIM_RIDE_SUMMON]            = gBattleAnimGeneral_RideSummonSubstitute,
 };
 
 static const u8* const sBattleAnims_Special[NUM_B_ANIMS_SPECIAL] =

@@ -2441,7 +2441,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
     },
     
-    [ABILITY_DIMENSION_OVERSEER] = // to do
+    [ABILITY_DIMENSION_SEER] = // to do
     {
         .name = _("Dimension Seer"),
         .description = COMPOUND_STRING("Walls & Safeguard on switch."),
@@ -2451,7 +2451,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_DOLL_WALL] = // to do
     {
         .name = _("Doll Wall"),
-        .description = COMPOUND_STRING("Makes a doll."),
+        .description = COMPOUND_STRING("Hurts to touch."),
         .aiRating = 7,
     },
     
@@ -2476,9 +2476,9 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 10,
     },
     
-    [ABILITY_DEUS_EX_MACHINA] =
+    [ABILITY_ILLUSIONARY_GIRL] =
     {
-        .name = _("Shoujo Gensou"),
+        .name = _("Illusionary Girl"),
         .description = COMPOUND_STRING("Creates wishes."),
         .aiRating = 10,
     },
@@ -2511,10 +2511,10 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 10,
     },
     
-    [ABILITY_WINNING_COMBINATION_1] = // Reimu-Marisa Unit: electric surge + clear body
+    [ABILITY_DOUBLE_HEROINES] = // Reimu-Marisa Unit: electric surge + clear body
     {
-        .name = _("Combination R-M"),
-        .description = COMPOUND_STRING("Combination of abilities."),
+        .name = _("Double Heroines"),
+        .description = COMPOUND_STRING("Elec field, protects stats."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -2523,10 +2523,10 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeOverwritten = TRUE,
     },
     
-    [ABILITY_WINNING_COMBINATION_2] = // Akisisters: Summon sunlight, heals HP and cures status while sunlight
+    [ABILITY_AUTUMN_GODDESSES] = // Akisisters: Summon sunlight, heals HP and cures status while sunlight
     {
-        .name = _("Combination S-M"),
-        .description = COMPOUND_STRING("Combination of abilities."),
+        .name = _("Autumn Goddesses"),
+        .description = COMPOUND_STRING("Benefited from sunlight."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -2535,10 +2535,10 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeOverwritten = TRUE,
     },
     
-    [ABILITY_WINNING_COMBINATION_3] = // Yorigami sisters: Curse on switch in, shadow tags
+    [ABILITY_YORIGAMI_SISTERS] = // Yorigami sisters: Curse on switch in, shadow tags
     {
-        .name = _("Combination J-S"),
-        .description = COMPOUND_STRING("Combination of abilities."),
+        .name = _("Yorigami Sisters"),
+        .description = COMPOUND_STRING("Curses and can't escape."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -2557,7 +2557,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_FANTASY_BREAKER] =
     {
         .name = _("Fantasy Breaker"),
-        .description = COMPOUND_STRING("Breaks shard of fantasy."),
+        .description = COMPOUND_STRING("Breaks shards of fantasy."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -2570,7 +2570,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_PURE_WHITE] =
     {
         .name = _("Pure White"),
-        .description = COMPOUND_STRING("Benefited from status conditions."),
+        .description = COMPOUND_STRING("Benefited from statuses."),
         .aiRating = 10,
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
@@ -2587,7 +2587,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 7,
     },
 
-    [ABILITY_KRIS_WORKS] =
+    [ABILITY_BLADE_WORKS] =
     {
         .name = _("Blade Works"),
         .description = COMPOUND_STRING("Deploys world of blades."),

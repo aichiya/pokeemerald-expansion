@@ -13393,7 +13393,7 @@ static void Cmd_cursetarget(void)
     {
         gBattlescriptCurrInstr = cmd->failInstr;
     }
-    else if (gBattleMons[gBattlerAttacker].ability == ABILITY_WINNING_COMBINATION_3)
+    else if (gBattleMons[gBattlerAttacker].ability == ABILITY_YORIGAMI_SISTERS)
     {
         gBattleMons[gBattlerTarget].volatiles.cursed = TRUE;
         gBattleStruct->moveDamage[gBattlerAttacker] = 0;
@@ -16386,7 +16386,7 @@ static bool32 CanAbilityPreventStatLoss(u32 abilityDef)
     case ABILITY_FULL_METAL_BODY:
     case ABILITY_WHITE_SMOKE:
     case ABILITY_HAKUREI_MIKO:
-    case ABILITY_WINNING_COMBINATION_1:
+    case ABILITY_DOUBLE_HEROINES:
         return TRUE;
     }
     return FALSE;

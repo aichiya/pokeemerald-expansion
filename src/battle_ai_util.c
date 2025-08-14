@@ -2058,7 +2058,7 @@ bool32 CanLowerStat(u32 battlerAtk, u32 battlerDef, struct AiLogicData *aiData, 
         case ABILITY_WHITE_SMOKE:
         case ABILITY_FULL_METAL_BODY:
 		case ABILITY_HAKUREI_MIKO:
-		case ABILITY_WINNING_COMBINATION_1:
+		case ABILITY_DOUBLE_HEROINES:
             return FALSE;
         default:
             break;

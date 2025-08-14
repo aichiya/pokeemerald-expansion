@@ -3705,7 +3705,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_WINNING_COMBINATION_1:
+        case ABILITY_DOUBLE_HEROINES:
             if (TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN, &gFieldTimers.terrainTimer))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_ElectricSurgeActivates);
@@ -4036,7 +4036,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_KRIS_WORKS:
+        case ABILITY_BLADE_WORKS:
             if (TryChangeBattleTerrain(battler, STATUS_FIELD_UBW, &gFieldTimers.terrainTimer))
             {
                 BattleScriptPushCursorAndCallback(BattleScript_UBWActivates);
@@ -4088,7 +4088,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_DIMENSION_OVERSEER:
+        case ABILITY_DIMENSION_SEER:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
                 gBattlerAttacker = battler;
@@ -4115,7 +4115,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 BattleScriptPushCursorAndCallback(BattleScript_FloraElvisSafeguardActivates);
                 effect++;
             }
-        case ABILITY_DEUS_EX_MACHINA:
+        case ABILITY_ILLUSIONARY_GIRL:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
                 gSpecialStatuses[battler].switchInAbilityDone = TRUE;
@@ -4180,7 +4180,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 }
             }
             break;
-        case ABILITY_WINNING_COMBINATION_3:
+        case ABILITY_YORIGAMI_SISTERS:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
                 gBattlerAttacker = battler;
@@ -4460,7 +4460,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
-        case ABILITY_WINNING_COMBINATION_2:
+        case ABILITY_AUTUMN_GODDESSES:
         case ABILITY_ORICHALCUM_PULSE:
             if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN, TRUE))
             {
@@ -4654,7 +4654,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     effect++;
                 }
                 break;
-            case ABILITY_WINNING_COMBINATION_2:
+            case ABILITY_AUTUMN_GODDESSES:
                 if (IsBattlerWeatherAffected(battler, B_WEATHER_SUN)
                  && !IsBattlerAtMaxHp(battler)
                  && !gBattleMons[battler].volatiles.healBlock)
@@ -6019,7 +6019,7 @@ u32 IsAbilityPreventingEscape(u32 battler)
 
         u32 ability = GetBattlerAbility(battlerDef);
 
-        if (ability == ABILITY_SHADOW_TAG && (B_SHADOW_TAG_ESCAPE <= GEN_3 || !(GetBattlerAbility(battler) == ABILITY_SHADOW_TAG || GetBattlerAbility(battler) == ABILITY_WINNING_COMBINATION_3 || GetBattlerAbility(battler) == ABILITY_WORLD_END_GARDEN)))
+        if (ability == ABILITY_SHADOW_TAG && (B_SHADOW_TAG_ESCAPE <= GEN_3 || !(GetBattlerAbility(battler) == ABILITY_SHADOW_TAG || GetBattlerAbility(battler) == ABILITY_YORIGAMI_SISTERS || GetBattlerAbility(battler) == ABILITY_WORLD_END_GARDEN)))
             return battlerDef + 1;
 
         if (ability == ABILITY_ARENA_TRAP && IsBattlerGrounded(battler))
@@ -6028,10 +6028,10 @@ u32 IsAbilityPreventingEscape(u32 battler)
         if (ability == ABILITY_MAGNET_PULL && IS_BATTLER_OF_TYPE(battler, TYPE_NEW_METAL))
             return battlerDef + 1;
         
-		if (ability == ABILITY_WINNING_COMBINATION_3  && (B_SHADOW_TAG_ESCAPE <= GEN_3 || !(GetBattlerAbility(battler) == ABILITY_SHADOW_TAG || GetBattlerAbility(battler) == ABILITY_WINNING_COMBINATION_3 || GetBattlerAbility(battler) == ABILITY_WORLD_END_GARDEN)))
+		if (ability == ABILITY_YORIGAMI_SISTERS  && (B_SHADOW_TAG_ESCAPE <= GEN_3 || !(GetBattlerAbility(battler) == ABILITY_SHADOW_TAG || GetBattlerAbility(battler) == ABILITY_YORIGAMI_SISTERS || GetBattlerAbility(battler) == ABILITY_WORLD_END_GARDEN)))
             return battlerDef + 1;
 	
-    	if (ability == ABILITY_WORLD_END_GARDEN  && (B_SHADOW_TAG_ESCAPE <= GEN_3 || !(GetBattlerAbility(battler) == ABILITY_SHADOW_TAG || GetBattlerAbility(battler) == ABILITY_WINNING_COMBINATION_3 || GetBattlerAbility(battler) == ABILITY_WORLD_END_GARDEN)))
+    	if (ability == ABILITY_WORLD_END_GARDEN  && (B_SHADOW_TAG_ESCAPE <= GEN_3 || !(GetBattlerAbility(battler) == ABILITY_SHADOW_TAG || GetBattlerAbility(battler) == ABILITY_YORIGAMI_SISTERS || GetBattlerAbility(battler) == ABILITY_WORLD_END_GARDEN)))
             return battlerDef + 1;
     }
 
@@ -9323,7 +9323,7 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         if (gBattleMons[battlerAtk].status1 & STATUS1_ANY && IsBattleMovePhysical(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
-    case ABILITY_WINNING_COMBINATION_2: // Aki Sisters
+    case ABILITY_AUTUMN_GODDESSES: // Aki Sisters
         if (IsBattleMoveSpecial(move) && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SUN))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;

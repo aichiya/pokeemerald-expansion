@@ -165,7 +165,7 @@ static bool32 DoesAbilityBenefitFromWeather(u32 ability, u32 weather)
     case ABILITY_LEAF_GUARD:
     case ABILITY_ORICHALCUM_PULSE:
     case ABILITY_PROTOSYNTHESIS:
-    case ABILITY_WINNING_COMBINATION_2:
+    case ABILITY_AUTUMN_GODDESSES:
     case ABILITY_SOLAR_POWER:
         return (weather & B_WEATHER_SUN);
     default:
@@ -232,7 +232,7 @@ static enum FieldEffectOutcome BenefitsFromSun(u32 battler)
 
     if (gAiLogicData->holdEffects[battler] == HOLD_EFFECT_UTILITY_UMBRELLA)
     {
-        if (ability == ABILITY_ORICHALCUM_PULSE || ability == ABILITY_PROTOSYNTHESIS || ability == ABILITY_WINNING_COMBINATION_2)
+        if (ability == ABILITY_ORICHALCUM_PULSE || ability == ABILITY_PROTOSYNTHESIS || ability == ABILITY_AUTUMN_GODDESSES)
             return FIELD_EFFECT_POSITIVE;
         else
             return FIELD_EFFECT_NEUTRAL;

@@ -910,6 +910,7 @@ extern const u8 BattleScript_WishMegaEvolutionIllya[];
 extern const u8 BattleScript_EffectGaiaForce[];
 extern const u8 BattleScript_EffectAstromancy[];
 extern const u8 BattleScript_EffectSpAtkSpDefUp2[];
+extern const u8 BattleScript_EffectTransformHit[];
 extern const u8 BattleScript_ExShadowSkyHeal[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

@@ -12626,7 +12626,7 @@ static void Cmd_transformdataexecution(void)
 
         BtlController_EmitResetActionMoveSelection(gBattlerAttacker, B_COMM_TO_CONTROLLER, RESET_MOVE_SELECTION);
         MarkBattlerForControllerExec(gBattlerAttacker);
-        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORMED;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CALLING_FRIEND;
     }
 }
 
@@ -18816,6 +18816,81 @@ void BS_TransformDataExecutionDecade(void)
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
+void BS_TransformDataExecutionCallingMultiUnit(void)
+{
+    NATIVE_ARGS();
+
+    gChosenMove = MOVE_UNAVAILABLE;
+
+    s32 i;
+    u8 timesGotHit;
+    u16 speciesBuffer;
+    u32 ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpd, baseAtk, baseDef, baseSpAtk, baseSpDef, baseSpd;
+    u8 currentLevel;
+    u32 calcAtk, calcDef, calcSpAtk, calcSpDef, calcSpd;
+
+    gBattlerTarget = gBattlerAttacker;
+
+    gBattleMons[gBattlerAttacker].volatiles.transformed = TRUE;
+    gDisableStructs[gBattlerAttacker].disabledMove = MOVE_NONE;
+    gDisableStructs[gBattlerAttacker].disableTimer = 0;
+    gDisableStructs[gBattlerAttacker].transformedMonPersonality = gBattleMons[gBattlerAttacker].personality;
+    gDisableStructs[gBattlerAttacker].transformedMonShininess = gBattleMons[gBattlerAttacker].isShiny;
+    gDisableStructs[gBattlerAttacker].mimickedMoves = 0;
+    gDisableStructs[gBattlerAttacker].usedMoves = 0;
+
+    timesGotHit = GetBattlerPartyState(gBattlerTarget)->timesGotHit;
+    GetBattlerPartyState(gBattlerAttacker)->timesGotHit = timesGotHit;
+
+    if (gBattleMons[gBattlerAttacker].species == SPECIES_MEW)
+    {
+        speciesBuffer = SPECIES_RAYQUAZA_MEGA;
+    }
+    else
+    {
+        speciesBuffer = SPECIES_DIANCIE_MEGA;
+    }
+
+    PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
+    gDisableStructs[gBattlerAttacker].transformationDCDTemp = speciesBuffer;
+    currentLevel = gBattleMons[gBattlerAttacker].level;
+    baseAtk = gSpeciesInfo[speciesBuffer].baseAttack;
+    baseDef = gSpeciesInfo[speciesBuffer].baseDefense;
+    baseSpAtk = gSpeciesInfo[speciesBuffer].baseSpeed;
+    baseSpDef = gSpeciesInfo[speciesBuffer].baseSpAttack;
+    baseSpd = gSpeciesInfo[speciesBuffer].baseSpDefense;
+    ivAtk = gBattleMons[gBattlerAttacker].attackIV;
+    ivDef = gBattleMons[gBattlerAttacker].defenseIV;
+    ivSpAtk = gBattleMons[gBattlerAttacker].speedIV;
+    ivSpDef = gBattleMons[gBattlerAttacker].spAttackIV;
+    ivSpd = gBattleMons[gBattlerAttacker].spDefenseIV;
+    calcAtk = (((2 * baseAtk + ivAtk) * currentLevel) / 100) + 5;
+    calcDef = (((2 * baseDef + ivDef) * currentLevel) / 100) + 5;
+    calcSpAtk = (((2 * baseSpAtk + ivSpAtk) * currentLevel) / 100) + 5;
+    calcSpDef = (((2 * baseSpDef + ivSpDef) * currentLevel) / 100) + 5;
+    calcSpd = (((2 * baseSpd + ivSpd) * currentLevel) / 100) + 5;
+
+    gBattleMons[gBattlerAttacker].species = speciesBuffer;
+    gBattleMons[gBattlerAttacker].attack = calcAtk;
+    gBattleMons[gBattlerAttacker].defense = calcDef;
+    gBattleMons[gBattlerAttacker].speed = calcSpd;
+    gBattleMons[gBattlerAttacker].spAttack = calcSpAtk;
+    gBattleMons[gBattlerAttacker].spDefense = calcSpDef;
+    gBattleMons[gBattlerAttacker].types[0] = gSpeciesInfo[speciesBuffer].types[0];
+    gBattleMons[gBattlerAttacker].types[1] = gSpeciesInfo[speciesBuffer].types[1];
+    gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
+    gDisableStructs[gBattlerAttacker].overwrittenAbility = gBattleMons[gBattlerAttacker].ability;
+
+    // update AI knowledge
+    RecordAllMoves(gBattlerAttacker);
+    RecordAbilityBattle(gBattlerAttacker, gBattleMons[gBattlerAttacker].ability);
+
+    BtlController_EmitResetActionMoveSelection(gBattlerAttacker, B_COMM_TO_CONTROLLER, RESET_MOVE_SELECTION);
+    MarkBattlerForControllerExec(gBattlerAttacker);
+    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORMED;
+
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
 
 void BS_SetMiasmaTerrainFromAbility(void)
 {

@@ -2351,6 +2351,12 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 0, // TODO: Assign points
     },
 
+    [EFFECT_TRANSFORM_AND_HIT_WITH_ARG_CONDITION] =
+    {
+        .battleScript = BattleScript_EffectTransformHit,
+        .battleTvScore = 0, // TODO: Assign points
+    },
+
     [EFFECT_EX_SHADOW_MOVE_HIT] =
     {
         .battleScript = BattleScript_EffectHit,

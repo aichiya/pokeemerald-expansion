@@ -23032,6 +23032,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Swift,
     },
 
+    [MOVE_BEAT_UP_CALLING] =
+    {
+        .name = COMPOUND_STRING("Beat Up"),
+        .description = COMPOUND_STRING(
+            "Attacks the target\n"
+            "mercilessly."),
+        .effect = EFFECT_TRANSFORM_AND_HIT_WITH_ARG_CONDITION,
+        .power = 100,
+        .type = TYPE_NEW_MYSTERY,
+        .accuracy = 100,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Transform,
+    },
+
 // ============= Start Classing Moves ===================
 
     [MOVE_CLASSIC_POUND] =

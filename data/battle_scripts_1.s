@@ -57,6 +57,62 @@ BattleScript_EffectATrance::
 	waitmessage B_WAIT_TIME_LONG
 	jumptocalledmove TRUE
 
+BattleScript_EffectTransformHit::
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	jumpifspecies SPECIES_MEW, BattleScript_EffectTransformHitDoTransformFirst
+BattleScript_EffectTransformHitSkipTransform:
+	critcalc
+	damagecalc
+	adjustdamage
+	playmoveanimation MOVE_CLOSE_COMBAT
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	setadditionaleffects
+	tryfaintmon BS_TARGET
+	moveendall
+	end
+BattleScript_EffectTransformHitDoTransformFirst:
+	saveattacker
+	savetarget
+	trytoclearprimalweather
+	flushtextbox
+	transformdataexecutioncallingmultiunit
+	attackanimation
+	waitanimation
+	printfromtable gTransformHitCallingFriendUsedStringIds
+	waitmessage B_WAIT_TIME_LONG
+	restoreattacker
+	restoretarget
+	critcalc
+	damagecalc
+	adjustdamage
+	playmoveanimation MOVE_CLOSE_COMBAT
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	setadditionaleffects
+	tryfaintmon BS_TARGET
+	moveendall
+	end
+
 BattleScript_EffectUltraInstinct::
 	attackcanceler
 	attackstring

@@ -1946,6 +1946,10 @@
 	callnative BS_TransformDataExecutionDecade
 	.endm
 
+	.macro transformdataexecutioncallingmultiunit
+	callnative BS_TransformDataExecutionCallingMultiUnit
+	.endm
+
 	.macro jumpifroarfails jumpInstr:req
 	callnative BS_JumpIfRoarFails
 	.4byte \jumpInstr

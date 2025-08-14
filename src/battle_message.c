@@ -933,6 +933,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_EXSHADOWYAURADEEPEN]                  = COMPOUND_STRING("The shadowy aura continously stays in the sky!"),
     [STRINGID_PKMNSTATSHIGHTENED]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}'s stats hightened!"),
     [STRINGID_GATHERINGENERGYINTHESKY]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is gathering energy in the sky!"),
+    [STRINGID_CALLINGFRIENDANDBEATUP]               = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is grouping up and beating up!"),
+    [STRINGID_CALLINGFRIENDFAILED]                  = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} failed to group up!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1224,6 +1226,12 @@ const u16 gTransformUsedStringIds[] =
 {
     [B_MSG_TRANSFORMED]      = STRINGID_PKMNTRANSFORMEDINTO,
     [B_MSG_TRANSFORM_FAILED] = STRINGID_BUTITFAILED
+};
+
+const u16 gTransformHitCallingFriendUsedStringIds[] =
+{
+    [B_MSG_CALLING_FRIEND]        = STRINGID_CALLINGFRIENDANDBEATUP,
+    [B_MSG_CALLING_FRIEND_FAILED] = STRINGID_CALLINGFRIENDFAILED
 };
 
 const u16 gSubstituteUsedStringIds[] =

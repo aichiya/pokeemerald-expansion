@@ -2815,4 +2815,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Substitute on entry."),
         .aiRating = 8,
     },
+
+    [ABILITY_PUPPETEER] =
+    {
+        .name = _("Puppeteer"),
+        .description = COMPOUND_STRING("Substitute on entry."),
+        .aiRating = 8,
+    },
 };

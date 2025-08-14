@@ -4264,6 +4264,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             break;
         case ABILITY_RIDE_SUMMON:
+        case ABILITY_PUPPETEER:
             if (!gSpecialStatuses[battler].switchInAbilityDone && !gBattleMons[battler].volatiles.substitute)
             {
                 gBattlerAttacker = battler;

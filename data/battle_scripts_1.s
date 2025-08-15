@@ -10524,6 +10524,7 @@ BattleScript_RideSummonActivates::
 	pause B_WAIT_TIME_SHORT
 	playanimation BS_SCRIPTING, B_ANIM_RIDE_SUMMON
 	waitanimation
+	setspritebehindsubstitute
 	printstring STRINGID_PKMNMADESUBSTITUTE
 	waitmessage B_WAIT_TIME_LONG
 	end3

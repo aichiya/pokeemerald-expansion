@@ -18892,6 +18892,14 @@ void BS_TransformDataExecutionCallingMultiUnit(void)
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
+void BS_SetSpriteBehindSubstitute(void)
+{
+    NATIVE_ARGS();
+
+    gBattleSpritesDataPtr->battlerData[gBattlerAttacker].behindSubstitute = 1;
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
 void BS_SetMiasmaTerrainFromAbility(void)
 {
     NATIVE_ARGS(const u8 *jumpInstr);

@@ -1950,6 +1950,10 @@
 	callnative BS_TransformDataExecutionCallingMultiUnit
 	.endm
 
+	.macro setspritebehindsubstitute
+	callnative BS_SetSpriteBehindSubstitute
+	.endm
+
 	.macro jumpifroarfails jumpInstr:req
 	callnative BS_JumpIfRoarFails
 	.4byte \jumpInstr

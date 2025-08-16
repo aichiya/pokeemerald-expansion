@@ -11414,64 +11414,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_RAYQUAZA"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_LATIOS"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_RAYQUAZA"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_LATIOS"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_RAYQUAZA"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_LATIOS"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_RAYQUAZA"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_LATIOS"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_RAYQUAZA"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_LATIOS"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_RAYQUAZA"
               },
               {
-                "min_level": 60,
-                "max_level": 60,
-                "species": "SPECIES_GHOLDENGO"
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_LATIOS"
               }
             ]
           },

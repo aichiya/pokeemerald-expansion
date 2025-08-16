@@ -12286,7 +12286,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 110,
         .baseSpAttack  = 130,
         .baseSpDefense = 110,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_PSYCHIC),
+        .types = MON_TYPES(TYPE_NEW_DREAM, TYPE_NEW_FLYING),
         .catchRate = 3,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 300,
@@ -12296,14 +12296,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .expYield = 211,
     #endif
         .evYield_SpAttack = 3,
-        .genderRatio = MON_MALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 90,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_HAKUREI_BARRIER, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Latios"),
+        .speciesName = _("Reimu"),
         .cryId = CRY_LATIOS,
         .natDexNum = NATIONAL_DEX_LATIOS,
         .categoryName = _("Eon"),
@@ -12329,9 +12329,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_SHAKE : ANIM_CIRCLE_C_CLOCKWISE_SLOW,
-        .enemyMonElevation = 6,
+        .enemyMonElevation = 0,
         .backPic = gMonBackPic_Latios,
-        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(56, 64),
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(64, 64),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 3 : 0,
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Latios,
@@ -12339,7 +12339,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Latios,
         .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(1, 17, SHADOW_SIZE_M)
+        SHADOW(4, 14, SHADOW_SIZE_L)
         FOOTPRINT(Latios)
         OVERWORLD(
             sPicTable_Latios,
@@ -12367,7 +12367,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 110,
         .baseSpAttack  = 160,
         .baseSpDefense = 120,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_PSYCHIC),
+        .types = MON_TYPES(TYPE_NEW_DREAM, TYPE_NEW_ELECTRIC),
         .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 350 : 315,
         .evYield_SpAttack = 3,
@@ -12376,9 +12376,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 90,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
+        .abilities = { ABILITY_DOUBLE_HEROINES, ABILITY_DOUBLE_HEROINES, ABILITY_DOUBLE_HEROINES },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Latios"),
+        .speciesName = _("Reimu"),
         .cryId = CRY_LATIOS_MEGA,
         .natDexNum = NATIONAL_DEX_LATIOS,
         .categoryName = _("Eon"),
@@ -12398,7 +12398,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 8,
+        .enemyMonElevation = 0,
         .backPic = gMonBackPic_LatiosMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
@@ -12408,7 +12408,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_LatiosMega,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-1, 19, SHADOW_SIZE_L)
+        SHADOW(0, 14, SHADOW_SIZE_L)
         FOOTPRINT(Latios)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
@@ -12751,7 +12751,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 115,
         .baseSpAttack  = 150,
         .baseSpDefense = 110,
-        .types = MON_TYPES(TYPE_NEW_REASON, TYPE_NEW_HEART),
+        .types = MON_TYPES(TYPE_NEW_NATURE, TYPE_NEW_EARTH),
         .catchRate = 45,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 340,
@@ -12767,9 +12767,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_KALEID_RUBY, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Illyasviel"),
+        .speciesName = _("Shizuha"),
         .cryId = CRY_RAYQUAZA,
         .natDexNum = NATIONAL_DEX_RAYQUAZA,
         .categoryName = _("Sky High"),
@@ -12800,7 +12800,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Rayquaza,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 17, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_L)
         FOOTPRINT(Rayquaza)
         OVERWORLD(
             sPicTable_Rayquaza,
@@ -12829,7 +12829,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 135,
         .baseSpAttack  = 180,
         .baseSpDefense = 120,
-        .types = MON_TYPES(TYPE_NEW_REASON, TYPE_NEW_HEART),
+        .types = MON_TYPES(TYPE_NEW_NATURE, TYPE_NEW_EARTH),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 390 : 351,
         .evYield_Attack = 2,
@@ -12839,9 +12839,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_PRISMA_ZWEI, ABILITY_PRISMA_ZWEI, ABILITY_PRISMA_ZWEI },
+        .abilities = { ABILITY_DAUNTLESS_SHIELD, ABILITY_DAUNTLESS_SHIELD, ABILITY_DAUNTLESS_SHIELD },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Illyasviel"),
+        .speciesName = _("Aki Sisters"),
         .cryId = CRY_RAYQUAZA,
         .natDexNum = NATIONAL_DEX_RAYQUAZA,
         .categoryName = _("Sky High"),
@@ -12871,7 +12871,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_RayquazaMega,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 15, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_L)
         FOOTPRINT(Rayquaza)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(

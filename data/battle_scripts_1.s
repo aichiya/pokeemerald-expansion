@@ -62,8 +62,9 @@ BattleScript_EffectTransformHit::
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
 	ppreduce
-	jumpifspecies SPECIES_MEW, BattleScript_EffectTransformHitDoTransformFirst
-BattleScript_EffectTransformHitSkipTransform:
+	jumpifspecies SPECIES_RAYQUAZA, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
+	jumpifspecies SPECIES_LATIOS, BattleScript_EffectTransformHitDoTransformFirstReiMari
+BattleScript_EffectTransformHitBeatingUp:
 	critcalc
 	damagecalc
 	adjustdamage
@@ -82,7 +83,30 @@ BattleScript_EffectTransformHitSkipTransform:
 	tryfaintmon BS_TARGET
 	moveendall
 	end
-BattleScript_EffectTransformHitDoTransformFirst:
+BattleScript_EffectTransformHitDoTransformFirstAkiSisters:
+	call BattleScript_EffectTransformHitDoTransform
+BattleScript_EffectTransformHitDoTransformFirstAkiSistersSunnyDay:
+	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_SUN_PRIMAL, BattleScript_EffectTransformHitBeatingUp
+	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_RAIN_PRIMAL, BattleScript_EffectTransformHitBeatingUp
+	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_STRONG_WINDS, BattleScript_EffectTransformHitBeatingUp
+	setfieldweather BATTLE_WEATHER_SUN
+	playmoveanimation MOVE_SUNNY_DAY
+	waitanimation
+	call BattleScript_MoveWeatherChangeRet
+	goto BattleScript_EffectTransformHitBeatingUp
+BattleScript_EffectTransformHitDoTransformFirstReiMari:
+	call BattleScript_EffectTransformHitDoTransform
+BattleScript_EffectTransformHitDoTransformFirstReiMariElectricTerrain:
+	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_ELECTRIC_TERRAIN, BattleScript_EffectTransformHitBeatingUp
+	setelectricterrainfromability BattleScript_EffectTransformHitBeatingUp
+@	call BattleScript_AbilityPopUpScripting
+	printstring STRINGID_TERRAINBECOMESELECTRIC
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
+	call BattleScript_ActivateTerrainEffects
+	goto BattleScript_EffectTransformHitBeatingUp
+
+BattleScript_EffectTransformHitDoTransform:
 	saveattacker
 	savetarget
 	trytoclearprimalweather
@@ -94,24 +118,7 @@ BattleScript_EffectTransformHitDoTransformFirst:
 	waitmessage B_WAIT_TIME_LONG
 	restoreattacker
 	restoretarget
-	critcalc
-	damagecalc
-	adjustdamage
-	playmoveanimation MOVE_CLOSE_COMBAT
-	waitanimation
-	effectivenesssound
-	hitanimation BS_TARGET
-	waitstate
-	healthbarupdate BS_TARGET
-	datahpupdate BS_TARGET
-	critmessage
-	waitmessage B_WAIT_TIME_LONG
-	resultmessage
-	waitmessage B_WAIT_TIME_LONG
-	setadditionaleffects
-	tryfaintmon BS_TARGET
-	moveendall
-	end
+	return
 
 BattleScript_EffectUltraInstinct::
 	attackcanceler
@@ -10527,4 +10534,8 @@ BattleScript_RideSummonActivates::
 	setspritebehindsubstitute
 	printstring STRINGID_PKMNMADESUBSTITUTE
 	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_AutumnGoddessesHealingActivates::
+	call BattleScript_AbilityHpHeal
 	end3

@@ -6392,10 +6392,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
 #if P_FAMILY_MEW
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Mew[] = INCBIN_U32("graphics/pokemon/_add/moe/mew/anim_front.4bpp.smol");
-    const u16 gMonPalette_Mew[] = INCBIN_U16("graphics/pokemon/_add/moe/mew/normal.gbapal");
-    const u32 gMonBackPic_Mew[] = INCBIN_U32("graphics/pokemon/_add/moe/mew/back.4bpp.smol");
-    const u16 gMonShinyPalette_Mew[] = INCBIN_U16("graphics/pokemon/_add/moe/mew/shiny.gbapal");
+    const u32 gMonFrontPic_Mew[] = INCBIN_U32("graphics/pokemon/_add/th/alice/tech/anim_front.4bpp.smol");
+    const u16 gMonPalette_Mew[] = INCBIN_U16("graphics/pokemon/_add/th/alice/tech/normal.gbapal");
+    const u32 gMonBackPic_Mew[] = INCBIN_U32("graphics/pokemon/_add/th/alice/tech/back.4bpp.smol");
+    const u16 gMonShinyPalette_Mew[] = INCBIN_U16("graphics/pokemon/_add/th/alice/tech/shiny.gbapal");
 #else
     const u32 gMonFrontPic_Mew[] = INCBIN_U32("graphics/pokemon/mew/anim_front_gba.4bpp.smol");
     const u16 gMonPalette_Mew[] = INCBIN_U16("graphics/pokemon/mew/normal_gba.gbapal");
@@ -6403,12 +6403,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Mew[] = INCBIN_U16("graphics/pokemon/mew/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Mew[] = INCBIN_U8("graphics/pokemon/_add/moe/mew/icon.4bpp");
+    const u8 gMonIcon_Mew[] = INCBIN_U8("graphics/pokemon/_add/th/alice/tech/icon.4bpp");
 #else
     const u8 gMonIcon_Mew[] = INCBIN_U8("graphics/pokemon/mew/icon_gba.4bpp");
 #endif //P_GBA_STYLE_SPECIES_ICONS
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Mew[] = INCBIN_U8("graphics/pokemon/_add/moe/mew/footprint.1bpp");
+    const u8 gMonFootprint_Mew[] = INCBIN_U8("graphics/pokemon/_add/th/alice/tech/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Mew[] = INCBIN_COMP("graphics/pokemon/mew/overworld.4bpp");
@@ -13734,10 +13734,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
 #if P_FAMILY_LATIOS
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Latios[] = INCBIN_U32("graphics/pokemon/latios/anim_front.4bpp.smol");
-    const u16 gMonPalette_Latios[] = INCBIN_U16("graphics/pokemon/latios/normal.gbapal");
-    const u32 gMonBackPic_Latios[] = INCBIN_U32("graphics/pokemon/latios/back.4bpp.smol");
-    const u16 gMonShinyPalette_Latios[] = INCBIN_U16("graphics/pokemon/latios/shiny.gbapal");
+    const u32 gMonFrontPic_Latios[] = INCBIN_U32("graphics/pokemon/_add/th/reimu/normal/anim_front.4bpp.smol");
+    const u16 gMonPalette_Latios[] = INCBIN_U16("graphics/pokemon/_add/th/reimu/normal/normal.gbapal");
+    const u32 gMonBackPic_Latios[] = INCBIN_U32("graphics/pokemon/_add/th/reimu/normal/back.4bpp.smol");
+    const u16 gMonShinyPalette_Latios[] = INCBIN_U16("graphics/pokemon/_add/th/reimu/normal/shiny.gbapal");
 #else
     const u32 gMonFrontPic_Latios[] = INCBIN_U32("graphics/pokemon/latios/anim_front_gba.4bpp.smol");
     const u16 gMonPalette_Latios[] = INCBIN_U16("graphics/pokemon/latios/normal_gba.gbapal");
@@ -13745,12 +13745,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Latios[] = INCBIN_U16("graphics/pokemon/latios/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Latios[] = INCBIN_U8("graphics/pokemon/latios/icon.4bpp");
+    const u8 gMonIcon_Latios[] = INCBIN_U8("graphics/pokemon/_add/th/reimu/normal/icon.4bpp");
 #else
     const u8 gMonIcon_Latios[] = INCBIN_U8("graphics/pokemon/latios/icon_gba.4bpp");
 #endif //P_GBA_STYLE_SPECIES_ICONS
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Latios[] = INCBIN_U8("graphics/pokemon/latios/footprint.1bpp");
+    const u8 gMonFootprint_Latios[] = INCBIN_U8("graphics/pokemon/_add/th/reimu/normal/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Latios[] = INCBIN_COMP("graphics/pokemon/latios/overworld.4bpp");
@@ -13761,11 +13761,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_LatiosMega[] = INCBIN_U32("graphics/pokemon/latios/mega/front.4bpp.smol");
-    const u16 gMonPalette_LatiosMega[] = INCBIN_U16("graphics/pokemon/latios/mega/normal.gbapal");
-    const u32 gMonBackPic_LatiosMega[] = INCBIN_U32("graphics/pokemon/latios/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_LatiosMega[] = INCBIN_U16("graphics/pokemon/latios/mega/shiny.gbapal");
-    const u8 gMonIcon_LatiosMega[] = INCBIN_U8("graphics/pokemon/latios/mega/icon.4bpp");
+    const u32 gMonFrontPic_LatiosMega[] = INCBIN_U32("graphics/pokemon/_add/th/multi/reimu_marisa/front.4bpp.smol");
+    const u16 gMonPalette_LatiosMega[] = INCBIN_U16("graphics/pokemon/_add/th/multi/reimu_marisa/normal.gbapal");
+    const u32 gMonBackPic_LatiosMega[] = INCBIN_U32("graphics/pokemon/_add/th/multi/reimu_marisa/back.4bpp.smol");
+    const u16 gMonShinyPalette_LatiosMega[] = INCBIN_U16("graphics/pokemon/_add/th/multi/reimu_marisa/shiny.gbapal");
+    const u8 gMonIcon_LatiosMega[] = INCBIN_U8("graphics/pokemon/_add/th/multi/reimu_marisa/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
     const u32 gObjectEventPic_LatiosMega[] = INCBIN_COMP("graphics/pokemon/latios/mega/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
@@ -13866,10 +13866,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
 #if P_FAMILY_RAYQUAZA
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Rayquaza[] = INCBIN_U32("graphics/pokemon/_add/etc/fate/caster_illyasviel/ruby/anim_front.4bpp.smol");
-    const u16 gMonPalette_Rayquaza[] = INCBIN_U16("graphics/pokemon/_add/etc/fate/caster_illyasviel/ruby/normal.gbapal");
-    const u32 gMonBackPic_Rayquaza[] = INCBIN_U32("graphics/pokemon/_add/etc/fate/caster_illyasviel/ruby/back.4bpp.smol");
-    const u16 gMonShinyPalette_Rayquaza[] = INCBIN_U16("graphics/pokemon/_add/etc/fate/caster_illyasviel/ruby/shiny.gbapal");
+    const u32 gMonFrontPic_Rayquaza[] = INCBIN_U32("graphics/pokemon/_add/th/shizuha/speed/anim_front.4bpp.smol");
+    const u16 gMonPalette_Rayquaza[] = INCBIN_U16("graphics/pokemon/_add/th/shizuha/speed/normal.gbapal");
+    const u32 gMonBackPic_Rayquaza[] = INCBIN_U32("graphics/pokemon/_add/th/shizuha/speed/back.4bpp.smol");
+    const u16 gMonShinyPalette_Rayquaza[] = INCBIN_U16("graphics/pokemon/_add/th/shizuha/speed/shiny.gbapal");
 #else
     const u32 gMonFrontPic_Rayquaza[] = INCBIN_U32("graphics/pokemon/rayquaza/anim_front_gba.4bpp.smol");
     const u16 gMonPalette_Rayquaza[] = INCBIN_U16("graphics/pokemon/rayquaza/normal_gba.gbapal");
@@ -13877,12 +13877,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Rayquaza[] = INCBIN_U16("graphics/pokemon/rayquaza/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Rayquaza[] = INCBIN_U8("graphics/pokemon/_add/etc/fate/caster_illyasviel/ruby/icon.4bpp");
+    const u8 gMonIcon_Rayquaza[] = INCBIN_U8("graphics/pokemon/_add/th/shizuha/speed/icon.4bpp");
 #else
     const u8 gMonIcon_Rayquaza[] = INCBIN_U8("graphics/pokemon/rayquaza/icon_gba.4bpp");
 #endif //P_GBA_STYLE_SPECIES_ICONS
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Rayquaza[] = INCBIN_U8("graphics/pokemon/_add/etc/fate/caster_illyasviel/ruby/footprint.1bpp");
+    const u8 gMonFootprint_Rayquaza[] = INCBIN_U8("graphics/pokemon/_add/th/shizuha/speed/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Rayquaza[] = INCBIN_COMP("graphics/pokemon/rayquaza/overworld.4bpp");
@@ -13893,11 +13893,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_RayquazaMega[] = INCBIN_U32("graphics/pokemon/_add/etc/fate/caster_illyasviel/zwei/front.4bpp.smol");
-    const u16 gMonPalette_RayquazaMega[] = INCBIN_U16("graphics/pokemon/_add/etc/fate/caster_illyasviel/zwei/normal.gbapal");
-    const u32 gMonBackPic_RayquazaMega[] = INCBIN_U32("graphics/pokemon/_add/etc/fate/caster_illyasviel/zwei/back.4bpp.smol");
-    const u16 gMonShinyPalette_RayquazaMega[] = INCBIN_U16("graphics/pokemon/_add/etc/fate/caster_illyasviel/zwei/shiny.gbapal");
-    const u8 gMonIcon_RayquazaMega[] = INCBIN_U8("graphics/pokemon/_add/etc/fate/caster_illyasviel/zwei/icon.4bpp");
+    const u32 gMonFrontPic_RayquazaMega[] = INCBIN_U32("graphics/pokemon/_add/th/multi/akisisters/front.4bpp.smol");
+    const u16 gMonPalette_RayquazaMega[] = INCBIN_U16("graphics/pokemon/_add/th/multi/akisisters/normal.gbapal");
+    const u32 gMonBackPic_RayquazaMega[] = INCBIN_U32("graphics/pokemon/_add/th/multi/akisisters/back.4bpp.smol");
+    const u16 gMonShinyPalette_RayquazaMega[] = INCBIN_U16("graphics/pokemon/_add/th/multi/akisisters/shiny.gbapal");
+    const u8 gMonIcon_RayquazaMega[] = INCBIN_U8("graphics/pokemon/_add/th/multi/akisisters/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
     const u32 gObjectEventPic_RayquazaMega[] = INCBIN_COMP("graphics/pokemon/rayquaza/mega/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE

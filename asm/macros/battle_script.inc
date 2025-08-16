@@ -2547,3 +2547,8 @@
 	callnative BS_SetMiasmaTerrainFromAbility
 	.4byte \failInstr
 	.endm
+
+	.macro setelectricterrainfromability failInstr:req
+	callnative BS_SetElectricTerrainFromAbility
+	.4byte \failInstr
+	.endm

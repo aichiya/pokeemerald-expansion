@@ -23051,7 +23051,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Transform,
+        .battleAnimScript = gBattleAnimMove_BeatUpCalling,
     },
 
 // ============= Start Classing Moves ===================

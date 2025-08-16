@@ -4659,7 +4659,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                  && !IsBattlerAtMaxHp(battler)
                  && !gBattleMons[battler].volatiles.healBlock)
                 {
-                    BattleScriptPushCursorAndCallback(BattleScript_RainDishActivates);
+                    BattleScriptPushCursorAndCallback(BattleScript_AutumnGoddessesHealingActivates);
                     gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
                     if (gBattleStruct->moveDamage[battler] == 0)
                         gBattleStruct->moveDamage[battler] = 1;
@@ -10221,8 +10221,7 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         mod = UQ_4_12(1.0);
     if (GetMoveEffect(ctx->move) == EFFECT_SUPER_EFFECTIVE_ON_ARG && defType == GetMoveArgType(ctx->move))
         mod = UQ_4_12(2.0);
-    if ((gCurrentMove == MOVE_SPIRIT_BOMB || gCurrentMove == MOVE_SUPER_SPIRIT_BOMB)
-     || (defType == TYPE_NEW_DARK || defType == TYPE_NEW_NETHER))
+    if ((ctx->move == MOVE_SPIRIT_BOMB || ctx->move == MOVE_SUPER_SPIRIT_BOMB) && (defType == TYPE_NEW_DARK || defType == TYPE_NEW_NETHER))
         mod = UQ_4_12(2.0);
     if (GetMoveEffect(ctx->move) == EFFECT_QUINTETT_FEUER && 
         (defType == TYPE_NEW_EARTH

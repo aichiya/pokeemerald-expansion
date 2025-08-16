@@ -2528,11 +2528,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Autumn Goddesses"),
         .description = COMPOUND_STRING("Benefited from sunlight."),
         .aiRating = 10,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
-        .cantBeSuppressed = TRUE,
-        .cantBeOverwritten = TRUE,
+        // .cantBeCopied = TRUE,
+        // .cantBeSwapped = TRUE,
+        // .cantBeTraced = TRUE,
+        // .cantBeSuppressed = TRUE,
+        // .cantBeOverwritten = TRUE,
     },
     
     [ABILITY_YORIGAMI_SISTERS] = // Yorigami sisters: Curse on switch in, shadow tags

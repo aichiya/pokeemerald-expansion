@@ -662,8 +662,15 @@ void BattleLoadMonSpriteGfx(struct Pokemon *mon, u32 battler)
     // transform's pink color
     if (gBattleSpritesDataPtr->battlerData[battler].transformSpecies != SPECIES_NONE)
     {
-        BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
-        CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
+        if (gDisableStructs[gBattlerAttacker].flagMultiUnitTransform == 1)
+        {
+            CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
+        }
+        else
+        {
+            BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
+            CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
+        }
     }
 
     // dynamax tint
@@ -980,6 +987,7 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
 
         if (!megaEvo)
         {
+            if (targetSpecies != SPECIES_RAYQUAZA_MEGA)
             BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
             CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
             if (!IsContest())
@@ -1044,8 +1052,16 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
 
 		if (!megaEvo)
 		{
-			BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
-			CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
+			if (gCurrentMove == MOVE_BEAT_UP_CALLING)
+            {
+                CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
+                gDisableStructs[gBattlerAttacker].flagMultiUnitTransform = 1;
+            }
+            else
+            {
+                BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
+                CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
+            }
 			if (!IsContest())
             {
                 gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies = targetSpecies;

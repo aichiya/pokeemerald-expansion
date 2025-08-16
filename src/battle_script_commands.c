@@ -18790,7 +18790,8 @@ void BS_TransformDataExecutionDecade(void)
                 gBattleMons[gBattlerAttacker].types[0] = gSpeciesInfo[speciesBuffer].types[0];
                 gBattleMons[gBattlerAttacker].types[1] = gSpeciesInfo[speciesBuffer].types[1];
                 gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
-                gDisableStructs[gBattlerAttacker].overwrittenAbility = gSpeciesInfo[speciesBuffer].abilities[0];
+                gBattleMons[gBattlerAttacker].ability = GetAbilityBySpecies(speciesBuffer, gBattleMons[gBattlerAttacker].abilityNum);
+                gDisableStructs[gBattlerAttacker].overwrittenAbility = GetAbilityBySpecies(speciesBuffer, gBattleMons[gBattlerAttacker].abilityNum);
                 
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
@@ -18842,14 +18843,12 @@ void BS_TransformDataExecutionCallingMultiUnit(void)
     timesGotHit = GetBattlerPartyState(gBattlerTarget)->timesGotHit;
     GetBattlerPartyState(gBattlerAttacker)->timesGotHit = timesGotHit;
 
-    if (gBattleMons[gBattlerAttacker].species == SPECIES_MEW)
-    {
+    if (gBattleMons[gBattlerAttacker].species == SPECIES_RAYQUAZA)
         speciesBuffer = SPECIES_RAYQUAZA_MEGA;
-    }
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_LATIOS)
+        speciesBuffer = SPECIES_LATIOS_MEGA;
     else
-    {
         speciesBuffer = SPECIES_DIANCIE_MEGA;
-    }
 
     PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
     gDisableStructs[gBattlerAttacker].transformationDCDTemp = speciesBuffer;
@@ -18879,7 +18878,8 @@ void BS_TransformDataExecutionCallingMultiUnit(void)
     gBattleMons[gBattlerAttacker].types[0] = gSpeciesInfo[speciesBuffer].types[0];
     gBattleMons[gBattlerAttacker].types[1] = gSpeciesInfo[speciesBuffer].types[1];
     gBattleMons[gBattlerAttacker].types[2] = TYPE_MYSTERY;
-    gDisableStructs[gBattlerAttacker].overwrittenAbility = gBattleMons[gBattlerAttacker].ability;
+    gBattleMons[gBattlerAttacker].ability = GetAbilityBySpecies(speciesBuffer, gBattleMons[gBattlerAttacker].abilityNum);
+    gDisableStructs[gBattlerAttacker].overwrittenAbility = GetAbilityBySpecies(speciesBuffer, gBattleMons[gBattlerAttacker].abilityNum);
 
     // update AI knowledge
     RecordAllMoves(gBattlerAttacker);
@@ -18905,6 +18905,19 @@ void BS_SetMiasmaTerrainFromAbility(void)
     NATIVE_ARGS(const u8 *jumpInstr);
 
     u32 statusFlag = STATUS_FIELD_MIASMA_TERRAIN;
+    enum ItemHoldEffect atkHoldEffect = GetBattlerHoldEffect(gBattlerAttacker, TRUE);
+
+    gFieldStatuses &= ~STATUS_FIELD_TERRAIN_ANY;
+    gFieldStatuses |= statusFlag;
+    gFieldTimers.terrainTimer = gBattleTurnCounter + (atkHoldEffect == HOLD_EFFECT_TERRAIN_EXTENDER) ? 8 : 5;
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_SetElectricTerrainFromAbility(void)
+{
+    NATIVE_ARGS(const u8 *jumpInstr);
+
+    u32 statusFlag = STATUS_FIELD_ELECTRIC_TERRAIN;
     enum ItemHoldEffect atkHoldEffect = GetBattlerHoldEffect(gBattlerAttacker, TRUE);
 
     gFieldStatuses &= ~STATUS_FIELD_TERRAIN_ANY;

@@ -22967,6 +22967,15 @@ gBattleAnimMove_ShadowSky::
 	blendoff
 	end
 
+gBattleAnimMove_BeatUpCalling::
+	monbg ANIM_ATTACKER
+	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
+	waitplaysewithpan SE_M_MINIMIZE, SOUND_PAN_ATTACKER, 48
+	createvisualtask AnimTask_TransformMon, 2, 0, 1
+	waitforvisualfinish
+	clearmonbg ANIM_ATTACKER
+	end
+
 gBattleAnimMove_ClassicHyperBeam::
 	loadspritegfx ANIM_TAG_CLASSIC_ORBS
 	loadspritegfx ANIM_TAG_CLASSIC_LASER_BEAM

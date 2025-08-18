@@ -3742,12 +3742,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Envelops the foe in a gas\n"
             "may inflict status condition."),
-        .accuracy = 100,
+        .accuracy = 90,
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 100,
         .type = TYPE_NEW_MIASMA,
         .pp = 15,
-        .target = MOVE_TARGET_SELECTED,
+        .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
@@ -23039,13 +23039,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Attacks the target\n"
             "mercilessly."),
         .effect = EFFECT_TRANSFORM_AND_HIT_WITH_ARG_CONDITION,
-        .power = 100,
+        .power = 120,
         .type = TYPE_NEW_MYSTERY,
         .accuracy = 100,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_SMART,

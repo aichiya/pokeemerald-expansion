@@ -2,6 +2,7 @@ TrimmedGensokyo_MapScripts::
 	.byte 0
 
 TrimmedGensokyo_EventScript_Debug1::
+	end
 	lock
 	faceplayer
 	additem ITEM_DYNAMAX_BAND
@@ -14,7 +15,9 @@ TrimmedGensokyo_EventScript_Debug1::
 	msgbox TrimmedGensokyo_Text_Debug1_1, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-@	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
+    setflag FLAG_CUSTOM_BGM_BATTLE
+	setvar VAR_SETTING_MUSIC, MUS_THPPME_389_REIMU_MEDLEY
+	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
     setflag FLAG_CUSTOM_BGM_BATTLE
 	setvar VAR_SETTING_MUSIC, MUS_ILLYA_SHOUJO_YO_HOSHI_NI_NARE
 	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER_CHECK_PARTY_LEVEL
@@ -70,3 +73,27 @@ TrimmedGensokyo_EventScript_Debug2_DoMultiBattleWon::
 
 TrimmedGensokyo_Text_Debug2_1:
 	.string "Test MC battle sprites.$"
+
+TrimmedGensokyo_Sign_Debug1::
+	lock
+	faceplayer
+	additem ITEM_DYNAMAX_BAND
+	additem ITEM_TERA_ORB
+	additem ITEM_Z_POWER_RING
+	additem ITEM_MEGA_RING
+	setflag FLAG_TERA_ORB_CHARGED
+	setflag FLAG_TERA_ORB_NO_COST
+	msgbox TrimmedGensokyo_Text_Sign_Debug1, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+    setflag FLAG_CUSTOM_BGM_BATTLE
+	setvar VAR_SETTING_MUSIC, MUS_DBS_ROYAL_BLUE
+	seteventmon SPECIES_CELEBI, 80
+	dowildbattle
+	waitstate
+	delay 20
+	release
+	end
+
+TrimmedGensokyo_Text_Sign_Debug1:
+	.string "Something is not quite right…$"

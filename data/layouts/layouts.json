@@ -5097,7 +5097,7 @@
       "width": 30,
       "height": 140,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/JavaWesternPass/border.bin",
       "blockdata_filepath": "data/layouts/JavaWesternPass/map.bin"
     },

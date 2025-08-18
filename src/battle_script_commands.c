@@ -13393,7 +13393,7 @@ static void Cmd_cursetarget(void)
     {
         gBattlescriptCurrInstr = cmd->failInstr;
     }
-    else if (gBattleMons[gBattlerAttacker].ability == ABILITY_YORIGAMI_SISTERS)
+    else if (gBattleMons[gBattlerAttacker].ability == ABILITY_YORIGAMI_SISTERS || gBattleMons[gBattlerAttacker].species == SPECIES_LATIAS_MEGA)
     {
         gBattleMons[gBattlerTarget].volatiles.cursed = TRUE;
         gBattleStruct->moveDamage[gBattlerAttacker] = 0;
@@ -18843,10 +18843,12 @@ void BS_TransformDataExecutionCallingMultiUnit(void)
     timesGotHit = GetBattlerPartyState(gBattlerTarget)->timesGotHit;
     GetBattlerPartyState(gBattlerAttacker)->timesGotHit = timesGotHit;
 
-    if (gBattleMons[gBattlerAttacker].species == SPECIES_RAYQUAZA)
-        speciesBuffer = SPECIES_RAYQUAZA_MEGA;
+    if (gBattleMons[gBattlerAttacker].species == SPECIES_ALTARIA)
+        speciesBuffer = SPECIES_ALTARIA_MEGA;
     else if (gBattleMons[gBattlerAttacker].species == SPECIES_LATIOS)
         speciesBuffer = SPECIES_LATIOS_MEGA;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_LATIAS)
+        speciesBuffer = SPECIES_LATIAS_MEGA;
     else
         speciesBuffer = SPECIES_DIANCIE_MEGA;
 

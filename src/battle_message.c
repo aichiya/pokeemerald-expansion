@@ -663,7 +663,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_TERRAINBECOMESPSYCHIC]                = COMPOUND_STRING("The battlefield got weird!"),
     [STRINGID_TARGETELECTRIFIED]                    = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}'s moves have been electrified!"),
     [STRINGID_MEGAEVOREACTING]                      = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}'s {B_LAST_ITEM} is reacting to {B_ATK_TRAINER_NAME}'s Mega Ring!"), //actually displays the type of mega ring in inventory, but we didnt implement them :(
-    [STRINGID_MEGAEVOEVOLVED]                       = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} has Mega Evolved into Mega {B_BUFF1}!"),
+    [STRINGID_MEGAEVOEVOLVED]                       = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} has transformed into a stronger form!"),
     [STRINGID_DRASTICALLY]                          = gText_drastically,
     [STRINGID_SEVERELY]                             = gText_severely,
     [STRINGID_INFESTATION]                          = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} has been afflicted with an infestation by {B_ATK_NAME_WITH_PREFIX2}!"),
@@ -933,7 +933,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_EXSHADOWYAURADEEPEN]                  = COMPOUND_STRING("The shadowy aura continously stays in the sky!"),
     [STRINGID_PKMNSTATSHIGHTENED]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}'s stats hightened!"),
     [STRINGID_GATHERINGENERGYINTHESKY]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is gathering energy in the sky!"),
-    [STRINGID_CALLINGFRIENDANDBEATUP]               = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is grouping up and beating up!"),
+    [STRINGID_CALLINGFRIENDANDBEATUP]               = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} grouped up and ready to beat up the opponent!"),
     [STRINGID_CALLINGFRIENDFAILED]                  = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} failed to group up!"),
 };
 

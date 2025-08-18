@@ -987,7 +987,6 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, bool32 megaEvo, bo
 
         if (!megaEvo)
         {
-            if (targetSpecies != SPECIES_RAYQUAZA_MEGA)
             BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
             CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
             if (!IsContest())

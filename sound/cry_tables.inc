@@ -454,14 +454,14 @@ gCryTable::
 	cry Cry_Dragonite
 .endif @ P_FAMILY_DRATINI
 .if P_FAMILY_MEWTWO == TRUE
-	cry Cry_Mewtwo
+	cry Cry_THAliceLine
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_MewtwoMegaX
-	cry Cry_MewtwoMegaY
+	cry Cry_THAliceBlack
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MEWTWO
 .if P_FAMILY_MEW == TRUE
-	cry Cry_THTenshiLine
+	cry Cry_Mew
 .endif @ P_FAMILY_MEW
 .if P_FAMILY_CHIKORITA == TRUE
 	cry Cry_Chikorita
@@ -708,7 +708,7 @@ gCryTable::
 	cry Cry_HoOh
 .endif @ P_FAMILY_HO_OH
 .if P_FAMILY_CELEBI == TRUE
-	cry Cry_Celebi
+	cry Cry_THMedicineLine
 .endif @ P_FAMILY_CELEBI
 .if P_FAMILY_TREECKO == TRUE
 	cry Cry_Unown @ Cry_Treecko
@@ -917,9 +917,9 @@ gCryTable::
 .endif @ P_FAMILY_CACNEA
 .if P_FAMILY_SWABLU == TRUE
 	cry Cry_Unown @ Cry_Swablu
-	cry Cry_Unown @ Cry_Altaria
+	cry Cry_THShizuhaLine @ Cry_Altaria
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_Unown @ Cry_AltariaMega
+	cry Cry_THAkiSisters @ Cry_AltariaMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SWABLU
 .if P_FAMILY_ZANGOOSE == TRUE
@@ -1045,15 +1045,15 @@ gCryTable::
 	cry Cry_Unown @ Cry_Registeel
 .endif @ P_FAMILY_REGISTEEL
 .if P_FAMILY_LATIAS == TRUE
-	cry Cry_Unown @ Cry_Latias
+	cry Cry_THMokouAdvent @ Cry_Latias
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_Unown @ Cry_LatiasMega
+	cry Cry_THMokouAdvent @ Cry_LatiasMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_LATIAS
 .if P_FAMILY_LATIOS == TRUE
-	cry Cry_Unown @ Cry_Latios
+	cry Cry_THReimuLine @ Cry_Latios
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_Unown @ Cry_LatiosMega
+	cry Cry_THReimuLine @ Cry_LatiosMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_LATIOS
 .if P_FAMILY_KYOGRE == TRUE
@@ -1069,9 +1069,9 @@ gCryTable::
 .endif @ P_PRIMAL_REVERSIONS
 .endif @ P_FAMILY_GROUDON
 .if P_FAMILY_RAYQUAZA == TRUE
-	cry Cry_Unown @ Cry_Rayquaza
+	cry Cry_THReisenAdvent @ Cry_Rayquaza
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_Unown @ Cry_RayquazaMega
+	cry Cry_THReisenAdvent @ Cry_RayquazaMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_RAYQUAZA
 .if P_FAMILY_JIRACHI == TRUE
@@ -2882,14 +2882,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_Dragonite
 .endif @ P_FAMILY_DRATINI
 .if P_FAMILY_MEWTWO == TRUE
-	cry_reverse Cry_Mewtwo
+	cry_reverse Cry_THAliceLine
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_MewtwoMegaX
-	cry_reverse Cry_MewtwoMegaY
+	cry_reverse Cry_THAliceBlack
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MEWTWO
 .if P_FAMILY_MEW == TRUE
-	cry_reverse Cry_THKanakoLine
+	cry_reverse Cry_Mew
 .endif @ P_FAMILY_MEW
 .if P_FAMILY_CHIKORITA == TRUE
 	cry_reverse Cry_Chikorita
@@ -3136,7 +3136,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_HoOh
 .endif @ P_FAMILY_HO_OH
 .if P_FAMILY_CELEBI == TRUE
-	cry_reverse Cry_Celebi
+	cry_reverse Cry_THMedicineLine
 .endif @ P_FAMILY_CELEBI
 .if P_FAMILY_TREECKO == TRUE
 	cry_reverse Cry_Unown @ Cry_Treecko
@@ -3473,15 +3473,15 @@ gCryTable_Reverse::
 	cry_reverse Cry_Unown @ Cry_Registeel
 .endif @ P_FAMILY_REGISTEEL
 .if P_FAMILY_LATIAS == TRUE
-	cry_reverse Cry_Unown @ Cry_Latias
+	cry_reverse Cry_THMokouAdvent @ Cry_Latias
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_Unown @ Cry_LatiasMega
+	cry_reverse Cry_THMokouAdvent @ Cry_LatiasMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_LATIAS
 .if P_FAMILY_LATIOS == TRUE
-	cry_reverse Cry_Unown @ Cry_Latios
+	cry_reverse Cry_THReimuLine @ Cry_Latios
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_Unown @ Cry_LatiosMega
+	cry_reverse Cry_THReimuLine @ Cry_LatiosMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_LATIOS
 .if P_FAMILY_KYOGRE == TRUE
@@ -3497,9 +3497,9 @@ gCryTable_Reverse::
 .endif @ P_PRIMAL_REVERSIONS
 .endif @ P_FAMILY_GROUDON
 .if P_FAMILY_RAYQUAZA == TRUE
-	cry_reverse Cry_Unown @ Cry_Rayquaza
+	cry_reverse Cry_THReisenAdvent @ Cry_Rayquaza
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_Unown @ Cry_RayquazaMega
+	cry_reverse Cry_THReisenAdvent @ Cry_RayquazaMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_RAYQUAZA
 .if P_FAMILY_JIRACHI == TRUE

@@ -2,7 +2,7 @@
   "id": "MAP_GENSOKYO_NORTHERN_ROAD1",
   "name": "GensokyoNorthernRoad1",
   "layout": "LAYOUT_GENSOKYO_NORTHERN_ROAD1",
-  "music": "MUS_DUMMY",
+  "music": "MUS_THPPZGSK_293A_LUNATE_ELF",
   "region_map_section": "MAPSEC_GENSOKYO_NORTHERN_ROAD1",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

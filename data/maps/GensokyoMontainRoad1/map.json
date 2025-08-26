@@ -2,7 +2,7 @@
   "id": "MAP_GENSOKYO_MONTAIN_ROAD1",
   "name": "GensokyoMontainRoad1",
   "layout": "LAYOUT_GENSOKYO_MONTAIN_ROAD1",
-  "music": "MUS_DUMMY",
+  "music": "MUS_THPPZGSK_374A_ROMANTIC_FALL",
   "region_map_section": "MAPSEC_GENSOKYO_MOUNTAIN_ROAD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

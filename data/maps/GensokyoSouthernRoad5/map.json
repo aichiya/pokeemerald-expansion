@@ -2,10 +2,10 @@
   "id": "MAP_GENSOKYO_SOUTHERN_ROAD5",
   "name": "GensokyoSouthernRoad5",
   "layout": "LAYOUT_GENSOKYO_SOUTHERN_ROAD5",
-  "music": "MUS_DUMMY",
+  "music": "MUS_THPPZGSK_326A_CITY_OF_FLOWER",
   "region_map_section": "MAPSEC_GENSOKYO_SOUTHERN_ROAD5",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_GENSOKYO_SOUTHERN_ROAD4",
-      "offset": 18,
+      "offset": 26,
       "direction": "right"
     },
     {

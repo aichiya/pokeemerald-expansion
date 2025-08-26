@@ -5,7 +5,7 @@
   "music": "MUS_THPPZGSK_291A_RED_SOUL",
   "region_map_section": "MAPSEC_GENSOKYO_YOUKAI_ROAD",
   "requires_flash": false,
-  "weather": "WEATHER_LIGHT_ORB_UP",
+  "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,

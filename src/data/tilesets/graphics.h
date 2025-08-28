@@ -1710,3 +1710,79 @@ const u16 gTilesetPalettes_RoofGSC[][16] =
 };
 
 const u32 gTilesetTiles_RoofGSC[] = INCBIN_U32("data/tilesets/secondary/roof_gsc/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_GensokyoCommon[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_common/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_GensokyoCommon[] = INCBIN_U32("data/tilesets/secondary/gensokyo_common/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_GensokyoForestOfMagic[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_GensokyoForestOfMagic[] = INCBIN_U32("data/tilesets/secondary/gensokyo_forest_of_magic/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_GensokyoNetherworld[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_GensokyoNetherworld[] = INCBIN_U32("data/tilesets/secondary/gensokyo_netherworld/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_GensokyoGardenOfTheSun[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_GensokyoGardenOfTheSun[] = INCBIN_U32("data/tilesets/secondary/gensokyo_garden_of_the_sun/tiles.4bpp.lz");

@@ -2,11 +2,11 @@
   "id": "MAP_ROUTE111",
   "name": "Route111",
   "layout": "LAYOUT_ROUTE111",
-  "music": "MUS_ROUTE110",
+  "music": "MUS_THPPME_399_FLOWER_LAND",
   "region_map_section": "MAPSEC_GENSOKYO_GARDEN_OF_THE_SUN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
-  "map_type": "MAP_TYPE_ROUTE",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_GENSOKYO_SOUTHERN_ROAD5",
-      "offset": 10,
+      "offset": 1,
       "direction": "down"
     }
   ],

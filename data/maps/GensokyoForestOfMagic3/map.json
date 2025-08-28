@@ -1,0 +1,31 @@
+{
+  "id": "MAP_GENSOKYO_FOREST_OF_MAGIC3",
+  "name": "GensokyoForestOfMagic3",
+  "layout": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC3",
+  "music": "MUS_THPPZGSK_371A_FAIRY_WARS",
+  "region_map_section": "MAPSEC_GENSOKYO_FOREST_OF_MAGIC",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_GENSOKYO_FOREST_OF_MAGIC2",
+      "offset": -33,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_GENSOKYO_FOREST_OF_MAGIC4",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

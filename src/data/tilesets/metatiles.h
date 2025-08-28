@@ -219,3 +219,15 @@ const u16 gMetatileAttributes_GeneralGSC[] = INCBIN_U16("data/tilesets/primary/g
 
 const u16 gMetatiles_RoofGSC[] = INCBIN_U16("data/tilesets/secondary/roof_gsc/metatiles.bin");
 const u16 gMetatileAttributes_RoofGSC[] = INCBIN_U16("data/tilesets/secondary/roof_gsc/metatile_attributes.bin");
+
+const u16 gMetatiles_GensokyoCommon[] = INCBIN_U16("data/tilesets/secondary/gensokyo_common/metatiles.bin");
+const u16 gMetatileAttributes_GensokyoCommon[] = INCBIN_U16("data/tilesets/secondary/gensokyo_common/metatile_attributes.bin");
+
+const u16 gMetatiles_GensokyoForestOfMagic[] = INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/metatiles.bin");
+const u16 gMetatileAttributes_GensokyoForestOfMagic[] = INCBIN_U16("data/tilesets/secondary/gensokyo_forest_of_magic/metatile_attributes.bin");
+
+const u16 gMetatiles_GensokyoNetherworld[] = INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/metatiles.bin");
+const u16 gMetatileAttributes_GensokyoNetherworld[] = INCBIN_U16("data/tilesets/secondary/gensokyo_netherworld/metatile_attributes.bin");
+
+const u16 gMetatiles_GensokyoGardenOfTheSun[] = INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/metatiles.bin");
+const u16 gMetatileAttributes_GensokyoGardenOfTheSun[] = INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/metatile_attributes.bin");

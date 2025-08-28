@@ -204,10 +204,10 @@
     {
       "id": "LAYOUT_ROUTE105",
       "name": "Route105_Layout",
-      "width": 60,
-      "height": 60,
+      "width": 48,
+      "height": 40,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Unused1",
+      "secondary_tileset": "gTileset_GensokyoNetherworld",
       "border_filepath": "data/layouts/Route105/border.bin",
       "blockdata_filepath": "data/layouts/Route105/map.bin"
     },
@@ -265,9 +265,9 @@
       "id": "LAYOUT_ROUTE111",
       "name": "Route111_Layout",
       "width": 52,
-      "height": 56,
+      "height": 64,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_GensokyoGardenOfTheSun",
       "border_filepath": "data/layouts/Route111/border.bin",
       "blockdata_filepath": "data/layouts/Route111/map.bin"
     },
@@ -5310,6 +5310,86 @@
       "secondary_tileset": "gTileset_RoofGSC",
       "border_filepath": "data/layouts/AnotherWorldViridianCity/border.bin",
       "blockdata_filepath": "data/layouts/AnotherWorldViridianCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC4",
+      "name": "GensokyoForestOfMagic4_Layout",
+      "width": 33,
+      "height": 66,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoForestOfMagic",
+      "border_filepath": "data/layouts/GensokyoForestOfMagic4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoForestOfMagic4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC2",
+      "name": "GensokyoForestOfMagic2_Layout",
+      "width": 84,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoForestOfMagic",
+      "border_filepath": "data/layouts/GensokyoForestOfMagic2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoForestOfMagic2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC1",
+      "name": "GensokyoForestOfMagic1_Layout",
+      "width": 69,
+      "height": 80,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoForestOfMagic",
+      "border_filepath": "data/layouts/GensokyoForestOfMagic1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoForestOfMagic1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC3",
+      "name": "GensokyoForestOfMagic3_Layout",
+      "width": 51,
+      "height": 66,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoForestOfMagic",
+      "border_filepath": "data/layouts/GensokyoForestOfMagic3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoForestOfMagic3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC5",
+      "name": "GensokyoForestOfMagic5_Layout",
+      "width": 30,
+      "height": 11,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoForestOfMagic",
+      "border_filepath": "data/layouts/GensokyoForestOfMagic5/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoForestOfMagic5/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NETHERWORLD_ENTRANCE",
+      "name": "GensokyoNetherworldEntrance_Layout",
+      "width": 41,
+      "height": 48,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoNetherworld",
+      "border_filepath": "data/layouts/GensokyoNetherworldEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNetherworldEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NETHERWORLD_STAIRS",
+      "name": "GensokyoNetherworldStairs_Layout",
+      "width": 24,
+      "height": 65,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoNetherworld",
+      "border_filepath": "data/layouts/GensokyoNetherworldStairs/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNetherworldStairs/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NETHERWORLD_HAKUGYOKUROU",
+      "name": "GensokyoNetherworldHakugyokurou_Layout",
+      "width": 54,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoNetherworld",
+      "border_filepath": "data/layouts/GensokyoNetherworldHakugyokurou/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNetherworldHakugyokurou/map.bin"
     }
   ]
 }

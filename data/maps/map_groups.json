@@ -160,7 +160,10 @@
     "JavaEastSeaRoute1",
     "JavaEastSeaRoute2",
     "JavaWesternPass",
-    "JavaSeaOfSand"
+    "JavaSeaOfSand",
+    "GensokyoNetherworldEntrance",
+    "GensokyoNetherworldStairs",
+    "GensokyoNetherworldHakugyokurou"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -497,7 +500,12 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "MeteorFalls_StevensCave",
+    "GensokyoForestOfMagic1",
+    "GensokyoForestOfMagic2",
+    "GensokyoForestOfMagic3",
+    "GensokyoForestOfMagic4",
+    "GensokyoForestOfMagic5"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

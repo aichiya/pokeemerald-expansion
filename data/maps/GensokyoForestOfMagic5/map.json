@@ -1,0 +1,20 @@
+{
+  "id": "MAP_GENSOKYO_FOREST_OF_MAGIC5",
+  "name": "GensokyoForestOfMagic5",
+  "layout": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC5",
+  "music": "MUS_THPPZGSK_371A_FAIRY_WARS",
+  "region_map_section": "MAPSEC_GENSOKYO_FOREST_OF_MAGIC",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

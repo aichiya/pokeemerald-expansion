@@ -1395,3 +1395,19 @@ Script_RemoveTint::
 
 
 	.include "data/maps/AnotherWorldViridianCity/scripts.inc"
+
+	.include "data/maps/GensokyoForestOfMagic4/scripts.inc"
+
+	.include "data/maps/GensokyoForestOfMagic2/scripts.inc"
+
+	.include "data/maps/GensokyoForestOfMagic3/scripts.inc"
+
+	.include "data/maps/GensokyoForestOfMagic1/scripts.inc"
+
+	.include "data/maps/GensokyoForestOfMagic5/scripts.inc"
+
+	.include "data/maps/GensokyoNetherworldEntrance/scripts.inc"
+
+	.include "data/maps/GensokyoNetherworldHakugyokurou/scripts.inc"
+
+	.include "data/maps/GensokyoNetherworldStairs/scripts.inc"

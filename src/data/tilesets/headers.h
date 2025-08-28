@@ -874,3 +874,47 @@ const struct Tileset gTileset_RoofGSC =
     .metatileAttributes = gMetatileAttributes_RoofGSC,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_GensokyoCommon =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_GensokyoCommon,
+    .palettes = gTilesetPalettes_GensokyoCommon,
+    .metatiles = gMetatiles_GensokyoCommon,
+    .metatileAttributes = gMetatileAttributes_GensokyoCommon,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_GensokyoForestOfMagic =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_GensokyoForestOfMagic,
+    .palettes = gTilesetPalettes_GensokyoForestOfMagic,
+    .metatiles = gMetatiles_GensokyoForestOfMagic,
+    .metatileAttributes = gMetatileAttributes_GensokyoForestOfMagic,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_GensokyoNetherworld =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_GensokyoNetherworld,
+    .palettes = gTilesetPalettes_GensokyoNetherworld,
+    .metatiles = gMetatiles_GensokyoNetherworld,
+    .metatileAttributes = gMetatileAttributes_GensokyoNetherworld,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_GensokyoGardenOfTheSun =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_GensokyoGardenOfTheSun,
+    .palettes = gTilesetPalettes_GensokyoGardenOfTheSun,
+    .metatiles = gMetatiles_GensokyoGardenOfTheSun,
+    .metatileAttributes = gMetatileAttributes_GensokyoGardenOfTheSun,
+    .callback = NULL,
+};

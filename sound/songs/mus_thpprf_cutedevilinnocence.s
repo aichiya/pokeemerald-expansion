@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_cutedevilinnocence_grp, voicegroup210
+	.equ	mus_thpprf_cutedevilinnocence_grp, voicegroup_thpprf_main
 	.equ	mus_thpprf_cutedevilinnocence_pri, 0
 	.equ	mus_thpprf_cutedevilinnocence_rev, reverb_set+50
 	.equ	mus_thpprf_cutedevilinnocence_mvl, 92

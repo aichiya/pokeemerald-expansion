@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_story2_board_forest_grp, voicegroup201
+	.equ	mus_dgmn_story2_board_forest_grp, voicegroup_common_main
 	.equ	mus_dgmn_story2_board_forest_pri, 0
 	.equ	mus_dgmn_story2_board_forest_rev, reverb_set+50
 	.equ	mus_dgmn_story2_board_forest_mvl, 100

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_negima_kagayaku_kimi_e_grp, voicegroup207
+        .equ    mus_negima_kagayaku_kimi_e_grp, voicegroup_custom_207_experimental
         .equ    mus_negima_kagayaku_kimi_e_pri, 0
         .equ    mus_negima_kagayaku_kimi_e_rev, reverb_set+50
         .equ    mus_negima_kagayaku_kimi_e_key, 0

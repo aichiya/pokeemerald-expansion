@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_722_sol_sanctum_grp, voicegroup601
+        .equ    mus_gs2_722_sol_sanctum_grp, voicegroup_golden_sun_2_main
         .equ    mus_gs2_722_sol_sanctum_pri, 0
         .equ    mus_gs2_722_sol_sanctum_rev, reverb_set+50
         .equ    mus_gs2_722_sol_sanctum_key, 0

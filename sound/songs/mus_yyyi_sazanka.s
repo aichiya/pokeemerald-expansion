@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_yyyi_sazanka_grp, voicegroup201
+	.equ	mus_yyyi_sazanka_grp, voicegroup_common_main
 	.equ	mus_yyyi_sazanka_pri, 0
 	.equ	mus_yyyi_sazanka_rev, reverb_set+50
 	.equ	mus_yyyi_sazanka_mvl, 127

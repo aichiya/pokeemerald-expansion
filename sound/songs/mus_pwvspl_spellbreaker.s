@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pwvspl_spellbreaker_grp, voicegroup204
+	.equ	mus_pwvspl_spellbreaker_grp, voicegroup_custom_204_experimental
 	.equ	mus_pwvspl_spellbreaker_pri, 0
 	.equ	mus_pwvspl_spellbreaker_rev, reverb_set+50
 	.equ	mus_pwvspl_spellbreaker_mvl, 100

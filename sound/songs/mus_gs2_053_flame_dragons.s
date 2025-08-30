@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_053_flame_dragons_grp, voicegroup601
+        .equ    mus_gs2_053_flame_dragons_grp, voicegroup_golden_sun_2_main
         .equ    mus_gs2_053_flame_dragons_pri, 0
         .equ    mus_gs2_053_flame_dragons_rev, reverb_set+50
         .equ    mus_gs2_053_flame_dragons_key, 0

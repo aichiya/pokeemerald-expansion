@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_mvc_roll_grp, voicegroup205
+        .equ    mus_mvc_roll_grp, voicegroup_custom_205_experimental
         .equ    mus_mvc_roll_pri, 0
 	.equ	mus_mvc_roll_mvl, 100
         .equ    mus_mvc_roll_rev, reverb_set+50

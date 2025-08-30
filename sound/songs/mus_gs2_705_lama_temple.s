@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_705_lama_temple_grp, voicegroup601
+        .equ    mus_gs2_705_lama_temple_grp, voicegroup_golden_sun_2_main
         .equ    mus_gs2_705_lama_temple_pri, 0
         .equ    mus_gs2_705_lama_temple_rev, reverb_set+50
         .equ    mus_gs2_705_lama_temple_key, 0

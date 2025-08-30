@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_sebelum_cahaya_grp, voicegroup201
+        .equ    mus_etc_sebelum_cahaya_grp, voicegroup_common_main
         .equ    mus_etc_sebelum_cahaya_pri, 0
         .equ    mus_etc_sebelum_cahaya_mvl, 127
         .equ    mus_etc_sebelum_cahaya_rev, reverb_set+50

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_058_fanfare_win_grp, voicegroup601
+        .equ    mus_gs2_058_fanfare_win_grp, voicegroup_golden_sun_2_main
         .equ    mus_gs2_058_fanfare_win_pri, 0
         .equ    mus_gs2_058_fanfare_win_rev, reverb_set+50
         .equ    mus_gs2_058_fanfare_win_key, 0

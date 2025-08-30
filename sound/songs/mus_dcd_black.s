@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dcd_black_grp, voicegroup504
+	.equ	mus_dcd_black_grp, voicegroup_pmdred_main_1
 	.equ	mus_dcd_black_pri, 0
 	.equ	mus_dcd_black_rev, reverb_set+50
 	.equ	mus_dcd_black_mvl, 100

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_geese_test1_grp, voicegroup200
+        .equ    mus_geese_test1_grp, voicegroup_common_main
         .equ    mus_geese_test1_pri, 0
         .equ    mus_geese_test1_rev, reverb_set+50
         .equ    mus_geese_test1_key, 0

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_climax_jump_grp, voicegroup814
+        .equ    mus_etc_climax_jump_grp, voicegroup_climax_jump
         .equ    mus_etc_climax_jump_pri, 0
         .equ    mus_etc_climax_jump_mvl, 100
         .equ    mus_etc_climax_jump_rev, reverb_set+50

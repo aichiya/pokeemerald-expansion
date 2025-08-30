@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_fate_hakuno_fatal_battle_grp, voicegroup205
+        .equ    mus_fate_hakuno_fatal_battle_grp, voicegroup_custom_205_experimental
         .equ    mus_fate_hakuno_fatal_battle_pri, 0
         .equ    mus_fate_hakuno_fatal_battle_rev, reverb_set+50
         .equ    mus_fate_hakuno_fatal_battle_key, 0

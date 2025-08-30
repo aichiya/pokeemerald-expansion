@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_stasiun_balapan_solo_grp, voicegroup201
+        .equ    mus_etc_stasiun_balapan_solo_grp, voicegroup_common_main
         .equ    mus_etc_stasiun_balapan_solo_pri, 0
         .equ    mus_etc_stasiun_balapan_solo_rev, reverb_set+50
         .equ    mus_etc_stasiun_balapan_solo_key, 0

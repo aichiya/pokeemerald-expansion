@@ -1,5 +1,5 @@
 voice_group rg_intro_fight
-	voice_keysplit_all voicegroup_frlg_drumset
+	voice_keysplit_all voicegroup_allkeysplit_thppme_drum_1
 	voice_keysplit voicegroup_piano_keysplit, keysplit_piano
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -89,7 +89,7 @@ voice_group rg_intro_fight
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_6, 1, 5, 0, 3
 	voice_square_2_alt 60, 0, 1, 0, 1, 10, 2
 	voice_square_1_alt 60, 0, 0, 1, 0, 1, 10, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_thppme_pcm_fff710, 0, 5, 0, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -127,4 +127,3 @@ voice_group rg_intro_fight
 	voice_noise_alt 60, 0, 0, 0, 0, 15, 0
 	voice_noise_alt 60, 0, 0, 0, 2, 4, 0
 	voice_noise_alt 60, 0, 0, 0, 1, 0, 0
-

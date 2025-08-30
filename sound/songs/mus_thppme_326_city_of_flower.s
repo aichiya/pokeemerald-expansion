@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_thppme_326_city_of_flower_grp, voicegroup132
+        .equ    mus_thppme_326_city_of_flower_grp, voicegroup_rg_game_corner
         .equ    mus_thppme_326_city_of_flower_pri, 0
         .equ    mus_thppme_326_city_of_flower_rev, reverb_set+50
         .equ    mus_thppme_326_city_of_flower_key, 0

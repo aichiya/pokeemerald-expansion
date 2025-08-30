@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_thppzgsk_366A_doll_judgement_grp, voicegroup819
+        .equ    mus_thppzgsk_366A_doll_judgement_grp, voicegroup_thppzgsk_rg_vs_wild_custom
         .equ    mus_thppzgsk_366A_doll_judgement_pri, 0
         .equ    mus_thppzgsk_366A_doll_judgement_rev, reverb_set+50
         .equ    mus_thppzgsk_366A_doll_judgement_key, 0

@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_oniisland_grp, voicegroup210
+	.equ	mus_thpprf_oniisland_grp, voicegroup_thpprf_main
 	.equ	mus_thpprf_oniisland_pri, 0
 	.equ	mus_thpprf_oniisland_rev, reverb_set+50
 	.equ	mus_thpprf_oniisland_mvl, 96

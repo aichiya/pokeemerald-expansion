@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_pc_star_color_pendant_no_intro_grp, voicegroup201
+        .equ    mus_pc_star_color_pendant_no_intro_grp, voicegroup_common_main
         .equ    mus_pc_star_color_pendant_no_intro_pri, 0
         .equ    mus_pc_star_color_pendant_no_intro_mvl, 100
         .equ    mus_pc_star_color_pendant_no_intro_rev, reverb_set+50

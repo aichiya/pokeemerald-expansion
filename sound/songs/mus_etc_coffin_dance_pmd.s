@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_coffin_dance_pmd_grp, voicegroup201
+        .equ    mus_etc_coffin_dance_pmd_grp, voicegroup_common_main
         .equ    mus_etc_coffin_dance_pmd_pri, 0
         .equ    mus_etc_coffin_dance_pmd_rev, reverb_set+50
         .equ    mus_etc_coffin_dance_pmd_key, 0

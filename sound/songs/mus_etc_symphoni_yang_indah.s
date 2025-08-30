@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_symphoni_yang_indah_grp, voicegroup205
+        .equ    mus_etc_symphoni_yang_indah_grp, voicegroup_custom_205_experimental
         .equ    mus_etc_symphoni_yang_indah_pri, 0
         .equ    mus_etc_symphoni_yang_indah_mvl, 127
         .equ    mus_etc_symphoni_yang_indah_rev, reverb_set+50

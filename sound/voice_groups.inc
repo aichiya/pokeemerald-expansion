@@ -203,186 +203,185 @@
 .include "sound/voicegroups/drumsets/rg_credits.inc"
 
 @ Start custom keysplit instruments setting
-.include "sound/voicegroups/voicegroup191.inc" @ Modified voicegroup001
-.include "sound/voicegroups/voicegroup192.inc" @ Modified voicegroup002
-.include "sound/voicegroups/voicegroup193.inc" @ Modified voicegroup003
-.include "sound/voicegroups/voicegroup194.inc" @ Modified voicegroup004
-.include "sound/voicegroups/voicegroup195.inc" @ Modified voicegroup005
-.include "sound/voicegroups/voicegroup196.inc" @ Modified voicegroup006
-.include "sound/voicegroups/voicegroup197.inc" @ Modified voicegroup007
-.include "sound/voicegroups/voicegroup198.inc" @ Modified voicegroup008
-.include "sound/voicegroups/voicegroup199.inc" @ Modified voicegroup009
+.include "sound/voicegroups/drumsets/allkeysplit_rs_custom_drum.inc"                  @ .include "sound/voicegroups/voicegroup191.inc" @ Modified voicegroup001
+.include "sound/voicegroups/drumsets/allkeysplit_frlg_custom_drum.inc"                @ .include "sound/voicegroups/voicegroup192.inc" @ Modified voicegroup002
+.include "sound/voicegroups/drumsets/allkeysplit_emerald_1_custom_drum.inc"           @ .include "sound/voicegroups/voicegroup193.inc" @ Modified voicegroup003
+.include "sound/voicegroups/drumsets/allkeysplit_emerald_2_custom_drum.inc"           @ .include "sound/voicegroups/voicegroup194.inc" @ Modified voicegroup004
+.include "sound/voicegroups/keysplits/keysplit_piano_custom.inc"                      @ .include "sound/voicegroups/voicegroup195.inc" @ Modified voicegroup005
+.include "sound/voicegroups/keysplits/keysplit_strings_custom.inc"                    @ .include "sound/voicegroups/voicegroup196.inc" @ Modified voicegroup006
+.include "sound/voicegroups/keysplits/keysplit_trumpet_custom.inc"                    @ .include "sound/voicegroups/voicegroup197.inc" @ Modified voicegroup007
+.include "sound/voicegroups/keysplits/keysplit_tuba_custom.inc"                       @ .include "sound/voicegroups/voicegroup198.inc" @ Modified voicegroup008
+.include "sound/voicegroups/keysplits/keysplit_french_horn_custom.inc"                @ .include "sound/voicegroups/voicegroup199.inc" @ Modified voicegroup009
 @ End custom keysplit instruments setting
 
 @ Start custom voicegroups
-.include "sound/voicegroups/voicegroup200.inc" @ Custom GBA instrument only
-.include "sound/voicegroups/voicegroup201.inc" @ [Main] Custom mixed instrument (GBA-HGSS-THPPRF)
-.include "sound/voicegroups/voicegroup202.inc" @ Custom HGSS Base
-.include "sound/voicegroups/voicegroup203.inc" @ DP voicegroup, based on copy of HGSS instrument
-.include "sound/voicegroups/voicegroup204.inc" @ [Main] Custom 4
-.include "sound/voicegroups/voicegroup205.inc" @ [Main] Custom 5
-.include "sound/voicegroups/voicegroup206.inc" @ Simulated GB/GBC
-.include "sound/voicegroups/voicegroup207.inc" @ Experimental
-.include "sound/voicegroups/voicegroup208.inc" @ DirectSound Synth Test
-.include "sound/voicegroups/voicegroup209.inc" @ DirectSound Synth
-.include "sound/voicegroups/voicegroup210.inc" @ [Main] THPPRF custom
-.include "sound/voicegroups/voicegroup211.inc" @ [Main] THPPZGS custom
+.include "sound/voicegroups/common_gba_example.inc"                                   @ .include "sound/voicegroups/voicegroup200.inc" @ Custom GBA instrument only
+.include "sound/voicegroups/common_main.inc"                                          @ .include "sound/voicegroups/voicegroup201.inc" @ [Main] Custom mixed instrument (GBA-HGSS-THPPRF)
+.include "sound/voicegroups/hgss_custom.inc"                                          @ .include "sound/voicegroups/voicegroup202.inc" @ Custom HGSS Base
+.include "sound/voicegroups/dppt_custom_using_hgss_samples.inc"                       @ .include "sound/voicegroups/voicegroup203.inc" @ DP voicegroup, based on copy of HGSS instrument
+.include "sound/voicegroups/custom_204_experimental.inc"                              @ .include "sound/voicegroups/voicegroup204.inc" @ [Main] Custom 4
+.include "sound/voicegroups/custom_205_experimental.inc"                              @ .include "sound/voicegroups/voicegroup205.inc" @ [Main] Custom 5
+.include "sound/voicegroups/gbc_1_experimental.inc"                                   @ .include "sound/voicegroups/voicegroup206.inc" @ Simulated GB/GBC
+.include "sound/voicegroups/custom_207_experimental.inc"                              @ .include "sound/voicegroups/voicegroup207.inc" @ Experimental
+.include "sound/voicegroups/synth_experimental.inc"                                   @ .include "sound/voicegroups/voicegroup208.inc" @ DirectSound Synth Test
+.include "sound/voicegroups/gbc_2_experimental.inc"                                   @ .include "sound/voicegroups/voicegroup209.inc" @ DirectSound Synth
+.include "sound/voicegroups/thpprf_main.inc"                                          @ .include "sound/voicegroups/voicegroup210.inc" @ [Main] THPPRF custom
+.include "sound/voicegroups/thppzgsk_test.inc"                                        @ .include "sound/voicegroups/voicegroup211.inc" @ [Main] THPPZGS custom
 
 
 @ After a custom voicegroup hits voicegroup215, please jump to voicegroup500+
 
 @ --Start HGSS Voicegroups--
-.include "sound/voicegroups/voicegroup216.inc"
-.include "sound/voicegroups/voicegroup219.inc"
-.include "sound/voicegroups/voicegroup220.inc"
-.include "sound/voicegroups/voicegroup229.inc" @ [Main] HGSS-only instruments
-.include "sound/voicegroups/voicegroup230.inc"
-.include "sound/voicegroups/voicegroup231.inc"
-.include "sound/voicegroups/voicegroup232.inc"
-.include "sound/voicegroups/voicegroup233.inc"
-.include "sound/voicegroups/voicegroup234.inc"
-.include "sound/voicegroups/voicegroup235.inc"
-.include "sound/voicegroups/voicegroup236.inc"
-.include "sound/voicegroups/voicegroup237.inc"
-.include "sound/voicegroups/voicegroup238.inc"
-.include "sound/voicegroups/voicegroup239.inc"
-.include "sound/voicegroups/voicegroup240.inc"
-.include "sound/voicegroups/voicegroup241.inc"
-.include "sound/voicegroups/voicegroup242.inc"
-.include "sound/voicegroups/voicegroup243.inc"
-.include "sound/voicegroups/voicegroup244.inc"
-.include "sound/voicegroups/voicegroup245.inc"
-.include "sound/voicegroups/voicegroup246.inc"
-.include "sound/voicegroups/voicegroup247.inc"
-.include "sound/voicegroups/voicegroup248.inc"
-.include "sound/voicegroups/voicegroup249.inc"
-.include "sound/voicegroups/voicegroup250.inc"
-.include "sound/voicegroups/voicegroup251.inc"
-.include "sound/voicegroups/voicegroup252.inc"
-.include "sound/voicegroups/voicegroup253.inc"
-.include "sound/voicegroups/voicegroup254.inc"
-.include "sound/voicegroups/voicegroup255.inc"
-.include "sound/voicegroups/voicegroup256.inc"
-.include "sound/voicegroups/voicegroup257.inc"
-.include "sound/voicegroups/voicegroup258.inc"
-.include "sound/voicegroups/voicegroup259.inc"
-.include "sound/voicegroups/voicegroup260.inc"
-.include "sound/voicegroups/voicegroup261.inc"
-.include "sound/voicegroups/voicegroup262.inc"
-.include "sound/voicegroups/voicegroup263.inc"
-.include "sound/voicegroups/voicegroup264.inc"
-.include "sound/voicegroups/voicegroup265.inc"
-.include "sound/voicegroups/voicegroup266.inc"
-.include "sound/voicegroups/voicegroup267.inc"
-.include "sound/voicegroups/voicegroup268.inc"
-.include "sound/voicegroups/voicegroup269.inc"
-.include "sound/voicegroups/voicegroup270.inc"
-.include "sound/voicegroups/voicegroup271.inc"
-.include "sound/voicegroups/voicegroup272.inc"
-.include "sound/voicegroups/voicegroup273.inc"
+.include "sound/voicegroups/keysplits/keysplit_dp_timpani.inc"                        @ .include "sound/voicegroups/voicegroup216.inc"
+.include "sound/voicegroups/keysplits/keysplit_dp_trumpet.inc"                        @ .include "sound/voicegroups/voicegroup219.inc"
+.include "sound/voicegroups/keysplits/keysplit_dp_trombone.inc"                       @ .include "sound/voicegroups/voicegroup220.inc"
+.include "sound/voicegroups/hgss_main.inc"                                            @ .include "sound/voicegroups/voicegroup229.inc" @ [Main] HGSS-only instruments
+.include "sound/voicegroups/drumsets/allkeysplit_hgss_drum.inc"                       @ .include "sound/voicegroups/voicegroup230.inc"
+.include "sound/voicegroups/drumsets/allkeysplit_hgss_taiko_drum.inc"                 @ .include "sound/voicegroups/voicegroup231.inc"
+.include "sound/voicegroups/drumsets/allkeysplit_hgss_drum_kick_and_snare.inc"        @ .include "sound/voicegroups/voicegroup232.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_piano_1.inc"                      @ .include "sound/voicegroups/voicegroup233.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_piano_2.inc"                      @ .include "sound/voicegroups/voicegroup234.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_piano_3.inc"                      @ .include "sound/voicegroups/voicegroup235.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_rhodes_1.inc"                     @ .include "sound/voicegroups/voicegroup236.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_rhodes_2.inc"                     @ .include "sound/voicegroups/voicegroup237.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_vibraphone.inc"                   @ .include "sound/voicegroups/voicegroup238.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_marimba.inc"                      @ .include "sound/voicegroups/voicegroup239.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_xylophone.inc"                    @ .include "sound/voicegroups/voicegroup240.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_tubular_bell.inc"                 @ .include "sound/voicegroups/voicegroup241.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_glockenspiel.inc"                 @ .include "sound/voicegroups/voicegroup242.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_music_box.inc"                    @ .include "sound/voicegroups/voicegroup243.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_drawbar_organ.inc"                @ .include "sound/voicegroups/voicegroup244.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_jazz_organ.inc"                   @ .include "sound/voicegroups/voicegroup245.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_accordion.inc"                    @ .include "sound/voicegroups/voicegroup246.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_nylon_guitar.inc"                 @ .include "sound/voicegroups/voicegroup247.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_martin_guitar.inc"                @ .include "sound/voicegroups/voicegroup248.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_distortion_guitar_1.inc"          @ .include "sound/voicegroups/voicegroup249.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_distortion_guitar_2.inc"          @ .include "sound/voicegroups/voicegroup250.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_clean_guitar.inc"                 @ .include "sound/voicegroups/voicegroup251.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_upright_bass.inc"                 @ .include "sound/voicegroups/voicegroup252.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_fingered_bass.inc"                @ .include "sound/voicegroups/voicegroup253.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_synth_bass.inc"                   @ .include "sound/voicegroups/voicegroup254.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_strings.inc"                      @ .include "sound/voicegroups/voicegroup255.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_violin.inc"                       @ .include "sound/voicegroups/voicegroup256.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_cello.inc"                        @ .include "sound/voicegroups/voicegroup257.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_pizzicato.inc"                    @ .include "sound/voicegroups/voicegroup258.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_harp.inc"                         @ .include "sound/voicegroups/voicegroup259.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_timpani.inc"                      @ .include "sound/voicegroups/voicegroup260.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_trumpet.inc"                      @ .include "sound/voicegroups/voicegroup261.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_trombone.inc"                     @ .include "sound/voicegroups/voicegroup262.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_french_horn_solo.inc"             @ .include "sound/voicegroups/voicegroup263.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_french_horn.inc"                  @ .include "sound/voicegroups/voicegroup264.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_oboe.inc"                         @ .include "sound/voicegroups/voicegroup265.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_clarinet.inc"                     @ .include "sound/voicegroups/voicegroup266.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_flute.inc"                        @ .include "sound/voicegroups/voicegroup267.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_bassoon.inc"                      @ .include "sound/voicegroups/voicegroup268.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_orchestral_hit.inc"               @ .include "sound/voicegroups/voicegroup269.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_sampled_square.inc"               @ .include "sound/voicegroups/voicegroup270.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_koto.inc"                         @ .include "sound/voicegroups/voicegroup271.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_shamisen.inc"                     @ .include "sound/voicegroups/voicegroup272.inc"
+.include "sound/voicegroups/keysplits/keysplit_hgss_piano_4.inc"                      @ .include "sound/voicegroups/voicegroup273.inc"
 @ --End HGSS Voicegroups--
 
 @ --BW Voicegroup Mapping using HGSS/RSE Instruments
-.include "sound/voicegroups/voicegroup274.inc"
-.include "sound/voicegroups/voicegroup275.inc"
-.include "sound/voicegroups/voicegroup276.inc"
-.include "sound/voicegroups/voicegroup277.inc"
-.include "sound/voicegroups/voicegroup278.inc"
-.include "sound/voicegroups/voicegroup279.inc"
-.include "sound/voicegroups/voicegroup280.inc"
-.include "sound/voicegroups/voicegroup281.inc"
-.include "sound/voicegroups/voicegroup282.inc"
-.include "sound/voicegroups/voicegroup283.inc"
-.include "sound/voicegroups/voicegroup284.inc"
-.include "sound/voicegroups/voicegroup285.inc"
-.include "sound/voicegroups/voicegroup286.inc"
+.include "sound/voicegroups/bw_main_1_using_hgss_samples.inc"                         @ .include "sound/voicegroups/voicegroup274.inc"
+.include "sound/voicegroups/bw_main_2_using_hgss_samples.inc"                         @ .include "sound/voicegroups/voicegroup275.inc"
+.include "sound/voicegroups/bw_main_3_using_hgss_samples.inc"                         @ .include "sound/voicegroups/voicegroup276.inc"
+.include "sound/voicegroups/bw_main_4_using_hgss_samples.inc"                         @ .include "sound/voicegroups/voicegroup277.inc"
+.include "sound/voicegroups/bw_main_5_using_hgss_samples.inc"                         @ .include "sound/voicegroups/voicegroup278.inc"
+.include "sound/voicegroups/bw_main_6_using_hgss_samples.inc"                         @ .include "sound/voicegroups/voicegroup279.inc"
+.include "sound/voicegroups/bw_main_7_using_hgss_samples.inc"                         @ .include "sound/voicegroups/voicegroup280.inc"
+.include "sound/voicegroups/drumsets/allkeysplit_bw_drum_1.inc"                       @ .include "sound/voicegroups/voicegroup281.inc"
+.include "sound/voicegroups/drumsets/allkeysplit_bw_drum_2.inc"                       @ .include "sound/voicegroups/voicegroup282.inc"
+.include "sound/voicegroups/drumsets/allkeysplit_bw_drum_3.inc"                       @ .include "sound/voicegroups/voicegroup283.inc"
+.include "sound/voicegroups/drumsets/allkeysplit_bw_drum_4.inc"                       @ .include "sound/voicegroups/voicegroup284.inc"
+.include "sound/voicegroups/drumsets/allkeysplit_bw_drum_5.inc"                       @ .include "sound/voicegroups/voicegroup285.inc"
+.include "sound/voicegroups/drumsets/allkeysplit_bw_drum_6.inc"                       @ .include "sound/voicegroups/voicegroup286.inc"
 
-.include "sound/voicegroups/voicegroup500.inc" @ --Blank voicegroup--
+.include "sound/voicegroups/blank_example.inc"                                        @ .include "sound/voicegroups/voicegroup500.inc" @ --Blank voicegroup--
 
 @ --Start Futari wa Precure MH GBA Voicegroups--
-.include "sound/voicegroups/voicegroup501.inc" @ [Main] Futari wa Precure MH GBA instruments
-.include "sound/voicegroups/voicegroup502.inc" @ Futari wa Precure MH GBA drum set 1
-.include "sound/voicegroups/voicegroup503.inc" @ Futari wa Precure MH GBA drum set 2
+.include "sound/voicegroups/fwpcmh_main.inc"                                          @ .include "sound/voicegroups/voicegroup501.inc" @ [Main] Futari wa Precure MH GBA instruments
+.include "sound/voicegroups/drumsets/allkeysplit_fwpcmh_drum_1.inc"                   @ .include "sound/voicegroups/voicegroup502.inc" @ Futari wa Precure MH GBA drum set 1
+.include "sound/voicegroups/drumsets/allkeysplit_fwpcmh_drum_2.inc"                   @ .include "sound/voicegroups/voicegroup503.inc" @ Futari wa Precure MH GBA drum set 2
 @ --End Futari wa Precure MH GBA Voicegroups--
 
 @ --Start PMD GBA Voicegroups--
-.include "sound/voicegroups/voicegroup504.inc" @ [Main] PMD GBA main 1 instruments for squence 1 - 99
-.include "sound/voicegroups/voicegroup505.inc" @ [Main] PMD GBA main 2 instruments for squence 100 - 199
-.include "sound/voicegroups/voicegroup506.inc" @ PMD GBA Drum 1
-.include "sound/voicegroups/voicegroup507.inc" @ PMD GBA Drum 2
-.include "sound/voicegroups/voicegroup508.inc"
-.include "sound/voicegroups/voicegroup509.inc"
-.include "sound/voicegroups/voicegroup510.inc"
-.include "sound/voicegroups/voicegroup511.inc"
-.include "sound/voicegroups/voicegroup512.inc"
-.include "sound/voicegroups/voicegroup513.inc"
-.include "sound/voicegroups/voicegroup514.inc"
-.include "sound/voicegroups/voicegroup515.inc"
-.include "sound/voicegroups/voicegroup516.inc"
-.include "sound/voicegroups/voicegroup517.inc"
-.include "sound/voicegroups/voicegroup518.inc"
-.include "sound/voicegroups/voicegroup519.inc"
-.include "sound/voicegroups/voicegroup520.inc"
-.include "sound/voicegroups/voicegroup521.inc"
-.include "sound/voicegroups/voicegroup522.inc"
-.include "sound/voicegroups/voicegroup523.inc"
-.include "sound/voicegroups/voicegroup524.inc"
-.include "sound/voicegroups/voicegroup525.inc"
-.include "sound/voicegroups/voicegroup526.inc"
-.include "sound/voicegroups/voicegroup527.inc"
-.include "sound/voicegroups/voicegroup528.inc"
-.include "sound/voicegroups/voicegroup529.inc"
-.include "sound/voicegroups/voicegroup530.inc"
+.include "sound/voicegroups/pmdred_main_1.inc"                                        @ .include "sound/voicegroups/voicegroup504.inc" @ [Main] PMD GBA main 1 instruments for squence 1 - 99
+.include "sound/voicegroups/pmdred_main_2.inc"                                        @ .include "sound/voicegroups/voicegroup505.inc" @ [Main] PMD GBA main 2 instruments for squence 100 - 199
+.include "sound/voicegroups/drumsets/allkeysplit_pmdred_drum_1.inc"                   @ .include "sound/voicegroups/voicegroup506.inc" @ PMD GBA Drum 1
+.include "sound/voicegroups/drumsets/allkeysplit_pmdred_drum_2.inc"                   @ .include "sound/voicegroups/voicegroup507.inc" @ PMD GBA Drum 2
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_01.inc"                  @ .include "sound/voicegroups/voicegroup508.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_02.inc"                  @ .include "sound/voicegroups/voicegroup509.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_03.inc"                  @ .include "sound/voicegroups/voicegroup510.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_04.inc"                  @ .include "sound/voicegroups/voicegroup511.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_05.inc"                  @ .include "sound/voicegroups/voicegroup512.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_06.inc"                  @ .include "sound/voicegroups/voicegroup513.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_07.inc"                  @ .include "sound/voicegroups/voicegroup514.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_08.inc"                  @ .include "sound/voicegroups/voicegroup515.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_09.inc"                  @ .include "sound/voicegroups/voicegroup516.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_10.inc"                  @ .include "sound/voicegroups/voicegroup517.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_11.inc"                  @ .include "sound/voicegroups/voicegroup518.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_12.inc"                  @ .include "sound/voicegroups/voicegroup519.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_13.inc"                  @ .include "sound/voicegroups/voicegroup520.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_14.inc"                  @ .include "sound/voicegroups/voicegroup521.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_15.inc"                  @ .include "sound/voicegroups/voicegroup522.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_16.inc"                  @ .include "sound/voicegroups/voicegroup523.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_17.inc"                  @ .include "sound/voicegroups/voicegroup524.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_18.inc"                  @ .include "sound/voicegroups/voicegroup525.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_19.inc"                  @ .include "sound/voicegroups/voicegroup526.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_20.inc"                  @ .include "sound/voicegroups/voicegroup527.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_21.inc"                  @ .include "sound/voicegroups/voicegroup528.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_22.inc"                  @ .include "sound/voicegroups/voicegroup529.inc"
+.include "sound/voicegroups/keysplits/keysplit_pmdred_sample_23.inc"                  @ .include "sound/voicegroups/voicegroup530.inc"
 @ --End PMD GBA Voicegroups--
 
-.include "sound/voicegroups/voicegroup601.inc" @ [Main] GBA Golden Sun
-.include "sound/voicegroups/voicegroup602.inc" @ GBA Golden Sun Drum
+.include "sound/voicegroups/golden_sun_2_main.inc"                                    @ .include "sound/voicegroups/voicegroup601.inc" @ [Main] GBA Golden Sun
+.include "sound/voicegroups/drumsets/allkeysplit_golden_sun_2_drum.inc"               @ .include "sound/voicegroups/voicegroup602.inc" @ GBA Golden Sun Drum
 
-.include "sound/voicegroups/voicegroup701.inc" @ Modified voicegroup191 GBA Drum 1
-.include "sound/voicegroups/voicegroup702.inc" @ Modified voicegroup192 GBA Drum 2
-.include "sound/voicegroups/voicegroup703.inc" @ Modified voicegroup193 GBA Drum 3
-.include "sound/voicegroups/voicegroup704.inc" @ Modified voicegroup194 
-.include "sound/voicegroups/voicegroup705.inc" @ Modified voicegroup195
-.include "sound/voicegroups/voicegroup706.inc" @ Modified voicegroup196
-.include "sound/voicegroups/voicegroup707.inc" @ Modified voicegroup197
-.include "sound/voicegroups/voicegroup708.inc" @ Modified voicegroup198
-.include "sound/voicegroups/voicegroup709.inc" @ Modified voicegroup199
+.include "sound/voicegroups/drumsets/allkeysplit_rs_custom_2_drum.inc"                @ .include "sound/voicegroups/voicegroup701.inc" @ Modified voicegroup191 GBA Drum 1
+.include "sound/voicegroups/drumsets/allkeysplit_frlg_custom_2_drum.inc"              @ .include "sound/voicegroups/voicegroup702.inc" @ Modified voicegroup192 GBA Drum 2
+.include "sound/voicegroups/drumsets/allkeysplit_emerald_1_custom_2_drum.inc"         @ .include "sound/voicegroups/voicegroup703.inc" @ Modified voicegroup193 GBA Drum 3
+.include "sound/voicegroups/drumsets/allkeysplit_emerald_2_custom_2_drum.inc"         @ .include "sound/voicegroups/voicegroup704.inc" @ Modified voicegroup194 
+.include "sound/voicegroups/keysplits/keysplit_piano_custom_2.inc"                    @ .include "sound/voicegroups/voicegroup705.inc" @ Modified voicegroup195
+.include "sound/voicegroups/keysplits/keysplit_strings_custom_2.inc"                  @ .include "sound/voicegroups/voicegroup706.inc" @ Modified voicegroup196
+.include "sound/voicegroups/keysplits/keysplit_trumpet_custom_2.inc"                  @ .include "sound/voicegroups/voicegroup707.inc" @ Modified voicegroup197
+.include "sound/voicegroups/keysplits/keysplit_tuba_custom_2.inc"                     @ .include "sound/voicegroups/voicegroup708.inc" @ Modified voicegroup198
+.include "sound/voicegroups/keysplits/keysplit_french_horn_custom_2.inc"              @ .include "sound/voicegroups/voicegroup709.inc" @ Modified voicegroup199
 
-.include "sound/voicegroups/voicegroup710.inc" @ Modified voicegroup191 HGSS Drum
-.include "sound/voicegroups/voicegroup711.inc" @ Modified voicegroup192 HGSS Taiko Drum
-.include "sound/voicegroups/voicegroup712.inc" @ Modified voicegroup193 HGSS Taiko Drum 2
-.include "sound/voicegroups/voicegroup713.inc" @ Modified HGSS Music Box Multi Sample
-.include "sound/voicegroups/voicegroup714.inc" @ Modified HGSS Piano Multi Sample
+.include "sound/voicegroups/drumsets/allkeysplit_hgss_drum_custom.inc"                @ .include "sound/voicegroups/voicegroup710.inc" @ Modified voicegroup191 HGSS Drum
+.include "sound/voicegroups/drumsets/allkeysplit_hgss_taiko_drum_custom.inc"          @ .include "sound/voicegroups/voicegroup711.inc" @ Modified voicegroup192 HGSS Taiko Drum
+.include "sound/voicegroups/drumsets/allkeysplit_hgss_drum_kick_and_snare_custom.inc" @ .include "sound/voicegroups/voicegroup712.inc" @ Modified voicegroup193 HGSS Taiko Drum 2
+.include "sound/voicegroups/keysplits/keysplit_hgss_music_box_custom.inc"             @ .include "sound/voicegroups/voicegroup713.inc" @ Modified HGSS Music Box Multi Sample
+.include "sound/voicegroups/keysplits/keysplit_piano_custom_3.inc"                    @ .include "sound/voicegroups/voicegroup714.inc" @ Modified HGSS Piano Multi Sample
 
-.include "sound/voicegroups/voicegroup801.inc" @ Game corner expansion
-.include "sound/voicegroups/voicegroup802.inc" @ ラフィーニャ / ジャスミン / @redspinelj
-.include "sound/voicegroups/voicegroup803.inc" @ Velo: IFM
-.include "sound/voicegroups/voicegroup804.inc" @ Velo: IFM Drum
-.include "sound/voicegroups/voicegroup805.inc" @ Megaman Battle Network 6 Mapping (Partial)
-.include "sound/voicegroups/voicegroup806.inc" @ Megaman Battle Network 6 Drum Mapping (Partial)
-.include "sound/voicegroups/voicegroup807.inc" @ THPP Music Expansion Drum 1
-.include "sound/voicegroups/voicegroup808.inc" @ THPP Music Expansion Drum 2
-.include "sound/voicegroups/voicegroup809.inc" @ THPP Music Expansion Main 1 - Mr. Unknown's
-.include "sound/voicegroups/voicegroup810.inc" @ THPP Music Expansion Main 2 - Reincarnation
-.include "sound/voicegroups/voicegroup811.inc" @ THPP Music Expansion Main 3 - Uda's
-.include "sound/voicegroups/voicegroup812.inc" @ Shizukana Shizukana Native Faith
-.include "sound/voicegroups/voicegroup813.inc" @ Shizukana Shizukana Native Faith Piano Split
-.include "sound/voicegroups/voicegroup814.inc" @ Climax Jump
-.include "sound/voicegroups/voicegroup815.inc" @ THPP Zoku Gensokyo - Main Voicegroup
-.include "sound/voicegroups/voicegroup816.inc" @ THPP Zoku Gensokyo - Drum Kit
-.include "sound/voicegroups/voicegroup817.inc" @ THPP Zoku Gensokyo - Custom voicegroup156
-.include "sound/voicegroups/voicegroup818.inc" @ THPP Zoku Gensokyo - Custom voicegroup143
-.include "sound/voicegroups/voicegroup819.inc" @ THPP Zoku Gensokyo - Custom voicegroup157
-.include "sound/voicegroups/voicegroup820.inc" @ THPP Zoku Gensokyo - Custom voicegroup158
-.include "sound/voicegroups/voicegroup821.inc" @ THPP Zoku Gensokyo - Custom voicegroup026
-.include "sound/voicegroups/voicegroup822.inc" @ THPP Zoku Gensokyo - Custom voicegroup133
-.include "sound/voicegroups/voicegroup823.inc" @ THPP Zoku Gensokyo - Custom voicegroup137
-.include "sound/voicegroups/voicegroup824.inc" @ THPP Zoku Gensokyo - Custom voicegroup142
-.include "sound/voicegroups/voicegroup825.inc" @ THPP Zoku Gensokyo - Custom voicegroup165
-.include "sound/voicegroups/voicegroup826.inc" @ THPP Zoku Gensokyo - Custom voicegroup162
+.include "sound/voicegroups/game_corner_expansion.inc"                                @ .include "sound/voicegroups/voicegroup801.inc" @ Game corner expansion
+.include "sound/voicegroups/rafinia_custom.inc"                                       @ .include "sound/voicegroups/voicegroup802.inc" @ ラフィーニャ / ジャスミン / @redspinelj
+.include "sound/voicegroups/velo_custom.inc"                                          @ .include "sound/voicegroups/voicegroup803.inc" @ Velo: IFM
+.include "sound/voicegroups/drumsets/allkeysplit_velo_custom_drum.inc"                @ .include "sound/voicegroups/voicegroup804.inc" @ Velo: IFM Drum
+.include "sound/voicegroups/mmbn6_main.inc"                                           @ .include "sound/voicegroups/voicegroup805.inc" @ Megaman Battle Network 6 Mapping (Partial)
+.include "sound/voicegroups/drumsets/allkeysplit_mmbn6_drum.inc"                      @ .include "sound/voicegroups/voicegroup806.inc" @ Megaman Battle Network 6 Drum Mapping (Partial)
+.include "sound/voicegroups/drumsets/allkeysplit_thppme_drum_1.inc"                   @ .include "sound/voicegroups/voicegroup807.inc" @ THPP Music Expansion Drum 1
+.include "sound/voicegroups/drumsets/allkeysplit_thppme_drum_2.inc"                   @ .include "sound/voicegroups/voicegroup808.inc" @ THPP Music Expansion Drum 2
+.include "sound/voicegroups/thppme_mr_unknown_set.inc"                                @ .include "sound/voicegroups/voicegroup809.inc" @ THPP Music Expansion Main 1 - Mr. Unknown's
+.include "sound/voicegroups/thppme_reincarnation_set.inc"                             @ .include "sound/voicegroups/voicegroup810.inc" @ THPP Music Expansion Main 2 - Reincarnation
+.include "sound/voicegroups/thppme_uda_set.inc"                                       @ .include "sound/voicegroups/voicegroup811.inc" @ THPP Music Expansion Main 3 - Uda's
+.include "sound/voicegroups/shizukana_native_faith_main.inc"                          @ .include "sound/voicegroups/voicegroup812.inc" @ Shizukana Shizukana Native Faith
+.include "sound/voicegroups/keysplits/keysplit_shizukana_native_faith_piano.inc"      @ .include "sound/voicegroups/voicegroup813.inc" @ Shizukana Shizukana Native Faith Piano Split
+.include "sound/voicegroups/climax_jump.inc"                                          @ .include "sound/voicegroups/voicegroup814.inc" @ Climax Jump
+.include "sound/voicegroups/thppzgsk_main.inc"                                        @ .include "sound/voicegroups/voicegroup815.inc" @ THPP Zoku Gensokyo - Main Voicegroup
+.include "sound/voicegroups/drumsets/allkeysplit_thppzgsk_drum.inc"                   @ .include "sound/voicegroups/voicegroup816.inc" @ THPP Zoku Gensokyo - Drum Kit
+.include "sound/voicegroups/thppzgsk_rg_vs_trainer_custom.inc"                        @ .include "sound/voicegroups/voicegroup817.inc" @ THPP Zoku Gensokyo - Custom voicegroup156
+.include "sound/voicegroups/thppzgsk_rg_girl_encounter_custom.inc"                    @ .include "sound/voicegroups/voicegroup818.inc" @ THPP Zoku Gensokyo - Custom voicegroup143
+.include "sound/voicegroups/thppzgsk_rg_vs_wild_custom.inc"                           @ .include "sound/voicegroups/voicegroup819.inc" @ THPP Zoku Gensokyo - Custom voicegroup_rg_vs_wild
+.include "sound/voicegroups/thppzgsk_rg_vs_champion_custom.inc"                       @ .include "sound/voicegroups/voicegroup820.inc" @ THPP Zoku Gensokyo - Custom voicegroup158
+.include "sound/voicegroups/thppzgsk_evolution_custom.inc"                            @ .include "sound/voicegroups/voicegroup821.inc" @ THPP Zoku Gensokyo - Custom voicegroup026
+.include "sound/voicegroups/thppzgsk_rg_rocket_hideout_custom.inc"                    @ .include "sound/voicegroups/voicegroup822.inc" @ THPP Zoku Gensokyo - Custom voicegroup133
+.include "sound/voicegroups/thppzgsk_rg_title_custom.inc"                             @ .include "sound/voicegroups/voicegroup823.inc" @ THPP Zoku Gensokyo - Custom voicegroup137
+.include "sound/voicegroups/thppzgsk_rg_encounter_rocket_custom.inc"                  @ .include "sound/voicegroups/voicegroup824.inc" @ THPP Zoku Gensokyo - Custom voicegroup142
+.include "sound/voicegroups/thppzgsk_rg_poke_tower_custom.inc"                        @ .include "sound/voicegroups/voicegroup825.inc" @ THPP Zoku Gensokyo - Custom voicegroup165
+.include "sound/voicegroups/thppzgsk_rg_poke_center_custom.inc"                       @ .include "sound/voicegroups/voicegroup826.inc" @ THPP Zoku Gensokyo - Custom voicegroup_rg_poke_center
 
-.include "sound/voicegroups/voicegroup900.inc" @ New Sound Effects
-.include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
+.include "sound/voicegroups/sfx_custom.inc"                                           @ .include "sound/voicegroups/voicegroup900.inc" @ New Sound Effects
+.include "sound/voicegroups/wavestream_ctc_g_free.inc"                                @ .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
 
-.include "sound/voicegroups/voicegroup999.inc" @ Test Instrument
-
+.include "sound/voicegroups/test_placeholder.inc"                                     @ .include "sound/voicegroups/voicegroup999.inc" @ Test Instrument

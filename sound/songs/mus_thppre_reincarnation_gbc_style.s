@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_thppre_reincarnation_gbc_style_grp, voicegroup206
+        .equ    mus_thppre_reincarnation_gbc_style_grp, voicegroup_gbc_1_experimental
         .equ    mus_thppre_reincarnation_gbc_style_pri, 0
         .equ    mus_thppre_reincarnation_gbc_style_rev, reverb_set+50
         .equ    mus_thppre_reincarnation_gbc_style_mvl, 100

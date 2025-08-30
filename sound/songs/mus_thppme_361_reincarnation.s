@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_thppme_361_reincarnation_grp, voicegroup810
+        .equ    mus_thppme_361_reincarnation_grp, voicegroup_thppme_reincarnation_set
         .equ    mus_thppme_361_reincarnation_pri, 0
         .equ    mus_thppme_361_reincarnation_rev, reverb_set+50
         .equ    mus_thppme_361_reincarnation_key, 0

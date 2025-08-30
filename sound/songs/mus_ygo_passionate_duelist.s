@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_ygo_passionate_duelist_grp, voicegroup201
+	.equ	mus_ygo_passionate_duelist_grp, voicegroup_common_main
 	.equ	mus_ygo_passionate_duelist_pri, 0
 	.equ	mus_ygo_passionate_duelist_rev, reverb_set+50
 	.equ	mus_ygo_passionate_duelist_mvl, 127

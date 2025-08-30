@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pc_ds2fwpcss_bgm_minigame_03_grp, voicegroup201
+	.equ	mus_pc_ds2fwpcss_bgm_minigame_03_grp, voicegroup_common_main
 	.equ	mus_pc_ds2fwpcss_bgm_minigame_03_pri, 0
 	.equ	mus_pc_ds2fwpcss_bgm_minigame_03_rev, reverb_set+50
 	.equ	mus_pc_ds2fwpcss_bgm_minigame_03_mvl, 100

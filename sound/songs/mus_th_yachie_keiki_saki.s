@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_yachie_keiki_saki_grp, voicegroup802
+        .equ    mus_th_yachie_keiki_saki_grp, voicegroup_rafinia_custom
         .equ    mus_th_yachie_keiki_saki_pri, 0
         .equ    mus_th_yachie_keiki_saki_mvl, 100
         .equ    mus_th_yachie_keiki_saki_rev, reverb_set+50

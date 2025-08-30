@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pkmn_dp_vs_wild_grp, voicegroup203
+	.equ	mus_pkmn_dp_vs_wild_grp, voicegroup_dppt_custom_using_hgss_samples
 	.equ	mus_pkmn_dp_vs_wild_pri, 0
 	.equ	mus_pkmn_dp_vs_wild_rev, reverb_set+50
 	.equ	mus_pkmn_dp_vs_wild_mvl, 92

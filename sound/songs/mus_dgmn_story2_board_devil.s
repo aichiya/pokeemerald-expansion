@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_story2_board_devil_grp, voicegroup201
+	.equ	mus_dgmn_story2_board_devil_grp, voicegroup_common_main
 	.equ	mus_dgmn_story2_board_devil_pri, 0
 	.equ	mus_dgmn_story2_board_devil_rev, reverb_set+50
 	.equ	mus_dgmn_story2_board_devil_mvl, 100

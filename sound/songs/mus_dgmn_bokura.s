@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_dgmn_bokura_grp, voicegroup201
+        .equ    mus_dgmn_bokura_grp, voicegroup_common_main
         .equ    mus_dgmn_bokura_pri, 0
         .equ    mus_dgmn_bokura_mvl, 100
         .equ    mus_dgmn_bokura_rev, reverb_set+50

@@ -1,5 +1,5 @@
 voice_group rg_fuchsia
-	voice_keysplit_all voicegroup_frlg_drumset
+	voice_keysplit_all voicegroup_allkeysplit_thppme_drum_1
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

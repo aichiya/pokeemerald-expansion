@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_cv_dos_bloody_tears_grp, voicegroup205
+        .equ    mus_cv_dos_bloody_tears_grp, voicegroup_custom_205_experimental
         .equ    mus_cv_dos_bloody_tears_pri, 0
         .equ    mus_cv_dos_bloody_tears_mvl, 100
         .equ    mus_cv_dos_bloody_tears_rev, reverb_set+50

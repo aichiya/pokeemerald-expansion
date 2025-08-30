@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_pinball_grp, voicegroup201
+        .equ    mus_etc_pinball_grp, voicegroup_common_main
         .equ    mus_etc_pinball_pri, 0
         .equ    mus_etc_pinball_mvl, 100
         .equ    mus_etc_pinball_rev, reverb_set+50

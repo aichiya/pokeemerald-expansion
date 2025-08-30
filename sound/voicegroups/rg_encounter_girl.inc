@@ -1,5 +1,5 @@
 voice_group rg_encounter_girl
-	voice_keysplit_all voicegroup_frlg_drumset
+	voice_keysplit_all voicegroup_allkeysplit_thppme_drum_1
 	voice_keysplit voicegroup_piano_keysplit, keysplit_piano
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -81,7 +81,7 @@ voice_group rg_encounter_girl
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_2_alt 60, 0, 3, 0, 2, 3, 2
 	voice_square_1_alt 60, 0, 0, 2, 0, 2, 3, 1
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_thppme_puresquare25, 255, 224, 64, 200
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 0, 7, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

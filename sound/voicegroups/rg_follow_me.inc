@@ -1,5 +1,5 @@
 voice_group rg_follow_me
-	voice_keysplit_all voicegroup_frlg_drumset
+	voice_keysplit_all voicegroup_allkeysplit_thppme_drum_1
 	voice_keysplit voicegroup_piano_keysplit, keysplit_piano
 	voice_directsound 60, 0, DirectSoundWaveData_steinway_b_piano, 128, 204, 51, 242
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

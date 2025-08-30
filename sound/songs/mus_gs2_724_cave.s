@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_724_cave_grp, voicegroup601
+        .equ    mus_gs2_724_cave_grp, voicegroup_golden_sun_2_main
         .equ    mus_gs2_724_cave_pri, 0
         .equ    mus_gs2_724_cave_rev, reverb_set+50
         .equ    mus_gs2_724_cave_key, 0

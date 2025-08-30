@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_702_sad_town_grp, voicegroup601
+        .equ    mus_gs2_702_sad_town_grp, voicegroup_golden_sun_2_main
         .equ    mus_gs2_702_sad_town_pri, 0
         .equ    mus_gs2_702_sad_town_rev, reverb_set+50
         .equ    mus_gs2_702_sad_town_key, 0

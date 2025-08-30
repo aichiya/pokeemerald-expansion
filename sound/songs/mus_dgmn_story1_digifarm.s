@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_story1_digifarm_grp, voicegroup201
+	.equ	mus_dgmn_story1_digifarm_grp, voicegroup_common_main
 	.equ	mus_dgmn_story1_digifarm_pri, 0
 	.equ	mus_dgmn_story1_digifarm_rev, reverb_set+50
 	.equ	mus_dgmn_story1_digifarm_mvl, 100

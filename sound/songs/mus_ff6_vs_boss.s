@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_ff6_vs_boss_grp, voicegroup205
+        .equ    mus_ff6_vs_boss_grp, voicegroup_custom_205_experimental
         .equ    mus_ff6_vs_boss_pri, 0
         .equ    mus_ff6_vs_boss_mvl, 254
         .equ    mus_ff6_vs_boss_rev, reverb_set+50

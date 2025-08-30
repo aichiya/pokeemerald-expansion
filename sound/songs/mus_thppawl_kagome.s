@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thppawl_kagome_grp, voicegroup201
+	.equ	mus_thppawl_kagome_grp, voicegroup_common_main
 	.equ	mus_thppawl_kagome_pri, 0
 	.equ	mus_thppawl_kagome_rev, reverb_set+50
 	.equ	mus_thppawl_kagome_mvl, 108

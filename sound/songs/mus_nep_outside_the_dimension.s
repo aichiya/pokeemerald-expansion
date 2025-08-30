@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_nep_outside_the_dimension_grp, voicegroup201
+        .equ    mus_nep_outside_the_dimension_grp, voicegroup_common_main
         .equ    mus_nep_outside_the_dimension_pri, 0
         .equ    mus_nep_outside_the_dimension_mvl, 127
         .equ    mus_nep_outside_the_dimension_rev, reverb_set+50

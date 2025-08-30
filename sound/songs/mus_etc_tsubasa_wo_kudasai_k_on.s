@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_tsubasa_wo_kudasai_k_on_grp, voicegroup205
+        .equ    mus_etc_tsubasa_wo_kudasai_k_on_grp, voicegroup_custom_205_experimental
         .equ    mus_etc_tsubasa_wo_kudasai_k_on_pri, 0
         .equ    mus_etc_tsubasa_wo_kudasai_k_on_rev, reverb_set+50
         .equ    mus_etc_tsubasa_wo_kudasai_k_on_key, 0

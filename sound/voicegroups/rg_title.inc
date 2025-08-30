@@ -1,5 +1,5 @@
 voice_group rg_title
-	voice_keysplit_all voicegroup_frlg_drumset
+	voice_keysplit_all voicegroup_allkeysplit_thppme_drum_1
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
@@ -81,7 +81,7 @@ voice_group rg_title
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1_alt 60, 0, 0, 1, 1, 2, 3, 1
 	voice_square_2_alt 60, 0, 1, 1, 2, 3, 1
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_thppme_puresquare25, 80, 224, 48, 128
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

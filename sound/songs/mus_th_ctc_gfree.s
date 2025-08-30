@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_th_ctc_gfree_grp, voicegroup901
+	.equ	mus_th_ctc_gfree_grp, voicegroup_wavestream_ctc_g_free
 	.equ	mus_th_ctc_gfree_pri, 0
 	.equ	mus_th_ctc_gfree_rev, reverb_set+50
 	.equ	mus_th_ctc_gfree_mvl, 127

@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_th_skyhigh_grp, voicegroup200
+	.equ	mus_th_skyhigh_grp, voicegroup_common_main
 	.equ	mus_th_skyhigh_pri, 0
 	.equ	mus_th_skyhigh_rev, reverb_set+50
 	.equ	mus_th_skyhigh_mvl, 127

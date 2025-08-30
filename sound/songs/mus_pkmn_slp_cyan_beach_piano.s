@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_pkmn_slp_cyan_beach_piano_grp, voicegroup201
+        .equ    mus_pkmn_slp_cyan_beach_piano_grp, voicegroup_common_main
         .equ    mus_pkmn_slp_cyan_beach_piano_pri, 0
         .equ    mus_pkmn_slp_cyan_beach_piano_rev, reverb_set+50
         .equ    mus_pkmn_slp_cyan_beach_piano_key, 0

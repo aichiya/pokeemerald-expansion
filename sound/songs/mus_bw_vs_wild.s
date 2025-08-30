@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_bw_vs_wild_grp, voicegroup210
+        .equ    mus_bw_vs_wild_grp, voicegroup_thpprf_main
         .equ    mus_bw_vs_wild_pri, 0
         .equ    mus_bw_vs_wild_mvl, 127
         .equ    mus_bw_vs_wild_rev, reverb_set+50

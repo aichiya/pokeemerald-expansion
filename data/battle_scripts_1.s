@@ -175,7 +175,7 @@ BattleScript_EffectUltraInstinct::
 	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_SPEED, MAX_STAT_STAGE, BattleScript_ButItFailed
 BattleScript_UltraInstinctTryAcc:
     ishplessthanquarter BattleScript_ButItFailed
-	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
 	attackanimation
 	waitanimation
 	setstatchanger STAT_ACC, MAX_STAT_STAGE, FALSE
@@ -7415,7 +7415,7 @@ BattleScript_LeechSeedOnAbilityPureWhiteActivates::
 	printstring STRINGID_LEECHSEEDHEALSABILITYPUREWHITE
 	waitmessage B_WAIT_TIME_LONG
 	statusanimation BS_ATTACKER
-	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
 	healthbarupdate BS_ATTACKER
 	datahpupdate BS_ATTACKER
 	end2
@@ -10442,7 +10442,7 @@ BattleScript_TsubameGaeshiActivates::
 	waitanimation
 	restoretarget
 	restoreattacker
-	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
 	healthbarupdate BS_ATTACKER
 	datahpupdate BS_ATTACKER
 	tryfaintmon BS_ATTACKER

@@ -1,6 +1,6 @@
 voice_group thppme_uda_set                                                                                 @ Uda's
-	voice_keysplit_all voicegroup_allkeysplit_thppme_drum_1                                                                       @ 000 | Direct | Drum | GBA Drum
-	voice_keysplit voicegroup_keysplit_piano_custom, keysplit_piano_custom                                             @ 001 | Direct | Multi | GBA Piano 1
+	voice_keysplit_all voicegroup_allkeysplit_thppme_drum_1                                                @ 000 | Direct | Drum | GBA Drum
+	voice_keysplit voicegroup_keysplit_piano_custom, keysplit_piano_custom                                 @ 001 | Direct | Multi | GBA Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_steinway_b_piano, 128, 204, 51, 242                       @ 002 | Direct | GBA Piano 2
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 128, 180, 108, 209        @ 003 | Direct | GBA Electric Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 255, 188, 128, 226        @ 004 | Direct | GBA Electric Piano 1
@@ -47,7 +47,7 @@ voice_group thppme_uda_set                                                      
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_pizzicato_strings, 255, 216, 0, 165               @ 045 | Direct | GBA Pizzicato
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_harp, 255, 246, 0, 235                            @ 046 | Direct | GBA Harp
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_timpani, 255, 127, 154, 235                       @ 047 | Direct | GBA Timpani
-	voice_keysplit voicegroup_keysplit_strings_custom, keysplit_strings_custom                                     @ 048 | Direct | Multi | GBA String
+	voice_keysplit voicegroup_keysplit_strings_custom, keysplit_strings_custom                             @ 048 | Direct | Multi | GBA String
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1_alt 60, 0, 0, 2, 0, 2, 3, 1                                                             @ 050 | Square-1 |
 	voice_square_2_alt 60, 0, 3, 0, 2, 7, 2                                                                @ 051 | Square-2 |
@@ -55,11 +55,11 @@ voice_group thppme_uda_set                                                      
 	voice_directsound 60, 0, DirectSoundWaveData_classical_choir_voice_ahhs, 255, 0, 255, 0                @ 053 | Direct | GBA Choir Ahhs
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_keysplit voicegroup_keysplit_trumpet_custom, keysplit_trumpet_custom                                            @ 056 | Direct | Multi | GBA Trumpet
+	voice_keysplit voicegroup_keysplit_trumpet_custom, keysplit_trumpet_custom                             @ 056 | Direct | Multi | GBA Trumpet
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_keysplit voicegroup_keysplit_tuba_custom, keysplit_tuba_custom                                               @ 058 | Direct | Multi | GBA Tuba
+	voice_keysplit voicegroup_keysplit_tuba_custom, keysplit_tuba_custom                                   @ 058 | Direct | Multi | GBA Tuba
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_keysplit voicegroup_keysplit_french_horn_custom, keysplit_french_horn_custom                                         @ 060 | Direct | Multi | GBA French Horn
+	voice_keysplit voicegroup_keysplit_french_horn_custom, keysplit_french_horn_custom                     @ 060 | Direct | Multi | GBA French Horn
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 0, 255, 127    @ 062 | Direct | GBA Distortion Guitar 2
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

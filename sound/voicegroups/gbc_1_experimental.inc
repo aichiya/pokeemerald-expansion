@@ -1,5 +1,5 @@
 voice_group gbc_1_experimental
-	voice_keysplit_all voicegroup_allkeysplit_frlg_custom_2_drum                                                      @ 000 | Direct | RSE Drum 1 | VVVVV
+	voice_keysplit_all voicegroup_allkeysplit_frlg_custom_2_drum                          @ 000 | Direct | RSE Drum 1 | VVVVV
 	voice_square_1_alt 60, 0, 0, 2, 0, 3, 10, 4                                           @ 001 | GB Square1 | Pewter GBC Ch. 1
 	voice_square_2_alt 60, 0, 1, 0, 7, 11, 7                                              @ 002 | GB Square2 | Pewter GBC Ch. 2
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_PkmnGSCRGBY03, 0, 7, 12, 0    @ 003 | GB Wave    | Pewter GBC Ch. 3

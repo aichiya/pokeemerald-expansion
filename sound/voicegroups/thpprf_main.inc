@@ -1,6 +1,6 @@
 voice_group thpprf_main
-	voice_keysplit_all voicegroup_allkeysplit_frlg_custom_drum                                                                            @ 000 | Direct | Drum | GBA Drum
-	voice_keysplit voicegroup_keysplit_piano_custom, keysplit_piano                                                                @ 001 | Direct | Multi | GBA Piano 1
+	voice_keysplit_all voicegroup_allkeysplit_frlg_custom_drum                                                  @ 000 | Direct | Drum | GBA Drum
+	voice_keysplit voicegroup_keysplit_piano_custom, keysplit_piano                                             @ 001 | Direct | Multi | GBA Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_steinway_b_piano, 128, 204, 51, 242                            @ 002 | Direct | GBA Piano 2
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_church_organ, 170, 180, 160, 235                        @ 003 | Direct | RF Church Organ
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_choir_ohhs, 255, 188, 220, 243                          @ 004 | Direct | RF Choir Ohhs
@@ -15,7 +15,7 @@ voice_group thpprf_main
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_xylophone, 255, 235, 0, 204                            @ 013 | Direct | GBA Xylophone
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_tubular_bell, 255, 165, 97, 236                        @ 014 | Direct | GBA Tubular Bells
 	voice_programmable_wave 60, 0, ProgrammableWaveData_thppme_pcm_fff6f0, 0, 0, 15, 0                          @ 015 | Wave | 0 0 15 0
-	voice_keysplit_all voicegroup_allkeysplit_frlg_custom_drum                                                                            @ 016 | Drum | GBA Drum | Copy of 000
+	voice_keysplit_all voicegroup_allkeysplit_frlg_custom_drum                                                  @ 016 | Drum | GBA Drum | Copy of 000
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_organ2, 128, 160, 175, 165                             @ 017 | Direct | GBA Church Organ
 	voice_directsound 60, 0, DirectSoundWaveData_thppme_drawbar_organ, 255, 0, 248, 128                         @ 018 | Direct | THPP Drawbar Organ
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_dream_battle_intro, 230, 230, 230, 230                  @ 019 | Direct | RF Dream Battle Intro
@@ -47,7 +47,7 @@ voice_group thpprf_main
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_pizzicato_strings, 255, 216, 0, 165                    @ 045 | Direct | GBA Pizzicato
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_harp, 255, 246, 0, 235                                 @ 046 | Direct | GBA Harp
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_timpani, 255, 127, 154, 235                            @ 047 | Direct | GBA Timpani
-	voice_keysplit voicegroup_keysplit_strings_custom, keysplit_strings                                                                @ 048 | Direct |  Multi | GBA String
+	voice_keysplit voicegroup_keysplit_strings_custom, keysplit_strings                                         @ 048 | Direct |  Multi | GBA String
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 049 | Unused
 	voice_square_1_alt 60, 0, 0, 2, 0, 2, 3, 1                                                                  @ 050 | Squar\'e-1 | Note off with noise 50% 0 2 3 1
 	voice_square_2_alt 60, 0, 3, 0, 2, 7, 2                                                                     @ 051 | Square-2 | Note off with noise 75% 0 2 7 2
@@ -57,9 +57,9 @@ voice_group thpprf_main
 	voice_directsound 60, 0, DirectSoundWaveData_thppme_orchestra_hit, 64, 248, 0, 232                          @ 055 | Direct | THPP Orchestra Hit
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_romantic_trumpet2, 240, 200, 245, 220                   @ 056 | Direct | RF Romantic Trumpet 2
 	voice_directsound 60, 0, DirectSoundWaveData_thppme_trombone, 255, 0, 255, 192                              @ 057 | Direct | THPP Trombones
-	voice_keysplit voicegroup_keysplit_tuba_custom, keysplit_tuba                                                                @ 058 | Direct | Multi | GBA Tuba
+	voice_keysplit voicegroup_keysplit_tuba_custom, keysplit_tuba                                               @ 058 | Direct | Multi | GBA Tuba
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 059 | Unused
-	voice_keysplit voicegroup_keysplit_french_horn_custom, keysplit_french_horn                                                                @ 060 | Direct | Multi | GBA French Horn
+	voice_keysplit voicegroup_keysplit_french_horn_custom, keysplit_french_horn                                 @ 060 | Direct | Multi | GBA French Horn
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 061 | Unused
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 0, 236, 188         @ 062 | Direct | GBA Distortion Guitar 2 | Check again
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 063 | Unused
@@ -119,8 +119,8 @@ voice_group thpprf_main
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 117 | Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 118 | Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 119 | Unused
-	voice_keysplit_all voicegroup_allkeysplit_hgss_drum                                                                            @ 120 | Direct | Drum | HGSS Drum | Added to overcome beeping drum problem
-	voice_keysplit voicegroup_keysplit_hgss_piano_1, keysplit_hgss_piano_1                                                               @ 121 | Direct | Multi | HGSS Piano 1 | Added to overcome GBA Piano keysplit
+	voice_keysplit_all voicegroup_allkeysplit_hgss_drum                                                         @ 120 | Direct | Drum | HGSS Drum | Added to overcome beeping drum problem
+	voice_keysplit voicegroup_keysplit_hgss_piano_1, keysplit_hgss_piano_1                                      @ 121 | Direct | Multi | HGSS Piano 1 | Added to overcome GBA Piano keysplit
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 122 | Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 123 | Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                     @ 124 | Unused

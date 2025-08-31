@@ -1,5 +1,5 @@
 voice_group synth_experimental
-	voice_keysplit_all voicegroup_frlg_drumset                                                                          @ 000 | Direct | Drum | GBA Drum
+	voice_keysplit_all voicegroup_frlg_drumset                                            @ 000 | Direct | Drum | GBA Drum
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 001 | Square-1 | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 002 | Square-1 | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 003 | Square-1 | 

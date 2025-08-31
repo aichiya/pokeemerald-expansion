@@ -1,6 +1,6 @@
 voice_group thppzgsk_main
-	voice_keysplit_all voicegroup_allkeysplit_thppzgsk_drum                                                                       @ 000 | Direct | Drum | GBA Drum
-	voice_keysplit voicegroup_keysplit_piano_custom, keysplit_piano_custom                                             @ 001 | Direct | Multi | GBA Piano 1
+	voice_keysplit_all voicegroup_allkeysplit_thppzgsk_drum                                                @ 000 | Direct | Drum | GBA Drum
+	voice_keysplit voicegroup_keysplit_piano_custom, keysplit_piano_custom                                 @ 001 | Direct | Multi | GBA Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_steinway_b_piano, 128, 204, 51, 242                       @ 002 | Direct | GBA Piano 2
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 128, 180, 108, 209        @ 003 | Direct | GBA Electric Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 255, 188, 128, 226        @ 004 | Direct | GBA Electric Piano 1
@@ -55,11 +55,11 @@ voice_group thppzgsk_main
 	voice_directsound 60, 0, DirectSoundWaveData_classical_choir_voice_ahhs, 255, 0, 255, 0                @ 053 | Direct | GBA Choir Ahhs
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_keysplit voicegroup_keysplit_trumpet_custom, keysplit_trumpet_custom                                            @ 056 | Direct | Multi | GBA Trumpet
+	voice_keysplit voicegroup_keysplit_trumpet_custom, keysplit_trumpet_custom                             @ 056 | Direct | Multi | GBA Trumpet
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_keysplit voicegroup_keysplit_tuba_custom, keysplit_tuba_custom                                               @ 058 | Direct | Multi | GBA Tuba
+	voice_keysplit voicegroup_keysplit_tuba_custom, keysplit_tuba_custom                                   @ 058 | Direct | Multi | GBA Tuba
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_keysplit voicegroup_keysplit_french_horn_custom, keysplit_french_horn_custom                                         @ 060 | Direct | Multi | GBA French Horn
+	voice_keysplit voicegroup_keysplit_french_horn_custom, keysplit_french_horn_custom                     @ 060 | Direct | Multi | GBA French Horn
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 0, 255, 127    @ 062 | Direct | GBA Distortion Guitar 2
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0

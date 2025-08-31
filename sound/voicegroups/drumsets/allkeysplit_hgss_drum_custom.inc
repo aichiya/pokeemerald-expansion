@@ -6,12 +6,12 @@ voice_group allkeysplit_hgss_drum_custom                                        
 	voice_directsound 60, 0, DirectSoundWaveData_puresquare_12,                                    80, 234, 191, 220	@ 004 | EnM2,
 	voice_directsound 60, 0, DirectSoundWaveData_dp_orchhitmajor60,                                255, 197, 255, 171	@ 005 | FnM2,
 	voice_directsound 60, 0, DirectSoundWaveData_dp_orchhitminor60,                                255, 197, 255, 171	@ 006 | FsM2,
-	voice_keysplit_all voicegroup_allkeysplit_hgss_drum_kick_and_snare  @ synth kick+snare	                                                            @ 007 | GnM2,
-	voice_keysplit voicegroup_keysplit_dp_timpani, keysplit_dp_timpani @ DPPt timpani                                                        @ 008 | GsM2,
+	voice_keysplit_all voicegroup_allkeysplit_hgss_drum_kick_and_snare  	                                            @ 007 | GnM2, @ synth kick+snare
+	voice_keysplit voicegroup_keysplit_dp_timpani, keysplit_dp_timpani                                                  @ 008 | GsM2, @ DPPt timpani
 	voice_directsound 60, 0, DirectSoundWaveData_dp_synbass1_c2_16,                                255, 42, 255, 192	@ 009 | AnM2,
 	voice_directsound 60, 0, DirectSoundWaveData_dp_synbass2_c1_16,                                255, 0, 255, 220	    @ 010 | AsM2,
 	voice_directsound 60, 0, DirectSoundWaveData_dp_sawtoothlead60,                                255, 197, 255, 171	@ 011 | BnM2,
-	voice_keysplit voicegroup_keysplit_hgss_shamisen, keysplit_hgss_shamisen   @ shamisen                                                          @ 012 | CnM1,
+	voice_keysplit voicegroup_keysplit_hgss_shamisen, keysplit_hgss_shamisen   @ shamisen                               @ 012 | CnM1,
 	voice_directsound 60, 0, DirectSoundWaveData_hg_hyoshigi,                                      255, 0, 255, 171	    @ 013 | CsM1,
 	voice_directsound 60, 0, DirectSoundWaveData_hg_kodaiko,                                       255, 0, 255, 171	    @ 014 | DnM1,
 	voice_directsound 60, 0, DirectSoundWaveData_hg_tsuzumi,                                       255, 0, 255, 171	    @ 015 | DsM1,
@@ -19,15 +19,15 @@ voice_group allkeysplit_hgss_drum_custom                                        
 	voice_directsound 60, 0, DirectSoundWaveData_hg_hoohclap,                                      255, 0, 255, 0	    @ 017 | FnM1,
 	voice_directsound 60, 0, DirectSoundWaveData_dp_tenorchoir48,                                  255, 197, 255, 171	@ 018 | FsM1,
 	voice_directsound 60, 0, DirectSoundWaveData_dp_sopranochoir60,                                255, 197, 255, 171	@ 019 | GnM1,
-	voice_directsound 60, 0, DirectSoundWaveData_hg_choirc5,                                       255, 197, 255, 171   @ 1 octave too low	@ 020 | GsM1,
-	voice_directsound 60, 0, DirectSoundWaveData_dp_reverscyn_16,                                  255, 197, 255, 171   @ 1 octave too high	@ 021 | AnM1,
+	voice_directsound 60, 0, DirectSoundWaveData_hg_choirc5,                                       255, 197, 255, 171   @ 020 | GsM1, @ 1 octave too low	
+	voice_directsound 60, 0, DirectSoundWaveData_dp_reverscyn_16,                                  255, 197, 255, 171   @ 021 | AnM1, @ 1 octave too high	
 	voice_directsound 60, 0, DirectSoundWaveData_dp_spearpillarwind60,                             255, 0, 255, 32	    @ 022 | AsM1,
 	voice_directsound 60, 0, DirectSoundWaveData_dp_altosax_c3_16,                                 255, 216, 252, 192	@ 023 | BnM1,
 	voice_directsound 60, 0, DirectSoundWaveData_dp_synthsnare,                                    255, 0, 255, 171	    @ 024 | Cn0,
-	voice_keysplit voicegroup_keysplit_hgss_piano_4, keysplit_hgss_piano_4    @ piano (national park)	                                        @ 025 | Cs0,
+	voice_keysplit voicegroup_keysplit_hgss_piano_4, keysplit_hgss_piano_4                                              @ 025 | Cs0, @ piano (national park)
 	voice_directsound 60, 0, DirectSoundWaveData_dp_tom1_16,                                       255, 0, 255, 32	    @ 026 | Dn0,
-	voice_keysplit voicegroup_keysplit_dp_trumpet, keysplit_dp_trumpet    @ dp trumpets (arceus)	                                            @ 027 | Ds0,
-	voice_keysplit voicegroup_keysplit_dp_trombone, keysplit_dp_trombone    @ dp trombone (arceus)	                                            @ 028 | En0,
+	voice_keysplit voicegroup_keysplit_dp_trumpet, keysplit_dp_trumpet                                                  @ 027 | Ds0, @ dp trumpets (arceus)
+	voice_keysplit voicegroup_keysplit_dp_trombone, keysplit_dp_trombone                                                @ 028 | En0, @ dp trombone (arceus)
 	voice_directsound 60, 64, DirectSoundWaveData_dp_handclup1,                                    255, 0, 227, 171	    @ 029 | Fn0,
 	voice_directsound 60, 64, DirectSoundWaveData_dp_sne2_loop,                                    255, 255, 191, 171	@ 030 | Fs0,
 	voice_directsound 48, 64, DirectSoundWaveData_dp_reverscyn_16,                                 2, 0, 227, 171	    @ 031 | Gn0,

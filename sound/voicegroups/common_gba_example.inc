@@ -1,6 +1,6 @@
 voice_group common_gba_example
-	voice_keysplit_all voicegroup_allkeysplit_frlg_custom_drum                                                                         @ 000 | Drum | GBA Drum
-	voice_keysplit voicegroup_keysplit_piano_custom, keysplit_piano                                                             @ 001 | Direct | Multi | GBA Piano 1
+	voice_keysplit_all voicegroup_allkeysplit_frlg_custom_drum                                               @ 000 | Drum | GBA Drum
+	voice_keysplit voicegroup_keysplit_piano_custom, keysplit_piano_custom                                   @ 001 | Direct | Multi | GBA Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_steinway_b_piano, 128, 204, 51, 242                         @ 002 | Direct | GBA Piano 2
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_koto_high, 255, 0, 206, 242                         @ 003 | GBA Koto 2
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 128, 249, 0, 188            @ 004 | GBA Electric Piano 1
@@ -47,7 +47,7 @@ voice_group common_gba_example
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_pizzicato_strings, 255, 216, 0, 165                 @ 045 | Direct | GBA Pizzicato
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_harp, 255, 242, 51, 242                             @ 046 | Direct | GBA Harp
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_timpani, 255, 246, 0, 226                           @ 047 | Direct | GBA Timpani
-	voice_keysplit voicegroup_keysplit_strings_custom, keysplit_strings                                                             @ 048 | Direct | Multi | GBA Strings
+	voice_keysplit voicegroup_keysplit_strings_custom, keysplit_strings_custom                               @ 048 | Direct | Multi | GBA Strings
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                  @ 049 Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                  @ 050 Unused
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                  @ 051 Unused
@@ -55,11 +55,11 @@ voice_group common_gba_example
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_female_voice, 128, 165, 128, 204                    @ 053 | Direct | GBA Female Voice Ahhs
 	voice_directsound 60, 0, DirectSoundWaveData_unused_unknown_male_voice, 128, 165, 128, 188               @ 054 | Direct | GBA Male Voice Ahhs
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                  @ 055 Unused
-	voice_keysplit voicegroup_keysplit_trumpet_custom, keysplit_trumpet                                                             @ 056 | Direct | Multi | GBA Trumpet
+	voice_keysplit voicegroup_keysplit_trumpet_custom, keysplit_trumpet_custom                               @ 056 | Direct | Multi | GBA Trumpet
 	voice_directsound 60, 0, DirectSoundWaveData_trinity_big_boned, 255, 165, 154, 127                       @ 057 | Direct |
-	voice_keysplit voicegroup_keysplit_tuba_custom, keysplit_tuba                                                             @ 058 | Direct | Multi | GBA Tuba
+	voice_keysplit voicegroup_keysplit_tuba_custom, keysplit_tuba_custom                                     @ 058 | Direct | Multi | GBA Tuba
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_18, 255, 0, 206, 204                                @ 059 | Direct |
-	voice_keysplit voicegroup_keysplit_french_horn_custom, keysplit_french_horn                                                             @ 060 | Direct | Multi | GBA French Horn
+	voice_keysplit voicegroup_keysplit_french_horn_custom, keysplit_french_horn_custom                       @ 060 | Direct | Multi | GBA French Horn
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                  @ 061 Unused
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 165, 180, 165    @ 062 | Direct | GBA Distortion Guitar 2
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                  @ 063 Unused
@@ -97,9 +97,9 @@ voice_group common_gba_example
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                  @ 095 Unused
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 0, 255, 165                       @ 096 | Direct | GBA Sampled Square 1
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_square_wave, 255, 226, 0, 165                       @ 097 | Direct | GBA Sampled Square 2
-	voice_keysplit_all voicegroup_rs_sfx_2                                                                         @ 098 | Multi |
-	voice_keysplit_all voicegroup_frlg_sfx                                                                         @ 099 | Multi |
-	voice_keysplit_all voicegroup_bard                                                                         @ 100 | Multi |
+	voice_keysplit_all voicegroup_rs_sfx_2                                                                   @ 098 | Multi |
+	voice_keysplit_all voicegroup_frlg_sfx                                                                   @ 099 | Multi |
+	voice_keysplit_all voicegroup_bard                                                                       @ 100 | Multi |
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_synth_snare, 255, 249, 103, 165                     @ 101 | Direct | 
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_1, 128, 249, 25, 204                                @ 102 | Direct |
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_2, 128, 249, 25, 204                                @ 103 | Direct |

@@ -3914,10 +3914,10 @@
     {
       "id": "LAYOUT_ROUTE111_NO_MIRAGE_TOWER",
       "name": "Route111_NoMirageTower_Layout",
-      "width": 40,
-      "height": 140,
+      "width": 52,
+      "height": 64,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_GensokyoGardenOfTheSun",
       "border_filepath": "data/layouts/Route111_NoMirageTower/border.bin",
       "blockdata_filepath": "data/layouts/Route111_NoMirageTower/map.bin"
     },

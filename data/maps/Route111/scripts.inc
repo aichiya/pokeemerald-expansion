@@ -85,7 +85,7 @@ Route111_EventScript_SetWinstratesNotDefeated::
 	end
 
 Route111_EventScript_SetLayoutNoMirageTower::
-	setmaplayoutindex LAYOUT_ROUTE111_NO_MIRAGE_TOWER
+@	setmaplayoutindex LAYOUT_ROUTE111_NO_MIRAGE_TOWER
 	return
 
 Route111_EventScript_SetMirageTowerGone::

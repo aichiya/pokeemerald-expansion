@@ -918,3 +918,14 @@ const struct Tileset gTileset_GensokyoGardenOfTheSun =
     .metatileAttributes = gMetatileAttributes_GensokyoGardenOfTheSun,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_GensokyoMoriyaShrine =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_GensokyoMoriyaShrine,
+    .palettes = gTilesetPalettes_GensokyoMoriyaShrine,
+    .metatiles = gMetatiles_GensokyoMoriyaShrine,
+    .metatileAttributes = gMetatileAttributes_GensokyoMoriyaShrine,
+    .callback = NULL,
+};

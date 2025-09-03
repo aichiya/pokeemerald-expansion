@@ -215,9 +215,9 @@
       "id": "LAYOUT_ROUTE106",
       "name": "Route106_Layout",
       "width": 60,
-      "height": 60,
+      "height": 59,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_GensokyoMoriyaShrine",
       "border_filepath": "data/layouts/Route106/border.bin",
       "blockdata_filepath": "data/layouts/Route106/map.bin"
     },

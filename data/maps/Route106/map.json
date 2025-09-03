@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE106",
   "name": "Route106",
   "layout": "LAYOUT_ROUTE106",
-  "music": "MUS_ROUTE104",
+  "music": "MUS_TH_KIMI_NO_YUME",
   "region_map_section": "MAPSEC_GENSOKYO_MORIYA_SHRINE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 18,
-      "y": 5,
+      "x": 0,
+      "y": 1,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
       "movement_range_x": 4,
@@ -29,8 +29,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 29,
-      "y": 10,
+      "x": 1,
+      "y": 1,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -42,8 +42,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
-      "x": 51,
-      "y": 14,
+      "x": 53,
+      "y": -2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -68,8 +68,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 29,
-      "y": 14,
+      "x": 3,
+      "y": 1,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -82,8 +82,8 @@
   ],
   "warp_events": [
     {
-      "x": 48,
-      "y": 16,
+      "x": 38,
+      "y": 33,
       "elevation": 0,
       "dest_map": "MAP_GRANITE_CAVE_1F",
       "dest_warp_id": "0"
@@ -93,16 +93,16 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 41,
-      "y": 11,
+      "x": 2,
+      "y": 1,
       "elevation": 3,
       "item": "ITEM_POKE_BALL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_106_POKE_BALL"
     },
     {
       "type": "hidden_item",
-      "x": 53,
-      "y": 12,
+      "x": 54,
+      "y": -2,
       "elevation": 0,
       "item": "ITEM_STARDUST",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_106_STARDUST"
@@ -117,8 +117,8 @@
     },
     {
       "type": "sign",
-      "x": 59,
-      "y": 13,
+      "x": 55,
+      "y": -2,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route106_EventScript_TrainerTipsSign"

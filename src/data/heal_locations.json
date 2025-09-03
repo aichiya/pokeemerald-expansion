@@ -232,8 +232,8 @@
     {
       "id": "HEAL_LOCATION_GENSOKYO_MORIYA_SHRINE",
       "map": "MAP_ROUTE106",
-      "x": 1,
-      "y": 1,
+      "x": 38,
+      "y": 34,
       "respawn_map": "MAP_ROUTE106",
       "respawn_x": 1,
       "respawn_y": 1

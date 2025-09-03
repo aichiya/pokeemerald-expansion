@@ -231,3 +231,6 @@ const u16 gMetatileAttributes_GensokyoNetherworld[] = INCBIN_U16("data/tilesets/
 
 const u16 gMetatiles_GensokyoGardenOfTheSun[] = INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/metatiles.bin");
 const u16 gMetatileAttributes_GensokyoGardenOfTheSun[] = INCBIN_U16("data/tilesets/secondary/gensokyo_garden_of_the_sun/metatile_attributes.bin");
+
+const u16 gMetatiles_GensokyoMoriyaShrine[] = INCBIN_U16("data/tilesets/secondary/gensokyo_moriya_shrine/metatiles.bin");
+const u16 gMetatileAttributes_GensokyoMoriyaShrine[] = INCBIN_U16("data/tilesets/secondary/gensokyo_moriya_shrine/metatile_attributes.bin");

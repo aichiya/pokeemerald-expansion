@@ -25,7 +25,22 @@
     }
   ],
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 40,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_GENSOKYO_YOUKAI_MOUNTAIN1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 41,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_GENSOKYO_YOUKAI_MOUNTAIN1",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

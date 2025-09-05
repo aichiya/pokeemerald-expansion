@@ -1,0 +1,42 @@
+{
+  "id": "MAP_GENSOKYO_YOUKAI_MOUNTAIN_CAVE9",
+  "name": "GensokyoYoukaiMountainCave9",
+  "layout": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE9",
+  "music": "MUS_THPPME_390_GREEN_EYED_JEALOUSY",
+  "region_map_section": "MAPSEC_GENSOKYO_YOUKAI_MOUNTAIN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 26,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_GENSOKYO_YOUKAI_MOUNTAIN1",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_GENSOKYO_YOUKAI_MOUNTAIN_CAVE2",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_GENSOKYO_YOUKAI_MOUNTAIN_CAVE8",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

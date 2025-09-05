@@ -1411,3 +1411,29 @@ Script_RemoveTint::
 	.include "data/maps/GensokyoNetherworldHakugyokurou/scripts.inc"
 
 	.include "data/maps/GensokyoNetherworldStairs/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountain3/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountain1/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountain2/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountain4/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainCave6/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainCave1/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainCave5/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainCave8/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainCave9/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainCave2/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainCave7/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainCave4/scripts.inc"
+
+	.include "data/maps/GensokyoYoukaiMountainCave3/scripts.inc"

@@ -505,7 +505,20 @@
     "GensokyoForestOfMagic2",
     "GensokyoForestOfMagic3",
     "GensokyoForestOfMagic4",
-    "GensokyoForestOfMagic5"
+    "GensokyoForestOfMagic5",
+    "GensokyoYoukaiMountain1",
+    "GensokyoYoukaiMountain2",
+    "GensokyoYoukaiMountain3",
+    "GensokyoYoukaiMountain4",
+    "GensokyoYoukaiMountainCave1",
+    "GensokyoYoukaiMountainCave2",
+    "GensokyoYoukaiMountainCave3",
+    "GensokyoYoukaiMountainCave4",
+    "GensokyoYoukaiMountainCave5",
+    "GensokyoYoukaiMountainCave6",
+    "GensokyoYoukaiMountainCave7",
+    "GensokyoYoukaiMountainCave8",
+    "GensokyoYoukaiMountainCave9"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -5390,6 +5390,136 @@
       "secondary_tileset": "gTileset_GensokyoNetherworld",
       "border_filepath": "data/layouts/GensokyoNetherworldHakugyokurou/border.bin",
       "blockdata_filepath": "data/layouts/GensokyoNetherworldHakugyokurou/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN3",
+      "name": "GensokyoYoukaiMountain3_Layout",
+      "width": 43,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoMoriyaShrine",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountain3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountain3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN4",
+      "name": "GensokyoYoukaiMountain4_Layout",
+      "width": 46,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoMoriyaShrine",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountain4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountain4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN1",
+      "name": "GensokyoYoukaiMountain1_Layout",
+      "width": 50,
+      "height": 64,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoMoriyaShrine",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountain1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountain1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN2",
+      "name": "GensokyoYoukaiMountain2_Layout",
+      "width": 47,
+      "height": 26,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoMoriyaShrine",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountain2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountain2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE2",
+      "name": "GensokyoYoukaiMountainCave2_Layout",
+      "width": 38,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainCave2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainCave2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE3",
+      "name": "GensokyoYoukaiMountainCave3_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainCave3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainCave3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE9",
+      "name": "GensokyoYoukaiMountainCave9_Layout",
+      "width": 30,
+      "height": 16,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainCave9/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainCave9/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE1",
+      "name": "GensokyoYoukaiMountainCave1_Layout",
+      "width": 28,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainCave1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainCave1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE4",
+      "name": "GensokyoYoukaiMountainCave4_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainCave4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainCave4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE8",
+      "name": "GensokyoYoukaiMountainCave8_Layout",
+      "width": 19,
+      "height": 19,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainCave8/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainCave8/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE6",
+      "name": "GensokyoYoukaiMountainCave6_Layout",
+      "width": 45,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainCave6/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainCave6/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE5",
+      "name": "GensokyoYoukaiMountainCave5_Layout",
+      "width": 45,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainCave5/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainCave5/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE7",
+      "name": "GensokyoYoukaiMountainCave7_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoYoukaiMountainCave7/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainCave7/map.bin"
     }
   ]
 }

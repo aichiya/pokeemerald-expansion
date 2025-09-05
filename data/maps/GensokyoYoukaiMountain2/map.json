@@ -1,0 +1,53 @@
+{
+  "id": "MAP_GENSOKYO_YOUKAI_MOUNTAIN2",
+  "name": "GensokyoYoukaiMountain2",
+  "layout": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN2",
+  "music": "MUS_THPPME_294_GENSOKYO_THE_GOD_LOVED",
+  "region_map_section": "MAPSEC_GENSOKYO_YOUKAI_MOUNTAIN",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_GENSOKYO_YOUKAI_MOUNTAIN1",
+      "offset": 2,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_GENSOKYO_YOUKAI_MOUNTAIN3",
+      "offset": 2,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_GENSOKYO_YOUKAI_MOUNTAIN_CAVE3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 33,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_GENSOKYO_YOUKAI_MOUNTAIN_CAVE2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 10,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_GENSOKYO_YOUKAI_MOUNTAIN2",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

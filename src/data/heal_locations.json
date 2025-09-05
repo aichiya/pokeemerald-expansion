@@ -139,8 +139,8 @@
     {
       "id": "HEAL_LOCATION_JOHTO_AZALEA_TOWN",
       "map": "MAP_FALLARBOR_TOWN",
-      "x": 14,
-      "y": 8,
+      "x": 17,
+      "y": 13,
       "respawn_map": "MAP_FALLARBOR_TOWN_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_FALLARBOR_NURSE"
     },
@@ -155,8 +155,8 @@
     {
       "id": "HEAL_LOCATION_JOHTO_GOLDENROD_CITY",
       "map": "MAP_PACIFIDLOG_TOWN",
-      "x": 8,
-      "y": 16,
+      "x": 25,
+      "y": 31,
       "respawn_map": "MAP_PACIFIDLOG_TOWN_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_PACIFIDLOG_NURSE"
     },
@@ -259,8 +259,8 @@
     {
       "id": "HEAL_LOCATION_GENSOKYO_PALENQUIN_SHIP",
       "map": "MAP_ROUTE109",
-      "x": 1,
-      "y": 1,
+      "x": 33,
+      "y": 16,
       "respawn_map": "MAP_ROUTE109",
       "respawn_x": 1,
       "respawn_y": 1

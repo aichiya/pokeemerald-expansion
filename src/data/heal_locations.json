@@ -268,8 +268,8 @@
     {
       "id": "HEAL_LOCATION_GENSOKYO_SANZU_RIVER",
       "map": "MAP_ROUTE110",
-      "x": 1,
-      "y": 1,
+      "x": 5,
+      "y": 11,
       "respawn_map": "MAP_ROUTE110",
       "respawn_x": 1,
       "respawn_y": 1

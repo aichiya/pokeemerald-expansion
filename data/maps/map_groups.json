@@ -163,7 +163,11 @@
     "JavaSeaOfSand",
     "GensokyoNetherworldEntrance",
     "GensokyoNetherworldStairs",
-    "GensokyoNetherworldHakugyokurou"
+    "GensokyoNetherworldHakugyokurou",
+    "GensokyoRoadOfLiminality1",
+    "GensokyoRoadOfLiminality2",
+    "GensokyoSanzuRiver2",
+    "GensokyoHigan"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -518,7 +522,22 @@
     "GensokyoYoukaiMountainCave6",
     "GensokyoYoukaiMountainCave7",
     "GensokyoYoukaiMountainCave8",
-    "GensokyoYoukaiMountainCave9"
+    "GensokyoYoukaiMountainCave9",
+    "GensokyoUnderground1",
+    "GensokyoUnderground2",
+    "GensokyoUnderground3",
+    "GensokyoUnderground4",
+    "GensokyoUnderground5",
+    "GensokyoUnderground6",
+    "GensokyoUnderground7",
+    "GensokyoUnderground8",
+    "GensokyoNuclearReactor1",
+    "GensokyoNuclearReactor2",
+    "GensokyoNuclearReactor3",
+    "GensokyoNuclearReactor4",
+    "GensokyoNuclearReactor5",
+    "GensokyoNuclearReactor6",
+    "GensokyoNuclearReactor7"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

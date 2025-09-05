@@ -1437,3 +1437,41 @@ Script_RemoveTint::
 	.include "data/maps/GensokyoYoukaiMountainCave4/scripts.inc"
 
 	.include "data/maps/GensokyoYoukaiMountainCave3/scripts.inc"
+
+	.include "data/maps/GensokyoHigan/scripts.inc"
+
+	.include "data/maps/GensokyoRoadOfLiminality1/scripts.inc"
+
+	.include "data/maps/GensokyoSanzuRiver2/scripts.inc"
+
+	.include "data/maps/GensokyoRoadOfLiminality2/scripts.inc"
+
+	.include "data/maps/GensokyoUnderground6/scripts.inc"
+
+	.include "data/maps/GensokyoUnderground2/scripts.inc"
+
+	.include "data/maps/GensokyoUnderground5/scripts.inc"
+
+	.include "data/maps/GensokyoUnderground7/scripts.inc"
+
+	.include "data/maps/GensokyoUnderground3/scripts.inc"
+
+	.include "data/maps/GensokyoUnderground4/scripts.inc"
+
+	.include "data/maps/GensokyoUnderground8/scripts.inc"
+
+	.include "data/maps/GensokyoUnderground1/scripts.inc"
+
+	.include "data/maps/GensokyoNuclearReactor2/scripts.inc"
+
+	.include "data/maps/GensokyoNuclearReactor4/scripts.inc"
+
+	.include "data/maps/GensokyoNuclearReactor7/scripts.inc"
+
+	.include "data/maps/GensokyoNuclearReactor1/scripts.inc"
+
+	.include "data/maps/GensokyoNuclearReactor6/scripts.inc"
+
+	.include "data/maps/GensokyoNuclearReactor3/scripts.inc"
+
+	.include "data/maps/GensokyoNuclearReactor5/scripts.inc"

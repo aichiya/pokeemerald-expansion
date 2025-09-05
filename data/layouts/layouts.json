@@ -234,10 +234,10 @@
     {
       "id": "LAYOUT_ROUTE108",
       "name": "Route108_Layout",
-      "width": 60,
-      "height": 20,
+      "width": 57,
+      "height": 55,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/Route108/border.bin",
       "blockdata_filepath": "data/layouts/Route108/map.bin"
     },
@@ -254,8 +254,8 @@
     {
       "id": "LAYOUT_ROUTE110",
       "name": "Route110_Layout",
-      "width": 40,
-      "height": 100,
+      "width": 32,
+      "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route110/border.bin",
@@ -5520,6 +5520,196 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/GensokyoYoukaiMountainCave7/border.bin",
       "blockdata_filepath": "data/layouts/GensokyoYoukaiMountainCave7/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_SANZU_RIVER2",
+      "name": "GensokyoSanzuRiver2_Layout",
+      "width": 30,
+      "height": 13,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoMoriyaShrine",
+      "border_filepath": "data/layouts/GensokyoSanzuRiver2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoSanzuRiver2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_ROAD_OF_LIMINALITY1",
+      "name": "GensokyoRoadOfLiminality1_Layout",
+      "width": 54,
+      "height": 32,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Slateport",
+      "border_filepath": "data/layouts/GensokyoRoadOfLiminality1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoRoadOfLiminality1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_ROAD_OF_LIMINALITY2",
+      "name": "GensokyoRoadOfLiminality2_Layout",
+      "width": 60,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoMoriyaShrine",
+      "border_filepath": "data/layouts/GensokyoRoadOfLiminality2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoRoadOfLiminality2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_HIGAN",
+      "name": "GensokyoHigan_Layout",
+      "width": 48,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GensokyoMoriyaShrine",
+      "border_filepath": "data/layouts/GensokyoHigan/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoHigan/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_UNDERGROUND6",
+      "name": "GensokyoUnderground6_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoUnderground6/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoUnderground6/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_UNDERGROUND7",
+      "name": "GensokyoUnderground7_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoUnderground7/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoUnderground7/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_UNDERGROUND4",
+      "name": "GensokyoUnderground4_Layout",
+      "width": 40,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoUnderground4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoUnderground4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_UNDERGROUND8",
+      "name": "GensokyoUnderground8_Layout",
+      "width": 17,
+      "height": 18,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoUnderground8/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoUnderground8/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_UNDERGROUND3",
+      "name": "GensokyoUnderground3_Layout",
+      "width": 40,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoUnderground3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoUnderground3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_UNDERGROUND1",
+      "name": "GensokyoUnderground1_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoUnderground1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoUnderground1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_UNDERGROUND2",
+      "name": "GensokyoUnderground2_Layout",
+      "width": 33,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoUnderground2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoUnderground2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_UNDERGROUND5",
+      "name": "GensokyoUnderground5_Layout",
+      "width": 45,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/GensokyoUnderground5/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoUnderground5/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NUCLEAR_REACTOR1",
+      "name": "GensokyoNuclearReactor1_Layout",
+      "width": 17,
+      "height": 14,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/GensokyoNuclearReactor1/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNuclearReactor1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NUCLEAR_REACTOR2",
+      "name": "GensokyoNuclearReactor2_Layout",
+      "width": 11,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/GensokyoNuclearReactor2/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNuclearReactor2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NUCLEAR_REACTOR3",
+      "name": "GensokyoNuclearReactor3_Layout",
+      "width": 11,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/GensokyoNuclearReactor3/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNuclearReactor3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NUCLEAR_REACTOR7",
+      "name": "GensokyoNuclearReactor7_Layout",
+      "width": 21,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/GensokyoNuclearReactor7/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNuclearReactor7/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NUCLEAR_REACTOR4",
+      "name": "GensokyoNuclearReactor4_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/GensokyoNuclearReactor4/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNuclearReactor4/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NUCLEAR_REACTOR5",
+      "name": "GensokyoNuclearReactor5_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/GensokyoNuclearReactor5/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNuclearReactor5/map.bin"
+    },
+    {
+      "id": "LAYOUT_GENSOKYO_NUCLEAR_REACTOR6",
+      "name": "GensokyoNuclearReactor6_Layout",
+      "width": 40,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/GensokyoNuclearReactor6/border.bin",
+      "blockdata_filepath": "data/layouts/GensokyoNuclearReactor6/map.bin"
     }
   ]
 }

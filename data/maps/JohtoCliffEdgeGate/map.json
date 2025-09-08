@@ -1,0 +1,20 @@
+{
+  "id": "MAP_JOHTO_CLIFF_EDGE_GATE",
+  "name": "JohtoCliffEdgeGate",
+  "layout": "LAYOUT_JOHTO_CLIFF_EDGE_GATE",
+  "music": "MUS_HG_ROUTE47",
+  "region_map_section": "MAPSEC_JOHTO_CLIFF_EDGE_GATE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

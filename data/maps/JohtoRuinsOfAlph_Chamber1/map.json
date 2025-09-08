@@ -1,0 +1,20 @@
+{
+  "id": "MAP_JOHTO_RUINS_OF_ALPH_CHAMBER1",
+  "name": "JohtoRuinsOfAlph_Chamber1",
+  "layout": "LAYOUT_JOHTO_RUINS_OF_ALPH_CHAMBER1",
+  "music": "MUS_HG_RUINS_OF_ALPH",
+  "region_map_section": "MAPSEC_JOHTO_RUINS_OF_ALPH",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

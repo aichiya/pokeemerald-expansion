@@ -22,6 +22,11 @@
       "map": "MAP_JAVA_OLD_SEMARANG_TOWN",
       "offset": -6,
       "direction": "up"
+    },
+    {
+      "map": "MAP_JAVA_OLD_MOUNT_MERAPI",
+      "offset": 38,
+      "direction": "right"
     }
   ],
   "object_events": [],

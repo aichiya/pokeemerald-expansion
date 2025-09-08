@@ -1475,3 +1475,155 @@ Script_RemoveTint::
 	.include "data/maps/GensokyoNuclearReactor3/scripts.inc"
 
 	.include "data/maps/GensokyoNuclearReactor5/scripts.inc"
+
+	.include "data/maps/JohtoBellTower7/scripts.inc"
+
+	.include "data/maps/JohtoBellTower4/scripts.inc"
+
+	.include "data/maps/JohtoBellTower5/scripts.inc"
+
+	.include "data/maps/JohtoBellTower8/scripts.inc"
+
+	.include "data/maps/JohtoBellTower3/scripts.inc"
+
+	.include "data/maps/JohtoBellTower1/scripts.inc"
+
+	.include "data/maps/JohtoBellTower2/scripts.inc"
+
+	.include "data/maps/JohtoBellTower10/scripts.inc"
+
+	.include "data/maps/JohtoBellTower9/scripts.inc"
+
+	.include "data/maps/JohtoBellTower6/scripts.inc"
+
+	.include "data/maps/JohtoBrassTower2/scripts.inc"
+
+	.include "data/maps/JohtoBrassTower1/scripts.inc"
+
+	.include "data/maps/JohtoDarkCave1/scripts.inc"
+
+	.include "data/maps/JohtoDarkCave2/scripts.inc"
+
+	.include "data/maps/JohtoDragonsDen3/scripts.inc"
+
+	.include "data/maps/JohtoDragonsDen2/scripts.inc"
+
+	.include "data/maps/JohtoDragonsDen1/scripts.inc"
+
+	.include "data/maps/JohtoIcePath2/scripts.inc"
+
+	.include "data/maps/JohtoIcePath5/scripts.inc"
+
+	.include "data/maps/JohtoIcePath1/scripts.inc"
+
+	.include "data/maps/JohtoIcePath4/scripts.inc"
+
+	.include "data/maps/JohtoIcePath6/scripts.inc"
+
+	.include "data/maps/JohtoIcePath7/scripts.inc"
+
+	.include "data/maps/JohtoIcePath3/scripts.inc"
+
+	.include "data/maps/JohtoIlexForest/scripts.inc"
+
+	.include "data/maps/JohtoMountMortar4/scripts.inc"
+
+	.include "data/maps/JohtoMountMortar3/scripts.inc"
+
+	.include "data/maps/JohtoMountMortar1/scripts.inc"
+
+	.include "data/maps/JohtoMountMortar2/scripts.inc"
+
+	.include "data/maps/JohtoMountSilverCave2/scripts.inc"
+
+	.include "data/maps/JohtoMountSilverCave3/scripts.inc"
+
+	.include "data/maps/JohtoMountSilverCave5/scripts.inc"
+
+	.include "data/maps/JohtoMountSilverCave1/scripts.inc"
+
+	.include "data/maps/JohtoMountSilverCave4/scripts.inc"
+
+	.include "data/maps/JohtoNationalPark_BugCatching/scripts.inc"
+
+	.include "data/maps/JohtoNationalPark/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph_Chamber2/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph_Chamber1/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph_Chamber4/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph_Chamber7/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph_Chamber8/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph_Chamber9/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph_Chamber6/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph_Chamber5/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph_Chamber10/scripts.inc"
+
+	.include "data/maps/JohtoRuinsOfAlph_Chamber3/scripts.inc"
+
+	.include "data/maps/JohtoSlowpokeWell1/scripts.inc"
+
+	.include "data/maps/JohtoSlowpokeWell2/scripts.inc"
+
+	.include "data/maps/JohtoTohjoFalls/scripts.inc"
+
+	.include "data/maps/JohtoUnionCave3/scripts.inc"
+
+	.include "data/maps/JohtoUnionCave4/scripts.inc"
+
+	.include "data/maps/JohtoUnionCave1/scripts.inc"
+
+	.include "data/maps/JohtoUnionCave2/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands9/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands6/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands5/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands3/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands1/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands4/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands7/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands2/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands8/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands17/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands18/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands19/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands16/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands20/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands14/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands13/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands11/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands15/scripts.inc"
+
+	.include "data/maps/JohtoWhirlIslands10/scripts.inc"
+
+	.include "data/maps/JohtoCliffCave1/scripts.inc"
+
+	.include "data/maps/JohtoCliffCave2/scripts.inc"
+
+	.include "data/maps/JohtoCliffCave3/scripts.inc"
+
+	.include "data/maps/JohtoCliffEdgeGate/scripts.inc"

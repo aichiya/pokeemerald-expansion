@@ -9,11 +9,11 @@
 	.2byte \move
 	.endm
 
-	.macro attackstring
+	.macro printattackstring
 	.byte 0x2
 	.endm
 
-	.macro ppreduce
+	.macro unused0x3
 	.byte 0x3
 	.endm
 
@@ -877,7 +877,7 @@
 	.4byte \failInstr
 	.endm
 
-	.macro metronome
+	.macro setcalledmove
 	.byte 0x9e
 	.endm
 
@@ -1456,11 +1456,6 @@
 	callnative BS_SetPledgeStatus
 	.byte \battler
 	.4byte \sidestatus
-	.endm
-
-	.macro trycopycat failInstr:req
-	callnative BS_TryCopycat
-	.4byte \failInstr
 	.endm
 
 	.macro setzeffect
@@ -2228,11 +2223,6 @@
 	callnative BS_InvertStatStages
 	.endm
 
-	.macro trymefirst failInstr:req
-	callnative BS_TryMeFirst
-	.4byte \failInstr
-	.endm
-
 	.macro tryelectrify failInstr:req
 	callnative BS_TryElectrify
 	.4byte \failInstr
@@ -2554,4 +2544,11 @@
 	.macro setelectricterrainfromability failInstr:req
 	callnative BS_SetElectricTerrainFromAbility
 	.4byte \failInstr
+	.endm
+
+	.macro jumpifgenconfiglowerthan tag:req, gen:req, jumpInstr:req
+	callnative BS_JumpIfGenConfigLowerThan
+	.2byte \tag
+	.byte \gen
+	.4byte \jumpInstr
 	.endm

@@ -22,8 +22,6 @@
 	.section script_data, "aw", %progbits
 
 BattleScript_EffectWipesOutFoesParty::
-    attackstring
-	ppreduce
 	attackanimation
 	waitanimation
 	tryreducefoespartyhptozero
@@ -34,8 +32,6 @@ BattleScript_EffectWipesOutFoesParty::
 
 BattleScript_EffectFluffication::
 	attackcanceler
-	attackstring
-	ppreduce
 	trytoclearprimalweather
 	flushtextbox
 	transformdataexecutiondecade
@@ -47,8 +43,6 @@ BattleScript_EffectFluffication::
 
 BattleScript_EffectATrance::
 	attackcanceler
-	attackstring
-	ppreduce
 	trytoclearprimalweather
 	flushtextbox
 	transformdataexecutiondecade
@@ -60,9 +54,7 @@ BattleScript_EffectATrance::
 
 BattleScript_EffectTransformHit::
 	attackcanceler
-	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
-	attackstring
-	ppreduce
+	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
 	jumpifspecies SPECIES_ALTARIA, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
 	jumpifspecies SPECIES_LATIOS, BattleScript_EffectTransformHitDoTransformFirstReiMari
 	jumpifspecies SPECIES_LATIAS, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
@@ -165,8 +157,6 @@ BattleScript_AbilityPopUpBeatUpCalling:
 
 BattleScript_EffectUltraInstinct::
 	attackcanceler
-	attackstring
-	ppreduce
 	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_ACC, MAX_STAT_STAGE, BattleScript_UltraInstinctTryAcc
 	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_EVASION, MAX_STAT_STAGE, BattleScript_UltraInstinctTryAcc
 	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_UltraInstinctTryAcc
@@ -221,7 +211,6 @@ BattleScript_UltraInstinctEnd:
 
 BattleScript_EffectAstromancy::
 	jumpifvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS, BattleScript_AstromancySecondTurn
-	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_AstromancySecondTurn
 	call BattleScript_FirstChargingTurn
 	jumpifnoholdeffect BS_ATTACKER, HOLD_EFFECT_POWER_HERB, BattleScript_MoveEnd
 	call BattleScript_PowerHerbActivation
@@ -229,8 +218,6 @@ BattleScript_AstromancySecondTurn:
 	attackcanceler
 	setbyte sB_ANIM_TURN, 1
 	clearvolatile BS_ATTACKER, VOLATILE_MULTIPLETURNS
-	orword gHitMarker, HITMARKER_NO_PPDEDUCT
-	attackstring
 	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_AstromancyDoMoveAnim
 	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_DEF, MAX_STAT_STAGE, BattleScript_AstromancyDoMoveAnim
 	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_SPEED, MAX_STAT_STAGE, BattleScript_CantRaiseMultipleStats
@@ -239,19 +226,19 @@ BattleScript_AstromancyDoMoveAnim::
 	waitanimation
 	setstatchanger STAT_ATK, 2, FALSE
 	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_GeomancyTrySpDef, BIT_DEF | BIT_SPEED
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_AstromancyTryDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_AstromancyTryDef
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_AstromancyTryDef::
 	setstatchanger STAT_DEF, 2, FALSE
 	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_GeomancyTrySpeed, BIT_SPEED
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_AstromancyTrySpeed
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_AstromancyTrySpeed
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_AstromancyTrySpeed::
 	setstatchanger STAT_SPEED, 2, FALSE
 	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_GeomancyEnd
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_AstromancyEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_AstromancyEnd
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_AstromancyEnd::
@@ -9490,7 +9477,7 @@ BattleScript_ManaDisturptorEffect:
 	setstatchanger STAT_SPATK, 1, TRUE
 	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_ManaDisturptorLoopIncrement
 	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_ManaDisturptorContrary
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_ManaDisturptorWontDecrease
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_ManaDisturptorWontDecrease
 	printstring STRINGID_PKMNCUTSSPATTACKWITH
 BattleScript_ManaDisturptorEffect_WaitString:
 	waitmessage B_WAIT_TIME_LONG
@@ -9521,7 +9508,7 @@ BattleScript_ManaDisturptorWontDecrease:
 
 BattleScript_ManaDisturptorContrary:
 	call BattleScript_AbilityPopUpTarget
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_ManaDisturptorContrary_WontIncrease
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_ManaDisturptorContrary_WontIncrease
 	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	printfromtable gStatUpStringIds
 	goto BattleScript_ManaDisturptorEffect_WaitString
@@ -9674,7 +9661,7 @@ BattleScript_MisfortuneAuraEffect:
 	setstatchanger STAT_ACC, 1, TRUE
 	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_MisfortuneAuraLoopIncrement
 	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_MisfortuneAuraContrary
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_MisfortuneAuraWontDecrease
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_MisfortuneAuraWontDecrease
 	printstring STRINGID_PKMNCUTSACCWITH
 BattleScript_MisfortuneAuraEffect_WaitString:
 	waitmessage B_WAIT_TIME_LONG
@@ -9705,7 +9692,7 @@ BattleScript_MisfortuneAuraWontDecrease:
 
 BattleScript_MisfortuneAuraContrary:
 	call BattleScript_AbilityPopUpTarget
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_MisfortuneAuraContrary_WontIncrease
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_MisfortuneAuraContrary_WontIncrease
 	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	printfromtable gStatUpStringIds
 	goto BattleScript_MisfortuneAuraEffect_WaitString
@@ -9758,13 +9745,13 @@ BattleScript_LifeForceActivates::
 BattleScript_SpAtkSpDefDown::
 	setstatchanger STAT_SPATK, 1, TRUE
 	statbuffchange BS_ATTACKER, STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_SpAtkSpDefDownTrySpDef, BIT_SPDEF
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_DefSpDefDownTrySpDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_DefSpDefDownTrySpDef
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_SpAtkSpDefDownTrySpDef::
 	setstatchanger STAT_SPDEF, 1, TRUE
 	statbuffchange BS_ATTACKER, STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_SpAtkSpDefDownRet
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_SpAtkSpDefDownRet
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_SpAtkSpDefDownRet
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_SpAtkSpDefDownRet::
@@ -9776,8 +9763,6 @@ BattleScript_EffectUehehehehehe::
 
 BattleScript_EffectUeheheheheheFoe::
 	attackcanceler
-	attackstring
-	ppreduce
 	accuracycheck BattleScript_ButItFailed, ACC_CURR_MOVE
 	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_AromaVeilProtects
 	tryinfatuating BattleScript_ButItFailed
@@ -9790,8 +9775,6 @@ BattleScript_EffectUeheheheheheFoe::
 
 BattleScript_EffectUeheheheheheAlly::
 	attackcanceler
-	attackstring
-	ppreduce
 	accuracycheck BattleScript_ButItFailed, ACC_CURR_MOVE
 	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_AromaVeilProtects
 BattleScript_AllStatsUpOnTarget::
@@ -9834,7 +9817,6 @@ BattleScript_AllStatsUpOnTargetFailed::
 
 BattleScript_EffectGrimoireCall::
 	attackcanceler
-	attackstring
 	trygrimoirecall
 	attackanimation
 	waitanimation
@@ -9935,8 +9917,6 @@ BattleScript_UltraMedicineV2AlreadyMiasmaTerrain:
 
 BattleScript_EffectSpAtkSpDefUp2::
 	attackcanceler
-	attackstring
-	ppreduce
 BattleScript_EffectSpAtkSpDefUp2FromStatUp::
 	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_SPATK, MAX_STAT_STAGE, BattleScript_SpAtkSpDefUp2DoMoveAnim
 	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_SPDEF, MAX_STAT_STAGE, BattleScript_CantRaiseMultipleStats
@@ -9945,13 +9925,13 @@ BattleScript_SpAtkSpDefUp2DoMoveAnim::
 	waitanimation
 	setstatchanger STAT_SPATK, 2, FALSE
 	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_SpAtkSpDefUp2TrySpDef, BIT_SPDEF
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_SpAtkSpDefUp2TrySpDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_SpAtkSpDefUp2TrySpDef
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_SpAtkSpDefUp2TrySpDef::
 	setstatchanger STAT_SPDEF, 2, FALSE
 	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_EffectSpAtkSpDefUp2End
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_EffectSpAtkSpDefUp2End
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_EffectSpAtkSpDefUp2End
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_EffectSpAtkSpDefUp2End::
@@ -9969,8 +9949,6 @@ BattleScript_EffectGaiaForceChangeDark:
 
 BattleScript_EffectExShadowSky::
 	attackcanceler
-	attackstring
-	ppreduce
 	call BattleScript_CheckPrimalWeather
 	setfieldweather BATTLE_WEATHER_EX_SHADOW_SKY
 	goto BattleScript_MoveWeatherChange

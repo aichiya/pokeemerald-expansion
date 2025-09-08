@@ -2548,6 +2548,12 @@ static enum MoveCanceller CancellerPPDeduction(void)
              ppToDeduct++;
     }
 
+    if(GetMoveEffect(gCurrentMove) == EFFECT_EX_SHADOW_MOVE_HIT
+     || GetMoveEffect(gCurrentMove) == EFFECT_EX_SHADOW_MOVE_HALF
+     || GetMoveEffect(gCurrentMove) == EFFECT_EX_SHADOW_MOVE_RECOIL
+     || GetMoveEffect(gCurrentMove) == EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP)
+        ppToDeduct = 0;
+
     gProtectStructs[gBattlerAttacker].notFirstStrike = TRUE;
 
     // For item Metronome, echoed voice
@@ -12838,6 +12844,12 @@ u32 GetNaturePowerMove(u32 battler)
         move = MOVE_ENERGY_BALL;
     else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
         move = MOVE_PSYCHIC;
+    else if (gFieldStatuses & STATUS_FIELD_UBW)
+        move = MOVE_FLASH_CANNON;
+    else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
+        move = MOVE_DARK_PULSE;
+    else if (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
+        move = MOVE_SLUDGE_BOMB;
     else if (gBattleEnvironmentInfo[gBattleEnvironment].naturePower == MOVE_NONE)
         move = MOVE_TRI_ATTACK;
 

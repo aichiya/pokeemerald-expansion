@@ -4345,7 +4345,12 @@ void SetMoveEffect(u32 battler, u32 effectBattler, bool32 primary, bool32 certai
         {
             u16 payday = gPaydayMoney;
             u16 moveTarget = GetBattlerMoveTargetType(gBattlerAttacker, gCurrentMove);
-            gPaydayMoney += (gBattleMons[gBattlerAttacker].level * 5);
+
+            if (gCurrentMove == MOVE_TAX_COLLECTION)
+                gPaydayMoney += (gBattleMons[gBattlerAttacker].level * 50);
+            else
+                gPaydayMoney += (gBattleMons[gBattlerAttacker].level * 5);
+
             if (payday > gPaydayMoney)
                 gPaydayMoney = 0xFFFF;
 

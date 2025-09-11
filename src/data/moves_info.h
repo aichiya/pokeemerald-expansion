@@ -23054,6 +23054,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_BeatUpCalling,
     },
 
+    [MOVE_TAX_COLLECTION] =
+    {
+        .name = COMPOUND_STRING("Tax Collection"),
+        .description = COMPOUND_STRING(
+            "Test move for a special\n"
+            "-type move."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_ILLUSION,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_PAYDAY,
+        }),
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_TaxCollection,
+    },
+
 // ============= Start Classing Moves ===================
 
     [MOVE_CLASSIC_POUND] =
@@ -29492,7 +29516,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_BLITZ] =
     {
-        .name = COMPOUND_STRING("Shadow Blitz"),
+        .name = COMPOUND_STRING("Bad End Blitz"),
         .description = COMPOUND_STRING(
             "A standard darkness-powered\n"
             "move."),
@@ -29517,7 +29541,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_RUSH] =
     {
-        .name = COMPOUND_STRING("Shadow Rush"),
+        .name = COMPOUND_STRING("Bad End Rush"),
         .description = COMPOUND_STRING(
             "A reckless charge attack\n"
             "that also hurts the user."),
@@ -29542,7 +29566,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 	
     [MOVE_EX_SHADOW_BREAK] =
     {
-        .name = COMPOUND_STRING("Shadow Break"),
+        .name = COMPOUND_STRING("Bad End Break"),
         .description = COMPOUND_STRING(
             "A full-body slam powered\n"
             "with darkness."),
@@ -29566,7 +29590,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 	
     [MOVE_EX_SHADOW_END] =
     {
-        .name = COMPOUND_STRING("Shadow End"),
+        .name = COMPOUND_STRING("Bad End Impact"),
         .description = COMPOUND_STRING(
             "A life-risking smash after\n"
             "succumbed by darkness."),
@@ -29591,7 +29615,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_WAVE] =
     {
-        .name = COMPOUND_STRING("Shadow Wave"),
+        .name = COMPOUND_STRING("Bad End Wave"),
         .description = COMPOUND_STRING(
             "Attacks foes with\n"
             "wave of darkness energy."),
@@ -29614,7 +29638,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_RAVE] =
     {
-        .name = COMPOUND_STRING("Shadow Rave"),
+        .name = COMPOUND_STRING("Bad End Rave"),
         .description = COMPOUND_STRING(
             "Damages foes by emitting\n"
             "a deep darkness."),
@@ -29637,7 +29661,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_STORM] =
     {
-        .name = COMPOUND_STRING("Shadow Storm"),
+        .name = COMPOUND_STRING("Bad End Storm"),
         .description = COMPOUND_STRING(
             "Whips up a darkness tornado\n"
             "to tear at foes."),
@@ -29661,7 +29685,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_FIRE] =
     {
-        .name = COMPOUND_STRING("Shadow Fire"),
+        .name = COMPOUND_STRING("Bad End Fire"),
         .description = COMPOUND_STRING(
             "A dark fire attack that\n"
             "may inflict a burn."),
@@ -29688,7 +29712,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_BOLT] =
     {
-        .name = COMPOUND_STRING("Shadow Bolt"),
+        .name = COMPOUND_STRING("Bad End Bolt"),
         .description = COMPOUND_STRING(
             "A dark electric attack\n"
             "that may paralyze the foe."),
@@ -29715,7 +29739,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_CHILL] =
     {
-        .name = COMPOUND_STRING("Shadow Chill"),
+        .name = COMPOUND_STRING("Bad End Chill"),
         .description = COMPOUND_STRING(
             "Blasts the foe with an icy\n"
             "beam. May cause frostbite."),
@@ -29742,7 +29766,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_BLAST] =
     {
-        .name = COMPOUND_STRING("Shadow Blast"),
+        .name = COMPOUND_STRING("Bad End Blast"),
         .description = COMPOUND_STRING(
             "Wicked dark windy blades.\n"
             "High critical-hit ratio."),
@@ -29768,7 +29792,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_SKY] =
     {
-        .name = COMPOUND_STRING("Shadow Sky"),
+        .name = COMPOUND_STRING("Bad End Sky"),
         .description = COMPOUND_STRING(
             "Powers up shadow types,\n"
             "and hurts non-shadow."),
@@ -29793,7 +29817,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_HOLD] =
     {
-        .name = COMPOUND_STRING("Shadow Hold"),
+        .name = COMPOUND_STRING("Bad End Hold"),
         .description = COMPOUND_STRING(
             "Prevents foes from escaping\n"
             "by shrouding by darkness."),
@@ -29818,7 +29842,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_MIST] =
     {
-        .name = COMPOUND_STRING("Shadow Mist"),
+        .name = COMPOUND_STRING("Bad End Mist"),
         .description = COMPOUND_STRING(
             "Creates a mist that lowers\n"
             "foes' evasion."),
@@ -29843,7 +29867,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_PANIC] =
     {
-        .name = COMPOUND_STRING("Shadow Panic"),
+        .name = COMPOUND_STRING("Bad End Panic"),
         .description = COMPOUND_STRING(
             "Emits bizarre sound waves\n"
             "that may confuse foes."),
@@ -29869,7 +29893,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_DOWN] =
     {
-        .name = COMPOUND_STRING("Shadow Down"),
+        .name = COMPOUND_STRING("Bad End Down"),
         .description = COMPOUND_STRING(
             "Emits darkness to sharply\n"
             "reduce the foe's Defense."),
@@ -29894,7 +29918,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_SHED] =
     {
-        .name = COMPOUND_STRING("Shadow Shed"),
+        .name = COMPOUND_STRING("Bad End Shed"),
         .description = COMPOUND_STRING(
             "Removes obstacles from\n"
             "the opposing side."),
@@ -29918,7 +29942,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_EX_SHADOW_HALF] =
     {
-        .name = COMPOUND_STRING("Shadow Half"),
+        .name = COMPOUND_STRING("Bad End Half"),
         .description = COMPOUND_STRING(
             "Halves all battler's HP\n"
             "by the power of darkness."),

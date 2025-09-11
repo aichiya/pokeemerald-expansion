@@ -147,10 +147,8 @@ BattleScript_EffectTransformHitDoTransform:
 BattleScript_AbilityPopUpBeatUpCalling:
 	copybyte gBattlerAbility, gBattlerAttacker
 	tryactivateabilityshield BS_ABILITY_BATTLER
-	.if B_ABILITY_POP_UP == TRUE
 	showabilitypopup
 	pause B_WAIT_TIME_SHORT
-	.endif
 	recordability BS_ABILITY_BATTLER
 	sethword sABILITY_OVERWRITE, 0
 	return

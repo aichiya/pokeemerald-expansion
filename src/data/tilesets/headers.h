@@ -850,7 +850,7 @@ const struct Tileset gTileset_GeneralSnow =
     .palettes = gTilesetPalettes_GeneralSnow,
     .metatiles = gMetatiles_GeneralSnow,
     .metatileAttributes = gMetatileAttributes_GeneralSnow,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };
 
 const struct Tileset gTileset_GeneralGSC =

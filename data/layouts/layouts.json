@@ -6054,20 +6054,20 @@
     {
       "id": "LAYOUT_JOHTO_NATIONAL_PARK",
       "name": "JohtoNationalPark_Layout",
-      "width": 42,
-      "height": 56,
+      "width": 45,
+      "height": 57,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "secondary_tileset": "gTileset_CherryBlossom",
       "border_filepath": "data/layouts/JohtoNationalPark/border.bin",
       "blockdata_filepath": "data/layouts/JohtoNationalPark/map.bin"
     },
     {
       "id": "LAYOUT_JOHTO_NATIONAL_PARK_BUG_CATCHING",
       "name": "JohtoNationalPark_BugCatching_Layout",
-      "width": 42,
-      "height": 56,
+      "width": 45,
+      "height": 57,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_BattleFrontierOutsideEast",
+      "secondary_tileset": "gTileset_CherryBlossom",
       "border_filepath": "data/layouts/JohtoNationalPark_BugCatching/border.bin",
       "blockdata_filepath": "data/layouts/JohtoNationalPark_BugCatching/map.bin"
     },

@@ -929,3 +929,14 @@ const struct Tileset gTileset_GensokyoMoriyaShrine =
     .metatileAttributes = gMetatileAttributes_GensokyoMoriyaShrine,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_CherryBlossom =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_CherryBlossom,
+    .palettes = gTilesetPalettes_CherryBlossom,
+    .metatiles = gMetatiles_CherryBlossom,
+    .metatileAttributes = gMetatileAttributes_CherryBlossom,
+    .callback = InitTilesetAnim_CherryBlossom,
+};

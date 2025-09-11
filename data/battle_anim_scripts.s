@@ -22987,38 +22987,9 @@ gBattleAnimMove_TaxCollection::
 	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 30, 1
 	call MakingItRain
-@	call MakingItRain
-@	call MakingItRain
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
-@	call UnsetPsychicBg
 	end
-
-
-	loadspritegfx ANIM_TAG_EXPLOSION
-	loadspritegfx ANIM_TAG_ACUPRESSURE
-	loadspritegfx ANIM_TAG_PURPLE_HAND_OUTLINE
-	setalpha 15, 0
-	createsprite gCrushGripHandTemplate, ANIM_TARGET, 2, 16, 0, 0, 0, 25, 0x101
-	waitforvisualfinish
-	createvisualtask AnimTask_CompressTargetHorizontally, 2
-	createsprite gCrushGripExplosionTemplate, ANIM_TARGET, 0, 0, 0, 1, 1
-	delay 3
-	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
-	createsprite gCrushGripExplosionTemplate, ANIM_TARGET, 0, 0x18, 0xffe8, 1, 1
-	delay 3
-	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
-	createsprite gCrushGripExplosionTemplate, ANIM_TARGET, 0, 0xfff0, 16, 1, 1
-	delay 3
-	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
-	createsprite gCrushGripExplosionTemplate, ANIM_TARGET, 0, 0xffe8, -12, 1, 1
-	delay 3
-	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
-	createsprite gCrushGripExplosionTemplate, ANIM_TARGET, 0, 16, 16, 1, 1
-	waitforvisualfinish
-	blendoff
-	end
-
 
 gBattleAnimMove_ClassicHyperBeam::
 	loadspritegfx ANIM_TAG_CLASSIC_ORBS

@@ -940,3 +940,36 @@ const struct Tileset gTileset_CherryBlossom =
     .metatileAttributes = gMetatileAttributes_CherryBlossom,
     .callback = InitTilesetAnim_CherryBlossom,
 };
+
+const struct Tileset gTileset_RB_General =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_RB_General,
+    .palettes = gTilesetPalettes_RB_General,
+    .metatiles = gMetatiles_RB_General,
+    .metatileAttributes = gMetatileAttributes_RB_General,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_RB_Roof =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_RB_Roof,
+    .palettes = gTilesetPalettes_RB_Roof,
+    .metatiles = gMetatiles_RB_Roof,
+    .metatileAttributes = gMetatileAttributes_RB_Roof,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_SilkRoad =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SilkRoad,
+    .palettes = gTilesetPalettes_SilkRoad,
+    .metatiles = gMetatiles_SilkRoad,
+    .metatileAttributes = gMetatileAttributes_SilkRoad,
+    .callback = NULL,
+};

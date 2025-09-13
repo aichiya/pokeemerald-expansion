@@ -3,7 +3,7 @@
   "name": "SkyPillar_5F",
   "layout": "LAYOUT_SKY_PILLAR_5F",
   "music": "MUS_MT_CHIMNEY",
-  "region_map_section": "MAPSEC_JOHTO_BELL_TOWER",
+  "region_map_section": "MAPSEC_JOHTO_EMBEDDED_TOWER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
@@ -26,8 +26,8 @@
       "x": 10,
       "y": 1,
       "elevation": 3,
-      "dest_map": "MAP_SKY_PILLAR_TOP",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_JOHTO_ROUTE47",
+      "dest_warp_id": "5"
     }
   ],
   "coord_events": [],

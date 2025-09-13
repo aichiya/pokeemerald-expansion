@@ -84,10 +84,10 @@
     {
       "id": "LAYOUT_EVER_GRANDE_CITY",
       "name": "EverGrandeCity_Layout",
-      "width": 40,
+      "width": 44,
       "height": 80,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_EverGrande",
+      "secondary_tileset": "gTileset_GensokyoMoriyaShrine",
       "border_filepath": "data/layouts/EverGrandeCity/border.bin",
       "blockdata_filepath": "data/layouts/EverGrandeCity/map.bin"
     },
@@ -6470,6 +6470,46 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/JohtoCliffCave1/border.bin",
       "blockdata_filepath": "data/layouts/JohtoCliffCave1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLASSIC_KANTO_PALLET_TOWN",
+      "name": "ClassicKantoPalletTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_RB_General",
+      "secondary_tileset": "gTileset_RB_Roof",
+      "border_filepath": "data/layouts/ClassicKantoPalletTown/border.bin",
+      "blockdata_filepath": "data/layouts/ClassicKantoPalletTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILK_ROAD1",
+      "name": "SilkRoad1_Layout",
+      "width": 30,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SilkRoad",
+      "border_filepath": "data/layouts/SilkRoad1/border.bin",
+      "blockdata_filepath": "data/layouts/SilkRoad1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILK_ROAD3",
+      "name": "SilkRoad3_Layout",
+      "width": 30,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SilkRoad",
+      "border_filepath": "data/layouts/SilkRoad3/border.bin",
+      "blockdata_filepath": "data/layouts/SilkRoad3/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILK_ROAD2",
+      "name": "SilkRoad2_Layout",
+      "width": 60,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SilkRoad",
+      "border_filepath": "data/layouts/SilkRoad2/border.bin",
+      "blockdata_filepath": "data/layouts/SilkRoad2/map.bin"
     }
   ]
 }

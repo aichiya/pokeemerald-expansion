@@ -3,7 +3,7 @@
   "name": "SkyPillar_1F",
   "layout": "LAYOUT_SKY_PILLAR_1F",
   "music": "MUS_MT_CHIMNEY",
-  "region_map_section": "MAPSEC_JOHTO_BELL_TOWER",
+  "region_map_section": "MAPSEC_JOHTO_EMBEDDED_TOWER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
@@ -19,15 +19,15 @@
       "x": 6,
       "y": 13,
       "elevation": 3,
-      "dest_map": "MAP_SKY_PILLAR_OUTSIDE",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_JOHTO_ROUTE47",
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 13,
       "elevation": 3,
-      "dest_map": "MAP_SKY_PILLAR_OUTSIDE",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_JOHTO_ROUTE47",
+      "dest_warp_id": "0"
     },
     {
       "x": 10,

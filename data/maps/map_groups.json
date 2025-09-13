@@ -700,7 +700,10 @@
     "GensokyoRoadOfLiminality1",
     "GensokyoRoadOfLiminality2",
     "GensokyoSanzuRiver2",
-    "GensokyoHigan"
+    "GensokyoHigan",
+    "SilkRoad1",
+    "SilkRoad2",
+    "SilkRoad3"
   ],
   "gMapGroup_Dungeons2": [
     "GensokyoForestOfMagic1",
@@ -834,7 +837,8 @@
     "AnotherWorldDeathForest",
     "AnotherWorldEcruteakCity",
     "AnotherWorldUnderworldMushroomBiome",
-    "AnotherWorldViridianCity"
+    "AnotherWorldViridianCity",
+    "ClassicKantoPalletTown"
   ],
   "gMapGroup_EventStream": [
     "SafariZone_SouthFirstConstruction"

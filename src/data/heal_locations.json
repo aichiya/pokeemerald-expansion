@@ -87,8 +87,8 @@
     {
       "id": "HEAL_LOCATION_JOHTO_SPACE_HYPER_VESSEL_FRONT",
       "map": "MAP_EVER_GRANDE_CITY",
-      "x": 27,
-      "y": 49,
+      "x": 41,
+      "y": 43,
       "respawn_map": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_EVER_GRANDE_NURSE"
     },
@@ -147,8 +147,8 @@
     {
       "id": "HEAL_LOCATION_JOHTO_CIANWOOD_CITY",
       "map": "MAP_VERDANTURF_TOWN",
-      "x": 16,
-      "y": 4,
+      "x": 31,
+      "y": 34,
       "respawn_map": "MAP_VERDANTURF_TOWN_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_VERDANTURF_NURSE"
     },
@@ -163,8 +163,8 @@
     {
       "id": "HEAL_LOCATION_JOHTO_SPACE_HYPER_VESSEL_EMBEDDED_TOWER",
       "map": "MAP_EVER_GRANDE_CITY",
-      "x": 18,
-      "y": 6,
+      "x": 31,
+      "y": 9,
       "respawn_map": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
       "respawn_npc": "LOCALID_LEAGUE_NURSE",
       "respawn_x": 3,

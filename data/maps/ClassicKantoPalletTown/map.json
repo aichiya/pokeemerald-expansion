@@ -1,0 +1,20 @@
+{
+  "id": "MAP_CLASSIC_KANTO_PALLET_TOWN",
+  "name": "ClassicKantoPalletTown",
+  "layout": "LAYOUT_CLASSIC_KANTO_PALLET_TOWN",
+  "music": "MUS_HG_PALLET",
+  "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

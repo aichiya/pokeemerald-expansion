@@ -1627,3 +1627,11 @@ Script_RemoveTint::
 	.include "data/maps/JohtoCliffCave3/scripts.inc"
 
 	.include "data/maps/JohtoCliffEdgeGate/scripts.inc"
+
+	.include "data/maps/ClassicKantoPalletTown/scripts.inc"
+
+	.include "data/maps/SilkRoad1/scripts.inc"
+
+	.include "data/maps/SilkRoad2/scripts.inc"
+
+	.include "data/maps/SilkRoad3/scripts.inc"

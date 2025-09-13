@@ -33,9 +33,9 @@
   "warp_events": [
     {
       "x": 23,
-      "y": 32,
+      "y": 33,
       "elevation": 0,
-      "dest_map": "MAP_JOHTO_ROUTE47",
+      "dest_map": "MAP_SKY_PILLAR_1F",
       "dest_warp_id": "0"
     },
     {
@@ -65,6 +65,13 @@
       "elevation": 0,
       "dest_map": "MAP_VERDANTURF_TOWN",
       "dest_warp_id": "7"
+    },
+    {
+      "x": 21,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_SKY_PILLAR_5F",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

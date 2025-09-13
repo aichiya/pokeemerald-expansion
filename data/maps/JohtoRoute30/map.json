@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_JOHTO_ROUTE31",
-      "offset": -18,
+      "offset": -14,
       "direction": "up"
     },
     {
       "map": "MAP_DEWFORD_TOWN",
-      "offset": -16,
+      "offset": -12,
       "direction": "down"
     }
   ],

@@ -115,18 +115,18 @@
     {
       "id": "MAPSEC_JOHTO_MORIYA_SHRINE",
       "name": "Moriya Shrine",
-      "x": 23,
-      "y": 3,
+      "x": 27,
+      "y": 0,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_JOHTO_SPACE_HYPER_VESSEL",
       "name": "Space Hyper Vessel",
-      "x": 2,
-      "y": 10,
+      "x": 1,
+      "y": 9,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_GENSOKYO_HAKUREI_SHRINE",
@@ -541,8 +541,8 @@
       "name": "Route 41",
       "x": 6,
       "y": 10,
-      "width": 1,
-      "height": 1
+      "width": 3,
+      "height": 3
     },
     {
       "id": "MAPSEC_JOHTO_ROUTE_42",
@@ -850,10 +850,10 @@
     {
       "id": "MAPSEC_JOHTO_GTS",
       "name": "Global Wonder Station",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "x": 7,
+      "y": 7,
+      "width": 2,
+      "height": 2
     },
     {
       "id": "MAPSEC_JOHTO_POKEATHLON_DOME",
@@ -914,8 +914,8 @@
     {
       "id": "MAPSEC_JOHTO_EMBEDDED_TOWER",
       "name": "Embedded Tower",
-      "x": 0,
-      "y": 0,
+      "x": 2,
+      "y": 10,
       "width": 1,
       "height": 1
     },

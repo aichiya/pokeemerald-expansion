@@ -117,7 +117,7 @@
       "width": 48,
       "height": 26,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/DewfordTown/border.bin",
       "blockdata_filepath": "data/layouts/DewfordTown/map.bin"
     },
@@ -4644,10 +4644,10 @@
     {
       "id": "LAYOUT_JOHTO_ROUTE30",
       "name": "JohtoRoute30_Layout",
-      "width": 30,
+      "width": 34,
       "height": 54,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/JohtoRoute30/border.bin",
       "blockdata_filepath": "data/layouts/JohtoRoute30/map.bin"
     },

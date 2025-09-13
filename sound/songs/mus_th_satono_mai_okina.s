@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_satono_mai_okina_grp, voicegroup_rafinia_custom
+        .equ    mus_th_satono_mai_okina_grp, voicegroup802
         .equ    mus_th_satono_mai_okina_pri, 0
         .equ    mus_th_satono_mai_okina_mvl, 100
         .equ    mus_th_satono_mai_okina_rev, reverb_set+50

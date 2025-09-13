@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_dw1_vs_machinedramon_grp, voicegroup_common_main
+	.equ	mus_dgmn_dw1_vs_machinedramon_grp, voicegroup201
 	.equ	mus_dgmn_dw1_vs_machinedramon_pri, 0
 	.equ	mus_dgmn_dw1_vs_machinedramon_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_vs_machinedramon_mvl, 100

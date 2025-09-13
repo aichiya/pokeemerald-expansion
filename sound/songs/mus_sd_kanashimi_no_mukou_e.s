@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_sd_kanashimi_no_mukou_e_grp, voicegroup_custom_205_experimental
+        .equ    mus_sd_kanashimi_no_mukou_e_grp, voicegroup205
         .equ    mus_sd_kanashimi_no_mukou_e_pri, 0
         .equ    mus_sd_kanashimi_no_mukou_e_mvl, 90
         .equ    mus_sd_kanashimi_no_mukou_e_rev, reverb_set+50

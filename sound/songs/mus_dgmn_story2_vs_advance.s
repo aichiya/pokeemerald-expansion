@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_story2_vs_advance_grp, voicegroup_common_main
+	.equ	mus_dgmn_story2_vs_advance_grp, voicegroup201
 	.equ	mus_dgmn_story2_vs_advance_pri, 0
 	.equ	mus_dgmn_story2_vs_advance_rev, 188
 	.equ	mus_dgmn_story2_vs_advance_mvl, 82

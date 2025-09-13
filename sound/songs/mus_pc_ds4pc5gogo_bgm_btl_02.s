@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_grp, voicegroup_common_main
+	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_grp, voicegroup201
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_pri, 0
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_rev, reverb_set+50
 	.equ	mus_pc_ds4pc5gogo_bgm_btl_02_mvl, 92

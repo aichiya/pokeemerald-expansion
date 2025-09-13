@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_dw1_curling_grp, voicegroup_common_main
+	.equ	mus_dgmn_dw1_curling_grp, voicegroup201
 	.equ	mus_dgmn_dw1_curling_pri, 0
 	.equ	mus_dgmn_dw1_curling_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_curling_mvl, 100

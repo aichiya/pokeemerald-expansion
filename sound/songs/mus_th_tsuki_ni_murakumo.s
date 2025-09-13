@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_tsuki_ni_murakumo_grp, voicegroup_common_main
+        .equ    mus_th_tsuki_ni_murakumo_grp, voicegroup201
         .equ    mus_th_tsuki_ni_murakumo_pri, 0
         .equ    mus_th_tsuki_ni_murakumo_rev, reverb_set+50
         .equ    mus_th_tsuki_ni_murakumo_key, 0

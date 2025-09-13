@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gk1_presto_grp, voicegroup_common_main
+        .equ    mus_gk1_presto_grp, voicegroup201
         .equ    mus_gk1_presto_pri, 0
         .equ    mus_gk1_presto_rev, reverb_set+50
         .equ    mus_gk1_presto_key, 0

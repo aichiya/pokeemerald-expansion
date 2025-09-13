@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_th_lostdream_grp, voicegroup_common_main
+	.equ	mus_th_lostdream_grp, voicegroup201
 	.equ	mus_th_lostdream_pri, 0
 	.equ	mus_th_lostdream_rev, reverb_set+50
 	.equ	mus_th_lostdream_mvl, 100

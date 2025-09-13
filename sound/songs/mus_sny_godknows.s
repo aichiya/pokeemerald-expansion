@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_sny_godknows_grp, voicegroup_common_main
+	.equ	mus_sny_godknows_grp, voicegroup201
 	.equ	mus_sny_godknows_pri, 0
 	.equ	mus_sny_godknows_rev, reverb_set+50
 	.equ	mus_sny_godknows_mvl, 100

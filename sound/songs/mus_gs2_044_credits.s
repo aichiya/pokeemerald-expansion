@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_044_credits_grp, voicegroup_golden_sun_2_main
+        .equ    mus_gs2_044_credits_grp, voicegroup601
         .equ    mus_gs2_044_credits_pri, 0
         .equ    mus_gs2_044_credits_rev, reverb_set+50
         .equ    mus_gs2_044_credits_key, 0

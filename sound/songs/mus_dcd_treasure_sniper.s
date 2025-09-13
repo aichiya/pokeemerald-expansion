@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_dcd_treasure_sniper_grp, voicegroup_common_main
+        .equ    mus_dcd_treasure_sniper_grp, voicegroup201
         .equ    mus_dcd_treasure_sniper_pri, 0
         .equ    mus_dcd_treasure_sniper_mvl, 100
         .equ    mus_dcd_treasure_sniper_rev, reverb_set+50

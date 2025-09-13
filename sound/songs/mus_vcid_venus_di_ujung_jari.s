@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_vcid_venus_di_ujung_jari_grp, voicegroup_common_main
+        .equ    mus_vcid_venus_di_ujung_jari_grp, voicegroup201
         .equ    mus_vcid_venus_di_ujung_jari_pri, 0
         .equ    mus_vcid_venus_di_ujung_jari_rev, reverb_set+50
         .equ    mus_vcid_venus_di_ujung_jari_key, 0

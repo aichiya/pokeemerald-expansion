@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_shizukana_shizukana_native_faith_grp, voicegroup_shizukana_native_faith_main
+        .equ    mus_th_shizukana_shizukana_native_faith_grp, voicegroup812
         .equ    mus_th_shizukana_shizukana_native_faith_pri, 0
         .equ    mus_th_shizukana_shizukana_native_faith_mvl, 80
         .equ    mus_th_shizukana_shizukana_native_faith_rev, reverb_set+50

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_nz_ds_07_grp, voicegroup_custom_205_experimental
+        .equ    mus_nz_ds_07_grp, voicegroup205
         .equ    mus_nz_ds_07_pri, 0
         .equ    mus_nz_ds_07_rev, reverb_set+50
 	.equ	mus_nz_ds_07_mvl, 80

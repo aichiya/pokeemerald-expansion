@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_iro_wa_nioedo_grp, voicegroup_common_main
+        .equ    mus_th_iro_wa_nioedo_grp, voicegroup201
         .equ    mus_th_iro_wa_nioedo_pri, 0
         .equ    mus_th_iro_wa_nioedo_rev, reverb_set+50
         .equ    mus_th_iro_wa_nioedo_key, 0

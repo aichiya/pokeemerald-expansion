@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_thpprf_nobeta_2_grp, voicegroup_thpprf_main
+        .equ    mus_thpprf_nobeta_2_grp, voicegroup210
         .equ    mus_thpprf_nobeta_2_pri, 0
         .equ    mus_thpprf_nobeta_2_rev, reverb_set+50
         .equ    mus_thpprf_nobeta_2_key, 0

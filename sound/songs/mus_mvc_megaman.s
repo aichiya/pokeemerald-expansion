@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_mvc_megaman_grp, voicegroup_custom_205_experimental
+        .equ    mus_mvc_megaman_grp, voicegroup205
         .equ    mus_mvc_megaman_pri, 0
 	.equ	mus_mvc_megaman_mvl, 150
         .equ    mus_mvc_megaman_rev, reverb_set+50

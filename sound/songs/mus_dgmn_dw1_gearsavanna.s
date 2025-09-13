@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_dw1_gearsavanna_grp, voicegroup_common_main
+	.equ	mus_dgmn_dw1_gearsavanna_grp, voicegroup201
 	.equ	mus_dgmn_dw1_gearsavanna_pri, 0
 	.equ	mus_dgmn_dw1_gearsavanna_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_gearsavanna_mvl, 100

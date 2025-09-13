@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_thppme_362_faith_is_for_the_transient_people_grp, voicegroup_thppme_mr_unknown_set
+        .equ    mus_thppme_362_faith_is_for_the_transient_people_grp, voicegroup809
         .equ    mus_thppme_362_faith_is_for_the_transient_people_pri, 0
         .equ    mus_thppme_362_faith_is_for_the_transient_people_rev, reverb_set+50
         .equ    mus_thppme_362_faith_is_for_the_transient_people_key, 0

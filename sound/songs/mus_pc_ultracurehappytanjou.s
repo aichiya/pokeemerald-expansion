@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pc_ultracurehappytanjou_grp, voicegroup_common_main
+	.equ	mus_pc_ultracurehappytanjou_grp, voicegroup201
 	.equ	mus_pc_ultracurehappytanjou_pri, 0
 	.equ	mus_pc_ultracurehappytanjou_rev, reverb_set+50
 	.equ	mus_pc_ultracurehappytanjou_mvl, 127

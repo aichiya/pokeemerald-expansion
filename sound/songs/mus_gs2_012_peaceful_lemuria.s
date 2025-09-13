@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_012_peaceful_lemuria_grp, voicegroup_golden_sun_2_main
+        .equ    mus_gs2_012_peaceful_lemuria_grp, voicegroup601
         .equ    mus_gs2_012_peaceful_lemuria_pri, 0
         .equ    mus_gs2_012_peaceful_lemuria_rev, reverb_set+50
         .equ    mus_gs2_012_peaceful_lemuria_key, 0

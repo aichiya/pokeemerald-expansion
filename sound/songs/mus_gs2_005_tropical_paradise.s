@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_005_tropical_paradise_grp, voicegroup_golden_sun_2_main
+        .equ    mus_gs2_005_tropical_paradise_grp, voicegroup601
         .equ    mus_gs2_005_tropical_paradise_pri, 0
         .equ    mus_gs2_005_tropical_paradise_rev, reverb_set+50
         .equ    mus_gs2_005_tropical_paradise_key, 0

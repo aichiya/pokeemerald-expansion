@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pkmn_sv_teraraidbattle_grp, voicegroup_common_main
+	.equ	mus_pkmn_sv_teraraidbattle_grp, voicegroup201
 	.equ	mus_pkmn_sv_teraraidbattle_pri, 0
 	.equ	mus_pkmn_sv_teraraidbattle_rev, reverb_set+50
 	.equ	mus_pkmn_sv_teraraidbattle_mvl, 127

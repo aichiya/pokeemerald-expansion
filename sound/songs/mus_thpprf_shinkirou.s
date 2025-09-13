@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_shinkirou_grp, voicegroup_thpprf_main
+	.equ	mus_thpprf_shinkirou_grp, voicegroup210
 	.equ	mus_thpprf_shinkirou_pri, 0
 	.equ	mus_thpprf_shinkirou_rev, reverb_set+50
 	.equ	mus_thpprf_shinkirou_mvl, 92

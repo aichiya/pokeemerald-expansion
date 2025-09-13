@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_necrofantasia_c_grp, voicegroup_thpprf_main
+	.equ	mus_thpprf_necrofantasia_c_grp, voicegroup210
 	.equ	mus_thpprf_necrofantasia_c_pri, 0
 	.equ	mus_thpprf_necrofantasia_c_rev, reverb_set+50
 	.equ	mus_thpprf_necrofantasia_c_mvl, 127

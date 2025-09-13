@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_dw1_factorialtown_night_grp, voicegroup_common_main
+	.equ	mus_dgmn_dw1_factorialtown_night_grp, voicegroup201
 	.equ	mus_dgmn_dw1_factorialtown_night_pri, 0
 	.equ	mus_dgmn_dw1_factorialtown_night_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_factorialtown_night_mvl, 100

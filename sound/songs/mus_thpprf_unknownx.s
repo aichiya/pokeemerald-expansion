@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_unknownx_grp, voicegroup_thpprf_main
+	.equ	mus_thpprf_unknownx_grp, voicegroup210
 	.equ	mus_thpprf_unknownx_pri, 0
 	.equ	mus_thpprf_unknownx_rev, reverb_set+50
 	.equ	mus_thpprf_unknownx_mvl, 92

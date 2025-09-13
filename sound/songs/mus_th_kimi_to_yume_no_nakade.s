@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_kimi_to_yume_no_nakade_grp, voicegroup_custom_205_experimental
+        .equ    mus_th_kimi_to_yume_no_nakade_grp, voicegroup205
         .equ    mus_th_kimi_to_yume_no_nakade_pri, 0
         .equ    mus_th_kimi_to_yume_no_nakade_rev, reverb_set+50
         .equ    mus_th_kimi_to_yume_no_nakade_key, 0

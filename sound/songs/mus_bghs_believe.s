@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_bghs_believe_grp, voicegroup_common_main
+        .equ    mus_bghs_believe_grp, voicegroup201
         .equ    mus_bghs_believe_pri, 0
         .equ    mus_bghs_believe_rev, reverb_set+50
         .equ    mus_bghs_believe_key, 0

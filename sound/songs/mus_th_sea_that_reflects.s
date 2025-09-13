@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_sea_that_reflects_grp, voicegroup_velo_custom
+        .equ    mus_th_sea_that_reflects_grp, voicegroup803
         .equ    mus_th_sea_that_reflects_pri, 0
         .equ    mus_th_sea_that_reflects_mvl, 80
         .equ    mus_th_sea_that_reflects_rev, reverb_set+50

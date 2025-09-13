@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	vo_pc_gba2_cureblack_grp, voicegroup_fwpcmh_main
+	.equ	vo_pc_gba2_cureblack_grp, voicegroup501
 	.equ	vo_pc_gba2_cureblack_pri, 0
 	.equ	vo_pc_gba2_cureblack_rev, reverb_set+50
 	.equ	vo_pc_gba2_cureblack_mvl, 92

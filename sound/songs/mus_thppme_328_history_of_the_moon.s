@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_thppme_328_history_of_the_moon_grp, voicegroup_rg_poke_center
+        .equ    mus_thppme_328_history_of_the_moon_grp, voicegroup162
         .equ    mus_thppme_328_history_of_the_moon_pri, 0
         .equ    mus_thppme_328_history_of_the_moon_rev, reverb_set+50
         .equ    mus_thppme_328_history_of_the_moon_key, 0

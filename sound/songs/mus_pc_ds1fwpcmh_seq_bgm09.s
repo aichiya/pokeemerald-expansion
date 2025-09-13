@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pc_ds1fwpcmh_seq_bgm09_grp, voicegroup_common_main
+	.equ	mus_pc_ds1fwpcmh_seq_bgm09_grp, voicegroup201
 	.equ	mus_pc_ds1fwpcmh_seq_bgm09_pri, 0
 	.equ	mus_pc_ds1fwpcmh_seq_bgm09_rev, reverb_set+50
 	.equ	mus_pc_ds1fwpcmh_seq_bgm09_mvl, 100

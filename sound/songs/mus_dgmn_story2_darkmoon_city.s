@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_story2_darkmoon_city_grp, voicegroup_common_main
+	.equ	mus_dgmn_story2_darkmoon_city_grp, voicegroup201
 	.equ	mus_dgmn_story2_darkmoon_city_pri, 0
 	.equ	mus_dgmn_story2_darkmoon_city_rev, reverb_set+50
 	.equ	mus_dgmn_story2_darkmoon_city_mvl, 100

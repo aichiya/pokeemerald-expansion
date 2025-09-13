@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_faith3_grp, voicegroup_common_main
+        .equ    mus_th_faith3_grp, voicegroup201
         .equ    mus_th_faith3_pri, 0
         .equ    mus_th_faith3_mvl, 100
         .equ    mus_th_faith3_rev, reverb_set+50

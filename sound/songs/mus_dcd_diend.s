@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dcd_diend_grp, voicegroup_common_main
+	.equ	mus_dcd_diend_grp, voicegroup201
 	.equ	mus_dcd_diend_pri, 0
 	.equ	mus_dcd_diend_rev, reverb_set+50
 	.equ	mus_dcd_diend_mvl, 100

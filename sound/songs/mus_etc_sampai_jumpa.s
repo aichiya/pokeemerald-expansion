@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_sampai_jumpa_grp, voicegroup_common_main
+        .equ    mus_etc_sampai_jumpa_grp, voicegroup201
         .equ    mus_etc_sampai_jumpa_pri, 0
         .equ    mus_etc_sampai_jumpa_mvl, 100
         .equ    mus_etc_sampai_jumpa_rev, reverb_set+50

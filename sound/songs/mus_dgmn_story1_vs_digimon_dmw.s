@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_story1_vs_digimon_dmw_grp, voicegroup_common_main
+	.equ	mus_dgmn_story1_vs_digimon_dmw_grp, voicegroup201
 	.equ	mus_dgmn_story1_vs_digimon_dmw_pri, 0
 	.equ	mus_dgmn_story1_vs_digimon_dmw_rev, reverb_set+50
 	.equ	mus_dgmn_story1_vs_digimon_dmw_mvl, 100

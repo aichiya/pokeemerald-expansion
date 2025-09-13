@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_hololive_error_grp, voicegroup_common_main
+        .equ    mus_hololive_error_grp, voicegroup201
         .equ    mus_hololive_error_pri, 0
         .equ    mus_hololive_error_rev, reverb_set+50
         .equ    mus_hololive_error_key, 0

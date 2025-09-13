@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_key_nagisa_cut_grp, voicegroup_custom_205_experimental
+	.equ	mus_key_nagisa_cut_grp, voicegroup205
 	.equ	mus_key_nagisa_cut_pri, 0
 	.equ	mus_key_nagisa_cut_rev, reverb_set+50
 	.equ	mus_key_nagisa_cut_mvl, 127

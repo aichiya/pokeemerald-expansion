@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_cs_scorching_back_grp, voicegroup_custom_205_experimental
+        .equ    mus_cs_scorching_back_grp, voicegroup205
         .equ    mus_cs_scorching_back_pri, 0
         .equ    mus_cs_scorching_back_mvl, 100
         .equ    mus_cs_scorching_back_rev, reverb_set+50

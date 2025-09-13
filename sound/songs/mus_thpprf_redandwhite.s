@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_redandwhite_grp, voicegroup_thpprf_main
+	.equ	mus_thpprf_redandwhite_grp, voicegroup210
 	.equ	mus_thpprf_redandwhite_pri, 0
 	.equ	mus_thpprf_redandwhite_rev, reverb_set+50
 	.equ	mus_thpprf_redandwhite_mvl, 96

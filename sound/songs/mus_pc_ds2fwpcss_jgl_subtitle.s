@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pc_ds2fwpcss_jgl_subtitle_grp, voicegroup_common_main
+	.equ	mus_pc_ds2fwpcss_jgl_subtitle_grp, voicegroup201
 	.equ	mus_pc_ds2fwpcss_jgl_subtitle_pri, 0
 	.equ	mus_pc_ds2fwpcss_jgl_subtitle_rev, reverb_set+50
 	.equ	mus_pc_ds2fwpcss_jgl_subtitle_mvl, 100

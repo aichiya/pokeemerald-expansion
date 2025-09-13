@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gi_ormos_grp, voicegroup_custom_205_experimental
+        .equ    mus_gi_ormos_grp, voicegroup205
         .equ    mus_gi_ormos_pri, 0
         .equ    mus_gi_ormos_mvl, 127
         .equ    mus_gi_ormos_rev, reverb_set+50

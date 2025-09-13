@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_dw1_filecity_day_grp, voicegroup_common_main
+	.equ	mus_dgmn_dw1_filecity_day_grp, voicegroup201
 	.equ	mus_dgmn_dw1_filecity_day_pri, 0
 	.equ	mus_dgmn_dw1_filecity_day_rev, reverb_set+50
 	.equ	mus_dgmn_dw1_filecity_day_mvl, 100

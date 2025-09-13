@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_mmbn6_vs_virus_grp, voicegroup_mmbn6_main
+        .equ    mus_mmbn6_vs_virus_grp, voicegroup805
         .equ    mus_mmbn6_vs_virus_pri, 0
         .equ    mus_mmbn6_vs_virus_mvl, 100
         .equ    mus_mmbn6_vs_virus_rev, reverb_set+50

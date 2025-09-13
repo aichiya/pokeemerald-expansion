@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dbs_royal_blue_grp, voicegroup_common_main
+	.equ	mus_dbs_royal_blue_grp, voicegroup201
 	.equ	mus_dbs_royal_blue_pri, 0
 	.equ	mus_dbs_royal_blue_rev, reverb_set+50
 	.equ	mus_dbs_royal_blue_mvl, 110

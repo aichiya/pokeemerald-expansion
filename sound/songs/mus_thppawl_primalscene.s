@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thppawl_primalscene_grp, voicegroup_common_main
+	.equ	mus_thppawl_primalscene_grp, voicegroup201
 	.equ	mus_thppawl_primalscene_pri, 0
 	.equ	mus_thppawl_primalscene_rev, reverb_set+50
 	.equ	mus_thppawl_primalscene_mvl, 100

@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_gsc_pewter_test_grp, voicegroup_custom_207_experimental
+	.equ	mus_gsc_pewter_test_grp, voicegroup207
 	.equ	mus_gsc_pewter_test_pri, 0
 	.equ	mus_gsc_pewter_test_rev, reverb_set+50
 	.equ	mus_gsc_pewter_test_mvl, 80

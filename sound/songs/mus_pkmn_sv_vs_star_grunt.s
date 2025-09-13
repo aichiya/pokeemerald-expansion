@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pkmn_sv_vs_star_grunt_grp, voicegroup_common_main
+	.equ	mus_pkmn_sv_vs_star_grunt_grp, voicegroup201
 	.equ	mus_pkmn_sv_vs_star_grunt_pri, 0
 	.equ	mus_pkmn_sv_vs_star_grunt_rev, reverb_set+50
 	.equ	mus_pkmn_sv_vs_star_grunt_mvl, 115

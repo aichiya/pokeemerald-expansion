@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_mtadv_peach_tour_match_grp, voicegroup_golden_sun_2_main
+        .equ    mus_mtadv_peach_tour_match_grp, voicegroup601
         .equ    mus_mtadv_peach_tour_match_pri, 0
         .equ    mus_mtadv_peach_tour_match_mvl, 162
         .equ    mus_mtadv_peach_tour_match_rev, reverb_set+50

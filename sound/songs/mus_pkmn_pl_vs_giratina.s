@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pkmn_pl_vs_giratina_grp, voicegroup_dppt_custom_using_hgss_samples
+	.equ	mus_pkmn_pl_vs_giratina_grp, voicegroup203
 	.equ	mus_pkmn_pl_vs_giratina_pri, 0
 	.equ	mus_pkmn_pl_vs_giratina_rev, reverb_set+50
 	.equ	mus_pkmn_pl_vs_giratina_mvl, 92

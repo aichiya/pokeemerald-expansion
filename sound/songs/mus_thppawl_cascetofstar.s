@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thppawl_cascetofstar_grp, voicegroup_common_main
+	.equ	mus_thppawl_cascetofstar_grp, voicegroup201
 	.equ	mus_thppawl_cascetofstar_pri, 0
 	.equ	mus_thppawl_cascetofstar_rev, reverb_set+50
 	.equ	mus_thppawl_cascetofstar_mvl, 100

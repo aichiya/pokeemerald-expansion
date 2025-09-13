@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_070_golden_sun_rises_2_grp, voicegroup_golden_sun_2_main
+        .equ    mus_gs2_070_golden_sun_rises_2_grp, voicegroup601
         .equ    mus_gs2_070_golden_sun_rises_2_pri, 0
         .equ    mus_gs2_070_golden_sun_rises_2_rev, reverb_set+50
         .equ    mus_gs2_070_golden_sun_rises_2_key, 0

@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_instrument_test_grp, voicegroup_pmdred_main_2
+	.equ	mus_instrument_test_grp, voicegroup505
 	.equ	mus_instrument_test_pri, 0
 	.equ	mus_instrument_test_rev, reverb_set+50
 	.equ	mus_instrument_test_mvl, 127

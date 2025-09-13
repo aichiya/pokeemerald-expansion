@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_omori_worlds_end_valentine_grp, voicegroup_common_main
+        .equ    mus_omori_worlds_end_valentine_grp, voicegroup201
         .equ    mus_omori_worlds_end_valentine_pri, 0
         .equ    mus_omori_worlds_end_valentine_mvl, 100
         .equ    mus_omori_worlds_end_valentine_rev, reverb_set+50

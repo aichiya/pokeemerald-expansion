@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pkmn_dp_vs_dialga_palkia_grp, voicegroup_common_main
+	.equ	mus_pkmn_dp_vs_dialga_palkia_grp, voicegroup201
 	.equ	mus_pkmn_dp_vs_dialga_palkia_pri, 0
 	.equ	mus_pkmn_dp_vs_dialga_palkia_rev, reverb_set+50
 	.equ	mus_pkmn_dp_vs_dialga_palkia_mvl, 92

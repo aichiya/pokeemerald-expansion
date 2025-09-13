@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_yyyi_battle_02_test_grp, voicegroup_hgss_custom
+	.equ	mus_yyyi_battle_02_test_grp, voicegroup202
 	.equ	mus_yyyi_battle_02_test_pri, 0
 	.equ	mus_yyyi_battle_02_test_rev, reverb_set+50
 	.equ	mus_yyyi_battle_02_test_mvl, 100

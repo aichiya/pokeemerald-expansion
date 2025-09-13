@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_sh_silkroad_grp, voicegroup_common_main
+	.equ	mus_sh_silkroad_grp, voicegroup201
 	.equ	mus_sh_silkroad_pri, 0
 	.equ	mus_sh_silkroad_rev, reverb_set+50
 	.equ	mus_sh_silkroad_mvl, 72

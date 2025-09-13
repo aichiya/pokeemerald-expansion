@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_gs_gs1allegro_grp, voicegroup_common_main
+	.equ	mus_gs_gs1allegro_grp, voicegroup201
 	.equ	mus_gs_gs1allegro_pri, 0
 	.equ	mus_gs_gs1allegro_rev, reverb_set+50
 	.equ	mus_gs_gs1allegro_mvl, 127

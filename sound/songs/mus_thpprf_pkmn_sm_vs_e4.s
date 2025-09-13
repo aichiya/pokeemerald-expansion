@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_pkmn_sm_vs_e4_grp, voicegroup_thpprf_main
+	.equ	mus_thpprf_pkmn_sm_vs_e4_grp, voicegroup210
 	.equ	mus_thpprf_pkmn_sm_vs_e4_pri, 0
 	.equ	mus_thpprf_pkmn_sm_vs_e4_rev, reverb_set+50
 	.equ	mus_thpprf_pkmn_sm_vs_e4_mvl, 92

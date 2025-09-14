@@ -36,15 +36,15 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
-      "y": 41,
+      "x": 19,
+      "y": 40,
       "elevation": 0,
       "dest_map": "MAP_VICTORY_ROAD_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 18,
-      "y": 27,
+      "x": 20,
+      "y": 40,
       "elevation": 0,
       "dest_map": "MAP_VICTORY_ROAD_1F",
       "dest_warp_id": "1"
@@ -162,8 +162,8 @@
     },
     {
       "type": "sign",
-      "x": 29,
-      "y": 48,
+      "x": 43,
+      "y": 42,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
@@ -186,8 +186,8 @@
     },
     {
       "type": "sign",
-      "x": 28,
-      "y": 48,
+      "x": 42,
+      "y": 42,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"

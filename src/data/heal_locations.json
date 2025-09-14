@@ -23,56 +23,56 @@
     {
       "id": "HEAL_LOCATION_JOHTO_OLIVINE_CITY",
       "map": "MAP_PETALBURG_CITY",
-      "x": 20,
-      "y": 17,
+      "x": 13,
+      "y": 22,
       "respawn_map": "MAP_PETALBURG_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_PETALBURG_NURSE"
     },
     {
       "id": "HEAL_LOCATION_JOHTO_ECRUTEAK_CITY",
       "map": "MAP_SLATEPORT_CITY",
-      "x": 19,
-      "y": 20,
+      "x": 29,
+      "y": 52,
       "respawn_map": "MAP_SLATEPORT_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SLATEPORT_NURSE"
     },
     {
       "id": "HEAL_LOCATION_JOHTO_MAHOGANY_TOWN",
       "map": "MAP_MAUVILLE_CITY",
-      "x": 22,
-      "y": 6,
+      "x": 15,
+      "y": 18,
       "respawn_map": "MAP_MAUVILLE_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_MAUVILLE_NURSE"
     },
     {
       "id": "HEAL_LOCATION_JOHTO_LAKE_OF_RAGE",
       "map": "MAP_RUSTBORO_CITY",
-      "x": 16,
-      "y": 39,
+      "x": 21,
+      "y": 54,
       "respawn_map": "MAP_RUSTBORO_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_RUSTBORO_NURSE"
     },
     {
       "id": "HEAL_LOCATION_JOHTO_BLACKTHORN_CITY",
       "map": "MAP_FORTREE_CITY",
-      "x": 5,
-      "y": 7,
+      "x": 20,
+      "y": 34,
       "respawn_map": "MAP_FORTREE_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_FORTREE_NURSE"
     },
     {
       "id": "HEAL_LOCATION_JOHTO_MT_SILVER",
       "map": "MAP_LILYCOVE_CITY",
-      "x": 24,
-      "y": 15,
+      "x": 28,
+      "y": 20,
       "respawn_map": "MAP_LILYCOVE_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_LILYCOVE_NURSE"
     },
     {
       "id": "HEAL_LOCATION_JOHTO_INDIGO_PLATEAU",
       "map": "MAP_MOSSDEEP_CITY",
-      "x": 28,
-      "y": 17,
+      "x": 18,
+      "y": 6,
       "respawn_map": "MAP_MOSSDEEP_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_MOSSDEEP_NURSE"
     },
@@ -95,8 +95,8 @@
     {
       "id": "HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_MALE",
       "map": "MAP_LITTLEROOT_TOWN",
-      "x": 5,
-      "y": 9,
+      "x": 20,
+      "y": 13,
       "respawn_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
       "respawn_npc": "LOCALID_PLAYERS_HOUSE_1F_MOM",
       "respawn_x": 2,
@@ -105,7 +105,7 @@
     {
       "id": "HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_FEMALE",
       "map": "MAP_LITTLEROOT_TOWN",
-      "x": 14,
+      "x": 13,
       "y": 9,
       "respawn_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
       "respawn_npc": "LOCALID_PLAYERS_HOUSE_1F_MOM",
@@ -115,24 +115,24 @@
     {
       "id": "HEAL_LOCATION_JOHTO_NEW_BARK_TOWN",
       "map": "MAP_OLDALE_TOWN",
-      "x": 6,
-      "y": 17,
+      "x": 16,
+      "y": 10,
       "respawn_map": "MAP_OLDALE_TOWN_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_OLDALE_NURSE"
     },
     {
       "id": "HEAL_LOCATION_JOHTO_CHERRYGROVE_CITY",
       "map": "MAP_DEWFORD_TOWN",
-      "x": 2,
-      "y": 11,
+      "x": 37,
+      "y": 4,
       "respawn_map": "MAP_DEWFORD_TOWN_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_DEWFORD_NURSE"
     },
     {
       "id": "HEAL_LOCATION_JOHTO_VIOLET_CITY",
       "map": "MAP_LAVARIDGE_TOWN",
-      "x": 9,
-      "y": 7,
+      "x": 33,
+      "y": 35,
       "respawn_map": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_LAVARIDGE_NURSE"
     },
@@ -182,8 +182,8 @@
     {
       "id": "HEAL_LOCATION_BATTLE_FRONTIER_OUTSIDE_EAST",
       "map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
-      "x": 3,
-      "y": 52,
+      "x": 18,
+      "y": 6,
       "respawn_map": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_FRONTIER_NURSE"
     },
@@ -196,8 +196,8 @@
     {
       "id": "HEAL_LOCATION_GENSOKYO_HUMAN_VILLAGE",
       "map": "MAP_ROUTE102",
-      "x": 1,
-      "y": 1,
+      "x": 31,
+      "y": 17,
       "respawn_map": "MAP_ROUTE102",
       "respawn_x": 1,
       "respawn_y": 1
@@ -205,8 +205,8 @@
     {
       "id": "HEAL_LOCATION_GENSOKYO_KOURINDOU",
       "map": "MAP_ROUTE103",
-      "x": 1,
-      "y": 1,
+      "x": 11,
+      "y": 19,
       "respawn_map": "MAP_ROUTE103",
       "respawn_x": 1,
       "respawn_y": 1
@@ -214,8 +214,8 @@
     {
       "id": "HEAL_LOCATION_GENSOKYO_MUENZUKA",
       "map": "MAP_ROUTE104",
-      "x": 1,
-      "y": 1,
+      "x": 5,
+      "y": 21,
       "respawn_map": "MAP_ROUTE104",
       "respawn_x": 1,
       "respawn_y": 1
@@ -241,8 +241,8 @@
     {
       "id": "HEAL_LOCATION_GENSOKYO_SCARLET_DEVIL_MANSION",
       "map": "MAP_ROUTE107",
-      "x": 1,
-      "y": 1,
+      "x": 15,
+      "y": 32,
       "respawn_map": "MAP_ROUTE107",
       "respawn_x": 1,
       "respawn_y": 1
@@ -286,8 +286,8 @@
     {
       "id": "HEAL_LOCATION_JAVA_KEMBANG_TOWN",
       "map": "MAP_ROUTE112",
-      "x": 1,
-      "y": 1,
+      "x": 20,
+      "y": 41,
       "respawn_map": "MAP_ROUTE112",
       "respawn_x": 1,
       "respawn_y": 1
@@ -313,8 +313,8 @@
     {
       "id": "HEAL_LOCATION_JAVA_NEO_BANJAR_CITY",
       "map": "MAP_ROUTE115",
-      "x": 1,
-      "y": 1,
+      "x": 35,
+      "y": 13,
       "respawn_map": "MAP_ROUTE115",
       "respawn_x": 1,
       "respawn_y": 1
@@ -394,8 +394,8 @@
     {
       "id": "HEAL_LOCATION_JAVA_YOGYAKARTA",
       "map": "MAP_ROUTE124",
-      "x": 1,
-      "y": 1,
+      "x": 57,
+      "y": 27,
       "respawn_map": "MAP_ROUTE124",
       "respawn_x": 1,
       "respawn_y": 1
@@ -403,8 +403,8 @@
     {
       "id": "HEAL_LOCATION_JAVA_SOLO",
       "map": "MAP_ROUTE125",
-      "x": 1,
-      "y": 1,
+      "x": 7,
+      "y": 20,
       "respawn_map": "MAP_ROUTE125",
       "respawn_x": 1,
       "respawn_y": 1
@@ -412,8 +412,8 @@
     {
       "id": "HEAL_LOCATION_JAVA_SEMARANG",
       "map": "MAP_ROUTE126",
-      "x": 1,
-      "y": 1,
+      "x": 37,
+      "y": 42,
       "respawn_map": "MAP_ROUTE126",
       "respawn_x": 1,
       "respawn_y": 1
@@ -421,8 +421,8 @@
     {
       "id": "HEAL_LOCATION_JAVA_SURABAYA",
       "map": "MAP_ROUTE127",
-      "x": 1,
-      "y": 1,
+      "x": 19,
+      "y": 13,
       "respawn_map": "MAP_ROUTE127",
       "respawn_x": 1,
       "respawn_y": 1
@@ -430,8 +430,8 @@
     {
       "id": "HEAL_LOCATION_JAVA_JAKARTA",
       "map": "MAP_ROUTE128",
-      "x": 1,
-      "y": 1,
+      "x": 36,
+      "y": 49,
       "respawn_map": "MAP_ROUTE128",
       "respawn_x": 1,
       "respawn_y": 1
@@ -439,8 +439,8 @@
     {
       "id": "HEAL_LOCATION_JOHTO_ROUTE_48_POKEMON_CENTER",
       "map": "MAP_ROUTE129",
-      "x": 1,
-      "y": 1,
+      "x": 19,
+      "y": 44,
       "respawn_map": "MAP_ROUTE129",
       "respawn_x": 1,
       "respawn_y": 1
@@ -448,8 +448,8 @@
     {
       "id": "HEAL_LOCATION_JOHTO_NOBELESSE_CITY",
       "map": "MAP_ROUTE130",
-      "x": 1,
-      "y": 1,
+      "x": 17,
+      "y": 20,
       "respawn_map": "MAP_ROUTE130",
       "respawn_x": 1,
       "respawn_y": 1
@@ -457,8 +457,8 @@
     {
       "id": "HEAL_LOCATION_JAVA_MALANG",
       "map": "MAP_ROUTE131",
-      "x": 1,
-      "y": 1,
+      "x": 28,
+      "y": 10,
       "respawn_map": "MAP_ROUTE131",
       "respawn_x": 1,
       "respawn_y": 1
@@ -466,8 +466,8 @@
     {
       "id": "HEAL_LOCATION_JAVA_DEVATA_ISLETS",
       "map": "MAP_ROUTE132",
-      "x": 1,
-      "y": 1,
+      "x": 35,
+      "y": 23,
       "respawn_map": "MAP_ROUTE132",
       "respawn_x": 1,
       "respawn_y": 1
@@ -476,7 +476,7 @@
       "id": "HEAL_LOCATION_JAVA_KASEPUHAN_TOWN",
       "map": "MAP_ROUTE133",
       "x": 1,
-      "y": 1,
+      "y": 33,
       "respawn_map": "MAP_ROUTE133",
       "respawn_x": 1,
       "respawn_y": 1
@@ -484,8 +484,8 @@
     {
       "id": "HEAL_LOCATION_JAVA_CILA_PRISON_TOWN",
       "map": "MAP_ROUTE134",
-      "x": 1,
-      "y": 1,
+      "x": 68,
+      "y": 20,
       "respawn_map": "MAP_ROUTE134",
       "respawn_x": 1,
       "respawn_y": 1

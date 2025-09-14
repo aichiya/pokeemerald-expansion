@@ -102,8 +102,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 2,
-      "y": 10,
+      "x": 37,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_DEWFORD_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "0"
@@ -150,16 +150,16 @@
     },
     {
       "type": "sign",
-      "x": 4,
-      "y": 10,
+      "x": 39,
+      "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"
     },
     {
       "type": "sign",
-      "x": 3,
-      "y": 10,
+      "x": 38,
+      "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Common_EventScript_ShowPokemonCenterSign"

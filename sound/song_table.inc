@@ -1994,6 +1994,8 @@ gSongTable::
 	song mus_thppzgsk_400A_faith_is_for_the_transient_people, 0, 0
 	song mus_thppzgsk_401A_plastic_mind, 0, 0
 	song mus_thppzgsk_402A_master_spark, 0, 0
+	song mus_pkmn_mst_pokemon_center, 0, 0
+	song mus_pkmn_swsh_slumbering_weald, 0, 0
 
 	.align 2
 dummy_song_header:

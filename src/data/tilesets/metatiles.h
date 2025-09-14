@@ -246,3 +246,6 @@ const u16 gMetatileAttributes_RB_Roof[] = INCBIN_U16("data/tilesets/secondary/rb
 
 const u16 gMetatiles_SilkRoad[] = INCBIN_U16("data/tilesets/secondary/silk_road/metatiles.bin");
 const u16 gMetatileAttributes_SilkRoad[] = INCBIN_U16("data/tilesets/secondary/silk_road/metatile_attributes.bin");
+
+const u16 gMetatiles_GensokyoChireiden[] = INCBIN_U16("data/tilesets/secondary/gensokyo_chireiden/metatiles.bin");
+const u16 gMetatileAttributes_GensokyoChireiden[] = INCBIN_U16("data/tilesets/secondary/gensokyo_chireiden/metatile_attributes.bin");

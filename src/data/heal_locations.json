@@ -250,8 +250,8 @@
     {
       "id": "HEAL_LOCATION_GENSOKYO_CHIREIDEN",
       "map": "MAP_ROUTE108",
-      "x": 1,
-      "y": 1,
+      "x": 38,
+      "y": 36,
       "respawn_map": "MAP_ROUTE108",
       "respawn_x": 1,
       "respawn_y": 1

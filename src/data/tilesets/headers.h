@@ -973,3 +973,14 @@ const struct Tileset gTileset_SilkRoad =
     .metatileAttributes = gMetatileAttributes_SilkRoad,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_GensokyoChireiden =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_GensokyoChireiden,
+    .palettes = gTilesetPalettes_GensokyoChireiden,
+    .metatiles = gMetatiles_GensokyoChireiden,
+    .metatileAttributes = gMetatileAttributes_GensokyoChireiden,
+    .callback = NULL,
+};

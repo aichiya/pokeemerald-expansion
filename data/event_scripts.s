@@ -64,7 +64,7 @@
 #include "constants/weather.h"
 #include "constants/region_map_sections.h"
 #include "constants/rgb.h"
-
+#include "constants/speaker_names.h"
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
 	.include "constants/constants.inc"

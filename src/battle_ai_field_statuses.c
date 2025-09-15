@@ -431,7 +431,7 @@ static enum FieldEffectOutcome BenefitsFromPsychicTerrain(u32 battler)
             return FIELD_EFFECT_POSITIVE;
     }
 
-    if (grounded && HasDamagingMoveOfType(battler, TYPE_PSYCHIC))
+    if (grounded && HasDamagingMoveOfType(battler, TYPE_NEW_REASON))
         return FIELD_EFFECT_POSITIVE;
 
     if (HasBattlerSideMoveWithEffect(LEFT_FOE(battler), EFFECT_EXPANDING_FORCE))
@@ -457,7 +457,7 @@ static enum FieldEffectOutcome BenefitsFromUBW(u32 battler)
 
     // harass miasma
     if ((grounded || allyGrounded) 
-        && (HasDamagingMoveOfType(FOE(battler), TYPE_NEW_MIASMA) || HasDamagingMoveOfType(BATTLE_PARTNER(FOE(battler)), TYPE_NEW_MIASMA)))
+        && (HasDamagingMoveOfType(LEFT_FOE(battler), TYPE_NEW_MIASMA) || HasDamagingMoveOfType(RIGHT_FOE(battler), TYPE_NEW_MIASMA)))
         return FIELD_EFFECT_POSITIVE;
 
     if (grounded && HasDamagingMoveOfType(battler, TYPE_NEW_STEEL))
@@ -479,7 +479,7 @@ static enum FieldEffectOutcome BenefitsFromDarknessTerrain(u32 battler)
 
     // harass divine
     if ((grounded || allyGrounded) 
-        && (HasDamagingMoveOfType(FOE(battler), TYPE_NEW_DIVINE) || HasDamagingMoveOfType(BATTLE_PARTNER(FOE(battler)), TYPE_NEW_DIVINE)))
+        && (HasDamagingMoveOfType(LEFT_FOE(battler), TYPE_NEW_DIVINE) || HasDamagingMoveOfType(RIGHT_FOE(battler), TYPE_NEW_DIVINE)))
         return FIELD_EFFECT_POSITIVE;
 
     if (grounded && HasDamagingMoveOfType(battler, TYPE_NEW_DARK))
@@ -499,7 +499,7 @@ static enum FieldEffectOutcome BenefitsFromMiasmaTerrain(u32 battler)
         allyGrounded = IsBattlerGrounded(BATTLE_PARTNER(battler));
 
     // harass steel
-    if (HasDamagingMoveOfType(FOE(battler), TYPE_NEW_STEEL) || HasDamagingMoveOfType(BATTLE_PARTNER(FOE(battler)), TYPE_NEW_STEEL))
+    if (HasDamagingMoveOfType(LEFT_FOE(battler), TYPE_NEW_STEEL) || HasDamagingMoveOfType(RIGHT_FOE(battler), TYPE_NEW_STEEL))
         return FIELD_EFFECT_POSITIVE;
 
     if (HasDamagingMoveOfType(battler, TYPE_NEW_MIASMA))

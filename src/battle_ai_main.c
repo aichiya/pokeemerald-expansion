@@ -1897,7 +1897,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             if (!isBattle1v1)
             {
                 if (CountUsablePartyMons(battlerAtk) == 0
-                  && aiData->abilities[battlerAtk] != ABILITY_SOUNDPROOF || aiData->abilities[battlerAtk] != ABILITY_FANTASY_BREAKER
+                  && !(aiData->abilities[battlerAtk] == ABILITY_SOUNDPROOF || aiData->abilities[battlerAtk] == ABILITY_FANTASY_BREAKER)
                   && CountUsablePartyMons(battlerDef) >= 1
                   && (aiData->abilities[BATTLE_PARTNER(battlerAtk)] != ABILITY_SOUNDPROOF || !IsBattlerAlive(BATTLE_PARTNER(battlerAtk))))
                 {

@@ -2798,7 +2798,7 @@ static enum MoveCanceller CancellerPriorityBlock(struct BattleContext *ctx)
     if (priority <= 0 || IsBattlerAlly(ctx->battlerAtk, ctx->battlerDef))
         return MOVE_STEP_SUCCESS;
 
-    if (IsDazzlingAbility(ctx->ability[ctx->battlerDef]))
+    if (IsDazzlingAbility(ctx->ability[ctx->battlerDef]) && !IsAbilityOnField(ABILITY_TIME_JACKER))
     {
         blockAbility = ctx->ability[ctx->battlerDef];
         effect = TRUE;
@@ -2806,7 +2806,7 @@ static enum MoveCanceller CancellerPriorityBlock(struct BattleContext *ctx)
     else if (IsDoubleBattle() && IsBattlerAlive(BATTLE_PARTNER(ctx->battlerDef)))
     {
         blockAbility = GetBattlerAbility(BATTLE_PARTNER(ctx->battlerDef));
-        if (IsDazzlingAbility(blockAbility))
+        if (IsDazzlingAbility(blockAbility) && !IsAbilityOnField(ABILITY_TIME_JACKER))
         {
             blockedByBattler = BATTLE_PARTNER(ctx->battlerDef);
             effect = TRUE;

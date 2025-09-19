@@ -557,10 +557,10 @@ bool32 Ai_IsPriorityBlocked(u32 battlerAtk, u32 battlerDef, u32 move, struct AiL
     if (IsMoldBreakerTypeAbility(battlerAtk, aiData->abilities[battlerAtk]) || MoveIgnoresTargetAbility(move))
         return FALSE;
 
-    if (IsDazzlingAbility(aiData->abilities[battlerDef]))
+    if (IsDazzlingAbility(aiData->abilities[battlerDef]) && !IsAbilityOnField(ABILITY_TIME_JACKER))
         return TRUE;
 
-    if (IsDoubleBattle() && IsDazzlingAbility(aiData->abilities[BATTLE_PARTNER(battlerDef)]))
+    if (IsDoubleBattle() && IsDazzlingAbility(aiData->abilities[BATTLE_PARTNER(battlerDef)]) && !IsAbilityOnField(ABILITY_TIME_JACKER))
         return TRUE;
 
     return FALSE;

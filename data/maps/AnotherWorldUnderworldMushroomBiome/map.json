@@ -21,8 +21,39 @@
       "elevation": 0,
       "dest_map": "MAP_ANOTHER_WORLD_UNDERWORLD_MUSHROOM_BIOME",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 67,
+      "elevation": 0,
+      "dest_map": "MAP_ANOTHER_WORLD_UNDERWORLD_MUSHROOM_BIOME",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 5,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_ANOTHER_WORLD_UNDERWORLD_MUSHROOM_BIOME",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 26,
+      "y": 36,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 52,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
+  ]
 }

@@ -367,13 +367,29 @@ static void BuildDebugStartMenu(void)
 
 static void BuildSafariZoneStartMenu(void)
 {
-    AddStartMenuAction(MENU_ACTION_RETIRE_SAFARI);
-    AddStartMenuAction(MENU_ACTION_POKEDEX);
-    AddStartMenuAction(MENU_ACTION_POKEMON);
-    AddStartMenuAction(MENU_ACTION_BAG);
-    AddStartMenuAction(MENU_ACTION_PLAYER);
-    AddStartMenuAction(MENU_ACTION_OPTION);
-    AddStartMenuAction(MENU_ACTION_EXIT);
+    if (VarGet(VAR_STORY_MAIN) <= 4)
+    {
+        if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
+            AddStartMenuAction(MENU_ACTION_POKEDEX);
+        if (FlagGet(FLAG_SYS_POKEMON_GET) == TRUE)
+            AddStartMenuAction(MENU_ACTION_POKEMON);
+        AddStartMenuAction(MENU_ACTION_BAG);
+        AddStartMenuAction(MENU_ACTION_PLAYER);
+        AddStartMenuAction(MENU_ACTION_OPTION);
+        AddStartMenuAction(MENU_ACTION_EXIT);
+    }
+    else
+    {
+        AddStartMenuAction(MENU_ACTION_RETIRE_SAFARI);
+        if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
+            AddStartMenuAction(MENU_ACTION_POKEDEX);
+        if (FlagGet(FLAG_SYS_POKEMON_GET) == TRUE)
+            AddStartMenuAction(MENU_ACTION_POKEMON);
+        AddStartMenuAction(MENU_ACTION_BAG);
+        AddStartMenuAction(MENU_ACTION_PLAYER);
+        AddStartMenuAction(MENU_ACTION_OPTION);
+        AddStartMenuAction(MENU_ACTION_EXIT);
+    }
 }
 
 static void BuildLinkModeStartMenu(void)

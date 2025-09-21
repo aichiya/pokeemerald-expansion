@@ -6510,6 +6510,26 @@
       "secondary_tileset": "gTileset_SilkRoad",
       "border_filepath": "data/layouts/SilkRoad2/border.bin",
       "blockdata_filepath": "data/layouts/SilkRoad2/map.bin"
+    },
+    {
+      "id": "LAYOUT_STREAM_DIMENSIONAL_RIFT_FIRST_EVENT",
+      "name": "Stream_DimensionalRift_FirstEvent_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_TrimmedGensokyo",
+      "border_filepath": "data/layouts/Stream_DimensionalRift_FirstEvent/border.bin",
+      "blockdata_filepath": "data/layouts/Stream_DimensionalRift_FirstEvent/map.bin"
+    },
+    {
+      "id": "LAYOUT_STREAM_HALL_OF_FAME_FIRST_EVENT",
+      "name": "Stream_HallOfFame_FirstEvent_Layout",
+      "width": 15,
+      "height": 17,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_CableClub",
+      "border_filepath": "data/layouts/Stream_HallOfFame_FirstEvent/border.bin",
+      "blockdata_filepath": "data/layouts/Stream_HallOfFame_FirstEvent/map.bin"
     }
   ]
 }

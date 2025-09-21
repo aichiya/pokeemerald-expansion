@@ -15135,7 +15135,8 @@ static void Cmd_handleballthrow(void)
                 maxShakes = BALL_3_SHAKES_SUCCESS;
             }
 
-            if (ballId == BALL_MASTER)
+            if (ballId == BALL_MASTER || 
+                (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_SAFARI_ZONE_SOUTH_FIRST_CONSTRUCTION) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_SAFARI_ZONE_SOUTH_FIRST_CONSTRUCTION)))
             {
                 shakes = maxShakes;
             }

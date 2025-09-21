@@ -1635,3 +1635,7 @@ Script_RemoveTint::
 	.include "data/maps/SilkRoad2/scripts.inc"
 
 	.include "data/maps/SilkRoad3/scripts.inc"
+
+	.include "data/maps/Stream_DimensionalRift_FirstEvent/scripts.inc"
+
+	.include "data/maps/Stream_HallOfFame_FirstEvent/scripts.inc"

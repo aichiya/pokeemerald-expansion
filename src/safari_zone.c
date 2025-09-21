@@ -57,8 +57,16 @@ void EnterSafariMode(void)
     IncrementGameStat(GAME_STAT_ENTERED_SAFARI_ZONE);
     SetSafariZoneFlag();
     ClearAllPokeblockFeeders();
-    gNumSafariBalls = 30;
-    sSafariZoneStepCounter = 500;
+    if (FlagGet(FLAG_FIRST_SAFARI_ZONE_EVENT_DONE))
+    {
+        gNumSafariBalls = 30;
+        sSafariZoneStepCounter = 500;
+    }
+    else
+    {
+        gNumSafariBalls = 1;
+        sSafariZoneStepCounter = 2000;
+    }
     sSafariZoneCaughtMons = 0;
     sSafariZonePkblkUses = 0;
 }
@@ -83,8 +91,17 @@ bool8 SafariZoneTakeStep(void)
     sSafariZoneStepCounter--;
     if (sSafariZoneStepCounter == 0)
     {
-        ScriptContext_SetupScript(SafariZone_EventScript_TimesUp);
-        return TRUE;
+        if (FlagGet(FLAG_FIRST_SAFARI_ZONE_EVENT_DONE))
+        {
+            ScriptContext_SetupScript(SafariZone_EventScript_TimesUp);
+            return TRUE;
+        }
+        else
+        {
+            ScriptContext_SetupScript(SafariZone_EventScript_TimesUp);
+            VarSet(VAR_VARIOUS_TEMP, 0);
+            return TRUE;
+        }
     }
     return FALSE;
 }
@@ -105,6 +122,7 @@ void CB2_EndSafariBattle(void)
     }
     else if (gBattleOutcome == B_OUTCOME_NO_SAFARI_BALLS)
     {
+        VarSet(VAR_VARIOUS_TEMP, sSafariZoneStepCounter);
         RunScriptImmediately(SafariZone_EventScript_OutOfBallsMidBattle);
         WarpIntoMap();
         gFieldCallback = FieldCB_ReturnToFieldNoScriptCheckMusic;

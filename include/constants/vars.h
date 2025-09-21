@@ -178,7 +178,7 @@
 #define VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE      0x409E
 #define VAR_MOSSDEEP_SPACE_CENTER_STATE                  0x409F
 #define VAR_SLATEPORT_HARBOR_STATE                       0x40A0
-#define VAR_UNUSED_0x40A1                                0x40A1 // Unused var
+#define VAR_STORY_MAIN                                   0x40A1
 #define VAR_SEAFLOOR_CAVERN_STATE                        0x40A2
 #define VAR_CABLE_CAR_STATION_STATE                      0x40A3
 #define VAR_SAFARI_ZONE_STATE                            0x40A4  // 0: In or out of SZ, 1: Player exiting SZ, 2: Player entering SZ
@@ -265,7 +265,7 @@
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
 #define VAR_SETTING_MUSIC                                0x40F7
-#define VAR_UNUSED_0x40F8                                0x40F8 // A-Trance
+#define VAR_VARIOUS_TEMP                                 0x40F8
 #define VAR_GACHA_PITY_COUNT                             0x40F9
 #define VAR_GIFTMON_METLOC_SETTING                       0x40FA
 #define VAR_GIFTMON_VERSION_SETTING                      0x40FB

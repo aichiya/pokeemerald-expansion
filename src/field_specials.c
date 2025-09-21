@@ -167,6 +167,16 @@ void Special_ShowDiploma(void)
     LockPlayerFieldControls();
 }
 
+void DeletePlayerParty(void)
+{
+    ZeroMonData(&gPlayerParty[0]);
+    ZeroMonData(&gPlayerParty[1]);
+    ZeroMonData(&gPlayerParty[2]);
+    ZeroMonData(&gPlayerParty[3]);
+    ZeroMonData(&gPlayerParty[4]);
+    ZeroMonData(&gPlayerParty[5]);
+}
+
 void Special_ViewVoltorbFlip(void)
 {
     gMain.savedCallback = CB2_ReturnToField;

@@ -841,6 +841,8 @@
     "ClassicKantoPalletTown"
   ],
   "gMapGroup_EventStream": [
-    "SafariZone_SouthFirstConstruction"
+    "SafariZone_SouthFirstConstruction",
+    "Stream_DimensionalRift_FirstEvent",
+    "Stream_HallOfFame_FirstEvent"
   ]
 }

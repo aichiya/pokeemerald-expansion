@@ -87,16 +87,16 @@
     {
       "id": "HEAL_LOCATION_JOHTO_SPACE_HYPER_VESSEL_FRONT",
       "map": "MAP_EVER_GRANDE_CITY",
-      "x": 41,
-      "y": 43,
+      "x": 14,
+      "y": 48,
       "respawn_map": "MAP_EVER_GRANDE_CITY_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_EVER_GRANDE_NURSE"
     },
     {
       "id": "HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_MALE",
       "map": "MAP_LITTLEROOT_TOWN",
-      "x": 20,
-      "y": 13,
+      "x": 13,
+      "y": 9,
       "respawn_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
       "respawn_npc": "LOCALID_PLAYERS_HOUSE_1F_MOM",
       "respawn_x": 2,
@@ -190,8 +190,8 @@
     {
       "id": "HEAL_LOCATION_GENSOKYO_HAKUREI_SHRINE",
       "map": "MAP_ROUTE101",
-      "x": 1,
-      "y": 1
+      "x": 15,
+      "y": 19
     },
     {
       "id": "HEAL_LOCATION_GENSOKYO_HUMAN_VILLAGE",
@@ -385,8 +385,8 @@
     {
       "id": "HEAL_LOCATION_KEY_ILLUSIONARY_WORLD1",
       "map": "MAP_ROUTE123",
-      "x": 1,
-      "y": 1,
+      "x": 29,
+      "y": 75,
       "respawn_map": "MAP_ROUTE123",
       "respawn_x": 1,
       "respawn_y": 1

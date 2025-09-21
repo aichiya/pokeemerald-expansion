@@ -1150,14 +1150,20 @@ TwinriverCity_Text_DummyText1:
 	.string "light are taken as symbols of happiness.$"
 
 TwinriverCity_EventScript_SafariZoneSign::
+	goto_if_ge VAR_MAIN_STORY, 4, TwinriverCity_EventScript_SafariZoneSign_IfConstructionEnded
 	msgbox TwinriverCity_Text_SafariZoneSign, MSGBOX_SIGN
-	goto_if_le VAR_MAIN_STORY, 2, TwinriverCity_EventScript_SafariZoneSign_IfConstructionEnded
+	setvar VAR_MAIN_STORY, 3
+	special DeletePlayerParty
 	end
 
 TwinriverCity_EventScript_SafariZoneSign_IfConstructionEnded::
-    setvar VAR_MAIN_STORY, 2
+	msgbox TwinriverCity_Text_SafariZoneSign_ConstructionEnded, MSGBOX_SIGN
 	end
 
 TwinriverCity_Text_SafariZoneSign:
+	.string "Will be opening SAFARI ZONE!\n"
+	.string "Catch rare Fragmon!$"
+
+TwinriverCity_Text_SafariZoneSign_ConstructionEnded:
 	.string "Newly open SAFARI ZONE!\n"
 	.string "Catch rare Fragmon!$"

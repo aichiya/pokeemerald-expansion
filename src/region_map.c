@@ -396,7 +396,7 @@ static const u8 sMapHealLocations[][3] =
 static const u8 *const sEverGrandeCityNames[] =
 {
     gText_PokemonLeague,
-    gText_PokemonCenter
+    gText_ForestFront
 };
 
 static const struct MultiNameFlyDest sMultiNameFlyDestinations[] =

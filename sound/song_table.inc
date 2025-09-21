@@ -1380,7 +1380,7 @@ gSongTable::
 	song mus_etc_climax_jump, 0, 0
 	song mus_pc_star_color_pendant, 0, 0
 	song mus_pc_star_color_pendant_no_intro, 0, 0
-	song dummy_song_header, 0, 0
+	song mus_etc_kawaranaimono, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0
 	song dummy_song_header, 0, 0

@@ -4506,7 +4506,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_ETC_CLIMAX_JUMP) \
     X(MUS_PC_STAR_COLOR_PENDANT) \
     X(MUS_PC_STAR_COLOR_PENDANT_NO_INTRO) \
-    X(MUS_DUMMY_1379) \
+    X(MUS_ETC_KAWARANAIMONO) \
     X(MUS_DUMMY_1380) \
     X(MUS_DUMMY_1381) \
     X(MUS_DUMMY_1382) \

@@ -450,10 +450,10 @@ static enum FieldEffectOutcome BenefitsFromUBW(u32 battler)
     if (DoesAbilityBenefitFromFieldStatus(gAiLogicData->abilities[battler], STATUS_FIELD_UBW))
         return FIELD_EFFECT_POSITIVE;
 
-    bool32 grounded = IsBattlerGrounded(battler);
+    bool32 grounded = AI_IsBattlerGrounded(battler);
     bool32 allyGrounded = FALSE;
-    if (IsDoubleBattle() && IsBattlerAlive(BATTLE_PARTNER(battler)))
-        allyGrounded = IsBattlerGrounded(BATTLE_PARTNER(battler));
+    if (HasPartner(battler))
+        allyGrounded = AI_IsBattlerGrounded(BATTLE_PARTNER(battler));
 
     // harass miasma
     if ((grounded || allyGrounded) 
@@ -472,10 +472,10 @@ static enum FieldEffectOutcome BenefitsFromDarknessTerrain(u32 battler)
     if (DoesAbilityBenefitFromFieldStatus(gAiLogicData->abilities[battler], STATUS_FIELD_DARKNESS_TERRAIN))
         return FIELD_EFFECT_POSITIVE;
 
-    bool32 grounded = IsBattlerGrounded(battler);
+    bool32 grounded = AI_IsBattlerGrounded(battler);
     bool32 allyGrounded = FALSE;
-    if (IsDoubleBattle() && IsBattlerAlive(BATTLE_PARTNER(battler)))
-        allyGrounded = IsBattlerGrounded(BATTLE_PARTNER(battler));
+    if (HasPartner(battler))
+        allyGrounded = AI_IsBattlerGrounded(BATTLE_PARTNER(battler));
 
     // harass divine
     if ((grounded || allyGrounded) 
@@ -493,10 +493,10 @@ static enum FieldEffectOutcome BenefitsFromMiasmaTerrain(u32 battler)
     if (DoesAbilityBenefitFromFieldStatus(gAiLogicData->abilities[battler], STATUS_FIELD_MIASMA_TERRAIN))
         return FIELD_EFFECT_POSITIVE;
 
-    bool32 grounded = IsBattlerGrounded(battler);
+    bool32 grounded = AI_IsBattlerGrounded(battler);
     bool32 allyGrounded = FALSE;
-    if (IsDoubleBattle() && IsBattlerAlive(BATTLE_PARTNER(battler)))
-        allyGrounded = IsBattlerGrounded(BATTLE_PARTNER(battler));
+    if (HasPartner(battler))
+        allyGrounded = AI_IsBattlerGrounded(BATTLE_PARTNER(battler));
 
     // harass steel
     if (HasDamagingMoveOfType(LEFT_FOE(battler), TYPE_NEW_STEEL) || HasDamagingMoveOfType(RIGHT_FOE(battler), TYPE_NEW_STEEL))

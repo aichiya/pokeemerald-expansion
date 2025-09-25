@@ -1092,7 +1092,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_HEART;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_HEART;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1105,7 +1105,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_HEART;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1131,7 +1131,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_HEART;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_STEEL;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1150,7 +1150,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_HEART;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DARK && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_HEART;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1177,7 +1177,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_BEAST;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_BEAST;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1186,7 +1186,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DIVINE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_BEAST;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1234,7 +1234,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_FLYING;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_REASON;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1268,7 +1268,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_DREAM && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_REASON;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1308,7 +1308,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_ICE;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1319,7 +1319,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         {
             if (!(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
                 legendMoveType = TYPE_NEW_WATER;
-            else if (!IsBattlerGrounded(gBattlerTarget))
+            else if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_WIND;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1337,7 +1337,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_DREAM;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_EARTH && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_ICE;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1384,7 +1384,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DARK)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_HEART;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1393,7 +1393,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DIVINE)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_BEAST;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1402,7 +1402,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_DREAM)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_REASON;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1411,7 +1411,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_EARTH)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_ICE;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1420,7 +1420,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_ICE;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1429,7 +1429,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
         {
-            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)) && targetAbility != ABILITY_WIND_RIDER)
                 legendMoveType = TYPE_NEW_WIND;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1453,7 +1453,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_DREAM;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_REASON;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1462,7 +1462,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_MYSTERY;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1473,7 +1473,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_MIASMA;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_NETHER)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_NETHER;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1482,7 +1482,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_REASON)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_DREAM;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1491,7 +1491,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_DREAM;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1502,7 +1502,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_MIASMA;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_ELECTRIC && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_ICE;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1531,7 +1531,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
         {
-            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)) && targetAbility != ABILITY_WIND_RIDER)
                 legendMoveType = TYPE_NEW_WIND;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1542,7 +1542,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
         {
-            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)) && targetAbility != ABILITY_WIND_RIDER)
                 legendMoveType = TYPE_NEW_WIND;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1570,7 +1570,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_DREAM;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
         {
-            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)) && targetAbility != ABILITY_WIND_RIDER)
                 legendMoveType = TYPE_NEW_WIND;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1581,7 +1581,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MYSTERY)
         {
-            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)) && targetAbility != ABILITY_WIND_RIDER)
                 legendMoveType = TYPE_NEW_WIND;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1598,7 +1598,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_NETHER; // TYPE_NEW_EARTH;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_STEEL)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_DREAM;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1609,7 +1609,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_MIASMA;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_FIRE && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_WIND)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_WATER;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1821,7 +1821,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_REASON; // TYPE_NEW_EARTH;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_REASON;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1830,7 +1830,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MIASMA && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
         {
-            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)) && targetAbility != ABILITY_WIND_RIDER)
                 legendMoveType = TYPE_NEW_WIND;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1878,7 +1878,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_ICE; // TYPE_NEW_WATER;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_MYSTERY;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -1887,7 +1887,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_MYSTERY && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
         {
-            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_WIND_RIDER)
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)) && targetAbility != ABILITY_WIND_RIDER)
                 legendMoveType = TYPE_NEW_WIND;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -2066,7 +2066,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_DREAM;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_DREAM;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -2075,7 +2075,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_DREAM;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -2099,7 +2099,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
                 legendMoveType = TYPE_NEW_DREAM;
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_STEEL && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_MIASMA)
         {
-            if (!IsBattlerGrounded(gBattlerTarget))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)))
                 legendMoveType = TYPE_NEW_DREAM;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -2205,7 +2205,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_ELECTRIC)
         {
-            if (!IsBattlerGrounded(gBattlerTarget) && targetAbility != ABILITY_SAP_SIPPER)
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)) && targetAbility != ABILITY_SAP_SIPPER)
                 legendMoveType = TYPE_NEW_NATURE;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;
@@ -2214,7 +2214,7 @@ bool32 ProteanTryChangeType(u32 battler, u32 ability, u32 move, u32 moveType)
         }
         else if (gBattleMons[gBattlerTarget].types[0] == TYPE_NEW_WIND && gBattleMons[gBattlerTarget].types[1] == TYPE_NEW_FIRE)
         {
-            if (!IsBattlerGrounded(gBattlerTarget) && !(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
+            if (!IsBattlerGrounded(gBattlerTarget, GetBattlerAbility(gBattlerTarget), GetBattlerHoldEffect(gBattlerTarget, TRUE)) && !(targetAbility == ABILITY_WATER_ABSORB || targetAbility == ABILITY_DRY_SKIN || targetAbility == ABILITY_STORM_DRAIN))
                 legendMoveType = TYPE_NEW_WATER;
             else if (!(targetAbility == ABILITY_EARTH_EATER || targetAbility == ABILITY_SCULPTOR_GOD || targetAbility == ABILITY_LEVITATE))
                 legendMoveType = TYPE_NEW_EARTH;

@@ -40,12 +40,14 @@ static void Task_DrawFieldMessage(u8 taskId)
             task->tState++;
             break;
         case 1:
+        {
             u32 nameboxWinId = GetNameboxWindowId();
             DrawDialogueFrame(0, TRUE);
             if (nameboxWinId != WINDOW_NONE)
-                DrawNamebox(nameboxWinId, TRUE);
+                DrawNamebox(nameboxWinId, NAME_BOX_BASE_TILE_NUM - NAME_BOX_BASE_TILES_TOTAL, TRUE);
             task->tState++;
             break;
+        }
         case 2:
             if (RunTextPrintersAndIsPrinter0Active() != TRUE)
             {
@@ -127,7 +129,7 @@ bool8 ShowFieldMessageFromBuffer(void)
 
 static void ExpandStringAndStartDrawFieldMessage(const u8 *str, bool32 allowSkippingDelayWithButtonPress)
 {
-    TrySpawnNamebox();
+    TrySpawnNamebox(NAME_BOX_BASE_TILE_NUM);
     StringExpandPlaceholders(gStringVar4, str);
     AddTextPrinterForMessage(allowSkippingDelayWithButtonPress);
     CreateTask_DrawFieldMessage();

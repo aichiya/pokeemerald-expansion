@@ -79,6 +79,7 @@ bool32 AI_IsSlower(u32 battlerAi, u32 battlerDef, u32 aiMove, u32 playerMove, en
 bool32 AI_IsPartyMonFaster(u32 battlerAi, u32 battlerDef, struct BattlePokemon switchinCandidate, u32 aiMove, u32 playerMove, enum ConsiderPriority considerPriority);
 bool32 AI_IsPartyMonSlower(u32 battlerAi, u32 battlerDef, struct BattlePokemon switchinCandidate, u32 aiMove, u32 playerMove, enum ConsiderPriority considerPriority);
 bool32 AI_RandLessThan(u32 val);
+bool32 AI_IsBattlerGrounded(u32 battler);
 u32 AI_GetDamage(u32 battlerAtk, u32 battlerDef, u32 moveIndex, enum DamageCalcContext calcContext, struct AiLogicData *aiData);
 bool32 IsAiVsAiBattle(void);
 bool32 BattlerHasAi(u32 battlerId);
@@ -121,8 +122,8 @@ u32 AI_GetSwitchinWeather(struct BattlePokemon battleMon);
 enum WeatherState IsWeatherActive(u32 flags);
 bool32 CanAIFaintTarget(u32 battlerAtk, u32 battlerDef, u32 numHits);
 bool32 CanIndexMoveFaintTarget(u32 battlerAtk, u32 battlerDef, u32 index, enum DamageCalcContext calcContext);
-bool32 HasDamagingMove(u32 battlerId);
-bool32 HasDamagingMoveOfType(u32 battlerId, u32 type);
+bool32 HasDamagingMove(u32 battler);
+bool32 HasDamagingMoveOfType(u32 battler, u32 type);
 u32 GetBattlerSecondaryDamage(u32 battlerId);
 bool32 BattlerWillFaintFromWeather(u32 battler, u32 ability);
 bool32 BattlerWillFaintFromSecondaryDamage(u32 battler, u32 ability);

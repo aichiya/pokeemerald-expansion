@@ -5137,7 +5137,7 @@ BattleScript_IceBodyHeal::
 	datahpupdate BS_ATTACKER
 	printstring STRINGID_ICEBODYHPGAIN
 	waitmessage B_WAIT_TIME_LONG
-	end3
+	end2
 
 BattleScript_OverworldStatusStarts::
 	printfromtable gStartingStatusStringIds
@@ -6169,7 +6169,7 @@ BattleScript_PowerConstruct::
 	handleformchange BS_SCRIPTING, 2
 	printstring STRINGID_POWERCONSTRUCTTRANSFORM
 	waitmessage B_WAIT_TIME_SHORT
-	end3
+	end2
 
 BattleScript_UltraBurst::
 	flushtextbox
@@ -6207,7 +6207,11 @@ BattleScript_BattlerFormChangeEnd3::
 
 BattleScript_BattlerFormChangeEnd3NoPopup::
 	call BattleScript_BattlerFormChangeNoPopup
-	end3
+	end2
+
+BattleScript_BattlerFormChangeEnd2::
+	call BattleScript_BattlerFormChange
+	end2
 
 BattleScript_BattlerFormChangeWithStringEnd3::
 	pause 5
@@ -6238,7 +6242,7 @@ BattleScript_BallFetch::
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_FETCHEDPOKEBALL
 	waitmessage B_WAIT_TIME_LONG
-	end3
+	end2
 
 BattleScript_CudChewActivates::
 	pause B_WAIT_TIME_SHORTEST
@@ -6246,7 +6250,7 @@ BattleScript_CudChewActivates::
 	setbyte sBERRY_OVERRIDE, 1 @ override the requirements for eating berries
 	consumeberry BS_ATTACKER, FALSE
 	setbyte sBERRY_OVERRIDE, 0
-	end3
+	end2
 
 BattleScript_ApplyDisguiseFormChangeHPLoss::
 	jumpifgenconfiglowerthan GEN_CONFIG_DISGUISE_HP_LOSS, GEN_8, BattleScript_ApplyDisguiseFormChangeHPLossReturn
@@ -6847,7 +6851,7 @@ BattleScript_MoodyLower:
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_MoodyEnd:
-	end3
+	end2
 
 BattleScript_EmergencyExit::
 	pause 5
@@ -6938,7 +6942,7 @@ BattleScript_AbilityHpHeal:
 
 BattleScript_RainDishActivates::
 	call BattleScript_AbilityHpHeal
-	end3
+	end2
 
 BattleScript_CheekPouchActivates::
 	copybyte sSAVED_BATTLER, gBattlerAttacker
@@ -6955,7 +6959,7 @@ BattleScript_PickupActivates::
 	waitmessage B_WAIT_TIME_LONG
 	tryrestorehpberry
 BattleScript_PickupActivatesEnd:
-	end3
+	end2
 
 BattleScript_HarvestActivates::
 	pause 5
@@ -6965,7 +6969,7 @@ BattleScript_HarvestActivates::
 	waitmessage B_WAIT_TIME_LONG
 	tryrestorehpberry
 BattleScript_HarvestActivatesEnd:
-	end3
+	end2
 
 BattleScript_SolarPowerActivates::
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
@@ -6975,7 +6979,7 @@ BattleScript_SolarPowerActivates::
 	printstring STRINGID_SOLARPOWERHPDROP
 	waitmessage B_WAIT_TIME_LONG
 	tryfaintmon BS_ATTACKER
-	end3
+	end2
 
 BattleScript_HealerActivates::
 	call BattleScript_AbilityPopUp
@@ -6983,7 +6987,7 @@ BattleScript_HealerActivates::
 	updatestatusicon BS_SCRIPTING
 	printstring STRINGID_HEALERCURE
 	waitmessage B_WAIT_TIME_LONG
-	end3
+	end2
 
 BattleScript_SandstreamActivates::
 	pause B_WAIT_TIME_SHORT
@@ -7008,7 +7012,7 @@ BattleScript_ShedSkinActivates::
 	printstring STRINGID_PKMNSXCUREDYPROBLEM
 	waitmessage B_WAIT_TIME_LONG
 	updatestatusicon BS_ATTACKER
-	end3
+	end2
 
 BattleScript_ActivateWeatherAbilities:
 	saveattacker
@@ -7400,7 +7404,7 @@ BattleScript_BadDreamsIncrement:
 	destroyabilitypopup
 	pause 15
 BattleScript_BadDreamsEnd:
-	end3
+	end2
 BattleScript_BadDreams_ShowPopUp:
 	copybyte gBattlerAbility, gBattlerAttacker
 	call BattleScript_AbilityPopUp
@@ -7733,6 +7737,11 @@ BattleScript_AttackerAbilityStatRaiseEnd3::
 	call BattleScript_AttackerAbilityStatRaise
 	restoreattacker
 	end3
+
+BattleScript_AttackerAbilityStatRaiseEnd2::
+	call BattleScript_AttackerAbilityStatRaise
+	restoreattacker
+	end2
 
 BattleScript_SwitchInAbilityMsg::
 	call BattleScript_AbilityPopUp

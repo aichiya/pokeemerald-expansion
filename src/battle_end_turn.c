@@ -548,7 +548,7 @@ static bool32 HandleEndTurnFirstEventBlock(u32 battler)
          && !IsBattlerAtMaxHp(battler)
          && !gBattleMons[battler].volatiles.healBlock
          && !IsSemiInvulnerable(battler, CHECK_ALL)
-         && IsBattlerGrounded(battler))
+         && IsBattlerGrounded(battler, GetBattlerAbility(battler), GetBattlerHoldEffect(battler, TRUE)))
         {
             gBattlerAttacker = battler;
             gBattleStruct->moveDamage[battler] = -(GetNonDynamaxMaxHP(battler) / 16);
@@ -1122,12 +1122,13 @@ static bool32 HandleEndTurnYawn(u32 battler)
          && !IsLeafGuardProtected(battler, ability))
         {
             gEffectBattler = gBattlerTarget = battler;
-            if (IsBattlerTerrainAffected(battler, STATUS_FIELD_ELECTRIC_TERRAIN))
+            enum ItemHoldEffect holdEffect = GetBattlerHoldEffect(battler, TRUE);
+            if (IsBattlerTerrainAffected(battler, ability, holdEffect, STATUS_FIELD_ELECTRIC_TERRAIN))
             {
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAINPREVENTS_ELECTRIC;
                 BattleScriptExecute(BattleScript_TerrainPreventsEnd2);
             }
-            else if (IsBattlerTerrainAffected(battler, STATUS_FIELD_MISTY_TERRAIN))
+            else if (IsBattlerTerrainAffected(battler, ability, holdEffect, STATUS_FIELD_MISTY_TERRAIN))
             {
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAINPREVENTS_MISTY;
                 BattleScriptExecute(BattleScript_TerrainPreventsEnd2);
@@ -1551,7 +1552,7 @@ static bool32 HandleEndTurnThirdEventBlock(u32 battler)
                 effect = TRUE;
             break;
         case HOLD_EFFECT_WHITE_HERB:
-            if (ItemBattleEffects(ITEMEFFECT_NORMAL, battler))
+            if (ItemBattleEffects(ITEMEFFECT_WHITE_HERB_ENDTURN, battler))
                 effect = TRUE;
             break;
         default:
@@ -1638,6 +1639,19 @@ static bool32 HandleEndTurnDynamax(u32 battler)
     return effect;
 }
 
+/*
+ * Various end turn effects that happen after all battlers moved.
+ * Each Case will apply the effects for each battler. Moving to the next case when all battlers are done.
+ * If an effect is going to be applied on a better, the bool effect will be set to TRUE and a script set.
+ * The script is set with `BattleScriptExecute` and should have the ending `end2`
+   Example:
+        BattleScriptExecute(BattleScript_X);
+
+        (in battle_scripts_1.s)
+        BattleScript_X:
+            some commands
+            end2
+ */
 static bool32 (*const sEndTurnEffectHandlers[])(u32 battler) =
 {
     [ENDTURN_ORDER] = HandleEndTurnOrder,

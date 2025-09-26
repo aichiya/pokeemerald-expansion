@@ -490,7 +490,6 @@
 #define MUS_RG_TRAINER_TOWER        556 // MUS_RG_T_TOWER
 #define MUS_RG_SLOW_PALLET          557 // MUS_RG_SLOWMASARA
 #define MUS_RG_TEACHY_TV_MENU       558 // MUS_RG_TVNOIZE
-#define END_MUS                     MUS_RG_TEACHY_TV_MENU
 
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.
@@ -545,6 +544,34 @@
 #define PH_NURSE_BLEND              607
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
+
+#define PUYOFEVER_PUYO_POP_FEVER                           610
+#define PUYOFEVER_ITS_THE_MENU                             611
+#define PUYOFEVER_ITS_THE_TEACHERS_LESSON                  612
+#define PUYOFEVER_ONCE_UPON_A_TIME_IN_SOME_OTHER_WORLD     613
+#define PUYOFEVER_MANZAI_CALM                              614
+#define PUYOFEVER_MANZAI_NOISY                             615
+#define PUYOFEVER_I_AM_THE_DEMON_KING                      616
+#define PUYOFEVER_AMITIE_AND_THE_FLYING_CANE_1             617
+#define PUYOFEVER_RAFFINE_AND_TEACHERS_REWARD_1            618
+#define PUYOFEVER_CREDITS                                  619
+#define PUYOFEVER_PUYO_POP_MATCH_HERE_I_GO                 620
+#define PUYOFEVER_FUN_PUYO_HELL                            621
+#define PUYOFEVER_EVERYONE_FIGHT_PUYO_POP_UNTIL_MORNING    622
+#define PUYOFEVER_THE_UNTRAINED_DEMON_KING_ULTIMATE_LEGEND 623
+#define PUYOFEVER_RISKY                                    624
+#define PUYOFEVER_RUSHING_INTO_FEVER_MODE                  625
+#define PUYOFEVER_ENDLESS_FEVER                            626
+#define PUYOFEVER_CAREFREE_PUYO                            627
+#define PUYOFEVER_JINGLE_1                                 628
+#define PUYOFEVER_JINGLE_2                                 629
+#define PUYOFEVER_YOU_DID_VERY_WELL                        630
+#define PUYOFEVER_CONTINUE                                 631
+#define PUYOFEVER_JINGLE_3                                 632
+#define PUYOFEVER_AMITIE_AND_THE_FLYING_CANE_2             633
+#define PUYOFEVER_RAFFINE_AND_TEACHERS_REWARD_2            634
+
+#define END_MUS                     PUYOFEVER_RAFFINE_AND_TEACHERS_REWARD_2
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

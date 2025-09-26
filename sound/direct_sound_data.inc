@@ -6451,3 +6451,489 @@ DirectSoundWaveData_sd90_classical_whistle::
 	.align 2
 DirectSoundWaveData_sd90_enhanced_delay_shaku::
 	.incbin "sound/direct_sound_samples/sd90_enhanced_delay_shaku.bin"
+
+@ Start Puyo Pop Fever
+
+	.align 2
+DirectSoundWaveData_PuyoFever_A3678::
+	.incbin "sound/direct_sound_samples/puyofever_A3678.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_A58D4::
+	.incbin "sound/direct_sound_samples/puyofever_A58D4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_A7250::
+	.incbin "sound/direct_sound_samples/puyofever_A7250.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_A9DE8::
+	.incbin "sound/direct_sound_samples/puyofever_A9DE8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_AA5E4::
+	.incbin "sound/direct_sound_samples/puyofever_AA5E4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_AF8B8::
+	.incbin "sound/direct_sound_samples/puyofever_AF8B8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B1640::
+	.incbin "sound/direct_sound_samples/puyofever_B1640.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B3E4C::
+	.incbin "sound/direct_sound_samples/puyofever_B3E4C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B478C::
+	.incbin "sound/direct_sound_samples/puyofever_B478C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B6490::
+	.incbin "sound/direct_sound_samples/puyofever_B6490.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B67BC::
+	.incbin "sound/direct_sound_samples/puyofever_B67BC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B67E4::
+	.incbin "sound/direct_sound_samples/puyofever_B67E4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B680C::
+	.incbin "sound/direct_sound_samples/puyofever_B680C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B6834::
+	.incbin "sound/direct_sound_samples/puyofever_B6834.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B68BC::
+	.incbin "sound/direct_sound_samples/puyofever_B68BC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B68F8::
+	.incbin "sound/direct_sound_samples/puyofever_B68F8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B6938::
+	.incbin "sound/direct_sound_samples/puyofever_B6938.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B6974::
+	.incbin "sound/direct_sound_samples/puyofever_B6974.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B69B0::
+	.incbin "sound/direct_sound_samples/puyofever_B69B0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B69EC::
+	.incbin "sound/direct_sound_samples/puyofever_B69EC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B6B04::
+	.incbin "sound/direct_sound_samples/puyofever_B6B04.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B6B54::
+	.incbin "sound/direct_sound_samples/puyofever_B6B54.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B6BB8::
+	.incbin "sound/direct_sound_samples/puyofever_B6BB8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B8420::
+	.incbin "sound/direct_sound_samples/puyofever_B8420.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_B9774::
+	.incbin "sound/direct_sound_samples/puyofever_B9774.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_BBE38::
+	.incbin "sound/direct_sound_samples/puyofever_BBE38.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_BE330::
+	.incbin "sound/direct_sound_samples/puyofever_BE330.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_C0CDC::
+	.incbin "sound/direct_sound_samples/puyofever_C0CDC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_C3018::
+	.incbin "sound/direct_sound_samples/puyofever_C3018.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_C6680::
+	.incbin "sound/direct_sound_samples/puyofever_C6680.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_C87FC::
+	.incbin "sound/direct_sound_samples/puyofever_C87FC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_CABA0::
+	.incbin "sound/direct_sound_samples/puyofever_CABA0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_CC000::
+	.incbin "sound/direct_sound_samples/puyofever_CC000.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_D0498::
+	.incbin "sound/direct_sound_samples/puyofever_D0498.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_D25B4::
+	.incbin "sound/direct_sound_samples/puyofever_D25B4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_D3BA8::
+	.incbin "sound/direct_sound_samples/puyofever_D3BA8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_D81F0::
+	.incbin "sound/direct_sound_samples/puyofever_D81F0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_DA7B4::
+	.incbin "sound/direct_sound_samples/puyofever_DA7B4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_DD10C::
+	.incbin "sound/direct_sound_samples/puyofever_DD10C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_DEB64::
+	.incbin "sound/direct_sound_samples/puyofever_DEB64.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_E0DCC::
+	.incbin "sound/direct_sound_samples/puyofever_E0DCC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_E32C0::
+	.incbin "sound/direct_sound_samples/puyofever_E32C0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_E5794::
+	.incbin "sound/direct_sound_samples/puyofever_E5794.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_E8B74::
+	.incbin "sound/direct_sound_samples/puyofever_E8B74.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_E9D88::
+	.incbin "sound/direct_sound_samples/puyofever_E9D88.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_EC91C::
+	.incbin "sound/direct_sound_samples/puyofever_EC91C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_EEA50::
+	.incbin "sound/direct_sound_samples/puyofever_EEA50.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_F17A4::
+	.incbin "sound/direct_sound_samples/puyofever_F17A4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_F20E8::
+	.incbin "sound/direct_sound_samples/puyofever_F20E8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_F3A2C::
+	.incbin "sound/direct_sound_samples/puyofever_F3A2C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_F4ACC::
+	.incbin "sound/direct_sound_samples/puyofever_F4ACC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_F6D8C::
+	.incbin "sound/direct_sound_samples/puyofever_F6D8C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_F90A8::
+	.incbin "sound/direct_sound_samples/puyofever_F90A8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_FB2F0::
+	.incbin "sound/direct_sound_samples/puyofever_FB2F0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_FD554::
+	.incbin "sound/direct_sound_samples/puyofever_FD554.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_FF870::
+	.incbin "sound/direct_sound_samples/puyofever_FF870.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_101AF4::
+	.incbin "sound/direct_sound_samples/puyofever_101AF4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_103CE0::
+	.incbin "sound/direct_sound_samples/puyofever_103CE0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_103E1C::
+	.incbin "sound/direct_sound_samples/puyofever_103E1C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_104154::
+	.incbin "sound/direct_sound_samples/puyofever_104154.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_104804::
+	.incbin "sound/direct_sound_samples/puyofever_104804.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_107154::
+	.incbin "sound/direct_sound_samples/puyofever_107154.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_108CC8::
+	.incbin "sound/direct_sound_samples/puyofever_108CC8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_109734::
+	.incbin "sound/direct_sound_samples/puyofever_109734.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_10B8F8::
+	.incbin "sound/direct_sound_samples/puyofever_10B8F8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_10D0EC::
+	.incbin "sound/direct_sound_samples/puyofever_10D0EC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_10ECF4::
+	.incbin "sound/direct_sound_samples/puyofever_10ECF4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_110E60::
+	.incbin "sound/direct_sound_samples/puyofever_110E60.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_1126E0::
+	.incbin "sound/direct_sound_samples/puyofever_1126E0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_1155AC::
+	.incbin "sound/direct_sound_samples/puyofever_1155AC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_1192A4::
+	.incbin "sound/direct_sound_samples/puyofever_1192A4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_11DA54::
+	.incbin "sound/direct_sound_samples/puyofever_11DA54.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_11FF58::
+	.incbin "sound/direct_sound_samples/puyofever_11FF58.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_122E9C::
+	.incbin "sound/direct_sound_samples/puyofever_122E9C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_123378::
+	.incbin "sound/direct_sound_samples/puyofever_123378.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_12387C::
+	.incbin "sound/direct_sound_samples/puyofever_12387C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_123DA4::
+	.incbin "sound/direct_sound_samples/puyofever_123DA4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_1242E8::
+	.incbin "sound/direct_sound_samples/puyofever_1242E8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_124810::
+	.incbin "sound/direct_sound_samples/puyofever_124810.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_124D48::
+	.incbin "sound/direct_sound_samples/puyofever_124D48.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_12528C::
+	.incbin "sound/direct_sound_samples/puyofever_12528C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_12579C::
+	.incbin "sound/direct_sound_samples/puyofever_12579C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_125CD4::
+	.incbin "sound/direct_sound_samples/puyofever_125CD4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_1261F4::
+	.incbin "sound/direct_sound_samples/puyofever_1261F4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_1270D4::
+	.incbin "sound/direct_sound_samples/puyofever_1270D4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_1277E8::
+	.incbin "sound/direct_sound_samples/puyofever_1277E8.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_1282CC::
+	.incbin "sound/direct_sound_samples/puyofever_1282CC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_128464::
+	.incbin "sound/direct_sound_samples/puyofever_128464.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_131E80::
+	.incbin "sound/direct_sound_samples/puyofever_131E80.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_139968::
+	.incbin "sound/direct_sound_samples/puyofever_139968.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_13D41C::
+	.incbin "sound/direct_sound_samples/puyofever_13D41C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_13FA30::
+	.incbin "sound/direct_sound_samples/puyofever_13FA30.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_143718::
+	.incbin "sound/direct_sound_samples/puyofever_143718.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_146BF0::
+	.incbin "sound/direct_sound_samples/puyofever_146BF0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_14833C::
+	.incbin "sound/direct_sound_samples/puyofever_14833C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_149CD0::
+	.incbin "sound/direct_sound_samples/puyofever_149CD0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_14C0A4::
+	.incbin "sound/direct_sound_samples/puyofever_14C0A4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_14EDA0::
+	.incbin "sound/direct_sound_samples/puyofever_14EDA0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_14F0C4::
+	.incbin "sound/direct_sound_samples/puyofever_14F0C4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_152C64::
+	.incbin "sound/direct_sound_samples/puyofever_152C64.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_155934::
+	.incbin "sound/direct_sound_samples/puyofever_155934.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_158F5C::
+	.incbin "sound/direct_sound_samples/puyofever_158F5C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_15C898::
+	.incbin "sound/direct_sound_samples/puyofever_15C898.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_160CA4::
+	.incbin "sound/direct_sound_samples/puyofever_160CA4.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_165818::
+	.incbin "sound/direct_sound_samples/puyofever_165818.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_165B3C::
+	.incbin "sound/direct_sound_samples/puyofever_165B3C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_168890::
+	.incbin "sound/direct_sound_samples/puyofever_168890.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_16BE60::
+	.incbin "sound/direct_sound_samples/puyofever_16BE60.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_16E73C::
+	.incbin "sound/direct_sound_samples/puyofever_16E73C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_171B3C::
+	.incbin "sound/direct_sound_samples/puyofever_171B3C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_1746EC::
+	.incbin "sound/direct_sound_samples/puyofever_1746EC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_178A40::
+	.incbin "sound/direct_sound_samples/puyofever_178A40.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_17B3FC::
+	.incbin "sound/direct_sound_samples/puyofever_17B3FC.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_17E5B0::
+	.incbin "sound/direct_sound_samples/puyofever_17E5B0.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_184730::
+	.incbin "sound/direct_sound_samples/puyofever_184730.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_187358::
+	.incbin "sound/direct_sound_samples/puyofever_187358.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_189C2C::
+	.incbin "sound/direct_sound_samples/puyofever_189C2C.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_18C630::
+	.incbin "sound/direct_sound_samples/puyofever_18C630.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_18F720::
+	.incbin "sound/direct_sound_samples/puyofever_18F720.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_192B68::
+	.incbin "sound/direct_sound_samples/puyofever_192B68.bin"
+
+	.align 2
+DirectSoundWaveData_PuyoFever_1968F8::
+	.incbin "sound/direct_sound_samples/puyofever_1968F8.bin"

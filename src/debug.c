@@ -3599,7 +3599,32 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_RG_ENCOUNTER_DEOXYS)      \
     X(MUS_RG_TRAINER_TOWER)         \
     X(MUS_RG_SLOW_PALLET)           \
-    X(MUS_RG_TEACHY_TV_MENU)
+    X(MUS_RG_TEACHY_TV_MENU)        \
+    X(PUYOFEVER_PUYO_POP_FEVER)                           \
+    X(PUYOFEVER_ITS_THE_MENU)                             \
+    X(PUYOFEVER_ITS_THE_TEACHERS_LESSON)                  \
+    X(PUYOFEVER_ONCE_UPON_A_TIME_IN_SOME_OTHER_WORLD)     \
+    X(PUYOFEVER_MANZAI_CALM)                              \
+    X(PUYOFEVER_MANZAI_NOISY)                             \
+    X(PUYOFEVER_I_AM_THE_DEMON_KING)                      \
+    X(PUYOFEVER_AMITIE_AND_THE_FLYING_CANE_1)             \
+    X(PUYOFEVER_RAFFINE_AND_TEACHERS_REWARD_1)            \
+    X(PUYOFEVER_CREDITS)                                  \
+    X(PUYOFEVER_PUYO_POP_MATCH_HERE_I_GO)                 \
+    X(PUYOFEVER_FUN_PUYO_HELL)                            \
+    X(PUYOFEVER_EVERYONE_FIGHT_PUYO_POP_UNTIL_MORNING)    \
+    X(PUYOFEVER_THE_UNTRAINED_DEMON_KING_ULTIMATE_LEGEND) \
+    X(PUYOFEVER_RISKY)                                    \
+    X(PUYOFEVER_RUSHING_INTO_FEVER_MODE)                  \
+    X(PUYOFEVER_ENDLESS_FEVER)                            \
+    X(PUYOFEVER_CAREFREE_PUYO)                            \
+    X(PUYOFEVER_JINGLE_1)                                 \
+    X(PUYOFEVER_JINGLE_2)                                 \
+    X(PUYOFEVER_YOU_DID_VERY_WELL)                        \
+    X(PUYOFEVER_CONTINUE)                                 \
+    X(PUYOFEVER_JINGLE_3)                                 \
+    X(PUYOFEVER_AMITIE_AND_THE_FLYING_CANE_2)             \
+    X(PUYOFEVER_RAFFINE_AND_TEACHERS_REWARD_2)
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

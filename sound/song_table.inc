@@ -611,6 +611,31 @@ gSongTable::
 	song ph_nurse_blend, 2, 2
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
+	song puyofever_puyo_pop_fever, 0, 0
+	song puyofever_its_the_menu, 0, 0
+	song puyofever_its_the_teachers_lesson, 0, 0
+	song puyofever_once_upon_a_time_in_some_other_world, 0, 0
+	song puyofever_manzai_calm, 0, 0
+	song puyofever_manzai_noisy, 0, 0
+	song puyofever_i_am_the_demon_king, 0, 0
+	song puyofever_amitie_and_the_flying_cane_1, 0, 0
+	song puyofever_raffine_and_teachers_reward_1, 0, 0
+	song puyofever_credits, 0, 0
+	song puyofever_puyo_pop_match_here_i_go, 0, 0
+	song puyofever_fun_puyo_hell, 0, 0
+	song puyofever_everyone_fight_puyo_pop_until_morning, 0, 0
+	song puyofever_the_untrained_demon_king_ultimate_legend, 0, 0
+	song puyofever_risky, 0, 0
+	song puyofever_rushing_into_fever_mode, 0, 0
+	song puyofever_endless_fever, 0, 0
+	song puyofever_carefree_puyo, 0, 0
+	song puyofever_jingle_1, 0, 0
+	song puyofever_jingle_2, 0, 0
+	song puyofever_you_did_very_well, 0, 0
+	song puyofever_continue, 0, 0
+	song puyofever_jingle_3, 0, 0
+	song puyofever_amitie_and_the_flying_cane_2, 0, 0
+	song puyofever_raffine_and_teachers_reward_2, 0, 0
 
 	.align 2
 dummy_song_header:

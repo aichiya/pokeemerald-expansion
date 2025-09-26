@@ -76,3 +76,32 @@ ProgrammableWaveData_24::
 
 ProgrammableWaveData_25::
 	.incbin "sound/programmable_wave_samples/25.pcm"
+
+@ Start Puyo Pop Fever
+
+ProgrammableWaveData_PuyoFever_A08C8::
+	.incbin "sound/programmable_wave_samples/puyofever_A08C8.pcm"
+
+ProgrammableWaveData_PuyoFever_A08D8::
+	.incbin "sound/programmable_wave_samples/puyofever_A08D8.pcm"
+
+ProgrammableWaveData_PuyoFever_A08E8::
+	.incbin "sound/programmable_wave_samples/puyofever_A08E8.pcm"
+
+ProgrammableWaveData_PuyoFever_A08F8::
+	.incbin "sound/programmable_wave_samples/puyofever_A08F8.pcm"
+
+ProgrammableWaveData_PuyoFever_A0908::
+	.incbin "sound/programmable_wave_samples/puyofever_A0908.pcm"
+
+ProgrammableWaveData_PuyoFever_A0918::
+	.incbin "sound/programmable_wave_samples/puyofever_A0918.pcm"
+
+ProgrammableWaveData_PuyoFever_A0928::
+	.incbin "sound/programmable_wave_samples/puyofever_A0928.pcm"
+
+ProgrammableWaveData_PuyoFever_A0938::
+	.incbin "sound/programmable_wave_samples/puyofever_A0938.pcm"
+
+ProgrammableWaveData_PuyoFever_A0948::
+	.incbin "sound/programmable_wave_samples/puyofever_A0948.pcm"

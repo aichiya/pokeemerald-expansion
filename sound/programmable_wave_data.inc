@@ -208,3 +208,15 @@ ProgrammableWaveData_thppme_pcm_fff730::
 
 ProgrammableWaveData_thppme_pcm_fff740::
 	.incbin "sound/programmable_wave_samples/thppme_pcm_fff740.pcm"
+
+ProgrammableWaveData_DgmnBS_37FB44::
+	.incbin "sound/programmable_wave_samples/dgmnbs_37FB44.pcm"
+
+ProgrammableWaveData_DgmnBS_37FB54::
+	.incbin "sound/programmable_wave_samples/dgmnbs_37FB54.pcm"
+
+ProgrammableWaveData_DgmnBS_37FB64::
+	.incbin "sound/programmable_wave_samples/dgmnbs_37FB64.pcm"
+
+ProgrammableWaveData_DgmnBS_37FB74::
+	.incbin "sound/programmable_wave_samples/dgmnbs_37FB74.pcm"

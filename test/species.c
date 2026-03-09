@@ -59,6 +59,48 @@ TEST("Form change tables contain only forms in the form species ID table")
     }
 }
 
+TEST("Forms have the appropriate species form changes")
+{
+    u32 i;
+    u32 species = SPECIES_NONE;
+
+    for (i = 0; i < NUM_SPECIES; i++)
+    {
+        if (gSpeciesInfo[i].isMegaEvolution
+            || gSpeciesInfo[i].isGigantamax
+            || gSpeciesInfo[i].isUltraBurst
+            || gSpeciesInfo[i].isPrimalReversion)
+        {
+            PARAMETRIZE_LABEL("%S", gSpeciesInfo[i].speciesName) { species = i; }
+        }
+    }
+    bool32 hasBattleEnd = FALSE, hasFaint = FALSE;
+
+    const struct FormChange *formChanges = GetSpeciesFormChanges(species);
+    EXPECT(formChanges != NULL);
+
+    for (u32 j = 0; formChanges[j].method != FORM_CHANGE_TERMINATOR; j++)
+    {
+        if (species != formChanges[j].targetSpecies)
+        {
+            if (formChanges[j].method == FORM_CHANGE_END_BATTLE)
+                hasBattleEnd = TRUE;
+            else if (formChanges[j].method == FORM_CHANGE_FAINT)
+                hasFaint = TRUE;
+        }
+    }
+
+    EXPECT(hasBattleEnd);
+
+    // Primal Reversion don't change forms upon fainting
+    if (gSpeciesInfo[species].isMegaEvolution
+        || gSpeciesInfo[species].isGigantamax
+        || gSpeciesInfo[species].isUltraBurst)
+    {
+        EXPECT(hasFaint);
+    }
+}
+
 TEST("Form change targets have the appropriate species flags")
 {
     u32 i;
@@ -98,36 +140,40 @@ TEST("Form change targets have the appropriate species flags")
 
 TEST("No species has two evolutions that use the evolution tracker")
 {
-    u32 i;
+    u32 i, j;
     u32 species = SPECIES_NONE;
     u32 evolutionTrackerEvolutions;
-    bool32 hasGenderBasedRecoil;
+    bool32 hasRecoilEvo;
     const struct Evolution *evolutions;
 
     for (i = 0; i < NUM_SPECIES; i++)
     {
-        if (GetSpeciesEvolutions(i) != NULL) PARAMETRIZE { species = i; }
+        if (IsSpeciesEnabled(i) && GetSpeciesEvolutions(i) != NULL) PARAMETRIZE { species = i; }
     }
 
     evolutionTrackerEvolutions = 0;
-    hasGenderBasedRecoil = FALSE;
+    hasRecoilEvo = FALSE;
     evolutions = GetSpeciesEvolutions(species);
 
     for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
     {
-        if (evolutions[i].method == EVO_USE_MOVE_TWENTY_TIMES
-         || evolutions[i].method == EVO_DEFEAT_THREE_WITH_ITEM
-        )
-            evolutionTrackerEvolutions++;
-
-        if (evolutions[i].method == EVO_RECOIL_DAMAGE_MALE
-         || evolutions[i].method == EVO_RECOIL_DAMAGE_FEMALE)
+        if (evolutions[i].params == NULL)
+            continue;
+        for (j = 0; evolutions[i].params[j].condition != CONDITIONS_END; j++)
         {
-            // Special handling for these since they can be combined as the evolution tracker field is used for the same purpose
-            if (!hasGenderBasedRecoil)
-            {
-                hasGenderBasedRecoil = TRUE;
+            if (evolutions[i].params[j].condition == IF_USED_MOVE_X_TIMES
+             || evolutions[i].params[j].condition == IF_DEFEAT_X_WITH_ITEMS
+            )
                 evolutionTrackerEvolutions++;
+
+            if (evolutions[i].params[j].condition == IF_RECOIL_DAMAGE_GE)
+            {
+                // Special handling for these since they can be combined as the evolution tracker field is used for the same purpose
+                if (!hasRecoilEvo)
+                {
+                    hasRecoilEvo = TRUE;
+                    evolutionTrackerEvolutions++;
+                }
             }
         }
     }

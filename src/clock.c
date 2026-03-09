@@ -1,21 +1,23 @@
 #include "global.h"
-#include "event_data.h"
-#include "rtc.h"
-#include "time_events.h"
-#include "field_specials.h"
-#include "lottery_corner.h"
-#include "dewford_trend.h"
-#include "tv.h"
-#include "field_weather.h"
 #include "berry.h"
+#include "clock.h"
+#include "dewford_trend.h"
+#include "event_data.h"
+#include "field_specials.h"
+#include "field_weather.h"
+#include "lottery_corner.h"
 #include "main.h"
 #include "overworld.h"
+#include "pokerus.h"
+#include "rtc.h"
+#include "time_events.h"
+#include "tv.h"
 #include "wallclock.h"
 #include "constants/form_change_types.h"
+#include "apricorn_tree.h"
 
 static void UpdatePerDay(struct Time *localTime);
 static void UpdatePerMinute(struct Time *localTime);
-static void FormChangeTimeUpdate();
 
 void InitTimeBasedEvents(void)
 {
@@ -55,6 +57,7 @@ static void UpdatePerDay(struct Time *localTime)
         SetShoalItemFlag(daysSince);
         SetRandomLotteryNumber(daysSince);
         UpdateDaysPassedSinceFormChange(daysSince);
+        DailyResetApricornTrees();
         *days = localTime->days;
     }
 }
@@ -72,25 +75,16 @@ static void UpdatePerMinute(struct Time *localTime)
         {
             BerryTreeTimeUpdate(minutes);
             gSaveBlock2Ptr->lastBerryTreeUpdate = *localTime;
-            FormChangeTimeUpdate();
         }
     }
 }
 
-static void FormChangeTimeUpdate()
+void FormChangeTimeUpdate()
 {
     s32 i;
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gPlayerParty[i];
-        u32 targetSpecies = GetFormChangeTargetSpecies(mon, FORM_CHANGE_TIME_OF_DAY, 0);
-        u32 currentSpecies = GetMonData(mon, MON_DATA_SPECIES);
-
-        if (targetSpecies != currentSpecies)
-        {
-            SetMonData(mon, MON_DATA_SPECIES, &targetSpecies);
-            CalculateMonStats(mon);
-        }
+        TryFormChange(&gPlayerParty[i], FORM_CHANGE_TIME_OF_DAY);
     }
 }
 

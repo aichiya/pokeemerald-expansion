@@ -95,6 +95,12 @@ struct DecorationPCContext
     u8 isPlayerRoom;
 };
 
+struct DecorItem
+{
+    const u32 *pic;
+    const u16 *pal;
+};
+
 enum Windows
 {
     WINDOW_MAIN_MENU,
@@ -180,7 +186,8 @@ static void CantPlaceDecorationPrompt(u8 taskId);
 static void InitializePuttingAwayCursorSprite(struct Sprite *sprite);
 static void InitializePuttingAwayCursorSprite2(struct Sprite *sprite);
 static u8 gpu_pal_decompress_alloc_tag_and_upload(struct PlaceDecorationGraphicsDataBuffer *data, u8 decor);
-static const u32 *GetDecorationIconPicOrPalette(u16 decor, u8 mode);
+static const u32 *GetDecorationIconPic(u16 decor);
+static const u16 *GetDecorationIconPalette(u16 decor);
 static bool8 HasDecorationsInUse(u8 taskId);
 static void Task_ContinuePuttingAwayDecorations(u8 taskId);
 static void ContinuePuttingAwayDecorations(u8 taskId);
@@ -1190,7 +1197,7 @@ static void WarpToInitialPosition(u8 taskId)
 
 static u16 GetDecorationElevation(u8 decoration, u8 tileIndex)
 {
-    u16 elevation = -1;
+    u16 elevation = ELEVATION_INVALID;
     switch (decoration)
     {
     case DECOR_STAND:
@@ -1208,7 +1215,8 @@ static void ShowDecorationOnMap_(u16 mapX, u16 mapY, u8 decWidth, u8 decHeight, 
 {
     u16 i, j;
     s16 x, y;
-    u16 attributes;
+    u16 metatileBehavior;
+    u16 layerType;
     u16 impassableFlag;
     u16 overlapsWall;
     u16 elevation;
@@ -1219,10 +1227,11 @@ static void ShowDecorationOnMap_(u16 mapX, u16 mapY, u8 decWidth, u8 decHeight, 
         for (i = 0; i < decWidth; i++)
         {
             x = mapX + i;
-            attributes = GetMetatileAttributesById(NUM_TILES_IN_PRIMARY + gDecorations[decoration].tiles[j * decWidth + i]);
-            if (MetatileBehavior_IsSecretBaseImpassable(attributes & METATILE_ATTR_BEHAVIOR_MASK) == TRUE
-             || (gDecorations[decoration].permission != DECORPERM_PASS_FLOOR && (attributes >> METATILE_ATTR_LAYER_SHIFT) != METATILE_LAYER_TYPE_NORMAL))
-                impassableFlag = MAPGRID_COLLISION_MASK;
+            metatileBehavior = GetAttributeByMetatileIdAndMapLayout(NUM_TILES_IN_PRIMARY + gDecorations[decoration].tiles[j * decWidth + i], METATILE_ATTRIBUTE_BEHAVIOR, FALSE);
+            layerType = GetAttributeByMetatileIdAndMapLayout(NUM_TILES_IN_PRIMARY + gDecorations[decoration].tiles[j * decWidth + i], METATILE_ATTRIBUTE_LAYER_TYPE, FALSE);
+            if (MetatileBehavior_IsSecretBaseImpassable(metatileBehavior) == TRUE
+             || (gDecorations[decoration].permission != DECORPERM_PASS_FLOOR && layerType != METATILE_LAYER_TYPE_NORMAL))
+                impassableFlag = MAPGRID_IMPASSABLE;
             else
                 impassableFlag = 0;
 
@@ -1233,7 +1242,7 @@ static void ShowDecorationOnMap_(u16 mapX, u16 mapY, u8 decWidth, u8 decHeight, 
                 overlapsWall = 0;
 
             elevation = GetDecorationElevation(gDecorations[decoration].id, j * decWidth + i);
-            if (elevation != 0xFFFF)
+            if (elevation != ELEVATION_INVALID)
                 MapGridSetMetatileEntryAt(x, y, (gDecorations[decoration].tiles[j * decWidth + i] + (NUM_TILES_IN_PRIMARY | overlapsWall)) | impassableFlag | elevation);
             else
                 MapGridSetMetatileIdAt(x, y, (gDecorations[decoration].tiles[j * decWidth + i] + (NUM_TILES_IN_PRIMARY | overlapsWall)) | impassableFlag);
@@ -1361,30 +1370,30 @@ static void Task_PlaceDecoration(u8 taskId)
 {
     switch (gTasks[taskId].tState)
     {
-        case 0:
-            if (!gPaletteFade.active)
-            {
-                SetInitialPositions(taskId);
-                gTasks[taskId].tState = 1;
-            }
-            break;
-        case 1:
-            RemoveFollowingPokemon();
-            gPaletteFade.bufferTransferDisabled = TRUE;
-            ConfigureCameraObjectForPlacingDecoration(&sPlaceDecorationGraphicsDataBuffer, gCurDecorationItems[gCurDecorationIndex]);
-            SetUpDecorationShape(taskId);
-            SetUpPlacingDecorationPlayerAvatar(taskId, &sPlaceDecorationGraphicsDataBuffer);
-            FadeInFromBlack();
-            gPaletteFade.bufferTransferDisabled = FALSE;
-            gTasks[taskId].tState = 2;
-            break;
-        case 2:
-            if (IsWeatherNotFadingIn() == TRUE)
-            {
-                gTasks[taskId].tDecorationItemsMenuCommand = DECOR_ITEMS_MENU_PLACE;
-                ContinueDecorating(taskId);
-            }
-            break;
+    case 0:
+        if (!gPaletteFade.active)
+        {
+            SetInitialPositions(taskId);
+            gTasks[taskId].tState = 1;
+        }
+        break;
+    case 1:
+        RemoveFollowingPokemon();
+        gPaletteFade.bufferTransferDisabled = TRUE;
+        ConfigureCameraObjectForPlacingDecoration(&sPlaceDecorationGraphicsDataBuffer, gCurDecorationItems[gCurDecorationIndex]);
+        SetUpDecorationShape(taskId);
+        SetUpPlacingDecorationPlayerAvatar(taskId, &sPlaceDecorationGraphicsDataBuffer);
+        FadeInFromBlack();
+        gPaletteFade.bufferTransferDisabled = FALSE;
+        gTasks[taskId].tState = 2;
+        break;
+    case 2:
+        if (IsWeatherNotFadingIn() == TRUE)
+        {
+            gTasks[taskId].tDecorationItemsMenuCommand = DECOR_ITEMS_MENU_PLACE;
+            ContinueDecorating(taskId);
+        }
+        break;
     }
 }
 
@@ -1420,47 +1429,47 @@ static void SetUpDecorationShape(u8 taskId)
 {
     switch (gDecorations[gCurDecorationItems[gCurDecorationIndex]].shape)
     {
-        case DECORSHAPE_1x1:
-            gTasks[taskId].tDecorWidth = 1;
-            gTasks[taskId].tDecorHeight = 1;
-            break;
-        case DECORSHAPE_2x1:
-            gTasks[taskId].tDecorWidth = 2;
-            gTasks[taskId].tDecorHeight = 1;
-            break;
-        case DECORSHAPE_3x1:
-            gTasks[taskId].tDecorWidth = 3;
-            gTasks[taskId].tDecorHeight = 1;
-            break;
-        case DECORSHAPE_4x2:
-            gTasks[taskId].tDecorWidth = 4;
-            gTasks[taskId].tDecorHeight = 2;
-            break;
-        case DECORSHAPE_2x2:
-            gTasks[taskId].tDecorWidth = 2;
-            gTasks[taskId].tDecorHeight = 2;
-            break;
-        case DECORSHAPE_1x2:
-            gTasks[taskId].tDecorWidth = 1;
-            gTasks[taskId].tDecorHeight = 2;
-            break;
-        case DECORSHAPE_1x3:
-            gTasks[taskId].tDecorWidth = 1;
-            gTasks[taskId].tDecorHeight = 3;
-            gTasks[taskId].tCursorY++;
-            break;
-        case DECORSHAPE_2x4:
-            gTasks[taskId].tDecorWidth = 2;
-            gTasks[taskId].tDecorHeight = 4;
-            break;
-        case DECORSHAPE_3x3:
-            gTasks[taskId].tDecorWidth = 3;
-            gTasks[taskId].tDecorHeight = 3;
-            break;
-        case DECORSHAPE_3x2:
-            gTasks[taskId].tDecorWidth = 3;
-            gTasks[taskId].tDecorHeight = 2;
-            break;
+    case DECORSHAPE_1x1:
+        gTasks[taskId].tDecorWidth = 1;
+        gTasks[taskId].tDecorHeight = 1;
+        break;
+    case DECORSHAPE_2x1:
+        gTasks[taskId].tDecorWidth = 2;
+        gTasks[taskId].tDecorHeight = 1;
+        break;
+    case DECORSHAPE_3x1:
+        gTasks[taskId].tDecorWidth = 3;
+        gTasks[taskId].tDecorHeight = 1;
+        break;
+    case DECORSHAPE_4x2:
+        gTasks[taskId].tDecorWidth = 4;
+        gTasks[taskId].tDecorHeight = 2;
+        break;
+    case DECORSHAPE_2x2:
+        gTasks[taskId].tDecorWidth = 2;
+        gTasks[taskId].tDecorHeight = 2;
+        break;
+    case DECORSHAPE_1x2:
+        gTasks[taskId].tDecorWidth = 1;
+        gTasks[taskId].tDecorHeight = 2;
+        break;
+    case DECORSHAPE_1x3:
+        gTasks[taskId].tDecorWidth = 1;
+        gTasks[taskId].tDecorHeight = 3;
+        gTasks[taskId].tCursorY++;
+        break;
+    case DECORSHAPE_2x4:
+        gTasks[taskId].tDecorWidth = 2;
+        gTasks[taskId].tDecorHeight = 4;
+        break;
+    case DECORSHAPE_3x3:
+        gTasks[taskId].tDecorWidth = 3;
+        gTasks[taskId].tDecorHeight = 3;
+        break;
+    case DECORSHAPE_3x2:
+        gTasks[taskId].tDecorWidth = 3;
+        gTasks[taskId].tDecorHeight = 2;
+        break;
     }
 }
 
@@ -1514,6 +1523,17 @@ static bool8 IsFloorOrBoardAndHole(u16 behaviorAt, const struct Decoration *deco
     return FALSE;
 }
 
+#ifdef BUGFIX
+#define GetLayerType(tileId) UNPACK_LAYER_TYPE(GetMetatileAttributesById(tileId))
+#else
+// This incompletely extracts the layer type data. The result is that comparisons against any nonzero
+// value in the valid range always have the same result.
+// Because GF only compares against 0 (METATILE_LAYER_TYPE_NORMAL) there are no ill effects and it's possible this
+// is what they intended. We use the named constant for the comparisons, which implies you can use nonzero constants at
+// those locations (which you can't), so to avoid this trap and keep the better documentation this is included as a bug fix.
+#define GetLayerType(tileId) GetMetatileAttributesById(tileId) & METATILE_ATTR_LAYER_MASK
+#endif
+
 static bool8 CanPlaceDecoration(u8 taskId, const struct Decoration *decoration)
 {
     u8 i;
@@ -1538,7 +1558,7 @@ static bool8 CanPlaceDecoration(u8 taskId, const struct Decoration *decoration)
             {
                 curX = gTasks[taskId].tCursorX + j;
                 behaviorAt = MapGridGetMetatileBehaviorAt(curX, curY);
-                layerType = GetMetatileAttributesById(NUM_TILES_IN_PRIMARY + decoration->tiles[(mapY - 1 - i) * mapX + j]) & METATILE_ATTR_LAYER_MASK;
+                layerType = GetAttributeByMetatileIdAndMapLayout(NUM_TILES_IN_PRIMARY + decoration->tiles[(mapY - 1 - i) * mapX + j], METATILE_ATTRIBUTE_LAYER_TYPE, FALSE);
                 if (!IsFloorOrBoardAndHole(behaviorAt, decoration))
                     return FALSE;
 
@@ -1559,7 +1579,7 @@ static bool8 CanPlaceDecoration(u8 taskId, const struct Decoration *decoration)
             {
                 curX = gTasks[taskId].tCursorX + j;
                 behaviorAt = MapGridGetMetatileBehaviorAt(curX, curY);
-                layerType = GetMetatileAttributesById(NUM_TILES_IN_PRIMARY + decoration->tiles[(mapY - 1 - i) * mapX + j]) & METATILE_ATTR_LAYER_MASK;
+                layerType = GetAttributeByMetatileIdAndMapLayout(NUM_TILES_IN_PRIMARY + decoration->tiles[(mapY - 1 - i) * mapX + j], METATILE_ATTRIBUTE_LAYER_TYPE, FALSE);
                 if (!MetatileBehavior_IsNormal(behaviorAt) && !IsSecretBaseTrainerSpot(behaviorAt, layerType))
                     return FALSE;
 
@@ -1576,7 +1596,7 @@ static bool8 CanPlaceDecoration(u8 taskId, const struct Decoration *decoration)
         {
             curX = gTasks[taskId].tCursorX + j;
             behaviorAt = MapGridGetMetatileBehaviorAt(curX, curY);
-            layerType = GetMetatileAttributesById(NUM_TILES_IN_PRIMARY + decoration->tiles[j]) & METATILE_ATTR_LAYER_MASK;
+            layerType = GetAttributeByMetatileIdAndMapLayout(NUM_TILES_IN_PRIMARY + decoration->tiles[j], METATILE_ATTRIBUTE_LAYER_TYPE, FALSE);
             if (!MetatileBehavior_IsNormal(behaviorAt) && !MetatileBehavior_IsSecretBaseNorthWall(behaviorAt))
                 return FALSE;
 
@@ -2066,22 +2086,22 @@ static u8 gpu_pal_decompress_alloc_tag_and_upload(struct PlaceDecorationGraphics
 static u8 AddDecorationIconObjectFromIconTable(u16 tilesTag, u16 paletteTag, u8 decor)
 {
     struct SpriteSheet sheet;
-    struct CompressedSpritePalette palette;
+    struct SpritePalette palette;
     struct SpriteTemplate *template;
     u8 spriteId;
 
     if (!AllocItemIconTemporaryBuffers())
         return MAX_SPRITES;
 
-    LZDecompressWram(GetDecorationIconPicOrPalette(decor, 0), gItemIconDecompressionBuffer);
+    DecompressDataWithHeaderWram(GetDecorationIconPic(decor), gItemIconDecompressionBuffer);
     CopyItemIconPicTo4x4Buffer(gItemIconDecompressionBuffer, gItemIcon4x4Buffer);
     sheet.data = gItemIcon4x4Buffer;
     sheet.size = 0x200;
     sheet.tag = tilesTag;
     LoadSpriteSheet(&sheet);
-    palette.data = GetDecorationIconPicOrPalette(decor, 1);
+    palette.data = GetDecorationIconPalette(decor);
     palette.tag = paletteTag;
-    LoadCompressedSpritePalette(&palette);
+    LoadSpritePalette(&palette);
     template = Alloc(sizeof(struct SpriteTemplate));
     *template = gItemIconSpriteTemplate;
     template->tileTag = tilesTag;
@@ -2092,12 +2112,20 @@ static u8 AddDecorationIconObjectFromIconTable(u16 tilesTag, u16 paletteTag, u8 
     return spriteId;
 }
 
-static const u32 *GetDecorationIconPicOrPalette(u16 decor, u8 mode)
+static const u32 *GetDecorationIconPic(u16 decor)
 {
     if (decor > NUM_DECORATIONS)
         decor = DECOR_NONE;
 
-    return gDecorIconTable[decor][mode];
+    return gDecorIconTable[decor].pic;
+}
+
+static const u16 *GetDecorationIconPalette(u16 decor)
+{
+    if (decor > NUM_DECORATIONS)
+        decor = DECOR_NONE;
+
+    return gDecorIconTable[decor].pal;
 }
 
 static u8 AddDecorationIconObjectFromObjectEvent(u16 tilesTag, u16 paletteTag, u8 decor)
@@ -2131,7 +2159,7 @@ static u8 AddDecorationIconObjectFromObjectEvent(u16 tilesTag, u16 paletteTag, u
     }
     else
     {
-        spriteId = CreateObjectGraphicsSprite(sPlaceDecorationGraphicsDataBuffer.decoration->tiles[0], SpriteCallbackDummy, 0, 0, 1);
+        spriteId = CreateObjectGraphicsSpriteWithTag(sPlaceDecorationGraphicsDataBuffer.decoration->tiles[0], SpriteCallbackDummy, 0, 0, 1, paletteTag);
     }
     return spriteId;
 }
@@ -2149,7 +2177,7 @@ u8 AddDecorationIconObject(u8 decor, s16 x, s16 y, u8 priority, u16 tilesTag, u1
         gSprites[spriteId].x2 = x + 4;
         gSprites[spriteId].y2 = y + 4;
     }
-    else if (gDecorIconTable[decor][0] == NULL)
+    else if (gDecorIconTable[decor].pic == NULL)
     {
         spriteId = AddDecorationIconObjectFromObjectEvent(tilesTag, paletteTag, decor);
         if (spriteId == MAX_SPRITES)

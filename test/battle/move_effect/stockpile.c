@@ -30,13 +30,35 @@ SINGLE_BATTLE_TEST("Stockpile's count can go up only to 3")
         MESSAGE("Wobbuffet stockpiled 3!");
 
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STOCKPILE, player);
-        MESSAGE("Wobbuffet can't stockpile any more!");
+        MESSAGE("But it failed!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Stockpile's def and spDef stat increases aren't incremented by other stat stage changes")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_STOCKPILE); }
+        TURN { MOVE(player, MOVE_COSMIC_POWER); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_STOCKPILE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_COSMIC_POWER, player);
+    } THEN {
+        EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE + 2);
+        EXPECT_EQ(player->statStages[STAT_SPDEF], DEFAULT_STAT_STAGE + 2);
+
+        u32 stockpileDef = gBattleMons[0].volatiles.stockpileDef;
+        u32 stockpileSpDef = gBattleMons[0].volatiles.stockpileSpDef;
+        EXPECT_EQ(stockpileDef, 1);
+        EXPECT_EQ(stockpileSpDef, 1);
     }
 }
 
 SINGLE_BATTLE_TEST("Spit Up and Swallow don't work if used without Stockpile")
 {
-    u32 move;
+    enum Move move;
     PARAMETRIZE { move = MOVE_SWALLOW; }
     PARAMETRIZE { move = MOVE_SPIT_UP; }
     GIVEN {
@@ -49,9 +71,9 @@ SINGLE_BATTLE_TEST("Spit Up and Swallow don't work if used without Stockpile")
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, move, player);
         if (move == MOVE_SWALLOW)
-            MESSAGE("But it failed to swallow a thing!");
+            MESSAGE("But it failed!");
         else
-            MESSAGE("But it failed to spit up a thing!");
+            MESSAGE("But it failed!");
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOCKPILE, player);
         MESSAGE("Wobbuffet stockpiled 1!");
@@ -143,17 +165,17 @@ SINGLE_BATTLE_TEST("Swallow heals HP depending on Stockpile's count", s16 hpHeal
 
 SINGLE_BATTLE_TEST("Stockpile temporarily raises Def and Sp. Def", s16 dmgPyhsical, s16 dmgSpecial)
 {
-    u16 move;
+    enum Move move;
     PARAMETRIZE { move = MOVE_STOCKPILE; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
         ASSUME(B_STOCKPILE_RAISES_DEFS >= GEN_4);
-        ASSUME(GetMoveCategory(MOVE_TACKLE) == DAMAGE_CATEGORY_PHYSICAL);
+        ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(GetMoveCategory(MOVE_GUST) == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
     } WHEN {
-        TURN { MOVE(player, move); MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(player, move); MOVE(opponent, MOVE_SCRATCH); }
         TURN { MOVE(opponent, MOVE_GUST); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
@@ -164,7 +186,7 @@ SINGLE_BATTLE_TEST("Stockpile temporarily raises Def and Sp. Def", s16 dmgPyhsic
             MESSAGE("Wobbuffet's Sp. Def rose!");
         }
 
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         HP_BAR(player, captureDamage: &results[i].dmgPyhsical);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponent);
@@ -178,20 +200,20 @@ SINGLE_BATTLE_TEST("Stockpile temporarily raises Def and Sp. Def", s16 dmgPyhsic
 DOUBLE_BATTLE_TEST("Stockpile's Def and Sp. Def boost is lost after using Spit Up or Swallow", s16 dmgPyhsicalBefore, s16 dmgPhysicalAfter, s16 dmgSpecialBefore, s16 dmgSpecialAfter)
 {
     u8 count;
-    u16 move;
+    enum Move move;
     PARAMETRIZE { count = 1; move = MOVE_SPIT_UP; }
     PARAMETRIZE { count = 2; move = MOVE_SWALLOW; }
     PARAMETRIZE { count = 3; move = MOVE_SPIT_UP; }
     GIVEN {
         ASSUME(B_STOCKPILE_RAISES_DEFS >= GEN_4);
-        ASSUME(GetMoveCategory(MOVE_TACKLE) == DAMAGE_CATEGORY_PHYSICAL);
+        ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(GetMoveCategory(MOVE_GUST) == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(SPECIES_WOBBUFFET) { Speed(4); HP(399); MaxHP(400); }
         PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_GUST, target: playerLeft); }
+        TURN { MOVE(opponentLeft, MOVE_SCRATCH, target: playerLeft); MOVE(opponentRight, MOVE_GUST, target: playerLeft); }
         TURN { MOVE(playerLeft, MOVE_STOCKPILE); }
         if (count != 1) {
             TURN { MOVE(playerLeft, MOVE_STOCKPILE); }
@@ -199,9 +221,9 @@ DOUBLE_BATTLE_TEST("Stockpile's Def and Sp. Def boost is lost after using Spit U
                  TURN { MOVE(playerLeft, MOVE_STOCKPILE); }
             }
         }
-        TURN { MOVE(playerLeft, move, target: opponentLeft); MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_GUST, target: playerLeft); }
+        TURN { MOVE(playerLeft, move, target: opponentLeft); MOVE(opponentLeft, MOVE_SCRATCH, target: playerLeft); MOVE(opponentRight, MOVE_GUST, target: playerLeft); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
         HP_BAR(playerLeft, captureDamage: &results[i].dmgPyhsicalBefore);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponentRight);
         HP_BAR(playerLeft, captureDamage: &results[i].dmgSpecialBefore);
@@ -237,7 +259,7 @@ DOUBLE_BATTLE_TEST("Stockpile's Def and Sp. Def boost is lost after using Spit U
         }
         MESSAGE("Wobbuffet's stockpiled effect wore off!");
 
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
         HP_BAR(playerLeft, captureDamage: &results[i].dmgPhysicalAfter);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponentRight);
         HP_BAR(playerLeft, captureDamage: &results[i].dmgSpecialAfter);
@@ -248,5 +270,44 @@ DOUBLE_BATTLE_TEST("Stockpile's Def and Sp. Def boost is lost after using Spit U
         EXPECT_MUL_EQ(results[1].dmgSpecialBefore,  UQ_4_12(1.0), results[1].dmgSpecialAfter);
         EXPECT_MUL_EQ(results[2].dmgPyhsicalBefore, UQ_4_12(1.0), results[2].dmgPhysicalAfter);
         EXPECT_MUL_EQ(results[2].dmgSpecialBefore,  UQ_4_12(1.0), results[2].dmgSpecialAfter);
+    }
+}
+
+SINGLE_BATTLE_TEST("Spit Up's Stockpile's are romoved if move is absorbed")
+{
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_ELECTRIFY) == EFFECT_ELECTRIFY);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_PIKACHU) { Ability(ABILITY_LIGHTNING_ROD); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_STOCKPILE); }
+        TURN { MOVE(opponent, MOVE_ELECTRIFY); MOVE(player, MOVE_SPIT_UP); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_STOCKPILE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ELECTRIFY, opponent);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIT_UP, player);
+        ABILITY_POPUP(opponent, ABILITY_LIGHTNING_ROD);
+    } THEN {
+        EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE);
+        EXPECT_EQ(player->statStages[STAT_SPDEF], DEFAULT_STAT_STAGE);
+    }
+}
+
+SINGLE_BATTLE_TEST("Spit Up's Stockpile's are romoved if hit into Protect")
+{
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_PROTECT) == EFFECT_PROTECT);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(player, MOVE_STOCKPILE); }
+        TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_SPIT_UP); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_STOCKPILE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_PROTECT, opponent);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIT_UP, player);
+    } THEN {
+        EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE);
+        EXPECT_EQ(player->statStages[STAT_SPDEF], DEFAULT_STAT_STAGE);
     }
 }

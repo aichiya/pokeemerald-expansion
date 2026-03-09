@@ -34,7 +34,7 @@ struct PokenavListWindowState {
     u16 selectedIndexOffset;
     u16 entriesOnscreen;
     u32 listItemSize;
-    void * listPtr;
+    void *listPtr;
 };
 
 struct PokenavListSub
@@ -43,7 +43,7 @@ struct PokenavListSub
     u32 printStart;
     u32 printIndex;
     u32 itemSize;
-    void * listPtr;
+    void *listPtr;
     s32 startBgY;
     s32 endBgY;
     u32 loopedTaskId;
@@ -94,13 +94,11 @@ static u32 LoopedTask_ReshowListFromCheckPage(s32);
 static u32 LoopedTask_PrintCheckPageInfo(s32);
 
 static const u16 sListArrow_Pal[] = INCBIN_U16("graphics/pokenav/list_arrows.gbapal");
-static const u32 sListArrow_Gfx[] = INCBIN_U32("graphics/pokenav/list_arrows.4bpp.lz");
+static const u32 sListArrow_Gfx[] = INCBIN_U32("graphics/pokenav/list_arrows.4bpp.smol");
 
 static const u8 gText_PokenavMatchCall_Strategy[] = _("STRATEGY");
 static const u8 gText_PokenavMatchCall_TrainerPokemon[] = _("TRAINER'S POKéMON");
 static const u8 gText_PokenavMatchCall_SelfIntroduction[] = _("SELF-INTRODUCTION");
-
-static EWRAM_DATA u32 sMoveWindowDownIndex = 0; // Read, but pointlessly
 
 bool32 CreatePokenavList(const struct BgTemplate *bgTemplate, struct PokenavListTemplate *listTemplate, s32 tileOffset)
 {
@@ -196,7 +194,7 @@ static void InitListItems(struct PokenavListWindowState *windowState, struct Pok
     PrintListItems(windowState->listPtr, windowState->windowTopIndex, numToPrint, windowState->listItemSize, 0, subPtr);
 }
 
-static void PrintListItems(void * listPtr, u32 topIndex, u32 numItems, u32 itemSize, u32 printStart, struct PokenavListSub *list)
+static void PrintListItems(void *listPtr, u32 topIndex, u32 numItems, u32 itemSize, u32 printStart, struct PokenavListSub *list)
 {
     if (numItems == 0)
         return;
@@ -282,7 +280,7 @@ static void MoveListWindow(s32 delta, bool32 printItems)
     }
     else if (printItems)
     {
-        s32 index = sMoveWindowDownIndex = windowState->windowTopIndex + windowState->entriesOnscreen;
+        s32 index = windowState->windowTopIndex + windowState->entriesOnscreen;
         if (index + delta >= windowState->listLength)
             delta = windowState->listLength - index;
 
@@ -806,9 +804,6 @@ static const struct SpriteTemplate sSpriteTemplate_RightArrow =
     .tileTag = GFXTAG_ARROW,
     .paletteTag = PALTAG_ARROW,
     .oam = &sOamData_RightArrow,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_RightArrow
 };
 
@@ -831,10 +826,6 @@ static const struct SpriteTemplate sSpriteTemplate_UpDownArrow =
     .tileTag = GFXTAG_ARROW,
     .paletteTag = PALTAG_ARROW,
     .oam = &sOamData_UpDownArrow,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = SpriteCallbackDummy
 };
 
 static void LoadListArrowGfx(void)

@@ -9,8 +9,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Throat Chop prevents the usage of sound moves")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(100); };
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(50); };
+        PLAYER(SPECIES_WOBBUFFET) { Speed(100); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(50); }
     } WHEN {
         TURN { MOVE(player, MOVE_THROAT_CHOP); MOVE(opponent, MOVE_HYPER_VOICE); }
         TURN {}
@@ -24,22 +24,44 @@ SINGLE_BATTLE_TEST("Throat Chop prevents the usage of sound moves")
     }
 }
 
-SINGLE_BATTLE_TEST("Throat Chop won't work through a substitute")
+SINGLE_BATTLE_TEST("Throat Chop prevents sound base moves for 2 turns")
 {
     GIVEN {
-        PLAYER(SPECIES_INCINEROAR) { Speed(100); };
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(50); };
+        ASSUME(IsSoundMove(MOVE_HYPER_VOICE));
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_HYPER_VOICE); }
     } WHEN {
-        TURN { MOVE(opponent, MOVE_SUBSTITUTE); }
-        TURN { MOVE(player, MOVE_THROAT_CHOP); MOVE(opponent, MOVE_HYPER_VOICE); }
-        TURN {}
+        TURN { MOVE(opponent, MOVE_HYPER_VOICE); MOVE(player, MOVE_THROAT_CHOP); }
+        TURN { FORCED_MOVE(opponent); }
+        TURN { MOVE(opponent, MOVE_HYPER_VOICE); MOVE(player, MOVE_THROAT_CHOP); }
+        TURN { FORCED_MOVE(opponent); }
+        TURN { MOVE(opponent, MOVE_HYPER_VOICE); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, opponent);
-        HP_BAR(opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_VOICE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THROAT_CHOP, player);
-        NONE_OF {
-            MESSAGE("The effects of Throat Chop prevent the opposing Wobbuffet from using certain moves!");
-        }
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_STRUGGLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_VOICE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_THROAT_CHOP, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_STRUGGLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_VOICE, opponent);
+    }
+}
+
+SINGLE_BATTLE_TEST("Throat Chop usage when target is already prevented from using sound moves doesn't reset timer")
+{
+    GIVEN {
+        ASSUME(IsSoundMove(MOVE_HYPER_VOICE));
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_HYPER_VOICE); }
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_HYPER_VOICE); MOVE(player, MOVE_THROAT_CHOP); }
+        TURN { FORCED_MOVE(opponent); MOVE(player, MOVE_THROAT_CHOP); }
+        TURN { MOVE(opponent, MOVE_HYPER_VOICE); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_VOICE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_THROAT_CHOP, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_STRUGGLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_THROAT_CHOP, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_VOICE, opponent);
     }
 }

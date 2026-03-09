@@ -14,6 +14,7 @@ SINGLE_BATTLE_TEST("Encore forces consecutive move uses for 3 turns: Encore used
     PARAMETRIZE { encoreUser = opponent; encoreTarget = player; speedPlayer = 10; speedOpponent = 20; }
     PARAMETRIZE { encoreUser = player; encoreTarget = opponent; speedPlayer = 20; speedOpponent = 10; }
     GIVEN {
+        WITH_CONFIG(B_ENCORE_TARGET, GEN_3);
         PLAYER(SPECIES_WOBBUFFET) { Speed(speedPlayer); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(speedOpponent); }
     } WHEN {
@@ -41,6 +42,7 @@ SINGLE_BATTLE_TEST("Encore forces consecutive move uses for 3 turns for player: 
     PARAMETRIZE { encoreUser = opponent; encoreTarget = player; speedPlayer = 20; speedOpponent = 10; }
     PARAMETRIZE { encoreUser = player; encoreTarget = opponent; speedPlayer = 10; speedOpponent = 20; }
     GIVEN {
+        WITH_CONFIG(B_ENCORE_TARGET, GEN_3);
         PLAYER(SPECIES_WOBBUFFET) { Speed(speedPlayer); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(speedOpponent); }
     } WHEN {
@@ -93,7 +95,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon are immune to Encore")
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE, gimmick: GIMMICK_DYNAMAX); MOVE(opponent, MOVE_ENCORE); }
+        TURN { MOVE(player, MOVE_SCRATCH, gimmick: GIMMICK_DYNAMAX); MOVE(opponent, MOVE_ENCORE); }
         TURN { MOVE(player, MOVE_EMBER); }
     } SCENE {
         MESSAGE("Wobbuffet used Max Strike!");
@@ -107,12 +109,12 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon can be encored immediately after
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Speed(50); }; // yes, this speed is necessary
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(100); };
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(100); }
     } WHEN {
         TURN { MOVE(player, MOVE_ARM_THRUST, gimmick: GIMMICK_DYNAMAX); }
         TURN { MOVE(player, MOVE_ARM_THRUST); }
         TURN { MOVE(player, MOVE_ARM_THRUST); }
-        TURN { MOVE(opponent, MOVE_ENCORE); MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(opponent, MOVE_ENCORE); MOVE(player, MOVE_SCRATCH); }
     } SCENE {
         MESSAGE("Wobbuffet used Max Knuckle!");
         MESSAGE("Wobbuffet used Max Knuckle!");
@@ -124,6 +126,6 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon can be encored immediately after
 
 TO_DO_BATTLE_TEST("Encore's effect ends if the encored move runs out of PP");
 TO_DO_BATTLE_TEST("Encore lasts for 2-6 turns (Gen 2-3)");
-TO_DO_BATTLE_TEST("Encore lasts for 4-8 turns (Gen 4)");
+TO_DO_BATTLE_TEST("Encore lasts for 3-7 turns (Gen 4)");
 TO_DO_BATTLE_TEST("Encore lasts for 3 turns (Gen 5+)");
 TO_DO_BATTLE_TEST("Encore randomly chooses an opponent target");

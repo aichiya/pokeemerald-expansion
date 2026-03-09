@@ -188,6 +188,17 @@ static void DoTVShowSecretBaseSecrets(void);
 static void DoTVShowSafariFanClub(void);
 static void DoTVShowLilycoveContestLady(void);
 
+static const u8 sText_Good[] = _("Good");
+static const u8 sText_VeryGood[] = _("Very good");
+static const u8 sText_Excellent[] = _("Excellent");
+static const u8 sText_SoSo[] = _("So-so");
+static const u8 sText_Bad[] = _("Bad");
+static const u8 sText_TheWorst[] = _("The worst");
+
+static const u8 sText_Slots[] = _("SLOTS");
+static const u8 sText_Roulette[] = _("ROULETTE");
+static const u8 sText_Jackpot[] = _("jackpot");
+
 static const struct {
     u16 species;
     u16 moves[MAX_MON_MOVES];
@@ -198,31 +209,31 @@ static const struct {
         .species = SPECIES_SEEDOT,
         .moves = {MOVE_BIDE, MOVE_HARDEN, MOVE_LEECH_SEED},
         .level = 3,
-        .location = MAP_NUM(ROUTE102)
+        .location = MAP_NUM(MAP_ROUTE102)
     },
     {
         .species = SPECIES_NUZLEAF,
         .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
         .level = 15,
-        .location = MAP_NUM(ROUTE114),
+        .location = MAP_NUM(MAP_ROUTE114),
     },
     {
         .species = SPECIES_SEEDOT,
         .moves = {MOVE_HARDEN, MOVE_GROWTH, MOVE_NATURE_POWER, MOVE_LEECH_SEED},
         .level = 13,
-        .location = MAP_NUM(ROUTE117),
+        .location = MAP_NUM(MAP_ROUTE117),
     },
     {
         .species = SPECIES_SEEDOT,
         .moves = {MOVE_GIGA_DRAIN, MOVE_FRUSTRATION, MOVE_SOLAR_BEAM, MOVE_LEECH_SEED},
         .level = 25,
-        .location = MAP_NUM(ROUTE120),
+        .location = MAP_NUM(MAP_ROUTE120),
     },
     {
         .species = SPECIES_SKITTY,
         .moves = {MOVE_GROWL, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_ATTRACT},
         .level = 8,
-        .location = MAP_NUM(ROUTE116),
+        .location = MAP_NUM(MAP_ROUTE116),
     }
 };
 
@@ -835,8 +846,8 @@ void UpdateTVScreensOnMap(int width, int height)
         break;
 //  case PLAYERS_HOUSE_TV_NONE:
     default:
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LILYCOVE_CITY_COVE_LILY_MOTEL_1F)
-         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LILYCOVE_CITY_COVE_LILY_MOTEL_1F))
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F)
+         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LILYCOVE_CITY_COVE_LILY_MOTEL_1F))
         {
             // NPC in Lilycove Hotel is always watching TV
             SetTVMetatilesOnMap(width, height, METATILE_Building_TV_On);
@@ -983,6 +994,7 @@ static void TakeGabbyAndTyOffTheAir(void)
     gSaveBlock1Ptr->gabbyAndTyData.onAir = FALSE;
 }
 
+// See gabby_and_ty.inc for details
 u8 GabbyAndTyGetBattleNum(void)
 {
     if (gSaveBlock1Ptr->gabbyAndTyData.battleNum > 5)
@@ -1024,41 +1036,42 @@ u8 GabbyAndTyGetLastBattleTrivia(void)
     return 0;
 }
 
+// See gabby_and_ty.inc for details
 void GetGabbyAndTyLocalIds(void)
 {
     switch (GabbyAndTyGetBattleNum())
     {
     case 1:
-        gSpecialVar_0x8004 = 14;
-        gSpecialVar_0x8005 = 13;
+        gSpecialVar_0x8004 = LOCALID_ROUTE111_GABBY_1;
+        gSpecialVar_0x8005 = LOCALID_ROUTE111_TY_1;
         break;
     case 2:
-        gSpecialVar_0x8004 = 5;
-        gSpecialVar_0x8005 = 6;
+        gSpecialVar_0x8004 = LOCALID_ROUTE118_GABBY_1;
+        gSpecialVar_0x8005 = LOCALID_ROUTE118_TY_1;
         break;
     case 3:
-        gSpecialVar_0x8004 = 18;
-        gSpecialVar_0x8005 = 17;
+        gSpecialVar_0x8004 = LOCALID_ROUTE120_GABBY_1;
+        gSpecialVar_0x8005 = LOCALID_ROUTE120_TY_1;
         break;
     case 4:
-        gSpecialVar_0x8004 = 21;
-        gSpecialVar_0x8005 = 22;
+        gSpecialVar_0x8004 = LOCALID_ROUTE111_GABBY_2;
+        gSpecialVar_0x8005 = LOCALID_ROUTE111_TY_2;
         break;
     case 5:
-        gSpecialVar_0x8004 = 8;
-        gSpecialVar_0x8005 = 9;
+        gSpecialVar_0x8004 = LOCALID_ROUTE118_GABBY_2;
+        gSpecialVar_0x8005 = LOCALID_ROUTE118_TY_2;
         break;
     case 6:
-        gSpecialVar_0x8004 = 19;
-        gSpecialVar_0x8005 = 20;
+        gSpecialVar_0x8004 = LOCALID_ROUTE120_GABBY_2;
+        gSpecialVar_0x8005 = LOCALID_ROUTE120_TY_2;
         break;
     case 7:
-        gSpecialVar_0x8004 = 23;
-        gSpecialVar_0x8005 = 24;
+        gSpecialVar_0x8004 = LOCALID_ROUTE111_GABBY_3;
+        gSpecialVar_0x8005 = LOCALID_ROUTE111_TY_3;
         break;
     case 8:
-        gSpecialVar_0x8004 = 10;
-        gSpecialVar_0x8005 = 11;
+        gSpecialVar_0x8004 = LOCALID_ROUTE118_GABBY_3;
+        gSpecialVar_0x8005 = LOCALID_ROUTE118_TY_3;
         break;
     }
 }
@@ -1095,8 +1108,8 @@ void TryPutPokemonTodayOnAir(void)
     u8 i;
     u16 ballsUsed;
     TVShow *show;
-    u32 language2;
-    u16 itemLastUsed;
+    enum Language language2;
+    enum Item itemLastUsed;
 
     ballsUsed = 0;
     TryPutRandomPokeNewsOnAir();
@@ -1229,7 +1242,7 @@ static void InterviewAfter_ContestLiveUpdates(void)
         show2->contestLiveUpdates.active = TRUE;
         StringCopy(show2->contestLiveUpdates.winningTrainerName, gSaveBlock2Ptr->playerName); // Show only begins running if player won, so always load players name
         show2->contestLiveUpdates.category = gSpecialVar_ContestCategory;
-        show2->contestLiveUpdates.winningSpecies = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_SPECIES, NULL);
+        show2->contestLiveUpdates.winningSpecies = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_SPECIES);
         show2->contestLiveUpdates.losingSpecies = show->contestLiveUpdates.losingSpecies;
         show2->contestLiveUpdates.loserAppealFlag = show->contestLiveUpdates.loserAppealFlag;
         show2->contestLiveUpdates.round1Placing = show->contestLiveUpdates.round1Placing;
@@ -1244,7 +1257,7 @@ static void InterviewAfter_ContestLiveUpdates(void)
     }
 }
 
-void PutBattleUpdateOnTheAir(u8 opponentLinkPlayerId, u16 move, u16 speciesPlayer, u16 speciesOpponent)
+void PutBattleUpdateOnTheAir(u8 opponentLinkPlayerId, enum Move move, u16 speciesPlayer, u16 speciesOpponent)
 {
     TVShow *show;
     u8 name[32];
@@ -1283,7 +1296,7 @@ void PutBattleUpdateOnTheAir(u8 opponentLinkPlayerId, u16 move, u16 speciesPlaye
     }
 }
 
-bool8 Put3CheersForPokeblocksOnTheAir(const u8 *partnersName, u8 flavor, u8 color, u8 sheen, u8 language)
+bool8 Put3CheersForPokeblocksOnTheAir(const u8 *partnersName, enum Flavor flavor, u8 color, u8 sheen, u8 language)
 {
     TVShow *show;
     u8 name[32];
@@ -1375,7 +1388,7 @@ void ContestLiveUpdates_SetWinnerAppealFlag(u8 flag)
         show->contestLiveUpdates.winnerAppealFlag = flag;
 }
 
-void ContestLiveUpdates_SetWinnerMoveUsed(u16 move)
+void ContestLiveUpdates_SetWinnerMoveUsed(enum Move move)
 {
     TVShow *show = &gSaveBlock1Ptr->tvShows[LAST_TVSHOW_IDX];
     sCurTVShowSlot = FindFirstEmptyNormalTVShowSlot(gSaveBlock1Ptr->tvShows);
@@ -1432,7 +1445,7 @@ static void InterviewAfter_BravoTrainerPokemonProfile(void)
     }
 }
 
-void BravoTrainerPokemonProfile_BeforeInterview1(u16 move)
+void BravoTrainerPokemonProfile_BeforeInterview1(enum Move move)
 {
     TVShow *show = &gSaveBlock1Ptr->tvShows[LAST_TVSHOW_IDX];
     InterviewBefore_BravoTrainerPkmnProfile();
@@ -1454,7 +1467,7 @@ void BravoTrainerPokemonProfile_BeforeInterview2(u8 contestStandingPlace)
         show->bravoTrainer.contestResult = contestStandingPlace;
         show->bravoTrainer.contestCategory = gSpecialVar_ContestCategory;
         show->bravoTrainer.contestRank = gSpecialVar_ContestRank;
-        show->bravoTrainer.species = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_SPECIES, NULL);
+        show->bravoTrainer.species = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_SPECIES);
         GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_NICKNAME10, show->bravoTrainer.pokemonNickname);
         StripExtCtrlCodes(show->bravoTrainer.pokemonNickname);
         show->bravoTrainer.pokemonNameLanguage = GetMonData(&gPlayerParty[gContestMonPartyIndex], MON_DATA_LANGUAGE);
@@ -1490,8 +1503,8 @@ void TryPutSmartShopperOnAir(void)
     TVShow *show;
     u8 i;
 
-    if (!(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_HILL_ENTRANCE))
-     && !(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BATTLE_FRONTIER_MART) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BATTLE_FRONTIER_MART))
+    if (!(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_TRAINER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_TRAINER_HILL_ENTRANCE))
+     && !(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_BATTLE_FRONTIER_MART) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_MART))
      && !rbernoulli(1, 3))
     {
         sCurTVShowSlot = FindFirstEmptyRecordMixTVShowSlot(gSaveBlock1Ptr->tvShows);
@@ -1521,26 +1534,28 @@ void TryPutSmartShopperOnAir(void)
 void PutNameRaterShowOnTheAir(void)
 {
     TVShow *show;
+    struct BoxPokemon *boxmon;
 
     InterviewBefore_NameRater();
     if (gSpecialVar_Result != 1)
     {
-        GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar1);
+        boxmon = GetSelectedBoxMonFromPcOrParty();
+        GetBoxMonData(boxmon, MON_DATA_NICKNAME, gStringVar1);
         if (StringLength(gSaveBlock2Ptr->playerName) > 1 && StringLength(gStringVar1) > 1)
         {
             show = &gSaveBlock1Ptr->tvShows[sCurTVShowSlot];
             show->nameRaterShow.kind = TVSHOW_NAME_RATER_SHOW;
             show->nameRaterShow.active = TRUE;
-            show->nameRaterShow.species = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES, NULL);
+            show->nameRaterShow.species = GetBoxMonData(boxmon, MON_DATA_SPECIES);
             show->nameRaterShow.random = Random() % 3;
             show->nameRaterShow.random2 = Random() % 2;
             show->nameRaterShow.randomSpecies = GetRandomDifferentSpeciesSeenByPlayer(show->nameRaterShow.species);
             StringCopy(show->nameRaterShow.trainerName, gSaveBlock2Ptr->playerName);
-            GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME10, show->nameRaterShow.pokemonName);
+            GetBoxMonData(boxmon, MON_DATA_NICKNAME10, show->nameRaterShow.pokemonName);
             StripExtCtrlCodes(show->nameRaterShow.pokemonName);
             StorePlayerIdInNormalShow(show);
             show->nameRaterShow.language = gGameLanguage;
-            show->nameRaterShow.pokemonNameLanguage = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_LANGUAGE);
+            show->nameRaterShow.pokemonNameLanguage = GetBoxMonData(boxmon, MON_DATA_LANGUAGE);
         }
     }
 }
@@ -1588,7 +1603,7 @@ static void InterviewAfter_FanClubLetter(void)
     show->fanclubLetter.kind = TVSHOW_FAN_CLUB_LETTER;
     show->fanclubLetter.active = TRUE;
     StringCopy(show->fanclubLetter.playerName, gSaveBlock2Ptr->playerName);
-    show->fanclubLetter.species = GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPECIES, NULL);
+    show->fanclubLetter.species = GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPECIES);
     StorePlayerIdInNormalShow(show);
     show->fanclubLetter.language = gGameLanguage;
 }
@@ -1609,12 +1624,12 @@ static void InterviewAfter_PkmnFanClubOpinions(void)
     TVShow *show = &gSaveBlock1Ptr->tvShows[sCurTVShowSlot];
     show->fanclubOpinions.kind = TVSHOW_PKMN_FAN_CLUB_OPINIONS;
     show->fanclubOpinions.active = TRUE;
-    show->fanclubOpinions.friendshipHighNybble = GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_FRIENDSHIP, NULL) >> 4;
+    show->fanclubOpinions.friendshipHighNybble = GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_FRIENDSHIP) >> 4;
     show->fanclubOpinions.questionAsked = gSpecialVar_0x8007;
     StringCopy(show->fanclubOpinions.playerName, gSaveBlock2Ptr->playerName);
     GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_NICKNAME10, show->fanclubOpinions.nickname);
     StripExtCtrlCodes(show->fanclubOpinions.nickname);
-    show->fanclubOpinions.species = GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPECIES, NULL);
+    show->fanclubOpinions.species = GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPECIES);
     StorePlayerIdInNormalShow(show);
     show->fanclubOpinions.language = gGameLanguage;
     if (gGameLanguage == LANGUAGE_JAPANESE || GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_LANGUAGE) == LANGUAGE_JAPANESE)
@@ -1835,7 +1850,7 @@ void TryPutTodaysRivalTrainerOnAir(void)
         if (IsNationalPokedexEnabled())
             show->rivalTrainer.dexCount = GetNationalPokedexCount(FLAG_GET_CAUGHT);
         else
-            show->rivalTrainer.dexCount = GetHoennPokedexCount(FLAG_GET_CAUGHT);
+            show->rivalTrainer.dexCount = GetRegionalPokedexCount(FLAG_GET_CAUGHT);
         show->rivalTrainer.location = gMapHeader.regionMapSectionId;
         show->rivalTrainer.mapLayoutId = gMapHeader.mapLayoutId;
         show->rivalTrainer.nSilverSymbols = 0;
@@ -2018,7 +2033,7 @@ static void SecretBaseVisit_CalculateDecorationData(TVShow *show)
 static void SecretBaseVisit_CalculatePartyData(TVShow *show)
 {
     u8 i;
-    u16 move;
+    enum Move move;
     u16 j;
     u8 numMoves;
     u8 numPokemon;
@@ -2169,7 +2184,7 @@ void TryPutLotteryWinnerReportOnAir(void)
     }
 }
 
-void TryPutBattleSeminarOnAir(u16 foeSpecies, u16 species, u8 moveIdx, const u16 *movePtr, u16 betterMove)
+void TryPutBattleSeminarOnAir(u16 foeSpecies, u16 species, u8 moveIndex, const u16 *movePtr, u16 betterMove)
 {
     TVShow *show;
     u8 i;
@@ -2184,10 +2199,10 @@ void TryPutBattleSeminarOnAir(u16 foeSpecies, u16 species, u8 moveIdx, const u16
         StringCopy(show->battleSeminar.playerName, gSaveBlock2Ptr->playerName);
         show->battleSeminar.foeSpecies = foeSpecies;
         show->battleSeminar.species = species;
-        show->battleSeminar.move = movePtr[moveIdx];
+        show->battleSeminar.move = movePtr[moveIndex];
         for (i = 0, j = 0; i < MAX_MON_MOVES; i++)
         {
-            if (i != moveIdx && movePtr[i])
+            if (i != moveIndex && movePtr[i])
             {
                 show->battleSeminar.otherMoves[j] = movePtr[i];
                 j++;
@@ -2377,23 +2392,23 @@ void TryPutFrontierTVShowOnAir(u16 winStreak, u8 facilityAndMode)
         case FRONTIER_SHOW_PALACE_SINGLES:
         case FRONTIER_SHOW_PALACE_DOUBLES:
         case FRONTIER_SHOW_PYRAMID:
-            show->frontier.species1 = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES, NULL);
-            show->frontier.species2 = GetMonData(&gPlayerParty[1], MON_DATA_SPECIES, NULL);
-            show->frontier.species3 = GetMonData(&gPlayerParty[2], MON_DATA_SPECIES, NULL);
+            show->frontier.species1 = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES);
+            show->frontier.species2 = GetMonData(&gPlayerParty[1], MON_DATA_SPECIES);
+            show->frontier.species3 = GetMonData(&gPlayerParty[2], MON_DATA_SPECIES);
             break;
         case FRONTIER_SHOW_TOWER_DOUBLES:
-            show->frontier.species1 = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES, NULL);
-            show->frontier.species2 = GetMonData(&gPlayerParty[1], MON_DATA_SPECIES, NULL);
-            show->frontier.species3 = GetMonData(&gPlayerParty[2], MON_DATA_SPECIES, NULL);
-            show->frontier.species4 = GetMonData(&gPlayerParty[3], MON_DATA_SPECIES, NULL);
+            show->frontier.species1 = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES);
+            show->frontier.species2 = GetMonData(&gPlayerParty[1], MON_DATA_SPECIES);
+            show->frontier.species3 = GetMonData(&gPlayerParty[2], MON_DATA_SPECIES);
+            show->frontier.species4 = GetMonData(&gPlayerParty[3], MON_DATA_SPECIES);
             break;
         case FRONTIER_SHOW_TOWER_MULTIS:
-            show->frontier.species1 = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES, NULL);
-            show->frontier.species2 = GetMonData(&gPlayerParty[1], MON_DATA_SPECIES, NULL);
+            show->frontier.species1 = GetMonData(&gPlayerParty[0], MON_DATA_SPECIES);
+            show->frontier.species2 = GetMonData(&gPlayerParty[1], MON_DATA_SPECIES);
             break;
         case FRONTIER_SHOW_TOWER_LINK_MULTIS:
-            show->frontier.species1 = GetMonData(&gSaveBlock1Ptr->playerParty[gSaveBlock2Ptr->frontier.selectedPartyMons[0] - 1], MON_DATA_SPECIES, NULL);
-            show->frontier.species2 = GetMonData(&gSaveBlock1Ptr->playerParty[gSaveBlock2Ptr->frontier.selectedPartyMons[1] - 1], MON_DATA_SPECIES, NULL);
+            show->frontier.species1 = GetMonData(GetSavedPlayerPartyMon(gSaveBlock2Ptr->frontier.selectedPartyMons[0] - 1), MON_DATA_SPECIES);
+            show->frontier.species2 = GetMonData(GetSavedPlayerPartyMon(gSaveBlock2Ptr->frontier.selectedPartyMons[1] - 1), MON_DATA_SPECIES);
             break;
         }
         StorePlayerIdInRecordMixShow(show);
@@ -2650,14 +2665,14 @@ static bool8 ShouldApplyPokeNewsEffect(u8 newsKind)
     switch (newsKind)
     {
     case POKENEWS_SLATEPORT:
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SLATEPORT_CITY)
-         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SLATEPORT_CITY)
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_SLATEPORT_CITY)
+         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_SLATEPORT_CITY)
          && gSpecialVar_LastTalked == LOCALID_SLATEPORT_ENERGY_GURU)
             return TRUE;
         return FALSE;
     case POKENEWS_LILYCOVE:
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP)
-         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP))
+        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP)
+         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP))
             return TRUE;
         return FALSE;
     }
@@ -2724,7 +2739,7 @@ void CopyContestRankToStringVar(u8 varIdx, u8 rank)
     }
 }
 
-void CopyContestCategoryToStringVar(u8 varIdx, u8 category)
+void CopyContestCategoryToStringVar(u8 varIdx, enum ContestCategories category)
 {
     switch (category)
     {
@@ -2742,6 +2757,8 @@ void CopyContestCategoryToStringVar(u8 varIdx, u8 category)
         break;
     case CONTEST_CATEGORY_TOUGH:
         StringCopy(gTVStringVarPtrs[varIdx], gStdStrings[STDSTRING_TOUGH]);
+        break;
+    default:
         break;
     }
 }
@@ -2777,7 +2794,7 @@ static void SmartShopper_BufferPurchaseTotal(u8 varIdx, TVShow *show)
     for (i = 0; i < SMARTSHOPPER_NUM_ITEMS; i++)
     {
         if (show->smartshopperShow.itemIds[i] != ITEM_NONE)
-            price += ItemId_GetPrice(show->smartshopperShow.itemIds[i]) * show->smartshopperShow.itemAmounts[i];
+            price += GetItemPrice(show->smartshopperShow.itemIds[i]) * show->smartshopperShow.itemAmounts[i];
     }
 
     if (show->smartshopperShow.priceReduced == TRUE)
@@ -2902,7 +2919,7 @@ static void InterviewBefore_FanClubLetter(void)
     TryReplaceOldTVShowOfKind(TVSHOW_FAN_CLUB_LETTER);
     if (!gSpecialVar_Result)
     {
-        StringCopy(gStringVar1, GetSpeciesName(GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPECIES, NULL)));
+        StringCopy(gStringVar1, GetSpeciesName(GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPECIES)));
         InitializeEasyChatWordArray(gSaveBlock1Ptr->tvShows[sCurTVShowSlot].fanclubLetter.words,
                         ARRAY_COUNT(gSaveBlock1Ptr->tvShows[sCurTVShowSlot].fanclubLetter.words));
     }
@@ -2923,7 +2940,7 @@ static void InterviewBefore_PkmnFanClubOpinions(void)
     TryReplaceOldTVShowOfKind(TVSHOW_PKMN_FAN_CLUB_OPINIONS);
     if (!gSpecialVar_Result)
     {
-        StringCopy(gStringVar1, GetSpeciesName(GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPECIES, NULL)));
+        StringCopy(gStringVar1, GetSpeciesName(GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_SPECIES)));
         GetMonData(&gPlayerParty[GetLeadMonIndex()], MON_DATA_NICKNAME, gStringVar2);
         StringGet_Nickname(gStringVar2);
         InitializeEasyChatWordArray(gSaveBlock1Ptr->tvShows[sCurTVShowSlot].fanclubOpinions.words,
@@ -2983,7 +3000,7 @@ static bool8 IsPartyMonNicknamedOrNotEnglish(u8 monIdx)
     pokemon = &gPlayerParty[monIdx];
     GetMonData(pokemon, MON_DATA_NICKNAME, gStringVar1);
     language = GetMonData(pokemon, MON_DATA_LANGUAGE, &language);
-    if (language == GAME_LANGUAGE && !StringCompare(GetSpeciesName(GetMonData(pokemon, MON_DATA_SPECIES, NULL)), gStringVar1))
+    if (language == GAME_LANGUAGE && !StringCompare(GetSpeciesName(GetMonData(pokemon, MON_DATA_SPECIES)), gStringVar1))
         return FALSE;
 
     return TRUE;
@@ -3247,7 +3264,7 @@ bool8 IsTVShowAlreadyInQueue(void)
 
 bool8 TryPutNameRaterShowOnTheAir(void)
 {
-    GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar1);
+    GetBoxMonData(GetSelectedBoxMonFromPcOrParty(), MON_DATA_NICKNAME, gStringVar1);
 
     // Nickname wasnt changed
     if (!StringCompare(gStringVar3, gStringVar1))
@@ -3257,46 +3274,28 @@ bool8 TryPutNameRaterShowOnTheAir(void)
     return TRUE;
 }
 
-void ChangePokemonNickname(void)
-{
-    void ChangePokemonNickname_CB(void);
-
-    GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar3);
-    GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar2);
-    DoNamingScreen(NAMING_SCREEN_NICKNAME, gStringVar2, GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES, NULL), GetMonGender(&gPlayerParty[gSpecialVar_0x8004]), GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_PERSONALITY, NULL), ChangePokemonNickname_CB);
-}
-
-void ChangePokemonNickname_CB(void)
-{
-    SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar2);
-    CB2_ReturnToFieldContinueScriptPlayMapMusic();
-}
-
-void ChangeBoxPokemonNickname(void)
-{
-    struct BoxPokemon *boxMon;
-
-    boxMon = GetBoxedMonPtr(gSpecialVar_MonBoxId, gSpecialVar_MonBoxPos);
-    GetBoxMonData(boxMon, MON_DATA_NICKNAME, gStringVar3);
-    GetBoxMonData(boxMon, MON_DATA_NICKNAME, gStringVar2);
-    DoNamingScreen(NAMING_SCREEN_NICKNAME, gStringVar2, GetBoxMonData(boxMon, MON_DATA_SPECIES, NULL), GetBoxMonGender(boxMon), GetBoxMonData(boxMon, MON_DATA_PERSONALITY, NULL), ChangeBoxPokemonNickname_CB);
-}
-
 static void ChangeBoxPokemonNickname_CB(void)
 {
-    SetBoxMonNickAt(gSpecialVar_MonBoxId, gSpecialVar_MonBoxPos, gStringVar2);
+    SetBoxMonData(GetSelectedBoxMonFromPcOrParty(), MON_DATA_NICKNAME, gStringVar2);
     CB2_ReturnToFieldContinueScriptPlayMapMusic();
+}
+
+void ChangePokemonNickname(void)
+{
+    ChangePokemonNicknameWithCallback(ChangeBoxPokemonNickname_CB);
 }
 
 void BufferMonNickname(void)
 {
-    GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_NICKNAME, gStringVar1);
-    StringGet_Nickname(gStringVar1);
+    struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
+    GetBoxMonData(boxmon, MON_DATA_NICKNAME, gStringVar1);
+    //StringGet_Nickname(gStringVar1);
 }
 
 void IsMonOTIDNotPlayers(void)
 {
-    if (GetPlayerIDAsU32() == GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_OT_ID, NULL))
+    struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
+    if (GetPlayerIDAsU32() == GetBoxMonData(boxmon, MON_DATA_OT_ID))
         gSpecialVar_Result = FALSE;
     else
         gSpecialVar_Result = TRUE;
@@ -3321,24 +3320,24 @@ static u8 GetTVGroupByShowId(u8 kind)
 
 u32 GetPlayerIDAsU32(void)
 {
-    return (gSaveBlock2Ptr->playerTrainerId[3] << 24) | (gSaveBlock2Ptr->playerTrainerId[2] << 16) | (gSaveBlock2Ptr->playerTrainerId[1] << 8) | gSaveBlock2Ptr->playerTrainerId[0];
+    return READ_OTID_FROM_SAVE;
 }
 
 u8 CheckForPlayersHouseNews(void)
 {
     // Check if not in Littleroot house map group
-    if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
+    if (gSaveBlock1Ptr->location.mapGroup != MAP_GROUP(MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
         return PLAYERS_HOUSE_TV_NONE;
 
     // Check if not in player's house (dependent on gender)
     if (gSaveBlock2Ptr->playerGender == MALE)
     {
-        if (gSaveBlock1Ptr->location.mapNum != MAP_NUM(LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
+        if (gSaveBlock1Ptr->location.mapNum != MAP_NUM(MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
             return PLAYERS_HOUSE_TV_NONE;
     }
     else
     {
-        if (gSaveBlock1Ptr->location.mapNum != MAP_NUM(LITTLEROOT_TOWN_MAYS_HOUSE_1F))
+        if (gSaveBlock1Ptr->location.mapNum != MAP_NUM(MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F))
             return PLAYERS_HOUSE_TV_NONE;
     }
 
@@ -3354,11 +3353,11 @@ u8 CheckForPlayersHouseNews(void)
 void GetMomOrDadStringForTVMessage(void)
 {
     // If the player is checking the TV in their house it will only refer to their Mom.
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
     {
         if (gSaveBlock2Ptr->playerGender == MALE)
         {
-            if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
+            if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F))
             {
                 StringCopy(gStringVar1, gText_Mom);
                 VarSet(VAR_TEMP_3, 1);
@@ -3366,7 +3365,7 @@ void GetMomOrDadStringForTVMessage(void)
         }
         else
         {
-            if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(LITTLEROOT_TOWN_MAYS_HOUSE_1F))
+            if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F))
             {
                 StringCopy(gStringVar1, gText_Mom);
                 VarSet(VAR_TEMP_3, 1);
@@ -3410,14 +3409,14 @@ void GetMomOrDadStringForTVMessage(void)
 void HideBattleTowerReporter(void)
 {
     VarSet(VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, 0);
-    RemoveObjectEventByLocalIdAndMap(LOCALID_BATTLE_TOWER_LOBBY_REPORTER, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
+    RemoveObjectEventByLocalIdAndMap(LOCALID_TOWER_LOBBY_REPORTER, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
     FlagSet(FLAG_HIDE_BATTLE_TOWER_REPORTER);
 }
 
 void ReceiveTvShowsData(void *src, u32 size, u8 playersLinkId)
 {
     u8 i;
-    u16 version;
+    enum GameVersion version;
     TVShow (*rmBuffer2)[MAX_LINK_PLAYERS][TV_SHOWS_COUNT];
     TVShow (*rmBuffer)[MAX_LINK_PLAYERS][TV_SHOWS_COUNT];
 
@@ -4028,7 +4027,7 @@ static void TranslateRubyShows(TVShow *shows)
     }
 }
 
-static u8 GetStringLanguage(u8 *str)
+static enum Language GetStringLanguage(u8 *str)
 {
     return IsStringJapanese(str) ? LANGUAGE_JAPANESE : GAME_LANGUAGE;
 }
@@ -4039,7 +4038,7 @@ static void TranslateJapaneseEmeraldShows(TVShow *shows)
 
     for (curShow = shows; curShow < shows + LAST_TVSHOW_IDX; curShow++)
     {
-        switch(curShow->common.kind)
+        switch (curShow->common.kind)
         {
         case TVSHOW_FAN_CLUB_LETTER:
             curShow->fanclubLetter.language = GetStringLanguage(curShow->fanclubLetter.playerName);
@@ -4352,7 +4351,7 @@ static void DoTVShowBravoTrainerBattleTower(void)
     show = &gSaveBlock1Ptr->tvShows[gSpecialVar_0x8004];
     gSpecialVar_Result = FALSE;
     state = sTVShowState;
-    switch(state)
+    switch (state)
     {
     case BRAVOTOWER_STATE_INTRO:
         TVShowConvertInternationalString(gStringVar1, show->bravoTrainerTower.playerName, show->bravoTrainerTower.playerLanguage);
@@ -4447,7 +4446,7 @@ static void DoTVShowTodaysSmartShopper(void)
     show = &gSaveBlock1Ptr->tvShows[gSpecialVar_0x8004];
     gSpecialVar_Result = FALSE;
     state = sTVShowState;
-    switch(state)
+    switch (state)
     {
     case SMARTSHOPPER_STATE_INTRO:
         TVShowConvertInternationalString(gStringVar1, show->smartshopperShow.playerName, show->smartshopperShow.language);
@@ -4459,7 +4458,7 @@ static void DoTVShowTodaysSmartShopper(void)
         break;
     case SMARTSHOPPER_STATE_CLERK_NORMAL:
         TVShowConvertInternationalString(gStringVar1, show->smartshopperShow.playerName, show->smartshopperShow.language);
-        StringCopy(gStringVar2, ItemId_GetName(show->smartshopperShow.itemIds[0]));
+        StringCopy(gStringVar2, GetItemName(show->smartshopperShow.itemIds[0]));
         ConvertIntToDecimalString(2, show->smartshopperShow.itemAmounts[0]);
         // Pick a random comment (SMARTSHOPPER_STATE_RAND_COMMENT_#)
         sTVShowState += SMARTSHOPPER_STATE_CLERK_NORMAL + (Random() % (SMARTSHOPPER_STATE_RAND_COMMENT_4 - SMARTSHOPPER_STATE_RAND_COMMENT_1 + 1));
@@ -4481,7 +4480,7 @@ static void DoTVShowTodaysSmartShopper(void)
         break;
     case SMARTSHOPPER_STATE_SECOND_ITEM:
         // Clerk describes 2nd type of item player purchased
-        StringCopy(gStringVar2, ItemId_GetName(show->smartshopperShow.itemIds[1]));
+        StringCopy(gStringVar2, GetItemName(show->smartshopperShow.itemIds[1]));
         ConvertIntToDecimalString(2, show->smartshopperShow.itemAmounts[1]);
         if (show->smartshopperShow.itemIds[2] != ITEM_NONE)
             sTVShowState = SMARTSHOPPER_STATE_THIRD_ITEM;
@@ -4492,7 +4491,7 @@ static void DoTVShowTodaysSmartShopper(void)
         break;
     case SMARTSHOPPER_STATE_THIRD_ITEM:
         // Clerk describes 3rd type of item player purchased
-        StringCopy(gStringVar2, ItemId_GetName(show->smartshopperShow.itemIds[2]));
+        StringCopy(gStringVar2, GetItemName(show->smartshopperShow.itemIds[2]));
         ConvertIntToDecimalString(2, show->smartshopperShow.itemAmounts[2]);
         if (show->smartshopperShow.priceReduced == TRUE)
             sTVShowState = SMARTSHOPPER_STATE_DURING_SALE;
@@ -4520,7 +4519,7 @@ static void DoTVShowTodaysSmartShopper(void)
     case SMARTSHOPPER_STATE_CLERK_MAX:
         // Clerk's comments if player purchased maximum number of 1st item
         TVShowConvertInternationalString(gStringVar1, show->smartshopperShow.playerName, show->smartshopperShow.language);
-        StringCopy(gStringVar2, ItemId_GetName(show->smartshopperShow.itemIds[0]));
+        StringCopy(gStringVar2, GetItemName(show->smartshopperShow.itemIds[0]));
         if (show->smartshopperShow.priceReduced == TRUE)
             sTVShowState = SMARTSHOPPER_STATE_DURING_SALE;
         else
@@ -4644,7 +4643,7 @@ static void DoTVShowPokemonTodaySuccessfulCapture(void)
         sTVShowState = 2;
         break;
     case 2:
-        StringCopy(gStringVar2, ItemId_GetName(show->pokemonToday.ball));
+        StringCopy(gStringVar2, GetItemName(show->pokemonToday.ball));
         ConvertIntToDecimalString(2, show->pokemonToday.nBallsUsed);
         if (show->pokemonToday.nBallsUsed < 4)
             sTVShowState = 3;
@@ -5315,33 +5314,35 @@ static void DoTVShow3CheersForPokeblocks(void)
     case 1:
         switch (show->threeCheers.flavor)
         {
-        case 0:
+        case FLAVOR_SPICY:
             StringCopy(gStringVar1, gText_Spicy2);
             break;
-        case 1:
+        case FLAVOR_DRY:
             StringCopy(gStringVar1, gText_Dry2);
             break;
-        case 2:
+        case FLAVOR_SWEET:
             StringCopy(gStringVar1, gText_Sweet2);
             break;
-        case 3:
+        case FLAVOR_BITTER:
             StringCopy(gStringVar1, gText_Bitter2);
             break;
-        case 4:
+        case FLAVOR_SOUR:
             StringCopy(gStringVar1, gText_Sour2);
+            break;
+        default:
             break;
         }
         if (show->threeCheers.sheen > 24)
         {
-            StringCopy(gStringVar2, gText_Excellent);
+            StringCopy(gStringVar2, sText_Excellent);
         }
         else if (show->threeCheers.sheen > 22)
         {
-            StringCopy(gStringVar2, gText_VeryGood);
+            StringCopy(gStringVar2, sText_VeryGood);
         }
         else
         {
-            StringCopy(gStringVar2, gText_Good);
+            StringCopy(gStringVar2, sText_Good);
         }
         TVShowConvertInternationalString(gStringVar3, show->threeCheers.playerName, show->threeCheers.language);
         sTVShowState = 2;
@@ -5353,29 +5354,31 @@ static void DoTVShow3CheersForPokeblocks(void)
     case 3:
         switch (show->threeCheers.flavor)
         {
-        case 0:
+        case FLAVOR_SPICY:
             StringCopy(gStringVar1, gText_Spicy2);
             break;
-        case 1:
+        case FLAVOR_DRY:
             StringCopy(gStringVar1, gText_Dry2);
             break;
-        case 2:
+        case FLAVOR_SWEET:
             StringCopy(gStringVar1, gText_Sweet2);
             break;
-        case 3:
+        case FLAVOR_BITTER:
             StringCopy(gStringVar1, gText_Bitter2);
             break;
-        case 4:
+        case FLAVOR_SOUR:
             StringCopy(gStringVar1, gText_Sour2);
+            break;
+        default:
             break;
         }
 
         if (show->threeCheers.sheen > 16)
-            StringCopy(gStringVar2, gText_SoSo);
+            StringCopy(gStringVar2, sText_SoSo);
         else if (show->threeCheers.sheen > 13)
-            StringCopy(gStringVar2, gText_Bad);
+            StringCopy(gStringVar2, sText_Bad);
         else
-            StringCopy(gStringVar2, gText_TheWorst);
+            StringCopy(gStringVar2, sText_TheWorst);
 
         TVShowConvertInternationalString(gStringVar3, show->threeCheers.playerName, show->threeCheers.language);
         sTVShowState = 4;
@@ -5684,7 +5687,7 @@ static void DoTVShowHoennTreasureInvestigators(void)
     switch (state)
     {
     case 0:
-        StringCopy(gStringVar1, ItemId_GetName(show->treasureInvestigators.item));
+        StringCopy(gStringVar1, GetItemName(show->treasureInvestigators.item));
         if (show->treasureInvestigators.location == MAPSEC_DYNAMIC)
         {
             switch (show->treasureInvestigators.mapLayoutId)
@@ -5705,13 +5708,13 @@ static void DoTVShowHoennTreasureInvestigators(void)
         }
         break;
     case 1:
-        StringCopy(gStringVar1, ItemId_GetName(show->treasureInvestigators.item));
+        StringCopy(gStringVar1, GetItemName(show->treasureInvestigators.item));
         TVShowConvertInternationalString(gStringVar2, show->treasureInvestigators.playerName, show->treasureInvestigators.language);
         GetMapName(gStringVar3, show->treasureInvestigators.location, 0);
         TVShowDone();
         break;
     case 2:
-        StringCopy(gStringVar1, ItemId_GetName(show->treasureInvestigators.item));
+        StringCopy(gStringVar1, GetItemName(show->treasureInvestigators.item));
         TVShowConvertInternationalString(gStringVar2, show->treasureInvestigators.playerName, show->treasureInvestigators.language);
         TVShowDone();
         break;
@@ -5734,10 +5737,10 @@ static void DoTVShowFindThatGamer(void)
         switch (show->findThatGamer.whichGame)
         {
         case 0:
-            StringCopy(gStringVar2, gText_Slots);
+            StringCopy(gStringVar2, sText_Slots);
             break;
         case 1:
-            StringCopy(gStringVar2, gText_Roulette);
+            StringCopy(gStringVar2, sText_Roulette);
             break;
         }
         if (show->findThatGamer.won == TRUE)
@@ -5750,10 +5753,10 @@ static void DoTVShowFindThatGamer(void)
         switch (show->findThatGamer.whichGame)
         {
         case 0:
-            StringCopy(gStringVar2, gText_Slots);
+            StringCopy(gStringVar2, sText_Slots);
             break;
         case 1:
-            StringCopy(gStringVar2, gText_Roulette);
+            StringCopy(gStringVar2, sText_Roulette);
             break;
         }
         ConvertIntToDecimalString(2, show->findThatGamer.nCoins);
@@ -5763,10 +5766,10 @@ static void DoTVShowFindThatGamer(void)
         switch (show->findThatGamer.whichGame)
         {
         case 0:
-            StringCopy(gStringVar2, gText_Slots);
+            StringCopy(gStringVar2, sText_Slots);
             break;
         case 1:
-            StringCopy(gStringVar2, gText_Roulette);
+            StringCopy(gStringVar2, sText_Roulette);
             break;
         }
         ConvertIntToDecimalString(2, show->findThatGamer.nCoins);
@@ -5777,10 +5780,10 @@ static void DoTVShowFindThatGamer(void)
         switch (show->findThatGamer.whichGame)
         {
         case 0:
-            StringCopy(gStringVar2, gText_Roulette);
+            StringCopy(gStringVar2, sText_Roulette);
             break;
         case 1:
-            StringCopy(gStringVar2, gText_Slots);
+            StringCopy(gStringVar2, sText_Slots);
             break;
         }
         TVShowDone();
@@ -5819,7 +5822,7 @@ static void DoTVShowBreakingNewsTV(void)
         break;
     case 3:
         ConvertIntToDecimalString(0, show->breakingNews.balls);
-        StringCopy(gStringVar2, ItemId_GetName(show->breakingNews.caughtMonBall));
+        StringCopy(gStringVar2, GetItemName(show->breakingNews.caughtMonBall));
         sTVShowState = 4;
         break;
     case 4:
@@ -5974,14 +5977,14 @@ static void DoTVShowPokemonLotteryWinnerFlashReport(void)
     state = sTVShowState;
     TVShowConvertInternationalString(gStringVar1, show->lottoWinner.playerName, show->lottoWinner.language);
     if (show->lottoWinner.whichPrize == 0)
-        StringCopy(gStringVar2, gText_Jackpot);
+        StringCopy(gStringVar2, sText_Jackpot);
     else if (show->lottoWinner.whichPrize == 1)
         StringCopy(gStringVar2, gText_First);
     else if (show->lottoWinner.whichPrize == 2)
         StringCopy(gStringVar2, gText_Second);
     else
         StringCopy(gStringVar2, gText_Third);
-    StringCopy(gStringVar3, ItemId_GetName(show->lottoWinner.item));
+    StringCopy(gStringVar3, GetItemName(show->lottoWinner.item));
     TVShowDone();
     ShowFieldMessage(sTVPokemonLotteryWinnerFlashReportTextGroup[state]);
 }
@@ -6665,7 +6668,7 @@ static void DoTVShowSecretBaseSecrets(void)
         sTVShowState = show->secretBaseSecrets.savedState;
         break;
     case SBSECRETS_STATE_USED_BAG:
-        StringCopy(gStringVar2, ItemId_GetName(show->secretBaseSecrets.item));
+        StringCopy(gStringVar2, GetItemName(show->secretBaseSecrets.item));
         sTVShowState = show->secretBaseSecrets.savedState;
         break;
     case SBSECRETS_STATE_USED_CUSHION:

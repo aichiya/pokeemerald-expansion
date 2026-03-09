@@ -5,7 +5,8 @@ AI_SINGLE_BATTLE_TEST("Sleep Clause: AI will not use sleep moves while sleep cla
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
@@ -21,7 +22,8 @@ AI_DOUBLE_BATTLE_TEST("Sleep Clause: AI will not use sleep moves while sleep cla
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
@@ -39,7 +41,8 @@ AI_DOUBLE_BATTLE_TEST("Sleep Clause: AI will not use sleep move if partner is al
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
@@ -55,7 +58,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep moves fail when sleep clause is active")
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -82,7 +86,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep moves fail when sleep clause is active (
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); MaxHP(100); }
@@ -108,13 +113,14 @@ SINGLE_BATTLE_TEST("Sleep Clause: Rest does not activate sleep clause")
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); MOVE(opponent, MOVE_REST); }
+        TURN { MOVE(player, MOVE_SCRATCH); MOVE(opponent, MOVE_REST); }
         TURN { MOVE(player, MOVE_SPORE); SWITCH(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
@@ -128,7 +134,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Rest does not activate sleep clause (Doubles)"
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
@@ -150,14 +157,15 @@ SINGLE_BATTLE_TEST("Sleep Clause: Rest can still be used when sleep clause is ac
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
-        TURN { MOVE(player, MOVE_TACKLE); SWITCH(opponent, 1); }
+        TURN { MOVE(player, MOVE_SCRATCH); SWITCH(opponent, 1); }
         TURN { MOVE(opponent, MOVE_REST); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
@@ -174,7 +182,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Rest can still be used when sleep clause is ac
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
@@ -196,7 +205,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Psycho Shift'ing sleep will fail if sleep clau
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_SLEEP_TALK) == EFFECT_SLEEP_TALK);
         ASSUME(GetMoveEffect(MOVE_PSYCHO_SHIFT) == EFFECT_PSYCHO_SHIFT);
         PLAYER(SPECIES_WOBBUFFET)
@@ -222,7 +232,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Psycho Shift'ing sleep will activate sleep cla
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_SLEEP_TALK) == EFFECT_SLEEP_TALK);
         ASSUME(GetMoveEffect(MOVE_PSYCHO_SHIFT) == EFFECT_PSYCHO_SHIFT);
         PLAYER(SPECIES_ZIGZAGOON)
@@ -275,7 +286,7 @@ SINGLE_BATTLE_TEST("Sleep Clause: Yawn will fail when sleep clause is active")
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_YAWN); }
-        TURN { }
+        TURN {}
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_YAWN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, opponent);
@@ -291,22 +302,23 @@ SINGLE_BATTLE_TEST("Sleep Clause: Yawn will fail when sleep clause is active")
     }
 }
 
-SINGLE_BATTLE_TEST("Sleep Clause: Effect Spore causes sleep 11% of the time with sleep clause active")
+SINGLE_BATTLE_TEST("Sleep Clause: Effect Spore causes sleep 11% (Gen5+) of the time with sleep clause active")
 {
     PASSES_RANDOMLY(11, 100, RNG_EFFECT_SPORE);
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_5);
-        ASSUME(MoveMakesContact(MOVE_TACKLE));
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        WITH_CONFIG(B_ABILITY_TRIGGER_CHANCE, GEN_5);
+        ASSUME(MoveMakesContact(MOVE_SCRATCH));
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SPORE); }
         TURN { SWITCH(player, 1); }
-        TURN { MOVE(player, MOVE_TACKLE); }
-        TURN { }
+        TURN { MOVE(player, MOVE_SCRATCH); }
+        TURN {}
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
@@ -315,20 +327,21 @@ SINGLE_BATTLE_TEST("Sleep Clause: Effect Spore causes sleep 11% of the time with
     }
 }
 
-DOUBLE_BATTLE_TEST("Sleep Clause: Effect Spore causes sleep 11% of the time with sleep clause active (Doubles)")
+DOUBLE_BATTLE_TEST("Sleep Clause: Effect Spore causes sleep 11% (Gen5+) of the time with sleep clause active (Doubles)")
 {
     PASSES_RANDOMLY(11, 100, RNG_EFFECT_SPORE);
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_5);
-        ASSUME(MoveMakesContact(MOVE_TACKLE));
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        WITH_CONFIG(B_ABILITY_TRIGGER_CHANCE, GEN_5);
+        ASSUME(MoveMakesContact(MOVE_SCRATCH));
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
         OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_SPORE, target:playerRight); MOVE(playerLeft, MOVE_TACKLE, target:opponentLeft);}
+        TURN { MOVE(opponentLeft, MOVE_SPORE, target:playerRight); MOVE(playerLeft, MOVE_SCRATCH, target:opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
@@ -347,14 +360,15 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep from Effect Spore will not activate slee
     PASSES_RANDOMLY(11, 100, RNG_EFFECT_SPORE);
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_5);
-        ASSUME(MoveMakesContact(MOVE_TACKLE));
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        WITH_CONFIG(B_ABILITY_TRIGGER_CHANCE, GEN_5);
+        ASSUME(MoveMakesContact(MOVE_SCRATCH));
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
         TURN {}
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_SPORE); }
     } SCENE {
@@ -374,15 +388,16 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep from Effect Spore will not activate slee
     PASSES_RANDOMLY(11, 100, RNG_EFFECT_SPORE);
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_5);
-        ASSUME(MoveMakesContact(MOVE_TACKLE));
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        WITH_CONFIG(B_ABILITY_TRIGGER_CHANCE, GEN_5);
+        ASSUME(MoveMakesContact(MOVE_SCRATCH));
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
         OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target:opponentLeft); MOVE(opponentLeft, MOVE_SPORE, target:playerRight); }
+        TURN { MOVE(playerLeft, MOVE_SCRATCH, target:opponentLeft); MOVE(opponentLeft, MOVE_SPORE, target:playerRight); }
     } SCENE {
         ABILITY_POPUP(opponentLeft, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerLeft);
@@ -401,7 +416,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Moves with sleep effect chance will activate s
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(MoveHasAdditionalEffect(MOVE_RELIC_SONG, MOVE_EFFECT_SLEEP));
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -429,7 +445,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Moves with sleep effect chance will still do d
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(MoveHasAdditionalEffect(MOVE_RELIC_SONG, MOVE_EFFECT_SLEEP));
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -456,7 +473,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Dire Claw cannot sleep a mon when sleep clause
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(MoveHasAdditionalEffect(MOVE_DIRE_CLAW, MOVE_EFFECT_DIRE_CLAW));
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -532,7 +550,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(B_SLEEP_TURNS >= GEN_5);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -553,7 +572,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 
 DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mon is woken up with Aromatherapy / Heal Bell / Sparkly Swirl")
 {
-    u32 move = MOVE_NONE, switchIndex = 0;
+    enum Move move = MOVE_NONE;
+    u32 switchIndex = 0;
     struct BattlePokemon *healingSlot = opponentRight;
     struct BattlePokemon *sporedSlot = opponentLeft;
     PARAMETRIZE { move = MOVE_AROMATHERAPY;     healingSlot = opponentRight;    sporedSlot = opponentLeft;      switchIndex = 0; }
@@ -564,7 +584,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
     PARAMETRIZE { move = MOVE_SPARKLY_SWIRL;    healingSlot = opponentLeft;     sporedSlot = opponentRight;     switchIndex = 1; }
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_AROMATHERAPY) == EFFECT_HEAL_BELL);
         ASSUME(GetMoveEffect(MOVE_HEAL_BELL) == EFFECT_HEAL_BELL);
         ASSUME(MoveHasAdditionalEffect(MOVE_SPARKLY_SWIRL, MOVE_EFFECT_AROMATHERAPY));
@@ -622,7 +643,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(MoveHasAdditionalEffect(MOVE_WAKE_UP_SLAP, MOVE_EFFECT_REMOVE_STATUS));
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
@@ -664,11 +686,12 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_UPROAR) == EFFECT_UPROAR);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_ZIGZAGOON) { Moves(MOVE_CELEBRATE); }
         OPPONENT(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_ZIGZAGOON);
     } WHEN {
@@ -697,7 +720,7 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 
 SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mon is woken up by using Sleep Talk into a status curing move")
 {
-    u32 move;
+    enum Move move;
     PARAMETRIZE { move = MOVE_PSYCHO_SHIFT; }
     PARAMETRIZE { move = MOVE_JUNGLE_HEALING; }
     PARAMETRIZE { move = MOVE_LUNAR_BLESSING; }
@@ -705,7 +728,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
     PARAMETRIZE { move = MOVE_AROMATHERAPY; }
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_SLEEP_TALK) == EFFECT_SLEEP_TALK);
         ASSUME(GetMoveEffect(MOVE_PSYCHO_SHIFT) == EFFECT_PSYCHO_SHIFT);
         ASSUME(GetMoveEffect(MOVE_JUNGLE_HEALING) == EFFECT_JUNGLE_HEALING);
@@ -761,7 +785,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_PELIPPER) { Ability(ABILITY_DRIZZLE); }
         OPPONENT(SPECIES_LUVDISC) { Ability(ABILITY_HYDRATION); }
     } WHEN {
@@ -785,7 +810,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_SWABLU) { Ability(ABILITY_NATURAL_CURE); }
         OPPONENT(SPECIES_ZIGZAGOON);
@@ -809,13 +835,17 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 
 SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mon is woken up by Shed Skin")
 {
-    if (B_ABILITY_TRIGGER_CHANCE == GEN_4)
-        PASSES_RANDOMLY(30, 100, RNG_SHED_SKIN);
-    else
-        PASSES_RANDOMLY(33, 100, RNG_SHED_SKIN);
+    u32 config, passes;
+    PARAMETRIZE { config = GEN_3; passes = 33; }
+    PARAMETRIZE { config = GEN_4; passes = 30; }
+    PARAMETRIZE { config = GEN_5; passes = 33; }
+
+    PASSES_RANDOMLY(passes, 100, RNG_SHED_SKIN);
     GIVEN {
+        WITH_CONFIG(B_ABILITY_TRIGGER_CHANCE, config);
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_DRATINI) { Ability(ABILITY_SHED_SKIN); }
     } WHEN {
@@ -839,7 +869,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
     PASSES_RANDOMLY(30, 100, RNG_HEALER);
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_ZIGZAGOON);
@@ -867,7 +898,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
     PARAMETRIZE { heldItem = ITEM_LUM_BERRY; }
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(gItemsInfo[ITEM_CHESTO_BERRY].holdEffect == HOLD_EFFECT_CURE_SLP);
         ASSUME(gItemsInfo[ITEM_LUM_BERRY].holdEffect == HOLD_EFFECT_CURE_STATUS);
         PLAYER(SPECIES_ZIGZAGOON);
@@ -898,7 +930,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
     PARAMETRIZE { heldItem = ITEM_LUM_BERRY; }
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_FLING) == EFFECT_FLING);
         ASSUME(gItemsInfo[ITEM_CHESTO_BERRY].holdEffect == HOLD_EFFECT_CURE_SLP);
         ASSUME(gItemsInfo[ITEM_LUM_BERRY].holdEffect == HOLD_EFFECT_CURE_STATUS);
@@ -931,7 +964,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(gItemsInfo[ITEM_AWAKENING].battleUsage == EFFECT_ITEM_CURE_STATUS);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_ZIGZAGOON);
@@ -955,13 +989,14 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_ZIGZAGOON) { Level(5); }
         OPPONENT(SPECIES_ZIGZAGOON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
-        TURN { MOVE(player, MOVE_TACKLE); SEND_OUT(opponent, 1); }
+        TURN { MOVE(player, MOVE_SCRATCH); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_SPORE); }
     } SCENE {
         MESSAGE("Zigzagoon used Spore!");
@@ -980,14 +1015,15 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_ZIGZAGOON) { Level(5); }
         OPPONENT(SPECIES_ZIGZAGOON);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentLeft); MOVE(playerRight, MOVE_TACKLE, target: opponentLeft); }
-        TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentRight);}
+        TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentLeft); MOVE(playerRight, MOVE_SCRATCH, target: opponentLeft); }
+        TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentRight); }
     } SCENE {
         MESSAGE("Zigzagoon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
@@ -1003,12 +1039,13 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 
 SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mon is woken up by gaining the ability Insomnia / Vital Spirit")
 {
-    u32 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_VITAL_SPIRIT; }
     PARAMETRIZE { ability = ABILITY_INSOMNIA; }
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_DELIBIRD) { Ability(ability); }
         OPPONENT(SPECIES_ZIGZAGOON) { Moves(MOVE_SLEEP_TALK, MOVE_SKILL_SWAP); }
     } WHEN {
@@ -1039,12 +1076,14 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 
 SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mon is sent out, has Trace, and Traces Insomnia / Vital spirit")
 {
-    u32 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_VITAL_SPIRIT; }
     PARAMETRIZE { ability = ABILITY_INSOMNIA; }
+
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ZIGZAGOON)
         PLAYER(SPECIES_DELIBIRD) { Ability(ability); }
         OPPONENT(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
@@ -1075,13 +1114,14 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
 
 SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mon is sent out and transforms into a mon with Insomnia / Vital spirit")
 {
-    u32 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_VITAL_SPIRIT; }
     PARAMETRIZE { ability = ABILITY_INSOMNIA; }
     KNOWN_FAILING; // Sleep Clause parts work, but Imposter seems broken with battle messages / targeting. Issue #5565 https://github.com/rh-hideout/pokeemerald-expansion/issues/5565
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(gItemsInfo[ITEM_LAGGING_TAIL].holdEffect == HOLD_EFFECT_LAGGING_TAIL);
         PLAYER(SPECIES_ZIGZAGOON)
         PLAYER(SPECIES_DELIBIRD) { Ability(ability); }
@@ -1116,7 +1156,8 @@ AI_SINGLE_BATTLE_TEST("Sleep Clause: AI will use sleep moves again when sleep cl
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(gItemsInfo[ITEM_CHESTO_BERRY].holdEffect == HOLD_EFFECT_CURE_SLP);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_CHESTO_BERRY); }
@@ -1132,7 +1173,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(MoveHasAdditionalEffect(MOVE_G_MAX_SWEETNESS, MOVE_EFFECT_AROMATHERAPY));
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_APPLETUN) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -1158,7 +1200,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Pre-existing sleep condition doesn't activate 
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_ZIGZAGOON) { Status1(STATUS1_SLEEP); }
         OPPONENT(SPECIES_ZIGZAGOON);
@@ -1177,16 +1220,17 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep caused by Effect Spore does not prevent 
     PASSES_RANDOMLY(11, 100, RNG_EFFECT_SPORE);
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_5);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        WITH_CONFIG(B_ABILITY_TRIGGER_CHANCE, GEN_5);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_AROMATHERAPY) == EFFECT_HEAL_BELL);
-        ASSUME(MoveMakesContact(MOVE_TACKLE));
+        ASSUME(MoveMakesContact(MOVE_SCRATCH));
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_SPORE); }
         TURN { SWITCH(player, 2); MOVE(opponent, MOVE_SPORE); }
     } SCENE {
@@ -1213,14 +1257,17 @@ SINGLE_BATTLE_TEST("Sleep Clause: Waking up after Effect Spore doesn't deactivat
     PASSES_RANDOMLY(11, 100, RNG_EFFECT_SPORE);
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_5);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
-        ASSUME(MoveMakesContact(MOVE_TACKLE));
+        WITH_CONFIG(B_ABILITY_TRIGGER_CHANCE, GEN_5);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
+        ASSUME(MoveMakesContact(MOVE_SCRATCH));
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
+        TURN {}
+        TURN {}
         TURN {}
         TURN {}
         TURN {}
@@ -1250,17 +1297,18 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Waking up after Effect Spore doesn't deactivat
     PASSES_RANDOMLY(11, 100, RNG_EFFECT_SPORE);
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_5);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        WITH_CONFIG(B_ABILITY_TRIGGER_CHANCE, GEN_5);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_AROMATHERAPY) == EFFECT_HEAL_BELL);
-        ASSUME(MoveMakesContact(MOVE_TACKLE));
+        ASSUME(MoveMakesContact(MOVE_SCRATCH));
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
         OPPONENT(SPECIES_ZIGZAGOON);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); MOVE(opponentRight, MOVE_SPORE, target:playerRight); }
+        TURN { MOVE(playerLeft, MOVE_SCRATCH, target: opponentLeft); MOVE(opponentRight, MOVE_SPORE, target:playerRight); }
         TURN { SWITCH(playerLeft, 2); }
         TURN { MOVE(playerLeft, MOVE_AROMATHERAPY); MOVE(opponentRight, MOVE_SPORE, target:playerRight); MOVE(opponentLeft, MOVE_SPORE, target:playerLeft); }
     } SCENE {
@@ -1291,7 +1339,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Waking up after Rest doesn't deactivate sleep 
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
         PLAYER(SPECIES_ZIGZAGOON) { HP(1); MaxHP(100); }
         PLAYER(SPECIES_ZIGZAGOON);
@@ -1327,7 +1376,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Waking up after Rest doesn't deactivate sleep 
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
         PLAYER(SPECIES_ZIGZAGOON) { HP(1); MaxHP(100); }
         PLAYER(SPECIES_ZIGZAGOON);
@@ -1360,12 +1410,13 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Waking up after Rest doesn't deactivate sleep 
 
 SINGLE_BATTLE_TEST("Sleep Clause: Suppressing and then sleeping Vital Spirit / Insomnia and switching back in deactivates sleep clause")
 {
-    u32 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_VITAL_SPIRIT; }
     PARAMETRIZE { ability = ABILITY_INSOMNIA; }
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_DELIBIRD) { Ability(ability); }
         OPPONENT(SPECIES_ZIGZAGOON);
@@ -1390,12 +1441,13 @@ SINGLE_BATTLE_TEST("Sleep Clause: Suppressing and then sleeping Vital Spirit / I
 
 SINGLE_BATTLE_TEST("Sleep Clause: Mold Breaker Pokémon sleeping Vital Spirit / Insomnia activates sleep clause")
 {
-    u32 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_VITAL_SPIRIT; }
     PARAMETRIZE { ability = ABILITY_INSOMNIA; }
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_PANCHAM) { Ability(ABILITY_MOLD_BREAKER); }
         OPPONENT(SPECIES_DELIBIRD) { Ability(ability); }
         OPPONENT(SPECIES_ZIGZAGOON);
@@ -1422,15 +1474,17 @@ SINGLE_BATTLE_TEST("Sleep Clause: Yawn'd Pokémon slept due to Effect Spore befo
     PASSES_RANDOMLY(11, 100, RNG_EFFECT_SPORE);
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        WITH_CONFIG(B_ABILITY_TRIGGER_CHANCE, GEN_5);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
-        ASSUME(MoveMakesContact(MOVE_TACKLE));
+        ASSUME(MoveMakesContact(MOVE_SCRATCH));
         PLAYER(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
         OPPONENT(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_ZIGZAGOON);
     } WHEN {
         TURN { MOVE(player, MOVE_YAWN); }
-        TURN { MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(opponent, MOVE_SCRATCH); }
         TURN { SWITCH(opponent, 1); MOVE(player, MOVE_SPORE); }
     } SCENE {
         MESSAGE("The opposing Zigzagoon grew drowsy!");
@@ -1449,7 +1503,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Yawn'd Pokémon who's partner is slept before 
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
@@ -1476,7 +1531,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: If both Pokémon on one side are Yawn'd at the
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
         PLAYER(SPECIES_ZIGZAGOON) { Speed(5); }
         PLAYER(SPECIES_ZIGZAGOON) { Speed(4); }
@@ -1484,7 +1540,7 @@ DOUBLE_BATTLE_TEST("Sleep Clause: If both Pokémon on one side are Yawn'd at the
         OPPONENT(SPECIES_ZIGZAGOON) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_YAWN, target: opponentLeft); MOVE(playerRight, MOVE_YAWN, target: opponentRight); }
-        TURN { }
+        TURN {}
     } SCENE {
         MESSAGE("The opposing Zigzagoon grew drowsy!");
         MESSAGE("The opposing Zigzagoon grew drowsy!");
@@ -1501,7 +1557,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Reflection moves (ie. Magic Coat) fail if slee
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_MAGIC_COAT) == EFFECT_MAGIC_COAT);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
@@ -1526,7 +1583,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Reflection moves (ie. Magic Coat) that reflect
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_MAGIC_COAT) == EFFECT_MAGIC_COAT);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
@@ -1581,7 +1639,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Magic Bounce'ing a sleep move activates sleep 
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ESPEON) { Ability(ABILITY_MAGIC_BOUNCE); }
         PLAYER(SPECIES_ZIGZAGOON);
         OPPONENT(SPECIES_ZIGZAGOON);
@@ -1634,7 +1693,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep Clause does not prevent sleeping your pa
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
@@ -1719,8 +1779,10 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep Clause does not prevent sleeping your pa
 DOUBLE_BATTLE_TEST("Sleep Clause: Sleep moves used after being Encore'd are prevented when sleep clause is active")
 {
     GIVEN {
+        WITH_CONFIG(B_ENCORE_TARGET, GEN_3);
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
@@ -1749,7 +1811,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Spore'ing opponent after Yawn'ing partner does
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);
@@ -1786,7 +1849,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Opponent Spore'ing player's partner after part
 {
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
-        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_SLEEP);
+        ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
         PLAYER(SPECIES_ZIGZAGOON);
         PLAYER(SPECIES_ZIGZAGOON);

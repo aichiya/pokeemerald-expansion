@@ -4,7 +4,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: No
+Battle Type: Singles
 
 Bubbles (Wobbuffet) (F) @ Assault Vest
 Hasty Nature
@@ -14,7 +14,7 @@ IVs: 25 HP / 26 Atk / 27 Def / 29 SpA / 30 SpD / 28 Spe
 EVs: 252 HP / 4 SpA / 252 Spe
 Happiness: 42
 Shiny: Yes
-Ball: Master Ball
+Ball: Master
 Dynamax Level: 5
 - Air Slash
 - Barrier
@@ -36,7 +36,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: No
+Battle Type: Singles
 Difficulty: Normal
 
 Mewtwo
@@ -48,7 +48,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: No
+Battle Type: Singles
 Difficulty: Normal
 
 Mewtwo
@@ -60,7 +60,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: No
+Battle Type: Singles
 Difficulty: Easy
 
 Metapod
@@ -72,7 +72,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: No
+Battle Type: Singles
 Difficulty: Hard
 
 Arceus
@@ -84,7 +84,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: No
+Battle Type: Singles
 Party Size: 1
 
 Wynaut
@@ -101,7 +101,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: No
+Battle Type: Singles
 Party Size: 3
 
 Wynaut
@@ -126,7 +126,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: Yes
+Battle Type: Doubles
 Party Size: 3
 Pool Rules: Weather Doubles
 
@@ -164,7 +164,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: No
+Battle Type: Singles
 Party Size: 2
 Pool Rules: Basic
 
@@ -183,7 +183,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: No
+Battle Type: Singles
 Party Size: 2
 Pool Rules: Basic
 Pool Prune: Test
@@ -201,7 +201,7 @@ Class: Pkmn Trainer 1
 Pic: Red
 Gender: Male
 Music: Male
-Double Battle: No
+Battle Type: Singles
 Party Size: 2
 Pool Rules: Basic
 Pool Pick Functions: Lowest
@@ -213,3 +213,50 @@ Wobbuffet
 
 Eevee
 Tags: Lead
+
+=== 9 ===
+Name: Test9
+Class: Pkmn Trainer 1
+Pic: Red
+Gender: Male
+Music: Male
+Double Battle: Yes
+Party Size: 2
+
+Wynaut
+
+Wobbuffet
+
+=== 10 ===
+Name: Test10
+Class: Pkmn Trainer 1
+Pic: Red
+Gender: Male
+Music: Male
+Battle Type: Doubles
+Party Size: 2
+
+Wynaut
+
+Wobbuffet
+
+=== 11 ===
+Name: Test11
+Class: Black Belt
+Pic: Red
+Gender: Male
+Music: Male
+Battle Type: Singles
+Party Size: 6
+
+Wynaut
+
+Wobbuffet
+
+Eevee
+
+Mew
+
+Oddish
+
+Aron

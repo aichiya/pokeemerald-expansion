@@ -92,3 +92,15 @@ Tera Type: TYPE_NEW_DIVINE
 - MOVE_DIMENSION_SHOT
 - MOVE_FLUFFICATION
 - MOVE_TWIN_SPARK
+
+=== PARTNER_DUMMY ===
+Name:
+Class: Pkmn Trainer 1
+Pic: Brendan
+Gender: Male
+Music: Male
+Back Pic: Brendan
+Party Size: 0
+
+Wynaut
+

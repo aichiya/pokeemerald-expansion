@@ -4415,7 +4415,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
                 break;
             case ABILITY_AUTUMN_GODDESSES:
-                if (IsBattlerWeatherAffected(battler, B_WEATHER_SUN)
+                if (IsBattlerWeatherAffected(GetBattlerHoldEffect(battler), GetWeather(), B_WEATHER_SUN)
                  && !IsBattlerAtMaxHp(battler)
                  && !gBattleMons[battler].volatiles.healBlock)
                 {
@@ -4426,7 +4426,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     gBattleStruct->moveDamage[battler] *= -1;
                     effect++;
                 }
-                if (IsBattlerWeatherAffected(battler, B_WEATHER_SUN)
+                if (IsBattlerWeatherAffected(GetBattlerHoldEffect(battler), GetWeather(), B_WEATHER_SUN)
                  && gBattleMons[battler].status1 & STATUS1_ANY)
                 {
                     goto ABILITY_HEAL_MON_STATUS;
@@ -4909,7 +4909,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (IsBattlerAlive(gBattlerAttacker)
              && (CompareStat(gBattlerAttacker, STAT_SPEED, MIN_STAT_STAGE, CMP_GREATER_THAN, gLastUsedAbility) || GetBattlerAbility(gBattlerAttacker) == ABILITY_MIRROR_ARMOR)
              && !gBattleStruct->unableToUseMove
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && !(GetBattlerAbility(gBattlerTarget) == ABILITY_SOUNDPROOF || GetBattlerAbility(gBattlerTarget) == ABILITY_LAST_CADENZA))
             {
                 SET_STATCHANGER(STAT_SPEED, 1, TRUE);
@@ -4944,7 +4944,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (!(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
              && IsBattlerAlive(gBattlerAttacker)
              && !gBattleStruct->unableToUseMove
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && IsBattleMoveSpecial(move))
             {
                 SetPassiveDamageAmount(gBattlerAttacker, GetNonDynamaxMaxHP(gBattlerAttacker) / (B_ROUGH_SKIN_DMG >= GEN_4 ? 8 : 16));
@@ -4958,7 +4958,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
              && IsBattlerAlive(gBattlerTarget)
              && IsSlicingMove(move)
              && !gBattleStruct->unableToUseMove
-             && IsBattlerTurnDamaged(gBattlerTarget))
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES))
             {
                 SaveBattlerAttacker(gBattlerAttacker);
                 SaveBattlerTarget(gBattlerTarget);
@@ -5099,7 +5099,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (i < sleep
                 && IsBattlerAlive(gBattlerAttacker)
                 && !gBattleStruct->unableToUseMove
-                && IsBattlerTurnDamaged(gBattlerTarget)
+                && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
                 && CanBeSlept(gBattlerTarget, gBattlerAttacker, abilityAtk, NOT_BLOCKED_BY_SLEEP_CLAUSE)
                 && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, abilityAtk, holdEffectAtk, move))
             {
@@ -5116,7 +5116,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             break;
         case ABILITY_ULTRA_EGO:
             if (!(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && IsBattlerAlive(gBattlerTarget))
             {
                 u32 validToRaise = 0;
@@ -5391,7 +5391,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
              && RandomChance(RNG_HEAVY_BLOW, 1, 4)
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_FLINCH))
             {
                 SetMoveEffect(gBattlerAttacker, gBattlerTarget, MOVE_EFFECT_FLINCH, gBattlescriptCurrInstr, EFFECT_PRIMARY);
@@ -5402,7 +5402,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
              && RandomChance(RNG_ELEGANT_BLOW, 1, 4)
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && CanBeParalyzed(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerTarget))
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_PARALYSIS))
             {
@@ -5414,7 +5414,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
              && RandomChance(RNG_ULTRA_HAPPY, 1, 3)
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_INFATUATE))
             {
                 SetMoveEffect(gBattlerAttacker, gBattlerTarget, MOVE_EFFECT_INFATUATE, gBattlescriptCurrInstr, EFFECT_PRIMARY);
@@ -5425,7 +5425,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
              && RandomChance(RNG_ULTRA_SUNNY, 1, 10)
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && CanBeBurned(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerTarget))
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_BURN))
             {
@@ -5437,7 +5437,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
              && RandomChance(RNG_ULTRA_PEACE, 1, 10)
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && CanBeParalyzed(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerTarget))
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_PARALYSIS))
             {
@@ -5449,7 +5449,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
              && RandomChance(RNG_ULTRA_MARCH, 1, 2)
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && CanBeParalyzed(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerTarget))
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_SPD_MINUS_1)
              && CompareStat(gBattlerTarget, STAT_SPEED, MIN_STAT_STAGE, CMP_GREATER_THAN, GetBattlerAbility(gBattlerTarget)))
@@ -5462,7 +5462,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
              && RandomChance(RNG_ULTRA_BEAUTY, 1, 10)
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && CanBeFrozen(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerTarget))
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_FREEZE_OR_FROSTBITE))
             {
@@ -5473,7 +5473,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         case ABILITY_TREASURE_SNIPER:
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_STEAL_STATS))
             {
                 SetMoveEffect(gBattlerAttacker, gBattlerTarget, MOVE_EFFECT_STEAL_STATS_TREASURE_SNIPER, gBattlescriptCurrInstr, EFFECT_PRIMARY);
@@ -5484,7 +5484,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
              && RandomChance(RNG_BAD_DREAMS_SLEEP, 1, 10)
-             && IsBattlerTurnDamaged(gBattlerTarget)
+             && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && CanBeSlept(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerTarget), BLOCKED_BY_SLEEP_CLAUSE)
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_SLEEP))
             {
@@ -8611,7 +8611,7 @@ static inline u32 CalcAttackStat(struct BattleContext *ctx)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
     case ABILITY_WINTER_GIFT:
-        if ((IsBattlerWeatherAffected(battlerAtk, B_WEATHER_SNOW) || IsBattlerWeatherAffected(battlerAtk, B_WEATHER_HAIL)) && IsBattleMoveSpecial(move))
+        if ((IsBattlerWeatherAffected(ctx->holdEffectAtk, ctx->weather, B_WEATHER_SNOW) || IsBattlerWeatherAffected(ctx->holdEffectAtk, ctx->weather, B_WEATHER_HAIL)) && IsBattleMoveSpecial(move))
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_GORILLA_TACTICS:
@@ -8899,7 +8899,7 @@ static inline u32 CalcDefenseStat(struct BattleContext *ctx)
         }
         break;
     case ABILITY_WINTER_GIFT:
-        if ((IsBattlerWeatherAffected(battlerDef, B_WEATHER_SNOW) || IsBattlerWeatherAffected(battlerDef, B_WEATHER_HAIL)) && !usesDefStat)
+        if ((IsBattlerWeatherAffected(ctx->holdEffectDef, ctx->weather, B_WEATHER_SNOW) || IsBattlerWeatherAffected(ctx->holdEffectDef, ctx->weather, B_WEATHER_HAIL)) && !usesDefStat)
         {
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
             if (ctx->updateFlags)
@@ -8936,10 +8936,6 @@ static inline u32 CalcDefenseStat(struct BattleContext *ctx)
         break;
     case ABILITY_FLOWER_GIFT:
         if (IsBattlerWeatherAffected(GetBattlerHoldEffect(battlerDef), GetWeather(), B_WEATHER_SUN) && !usesDefStat)
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
-        break;
-    case ABILITY_FLOWER_GIFT:
-        if (!usesDefStat)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_PURE_SCALES:

@@ -3215,7 +3215,7 @@ static enum MoveEndResult MoveEndMoveBlock(void)
         }
         break;
     case EFFECT_EX_SHADOW_MOVE_RECOIL:
-        if (IsBattlerTurnDamaged(gBattlerTarget) && IsBattlerAlive(gBattlerAttacker) && gBattleStruct->moveDamage[gBattlerTarget] > 0)
+        if (IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES) && IsBattlerAlive(gBattlerAttacker) && gBattleStruct->moveDamage[gBattlerTarget] > 0)
         {
             SetPassiveDamageAmount(gBattlerAttacker, gBattleScripting.savedDmg * max(1, GetMoveRecoil(gCurrentMove)) / 100);
             BattleScriptCall(BattleScript_MoveEffectRecoil);
@@ -3223,7 +3223,7 @@ static enum MoveEndResult MoveEndMoveBlock(void)
         }
         break;
     case EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP:
-        if (IsBattlerTurnDamaged(gBattlerTarget) && IsBattlerAlive(gBattlerAttacker) && gBattleStruct->moveDamage[gBattlerTarget] > 0)
+        if (IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES) && IsBattlerAlive(gBattlerAttacker) && gBattleStruct->moveDamage[gBattlerTarget] > 0)
         {
             s32 recoilCurrentHP = (GetNonDynamaxHP(gBattlerAttacker) + 1) / 2; // Half of Max HP Rounded UP
             SetPassiveDamageAmount(gBattlerAttacker, recoilCurrentHP);
@@ -3248,7 +3248,7 @@ static enum MoveEndResult MoveEndMoveBlock(void)
         }
         break;
     case EFFECT_EX_SHADOW_MOVE_HALF:
-        if (IsBattlerTurnDamaged(gBattlerTarget) && IsBattlerAlive(gBattlerAttacker)
+        if (IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES) && IsBattlerAlive(gBattlerAttacker)
          && !(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_FAILED))
         {
             s32 damage = (GetNonDynamaxHP(gBattlerAttacker) + 1) / 2; // Half of Max HP Rounded UP

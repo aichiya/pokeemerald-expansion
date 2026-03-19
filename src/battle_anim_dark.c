@@ -942,7 +942,7 @@ void AnimTask_MetallicShine(u8 taskId)
 {
     CMD_ARGS(permanent, useColor, color);
 
-    u16 species;
+    enum Species species;
     u8 spriteId;
     u8 newSpriteId;
     u16 paletteNum;

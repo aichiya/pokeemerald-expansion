@@ -4608,7 +4608,7 @@ static void CreateInGameTradePokemonInternal(u8 whichPlayerMon, u8 whichInGameTr
         SetMonData(pokemon, MON_DATA_MET_GAME, &gameMet);
         u8 isModernFatefulEncounter = TRUE;
         SetMonData(pokemon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
-        u16 ball = ITEM_CHERISH_BALL;
+        enum PokeBall ball = BALL_CHERISH;
         SetMonData(pokemon, MON_DATA_POKEBALL, &ball);
         if (VarGet(VAR_GIFTMON_METLOC_SETTING) >= 12 && VarGet(VAR_GIFTMON_METLOC_SETTING) <= 239)
         {

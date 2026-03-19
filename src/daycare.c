@@ -1147,7 +1147,7 @@ void CreateEggMiracle(struct Pokemon *mon, enum Species species, bool8 setHotSpr
         
     CreateRandomMonWithIVs(mon, species, EGG_HATCH_LEVEL, USE_RANDOM_IVS);
     metLevel = 0;
-    ball = ITEM_POKE_BALL;
+    ball = BALL_POKE;
     language = LANGUAGE_JAPANESE;
     cycle = 0;
     SetMonData(mon, MON_DATA_FRIENDSHIP, &cycle);
@@ -1160,7 +1160,7 @@ void CreateEggMiracle(struct Pokemon *mon, enum Species species, bool8 setHotSpr
     {
         if(VarGet(VAR_GIFTMON_METLOC_SETTING) == METLOC_FATEFUL_ENCOUNTER) // Miracle Gacha
         {
-            ball = ITEM_CHERISH_BALL;
+            ball = BALL_CHERISH;
             SetMonData(mon, MON_DATA_POKEBALL, &ball);
             gameMet = VERSION_IDENTIFIER_GACHA;
             SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
@@ -1180,7 +1180,7 @@ void CreateEggMiracle(struct Pokemon *mon, enum Species species, bool8 setHotSpr
         }
         else
         {
-            ball = ITEM_PREMIER_BALL;
+            ball = BALL_PREMIER;
             SetMonData(mon, MON_DATA_POKEBALL, &ball);
             gameMet = VERSION_IDENTIFIER_GACHA;
             SetMonData(mon, MON_DATA_MET_GAME, &gameMet);

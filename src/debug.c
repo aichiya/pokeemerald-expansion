@@ -3646,7 +3646,7 @@ static void DebugAction_Give_Pokemon_ComplexCreateMon(u8 taskId) //https://githu
         SetMonData(&mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &modernFatefulEncounter);
         u8 hasRibbon = TRUE;
         SetMonData(&mon, MON_DATA_SKY_RIBBON, &hasRibbon);
-        u8 ball = ITEM_CHERISH_BALL;
+        enum PokeBall ball = BALL_CHERISH;
         SetMonData(&mon, MON_DATA_POKEBALL, &ball);
         gSaveBlock1Ptr->giftRibbons[0] = 58;
         gSaveBlock1Ptr->giftRibbons[1] = 59;

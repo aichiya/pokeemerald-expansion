@@ -84,14 +84,6 @@ enum ItemEffect
 #define CRITICAL_HIT_BLOCKED -1
 #define CRITICAL_HIT_ALWAYS  -2
 
-// for Natural Gift and Fling
-struct TypePower
-{
-    enum Type type:8;
-    u8 power;
-    u16 effect;
-};
-
 enum ImmunityHealStatusOutcome
 {
     IMMUNITY_NO_EFFECT,
@@ -100,8 +92,6 @@ enum ImmunityHealStatusOutcome
     IMMUNITY_INFATUATION_CLEARED,
     IMMUNITY_TAUNT_CLEARED,
 };
-
-extern const struct TypePower gNaturalGiftTable[];
 
 struct BattleContext
 {
@@ -169,7 +159,6 @@ enum SubCheck
 };
 
 void HandleAction_ThrowBall(void);
-uq4_12_t CalcTypeEffectivenessMultiplierHelper(enum Move move, enum Type moveType, enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability abilityAtk, enum Ability abilityDef, bool32 recordAbilities);
 u32 GetCurrentBattleWeather(void);
 bool32 EndOrContinueWeather(void);
 enum DamageCategory GetReflectDamageMoveDamageCategory(enum BattlerId battler, enum Move move);
@@ -215,7 +204,6 @@ void TryClearRageAndFuryCutter(void);
 bool32 HasNoMonsToSwitch(enum BattlerId battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2);
 bool32 TryChangeBattleWeather(enum BattlerId battler, u32 battleWeatherId, enum Ability ability);
 bool32 TryChangeBattleTerrain(enum BattlerId battler, u32 statusFlag);
-bool32 CanAbilityBlockMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability abilityAtk, enum Ability abilityDef, u32 move, enum ResultOption option);
 bool32 CanTargetBlockPranksterMove(struct BattleContext *ctx, s32 movePriority);
 bool32 CanPsychicTerrainProtectTarget(struct BattleContext *ctx, s32 movePriority);
 bool32 CanMoveBeBlockedByTarget(struct BattleContext *ctx, s32 movePriority);

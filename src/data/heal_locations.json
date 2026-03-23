@@ -192,7 +192,10 @@
       "id": "HEAL_LOCATION_GENSOKYO_HAKUREI_SHRINE",
       "map": "MAP_ROUTE101",
       "x": 15,
-      "y": 19
+      "y": 19,
+      "respawn_map": "MAP_ROUTE101",
+      "respawn_x": 1,
+      "respawn_y": 1
     },
     {
       "id": "HEAL_LOCATION_GENSOKYO_HUMAN_VILLAGE",

@@ -808,14 +808,10 @@ BattleScript_BeakBlastBurn::
 	call BattleScript_MoveEffectBurn
 	return
 
-BattleScript_EffectFling::
-	attackcanceler
-	accuracycheck BattleScript_FlingMissed
-	pause B_WAIT_TIME_SHORT
-    jumpifbyte CMP_EQUAL, sB_ANIM_TARGETS_HIT, 1, BattleScript_HitFromDamageCalc
+BattleScript_FlingMessage::
 	printstring STRINGID_PKMNFLUNG
-	waitmessage B_WAIT_TIME_SHORT
-	goto BattleScript_HitFromDamageCalc
+	waitmessage B_WAIT_TIME_LONG
+	return
 
 BattleScript_EffectFlingConsumeBerry::
 	setbyte sBERRY_OVERRIDE, 1 @ override the requirements for eating berries
@@ -844,7 +840,7 @@ BattleScript_FlingBlockedByShieldDust::
 	removeitem BS_ATTACKER
 	return
 
-BattleScript_FlingMissed:
+BattleScript_FlingMissed::
 	removeitem BS_ATTACKER
 	goto BattleScript_MoveMissedPause
 
@@ -900,13 +896,10 @@ BattleScript_OctolockEndTurn_StasisGazePreventedContraryDo:
 	restoretarget
 	goto BattleScript_OctlockTurnDmgEnd
 
-BattleScript_EffectPoltergeist::
-	attackcanceler
-	accuracycheck BattleScript_MoveMissedPause
-	setpoltergeistmessage
+BattleScript_PoltergeistMessage::
 	printstring STRINGID_ABOUTTOUSEPOLTERGEIST
 	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_HitFromDamageCalc
+	return
 
 BattleScript_EffectTarShot::
 	attackcanceler
@@ -5337,7 +5330,7 @@ BattleScript_SafeguardProtected::
 	pause B_WAIT_TIME_SHORT
 	printstring STRINGID_PKMNUSEDSAFEGUARD
 	waitmessage B_WAIT_TIME_LONG
-	end2
+	goto BattleScript_MoveEnd
 
 BattleScript_SafeguardEnds::
 	pause B_WAIT_TIME_SHORT

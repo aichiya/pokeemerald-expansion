@@ -15453,7 +15453,7 @@ void BS_TryGrimoireCall(void)
 {
     NATIVE_ARGS();
 
-    struct BattleContext ctx;
+    struct DamageContext ctx;
 
     u32 i = 0;
     u16 moveUsed = MOVE_NONE;
@@ -15549,7 +15549,7 @@ void BS_TransformDataExecutionDecade(void)
 
     NATIVE_ARGS();
 
-    struct BattleContext ctx;
+    struct DamageContext ctx;
 
     u32 i = 0;
     s32 j = 0;
@@ -16055,7 +16055,7 @@ void BS_TryCardIncludeAttack(void)
 {
     NATIVE_ARGS();
 
-    struct BattleContext ctx;
+    struct DamageContext ctx;
 
     u32 i = 0;
     u16 moveUsed = MOVE_NONE;

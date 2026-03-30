@@ -961,7 +961,7 @@ static enum CancelerResult CancelerPPDeduction(struct BattleCalcValues *cv)
              ppToDeduct++;
     }
 
-    if (GetBattlerAbility(ctx->battlerAtk) == ABILITY_GRIMOIRE_USER)
+    if (GetBattlerAbility(cv->battlerAtk) == ABILITY_GRIMOIRE_USER)
         ppToDeduct = 0;
 
     // For item Metronome, echoed voice
@@ -1618,15 +1618,15 @@ static enum CancelerResult CancelerCharging(struct BattleCalcValues *cv)
             BattleScriptCall(BattleScript_PowerHerbActivation);
             result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
         }
-        else if (GetBattlerAbility(ctx->battlerAtk) == ABILITY_BRIGHTY_BLOOM)
+        else if (GetBattlerAbility(cv->battlerAtk) == ABILITY_BRIGHTY_BLOOM)
         {
             gBattleScripting.animTurn = 1;
             gBattleScripting.animTargetsHit = 0;
-            gProtectStructs[ctx->battlerAtk].chargingTurn = FALSE;
+            gProtectStructs[cv->battlerAtk].chargingTurn = FALSE;
             SaveBattlerAttacker(gBattlerAttacker);
             gBattleScripting.battler = gBattlerAttacker;
             BattleScriptCall(BattleScript_NoChargingAbilityActivates);
-            result = CANCELER_RESULT_BREAK;
+            result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
         }
         else // Use move next turn
         {

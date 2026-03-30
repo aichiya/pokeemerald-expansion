@@ -1301,8 +1301,8 @@ void GetOnOffBike(u8 transitionFlags)
         SetPlayerAvatarTransitionFlags(transitionFlags);
         if (!(FlagGet(FLAG_MUSIC_NO_CHANGE) || GetCurrentRegionMapSectionId() == MAPSEC_JOHTO_SPACE_HYPER_VESSEL))
         {
-            Overworld_SetSavedMusic(MUS_CYCLING);
-            Overworld_ChangeMusicTo(MUS_CYCLING);
+            Overworld_SetSavedMusic(IS_FRLG ? MUS_RG_CYCLING : MUS_CYCLING);
+            Overworld_ChangeMusicTo(IS_FRLG ? MUS_RG_CYCLING : MUS_CYCLING);
         }
     }
 }

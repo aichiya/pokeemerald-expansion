@@ -3361,7 +3361,7 @@ u8 FldEff_UseSurf(void)
     if (!(FlagGet(FLAG_MUSIC_NO_CHANGE) || GetCurrentRegionMapSectionId() == MAPSEC_JOHTO_SPACE_HYPER_VESSEL))
     {
         Overworld_ClearSavedMusic();
-        Overworld_ChangeMusicTo(MUS_SURF);
+        Overworld_ChangeMusicTo(IS_FRLG ? MUS_RG_SURF : MUS_SURF);
     }
     return FALSE;
 }

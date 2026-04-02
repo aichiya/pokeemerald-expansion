@@ -2,7 +2,7 @@
 const struct SpeciesInfo gSpeciesInfoGen9[] =
 {
 #endif
-
+/*
 #if P_FAMILY_SPRIGATITO
     [SPECIES_SPRIGATITO] =
     {
@@ -1339,11 +1339,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 15,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_MausholdThree,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 15,
-        /*.backAnimId = BACK_ANIM_NONE,*/
+        //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_Maushold,
         .shinyPalette = gMonShinyPalette_Maushold,
         .iconSprite = gMonIcon_MausholdThree,
@@ -1403,11 +1403,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 15,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_MausholdFour,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 15,
-        /*.backAnimId = BACK_ANIM_NONE,*/
+        //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_Maushold,
         .shinyPalette = gMonShinyPalette_Maushold,
         .iconSprite = gMonIcon_MausholdFour,
@@ -1793,11 +1793,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Squawkabilly,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
-        /*.backAnimId = BACK_ANIM_NONE,*/
+        //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_SquawkabillyGreen,
         .shinyPalette = gMonShinyPalette_SquawkabillyGreen,
         .iconSprite = gMonIcon_SquawkabillyGreen,
@@ -1858,11 +1858,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Squawkabilly,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
-        /*.backAnimId = BACK_ANIM_NONE,*/
+        //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_SquawkabillyBlue,
         .shinyPalette = gMonShinyPalette_SquawkabillyBlue,
         .iconSprite = gMonIcon_SquawkabillyBlue,
@@ -1923,11 +1923,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Squawkabilly,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
-        /*.backAnimId = BACK_ANIM_NONE,*/
+        //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_SquawkabillyYellow,
         .shinyPalette = gMonShinyPalette_SquawkabillyYellow,
         .iconSprite = gMonIcon_SquawkabillyYellow,
@@ -1988,11 +1988,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Squawkabilly,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
-        /*.backAnimId = BACK_ANIM_NONE,*/
+        //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_SquawkabillyWhite,
         .shinyPalette = gMonShinyPalette_SquawkabillyWhite,
         .iconSprite = gMonIcon_SquawkabillyWhite,
@@ -4196,7 +4196,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 7,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_PalafinZero,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 15,
@@ -4261,7 +4261,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_PalafinHero,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
@@ -5244,11 +5244,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 14,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_TatsugiriCurly,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 17,
-        /*.backAnimId = BACK_ANIM_NONE,*/
+        //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_TatsugiriCurly,
         .shinyPalette = gMonShinyPalette_TatsugiriCurly,
         .iconSprite = gMonIcon_TatsugiriCurly,
@@ -5309,11 +5309,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 14,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_TatsugiriDroopy,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 17,
-        /*.backAnimId = BACK_ANIM_NONE,*/
+        //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_TatsugiriDroopy,
         .shinyPalette = gMonShinyPalette_TatsugiriDroopy,
         .iconSprite = gMonIcon_TatsugiriDroopy,
@@ -5374,11 +5374,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 14,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_TatsugiriStretchy,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 17,
-        /*.backAnimId = BACK_ANIM_NONE,*/
+        //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_TatsugiriStretchy,
         .shinyPalette = gMonShinyPalette_TatsugiriStretchy,
         .iconSprite = gMonIcon_TatsugiriStretchy,
@@ -5578,7 +5578,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
     },
 #endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TATSUGIRI
-
+*/
 #if P_FAMILY_GREAT_TUSK
     [SPECIES_GREAT_TUSK] =
     {
@@ -5602,7 +5602,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Great Tusk"),
         .cryId = CRY_GREAT_TUSK,
-        .natDexNum = NATIONAL_DEX_GREAT_TUSK,
+        .natDexNum = NATIONAL_DEX_DONPHAN,
         .categoryName = _("Paradox"),
         .height = 22,
         .weight = 3200,
@@ -5669,7 +5669,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Scream Tail"),
         .cryId = CRY_SCREAM_TAIL,
-        .natDexNum = NATIONAL_DEX_SCREAM_TAIL,
+        .natDexNum = NATIONAL_DEX_JIGGLYPUFF,
         .categoryName = _("Paradox"),
         .height = 12,
         .weight = 80,
@@ -5712,7 +5712,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sScreamTailTeachableLearnset,
     },
 #endif //P_FAMILY_SCREAM_TAIL
-
+/*
 #if P_FAMILY_BRUTE_BONNET
     [SPECIES_BRUTE_BONNET] =
     {
@@ -5779,7 +5779,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sBruteBonnetTeachableLearnset,
     },
 #endif //P_FAMILY_BRUTE_BONNET
-
+*/
 #if P_FAMILY_FLUTTER_MANE
     [SPECIES_FLUTTER_MANE] =
     {
@@ -5805,7 +5805,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Flutter Mane"),
         .cryId = CRY_FLUTTER_MANE,
-        .natDexNum = NATIONAL_DEX_FLUTTER_MANE,
+        .natDexNum = NATIONAL_DEX_MISDREAVUS,
         .categoryName = _("Paradox"),
         .height = 14,
         .weight = 40,
@@ -5849,7 +5849,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sFlutterManeTeachableLearnset,
     },
 #endif //P_FAMILY_FLUTTER_MANE
-
+/*
 #if P_FAMILY_SLITHER_WING
     [SPECIES_SLITHER_WING] =
     {
@@ -5915,7 +5915,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sSlitherWingTeachableLearnset,
     },
 #endif //P_FAMILY_SLITHER_WING
-
+*/
 #if P_FAMILY_SANDY_SHOCKS
     [SPECIES_SANDY_SHOCKS] =
     {
@@ -5939,7 +5939,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Sandy Shocks"),
         .cryId = CRY_SANDY_SHOCKS,
-        .natDexNum = NATIONAL_DEX_SANDY_SHOCKS,
+        .natDexNum = NATIONAL_DEX_MAGNETON,
         .categoryName = _("Paradox"),
         .height = 23,
         .weight = 600,
@@ -6006,7 +6006,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Iron Treads"),
         .cryId = CRY_IRON_TREADS,
-        .natDexNum = NATIONAL_DEX_IRON_TREADS,
+        .natDexNum = NATIONAL_DEX_DONPHAN,
         .categoryName = _("Paradox"),
         .height = 9,
         .weight = 2400,
@@ -6073,7 +6073,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Iron Bundle"),
         .cryId = CRY_IRON_BUNDLE,
-        .natDexNum = NATIONAL_DEX_IRON_BUNDLE,
+        .natDexNum = NATIONAL_DEX_DELIBIRD,
         .categoryName = _("Paradox"),
         .height = 6,
         .weight = 110,
@@ -6116,7 +6116,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sIronBundleTeachableLearnset,
     },
 #endif //P_FAMILY_IRON_BUNDLE
-
+/*
 #if P_FAMILY_IRON_HANDS
     [SPECIES_IRON_HANDS] =
     {
@@ -6319,7 +6319,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sIronMothTeachableLearnset,
     },
 #endif //P_FAMILY_IRON_MOTH
-
+*/
 #if P_FAMILY_IRON_THORNS
     [SPECIES_IRON_THORNS] =
     {
@@ -6343,7 +6343,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Iron Thorns"),
         .cryId = CRY_IRON_THORNS,
-        .natDexNum = NATIONAL_DEX_IRON_THORNS,
+        .natDexNum = NATIONAL_DEX_TYRANITAR,
         .categoryName = _("Paradox"),
         .height = 16,
         .weight = 3030,
@@ -6386,7 +6386,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sIronThornsTeachableLearnset,
     },
 #endif //P_FAMILY_IRON_THORNS
-
+/*
 #if P_FAMILY_FRIGIBAX
     [SPECIES_FRIGIBAX] =
     {
@@ -7367,7 +7367,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sMiraidonTeachableLearnset,
     },
 #endif //P_FAMILY_MIRAIDON
-
+*/
 #if P_FAMILY_WALKING_WAKE
     [SPECIES_WALKING_WAKE] =
     {
@@ -7391,7 +7391,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Walking Wake"),
         .cryId = CRY_WALKING_WAKE,
-        .natDexNum = NATIONAL_DEX_WALKING_WAKE,
+        .natDexNum = NATIONAL_DEX_SUICUNE,
         .categoryName = _("Paradox"),
         .height = 35,
         .weight = 2800,
@@ -7433,7 +7433,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sWalkingWakeTeachableLearnset,
     },
 #endif //P_FAMILY_WALKING_WAKE
-
+/*
 #if P_FAMILY_IRON_LEAVES
     [SPECIES_IRON_LEAVES] =
     {
@@ -8001,11 +8001,11 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),                                                                        \
         .frontPicYOffset = frontYOffset,                                                                                \
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,                                                               \
-        /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/                                                                    \
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,                                                                      \
         .backPic = gMonBackPic_Ogerpon##Form2,                                                                          \
         .backPicSize = MON_COORDS_SIZE(64, 64),                                                                         \
         .backPicYOffset = backYOffset,                                                                                  \
-        /*.backAnimId = BACK_ANIM_NONE,*/                                                                               \
+        //.backAnimId = BACK_ANIM_NONE,                                                                                 \
         .palette = gMonPalette_Ogerpon##Form2,                                                                          \
         .shinyPalette = gMonShinyPalette_Ogerpon##Form2,                                                                \
         .iconSprite = gMonIcon_Ogerpon##Form1,                                                                          \
@@ -8043,7 +8043,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
 #endif //P_TERA_FORMS
 
 #endif //P_FAMILY_OGERPON
-
+*/
 #if P_FAMILY_GOUGING_FIRE
     [SPECIES_GOUGING_FIRE] =
     {
@@ -8067,7 +8067,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Gouging Fire"),
         .cryId = CRY_GOUGING_FIRE,
-        .natDexNum = NATIONAL_DEX_GOUGING_FIRE,
+        .natDexNum = NATIONAL_DEX_ENTEI,
         .categoryName = _("Paradox"),
         .height = 35,
         .weight = 5900,
@@ -8134,7 +8134,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Raging Bolt"),
         .cryId = CRY_RAGING_BOLT,
-        .natDexNum = NATIONAL_DEX_RAGING_BOLT,
+        .natDexNum = NATIONAL_DEX_RAIKOU,
         .categoryName = _("Paradox"),
         .height = 52,
         .weight = 4800,
@@ -8177,7 +8177,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sRagingBoltTeachableLearnset,
     },
 #endif //P_FAMILY_RAGING_BOLT
-
+/*
 #if P_FAMILY_IRON_BOULDER
     [SPECIES_IRON_BOULDER] =
     {
@@ -8581,6 +8581,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sPecharuntTeachableLearnset,
     },
 #endif //P_FAMILY_PECHARUNT
+*/
 
 #ifdef __INTELLISENSE__
 };

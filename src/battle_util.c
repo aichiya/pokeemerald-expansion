@@ -10431,7 +10431,7 @@ void ActivateMegaEvolution(enum BattlerId battler)
 
     if (TryBattleFormChange(battler, FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE, ability))
     {
-        if (gBattleMons[battler].species == SPECIES_RAYQUAZA || gBattleMons[battler].species == SPECIES_RAYQUAZA_MEGA)
+        if (gBattleMons[battler].species == SPECIES_ETC_ILLYASVIEL_NORMAL || gBattleMons[battler].species == SPECIES_ETC_ILLYASVIEL_ZWEI)
             BattleScriptPushCursorAndCallback(BattleScript_WishMegaEvolutionIllya);
         else
             BattleScriptPushCursorAndCallback(BattleScript_WishMegaEvolution);

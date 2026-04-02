@@ -26435,6 +26435,33 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_GraceOfDream,
     },
 
+    [MOVE_POWER_FORTISSIMO] =  // To do
+    {
+        .name = COMPOUND_STRING("Hyper Voice"),
+        .description = COMPOUND_STRING(
+            "Sound-powered impact that\n"
+            "may flinch the target."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_NATURE,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 10,
+        }),
+        .soundMove = TRUE,
+        .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_6,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MONS : CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Superpower,
+    },
+
 // ============= Start Shadow Moves ===================
 
     [MOVE_EX_SHADOW_BLITZ] =

@@ -1,4 +1,4 @@
-#if P_FAMILY_BULBASAUR
+/*#if P_FAMILY_BULBASAUR
 static const struct FormChange sVenusaurFormChangeTable[] =
 {
 #if P_MEGA_EVOLUTIONS
@@ -2180,6 +2180,7109 @@ static const struct FormChange sTerapagosFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_TERAPAGOS
+*/
+
+static const struct FormChange sChikoritaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CHIKORITA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeChikoritaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CHIKORITA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBayleefFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BAYLEEF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeBayleefFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_BAYLEEF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMeganiumFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MEGANIUM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MEGANIUM_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MEGANIUM_MEGA, ITEM_MEGANIUMITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MEGANIUM},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MEGANIUM},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMeganiumFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MEGANIUM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MOE_MEGANIUM_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_MEGANIUM_MEGA, ITEM_MEGANIUMITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_MEGANIUM},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_MEGANIUM},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCyndaquilFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CYNDAQUIL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCyndaquilFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CYNDAQUIL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sQuilavaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_QUILAVA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeQuilavaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_QUILAVA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTyphosionFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TYPHLOSION,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTyphosionHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TYPHLOSION_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTyphosionFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TYPHLOSION,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTyphosionHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TYPHLOSION_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTotodileFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TOTODILE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTotodileFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TOTODILE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCroconawFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CROCONAW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCroconawFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CROCONAW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sFeraligatrFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_FERALIGATR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_FERALIGATR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_FERALIGATR_MEGA, ITEM_FERALIGITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_FERALIGATR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_FERALIGATR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeFeraligatrFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_FERALIGATR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MOE_FERALIGATR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_FERALIGATR_MEGA, ITEM_FERALIGITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_FERALIGATR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_FERALIGATR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPidgeyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIDGEY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePidgeyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIDGEY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPidgeottoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIDGEOTTO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePidgeottoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIDGEOTTO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPidgeotFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIDGEOT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PIDGEOT_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_PIDGEOT_MEGA, ITEM_PIDGEOTITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_PIDGEOT},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_PIDGEOT},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePidgeotFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIDGEOT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MOE_PIDGEOT_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_PIDGEOT_MEGA, ITEM_PIDGEOTITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_FERALIGATR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_FERALIGATR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSpearowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SPEAROW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSpearowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SPEAROW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sFearowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_FEAROW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeFearowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_FEAROW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHoothootFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HOOTHOOT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHoothootFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HOOTHOOT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNoctowlFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_NOCTOWL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeNoctowlFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NOCTOWL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRattataFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RATTATA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRattataAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RATTATA_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRattataFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RATTATA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRattataAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RATTATA_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRaticateFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RATICATE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRaticateAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RATICATE_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRaticateAlolaTotemFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RATICATE_ALOLA_TOTEM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRaticateFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RATICATE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRaticateAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RATICATE_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRaticateAlolaTotemFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RATICATE_ALOLA_TOTEM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSentretFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SENTRET,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSentretFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SENTRET,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sFurretFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_FURRET,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeFurretFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_FURRET,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPichuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PICHU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPichuSpikyEaredFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PICHU_SPIKY_EARED,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePichuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PICHU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePichuSpikyEaredFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PICHU_SPIKY_EARED,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_PIKACHU_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_PIKACHU},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_PIKACHU},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuCosplayFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_COSPLAY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuRockStarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_ROCK_STAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuBelleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_BELLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuPopStarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_POP_STAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuPhDFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_PHD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuLibreFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_LIBRE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuOriginalCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_ORIGINAL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuHoennCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_HOENN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuSinnohCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_SINNOH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuUnovaCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_UNOVA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuKalosCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_KALOS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuAlolaCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuPartnerCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_PARTNER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuWorldCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_WORLD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPikachuPartnerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PIKACHU_STARTER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MOE_PIKACHU_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_MOE_PIKACHU},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_MOE_PIKACHU},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuCosplayFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_COSPLAY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuRockStarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_ROCK_STAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuBelleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_BELLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuPopStarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_POP_STAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuPhDFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_PHD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuLibreFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_LIBRE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuOriginalCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_ORIGINAL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuHoennCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_HOENN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuSinnohCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_SINNOH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuUnovaCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_UNOVA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuKalosCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_KALOS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuAlolaCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuPartnerCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_PARTNER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuWorldCapFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_WORLD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePikachuPartnerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PIKACHU_STARTER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRaichuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RAICHU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_RAICHU_MEGA_X, ITEM_RAICHUNITE_X},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_RAICHU_MEGA_Y, ITEM_RAICHUNITE_Y},
+    {FORM_CHANGE_FAINT,                         SPECIES_RAICHU},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_RAICHU},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRaichuAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RAICHU_ALOLA,   ITEM_REVEAL_GLASS},
+};
+
+static const struct FormChange sMoeRaichuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RAICHU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_RAICHU_MEGA_X, ITEM_RAICHUNITE_X},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_RAICHU_MEGA_Y, ITEM_RAICHUNITE_Y},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_RAICHU},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_RAICHU},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRaichuAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RAICHU_ALOLA,   ITEM_REVEAL_GLASS},
+};
+
+static const struct FormChange sCaterpieFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CATERPIE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCaterpieFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CATERPIE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMetapodFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_METAPOD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMetapodFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_METAPOD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sButterfreeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BUTTERFREE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_BUTTERFREE_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_BUTTERFREE},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_MOE_BUTTERFREE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeButterfreeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BUTTERFREE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MOE_BUTTERFREE_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_MOE_BUTTERFREE},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_MOE_BUTTERFREE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWeedleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WEEDLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWeedleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WEEDLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKakunaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_KAKUNA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeKakunaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_KAKUNA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBeedrillFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BEEDRILL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BEEDRILL_MEGA, ITEM_BEEDRILLITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_BEEDRILL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_BEEDRILL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeBeedrillFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BEEDRILL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_BEEDRILL_MEGA, ITEM_BEEDRILLITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_BEEDRILL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_BEEDRILL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sLedybaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_LEDYBA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeLedybaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_LEDYBA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sLedianFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_LEDIAN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeLedianFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_LEDIAN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSpinarakFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SPINARAK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSpinarakFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SPINARAK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sAriadosFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ARIADOS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeAriadosFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ARIADOS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGeodudeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GEODUDE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGeodudeAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GEODUDE_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGeodudeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GEODUDE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGeodudeAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GEODUDE_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGravelerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GRAVELER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGravelerAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GRAVELER_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGravelerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GRAVELER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGravelerAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GRAVELER_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGolemFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GOLEM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGolemAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GOLEM_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGolemFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GOLEM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGolemAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GOLEM_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sZubatFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ZUBAT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeZubatFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ZUBAT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGolbatFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GOLBAT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGolbatFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GOLBAT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCrobatFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CROBAT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCrobatFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CROBAT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCleffaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CLEFFA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCleffaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CLEFFA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sClefairyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CLEFAIRY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeClefairyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CLEFAIRY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sClefableFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CLEFABLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_CLEFABLE_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CLEFABLE_MEGA, ITEM_CLEFABLITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_CLEFABLE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_CLEFABLE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeClefableFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CLEFABLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MOE_CLEFABLE_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_CLEFABLE_MEGA, ITEM_CLEFABLITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_CLEFABLE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_CLEFABLE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sIgglybuffFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_IGGLYBUFF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeIgglybuffFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_IGGLYBUFF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sJigglypuffFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_JIGGLYPUFF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sScreamTailFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SCREAM_TAIL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeJigglypuffFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_JIGGLYPUFF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeScreamTailFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SCREAM_TAIL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWigglytuffFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WIGGLYTUFF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWigglytuffFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WIGGLYTUFF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTogepiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TOGEPI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTogepiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TOGEPI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTogeticFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TOGETIC,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTogeticFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TOGETIC,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTogekissFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TOGEKISS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTogekissFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TOGEKISS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSandshrewFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SANDSHREW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSandshrewAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SANDSHREW_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSandshrewFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SANDSHREW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSandshrewAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SANDSHREW_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSandslashFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SANDSLASH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSandslashAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SANDSLASH_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSandslashFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SANDSLASH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSandslashAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SANDSLASH_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEkansFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_EKANS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeEkansFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_EKANS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sArbokFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ARBOK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeArbokFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ARBOK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDunsparceFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DUNSPARCE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDunsparceFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DUNSPARCE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDudunsparceFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DUDUNSPARCE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDudunsparceThreeSegmentFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DUDUNSPARCE_THREE_SEGMENT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDudunsparceFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DUDUNSPARCE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDudunsparceThreeSegmentFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DUDUNSPARCE_THREE_SEGMENT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMareepFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAREEP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMareepFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAREEP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sFlaaffyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_FLAAFFY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeFlaaffyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_FLAAFFY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sAmpharosFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_AMPHAROS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_AMPHAROS_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_AMPHAROS_MEGA, ITEM_AMPHAROSITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_AMPHAROS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_AMPHAROS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeAmpharosFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_AMPHAROS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MOE_AMPHAROS_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_AMPHAROS_MEGA, ITEM_AMPHAROSITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_AMPHAROS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_AMPHAROS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWooperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WOOPER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWooperPaldeaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WOOPER_PALDEA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWooperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WOOPER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWooperPaldeaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WOOPER_PALDEA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sQuagsireFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_QUAGSIRE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeQuagsireFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_QUAGSIRE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sClodsireFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CLODSIRE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeClodsireFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CLODSIRE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGastlyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GASTLY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGastlyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GASTLY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHaunterFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HAUNTER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHaunterFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HAUNTER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGengarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GENGAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_GENGAR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GENGAR_MEGA, ITEM_GENGARITE},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_GENGAR_GMAX},
+    {FORM_CHANGE_FAINT,                         SPECIES_GENGAR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_GENGAR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGengarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GENGAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_GENGAR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_GENGAR_MEGA, ITEM_GENGARITE},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_MOE_GENGAR_GMAX},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_GENGAR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_GENGAR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownBFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_B,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownCFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_C,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownDFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_D,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownEFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_E,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownFFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_F,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownGFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_G,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownHFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_H,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownIFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_I,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownJFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_J,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownKFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_K,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownLFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_L,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownMFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_M,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownNFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_N,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownOFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_O,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownPFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_P,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownQFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_Q,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownRFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_R,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownSFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_S,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownTFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_T,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownUFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_U,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownVFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_V,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownWFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_W,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownXFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_X,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownYFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_Y,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownZFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_Z,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownExclamationFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_EXCLAMATION,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUnownQuestionFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UNOWN_QUESTION,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownBFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_B,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownCFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_C,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownDFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_D,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownEFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_E,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownFFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_F,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownGFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_G,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownHFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_H,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownIFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_I,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownJFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_J,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownKFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_K,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownLFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_L,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownMFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_M,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownNFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_N,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownOFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_O,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownPFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_P,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownQFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_Q,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownRFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_R,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownSFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_S,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownTFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_T,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownUFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_U,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownVFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_V,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownWFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_W,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownXFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_X,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownYFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_Y,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownZFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_Z,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownExclamationFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_EXCLAMATION,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUnownQuestionFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UNOWN_QUESTION,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sOnixFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ONIX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeOnixFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ONIX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSteelixFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_STEELIX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_STEELIX_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_STEELIX_MEGA, ITEM_STEELIXITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_STEELIX},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_STEELIX},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSteelixFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_STEELIX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_STEELIX_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_STEELIX_MEGA, ITEM_STEELIXITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_STEELIX},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_STEELIX},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBellsproutFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BELLSPROUT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeBellsproutFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_BELLSPROUT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWeepinbellFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WEEPINBELL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWeepinbellFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WEEPINBELL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sVictreebelFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_VICTREEBEL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_VICTREEBEL_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_VICTREEBEL_MEGA, ITEM_VICTREEBELITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_VICTREEBEL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_VICTREEBEL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeVictreebelFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_VICTREEBEL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_VICTREEBEL_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_VICTREEBEL_MEGA, ITEM_VICTREEBELITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_VICTREEBEL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_VICTREEBEL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHoppipFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HOPPIP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHoppipFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HOPPIP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSkiploomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SKIPLOOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSkiploomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SKIPLOOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sJumpluffFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_JUMPLUFF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeJumpluffFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_JUMPLUFF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sParasFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PARAS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeParasFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PARAS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sParasectFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PARASECT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeParasectFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PARASECT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPoliwagFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_POLIWAG,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePoliwagFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_POLIWAG,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPoliwhirlFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_POLIWHIRL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePoliwhirlFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_POLIWHIRL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPoliwrathFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_POLIWRATH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePoliwrathFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_POLIWRATH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPolitoedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_POLITOED,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePolitoedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_POLITOED,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMagikarpFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAGIKARP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMagikarpFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAGIKARP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGyaradosFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GYARADOS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_GYARADOS_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GYARADOS_MEGA, ITEM_GYARADOSITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_GYARADOS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_GYARADOS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGyaradosFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GYARADOS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_GYARADOS_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_GYARADOS_MEGA, ITEM_GYARADOSITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_GYARADOS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_GYARADOS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGoldeenFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GOLDEEN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGoldeenFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GOLDEEN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSeakingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SEAKING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSeakingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SEAKING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSlowpokeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SLOWPOKE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSlowpokeGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SLOWPOKE_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSlowpokeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SLOWPOKE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSlowpokeGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SLOWPOKE_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSlowbroFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SLOWBRO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_SLOWBRO_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SLOWBRO_MEGA, ITEM_SLOWBRONITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_SLOWBRO},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_SLOWBRO},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSlowbroGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SLOWBRO_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSlowbroFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SLOWBRO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_SLOWBRO_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_SLOWBRO_MEGA, ITEM_SLOWBRONITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_SLOWBRO},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_SLOWBRO},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSlowbroGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SLOWBRO_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSlowkingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SLOWKING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSlowkingGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SLOWKING_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSlowkingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SLOWKING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSlowkingGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SLOWKING_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sOddishFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ODDISH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeOddishFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ODDISH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGloomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GLOOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGloomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GLOOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sVileplumeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_VILEPLUME,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeVileplumeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_VILEPLUME,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBellossomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BELLOSSOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeBellossomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_BELLOSSOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDrowzeeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DROWZEE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDrowzeeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DROWZEE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHypnoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HYPNO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHypnoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HYPNO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sAbraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ABRA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeAbraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ABRA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKadabraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_KADABRA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeKadabraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_KADABRA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sAlakazamFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ALAKAZAM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_ALAKAZAM_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_ALAKAZAM_MEGA, ITEM_ALAKAZITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_ALAKAZAM},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_ALAKAZAM},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeAlakazamFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ALAKAZAM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_ALAKAZAM_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_ALAKAZAM_MEGA, ITEM_ALAKAZITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_ALAKAZAM},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_ALAKAZAM},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDittoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DITTO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDittoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DITTO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPinecoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PINECO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePinecoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PINECO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sForretressFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_FORRETRESS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeForretressFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_FORRETRESS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNidoranFFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_NIDORAN_F,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeNidoranFFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NIDORAN_F,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNidorinaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_NIDORINA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeNidorinaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NIDORINA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNidoqueenFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_NIDOQUEEN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeNidoqueenFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NIDOQUEEN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNidoranMFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_NIDORAN_M,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeNidoranMFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NIDORAN_M,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNidorinoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_NIDORINO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeNidorinoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NIDORINO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNidokingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_NIDOKING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeNidokingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NIDOKING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sYanmaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_YANMA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeYanmaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_YANMA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sYanmegaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_YANMEGA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeYanmegaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_YANMEGA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSunkernFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SUNKERN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSunkernFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SUNKERN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSunfloraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SUNFLORA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSunfloraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SUNFLORA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sExeggcuteFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_EXEGGCUTE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeExeggcuteFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_EXEGGCUTE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sExeggutorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_EXEGGUTOR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sExeggutorAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_EXEGGUTOR_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeExeggutorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_EXEGGUTOR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeExeggutorAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_EXEGGUTOR_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBonslyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BONSLY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeBonslyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_BONSLY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSudowoodoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SUDOWOODO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSudowoodoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SUDOWOODO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWynautFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WYNAUT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWynautFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WYNAUT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWobbuffetFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WOBBUFFET,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWobbuffetFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WOBBUFFET,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sVenonatFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_VENONAT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeVenonatFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_VENONAT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sVenomothFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_VENOMOTH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeVenomothFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_VENOMOTH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sScytherFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SCYTHER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeScytherFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SCYTHER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sScizorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SCIZOR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_SCIZOR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SCIZOR_MEGA, ITEM_SCIZORITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_SCIZOR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_SCIZOR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeScizorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SCIZOR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_SCIZOR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_SCIZOR_MEGA, ITEM_SCIZORITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_SCIZOR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_SCIZOR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKleavorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_KLEAVOR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeKleavorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_KLEAVOR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPinsirFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PINSIR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_PINSIR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_PINSIR_MEGA, ITEM_PINSIRITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_PINSIR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_PINSIR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePinsirFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PINSIR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_PINSIR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_PINSIR_MEGA, ITEM_PINSIRITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_PINSIR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_PINSIR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHeracrossFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HERACROSS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_HERACROSS_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_HERACROSS_MEGA, ITEM_HERACRONITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_HERACROSS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_HERACROSS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHeracrossFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HERACROSS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_HERACROSS_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_HERACROSS_MEGA, ITEM_HERACRONITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_HERACROSS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_HERACROSS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKoffingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_KOFFING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeKoffingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_KOFFING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWeezingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WEEZING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWeezingGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WEEZING_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWeezingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WEEZING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWeezingGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WEEZING_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGrimerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GRIMER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGrimerAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GRIMER_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGrimerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GRIMER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGrimerAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GRIMER_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMukFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MUK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMukAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MUK_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMukFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MUK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMukAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MUK_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMagnemiteFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAGNEMITE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMagnemiteFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAGNEMITE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMagnetonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAGNETON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSandyShocksFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SANDY_SHOCKS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMagnetonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAGNETON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSandyShocksFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SANDY_SHOCKS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMagnezoneFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAGNEZONE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMagnezoneFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAGNEZONE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sVoltorbFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_VOLTORB,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sVoltorbHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_VOLTORB_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeVoltorbFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_VOLTORB,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeVoltorbHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_VOLTORB_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sElectrodeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ELECTRODE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sElectrodeHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ELECTRODE_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeElectrodeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ELECTRODE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeElectrodeHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ELECTRODE_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sAipomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_AIPOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeAipomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_AIPOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sAmbipomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_AMBIPOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeAmbipomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_AMBIPOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSnubbullFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SNUBBULL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSnubbullFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SNUBBULL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGranbullFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GRANBULL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGranbullFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GRANBULL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sVulpixFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_VULPIX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sVulpixAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_VULPIX_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeVulpixFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_VULPIX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeVulpixAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_VULPIX_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNinetalesFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_NINETALES,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNinetalesAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_NINETALES_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeNinetalesFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NINETALES,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeNinetalesAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NINETALES_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGrowlitheFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GROWLITHE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGrowlitheHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GROWLITHE_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGrowlitheFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GROWLITHE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGrowlitheHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GROWLITHE_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sArcanineFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ARCANINE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sArcanineHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ARCANINE_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeArcanineFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ARCANINE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeArcanineHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ARCANINE_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sStantlerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_STANTLER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeStantlerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_STANTLER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWyrdeerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WYRDEER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWyrdeerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WYRDEER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sAzurillFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_AZURILL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeAzurillFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_AZURILL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMarillFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MARILL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMarillFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MARILL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sAzumarillFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_AZUMARILL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeAzumarillFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_AZUMARILL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDiglettFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DIGLETT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDiglettAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DIGLETT_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDiglettFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DIGLETT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDiglettAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DIGLETT_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDugtrioFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DUGTRIO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDugtrioAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DUGTRIO_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDugtrioFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DUGTRIO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDugtrioAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DUGTRIO_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMankeyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MANKEY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMankeyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MANKEY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPrimeapeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PRIMEAPE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePrimeapeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PRIMEAPE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sAnnihilapeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ANNIHILAPE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeAnnihilapeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ANNIHILAPE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMeowthFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MEOWTH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MEOWTH_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_MEOWTH},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_MEOWTH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMeowthAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MEOWTH_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMeowthGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MEOWTH_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMeowthFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MEOWTH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MOE_MEOWTH_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_MOE_MEOWTH},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_MOE_MEOWTH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMeowthAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MEOWTH_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMeowthGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MEOWTH_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPersianFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PERSIAN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPersianAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PERSIAN_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePersianFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PERSIAN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePersianAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PERSIAN_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPerrserkerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PERRSERKER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePerrserkerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PERRSERKER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPsyduckFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PSYDUCK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePsyduckFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PSYDUCK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGolduckFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GOLDUCK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGolduckFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GOLDUCK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMachopFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MACHOP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMachopFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MACHOP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMachokeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MACHOKE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMachokeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MACHOKE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMachampFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MACHAMP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MACHAMP_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_MACHAMP},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_MACHAMP},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMachampFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MACHAMP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MOE_MACHAMP_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_MOE_MACHAMP},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_MOE_MACHAMP},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTyrogueFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TYROGUE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTyrogueFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TYROGUE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHitmonleeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HITMONLEE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHitmonleeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HITMONLEE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHitmonchanFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HITMONCHAN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHitmonchanFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HITMONCHAN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHitmontopFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HITMONTOP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHitmontopFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HITMONTOP,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGirafarigFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GIRAFARIG,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGirafarigFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GIRAFARIG,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sFarigirafFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_FARIGIRAF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeFarigirafFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_FARIGIRAF,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTaurosFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TAUROS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTaurosPaldeaCombatFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TAUROS_PALDEA_COMBAT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTaurosPaldeaBlazeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TAUROS_PALDEA_BLAZE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTaurosPaldeaAquaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TAUROS_PALDEA_AQUA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTaurosFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TAUROS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTaurosPaldeaCombatFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TAUROS_PALDEA_COMBAT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTaurosPaldeaBlazeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TAUROS_PALDEA_BLAZE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTaurosPaldeaAquaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TAUROS_PALDEA_AQUA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMiltankFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MILTANK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMiltankFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MILTANK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMagbyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAGBY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMagbyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAGBY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMagmarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAGMAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMagmarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAGMAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMagmortarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAGMORTAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMagmortarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAGMORTAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSmoochumFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SMOOCHUM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSmoochumFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SMOOCHUM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sJynxFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_JYNX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeJynxFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_JYNX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sElekidFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ELEKID,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeElekidFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ELEKID,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sElectabuzzFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ELECTABUZZ,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeElectabuzzFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ELECTABUZZ,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sElectivireFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ELECTIVIRE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeElectivireFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ELECTIVIRE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMimeJrFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MIME_JR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMimeJrFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MIME_JR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMrMimeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MR_MIME,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMrMimeGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MR_MIME_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMrMimeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MR_MIME,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMrMimeGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MR_MIME_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMrRimeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MR_RIME,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMrRimeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MR_RIME,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSmeargleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SMEARGLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSmeargleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SMEARGLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sFarfetchdFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_FARFETCHD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sFarfetchdGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_FARFETCHD_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeFarfetchdFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_FARFETCHD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeFarfetchdGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_FARFETCHD_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSirfetchdFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SIRFETCHD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSirfetchdFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SIRFETCHD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sNatuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_NATU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeNatuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_NATU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sXatuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_XATU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeXatuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_XATU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sQwilfishFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_QWILFISH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sQwilfishHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_QWILFISH_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeQwilfishFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_QWILFISH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeQwilfishHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_QWILFISH_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sOverqwilFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_OVERQWIL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeOverqwilFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_OVERQWIL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTentacoolFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TENTACOOL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTentacoolFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TENTACOOL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTentacruelFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TENTACRUEL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTentacruelFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TENTACRUEL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKrabbyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_KRABBY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeKrabbyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_KRABBY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKinglerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_KINGLER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_KINGLER_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_KINGLER},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_KINGLER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeKinglerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_KINGLER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MOE_KINGLER_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_MOE_KINGLER},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_MOE_KINGLER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sShuckleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SHUCKLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeShuckleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SHUCKLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sStaryuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_STARYU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeStaryuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_STARYU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sStarmieFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_STARMIE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_STARMIE_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_STARMIE_MEGA, ITEM_STARMINITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_STARMIE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_STARMIE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeStarmieFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_STARMIE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_STARMIE_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_STARMIE_MEGA, ITEM_STARMINITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_STARMIE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_STARMIE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sShellderFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SHELLDER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeShellderFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SHELLDER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCloysterFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CLOYSTER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCloysterFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CLOYSTER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCorsolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CORSOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCorsolaGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CORSOLA_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCorsolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CORSOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCorsolaGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CORSOLA_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCursolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CURSOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCursolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CURSOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRemoraidFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_REMORAID,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRemoraidFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_REMORAID,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sOctilleryFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_OCTILLERY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeOctilleryFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_OCTILLERY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sChinchouFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CHINCHOU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeChinchouFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CHINCHOU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sLanturnFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_LANTURN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeLanturnFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_LANTURN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSeelFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SEEL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSeelFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SEEL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDewgongFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DEWGONG,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDewgongFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DEWGONG,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sLickitungFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_LICKITUNG,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeLickitungFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_LICKITUNG,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sLickilickyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_LICKILICKY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeLickilickyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_LICKILICKY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTangelaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TANGELA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTangelaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TANGELA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTangrowthFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TANGROWTH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTangrowthFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TANGROWTH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEeveeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_EEVEE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEeveePartnerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_EEVEE_STARTER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEeveeGmaxFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_EEVEE_GMAX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeEeveeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_EEVEE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeEeveePartnerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_EEVEE_STARTER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeEeveeGmaxFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_EEVEE_GMAX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sVaporeonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_VAPOREON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeVaporeonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_VAPOREON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sJolteonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_JOLTEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeJolteonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_JOLTEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sFlareonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_FLAREON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeFlareonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_FLAREON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEspeonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ESPEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeEspeonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ESPEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUmbreonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_UMBREON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUmbreonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_UMBREON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sLeafeonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_LEAFEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeLeafeonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_LEAFEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGlaceonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GLACEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGlaceonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GLACEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSylveonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SYLVEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSylveonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SYLVEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHorseaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HORSEA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHorseaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HORSEA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSeadraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SEADRA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSeadraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SEADRA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKingdraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_KINGDRA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeKingdraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_KINGDRA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGligarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GLIGAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGligarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GLIGAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGliscorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GLISCOR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGliscorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GLISCOR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDelibirdFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DELIBIRD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sIronBundleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_IRON_BUNDLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDelibirdFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DELIBIRD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeIronBundleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_IRON_BUNDLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSwinubFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SWINUB,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSwinubFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SWINUB,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPiloswineFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PILOSWINE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePiloswineFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PILOSWINE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMamoswineFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAMOSWINE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMamoswineFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAMOSWINE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTeddiursaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TEDDIURSA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTeddiursaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TEDDIURSA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUrsaringFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_URSARING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUrsaringFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_URSARING,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUrsalunaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_URSALUNA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sUrsalunaBloodmoonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_URSALUNA_BLOODMOON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUrsalunaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_URSALUNA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeUrsalunaBloodmoonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_URSALUNA_BLOODMOON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPhanpyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PHANPY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePhanpyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PHANPY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDonphanFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DONPHAN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGreatTuskFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GREAT_TUSK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sIronTreadsFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_IRON_TREADS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDonphanFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DONPHAN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGreatTuskFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GREAT_TUSK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeIronTreadsFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_IRON_TREADS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMantykeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MANTYKE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMantykeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MANTYKE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMantineFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MANTINE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMantineFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MANTINE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSkarmoryFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SKARMORY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_SKARMORY_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SKARMORY_MEGA, ITEM_SKARMORITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_SKARMORY},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_SKARMORY},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSkarmoryFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SKARMORY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_SKARMORY_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_SKARMORY_MEGA, ITEM_SKARMORITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_SKARMORY},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_SKARMORY},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDoduoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DODUO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDoduoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DODUO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDodrioFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DODRIO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDodrioFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DODRIO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPonytaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PONYTA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPonytaGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PONYTA_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePonytaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PONYTA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePonytaGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PONYTA_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRapidashFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RAPIDASH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRapidashGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RAPIDASH_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRapidashFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RAPIDASH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRapidashGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RAPIDASH_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCuboneFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CUBONE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCuboneFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CUBONE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMarowakFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAROWAK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMarowakAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAROWAK_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMarowakAlolaTotemFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAROWAK_ALOLA_TOTEM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMarowakFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAROWAK,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMarowakAlolaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAROWAK_ALOLA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMarowakAlolaTotemFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAROWAK_ALOLA_TOTEM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKangaskhanFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_KANGASKHAN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_KANGASKHAN_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_KANGASKHAN_MEGA, ITEM_KANGASKHANITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_KANGASKHAN},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_KANGASKHAN},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeKangaskhanFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_KANGASKHAN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_KANGASKHAN_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_KANGASKHAN_MEGA, ITEM_KANGASKHANITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_KANGASKHAN},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_KANGASKHAN},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRhyhornFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RHYHORN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRhyhornFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RHYHORN,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRhydonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RHYDON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRhydonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RHYDON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRhyperiorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RHYPERIOR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRhyperiorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RHYPERIOR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMurkrowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MURKROW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMurkrowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MURKROW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHonchkrowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HONCHKROW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHonchkrowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HONCHKROW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHoundourFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HOUNDOUR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHoundourFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HOUNDOUR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHoundoomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HOUNDOOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_HOUNDOOM_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_HOUNDOOM_MEGA, ITEM_HOUNDOOMINITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_HOUNDOOM},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_HOUNDOOM},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHoundoomFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HOUNDOOM,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,     SPECIES_MOE_HOUNDOOM_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_HOUNDOOM_MEGA, ITEM_HOUNDOOMINITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_HOUNDOOM},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_HOUNDOOM},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSlugmaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SLUGMA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSlugmaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SLUGMA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMagcargoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MAGCARGO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMagcargoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MAGCARGO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSneaselFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SNEASEL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSneaselHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SNEASEL_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSneaselFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SNEASEL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSneaselHisuiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SNEASEL_HISUI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWeavileFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WEAVILE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWeavileFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WEAVILE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSneaslerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SNEASLER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSneaslerFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SNEASLER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMisdreavusFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MISDREAVUS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sFlutterManeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_FLUTTER_MANE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMisdreavusFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MISDREAVUS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeFlutterManeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_FLUTTER_MANE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMismagiusFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MISMAGIUS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMismagiusFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MISMAGIUS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPorygonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PORYGON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePorygonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PORYGON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPorygon2FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PORYGON2,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePorygon2FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PORYGON2,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPorygonZFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PORYGON_Z,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePorygonZFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PORYGON_Z,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHappinyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HAPPINY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHappinyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HAPPINY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sChanseyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CHANSEY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeChanseyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CHANSEY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBlisseyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BLISSEY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeBlisseyFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_BLISSEY,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sLaprasFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_LAPRAS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_LAPRAS_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_LAPRAS},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_LAPRAS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeLaprasFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_LAPRAS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MOE_LAPRAS_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_MOE_LAPRAS},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_MOE_LAPRAS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sOmanyteFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_OMANYTE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeOmanyteFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_OMANYTE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sOmastarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_OMASTAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeOmastarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_OMASTAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKabutoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_KABUTO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeKabutoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_KABUTO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKabutopsFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_KABUTOPS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeKabutopsFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_KABUTOPS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sAerodactylFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_AERODACTYL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_AERODACTYL_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_AERODACTYL_MEGA, ITEM_AERODACTYLITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_AERODACTYL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_AERODACTYL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeAerodactylFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_AERODACTYL,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MOE_AERODACTYL_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_AERODACTYL_MEGA, ITEM_AERODACTYLITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_AERODACTYL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_AERODACTYL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMunchlaxFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MUNCHLAX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMunchlaxFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MUNCHLAX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSnorlaxFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SNORLAX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_SNORLAX_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_SNORLAX},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_SNORLAX},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSnorlaxFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SNORLAX,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MOE_SNORLAX_GMAX},
+    {FORM_CHANGE_FAINT,             SPECIES_MOE_SNORLAX},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_MOE_SNORLAX},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBulbasaurFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BULBASAUR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeBulbasaurFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_BULBASAUR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sIvysaurFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_IVYSAUR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeIvysaurFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_IVYSAUR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sVenusaurFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_VENUSAUR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_VENUSAUR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_VENUSAUR_MEGA, ITEM_VENUSAURITE},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_VENUSAUR_GMAX},
+    {FORM_CHANGE_FAINT,                         SPECIES_VENUSAUR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_VENUSAUR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeVenusaurFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_VENUSAUR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MOE_VENUSAUR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_VENUSAUR_MEGA, ITEM_VENUSAURITE},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_MOE_VENUSAUR_GMAX},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_VENUSAUR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_VENUSAUR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCharmanderFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CHARMANDER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCharmanderFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CHARMANDER,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCharmeleonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CHARMELEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCharmeleonFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CHARMELEON,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCharizardFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CHARIZARD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CHARIZARD_MEGA_X, ITEM_CHARIZARDITE_X},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CHARIZARD_MEGA_Y, ITEM_CHARIZARDITE_Y},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_CHARIZARD_GMAX},
+    {FORM_CHANGE_FAINT,                         SPECIES_CHARIZARD},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_CHARIZARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCharizardFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CHARIZARD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_CHARIZARD_MEGA_X, ITEM_CHARIZARDITE_X},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_CHARIZARD_MEGA_Y, ITEM_CHARIZARDITE_Y},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_MOE_CHARIZARD_GMAX},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_CHARIZARD},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_CHARIZARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSquirtleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SQUIRTLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSquirtleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SQUIRTLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWartortleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WARTORTLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWartortleFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WARTORTLE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBlastoiseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BLASTOISE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_BLASTOISE_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLASTOISE_MEGA, ITEM_BLASTOISINITE},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_BLASTOISE_GMAX},
+    {FORM_CHANGE_FAINT,                         SPECIES_BLASTOISE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_BLASTOISE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeBlastoiseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_BLASTOISE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MOE_BLASTOISE_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_BLASTOISE_MEGA, ITEM_BLASTOISINITE},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_MOE_BLASTOISE_GMAX},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_BLASTOISE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_BLASTOISE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sArticunoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ARTICUNO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sArticunoGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ARTICUNO_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeArticunoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ARTICUNO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeArticunoGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ARTICUNO_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sZapdosFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ZAPDOS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sZapdosGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ZAPDOS_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeZapdosFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ZAPDOS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeZapdosGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ZAPDOS_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoltresFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MOLTRES,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoltresGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MOLTRES_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMoltresFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOLTRES,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMoltresGalarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOLTRES_GALAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRaikouFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RAIKOU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sRagingBoltFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_RAGING_BOLT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRaikouFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RAIKOU,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeRagingBoltFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_RAGING_BOLT,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEnteiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_ENTEI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sGougingFireFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_GOUGING_FIRE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeEnteiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ENTEI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeGougingFireFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_GOUGING_FIRE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sSuicuneFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_SUICUNE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sWalkingWakeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_WALKING_WAKE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeSuicuneFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_SUICUNE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeWalkingWakeFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_WALKING_WAKE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDratiniFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DRATINI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDratiniFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DRATINI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDragonairFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DRAGONAIR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDragonairFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DRAGONAIR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sDragoniteFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_DRAGONITE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_DRAGONITE_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_DRAGONITE_MEGA, ITEM_DRAGONINITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_DRAGONITE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_DRAGONITE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeDragoniteFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_DRAGONITE,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MOE_DRAGONITE_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_DRAGONITE_MEGA, ITEM_DRAGONINITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_DRAGONITE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_DRAGONITE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sLarvitarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_LARVITAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeLarvitarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_LARVITAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPupitarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_PUPITAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoePupitarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PUPITAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sTyranitarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_TYRANITAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_TYRANITAR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_TYRANITAR_MEGA, ITEM_TYRANITARITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_TYRANITAR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_TYRANITAR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sIronThornsFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_IRON_THORNS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeTyranitarFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TYRANITAR,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_MOE_TYRANITAR_MEGA, 50},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_TYRANITAR_MEGA, ITEM_TYRANITARITE},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_TYRANITAR},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_TYRANITAR},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeIronThornsFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_IRON_THORNS,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sLugiaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_LUGIA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sLugiaShadowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_LUGIA_SHADOW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeLugiaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_LUGIA,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeLugiaShadowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_LUGIA_SHADOW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sHoOhFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_HO_OH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeHoOhFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_HO_OH,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMewtwoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MEWTWO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MEWTWO_MEGA_X, ITEM_MEWTWONITE_X},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MEWTWO_MEGA_Y, ITEM_MEWTWONITE_Y},
+    {FORM_CHANGE_FAINT,                         SPECIES_MEWTWO},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MEWTWO},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMewtwoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MEWTWO,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_MEWTWO_MEGA_X, ITEM_MEWTWONITE_X},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MOE_MEWTWO_MEGA_Y, ITEM_MEWTWONITE_Y},
+    {FORM_CHANGE_FAINT,                         SPECIES_MOE_MEWTWO},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_MOE_MEWTWO},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMewFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_MEW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeMewFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MEW,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sCelebiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_MOE_CELEBI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sMoeCelebiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_CELEBI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sYyyiYuukiYuunaFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_YYYI_YUUKI_YUUNA_DAIMANKAI, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_YYYI_YUUKI_YUUNA_MANKAI},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_YYYI_YUUKI_YUUNA_MANKAI},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sYyyiWakabaFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_YYYI_WAKABA_KIRIFUDA2, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_YYYI_WAKABA_KIRIFUDA1},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_YYYI_WAKABA_KIRIFUDA1},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sYyyiTakashimaYuunaFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_YYYI_TAKASHIMA_YUUNA_KIRIFUDA2, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_YYYI_TAKASHIMA_YUUNA_KIRIFUDA1},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_YYYI_TAKASHIMA_YUUNA_KIRIFUDA1},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShingyokuOrbFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHINGYOKU_PRIEST,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShingyokuPriestFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHINGYOKU_PRIESTESS,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShingyokuPriestessFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHINGYOKU_ORB,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSarielNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SARIEL_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSarielSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SARIEL_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRumiaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_RUMIA_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRumiaAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_RUMIA_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRumiaSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_RUMIA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThDaiyouseiNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_DAIYOUSEI_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThDaiyouseiAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_DAIYOUSEI_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThDaiyouseiDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_DAIYOUSEI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThCirnoNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_CIRNO_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThCirnoSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_CIRNO_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThCirnoTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_CIRNO_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThCirnoAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_CIRNO_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLunachildNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LUNACHILD_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLunachildAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LUNACHILD_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLunachildTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LUNACHILD_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThStarsapphireNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_STARSAPPHIRE_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThStarsapphireAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_STARSAPPHIRE_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThStarsapphireHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_STARSAPPHIRE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSunnymilkNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SUNNYMILK_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSunnymilkAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SUNNYMILK_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSunnymilkDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SUNNYMILK_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMeilingNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MEILING_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMeilingDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MEILING_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMeilingSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MEILING_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMeilingAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MEILING_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKoakumaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOAKUMA_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKoakumaHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOAKUMA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThPatchouliNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_PATCHOULI_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThPatchouliAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_PATCHOULI_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThPatchouliDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_PATCHOULI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSakuyaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SAKUYA_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSakuyaTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SAKUYA_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSakuyaHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SAKUYA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRemiliaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_REMILIA_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRemiliaAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_REMILIA_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRemiliaDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_REMILIA_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRemiliaAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_REMILIA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThFlandreNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_FLANDRE_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThFlandreAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_FLANDRE_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThFlandreSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_FLANDRE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLettyNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LETTY_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLettyDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LETTY_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLettyHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LETTY_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLettyAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LETTY_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThChenNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_CHEN_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThChenAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_CHEN_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThChenTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_CHEN_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThChenAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_CHEN_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAliceNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_ALICE_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_TH_ALICE_BLACK_R_NORMAL, 50},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_ALICE_REMIND_R_NORMAL, ITEM_RED_ORB},
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_ALICE_NORMAL},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_ALICE_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAliceAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_ALICE_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_TH_ALICE_BLACK_R_ATTACK, 50},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_ALICE_REMIND_R_ATTACK, ITEM_RED_ORB},
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_ALICE_ATTACK},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_ALICE_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAliceTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_ALICE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_TH_ALICE_BLACK_R_TECH, 50},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_ALICE_REMIND_R_TECH, ITEM_RED_ORB},
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_ALICE_TECH},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_ALICE_TECH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAliceBlackRNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_ALICE_NORMAL},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_ALICE_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAliceBlackRAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_ALICE_ATTACK},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_ALICE_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAliceBlackRTechFormChangeTable[] =
+{
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_ALICE_TECH},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_ALICE_TECH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAliceRemindRNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_ALICE_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAliceRemindRAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_ALICE_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAliceRemindRTechFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_ALICE_TECH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLilyblackNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LILYBLACK_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLilyblackAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LILYBLACK_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLilyblackSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LILYBLACK_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLilywhiteNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LILYWHITE_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLilywhiteAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LILYWHITE_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLilywhiteHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LILYWHITE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLunasaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LUNASA_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_LAYLA_R_LUNASA_NORMAL, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_LUNASA_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLunasaHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LUNASA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_LAYLA_R_LUNASA_HELPER, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_LUNASA_HELPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLaylaRLunasaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_LUNASA_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLaylaRLunasaHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_LUNASA_HELPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMerlinNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MERLIN_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_LAYLA_R_MERLIN_NORMAL, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_MERLIN_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMerlinHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MERLIN_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_LAYLA_R_MERLIN_HELPER, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_MERLIN_HELPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLaylaRMerlinNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_MERLIN_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLaylaRMerlinHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_MERLIN_HELPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLyricaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LYRICA_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_LAYLA_R_LYRICA_NORMAL, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_LYRICA_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLyricaHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_LYRICA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_LAYLA_R_LYRICA_HELPER, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_LYRICA_HELPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLaylaRLyricaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_LYRICA_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThLaylaRLyricaHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_LYRICA_HELPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYoumuNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YOUMU_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYoumuDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YOUMU_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYoumuSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YOUMU_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYoumuAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YOUMU_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuyukoNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUYUKO_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_AYAKASHI_R_YUYUKO_NORMAL, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUYUKO_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuyukoAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUYUKO_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_AYAKASHI_R_YUYUKO_ATTACK, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUYUKO_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuyukoDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUYUKO_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_AYAKASHI_R_YUYUKO_DEFENSE, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUYUKO_DEFENSE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuyukoAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUYUKO_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAyakashiRYuyukoNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUYUKO_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAyakashiRYuyukoAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUYUKO_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAyakashiRYuyukoDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUYUKO_DEFENSE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRanNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_RAN_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRanAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_RAN_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRanHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_RAN_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRanAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_RAN_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYukariNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUKARI_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYukariDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUKARI_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYukariTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUKARI_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYukariAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUKARI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSuikaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SUIKA_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_TH_SUIKA_MP_R_NORMAL},
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_SUIKA_NORMAL},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SUIKA_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSuikaAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SUIKA_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_TH_SUIKA_MP_R_ATTACK},
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_SUIKA_ATTACK},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SUIKA_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSuikaTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SUIKA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_TH_SUIKA_MP_R_TECH},
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_SUIKA_TECH},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SUIKA_TECH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSuikaMpRNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_SUIKA_NORMAL},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SUIKA_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSuikaMpRAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_SUIKA_ATTACK},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SUIKA_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSuikaMpRTechFormChangeTable[] =
+{
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_SUIKA_TECH},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SUIKA_TECH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThWriggleNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_WRIGGLE_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThWriggleDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_WRIGGLE_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThWriggleSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_WRIGGLE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMystiaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MYSTIA_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMystiaAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MYSTIA_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMystiaHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MYSTIA_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMystiaAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MYSTIA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKeineNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KEINE_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKeineAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KEINE_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKeineDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KEINE_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKeineHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KEINE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTewiNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TEWI_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTewiAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TEWI_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTewiDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TEWI_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTewiAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TEWI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThReisenNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_REISEN_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThReisenDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_REISEN_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThReisenTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_REISEN_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThReisenAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_REISEN_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThEirinNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_EIRIN_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThEirinAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_EIRIN_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThEirinHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_EIRIN_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThEirinAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_EIRIN_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKaguyaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KAGUYA_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKaguyaAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KAGUYA_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKaguyaDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KAGUYA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMokouNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MOKOU_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMokouAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MOKOU_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMokouDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MOKOU_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMokouAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MOKOU_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThToyohimeNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TOYOHIME_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThToyohimeTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TOYOHIME_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYorihimeNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YORIHIME_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYorihimeSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YORIHIME_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAyaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_AYA_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAyaSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_AYA_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThAyaTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_AYA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMedicineNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MEDICINE_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMedicineAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MEDICINE_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMedicineSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MEDICINE_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMedicineTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MEDICINE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuukaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUUKA_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_YUUKA_REMIND_R_NORMAL, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUUKA_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuukaAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUUKA_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_YUUKA_REMIND_R_ATTACK, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUUKA_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuukaTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUUKA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_YUUKA_REMIND_R_TECH, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUUKA_TECH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuukaRemindRNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUUKA_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuukaRemindRAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUUKA_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuukaRemindRTechFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_YUUKA_TECH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKomachiNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOMACHI_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKomachiAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOMACHI_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKomachiSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOMACHI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThEikiNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_EIKI_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThEikiAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_EIKI_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThEikiDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_EIKI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShizuhaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHIZUHA_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShizuhaSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHIZUHA_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShizuhaHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHIZUHA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMinorikoNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MINORIKO_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMinorikoAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MINORIKO_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMinorikoDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MINORIKO_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThHinaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_HINA_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThHinaAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_HINA_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThHinaDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_HINA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThNitoriNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_NITORI_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThNitoriAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_NITORI_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThNitoriTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_NITORI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMomijiNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MOMIJI_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMomijiDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MOMIJI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSanaeNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SANAE_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_SANAE_REMIND_R_NORMAL, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SANAE_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSanaeAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SANAE_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_SANAE_REMIND_R_ATTACK, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SANAE_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSanaeTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SANAE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_SANAE_REMIND_R_TECH, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SANAE_TECH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSanaeRemindRNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SANAE_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSanaeRemindRAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SANAE_ATTACK},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSanaeRemindRTechFormChangeTable[] =
+{
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_SANAE_TECH},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKanakoNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KANAKO_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKanakoAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KANAKO_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKanakoDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KANAKO_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSuwakoNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SUWAKO_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSuwakoAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SUWAKO_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSuwakoDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SUWAKO_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThIkuNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_IKU_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThIkuDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_IKU_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThIkuTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_IKU_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTenshiNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TENSHI_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTenshiAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TENSHI_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTenshiDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TENSHI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKisumeNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KISUME_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKisumeTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KISUME_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYamameNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YAMAME_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYamameSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YAMAME_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYamameTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YAMAME_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThParseeNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_PARSEE_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThParseeDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_PARSEE_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThParseeTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_PARSEE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuugiNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUUGI_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuugiAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUUGI_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThYuugiDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_YUUGI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSatoriNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SATORI_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSatoriDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SATORI_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSatoriTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SATORI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRinNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_RIN_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRinAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_RIN_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThRinSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_RIN_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThUtsuhoNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_UTSUHO_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThUtsuhoAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_UTSUHO_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThUtsuhoSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_UTSUHO_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKoishiNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOISHI_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKoishiAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOISHI_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKoishiSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOISHI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThNazrinNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_NAZRIN_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThNazrinTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_NAZRIN_HELPER,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThNazrinHelperFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_NAZRIN_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKogasaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOGASA_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKogasaSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOGASA_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKogasaTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOGASA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThIchirinNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_ICHIRIN_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThIchirinDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_ICHIRIN_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThIchirinTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_ICHIRIN_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMurasaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MURASA_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMurasaAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MURASA_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMurasaDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MURASA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShouNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHOU_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShouAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHOU_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShouTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHOU_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThByakurenNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_BYAKUREN_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThByakurenDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_BYAKUREN_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThByakurenTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_BYAKUREN_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThNueNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_NUE_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThNueAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_NUE_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThNueTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_NUE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTensokuNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_TH_TENSOKU_G, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_TH_TENSOKU_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_TH_TENSOKU_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThHatateNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_HATATE_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThHatateDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_HATATE_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThHatateTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_HATATE_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThJoonNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_JOON_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThJoonAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_JOON_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThJoonDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_JOON_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShionNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHION_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShionAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHION_DEFENSE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThShionDefenseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SHION_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKasenNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KASEN_ARM,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKasenArmFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KASEN_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTenmaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TENMA_SPEED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTenmaSpeedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TENMA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSendaiNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SENDAI_TECH,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThSendaiTechFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_SENDAI_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTokikoNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TOKIKO_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThTokikoAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_TOKIKO_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKosuzuNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOSUZU_ATTACK,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThKosuzuAttackFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_KOSUZU_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMarisaNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MARISA_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_MARISA_REMIND_R_NORMAL, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_MARISA_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThMarisaAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_MARISA_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThReimuNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_REIMU_ADVENT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_REIMU_REMIND_R_NORMAL, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_REIMU_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sThReimuAdventFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_TH_REIMU_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sShVivitSphereFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_BEFORE_MOVE_CATEGORY, SPECIES_SH_VIVIT_ANGEL,  DAMAGE_CATEGORY_PHYSICAL, ABILITY_STANCE_CHANGE},
+    {FORM_CHANGE_BATTLE_BEFORE_MOVE_CATEGORY, SPECIES_SH_VIVIT_ANGEL,  DAMAGE_CATEGORY_SPECIAL,  ABILITY_STANCE_CHANGE},
+    {FORM_CHANGE_BATTLE_BEFORE_MOVE,          SPECIES_SH_VIVIT_ANGEL, MOVE_KINGS_SHIELD,        ABILITY_STANCE_CHANGE},
+    {FORM_CHANGE_BATTLE_SWITCH_OUT,           SPECIES_SH_VIVIT_SPHERE},
+    {FORM_CHANGE_FAINT,                       SPECIES_SH_VIVIT_SPHERE},
+    {FORM_CHANGE_END_BATTLE,                  SPECIES_SH_VIVIT_SPHERE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sKeyUshioNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_KEY_USHIO_ILLUSIONARY, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_KEY_USHIO_NORMAL},
+    {FORM_CHANGE_FAINT,                         SPECIES_KEY_USHIO_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBghsMikiFloraFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_BGHS_MIKI_FLORA_ELVIS, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MIKI_FLORA},
+    {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MIKI_FLORA},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBghsKanonFloraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_BGHS_SHIHO_FORTESSIMO,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBghsKanonFortessimoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_BGHS_KANON_FLORA,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBghsShihoFloraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_BGHS_SHIHO_FORTESSIMO,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBghsShihoFortessimoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_BGHS_SHIHO_FLORA,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBghsMisakiFloraFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_BGHS_MISAKI_FLORA_ELVIS, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MISAKI_FLORA},
+    {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MISAKI_FLORA},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sBghsMariFloraFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_BGHS_MARI_FLORA_FINAL, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MARI_FLORA},
+    {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MARI_FLORA},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureBlackGoldFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_BLACK_PHOENIX, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BLACK_GOLD},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BLACK_GOLD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureWhiteGoldFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_WHITE_PHOENIX, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_WHITE_GOLD},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_WHITE_GOLD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcShinyLuminousGoldFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_SHINY_LUMINOUS_PHOENIX, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_SHINY_LUMINOUS_GOLD},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_SHINY_LUMINOUS_GOLD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureBloomNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_BRIGHT_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_BRIGHTY_BLOOM_R_CURE_BLOOM_NORMAL, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BLOOM_NORMAL},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BLOOM_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureBrightNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_BLOOM_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_BRIGHTY_BLOOM_R_CURE_BRIGHT_NORMAL, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BRIGHT_NORMAL},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BRIGHT_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureEgretNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_WINDY_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_WINDY_EGRET_R_CURE_EGRET_NORMAL, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_EGRET_NORMAL},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_EGRET_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureWindyNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_EGRET_NORMAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_WINDY_EGRET_R_CURE_WINDY_NORMAL, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_WINDY_NORMAL},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_WINDY_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureDreamNormalS1FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_DREAM_NORMAL_S2,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureDreamNormalS2FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_DREAM_NORMAL_S1,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_PC_CURE_DREAM_GRACE_R_NORMAL_S2, ITEM_DIANCITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_DREAM_SHINING_R_NORMAL_S2, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_DREAM_NORMAL_S2},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_DREAM_NORMAL_S2},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureRougeNormalS1FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_ROUGE_NORMAL_S2,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureRougeNormalS2FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_ROUGE_NORMAL_S1,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureLemonadeNormalS1FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_LEMONADE_NORMAL_S2,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureLemonadeNormalS2FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_LEMONADE_NORMAL_S1,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureMintNormalS1FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_MINT_NORMAL_S2,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureMintNormalS2FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_MINT_NORMAL_S1,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureAquaNormalS1FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_AQUA_NORMAL_S2,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureAquaNormalS2FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_AQUA_NORMAL_S1,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureBlossomSuperFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_PC_INFINITY_SUL_R_CURE_BLOSSOM_SUPER},
+    {FORM_CHANGE_FAINT,             SPECIES_PC_CURE_BLOSSOM_SUPER},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_PC_CURE_BLOSSOM_SUPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureMarineSuperFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_PC_INFINITY_SUL_R_CURE_MARINE_SUPER},
+    {FORM_CHANGE_FAINT,             SPECIES_PC_CURE_MARINE_SUPER},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_PC_CURE_MARINE_SUPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureSunshineSuperFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_PC_INFINITY_SUL_R_CURE_SUNSHINE_SUPER},
+    {FORM_CHANGE_FAINT,             SPECIES_PC_CURE_SUNSHINE_SUPER},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_PC_CURE_SUNSHINE_SUPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureMoonlightSuperFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_PC_INFINITY_SUL_R_CURE_MOONLIGHT_SUPER},
+    {FORM_CHANGE_FAINT,             SPECIES_PC_CURE_MOONLIGHT_SUPER},
+    {FORM_CHANGE_END_BATTLE,        SPECIES_PC_CURE_MOONLIGHT_SUPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureHappyPrincessFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_HAPPY_ULTRA, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_HAPPY_PRINCESS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_PC_CURE_HAPPY_PRINCESS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureSunnyPrincessFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_SUNNY_ULTRA, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_SUNNY_PRINCESS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_PC_CURE_SUNNY_PRINCESS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCurePeacePrincessFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_PEACE_ULTRA, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_PEACE_PRINCESS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_PC_CURE_PEACE_PRINCESS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureMarchPrincessFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_MARCH_ULTRA, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_MARCH_PRINCESS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_PC_CURE_MARCH_PRINCESS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureBeautyPrincessFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_BEAUTY_ULTRA, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BEAUTY_PRINCESS},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_PC_CURE_BEAUTY_PRINCESS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sPcCureHeartSuperFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_HEART_PARTHENON, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_HEART_SUPER},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_PC_CURE_HEART_SUPER},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcCureUnionNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_ETC_CURE_UNION_COMPLETE, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_ETC_CURE_UNION_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_ETC_CURE_UNION_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcShounenFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_RED,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcRedFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_ETHAN,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcEthanFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_BRENDAN,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcBrendanFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_LUCAS,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcLucasFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_HILBERT,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcHilbertFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_NATE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcNateFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_CALEM,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcCalemFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_ELIO,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcElioFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_CHASE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcChaseFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_VICTOR,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcVictorFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_REI,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcReiFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_FLORIAN,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcFlorianFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_WES,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcWesFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_MICHAEL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcMichaelFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_SHOUNEN,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcShoujoFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_LEAF,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcLeafFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_LYRA,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcLyraFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_KRIS,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcKrisFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_MAY,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcMayFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_DAWN,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcDawnFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_HILDA,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcHildaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_ROSA,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcRosaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_SERENA,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcSerenaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_SELENE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcSeleneFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_ELAINE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcElaineFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_GLORIA,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcGloriaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_AKARI,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcAkariFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_JULIANA,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcJulianaFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_SHOUJO,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcIllyasvielNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_ETC_ILLYASVIEL_ZWEI, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_ETC_ILLYASVIEL_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_ETC_ILLYASVIEL_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcNeptuneNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_TERASTALLIZATION, SPECIES_ETC_NEPTUNE_GODDESS, TYPE_STELLAR},
+    {FORM_CHANGE_FAINT,                         SPECIES_ETC_NEPTUNE_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_ETC_NEPTUNE_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcNepgearNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_TERASTALLIZATION, SPECIES_ETC_NEPGEAR_GODDESS, TYPE_STELLAR},
+    {FORM_CHANGE_FAINT,                         SPECIES_ETC_NEPGEAR_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_ETC_NEPGEAR_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcDecadeCompleteFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_DECADE_COMPLETE21,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_ETC_DECADE_ABSOLUTE_R_COMPLETE, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_ETC_DECADE_COMPLETE},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_ETC_DECADE_COMPLETE},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcDecadeComplete21FormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_DECADE_COMPLETE,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_ETC_DECADE_ABSOLUTE_R_COMPLETE21, 50},
+    {FORM_CHANGE_FAINT,                         SPECIES_ETC_DECADE_COMPLETE21},
+    {FORM_CHANGE_END_BATTLE,                    SPECIES_ETC_DECADE_COMPLETE21},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcMikuFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_MIKU_MAGICAL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcMikuMagicalFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_MIKU_SNOW,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcMikuSnowFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_MIKU_ANGEL,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcMikuAngelFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_MIKU_RACING,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcMikuRacingFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_MIKU,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
 
 #undef WHEN_LEARNED
 #undef WHEN_FORGOTTEN

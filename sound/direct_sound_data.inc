@@ -4458,21 +4458,21 @@ Cry_Azelf::
 .endif
 .endif @ P_FAMILY_AZELF
 */
-.if P_FAMILY_DIALGA == TRUE
+.if P_FAMILY_ETC_DIALGA_TH == TRUE
 	.align 2
 Cry_Dialga::
 .if TESTING == FALSE
 	.incbin "sound/direct_sound_samples/cries/dialga.bin"
 .endif
-.endif @ P_FAMILY_DIALGA
+.endif @ P_FAMILY_ETC_DIALGA_TH
 
-.if P_FAMILY_PALKIA == TRUE
+.if P_FAMILY_ETC_PALKIA_TH == TRUE
 	.align 2
 Cry_Palkia::
 .if TESTING == FALSE
 	.incbin "sound/direct_sound_samples/cries/palkia.bin"
 .endif
-.endif @ P_FAMILY_PALKIA
+.endif @ P_FAMILY_ETC_PALKIA_TH
 /*
 .if P_FAMILY_HEATRAN == TRUE
 	.align 2
@@ -4498,13 +4498,13 @@ Cry_Regigigas::
 .endif
 .endif @ P_FAMILY_REGIGIGAS
 */
-.if P_FAMILY_GIRATINA == TRUE
+.if P_FAMILY_ETC_GIRATINA_TH == TRUE
 	.align 2
 Cry_Giratina::
 .if TESTING == FALSE
 	.incbin "sound/direct_sound_samples/cries/giratina.bin"
 .endif
-.endif @ P_FAMILY_GIRATINA
+.endif @ P_FAMILY_ETC_GIRATINA_TH
 /*
 .if P_FAMILY_CRESSELIA == TRUE
 	.align 2
@@ -4558,13 +4558,13 @@ Cry_ShayminSky::
 .endif
 .endif @ P_FAMILY_SHAYMIN
 */
-.if P_FAMILY_ARCEUS == TRUE
+.if P_FAMILY_ETC_ARCEUS_TH == TRUE
 	.align 2
 Cry_Arceus::
 .if TESTING == FALSE
 	.incbin "sound/direct_sound_samples/cries/arceus.bin"
 .endif
-.endif @ P_FAMILY_ARCEUS
+.endif @ P_FAMILY_ETC_ARCEUS_TH
 /*
 .if P_FAMILY_VICTINI == TRUE
 	.align 2
@@ -8426,7 +8426,7 @@ Cry_TatsugiriMega::
 .endif
 .endif @ P_MODIFIED_MEGA_CRIES
 .endif @ P_FAMILY_TATSUGIRI
-
+*/
 .if P_FAMILY_GREAT_TUSK == TRUE
 	.align 2
 Cry_GreatTusk::
@@ -8442,7 +8442,7 @@ Cry_ScreamTail::
 	.incbin "sound/direct_sound_samples/cries/scream_tail.bin"
 .endif
 .endif @ P_FAMILY_SCREAM_TAIL
-
+/*
 .if P_FAMILY_BRUTE_BONNET == TRUE
 	.align 2
 Cry_BruteBonnet::
@@ -8450,7 +8450,7 @@ Cry_BruteBonnet::
 	.incbin "sound/direct_sound_samples/cries/brute_bonnet.bin"
 .endif
 .endif @ P_FAMILY_BRUTE_BONNET
-
+*/
 .if P_FAMILY_FLUTTER_MANE == TRUE
 	.align 2
 Cry_FlutterMane::
@@ -8458,7 +8458,7 @@ Cry_FlutterMane::
 	.incbin "sound/direct_sound_samples/cries/flutter_mane.bin"
 .endif
 .endif @ P_FAMILY_FLUTTER_MANE
-
+/*
 .if P_FAMILY_SLITHER_WING == TRUE
 	.align 2
 Cry_SlitherWing::
@@ -8466,7 +8466,7 @@ Cry_SlitherWing::
 	.incbin "sound/direct_sound_samples/cries/slither_wing.bin"
 .endif
 .endif @ P_FAMILY_SLITHER_WING
-
+*/
 .if P_FAMILY_SANDY_SHOCKS == TRUE
 	.align 2
 Cry_SandyShocks::
@@ -8490,7 +8490,7 @@ Cry_IronBundle::
 	.incbin "sound/direct_sound_samples/cries/iron_bundle.bin"
 .endif
 .endif @ P_FAMILY_IRON_BUNDLE
-
+/*
 .if P_FAMILY_IRON_HANDS == TRUE
 	.align 2
 Cry_IronHands::
@@ -8514,7 +8514,7 @@ Cry_IronMoth::
 	.incbin "sound/direct_sound_samples/cries/iron_moth.bin"
 .endif
 .endif @ P_FAMILY_IRON_MOTH
-
+*/
 .if P_FAMILY_IRON_THORNS == TRUE
 	.align 2
 Cry_IronThorns::
@@ -8522,7 +8522,7 @@ Cry_IronThorns::
 	.incbin "sound/direct_sound_samples/cries/iron_thorns.bin"
 .endif
 .endif @ P_FAMILY_IRON_THORNS
-
+/*
 .if P_FAMILY_FRIGIBAX == TRUE
 	.align 2
 Cry_Frigibax::
@@ -8628,7 +8628,7 @@ Cry_Miraidon::
 	.incbin "sound/direct_sound_samples/cries/miraidon.bin"
 .endif
 .endif @ P_FAMILY_MIRAIDON
-
+*/
 .if P_FAMILY_WALKING_WAKE == TRUE
 	.align 2
 Cry_WalkingWake::
@@ -8636,7 +8636,7 @@ Cry_WalkingWake::
 	.incbin "sound/direct_sound_samples/cries/walking_wake.bin"
 .endif
 .endif @ P_FAMILY_WALKING_WAKE
-
+/*
 .if P_FAMILY_IRON_LEAVES == TRUE
 	.align 2
 Cry_IronLeaves::
@@ -8690,7 +8690,7 @@ Cry_Ogerpon::
 	.incbin "sound/direct_sound_samples/cries/ogerpon.bin"
 .endif
 .endif @ P_FAMILY_OGERPON
-
+*/
 .if P_FAMILY_GOUGING_FIRE == TRUE
 	.align 2
 Cry_GougingFire::
@@ -8706,7 +8706,7 @@ Cry_RagingBolt::
 	.incbin "sound/direct_sound_samples/cries/raging_bolt.bin"
 .endif
 .endif @ P_FAMILY_RAGING_BOLT
-
+/*
 .if P_FAMILY_IRON_BOULDER == TRUE
 	.align 2
 Cry_IronBoulder::

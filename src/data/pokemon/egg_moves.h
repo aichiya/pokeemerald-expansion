@@ -2381,7 +2381,7 @@ static const u16 sLarvitarEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_LARVITAR
-
+/*
 #if P_FAMILY_TREECKO
 static const u16 sTreeckoEggMoveLearnset[] = {
     MOVE_CRUNCH,
@@ -6359,3 +6359,6460 @@ static const u16 sFrigibaxEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_FRIGIBAX
+*/
+
+static const u16 sMoeBulbasaurEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeIvysaurEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVenusaurEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCharmanderEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCharmeleonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCharizardEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSquirtleEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWartortleEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeBlastoiseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCaterpieEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMetapodEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeButterfreeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWeedleEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKakunaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeBeedrillEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePidgeyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePidgeottoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePidgeotEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRattataEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRaticateEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSpearowEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeFearowEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeEkansEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeArbokEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRaichuEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSandshrewEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSandslashEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeNidoranFEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeNidorinaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeNidoqueenEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeNidoranMEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeNidorinoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeNidokingEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeClefairyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeClefableEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVulpixEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeNinetalesEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeJigglypuffEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWigglytuffEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeZubatEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGolbatEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeOddishEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGloomEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVileplumeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeParasEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeParasectEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVenonatEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVenomothEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDiglettEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDugtrioEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMeowthEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePersianEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePsyduckEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGolduckEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMankeyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePrimeapeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGrowlitheEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeArcanineEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePoliwagEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePoliwhirlEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePoliwrathEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAbraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKadabraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAlakazamEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMachopEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMachokeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMachampEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeBellsproutEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWeepinbellEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVictreebelEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTentacoolEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTentacruelEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGeodudeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGravelerEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGolemEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePonytaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRapidashEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSlowpokeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSlowbroEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMagnemiteEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMagnetonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeFarfetchdEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDoduoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDodrioEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSeelEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDewgongEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGrimerEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMukEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeShellderEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCloysterEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGastlyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHaunterEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGengarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeOnixEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDrowzeeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHypnoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKrabbyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKinglerEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVoltorbEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeElectrodeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeExeggcuteEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeExeggutorEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCuboneEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMarowakEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHitmonleeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHitmonchanEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLickitungEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKoffingEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWeezingEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRhyhornEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRhydonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeChanseyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTangelaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKangaskhanEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHorseaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSeadraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGoldeenEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSeakingEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeStaryuEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeStarmieEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMrMimeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeScytherEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeJynxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeElectabuzzEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMagmarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePinsirEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTaurosEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMagikarpEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGyaradosEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLaprasEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDittoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeEeveeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVaporeonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeJolteonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeFlareonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePorygonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeOmanyteEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeOmastarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKabutoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKabutopsEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAerodactylEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSnorlaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeArticunoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeZapdosEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMoltresEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDratiniEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDragonairEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDragoniteEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMewtwoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMewEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeChikoritaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeBayleefEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMeganiumEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCyndaquilEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeQuilavaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTyphlosionEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTotodileEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCroconawEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeFeraligatrEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSentretEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeFurretEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHoothootEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeNoctowlEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLedybaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLedianEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSpinarakEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAriadosEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCrobatEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeChinchouEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLanturnEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePichuEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCleffaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeIgglybuffEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTogepiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTogeticEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeNatuEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeXatuEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMareepEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeFlaaffyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAmpharosEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeBellossomEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMarillEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAzumarillEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSudowoodoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePolitoedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHoppipEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSkiploomEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeJumpluffEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAipomEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSunkernEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSunfloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeYanmaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWooperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeQuagsireEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeEspeonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUmbreonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMurkrowEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSlowkingEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMisdreavusEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWobbuffetEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGirafarigEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePinecoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeForretressEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDunsparceEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGligarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSteelixEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSnubbullEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGranbullEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeQwilfishEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeScizorEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeShuckleEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHeracrossEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSneaselEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTeddiursaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUrsaringEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSlugmaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMagcargoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSwinubEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePiloswineEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCorsolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRemoraidEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeOctilleryEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDelibirdEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMantineEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSkarmoryEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHoundourEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHoundoomEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKingdraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePhanpyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDonphanEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePorygon2EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeStantlerEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSmeargleEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTyrogueEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHitmontopEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSmoochumEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeElekidEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMagbyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMiltankEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeBlisseyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRaikouEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeEnteiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSuicuneEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLarvitarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePupitarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTyranitarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLugiaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHoOhEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCelebiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAzurillEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWynautEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAmbipomEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMismagiusEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHonchkrowEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeBonslyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMimeJrEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHappinyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMunchlaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMantykeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWeavileEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMagnezoneEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLickilickyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRhyperiorEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTangrowthEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeElectivireEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMagmortarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTogekissEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeYanmegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLeafeonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGlaceonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGliscorEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMamoswineEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePorygonZEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSylveonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePerrserkerEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCursolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSirfetchdEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMrRimeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWyrdeerEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKleavorEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUrsalunaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSneaslerEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeOverqwilEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAnnihilapeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeClodsireEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeFarigirafEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDudunsparceEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRattataAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRaticateAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRaichuAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSandshrewAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSandslashAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVulpixAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeNinetalesAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDiglettAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDugtrioAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMeowthAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePersianAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGeodudeAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGravelerAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGolemAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGrimerAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMukAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeExeggutorAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMarowakAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRaticateAlolaTotemEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMarowakAlolaTotemEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMeowthGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePonytaGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRapidashGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSlowpokeGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSlowbroGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeFarfetchdGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWeezingGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMrMimeGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeArticunoGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeZapdosGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMoltresGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSlowkingGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCorsolaGalarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGrowlitheHisuiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeArcanineHisuiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVoltorbHisuiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeElectrodeHisuiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTyphlosionHisuiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeQwilfishHisuiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSneaselHisuiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTaurosPaldeaCombatEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTaurosPaldeaBlazeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTaurosPaldeaAquaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWooperPaldeaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUrsalunaBloodmoonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuCosplayEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuRockStarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuBelleEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuPopStarEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuPhdEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuLibreEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuOriginalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuHoennEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuSinnohEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuUnovaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuKalosEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuAlolaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuPartnerEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuWorldEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePichuSpikyEaredEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownBEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownCEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownDEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownEEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownFEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownGEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownHEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownIEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownJEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownKEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownLEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownMEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownNEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownOEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownPEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownQEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownREggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownSEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownTEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownUEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownVEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownWEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownXEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownYEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownZEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownExclamationEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeUnownQuestionEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDudunsparceThreeSegmentEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGreatTuskEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeScreamTailEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeFlutterManeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSandyShocksEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeIronTreadsEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeIronBundleEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeIronThornsEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeWalkingWakeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGougingFireEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRagingBoltEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYuukiYuunaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYuukiYuunaYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYuukiYuunaMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMimoriNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMimoriYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMimoriMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiKarinNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiKarinYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiKarinMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiFuuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiFuuYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiFuuMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiItsukiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiItsukiYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiItsukiMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSonokoBigNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSonokoBigYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSonokoBigMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSumiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSumiYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSumiMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiGinNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiGinYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiGinMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSonokoSmolNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSonokoSmolYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSonokoSmolMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiWakabaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiWakabaYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiWakabaKirifuda1EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiTakashimaYuunaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiTakashimaYuunaYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiTakashimaYuunaKirifuda1EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiChikageNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiChikageYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiChikageKirifudaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiTamakoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiTamakoYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiTamakoKirifudaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiAnzuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiAnzuYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiAnzuKirifudaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiHinataNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiHinataMikoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiUtanoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiUtanoYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiUtanoKirifudaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMitoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMitoMikoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMebukiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMebukiSakimoriEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMebukiMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSuzumeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSuzumeSakimoriEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSuzumeMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYumikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYumikoSakimoriEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYumikoMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiShizukuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiShizukuSakimoriEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiShizukuMankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiAyaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiAyaMikoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSekkaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSekkaYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiSekkaKirifudaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiNatsumeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiNatsumeYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiNatsumeKirifudaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiAkamineYuunaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiAkamineYuunaYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiAkamineYuunaKirifudaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiRengeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiRengeYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiRengeKirifudaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiShizukaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiShizukaMikoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiFuyouLilienthalYuunaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiFuyouLilienthalYuunaYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiFuyouLilienthalYuunaKirifudaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYuzukiYuunaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYuzukiYuunaYuushaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYuzukiYuunaKirifudaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMasuzuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMasuzuMikoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYoshikaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYoshikaMikoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiHimeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiHimeMikoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMisakiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiMisakiMikoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShingyokuChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShingyokuOrbEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShingyokuPriestEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShingyokuPriestessEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuugenChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuugenNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMimaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMimaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThElisChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThElisNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKikuriChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKikuriNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSarielChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSarielNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSarielSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKonngaraChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKonngaraNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThFairyNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThGenjiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRikaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRikaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMeiraChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMeiraNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEllenChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEllenNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKotohimeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKotohimeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKanaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKanaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRikakoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRikakoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChiyuriChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChiyuriNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYumemiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYumemiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKedamaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRuukotoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMimichanNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThOrangeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThOrangeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKurumiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKurumiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEllyChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEllyNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMugetsuChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMugetsuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThGengetsuChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThGengetsuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSaraChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSaraNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLouiseChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLouiseNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYukiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYukiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMaiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMaiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYumekoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYumekoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShinkiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShinkiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRumiaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRumiaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRumiaAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRumiaSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThDaiyouseiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThDaiyouseiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThDaiyouseiAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThDaiyouseiDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThCirnoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThCirnoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThCirnoSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThCirnoTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThCirnoAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLunachildChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLunachildNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLunachildAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLunachildTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThStarsapphireChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThStarsapphireNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThStarsapphireAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThStarsapphireHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSunnymilkChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSunnymilkNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSunnymilkAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSunnymilkDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMeilingChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMeilingNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMeilingDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMeilingSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMeilingAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKoakumaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKoakumaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKoakumaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThPatchouliChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThPatchouliNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThPatchouliAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThPatchouliDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSakuyaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSakuyaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSakuyaTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSakuyaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRemiliaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRemiliaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRemiliaAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRemiliaDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRemiliaAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThFlandreChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThFlandreNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThFlandreAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThFlandreSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSatsukiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLettyChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLettyNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLettyDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLettyHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLettyAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChenChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChenNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChenAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChenTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChenAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAliceChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAliceNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAliceAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAliceTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLilyblackChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLilyblackNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLilyblackAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLilyblackSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLilywhiteChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLilywhiteNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLilywhiteAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLilywhiteHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLunasaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLunasaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLunasaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMerlinChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMerlinNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMerlinHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLyricaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLyricaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLyricaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYoumuChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYoumuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYoumuDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYoumuSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYoumuAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuyukoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuyukoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuyukoAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuyukoDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuyukoAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRanChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRanNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRanAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRanHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRanAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYukariChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYukariNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYukariDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYukariTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYukariAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuikaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuikaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuikaAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuikaTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThWriggleChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThWriggleNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThWriggleDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThWriggleSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMystiaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMystiaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMystiaAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMystiaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMystiaAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKeineChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKeineNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKeineAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKeineDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKeineHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTewiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTewiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTewiAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTewiDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTewiAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThReisenChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThReisenNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThReisenDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThReisenTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThReisenAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEirinChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEirinNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEirinAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEirinHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEirinAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKaguyaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKaguyaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKaguyaAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKaguyaDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMokouChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMokouNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMokouAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMokouDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMokouAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThGyokutoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThToyohimeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThToyohimeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThToyohimeTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYorihimeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYorihimeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYorihimeSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAyaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAyaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAyaSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAyaTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMedicineChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMedicineNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMedicineAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMedicineSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMedicineTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuukaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuukaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuukaAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuukaTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKomachiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKomachiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKomachiAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKomachiSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEikiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEikiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEikiAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEikiDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShizuhaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShizuhaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShizuhaSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShizuhaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMinorikoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMinorikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMinorikoAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMinorikoDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHinaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHinaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHinaAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHinaDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNitoriChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNitoriNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNitoriAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNitoriTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMomijiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMomijiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMomijiDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSanaeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSanaeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSanaeAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSanaeTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKanakoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKanakoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKanakoAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKanakoDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuwakoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuwakoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuwakoAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuwakoDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThIkuChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThIkuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThIkuDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThIkuTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTenshiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTenshiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTenshiAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTenshiDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKisumeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKisumeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKisumeTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYamameChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYamameNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYamameSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYamameTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThParseeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThParseeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThParseeDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThParseeTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuugiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuugiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuugiAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuugiDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSatoriChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSatoriNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSatoriDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSatoriTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRinChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRinNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRinAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRinSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThZombiefairyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThUtsuhoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThUtsuhoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThUtsuhoAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThUtsuhoSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKoishiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKoishiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKoishiAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKoishiSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNazrinChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNazrinNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNazrinTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNazrinHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKogasaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKogasaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKogasaSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKogasaTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThIchirinChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThIchirinNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThIchirinDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThIchirinTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMurasaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMurasaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMurasaAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMurasaDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShouChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShouNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShouAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShouTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThByakurenChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThByakurenNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThByakurenDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThByakurenTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNueChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNueNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNueAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNueTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThOonamazuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTensokuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTensokuGEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHatateChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHatateNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHatateDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHatateTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKyoukoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKyoukoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYoshikaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYoshikaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSeigaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSeigaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTojikoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTojikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThFutoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThFutoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMikoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMamizouChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMamizouNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKokoroChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKokoroNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThWakasagihimeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThWakasagihimeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSekibankiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSekibankiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKagerouChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKagerouNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThBenbenChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThBenbenNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYatsuhashiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYatsuhashiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSeijaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSeijaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShinmyomaruChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShinmyomaruNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRaikoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRaikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSeiranChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSeiranNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRingoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRingoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThDoremyChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThDoremyNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSagumeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSagumeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThClownpieceChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThClownpieceNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThJunkoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThJunkoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHecatiaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHecatiaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThJoonChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThJoonNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThJoonAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThJoonDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShionChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShionNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShionAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThShionDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEternityChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEternityNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNemunoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNemunoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAunnChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAunnNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNarumiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThNarumiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTeireidaMaiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTeireidaMaiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSatonoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSatonoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThOkinaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThOkinaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEikaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEikaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThUrumiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThUrumiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKutakaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKutakaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYachieChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYachieNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMayumiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMayumiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKeikiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKeikiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSakiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSakiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuumaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuumaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMikeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMikeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTakaneChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTakaneNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSannyoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSannyoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMisumaruChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMisumaruNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTsukasaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTsukasaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMegumuChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMegumuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChimataChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChimataNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMomoyoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMomoyoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThBitenChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThBitenNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEnokoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThEnokoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChiyariChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThChiyariNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHisamiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThHisamiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThZanmuChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThZanmuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKasenChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKasenNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKasenArmEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTenmaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTenmaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTenmaSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSendaiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSendaiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSendaiTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTokikoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTokikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTokikoAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRinnosukeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAkyuuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKosuzuChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKosuzuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThKosuzuAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMiyoiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMiyoiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMizuchiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMizuchiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMaribelNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThRenkoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSumirekoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMarisaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMarisaAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThReimuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThReimuAdventEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sShVivitAndroidEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sShVivitSphereEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcIsamiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMisuzuChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMisuzuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMisuzuExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKanoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKanoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKanoExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMinagiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMinagiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMinagiExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyHarukoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyHarukoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyHarukoExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKannaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKannaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyHijiriChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyHijiriNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyHijiriExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMichiruChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMichiruNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMichiruExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyUrahaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyUrahaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyUrahaExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyPotatoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeySoraNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyAyuChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyAyuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyAyuExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMaiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMaiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMaiExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyNayukiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyNayukiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyNayukiExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyShioriChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyShioriNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyShioriExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMakotoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMakotoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMakotoExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMishioChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMishioNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeySayuriChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeySayuriNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeySayuriExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyAkikoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyAkikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyAkikoExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKaoriChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKaoriNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyPiroNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyNagisaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyNagisaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyNagisaExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKyouChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKyouNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKyouExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyRyouChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyRyouNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyRyouExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKotomiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKotomiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKotomiExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyTomoyoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyTomoyoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyTomoyoExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyFuukoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyFuukoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyFuukoExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyYukineChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyYukineNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyYukineExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMisaeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMisaeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMisaeExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeySanaeChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeySanaeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeySanaeExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMeiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMeiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyUshioChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyUshioNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyBotanNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyRinChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyRinNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyRinExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKomariChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKomariNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKomariExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyYuikoChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyYuikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyYuikoExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMioChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMioNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyMioExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyHarukaChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyHarukaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyHarukaExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKudChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKudNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKudExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKanataChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKanataNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyKanataExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeySasamiChibiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeySasamiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeySasamiExEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMikiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMikiFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsSubaruNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsSubaruFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsHarukaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsHarukaFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsNozomiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsNozomiFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsYuriNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsYuriFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsKurumiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsKurumiFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsKurumiAlterEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsAnkoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsAnkoFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsAnkoAlterEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsRengeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsRengeFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsAsuhaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsAsuhaFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsSakuraNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsSakuraFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsHinataNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsHinataFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsHinataAlterEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsKaedeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsKaedeFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMichaelNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMichaelFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsKokomiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsKokomiFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsUraraNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsUraraFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsSadoneNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsSadoneFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsKanonNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsKanonFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsKanonFortessimoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsShihoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsShihoFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsShihoFortessimoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMisakiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMisakiFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMariNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMariFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsErisEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsItsukiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsItsukiFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsFuranNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsFuranFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsErikaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsErikaFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsEvinaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsAoiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsAoiFloraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsBotanNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBlackUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBlackNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBlackGoldEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureWhiteUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureWhiteNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureWhiteGoldEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcShinyLuminousUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcShinyLuminousNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcShinyLuminousGoldEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBloomUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBloomNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBrightNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureEgretUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureEgretNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureWindyNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDreamUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDreamNormalS1EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDreamNormalS2EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDreamSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureRougeUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureRougeNormalS1EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureRougeNormalS2EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureRougeSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureLemonadeUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureLemonadeNormalS1EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureLemonadeNormalS2EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureLemonadeSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMintUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMintNormalS1EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMintNormalS2EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMintSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureAquaUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureAquaNormalS1EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureAquaNormalS2EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureAquaSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcMilkyRoseUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcMilkyRoseNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcMilkyRoseSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcDarkDreamEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcDarkRougeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcDarkLemonadeEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcDarkMintEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcDarkAquaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePeachUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePeachNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePeachSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBerryUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBerryNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBerrySuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePineUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePineNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePineSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePassionUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePassionNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePassionSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcEasEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBlossomUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBlossomNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBlossomSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMarineUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMarineNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMarineSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureSunshineUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureSunshineNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureSunshineSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMoonlightUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMoonlightNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMoonlightSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcDarkPrecureEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureFloraHcpcEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMelodyUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMelodyNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMelodySuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureRhythmUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureRhythmNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureRhythmSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBeatUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBeatNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBeatSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMuseUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMuseNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMuseMaskedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMuseSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureHappyUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureHappyNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureHappyPrincessEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureSunnyUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureSunnyNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureSunnyPrincessEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePeaceUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePeaceNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePeacePrincessEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMarchUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMarchNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMarchPrincessEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBeautyUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBeautyNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBeautyPrincessEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcBadEndHappyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcBadEndSunnyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcBadEndPeaceEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcBadEndMarchEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcBadEndBeautyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureEchoUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureEchoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureHeartUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureHeartNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureHeartSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDiamondUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDiamondNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDiamondSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureRosettaUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureRosettaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureRosettaSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureSwordUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureSwordNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureSwordSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureAceUntransformedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureAceNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureAceSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcReginaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMissingnoPlayableEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1630EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1631EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1632EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1633EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1634EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1635EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1636EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1637EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1638EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1639EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1640EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1641EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1642EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1643EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1644EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1645EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1646EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1647EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1648EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1649EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1650EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1651EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1652EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1653EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1654EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1655EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1656EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1657EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1658EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1659EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1660EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1661EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1662EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1663EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1664EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1665EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1666EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1667EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1668EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1669EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1670EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1671EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1672EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1673EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1674EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1675EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1676EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1677EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1678EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1679EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1680EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1681EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1682EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1683EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1684EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1685EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1686EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1687EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1688EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1689EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1690EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1691EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1692EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1693EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1694EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1695EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1696EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1697EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1698EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1699EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1700EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1701EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1702EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1703EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1704EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1705EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1706EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1707EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1708EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1709EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1710EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1711EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1712EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1713EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1714EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1715EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1716EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1717EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1718EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1719EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1720EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1721EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1722EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1723EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1724EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1725EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1726EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1727EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1728EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1729EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1730EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1731EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1732EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1733EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1734EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1735EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1736EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1737EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1738EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1739EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1740EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1741EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1742EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1743EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1744EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1745EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1746EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1747EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1748EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1749EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1750EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1751EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1752EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1753EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1754EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1755EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1756EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1757EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1758EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1759EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1760EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1761EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1762EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1763EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1764EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1765EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1766EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1767EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1768EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1769EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1770EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1771EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1772EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1773EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1774EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1775EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1776EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1777EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1778EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1779EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1780EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1781EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1782EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1783EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1784EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcWupiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcMikuEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcMikuMagicalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcMikuSnowEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcMikuAngelEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcMikuRacingEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcFoxyriaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcNimiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcAnyaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcGuraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcAmeliaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcBijouEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcYabusameEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcTsubakuraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcNeptuneNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcNepgearNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcCureUnionNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcEmesgeseyEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcShounenEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcRedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcEthanEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcBrendanEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcLucasEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcHilbertEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcNateEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcCalemEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcElioEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcChaseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcVictorEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcReiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcFlorianEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcWesEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcMichaelEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcShoujoEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcLeafEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcLyraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcKrisEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcMayEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcDawnEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcHildaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcRosaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcSerenaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcSeleneEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcElaineEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcGloriaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcAkariEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcJulianaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcDialgaThEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcPalkiaThEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcGiratinaThEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcArceusThEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcIllyasvielNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcChloeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcDecadeNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcDecadeCompleteEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcDecadeComplete21EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcDiendNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcDiendCompleteEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcDelastEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLugiaShadowEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuStarterEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeEeveeStarterEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1850EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThReimuCtcEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sShVivitAngelEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVenusaurMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCharizardMegaXEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCharizardMegaYEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeBlastoiseMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeBeedrillMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePidgeotMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAlakazamMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSlowbroMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGengarMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKangaskhanMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePinsirMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGyaradosMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAerodactylMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMewtwoMegaXEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMewtwoMegaYEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeAmpharosMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSteelixMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeScizorMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHeracrossMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeHoundoomMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeTyranitarMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiWakabaKirifuda2EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiTakashimaYuunaKirifuda2EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sYyyiYuukiYuunaDaimankaiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAliceBlackRNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAliceBlackRAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAliceBlackRTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThPrismriverRLunasaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThPrismriverRLunasaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThPrismriverRMerlinNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThPrismriverRMerlinHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThPrismriverRLyricaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThPrismriverRLyricaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAkisistersRShizuhaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAkisistersRShizuhaSpeedEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAkisistersRShizuhaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAkisistersRMinorikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAkisistersRMinorikoAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAkisistersRMinorikoDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTrioTmfRTojikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTrioTmfRFutoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTrioTmfRMikoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYorigamisistersRJoonNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYorigamisistersRJoonAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYorigamisistersRJoonDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYorigamisistersRShionNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYorigamisistersRShionAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYorigamisistersRShionDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTrioMsoRTeireidaMaiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTrioMsoRTeireidaSatonoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTrioMsoRTeireidaOkinaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTrioYskRYachieNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTrioYskRKeikiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThTrioYskRSakiNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThDuoMcRMarisaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThDuoMcRReimuNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sKeyUshioIllusionaryEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMikiFloraElvisEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsShihoGriefEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMisakiFloraElvisEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sBghsMariFloraFinalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBlackPhoenixEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureWhitePhoenixEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcShinyLuminousPhoenixEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBrightyBloomRCureBloomNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBrightyBloomRCureBrightNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureWindyEgretRCureEgretNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureWindyEgretRCureWindyNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDreamShiningRNormalS1EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDreamGraceRNormalS1EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDreamShiningRNormalS2EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureDreamGraceRNormalS2EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcInfinitySulRCureBlossomSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcInfinitySulRCureMarineSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcInfinitySulRCureSunshineSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcInfinitySulRCureMoonlightSuperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureHappyUltraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureSunnyUltraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCurePeaceUltraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureMarchUltraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureBeautyUltraEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPcCureHeartParthenonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcCureUnionCompleteEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcDecadeAbsoluteRCompleteEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcDecadeAbsoluteRComplete21EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcNeptuneGoddessEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcNepgearGoddessEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcIllyasvielZweiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeClefableMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVictreebelMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeStarmieMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeDragoniteMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMeganiumMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeFeraligatrMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSkarmoryMegaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRaichuMegaXEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeRaichuMegaYEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon1980EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAliceRemindRNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAliceRemindRAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAliceRemindRTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLaylaRLunasaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLaylaRLunasaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLaylaRMerlinNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLaylaRMerlinHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLaylaRLyricaNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThLaylaRLyricaHelperEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAyakashiRYuyukoNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAyakashiRYuyukoAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThAyakashiRYuyukoDefenseEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuukaRemindRNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuukaRemindRAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYuukaRemindRTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSanaeRemindRNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSanaeRemindRAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSanaeRemindRTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMarisaRemindRNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThReimuRemindRNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeVenusaurGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeBlastoiseGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeCharizardGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeButterfreeGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoePikachuGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMeowthGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeMachampGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeGengarGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeKinglerGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeLaprasGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeEeveeGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sMoeSnorlaxGmaxEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuikaMpRNormalEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuikaMpRAttackEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSuikaMpRTechEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon2028EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon2029EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon2030EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon2031EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon2032EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sFragmon2033EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcSailorMoonEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcOmoriEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcMadokaUltimateEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThSanaeBrokenRiteEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThYoumuB3EggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcBlackRockShooterEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcValkyrieEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThReimuLUnknownEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMedicineMuiEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcNonotaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcNobetaEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sThMarisa8BitEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sEtcAmeYamameEggMoveLearnset[] = {
+    MOVE_UNAVAILABLE,
+};

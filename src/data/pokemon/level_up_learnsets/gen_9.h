@@ -6805,7 +6805,7 @@ static const struct LevelUpMove sCelebiLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_CELEBI
-
+/*
 #if P_FAMILY_TREECKO
 static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
@@ -21398,7 +21398,7 @@ static const struct LevelUpMove sTatsugiriLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_TATSUGIRI
-
+*/
 #if P_FAMILY_GREAT_TUSK
 static const struct LevelUpMove sGreatTuskLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HORN_ATTACK),
@@ -21444,7 +21444,7 @@ static const struct LevelUpMove sScreamTailLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SCREAM_TAIL
-
+/*
 #if P_FAMILY_BRUTE_BONNET
 static const struct LevelUpMove sBruteBonnetLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SUNNY_DAY),
@@ -21466,7 +21466,7 @@ static const struct LevelUpMove sBruteBonnetLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_BRUTE_BONNET
-
+*/
 #if P_FAMILY_FLUTTER_MANE
 static const struct LevelUpMove sFlutterManeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SUNNY_DAY),
@@ -21489,7 +21489,7 @@ static const struct LevelUpMove sFlutterManeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FLUTTER_MANE
-
+/*
 #if P_FAMILY_SLITHER_WING
 static const struct LevelUpMove sSlitherWingLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SUNNY_DAY),
@@ -21513,7 +21513,7 @@ static const struct LevelUpMove sSlitherWingLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SLITHER_WING
-
+*/
 #if P_FAMILY_SANDY_SHOCKS
 static const struct LevelUpMove sSandyShocksLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SUNNY_DAY),
@@ -21580,7 +21580,7 @@ static const struct LevelUpMove sIronBundleLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_BUNDLE
-
+/*
 #if P_FAMILY_IRON_HANDS
 static const struct LevelUpMove sIronHandsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ELECTRIC_TERRAIN),
@@ -21651,7 +21651,7 @@ static const struct LevelUpMove sIronMothLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_MOTH
-
+*/
 #if P_FAMILY_IRON_THORNS
 static const struct LevelUpMove sIronThornsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ELECTRIC_TERRAIN),
@@ -21675,7 +21675,7 @@ static const struct LevelUpMove sIronThornsLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_IRON_THORNS
-
+/*
 #if P_FAMILY_FRIGIBAX
 static const struct LevelUpMove sFrigibaxLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -21941,7 +21941,7 @@ static const struct LevelUpMove sMiraidonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MIRAIDON
-
+*/
 #if P_FAMILY_WALKING_WAKE
 static const struct LevelUpMove sWalkingWakeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SUNNY_DAY),
@@ -21964,7 +21964,7 @@ static const struct LevelUpMove sWalkingWakeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_WALKING_WAKE
-
+/*
 #if P_FAMILY_IRON_LEAVES
 static const struct LevelUpMove sIronLeavesLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUASH),
@@ -22108,7 +22108,7 @@ static const struct LevelUpMove sOgerponLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif
-
+*/
 #if P_FAMILY_GOUGING_FIRE
 static const struct LevelUpMove sGougingFireLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
@@ -22158,7 +22158,7 @@ static const struct LevelUpMove sRagingBoltLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_RAGING_BOLT
-
+/*
 #if P_FAMILY_IRON_BOULDER
 static const struct LevelUpMove sIronBoulderLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HORN_ATTACK),
@@ -22244,4 +22244,8074 @@ static const struct LevelUpMove sPecharuntLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_PECHARUNT
+*/
 
+static const struct LevelUpMove sMoeBulbasaurLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeIvysaurLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVenusaurLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCharmanderLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCharmeleonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCharizardLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSquirtleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWartortleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeBlastoiseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCaterpieLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMetapodLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeButterfreeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWeedleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKakunaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeBeedrillLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePidgeyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePidgeottoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePidgeotLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRattataLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRaticateLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSpearowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeFearowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeEkansLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeArbokLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRaichuLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSandshrewLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSandslashLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeNidoranFLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeNidorinaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeNidoqueenLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeNidoranMLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeNidorinoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeNidokingLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeClefairyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeClefableLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVulpixLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeNinetalesLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeJigglypuffLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWigglytuffLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeZubatLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGolbatLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeOddishLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGloomLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVileplumeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeParasLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeParasectLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVenonatLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVenomothLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDiglettLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDugtrioLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMeowthLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePersianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePsyduckLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGolduckLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMankeyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePrimeapeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGrowlitheLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeArcanineLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePoliwagLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePoliwhirlLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePoliwrathLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAbraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKadabraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAlakazamLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMachopLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMachokeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMachampLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeBellsproutLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWeepinbellLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVictreebelLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTentacoolLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTentacruelLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGeodudeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGravelerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGolemLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePonytaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRapidashLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSlowpokeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSlowbroLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMagnemiteLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMagnetonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeFarfetchdLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDoduoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDodrioLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSeelLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDewgongLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGrimerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMukLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeShellderLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCloysterLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGastlyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHaunterLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGengarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeOnixLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDrowzeeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHypnoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKrabbyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKinglerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVoltorbLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeElectrodeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeExeggcuteLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeExeggutorLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCuboneLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMarowakLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHitmonleeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHitmonchanLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLickitungLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKoffingLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWeezingLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRhyhornLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRhydonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeChanseyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTangelaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKangaskhanLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHorseaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSeadraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGoldeenLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSeakingLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeStaryuLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeStarmieLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMrMimeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeScytherLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeJynxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeElectabuzzLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMagmarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePinsirLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTaurosLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMagikarpLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGyaradosLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLaprasLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDittoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeEeveeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVaporeonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeJolteonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeFlareonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePorygonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeOmanyteLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeOmastarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKabutoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKabutopsLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAerodactylLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSnorlaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeArticunoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeZapdosLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMoltresLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDratiniLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDragonairLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDragoniteLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMewtwoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMewLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeChikoritaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeBayleefLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMeganiumLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCyndaquilLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeQuilavaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTyphlosionLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTotodileLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCroconawLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeFeraligatrLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSentretLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeFurretLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHoothootLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeNoctowlLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLedybaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLedianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSpinarakLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAriadosLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCrobatLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeChinchouLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLanturnLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePichuLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCleffaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeIgglybuffLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTogepiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTogeticLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeNatuLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeXatuLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMareepLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeFlaaffyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAmpharosLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeBellossomLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMarillLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAzumarillLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSudowoodoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePolitoedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHoppipLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSkiploomLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeJumpluffLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAipomLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSunkernLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSunfloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeYanmaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWooperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeQuagsireLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeEspeonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUmbreonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMurkrowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSlowkingLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMisdreavusLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWobbuffetLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGirafarigLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePinecoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeForretressLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDunsparceLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGligarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSteelixLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSnubbullLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGranbullLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeQwilfishLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeScizorLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeShuckleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHeracrossLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSneaselLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTeddiursaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUrsaringLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSlugmaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMagcargoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSwinubLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePiloswineLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCorsolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRemoraidLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeOctilleryLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDelibirdLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMantineLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSkarmoryLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHoundourLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHoundoomLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKingdraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePhanpyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDonphanLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePorygon2LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeStantlerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSmeargleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTyrogueLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHitmontopLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSmoochumLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeElekidLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMagbyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMiltankLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeBlisseyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRaikouLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeEnteiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSuicuneLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLarvitarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePupitarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTyranitarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLugiaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHoOhLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCelebiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAzurillLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWynautLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAmbipomLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMismagiusLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHonchkrowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeBonslyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMimeJrLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHappinyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMunchlaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMantykeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWeavileLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMagnezoneLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLickilickyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRhyperiorLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTangrowthLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeElectivireLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMagmortarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTogekissLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeYanmegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLeafeonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGlaceonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGliscorLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMamoswineLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePorygonZLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSylveonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePerrserkerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCursolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSirfetchdLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMrRimeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWyrdeerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKleavorLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUrsalunaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSneaslerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeOverqwilLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAnnihilapeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeClodsireLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeFarigirafLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDudunsparceLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRattataAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRaticateAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRaichuAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSandshrewAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSandslashAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVulpixAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeNinetalesAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDiglettAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDugtrioAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMeowthAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePersianAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGeodudeAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGravelerAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGolemAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGrimerAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMukAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeExeggutorAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMarowakAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRaticateAlolaTotemLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMarowakAlolaTotemLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMeowthGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePonytaGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRapidashGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSlowpokeGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSlowbroGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeFarfetchdGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWeezingGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMrMimeGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeArticunoGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeZapdosGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMoltresGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSlowkingGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCorsolaGalarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGrowlitheHisuiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeArcanineHisuiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVoltorbHisuiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeElectrodeHisuiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTyphlosionHisuiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeQwilfishHisuiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSneaselHisuiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTaurosPaldeaCombatLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTaurosPaldeaBlazeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTaurosPaldeaAquaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWooperPaldeaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUrsalunaBloodmoonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuCosplayLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuRockStarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuBelleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuPopStarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuPhdLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuLibreLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuOriginalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuHoennLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuSinnohLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuUnovaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuKalosLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuPartnerLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuWorldLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePichuSpikyEaredLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownBLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownCLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownDLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownELevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownFLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownGLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownHLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownILevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownJLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownKLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownLLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownMLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownNLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownOLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownPLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownQLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownRLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownSLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownTLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownULevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownVLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownWLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownXLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownYLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownZLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownExclamationLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeUnownQuestionLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDudunsparceThreeSegmentLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGreatTuskLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeScreamTailLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeFlutterManeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSandyShocksLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeIronTreadsLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeIronBundleLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeIronThornsLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeWalkingWakeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGougingFireLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRagingBoltLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYuukiYuunaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYuukiYuunaYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYuukiYuunaMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMimoriNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMimoriYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMimoriMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiKarinNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiKarinYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiKarinMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiFuuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiFuuYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiFuuMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiItsukiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiItsukiYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiItsukiMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSonokoBigNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSonokoBigYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSonokoBigMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSumiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSumiYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSumiMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiGinNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiGinYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiGinMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSonokoSmolNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSonokoSmolYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSonokoSmolMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiWakabaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiWakabaYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiWakabaKirifuda1LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiTakashimaYuunaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiTakashimaYuunaYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiTakashimaYuunaKirifuda1LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiChikageNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiChikageYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiChikageKirifudaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiTamakoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiTamakoYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiTamakoKirifudaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiAnzuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiAnzuYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiAnzuKirifudaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiHinataNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiHinataMikoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiUtanoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiUtanoYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiUtanoKirifudaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMitoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMitoMikoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMebukiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMebukiSakimoriLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMebukiMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSuzumeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSuzumeSakimoriLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSuzumeMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYumikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYumikoSakimoriLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYumikoMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiShizukuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiShizukuSakimoriLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiShizukuMankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiAyaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiAyaMikoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSekkaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSekkaYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiSekkaKirifudaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiNatsumeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiNatsumeYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiNatsumeKirifudaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiAkamineYuunaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiAkamineYuunaYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiAkamineYuunaKirifudaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiRengeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiRengeYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiRengeKirifudaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiShizukaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiShizukaMikoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiFuyouLilienthalYuunaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiFuyouLilienthalYuunaYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiFuyouLilienthalYuunaKirifudaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYuzukiYuunaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYuzukiYuunaYuushaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYuzukiYuunaKirifudaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMasuzuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMasuzuMikoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYoshikaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYoshikaMikoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiHimeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiHimeMikoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMisakiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiMisakiMikoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShingyokuChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShingyokuOrbLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShingyokuPriestLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShingyokuPriestessLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuugenChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuugenNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMimaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMimaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThElisChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThElisNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKikuriChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKikuriNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSarielChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSarielNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSarielSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKonngaraChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKonngaraNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThFairyNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThGenjiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRikaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRikaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMeiraChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMeiraNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEllenChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEllenNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKotohimeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKotohimeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKanaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKanaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRikakoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRikakoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChiyuriChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChiyuriNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYumemiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYumemiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKedamaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRuukotoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMimichanNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThOrangeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThOrangeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKurumiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKurumiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEllyChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEllyNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMugetsuChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMugetsuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThGengetsuChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThGengetsuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSaraChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSaraNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLouiseChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLouiseNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYukiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYukiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMaiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMaiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYumekoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYumekoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShinkiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShinkiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRumiaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRumiaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRumiaAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRumiaSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThDaiyouseiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThDaiyouseiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThDaiyouseiAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThDaiyouseiDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThCirnoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThCirnoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThCirnoSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThCirnoTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThCirnoAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLunachildChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLunachildNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLunachildAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLunachildTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThStarsapphireChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThStarsapphireNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThStarsapphireAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThStarsapphireHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSunnymilkChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSunnymilkNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSunnymilkAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSunnymilkDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMeilingChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMeilingNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMeilingDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMeilingSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMeilingAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKoakumaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKoakumaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKoakumaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThPatchouliChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThPatchouliNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThPatchouliAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThPatchouliDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSakuyaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSakuyaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSakuyaTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSakuyaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRemiliaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRemiliaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRemiliaAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRemiliaDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRemiliaAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThFlandreChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThFlandreNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThFlandreAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThFlandreSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSatsukiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLettyChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLettyNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLettyDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLettyHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLettyAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChenChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChenNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChenAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChenTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChenAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAliceChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAliceNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAliceAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAliceTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLilyblackChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLilyblackNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLilyblackAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLilyblackSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLilywhiteChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLilywhiteNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLilywhiteAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLilywhiteHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLunasaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLunasaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLunasaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMerlinChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMerlinNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMerlinHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLyricaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLyricaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLyricaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYoumuChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYoumuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYoumuDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYoumuSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYoumuAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuyukoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuyukoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuyukoAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuyukoDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuyukoAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRanChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRanNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRanAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRanHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRanAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYukariChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYukariNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYukariDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYukariTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYukariAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuikaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuikaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuikaAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuikaTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThWriggleChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThWriggleNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThWriggleDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThWriggleSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMystiaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMystiaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMystiaAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMystiaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMystiaAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKeineChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKeineNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKeineAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKeineDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKeineHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTewiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTewiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTewiAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTewiDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTewiAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThReisenChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThReisenNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThReisenDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThReisenTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThReisenAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEirinChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEirinNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEirinAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEirinHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEirinAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKaguyaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKaguyaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKaguyaAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKaguyaDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMokouChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMokouNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMokouAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMokouDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMokouAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThGyokutoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThToyohimeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThToyohimeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThToyohimeTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYorihimeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYorihimeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYorihimeSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAyaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAyaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAyaSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAyaTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMedicineChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMedicineNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMedicineAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMedicineSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMedicineTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuukaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuukaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuukaAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuukaTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKomachiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKomachiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKomachiAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKomachiSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEikiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEikiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEikiAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEikiDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShizuhaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShizuhaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShizuhaSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShizuhaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMinorikoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMinorikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMinorikoAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMinorikoDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHinaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHinaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHinaAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHinaDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNitoriChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNitoriNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNitoriAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNitoriTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMomijiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMomijiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMomijiDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSanaeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSanaeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSanaeAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSanaeTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKanakoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKanakoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKanakoAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKanakoDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuwakoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuwakoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuwakoAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuwakoDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThIkuChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThIkuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThIkuDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThIkuTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTenshiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTenshiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTenshiAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTenshiDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKisumeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKisumeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKisumeTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYamameChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYamameNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYamameSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYamameTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThParseeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThParseeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThParseeDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThParseeTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuugiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuugiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuugiAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuugiDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSatoriChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSatoriNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSatoriDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSatoriTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRinChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRinNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRinAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRinSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThZombiefairyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThUtsuhoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThUtsuhoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThUtsuhoAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThUtsuhoSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKoishiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKoishiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKoishiAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKoishiSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNazrinChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNazrinNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNazrinTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNazrinHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKogasaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKogasaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKogasaSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKogasaTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThIchirinChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThIchirinNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThIchirinDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThIchirinTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMurasaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMurasaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMurasaAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMurasaDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShouChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShouNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShouAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShouTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThByakurenChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThByakurenNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThByakurenDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThByakurenTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNueChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNueNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNueAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNueTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThOonamazuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTensokuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTensokuGLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHatateChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHatateNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHatateDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHatateTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKyoukoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKyoukoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYoshikaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYoshikaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSeigaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSeigaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTojikoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTojikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThFutoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThFutoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMikoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMamizouChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMamizouNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKokoroChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKokoroNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThWakasagihimeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThWakasagihimeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSekibankiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSekibankiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKagerouChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKagerouNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThBenbenChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThBenbenNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYatsuhashiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYatsuhashiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSeijaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSeijaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShinmyomaruChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShinmyomaruNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRaikoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRaikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSeiranChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSeiranNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRingoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRingoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThDoremyChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThDoremyNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSagumeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSagumeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThClownpieceChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThClownpieceNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThJunkoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThJunkoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHecatiaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHecatiaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThJoonChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThJoonNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThJoonAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThJoonDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShionChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShionNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShionAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThShionDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEternityChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEternityNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNemunoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNemunoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAunnChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAunnNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNarumiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThNarumiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTeireidaMaiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTeireidaMaiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSatonoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSatonoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThOkinaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThOkinaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEikaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEikaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThUrumiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThUrumiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKutakaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKutakaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYachieChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYachieNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMayumiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMayumiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKeikiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKeikiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSakiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSakiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuumaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuumaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMikeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMikeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTakaneChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTakaneNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSannyoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSannyoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMisumaruChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMisumaruNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTsukasaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTsukasaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMegumuChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMegumuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChimataChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChimataNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMomoyoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMomoyoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThBitenChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThBitenNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEnokoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThEnokoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChiyariChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThChiyariNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHisamiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThHisamiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThZanmuChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThZanmuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKasenChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKasenNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKasenArmLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTenmaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTenmaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTenmaSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSendaiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSendaiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSendaiTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTokikoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTokikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTokikoAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRinnosukeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAkyuuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKosuzuChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKosuzuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThKosuzuAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMiyoiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMiyoiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMizuchiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMizuchiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMaribelNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThRenkoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSumirekoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMarisaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMarisaAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThReimuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThReimuAdventLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sShVivitAndroidLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sShVivitSphereLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcIsamiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMisuzuChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMisuzuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMisuzuExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKanoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKanoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKanoExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMinagiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMinagiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMinagiExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyHarukoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyHarukoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyHarukoExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKannaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKannaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyHijiriChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyHijiriNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyHijiriExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMichiruChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMichiruNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMichiruExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyUrahaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyUrahaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyUrahaExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyPotatoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeySoraNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyAyuChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyAyuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyAyuExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMaiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMaiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMaiExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyNayukiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyNayukiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyNayukiExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyShioriChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyShioriNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyShioriExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMakotoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMakotoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMakotoExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMishioChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMishioNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeySayuriChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeySayuriNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeySayuriExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyAkikoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyAkikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyAkikoExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKaoriChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKaoriNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyPiroNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyNagisaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyNagisaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyNagisaExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKyouChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKyouNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKyouExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyRyouChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyRyouNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyRyouExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKotomiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKotomiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKotomiExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyTomoyoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyTomoyoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyTomoyoExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyFuukoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyFuukoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyFuukoExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyYukineChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyYukineNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyYukineExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMisaeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMisaeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMisaeExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeySanaeChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeySanaeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeySanaeExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMeiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMeiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyUshioChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyUshioNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyBotanNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyRinChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyRinNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyRinExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKomariChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKomariNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKomariExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyYuikoChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyYuikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyYuikoExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMioChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMioNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyMioExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyHarukaChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyHarukaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyHarukaExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKudChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKudNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKudExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKanataChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKanataNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyKanataExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeySasamiChibiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeySasamiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeySasamiExLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMikiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMikiFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsSubaruNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsSubaruFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsHarukaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsHarukaFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsNozomiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsNozomiFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsYuriNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsYuriFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsKurumiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsKurumiFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsKurumiAlterLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsAnkoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsAnkoFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsAnkoAlterLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsRengeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsRengeFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsAsuhaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsAsuhaFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsSakuraNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsSakuraFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsHinataNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsHinataFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsHinataAlterLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsKaedeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsKaedeFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMichaelNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMichaelFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsKokomiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsKokomiFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsUraraNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsUraraFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsSadoneNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsSadoneFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsKanonNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsKanonFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsKanonFortessimoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsShihoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsShihoFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsShihoFortessimoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMisakiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMisakiFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMariNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMariFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsErisLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsItsukiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsItsukiFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsFuranNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsFuranFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsErikaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsErikaFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsEvinaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsAoiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsAoiFloraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsBotanNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBlackUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBlackNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBlackGoldLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureWhiteUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureWhiteNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureWhiteGoldLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcShinyLuminousUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcShinyLuminousNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcShinyLuminousGoldLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBloomUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBloomNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBrightNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureEgretUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureEgretNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureWindyNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDreamUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDreamNormalS1LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDreamNormalS2LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDreamSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureRougeUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureRougeNormalS1LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureRougeNormalS2LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureRougeSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureLemonadeUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureLemonadeNormalS1LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureLemonadeNormalS2LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureLemonadeSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMintUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMintNormalS1LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMintNormalS2LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMintSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureAquaUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureAquaNormalS1LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureAquaNormalS2LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureAquaSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcMilkyRoseUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcMilkyRoseNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcMilkyRoseSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcDarkDreamLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcDarkRougeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcDarkLemonadeLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcDarkMintLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcDarkAquaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePeachUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePeachNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePeachSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBerryUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBerryNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBerrySuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePineUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePineNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePineSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePassionUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePassionNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePassionSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcEasLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBlossomUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBlossomNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBlossomSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMarineUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMarineNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMarineSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureSunshineUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureSunshineNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureSunshineSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMoonlightUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMoonlightNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMoonlightSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcDarkPrecureLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureFloraHcpcLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMelodyUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMelodyNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMelodySuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureRhythmUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureRhythmNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureRhythmSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBeatUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBeatNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBeatSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMuseUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMuseNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMuseMaskedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMuseSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureHappyUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureHappyNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureHappyPrincessLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureSunnyUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureSunnyNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureSunnyPrincessLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePeaceUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePeaceNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePeacePrincessLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMarchUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMarchNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMarchPrincessLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBeautyUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBeautyNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBeautyPrincessLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcBadEndHappyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcBadEndSunnyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcBadEndPeaceLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcBadEndMarchLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcBadEndBeautyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureEchoUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureEchoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureHeartUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureHeartNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureHeartSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDiamondUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDiamondNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDiamondSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureRosettaUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureRosettaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureRosettaSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureSwordUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureSwordNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureSwordSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureAceUntransformedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureAceNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureAceSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcReginaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMissingnoPlayableLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1630LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1631LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1632LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1633LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1634LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1635LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1636LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1637LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1638LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1639LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1640LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1641LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1642LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1643LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1644LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1645LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1646LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1647LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1648LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1649LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1650LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1651LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1652LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1653LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1654LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1655LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1656LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1657LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1658LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1659LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1660LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1661LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1662LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1663LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1664LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1665LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1666LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1667LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1668LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1669LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1670LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1671LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1672LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1673LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1674LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1675LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1676LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1677LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1678LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1679LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1680LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1681LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1682LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1683LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1684LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1685LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1686LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1687LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1688LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1689LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1690LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1691LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1692LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1693LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1694LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1695LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1696LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1697LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1698LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1699LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1700LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1701LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1702LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1703LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1704LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1705LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1706LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1707LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1708LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1709LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1710LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1711LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1712LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1713LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1714LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1715LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1716LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1717LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1718LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1719LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1720LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1721LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1722LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1723LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1724LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1725LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1726LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1727LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1728LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1729LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1730LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1731LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1732LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1733LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1734LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1735LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1736LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1737LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1738LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1739LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1740LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1741LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1742LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1743LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1744LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1745LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1746LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1747LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1748LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1749LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1750LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1751LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1752LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1753LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1754LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1755LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1756LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1757LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1758LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1759LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1760LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1761LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1762LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1763LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1764LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1765LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1766LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1767LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1768LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1769LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1770LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1771LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1772LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1773LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1774LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1775LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1776LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1777LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1778LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1779LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1780LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1781LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1782LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1783LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1784LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcWupiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcMikuLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcMikuMagicalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcMikuSnowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcMikuAngelLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcMikuRacingLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcFoxyriaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcNimiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcAnyaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcGuraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcAmeliaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcBijouLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcYabusameLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcTsubakuraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcNeptuneNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcNepgearNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcCureUnionNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcEmesgeseyLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcShounenLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcRedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcEthanLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcBrendanLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcLucasLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcHilbertLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcNateLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcCalemLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcElioLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcChaseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcVictorLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcReiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcFlorianLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcWesLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcMichaelLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcShoujoLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcLeafLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcLyraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcKrisLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcMayLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcDawnLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcHildaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcRosaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcSerenaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcSeleneLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcElaineLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcGloriaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcAkariLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcJulianaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcDialgaThLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcPalkiaThLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcGiratinaThLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcArceusThLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcIllyasvielNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcChloeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcDecadeNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcDecadeCompleteLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcDecadeComplete21LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcDiendNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcDiendCompleteLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcDelastLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLugiaShadowLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuStarterLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeEeveeStarterLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1850LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThReimuCtcLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sShVivitAngelLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVenusaurMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCharizardMegaXLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCharizardMegaYLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeBlastoiseMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeBeedrillMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePidgeotMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAlakazamMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSlowbroMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGengarMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKangaskhanMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePinsirMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGyaradosMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAerodactylMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMewtwoMegaXLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMewtwoMegaYLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeAmpharosMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSteelixMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeScizorMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHeracrossMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeHoundoomMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeTyranitarMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiWakabaKirifuda2LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiTakashimaYuunaKirifuda2LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sYyyiYuukiYuunaDaimankaiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAliceBlackRNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAliceBlackRAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAliceBlackRTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThPrismriverRLunasaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThPrismriverRLunasaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThPrismriverRMerlinNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThPrismriverRMerlinHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThPrismriverRLyricaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThPrismriverRLyricaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAkisistersRShizuhaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAkisistersRShizuhaSpeedLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAkisistersRShizuhaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAkisistersRMinorikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAkisistersRMinorikoAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAkisistersRMinorikoDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTrioTmfRTojikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTrioTmfRFutoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTrioTmfRMikoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYorigamisistersRJoonNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYorigamisistersRJoonAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYorigamisistersRJoonDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYorigamisistersRShionNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYorigamisistersRShionAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYorigamisistersRShionDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTrioMsoRTeireidaMaiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTrioMsoRTeireidaSatonoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTrioMsoRTeireidaOkinaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTrioYskRYachieNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTrioYskRKeikiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThTrioYskRSakiNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThDuoMcRMarisaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThDuoMcRReimuNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sKeyUshioIllusionaryLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMikiFloraElvisLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsShihoGriefLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMisakiFloraElvisLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sBghsMariFloraFinalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBlackPhoenixLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureWhitePhoenixLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcShinyLuminousPhoenixLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBrightyBloomRCureBloomNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBrightyBloomRCureBrightNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureWindyEgretRCureEgretNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureWindyEgretRCureWindyNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDreamShiningRNormalS1LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDreamGraceRNormalS1LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDreamShiningRNormalS2LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureDreamGraceRNormalS2LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcInfinitySulRCureBlossomSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcInfinitySulRCureMarineSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcInfinitySulRCureSunshineSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcInfinitySulRCureMoonlightSuperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureHappyUltraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureSunnyUltraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCurePeaceUltraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureMarchUltraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureBeautyUltraLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sPcCureHeartParthenonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcCureUnionCompleteLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcDecadeAbsoluteRCompleteLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcDecadeAbsoluteRComplete21LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcNeptuneGoddessLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcNepgearGoddessLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcIllyasvielZweiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeClefableMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVictreebelMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeStarmieMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeDragoniteMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMeganiumMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeFeraligatrMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSkarmoryMegaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRaichuMegaXLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeRaichuMegaYLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon1980LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAliceRemindRNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAliceRemindRAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAliceRemindRTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLaylaRLunasaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLaylaRLunasaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLaylaRMerlinNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLaylaRMerlinHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLaylaRLyricaNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThLaylaRLyricaHelperLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAyakashiRYuyukoNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAyakashiRYuyukoAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThAyakashiRYuyukoDefenseLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuukaRemindRNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuukaRemindRAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYuukaRemindRTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSanaeRemindRNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSanaeRemindRAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSanaeRemindRTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMarisaRemindRNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThReimuRemindRNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeVenusaurGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeBlastoiseGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeCharizardGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeButterfreeGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoePikachuGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMeowthGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeMachampGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeGengarGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeKinglerGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeLaprasGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeEeveeGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sMoeSnorlaxGmaxLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuikaMpRNormalLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuikaMpRAttackLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSuikaMpRTechLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon2028LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon2029LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon2030LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon2031LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon2032LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sFragmon2033LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcSailorMoonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcOmoriLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcMadokaUltimateLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThSanaeBrokenRiteLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThYoumuB3LevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcBlackRockShooterLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcValkyrieLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThReimuLUnknownLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMedicineMuiLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcNonotaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcNobetaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sThMarisa8BitLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};
+
+static const struct LevelUpMove sEtcAmeYamameLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_END
+};

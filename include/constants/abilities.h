@@ -480,6 +480,9 @@ enum __attribute__((packed)) Ability
     ABILITY_ULTRA_FORM_BEAUTY = (ABILITY_OFFICIAL_END + 144), // Snow Warning + May Freeze
     ABILITY_HEALING_SAINT = (ABILITY_OFFICIAL_END + 145), // Heals when the foe heals
     ABILITY_TREASURE_SNIPER = (ABILITY_OFFICIAL_END + 146), // adds secondary effect stealing stats for if using damaging moves
+    ABILITY_SAGE_OF_GENSOKYO = (ABILITY_OFFICIAL_END + 147), // To do
+    ABILITY_SAIGYOUJI_AYAKASHI = (ABILITY_OFFICIAL_END + 148), // To do
+    ABILITY_TIME_WEB = (ABILITY_OFFICIAL_END + 149), // To do
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

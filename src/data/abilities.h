@@ -3533,4 +3533,24 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 6,
     },
 
+    [ABILITY_SAGE_OF_GENSOKYO] =
+    {
+        .name = _("Sage of Gensokyo"),
+        .description = COMPOUND_STRING("To do."),
+        .aiRating = 4,
+    },
+
+    [ABILITY_SAIGYOUJI_AYAKASHI] =
+    {
+        .name = _("Saigyouji Spirit"),
+        .description = COMPOUND_STRING("To do."),
+        .aiRating = 4,
+    },
+
+    [ABILITY_TIME_WEB] =
+    {
+        .name = _("Time Web"),
+        .description = COMPOUND_STRING("To do."),
+        .aiRating = 6,
+    },
 };

@@ -1,6 +1,6 @@
 const struct Fusion *const gFusionTablePointers[NUM_SPECIES] =
 {
-#if P_FUSION_FORMS
+/* #if P_FUSION_FORMS
 #if P_FAMILY_KYUREM
     [SPECIES_KYUREM] = sKyuremFusionTable,
 #if P_FAMILY_RESHIRAM
@@ -32,9 +32,9 @@ const struct Fusion *const gFusionTablePointers[NUM_SPECIES] =
     [SPECIES_GLASTRIER] = sCalyrexFusionTable,
 #endif //P_FAMILY_GLASTRIER
 #endif //P_FAMILY_CALYREX
-#endif //P_FUSION_FORMS
+#endif //P_FUSION_FORMS */
 };
-
+/*
 #if P_FUSION_FORMS
 #if P_FAMILY_KYUREM
 #if P_FAMILY_RESHIRAM
@@ -53,3 +53,4 @@ const u16 gKyuremBlackSwapMoveTable[][2] =
 #endif //P_FAMILY_ZEKROM
 #endif //P_FAMILY_KYUREM
 #endif //P_FUSION_FORMS
+*/

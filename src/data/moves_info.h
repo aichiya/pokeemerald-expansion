@@ -9194,7 +9194,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_WATER_SPORT] =  // MOVE_NEW_SPLASH Reworked
     {
         .name = COMPOUND_STRING("Splash"),
-        .description = sRevengeDescription,
+        .description = COMPOUND_STRING(
+            "Hits stronger when the \n"
+            "user received damage first."),
         .effect = EFFECT_REVENGE,
         .power = 60,
         .type = TYPE_NEW_WATER,
@@ -24430,7 +24432,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HISOU_SWORD] =
     {
         .name = COMPOUND_STRING("Hisou Sword"),
-        .description = sHyperBeamDescription,
+        .description = COMPOUND_STRING(
+            "A powerful move but needs\n"
+            "recharge in the next turn."),
         .effect = EFFECT_HIT,
         .power = 150,
         .type = TYPE_NEW_EARTH,
@@ -25300,7 +25304,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_CLASSIC_MASTER_SPARK] =
     {
         .name = COMPOUND_STRING("Master Spark"),
-        .description = sHyperBeamDescription,
+        .description = COMPOUND_STRING(
+            "A powerful move but needs\n"
+            "recharge in the next turn."),
         .effect = EFFECT_HIT,
         .power = 150,
         .type = TYPE_NEW_ELECTRIC,

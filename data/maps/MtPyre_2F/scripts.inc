@@ -53,7 +53,7 @@ MtPyre_2F_Text_TumbledFromFloorAbove:
 	.string "the floor above.$"
 
 MtPyre_2F_Text_MarkIntro:
-	.string "Hey! Are you searching for POKéMON?\n"
+	.string "Hey! Are you searching for Fragmon?\n"
 	.string "You came along after me! You're rude!$"
 
 MtPyre_2F_Text_MarkDefeat:
@@ -62,7 +62,7 @@ MtPyre_2F_Text_MarkDefeat:
 
 MtPyre_2F_Text_MarkPostBattle:
 	.string "People don't come here often, so\n"
-	.string "I thought there'd be rare POKéMON.$"
+	.string "I thought there'd be rare Fragmon.$"
 
 MtPyre_2F_Text_LukeIntro:
 	.string "LUKE: We're here on a dare.\p"
@@ -81,7 +81,7 @@ MtPyre_2F_Text_LukePostBattle:
 
 MtPyre_2F_Text_LukeNotEnoughMons:
 	.string "LUKE: If you want to take me on,\n"
-	.string "bring some more POKéMON.\p"
+	.string "bring some more Fragmon.\p"
 	.string "If you don't, I won't be able to show\n"
 	.string "off to my girl how cool I am!$"
 
@@ -102,9 +102,9 @@ MtPyre_2F_Text_DezPostBattle:
 
 MtPyre_2F_Text_DezNotEnoughMons:
 	.string "DEZ: If you want to challenge us, you\n"
-	.string "should bring at least two POKéMON.\p"
+	.string "should bring at least two Fragmon.\p"
 	.string "My boyfriend's strong.\n"
-	.string "Just one POKéMON won't do at all.$"
+	.string "Just one Fragmon won't do at all.$"
 
 MtPyre_2F_Text_LeahIntro:
 	.string "You are an unfamiliar sight…\n"

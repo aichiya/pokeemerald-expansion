@@ -3,17 +3,17 @@
 DayCare_Text_ImDaycareManSpeakToMyWife::
 	.string "I'm the DAY-CARE MAN.\p"
 	.string "I help take care of the precious\n"
-	.string "POKéMON of TRAINERS.\p"
+	.string "Fragmon of TRAINERS.\p"
 	.string "If you'd like me to raise your\n"
-	.string "POKéMON, have a word with my wife.$"
+	.string "Fragmon, have a word with my wife.$"
 
 DayCare_Text_DoYouWantEgg::
 	.string "Ah, it's you!\p"
-	.string "We were raising your POKéMON, and\n"
+	.string "We were raising your Fragmon, and\n"
 	.string "my goodness, were we surprised!\p"
-	.string "Your POKéMON had an EGG!\p"
+	.string "Your Fragmon had an EGG!\p"
 	.string "We don't know how it got there,\n"
-	.string "but your POKéMON had it.\p"
+	.string "but your Fragmon had it.\p"
 	.string "You do want it, yes?$"
 
 DayCare_Text_YourMonIsDoingFine::
@@ -49,11 +49,11 @@ DayCare_Text_IWillKeepDoYouWantIt::
 
 DayCare_Text_WouldYouLikeUsToRaiseMon::
 	.string "I'm the DAY-CARE LADY.\p"
-	.string "We can raise POKéMON for you.\p"
+	.string "We can raise Fragmon for you.\p"
 	.string "Would you like us to raise one?$"
 
 DayCare_Text_WhichMonShouldWeRaise::
-	.string "Which POKéMON should we raise for\n"
+	.string "Which Fragmon should we raise for\n"
 	.string "you?$"
 
 DayCare_Text_WellRaiseYourMon::
@@ -62,9 +62,9 @@ DayCare_Text_WellRaiseYourMon::
 	.string "Come back for it later.$"
 
 DayCare_Text_WeCanRaiseOneMore::
-	.string "We can raise two of your POKéMON.\p"
+	.string "We can raise two of your Fragmon.\p"
 	.string "Would you like us to raise one\n"
-	.string "more POKéMON for you?$"
+	.string "more Fragmon for you?$"
 
 DayCare_Text_HusbandWasLookingForYou::
 	.string "My husband was looking for you.$"
@@ -87,7 +87,7 @@ DayCare_Text_ComeAgain::
 DayCare_Text_GoodToSeeYou::
 	.string "Ah, it's you!\n"
 	.string "Good to see you.\p"
-	.string "Your POKéMON can only be doing\n"
+	.string "Your Fragmon can only be doing\n"
 	.string "good!$"
 
 DayCare_Text_YourMonHasGrownXLevels::
@@ -95,7 +95,7 @@ DayCare_Text_YourMonHasGrownXLevels::
 	.string "grown by {STR_VAR_2}.$"
 
 DayCare_Text_YourPartyIsFull::
-	.string "Your POKéMON party is full.\n"
+	.string "Your Fragmon party is full.\n"
 	.string "Make room, then come see me.$"
 
 DayCare_Text_TakeBackWhichMon::
@@ -107,7 +107,7 @@ DayCare_Text_ItWillCostX::
 
 DayCare_Text_HeresYourMon::
 	.string "Perfect!\n"
-	.string "Here's your POKéMON.$"
+	.string "Here's your Fragmon.$"
 
 DayCare_Text_TookBackMon::
 	.string "{PLAYER} took back {STR_VAR_1} from\n"
@@ -115,14 +115,14 @@ DayCare_Text_TookBackMon::
 
 DayCare_Text_YouHaveJustOneMon::
 	.string "Oh? But you have just one\n"
-	.string "POKéMON.\p"
+	.string "Fragmon.\p"
 	.string "Come back another time.$"
 
 DayCare_Text_TakeYourMonBack::
-	.string "Will you take your POKéMON back?$"
+	.string "Will you take your Fragmon back?$"
 
 DayCare_Text_WhatWillYouBattleWith::
-	.string "If you leave me that POKéMON,\n"
+	.string "If you leave me that Fragmon,\n"
 	.string "what will you battle with?\p"
 	.string "Come back another time.$"
 

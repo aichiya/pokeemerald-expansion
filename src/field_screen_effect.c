@@ -61,9 +61,9 @@ static void UpdateStairsMovement(s16, s16, s16*, s16*, s16*);
 static void Task_StairWarp(u8);
 static void ForceStairsMovement(u32, s16*, s16*);
 
-static const u8 sText_PlayerScurriedToCenter[] = _("{PLAYER} scurried to a POKéMON CENTER,\nprotecting the exhausted and fainted\nPOKéMON from further harm…\p");
-static const u8 sText_PlayerScurriedBackHome[] = _("{PLAYER} scurried back home, protecting\nthe exhausted and fainted POKéMON from\nfurther harm…\p");
-static const u8 sText_PlayerRegroupCenter[] = _("{PLAYER} scurried to a POKéMON CENTER,\nto regroup and reconsider the battle\nstrategy…\p");
+static const u8 sText_PlayerScurriedToCenter[] = _("{PLAYER} scurried to a Fragmon CENTER,\nprotecting the exhausted and fainted\nFragmon from further harm…\p");
+static const u8 sText_PlayerScurriedBackHome[] = _("{PLAYER} scurried back home, protecting\nthe exhausted and fainted Fragmon from\nfurther harm…\p");
+static const u8 sText_PlayerRegroupCenter[] = _("{PLAYER} scurried to a Fragmon CENTER,\nto regroup and reconsider the battle\nstrategy…\p");
 static const u8 sText_PlayerRegroupHome[] = _("{PLAYER} scurried back home, to regroup\nand reconsider the battle strategy…\p");
 
 // data[0] is used universally by tasks in this file as a state for switches

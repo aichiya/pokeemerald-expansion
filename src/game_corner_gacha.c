@@ -189,7 +189,7 @@ static void GachaVBlankCallback(void);
 static void SpriteCB_BouncingPokeball(struct Sprite *);
 static void SpriteCB_BouncingPokeballArrive(struct Sprite *);
 
-static const u8 sMessageText[] = _("NEW POKéMON : {STR_VAR_1}%");
+static const u8 sMessageText[] = _("NEW Fragmon : {STR_VAR_1}%");
 
 static void SpriteCB_Null(struct Sprite *sprite)
 {

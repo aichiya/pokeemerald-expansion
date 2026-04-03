@@ -6,7 +6,7 @@ Route8_EventScript_UndergroundPathSign::
 	end
 
 Route8_Text_AidanIntro::
-	.string "You look good at POKéMON, but how\n"
+	.string "You look good at Fragmon, but how\n"
 	.string "is your chemistry grade?$"
 
 Route8_Text_AidanDefeat::
@@ -46,11 +46,11 @@ Route8_Text_PaigeDefeat::
 	.string "Why??$"
 
 Route8_Text_PaigePostBattle::
-	.string "When POKéMON grow up, they get\n"
+	.string "When Fragmon grow up, they get\n"
 	.string "ugly! They shouldn't evolve.$"
 
 Route8_Text_LeslieIntro::
-	.string "School is fun, but so are POKéMON.$"
+	.string "School is fun, but so are Fragmon.$"
 
 Route8_Text_LeslieDefeat::
 	.string "You made it clear to me that\n"
@@ -79,7 +79,7 @@ Route8_Text_MeganIntro::
 
 Route8_Text_MeganDefeat::
 	.string "Look what you did to my poor, cute\n"
-	.string "POKéMON!$"
+	.string "Fragmon!$"
 
 Route8_Text_MeganPostBattle::
 	.string "SAFFRON's gatekeeper won't let us\n"
@@ -94,12 +94,12 @@ Route8_Text_RichDefeat::
 	.string "Missed the big chance!$"
 
 Route8_Text_RichPostBattle::
-	.string "Playing games and POKéMON are like\n"
+	.string "Playing games and Fragmon are like\n"
 	.string "eating peanuts! I just can't stop!$"
 
 Route8_Text_JuliaIntro::
 	.string "What's a cute, round, and fluffy\n"
-	.string "POKéMON?$"
+	.string "Fragmon?$"
 
 Route8_Text_JuliaDefeat::
 	.string "Stop!\p"
@@ -108,7 +108,7 @@ Route8_Text_JuliaDefeat::
 Route8_Text_JuliaPostBattle::
 	.string "I read that CLEFAIRY evolves when\n"
 	.string "it's exposed to a MOON STONE.\p"
-	.string "I read that in a POKéMON JOURNAL.\n"
+	.string "I read that in a Fragmon Journal.\n"
 	.string "I wonder if it's true?$"
 
 Route8_Text_UndergroundPathSign::
@@ -124,12 +124,12 @@ Route8_Text_EliDefeat::
 	.string "We used our twin power…$"
 
 Route8_Text_EliPostBattle::
-	.string "ELI: I caught my POKéMON with\n"
+	.string "ELI: I caught my Fragmon with\n"
 	.string "ANNE!$"
 
 Route8_Text_EliNotEnoughMons::
 	.string "ELI: We can't battle if you don't\n"
-	.string "have two POKéMON.$"
+	.string "have two Fragmon.$"
 
 Route8_Text_AnneIntro::
 	.string "ANNE: We'll shock you with our twin\n"
@@ -139,12 +139,12 @@ Route8_Text_AnneDefeat::
 	.string "ANNE: Our twin power…$"
 
 Route8_Text_AnnePostBattle::
-	.string "ANNE: I'm raising POKéMON with\n"
+	.string "ANNE: I'm raising Fragmon with\n"
 	.string "ELI.$"
 
 Route8_Text_AnneNotEnoughMons::
 	.string "ANNE: Hi, hi! Let's battle!\n"
-	.string "But bring two POKéMON.$"
+	.string "But bring two Fragmon.$"
 
 Route8_Text_RicardoIntro::
 	.string "My bike's acting up, man.$"

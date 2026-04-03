@@ -985,7 +985,7 @@ BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer:
 	.string "You're finally about to face the\n"
 	.string "50th TRAINER.\p"
 	.string "From here on, every time you beat seven\n"
-	.string "TRAINERS in a row, your POKéMON will\l"
+	.string "TRAINERS in a row, your Fragmon will\l"
 	.string "receive a commemorative RIBBON.\p"
 	.string "Good luck!$"
 
@@ -996,7 +996,7 @@ BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons:
 
 BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons:
 	.string "{PLAYER} put the RIBBONS on\n"
-	.string "the challenger POKéMON.$"
+	.string "the challenger Fragmon.$"
 
 BattleFrontier_BattleTowerLobby_Text_DescribeFeelingsAboutBattleTower:
 	.string "Excuse me, do you have a moment?\p"
@@ -1072,7 +1072,7 @@ BattleFrontier_BattleTowerLobby_Text_WhichLevelMode:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_PleaseSelectMons:
-	.string "Please select the POKéMON you wish\n"
+	.string "Please select the Fragmon you wish\n"
 	.string "to enter.$"
 
 BattleFrontier_BattleTowerLobby_Text_OkayToSaveBeforeEntering:
@@ -1090,8 +1090,8 @@ BattleFrontier_BattleTowerLobby_Text_RecordLastMatch:
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50:
 	.string "Excuse me!\p"
-	.string "You don't have {STR_VAR_2} eligible POKéMON.\p"
-	.string "You must have {STR_VAR_2} different POKéMON\n"
+	.string "You don't have {STR_VAR_2} eligible Fragmon.\p"
+	.string "You must have {STR_VAR_2} different Fragmon\n"
 	.string "of Level 50 or less to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
@@ -1103,8 +1103,8 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd:
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "Excuse me!\p"
-	.string "You don't have {STR_VAR_2} eligible POKéMON.\p"
-	.string "You must have {STR_VAR_2} different POKéMON\n"
+	.string "You don't have {STR_VAR_2} eligible Fragmon.\p"
+	.string "You must have {STR_VAR_2} different Fragmon\n"
 	.string "to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
@@ -1112,8 +1112,8 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpen:
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Singles:
 	.string "Excuse me!\p"
-	.string "You don't have three eligible POKéMON.\p"
-	.string "You must have three different POKéMON\n"
+	.string "You don't have three eligible Fragmon.\p"
+	.string "You must have three different Fragmon\n"
 	.string "of Level 50 or less to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
@@ -1121,8 +1121,8 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Singles:
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenSingles:
 	.string "Excuse me!\p"
-	.string "You don't have three eligible POKéMON.\p"
-	.string "You must have three different POKéMON\n"
+	.string "You don't have three eligible Fragmon.\p"
+	.string "You must have three different Fragmon\n"
 	.string "to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
@@ -1130,8 +1130,8 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenSingles:
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Doubles:
 	.string "Excuse me!\p"
-	.string "You don't have four eligible POKéMON.\p"
-	.string "You must have four different POKéMON\n"
+	.string "You don't have four eligible Fragmon.\p"
+	.string "You must have four different Fragmon\n"
 	.string "of Level 50 or less to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
@@ -1139,8 +1139,8 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Doubles:
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenDoubles:
 	.string "Excuse me!\p"
-	.string "You don't have four eligible POKéMON.\p"
-	.string "You must have four different POKéMON\n"
+	.string "You don't have four eligible Fragmon.\p"
+	.string "You must have four different Fragmon\n"
 	.string "to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
@@ -1148,8 +1148,8 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenDoubles:
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Multis:
 	.string "Excuse me!\p"
-	.string "You don't have two eligible POKéMON.\p"
-	.string "You must have two different POKéMON\n"
+	.string "You don't have two eligible Fragmon.\p"
+	.string "You must have two different Fragmon\n"
 	.string "of Level 50 or less to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
@@ -1157,8 +1157,8 @@ BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Multis:
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenMultis:
 	.string "Excuse me!\p"
-	.string "You don't have two eligible POKéMON.\p"
-	.string "You must have two different POKéMON\n"
+	.string "You don't have two eligible Fragmon.\p"
+	.string "You must have two different Fragmon\n"
 	.string "to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
@@ -1178,7 +1178,7 @@ BattleFrontier_BattleTowerLobby_Text_TakeSinglesChallenge:
 BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge:
 	.string "The BATTLE TOWER's SINGLE BATTLE\n"
 	.string "ROOMS are facilities for conducting\l"
-	.string "SINGLE BATTLES with three POKéMON.\p"
+	.string "SINGLE BATTLES with three Fragmon.\p"
 	.string "There are many SINGLE BATTLE ROOMS\n"
 	.string "in the BATTLE TOWER for team battles.\p"
 	.string "In each of the SINGLE BATTLE ROOMS,\n"
@@ -1191,7 +1191,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainSinglesChallenge:
 	.string "you will be disqualified.$"
 
 BattleFrontier_BattleTowerLobby_Text_SelectThreeMons:
-	.string "Now please select the three POKéMON\n"
+	.string "Now please select the three Fragmon\n"
 	.string "that are to be entered.$"
 
 BattleFrontier_BattleTowerLobby_Text_WelcomeDoubleBattle:
@@ -1208,7 +1208,7 @@ BattleFrontier_BattleTowerLobby_Text_TakeDoublesChallenge:
 BattleFrontier_BattleTowerLobby_Text_ExplainDoublesChallenge:
 	.string "The BATTLE TOWER's DOUBLE BATTLE\n"
 	.string "ROOMS are facilities for conducting\l"
-	.string "DOUBLE BATTLES with four POKéMON.\p"
+	.string "DOUBLE BATTLES with four Fragmon.\p"
 	.string "There are many DOUBLE BATTLE ROOMS\n"
 	.string "in the BATTLE TOWER for team battles.\p"
 	.string "In each of the DOUBLE BATTLE ROOMS,\n"
@@ -1221,7 +1221,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainDoublesChallenge:
 	.string "you will be disqualified.$"
 
 BattleFrontier_BattleTowerLobby_Text_PleaseSelectFourMons:
-	.string "Now please select the four POKéMON\n"
+	.string "Now please select the four Fragmon\n"
 	.string "that are to be entered.$"
 
 BattleFrontier_BattleTowerLobby_Text_WelcomeMultiBattle:
@@ -1241,7 +1241,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainMultisChallenge:
 	.string "MULTI BATTLES.\p"
 	.string "For MULTI BATTLES, you must partner\n"
 	.string "with a TRAINER in the TOWER and enter\l"
-	.string "with two POKéMON each.\p"
+	.string "with two Fragmon each.\p"
 	.string "Inside the TOWER is a room named\n"
 	.string "the BATTLE SALON where you may meet\l"
 	.string "other TRAINERS.\p"
@@ -1259,7 +1259,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainMultisChallenge:
 	.string "you will be disqualified.$"
 
 BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons:
-	.string "Now please select the two POKéMON\n"
+	.string "Now please select the two Fragmon\n"
 	.string "that are to be entered.$"
 
 BattleFrontier_BattleTowerLobby_Text_WelcomeLinkMultiBattle:
@@ -1281,7 +1281,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge:
 	.string "Wireless Adapters or a Game Boy\l"
 	.string "Advance Game Link cable.\p"
 	.string "You must partner with your friend and\n"
-	.string "enter two different kinds of POKéMON.\p"
+	.string "enter two different kinds of Fragmon.\p"
 	.string "There are many MULTI BATTLE ROOMS\n"
 	.string "in the BATTLE TOWER for team battles.\p"
 	.string "In a MULTI BATTLE ROOM, seven\n"
@@ -1295,14 +1295,14 @@ BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge:
 	.string "MULTI BATTLES in a row nonstop.$"
 
 BattleFrontier_BattleTowerLobby_Text_PleaseSelectTwoMons2:
-	.string "Now please select the two POKéMON\n"
+	.string "Now please select the two Fragmon\n"
 	.string "that are to be entered.$"
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend:
 	.string "You have chosen the same kind of\n"
-	.string "POKéMON as your friend.\p"
-	.string "Please choose two POKéMON different\n"
+	.string "Fragmon as your friend.\p"
+	.string "Please choose two Fragmon different\n"
 	.string "from your friend's, match the level\l"
 	.string "you wish to enter, and register again.$"
 
@@ -1312,11 +1312,11 @@ BattleFrontier_BattleTowerLobby_Text_LinkMultiOnlyForTwoPlayers:
 
 BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMon:
 	.string "Your friend has also selected\n"
-	.string "the POKéMON {STR_VAR_1}.$"
+	.string "the Fragmon {STR_VAR_1}.$"
 
 BattleFrontier_BattleTowerLobby_Text_FriendAlsoSelectedMons:
 	.string "Your friend has also selected the\n"
-	.string "POKéMON {STR_VAR_1} and {STR_VAR_2}.$"
+	.string "Fragmon {STR_VAR_1} and {STR_VAR_2}.$"
 
 BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlMode:
 	.string "Your friend has chosen a different\n"
@@ -1327,17 +1327,17 @@ BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMon:
 	.string "Your friend has chosen a different\n"
 	.string "battle level.\p"
 	.string "Your friend has also selected\n"
-	.string "the POKéMON {STR_VAR_1}.$"
+	.string "the Fragmon {STR_VAR_1}.$"
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_FriendChoseDifferentLvlModeSameMons:
 	.string "Your friend has chosen a different\n"
 	.string "battle level.\p"
 	.string "Your friend has also selected the\n"
-	.string "POKéMON {STR_VAR_1} and {STR_VAR_2}.$"
+	.string "Fragmon {STR_VAR_1} and {STR_VAR_2}.$"
 
 BattleFrontier_BattleTowerLobby_Text_ChooseDifferentMonsMatchLvlMode:
-	.string "Please choose two POKéMON different\n"
+	.string "Please choose two Fragmon different\n"
 	.string "from your friend's, match the level\l"
 	.string "you wish to enter, and register again.$"
 
@@ -1376,9 +1376,9 @@ BattleFrontier_BattleTowerLobby_Text_ExplainTowerRules:
 BattleFrontier_BattleTowerLobby_Text_ExplainMonRules:
 	.string "Depending on the BATTLE ROOM you are\n"
 	.string "entering, you will be required to take\l"
-	.string "a certain number of POKéMON.\p"
+	.string "a certain number of Fragmon.\p"
 	.string "The SINGLE BATTLE mode requires\n"
-	.string "three POKéMON.\p"
+	.string "three Fragmon.\p"
 	.string "The DOUBLE BATTLE mode requires four,\n"
 	.string "and the MULTI modes both require two.$"
 
@@ -1388,7 +1388,7 @@ BattleFrontier_BattleTowerLobby_Text_ExplainSalonRules:
 	.string "the MULTI BATTLE ROOM challenge.\p"
 	.string "Choose the best partner for you by\n"
 	.string "examining other TRAINERS'\l"
-	.string "POKéMON and their moves.\p"
+	.string "Fragmon and their moves.\p"
 	.string "You may choose a new tag partner\n"
 	.string "after winning seven straight matches.$"
 
@@ -1398,9 +1398,9 @@ BattleFrontier_BattleTowerLobby_Text_ExplainMultiLinkRules:
 	.string "You and your friend must be linked with\n"
 	.string "Wireless Adapters or a GBA Game Link\l"
 	.string "cable.\p"
-	.string "You must choose two POKéMON at\n"
+	.string "You must choose two Fragmon at\n"
 	.string "the registration counter.\p"
-	.string "These POKéMON must be different\n"
+	.string "These Fragmon must be different\n"
 	.string "from those of your friend.\p"
 	.string "You may not interrupt this challenge\n"
 	.string "in the middle, unlike other modes.$"

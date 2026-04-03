@@ -53,7 +53,7 @@ FuchsiaCity_House2_Text_GoodRodCanCatchBetterMons::
 	.string "A crummy OLD ROD could only catch\n"
 	.string "MAGIKARP, yes?\p"
 	.string "But with a GOOD ROD, you can\n"
-	.string "catch much better POKéMON.$"
+	.string "catch much better Fragmon.$"
 
 FuchsiaCity_House2_Text_OhThatsDisappointing::
 	.string "Oh…\n"

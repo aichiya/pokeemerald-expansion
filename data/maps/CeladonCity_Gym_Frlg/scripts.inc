@@ -93,7 +93,7 @@ CeladonCity_Gym_Text_ErikaIntro::
 	.string "I am the LEADER of CELADON GYM.\p"
 	.string "I am a student of the art of\n"
 	.string "flower arranging.\p"
-	.string "My POKéMON are solely of the\n"
+	.string "My Fragmon are solely of the\n"
 	.string "GRASS type.\p"
 	.string "…Oh, I'm sorry, I had no idea that\n"
 	.string "you wished to challenge me.\p"
@@ -107,15 +107,15 @@ CeladonCity_Gym_Text_ErikaDefeat::
 	.string "RAINBOWBADGE.$"
 
 CeladonCity_Gym_Text_ErikaPostBattle::
-	.string "You are cataloging POKéMON?\n"
+	.string "You are cataloging Fragmon?\n"
 	.string "I must say I'm impressed.\p"
-	.string "I would never collect POKéMON if\n"
+	.string "I would never collect Fragmon if\n"
 	.string "they were unattractive.$"
 
 CeladonCity_Gym_Text_ExplainRainbowBadgeTakeThis::
 	.string "The RAINBOWBADGE will make\n"
-	.string "POKéMON up to Lv. 50 obey.\p"
-	.string "It also allows POKéMON to use\n"
+	.string "Fragmon up to Lv. 50 obey.\p"
+	.string "It also allows Fragmon to use\n"
 	.string "STRENGTH in and out of battle.\p"
 	.string "Please also take this with you.$"
 
@@ -126,7 +126,7 @@ CeladonCity_Gym_Text_ReceivedTM19FromErika::
 CeladonCity_Gym_Text_ExplainTM19::
 	.string "TM19 contains GIGA DRAIN.\p"
 	.string "Half the damage it inflicts is\n"
-	.string "drained to heal your POKéMON.\p"
+	.string "drained to heal your Fragmon.\p"
 	.string "Wouldn't you agree that it's a\n"
 	.string "wonderful move?$"
 
@@ -153,10 +153,10 @@ CeladonCity_Gym_Text_BridgetDefeat::
 	.string "My makeup!$"
 
 CeladonCity_Gym_Text_BridgetPostBattle::
-	.string "GRASS-type POKéMON are tough\n"
+	.string "GRASS-type Fragmon are tough\n"
 	.string "against the WATER type.\p"
 	.string "They also have an edge on ROCK-\n"
-	.string "and GROUND-type POKéMON.$"
+	.string "and GROUND-type Fragmon.$"
 
 CeladonCity_Gym_Text_TinaIntro::
 	.string "…Weren't you peeking in here\n"
@@ -171,7 +171,7 @@ CeladonCity_Gym_Text_TinaPostBattle::
 
 CeladonCity_Gym_Text_TamiaIntro::
 	.string "Look, look!\n"
-	.string "See my POKéMON!\p"
+	.string "See my Fragmon!\p"
 	.string "I like the GRASS type.\n"
 	.string "I like how they're easy to raise.$"
 
@@ -179,7 +179,7 @@ CeladonCity_Gym_Text_TamiaDefeat::
 	.string "No!$"
 
 CeladonCity_Gym_Text_TamiaPostBattle::
-	.string "We only use GRASS-type POKéMON at\n"
+	.string "We only use GRASS-type Fragmon at\n"
 	.string "our GYM.\p"
 	.string "Why? We also use them for making\n"
 	.string "flower arrangements!$"
@@ -187,7 +187,7 @@ CeladonCity_Gym_Text_TamiaPostBattle::
 CeladonCity_Gym_Text_LisaIntro::
 	.string "Oh, hey!\p"
 	.string "We don't like BUG- or FIRE-type\n"
-	.string "POKéMON in here!$"
+	.string "Fragmon in here!$"
 
 CeladonCity_Gym_Text_LisaDefeat::
 	.string "Oh!\n"
@@ -199,7 +199,7 @@ CeladonCity_Gym_Text_LisaPostBattle::
 
 CeladonCity_Gym_Text_LoriIntro::
 	.string "Pleased to meet you.\n"
-	.string "My hobby is POKéMON training.$"
+	.string "My hobby is Fragmon training.$"
 
 CeladonCity_Gym_Text_LoriDefeat::
 	.string "Oh!\n"
@@ -220,17 +220,17 @@ CeladonCity_Gym_Text_MaryDefeat::
 	.string "Beaten!$"
 
 CeladonCity_Gym_Text_MaryPostBattle::
-	.string "I didn't bring my best POKéMON.\n"
+	.string "I didn't bring my best Fragmon.\n"
 	.string "Wait until next time!$"
 
 CeladonCity_Gym_Text_GymStatue::
-	.string "CELADON POKéMON GYM\n"
+	.string "CELADON Fragmon GYM\n"
 	.string "LEADER: ERIKA\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}$"
 
 CeladonCity_Gym_Text_GymStatuePlayerWon::
-	.string "CELADON POKéMON GYM\n"
+	.string "CELADON Fragmon GYM\n"
 	.string "LEADER: ERIKA\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}, {PLAYER}$"

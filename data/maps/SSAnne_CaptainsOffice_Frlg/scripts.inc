@@ -66,7 +66,7 @@ SSAnne_CaptainsOffice_Text_ThankYouHaveHMForCut::
 	.string "technique if I weren't so ill…\p"
 	.string "I know! You can have this!\n"
 	.string "This HIDDEN MACHINE!\p"
-	.string "Teach CUT to your POKéMON, and\n"
+	.string "Teach CUT to your Fragmon, and\n"
 	.string "you can see it CUT anytime!$"
 
 SSAnne_CaptainsOffice_Text_ObtainedHM01FromCaptain::

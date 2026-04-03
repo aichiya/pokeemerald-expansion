@@ -2370,7 +2370,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Earthquake"),
         .description = COMPOUND_STRING(
             "A powerful quake that\n"
-            "hits all other POKéMON."),
+            "hits all other Fragmon."),
         .effect = EFFECT_EARTHQUAKE,
         .power = 100,
         .type = TYPE_NEW_EARTH,

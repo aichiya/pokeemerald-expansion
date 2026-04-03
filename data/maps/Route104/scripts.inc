@@ -1007,15 +1007,15 @@ Route104_Text_WhatsItLikeAtBottomOfSea:
 
 Route104_Text_ThrowBallAtWeakenedPokemon:
 	.string "If you're going to throw a POKé BALL,\n"
-	.string "weaken the wild POKéMON first.\p"
+	.string "weaken the wild Fragmon first.\p"
 	.string "It will be easier to catch if it's been\n"
 	.string "poisoned, burned, or lulled to sleep.$"
 
 Route104_Text_OnlyThrowBallAtWildPokemon:
 	.string "You're a thief if you try to steal\n"
-	.string "someone else's POKéMON.\p"
+	.string "someone else's Fragmon.\p"
 	.string "You should throw POKé BALLS only at\n"
-	.string "wild POKéMON.$"
+	.string "wild Fragmon.$"
 
 Route104_Text_ImNotATrainer:
 	.string "Oh, no, I'm not a TRAINER.\p"
@@ -1028,7 +1028,7 @@ Route104_Text_LikeFillingMouthWithSeedsTakeThis:
 	.string "I like filling my mouth with seeds,\n"
 	.string "then spitting them out fast!\p"
 	.string "You can have this, so you try it out!\p"
-	.string "Use it on a POKéMON, and it will learn\n"
+	.string "Use it on a Fragmon, and it will learn\n"
 	.string "a move for firing seeds rapidly.$"
 
 Route104_Text_TMsAreOneTimeUse:
@@ -1070,27 +1070,27 @@ Route104_Text_TrainerTipsDoubleBattles:
 	.string "TRAINER TIPS\p"
 	.string "In the HOENN region there are pairs\n"
 	.string "of TRAINERS who challenge others\l"
-	.string "for 2-on-2 POKéMON battles called\l"
+	.string "for 2-on-2 Fragmon battles called\l"
 	.string "DOUBLE BATTLES.\p"
 	.string "In a DOUBLE BATTLE, the TRAINER must\n"
-	.string "send out two POKéMON, the one at the\l"
+	.string "send out two Fragmon, the one at the\l"
 	.string "left of the list and the top one.\l"
-	.string "Watch how POKéMON are lined up.$"
+	.string "Watch how Fragmon are lined up.$"
 
 Route104_Text_MayWeShouldRegister:
 	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
-	.string "DEVON upgraded your POKéNAV with\n"
+	.string "DEVON upgraded your DL{EMOJI_BIGWHEEL}GEAR with\n"
 	.string "the MATCH CALL system, huh?\p"
 	.string "We should register each other so we\n"
 	.string "can get in contact anytime.$"
 
 Route104_Text_RegisteredMay:
 	.string "{PLAYER} registered MAY\n"
-	.string "in the POKéNAV.$"
+	.string "in the DL{EMOJI_BIGWHEEL}GEAR.$"
 
 Route104_Text_MayHowsYourPokedex:
 	.string "MAY: Oh, by the way, {PLAYER}{KUN},\n"
-	.string "how's your POKéDEX coming along?$"
+	.string "how's your NC{EMOJI_IRRITATED}PDA coming along?$"
 
 Route104_Text_MayMinesDecentLetsBattle:
 	.string "Mine's looking pretty decent.\n"
@@ -1100,7 +1100,7 @@ Route104_Text_MayMinesDecentLetsBattle:
 Route104_Text_MayHaventRaisedPokemon:
 	.string "MAY: Oh, what's the matter?\p"
 	.string "Haven't you caught or raised your\n"
-	.string "POKéMON very much?\p"
+	.string "Fragmon very much?\p"
 	.string "That's not very good for a TRAINER!$"
 
 Route104_Text_MayLetsBattle:
@@ -1117,25 +1117,25 @@ Route104_Text_MayDefeat:
 
 Route104_Text_MayPostBattle:
 	.string "MAY: I can tell you've gotten pretty\n"
-	.string "good with the way you handle POKéMON.\p"
+	.string "good with the way you handle Fragmon.\p"
 	.string "But instead of only making them\n"
 	.string "battle, you should be like MR. BRINEY.\p"
 	.string "It's important to become friends with\n"
-	.string "POKéMON, too.$"
+	.string "Fragmon, too.$"
 
 Route104_Text_BrendanWeShouldRegister:
 	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
 	.string "Cool, you had DEVON install the MATCH\n"
-	.string "CALL system on your POKéNAV!\p"
+	.string "CALL system on your DL{EMOJI_BIGWHEEL}GEAR!\p"
 	.string "Let's register each other in our\n"
-	.string "POKéNAVS so we can keep in touch.$"
+	.string "DL{EMOJI_BIGWHEEL}GEARS so we can keep in touch.$"
 
 Route104_Text_RegisteredBrendan:
 	.string "{PLAYER} registered BRENDAN\n"
-	.string "in the POKéNAV.$"
+	.string "in the DL{EMOJI_BIGWHEEL}GEAR.$"
 
 Route104_Text_BrendanHowsYourPokedex:
-	.string "BRENDAN: {PLAYER}, how's your POKéDEX?\n"
+	.string "BRENDAN: {PLAYER}, how's your NC{EMOJI_IRRITATED}PDA?\n"
 	.string "Have you filled in any pages yet?$"
 
 Route104_Text_BrendanDoingGreatLetsBattle:
@@ -1145,7 +1145,7 @@ Route104_Text_BrendanDoingGreatLetsBattle:
 
 Route104_Text_BrendanNoConfidence:
 	.string "BRENDAN: What's the matter? Don't have\n"
-	.string "any confidence in your POKéMON?$"
+	.string "any confidence in your Fragmon?$"
 
 Route104_Text_BrendanLetsBattle:
 	.string "BRENDAN: What's up?\n"
@@ -1161,8 +1161,8 @@ Route104_Text_BrendanDefeat:
 
 Route104_Text_BrendanPostBattle:
 	.string "BRENDAN: You've gotten pretty decent\n"
-	.string "at handling POKéMON.\p"
+	.string "at handling Fragmon.\p"
 	.string "But, you know, you shouldn't just be\n"
-	.string "making POKéMON battle.\p"
+	.string "making Fragmon battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
-	.string "become friends with your POKéMON.$"
+	.string "become friends with your Fragmon.$"

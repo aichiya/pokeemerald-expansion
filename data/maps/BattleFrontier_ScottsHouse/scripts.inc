@@ -277,9 +277,9 @@ BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
 	.string "SCOTT: You don't just train for battle,\n"
 	.string "right?\p"
 	.string "I think I remember you working on\n"
-	.string "a POKéDEX as well.\p"
+	.string "a NC{EMOJI_IRRITATED}PDA as well.\p"
 	.string "Well, guess what?\p"
-	.string "You may run into wild POKéMON in\n"
+	.string "You may run into wild Fragmon in\n"
 	.string "the BATTLE FRONTIER somewhere…\l"
 	.string "Fufufu!$"
 

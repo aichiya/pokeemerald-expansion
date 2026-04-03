@@ -79,14 +79,14 @@ Route17_Text_NikolasPostBattle::
 	.string "POWER PLANT.$"
 
 Route17_Text_ZeekIntro::
-	.string "I leveled up my POKéMON, but it\n"
+	.string "I leveled up my Fragmon, but it\n"
 	.string "won't evolve. Why?$"
 
 Route17_Text_ZeekDefeat::
 	.string "Why, you!$"
 
 Route17_Text_ZeekPostBattle::
-	.string "Maybe some POKéMON need element\n"
+	.string "Maybe some Fragmon need element\n"
 	.string "STONES to evolve.$"
 
 Route17_Text_JamalIntro::
@@ -134,8 +134,8 @@ Route17_Text_WatchOutForDiscardedItems::
 
 Route17_Text_SameSpeciesGrowDifferentRates::
 	.string "TRAINER TIPS\p"
-	.string "All POKéMON are unique.\p"
-	.string "Even POKéMON of the same species\n"
+	.string "All Fragmon are unique.\p"
+	.string "Even Fragmon of the same species\n"
 	.string "and level grow at different rates.$"
 
 Route17_Text_PressBToStayInPlace::

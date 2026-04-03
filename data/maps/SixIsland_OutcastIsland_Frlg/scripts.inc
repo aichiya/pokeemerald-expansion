@@ -7,7 +7,7 @@ SixIsland_OutcastIsland_EventScript_Rocket::
 	end
 
 SixIsland_OutcastIsland_Text_RocketIntro::
-	.string "There're no rare POKéMON around\n"
+	.string "There're no rare Fragmon around\n"
 	.string "these parts! Not a one!\p"
 	.string "That burns me up, man.\n"
 	.string "I'll take it out on you!$"
@@ -17,7 +17,7 @@ SixIsland_OutcastIsland_Text_RocketDefeat::
 
 SixIsland_OutcastIsland_Text_RocketPostBattle::
 	.string "So listen, you haven't seen any\n"
-	.string "rare POKéMON, have you?$"
+	.string "rare Fragmon, have you?$"
 
 SixIsland_OutcastIsland_Text_TylorIntro::
 	.string "I'm having no luck at all.\n"
@@ -44,7 +44,7 @@ SixIsland_OutcastIsland_Text_MymoPostBattle::
 	.string "I'm beat…$"
 
 SixIsland_OutcastIsland_Text_NicoleIntro::
-	.string "It's not so easy sending POKéMON\n"
+	.string "It's not so easy sending Fragmon\n"
 	.string "out while swimming, you know?$"
 
 SixIsland_OutcastIsland_Text_NicoleDefeat::
@@ -72,7 +72,7 @@ SixIsland_OutcastIsland_Text_AvaPostBattle::
 SixIsland_OutcastIsland_Text_AvaNotEnoughMons::
 	.string "AVA: You're challenging us to\n"
 	.string "a battle?\p"
-	.string "You'll need at least two POKéMON\n"
+	.string "You'll need at least two Fragmon\n"
 	.string "if you want to do that.$"
 
 SixIsland_OutcastIsland_Text_GebIntro::
@@ -90,4 +90,4 @@ SixIsland_OutcastIsland_Text_GebPostBattle::
 SixIsland_OutcastIsland_Text_GebNotEnoughMons::
 	.string "GEB: Please battle against me and\n"
 	.string "my sister!\p"
-	.string "…Oh, you don't have two POKéMON?$"
+	.string "…Oh, you don't have two Fragmon?$"

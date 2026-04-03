@@ -89,6 +89,6 @@ PokemonTower_5F_Text_JanaePostBattle::
 PokemonTower_5F_Text_PurifiedZoneMonsFullyHealed::
 	.string "Entered the purified and protected\n"
 	.string "zone.\p"
-	.string "{PLAYER}'s POKéMON were fully\n"
+	.string "{PLAYER}'s Fragmon were fully\n"
 	.string "healed.$"
 

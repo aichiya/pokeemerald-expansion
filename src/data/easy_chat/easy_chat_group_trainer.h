@@ -79,13 +79,13 @@ const struct EasyChatWordInfo gEasyChatGroup_Trainer[] = {
     },
     [EC_INDEX(EC_WORD_POKENAV)] =
     {
-        .text = COMPOUND_STRING("POKéNAV"),
+        .text = COMPOUND_STRING("DL{EMOJI_BIGWHEEL}GEAR"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LEVEL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_POKEMON)] =
     {
-        .text = COMPOUND_STRING("POKéMON"),
+        .text = COMPOUND_STRING("Fragmon"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LINK),
         .enabled = TRUE,
     },
@@ -97,7 +97,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Trainer[] = {
     },
     [EC_INDEX(EC_WORD_POKEDEX)] =
     {
-        .text = COMPOUND_STRING("POKéDEX"),
+        .text = COMPOUND_STRING("NC{EMOJI_IRRITATED}PDA"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_POKEDEX),
         .enabled = TRUE,
     },

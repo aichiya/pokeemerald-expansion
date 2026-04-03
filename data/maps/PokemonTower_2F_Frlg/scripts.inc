@@ -103,7 +103,7 @@ PokemonTower_2F_Movement_RivalExitDown::
 PokemonTower_2F_Text_RivalIntro::
 	.string "{RIVAL}: Hey, {PLAYER}!\n"
 	.string "What brings you here?\l"
-	.string "Is your POKéMON dead?\p"
+	.string "Is your Fragmon dead?\p"
 	.string "Hey! It's alive!\p"
 	.string "I can at least make them faint!\n"
 	.string "Let's go!$"
@@ -114,7 +114,7 @@ PokemonTower_2F_Text_RivalDefeat::
 	.string "I took it easy on you, too!$"
 
 PokemonTower_2F_Text_RivalPostBattle::
-	.string "How's your POKéDEX coming?\n"
+	.string "How's your NC{EMOJI_IRRITATED}PDA coming?\n"
 	.string "I just caught a CUBONE!\p"
 	.string "I can't find the bigger MAROWAK.\n"
 	.string "Where could they be?\p"

@@ -145,7 +145,7 @@ OneIsland_KindleRoad_Text_KiaPostBattle::
 OneIsland_KindleRoad_Text_KiaNotEnoughMons::
 	.string "KIA: If you want to battle with\n"
 	.string "us, you have to bring at least two\l"
-	.string "POKéMON with you.$"
+	.string "Fragmon with you.$"
 
 OneIsland_KindleRoad_Text_MikIntro::
 	.string "MIK: Together with KIA, I'm afraid\n"
@@ -162,7 +162,7 @@ OneIsland_KindleRoad_Text_MikPostBattle::
 OneIsland_KindleRoad_Text_MikNotEnoughMons::
 	.string "MIK: Hey, do you want to battle\n"
 	.string "with us two?\p"
-	.string "Bring two or more POKéMON with\n"
+	.string "Bring two or more Fragmon with\n"
 	.string "you, then.$"
 
 OneIsland_KindleRoad_Text_RouteSign::

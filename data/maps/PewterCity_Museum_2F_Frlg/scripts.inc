@@ -38,14 +38,14 @@ Text_SeismicTossTeach::
 	.string "harder, not toss in the towel.\p"
 	.string "The only thing you should toss…\p"
 	.string "Well, how about SEISMIC TOSS?\n"
-	.string "Should I teach that to a POKéMON?$"
+	.string "Should I teach that to a Fragmon?$"
 
 Text_SeismicTossDeclined::
 	.string "Is that so?\n"
 	.string "I'm sure you'll be back for it.$"
 
 Text_SeismicTossWhichMon::
-	.string "Which POKéMON wants to learn\n"
+	.string "Which Fragmon wants to learn\n"
 	.string "SEISMIC TOSS?$"
 
 Text_SeismicTossTaught::

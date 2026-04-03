@@ -42,7 +42,7 @@ static const u8 sText_FourQuestionMarks[] = _("????");
 static const u8 sText_UnusedEmpty[] = _("");
 static const u8 sText_IsThisTradeOkay[] = _("Is this trade okay?");
 static const u8 sText_Cancel[] = _("CANCEL");
-static const u8 sText_ChooseAPkmn[] = _("Choose a POKéMON.");
+static const u8 sText_ChooseAPkmn[] = _("Choose a Fragmon.");
 static const u8 sText_Summary[] = _("SUMMARY");
 static const u8 sText_Trade[] = _("TRADE");
 static const u8 sText_CancelTrade[] = _("Cancel trade?");
@@ -51,9 +51,9 @@ static const u8 sText_Summary2[] = _("SUMMARY");
 static const u8 sText_Trade2[] = _("TRADE");
 static const u8 sText_CommunicationStandby[] = _("{BACKGROUND WHITE}{TEXT_COLORS DARK_GRAY LIGHT_GRAY WHITE}Communication standby…\nPlease wait.");
 static const u8 sText_TheTradeHasBeenCanceled[] = _("{BACKGROUND WHITE}{TEXT_COLORS DARK_GRAY LIGHT_GRAY WHITE}The trade has\nbeen canceled.");
-static const u8 sText_OnlyPkmnForBattle[] = _("That's your only\nPOKéMON for battle.");
+static const u8 sText_OnlyPkmnForBattle[] = _("That's your only\nFragmon for battle.");
 static const u8 sText_WaitingForYourFriend[] = _("{BACKGROUND WHITE}{TEXT_COLORS DARK_GRAY LIGHT_GRAY WHITE}Waiting for your friend\nto finish…");
-static const u8 sText_YourFriendWantsToTrade[] = _("Your friend wants\nto trade POKéMON.");
+static const u8 sText_YourFriendWantsToTrade[] = _("Your friend wants\nto trade Fragmon.");
 
 static const struct OamData sOamData_MenuText =
 {

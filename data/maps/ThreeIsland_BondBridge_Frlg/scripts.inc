@@ -19,7 +19,7 @@ ThreeIsland_BondBridge_Text_NikkiDefeat::
 
 ThreeIsland_BondBridge_Text_NikkiPostBattle::
 	.string "Perhaps that reek is your sweaty\n"
-	.string "POKéMON's body odor…$"
+	.string "Fragmon's body odor…$"
 
 ThreeIsland_BondBridge_Text_VioletIntro::
 	.string "Where are you off to in such\n"
@@ -27,7 +27,7 @@ ThreeIsland_BondBridge_Text_VioletIntro::
 
 ThreeIsland_BondBridge_Text_VioletDefeat::
 	.string "You're raising some wonderful\n"
-	.string "POKéMON.$"
+	.string "Fragmon.$"
 
 ThreeIsland_BondBridge_Text_VioletPostBattle::
 	.string "If you keep going this way, you'll\n"
@@ -47,7 +47,7 @@ ThreeIsland_BondBridge_Text_AmiraPostBattle::
 
 ThreeIsland_BondBridge_Text_AlexisIntro::
 	.string "Yay, yay!\n"
-	.string "POKéMON!$"
+	.string "Fragmon!$"
 
 ThreeIsland_BondBridge_Text_AlexisDefeat::
 	.string "What happens now?$"
@@ -65,13 +65,13 @@ ThreeIsland_BondBridge_Text_TishaDefeat::
 	.string "Now will you please go away?$"
 
 ThreeIsland_BondBridge_Text_TishaPostBattle::
-	.string "A POKéMON bit through my \n"
+	.string "A Fragmon bit through my \n"
 	.string "swimsuit.\p"
 	.string "I can't get out of the water!$"
 
 ThreeIsland_BondBridge_Text_JoyIntro::
 	.string "JOY: We'll teach you what our\n"
-	.string "favorite POKéMON is!$"
+	.string "favorite Fragmon is!$"
 
 ThreeIsland_BondBridge_Text_JoyDefeat::
 	.string "JOY: Ohh…\n"
@@ -84,11 +84,11 @@ ThreeIsland_BondBridge_Text_JoyPostBattle::
 ThreeIsland_BondBridge_Text_JoyNotEnoughMons::
 	.string "JOY: I really want to battle with\n"
 	.string "MEG.\p"
-	.string "One POKéMON isn't enough.$"
+	.string "One Fragmon isn't enough.$"
 
 ThreeIsland_BondBridge_Text_MegIntro::
 	.string "MEG: We'll show you our favorite\n"
-	.string "POKéMON.$"
+	.string "Fragmon.$"
 
 ThreeIsland_BondBridge_Text_MegDefeat::
 	.string "MEG: Ohh…\n"
@@ -100,7 +100,7 @@ ThreeIsland_BondBridge_Text_MegPostBattle::
 ThreeIsland_BondBridge_Text_MegNotEnoughMons::
 	.string "MEG: I want to battle together\n"
 	.string "with JOY.\p"
-	.string "One POKéMON isn't enough.$"
+	.string "One Fragmon isn't enough.$"
 
 ThreeIsland_BondBridge_Text_BerryForestAhead::
 	.string "BERRY FOREST AHEAD$"

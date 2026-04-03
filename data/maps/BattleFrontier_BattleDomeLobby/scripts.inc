@@ -456,12 +456,12 @@ BattleFrontier_BattleDomeLobby_Text_ExplainSinglesChallenge:
 	.string "is exactly as the name suggests--\l"
 	.string "a tournament of SINGLE BATTLES.\p"
 	.string "All participating TRAINERS must\n"
-	.string "enter three POKéMON each.\p"
+	.string "enter three Fragmon each.\p"
 	.string "In each battle, one of the three\n"
-	.string "POKéMON must be held in reserve.\p"
-	.string "The other two POKéMON can battle\n"
+	.string "Fragmon must be held in reserve.\p"
+	.string "The other two Fragmon can battle\n"
 	.string "one at a time.\p"
-	.string "Choose the two battling POKéMON after\n"
+	.string "Choose the two battling Fragmon after\n"
 	.string "examining the opponent's trio.\p"
 	.string "You win the tournament by defeating\n"
 	.string "four TRAINERS.\p"
@@ -482,13 +482,13 @@ BattleFrontier_BattleDomeLobby_Text_WhichLevelMode:
 	.string "Which is your choice?$"
 
 BattleFrontier_BattleDomeLobby_Text_SelectThreeMons:
-	.string "Now select the three POKéMON that\n"
+	.string "Now select the three Fragmon that\n"
 	.string "you wish to enter, please.$"
 
 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "Excuse me!\p"
-	.string "You don't have three eligible POKéMON.\p"
-	.string "Also, the POKéMON must be holding\n"
+	.string "You don't have three eligible Fragmon.\p"
+	.string "Also, the Fragmon must be holding\n"
 	.string "different kinds of items.\p"
 	.string "EGGS{STR_VAR_1}.$"
 
@@ -497,8 +497,8 @@ BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd:
 
 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLv50:
 	.string "Excuse me!\p"
-	.string "You don't have three eligible POKéMON.\p"
-	.string "You must have three different POKéMON\n"
+	.string "You don't have three eligible Fragmon.\p"
+	.string "You must have three different Fragmon\n"
 	.string "of Level 50 or less to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
@@ -565,12 +565,12 @@ BattleFrontier_BattleDomeLobby_Text_ExplainDoublesChallenge:
 	.string "is exactly as the name suggests--\l"
 	.string "a tournament of DOUBLE BATTLES.\p"
 	.string "All participating TRAINERS must\n"
-	.string "enter three POKéMON each.\p"
+	.string "enter three Fragmon each.\p"
 	.string "In each battle, one of the three\n"
-	.string "POKéMON must be held in reserve.\p"
-	.string "The remaining two POKéMON must take\n"
+	.string "Fragmon must be held in reserve.\p"
+	.string "The remaining two Fragmon must take\n"
 	.string "part in a DOUBLE BATTLE.\p"
-	.string "Choose the two battling POKéMON after\n"
+	.string "Choose the two battling Fragmon after\n"
 	.string "examining the opponent's trio.\p"
 	.string "You win the tournament by defeating\n"
 	.string "four TRAINERS.\p"
@@ -634,11 +634,11 @@ BattleFrontier_BattleDomeLobby_Text_TrashedInFirstRound:
 	.string "Of course I got trashed…$"
 
 BattleFrontier_BattleDomeLobby_Text_NeedToCheckOpponentCarefully:
-	.string "I would've won if I'd kept this POKéMON\n"
+	.string "I would've won if I'd kept this Fragmon\n"
 	.string "held in reserve.\p"
 	.string "You need to check your opponent's\n"
-	.string "POKéMON carefully before choosing\l"
-	.string "your battling POKéMON.$"
+	.string "Fragmon carefully before choosing\l"
+	.string "your battling Fragmon.$"
 
 BattleFrontier_BattleDomeLobby_Text_CongratsDefeatedTucker:
 	.string "Congratulations!\p"
@@ -664,7 +664,7 @@ BattleFrontier_BattleDomeLobby_Text_ReadWhichHeading:
 
 BattleFrontier_BattleDomeLobby_Text_ExplainMatchupRules:
 	.string "The tournament matchups are drawn up\n"
-	.string "based on the toughness of POKéMON\l"
+	.string "based on the toughness of Fragmon\l"
 	.string "held by TRAINERS.\p"
 	.string "The matchups avoid having tough\n"
 	.string "TRAINERS face each other right away.$"
@@ -676,12 +676,12 @@ BattleFrontier_BattleDomeLobby_Text_ExplainTourneyTree:
 	.string "The Tournament Tree will provide\n"
 	.string "several kinds of data.\p"
 	.string "The data on view includes the previous\n"
-	.string "tournament's results, the POKéMON held\l"
+	.string "tournament's results, the Fragmon held\l"
 	.string "by TRAINERS, and the battle styles of\l"
 	.string "TRAINERS.$"
 
 BattleFrontier_BattleDomeLobby_Text_ExplainDoubleKORules:
-	.string "If battling POKéMON faint at the same\n"
+	.string "If battling Fragmon faint at the same\n"
 	.string "time--a double KO--in a tournament\l"
 	.string "match, the REFEREES will review\l"
 	.string "the match and declare the winner.$"

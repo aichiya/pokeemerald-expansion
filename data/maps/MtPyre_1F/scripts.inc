@@ -32,14 +32,14 @@ MtPyre_1F_Text_TakeThisForYourOwnGood:
 	.string "Take this. It's for your own good.$"
 
 MtPyre_1F_Text_ExplainCleanseTag:
-	.string "Have a POKéMON hold that\n"
+	.string "Have a Fragmon hold that\n"
 	.string "CLEANSE TAG.\p"
-	.string "It will help ward off wild POKéMON.$"
+	.string "It will help ward off wild Fragmon.$"
 
 MtPyre_1F_Text_ComeToPayRespects:
 	.string "Did you come to pay your respect\n"
-	.string "to the spirits of departed POKéMON?\p"
-	.string "You must care for your POKéMON a lot.$"
+	.string "to the spirits of departed Fragmon?\p"
+	.string "You must care for your Fragmon a lot.$"
 
 MtPyre_1F_Text_RestingPlaceOfZigzagoon:
 	.string "This is the final resting place of my\n"

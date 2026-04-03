@@ -454,24 +454,24 @@ PalletTown_Text_OakDontGoOut::
 
 PalletTown_Text_OakGrassUnsafeNeedMon::
 	.string "OAK: It's unsafe!\n"
-	.string "Wild POKéMON live in tall grass!\p"
-	.string "You need your own POKéMON for\n"
+	.string "Wild Fragmon live in tall grass!\p"
+	.string "You need your own Fragmon for\n"
 	.string "your protection.\p"
 	.string "I know!\n"
 	.string "Here, come with me!$"
 
 PalletTown_Text_RaisingMonsToo::
-	.string "I'm raising POKéMON, too.\p"
+	.string "I'm raising Fragmon, too.\p"
 	.string "When they get strong, they can\n"
 	.string "protect me.$"
 
 PalletTown_Text_CanStoreItemsAndMonsInPC::
 	.string "Technology is incredible!\p"
 	.string "You can now store and recall items\n"
-	.string "and POKéMON as data via PC.$"
+	.string "and Fragmon as data via PC.$"
 
 PalletTown_Text_OakPokemonResearchLab::
-	.string "OAK POKéMON RESEARCH LAB$"
+	.string "OAK Fragmon RESEARCH LAB$"
 
 PalletTown_Text_PlayersHouse::
 	.string "{PLAYER}'s house$"
@@ -487,7 +487,7 @@ PalletTown_Text_OakLetMeSeePokedex::
 	.string "OAK: Ah, {PLAYER}!\n"
 	.string "You're back, are you?\p"
 	.string "How much have you filled in your\n"
-	.string "POKéDEX?\p"
+	.string "NC{EMOJI_IRRITATED}PDA?\p"
 	.string "May I see it?\p"
 	.string "Let's see…$"
 

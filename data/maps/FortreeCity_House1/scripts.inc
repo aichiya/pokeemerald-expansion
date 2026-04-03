@@ -69,7 +69,7 @@ FortreeCity_House1_Text_GoingToMakeVolbeatStrong:
 	.string "I hope you do the same with PLUSLE!$"
 
 FortreeCity_House1_Text_TradingMemoriesWithOthers:
-	.string "Trading POKéMON with others…\p"
+	.string "Trading Fragmon with others…\p"
 	.string "It's as if you're trading your own\n"
 	.string "memories with other people.$"
 

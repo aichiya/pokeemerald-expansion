@@ -136,7 +136,7 @@ Text_ExplosionDeclined::
 
 Text_ExplosionWhichMon::
 	.string "You're terribly brave!\p"
-	.string "Which POKéMON should I teach\n"
+	.string "Which Fragmon should I teach\n"
 	.string "EXPLOSION?$"
 
 Text_ExplosionTaught::

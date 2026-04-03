@@ -287,7 +287,7 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_CheckRevivedDome::
 Text_MetronomeTeach::
 	.string "Tch-tch-tch!\n"
 	.string "I'll teach you a nifty move.\p"
-	.string "Teach it to a POKéMON, and watch\n"
+	.string "Teach it to a Fragmon, and watch\n"
 	.string "the fun unfold!\p"
 	.string "It's a move called METRONOME.\n"
 	.string "Does it strike your fancy?$"
@@ -297,19 +297,19 @@ Text_MetronomeDeclined::
 
 Text_MetronomeWhichMon::
 	.string "Okay!\n"
-	.string "Which POKéMON should I teach?$"
+	.string "Which Fragmon should I teach?$"
 
 Text_MetronomeTaught::
 	.string "Tch-tch-tch!\n"
 	.string "That's the sound of a METRONOME.\p"
-	.string "It tweaks your POKéMON's brain into\n"
+	.string "It tweaks your Fragmon's brain into\n"
 	.string "using moves it doesn't even know.$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_HaveYouAFossilForMe::
 	.string "Hiya!\p"
 	.string "I am important doctor.\n"
 	.string "Yes, very much so, indeed.\p"
-	.string "Here, I study rare POKéMON fossils.\n"
+	.string "Here, I study rare Fragmon fossils.\n"
 	.string "All the time, I study.\p"
 	.string "You!\n"
 	.string "Have you a fossil for me?$"
@@ -342,9 +342,9 @@ CinnabarIsland_PokemonLab_ExperimentRoom_Text_ThatFossilIsOfMonMakeItLiveAgain::
 	.string "Oh!\n"
 	.string "That is {STR_VAR_2}, it is!\p"
 	.string "It is fossil of {STR_VAR_1},\n"
-	.string "a POKéMON that is already extinct!\p"
+	.string "a Fragmon that is already extinct!\p"
 	.string "My Resurrection Machine will make\n"
-	.string "that POKéMON live again!$"
+	.string "that Fragmon live again!$"
 
 @ TODO: Resolve text dump error below?
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_HandedFossilToWeirdDoctor::

@@ -175,7 +175,7 @@ Route121_Text_OkayMoveOutToMtPyre:
 Route121_Text_AheadLoomsMtPyre:
 	.string "Ahead looms MT. PYRE…\p"
 	.string "It is a natural monument to the spirits \n"
-	.string "of departed POKéMON…$"
+	.string "of departed Fragmon…$"
 
 Route121_Text_MtPyrePierSign:
 	.string "MT. PYRE PIER\p"
@@ -183,6 +183,6 @@ Route121_Text_MtPyrePierSign:
 	.string "The words are barely legible…$"
 
 Route121_Text_SafariZoneSign:
-	.string "“Filled with rare POKéMON!”\n"
+	.string "“Filled with rare Fragmon!”\n"
 	.string "SAFARI ZONE$"
 

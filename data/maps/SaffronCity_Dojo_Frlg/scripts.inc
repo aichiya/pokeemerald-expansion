@@ -166,7 +166,7 @@ SaffronCity_Dojo_Text_ChoosePrizedFightingMon::
 	.string "But, I beseech you, do not take\n"
 	.string "our emblem as your trophy!\p"
 	.string "In return, I will give you a prized\n"
-	.string "FIGHTING POKéMON!\p"
+	.string "FIGHTING Fragmon!\p"
 	.string "Choose whichever one you like!$"
 
 SaffronCity_Dojo_Text_StayAndTrainWithUs::

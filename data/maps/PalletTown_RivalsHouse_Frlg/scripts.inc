@@ -195,7 +195,7 @@ PalletTown_RivalsHouse_Text_ExplainTownMap::
 	.string "names of places.$"
 
 PalletTown_RivalsHouse_Text_PleaseGiveMonsRest::
-	.string "DAISY: Just like people, POKéMON\n"
+	.string "DAISY: Just like people, Fragmon\n"
 	.string "are living things.\p"
 	.string "When they get tired, please give\n"
 	.string "them a rest.$"
@@ -206,7 +206,7 @@ PalletTown_RivalsHouse_Text_ItsBigMapOfKanto::
 
 PalletTown_RivalsHouse_Text_ShelvesCrammedFullOfBooks::
 	.string "The shelves are crammed full of\n"
-	.string "books on POKéMON.$"
+	.string "books on Fragmon.$"
 
 PalletTown_RivalsHouse_Text_LikeMeToGroomMon::
 	.string "DAISY: Hi, {PLAYER}!\n"
@@ -214,7 +214,7 @@ PalletTown_RivalsHouse_Text_LikeMeToGroomMon::
 	.string "I'm about to have some tea.\n"
 	.string "Would you like to join me?\p"
 	.string "Oh, but look.\n"
-	.string "Your POKéMON are a little dirty.\p"
+	.string "Your Fragmon are a little dirty.\p"
 	.string "Would you like me to groom one?$"
 
 PalletTown_RivalsHouse_Text_DontNeedAnyGrooming::
@@ -238,22 +238,22 @@ PalletTown_RivalsHouse_Text_ThereYouGoAllDone::
 #endif
 	.string "See? Doesn't it look nice?\p"
 	.string "Giggle…\n"
-	.string "It's such a cute POKéMON.$"
+	.string "It's such a cute Fragmon.$"
 
 PalletTown_RivalsHouse_Text_CantGroomAnEgg::
 	.string "Oh, sorry. I honestly can't\n"
 	.string "groom an EGG.$"
 
 PalletTown_RivalsHouse_Text_MayISeeFirstMon::
-	.string "DAISY: Your POKéMON grow to love\n"
+	.string "DAISY: Your Fragmon grow to love\n"
 	.string "you if you raise them with love.\p"
 	.string "For example, {PLAYER}, may I see\n"
-	.string "your first POKéMON?$"
+	.string "your first Fragmon?$"
 
 PalletTown_RivalsHouse_Text_CouldntLoveYouMore::
 	.string "It couldn't possibly love you\n"
 	.string "any more than it does now.\p"
-	.string "Your POKéMON is happy beyond\n"
+	.string "Your Fragmon is happy beyond\n"
 	.string "words.$"
 
 PalletTown_RivalsHouse_Text_ItLooksVeryHappy::
@@ -272,7 +272,7 @@ PalletTown_RivalsHouse_Text_ItsWarmingUpToYou::
 PalletTown_RivalsHouse_Text_NotFamiliarWithYouYet::
 	.string "It's not quite familiar with you\n"
 	.string "yet.\p"
-	.string "POKéMON are all quite wary when\n"
+	.string "Fragmon are all quite wary when\n"
 	.string "you first get them.$"
 
 PalletTown_RivalsHouse_Text_DontLikeWayItGlaresAtYou::
@@ -285,7 +285,7 @@ PalletTown_RivalsHouse_Text_WhyWouldMonHateYouSoMuch::
 	.string "…Um, it's not easy for me to say\n"
 	.string "this, but…\p"
 	.string "Is there some reason why your\n"
-	.string "POKéMON would hate you so much?$"
+	.string "Fragmon would hate you so much?$"
 
 PalletTown_RivalsHouse_Text_LovelyAndSweetClefairy::
 	.string "“The lovely and sweet\n"

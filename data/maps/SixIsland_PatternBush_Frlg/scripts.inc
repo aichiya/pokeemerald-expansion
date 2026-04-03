@@ -79,20 +79,20 @@ SixIsland_PatternBush_EventScript_Layton::
 
 SixIsland_PatternBush_Text_BethanyIntro::
 	.string "I'm curious, how do you raise your\n"
-	.string "POKéMON?$"
+	.string "Fragmon?$"
 
 SixIsland_PatternBush_Text_BethanyDefeat::
-	.string "You raise your POKéMON with a\n"
+	.string "You raise your Fragmon with a\n"
 	.string "whole lot of love!$"
 
 SixIsland_PatternBush_Text_BethanyPostBattle::
 	.string "In the same way your mother raised\n"
 	.string "you full of love, you should raise\l"
-	.string "your POKéMON.$"
+	.string "your Fragmon.$"
 
 SixIsland_PatternBush_Text_AllisonIntro::
 	.string "I'm working to preserve the natural\n"
-	.string "ecology of POKéMON here.$"
+	.string "ecology of Fragmon here.$"
 
 SixIsland_PatternBush_Text_AllisonDefeat::
 	.string "Oh, for someone so young, you are\n"
@@ -100,17 +100,17 @@ SixIsland_PatternBush_Text_AllisonDefeat::
 
 SixIsland_PatternBush_Text_AllisonPostBattle::
 	.string "I'm not saying that you shouldn't\n"
-	.string "catch POKéMON.\p"
+	.string "catch Fragmon.\p"
 	.string "I just want people to raise their\n"
-	.string "POKéMON responsibly.$"
+	.string "Fragmon responsibly.$"
 
 SixIsland_PatternBush_Text_GarretIntro::
-	.string "I caught a BUG POKéMON that lives\n"
+	.string "I caught a BUG Fragmon that lives\n"
 	.string "only around here!$"
 
 SixIsland_PatternBush_Text_GarretDefeat::
 	.string "Heheh…\n"
-	.string "Isn't my POKéMON awesome?$"
+	.string "Isn't my Fragmon awesome?$"
 
 SixIsland_PatternBush_Text_GarretPostBattle::
 	.string "There's a girl near the BUSH who\n"
@@ -118,11 +118,11 @@ SixIsland_PatternBush_Text_GarretPostBattle::
 
 SixIsland_PatternBush_Text_JonahIntro::
 	.string "You know, it just doesn't feel right\n"
-	.string "if I don't use BUG POKéMON.$"
+	.string "if I don't use BUG Fragmon.$"
 
 SixIsland_PatternBush_Text_JonahDefeat::
 	.string "It's okay, losing is a fun part of\n"
-	.string "POKéMON's appeal, too.$"
+	.string "Fragmon's appeal, too.$"
 
 SixIsland_PatternBush_Text_JonahPostBattle::
 	.string "By the way, “appeal” is a weird\n"
@@ -132,7 +132,7 @@ SixIsland_PatternBush_Text_JonahPostBattle::
 
 SixIsland_PatternBush_Text_VanceIntro::
 	.string "Yeah, yeah, yeah!\n"
-	.string "Look at all the BUG POKéMON!$"
+	.string "Look at all the BUG Fragmon!$"
 
 SixIsland_PatternBush_Text_VanceDefeat::
 	.string "I got beat while I was still busy\n"
@@ -183,7 +183,7 @@ SixIsland_PatternBush_Text_DaliaPostBattle::
 	.string "Isn't it refreshing?$"
 
 SixIsland_PatternBush_Text_JoanaIntro::
-	.string "I love BUG POKéMON.\n"
+	.string "I love BUG Fragmon.\n"
 	.string "That's why I'm here all the time.\p"
 	.string "Am I the only girl like that?$"
 
@@ -193,7 +193,7 @@ SixIsland_PatternBush_Text_JoanaDefeat::
 
 SixIsland_PatternBush_Text_JoanaPostBattle::
 	.string "I'm going to keep on collecting\n"
-	.string "BUG POKéMON.\p"
+	.string "BUG Fragmon.\p"
 	.string "Am I the only girl like that?$"
 
 SixIsland_PatternBush_Text_RileyIntro::

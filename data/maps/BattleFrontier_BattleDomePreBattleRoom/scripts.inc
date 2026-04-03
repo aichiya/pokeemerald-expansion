@@ -287,7 +287,7 @@ BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForFinals:
 	.string "Are you ready?$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_ChooseTwoMons:
-	.string "Please choose the two POKéMON\n"
+	.string "Please choose the two Fragmon\n"
 	.string "that are to appear in battle.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RightThisWay:
@@ -295,7 +295,7 @@ BattleFrontier_BattleDomePreBattleRoom_Text_RightThisWay:
 
 BattleFrontier_BattleDomePreBattleRoom_Text_RestoreMonsToFullHealth:
 	.string "Thank you for competing!\p"
-	.string "I'll restore your POKéMON to\n"
+	.string "I'll restore your Fragmon to\n"
 	.string "full health.$"
 
 BattleFrontier_BattleDomePreBattleRoom_Text_Round1Complete:

@@ -86,7 +86,7 @@ VictoryRoad_2F_Text_DawsonDefeat::
 
 VictoryRoad_2F_Text_DawsonPostBattle::
 	.string "I can beat you when it comes to\n"
-	.string "knowledge about POKéMON!$"
+	.string "knowledge about Fragmon!$"
 
 VictoryRoad_2F_Text_DaisukeIntro::
 	.string "This here is VICTORY ROAD.\n"

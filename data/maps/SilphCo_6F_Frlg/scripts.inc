@@ -115,7 +115,7 @@ SilphCo_6F_Text_NeedsMeToLookAfterHim::
 
 SilphCo_6F_Text_RocketsTryingToConquerWorld::
 	.string "TEAM ROCKET is trying to conquer\n"
-	.string "the world with POKéMON.$"
+	.string "the world with Fragmon.$"
 
 SilphCo_6F_Text_RocketsRanAwayBecauseOfYou::
 	.string "TEAM ROCKET ran away, and it's all\n"
@@ -123,7 +123,7 @@ SilphCo_6F_Text_RocketsRanAwayBecauseOfYou::
 
 SilphCo_6F_Text_TargetedSilphForOurMonProducts::
 	.string "They must have targeted SILPH for\n"
-	.string "our POKéMON products.$"
+	.string "our Fragmon products.$"
 
 SilphCo_6F_Text_ComeWorkForSilphWhenYoureOlder::
 	.string "Come work for SILPH when you\n"

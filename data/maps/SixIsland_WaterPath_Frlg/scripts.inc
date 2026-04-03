@@ -20,7 +20,7 @@ SixIsland_WaterPath_Text_RoseDefeat::
 SixIsland_WaterPath_Text_RosePostBattle::
 	.string "I want to go to the woods over\n"
 	.string "there, but…\p"
-	.string "There are lots of BUG POKéMON.\n"
+	.string "There are lots of BUG Fragmon.\n"
 	.string "They scare me a little.$"
 
 SixIsland_WaterPath_Text_EdwardIntro::
@@ -55,7 +55,7 @@ SixIsland_WaterPath_Text_DeniseDefeat::
 
 SixIsland_WaterPath_Text_DenisePostBattle::
 	.string "When I can't be with my boyfriend,\n"
-	.string "I spend time with the POKéMON he\l"
+	.string "I spend time with the Fragmon he\l"
 	.string "gave me.$"
 
 SixIsland_WaterPath_Text_EarlIntro::
@@ -71,7 +71,7 @@ SixIsland_WaterPath_Text_EarlPostBattle::
 	.string "these parts?$"
 
 SixIsland_WaterPath_Text_MiuIntro::
-	.string "MIU: Hello, POKéMON!\n"
+	.string "MIU: Hello, Fragmon!\n"
 	.string "It's time to play!$"
 
 SixIsland_WaterPath_Text_MiuDefeat::
@@ -87,7 +87,7 @@ SixIsland_WaterPath_Text_MiuNotEnoughMons::
 	.string "We want to battle together.$"
 
 SixIsland_WaterPath_Text_MiaIntro::
-	.string "MIA: Hello, POKéMON!\n"
+	.string "MIA: Hello, Fragmon!\n"
 	.string "It's time to battle!$"
 
 SixIsland_WaterPath_Text_MiaDefeat::
@@ -96,11 +96,11 @@ SixIsland_WaterPath_Text_MiaDefeat::
 
 SixIsland_WaterPath_Text_MiaPostBattle::
 	.string "MIA: Ohh…\n"
-	.string "I'm sorry, my POKéMON…$"
+	.string "I'm sorry, my Fragmon…$"
 
 SixIsland_WaterPath_Text_MiaNotEnoughMons::
 	.string "MIA: Oh, you only have one\n"
-	.string "POKéMON?\p"
+	.string "Fragmon?\p"
 	.string "Don't you feel lonesome?$"
 
 SixIsland_WaterPath_Text_WantedUltimateHorn::

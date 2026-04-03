@@ -10,7 +10,7 @@ Route21_North_Text_RonaldDefeat::
 
 Route21_North_Text_RonaldPostBattle::
 	.string "I can't catch anything good.\n"
-	.string "Not one good POKéMON to be had!$"
+	.string "Not one good Fragmon to be had!$"
 
 Route21_North_Text_WadeIntro::
 	.string "I got a big haul!\n"

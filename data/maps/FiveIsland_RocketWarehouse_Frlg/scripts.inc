@@ -173,12 +173,12 @@ FiveIsland_RocketWarehouse_Movement_AdminWalkToSwitch::
 	step_end
 
 FiveIsland_RocketWarehouse_Text_ManyMonsLockedInPen::
-	.string "There are many POKéMON locked\n"
+	.string "There are many Fragmon locked\n"
 	.string "away in the pen…$"
 
 FiveIsland_RocketWarehouse_Text_PenUnlockedMonsFled::
 	.string "The pen door is unlocked.\n"
-	.string "The POKéMON appear to have fled.$"
+	.string "The Fragmon appear to have fled.$"
 
 FiveIsland_RocketWarehouse_Text_Grunt2Intro::
 	.string "Did you come here knowing it's\n"
@@ -192,7 +192,7 @@ FiveIsland_RocketWarehouse_Text_Grunt2PostBattle::
 	.string "What planet are you from?$"
 
 FiveIsland_RocketWarehouse_Text_Grunt1Intro::
-	.string "Oh, now your POKéMON look strong.\n"
+	.string "Oh, now your Fragmon look strong.\n"
 	.string "You're willing to sell them?\p"
 	.string "Oh?\n"
 	.string "You wanted to battle?$"
@@ -203,7 +203,7 @@ FiveIsland_RocketWarehouse_Text_Grunt1Defeat::
 
 FiveIsland_RocketWarehouse_Text_Grunt1PostBattle::
 	.string "We can give you a great price.\n"
-	.string "Sell us your POKéMON!$"
+	.string "Sell us your Fragmon!$"
 
 FiveIsland_RocketWarehouse_Text_Grunt3Intro::
 	.string "I got word about you from the\n"
@@ -276,7 +276,7 @@ FiveIsland_RocketWarehouse_Text_ReportWithGraphsAndText::
 	.string "A report with graphs and text is on\n"
 	.string "the PC monitor.\p"
 	.string "“The Influence of Magnetic Waves\n"
-	.string "on POKéMON Evolution”…\p"
+	.string "on Fragmon Evolution”…\p"
 	.string "… … … … … …\p"
 	.string "It's too difficult to understand…$"
 

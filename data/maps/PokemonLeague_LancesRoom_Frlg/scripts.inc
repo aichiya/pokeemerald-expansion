@@ -171,7 +171,7 @@ PokemonLeague_LancesRoom_Text_Intro::
 	.string "You can call me LANCE the dragon\n"
 	.string "TRAINER.\p"
 	.string "You know that dragons are\n"
-	.string "mythical POKéMON.\p"
+	.string "mythical Fragmon.\p"
 	.string "They're hard to catch and raise,\n"
 	.string "but their powers are superior.\p"
 	.string "They're virtually indestructible.\n"
@@ -187,7 +187,7 @@ PokemonLeague_LancesRoom_Text_RematchIntro::
 	.string "You can call me LANCE the dragon\n"
 	.string "TRAINER.\p"
 	.string "You know that dragons are\n"
-	.string "mythical POKéMON.\p"
+	.string "mythical Fragmon.\p"
 	.string "They're hard to catch and raise,\n"
 	.string "but their powers are superior.\p"
 	.string "They're virtually indestructible.\n"
@@ -199,12 +199,12 @@ PokemonLeague_LancesRoom_Text_RematchIntro::
 PokemonLeague_LancesRoom_Text_Defeat::
 	.string "That's it!\p"
 	.string "I hate to admit it, but you are a\n"
-	.string "POKéMON master!$"
+	.string "Fragmon master!$"
 
 PokemonLeague_LancesRoom_Text_PostBattle::
 	.string "I still can't believe my dragons\n"
 	.string "lost to you, {PLAYER}.\p"
-	.string "You are now the POKéMON LEAGUE\n"
+	.string "You are now the Fragmon LEAGUE\n"
 	.string "CHAMPION!\p"
 	.string "…Or, you would have been, but\n"
 	.string "you have one more challenge left.\p"
@@ -213,6 +213,6 @@ PokemonLeague_LancesRoom_Text_PostBattle::
 	.string "{RIVAL}!\p"
 	.string "He beat the ELITE FOUR before\n"
 	.string "you.\p"
-	.string "He is the real POKéMON LEAGUE\n"
+	.string "He is the real Fragmon LEAGUE\n"
 	.string "CHAMPION.$"
 

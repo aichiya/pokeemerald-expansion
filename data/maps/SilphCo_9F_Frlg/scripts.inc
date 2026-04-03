@@ -55,7 +55,7 @@ SilphCo_9F_Text_ThankYouSoMuch::
 	.string "Thank you so much.$"
 
 SilphCo_9F_Text_Grunt1Intro::
-	.string "Your POKéMON seem to adore you,\n"
+	.string "Your Fragmon seem to adore you,\n"
 	.string "kid!$"
 
 SilphCo_9F_Text_Grunt1Defeat::
@@ -66,7 +66,7 @@ SilphCo_9F_Text_Grunt1PostBattle::
 	.string "your age…$"
 
 SilphCo_9F_Text_EdIntro::
-	.string "Your POKéMON have weak points!\n"
+	.string "Your Fragmon have weak points!\n"
 	.string "I can nail them!$"
 
 SilphCo_9F_Text_EdDefeat::

@@ -56,7 +56,7 @@ PewterCity_PokemonCenter_1F_Text_Jigglypuff::
 
 PewterCity_PokemonCenter_1F_Text_WhenJiggylypuffSingsMonsGetDrowsy::
 	.string "Yawn!\p"
-	.string "When JIGGLYPUFF sings, POKéMON get\n"
+	.string "When JIGGLYPUFF sings, Fragmon get\n"
 	.string "drowsy…\p"
 	.string "…Me, too…\n"
 	.string "Snore…$"
@@ -66,7 +66,7 @@ PewterCity_PokemonCenter_1F_Text_TradingMyClefairyForPikachu::
 	.string "trading my CLEFAIRY for one.$"
 
 PewterCity_PokemonCenter_1F_Text_TradingPikachuWithKid::
-	.string "I'm trading POKéMON with that kid\n"
+	.string "I'm trading Fragmon with that kid\n"
 	.string "there.\p"
 	.string "I had two PIKACHU, so I figured\n"
 	.string "I might as well trade one.$"

@@ -291,6 +291,7 @@ static u8* ConvertMonHeightToMetricString(u32 height);
 static u8* ConvertMonWeightToImperialString(u32 weight);
 static u8* ConvertMonWeightToMetricString(u32 weight);
 static u8* ConvertMeasurementToMetricString(u32 num, u32* index);
+static u8* ConvertMeasurementToMetricStringNoDecimal(u32 num, u32* index);
 static void ResetOtherVideoRegisters(u16);
 static u8 PrintCryScreenSpeciesName(u8, u16, u8, u8);
 static void PrintDecimalNum(u8 windowId, u16 num, u8 left, u8 top);
@@ -4463,11 +4464,11 @@ static u8* ConvertMonWeightToImperialString(u32 weight)
 static u8* ConvertMonWeightToMetricString(u32 weight)
 {
     u32 index = 0;
-    u8* weightString = ConvertMeasurementToMetricString(weight, &index);
+    u8* weightString = ConvertMeasurementToMetricStringNoDecimal(weight, &index);
 
-    weightString[index++] = CHAR_k;
-    weightString[index++] = CHAR_g;
-    weightString[index++] = CHAR_PERIOD;
+    weightString[index++] = EOS;
+    weightString[index++] = EOS;
+    weightString[index++] = EOS;
     weightString[index++] = EOS;
     return weightString;
 }
@@ -4505,6 +4506,44 @@ static u8* ConvertMeasurementToMetricString(u32 num, u32* index)
     string[(*index)++] = CHAR_0 + ((num % 1000) % 100) / 10;
     string[(*index)++] = CHAR_DEC_SEPARATOR;
     string[(*index)++] = CHAR_0 + ((num % 1000) % 100) % 10;
+    string[(*index)++] = CHAR_SPACE;
+
+    return string;
+}
+
+static u8* ConvertMeasurementToMetricStringNoDecimal(u32 num, u32* index)
+{
+    u8* string = Alloc(WEIGHT_HEIGHT_STR_MEM);
+    bool32 outputted = FALSE;
+    u32 result;
+
+    result = num / 1000;
+    if (result == 0)
+    {
+        string[(*index)++] = CHAR_SPACER;
+        outputted = FALSE;
+    }
+    else
+    {
+        string[(*index)++] = CHAR_0 + result;
+        outputted = TRUE;
+    }
+
+    result = (num % 1000) / 100;
+    if (result == 0 && !outputted)
+    {
+        string[(*index)++] = CHAR_SPACER;
+        outputted = FALSE;
+    }
+    else
+    {
+        string[(*index)++] = CHAR_0 + result;
+        outputted = TRUE;
+    }
+
+    string[(*index)++] = CHAR_0 + ((num % 1000) % 100) / 10;
+    string[(*index)++] = CHAR_SPACE;
+    string[(*index)++] = CHAR_SPACE;
     string[(*index)++] = CHAR_SPACE;
 
     return string;

@@ -45,7 +45,7 @@ CeladonCity_Restaurant_Text_TakingBreakRightNow::
 	.string "right now.$"
 
 CeladonCity_Restaurant_Text_OftenGoToDrugstore::
-	.string "My POKéMON are weak, so I often\n"
+	.string "My Fragmon are weak, so I often\n"
 	.string "have to go to the DRUGSTORE.$"
 
 CeladonCity_Restaurant_Text_PsstBasementUnderGameCorner::

@@ -370,30 +370,30 @@ MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesStory::
 	.string "never refuse a chance to battle!$"
 
 MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtTitle::
-	.string "The POKéMON-Catching TRAINER$"
+	.string "The Fragmon-Catching TRAINER$"
 
 MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtAction::
-	.string "Caught POKéMON$"
+	.string "Caught Fragmon$"
 
 MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtStory::
 	.string "This is a tale of a TRAINER\n"
 	.string "named {STR_VAR_3}.\p"
 	.string "This TRAINER caught\n"
-	.string "{STR_VAR_1} POKéMON!\p"
+	.string "{STR_VAR_1} Fragmon!\p"
 	.string "{STR_VAR_3} is a legendary catcher of\n"
-	.string "wild POKéMON!$"
+	.string "wild Fragmon!$"
 
 MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtTitle::
 	.string "The Fishing TRAINER$"
 
 MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtAction::
-	.string "Caught POKéMON with a ROD$"
+	.string "Caught Fragmon with a ROD$"
 
 MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtStory::
 	.string "This is a tale of a TRAINER\n"
 	.string "named {STR_VAR_3}.\p"
 	.string "This TRAINER caught\n"
-	.string "{STR_VAR_1} POKéMON while fishing!\p"
+	.string "{STR_VAR_1} Fragmon while fishing!\p"
 	.string "{STR_VAR_3} is a legendary fishing\n"
 	.string "expert!$"
 
@@ -406,7 +406,7 @@ MauvilleCity_PokemonCenter_1F_Text_EggsHatchedAction::
 MauvilleCity_PokemonCenter_1F_Text_EggsHatchedStory::
 	.string "This is a tale of a TRAINER\n"
 	.string "named {STR_VAR_3}.\p"
-	.string "This TRAINER hatched {STR_VAR_1} POKéMON\n"
+	.string "This TRAINER hatched {STR_VAR_1} Fragmon\n"
 	.string "from EGGS!\p"
 	.string "{STR_VAR_3} is a legendary warmer\n"
 	.string "of EGGS!$"
@@ -415,40 +415,40 @@ MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedTitle::
 	.string "The Evolver TRAINER$"
 
 MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedAction::
-	.string "Evolved POKéMON$"
+	.string "Evolved Fragmon$"
 
 MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedStory::
 	.string "This is a tale of a TRAINER\n"
 	.string "named {STR_VAR_3}.\p"
-	.string "This TRAINER made {STR_VAR_1} POKéMON\n"
+	.string "This TRAINER made {STR_VAR_1} Fragmon\n"
 	.string "evolve!\p"
 	.string "{STR_VAR_3} is the ultimate evolver\n"
-	.string "of POKéMON!$"
+	.string "of Fragmon!$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterTitle::
-	.string "The POKéMON CENTER-Loving TRAINER$"
+	.string "The Fragmon CENTER-Loving TRAINER$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterAction::
-	.string "Used POKéMON CENTERS$"
+	.string "Used Fragmon CENTERS$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterStory::
 	.string "This is a tale of a TRAINER\n"
 	.string "named {STR_VAR_3}.\p"
-	.string "This TRAINER healed POKéMON\n"
-	.string "{STR_VAR_1} times at POKéMON CENTERS!\p"
+	.string "This TRAINER healed Fragmon\n"
+	.string "{STR_VAR_1} times at Fragmon CENTERS!\p"
 	.string "There could be no greater lover of\n"
-	.string "POKéMON CENTERS than {STR_VAR_3}!$"
+	.string "Fragmon CENTERS than {STR_VAR_3}!$"
 
 MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeTitle::
 	.string "The Homebody TRAINER$"
 
 MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeAction::
-	.string "Rested POKéMON at home$"
+	.string "Rested Fragmon at home$"
 
 MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeStory::
 	.string "This is a tale of a TRAINER\n"
 	.string "named {STR_VAR_3}.\p"
-	.string "This TRAINER healed POKéMON\n"
+	.string "This TRAINER healed Fragmon\n"
 	.string "{STR_VAR_1} times at home!\p"
 	.string "There could be no more of a homebody\n"
 	.string "than {STR_VAR_3}!$"
@@ -605,7 +605,7 @@ MauvilleCity_PokemonCenter_1F_Text_EnteredContestsStory::
 	.string "This TRAINER entered CONTESTS\n"
 	.string "{STR_VAR_1} times!\p"
 	.string "{STR_VAR_3} must love showing off\n"
-	.string "POKéMON to others!$"
+	.string "Fragmon to others!$"
 
 MauvilleCity_PokemonCenter_1F_Text_WonContestsTitle::
 	.string "The CONTEST Master$"
@@ -664,18 +664,18 @@ MauvilleCity_PokemonCenter_1F_Text_TimesRainedStory::
 	.string "attract rain!$"
 
 MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexTitle::
-	.string "The Avid POKéDEX Reader$"
+	.string "The Avid NC{EMOJI_IRRITATED}PDA Reader$"
 
 MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexAction::
-	.string "Checked a POKéDEX$"
+	.string "Checked an NC{EMOJI_IRRITATED}PDA$"
 
 MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexStory::
 	.string "This is a tale of a TRAINER\n"
 	.string "named {STR_VAR_3}.\p"
-	.string "This TRAINER checked a POKéDEX\n"
+	.string "This TRAINER checked a NC{EMOJI_IRRITATED}PDA\n"
 	.string "{STR_VAR_1} times!\p"
 	.string "{STR_VAR_3} must love inspecting\n"
-	.string "POKéMON in a POKéDEX!$"
+	.string "Fragmon in an NC{EMOJI_IRRITATED}PDA!$"
 
 MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsTitle::
 	.string "The RIBBON Collector$"
@@ -733,32 +733,32 @@ MauvilleCity_PokemonCenter_1F_Text_CheckedClockStory::
 	.string "who's conscious of the time.$"
 
 MauvilleCity_PokemonCenter_1F_Text_WonLotteryTitle::
-	.string "The POKéMON LOTTERY Wizard$"
+	.string "The Fragmon LOTTERY Wizard$"
 
 MauvilleCity_PokemonCenter_1F_Text_WonLotteryAction::
-	.string "Won POKéMON LOTTERIES$"
+	.string "Won Fragmon LOTTERIES$"
 
 MauvilleCity_PokemonCenter_1F_Text_WonLotteryStory::
 	.string "This is a tale of a TRAINER\n"
 	.string "named {STR_VAR_3}.\p"
-	.string "This TRAINER won POKéMON LOTTERIES\n"
+	.string "This TRAINER won Fragmon LOTTERIES\n"
 	.string "{STR_VAR_1} times!\p"
 	.string "{STR_VAR_3} must have many friends\n"
-	.string "to trade POKéMON with!$"
+	.string "to trade Fragmon with!$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedDaycareTitle::
 	.string "The DAY CARE-Using Trainer$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedDaycareAction::
-	.string "Left POKéMON at the DAY CARE$"
+	.string "Left Fragmon at the DAY CARE$"
 
 MauvilleCity_PokemonCenter_1F_Text_UsedDaycareStory::
 	.string "This is a tale of a TRAINER\n"
 	.string "named {STR_VAR_3}.\p"
-	.string "This TRAINER left POKéMON with the\n"
+	.string "This TRAINER left Fragmon with the\n"
 	.string "DAY CARE {STR_VAR_1} times!\p"
 	.string "{STR_VAR_3} must be a real go-getter\n"
-	.string "who raises POKéMON aggressively!$"
+	.string "who raises Fragmon aggressively!$"
 
 MauvilleCity_PokemonCenter_1F_Text_RodeCableCarTitle::
 	.string "The CABLE CAR-Loving TRAINER$"

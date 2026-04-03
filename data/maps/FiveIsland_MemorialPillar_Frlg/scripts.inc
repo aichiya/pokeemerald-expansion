@@ -119,14 +119,14 @@ FiveIsland_MemorialPillar_Text_HaroldDefeat::
 
 FiveIsland_MemorialPillar_Text_HaroldPostBattle::
 	.string "It fills me with happiness when\n"
-	.string "bird POKéMON beg playfully…$"
+	.string "bird Fragmon beg playfully…$"
 
 FiveIsland_MemorialPillar_Text_ScrubScrub::
 	.string "Scrub, scrub…$"
 
 FiveIsland_MemorialPillar_Text_YourMonsLookHealthy::
 	.string "Hello…\n"
-	.string "Your POKéMON look healthy…$"
+	.string "Your Fragmon look healthy…$"
 
 FiveIsland_MemorialPillar_Text_ThisIsWhereIBuriedMyOnix::
 	.string "This is where I buried my ONIX…\n"
@@ -157,7 +157,7 @@ FiveIsland_MemorialPillar_Text_ThankYouPleaseTakeThis::
 	.string "thanks?$"
 
 FiveIsland_MemorialPillar_Text_BeGoodToYourMonsToo::
-	.string "Please be good to your POKéMON,\n"
+	.string "Please be good to your Fragmon,\n"
 	.string "too.$"
 
 FiveIsland_MemorialPillar_Text_DontHaveRoomForIt::

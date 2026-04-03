@@ -2,14 +2,14 @@ Route21_South_Frlg_MapScripts::
 	.byte 0
 
 Route21_South_Text_JackIntro::
-	.string "I caught my POKéMON at sea.$"
+	.string "I caught my Fragmon at sea.$"
 
 Route21_South_Text_JackDefeat::
 	.string "Diver!!\n"
 	.string "Down!!$"
 
 Route21_South_Text_JackPostBattle::
-	.string "Where'd you catch your POKéMON?$"
+	.string "Where'd you catch your Fragmon?$"
 
 Route21_South_Text_JeromeIntro::
 	.string "Right now, I'm in a triathlon meet.$"
@@ -70,7 +70,7 @@ Route21_North_Text_LilPostBattle::
 Route21_North_Text_LilNotEnoughMons::
 	.string "LIL: Huh? A battle?\n"
 	.string "I can't be bothered to do it alone.\l"
-	.string "Bring two POKéMON, won't you?$"
+	.string "Bring two Fragmon, won't you?$"
 
 Route21_North_Text_IanIntro::
 	.string "IAN: My sis doesn't get enough\n"
@@ -87,4 +87,4 @@ Route21_North_Text_IanPostBattle::
 
 Route21_North_Text_IanNotEnoughMons::
 	.string "IAN: We want a two-on-two battle.\n"
-	.string "So can you bring two POKéMON?$"
+	.string "So can you bring two Fragmon?$"

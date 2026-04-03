@@ -310,7 +310,7 @@ TrainerTower_Lobby_Text_HereAreTheResults::
 TrainerTower_Lobby_Text_NeedTwoMonsForDouble::
 	.string "This is a two-on-two battle.\p"
 	.string "You may not battle unless you have\n"
-	.string "at least two POKéMON.$"
+	.string "at least two Fragmon.$"
 
 TrainerTower_Lobby_Text_ExplainTrainerTower::
 	.string "Here at TRAINER TOWER, there is an\n"

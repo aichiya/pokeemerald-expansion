@@ -2152,7 +2152,7 @@ void SetShoalItemFlag(u16 unused)
 void LoadWallyZigzagoon(void)
 {
     u16 monData;
-    CreateMon(&gPlayerParty[0], SPECIES_JIRACHI, 69, Random32(), OTID_STRUCT_PLAYER_ID);
+    CreateMon(&gPlayerParty[0], SPECIES_YYYI_WAKABA_YUUSHA, 69, Random32(), OTID_STRUCT_PLAYER_ID);
     monData = TRUE;
     SetMonData(&gPlayerParty[0], MON_DATA_ABILITY_NUM, &monData);
     monData = MOVE_HOLD_BACK;

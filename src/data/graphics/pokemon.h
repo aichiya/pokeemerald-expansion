@@ -56330,19 +56330,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_FRAGMON_UNUSED
 
 #if P_FAMILY_EXTRA_GIFT
-    const u32 gMonFrontPic_EtcSailorMoon[] = INCBIN_U32("graphics/pokemon/_add/etc/dummy/front.4bpp.smol");
-    const u16 gMonPalette_EtcSailorMoon[] = INCBIN_U16("graphics/pokemon/_add/etc/dummy/normal.gbapal");
-    const u32 gMonBackPic_EtcSailorMoon[] = INCBIN_U32("graphics/pokemon/_add/etc/dummy/back.4bpp.smol");
-    const u16 gMonShinyPalette_EtcSailorMoon[] = INCBIN_U16("graphics/pokemon/_add/etc/dummy/shiny.gbapal");
-    const u8 gMonIcon_EtcSailorMoon[] = INCBIN_U8("graphics/pokemon/_add/etc/dummy/icon.4bpp");
+    const u32 gMonFrontPic_EtcSailorMoon[] = INCBIN_U32("graphics/pokemon/_add/etc/sailor_moon/sailor_moon/normal/front.4bpp.smol");
+    const u16 gMonPalette_EtcSailorMoon[] = INCBIN_U16("graphics/pokemon/_add/etc/sailor_moon/sailor_moon/normal/normal.gbapal");
+    const u32 gMonBackPic_EtcSailorMoon[] = INCBIN_U32("graphics/pokemon/_add/etc/sailor_moon/sailor_moon/normal/back.4bpp.smol");
+    const u16 gMonShinyPalette_EtcSailorMoon[] = INCBIN_U16("graphics/pokemon/_add/etc/sailor_moon/sailor_moon/normal/shiny.gbapal");
+    const u8 gMonIcon_EtcSailorMoon[] = INCBIN_U8("graphics/pokemon/_add/etc/sailor_moon/sailor_moon/normal/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_EtcSailorMoon[] = INCBIN_U8("graphics/pokemon/_add/etc/dummy/footprint.1bpp");
+    const u8 gMonFootprint_EtcSailorMoon[] = INCBIN_U8("graphics/pokemon/_add/etc/sailor_moon/sailor_moon/normal/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-//    const u32 gObjectEventPic_EtcSailorMoon[] = INCBIN_COMP("graphics/pokemon/_add/etc/dummy/overworld.4bpp");
+//    const u32 gObjectEventPic_EtcSailorMoon[] = INCBIN_COMP("graphics/pokemon/_add/etc/sailor_moon/sailor_moon/normal/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-//    const u16 gOverworldPalette_EtcSailorMoon[] = INCBIN_U16("graphics/pokemon/_add/etc/dummy/overworld_normal.gbapal");
-//    const u16 gShinyOverworldPalette_EtcSailorMoon[] = INCBIN_U16("graphics/pokemon/_add/etc/dummy/overworld_shiny.gbapal");
+//    const u16 gOverworldPalette_EtcSailorMoon[] = INCBIN_U16("graphics/pokemon/_add/etc/sailor_moon/sailor_moon/normal/overworld_normal.gbapal");
+//    const u16 gShinyOverworldPalette_EtcSailorMoon[] = INCBIN_U16("graphics/pokemon/_add/etc/sailor_moon/sailor_moon/normal/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_EXTRA_GIFT
@@ -56366,19 +56366,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_EXTRA_GIFT
 
 #if P_FAMILY_EXTRA_GIFT
-    const u32 gMonFrontPic_EtcMadokaUltimate[] = INCBIN_U32("graphics/pokemon/_add/etc/dummy/front.4bpp.smol");
-    const u16 gMonPalette_EtcMadokaUltimate[] = INCBIN_U16("graphics/pokemon/_add/etc/dummy/normal.gbapal");
-    const u32 gMonBackPic_EtcMadokaUltimate[] = INCBIN_U32("graphics/pokemon/_add/etc/dummy/back.4bpp.smol");
-    const u16 gMonShinyPalette_EtcMadokaUltimate[] = INCBIN_U16("graphics/pokemon/_add/etc/dummy/shiny.gbapal");
-    const u8 gMonIcon_EtcMadokaUltimate[] = INCBIN_U8("graphics/pokemon/_add/etc/dummy/icon.4bpp");
+    const u32 gMonFrontPic_EtcMadokaUltimate[] = INCBIN_U32("graphics/pokemon/_add/etc/magireco/madoka/ultimate/front.4bpp.smol");
+    const u16 gMonPalette_EtcMadokaUltimate[] = INCBIN_U16("graphics/pokemon/_add/etc/magireco/madoka/ultimate/normal.gbapal");
+    const u32 gMonBackPic_EtcMadokaUltimate[] = INCBIN_U32("graphics/pokemon/_add/etc/magireco/madoka/ultimate/back.4bpp.smol");
+    const u16 gMonShinyPalette_EtcMadokaUltimate[] = INCBIN_U16("graphics/pokemon/_add/etc/magireco/madoka/ultimate/shiny.gbapal");
+    const u8 gMonIcon_EtcMadokaUltimate[] = INCBIN_U8("graphics/pokemon/_add/etc/magireco/madoka/ultimate/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_EtcMadokaUltimate[] = INCBIN_U8("graphics/pokemon/_add/etc/dummy/footprint.1bpp");
+    const u8 gMonFootprint_EtcMadokaUltimate[] = INCBIN_U8("graphics/pokemon/_add/etc/magireco/madoka/ultimate/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-//    const u32 gObjectEventPic_EtcMadokaUltimate[] = INCBIN_COMP("graphics/pokemon/_add/etc/dummy/overworld.4bpp");
+//    const u32 gObjectEventPic_EtcMadokaUltimate[] = INCBIN_COMP("graphics/pokemon/_add/etc/magireco/madoka/ultimate/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-//    const u16 gOverworldPalette_EtcMadokaUltimate[] = INCBIN_U16("graphics/pokemon/_add/etc/dummy/overworld_normal.gbapal");
-//    const u16 gShinyOverworldPalette_EtcMadokaUltimate[] = INCBIN_U16("graphics/pokemon/_add/etc/dummy/overworld_shiny.gbapal");
+//    const u16 gOverworldPalette_EtcMadokaUltimate[] = INCBIN_U16("graphics/pokemon/_add/etc/magireco/madoka/ultimate/overworld_normal.gbapal");
+//    const u16 gShinyOverworldPalette_EtcMadokaUltimate[] = INCBIN_U16("graphics/pokemon/_add/etc/magireco/madoka/ultimate/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_EXTRA_GIFT
@@ -56492,37 +56492,37 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_EXTRA_GIFT
 
 #if P_FAMILY_EXTRA_GIFT
-    const u32 gMonFrontPic_EtcNonota[] = INCBIN_U32("graphics/pokemon/_add/etc/nobeta/nobeta/front.4bpp.smol");
-    const u16 gMonPalette_EtcNonota[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nobeta/normal.gbapal");
-    const u32 gMonBackPic_EtcNonota[] = INCBIN_U32("graphics/pokemon/_add/etc/nobeta/nobeta/back.4bpp.smol");
-    const u16 gMonShinyPalette_EtcNonota[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nobeta/shiny.gbapal");
-    const u8 gMonIcon_EtcNonota[] = INCBIN_U8("graphics/pokemon/_add/etc/nobeta/nobeta/icon.4bpp");
+    const u32 gMonFrontPic_EtcNonota[] = INCBIN_U32("graphics/pokemon/_add/etc/nobeta/nonota/front.4bpp.smol");
+    const u16 gMonPalette_EtcNonota[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nonota/normal.gbapal");
+    const u32 gMonBackPic_EtcNonota[] = INCBIN_U32("graphics/pokemon/_add/etc/nobeta/nonota/back.4bpp.smol");
+    const u16 gMonShinyPalette_EtcNonota[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nonota/shiny.gbapal");
+    const u8 gMonIcon_EtcNonota[] = INCBIN_U8("graphics/pokemon/_add/etc/nobeta/nonota/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_EtcNonota[] = INCBIN_U8("graphics/pokemon/_add/etc/nobeta/nobeta/footprint.1bpp");
+    const u8 gMonFootprint_EtcNonota[] = INCBIN_U8("graphics/pokemon/_add/etc/nobeta/nonota/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-//    const u32 gObjectEventPic_EtcNonota[] = INCBIN_COMP("graphics/pokemon/_add/etc/nobeta/nobeta/overworld.4bpp");
+//    const u32 gObjectEventPic_EtcNonota[] = INCBIN_COMP("graphics/pokemon/_add/etc/nobeta/nonota/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-//    const u16 gOverworldPalette_EtcNonota[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nobeta/overworld_normal.gbapal");
-//    const u16 gShinyOverworldPalette_EtcNonota[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nobeta/overworld_shiny.gbapal");
+//    const u16 gOverworldPalette_EtcNonota[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nonota/overworld_normal.gbapal");
+//    const u16 gShinyOverworldPalette_EtcNonota[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nonota/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_EXTRA_GIFT
 
 #if P_FAMILY_EXTRA_GIFT
-    const u32 gMonFrontPic_EtcNobeta[] = INCBIN_U32("graphics/pokemon/_add/etc/nobeta/nonota/front.4bpp.smol");
-    const u16 gMonPalette_EtcNobeta[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nonota/normal.gbapal");
-    const u32 gMonBackPic_EtcNobeta[] = INCBIN_U32("graphics/pokemon/_add/etc/nobeta/nonota/back.4bpp.smol");
-    const u16 gMonShinyPalette_EtcNobeta[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nonota/shiny.gbapal");
-    const u8 gMonIcon_EtcNobeta[] = INCBIN_U8("graphics/pokemon/_add/etc/nobeta/nonota/icon.4bpp");
+    const u32 gMonFrontPic_EtcNobeta[] = INCBIN_U32("graphics/pokemon/_add/etc/nobeta/nobeta/front.4bpp.smol");
+    const u16 gMonPalette_EtcNobeta[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nobeta/normal.gbapal");
+    const u32 gMonBackPic_EtcNobeta[] = INCBIN_U32("graphics/pokemon/_add/etc/nobeta/nobeta/back.4bpp.smol");
+    const u16 gMonShinyPalette_EtcNobeta[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nobeta/shiny.gbapal");
+    const u8 gMonIcon_EtcNobeta[] = INCBIN_U8("graphics/pokemon/_add/etc/nobeta/nobeta/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_EtcNobeta[] = INCBIN_U8("graphics/pokemon/_add/etc/nobeta/nonota/footprint.1bpp");
+    const u8 gMonFootprint_EtcNobeta[] = INCBIN_U8("graphics/pokemon/_add/etc/nobeta/nobeta/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-//    const u32 gObjectEventPic_EtcNobeta[] = INCBIN_COMP("graphics/pokemon/_add/etc/nobeta/nonota/overworld.4bpp");
+//    const u32 gObjectEventPic_EtcNobeta[] = INCBIN_COMP("graphics/pokemon/_add/etc/nobeta/nobeta/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-//    const u16 gOverworldPalette_EtcNobeta[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nonota/overworld_normal.gbapal");
-//    const u16 gShinyOverworldPalette_EtcNobeta[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nonota/overworld_shiny.gbapal");
+//    const u16 gOverworldPalette_EtcNobeta[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nobeta/overworld_normal.gbapal");
+//    const u16 gShinyOverworldPalette_EtcNobeta[] = INCBIN_U16("graphics/pokemon/_add/etc/nobeta/nobeta/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_EXTRA_GIFT

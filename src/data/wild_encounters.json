@@ -36656,62 +36656,62 @@
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_CELEBI"
+                "species": "SPECIES_MOE_VENUSAUR"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_MEW"
+                "species": "SPECIES_VENUSAUR"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ALTARIA"
+                "species": "SPECIES_ETC_FOXYRIA"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_LATIOS"
+                "species": "SPECIES_BGHS_MIKI_FLORA"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_BULBASAUR"
+                "species": "SPECIES_KEY_USHIO_NORMAL"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_JIRACHI"
+                "species": "SPECIES_YYYI_TAKASHIMA_YUUNA_NORMAL"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_RAYQUAZA"
+                "species": "SPECIES_ETC_DECADE_COMPLETE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_MEWTWO"
+                "species": "SPECIES_ETC_NOBETA"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_JIRACHI"
+                "species": "SPECIES_ETC_DIALGA_TH"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_RAYQUAZA"
+                "species": "SPECIES_TH_SANAE_BROKEN_RITE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_JIRACHI"
+                "species": "SPECIES_TH_SANAE_BROKEN_RITE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_RAYQUAZA"
+                "species": "SPECIES_TH_SANAE_BROKEN_RITE"
               }
             ]
           },

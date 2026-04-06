@@ -1916,7 +1916,7 @@ static enum CancelerResult CancelerNotFullyProtected(struct BattleCalcValues *cv
 
 static bool32 IsMoveParentalBondAffected(struct BattleCalcValues *cv)
 {
-    if ((cv->abilities[cv->battlerAtk] == ABILITY_PARENTAL_BOND || cv->abilities[cv->battlerAtk] == ABILITY_TWIN_BODY || cv->abilities[cv->battlerAtk] == ABILITY_SIBLINGS_BOND)
+    if (!(cv->abilities[cv->battlerAtk] == ABILITY_PARENTAL_BOND || cv->abilities[cv->battlerAtk] == ABILITY_TWIN_BODY || cv->abilities[cv->battlerAtk] == ABILITY_SIBLINGS_BOND)
      || gBattleStruct->numSpreadTargets > 1
      || IsMoveParentalBondBanned(cv->move)
      || GetMoveCategory(cv->move) == DAMAGE_CATEGORY_STATUS
@@ -1925,7 +1925,13 @@ static bool32 IsMoveParentalBondAffected(struct BattleCalcValues *cv)
      || GetActiveGimmick(cv->battlerAtk) == GIMMICK_Z_MOVE
      || (GetMoveEffect(cv->move) == EFFECT_PRESENT && gBattleStruct->presentBasePower == 0)
      || cv->move == MOVE_STRUGGLE)
-        return FALSE;
+    {
+        if (gFieldStatuses & STATUS_FIELD_UBW && IsSlicingMove(cv->move))
+            return TRUE;
+        else
+            return FALSE;
+    }
+
     return TRUE;
 }
 

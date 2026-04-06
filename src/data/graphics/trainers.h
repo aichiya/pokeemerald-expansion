@@ -1141,35 +1141,35 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_OldMan, gTrainerBackPicPalette_OldMan, sBackAnims_OldManPokedude),
     },
-    [TRAINER_PIC_BACK_TH_RENKO_BIG] =
+    [TRAINER_PIC_TH_RENKO_BIG] =
     {
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THRenkoBig, gTrainerBackPicPalette_THRenkoBig, sBackAnims_Hoenn),
     },
-    [TRAINER_PIC_BACK_TH_MARIBEL_BIG] =
+    [TRAINER_PIC_TH_MARIBEL_BIG] =
     {
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMaribelBig, gTrainerBackPicPalette_THMaribelBig, sBackAnims_Hoenn),
     },
-    [TRAINER_PIC_BACK_TH_RENKO_SMALL] =
+    [TRAINER_PIC_TH_RENKO_SMALL] =
     {
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THRenkoSmall, gTrainerBackPicPalette_THRenkoSmall, sBackAnims_Hoenn),
     },
-    [TRAINER_PIC_BACK_TH_MARIBEL_SMALL] =
+    [TRAINER_PIC_TH_MARIBEL_SMALL] =
     {
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMaribelSmall, gTrainerBackPicPalette_THMaribelSmall, sBackAnims_Hoenn),
     },
-    [TRAINER_PIC_BACK_TH_RENKO_CLASSIC] =
+    [TRAINER_PIC_TH_RENKO_CLASSIC] =
     {
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THRenkoClassic, gTrainerBackPicPalette_THRenkoClassic, sBackAnims_Hoenn),
     },
-    [TRAINER_PIC_BACK_TH_MARIBEL_CLASSIC] =
+    [TRAINER_PIC_TH_MARIBEL_CLASSIC] =
     {
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMaribelClassic, gTrainerBackPicPalette_THMaribelClassic, sBackAnims_Hoenn),
     },
-    [TRAINER_PIC_BACK_TH_REIMU] =
+    [TRAINER_PIC_TH_REIMU] =
     {
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THReimu, gTrainerBackPicPalette_THReimu, sBackAnims_Hoenn),
     },
-    [TRAINER_PIC_BACK_TH_MARISA] =
+    [TRAINER_PIC_TH_MARISA] =
     {
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMarisa, gTrainerBackPicPalette_THMarisa, sBackAnims_Hoenn),
     },

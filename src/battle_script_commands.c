@@ -3888,14 +3888,12 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
         }
 		else if (abilities[effectBattler] == ABILITY_PURE_WHITE)
 		{
-			// Inner Focus ALWAYS prevents flinching but only activates
-			// on a move that's supposed to flinch, like Fake Out
 			if (primary || certain)
 			{
 				gLastUsedAbility = ABILITY_PURE_WHITE;
 				gBattlerAbility = effectBattler;
 				RecordAbilityBattle(effectBattler, ABILITY_PURE_WHITE);
-				gBattlescriptCurrInstr = BattleScript_FlinchPrevention;
+                gBattlescriptCurrInstr = battleScript;
 			}
 			else
 			{

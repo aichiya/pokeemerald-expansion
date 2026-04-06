@@ -13759,7 +13759,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_SHAYLA ===
 Name: Miku
 Class: TRAINER_CLASS_0XFB
-Pic: TRAINER_PIC_FRONT_114
+Pic: TRAINER_PIC_114
 Gender: Female
 Music: Female
 Double Battle: No
@@ -16905,7 +16905,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_PLACEHOLDER_855 ===
 Name: Yuyuko
 Class: Rival
-Pic: TRAINER_PIC_FRONT_93
+Pic: TRAINER_PIC_93
 Gender: Female
 Music: Female
 Items: Full Restore / Full Restore / Full Restore / Full Restore
@@ -16943,7 +16943,7 @@ Shiny: Yes
 === TRAINER_PLACEHOLDER_856 ===
 Name: Yukari
 Class: Rival
-Pic: TRAINER_PIC_FRONT_94
+Pic: TRAINER_PIC_94
 Gender: Female
 Music: Female
 Items: Full Restore / Full Restore / Full Restore / Full Restore

@@ -1408,7 +1408,7 @@ static void UpdateSubmenuOneOptionValue(u8 taskId, bool8 increment)
     case 0:
         if (increment)
         {
-            if (data->animIdBack >= BACK_ANIM_SHAKE_GLOW_BLUE)
+            if (data->animIdBack >= BACK_ANIM_SHAKE_GLOW_BLACK)
                 data->animIdBack = 1;
             else
                 data->animIdBack += 1;
@@ -1416,7 +1416,7 @@ static void UpdateSubmenuOneOptionValue(u8 taskId, bool8 increment)
         else
         {
             if (data->animIdBack <= 1)
-                data->animIdBack = BACK_ANIM_SHAKE_GLOW_BLUE;
+                data->animIdBack = BACK_ANIM_SHAKE_GLOW_BLACK;
             else
                 data->animIdBack -= 1;
         }

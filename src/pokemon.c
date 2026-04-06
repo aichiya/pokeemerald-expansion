@@ -7091,11 +7091,22 @@ u16 GetBattleBGM(void)
         case FRANCHISE_ORIGIN_POKEMON:      // BODY_COLOR_RED
             return MUS_HG_VS_WILD;
         case FRANCHISE_ORIGIN_MOEMON:       // BODY_COLOR_BLUE
-            return MUS_PKMN_GSC_VS_WILD1;
+            if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES) == SPECIES_ETC_DIALGA_TH
+             || GetMonData(&gEnemyParty[0], MON_DATA_SPECIES) == SPECIES_ETC_PALKIA_TH)
+                return MUS_PKMN_DP_VS_DIALGA_PALKIA;
+            else if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES) == SPECIES_ETC_GIRATINA_TH)
+                return MUS_PKMN_PL_VS_GIRATINA;
+            else if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES) == SPECIES_ETC_ARCEUS_TH)
+                return MUS_HG_VS_ARCEUS;
+            else
+                return MUS_PKMN_GSC_VS_WILD1;
         case FRANCHISE_ORIGIN_YUYUYUI:      // BODY_COLOR_YELLOW
             return MUS_YYYI_BATTLE_04;
         case FRANCHISE_ORIGIN_TOUHOU:       // BODY_COLOR_GREEN
-            return MUS_THPPZGSK_366A_DOLL_JUDGEMENT;
+            if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES) == SPECIES_TH_SANAE_BROKEN_RITE)
+                return MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE_TEST;
+            else
+                return MUS_THPPZGSK_366A_DOLL_JUDGEMENT;
         case FRANCHISE_ORIGIN_SEIHOU:       // BODY_COLOR_BLACK
             return MUS_SH_VELVETMAIDEN;
         case FRANCHISE_ORIGIN_KEY:          // BODY_COLOR_BROWN
@@ -8367,7 +8378,7 @@ bool32 TryBoxMonFormChange(struct BoxPokemon *boxMon, enum FormChanges method)
 
 u16 SanitizeSpeciesId(enum Species species)
 {
-    assertf(species <= NUM_SPECIES && (species == SPECIES_NONE || IsSpeciesEnabled(species)), "invalid species: %d", species)
+    assertf(species <= 0xFFFF && (species == SPECIES_NONE || IsSpeciesEnabled(species)), "invalid species: %d", species)
     {
         return SPECIES_NONE;
     }

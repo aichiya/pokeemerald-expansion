@@ -1,6 +1,9 @@
 #include "constants/trainers.h"
 #include "data.h"
 
+const u32 gTrainerFrontPic_None[] = INCBIN_U32("graphics/trainers/front_pics/none.4bpp.smol");
+const u16 gTrainerPalette_None[] = INCBIN_U16("graphics/trainers/palettes/none.gbapal");
+
 const u32 gTrainerFrontPic_Hiker[] = INCBIN_U32("graphics/trainers/front_pics/hiker.4bpp.smol");
 const u16 gTrainerPalette_Hiker[] = INCBIN_U16("graphics/trainers/front_pics/hiker.gbapal");
 
@@ -466,6 +469,7 @@ const u16 gTrainerPalette_LadyFrlg[] = INCBIN_U16("graphics/trainers/palettes/la
 const u32 gTrainerFrontPic_PainterFrlg[] = INCBIN_U32("graphics/trainers/front_pics/painter_frlg.4bpp.smol");
 const u16 gTrainerPalette_PainterFrlg[] = INCBIN_U16("graphics/trainers/palettes/painter_frlg.gbapal");
 
+static const u8 gTrainerBackPic_None[] = INCBIN_U8("graphics/trainers/back_pics/none.4bpp");
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/mc_male1.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/mc_female1.4bpp");
 const u8 gTrainerBackPic_Red[] = INCBIN_U8("graphics/trainers/back_pics/red.4bpp");
@@ -986,341 +990,6 @@ const u16 gTrainerBackPicPalette_THMaribelClassic[] = INCBIN_U16("graphics/train
 const u16 gTrainerBackPicPalette_THReimu[] = INCBIN_U16("graphics/trainers/back_pics/th_reimu.gbapal");
 const u16 gTrainerBackPicPalette_THMarisa[] = INCBIN_U16("graphics/trainers/back_pics/th_marisa.gbapal");
 
-// The first two parameters invoke a front pic and palette by
-// calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_FRONT_HIKER), and
-// gTrainerFrontPic/gTrainerPalette pointers, (e.g "gTrainerFrontPic_Hiker" and "gTrainerPalette_Hiker").
-// The last three parameters control the X and Y coordinates and rotation of the mugshot on the screen.
-// They default to 0, 0, and 0x200 which are default values used by the majority of the game's trainer sprites.
-#define TRAINER_SPRITE(trainerPic, picFile, paletteFile, ...)                  \
-    [trainerPic] =                                                             \
-    {                                                                          \
-        .frontPic = {picFile, TRAINER_PIC_SIZE, trainerPic},                   \
-        .palette = {paletteFile, trainerPic},                                  \
-        .mugshotCoords = {DEFAULT(0, __VA_ARGS__), DEFAULT_2(0, __VA_ARGS__)}, \
-        .mugshotRotation = DEFAULT_3(0x200, __VA_ARGS__),                      \
-    }
-
-const struct TrainerSprite gTrainerSprites[] =
-{
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_HIKER, gTrainerFrontPic_Hiker, gTrainerPalette_Hiker),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_AQUA_GRUNT_M, gTrainerFrontPic_AquaGruntM, gTrainerPalette_AquaGruntM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEMON_BREEDER_F, gTrainerFrontPic_PokemonBreederF, gTrainerPalette_PokemonBreederF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_COOLTRAINER_M, gTrainerFrontPic_CoolTrainerM, gTrainerPalette_CoolTrainerM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BIRD_KEEPER, gTrainerFrontPic_BirdKeeper, gTrainerPalette_BirdKeeper),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_COLLECTOR, gTrainerFrontPic_Collector, gTrainerPalette_Collector),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_AQUA_GRUNT_F, gTrainerFrontPic_AquaGruntF, gTrainerPalette_AquaGruntF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SWIMMER_M, gTrainerFrontPic_SwimmerM, gTrainerPalette_SwimmerM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_MAGMA_GRUNT_M, gTrainerFrontPic_MagmaGruntM, gTrainerPalette_MagmaGruntM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_EXPERT_M, gTrainerFrontPic_ExpertM, gTrainerPalette_ExpertM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_AQUA_ADMIN_M, gTrainerFrontPic_AquaAdminM, gTrainerPalette_AquaAdminM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BLACK_BELT, gTrainerFrontPic_BlackBelt, gTrainerPalette_BlackBelt),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_AQUA_ADMIN_F, gTrainerFrontPic_AquaAdminF, gTrainerPalette_AquaAdminF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_AQUA_LEADER_ARCHIE, gTrainerFrontPic_AquaLeaderArchie, gTrainerPalette_AquaLeaderArchie),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_HEX_MANIAC, gTrainerFrontPic_HexManiac, gTrainerPalette_HexManiac),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_AROMA_LADY, gTrainerFrontPic_AromaLady, gTrainerPalette_AromaLady),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_RUIN_MANIAC, gTrainerFrontPic_RuinManiac, gTrainerPalette_RuinManiac),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_INTERVIEWER, gTrainerFrontPic_Interviewer, gTrainerPalette_Interviewer),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_TUBER_F, gTrainerFrontPic_TuberF, gTrainerPalette_TuberF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_TUBER_M, gTrainerFrontPic_TuberM, gTrainerPalette_TuberM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_COOLTRAINER_F, gTrainerFrontPic_CoolTrainerF, gTrainerPalette_CoolTrainerF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LADY, gTrainerFrontPic_Lady, gTrainerPalette_Lady),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BEAUTY, gTrainerFrontPic_Beauty, gTrainerPalette_Beauty),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_RICH_BOY, gTrainerFrontPic_RichBoy, gTrainerPalette_RichBoy),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_EXPERT_F, gTrainerFrontPic_ExpertF, gTrainerPalette_ExpertF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEMANIAC, gTrainerFrontPic_Pokemaniac, gTrainerPalette_Pokemaniac),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_MAGMA_GRUNT_F, gTrainerFrontPic_MagmaGruntF, gTrainerPalette_MagmaGruntF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_GUITARIST, gTrainerFrontPic_Guitarist, gTrainerPalette_Guitarist),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_KINDLER, gTrainerFrontPic_Kindler, gTrainerPalette_Kindler),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_CAMPER, gTrainerFrontPic_Camper, gTrainerPalette_Camper),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PICNICKER, gTrainerFrontPic_Picnicker, gTrainerPalette_Picnicker),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BUG_MANIAC, gTrainerFrontPic_BugManiac, gTrainerPalette_BugManiac),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEMON_BREEDER_M, gTrainerFrontPic_PokemonBreederM, gTrainerPalette_PokemonBreederM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PSYCHIC_M, gTrainerFrontPic_PsychicM, gTrainerPalette_PsychicM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PSYCHIC_F, gTrainerFrontPic_PsychicF, gTrainerPalette_PsychicF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_GENTLEMAN, gTrainerFrontPic_Gentleman, gTrainerPalette_Gentleman),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ELITE_FOUR_SIDNEY, gTrainerFrontPic_EliteFourSidney, gTrainerPalette_EliteFourSidney),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ELITE_FOUR_PHOEBE, gTrainerFrontPic_EliteFourPhoebe, gTrainerPalette_EliteFourPhoebe),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ELITE_FOUR_GLACIA, gTrainerFrontPic_EliteFourGlacia, gTrainerPalette_EliteFourGlacia, -4, 4, 0x1B0),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ELITE_FOUR_DRAKE, gTrainerFrontPic_EliteFourDrake, gTrainerPalette_EliteFourDrake, 0, 5, 0x1A0),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_ROXANNE, gTrainerFrontPic_LeaderRoxanne, gTrainerPalette_LeaderRoxanne),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_BRAWLY, gTrainerFrontPic_LeaderBrawly, gTrainerPalette_LeaderBrawly),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_WATTSON, gTrainerFrontPic_LeaderWattson, gTrainerPalette_LeaderWattson),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_FLANNERY, gTrainerFrontPic_LeaderFlannery, gTrainerPalette_LeaderFlannery),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_NORMAN, gTrainerFrontPic_LeaderNorman, gTrainerPalette_LeaderNorman),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_WINONA, gTrainerFrontPic_LeaderWinona, gTrainerPalette_LeaderWinona),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_TATE_AND_LIZA, gTrainerFrontPic_LeaderTateAndLiza, gTrainerPalette_LeaderTateAndLiza),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_JUAN, gTrainerFrontPic_LeaderJuan, gTrainerPalette_LeaderJuan),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SCHOOL_KID_M, gTrainerFrontPic_SchoolKidM, gTrainerPalette_SchoolKidM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SCHOOL_KID_F, gTrainerFrontPic_SchoolKidF, gTrainerPalette_SchoolKidF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SR_AND_JR, gTrainerFrontPic_SrAndJr, gTrainerPalette_SrAndJr),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEFAN_M, gTrainerFrontPic_PokefanM, gTrainerPalette_PokefanM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEFAN_F, gTrainerFrontPic_PokefanF, gTrainerPalette_PokefanF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_YOUNGSTER, gTrainerFrontPic_Youngster, gTrainerPalette_Youngster),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_CHAMPION_WALLACE, gTrainerFrontPic_ChampionWallace, gTrainerPalette_ChampionWallace, -8, 7, 0x188),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_FISHERMAN, gTrainerFrontPic_Fisherman, gTrainerPalette_Fisherman),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_M, gTrainerFrontPic_CyclingTriathleteM, gTrainerPalette_CyclingTriathleteM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_CYCLING_TRIATHLETE_F, gTrainerFrontPic_CyclingTriathleteF, gTrainerPalette_CyclingTriathleteF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_M, gTrainerFrontPic_RunningTriathleteM, gTrainerPalette_RunningTriathleteM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_RUNNING_TRIATHLETE_F, gTrainerFrontPic_RunningTriathleteF, gTrainerPalette_RunningTriathleteF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_M, gTrainerFrontPic_SwimmingTriathleteM, gTrainerPalette_SwimmingTriathleteM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SWIMMING_TRIATHLETE_F, gTrainerFrontPic_SwimmingTriathleteF, gTrainerPalette_SwimmingTriathleteF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_DRAGON_TAMER, gTrainerFrontPic_DragonTamer, gTrainerPalette_DragonTamer),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_NINJA_BOY, gTrainerFrontPic_NinjaBoy, gTrainerPalette_NinjaBoy),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BATTLE_GIRL, gTrainerFrontPic_BattleGirl, gTrainerPalette_BattleGirl),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PARASOL_LADY, gTrainerFrontPic_ParasolLady, gTrainerPalette_ParasolLady),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SWIMMER_F, gTrainerFrontPic_SwimmerF, gTrainerPalette_SwimmerF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_TWINS, gTrainerFrontPic_Twins, gTrainerPalette_Twins),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SAILOR, gTrainerFrontPic_Sailor, gTrainerPalette_Sailor),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_MAGMA_ADMIN, gTrainerFrontPic_MagmaAdmin, gTrainerPalette_MagmaAdmin),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_WALLY, gTrainerFrontPic_Wally, gTrainerPalette_Wally),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BRENDAN, gTrainerFrontPic_Brendan, gTrainerPalette_Brendan),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_MAY, gTrainerFrontPic_May, gTrainerPalette_May),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BUG_CATCHER, gTrainerFrontPic_BugCatcher, gTrainerPalette_BugCatcher),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEMON_RANGER_M, gTrainerFrontPic_PokemonRangerM, gTrainerPalette_PokemonRangerM),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEMON_RANGER_F, gTrainerFrontPic_PokemonRangerF, gTrainerPalette_PokemonRangerF),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_MAGMA_LEADER_MAXIE, gTrainerFrontPic_MagmaLeaderMaxie, gTrainerPalette_MagmaLeaderMaxie),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LASS, gTrainerFrontPic_Lass, gTrainerPalette_Lass),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_YOUNG_COUPLE, gTrainerFrontPic_YoungCouple, gTrainerPalette_YoungCouple),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_OLD_COUPLE, gTrainerFrontPic_OldCouple, gTrainerPalette_OldCouple),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SIS_AND_BRO, gTrainerFrontPic_SisAndBro, gTrainerPalette_SisAndBro),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_STEVEN, gTrainerFrontPic_Steven, gTrainerPalette_Steven, 0, 7, 0x188),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SALON_MAIDEN_ANABEL, gTrainerFrontPic_SalonMaidenAnabel, gTrainerPalette_SalonMaidenAnabel),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_DOME_ACE_TUCKER, gTrainerFrontPic_DomeAceTucker, gTrainerPalette_DomeAceTucker),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PALACE_MAVEN_SPENSER, gTrainerFrontPic_PalaceMavenSpenser, gTrainerPalette_PalaceMavenSpenser),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ARENA_TYCOON_GRETA, gTrainerFrontPic_ArenaTycoonGreta, gTrainerPalette_ArenaTycoonGreta),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_FACTORY_HEAD_NOLAND, gTrainerFrontPic_FactoryHeadNoland, gTrainerPalette_FactoryHeadNoland),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PIKE_QUEEN_LUCY, gTrainerFrontPic_PikeQueenLucy, gTrainerPalette_PikeQueenLucy),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PYRAMID_KING_BRANDON, gTrainerFrontPic_PyramidKingBrandon, gTrainerPalette_PyramidKingBrandon),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_RED, gTrainerFrontPic_Red, gTrainerPalette_Red),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEAF, gTrainerFrontPic_Leaf, gTrainerPalette_Leaf),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_RS_BRENDAN, gTrainerFrontPic_RubySapphireBrendan, gTrainerPalette_RubySapphireBrendan),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_RS_MAY, gTrainerFrontPic_RubySapphireMay, gTrainerPalette_RubySapphireMay),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_YOUNGSTER_FRLG, gTrainerFrontPic_YoungsterFrlg, gTrainerPalette_YoungsterFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BUG_CATCHER_FRLG, gTrainerFrontPic_BugCatcherFrlg, gTrainerPalette_BugCatcherFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LASS_FRLG, gTrainerFrontPic_LassFrlg, gTrainerPalette_LassFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SAILOR_FRLG, gTrainerFrontPic_SailorFrlg, gTrainerPalette_SailorFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_CAMPER_FRLG, gTrainerFrontPic_CamperFrlg, gTrainerPalette_CamperFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PICNICKER_FRLG, gTrainerFrontPic_PicnickerFrlg, gTrainerPalette_PicnickerFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEMANIAC_FRLG, gTrainerFrontPic_PokeManiacFrlg, gTrainerPalette_PokeManiacFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SUPER_NERD_FRLG, gTrainerFrontPic_SuperNerdFrlg, gTrainerPalette_SuperNerdFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_HIKER_FRLG, gTrainerFrontPic_HikerFrlg, gTrainerPalette_HikerFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BIKER_FRLG, gTrainerFrontPic_BikerFrlg, gTrainerPalette_BikerFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BURGLAR_FRLG, gTrainerFrontPic_BurglarFrlg, gTrainerPalette_BurglarFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ENGINEER_FRLG, gTrainerFrontPic_EngineerFrlg, gTrainerPalette_EngineerFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_FISHERMAN_FRLG, gTrainerFrontPic_FishermanFrlg, gTrainerPalette_FishermanFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SWIMMER_M_FRLG, gTrainerFrontPic_SwimmerMFrlg, gTrainerPalette_SwimmerMFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_CUE_BALL_FRLG, gTrainerFrontPic_CueBallFrlg, gTrainerPalette_CueBallFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_GAMER_FRLG, gTrainerFrontPic_GamerFrlg, gTrainerPalette_GamerFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BEAUTY_FRLG, gTrainerFrontPic_BeautyFrlg, gTrainerPalette_BeautyFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SWIMMER_F_FRLG, gTrainerFrontPic_SwimmerFFrlg, gTrainerPalette_SwimmerFFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PSYCHIC_M_FRLG, gTrainerFrontPic_PsychicMFrlg, gTrainerPalette_PsychicMFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ROCKER_FRLG, gTrainerFrontPic_RockerFrlg, gTrainerPalette_RockerFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_JUGGLER_FRLG, gTrainerFrontPic_JugglerFrlg, gTrainerPalette_JugglerFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_TAMER_FRLG, gTrainerFrontPic_TamerFrlg, gTrainerPalette_TamerFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BIRD_KEEPER_FRLG, gTrainerFrontPic_BirdKeeperFrlg, gTrainerPalette_BirdKeeperFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_BLACK_BELT_FRLG, gTrainerFrontPic_BlackBeltFrlg, gTrainerPalette_BlackBeltFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_RIVAL_EARLY_FRLG, gTrainerFrontPic_RivalEarlyFrlg, gTrainerPalette_RivalEarlyFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SCIENTIST_FRLG, gTrainerFrontPic_ScientistFrlg, gTrainerPalette_ScientistFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_GIOVANNI_FRLG, gTrainerFrontPic_LeaderGiovanniFrlg, gTrainerPalette_LeaderGiovanniFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ROCKET_GRUNT_M_FRLG, gTrainerFrontPic_RocketGruntMFrlg, gTrainerPalette_RocketGruntMFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_COOLTRAINER_M_FRLG, gTrainerFrontPic_CooltrainerMFrlg, gTrainerPalette_CooltrainerMFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_COOLTRAINER_F_FRLG, gTrainerFrontPic_CooltrainerFFrlg, gTrainerPalette_CooltrainerFFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ELITE_FOUR_LORELEI_FRLG, gTrainerFrontPic_EliteFourLoreleiFrlg, gTrainerPalette_EliteFourLoreleiFrlg, -8, 0),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ELITE_FOUR_BRUNO_FRLG, gTrainerFrontPic_EliteFourBrunoFrlg, gTrainerPalette_EliteFourBrunoFrlg, -10, 0),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ELITE_FOUR_AGATHA_FRLG, gTrainerFrontPic_EliteFourAgathaFrlg, gTrainerPalette_EliteFourAgathaFrlg, 0, 0),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ELITE_FOUR_LANCE_FRLG, gTrainerFrontPic_EliteFourLanceFrlg, gTrainerPalette_EliteFourLanceFrlg, -32, 0),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_BROCK_FRLG, gTrainerFrontPic_LeaderBrockFrlg, gTrainerPalette_LeaderBrockFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_MISTY_FRLG, gTrainerFrontPic_LeaderMistyFrlg, gTrainerPalette_LeaderMistyFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_LT_SURGE_FRLG, gTrainerFrontPic_LeaderLtSurgeFrlg, gTrainerPalette_LeaderLtSurgeFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_ERIKA_FRLG, gTrainerFrontPic_LeaderErikaFrlg, gTrainerPalette_LeaderErikaFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_KOGA_FRLG, gTrainerFrontPic_LeaderKogaFrlg, gTrainerPalette_LeaderKogaFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_BLAINE_FRLG, gTrainerFrontPic_LeaderBlaineFrlg, gTrainerPalette_LeaderBlaineFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LEADER_SABRINA_FRLG, gTrainerFrontPic_LeaderSabrinaFrlg, gTrainerPalette_LeaderSabrinaFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_GENTLEMAN_FRLG, gTrainerFrontPic_GentlemanFrlg, gTrainerPalette_GentlemanFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_RIVAL_LATE_FRLG, gTrainerFrontPic_RivalLateFrlg, gTrainerPalette_RivalLateFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_CHAMPION_RIVAL_FRLG, gTrainerFrontPic_ChampionRivalFrlg, gTrainerPalette_ChampionRivalFrlg, 0, 0),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_CHANNELER_FRLG, gTrainerFrontPic_ChannelerFrlg, gTrainerPalette_ChannelerFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_TWINS_FRLG, gTrainerFrontPic_TwinsFrlg, gTrainerPalette_TwinsFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_COOL_COUPLE_FRLG, gTrainerFrontPic_CoolCoupleFrlg, gTrainerPalette_CoolCoupleFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_YOUNG_COUPLE_FRLG, gTrainerFrontPic_YoungCoupleFrlg, gTrainerPalette_YoungCoupleFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_CRUSH_KIN_FRLG, gTrainerFrontPic_CrushKinFrlg, gTrainerPalette_CrushKinFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_SIS_AND_BRO_FRLG, gTrainerFrontPic_SisAndBroFrlg, gTrainerPalette_SisAndBroFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PROFESSOR_OAK_FRLG, gTrainerFrontPic_ProfessorOakFrlg, gTrainerPalette_ProfessorOakFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_ROCKET_GRUNT_F_FRLG, gTrainerFrontPic_RocketGruntFFrlg, gTrainerPalette_RocketGruntFFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PSYCHIC_F_FRLG, gTrainerFrontPic_PsychicFFrlg, gTrainerPalette_PsychicFFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_CRUSH_GIRL_FRLG, gTrainerFrontPic_CrushGirlFrlg, gTrainerPalette_CrushGirlFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_TUBER_F_FRLG, gTrainerFrontPic_TuberFFrlg, gTrainerPalette_TuberFFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEMON_BREEDER_FRLG, gTrainerFrontPic_PokemonBreederFrlg, gTrainerPalette_PokemonBreederFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEMON_RANGER_M_FRLG, gTrainerFrontPic_PokemonRangerMFrlg, gTrainerPalette_PokemonRangerMFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_POKEMON_RANGER_F_FRLG, gTrainerFrontPic_PokemonRangerFFrlg, gTrainerPalette_PokemonRangerFFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_AROMA_LADY_FRLG, gTrainerFrontPic_AromaLadyFrlg, gTrainerPalette_AromaLadyFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_RUIN_MANIAC_FRLG, gTrainerFrontPic_RuinManiacFrlg, gTrainerPalette_RuinManiacFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_LADY_FRLG, gTrainerFrontPic_LadyFrlg, gTrainerPalette_LadyFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_PAINTER_FRLG, gTrainerFrontPic_PainterFrlg, gTrainerPalette_PainterFrlg),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_93, gTrainerFrontPic_93, gTrainerPalette_93),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_94, gTrainerFrontPic_94, gTrainerPalette_94),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_95, gTrainerFrontPic_95, gTrainerPalette_95),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_96, gTrainerFrontPic_96, gTrainerPalette_96),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_97, gTrainerFrontPic_97, gTrainerPalette_97),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_98, gTrainerFrontPic_98, gTrainerPalette_98),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_99, gTrainerFrontPic_99, gTrainerPalette_99),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_100, gTrainerFrontPic_100, gTrainerPalette_100),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_101, gTrainerFrontPic_101, gTrainerPalette_101),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_102, gTrainerFrontPic_102, gTrainerPalette_102),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_103, gTrainerFrontPic_103, gTrainerPalette_103),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_104, gTrainerFrontPic_104, gTrainerPalette_104),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_105, gTrainerFrontPic_105, gTrainerPalette_105),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_106, gTrainerFrontPic_106, gTrainerPalette_106),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_107, gTrainerFrontPic_107, gTrainerPalette_107),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_108, gTrainerFrontPic_108, gTrainerPalette_108),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_109, gTrainerFrontPic_109, gTrainerPalette_109),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_110, gTrainerFrontPic_110, gTrainerPalette_110),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_111, gTrainerFrontPic_111, gTrainerPalette_111),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_112, gTrainerFrontPic_112, gTrainerPalette_112),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_113, gTrainerFrontPic_113, gTrainerPalette_113),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_114, gTrainerFrontPic_114, gTrainerPalette_114),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_115, gTrainerFrontPic_115, gTrainerPalette_115),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_116, gTrainerFrontPic_116, gTrainerPalette_116),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_117, gTrainerFrontPic_117, gTrainerPalette_117),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_118, gTrainerFrontPic_118, gTrainerPalette_118),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_119, gTrainerFrontPic_119, gTrainerPalette_119),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_120, gTrainerFrontPic_120, gTrainerPalette_120),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_121, gTrainerFrontPic_121, gTrainerPalette_121),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_122, gTrainerFrontPic_122, gTrainerPalette_122),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_123, gTrainerFrontPic_123, gTrainerPalette_123),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_124, gTrainerFrontPic_124, gTrainerPalette_124),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_125, gTrainerFrontPic_125, gTrainerPalette_125),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_126, gTrainerFrontPic_126, gTrainerPalette_126),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_127, gTrainerFrontPic_127, gTrainerPalette_127),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_128, gTrainerFrontPic_128, gTrainerPalette_128),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_129, gTrainerFrontPic_129, gTrainerPalette_129),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_130, gTrainerFrontPic_130, gTrainerPalette_130),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_131, gTrainerFrontPic_131, gTrainerPalette_131),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_132, gTrainerFrontPic_132, gTrainerPalette_132),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_133, gTrainerFrontPic_133, gTrainerPalette_133),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_134, gTrainerFrontPic_134, gTrainerPalette_134),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_135, gTrainerFrontPic_135, gTrainerPalette_135),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_136, gTrainerFrontPic_136, gTrainerPalette_136),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_137, gTrainerFrontPic_137, gTrainerPalette_137),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_138, gTrainerFrontPic_138, gTrainerPalette_138),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_139, gTrainerFrontPic_139, gTrainerPalette_139),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_140, gTrainerFrontPic_140, gTrainerPalette_140),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_141, gTrainerFrontPic_141, gTrainerPalette_141),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_142, gTrainerFrontPic_142, gTrainerPalette_142),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_143, gTrainerFrontPic_143, gTrainerPalette_143),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_144, gTrainerFrontPic_144, gTrainerPalette_144),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_145, gTrainerFrontPic_145, gTrainerPalette_145),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_146, gTrainerFrontPic_146, gTrainerPalette_146),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_147, gTrainerFrontPic_147, gTrainerPalette_147),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_148, gTrainerFrontPic_148, gTrainerPalette_148),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_149, gTrainerFrontPic_149, gTrainerPalette_149),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_150, gTrainerFrontPic_150, gTrainerPalette_150),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_151, gTrainerFrontPic_151, gTrainerPalette_151),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_152, gTrainerFrontPic_152, gTrainerPalette_152),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_153, gTrainerFrontPic_153, gTrainerPalette_153),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_154, gTrainerFrontPic_154, gTrainerPalette_154),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_155, gTrainerFrontPic_155, gTrainerPalette_155),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_156, gTrainerFrontPic_156, gTrainerPalette_156),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_157, gTrainerFrontPic_157, gTrainerPalette_157),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_158, gTrainerFrontPic_158, gTrainerPalette_158),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_159, gTrainerFrontPic_159, gTrainerPalette_159),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_160, gTrainerFrontPic_160, gTrainerPalette_160),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_161, gTrainerFrontPic_161, gTrainerPalette_161),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_162, gTrainerFrontPic_162, gTrainerPalette_162),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_163, gTrainerFrontPic_163, gTrainerPalette_163),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_164, gTrainerFrontPic_164, gTrainerPalette_164),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_165, gTrainerFrontPic_165, gTrainerPalette_165),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_166, gTrainerFrontPic_166, gTrainerPalette_166),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_167, gTrainerFrontPic_167, gTrainerPalette_167),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_168, gTrainerFrontPic_168, gTrainerPalette_168),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_169, gTrainerFrontPic_169, gTrainerPalette_169),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_170, gTrainerFrontPic_170, gTrainerPalette_170),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_171, gTrainerFrontPic_171, gTrainerPalette_171),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_172, gTrainerFrontPic_172, gTrainerPalette_172),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_173, gTrainerFrontPic_173, gTrainerPalette_173),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_174, gTrainerFrontPic_174, gTrainerPalette_174),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_175, gTrainerFrontPic_175, gTrainerPalette_175),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_176, gTrainerFrontPic_176, gTrainerPalette_176),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_177, gTrainerFrontPic_177, gTrainerPalette_177),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_178, gTrainerFrontPic_178, gTrainerPalette_178),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_179, gTrainerFrontPic_179, gTrainerPalette_179),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_180, gTrainerFrontPic_180, gTrainerPalette_180),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_181, gTrainerFrontPic_181, gTrainerPalette_181),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_182, gTrainerFrontPic_182, gTrainerPalette_182),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_183, gTrainerFrontPic_183, gTrainerPalette_183),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_184, gTrainerFrontPic_184, gTrainerPalette_184),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_185, gTrainerFrontPic_185, gTrainerPalette_185),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_186, gTrainerFrontPic_186, gTrainerPalette_186),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_187, gTrainerFrontPic_187, gTrainerPalette_187),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_188, gTrainerFrontPic_188, gTrainerPalette_188),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_189, gTrainerFrontPic_189, gTrainerPalette_189),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_190, gTrainerFrontPic_190, gTrainerPalette_190),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_191, gTrainerFrontPic_191, gTrainerPalette_191),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_192, gTrainerFrontPic_192, gTrainerPalette_192),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_193, gTrainerFrontPic_193, gTrainerPalette_193),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_194, gTrainerFrontPic_194, gTrainerPalette_194),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_195, gTrainerFrontPic_195, gTrainerPalette_195),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_196, gTrainerFrontPic_196, gTrainerPalette_196),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_197, gTrainerFrontPic_197, gTrainerPalette_197),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_198, gTrainerFrontPic_198, gTrainerPalette_198),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_199, gTrainerFrontPic_199, gTrainerPalette_199),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_200, gTrainerFrontPic_200, gTrainerPalette_200),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_201, gTrainerFrontPic_201, gTrainerPalette_201),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_202, gTrainerFrontPic_202, gTrainerPalette_202),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_203, gTrainerFrontPic_203, gTrainerPalette_203),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_204, gTrainerFrontPic_204, gTrainerPalette_204),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_205, gTrainerFrontPic_205, gTrainerPalette_205),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_206, gTrainerFrontPic_206, gTrainerPalette_206),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_207, gTrainerFrontPic_207, gTrainerPalette_207),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_208, gTrainerFrontPic_208, gTrainerPalette_208),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_209, gTrainerFrontPic_209, gTrainerPalette_209),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_210, gTrainerFrontPic_210, gTrainerPalette_210),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_211, gTrainerFrontPic_211, gTrainerPalette_211),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_212, gTrainerFrontPic_212, gTrainerPalette_212),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_213, gTrainerFrontPic_213, gTrainerPalette_213),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_214, gTrainerFrontPic_214, gTrainerPalette_214),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_215, gTrainerFrontPic_215, gTrainerPalette_215),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_216, gTrainerFrontPic_216, gTrainerPalette_216),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_217, gTrainerFrontPic_217, gTrainerPalette_217),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_218, gTrainerFrontPic_218, gTrainerPalette_218),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_219, gTrainerFrontPic_219, gTrainerPalette_219),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_220, gTrainerFrontPic_220, gTrainerPalette_220),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_221, gTrainerFrontPic_221, gTrainerPalette_221),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_222, gTrainerFrontPic_222, gTrainerPalette_222),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_223, gTrainerFrontPic_223, gTrainerPalette_223),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_224, gTrainerFrontPic_224, gTrainerPalette_224),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_225, gTrainerFrontPic_225, gTrainerPalette_225),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_226, gTrainerFrontPic_226, gTrainerPalette_226),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_227, gTrainerFrontPic_227, gTrainerPalette_227),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_228, gTrainerFrontPic_228, gTrainerPalette_228),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_229, gTrainerFrontPic_229, gTrainerPalette_229),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_230, gTrainerFrontPic_230, gTrainerPalette_230),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_231, gTrainerFrontPic_231, gTrainerPalette_231),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_232, gTrainerFrontPic_232, gTrainerPalette_232),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_233, gTrainerFrontPic_233, gTrainerPalette_233),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_234, gTrainerFrontPic_234, gTrainerPalette_234),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_235, gTrainerFrontPic_235, gTrainerPalette_235),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_236, gTrainerFrontPic_236, gTrainerPalette_236),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_237, gTrainerFrontPic_237, gTrainerPalette_237),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_238, gTrainerFrontPic_238, gTrainerPalette_238),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_239, gTrainerFrontPic_239, gTrainerPalette_239),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_240, gTrainerFrontPic_240, gTrainerPalette_240),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_241, gTrainerFrontPic_241, gTrainerPalette_241),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_242, gTrainerFrontPic_242, gTrainerPalette_242),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_243, gTrainerFrontPic_243, gTrainerPalette_243),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_244, gTrainerFrontPic_244, gTrainerPalette_244),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_245, gTrainerFrontPic_245, gTrainerPalette_245),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_246, gTrainerFrontPic_246, gTrainerPalette_246),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_247, gTrainerFrontPic_247, gTrainerPalette_247),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_248, gTrainerFrontPic_248, gTrainerPalette_248),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_249, gTrainerFrontPic_249, gTrainerPalette_249),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_250, gTrainerFrontPic_250, gTrainerPalette_250),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_251, gTrainerFrontPic_251, gTrainerPalette_251),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_252, gTrainerFrontPic_252, gTrainerPalette_252),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_253, gTrainerFrontPic_253, gTrainerPalette_253),
-    TRAINER_SPRITE(TRAINER_PIC_FRONT_254, gTrainerFrontPic_254, gTrainerPalette_254),
-};
-
 static const union AnimCmd sAnimCmd_Hoenn[] =
 {
     ANIMCMD_FRAME(0, 24),
@@ -1369,6 +1038,11 @@ static const union AnimCmd sAnimCmd_Point_HGSS_Red_Leaf[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd *const sBackAnims_None[] = {
+    sAnim_GeneralFrame0,
+    sAnim_GeneralFrame0
+};
+
 static const union AnimCmd *const sBackAnims_Hoenn[] =
 {
     sAnim_GeneralFrame3,
@@ -1389,33 +1063,1350 @@ const union AnimCmd *const sBackAnims_OldManPokedude[] = {
     sAnim_GeneralFrame0,
 };
 
-#define TRAINER_BACK_SPRITE(trainerPic, yOffset, sprite, pal, anim)                          \
-    [trainerPic] =                                                                           \
-    {                                                                                        \
-        .coordinates = {.size = 8, .y_offset = yOffset},                                     \
-        .backPic = {.data = sprite, .size = TRAINER_PIC_SIZE, .relativeFrames = TRUE},       \
-        .palette = {.data = pal, .tag = trainerPic},                                         \
-        .animation = anim,                                                                   \
-    }
+// The first two parameters invoke a front pic and palette by
+// calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
+// gTrainerFrontPic/gTrainerPalette pointers, (e.g "gTrainerFrontPic_Hiker" and "gTrainerPalette_Hiker").
+// The last three parameters control the X and Y coordinates and rotation of the mugshot on the screen.
+// They default to 0, 0, and 0x200 which are default values used by the majority of the game's trainer sprites.
+#define TRAINER_FRONT_PIC(picFile, paletteFile, ...)                           \
+    (const struct TrainerFrontPicInfo[])                                       \
+    {{                                                                         \
+        .imageData = picFile,                                                  \
+        .paletteData = paletteFile,                                            \
+        .mugshotCoords = {DEFAULT(0, __VA_ARGS__), DEFAULT_2(0, __VA_ARGS__)}, \
+        .mugshotRotation = DEFAULT_3(0x200, __VA_ARGS__),                      \
+    }}
 
-const struct TrainerBacksprite gTrainerBacksprites[] =
+#define TRAINER_BACK_PIC(yOffset, sprite, pal, anim)                                         \
+    (const struct TrainerBackPicInfo[])                                                      \
+    {{                                                                                       \
+        .coordinates = {.size = 8, .y_offset = yOffset},                                     \
+        .image = {.data = sprite, .size = TRAINER_PIC_SIZE, .relativeFrames = TRUE},         \
+        .paletteData = pal,                                                                  \
+        .animation = anim,                                                                   \
+    }}
+
+const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
 {
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_BRENDAN, 4, gTrainerBackPic_Brendan, gTrainerPalette_Brendan, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_MAY, 4, gTrainerBackPic_May, gTrainerPalette_May, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_RED, 5, gTrainerBackPic_Red, gTrainerBackPicPalette_Red, sBackAnims_Kanto),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_LEAF, 5, gTrainerBackPic_Leaf, gTrainerBackPicPalette_Leaf, sBackAnims_Kanto),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_RUBY_SAPPHIRE_BRENDAN, 4, gTrainerBackPic_RubySapphireBrendan, gTrainerPalette_RubySapphireBrendan, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_RUBY_SAPPHIRE_MAY, 4, gTrainerBackPic_RubySapphireMay, gTrainerPalette_RubySapphireMay, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_WALLY, 4, gTrainerBackPic_Wally, gTrainerPalette_Wally, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_STEVEN, 4, gTrainerBackPic_Steven, gTrainerPalette_Steven, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_POKEDUDE, 4, gTrainerBackPic_Pokedude, gTrainerBackPicPalette_Pokedude, sBackAnims_OldManPokedude),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_OLD_MAN, 4, gTrainerBackPic_OldMan, gTrainerBackPicPalette_OldMan, sBackAnims_OldManPokedude),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_TH_RENKO_BIG, 4, gTrainerBackPic_THRenkoBig, gTrainerBackPicPalette_THRenkoBig, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_TH_MARIBEL_BIG, 4, gTrainerBackPic_THMaribelBig, gTrainerBackPicPalette_THMaribelBig, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_TH_RENKO_SMALL, 4, gTrainerBackPic_THRenkoSmall, gTrainerBackPicPalette_THRenkoSmall, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_TH_MARIBEL_SMALL, 4, gTrainerBackPic_THMaribelSmall, gTrainerBackPicPalette_THMaribelSmall, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_TH_RENKO_CLASSIC, 4, gTrainerBackPic_THRenkoClassic, gTrainerBackPicPalette_THRenkoClassic, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_TH_MARIBEL_CLASSIC, 4, gTrainerBackPic_THMaribelClassic, gTrainerBackPicPalette_THMaribelClassic, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_TH_REIMU, 4, gTrainerBackPic_THReimu, gTrainerBackPicPalette_THReimu, sBackAnims_Hoenn),
-    TRAINER_BACK_SPRITE(TRAINER_PIC_BACK_TH_MARISA, 4, gTrainerBackPic_THMarisa, gTrainerBackPicPalette_THMarisa, sBackAnims_Hoenn),
+    [TRAINER_PIC_NONE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_None, gTrainerPalette_None),
+        .backPic = TRAINER_BACK_PIC(1, gTrainerBackPic_None, gTrainerPalette_None, sBackAnims_None),
+    },
+    [TRAINER_PIC_BRENDAN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Brendan, gTrainerPalette_Brendan),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_Brendan, gTrainerPalette_Brendan, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_MAY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_May, gTrainerPalette_May),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_May, gTrainerPalette_May, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_RED] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Red, gTrainerPalette_Red),
+        .backPic = TRAINER_BACK_PIC(5, gTrainerBackPic_Red, gTrainerBackPicPalette_Red, sBackAnims_Kanto),
+    },
+    [TRAINER_PIC_LEAF] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Leaf, gTrainerPalette_Leaf),
+        .backPic = TRAINER_BACK_PIC(5, gTrainerBackPic_Leaf, gTrainerBackPicPalette_Leaf, sBackAnims_Kanto),
+    },
+    [TRAINER_PIC_RS_BRENDAN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RubySapphireBrendan, gTrainerPalette_RubySapphireBrendan),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_RubySapphireBrendan, gTrainerPalette_RubySapphireBrendan, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_RS_MAY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RubySapphireMay, gTrainerPalette_RubySapphireMay),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_RubySapphireMay, gTrainerPalette_RubySapphireMay, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_WALLY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Wally, gTrainerPalette_Wally),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_Wally, gTrainerPalette_Wally, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_STEVEN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Steven, gTrainerPalette_Steven, 0, 7, 0x188),
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_Steven, gTrainerPalette_Steven, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_POKEDUDE] =
+    {
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_Pokedude, gTrainerBackPicPalette_Pokedude, sBackAnims_OldManPokedude),
+    },
+    [TRAINER_PIC_OLD_MAN] =
+    {
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_OldMan, gTrainerBackPicPalette_OldMan, sBackAnims_OldManPokedude),
+    },
+    [TRAINER_PIC_BACK_TH_RENKO_BIG] =
+    {
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THRenkoBig, gTrainerBackPicPalette_THRenkoBig, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_BACK_TH_MARIBEL_BIG] =
+    {
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMaribelBig, gTrainerBackPicPalette_THMaribelBig, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_BACK_TH_RENKO_SMALL] =
+    {
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THRenkoSmall, gTrainerBackPicPalette_THRenkoSmall, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_BACK_TH_MARIBEL_SMALL] =
+    {
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMaribelSmall, gTrainerBackPicPalette_THMaribelSmall, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_BACK_TH_RENKO_CLASSIC] =
+    {
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THRenkoClassic, gTrainerBackPicPalette_THRenkoClassic, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_BACK_TH_MARIBEL_CLASSIC] =
+    {
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMaribelClassic, gTrainerBackPicPalette_THMaribelClassic, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_BACK_TH_REIMU] =
+    {
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THReimu, gTrainerBackPicPalette_THReimu, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_BACK_TH_MARISA] =
+    {
+        .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMarisa, gTrainerBackPicPalette_THMarisa, sBackAnims_Hoenn),
+    },
+    [TRAINER_PIC_HIKER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Hiker, gTrainerPalette_Hiker),
+    },
+    [TRAINER_PIC_AQUA_GRUNT_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_AquaGruntM, gTrainerPalette_AquaGruntM),
+    },
+    [TRAINER_PIC_POKEMON_BREEDER_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokemonBreederF, gTrainerPalette_PokemonBreederF),
+    },
+    [TRAINER_PIC_COOLTRAINER_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CoolTrainerM, gTrainerPalette_CoolTrainerM),
+    },
+    [TRAINER_PIC_BIRD_KEEPER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BirdKeeper, gTrainerPalette_BirdKeeper),
+    },
+    [TRAINER_PIC_COLLECTOR] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Collector, gTrainerPalette_Collector),
+    },
+    [TRAINER_PIC_AQUA_GRUNT_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_AquaGruntF, gTrainerPalette_AquaGruntF),
+    },
+    [TRAINER_PIC_SWIMMER_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SwimmerM, gTrainerPalette_SwimmerM),
+    },
+    [TRAINER_PIC_MAGMA_GRUNT_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaGruntM, gTrainerPalette_MagmaGruntM),
+    },
+    [TRAINER_PIC_EXPERT_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ExpertM, gTrainerPalette_ExpertM),
+    },
+    [TRAINER_PIC_AQUA_ADMIN_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_AquaAdminM, gTrainerPalette_AquaAdminM),
+    },
+    [TRAINER_PIC_BLACK_BELT] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BlackBelt, gTrainerPalette_BlackBelt),
+    },
+    [TRAINER_PIC_AQUA_ADMIN_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_AquaAdminF, gTrainerPalette_AquaAdminF),
+    },
+    [TRAINER_PIC_AQUA_LEADER_ARCHIE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_AquaLeaderArchie, gTrainerPalette_AquaLeaderArchie),
+    },
+    [TRAINER_PIC_HEX_MANIAC] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_HexManiac, gTrainerPalette_HexManiac),
+    },
+    [TRAINER_PIC_AROMA_LADY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_AromaLady, gTrainerPalette_AromaLady),
+    },
+    [TRAINER_PIC_RUIN_MANIAC] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RuinManiac, gTrainerPalette_RuinManiac),
+    },
+    [TRAINER_PIC_INTERVIEWER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Interviewer, gTrainerPalette_Interviewer),
+    },
+    [TRAINER_PIC_TUBER_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_TuberF, gTrainerPalette_TuberF),
+    },
+    [TRAINER_PIC_TUBER_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_TuberM, gTrainerPalette_TuberM),
+    },
+    [TRAINER_PIC_COOLTRAINER_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CoolTrainerF, gTrainerPalette_CoolTrainerF),
+    },
+    [TRAINER_PIC_LADY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Lady, gTrainerPalette_Lady),
+    },
+    [TRAINER_PIC_BEAUTY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Beauty, gTrainerPalette_Beauty),
+    },
+    [TRAINER_PIC_RICH_BOY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RichBoy, gTrainerPalette_RichBoy),
+    },
+    [TRAINER_PIC_EXPERT_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ExpertF, gTrainerPalette_ExpertF),
+    },
+    [TRAINER_PIC_POKEMANIAC] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Pokemaniac, gTrainerPalette_Pokemaniac),
+    },
+    [TRAINER_PIC_MAGMA_GRUNT_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaGruntF, gTrainerPalette_MagmaGruntF),
+    },
+    [TRAINER_PIC_GUITARIST] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Guitarist, gTrainerPalette_Guitarist),
+    },
+    [TRAINER_PIC_KINDLER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Kindler, gTrainerPalette_Kindler),
+    },
+    [TRAINER_PIC_CAMPER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Camper, gTrainerPalette_Camper),
+    },
+    [TRAINER_PIC_PICNICKER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Picnicker, gTrainerPalette_Picnicker),
+    },
+    [TRAINER_PIC_BUG_MANIAC] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BugManiac, gTrainerPalette_BugManiac),
+    },
+    [TRAINER_PIC_POKEMON_BREEDER_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokemonBreederM, gTrainerPalette_PokemonBreederM),
+    },
+    [TRAINER_PIC_PSYCHIC_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PsychicM, gTrainerPalette_PsychicM),
+    },
+    [TRAINER_PIC_PSYCHIC_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PsychicF, gTrainerPalette_PsychicF),
+    },
+    [TRAINER_PIC_GENTLEMAN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Gentleman, gTrainerPalette_Gentleman),
+    },
+    [TRAINER_PIC_ELITE_FOUR_SIDNEY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EliteFourSidney, gTrainerPalette_EliteFourSidney),
+    },
+    [TRAINER_PIC_ELITE_FOUR_PHOEBE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EliteFourPhoebe, gTrainerPalette_EliteFourPhoebe),
+    },
+    [TRAINER_PIC_ELITE_FOUR_GLACIA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EliteFourGlacia, gTrainerPalette_EliteFourGlacia, -4, 4, 0x1B0),
+    },
+    [TRAINER_PIC_ELITE_FOUR_DRAKE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EliteFourDrake, gTrainerPalette_EliteFourDrake, 0, 5, 0x1A0),
+    },
+    [TRAINER_PIC_LEADER_ROXANNE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderRoxanne, gTrainerPalette_LeaderRoxanne),
+    },
+    [TRAINER_PIC_LEADER_BRAWLY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderBrawly, gTrainerPalette_LeaderBrawly),
+    },
+    [TRAINER_PIC_LEADER_WATTSON] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderWattson, gTrainerPalette_LeaderWattson),
+    },
+    [TRAINER_PIC_LEADER_FLANNERY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderFlannery, gTrainerPalette_LeaderFlannery),
+    },
+    [TRAINER_PIC_LEADER_NORMAN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderNorman, gTrainerPalette_LeaderNorman),
+    },
+    [TRAINER_PIC_LEADER_WINONA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderWinona, gTrainerPalette_LeaderWinona),
+    },
+    [TRAINER_PIC_LEADER_TATE_AND_LIZA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderTateAndLiza, gTrainerPalette_LeaderTateAndLiza),
+    },
+    [TRAINER_PIC_LEADER_JUAN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderJuan, gTrainerPalette_LeaderJuan),
+    },
+    [TRAINER_PIC_SCHOOL_KID_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SchoolKidM, gTrainerPalette_SchoolKidM),
+    },
+    [TRAINER_PIC_SCHOOL_KID_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SchoolKidF, gTrainerPalette_SchoolKidF),
+    },
+    [TRAINER_PIC_SR_AND_JR] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SrAndJr, gTrainerPalette_SrAndJr),
+    },
+    [TRAINER_PIC_POKEFAN_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokefanM, gTrainerPalette_PokefanM),
+    },
+    [TRAINER_PIC_POKEFAN_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokefanF, gTrainerPalette_PokefanF),
+    },
+    [TRAINER_PIC_YOUNGSTER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Youngster, gTrainerPalette_Youngster),
+    },
+    [TRAINER_PIC_CHAMPION_WALLACE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ChampionWallace, gTrainerPalette_ChampionWallace, -8, 7, 0x188),
+    },
+    [TRAINER_PIC_FISHERMAN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Fisherman, gTrainerPalette_Fisherman),
+    },
+    [TRAINER_PIC_CYCLING_TRIATHLETE_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CyclingTriathleteM, gTrainerPalette_CyclingTriathleteM),
+    },
+    [TRAINER_PIC_CYCLING_TRIATHLETE_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CyclingTriathleteF, gTrainerPalette_CyclingTriathleteF),
+    },
+    [TRAINER_PIC_RUNNING_TRIATHLETE_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RunningTriathleteM, gTrainerPalette_RunningTriathleteM),
+    },
+    [TRAINER_PIC_RUNNING_TRIATHLETE_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RunningTriathleteF, gTrainerPalette_RunningTriathleteF),
+    },
+    [TRAINER_PIC_SWIMMING_TRIATHLETE_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SwimmingTriathleteM, gTrainerPalette_SwimmingTriathleteM),
+    },
+    [TRAINER_PIC_SWIMMING_TRIATHLETE_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SwimmingTriathleteF, gTrainerPalette_SwimmingTriathleteF),
+    },
+    [TRAINER_PIC_DRAGON_TAMER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_DragonTamer, gTrainerPalette_DragonTamer),
+    },
+    [TRAINER_PIC_NINJA_BOY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_NinjaBoy, gTrainerPalette_NinjaBoy),
+    },
+    [TRAINER_PIC_BATTLE_GIRL] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BattleGirl, gTrainerPalette_BattleGirl),
+    },
+    [TRAINER_PIC_PARASOL_LADY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ParasolLady, gTrainerPalette_ParasolLady),
+    },
+    [TRAINER_PIC_SWIMMER_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SwimmerF, gTrainerPalette_SwimmerF),
+    },
+    [TRAINER_PIC_TWINS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Twins, gTrainerPalette_Twins),
+    },
+    [TRAINER_PIC_SAILOR] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Sailor, gTrainerPalette_Sailor),
+    },
+    [TRAINER_PIC_MAGMA_ADMIN] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaAdmin, gTrainerPalette_MagmaAdmin),
+    },
+    [TRAINER_PIC_BUG_CATCHER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BugCatcher, gTrainerPalette_BugCatcher),
+    },
+    [TRAINER_PIC_POKEMON_RANGER_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokemonRangerM, gTrainerPalette_PokemonRangerM),
+    },
+    [TRAINER_PIC_POKEMON_RANGER_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokemonRangerF, gTrainerPalette_PokemonRangerF),
+    },
+    [TRAINER_PIC_MAGMA_LEADER_MAXIE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_MagmaLeaderMaxie, gTrainerPalette_MagmaLeaderMaxie),
+    },
+    [TRAINER_PIC_LASS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Lass, gTrainerPalette_Lass),
+    },
+    [TRAINER_PIC_YOUNG_COUPLE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_YoungCouple, gTrainerPalette_YoungCouple),
+    },
+    [TRAINER_PIC_OLD_COUPLE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_OldCouple, gTrainerPalette_OldCouple),
+    },
+    [TRAINER_PIC_SIS_AND_BRO] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SisAndBro, gTrainerPalette_SisAndBro),
+    },
+    [TRAINER_PIC_SALON_MAIDEN_ANABEL] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SalonMaidenAnabel, gTrainerPalette_SalonMaidenAnabel),
+    },
+    [TRAINER_PIC_DOME_ACE_TUCKER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_DomeAceTucker, gTrainerPalette_DomeAceTucker),
+    },
+    [TRAINER_PIC_PALACE_MAVEN_SPENSER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PalaceMavenSpenser, gTrainerPalette_PalaceMavenSpenser),
+    },
+    [TRAINER_PIC_ARENA_TYCOON_GRETA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ArenaTycoonGreta, gTrainerPalette_ArenaTycoonGreta),
+    },
+    [TRAINER_PIC_FACTORY_HEAD_NOLAND] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_FactoryHeadNoland, gTrainerPalette_FactoryHeadNoland),
+    },
+    [TRAINER_PIC_PIKE_QUEEN_LUCY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PikeQueenLucy, gTrainerPalette_PikeQueenLucy),
+    },
+    [TRAINER_PIC_PYRAMID_KING_BRANDON] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PyramidKingBrandon, gTrainerPalette_PyramidKingBrandon),
+    },
+    [TRAINER_PIC_YOUNGSTER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_YoungsterFrlg, gTrainerPalette_YoungsterFrlg),
+    },
+    [TRAINER_PIC_BUG_CATCHER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BugCatcherFrlg, gTrainerPalette_BugCatcherFrlg),
+    },
+    [TRAINER_PIC_LASS_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LassFrlg, gTrainerPalette_LassFrlg),
+    },
+    [TRAINER_PIC_SAILOR_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SailorFrlg, gTrainerPalette_SailorFrlg),
+    },
+    [TRAINER_PIC_CAMPER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CamperFrlg, gTrainerPalette_CamperFrlg),
+    },
+    [TRAINER_PIC_PICNICKER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PicnickerFrlg, gTrainerPalette_PicnickerFrlg),
+    },
+    [TRAINER_PIC_POKEMANIAC_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokeManiacFrlg, gTrainerPalette_PokeManiacFrlg),
+    },
+    [TRAINER_PIC_SUPER_NERD_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SuperNerdFrlg, gTrainerPalette_SuperNerdFrlg),
+    },
+    [TRAINER_PIC_HIKER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_HikerFrlg, gTrainerPalette_HikerFrlg),
+    },
+    [TRAINER_PIC_BIKER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BikerFrlg, gTrainerPalette_BikerFrlg),
+    },
+    [TRAINER_PIC_BURGLAR_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BurglarFrlg, gTrainerPalette_BurglarFrlg),
+    },
+    [TRAINER_PIC_ENGINEER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EngineerFrlg, gTrainerPalette_EngineerFrlg),
+    },
+    [TRAINER_PIC_FISHERMAN_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_FishermanFrlg, gTrainerPalette_FishermanFrlg),
+    },
+    [TRAINER_PIC_SWIMMER_M_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SwimmerMFrlg, gTrainerPalette_SwimmerMFrlg),
+    },
+    [TRAINER_PIC_CUE_BALL_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CueBallFrlg, gTrainerPalette_CueBallFrlg),
+    },
+    [TRAINER_PIC_GAMER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_GamerFrlg, gTrainerPalette_GamerFrlg),
+    },
+    [TRAINER_PIC_BEAUTY_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BeautyFrlg, gTrainerPalette_BeautyFrlg),
+    },
+    [TRAINER_PIC_SWIMMER_F_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SwimmerFFrlg, gTrainerPalette_SwimmerFFrlg),
+    },
+    [TRAINER_PIC_PSYCHIC_M_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PsychicMFrlg, gTrainerPalette_PsychicMFrlg),
+    },
+    [TRAINER_PIC_ROCKER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RockerFrlg, gTrainerPalette_RockerFrlg),
+    },
+    [TRAINER_PIC_JUGGLER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_JugglerFrlg, gTrainerPalette_JugglerFrlg),
+    },
+    [TRAINER_PIC_TAMER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_TamerFrlg, gTrainerPalette_TamerFrlg),
+    },
+    [TRAINER_PIC_BIRD_KEEPER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BirdKeeperFrlg, gTrainerPalette_BirdKeeperFrlg),
+    },
+    [TRAINER_PIC_BLACK_BELT_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_BlackBeltFrlg, gTrainerPalette_BlackBeltFrlg),
+    },
+    [TRAINER_PIC_RIVAL_EARLY_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RivalEarlyFrlg, gTrainerPalette_RivalEarlyFrlg),
+    },
+    [TRAINER_PIC_SCIENTIST_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ScientistFrlg, gTrainerPalette_ScientistFrlg),
+    },
+    [TRAINER_PIC_LEADER_GIOVANNI_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderGiovanniFrlg, gTrainerPalette_LeaderGiovanniFrlg),
+    },
+    [TRAINER_PIC_ROCKET_GRUNT_M_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RocketGruntMFrlg, gTrainerPalette_RocketGruntMFrlg),
+    },
+    [TRAINER_PIC_COOLTRAINER_M_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CooltrainerMFrlg, gTrainerPalette_CooltrainerMFrlg),
+    },
+    [TRAINER_PIC_COOLTRAINER_F_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CooltrainerFFrlg, gTrainerPalette_CooltrainerFFrlg),
+    },
+    [TRAINER_PIC_ELITE_FOUR_LORELEI_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EliteFourLoreleiFrlg, gTrainerPalette_EliteFourLoreleiFrlg, -8, 0),
+    },
+    [TRAINER_PIC_ELITE_FOUR_BRUNO_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EliteFourBrunoFrlg, gTrainerPalette_EliteFourBrunoFrlg, -10, 0),
+    },
+    [TRAINER_PIC_ELITE_FOUR_AGATHA_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EliteFourAgathaFrlg, gTrainerPalette_EliteFourAgathaFrlg, 0, 0),
+    },
+    [TRAINER_PIC_ELITE_FOUR_LANCE_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EliteFourLanceFrlg, gTrainerPalette_EliteFourLanceFrlg, -32, 0),
+    },
+    [TRAINER_PIC_LEADER_BROCK_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderBrockFrlg, gTrainerPalette_LeaderBrockFrlg),
+    },
+    [TRAINER_PIC_LEADER_MISTY_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderMistyFrlg, gTrainerPalette_LeaderMistyFrlg),
+    },
+    [TRAINER_PIC_LEADER_LT_SURGE_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderLtSurgeFrlg, gTrainerPalette_LeaderLtSurgeFrlg),
+    },
+    [TRAINER_PIC_LEADER_ERIKA_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderErikaFrlg, gTrainerPalette_LeaderErikaFrlg),
+    },
+    [TRAINER_PIC_LEADER_KOGA_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderKogaFrlg, gTrainerPalette_LeaderKogaFrlg),
+    },
+    [TRAINER_PIC_LEADER_BLAINE_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderBlaineFrlg, gTrainerPalette_LeaderBlaineFrlg),
+    },
+    [TRAINER_PIC_LEADER_SABRINA_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LeaderSabrinaFrlg, gTrainerPalette_LeaderSabrinaFrlg),
+    },
+    [TRAINER_PIC_GENTLEMAN_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_GentlemanFrlg, gTrainerPalette_GentlemanFrlg),
+    },
+    [TRAINER_PIC_RIVAL_LATE_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RivalLateFrlg, gTrainerPalette_RivalLateFrlg),
+    },
+    [TRAINER_PIC_CHAMPION_RIVAL_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ChampionRivalFrlg, gTrainerPalette_ChampionRivalFrlg, 0, 0),
+    },
+    [TRAINER_PIC_CHANNELER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ChannelerFrlg, gTrainerPalette_ChannelerFrlg),
+    },
+    [TRAINER_PIC_TWINS_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_TwinsFrlg, gTrainerPalette_TwinsFrlg),
+    },
+    [TRAINER_PIC_COOL_COUPLE_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CoolCoupleFrlg, gTrainerPalette_CoolCoupleFrlg),
+    },
+    [TRAINER_PIC_YOUNG_COUPLE_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_YoungCoupleFrlg, gTrainerPalette_YoungCoupleFrlg),
+    },
+    [TRAINER_PIC_CRUSH_KIN_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CrushKinFrlg, gTrainerPalette_CrushKinFrlg),
+    },
+    [TRAINER_PIC_SIS_AND_BRO_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SisAndBroFrlg, gTrainerPalette_SisAndBroFrlg),
+    },
+    [TRAINER_PIC_PROFESSOR_OAK_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_ProfessorOakFrlg, gTrainerPalette_ProfessorOakFrlg),
+    },
+    [TRAINER_PIC_ROCKET_GRUNT_F_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RocketGruntFFrlg, gTrainerPalette_RocketGruntFFrlg),
+    },
+    [TRAINER_PIC_PSYCHIC_F_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PsychicFFrlg, gTrainerPalette_PsychicFFrlg),
+    },
+    [TRAINER_PIC_CRUSH_GIRL_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CrushGirlFrlg, gTrainerPalette_CrushGirlFrlg),
+    },
+    [TRAINER_PIC_TUBER_F_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_TuberFFrlg, gTrainerPalette_TuberFFrlg),
+    },
+    [TRAINER_PIC_POKEMON_BREEDER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokemonBreederFrlg, gTrainerPalette_PokemonBreederFrlg),
+    },
+    [TRAINER_PIC_POKEMON_RANGER_M_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokemonRangerMFrlg, gTrainerPalette_PokemonRangerMFrlg),
+    },
+    [TRAINER_PIC_POKEMON_RANGER_F_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PokemonRangerFFrlg, gTrainerPalette_PokemonRangerFFrlg),
+    },
+    [TRAINER_PIC_AROMA_LADY_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_AromaLadyFrlg, gTrainerPalette_AromaLadyFrlg),
+    },
+    [TRAINER_PIC_RUIN_MANIAC_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RuinManiacFrlg, gTrainerPalette_RuinManiacFrlg),
+    },
+    [TRAINER_PIC_LADY_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_LadyFrlg, gTrainerPalette_LadyFrlg),
+    },
+    [TRAINER_PIC_PAINTER_FRLG] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PainterFrlg, gTrainerPalette_PainterFrlg),
+    },
+    [TRAINER_PIC_93] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_93, gTrainerPalette_93),
+    },
+    [TRAINER_PIC_94] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_94, gTrainerPalette_94),
+    },
+    [TRAINER_PIC_95] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_95, gTrainerPalette_95),
+    },
+    [TRAINER_PIC_96] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_96, gTrainerPalette_96),
+    },
+    [TRAINER_PIC_97] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_97, gTrainerPalette_97),
+    },
+    [TRAINER_PIC_98] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_98, gTrainerPalette_98),
+    },
+    [TRAINER_PIC_99] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_99, gTrainerPalette_99),
+    },
+    [TRAINER_PIC_100] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_100, gTrainerPalette_100),
+    },
+    [TRAINER_PIC_101] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_101, gTrainerPalette_101),
+    },
+    [TRAINER_PIC_102] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_102, gTrainerPalette_102),
+    },
+    [TRAINER_PIC_103] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_103, gTrainerPalette_103),
+    },
+    [TRAINER_PIC_104] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_104, gTrainerPalette_104),
+    },
+    [TRAINER_PIC_105] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_105, gTrainerPalette_105),
+    },
+    [TRAINER_PIC_106] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_106, gTrainerPalette_106),
+    },
+    [TRAINER_PIC_107] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_107, gTrainerPalette_107),
+    },
+    [TRAINER_PIC_108] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_108, gTrainerPalette_108),
+    },
+    [TRAINER_PIC_109] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_109, gTrainerPalette_109),
+    },
+    [TRAINER_PIC_110] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_110, gTrainerPalette_110),
+    },
+    [TRAINER_PIC_111] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_111, gTrainerPalette_111),
+    },
+    [TRAINER_PIC_112] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_112, gTrainerPalette_112),
+    },
+    [TRAINER_PIC_113] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_113, gTrainerPalette_113),
+    },
+    [TRAINER_PIC_114] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_114, gTrainerPalette_114),
+    },
+    [TRAINER_PIC_115] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_115, gTrainerPalette_115),
+    },
+    [TRAINER_PIC_116] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_116, gTrainerPalette_116),
+    },
+    [TRAINER_PIC_117] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_117, gTrainerPalette_117),
+    },
+    [TRAINER_PIC_118] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_118, gTrainerPalette_118),
+    },
+    [TRAINER_PIC_119] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_119, gTrainerPalette_119),
+    },
+    [TRAINER_PIC_120] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_120, gTrainerPalette_120),
+    },
+    [TRAINER_PIC_121] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_121, gTrainerPalette_121),
+    },
+    [TRAINER_PIC_122] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_122, gTrainerPalette_122),
+    },
+    [TRAINER_PIC_123] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_123, gTrainerPalette_123),
+    },
+    [TRAINER_PIC_124] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_124, gTrainerPalette_124),
+    },
+    [TRAINER_PIC_125] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_125, gTrainerPalette_125),
+    },
+    [TRAINER_PIC_126] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_126, gTrainerPalette_126),
+    },
+    [TRAINER_PIC_127] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_127, gTrainerPalette_127),
+    },
+    [TRAINER_PIC_128] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_128, gTrainerPalette_128),
+    },
+    [TRAINER_PIC_129] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_129, gTrainerPalette_129),
+    },
+    [TRAINER_PIC_130] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_130, gTrainerPalette_130),
+    },
+    [TRAINER_PIC_131] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_131, gTrainerPalette_131),
+    },
+    [TRAINER_PIC_132] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_132, gTrainerPalette_132),
+    },
+    [TRAINER_PIC_133] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_133, gTrainerPalette_133),
+    },
+    [TRAINER_PIC_134] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_134, gTrainerPalette_134),
+    },
+    [TRAINER_PIC_135] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_135, gTrainerPalette_135),
+    },
+    [TRAINER_PIC_136] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_136, gTrainerPalette_136),
+    },
+    [TRAINER_PIC_137] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_137, gTrainerPalette_137),
+    },
+    [TRAINER_PIC_138] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_138, gTrainerPalette_138),
+    },
+    [TRAINER_PIC_139] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_139, gTrainerPalette_139),
+    },
+    [TRAINER_PIC_140] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_140, gTrainerPalette_140),
+    },
+    [TRAINER_PIC_141] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_141, gTrainerPalette_141),
+    },
+    [TRAINER_PIC_142] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_142, gTrainerPalette_142),
+    },
+    [TRAINER_PIC_143] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_143, gTrainerPalette_143),
+    },
+    [TRAINER_PIC_144] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_144, gTrainerPalette_144),
+    },
+    [TRAINER_PIC_145] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_145, gTrainerPalette_145),
+    },
+    [TRAINER_PIC_146] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_146, gTrainerPalette_146),
+    },
+    [TRAINER_PIC_147] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_147, gTrainerPalette_147),
+    },
+    [TRAINER_PIC_148] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_148, gTrainerPalette_148),
+    },
+    [TRAINER_PIC_149] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_149, gTrainerPalette_149),
+    },
+    [TRAINER_PIC_150] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_150, gTrainerPalette_150),
+    },
+    [TRAINER_PIC_151] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_151, gTrainerPalette_151),
+    },
+    [TRAINER_PIC_152] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_152, gTrainerPalette_152),
+    },
+    [TRAINER_PIC_153] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_153, gTrainerPalette_153),
+    },
+    [TRAINER_PIC_154] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_154, gTrainerPalette_154),
+    },
+    [TRAINER_PIC_155] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_155, gTrainerPalette_155),
+    },
+    [TRAINER_PIC_156] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_156, gTrainerPalette_156),
+    },
+    [TRAINER_PIC_157] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_157, gTrainerPalette_157),
+    },
+    [TRAINER_PIC_158] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_158, gTrainerPalette_158),
+    },
+    [TRAINER_PIC_159] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_159, gTrainerPalette_159),
+    },
+    [TRAINER_PIC_160] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_160, gTrainerPalette_160),
+    },
+    [TRAINER_PIC_161] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_161, gTrainerPalette_161),
+    },
+    [TRAINER_PIC_162] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_162, gTrainerPalette_162),
+    },
+    [TRAINER_PIC_163] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_163, gTrainerPalette_163),
+    },
+    [TRAINER_PIC_164] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_164, gTrainerPalette_164),
+    },
+    [TRAINER_PIC_165] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_165, gTrainerPalette_165),
+    },
+    [TRAINER_PIC_166] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_166, gTrainerPalette_166),
+    },
+    [TRAINER_PIC_167] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_167, gTrainerPalette_167),
+    },
+    [TRAINER_PIC_168] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_168, gTrainerPalette_168),
+    },
+    [TRAINER_PIC_169] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_169, gTrainerPalette_169),
+    },
+    [TRAINER_PIC_170] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_170, gTrainerPalette_170),
+    },
+    [TRAINER_PIC_171] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_171, gTrainerPalette_171),
+    },
+    [TRAINER_PIC_172] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_172, gTrainerPalette_172),
+    },
+    [TRAINER_PIC_173] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_173, gTrainerPalette_173),
+    },
+    [TRAINER_PIC_174] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_174, gTrainerPalette_174),
+    },
+    [TRAINER_PIC_175] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_175, gTrainerPalette_175),
+    },
+    [TRAINER_PIC_176] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_176, gTrainerPalette_176),
+    },
+    [TRAINER_PIC_177] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_177, gTrainerPalette_177),
+    },
+    [TRAINER_PIC_178] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_178, gTrainerPalette_178),
+    },
+    [TRAINER_PIC_179] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_179, gTrainerPalette_179),
+    },
+    [TRAINER_PIC_180] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_180, gTrainerPalette_180),
+    },
+    [TRAINER_PIC_181] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_181, gTrainerPalette_181),
+    },
+    [TRAINER_PIC_182] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_182, gTrainerPalette_182),
+    },
+    [TRAINER_PIC_183] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_183, gTrainerPalette_183),
+    },
+    [TRAINER_PIC_184] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_184, gTrainerPalette_184),
+    },
+    [TRAINER_PIC_185] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_185, gTrainerPalette_185),
+    },
+    [TRAINER_PIC_186] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_186, gTrainerPalette_186),
+    },
+    [TRAINER_PIC_187] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_187, gTrainerPalette_187),
+    },
+    [TRAINER_PIC_188] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_188, gTrainerPalette_188),
+    },
+    [TRAINER_PIC_189] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_189, gTrainerPalette_189),
+    },
+    [TRAINER_PIC_190] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_190, gTrainerPalette_190),
+    },
+    [TRAINER_PIC_191] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_191, gTrainerPalette_191),
+    },
+    [TRAINER_PIC_192] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_192, gTrainerPalette_192),
+    },
+    [TRAINER_PIC_193] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_193, gTrainerPalette_193),
+    },
+    [TRAINER_PIC_194] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_194, gTrainerPalette_194),
+    },
+    [TRAINER_PIC_195] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_195, gTrainerPalette_195),
+    },
+    [TRAINER_PIC_196] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_196, gTrainerPalette_196),
+    },
+    [TRAINER_PIC_197] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_197, gTrainerPalette_197),
+    },
+    [TRAINER_PIC_198] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_198, gTrainerPalette_198),
+    },
+    [TRAINER_PIC_199] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_199, gTrainerPalette_199),
+    },
+    [TRAINER_PIC_200] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_200, gTrainerPalette_200),
+    },
+    [TRAINER_PIC_201] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_201, gTrainerPalette_201),
+    },
+    [TRAINER_PIC_202] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_202, gTrainerPalette_202),
+    },
+    [TRAINER_PIC_203] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_203, gTrainerPalette_203),
+    },
+    [TRAINER_PIC_204] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_204, gTrainerPalette_204),
+    },
+    [TRAINER_PIC_205] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_205, gTrainerPalette_205),
+    },
+    [TRAINER_PIC_206] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_206, gTrainerPalette_206),
+    },
+    [TRAINER_PIC_207] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_207, gTrainerPalette_207),
+    },
+    [TRAINER_PIC_208] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_208, gTrainerPalette_208),
+    },
+    [TRAINER_PIC_209] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_209, gTrainerPalette_209),
+    },
+    [TRAINER_PIC_210] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_210, gTrainerPalette_210),
+    },
+    [TRAINER_PIC_211] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_211, gTrainerPalette_211),
+    },
+    [TRAINER_PIC_212] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_212, gTrainerPalette_212),
+    },
+    [TRAINER_PIC_213] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_213, gTrainerPalette_213),
+    },
+    [TRAINER_PIC_214] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_214, gTrainerPalette_214),
+    },
+    [TRAINER_PIC_215] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_215, gTrainerPalette_215),
+    },
+    [TRAINER_PIC_216] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_216, gTrainerPalette_216),
+    },
+    [TRAINER_PIC_217] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_217, gTrainerPalette_217),
+    },
+    [TRAINER_PIC_218] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_218, gTrainerPalette_218),
+    },
+    [TRAINER_PIC_219] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_219, gTrainerPalette_219),
+    },
+    [TRAINER_PIC_220] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_220, gTrainerPalette_220),
+    },
+    [TRAINER_PIC_221] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_221, gTrainerPalette_221),
+    },
+    [TRAINER_PIC_222] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_222, gTrainerPalette_222),
+    },
+    [TRAINER_PIC_223] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_223, gTrainerPalette_223),
+    },
+    [TRAINER_PIC_224] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_224, gTrainerPalette_224),
+    },
+    [TRAINER_PIC_225] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_225, gTrainerPalette_225),
+    },
+    [TRAINER_PIC_226] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_226, gTrainerPalette_226),
+    },
+    [TRAINER_PIC_227] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_227, gTrainerPalette_227),
+    },
+    [TRAINER_PIC_228] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_228, gTrainerPalette_228),
+    },
+    [TRAINER_PIC_229] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_229, gTrainerPalette_229),
+    },
+    [TRAINER_PIC_230] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_230, gTrainerPalette_230),
+    },
+    [TRAINER_PIC_231] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_231, gTrainerPalette_231),
+    },
+    [TRAINER_PIC_232] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_232, gTrainerPalette_232),
+    },
+    [TRAINER_PIC_233] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_233, gTrainerPalette_233),
+    },
+    [TRAINER_PIC_234] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_234, gTrainerPalette_234),
+    },
+    [TRAINER_PIC_235] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_235, gTrainerPalette_235),
+    },
+    [TRAINER_PIC_236] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_236, gTrainerPalette_236),
+    },
+    [TRAINER_PIC_237] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_237, gTrainerPalette_237),
+    },
+    [TRAINER_PIC_238] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_238, gTrainerPalette_238),
+    },
+    [TRAINER_PIC_239] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_239, gTrainerPalette_239),
+    },
+    [TRAINER_PIC_240] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_240, gTrainerPalette_240),
+    },
+    [TRAINER_PIC_241] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_241, gTrainerPalette_241),
+    },
+    [TRAINER_PIC_242] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_242, gTrainerPalette_242),
+    },
+    [TRAINER_PIC_243] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_243, gTrainerPalette_243),
+    },
+    [TRAINER_PIC_244] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_244, gTrainerPalette_244),
+    },
+    [TRAINER_PIC_245] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_245, gTrainerPalette_245),
+    },
+    [TRAINER_PIC_246] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_246, gTrainerPalette_246),
+    },
+    [TRAINER_PIC_247] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_247, gTrainerPalette_247),
+    },
+    [TRAINER_PIC_248] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_248, gTrainerPalette_248),
+    },
+    [TRAINER_PIC_249] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_249, gTrainerPalette_249),
+    },
+    [TRAINER_PIC_250] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_250, gTrainerPalette_250),
+    },
+    [TRAINER_PIC_251] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_251, gTrainerPalette_251),
+    },
+    [TRAINER_PIC_252] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_252, gTrainerPalette_252),
+    },
+    [TRAINER_PIC_253] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_253, gTrainerPalette_253),
+    },
+    [TRAINER_PIC_254] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_254, gTrainerPalette_254),
+    },
 };

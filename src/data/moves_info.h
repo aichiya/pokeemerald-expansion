@@ -26417,7 +26417,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_POWER_FORTISSIMO] =  // To do
     {
-        .name = COMPOUND_STRING("Hyper Voice"),
+        .name = COMPOUND_STRING("Power Fortissimo"),
         .description = COMPOUND_STRING(
             "Sound-powered impact that\n"
             "may flinch the target."),
@@ -26440,6 +26440,38 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_Superpower,
+    },
+
+    [MOVE_YUUSHA_PUNCH] =  // edited desc, effect
+    {
+        .name = COMPOUND_STRING("Yuusha Punch"),
+        .description = COMPOUND_STRING(
+            "May confuse and burn the.\n"
+            "foe. Can't use repeatedly."),
+        .effect = EFFECT_HIT,
+        .power = 140,
+        .type = TYPE_NEW_DREAM,
+        .accuracy = 100,
+        .pp = 5,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .punchingMove = TRUE,
+        .cantUseTwice = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_CONFUSION,
+            .chance = 30,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_FOCUS_ENERGY, COMBO_STARTER_MIND_READER},
+        .battleAnimScript = gBattleAnimMove_DynamicPunch,
     },
 
 // ============= Start Shadow Moves ===================

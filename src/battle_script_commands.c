@@ -15583,11 +15583,13 @@ void BS_TransformDataExecutionDecade(void)
     NATIVE_ARGS();
 
     struct DamageContext ctx;
+    enum Ability abilityAtk = GetBattlerAbility(gBattlerAttacker);
+    enum Ability abilityDef = GetBattlerAbility(gBattlerTarget);
 
     u32 i = 0;
     s32 j = 0;
     u16 moveUsed = MOVE_UNAVAILABLE;
-    u16 highestDamage = 0;
+    u32 highestDamage = 0;
     s32 calcDamage;
 
     ctx.battlerAtk = gBattlerAttacker;
@@ -15597,6 +15599,13 @@ void BS_TransformDataExecutionDecade(void)
     ctx.isCrit = FALSE;
     ctx.fixedBasePower = 0;
 
+    if (abilityAtk == ABILITY_FALSE_EXISTENCE && abilityDef != ABILITY_FALSE_EXISTENCE)
+        highestDamage = 0xFFFFFFFF;
+    else if (abilityAtk != ABILITY_FALSE_EXISTENCE && abilityDef == ABILITY_FALSE_EXISTENCE)
+        highestDamage = 0xFFFFFFFF;
+    else
+        highestDamage = 0;
+
     // Try to look for a move that deals the most damage with almost everything in mind
     for (i = 0; i < ARRAY_COUNT(sTransformationDCDMockUpMoves); i++)
     {
@@ -15604,13 +15613,46 @@ void BS_TransformDataExecutionDecade(void)
         ctx.moveType = CheckDynamicMoveType(GetBattlerMon(ctx.battlerAtk), ctx.move, ctx.battlerAtk, MON_IN_BATTLE);
         calcDamage = CalculateMoveDamage(&ctx);
 
-        if (CanAbilityAbsorbMove(&ctx))
-            calcDamage = 0;
-
-        if (calcDamage > highestDamage)
+        if (abilityAtk == ABILITY_FALSE_EXISTENCE && abilityDef != ABILITY_FALSE_EXISTENCE)
         {
-            moveUsed = ctx.move;
-            highestDamage = calcDamage;
+//            if (ctx.move == MOVE_MOCKUP_PHYSICAL_MYSTERY || ctx.move == MOVE_MOCKUP_SPECIAL_MYSTERY)
+//                calcDamage = 0xFFFF;
+
+            if (CanAbilityAbsorbMove(&ctx))
+                calcDamage = 0xFFFFFFFF;
+            
+            if (calcDamage < highestDamage)
+            {
+                moveUsed = ctx.move;
+                highestDamage = calcDamage;
+            }
+        }
+        else if (abilityAtk != ABILITY_FALSE_EXISTENCE && abilityDef == ABILITY_FALSE_EXISTENCE)
+        {
+//            if (ctx.move == MOVE_MOCKUP_PHYSICAL_MYSTERY || ctx.move == MOVE_MOCKUP_SPECIAL_MYSTERY)
+//                calcDamage = 0xFFFF;
+
+            if (CanAbilityAbsorbMove(&ctx))
+                calcDamage = 0xFFFFFFFF;
+            
+            if (calcDamage < highestDamage)
+            {
+                moveUsed = ctx.move;
+                highestDamage = calcDamage;
+            }
+        }
+        else
+        {
+            highestDamage = 0;
+
+            if (CanAbilityAbsorbMove(&ctx))
+                calcDamage = 0;
+
+            if (calcDamage > highestDamage)
+            {
+                moveUsed = ctx.move;
+                highestDamage = calcDamage;
+            }
         }
     }
 
@@ -15642,7 +15684,7 @@ void BS_TransformDataExecutionDecade(void)
 
             if (gCurrentMove == MOVE_FLUFFICATION)
             {
-                speciesBuffer = SPECIES_MAGIKARP;
+                speciesBuffer = SPECIES_TH_KEDAMA_NORMAL;
                 gBattleMons[gBattlerTarget].volatiles.transformationDCDTemp = speciesBuffer;
                 currentLevel = gBattleMons[gBattlerTarget].level;
                 
@@ -15652,11 +15694,11 @@ void BS_TransformDataExecutionDecade(void)
                 ivSpDef = gBattleMons[gBattlerTarget].spAttackIV;
                 ivSpd = gBattleMons[gBattlerTarget].spDefenseIV;
                 
-                baseAtk = 50;
-                baseDef = 35;
-                baseSpAtk = 20;
-                baseSpDef = 30;
-                baseSpd = 60;
+                baseAtk = gSpeciesInfo[speciesBuffer].baseAttack;
+                baseDef = gSpeciesInfo[speciesBuffer].baseDefense;
+                baseSpAtk = gSpeciesInfo[speciesBuffer].baseSpAttack;
+                baseSpDef = gSpeciesInfo[speciesBuffer].baseSpDefense;
+                baseSpd = gSpeciesInfo[speciesBuffer].baseSpeed;
 
                 calcAtk = (((2 * baseAtk + ivAtk) * currentLevel) / 100) + 5;
                 calcDef = (((2 * baseDef + ivDef) * currentLevel) / 100) + 5;
@@ -15683,15 +15725,15 @@ void BS_TransformDataExecutionDecade(void)
                 gBattleMons[gBattlerTarget].speed = calcSpd;
                 gBattleMons[gBattlerTarget].spAttack = calcSpAtk;
                 gBattleMons[gBattlerTarget].spDefense = calcSpDef;
-                gBattleMons[gBattlerTarget].moves[0] = MOVE_NONE;
+                gBattleMons[gBattlerTarget].moves[0] = MOVE_SPLASH;
                 gBattleMons[gBattlerTarget].moves[1] = MOVE_NONE;
                 gBattleMons[gBattlerTarget].moves[2] = MOVE_NONE;
                 gBattleMons[gBattlerTarget].moves[3] = MOVE_NONE;
-                gBattleMons[gBattlerTarget].ability = ABILITY_LIMBER;
-                gBattleMons[gBattlerTarget].types[0] = TYPE_NEW_NATURE;
-                gBattleMons[gBattlerTarget].types[1] = TYPE_NEW_ELECTRIC;
+                gBattleMons[gBattlerTarget].ability = GetAbilityBySpecies(speciesBuffer, gBattleMons[gBattlerTarget].abilityNum);
+                gBattleMons[gBattlerTarget].types[0] = gSpeciesInfo[speciesBuffer].types[0];
+                gBattleMons[gBattlerTarget].types[1] = gSpeciesInfo[speciesBuffer].types[1];
                 gBattleMons[gBattlerTarget].types[2] = TYPE_MYSTERY;
-                gBattleMons[gBattlerTarget].volatiles.overwrittenAbility = ABILITY_LIMBER;
+                gBattleMons[gBattlerTarget].volatiles.overwrittenAbility = GetAbilityBySpecies(speciesBuffer, gBattleMons[gBattlerTarget].abilityNum);
 
                 for (j = 0; i < MAX_MON_MOVES; j++)
                 {
@@ -15723,36 +15765,60 @@ void BS_TransformDataExecutionDecade(void)
                 switch (moveUsed)
                 {
                     case MOVE_MOCKUP_PHYSICAL_ILLUSION:
+                    {
+                        speciesBuffer = SPECIES_PC_CURE_ECHO_NORMAL;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_EXTREME_SPEED;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_PROTECT;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_SACRED_FIRE;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_HYPER_VOICE;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_ILLUSION:
                     {
-                        speciesBuffer = SPECIES_JIRACHI;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_DRAGON_PULSE;
+                        speciesBuffer = SPECIES_KEY_USHIO_ILLUSIONARY;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_TERA_STARSTORM;
                         gBattleMons[gBattlerAttacker].moves[1] = MOVE_PROTECT;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_PSYCHIC;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_THUNDERBOLT;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_DRACO_METEOR;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_ICE_BEAM;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_DREAM:
+                    {
+                        speciesBuffer = SPECIES_YYYI_YUUKI_YUUNA_DAIMANKAI;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_YUUSHA_PUNCH;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_DIMENSION_KICK;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_SACRED_FIRE;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_PROTECT;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_DREAM:
                     {
-                        speciesBuffer = SPECIES_KELDEO;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_AURA_SPHERE;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_SECRET_SWORD;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_SCALD;
+                        speciesBuffer = SPECIES_TH_YUUKA_REMIND_R_TECH;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_TWIN_SPARK;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ENERGY_BALL;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_CLASSIC_FLAMETHROWER;
                         gBattleMons[gBattlerAttacker].moves[3] = MOVE_PROTECT;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_FLYING:
-                    case MOVE_MOCKUP_SPECIAL_FLYING:
                     {
-                        speciesBuffer = SPECIES_LUGIA_SHADOW;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_FEATHER_DANCE;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_AEROBLAST;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_CALM_MIND;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_SCALD;
+                        speciesBuffer = SPECIES_MOE_AERODACTYL_MEGA;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_BRAVE_BIRD;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ROCK_THROW;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_TAILWIND;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_IRON_HEAD;
                         break;
                     }
-                    case MOVE_MOCKUP_PHYSICAL_MIASMA:
+                    case MOVE_MOCKUP_SPECIAL_FLYING:
+                    {
+                        speciesBuffer = SPECIES_ETC_VALKYRIE;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_OBLIVION_WING;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_PHOTON_GEYSER;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_ODOR_SLEUTH;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_AEROBLAST;
+                        break;
+                    }
+                    case MOVE_MOCKUP_PHYSICAL_MIASMA: // to do
                     case MOVE_MOCKUP_SPECIAL_MIASMA:
                     {
                         speciesBuffer = SPECIES_ETERNATUS;

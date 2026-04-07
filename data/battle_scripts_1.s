@@ -7926,8 +7926,6 @@ BattleScript_AttackerAbilityStatRaiseRestoreAttacker::
 	restoreattacker
 	return
 
-@ Check again - Start
-
 BattleScript_AttackerAbilityStatRaiseEnd2::
 	call BattleScript_AttackerAbilityStatRaise
 	restoreattacker
@@ -7941,8 +7939,6 @@ BattleScript_AttackerAbilityStatDrop::
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_AttackerAbilityStatDrop_End:
 	return
-
-@ Check again - End
 
 BattleScript_AttackerAbilityStatDropEnd2::
 	call BattleScript_AttackerAbilityStatDrop

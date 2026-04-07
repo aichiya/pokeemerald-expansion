@@ -3476,7 +3476,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     SaveBattlerAttacker(gBattlerAttacker);
                     gBattlerAttacker = battler;
                     PREPARE_STAT_BUFFER(gBattleTextBuff1, statId);
-                    BattleScriptCall(BattleScript_AttackerAbilityStatRaiseEnd3);
+                    BattleScriptCall(BattleScript_AttackerAbilityStatRaiseRestoreAttacker);
                     effect++;
                 }
             }
@@ -4402,7 +4402,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                  && !gBattleMons[battler].volatiles.healBlock)
                 {
                     SetHealAmount(battler, GetNonDynamaxMaxHP(battler) / 8);
-                    BattleScriptExecute(BattleScript_RainDishActivates);
+                    BattleScriptExecute(BattleScript_AbilityHpHeal);
                     effect++;
                 }
                 break;

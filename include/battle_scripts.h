@@ -256,6 +256,7 @@ extern const u8 BattleScript_MoveStatDrain[];
 extern const u8 BattleScript_TargetsStatWasMaxedOut[];
 extern const u8 BattleScript_AttackerAbilityStatRaise[];
 extern const u8 BattleScript_AttackerAbilityStatRaiseRestoreAttacker[];
+extern const u8 BattleScript_AttackerAbilityStatRaiseEnd2[];
 extern const u8 BattleScript_PoisonHealActivates[];
 extern const u8 BattleScript_BadDreamsActivates[];
 extern const u8 BattleScript_SwitchInAbilityMsg[];

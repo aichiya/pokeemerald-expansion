@@ -119,7 +119,7 @@ bool32 InBattleChoosingMoves();
 bool32 InBattleRunningActions();
 s32 Factorial(s32 n);
 
-extern struct MultiPartnerMenuPokemon gMultiPartnerParty[MULTI_PARTY_SIZE];
+extern struct MultiPartnerMenuPokemon *gMultiPartnerParty;
 
 extern const struct SpriteTemplate gUnusedBattleInitSprite;
 extern const struct OamData gOamData_BattleSpriteOpponentSide;

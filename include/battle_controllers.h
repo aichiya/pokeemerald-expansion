@@ -494,6 +494,10 @@ void BtlCtrl_RemoveVoiceoverMessageFrame(void);
 bool32 ShouldBattleRestrictionsApply(enum BattlerId battler);
 void FreeShinyStars(void);
 enum BattleTrainer GetBattlerTrainer(enum BattlerId battler);
+enum BattleTrainer GetTrainerFromBattlePosition(enum BattlerPosition position);
+bool32 BattleSideHasTwoTrainers(enum BattleSide side);
+bool32 BattlersShareParty(enum BattlerId battler1, enum BattlerId battler2);
+bool32 TrainerHasParty(enum BattleTrainer trainer);
 
 // Battle Speed Up (Credit to Pokabbie)
 u32 Rogue_GetBattleSpeedScale(bool32 forHealthbar);

@@ -81,7 +81,6 @@
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
-#include "constants/rgb.h"
 
 STATIC_ASSERT((B_FLAG_FOLLOWERS_DISABLED == 0 || OW_FOLLOWERS_ENABLED), FollowersFlagAssignedWithoutEnablingThem);
 
@@ -602,23 +601,13 @@ void SetObjEventTemplateMovementType(u8 localId, u8 movementType)
         objectEventTemplate->movementType = movementType;
 }
 
-void InitMapView(void)
+static void InitMapView(void)
 {
-    s32 paletteIndex;
     ResetFieldCamera();
-    for (paletteIndex = 0; paletteIndex < 31; paletteIndex++)
-        ApplyGlobalFieldPaletteTint(paletteIndex);
     CopyMapTilesetsToVram(gMapHeader.mapLayout);
     LoadMapTilesetPalettes(gMapHeader.mapLayout);
     DrawWholeMapView();
     InitTilesetAnimations();
-}
-
-void RemoveTintFromObjectEvents(void)
-{
-    u8 mapTint = gSaveBlock3Ptr->globalMapTint;
-    if (mapTint == GLOBAL_FIELD_TINT_NONE)
-        RemoveTintFromObjectEventPalettes();
 }
 
 const struct MapLayout *GetMapLayout(u16 mapLayoutId)

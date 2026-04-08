@@ -72,7 +72,6 @@
 #include "constants/vars.h"
 #include "constants/weather.h"
 #include "constants/region_map_sections.h"
-#include "constants/rgb.h"
 #include "constants/speaker_names.h"
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
@@ -1657,30 +1656,6 @@ EventScript_TrimmedGensokyoLandEncounter::
 @	releaseall
 	end
 
-Script_SetGrayscaleTint::
-	setvar VAR_GLOBAL_TINT_SETTING, GLOBAL_FIELD_TINT_GRAYSCALE
-	callnative PrepareGlobalFieldPaletteTint
-	callnative InitMapView
-	return
-
-Script_SetSepiaTint::
-	setvar VAR_GLOBAL_TINT_SETTING, GLOBAL_FIELD_TINT_SEPIA
-	callnative PrepareGlobalFieldPaletteTint
-	callnative InitMapView
-	return
-
-Script_SetRedBloodTint::
-	setvar VAR_GLOBAL_TINT_SETTING, GLOBAL_FIELD_TINT_RED_BLOOD
-	callnative PrepareGlobalFieldPaletteTint
-	callnative InitMapView
-	return
-
-Script_RemoveTint::
-	setvar VAR_GLOBAL_TINT_SETTING, GLOBAL_FIELD_TINT_NONE
-	callnative PrepareGlobalFieldPaletteTint
-	callnative RemoveTintFromObjectEvents
-	callnative InitMapView
-	return
 @ FRLG scripts
 
 EventScript_SetExitingCyclingRoad::

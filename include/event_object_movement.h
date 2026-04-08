@@ -521,6 +521,4 @@ bool8 PlayerIsUnderWaterfall(struct ObjectEvent *objectEvent);
 
 u8 GetObjectEventApricornTreeId(u8 objectEventId);
 
-void RemoveTintFromObjectEventPalettes(void);
-
 #endif //GUARD_EVENT_OBJECT_MOVEMENT_H

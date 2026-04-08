@@ -18,9 +18,6 @@
 #include "constants/metatile_behaviors.h"
 #include "constants/metatile_behaviors_frlg.h"
 #include "wild_encounter.h"
-#include "event_object_movement.h"
-#include "constants/metatile_behaviors.h"
-#include "constants/vars.h"
 
 struct ConnectionFlags
 {
@@ -1004,24 +1001,7 @@ static void CopyTilesetToVramUsingHeap(struct Tileset const *tileset, u16 numTil
 // Below two are dummied functions from FRLG, used to tint the overworld palettes for the Quest Log
 static void ApplyGlobalTintToPaletteEntries(u16 offset, u16 size)
 {
-    u16 mapTint = gSaveBlock3Ptr->globalMapTint;
-    switch (mapTint)
-    {
-        case GLOBAL_FIELD_TINT_NONE:
-            return;
-        case GLOBAL_FIELD_TINT_GRAYSCALE:
-            TintPalette_GrayScale(gPlttBufferUnfaded + offset, size);
-            break;
-        case GLOBAL_FIELD_TINT_SEPIA:
-            TintPalette_SepiaTone(gPlttBufferUnfaded + offset, size);
-            break;
-        case GLOBAL_FIELD_TINT_RED_BLOOD:
-            TintPalette_CustomTone(gPlttBufferUnfaded + offset, size, 510, 80, 80);
-            break;
-        default:
-            return;
-    }
-    CpuCopy16(gPlttBufferUnfaded + offset, gPlttBufferFaded + offset, size * sizeof(u16));
+
 }
 
 static void UNUSED ApplyGlobalTintToPaletteSlot(u8 slot, u8 count)
@@ -1050,7 +1030,6 @@ static void LoadTilesetPalette(struct Tileset const *tileset, u16 destOffset, u1
                 CpuCopy16(tileset->palettes[numPalsInPrimary], &gPlttBufferUnfaded[destOffset], size);
             else
                 LoadPaletteFast(tileset->palettes[numPalsInPrimary], destOffset, size);
-            ApplyGlobalTintToPaletteEntries(destOffset + 1, (size - 2) >> 1);
         }
         else
         {

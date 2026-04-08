@@ -860,33 +860,6 @@ void FieldEffectScript_LoadTiles(u8 **script)
     (*script) += 4;
 }
 
-void PrepareGlobalFieldPaletteTint(void)
-{
-    gSaveBlock3Ptr->globalMapTint = VarGet(VAR_GLOBAL_TINT_SETTING);
-}
-
-void ApplyGlobalFieldPaletteTint(u8 paletteIdx)
-{
-    u16 mapTint = gSaveBlock3Ptr->globalMapTint;
-    switch (mapTint)
-    {
-    case GLOBAL_FIELD_TINT_NONE:
-        return;
-    case GLOBAL_FIELD_TINT_GRAYSCALE:
-        TintPalette_GrayScale(&gPlttBufferUnfaded[(paletteIdx + 16) * 16], 0x10);
-        break;
-    case GLOBAL_FIELD_TINT_SEPIA:
-        TintPalette_SepiaTone(&gPlttBufferUnfaded[(paletteIdx + 16) * 16], 0x10);
-        break;
-    case GLOBAL_FIELD_TINT_RED_BLOOD:
-        TintPalette_CustomTone(&gPlttBufferUnfaded[(paletteIdx + 16) * 16], 0x10, 510, 80, 80);
-        break;
-    default:
-        return;
-    }
-    CpuFastCopy(&gPlttBufferUnfaded[(paletteIdx + 16) * 16], &gPlttBufferFaded[(paletteIdx + 16) * 16], 0x20);
-}
-
 static bool32 ShouldFieldEffectBeFogBlended(u8 *script)
 {
     u32 ptr = FieldEffectScript_ReadWord(&script);
@@ -901,8 +874,6 @@ void FieldEffectScript_LoadFadedPalette(u8 **script)
     u32 paletteSlot = LoadSpritePalette(palette);
     (*script) += 4;
     SetPaletteColorMapType(paletteSlot + 16, T1_READ_8(*script));
-    if (IndexOfSpritePaletteTag(palette->tag == 0xFF))
-        ApplyGlobalFieldPaletteTint(IndexOfSpritePaletteTag(palette->tag));
     (*script)++;
     UpdateSpritePaletteWithWeather(paletteSlot, ShouldFieldEffectBeFogBlended(*script));
 }
@@ -911,8 +882,6 @@ void FieldEffectScript_LoadPalette(u8 **script)
 {
     struct SpritePalette *palette = (struct SpritePalette *)FieldEffectScript_ReadWord(script);
     LoadSpritePalette(palette);
-    if (IndexOfSpritePaletteTag(palette->tag != 0xFF))
-        ApplyGlobalFieldPaletteTint(IndexOfSpritePaletteTag(palette->tag));
     (*script) += 4;
 }
 

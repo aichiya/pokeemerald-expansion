@@ -208,22 +208,18 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	call Script_SetGrayscaleTint
 	release
 	end
 
 Debug_EventScript_Script_3::
-	call Script_SetSepiaTint
 	release
 	end
 
 Debug_EventScript_Script_4::
-	call Script_RemoveTint
 	release
 	end
 
 Debug_EventScript_Script_5::
-	call Script_SetRedBloodTint
 	release
 	end
 

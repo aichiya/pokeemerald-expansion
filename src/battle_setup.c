@@ -732,28 +732,12 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
 
     if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ANOTHER_WORLD_ECRUTEAK_CITY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ANOTHER_WORLD_ECRUTEAK_CITY))
         return BATTLE_ENVIRONMENT_BLANK_GBC;
-
     if (MetatileBehavior_IsTallGrass(tileBehavior))
-    {
-        if (gSaveBlock3Ptr->globalMapTint == 0)
-            return BATTLE_ENVIRONMENT_GRASS;
-        else
-            return BATTLE_ENVIRONMENT_GRASS_MONO;
-    }
+        return BATTLE_ENVIRONMENT_GRASS;
     if (MetatileBehavior_IsLongGrass(tileBehavior))
-    {
-        if (gSaveBlock3Ptr->globalMapTint == 0)
-            return BATTLE_ENVIRONMENT_LONG_GRASS;
-        else
-            return BATTLE_ENVIRONMENT_LONG_GRASS_MONO;
-    }
+        return BATTLE_ENVIRONMENT_LONG_GRASS;
     if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))
-    {
-        if (gSaveBlock3Ptr->globalMapTint == 0)
-            return BATTLE_ENVIRONMENT_SAND;
-        else
-            return BATTLE_ENVIRONMENT_SAND_MONO;
-    }
+        return BATTLE_ENVIRONMENT_SAND;
 
     switch (gMapHeader.mapType)
     {
@@ -763,116 +747,43 @@ enum BattleEnvironments BattleSetup_GetEnvironmentId(void)
         break;
     case MAP_TYPE_UNDERGROUND:
         if (MetatileBehavior_IsIndoorEncounter(tileBehavior))
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_BUILDING;
-            else
-                return BATTLE_ENVIRONMENT_BUILDING_MONO;
-        }
+            return BATTLE_ENVIRONMENT_BUILDING;
         else if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_POND;
-            else
-                return BATTLE_ENVIRONMENT_POND_MONO;
-        }
-        else
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_CAVE;
-            else
-                return BATTLE_ENVIRONMENT_CAVE_MONO;
-        }
-    case MAP_TYPE_INDOOR:
-    case MAP_TYPE_SECRET_BASE:
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_BUILDING;
-            else
-                return BATTLE_ENVIRONMENT_BUILDING_MONO;
-        }
-    case MAP_TYPE_UNDERWATER:
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_UNDERWATER;
-            else
-                return BATTLE_ENVIRONMENT_UNDERWATER_MONO;
-        }
-    case MAP_TYPE_OCEAN_ROUTE:
-        if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_WATER;
-            else
-                return BATTLE_ENVIRONMENT_WATER_MONO;
-        }
-        else
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_PLAIN;
-            else
-                return BATTLE_ENVIRONMENT_PLAIN_MONO;
-        }
-    }
-    if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior))
-    {
-        if (gSaveBlock3Ptr->globalMapTint == 0)
-            return BATTLE_ENVIRONMENT_WATER;
-        else
-            return BATTLE_ENVIRONMENT_WATER_MONO;
-    }
-    if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
-    {
-        if (gSaveBlock3Ptr->globalMapTint == 0)
             return BATTLE_ENVIRONMENT_POND;
         else
-            return BATTLE_ENVIRONMENT_POND_MONO;
-    }
-    if (MetatileBehavior_IsMountain(tileBehavior))
-    {
-        if (gSaveBlock3Ptr->globalMapTint == 0)
-            return BATTLE_ENVIRONMENT_MOUNTAIN;
+            return BATTLE_ENVIRONMENT_CAVE;
+    case MAP_TYPE_INDOOR:
+    case MAP_TYPE_SECRET_BASE:
+        return BATTLE_ENVIRONMENT_BUILDING;
+    case MAP_TYPE_UNDERWATER:
+            return BATTLE_ENVIRONMENT_UNDERWATER;
+    case MAP_TYPE_OCEAN_ROUTE:
+        if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
+            return BATTLE_ENVIRONMENT_WATER;
         else
-            return BATTLE_ENVIRONMENT_MOUNTAIN_MONO;
+            return BATTLE_ENVIRONMENT_PLAIN;
     }
+    if (MetatileBehavior_IsDeepOrOceanWater(tileBehavior))
+        return BATTLE_ENVIRONMENT_WATER;
+    if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior))
+        return BATTLE_ENVIRONMENT_POND;
+    if (MetatileBehavior_IsMountain(tileBehavior))
+        return BATTLE_ENVIRONMENT_MOUNTAIN;
     if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
     {
         // Is BRIDGE_TYPE_POND_*?
         if (MetatileBehavior_GetBridgeType(tileBehavior) != BRIDGE_TYPE_OCEAN)
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_POND;
-            else
-                return BATTLE_ENVIRONMENT_POND_MONO;
-        }
+            return BATTLE_ENVIRONMENT_POND;
 
         if (MetatileBehavior_IsBridgeOverWater(tileBehavior) == TRUE)
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_WATER;
-            else
-                return BATTLE_ENVIRONMENT_WATER_MONO;
-        }
+            return BATTLE_ENVIRONMENT_WATER;
     }
     if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ROUTE113) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ROUTE113))
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_SAND;
-            else
-                return BATTLE_ENVIRONMENT_SAND_MONO;
-        }
+            return BATTLE_ENVIRONMENT_SAND;
     if (GetSavedWeather() == WEATHER_SANDSTORM)
-        {
-            if (gSaveBlock3Ptr->globalMapTint == 0)
-                return BATTLE_ENVIRONMENT_SAND;
-            else
-                return BATTLE_ENVIRONMENT_SAND_MONO;
-        }
+            return BATTLE_ENVIRONMENT_SAND;
 
-    if (gSaveBlock3Ptr->globalMapTint == 0)
-        return BATTLE_ENVIRONMENT_PLAIN;
-    else
-        return BATTLE_ENVIRONMENT_PLAIN_MONO;
+    return BATTLE_ENVIRONMENT_PLAIN;
 }
 
 static enum TransitionType GetBattleTransitionTypeByMap(void)

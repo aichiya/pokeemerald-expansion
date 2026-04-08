@@ -36656,62 +36656,62 @@
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_MOE_VENUSAUR"
+                "species": "SPECIES_BULBASAUR"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_CHARMANDER"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ETC_FOXYRIA"
+                "species": "SPECIES_SQUIRTLE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_BGHS_MIKI_FLORA"
+                "species": "SPECIES_SQUIRTLE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_KEY_USHIO_NORMAL"
+                "species": "SPECIES_PIKACHU"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_YYYI_TAKASHIMA_YUUNA_NORMAL"
+                "species": "SPECIES_PIKACHU"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ETC_DECADE_COMPLETE"
+                "species": "SPECIES_EEVEE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ETC_NOBETA"
+                "species": "SPECIES_EEVEE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ETC_DIALGA_TH"
+                "species": "SPECIES_EEVEE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_TH_SANAE_BROKEN_RITE"
+                "species": "SPECIES_EEVEE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_TH_SANAE_BROKEN_RITE"
+                "species": "SPECIES_EEVEE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_TH_SANAE_BROKEN_RITE"
+                "species": "SPECIES_EEVEE"
               }
             ]
           },

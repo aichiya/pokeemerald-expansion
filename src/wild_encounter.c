@@ -487,6 +487,7 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, enum 
 {
     u8 wildMonIndex = 0;
     u8 level;
+    u16 originalSpecies, assignedSpecies;
 
     switch (area)
     {
@@ -537,7 +538,22 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, enum 
     if (gMapHeader.mapLayoutId != LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS && flags & WILD_CHECK_KEEN_EYE && !IsAbilityAllowingEncounter(level))
         return FALSE;
 
-    CreateWildMon(wildMonInfo->wildPokemon[wildMonIndex].species, level);
+    originalSpecies = wildMonInfo->wildPokemon[wildMonIndex].species;
+    assignedSpecies = wildMonInfo->wildPokemon[wildMonIndex].species;
+
+    if (originalSpecies <= SPECIES_RAGING_BOLT && FlagGet(FLAG_ENABLE_WILD_MOEMON))
+    {
+        if (Random() % 2 == 0)
+            assignedSpecies = originalSpecies + SPECIES_RAGING_BOLT;
+        else
+            assignedSpecies = originalSpecies;
+    }
+    else
+    {
+        assignedSpecies = originalSpecies;
+    }
+
+    CreateWildMon(assignedSpecies, level);
     return TRUE;
 }
 

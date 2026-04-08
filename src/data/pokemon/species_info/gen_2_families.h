@@ -2767,7 +2767,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_FLARE_BOOST, ABILITY_WIND_RIDER, ABILITY_INFILTRATOR },
     #endif
-        .bodyColor = BODY_COLOR_PINK,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Hoppip"),
         .cryId = CRY_HOPPIP,
         .natDexNum = NATIONAL_DEX_HOPPIP,
@@ -2844,7 +2844,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_FLARE_BOOST, ABILITY_WIND_RIDER, ABILITY_INFILTRATOR },
     #endif
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Skiploom"),
         .cryId = CRY_SKIPLOOM,
         .natDexNum = NATIONAL_DEX_SKIPLOOM,
@@ -2932,7 +2932,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_FLARE_BOOST, ABILITY_WIND_RIDER, ABILITY_INFILTRATOR },
     #endif
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Jumpluff"),
         .cryId = CRY_JUMPLUFF,
         .natDexNum = NATIONAL_DEX_JUMPLUFF,
@@ -3182,7 +3182,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_EARLY_BIRD },
     #endif
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Sunkern"),
         .cryId = CRY_SUNKERN,
         .natDexNum = NATIONAL_DEX_SUNKERN,
@@ -3260,7 +3260,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_EARLY_BIRD },
     #endif
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Sunflora"),
         .cryId = CRY_SUNFLORA,
         .natDexNum = NATIONAL_DEX_SUNFLORA,
@@ -3829,7 +3829,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_INSOMNIA, ABILITY_SUPER_LUCK, ABILITY_PRANKSTER },
     #endif
-        .bodyColor = BODY_COLOR_BLACK,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Murkrow"),
         .cryId = CRY_MURKROW,
         .natDexNum = NATIONAL_DEX_MURKROW,
@@ -7777,7 +7777,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_PICKUP, ABILITY_QUICK_FEET, ABILITY_HONEY_GATHER },
     #endif
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .noFlip = TRUE,
         .speciesName = _("Teddiursa"),
         .cryId = CRY_TEDDIURSA,
@@ -7852,7 +7852,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_GUTS, ABILITY_QUICK_FEET, ABILITY_UNNERVE },
     #endif
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Ursaring"),
         .cryId = CRY_URSARING,
         .natDexNum = NATIONAL_DEX_URSARING,
@@ -8220,7 +8220,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_THICK_FAT },
     #endif
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Swinub"),
         .cryId = CRY_SWINUB,
         .natDexNum = NATIONAL_DEX_SWINUB,
@@ -8297,7 +8297,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_THICK_FAT },
     #endif
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Piloswine"),
         .cryId = CRY_PILOSWINE,
         .natDexNum = NATIONAL_DEX_PILOSWINE,
@@ -9608,7 +9608,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_SAP_SIPPER },
     #endif
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Stantler"),
         .cryId = CRY_STANTLER,
         .natDexNum = NATIONAL_DEX_STANTLER,
@@ -9754,7 +9754,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_OWN_TEMPO, ABILITY_NONE, ABILITY_MOODY },
     #endif
-        .bodyColor = BODY_COLOR_WHITE,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .noFlip = TRUE,
         .speciesName = _("Smeargle"),
         .cryId = CRY_SMEARGLE,
@@ -9834,7 +9834,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_THICK_FAT, ABILITY_NONE, ABILITY_SAP_SIPPER },
     #endif
-        .bodyColor = BODY_COLOR_PINK,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Miltank"),
         .cryId = CRY_MILTANK,
         .natDexNum = NATIONAL_DEX_MILTANK,
@@ -9916,7 +9916,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_VOLT_ABSORB, ABILITY_INNER_FOCUS },
     #endif
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Raikou"),
         .cryId = CRY_RAIKOU,
         .natDexNum = NATIONAL_DEX_RAIKOU,
@@ -10000,7 +10000,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_FLASH_FIRE, ABILITY_INNER_FOCUS },
     #endif
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Entei"),
         .cryId = CRY_ENTEI,
         .natDexNum = NATIONAL_DEX_ENTEI,
@@ -10083,7 +10083,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_WATER_VEIL, ABILITY_INNER_FOCUS },
     #endif
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Suicune"),
         .cryId = CRY_SUICUNE,
         .natDexNum = NATIONAL_DEX_SUICUNE,

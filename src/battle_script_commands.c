@@ -15912,7 +15912,7 @@ void BS_TransformDataExecutionCallingMultiUnit(void)
 
     s32 i;
     u8 timesGotHit;
-    u16 speciesBuffer;
+    u16 speciesBuffer = gBattleMons[gBattlerAttacker].species;
     u32 ivAtk, ivDef, ivSpAtk, ivSpDef, ivSpd, baseAtk, baseDef, baseSpAtk, baseSpDef, baseSpd;
     u8 currentLevel;
     u32 calcAtk, calcDef, calcSpAtk, calcSpDef, calcSpd;
@@ -15930,14 +15930,80 @@ void BS_TransformDataExecutionCallingMultiUnit(void)
     timesGotHit = GetBattlerPartyState(gBattlerTarget)->timesGotHit;
     GetBattlerPartyState(gBattlerAttacker)->timesGotHit = timesGotHit;
 
-    if (gBattleMons[gBattlerAttacker].species == SPECIES_ALTARIA)
-        speciesBuffer = SPECIES_ALTARIA_MEGA;
-    else if (gBattleMons[gBattlerAttacker].species == SPECIES_LATIOS)
-        speciesBuffer = SPECIES_LATIOS_MEGA;
-    else if (gBattleMons[gBattlerAttacker].species == SPECIES_LATIAS)
-        speciesBuffer = SPECIES_LATIAS_MEGA;
-    else
-        speciesBuffer = SPECIES_DIANCIE_MEGA;
+    if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_SHIZUHA_NORMAL)
+        speciesBuffer = SPECIES_TH_AKISISTERS_R_SHIZUHA_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_SHIZUHA_SPEED)
+        speciesBuffer = SPECIES_TH_AKISISTERS_R_SHIZUHA_SPEED;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_SHIZUHA_HELPER)
+        speciesBuffer = SPECIES_TH_AKISISTERS_R_SHIZUHA_HELPER;
+
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_MINORIKO_NORMAL)
+        speciesBuffer = SPECIES_TH_AKISISTERS_R_MINORIKO_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_MINORIKO_ATTACK)
+        speciesBuffer = SPECIES_TH_AKISISTERS_R_MINORIKO_ATTACK;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_MINORIKO_DEFENSE)
+        speciesBuffer = SPECIES_TH_AKISISTERS_R_MINORIKO_DEFENSE;
+
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_REIMU_NORMAL)
+        speciesBuffer = SPECIES_TH_DUO_MC_R_REIMU_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_MARISA_NORMAL)
+        speciesBuffer = SPECIES_TH_DUO_MC_R_MARISA_NORMAL;
+
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_JOON_NORMAL)
+        speciesBuffer = SPECIES_TH_YORIGAMISISTERS_R_JOON_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_JOON_ATTACK)
+        speciesBuffer = SPECIES_TH_YORIGAMISISTERS_R_JOON_ATTACK;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_JOON_DEFENSE)
+        speciesBuffer = SPECIES_TH_YORIGAMISISTERS_R_JOON_DEFENSE;
+
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_SHION_NORMAL)
+        speciesBuffer = SPECIES_TH_YORIGAMISISTERS_R_SHION_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_SHION_ATTACK)
+        speciesBuffer = SPECIES_TH_YORIGAMISISTERS_R_SHION_ATTACK;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_SHION_DEFENSE)
+        speciesBuffer = SPECIES_TH_YORIGAMISISTERS_R_SHION_DEFENSE;
+
+/*
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_LUNASA_NORMAL)
+        speciesBuffer = SPECIES_TH_PRISMRIVER_R_LUNASA_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_LUNASA_HELPER)
+        speciesBuffer = SPECIES_TH_PRISMRIVER_R_LUNASA_HELPER;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_MERLIN_NORMAL)
+        speciesBuffer = SPECIES_TH_PRISMRIVER_R_MERLIN_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_MERLIN_HELPER)
+        speciesBuffer = SPECIES_TH_PRISMRIVER_R_MERLIN_HELPER;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_LYRICA_NORMAL)
+        speciesBuffer = SPECIES_TH_PRISMRIVER_R_LYRICA_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_LYRICA_HELPER)
+        speciesBuffer = SPECIES_TH_PRISMRIVER_R_LYRICA_HELPER;
+*/
+
+/*
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_TOJIKO_NORMAL)
+        speciesBuffer = SPECIES_TH_TRIO_TMF_R_TOJIKO_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_FUTO_NORMAL)
+        speciesBuffer = SPECIES_TH_TRIO_TMF_R_FUTO_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_MIKO_NORMAL)
+        speciesBuffer = SPECIES_TH_TRIO_TMF_R_MIKO_NORMAL;
+*/
+
+/*
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_TEIREIDA_MAI_NORMAL)
+        speciesBuffer = SPECIES_TH_TRIO_MSO_R_TEIREIDA_MAI_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_SATONO_NORMAL)
+        speciesBuffer = SPECIES_TH_TRIO_MSO_R_TEIREIDA_SATONO_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_OKINA_NORMAL)
+        speciesBuffer = SPECIES_TH_TRIO_MSO_R_TEIREIDA_OKINA_NORMAL;
+*/
+
+/*
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_YACHIE_NORMAL)
+        speciesBuffer = SPECIES_TH_TRIO_YSK_R_YACHIE_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_KEIKI_NORMAL)
+        speciesBuffer = SPECIES_TH_TRIO_YSK_R_KEIKI_NORMAL;
+    else if (gBattleMons[gBattlerAttacker].species == SPECIES_TH_SAKI_NORMAL)
+        speciesBuffer = SPECIES_TH_TRIO_YSK_R_SAKI_NORMAL;
+*/
 
     PREPARE_SPECIES_BUFFER(gBattleTextBuff1, speciesBuffer)
     gBattleMons[gBattlerAttacker].volatiles.transformationDCDTemp = speciesBuffer;

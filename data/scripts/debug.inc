@@ -208,10 +208,12 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
+	goto TrimmedGensokyo_EventScript_Debug2_DoMultiBattle
 	release
 	end
 
 Debug_EventScript_Script_3::
+	setflag FLAG_ENABLE_WILD_MOEMON
 	release
 	end
 

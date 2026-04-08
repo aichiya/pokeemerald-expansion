@@ -574,7 +574,7 @@ static u32 ScriptGiveMonParameterizedGift1(u8 side, u8 slot, enum Species specie
     SetMonData(&mon, MON_DATA_HELD_ITEM, &item);
 
     // In case a mon with a form changing item is given. Eg: SPECIES_ARCEUS_NORMAL with ITEM_SPLASH_PLATE will transform into SPECIES_ARCEUS_WATER upon gifted.
-    TryFormChange(&mon, FORM_CHANGE_ITEM_HOLD);
+    TryFormChange(&mon, FORM_CHANGE_ITEM_HOLD, B_TRAINER_0);
 
     // assign gift parameters
     if(VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_SPECIAL_GIFT)
@@ -964,7 +964,7 @@ static u32 ScriptGiveMonParameterizedGift1(u8 side, u8 slot, enum Species specie
     {
         return MON_CANT_GIVE;
     }
-    CopyMon(&gEnemyParty[slot], &mon, sizeof(struct Pokemon));
+    CopyMon(&gParties[B_TRAINER_1][slot], &mon, sizeof(struct Pokemon));
     return MON_GIVEN_TO_PARTY;
 }
 
@@ -990,7 +990,7 @@ u32 ScriptGiveMonDebugSimple(enum Species species, u8 level, enum Item item)
     u16 ivs[NUM_STATS]        = {MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1,   // We pass "MAX_PER_STAT_IVS + 1" here to ensure that
                                 MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1};  // ScriptGiveMonParameterized won't touch the stats' IV.
     u16 moves[MAX_MON_MOVES] = {MOVE_NONE, MOVE_NONE, MOVE_NONE, MOVE_NONE};
-    u8 slot                  = gPlayerPartyCount;
+    u8 slot                  = gPartiesCount[B_TRAINER_0];
     
     VarSet(VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_DEBUG);
     return ScriptGiveMonParameterizedGift1(B_SIDE_PLAYER, slot, species, level, item, BALL_MASTER, NATURE_RANDOM, NUM_ABILITY_PERSONALITY, MON_GENDER_RANDOM, evs, ivs, moves, SHINY_MODE_RANDOM, FALSE, NUMBER_OF_MON_TYPES, 10);

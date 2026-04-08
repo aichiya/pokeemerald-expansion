@@ -3306,20 +3306,20 @@ static void GachaMain(u8 taskId)
     case STATE_POKEBALL_ARRIVE_WAIT:        
         if (gSprites[sGacha->bouncingPokeballSpriteId].callback == SpriteCallbackDummy)
         {
-            CreateMon(&gEnemyParty[0], sGacha->CalculatedSpecies, level, personality, OTID_STRUCT_PLAYER_ID);
-            GiveScriptedMonToPlayer(&gEnemyParty[0], PARTY_SIZE);
+            CreateMon(&gParties[B_TRAINER_1][0], sGacha->CalculatedSpecies, level, personality, OTID_STRUCT_PLAYER_ID);
+            GiveScriptedMonToPlayer(&gParties[B_TRAINER_1][0], PARTY_SIZE);
             GetSetPokedexFlag(SpeciesToNationalPokedexNum(sGacha->CalculatedSpecies), FLAG_SET_SEEN);
-            HandleSetPokedexFlag(SpeciesToNationalPokedexNum(sGacha->CalculatedSpecies), FLAG_SET_CAUGHT, GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY));
-            LoadPalette(GetMonFrontSpritePal(&gEnemyParty[0]), OBJ_PLTT_ID(2), PLTT_SIZE_4BPP);
+            HandleSetPokedexFlag(SpeciesToNationalPokedexNum(sGacha->CalculatedSpecies), FLAG_SET_CAUGHT, GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_PERSONALITY));
+            LoadPalette(GetMonFrontSpritePal(&gParties[B_TRAINER_1][0]), OBJ_PLTT_ID(2), PLTT_SIZE_4BPP);
             SetMultiuseSpriteTemplateToPokemon(sGacha->CalculatedSpecies, pos);
-            sGacha->monSpriteId = CreateMonPicSprite_Affine(sGacha->CalculatedSpecies, GetMonData(&gEnemyParty[0], MON_DATA_IS_SHINY), GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY), MON_PIC_AFFINE_FRONT, 120, 60, 14, TAG_NONE);
+            sGacha->monSpriteId = CreateMonPicSprite_Affine(sGacha->CalculatedSpecies, GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_IS_SHINY), GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_PERSONALITY), MON_PIC_AFFINE_FRONT, 120, 60, 14, TAG_NONE);
             gSprites[sGacha->monSpriteId].callback = SpriteCB_Null;
             gSprites[sGacha->monSpriteId].oam.priority = 0;
             gSprites[sGacha->monSpriteId].invisible = TRUE;
             HandleLoadSpecialPokePic(TRUE,
                                         gMonSpritesGfxPtr->spritesGfx[pos],
                                         sGacha->CalculatedSpecies,
-                                        GetMonData(&gEnemyParty[0], MON_DATA_PERSONALITY));
+                                        GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_PERSONALITY));
             sGacha->state++;
         }
         break;

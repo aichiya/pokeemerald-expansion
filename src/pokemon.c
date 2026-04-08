@@ -4585,9 +4585,9 @@ void CreateSecretBaseEnemyParty(struct SecretBase *secretBaseRecord)
     {      
         for (i = 0; i < PARTY_SIZE; i++)
         {
-            CopyMon(&gEnemyParty[i], &gPlayerParty[i], sizeof(struct Pokemon));
-            HealPokemon(&gEnemyParty[i]);
-            CalculateMonStats(&gEnemyParty[i]);
+            CopyMon(&gParties[B_TRAINER_1][i], &gParties[B_TRAINER_0][i], sizeof(struct Pokemon));
+            HealPokemon(&gParties[B_TRAINER_1][i]);
+            CalculateMonStats(&gParties[B_TRAINER_1][i]);
         }
     }
     else if (VarGet(VAR_SECRET_BASE_PSEUDO_TRAINER_NUM) == PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER_CHECK_PARTY_LEVEL
@@ -4597,12 +4597,12 @@ void CreateSecretBaseEnemyParty(struct SecretBase *secretBaseRecord)
 
         for (i = 0; i < PARTY_SIZE; i++)
         {          
-            CopyMon(&gEnemyParty[i], &gPlayerParty[i], sizeof(struct Pokemon));
-            HealPokemon(&gEnemyParty[i]);
-            SetMonData(&gEnemyParty[i], MON_DATA_LEVEL, &highestPartyLevel);
-            u32 dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(&gEnemyParty[i], MON_DATA_SPECIES, NULL)].growthRate][highestPartyLevel];
-            SetMonData(&gEnemyParty[i], MON_DATA_EXP, &dataUnsigned);
-            CalculateMonStats(&gEnemyParty[i]);
+            CopyMon(&gParties[B_TRAINER_1][i], &gParties[B_TRAINER_0][i], sizeof(struct Pokemon));
+            HealPokemon(&gParties[B_TRAINER_1][i]);
+            SetMonData(&gParties[B_TRAINER_1][i], MON_DATA_LEVEL, &highestPartyLevel);
+            u32 dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(&gParties[B_TRAINER_1][i], MON_DATA_SPECIES, NULL)].growthRate][highestPartyLevel];
+            SetMonData(&gParties[B_TRAINER_1][i], MON_DATA_EXP, &dataUnsigned);
+            CalculateMonStats(&gParties[B_TRAINER_1][i]);
         }
     }
     else
@@ -4611,23 +4611,23 @@ void CreateSecretBaseEnemyParty(struct SecretBase *secretBaseRecord)
         {
             if (gBattleResources->secretBase->party.species[i])
             {
-                CreateMonWithIVs(&gEnemyParty[i],
+                CreateMonWithIVs(&gParties[B_TRAINER_1][i],
                     gBattleResources->secretBase->party.species[i],
                     gBattleResources->secretBase->party.levels[i],
                     gBattleResources->secretBase->party.personality[i],
                     OTID_STRUCT_RANDOM_NO_SHINY,
                     15);
 
-                SetMonData(&gEnemyParty[i], MON_DATA_HELD_ITEM, &gBattleResources->secretBase->party.heldItems[i]);
+                SetMonData(&gParties[B_TRAINER_1][i], MON_DATA_HELD_ITEM, &gBattleResources->secretBase->party.heldItems[i]);
 
                 for (j = 0; j < NUM_STATS; j++)
-                    SetMonData(&gEnemyParty[i], MON_DATA_HP_EV + j, &gBattleResources->secretBase->party.EVs[i]);
+                    SetMonData(&gParties[B_TRAINER_1][i], MON_DATA_HP_EV + j, &gBattleResources->secretBase->party.EVs[i]);
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
-                    SetMonData(&gEnemyParty[i], MON_DATA_MOVE1 + j, &gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
+                    SetMonData(&gParties[B_TRAINER_1][i], MON_DATA_MOVE1 + j, &gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
                     u32 pp = GetMovePP(gBattleResources->secretBase->party.moves[i * MAX_MON_MOVES + j]);
-                    SetMonData(&gEnemyParty[i], MON_DATA_PP1 + j, &pp);
+                    SetMonData(&gParties[B_TRAINER_1][i], MON_DATA_PP1 + j, &pp);
                 }
             }
         }
@@ -7077,24 +7077,24 @@ u16 GetBattleBGM(void)
     }
     else
     {
-        switch (gSpeciesInfo[GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL)].bodyColor)
+        switch (gSpeciesInfo[GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES, NULL)].bodyColor)
         {
         case FRANCHISE_ORIGIN_POKEMON:      // BODY_COLOR_RED
             return MUS_HG_VS_WILD;
         case FRANCHISE_ORIGIN_MOEMON:       // BODY_COLOR_BLUE
-            if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES) == SPECIES_ETC_DIALGA_TH
-             || GetMonData(&gEnemyParty[0], MON_DATA_SPECIES) == SPECIES_ETC_PALKIA_TH)
+            if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_DIALGA_TH
+             || GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_PALKIA_TH)
                 return MUS_PKMN_DP_VS_DIALGA_PALKIA;
-            else if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES) == SPECIES_ETC_GIRATINA_TH)
+            else if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_GIRATINA_TH)
                 return MUS_PKMN_PL_VS_GIRATINA;
-            else if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES) == SPECIES_ETC_ARCEUS_TH)
+            else if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_ARCEUS_TH)
                 return MUS_HG_VS_ARCEUS;
             else
                 return MUS_PKMN_GSC_VS_WILD1;
         case FRANCHISE_ORIGIN_YUYUYUI:      // BODY_COLOR_YELLOW
             return MUS_YYYI_BATTLE_04;
         case FRANCHISE_ORIGIN_TOUHOU:       // BODY_COLOR_GREEN
-            if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES) == SPECIES_TH_SANAE_BROKEN_RITE)
+            if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_TH_SANAE_BROKEN_RITE)
                 return MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE_TEST;
             else
                 return MUS_THPPZGSK_366A_DOLL_JUDGEMENT;

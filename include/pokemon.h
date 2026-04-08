@@ -370,8 +370,7 @@ struct BattlePokemon
     u8 metLevel:7;
     u8 isShiny:1;
     u8 affectionHearts;
-    u8 isShadow:1;
-    u8 paddingCustom:7;
+    bool8 isShadow;
     u8 metGame;
     u8 metLocation;
     u8 franchiseOfOrigin;

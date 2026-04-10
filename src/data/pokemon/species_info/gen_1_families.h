@@ -5231,7 +5231,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = 140,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_MAGIC_GUARD, ABILITY_UNAWARE },
+        .abilities = { ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
         .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Clefable"),
     #if P_MODIFIED_MEGA_CRIES
@@ -9506,7 +9506,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_CORROSION, ABILITY_GLUTTONY },
+        .abilities = { ABILITY_INNARDS_OUT, ABILITY_INNARDS_OUT, ABILITY_INNARDS_OUT },
         .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .noFlip = TRUE,
         .speciesName = _("Victreebel"),
@@ -16045,7 +16045,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_STARMIE_MEGA] =
     {
         .baseHP        = 60,
-        .baseAttack    = 140,
+        .baseAttack    = 100,
         .baseDefense   = 105,
         .baseSpeed     = 120,
         .baseSpAttack  = 130,
@@ -16061,7 +16061,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_ILLUMINATE, ABILITY_NATURAL_CURE, ABILITY_ANALYTIC },
+        .abilities = { ABILITY_HUGE_POWER, ABILITY_HUGE_POWER, ABILITY_HUGE_POWER },
         .bodyColor = FRANCHISE_ORIGIN_POKEMON,
         .speciesName = _("Starmie"),
     #if P_MODIFIED_MEGA_CRIES

@@ -553,6 +553,9 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, enum 
         assignedSpecies = originalSpecies;
     }
 
+    if (FlagGet(FLAG_DISABLE_ALL_WILD_OURSIDER_MON))
+        assignedSpecies = originalSpecies;
+
     CreateWildMon(assignedSpecies, level);
     return TRUE;
 }
@@ -562,10 +565,29 @@ static u16 GenerateFishingWildMon(const struct WildPokemonInfo *wildMonInfo, u8 
     u8 wildMonIndex = ChooseWildMonIndex_Fishing(rod);
     enum Species wildMonSpecies = wildMonInfo->wildPokemon[wildMonIndex].species;
     u8 level = ChooseWildMonLevel(wildMonInfo->wildPokemon, wildMonIndex, WILD_AREA_FISHING);
+    u16 originalSpecies, assignedSpecies;
+
+    originalSpecies = wildMonSpecies;
+    assignedSpecies = wildMonSpecies;
+
+    if (originalSpecies <= SPECIES_RAGING_BOLT && FlagGet(FLAG_ENABLE_WILD_MOEMON))
+    {
+        if (Random() % 2 == 0)
+            assignedSpecies = originalSpecies + SPECIES_RAGING_BOLT;
+        else
+            assignedSpecies = originalSpecies;
+    }
+    else
+    {
+        assignedSpecies = originalSpecies;
+    }
+
+    if (FlagGet(FLAG_DISABLE_ALL_WILD_OURSIDER_MON))
+        assignedSpecies = originalSpecies;
 
     UpdateChainFishingStreak();
-    CreateWildMon(wildMonSpecies, level);
-    return wildMonSpecies;
+    CreateWildMon(assignedSpecies, level);
+    return assignedSpecies;
 }
 
 static bool8 SetUpMassOutbreakEncounter(u8 flags)

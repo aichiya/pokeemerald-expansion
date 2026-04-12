@@ -460,7 +460,8 @@ enum __attribute__((packed)) TrainerPicID
 #define TRAINER_PIC_KEY_YOUHEI            TRAINER_PIC_192
 #define TRAINER_PIC_KEY_ILLUSIONARY_ROBOT TRAINER_PIC_193
 #define TRAINER_PIC_TEACHER               TRAINER_PIC_194
-#define TRAINER_PIC_GSC_TEACHER           TRAINER_PIC_195
+
+#define TRAINER_PIC_TH_REIMUFATE          TRAINER_PIC_200
 
 enum
 {

@@ -17058,13 +17058,32 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PLACEHOLDER_863 ===
-Name: MAY
-Class: RS Protag
-Pic: RS May
-Gender: Female
+Name: Reimufate
+Class: TRAINER_CLASS_0XFA
+Pic: TRAINER_PIC_TH_REIMUFATE
+Gender: Male
 Music: Male
-Double Battle: No
+Double Battle: Yes
+AI: Basic Trainer
+Mugshot: Yellow
 
-Kyogre
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+SPECIES_ETC_NOBETA @ ITEM_PSYCHIUM_Z
+Level: 100
+Ability: ABILITY_SKILLED_MAGICIAN
+Modest Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+- MOVE_PSYCHIC
+- MOVE_CLASSIC_FLAMETHROWER
+- MOVE_CLASSIC_THUNDERBOLT
+- MOVE_LIGHT_SCREEN
+
+SPECIES_ETC_NONOTA @ ITEM_BRIGHT_POWDER
+Level: 100
+Timid Nature
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 252 Spe
+- MOVE_NEW_WINTER_BLAST
+- MOVE_MIND_HACK
+- MOVE_CONFUSE_RAY
+- MOVE_GIGA_DRAIN

@@ -239,6 +239,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kris;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Miku;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TrainerPea;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ThReimu;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedBike;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RedSurf;
@@ -647,6 +648,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_KRIS] =                     &gObjectEventGraphicsInfo_Kris,
     [OBJ_EVENT_GFX_MIKU] =                     &gObjectEventGraphicsInfo_Miku,
     [OBJ_EVENT_GFX_TRAINER_PEA] =              &gObjectEventGraphicsInfo_TrainerPea,
+    [OBJ_EVENT_GFX_TH_REIMU] =                 &gObjectEventGraphicsInfo_ThReimu,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,

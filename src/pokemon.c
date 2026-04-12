@@ -6876,7 +6876,13 @@ u16 GetBattleBGM(void)
         case FRANCHISE_ORIGIN_OTHER:        // BODY_COLOR_WHITE
         case FRANCHISE_ORIGIN_UNIDENTIFIED: // BODY_COLOR_PINK
         default:
-            return MUS_VS_WILD;
+            if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_MADOKA_ULTIMATE)
+                return MUS_MADOKA_SIS_PUELLA;
+            else if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_NOBETA
+             || GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_NONOTA)
+                return MUS_THPPRF_NOBETA_2;
+            else
+                return MUS_VS_WILD;
         }
     }
 }

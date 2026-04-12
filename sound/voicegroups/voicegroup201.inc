@@ -1,7 +1,7 @@
 	.align 2
 voicegroup201::                                                                                            @ Vocal | Type | Description
 	voice_keysplit_all voicegroup192                                                                       @ 000 | Direct | Drum | GBA Drum
-	voice_keysplit voicegroup195, KeySplitTable1                                                           @ 001 | Direct | Multi | GBA Piano 1
+	voice_keysplit voicegroup195, KeySplitTableGBAPiano1Custom                                                           @ 001 | Direct | Multi | GBA Piano 1
 	voice_directsound 60, 0, DirectSoundWaveData_steinway_b_piano, 128, 204, 51, 242                       @ 002 | Direct | GBA Piano 2
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_koto_high, 255, 0, 206, 242                       @ 003 | Direct | GBA Koto 2
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_detuned_ep1_low, 128, 249, 0, 188          @ 004 | Direct | GBA Electric Piano 1
@@ -48,7 +48,7 @@ voicegroup201::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_pizzicato_strings, 255, 216, 0, 165               @ 045 | Direct | GBA Pizzicato
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_harp, 255, 242, 51, 242                           @ 046 | Direct | GBA Harp
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_timpani, 255, 246, 0, 226                         @ 047 | Direct | GBA Timpani
-	voice_keysplit voicegroup196, KeySplitTable2                                                           @ 048 | Direct | Multi | GBA String
+	voice_keysplit voicegroup196, KeySplitTableGBAStringEnsembleCustom                                                           @ 048 | Direct | Multi | GBA String
 	voice_keysplit voicegroup255, KeySplitTable45                                                          @ 049 | Direct | Multi | HGSS String
 	voice_keysplit voicegroup256, KeySplitTable46                                                          @ 050 | Direct | Multi | HGSS Violin
 	voice_keysplit voicegroup257, KeySplitTable47                                                          @ 051 | Direct | Multi | HGSS Cello
@@ -56,11 +56,11 @@ voicegroup201::                                                                 
 	voice_directsound 60, 0, DirectSoundWaveData_unknown_female_voice, 128, 165, 128, 204                  @ 053 | Direct | GBA Female Voice Ahhs
 	voice_directsound 60, 0, DirectSoundWaveData_unused_unknown_male_voice, 128, 165, 128, 188             @ 054 | Direct | GBA Male Voice Ahhs
 	voice_keysplit voicegroup258, KeySplitTable48                                                          @ 055 | Direct | Multi | HGSS Pizzicato
-	voice_keysplit voicegroup197, KeySplitTable3                                                           @ 056 | Direct | Multi | GBA Trumpet
+	voice_keysplit voicegroup197, KeySplitTableGBATrumpetCustom                                                           @ 056 | Direct | Multi | GBA Trumpet
 	voice_directsound 60, 0, DirectSoundWaveData_trinity_big_boned, 255, 165, 154, 127                     @ 057 | Direct | GBA Trinity Big Boned
-	voice_keysplit voicegroup198, KeySplitTable4                                                           @ 058 | Direct | Multi | GBA Tuba
+	voice_keysplit voicegroup198, KeySplitTableGBATubaCustom                                                           @ 058 | Direct | Multi | GBA Tuba
 	voice_directsound 60, 0, DirectSoundWaveData_thpprf_romantic_trumpet, 240, 200, 245, 220               @ 059 | Direct | RF Romantic Trumpet 1
-	voice_keysplit voicegroup199, KeySplitTable5                                                           @ 060 | Direct | Multi | GBA French Horn
+	voice_keysplit voicegroup199, KeySplitTableGBAFrenchHornCustom                                                           @ 060 | Direct | Multi | GBA French Horn
 	voice_keysplit voicegroup259, KeySplitTable40                                                          @ 061 | Direct | Multi | HGSS Harp
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_classical_distortion_guitar_low, 255, 165, 180, 165  @ 062 | Direct | GBA Distortion Guitar 2
 	voice_keysplit voicegroup260, KeySplitTable40                                                          @ 063 | Direct | Multi | HGSS Timpani

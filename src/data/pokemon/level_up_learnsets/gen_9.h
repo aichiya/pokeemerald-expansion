@@ -29477,7 +29477,10 @@ static const struct LevelUpMove sEtcPalkiaThLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sEtcGiratinaThLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_MOVE( 1, MOVE_SHADOW_FORCE),
+    LEVEL_UP_MOVE( 1, MOVE_DRAGON_ASCENT),
+    LEVEL_UP_MOVE( 1, MOVE_NEW_SHADOW_CLONE),
+    LEVEL_UP_MOVE( 1, MOVE_DRAGON_CLAW),
     LEVEL_UP_END
 };
 
@@ -30262,7 +30265,10 @@ static const struct LevelUpMove sEtcOmoriLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sEtcMadokaUltimateLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_MOVE( 1, MOVE_RAIN_OF_ARROWS),
+    LEVEL_UP_MOVE( 1, MOVE_COSMIC_POWER),
+    LEVEL_UP_MOVE( 1, MOVE_CARD_INCLUDE_EARTHLIGHT_STARBOW),
+    LEVEL_UP_MOVE( 1, MOVE_GIGA_DRAIN),
     LEVEL_UP_END
 };
 
@@ -30297,12 +30303,18 @@ static const struct LevelUpMove sThMedicineMuiLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sEtcNonotaLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_MOVE( 1, MOVE_NIGHTMARE),
+    LEVEL_UP_MOVE( 1, MOVE_CURSE),
+    LEVEL_UP_MOVE( 1, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE( 1, MOVE_NEW_WINTER_BLAST),
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sEtcNobetaLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_MOVE( 1, MOVE_CALM_MIND),
+    LEVEL_UP_MOVE( 1, MOVE_PSYCHIC),
+    LEVEL_UP_MOVE( 1, MOVE_CLASSIC_FLAMETHROWER),
+    LEVEL_UP_MOVE( 1, MOVE_CLASSIC_THUNDERBOLT),
     LEVEL_UP_END
 };
 

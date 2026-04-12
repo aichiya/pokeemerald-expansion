@@ -36656,62 +36656,62 @@
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_BULBASAUR"
+                "species": "SPECIES_ETC_MADOKA_ULTIMATE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_ETC_NOBETA"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_SQUIRTLE"
+                "species": "SPECIES_ETC_MADOKA_ULTIMATE"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_SQUIRTLE"
+                "species": "SPECIES_ETC_NOBETA"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_PIKACHU"
+                "species": "SPECIES_ETC_NONOTA"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_PIKACHU"
+                "species": "SPECIES_ETC_NONOTA"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_ETC_NONOTA"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_ETC_NONOTA"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_ETC_GIRATINA_TH"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_ETC_GIRATINA_TH"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_ETC_GIRATINA_TH"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_EEVEE"
+                "species": "SPECIES_ETC_GIRATINA_TH"
               }
             ]
           },

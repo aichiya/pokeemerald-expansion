@@ -11787,6 +11787,16 @@
       "border_filepath": "data/layouts/MagicWorld_Center_Winter/border.bin",
       "blockdata_filepath": "data/layouts/MagicWorld_Center_Winter/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_SINNOH_ETERNA_CITY",
+      "name": "SinnohEternaCity_Layout",
+      "width": 60,
+      "height": 55,
+      "primary_tileset": "gTileset_General2",
+      "secondary_tileset": "gTileset_Eterna",
+      "border_filepath": "data/layouts/SinnohEternaCity/border.bin",
+      "blockdata_filepath": "data/layouts/SinnohEternaCity/map.bin"
     }
   ]
 }

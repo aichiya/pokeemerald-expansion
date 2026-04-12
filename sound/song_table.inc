@@ -1397,7 +1397,7 @@ gSongTable::
 	song mus_trc_storm_and_fire2, MUSIC_PLAYER_BGM, 0
 	song mus_trc_kaze, MUSIC_PLAYER_BGM, 0
 	song mus_madoka_sis_puella, MUSIC_PLAYER_BGM, 0
-	song dummy_song_header, MUSIC_PLAYER_BGM, 0
+	song mus_pkmn_glitchxcity_eterna_forest, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0

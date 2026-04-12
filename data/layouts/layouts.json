@@ -11797,6 +11797,16 @@
       "secondary_tileset": "gTileset_Eterna",
       "border_filepath": "data/layouts/SinnohEternaCity/border.bin",
       "blockdata_filepath": "data/layouts/SinnohEternaCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANOTHER_WORLD_SPIRITUAL_WORLD",
+      "name": "AnotherWorldSpiritualWorld_Layout",
+      "width": 19,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/AnotherWorldSpiritualWorld/border.bin",
+      "blockdata_filepath": "data/layouts/AnotherWorldSpiritualWorld/map.bin"
     }
   ]
 }

@@ -2217,3 +2217,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/MagicWorld_North2_Winter/scripts.inc"
 
 	.include "data/maps/SinnohEternaCity/scripts.inc"
+
+	.include "data/maps/AnotherWorldSpiritualWorld/scripts.inc"

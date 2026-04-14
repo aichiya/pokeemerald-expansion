@@ -8139,7 +8139,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         {
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.1));
             if (ctx->updateFlags)
-                RecordAbilityBattle(battlerDef, ctx->abilityDef);
+                RecordAbilityBattle(battlerDef, ctx->abilities[ctx->battlerDef]);
         }
         break;
     case ABILITY_SABOTEN_CORE:
@@ -8274,7 +8274,7 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
 
     if (moveEffect == EFFECT_FOUL_PLAY)
     {
-        if (ctx->abilityDef == ABILITY_ABERRANT)
+        if (ctx->abilities[ctx->battlerDef] == ABILITY_ABERRANT)
         {
             if (IsBattleMovePhysical(move))
             {
@@ -8303,7 +8303,7 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
     }
     else if (moveEffect == EFFECT_MIND_HACK)
     {
-        if (ctx->abilityDef == ABILITY_ABERRANT)
+        if (ctx->abilities[ctx->battlerDef] == ABILITY_ABERRANT)
         {
             if (IsBattleMoveSpecial(move))
             {
@@ -8688,7 +8688,7 @@ static inline u32 CalcDefenseStat(struct DamageContext *ctx)
     def = gBattleMons[battlerDef].defense;
     spDef = gBattleMons[battlerDef].spDefense;
 
-    if (ctx->abilityAtk == ABILITY_ABERRANT)
+    if (ctx->abilities[ctx->battlerAtk] == ABILITY_ABERRANT)
     {
         if (moveEffect == EFFECT_REVERSE_PSYSHOCK && IsBattleMovePhysical(move))
         {
@@ -8814,7 +8814,7 @@ static inline u32 CalcDefenseStat(struct DamageContext *ctx)
         }
         break;
     case ABILITY_WINTER_GIFT:
-        if ((IsBattlerWeatherAffected(ctx->holdEffectDef, ctx->weather, B_WEATHER_SNOW) || IsBattlerWeatherAffected(ctx->holdEffectDef, ctx->weather, B_WEATHER_HAIL)) && !usesDefStat)
+        if ((IsBattlerWeatherAffected(ctx->holdEffects[ctx->battlerDef], ctx->weather, B_WEATHER_SNOW) || IsBattlerWeatherAffected(ctx->holdEffects[ctx->battlerDef], ctx->weather, B_WEATHER_HAIL)) && !usesDefStat)
         {
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
             if (ctx->updateFlags)
@@ -9025,7 +9025,7 @@ static inline uq4_12_t GetBurnOrFrostBiteModifier(struct DamageContext *ctx)
 
     if (gBattleMons[ctx->battlerAtk].status1 & (STATUS1_BURN | STATUS1_FROSTBITE)
         && (B_BURN_FACADE_DMG < GEN_6 || moveEffect != EFFECT_FACADE)
-        && ctx->abilityAtk == ABILITY_PURE_WHITE)
+        && ctx->abilities[ctx->battlerAtk] == ABILITY_PURE_WHITE)
         return UQ_4_12(1.5);
     if (gBattleMons[ctx->battlerAtk].status1 & STATUS1_BURN
         && IsBattleMovePhysical(ctx->move)
@@ -9867,7 +9867,7 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         mod = UQ_4_12(1.0);
     if (GetMoveEffect(ctx->move) == EFFECT_DEFECTIVE_MIRACLE && (defType == TYPE_NEW_DARK || defType == TYPE_NEW_DIVINE))
         mod = UQ_4_12(2.0);
-    if (ctx->abilityAtk == ABILITY_PRIEST_HUNTER &&
+    if (ctx->abilities[ctx->battlerAtk] == ABILITY_PRIEST_HUNTER &&
         (gBattleMons[ctx->battlerDef].species == SPECIES_CHARIZARD
         || gBattleMons[ctx->battlerDef].species == SPECIES_VENUSAUR
         || gBattleMons[ctx->battlerDef].species == SPECIES_BLASTOISE
@@ -9901,7 +9901,7 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
 
     if (GetMoveEffect(ctx->move) == EFFECT_SUPER_EFFECTIVE_ON_FOES_TYPES)
     {
-        if (ctx->abilityDef == ABILITY_MULTITYPE_LEGEND)
+        if (ctx->abilities[ctx->battlerDef] == ABILITY_MULTITYPE_LEGEND)
             mod = UQ_4_12(1.0);
         else
             mod = UQ_4_12(2.0);
@@ -9927,11 +9927,11 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
 
     if (FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE)
     {
-        if (ctx->abilityAtk == ABILITY_FANTASY_BREAKER && ctx->abilityDef == ABILITY_FANTASY_BREAKER)
+        if (ctx->abilities[ctx->battlerAtk] == ABILITY_FANTASY_BREAKER && ctx->abilities[ctx->battlerDef] == ABILITY_FANTASY_BREAKER)
             mod = UQ_4_12(1.0);
-        else if (ctx->abilityAtk == ABILITY_FANTASY_BREAKER)
+        else if (ctx->abilities[ctx->battlerAtk] == ABILITY_FANTASY_BREAKER && ctx->abilities[ctx->battlerDef] != ABILITY_FANTASY_BREAKER)
             mod = UQ_4_12(2.0);
-        else if (ctx->abilityDef == ABILITY_FANTASY_BREAKER)
+        else if (ctx->abilities[ctx->battlerAtk] != ABILITY_FANTASY_BREAKER && ctx->abilities[ctx->battlerDef] == ABILITY_FANTASY_BREAKER)
             mod = UQ_4_12(0.0);
 	}
 
@@ -10137,7 +10137,7 @@ uq4_12_t CalcPartyMonTypeEffectivenessMultiplier(enum Move move, enum Species sp
         ctx.move = move;
         ctx.moveType = moveType;
         ctx.updateFlags = FALSE;
-        ctx.abilityDef = abilityDef;
+        ctx.abilities[B_BATTLER_0] = abilityDef;
 
         MulByTypeEffectiveness(&ctx, &modifier, GetSpeciesType(speciesDef, 0));
         if (GetSpeciesType(speciesDef, 1) != GetSpeciesType(speciesDef, 0))
@@ -10191,7 +10191,7 @@ uq4_12_t GetOverworldTypeEffectiveness(struct Pokemon *mon, enum Type moveType)
     if (type2 != type1)
         MulByTypeEffectiveness(&ctx, &modifier, type2);
 
-    if ((modifier <= UQ_4_12(1.0) && (ctx.abilityDef == ABILITY_WONDER_GUARD || ctx.abilityDef == ABILITY_PLAY_GHOST)
+    if ((modifier <= UQ_4_12(1.0) && (ctx.abilities[B_BATTLER_0] == ABILITY_WONDER_GUARD || ctx.abilities[B_BATTLER_0] == ABILITY_PLAY_GHOST))
      || CanAbilityAbsorbMove(&ctx))
         modifier = UQ_4_12(0.0);
 

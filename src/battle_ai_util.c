@@ -807,7 +807,7 @@ static inline void CalcDynamicMoveDamage(struct DamageContext *ctx, u16 *medianD
             random *= RandomUniform(RNG_AI_DMG_ROLL_RANDOM, 2, 5);
         }
     }
-    else if ((ctx->abilityAtk == ABILITY_PARENTAL_BOND || ctx->abilityAtk == ABILITY_TWIN_BODY || ctx->abilityAtk == ABILITY_SIBLINGS_BOND)
+    else if ((ctx->abilities[ctx->battlerAtk] == ABILITY_PARENTAL_BOND || ctx->abilities[ctx->battlerAtk] == ABILITY_TWIN_BODY || ctx->abilities[ctx->battlerAtk] == ABILITY_SIBLINGS_BOND)
           && strikeCount == 0
           && !AI_IsDoubleSpreadMove(ctx->battlerAtk, ctx->move))
     {

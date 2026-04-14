@@ -2,7 +2,7 @@
 
         .equ    mus_thppre_street_gbc_style_grp, voicegroup206
         .equ    mus_thppre_street_gbc_style_pri, 0
-        .equ    mus_thppre_street_gbc_style_mvl, 100
+        .equ    mus_thppre_street_gbc_style_mvl, 80
         .equ    mus_thppre_street_gbc_style_rev, reverb_set+50
         .equ    mus_thppre_street_gbc_style_key, 0
 

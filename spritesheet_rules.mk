@@ -5396,6 +5396,9 @@ $(OBJEVENTGFXDIR)/people/trainer_pea.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/th_reimu.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/people/red_gsc.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
 $(OBJEVENTGFXDIR)/people/renko/walking.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 

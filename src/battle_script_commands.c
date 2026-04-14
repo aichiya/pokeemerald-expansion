@@ -15826,7 +15826,7 @@ void BS_TransformDataExecutionDecade(void)
                     }
                     default:
                     {
-                        speciesBuffer = SPECIES_ARCEUS;
+                        speciesBuffer = SPECIES_ETC_ARCEUS_TH;
                         gBattleMons[gBattlerAttacker].moves[0] = MOVE_GRIMOIRE_CALL;
                         gBattleMons[gBattlerAttacker].moves[1] = MOVE_CHAOS_JUDGMENT;
                         gBattleMons[gBattlerAttacker].moves[2] = MOVE_EXTREME_SPEED;

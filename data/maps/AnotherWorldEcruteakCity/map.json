@@ -15,9 +15,9 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_RED",
-      "x": 3,
-      "y": 6,
+      "graphics_id": "OBJ_EVENT_GFX_GSC_RED",
+      "x": 18,
+      "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,

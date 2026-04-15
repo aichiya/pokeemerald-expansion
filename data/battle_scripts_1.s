@@ -8279,6 +8279,12 @@ BattleScript_WhiteHerbRet::
 	removeitem BS_SCRIPTING
 	return
 
+BattleScript_WhiteHerbFling::
+	playanimation BS_SCRIPTING, B_ANIM_HELD_ITEM_EFFECT
+	printstring STRINGID_PKMNSITEMRESTOREDSTATUS
+	waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_ItemHealHP_RemoveItem::
 	jumpifability BS_SCRIPTING, ABILITY_RIPEN, BattleScript_ItemHealHP_RemoveItemRet_AbilityPopUp
 	goto BattleScript_ItemHealHP_RemoveItemRet_Anim

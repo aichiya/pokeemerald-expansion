@@ -210,7 +210,7 @@ extern const struct BattleMoveEffect gBattleMoveEffects[];
 
 static inline enum Move SanitizeMoveId(enum Move moveId)
 {
-    assertf(moveId < MOVE_UNAVAILABLE, "invalid move: %d", moveId)
+    assertf(moveId <= MOVE_UNAVAILABLE, "invalid move: %d", moveId)
     {
         return MOVE_NONE;
     }

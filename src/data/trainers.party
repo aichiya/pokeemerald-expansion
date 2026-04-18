@@ -690,10 +690,10 @@ Class: Aroma Lady
 Pic: Aroma Lady
 Gender: Female
 Music: Female
-Double Battle: Yes
+Double Battle: No
 AI: Check Bad Move
 
-Mew
+SPECIES_TH_ALICE_NORMAL
 Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - MOVE_TAIL_GLOW
@@ -701,7 +701,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psychic
 - MOVE_DOLL_STRINGS
 
-Altaria
+SPECIES_TH_SHIZUHA_NORMAL
 Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Morning Sun

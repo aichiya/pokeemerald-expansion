@@ -2707,12 +2707,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Saboten Core"),
         .description = COMPOUND_STRING("Increase all stats."),
         .aiRating = 10,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
-        .cantBeSuppressed = TRUE,
-        .cantBeOverwritten = TRUE,
-        .failsOnImposter = TRUE,
+//        .cantBeCopied = TRUE,
+//        .cantBeSwapped = TRUE,
+//        .cantBeTraced = TRUE,
+//        .cantBeSuppressed = TRUE,
+//        .cantBeOverwritten = TRUE,
+//        .failsOnImposter = TRUE,
     },
     
     [ABILITY_PRISMA_ZWEI] =
@@ -2720,12 +2720,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Prisma Zwei"),
         .description = COMPOUND_STRING("Prevents & avoids status."),
         .aiRating = 10,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
-        .cantBeSuppressed = TRUE,
-        .cantBeOverwritten = TRUE,
-        .failsOnImposter = TRUE,
+//        .cantBeCopied = TRUE,
+//        .cantBeSwapped = TRUE,
+//        .cantBeTraced = TRUE,
+//        .cantBeSuppressed = TRUE,
+//        .cantBeOverwritten = TRUE,
+//        .failsOnImposter = TRUE,
     },
 
     [ABILITY_KALEID_RUBY] =
@@ -2810,12 +2810,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Flora Elvis"),
         .description = COMPOUND_STRING("Ups attack + protection."),
         .aiRating = 10,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
-        .cantBeSuppressed = TRUE,
-        .cantBeOverwritten = TRUE,
-        .failsOnImposter = TRUE,
+//        .cantBeCopied = TRUE,
+//        .cantBeSwapped = TRUE,
+//        .cantBeTraced = TRUE,
+//        .cantBeSuppressed = TRUE,
+//        .cantBeOverwritten = TRUE,
+//        .failsOnImposter = TRUE,
     },
 
     [ABILITY_FORTISSIMO] =
@@ -2842,7 +2842,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
-        .failsOnImposter = TRUE,
+//        .failsOnImposter = TRUE,
     },
 
     [ABILITY_DARKNESS_SURGE] =
@@ -2876,7 +2876,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
-        .failsOnImposter = TRUE,
+    //    .failsOnImposter = TRUE,
     },
 
     [ABILITY_RIDE_SUMMON] =
@@ -2903,7 +2903,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
-        .failsOnImposter = TRUE,
+    //    .failsOnImposter = TRUE,
     },
 
     [ABILITY_GUARD_ARMOR] =

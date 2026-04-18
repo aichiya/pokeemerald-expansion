@@ -1488,7 +1488,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, enum Species species, u8 level, u32
     bool32 isShiny;
     u8 gameMet;
 
-    if(GetCurrentWeather() == WEATHER_LIGHT_ORB_UP)
+    if(GetCurrentWeather() == WEATHER_LIGHT_ORB_UP && GetCurrentRegionMapSectionId() != MAPSEC_ETC_DIMENSIONAL_RIFT)
     {
         FlagSet(FLAG_FORCE_SHINY);
         SetWeather(WEATHER_SUNNY);
@@ -1668,7 +1668,7 @@ void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixe
     u8 selectedIvs[LEGENDARY_PERFECT_IV_COUNT];
     bool32 isShiny;
 
-    if(GetCurrentWeather() == WEATHER_LIGHT_ORB_UP)
+    if(GetCurrentWeather() == WEATHER_LIGHT_ORB_UP && GetCurrentRegionMapSectionId() != MAPSEC_ETC_DIMENSIONAL_RIFT)
     {
         FlagSet(FLAG_FORCE_SHINY);
         SetWeather(WEATHER_SUNNY);
@@ -6881,6 +6881,8 @@ u16 GetBattleBGM(void)
             else if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_NOBETA
              || GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_NONOTA)
                 return MUS_THPPRF_NOBETA_2;
+            else if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_EMESGESEY)
+                return MUS_HG_VS_ARCEUS;
             else
                 return MUS_VS_WILD;
         }

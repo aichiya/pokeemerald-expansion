@@ -130789,7 +130789,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .levelUpLearnset = sPcInfinitySulRCureBlossomSuperLevelUpLearnset,
         .teachableLearnset = sPcInfinitySulRCureBlossomSuperTeachableLearnset,
         .eggMoveLearnset = sPcInfinitySulRCureBlossomSuperEggMoveLearnset,
-
+        .isGigantamax = TRUE,
         .formSpeciesIdTable = sPcCureBlossomFormSpeciesIdTable,
         .formChangeTable = sPcCureBlossomSuperFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
@@ -130874,7 +130874,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .levelUpLearnset = sPcInfinitySulRCureMarineSuperLevelUpLearnset,
         .teachableLearnset = sPcInfinitySulRCureMarineSuperTeachableLearnset,
         .eggMoveLearnset = sPcInfinitySulRCureMarineSuperEggMoveLearnset,
-
+        .isGigantamax = TRUE,
         .formSpeciesIdTable = sPcCureMarineFormSpeciesIdTable,
         .formChangeTable = sPcCureMarineSuperFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
@@ -130959,7 +130959,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .levelUpLearnset = sPcInfinitySulRCureSunshineSuperLevelUpLearnset,
         .teachableLearnset = sPcInfinitySulRCureSunshineSuperTeachableLearnset,
         .eggMoveLearnset = sPcInfinitySulRCureSunshineSuperEggMoveLearnset,
-
+        .isGigantamax = TRUE,
         .formSpeciesIdTable = sPcCureSunshineFormSpeciesIdTable,
         .formChangeTable = sPcCureSunshineSuperFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
@@ -131044,7 +131044,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .levelUpLearnset = sPcInfinitySulRCureMoonlightSuperLevelUpLearnset,
         .teachableLearnset = sPcInfinitySulRCureMoonlightSuperTeachableLearnset,
         .eggMoveLearnset = sPcInfinitySulRCureMoonlightSuperEggMoveLearnset,
-
+        .isGigantamax = TRUE,
         .formSpeciesIdTable = sPcCureMoonlightFormSpeciesIdTable,
         .formChangeTable = sPcCureMoonlightSuperFormChangeTable,
         .teachingType = DEFAULT_LEARNING,

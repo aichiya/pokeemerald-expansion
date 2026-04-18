@@ -15681,153 +15681,273 @@ void BS_TransformDataExecutionDecade(void)
                         gBattleMons[gBattlerAttacker].moves[3] = MOVE_AEROBLAST;
                         break;
                     }
-                    case MOVE_MOCKUP_PHYSICAL_MIASMA: // to do
+                    case MOVE_MOCKUP_PHYSICAL_MIASMA:
+                    {
+                        speciesBuffer = SPECIES_PC_MILKY_ROSE_SUPER;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_DIRE_CLAW;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_LEAF_BLADE;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_PLAY_ROUGH;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_SLEEP_POWDER;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_MIASMA:
                     {
-                        speciesBuffer = SPECIES_ETERNATUS;
+                        speciesBuffer = SPECIES_TH_MEDICINE_MUI;
                         gBattleMons[gBattlerAttacker].moves[0] = MOVE_POISON_GAS;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_DYNAMAX_CANNON;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_SHADOW_FORCE;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_MIASMA_TERRAIN;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ENERGY_BALL;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_FORCE_PALM;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_SLEEP_POWDER;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_EARTH:
+                    {
+                        speciesBuffer = SPECIES_MOE_TYRANITAR_MEGA;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_ROCK_THROW;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_NEW_IMPACT_RUSH;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_CRUNCH;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_DRAGON_DANCE;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_EARTH:
                     {
-                        speciesBuffer = SPECIES_GROUDON_PRIMAL;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_SCORCHING_SANDS;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_PRECIPICE_BLADES;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_FLAMETHROWER;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_ROCK_SLIDE;
+                        speciesBuffer = SPECIES_PC_CURE_ACE_SUPER;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_EARTH_POWER;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_FLAMETHROWER;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_NEW_IMPACT_RUSH;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_WILL_O_WISP;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_BEAST:
+                    {
+                        speciesBuffer = SPECIES_YYYI_TAKASHIMA_YUUNA_KIRIFUDA2;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_NEW_IMPACT_RUSH;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ROCK_THROW;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_DRAIN_PUNCH;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_DRAGON_DANCE;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_BEAST:
                     {
-                        speciesBuffer = SPECIES_GENESECT;
+                        speciesBuffer = SPECIES_PC_INFINITY_SUL_R_CURE_MARINE_SUPER;
                         gBattleMons[gBattlerAttacker].moves[0] = MOVE_BUG_BUZZ;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_TECHNO_BLAST;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_FLAMETHROWER;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_FLASH_CANNON;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_CARD_INCLUDE_EARTHLIGHT_STARBOW;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_ORIGIN_PULSE;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_GRACE_OF_DREAM;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_HEART:
+                    {
+                        speciesBuffer = SPECIES_MOE_HO_OH;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_BODY_SLAM;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_SACRED_FIRE;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_FLARE_BLITZ;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_SUBSTITUTE;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_HEART:
                     {
-                        speciesBuffer = SPECIES_GARDEVOIR_MEGA;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_MOONBLAST;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_EXPANDING_FORCE;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_CLASSIC_AMNESIA;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_ENERGY_BALL;
+                        speciesBuffer = SPECIES_ETC_NEPGEAR_GODDESS;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_FORBIDDEN_TEMPTATION;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_SDF_MAIN_GUN;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_BINARY_CRUSHER;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_LIGHT_SCREEN;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_NETHER:
+                    {
+                        speciesBuffer = SPECIES_BGHS_MISAKI_FLORA_ELVIS;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_SHADOW_CLAW;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ADVENT_LYCORIS;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_DIRE_CLAW;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_HONE_CLAWS;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_NETHER:
                     {
-                        speciesBuffer = SPECIES_NECROZMA_DAWN_WINGS;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_NIGHTMARE;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_PHOTON_GEYSER;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_EARTH_POWER;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_HEAT_WAVE;
+                        speciesBuffer = SPECIES_ETC_NONOTA;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_ASTRAL_BARRAGE;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_PSYCHIC;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_NEW_WINTER_BLAST;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_DARK_VOID;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_METAL:
+                    {
+                        speciesBuffer = SPECIES_ETC_NEPTUNE_GODDESS;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_X_SCISSOR;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_NEPTUNE_BREAK;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_PLASMA_BLADE;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_NUZZLE;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_METAL:
                     {
-                        speciesBuffer = SPECIES_MAGEARNA_ORIGINAL;
+                        speciesBuffer = SPECIES_ETC_DIALGA_TH;
                         gBattleMons[gBattlerAttacker].moves[0] = MOVE_FLASH_CANNON;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_FLEUR_CANNON;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_PSYSHOCK;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_TRICK_ROOM;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ROAR_OF_TIME;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_DRAGON_PULSE;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_ICE_BEAM;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_FIRE:
+                    {
+                        speciesBuffer = SPECIES_BGHS_MIKI_FLORA_ELVIS;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_BITTER_BLADE;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ADVENT_GERBERA;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_SLASH;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_GRACE_OF_DREAM;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_FIRE:
                     {
-                        speciesBuffer = SPECIES_CHI_YU;
+                        speciesBuffer = SPECIES_MOE_CHARIZARD_MEGA_Y;
                         gBattleMons[gBattlerAttacker].moves[0] = MOVE_FLAMETHROWER;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_NASTY_PLOT;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_DARK_PULSE;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_HURRICANE;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_SOLAR_BEAM;
                         gBattleMons[gBattlerAttacker].moves[3] = MOVE_WILL_O_WISP;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_WATER:
+                    {
+                        speciesBuffer = SPECIES_STARMIE_MEGA;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_LIQUIDATION;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_FORCE_PALM;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_AQUA_JET;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_PSYCHIC;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_WATER:
                     {
-                        speciesBuffer = SPECIES_KYOGRE_PRIMAL;
+                        speciesBuffer = SPECIES_MOE_IRON_BUNDLE;
                         gBattleMons[gBattlerAttacker].moves[0] = MOVE_SCALD;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ORIGIN_PULSE;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_THUNDER;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_ICE_BEAM;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ICE_BEAM;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_FLASH_CANNON;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_TAUNT;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_NATURE:
+                    {
+                        speciesBuffer = SPECIES_TH_YUUKA_REMIND_R_ATTACK;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_ROSES_RAPIER;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_DRAGON_CLAW;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_BRICK_BREAK;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_TWIN_SPARK;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_NATURE:
                     {
-                        speciesBuffer = SPECIES_CALYREX_SHADOW;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_ENERGY_BALL;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ASTRAL_BARRAGE;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_THUNDER;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_POLLEN_PUFF;
+                        speciesBuffer = SPECIES_PC_CURE_FLORA_HCPC;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_POLLEN_PUFF;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_NEW_FANTASY_HEAVEN;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_AURA_SPHERE;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_GRACE_OF_DREAM;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_WIND:
+                    {
+                        speciesBuffer = SPECIES_PC_CURE_WINDY_EGRET_R_CURE_EGRET_NORMAL;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_AIR_SLASH;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_DRAIN_PUNCH;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_ILLUSIONARY_DOMINATION;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_FLOWER_SHIELD;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_WIND:
                     {
-                        speciesBuffer = SPECIES_RAYQUAZA_MEGA;
+                        speciesBuffer = SPECIES_MOE_PIDGEOT_MEGA;
                         gBattleMons[gBattlerAttacker].moves[0] = MOVE_AEROBLAST;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_DRAGON_ASCENT;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_EXTREME_SPEED;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_ICE_BEAM;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_PSYSHOCK;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_HEAT_WAVE;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_TAILWIND;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_REASON:
+                    {
+                        speciesBuffer = SPECIES_MEWTWO_MEGA_X;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_PSYCHO_CUT;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_BRICK_BREAK;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_KNOCK_OFF;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_CONFUSE_RAY;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_REASON:
                     {
-                        speciesBuffer = SPECIES_MEWTWO_MEGA_Y;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_EERIE_SPELL;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_THUNDERBOLT;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_FLAMETHROWER;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_ICE_BEAM;
+                        speciesBuffer = SPECIES_ETC_ILLYASVIEL_ZWEI;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_QUINTETT_FEUER;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_MOONBLAST;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_MYSTICAL_FIRE;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_ATTRACT;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_ICE:
+                    {
+                        speciesBuffer = SPECIES_PC_CURE_BEAUTY_ULTRA;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_ICE_BLADE;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_HIGH_JUMP_KICK;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_BODY_SLAM;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_GLACIATE;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_ICE:
                     {
-                        speciesBuffer = SPECIES_KYUREM_WHITE;
+                        speciesBuffer = SPECIES_MOE_ARTICUNO; // SPECIES_BGHS_SHIHO_GRIEF;
                         gBattleMons[gBattlerAttacker].moves[0] = MOVE_ICE_BEAM;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_FUSION_FLARE;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_PSYCHIC;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_DRACO_METEOR;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_HEAT_WAVE;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_FEATHER_DANCE;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_CALM_MIND;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_DIVINE:
+                    {
+                        speciesBuffer = SPECIES_YYYI_YUUKI_YUUNA_DAIMANKAI;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_ARM_THRUST;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_YUUSHA_PUNCH;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_JET_PUNCH;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_GRACE_OF_DREAM;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_DIVINE:
                     {
-                        speciesBuffer = SPECIES_MIRAIDON;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_FLASH;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ELECTRO_DRIFT;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_DAZZLING_GLEAM;
-                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_DRACO_METEOR;
+                        speciesBuffer = SPECIES_ETC_MADOKA_ULTIMATE;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_DRACO_METEOR;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_RAIN_OF_ARROWS;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_MORNING_SUN;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_GEOMANCY;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_DARK:
+                    {
+                        speciesBuffer = SPECIES_MOE_MEWTWO_MEGA_Y;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_NIGHT_SLASH;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_NEW_IMPACT_RUSH;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_X_SCISSOR;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_RECOVER;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_DARK:
                     {
-                        speciesBuffer = SPECIES_DARKRAI;
+                        speciesBuffer = SPECIES_TH_ALICE_BLACK_R_ATTACK;
                         gBattleMons[gBattlerAttacker].moves[0] = MOVE_DARK_PULSE;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_DARK_VOID;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_THUNDERBOLT;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_DOLL_STRINGS;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_PSYCHIC;
                         gBattleMons[gBattlerAttacker].moves[3] = MOVE_ICE_BEAM;
                         break;
                     }
                     case MOVE_MOCKUP_PHYSICAL_ELECTRIC:
+                    {
+                        speciesBuffer = SPECIES_TH_REIMU_L_UNKNOWN;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_VOLT_TACKLE;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_HIGH_JUMP_KICK;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_BODY_SLAM;
+                        gBattleMons[gBattlerAttacker].moves[3] = MOVE_ATTRACT;
+                        break;
+                    }
                     case MOVE_MOCKUP_SPECIAL_ELECTRIC:
                     {
-                        speciesBuffer = SPECIES_RAGING_BOLT;
+                        speciesBuffer = SPECIES_MOE_RAICHU_MEGA_X;
                         gBattleMons[gBattlerAttacker].moves[0] = MOVE_THUNDERBOLT;
-                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_THUNDERCLAP;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_SNARL;
+                        gBattleMons[gBattlerAttacker].moves[1] = MOVE_ENERGY_BALL;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_SURF;
                         gBattleMons[gBattlerAttacker].moves[3] = MOVE_THUNDER_WAVE;
                         break;
                     }

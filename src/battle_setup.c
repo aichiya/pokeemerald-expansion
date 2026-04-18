@@ -476,7 +476,7 @@ static void DoBattlePyramidTrainerHillBattle(void)
 // Initiates battle where Wally catches Ralts
 void StartWallyTutorialBattle(void)
 {
-	CreateMonWithNatureGift1(&gParties[B_TRAINER_1][0], SPECIES_DRAGONAIR, 50, 32, 15);
+	CreateMonWithNatureGift1(&gParties[B_TRAINER_1][0], SPECIES_MOE_DRAGONAIR, 50, 32, 15);
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_ReturnToFieldContinueScriptPlayMapMusic;
     gBattleTypeFlags = BATTLE_TYPE_CATCH_TUTORIAL;

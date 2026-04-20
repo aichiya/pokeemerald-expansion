@@ -10502,7 +10502,7 @@ BattleScript_ManicEchoLoop:
 	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_ManicEchoIncreaseAtkOrSpAtk
 BattleScript_ManicEchoLoopIncrement:
 	addbyte gBattlerTarget, 1
-	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_LastCadenzaLoop
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_ManicEchoLoop
 	copybyte sBATTLER, gBattlerAttacker
 	destroyabilitypopup
 	restoretarget

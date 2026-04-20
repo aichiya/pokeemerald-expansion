@@ -906,6 +906,7 @@ extern const u8 gBattleAnimMove_ExcaliburGalatine[];
 extern const u8 gBattleAnimMove_SamadhiFlame[];
 extern const u8 gBattleAnimMove_UnlimitedBladeWorks[];
 extern const u8 gBattleAnimMove_GraceOfDream[];
+extern const u8 gBattleAnimMove_PowerFortissimo[];
 extern const u8 gBattleAnimMove_ShadowFire[];
 extern const u8 gBattleAnimMove_ShadowBolt[];
 extern const u8 gBattleAnimMove_ShadowChill[];

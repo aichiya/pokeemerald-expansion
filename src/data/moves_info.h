@@ -10712,9 +10712,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Strikes three times.\n"
             "May cause flinching."),
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = 35,
         .type = TYPE_NEW_BEAST,
-        .accuracy = 75,
+        .accuracy = 95,
         .pp = 10,
         .target = TARGET_SELECTED,
         .priority = 0,
@@ -26416,15 +26416,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_GraceOfDream,
     },
 
-    [MOVE_POWER_FORTISSIMO] =  // To do
+    [MOVE_POWER_FORTISSIMO] =
     {
         .name = COMPOUND_STRING("Power Fortissimo"),
         .description = COMPOUND_STRING(
             "Sound-powered impact that\n"
             "may flinch the target."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_REVELATION_DANCE,
         .power = 80,
-        .type = TYPE_NEW_NATURE,
+        .type = TYPE_NEW_ILLUSION,
         .accuracy = 100,
         .pp = 10,
         .target = TARGET_SELECTED,
@@ -26440,7 +26440,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Superpower,
+        .battleAnimScript = gBattleAnimMove_PowerFortissimo,
     },
 
     [MOVE_YUUSHA_PUNCH] =  // edited desc, effect

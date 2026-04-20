@@ -90,9 +90,41 @@ bool32 CanDynamax(enum BattlerId battler)
     }
 
     // Check if species isn't allowed to Dynamax.
-    if (GET_BASE_SPECIES_ID(species) == SPECIES_ZACIAN
-        || GET_BASE_SPECIES_ID(species) == SPECIES_ZAMAZENTA
-        || GET_BASE_SPECIES_ID(species) == SPECIES_ETERNATUS)
+
+    if (GetMonData(GetBattlerMon(battler), MON_DATA_GIGANTAMAX_FACTOR) == FALSE)
+        return FALSE;
+
+    if (!(GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_VENUSAUR
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_BLASTOISE
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_CHARIZARD
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_BUTTERFREE
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_PIKACHU
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MEOWTH
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MACHAMP
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_GENGAR
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_KINGLER
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_LAPRAS
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_EEVEE
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_SNORLAX
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_VENUSAUR
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_BLASTOISE
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_CHARIZARD
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_BUTTERFREE
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_PIKACHU
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_MEOWTH
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_MACHAMP
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_GENGAR
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_KINGLER
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_LAPRAS
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_EEVEE
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_MOE_SNORLAX
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_TH_SUIKA_NORMAL
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_TH_SUIKA_ATTACK
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_TH_SUIKA_TECH
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_PC_CURE_BLOSSOM_SUPER
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_PC_CURE_MARINE_SUPER
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_PC_CURE_SUNSHINE_SUPER
+        || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_PC_CURE_MOONLIGHT_SUPER))
         return FALSE;
 
     // Check if Trainer has already Dynamaxed.

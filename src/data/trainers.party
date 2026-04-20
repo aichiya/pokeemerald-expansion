@@ -685,29 +685,21 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Earthquake
 
 === TRAINER_VIOLET ===
-Name: Violet
-Class: Aroma Lady
-Pic: Aroma Lady
+Name: Reimu
+Class: TRAINER_CLASS_0XF9
+Pic: TRAINER_PIC_TH_REIMU_CTC
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Basic Trainer
 
-SPECIES_TH_ALICE_NORMAL
+SPECIES_TH_REIMU_L_UNKNOWN
 Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- MOVE_TAIL_GLOW
-- Glacial Lance
-- Psychic
-- MOVE_DOLL_STRINGS
-
-SPECIES_TH_SHIZUHA_NORMAL
-Level: 100
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Morning Sun
-- Earth Power
-- MOVE_BEAT_UP_CALLING
-- Leech Seed
+- Volt Tackle
+- Luster Purge
+- MOVE_DIMENSION_KICK
+- MOVE_PERSUASION_NEEDLE
 
 === TRAINER_ROSE_2 ===
 Name: ROSE

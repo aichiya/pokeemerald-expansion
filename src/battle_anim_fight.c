@@ -250,6 +250,31 @@ const struct SpriteTemplate gSuperpowerFireballSpriteTemplate =
     .callback = AnimSuperpowerFireball,
 };
 
+const struct SpriteTemplate gPowerFortissimoOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CIRCLE_OF_LIGHT_FF,
+    .paletteTag = ANIM_TAG_CIRCLE_OF_LIGHT_FF,
+    .oam = &gOamData_AffineDouble_ObjBlend_64x64,
+    .affineAnims = sAffineAnims_SuperpowerOrb,
+    .callback = AnimSuperpowerOrb,
+};
+
+const struct SpriteTemplate gPowerFortissimoFlowerSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FLOWER_SINGLE,
+    .paletteTag = ANIM_TAG_FLOWER_SINGLE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .callback = AnimSuperpowerRock,
+};
+
+const struct SpriteTemplate gPowerFortissimoFireballSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_METEOR,
+    .paletteTag = ANIM_TAG_METEOR,
+    .oam = &gOamData_AffineOff_ObjNormal_64x64,
+    .callback = AnimSuperpowerFireball,
+};
+
 const struct SpriteTemplate gArmThrustHandSpriteTemplate =
 {
     .tileTag = ANIM_TAG_HANDS_AND_FEET,

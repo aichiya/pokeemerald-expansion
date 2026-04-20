@@ -1451,6 +1451,8 @@ const struct BattleAnimation gBattleAnimTable[ANIM_TAG_COUNT] =
     BATTLE_ANIMATION(ANIM_TAG_CLAW_SLASH_REVERSE, gBattleAnimSpriteGfx_ClawSlashReverse, 0x0A00, gBattleAnimSpritePal_PoisonBubble),
     BATTLE_ANIMATION(ANIM_TAG_SERVANT_CARD, gBattleAnimSpriteGfx_ServantCard, 0x0800, gBattleAnimSpritePal_ServantCard),
     BATTLE_ANIMATION(ANIM_TAG_SWORDS_DIAGONAL, gBattleAnimSpriteGfx_SwordsDiagonal, 0x0C00, gBattleAnimSpritePal_SwordsDiagonal),
+    BATTLE_ANIMATION(ANIM_TAG_FLOWER_SINGLE, gBattleAnimSpriteGfx_FlowerSingle, 0x0280, gBattleAnimSpritePal_FlowerSingle),
+    BATTLE_ANIMATION(ANIM_TAG_CIRCLE_OF_LIGHT_FF, gBattleAnimSpriteGfx_CircleOfLightFF, 0x0800, gBattleAnimSpritePal_CircleOfLightFF),
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =

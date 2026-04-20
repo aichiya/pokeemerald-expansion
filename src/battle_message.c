@@ -948,6 +948,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNRAISESATTACKWITH]                 = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} raises {B_DEF_NAME_WITH_PREFIX2}'s Attack!"), 
     [STRINGID_PKMNRAISESSPATTACKWITH]               = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}'s {B_SCR_ABILITY} raises {B_DEF_NAME_WITH_PREFIX2}'s Special Attack!"),
     [STRINGID_FAINTINONE]                           = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} will faint in one turn!"),
+    [STRINGID_TRANSFORMINTOMUGEN]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is turning into Infinity Silhouette!"),
+    [STRINGID_TRANSFORMINTOMISSINGPOWER]            = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is using Missing Power!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

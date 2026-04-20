@@ -12897,3 +12897,8 @@ bool32 IsBattlersFirstTurn(enum BattlerId battler)
     return gBattleStruct->battlerState[battler].isFirstTurn == 1
         || gBattleStruct->battlerState[battler].isFirstTurn == 2;
 }
+
+struct PartyState *GetBattlerPartyState(enum BattlerId battler)
+{
+    return &gBattleStruct->partyState[GetBattlerTrainer(battler)][gBattlerPartyIndexes[battler]];
+}

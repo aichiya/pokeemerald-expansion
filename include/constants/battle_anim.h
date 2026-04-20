@@ -634,12 +634,13 @@ enum AnimBattler
 #define B_ANIM_SAFARI_REACTION          60
 #define B_ANIM_FORM_CHANGE_INSTANT      61
 #define B_ANIM_FORM_CHANGE_DISGUISE     62
-#define B_ANIM_COUNTER_SLASH            63
-#define B_ANIM_EX_SHADOW_SKY_CONTINUES  64
-#define B_ANIM_ULTRA_MEDICINE           65
-#define B_ANIM_RIDE_SUMMON              66
-#define B_ANIM_ULTRA_SEIGA              67
-#define B_ANIM_GRACE_OF_DREAM_END_TURN  68
+#define B_ANIM_HELD_ITEM_BERRY          63
+#define B_ANIM_COUNTER_SLASH            64
+#define B_ANIM_EX_SHADOW_SKY_CONTINUES  65
+#define B_ANIM_ULTRA_MEDICINE           66
+#define B_ANIM_RIDE_SUMMON              67
+#define B_ANIM_ULTRA_SEIGA              68
+#define B_ANIM_GRACE_OF_DREAM_END_TURN  69
 
 #define LAST_B_ANIMS_GENERAL            B_ANIM_GRACE_OF_DREAM_END_TURN
 #define NUM_B_ANIMS_GENERAL             (LAST_B_ANIMS_GENERAL + 1)

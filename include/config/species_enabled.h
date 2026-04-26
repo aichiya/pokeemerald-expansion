@@ -932,6 +932,12 @@
 #define P_FAMILY_TH_CHIYARI                  P_GEN_9_POKEMON
 #define P_FAMILY_TH_HISAMI                   P_GEN_9_POKEMON
 #define P_FAMILY_TH_ZANMU                    P_GEN_9_POKEMON
+#define P_FAMILY_TH_UBAME                    P_GEN_9_POKEMON
+#define P_FAMILY_TH_CHIMI                    P_GEN_9_POKEMON
+#define P_FAMILY_TH_NAREKO                   P_GEN_9_POKEMON
+#define P_FAMILY_TH_YUIMAN                   P_GEN_9_POKEMON
+#define P_FAMILY_TH_ARIYA                    P_GEN_9_POKEMON
+#define P_FAMILY_TH_NINA                     P_GEN_9_POKEMON
 #define P_FAMILY_TH_KASEN                    P_GEN_9_POKEMON
 #define P_FAMILY_TH_TENMA                    P_GEN_9_POKEMON
 #define P_FAMILY_TH_SENDAI                   P_GEN_9_POKEMON

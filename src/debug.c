@@ -5230,7 +5230,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_TRC_KAZE) \
     X(MUS_MADOKA_SIS_PUELLA) \
     X(MUS_PKMN_GLITCHXCITY_ETERNA_FOREST) \
-    X(MUS_DUMMY_1392) \
+    X(MUS_ETC_MELOMPAT_LEBIH_TINGGI) \
     X(MUS_DUMMY_1393) \
     X(MUS_DUMMY_1394) \
     X(MUS_DUMMY_1395) \

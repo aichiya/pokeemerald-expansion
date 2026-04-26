@@ -48591,62 +48591,62 @@ static const u16 sMissingnoPlayableTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1630TeachableLearnset[] = {
+static const u16 sThUbameChibiTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1631TeachableLearnset[] = {
+static const u16 sThUbameNormalTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1632TeachableLearnset[] = {
+static const u16 sThChimiChibiTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1633TeachableLearnset[] = {
+static const u16 sThChimiNormalTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1634TeachableLearnset[] = {
+static const u16 sThNarekoChibiTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1635TeachableLearnset[] = {
+static const u16 sThNarekoNormalTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1636TeachableLearnset[] = {
+static const u16 sThYuimanChibiTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1637TeachableLearnset[] = {
+static const u16 sThYuimanNormalTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1638TeachableLearnset[] = {
+static const u16 sThAriyaChibiTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1639TeachableLearnset[] = {
+static const u16 sThAriyaNormalTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1640TeachableLearnset[] = {
+static const u16 sThNinaChibiTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1641TeachableLearnset[] = {
+static const u16 sThNinaNormalTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
@@ -50366,22 +50366,22 @@ static const u16 sFragmon2029TeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon2030TeachableLearnset[] = {
+static const u16 sEtcSunnyTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon2031TeachableLearnset[] = {
+static const u16 sEtcPurikuheartTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon2032TeachableLearnset[] = {
+static const u16 sEtcKecleonPmdTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon2033TeachableLearnset[] = {
+static const u16 sEtcMoeKecleonPmdTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };

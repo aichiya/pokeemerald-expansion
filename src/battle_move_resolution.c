@@ -1137,17 +1137,17 @@ static enum CancelerResult CancelerMoveFailure(struct BattleCalcValues *cv)
         if (!IS_BATTLER_OF_TYPE(cv->battlerAtk, GetMoveArgType(cv->move)))
             battleScript = BattleScript_ButItFailed;
         break;
-    case EFFECT_DARK_VOID:
+/*    case EFFECT_DARK_VOID:
         if (gBattleStruct->bouncedMoveIsUsed)
             break;
         if (B_DARK_VOID_FAIL >= GEN_7 && gBattleMons[cv->battlerAtk].species != SPECIES_DARKRAI)
             battleScript = BattleScript_PokemonCantUseTheMove;
         break;
     case EFFECT_AURA_WHEEL:
-        if (gBattleMons[cv->battlerAtk].species != SPECIES_MORPEKO_FULL_BELLY
-         && gBattleMons[cv->battlerAtk].species != SPECIES_MORPEKO_HANGRY)
+        if (gBattleMons[cv->battlerAtk].species != SPECIES_ETC_SUNNY
+         && gBattleMons[cv->battlerAtk].species != SPECIES_ETC_OMORI)
             battleScript = BattleScript_PokemonCantUseTheMove;
-        break;
+        break; */
     case EFFECT_AURORA_VEIL:
         if (!(gBattleWeather & B_WEATHER_ICY_ANY && HasWeatherEffect()))
             battleScript = BattleScript_ButItFailed;

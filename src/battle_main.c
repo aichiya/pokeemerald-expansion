@@ -550,7 +550,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_0XF5] = { _("Trainer 0xF5") },
     [TRAINER_CLASS_0XF6] = { _("Trainer 0xF6") },
     [TRAINER_CLASS_0XF7] = { _("Trainer 0xF7") },
-    [TRAINER_CLASS_0XF8] = { _("Trainer 0xF8") },
+    [TRAINER_CLASS_0XF8] = { _("Cure") },
     [TRAINER_CLASS_0XF9] = { _("Dystopian Shrine Maiden") },
     [TRAINER_CLASS_0XFA] = { _("Romhack Developer") },
     [TRAINER_CLASS_0XFB] = { _("Wanderer") },
@@ -6321,7 +6321,7 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
             return TYPE_MYSTERY;
     }
     else if (moveEffect == EFFECT_AURA_WHEEL
-          && species == SPECIES_MORPEKO_HANGRY
+          && species == SPECIES_ETC_OMORI
           && ability != ABILITY_NORMALIZE)
     {
         return TYPE_NEW_DARK;

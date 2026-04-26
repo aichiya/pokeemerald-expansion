@@ -3564,15 +3564,15 @@ Cry_Castform::
 	.incbin "sound/direct_sound_samples/cries/castform.bin"
 .endif
 .endif @ P_FAMILY_CASTFORM
-
-.if P_FAMILY_KECLEON == TRUE
+*/
+//.if P_FAMILY_KECLEON == TRUE
 	.align 2
 Cry_Kecleon::
-.if TESTING == FALSE
+//.if TESTING == FALSE
 	.incbin "sound/direct_sound_samples/cries/kecleon.bin"
-.endif
-.endif @ P_FAMILY_KECLEON
-
+//.endif
+//.endif @ P_FAMILY_KECLEON
+/*
 .if P_FAMILY_SHUPPET == TRUE
 	.align 2
 Cry_Shuppet::

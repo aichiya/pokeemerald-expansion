@@ -8774,7 +8774,7 @@ static const struct FormChange sKeyUshioNormalFormChangeTable[] =
 {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_KEY_USHIO_ILLUSIONARY, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_KEY_USHIO_NORMAL},
-    {FORM_CHANGE_FAINT,                         SPECIES_KEY_USHIO_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_KEY_USHIO_NORMAL},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8782,7 +8782,7 @@ static const struct FormChange sBghsMikiFloraFormChangeTable[] =
 {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_BGHS_MIKI_FLORA_ELVIS, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MIKI_FLORA},
-    {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MIKI_FLORA},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_BGHS_MIKI_FLORA},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8814,7 +8814,7 @@ static const struct FormChange sBghsMisakiFloraFormChangeTable[] =
 {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_BGHS_MISAKI_FLORA_ELVIS, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MISAKI_FLORA},
-    {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MISAKI_FLORA},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_BGHS_MISAKI_FLORA},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8822,7 +8822,7 @@ static const struct FormChange sBghsMariFloraFormChangeTable[] =
 {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_BGHS_MARI_FLORA_FINAL, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MARI_FLORA},
-    {FORM_CHANGE_FAINT,                         SPECIES_BGHS_MARI_FLORA},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_BGHS_MARI_FLORA},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8830,7 +8830,7 @@ static const struct FormChange sPcCureBlackGoldFormChangeTable[] =
 {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_BLACK_PHOENIX, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BLACK_GOLD},
-    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BLACK_GOLD},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_PC_CURE_BLACK_GOLD},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8838,7 +8838,7 @@ static const struct FormChange sPcCureWhiteGoldFormChangeTable[] =
 {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_WHITE_PHOENIX, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_WHITE_GOLD},
-    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_WHITE_GOLD},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_PC_CURE_WHITE_GOLD},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8846,7 +8846,7 @@ static const struct FormChange sPcShinyLuminousGoldFormChangeTable[] =
 {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_SHINY_LUMINOUS_PHOENIX, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_PC_SHINY_LUMINOUS_GOLD},
-    {FORM_CHANGE_FAINT,                         SPECIES_PC_SHINY_LUMINOUS_GOLD},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_PC_SHINY_LUMINOUS_GOLD},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8855,7 +8855,7 @@ static const struct FormChange sPcCureBloomNormalFormChangeTable[] =
     {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_BRIGHT_NORMAL,   ITEM_FORM_CHANGE_CARD},
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_BRIGHTY_BLOOM_R_CURE_BLOOM_NORMAL, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BLOOM_NORMAL},
-    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BLOOM_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_PC_CURE_BLOOM_NORMAL},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8864,7 +8864,7 @@ static const struct FormChange sPcCureBrightNormalFormChangeTable[] =
     {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_BLOOM_NORMAL,   ITEM_FORM_CHANGE_CARD},
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_BRIGHTY_BLOOM_R_CURE_BRIGHT_NORMAL, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BRIGHT_NORMAL},
-    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_BRIGHT_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_PC_CURE_BRIGHT_NORMAL},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8873,7 +8873,7 @@ static const struct FormChange sPcCureEgretNormalFormChangeTable[] =
     {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_WINDY_NORMAL,   ITEM_FORM_CHANGE_CARD},
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_WINDY_EGRET_R_CURE_EGRET_NORMAL, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_EGRET_NORMAL},
-    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_EGRET_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_PC_CURE_EGRET_NORMAL},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8882,7 +8882,7 @@ static const struct FormChange sPcCureWindyNormalFormChangeTable[] =
     {FORM_CHANGE_ITEM_USE, SPECIES_PC_CURE_EGRET_NORMAL,   ITEM_FORM_CHANGE_CARD},
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_WINDY_EGRET_R_CURE_WINDY_NORMAL, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_WINDY_NORMAL},
-    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_WINDY_NORMAL},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_PC_CURE_WINDY_NORMAL},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -8898,7 +8898,7 @@ static const struct FormChange sPcCureDreamNormalS2FormChangeTable[] =
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_PC_CURE_DREAM_GRACE_R_NORMAL_S2, ITEM_DIANCITE},
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_LEVEL,    SPECIES_PC_CURE_DREAM_SHINING_R_NORMAL_S2, 50},
     {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_DREAM_NORMAL_S2},
-    {FORM_CHANGE_FAINT,                         SPECIES_PC_CURE_DREAM_NORMAL_S2},
+    {FORM_CHANGE_END_BATTLE,                         SPECIES_PC_CURE_DREAM_NORMAL_S2},
     {FORM_CHANGE_TERMINATOR},
 };
 
@@ -9281,6 +9281,28 @@ static const struct FormChange sEtcMikuAngelFormChangeTable[] =
 static const struct FormChange sEtcMikuRacingFormChangeTable[] =
 {
     {FORM_CHANGE_ITEM_USE, SPECIES_ETC_MIKU,   ITEM_FORM_CHANGE_CARD},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcSunnyFormChangeTable[] =
+{
+        {FORM_CHANGE_BATTLE_TURN_END,   SPECIES_ETC_OMORI,     ABILITY_HUNGER_SWITCH},
+        {FORM_CHANGE_BATTLE_TURN_END,   SPECIES_ETC_SUNNY, ABILITY_HUNGER_SWITCH},
+        {FORM_CHANGE_BATTLE_SWITCH_OUT, SPECIES_ETC_SUNNY},
+        {FORM_CHANGE_FAINT,             SPECIES_ETC_SUNNY},
+        {FORM_CHANGE_END_BATTLE,        SPECIES_ETC_SUNNY},
+        {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcKecleonPmdFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_MOE_KECLEON_PMD,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcMoeKecleonPmdFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_KECLEON_PMD,   ITEM_REVEAL_GLASS},
     {FORM_CHANGE_TERMINATOR},
 };
 

@@ -1741,7 +1741,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_PSYCHIC_SURGE] =
     {
-        .name = _("Psychic Surge"),
+        .name = _("Mana Surge"),
         .description = COMPOUND_STRING("Field becomes weird."),
         .aiRating = 8,
     },
@@ -1755,8 +1755,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_GRASSY_SURGE] =
     {
-        .name = _("Grassy Surge"),
-        .description = COMPOUND_STRING("Field becomes grassy."),
+        .name = _("Nature Surge"),
+        .description = COMPOUND_STRING("Field becomes meadow."),
         .aiRating = 8,
     },
 
@@ -1978,7 +1978,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_HUNGER_SWITCH] =
     {
-        .name = _("Hunger Switch"),
+        .name = _("Headspace Ego"),
         .description = COMPOUND_STRING("Changes form each turn."),
         .aiRating = 2,
         .cantBeCopied = TRUE,

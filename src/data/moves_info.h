@@ -26443,7 +26443,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_PowerFortissimo,
     },
 
-    [MOVE_YUUSHA_PUNCH] =  // edited desc, effect
+    [MOVE_YUUSHA_PUNCH] =  // to do
     {
         .name = COMPOUND_STRING("Yuusha Punch"),
         .description = COMPOUND_STRING(
@@ -26473,6 +26473,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_FOCUS_ENERGY, COMBO_STARTER_MIND_READER},
         .battleAnimScript = gBattleAnimMove_DynamicPunch,
+    },
+
+    [MOVE_HACK_AWAY] =
+    {
+        .name = COMPOUND_STRING("Hack Away"),
+        .description = COMPOUND_STRING(
+            "Slashes twice. High-crit.\n"
+            "Type based on user's ego."),
+        .effect = EFFECT_AURA_WHEEL,
+        .power = 33,
+        .type = TYPE_NEW_METAL,
+        .accuracy = 95,
+        .criticalHitStage = 2,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .slicingMove = TRUE,
+        .strikeCount = 3,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
+        .battleAnimScript = gBattleAnimMove_HackAway,
     },
 
 // ============= Start Shadow Moves ===================

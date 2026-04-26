@@ -11329,51 +11329,51 @@ static const u16 sMissingnoPlayableEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1630EggMoveLearnset[] = {
+static const u16 sThUbameChibiEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1631EggMoveLearnset[] = {
+static const u16 sThUbameNormalEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1632EggMoveLearnset[] = {
+static const u16 sThChimiChibiEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1633EggMoveLearnset[] = {
+static const u16 sThChimiNormalEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1634EggMoveLearnset[] = {
+static const u16 sThNarekoChibiEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1635EggMoveLearnset[] = {
+static const u16 sThNarekoNormalEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1636EggMoveLearnset[] = {
+static const u16 sThYuimanChibiEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1637EggMoveLearnset[] = {
+static const u16 sThYuimanNormalEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1638EggMoveLearnset[] = {
+static const u16 sThAriyaChibiEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1639EggMoveLearnset[] = {
+static const u16 sThAriyaNormalEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1640EggMoveLearnset[] = {
+static const u16 sThNinaChibiEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1641EggMoveLearnset[] = {
+static const u16 sThNinaNormalEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
@@ -12749,19 +12749,19 @@ static const u16 sFragmon2029EggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon2030EggMoveLearnset[] = {
+static const u16 sEtcSunnyEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon2031EggMoveLearnset[] = {
+static const u16 sEtcPurikuheartEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon2032EggMoveLearnset[] = {
+static const u16 sEtcKecleonPmdEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon2033EggMoveLearnset[] = {
+static const u16 sEtcMoeKecleonPmdEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 

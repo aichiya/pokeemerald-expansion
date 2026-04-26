@@ -6366,7 +6366,7 @@ static const u16 sPcCureBloomFormSpeciesIdTable[] = {
     SPECIES_PC_CURE_BLOOM_UNTRANSFORMED,
     SPECIES_PC_CURE_BLOOM_NORMAL,
     SPECIES_PC_CURE_BRIGHT_NORMAL,
-    SPECIES_PC_CURE_BRIGHTY_BLOOM_R_CURE_BLOOM_NORMAL,
+    SPECIES_PC_CURE_BRIGHTY_BLOOM_R_CURE_BRIGHT_NORMAL,
     FORM_SPECIES_END,
 };
 
@@ -6374,7 +6374,7 @@ static const u16 sPcCureEgretFormSpeciesIdTable[] = {
     SPECIES_PC_CURE_EGRET_UNTRANSFORMED,
     SPECIES_PC_CURE_EGRET_NORMAL,
     SPECIES_PC_CURE_WINDY_NORMAL,
-    SPECIES_PC_CURE_WINDY_EGRET_R_CURE_EGRET_NORMAL,
+    SPECIES_PC_CURE_WINDY_EGRET_R_CURE_WINDY_NORMAL,
     FORM_SPECIES_END,
 };
 
@@ -6674,11 +6674,59 @@ static const u16 sEtcDiendFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
+static const u16 sThUbameFormSpeciesIdTable[] = {
+    SPECIES_TH_UBAME_CHIBI,
+    SPECIES_TH_UBAME_NORMAL,
+    FORM_SPECIES_END,
+};
+
+static const u16 sThChimiFormSpeciesIdTable[] = {
+    SPECIES_TH_CHIMI_CHIBI,
+    SPECIES_TH_CHIMI_NORMAL,
+    FORM_SPECIES_END,
+};
+
+static const u16 sThNarekoFormSpeciesIdTable[] = {
+    SPECIES_TH_NAREKO_CHIBI,
+    SPECIES_TH_NAREKO_NORMAL,
+    FORM_SPECIES_END,
+};
+
+static const u16 sThYuimanFormSpeciesIdTable[] = {
+    SPECIES_TH_YUIMAN_CHIBI,
+    SPECIES_TH_YUIMAN_NORMAL,
+    FORM_SPECIES_END,
+};
+
+static const u16 sThAriyaFormSpeciesIdTable[] = {
+    SPECIES_TH_ARIYA_CHIBI,
+    SPECIES_TH_ARIYA_NORMAL,
+    FORM_SPECIES_END,
+};
+
+static const u16 sThNinaFormSpeciesIdTable[] = {
+    SPECIES_TH_NINA_CHIBI,
+    SPECIES_TH_NINA_NORMAL,
+    FORM_SPECIES_END,
+};
+
 static const u16 sEtcMikuFormSpeciesIdTable[] = {
     SPECIES_ETC_MIKU,
     SPECIES_ETC_MIKU_MAGICAL,
     SPECIES_ETC_MIKU_SNOW,
     SPECIES_ETC_MIKU_ANGEL,
     SPECIES_ETC_MIKU_RACING,
+    FORM_SPECIES_END,
+};
+
+static const u16 sEtcSunnyFormSpeciesIdTable[] = {
+    SPECIES_ETC_SUNNY,
+    SPECIES_ETC_OMORI,
+    FORM_SPECIES_END,
+};
+
+static const u16 sEtcKecleonPmdFormSpeciesIdTable[] = {
+    SPECIES_ETC_KECLEON_PMD,
+    SPECIES_ETC_MOE_KECLEON_PMD,
     FORM_SPECIES_END,
 };

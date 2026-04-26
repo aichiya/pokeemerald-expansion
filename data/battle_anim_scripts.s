@@ -22258,6 +22258,18 @@ gBattleAnimMove_PowerFortissimo::
 	delay 1
 	end
 
+gBattleAnimMove_HackAway::
+	invert_screen_color scenery=1 | 2 | 4
+	delay 1
+	waitforvisualfinish
+	createsprite gTachyonCutterSpriteTemplate, ANIM_ATTACKER, 2, 40, -32, 0
+	createsprite gTachyonCutterSpriteTemplate, ANIM_ATTACKER, 2, 40, -32, 1
+	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
+	waitforvisualfinish
+	invert_screen_color scenery=1 | 2 | 4
+	delay 1
+	waitforvisualfinish
+	end
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::

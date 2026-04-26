@@ -17,7 +17,7 @@ TrimmedGensokyo_EventScript_Debug1::
 	delay 30
 	setflag FLAG_DYNAMAX_BATTLE
 	setflag FLAG_CUSTOM_BGM_BATTLE
-	setvar VAR_SETTING_MUSIC, MUS_PC_ALLHENSHIN
+	setvar VAR_SETTING_MUSIC, MUS_ETC_MELOMPAT_LEBIH_TINGGI
 	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
 @	setflag FLAG_CUSTOM_BGM_BATTLE
 @	setvar VAR_SETTING_MUSIC, MUS_ILLYA_SHOUJO_YO_HOSHI_NI_NARE

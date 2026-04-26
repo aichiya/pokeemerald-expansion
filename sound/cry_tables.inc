@@ -5476,7 +5476,7 @@ gCryTable::
 	cry Cry_THSaraLine
 	cry Cry_THLouiseLine
 	cry Cry_THYukiLine
-cry Cry_THMaiLine
+	cry Cry_THMaiLine
 	cry Cry_THYumekoLine
 	cry Cry_THShinkiLine
 	cry Cry_THRumiaLine
@@ -5748,7 +5748,12 @@ cry Cry_THMaiLine
 @ 	cry Cry_PCCureSwordLine
 @ 	cry Cry_PCCureAceLine
 @ 	cry Cry_PCCureReginaLine
-@ 	cry Cry_None
+@ 	cry Cry_THUbame
+@ 	cry Cry_THChimi
+@ 	cry Cry_THNareko
+@ 	cry Cry_THYuiman
+@ 	cry Cry_THAriya
+@ 	cry Cry_THNina
 @ 	cry Cry_ETCWupi
 @ 	cry Cry_ETCMiku
 @ 	cry Cry_ETCFoxyria
@@ -5816,6 +5821,9 @@ cry Cry_THMaiLine
 	cry Cry_THMarisaPC98Line
 	cry Cry_THReimuPC98Line
 	cry Cry_THSuikaMP
+@ 	cry Cry_ETCSunny
+@ 	cry Cry_ETCPurikuheart
+	cry Cry_Kecleon
 @ 	cry Cry_ETCSailorMoon
 @ 	cry Cry_ETCOmori
 @ 	cry Cry_ETCMadoka
@@ -6189,7 +6197,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_THSaraLine
 	cry_reverse Cry_THLouiseLine
 	cry_reverse Cry_THYukiLine
-cry_reverse Cry_THMaiLine
+	cry_reverse Cry_THMaiLine
 	cry_reverse Cry_THYumekoLine
 	cry_reverse Cry_THShinkiLine
 	cry_reverse Cry_THRumiaLine
@@ -6461,7 +6469,12 @@ cry_reverse Cry_THMaiLine
 @ 	cry_reverse Cry_PCCureSwordLine
 @ 	cry_reverse Cry_PCCureAceLine
 @ 	cry_reverse Cry_PCCureReginaLine
-@ 	cry_reverse Cry_None
+@ 	cry_reverse Cry_THUbame
+@ 	cry_reverse Cry_THChimi
+@ 	cry_reverse Cry_THNareko
+@ 	cry_reverse Cry_THYuiman
+@ 	cry_reverse Cry_THAriya
+@ 	cry_reverse Cry_THNina
 @ 	cry_reverse Cry_ETCWupi
 @ 	cry_reverse Cry_ETCMiku
 @ 	cry_reverse Cry_ETCFoxyria
@@ -6529,6 +6542,9 @@ cry_reverse Cry_THMaiLine
 	cry_reverse Cry_THMarisaPC98Line
 	cry_reverse Cry_THReimuPC98Line
 	cry_reverse Cry_THSuikaMP
+@ 	cry_reverse Cry_ETCSunny
+@ 	cry_reverse Cry_ETCPurikuheart
+	cry_reverse Cry_Kecleon
 @ 	cry_reverse Cry_ETCSailorMoon
 @ 	cry_reverse Cry_ETCOmori
 @ 	cry_reverse Cry_ETCMadoka
@@ -6536,4 +6552,5 @@ cry_reverse Cry_THMaiLine
 @ 	cry_reverse Cry_ETCValkyrie
 @ 	cry_reverse Cry_ETCNonota
 @ 	cry_reverse Cry_ETCNobeta
+
 .endif @ P_CRIES_ENABLED

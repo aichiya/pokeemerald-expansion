@@ -5752,7 +5752,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     if (!(magicianTargets & 1u << targetBattler))
                         continue;
 
-                    if (GetBattlerAbility(targetBattler) == ABILITY_STICKY_HOLD && IsBattlerAlive(targetBattler))
+                    if ((GetBattlerAbility(targetBattler) == ABILITY_STICKY_HOLD || GetBattlerAbility(targetBattler) == ABILITY_COLLECTOR) && IsBattlerAlive(targetBattler))
                     {
                         effect = FALSE;
                         break;

@@ -2217,7 +2217,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
     case EFFECT_KNOCK_OFF:
     case EFFECT_CORROSIVE_GAS:
-        if (aiData->abilities[battlerDef] == ABILITY_STICKY_HOLD)
+        if (aiData->abilities[battlerDef] == ABILITY_STICKY_HOLD || aiData->abilities[battlerDef] == ABILITY_COLLECTOR)
             ADJUST_SCORE(-10);
         break;
     case EFFECT_INGRAIN:

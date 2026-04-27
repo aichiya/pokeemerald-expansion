@@ -4278,7 +4278,8 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
     case MOVE_EFFECT_INCINERATE:
         if ((gItemsInfo[gBattleMons[effectBattler].item].pocket == POCKET_BERRIES
          || (B_INCINERATE_GEMS >= GEN_6 && GetBattlerHoldEffect(effectBattler) == HOLD_EFFECT_GEMS))
-         && abilities[effectBattler] != ABILITY_STICKY_HOLD)
+         && abilities[effectBattler] != ABILITY_STICKY_HOLD
+         && abilities[effectBattler] != ABILITY_COLLECTOR)
         {
             gLastUsedItem = gBattleMons[effectBattler].item;
             gBattleMons[effectBattler].item = ITEM_NONE;

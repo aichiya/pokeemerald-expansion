@@ -311,6 +311,7 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     u32 personality, pokerus;
     enum PokeBall ball;
     u8 i, friendship, language, gameMet, markings, isModernFatefulEncounter;
+    bool32 isShiny;
     enum Move moves[MAX_MON_MOVES];
     u32 ivs[NUM_STATS];
     u16 contestCool, contestBeauty, contestCute, contestSmart, contestTough, contestSheen;
@@ -345,6 +346,7 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     gigantamaxFactor = GetMonData(egg, MON_DATA_GIGANTAMAX_FACTOR);
     teratype = GetMonData(egg, MON_DATA_TERA_TYPE);
     isModernFatefulEncounter = GetMonData(egg, MON_DATA_MODERN_FATEFUL_ENCOUNTER);
+    isShiny = GetMonData(egg, MON_DATA_IS_SHINY);
     contestCool = GetMonData(egg, MON_DATA_COOL);
     contestBeauty = GetMonData(egg, MON_DATA_BEAUTY);
     contestCute = GetMonData(egg, MON_DATA_CUTE);
@@ -372,6 +374,8 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     ball = GetMonData(egg, MON_DATA_POKEBALL);
 
     CreateMonWithIVs(temp, species, EGG_HATCH_LEVEL, personality, OTID_STRUCT_PLAYER_ID, USE_RANDOM_IVS);
+    SetMonData(temp, MON_DATA_IS_SHINY, &isShiny);
+
     for (i = 0; i < MAX_MON_MOVES; i++)
         SetMonData(temp, MON_DATA_MOVE1 + i,  &moves[i]);
 

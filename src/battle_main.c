@@ -4911,6 +4911,8 @@ u32 GetBattlerTotalSpeedStat(enum BattlerId battler, enum Ability ability, enum 
         speed = (speed * 150) / 100;
     else if (ability == ABILITY_PURE_ENIGMA)
         speed = (speed * 150) / 100;
+    else if (ability == ABILITY_ULTRA_MEDICINE_V2)
+        speed *= 4;
     else if (ability == ABILITY_UNBURDEN && gBattleMons[battler].volatiles.unburdenActive)
         speed *= 2;
 
@@ -5006,12 +5008,12 @@ s32 GetBattleMovePriority(enum BattlerId battler, enum Ability ability, enum Mov
     {
         priority += 3;
     }
-    else if (ability == ABILITY_TIME_CONTROL && !IsAbilityOnField(ABILITY_TIME_JACKER))
+    else if (ability == ABILITY_TIME_CONTROL && !(IsAbilityOnField(ABILITY_TIME_JACKER) || IsAbilityOnField(ABILITY_TIME_WEB)))
     {
         priority++;
     }
 
-    if (IsAbilityOnField(ABILITY_TIME_JACKER) && !IsAbilityOnField(ABILITY_FANTASY_BREAKER))
+    if (IsAbilityOnField(ABILITY_TIME_JACKER) && !(IsAbilityOnField(ABILITY_FANTASY_BREAKER) || IsAbilityOnField(ABILITY_TIME_WEB)))
     {
         rngTimeJacker = Random() % 17;
         if (rngTimeJacker == 0)

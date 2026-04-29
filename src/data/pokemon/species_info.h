@@ -87261,20 +87261,20 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_KeyFuukoChibi,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 9,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_KeyFuukoChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 12,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_KeyFuukoChibi,
         .shinyPalette = gMonShinyPalette_KeyFuukoChibi,
         .iconSprite = gMonIcon_KeyFuukoChibi,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(4, 0, SHADOW_SIZE_L)
         FOOTPRINT(KeyFuukoChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -87351,20 +87351,20 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_KeyFuukoNormal,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 2,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_TIP_MOVE_FORWARD,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_KeyFuukoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 8,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_KeyFuukoNormal,
         .shinyPalette = gMonShinyPalette_KeyFuukoNormal,
         .iconSprite = gMonIcon_KeyFuukoNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(7, 7, SHADOW_SIZE_M)
         FOOTPRINT(KeyFuukoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -87438,20 +87438,20 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_KeyFuukoEx,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 1,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_KeyFuukoEx,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_KeyFuukoEx,
         .shinyPalette = gMonShinyPalette_KeyFuukoEx,
         .iconSprite = gMonIcon_KeyFuukoEx,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-5, 6, SHADOW_SIZE_L)
         FOOTPRINT(KeyFuukoEx)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -136107,20 +136107,20 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_EtcSunny,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 6,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_JUMPS_BIG,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcSunny,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_EtcSunny,
         .shinyPalette = gMonShinyPalette_EtcSunny,
         .iconSprite = gMonIcon_EtcSunny,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 2, SHADOW_SIZE_S)
         FOOTPRINT(EtcSunny)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -136194,18 +136194,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_FIGURE_8,
+        .enemyMonElevation = 4,
         .backPic = gMonBackPic_EtcPurikuheart,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_EtcPurikuheart,
         .shinyPalette = gMonShinyPalette_EtcPurikuheart,
         .iconSprite = gMonIcon_EtcPurikuheart,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 18, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(EtcPurikuheart)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -136279,18 +136279,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_FLICKER,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcKecleonPmd,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 6,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_EtcKecleonPmd,
         .shinyPalette = gMonShinyPalette_EtcKecleonPmd,
         .iconSprite = gMonIcon_EtcKecleonPmd,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 9, SHADOW_SIZE_M)
         FOOTPRINT(EtcKecleonPmd)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -136364,18 +136364,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_FLICKER,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcMoeKecleonPmd,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_EtcMoeKecleonPmd,
         .shinyPalette = gMonShinyPalette_EtcMoeKecleonPmd,
         .iconSprite = gMonIcon_EtcMoeKecleonPmd,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 13, SHADOW_SIZE_M)
         FOOTPRINT(EtcMoeKecleonPmd)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -136534,18 +136534,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcOmori,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_EtcOmori,
         .shinyPalette = gMonShinyPalette_EtcOmori,
         .iconSprite = gMonIcon_EtcOmori,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 7, SHADOW_SIZE_S)
         FOOTPRINT(EtcOmori)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -137108,7 +137108,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_ULTRA_MEDICINE, ABILITY_ULTRA_MEDICINE, ABILITY_ULTRA_MEDICINE },
+        .abilities = { ABILITY_ULTRA_MEDICINE_V2, ABILITY_ULTRA_MEDICINE_V2, ABILITY_ULTRA_MEDICINE_V2 },
         .bodyColor = FRANCHISE_ORIGIN_TOUHOU,
         .speciesName = _("Medicine"),
         .cryId = CRY_TH_MEDICINE_LINE,

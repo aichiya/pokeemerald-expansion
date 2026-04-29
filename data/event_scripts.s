@@ -2219,3 +2219,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/SinnohEternaCity/scripts.inc"
 
 	.include "data/maps/AnotherWorldSpiritualWorld/scripts.inc"
+
+	.include "data/maps/AnotherWorldBrokenDreams/scripts.inc"

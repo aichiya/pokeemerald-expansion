@@ -11807,6 +11807,16 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/AnotherWorldSpiritualWorld/border.bin",
       "blockdata_filepath": "data/layouts/AnotherWorldSpiritualWorld/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANOTHER_WORLD_BROKEN_DREAMS",
+      "name": "AnotherWorldBrokenDreams_Layout",
+      "width": 78,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AnotherWorldBrokenDreams/border.bin",
+      "blockdata_filepath": "data/layouts/AnotherWorldBrokenDreams/map.bin"
     }
   ]
 }

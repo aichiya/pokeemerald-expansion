@@ -1392,7 +1392,8 @@
     "MagicWorld_North3_Winter",
     "MagicWorld_North4_Winter",
     "MagicWorld_South_Winter",
-    "AnotherWorldSpiritualWorld"
+    "AnotherWorldSpiritualWorld",
+    "AnotherWorldBrokenDreams"
   ],
   "gMapGroup_EventStream": [
     "SafariZone_SouthFirstConstruction",

@@ -29,6 +29,7 @@
 #include "config/overworld.h"
 #include "config/pokemon.h"
 #include "config/summary_screen.h"
+#include "config/wild_encounter.h"
 #include "config/game_corner_expansion.h"
 
 // Invalid Versions show as "----------" in Gen 4 and Gen 5's summary screen.

@@ -546,8 +546,8 @@ static const u16 *const sTilesetAnims_BattleDomeFloorLightPals[] = {
     gTilesetAnims_BattleDomePals0_3,
 };
 
-const u16 gTilesetAnims_CherryBlossom_Fountain_Frame0[] = INCBIN_U16("data/tilesets/secondary/cherry_blossom/anim/fountain/0.4bpp");
-const u16 gTilesetAnims_CherryBlossom_Fountain_Frame1[] = INCBIN_U16("data/tilesets/secondary/cherry_blossom/anim/fountain/1.4bpp");
+const u16 gTilesetAnims_CherryBlossom_Fountain_Frame0[] = INCGFX_U16("data/tilesets/secondary/cherry_blossom/anim/fountain/0.png", ".4bpp");
+const u16 gTilesetAnims_CherryBlossom_Fountain_Frame1[] = INCGFX_U16("data/tilesets/secondary/cherry_blossom/anim/fountain/1.png", ".4bpp");
 
 const u16 *const gTilesetAnims_CherryBlossom_Fountain[] = {
     gTilesetAnims_CherryBlossom_Fountain_Frame0,

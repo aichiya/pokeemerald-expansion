@@ -515,79 +515,79 @@ static const struct WindowTemplate sPinballWinTemplates[] = {
     DUMMY_WIN_TEMPLATE,
 };
 
-static const u32 sCoverBgGfx[] = INCBIN_U32("graphics/pinball/bg_cover_tiles.4bpp");
-static const u16 sCoverBgPalette[] = INCBIN_U16("graphics/pinball/bg_cover_tiles.gbapal");
+static const u32 sCoverBgGfx[] = INCGFX_U32("graphics/pinball/bg_cover_tiles.png", ".4bpp");
+static const u16 sCoverBgPalette[] = INCGFX_U16("graphics/pinball/bg_cover_tiles.png", ".gbapal");
 static const u16 sCovergTilemap[] = INCBIN_U16("graphics/pinball/bg_tilemap_cover.bin");
 
-static const u32 sBallPokeballGfx[] = INCBIN_U32("graphics/pinball/ball_pokeball.4bpp.smol");
-static const u16 sBallPokeballPalette[] = INCBIN_U16("graphics/pinball/ball_pokeball.gbapal");
-static const u32 sFlipperGfx[] = INCBIN_U32("graphics/pinball/flipper.4bpp.smol");
-static const u16 sFlipperPalette[] = INCBIN_U16("graphics/pinball/flipper.gbapal");
-static const u8 sFlipperLeftMinigameCollisionMasks[][0x200] = { INCBIN_U8("graphics/pinball/flipper_left_masks_minigame.1bpp"), };
-static const u8 sFlipperRightMinigameCollisionMasks[][0x200] = { INCBIN_U8("graphics/pinball/flipper_right_masks_minigame.1bpp"), };
-static const u32 sTimerDigitsGfx[] = INCBIN_U32("graphics/pinball/timer_digits.4bpp.smol");
-static const u16 sTimerDigitsPalette[] = INCBIN_U16("graphics/pinball/timer_digits.gbapal");
+static const u32 sBallPokeballGfx[] = INCGFX_U32("graphics/pinball/ball_pokeball.png", ".4bpp.smol");
+static const u16 sBallPokeballPalette[] = INCGFX_U16("graphics/pinball/ball_pokeball.png", ".gbapal");
+static const u32 sFlipperGfx[] = INCGFX_U32("graphics/pinball/flipper.png", ".4bpp.smol");
+static const u16 sFlipperPalette[] = INCGFX_U16("graphics/pinball/flipper.png", ".gbapal");
+static const u8 sFlipperLeftMinigameCollisionMasks[][0x200] = { INCGFX_U8("graphics/pinball/flipper_left_masks_minigame.png", ".1bpp"), };
+static const u8 sFlipperRightMinigameCollisionMasks[][0x200] = { INCGFX_U8("graphics/pinball/flipper_right_masks_minigame.png", ".1bpp"), };
+static const u32 sTimerDigitsGfx[] = INCGFX_U32("graphics/pinball/timer_digits.png", ".4bpp.smol");
+static const u16 sTimerDigitsPalette[] = INCGFX_U16("graphics/pinball/timer_digits.png", ".gbapal");
 
 static const u8 sFlipperCollisionRadii[] = INCBIN_U8("data/pinball/flipper_radii.bin");
 static const u8 sFlipperCollisionNormalAngles[] = INCBIN_U8("data/pinball/flipper_normal_angles.bin");
 
-static const u32 sMeowthStageBgGfx[] = INCBIN_U32("graphics/pinball/bg_tiles_meowth.4bpp");
-static const u16 sMeowthStageBgPalette[] = INCBIN_U16("graphics/pinball/bg_tiles_meowth.gbapal");
+static const u32 sMeowthStageBgGfx[] = INCGFX_U32("graphics/pinball/bg_tiles_meowth.png", ".4bpp");
+static const u16 sMeowthStageBgPalette[] = INCGFX_U16("graphics/pinball/bg_tiles_meowth.png", ".gbapal");
 static const u16 sMeowthStageBgTilemap[] = INCBIN_U16("graphics/pinball/bg_tilemap_meowth.bin");
-static const u8 sMeowthStageBgCollisionMasks[] = INCBIN_U8("graphics/pinball/bg_collision_masks_meowth.1bpp");
+static const u8 sMeowthStageBgCollisionMasks[] = INCGFX_U8("graphics/pinball/bg_collision_masks_meowth.png", ".1bpp");
 static const u8 sMeowthStageBgCollisionMap[] = INCBIN_U8("graphics/pinball/bg_collision_map_meowth.bin");
 static const u8 sMeowthStageEntranceBgCollisionMap[] = INCBIN_U8("graphics/pinball/bg_collision_map_meowth_entrance.bin");
-static const u32 sMeowthAnimationGfx[] = INCBIN_U32("graphics/pinball/meowth_animation.4bpp.smol");
-static const u16 sMeowthAnimationPalette[] = INCBIN_U16("graphics/pinball/meowth_animation.gbapal");
-static const u32 sMeowthJewelGfx[] = INCBIN_U32("graphics/pinball/meowth_jewel_animation.4bpp.smol");
-static const u16 sMeowthJewelPalette[] = INCBIN_U16("graphics/pinball/meowth_jewel_animation.gbapal");
-static const u32 sMeowthJewelMultipliersGfx[] = INCBIN_U32("graphics/pinball/meowth_jewel_multipliers.4bpp.smol");
-static const u32 sMeowthJewelSparkleGfx[] = INCBIN_U32("graphics/pinball/meowth_sparkle.4bpp.smol");
-static const u16 sMeowthJewelMultipliersPalette[] = INCBIN_U16("graphics/pinball/meowth_jewel_multipliers.gbapal");
+static const u32 sMeowthAnimationGfx[] = INCGFX_U32("graphics/pinball/meowth_animation.png", ".4bpp.smol");
+static const u16 sMeowthAnimationPalette[] = INCGFX_U16("graphics/pinball/meowth_animation.png", ".gbapal");
+static const u32 sMeowthJewelGfx[] = INCGFX_U32("graphics/pinball/meowth_jewel_animation.png", ".4bpp.smol");
+static const u16 sMeowthJewelPalette[] = INCGFX_U16("graphics/pinball/meowth_jewel_animation.png", ".gbapal");
+static const u32 sMeowthJewelMultipliersGfx[] = INCGFX_U32("graphics/pinball/meowth_jewel_multipliers.png", ".4bpp.smol");
+static const u32 sMeowthJewelSparkleGfx[] = INCGFX_U32("graphics/pinball/meowth_sparkle.png", ".4bpp.smol");
+static const u16 sMeowthJewelMultipliersPalette[] = INCGFX_U16("graphics/pinball/meowth_jewel_multipliers.pal", ".gbapal");
 static const u8 sMeowthCollisionNormalAngles[] = INCBIN_U8("data/pinball/meowth_normal_angles.bin");
 static const u8 sMeowthJewelCollisionNormalAngles[] = INCBIN_U8("data/pinball/meowth_jewel_normal_angles.bin");
 
-static const u32 sDiglettStageBgGfx[] = INCBIN_U32("graphics/pinball/bg_tiles_diglett.4bpp");
-static const u16 sDiglettStageBgPalette[] = INCBIN_U16("graphics/pinball/bg_tiles_diglett.gbapal");
+static const u32 sDiglettStageBgGfx[] = INCGFX_U32("graphics/pinball/bg_tiles_diglett.png", ".4bpp");
+static const u16 sDiglettStageBgPalette[] = INCGFX_U16("graphics/pinball/bg_tiles_diglett.png", ".gbapal");
 static const u16 sDiglettStageBgTilemap[] = INCBIN_U16("graphics/pinball/bg_tilemap_diglett.bin");
-static const u8 sDiglettStageBgCollisionMasks[] = INCBIN_U8("graphics/pinball/bg_collision_masks_diglett.1bpp");
+static const u8 sDiglettStageBgCollisionMasks[] = INCGFX_U8("graphics/pinball/bg_collision_masks_diglett.png", ".1bpp");
 static const u8 sDiglettStageBgCollisionMap[] = INCBIN_U8("graphics/pinball/bg_collision_map_diglett.bin");
 static const u8 sDiglettStageEntranceBgCollisionMap[] = INCBIN_U8("graphics/pinball/bg_collision_map_diglett_entrance.bin");
-static const u32 sDugtrioAnimationGfx[] = INCBIN_U32("graphics/pinball/dugtrio_animation.4bpp.smol");
-static const u16 sDugtrioAnimationPalette[] = INCBIN_U16("graphics/pinball/dugtrio_animation.gbapal");
+static const u32 sDugtrioAnimationGfx[] = INCGFX_U32("graphics/pinball/dugtrio_animation.png", ".4bpp.smol");
+static const u16 sDugtrioAnimationPalette[] = INCGFX_U16("graphics/pinball/dugtrio_animation.png", ".gbapal");
 
-static const u32 sSeelStageBgGfx[] = INCBIN_U32("graphics/pinball/bg_tiles_seel.4bpp");
-static const u16 sSeelStageBgPalette[] = INCBIN_U16("graphics/pinball/bg_tiles_seel.gbapal");
+static const u32 sSeelStageBgGfx[] = INCGFX_U32("graphics/pinball/bg_tiles_seel.png", ".4bpp");
+static const u16 sSeelStageBgPalette[] = INCGFX_U16("graphics/pinball/bg_tiles_seel.png", ".gbapal");
 static const u16 sSeelStageBgTilemap[] = INCBIN_U16("graphics/pinball/bg_tilemap_seel.bin");
-static const u8 sSeelStageBgCollisionMasks[] = INCBIN_U8("graphics/pinball/bg_collision_masks_seel.1bpp");
+static const u8 sSeelStageBgCollisionMasks[] = INCGFX_U8("graphics/pinball/bg_collision_masks_seel.png", ".1bpp");
 static const u8 sSeelStageBgCollisionMap[] = INCBIN_U8("graphics/pinball/bg_collision_map_seel.bin");
 static const u8 sSeelStageEntranceBgCollisionMap[] = INCBIN_U8("graphics/pinball/bg_collision_map_seel_entrance.bin");
-static const u32 sSeelAnimationGfx[] = INCBIN_U32("graphics/pinball/seel_animation.4bpp.smol");
-static const u16 sSeelAnimationPalette[] = INCBIN_U16("graphics/pinball/seel_animation.gbapal");
+static const u32 sSeelAnimationGfx[] = INCGFX_U32("graphics/pinball/seel_animation.png", ".4bpp.smol");
+static const u16 sSeelAnimationPalette[] = INCGFX_U16("graphics/pinball/seel_animation.png", ".gbapal");
 static const u8 sSeelCollisionNormalAngles[] = INCBIN_U8("data/pinball/seel_normal_angles.bin");
-static const u32 sSeelSparkleGfx[] = INCBIN_U32("graphics/pinball/seel_sparkle.4bpp.smol");
-static const u16 sSeelSparklePalette[] = INCBIN_U16("graphics/pinball/seel_sparkle.gbapal");
-static const u32 sSeelMultipliersGfx[] = INCBIN_U32("graphics/pinball/seel_multipliers.4bpp.smol");
-static const u16 sSeelMultipliersPalette[] = INCBIN_U16("graphics/pinball/seel_multipliers.gbapal");
+static const u32 sSeelSparkleGfx[] = INCGFX_U32("graphics/pinball/seel_sparkle.png", ".4bpp.smol");
+static const u16 sSeelSparklePalette[] = INCGFX_U16("graphics/pinball/seel_sparkle.png", ".gbapal");
+static const u32 sSeelMultipliersGfx[] = INCGFX_U32("graphics/pinball/seel_multipliers.png", ".4bpp.smol");
+static const u16 sSeelMultipliersPalette[] = INCGFX_U16("graphics/pinball/seel_multipliers.png", ".gbapal");
 
-static const u32 sGengarStageBgGfx[] = INCBIN_U32("graphics/pinball/bg_tiles_gengar.4bpp");
-static const u16 sGengarStageBgPalette[] = INCBIN_U16("graphics/pinball/bg_tiles_gengar.gbapal");
+static const u32 sGengarStageBgGfx[] = INCGFX_U32("graphics/pinball/bg_tiles_gengar.png", ".4bpp");
+static const u16 sGengarStageBgPalette[] = INCGFX_U16("graphics/pinball/bg_tiles_gengar.pal", ".gbapal");
 static const u16 sGengarStageBgTilemap[] = INCBIN_U16("graphics/pinball/bg_tilemap_gengar.bin");
-static const u8 sGengarStageBgCollisionMasks[] = INCBIN_U8("graphics/pinball/bg_collision_masks_gengar.1bpp");
+static const u8 sGengarStageBgCollisionMasks[] = INCGFX_U8("graphics/pinball/bg_collision_masks_gengar.png", ".1bpp");
 static const u8 sGengarStageBgCollisionMap[] = INCBIN_U8("graphics/pinball/bg_collision_map_gengar.bin");
 static const u8 sGengarStageEntranceBgCollisionMap[] = INCBIN_U8("graphics/pinball/bg_collision_map_gengar_entrance.bin");
-static const u32 sGastlyAnimationGfx[] = INCBIN_U32("graphics/pinball/gastly_animation.4bpp.smol");
-static const u16 sGastlyAnimationPalette[] = INCBIN_U16("graphics/pinball/gastly_animation.gbapal");
+static const u32 sGastlyAnimationGfx[] = INCGFX_U32("graphics/pinball/gastly_animation.png", ".4bpp.smol");
+static const u16 sGastlyAnimationPalette[] = INCGFX_U16("graphics/pinball/gastly_animation.png", ".gbapal");
 static const u8 sGastlyCollisionNormalAngles[] = INCBIN_U8("data/pinball/gastly_normal_angles.bin");
-static const u32 sHaunterAnimationGfx[] = INCBIN_U32("graphics/pinball/haunter_animation.4bpp.smol");
-static const u16 sHaunterAnimationPalette[] = INCBIN_U16("graphics/pinball/haunter_animation.gbapal");
+static const u32 sHaunterAnimationGfx[] = INCGFX_U32("graphics/pinball/haunter_animation.png", ".4bpp.smol");
+static const u16 sHaunterAnimationPalette[] = INCGFX_U16("graphics/pinball/haunter_animation.png", ".gbapal");
 static const u8 sHaunterCollisionNormalAngles[] = INCBIN_U8("data/pinball/haunter_normal_angles.bin");
-static const u32 sGengarAnimationGfx[] = INCBIN_U32("graphics/pinball/gengar_animation.4bpp.smol");
-static const u16 sGengarAnimationPalette[] = INCBIN_U16("graphics/pinball/gengar_animation.gbapal");
+static const u32 sGengarAnimationGfx[] = INCGFX_U32("graphics/pinball/gengar_animation.png", ".4bpp.smol");
+static const u16 sGengarAnimationPalette[] = INCGFX_U16("graphics/pinball/gengar_animation.png", ".gbapal");
 static const u8 sGengarCollisionNormalAngles[] = INCBIN_U8("data/pinball/gengar_normal_angles.bin");
 
-static const u32 gPlayer_Gfx[] = INCBIN_U32("graphics/pinball/input_numbers.4bpp.smol");
-static const u16 sPlayer_Pal[] = INCBIN_U16("graphics/pinball/input_numbers.gbapal");
+static const u32 gPlayer_Gfx[] = INCGFX_U32("graphics/pinball/input_numbers.png", ".4bpp.smol");
+static const u16 sPlayer_Pal[] = INCGFX_U16("graphics/pinball/input_numbers.png", ".gbapal");
 
 static const struct SpritePalette sSpritePalettes2[] =
 {
@@ -2132,11 +2132,11 @@ static const u16 sFlipperRadiusMagnitudes[32] = {
     0x00F8, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC,
 };
 
-static const s16 sTiltLeftOnlyVelocityDeltas[] = INCBIN_S16("data/pinball/tilt_left_deltas.bin");
-static const s16 sTiltRightOnlyVelocityDeltas[] = INCBIN_S16("data/pinball/tilt_right_deltas.bin");
-static const s16 sTiltDownOnlyVelocityDeltas[] = INCBIN_S16("data/pinball/tilt_down_deltas.bin");
-static const s16 sTiltDownRightVelocityDeltas[] = INCBIN_S16("data/pinball/tilt_down_right_deltas.bin");
-static const s16 sTiltDownLeftVelocityDeltas[] = INCBIN_S16("data/pinball/tilt_down_left_deltas.bin");
+static const s16 sTiltLeftOnlyVelocityDeltas[] = INCBIN_U16("data/pinball/tilt_left_deltas.bin");
+static const s16 sTiltRightOnlyVelocityDeltas[] = INCBIN_U16("data/pinball/tilt_right_deltas.bin");
+static const s16 sTiltDownOnlyVelocityDeltas[] = INCBIN_U16("data/pinball/tilt_down_deltas.bin");
+static const s16 sTiltDownRightVelocityDeltas[] = INCBIN_U16("data/pinball/tilt_down_right_deltas.bin");
+static const s16 sTiltDownLeftVelocityDeltas[] = INCBIN_U16("data/pinball/tilt_down_left_deltas.bin");
 
 static const s16 *const sTiltVelocityDeltas[] = {
     NULL,

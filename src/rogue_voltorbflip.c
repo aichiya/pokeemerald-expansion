@@ -169,20 +169,20 @@ static void VBlankCB(void)
 
 static const u16 sVoltorbFlipPalettes[][16] =
 {
-    INCBIN_U16("graphics/rogue_voltorbflip/gameboard.gbapal"),
+    INCGFX_U16("graphics/rogue_voltorbflip/gameboard.png", ".gbapal"),
 };
 
 static const u32 sVoltorbFlipTilemap[] = INCBIN_U32("graphics/rogue_voltorbflip/gameboard.bin.smolTM");
-static const u32 sVoltorbFlipTiles[] = INCBIN_U32("graphics/rogue_voltorbflip/gameboard.4bpp.smol");
+static const u32 sVoltorbFlipTiles[] = INCGFX_U32("graphics/rogue_voltorbflip/gameboard.png", ".4bpp.smol");
 
-static const u8 sVoltorbFlipSpriteSheetData[] = INCBIN_U8("graphics/rogue_voltorbflip/sprites.4bpp");
-static const u16 sVoltorbFlipPaletteSpriteData[] = INCBIN_U16("graphics/rogue_voltorbflip/sprites.gbapal");
+static const u8 sVoltorbFlipSpriteSheetData[] = INCGFX_U8("graphics/rogue_voltorbflip/sprites.png", ".4bpp");
+static const u16 sVoltorbFlipPaletteSpriteData[] = INCGFX_U16("graphics/rogue_voltorbflip/sprites.png", ".gbapal");
 
-static const u32 sCoinsGFX[] = INCBIN_U32("graphics/rogue_voltorbflip/coins.4bpp.smol");
-static const u16 sCoinsPAL[] = INCBIN_U16("graphics/rogue_voltorbflip/coins.gbapal");
+static const u32 sCoinsGFX[] = INCGFX_U32("graphics/rogue_voltorbflip/coins.png", ".4bpp.smol");
+static const u16 sCoinsPAL[] = INCGFX_U16("graphics/rogue_voltorbflip/coins.pal", ".gbapal");
 
-static const u32 gCredits_Gfx[] = INCBIN_U32("graphics/rogue_voltorbflip/digits.4bpp.smol");
-static const u16 sCredit_Pal[] = INCBIN_U16("graphics/rogue_voltorbflip/digits.gbapal");
+static const u32 gCredits_Gfx[] = INCGFX_U32("graphics/rogue_voltorbflip/digits.png", ".4bpp.smol");
+static const u16 sCredit_Pal[] = INCGFX_U16("graphics/rogue_voltorbflip/digits.pal", ".gbapal");
 
 
 static const struct VoltorbSpawnCounts sVoltorbSpawnCounts[MAX_VOLTORB_FLIP_LEVEL][MAX_VOLTORB_LEVEL_VARIANTS] = 

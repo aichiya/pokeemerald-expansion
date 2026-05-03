@@ -198,115 +198,115 @@ static void SpriteCB_Null(struct Sprite *sprite)
 // BG Images/Tilemaps
 
 // Main, no shake
-static const u32 Gacha_BG_Main[] = INCBIN_U32("graphics/gacha/bg_middle.4bpp.smol");
+static const u32 Gacha_BG_Main[] = INCGFX_U32("graphics/gacha/bg_middle.png", ".4bpp.smol");
 static const u8 Gacha_BG_Main_Tilemap[] = INCBIN_U8("graphics/gacha/bg_middle.bin.smolTM");
 // Left shake
-static const u32 Gacha_BG_Left[] = INCBIN_U32("graphics/gacha/bg_left.4bpp.smol");
+static const u32 Gacha_BG_Left[] = INCGFX_U32("graphics/gacha/bg_left.png", ".4bpp.smol");
 static const u8 Gacha_BG_Left_Tilemap[] = INCBIN_U8("graphics/gacha/bg_left.bin.smolTM");
 // Right shake
-static const u32 Gacha_BG_Right[] = INCBIN_U32("graphics/gacha/bg_right.4bpp.smol");
+static const u32 Gacha_BG_Right[] = INCGFX_U32("graphics/gacha/bg_right.png", ".4bpp.smol");
 static const u8 Gacha_BG_Right_Tilemap[] = INCBIN_U8("graphics/gacha/bg_right.bin.smolTM");
 
 // Trade
-static const u32 Gacha_BG_Red[] = INCBIN_U32("graphics/gacha/bg_mon.4bpp.smol");
+static const u32 Gacha_BG_Red[] = INCGFX_U32("graphics/gacha/bg_mon.png", ".4bpp.smol");
 static const u8 Gacha_BG_Red_Tilemap[] = INCBIN_U8("graphics/gacha/bg_mon.bin.smolTM");
 
 // BG Palettes
 
 // Basic
-static const u16 Gacha_BG_Basic_Pal[] = INCBIN_U16("graphics/gacha/bg_basic.gbapal");
+static const u16 Gacha_BG_Basic_Pal[] = INCGFX_U16("graphics/gacha/bg_basic.pal", ".gbapal");
 // Great
-static const u16 Gacha_BG_Great_Pal[] = INCBIN_U16("graphics/gacha/bg_great.gbapal");
+static const u16 Gacha_BG_Great_Pal[] = INCGFX_U16("graphics/gacha/bg_great.pal", ".gbapal");
 // Ultra
-static const u16 Gacha_BG_Ultra_Pal[] = INCBIN_U16("graphics/gacha/bg_ultra.gbapal");
+static const u16 Gacha_BG_Ultra_Pal[] = INCGFX_U16("graphics/gacha/bg_ultra.pal", ".gbapal");
 // Master
-static const u16 Gacha_BG_Master_Pal[] = INCBIN_U16("graphics/gacha/bg_master.gbapal");
+static const u16 Gacha_BG_Master_Pal[] = INCGFX_U16("graphics/gacha/bg_master.pal", ".gbapal");
 
-static const u16 Gacha_BG_Red_Pal[] = INCBIN_U16("graphics/gacha/bg_mon.gbapal");
+static const u16 Gacha_BG_Red_Pal[] = INCGFX_U16("graphics/gacha/bg_mon.pal", ".gbapal");
 
 // Knob Sprite Image
-static const u32 Gacha_Knob[] = INCBIN_U32("graphics/gacha/knob.4bpp.smol");
+static const u32 Gacha_Knob[] = INCGFX_U32("graphics/gacha/knob.png", ".4bpp.smol");
 
 // Knob Sprite Palettes
 
-static const u16 Gacha_Knob_Pal[] = INCBIN_U16("graphics/gacha/knob.gbapal");
-static const u16 Gacha_Digital_Text_Pal[] = INCBIN_U16("graphics/gacha/digital_text.gbapal");
-static const u16 Gacha_Lottery_Pal[] = INCBIN_U16("graphics/gacha/lottery.gbapal");
-static const u16 Gacha_press_a_Pal[] = INCBIN_U16("graphics/gacha/press_a.gbapal");
+static const u16 Gacha_Knob_Pal[] = INCGFX_U16("graphics/gacha/knob.pal", ".gbapal");
+static const u16 Gacha_Digital_Text_Pal[] = INCGFX_U16("graphics/gacha/digital_text.pal", ".gbapal");
+static const u16 Gacha_Lottery_Pal[] = INCGFX_U16("graphics/gacha/lottery.pal", ".gbapal");
+static const u16 Gacha_press_a_Pal[] = INCGFX_U16("graphics/gacha/press_a.pal", ".gbapal");
 
 // Digital Text
-static const u32 Gacha_Digital_Text[] = INCBIN_U32("graphics/gacha/digital_text.4bpp.smol");
+static const u32 Gacha_Digital_Text[] = INCGFX_U32("graphics/gacha/digital_text.png", ".4bpp.smol");
 
 // Title, Japanese
-static const u32 Gacha_Lottery_JPN[] = INCBIN_U32("graphics/gacha/lottery_japan.4bpp.smol");
+static const u32 Gacha_Lottery_JPN[] = INCGFX_U32("graphics/gacha/lottery_japan.png", ".4bpp.smol");
 
 //Numbers
 
-static const u32 gCredits_Gfx[] = INCBIN_U32("graphics/gacha/numbers.4bpp.smol");
-static const u16 sCredit_Pal[] = INCBIN_U16("graphics/gacha/numbers.gbapal");
+static const u32 gCredits_Gfx[] = INCGFX_U32("graphics/gacha/numbers.png", ".4bpp.smol");
+static const u16 sCredit_Pal[] = INCGFX_U16("graphics/gacha/numbers.pal", ".gbapal");
 
-static const u32 gPlayer_Gfx[] = INCBIN_U32("graphics/gacha/input_numbers.4bpp.smol");
-static const u16 sPlayer_Pal[] = INCBIN_U16("graphics/gacha/input_numbers.gbapal");
+static const u32 gPlayer_Gfx[] = INCGFX_U32("graphics/gacha/input_numbers.png", ".4bpp.smol");
+static const u16 sPlayer_Pal[] = INCGFX_U16("graphics/gacha/input_numbers.pal", ".gbapal");
 
 // Credits Menu
 
 // Images
 
-static const u32 Gacha_Menu_1[] = INCBIN_U32("graphics/gacha/menu_1.4bpp.smol");
-static const u32 Gacha_Menu_2[] = INCBIN_U32("graphics/gacha/menu_2.4bpp.smol");
+static const u32 Gacha_Menu_1[] = INCGFX_U32("graphics/gacha/menu_1.png", ".4bpp.smol");
+static const u32 Gacha_Menu_2[] = INCGFX_U32("graphics/gacha/menu_2.png", ".4bpp.smol");
 
 // Palettes
 
 // Basic
-static const u16 Gacha_Menu_Basic_Pal[] = INCBIN_U16("graphics/gacha/menu_basic.gbapal");
+static const u16 Gacha_Menu_Basic_Pal[] = INCGFX_U16("graphics/gacha/menu_basic.pal", ".gbapal");
 // Great
-static const u16 Gacha_Menu_Great_Pal[] = INCBIN_U16("graphics/gacha/menu_great.gbapal");
+static const u16 Gacha_Menu_Great_Pal[] = INCGFX_U16("graphics/gacha/menu_great.pal", ".gbapal");
 // Ultra
-static const u16 Gacha_Menu_Ultra_Pal[] = INCBIN_U16("graphics/gacha/menu_ultra.gbapal");
+static const u16 Gacha_Menu_Ultra_Pal[] = INCGFX_U16("graphics/gacha/menu_ultra.pal", ".gbapal");
 // Master
-static const u16 Gacha_Menu_Master_Pal[] = INCBIN_U16("graphics/gacha/menu_master.gbapal");
+static const u16 Gacha_Menu_Master_Pal[] = INCGFX_U16("graphics/gacha/menu_master.pal", ".gbapal");
 
 // Basic
-static const u16 Gacha_Menu2_Basic_Pal[] = INCBIN_U16("graphics/gacha/menu2_basic.gbapal");
+static const u16 Gacha_Menu2_Basic_Pal[] = INCGFX_U16("graphics/gacha/menu2_basic.pal", ".gbapal");
 // Great
-static const u16 Gacha_Menu2_Great_Pal[] = INCBIN_U16("graphics/gacha/menu2_great.gbapal");
+static const u16 Gacha_Menu2_Great_Pal[] = INCGFX_U16("graphics/gacha/menu2_great.pal", ".gbapal");
 // Ultra
-static const u16 Gacha_Menu2_Ultra_Pal[] = INCBIN_U16("graphics/gacha/menu2_ultra.gbapal");
+static const u16 Gacha_Menu2_Ultra_Pal[] = INCGFX_U16("graphics/gacha/menu2_ultra.pal", ".gbapal");
 // Master
-static const u16 Gacha_Menu2_Master_Pal[] = INCBIN_U16("graphics/gacha/menu2_master.gbapal");
+static const u16 Gacha_Menu2_Master_Pal[] = INCGFX_U16("graphics/gacha/menu2_master.pal", ".gbapal");
 
 // Pokemon
 
 // Belossom
-static const u32 BelossomGFX[] = INCBIN_U32("graphics/gacha/belossom.4bpp.smol");
-static const u16 BelossomPAL[] = INCBIN_U16("graphics/gacha/belossom.gbapal");
+static const u32 BelossomGFX[] = INCGFX_U32("graphics/gacha/belossom.png", ".4bpp.smol");
+static const u16 BelossomPAL[] = INCGFX_U16("graphics/gacha/belossom.pal", ".gbapal");
 
 // Phanpy
-static const u32 PhanpyGFX[] = INCBIN_U32("graphics/gacha/phanpy.4bpp.smol");
-static const u16 PhanpyPal[] = INCBIN_U16("graphics/gacha/phanpy.gbapal");
+static const u32 PhanpyGFX[] = INCGFX_U32("graphics/gacha/phanpy.png", ".4bpp.smol");
+static const u16 PhanpyPal[] = INCGFX_U16("graphics/gacha/phanpy.pal", ".gbapal");
 
 // Teddiursa
-static const u32 TeddiursaGFX[] = INCBIN_U32("graphics/gacha/teddiursa.4bpp.smol");
-static const u16 TeddiursaPAL[] = INCBIN_U16("graphics/gacha/teddiursa.gbapal");
+static const u32 TeddiursaGFX[] = INCGFX_U32("graphics/gacha/teddiursa.png", ".4bpp.smol");
+static const u16 TeddiursaPAL[] = INCGFX_U16("graphics/gacha/teddiursa.pal", ".gbapal");
 
 // Elekid
-static const u32 ElekidGFX[] = INCBIN_U32("graphics/gacha/elekid.4bpp.smol");
-static const u16 ElekidPAL[] = INCBIN_U16("graphics/gacha/elekid.gbapal");
+static const u32 ElekidGFX[] = INCGFX_U32("graphics/gacha/elekid.png", ".4bpp.smol");
+static const u16 ElekidPAL[] = INCGFX_U16("graphics/gacha/elekid.pal", ".gbapal");
 
 // Hoppip
-static const u32 HoppipGFX[] = INCBIN_U32("graphics/gacha/hoppip.4bpp.smol");
-static const u16 HoppipPAL[] = INCBIN_U16("graphics/gacha/hoppip.gbapal");
+static const u32 HoppipGFX[] = INCGFX_U32("graphics/gacha/hoppip.png", ".4bpp.smol");
+static const u16 HoppipPAL[] = INCGFX_U16("graphics/gacha/hoppip.pal", ".gbapal");
 
 // Arrows
 
-static const u32 Gacha_Arrows_GFX[] = INCBIN_U32("graphics/gacha/arrows.4bpp.smol");
+static const u32 Gacha_Arrows_GFX[] = INCGFX_U32("graphics/gacha/arrows.png", ".4bpp.smol");
 
 // Press "A"
 
-static const u32 Gacha_Press_A_GFX[] = INCBIN_U32("graphics/gacha/pressA.4bpp.smol");
+static const u32 Gacha_Press_A_GFX[] = INCGFX_U32("graphics/gacha/pressA.png", ".4bpp.smol");
 
-static const u16 sPokeball_Pal[] = INCBIN_U16("graphics/trade/pokeball.gbapal");
-static const u8 sPokeball_Gfx[] = INCBIN_U8("graphics/trade/pokeball.4bpp");
+static const u16 sPokeball_Pal[] = INCGFX_U16("graphics/trade/pokeball.png", ".gbapal");
+static const u8 sPokeball_Gfx[] = INCGFX_U8("graphics/trade/pokeball.png", ".4bpp");
 
 const u16 gTrade_Tilemap[] = INCBIN_U16("graphics/trade/platform.bin");
 

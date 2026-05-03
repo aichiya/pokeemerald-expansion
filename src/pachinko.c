@@ -301,51 +301,51 @@ static const struct WindowTemplate sPinballWinTemplates[] = {
     DUMMY_WIN_TEMPLATE,
 };
 
-static const u32 sCoverBgGfx[] = INCBIN_U32("graphics/pinball/bg_cover_tiles.4bpp");
-static const u16 sCoverBgPalette[] = INCBIN_U16("graphics/pinball/bg_cover_tiles.gbapal");
+static const u32 sCoverBgGfx[] = INCGFX_U32("graphics/pinball/bg_cover_tiles.png", ".4bpp");
+static const u16 sCoverBgPalette[] = INCGFX_U16("graphics/pinball/bg_cover_tiles.png", ".gbapal");
 static const u16 sCovergTilemap[] = INCBIN_U16("graphics/pinball/bg_tilemap_cover.bin");
 
-static const u32 sBallPokeballGfx[] = INCBIN_U32("graphics/pinball/ball_pokeball.4bpp.smol");
-static const u16 sBallPokeballPalette[] = INCBIN_U16("graphics/pinball/ball_pokeball.gbapal");
-static const u16 sFlipperPalette[] = INCBIN_U16("graphics/pinball/flipper.gbapal");
+static const u32 sBallPokeballGfx[] = INCGFX_U32("graphics/pinball/ball_pokeball.png", ".4bpp.smol");
+static const u16 sBallPokeballPalette[] = INCGFX_U16("graphics/pinball/ball_pokeball.png", ".gbapal");
+static const u16 sFlipperPalette[] = INCGFX_U16("graphics/pinball/flipper.png", ".gbapal");
 
 static const u8 sFlipperCollisionRadii[] = INCBIN_U8("data/pinball/flipper_radii.bin");
 static const u8 sFlipperCollisionNormalAngles[] = INCBIN_U8("data/pinball/flipper_normal_angles.bin");
 
-static const u32 sDiglettStageBgGfx[] = INCBIN_U32("graphics/pachinko/bgtiles.4bpp");
-static const u16 sDiglettStageBgPalette[] = INCBIN_U16("graphics/pachinko/bg_indexed.gbapal");
-static const u8 sDiglettStageBgCollisionMasks[] = INCBIN_U8("graphics/pinball/bg_collision_masks_diglett.1bpp");
+static const u32 sDiglettStageBgGfx[] = INCGFX_U32("graphics/pachinko/bgtiles.png", ".4bpp");
+static const u16 sDiglettStageBgPalette[] = INCGFX_U16("graphics/pachinko/bg_indexed.pal", ".gbapal");
+static const u8 sDiglettStageBgCollisionMasks[] = INCGFX_U8("graphics/pinball/bg_collision_masks_diglett.png", ".1bpp");
 static const u8 sDiglettStageBgCollisionMap[] = INCBIN_U8("graphics/pachinko/collisionmap.bin");
 
-static const u32 gPlayer_Gfx[] = INCBIN_U32("graphics/pachinko/input_numbers.4bpp.smol");
-static const u16 sPlayer_Pal[] = INCBIN_U16("graphics/pachinko/input_numbers.gbapal");
+static const u32 gPlayer_Gfx[] = INCGFX_U32("graphics/pachinko/input_numbers.png", ".4bpp.smol");
+static const u16 sPlayer_Pal[] = INCGFX_U16("graphics/pachinko/input_numbers.pal", ".gbapal");
 
-static const u32 SpinarakGFX[] = INCBIN_U32("graphics/pachinko/spider.4bpp.smol");
-static const u16 SpinarakPAL[] = INCBIN_U16("graphics/pachinko/spider.gbapal");
+static const u32 SpinarakGFX[] = INCGFX_U32("graphics/pachinko/spider.png", ".4bpp.smol");
+static const u16 SpinarakPAL[] = INCGFX_U16("graphics/pachinko/spider.pal", ".gbapal");
 
-static const u32 SpeedGFX[] = INCBIN_U32("graphics/pachinko/speed.4bpp.smol");
-static const u16 SpeedPAL[] = INCBIN_U16("graphics/pachinko/speed.gbapal");
+static const u32 SpeedGFX[] = INCGFX_U32("graphics/pachinko/speed.png", ".4bpp.smol");
+static const u16 SpeedPAL[] = INCGFX_U16("graphics/pachinko/speed.pal", ".gbapal");
 
-static const u32 MultiplierGFX[] = INCBIN_U32("graphics/pachinko/multiplier.4bpp.smol");
-static const u16 MultiplierPAL[] = INCBIN_U16("graphics/pachinko/multiplier.gbapal");
+static const u32 MultiplierGFX[] = INCGFX_U32("graphics/pachinko/multiplier.png", ".4bpp.smol");
+static const u16 MultiplierPAL[] = INCGFX_U16("graphics/pachinko/multiplier.pal", ".gbapal");
 
-static const u32 LivesGFX[] = INCBIN_U32("graphics/pachinko/lives.4bpp.smol");
-static const u16 LivesPAL[] = INCBIN_U16("graphics/pachinko/lives.gbapal");
+static const u32 LivesGFX[] = INCGFX_U32("graphics/pachinko/lives.png", ".4bpp.smol");
+static const u16 LivesPAL[] = INCGFX_U16("graphics/pachinko/lives.pal", ".gbapal");
 
-static const u32 ArrowGFX[] = INCBIN_U32("graphics/pachinko/arrow.4bpp.smol");
-static const u16 ArrowPAL[] = INCBIN_U16("graphics/pachinko/arrow.gbapal");
+static const u32 ArrowGFX[] = INCGFX_U32("graphics/pachinko/arrow.png", ".4bpp.smol");
+static const u16 ArrowPAL[] = INCGFX_U16("graphics/pachinko/arrow.pal", ".gbapal");
 
-static const u32 TitleGFX[] = INCBIN_U32("graphics/pachinko/title.4bpp.smol");
-static const u16 TitlePAL[] = INCBIN_U16("graphics/pachinko/title.gbapal");
+static const u32 TitleGFX[] = INCGFX_U32("graphics/pachinko/title.png", ".4bpp.smol");
+static const u16 TitlePAL[] = INCGFX_U16("graphics/pachinko/title.pal", ".gbapal");
 
-static const u32 GameOverGFX[] = INCBIN_U32("graphics/pachinko/gameover.4bpp.smol");
-static const u16 GameOverPAL[] = INCBIN_U16("graphics/pachinko/gameover.gbapal");
+static const u32 GameOverGFX[] = INCGFX_U32("graphics/pachinko/gameover.png", ".4bpp.smol");
+static const u16 GameOverPAL[] = INCGFX_U16("graphics/pachinko/gameover.pal", ".gbapal");
 
-static const u32 WinGFX[] = INCBIN_U32("graphics/pachinko/win.4bpp.smol");
-static const u16 WinPAL[] = INCBIN_U16("graphics/pachinko/win.gbapal");
+static const u32 WinGFX[] = INCGFX_U32("graphics/pachinko/win.png", ".4bpp.smol");
+static const u16 WinPAL[] = INCGFX_U16("graphics/pachinko/win.pal", ".gbapal");
 
-static const u32 NewLevelGFX[] = INCBIN_U32("graphics/pachinko/newlevel.4bpp.smol");
-static const u16 NewLevelPAL[] = INCBIN_U16("graphics/pachinko/newlevel.gbapal");
+static const u32 NewLevelGFX[] = INCGFX_U32("graphics/pachinko/newlevel.png", ".4bpp.smol");
+static const u16 NewLevelPAL[] = INCGFX_U16("graphics/pachinko/newlevel.pal", ".gbapal");
 
 // Levels
 
@@ -941,11 +941,11 @@ static const u16 sFlipperRadiusMagnitudes[32] = {
     0x00F8, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC, 0x00FC,
 };
 
-static const s16 sTiltLeftOnlyVelocityDeltas[] = INCBIN_S16("data/pinball/tilt_left_deltas.bin");
-static const s16 sTiltRightOnlyVelocityDeltas[] = INCBIN_S16("data/pinball/tilt_right_deltas.bin");
-static const s16 sTiltDownOnlyVelocityDeltas[] = INCBIN_S16("data/pinball/tilt_down_deltas.bin");
-static const s16 sTiltDownRightVelocityDeltas[] = INCBIN_S16("data/pinball/tilt_down_right_deltas.bin");
-static const s16 sTiltDownLeftVelocityDeltas[] = INCBIN_S16("data/pinball/tilt_down_left_deltas.bin");
+static const s16 sTiltLeftOnlyVelocityDeltas[] = INCBIN_U16("data/pinball/tilt_left_deltas.bin");
+static const s16 sTiltRightOnlyVelocityDeltas[] = INCBIN_U16("data/pinball/tilt_right_deltas.bin");
+static const s16 sTiltDownOnlyVelocityDeltas[] = INCBIN_U16("data/pinball/tilt_down_deltas.bin");
+static const s16 sTiltDownRightVelocityDeltas[] = INCBIN_U16("data/pinball/tilt_down_right_deltas.bin");
+static const s16 sTiltDownLeftVelocityDeltas[] = INCBIN_U16("data/pinball/tilt_down_left_deltas.bin");
 
 static const s16 *const sTiltVelocityDeltas[] = {
     NULL,

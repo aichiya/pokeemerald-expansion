@@ -6314,14 +6314,14 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
         u32 teraType;
         if (GetActiveGimmick(battler) == GIMMICK_TERA && ((teraType = GetMonData(mon, MON_DATA_TERA_TYPE)) != TYPE_STELLAR))
             return teraType;
-        else if (type1 != TYPE_MYSTERY && !(gBattleMons[battler].volatiles.roostActive && type1 == TYPE_NEW_FLYING))
-            return type1;
-        else if (type2 != TYPE_MYSTERY && !(gBattleMons[battler].volatiles.roostActive && type2 == TYPE_NEW_FLYING))
-            return type2;
+        else if (types[0] != TYPE_MYSTERY && !(gBattleMons[battler].volatiles.roostActive && types[0] == TYPE_NEW_FLYING))
+            return types[0];
+        else if (types[1] != TYPE_MYSTERY && !(gBattleMons[battler].volatiles.roostActive && types[1] == TYPE_NEW_FLYING))
+            return types[1];
         else if (gBattleMons[battler].volatiles.roostActive)
             return (B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NEW_ILLUSION : TYPE_MYSTERY);
-        else if (type3 != TYPE_MYSTERY)
-            return type3;
+        else if (types[2] != TYPE_MYSTERY)
+            return types[2];
         else
             return TYPE_MYSTERY;
     }

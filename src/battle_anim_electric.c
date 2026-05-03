@@ -1041,9 +1041,9 @@ static void AnimTask_ElectricChargingParticles_Step(u8 taskId)
             u8 spriteId;
             task->data[12] = 0;
             if (gAnimMoveIndex == MOVE_FLASH_CANNON || gAnimMoveIndex == MOVE_STEEL_BEAM)
-                spriteId = CreateSprite(&gLightOfRuinGrayChargeTemplate, task->data[14], task->data[15], 2);
+                spriteId = CreateSpriteUnchecked(&gLightOfRuinGrayChargeTemplate, task->data[14], task->data[15], 2);
             else
-                spriteId = CreateSprite(&gElectricChargingParticlesSpriteTemplate, task->data[14], task->data[15], 2);
+                spriteId = CreateSpriteUnchecked(&gElectricChargingParticlesSpriteTemplate, task->data[14], task->data[15], 2);
 
             if (spriteId != MAX_SPRITES)
             {
@@ -1326,10 +1326,10 @@ static bool8 CreateVoltTackleBolt(struct Task *task, u8 taskId)
     {
     case MOVE_FAIRY_LOCK:
     case MOVE_GRIMOIRE_CALL:
-        spriteId = CreateSprite(&gFairyLockChainsSpriteTemplate, task->data[3], task->data[5] + 10, 35);
+        spriteId = CreateSpriteUnchecked(&gFairyLockChainsSpriteTemplate, task->data[3], task->data[5] + 10, 35);
         break;
     case MOVE_COLLISION_COURSE:
-        spriteId = CreateSprite(&gCollisionCourseSpriteTemplate, task->data[3], task->data[5], 35);
+        spriteId = CreateSpriteUnchecked(&gCollisionCourseSpriteTemplate, task->data[3], task->data[5], 35);
         break;
     case MOVE_ILLUSIONARY_DOMINATION:
         if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
@@ -1342,7 +1342,7 @@ static bool8 CreateVoltTackleBolt(struct Task *task, u8 taskId)
         }
         break;
     default:
-        spriteId = CreateSprite(&gVoltTackleBoltSpriteTemplate, task->data[3], task->data[5], 35);
+        spriteId = CreateSpriteUnchecked(&gVoltTackleBoltSpriteTemplate, task->data[3], task->data[5], 35);
         break;
     }
     bool32 doDestroyOamMatrix = (gAnimMoveIndex == MOVE_FAIRY_LOCK) || (gAnimMoveIndex == MOVE_COLLISION_COURSE) || (gAnimMoveIndex == MOVE_GRIMOIRE_CALL);
@@ -1493,7 +1493,7 @@ void AnimTask_ShockWaveProgressingBolt(u8 taskId)
 
 static bool8 CreateShockWaveBoltSprite(struct Task *task, u8 taskId)
 {
-    u8 spriteId = CreateSprite(&gShockWaveProgressingBoltSpriteTemplate, task->data[6], task->data[7], 35);
+    u8 spriteId = CreateSpriteUnchecked(&gShockWaveProgressingBoltSpriteTemplate, task->data[6], task->data[7], 35);
     if (spriteId != MAX_SPRITES)
     {
         gSprites[spriteId].oam.tileNum += task->data[4];

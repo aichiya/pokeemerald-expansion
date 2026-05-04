@@ -1400,8 +1400,8 @@ gSongTable::
 	song mus_pkmn_glitchxcity_eterna_forest, MUSIC_PLAYER_BGM, 0
 	song mus_etc_melompat_lebih_tinggi, MUSIC_PLAYER_BGM, 0
 	song mus_omori_final_duet, MUSIC_PLAYER_BGM, 0
-	song dummy_song_header, MUSIC_PLAYER_BGM, 0
-	song dummy_song_header, MUSIC_PLAYER_BGM, 0
+	song mus_etc_my_heart, MUSIC_PLAYER_BGM, 0
+	song mus_sh_duel_in_another_dimension, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0

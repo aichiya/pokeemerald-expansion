@@ -2,7 +2,7 @@
 
         .equ    mus_etc_melompat_lebih_tinggi_grp, voicegroup827
         .equ    mus_etc_melompat_lebih_tinggi_pri, 0
-        .equ    mus_etc_melompat_lebih_tinggi_mvl, 90
+        .equ    mus_etc_melompat_lebih_tinggi_mvl, 100
         .equ    mus_etc_melompat_lebih_tinggi_rev, reverb_set+50
         .equ    mus_etc_melompat_lebih_tinggi_key, 0
 

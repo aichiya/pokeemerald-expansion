@@ -4283,7 +4283,132 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_RG_ENCOUNTER_DEOXYS)      \
     X(MUS_RG_TRAINER_TOWER)         \
     X(MUS_RG_SLOW_PALLET)           \
-    X(MUS_RG_TEACHY_TV_MENU)
+    X(MUS_RG_TEACHY_TV_MENU)        \
+    X(MUS_AZALEA)                   \
+    X(MUS_BRIGETTES_ROOM)           \
+    X(MUS_CANALAVE)                 \
+    X(MUS_CELADON)                  \
+    X(MUS_CHERRYGROVE)              \
+    X(MUS_CIANWOOD)                 \
+    X(MUS_CYCLING_HOENN)            \
+    X(MUS_CYCLING_JOHTO)            \
+    X(MUS_CYCLING_SINNOH)           \
+    X(MUS_CYNTHIA)                  \
+    X(MUS_DARK_CAVE)                \
+    X(MUS_DRAGONS_DEN)              \
+    X(MUS_ECRUTEAK)                 \
+    X(MUS_ELM_LAB)                  \
+    X(MUS_ENCOUNTER_BATTLE_ZONE)    \
+    X(MUS_ENCOUNTER_BOY_JOHTO)      \
+    X(MUS_ENCOUNTER_EUSINE)         \
+    X(MUS_ENCOUNTER_GIRL_JOHTO)     \
+    X(MUS_ENCOUNTER_JOHTO_SHADY)    \
+    X(MUS_ENCOUNTER_ROCKET)         \
+    X(MUS_ENCOUNTER_ROCKET_BOSS)    \
+    X(MUS_ENCOUNTER_SBC)            \
+    X(MUS_FUCHSIA)                  \
+    X(MUS_GAME_CORNER_JOHTO)        \
+    X(MUS_GLOBAL_TERMINAL_TOWER)    \
+    X(MUS_GOLDENROD)                \
+    X(MUS_GOLDENROD_WHIMSICAL)      \
+    X(MUS_GTS)                      \
+    X(MUS_GYM_REMIX)                \
+    X(MUS_GYM_JOHTO)                \
+    X(MUS_GYM_SINNOH)               \
+    X(MUS_ICE_PATH)                 \
+    X(MUS_INDIGO_PLATEAU)           \
+    X(MUS_INDIGO_PLATEAU_LEAGUE)    \
+    X(MUS_JESSIE_JAMES_THEME)       \
+    X(MUS_JOHTO_ROUTE_GATE)         \
+    X(MUS_KAIETEUR_JUNGLE)          \
+    X(MUS_KANTO_EMOTION)            \
+    X(MUS_KANTO_ROUTE_GATE)         \
+    X(MUS_LAKE_OF_RAGE)             \
+    X(MUS_LAVENDER_PEACE)           \
+    X(MUS_LAVENDER_PEACE_INTRO)     \
+    X(MUS_LEGEND_TRAINER_CHALLENGE) \
+    X(MUS_LINDEN_MANSION)           \
+    X(MUS_MAHOGANY)                 \
+    X(MUS_MT_EMBER)                 \
+    X(MUS_MT_MORA_CAVE)             \
+    X(MUS_NEW_BARK_TOWN)            \
+    X(MUS_NEW_GAME_INTRO)           \
+    X(MUS_NEW_GAME_INTRO_GUYANA)    \
+    X(MUS_NEW_GAME_INTRO_HOENN)     \
+    X(MUS_NEW_GAME_INTRO_JOHTO)     \
+    X(MUS_OLIVINE)                  \
+    X(MUS_PEWTER)                   \
+    X(MUS_PEWTER_MUSEUM)            \
+    X(MUS_POKE_CENTER_REMIX)        \
+    X(MUS_POKE_CENTER_GUYANA)       \
+    X(MUS_POKE_CENTER_JOHTO)        \
+    X(MUS_POKE_MANSION)             \
+    X(MUS_POKE_MART_REMIX)          \
+    X(MUS_POKE_MART_HOENN)          \
+    X(MUS_POKE_MART_JOHTO)          \
+    X(MUS_ROCKET_WAREHOUSE)         \
+    X(MUS_ROCK_TUNNEL)              \
+    X(MUS_ROUTE1)                   \
+    X(MUS_ROUTE11)                  \
+    X(MUS_ROUTE110_REMIX)           \
+    X(MUS_ROUTE1_STORM)             \
+    X(MUS_ROUTE218)                 \
+    X(MUS_ROUTE23_BADGE1)           \
+    X(MUS_ROUTE23_BADGE2)           \
+    X(MUS_ROUTE23_BADGE3)           \
+    X(MUS_ROUTE23_BADGE4)           \
+    X(MUS_ROUTE23_BADGE5)           \
+    X(MUS_ROUTE23_BADGE6)           \
+    X(MUS_ROUTE23_BADGE7)           \
+    X(MUS_ROUTE23_GATE)             \
+    X(MUS_ROUTE24)                  \
+    X(MUS_ROUTE26)                  \
+    X(MUS_ROUTE29)                  \
+    X(MUS_ROUTE3)                   \
+    X(MUS_ROUTE30)                  \
+    X(MUS_ROUTE32)                  \
+    X(MUS_ROUTE38)                  \
+    X(MUS_ROUTE42)                  \
+    X(MUS_ROUTE47)                  \
+    X(MUS_SAFARI_ZONE_REMIX)        \
+    X(MUS_SLATEPORT_REMIX)          \
+    X(MUS_SPROUT_TOWER)             \
+    X(MUS_SS_ANNE)                  \
+    X(MUS_SURF_HOENN)               \
+    X(MUS_SURF_JOHTO)               \
+    X(MUS_SURF_SINNOH)              \
+    X(MUS_TOHJO_FALLS)              \
+    X(MUS_TOHJO_FALLS_DEPTHS)       \
+    X(MUS_TRAINER_TOWER)            \
+    X(MUS_UNDERWATER_REMIX)         \
+    X(MUS_VERMILION)                \
+    X(MUS_VICTORY_ROAD_CAVE)        \
+    X(MUS_VIOLET)                   \
+    X(MUS_VIRIDIAN_FOREST_PEACE)    \
+    X(MUS_VS_ELITE_FOUR_REMIX)      \
+    X(MUS_VS_GYM_LEADER_REMIX)      \
+    X(MUS_VS_GYM_LEADER_JOHTO)      \
+    X(MUS_VS_GYM_LEADER_REMATCH)    \
+    X(MUS_VS_GYM_LEADER_RIVAL)      \
+    X(MUS_VS_GYM_LEADER_SINNOH)     \
+    X(MUS_VS_LEGEND)                \
+    X(MUS_VS_MEW_REMIX)             \
+    X(MUS_VS_PROF_OAK)              \
+    X(MUS_VS_RANK_MATCH)            \
+    X(MUS_VS_RIVAL_REMIX)           \
+    X(MUS_VS_SAFARI_WILD)           \
+    X(MUS_VS_TEAM_ROCKET)           \
+    X(MUS_VS_TEAM_ROCKET_ADMIN)     \
+    X(MUS_VS_TEAM_ROCKET_BOSS)      \
+    X(MUS_VS_TRAINER_REMIX)         \
+    X(MUS_VS_TRAINER_JOHTO)         \
+    X(MUS_VS_TRAINER_SINNOH)        \
+    X(MUS_VS_WILD_REMIX)            \
+    X(MUS_VS_WILD_GUYANA)           \
+    X(MUS_VS_WILD_JOHTO)            \
+    X(MUS_VS_WILD_SEVII)            \
+    X(MUS_VS_WILD_SINNOH)           \
+    X(MUS_WELCOME)
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \
@@ -4554,7 +4679,8 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(SE_ARENA_TIMEUP2)             \
     X(SE_PIKE_CURTAIN_CLOSE)        \
     X(SE_PIKE_CURTAIN_OPEN)         \
-    X(SE_SUDOWOODO_SHAKE)
+    X(SE_SUDOWOODO_SHAKE)           \
+    X(SE_PHONE_RING_LONG)
 
 // Create BGM list
 #define X(songId) static const u8 sBGMName_##songId[] = _(#songId);

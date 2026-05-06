@@ -10,26 +10,26 @@
 @ begins. Therefore, the notes naturally map to the key split table without
 @ any extra offset calculation.
 
-keysplit piano, 36
+keysplit piano, 0
 	split 0, 55
 	split 1, 70
 	split 2, 91
-	split 3, 108
+	split 3, 127
 
-keysplit strings, 36
+keysplit strings, 0
 	split 0, 69
 	split 1, 81
-	split 2, 108
+	split 2, 127
 
-keysplit trumpet, 36
+keysplit trumpet, 0
 	split 0, 66
 	split 1, 84
-	split 2, 108
+	split 2, 127
 
-keysplit tuba, 24
+keysplit tuba, 0
 	split 0, 42
-	split 1, 108
+	split 1, 127
 
-keysplit french_horn, 36
+keysplit french_horn, 0
 	split 0, 66
-	split 1, 108
+	split 1, 127

@@ -201,3 +201,11 @@
 .include "sound/voicegroups/rg_sevii_45.inc"
 .include "sound/voicegroups/rg_sevii_67.inc"
 .include "sound/voicegroups/drumsets/rg_credits.inc"
+
+@ Nintendo Midi Music
+@ https://www.youtube.com/@NintendoMIDIMusic
+@ https://github.com/lequietriot/pokerainbow/tree/rainbow
+@ Based on https://github.com/TeamAquasHideout/Team-Aquas-Asset-Repo/tree/main/Audio/nmm-lequietriot
+.include "sound/voicegroups/drumsets/nmm.inc"
+.include "sound/voicegroups/nmm_general.inc"
+.include "sound/voicegroups/keysplits/nmm_distortion_guitar.inc"

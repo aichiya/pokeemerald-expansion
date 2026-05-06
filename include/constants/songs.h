@@ -276,7 +276,12 @@
 #define SE_PIKE_CURTAIN_CLOSE       267 // SE_CURTAIN
 #define SE_PIKE_CURTAIN_OPEN        268 // SE_CURTAIN1
 #define SE_SUDOWOODO_SHAKE          269 // SE_USSOKI
-#define END_SE                      SE_SUDOWOODO_SHAKE
+// Nintendo Midi Music
+// https://www.youtube.com/@NintendoMIDIMusic
+// https://github.com/lequietriot/pokerainbow/tree/rainbow
+// Based on https://github.com/TeamAquasHideout/Team-Aquas-Asset-Repo/tree/main/Audio/nmm-lequietriot
+#define SE_PHONE_RING_LONG          270
+#define END_SE                      SE_PHONE_RING_LONG
 
 // Music
 #define START_MUS                   350
@@ -490,7 +495,6 @@
 #define MUS_RG_TRAINER_TOWER        556 // MUS_RG_T_TOWER
 #define MUS_RG_SLOW_PALLET          557 // MUS_RG_SLOWMASARA
 #define MUS_RG_TEACHY_TV_MENU       558 // MUS_RG_TVNOIZE
-#define END_MUS                     MUS_RG_TEACHY_TV_MENU
 
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.
@@ -545,6 +549,138 @@
 #define PH_NURSE_BLEND              607
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
+
+// Nintendo Midi Music
+// https://www.youtube.com/@NintendoMIDIMusic
+// https://github.com/lequietriot/pokerainbow/tree/rainbow
+// Based on https://github.com/TeamAquasHideout/Team-Aquas-Asset-Repo/tree/main/Audio/nmm-lequietriot
+#define MUS_AZALEA                   610
+#define MUS_BRIGETTES_ROOM           611
+#define MUS_CANALAVE                 612
+#define MUS_CELADON                  613
+#define MUS_CHERRYGROVE              614
+#define MUS_CIANWOOD                 615
+#define MUS_CYCLING_HOENN            616
+#define MUS_CYCLING_JOHTO            617
+#define MUS_CYCLING_SINNOH           618
+#define MUS_CYNTHIA                  619
+#define MUS_DARK_CAVE                620
+#define MUS_DRAGONS_DEN              621
+#define MUS_ECRUTEAK                 622
+#define MUS_ELM_LAB                  623
+#define MUS_ENCOUNTER_BATTLE_ZONE    624
+#define MUS_ENCOUNTER_BOY_JOHTO      625
+#define MUS_ENCOUNTER_EUSINE         626
+#define MUS_ENCOUNTER_GIRL_JOHTO     627
+#define MUS_ENCOUNTER_JOHTO_SHADY    628
+#define MUS_ENCOUNTER_ROCKET         629
+#define MUS_ENCOUNTER_ROCKET_BOSS    630
+#define MUS_ENCOUNTER_SBC            631
+#define MUS_FUCHSIA                  632
+#define MUS_GAME_CORNER_JOHTO        633
+#define MUS_GLOBAL_TERMINAL_TOWER    634
+#define MUS_GOLDENROD                635
+#define MUS_GOLDENROD_WHIMSICAL      636
+#define MUS_GTS                      637
+#define MUS_GYM_REMIX                638
+#define MUS_GYM_JOHTO                639
+#define MUS_GYM_SINNOH               640
+#define MUS_ICE_PATH                 641
+#define MUS_INDIGO_PLATEAU           642
+#define MUS_INDIGO_PLATEAU_LEAGUE    643
+#define MUS_JESSIE_JAMES_THEME       644
+#define MUS_JOHTO_ROUTE_GATE         645
+#define MUS_KAIETEUR_JUNGLE          646
+#define MUS_KANTO_EMOTION            647
+#define MUS_KANTO_ROUTE_GATE         648
+#define MUS_LAKE_OF_RAGE             649
+#define MUS_LAVENDER_PEACE           650
+#define MUS_LAVENDER_PEACE_INTRO     651
+#define MUS_LEGEND_TRAINER_CHALLENGE 652
+#define MUS_LINDEN_MANSION           653
+#define MUS_MAHOGANY                 654
+#define MUS_MT_EMBER                 655
+#define MUS_MT_MORA_CAVE             656
+#define MUS_NEW_BARK_TOWN            657
+#define MUS_NEW_GAME_INTRO           658
+#define MUS_NEW_GAME_INTRO_GUYANA    659
+#define MUS_NEW_GAME_INTRO_HOENN     660
+#define MUS_NEW_GAME_INTRO_JOHTO     661
+#define MUS_OLIVINE                  662
+#define MUS_PEWTER                   663
+#define MUS_PEWTER_MUSEUM            664
+#define MUS_POKE_CENTER_REMIX        665
+#define MUS_POKE_CENTER_GUYANA       666
+#define MUS_POKE_CENTER_JOHTO        667
+#define MUS_POKE_MANSION             668
+#define MUS_POKE_MART_REMIX          669
+#define MUS_POKE_MART_HOENN          670
+#define MUS_POKE_MART_JOHTO          671
+#define MUS_ROCKET_WAREHOUSE         672
+#define MUS_ROCK_TUNNEL              673
+#define MUS_ROUTE1                   674
+#define MUS_ROUTE11                  675
+#define MUS_ROUTE110_REMIX           676
+#define MUS_ROUTE1_STORM             677
+#define MUS_ROUTE218                 678
+#define MUS_ROUTE23_BADGE1           679
+#define MUS_ROUTE23_BADGE2           680
+#define MUS_ROUTE23_BADGE3           681
+#define MUS_ROUTE23_BADGE4           682
+#define MUS_ROUTE23_BADGE5           683
+#define MUS_ROUTE23_BADGE6           684
+#define MUS_ROUTE23_BADGE7           685
+#define MUS_ROUTE23_GATE             686
+#define MUS_ROUTE24                  687
+#define MUS_ROUTE26                  688
+#define MUS_ROUTE29                  689
+#define MUS_ROUTE3                   690
+#define MUS_ROUTE30                  691
+#define MUS_ROUTE32                  692
+#define MUS_ROUTE38                  693
+#define MUS_ROUTE42                  694
+#define MUS_ROUTE47                  695
+#define MUS_SAFARI_ZONE_REMIX        696
+#define MUS_SLATEPORT_REMIX          697
+#define MUS_SPROUT_TOWER             698
+#define MUS_SS_ANNE                  699
+#define MUS_SURF_HOENN               700
+#define MUS_SURF_JOHTO               701
+#define MUS_SURF_SINNOH              702
+#define MUS_TOHJO_FALLS              703
+#define MUS_TOHJO_FALLS_DEPTHS       704
+#define MUS_TRAINER_TOWER            705
+#define MUS_UNDERWATER_REMIX         706
+#define MUS_VERMILION                707
+#define MUS_VICTORY_ROAD_CAVE        708
+#define MUS_VIOLET                   709
+#define MUS_VIRIDIAN_FOREST_PEACE    710
+#define MUS_VS_ELITE_FOUR_REMIX      711
+#define MUS_VS_GYM_LEADER_REMIX      712
+#define MUS_VS_GYM_LEADER_JOHTO      713
+#define MUS_VS_GYM_LEADER_REMATCH    714
+#define MUS_VS_GYM_LEADER_RIVAL      715
+#define MUS_VS_GYM_LEADER_SINNOH     716
+#define MUS_VS_LEGEND                717
+#define MUS_VS_MEW_REMIX             718
+#define MUS_VS_PROF_OAK              719
+#define MUS_VS_RANK_MATCH            720
+#define MUS_VS_RIVAL_REMIX           721
+#define MUS_VS_SAFARI_WILD           722
+#define MUS_VS_TEAM_ROCKET           723
+#define MUS_VS_TEAM_ROCKET_ADMIN     724
+#define MUS_VS_TEAM_ROCKET_BOSS      725
+#define MUS_VS_TRAINER_REMIX         726
+#define MUS_VS_TRAINER_JOHTO         727
+#define MUS_VS_TRAINER_SINNOH        728
+#define MUS_VS_WILD_REMIX            729
+#define MUS_VS_WILD_GUYANA           730
+#define MUS_VS_WILD_JOHTO            731
+#define MUS_VS_WILD_SEVII            732
+#define MUS_VS_WILD_SINNOH           733
+#define MUS_WELCOME                  734
+
+#define END_MUS                     MUS_WELCOME
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

@@ -20007,9 +20007,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .pp = 10,
         .target = TARGET_SELECTED,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_SPECIAL,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_2,
+            .moveEffect = MOVE_EFFECT_DEF_MINUS_2,
             .chance = 100,
         }),
         .battleAnimScript = gBattleAnimMove_LuminaCrash,

@@ -1143,34 +1143,42 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     },
     [TRAINER_PIC_TH_RENKO_BIG] =
     {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_102, gTrainerPalette_102, 0, 7, 0x188),
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THRenkoBig, gTrainerBackPicPalette_THRenkoBig, sBackAnims_Hoenn),
     },
     [TRAINER_PIC_TH_MARIBEL_BIG] =
     {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_103, gTrainerPalette_103, 0, 7, 0x188),
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMaribelBig, gTrainerBackPicPalette_THMaribelBig, sBackAnims_Hoenn),
     },
     [TRAINER_PIC_TH_RENKO_SMALL] =
     {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_104, gTrainerPalette_104, 0, 7, 0x188),
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THRenkoSmall, gTrainerBackPicPalette_THRenkoSmall, sBackAnims_Hoenn),
     },
     [TRAINER_PIC_TH_MARIBEL_SMALL] =
     {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_105, gTrainerPalette_105, 0, 7, 0x188),
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMaribelSmall, gTrainerBackPicPalette_THMaribelSmall, sBackAnims_Hoenn),
     },
     [TRAINER_PIC_TH_RENKO_CLASSIC] =
     {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_106, gTrainerPalette_106, 0, 7, 0x188),
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THRenkoClassic, gTrainerBackPicPalette_THRenkoClassic, sBackAnims_Hoenn),
     },
     [TRAINER_PIC_TH_MARIBEL_CLASSIC] =
     {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_107, gTrainerPalette_107, 0, 7, 0x188),
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMaribelClassic, gTrainerBackPicPalette_THMaribelClassic, sBackAnims_Hoenn),
     },
     [TRAINER_PIC_TH_REIMU] =
     {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_108, gTrainerPalette_108, 0, 7, 0x188),
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THReimu, gTrainerBackPicPalette_THReimu, sBackAnims_Hoenn),
     },
     [TRAINER_PIC_TH_MARISA] =
     {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_109, gTrainerPalette_109, 0, 7, 0x188),
         .backPic = TRAINER_BACK_PIC(4, gTrainerBackPic_THMarisa, gTrainerBackPicPalette_THMarisa, sBackAnims_Hoenn),
     },
     [TRAINER_PIC_HIKER] =
@@ -2195,7 +2203,7 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     },
     [TRAINER_PIC_201] =
     {
-        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_201, gTrainerPalette_201),
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_201, gTrainerPalette_201, 0, 7, 0x188),
     },
     [TRAINER_PIC_202] =
     {

@@ -4985,7 +4985,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             break;
         case PROTECT_KINGS_SHIELD:
             if (aiData->abilities[battlerAtk] == ABILITY_STANCE_CHANGE //Special logic for Aegislash
-             && gBattleMons[battlerAtk].species == SPECIES_AEGISLASH_BLADE
+             && gBattleMons[battlerAtk].species == SPECIES_SH_VIVIT_ANGEL
              && !IsBattlerIncapacitated(battlerDef, aiData->abilities[battlerDef]))
             {
                 ADJUST_SCORE(GOOD_EFFECT);

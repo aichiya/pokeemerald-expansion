@@ -65,6 +65,12 @@ void FillPartnerParty(u16 trainerId)
                 otID = STEVEN_OTID;
             else if (trainerId == TRAINER_PARTNER(PARTNER_TRAINER2))
                 otID = PARTNER2_OTID;
+            else if (trainerId == TRAINER_PARTNER(PARTNER_HEMO))
+                otID = 0x0A1C0A1C;
+            else if (trainerId == TRAINER_PARTNER(PARTNER_UDA))
+                otID = PARTNER2_OTID;
+            else if (trainerId == TRAINER_PARTNER(PARTNER_TENCHO))
+                otID = 0x1B391B39;
             else
                 otID = ((firstIdPart % 72) * 1000) + ((secondIdPart % 23) * 10) + (thirdIdPart % 37) % 65536;
 

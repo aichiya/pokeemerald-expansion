@@ -1357,6 +1357,16 @@ static const struct SpriteFrameImage sPicTable_TrainerPea[] = {
     overworld_ascending_frames(gObjectEventPic_TrainerPea, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_ThRenko[] = {
+    overworld_ascending_frames(gObjectEventPic_ThRenko, 2, 4),
+};
+
+
+static const struct SpriteFrameImage sPicTable_ThMaribel[] = {
+    overworld_ascending_frames(gObjectEventPic_ThMaribel, 2, 4),
+};
+
+
 static const struct SpriteFrameImage sPicTable_ThReimu[] = {
     overworld_ascending_frames(gObjectEventPic_ThReimu, 2, 4),
 };

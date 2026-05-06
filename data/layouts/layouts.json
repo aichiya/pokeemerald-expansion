@@ -11817,6 +11817,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/AnotherWorldBrokenDreams/border.bin",
       "blockdata_filepath": "data/layouts/AnotherWorldBrokenDreams/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANOTHER_WORLD_GENSOKYO",
+      "name": "AnotherWorldGensokyo_Layout",
+      "width": 31,
+      "height": 48,
+      "primary_tileset": "gTileset_General2",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/AnotherWorldGensokyo/border.bin",
+      "blockdata_filepath": "data/layouts/AnotherWorldGensokyo/map.bin"
     }
   ]
 }

@@ -58,12 +58,12 @@ static void SpriteCB_PressStartCopyrightBanner(struct Sprite *sprite);
 static void SpriteCB_PokemonLogoShine(struct Sprite *sprite);
 
 // const rom data
-static const u16 sUnusedUnknownPal[] = INCBIN_U16("graphics/title_screen/unused.gbapal");
+static const u16 sUnusedUnknownPal[] = INCGFX_U16("graphics/title_screen/unused.pal", ".gbapal");
 
-static const u32 sTitleScreenRayquazaGfx[] = INCBIN_U32("graphics/title_screen/rayquaza.4bpp.smol");
+static const u32 sTitleScreenRayquazaGfx[] = INCGFX_U32("graphics/title_screen/rayquaza.png", ".4bpp.smol");
 static const u32 sTitleScreenRayquazaTilemap[] = INCBIN_U32("graphics/title_screen/rayquaza.bin.smolTM");
-static const u32 sTitleScreenLogoShineGfx[] = INCBIN_U32("graphics/title_screen/logo_shine.4bpp.smol");
-static const u32 sTitleScreenCloudsGfx[] = INCBIN_U32("graphics/title_screen/clouds.4bpp.smol");
+static const u32 sTitleScreenLogoShineGfx[] = INCGFX_U32("graphics/title_screen/logo_shine.png", ".4bpp.smol");
+static const u32 sTitleScreenCloudsGfx[] = INCGFX_U32("graphics/title_screen/clouds.png", ".4bpp.smol");
 
 
 
@@ -168,8 +168,6 @@ static const struct SpriteTemplate sVersionBannerLeftSpriteTemplate =
     .paletteTag = TAG_VERSION,
     .oam = &sVersionBannerLeftOamData,
     .anims = sVersionBannerLeftAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_VersionBannerLeft,
 };
 
@@ -179,8 +177,6 @@ static const struct SpriteTemplate sVersionBannerRightSpriteTemplate =
     .paletteTag = TAG_VERSION,
     .oam = &sVersionBannerRightOamData,
     .anims = sVersionBannerRightAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_VersionBannerRight,
 };
 
@@ -287,8 +283,6 @@ static const struct SpriteTemplate sStartCopyrightBannerSpriteTemplate =
     .paletteTag = TAG_PRESS_START_COPYRIGHT,
     .oam = &sOamData_CopyrightBanner,
     .anims = sStartCopyrightBannerAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_PressStartCopyrightBanner,
 };
 
@@ -345,8 +339,6 @@ static const struct SpriteTemplate sPokemonLogoShineSpriteTemplate =
     .paletteTag = TAG_PRESS_START_COPYRIGHT,
     .oam = &sPokemonLogoShineOamData,
     .anims = sPokemonLogoShineAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_PokemonLogoShine,
 };
 
@@ -569,6 +561,11 @@ static void VBlankCB(void)
 
 void CB2_InitTitleScreen(void)
 {
+    if (IS_FRLG)
+    {
+        CB2_InitTitleScreenFrlg();
+        return;
+    }
     switch (gMain.state)
     {
     default:
@@ -858,10 +855,10 @@ static void UpdateLegendaryMarkingColor(u8 frameNum)
 {
     if ((frameNum % 4) == 0) // Change color every 4th frame
     {
-        s32 intensity = Cos(frameNum, 128) + 128;
-        s32 r = 31 - ((intensity * 32 - intensity) / 256);
-        s32 g = 31 - (intensity * 22 / 256);
-        s32 b = 12;
+        s32 intensity = Cos(frameNum, Q_8_8(0.5)) + Q_8_8(0.5);
+        u32 r = 31 - Q_8_8_TO_INT(intensity * 31);
+        u32 g = 31 - Q_8_8_TO_INT(intensity * 22);
+        u32 b = 12;
 
         u16 color = RGB(r, g, b);
         LoadPalette(&color, BG_PLTT_ID(14) + 15, sizeof(color));

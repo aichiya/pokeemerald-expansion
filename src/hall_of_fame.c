@@ -310,14 +310,12 @@ static const struct SpriteTemplate sSpriteTemplate_HofConfetti =
     .paletteTag = TAG_CONFETTI,
     .oam = &sOamData_Confetti,
     .anims = sAnims_Confetti,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_HofConfetti
 };
 
-static const u16 sHallOfFame_Pal[] = INCBIN_U16("graphics/misc/japanese_hof.gbapal");
+static const u16 sHallOfFame_Pal[] = INCGFX_U16("graphics/misc/japanese_hof.png", ".gbapal");
 
-static const u32 sHallOfFame_Gfx[] = INCBIN_U32("graphics/misc/japanese_hof.4bpp.smol");
+static const u32 sHallOfFame_Gfx[] = INCGFX_U32("graphics/misc/japanese_hof.png", ".4bpp.smol", "-num_tiles 29 -Wnum_tiles");
 
 static const struct HallofFameMon sDummyFameMon =
 {

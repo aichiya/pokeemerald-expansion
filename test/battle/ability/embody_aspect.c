@@ -4,7 +4,8 @@
 
 SINGLE_BATTLE_TEST("Embody Aspect raises a stat depending on the users form by one stage")
 {
-    u16 species, ability;
+    u16 species;
+    enum Ability ability;
 
     PARAMETRIZE { species = SPECIES_OGERPON_TEAL_TERA; ability = ABILITY_EMBODY_ASPECT_TEAL_MASK; }
     PARAMETRIZE { species = SPECIES_OGERPON_HEARTHFLAME_TERA; ability = ABILITY_EMBODY_ASPECT_HEARTHFLAME_MASK; }
@@ -15,7 +16,7 @@ SINGLE_BATTLE_TEST("Embody Aspect raises a stat depending on the users form by o
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
-        TURN { }
+        TURN {}
     } SCENE {
         ABILITY_POPUP(opponent, ability);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
@@ -55,5 +56,29 @@ SINGLE_BATTLE_TEST("Embody Aspect activates when it's no longer effected by Neut
         ABILITY_POPUP(opponent, ABILITY_EMBODY_ASPECT_TEAL_MASK);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("The opposing Ogerpon's Embody Aspect raised its Speed!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Embody Aspect does not reactivate after Neutralizing Gas ends if it already activated this switch-in")
+{
+    GIVEN {
+        PLAYER(SPECIES_OGERPON_TEAL_TERA) { Ability(ABILITY_EMBODY_ASPECT_TEAL_MASK); }
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WEEZING) { Ability(ABILITY_NEUTRALIZING_GAS); }
+    } WHEN {
+        TURN { SWITCH(opponent, 1); }
+        TURN { SWITCH(opponent, 0); }
+    } SCENE {
+        ABILITY_POPUP(player, ABILITY_EMBODY_ASPECT_TEAL_MASK);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
+        MESSAGE("Ogerpon's Embody Aspect raised its Speed!");
+
+        ABILITY_POPUP(opponent, ABILITY_NEUTRALIZING_GAS);
+        MESSAGE("Neutralizing gas filled the area!");
+
+        MESSAGE("The effects of the neutralizing gas wore off!");
+        NOT ABILITY_POPUP(player, ABILITY_EMBODY_ASPECT_TEAL_MASK);
+    } THEN {
+        EXPECT_EQ(player->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 1);
     }
 }

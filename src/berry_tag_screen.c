@@ -93,7 +93,7 @@ static const struct BgTemplate sBackgroundTemplates[] =
   }
 };
 
-static const u16 sFontPalette[] = INCBIN_U16("graphics/bag/berry_tag_screen.gbapal");
+static const u16 sFontPalette[] = INCGFX_U16("graphics/bag/berry_tag_screen.pal", ".gbapal");
 
 static const u8 sTextColors[2][3] =
 {
@@ -447,7 +447,7 @@ static void PrintBerryFirmness(void)
 {
     const struct Berry *berry = GetBerryInfo(sBerryTag->berryId);
     AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, sText_FirmSlash, 0, 0x11, TEXT_SKIP_DRAW, NULL);
-    if (berry->firmness != 0)
+    if (berry->firmness != BERRY_FIRMNESS_UNKNOWN)
         AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, sBerryFirmnessStrings[berry->firmness], 0x28, 0x11, 0, NULL);
     else
         AddTextPrinterParameterized(WIN_SIZE_FIRM, FONT_NORMAL, sText_ThreeMarks, 0x28, 0x11, 0, NULL);

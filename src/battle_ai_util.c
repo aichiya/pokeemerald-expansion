@@ -1356,7 +1356,7 @@ enum MoveComparisonResult CompareMoveEffects(enum Move move1, enum Move move2, e
         return MOVE_WON_COMPARISON;
     if (effect1minus && !effect2minus)
         return MOVE_LOST_COMPARISON;
-    
+
     if (effect2plus && !effect1plus)
         return MOVE_LOST_COMPARISON;
     if (effect1plus && !effect2plus)
@@ -2177,10 +2177,8 @@ bool32 ShouldTryOHKO(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
     if (!DoesBattlerIgnoreAbilityChecks(battlerAtk, atkAbility, move) && defAbility == ABILITY_STURDY)
         return FALSE;
 
-    if (((gBattleMons[battlerDef].volatiles.lockOn
-        && gBattleMons[battlerDef].volatiles.battlerWithSureHit == battlerAtk)
-        || atkAbility == ABILITY_NO_GUARD || defAbility == ABILITY_NO_GUARD)
-        && gBattleMons[battlerAtk].level >= gBattleMons[battlerDef].level)
+    bool32 sureHit = (gBattleMons[battlerAtk].volatiles.battlerWithSureHit == battlerDef + 1) || atkAbility == ABILITY_NO_GUARD || defAbility == ABILITY_NO_GUARD;
+    if (sureHit && gBattleMons[battlerAtk].level >= gBattleMons[battlerDef].level)
     {
         return TRUE;
     }
@@ -2354,19 +2352,24 @@ bool32 CanLowerStat(enum BattlerId battlerAtk, enum BattlerId battlerDef, struct
         case ABILITY_SPEED_BOOST:
             if (stat == STAT_SPEED)
                 return FALSE;
+            break;
         case ABILITY_HYPER_CUTTER:
             if (stat == STAT_ATK)
                 return FALSE;
+            break;
         case ABILITY_BIG_PECKS:
             if (stat == STAT_DEF)
                 return FALSE;
+            break;
         case ABILITY_ILLUMINATE:
-            if (GetConfig(B_ILLUMINATE_EFFECT) < GEN_9)
-                break;
+            if (GetConfig(B_ILLUMINATE_EFFECT) >= GEN_9 && stat == STAT_ACC)
+                return FALSE;
+            break;
         case ABILITY_KEEN_EYE:
         case ABILITY_MINDS_EYE:
             if (stat == STAT_ACC)
                 return FALSE;
+            break;
         case ABILITY_CONTRARY:
         case ABILITY_CLEAR_BODY:
         case ABILITY_WHITE_SMOKE:
@@ -3114,8 +3117,7 @@ bool32 IsSwitchOutEffect(enum BattleMoveEffects effect)
     switch (effect)
     {
     case EFFECT_TELEPORT:
-        if (GetConfig(B_TELEPORT_BEHAVIOR) >= GEN_8)
-            return TRUE;
+        return (GetConfig(B_TELEPORT_BEHAVIOR) >= GEN_8);
     case EFFECT_HIT_ESCAPE:
     case EFFECT_PARTING_SHOT:
     case EFFECT_BATON_PASS:

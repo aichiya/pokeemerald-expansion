@@ -23,153 +23,6 @@
 
 	.section script_data, "aw", %progbits
 
-BattleScript_EffectWipesOutFoesParty::
-	attackanimation
-	waitanimation
-	tryreducefoespartyhptozero
-	tryfaintmon BS_TARGET
-	printstring STRINGID_PARTYGOTWIPEDOUT
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
-
-BattleScript_EffectFluffication::
-	attackcanceler
-	trytoclearprimalweather
-	flushtextbox
-	transformdataexecutiondecade
-	attackanimation
-	waitanimation
-	printfromtable gFlufficationUsedStringIds
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
-
-BattleScript_EffectATrance::
-	attackcanceler
-	trytoclearprimalweather
-	flushtextbox
-	transformdataexecutiondecade
-	attackanimation
-	waitanimation
-	printfromtable gTransformUsedStringIds
-	waitmessage B_WAIT_TIME_LONG
-	jumptocalledmove TRUE
-
-BattleScript_EffectTransformHit::
-	attackcanceler
-	accuracycheck BattleScript_MoveMissedPause
-	jumpifspecies SPECIES_TH_SHIZUHA_NORMAL, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
-	jumpifspecies SPECIES_TH_SHIZUHA_SPEED, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
-	jumpifspecies SPECIES_TH_SHIZUHA_HELPER, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
-	jumpifspecies SPECIES_TH_MINORIKO_NORMAL, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
-	jumpifspecies SPECIES_TH_MINORIKO_ATTACK, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
-	jumpifspecies SPECIES_TH_MINORIKO_DEFENSE, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
-	jumpifspecies SPECIES_TH_REIMU_NORMAL, BattleScript_EffectTransformHitDoTransformFirstReiMari
-	jumpifspecies SPECIES_TH_MARISA_NORMAL, BattleScript_EffectTransformHitDoTransformFirstReiMari
-	jumpifspecies SPECIES_TH_JOON_NORMAL, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
-	jumpifspecies SPECIES_TH_JOON_ATTACK, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
-	jumpifspecies SPECIES_TH_JOON_DEFENSE, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
-	jumpifspecies SPECIES_TH_SHION_NORMAL, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
-	jumpifspecies SPECIES_TH_SHION_ATTACK, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
-	jumpifspecies SPECIES_TH_SHION_DEFENSE, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
-BattleScript_EffectTransformHitBeatingUp:
-	damagecalc
-	playmoveanimation MOVE_CLOSE_COMBAT
-	waitanimation
-	effectivenesssound
-	hitanimation BS_TARGET
-	waitstate
-	healthbarupdate BS_TARGET, MOVE_DAMAGE_HP_UPDATE
-	datahpupdate BS_TARGET, MOVE_DAMAGE_HP_UPDATE
-	critmessage
-	waitmessage B_WAIT_TIME_LONG
-	resultmessage
-	waitmessage B_WAIT_TIME_LONG
-	setadditionaleffects
-	tryfaintmon BS_TARGET
-	moveendall
-	end
-BattleScript_EffectTransformHitDoTransformFirstAkiSisters:
-	call BattleScript_EffectTransformHitDoTransform
-BattleScript_EffectTransformHitDoTransformFirstAkiSistersSunnyDay:
-	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_SUN, BattleScript_EffectTransformHitBeatingUp
-	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_SUN_PRIMAL, BattleScript_EffectTransformHitBeatingUp
-	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_RAIN_PRIMAL, BattleScript_EffectTransformHitBeatingUp
-	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_STRONG_WINDS, BattleScript_EffectTransformHitBeatingUp
-	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_EX_SHADOW_SKY_DEEP, BattleScript_EffectTransformHitBeatingUp
-	call BattleScript_AbilityPopUpBeatUpCalling
-	pause B_WAIT_TIME_SHORT
-	setfieldweather
-	playmoveanimation MOVE_SUNNY_DAY
-	waitanimation
-	call BattleScript_MoveWeatherChangeRet
-	goto BattleScript_EffectTransformHitBeatingUp
-BattleScript_EffectTransformHitDoTransformFirstReiMari:
-	call BattleScript_EffectTransformHitDoTransform
-BattleScript_EffectTransformHitDoTransformFirstReiMariElectricTerrain:
-	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_ELECTRIC_TERRAIN, BattleScript_EffectTransformHitBeatingUp
-	call BattleScript_AbilityPopUpBeatUpCalling
-	pause B_WAIT_TIME_SHORT
-	setelectricterrainfromability BattleScript_EffectTransformHitBeatingUp
-	printstring STRINGID_TERRAINBECOMESELECTRIC
-	waitmessage B_WAIT_TIME_LONG
-	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
-	call BattleScript_ActivateTerrainEffects
-	goto BattleScript_EffectTransformHitBeatingUp
-BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters:
-	call BattleScript_EffectTransformHitDoTransform
-BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurse:
-	savetarget
-	saveattacker
-	call BattleScript_AbilityPopUpBeatUpCalling
-	setbyte gBattlerTarget, 0
-BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseLoop:
-	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement
-	jumpiftargetally BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement
-	jumpifabsent BS_TARGET, BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement
-	jumpifvolatile BS_TARGET, VOLATILE_CURSED, BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement
-BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseEffect:
-	copybyte sBATTLER, gBattlerAttacker
-	cursetarget BattleScript_ButItFailed
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	printstring STRINGID_YORIGAMICURSE
-	waitmessage B_WAIT_TIME_LONG
-BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement:
-	addbyte gBattlerTarget, 1
-	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseLoop
-BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseEnd:
-	restoreattacker
-	restoretarget
-	goto BattleScript_EffectTransformHitBeatingUp
-BattleScript_EffectTransformHitDoTransform:
-	saveattacker
-	savetarget
-	trytoclearprimalweather
-	flushtextbox
-	transformdataexecutioncallingmultiunit
-	attackanimation
-	waitanimation
-	printfromtable gTransformHitCallingFriendUsedStringIds
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	restoretarget
-	return
-BattleScript_AbilityPopUpBeatUpCalling:
-	copybyte gBattlerAbility, gBattlerAttacker
-	tryactivateabilityshield BS_ABILITY_BATTLER
-	showabilitypopup
-	pause B_WAIT_TIME_SHORT
-	recordability BS_ABILITY_BATTLER
-	sethword sABILITY_OVERWRITE, 0
-	return
-
-BattleScript_EffectUltraInstinct::
-	attackcanceler
-    ishplessthanquarter BattleScript_ButItFailed
-	attackanimation
-	waitanimation
-	goto BattleScript_MoveEnd
-
 BattleScript_TryRevertWeatherform:
 	setbyte gEffectBattler, 0
 	sortbattlers
@@ -827,6 +680,16 @@ BattleScript_MoveEffectScreens::
 	restoreattacker
 	return
 
+BattleScript_MoveEffectSafeguard::
+	printfromtable gReflectLightScreenSafeguardStringIds
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_MoveEffectMist::
+	printfromtable gReflectLightScreenSafeguardStringIds
+	waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_StuffCheeks::
 	attackanimation
 	waitanimation
@@ -1168,6 +1031,9 @@ BattleScript_EffectElectrify::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectMiasmaTerrain::
+BattleScript_EffectDarknessTerrain::
+BattleScript_EffectUBWField::
 BattleScript_EffectMistyTerrain::
 BattleScript_EffectGrassyTerrain::
 BattleScript_EffectElectricTerrain::
@@ -2772,7 +2638,7 @@ BattleScript_StealStatsTreasureSniper::
 	waitanimation
 	printstring STRINGID_SPECTRALTHIEFSTEAL
 	waitmessage B_WAIT_TIME_LONG
-	spectralthiefprintstats
+	trybattlerstatchange BS_ATTACKER, STAT_CHANGE_NO_FLAGS
 	flushtextbox
 	return
 
@@ -4702,22 +4568,6 @@ BattleScript_LeechSeedOnAbilityPureWhiteActivates::
 	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
 	end2
 
-BattleScript_ShichininMisakiActivates::
-	call BattleScript_AbilityPopUp
-	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_ShichininMisakiActivatesEnd
-	printstring STRINGID_PKMNRAISEDEVASION
-	waitmessage B_WAIT_TIME_LONG
-BattleScript_ShichininMisakiActivatesEnd:
-	end3
-
-BattleScript_UltraEgoActivates::
-	call BattleScript_AbilityPopUp
-BattleScript_UltraEgoActivatesNoPopUp:
-	statbuffchange BS_SCRIPTING, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, NULL
-	printstring STRINGID_TARGETSSTATWASMAXEDOUT
-	waitmessage B_WAIT_TIME_LONG
-	return
-
 BattleScript_EmergencyExit::
 	pause 5
 	call BattleScript_AbilityPopUpScripting
@@ -4851,10 +4701,6 @@ BattleScript_IntimidateActivates::
 	trystatchanges BS_EFFECT_BATTLER, STAT_CHANGE_INTIMIDATE
 	destroyabilitypopup
 	return
-
-BattleScript_IntimidateWontDecrease:
-	printstring STRINGID_STATSWONTDECREASE
-    return
 
 BattleScript_SupersweetSyrupActivates::
 	call BattleScript_AbilityPopUp
@@ -6630,85 +6476,9 @@ BattleScript_WinningCombination3End:
 	return
 
 BattleScript_ManaDisturptorActivates::
-	savetarget
 	call BattleScript_AbilityPopUp
-	setbyte gBattlerTarget, 0
-BattleScript_ManaDisturptorLoop:
-	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_ManaDisturptorLoopIncrement
-	jumpiftargetally BattleScript_ManaDisturptorLoopIncrement
-	jumpifabsent BS_TARGET, BattleScript_ManaDisturptorLoopIncrement
-	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_ManaDisturptorLoopIncrement
-.if B_UPDATED_INTIMIDATE >= GEN_8 @These abilties specifically prevent just intimidate, without blocking stat decreases
-	jumpifability BS_TARGET, ABILITY_INNER_FOCUS, BattleScript_ManaDisturptorPrevented
-@	jumpifability BS_TARGET, ABILITY_SCRAPPY, BattleScript_ManaDisturptorPrevented
-	jumpifability BS_TARGET, ABILITY_OWN_TEMPO, BattleScript_ManaDisturptorPrevented
-	jumpifability BS_TARGET, ABILITY_OBLIVIOUS, BattleScript_ManaDisturptorPrevented
-.endif
-	jumpifability BS_TARGET, ABILITY_GUARD_DOG, BattleScript_ManaDisturptorInReverse
-BattleScript_ManaDisturptorEffect:
-	copybyte sBATTLER, gBattlerAttacker
-	setstatchanger STAT_SPATK, 1, TRUE
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_ManaDisturptorLoopIncrement
-	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_ManaDisturptorContrary
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_ManaDisturptorWontDecrease
-	printstring STRINGID_PKMNCUTSSPATTACKWITH
-BattleScript_ManaDisturptorEffect_WaitString:
-	waitmessage B_WAIT_TIME_LONG
-	saveattacker
-	savetarget
-	copybyte sBATTLER, gBattlerTarget
-	call BattleScript_TryManaDisturptorHoldEffects
-	restoreattacker
-	restoretarget
-BattleScript_ManaDisturptorLoopIncrement:
-	addbyte gBattlerTarget, 1
-	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_ManaDisturptorLoop
-	copybyte sBATTLER, gBattlerAttacker
+	trystatchanges BS_EFFECT_BATTLER, STAT_CHANGE_MANA_DISTURPTOR
 	destroyabilitypopup
-	restoretarget
-	pause B_WAIT_TIME_MED
-	return
-
-BattleScript_ManaDisturptorPrevented:
-	copybyte sBATTLER, gBattlerTarget
-	call BattleScript_AbilityPopUp
-	printstring STRINGID_PKMNPREVENTSSTATLOSSWITH
-	goto BattleScript_ManaDisturptorEffect_WaitString
-
-BattleScript_ManaDisturptorWontDecrease:
-	printstring STRINGID_STATSWONTDECREASE
-	goto BattleScript_ManaDisturptorEffect_WaitString
-
-BattleScript_ManaDisturptorContrary:
-	call BattleScript_AbilityPopUpTarget
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_ManaDisturptorContrary_WontIncrease
-	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
-	printfromtable gStatUpStringIds
-	goto BattleScript_ManaDisturptorEffect_WaitString
-BattleScript_ManaDisturptorContrary_WontIncrease:
-	printstring STRINGID_TARGETSTATWONTGOHIGHER
-	goto BattleScript_ManaDisturptorEffect_WaitString
-
-BattleScript_ManaDisturptorInReverse:
-	copybyte sBATTLER, gBattlerTarget
-	call BattleScript_AbilityPopUpTarget
-	pause B_WAIT_TIME_SHORT
-	modifybattlerstatstage BS_TARGET, STAT_SPATK, INCREASE, 1, BattleScript_ManaDisturptorLoopIncrement, ANIM_ON
-	call BattleScript_TryManaDisturptorHoldEffects
-	goto BattleScript_ManaDisturptorLoopIncrement
-
-BattleScript_TryManaDisturptorHoldEffects:
-	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryManaDisturptorHoldEffectsRet
-	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPEED, 12, BattleScript_TryManaDisturptorHoldEffectsRet
-	setstatchanger STAT_SPEED, 1, FALSE
-	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryManaDisturptorHoldEffectsRet
-	copybyte sBATTLER, gBattlerTarget
-	setlastuseditem BS_TARGET
-	printstring STRINGID_USINGITEMSTATOFPKMNROSE
-	waitmessage B_WAIT_TIME_LONG
-	removeitem BS_TARGET
-BattleScript_TryManaDisturptorHoldEffectsRet:
 	return
 
 BattleScript_DeusExMachinaDoomDesireFailed::
@@ -6814,95 +6584,15 @@ BattleScript_MirrorWallActivates::
 	return
 
 BattleScript_MisfortuneAuraActivates::
-	savetarget
 	call BattleScript_AbilityPopUp
-	setbyte gBattlerTarget, 0
-BattleScript_MisfortuneAuraLoop:
-	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_MisfortuneAuraLoopIncrement
-	jumpiftargetally BattleScript_MisfortuneAuraLoopIncrement
-	jumpifabsent BS_TARGET, BattleScript_MisfortuneAuraLoopIncrement
-	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_MisfortuneAuraLoopIncrement
-.if B_UPDATED_INTIMIDATE >= GEN_8 @These abilties specifically prevent just intimidate, without blocking stat decreases
-@	jumpifability BS_TARGET, ABILITY_INNER_FOCUS, BattleScript_MisfortuneAuraPrevented
-@	jumpifability BS_TARGET, ABILITY_SCRAPPY, BattleScript_MisfortuneAuraPrevented
-@	jumpifability BS_TARGET, ABILITY_OWN_TEMPO, BattleScript_MisfortuneAuraPrevented
-@	jumpifability BS_TARGET, ABILITY_OBLIVIOUS, BattleScript_MisfortuneAuraPrevented
-.endif
-@	jumpifability BS_TARGET, ABILITY_GUARD_DOG, BattleScript_MisfortuneAuraInReverse
-BattleScript_MisfortuneAuraEffect:
-	copybyte sBATTLER, gBattlerAttacker
-	setstatchanger STAT_ACC, 1, TRUE
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_MisfortuneAuraLoopIncrement
-	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_MisfortuneAuraContrary
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_MisfortuneAuraWontDecrease
-	printstring STRINGID_PKMNCUTSACCWITH
-BattleScript_MisfortuneAuraEffect_WaitString:
-	waitmessage B_WAIT_TIME_LONG
-	saveattacker
-	savetarget
-	copybyte sBATTLER, gBattlerTarget
-	call BattleScript_TryMisfortuneAuraHoldEffects
-	restoreattacker
-	restoretarget
-BattleScript_MisfortuneAuraLoopIncrement:
-	addbyte gBattlerTarget, 1
-	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_MisfortuneAuraLoop
-	copybyte sBATTLER, gBattlerAttacker
+	trystatchanges BS_EFFECT_BATTLER, STAT_CHANGE_MISFORTUNE_AURA
 	destroyabilitypopup
-	restoretarget
-	restoreattacker
-	pause B_WAIT_TIME_MED
 	return
 
-BattleScript_MisfortuneAuraPrevented:
-	copybyte sBATTLER, gBattlerTarget
-	call BattleScript_AbilityPopUp
-	printstring STRINGID_PKMNPREVENTSSTATLOSSWITH
-	goto BattleScript_MisfortuneAuraEffect_WaitString
-
-BattleScript_MisfortuneAuraWontDecrease:
-	printstring STRINGID_STATSWONTDECREASE
-	goto BattleScript_MisfortuneAuraEffect_WaitString
-
-BattleScript_MisfortuneAuraContrary:
-	call BattleScript_AbilityPopUpTarget
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_MisfortuneAuraContrary_WontIncrease
-	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
-	printfromtable gStatUpStringIds
-	goto BattleScript_MisfortuneAuraEffect_WaitString
-BattleScript_MisfortuneAuraContrary_WontIncrease:
-	printstring STRINGID_TARGETSTATWONTGOHIGHER
-	goto BattleScript_MisfortuneAuraEffect_WaitString
-
-BattleScript_MisfortuneAuraInReverse:
-	copybyte sBATTLER, gBattlerTarget
-	call BattleScript_AbilityPopUpTarget
-	pause B_WAIT_TIME_SHORT
-	modifybattlerstatstage BS_TARGET, STAT_ACC, INCREASE, 1, BattleScript_MisfortuneAuraLoopIncrement, ANIM_ON
-	call BattleScript_TryMisfortuneAuraHoldEffects
-	goto BattleScript_MisfortuneAuraLoopIncrement
-
-BattleScript_TryMisfortuneAuraHoldEffects:
-	jumpifnoholdeffect BS_TARGET, HOLD_EFFECT_ADRENALINE_ORB, BattleScript_TryMisfortuneAuraHoldEffectsRet
-	jumpifstat BS_TARGET, CMP_EQUAL, STAT_ACC, 12, BattleScript_TryMisfortuneAuraHoldEffectsRet
-	setstatchanger STAT_ACC, 1, FALSE
-	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_TryMisfortuneAuraHoldEffectsRet
-	copybyte sBATTLER, gBattlerTarget
-	setlastuseditem BS_TARGET
-	printstring STRINGID_USINGITEMSTATOFPKMNROSE
-	waitmessage B_WAIT_TIME_LONG
-	removeitem BS_TARGET
-BattleScript_TryMisfortuneAuraHoldEffectsRet:
-	return
-
+BattleScript_ShichininMisakiActivates::
+BattleScript_UltraEgoActivates::
 BattleScript_FloraElvisAtkBoostActivates::
-	statbuffchange BS_ATTACKER, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_FloraElvisAtkBoostActivatesEnd
-	call BattleScript_AbilityPopUp
-	printstring STRINGID_PKMNRAISEDATTACK
-	waitmessage B_WAIT_TIME_LONG
-BattleScript_FloraElvisAtkBoostActivatesEnd:
-	end2
+	goto BattleScript_AbilityStatChange
 
 BattleScript_FloraElvisSafeguardActivates::
 	call BattleScript_AbilityPopUpTarget
@@ -6934,17 +6624,9 @@ BattleScript_EffectUeheheheheheFoe::
 
 BattleScript_EffectUeheheheheheAlly::
 	attackcanceler
-	accuracycheck BattleScript_ButItFailed
-	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_AromaVeilProtects
-BattleScript_AllStatsUpOnTarget::
-	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_AllStatsUpOnTargetAtk
-	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_DEF, MAX_STAT_STAGE, BattleScript_AllStatsUpOnTargetAtk
-	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_SPEED, MAX_STAT_STAGE, BattleScript_AllStatsUpOnTargetAtk
-	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_SPATK, MAX_STAT_STAGE, BattleScript_AllStatsUpOnTargetAtk
-	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPDEF, MAX_STAT_STAGE, BattleScript_AllStatsUpOnTargetFailed
-BattleScript_AllStatsUpOnTargetAtk::
 	attackanimation
 	waitanimation
+	trymovestatchanges
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectGrimoireCall::
@@ -6968,9 +6650,6 @@ BattleScript_TsubameGaeshiActivates::
 	return
 
 BattleScript_UltraMedicineActivates::
-	return
-
-BattleScript_UltraMedicineV2Activates::
 	call BattleScript_AbilityPopUpScripting
 	pause B_WAIT_TIME_SHORT
 	playanimation BS_SCRIPTING, B_ANIM_ULTRA_MEDICINE
@@ -7294,7 +6973,7 @@ BattleScript_HealingGraceActivates::
 BattleScript_GraceOfDreamStatRaised::
 	playanimation BS_ATTACKER, B_ANIM_GRACE_OF_DREAM_END_TURN
 	waitanimation
-	statbuffchange BS_SCRIPTING, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN | STAT_CHANGE_ALLOW_PTR, NULL
+	trybattlerstatchange BS_ATTACKER, STAT_CHANGE_IGNORE_MIRROR_ARMOR
 	printstring STRINGID_GRACEOFDREAMRAISEDSTAT
 	waitmessage B_WAIT_TIME_LONG
 	end2
@@ -7339,237 +7018,22 @@ BattleScript_HealingSaintActivatesHealBlock::
 	end2
 
 BattleScript_DourEchoActivates::
-	savetarget
 	call BattleScript_AbilityPopUp
-	setbyte gBattlerTarget, 0
-BattleScript_DourEchoLoop:
-	jumpiftargetally BattleScript_DourEchoLoopIncrement
-	jumpifabsent BS_TARGET, BattleScript_DourEchoLoopIncrement
-@	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_DourEchoLoopIncrement
-@	jumpifintimidateabilityprevented
-BattleScript_DourEchoEffect:
-	copybyte sBATTLER, gBattlerAttacker
-	jumpifattackgespattack BS_TARGET, BattleScript_DourEchoEffect_AtkGESpAtk
-	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_DourEcho_StasisGazePreventedContrary_SpAttack
-BattleScript_DourEchoEffect_AfterStasisGazeContraryCheck_SpAttack:
-	setstatchanger STAT_SPATK, 1, TRUE
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_DourEchoLoopIncrement
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_DourEchoWontDecrease
-	printstring STRINGID_PKMNCUTSSPATTACKWITH
-BattleScript_DourEchoEffect_AfterCompAtkSpAtk:
-BattleScript_DourEchoEffect_WaitString:
-	waitmessage B_WAIT_TIME_LONG
-BattleScript_DourEchoLoopIncrement:
-	addbyte gBattlerTarget, 1
-	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_DourEchoLoop
-	copybyte sBATTLER, gBattlerAttacker
+	trystatchanges BS_EFFECT_BATTLER, STAT_CHANGE_DOUR_ECHO
 	destroyabilitypopup
-	restoretarget
-	restoreattacker
-	pause B_WAIT_TIME_MED
 	return
-BattleScript_DourEchoEffect_AtkGESpAtk:
-	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_DourEcho_StasisGazePreventedContrary_Attack
-BattleScript_DourEchoEffect_AfterStasisGazeContraryCheck_Attack:
-	setstatchanger STAT_ATK, 1, TRUE
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_DourEchoLoopIncrement
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_DourEchoWontDecrease
-	printstring STRINGID_PKMNCUTSATTACKWITH
-	goto BattleScript_DourEchoEffect_AfterCompAtkSpAtk
-BattleScript_DourEcho_StasisGazePreventedContrary_SpAttack:
-	checkopposingbattlerabilitysetbattler BS_TARGET, ABILITY_STASIS_GAZE, BattleScript_DourEcho_StasisGazePreventedContraryDo_SpAttack
-	goto BattleScript_DourEchoEffect_AfterStasisGazeContraryCheck_SpAttack
-BattleScript_DourEcho_StasisGazePreventedContraryDo_SpAttack:
-	stasisgazesetbattler BS_TARGET
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	restoretarget
-	goto BattleScript_DourEchoLoopIncrement
-BattleScript_DourEcho_StasisGazePreventedContrary_Attack:
-	checkopposingbattlerabilitysetbattler BS_TARGET, ABILITY_STASIS_GAZE, BattleScript_DourEcho_StasisGazePreventedContraryDo_Attack
-	goto BattleScript_DourEchoEffect_AfterStasisGazeContraryCheck_Attack
-BattleScript_DourEcho_StasisGazePreventedContraryDo_Attack:
-	stasisgazesetbattler BS_TARGET
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	restoretarget
-	goto BattleScript_DourEchoLoopIncrement
-BattleScript_DourEchoWontDecrease:
-	printstring STRINGID_STATSWONTDECREASE
-	goto BattleScript_DourEchoEffect_WaitString
 
 BattleScript_ManicEchoActivates::
-	savetarget
 	call BattleScript_AbilityPopUp
-	setbyte gBattlerTarget, 0
-BattleScript_ManicEchoLoop:
-	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_ManicEchoIncreaseAtkOrSpAtk
-BattleScript_ManicEchoLoopIncrement:
-	addbyte gBattlerTarget, 1
-	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_ManicEchoLoop
-	copybyte sBATTLER, gBattlerAttacker
+	trystatchanges BS_EFFECT_BATTLER, STAT_CHANGE_MANIC_ECHO
 	destroyabilitypopup
-	restoretarget
-	restoreattacker
-	pause B_WAIT_TIME_MED
 	return
-BattleScript_ManicEchoIncreaseAtkOrSpAtk:
-	copybyte sBATTLER, gBattlerAttacker
-	jumpifattackgespattack BS_TARGET, BattleScript_ManicEchoIncreaseAtkOrSpAtk_AtkGESpAtk
-	checkopposingbattlerabilitysetbattler BS_TARGET, ABILITY_STASIS_GAZE, BattleScript_ManicEchoIncreaseAtkOrSpAtk_StasisGazePrevented_SpAttack
-BattleScript_ManicEchoIncreaseAtkOrSpAtk_AfterStasisGazeCheck_SpAttack:
-	setstatchanger STAT_SPATK, 1, FALSE
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_ManicEchoLoopIncrement
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_ManicEchoWontIncrease
-	printstring STRINGID_PKMNRAISESSPATTACKWITH
-BattleScript_ManicEchoIncreaseAtkOrSpAtk_AfterCompAtkSpAtk:
-BattleScript_ManicEchoIncreaseAtkOrSpAtk_WaitString:
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_ManicEchoLoopIncrement
-BattleScript_ManicEchoWontIncrease:
-	printstring STRINGID_STATSWONTINCREASE
-	goto BattleScript_ManicEchoIncreaseAtkOrSpAtk_WaitString
-BattleScript_ManicEchoIncreaseAtkOrSpAtk_AtkGESpAtk:
-	checkopposingbattlerabilitysetbattler BS_TARGET, ABILITY_STASIS_GAZE, BattleScript_ManicEchoIncreaseAtkOrSpAtk_StasisGazePrevented_Attack
-BattleScript_ManicEchoIncreaseAtkOrSpAtk_AfterStasisGazeCheck_Attack:
-	setstatchanger STAT_ATK, 1, FALSE
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_ManicEchoLoopIncrement
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_ManicEchoWontIncrease
-	printstring STRINGID_PKMNRAISESATTACKWITH
-	goto BattleScript_ManicEchoIncreaseAtkOrSpAtk_AfterCompAtkSpAtk
-BattleScript_ManicEchoIncreaseAtkOrSpAtk_StasisGazePrevented_SpAttack:
-	stasisgazesetbattler BS_TARGET
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	restoretarget
-	goto BattleScript_ManicEchoLoopIncrement
-BattleScript_ManicEchoIncreaseAtkOrSpAtk_StasisGazePrevented_Attack:
-	stasisgazesetbattler BS_TARGET
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	restoretarget
-	goto BattleScript_ManicEchoLoopIncrement
 
 BattleScript_LastCadenzaActivates::
-	savetarget
 	call BattleScript_AbilityPopUp
-	setbyte gBattlerTarget, 0
-BattleScript_LastCadenzaLoop:
-	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_LastCadenzaIncreaseAtkOrSpAtk
-	jumpiftargetally BattleScript_LastCadenzaLoopIncrement
-	jumpifabsent BS_TARGET, BattleScript_LastCadenzaLoopIncrement
-@	jumpifvolatile BS_TARGET, VOLATILE_SUBSTITUTE, BattleScript_LastCadenzaLoopIncrement
-@	jumpifintimidateabilityprevented
-BattleScript_LastCadenzaEffect:
-	copybyte sBATTLER, gBattlerAttacker
-	jumpifattackgespattack BS_TARGET, BattleScript_LastCadenzaEffect_AtkGESpAtk
-	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_LastCadenza_StasisGazePreventedContrary_SpAttack
-BattleScript_LastCadenzaEffect_AfterStasisGazeContraryCheck_SpAttack:
-	setstatchanger STAT_SPATK, 1, TRUE
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_LastCadenzaLoopIncrement
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_LastCadenzaWontDecrease
-	printstring STRINGID_PKMNCUTSSPATTACKWITH
-BattleScript_LastCadenzaEffect_AfterCompAtkSpAtk:
-BattleScript_LastCadenzaEffect_WaitString:
-	waitmessage B_WAIT_TIME_LONG
-BattleScript_LastCadenzaLoopIncrement:
-	addbyte gBattlerTarget, 1
-	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_LastCadenzaLoop
-	copybyte sBATTLER, gBattlerAttacker
+	trystatchanges BS_EFFECT_BATTLER, STAT_CHANGE_LAST_CADENZA
 	destroyabilitypopup
-	restoretarget
-	restoreattacker
-	pause B_WAIT_TIME_MED
 	return
-BattleScript_LastCadenza_StasisGazePreventedContrary_SpAttack:
-	checkopposingbattlerabilitysetbattler BS_TARGET, ABILITY_STASIS_GAZE, BattleScript_LastCadenza_StasisGazePreventedContraryDo_SpAttack
-	goto BattleScript_LastCadenzaEffect_AfterStasisGazeContraryCheck_SpAttack
-BattleScript_LastCadenza_StasisGazePreventedContraryDo_SpAttack:
-	stasisgazesetbattler BS_TARGET
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	restoretarget
-	goto BattleScript_LastCadenzaLoopIncrement
-BattleScript_LastCadenzaWontDecrease:
-	printstring STRINGID_STATSWONTDECREASE
-	goto BattleScript_LastCadenzaEffect_WaitString
-BattleScript_LastCadenzaIncreaseAtkOrSpAtk:
-	copybyte sBATTLER, gBattlerAttacker
-	jumpifattackgespattack BS_TARGET, BattleScript_LastCadenzaIncreaseAtkOrSpAtk_AtkGESpAtk
-	checkopposingbattlerabilitysetbattler BS_TARGET, ABILITY_STASIS_GAZE, BattleScript_LastCadenzaIncreaseAtkOrSpAtk_StasisGazePrevented_SpAttack
-BattleScript_LastCadenzaIncreaseAtkOrSpAtk_AfterStasisGazeCheck_SpAttack:
-	setstatchanger STAT_SPATK, 1, FALSE
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_LastCadenzaLoopIncrement
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_LastCadenzaWontIncrease
-	printstring STRINGID_PKMNRAISESSPATTACKWITH
-BattleScript_LastCadenzaIncreaseAtkOrSpAtk_AfterCompAtkSpAtk:
-BattleScript_LastCadenzaIncreaseAtkOrSpAtk_WaitString:
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_LastCadenzaLoopIncrement
-BattleScript_LastCadenzaWontIncrease:
-	printstring STRINGID_STATSWONTINCREASE
-	goto BattleScript_LastCadenzaIncreaseAtkOrSpAtk_WaitString
-BattleScript_LastCadenzaEffect_AtkGESpAtk:
-	jumpifability BS_TARGET, ABILITY_CONTRARY, BattleScript_LastCadenza_StasisGazePreventedContrary_Attack
-BattleScript_LastCadenzaEffect_AfterStasisGazeContraryCheck_Attack:
-	setstatchanger STAT_ATK, 1, TRUE
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_LastCadenzaLoopIncrement
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_LastCadenzaWontDecrease
-	printstring STRINGID_PKMNCUTSATTACKWITH
-	goto BattleScript_LastCadenzaEffect_AfterCompAtkSpAtk
-BattleScript_LastCadenzaIncreaseAtkOrSpAtk_AtkGESpAtk:
-	checkopposingbattlerabilitysetbattler BS_TARGET, ABILITY_STASIS_GAZE, BattleScript_LastCadenzaIncreaseAtkOrSpAtk_StasisGazePrevented_Attack
-BattleScript_LastCadenzaIncreaseAtkOrSpAtk_AfterStasisGazeCheck_Attack:
-	setstatchanger STAT_ATK, 1, FALSE
-	statbuffchange BS_TARGET, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_LastCadenzaLoopIncrement
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_LastCadenzaWontIncrease
-	printstring STRINGID_PKMNRAISESATTACKWITH
-	goto BattleScript_LastCadenzaIncreaseAtkOrSpAtk_AfterCompAtkSpAtk
-BattleScript_LastCadenza_StasisGazePreventedContrary_Attack:
-	checkopposingbattlerabilitysetbattler BS_TARGET, ABILITY_STASIS_GAZE, BattleScript_LastCadenza_StasisGazePreventedContraryDo_Attack
-	goto BattleScript_LastCadenzaEffect_AfterStasisGazeContraryCheck_Attack
-BattleScript_LastCadenza_StasisGazePreventedContraryDo_Attack:
-	stasisgazesetbattler BS_TARGET
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	restoretarget
-	goto BattleScript_LastCadenzaLoopIncrement
-BattleScript_LastCadenzaIncreaseAtkOrSpAtk_StasisGazePrevented_SpAttack:
-	stasisgazesetbattler BS_TARGET
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	restoretarget
-	goto BattleScript_LastCadenzaLoopIncrement
-BattleScript_LastCadenzaIncreaseAtkOrSpAtk_StasisGazePrevented_Attack:
-	stasisgazesetbattler BS_TARGET
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	restoretarget
-	goto BattleScript_LastCadenzaLoopIncrement
 
 BattleScript_LastCadenzaSwitchInActivates::
 	savetarget
@@ -7593,3 +7057,150 @@ BattleScript_LastCadenzaSwitchInIncrement:
 	restoreattacker
 	pause B_WAIT_TIME_MED
 	return
+
+BattleScript_EffectWipesOutFoesParty::
+	attackanimation
+	waitanimation
+	tryreducefoespartyhptozero
+	tryfaintmon BS_TARGET
+	printstring STRINGID_PARTYGOTWIPEDOUT
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectFluffication::
+	attackcanceler
+	trytoclearprimalweather
+	flushtextbox
+	transformdataexecutiondecade
+	attackanimation
+	waitanimation
+	printfromtable gFlufficationUsedStringIds
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectATrance::
+	attackcanceler
+	trytoclearprimalweather
+	flushtextbox
+	transformdataexecutiondecade
+	attackanimation
+	waitanimation
+	printfromtable gTransformUsedStringIds
+	waitmessage B_WAIT_TIME_LONG
+	jumptocalledmove TRUE
+
+BattleScript_EffectTransformHit::
+	attackcanceler
+	accuracycheck BattleScript_MoveMissedPause
+	jumpifspecies SPECIES_TH_SHIZUHA_NORMAL, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
+	jumpifspecies SPECIES_TH_SHIZUHA_SPEED, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
+	jumpifspecies SPECIES_TH_SHIZUHA_HELPER, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
+	jumpifspecies SPECIES_TH_MINORIKO_NORMAL, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
+	jumpifspecies SPECIES_TH_MINORIKO_ATTACK, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
+	jumpifspecies SPECIES_TH_MINORIKO_DEFENSE, BattleScript_EffectTransformHitDoTransformFirstAkiSisters
+	jumpifspecies SPECIES_TH_REIMU_NORMAL, BattleScript_EffectTransformHitDoTransformFirstReiMari
+	jumpifspecies SPECIES_TH_MARISA_NORMAL, BattleScript_EffectTransformHitDoTransformFirstReiMari
+	jumpifspecies SPECIES_TH_JOON_NORMAL, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
+	jumpifspecies SPECIES_TH_JOON_ATTACK, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
+	jumpifspecies SPECIES_TH_JOON_DEFENSE, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
+	jumpifspecies SPECIES_TH_SHION_NORMAL, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
+	jumpifspecies SPECIES_TH_SHION_ATTACK, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
+	jumpifspecies SPECIES_TH_SHION_DEFENSE, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
+BattleScript_EffectTransformHitBeatingUp:
+	damagecalc
+	playmoveanimation MOVE_CLOSE_COMBAT
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET, MOVE_DAMAGE_HP_UPDATE
+	datahpupdate BS_TARGET, MOVE_DAMAGE_HP_UPDATE
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	setadditionaleffects
+	tryfaintmon BS_TARGET
+	moveendall
+	end
+BattleScript_EffectTransformHitDoTransformFirstAkiSisters:
+	call BattleScript_EffectTransformHitDoTransform
+BattleScript_EffectTransformHitDoTransformFirstAkiSistersSunnyDay:
+	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_SUN, BattleScript_EffectTransformHitBeatingUp
+	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_SUN_PRIMAL, BattleScript_EffectTransformHitBeatingUp
+	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_RAIN_PRIMAL, BattleScript_EffectTransformHitBeatingUp
+	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_STRONG_WINDS, BattleScript_EffectTransformHitBeatingUp
+	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_EX_SHADOW_SKY_DEEP, BattleScript_EffectTransformHitBeatingUp
+	call BattleScript_AbilityPopUpBeatUpCalling
+	pause B_WAIT_TIME_SHORT
+	setfieldweather
+	playmoveanimation MOVE_SUNNY_DAY
+	waitanimation
+	call BattleScript_MoveWeatherChangeRet
+	goto BattleScript_EffectTransformHitBeatingUp
+BattleScript_EffectTransformHitDoTransformFirstReiMari:
+	call BattleScript_EffectTransformHitDoTransform
+BattleScript_EffectTransformHitDoTransformFirstReiMariElectricTerrain:
+	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_ELECTRIC_TERRAIN, BattleScript_EffectTransformHitBeatingUp
+	call BattleScript_AbilityPopUpBeatUpCalling
+	pause B_WAIT_TIME_SHORT
+	setelectricterrainfromability BattleScript_EffectTransformHitBeatingUp
+	printstring STRINGID_TERRAINBECOMESELECTRIC
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
+	call BattleScript_ActivateTerrainEffects
+	goto BattleScript_EffectTransformHitBeatingUp
+BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters:
+	call BattleScript_EffectTransformHitDoTransform
+BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurse:
+	savetarget
+	saveattacker
+	call BattleScript_AbilityPopUpBeatUpCalling
+	setbyte gBattlerTarget, 0
+BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseLoop:
+	jumpifbyteequal gBattlerTarget, gBattlerAttacker, BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement
+	jumpiftargetally BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement
+	jumpifabsent BS_TARGET, BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement
+	jumpifvolatile BS_TARGET, VOLATILE_CURSED, BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement
+BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseEffect:
+	copybyte sBATTLER, gBattlerAttacker
+	cursetarget BattleScript_ButItFailed
+	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	printstring STRINGID_YORIGAMICURSE
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement:
+	addbyte gBattlerTarget, 1
+	jumpifbytenotequal gBattlerTarget, gBattlersCount, BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseLoop
+BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseEnd:
+	restoreattacker
+	restoretarget
+	goto BattleScript_EffectTransformHitBeatingUp
+BattleScript_EffectTransformHitDoTransform:
+	saveattacker
+	savetarget
+	trytoclearprimalweather
+	flushtextbox
+	transformdataexecutioncallingmultiunit
+	attackanimation
+	waitanimation
+	printfromtable gTransformHitCallingFriendUsedStringIds
+	waitmessage B_WAIT_TIME_LONG
+	restoreattacker
+	restoretarget
+	return
+BattleScript_AbilityPopUpBeatUpCalling:
+	copybyte gBattlerAbility, gBattlerAttacker
+	tryactivateabilityshield BS_ABILITY_BATTLER
+	showabilitypopup
+	pause B_WAIT_TIME_SHORT
+	recordability BS_ABILITY_BATTLER
+	sethword sABILITY_OVERWRITE, 0
+	return
+
+BattleScript_EffectUltraInstinct::
+	attackcanceler
+    ishplessthanquarter BattleScript_ButItFailed
+	attackanimation
+	waitanimation
+	goto BattleScript_MoveEnd

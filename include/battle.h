@@ -732,6 +732,11 @@ struct BattleStruct
     u8 negativeAnimPlayed:1;
     u8 ignoreDefiant:1;
     u8 intimidateActivated:1;
+    u8 manaDisturptorActivated:1;
+    u8 misfortuneAuraActivated:1;
+    u8 dourEchoActivated:1;
+    u8 manicEchoActivated:1;
+    u8 lastCadenzaActivated:1;
     u8 allowPartingShot:1;
     u8 adrenalineOrbActivated:1; // prevents looping after an adrenaline stat changed
     enum BattlerId salvageBattlerId;

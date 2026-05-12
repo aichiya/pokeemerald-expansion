@@ -2324,6 +2324,10 @@ bool32 CanLowerStat(enum BattlerId battlerAtk, enum BattlerId battlerDef, struct
             if (stat == STAT_SPEED)
                 return FALSE;
             break;
+        case ABILITY_SHICHININ_MISAKI:
+            if (stat == STAT_EVASION)
+                return FALSE;
+            break;
         case ABILITY_HYPER_CUTTER:
         case ABILITY_HI_STRENGTH:
             if (stat == STAT_ATK)
@@ -5737,6 +5741,65 @@ bool32 DoesIntimidateRaiseStats(enum Ability ability)
     }
 }
 
+bool32 DoesManaDisturptorRaiseStats(enum Ability ability)
+{
+    switch (ability)
+    {
+    case ABILITY_COMPETITIVE:
+    case ABILITY_CONTRARY:
+    case ABILITY_DEFIANT:
+    case ABILITY_GUARD_DOG:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
+bool32 DoesMisfortuneAuraRaiseStats(enum Ability ability)
+{
+    switch (ability)
+    {
+    case ABILITY_COMPETITIVE:
+    case ABILITY_CONTRARY:
+    case ABILITY_DEFIANT:
+    case ABILITY_GUARD_DOG:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
+bool32 DoesDourEchoRaiseStats(enum Ability ability)
+{
+    switch (ability)
+    {
+    case ABILITY_COMPETITIVE:
+    case ABILITY_CONTRARY:
+    case ABILITY_DEFIANT:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
+bool32 DoesManicEchoRaiseStats(enum Ability ability)
+{
+    return TRUE;
+}
+
+bool32 DoesLastCadenzaRaiseStats(enum Ability ability)
+{
+    switch (ability)
+    {
+    case ABILITY_COMPETITIVE:
+    case ABILITY_CONTRARY:
+    case ABILITY_DEFIANT:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
 // TODO: work out when to attack into the player's contextually 'beneficial' ability
 bool32 ShouldTriggerAbility(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability ability)
 {
@@ -6013,6 +6076,7 @@ enum AIScore BattlerBenefitsFromAbilityScore(enum BattlerId battler, enum Abilit
     case ABILITY_FANTASY_BREAKER:
     case ABILITY_MOODY:
     case ABILITY_PURIFYING_SALT:
+    case ABILITY_SHICHININ_MISAKI:
     case ABILITY_SPEED_BOOST:
     case ABILITY_WHITE_SMOKE:
     case ABILITY_MAGIC_BARRIER:
@@ -6068,6 +6132,64 @@ enum AIScore BattlerBenefitsFromAbilityScore(enum BattlerId battler, enum Abilit
             {
                 abilityDef = aiData->abilities[RIGHT_FOE(battler)];
                 if (DoesIntimidateRaiseStats(abilityDef))
+                {
+                    return AWFUL_EFFECT;
+                }
+                else
+                {
+                    enum AIScore score1 = IncreaseStatDownScore(battler, LEFT_FOE(battler), STAT_ATK);
+                    enum AIScore score2 = IncreaseStatDownScore(battler, RIGHT_FOE(battler), STAT_ATK);
+                    if (score1 > score2)
+                        return score1;
+                    else
+                        return score2;
+                }
+            }
+            return IncreaseStatDownScore(battler, LEFT_FOE(battler), STAT_ATK);
+        }
+    }
+    case ABILITY_MANA_DISTURPTOR:
+    {
+        enum Ability abilityDef = aiData->abilities[LEFT_FOE(battler)];
+        if (DoesManaDisturptorRaiseStats(abilityDef))
+        {
+            return AWFUL_EFFECT;
+        }
+        else
+        {
+            if (HasTwoOpponents(battler))
+            {
+                abilityDef = aiData->abilities[RIGHT_FOE(battler)];
+                if (DoesManaDisturptorRaiseStats(abilityDef))
+                {
+                    return AWFUL_EFFECT;
+                }
+                else
+                {
+                    enum AIScore score1 = IncreaseStatDownScore(battler, LEFT_FOE(battler), STAT_ATK);
+                    enum AIScore score2 = IncreaseStatDownScore(battler, RIGHT_FOE(battler), STAT_ATK);
+                    if (score1 > score2)
+                        return score1;
+                    else
+                        return score2;
+                }
+            }
+            return IncreaseStatDownScore(battler, LEFT_FOE(battler), STAT_ATK);
+        }
+    }
+    case ABILITY_MISFORTUNE_AURA:
+    {
+        enum Ability abilityDef = aiData->abilities[LEFT_FOE(battler)];
+        if (DoesMisfortuneAuraRaiseStats(abilityDef))
+        {
+            return AWFUL_EFFECT;
+        }
+        else
+        {
+            if (HasTwoOpponents(battler))
+            {
+                abilityDef = aiData->abilities[RIGHT_FOE(battler)];
+                if (DoesMisfortuneAuraRaiseStats(abilityDef))
                 {
                     return AWFUL_EFFECT;
                 }

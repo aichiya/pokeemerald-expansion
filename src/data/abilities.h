@@ -2742,17 +2742,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 3,
     },
 
-    [ABILITY_ULTRA_MEDICINE] =
+    [ABILITY_ASSASSIN_SENSE] =
     {
-        .name = _("Ultra Medicine"),
-        .description = COMPOUND_STRING("Medicine Melancholy Burst Out."),
+        .name = _("Assassin Sense"),
+        .description = COMPOUND_STRING("Raises crit. hits and damage."),
         .aiRating = 3,
-        .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
-        .cantBeTraced = TRUE,
-        .cantBeSuppressed = TRUE,
-        .cantBeOverwritten = TRUE,
-        .failsOnImposter = TRUE,
     },
 
     [ABILITY_SCULPTOR_GOD] =
@@ -2866,7 +2860,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 8,
     },
 
-    [ABILITY_ULTRA_MEDICINE_V2] =
+    [ABILITY_ULTRA_MEDICINE] =
     {
         .name = _("Ultra Medicine"),
         .description = COMPOUND_STRING("Medicine Melancholy Burst Out."),

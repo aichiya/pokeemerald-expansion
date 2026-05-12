@@ -1992,15 +1992,9 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
 
     [EFFECT_ASTROMANCY] =
     {
-        .battleScript = BattleScript_EffectAstromancy,
+        .battleScript = BattleScript_EffectStatChange,
         .battleTvScore = 0, // TODO: Assign points
-        .twoTurnEffect = TRUE,
-    },
-
-    [EFFECT_SPATK_SPDEF_UP2] =
-    {
-        .battleScript = BattleScript_EffectSpAtkSpDefUp2,
-        .battleTvScore = 0, // TODO: Assign points
+        .encourageEncore = TRUE,
     },
 
     [EFFECT_TRANSFORM_AND_HIT_WITH_ARG_CONDITION] =
@@ -2012,13 +2006,13 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
     [EFFECT_EX_SHADOW_MOVE_HIT] =
     {
         .battleScript = BattleScript_EffectHit,
-        .battleTvScore = 1,
+        .battleTvScore = 0,
     },
 
     [EFFECT_EX_SHADOW_MOVE_HALF] =
     {
         .battleScript = BattleScript_EffectHit,
-        .battleTvScore = 5,
+        .battleTvScore = 0,
         .encourageEncore = TRUE,
     },
 	

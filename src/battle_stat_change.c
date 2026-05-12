@@ -23,6 +23,8 @@ static bool32 IsMistProtected(struct BattleCalcValues *cv, struct StatChange *st
 static bool32 IsFlowerVeilBlocked(struct BattleCalcValues *cv, struct StatChange *st);
 static bool32 IsClearAmuletBlocked(struct BattleCalcValues *cv, struct StatChange *st);
 static bool32 IsIntimidateBlocked(struct BattleCalcValues *cv, struct StatChange *st);
+static bool32 IsManaDisturptorBlocked(struct BattleCalcValues *cv, struct StatChange *st);
+static bool32 IsMisfortuneAuraBlocked(struct BattleCalcValues *cv, struct StatChange *st);
 static bool32 IsAbilityBlocked(struct BattleCalcValues *cv, struct StatChange *st);
 static bool32 IsMirrorArmorReflected(struct BattleCalcValues *cv, struct StatChange *st);
 
@@ -317,6 +319,8 @@ static enum StatChangeResult CanDecreaseStat(struct BattleCalcValues *cv, struct
      || IsFlowerVeilBlocked(cv, st)
      || IsClearAmuletBlocked(cv, st)
      || IsIntimidateBlocked(cv, st)
+     || IsManaDisturptorBlocked(cv, st)
+     || IsMisfortuneAuraBlocked(cv, st)
      || IsAbilityBlocked(cv, st)
      || IsMirrorArmorReflected(cv, st))
         return STAT_CHANGE_DIDNT_WORK;
@@ -673,6 +677,72 @@ static bool32 IsIntimidateBlocked(struct BattleCalcValues *cv, struct StatChange
     return TRUE;
 }
 
+static bool32 IsManaDisturptorBlocked(struct BattleCalcValues *cv, struct StatChange *st)
+{
+    if (!st->manaDisturptor)
+        return FALSE;
+
+    switch (cv->abilities[cv->battlerDef])
+    {
+    case ABILITY_INNER_FOCUS:
+    case ABILITY_SCRAPPY:
+    case ABILITY_OWN_TEMPO:
+    case ABILITY_OBLIVIOUS:
+        if (GetConfig(B_UPDATED_INTIMIDATE) < GEN_8)
+            return FALSE;
+        PREPARE_STAT_BUFFER(gBattleTextBuff1, st->stat);
+        st->script = BattleScript_AbilityNoSpecificStatLoss;
+        break;
+    case ABILITY_GUARD_DOG:
+        SetStatChange2(cv->battlerDef, st->stat, -1 * st->stage);
+        st->script = BattleScript_DefiantActivates;
+        gEffectBattler = cv->battlerDef;
+        break;
+    default:
+        return FALSE;
+    }
+
+    gLastUsedAbility = cv->abilities[cv->battlerDef];
+    gBattlerAbility = cv->battlerDef;
+    gBattleScripting.battler = cv->battlerDef;
+    MarkStatsAsDone(st, st->stat);
+    RecordAbilityBattle(cv->battlerDef, cv->abilities[cv->battlerDef]);
+    return TRUE;
+}
+
+static bool32 IsMisfortuneAuraBlocked(struct BattleCalcValues *cv, struct StatChange *st)
+{
+    if (!st->misfortuneAura)
+        return FALSE;
+
+    switch (cv->abilities[cv->battlerDef])
+    {
+    case ABILITY_INNER_FOCUS:
+    case ABILITY_SCRAPPY:
+    case ABILITY_OWN_TEMPO:
+    case ABILITY_OBLIVIOUS:
+        if (GetConfig(B_UPDATED_INTIMIDATE) < GEN_8)
+            return FALSE;
+        PREPARE_STAT_BUFFER(gBattleTextBuff1, st->stat);
+        st->script = BattleScript_AbilityNoSpecificStatLoss;
+        break;
+    case ABILITY_GUARD_DOG:
+        SetStatChange2(cv->battlerDef, st->stat, -1 * st->stage);
+        st->script = BattleScript_DefiantActivates;
+        gEffectBattler = cv->battlerDef;
+        break;
+    default:
+        return FALSE;
+    }
+
+    gLastUsedAbility = cv->abilities[cv->battlerDef];
+    gBattlerAbility = cv->battlerDef;
+    gBattleScripting.battler = cv->battlerDef;
+    MarkStatsAsDone(st, st->stat);
+    RecordAbilityBattle(cv->battlerDef, cv->abilities[cv->battlerDef]);
+    return TRUE;
+}
+
 static bool32 IsAbilityBlocked(struct BattleCalcValues *cv, struct StatChange *st)
 {
     if (st->certain)
@@ -768,6 +838,8 @@ static bool32 IsMirrorArmorReflected(struct BattleCalcValues *cv, struct StatCha
 
 static void AdjustStatStage(struct BattleCalcValues *cv, struct StatChange *st)
 {
+    u32 oppositeDef = GetOppositeBattler(cv->battlerAtk);
+    u32 oppositeDefPartner = GetPartnerBattler(oppositeDef);
     if (cv->moveEffect == EFFECT_GROWTH && GetAttackerWeather(cv->holdEffects[cv->battlerDef], cv->abilities[cv->battlerDef], GetWeather()) & B_WEATHER_SUN)
         st->stage = 2;
 
@@ -788,6 +860,13 @@ static void AdjustStatStage(struct BattleCalcValues *cv, struct StatChange *st)
         break;
     default:
         break;
+    }
+
+    if (st->stage > 0
+      && (cv->abilities[oppositeDef] == ABILITY_STASIS_GAZE 
+      || cv->abilities[oppositeDefPartner] == ABILITY_STASIS_GAZE))
+    {
+        st->stage = 0;
     }
 }
 
@@ -1007,6 +1086,9 @@ bool32 CanStatChange(struct BattleCalcValues *cv, struct StatChange *st)
         // Special Case for speed boost since shouldn't try to lower opposing stats on speed boost
         // Also for user it might make sense to lower the stat. Regardless this whole check is better suited for CheckViability since the move wouldn't fail in this case
         if (cv->battlerAtk != cv->battlerDef && st->stat == STAT_SPEED && st->stage < 0 && cv->abilities[cv->battlerDef] == ABILITY_SPEED_BOOST)
+            return FALSE;
+
+        if (cv->battlerAtk != cv->battlerDef && st->stat == STAT_EVASION && st->stage < 0 && cv->abilities[cv->battlerDef] == ABILITY_SHICHININ_MISAKI)
             return FALSE;
 
         if (CompareStat(cv->battlerDef, st->stat, MIN_STAT_STAGE, CMP_EQUAL, ABILITY_NONE))

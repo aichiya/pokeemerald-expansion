@@ -373,7 +373,7 @@ enum __attribute__((packed)) Ability
     ABILITY_PRISMA_ZWEI = (ABILITY_OFFICIAL_END + 29), // (Good as Gold) + (Shield Dust)
     ABILITY_KALEID_RUBY = (ABILITY_OFFICIAL_END + 30), // Sp. Atk +1 on entry
     ABILITY_KALEID_SAPPHIRE = (ABILITY_OFFICIAL_END + 31), // Speed +1 on entry
-    ABILITY_ULTRA_MEDICINE = (ABILITY_OFFICIAL_END + 32), // If Medicine Melancholy, all stats +6
+    ABILITY_ASSASSIN_SENSE = (ABILITY_OFFICIAL_END + 32), // To do
     ABILITY_SCULPTOR_GOD = (ABILITY_OFFICIAL_END + 33), // (Earth Eater)
     ABILITY_POSTER_GIRL = (ABILITY_OFFICIAL_END + 34), // Infatuates foes on entry
     ABILITY_WORLD_END_GARDEN = (ABILITY_OFFICIAL_END + 35), // Hazards on the opposing field
@@ -387,7 +387,7 @@ enum __attribute__((packed)) Ability
     ABILITY_DARKNESS_SURGE = (ABILITY_OFFICIAL_END + 43), // Darkness Field on entry
     ABILITY_TSUBAME_GAESHI = (ABILITY_OFFICIAL_END + 44), // Auto-counter if got hit by slicing moves
     ABILITY_MIASMA_SURGE = (ABILITY_OFFICIAL_END + 45), // Miasma Field on entry
-    ABILITY_ULTRA_MEDICINE_V2 = (ABILITY_OFFICIAL_END + 46), // If Medicine Melancholy, all stats +6 internally, can still use stat boosting move/effects
+    ABILITY_ULTRA_MEDICINE = (ABILITY_OFFICIAL_END + 46), // If Medicine Melancholy, all stats +6 internally, can still use stat boosting move/effects
     ABILITY_RIDE_SUMMON = (ABILITY_OFFICIAL_END + 47), // Sets substitute on entry
     ABILITY_PUPPETEER = (ABILITY_OFFICIAL_END + 48), // Sets substitute on entry
     ABILITY_ULTRA_SEIGA = (ABILITY_OFFICIAL_END + 49), // If Seiga, all stats +6 internally, can still use stat boosting move/effects

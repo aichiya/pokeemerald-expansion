@@ -6697,7 +6697,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Ancient Power"),
         .description = COMPOUND_STRING(
             "An attack that may raise\n"
-            "all stats."),
+            "the user's defense."),
         .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_NEW_EARTH,
@@ -11931,10 +11931,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_CUTE : CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_CHARM},
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = STAT_CHANGE_EFFECT_MINUS,
-            .spAtk = 2,
-        }),
         .battleAnimScript = gBattleAnimMove_Captivate,
     },
 
@@ -14506,8 +14502,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .soundMove = TRUE,
         .metronomeBanned = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_ALL_STATS_UP,
+            .moveEffect = MOVE_EFFECT_STAT_PLUS,
+            .attack = 1,
+            .defense = 1,
+            .spAtk = 1,
+            .spDef = 1,
+            .speed = 1,
             .chance = 10,
+            .self = TRUE,
         }),
         .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
         .contestCategory = CONTEST_CATEGORY_BEAUTIFUL,
@@ -15082,11 +15084,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_NEW_ELECTRIC,
         .accuracy = 100,
         .pp = 10,
-        .target = TARGET_FOES_AND_ALLY,
+        .target = TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SPD_MINUS_1,
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .speed = 1,
             .chance = 20,
         }),
         .contestEffect = CONTEST_EFFECT_DONT_EXCITE_AUDIENCE,
@@ -15807,13 +15810,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Aromatic Mist"),
         .description = COMPOUND_STRING(
             "Raises the Sp. Atk of a\n"
-            "partner."),
-        .effect = EFFECT_AROMATIC_MIST,  // to do
+            "partner and the user."),
+        .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_NEW_HEART,
         .accuracy = 0,
         .pp = 20,
-        .target = TARGET_ALLY,
+        .target = TARGET_USER_AND_ALLY,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_SPATK_UP_2 },
@@ -16848,7 +16851,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Boosts offesive stats but\n"
             "drops defensive ones."),
-        .effect = EFFECT_SHELL_SMASH,
+        .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_NEW_METAL,
         .accuracy = 0,
@@ -18567,7 +18570,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "The user sharply raises\n"
             "the user's Atk and Sp.Atk."),
-        .effect = EFFECT_DECORATE,
+        .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_NEW_HEART,
         .accuracy = 0,
@@ -22188,7 +22191,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .makesContact = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_STAT_MINUS,
-            .spDef = 1
+            .spDef = 1,
             .chance = 50,
         }),
         .battleAnimScript = gBattleAnimMove_RagingDemon,
@@ -22272,7 +22275,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         },
         {
             .moveEffect = MOVE_EFFECT_STAT_MINUS,
-            .spDef = 1
+            .spDef = 1,
             .chance = 20,
         }),
         .battleAnimScript = gBattleAnimMove_01Crusher,
@@ -22329,7 +22332,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .slicingMove = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_STAT_MINUS,
-            .defense = 1
+            .defense = 1,
             .chance = 30,
         }),
         .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
@@ -22560,12 +22563,19 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .zMove = { .effect = Z_EFFECT_RESET_STATS },
         .magicCoatAffected = TRUE,
         .ignoresSubstitute = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .attack = 1,
+            .defense = 1,
+            .spAtk = 1,
+            .spDef = 1,
+            .speed = 1, 
+        }),
         .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_Uehehehehehe,
-        .validApprenticeMove = TRUE,
     },
 
     [MOVE_GRIMOIRE_CALL] =
@@ -23905,7 +23915,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FLINCH,
             .chance = 30,
-        }
+        },
         {
             .moveEffect = MOVE_EFFECT_BREAK_SCREEN,
             .preAttackEffect = TRUE,
@@ -25812,7 +25822,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .defense = 1,
             .chance = 50,
         }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
@@ -27481,7 +27492,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Emits darkness to sharply\n"
             "reduce the foe's Defense."),
-        .effect = EFFECT_DEFENSE_DOWN_2,
+        .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_MYSTERY,
         .accuracy = 100,
@@ -27497,6 +27508,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_MINUS,
+            .attack = 2,
+        }),
         .battleAnimScript = gBattleAnimMove_DestinyBond,
     },
 

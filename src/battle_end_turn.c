@@ -507,70 +507,29 @@ static bool32 HandleEndTurnGraceOfDream(enum BattlerId battler)
     if (gBattleMons[battler].volatiles.graceOfDream != 0
      && IsBattlerAlive(battler))
     {
+        enum Stat stat = STAT_ATK;
         u32 validToRaise = 0;
         u32 statsNum = NUM_BATTLE_STATS;
-        u32 i;
-        u32 oppositeBattler, oppositeBattlerPartner;
-
-        oppositeBattler = GetOppositeBattler(battler);
-        oppositeBattlerPartner = GetPartnerBattler(oppositeBattler);
 
         gBattleMons[battler].volatiles.graceOfDream--;
 
         gBattleScripting.battler = battler;
 
-        for (i = STAT_ATK; i < statsNum; i++)
+        for (stat = STAT_ATK; stat < statsNum; stat++)
         {
-            if (GetBattlerAbility(battler) == ABILITY_CONTRARY)
-            {
-                if (CompareStat(battler, i, MIN_STAT_STAGE, CMP_GREATER_THAN, gLastUsedAbility))
-                    validToRaise |= 1u << i;
-            }
-            else
-            {
-                if (CompareStat(battler, i, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility))
-                    validToRaise |= 1u << i;
-            }
+            if (CompareStat(battler, stat, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility))
+                validToRaise |= 1u << stat;
         }
 
-        if (validToRaise != 0) // Can raise one stat
+        if (validToRaise) // Can raise one stat
         {
-            gBattleScripting.statChanger = gBattleScripting.savedStatChanger = 0; // for raising and lowering stat respectively
-            if (validToRaise != 0) // Find stat to raise
+            if (validToRaise) // Find stat to raise
             {
-                do
-                {
-                    i = (Random() % statsNum) + STAT_ATK;
-                } while (!(validToRaise & (1u << i)));
-                if (GetBattlerAbility(battler) == ABILITY_CONTRARY)
-                {
-                    SET_STATCHANGER(i, 2, TRUE);
-                }
-                else
-                {
-                    SET_STATCHANGER(i, 2, FALSE);
-                }
+                stat = RandomUniformExcept(RNG_GRACE_OF_DREAM_INCREASE, STAT_ATK, statsNum - 1, MoodyCantRaiseStat);
+                SetStatChange(battler, stat, 2);
             }
-
-            if (GetBattlerAbility(oppositeBattler) == ABILITY_STASIS_GAZE && IsBattlerAlive(oppositeBattler))
-            {
-                SaveBattlerAttacker(battler);
-                gBattleScripting.battler = oppositeBattler;
-                BattleScriptExecute(BattleScript_GraceOfDreamStatRaisedPreventedStasisGaze);
-                effect = TRUE;
-            }
-            else if (GetBattlerAbility(oppositeBattlerPartner) == ABILITY_STASIS_GAZE && IsBattlerAlive(oppositeBattlerPartner))
-            {
-                SaveBattlerAttacker(battler);
-                gBattleScripting.battler = oppositeBattlerPartner;
-                BattleScriptExecute(BattleScript_GraceOfDreamStatRaisedPreventedStasisGaze);
-                effect = TRUE;
-            }
-            else
-            {
-                BattleScriptExecute(BattleScript_GraceOfDreamStatRaised);
-                effect = TRUE;
-            }
+            BattleScriptCall(BattleScript_GraceOfDreamStatRaised);
+            effect = TRUE;
         }
     }
 

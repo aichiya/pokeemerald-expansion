@@ -169,6 +169,8 @@ bool32 DoSwitchInEvents(void)
         }
 
         gBattleStruct->intimidateActivated = FALSE;
+        gBattleStruct->manaDisturptorActivated = FALSE;
+        gBattleStruct->misfortuneAuraActivated = FALSE;
         gBattleStruct->adrenalineOrbActivated = FALSE;
         gBattleStruct->battlersSorted = FALSE;
         gBattleStruct->hazardsCounter = 0;

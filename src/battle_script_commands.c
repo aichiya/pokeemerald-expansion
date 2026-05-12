@@ -4249,10 +4249,12 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
                     moveEffect = MOVE_EFFECT_FLINCH;
                     break;
                 case STATUS_FIELD_DARKNESS_TERRAIN:
-                    moveEffect = MOVE_EFFECT_ACC_MINUS_1;
+                    SetStatChange(effectBattler, STAT_ACC, -1);
+                    statDown = TRUE;
                     break;
                 case STATUS_FIELD_MIASMA_TERRAIN:
-                    moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1;
+                    SetStatChange(effectBattler, STAT_SPDEF, -1);
+                    statDown = TRUE;
                     break;
                 default:
                     moveEffect = MOVE_EFFECT_PARALYSIS;
@@ -4858,47 +4860,22 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
         }
         break;
     case MOVE_EFFECT_STEAL_STATS_TREASURE_SNIPER:
-        if (gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
-            break;
-
-        contrary = abilities[gBattlerAttacker] == ABILITY_CONTRARY;
-        gBattleStruct->stolenStats[0] = 0; // Stats to steal.
-        gBattleScripting.animArg1 = 0;
-        for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
+        if (!IsBattlerUnaffectedByMove(effectBattler))
         {
-            if (gBattleMons[gBattlerTarget].statStages[stat] > DEFAULT_STAT_STAGE && gBattleMons[gBattlerAttacker].statStages[stat] != MAX_STAT_STAGE)
+            bool32 atLeastOneStatStolen = FALSE;
+            for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
             {
-                bool32 byTwo = FALSE;
+                s32 stageToSteal = gBattleMons[effectBattler].statStages[stat];
 
-                gBattleStruct->stolenStats[0] |= (1 << (stat));
-                // Store by how many stages to raise the stat.
-                gBattleStruct->stolenStats[stat] = gBattleMons[gBattlerTarget].statStages[stat] - DEFAULT_STAT_STAGE;
-
-                while (gBattleMons[gBattlerAttacker].statStages[stat] + gBattleStruct->stolenStats[stat] > MAX_STAT_STAGE)
-                    gBattleStruct->stolenStats[stat]--;
-
-                gBattleMons[gBattlerTarget].statStages[stat] = DEFAULT_STAT_STAGE;
-
-                if (gBattleStruct->stolenStats[stat] >= 2)
-                    byTwo++;
-
-                if (gBattleScripting.animArg1 == 0)
+                if (stageToSteal > DEFAULT_STAT_STAGE && gBattleMons[battlerAtk].statStages[stat] != MAX_STAT_STAGE)
                 {
-                    if (byTwo)
-                        gBattleScripting.animArg1 = (contrary ? STAT_ANIM_MINUS2 : STAT_ANIM_PLUS2) + stat;
-                    else
-                        gBattleScripting.animArg1 = (contrary ? STAT_ANIM_MINUS1 : STAT_ANIM_PLUS1) + stat;
-                }
-                else
-                {
-                    if (byTwo)
-                        gBattleScripting.animArg1 = (contrary ? STAT_ANIM_MULTIPLE_MINUS2 : STAT_ANIM_MULTIPLE_PLUS2);
-                    else
-                        gBattleScripting.animArg1 = (contrary ? STAT_ANIM_MULTIPLE_MINUS1 : STAT_ANIM_MULTIPLE_PLUS1);
+                    atLeastOneStatStolen = TRUE;
+                    gBattleMons[effectBattler].statStages[stat] = DEFAULT_STAT_STAGE;
+                    SetStatChange(battlerAtk, stat, stageToSteal - DEFAULT_STAT_STAGE);
                 }
             }
 
-            if (gBattleStruct->stolenStats[0] != 0)
+            if (atLeastOneStatStolen)
             {
                 BattleScriptPush(battleScript);
                 gBattlescriptCurrInstr = BattleScript_StealStatsTreasureSniper;
@@ -5125,128 +5102,13 @@ static void Cmd_setadditionaleffects(void)
                         oppositeBattlerPartner = GetPartnerBattler(oppositeBattler);
                     }
 
-                    if (GetBattlerAbility(targetEffect) == ABILITY_CONTRARY
-                    && (GetBattlerAbility(oppositeBattler) == ABILITY_STASIS_GAZE
-                    && (additionalEffect->moveEffect == MOVE_EFFECT_ATK_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_DEF_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SPD_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_ATK_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_DEF_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ACC_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ACC_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ATK_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_DEF_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SPD_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_ATK_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_DEF_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ACC_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_EVS_MINUS_2)))
-                    {
-                        SetMoveEffect(
-                            gBattlerAttacker,
-                            targetEffect,
-                            MOVE_EFFECT_STASIS_GAZE_PREVENTED,
-                            gBattlescriptCurrInstr,
-                            flags
-                        );
-                    }
-                    else if (GetBattlerAbility(targetEffect) == ABILITY_CONTRARY
-                    && (GetBattlerAbility(oppositeBattlerPartner) == ABILITY_STASIS_GAZE
-                    && (additionalEffect->moveEffect == MOVE_EFFECT_ATK_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_DEF_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SPD_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_ATK_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_DEF_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ACC_MINUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ACC_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ATK_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_DEF_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SPD_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_ATK_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_DEF_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ACC_MINUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_EVS_MINUS_2)))
-                    {
-                        SetMoveEffect(
-                            gBattlerAttacker,
-                            targetEffect,
-                            MOVE_EFFECT_STASIS_GAZE_PREVENTED,
-                            gBattlescriptCurrInstr,
-                            flags
-                        );
-                    }
-                    else if (GetBattlerAbility(oppositeBattler) == ABILITY_STASIS_GAZE
-                    && (additionalEffect->moveEffect == MOVE_EFFECT_ATK_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_DEF_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SPD_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_ATK_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_DEF_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ACC_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_EVS_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ATK_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_DEF_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SPD_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_ATK_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_DEF_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ACC_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_EVS_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ALL_STATS_UP
-                    || additionalEffect->moveEffect == MOVE_EFFECT_RAISE_TEAM_ATTACK
-                    || additionalEffect->moveEffect == MOVE_EFFECT_RAISE_TEAM_DEFENSE
-                    || additionalEffect->moveEffect == MOVE_EFFECT_RAISE_TEAM_SPEED
-                    || additionalEffect->moveEffect == MOVE_EFFECT_RAISE_TEAM_SP_ATK
-                    || additionalEffect->moveEffect == MOVE_EFFECT_RAISE_TEAM_SP_DEF
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ORDER_UP))
-                    {
-                        SetMoveEffect(
-                            gBattlerAttacker,
-                            targetEffect,
-                            MOVE_EFFECT_STASIS_GAZE_PREVENTED,
-                            gBattlescriptCurrInstr,
-                            flags
-                        );
-                    }
-                    else if (GetBattlerAbility(oppositeBattlerPartner) == ABILITY_STASIS_GAZE
-                    && (additionalEffect->moveEffect == MOVE_EFFECT_ATK_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_DEF_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SPD_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_ATK_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_DEF_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ACC_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_EVS_PLUS_1
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ATK_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_DEF_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SPD_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_ATK_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_SP_DEF_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ACC_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_EVS_PLUS_2
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ALL_STATS_UP
-                    || additionalEffect->moveEffect == MOVE_EFFECT_RAISE_TEAM_ATTACK
-                    || additionalEffect->moveEffect == MOVE_EFFECT_RAISE_TEAM_DEFENSE
-                    || additionalEffect->moveEffect == MOVE_EFFECT_RAISE_TEAM_SPEED
-                    || additionalEffect->moveEffect == MOVE_EFFECT_RAISE_TEAM_SP_ATK
-                    || additionalEffect->moveEffect == MOVE_EFFECT_RAISE_TEAM_SP_DEF
-                    || additionalEffect->moveEffect == MOVE_EFFECT_ORDER_UP))
-                    {
-                        SetMoveEffect(
-                            gBattlerAttacker,
-                            targetEffect,
-                            MOVE_EFFECT_STASIS_GAZE_PREVENTED,
-                            gBattlescriptCurrInstr,
-                            flags
-                        );
-                    }
-                    else
-                    {
-                        SetMoveEffect(
-                            gBattlerAttacker,
-                            additionalEffect->self ? gBattlerAttacker : gBattlerTarget,
-                            additionalEffect->moveEffect,
-                            gBattlescriptCurrInstr,
-                            flags
-                        );
-                    }
+                    SetMoveEffect(
+                        gBattlerAttacker,
+                        additionalEffect->self ? gBattlerAttacker : gBattlerTarget,
+                        additionalEffect->moveEffect,
+                        gBattlescriptCurrInstr,
+                        flags
+                    );
                 }
             }
 
@@ -12604,6 +12466,11 @@ static void SetStatChangeFlags(struct StatChange *st, u32 flags)
     st->ignoreMirrorArmored = SET_FLAG(STAT_CHANGE_IGNORE_MIRROR_ARMOR);
     st->itemMessage = SET_FLAG(STAT_CHANGE_ITEM);
     st->stickyWeb = SET_FLAG(STAT_CHANGE_STICKY_WEB);
+    st->manaDisturptor = SET_FLAG(STAT_CHANGE_MANA_DISTURPTOR);
+    st->misfortuneAura = SET_FLAG(STAT_CHANGE_MISFORTUNE_AURA);
+    st->dourEcho = SET_FLAG(STAT_CHANGE_DOUR_ECHO);
+    st->manicEcho = SET_FLAG(STAT_CHANGE_MANIC_ECHO);
+    st->lastCadenza = SET_FLAG(STAT_CHANGE_LAST_CADENZA);
 }
 #undef SET_FLAG
 
@@ -16133,16 +16000,15 @@ void BS_TryActivateSalvage(void)
     NATIVE_ARGS();
     while (gBattleStruct->salvageBattlerId < gBattlersCount)
     {
-        gBattleScripting.battler = gBattleStruct->salvageBattlerId++;
-        u32 ability = GetBattlerAbility(gBattleScripting.battler);
+        gEffectBattler = gBattlerAbility = gBattleStruct->salvageBattlerId++;
+        enum Ability ability = GetBattlerAbility(gBattlerAbility);
         if (ability == ABILITY_SALVAGE
-            && IsBattlerAlive(gBattleScripting.battler)
+            && IsBattlerAlive(gBattlerAbility)
             && !NoAliveMonsForEitherParty()
-            && CompareStat(gBattleScripting.battler, STAT_DEF, MAX_STAT_STAGE, CMP_LESS_THAN, ability))
+            && CompareStat(gBattlerAbility, STAT_DEF, MAX_STAT_STAGE, CMP_LESS_THAN, ability))
         {
-            SET_STATCHANGER(STAT_DEF, 1, FALSE);
-            PREPARE_STAT_BUFFER(gBattleTextBuff1, STAT_DEF);
-            BattleScriptCall(BattleScript_ScriptingAbilityStatRaise);
+            SetStatChange(gBattlerAbility, STAT_DEF, 1);
+            BattleScriptCall(BattleScript_AbilityStatChange);
             return;
         }
     }
@@ -17051,7 +16917,7 @@ void BS_TryDefiantRattled(void)
         }
         break;
     case ABILITY_RATTLED:
-        if (GetConfig(B_UPDATED_INTIMIDATE) >= GEN_8 && gBattleStruct->intimidateActivated)
+        if ((GetConfig(B_UPDATED_INTIMIDATE) >= GEN_8 && gBattleStruct->intimidateActivated))
         {
             SetStatChange2(battler, STAT_SPEED, 1);
             gBattlerAbility = battler;

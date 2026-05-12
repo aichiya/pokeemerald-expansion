@@ -7149,7 +7149,7 @@ static inline bool32 CanFirstMonBoostHeldItemRarity(void)
         return FALSE;
 
     ability = GetMonAbility(&gParties[B_TRAINER_0][0]);
-    if (ability == ABILITY_COMPOUND_EYES || ability == ABILITY_FOCUS)
+    if (ability == ABILITY_COMPOUND_EYES || ability == ABILITY_FOCUS || ability == ABILITY_ASSASSIN_SENSE)
         return TRUE;
     else if ((OW_SUPER_LUCK >= GEN_8) && ability == ABILITY_SUPER_LUCK)
         return TRUE;

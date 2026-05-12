@@ -4900,7 +4900,7 @@ u32 GetBattlerTotalSpeedStat(enum BattlerId battler, enum Ability ability, enum 
         speed = (speed * 150) / 100;
     else if (ability == ABILITY_PURE_ENIGMA)
         speed = (speed * 150) / 100;
-    else if (ability == ABILITY_ULTRA_MEDICINE_V2)
+    else if (ability == ABILITY_ULTRA_MEDICINE)
         speed *= 4;
     else if (ability == ABILITY_UNBURDEN && gBattleMons[battler].volatiles.unburdenActive)
         speed *= 2;

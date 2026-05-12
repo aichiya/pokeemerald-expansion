@@ -51,6 +51,10 @@ bool32 IsSwitchinTSpikesAffected(enum BattlerId battler);
 static bool32 IsOpponentPhysicalAttacker(enum BattlerId battler, enum BattlerId opposingBattler);
 static bool32 CanIntimidateLowerOpponentAtk(enum BattlerId battler, enum BattlerId opposingBattler);
 static bool32 ShouldSwitchIfIntimidateBenefit(struct SwitchAiContext *switchContext);
+static bool32 CanManaDisturptorLowerOpponentSpAtk(enum BattlerId battler, enum BattlerId opposingBattler);
+static bool32 ShouldSwitchIfManaDisturptorBenefit(struct SwitchAiContext *switchContext);
+static bool32 CanMisfortuneAuraLowerOpponentAccuracy(enum BattlerId battler, enum BattlerId opposingBattler);
+static bool32 ShouldSwitchIfMisfortuneAuraBenefit(struct SwitchAiContext *switchContext);
 static bool32 DoesMostSuitableSwitchinBenefitFromWish(enum BattlerId battler);
 static u32 GetSwitchinCandidate(u32 switchinCategory, enum BattlerId battler, int lastId, enum SwitchType switchType);
 
@@ -213,6 +217,14 @@ u32 GetSwitchChance(enum ShouldSwitchScenario shouldSwitchScenario)
         return SHOULD_SWITCH_INTIMIDATE_PERCENTAGE;
     case SHOULD_SWITCH_INTIMIDATE_STATS_RAISED:
         return SHOULD_SWITCH_INTIMIDATE_STATS_RAISED_PERCENTAGE;
+    case SHOULD_SWITCH_MANA_DISTURPTOR:
+        return SHOULD_SWITCH_MANA_DISTURPTOR_PERCENTAGE;
+    case SHOULD_SWITCH_MANA_DISTURPTOR_STATS_RAISED:
+        return SHOULD_SWITCH_MANA_DISTURPTOR_STATS_RAISED_PERCENTAGE;
+    case SHOULD_SWITCH_MISFORTUNE_AURA:
+        return SHOULD_SWITCH_MISFORTUNE_AURA_PERCENTAGE;
+    case SHOULD_SWITCH_MISFORTUNE_AURA_STATS_RAISED:
+        return SHOULD_SWITCH_MISFORTUNE_AURA_STATS_RAISED_PERCENTAGE;
     case SHOULD_SWITCH_ENCORE_STATUS:
         return SHOULD_SWITCH_ENCORE_STATUS_PERCENTAGE;
     case SHOULD_SWITCH_ENCORE_DAMAGE:
@@ -994,6 +1006,142 @@ static bool32 ShouldSwitchIfIntimidateBenefit(struct SwitchAiContext *switchCont
     return hasValidTarget;
 }
 
+static bool32 CanManaDisturptorLowerOpponentSpAtk(enum BattlerId battler, enum BattlerId opposingBattler)
+{
+    enum Ability abilityDef = gAiLogicData->abilities[opposingBattler];
+
+    // If Sp. Atk is already at -2 or lower, repeated Mana Disturptor cycles aren't worth it.
+    if (gBattleMons[opposingBattler].statStages[STAT_SPATK] <= DEFAULT_STAT_STAGE - 2)
+        return FALSE;
+
+    if (gBattleMons[opposingBattler].volatiles.substitute)
+        return FALSE;
+
+    if (gAiLogicData->holdEffects[opposingBattler] == HOLD_EFFECT_CLEAR_AMULET)
+        return FALSE;
+
+    if (gSideStatuses[GetBattlerSide(opposingBattler)] & SIDE_STATUS_MIST)
+        return FALSE;
+
+    if (IS_BATTLER_OF_TYPE(opposingBattler, TYPE_NEW_NATURE) && AI_IsAbilityOnSide(opposingBattler, ABILITY_FLOWER_VEIL))
+        return FALSE;
+
+    switch (abilityDef)
+    {
+    case ABILITY_HYPER_CUTTER:
+    case ABILITY_CLEAR_BODY:
+    case ABILITY_FULL_METAL_BODY:
+    case ABILITY_WHITE_SMOKE:
+        return FALSE;
+    default:
+        break;
+    }
+
+    return TRUE;
+}
+
+static bool32 ShouldSwitchIfManaDisturptorBenefit(struct SwitchAiContext *switchContext)
+{
+    // Keep Mana Disturptor cycling behavior restricted to smart-switching AI
+    if (!(gAiThinkingStruct->aiFlags[switchContext->battler] & AI_FLAG_SMART_SWITCHING))
+        return FALSE;
+
+    enum BattlerId opposingPartner = BATTLE_PARTNER(switchContext->opposingBattler);
+    bool32 hasValidTarget = FALSE;
+
+    if (IsBattlerAlive(switchContext->opposingBattler))
+    {
+        enum Ability abilityDef = gAiLogicData->abilities[switchContext->opposingBattler];
+        bool32 canLowerSpAtk = CanManaDisturptorLowerOpponentSpAtk(switchContext->battler, switchContext->opposingBattler);
+
+        if (canLowerSpAtk && (DoesManaDisturptorRaiseStats(abilityDef) || abilityDef == ABILITY_MIRROR_ARMOR))
+            return FALSE;
+        if (canLowerSpAtk && !IsOpponentPhysicalAttacker(switchContext->battler, switchContext->opposingBattler))
+            hasValidTarget = TRUE;
+    }
+
+    if (IsDoubleBattle() && IsBattlerAlive(opposingPartner))
+    {
+        enum Ability abilityDef = gAiLogicData->abilities[opposingPartner];
+        bool32 canLowerSpAtk = CanManaDisturptorLowerOpponentSpAtk(switchContext->battler, opposingPartner);
+
+        if (canLowerSpAtk && (DoesManaDisturptorRaiseStats(abilityDef) || abilityDef == ABILITY_MIRROR_ARMOR))
+            return FALSE;
+        if (canLowerSpAtk && !IsOpponentPhysicalAttacker(switchContext->battler, opposingPartner))
+            hasValidTarget = TRUE;
+    }
+
+    return hasValidTarget;
+}
+
+static bool32 CanMisfortuneAuraLowerOpponentAccuracy(enum BattlerId battler, enum BattlerId opposingBattler)
+{
+    enum Ability abilityDef = gAiLogicData->abilities[opposingBattler];
+
+    // If Sp. Atk is already at -2 or lower, repeated Mana Disturptor cycles aren't worth it.
+    if (gBattleMons[opposingBattler].statStages[STAT_ACC] <= DEFAULT_STAT_STAGE - 2)
+        return FALSE;
+
+    if (gBattleMons[opposingBattler].volatiles.substitute)
+        return FALSE;
+
+    if (gAiLogicData->holdEffects[opposingBattler] == HOLD_EFFECT_CLEAR_AMULET)
+        return FALSE;
+
+    if (gSideStatuses[GetBattlerSide(opposingBattler)] & SIDE_STATUS_MIST)
+        return FALSE;
+
+    if (IS_BATTLER_OF_TYPE(opposingBattler, TYPE_NEW_NATURE) && AI_IsAbilityOnSide(opposingBattler, ABILITY_FLOWER_VEIL))
+        return FALSE;
+
+    switch (abilityDef)
+    {
+    case ABILITY_HYPER_CUTTER:
+    case ABILITY_CLEAR_BODY:
+    case ABILITY_FULL_METAL_BODY:
+    case ABILITY_WHITE_SMOKE:
+        return FALSE;
+    default:
+        break;
+    }
+
+    return TRUE;
+}
+
+static bool32 ShouldSwitchIfMisfortuneAuraBenefit(struct SwitchAiContext *switchContext)
+{
+    // Keep Mana Disturptor cycling behavior restricted to smart-switching AI
+    if (!(gAiThinkingStruct->aiFlags[switchContext->battler] & AI_FLAG_SMART_SWITCHING))
+        return FALSE;
+
+    enum BattlerId opposingPartner = BATTLE_PARTNER(switchContext->opposingBattler);
+    bool32 hasValidTarget = FALSE;
+
+    if (IsBattlerAlive(switchContext->opposingBattler))
+    {
+        enum Ability abilityDef = gAiLogicData->abilities[switchContext->opposingBattler];
+        bool32 canLowerAcc = CanMisfortuneAuraLowerOpponentAccuracy(switchContext->battler, switchContext->opposingBattler);
+
+        if (canLowerAcc && (DoesMisfortuneAuraRaiseStats(abilityDef) || abilityDef == ABILITY_MIRROR_ARMOR))
+            return FALSE;
+        if (canLowerAcc)
+            hasValidTarget = TRUE;
+    }
+
+    if (IsDoubleBattle() && IsBattlerAlive(opposingPartner))
+    {
+        enum Ability abilityDef = gAiLogicData->abilities[opposingPartner];
+        bool32 canLowerAcc = CanManaDisturptorLowerOpponentSpAtk(switchContext->battler, opposingPartner);
+
+        if (canLowerAcc && (DoesMisfortuneAuraRaiseStats(abilityDef) || abilityDef == ABILITY_MIRROR_ARMOR))
+            return FALSE;
+        if (canLowerAcc)
+            hasValidTarget = TRUE;
+    }
+
+    return hasValidTarget;
+}
+
 static bool32 ShouldSwitchIfAbilityBenefit(struct SwitchAiContext *switchContext)
 {
     //Check if ability is blocked
@@ -1034,6 +1182,24 @@ static bool32 ShouldSwitchIfAbilityBenefit(struct SwitchAiContext *switchContext
         if (ShouldSwitchIfIntimidateBenefit(switchContext)
             && gAiLogicData->mostSuitableMonId[switchContext->battler] != PARTY_SIZE
             && (switchContext->hasStatRaised ? RandomPercentage(RNG_AI_SWITCH_INTIMIDATE, GetSwitchChance(SHOULD_SWITCH_INTIMIDATE_STATS_RAISED)) : RandomPercentage(RNG_AI_SWITCH_INTIMIDATE, GetSwitchChance(SHOULD_SWITCH_INTIMIDATE))))
+            break;
+
+        return FALSE;
+
+    case ABILITY_MANA_DISTURPTOR:
+        // TODO: In ShouldSwitch cleanup, gate Mana Disturptor cycling behind "stay in instead if the current mon wins the 1v1" to avoid duplicating Bad Odds logic here.
+        if (ShouldSwitchIfManaDisturptorBenefit(switchContext)
+            && gAiLogicData->mostSuitableMonId[switchContext->battler] != PARTY_SIZE
+            && (switchContext->hasStatRaised ? RandomPercentage(RNG_AI_SWITCH_MANA_DISTURPTOR, GetSwitchChance(SHOULD_SWITCH_MANA_DISTURPTOR_STATS_RAISED)) : RandomPercentage(RNG_AI_SWITCH_MANA_DISTURPTOR, GetSwitchChance(SHOULD_SWITCH_MANA_DISTURPTOR))))
+            break;
+
+        return FALSE;
+
+    case ABILITY_MISFORTUNE_AURA:
+        // TODO: In ShouldSwitch cleanup, gate Misfotune Aura cycling behind "stay in instead if the current mon wins the 1v1" to avoid duplicating Bad Odds logic here.
+        if (ShouldSwitchIfMisfortuneAuraBenefit(switchContext)
+            && gAiLogicData->mostSuitableMonId[switchContext->battler] != PARTY_SIZE
+            && (switchContext->hasStatRaised ? RandomPercentage(RNG_AI_SWITCH_MISFORTUNE_AURA, GetSwitchChance(SHOULD_SWITCH_MISFORTUNE_AURA_STATS_RAISED)) : RandomPercentage(RNG_AI_SWITCH_MISFORTUNE_AURA, GetSwitchChance(SHOULD_SWITCH_MISFORTUNE_AURA))))
             break;
 
         return FALSE;
@@ -2157,7 +2323,11 @@ static inline bool32 IsFreeSwitch(enum SwitchType switchType, enum BattlerId bat
         {
             enum Ability opposingAbility = gAiLogicData->abilities[opposingBattler];
             // If faster, not a free switch; likely lowered own stats
-            if (!movedSecond && opposingAbility != ABILITY_INTIMIDATE && opposingAbility != ABILITY_SUPERSWEET_SYRUP) // Intimidate triggers switches before turn starts
+            if (!movedSecond 
+              && opposingAbility != ABILITY_INTIMIDATE
+              && opposingAbility != ABILITY_MANA_DISTURPTOR
+              && opposingAbility != ABILITY_MISFORTUNE_AURA 
+              && opposingAbility != ABILITY_SUPERSWEET_SYRUP) // Intimidate triggers switches before turn starts
                 return FALSE;
             // Otherwise, free switch
             return TRUE;
@@ -2764,6 +2934,42 @@ static void SetBattlerStatStagesForSwitchin(enum BattlerId battler, enum Battler
             {
                 opponentStatDrop = TRUE;
                 gBattleMons[opposingBattler].statStages[STAT_ATK] -= 1;
+                if (gAiLogicData->abilities[opposingBattler] == ABILITY_DEFIANT)
+                    gBattleMons[opposingBattler].statStages[STAT_ATK] += 2;
+                if (gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE)
+                    gBattleMons[opposingBattler].statStages[STAT_SPATK] += 2;
+            }
+        }
+        break;
+    case ABILITY_MANA_DISTURPTOR:
+        if (CanLowerStat(battler, opposingBattler, gAiLogicData, STAT_ATK))
+        {
+            if (gAiLogicData->abilities[opposingBattler] == ABILITY_CONTRARY)
+            {
+                gBattleMons[opposingBattler].statStages[STAT_SPATK] += 1;
+            }
+            else
+            {
+                opponentStatDrop = TRUE;
+                gBattleMons[opposingBattler].statStages[STAT_SPATK] -= 1;
+                if (gAiLogicData->abilities[opposingBattler] == ABILITY_DEFIANT)
+                    gBattleMons[opposingBattler].statStages[STAT_ATK] += 2;
+                if (gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE)
+                    gBattleMons[opposingBattler].statStages[STAT_SPATK] += 2;
+            }
+        }
+        break;
+    case ABILITY_MISFORTUNE_AURA:
+        if (CanLowerStat(battler, opposingBattler, gAiLogicData, STAT_ATK))
+        {
+            if (gAiLogicData->abilities[opposingBattler] == ABILITY_CONTRARY)
+            {
+                gBattleMons[opposingBattler].statStages[STAT_ACC] += 1;
+            }
+            else
+            {
+                opponentStatDrop = TRUE;
+                gBattleMons[opposingBattler].statStages[STAT_ACC] -= 1;
                 if (gAiLogicData->abilities[opposingBattler] == ABILITY_DEFIANT)
                     gBattleMons[opposingBattler].statStages[STAT_ATK] += 2;
                 if (gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE)

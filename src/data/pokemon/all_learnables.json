@@ -5336,19 +5336,19 @@
   "FRAGMON_1779": [
     "MOVE_TACKLE"
   ],
-  "FRAGMON_1780": [
+  "TH_REIMU_8BIT": [
     "MOVE_TACKLE"
   ],
-  "FRAGMON_1781": [
+  "TH_MARISA_8BIT": [
     "MOVE_TACKLE"
   ],
-  "FRAGMON_1782": [
+  "TH_SAKUYA_8BIT": [
     "MOVE_TACKLE"
   ],
-  "FRAGMON_1783": [
+  "TH_YOUMU_8BIT": [
     "MOVE_TACKLE"
   ],
-  "FRAGMON_1784": [
+  "TH_SANAE_8BIT": [
     "MOVE_TACKLE"
   ],
   "ETC_WUPI": [
@@ -6080,10 +6080,10 @@
   "TH_SUIKA_MP_R_TECH": [
     "MOVE_TACKLE"
   ],
-  "FRAGMON_2028": [
+  "ETC_VICTINI": [
     "MOVE_TACKLE"
   ],
-  "FRAGMON_2029": [
+  "ETC_MOE_VICTINI": [
     "MOVE_TACKLE"
   ],
   "ETC_SUNNY": [
@@ -6131,7 +6131,7 @@
   "ETC_NOBETA": [
     "MOVE_TACKLE"
   ],
-  "TH_MARISA_8BIT": [
+  "ETC_BASIL": [
     "MOVE_TACKLE"
   ],
   "ETC_AME_YAMAME": [

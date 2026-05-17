@@ -11827,6 +11827,26 @@
       "secondary_tileset": "gTileset_Unused1",
       "border_filepath": "data/layouts/AnotherWorldGensokyo/border.bin",
       "blockdata_filepath": "data/layouts/AnotherWorldGensokyo/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANOTHER_WORLD_MILKY_ROAD",
+      "name": "AnotherWorldMilkyRoad_Layout",
+      "width": 86,
+      "height": 53,
+      "primary_tileset": "gTileset_General2",
+      "secondary_tileset": "gTileset_Snowpoint",
+      "border_filepath": "data/layouts/AnotherWorldMilkyRoad/border.bin",
+      "blockdata_filepath": "data/layouts/AnotherWorldMilkyRoad/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANOTHER_WORLD_MILKY_ROAD_INNER",
+      "name": "AnotherWorldMilkyRoad_Inner_Layout",
+      "width": 31,
+      "height": 49,
+      "primary_tileset": "gTileset_General2",
+      "secondary_tileset": "gTileset_Snowpoint",
+      "border_filepath": "data/layouts/AnotherWorldMilkyRoad_Inner/border.bin",
+      "blockdata_filepath": "data/layouts/AnotherWorldMilkyRoad_Inner/map.bin"
     }
   ]
 }

@@ -5821,6 +5821,7 @@ gCryTable::
 	cry Cry_THMarisaPC98Line
 	cry Cry_THReimuPC98Line
 	cry Cry_THSuikaMP
+ 	cry Cry_Victini
 @ 	cry Cry_ETCSunny
 @ 	cry Cry_ETCPurikuheart
 	cry Cry_Kecleon
@@ -5831,6 +5832,7 @@ gCryTable::
 @ 	cry Cry_ETCValkyrie
 @ 	cry Cry_ETCNonota
 @ 	cry Cry_ETCNobeta
+@ 	cry Cry_ETCBasil
 .endif @ P_CRIES_ENABLED
 
 	.align 2
@@ -6542,6 +6544,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_THMarisaPC98Line
 	cry_reverse Cry_THReimuPC98Line
 	cry_reverse Cry_THSuikaMP
+ 	cry_reverse Cry_Victini
 @ 	cry_reverse Cry_ETCSunny
 @ 	cry_reverse Cry_ETCPurikuheart
 	cry_reverse Cry_Kecleon
@@ -6552,5 +6555,6 @@ gCryTable_Reverse::
 @ 	cry_reverse Cry_ETCValkyrie
 @ 	cry_reverse Cry_ETCNonota
 @ 	cry_reverse Cry_ETCNobeta
+@ 	cry_reverse Cry_ETCBasil
 
 .endif @ P_CRIES_ENABLED

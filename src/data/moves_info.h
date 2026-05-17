@@ -27070,7 +27070,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_PowerFortissimo,
     },
 
-    [MOVE_YUUSHA_PUNCH] =  // to do
+    [MOVE_YUUSHA_PUNCH] =  // to do anim
     {
         .name = COMPOUND_STRING("Yuusha Punch"),
         .description = COMPOUND_STRING(
@@ -27108,7 +27108,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Slashes twice. High-crit.\n"
             "Type based on user's ego."),
-        .effect = EFFECT_AURA_WHEEL,
+        .effect = EFFECT_REVELATION_DANCE,
         .power = 33,
         .type = TYPE_NEW_METAL,
         .accuracy = 95,
@@ -27125,6 +27125,154 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
         .battleAnimScript = gBattleAnimMove_HackAway,
+    },
+
+    [MOVE_STAR_PUNCH] =  // To do anim
+    {
+        .name = COMPOUND_STRING("Star Punch"),
+        .description = COMPOUND_STRING(
+            "A fiery punch that may\n"
+            "raise the user's Sp. Defense."),
+        .effect = EFFECT_HIT,
+        .power = 75,
+        .type = TYPE_NEW_DREAM,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .punchingMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_PLUS,
+            .spDef = 1,
+            .chance = 50,
+            .self = TRUE,
+        }),
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = COMBO_STARTER_FIRE_PUNCH,
+        .contestComboMoves = {COMBO_STARTER_ICE_PUNCH, COMBO_STARTER_SUNNY_DAY, COMBO_STARTER_THUNDER_PUNCH},
+        .battleAnimScript = gBattleAnimMove_FirePunch,
+    },
+
+    [MOVE_MILKY_SHOCK] =  // To do anim
+    {
+        .name = COMPOUND_STRING("Milky Shock"),
+        .description = COMPOUND_STRING(
+            "A freezing shock that may\n"
+            "lower the foe's evasion."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_ICE,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .evasion = 1,
+            .chance = 50,
+        }),
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_HAIL},
+        .battleAnimScript = gBattleAnimMove_Recycle,
+    },
+
+    [MOVE_SOLEIL_SHOOT] =  // Edited
+    {
+        .name = COMPOUND_STRING("Soleil Shoot"),
+        .description = COMPOUND_STRING(
+            "Powerful and sure to inflict\n"
+            "a burn, but inaccurate."),
+        .effect = EFFECT_HIT,
+        .power = 150,
+        .type = TYPE_NEW_FIRE,
+        .accuracy = 50,
+        .pp = 5,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_BURN,
+            .chance = 100,
+        }),
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = COMBO_STARTER_INFERNO,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_PyroBall,
+    },
+
+    [MOVE_SELENE_ARROW] =  // To do anim
+    {
+        .name = COMPOUND_STRING("Selene Arrow"),
+        .description = COMPOUND_STRING(
+            "Shoots arrows that has\n"
+            "a critical-hit rate."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_HEART,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_RainOfArrows,
+    },
+
+    [MOVE_MOON_TIARA] =  // To do anim
+    {
+        .name = COMPOUND_STRING("Moon Tiara"),
+        .description = COMPOUND_STRING(
+            "Throws a moon tiara.\n"
+            "High critical-hit rate."),
+        .effect = EFFECT_HIT,
+        .power = 70,
+        .type = TYPE_NEW_EARTH,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .strikeCount = 2,
+        .damagesAirborne = TRUE,
+        .ignoreTypeIfFlyingAndUngrounded = TRUE,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL : CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_Bonemerang,
+    },
+
+    [MOVE_SPIRAL_HEART] =  // Edited
+    {
+        .name = COMPOUND_STRING("Spiral Heart"),
+        .description = COMPOUND_STRING(
+            "Blast enemies with the love.\n"
+            "storm. May lower Sp. Attack."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_NEW_HEART,
+        .accuracy = 90,
+        .pp = 5,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .windMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .spAtk = 1,
+            .chance = 30,
+        }),
+        .battleAnimScript = gBattleAnimMove_SpringtideStorm,
     },
 
 // ============= Start Shadow Moves ===================

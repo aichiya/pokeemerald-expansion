@@ -1519,6 +1519,8 @@ static bool32 HandleEndTurnFormChange(enum BattlerId battler)
             BattleScriptCall(BattleScript_PowerConstruct);
             break;
         case ABILITY_HUNGER_SWITCH:
+        case ABILITY_SIMPLE:
+        case ABILITY_MOXIE:
             BattleScriptCall(BattleScript_BattlerFormChangeNoPopup);
             break;
         case ABILITY_ZEN_MODE:

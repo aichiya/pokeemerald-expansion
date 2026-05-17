@@ -2225,3 +2225,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/AnotherWorldBrokenDreams/scripts.inc"
 
 	.include "data/maps/AnotherWorldGensokyo/scripts.inc"
+
+	.include "data/maps/AnotherWorldMilkyRoad/scripts.inc"
+
+	.include "data/maps/AnotherWorldMilkyRoad_Inner/scripts.inc"

@@ -1899,6 +1899,7 @@ u32 AI_GetSwitchinWeather(enum BattlerId battler)
     case ABILITY_DROUGHT:
     case ABILITY_ORICHALCUM_PULSE:
     case ABILITY_ULTRA_FORM_SUNNY:
+    case ABILITY_BLAZING_STAR:
         return B_WEATHER_SUN_NORMAL;
     case ABILITY_SAND_STREAM:
         return B_WEATHER_SANDSTORM;
@@ -1933,6 +1934,7 @@ u32 AI_GetSwitchinFieldStatus(enum BattlerId battler)
     switch (ability)
     {
     case ABILITY_ELECTRIC_SURGE:
+    case ABILITY_SPARKLING_STAR:
     case ABILITY_HADRON_ENGINE:
     case ABILITY_ULTRA_FORM_PEACE:
         return SwitchinChangeBattleTerrain(STATUS_FIELD_ELECTRIC_TERRAIN, startingFieldStatus);
@@ -1942,6 +1944,7 @@ u32 AI_GetSwitchinFieldStatus(enum BattlerId battler)
     case ABILITY_MISTY_SURGE:
         return SwitchinChangeBattleTerrain(STATUS_FIELD_MISTY_TERRAIN, startingFieldStatus);
     case ABILITY_PSYCHIC_SURGE:
+    case ABILITY_BRILIANT_STAR:
         return SwitchinChangeBattleTerrain(STATUS_FIELD_PSYCHIC_TERRAIN, startingFieldStatus);
     case ABILITY_BLADE_WORKS:
         return SwitchinChangeBattleTerrain(STATUS_FIELD_UBW, startingFieldStatus);

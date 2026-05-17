@@ -491,6 +491,10 @@ enum __attribute__((packed)) Ability
     ABILITY_SAGE_OF_GENSOKYO = (ABILITY_OFFICIAL_END + 147), // To do
     ABILITY_SAIGYOUJI_AYAKASHI = (ABILITY_OFFICIAL_END + 148), // To do
     ABILITY_TIME_WEB = (ABILITY_OFFICIAL_END + 149), // To do
+    ABILITY_BLAZING_STAR = (ABILITY_OFFICIAL_END + 150), // Mold Breaker + Team Acc up + Sunny Day
+    ABILITY_SPARKLING_STAR = (ABILITY_OFFICIAL_END + 151), // Mold Breaker + Team Acc up + Electric Surge
+    ABILITY_BRILIANT_STAR = (ABILITY_OFFICIAL_END + 152), // Mold Breaker + Team Acc up + Psychic Surge
+    ABILITY_MOON_CRYSTAL = (ABILITY_OFFICIAL_END + 153), // Uses defense stats for attacking
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

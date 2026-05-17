@@ -1394,7 +1394,9 @@
     "MagicWorld_South_Winter",
     "AnotherWorldSpiritualWorld",
     "AnotherWorldBrokenDreams",
-    "AnotherWorldGensokyo"
+    "AnotherWorldGensokyo",
+    "AnotherWorldMilkyRoad",
+    "AnotherWorldMilkyRoad_Inner"
   ],
   "gMapGroup_EventStream": [
     "SafariZone_SouthFirstConstruction",

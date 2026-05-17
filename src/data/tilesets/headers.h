@@ -1717,3 +1717,14 @@ const struct Tileset gTileset_HallOfFame =
 };
 
 #endif // IS_FRLG
+
+const struct Tileset gTileset_Snowpoint =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Snowpoint,
+    .palettes = gTilesetPalettes_Snowpoint,
+    .metatiles = gMetatiles_Snowpoint,
+    .metatileAttributes = gMetatileAttributes_Snowpoint,
+    .callback = NULL,
+};

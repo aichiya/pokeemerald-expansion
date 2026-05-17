@@ -6719,6 +6719,12 @@ static const u16 sEtcMikuFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
+static const u16 sEtcVictiniFormSpeciesIdTable[] = {
+    SPECIES_ETC_VICTINI,
+    SPECIES_ETC_MOE_VICTINI,
+    FORM_SPECIES_END,
+};
+
 static const u16 sEtcSunnyFormSpeciesIdTable[] = {
     SPECIES_ETC_SUNNY,
     SPECIES_ETC_OMORI,

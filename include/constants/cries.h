@@ -3268,6 +3268,7 @@ enum PokemonCry
     CRY_TH_MARISA_PC98_LINE,
     CRY_TH_REIMU_PC98_LINE,
     CRY_TH_SUIKA_MP,
+    CRY_VICTINI,
     // CRY_ETC_SUNNY,
     // CRY_ETC_PURIKUHEART,
     CRY_KECLEON,
@@ -3278,6 +3279,7 @@ enum PokemonCry
     // CRY_ETC_VALKYRIE,
     // CRY_ETC_NONOTA,
     // CRY_ETC_NOBETA,
+    // CRY_ETC_BASIL,
     CRY_COUNT,
 };
 

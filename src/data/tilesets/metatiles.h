@@ -456,3 +456,6 @@ const u16 gMetatileAttributes_General2[] = INCBIN_U16("data/tilesets/primary/gen
 
 const u16 gMetatiles_Eterna[] = INCBIN_U16("data/tilesets/secondary/eterna/metatiles.bin");
 const u16 gMetatileAttributes_Eterna[] = INCBIN_U16("data/tilesets/secondary/eterna/metatile_attributes.bin");
+
+const u16 gMetatiles_Snowpoint[] = INCBIN_U16("data/tilesets/secondary/snowpoint/metatiles.bin");
+const u16 gMetatileAttributes_Snowpoint[] = INCBIN_U16("data/tilesets/secondary/snowpoint/metatile_attributes.bin");

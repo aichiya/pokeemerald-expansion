@@ -4565,15 +4565,15 @@ Cry_Arceus::
 	.incbin "sound/direct_sound_samples/cries/arceus.bin"
 .endif
 .endif @ P_FAMILY_ETC_ARCEUS_TH
-/*
-.if P_FAMILY_VICTINI == TRUE
+
+//.if P_FAMILY_VICTINI == TRUE
 	.align 2
 Cry_Victini::
-.if TESTING == FALSE
+//.if TESTING == FALSE
 	.incbin "sound/direct_sound_samples/cries/victini.bin"
-.endif
-.endif @ P_FAMILY_VICTINI
-
+//.endif
+//.endif @ P_FAMILY_VICTINI
+/*
 .if P_FAMILY_SNIVY == TRUE
 	.align 2
 Cry_Snivy::

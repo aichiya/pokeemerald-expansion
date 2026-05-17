@@ -1425,21 +1425,21 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_PRIMORDIAL_SEA] =
     {
-        .name = _("Primordial Sea"),
+        .name = _("Silver Sea"),
         .description = COMPOUND_STRING("Summons heavy rain."),
         .aiRating = 10,
     },
 
     [ABILITY_DESOLATE_LAND] =
     {
-        .name = _("Desolate Land"),
+        .name = _("Golden Sun"),
         .description = COMPOUND_STRING("Summons intense sunlight."),
         .aiRating = 10,
     },
 
     [ABILITY_DELTA_STREAM] =
     {
-        .name = _("Delta Stream"),
+        .name = _("Crystal Wind"),
         .description = COMPOUND_STRING("Summons strong winds."),
         .aiRating = 10,
     },
@@ -3613,5 +3613,33 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Time Web"),
         .description = COMPOUND_STRING("To do."),
         .aiRating = 6,
+    },
+
+    [ABILITY_BLAZING_STAR] =
+    {
+        .name = _("Blazing Star"),
+        .description = COMPOUND_STRING("Sunny and breaks abilities."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_SPARKLING_STAR] =
+    {
+        .name = _("Sparkling Star"),
+        .description = COMPOUND_STRING("Electric and breaks abilities."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_BRILIANT_STAR] =
+    {
+        .name = _("Briliant Star"),
+        .description = COMPOUND_STRING("Magic and breaks abilities."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_MOON_CRYSTAL] =
+    {
+        .name = _("Moon Princess"),
+        .description = COMPOUND_STRING("Uses defense stats for attacks."),
+        .aiRating = 8,
     },
 };

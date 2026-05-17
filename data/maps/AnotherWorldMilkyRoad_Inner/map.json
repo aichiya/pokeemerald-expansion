@@ -1,0 +1,57 @@
+{
+  "id": "MAP_ANOTHER_WORLD_MILKY_ROAD_INNER",
+  "name": "AnotherWorldMilkyRoad_Inner",
+  "layout": "LAYOUT_ANOTHER_WORLD_MILKY_ROAD_INNER",
+  "music": "MUS_PKMN_GLITCHXCITY_ETERNA_FOREST",
+  "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY_CLOUDS",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_STELLA",
+      "graphics_id": "OBJ_EVENT_GFX_TRAINER_PEA",
+      "x": 15,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "AnotherWorldMilkyRoad_Event_Stella",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_ANOTHER_WORLD_MILKY_ROAD",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_ANOTHER_WORLD_MILKY_ROAD",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_ANOTHER_WORLD_MILKY_ROAD",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

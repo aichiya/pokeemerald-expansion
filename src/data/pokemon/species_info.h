@@ -160,7 +160,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
 //    #include "species_info/gen_8_families.h"
     #include "species_info/gen_9_families.h"
 
-    [SPECIES_MOE_BULBASAUR] =
+        [SPECIES_MOE_BULBASAUR] =
     {
         .baseHP        = 45,
         .baseAttack    = 65,
@@ -12988,18 +12988,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_SWING_CONVEX,
+        .enemyMonElevation = 3,
         .backPic = gMonBackPic_MoeMew,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_MoeMew,
         .shinyPalette = gMonShinyPalette_MoeMew,
         .iconSprite = gMonIcon_MoeMew,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 16, SHADOW_SIZE_L)
         FOOTPRINT(MoeMew)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -21310,7 +21310,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_LEVITATE, ABILITY_DRIZZLE, ABILITY_MULTISCALE },
+        .abilities = { ABILITY_LEVITATE, ABILITY_MULTISCALE, ABILITY_PRIMORDIAL_SEA },
         .bodyColor = FRANCHISE_ORIGIN_MOEMON,
         .speciesName = _("Lugia"),
         .cryId = CRY_LUGIA,
@@ -21331,18 +21331,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_MoeLugia,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_MoeLugia,
         .shinyPalette = gMonShinyPalette_MoeLugia,
         .iconSprite = gMonIcon_MoeLugia,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(MoeLugia)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -21397,7 +21397,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_LEVITATE, ABILITY_DROUGHT, ABILITY_REGENERATOR },
+        .abilities = { ABILITY_LEVITATE, ABILITY_REGENERATOR, ABILITY_DESOLATE_LAND },
         .bodyColor = FRANCHISE_ORIGIN_MOEMON,
         .speciesName = _("Ho-Oh"),
         .cryId = CRY_HO_OH,
@@ -21429,7 +21429,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_MoeHoOh,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(MoeHoOh)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -21505,18 +21505,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_SWING_CONCAVE,
+        .enemyMonElevation = 3,
         .backPic = gMonBackPic_MoeCelebi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHRINK_GROW,
         .palette = gMonPalette_MoeCelebi,
         .shinyPalette = gMonShinyPalette_MoeCelebi,
         .iconSprite = gMonIcon_MoeCelebi,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_M)
         FOOTPRINT(MoeCelebi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49179,18 +49179,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSakuyaChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_ThSakuyaChibi,
         .shinyPalette = gMonShinyPalette_ThSakuyaChibi,
         .iconSprite = gMonIcon_ThSakuyaChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-1, 10, SHADOW_SIZE_S)
         FOOTPRINT(ThSakuyaChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49264,18 +49264,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_ZIGZAG_FAST,
+        .enemyMonElevation = 5,
         .backPic = gMonBackPic_ThSakuyaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_ThSakuyaNormal,
         .shinyPalette = gMonShinyPalette_ThSakuyaNormal,
         .iconSprite = gMonIcon_ThSakuyaNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 19, SHADOW_SIZE_M)
         FOOTPRINT(ThSakuyaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49349,18 +49349,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_VIBRATE_TO_CORNERS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSakuyaTech,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_ThSakuyaTech,
         .shinyPalette = gMonShinyPalette_ThSakuyaTech,
         .iconSprite = gMonIcon_ThSakuyaTech,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThSakuyaTech)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49434,18 +49434,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSakuyaHelper,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
+        .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_ThSakuyaHelper,
         .shinyPalette = gMonShinyPalette_ThSakuyaHelper,
         .iconSprite = gMonIcon_ThSakuyaHelper,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThSakuyaHelper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -61339,14 +61339,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThHinaChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThHinaChibi,
         .shinyPalette = gMonShinyPalette_ThHinaChibi,
         .iconSprite = gMonIcon_ThHinaChibi,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-1, 9, SHADOW_SIZE_M)
         FOOTPRINT(ThHinaChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -61420,18 +61420,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_CIRCLE_INTO_BG,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThHinaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,
         .palette = gMonPalette_ThHinaNormal,
         .shinyPalette = gMonShinyPalette_ThHinaNormal,
         .iconSprite = gMonIcon_ThHinaNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 13, SHADOW_SIZE_M)
         FOOTPRINT(ThHinaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -61505,18 +61505,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_GREEN,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThHinaAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
         .palette = gMonPalette_ThHinaAttack,
         .shinyPalette = gMonShinyPalette_ThHinaAttack,
         .iconSprite = gMonIcon_ThHinaAttack,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThHinaAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -61590,18 +61590,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThHinaDefense,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_ThHinaDefense,
         .shinyPalette = gMonShinyPalette_ThHinaDefense,
         .iconSprite = gMonIcon_ThHinaDefense,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-3, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThHinaDefense)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -80801,18 +80801,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMaribelNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_ThMaribelNormal,
         .shinyPalette = gMonShinyPalette_ThMaribelNormal,
         .iconSprite = gMonIcon_ThMaribelNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThMaribelNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -80886,18 +80886,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThRenkoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_ThRenkoNormal,
         .shinyPalette = gMonShinyPalette_ThRenkoNormal,
         .iconSprite = gMonIcon_ThRenkoNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-6, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThRenkoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -81056,18 +81056,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMarisaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 1,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_ThMarisaNormal,
         .shinyPalette = gMonShinyPalette_ThMarisaNormal,
         .iconSprite = gMonIcon_ThMarisaNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThMarisaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -81141,18 +81141,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMarisaAdvent,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_ThMarisaAdvent,
         .shinyPalette = gMonShinyPalette_ThMarisaAdvent,
         .iconSprite = gMonIcon_ThMarisaAdvent,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThMarisaAdvent)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -81230,14 +81230,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThReimuNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
+        .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_ThReimuNormal,
         .shinyPalette = gMonShinyPalette_ThReimuNormal,
         .iconSprite = gMonIcon_ThReimuNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(6, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThReimuNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -81396,18 +81396,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_BACK_FLIP_BIG,
+        .enemyMonElevation = 3,
         .backPic = gMonBackPic_ShVivitAndroid,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_ShVivitAndroid,
         .shinyPalette = gMonShinyPalette_ShVivitAndroid,
         .iconSprite = gMonIcon_ShVivitAndroid,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 15, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ShVivitAndroid)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -81481,18 +81481,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
+        .enemyMonElevation = 3,
         .backPic = gMonBackPic_ShVivitSphere,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ShVivitSphere,
         .shinyPalette = gMonShinyPalette_ShVivitSphere,
         .iconSprite = gMonIcon_ShVivitSphere,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 14, SHADOW_SIZE_L)
         FOOTPRINT(ShVivitSphere)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -101640,7 +101640,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_FORTISSIMO, ABILITY_LAST_CADENZA, ABILITY_VITAL_SPIRIT },
+        .abilities = { ABILITY_FORTISSIMO, ABILITY_MANIC_ECHO, ABILITY_VITAL_SPIRIT },
         .bodyColor = FRANCHISE_ORIGIN_PRECURE,
         .speciesName = _("Melody"),
         .cryId = CRY_NONE, // CRY_PC_CURE_MELODY_LINE,
@@ -118625,17 +118625,17 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     },
 
-    [SPECIES_FRAGMON_1780] =
+    [SPECIES_TH_REIMU_8BIT] =
     {
-        .baseHP        = 0,
-        .baseAttack    = 0,
-        .baseDefense   = 0,
-        .baseSpeed     = 0,
-        .baseSpAttack  = 0,
-        .baseSpDefense = 0,
-        .types = MON_TYPES( TYPE_NEW_MYSTERY, TYPE_NEW_MYSTERY ),
-        .catchRate = 100,
-        .expYield = 100,
+        .baseHP        = 120,
+        .baseAttack    = 90,
+        .baseDefense   = 110,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 120,
+        .types = MON_TYPES( TYPE_NEW_REASON, TYPE_NEW_FLYING ),
+        .catchRate = 0,
+        .expYield = 777,
         .evYield_HP = 0,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
@@ -118647,40 +118647,40 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("MISSINGNO."),
-        .cryId = CRY_NONE, // CRY_NONE,
+        .abilities = { ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS },
+        .bodyColor = FRANCHISE_ORIGIN_TOUHOU,
+        .speciesName = _("Reimu"),
+        .cryId = CRY_TH_REIMU_LINE,
         .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Unknown"),
-        .height = 0,
-        .weight = 0,
+        .categoryName = _("Touhou"),
+        .height = 4,
+        .weight = 120,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
-            "\n"
-            ""),
+            "A special fragment of dream that\n"
+            "is given by a certain person. This Reimu\n"
+            "is a tribute for the author of Touhoumon\n"
+            "Crystal Paradise: JoururiChan."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fragmon1780,
+        .frontPic = gMonFrontPic_ThReimu8Bit,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SHAKE,
         .enemyMonElevation = 0,
-        .backPic = gMonBackPic_Fragmon1780,
+        .backPic = gMonBackPic_ThReimu8Bit,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Fragmon1780,
-        .shinyPalette = gMonShinyPalette_Fragmon1780,
-        .iconSprite = gMonIcon_Fragmon1780,
-        .iconPalIndex = 3,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_ThReimu8Bit,
+        .shinyPalette = gMonShinyPalette_ThReimu8Bit,
+        .iconSprite = gMonIcon_ThReimu8Bit,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
-        FOOTPRINT(Fragmon1780)
+        SHADOW(2, 11, SHADOW_SIZE_M)
+        FOOTPRINT(ThReimu8Bit)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -118700,9 +118700,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sFragmon1780LevelUpLearnset,
-        .teachableLearnset = sFragmon1780TeachableLearnset,
-        .eggMoveLearnset = sFragmon1780EggMoveLearnset,
+        .levelUpLearnset = sThReimu8BitLevelUpLearnset,
+        .teachableLearnset = sThReimu8BitTeachableLearnset,
+        .eggMoveLearnset = sThReimu8BitEggMoveLearnset,
 
 //        .formSpeciesIdTable = 
 //        .formChangeTable = 
@@ -118710,17 +118710,17 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     },
 
-    [SPECIES_FRAGMON_1781] =
+    [SPECIES_TH_MARISA_8BIT] =
     {
-        .baseHP        = 0,
-        .baseAttack    = 0,
-        .baseDefense   = 0,
-        .baseSpeed     = 0,
-        .baseSpAttack  = 0,
-        .baseSpDefense = 0,
-        .types = MON_TYPES( TYPE_NEW_MYSTERY, TYPE_NEW_MYSTERY ),
-        .catchRate = 100,
-        .expYield = 100,
+        .baseHP        = 80,
+        .baseAttack    = 90,
+        .baseDefense   = 60,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 140,
+        .baseSpDefense = 100,
+        .types = MON_TYPES( TYPE_NEW_FIRE, TYPE_NEW_REASON ),
+        .catchRate = 0,
+        .expYield = 777,
         .evYield_HP = 0,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
@@ -118732,40 +118732,40 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("MISSINGNO."),
-        .cryId = CRY_NONE, // CRY_NONE,
+        .abilities = { ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS },
+        .bodyColor = FRANCHISE_ORIGIN_TOUHOU,
+        .speciesName = _("Marisa"),
+        .cryId = CRY_TH_MARISA_LINE,
         .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Unknown"),
-        .height = 0,
-        .weight = 0,
+        .categoryName = _("Touhou"),
+        .height = 4,
+        .weight = 120,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
-            "\n"
-            ""),
+            "A special fragment of dream that\n"
+            "is given by a certain person. This Marisa\n"
+            "is a tribute for the author of Touhoumon\n"
+            "Ordinary Reux: Darkslayer415."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fragmon1781,
+        .frontPic = gMonFrontPic_ThMarisa8Bit,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 0,
-        .backPic = gMonBackPic_Fragmon1781,
+        .backPic = gMonBackPic_ThMarisa8Bit,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Fragmon1781,
-        .shinyPalette = gMonShinyPalette_Fragmon1781,
-        .iconSprite = gMonIcon_Fragmon1781,
-        .iconPalIndex = 3,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_ThMarisa8Bit,
+        .shinyPalette = gMonShinyPalette_ThMarisa8Bit,
+        .iconSprite = gMonIcon_ThMarisa8Bit,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
-        FOOTPRINT(Fragmon1781)
+        SHADOW(9, 12, SHADOW_SIZE_L)
+        FOOTPRINT(ThMarisa8Bit)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -118785,9 +118785,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sFragmon1781LevelUpLearnset,
-        .teachableLearnset = sFragmon1781TeachableLearnset,
-        .eggMoveLearnset = sFragmon1781EggMoveLearnset,
+        .levelUpLearnset = sThMarisa8BitLevelUpLearnset,
+        .teachableLearnset = sThMarisa8BitTeachableLearnset,
+        .eggMoveLearnset = sThMarisa8BitEggMoveLearnset,
 
 //        .formSpeciesIdTable = 
 //        .formChangeTable = 
@@ -118795,17 +118795,17 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     },
 
-    [SPECIES_FRAGMON_1782] =
+    [SPECIES_TH_SAKUYA_8BIT] =
     {
-        .baseHP        = 0,
-        .baseAttack    = 0,
-        .baseDefense   = 0,
-        .baseSpeed     = 0,
-        .baseSpAttack  = 0,
-        .baseSpDefense = 0,
-        .types = MON_TYPES( TYPE_NEW_MYSTERY, TYPE_NEW_MYSTERY ),
-        .catchRate = 100,
-        .expYield = 100,
+        .baseHP        = 80,
+        .baseAttack    = 120,
+        .baseDefense   = 110,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 100,
+        .types = MON_TYPES( TYPE_NEW_STEEL, TYPE_NEW_ICE ),
+        .catchRate = 0,
+        .expYield = 777,
         .evYield_HP = 0,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
@@ -118817,40 +118817,40 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("MISSINGNO."),
-        .cryId = CRY_NONE, // CRY_NONE,
+        .abilities = { ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS },
+        .bodyColor = FRANCHISE_ORIGIN_TOUHOU,
+        .speciesName = _("Sakuya"),
+        .cryId = CRY_TH_SAKUYA_LINE,
         .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Unknown"),
-        .height = 0,
-        .weight = 0,
+        .categoryName = _("Touhou"),
+        .height = 4,
+        .weight = 120,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
+            "A special fragment of dream that\n"
+            "is given by a certain person.\n"
             "\n"
             ""),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fragmon1782,
+        .frontPic = gMonFrontPic_ThSakuya8Bit,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_TIP_MOVE_FORWARD,
         .enemyMonElevation = 0,
-        .backPic = gMonBackPic_Fragmon1782,
+        .backPic = gMonBackPic_ThSakuya8Bit,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Fragmon1782,
-        .shinyPalette = gMonShinyPalette_Fragmon1782,
-        .iconSprite = gMonIcon_Fragmon1782,
-        .iconPalIndex = 3,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_ThSakuya8Bit,
+        .shinyPalette = gMonShinyPalette_ThSakuya8Bit,
+        .iconSprite = gMonIcon_ThSakuya8Bit,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
-        FOOTPRINT(Fragmon1782)
+        SHADOW(0, 11, SHADOW_SIZE_M)
+        FOOTPRINT(ThSakuya8Bit)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -118870,9 +118870,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sFragmon1782LevelUpLearnset,
-        .teachableLearnset = sFragmon1782TeachableLearnset,
-        .eggMoveLearnset = sFragmon1782EggMoveLearnset,
+        .levelUpLearnset = sThSakuya8BitLevelUpLearnset,
+        .teachableLearnset = sThSakuya8BitTeachableLearnset,
+        .eggMoveLearnset = sThSakuya8BitEggMoveLearnset,
 
 //        .formSpeciesIdTable = 
 //        .formChangeTable = 
@@ -118880,17 +118880,17 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     },
 
-    [SPECIES_FRAGMON_1783] =
+    [SPECIES_TH_YOUMU_8BIT] =
     {
-        .baseHP        = 0,
-        .baseAttack    = 0,
-        .baseDefense   = 0,
-        .baseSpeed     = 0,
-        .baseSpAttack  = 0,
-        .baseSpDefense = 0,
-        .types = MON_TYPES( TYPE_NEW_MYSTERY, TYPE_NEW_MYSTERY ),
-        .catchRate = 100,
-        .expYield = 100,
+        .baseHP        = 70,
+        .baseAttack    = 140,
+        .baseDefense   = 80,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 80,
+        .types = MON_TYPES( TYPE_NEW_STEEL, TYPE_NEW_NETHER ),
+        .catchRate = 0,
+        .expYield = 777,
         .evYield_HP = 0,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
@@ -118902,40 +118902,40 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("MISSINGNO."),
-        .cryId = CRY_NONE, // CRY_NONE,
+        .abilities = { ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS },
+        .bodyColor = FRANCHISE_ORIGIN_TOUHOU,
+        .speciesName = _("Youmu"),
+        .cryId = CRY_TH_YOUMU_LINE,
         .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Unknown"),
-        .height = 0,
-        .weight = 0,
+        .categoryName = _("Touhou"),
+        .height = 4,
+        .weight = 120,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
+            "A special fragment of dream that\n"
+            "is given by a certain person.\n"
             "\n"
             ""),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fragmon1783,
+        .frontPic = gMonFrontPic_ThYoumu8Bit,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
-        .backPic = gMonBackPic_Fragmon1783,
+        .frontAnimId = ANIM_FRONT_FLIP,
+        .enemyMonElevation = 3,
+        .backPic = gMonBackPic_ThYoumu8Bit,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Fragmon1783,
-        .shinyPalette = gMonShinyPalette_Fragmon1783,
-        .iconSprite = gMonIcon_Fragmon1783,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_ThYoumu8Bit,
+        .shinyPalette = gMonShinyPalette_ThYoumu8Bit,
+        .iconSprite = gMonIcon_ThYoumu8Bit,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
-        FOOTPRINT(Fragmon1783)
+        SHADOW(0, 7, SHADOW_SIZE_L)
+        FOOTPRINT(ThYoumu8Bit)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -118955,9 +118955,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sFragmon1783LevelUpLearnset,
-        .teachableLearnset = sFragmon1783TeachableLearnset,
-        .eggMoveLearnset = sFragmon1783EggMoveLearnset,
+        .levelUpLearnset = sThYoumu8BitLevelUpLearnset,
+        .teachableLearnset = sThYoumu8BitTeachableLearnset,
+        .eggMoveLearnset = sThYoumu8BitEggMoveLearnset,
 
 //        .formSpeciesIdTable = 
 //        .formChangeTable = 
@@ -118965,17 +118965,17 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     },
 
-    [SPECIES_FRAGMON_1784] =
+    [SPECIES_TH_SANAE_8BIT] =
     {
-        .baseHP        = 0,
-        .baseAttack    = 0,
-        .baseDefense   = 0,
-        .baseSpeed     = 0,
-        .baseSpAttack  = 0,
-        .baseSpDefense = 0,
-        .types = MON_TYPES( TYPE_NEW_MYSTERY, TYPE_NEW_MYSTERY ),
-        .catchRate = 100,
-        .expYield = 100,
+        .baseHP        = 90,
+        .baseAttack    = 70,
+        .baseDefense   = 120,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 130,
+        .types = MON_TYPES( TYPE_NEW_WATER, TYPE_NEW_NATURE ),
+        .catchRate = 0,
+        .expYield = 777,
         .evYield_HP = 0,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
@@ -118987,40 +118987,40 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("MISSINGNO."),
-        .cryId = CRY_NONE, // CRY_NONE,
+        .abilities = { ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS },
+        .bodyColor = FRANCHISE_ORIGIN_TOUHOU,
+        .speciesName = _("Sanae"),
+        .cryId = CRY_TH_SANAE_LINE,
         .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Unknown"),
-        .height = 0,
-        .weight = 0,
+        .categoryName = _("Touhou"),
+        .height = 4,
+        .weight = 120,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
+            "A special fragment of dream that\n"
+            "is given by a certain person.\n"
             "\n"
             ""),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fragmon1784,
+        .frontPic = gMonFrontPic_ThSanae8Bit,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
         .enemyMonElevation = 0,
-        .backPic = gMonBackPic_Fragmon1784,
+        .backPic = gMonBackPic_ThSanae8Bit,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Fragmon1784,
-        .shinyPalette = gMonShinyPalette_Fragmon1784,
-        .iconSprite = gMonIcon_Fragmon1784,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_ThSanae8Bit,
+        .shinyPalette = gMonShinyPalette_ThSanae8Bit,
+        .iconSprite = gMonIcon_ThSanae8Bit,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
-        FOOTPRINT(Fragmon1784)
+        SHADOW(2, 10, SHADOW_SIZE_M)
+        FOOTPRINT(ThSanae8Bit)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -119040,9 +119040,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sFragmon1784LevelUpLearnset,
-        .teachableLearnset = sFragmon1784TeachableLearnset,
-        .eggMoveLearnset = sFragmon1784EggMoveLearnset,
+        .levelUpLearnset = sThSanae8BitLevelUpLearnset,
+        .teachableLearnset = sThSanae8BitTeachableLearnset,
+        .eggMoveLearnset = sThSanae8BitEggMoveLearnset,
 
 //        .formSpeciesIdTable = 
 //        .formChangeTable = 
@@ -123088,18 +123088,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SHAKE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcDialgaTh,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_EtcDialgaTh,
         .shinyPalette = gMonShinyPalette_EtcDialgaTh,
         .iconSprite = gMonIcon_EtcDialgaTh,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 13, SHADOW_SIZE_M)
         FOOTPRINT(EtcDialgaTh)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -123175,18 +123175,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_STRETCH,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcPalkiaTh,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_EtcPalkiaTh,
         .shinyPalette = gMonShinyPalette_EtcPalkiaTh,
         .iconSprite = gMonIcon_EtcPalkiaTh,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_M)
         FOOTPRINT(EtcPalkiaTh)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -123262,18 +123262,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_STUTTER_TWICE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcGiratinaTh,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         .palette = gMonPalette_EtcGiratinaTh,
         .shinyPalette = gMonShinyPalette_EtcGiratinaTh,
         .iconSprite = gMonIcon_EtcGiratinaTh,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 8, SHADOW_SIZE_M)
         FOOTPRINT(EtcGiratinaTh)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -123349,18 +123349,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcArceusTh,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW,
         .palette = gMonPalette_EtcArceusTh,
         .shinyPalette = gMonShinyPalette_EtcArceusTh,
         .iconSprite = gMonIcon_EtcArceusTh,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(EtcArceusTh)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -124095,7 +124095,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_LEVITATE, ABILITY_DRIZZLE, ABILITY_MULTISCALE },
+        .abilities = { ABILITY_LEVITATE, ABILITY_MULTISCALE, ABILITY_PRIMORDIAL_SEA },
         .bodyColor = FRANCHISE_ORIGIN_MOEMON,
         .speciesName = _("Lugia"),
         .cryId = CRY_LUGIA,
@@ -124116,18 +124116,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_MoeLugiaShadow,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_MoeLugiaShadow,
         .shinyPalette = gMonShinyPalette_MoeLugiaShadow,
         .iconSprite = gMonIcon_MoeLugiaShadow,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(MoeLugiaShadow)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -124458,18 +124458,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_VIBRATE_TO_CORNERS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThReimuCtc,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_ThReimuCtc,
         .shinyPalette = gMonShinyPalette_ThReimuCtc,
         .iconSprite = gMonIcon_ThReimuCtc,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-1, 13, SHADOW_SIZE_L)
         FOOTPRINT(ThReimuCtc)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -124543,18 +124543,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_RISING_WOBBLE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ShVivitAngel,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW,
         .palette = gMonPalette_ShVivitAngel,
         .shinyPalette = gMonShinyPalette_ShVivitAngel,
         .iconSprite = gMonIcon_ShVivitAngel,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 17, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ShVivitAngel)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -134494,18 +134494,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_LUNGE_GROW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMarisaRemindRNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
+        .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_ThMarisaRemindRNormal,
         .shinyPalette = gMonShinyPalette_ThMarisaRemindRNormal,
         .iconSprite = gMonIcon_ThMarisaRemindRNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThMarisaRemindRNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -134579,18 +134579,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThReimuRemindRNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
+        .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_ThReimuRemindRNormal,
         .shinyPalette = gMonShinyPalette_ThReimuRemindRNormal,
         .iconSprite = gMonIcon_ThReimuRemindRNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(5, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThReimuRemindRNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -135896,18 +135896,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .isGigantamax = TRUE,
     },
 
-    [SPECIES_FRAGMON_2028] =
+    [SPECIES_ETC_VICTINI] =
     {
-        .baseHP        = 0,
-        .baseAttack    = 0,
-        .baseDefense   = 0,
-        .baseSpeed     = 0,
-        .baseSpAttack  = 0,
-        .baseSpDefense = 0,
-        .types = MON_TYPES( TYPE_NEW_MYSTERY, TYPE_NEW_MYSTERY ),
-        .catchRate = 100,
-        .expYield = 100,
-        .evYield_HP = 0,
+        .baseHP        = 100,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 100,
+        .types = MON_TYPES( TYPE_NEW_FIRE, TYPE_NEW_REASON ),
+        .catchRate = 0,
+        .expYield = 777,
+        .evYield_HP = 3,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
         .evYield_Speed = 0,
@@ -135916,42 +135916,42 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 0,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("MISSINGNO."),
-        .cryId = CRY_NONE, // CRY_NONE,
+        .abilities = { ABILITY_BLAZING_STAR, ABILITY_SPARKLING_STAR, ABILITY_BRILIANT_STAR },
+        .bodyColor = FRANCHISE_ORIGIN_POKEMON,
+        .speciesName = _("Victini"),
+        .cryId = CRY_VICTINI,
         .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Unknown"),
-        .height = 0,
-        .weight = 0,
+        .categoryName = _("Pokémon"),
+        .height = 1,
+        .weight = 120,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
+            "A special fragment of dream that\n"
+            "is given by a certain person.\n"
             "\n"
             ""),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fragmon2028,
+        .frontPic = gMonFrontPic_EtcVictini,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 10,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS,
         .enemyMonElevation = 0,
-        .backPic = gMonBackPic_Fragmon2028,
+        .backPic = gMonBackPic_EtcVictini,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Fragmon2028,
-        .shinyPalette = gMonShinyPalette_Fragmon2028,
-        .iconSprite = gMonIcon_Fragmon2028,
-        .iconPalIndex = 3,
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
+        .palette = gMonPalette_EtcVictini,
+        .shinyPalette = gMonShinyPalette_EtcVictini,
+        .iconSprite = gMonIcon_EtcVictini,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
-        FOOTPRINT(Fragmon2028)
+        SHADOW(1, 4, SHADOW_SIZE_S)
+        FOOTPRINT(EtcVictini)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -135971,28 +135971,28 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sFragmon2028LevelUpLearnset,
-        .teachableLearnset = sFragmon2028TeachableLearnset,
-        .eggMoveLearnset = sFragmon2028EggMoveLearnset,
+        .levelUpLearnset = sEtcVictiniLevelUpLearnset,
+        .teachableLearnset = sEtcVictiniTeachableLearnset,
+        .eggMoveLearnset = sEtcVictiniEggMoveLearnset,
 
-//        .formSpeciesIdTable = 
-//        .formChangeTable = 
+        .formSpeciesIdTable = sEtcVictiniFormSpeciesIdTable,
+        .formChangeTable = sEtcVictiniFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
 
-    [SPECIES_FRAGMON_2029] =
+    [SPECIES_ETC_MOE_VICTINI] =
     {
-        .baseHP        = 0,
-        .baseAttack    = 0,
-        .baseDefense   = 0,
-        .baseSpeed     = 0,
-        .baseSpAttack  = 0,
-        .baseSpDefense = 0,
-        .types = MON_TYPES( TYPE_NEW_MYSTERY, TYPE_NEW_MYSTERY ),
-        .catchRate = 100,
-        .expYield = 100,
-        .evYield_HP = 0,
+        .baseHP        = 100,
+        .baseAttack    = 120,
+        .baseDefense   = 100,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 80,
+        .types = MON_TYPES( TYPE_NEW_ELECTRIC, TYPE_NEW_REASON ),
+        .catchRate = 0,
+        .expYield = 777,
+        .evYield_HP = 3,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
         .evYield_Speed = 0,
@@ -136001,42 +136001,42 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 0,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("MISSINGNO."),
-        .cryId = CRY_NONE, // CRY_NONE,
+        .abilities = { ABILITY_BLAZING_STAR, ABILITY_SPARKLING_STAR, ABILITY_BRILIANT_STAR },
+        .bodyColor = FRANCHISE_ORIGIN_MOEMON,
+        .speciesName = _("Victini"),
+        .cryId = CRY_VICTINI,
         .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Unknown"),
-        .height = 0,
-        .weight = 0,
+        .categoryName = _("Pokémon"),
+        .height = 2,
+        .weight = 120,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
+            "A special fragment of dream that\n"
+            "is given by a certain person.\n"
             "\n"
             ""),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fragmon2029,
+        .frontPic = gMonFrontPic_EtcMoeVictini,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .enemyMonElevation = 0,
-        .backPic = gMonBackPic_Fragmon2029,
+        .backPic = gMonBackPic_EtcMoeVictini,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Fragmon2029,
-        .shinyPalette = gMonShinyPalette_Fragmon2029,
-        .iconSprite = gMonIcon_Fragmon2029,
-        .iconPalIndex = 3,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_EtcMoeVictini,
+        .shinyPalette = gMonShinyPalette_EtcMoeVictini,
+        .iconSprite = gMonIcon_EtcMoeVictini,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
-        FOOTPRINT(Fragmon2029)
+        SHADOW(-4, 10, SHADOW_SIZE_L)
+        FOOTPRINT(EtcMoeVictini)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -136056,12 +136056,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sFragmon2029LevelUpLearnset,
-        .teachableLearnset = sFragmon2029TeachableLearnset,
-        .eggMoveLearnset = sFragmon2029EggMoveLearnset,
+        .levelUpLearnset = sEtcMoeVictiniLevelUpLearnset,
+        .teachableLearnset = sEtcMoeVictiniTeachableLearnset,
+        .eggMoveLearnset = sEtcMoeVictiniEggMoveLearnset,
 
-//        .formSpeciesIdTable = 
-//        .formChangeTable = 
+        .formSpeciesIdTable = sEtcVictiniFormSpeciesIdTable,
+        .formChangeTable = sEtcMoeVictiniFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -136088,7 +136088,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_HUNGER_SWITCH, ABILITY_HUNGER_SWITCH, ABILITY_HUNGER_SWITCH },
+        .abilities = { ABILITY_SIMPLE, ABILITY_SIMPLE, ABILITY_SIMPLE },
         .bodyColor = FRANCHISE_ORIGIN_OTHER,
         .speciesName = _("Sunny"),
         .cryId = CRY_NONE, // CRY_ETC_SUNNY,
@@ -136160,6 +136160,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 70,
         .baseSpDefense = 70,
         .types = MON_TYPES( TYPE_NEW_HEART, TYPE_NEW_HEART ),
+        .forceTeraType = TYPE_STELLAR,
         .catchRate = 0,
         .expYield = 777,
         .evYield_HP = 0,
@@ -136408,12 +136409,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     [SPECIES_ETC_SAILOR_MOON] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 60,
+        .baseHP        = 90,
+        .baseAttack    = 70,
         .baseDefense   = 110,
         .baseSpeed     = 105,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 140,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 130,
         .types = MON_TYPES( TYPE_NEW_EARTH, TYPE_NEW_DREAM ),
         .catchRate = 0,
         .expYield = 777,
@@ -136428,7 +136429,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_SERENE_GRACE, ABILITY_CUTE_CHARM, ABILITY_PURE_POWER },
+        .abilities = { ABILITY_SERENE_GRACE, ABILITY_CUTE_CHARM, ABILITY_MOON_CRYSTAL },
         .bodyColor = FRANCHISE_ORIGIN_OTHER,
         .speciesName = _("Sailor Moon"),
         .cryId = CRY_NONE, // CRY_ETC_SAILOR_MOON,
@@ -136499,7 +136500,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 105,
         .baseSpAttack  = 90,
         .baseSpDefense = 85,
-        .types = MON_TYPES( TYPE_NEW_DREAM, TYPE_NEW_DARK ),
+        .types = MON_TYPES( TYPE_NEW_DARK, TYPE_NEW_DREAM ),
         .catchRate = 0,
         .expYield = 777,
         .evYield_HP = 0,
@@ -136513,7 +136514,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_HUNGER_SWITCH, ABILITY_HUNGER_SWITCH, ABILITY_HUNGER_SWITCH },
+        .abilities = { ABILITY_MOXIE, ABILITY_MOXIE, ABILITY_MOXIE },
         .bodyColor = FRANCHISE_ORIGIN_OTHER,
         .speciesName = _("Omori"),
         .cryId = CRY_NONE, // CRY_ETC_OMORI,
@@ -136879,7 +136880,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .backPic = gMonBackPic_EtcBlackRockShooter,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_EtcBlackRockShooter,
         .shinyPalette = gMonShinyPalette_EtcBlackRockShooter,
         .iconSprite = gMonIcon_EtcBlackRockShooter,
@@ -137278,7 +137279,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_WHITE_SMOKE, ABILITY_WHITE_SMOKE, ABILITY_SKILLED_MAGICIAN },
+        .abilities = { ABILITY_ADVENT, ABILITY_ADVENT, ABILITY_SKILLED_MAGICIAN },
         .bodyColor = FRANCHISE_ORIGIN_OTHER,
         .speciesName = _("Nobeta"),
         .cryId = CRY_NONE, // CRY_ETC_NOBETA,
@@ -137341,62 +137342,62 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     },
 
-    [SPECIES_TH_MARISA_8BIT] =
+    [SPECIES_ETC_BASIL] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 80,
-        .baseDefense   = 60,
-        .baseSpeed     = 130,
-        .baseSpAttack  = 130,
-        .baseSpDefense = 100,
-        .types = MON_TYPES( TYPE_NEW_FIRE, TYPE_NEW_REASON ),
+        .baseHP        = 90,
+        .baseAttack    = 70,
+        .baseDefense   = 100,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 120,
+        .types = MON_TYPES( TYPE_NEW_NATURE, TYPE_NEW_HEART ),
         .catchRate = 0,
         .expYield = 777,
         .evYield_HP = 0,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
-        .evYield_Speed = 3,
+        .evYield_Speed = 0,
         .evYield_SpAttack = 0,
-        .evYield_SpDefense = 0,
+        .evYield_SpDefense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 0,
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS, ABILITY_NEUTRALIZING_GAS },
-        .bodyColor = FRANCHISE_ORIGIN_TOUHOU,
-        .speciesName = _("Marisa"),
-        .cryId = CRY_TH_MARISA_LINE,
+        .abilities = { ABILITY_AROMA_VEIL, ABILITY_SWEET_VEIL, ABILITY_GRASSY_SURGE },
+        .bodyColor = FRANCHISE_ORIGIN_OTHER,
+        .speciesName = _("Basil"),
+        .cryId = CRY_NONE, // CRY_ETC_BASIL,
         .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Touhou"),
-        .height = 3,
+        .categoryName = _("Omori"),
+        .height = 2,
         .weight = 120,
         .description = COMPOUND_STRING(
             "A special fragment of dream that\n"
             "is given by a certain person. This version\n"
-            "of Marisa is a tribute for the author\n"
-            "of Touhoumon Ordinary Redux: DarkSlayer415."),
+            "of Omori is based on a game:\n"
+            "Omori."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ThMarisa8Bit,
+        .frontPic = gMonFrontPic_EtcBasil,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_H_PIVOT,
-        .enemyMonElevation = 4,
-        .backPic = gMonBackPic_ThMarisa8Bit,
+        .frontAnimId = ANIM_H_VIBRATE,
+        .enemyMonElevation = 0,
+        .backPic = gMonBackPic_EtcBasil,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_ThMarisa8Bit,
-        .shinyPalette = gMonShinyPalette_ThMarisa8Bit,
-        .iconSprite = gMonIcon_ThMarisa8Bit,
-        .iconPalIndex = 4,
+        .backAnimId = BACK_ANIM_H_SHAKE,
+        .palette = gMonPalette_EtcBasil,
+        .shinyPalette = gMonShinyPalette_EtcBasil,
+        .iconSprite = gMonIcon_EtcBasil,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(6, 16, SHADOW_SIZE_L)
-        FOOTPRINT(ThMarisa8Bit)
+        SHADOW(-1, 7, SHADOW_SIZE_S)
+        FOOTPRINT(EtcBasil)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -137416,9 +137417,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sThMarisa8BitLevelUpLearnset,
-        .teachableLearnset = sThMarisa8BitTeachableLearnset,
-        .eggMoveLearnset = sThMarisa8BitEggMoveLearnset,
+        .levelUpLearnset = sEtcBasilLevelUpLearnset,
+        .teachableLearnset = sEtcBasilTeachableLearnset,
+        .eggMoveLearnset = sEtcBasilEggMoveLearnset,
 
 //        .formSpeciesIdTable = 
 //        .formChangeTable = 

@@ -29206,27 +29206,27 @@ static const struct LevelUpMove sFragmon1779LevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFragmon1780LevelUpLearnset[] = {
+static const struct LevelUpMove sThReimu8BitLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFragmon1781LevelUpLearnset[] = {
+static const struct LevelUpMove sThMarisa8BitLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFragmon1782LevelUpLearnset[] = {
+static const struct LevelUpMove sThSakuya8BitLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFragmon1783LevelUpLearnset[] = {
+static const struct LevelUpMove sThYoumu8BitLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFragmon1784LevelUpLearnset[] = {
+static const struct LevelUpMove sThSanae8BitLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };
@@ -30221,12 +30221,12 @@ static const struct LevelUpMove sThSuikaMpRTechLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFragmon2028LevelUpLearnset[] = {
+static const struct LevelUpMove sEtcVictiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFragmon2029LevelUpLearnset[] = {
+static const struct LevelUpMove sEtcMoeVictiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };
@@ -30306,7 +30306,7 @@ static const struct LevelUpMove sEtcNobetaLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sThMarisa8BitLevelUpLearnset[] = {
+static const struct LevelUpMove sEtcBasilLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };

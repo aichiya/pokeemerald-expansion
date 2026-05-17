@@ -946,6 +946,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_FAINTINONE]                           = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX} will faint in one turn!"),
     [STRINGID_TRANSFORMINTOMUGEN]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is turning into Infinity Silhouette!"),
     [STRINGID_TRANSFORMINTOMISSINGPOWER]            = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is using Missing Power!"),
+    [STRINGID_BRILIANTSTARENTERS]                   = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} is radiating a briliant aura!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1059,6 +1060,7 @@ const u16 gSwitchInAbilityStringIds[] =
     [B_MSG_SWITCHIN_NEUTRALIZING_GAS] = STRINGID_NEUTRALIZINGGASENTERS,
     [B_MSG_SWITCHIN_FANTASY_BREAKER] = STRINGID_FANTASYBREAKERENTERS,
     [B_MSG_SWITCHIN_TIME_JACKER] = STRINGID_TIMEJACKERENTERS,
+    [B_MSG_SWITCHIN_BRILIANT_STAR] = STRINGID_BRILIANTSTARENTERS,
 };
 
 const u16 gNoEscapeStringIds[] =

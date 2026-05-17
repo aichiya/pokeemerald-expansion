@@ -9284,10 +9284,22 @@ static const struct FormChange sEtcMikuRacingFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 
+static const struct FormChange sEtcVictiniFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_MOE_VICTINI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
+static const struct FormChange sEtcMoeVictiniFormChangeTable[] =
+{
+    {FORM_CHANGE_ITEM_USE, SPECIES_ETC_VICTINI,   ITEM_REVEAL_GLASS},
+    {FORM_CHANGE_TERMINATOR},
+};
+
 static const struct FormChange sEtcSunnyFormChangeTable[] =
 {
-        {FORM_CHANGE_BATTLE_TURN_END,   SPECIES_ETC_OMORI,     ABILITY_HUNGER_SWITCH},
-        {FORM_CHANGE_BATTLE_TURN_END,   SPECIES_ETC_SUNNY, ABILITY_HUNGER_SWITCH},
+        {FORM_CHANGE_BATTLE_TURN_END,   SPECIES_ETC_OMORI, ABILITY_SIMPLE},
+        {FORM_CHANGE_BATTLE_TURN_END,   SPECIES_ETC_SUNNY, ABILITY_MOXIE},
         {FORM_CHANGE_BATTLE_SWITCH_OUT, SPECIES_ETC_SUNNY},
         {FORM_CHANGE_FAINT,             SPECIES_ETC_SUNNY},
         {FORM_CHANGE_END_BATTLE,        SPECIES_ETC_SUNNY},

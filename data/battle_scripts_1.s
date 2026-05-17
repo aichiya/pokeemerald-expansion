@@ -3153,6 +3153,7 @@ BattleScript_LearnMoveReturn::
 BattleScript_WeatherAbilityActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
+BattleScript_WeatherAbilityActivatesNoPopup::
 	jumpifability BS_SCRIPTING, ABILITY_SAND_SPIT, BattleScript_SandSpitActivates
 	printfromtable gAbilityWeatherChangeStringId
 BattleScript_WeatherAbilityActivatesContinue:
@@ -4791,6 +4792,7 @@ BattleScript_ActivateTerrainAbility:
 BattleScript_ElectricSurgeActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
+BattleScript_ElectricSurgeActivatesNoPopup::
 	printstring STRINGID_TERRAINBECOMESELECTRIC
 	waitmessage B_WAIT_TIME_LONG
 	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
@@ -4800,6 +4802,7 @@ BattleScript_ElectricSurgeActivates::
 BattleScript_MistySurgeActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
+BattleScript_MistySurgeActivatesNoPopup::
 	printstring STRINGID_TERRAINBECOMESMISTY
 	waitmessage B_WAIT_TIME_LONG
 	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
@@ -4809,6 +4812,7 @@ BattleScript_MistySurgeActivates::
 BattleScript_GrassySurgeActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
+BattleScript_GrassySurgeActivatesNoPopup::
 	printstring STRINGID_TERRAINBECOMESGRASSY
 	waitmessage B_WAIT_TIME_LONG
 	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
@@ -4818,6 +4822,7 @@ BattleScript_GrassySurgeActivates::
 BattleScript_PsychicSurgeActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
+BattleScript_PsychicSurgeActivatesNoPopup::
 	printstring STRINGID_TERRAINBECOMESPSYCHIC
 	waitmessage B_WAIT_TIME_LONG
 	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
@@ -4827,6 +4832,7 @@ BattleScript_PsychicSurgeActivates::
 BattleScript_UBWActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
+BattleScript_UBWActivatesNoPopup::
 	printstring STRINGID_UNLIMITEDKRISWORKS
 	waitmessage B_WAIT_TIME_LONG
 	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
@@ -4836,6 +4842,7 @@ BattleScript_UBWActivates::
 BattleScript_DarknessSurgeActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
+BattleScript_DarknessSurgeActivatesNoPopup::
 	printstring STRINGID_TERRAINBECOMESDARKNESS
 	waitmessage B_WAIT_TIME_LONG
 	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG
@@ -4845,6 +4852,7 @@ BattleScript_DarknessSurgeActivates::
 BattleScript_MiasmaSurgeActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
+BattleScript_MiasmaSurgeActivatesNoPopup::
 	printstring STRINGID_MIASMACOVERINGTHEFIELD
 	waitmessage B_WAIT_TIME_LONG
 	playanimation BS_SCRIPTING, B_ANIM_RESTORE_BG

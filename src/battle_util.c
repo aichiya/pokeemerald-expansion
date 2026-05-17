@@ -3204,6 +3204,41 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
+        case ABILITY_BLAZING_STAR:
+            if (shouldAbilityTrigger)
+            {
+                if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN, gLastUsedAbility))
+                    BattleScriptCall(BattleScript_WeatherAbilityActivatesNoPopup);
+                else if (GetWeather() & B_WEATHER_PRIMAL_ANY)
+                    BattleScriptCall(BattleScript_BlockedByPrimalWeather);
+
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_TERAVOLT;
+                BattleScriptCall(BattleScript_SwitchInAbilityMsg);
+                effect++;
+            }
+            break;
+        case ABILITY_SPARKLING_STAR:
+            if (shouldAbilityTrigger)
+            {
+                if (TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN))
+                    BattleScriptCall(BattleScript_ElectricSurgeActivatesNoPopup);
+
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_TURBOBLAZE;
+                BattleScriptCall(BattleScript_SwitchInAbilityMsg);
+                effect++;
+            }
+            break;
+        case ABILITY_BRILIANT_STAR:
+            if (shouldAbilityTrigger)
+            {
+                if (TryChangeBattleTerrain(battler, STATUS_FIELD_PSYCHIC_TERRAIN))
+                    BattleScriptCall(BattleScript_PsychicSurgeActivatesNoPopup);
+
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_BRILIANT_STAR;
+                BattleScriptCall(BattleScript_SwitchInAbilityMsg);
+                effect++;
+            }
+            break;
         case ABILITY_SLOW_START:
             if (shouldAbilityTrigger)
             {
@@ -5932,6 +5967,8 @@ bool32 IsMoldBreakerTypeAbility(enum BattlerId battler, enum Ability ability)
      || ability == ABILITY_TERAVOLT
      || ability == ABILITY_TURBOBLAZE
      || ability == ABILITY_FANTASY_BREAKER
+     || ability == ABILITY_BLAZING_STAR
+     || ability == ABILITY_SPARKLING_STAR
      || (ability == ABILITY_MYCELIUM_MIGHT && IsBattleMoveStatus(gCurrentMove)))
     {
         RecordAbilityBattle(battler, ability);
@@ -8116,6 +8153,26 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
                 atkStage = gBattleMons[battlerDef].statStages[STAT_SPATK];
             }
         }
+
+        if (ctx->abilities[ctx->battlerAtk] == ABILITY_MOON_CRYSTAL)
+        {
+            if (IsBattleMovePhysical(move))
+            {
+                atkStat = gBattleMons[battlerDef].defense;
+                if (ctx->fieldStatuses & STATUS_FIELD_WONDER_ROOM)
+                    atkStage = gBattleMons[battlerAtk].statStages[STAT_SPDEF];
+                else
+                    atkStage = gBattleMons[battlerAtk].statStages[STAT_DEF];
+            }
+            else
+            {
+                atkStat = gBattleMons[battlerDef].spDefense;
+                if (ctx->fieldStatuses & STATUS_FIELD_WONDER_ROOM)
+                    atkStage = gBattleMons[battlerAtk].statStages[STAT_DEF];
+                else
+                    atkStage = gBattleMons[battlerAtk].statStages[STAT_SPDEF];
+            }
+        }
     }
     else if (moveEffect == EFFECT_MIND_HACK)
     {
@@ -8143,6 +8200,26 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
             {
                 atkStat = gBattleMons[battlerDef].attack;
                 atkStage = gBattleMons[battlerDef].statStages[STAT_ATK];
+            }
+        }
+
+        if (ctx->abilities[ctx->battlerAtk] == ABILITY_MOON_CRYSTAL)
+        {
+            if (IsBattleMovePhysical(move))
+            {
+                atkStat = gBattleMons[battlerDef].defense;
+                if (ctx->fieldStatuses & STATUS_FIELD_WONDER_ROOM)
+                    atkStage = gBattleMons[battlerAtk].statStages[STAT_SPDEF];
+                else
+                    atkStage = gBattleMons[battlerAtk].statStages[STAT_DEF];
+            }
+            else
+            {
+                atkStat = gBattleMons[battlerDef].spDefense;
+                if (ctx->fieldStatuses & STATUS_FIELD_WONDER_ROOM)
+                    atkStage = gBattleMons[battlerAtk].statStages[STAT_DEF];
+                else
+                    atkStage = gBattleMons[battlerAtk].statStages[STAT_SPDEF];
             }
         }
     }
@@ -9686,11 +9763,117 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
     if (GetMoveEffect(ctx->move) == EFFECT_DEFECTIVE_MIRACLE && (defType == TYPE_NEW_DARK || defType == TYPE_NEW_DIVINE))
         mod = UQ_4_12(2.0);
     if (ctx->abilities[ctx->battlerAtk] == ABILITY_PRIEST_HUNTER &&
-        (gBattleMons[ctx->battlerDef].species == SPECIES_CHARIZARD
-        || gBattleMons[ctx->battlerDef].species == SPECIES_VENUSAUR
-        || gBattleMons[ctx->battlerDef].species == SPECIES_BLASTOISE
-        || gBattleMons[ctx->battlerDef].species == SPECIES_MEW
-        || gBattleMons[ctx->battlerDef].species == SPECIES_CELEBI))
+        (gBattleMons[ctx->battlerDef].species == SPECIES_TH_REIMU_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_REIMU_ADVENT
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_REIMU_8BIT
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_REIMU_CTC
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_DUO_MC_R_REIMU_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_REIMU_REMIND_R_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_REIMU_L_UNKNOWN
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANAE_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANAE_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANAE_ATTACK
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANAE_TECH
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANAE_8BIT
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANAE_REMIND_R_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANAE_REMIND_R_ATTACK
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANAE_REMIND_R_TECH
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANAE_BROKEN_RITE
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_MIMORI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_MIMORI_YUUSHA
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_MIMORI_MANKAI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_SUMI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_SUMI_YUUSHA
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_SUMI_MANKAI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_HINATA_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_HINATA_MIKO
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_MITO_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_MITO_MIKO
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_AYA_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_AYA_MIKO
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_SHIZUKA_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_SHIZUKA_MIKO
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_MASUZU_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_MASUZU_MIKO
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_YOSHIKA_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_YOSHIKA_MIKO
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_HIME_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_HIME_MIKO
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_MISAKI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_YYYI_MISAKI_MIKO
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SHINGYOKU_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SHINGYOKU_ORB
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SHINGYOKU_PRIEST
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SHINGYOKU_PRIESTESS
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_YORIHIME_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_YORIHIME_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_YORIHIME_SPEED
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_TENSHI_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_TENSHI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_TENSHI_ATTACK
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_TENSHI_DEFENSE
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_FUTO_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_FUTO_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_MIZUCHI_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_MIZUCHI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SENDAI_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SENDAI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SENDAI_TECH
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_NEMUNO_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_NEMUNO_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANNYO_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SANNYO_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_MIKO_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_MIKO_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_YUKARI_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_YUKARI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_YUKARI_DEFENSE
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_YUKARI_TECH
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_YUKARI_ADVENT
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_OKINA_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_OKINA_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_KASEN_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_KASEN_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_KASEN_ARM
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_TOYOHIME_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_TOYOHIME_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_TOYOHIME_TECH
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_EIRIN_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_EIRIN_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_EIRIN_ATTACK
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_EIRIN_HELPER
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_EIRIN_ADVENT
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SAGUME_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_SAGUME_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_ICHIRIN_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_ICHIRIN_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_ICHIRIN_DEFENSE
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_ICHIRIN_TECH
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_BYAKUREN_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_BYAKUREN_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_BYAKUREN_DEFENSE
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_BYAKUREN_TECH
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_ZANMU_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_ZANMU_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_MIZUCHI_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_TH_MIZUCHI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_KANNA_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_KANNA_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_URAHA_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_URAHA_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_URAHA_EX
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MISUZU_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MISUZU_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MISUZU_EX
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_SASAMI_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_SASAMI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_SASAMI_EX
+        || gBattleMons[ctx->battlerDef].species == SPECIES_BGHS_BOTAN_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_BGHS_KOKOMI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_BGHS_KOKOMI_FLORA
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MAI_CHIBI
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MAI_NORMAL
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MAI_EX))
         mod = UQ_4_12(2.0);
     if (ctx->moveType == TYPE_NEW_MIASMA && defType == TYPE_NEW_STEEL && (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
@@ -12023,6 +12206,9 @@ u32 GetTotalAccuracy(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
         calc = (calc * 130) / 100; // 1.3 compound eyes boost
         break;
     case ABILITY_VICTORY_STAR:
+    case ABILITY_BLAZING_STAR:
+    case ABILITY_SPARKLING_STAR:
+    case ABILITY_BRILIANT_STAR:
         calc = (calc * 110) / 100; // 1.1 victory star boost
         break;
     case ABILITY_HUSTLE:
@@ -12068,6 +12254,9 @@ u32 GetTotalAccuracy(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
     switch (GetBattlerAbility(atkAlly))
     {
     case ABILITY_VICTORY_STAR:
+    case ABILITY_BLAZING_STAR:
+    case ABILITY_SPARKLING_STAR:
+    case ABILITY_BRILIANT_STAR:
         if (IsBattlerAlive(atkAlly))
             calc = (calc * 110) / 100; // 1.1 ally's victory star boost
         break;

@@ -58,7 +58,7 @@ enum AbilityEffect
     ABILITYEFFECT_UNNERVE,
     ABILITYEFFECT_ON_SWITCHIN,
     ABILITYEFFECT_SWITCH_IN_FORM_CHANGE,
-    ABILITYEFFECT_COMMANDER, // Commander / Hospitality / Costar
+    ABILITYEFFECT_DEPENDS_ON_ALLY, // Commander / Hospitality / Costar
     ABILITYEFFECT_ON_WEATHER,
     ABILITYEFFECT_ON_TERRAIN,
     ABILITYEFFECT_OPPORTUNIST,
@@ -159,6 +159,7 @@ void HandleAction_ThrowBall(void);
 u32 GetCurrentBattleWeather(void);
 bool32 EndOrContinueWeather(void);
 enum DamageCategory GetReflectDamageMoveDamageCategory(enum BattlerId battler, enum Move move);
+bool32 ShouldTeraShellDistortTypeMatchups(struct DamageContext *ctx);
 bool32 IsUnnerveBlocked(enum BattlerId battler, enum Item itemId);
 bool32 IsAffectedByFollowMe(enum BattlerId battlerAtk, enum BattleSide defSide, enum Move move);
 void HandleAction_UseMove(void);
@@ -290,6 +291,7 @@ void TryRestoreHeldItems(void);
 bool32 CanStealItem(enum BattlerId battlerStealing, enum BattlerId battlerItem, enum Item item);
 void TrySaveExchangedItem(enum BattlerId battler, enum Item stolenItem);
 bool32 IsBattlerAffectedByHazards(enum BattlerId battler, enum HoldEffect holdEffect, bool32 toxicSpikes);
+void SortBattlersByRawSpeed(u8 battlers[]);
 void SortBattlersBySpeed(enum BattlerId *battlers, bool32 slowToFast);
 bool32 BlocksPrankster(enum Move move, enum BattlerId battlerPrankster, enum BattlerId battlerDef, bool32 checkTarget);
 bool32 PickupHasValidTarget(enum BattlerId battler);

@@ -2054,9 +2054,16 @@ static enum CancelerResult CancelerTargetFailure(struct BattleCalcValues *cv)
             ctx.abilities[ctx.battlerDef] = cv->abilities[cv->battlerDef];
             ctx.holdEffects[ctx.battlerAtk] = cv->holdEffects[cv->battlerAtk];
             ctx.holdEffects[ctx.battlerDef] = cv->holdEffects[cv->battlerDef];
+            ctx.typeEffectivenessModifier = CalcTypeEffectivenessMultiplier(&ctx);
 
-            if (CalcTypeEffectivenessMultiplier(&ctx) == UQ_4_12(0.0))
+            if (ctx.typeEffectivenessModifier == UQ_4_12(0.0))
                 gSpecialStatuses[cv->battlerDef].updateStallMons = TRUE;
+
+            if (ctx.typeEffectivenessModifier > UQ_4_12(0.0) && ShouldTeraShellDistortTypeMatchups(&ctx))
+            {
+                gSpecialStatuses[ctx.battlerDef].distortedTypeMatchups = TRUE;
+                gSpecialStatuses[ctx.battlerDef].teraShellAbilityDone = TRUE;
+            }
 
             if (ctx.abilityBlocked)
             {
@@ -2190,6 +2197,7 @@ static enum CancelerResult CancelerAccuracyCheck(struct BattleCalcValues *cv)
 
     enum SmartTargetState smartTargetState = INITIAL_STATE;
     bool32 isSmartTarget = GetBattlerMoveTargetType(cv->battlerAtk, cv->move) == TARGET_SMART;
+    bool32 isMultiHitOn = gSpecialStatuses[cv->battlerAtk].multiHitOn;
 
     while (gBattleStruct->eventState.atkCancelerBattler < gBattlersCount)
     {
@@ -2209,7 +2217,7 @@ static enum CancelerResult CancelerAccuracyCheck(struct BattleCalcValues *cv)
 
             if (cv->holdEffects[cv->battlerAtk] == HOLD_EFFECT_BLUNDER_POLICY
              && cv->moveEffect != EFFECT_OHKO
-             && !gSpecialStatuses[cv->battlerAtk].multiHitOn)
+             && !isMultiHitOn)
                 gBattleStruct->blunderPolicy = TRUE;
 
             if (isSmartTarget
@@ -2222,7 +2230,7 @@ static enum CancelerResult CancelerAccuracyCheck(struct BattleCalcValues *cv)
                 gBattlerTarget = BATTLE_PARTNER(cv->battlerDef); // Smart target to partner if miss
             }
 
-            if (!gSpecialStatuses[cv->battlerAtk].multiHitOn)
+            if (!isMultiHitOn)
             {
                 gLastLandedMoves[cv->battlerDef] = 0;
                 gLastHitByType[cv->battlerDef] = 0;
@@ -2234,7 +2242,14 @@ static enum CancelerResult CancelerAccuracyCheck(struct BattleCalcValues *cv)
                 continue;
             }
 
-            if (gBattleStruct->moveResultFlags[cv->battlerDef] & MOVE_RESULT_ONE_HIT_KO_STURDY)
+            if (isMultiHitOn)
+            {
+                gMultiHitCounter = 0;
+                gBattleStruct->moveDamage[gBattlerTarget] = 0;
+                gSpecialStatuses[gBattlerTarget].damagedByAttack = FALSE;
+                BattleScriptCall(BattleScript_BattlerAvoidedMultiHit);
+            }
+            else if (gBattleStruct->moveResultFlags[cv->battlerDef] & MOVE_RESULT_ONE_HIT_KO_STURDY)
             {
                 gLastUsedAbility = ABILITY_STURDY;
                 gBattlerAbility = cv->battlerDef;
@@ -3202,7 +3217,6 @@ static enum MoveEndResult MoveEndUpdateLastMoves(struct BattleCalcValues *cv)
         }
         else
         {
-            gLastMoves[cv->battlerAtk] = MOVE_UNAVAILABLE;
             gLastResultingMoves[cv->battlerAtk] = MOVE_UNAVAILABLE;
             gLastUsedMoveType[cv->battlerAtk] = 0;
         }
@@ -3255,25 +3269,6 @@ static enum MoveEndResult MoveEndMirrorMove(struct BattleCalcValues *cv)
 
     gBattleScripting.moveendState++;
     return MOVEEND_RESULT_CONTINUE;
-}
-
-static void SortBattlersByRawSpeed(u8 battlers[])
-{
-    for (u32 i = 0; i < gBattlersCount; i++)
-        battlers[i] = i;
-
-    for (u32 i = 0; i < gBattlersCount; i++)
-    {
-        for (u32 j = 0; j < gBattlersCount; j++)
-        {
-            if (gBattleMons[battlers[i]].speed >= gBattleMons[battlers[j]].speed)
-            {
-                u32 temp = battlers[i];
-                battlers[i] = battlers[j];
-                battlers[j] = temp;
-            }
-        }
-    }
 }
 
 // Used for non damaging (status) stat change moves
@@ -3342,7 +3337,6 @@ static enum MoveEndResult MoveEndNextTarget(struct BattleCalcValues *cv)
     }
 
     RecordLastUsedMoveBy(gBattlerAttacker, gCurrentMove);
-    SortBattlersByRawSpeed(gBattlersByRawSpeed);
     gBattleScripting.moveendState++;
     return MOVEEND_RESULT_CONTINUE;
 }

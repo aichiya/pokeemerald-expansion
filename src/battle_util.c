@@ -69,6 +69,7 @@ static bool32 IsPowderMoveBlocked(struct DamageContext *ctx);
 const u8 *AbsorbedByDrainHpAbility(enum BattlerId battlerDef);
 const u8 *AbsorbedByStatIncreaseAbility(enum BattlerId battlerDef, enum Ability abilityDef, enum Stat statId, u32 statAmount);
 const u8 *AbsorbedByFlashFire(enum BattlerId battlerDef);
+static bool32 IsCriticalHit(struct DamageContext *ctx);
 
 ARM_FUNC NOINLINE static uq4_12_t PercentToUQ4_12(u32 percent);
 ARM_FUNC NOINLINE static uq4_12_t PercentToUQ4_12_Floored(u32 percent);
@@ -338,13 +339,12 @@ enum DamageCategory GetReflectDamageMoveDamageCategory(enum BattlerId battler, e
         return DAMAGE_CATEGORY_PHYSICAL;
 }
 
-static bool32 ShouldTeraShellDistortTypeMatchups(enum Move move, enum BattlerId battlerDef, enum Ability abilityDef)
+bool32 ShouldTeraShellDistortTypeMatchups(struct DamageContext *ctx)
 {
-    if (!gSpecialStatuses[battlerDef].distortedTypeMatchups
-     && gBattleMons[battlerDef].species == SPECIES_TERAPAGOS_TERASTAL
-     && gBattleMons[battlerDef].hp == gBattleMons[battlerDef].maxHP
-     && !IsBattleMoveStatus(move)
-     && abilityDef == ABILITY_TERA_SHELL)
+    if (ctx->abilities[ctx->battlerDef] == ABILITY_TERA_SHELL
+     && gBattleMons[ctx->battlerDef].species == SPECIES_TERAPAGOS_TERASTAL
+     && gBattleMons[ctx->battlerDef].hp == gBattleMons[ctx->battlerDef].maxHP
+     && !IsBattleMoveStatus(ctx->move))
         return TRUE;
     else if (!gSpecialStatuses[battlerDef].distortedTypeMatchups
      && !IsBattleMoveStatus(move)
@@ -5785,7 +5785,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             break;
         }
         break;
-    case ABILITYEFFECT_COMMANDER:
+    case ABILITYEFFECT_DEPENDS_ON_ALLY:
         gBattleScripting.battler = battler;
         partner = BATTLE_PARTNER(battler);
         switch (ability)
@@ -9362,6 +9362,8 @@ s32 DoFixedDamageMoveCalc(struct DamageContext *ctx)
 
 static inline s32 DoMoveDamageCalc(struct DamageContext *ctx)
 {
+    ctx->typeEffectivenessModifier = CalcTypeEffectivenessMultiplier(ctx);
+
     if (ctx->typeEffectivenessModifier == UQ_4_12(0.0))
         return 0;
 
@@ -9369,60 +9371,40 @@ static inline s32 DoMoveDamageCalc(struct DamageContext *ctx)
     if (dmg != INT32_MAX)
         return dmg;
 
+    ctx->isCrit = IsCriticalHit(ctx);
     return DoMoveDamageCalcVars(ctx);
-}
-
-static inline s32 DoFutureSightAttackDamageCalcVars(struct DamageContext *ctx)
-{
-    s32 dmg;
-    u32 userFinalAttack;
-    u32 targetFinalDefense;
-    enum BattlerId battlerAtk = ctx->battlerAtk;
-    enum BattlerId battlerDef = ctx->battlerDef;
-    enum Move move = ctx->move;
-    enum Type moveType = ctx->moveType;
-
-    struct Pokemon *party = GetBattlerParty(battlerAtk);
-    struct Pokemon *partyMon = &party[gBattleStruct->futureSight[battlerDef].partyIndex];
-    u32 partyMonLevel = GetMonData(partyMon, MON_DATA_LEVEL);
-    enum Species partyMonSpecies = GetMonData(partyMon, MON_DATA_SPECIES);
-    gBattleMovePower = GetMovePower(move);
-
-    if (IsBattleMovePhysical(move))
-        userFinalAttack = GetMonData(partyMon, MON_DATA_ATK);
-    else
-        userFinalAttack = GetMonData(partyMon, MON_DATA_SPATK);
-
-    targetFinalDefense = CalcDefenseStat(ctx);
-    dmg = CalculateBaseDamage(gBattleMovePower, userFinalAttack, partyMonLevel, targetFinalDefense);
-
-    DAMAGE_APPLY_MODIFIER(GetCriticalModifier(ctx->isCrit));
-
-    if (ctx->randomFactor)
-    {
-        dmg *= DMG_ROLL_PERCENT_HI - RandomUniform(RNG_DAMAGE_MODIFIER, 0, DMG_ROLL_PERCENT_HI - DMG_ROLL_PERCENT_LO);
-        dmg /= 100;
-    }
-
-    // Same type attack bonus
-    if (GetSpeciesType(partyMonSpecies, 0) == moveType || GetSpeciesType(partyMonSpecies, 1) == moveType)
-        DAMAGE_APPLY_MODIFIER(UQ_4_12(1.5));
-    else
-        DAMAGE_APPLY_MODIFIER(UQ_4_12(1.0));
-    DAMAGE_APPLY_MODIFIER(ctx->typeEffectivenessModifier);
-
-    if (dmg == 0)
-        dmg = 1;
-
-    return dmg;
 }
 
 static inline s32 DoFutureSightAttackDamageCalc(struct DamageContext *ctx)
 {
+    struct Pokemon *party = GetBattlerParty(ctx->battlerAtk);
+    struct Pokemon *partyMon = &party[gBattleStruct->futureSight[ctx->battlerDef].partyIndex];
+    struct BattlePokemon *savedBattleMons = AllocSaveBattleMons();
+
+    bool32 vesselOrRuin = gBattleMons[ctx->battlerAtk].volatiles.vesselOfRuin;
+    bool32 tabletsOfRuin = gBattleMons[ctx->battlerAtk].volatiles.tabletsOfRuin;
+    bool32 swordOfRuin = gBattleMons[ctx->battlerAtk].volatiles.swordOfRuin;
+    bool32 beadsOfRuin = gBattleMons[ctx->battlerAtk].volatiles.beadsOfRuin;
+
+    PokemonToBattleMon(partyMon , &gBattleMons[ctx->battlerAtk]);
+
+    gBattleMons[ctx->battlerAtk].volatiles.vesselOfRuin = vesselOrRuin;
+    gBattleMons[ctx->battlerAtk].volatiles.tabletsOfRuin = tabletsOfRuin;
+    gBattleMons[ctx->battlerAtk].volatiles.swordOfRuin = swordOfRuin;
+    gBattleMons[ctx->battlerAtk].volatiles.beadsOfRuin = beadsOfRuin;
+
+    ctx->abilities[ctx->battlerAtk] = ABILITY_NONE;
+    ctx->holdEffects[ctx->battlerAtk] = HOLD_EFFECT_NONE;
+    ctx->typeEffectivenessModifier = CalcTypeEffectivenessMultiplier(ctx);
+    ctx->isCrit = IsCriticalHit(ctx);
+
     if (ctx->typeEffectivenessModifier == UQ_4_12(0.0))
         return 0;
 
-    return DoFutureSightAttackDamageCalcVars(ctx);
+    s32 dmg = DoMoveDamageCalc(ctx);
+
+    FreeRestoreBattleMons(savedBattleMons);
+    return dmg;
 }
 
 bool32 IsFutureSightAttackerInParty(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
@@ -9699,9 +9681,6 @@ s32 CalculateMoveDamage(struct DamageContext *ctx)
 {
     s32 damage = 0;
 
-    ctx->typeEffectivenessModifier = CalcTypeEffectivenessMultiplier(ctx);
-    ctx->isCrit = IsCriticalHit(ctx);
-
     if (IsFutureSightAttackerInParty(ctx->battlerAtk, ctx->battlerDef, ctx->move))
         damage = DoFutureSightAttackDamageCalc(ctx);
     else
@@ -9889,15 +9868,11 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
             mod = UQ_4_12(1.0);
     }
 
-    if (gSpecialStatuses[ctx->battlerDef].distortedTypeMatchups || (mod > UQ_4_12(0.0) && ShouldTeraShellDistortTypeMatchups(ctx->move, ctx->battlerDef, ctx->abilities[ctx->battlerDef])))
+    if (gSpecialStatuses[ctx->battlerDef].distortedTypeMatchups || (ctx->aiCalc && mod > UQ_4_12(0.0) && ShouldTeraShellDistortTypeMatchups(ctx)))
     {
         mod = UQ_4_12(0.5);
         if (ctx->updateFlags)
-        {
             RecordAbilityBattle(ctx->battlerDef, ctx->abilities[ctx->battlerDef]);
-            gSpecialStatuses[ctx->battlerDef].distortedTypeMatchups = TRUE;
-            gSpecialStatuses[ctx->battlerDef].teraShellAbilityDone = TRUE;
-        }
     }
 
     if (GetMoveEffect(ctx->move) == EFFECT_SUPER_EFFECTIVE_ON_FOES_TYPES)
@@ -10995,6 +10970,25 @@ bool32 CanFling(enum BattlerId battlerAtk, enum Ability abilityAtk)
         return FALSE;
 
     return TRUE;
+}
+
+void SortBattlersByRawSpeed(u8 battlers[])
+{
+    for (u32 i = 0; i < gBattlersCount; i++)
+        battlers[i] = i;
+
+    for (u32 i = 0; i < gBattlersCount; i++)
+    {
+        for (u32 j = 0; j < gBattlersCount; j++)
+        {
+            if (gBattleMons[battlers[i]].speed >= gBattleMons[battlers[j]].speed)
+            {
+                u32 temp = battlers[i];
+                battlers[i] = battlers[j];
+                battlers[j] = temp;
+            }
+        }
+    }
 }
 
 // Sort an array of battlers by speed

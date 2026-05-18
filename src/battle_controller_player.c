@@ -1736,8 +1736,7 @@ static void MoveSelectionDisplayMoveType(enum BattlerId battler)
     }
     else if (effect == EFFECT_TERA_STARSTORM)
     {
-        if (speciesId == SPECIES_CHIMECHO
-        || (IsGimmickSelected(battler, GIMMICK_TERA) && speciesId == SPECIES_TERAPAGOS_STELLAR))
+        if (IsGimmickSelected(battler, GIMMICK_TERA))
             type = TYPE_STELLAR;
     }
     else if (P_SHOW_DYNAMIC_TYPES) // Non-vanilla changes to battle UI showing dynamic types

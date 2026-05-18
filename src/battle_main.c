@@ -6011,7 +6011,7 @@ enum Type TrySetAteType(enum Move move, enum BattlerId battlerAtk, enum Ability 
             return ateType;
         break;
     case EFFECT_TERA_STARSTORM:
-        if (gBattleMons[battlerAtk].species == SPECIES_TERAPAGOS_STELLAR)
+        if (GetActiveGimmick(battlerAtk) == GIMMICK_TERA)
             return ateType;
         break;
     case EFFECT_HIDDEN_POWER:
@@ -6281,7 +6281,7 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
             return GetMonData(mon, MON_DATA_TERA_TYPE);
         break;
     case EFFECT_TERA_STARSTORM:
-        if (species == SPECIES_TERAPAGOS_STELLAR)
+        if (gimmick == GIMMICK_TERA)
             return TYPE_STELLAR;
         break;
     case EFFECT_NATURE_POWER:

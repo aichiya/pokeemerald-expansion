@@ -319,8 +319,6 @@ static enum StatChangeResult CanDecreaseStat(struct BattleCalcValues *cv, struct
      || IsIntimidateBlocked(cv, st)
      || IsFlowerVeilBlocked(cv, st)
      || IsClearAmuletBlocked(cv, st)
-     || IsManaDisturptorBlocked(cv, st)
-     || IsMisfortuneAuraBlocked(cv, st)
      || IsAbilityBlocked(cv, st)
      || IsMirrorArmorReflected(cv, st))
         return STAT_CHANGE_DIDNT_WORK;

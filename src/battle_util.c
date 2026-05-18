@@ -346,9 +346,8 @@ bool32 ShouldTeraShellDistortTypeMatchups(struct DamageContext *ctx)
      && gBattleMons[ctx->battlerDef].hp == gBattleMons[ctx->battlerDef].maxHP
      && !IsBattleMoveStatus(ctx->move))
         return TRUE;
-    else if (!gSpecialStatuses[battlerDef].distortedTypeMatchups
-     && !IsBattleMoveStatus(move)
-     && abilityDef == ABILITY_MULTITYPE_LEGEND)
+    else if (!IsBattleMoveStatus(ctx->move)
+     && gBattleMons[ctx->battlerDef].ability == ABILITY_MULTITYPE_LEGEND)
         return TRUE;
 
     return FALSE;

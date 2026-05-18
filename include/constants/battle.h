@@ -330,6 +330,7 @@ enum VolatileFlags
     F(VOLATILE_PARADOX_BOOSTED_STAT,        paradoxBoostedStat,            (enum Stat, NUM_STATS - 1)) \
     F(VOLATILE_UNABLE_TO_USE_MOVE,          unableToUseMove,               (u32, 1)) \
     F(VOLATILE_ACTIVATE_DANCER,             activateDancer,                (u32, 1)) \
+    F(VOLATILE_TRACE_ACTIVATED,             traceActivated,                (u32, 1)) \
     F(VOLATILE_ACTIVATE_GRAND_THEORY,       activateGrandTheory,           (u32, 1)) \
     F(VOLATILE_ACTIVATE_HEALING_SAINT,      activateHealingSaint,          (u32, 1)) \
     F(VOLATILE_ACTIVATE_ECHO_ABILITIES_DOUR,         activateEchoAbilitiesDour,         (u32, 1)) \

@@ -52,7 +52,6 @@ EverGrandeCity_HallOfFame_EventScript_GameClearMale::
 	setrespawn HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_2F_MALE
 	fadescreenspeed FADE_TO_BLACK, 24
 	special GameClear
-	waitstate
 	releaseall
 	end
 
@@ -60,7 +59,6 @@ EverGrandeCity_HallOfFame_EventScript_GameClearFemale::
 	setrespawn HEAL_LOCATION_JOHTO_TWINRIVER_CITY_MC_HOUSE_2F_FEMALE
 	fadescreenspeed FADE_TO_BLACK, 24
 	special GameClear
-	waitstate
 	releaseall
 	end
 

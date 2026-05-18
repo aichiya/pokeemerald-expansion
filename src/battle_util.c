@@ -3853,6 +3853,246 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
+        case ABILITY_PRIEST_HUNTER:
+            if (shouldAbilityTrigger)
+            {
+                enum BattlerId oppositeDef = GetOppositeBattler(battler);
+                enum BattlerId oppositeDefPartner = GetPartnerBattler(oppositeDef);
+                if (CompareStat(battler, STAT_ACC, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility)
+                  && ((IsBattlerAlive(oppositeDef) 
+                  && (gBattleMons[oppositeDef].species == SPECIES_TH_REIMU_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_REIMU_ADVENT
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_REIMU_8BIT
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_REIMU_CTC
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_DUO_MC_R_REIMU_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_REIMU_REMIND_R_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_REIMU_L_UNKNOWN
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANAE_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANAE_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANAE_ATTACK
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANAE_TECH
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANAE_8BIT
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANAE_REMIND_R_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANAE_REMIND_R_ATTACK
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANAE_REMIND_R_TECH
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANAE_BROKEN_RITE
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_MIMORI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_MIMORI_YUUSHA
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_MIMORI_MANKAI
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_SUMI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_SUMI_YUUSHA
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_SUMI_MANKAI
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_HINATA_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_HINATA_MIKO
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_MITO_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_MITO_MIKO
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_AYA_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_AYA_MIKO
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_SHIZUKA_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_SHIZUKA_MIKO
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_MASUZU_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_MASUZU_MIKO
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_YOSHIKA_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_YOSHIKA_MIKO
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_HIME_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_HIME_MIKO
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_MISAKI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_YYYI_MISAKI_MIKO
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SHINGYOKU_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SHINGYOKU_ORB
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SHINGYOKU_PRIEST
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SHINGYOKU_PRIESTESS
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_YORIHIME_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_YORIHIME_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_YORIHIME_SPEED
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_TENSHI_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_TENSHI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_TENSHI_ATTACK
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_TENSHI_DEFENSE
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_FUTO_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_FUTO_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_MIZUCHI_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_MIZUCHI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SENDAI_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SENDAI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SENDAI_TECH
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_NEMUNO_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_NEMUNO_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANNYO_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SANNYO_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_MIKO_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_MIKO_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_YUKARI_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_YUKARI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_YUKARI_DEFENSE
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_YUKARI_TECH
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_YUKARI_ADVENT
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_OKINA_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_OKINA_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_KASEN_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_KASEN_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_KASEN_ARM
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_TOYOHIME_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_TOYOHIME_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_TOYOHIME_TECH
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_EIRIN_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_EIRIN_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_EIRIN_ATTACK
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_EIRIN_HELPER
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_EIRIN_ADVENT
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SAGUME_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_SAGUME_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_ICHIRIN_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_ICHIRIN_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_ICHIRIN_DEFENSE
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_ICHIRIN_TECH
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_BYAKUREN_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_BYAKUREN_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_BYAKUREN_DEFENSE
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_BYAKUREN_TECH
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_ZANMU_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_ZANMU_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_MIZUCHI_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_TH_MIZUCHI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_KANNA_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_KANNA_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_URAHA_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_URAHA_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_URAHA_EX
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_MISUZU_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_MISUZU_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_MISUZU_EX
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_SASAMI_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_SASAMI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_SASAMI_EX
+                  || gBattleMons[oppositeDef].species == SPECIES_BGHS_BOTAN_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_BGHS_KOKOMI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_BGHS_KOKOMI_FLORA
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_MAI_CHIBI
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_MAI_NORMAL
+                  || gBattleMons[oppositeDef].species == SPECIES_KEY_MAI_EX
+                  || gBattleMons[oppositeDef].species == SPECIES_ETC_TSUBAKURA))
+                  || (IsBattlerAlive(oppositeDefPartner) 
+                  && (gBattleMons[oppositeDefPartner].species == SPECIES_TH_REIMU_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_REIMU_ADVENT
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_REIMU_8BIT
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_REIMU_CTC
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_DUO_MC_R_REIMU_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_REIMU_REMIND_R_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_REIMU_L_UNKNOWN
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANAE_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANAE_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANAE_ATTACK
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANAE_TECH
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANAE_8BIT
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANAE_REMIND_R_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANAE_REMIND_R_ATTACK
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANAE_REMIND_R_TECH
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANAE_BROKEN_RITE
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_MIMORI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_MIMORI_YUUSHA
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_MIMORI_MANKAI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_SUMI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_SUMI_YUUSHA
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_SUMI_MANKAI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_HINATA_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_HINATA_MIKO
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_MITO_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_MITO_MIKO
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_AYA_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_AYA_MIKO
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_SHIZUKA_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_SHIZUKA_MIKO
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_MASUZU_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_MASUZU_MIKO
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_YOSHIKA_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_YOSHIKA_MIKO
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_HIME_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_HIME_MIKO
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_MISAKI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_YYYI_MISAKI_MIKO
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SHINGYOKU_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SHINGYOKU_ORB
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SHINGYOKU_PRIEST
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SHINGYOKU_PRIESTESS
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_YORIHIME_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_YORIHIME_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_YORIHIME_SPEED
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_TENSHI_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_TENSHI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_TENSHI_ATTACK
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_TENSHI_DEFENSE
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_FUTO_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_FUTO_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_MIZUCHI_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_MIZUCHI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SENDAI_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SENDAI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SENDAI_TECH
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_NEMUNO_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_NEMUNO_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANNYO_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SANNYO_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_MIKO_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_MIKO_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_YUKARI_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_YUKARI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_YUKARI_DEFENSE
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_YUKARI_TECH
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_YUKARI_ADVENT
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_OKINA_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_OKINA_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_KASEN_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_KASEN_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_KASEN_ARM
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_TOYOHIME_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_TOYOHIME_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_TOYOHIME_TECH
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_EIRIN_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_EIRIN_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_EIRIN_ATTACK
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_EIRIN_HELPER
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_EIRIN_ADVENT
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SAGUME_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_SAGUME_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_ICHIRIN_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_ICHIRIN_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_ICHIRIN_DEFENSE
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_ICHIRIN_TECH
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_BYAKUREN_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_BYAKUREN_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_BYAKUREN_DEFENSE
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_BYAKUREN_TECH
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_ZANMU_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_ZANMU_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_MIZUCHI_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_TH_MIZUCHI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_KANNA_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_KANNA_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_URAHA_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_URAHA_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_URAHA_EX
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_MISUZU_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_MISUZU_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_MISUZU_EX
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_SASAMI_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_SASAMI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_SASAMI_EX
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_BGHS_BOTAN_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_BGHS_KOKOMI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_BGHS_KOKOMI_FLORA
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_MAI_CHIBI
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_MAI_NORMAL
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_KEY_MAI_EX
+                  || gBattleMons[oppositeDefPartner].species == SPECIES_ETC_TSUBAKURA))))
+                {
+                    gEffectBattler = gBattlerAbility = battler;
+                    SetStatChange(battler, STAT_ACC, 12);
+                    BattleScriptCall(BattleScript_AbilityStatChange);
+                    effect++;
+                }
+            }
+            break;
         case ABILITY_POWER_LEAK:
             if (shouldAbilityTrigger && CompareStat(battler, STAT_SPATK, MAX_STAT_STAGE, CMP_LESS_THAN, gLastUsedAbility))
             {
@@ -9851,7 +10091,8 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         || gBattleMons[ctx->battlerDef].species == SPECIES_BGHS_KOKOMI_FLORA
         || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MAI_CHIBI
         || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MAI_NORMAL
-        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MAI_EX))
+        || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MAI_EX
+        || gBattleMons[ctx->battlerDef].species == SPECIES_ETC_TSUBAKURA))
         mod = UQ_4_12(2.0);
     if (ctx->moveType == TYPE_NEW_MIASMA && defType == TYPE_NEW_STEEL && (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);

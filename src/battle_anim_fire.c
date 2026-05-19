@@ -67,6 +67,38 @@ const struct SpriteTemplate gFireSpiralInwardSpriteTemplate =
     .callback = AnimFireSpiralInward,
 };
 
+
+static const union AnimCmd sAnim_StarStellarSpiralSpread_0[] =
+{
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(32, 4),
+    ANIMCMD_FRAME(48, 4),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd sAnim_StarStellarSpiralSpread_1[] =
+{
+    ANIMCMD_FRAME(16, 4, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_FRAME(32, 4, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_FRAME(48, 4, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const sAnims_StarStellarSpiralSpread[] =
+{
+    sAnim_StarStellarSpiralSpread_0,
+    sAnim_StarStellarSpiralSpread_1,
+};
+
+const struct SpriteTemplate gStarStellarSpiralInwardSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_STAR_STELLAR,
+    .paletteTag = ANIM_TAG_STAR_STELLAR,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = sAnims_StarStellarSpiralSpread,
+    .callback = AnimFireSpiralInward,
+};
+
 const struct SpriteTemplate gFireSpreadSpriteTemplate =
 {
     .tileTag = ANIM_TAG_SMALL_EMBER,

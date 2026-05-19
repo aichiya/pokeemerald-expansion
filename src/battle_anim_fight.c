@@ -250,6 +250,14 @@ const struct SpriteTemplate gSuperpowerFireballSpriteTemplate =
     .callback = AnimSuperpowerFireball,
 };
 
+const struct SpriteTemplate gSeleneArrowSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SELENE_STELLAR,
+    .paletteTag = ANIM_TAG_SELENE_STELLAR,
+    .oam = &gOamData_AffineOff_ObjNormal_64x64,
+    .callback = AnimSuperpowerFireball,
+};
+
 const struct SpriteTemplate gPowerFortissimoOrbSpriteTemplate =
 {
     .tileTag = ANIM_TAG_CIRCLE_OF_LIGHT_FF,

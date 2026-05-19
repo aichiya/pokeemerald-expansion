@@ -27153,7 +27153,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_COOL : CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_FIRE_PUNCH,
         .contestComboMoves = {COMBO_STARTER_ICE_PUNCH, COMBO_STARTER_SUNNY_DAY, COMBO_STARTER_THUNDER_PUNCH},
-        .battleAnimScript = gBattleAnimMove_FirePunch,
+        .battleAnimScript = gBattleAnimMove_StarPunch,
     },
 
     [MOVE_MILKY_SHOCK] =  // To do anim
@@ -27179,7 +27179,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_HAIL},
-        .battleAnimScript = gBattleAnimMove_Recycle,
+        .battleAnimScript = gBattleAnimMove_MilkyShock,
     },
 
     [MOVE_SOLEIL_SHOOT] =  // Edited
@@ -27204,7 +27204,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_INFERNO,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_PyroBall,
+        .battleAnimScript = gBattleAnimMove_SoleilShoot,
     },
 
     [MOVE_SELENE_ARROW] =  // To do anim
@@ -27220,12 +27220,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .pp = 10,
         .target = TARGET_SELECTED,
         .priority = 0,
+        .criticalHitStage = 2,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_RainOfArrows,
+        .battleAnimScript = gBattleAnimMove_SeleneArrow,
     },
 
     [MOVE_MOON_TIARA] =  // To do anim

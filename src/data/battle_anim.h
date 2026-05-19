@@ -1453,6 +1453,11 @@ const struct BattleAnimation gBattleAnimTable[ANIM_TAG_COUNT] =
     BATTLE_ANIMATION(ANIM_TAG_SWORDS_DIAGONAL, gBattleAnimSpriteGfx_SwordsDiagonal, 0x0C00, gBattleAnimSpritePal_SwordsDiagonal),
     BATTLE_ANIMATION(ANIM_TAG_FLOWER_SINGLE, gBattleAnimSpriteGfx_FlowerSingle, 0x0280, gBattleAnimSpritePal_FlowerSingle),
     BATTLE_ANIMATION(ANIM_TAG_CIRCLE_OF_LIGHT_FF, gBattleAnimSpriteGfx_CircleOfLightFF, 0x0800, gBattleAnimSpritePal_CircleOfLightFF),
+    BATTLE_ANIMATION(ANIM_TAG_STAR_STELLAR, gBattleAnimSpriteGfx_StarStellar, 0x0A00, gBattleAnimSpritePal_StarStellar),
+    BATTLE_ANIMATION(ANIM_TAG_MILKY_STELLAR, gBattleAnimSpriteGfx_MilkyStellar, 0x0800, gBattleAnimSpritePal_MilkyStellar),
+    BATTLE_ANIMATION(ANIM_TAG_SOLEIL_STELLAR_SMALL, gBattleAnimSpriteGfx_SoleilStellarSmall, 0x0280, gBattleAnimSpritePal_SoleilStellarSmall),
+    BATTLE_ANIMATION(ANIM_TAG_SOLEIL_STELLAR_BIG, gBattleAnimSpriteGfx_SoleilStellarBig, 0x0A00, gBattleAnimSpritePal_SoleilStellarBig),
+    BATTLE_ANIMATION(ANIM_TAG_SELENE_STELLAR, gBattleAnimSpriteGfx_SeleneStellar, 0x0800, gBattleAnimSpritePal_SeleneStellar),
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =

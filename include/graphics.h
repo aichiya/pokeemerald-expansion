@@ -3518,5 +3518,15 @@ extern const u32 gBattleAnimSpriteGfx_FlowerSingle[];
 extern const u16 gBattleAnimSpritePal_FlowerSingle[];
 extern const u32 gBattleAnimSpriteGfx_CircleOfLightFF[];
 extern const u16 gBattleAnimSpritePal_CircleOfLightFF[];
+extern const u32 gBattleAnimSpriteGfx_StarStellar[];
+extern const u16 gBattleAnimSpritePal_StarStellar[];
+extern const u32 gBattleAnimSpriteGfx_MilkyStellar[];
+extern const u16 gBattleAnimSpritePal_MilkyStellar[];
+extern const u32 gBattleAnimSpriteGfx_SoleilStellarSmall[];
+extern const u16 gBattleAnimSpritePal_SoleilStellarSmall[];
+extern const u32 gBattleAnimSpriteGfx_SoleilStellarBig[];
+extern const u16 gBattleAnimSpritePal_SoleilStellarBig[];
+extern const u32 gBattleAnimSpriteGfx_SeleneStellar[];
+extern const u16 gBattleAnimSpritePal_SeleneStellar[];
 
 #endif //GUARD_GRAPHICS_H

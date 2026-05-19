@@ -3398,6 +3398,57 @@ const struct SpriteTemplate gPyroBallEmberBallTemplate =
     .callback = SpriteCB_PyroBallLaunch
 };
 
+// SoleilShoot
+static const struct OamData sSoleilShootRockOAM =
+{
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .shape = SPRITE_SHAPE(16x16),
+    .size = SPRITE_SIZE(16x16),
+    .priority = 1, //Above sprites
+};
+static const struct OamData sSoleilShootFlamesOAM =
+{
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .shape = SPRITE_SHAPE(32x32),
+    .size = SPRITE_SIZE(32x32),
+    .priority = 1, //Above sprites
+};
+const struct SpriteTemplate gSoleilShootRockTemplate =
+{
+    .tileTag = ANIM_TAG_SOLEIL_STELLAR_SMALL,
+    .paletteTag = ANIM_TAG_SOLEIL_STELLAR_SMALL,
+    .oam = &sPyroBallRockOAM,
+    .callback = SpriteCB_PyroBallRockBounce
+};
+
+const struct SpriteTemplate gSoleilShootBurningRockTemplate =
+{
+    .tileTag = ANIM_TAG_SOLEIL_STELLAR_BIG,
+    .paletteTag = ANIM_TAG_SOLEIL_STELLAR_BIG,
+    .oam = &sSoleilShootFlamesOAM,
+    .callback = SpriteCB_PyroBallRockBounce
+};
+
+const struct SpriteTemplate gSoleilShootFlamesUpTemplate =
+{
+    .tileTag = ANIM_TAG_SOLEIL_STELLAR_BIG,
+    .paletteTag = ANIM_TAG_SOLEIL_STELLAR_BIG,
+    .oam = &sSoleilShootFlamesOAM,
+    .anims = gAnims_DragonBreathFire,
+    .callback = SpriteCB_PyroBallRockBounce
+};
+
+const struct SpriteTemplate gSoleilShootEmberBallTemplate =
+{
+    .tileTag = ANIM_TAG_SOLEIL_STELLAR_BIG,
+    .paletteTag = ANIM_TAG_SOLEIL_STELLAR_BIG,
+    .oam = &sSoleilShootFlamesOAM,
+    .anims = gAnims_DragonBreathFire,
+    .callback = SpriteCB_PyroBallLaunch
+};
+
 // Aura Wheel
 const struct SpriteTemplate gAuraWheelBlueElectricityTemplate =
 {

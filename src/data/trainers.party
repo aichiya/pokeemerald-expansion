@@ -16994,18 +16994,16 @@ Pic: TRAINER_PIC_98
 Gender: Female
 Music: Female
 Double Battle: No
+AI: Basic Trainer
 Mugshot: Pink
 
 SPECIES_ETC_PURIKUHEART
-Level: 100
-Adamant Nature
+Level: 111
+Rash Nature
 Tera Type: TYPE_STELLAR
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 6 HP / 252 Atk / 252 SpA
-- MOVE_MILKY_SHOCK
-- MOVE_SOLEIL_SHOOT
 - MOVE_SELENE_ARROW
-- MOVE_STAR_PUNCH
 
 === TRAINER_PLACEHOLDER_858 ===
 Name: MAY

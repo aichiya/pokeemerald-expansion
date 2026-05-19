@@ -2202,3 +2202,14 @@ const u16 gBattleAnimSpritePal_FlowerSingle[] = INCGFX_U16("graphics/battle_anim
 
 const u32 gBattleAnimSpriteGfx_CircleOfLightFF[] = INCGFX_U32("graphics/battle_anims/sprites/circle_of_light_ff.png", ".4bpp.smol");
 const u16 gBattleAnimSpritePal_CircleOfLightFF[] = INCGFX_U16("graphics/battle_anims/sprites/circle_of_light_ff.png", ".gbapal");
+
+const u32 gBattleAnimSpriteGfx_StarStellar[] = INCGFX_U32("graphics/battle_anims/sprites/star_stellar.png", ".4bpp.smol");
+const u16 gBattleAnimSpritePal_StarStellar[] = INCGFX_U16("graphics/battle_anims/sprites/star_stellar.png", ".gbapal");
+const u32 gBattleAnimSpriteGfx_MilkyStellar[] = INCGFX_U32("graphics/battle_anims/sprites/milky_stellar.png", ".4bpp.smol");
+const u16 gBattleAnimSpritePal_MilkyStellar[] = INCGFX_U16("graphics/battle_anims/sprites/milky_stellar.png", ".gbapal");
+const u32 gBattleAnimSpriteGfx_SoleilStellarSmall[] = INCGFX_U32("graphics/battle_anims/sprites/fire_sphere_stellar.png", ".4bpp.smol");
+const u16 gBattleAnimSpritePal_SoleilStellarSmall[] = INCGFX_U16("graphics/battle_anims/sprites/fire_sphere_stellar.png", ".gbapal");
+const u32 gBattleAnimSpriteGfx_SoleilStellarBig[] = INCGFX_U32("graphics/battle_anims/sprites/fire_sphere_stellar_2.png", ".4bpp.smol");
+const u16 gBattleAnimSpritePal_SoleilStellarBig[] = INCGFX_U16("graphics/battle_anims/sprites/fire_sphere_stellar_2.png", ".gbapal");
+const u32 gBattleAnimSpriteGfx_SeleneStellar[] = INCGFX_U32("graphics/battle_anims/sprites/arrow_stellar.png", ".4bpp.smol");
+const u16 gBattleAnimSpritePal_SeleneStellar[] = INCGFX_U16("graphics/battle_anims/sprites/arrow_stellar.png", ".gbapal");

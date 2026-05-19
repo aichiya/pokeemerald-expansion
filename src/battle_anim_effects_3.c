@@ -1057,6 +1057,26 @@ const struct SpriteTemplate gRecycleSpriteTemplate =
     .callback = AnimRecycle,
 };
 
+const union AffineAnimCmd gMilkyShockSpriteAffineAnimCmds[] =
+{
+    AFFINEANIMCMD_FRAME(0, 0, -4, 64),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+const union AffineAnimCmd *const gMilkyShockSpriteAffineAnimTable[] =
+{
+    gMilkyShockSpriteAffineAnimCmds,
+};
+
+const struct SpriteTemplate gMilkyShockSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MILKY_STELLAR,
+    .paletteTag = ANIM_TAG_MILKY_STELLAR,
+    .oam = &gOamData_AffineNormal_ObjBlend_64x64,
+    .affineAnims = gMilkyShockSpriteAffineAnimTable,
+    .callback = AnimRecycle,
+};
+
 const union AffineAnimCmd gSlackOffSquishAffineAnimCmds[] =
 {
     AFFINEANIMCMD_FRAME(0, 16, 0, 4),

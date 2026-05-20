@@ -15065,7 +15065,7 @@ void BS_TryGrimoireCall(void)
 {
     NATIVE_ARGS();
 
-    struct DamageContext ctx;
+    struct DamageContext ctx = {0};
 
     u32 i = 0;
     u16 moveUsed = MOVE_NONE;
@@ -15161,7 +15161,7 @@ void BS_TransformDataExecutionDecade(void)
 
     NATIVE_ARGS();
 
-    struct DamageContext ctx;
+    struct DamageContext ctx = {0};
     enum Ability abilityAtk = GetBattlerAbility(gBattlerAttacker);
     enum Ability abilityDef = GetBattlerAbility(gBattlerTarget);
 
@@ -15178,9 +15178,8 @@ void BS_TransformDataExecutionDecade(void)
     ctx.isCrit = FALSE;
     ctx.fixedBasePower = 0;
 
-    if (abilityAtk == ABILITY_FALSE_EXISTENCE && abilityDef != ABILITY_FALSE_EXISTENCE)
-        highestDamage = 0xFFFFFFFF;
-    else if (abilityAtk != ABILITY_FALSE_EXISTENCE && abilityDef == ABILITY_FALSE_EXISTENCE)
+    if ((abilityAtk != ABILITY_FALSE_EXISTENCE && abilityDef == ABILITY_FALSE_EXISTENCE)
+      || (abilityAtk == ABILITY_FALSE_EXISTENCE && abilityDef != ABILITY_FALSE_EXISTENCE))
         highestDamage = 0xFFFFFFFF;
     else
         highestDamage = 0;
@@ -15192,21 +15191,8 @@ void BS_TransformDataExecutionDecade(void)
         ctx.moveType = CheckDynamicMoveType(GetBattlerMon(ctx.battlerAtk), ctx.move, ctx.battlerAtk, MON_IN_BATTLE);
         calcDamage = CalculateMoveDamage(&ctx);
 
-        if (abilityAtk == ABILITY_FALSE_EXISTENCE && abilityDef != ABILITY_FALSE_EXISTENCE)
-        {
-//            if (ctx.move == MOVE_MOCKUP_PHYSICAL_MYSTERY || ctx.move == MOVE_MOCKUP_SPECIAL_MYSTERY)
-//                calcDamage = 0xFFFF;
-
-            if (CanAbilityAbsorbMove(&ctx))
-                calcDamage = 0xFFFFFFFF;
-            
-            if (calcDamage < highestDamage)
-            {
-                moveUsed = ctx.move;
-                highestDamage = calcDamage;
-            }
-        }
-        else if (abilityAtk != ABILITY_FALSE_EXISTENCE && abilityDef == ABILITY_FALSE_EXISTENCE)
+        if ((abilityAtk != ABILITY_FALSE_EXISTENCE && abilityDef == ABILITY_FALSE_EXISTENCE)
+          || (abilityAtk == ABILITY_FALSE_EXISTENCE && abilityDef != ABILITY_FALSE_EXISTENCE))
         {
 //            if (ctx.move == MOVE_MOCKUP_PHYSICAL_MYSTERY || ctx.move == MOVE_MOCKUP_SPECIAL_MYSTERY)
 //                calcDamage = 0xFFFF;
@@ -15222,8 +15208,6 @@ void BS_TransformDataExecutionDecade(void)
         }
         else
         {
-            highestDamage = 0;
-
             if (CanAbilityAbsorbMove(&ctx))
                 calcDamage = 0;
 
@@ -15919,7 +15903,7 @@ void BS_TryCardIncludeAttack(void)
 {
     NATIVE_ARGS();
 
-    struct DamageContext ctx;
+    struct DamageContext ctx = {0};
 
     u32 i = 0;
     u16 moveUsed = MOVE_NONE;

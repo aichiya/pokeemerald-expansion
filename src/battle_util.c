@@ -9471,7 +9471,10 @@ static inline s32 DoMoveDamageCalcVars(struct DamageContext *ctx)
     userFinalAttack = CalcAttackStat(ctx);
     targetFinalDefense = CalcDefenseStat(ctx);
 
-    dmg = CalculateBaseDamage(gBattleMovePower, userFinalAttack, gBattleMons[ctx->battlerAtk].level, targetFinalDefense);
+    if (ctx->move == MOVE_RIDE_TRANSFORM)
+        dmg = CalculateBaseDamage(gBattleMovePower, 3 * gBattleMons[ctx->battlerAtk].level, gBattleMons[ctx->battlerAtk].level, targetFinalDefense);
+    else
+        dmg = CalculateBaseDamage(gBattleMovePower, userFinalAttack, gBattleMons[ctx->battlerAtk].level, targetFinalDefense);
     DAMAGE_APPLY_MODIFIER(GetTargetDamageModifier(ctx));
     DAMAGE_APPLY_MODIFIER(GetParentalBondModifier(ctx->battlerAtk));
     DAMAGE_APPLY_MODIFIER(GetWeatherDamageModifier(ctx));

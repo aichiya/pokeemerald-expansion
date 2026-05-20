@@ -6582,6 +6582,7 @@ BattleScript_WorldEndGardenEnd:
 	copybyte sBATTLER, gBattlerAttacker
 	destroyabilitypopup
 	restoretarget
+	restoreattacker
 	pause B_WAIT_TIME_MED
 	return
 

@@ -6061,7 +6061,7 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
     enum Type types[3];
     enum Ability ability;
     enum HoldEffect holdEffect;
-    enum Gimmick gimmick = GetActiveGimmick(battler);
+    enum Gimmick gimmick = GIMMICK_NONE;
 
     if (state == MON_IN_BATTLE)
     {
@@ -6073,6 +6073,7 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
         holdEffect = GetBattlerHoldEffect(battler);
         ability = GetBattlerAbility(battler);
         GetBattlerTypes(battler, FALSE, types);
+        gimmick = GetActiveGimmick(battler);
     }
     else
     {
@@ -6083,6 +6084,7 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
         types[0] = GetSpeciesType(species, 0);
         types[1] = GetSpeciesType(species, 1);
         types[2] = TYPE_MYSTERY;
+        gimmick = GIMMICK_NONE;
     }
 
     switch (moveEffect)
@@ -6191,19 +6193,26 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
     case EFFECT_KIRIFUDA:
         if (gimmick != GIMMICK_Z_MOVE)
         {
-            enum Type teraType;
-            if (gimmick == GIMMICK_TERA && ((teraType = GetMonData(mon, MON_DATA_TERA_TYPE)) != TYPE_STELLAR))
-                return teraType;
-            else if (types[0] != TYPE_MYSTERY && !(gBattleMons[battler].volatiles.roostActive && types[0] == TYPE_NEW_FLYING))
-                return types[0];
-            else if (types[1] != TYPE_MYSTERY && !(gBattleMons[battler].volatiles.roostActive && types[1] == TYPE_NEW_FLYING))
-                return types[1];
-            else if (gBattleMons[battler].volatiles.roostActive)
-                return (B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NEW_ILLUSION : TYPE_MYSTERY);
-            else if (types[2] != TYPE_MYSTERY)
-                return types[2];
-            else
+            if (state == MON_IN_BATTLE)
+            {
+                enum Type teraType;
+                if (gimmick == GIMMICK_TERA && ((teraType = GetMonData(mon, MON_DATA_TERA_TYPE)) != TYPE_STELLAR))
+                    return teraType;
+                if (types[0] != TYPE_MYSTERY && !(gBattleMons[battler].volatiles.roostActive && types[0] == TYPE_NEW_FLYING))
+                    return types[0];
+                if (types[1] != TYPE_MYSTERY && !(gBattleMons[battler].volatiles.roostActive && types[1] == TYPE_NEW_FLYING))
+                    return types[1];
+                if (gBattleMons[battler].volatiles.roostActive)
+                    return (B_ROOST_PURE_FLYING >= GEN_5 ? TYPE_NEW_ILLUSION : TYPE_MYSTERY);
+                if (types[2] != TYPE_MYSTERY)
+                    return types[2];
+
                 return TYPE_MYSTERY;
+            }
+            else
+            {
+                return types[0];
+            }
         }
         break;
     case EFFECT_RAGING_BULL:
@@ -6239,7 +6248,7 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
     case EFFECT_TERRAIN_PULSE:
         if (state == MON_IN_BATTLE)
         {
-            if (IsAnyTerrainAffected(battler, GetBattlerAbility(battler), GetBattlerHoldEffect(battler), gFieldStatuses))
+            if (IsAnyTerrainAffected(battler, ability, holdEffect, gFieldStatuses))
             {
                 if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
                     return TYPE_NEW_ELECTRIC;

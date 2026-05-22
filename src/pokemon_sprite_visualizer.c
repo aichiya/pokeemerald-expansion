@@ -188,6 +188,7 @@ const u8 gBackAnimNames[][23 + 1] =
     [BACK_ANIM_SHAKE_GLOW_GREEN]        = _("SHAKE GLOW GREEN"),
     [BACK_ANIM_SHAKE_GLOW_BLUE]         = _("SHAKE GLOW BLUE"),
     [BACK_ANIM_SHAKE_GLOW_BLACK]        = _("SHAKE GLOW BLACK"),
+    [BACK_ANIM_SHAKE_GLOW_PINK]         = _("SHAKE GLOW PINK"),
 };
 const u8 gFrontAnimNames[][34] =
 {
@@ -345,6 +346,9 @@ const u8 gFrontAnimNames[][34] =
     [ANIM_SHAKE_GLOW_BLACK_SLOW]             = _("SHAKE GLOW BLACK SLOW"),
     [ANIM_SHAKE_GLOW_WHITE_SLOW]             = _("SHAKE GLOW WHITE SLOW"),
     [ANIM_SHAKE_GLOW_PURPLE_SLOW]            = _("SHAKE GLOW PURPLE SLOW"),
+    [ANIM_SHAKE_GLOW_PINK_FAST]              = _("SHAKE GLOW PINK FAST"),
+    [ANIM_SHAKE_GLOW_PINK]                   = _("SHAKE GLOW PINK"),
+    [ANIM_SHAKE_GLOW_PINK_SLOW]              = _("SHAKE GLOW PINK SLOW"),
 };
 
 #define MOVE_BACKGROUND_NAME_LENGTH 28

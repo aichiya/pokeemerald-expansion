@@ -9525,19 +9525,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Rock Blast"),
         .description = COMPOUND_STRING(
-            "Hurls boulders 2-5 times.\n"
+            "Hurls boulders to the target.\n"
             "Also hits flying foe."),
         .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
-        .power = 25,
+        .power = 85,
         .type = TYPE_NEW_EARTH,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 90 : 80,
+        .accuracy = 100,
         .pp = 10,
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .ignoreTypeIfFlyingAndUngrounded = TRUE,
         .argument = { .type = TYPE_NEW_FLYING },
-        .multiHit = TRUE,
         .ballisticMove = B_UPDATED_MOVE_FLAGS >= GEN_7,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING : CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -10177,7 +10176,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "The move type is based\n"
             "on the user's type."),
         .effect = EFFECT_KIRIFUDA,  // to do add effect photon geyser
-        .power = 180,
+        .power = 160,
         .type = TYPE_NEW_ILLUSION,
         .accuracy = 0,
         .pp = 1,

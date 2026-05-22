@@ -15402,7 +15402,7 @@ void BS_TransformDataExecutionDecade(void)
                     case MOVE_MOCKUP_PHYSICAL_EARTH:
                     {
                         speciesBuffer = SPECIES_MOE_TYRANITAR_MEGA;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_ROCK_THROW;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_ROCK_BLAST;
                         gBattleMons[gBattlerAttacker].moves[1] = MOVE_NEW_IMPACT_RUSH;
                         gBattleMons[gBattlerAttacker].moves[2] = MOVE_CRUNCH;
                         gBattleMons[gBattlerAttacker].moves[3] = MOVE_DRAGON_DANCE;
@@ -15456,7 +15456,7 @@ void BS_TransformDataExecutionDecade(void)
                     case MOVE_MOCKUP_PHYSICAL_NETHER:
                     {
                         speciesBuffer = SPECIES_BGHS_MISAKI_FLORA_ELVIS;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_SHADOW_CLAW;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_NIGHT_SLASH;
                         gBattleMons[gBattlerAttacker].moves[1] = MOVE_ADVENT_LYCORIS;
                         gBattleMons[gBattlerAttacker].moves[2] = MOVE_DIRE_CLAW;
                         gBattleMons[gBattlerAttacker].moves[3] = MOVE_HONE_CLAWS;
@@ -15465,7 +15465,7 @@ void BS_TransformDataExecutionDecade(void)
                     case MOVE_MOCKUP_SPECIAL_NETHER:
                     {
                         speciesBuffer = SPECIES_ETC_NONOTA;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_ASTRAL_BARRAGE;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_BITTER_MALICE;
                         gBattleMons[gBattlerAttacker].moves[1] = MOVE_PSYCHIC;
                         gBattleMons[gBattlerAttacker].moves[2] = MOVE_NEW_WINTER_BLAST;
                         gBattleMons[gBattlerAttacker].moves[3] = MOVE_DARK_VOID;
@@ -15609,9 +15609,9 @@ void BS_TransformDataExecutionDecade(void)
                     case MOVE_MOCKUP_SPECIAL_DIVINE:
                     {
                         speciesBuffer = SPECIES_ETC_MADOKA_ULTIMATE;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_DRACO_METEOR;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_MORNING_SUN;
                         gBattleMons[gBattlerAttacker].moves[1] = MOVE_RAIN_OF_ARROWS;
-                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_MORNING_SUN;
+                        gBattleMons[gBattlerAttacker].moves[2] = MOVE_PSYCHIC;
                         gBattleMons[gBattlerAttacker].moves[3] = MOVE_GEOMANCY;
                         break;
                     }

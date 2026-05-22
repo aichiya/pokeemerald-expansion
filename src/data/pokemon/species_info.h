@@ -79587,7 +79587,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_SpDefense = 0,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 0,
-        .friendship = 70,
+        .friendship = 0,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_HAKUREI_MIKO, ABILITY_MOLD_BREAKER, ABILITY_HAKUREI_BARRIER },
@@ -80753,7 +80753,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThMizuchiNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThMizuchiFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThMizuchiNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -118455,19 +118455,19 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     },
 
-    [SPECIES_FRAGMON_1778] =
+    [SPECIES_SH_HIRANO] =
     {
-        .baseHP        = 0,
-        .baseAttack    = 0,
-        .baseDefense   = 0,
-        .baseSpeed     = 0,
-        .baseSpAttack  = 0,
-        .baseSpDefense = 0,
-        .types = MON_TYPES( TYPE_NEW_MYSTERY, TYPE_NEW_MYSTERY ),
-        .catchRate = 100,
-        .expYield = 100,
+        .baseHP        = 90,
+        .baseAttack    = 125,
+        .baseDefense   = 100,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 100,
+        .types = MON_TYPES( TYPE_NEW_DIVINE, TYPE_NEW_EARTH ),
+        .catchRate = 3,
+        .expYield = 400,
         .evYield_HP = 0,
-        .evYield_Attack = 0,
+        .evYield_Attack = 3,
         .evYield_Defense = 0,
         .evYield_Speed = 0,
         .evYield_SpAttack = 0,
@@ -118475,42 +118475,42 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 0,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("MISSINGNO."),
-        .cryId = CRY_NONE, // CRY_NONE,
+        .abilities = { ABILITY_SERENE_GRACE, ABILITY_SERENE_GRACE, ABILITY_MOODY },
+        .bodyColor = FRANCHISE_ORIGIN_SEIHOU,
+        .speciesName = _("Hirano"),
+        .cryId = CRY_NONE, // CRY_SH_HIRANO_LINE,
         .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Unknown"),
-        .height = 0,
-        .weight = 0,
+        .categoryName = _("Seihou"),
+        .height = 3,
+        .weight = 150,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
-            "\n"
-            ""),
+            "A traditional shrine maiden who\n"
+            "lives in another dimension.\n"
+            "Apparently, she can fly to the space\n"
+            "without any problem."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fragmon1778,
+        .frontPic = gMonFrontPic_ShHirano,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 0,
-        .backPic = gMonBackPic_Fragmon1778,
+        .backPic = gMonBackPic_ShHirano,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Fragmon1778,
-        .shinyPalette = gMonShinyPalette_Fragmon1778,
-        .iconSprite = gMonIcon_Fragmon1778,
+        .palette = gMonPalette_ShHirano,
+        .shinyPalette = gMonShinyPalette_ShHirano,
+        .iconSprite = gMonIcon_ShHirano,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 0, SHADOW_SIZE_L)
-        FOOTPRINT(Fragmon1778)
+        FOOTPRINT(ShHirano)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -118530,9 +118530,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sFragmon1778LevelUpLearnset,
-        .teachableLearnset = sFragmon1778TeachableLearnset,
-        .eggMoveLearnset = sFragmon1778EggMoveLearnset,
+        .levelUpLearnset = sShHiranoLevelUpLearnset,
+        .teachableLearnset = sShHiranoTeachableLearnset,
+        .eggMoveLearnset = sShHiranoEggMoveLearnset,
 
 //        .formSpeciesIdTable = 
 //        .formChangeTable = 
@@ -118540,62 +118540,62 @@ const struct SpeciesInfo gSpeciesInfo[] =
 
     },
 
-    [SPECIES_FRAGMON_1779] =
+    [SPECIES_TH_SENDAI_ORIGIN] =
     {
-        .baseHP        = 0,
-        .baseAttack    = 0,
-        .baseDefense   = 0,
-        .baseSpeed     = 0,
-        .baseSpAttack  = 0,
-        .baseSpDefense = 0,
-        .types = MON_TYPES( TYPE_NEW_MYSTERY, TYPE_NEW_MYSTERY ),
-        .catchRate = 100,
-        .expYield = 100,
+        .baseHP        = 100,
+        .baseAttack    = 70,
+        .baseDefense   = 90,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 150,
+        .baseSpDefense = 90,
+        .types = MON_TYPES( TYPE_NEW_DIVINE, TYPE_NEW_DREAM ),
+        .catchRate = 3,
+        .expYield = 400,
         .evYield_HP = 0,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
         .evYield_Speed = 0,
-        .evYield_SpAttack = 0,
+        .evYield_SpAttack = 3,
         .evYield_SpDefense = 0,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 0,
-        .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .friendship = 0,
+        .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("MISSINGNO."),
-        .cryId = CRY_NONE, // CRY_NONE,
-        .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Unknown"),
-        .height = 0,
-        .weight = 0,
+        .abilities = { ABILITY_HAKUREI_MIKO, ABILITY_MOLD_BREAKER, ABILITY_HAKUREI_BARRIER },
+        .bodyColor = FRANCHISE_ORIGIN_TOUHOU,
+        .speciesName = _("Sendai"),
+        .cryId = CRY_TH_SENDAI_LINE,
+        .natDexNum = NATIONAL_DEX_TH_SENDAI,
+        .categoryName = _("Touhou"),
+        .height = 4,
+        .weight = 150,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
-            "\n"
-            ""),
+            "The ancestor of Hakurei clan.\n"
+            "It is believed that she was the one\n"
+            "who created Hakurei border around \n"
+            "Gensokyo with the help of a dragon."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fragmon1779,
+        .frontPic = gMonFrontPic_ThSendaiOrigin,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 0,
-        .backPic = gMonBackPic_Fragmon1779,
+        .backPic = gMonBackPic_ThSendaiOrigin,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Fragmon1779,
-        .shinyPalette = gMonShinyPalette_Fragmon1779,
-        .iconSprite = gMonIcon_Fragmon1779,
-        .iconPalIndex = 3,
+        .palette = gMonPalette_ThSendaiOrigin,
+        .shinyPalette = gMonShinyPalette_ThSendaiOrigin,
+        .iconSprite = gMonIcon_ThSendaiOrigin,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 0, SHADOW_SIZE_L)
-        FOOTPRINT(Fragmon1779)
+        FOOTPRINT(ThSendaiOrigin)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -118615,11 +118615,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sFragmon1779LevelUpLearnset,
-        .teachableLearnset = sFragmon1779TeachableLearnset,
-        .eggMoveLearnset = sFragmon1779EggMoveLearnset,
+        .levelUpLearnset = sThSendaiOriginLevelUpLearnset,
+        .teachableLearnset = sThSendaiOriginTeachableLearnset,
+        .eggMoveLearnset = sThSendaiOriginEggMoveLearnset,
 
-//        .formSpeciesIdTable = 
+        .formSpeciesIdTable = sThSendaiFormSpeciesIdTable,
 //        .formChangeTable = 
         .teachingType = DEFAULT_LEARNING,
 
@@ -118636,7 +118636,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .types = MON_TYPES( TYPE_NEW_REASON, TYPE_NEW_FLYING ),
         .catchRate = 0,
         .expYield = 400,
-        .evYield_HP = 0,
+        .evYield_HP = 3,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
         .evYield_Speed = 0,
@@ -118725,7 +118725,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_Attack = 0,
         .evYield_Defense = 0,
         .evYield_Speed = 0,
-        .evYield_SpAttack = 0,
+        .evYield_SpAttack = 3,
         .evYield_SpDefense = 0,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 0,
@@ -118807,7 +118807,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .catchRate = 0,
         .expYield = 400,
         .evYield_HP = 0,
-        .evYield_Attack = 0,
+        .evYield_Attack = 3,
         .evYield_Defense = 0,
         .evYield_Speed = 0,
         .evYield_SpAttack = 0,
@@ -118892,7 +118892,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .catchRate = 0,
         .expYield = 400,
         .evYield_HP = 0,
-        .evYield_Attack = 0,
+        .evYield_Attack = 3,
         .evYield_Defense = 0,
         .evYield_Speed = 0,
         .evYield_SpAttack = 0,
@@ -118981,7 +118981,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .evYield_Defense = 0,
         .evYield_Speed = 0,
         .evYield_SpAttack = 0,
-        .evYield_SpDefense = 0,
+        .evYield_SpDefense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 0,
         .friendship = 70,
@@ -132836,21 +132836,21 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .isMegaEvolution = TRUE,
     },
 
-    [SPECIES_FRAGMON_1980] =
+    [SPECIES_TH_MIZUCHI_MIKO] =
     {
-        .baseHP        = 0,
-        .baseAttack    = 0,
-        .baseDefense   = 0,
-        .baseSpeed     = 0,
-        .baseSpAttack  = 0,
-        .baseSpDefense = 0,
-        .types = MON_TYPES( TYPE_NEW_MYSTERY, TYPE_NEW_MYSTERY ),
-        .catchRate = 100,
-        .expYield = 100,
+        .baseHP        = 75,
+        .baseAttack    = 70,
+        .baseDefense   = 110,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 160,
+        .baseSpDefense = 105,
+        .types = MON_TYPES( TYPE_NEW_DIVINE, TYPE_NEW_DARK ),
+        .catchRate = 45,
+        .expYield = 300,
         .evYield_HP = 0,
         .evYield_Attack = 0,
         .evYield_Defense = 0,
-        .evYield_Speed = 0,
+        .evYield_Speed = 3,
         .evYield_SpAttack = 0,
         .evYield_SpDefense = 0,
         .genderRatio = MON_GENDERLESS,
@@ -132858,40 +132858,40 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_NONE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("MISSINGNO."),
-        .cryId = CRY_NONE, // CRY_NONE,
-        .natDexNum = NATIONAL_DEX_ETC_MISSINGNO,
-        .categoryName = _("Unknown"),
-        .height = 0,
-        .weight = 0,
+        .abilities = { ABILITY_INFILTRATOR, ABILITY_INFILTRATOR, ABILITY_INFILTRATOR },
+        .bodyColor = FRANCHISE_ORIGIN_TOUHOU,
+        .speciesName = _("Mizuchi"),
+        .cryId = CRY_NONE, // CRY_TH_MIZUCHI_LINE,
+        .natDexNum = NATIONAL_DEX_TH_MIZUCHI,
+        .categoryName = _("Touhou"),
+        .height = 4,
+        .weight = 80,
         .description = COMPOUND_STRING(
-            "\n"
-            "\n"
-            "\n"
-            ""),
+            "She is an evil spirit long trapped\n"
+            "in the underworld. She has\n"
+            "very strong resentment to the\n"
+            "Hakurei family."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 384,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fragmon1980,
+        .frontPic = gMonFrontPic_ThMizuchiMiko,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 0,
-        .backPic = gMonBackPic_Fragmon1980,
+        .backPic = gMonBackPic_ThMizuchiMiko,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Fragmon1980,
-        .shinyPalette = gMonShinyPalette_Fragmon1980,
-        .iconSprite = gMonIcon_Fragmon1980,
+        .palette = gMonPalette_ThMizuchiMiko,
+        .shinyPalette = gMonShinyPalette_ThMizuchiMiko,
+        .iconSprite = gMonIcon_ThMizuchiMiko,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 0, SHADOW_SIZE_L)
-        FOOTPRINT(Fragmon1980)
+        FOOTPRINT(ThMizuchiMiko)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
             .tileTag = TAG_NONE,
@@ -132911,14 +132911,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
             .images = sPicTable_Substitute,
         },
     #endif
-        .levelUpLearnset = sFragmon1980LevelUpLearnset,
-        .teachableLearnset = sFragmon1980TeachableLearnset,
-        .eggMoveLearnset = sFragmon1980EggMoveLearnset,
+        .levelUpLearnset = sThMizuchiMikoLevelUpLearnset,
+        .teachableLearnset = sThMizuchiMikoTeachableLearnset,
+        .eggMoveLearnset = sThMizuchiMikoEggMoveLearnset,
 
-//        .formSpeciesIdTable = 
-//        .formChangeTable = 
+        .formSpeciesIdTable = sThMizuchiFormSpeciesIdTable,
+        .formChangeTable = sThMizuchiNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
-
+        .isPrimalReversion = TRUE,
     },
 
     [SPECIES_TH_ALICE_REMIND_R_NORMAL] =

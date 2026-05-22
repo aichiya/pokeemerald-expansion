@@ -1071,6 +1071,7 @@
 #define P_FAMILY_PC_REGINA                   P_GEN_9_POKEMON
 
 #define P_FAMILY_MISSINGNO_PLAYABLE          P_GEN_9_POKEMON
+#define P_FAMILY_SH_HIRANO                   P_GEN_9_POKEMON
 #define P_FAMILY_ETC_WUPI                    P_GEN_9_POKEMON
 #define P_FAMILY_ETC_MIKU                    P_GEN_9_POKEMON
 #define P_FAMILY_ETC_FOXYRIA                 P_GEN_9_POKEMON

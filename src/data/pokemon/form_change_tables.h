@@ -8731,6 +8731,13 @@ static const struct FormChange sThKosuzuAttackFormChangeTable[] =
     {FORM_CHANGE_TERMINATOR},
 };
 
+static const struct FormChange sThMizuchiNormalFormChangeTable[] =
+{
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION, SPECIES_TH_MIZUCHI_MIKO, ITEM_RED_ORB},
+    {FORM_CHANGE_END_BATTLE,              SPECIES_TH_MIZUCHI_NORMAL},
+    {FORM_CHANGE_TERMINATOR},
+};
+
 static const struct FormChange sThMarisaNormalFormChangeTable[] =
 {
     {FORM_CHANGE_ITEM_USE, SPECIES_TH_MARISA_ADVENT,   ITEM_FORM_CHANGE_CARD},

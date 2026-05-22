@@ -5883,6 +5883,7 @@ static const u16 sThSendaiFormSpeciesIdTable[] = {
     SPECIES_TH_SENDAI_CHIBI,
     SPECIES_TH_SENDAI_NORMAL,
     SPECIES_TH_SENDAI_TECH,
+    SPECIES_TH_SENDAI_ORIGIN,
     FORM_SPECIES_END,
 };
 
@@ -5909,6 +5910,7 @@ static const u16 sThMiyoiFormSpeciesIdTable[] = {
 static const u16 sThMizuchiFormSpeciesIdTable[] = {
     SPECIES_TH_MIZUCHI_CHIBI,
     SPECIES_TH_MIZUCHI_NORMAL,
+    SPECIES_TH_MIZUCHI_MIKO,
     FORM_SPECIES_END,
 };
 

@@ -29196,12 +29196,12 @@ static const struct LevelUpMove sFragmon1777LevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFragmon1778LevelUpLearnset[] = {
+static const struct LevelUpMove sShHiranoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFragmon1779LevelUpLearnset[] = {
+static const struct LevelUpMove sThSendaiOriginLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };
@@ -30041,7 +30041,7 @@ static const struct LevelUpMove sMoeRaichuMegaYLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFragmon1980LevelUpLearnset[] = {
+static const struct LevelUpMove sThMizuchiMikoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };

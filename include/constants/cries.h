@@ -3201,6 +3201,7 @@ enum PokemonCry
     // CRY_YUIMAN_LINE,
     // CRY_ARIYA_LINE,
     // CRY_NINA_LINE,
+    // CRY_SH_HIRANO_LINE,
     // CRY_ETC_WUPI,
     // CRY_ETC_MIKU,
     // CRY_ETC_FOXYRIA,

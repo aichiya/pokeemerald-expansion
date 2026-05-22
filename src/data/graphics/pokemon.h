@@ -52529,41 +52529,41 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_FRAGMON_UNUSED
 
-#if P_FAMILY_FRAGMON_UNUSED
-    const u32 gMonFrontPic_Fragmon1778[] = INCGFX_U32("graphics/pokemon/_add/etc/dummy/front.png", ".4bpp.smol");
-    const u16 gMonPalette_Fragmon1778[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/normal.pal", ".gbapal");
-    const u32 gMonBackPic_Fragmon1778[] = INCGFX_U32("graphics/pokemon/_add/etc/dummy/back.png", ".4bpp.smol");
-    const u16 gMonShinyPalette_Fragmon1778[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/shiny.pal", ".gbapal");
-    const u8 gMonIcon_Fragmon1778[] = INCGFX_U8("graphics/pokemon/_add/etc/dummy/icon.png", ".4bpp");
+#if P_FAMILY_SH_HIRANO
+    const u32 gMonFrontPic_ShHirano[] = INCGFX_U32("graphics/pokemon/_add/sh/hirano/normal/front.png", ".4bpp.smol");
+    const u16 gMonPalette_ShHirano[] = INCGFX_U16("graphics/pokemon/_add/sh/hirano/normal/normal.pal", ".gbapal");
+    const u32 gMonBackPic_ShHirano[] = INCGFX_U32("graphics/pokemon/_add/sh/hirano/normal/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_ShHirano[] = INCGFX_U16("graphics/pokemon/_add/sh/hirano/normal/shiny.pal", ".gbapal");
+    const u8 gMonIcon_ShHirano[] = INCGFX_U8("graphics/pokemon/_add/sh/hirano/normal/icon.png", ".4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Fragmon1778[] = INCGFX_U8("graphics/pokemon/_add/etc/dummy/footprint.png", ".1bpp");
+    const u8 gMonFootprint_ShHirano[] = INCGFX_U8("graphics/pokemon/_add/sh/hirano/normal/footprint.png", ".1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-//    const u32 gObjectEventPic_Fragmon1778[] = INCBIN_COMP("graphics/pokemon/_add/etc/dummy/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+//    const u32 gObjectEventPic_ShHirano[] = INCBIN_COMP("graphics/pokemon/_add/sh/hirano/normal/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-//    const u16 gOverworldPalette_Fragmon1778[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/overworld_normal.pal", ".gbapal");
-//    const u16 gShinyOverworldPalette_Fragmon1778[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/overworld_shiny.pal", ".gbapal");
+//    const u16 gOverworldPalette_ShHirano[] = INCGFX_U16("graphics/pokemon/_add/sh/hirano/normal/overworld_normal.pal", ".gbapal");
+//    const u16 gShinyOverworldPalette_ShHirano[] = INCGFX_U16("graphics/pokemon/_add/sh/hirano/normal/overworld_shiny.pal", ".gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_FRAGMON_UNUSED
+#endif //P_FAMILY_SH_HIRANO
 
-#if P_FAMILY_FRAGMON_UNUSED
-    const u32 gMonFrontPic_Fragmon1779[] = INCGFX_U32("graphics/pokemon/_add/etc/dummy/front.png", ".4bpp.smol");
-    const u16 gMonPalette_Fragmon1779[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/normal.pal", ".gbapal");
-    const u32 gMonBackPic_Fragmon1779[] = INCGFX_U32("graphics/pokemon/_add/etc/dummy/back.png", ".4bpp.smol");
-    const u16 gMonShinyPalette_Fragmon1779[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/shiny.pal", ".gbapal");
-    const u8 gMonIcon_Fragmon1779[] = INCGFX_U8("graphics/pokemon/_add/etc/dummy/icon.png", ".4bpp");
+#if P_FAMILY_TH_SENDAI
+    const u32 gMonFrontPic_ThSendaiOrigin[] = INCGFX_U32("graphics/pokemon/_add/th/sendai/origin/front.png", ".4bpp.smol");
+    const u16 gMonPalette_ThSendaiOrigin[] = INCGFX_U16("graphics/pokemon/_add/th/sendai/origin/normal.pal", ".gbapal");
+    const u32 gMonBackPic_ThSendaiOrigin[] = INCGFX_U32("graphics/pokemon/_add/th/sendai/origin/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_ThSendaiOrigin[] = INCGFX_U16("graphics/pokemon/_add/th/sendai/origin/shiny.pal", ".gbapal");
+    const u8 gMonIcon_ThSendaiOrigin[] = INCGFX_U8("graphics/pokemon/_add/th/sendai/origin/icon.png", ".4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Fragmon1779[] = INCGFX_U8("graphics/pokemon/_add/etc/dummy/footprint.png", ".1bpp");
+    const u8 gMonFootprint_ThSendaiOrigin[] = INCGFX_U8("graphics/pokemon/_add/th/sendai/origin/footprint.png", ".1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-//    const u32 gObjectEventPic_Fragmon1779[] = INCBIN_COMP("graphics/pokemon/_add/etc/dummy/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+//    const u32 gObjectEventPic_ThSendaiOrigin[] = INCBIN_COMP("graphics/pokemon/_add/th/sendai/origin/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-//    const u16 gOverworldPalette_Fragmon1779[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/overworld_normal.pal", ".gbapal");
-//    const u16 gShinyOverworldPalette_Fragmon1779[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/overworld_shiny.pal", ".gbapal");
+//    const u16 gOverworldPalette_ThSendaiOrigin[] = INCGFX_U16("graphics/pokemon/_add/th/sendai/origin/overworld_normal.pal", ".gbapal");
+//    const u16 gShinyOverworldPalette_ThSendaiOrigin[] = INCGFX_U16("graphics/pokemon/_add/th/sendai/origin/overworld_shiny.pal", ".gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_FRAGMON_UNUSED
+#endif //P_FAMILY_TH_SENDAI
 
 #if P_FAMILY_EXTRA_GIFT
     const u32 gMonFrontPic_ThReimu8Bit[] = INCGFX_U32("graphics/pokemon/_add/th/reimu/2bit/front.png", ".4bpp.smol");
@@ -55571,23 +55571,23 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MOE_PIKACHU
 
-#if P_FAMILY_FRAGMON_UNUSED
-    const u32 gMonFrontPic_Fragmon1980[] = INCGFX_U32("graphics/pokemon/_add/etc/dummy/front.png", ".4bpp.smol");
-    const u16 gMonPalette_Fragmon1980[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/normal.pal", ".gbapal");
-    const u32 gMonBackPic_Fragmon1980[] = INCGFX_U32("graphics/pokemon/_add/etc/dummy/back.png", ".4bpp.smol");
-    const u16 gMonShinyPalette_Fragmon1980[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/shiny.pal", ".gbapal");
-    const u8 gMonIcon_Fragmon1980[] = INCGFX_U8("graphics/pokemon/_add/etc/dummy/icon.png", ".4bpp");
+#if P_FAMILY_TH_MIZUCHI
+    const u32 gMonFrontPic_ThMizuchiMiko[] = INCGFX_U32("graphics/pokemon/_add/th/mizuchi/shrine_maiden/front.png", ".4bpp.smol");
+    const u16 gMonPalette_ThMizuchiMiko[] = INCGFX_U16("graphics/pokemon/_add/th/mizuchi/shrine_maiden/normal.pal", ".gbapal");
+    const u32 gMonBackPic_ThMizuchiMiko[] = INCGFX_U32("graphics/pokemon/_add/th/mizuchi/shrine_maiden/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_ThMizuchiMiko[] = INCGFX_U16("graphics/pokemon/_add/th/mizuchi/shrine_maiden/shiny.pal", ".gbapal");
+    const u8 gMonIcon_ThMizuchiMiko[] = INCGFX_U8("graphics/pokemon/_add/th/mizuchi/shrine_maiden/icon.png", ".4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Fragmon1980[] = INCGFX_U8("graphics/pokemon/_add/etc/dummy/footprint.png", ".1bpp");
+    const u8 gMonFootprint_ThMizuchiMiko[] = INCGFX_U8("graphics/pokemon/_add/th/mizuchi/shrine_maiden/footprint.png", ".1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-//    const u32 gObjectEventPic_Fragmon1980[] = INCBIN_COMP("graphics/pokemon/_add/etc/dummy/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+//    const u32 gObjectEventPic_ThMizuchiMiko[] = INCBIN_COMP("graphics/pokemon/_add/th/mizuchi/shrine_maiden/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-//    const u16 gOverworldPalette_Fragmon1980[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/overworld_normal.pal", ".gbapal");
-//    const u16 gShinyOverworldPalette_Fragmon1980[] = INCGFX_U16("graphics/pokemon/_add/etc/dummy/overworld_shiny.pal", ".gbapal");
+//    const u16 gOverworldPalette_ThMizuchiMiko[] = INCGFX_U16("graphics/pokemon/_add/th/mizuchi/shrine_maiden/overworld_normal.pal", ".gbapal");
+//    const u16 gShinyOverworldPalette_ThMizuchiMiko[] = INCGFX_U16("graphics/pokemon/_add/th/mizuchi/shrine_maiden/overworld_shiny.pal", ".gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_FRAGMON_UNUSED
+#endif //P_FAMILY_TH_MIZUCHI
 
 #if P_FAMILY_TH_ALICE
     const u32 gMonFrontPic_ThAliceRemindRNormal[] = INCGFX_U32("graphics/pokemon/_add/th/alice/pc98_normal/front.png", ".4bpp.smol");

@@ -11921,11 +11921,11 @@ static const u16 sFragmon1777EggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1778EggMoveLearnset[] = {
+static const u16 sShHiranoEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1779EggMoveLearnset[] = {
+static const u16 sThSendaiOriginEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
@@ -12597,7 +12597,7 @@ static const u16 sMoeRaichuMegaYEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1980EggMoveLearnset[] = {
+static const u16 sThMizuchiMikoEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 

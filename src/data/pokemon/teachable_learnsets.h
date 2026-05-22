@@ -49331,12 +49331,12 @@ static const u16 sFragmon1777TeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1778TeachableLearnset[] = {
+static const u16 sShHiranoTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1779TeachableLearnset[] = {
+static const u16 sThSendaiOriginTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };
@@ -50176,7 +50176,7 @@ static const u16 sMoeRaichuMegaYTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFragmon1980TeachableLearnset[] = {
+static const u16 sThMizuchiMikoTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
     MOVE_UNAVAILABLE,
 };

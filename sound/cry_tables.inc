@@ -5754,6 +5754,7 @@ gCryTable::
 @ 	cry Cry_THYuiman
 @ 	cry Cry_THAriya
 @ 	cry Cry_THNina
+@ 	cry Cry_SHHiranoLine
 @ 	cry Cry_ETCWupi
 @ 	cry Cry_ETCMiku
 @ 	cry Cry_ETCFoxyria

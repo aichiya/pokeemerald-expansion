@@ -3604,8 +3604,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SAIGYOUJI_AYAKASHI] =
     {
         .name = _("Saigyouji Spirit"),
-        .description = COMPOUND_STRING("To do."),
-        .aiRating = 4,
+        .description = COMPOUND_STRING("Nature/Nether heals. Countdown."),
+        .aiRating = 8,
     },
 
     [ABILITY_TIME_WEB] =

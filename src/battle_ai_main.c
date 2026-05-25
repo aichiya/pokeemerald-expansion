@@ -3534,6 +3534,42 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                     isMoveAffectedByPartnerAbility = FALSE;
                 }
                 break;
+            case ABILITY_MAKAI_GODDESS:
+                if (moveType == TYPE_NEW_DARK || moveType == TYPE_NEW_DIVINE)
+                {
+                    if (moveTarget == TARGET_FOES_AND_ALLY)
+                    {
+                        ADJUST_SCORE(DECENT_EFFECT);
+                    }
+
+                    if (ShouldTriggerAbility(battlerAtk, battlerAtkPartner, atkPartnerAbility))
+                    {
+                        RETURN_SCORE_PLUS(WEAK_EFFECT);
+                    }
+                }
+                else
+                {
+                    isMoveAffectedByPartnerAbility = FALSE;
+                }
+                break;
+            case ABILITY_SAIGYOUJI_AYAKASHI:
+                if (moveType == TYPE_NEW_NETHER || moveType == TYPE_NEW_NATURE)
+                {
+                    if (moveTarget == TARGET_FOES_AND_ALLY)
+                    {
+                        ADJUST_SCORE(DECENT_EFFECT);
+                    }
+
+                    if (ShouldTriggerAbility(battlerAtk, battlerAtkPartner, atkPartnerAbility))
+                    {
+                        RETURN_SCORE_PLUS(WEAK_EFFECT);
+                    }
+                }
+                else
+                {
+                    isMoveAffectedByPartnerAbility = FALSE;
+                }
+                break;
             case ABILITY_RATTLED:
                 if (!IsBattleMoveStatus(move) && isFriendlyFireOK
                     && (moveType == TYPE_NEW_DARK || moveType == TYPE_NEW_NETHER || moveType == TYPE_NEW_BEAST)
@@ -6197,6 +6233,7 @@ static s32 AI_HPAware(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum
          || (moveType == TYPE_NEW_EARTH && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_EARTH_EATER)
          || (moveType == TYPE_NEW_EARTH && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_SCULPTOR_GOD)
          || ((moveType == TYPE_NEW_DIVINE || moveType == TYPE_NEW_DARK) && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_MAKAI_GODDESS)
+         || ((moveType == TYPE_NEW_NETHER || moveType == TYPE_NEW_NATURE) && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_SAIGYOUJI_AYAKASHI)
          || (moveType == TYPE_NEW_WATER && (gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_DRY_SKIN || gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_WATER_ABSORB)))
         {
             if (gBattleMons[battlerDef].volatiles.healBlock)

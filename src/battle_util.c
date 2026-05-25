@@ -2221,7 +2221,7 @@ static inline u8 GetBattlerSideFaintCounter(enum BattlerId battler)
 // Supreme Overlord adds a x0.1 damage boost for each fainted ally.
 static inline uq4_12_t GetSupremeOverlordModifier(enum BattlerId battler)
 {
-    return UQ_4_12(1.0) + (PercentToUQ4_12(gBattleStruct->supremeOverlordCounter[battler] * 10));
+    return UQ_4_12(1.0) + (PercentToUQ4_12(gBattleStruct->supremeOverlordCounter[battler] * 30));
 }
 
 bool32 HadMoreThanHalfHpNowDoesnt(enum BattlerId battler)
@@ -2360,6 +2360,10 @@ bool32 CanAbilityAbsorbMove(struct DamageContext *ctx)
         break;
     case ABILITY_MAKAI_GODDESS:
         if (ctx->moveType == TYPE_NEW_DARK || ctx->moveType == TYPE_NEW_DIVINE)
+            battleScript = AbsorbedByDrainHpAbility(ctx->battlerDef);
+        break;
+    case ABILITY_SAIGYOUJI_AYAKASHI:
+        if (ctx->moveType == TYPE_NEW_NETHER || ctx->moveType == TYPE_NEW_NATURE)
             battleScript = AbsorbedByDrainHpAbility(ctx->battlerDef);
         break;
     case ABILITY_FANTASY_BREAKER:
@@ -3698,6 +3702,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             }
             break;
         case ABILITY_LAST_CADENZA:
+        case ABILITY_SAIGYOUJI_AYAKASHI:
             if (shouldAbilityTrigger && !IsOpposingSideEmpty(battler))
             {
                 SaveBattlerAttacker(gBattlerAttacker);

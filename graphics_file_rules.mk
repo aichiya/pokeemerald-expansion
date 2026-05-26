@@ -83,6 +83,13 @@ $(BTLANMSPRGFXDIR)/ice_crystals.4bpp: $(BTLANMSPRGFXDIR)/ice_crystals_0.4bpp \
                                       $(BTLANMSPRGFXDIR)/ice_crystals_4.4bpp
 	@cat $^ >$@
 
+$(BTLANMSPRGFXDIR)/classic_ice_crystals.4bpp: $(BTLANMSPRGFXDIR)/classic_ice_crystals_0.4bpp \
+											  $(BTLANMSPRGFXDIR)/classic_ice_crystals_1.4bpp \
+											  $(BTLANMSPRGFXDIR)/classic_ice_crystals_2.4bpp \
+											  $(BTLANMSPRGFXDIR)/classic_ice_crystals_3.4bpp \
+											  $(BTLANMSPRGFXDIR)/classic_ice_crystals_4.4bpp
+	@cat $^ >$@
+
 $(BTLANMSPRGFXDIR)/mud_sand.4bpp: $(BTLANMSPRGFXDIR)/mud_sand_0.4bpp \
                                   $(BTLANMSPRGFXDIR)/mud_sand_1.4bpp
 	@cat $^ >$@

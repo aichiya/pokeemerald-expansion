@@ -3528,5 +3528,26 @@ extern const u32 gBattleAnimSpriteGfx_SoleilStellarBig[];
 extern const u16 gBattleAnimSpritePal_SoleilStellarBig[];
 extern const u32 gBattleAnimSpriteGfx_SeleneStellar[];
 extern const u16 gBattleAnimSpritePal_SeleneStellar[];
+extern const u32 gBattleAnimSpriteGfx_ClassicIceCrystals[];
+extern const u16 gBattleAnimSpritePal_ClassicIceCrystals[];
+extern const u32 gBattleAnimSpriteGfx_ClassicAbsorb[];
+extern const u16 gBattleAnimSpritePal_ClassicAbsorb[];
+extern const u32 gBattleAnimSpriteGfx_ClassicWaterColumn[];
+extern const u16 gBattleAnimSpritePal_ClassicWaterColumn[];
+extern const u32 gBattleAnimSpriteGfx_ClassicGust[];
+extern const u16 gBattleAnimSpritePal_ClassicGust[];
+extern const u32 gBattleAnimSpriteGfx_ClassicLightWall[];
+extern const u16 gBattleAnimSpritePal_ClassicLightWall[];
+extern const u32 gBattleAnimSpriteGfx_ClassicSword2[];
+extern const u16 gBattleAnimSpritePal_ClassicSword2[];
+extern const u32 gBattleAnimSpriteGfx_ClassicCut[];
+extern const u16 gBattleAnimSpritePal_ClassicCut[];
+extern const u32 gBattleAnimSpriteGfx_ClassicRocks[];
+extern const u16 gBattleAnimSpritePal_ClassicRocks[];
+extern const u32 gBattleAnimBgImage_ClassicMist[];
+extern const u16 gBattleAnimBgPalette_ClassicMist[];
+extern const u32 gBattleAnimBgTilemap_ClassicMist[];
+extern const u32 gBattleAnimSpriteGfx_ClassicPoisonBubble[];
+extern const u16 gBattleAnimSpritePal_ClassicPoisonBubble[];
 
 #endif //GUARD_GRAPHICS_H

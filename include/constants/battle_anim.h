@@ -452,8 +452,17 @@
 #define ANIM_TAG_SOLEIL_STELLAR_SMALL       (LAST_ANIM_TAG_EXPANSION + 23)
 #define ANIM_TAG_SOLEIL_STELLAR_BIG         (LAST_ANIM_TAG_EXPANSION + 24)
 #define ANIM_TAG_SELENE_STELLAR             (LAST_ANIM_TAG_EXPANSION + 25)
+#define ANIM_TAG_CLASSIC_ICE_CRYSTALS       (LAST_ANIM_TAG_EXPANSION + 26)
+#define ANIM_TAG_CLASSIC_ABSORB             (LAST_ANIM_TAG_EXPANSION + 27)
+#define ANIM_TAG_CLASSIC_WATER_COLUMN       (LAST_ANIM_TAG_EXPANSION + 28)
+#define ANIM_TAG_CLASSIC_GUST               (LAST_ANIM_TAG_EXPANSION + 29)
+#define ANIM_TAG_CLASSIC_LIGHT_WALL         (LAST_ANIM_TAG_EXPANSION + 30)
+#define ANIM_TAG_CLASSIC_SWORD_2            (LAST_ANIM_TAG_EXPANSION + 31)
+#define ANIM_TAG_CLASSIC_CUT                (LAST_ANIM_TAG_EXPANSION + 32)
+#define ANIM_TAG_CLASSIC_ROCKS              (LAST_ANIM_TAG_EXPANSION + 33)
+#define ANIM_TAG_CLASSIC_POISON_BUBBLE      (LAST_ANIM_TAG_EXPANSION + 34)
 
-#define ANIM_TAG_COUNT                      GET_TRUE_SPRITE_INDEX(ANIM_TAG_SELENE_STELLAR + 1)
+#define ANIM_TAG_COUNT                      GET_TRUE_SPRITE_INDEX(ANIM_TAG_CLASSIC_POISON_BUBBLE + 1)
 
 // battlers
 enum AnimBattler
@@ -569,7 +578,6 @@ enum AnimBattler
 #define BG_RAINBOW_PLAYER 81
 #define BG_RAINBOW_OPPONENT 82
 #define BG_SWAMP 83
-#define BG_COUNT 84
 
 #define BG_LAST_EXPANSION               BG_SWAMP
 #define BG_UBW                          (BG_LAST_EXPANSION + 1)
@@ -577,6 +585,9 @@ enum AnimBattler
 #define BG_ELECTRIC_HERITAGE            (BG_LAST_EXPANSION + 3)
 #define BG_DARKNESS_TERRAIN             (BG_LAST_EXPANSION + 4)
 #define BG_MIASMA_TERRAIN               (BG_LAST_EXPANSION + 5)
+#define BG_CLASSIC_MIST                 (BG_LAST_EXPANSION + 6)
+
+#define BG_COUNT                        (BG_CLASSIC_MIST + 1)
 
 // table ids for general animations (sBattleAnims_General)
 #define B_ANIM_STATS_CHANGE             0

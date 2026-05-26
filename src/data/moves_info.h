@@ -27252,7 +27252,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Bonemerang,
     },
 
-    [MOVE_SPIRAL_HEART] =  // Edited
+    [MOVE_SPIRAL_HEART] =
     {
         .name = COMPOUND_STRING("Spiral Heart"),
         .description = COMPOUND_STRING(
@@ -27273,6 +27273,556 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .chance = 30,
         }),
         .battleAnimScript = gBattleAnimMove_SpringtideStorm,
+    },
+
+    [MOVE_CLASSIC_ICE_BEAM] =
+    {
+        .name = COMPOUND_STRING("Ice Laser"),
+        .description = COMPOUND_STRING(
+            "Blasts the foe with an ice\n"
+        #if B_USE_FROSTBITE == TRUE
+            "laser. May cause frostbite."),
+        #else
+            "laser that may freeze it."),
+        #endif
+        .effect = EFFECT_HIT,
+        .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 90 : 95,
+        .type = TYPE_NEW_ICE,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            // The following effect is also relevant in battle_Pike.c
+            // If you cherry-pick this to use something other than the config, make sure to update it there too
+            .moveEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+            .chance = 10,
+        }),
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON : CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_HAIL},
+        .battleAnimScript = gBattleAnimMove_ClassicIceBeam,
+    },
+
+    [MOVE_CLASSIC_WATERFALL] =
+    {
+        .name = COMPOUND_STRING("Waterfall Climb"),
+        .description = COMPOUND_STRING(
+            "Charges with speed to climb\n"
+            "waterfalls. May flinch."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_WATER,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .makesContact = TRUE,
+        .metronomeBanned = TRUE,
+        #if B_UPDATED_MOVE_DATA >= GEN_4
+            .additionalEffects = ADDITIONAL_EFFECTS({
+                .moveEffect = MOVE_EFFECT_FLINCH,
+                .chance = 20,
+            }),
+        #endif
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BETTER_IF_LAST,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_RAIN_DANCE},
+        .battleAnimScript = gBattleAnimMove_ClassicWaterfall,
+    },
+
+    [MOVE_CLASSIC_SONIC_BOOM] =
+    {
+        .name = COMPOUND_STRING("Sonic Boom"),
+        .description = COMPOUND_STRING(
+            "Launches shock waves that\n"
+            "may reduce Sp. Defense."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_NEW_WIND,
+        .accuracy = 100,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .windMove = TRUE,
+        .metronomeBanned = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .spDef = 1,
+            .chance = 10,
+        }),
+        .soundMove = TRUE,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_REPETITION_NOT_BORING : CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_ClassicSonicBoom,
+    },
+
+    [MOVE_CLASSIC_SPORE] =
+    {
+        .name = COMPOUND_STRING("Spore"),
+        .description = COMPOUND_STRING(
+            "Scatters a cloud of spores\n"
+            "that cause sleep."),
+        .effect = EFFECT_NON_VOLATILE_STATUS,
+        .power = 0,
+        .type = TYPE_NEW_NATURE,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .argument = { .nonVolatileStatus = MOVE_EFFECT_SLEEP },
+        .zMove = { .effect = Z_EFFECT_RESET_STATS },
+        .magicCoatAffected = TRUE,
+        .powderMove = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = COMBO_STARTER_SPORE,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_ClassicSpore,
+    },
+
+    [MOVE_CLASSIC_SWORDS_DANCE] =
+    {
+        .name = COMPOUND_STRING("Swords Dance"),
+        .description = COMPOUND_STRING(
+            "A fighting dance that\n"
+            "sharply raises Attack."),
+        .effect = EFFECT_STAT_CHANGE,
+        .power = 0,
+        .type = TYPE_NEW_METAL,
+        .accuracy = 0,
+        .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 20 : 30,
+        .target = TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_RESET_STATS },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .danceMove = TRUE,
+        .snatchAffected = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = COMBO_STARTER_SWORDS_DANCE,
+        .contestComboMoves = {0},
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .attack = 2,
+        }),
+        .battleAnimScript = gBattleAnimMove_ClassicSwordsDance,
+    },
+
+    [MOVE_CLASSIC_CONFUSE_RAY] =  // To do anim
+    {
+        .name = COMPOUND_STRING("Confuse Ray"),
+        .description = COMPOUND_STRING(
+            "A sinister ray that\n"
+            "confuses the foe."),
+        .effect = EFFECT_CONFUSE,
+        .power = 0,
+        .type = TYPE_NEW_NETHER,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_SPATK_UP_1 },
+        .magicCoatAffected = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION : CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_ClassicConfuseRay,
+    },
+
+    [MOVE_CLASSIC_SLASH] =
+    {
+        .name = COMPOUND_STRING("Slash"),
+        .description = COMPOUND_STRING(
+            "Slashes with claws, etc. Has\n"
+            "a high critical-hit ratio."),
+        .effect = EFFECT_HIT,
+        .power = 90,
+        .type = TYPE_NEW_BEAST,
+        .accuracy = 100,
+        .criticalHitStage = 2,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .slicingMove = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_SCRATCH, COMBO_STARTER_SWORDS_DANCE},
+        .battleAnimScript = gBattleAnimMove_ClassicSlash,
+    },
+
+    [MOVE_CLASSIC_ROCK_SLIDE] =
+    {
+        .name = COMPOUND_STRING("Rock Slide"),
+        .description = COMPOUND_STRING(
+            "Rain of stones hits flying\n"
+            "foes. May cause flinching."),
+        .effect = EFFECT_SUPER_EFFECTIVE_ON_ARG,
+        .power = 85,
+        .type = TYPE_NEW_EARTH,
+        .accuracy = 90,
+        .pp = 15,
+        .target = TARGET_BOTH,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ignoreTypeIfFlyingAndUngrounded = TRUE,
+        .argument = { .type = TYPE_NEW_FLYING },
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_FLINCH,
+            .chance = 30,
+        }),
+        .metronomeBanned = TRUE,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_PREV_MONS : CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_ROCK_THROW},
+        .battleAnimScript = gBattleAnimMove_ClassicRockSlide,
+    },
+
+    [MOVE_CLASSIC_THUNDER_WAVE] =
+    {
+        .name = COMPOUND_STRING("Thunder Wave"),
+        .description = COMPOUND_STRING(
+            "A weak jolt of electricity\n"
+            "that paralyzes the foe."),
+        .effect = EFFECT_NON_VOLATILE_STATUS,
+        .power = 0,
+        .type = TYPE_NEW_ELECTRIC,
+        .accuracy = B_UPDATED_MOVE_DATA >= GEN_7 ? 90 : 100,
+        .pp = 20,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .argument = { .nonVolatileStatus = MOVE_EFFECT_PARALYSIS },
+        .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
+        .magicCoatAffected = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS : CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = COMBO_STARTER_THUNDER_WAVE,
+        .contestComboMoves = {COMBO_STARTER_CHARGE},
+        .battleAnimScript = gBattleAnimMove_ClassicThunderWave,
+    },
+
+    [MOVE_CLASSIC_PSYCHIC] =  // To do anim
+    {
+        .name = COMPOUND_STRING("Psychic"),
+        .description = COMPOUND_STRING(
+            "A powerful burst attack\n"
+            "that may lower Sp. Def."),
+        .effect = EFFECT_HIT,
+        .power = 90,
+        .type = TYPE_NEW_REASON,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .metronomeBanned = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .spDef = 1,
+            .chance = B_UPDATED_MOVE_DATA >= GEN_2 ? 10 : 33,
+        }),
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = COMBO_STARTER_PSYCHIC,
+        .contestComboMoves = {COMBO_STARTER_CALM_MIND, COMBO_STARTER_CONFUSION, COMBO_STARTER_KINESIS},
+        .battleAnimScript = gBattleAnimMove_ClassicPsychic,
+    },
+
+    [MOVE_CLASSIC_REFLECT] =
+    {
+        .name = COMPOUND_STRING("Reflect"),
+        .description = COMPOUND_STRING(
+            "Wall of light cuts physical\n"
+            "damage for 5 turns."),
+        .effect = EFFECT_REFLECT,
+        .power = 0,
+        .type = TYPE_NEW_DREAM,
+        .accuracy = 0,
+        .pp = 20,
+        .target = TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .snatchAffected = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_AVOID_STARTLE_ONCE : CONTEST_EFFECT_AVOID_STARTLE,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_CALM_MIND},
+        .battleAnimScript = gBattleAnimMove_ClassicReflect,
+    },
+
+    [MOVE_CLASSIC_LIGHT_SCREEN] =
+    {
+        .name = COMPOUND_STRING("Light Screen"),
+        .description = COMPOUND_STRING(
+            "Wall of light cuts special\n"
+            "damage for 5 turns."),
+        .effect = EFFECT_LIGHT_SCREEN,
+        .power = 0,
+        .type = TYPE_NEW_DIVINE,
+        .accuracy = 0,
+        .pp = 30,
+        .target = TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .snatchAffected = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_AVOID_STARTLE_ONCE : CONTEST_EFFECT_AVOID_STARTLE,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_CALM_MIND},
+        .battleAnimScript = gBattleAnimMove_ClassicLightScreen,
+    },
+
+    [MOVE_CLASSIC_GLARE] =
+    {
+        .name = COMPOUND_STRING("Glare"),
+        .description = COMPOUND_STRING(
+            "Intimidates and frightens\n"
+            "the foe into paralysis."),
+        .accuracy = 100,
+        .effect = EFFECT_NON_VOLATILE_STATUS,
+        .power = 0,
+        .type = TYPE_NORMAL,
+        .pp = 30,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .argument = { .nonVolatileStatus = MOVE_EFFECT_PARALYSIS },
+        .zMove = { .effect = Z_EFFECT_SPDEF_UP_1 },
+        .magicCoatAffected = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BETTER_IF_SAME_TYPE : CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = COMBO_STARTER_GLARE,
+        .contestComboMoves = {COMBO_STARTER_LEER},
+        .battleAnimScript = gBattleAnimMove_ClassicGlare,
+    },
+
+    [MOVE_CLASSIC_CURSE] = // To do anim
+    {
+        .name = COMPOUND_STRING("Curse"),
+        .description = COMPOUND_STRING(
+            "A move that functions\n"
+            "differently for GHOSTS."),
+        .effect = EFFECT_CURSE,
+        .power = 0,
+        .type = B_UPDATED_MOVE_TYPES >= GEN_5 ? TYPE_NEW_NETHER : TYPE_MYSTERY,
+        .accuracy = 0,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_CURSE },
+        .ignoresProtect = TRUE,
+        .ignoresSubstitute = B_UPDATED_MOVE_FLAGS >= GEN_5,
+        .mirrorMoveBanned = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_NEXT_APPEAL_LATER,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = COMBO_STARTER_CURSE,
+        .contestComboMoves = {0},
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = STAT_CHANGE_EFFECT_MINUS,
+            .speed = 1,
+        },
+        {
+            .moveEffect = STAT_CHANGE_EFFECT_PLUS,
+            .attack = 1,
+            .defense = 1,
+        }),
+        .battleAnimScript = gBattleAnimMove_Curse,
+    },
+
+    [MOVE_CLASSIC_TOXIC] =
+    {
+        .name = COMPOUND_STRING("Toxic"),
+        .description = COMPOUND_STRING(
+            "Poisons the foe with an\n"
+            "intensifying toxin."),
+        .effect = EFFECT_NON_VOLATILE_STATUS,
+        .power = 0,
+        .type = TYPE_NEW_MIASMA,
+        .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 90 : 85,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .metronomeBanned = TRUE,
+        .argument = { .nonVolatileStatus = MOVE_EFFECT_TOXIC },
+        .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
+        .magicCoatAffected = TRUE,
+        .alwaysHitsOnSameType = B_TOXIC_NEVER_MISS >= GEN_6,
+        .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = COMBO_STARTER_TOXIC,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_ClassicToxic,
+    },
+
+    [MOVE_CLASSIC_AEROBLAST] =  // To do anim
+    {
+        .name = COMPOUND_STRING("Aeroblast"),
+        .description = COMPOUND_STRING(
+            "Launches a vacuumed blast.\n"
+            "High critical-hit ratio."),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_NEW_FLYING,
+        .accuracy = 95,
+        .criticalHitStage = B_UPDATED_MOVE_DATA >= GEN_3 ? 1 : 2,
+        .pp = 5,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .windMove = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL, //C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_EXCITES_AUDIENCE_MORE_IF_LAST :
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_ClassicAeroblast,
+    },
+
+    [MOVE_CLASSIC_GIGA_DRAIN] =
+    {
+        .name = COMPOUND_STRING("Giga Drain"),
+        .description = COMPOUND_STRING(
+            "An attack that steals half\n"
+            "the damage inflicted."),
+        .effect = EFFECT_ABSORB,
+        .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 75 : 60,
+        .type = TYPE_NEW_NATURE,
+        .accuracy = 100,
+        .pp = B_UPDATED_MOVE_DATA >= GEN_4 ? 10 : 5,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = { .absorbPercentage = 50 },
+        .metronomeBanned = TRUE,
+        .ignoresKingsRock = (B_UPDATED_MOVE_FLAGS == GEN_3 || B_UPDATED_MOVE_FLAGS == GEN_4),
+        .healingMove = B_HEAL_BLOCKING >= GEN_6,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON : CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_GROWTH},
+        .battleAnimScript = gBattleAnimMove_ClassicGigaDrain,
+    },
+
+    [MOVE_CLASSIC_SLUDGE_BOMB] =  // To do anim
+    {
+        .name = COMPOUND_STRING("Sludge Bomb"),
+        .description = COMPOUND_STRING(
+            "Sludge is hurled to inflict\n"
+            "damage. May also poison."),
+        .effect = EFFECT_HIT,
+        .power = 90,
+        .type = TYPE_NEW_NETHER,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .ballisticMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_POISON,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = COMBO_STARTER_SLUDGE_BOMB,
+        .contestComboMoves = {COMBO_STARTER_SLUDGE},
+        .battleAnimScript = gBattleAnimMove_SludgeBomb,
+    },
+
+    [MOVE_CLASSIC_SHADOW_BALL] =  // To do anim
+    {
+        .name = COMPOUND_STRING("Shadow Ball"),
+        .description = COMPOUND_STRING(
+            "Hurls a black blob that may\n"
+            "lower the foe's Defense."),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_GHOST,
+        .accuracy = 100,
+        .pp = 15,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ballisticMove = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_STAT_MINUS,
+            .defense = 1,
+            .chance = 20,
+        }),
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_HIGHLY_APPEALING : CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_ShadowBall,
+    },
+
+    [MOVE_CLASSIC_PROTECT] =  // To do anim
+    {
+        .name = COMPOUND_STRING("Protect"),
+        .description = COMPOUND_STRING(
+            "Evades attack, but may fail\n"
+            "if used in succession."),
+        .effect = EFFECT_PROTECT,
+        .power = 0,
+        .type = TYPE_NEW_ILLUSION,
+        .accuracy = 0,
+        .pp = 10,
+        .target = TARGET_USER,
+        #if B_UPDATED_MOVE_DATA >= GEN_5
+            .priority = 4,
+        #elif B_UPDATED_MOVE_DATA >= GEN_3
+            .priority = 3,
+        #else
+            .priority = 2,
+        #endif
+        .category = DAMAGE_CATEGORY_STATUS,
+        .argument = { .protectMethod = PROTECT_NORMAL },
+        .zMove = { .effect = Z_EFFECT_RESET_STATS },
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .metronomeBanned = TRUE,
+        .copycatBanned = TRUE,
+        .assistBanned = TRUE,
+        .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_AVOID_STARTLE_ONCE : CONTEST_EFFECT_AVOID_STARTLE,
+        .contestCategory = CONTEST_CATEGORY_CUTE,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_HARDEN},
+        .battleAnimScript = gBattleAnimMove_Protect,
     },
 
 // ============= Start Shadow Moves ===================

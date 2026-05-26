@@ -1458,6 +1458,15 @@ const struct BattleAnimation gBattleAnimTable[ANIM_TAG_COUNT] =
     BATTLE_ANIMATION(ANIM_TAG_SOLEIL_STELLAR_SMALL, gBattleAnimSpriteGfx_SoleilStellarSmall, 0x0280, gBattleAnimSpritePal_SoleilStellarSmall),
     BATTLE_ANIMATION(ANIM_TAG_SOLEIL_STELLAR_BIG, gBattleAnimSpriteGfx_SoleilStellarBig, 0x0A00, gBattleAnimSpritePal_SoleilStellarBig),
     BATTLE_ANIMATION(ANIM_TAG_SELENE_STELLAR, gBattleAnimSpriteGfx_SeleneStellar, 0x0800, gBattleAnimSpritePal_SeleneStellar),
+    BATTLE_ANIMATION(ANIM_TAG_CLASSIC_ICE_CRYSTALS, gBattleAnimSpriteGfx_ClassicIceCrystals, 0x01c0, gBattleAnimSpritePal_ClassicIceCrystals),
+    BATTLE_ANIMATION(ANIM_TAG_CLASSIC_ABSORB, gBattleAnimSpriteGfx_ClassicAbsorb, 0x0180, gBattleAnimSpritePal_ClassicAbsorb),
+    BATTLE_ANIMATION(ANIM_TAG_CLASSIC_WATER_COLUMN, gBattleAnimSpriteGfx_ClassicWaterColumn, 0x0400, gBattleAnimSpritePal_ClassicWaterColumn),
+    BATTLE_ANIMATION(ANIM_TAG_CLASSIC_GUST, gBattleAnimSpriteGfx_ClassicGust, 0x0400, gBattleAnimSpritePal_ClassicGust),
+    BATTLE_ANIMATION(ANIM_TAG_CLASSIC_LIGHT_WALL, gBattleAnimSpriteGfx_ClassicLightWall, 0x0800, gBattleAnimSpritePal_ClassicLightWall),
+    BATTLE_ANIMATION(ANIM_TAG_CLASSIC_SWORD_2, gBattleAnimSpriteGfx_ClassicSword2, 0x0800, gBattleAnimSpritePal_ClassicSword2),
+    BATTLE_ANIMATION(ANIM_TAG_CLASSIC_CUT, gBattleAnimSpriteGfx_ClassicCut, 0x0800, gBattleAnimSpritePal_ClassicCut),
+    BATTLE_ANIMATION(ANIM_TAG_CLASSIC_ROCKS, gBattleAnimSpriteGfx_ClassicRocks, 0x0C00, gBattleAnimSpritePal_ClassicRocks),
+    BATTLE_ANIMATION(ANIM_TAG_CLASSIC_POISON_BUBBLE, gBattleAnimSpriteGfx_ClassicPoisonBubble, 0x0180, gBattleAnimSpritePal_ClassicPoisonBubble),
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
@@ -1552,4 +1561,5 @@ const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
     [BG_ELECTRIC_HERITAGE]         = {gBattleAnimBgImage_ElectricHeritage,        gBattleAnimBgPalette_ElectricHeritage,        gBattleAnimBgTilemap_ElectricHeritage},
     [BG_DARKNESS_TERRAIN]          = {gBattleAnimBgImage_DarknessTerrain,         gBattleAnimBgPalette_DarknessTerrain,         gBattleAnimBgTilemap_DarknessTerrain},
     [BG_MIASMA_TERRAIN]            = {gBattleAnimBgImage_MiasmaTerrain,           gBattleAnimBgPalette_MiasmaTerrain,           gBattleAnimBgTilemap_MiasmaTerrain},
+    [BG_CLASSIC_MIST]              = {gBattleAnimBgImage_ClassicMist,             gBattleAnimBgPalette_ClassicMist,             gBattleAnimBgTilemap_ClassicMist},
 };

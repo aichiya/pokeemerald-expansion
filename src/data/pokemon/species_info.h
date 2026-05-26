@@ -15637,7 +15637,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_MoeBellossom,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 13, SHADOW_SIZE_L)
         FOOTPRINT(MoeBellossom)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -25344,9 +25344,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_MoeNinetalesAlola,
         .shinyPalette = gMonShinyPalette_MoeNinetalesAlola,
         .iconSprite = gMonIcon_MoeNinetalesAlola,
-        .iconPalIndex = 1,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(MoeNinetalesAlola)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -98694,9 +98694,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_PcMilkyRoseSuper,
         .shinyPalette = gMonShinyPalette_PcMilkyRoseSuper,
         .iconSprite = gMonIcon_PcMilkyRoseSuper,
-        .iconPalIndex = 2,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 8, SHADOW_SIZE_M)
         FOOTPRINT(PcMilkyRoseSuper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -100790,7 +100790,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_GUTS, ABILITY_GUTS, ABILITY_GUTS },
+        .abilities = { ABILITY_UNSEEN_FIST, ABILITY_UNSEEN_FIST, ABILITY_UNSEEN_FIST },
         .bodyColor = FRANCHISE_ORIGIN_PRECURE,
         .speciesName = _("Itsuki"),
         .cryId = CRY_NONE, // CRY_PC_CURE_SUNSHINE_LINE,
@@ -100820,7 +100820,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_PcCureSunshineUntransformed,
         .shinyPalette = gMonShinyPalette_PcCureSunshineUntransformed,
         .iconSprite = gMonIcon_PcCureSunshineUntransformed,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 0, SHADOW_SIZE_L)
         FOOTPRINT(PcCureSunshineUntransformed)
@@ -100875,7 +100875,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_GUTS, ABILITY_NEUROFORCE, ABILITY_DROUGHT },
+        .abilities = { ABILITY_UNSEEN_FIST, ABILITY_INNER_POWER, ABILITY_DROUGHT },
         .bodyColor = FRANCHISE_ORIGIN_PRECURE,
         .speciesName = _("Sunshine"),
         .cryId = CRY_NONE, // CRY_PC_CURE_SUNSHINE_LINE,
@@ -100905,7 +100905,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_PcCureSunshineNormal,
         .shinyPalette = gMonShinyPalette_PcCureSunshineNormal,
         .iconSprite = gMonIcon_PcCureSunshineNormal,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 0, SHADOW_SIZE_L)
         FOOTPRINT(PcCureSunshineNormal)
@@ -100960,7 +100960,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_GUTS, ABILITY_NEUROFORCE, ABILITY_DROUGHT },
+        .abilities = { ABILITY_UNSEEN_FIST, ABILITY_INNER_POWER, ABILITY_DROUGHT },
         .bodyColor = FRANCHISE_ORIGIN_PRECURE,
         .speciesName = _("Sunshine"),
         .cryId = CRY_NONE, // CRY_PC_CURE_SUNSHINE_LINE,
@@ -100990,9 +100990,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_PcCureSunshineSuper,
         .shinyPalette = gMonShinyPalette_PcCureSunshineSuper,
         .iconSprite = gMonIcon_PcCureSunshineSuper,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 10, SHADOW_SIZE_M)
         FOOTPRINT(PcCureSunshineSuper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -101075,7 +101075,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_PcCureMoonlightUntransformed,
         .shinyPalette = gMonShinyPalette_PcCureMoonlightUntransformed,
         .iconSprite = gMonIcon_PcCureMoonlightUntransformed,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 0, SHADOW_SIZE_L)
         FOOTPRINT(PcCureMoonlightUntransformed)
@@ -101160,7 +101160,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_PcCureMoonlightNormal,
         .shinyPalette = gMonShinyPalette_PcCureMoonlightNormal,
         .iconSprite = gMonIcon_PcCureMoonlightNormal,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 0, SHADOW_SIZE_L)
         FOOTPRINT(PcCureMoonlightNormal)
@@ -101245,9 +101245,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_PcCureMoonlightSuper,
         .shinyPalette = gMonShinyPalette_PcCureMoonlightSuper,
         .iconSprite = gMonIcon_PcCureMoonlightSuper,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-1, 8, SHADOW_SIZE_M)
         FOOTPRINT(PcCureMoonlightSuper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -118619,7 +118619,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .teachableLearnset = sThSendaiOriginTeachableLearnset,
         .eggMoveLearnset = sThSendaiOriginEggMoveLearnset,
 
-        .formSpeciesIdTable = sThSendaiFormSpeciesIdTable,
+//        .formSpeciesIdTable = 
 //        .formChangeTable = 
         .teachingType = DEFAULT_LEARNING,
 

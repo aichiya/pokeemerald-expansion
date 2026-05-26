@@ -2,7 +2,7 @@
   "id": "MAP_ANOTHER_WORLD_MILKY_ROAD_INNER",
   "name": "AnotherWorldMilkyRoad_Inner",
   "layout": "LAYOUT_ANOTHER_WORLD_MILKY_ROAD_INNER",
-  "music": "MUS_PKMN_GLITCHXCITY_ETERNA_FOREST",
+  "music": "MUS_PKMN_SLP_CYAN_BEACH_PIANO",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY_CLOUDS",

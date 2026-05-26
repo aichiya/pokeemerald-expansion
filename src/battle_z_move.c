@@ -135,6 +135,7 @@ static const struct SignatureZMove sSignatureZMoves[] =
     {SPECIES_MOE_SNORLAX,             ITEM_SNORLIUM_Z,           MOVE_GIGA_IMPACT,         MOVE_PULVERIZING_PANCAKE},
 
     {SPECIES_SH_VIVIT_ANDROID,        ITEM_SOLGANIUM_Z,          MOVE_SUNSTEEL_STRIKE,     MOVE_SEARING_SUNRAZE_SMASH},
+    {SPECIES_TH_REIMU_CTC,            ITEM_LUNALIUM_Z,           MOVE_LUSTER_PURGE,        MOVE_LIGHT_THAT_BURNS_THE_SKY},
 };
 
 static const u8 sText_ResetStats[] = _("Reset Lowered Stats");

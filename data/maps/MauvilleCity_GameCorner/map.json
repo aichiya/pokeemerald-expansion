@@ -3,6 +3,7 @@
   "name": "MauvilleCity_GameCorner",
   "layout": "LAYOUT_MAUVILLE_CITY_GAME_CORNER",
   "music": "MUS_RG_FUCHSIA",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_MAHOGANY_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

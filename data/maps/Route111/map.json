@@ -3,6 +3,7 @@
   "name": "Route111",
   "layout": "LAYOUT_ROUTE111",
   "music": "MUS_THPPME_399_FLOWER_LAND",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_GARDEN_OF_THE_SUN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

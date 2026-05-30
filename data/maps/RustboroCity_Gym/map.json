@@ -3,6 +3,7 @@
   "name": "RustboroCity_Gym",
   "layout": "LAYOUT_RUSTBORO_CITY_GYM",
   "music": "MUS_GYM",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_LAKE_OF_RAGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

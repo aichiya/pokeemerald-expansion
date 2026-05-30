@@ -3,6 +3,7 @@
   "name": "Route133",
   "layout": "LAYOUT_ROUTE133",
   "music": "MUS_THPPZGSK_326A_CITY_OF_FLOWER",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_KASEPUHAN_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

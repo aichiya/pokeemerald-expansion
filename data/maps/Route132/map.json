@@ -3,6 +3,7 @@
   "name": "Route132",
   "layout": "LAYOUT_ROUTE132",
   "music": "MUS_GS2_012_PEACEFUL_LEMURIA",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_DEVATA_ISLETS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

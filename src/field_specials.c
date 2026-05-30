@@ -1029,7 +1029,7 @@ u16 GetWeekCount(void)
 
 u8 GetLeadMonFriendshipScore(void)
 {
-    return GetMonFriendshipScore(&gParties[B_TRAINER_0][GetLeadMonIndex()]);
+    return GetMonFriendshipScore(&gParties[B_TRAINER_PLAYER][GetLeadMonIndex()]);
 }
 
 static void CB2_FieldShowRegionMap(void)
@@ -1320,7 +1320,7 @@ void ResetTrickHouseNuggetFlag(void)
 
 bool8 CheckLeadMonCool(void)
 {
-    if (GetMonData(&gParties[B_TRAINER_0][GetLeadMonIndex()], MON_DATA_COOL) < 200)
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][GetLeadMonIndex()], MON_DATA_COOL) < 200)
         return FALSE;
 
     return TRUE;
@@ -1328,7 +1328,7 @@ bool8 CheckLeadMonCool(void)
 
 bool8 CheckLeadMonBeauty(void)
 {
-    if (GetMonData(&gParties[B_TRAINER_0][GetLeadMonIndex()], MON_DATA_BEAUTY) < 200)
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][GetLeadMonIndex()], MON_DATA_BEAUTY) < 200)
         return FALSE;
 
     return TRUE;
@@ -1336,7 +1336,7 @@ bool8 CheckLeadMonBeauty(void)
 
 bool8 CheckLeadMonCute(void)
 {
-    if (GetMonData(&gParties[B_TRAINER_0][GetLeadMonIndex()], MON_DATA_CUTE) < 200)
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][GetLeadMonIndex()], MON_DATA_CUTE) < 200)
         return FALSE;
 
     return TRUE;
@@ -1344,7 +1344,7 @@ bool8 CheckLeadMonCute(void)
 
 bool8 CheckLeadMonSmart(void)
 {
-    if (GetMonData(&gParties[B_TRAINER_0][GetLeadMonIndex()], MON_DATA_SMART) < 200)
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][GetLeadMonIndex()], MON_DATA_SMART) < 200)
         return FALSE;
 
     return TRUE;
@@ -1352,7 +1352,7 @@ bool8 CheckLeadMonSmart(void)
 
 bool8 CheckLeadMonTough(void)
 {
-    if (GetMonData(&gParties[B_TRAINER_0][GetLeadMonIndex()], MON_DATA_TOUGH) < 200)
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][GetLeadMonIndex()], MON_DATA_TOUGH) < 200)
         return FALSE;
 
     return TRUE;
@@ -1365,7 +1365,7 @@ void IsGrassTypeInParty(void)
     struct Pokemon *pokemon;
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        pokemon = &gParties[B_TRAINER_0][i];
+        pokemon = &gParties[B_TRAINER_PLAYER][i];
         if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
         {
             species = GetMonData(pokemon, MON_DATA_SPECIES);
@@ -1399,7 +1399,7 @@ void RemoveCameraObject(void)
 
 u8 GetPokeblockNameByMonNature(void)
 {
-    return CopyMonFavoritePokeblockName(GetNature(&gParties[B_TRAINER_0][GetLeadMonIndex()]), gStringVar1);
+    return CopyMonFavoritePokeblockName(GetNature(&gParties[B_TRAINER_PLAYER][GetLeadMonIndex()]), gStringVar1);
 }
 
 void GetSecretBaseNearbyMapName(void)
@@ -1502,7 +1502,7 @@ bool8 FoundAbandonedShipRoom6Key(void)
 
 bool8 LeadMonHasEffortRibbon(void)
 {
-    return GetMonData(&gParties[B_TRAINER_0][GetLeadMonIndex()], MON_DATA_EFFORT_RIBBON);
+    return GetMonData(&gParties[B_TRAINER_PLAYER][GetLeadMonIndex()], MON_DATA_EFFORT_RIBBON);
 }
 
 void GiveLeadMonEffortRibbon(void)
@@ -1512,7 +1512,7 @@ void GiveLeadMonEffortRibbon(void)
     IncrementGameStat(GAME_STAT_RECEIVED_RIBBONS);
     FlagSet(FLAG_SYS_RIBBON_GET);
     ribbonSet = TRUE;
-    leadMon = &gParties[B_TRAINER_0][GetLeadMonIndex()];
+    leadMon = &gParties[B_TRAINER_PLAYER][GetLeadMonIndex()];
     SetMonData(leadMon, MON_DATA_EFFORT_RIBBON, &ribbonSet);
     if (GetRibbonCount(leadMon) > NUM_CUTIES_RIBBONS)
         TryPutSpotTheCutiesOnAir(leadMon, MON_DATA_EFFORT_RIBBON);
@@ -2124,7 +2124,7 @@ void PartyMonBecomeEggRandom(void)
 
 bool8 Special_AreLeadMonEVsMaxedOut(void)
 {
-    if (GetMonEVCount(&gParties[B_TRAINER_0][GetLeadMonIndex()]) >= MAX_TOTAL_EVS)
+    if (GetMonEVCount(&gParties[B_TRAINER_PLAYER][GetLeadMonIndex()]) >= MAX_TOTAL_EVS)
         return TRUE;
 
     return FALSE;
@@ -2158,18 +2158,18 @@ void SetShoalItemFlag(u16 unused)
 void LoadWallyZigzagoon(void)
 {
     u16 monData;
-    CreateMon(&gParties[B_TRAINER_0][0], SPECIES_YYYI_WAKABA_YUUSHA, 69, Random32(), OTID_STRUCT_PLAYER_ID);
+    CreateMon(&gParties[B_TRAINER_PLAYER][0], SPECIES_YYYI_WAKABA_YUUSHA, 69, Random32(), OTID_STRUCT_PLAYER_ID);
     monData = TRUE;
-    SetMonData(&gParties[B_TRAINER_0][0], MON_DATA_ABILITY_NUM, &monData);
+    SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_ABILITY_NUM, &monData);
     monData = MOVE_HOLD_BACK;
-    SetMonData(&gParties[B_TRAINER_0][0], MON_DATA_MOVE1, &monData);
+    SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE1, &monData);
     monData = MOVE_BEHEMOTH_BLADE;
-    SetMonData(&gParties[B_TRAINER_0][0], MON_DATA_MOVE2, &monData);
+    SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE2, &monData);
     monData = MOVE_SPACIAL_REND;
-	SetMonData(&gParties[B_TRAINER_0][0], MON_DATA_MOVE3, &monData);
+	SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE3, &monData);
     monData = MOVE_SWORDS_DANCE;
-	SetMonData(&gParties[B_TRAINER_0][0], MON_DATA_MOVE4, &monData);
-    CalculateMonStats(&gParties[B_TRAINER_0][0]);
+	SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE4, &monData);
+    CalculateMonStats(&gParties[B_TRAINER_PLAYER][0]);
     HealPlayerParty();
 }
 
@@ -2180,7 +2180,7 @@ bool8 IsStarterInParty(void)
     u8 partyCount = CalculatePlayerPartyCount();
     for (i = 0; i < partyCount; i++)
     {
-        if (GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_SPECIES_OR_EGG) == starter)
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG) == starter)
             return TRUE;
     }
     return FALSE;
@@ -2265,8 +2265,8 @@ u8 GetLeadMonIndex(void)
     u8 partyCount = CalculatePlayerPartyCount();
     for (i = 0; i < partyCount; i++)
     {
-        if (GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG
-         && GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE)
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG
+         && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE)
             return i;
     }
     return 0;
@@ -2274,7 +2274,7 @@ u8 GetLeadMonIndex(void)
 
 enum Species ScriptGetPartyMonSpecies(void)
 {
-    return GetMonData(&gParties[B_TRAINER_0][gSpecialVar_0x8004], MON_DATA_SPECIES_OR_EGG, NULL);
+    return GetMonData(&gParties[B_TRAINER_PLAYER][gSpecialVar_0x8004], MON_DATA_SPECIES_OR_EGG, NULL);
 }
 
 enum Species ScriptGetSelectedMonSpecies(void)
@@ -2391,7 +2391,7 @@ bool8 IsBadEggInParty(void)
 
     for (i = 0; i < partyCount; i++)
     {
-        if (GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_SANITY_IS_BAD_EGG) == TRUE)
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SANITY_IS_BAD_EGG) == TRUE)
             return TRUE;
     }
 
@@ -5020,7 +5020,7 @@ void TrySkyBattle(void)
     }
     for (i = 0; i < CalculatePlayerPartyCount(); i++)
     {
-        struct Pokemon* pokemon = &gParties[B_TRAINER_0][i];
+        struct Pokemon* pokemon = &gParties[B_TRAINER_PLAYER][i];
         if (CanMonParticipateInSkyBattle(pokemon) && GetMonData(pokemon, MON_DATA_HP) > 0)
         {
             PreparePartyForSkyBattle();
@@ -5041,7 +5041,7 @@ void PreparePartyForSkyBattle(void)
 
     for (i = 0; i < partyCount; i++)
     {
-        struct Pokemon* pokemon = &gParties[B_TRAINER_0][i];
+        struct Pokemon* pokemon = &gParties[B_TRAINER_PLAYER][i];
 
         if (CanMonParticipateInSkyBattle(pokemon))
             participatingPokemonSlot += 1 << i;
@@ -5095,7 +5095,7 @@ bool32 CheckPartyHasSpecies(enum Species givenSpecies)
     u32 partyIndex;
 
     for (partyIndex = 0; partyIndex < CalculatePlayerPartyCount(); partyIndex++)
-        if (GetMonData(&gParties[B_TRAINER_0][partyIndex], MON_DATA_SPECIES) == givenSpecies)
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][partyIndex], MON_DATA_SPECIES) == givenSpecies)
             return TRUE;
 
     return FALSE;
@@ -5143,7 +5143,7 @@ static void UIShowMoveList(u8 taskId)
     gSpecialVar_0x8000 = gTasks[taskId].tPartyIndex;
     gSpecialVar_0x8001 = gTasks[taskId].tMove;
     DestroyTask(taskId);
-    ShowSelectMovePokemonSummaryScreen(gParties[B_TRAINER_0], gTasks[taskId].tPartyIndex, CB2_ReturnToFieldWhileLearningMove, gTasks[taskId].tMove);
+    ShowSelectMovePokemonSummaryScreen(gParties[B_TRAINER_PLAYER], gTasks[taskId].tPartyIndex, CB2_ReturnToFieldWhileLearningMove, gTasks[taskId].tMove);
 }
 
 static const struct MoveLearnUI sMoveLearnUI =
@@ -5224,25 +5224,25 @@ void GetCodeFeedback(void)
 void SetHiddenNature(void)
 {
     u32 hiddenNature = gSpecialVar_Result;
-    SetMonData(&gParties[B_TRAINER_0][gSpecialVar_0x8004], MON_DATA_HIDDEN_NATURE, &hiddenNature);
-    CalculateMonStats(&gParties[B_TRAINER_0][gSpecialVar_0x8004]);
+    SetMonData(&gParties[B_TRAINER_PLAYER][gSpecialVar_0x8004], MON_DATA_HIDDEN_NATURE, &hiddenNature);
+    CalculateMonStats(&gParties[B_TRAINER_PLAYER][gSpecialVar_0x8004]);
 }
 
 void SetAbility(void)
 {
     u32 ability = gSpecialVar_Result;
-    SetMonData(&gParties[B_TRAINER_0][gSpecialVar_0x8004], MON_DATA_ABILITY_NUM, &ability);
+    SetMonData(&gParties[B_TRAINER_PLAYER][gSpecialVar_0x8004], MON_DATA_ABILITY_NUM, &ability);
 }
 
 void DaisyMassageServices(void)
 {
-    AdjustFriendship(&gParties[B_TRAINER_0][gSpecialVar_0x8004], FRIENDSHIP_EVENT_MASSAGE);
+    AdjustFriendship(&gParties[B_TRAINER_PLAYER][gSpecialVar_0x8004], FRIENDSHIP_EVENT_MASSAGE);
     VarSet(VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 0);
 }
 
 u8 GetLeadMonFriendship(void)
 {
-    struct Pokemon * pokemon = &gParties[B_TRAINER_0][GetLeadMonIndex()];
+    struct Pokemon * pokemon = &gParties[B_TRAINER_PLAYER][GetLeadMonIndex()];
     if (GetMonData(pokemon, MON_DATA_FRIENDSHIP) == 255)
         return 6;
     else if (GetMonData(pokemon, MON_DATA_FRIENDSHIP) >= 200)
@@ -5286,7 +5286,7 @@ bool8 CapeBrinkGetMoveToTeachLeadPokemon(void)
     struct Pokemon *leadMon;
 
     leadMonSlot = GetLeadMonIndex();
-    leadMon = &gParties[B_TRAINER_0][leadMonSlot];
+    leadMon = &gParties[B_TRAINER_PLAYER][leadMonSlot];
 
     if (GetMonData(leadMon, MON_DATA_FRIENDSHIP) != 255)
         return FALSE;
@@ -5578,7 +5578,7 @@ bool8 DoesPlayerPartyContainSpecies(void)
     u8 i;
     for (i = 0; i < partyCount; i++)
     {
-        if (GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_SPECIES_OR_EGG, NULL) == gSpecialVar_0x8004)
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG, NULL) == gSpecialVar_0x8004)
             return TRUE;
     }
     return FALSE;
@@ -6273,8 +6273,8 @@ bool8 PlayerPartyContainsSpeciesWithPlayerID(void)
     u8 i;
     for (i = 0; i < playerCount; i++)
     {
-        if (GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_SPECIES_OR_EGG, NULL) == gSpecialVar_0x8004
-            && GetPlayerIDAsU32() == GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_OT_ID, NULL))
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG, NULL) == gSpecialVar_0x8004
+            && GetPlayerIDAsU32() == GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_OT_ID, NULL))
             return TRUE;
     }
     return FALSE;
@@ -6374,8 +6374,8 @@ void UpdateTrainerCardPhotoIcons(void)
     partyCount = CalculatePlayerPartyCount();
     for (i = 0; i < partyCount; i++)
     {
-        species[i] = GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_SPECIES_OR_EGG, NULL);
-        personality[i] = GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_PERSONALITY, NULL);
+        species[i] = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG, NULL);
+        personality[i] = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_PERSONALITY, NULL);
     }
     VarSet(VAR_TRAINER_CARD_MON_ICON_1, SpeciesToMailSpecies(species[0], personality[0]));
     VarSet(VAR_TRAINER_CARD_MON_ICON_2, SpeciesToMailSpecies(species[1], personality[1]));

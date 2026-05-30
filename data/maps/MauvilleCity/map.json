@@ -3,6 +3,7 @@
   "name": "MauvilleCity",
   "layout": "LAYOUT_MAUVILLE_CITY",
   "music": "MUS_HG_CHERRYGROVE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_MAHOGANY_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

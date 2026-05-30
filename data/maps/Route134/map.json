@@ -3,6 +3,7 @@
   "name": "Route134",
   "layout": "LAYOUT_ROUTE134",
   "music": "MUS_DGMN_STORY2_DARKMOON_CITY",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_CILA_PRISON_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

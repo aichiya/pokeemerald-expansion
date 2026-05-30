@@ -3,6 +3,7 @@
   "name": "Route124",
   "layout": "LAYOUT_ROUTE124",
   "music": "MUS_ETC_JOGJA_ISTIMEWA",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_YOGYAKARTA",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

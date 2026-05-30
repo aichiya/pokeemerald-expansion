@@ -3,6 +3,7 @@
   "name": "Route104",
   "layout": "LAYOUT_ROUTE104",
   "music": "MUS_THPPME_280_ULTIMATE_TRUTH",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_MUENZUKA",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

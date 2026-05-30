@@ -3,6 +3,7 @@
   "name": "Route125",
   "layout": "LAYOUT_ROUTE125",
   "music": "MUS_ETC_STASIUN_BALAPAN_SOLO",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_SOLO",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -3,6 +3,7 @@
   "name": "JohtoRoute36",
   "layout": "LAYOUT_JOHTO_ROUTE36",
   "music": "MUS_HG_ROUTE34",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_ROUTE_36",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

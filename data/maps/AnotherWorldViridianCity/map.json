@@ -3,6 +3,7 @@
   "name": "AnotherWorldViridianCity",
   "layout": "LAYOUT_ANOTHER_WORLD_VIRIDIAN_CITY",
   "music": "MUS_GSC_PEWTER_CITY_GBC_STYLE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

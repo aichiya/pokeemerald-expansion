@@ -199,18 +199,18 @@ void Special_ShowDiploma(void)
 
 void DeletePlayerParty(void)
 {
-    ZeroMonData(&gParties[B_TRAINER_0][0]);
-    ZeroMonData(&gParties[B_TRAINER_0][1]);
-    ZeroMonData(&gParties[B_TRAINER_0][2]);
-    ZeroMonData(&gParties[B_TRAINER_0][3]);
-    ZeroMonData(&gParties[B_TRAINER_0][4]);
-    ZeroMonData(&gParties[B_TRAINER_0][5]);
-    ZeroMonData(&gParties[B_TRAINER_2][0]);
-    ZeroMonData(&gParties[B_TRAINER_2][1]);
-    ZeroMonData(&gParties[B_TRAINER_2][2]);
-    ZeroMonData(&gParties[B_TRAINER_2][3]);
-    ZeroMonData(&gParties[B_TRAINER_2][4]);
-    ZeroMonData(&gParties[B_TRAINER_2][5]);
+    ZeroMonData(&gParties[B_TRAINER_PLAYER][0]);
+    ZeroMonData(&gParties[B_TRAINER_PLAYER][1]);
+    ZeroMonData(&gParties[B_TRAINER_PLAYER][2]);
+    ZeroMonData(&gParties[B_TRAINER_PLAYER][3]);
+    ZeroMonData(&gParties[B_TRAINER_PLAYER][4]);
+    ZeroMonData(&gParties[B_TRAINER_PLAYER][5]);
+    ZeroMonData(&gParties[B_TRAINER_PARTNER][0]);
+    ZeroMonData(&gParties[B_TRAINER_PARTNER][1]);
+    ZeroMonData(&gParties[B_TRAINER_PARTNER][2]);
+    ZeroMonData(&gParties[B_TRAINER_PARTNER][3]);
+    ZeroMonData(&gParties[B_TRAINER_PARTNER][4]);
+    ZeroMonData(&gParties[B_TRAINER_PARTNER][5]);
 }
 
 void Special_ViewVoltorbFlip(void)
@@ -1529,7 +1529,7 @@ void GivePartyMonMarineRibbon(void)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
         ribbonCounts[i].partyIndex = i;
         ribbonCounts[i].count = 0;
@@ -1581,7 +1581,7 @@ void GivePartyMonLandRibbon(void)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
         ribbonCounts[i].partyIndex = i;
         ribbonCounts[i].count = 0;
@@ -1633,7 +1633,7 @@ void GivePartyMonSkyRibbon(void)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
         ribbonCounts[i].partyIndex = i;
         ribbonCounts[i].count = 0;
@@ -1685,7 +1685,7 @@ void GivePartyMonCountryRibbon(void)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
         ribbonCounts[i].partyIndex = i;
         ribbonCounts[i].count = 0;
@@ -1737,7 +1737,7 @@ void GivePartyMonNationalRibbon(void)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
         ribbonCounts[i].partyIndex = i;
         ribbonCounts[i].count = 0;
@@ -1789,7 +1789,7 @@ void GivePartyMonEarthRibbon(void)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
         ribbonCounts[i].partyIndex = i;
         ribbonCounts[i].count = 0;
@@ -1841,7 +1841,7 @@ void GivePartyMonWorldRibbon(void)
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
         ribbonCounts[i].partyIndex = i;
         ribbonCounts[i].count = 0;
@@ -1903,7 +1903,7 @@ void GiveLeadMonAllRibbons(void)
     u8 hasEarthRibbon = 1;
     u8 hasWorldRibbon = 1;
 
-    struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
     if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
         {
@@ -1939,7 +1939,7 @@ void SetLeadMonAllContestStats(void)
 {
     int i = 0;
     u8 contestStat = 255;
-    struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
     if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
         {
@@ -1965,7 +1965,7 @@ void PartyMonBecomeEgg(void)
     
     for (i = 1; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
         if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
         {
@@ -2005,7 +2005,7 @@ void PartyMonBecomeEgg(void)
         }
     }
 
-    struct Pokemon *mon = &gParties[B_TRAINER_0][0];
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][0];
 
     if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_SPECIAL_GIFT
         || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_DEBUG
@@ -2050,7 +2050,7 @@ void PartyMonBecomeEggRandom(void)
     
     for (i = 1; i < PARTY_SIZE; i++)
     {
-        struct Pokemon *mon = &gParties[B_TRAINER_0][i];
+        struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
 
         if (GetMonData(mon, MON_DATA_SANITY_HAS_SPECIES))
         {
@@ -2091,7 +2091,7 @@ void PartyMonBecomeEggRandom(void)
         }
     }
 
-    struct Pokemon *mon = &gParties[B_TRAINER_0][0];
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][0];
 
     if (GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_SPECIAL_GIFT
         || GetMonData(mon, MON_DATA_MET_GAME) == VERSION_IDENTIFIER_DEBUG)

@@ -3,6 +3,7 @@
   "name": "JohtoMountSilverCave1",
   "layout": "LAYOUT_JOHTO_MOUNT_SILVER_CAVE1",
   "music": "MUS_HG_UNION_CAVE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_MT_SILVER_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -3,6 +3,7 @@
   "name": "GensokyoYoukaiMountainCave6",
   "layout": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN_CAVE6",
   "music": "MUS_THPPME_390_GREEN_EYED_JEALOUSY",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_YOUKAI_MOUNTAIN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

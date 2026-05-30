@@ -3,6 +3,7 @@
   "name": "JohtoRoute28",
   "layout": "LAYOUT_JOHTO_ROUTE28",
   "music": "MUS_HG_POKEMON_LEAGUE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_ROUTE_28",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

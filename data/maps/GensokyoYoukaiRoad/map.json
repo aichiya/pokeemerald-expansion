@@ -3,6 +3,7 @@
   "name": "GensokyoYoukaiRoad",
   "layout": "LAYOUT_GENSOKYO_YOUKAI_ROAD",
   "music": "MUS_THPPZGSK_291A_RED_SOUL",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_YOUKAI_ROAD",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

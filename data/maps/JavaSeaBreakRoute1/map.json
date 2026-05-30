@@ -3,6 +3,7 @@
   "name": "JavaSeaBreakRoute1",
   "layout": "LAYOUT_JAVA_SEA_BREAK_ROUTE1",
   "music": "MUS_GS2_043_WORLD_MAP_TLA_2",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_SEA_BREAK_PASS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -3,6 +3,7 @@
   "name": "SinnohEternaCity",
   "layout": "LAYOUT_SINNOH_ETERNA_CITY",
   "music": "MUS_PKMN_GLITCHXCITY_ETERNA_FOREST",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MAPSEC_ETERNA_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

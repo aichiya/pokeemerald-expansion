@@ -3,6 +3,7 @@
   "name": "JavaNaturePreserve3",
   "layout": "LAYOUT_JAVA_NATURE_PRESERVE3",
   "music": "MUS_THPPZGSK_371A_FAIRY_WARS",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_NATURE_PRESERVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

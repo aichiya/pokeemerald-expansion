@@ -3,6 +3,7 @@
   "name": "JohtoTohjoFalls",
   "layout": "LAYOUT_JOHTO_TOHJO_FALLS",
   "music": "MUS_HG_UNION_CAVE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_TOHJO_FALLS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -3,6 +3,7 @@
   "name": "GensokyoMistyLake",
   "layout": "LAYOUT_GENSOKYO_MISTY_LAKE",
   "music": "MUS_THPPZGSK_293A_LUNATE_ELF",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_MISTY_LAKE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -3,6 +3,7 @@
   "name": "JohtoRoute49",
   "layout": "LAYOUT_JOHTO_ROUTE49",
   "music": "MUS_GS2_005_TROPICAL_PARADISE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_ROUTE_49",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

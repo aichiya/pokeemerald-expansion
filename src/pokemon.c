@@ -6881,24 +6881,24 @@ u16 GetBattleBGM(void)
     }
     else
     {
-        switch (gSpeciesInfo[GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES, NULL)].bodyColor)
+        switch (gSpeciesInfo[GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES, NULL)].bodyColor)
         {
         case FRANCHISE_ORIGIN_POKEMON:      // BODY_COLOR_RED
             return MUS_HG_VS_WILD;
         case FRANCHISE_ORIGIN_MOEMON:       // BODY_COLOR_BLUE
-            if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_DIALGA_TH
-             || GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_PALKIA_TH)
+            if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_DIALGA_TH
+             || GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_PALKIA_TH)
                 return MUS_PKMN_DP_VS_DIALGA_PALKIA;
-            else if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_GIRATINA_TH)
+            else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_GIRATINA_TH)
                 return MUS_PKMN_PL_VS_GIRATINA;
-            else if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_ARCEUS_TH)
+            else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_ARCEUS_TH)
                 return MUS_HG_VS_ARCEUS;
             else
                 return MUS_PKMN_GSC_VS_WILD1;
         case FRANCHISE_ORIGIN_YUYUYUI:      // BODY_COLOR_YELLOW
             return MUS_YYYI_BATTLE_04;
         case FRANCHISE_ORIGIN_TOUHOU:       // BODY_COLOR_GREEN
-            if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_TH_SANAE_BROKEN_RITE)
+            if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_TH_SANAE_BROKEN_RITE)
                 return MUS_TH_KIMI_TO_MATA_YUME_NO_NAKA_DE_TEST;
             else
                 return MUS_THPPZGSK_366A_DOLL_JUDGEMENT;
@@ -6913,12 +6913,12 @@ u16 GetBattleBGM(void)
         case FRANCHISE_ORIGIN_OTHER:        // BODY_COLOR_WHITE
         case FRANCHISE_ORIGIN_UNIDENTIFIED: // BODY_COLOR_PINK
         default:
-            if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_MADOKA_ULTIMATE)
+            if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_MADOKA_ULTIMATE)
                 return MUS_MADOKA_SIS_PUELLA;
-            else if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_NOBETA
-             || GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_NONOTA)
+            else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_NOBETA
+             || GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_NONOTA)
                 return MUS_THPPRF_NOBETA_2;
-            else if (GetMonData(&gParties[B_TRAINER_1][0], MON_DATA_SPECIES) == SPECIES_ETC_EMESGESEY)
+            else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_EMESGESEY)
                 return MUS_HG_VS_ARCEUS;
             else
                 return MUS_VS_WILD;

@@ -3,6 +3,7 @@
   "name": "GensokyoUnderground4",
   "layout": "LAYOUT_GENSOKYO_UNDERGROUND4",
   "music": "MUS_THPPME_390_GREEN_EYED_JEALOUSY",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_UNDERGROUND",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

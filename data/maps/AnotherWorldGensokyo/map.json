@@ -3,6 +3,7 @@
   "name": "AnotherWorldGensokyo",
   "layout": "LAYOUT_ANOTHER_WORLD_GENSOKYO",
   "music": "MUS_THPPZGSK_300A_COLORFUL_PATH",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -3,6 +3,7 @@
   "name": "GensokyoHigan",
   "layout": "LAYOUT_GENSOKYO_HIGAN",
   "music": "MUS_THPPZGSK_369A_FATE_OF_60_YEARS",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_HIGAN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

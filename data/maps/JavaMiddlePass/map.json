@@ -3,6 +3,7 @@
   "name": "JavaMiddlePass",
   "layout": "LAYOUT_JAVA_MIDDLE_PASS",
   "music": "MUS_ROUTE119",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_MIDDLE_PASS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

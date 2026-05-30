@@ -3,6 +3,7 @@
   "name": "JavaMountMerapi",
   "layout": "LAYOUT_JAVA_MOUNT_MERAPI",
   "music": "MUS_ETC_SEBELUM_CAHAYA",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_MT_MERAPI",
   "requires_flash": false,
   "weather": "WEATHER_VOLCANIC_ASH",

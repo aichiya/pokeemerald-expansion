@@ -3,6 +3,7 @@
   "name": "JohtoMountMortar4",
   "layout": "LAYOUT_JOHTO_MOUNT_MORTAR4",
   "music": "MUS_HG_UNION_CAVE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_MT_MORTAR",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

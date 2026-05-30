@@ -3,6 +3,7 @@
   "name": "AnotherWorldSpiritualWorld",
   "layout": "LAYOUT_ANOTHER_WORLD_SPIRITUAL_WORLD",
   "music": "MUS_THPPRF_NOBETA_1",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY_CLOUDS",

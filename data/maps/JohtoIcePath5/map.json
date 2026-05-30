@@ -3,6 +3,7 @@
   "name": "JohtoIcePath5",
   "layout": "LAYOUT_JOHTO_ICE_PATH5",
   "music": "MUS_HG_ICE_PATH",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_ICE_PATH",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

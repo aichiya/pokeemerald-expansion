@@ -3,6 +3,7 @@
   "name": "AnotherWorldUnderworldMushroomBiome",
   "layout": "LAYOUT_ANOTHER_WORLD_UNDERWORLD_MUSHROOM_BIOME",
   "music": "MUS_THPPZGSK_288A_THE_BRIDGE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

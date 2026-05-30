@@ -3,6 +3,7 @@
   "name": "ClassicKantoPalletTown",
   "layout": "LAYOUT_CLASSIC_KANTO_PALLET_TOWN",
   "music": "MUS_HG_PALLET",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

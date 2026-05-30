@@ -3,6 +3,7 @@
   "name": "MagicWorld_North2_Winter",
   "layout": "LAYOUT_MAGIC_WORLD_NORTH2_WINTER",
   "music": "MUS_TH_BELOVED_TOMBOYISH_GIRL",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MAGIC_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",

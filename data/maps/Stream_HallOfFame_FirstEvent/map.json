@@ -3,6 +3,7 @@
   "name": "Stream_HallOfFame_FirstEvent",
   "layout": "LAYOUT_STREAM_HALL_OF_FAME_FIRST_EVENT",
   "music": "MUS_THPPZGSK_336A_LOST_DREAM",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_INDIGO_PLATEAU",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

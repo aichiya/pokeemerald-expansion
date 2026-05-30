@@ -3,6 +3,7 @@
   "name": "JohtoUnionCave3",
   "layout": "LAYOUT_JOHTO_UNION_CAVE3",
   "music": "MUS_HG_UNION_CAVE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_UNION_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

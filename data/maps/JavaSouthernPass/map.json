@@ -3,6 +3,7 @@
   "name": "JavaSouthernPass",
   "layout": "LAYOUT_JAVA_SOUTHERN_PASS",
   "music": "MUS_RG_SEVII_67",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_SOUTHERN_PASS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

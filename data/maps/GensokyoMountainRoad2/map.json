@@ -3,6 +3,7 @@
   "name": "GensokyoMountainRoad2",
   "layout": "LAYOUT_GENSOKYO_MOUNTAIN_ROAD2",
   "music": "MUS_THPPZGSK_291A_RED_SOUL",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_NORTHERN_ROAD5",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

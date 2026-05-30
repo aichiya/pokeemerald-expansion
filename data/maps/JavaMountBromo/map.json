@@ -3,6 +3,7 @@
   "name": "JavaMountBromo",
   "layout": "LAYOUT_JAVA_MOUNT_BROMO",
   "music": "MUS_MT_PYRE_EXTERIOR",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_MT_BROMO",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

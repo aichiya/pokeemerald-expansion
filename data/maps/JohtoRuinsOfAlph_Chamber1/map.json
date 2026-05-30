@@ -3,6 +3,7 @@
   "name": "JohtoRuinsOfAlph_Chamber1",
   "layout": "LAYOUT_JOHTO_RUINS_OF_ALPH_CHAMBER1",
   "music": "MUS_HG_RUINS_OF_ALPH",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_RUINS_OF_ALPH",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

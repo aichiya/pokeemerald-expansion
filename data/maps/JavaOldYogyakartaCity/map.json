@@ -3,6 +3,7 @@
   "name": "JavaOldYogyakartaCity",
   "layout": "LAYOUT_JAVA_OLD_YOGYAKARTA_CITY",
   "music": "MUS_THPPAWL_PRIMALSCENE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",

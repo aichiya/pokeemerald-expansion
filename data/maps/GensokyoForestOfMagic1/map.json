@@ -3,6 +3,7 @@
   "name": "GensokyoForestOfMagic1",
   "layout": "LAYOUT_GENSOKYO_FOREST_OF_MAGIC1",
   "music": "MUS_THPPZGSK_371A_FAIRY_WARS",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_FOREST_OF_MAGIC",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -3,6 +3,7 @@
   "name": "JohtoRoute50",
   "layout": "LAYOUT_JOHTO_ROUTE50",
   "music": "MUS_CV_DOS_BLOODY_TEARS",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_ROUTE_50",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

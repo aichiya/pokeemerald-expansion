@@ -8182,10 +8182,10 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
         {
             for (i = 0; i < PARTY_SIZE; i++)
             {
-                if (GetMonData(&gParties[B_TRAINER_1][i], MON_DATA_SPECIES, NULL)
-                    && GetMonData(&gParties[B_TRAINER_1][i], MON_DATA_SPECIES_OR_EGG, NULL) != SPECIES_EGG)
+                if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, NULL)
+                    && GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES_OR_EGG, NULL) != SPECIES_EGG)
                 {
-                    s32 level = GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_LEVEL, NULL);
+                    s32 level = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_LEVEL, NULL);
                     if (level > highestEnemyPartyLevel)
                         highestEnemyPartyLevel = level;
                 }
@@ -11856,12 +11856,12 @@ static void Cmd_pickup(void)
             {
                 for (k = 0; k < MAX_MON_MOVES; k++)
                 {
-                    if (GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_MOVE1 + k, 0))
+                    if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_MOVE1 + k, 0))
                     {
-                        u16 move = GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_MOVE1 + k, 0);
-                        u16 bonus = GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_PP_BONUSES, 0);
+                        u16 move = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_MOVE1 + k, 0);
+                        u16 bonus = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_PP_BONUSES, 0);
                         u8 pp = CalculatePPWithBonus(move, bonus, k);
-                        SetMonData(&gParties[B_TRAINER_0][i], MON_DATA_PP1 + k, &pp);
+                        SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_PP1 + k, &pp);
                     }
                 }
             }
@@ -11871,8 +11871,8 @@ static void Cmd_pickup(void)
     {
         for (i = 0; i < PARTY_SIZE; i++)
         {
-            species = GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_SPECIES_OR_EGG);
-            ability = gSpeciesInfo[species].abilities[GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_ABILITY_NUM)];
+            species = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG);
+            ability = gSpeciesInfo[species].abilities[GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_ABILITY_NUM)];
 
             if (ability == ABILITY_GRIMOIRE_USER
             && species != 0
@@ -11880,12 +11880,12 @@ static void Cmd_pickup(void)
             {
                 for (k = 0; k < MAX_MON_MOVES; k++)
                 {
-                    if (GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_MOVE1 + k, 0))
+                    if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_MOVE1 + k, 0))
                     {
-                        u16 move = GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_MOVE1 + k, 0);
-                        u16 bonus = GetMonData(&gParties[B_TRAINER_0][i], MON_DATA_PP_BONUSES, 0);
+                        u16 move = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_MOVE1 + k, 0);
+                        u16 bonus = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_PP_BONUSES, 0);
                         u8 pp = CalculatePPWithBonus(move, bonus, k);
-                        SetMonData(&gParties[B_TRAINER_0][i], MON_DATA_PP1 + k, &pp);
+                        SetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_PP1 + k, &pp);
                     }
                 }
             }
@@ -15973,35 +15973,47 @@ void BS_TryReduceFoesPartyHpToZero(void)
     if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
     {
         setHP = 0;
-        SetMonData(&gParties[B_TRAINER_1][0], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_1][1], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_1][2], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_1][3], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_1][4], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_1][5], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_3][0], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_3][1], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_3][2], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_3][3], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_3][4], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_3][5], MON_DATA_HP, &setHP);
+        if (gPartiesCount[B_TRAINER_OPPONENT_A] > 0)
+        {
+            SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_OPPONENT_A][2], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_OPPONENT_A][3], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_OPPONENT_A][4], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_OPPONENT_A][5], MON_DATA_HP, &setHP);
+        }
+        if (gPartiesCount[B_TRAINER_OPPONENT_B] > 0)
+        {
+            SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_OPPONENT_B][1], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_OPPONENT_B][2], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_OPPONENT_B][3], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_OPPONENT_B][4], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_OPPONENT_B][5], MON_DATA_HP, &setHP);
+        }
         gBattleMons[gBattlerTarget].hp = 0;
     }
     else
     {
         setHP = 0;
-        SetMonData(&gParties[B_TRAINER_0][0], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_0][1], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_0][2], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_0][3], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_0][4], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_0][5], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_2][0], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_2][1], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_2][2], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_2][3], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_2][4], MON_DATA_HP, &setHP);
-        SetMonData(&gParties[B_TRAINER_2][5], MON_DATA_HP, &setHP);
+        if (gPartiesCount[B_TRAINER_PLAYER] > 0)
+        {
+            SetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_PLAYER][1], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_PLAYER][2], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_PLAYER][3], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_PLAYER][4], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_PLAYER][5], MON_DATA_HP, &setHP);
+        }
+        if (gPartiesCount[B_TRAINER_PARTNER] > 0)
+        {
+            SetMonData(&gParties[B_TRAINER_PARTNER][0], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_PARTNER][1], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_PARTNER][2], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_PARTNER][3], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_PARTNER][4], MON_DATA_HP, &setHP);
+            SetMonData(&gParties[B_TRAINER_PARTNER][5], MON_DATA_HP, &setHP);
+        }
         gBattleMons[gBattlerTarget].hp = 0;
     }
     BtlController_EmitSetMonData(gBattlerTarget, B_COMM_TO_CONTROLLER, REQUEST_HP_BATTLE, 0, sizeof(gBattleMons[gBattlerTarget].hp), &gBattleMons[gBattlerTarget].hp);

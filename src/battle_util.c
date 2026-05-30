@@ -724,8 +724,8 @@ void HandleAction_Run(void)
 
                 for (j = 0; j < PARTY_SIZE; j++)
                 {
-                    species = GetMonData(&gParties[B_TRAINER_0][j], MON_DATA_SPECIES_OR_EGG);
-                    ability = gSpeciesInfo[species].abilities[GetMonData(&gParties[B_TRAINER_0][j], MON_DATA_ABILITY_NUM)];
+                    species = GetMonData(&gParties[B_TRAINER_PLAYER][j], MON_DATA_SPECIES_OR_EGG);
+                    ability = gSpeciesInfo[species].abilities[GetMonData(&gParties[B_TRAINER_PLAYER][j], MON_DATA_ABILITY_NUM)];
 
                     if (ability == ABILITY_GRIMOIRE_USER
                     && species != 0
@@ -733,12 +733,12 @@ void HandleAction_Run(void)
                     {
                         for (k = 0; k < MAX_MON_MOVES; k++)
                         {
-                            if (GetMonData(&gParties[B_TRAINER_0][j], MON_DATA_MOVE1 + k, 0))
+                            if (GetMonData(&gParties[B_TRAINER_PLAYER][j], MON_DATA_MOVE1 + k, 0))
                             {
-                                u16 move = GetMonData(&gParties[B_TRAINER_0][j], MON_DATA_MOVE1 + k, 0);
-                                u16 bonus = GetMonData(&gParties[B_TRAINER_0][j], MON_DATA_PP_BONUSES, 0);
+                                u16 move = GetMonData(&gParties[B_TRAINER_PLAYER][j], MON_DATA_MOVE1 + k, 0);
+                                u16 bonus = GetMonData(&gParties[B_TRAINER_PLAYER][j], MON_DATA_PP_BONUSES, 0);
                                 u8 pp = CalculatePPWithBonus(move, bonus, k);
-                                SetMonData(&gParties[B_TRAINER_0][j], MON_DATA_PP1 + k, &pp);
+                                SetMonData(&gParties[B_TRAINER_PLAYER][j], MON_DATA_PP1 + k, &pp);
                             }
                         }
                     }
@@ -3140,7 +3140,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     partnerMon = mon;
 
                 id = GetIllusionMonPartyId(party, mon, partnerMon, battler);
-                blankCardTarget = GetMonAbility(&gParties[B_TRAINER_0][id]), effect++;
+                blankCardTarget = GetMonAbility(&gParties[B_TRAINER_PLAYER][id]), effect++; // Check
              
                 BattleScriptCall(BattleScript_BlankCardActivates);   
                 gBattleMons[gBattlerAttacker].ability = gBattleMons[gBattlerAttacker].volatiles.overwrittenAbility = blankCardTarget;

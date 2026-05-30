@@ -3,6 +3,7 @@
   "name": "MagicWorld_North3",
   "layout": "LAYOUT_MAGIC_WORLD_NORTH3",
   "music": "MUS_TH_KIMI_NO_YUME",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MAGIC_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

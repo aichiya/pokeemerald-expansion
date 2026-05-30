@@ -3,6 +3,7 @@
   "name": "JohtoGoldenrodDome",
   "layout": "LAYOUT_JOHTO_GOLDENROD_DOME",
   "music": "MUS_HG_GOLDENROD",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_GTS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

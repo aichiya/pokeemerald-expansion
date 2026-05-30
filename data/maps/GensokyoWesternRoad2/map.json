@@ -3,6 +3,7 @@
   "name": "GensokyoWesternRoad2",
   "layout": "LAYOUT_GENSOKYO_WESTERN_ROAD2",
   "music": "MUS_DUMMY",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_WESTERN_ROAD2",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

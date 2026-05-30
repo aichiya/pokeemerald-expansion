@@ -3,6 +3,7 @@
   "name": "GensokyoRoadOfReconsideration3",
   "layout": "LAYOUT_GENSOKYO_ROAD_OF_RECONSIDERATION3",
   "music": "MUS_DUMMY",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_ROAD_OF_RECONSIDERATION3",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

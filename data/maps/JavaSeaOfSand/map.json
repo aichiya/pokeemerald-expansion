@@ -3,6 +3,7 @@
   "name": "JavaSeaOfSand",
   "layout": "LAYOUT_JAVA_SEA_OF_SAND",
   "music": "MUS_DGMN_WORLD3_BADLANDS",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_SEA_OF_SAND",
   "requires_flash": false,
   "weather": "WEATHER_SANDSTORM",

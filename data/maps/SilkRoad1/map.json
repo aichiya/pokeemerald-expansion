@@ -3,6 +3,7 @@
   "name": "SilkRoad1",
   "layout": "LAYOUT_SILK_ROAD1",
   "music": "MUS_SH_SILKROAD",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_SILK_ROAD1",
   "requires_flash": false,
   "weather": "WEATHER_FOG_HORIZONTAL",

@@ -3,6 +3,7 @@
   "name": "GensokyoRoadOfLiminality2",
   "layout": "LAYOUT_GENSOKYO_ROAD_OF_LIMINALITY2",
   "music": "MUS_TH_BLUESEA",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_ROAD_OF_LIMINATION1",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

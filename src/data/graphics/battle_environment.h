@@ -90,8 +90,8 @@ const u32 gBattleEnvironmentAnimTilemap_Building[] = INCGFX_U32("graphics/battle
 const u32 gBattleEnvironmentAnimTiles_Rayquaza[] = INCGFX_U32("graphics/battle_environment/sky/anim_tiles.png", ".4bpp.smol");
 const u32 gBattleEnvironmentAnimTilemap_Rayquaza[] = INCGFX_U32("graphics/battle_environment/sky/anim_map.bin", ".smolTM");
 
-const u32 gBattleEnvironmentTiles_BlankGBC[] = INCGFX_U32("graphics/battle_terrain/blank/tiles.png", ".4bpp.smol");
-const u16 gBattleEnvironmentPalette_BlankGBC[] = INCGFX_U16("graphics/battle_terrain/blank/palette.pal", ".gbapal");
-const u32 gBattleEnvironmentTilemap_BlankGBC[] = INCBIN_U32("graphics/battle_terrain/blank/map.bin", ".smolTM");
-const u32 gBattleEnvironmentAnimTiles_BlankGBC[] = INCGFX_U32("graphics/battle_terrain/blank/anim_tiles.png", ".4bpp.smol");
-const u32 gBattleEnvironmentAnimTilemap_BlankGBC[] = INCBIN_U32("graphics/battle_terrain/blank/anim_map.bin", ".smolTM");
+const u32 gBattleEnvironmentTiles_BlankGBC[] = INCGFX_U32("graphics/battle_environment/blank/tiles.png", ".4bpp.smol");
+const u16 gBattleEnvironmentPalette_BlankGBC[] = INCGFX_U16("graphics/battle_environment/blank/palette.pal", ".gbapal");
+const u32 gBattleEnvironmentTilemap_BlankGBC[] = INCGFX_U32("graphics/battle_environment/blank/map.bin", ".smolTM");
+const u32 gBattleEnvironmentAnimTiles_BlankGBC[] = INCGFX_U32("graphics/battle_environment/blank/anim_tiles.png", ".4bpp.smol");
+const u32 gBattleEnvironmentAnimTilemap_BlankGBC[] = INCGFX_U32("graphics/battle_environment/blank/anim_map.bin", ".smolTM");

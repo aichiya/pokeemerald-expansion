@@ -3,6 +3,7 @@
   "name": "TrimmedGensokyo",
   "layout": "LAYOUT_TRIMMED_GENSOKYO",
   "music": "MUS_TH_IRO_WA_NIOEDO",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_TRIMMED_GENSOKYO",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

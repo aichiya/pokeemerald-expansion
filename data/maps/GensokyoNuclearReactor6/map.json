@@ -3,6 +3,7 @@
   "name": "GensokyoNuclearReactor6",
   "layout": "LAYOUT_GENSOKYO_NUCLEAR_REACTOR6",
   "music": "MUS_THPPME_390_GREEN_EYED_JEALOUSY",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_UNDERGROUND",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

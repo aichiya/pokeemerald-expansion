@@ -3,6 +3,7 @@
   "name": "AnotherWorldBrokenDreams",
   "layout": "LAYOUT_ANOTHER_WORLD_BROKEN_DREAMS",
   "music": "MUS_OMORI_FINAL_DUET",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_LIGHT_ORB_UP",

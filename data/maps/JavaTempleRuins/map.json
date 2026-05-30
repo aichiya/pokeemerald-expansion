@@ -3,6 +3,7 @@
   "name": "JavaTempleRuins",
   "layout": "LAYOUT_JAVA_TEMPLE_RUINS",
   "music": "MUS_GS2_721_CONTIGO",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_SOUTHERN_PASS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

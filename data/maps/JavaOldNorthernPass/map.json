@@ -3,6 +3,7 @@
   "name": "JavaOldNorthernPass",
   "layout": "LAYOUT_JAVA_OLD_NORTHERN_PASS",
   "music": "MUS_THPPAWL_PRIMALSCENE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",

@@ -15585,6 +15585,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #else
             "Evades damage, and sharply\n"
             "reduces accuracy if struck."),
+        #endif
         .effect = EFFECT_PROTECT,
         .power = 0,
         .type = TYPE_NEW_METAL,

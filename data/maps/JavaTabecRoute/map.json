@@ -3,6 +3,7 @@
   "name": "JavaTabecRoute",
   "layout": "LAYOUT_JAVA_TABEC_ROUTE",
   "music": "MUS_GS2_043_WORLD_MAP_TLA_2",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_NORTH_TABEC_ROUTE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

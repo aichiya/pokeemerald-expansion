@@ -3,6 +3,7 @@
   "name": "JohtoWhirlIslands1",
   "layout": "LAYOUT_JOHTO_WHIRL_ISLANDS1",
   "music": "MUS_HG_UNION_CAVE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_WHIRL_ISLANDS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

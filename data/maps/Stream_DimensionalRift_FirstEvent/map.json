@@ -3,6 +3,7 @@
   "name": "Stream_DimensionalRift_FirstEvent",
   "layout": "LAYOUT_STREAM_DIMENSIONAL_RIFT_FIRST_EVENT",
   "music": "MUS_DUMMY",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_DIMENSIONAL_RIFT",
   "requires_flash": false,
   "weather": "WEATHER_LIGHT_ORB_UP",

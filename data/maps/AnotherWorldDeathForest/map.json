@@ -3,6 +3,7 @@
   "name": "AnotherWorldDeathForest",
   "layout": "LAYOUT_ANOTHER_WORLD_DEATH_FOREST",
   "music": "MUS_THPPME_330_INFINITY_NIGHTMARE",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

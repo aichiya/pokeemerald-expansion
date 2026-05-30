@@ -3,6 +3,7 @@
   "name": "GensokyoYoukaiMountain3",
   "layout": "LAYOUT_GENSOKYO_YOUKAI_MOUNTAIN3",
   "music": "MUS_THPPME_294_GENSOKYO_THE_GOD_LOVED",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_YOUKAI_MOUNTAIN",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

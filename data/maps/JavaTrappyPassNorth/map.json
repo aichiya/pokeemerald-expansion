@@ -3,6 +3,7 @@
   "name": "JavaTrappyPassNorth",
   "layout": "LAYOUT_JAVA_TRAPPY_PASS_NORTH",
   "music": "MUS_THPPZGSK_372A_FLOWER_OF_JAPAN",
+  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JAVA_TRAPPY_PASS",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

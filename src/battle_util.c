@@ -7835,16 +7835,31 @@ static inline u32 CalcMoveBasePower(struct DamageContext *ctx)
             u8 boost = 0;
             u8 partysize = 0;
             struct Pokemon *party;
-            
-            if (GetBattlerSide(battlerAtk) != B_SIDE_PLAYER)
+
+            if (GetBattlerTrainer(battlerAtk) == B_TRAINER_PLAYER)
             {
-                party = gEnemyParty;
-                partysize = gEnemyPartyCount;
+                party = gParties[B_TRAINER_PLAYER];
+                partysize = gPartiesCount[B_TRAINER_PLAYER];
+            }
+            else if (GetBattlerTrainer(battlerAtk) == B_TRAINER_PARTNER)
+            {
+                party = gParties[B_TRAINER_PARTNER];
+                partysize = gPartiesCount[B_TRAINER_PARTNER];
+            }
+            else if (GetBattlerTrainer(battlerAtk) == B_TRAINER_OPPONENT_A)
+            {
+                party = gParties[B_TRAINER_OPPONENT_A];
+                partysize = gPartiesCount[B_TRAINER_OPPONENT_A];
+            }
+            else if (GetBattlerTrainer(battlerAtk) == B_TRAINER_OPPONENT_B)
+            {
+                party = gParties[B_TRAINER_OPPONENT_B];
+                partysize = gPartiesCount[B_TRAINER_OPPONENT_B];
             }
             else
             {
-                party = gPlayerParty;
-                partysize = PARTY_SIZE;
+                party = gParties[B_TRAINER_PLAYER];
+                partysize = gPartiesCount[B_TRAINER_PLAYER];
             }
 
             for (i = 0; i < partysize; i++)
@@ -7870,16 +7885,32 @@ static inline u32 CalcMoveBasePower(struct DamageContext *ctx)
             u8 partysize = 0;
             struct Pokemon *party;
             //oh fuckin' boy here we go
-            if (GetBattlerSide(battlerAtk) != B_SIDE_PLAYER)
+            if (GetBattlerTrainer(battlerAtk) == B_TRAINER_PLAYER)
             {
-                party = gEnemyParty;
-                partysize = gEnemyPartyCount;
+                party = gParties[B_TRAINER_PLAYER];
+                partysize = gPartiesCount[B_TRAINER_PLAYER];
+            }
+            else if (GetBattlerTrainer(battlerAtk) == B_TRAINER_PARTNER)
+            {
+                party = gParties[B_TRAINER_PARTNER];
+                partysize = gPartiesCount[B_TRAINER_PARTNER];
+            }
+            else if (GetBattlerTrainer(battlerAtk) == B_TRAINER_OPPONENT_A)
+            {
+                party = gParties[B_TRAINER_OPPONENT_A];
+                partysize = gPartiesCount[B_TRAINER_OPPONENT_A];
+            }
+            else if (GetBattlerTrainer(battlerAtk) == B_TRAINER_OPPONENT_B)
+            {
+                party = gParties[B_TRAINER_OPPONENT_B];
+                partysize = gPartiesCount[B_TRAINER_OPPONENT_B];
             }
             else
             {
-                party = gPlayerParty;
-                partysize = PARTY_SIZE;
+                party = gParties[B_TRAINER_PLAYER];
+                partysize = gPartiesCount[B_TRAINER_PLAYER];
             }
+
             for (i = 0; i < partysize && !boost; i++)
             {
                 if (i != gBattlerPartyIndexes[battlerAtk])

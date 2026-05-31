@@ -2,8 +2,7 @@
   "id": "MAP_ANOTHER_WORLD_MILKY_ROAD",
   "name": "AnotherWorldMilkyRoad",
   "layout": "LAYOUT_ANOTHER_WORLD_MILKY_ROAD",
-  "music": "MUS_PKMN_SLP_CYAN_BEACH_PIANO",
-  "region": "REGION_HOENN",
+  "music": "MUS_BW_ENTRALINK",
   "region_map_section": "MAPSEC_ETC_ANOTHER_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
@@ -64,5 +63,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NULL"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

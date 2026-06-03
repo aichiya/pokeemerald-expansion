@@ -6422,15 +6422,6 @@ BattleScript_SwapToSubstituteContinue:
 BattleScript_SwapToSubstituteReturn:
 	return
 
-BattleScript_StasisGazeActivatesMoveEffect::
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	restoretarget
-	return
-
 BattleScript_TooScaredToMove::
 	printstring STRINGID_MONTOOSCAREDTOMOVE
 	waitmessage B_WAIT_TIME_LONG
@@ -6925,7 +6916,7 @@ BattleScript_DevourHealMultiTarget_Return:
 	restoreattacker
 	return
 
-BattleScript_StasisGazeActivatesMove::
+BattleScript_StasisGazeActivatesGenericStatIncrease::
 	stasisgazesetbattler BS_SCRIPTING
 	call BattleScript_AbilityPopUpScripting
 	waitanimation
@@ -6933,26 +6924,7 @@ BattleScript_StasisGazeActivatesMove::
 	waitmessage B_WAIT_TIME_LONG
 	restoreattacker
 	restoretarget
-	goto BattleScript_MoveEnd
-
-BattleScript_StasisGazeActivatesAbilitySwitchIn::
-	call BattleScript_AbilityPopUp
-	waitanimation
-BattleScript_StasisGazeActivatesAbility::
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
 	return
-
-BattleScript_StasisGazeActivatesAbilityEnd2::
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
-	end2
 
 BattleScript_WindyEgretActivates::
 	call BattleScript_AbilityPopUpScripting
@@ -6990,16 +6962,6 @@ BattleScript_GraceOfDreamStatRaised::
 	trybattlerstatchange BS_ATTACKER, STAT_CHANGE_IGNORE_MIRROR_ARMOR
 	printstring STRINGID_GRACEOFDREAMRAISEDSTAT
 	waitmessage B_WAIT_TIME_LONG
-	end2
-
-BattleScript_GraceOfDreamStatRaisedPreventedStasisGaze::
-	playanimation BS_ATTACKER, B_ANIM_GRACE_OF_DREAM_END_TURN
-	waitanimation
-	call BattleScript_AbilityPopUpScripting
-	waitanimation
-	printstring STRINGID_STATINCREASEPREVENTEDBYSTASISGAZE
-	waitmessage B_WAIT_TIME_LONG
-	restoreattacker
 	end2
 
 BattleScript_EffectGraceOfDream::

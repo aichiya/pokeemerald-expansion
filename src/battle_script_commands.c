@@ -5632,44 +5632,6 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
             }
         }
         break;
-    case MOVE_EFFECT_STASIS_GAZE_PREVENTED:
-        {
-            u32 oppositeBattler = FALSE;
-            u32 oppositeBattlerPartner = FALSE;
-
-            if (affectsUser)
-            {
-                oppositeBattler = GetOppositeBattler(gBattlerAttacker);
-                oppositeBattlerPartner = GetPartnerBattler(oppositeBattler);
-            }
-            else
-            {
-                oppositeBattler = GetOppositeBattler(gEffectBattler);
-                oppositeBattlerPartner = GetPartnerBattler(oppositeBattler);
-            }
-
-            if (GetBattlerAbility(oppositeBattler) == ABILITY_STASIS_GAZE)
-            {
-                SaveBattlerAttacker(gBattlerAttacker);
-                SaveBattlerTarget(gBattlerTarget);
-                gBattleScripting.battler = oppositeBattler;
-                BattleScriptPush(battleScript);
-                gBattlescriptCurrInstr = BattleScript_StasisGazeActivatesMoveEffect;
-            }
-            else if (GetBattlerAbility(oppositeBattlerPartner) == ABILITY_STASIS_GAZE)
-            {
-                SaveBattlerAttacker(gBattlerAttacker);
-                SaveBattlerTarget(gBattlerTarget);
-                gBattleScripting.battler = oppositeBattlerPartner;
-                BattleScriptPush(battleScript);
-                gBattlescriptCurrInstr = BattleScript_StasisGazeActivatesMoveEffect;
-            }
-            else
-            {
-                gBattlescriptCurrInstr = battleScript;
-            }
-        }
-        break;
     case MOVE_EFFECT_BEAT_UP_MESSAGE:
         if (GetConfig(B_BEAT_UP) >= GEN_5) // Gen5+ don't print any custom message on attack
             break;
@@ -14979,20 +14941,9 @@ void BS_JumpIfAttackGESpAttack(void)
 void BS_StasisGazeSetBattler(void)
 {
     NATIVE_ARGS(u8 battler);
-    u32 oppositeBattler, oppositeBattlerPartner, currentBattler;
-    oppositeBattler = 0;
-    oppositeBattlerPartner = 0;
-
-    if (cmd->battler == gBattlerAttacker)
-    {
-        oppositeBattler = GetOppositeBattler(gBattlerAttacker);
-        oppositeBattlerPartner = GetPartnerBattler(oppositeBattler);
-    }
-    else if (cmd->battler == gBattlerTarget)
-    {
-        oppositeBattler = GetOppositeBattler(gBattlerTarget);
-        oppositeBattlerPartner = GetPartnerBattler(oppositeBattler);
-    }
+    enum BattlerId currentBattler = GetBattlerForBattleScript(cmd->battler);
+    enum BattlerId oppositeBattler = GetOppositeBattler(currentBattler);
+    enum BattlerId oppositeBattlerPartner = GetPartnerBattler(oppositeBattler);
 
     SaveBattlerAttacker(gBattlerAttacker);
     SaveBattlerTarget(gBattlerTarget);

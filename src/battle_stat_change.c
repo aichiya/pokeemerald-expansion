@@ -430,26 +430,40 @@ static enum StatChangeResult IncreaseStat(struct BattleCalcValues *cv, struct St
 
         if (stageIncrease > 0)
         {
-            // Check Mirror Herb / Opportunist
-            for (enum BattlerId battler = 0; battler < gBattlersCount; battler++)
+            enum BattlerId oppositeDef = GetOppositeBattler(cv->battlerDef);
+            enum BattlerId oppositeDefPartner = GetPartnerBattler(oppositeDef);
+
+            if (GetBattlerAbility(oppositeDef) == ABILITY_STASIS_GAZE)
             {
-                if (IsBattlerAlly(battler, cv->battlerDef))
-                    continue; // Only triggers on opposing side
+                stageIncrease = 0;
+            }
+            else if (GetBattlerAbility(oppositeDefPartner) == ABILITY_STASIS_GAZE)
+            {
+                stageIncrease = 0;
+            }
+            else
+            {
+                // Check Mirror Herb / Opportunist
+                for (enum BattlerId battler = 0; battler < gBattlersCount; battler++)
+                {
+                    if (IsBattlerAlly(battler, cv->battlerDef))
+                        continue; // Only triggers on opposing side
 
-                if (GetBattlerAbility(battler) == ABILITY_OPPORTUNIST
-                 && gProtectStructs[cv->battlerDef].activateOpportunist == 0) // don't activate opportunist on other mon's opportunist raises
-                {
-                    gProtectStructs[battler].activateOpportunist = 2;      // set stats to copy
-                }
-                if (GetBattlerHoldEffect(battler) == HOLD_EFFECT_MIRROR_HERB) // Bug: will activate on an other mirror herb
-                {
-                    gProtectStructs[battler].eatMirrorHerb = 1;
-                }
+                    if (GetBattlerAbility(battler) == ABILITY_OPPORTUNIST
+                    && gProtectStructs[cv->battlerDef].activateOpportunist == 0) // don't activate opportunist on other mon's opportunist raises
+                    {
+                        gProtectStructs[battler].activateOpportunist = 2;      // set stats to copy
+                    }
+                    if (GetBattlerHoldEffect(battler) == HOLD_EFFECT_MIRROR_HERB) // Bug: will activate on an other mirror herb
+                    {
+                        gProtectStructs[battler].eatMirrorHerb = 1;
+                    }
 
-                if (gProtectStructs[battler].activateOpportunist == 2 || gProtectStructs[battler].eatMirrorHerb == 1)
-                {
-                    gQueuedStatBoosts[battler].stats |= (1 << (st->stat - 1));    // -1 to start at atk
-                    gQueuedStatBoosts[battler].statChanges[st->stat - 1] += stageIncrease;
+                    if (gProtectStructs[battler].activateOpportunist == 2 || gProtectStructs[battler].eatMirrorHerb == 1)
+                    {
+                        gQueuedStatBoosts[battler].stats |= (1 << (st->stat - 1));    // -1 to start at atk
+                        gQueuedStatBoosts[battler].statChanges[st->stat - 1] += stageIncrease;
+                    }
                 }
             }
         }
@@ -457,10 +471,28 @@ static enum StatChangeResult IncreaseStat(struct BattleCalcValues *cv, struct St
 
     if (!st->onlyChecking)
     {
-        gProtectStructs[cv->battlerDef].statRaised = TRUE;
-        StatChanged(cv, st, isMaxStage);
-        st->script = BattleScript_IncreaseStatChangeMessage;
-        TryPlayStatChangeAnimation(cv, st);
+        enum BattlerId oppositeDef = GetOppositeBattler(cv->battlerDef);
+        enum BattlerId oppositeDefPartner = GetPartnerBattler(oppositeDef);
+
+        if (GetBattlerAbility(oppositeDef) == ABILITY_STASIS_GAZE)
+        {
+            gBattleScripting.battler = cv->battlerDef;
+            st->script = BattleScript_StasisGazeActivatesGenericStatIncrease;
+            return STAT_CHANGE_WORKED; // Handle failure
+        }
+        else if (GetBattlerAbility(oppositeDefPartner) == ABILITY_STASIS_GAZE)
+        {
+            gBattleScripting.battler = cv->battlerDef;
+            st->script = BattleScript_StasisGazeActivatesGenericStatIncrease;
+            return STAT_CHANGE_WORKED; // Handle failure
+        }
+        else
+        {
+            gProtectStructs[cv->battlerDef].statRaised = TRUE;
+            StatChanged(cv, st, isMaxStage);
+            st->script = BattleScript_IncreaseStatChangeMessage;
+            TryPlayStatChangeAnimation(cv, st);
+        }
     }
 
     return STAT_CHANGE_WORKED;
@@ -866,8 +898,6 @@ static bool32 IsMirrorArmorReflected(struct BattleCalcValues *cv, struct StatCha
 // There is a similar function AI_GetAdjustedStatStage that needs to be updated if things are changed here
 static void AdjustStatStage(struct BattleCalcValues *cv, struct StatChange *st)
 {
-    u32 oppositeDef = GetOppositeBattler(cv->battlerAtk);
-    u32 oppositeDefPartner = GetPartnerBattler(oppositeDef);
     if (cv->moveEffect == EFFECT_GROWTH && GetAttackerWeather(cv->holdEffects[cv->battlerDef], cv->abilities[cv->battlerDef], GetWeather()) & B_WEATHER_SUN)
         st->stage = 2;
 
@@ -888,13 +918,6 @@ static void AdjustStatStage(struct BattleCalcValues *cv, struct StatChange *st)
         break;
     default:
         break;
-    }
-
-    if (st->stage > 0
-      && (cv->abilities[oppositeDef] == ABILITY_STASIS_GAZE 
-      || cv->abilities[oppositeDefPartner] == ABILITY_STASIS_GAZE))
-    {
-        st->stage = 0;
     }
 }
 
@@ -970,6 +993,21 @@ static u32 GetNumNegativeStats(struct StatChange *st)
 
 void SetStatChange(enum BattlerId battler, enum Stat stat, s32 stage)
 {
+    enum BattlerId oppositeDef = GetOppositeBattler(battler);
+    enum BattlerId oppositeDefPartner = GetPartnerBattler(oppositeDef);
+
+    if (stage > 0 && GetBattlerAbility(oppositeDef) == ABILITY_STASIS_GAZE)
+    {
+        stat = 0;
+        stage = 0;
+    }
+
+    if (stage > 0 && GetBattlerAbility(oppositeDefPartner) == ABILITY_STASIS_GAZE)
+    {
+        stat = 0;
+        stage = 0;
+    }
+
     gSpecialStatuses[battler].statStageQueue[gSpecialStatuses[battler].statStageAmount].stat = stat;
     gSpecialStatuses[battler].statStageQueue[gSpecialStatuses[battler].statStageAmount].stage = stage;
     gSpecialStatuses[battler].statStageAmount++;
@@ -978,6 +1016,21 @@ void SetStatChange(enum BattlerId battler, enum Stat stat, s32 stage)
 // Used for stat change responses like Defiant and Mirror Armor
 void SetStatChange2(enum BattlerId battler, enum Stat stat, s32 stage)
 {
+    enum BattlerId oppositeDef = GetOppositeBattler(battler);
+    enum BattlerId oppositeDefPartner = GetPartnerBattler(oppositeDef);
+
+    if (stage > 0 && GetBattlerAbility(oppositeDef) == ABILITY_STASIS_GAZE)
+    {
+        stat = 0;
+        stage = 0;
+    }
+
+    if (stage > 0 && GetBattlerAbility(oppositeDefPartner) == ABILITY_STASIS_GAZE)
+    {
+        stat = 0;
+        stage = 0;
+    }
+
     gSpecialStatuses[battler].statStageQueue2[gSpecialStatuses[battler].statStageAmount2].stat = stat;
     gSpecialStatuses[battler].statStageQueue2[gSpecialStatuses[battler].statStageAmount2].stage = stage;
     gSpecialStatuses[battler].statStageAmount2++;

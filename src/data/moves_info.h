@@ -22058,7 +22058,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .moveEffect = MOVE_EFFECT_STAT_PLUS,
             .evasion = 1,
             .self = TRUE,
-            .chance = 100,
+            .chance = 20,
         }),
         .battleAnimScript = gBattleAnimMove_TwinSpark,
     },
@@ -22348,7 +22348,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A high-crit attack that\n"
             "may lower foe's Defense."),
         .effect = EFFECT_HIT,
-        .power = 120,
+        .power = 100,
         .type = TYPE_NEW_DIVINE,
         .accuracy = 90,
         .criticalHitStage = 2,
@@ -22598,6 +22598,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .spAtk = 1,
             .spDef = 1,
             .speed = 1, 
+            .evasion = 1, 
+            .accuracy = 1, 
         }),
         .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
         .contestCategory = CONTEST_CATEGORY_CUTE,
@@ -27159,7 +27161,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_StarPunch,
     },
 
-    [MOVE_MILKY_SHOCK] =  // To do anim
+    [MOVE_MILKY_SHOCK] =
     {
         .name = COMPOUND_STRING("Milky Shock"),
         .description = COMPOUND_STRING(
@@ -27185,7 +27187,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_MilkyShock,
     },
 
-    [MOVE_SOLEIL_SHOOT] =  // Edited
+    [MOVE_SOLEIL_SHOOT] =
     {
         .name = COMPOUND_STRING("Soleil Shoot"),
         .description = COMPOUND_STRING(
@@ -27210,7 +27212,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_SoleilShoot,
     },
 
-    [MOVE_SELENE_ARROW] =  // To do anim
+    [MOVE_SELENE_ARROW] =
     {
         .name = COMPOUND_STRING("Selene Arrow"),
         .description = COMPOUND_STRING(
@@ -27232,28 +27234,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_SeleneArrow,
     },
 
-    [MOVE_MOON_TIARA] =  // To do anim
+    [MOVE_MOON_TIARA] =
     {
         .name = COMPOUND_STRING("Moon Tiara"),
         .description = COMPOUND_STRING(
             "Throws a moon tiara.\n"
             "High critical-hit rate."),
         .effect = EFFECT_HIT,
-        .power = 70,
+        .power = 80,
         .type = TYPE_NEW_EARTH,
         .accuracy = 100,
         .pp = 10,
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
-        .strikeCount = 2,
         .damagesAirborne = TRUE,
         .ignoreTypeIfFlyingAndUngrounded = TRUE,
+        .criticalHitStage = 2,
         .contestEffect = C_UPDATED_MOVE_EFFECTS >= GEN_6 ? CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL : CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Bonemerang,
+        .battleAnimScript = gBattleAnimMove_MoonTiara,
     },
 
     [MOVE_SPIRAL_HEART] =
@@ -27276,7 +27278,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .spAtk = 1,
             .chance = 30,
         }),
-        .battleAnimScript = gBattleAnimMove_SpringtideStorm,
+        .battleAnimScript = gBattleAnimMove_SpiralHeart,
     },
 
     [MOVE_CLASSIC_ICE_BEAM] =

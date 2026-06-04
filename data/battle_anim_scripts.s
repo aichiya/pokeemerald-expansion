@@ -22960,6 +22960,58 @@ gBattleAnimMove_ClassicLaserBeamCreateTubeLong:
 	createsprite gClassicAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
 	return
 
+gBattleAnimMove_MoonTiara::
+	monbg ANIM_DEF_PARTNER
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	fadetobg BG_TWINKLE_TACKLE
+	waitbgfadeout
+	delay 10
+	playsewithpan SE_M_REVERSAL, SOUND_PAN_ATTACKER
+	createsprite gMoonTiaraSpriteTemplate, ANIM_ATTACKER, 2
+	delay 20
+@	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=0, y=0, relative_to=ANIM_TARGET, animation=1
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 5, 0, 5, 1
+	delay 17
+@	playsewithpan SE_M_VITAL_THROW, SOUND_PAN_ATTACKER
+	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 6, -4
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	restorebg
+	waitbgfadeout
+	setarg 7, -1
+	waitbgfadein
+	end
+
+gBattleAnimMove_SpiralHeart::
+	fadetobg BG_TWINKLE_TACKLE
+	waitbgfadeout
+	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 88, 1
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 1, 0, 88, 1
+	blend_color_cycle selector=(F_PAL_TARGET | F_PAL_DEF_PARTNER), delay=2, num_blends=6, initial_blend_y=0, target_blend_y=11, color=RGB(31, 22, 30)
+	call HurricaneGustCentered
+	call SpringtideStormHeartSwirl
+	call HurricaneGustCentered
+	call SpringtideStormHeartSwirl
+	call HurricaneGustCentered
+	call SpringtideStormHeartSwirl
+	call HurricaneGustCentered
+	call SpringtideStormHeartSwirl
+	call HurricaneGustCentered
+	call SpringtideStormHeartSwirl
+	call HurricaneGustCentered
+	call SpringtideStormHeartSwirl
+	waitforvisualfinish
+	stopsound
+	restorebg
+	waitbgfadeout
+	setarg 7, -1
+	waitbgfadein
+	end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 gBattleAnimMove_None::
 gBattleAnimMove_MirrorMove::

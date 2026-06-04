@@ -119348,18 +119348,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcMikuSnow,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_EtcMikuSnow,
         .shinyPalette = gMonShinyPalette_EtcMikuSnow,
         .iconSprite = gMonIcon_EtcMikuSnow,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(EtcMikuSnow)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -120283,18 +120283,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcNeptuneNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_EtcNeptuneNormal,
         .shinyPalette = gMonShinyPalette_EtcNeptuneNormal,
         .iconSprite = gMonIcon_EtcNeptuneNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-1, 12, SHADOW_SIZE_L)
         FOOTPRINT(EtcNeptuneNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -120368,18 +120368,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SHAKE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcNepgearNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         .palette = gMonPalette_EtcNepgearNormal,
         .shinyPalette = gMonShinyPalette_EtcNepgearNormal,
         .iconSprite = gMonIcon_EtcNepgearNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-3, 11, SHADOW_SIZE_L)
         FOOTPRINT(EtcNepgearNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -123436,18 +123436,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcIllyasvielNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         .palette = gMonPalette_EtcIllyasvielNormal,
         .shinyPalette = gMonShinyPalette_EtcIllyasvielNormal,
         .iconSprite = gMonIcon_EtcIllyasvielNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 9, SHADOW_SIZE_L)
         FOOTPRINT(EtcIllyasvielNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -131859,18 +131859,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_PURPLE_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcNeptuneGoddess,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_EtcNeptuneGoddess,
         .shinyPalette = gMonShinyPalette_EtcNeptuneGoddess,
         .iconSprite = gMonIcon_EtcNeptuneGoddess,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 13, SHADOW_SIZE_L)
         FOOTPRINT(EtcNeptuneGoddess)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -131944,18 +131944,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcNepgearGoddess,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_EtcNepgearGoddess,
         .shinyPalette = gMonShinyPalette_EtcNepgearGoddess,
         .iconSprite = gMonIcon_EtcNepgearGoddess,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(EtcNepgearGoddess)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -132029,18 +132029,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcIllyasvielZwei,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         .palette = gMonPalette_EtcIllyasvielZwei,
         .shinyPalette = gMonShinyPalette_EtcIllyasvielZwei,
         .iconSprite = gMonIcon_EtcIllyasvielZwei,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(EtcIllyasvielZwei)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -133219,18 +133219,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_FLICKER,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThLaylaRLunasaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThLaylaRLunasaNormal,
         .shinyPalette = gMonShinyPalette_ThLaylaRLunasaNormal,
         .iconSprite = gMonIcon_ThLaylaRLunasaNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 10, SHADOW_SIZE_L)
         FOOTPRINT(ThLaylaRLunasaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -133304,18 +133304,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_FLICKER,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThLaylaRLunasaHelper,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThLaylaRLunasaHelper,
         .shinyPalette = gMonShinyPalette_ThLaylaRLunasaHelper,
         .iconSprite = gMonIcon_ThLaylaRLunasaHelper,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 10, SHADOW_SIZE_L)
         FOOTPRINT(ThLaylaRLunasaHelper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -133389,18 +133389,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_FLICKER,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThLaylaRMerlinNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThLaylaRMerlinNormal,
         .shinyPalette = gMonShinyPalette_ThLaylaRMerlinNormal,
         .iconSprite = gMonIcon_ThLaylaRMerlinNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 10, SHADOW_SIZE_L)
         FOOTPRINT(ThLaylaRMerlinNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -133474,18 +133474,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_FLICKER,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThLaylaRMerlinHelper,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThLaylaRMerlinHelper,
         .shinyPalette = gMonShinyPalette_ThLaylaRMerlinHelper,
         .iconSprite = gMonIcon_ThLaylaRMerlinHelper,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 10, SHADOW_SIZE_L)
         FOOTPRINT(ThLaylaRMerlinHelper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -133559,18 +133559,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_FLICKER,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThLaylaRLyricaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThLaylaRLyricaNormal,
         .shinyPalette = gMonShinyPalette_ThLaylaRLyricaNormal,
         .iconSprite = gMonIcon_ThLaylaRLyricaNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 10, SHADOW_SIZE_L)
         FOOTPRINT(ThLaylaRLyricaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -133644,18 +133644,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_FLICKER,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThLaylaRLyricaHelper,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThLaylaRLyricaHelper,
         .shinyPalette = gMonShinyPalette_ThLaylaRLyricaHelper,
         .iconSprite = gMonIcon_ThLaylaRLyricaHelper,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 10, SHADOW_SIZE_L)
         FOOTPRINT(ThLaylaRLyricaHelper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {

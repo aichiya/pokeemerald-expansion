@@ -2228,3 +2228,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/AnotherWorldMilkyRoad/scripts.inc"
 
 	.include "data/maps/AnotherWorldMilkyRoad_Inner/scripts.inc"
+
+	.include "data/maps/AnotherWorldGraceTown/scripts.inc"

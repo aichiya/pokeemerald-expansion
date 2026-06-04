@@ -912,6 +912,8 @@ extern const u8 gBattleAnimMove_StarPunch[];
 extern const u8 gBattleAnimMove_MilkyShock[];
 extern const u8 gBattleAnimMove_SoleilShoot[];
 extern const u8 gBattleAnimMove_SeleneArrow[];
+extern const u8 gBattleAnimMove_MoonTiara[];
+extern const u8 gBattleAnimMove_SpiralHeart[];
 extern const u8 gBattleAnimMove_ClassicIceBeam[];
 extern const u8 gBattleAnimMove_ClassicWaterfall[];
 extern const u8 gBattleAnimMove_ClassicGigaDrain[];

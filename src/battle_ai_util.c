@@ -894,7 +894,7 @@ struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, 
     struct AiLogicData *aiData = gAiLogicData;
     gAiLogicData->aiCalcInProgress = TRUE;
 
-    if (moveEffect == EFFECT_HIT_ENEMY_HEAL_ALLY
+    if ((moveEffect == EFFECT_HIT_ENEMY_HEAL_ALLY || moveEffect == EFFECT_UEHEHEHEHEHE)
      && battlerDef == BATTLE_PARTNER(battlerAtk))
         return simDamage;
 

@@ -1555,10 +1555,15 @@ bool8 IsMapTypeOutdoors(enum MapType mapType)
 
 bool8 Overworld_MapTypeAllowsTeleportAndFly(enum MapType mapType)
 {
-    if (mapType == MAP_TYPE_ROUTE
+    const struct MapHeader *mapHeader;
+
+    if ((mapType == MAP_TYPE_ROUTE
      || mapType == MAP_TYPE_TOWN
      || mapType == MAP_TYPE_OCEAN_ROUTE
      || mapType == MAP_TYPE_CITY)
+     && !(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ANOTHER_WORLD_MILKY_ROAD) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ANOTHER_WORLD_MILKY_ROAD))
+     && !(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ANOTHER_WORLD_MILKY_ROAD_INNER) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ANOTHER_WORLD_MILKY_ROAD_INNER))
+     && !(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ANOTHER_WORLD_GRACE_TOWN) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ANOTHER_WORLD_GRACE_TOWN)))
         return TRUE;
     else
         return FALSE;

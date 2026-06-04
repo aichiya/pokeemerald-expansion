@@ -3,7 +3,6 @@
   "name": "GensokyoNetherworldEntrance",
   "layout": "LAYOUT_GENSOKYO_NETHERWORLD_ENTRANCE",
   "music": "MUS_THPPZGSK_306A_ANCIENT_TEMPLE",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_GENSOKYO_HAKUGYOKUROU",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
@@ -23,5 +22,6 @@
   "object_events": [],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

@@ -62,6 +62,46 @@ const struct SpriteTemplate gSpinningBoneSpriteTemplate =
     .callback = AnimBoneHitProjectile,
 };
 
+static const union AffineAnimCmd sAffineAnim_MoonTiara[] =
+{
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 15, 1),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+static const union AffineAnimCmd sAffineAnim_SpinningMoonTiara[] =
+{
+    AFFINEANIMCMD_FRAME(0x0, 0x0, 20, 1),
+    AFFINEANIMCMD_JUMP(0),
+};
+
+static const union AffineAnimCmd *const sAffineAnims_MoonTiara[] =
+{
+    sAffineAnim_MoonTiara,
+};
+
+const union AffineAnimCmd *const gAffineAnims_SpinningMoonTiara[] =
+{
+    sAffineAnim_SpinningMoonTiara,
+};
+
+const struct SpriteTemplate gMoonTiaraSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MOON_TIARA,
+    .paletteTag = ANIM_TAG_MOON_TIARA,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .affineAnims = sAffineAnims_MoonTiara,
+    .callback = AnimBonemerangProjectile,
+};
+
+const struct SpriteTemplate gSpinningMoonTiaraSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MOON_TIARA,
+    .paletteTag = ANIM_TAG_MOON_TIARA,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .affineAnims = gAffineAnims_SpinningMoonTiara,
+    .callback = AnimBoneHitProjectile,
+};
+
 const struct SpriteTemplate gSandAttackDirtSpriteTemplate =
 {
     .tileTag = ANIM_TAG_MUD_SAND,

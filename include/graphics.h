@@ -3549,5 +3549,7 @@ extern const u16 gBattleAnimBgPalette_ClassicMist[];
 extern const u32 gBattleAnimBgTilemap_ClassicMist[];
 extern const u32 gBattleAnimSpriteGfx_ClassicPoisonBubble[];
 extern const u16 gBattleAnimSpritePal_ClassicPoisonBubble[];
+extern const u32 gBattleAnimSpriteGfx_MoonTiara[];
+extern const u16 gBattleAnimSpritePal_MoonTiara[];
 
 #endif //GUARD_GRAPHICS_H

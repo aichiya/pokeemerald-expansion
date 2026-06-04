@@ -2235,3 +2235,5 @@ const u16 gBattleAnimBgPalette_ClassicMist[] = INCGFX_U16("graphics/battle_anims
 const u32 gBattleAnimBgTilemap_ClassicMist[] = INCBIN_U32("graphics/battle_anims/backgrounds/classic_mist.bin.smolTM");
 const u32 gBattleAnimSpriteGfx_ClassicPoisonBubble[] = INCGFX_U32("graphics/battle_anims/sprites/classic_poison_bubble.png", ".4bpp.smol");
 const u16 gBattleAnimSpritePal_ClassicPoisonBubble[] = INCGFX_U16("graphics/battle_anims/sprites/classic_poison_bubble.png", ".gbapal");
+const u32 gBattleAnimSpriteGfx_MoonTiara[] = INCGFX_U32("graphics/battle_anims/sprites/moon_tiara.png", ".4bpp.smol");
+const u16 gBattleAnimSpritePal_MoonTiara[] = INCGFX_U16("graphics/battle_anims/sprites/moon_tiara.png", ".gbapal");

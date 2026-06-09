@@ -269,12 +269,12 @@ static void CreateBattleStartTask(enum BattleTransition transition, u16 song)
 {
     u8 taskId = CreateTask(Task_BattleStart, 1);
 
-    if (FlagGet(FLAG_IDENTIFIER_NEGA_WORLD) == TRUE)
+    if (FlagGet(FLAG_IDENTIFIER_NEGA_WORLD))
     {
         FlagSet(FLAG_INVERSE_BATTLE);
     }
     gTasks[taskId].tTransition = transition;
-    if (FlagGet(FLAG_USE_CURRENT_BGM_FOR_BATTLE) == TRUE)
+    if (FlagGet(FLAG_USE_CURRENT_BGM_FOR_BATTLE))
     {
         FlagClear(FLAG_USE_CURRENT_BGM_FOR_BATTLE);
     }

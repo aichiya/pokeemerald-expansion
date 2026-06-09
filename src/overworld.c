@@ -1236,12 +1236,15 @@ u16 GetLocationMusic(struct WarpData *warp)
         return MUS_ENCOUNTER_MAGMA;
     else if (IsInfiltratedWeatherInstitute(warp) == TRUE)
         return MUS_MT_CHIMNEY;
-
+/*
     const struct MapHeader *mapHeader = Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum);
     if (mapHeader->nightMusic != MUS_NONE && GetTimeOfDay() == TIME_NIGHT)
         return mapHeader->nightMusic;
     
     return mapHeader->music;
+*/
+    else
+        return Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum)->music;
 }
 
 u16 GetCurrLocationDefaultMusic(void)
@@ -1313,7 +1316,7 @@ void Overworld_PlaySpecialMapMusic(void)
                 music = (IS_FRLG ? MUS_RG_SURF : MUS_SURF);
     }
 
-    music = GetNightMusicFromTrack(music);
+//    music = GetNightMusicFromTrack(music);
 
     if (music != GetCurrentMapMusic())
         PlayNewMapMusic(music);
@@ -1350,7 +1353,7 @@ static void TransitionMapMusic(void)
             if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
                 newMusic = (IS_FRLG ? MUS_RG_SURF : MUS_SURF);
         }
-        newMusic = GetNightMusicFromTrack(newMusic);
+//        newMusic = GetNightMusicFromTrack(newMusic);
         if (newMusic != currentMusic)
         {
             if (TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE))
@@ -1387,7 +1390,7 @@ u8 GetMapMusicFadeoutSpeed(void)
 void TryFadeOutOldMapMusic(void)
 {
     u16 currentMusic = GetCurrentMapMusic();
-    u16 warpMusic = GetNightMusicFromTrack(GetWarpDestinationMusic());
+    u16 warpMusic = GetWarpDestinationMusic(); // GetNightMusicFromTrack(GetWarpDestinationMusic());
     if (FlagGet(FLAG_DONT_TRANSITION_MUSIC) != TRUE && warpMusic != GetCurrentMapMusic())
     {
         if (currentMusic == MUS_SURF
@@ -1858,7 +1861,7 @@ static void OverworldBasic(void)
         u32 *bld1 = (u32*)&gTimeBlend;
         gTimeUpdateCounter = (SECONDS_PER_MINUTE * 60 / FakeRtc_GetSecondsRatio());
         UpdateTimeOfDay();
-        TransitionMapMusic();
+//        TransitionMapMusic();
         FormChangeTimeUpdate();
         if (MapHasNaturalLight(gMapHeader.mapType) &&
            (bld0[0] != bld1[0]

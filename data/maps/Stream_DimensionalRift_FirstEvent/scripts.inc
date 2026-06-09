@@ -54,7 +54,7 @@ Stream_DimensionalRift_FirstEvent_EventScript_EncounterTsukasaAndMon::
 	delay 0x10
 	special StartWallyTutorialBattle
 	playbgm MUS_YYYI_BATTLE_04, FALSE
-	waitstate
+@	waitstate
 	setobjectxyperm LOCALID_MON, 0x1, 0x1
 	removeobject LOCALID_MON
 	setweather WEATHER_FOG_HORIZONTAL

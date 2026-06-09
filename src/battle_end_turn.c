@@ -1152,6 +1152,18 @@ static bool32 HandleEndTurnSecondEventBlock(enum BattlerId battler)
         }
         gBattleStruct->eventState.endTurnBlock++;
         break;
+    case SECOND_EVENT_BLOCK_CLASSIC_REFLECT:
+        if (gSideTimers[side].reflectTimer > 0 && --gSideTimers[side].reflectTimer == 0)
+        {
+            gBattleScripting.battler = GetBattlerSideForMessage(side);
+            gSideStatuses[side] &= ~SIDE_STATUS_REFLECT;
+            BattleScriptCall(BattleScript_SideStatusWoreOff);
+            gBattleCommunication[MULTISTRING_CHOOSER] = side;
+            PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_CLASSIC_REFLECT);
+            effect = TRUE;
+        }
+        gBattleStruct->eventState.endTurnBlock++;
+        break;
     case SECOND_EVENT_BLOCK_LIGHT_SCREEN:
         if (gSideTimers[side].lightscreenTimer > 0 && --gSideTimers[side].lightscreenTimer == 0)
         {
@@ -1160,6 +1172,18 @@ static bool32 HandleEndTurnSecondEventBlock(enum BattlerId battler)
             BattleScriptCall(BattleScript_SideStatusWoreOff);
             gBattleCommunication[MULTISTRING_CHOOSER] = side;
             PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_LIGHT_SCREEN);
+            effect = TRUE;
+        }
+        gBattleStruct->eventState.endTurnBlock++;
+        break;
+    case SECOND_EVENT_BLOCK_CLASSIC_LIGHT_SCREEN:
+        if (gSideTimers[side].lightscreenTimer > 0 && --gSideTimers[side].lightscreenTimer == 0)
+        {
+            gBattleScripting.battler = GetBattlerSideForMessage(side);
+            gSideStatuses[side] &= ~SIDE_STATUS_LIGHTSCREEN;
+            BattleScriptCall(BattleScript_SideStatusWoreOff);
+            gBattleCommunication[MULTISTRING_CHOOSER] = side;
+            PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_CLASSIC_LIGHT_SCREEN);
             effect = TRUE;
         }
         gBattleStruct->eventState.endTurnBlock++;

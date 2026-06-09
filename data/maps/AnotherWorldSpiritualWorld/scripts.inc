@@ -22,7 +22,7 @@ AnotherWorldSpiritualWorld_Event_Reimufate_BattleDeclined::
 AnotherWorldSpiritualWorld_Text_Reimufate_Greeting:
 	.string "???: Hello!\n"
 	.string "I wonder how you entered this\l"
-	.string "Spiritual World.\p"
+	.string "Spirit Realm.\p"
 	.string "Reimufate: Anyway, I'm Reimufate.\p"
 	.string "Since you can enter this world,\n"
 	.string "it means you're a strong trainer.\p"

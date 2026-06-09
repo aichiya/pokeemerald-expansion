@@ -29,7 +29,6 @@
 #include "overworld.h"
 #include "scanline_effect.h"
 #include "field_weather.h"
-#include "international_string_util.h"
 #include "naming_screen.h"
 #include "pokemon_storage_system.h"
 #include "field_screen_effect.h"
@@ -305,191 +304,19 @@ static const s16 sEggShardVelocities[][2] =
     {Q_8_8(2.5),        Q_8_8(-7.5)},
 };
 
-static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
-{
-    enum Species species;
-    u32 personality, pokerus;
-    enum PokeBall ball;
-    u8 i, friendship, language, gameMet, markings, isModernFatefulEncounter;
-    bool32 isShiny;
-    enum Move moves[MAX_MON_MOVES];
-    u32 ivs[NUM_STATS];
-    u16 contestCool, contestBeauty, contestCute, contestSmart, contestTough, contestSheen;
-    u8 hasCoolRibbon, hasBeautyRibbon, hasCuteRibbon, hasSmartRibbon, hasToughRibbon;
-    u8 hasChampionRibbon, hasWinningRibbon, hasVictoryRibbon, hasArtistRibbon, hasEffortRibbon;
-    u8 hasMarineRibbon, hasLandRibbon, hasSkyRibbon, hasCountryRibbon, hasNationalRibbon, hasEarthRibbon, hasWorldRibbon;
-    u16 item;
-    u16 move1, move2, move3, move4;
-    u8 shinyness;
-    u8 ability;
-    u8 gigantamaxFactor;
-    u8 teratype;
-    u8 metEggLocation;
-
-    species = GetMonData(egg, MON_DATA_SPECIES);
-
-    for (i = 0; i < MAX_MON_MOVES; i++)
-        moves[i] = GetMonData(egg, MON_DATA_MOVE1 + i);
-
-    personality = GetMonData(egg, MON_DATA_PERSONALITY);
-
-    for (i = 0; i < NUM_STATS; i++)
-        ivs[i] = GetMonData(egg, MON_DATA_HP_IV + i);
-
-    // The language is initially read from the Egg but is later overwritten below
-    language = GetMonData(egg, MON_DATA_LANGUAGE);
-    gameMet = GetMonData(egg, MON_DATA_MET_GAME);
-    markings = GetMonData(egg, MON_DATA_MARKINGS);
-    pokerus = GetMonData(egg, MON_DATA_POKERUS);
-    shinyness = GetMonData(egg, MON_DATA_IS_SHINY);
-    ability = GetMonData(egg, MON_DATA_ABILITY_NUM);
-    gigantamaxFactor = GetMonData(egg, MON_DATA_GIGANTAMAX_FACTOR);
-    teratype = GetMonData(egg, MON_DATA_TERA_TYPE);
-    isModernFatefulEncounter = GetMonData(egg, MON_DATA_MODERN_FATEFUL_ENCOUNTER);
-    isShiny = GetMonData(egg, MON_DATA_IS_SHINY);
-    contestCool = GetMonData(egg, MON_DATA_COOL);
-    contestBeauty = GetMonData(egg, MON_DATA_BEAUTY);
-    contestCute = GetMonData(egg, MON_DATA_CUTE);
-    contestSmart = GetMonData(egg, MON_DATA_SMART);
-    contestTough = GetMonData(egg, MON_DATA_TOUGH);
-    contestSheen = GetMonData(egg, MON_DATA_SHEEN);
-    hasCoolRibbon = GetMonData(egg, MON_DATA_COOL_RIBBON);
-    hasBeautyRibbon = GetMonData(egg, MON_DATA_BEAUTY_RIBBON);
-    hasCuteRibbon = GetMonData(egg, MON_DATA_CUTE_RIBBON);
-    hasSmartRibbon = GetMonData(egg, MON_DATA_SMART_RIBBON);
-    hasToughRibbon = GetMonData(egg, MON_DATA_TOUGH_RIBBON);
-    hasChampionRibbon = GetMonData(egg, MON_DATA_CHAMPION_RIBBON);
-    hasWinningRibbon = GetMonData(egg, MON_DATA_WINNING_RIBBON);
-    hasVictoryRibbon = GetMonData(egg, MON_DATA_VICTORY_RIBBON);
-    hasArtistRibbon = GetMonData(egg, MON_DATA_ARTIST_RIBBON);
-    hasEffortRibbon = GetMonData(egg, MON_DATA_EFFORT_RIBBON);
-    hasMarineRibbon = GetMonData(egg, MON_DATA_MARINE_RIBBON);
-    hasLandRibbon = GetMonData(egg, MON_DATA_LAND_RIBBON);
-    hasSkyRibbon = GetMonData(egg, MON_DATA_SKY_RIBBON);
-    hasCountryRibbon = GetMonData(egg, MON_DATA_COUNTRY_RIBBON);
-    hasNationalRibbon = GetMonData(egg, MON_DATA_NATIONAL_RIBBON);
-    hasEarthRibbon = GetMonData(egg, MON_DATA_EARTH_RIBBON);
-    hasWorldRibbon = GetMonData(egg, MON_DATA_WORLD_RIBBON);
-    metEggLocation = GetMonData(egg, MON_DATA_MET_LOCATION);
-    ball = GetMonData(egg, MON_DATA_POKEBALL);
-
-    CreateMonWithIVs(temp, species, EGG_HATCH_LEVEL, personality, OTID_STRUCT_PLAYER_ID, USE_RANDOM_IVS);
-    SetMonData(temp, MON_DATA_IS_SHINY, &isShiny);
-
-    for (i = 0; i < MAX_MON_MOVES; i++)
-        SetMonData(temp, MON_DATA_MOVE1 + i,  &moves[i]);
-
-    for (i = 0; i < NUM_STATS; i++)
-        SetMonData(temp, MON_DATA_HP_IV + i,  &ivs[i]);
-
-    language = GAME_LANGUAGE;
-    SetMonData(temp, MON_DATA_LANGUAGE, &language);
-    SetMonData(temp, MON_DATA_MET_GAME, &gameMet);
-    SetMonData(temp, MON_DATA_MARKINGS, &markings);
-
-    friendship = 120;
-    SetMonData(temp, MON_DATA_FRIENDSHIP, &friendship);
-    SetMonData(temp, MON_DATA_POKERUS, &pokerus);
-    SetMonData(temp, MON_DATA_IS_SHINY, &shinyness);
-    SetMonData(temp, MON_DATA_ABILITY_NUM, &ability);
-    SetMonData(temp, MON_DATA_GIGANTAMAX_FACTOR, &gigantamaxFactor);
-    SetMonData(temp, MON_DATA_TERA_TYPE, &teratype);
-    SetMonData(temp, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
-    SetMonData(temp, MON_DATA_COOL, &contestCool);
-    SetMonData(temp, MON_DATA_BEAUTY, &contestBeauty);
-    SetMonData(temp, MON_DATA_CUTE, &contestCute);
-    SetMonData(temp, MON_DATA_SMART, &contestSmart);
-    SetMonData(temp, MON_DATA_TOUGH, &contestTough);
-    SetMonData(temp, MON_DATA_SHEEN, &contestSheen);
-    SetMonData(temp, MON_DATA_COOL_RIBBON, &hasCoolRibbon);
-    SetMonData(temp, MON_DATA_BEAUTY_RIBBON, &hasBeautyRibbon);
-    SetMonData(temp, MON_DATA_CUTE_RIBBON, &hasCuteRibbon);
-    SetMonData(temp, MON_DATA_SMART_RIBBON, &hasSmartRibbon);
-    SetMonData(temp, MON_DATA_TOUGH_RIBBON, &hasToughRibbon);
-    SetMonData(temp, MON_DATA_CHAMPION_RIBBON, &hasChampionRibbon);
-    SetMonData(temp, MON_DATA_WINNING_RIBBON, &hasWinningRibbon);
-    SetMonData(temp, MON_DATA_VICTORY_RIBBON, &hasVictoryRibbon);
-    SetMonData(temp, MON_DATA_ARTIST_RIBBON, &hasArtistRibbon);
-    SetMonData(temp, MON_DATA_MARINE_RIBBON, &hasEffortRibbon);
-    SetMonData(temp, MON_DATA_EFFORT_RIBBON, &hasMarineRibbon);
-    SetMonData(temp, MON_DATA_LAND_RIBBON, &hasLandRibbon);
-    SetMonData(temp, MON_DATA_SKY_RIBBON, &hasSkyRibbon);
-    SetMonData(temp, MON_DATA_COUNTRY_RIBBON, &hasCountryRibbon);
-    SetMonData(temp, MON_DATA_NATIONAL_RIBBON, &hasNationalRibbon);
-    SetMonData(temp, MON_DATA_EARTH_RIBBON, &hasEarthRibbon);
-    SetMonData(temp, MON_DATA_WORLD_RIBBON, &hasWorldRibbon);
-    SetMonData(temp, MON_DATA_POKEBALL, &ball);
-
-    if (gameMet == VERSION_IDENTIFIER_GACHA) 
-    {
-        if (metEggLocation == METLOC_FATEFUL_ENCOUNTER)
-        {
-            u8 locationSet = METLOC_FATEFUL_ENCOUNTER;
-            SetMonData(temp, MON_DATA_MET_LOCATION, &locationSet);
-            if (species == SPECIES_MEW)
-            {
-                item = ITEM_MEWNIUM_Z;
-                move1 = MOVE_PSYCHIC;
-                move2 = MOVE_CELEBRATE;
-                move3 = MOVE_SKETCH;
-                move4 = MOVE_LIGHT_OF_RUIN;
-                SetMonData(temp, MON_DATA_HELD_ITEM, &item);
-                SetMonData(temp, MON_DATA_MOVE1, &move1);
-                SetMonData(temp, MON_DATA_MOVE2, &move2);
-                SetMonData(temp, MON_DATA_MOVE3, &move3);
-                SetMonData(temp, MON_DATA_MOVE4, &move4);
-            }
-            else if (species == SPECIES_CELEBI)
-            {
-                item = ITEM_GRASSIUM_Z;
-                move1 = MOVE_SEED_FLARE;
-                move2 = MOVE_CELEBRATE;
-                move3 = MOVE_SKETCH;
-                move4 = MOVE_LIGHT_OF_RUIN;
-                SetMonData(temp, MON_DATA_HELD_ITEM, &item);
-                SetMonData(temp, MON_DATA_MOVE1, &move1);
-                SetMonData(temp, MON_DATA_MOVE2, &move2);
-                SetMonData(temp, MON_DATA_MOVE3, &move3);
-                SetMonData(temp, MON_DATA_MOVE4, &move4);
-            }
-        }
-        else
-        {
-            u8 locationSet = metEggLocation;
-            SetMonData(temp, MON_DATA_MET_LOCATION, &locationSet);
-            item = ITEM_NONE;
-            SetMonData(temp, MON_DATA_HELD_ITEM, &item);
-        }
-    }
-    else if (gameMet != VERSION_EMERALD)
-    {
-        u8 locationSet = metEggLocation;
-        SetMonData(temp, MON_DATA_MET_LOCATION, &locationSet);
-        item = ITEM_NONE;
-        SetMonData(temp, MON_DATA_HELD_ITEM, &item);
-    }
-    else
-    {
-       item = ITEM_NONE;
-       SetMonData(temp, MON_DATA_HELD_ITEM, &item);
-    }
-
-    *egg = *temp;
-}
-
 static void AddHatchedMonToParty(u8 id)
 {
-    u8 isEgg = 0x46; // ?
     enum Species species;
     enum NationalDexOrder nationalDexNum;
     u8 name[POKEMON_NAME_LENGTH + 1];
-    u16 metLevel;
+    u32 metLevel, friendship;
+    enum Language language;
     metloc_u8_t metLocation;
     u8 gameMet;
     int experience;
     struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][id];
 
-    CreateHatchedMon(mon, &gParties[B_TRAINER_OPPONENT_A][0]);
+    bool32 isEgg = FALSE;
     SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
 
     species = GetMonData(mon, MON_DATA_SPECIES);
@@ -504,6 +331,12 @@ static void AddHatchedMonToParty(u8 id)
     
 //    species = GetMonData(mon, MON_DATA_SPECIES);
     gameMet = GetMonData(mon, MON_DATA_MET_GAME);
+
+    language = GAME_LANGUAGE;
+    SetMonData(mon, MON_DATA_LANGUAGE, &language);
+
+    friendship = 120;
+    SetMonData(mon, MON_DATA_FRIENDSHIP, &friendship);
 
     if (gameMet != VERSION_EMERALD)
     {
@@ -522,6 +355,13 @@ static void AddHatchedMonToParty(u8 id)
     SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
     }
 
+    SetMonData(mon, MON_DATA_MET_GAME, &gGameVersion);
+
+    u32 otId = READ_OTID_FROM_SAVE;
+    SetMonData(mon, MON_DATA_OT_ID, &otId);
+    SetMonData(mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+    SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+
     MonRestorePP(mon);
     CalculateMonStats(mon);
 }
@@ -529,29 +369,6 @@ static void AddHatchedMonToParty(u8 id)
 void ScriptHatchMon(void)
 {
     AddHatchedMonToParty(gSpecialVar_0x8004);
-}
-
-static bool8 _CheckDaycareMonReceivedMail(struct DayCare *daycare, u8 daycareId)
-{
-    u8 nickname[max(32, POKEMON_NAME_BUFFER_SIZE)];
-    struct DaycareMon *daycareMon = &daycare->mons[daycareId];
-
-    GetBoxMonNickname(&daycareMon->mon, nickname);
-    if (daycareMon->mail.message.itemId != ITEM_NONE
-        && (StringCompareWithoutExtCtrlCodes(nickname, daycareMon->mail.monName) != 0
-         || StringCompareWithoutExtCtrlCodes(gSaveBlock2Ptr->playerName, daycareMon->mail.otName) != 0))
-    {
-        StringCopy(gStringVar1, nickname);
-        TVShowConvertInternationalString(gStringVar2, daycareMon->mail.otName, daycareMon->mail.gameLanguage);
-        TVShowConvertInternationalString(gStringVar3, daycareMon->mail.monName, daycareMon->mail.monLanguage);
-        return TRUE;
-    }
-    return FALSE;
-}
-
-bool8 CheckDaycareMonReceivedMail(void)
-{
-    return _CheckDaycareMonReceivedMail(&gSaveBlock1Ptr->daycare, gSpecialVar_0x8004);
 }
 
 static u8 EggHatchCreateMonSprite(u8 useAlt, u8 state, u8 partyId, u16 *speciesLoc)
@@ -948,10 +765,8 @@ static void SpriteCB_Egg_Shake3(struct Sprite *sprite)
     {
         if (++sprite->sTimer > 38)
         {
-            u16 UNUSED species;
             sprite->callback = SpriteCB_Egg_WaitHatch;
             sprite->sTimer = 0;
-            species = GetMonData(&gParties[B_TRAINER_PLAYER][sEggHatchData->eggPartyId], MON_DATA_SPECIES);
             gSprites[sEggHatchData->monSpriteId].x2 = 0;
             gSprites[sEggHatchData->monSpriteId].y2 = 0;
         }
@@ -1088,24 +903,6 @@ static void EggHatchPrintMessage(u8 windowId, u8 *string, u8 x, u8 y, u8 speed)
     sEggHatchData->textColor[1] = 5;
     sEggHatchData->textColor[2] = 6;
     AddTextPrinterParameterized4(windowId, FONT_NORMAL, x, y, 0, 0, sEggHatchData->textColor, speed, string);
-}
-
-u8 GetEggCyclesToSubtract(void)
-{
-    u8 count, i;
-    for (count = CalculatePlayerPartyCount(), i = 0; i < count; i++)
-    {
-        if (!GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SANITY_IS_EGG))
-        {
-            enum Ability ability = GetMonAbility(&gParties[B_TRAINER_PLAYER][i]);
-            if (ability == ABILITY_MAGMA_ARMOR
-             || ability == ABILITY_FLAME_BODY
-             || ability == ABILITY_STEAM_ENGINE
-             || ability == ABILITY_FIRE_VEIL)
-                return 2;
-        }
-    }
-    return 1;
 }
 
 u16 CountPartyAliveNonEggMons(void)

@@ -1949,6 +1949,8 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             if (weather & (B_WEATHER_ICY_ANY | B_WEATHER_PRIMAL_ANY))
                 ADJUST_SCORE(-8);
             break;
+        default:
+            break;
         }
         if (HasPartner(battlerAtk) && AreMovesEquivalent(battlerAtk, BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove))
             ADJUST_SCORE(-8);
@@ -2713,7 +2715,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
     case EFFECT_SOAK:
     {
         enum Type types[3];
-        u32 typeArg = GetMoveArgType(move);
+        enum Type typeArg = GetMoveArgType(move);
 
         GetBattlerTypes(battlerDef, FALSE, types);
         if (PartnerMoveIsSameAsAttacker(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove)
@@ -2875,7 +2877,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
         if (BattlerWillFaintFromWeather(battlerAtk, aiData->abilities[battlerAtk])
         ||  DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
-        ||  GetBattlerWeight(battlerDef) >= 2000) //200.0 kg
+        ||  GetBattlerWeight(battlerDef, aiData->abilities[battlerDef], aiData->holdEffects[battlerDef]) >= 2000) //200.0 kg
             ADJUST_SCORE(-10);
         break;
     case EFFECT_REVIVAL_BLESSING:
@@ -6485,6 +6487,8 @@ static s32 AI_PowerfulStatus(enum BattlerId battlerAtk, enum BattlerId battlerDe
         case BATTLE_WEATHER_SNOW:
             if (IsWeatherActive(B_WEATHER_ICY_ANY | B_WEATHER_PRIMAL_ANY) == WEATHER_INACTIVE)
                 ADJUST_SCORE(POWERFUL_STATUS_MOVE);
+            break;
+        default:
             break;
         }
     default:

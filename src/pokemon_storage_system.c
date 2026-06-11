@@ -482,7 +482,7 @@ struct PokemonStorageSystemData
     const u16 *displayMonPalette;
     u32 displayMonPersonality;
     enum Species displayMonSpecies;
-    u16 displayMonItemId;
+    enum Item displayMonItemId;
 //    u16 displayUnusedVar; // Tndys display game met
     u8 displayMonGameMet; // added TNDYS
     u8 displayMonMetLocation; // added TNDYS
@@ -529,7 +529,7 @@ struct PokemonStorageSystemData
     u8 inBoxMovingMode;
     u16 multiMoveWindowId;
     struct ItemIcon itemIcons[MAX_ITEM_ICONS];
-    u16 movingItemId;
+    enum Item movingItemId;
     u16 itemInfoWindowOffset;
     u16 displayMonPalOffset;
     u16 *displayMonTilePtr;
@@ -550,7 +550,7 @@ EWRAM_DATA static u8 sCurrentBoxOption = 0;
 EWRAM_DATA static u8 sDepositBoxId = 0;
 EWRAM_DATA static u8 sWhichToReshow = 0;
 EWRAM_DATA static u8 sLastUsedBox = 0;
-EWRAM_DATA static u16 sMovingItemId = 0;
+EWRAM_DATA static enum Item sMovingItemId = ITEM_NONE;
 EWRAM_DATA static struct Pokemon sSavedMovingMon = {0};
 EWRAM_DATA static s8 sCursorArea = 0;
 EWRAM_DATA static s8 sCursorPosition = 0;
@@ -718,7 +718,7 @@ static void MoveHeldItemWithPartyMenu(void);
 static bool8 IsItemIconAnimActive(void);
 static bool8 IsMovingItem(void);
 static const u8 *GetMovingItemName(void);
-static u16 GetMovingItemId(void);
+static enum Item GetMovingItemId(void);
 static void PrintItemDescription(void);
 static void InitItemInfoWindow(void);
 static bool8 UpdateItemInfoWindowSlideIn(void);
@@ -8879,7 +8879,7 @@ static void CreateItemIconSprites(void)
 
 static void TryLoadItemIconAtPos(u8 cursorArea, u8 cursorPos)
 {
-    u16 heldItem;
+    enum Item heldItem;
 
     if (sStorage->boxOption != OPTION_MOVE_ITEMS)
         return;
@@ -9124,7 +9124,7 @@ static const u8 *GetMovingItemName(void)
     return GetItemName(sStorage->movingItemId);
 }
 
-static u16 GetMovingItemId(void)
+static enum Item GetMovingItemId(void)
 {
     return sStorage->movingItemId;
 }

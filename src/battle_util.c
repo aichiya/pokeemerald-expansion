@@ -2649,7 +2649,11 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
                         0,
                         &gFieldTimers.terrainTimer, gStartingStatuses.UBWTerrain ? 0 : 5);
             gStartingStatuses.UBWTerrainTemporary = gStartingStatuses.UBWTerrain = FALSE;
-            isTerrain = TRUE;
+            if (effect)
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
+                return TRUE;
+            }
         }
         else if (gStartingStatuses.darknessTerrain || gStartingStatuses.darknessTerrainTemporary)
         {
@@ -2659,7 +2663,11 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
                         0,
                         &gFieldTimers.terrainTimer, gStartingStatuses.darknessTerrain ? 0 : 5);
             gStartingStatuses.darknessTerrainTemporary = gStartingStatuses.darknessTerrain = FALSE;
-            isTerrain = TRUE;
+            if (effect)
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
+                return TRUE;
+            }
         }
         else if (gStartingStatuses.miasmaTerrain || gStartingStatuses.miasmaTerrainTemporary)
         {
@@ -2669,7 +2677,11 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
                         0,
                         &gFieldTimers.terrainTimer, gStartingStatuses.miasmaTerrain ? 0 : 5);
             gStartingStatuses.miasmaTerrainTemporary = gStartingStatuses.miasmaTerrain = FALSE;
-            isTerrain = TRUE;
+            if (effect)
+            {
+                BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
+                return TRUE;
+            }
         }
         else if (gStartingStatuses.trickRoom || gStartingStatuses.trickRoomTemporary)
         {

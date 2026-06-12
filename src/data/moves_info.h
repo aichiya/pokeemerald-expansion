@@ -11684,7 +11684,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_NEW_DIVINE,
         .accuracy = 80,
         .pp = 5,
-        .target = TARGET_TARGET,
+        .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .argument = { .type = TYPE_NEW_FLYING },

@@ -386,8 +386,8 @@ bool32 AreAnyHazardsOnSide(enum BattleSide side);
 void RemoveAllHazardsFromField(enum BattleSide side);
 bool32 IsHazardOnSideAndClear(enum BattleSide side, enum Hazards hazardType);
 void RemoveHazardFromField(enum BattleSide side, enum Hazards hazardType);
-bool32 CanMoveSkipAccuracyCalc(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Ability abilityAtk, enum Ability abilityDef, enum Move move, enum ResultOption option);
-u32 GetTotalAccuracy(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, enum Ability atkAbility, enum Ability defAbility, enum HoldEffect atkHoldEffect, enum HoldEffect defHoldEffect);
+bool32 CanMoveSkipAccuracyCalc(struct BattleCalcValues *cv, u32 weather, enum ResultOption option);
+u32 GetTotalAccuracy(struct BattleCalcValues *cv, u32 weather);
 bool32 DoesOHKOMoveMissTarget(struct BattleCalcValues *cv);
 bool32 DoesMoveMissTarget(struct BattleCalcValues *cv);
 bool32 IsSemiInvulnerable(enum BattlerId battler, enum SemiInvulnerableExclusion excludeCommander);
@@ -425,5 +425,6 @@ bool32 IsBattlersFirstTurn(enum BattlerId battler);
 struct PartyState *GetBattlerPartyState(enum BattlerId battler);
 bool32 IsVictoryCatch(void);
 bool32 IsVictoryCatchGuaranteed(void);
+bool32 IsBattlerInvolvedInSkyDrop(enum BattlerId battler);
 
 #endif // GUARD_BATTLE_UTIL_H

@@ -288,6 +288,18 @@ static bool32 HandleEndTurnAffection(enum BattlerId battler)
     return effect;
 }
 
+static bool32 IsFutureSightAttackerInParty(enum BattlerId battlerAtk, enum BattlerId battlerDef)
+{
+    struct Pokemon *party = GetBattlerParty(battlerAtk);
+    if (IsDoubleBattle())
+    {
+        return &party[gBattleStruct->futureSight[battlerDef].partyIndex] != &party[gBattlerPartyIndexes[battlerAtk]]
+            && &party[gBattleStruct->futureSight[battlerDef].partyIndex] != &party[gBattlerPartyIndexes[BATTLE_PARTNER(battlerAtk)]];
+    }
+
+    return &party[gBattleStruct->futureSight[battlerDef].partyIndex] != &party[gBattlerPartyIndexes[battlerAtk]];
+}
+
 // Note: Technically Future Sight, Doom Desire and Wish need a queue but
 // I think we should accept this slight inconsistency so custom moves don't have to touch this code
 static bool32 HandleEndTurnFutureSight(enum BattlerId battler)
@@ -299,7 +311,7 @@ static bool32 HandleEndTurnFutureSight(enum BattlerId battler)
     if (gBattleStruct->futureSight[battler].counter > 0
      && --gBattleStruct->futureSight[battler].counter == 0)
     {
-        if (!IsBattlerPresent(battler))
+        if (!IsBattlerPresent(battler)) // Looks like a bug in doubles?
             return effect;
 
         if (gBattleStruct->futureSight[battler].move == MOVE_FUTURE_SIGHT)
@@ -314,7 +326,9 @@ static bool32 HandleEndTurnFutureSight(enum BattlerId battler)
         gCurrentMove = gBattleStruct->futureSight[battler].move;
         gBattleStruct->eventState.atkCanceler = CANCELER_TARGET_FAILURE;
 
-        if (!IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget, gCurrentMove))
+        if (IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget))
+            gSpecialStatuses[gBattlerAttacker].attackerInParty = TRUE;
+        else
             SetTypeBeforeUsingMove(gCurrentMove, gBattlerAttacker);
 
         BattleScriptCall(BattleScript_MonTookFutureAttack);
@@ -615,15 +629,22 @@ static bool32 HandleEndTurnPoison(enum BattlerId battler)
     bool32 effect = FALSE;
 
     enum Ability ability = GetBattlerAbility(battler);
+    bool32 isToxicPoison = gBattleMons[battler].status1 & STATUS1_TOXIC_POISON;
 
     gBattleStruct->eventState.endTurnBattler++;
 
-    if ((gBattleMons[battler].status1 & STATUS1_POISON || gBattleMons[battler].status1 & STATUS1_TOXIC_POISON)
-     && IsBattlerPresent(battler)
-     && !(IsAbilityAndRecord(battler, ability, ABILITY_MAGIC_GUARD) || IsAbilityAndRecord(battler, ability, ABILITY_FANTASY_BREAKER)))
+    if (IsBattlerPresent(battler) && (gBattleMons[battler].status1 & STATUS1_POISON || isToxicPoison))
     {
-        if (ability == ABILITY_POISON_HEAL)
+        if (IsAbilityAndRecord(battler, ability, ABILITY_MAGIC_GUARD) || IsAbilityAndRecord(battler, ability, ABILITY_FANTASY_BREAKER))
         {
+            if (isToxicPoison && (gBattleMons[battler].status1 & STATUS1_TOXIC_COUNTER) != STATUS1_TOXIC_TURN(15)) // not 16 turns
+                gBattleMons[battler].status1 += STATUS1_TOXIC_TURN(1);
+        }
+        else if (ability == ABILITY_POISON_HEAL || ability == ABILITY_PURE_WHITE)
+        {
+            if (isToxicPoison && (gBattleMons[battler].status1 & STATUS1_TOXIC_COUNTER) != STATUS1_TOXIC_TURN(15)) // not 16 turns
+                gBattleMons[battler].status1 += STATUS1_TOXIC_TURN(1);
+
             if (!IsBattlerAtMaxHp(battler) && !gBattleMons[battler].volatiles.healBlock)
             {
                 SetHealAmount(battler, GetNonDynamaxMaxHP(battler) / 8);
@@ -631,19 +652,7 @@ static bool32 HandleEndTurnPoison(enum BattlerId battler)
                 effect = TRUE;
             }
         }
-        else if (ability == ABILITY_PURE_WHITE)
-        {
-            if (!IsBattlerAtMaxHp(battler) && !gBattleMons[battler].volatiles.healBlock)
-            {
-                gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
-                if (gBattleStruct->moveDamage[battler] == 0)
-                    gBattleStruct->moveDamage[battler] = 1;
-                gBattleStruct->moveDamage[battler] *= -1;
-                BattleScriptExecute(BattleScript_PoisonHealActivates);
-                effect = TRUE;
-            }
-        }
-        else if (gBattleMons[battler].status1 & STATUS1_TOXIC_POISON)
+        else if (isToxicPoison)
         {
             u32 side = (BATTLE_OPPOSITE(GetBattlerPosition(battler))) & BIT_SIDE;
             u32 opposite1 = GetBattlerAtPosition(side);
@@ -653,10 +662,12 @@ static bool32 HandleEndTurnPoison(enum BattlerId battler)
             SetPassiveDamageAmount(battler, GetNonDynamaxMaxHP(battler) / 16);
             if ((gBattleMons[battler].status1 & STATUS1_TOXIC_COUNTER) != STATUS1_TOXIC_TURN(15)) // not 16 turns
                 gBattleMons[battler].status1 += STATUS1_TOXIC_TURN(1);
+
             if (GetBattlerAbility(opposite1) == ABILITY_CATALYST || GetBattlerAbility(opposite2) == ABILITY_CATALYST)
                 gBattleStruct->passiveHpUpdate[battler] = (gBattleStruct->passiveHpUpdate[battler] * (gBattleMons[battler].status1 & STATUS1_TOXIC_COUNTER) >> 8) + catalystExtraDamage;
             else
                 gBattleStruct->passiveHpUpdate[battler] *= (gBattleMons[battler].status1 & STATUS1_TOXIC_COUNTER) >> 8;
+
             BattleScriptCall(BattleScript_PoisonTurnDmg);
             effect = TRUE;
         }
@@ -671,6 +682,7 @@ static bool32 HandleEndTurnPoison(enum BattlerId battler)
                 SetPassiveDamageAmount(battler, (GetNonDynamaxMaxHP(battler) / 8) + catalystExtraDamage);
             else
                 SetPassiveDamageAmount(battler, GetNonDynamaxMaxHP(battler) / 8);
+
             BattleScriptCall(BattleScript_PoisonTurnDmg);
             effect = TRUE;
         }
@@ -1767,7 +1779,7 @@ static bool32 HandleEndTurnEmergencyExit(enum BattlerId battler)
     bool32 effect = FALSE;
     enum Ability ability = GetBattlerAbility(battler);
 
-    if (EmergencyExitCanBeTriggered(battler))
+    if (EmergencyExitCanBeTriggered(battler, ability))
     {
         gBattleScripting.battler = gBattlerAbility = battler;
         gLastUsedAbility = ability;

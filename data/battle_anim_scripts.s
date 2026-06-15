@@ -31815,6 +31815,7 @@ gBattleAnimMove_SecretPower::
 	goto gBattleAnimMove_Slam
 .endif
 	@ No actual animation, uses the animation of a move from src/data/battle_environment.h instead
+	end
 
 gBattleAnimMove_Twister::
 	monbg ANIM_DEF_PARTNER

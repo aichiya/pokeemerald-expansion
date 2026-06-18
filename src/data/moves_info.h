@@ -26060,7 +26060,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "from a hero. Double PP usage."),
         .effect = EFFECT_CARD_INCLUDE,
         .power = 70,
-        .type = TYPE_NEW_ILLUSION,
+        .type = TYPE_NEW_MYSTERY,
         .accuracy = 0,
         .pp = 10,
         .target = TARGET_SELECTED,

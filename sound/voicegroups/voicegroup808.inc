@@ -1,6 +1,6 @@
 	.align 2
 voicegroup808::
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                        @ 000 | CnM2 | ---
+	voice_directsound_no_resample 64, 34, DirectSoundWaveData_sc88pro_tambourine, 255, 127, 77, 204                @ 000 | CnM2 | Tambourine
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                        @ 001 | CsM2 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                        @ 002 | DnM2 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                                        @ 003 | DsM2 | ---

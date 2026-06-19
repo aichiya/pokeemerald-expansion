@@ -7157,7 +7157,6 @@ BattleScript_EffectTransformHit::
 	jumpifspecies SPECIES_TH_SHION_ATTACK, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
 	jumpifspecies SPECIES_TH_SHION_DEFENSE, BattleScript_EffectTransformHitDoTransformFirstYorigamiSisters
 BattleScript_EffectTransformHitBeatingUp:
-	damagecalc
 	playmoveanimation MOVE_CLOSE_COMBAT
 	waitanimation
 	effectivenesssound

@@ -746,7 +746,7 @@ static bool32 HandleEndTurnNightmare(enum BattlerId battler)
      && IsBattlerPresent(battler)
      && !(IsAbilityAndRecord(battler, GetBattlerAbility(battler), ABILITY_MAGIC_GUARD) || IsAbilityAndRecord(battler, GetBattlerAbility(battler), ABILITY_PURE_WHITE)))
     {
-        if (gBattleMons[battler].status1 & STATUS1_SLEEP || GetBattlerAbility(battler) == ABILITY_COMATOSE)
+        if (IsAsleepOrComatose(battler, GetBattlerAbility(battler)))
         {
             SetPassiveDamageAmount(battler, GetNonDynamaxMaxHP(battler) / 4);
             BattleScriptCall(BattleScript_NightmareTurnDmg);

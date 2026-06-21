@@ -150,7 +150,8 @@ struct PokemonSubstruct1
     enum Move move2:11; // 2047 moves.
     u16 evolutionTracker2:5;
     enum Move move3:11; // 2047 moves.
-    u16 unused_04:5;
+    u16 dynamaxLevel:4;
+    u16 unused_04:1;
     enum Move move4:11; // 2047 moves.
     u16 unused_06:3;
     u16 hyperTrainedHP:1;
@@ -185,9 +186,9 @@ struct PokemonSubstruct3
 {
     u8 pokerus;
     u8 metLocation;
-    u16 metLevel:7;
+    u16 metLevel:8;
     u16 metGame:4;
-    u16 dynamaxLevel:4;
+    u16 unusedSubStruct_01:3;
     u16 otGender:1;
     u32 hpIV:5;
     u32 attackIV:5;

@@ -1331,6 +1331,7 @@ UNUSED static const struct BoxPokemon sBoxPokemonConstantsFit =
         .move2 = MOVES_COUNT_ALL - 1,
         .move3 = MOVES_COUNT_ALL - 1,
         .move4 = MOVES_COUNT_ALL - 1,
+        .dynamaxLevel = MAX_DYNAMAX_LEVEL,
     },
     .secure.substructs[2].type2 = {
         .hpEV = MAX_PER_STAT_EVS,
@@ -1344,7 +1345,6 @@ UNUSED static const struct BoxPokemon sBoxPokemonConstantsFit =
         .metLocation = min(MAPSEC_COUNT, min(METLOC_SPECIAL_EGG, min(METLOC_IN_GAME_TRADE, METLOC_FATEFUL_ENCOUNTER))),
         .metLevel = MAX_LEVEL,
         .metGame = NUM_VERSIONS, // NOTE: NUM_VERSIONS is inclusive!
-        .dynamaxLevel = MAX_DYNAMAX_LEVEL,
         .otGender = GENDER_COUNT - 1,
         .hpIV = MAX_PER_STAT_IVS,
         .attackIV = MAX_PER_STAT_IVS,
@@ -1356,7 +1356,7 @@ UNUSED static const struct BoxPokemon sBoxPokemonConstantsFit =
     },
 };
 
-STATIC_ASSERT(MAX_LEVEL <= 120, PokemonSubstruct0_experience_PotentiallyTooSmall); // Maximum of ~2 million exp.
+STATIC_ASSERT(MAX_LEVEL <= 200, PokemonSubstruct0_experience_PotentiallyTooSmall); // Maximum of ~2 million exp.
 
 static u32 CompressStatus(u32 status)
 {
@@ -3681,7 +3681,7 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
             retVal = GetSubstruct3(boxMon)->isShadow;
             break;
         case MON_DATA_DYNAMAX_LEVEL:
-            retVal = GetSubstruct3(boxMon)->dynamaxLevel;
+            retVal = GetSubstruct1(boxMon)->dynamaxLevel;
             break;
         case MON_DATA_GIGANTAMAX_FACTOR:
             retVal = GetSubstruct3(boxMon)->gigantamaxFactor;
@@ -4128,7 +4128,7 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             SET8(GetSubstruct3(boxMon)->isShadow);
             break;
         case MON_DATA_DYNAMAX_LEVEL:
-            SET8(GetSubstruct3(boxMon)->dynamaxLevel);
+            SET8(GetSubstruct1(boxMon)->dynamaxLevel);
             break;
         case MON_DATA_GIGANTAMAX_FACTOR:
             SET8(GetSubstruct3(boxMon)->gigantamaxFactor);

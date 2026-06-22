@@ -259,20 +259,3 @@ static void DecrementFeederStepCounters(void)
         }
     }
 }
-
-// unused
-bool8 GetInFrontFeederPokeblockAndSteps(void)
-{
-    GetPokeblockFeederInFront();
-
-    if (gSpecialVar_Result == 0xFFFF)
-    {
-        return FALSE;
-    }
-
-    ConvertIntToDecimalStringN(gStringVar2,
-        sPokeblockFeeders[gSpecialVar_Result].stepCounter,
-        STR_CONV_MODE_LEADING_ZEROS, 3);
-
-    return TRUE;
-}

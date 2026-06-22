@@ -2662,12 +2662,6 @@ void AnimTask_TransformMon(u8 taskId)
     }
 }
 
-void AnimTask_IsMonInvisible(u8 taskId)
-{
-    gBattleAnimArgs[ARG_RET_ID] = gSprites[gBattlerSpriteIds[gBattleAnimAttacker]].invisible;
-    DestroyAnimVisualTask(taskId);
-}
-
 void AnimTask_MorningSunLightBeam(u8 taskId)
 {
     struct BattleAnimBgData animBg;

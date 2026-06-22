@@ -1966,6 +1966,10 @@
 	callnative BS_UpdateAbilityPopup
 	.endm
 
+	.macro waitabilitypopup
+	callnative BS_WaitAbilityPopup
+	.endm
+
 	.macro jumpiftargetally jumpInstr:req
 	callnative BS_JumpIfTargetAlly
 	.4byte \jumpInstr

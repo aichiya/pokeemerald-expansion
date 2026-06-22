@@ -21910,7 +21910,6 @@ gBattleAnimMove_StarPunch::
 	delay 6
 	create_basic_hitsplat_sprite ANIM_TARGET, 3, x=0, y=0, relative_to=ANIM_TARGET, animation=1
 	create_fist_sprite ANIM_TARGET, 4, x=0, y=0, duration=8, initPosition=1
-@	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 0, 9, RGB_YELLOW
 	createsprite gStarStellarSpiralInwardSpriteTemplate, ANIM_TARGET, 1, 0
@@ -21919,10 +21918,8 @@ gBattleAnimMove_StarPunch::
 	createsprite gStarStellarSpiralInwardSpriteTemplate, ANIM_TARGET, 1, 196
 	playsewithpan SE_M_FIRE_PUNCH, SOUND_PAN_TARGET
 	waitforvisualfinish
-@	create_fist_sprite ANIM_TARGET, 3, x=0, y=0, duration=8, initPosition=1
 	create_basic_hitsplat_sprite ANIM_TARGET, 2, x=0, y=0, relative_to=ANIM_TARGET, animation=1
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 15, 1
-@	call FireSpreadEffect
 	delay 4
 	playsewithpan SE_SHINY, SOUND_PAN_TARGET
 	waitforvisualfinish
@@ -21948,9 +21945,6 @@ gBattleAnimMove_MilkyShock::
 	createsprite gMilkyShockSpriteTemplate, ANIM_ATTACKER, 2
 	loopsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER, 24, 3
 	waitforvisualfinish
-@	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_ATTACKER, RGB_WHITE, 12, 2, 1
-@	playsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER
-@	waitforvisualfinish
 	invert_screen_color scenery=1 | 2 | 4
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
 	delay 1
@@ -22067,7 +22061,6 @@ gBattleAnimMove_SeleneArrow::
 	createvisualtask AnimTask_StartSlidingBg, 0x5, 0x300, 0x0, 0x1, 0xffff
 	waitbgfadein
 	setalpha 0, 16
-@	simple_palette_blend selector=F_PAL_BG, delay=1, initial_blend_y=0, target_blend_y=16, color=RGB_BLACK
 	waitforvisualfinish
 	createsprite gMoonSpriteTemplate, ANIM_ATTACKER, 2, 120, 56
 	createvisualtask AnimTask_AlphaFadeIn, 3, 0, 16, 16, 0, 1
@@ -22149,7 +22142,6 @@ gBattleAnimMove_ClassicGigaDrain::
 	monbg ANIM_TARGET
 	splitbgprio_foes ANIM_TARGET
 	setalpha 12, 8
-@	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(13, 31, 12)
 	playsewithpan SE_M_ABSORB, SOUND_PAN_TARGET
 	createsprite gClassicAbsorptionOrbCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, 24, ANIM_TARGET
 	createsprite gClassicAbsorptionOrbCombineSpriteTemplate, ANIM_TARGET, 2,  24, -24, 24, ANIM_TARGET
@@ -22161,7 +22153,6 @@ gBattleAnimMove_ClassicGigaDrain::
 	call ClassicAbsorbPrefab
 	delay 94
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 5, 5, 1
-@	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 4, 0, RGB(13, 31, 12)
 	waitforvisualfinish
 	invert_screen_color scenery=257 | 2 | 4
 	clearmonbg ANIM_TARGET
@@ -22505,13 +22496,10 @@ ClassicCurseStats:
 	end
 
 gBattleAnimMove_ClassicToxic::
-@	loadspritegfx ANIM_TAG_SPARKLE_6
-@	loadspritegfx ANIM_TAG_POISON_BUBBLE
 	monbg ANIM_TARGET
 	splitbgprio_all
 	delay 0
 	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, ANIM_TARGET, 0, 0, 4, RGB_BLACK
-	createvisualtask AnimTask_GetTargetSide, 2
 	fadetobg BG_CLASSIC_MIST
 	waitbgfadeout
 	createvisualtask AnimTask_StartSlidingBg, 5, 1600, 0, 0, -1
@@ -22601,11 +22589,9 @@ gBattleAnimMove_MoonTiara::
 	playsewithpan SE_M_REVERSAL, SOUND_PAN_ATTACKER
 	createsprite gMoonTiaraSpriteTemplate, ANIM_ATTACKER, 2
 	delay 20
-@	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
 	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=0, y=0, relative_to=ANIM_TARGET, animation=1
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 5, 0, 5, 1
 	delay 17
-@	playsewithpan SE_M_VITAL_THROW, SOUND_PAN_ATTACKER
 	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 6, -4
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
@@ -31312,52 +31298,6 @@ gBattleAnimMove_SkyUppercut::
 	end
 
 gBattleAnimMove_SecretPower::
-	createvisualtask AnimTask_GetFieldTerrain, 5
-	jumpargeq 0, STATUS_FIELD_MISTY_TERRAIN,    gBattleAnimMove_FairyWind
-	jumpargeq 0, STATUS_FIELD_GRASSY_TERRAIN,   gBattleAnimMove_NeedleArm
-	jumpargeq 0, STATUS_FIELD_ELECTRIC_TERRAIN, gBattleAnimMove_ThunderShock
-	jumpargeq 0, STATUS_FIELD_PSYCHIC_TERRAIN,  gBattleAnimMove_Confusion
-	jumpargeq 0, STATUS_FIELD_UBW,              gBattleAnimMove_FlashCannon
-	jumpargeq 0, STATUS_FIELD_DARKNESS_TERRAIN, gBattleAnimMove_DarkPulse
-	jumpargeq 0, STATUS_FIELD_MIASMA_TERRAIN,   gBattleAnimMove_SludgeBomb
-	createvisualtask AnimTask_GetBattleEnvironment, 5
-	jumpargeq 0, BATTLE_ENVIRONMENT_GRASS,          gBattleAnimMove_NeedleArm
-	jumpargeq 0, BATTLE_ENVIRONMENT_LONG_GRASS,     gBattleAnimMove_MagicalLeaf
-	jumpargeq 0, BATTLE_ENVIRONMENT_SAND,           gBattleAnimMove_MudShot
-	jumpargeq 0, BATTLE_ENVIRONMENT_UNDERWATER,     gBattleAnimMove_Waterfall
-	jumpargeq 0, BATTLE_ENVIRONMENT_WATER,          gBattleAnimMove_Surf
-	jumpargeq 0, BATTLE_ENVIRONMENT_POND,           gBattleAnimMove_BubbleBeam
-	jumpargeq 0, BATTLE_ENVIRONMENT_MOUNTAIN,       gBattleAnimMove_RockThrow
-	jumpargeq 0, BATTLE_ENVIRONMENT_CAVE,           gBattleAnimMove_Bite
-	jumpargeq 0, BATTLE_ENVIRONMENT_BLANK_GBC,      gBattleAnimMove_CoreEnforcer
-	jumpargeq 0, BATTLE_ENVIRONMENT_SOARING,        gBattleAnimMove_Gust
-	jumpargeq 0, BATTLE_ENVIRONMENT_SKY_PILLAR,     gBattleAnimMove_Gust
-	jumpargeq 0, BATTLE_ENVIRONMENT_BURIAL_GROUND,  gBattleAnimMove_ShadowSneak
-	jumpargeq 0, BATTLE_ENVIRONMENT_PUDDLE,         gBattleAnimMove_MudShot
-	jumpargeq 0, BATTLE_ENVIRONMENT_MARSH,          gBattleAnimMove_MudShot
-	jumpargeq 0, BATTLE_ENVIRONMENT_SWAMP,          gBattleAnimMove_MudShot
-	jumpargeq 0, BATTLE_ENVIRONMENT_ICE,            gBattleAnimMove_IceShard
-	jumpargeq 0, BATTLE_ENVIRONMENT_VOLCANO,        gBattleAnimMove_Incinerate
-	jumpargeq 0, BATTLE_ENVIRONMENT_DISTORTION_WORLD, gBattleAnimMove_Pound
-	jumpargeq 0, BATTLE_ENVIRONMENT_SPACE,          gBattleAnimMove_Swift
-	jumpargeq 0, BATTLE_ENVIRONMENT_ULTRA_SPACE,    gBattleAnimMove_Psywave
-.if B_SECRET_POWER_ANIMATION >= GEN_7
-	jumpargeq 0, BATTLE_ENVIRONMENT_SNOW,           gBattleAnimMove_IceShard
-	jumpargeq 0, BATTLE_ENVIRONMENT_BUILDING,       gBattleAnimMove_SpitUp
-	goto gBattleAnimMove_SpitUp
-.elseif B_SECRET_POWER_ANIMATION >= GEN_6
-	jumpargeq 0, BATTLE_ENVIRONMENT_SNOW,           gBattleAnimMove_Avalanche
-	jumpargeq 0, BATTLE_ENVIRONMENT_BUILDING,       gBattleAnimMove_BodySlam
-	goto gBattleAnimMove_BodySlam
-.elseif B_SECRET_POWER_ANIMATION >= GEN_4
-	jumpargeq 0, BATTLE_ENVIRONMENT_SNOW,           gBattleAnimMove_Avalanche
-	jumpargeq 0, BATTLE_ENVIRONMENT_BUILDING,       gBattleAnimMove_BodySlam
-	goto gBattleAnimMove_MudSlap
-.else
-	jumpargeq 0, BATTLE_ENVIRONMENT_SNOW,           gBattleAnimMove_Avalanche
-	jumpargeq 0, BATTLE_ENVIRONMENT_BUILDING,       gBattleAnimMove_Strength
-	goto gBattleAnimMove_Slam
-.endif
 	@ No actual animation, uses the animation of a move from src/data/battle_environment.h instead
 	end
 

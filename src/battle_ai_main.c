@@ -2058,7 +2058,10 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
     case EFFECT_HELPING_HAND:
         if (!hasPartner
           || DoesPartnerHaveSameMoveEffect(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove)
-          || aiData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_GOOD_AS_GOLD
+          || (aiData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_GOOD_AS_GOLD
+          || aiData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_GREAT_BLOOMING
+          || aiData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_SECOND_ADVENT
+          || aiData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_PRISMA_ZWEI)
           || (aiData->partnerMove != MOVE_NONE && IsBattleMoveStatus(aiData->partnerMove))
           || gBattleStruct->monToSwitchIntoId[BATTLE_PARTNER(battlerAtk)] != PARTY_SIZE) //Partner is switching out.
             ADJUST_SCORE(-20);

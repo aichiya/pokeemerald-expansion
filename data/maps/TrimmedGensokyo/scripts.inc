@@ -62,38 +62,13 @@ TrimmedGensokyo_EventScript_Debug2_ChoosePartyForMultiBattle::
 	end
 
 TrimmedGensokyo_EventScript_Debug2_DoMultiBattle::
-@	multi_2_vs_2 TRAINER_BRENDAN_LILYCOVE_TORCHIC, MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand, TRAINER_MAY_LILYCOVE_MUDKIP, MossdeepCity_SpaceCenter_Text_TabithaDefeat, PARTNER_TRAINER2
-
-	special SavePlayerParty
-	setmultitrainerbattle TRAINER_BRENDAN_LILYCOVE_TORCHIC, MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand, TRAINER_MAY_LILYCOVE_MUDKIP, MossdeepCity_SpaceCenter_Text_TabithaDefeat, PARTNER_TRAINER2
-	callnative AreMultiPartiesFullTeams
-	goto_if_eq VAR_RESULT, TRUE, TrimmedGensokyo_EventScript_Debug2_DoMultiBattle_MultiDoPlayerPartyReduceBypass
-	special ReducePlayerPartyToSelectedMons
-TrimmedGensokyo_EventScript_Debug2_DoMultiBattle_MultiDoPlayerPartyReduceBypass:
-	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_SET_DATA
-	setvar VAR_0x8005, FRONTIER_DATA_SELECTED_MON_ORDER
-	special CallFrontierUtilFunc @ saves the mon order, so the non-selected mons get restored afterwards
-	setvar VAR_0x8004, SPECIAL_BATTLE_MULTI
-	goto_if_eq VAR_RESULT, TRUE, TrimmedGensokyo_EventScript_Debug2_DoMultiBattle_MultiDoChooseMonsBypass
-	setvar VAR_0x8005, MULTI_BATTLE_2_VS_2 | MULTI_BATTLE_CHOOSE_MONS
-	goto TrimmedGensokyo_EventScript_Debug2_DoMultiBattle_MultiDoSpecialTrainerBattle
-TrimmedGensokyo_EventScript_Debug2_DoMultiBattle_MultiDoChooseMonsBypass:
-	setvar VAR_0x8005, MULTI_BATTLE_2_VS_2
-TrimmedGensokyo_EventScript_Debug2_DoMultiBattle_MultiDoSpecialTrainerBattle:
-	special DoSpecialTrainerBattle
-	waitstate
-	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_SAVE_PARTY
-	special CallFrontierUtilFunc
-	special LoadPlayerParty
-
+	multi_2_vs_2 TRAINER_BRENDAN_LILYCOVE_TORCHIC, MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand, TRAINER_MAY_LILYCOVE_MUDKIP, MossdeepCity_SpaceCenter_Text_TabithaDefeat, PARTNER_TRAINER2
 	switch VAR_RESULT
-	case 1, TrimmedGensokyo_EventScript_Debug2_DoMultiBattleWon
+	case 1, AnotherWorldGensokyo_Event_Uda_BattleWon
 	fadescreen FADE_TO_BLACK
 	special SetCB2WhiteOut
 	waitstate
-
-TrimmedGensokyo_EventScript_Debug2_DoMultiBattleWon::
-	releaseall
+	release
 	end
 
 TrimmedGensokyo_Text_Debug2_1:

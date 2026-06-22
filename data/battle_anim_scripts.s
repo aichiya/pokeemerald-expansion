@@ -20111,9 +20111,6 @@ gBattleAnimMove_QuintettFeuer::
 	unloadspritegfx ANIM_TAG_SWEAT_BEAD @blue color
 	unloadspritegfx ANIM_TAG_SMALL_EMBER @dragon claw buff / red color
 	delay 1
-	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_HYDRO_PUMP, 0, 12, 12, RGB(31, 4, 10)    @Pinkish Red
-	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_ROUND_SHADOW, 0, 13, 13, RGB(31, 4, 10)  @Pinkish Red
-	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_EXPLOSION, 0, 12, 12, RGB(11, 1, 22)
 	fadetobgfromset BG_SPACIAL_REND_OPPONENT BG_SPACIAL_REND_PLAYER BG_SPACIAL_REND_OPPONENT
 	playsewithpan SE_M_FLY, SOUND_PAN_ATTACKER
 	invisible ANIM_ATTACKER
@@ -20121,6 +20118,9 @@ gBattleAnimMove_QuintettFeuer::
 	waitforvisualfinish
 	delay 10
 	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_SOLAR_BEAM, 0xf0, 0xffc0, SOUND_PAN_TARGET, 0x1, 0xf, 0x0, 0x5
+@	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_HYDRO_PUMP, 0, 12, 12, RGB(31, 4, 10)    @Pinkish Red
+@	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_ROUND_SHADOW, 0, 13, 13, RGB(31, 4, 10)  @Pinkish Red
+@	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_EXPLOSION, 0, 12, 12, RGB(11, 1, 22)
 	call OblivionWingBeam
 	call OblivionWingBeam
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 50, 1

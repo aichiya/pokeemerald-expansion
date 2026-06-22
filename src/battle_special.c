@@ -83,7 +83,12 @@ void DoSpecialTrainerBattle(void)
             SetMonData(&gSaveBlock1Ptr->playerParty[i], MON_DATA_HELD_ITEM, &itemBefore);
         }
         CreateTask(Task_StartBattleAfterTransition, 1);
-        PlayMapChosenOrBattleBGM(0);
+        if (FlagGet(FLAG_IDENTIFIER_NEGA_WORLD))
+            FlagSet(FLAG_INVERSE_BATTLE);
+        if (FlagGet(FLAG_USE_CURRENT_BGM_FOR_BATTLE) == TRUE)
+            FlagClear(FLAG_USE_CURRENT_BGM_FOR_BATTLE);
+        else
+            PlayMapChosenOrBattleBGM(0);
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_SECRET_BASE));
         break;
     case SPECIAL_BATTLE_EREADER:
@@ -94,7 +99,12 @@ void DoSpecialTrainerBattle(void)
         gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_EREADER_TRAINER;
         TRAINER_BATTLE_PARAM.opponentA = 0;
         CreateTask(Task_StartBattleAfterTransition, 1);
-        PlayMapChosenOrBattleBGM(0);
+        if (FlagGet(FLAG_IDENTIFIER_NEGA_WORLD))
+            FlagSet(FLAG_INVERSE_BATTLE);
+        if (FlagGet(FLAG_USE_CURRENT_BGM_FOR_BATTLE) == TRUE)
+            FlagClear(FLAG_USE_CURRENT_BGM_FOR_BATTLE);
+        else
+            PlayMapChosenOrBattleBGM(0);
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_E_READER));
     #endif //FREE_BATTLE_TOWER_E_READER
         break;

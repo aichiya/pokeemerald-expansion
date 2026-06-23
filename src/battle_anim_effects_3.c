@@ -3502,7 +3502,7 @@ void AnimTask_RolePlaySilhouette(u8 taskId)
         personality = GetMonData(mon, MON_DATA_PERSONALITY);
         isShiny = GetMonData(mon, MON_DATA_IS_SHINY);
 		if (gCurrentMove == MOVE_SUNSTEEL_STRIKE || gCurrentMove == MOVE_SEARING_SUNRAZE_SMASH)
-			species = SPECIES_NECROZMA_ULTRA;
+			species = SPECIES_SH_VIVIT_ANGEL;
         else if (gBattleSpritesDataPtr->battlerData[gBattleAnimTarget].transformSpecies == SPECIES_NONE)
             species = GetMonData(mon, MON_DATA_SPECIES);
         else

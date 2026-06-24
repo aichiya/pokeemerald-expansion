@@ -10142,7 +10142,13 @@ static void Cmd_disablelastusedattack(void)
         if (gBattleMons[gBattlerTarget].moves[i] == gLastMoves[gBattlerTarget])
             break;
     }
-    if (gBattleMons[gBattlerTarget].volatiles.disabledMove == MOVE_NONE
+    if (gLastMoves[gBattlerTarget] == MOVE_CARD_INCLUDE
+     || gLastMoves[gBattlerTarget] == MOVE_RIDE_TRANSFORM
+     || gLastMoves[gBattlerTarget] == MOVE_GRIMOIRE_CALL)
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else if (gBattleMons[gBattlerTarget].volatiles.disabledMove == MOVE_NONE
         && i != MAX_MON_MOVES && gBattleMons[gBattlerTarget].pp[i] != 0)
     {
         PREPARE_MOVE_BUFFER(gBattleTextBuff1, gBattleMons[gBattlerTarget].moves[i])

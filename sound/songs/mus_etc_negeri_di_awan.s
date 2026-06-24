@@ -1,8 +1,8 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_negeri_di_awan_grp, voicegroup201
+        .equ    mus_etc_negeri_di_awan_grp, voicegroup827
         .equ    mus_etc_negeri_di_awan_pri, 0
-        .equ    mus_etc_negeri_di_awan_mvl, 60
+        .equ    mus_etc_negeri_di_awan_mvl, 70
         .equ    mus_etc_negeri_di_awan_rev, reverb_set+50
         .equ    mus_etc_negeri_di_awan_key, 0
 
@@ -18,7 +18,7 @@ mus_etc_negeri_di_awan_0:
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_0_LOOP:
         .byte   TEMPO , 86/2
-        .byte           VOL   , 100*mus_etc_negeri_di_awan_rev/mxv
+        .byte           VOL   , 100*mus_etc_negeri_di_awan_mvl/mxv
         .byte           VOICE , 73
         .byte           BENDR , 64
         .byte   W96
@@ -607,7 +607,7 @@ mus_etc_negeri_di_awan_1:
 @ 000   ----------------------------------------
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_1_LOOP:
-        .byte           VOL   , 99*mus_etc_negeri_di_awan_rev/mxv
+        .byte           VOL   , 99*mus_etc_negeri_di_awan_mvl/mxv
         .byte           VOICE , 33 @ Bass
         .byte           PAN   , c_v-2
         .byte   W96
@@ -1036,7 +1036,7 @@ mus_etc_negeri_di_awan_2:
 @ 000   ----------------------------------------
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_2_LOOP:
-        .byte           VOL   , 99*mus_etc_negeri_di_awan_rev/mxv
+        .byte           VOL   , 99*mus_etc_negeri_di_awan_mvl/mxv
         .byte           VOICE , 50 @ 68 @ Oboe
         .byte           N24   , Cn4 , v127
         .byte   W24
@@ -1382,7 +1382,7 @@ mus_etc_negeri_di_awan_3:
 @ 000   ----------------------------------------
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_3_LOOP:
-        .byte           VOL   , 99*mus_etc_negeri_di_awan_rev/mxv
+        .byte           VOL   , 99*mus_etc_negeri_di_awan_mvl/mxv
         .byte           VOICE , 48 @ Strings
         .byte           PAN   , c_v-2
         .byte   W96
@@ -1726,7 +1726,7 @@ mus_etc_negeri_di_awan_4:
 @ 000   ----------------------------------------
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_4_LOOP:
-        .byte           VOL   , 109*mus_etc_negeri_di_awan_rev/mxv
+        .byte           VOL   , 109*mus_etc_negeri_di_awan_mvl/mxv
         .byte           VOICE , 48 @ Brass
         .byte           PAN   , c_v+21
         .byte   W96
@@ -2021,7 +2021,7 @@ mus_etc_negeri_di_awan_5:
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_5_LOOP:
         .byte           VOICE , 73 @ Flute
-        .byte           VOL   , 99*mus_etc_negeri_di_awan_rev/mxv
+        .byte           VOL   , 99*mus_etc_negeri_di_awan_mvl/mxv
         .byte           N44   , Cn4 , v127 , gtp1
         .byte   W36
         .byte   W02
@@ -2448,7 +2448,7 @@ mus_etc_negeri_di_awan_6:
 @ 000   ----------------------------------------
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_6_LOOP:
-        .byte           VOL   , 99*mus_etc_negeri_di_awan_rev/mxv
+        .byte           VOL   , 99*mus_etc_negeri_di_awan_mvl/mxv
         .byte           VOICE , 86 @ 46 @ 
         .byte   W96
 @ 002   ----------------------------------------
@@ -2812,7 +2812,7 @@ mus_etc_negeri_di_awan_7:
 @ 000   ----------------------------------------
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_7_LOOP:
-        .byte           VOL   , 109*mus_etc_negeri_di_awan_rev/mxv
+        .byte           VOL   , 109*mus_etc_negeri_di_awan_mvl/mxv
         .byte           VOICE , 45
         .byte   W96
 @ 002   ----------------------------------------
@@ -3002,8 +3002,8 @@ mus_etc_negeri_di_awan_8:
 @ 000   ----------------------------------------
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_8_LOOP:
-        .byte           VOL   , 103*mus_etc_negeri_di_awan_rev/mxv
-        .byte           VOICE , 0 @ Drum
+        .byte           VOL   , 103*mus_etc_negeri_di_awan_mvl/mxv
+        .byte           VOICE , 117 @ Drum
         .byte           PAN   , c_v-3
         .byte   W96
 @ 002   ----------------------------------------
@@ -4001,7 +4001,7 @@ mus_etc_negeri_di_awan_9:
 @ 000   ----------------------------------------
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_9_LOOP:
-        .byte           VOL   , 99*mus_etc_negeri_di_awan_rev/mxv
+        .byte           VOL   , 99*mus_etc_negeri_di_awan_mvl/mxv
         .byte           VOICE , 47 @ Timpani
         .byte   W96
 @ 002   ----------------------------------------
@@ -4280,7 +4280,7 @@ mus_etc_negeri_di_awan_10:
 @ 001   ----------------------------------------
 mus_etc_negeri_di_awan_10_LOOP:
         .byte           VOICE , 24
-        .byte           VOL   , 109*mus_etc_negeri_di_awan_rev/mxv
+        .byte           VOL   , 109*mus_etc_negeri_di_awan_mvl/mxv
         .byte           N24   , Cn3 , v127 , gtp3
         .byte   W12
         .byte           N13   , Gn3

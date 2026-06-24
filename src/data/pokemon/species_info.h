@@ -40933,18 +40933,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThShingyokuChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_ThShingyokuChibi,
         .shinyPalette = gMonShinyPalette_ThShingyokuChibi,
         .iconSprite = gMonIcon_ThShingyokuChibi,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThShingyokuChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41018,7 +41018,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThShingyokuOrb,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -41029,7 +41029,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThShingyokuOrb,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThShingyokuOrb)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41103,7 +41103,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThShingyokuPriest,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -41114,7 +41114,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThShingyokuPriest,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThShingyokuPriest)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41188,7 +41188,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThShingyokuPriestess,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -41199,7 +41199,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThShingyokuPriestess,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThShingyokuPriestess)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41273,18 +41273,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_SWING_CONCAVE,
+        .enemyMonElevation = 6,
         .backPic = gMonBackPic_ThYuugenChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_ThYuugenChibi,
         .shinyPalette = gMonShinyPalette_ThYuugenChibi,
         .iconSprite = gMonIcon_ThYuugenChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 19, SHADOW_SIZE_M)
         FOOTPRINT(ThYuugenChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41358,18 +41358,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_GROW_TWICE,
+        .enemyMonElevation = 5,
         .backPic = gMonBackPic_ThYuugenNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW,
         .palette = gMonPalette_ThYuugenNormal,
         .shinyPalette = gMonShinyPalette_ThYuugenNormal,
         .iconSprite = gMonIcon_ThYuugenNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 16, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThYuugenNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41443,8 +41443,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
+        .enemyMonElevation = 5,
         .backPic = gMonBackPic_ThMimaChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
@@ -41454,7 +41454,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThMimaChibi,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 16, SHADOW_SIZE_M)
         FOOTPRINT(ThMimaChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41528,18 +41528,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_V_SHAKE_H_SLIDE,
+        .enemyMonElevation = 7,
         .backPic = gMonBackPic_ThMimaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThMimaNormal,
         .shinyPalette = gMonShinyPalette_ThMimaNormal,
         .iconSprite = gMonIcon_ThMimaNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 18, SHADOW_SIZE_L)
         FOOTPRINT(ThMimaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41613,18 +41613,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_TUMBLING_FRONT_FLIP,
+        .enemyMonElevation = 3,
         .backPic = gMonBackPic_ThElisChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
         .palette = gMonPalette_ThElisChibi,
         .shinyPalette = gMonShinyPalette_ThElisChibi,
         .iconSprite = gMonIcon_ThElisChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThElisChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41698,18 +41698,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
+        .enemyMonElevation = 4,
         .backPic = gMonBackPic_ThElisNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_ThElisNormal,
         .shinyPalette = gMonShinyPalette_ThElisNormal,
         .iconSprite = gMonIcon_ThElisNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 16, SHADOW_SIZE_L)
         FOOTPRINT(ThElisNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41783,18 +41783,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_SLIDE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKikuriChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_ThKikuriChibi,
         .shinyPalette = gMonShinyPalette_ThKikuriChibi,
         .iconSprite = gMonIcon_ThKikuriChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThKikuriChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41868,18 +41868,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_ROTATE_UP_TO_SIDES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKikuriNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW,
         .palette = gMonPalette_ThKikuriNormal,
         .shinyPalette = gMonShinyPalette_ThKikuriNormal,
         .iconSprite = gMonIcon_ThKikuriNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThKikuriNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -41953,18 +41953,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
+        .enemyMonElevation = 4,
         .backPic = gMonBackPic_ThSarielChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_ThSarielChibi,
         .shinyPalette = gMonShinyPalette_ThSarielChibi,
         .iconSprite = gMonIcon_ThSarielChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 14, SHADOW_SIZE_M)
         FOOTPRINT(ThSarielChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42038,18 +42038,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSarielNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_ThSarielNormal,
         .shinyPalette = gMonShinyPalette_ThSarielNormal,
         .iconSprite = gMonIcon_ThSarielNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThSarielNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42123,18 +42123,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSarielSpeed,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         .palette = gMonPalette_ThSarielSpeed,
         .shinyPalette = gMonShinyPalette_ThSarielSpeed,
         .iconSprite = gMonIcon_ThSarielSpeed,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThSarielSpeed)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42208,18 +42208,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKonngaraChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThKonngaraChibi,
         .shinyPalette = gMonShinyPalette_ThKonngaraChibi,
         .iconSprite = gMonIcon_ThKonngaraChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThKonngaraChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42293,18 +42293,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKonngaraNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThKonngaraNormal,
         .shinyPalette = gMonShinyPalette_ThKonngaraNormal,
         .iconSprite = gMonIcon_ThKonngaraNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(5, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThKonngaraNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42378,8 +42378,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_H_SLIDE_WOBBLE,
+        .enemyMonElevation = 5,
         .backPic = gMonBackPic_ThFairyNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
@@ -42389,7 +42389,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThFairyNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 17, SHADOW_SIZE_M)
         FOOTPRINT(ThFairyNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42461,20 +42461,20 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_ThGenjiNormal,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 4,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SLIDE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThGenjiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_ThGenjiNormal,
         .shinyPalette = gMonShinyPalette_ThGenjiNormal,
         .iconSprite = gMonIcon_ThGenjiNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 3, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThGenjiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42548,18 +42548,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_LUNGE_GROW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThRikaChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_ThRikaChibi,
         .shinyPalette = gMonShinyPalette_ThRikaChibi,
         .iconSprite = gMonIcon_ThRikaChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 8, SHADOW_SIZE_M)
         FOOTPRINT(ThRikaChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42633,18 +42633,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_V_SLIDE,
+        .enemyMonElevation = 3,
         .backPic = gMonBackPic_ThRikaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_ThRikaNormal,
         .shinyPalette = gMonShinyPalette_ThRikaNormal,
         .iconSprite = gMonIcon_ThRikaNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-3, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThRikaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42718,18 +42718,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_BACK_AND_LUNGE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMeiraChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_ThMeiraChibi,
         .shinyPalette = gMonShinyPalette_ThMeiraChibi,
         .iconSprite = gMonIcon_ThMeiraChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_M)
         FOOTPRINT(ThMeiraChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42803,18 +42803,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SPRING,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMeiraNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_ThMeiraNormal,
         .shinyPalette = gMonShinyPalette_ThMeiraNormal,
         .iconSprite = gMonIcon_ThMeiraNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-5, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThMeiraNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42888,18 +42888,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SWING_CONCAVE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThEllenChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_ThEllenChibi,
         .shinyPalette = gMonShinyPalette_ThEllenChibi,
         .iconSprite = gMonIcon_ThEllenChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThEllenChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -42973,18 +42973,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_TIP_MOVE_FORWARD,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThEllenNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_ThEllenNormal,
         .shinyPalette = gMonShinyPalette_ThEllenNormal,
         .iconSprite = gMonIcon_ThEllenNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThEllenNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43056,9 +43056,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_ThKotohimeChibi,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 4,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKotohimeChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -43069,7 +43069,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThKotohimeChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 6, SHADOW_SIZE_L)
         FOOTPRINT(ThKotohimeChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43143,18 +43143,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_RAPID_H_HOPS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKotohimeNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThKotohimeNormal,
         .shinyPalette = gMonShinyPalette_ThKotohimeNormal,
         .iconSprite = gMonIcon_ThKotohimeNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThKotohimeNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43228,18 +43228,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_FLICKER,
+        .enemyMonElevation = 3,
         .backPic = gMonBackPic_ThKanaChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThKanaChibi,
         .shinyPalette = gMonShinyPalette_ThKanaChibi,
         .iconSprite = gMonIcon_ThKanaChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 13, SHADOW_SIZE_M)
         FOOTPRINT(ThKanaChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43318,13 +43318,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .backPic = gMonBackPic_ThKanaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThKanaNormal,
         .shinyPalette = gMonShinyPalette_ThKanaNormal,
         .iconSprite = gMonIcon_ThKanaNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThKanaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43409,7 +43409,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThRikakoChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThRikakoChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43483,18 +43483,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_SPRING_RISING,
+        .enemyMonElevation = 7,
         .backPic = gMonBackPic_ThRikakoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_ThRikakoNormal,
         .shinyPalette = gMonShinyPalette_ThRikakoNormal,
         .iconSprite = gMonIcon_ThRikakoNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 18, SHADOW_SIZE_L)
         FOOTPRINT(ThRikakoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43568,18 +43568,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThChiyuriChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_ThChiyuriChibi,
         .shinyPalette = gMonShinyPalette_ThChiyuriChibi,
         .iconSprite = gMonIcon_ThChiyuriChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 10, SHADOW_SIZE_M)
         FOOTPRINT(ThChiyuriChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43653,18 +43653,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThChiyuriNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_ThChiyuriNormal,
         .shinyPalette = gMonShinyPalette_ThChiyuriNormal,
         .iconSprite = gMonIcon_ThChiyuriNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThChiyuriNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43738,18 +43738,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThYumemiChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThYumemiChibi,
         .shinyPalette = gMonShinyPalette_ThYumemiChibi,
         .iconSprite = gMonIcon_ThYumemiChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThYumemiChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43823,18 +43823,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThYumemiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThYumemiNormal,
         .shinyPalette = gMonShinyPalette_ThYumemiNormal,
         .iconSprite = gMonIcon_ThYumemiNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThYumemiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43908,18 +43908,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKedamaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         .palette = gMonPalette_ThKedamaNormal,
         .shinyPalette = gMonShinyPalette_ThKedamaNormal,
         .iconSprite = gMonIcon_ThKedamaNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 9, SHADOW_SIZE_M)
         FOOTPRINT(ThKedamaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -43994,18 +43994,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThRuukotoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         .palette = gMonPalette_ThRuukotoNormal,
         .shinyPalette = gMonShinyPalette_ThRuukotoNormal,
         .iconSprite = gMonIcon_ThRuukotoNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThRuukotoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44079,18 +44079,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_BACK_FLIP_BIG,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMimichanNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_ThMimichanNormal,
         .shinyPalette = gMonShinyPalette_ThMimichanNormal,
         .iconSprite = gMonIcon_ThMimichanNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThMimichanNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44164,18 +44164,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThOrangeChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_ThOrangeChibi,
         .shinyPalette = gMonShinyPalette_ThOrangeChibi,
         .iconSprite = gMonIcon_ThOrangeChibi,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThOrangeChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44249,18 +44249,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_JUMPS_BIG,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThOrangeNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_ThOrangeNormal,
         .shinyPalette = gMonShinyPalette_ThOrangeNormal,
         .iconSprite = gMonIcon_ThOrangeNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThOrangeNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44334,18 +44334,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKurumiChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_ThKurumiChibi,
         .shinyPalette = gMonShinyPalette_ThKurumiChibi,
         .iconSprite = gMonIcon_ThKurumiChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThKurumiChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44419,18 +44419,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKurumiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_ThKurumiNormal,
         .shinyPalette = gMonShinyPalette_ThKurumiNormal,
         .iconSprite = gMonIcon_ThKurumiNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThKurumiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44504,18 +44504,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_TIP_HOP_FORWARD,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThEllyChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_ThEllyChibi,
         .shinyPalette = gMonShinyPalette_ThEllyChibi,
         .iconSprite = gMonIcon_ThEllyChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_M)
         FOOTPRINT(ThEllyChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44589,18 +44589,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_BACK_FLIP_BIG,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThEllyNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         .palette = gMonPalette_ThEllyNormal,
         .shinyPalette = gMonShinyPalette_ThEllyNormal,
         .iconSprite = gMonIcon_ThEllyNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThEllyNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44674,7 +44674,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMugetsuChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -44685,7 +44685,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThMugetsuChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThMugetsuChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44759,7 +44759,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_DIP,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMugetsuNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -44770,7 +44770,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThMugetsuNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThMugetsuNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44844,7 +44844,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThGengetsuChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -44855,7 +44855,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThGengetsuChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThGengetsuChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -44929,18 +44929,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SWING_CONVEX,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThGengetsuNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThGengetsuNormal,
         .shinyPalette = gMonShinyPalette_ThGengetsuNormal,
         .iconSprite = gMonIcon_ThGengetsuNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThGengetsuNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45014,18 +45014,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSaraChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_ThSaraChibi,
         .shinyPalette = gMonShinyPalette_ThSaraChibi,
         .iconSprite = gMonIcon_ThSaraChibi,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThSaraChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45099,18 +45099,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_LUNGE_GROW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSaraNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_ThSaraNormal,
         .shinyPalette = gMonShinyPalette_ThSaraNormal,
         .iconSprite = gMonIcon_ThSaraNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThSaraNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45195,7 +45195,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThLouiseChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThLouiseChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45269,18 +45269,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_DIP,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThLouiseNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_ThLouiseNormal,
         .shinyPalette = gMonShinyPalette_ThLouiseNormal,
         .iconSprite = gMonIcon_ThLouiseNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThLouiseNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45354,18 +45354,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThYukiChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThYukiChibi,
         .shinyPalette = gMonShinyPalette_ThYukiChibi,
         .iconSprite = gMonIcon_ThYukiChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 13, SHADOW_SIZE_M)
         FOOTPRINT(ThYukiChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45439,18 +45439,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThYukiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThYukiNormal,
         .shinyPalette = gMonShinyPalette_ThYukiNormal,
         .iconSprite = gMonIcon_ThYukiNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThYukiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45524,18 +45524,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMaiChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_ThMaiChibi,
         .shinyPalette = gMonShinyPalette_ThMaiChibi,
         .iconSprite = gMonIcon_ThMaiChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThMaiChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45609,18 +45609,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMaiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_ThMaiNormal,
         .shinyPalette = gMonShinyPalette_ThMaiNormal,
         .iconSprite = gMonIcon_ThMaiNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThMaiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45705,7 +45705,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThYumekoChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThYumekoChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45779,18 +45779,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SHAKE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThYumekoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThYumekoNormal,
         .shinyPalette = gMonShinyPalette_ThYumekoNormal,
         .iconSprite = gMonIcon_ThYumekoNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 13, SHADOW_SIZE_M)
         FOOTPRINT(ThYumekoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45864,18 +45864,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
+        .enemyMonElevation = 4,
         .backPic = gMonBackPic_ThShinkiChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThShinkiChibi,
         .shinyPalette = gMonShinyPalette_ThShinkiChibi,
         .iconSprite = gMonIcon_ThShinkiChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 16, SHADOW_SIZE_L)
         FOOTPRINT(ThShinkiChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -45949,18 +45949,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThShinkiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_ThShinkiNormal,
         .shinyPalette = gMonShinyPalette_ThShinkiNormal,
         .iconSprite = gMonIcon_ThShinkiNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThShinkiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46034,18 +46034,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES,
+        .enemyMonElevation = 3,
         .backPic = gMonBackPic_ThRumiaChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHRINK_GROW,
         .palette = gMonPalette_ThRumiaChibi,
         .shinyPalette = gMonShinyPalette_ThRumiaChibi,
         .iconSprite = gMonIcon_ThRumiaChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 13, SHADOW_SIZE_M)
         FOOTPRINT(ThRumiaChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46119,18 +46119,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_RISING_WOBBLE,
+        .enemyMonElevation = 5,
         .backPic = gMonBackPic_ThRumiaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHRINK_GROW,
         .palette = gMonPalette_ThRumiaNormal,
         .shinyPalette = gMonShinyPalette_ThRumiaNormal,
         .iconSprite = gMonIcon_ThRumiaNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 15, SHADOW_SIZE_L)
         FOOTPRINT(ThRumiaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46204,18 +46204,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
+        .enemyMonElevation = 4,
         .backPic = gMonBackPic_ThRumiaAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_ThRumiaAttack,
         .shinyPalette = gMonShinyPalette_ThRumiaAttack,
         .iconSprite = gMonIcon_ThRumiaAttack,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(4, 14, SHADOW_SIZE_L)
         FOOTPRINT(ThRumiaAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46289,18 +46289,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_VIBRATE_TO_CORNERS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThRumiaSpeed,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_ThRumiaSpeed,
         .shinyPalette = gMonShinyPalette_ThRumiaSpeed,
         .iconSprite = gMonIcon_ThRumiaSpeed,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-3, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThRumiaSpeed)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46374,18 +46374,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_SHAKE_GLOW_GREEN,
+        .enemyMonElevation = 4,
         .backPic = gMonBackPic_ThDaiyouseiChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
         .palette = gMonPalette_ThDaiyouseiChibi,
         .shinyPalette = gMonShinyPalette_ThDaiyouseiChibi,
         .iconSprite = gMonIcon_ThDaiyouseiChibi,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(4, 13, SHADOW_SIZE_M)
         FOOTPRINT(ThDaiyouseiChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46459,18 +46459,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_GREEN,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThDaiyouseiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
         .palette = gMonPalette_ThDaiyouseiNormal,
         .shinyPalette = gMonShinyPalette_ThDaiyouseiNormal,
         .iconSprite = gMonIcon_ThDaiyouseiNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThDaiyouseiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46544,18 +46544,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_GREEN,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThDaiyouseiAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
         .palette = gMonPalette_ThDaiyouseiAttack,
         .shinyPalette = gMonShinyPalette_ThDaiyouseiAttack,
         .iconSprite = gMonIcon_ThDaiyouseiAttack,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(5, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThDaiyouseiAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46629,18 +46629,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_GREEN,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThDaiyouseiDefense,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
         .palette = gMonPalette_ThDaiyouseiDefense,
         .shinyPalette = gMonShinyPalette_ThDaiyouseiDefense,
         .iconSprite = gMonIcon_ThDaiyouseiDefense,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-6, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThDaiyouseiDefense)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46714,18 +46714,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThCirnoChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_ThCirnoChibi,
         .shinyPalette = gMonShinyPalette_ThCirnoChibi,
         .iconSprite = gMonIcon_ThCirnoChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThCirnoChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46799,18 +46799,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_TUMBLING_FRONT_FLIP,
+        .enemyMonElevation = 4,
         .backPic = gMonBackPic_ThCirnoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         .palette = gMonPalette_ThCirnoNormal,
         .shinyPalette = gMonShinyPalette_ThCirnoNormal,
         .iconSprite = gMonIcon_ThCirnoNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 14, SHADOW_SIZE_M)
         FOOTPRINT(ThCirnoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46884,18 +46884,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_V_REPEATED_SPRING,
+        .enemyMonElevation = 5,
         .backPic = gMonBackPic_ThCirnoSpeed,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThCirnoSpeed,
         .shinyPalette = gMonShinyPalette_ThCirnoSpeed,
         .iconSprite = gMonIcon_ThCirnoSpeed,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 15, SHADOW_SIZE_M)
         FOOTPRINT(ThCirnoSpeed)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -46969,18 +46969,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThCirnoTech,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_ThCirnoTech,
         .shinyPalette = gMonShinyPalette_ThCirnoTech,
         .iconSprite = gMonIcon_ThCirnoTech,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 10, SHADOW_SIZE_L)
         FOOTPRINT(ThCirnoTech)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47054,18 +47054,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_TIP_HOP_FORWARD,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThCirnoAdvent,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_ThCirnoAdvent,
         .shinyPalette = gMonShinyPalette_ThCirnoAdvent,
         .iconSprite = gMonIcon_ThCirnoAdvent,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-3, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThCirnoAdvent)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47139,18 +47139,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
+        .enemyMonElevation = 4,
         .backPic = gMonBackPic_ThLunachildChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_ThLunachildChibi,
         .shinyPalette = gMonShinyPalette_ThLunachildChibi,
         .iconSprite = gMonIcon_ThLunachildChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 14, SHADOW_SIZE_M)
         FOOTPRINT(ThLunachildChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47224,18 +47224,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThLunachildNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_ThLunachildNormal,
         .shinyPalette = gMonShinyPalette_ThLunachildNormal,
         .iconSprite = gMonIcon_ThLunachildNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThLunachildNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47309,18 +47309,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThLunachildAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_ThLunachildAttack,
         .shinyPalette = gMonShinyPalette_ThLunachildAttack,
         .iconSprite = gMonIcon_ThLunachildAttack,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-1, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThLunachildAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47394,18 +47394,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_FLASH_YELLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThLunachildTech,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_ThLunachildTech,
         .shinyPalette = gMonShinyPalette_ThLunachildTech,
         .iconSprite = gMonIcon_ThLunachildTech,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThLunachildTech)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47479,18 +47479,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThStarsapphireChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_ThStarsapphireChibi,
         .shinyPalette = gMonShinyPalette_ThStarsapphireChibi,
         .iconSprite = gMonIcon_ThStarsapphireChibi,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(4, 9, SHADOW_SIZE_M)
         FOOTPRINT(ThStarsapphireChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47564,18 +47564,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThStarsapphireNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_ThStarsapphireNormal,
         .shinyPalette = gMonShinyPalette_ThStarsapphireNormal,
         .iconSprite = gMonIcon_ThStarsapphireNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-2, 10, SHADOW_SIZE_M)
         FOOTPRINT(ThStarsapphireNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47649,18 +47649,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThStarsapphireAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_ThStarsapphireAttack,
         .shinyPalette = gMonShinyPalette_ThStarsapphireAttack,
         .iconSprite = gMonIcon_ThStarsapphireAttack,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(4, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThStarsapphireAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47734,18 +47734,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThStarsapphireHelper,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_ThStarsapphireHelper,
         .shinyPalette = gMonShinyPalette_ThStarsapphireHelper,
         .iconSprite = gMonIcon_ThStarsapphireHelper,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(5, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThStarsapphireHelper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47819,18 +47819,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSunnymilkChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThSunnymilkChibi,
         .shinyPalette = gMonShinyPalette_ThSunnymilkChibi,
         .iconSprite = gMonIcon_ThSunnymilkChibi,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-1, 8, SHADOW_SIZE_M)
         FOOTPRINT(ThSunnymilkChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47904,18 +47904,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSunnymilkNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThSunnymilkNormal,
         .shinyPalette = gMonShinyPalette_ThSunnymilkNormal,
         .iconSprite = gMonIcon_ThSunnymilkNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_M)
         FOOTPRINT(ThSunnymilkNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -47989,18 +47989,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSunnymilkAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThSunnymilkAttack,
         .shinyPalette = gMonShinyPalette_ThSunnymilkAttack,
         .iconSprite = gMonIcon_ThSunnymilkAttack,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThSunnymilkAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48074,18 +48074,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSunnymilkDefense,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThSunnymilkDefense,
         .shinyPalette = gMonShinyPalette_ThSunnymilkDefense,
         .iconSprite = gMonIcon_ThSunnymilkDefense,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-1, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThSunnymilkDefense)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48159,18 +48159,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMeilingChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThMeilingChibi,
         .shinyPalette = gMonShinyPalette_ThMeilingChibi,
         .iconSprite = gMonIcon_ThMeilingChibi,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThMeilingChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48244,18 +48244,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMeilingNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_ThMeilingNormal,
         .shinyPalette = gMonShinyPalette_ThMeilingNormal,
         .iconSprite = gMonIcon_ThMeilingNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThMeilingNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48329,18 +48329,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMeilingDefense,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThMeilingDefense,
         .shinyPalette = gMonShinyPalette_ThMeilingDefense,
         .iconSprite = gMonIcon_ThMeilingDefense,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThMeilingDefense)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48414,18 +48414,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_FOUR_PETAL,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThMeilingSpeed,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         .palette = gMonPalette_ThMeilingSpeed,
         .shinyPalette = gMonShinyPalette_ThMeilingSpeed,
         .iconSprite = gMonIcon_ThMeilingSpeed,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThMeilingSpeed)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48510,7 +48510,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThMeilingAdvent,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-3, 13, SHADOW_SIZE_M)
         FOOTPRINT(ThMeilingAdvent)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48584,18 +48584,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_SHAKE_H_SLIDE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKoakumaChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
         .palette = gMonPalette_ThKoakumaChibi,
         .shinyPalette = gMonShinyPalette_ThKoakumaChibi,
         .iconSprite = gMonIcon_ThKoakumaChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 11, SHADOW_SIZE_M)
         FOOTPRINT(ThKoakumaChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48669,18 +48669,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_DIP,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThKoakumaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_ThKoakumaNormal,
         .shinyPalette = gMonShinyPalette_ThKoakumaNormal,
         .iconSprite = gMonIcon_ThKoakumaNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(4, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThKoakumaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48765,7 +48765,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThKoakumaHelper,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(3, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThKoakumaHelper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48839,18 +48839,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SHAKE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThPatchouliChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThPatchouliChibi,
         .shinyPalette = gMonShinyPalette_ThPatchouliChibi,
         .iconSprite = gMonIcon_ThPatchouliChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 10, SHADOW_SIZE_M)
         FOOTPRINT(ThPatchouliChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -48924,18 +48924,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_JUMPS_SMALL,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThPatchouliNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_STRETCH,
         .palette = gMonPalette_ThPatchouliNormal,
         .shinyPalette = gMonShinyPalette_ThPatchouliNormal,
         .iconSprite = gMonIcon_ThPatchouliNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThPatchouliNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49009,18 +49009,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThPatchouliAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThPatchouliAttack,
         .shinyPalette = gMonShinyPalette_ThPatchouliAttack,
         .iconSprite = gMonIcon_ThPatchouliAttack,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThPatchouliAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49094,18 +49094,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_ROTATE_TO_SIDES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThPatchouliDefense,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_ThPatchouliDefense,
         .shinyPalette = gMonShinyPalette_ThPatchouliDefense,
         .iconSprite = gMonIcon_ThPatchouliDefense,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThPatchouliDefense)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49183,7 +49183,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSakuyaChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 1,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_ThSakuyaChibi,
         .shinyPalette = gMonShinyPalette_ThSakuyaChibi,
@@ -49268,7 +49268,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .enemyMonElevation = 5,
         .backPic = gMonBackPic_ThSakuyaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 1,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_ThSakuyaNormal,
         .shinyPalette = gMonShinyPalette_ThSakuyaNormal,
@@ -49353,7 +49353,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSakuyaTech,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 1,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_ThSakuyaTech,
         .shinyPalette = gMonShinyPalette_ThSakuyaTech,
@@ -49438,7 +49438,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSakuyaHelper,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 1,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_ThSakuyaHelper,
         .shinyPalette = gMonShinyPalette_ThSakuyaHelper,
@@ -49519,7 +49519,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThRemiliaChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -49530,7 +49530,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThRemiliaChibi,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 10, SHADOW_SIZE_M)
         FOOTPRINT(ThRemiliaChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49604,18 +49604,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_JUMPS_BIG,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThRemiliaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_V_SHAKE_LOW,
         .palette = gMonPalette_ThRemiliaNormal,
         .shinyPalette = gMonShinyPalette_ThRemiliaNormal,
         .iconSprite = gMonIcon_ThRemiliaNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThRemiliaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49689,18 +49689,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThRemiliaAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW,
         .palette = gMonPalette_ThRemiliaAttack,
         .shinyPalette = gMonShinyPalette_ThRemiliaAttack,
         .iconSprite = gMonIcon_ThRemiliaAttack,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThRemiliaAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49774,18 +49774,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SLIDE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThRemiliaDefense,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_ThRemiliaDefense,
         .shinyPalette = gMonShinyPalette_ThRemiliaDefense,
         .iconSprite = gMonIcon_ThRemiliaDefense,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 10, SHADOW_SIZE_M)
         FOOTPRINT(ThRemiliaDefense)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49870,7 +49870,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThRemiliaAdvent,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThRemiliaAdvent)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -49944,18 +49944,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SLIDE_SHRINK,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThFlandreChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThFlandreChibi,
         .shinyPalette = gMonShinyPalette_ThFlandreChibi,
         .iconSprite = gMonIcon_ThFlandreChibi,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThFlandreChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -50029,18 +50029,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_TIP_AND_SHAKE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThFlandreNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
         .palette = gMonPalette_ThFlandreNormal,
         .shinyPalette = gMonShinyPalette_ThFlandreNormal,
         .iconSprite = gMonIcon_ThFlandreNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(8, 12, SHADOW_SIZE_M)
         FOOTPRINT(ThFlandreNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -50114,18 +50114,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThFlandreAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_ThFlandreAttack,
         .shinyPalette = gMonShinyPalette_ThFlandreAttack,
         .iconSprite = gMonIcon_ThFlandreAttack,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-5, 10, SHADOW_SIZE_L)
         FOOTPRINT(ThFlandreAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -50199,18 +50199,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThFlandreSpeed,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThFlandreSpeed,
         .shinyPalette = gMonShinyPalette_ThFlandreSpeed,
         .iconSprite = gMonIcon_ThFlandreSpeed,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-3, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThFlandreSpeed)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -50284,18 +50284,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SWING_CONCAVE_FAST_SHORT,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSatsukiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_ThSatsukiNormal,
         .shinyPalette = gMonShinyPalette_ThSatsukiNormal,
         .iconSprite = gMonIcon_ThSatsukiNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(-3, 11, SHADOW_SIZE_L)
         FOOTPRINT(ThSatsukiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -80971,18 +80971,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_PURPLE_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThSumirekoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_ThSumirekoNormal,
         .shinyPalette = gMonShinyPalette_ThSumirekoNormal,
         .iconSprite = gMonIcon_ThSumirekoNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_L)
         FOOTPRINT(ThSumirekoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -81577,7 +81577,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_EtcIsamiNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_L)
         FOOTPRINT(EtcIsamiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -81649,20 +81649,20 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_KeyMisuzuChibi,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 10,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_KeyMisuzuChibi,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
+        .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_KeyMisuzuChibi,
         .shinyPalette = gMonShinyPalette_KeyMisuzuChibi,
         .iconSprite = gMonIcon_KeyMisuzuChibi,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, -3, SHADOW_SIZE_M)
         FOOTPRINT(KeyMisuzuChibi)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -81736,18 +81736,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_KeyMisuzuNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_H_SPRING,
         .palette = gMonPalette_KeyMisuzuNormal,
         .shinyPalette = gMonShinyPalette_KeyMisuzuNormal,
         .iconSprite = gMonIcon_KeyMisuzuNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 9, SHADOW_SIZE_M)
         FOOTPRINT(KeyMisuzuNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -81821,18 +81821,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_H_SLIDE_WOBBLE,
+        .enemyMonElevation = 7,
         .backPic = gMonBackPic_KeyMisuzuEx,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_KeyMisuzuEx,
         .shinyPalette = gMonShinyPalette_KeyMisuzuEx,
         .iconSprite = gMonIcon_KeyMisuzuEx,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 17, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(KeyMisuzuEx)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -118588,7 +118588,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .backPic = gMonBackPic_ThSendaiOrigin,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThSendaiOrigin,
         .shinyPalette = gMonShinyPalette_ThSendaiOrigin,
         .iconSprite = gMonIcon_ThSendaiOrigin,
@@ -126419,18 +126419,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_YyyiWakabaKirifuda2,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW,
         .palette = gMonPalette_YyyiWakabaKirifuda2,
         .shinyPalette = gMonShinyPalette_YyyiWakabaKirifuda2,
         .iconSprite = gMonIcon_YyyiWakabaKirifuda2,
-        .iconPalIndex = 1,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 11, SHADOW_SIZE_L)
         FOOTPRINT(YyyiWakabaKirifuda2)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -126504,18 +126504,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_LUNGE_GROW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_YyyiTakashimaYuunaKirifuda2,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_YyyiTakashimaYuunaKirifuda2,
         .shinyPalette = gMonShinyPalette_YyyiTakashimaYuunaKirifuda2,
         .iconSprite = gMonIcon_YyyiTakashimaYuunaKirifuda2,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 6, SHADOW_SIZE_L)
         FOOTPRINT(YyyiTakashimaYuunaKirifuda2)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -126674,18 +126674,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThAliceBlackRNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_ThAliceBlackRNormal,
         .shinyPalette = gMonShinyPalette_ThAliceBlackRNormal,
         .iconSprite = gMonIcon_ThAliceBlackRNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThAliceBlackRNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -126759,18 +126759,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThAliceBlackRAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_ThAliceBlackRAttack,
         .shinyPalette = gMonShinyPalette_ThAliceBlackRAttack,
         .iconSprite = gMonIcon_ThAliceBlackRAttack,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThAliceBlackRAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -126844,18 +126844,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLACK_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThAliceBlackRTech,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLACK,
         .palette = gMonPalette_ThAliceBlackRTech,
         .shinyPalette = gMonShinyPalette_ThAliceBlackRTech,
         .iconSprite = gMonIcon_ThAliceBlackRTech,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(ThAliceBlackRTech)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -126929,18 +126929,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_CIRCLE_INTO_BG,
+        .enemyMonElevation = 6,
         .backPic = gMonBackPic_ThPrismriverRLunasaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_ThPrismriverRLunasaNormal,
         .shinyPalette = gMonShinyPalette_ThPrismriverRLunasaNormal,
         .iconSprite = gMonIcon_ThPrismriverRLunasaNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 17, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThPrismriverRLunasaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127014,18 +127014,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_CIRCLE_INTO_BG,
+        .enemyMonElevation = 6,
         .backPic = gMonBackPic_ThPrismriverRLunasaHelper,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_ThPrismriverRLunasaHelper,
         .shinyPalette = gMonShinyPalette_ThPrismriverRLunasaHelper,
         .iconSprite = gMonIcon_ThPrismriverRLunasaHelper,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 17, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThPrismriverRLunasaHelper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127099,18 +127099,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_CIRCLE_INTO_BG,
+        .enemyMonElevation = 6,
         .backPic = gMonBackPic_ThPrismriverRMerlinNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_ThPrismriverRMerlinNormal,
         .shinyPalette = gMonShinyPalette_ThPrismriverRMerlinNormal,
         .iconSprite = gMonIcon_ThPrismriverRMerlinNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 17, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThPrismriverRMerlinNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127184,18 +127184,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_CIRCLE_INTO_BG,
+        .enemyMonElevation = 6,
         .backPic = gMonBackPic_ThPrismriverRMerlinHelper,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_ThPrismriverRMerlinHelper,
         .shinyPalette = gMonShinyPalette_ThPrismriverRMerlinHelper,
         .iconSprite = gMonIcon_ThPrismriverRMerlinHelper,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 17, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThPrismriverRMerlinHelper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127269,18 +127269,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_CIRCLE_INTO_BG,
+        .enemyMonElevation = 6,
         .backPic = gMonBackPic_ThPrismriverRLyricaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_ThPrismriverRLyricaNormal,
         .shinyPalette = gMonShinyPalette_ThPrismriverRLyricaNormal,
         .iconSprite = gMonIcon_ThPrismriverRLyricaNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 17, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThPrismriverRLyricaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127354,18 +127354,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .enemyMonElevation = 0,
+        .frontAnimId = ANIM_CIRCLE_INTO_BG,
+        .enemyMonElevation = 6,
         .backPic = gMonBackPic_ThPrismriverRLyricaHelper,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_ThPrismriverRLyricaHelper,
         .shinyPalette = gMonShinyPalette_ThPrismriverRLyricaHelper,
         .iconSprite = gMonIcon_ThPrismriverRLyricaHelper,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 17, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThPrismriverRLyricaHelper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127439,18 +127439,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThAkisistersRShizuhaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThAkisistersRShizuhaNormal,
         .shinyPalette = gMonShinyPalette_ThAkisistersRShizuhaNormal,
         .iconSprite = gMonIcon_ThAkisistersRShizuhaNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThAkisistersRShizuhaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127524,18 +127524,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThAkisistersRShizuhaSpeed,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThAkisistersRShizuhaSpeed,
         .shinyPalette = gMonShinyPalette_ThAkisistersRShizuhaSpeed,
         .iconSprite = gMonIcon_ThAkisistersRShizuhaSpeed,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThAkisistersRShizuhaSpeed)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127609,18 +127609,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThAkisistersRShizuhaHelper,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThAkisistersRShizuhaHelper,
         .shinyPalette = gMonShinyPalette_ThAkisistersRShizuhaHelper,
         .iconSprite = gMonIcon_ThAkisistersRShizuhaHelper,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThAkisistersRShizuhaHelper)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127694,18 +127694,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThAkisistersRMinorikoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThAkisistersRMinorikoNormal,
         .shinyPalette = gMonShinyPalette_ThAkisistersRMinorikoNormal,
         .iconSprite = gMonIcon_ThAkisistersRMinorikoNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThAkisistersRMinorikoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127779,18 +127779,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThAkisistersRMinorikoAttack,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThAkisistersRMinorikoAttack,
         .shinyPalette = gMonShinyPalette_ThAkisistersRMinorikoAttack,
         .iconSprite = gMonIcon_ThAkisistersRMinorikoAttack,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThAkisistersRMinorikoAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127864,18 +127864,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_IN_STAGES,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThAkisistersRMinorikoDefense,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThAkisistersRMinorikoDefense,
         .shinyPalette = gMonShinyPalette_ThAkisistersRMinorikoDefense,
         .iconSprite = gMonIcon_ThAkisistersRMinorikoDefense,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThAkisistersRMinorikoDefense)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -127949,18 +127949,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SHAKE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThTrioTmfRTojikoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThTrioTmfRTojikoNormal,
         .shinyPalette = gMonShinyPalette_ThTrioTmfRTojikoNormal,
         .iconSprite = gMonIcon_ThTrioTmfRTojikoNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThTrioTmfRTojikoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128034,18 +128034,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SHAKE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThTrioTmfRFutoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThTrioTmfRFutoNormal,
         .shinyPalette = gMonShinyPalette_ThTrioTmfRFutoNormal,
         .iconSprite = gMonIcon_ThTrioTmfRFutoNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThTrioTmfRFutoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128119,18 +128119,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_SHAKE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThTrioTmfRMikoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_ThTrioTmfRMikoNormal,
         .shinyPalette = gMonShinyPalette_ThTrioTmfRMikoNormal,
         .iconSprite = gMonIcon_ThTrioTmfRMikoNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThTrioTmfRMikoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128215,7 +128215,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThYorigamisistersRJoonNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThYorigamisistersRJoonNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128300,7 +128300,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThYorigamisistersRJoonAttack,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThYorigamisistersRJoonAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128385,7 +128385,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThYorigamisistersRJoonDefense,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThYorigamisistersRJoonDefense)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128470,7 +128470,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThYorigamisistersRShionNormal,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThYorigamisistersRShionNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128555,7 +128555,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThYorigamisistersRShionAttack,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThYorigamisistersRShionAttack)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128640,7 +128640,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThYorigamisistersRShionDefense,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThYorigamisistersRShionDefense)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128714,18 +128714,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_STUTTER_TWICE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThTrioMsoRTeireidaMaiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThTrioMsoRTeireidaMaiNormal,
         .shinyPalette = gMonShinyPalette_ThTrioMsoRTeireidaMaiNormal,
         .iconSprite = gMonIcon_ThTrioMsoRTeireidaMaiNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThTrioMsoRTeireidaMaiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128799,18 +128799,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_STUTTER_TWICE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThTrioMsoRTeireidaSatonoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThTrioMsoRTeireidaSatonoNormal,
         .shinyPalette = gMonShinyPalette_ThTrioMsoRTeireidaSatonoNormal,
         .iconSprite = gMonIcon_ThTrioMsoRTeireidaSatonoNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThTrioMsoRTeireidaSatonoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128884,18 +128884,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_GROW_STUTTER_TWICE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThTrioMsoRTeireidaOkinaNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_GROW_STUTTER,
         .palette = gMonPalette_ThTrioMsoRTeireidaOkinaNormal,
         .shinyPalette = gMonShinyPalette_ThTrioMsoRTeireidaOkinaNormal,
         .iconSprite = gMonIcon_ThTrioMsoRTeireidaOkinaNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThTrioMsoRTeireidaOkinaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -128969,18 +128969,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThTrioYskRYachieNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThTrioYskRYachieNormal,
         .shinyPalette = gMonShinyPalette_ThTrioYskRYachieNormal,
         .iconSprite = gMonIcon_ThTrioYskRYachieNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThTrioYskRYachieNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -129054,18 +129054,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThTrioYskRKeikiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThTrioYskRKeikiNormal,
         .shinyPalette = gMonShinyPalette_ThTrioYskRKeikiNormal,
         .iconSprite = gMonIcon_ThTrioYskRKeikiNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThTrioYskRKeikiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -129139,18 +129139,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_RED,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_ThTrioYskRSakiNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
         .palette = gMonPalette_ThTrioYskRSakiNormal,
         .shinyPalette = gMonShinyPalette_ThTrioYskRSakiNormal,
         .iconSprite = gMonIcon_ThTrioYskRSakiNormal,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThTrioYskRSakiNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -129235,7 +129235,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThDuoMcRMarisaNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThDuoMcRMarisaNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -129320,7 +129320,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconSprite = gMonIcon_ThDuoMcRReimuNormal,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(ThDuoMcRReimuNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -129394,18 +129394,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_WHITE_SLOW,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_KeyUshioIllusionary,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_KeyUshioIllusionary,
         .shinyPalette = gMonShinyPalette_KeyUshioIllusionary,
         .iconSprite = gMonIcon_KeyUshioIllusionary,
         .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(7, 12, SHADOW_SIZE_M)
         FOOTPRINT(KeyUshioIllusionary)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -131689,18 +131689,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_CONCAVE_ARC_LARGE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcDecadeAbsoluteRComplete,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_EtcDecadeAbsoluteRComplete,
         .shinyPalette = gMonShinyPalette_EtcDecadeAbsoluteRComplete,
         .iconSprite = gMonIcon_EtcDecadeAbsoluteRComplete,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(EtcDecadeAbsoluteRComplete)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -131774,18 +131774,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_CONCAVE_ARC_LARGE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_EtcDecadeAbsoluteRComplete21,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_EtcDecadeAbsoluteRComplete21,
         .shinyPalette = gMonShinyPalette_EtcDecadeAbsoluteRComplete21,
         .iconSprite = gMonIcon_EtcDecadeAbsoluteRComplete21,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 12, SHADOW_SIZE_L)
         FOOTPRINT(EtcDecadeAbsoluteRComplete21)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {

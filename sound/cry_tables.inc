@@ -5415,39 +5415,39 @@ gCryTable::
 	cry Cry_WalkingWake
 	cry Cry_GougingFire
 	cry Cry_RagingBolt
-@ 	cry Cry_YYYIYuukiYuunaLine
-@ 	cry Cry_YYYIMimoriLine
-@ 	cry Cry_YYYIKarinLine
-@ 	cry Cry_YYYIFuuLine
-@ 	cry Cry_YYYIItsukiLine
-@ 	cry Cry_YYYISonokoBigLine
-@ 	cry Cry_YYYISumiLine
-@ 	cry Cry_YYYIGinLine
-@ 	cry Cry_YYYISonokoSmallLine
-@ 	cry Cry_YYYIWakabaLine
-@ 	cry Cry_YYYITakashimaYuunaLine
-@ 	cry Cry_YYYIChikageLine
-@ 	cry Cry_YYYITamakoLine
-@ 	cry Cry_YYYIAnzuLine
-@ 	cry Cry_YYYIHinataLine
-@ 	cry Cry_YYYIUtanoLine
-@ 	cry Cry_YYYIMitoLine
-@ 	cry Cry_YYYIMebukiLine
-@ 	cry Cry_YYYISuzumeLine
-@ 	cry Cry_YYYIYumikoLine
-@ 	cry Cry_YYYIShizukuLine
-@ 	cry Cry_YYYIAyaLine
-@ 	cry Cry_YYYISekkaLine
-@ 	cry Cry_YYYINatsumeLine
-@ 	cry Cry_YYYIAkamineYuunaLine
-@ 	cry Cry_YYYIRengeLine
-@ 	cry Cry_YYYIShizukaLine
-@ 	cry Cry_YYYIFuyouLilienthalYuunaLine
-@ 	cry Cry_YYYIYuzukiYuunaLine
-@ 	cry Cry_YYYIMasuzuLine
-@ 	cry Cry_YYYIYoshikaLine
-@ 	cry Cry_YYYIHimeLine
-@ 	cry Cry_YYYIMisakiLine
+	cry_custom 20, 0, Cry_THShingyokuLine, 64, 128, 255, 215 @ 	cry Cry_YYYIYuukiYuunaLine
+	cry_custom 20, 0, Cry_THYuugenLine, 64, 128, 255, 215 @ 	cry Cry_YYYIMimoriLine
+	cry_custom 20, 0, Cry_THMimaLine, 64, 128, 255, 215 @ 	cry Cry_YYYIKarinLine
+	cry_custom 20, 0, Cry_THElisLine, 64, 128, 255, 215 @ 	cry Cry_YYYIFuuLine
+	cry_custom 20, 0, Cry_THKikuriLine, 64, 128, 255, 215 @ 	cry Cry_YYYIItsukiLine
+	cry_custom 20, 0, Cry_THSarielLine, 64, 128, 255, 215 @ 	cry Cry_YYYISonokoBigLine
+	cry_custom 20, 0, Cry_THKonngaraLine, 64, 128, 255, 215 @ 	cry Cry_YYYISumiLine
+	cry_custom 20, 0, Cry_THFairy, 64, 128, 255, 215 @ 	cry Cry_YYYIGinLine
+	cry_custom 20, 0, Cry_THGenji, 64, 128, 255, 215 @ 	cry Cry_YYYISonokoSmallLine
+	cry_custom 20, 0, Cry_THRikaLine, 64, 128, 255, 215 @ 	cry Cry_YYYIWakabaLine
+	cry_custom 20, 0, Cry_THMeiraLine, 64, 128, 255, 215 @ 	cry Cry_YYYITakashimaYuunaLine
+	cry_custom 20, 0, Cry_THEllenLine, 64, 128, 255, 215 @ 	cry Cry_YYYIChikageLine
+	cry_custom 20, 0, Cry_THKotohimeLine, 64, 128, 255, 215 @ 	cry Cry_YYYITamakoLine
+	cry_custom 20, 0, Cry_THKanaLine, 64, 128, 255, 215 @ 	cry Cry_YYYIAnzuLine
+	cry_custom 20, 0, Cry_THRikakoLine, 64, 128, 255, 215 @ 	cry Cry_YYYIHinataLine
+	cry_custom 20, 0, Cry_THChiyuriLine, 64, 128, 255, 215 @ 	cry Cry_YYYIUtanoLine
+	cry_custom 20, 0, Cry_THYumemiLine, 64, 128, 255, 215 @ 	cry Cry_YYYIMitoLine
+	cry_custom 20, 0, Cry_THKedama, 64, 128, 255, 215 @ 	cry Cry_YYYIMebukiLine
+	cry_custom 20, 0, Cry_THRuukoto, 64, 128, 255, 215 @ 	cry Cry_YYYISuzumeLine
+	cry_custom 20, 0, Cry_THMimichan, 64, 128, 255, 215 @ 	cry Cry_YYYIYumikoLine
+	cry_custom 20, 0, Cry_THOrangeLine, 64, 128, 255, 215 @ 	cry Cry_YYYIShizukuLine
+	cry_custom 20, 0, Cry_THKurumiLine, 64, 128, 255, 215 @ 	cry Cry_YYYIAyaLine
+	cry_custom 20, 0, Cry_THEllyLine, 64, 128, 255, 215 @ 	cry Cry_YYYISekkaLine
+	cry_custom 20, 0, Cry_THMugetsuLine, 64, 128, 255, 215 @ 	cry Cry_YYYINatsumeLine
+	cry_custom 20, 0, Cry_THGengetsuLine, 64, 128, 255, 215 @ 	cry Cry_YYYIAkamineYuunaLine
+	cry_custom 20, 0, Cry_THSaraLine, 64, 128, 255, 215 @ 	cry Cry_YYYIRengeLine
+	cry_custom 20, 0, Cry_THLouiseLine, 64, 128, 255, 215 @ 	cry Cry_YYYIShizukaLine
+	cry_custom 20, 0, Cry_THYukiLine, 64, 128, 255, 215 @ 	cry Cry_YYYIFuyouLilienthalYuunaLine
+	cry_custom 20, 0, Cry_THMaiLine, 64, 128, 255, 215 @ 	cry Cry_YYYIYuzukiYuunaLine
+	cry_custom 20, 0, Cry_THYumekoLine, 64, 128, 255, 215 @ 	cry Cry_YYYIMasuzuLine
+	cry_custom 20, 0, Cry_THShinkiLine, 64, 128, 255, 215 @ 	cry Cry_YYYIYoshikaLine
+	cry_custom 20, 0, Cry_THRumiaLine, 64, 128, 255, 215 @ 	cry Cry_YYYIHimeLine
+	cry_custom 20, 0, Cry_THDaiyouseiLine, 64, 128, 255, 215 @ 	cry Cry_YYYIMisakiLine
 	cry Cry_THShingyokuLine
 	cry Cry_THYuugenLine
 	cry Cry_THMimaLine
@@ -5492,7 +5492,7 @@ gCryTable::
 	cry Cry_THPatchouliLine
 	cry Cry_THSakuyaLine
 	cry Cry_THRemiliaLine
-@ 	cry Cry_THRemiliaAdvent
+	cry_custom 20, 0, Cry_THRemiliaLine, 64, 128, 255, 215 @ 	cry Cry_THRemiliaAdvent
 	cry Cry_THFlandreLine
 	cry Cry_THSatsuki
 	cry Cry_THLettyLine
@@ -5566,217 +5566,217 @@ gCryTable::
 	cry Cry_THTensokuLine
 	cry Cry_THHatateLine
 	cry Cry_THKyoukoLine
-@ 	cry Cry_THYoshikaLine
+	cry_custom 20, 0, Cry_THCirnoLine, 64, 128, 255, 215 @ 	cry Cry_THYoshikaLine
 	cry Cry_THSeigaLine
 	cry Cry_THTojikoLine
 	cry Cry_THFutoLine
 	cry Cry_THMikoLine
 	cry Cry_THMamizouLine
-@ 	cry Cry_THKokoroLine
-@ 	cry Cry_THWakasagiLine
-@ 	cry Cry_THSekibankiLine
-@ 	cry Cry_THKagerouLine
-@ 	cry Cry_THBenbenLine
-@ 	cry Cry_THYatsuhashiLine
-@ 	cry Cry_THSeijaLine
-@ 	cry Cry_THSukunaLine
-@ 	cry Cry_THRaikoLine
-@ 	cry Cry_THSeiranLine
-@ 	cry Cry_THRingoLine
-@ 	cry Cry_THDoremyLine
-@ 	cry Cry_THSagumeLine
-@ 	cry Cry_THClownpieceLine
-@ 	cry Cry_THJunkoLine
-@ 	cry Cry_THHecatiaLine
-@ 	cry Cry_THJoonLine
-@ 	cry Cry_THShionLine
-@ 	cry Cry_THEternityLine
-@ 	cry Cry_THNemunoLine
-@ 	cry Cry_THAunnLine
-@ 	cry Cry_THNarumiLine
-@ 	cry Cry_THTereidaMaiLine
-@ 	cry Cry_THSatonoLine
-@ 	cry Cry_THOkinaLine
-@ 	cry Cry_THEikaLine
-@ 	cry Cry_THUrumiLine
-@ 	cry Cry_THKutakaLine
-@ 	cry Cry_THYachieLine
-@ 	cry Cry_THMayumiLine
-@ 	cry Cry_THKeikiLine
-@ 	cry Cry_THSakiLine
-@ 	cry Cry_THYuumaLine
-@ 	cry Cry_THMikeLine
-@ 	cry Cry_THTakaneLine
-@ 	cry Cry_THSannyoLine
-@ 	cry Cry_THMisumaruLine
-@ 	cry Cry_THTsukasaLine
-@ 	cry Cry_THMegumuLine
-@ 	cry Cry_THChimataLine
-@ 	cry Cry_THMomoyoLine
-@ 	cry Cry_THBitenLine
-@ 	cry Cry_THEnokoLine
-@ 	cry Cry_THChiyariLine
-@ 	cry Cry_THHisamiLine
-@ 	cry Cry_THZanmuLine
+	cry_custom 20, 0, Cry_THCirnoAdvent, 64, 128, 255, 215 @ 	cry Cry_THKokoroLine
+	cry_custom 20, 0, Cry_THLunachildLine, 64, 128, 255, 215 @ 	cry Cry_THWakasagiLine
+	cry_custom 20, 0, Cry_THStarsapphireLine, 64, 128, 255, 215 @ 	cry Cry_THSekibankiLine
+	cry_custom 20, 0, Cry_THSunnymilkLine, 64, 128, 255, 215 @ 	cry Cry_THKagerouLine
+	cry_custom 20, 0, Cry_THMeilingLine, 64, 128, 255, 215 @ 	cry Cry_THBenbenLine
+	cry_custom 20, 0, Cry_THMeilingAdvent, 64, 128, 255, 215 @ 	cry Cry_THYatsuhashiLine
+	cry_custom 20, 0, Cry_THKoakumaLine, 64, 128, 255, 215 @ 	cry Cry_THSeijaLine
+	cry_custom 20, 0, Cry_THPatchouliLine, 64, 128, 255, 215 @ 	cry Cry_THSukunaLine
+	cry_custom 20, 0, Cry_THSakuyaLine, 64, 128, 255, 215 @ 	cry Cry_THRaikoLine
+	cry_custom 20, 0, Cry_THFlandreLine, 64, 128, 255, 215 @ 	cry Cry_THSeiranLine
+	cry_custom 20, 0, Cry_THSatsuki, 64, 128, 255, 215 @ 	cry Cry_THRingoLine
+	cry_custom 20, 0, Cry_THLettyLine, 64, 128, 255, 215 @ 	cry Cry_THDoremyLine
+	cry_custom 20, 0, Cry_THLettyAdvent, 64, 128, 255, 215 @ 	cry Cry_THSagumeLine
+	cry_custom 20, 0, Cry_THChenLine, 64, 128, 255, 215 @ 	cry Cry_THClownpieceLine
+	cry_custom 20, 0, Cry_THChenAdvent, 64, 128, 255, 215 @ 	cry Cry_THJunkoLine
+	cry_custom 20, 0, Cry_THAliceLine, 64, 128, 255, 215 @ 	cry Cry_THHecatiaLine
+	cry_custom 20, 0, Cry_THLilyblackLine, 64, 128, 255, 215 @ 	cry Cry_THJoonLine
+	cry_custom 20, 0, Cry_THLilywhiteLine, 64, 128, 255, 215 @ 	cry Cry_THShionLine
+	cry_custom 20, 0, Cry_THLunasaLine, 64, 128, 255, 215 @ 	cry Cry_THEternityLine
+	cry_custom 20, 0, Cry_THMerlinLine, 64, 128, 255, 215 @ 	cry Cry_THNemunoLine
+	cry_custom 20, 0, Cry_THLyricaLine, 64, 128, 255, 215 @ 	cry Cry_THAunnLine
+	cry_custom 20, 0, Cry_THYoumuLine, 64, 128, 255, 215 @ 	cry Cry_THNarumiLine
+	cry_custom 20, 0, Cry_THYoumuAdvent, 64, 128, 255, 215 @ 	cry Cry_THTereidaMaiLine
+	cry_custom 20, 0, Cry_THYuyukoLine, 64, 128, 255, 215 @ 	cry Cry_THSatonoLine
+	cry_custom 20, 0, Cry_THYuyukoAdvent, 64, 128, 255, 215 @ 	cry Cry_THOkinaLine
+	cry_custom 20, 0, Cry_THRanLine, 64, 128, 255, 215 @ 	cry Cry_THEikaLine
+	cry_custom 20, 0, Cry_THRanAdvent, 64, 128, 255, 215 @ 	cry Cry_THUrumiLine
+	cry_custom 20, 0, Cry_THYukariLine, 64, 128, 255, 215 @ 	cry Cry_THKutakaLine
+	cry_custom 20, 0, Cry_THYukariAdvent, 64, 128, 255, 215 @ 	cry Cry_THYachieLine
+	cry_custom 20, 0, Cry_THSuikaLine, 64, 128, 255, 215 @ 	cry Cry_THMayumiLine
+	cry_custom 20, 0, Cry_THWriggleLine, 64, 128, 255, 215 @ 	cry Cry_THKeikiLine
+	cry_custom 20, 0, Cry_THMystiaLine, 64, 128, 255, 215 @ 	cry Cry_THSakiLine
+	cry_custom 20, 0, Cry_THMystiaAdvent, 64, 128, 255, 215 @ 	cry Cry_THYuumaLine
+	cry_custom 20, 0, Cry_THKeineLine, 64, 128, 255, 215 @ 	cry Cry_THMikeLine
+	cry_custom 20, 0, Cry_THKeineLineAD, 64, 128, 255, 215 @ 	cry Cry_THTakaneLine
+	cry_custom 20, 0, Cry_THTewiLine, 64, 128, 255, 215 @ 	cry Cry_THSannyoLine
+	cry_custom 20, 0, Cry_THTewiAdvent, 64, 128, 255, 215 @ 	cry Cry_THMisumaruLine
+	cry_custom 20, 0, Cry_THReisenLine, 64, 128, 255, 215 @ 	cry Cry_THTsukasaLine
+	cry_custom 20, 0, Cry_THReisenAdvent, 64, 128, 255, 215 @ 	cry Cry_THMegumuLine
+	cry_custom 20, 0, Cry_THEirinLine, 64, 128, 255, 215 @ 	cry Cry_THChimataLine
+	cry_custom 20, 0, Cry_THEirinAdvent, 64, 128, 255, 215 @ 	cry Cry_THMomoyoLine
+	cry_custom 20, 0, Cry_THKaguyaLine, 64, 128, 255, 215 @ 	cry Cry_THBitenLine
+	cry_custom 20, 0, Cry_THMokouLine, 64, 128, 255, 215 @ 	cry Cry_THEnokoLine
+	cry_custom 20, 0, Cry_THMokouAdvent, 64, 128, 255, 215 @ 	cry Cry_THChiyariLine
+	cry_custom 20, 0, Cry_THGyokuto, 64, 128, 255, 215 @ 	cry Cry_THHisamiLine
+	cry_custom 20, 0, Cry_THToyohimeLine, 64, 128, 255, 215 @ 	cry Cry_THZanmuLine
 	cry Cry_THKasenLine
 	cry Cry_THTenmaLine
 	cry Cry_THSendaiLine
 	cry Cry_THTokikoLine
 	cry Cry_THRinnosuke
 	cry Cry_THAkyuu
-@ 	cry Cry_THKosuzuLine
-@ 	cry Cry_THMiyoiLine
-@ 	cry Cry_THMizuchiLine
-@ 	cry Cry_THMaribelLine
-@ 	cry Cry_THRenkoLine
-@ 	cry Cry_THSumirekoLine
+	cry_custom 20, 0, Cry_THYorihimeLine, 64, 128, 255, 215 @ 	cry Cry_THKosuzuLine
+	cry_custom 20, 0, Cry_THAyaLine, 64, 128, 255, 215 @ 	cry Cry_THMiyoiLine
+	cry_custom 20, 0, Cry_THMedicineLine, 64, 128, 255, 215 @ 	cry Cry_THMizuchiLine
+	cry_custom 20, 0, Cry_THYuukaLine, 64, 128, 255, 215 @ 	cry Cry_THMaribelLine
+	cry_custom 20, 0, Cry_THKomachiLine, 64, 128, 255, 215 @ 	cry Cry_THRenkoLine
+	cry_custom 20, 0, Cry_THEikiLine, 64, 128, 255, 215 @ 	cry Cry_THSumirekoLine
 	cry Cry_THMarisaLine
 	cry Cry_THMarisaAdvent
 	cry Cry_THReimuLine
-@ 	cry Cry_THReimuAdvent
+	cry_custom 20, 0, Cry_THReimuLine, 64, 128, 255, 215 @ 	cry Cry_THReimuAdvent
 	cry Cry_SHVivitLine
 	cry Cry_ETCIsami
-@ 	cry Cry_KEYMisuzuLine
-@ 	cry Cry_KEYKanoLine
-@ 	cry Cry_KEYMinagiLine
-@ 	cry Cry_KEYHarukoLine
-@ 	cry Cry_KEYKannaLine
-@ 	cry Cry_KEYHijiriLine
-@ 	cry Cry_KEYMichiruLine
-@ 	cry Cry_KEYUrahaLine
-@ 	cry Cry_KEYPotatoLine
-@ 	cry Cry_KEYSoraLine
-@ 	cry Cry_KEYAyuLine
-@ 	cry Cry_KEYMaiLine
-@ 	cry Cry_KEYNayukiLine
-@ 	cry Cry_KEYShioriLine
-@ 	cry Cry_KEYMakotoLine
-@ 	cry Cry_KEYMishioLine
-@ 	cry Cry_KEYSayuriLine
-@ 	cry Cry_KEYAkikoLine
-@ 	cry Cry_KEYKaoriLine
-@ 	cry Cry_KEYPiroLine
-@ 	cry Cry_KEYNagisaLine
-@ 	cry Cry_KEYKyouLine
-@ 	cry Cry_KEYRyouLine
-@ 	cry Cry_KEYKotomiLine
-@ 	cry Cry_KEYTomoyoLine
-@ 	cry Cry_KEYFuukoLine
-@ 	cry Cry_KEYYukineLine
-@ 	cry Cry_KEYMisaeLine
-@ 	cry Cry_KEYSanaeLine
-@ 	cry Cry_KEYMeiLine
-@ 	cry Cry_KEYUshioLine
-@ 	cry Cry_KEYBotanLine
-@ 	cry Cry_KEYRinLine
-@ 	cry Cry_KEYKomariLine
-@ 	cry Cry_KEYYuikoLine
-@ 	cry Cry_KEYMioLine
-@ 	cry Cry_KEYHarukaLine
-@ 	cry Cry_KEYKudLine
-@ 	cry Cry_KEYKanataLine
-@ 	cry Cry_KEYSasamiLine
-@ 	cry Cry_BGHSMikiLine
-@ 	cry Cry_BGHSSubaruLine
-@ 	cry Cry_BGHSHarukaLine
-@ 	cry Cry_BGHSNozomiLine
-@ 	cry Cry_BGHSYuriLine
-@ 	cry Cry_BGHSKurumiLine
-@ 	cry Cry_BGHSAnkoLine
-@ 	cry Cry_BGHSRengeLine
-@ 	cry Cry_BGHSAsuhaLine
-@ 	cry Cry_BGHSSakuraLine
-@ 	cry Cry_BGHSHinataLine
-@ 	cry Cry_BGHSKaedeLine
-@ 	cry Cry_BGHSMichaelLine
-@ 	cry Cry_BGHSKokomiLine
-@ 	cry Cry_BGHSUraraLine
-@ 	cry Cry_BGHSSadoneLine
-@ 	cry Cry_BGHSKanonLine
-@ 	cry Cry_BGHSShihoLine
-@ 	cry Cry_BGHSMisakiLine
-@ 	cry Cry_BGHSMariLine
-@ 	cry Cry_BGHSItsukiLine
-@ 	cry Cry_BGHSFuranLine
-@ 	cry Cry_BGHSErikaLine
-@ 	cry Cry_BGHSAoiLine
-@ 	cry Cry_BGHSBotanLine
-@ 	cry Cry_PCCureBlackLine
-@ 	cry Cry_PCCureWhiteLine
-@ 	cry Cry_PCShinyLuminousLine
-@ 	cry Cry_PCCureBloomLine
-@ 	cry Cry_PCCureEgretLine
-@ 	cry Cry_PCCureDreamLine
-@ 	cry Cry_PCCureRougeLine
-@ 	cry Cry_PCCureLemonadeLine
-@ 	cry Cry_PCCureMintLine
-@ 	cry Cry_PCCureAquaLine
-@ 	cry Cry_PCMilkyRoseLine
-@ 	cry Cry_PCDarkDreamLine
-@ 	cry Cry_PCDarkRougeLine
-@ 	cry Cry_PCDarkLemonLine
-@ 	cry Cry_PCDarkMintLine
-@ 	cry Cry_PCDarkAquaLine
-@ 	cry Cry_PCCurePeachLine
-@ 	cry Cry_PCCureBerryLine
-@ 	cry Cry_PCCurePineLine
-@ 	cry Cry_PCCurePassionLine
-@ 	cry Cry_PCCureBlossomLine
-@ 	cry Cry_PCCureMarineLine
-@ 	cry Cry_PCCureSunshineLine
-@ 	cry Cry_PCCureMoonlightLine
-@ 	cry Cry_PCDarkPrecureLine
-@ 	cry Cry_PCCureFloraHCPCLine
-@ 	cry Cry_PCCureMelodyLine
-@ 	cry Cry_PCCureRhythmLine
-@ 	cry Cry_PCCureBeatLine
-@ 	cry Cry_PCCureMuseLine
-@ 	cry Cry_PCCureHappyLine
-@ 	cry Cry_PCCureSunnyLine
-@ 	cry Cry_PCCurePeaceLine
-@ 	cry Cry_PCCureMarchLine
-@ 	cry Cry_PCCureBeautyLine
-@ 	cry Cry_PCBadEndHappyLine
-@ 	cry Cry_PCBadEndSunnyLine
-@ 	cry Cry_PCBadEndPeaceLine
-@ 	cry Cry_PCBadEndMarchLine
-@ 	cry Cry_PCBadEndBeautyLine
-@ 	cry Cry_PCCureEchoLine
-@ 	cry Cry_PCCureHeartLine
-@ 	cry Cry_PCCureDiamondLine
-@ 	cry Cry_PCCureRosettaLine
-@ 	cry Cry_PCCureSwordLine
-@ 	cry Cry_PCCureAceLine
-@ 	cry Cry_PCCureReginaLine
-@ 	cry Cry_THUbame
-@ 	cry Cry_THChimi
-@ 	cry Cry_THNareko
-@ 	cry Cry_THYuiman
-@ 	cry Cry_THAriya
-@ 	cry Cry_THNina
-@ 	cry Cry_SHHiranoLine
-@ 	cry Cry_ETCWupi
-@ 	cry Cry_ETCMiku
-@ 	cry Cry_ETCFoxyria
-@ 	cry Cry_ETCNimi
-@ 	cry Cry_ETCAnya
-@ 	cry Cry_ETCGura
-@ 	cry Cry_ETCAmelia
-@ 	cry Cry_ETCBijou
-@ 	cry Cry_ETCYabusame
-@ 	cry Cry_ETCTsubakura
-@ 	cry Cry_ETCNeptuneLine
-@ 	cry Cry_ETCNepgearLine
+	cry_custom 20, 0, Cry_THShizuhaLine, 64, 128, 255, 215 @ 	cry Cry_KEYMisuzuLine
+	cry_custom 20, 0, Cry_THMinorikoLine, 64, 128, 255, 215 @ 	cry Cry_KEYKanoLine
+	cry_custom 20, 0, Cry_THHinaLine, 64, 128, 255, 215 @ 	cry Cry_KEYMinagiLine
+	cry_custom 20, 0, Cry_THNitoriLine, 64, 128, 255, 215 @ 	cry Cry_KEYHarukoLine
+	cry_custom 20, 0, Cry_THMomijiLine, 64, 128, 255, 215 @ 	cry Cry_KEYKannaLine
+	cry_custom 20, 0, Cry_THSanaeLine, 64, 128, 255, 215 @ 	cry Cry_KEYHijiriLine
+	cry_custom 20, 0, Cry_THKanakoLine, 64, 128, 255, 215 @ 	cry Cry_KEYMichiruLine
+	cry_custom 20, 0, Cry_THSuwakoLine, 64, 128, 255, 215 @ 	cry Cry_KEYUrahaLine
+	cry_custom 20, 0, Cry_THIkuLine, 64, 128, 255, 215 @ 	cry Cry_KEYPotatoLine
+	cry_custom 20, 0, Cry_THTenshiLine, 64, 128, 255, 215 @ 	cry Cry_KEYSoraLine
+	cry_custom 20, 0, Cry_THKisumeLine, 64, 128, 255, 215 @ 	cry Cry_KEYAyuLine
+	cry_custom 20, 0, Cry_THYamameLine, 64, 128, 255, 215 @ 	cry Cry_KEYMaiLine
+	cry_custom 20, 0, Cry_THParseeLine, 64, 128, 255, 215 @ 	cry Cry_KEYNayukiLine
+	cry_custom 20, 0, Cry_THYuugiLine, 64, 128, 255, 215 @ 	cry Cry_KEYShioriLine
+	cry_custom 20, 0, Cry_THSatoriLine, 64, 128, 255, 215 @ 	cry Cry_KEYMakotoLine
+	cry_custom 20, 0, Cry_THRinLine, 64, 128, 255, 215 @ 	cry Cry_KEYMishioLine
+	cry_custom 20, 0, Cry_THZombiefairy, 64, 128, 255, 215 @ 	cry Cry_KEYSayuriLine
+	cry_custom 20, 0, Cry_THUtsuhoLine, 64, 128, 255, 215 @ 	cry Cry_KEYAkikoLine
+	cry_custom 20, 0, Cry_THKoishiLine, 64, 128, 255, 215 @ 	cry Cry_KEYKaoriLine
+	cry_custom 20, 0, Cry_THNazrinLine, 64, 128, 255, 215 @ 	cry Cry_KEYPiroLine
+	cry_custom 20, 0, Cry_THKogasaLine, 64, 128, 255, 215 @ 	cry Cry_KEYNagisaLine
+	cry_custom 20, 0, Cry_THIchirinLine, 64, 128, 255, 215 @ 	cry Cry_KEYKyouLine
+	cry_custom 20, 0, Cry_THMurasaLine, 64, 128, 255, 215 @ 	cry Cry_KEYRyouLine
+	cry_custom 20, 0, Cry_THShouLine, 64, 128, 255, 215 @ 	cry Cry_KEYKotomiLine
+	cry_custom 20, 0, Cry_THByakurenLine, 64, 128, 255, 215 @ 	cry Cry_KEYTomoyoLine
+	cry_custom 20, 0, Cry_THNueLine, 64, 128, 255, 215 @ 	cry Cry_KEYFuukoLine
+	cry_custom 20, 0, Cry_THOonamazu, 64, 128, 255, 215 @ 	cry Cry_KEYYukineLine
+	cry_custom 20, 0, Cry_THTensokuLine, 64, 128, 255, 215 @ 	cry Cry_KEYMisaeLine
+	cry_custom 20, 0, Cry_THHatateLine, 64, 128, 255, 215 @ 	cry Cry_KEYSanaeLine
+	cry_custom 20, 0, Cry_THKyoukoLine, 64, 128, 255, 215 @ 	cry Cry_KEYMeiLine
+	cry_custom 20, 0, Cry_THSeigaLine, 64, 128, 255, 215 @ 	cry Cry_KEYUshioLine
+	cry_custom 20, 0, Cry_THTojikoLine, 64, 128, 255, 215 @ 	cry Cry_KEYBotanLine
+	cry_custom 20, 0, Cry_THFutoLine, 64, 128, 255, 215 @ 	cry Cry_KEYRinLine
+	cry_custom 20, 0, Cry_THMikoLine, 64, 128, 255, 215 @ 	cry Cry_KEYKomariLine
+	cry_custom 20, 0, Cry_THMamizouLine, 64, 128, 255, 215 @ 	cry Cry_KEYYuikoLine
+	cry_custom 20, 0, Cry_THKasenLine, 64, 128, 255, 215 @ 	cry Cry_KEYMioLine
+	cry_custom 20, 0, Cry_THTenmaLine, 64, 128, 255, 215 @ 	cry Cry_KEYHarukaLine
+	cry_custom 20, 0, Cry_THSendaiLine, 64, 128, 255, 215 @ 	cry Cry_KEYKudLine
+	cry_custom 20, 0, Cry_THTokikoLine, 64, 128, 255, 215 @ 	cry Cry_KEYKanataLine
+	cry_custom 20, 0, Cry_THRinnosuke, 64, 128, 255, 215 @ 	cry Cry_KEYSasamiLine
+	cry_custom 20, 0, Cry_THAkyuu, 64, 128, 255, 215 @ 	cry Cry_BGHSMikiLine
+	cry_custom 20, 0, Cry_THMarisaLine, 64, 128, 255, 215 @ 	cry Cry_BGHSSubaruLine
+	cry_custom 20, 0, Cry_THMarisaAdvent, 64, 128, 255, 215 @ 	cry Cry_BGHSHarukaLine
+	cry_custom 20, 0, Cry_SHVivitLine, 64, 128, 255, 215 @ 	cry Cry_BGHSNozomiLine
+	cry_custom 20, 0, Cry_ETCIsami, 64, 128, 255, 215 @ 	cry Cry_BGHSYuriLine
+	cry_custom 100, 0, Cry_THShingyokuLine, 10, 10, 232, 253 @ 	cry Cry_BGHSKurumiLine
+	cry_custom 100, 0, Cry_THYuugenLine, 10, 10, 232, 253 @ 	cry Cry_BGHSAnkoLine
+	cry_custom 100, 0, Cry_THMimaLine, 10, 10, 232, 253 @ 	cry Cry_BGHSRengeLine
+	cry_custom 100, 0, Cry_THElisLine, 10, 10, 232, 253 @ 	cry Cry_BGHSAsuhaLine
+	cry_custom 100, 0, Cry_THKikuriLine, 10, 10, 232, 253 @ 	cry Cry_BGHSSakuraLine
+	cry_custom 100, 0, Cry_THSarielLine, 10, 10, 232, 253 @ 	cry Cry_BGHSHinataLine
+	cry_custom 100, 0, Cry_THKonngaraLine, 10, 10, 232, 253 @ 	cry Cry_BGHSKaedeLine
+	cry_custom 100, 0, Cry_THFairy, 10, 10, 232, 253 @ 	cry Cry_BGHSMichaelLine
+	cry_custom 100, 0, Cry_THGenji, 10, 10, 232, 253 @ 	cry Cry_BGHSKokomiLine
+	cry_custom 100, 0, Cry_THRikaLine, 10, 10, 232, 253 @ 	cry Cry_BGHSUraraLine
+	cry_custom 100, 0, Cry_THMeiraLine, 10, 10, 232, 253 @ 	cry Cry_BGHSSadoneLine
+	cry_custom 100, 0, Cry_THEllenLine, 10, 10, 232, 253 @ 	cry Cry_BGHSKanonLine
+	cry_custom 100, 0, Cry_THKotohimeLine, 10, 10, 232, 253 @ 	cry Cry_BGHSShihoLine
+	cry_custom 100, 0, Cry_THKanaLine, 10, 10, 232, 253 @ 	cry Cry_BGHSMisakiLine
+	cry_custom 100, 0, Cry_THRikakoLine, 10, 10, 232, 253 @ 	cry Cry_BGHSMariLine
+	cry_custom 100, 0, Cry_THChiyuriLine, 10, 10, 232, 253 @ 	cry Cry_BGHSItsukiLine
+	cry_custom 100, 0, Cry_THYumemiLine, 10, 10, 232, 253 @ 	cry Cry_BGHSFuranLine
+	cry_custom 100, 0, Cry_THKedama, 10, 10, 232, 253 @ 	cry Cry_BGHSErikaLine
+	cry_custom 100, 0, Cry_THRuukoto, 10, 10, 232, 253 @ 	cry Cry_BGHSAoiLine
+	cry_custom 100, 0, Cry_THMimichan, 10, 10, 232, 253 @ 	cry Cry_BGHSBotanLine
+	cry_custom 100, 0, Cry_THOrangeLine, 10, 10, 232, 253 @ 	cry Cry_PCCureBlackLine
+	cry_custom 100, 0, Cry_THKurumiLine, 10, 10, 232, 253 @ 	cry Cry_PCCureWhiteLine
+	cry_custom 100, 0, Cry_THEllyLine, 10, 10, 232, 253 @ 	cry Cry_PCShinyLuminousLine
+	cry_custom 100, 0, Cry_THMugetsuLine, 10, 10, 232, 253 @ 	cry Cry_PCCureBloomLine
+	cry_custom 100, 0, Cry_THGengetsuLine, 10, 10, 232, 253 @ 	cry Cry_PCCureEgretLine
+	cry_custom 100, 0, Cry_THSaraLine, 10, 10, 232, 253 @ 	cry Cry_PCCureDreamLine
+	cry_custom 100, 0, Cry_THLouiseLine, 10, 10, 232, 253 @ 	cry Cry_PCCureRougeLine
+	cry_custom 100, 0, Cry_THYukiLine, 10, 10, 232, 253 @ 	cry Cry_PCCureLemonadeLine
+	cry_custom 100, 0, Cry_THMaiLine, 10, 10, 232, 253 @ 	cry Cry_PCCureMintLine
+	cry_custom 100, 0, Cry_THYumekoLine, 10, 10, 232, 253 @ 	cry Cry_PCCureAquaLine
+	cry_custom 100, 0, Cry_THShinkiLine, 10, 10, 232, 253 @ 	cry Cry_PCMilkyRoseLine
+	cry_custom 100, 0, Cry_THRumiaLine, 10, 10, 232, 253 @ 	cry Cry_PCDarkDreamLine
+	cry_custom 100, 0, Cry_THDaiyouseiLine, 10, 10, 232, 253 @ 	cry Cry_PCDarkRougeLine
+	cry_custom 100, 0, Cry_THCirnoLine, 10, 10, 232, 253 @ 	cry Cry_PCDarkLemonLine
+	cry_custom 100, 0, Cry_THCirnoAdvent, 10, 10, 232, 253 @ 	cry Cry_PCDarkMintLine
+	cry_custom 100, 0, Cry_THLunachildLine, 10, 10, 232, 253 @ 	cry Cry_PCDarkAquaLine
+	cry_custom 100, 0, Cry_THStarsapphireLine, 10, 10, 232, 253 @ 	cry Cry_PCCurePeachLine
+	cry_custom 100, 0, Cry_THSunnymilkLine, 10, 10, 232, 253 @ 	cry Cry_PCCureBerryLine
+	cry_custom 100, 0, Cry_THMeilingLine, 10, 10, 232, 253 @ 	cry Cry_PCCurePineLine
+	cry_custom 100, 0, Cry_THMeilingAdvent, 10, 10, 232, 253 @ 	cry Cry_PCCurePassionLine
+	cry_custom 100, 0, Cry_THKoakumaLine, 10, 10, 232, 253 @ 	cry Cry_PCCureBlossomLine
+	cry_custom 100, 0, Cry_THPatchouliLine, 10, 10, 232, 253 @ 	cry Cry_PCCureMarineLine
+	cry_custom 100, 0, Cry_THSakuyaLine, 10, 10, 232, 253 @ 	cry Cry_PCCureSunshineLine
+	cry_custom 100, 0, Cry_THRemiliaLine, 10, 10, 232, 253 @ 	cry Cry_PCCureMoonlightLine
+	cry_custom 100, 0, Cry_THFlandreLine, 10, 10, 232, 253 @ 	cry Cry_PCDarkPrecureLine
+	cry_custom 100, 0, Cry_THSatsuki, 10, 10, 232, 253 @ 	cry Cry_PCCureFloraHCPCLine
+	cry_custom 100, 0, Cry_THLettyLine, 10, 10, 232, 253 @ 	cry Cry_PCCureMelodyLine
+	cry_custom 100, 0, Cry_THLettyAdvent, 10, 10, 232, 253 @ 	cry Cry_PCCureRhythmLine
+	cry_custom 100, 0, Cry_THChenLine, 10, 10, 232, 253 @ 	cry Cry_PCCureBeatLine
+	cry_custom 100, 0, Cry_THChenAdvent, 10, 10, 232, 253 @ 	cry Cry_PCCureMuseLine
+	cry_custom 100, 0, Cry_THAliceLine, 10, 10, 232, 253 @ 	cry Cry_PCCureHappyLine
+	cry_custom 100, 0, Cry_THLilyblackLine, 10, 10, 232, 253 @ 	cry Cry_PCCureSunnyLine
+	cry_custom 100, 0, Cry_THLilywhiteLine, 10, 10, 232, 253 @ 	cry Cry_PCCurePeaceLine
+	cry_custom 100, 0, Cry_THLunasaLine, 10, 10, 232, 253 @ 	cry Cry_PCCureMarchLine
+	cry_custom 100, 0, Cry_THMerlinLine, 10, 10, 232, 253 @ 	cry Cry_PCCureBeautyLine
+	cry_custom 100, 0, Cry_THLyricaLine, 10, 10, 232, 253 @ 	cry Cry_PCBadEndHappyLine
+	cry_custom 100, 0, Cry_THYoumuLine, 10, 10, 232, 253 @ 	cry Cry_PCBadEndSunnyLine
+	cry_custom 100, 0, Cry_THYoumuAdvent, 10, 10, 232, 253 @ 	cry Cry_PCBadEndPeaceLine
+	cry_custom 100, 0, Cry_THYuyukoLine, 10, 10, 232, 253 @ 	cry Cry_PCBadEndMarchLine
+	cry_custom 100, 0, Cry_THYuyukoAdvent, 10, 10, 232, 253 @ 	cry Cry_PCBadEndBeautyLine
+	cry_custom 100, 0, Cry_THRanLine, 10, 10, 232, 253 @ 	cry Cry_PCCureEchoLine
+	cry_custom 100, 0, Cry_THRanAdvent, 10, 10, 232, 253 @ 	cry Cry_PCCureHeartLine
+	cry_custom 100, 0, Cry_THYukariLine, 10, 10, 232, 253 @ 	cry Cry_PCCureDiamondLine
+	cry_custom 100, 0, Cry_THYukariAdvent, 10, 10, 232, 253 @ 	cry Cry_PCCureRosettaLine
+	cry_custom 100, 0, Cry_THSuikaLine, 10, 10, 232, 253 @ 	cry Cry_PCCureSwordLine
+	cry_custom 100, 0, Cry_THWriggleLine, 10, 10, 232, 253 @ 	cry Cry_PCCureAceLine
+	cry_custom 100, 0, Cry_THMystiaLine, 10, 10, 232, 253 @ 	cry Cry_PCCureReginaLine
+	cry_custom 100, 0, Cry_THMystiaAdvent, 10, 10, 232, 253 @ 	cry Cry_THUbame
+	cry_custom 100, 0, Cry_THKeineLine, 10, 10, 232, 253 @ cry Cry_THChimi
+	cry_custom 100, 0, Cry_THKeineLineAD, 10, 10, 232, 253 @ cry Cry_THNareko
+	cry_custom 100, 0, Cry_THTewiLine, 10, 10, 232, 253 @ cry Cry_THYuiman
+	cry_custom 100, 0, Cry_THTewiAdvent, 10, 10, 232, 253 @ cry Cry_THAriya
+	cry_custom 100, 0, Cry_THReisenLine, 10, 10, 232, 253 @ cry Cry_THNina
+	cry_custom 100, 0, Cry_THReisenAdvent, 10, 10, 232, 253 @ cry Cry_SHHiranoLine
+	cry_custom 100, 0, Cry_THEirinLine, 10, 10, 232, 253 @ 	cry Cry_ETCWupi
+	cry_custom 100, 0, Cry_THEirinAdvent, 10, 10, 232, 253 @ 	cry Cry_ETCMiku
+	cry_custom 100, 0, Cry_THKaguyaLine, 10, 10, 232, 253 @ 	cry Cry_ETCFoxyria
+	cry_custom 100, 0, Cry_THMokouLine, 10, 10, 232, 253 @ 	cry Cry_ETCNimi
+	cry_custom 100, 0, Cry_THMokouAdvent, 10, 10, 232, 253 @ 	cry Cry_ETCAnya
+	cry_custom 100, 0, Cry_THGyokuto, 10, 10, 232, 253 @ 	cry Cry_ETCGura
+	cry_custom 100, 0, Cry_THToyohimeLine, 10, 10, 232, 253 @ 	cry Cry_ETCAmelia
+	cry_custom 100, 0, Cry_THYorihimeLine, 10, 10, 232, 253 @ 	cry Cry_ETCBijou
+	cry_custom 100, 0, Cry_THAyaLine, 10, 10, 232, 253 @ 	cry Cry_ETCYabusame
+	cry_custom 100, 0, Cry_THMedicineLine, 10, 10, 232, 253 @ 	cry Cry_ETCTsubakura
+	cry_custom 100, 0, Cry_THYuukaLine, 10, 10, 232, 253 @ 	cry Cry_ETCNeptuneLine
+	cry_custom 100, 0, Cry_THKomachiLine, 10, 10, 232, 253 @ 	cry Cry_ETCNepgearLine
 	cry Cry_ETCCureUnionLine
-@ 	cry Cry_ETCEmesgesey
-@ 	cry Cry_ETCShounenLine
-@ 	cry Cry_ETCShoujoLine
+	cry_custom 100, 0, Cry_THEikiLine, 10, 10, 232, 253 @ 	cry Cry_ETCEmesgesey
+	cry_custom 100, 0, Cry_THShizuhaLine, 10, 10, 232, 253 @ 	cry Cry_ETCShounenLine
+	cry_custom 100, 0, Cry_THMinorikoLine, 10, 10, 232, 253 @ 	cry Cry_ETCShoujoLine
 	cry Cry_Dialga
 	cry Cry_Palkia
 	cry Cry_Giratina
 	cry Cry_Arceus
-@ 	cry Cry_ETCIllyasvielLine
-@ 	cry Cry_ETCChloeLine
+	cry_custom 100, 0, Cry_THHinaLine, 10, 10, 232, 253 @ 	cry Cry_ETCIllyasvielLine
+	cry_custom 100, 0, Cry_THNitoriLine, 10, 10, 232, 253 @ 	cry Cry_ETCChloeLine
 	cry Cry_ETCDecadeLine
 	cry Cry_ETCDiEndLine
 	cry Cry_ETCDeLastLine
@@ -5804,7 +5804,7 @@ gCryTable::
 	cry Cry_THAliceBlack
 	cry Cry_THPrismriver
 	cry Cry_THAkiSisters
-@ 	cry Cry_THYorigamiSisters
+	cry_custom 100, 0, Cry_THMomijiLine, 10, 10, 232, 253 @ 	cry Cry_THYorigamiSisters
 	cry Cry_ClefableMega
 	cry Cry_VictreebelMega
 	cry Cry_StarmieMega
@@ -5822,18 +5822,18 @@ gCryTable::
 	cry Cry_THMarisaPC98Line
 	cry Cry_THReimuPC98Line
 	cry Cry_THSuikaMP
- 	cry Cry_Victini
-@ 	cry Cry_ETCSunny
-@ 	cry Cry_ETCPurikuheart
+	cry Cry_Victini
+	cry_custom 100, 0, Cry_THSanaeLine, 10, 10, 232, 253 @ cry Cry_ETCSunny
+	cry_custom 100, 0, Cry_THKanakoLine, 10, 10, 232, 253 @ cry Cry_ETCPurikuheart
 	cry Cry_Kecleon
-@ 	cry Cry_ETCSailorMoon
-@ 	cry Cry_ETCOmori
-@ 	cry Cry_ETCMadoka
-@ 	cry Cry_ETCBlackRockShooter
-@ 	cry Cry_ETCValkyrie
-@ 	cry Cry_ETCNonota
-@ 	cry Cry_ETCNobeta
-@ 	cry Cry_ETCBasil
+	cry_custom 100, 0, Cry_THSuwakoLine, 10, 10, 232, 253 @ 	cry Cry_ETCSailorMoon
+	cry_custom 100, 0, Cry_THIkuLine, 10, 10, 232, 253 @ 	cry Cry_ETCOmori
+	cry_custom 100, 0, Cry_THTenshiLine, 10, 10, 232, 253 @ 	cry Cry_ETCMadoka
+	cry_custom 100, 0, Cry_THKisumeLine, 10, 10, 232, 253 @ 	cry Cry_ETCBlackRockShooter
+	cry_custom 100, 0, Cry_THYamameLine, 10, 10, 232, 253 @ 	cry Cry_ETCValkyrie
+	cry_custom 100, 0, Cry_THParseeLine, 10, 10, 232, 253 @ 	cry Cry_ETCNonota
+	cry_custom 100, 0, Cry_THYuugiLine, 10, 10, 232, 253 @ 	cry Cry_ETCNobeta
+	cry_custom 100, 0, Cry_THSatoriLine, 10, 10, 232, 253 @ cry Cry_ETCBasil
 .endif @ P_CRIES_ENABLED
 
 	.align 2
@@ -6139,39 +6139,39 @@ gCryTable_Reverse::
 	cry_reverse Cry_WalkingWake
 	cry_reverse Cry_GougingFire
 	cry_reverse Cry_RagingBolt
-@ 	cry_reverse Cry_YYYIYuukiYuunaLine
-@ 	cry_reverse Cry_YYYIMimoriLine
-@ 	cry_reverse Cry_YYYIKarinLine
-@ 	cry_reverse Cry_YYYIFuuLine
-@ 	cry_reverse Cry_YYYIItsukiLine
-@ 	cry_reverse Cry_YYYISonokoBigLine
-@ 	cry_reverse Cry_YYYISumiLine
-@ 	cry_reverse Cry_YYYIGinLine
-@ 	cry_reverse Cry_YYYISonokoSmallLine
-@ 	cry_reverse Cry_YYYIWakabaLine
-@ 	cry_reverse Cry_YYYITakashimaYuunaLine
-@ 	cry_reverse Cry_YYYIChikageLine
-@ 	cry_reverse Cry_YYYITamakoLine
-@ 	cry_reverse Cry_YYYIAnzuLine
-@ 	cry_reverse Cry_YYYIHinataLine
-@ 	cry_reverse Cry_YYYIUtanoLine
-@ 	cry_reverse Cry_YYYIMitoLine
-@ 	cry_reverse Cry_YYYIMebukiLine
-@ 	cry_reverse Cry_YYYISuzumeLine
-@ 	cry_reverse Cry_YYYIYumikoLine
-@ 	cry_reverse Cry_YYYIShizukuLine
-@ 	cry_reverse Cry_YYYIAyaLine
-@ 	cry_reverse Cry_YYYISekkaLine
-@ 	cry_reverse Cry_YYYINatsumeLine
-@ 	cry_reverse Cry_YYYIAkamineYuunaLine
-@ 	cry_reverse Cry_YYYIRengeLine
-@ 	cry_reverse Cry_YYYIShizukaLine
-@ 	cry_reverse Cry_YYYIFuyouLilienthalYuunaLine
-@ 	cry_reverse Cry_YYYIYuzukiYuunaLine
-@ 	cry_reverse Cry_YYYIMasuzuLine
-@ 	cry_reverse Cry_YYYIYoshikaLine
-@ 	cry_reverse Cry_YYYIHimeLine
-@ 	cry_reverse Cry_YYYIMisakiLine
+	cry_reverse_custom 20, 0, Cry_THShingyokuLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIYuukiYuunaLine
+	cry_reverse_custom 20, 0, Cry_THYuugenLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIMimoriLine
+	cry_reverse_custom 20, 0, Cry_THMimaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIKarinLine
+	cry_reverse_custom 20, 0, Cry_THElisLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIFuuLine
+	cry_reverse_custom 20, 0, Cry_THKikuriLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIItsukiLine
+	cry_reverse_custom 20, 0, Cry_THSarielLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYISonokoBigLine
+	cry_reverse_custom 20, 0, Cry_THKonngaraLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYISumiLine
+	cry_reverse_custom 20, 0, Cry_THFairy, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIGinLine
+	cry_reverse_custom 20, 0, Cry_THGenji, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYISonokoSmallLine
+	cry_reverse_custom 20, 0, Cry_THRikaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIWakabaLine
+	cry_reverse_custom 20, 0, Cry_THMeiraLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYITakashimaYuunaLine
+	cry_reverse_custom 20, 0, Cry_THEllenLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIChikageLine
+	cry_reverse_custom 20, 0, Cry_THKotohimeLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYITamakoLine
+	cry_reverse_custom 20, 0, Cry_THKanaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIAnzuLine
+	cry_reverse_custom 20, 0, Cry_THRikakoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIHinataLine
+	cry_reverse_custom 20, 0, Cry_THChiyuriLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIUtanoLine
+	cry_reverse_custom 20, 0, Cry_THYumemiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIMitoLine
+	cry_reverse_custom 20, 0, Cry_THKedama, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIMebukiLine
+	cry_reverse_custom 20, 0, Cry_THRuukoto, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYISuzumeLine
+	cry_reverse_custom 20, 0, Cry_THMimichan, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIYumikoLine
+	cry_reverse_custom 20, 0, Cry_THOrangeLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIShizukuLine
+	cry_reverse_custom 20, 0, Cry_THKurumiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIAyaLine
+	cry_reverse_custom 20, 0, Cry_THEllyLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYISekkaLine
+	cry_reverse_custom 20, 0, Cry_THMugetsuLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYINatsumeLine
+	cry_reverse_custom 20, 0, Cry_THGengetsuLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIAkamineYuunaLine
+	cry_reverse_custom 20, 0, Cry_THSaraLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIRengeLine
+	cry_reverse_custom 20, 0, Cry_THLouiseLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIShizukaLine
+	cry_reverse_custom 20, 0, Cry_THYukiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIFuyouLilienthalYuunaLine
+	cry_reverse_custom 20, 0, Cry_THMaiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIYuzukiYuunaLine
+	cry_reverse_custom 20, 0, Cry_THYumekoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIMasuzuLine
+	cry_reverse_custom 20, 0, Cry_THShinkiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIYoshikaLine
+	cry_reverse_custom 20, 0, Cry_THRumiaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIHimeLine
+	cry_reverse_custom 20, 0, Cry_THDaiyouseiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_YYYIMisakiLine
 	cry_reverse Cry_THShingyokuLine
 	cry_reverse Cry_THYuugenLine
 	cry_reverse Cry_THMimaLine
@@ -6216,7 +6216,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_THPatchouliLine
 	cry_reverse Cry_THSakuyaLine
 	cry_reverse Cry_THRemiliaLine
-@ 	cry_reverse Cry_THRemiliaAdvent
+	cry_reverse_custom 20, 0, Cry_THRemiliaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THRemiliaAdvent
 	cry_reverse Cry_THFlandreLine
 	cry_reverse Cry_THSatsuki
 	cry_reverse Cry_THLettyLine
@@ -6290,216 +6290,217 @@ gCryTable_Reverse::
 	cry_reverse Cry_THTensokuLine
 	cry_reverse Cry_THHatateLine
 	cry_reverse Cry_THKyoukoLine
-@ 	cry_reverse Cry_THYoshikaLine
+	cry_reverse_custom 20, 0, Cry_THCirnoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THYoshikaLine
 	cry_reverse Cry_THSeigaLine
 	cry_reverse Cry_THTojikoLine
 	cry_reverse Cry_THFutoLine
 	cry_reverse Cry_THMikoLine
 	cry_reverse Cry_THMamizouLine
-@ 	cry_reverse Cry_THKokoroLine
-@ 	cry_reverse Cry_THWakasagiLine
-@ 	cry_reverse Cry_THSekibankiLine
-@ 	cry_reverse Cry_THKagerouLine
-@ 	cry_reverse Cry_THBenbenLine
-@ 	cry_reverse Cry_THYatsuhashiLine
-@ 	cry_reverse Cry_THSeijaLine
-@ 	cry_reverse Cry_THSukunaLine
-@ 	cry_reverse Cry_THRaikoLine
-@ 	cry_reverse Cry_THSeiranLine
-@ 	cry_reverse Cry_THRingoLine
-@ 	cry_reverse Cry_THDoremyLine
-@ 	cry_reverse Cry_THSagumeLine
-@ 	cry_reverse Cry_THClownpieceLine
-@ 	cry_reverse Cry_THJunkoLine
-@ 	cry_reverse Cry_THHecatiaLine
-@ 	cry_reverse Cry_THJoonLine
-@ 	cry_reverse Cry_THShionLine
-@ 	cry_reverse Cry_THEternityLine
-@ 	cry_reverse Cry_THNemunoLine
-@ 	cry_reverse Cry_THAunnLine
-@ 	cry_reverse Cry_THNarumiLine
-@ 	cry_reverse Cry_THTereidaMaiLine
-@ 	cry_reverse Cry_THSatonoLine
-@ 	cry_reverse Cry_THOkinaLine
-@ 	cry_reverse Cry_THEikaLine
-@ 	cry_reverse Cry_THUrumiLine
-@ 	cry_reverse Cry_THKutakaLine
-@ 	cry_reverse Cry_THYachieLine
-@ 	cry_reverse Cry_THMayumiLine
-@ 	cry_reverse Cry_THKeikiLine
-@ 	cry_reverse Cry_THSakiLine
-@ 	cry_reverse Cry_THYuumaLine
-@ 	cry_reverse Cry_THMikeLine
-@ 	cry_reverse Cry_THTakaneLine
-@ 	cry_reverse Cry_THSannyoLine
-@ 	cry_reverse Cry_THMisumaruLine
-@ 	cry_reverse Cry_THTsukasaLine
-@ 	cry_reverse Cry_THMegumuLine
-@ 	cry_reverse Cry_THChimataLine
-@ 	cry_reverse Cry_THMomoyoLine
-@ 	cry_reverse Cry_THBitenLine
-@ 	cry_reverse Cry_THEnokoLine
-@ 	cry_reverse Cry_THChiyariLine
-@ 	cry_reverse Cry_THHisamiLine
-@ 	cry_reverse Cry_THZanmuLine
+	cry_reverse_custom 20, 0, Cry_THCirnoAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THKokoroLine
+	cry_reverse_custom 20, 0, Cry_THLunachildLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THWakasagiLine
+	cry_reverse_custom 20, 0, Cry_THStarsapphireLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THSekibankiLine
+	cry_reverse_custom 20, 0, Cry_THSunnymilkLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THKagerouLine
+	cry_reverse_custom 20, 0, Cry_THMeilingLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THBenbenLine
+	cry_reverse_custom 20, 0, Cry_THMeilingAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THYatsuhashiLine
+	cry_reverse_custom 20, 0, Cry_THKoakumaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THSeijaLine
+	cry_reverse_custom 20, 0, Cry_THPatchouliLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THSukunaLine
+	cry_reverse_custom 20, 0, Cry_THSakuyaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THRaikoLine
+	cry_reverse_custom 20, 0, Cry_THFlandreLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THSeiranLine
+	cry_reverse_custom 20, 0, Cry_THSatsuki, 64, 128, 255, 215 @ 	cry_reverse Cry_THRingoLine
+	cry_reverse_custom 20, 0, Cry_THLettyLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THDoremyLine
+	cry_reverse_custom 20, 0, Cry_THLettyAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THSagumeLine
+	cry_reverse_custom 20, 0, Cry_THChenLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THClownpieceLine
+	cry_reverse_custom 20, 0, Cry_THChenAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THJunkoLine
+	cry_reverse_custom 20, 0, Cry_THAliceLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THHecatiaLine
+	cry_reverse_custom 20, 0, Cry_THLilyblackLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THJoonLine
+	cry_reverse_custom 20, 0, Cry_THLilywhiteLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THShionLine
+	cry_reverse_custom 20, 0, Cry_THLunasaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THEternityLine
+	cry_reverse_custom 20, 0, Cry_THMerlinLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THNemunoLine
+	cry_reverse_custom 20, 0, Cry_THLyricaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THAunnLine
+	cry_reverse_custom 20, 0, Cry_THYoumuLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THNarumiLine
+	cry_reverse_custom 20, 0, Cry_THYoumuAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THTereidaMaiLine
+	cry_reverse_custom 20, 0, Cry_THYuyukoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THSatonoLine
+	cry_reverse_custom 20, 0, Cry_THYuyukoAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THOkinaLine
+	cry_reverse_custom 20, 0, Cry_THRanLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THEikaLine
+	cry_reverse_custom 20, 0, Cry_THRanAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THUrumiLine
+	cry_reverse_custom 20, 0, Cry_THYukariLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THKutakaLine
+	cry_reverse_custom 20, 0, Cry_THYukariAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THYachieLine
+	cry_reverse_custom 20, 0, Cry_THSuikaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THMayumiLine
+	cry_reverse_custom 20, 0, Cry_THWriggleLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THKeikiLine
+	cry_reverse_custom 20, 0, Cry_THMystiaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THSakiLine
+	cry_reverse_custom 20, 0, Cry_THMystiaAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THYuumaLine
+	cry_reverse_custom 20, 0, Cry_THKeineLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THMikeLine
+	cry_reverse_custom 20, 0, Cry_THKeineLineAD, 64, 128, 255, 215 @ 	cry_reverse Cry_THTakaneLine
+	cry_reverse_custom 20, 0, Cry_THTewiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THSannyoLine
+	cry_reverse_custom 20, 0, Cry_THTewiAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THMisumaruLine
+	cry_reverse_custom 20, 0, Cry_THReisenLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THTsukasaLine
+	cry_reverse_custom 20, 0, Cry_THReisenAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THMegumuLine
+	cry_reverse_custom 20, 0, Cry_THEirinLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THChimataLine
+	cry_reverse_custom 20, 0, Cry_THEirinAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THMomoyoLine
+	cry_reverse_custom 20, 0, Cry_THKaguyaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THBitenLine
+	cry_reverse_custom 20, 0, Cry_THMokouLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THEnokoLine
+	cry_reverse_custom 20, 0, Cry_THMokouAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_THChiyariLine
+	cry_reverse_custom 20, 0, Cry_THGyokuto, 64, 128, 255, 215 @ 	cry_reverse Cry_THHisamiLine
+	cry_reverse_custom 20, 0, Cry_THToyohimeLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THZanmuLine
 	cry_reverse Cry_THKasenLine
 	cry_reverse Cry_THTenmaLine
 	cry_reverse Cry_THSendaiLine
 	cry_reverse Cry_THTokikoLine
 	cry_reverse Cry_THRinnosuke
 	cry_reverse Cry_THAkyuu
-@ 	cry_reverse Cry_THKosuzuLine
-@ 	cry_reverse Cry_THMiyoiLine
-@ 	cry_reverse Cry_THMizuchiLine
-@ 	cry_reverse Cry_THMaribelLine
-@ 	cry_reverse Cry_THRenkoLine
-@ 	cry_reverse Cry_THSumirekoLine
+	cry_reverse_custom 20, 0, Cry_THYorihimeLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THKosuzuLine
+	cry_reverse_custom 20, 0, Cry_THAyaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THMiyoiLine
+	cry_reverse_custom 20, 0, Cry_THMedicineLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THMizuchiLine
+	cry_reverse_custom 20, 0, Cry_THYuukaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THMaribelLine
+	cry_reverse_custom 20, 0, Cry_THKomachiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THRenkoLine
+	cry_reverse_custom 20, 0, Cry_THEikiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THSumirekoLine
 	cry_reverse Cry_THMarisaLine
 	cry_reverse Cry_THMarisaAdvent
 	cry_reverse Cry_THReimuLine
-@ 	cry_reverse Cry_THReimuAdvent
+	cry_reverse_custom 20, 0, Cry_THReimuLine, 64, 128, 255, 215 @ 	cry_reverse Cry_THReimuAdvent
 	cry_reverse Cry_SHVivitLine
 	cry_reverse Cry_ETCIsami
-@ 	cry_reverse Cry_KEYMisuzuLine
-@ 	cry_reverse Cry_KEYKanoLine
-@ 	cry_reverse Cry_KEYMinagiLine
-@ 	cry_reverse Cry_KEYHarukoLine
-@ 	cry_reverse Cry_KEYKannaLine
-@ 	cry_reverse Cry_KEYHijiriLine
-@ 	cry_reverse Cry_KEYMichiruLine
-@ 	cry_reverse Cry_KEYUrahaLine
-@ 	cry_reverse Cry_KEYPotatoLine
-@ 	cry_reverse Cry_KEYSoraLine
-@ 	cry_reverse Cry_KEYAyuLine
-@ 	cry_reverse Cry_KEYMaiLine
-@ 	cry_reverse Cry_KEYNayukiLine
-@ 	cry_reverse Cry_KEYShioriLine
-@ 	cry_reverse Cry_KEYMakotoLine
-@ 	cry_reverse Cry_KEYMishioLine
-@ 	cry_reverse Cry_KEYSayuriLine
-@ 	cry_reverse Cry_KEYAkikoLine
-@ 	cry_reverse Cry_KEYKaoriLine
-@ 	cry_reverse Cry_KEYPiroLine
-@ 	cry_reverse Cry_KEYNagisaLine
-@ 	cry_reverse Cry_KEYKyouLine
-@ 	cry_reverse Cry_KEYRyouLine
-@ 	cry_reverse Cry_KEYKotomiLine
-@ 	cry_reverse Cry_KEYTomoyoLine
-@ 	cry_reverse Cry_KEYFuukoLine
-@ 	cry_reverse Cry_KEYYukineLine
-@ 	cry_reverse Cry_KEYMisaeLine
-@ 	cry_reverse Cry_KEYSanaeLine
-@ 	cry_reverse Cry_KEYMeiLine
-@ 	cry_reverse Cry_KEYUshioLine
-@ 	cry_reverse Cry_KEYBotanLine
-@ 	cry_reverse Cry_KEYRinLine
-@ 	cry_reverse Cry_KEYKomariLine
-@ 	cry_reverse Cry_KEYYuikoLine
-@ 	cry_reverse Cry_KEYMioLine
-@ 	cry_reverse Cry_KEYHarukaLine
-@ 	cry_reverse Cry_KEYKudLine
-@ 	cry_reverse Cry_KEYKanataLine
-@ 	cry_reverse Cry_KEYSasamiLine
-@ 	cry_reverse Cry_BGHSMikiLine
-@ 	cry_reverse Cry_BGHSSubaruLine
-@ 	cry_reverse Cry_BGHSHarukaLine
-@ 	cry_reverse Cry_BGHSNozomiLine
-@ 	cry_reverse Cry_BGHSYuriLine
-@ 	cry_reverse Cry_BGHSKurumiLine
-@ 	cry_reverse Cry_BGHSAnkoLine
-@ 	cry_reverse Cry_BGHSRengeLine
-@ 	cry_reverse Cry_BGHSAsuhaLine
-@ 	cry_reverse Cry_BGHSSakuraLine
-@ 	cry_reverse Cry_BGHSHinataLine
-@ 	cry_reverse Cry_BGHSKaedeLine
-@ 	cry_reverse Cry_BGHSMichaelLine
-@ 	cry_reverse Cry_BGHSKokomiLine
-@ 	cry_reverse Cry_BGHSUraraLine
-@ 	cry_reverse Cry_BGHSSadoneLine
-@ 	cry_reverse Cry_BGHSKanonLine
-@ 	cry_reverse Cry_BGHSShihoLine
-@ 	cry_reverse Cry_BGHSMisakiLine
-@ 	cry_reverse Cry_BGHSMariLine
-@ 	cry_reverse Cry_BGHSItsukiLine
-@ 	cry_reverse Cry_BGHSFuranLine
-@ 	cry_reverse Cry_BGHSErikaLine
-@ 	cry_reverse Cry_BGHSAoiLine
-@ 	cry_reverse Cry_BGHSBotanLine
-@ 	cry_reverse Cry_PCCureBlackLine
-@ 	cry_reverse Cry_PCCureWhiteLine
-@ 	cry_reverse Cry_PCShinyLuminousLine
-@ 	cry_reverse Cry_PCCureBloomLine
-@ 	cry_reverse Cry_PCCureEgretLine
-@ 	cry_reverse Cry_PCCureDreamLine
-@ 	cry_reverse Cry_PCCureRougeLine
-@ 	cry_reverse Cry_PCCureLemonadeLine
-@ 	cry_reverse Cry_PCCureMintLine
-@ 	cry_reverse Cry_PCCureAquaLine
-@ 	cry_reverse Cry_PCMilkyRoseLine
-@ 	cry_reverse Cry_PCDarkDreamLine
-@ 	cry_reverse Cry_PCDarkRougeLine
-@ 	cry_reverse Cry_PCDarkLemonLine
-@ 	cry_reverse Cry_PCDarkMintLine
-@ 	cry_reverse Cry_PCDarkAquaLine
-@ 	cry_reverse Cry_PCCurePeachLine
-@ 	cry_reverse Cry_PCCureBerryLine
-@ 	cry_reverse Cry_PCCurePineLine
-@ 	cry_reverse Cry_PCCurePassionLine
-@ 	cry_reverse Cry_PCCureBlossomLine
-@ 	cry_reverse Cry_PCCureMarineLine
-@ 	cry_reverse Cry_PCCureSunshineLine
-@ 	cry_reverse Cry_PCCureMoonlightLine
-@ 	cry_reverse Cry_PCDarkPrecureLine
-@ 	cry_reverse Cry_PCCureFloraHCPCLine
-@ 	cry_reverse Cry_PCCureMelodyLine
-@ 	cry_reverse Cry_PCCureRhythmLine
-@ 	cry_reverse Cry_PCCureBeatLine
-@ 	cry_reverse Cry_PCCureMuseLine
-@ 	cry_reverse Cry_PCCureHappyLine
-@ 	cry_reverse Cry_PCCureSunnyLine
-@ 	cry_reverse Cry_PCCurePeaceLine
-@ 	cry_reverse Cry_PCCureMarchLine
-@ 	cry_reverse Cry_PCCureBeautyLine
-@ 	cry_reverse Cry_PCBadEndHappyLine
-@ 	cry_reverse Cry_PCBadEndSunnyLine
-@ 	cry_reverse Cry_PCBadEndPeaceLine
-@ 	cry_reverse Cry_PCBadEndMarchLine
-@ 	cry_reverse Cry_PCBadEndBeautyLine
-@ 	cry_reverse Cry_PCCureEchoLine
-@ 	cry_reverse Cry_PCCureHeartLine
-@ 	cry_reverse Cry_PCCureDiamondLine
-@ 	cry_reverse Cry_PCCureRosettaLine
-@ 	cry_reverse Cry_PCCureSwordLine
-@ 	cry_reverse Cry_PCCureAceLine
-@ 	cry_reverse Cry_PCCureReginaLine
-@ 	cry_reverse Cry_THUbame
-@ 	cry_reverse Cry_THChimi
-@ 	cry_reverse Cry_THNareko
-@ 	cry_reverse Cry_THYuiman
-@ 	cry_reverse Cry_THAriya
-@ 	cry_reverse Cry_THNina
-@ 	cry_reverse Cry_ETCWupi
-@ 	cry_reverse Cry_ETCMiku
-@ 	cry_reverse Cry_ETCFoxyria
-@ 	cry_reverse Cry_ETCNimi
-@ 	cry_reverse Cry_ETCAnya
-@ 	cry_reverse Cry_ETCGura
-@ 	cry_reverse Cry_ETCAmelia
-@ 	cry_reverse Cry_ETCBijou
-@ 	cry_reverse Cry_ETCYabusame
-@ 	cry_reverse Cry_ETCTsubakura
-@ 	cry_reverse Cry_ETCNeptuneLine
-@ 	cry_reverse Cry_ETCNepgearLine
+	cry_reverse_custom 20, 0, Cry_THShizuhaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYMisuzuLine
+	cry_reverse_custom 20, 0, Cry_THMinorikoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYKanoLine
+	cry_reverse_custom 20, 0, Cry_THHinaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYMinagiLine
+	cry_reverse_custom 20, 0, Cry_THNitoriLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYHarukoLine
+	cry_reverse_custom 20, 0, Cry_THMomijiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYKannaLine
+	cry_reverse_custom 20, 0, Cry_THSanaeLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYHijiriLine
+	cry_reverse_custom 20, 0, Cry_THKanakoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYMichiruLine
+	cry_reverse_custom 20, 0, Cry_THSuwakoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYUrahaLine
+	cry_reverse_custom 20, 0, Cry_THIkuLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYPotatoLine
+	cry_reverse_custom 20, 0, Cry_THTenshiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYSoraLine
+	cry_reverse_custom 20, 0, Cry_THKisumeLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYAyuLine
+	cry_reverse_custom 20, 0, Cry_THYamameLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYMaiLine
+	cry_reverse_custom 20, 0, Cry_THParseeLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYNayukiLine
+	cry_reverse_custom 20, 0, Cry_THYuugiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYShioriLine
+	cry_reverse_custom 20, 0, Cry_THSatoriLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYMakotoLine
+	cry_reverse_custom 20, 0, Cry_THRinLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYMishioLine
+	cry_reverse_custom 20, 0, Cry_THZombiefairy, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYSayuriLine
+	cry_reverse_custom 20, 0, Cry_THUtsuhoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYAkikoLine
+	cry_reverse_custom 20, 0, Cry_THKoishiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYKaoriLine
+	cry_reverse_custom 20, 0, Cry_THNazrinLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYPiroLine
+	cry_reverse_custom 20, 0, Cry_THKogasaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYNagisaLine
+	cry_reverse_custom 20, 0, Cry_THIchirinLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYKyouLine
+	cry_reverse_custom 20, 0, Cry_THMurasaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYRyouLine
+	cry_reverse_custom 20, 0, Cry_THShouLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYKotomiLine
+	cry_reverse_custom 20, 0, Cry_THByakurenLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYTomoyoLine
+	cry_reverse_custom 20, 0, Cry_THNueLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYFuukoLine
+	cry_reverse_custom 20, 0, Cry_THOonamazu, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYYukineLine
+	cry_reverse_custom 20, 0, Cry_THTensokuLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYMisaeLine
+	cry_reverse_custom 20, 0, Cry_THHatateLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYSanaeLine
+	cry_reverse_custom 20, 0, Cry_THKyoukoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYMeiLine
+	cry_reverse_custom 20, 0, Cry_THSeigaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYUshioLine
+	cry_reverse_custom 20, 0, Cry_THTojikoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYBotanLine
+	cry_reverse_custom 20, 0, Cry_THFutoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYRinLine
+	cry_reverse_custom 20, 0, Cry_THMikoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYKomariLine
+	cry_reverse_custom 20, 0, Cry_THMamizouLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYYuikoLine
+	cry_reverse_custom 20, 0, Cry_THKasenLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYMioLine
+	cry_reverse_custom 20, 0, Cry_THTenmaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYHarukaLine
+	cry_reverse_custom 20, 0, Cry_THSendaiLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYKudLine
+	cry_reverse_custom 20, 0, Cry_THTokikoLine, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYKanataLine
+	cry_reverse_custom 20, 0, Cry_THRinnosuke, 64, 128, 255, 215 @ 	cry_reverse Cry_KEYSasamiLine
+	cry_reverse_custom 20, 0, Cry_THAkyuu, 64, 128, 255, 215 @ 	cry_reverse Cry_BGHSMikiLine
+	cry_reverse_custom 20, 0, Cry_THMarisaLine, 64, 128, 255, 215 @ 	cry_reverse Cry_BGHSSubaruLine
+	cry_reverse_custom 20, 0, Cry_THMarisaAdvent, 64, 128, 255, 215 @ 	cry_reverse Cry_BGHSHarukaLine
+	cry_reverse_custom 20, 0, Cry_SHVivitLine, 64, 128, 255, 215 @ 	cry_reverse Cry_BGHSNozomiLine
+	cry_reverse_custom 20, 0, Cry_ETCIsami, 64, 128, 255, 215 @ 	cry_reverse Cry_BGHSYuriLine
+	cry_reverse_custom 100, 0, Cry_THShingyokuLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSKurumiLine
+	cry_reverse_custom 100, 0, Cry_THYuugenLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSAnkoLine
+	cry_reverse_custom 100, 0, Cry_THMimaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSRengeLine
+	cry_reverse_custom 100, 0, Cry_THElisLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSAsuhaLine
+	cry_reverse_custom 100, 0, Cry_THKikuriLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSSakuraLine
+	cry_reverse_custom 100, 0, Cry_THSarielLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSHinataLine
+	cry_reverse_custom 100, 0, Cry_THKonngaraLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSKaedeLine
+	cry_reverse_custom 100, 0, Cry_THFairy, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSMichaelLine
+	cry_reverse_custom 100, 0, Cry_THGenji, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSKokomiLine
+	cry_reverse_custom 100, 0, Cry_THRikaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSUraraLine
+	cry_reverse_custom 100, 0, Cry_THMeiraLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSSadoneLine
+	cry_reverse_custom 100, 0, Cry_THEllenLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSKanonLine
+	cry_reverse_custom 100, 0, Cry_THKotohimeLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSShihoLine
+	cry_reverse_custom 100, 0, Cry_THKanaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSMisakiLine
+	cry_reverse_custom 100, 0, Cry_THRikakoLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSMariLine
+	cry_reverse_custom 100, 0, Cry_THChiyuriLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSItsukiLine
+	cry_reverse_custom 100, 0, Cry_THYumemiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSFuranLine
+	cry_reverse_custom 100, 0, Cry_THKedama, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSErikaLine
+	cry_reverse_custom 100, 0, Cry_THRuukoto, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSAoiLine
+	cry_reverse_custom 100, 0, Cry_THMimichan, 10, 10, 232, 253 @ 	cry_reverse Cry_BGHSBotanLine
+	cry_reverse_custom 100, 0, Cry_THOrangeLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureBlackLine
+	cry_reverse_custom 100, 0, Cry_THKurumiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureWhiteLine
+	cry_reverse_custom 100, 0, Cry_THEllyLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCShinyLuminousLine
+	cry_reverse_custom 100, 0, Cry_THMugetsuLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureBloomLine
+	cry_reverse_custom 100, 0, Cry_THGengetsuLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureEgretLine
+	cry_reverse_custom 100, 0, Cry_THSaraLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureDreamLine
+	cry_reverse_custom 100, 0, Cry_THLouiseLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureRougeLine
+	cry_reverse_custom 100, 0, Cry_THYukiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureLemonadeLine
+	cry_reverse_custom 100, 0, Cry_THMaiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureMintLine
+	cry_reverse_custom 100, 0, Cry_THYumekoLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureAquaLine
+	cry_reverse_custom 100, 0, Cry_THShinkiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCMilkyRoseLine
+	cry_reverse_custom 100, 0, Cry_THRumiaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCDarkDreamLine
+	cry_reverse_custom 100, 0, Cry_THDaiyouseiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCDarkRougeLine
+	cry_reverse_custom 100, 0, Cry_THCirnoLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCDarkLemonLine
+	cry_reverse_custom 100, 0, Cry_THCirnoAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_PCDarkMintLine
+	cry_reverse_custom 100, 0, Cry_THLunachildLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCDarkAquaLine
+	cry_reverse_custom 100, 0, Cry_THStarsapphireLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCurePeachLine
+	cry_reverse_custom 100, 0, Cry_THSunnymilkLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureBerryLine
+	cry_reverse_custom 100, 0, Cry_THMeilingLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCurePineLine
+	cry_reverse_custom 100, 0, Cry_THMeilingAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCurePassionLine
+	cry_reverse_custom 100, 0, Cry_THKoakumaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureBlossomLine
+	cry_reverse_custom 100, 0, Cry_THPatchouliLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureMarineLine
+	cry_reverse_custom 100, 0, Cry_THSakuyaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureSunshineLine
+	cry_reverse_custom 100, 0, Cry_THRemiliaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureMoonlightLine
+	cry_reverse_custom 100, 0, Cry_THFlandreLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCDarkPrecureLine
+	cry_reverse_custom 100, 0, Cry_THSatsuki, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureFloraHCPCLine
+	cry_reverse_custom 100, 0, Cry_THLettyLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureMelodyLine
+	cry_reverse_custom 100, 0, Cry_THLettyAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureRhythmLine
+	cry_reverse_custom 100, 0, Cry_THChenLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureBeatLine
+	cry_reverse_custom 100, 0, Cry_THChenAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureMuseLine
+	cry_reverse_custom 100, 0, Cry_THAliceLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureHappyLine
+	cry_reverse_custom 100, 0, Cry_THLilyblackLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureSunnyLine
+	cry_reverse_custom 100, 0, Cry_THLilywhiteLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCurePeaceLine
+	cry_reverse_custom 100, 0, Cry_THLunasaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureMarchLine
+	cry_reverse_custom 100, 0, Cry_THMerlinLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureBeautyLine
+	cry_reverse_custom 100, 0, Cry_THLyricaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCBadEndHappyLine
+	cry_reverse_custom 100, 0, Cry_THYoumuLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCBadEndSunnyLine
+	cry_reverse_custom 100, 0, Cry_THYoumuAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_PCBadEndPeaceLine
+	cry_reverse_custom 100, 0, Cry_THYuyukoLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCBadEndMarchLine
+	cry_reverse_custom 100, 0, Cry_THYuyukoAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_PCBadEndBeautyLine
+	cry_reverse_custom 100, 0, Cry_THRanLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureEchoLine
+	cry_reverse_custom 100, 0, Cry_THRanAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureHeartLine
+	cry_reverse_custom 100, 0, Cry_THYukariLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureDiamondLine
+	cry_reverse_custom 100, 0, Cry_THYukariAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureRosettaLine
+	cry_reverse_custom 100, 0, Cry_THSuikaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureSwordLine
+	cry_reverse_custom 100, 0, Cry_THWriggleLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureAceLine
+	cry_reverse_custom 100, 0, Cry_THMystiaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_PCCureReginaLine
+	cry_reverse_custom 100, 0, Cry_THMystiaAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_THUbame
+	cry_reverse_custom 100, 0, Cry_THKeineLine, 10, 10, 232, 253 @ cry_reverse Cry_THChimi
+	cry_reverse_custom 100, 0, Cry_THKeineLineAD, 10, 10, 232, 253 @ cry_reverse Cry_THNareko
+	cry_reverse_custom 100, 0, Cry_THTewiLine, 10, 10, 232, 253 @ cry_reverse Cry_THYuiman
+	cry_reverse_custom 100, 0, Cry_THTewiAdvent, 10, 10, 232, 253 @ cry_reverse Cry_THAriya
+	cry_reverse_custom 100, 0, Cry_THReisenLine, 10, 10, 232, 253 @ cry_reverse Cry_THNina
+	cry_reverse_custom 100, 0, Cry_THReisenAdvent, 10, 10, 232, 253 @ cry_reverse Cry_SHHiranoLine
+	cry_reverse_custom 100, 0, Cry_THEirinLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCWupi
+	cry_reverse_custom 100, 0, Cry_THEirinAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCMiku
+	cry_reverse_custom 100, 0, Cry_THKaguyaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCFoxyria
+	cry_reverse_custom 100, 0, Cry_THMokouLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCNimi
+	cry_reverse_custom 100, 0, Cry_THMokouAdvent, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCAnya
+	cry_reverse_custom 100, 0, Cry_THGyokuto, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCGura
+	cry_reverse_custom 100, 0, Cry_THToyohimeLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCAmelia
+	cry_reverse_custom 100, 0, Cry_THYorihimeLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCBijou
+	cry_reverse_custom 100, 0, Cry_THAyaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCYabusame
+	cry_reverse_custom 100, 0, Cry_THMedicineLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCTsubakura
+	cry_reverse_custom 100, 0, Cry_THYuukaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCNeptuneLine
+	cry_reverse_custom 100, 0, Cry_THKomachiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCNepgearLine
 	cry_reverse Cry_ETCCureUnionLine
-@ 	cry_reverse Cry_ETCEmesgesey
-@ 	cry_reverse Cry_ETCShounenLine
-@ 	cry_reverse Cry_ETCShoujoLine
+	cry_reverse_custom 100, 0, Cry_THEikiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCEmesgesey
+	cry_reverse_custom 100, 0, Cry_THShizuhaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCShounenLine
+	cry_reverse_custom 100, 0, Cry_THMinorikoLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCShoujoLine
 	cry_reverse Cry_Dialga
 	cry_reverse Cry_Palkia
 	cry_reverse Cry_Giratina
 	cry_reverse Cry_Arceus
-@ 	cry_reverse Cry_ETCIllyasvielLine
-@ 	cry_reverse Cry_ETCChloeLine
+	cry_reverse_custom 100, 0, Cry_THHinaLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCIllyasvielLine
+	cry_reverse_custom 100, 0, Cry_THNitoriLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCChloeLine
 	cry_reverse Cry_ETCDecadeLine
 	cry_reverse Cry_ETCDiEndLine
 	cry_reverse Cry_ETCDeLastLine
@@ -6527,7 +6528,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_THAliceBlack
 	cry_reverse Cry_THPrismriver
 	cry_reverse Cry_THAkiSisters
-@ 	cry_reverse Cry_THYorigamiSisters
+	cry_reverse_custom 100, 0, Cry_THMomijiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_THYorigamiSisters
 	cry_reverse Cry_ClefableMega
 	cry_reverse Cry_VictreebelMega
 	cry_reverse Cry_StarmieMega
@@ -6545,17 +6546,17 @@ gCryTable_Reverse::
 	cry_reverse Cry_THMarisaPC98Line
 	cry_reverse Cry_THReimuPC98Line
 	cry_reverse Cry_THSuikaMP
- 	cry_reverse Cry_Victini
-@ 	cry_reverse Cry_ETCSunny
-@ 	cry_reverse Cry_ETCPurikuheart
+	cry_reverse Cry_Victini
+	cry_reverse_custom 100, 0, Cry_THSanaeLine, 10, 10, 232, 253 @ cry_reverse Cry_ETCSunny
+	cry_reverse_custom 100, 0, Cry_THKanakoLine, 10, 10, 232, 253 @ cry_reverse Cry_ETCPurikuheart
 	cry_reverse Cry_Kecleon
-@ 	cry_reverse Cry_ETCSailorMoon
-@ 	cry_reverse Cry_ETCOmori
-@ 	cry_reverse Cry_ETCMadoka
-@ 	cry_reverse Cry_ETCBlackRockShooter
-@ 	cry_reverse Cry_ETCValkyrie
-@ 	cry_reverse Cry_ETCNonota
-@ 	cry_reverse Cry_ETCNobeta
-@ 	cry_reverse Cry_ETCBasil
+	cry_reverse_custom 100, 0, Cry_THSuwakoLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCSailorMoon
+	cry_reverse_custom 100, 0, Cry_THIkuLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCOmori
+	cry_reverse_custom 100, 0, Cry_THTenshiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCMadoka
+	cry_reverse_custom 100, 0, Cry_THKisumeLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCBlackRockShooter
+	cry_reverse_custom 100, 0, Cry_THYamameLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCValkyrie
+	cry_reverse_custom 100, 0, Cry_THParseeLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCNonota
+	cry_reverse_custom 100, 0, Cry_THYuugiLine, 10, 10, 232, 253 @ 	cry_reverse Cry_ETCNobeta
+	cry_reverse_custom 100, 0, Cry_THSatoriLine, 10, 10, 232, 253 @ cry_reverse Cry_ETCBasil
 
 .endif @ P_CRIES_ENABLED

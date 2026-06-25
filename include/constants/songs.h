@@ -1991,7 +1991,9 @@
 #define MUS_DGMN_WORLD1_VS_EVENT 1998
 #define MUS_DGMN_WORLD1_VS_MUGENDRAMON 1999
 
-#define END_MUS 		    MUS_DGMN_WORLD1_VS_MUGENDRAMON
+#define MUS_PKMN_LGPE_VS_TRAINER 2000
+
+#define END_MUS 		    MUS_PKMN_LGPE_VS_TRAINER
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

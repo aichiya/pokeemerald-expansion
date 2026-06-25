@@ -394,6 +394,8 @@
 
 .include "sound/voicegroups/voicegroup835.inc" @ Tsubasa Reservoir Chronicle
 
+.include "sound/voicegroups/voicegroup836.inc" @ LGPE Trainer Battle
+
 .include "sound/voicegroups/voicegroup900.inc" @ New Sound Effects
 .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free
 

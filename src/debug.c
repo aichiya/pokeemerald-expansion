@@ -6477,7 +6477,8 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_DGMN_WORLD1_VS_NORMAL1) \
     X(MUS_DGMN_WORLD1_VS_NORMAL2) \
     X(MUS_DGMN_WORLD1_VS_EVENT) \
-    X(MUS_DGMN_WORLD1_VS_MUGENDRAMON)
+    X(MUS_DGMN_WORLD1_VS_MUGENDRAMON) \
+    X(MUS_PKMN_LGPE_VS_TRAINER)
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

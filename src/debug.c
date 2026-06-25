@@ -3607,6 +3607,7 @@ static void ResetMonDataStruct(struct PokemonTemplate *sDebugMonData)
     sDebugMonData->doNotUseDefaultBall      = FALSE;
     sDebugMonData->doNotUseDefaultAbility   = TRUE;
     sDebugMonData->doNotUseDefaultTeraType  = FALSE;
+    sDebugMonData->isDebugMon               = FALSE;
 }
 
 #define tIsComplex  data[6]
@@ -3794,6 +3795,7 @@ static void DebugAction_Give_Pokemon_SelectId(u8 taskId)
         }
 
         sDebugMonData->species = gTasks[taskId].tInput;
+        sDebugMonData->isDebugMon = TRUE;
         gTasks[taskId].tInput = 1;
         gTasks[taskId].tDigit = 0;
 

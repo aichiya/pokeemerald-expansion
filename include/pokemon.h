@@ -551,7 +551,8 @@ struct PokemonTemplate
     u8 doNotUseDefaultBall:1;
     u8 doNotUseDefaultAbility:1;
     u8 doNotUseDefaultTeraType:1;
-    u8 padding:4;
+    u8 isDebugMon:1;
+    u8 padding:3;
 };
 
 struct EggData

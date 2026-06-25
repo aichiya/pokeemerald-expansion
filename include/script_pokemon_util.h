@@ -2,7 +2,6 @@
 #define GUARD_SCRIPT_POKEMON_UTIL_H
 
 u32 ScriptGiveMon(enum Species species, u8 level, enum Item item);
-u32 ScriptGiveMonParameterized(u16, u8, u16, u8, u8, u8, u8, u8 *, u8 *, u16 *, bool8, bool8, u8); // Deleted on 1.9.0 ?
 u32 ScriptGiveMonDebugSimple(enum Species species, u8 level, enum Item item); // Added
 u32 ScriptGiveMonParameterizedGift1(u16, u8, u16, u8, u8, u8, u8, u8 *, u8 *, u16 *, bool8, bool8, u8); // Added
 u8 ScriptGiveEgg(enum Species species);

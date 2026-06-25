@@ -8694,6 +8694,14 @@ void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *mo
         SetMonData(mon, MON_DATA_TERA_TYPE, &teraType);
     }
 
+    if (monTemplate->isDebugMon)
+    {
+        u8 gameMet = VERSION_IDENTIFIER_DEBUG;
+        SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        enum PokeBall ball = BALL_MASTER;
+        SetMonData(mon, MON_DATA_POKEBALL, &ball);
+    }
+
     bool32 isEgg = ResolveIsEgg(monTemplate->isEgg);
     SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
 

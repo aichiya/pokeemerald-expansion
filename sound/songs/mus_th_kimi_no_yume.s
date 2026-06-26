@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_th_kimi_no_yume_grp, voicegroup201
+	.equ	mus_th_kimi_no_yume_grp, voicegroup_common_main
 	.equ	mus_th_kimi_no_yume_pri, 0
 	.equ	mus_th_kimi_no_yume_rev, reverb_set+50
 	.equ	mus_th_kimi_no_yume_mvl, 100

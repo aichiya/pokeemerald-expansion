@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_006_izumo_festival_grp, voicegroup601
+        .equ    mus_gs2_006_izumo_festival_grp, voicegroup_golden_sun_2_main
         .equ    mus_gs2_006_izumo_festival_pri, 0
         .equ    mus_gs2_006_izumo_festival_rev, reverb_set+50
         .equ    mus_gs2_006_izumo_festival_key, 0

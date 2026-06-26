@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_pkmn_glitchxcity_eterna_forest_grp, voicegroup201
+        .equ    mus_pkmn_glitchxcity_eterna_forest_grp, voicegroup_common_main
         .equ    mus_pkmn_glitchxcity_eterna_forest_pri, 0
         .equ    mus_pkmn_glitchxcity_eterna_forest_rev, reverb_set+50
         .equ    mus_pkmn_glitchxcity_eterna_forest_key, 0

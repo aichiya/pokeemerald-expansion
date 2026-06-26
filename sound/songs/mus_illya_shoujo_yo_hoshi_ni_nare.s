@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_grp, voicegroup201
+	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_grp, voicegroup_common_main
 	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_pri, 0
 	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_mvl, 70
 	.equ	mus_illya_shoujo_yo_hoshi_ni_nare_rev, reverb_set+50

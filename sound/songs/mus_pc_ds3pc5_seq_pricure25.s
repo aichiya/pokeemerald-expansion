@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pc_ds3pc5_seq_pricure25_grp, voicegroup201
+	.equ	mus_pc_ds3pc5_seq_pricure25_grp, voicegroup_common_main
 	.equ	mus_pc_ds3pc5_seq_pricure25_pri, 0
 	.equ	mus_pc_ds3pc5_seq_pricure25_rev, reverb_set+50
 	.equ	mus_pc_ds3pc5_seq_pricure25_mvl, 100

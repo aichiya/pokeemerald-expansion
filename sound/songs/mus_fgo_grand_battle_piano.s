@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_fgo_grand_battle_piano_grp, voicegroup202
+        .equ    mus_fgo_grand_battle_piano_grp, voicegroup_hgss_custom
         .equ    mus_fgo_grand_battle_piano_pri, 0
         .equ    mus_fgo_grand_battle_piano_rev, reverb_set+50
         .equ    mus_fgo_grand_battle_piano_key, 0

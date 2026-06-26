@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	se_etc_zeronos_grp, voicegroup900
+	.equ	se_etc_zeronos_grp, voicegroup_sfx_custom
 	.equ	se_etc_zeronos_pri, 0
 	.equ	se_etc_zeronos_rev, reverb_set+50
 	.equ	se_etc_zeronos_mvl, 127

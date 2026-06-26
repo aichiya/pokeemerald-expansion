@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_thppme_356_candid_friend_grp, voicegroup811
+        .equ    mus_thppme_356_candid_friend_grp, voicegroup_thppme_uda_set
         .equ    mus_thppme_356_candid_friend_pri, 0
         .equ    mus_thppme_356_candid_friend_rev, reverb_set+50
         .equ    mus_thppme_356_candid_friend_key, 0

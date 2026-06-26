@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_invisible_full_moon_grp, voicegroup803
+        .equ    mus_th_invisible_full_moon_grp, voicegroup_velo_custom
         .equ    mus_th_invisible_full_moon_pri, 0
         .equ    mus_th_invisible_full_moon_mvl, 90
         .equ    mus_th_invisible_full_moon_rev, reverb_set+50

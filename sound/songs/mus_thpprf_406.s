@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_406_grp, voicegroup210
+	.equ	mus_thpprf_406_grp, voicegroup_thpprf_main
 	.equ	mus_thpprf_406_pri, 0
 	.equ	mus_thpprf_406_rev, reverb_set+50
 	.equ	mus_thpprf_406_mvl, 127

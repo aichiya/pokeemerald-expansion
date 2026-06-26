@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	vo_pc_gba2_shinyliminous_grp, voicegroup501
+	.equ	vo_pc_gba2_shinyliminous_grp, voicegroup_fwpcmh_main
 	.equ	vo_pc_gba2_shinyliminous_pri, 0
 	.equ	vo_pc_gba2_shinyliminous_rev, reverb_set+50
 	.equ	vo_pc_gba2_shinyliminous_mvl, 92

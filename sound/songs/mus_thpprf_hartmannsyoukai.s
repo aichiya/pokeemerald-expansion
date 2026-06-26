@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_hartmannsyoukai_grp, voicegroup210
+	.equ	mus_thpprf_hartmannsyoukai_grp, voicegroup_thpprf_main
 	.equ	mus_thpprf_hartmannsyoukai_pri, 0
 	.equ	mus_thpprf_hartmannsyoukai_rev, reverb_set+50
 	.equ	mus_thpprf_hartmannsyoukai_mvl, 96

@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_03_grp, voicegroup201
+	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_03_grp, voicegroup_common_main
 	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_03_pri, 0
 	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_03_rev, reverb_set+50
 	.equ	mus_pc_ds6hcpc_seq_bgm_bgm_03_mvl, 100

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_063_doom_dragon_slain_grp, voicegroup601
+        .equ    mus_gs2_063_doom_dragon_slain_grp, voicegroup_golden_sun_2_main
         .equ    mus_gs2_063_doom_dragon_slain_pri, 0
         .equ    mus_gs2_063_doom_dragon_slain_rev, reverb_set+50
         .equ    mus_gs2_063_doom_dragon_slain_key, 0

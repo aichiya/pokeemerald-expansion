@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_pkmn_za_vs_jacinthe_grp, voicegroup828
+        .equ    mus_pkmn_za_vs_jacinthe_grp, voicegroup_vs_hakuno
         .equ    mus_pkmn_za_vs_jacinthe_pri, 0
         .equ    mus_pkmn_za_vs_jacinthe_mvl, 120
         .equ    mus_pkmn_za_vs_jacinthe_rev, reverb_set+50

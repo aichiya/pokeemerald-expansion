@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_thppzgsk_293A_lunate_elf_grp, voicegroup152
+        .equ    mus_thppzgsk_293A_lunate_elf_grp, voicegroup_rg_route3
         .equ    mus_thppzgsk_293A_lunate_elf_pri, 0
         .equ    mus_thppzgsk_293A_lunate_elf_rev, reverb_set+50
         .equ    mus_thppzgsk_293A_lunate_elf_key, 0

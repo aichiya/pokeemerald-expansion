@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pc_gba2_012_grp, voicegroup501
+	.equ	mus_pc_gba2_012_grp, voicegroup_fwpcmh_main
 	.equ	mus_pc_gba2_012_pri, 0
 	.equ	mus_pc_gba2_012_rev, reverb_set+50
 	.equ	mus_pc_gba2_012_mvl, 92

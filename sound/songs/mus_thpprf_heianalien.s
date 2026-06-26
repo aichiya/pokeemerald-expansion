@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_heianalien_grp, voicegroup210
+	.equ	mus_thpprf_heianalien_grp, voicegroup_thpprf_main
 	.equ	mus_thpprf_heianalien_pri, 0
 	.equ	mus_thpprf_heianalien_rev, reverb_set+50
 	.equ	mus_thpprf_heianalien_mvl, 92

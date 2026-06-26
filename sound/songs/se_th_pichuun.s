@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	se_th_pichuun_grp, voicegroup900
+	.equ	se_th_pichuun_grp, voicegroup_sfx_custom
 	.equ	se_th_pichuun_pri, 0
 	.equ	se_th_pichuun_rev, reverb_set+50
 	.equ	se_th_pichuun_mvl, 127

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_beethoven_virus_grp, voicegroup827
+        .equ    mus_etc_beethoven_virus_grp, voicegroup_common_main_2
         .equ    mus_etc_beethoven_virus_pri, 0
         .equ    mus_etc_beethoven_virus_mvl, 110
         .equ    mus_etc_beethoven_virus_rev, reverb_set+50

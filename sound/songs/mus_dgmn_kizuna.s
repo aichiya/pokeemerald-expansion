@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_dgmn_kizuna_grp, voicegroup201
+        .equ    mus_dgmn_kizuna_grp, voicegroup_common_main
         .equ    mus_dgmn_kizuna_pri, 0
         .equ    mus_dgmn_kizuna_rev, reverb_set+50
         .equ    mus_dgmn_kizuna_key, 0

@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_yyyi_auroradays_grp, voicegroup201
+	.equ	mus_yyyi_auroradays_grp, voicegroup_common_main
 	.equ	mus_yyyi_auroradays_pri, 0
 	.equ	mus_yyyi_auroradays_rev, reverb_set+50
 	.equ	mus_yyyi_auroradays_mvl, 127

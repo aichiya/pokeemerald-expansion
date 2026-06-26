@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_pc_ds5fpc_bgm_battle_06a_grp, voicegroup201
+	.equ	mus_pc_ds5fpc_bgm_battle_06a_grp, voicegroup_common_main
 	.equ	mus_pc_ds5fpc_bgm_battle_06a_pri, 0
 	.equ	mus_pc_ds5fpc_bgm_battle_06a_rev, reverb_set+50
 	.equ	mus_pc_ds5fpc_bgm_battle_06a_mvl, 100

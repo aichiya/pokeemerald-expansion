@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_infinitybeing_grp, voicegroup210
+	.equ	mus_thpprf_infinitybeing_grp, voicegroup_thpprf_main
 	.equ	mus_thpprf_infinitybeing_pri, 0
 	.equ	mus_thpprf_infinitybeing_rev, reverb_set+50
 	.equ	mus_thpprf_infinitybeing_mvl, 92

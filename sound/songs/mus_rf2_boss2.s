@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_rf2_boss2_grp, voicegroup201
+        .equ    mus_rf2_boss2_grp, voicegroup_common_main
         .equ    mus_rf2_boss2_pri, 0
         .equ    mus_rf2_boss2_rev, reverb_set+50
 	.equ	mus_rf2_boss2_mvl, 80

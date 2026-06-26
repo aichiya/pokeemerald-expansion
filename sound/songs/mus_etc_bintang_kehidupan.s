@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_bintang_kehidupan_grp, voicegroup827
+        .equ    mus_etc_bintang_kehidupan_grp, voicegroup_common_main_2
         .equ    mus_etc_bintang_kehidupan_pri, 0
         .equ    mus_etc_bintang_kehidupan_mvl, 110
         .equ    mus_etc_bintang_kehidupan_rev, reverb_set+50

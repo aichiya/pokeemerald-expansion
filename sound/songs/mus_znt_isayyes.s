@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_znt_isayyes_grp, voicegroup201
+	.equ	mus_znt_isayyes_grp, voicegroup_common_main
 	.equ	mus_znt_isayyes_pri, 0
 	.equ	mus_znt_isayyes_rev, reverb_set+50
 	.equ	mus_znt_isayyes_mvl, 100

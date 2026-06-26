@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_urbanlegends_grp, voicegroup210
+	.equ	mus_thpprf_urbanlegends_grp, voicegroup_thpprf_main
 	.equ	mus_thpprf_urbanlegends_pri, 0
 	.equ	mus_thpprf_urbanlegends_rev, reverb_set+50
 	.equ	mus_thpprf_urbanlegends_mvl, 108

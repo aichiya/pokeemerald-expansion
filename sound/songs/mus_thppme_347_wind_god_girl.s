@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_thppme_347_wind_god_girl_grp, voicegroup187
+        .equ    mus_thppme_347_wind_god_girl_grp, voicegroup_rg_sevii_route
         .equ    mus_thppme_347_wind_god_girl_pri, 0
         .equ    mus_thppme_347_wind_god_girl_rev, reverb_set+50
         .equ    mus_thppme_347_wind_god_girl_key, 0

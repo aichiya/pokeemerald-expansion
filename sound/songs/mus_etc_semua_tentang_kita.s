@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_semua_tentang_kita_grp, voicegroup201
+        .equ    mus_etc_semua_tentang_kita_grp, voicegroup_common_main
         .equ    mus_etc_semua_tentang_kita_pri, 0
         .equ    mus_etc_semua_tentang_kita_mvl, 80
         .equ    mus_etc_semua_tentang_kita_rev, reverb_set+50

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_beloved_tomboyish_girl_grp, voicegroup827
+        .equ    mus_th_beloved_tomboyish_girl_grp, voicegroup_common_main_2
         .equ    mus_th_beloved_tomboyish_girl_pri, 0
         .equ    mus_th_beloved_tomboyish_girl_mvl, 110
         .equ    mus_th_beloved_tomboyish_girl_rev, reverb_set+50

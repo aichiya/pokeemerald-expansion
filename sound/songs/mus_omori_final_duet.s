@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_omori_final_duet_grp, voicegroup201
+        .equ    mus_omori_final_duet_grp, voicegroup_common_main
         .equ    mus_omori_final_duet_pri, 0
         .equ    mus_omori_final_duet_mvl, 100
         .equ    mus_omori_final_duet_rev, reverb_set+50

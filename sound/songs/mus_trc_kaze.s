@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_trc_kaze_grp, voicegroup835
+        .equ    mus_trc_kaze_grp, voicegroup_tsubasa_reservoir_chronicle
         .equ    mus_trc_kaze_pri, 0
         .equ    mus_trc_kaze_mvl, 80
         .equ    mus_trc_kaze_rev, reverb_set+50

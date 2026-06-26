@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_dgmn_story2_board_angel_grp, voicegroup201
+	.equ	mus_dgmn_story2_board_angel_grp, voicegroup_common_main
 	.equ	mus_dgmn_story2_board_angel_pri, 0
 	.equ	mus_dgmn_story2_board_angel_rev, reverb_set+50
 	.equ	mus_dgmn_story2_board_angel_mvl, 100

@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thpprf_reverseideology_grp, voicegroup210
+	.equ	mus_thpprf_reverseideology_grp, voicegroup_thpprf_main
 	.equ	mus_thpprf_reverseideology_pri, 0
 	.equ	mus_thpprf_reverseideology_rev, reverb_set+50
 	.equ	mus_thpprf_reverseideology_mvl, 92

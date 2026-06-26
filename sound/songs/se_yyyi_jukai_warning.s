@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	se_yyyi_jukai_warning_grp, voicegroup900
+	.equ	se_yyyi_jukai_warning_grp, voicegroup_sfx_custom
 	.equ	se_yyyi_jukai_warning_pri, 0
 	.equ	se_yyyi_jukai_warning_rev, reverb_set+50
 	.equ	se_yyyi_jukai_warning_mvl, 127

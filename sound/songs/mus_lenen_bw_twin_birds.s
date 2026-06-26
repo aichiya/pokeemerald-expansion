@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_lenen_bw_twin_birds_grp, voicegroup201
+        .equ    mus_lenen_bw_twin_birds_grp, voicegroup_common_main
         .equ    mus_lenen_bw_twin_birds_pri, 0
         .equ    mus_lenen_bw_twin_birds_mvl, 127
         .equ    mus_lenen_bw_twin_birds_rev, reverb_set+50

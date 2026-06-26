@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	se_m_classic_hyper_beam_grp, voicegroup900
+	.equ	se_m_classic_hyper_beam_grp, voicegroup_sfx_custom
 	.equ	se_m_classic_hyper_beam_pri, 4
 	.equ	se_m_classic_hyper_beam_rev, reverb_set+50
 	.equ	se_m_classic_hyper_beam_mvl, 127

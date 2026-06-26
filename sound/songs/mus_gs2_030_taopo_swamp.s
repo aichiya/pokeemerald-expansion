@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_030_taopo_swamp_grp, voicegroup601
+        .equ    mus_gs2_030_taopo_swamp_grp, voicegroup_golden_sun_2_main
         .equ    mus_gs2_030_taopo_swamp_pri, 0
         .equ    mus_gs2_030_taopo_swamp_rev, reverb_set+50
         .equ    mus_gs2_030_taopo_swamp_key, 0

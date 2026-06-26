@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_trc_revelation_grp, voicegroup835
+        .equ    mus_trc_revelation_grp, voicegroup_tsubasa_reservoir_chronicle
         .equ    mus_trc_revelation_pri, 0
         .equ    mus_trc_revelation_mvl, 90
         .equ    mus_trc_revelation_rev, reverb_set+50

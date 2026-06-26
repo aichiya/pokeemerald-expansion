@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gs2_038_crying_in_sorrow_grp, voicegroup601
+        .equ    mus_gs2_038_crying_in_sorrow_grp, voicegroup_golden_sun_2_main
         .equ    mus_gs2_038_crying_in_sorrow_pri, 0
         .equ    mus_gs2_038_crying_in_sorrow_rev, reverb_set+50
         .equ    mus_gs2_038_crying_in_sorrow_key, 0

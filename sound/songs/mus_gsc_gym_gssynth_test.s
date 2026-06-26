@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gsc_gym_gssynth_test_grp, voicegroup208
+        .equ    mus_gsc_gym_gssynth_test_grp, voicegroup_synth_experimental
         .equ    mus_gsc_gym_gssynth_test_pri, 0
         .equ    mus_gsc_gym_gssynth_test_mvl, 100
         .equ    mus_gsc_gym_gssynth_test_rev, reverb_set+50

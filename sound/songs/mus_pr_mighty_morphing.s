@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_pr_mighty_morphing_grp, voicegroup205
+        .equ    mus_pr_mighty_morphing_grp, voicegroup_custom_205_experimental
         .equ    mus_pr_mighty_morphing_pri, 0
         .equ    mus_pr_mighty_morphing_mvl, 100
         .equ    mus_pr_mighty_morphing_rev, reverb_set+50

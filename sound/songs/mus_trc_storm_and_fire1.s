@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_trc_storm_and_fire1_grp, voicegroup835
+        .equ    mus_trc_storm_and_fire1_grp, voicegroup_tsubasa_reservoir_chronicle
         .equ    mus_trc_storm_and_fire1_pri, 0
         .equ    mus_trc_storm_and_fire1_mvl, 80
         .equ    mus_trc_storm_and_fire1_rev, reverb_set+50

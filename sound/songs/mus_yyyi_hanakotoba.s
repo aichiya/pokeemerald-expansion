@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_yyyi_hanakotoba_grp, voicegroup201
+        .equ    mus_yyyi_hanakotoba_grp, voicegroup_common_main
         .equ    mus_yyyi_hanakotoba_pri, 0
         .equ    mus_yyyi_hanakotoba_mvl, 80
         .equ    mus_yyyi_hanakotoba_rev, reverb_set+50

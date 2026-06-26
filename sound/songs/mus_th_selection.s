@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_selection_grp, voicegroup201
+        .equ    mus_th_selection_grp, voicegroup_common_main
         .equ    mus_th_selection_pri, 0
         .equ    mus_th_selection_mvl, 100
         .equ    mus_th_selection_rev, reverb_set+50

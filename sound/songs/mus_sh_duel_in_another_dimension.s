@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_sh_duel_in_another_dimension_grp, voicegroup827
+        .equ    mus_sh_duel_in_another_dimension_grp, voicegroup_common_main_2
         .equ    mus_sh_duel_in_another_dimension_pri, 0
         .equ    mus_sh_duel_in_another_dimension_mvl, 90
         .equ    mus_sh_duel_in_another_dimension_rev, reverb_set+50

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_th_futo_tojiko_miko_grp, voicegroup802
+        .equ    mus_th_futo_tojiko_miko_grp, voicegroup_rafinia_custom
         .equ    mus_th_futo_tojiko_miko_pri, 0
         .equ    mus_th_futo_tojiko_miko_mvl, 100
         .equ    mus_th_futo_tojiko_miko_rev, reverb_set+50

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_pkmn_mst_pokemon_center_grp, voicegroup827
+        .equ    mus_pkmn_mst_pokemon_center_grp, voicegroup_common_main_2
         .equ    mus_pkmn_mst_pokemon_center_pri, 0
 	.equ	mus_pkmn_mst_pokemon_center_mvl, 70
         .equ    mus_pkmn_mst_pokemon_center_rev, reverb_set+50

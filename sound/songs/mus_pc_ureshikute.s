@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_pc_ureshikute_grp, voicegroup201
+        .equ    mus_pc_ureshikute_grp, voicegroup_common_main
         .equ    mus_pc_ureshikute_pri, 0
         .equ    mus_pc_ureshikute_rev, reverb_set+50
         .equ    mus_pc_ureshikute_key, 0

@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_puyo_fever2_funderworld_grp, voicegroup201
+	.equ	mus_puyo_fever2_funderworld_grp, voicegroup_common_main
 	.equ	mus_puyo_fever2_funderworld_pri, 0
 	.equ	mus_puyo_fever2_funderworld_rev, reverb_set+50
 	.equ	mus_puyo_fever2_funderworld_mvl, 95

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_my_heart_grp, voicegroup827
+        .equ    mus_etc_my_heart_grp, voicegroup_common_main_2
         .equ    mus_etc_my_heart_pri, 0
         .equ    mus_etc_my_heart_mvl, 90
         .equ    mus_etc_my_heart_rev, reverb_set+50

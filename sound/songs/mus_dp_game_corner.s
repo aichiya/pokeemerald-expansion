@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_dp_game_corner_grp, voicegroup203
+        .equ    mus_dp_game_corner_grp, voicegroup_dppt_custom_using_hgss_samples
         .equ    mus_dp_game_corner_pri, 0
         .equ    mus_dp_game_corner_rev, reverb_set+50
         .equ    mus_dp_game_corner_key, 0

@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_dgmn_world3_seabed_grp, voicegroup829
+        .equ    mus_dgmn_world3_seabed_grp, voicegroup_dgmn_world3_seabed
         .equ    mus_dgmn_world3_seabed_pri, 0
         .equ    mus_dgmn_world3_seabed_mvl, 100
         .equ    mus_dgmn_world3_seabed_rev, reverb_set+50

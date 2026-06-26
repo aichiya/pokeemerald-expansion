@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_negeri_di_awan_grp, voicegroup827
+        .equ    mus_etc_negeri_di_awan_grp, voicegroup_common_main_2
         .equ    mus_etc_negeri_di_awan_pri, 0
         .equ    mus_etc_negeri_di_awan_mvl, 70
         .equ    mus_etc_negeri_di_awan_rev, reverb_set+50

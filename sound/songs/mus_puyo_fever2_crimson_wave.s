@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_puyo_fever2_crimson_wave_grp, voicegroup201
+	.equ	mus_puyo_fever2_crimson_wave_grp, voicegroup_common_main
 	.equ	mus_puyo_fever2_crimson_wave_pri, 0
 	.equ	mus_puyo_fever2_crimson_wave_rev, reverb_set+50
 	.equ	mus_puyo_fever2_crimson_wave_mvl, 100

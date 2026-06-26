@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_pkmn_lgpe_vs_trainer_grp, voicegroup836
+        .equ    mus_pkmn_lgpe_vs_trainer_grp, voicegroup_lgpe_vs_trainer
         .equ    mus_pkmn_lgpe_vs_trainer_pri, 0
         .equ    mus_pkmn_lgpe_vs_trainer_mvl, 90
         .equ    mus_pkmn_lgpe_vs_trainer_rev, reverb_set+50

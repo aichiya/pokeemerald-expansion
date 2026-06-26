@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_fate_bb_channel_grp, voicegroup827
+        .equ    mus_fate_bb_channel_grp, voicegroup_common_main_2
         .equ    mus_fate_bb_channel_pri, 0
         .equ    mus_fate_bb_channel_mvl, 110
         .equ    mus_fate_bb_channel_rev, reverb_set+50

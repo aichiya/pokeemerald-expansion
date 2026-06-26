@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_etc_kawaranaimono_grp, voicegroup201
+        .equ    mus_etc_kawaranaimono_grp, voicegroup_common_main
         .equ    mus_etc_kawaranaimono_pri, 0
         .equ    mus_etc_kawaranaimono_mvl, 100
         .equ    mus_etc_kawaranaimono_rev, reverb_set+50

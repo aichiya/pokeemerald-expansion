@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	mus_thppawl_ancienttemple_grp, voicegroup201
+	.equ	mus_thppawl_ancienttemple_grp, voicegroup_common_main
 	.equ	mus_thppawl_ancienttemple_pri, 0
 	.equ	mus_thppawl_ancienttemple_rev, reverb_set+50
 	.equ	mus_thppawl_ancienttemple_mvl, 112

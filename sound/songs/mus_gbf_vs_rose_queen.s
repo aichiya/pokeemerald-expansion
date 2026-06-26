@@ -1,6 +1,6 @@
         .include "MPlayDef.s"
 
-        .equ    mus_gbf_vs_rose_queen_grp, voicegroup205
+        .equ    mus_gbf_vs_rose_queen_grp, voicegroup_custom_205_experimental
         .equ    mus_gbf_vs_rose_queen_pri, 0
         .equ    mus_gbf_vs_rose_queen_rev, reverb_set+50
         .equ    mus_gbf_vs_rose_queen_key, 0

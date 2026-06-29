@@ -2295,3 +2295,5 @@ const u8 gText_AntiWorldMarkEmoji[] = _("{COLOR}{BLUE}{SHADOW}{DYNAMIC_COLOR2}{E
 const u8 gText_ForestFront[] = _("Forest Front");
 const u8 gText_PkmnBecameWeaker[] = _("{STR_VAR_1} became weaker!{PAUSE_UNTIL_PRESS}");
 const u8 gText_CategoryWorld[POKEMON_NAME_LENGTH + 1] = _("World");
+const u8 gText_ThreeMarks[] = _("???");
+const u8 gText_FourMarks[] = _("????");

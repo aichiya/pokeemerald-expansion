@@ -3266,5 +3266,7 @@ extern const u8 gText_AntiWorldMarkEmoji[];
 extern const u8 gText_ForestFront[];
 extern const u8 gText_PkmnBecameWeaker[];
 extern const u8 gText_CategoryWorld[];
+extern const u8 gText_ThreeMarks[];
+extern const u8 gText_FourMarks[];
 
 #endif // GUARD_STRINGS_H

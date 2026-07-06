@@ -1403,7 +1403,7 @@ gSongTable::
 	song mus_etc_my_heart, MUSIC_PLAYER_BGM, 0
 	song mus_sh_duel_in_another_dimension, MUSIC_PLAYER_BGM, 0
 	song mus_etc_bintang_kehidupan, MUSIC_PLAYER_BGM, 0
-	song dummy_song_header, MUSIC_PLAYER_BGM, 0
+	song mus_etc_x_vs_z, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0

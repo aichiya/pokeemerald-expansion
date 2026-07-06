@@ -5875,7 +5875,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_ETC_MY_HEART) \
     X(MUS_SH_DUEL_IN_ANOTHER_DIMENSION) \
     X(MUS_ETC_BINTANG_KEHIDUPAN) \
-    X(MUS_DUMMY_1397) \
+    X(MUS_ETC_X_VS_Z) \
     X(MUS_DUMMY_1398) \
     X(MUS_DUMMY_1399) \
     X(MUS_DUMMY_1400) \

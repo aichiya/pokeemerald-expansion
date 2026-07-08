@@ -926,7 +926,7 @@ gSongTable::
 	song mus_thppawl_cascetofstar, MUSIC_PLAYER_BGM, 0
 	song mus_thppawl_plasticmind, MUSIC_PLAYER_BGM, 0
 	song mus_thppawl_extendash, MUSIC_PLAYER_BGM, 0
-	song mus_thppawl_ancienttemple 0, 0
+	song mus_thppawl_ancienttemple MUSIC_PLAYER_BGM, 0
 	song mus_thppawl_kagome, MUSIC_PLAYER_BGM, 0
 	song mus_thpprf_maidencapriccio_a, MUSIC_PLAYER_BGM, 0
 	song mus_thpprf_trueadministrator, MUSIC_PLAYER_BGM, 0
@@ -1634,9 +1634,9 @@ gSongTable::
 	song mus_sny_mikuru, MUSIC_PLAYER_BGM, 0
 	song mus_fate_hakuno_fatal_battle, MUSIC_PLAYER_BGM, 0
 	song mus_hi3_rubia, MUSIC_PLAYER_BGM, 0
-	song mus_omori_worlds_end_valentine 0, 0
+	song mus_omori_worlds_end_valentine MUSIC_PLAYER_BGM, 0
 	song mus_bghs_believe, MUSIC_PLAYER_BGM, 0
-	song mus_pkmn_xd_vs_cipher_peon 0, 0
+	song mus_pkmn_xd_vs_cipher_peon MUSIC_PLAYER_BGM, 0
 	song mus_lenen_bw_twin_birds, MUSIC_PLAYER_BGM, 0
 	song mus_bw_vs_wild, MUSIC_PLAYER_BGM, 0
 	song mus_vcid_triple_baka, MUSIC_PLAYER_BGM, 0

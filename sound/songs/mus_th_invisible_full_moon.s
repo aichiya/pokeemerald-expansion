@@ -5,14 +5,17 @@
         .equ    mus_th_invisible_full_moon_mvl, 90
         .equ    mus_th_invisible_full_moon_rev, reverb_set+50
         .equ    mus_th_invisible_full_moon_key, 0
+		.equ	mus_th_invisible_full_moon_tbs, 1
+		.equ	mus_th_invisible_full_moon_exg, 0
+		.equ	mus_th_invisible_full_moon_cmp, 1
 
         .section .rodata
         .global mus_th_invisible_full_moon
         .align  2
 
-@****************** Track 0 (Midi-Chn.0) ******************@
+@****************** Track 1 (Midi-Chn.0) ******************@
 
-mus_th_invisible_full_moon_0:
+mus_th_invisible_full_moon_1:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte   TEMPO , 160/2
@@ -25,7 +28,7 @@ mus_th_invisible_full_moon_0:
         .byte                   Fn4
         .byte   W12
 @ 001   ----------------------------------------
-mus_th_invisible_full_moon_0_1:
+mus_th_invisible_full_moon_1_1:
         .byte           N12   , Gn4 , v100
         .byte   W12
         .byte                   Gs4
@@ -44,7 +47,7 @@ mus_th_invisible_full_moon_0_1:
         .byte   W12
         .byte   PEND
 @ 002   ----------------------------------------
-mus_th_invisible_full_moon_0_2:
+mus_th_invisible_full_moon_1_2:
         .byte           N12   , Gs3 , v100
         .byte   W12
         .byte                   Fn4
@@ -63,7 +66,7 @@ mus_th_invisible_full_moon_0_2:
         .byte   W12
         .byte   PEND
 @ 003   ----------------------------------------
-mus_th_invisible_full_moon_0_3:
+mus_th_invisible_full_moon_1_3:
         .byte           N12   , En4 , v100
         .byte   W12
         .byte                   Cn5
@@ -82,7 +85,7 @@ mus_th_invisible_full_moon_0_3:
         .byte   W12
         .byte   PEND
 @ 004   ----------------------------------------
-mus_th_invisible_full_moon_0_4:
+mus_th_invisible_full_moon_1_4:
         .byte           N12   , Gs4 , v100
         .byte   W12
         .byte                   An4
@@ -101,7 +104,7 @@ mus_th_invisible_full_moon_0_4:
         .byte   W12
         .byte   PEND
 @ 005   ----------------------------------------
-mus_th_invisible_full_moon_0_5:
+mus_th_invisible_full_moon_1_5:
         .byte           N12   , An3 , v100
         .byte   W12
         .byte                   Fs4
@@ -120,7 +123,7 @@ mus_th_invisible_full_moon_0_5:
         .byte   W12
         .byte   PEND
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_0_LOOP:
+mus_th_invisible_full_moon_1_LOOP:
         .byte           N12   , Cn4 , v100
         .byte   W12
         .byte                   Cn5
@@ -139,21 +142,21 @@ mus_th_invisible_full_moon_0_LOOP:
         .byte   W12
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_1
+         .word  mus_th_invisible_full_moon_1_1
 @ 008   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_2
+         .word  mus_th_invisible_full_moon_1_2
 @ 009   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_3
+         .word  mus_th_invisible_full_moon_1_3
 @ 010   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_4
+         .word  mus_th_invisible_full_moon_1_4
 @ 011   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_5
+         .word  mus_th_invisible_full_moon_1_5
 @ 012   ----------------------------------------
-mus_th_invisible_full_moon_0_12:
+mus_th_invisible_full_moon_1_12:
         .byte           N12   , Cn4 , v100
         .byte   W12
         .byte                   Cn5
@@ -173,19 +176,19 @@ mus_th_invisible_full_moon_0_12:
         .byte   PEND
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_1
+         .word  mus_th_invisible_full_moon_1_1
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_2
+         .word  mus_th_invisible_full_moon_1_2
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_3
+         .word  mus_th_invisible_full_moon_1_3
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_4
+         .word  mus_th_invisible_full_moon_1_4
 @ 017   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_5
+         .word  mus_th_invisible_full_moon_1_5
 @ 018   ----------------------------------------
         .byte           N12   , Cn4 , v100
         .byte   W12
@@ -552,7 +555,7 @@ mus_th_invisible_full_moon_0_12:
         .byte                   En4
         .byte   W12
 @ 060   ----------------------------------------
-mus_th_invisible_full_moon_0_60:
+mus_th_invisible_full_moon_1_60:
         .byte           N12   , Bn3 , v100
         .byte   W12
         .byte                   Gn4
@@ -571,7 +574,7 @@ mus_th_invisible_full_moon_0_60:
         .byte   W12
         .byte   PEND
 @ 061   ----------------------------------------
-mus_th_invisible_full_moon_0_61:
+mus_th_invisible_full_moon_1_61:
         .byte           N12   , As4 , v100
         .byte   W12
         .byte                   Bn4
@@ -590,7 +593,7 @@ mus_th_invisible_full_moon_0_61:
         .byte   W12
         .byte   PEND
 @ 062   ----------------------------------------
-mus_th_invisible_full_moon_0_62:
+mus_th_invisible_full_moon_1_62:
         .byte           N12   , Bn3 , v100
         .byte   W12
         .byte                   Gs4
@@ -609,7 +612,7 @@ mus_th_invisible_full_moon_0_62:
         .byte   W12
         .byte   PEND
 @ 063   ----------------------------------------
-mus_th_invisible_full_moon_0_63:
+mus_th_invisible_full_moon_1_63:
         .byte           N12   , Cn4 , v100
         .byte   W12
         .byte                   Gs4
@@ -628,7 +631,7 @@ mus_th_invisible_full_moon_0_63:
         .byte   W12
         .byte   PEND
 @ 064   ----------------------------------------
-mus_th_invisible_full_moon_0_64:
+mus_th_invisible_full_moon_1_64:
         .byte           N12   , En4 , v100
         .byte   W12
         .byte                   Fs4
@@ -665,19 +668,19 @@ mus_th_invisible_full_moon_0_64:
         .byte   W12
 @ 066   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_60
+         .word  mus_th_invisible_full_moon_1_60
 @ 067   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_61
+         .word  mus_th_invisible_full_moon_1_61
 @ 068   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_62
+         .word  mus_th_invisible_full_moon_1_62
 @ 069   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_63
+         .word  mus_th_invisible_full_moon_1_63
 @ 070   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_64
+         .word  mus_th_invisible_full_moon_1_64
 @ 071   ----------------------------------------
         .byte           N12   , Bn3 , v100
         .byte   W12
@@ -720,7 +723,7 @@ mus_th_invisible_full_moon_0_64:
         .byte                   Fn4
         .byte   W12
 @ 078   ----------------------------------------
-mus_th_invisible_full_moon_0_78:
+mus_th_invisible_full_moon_1_78:
         .byte           N12   , Cn4 , v100
         .byte   W12
         .byte                   Gs4
@@ -739,7 +742,7 @@ mus_th_invisible_full_moon_0_78:
         .byte   W12
         .byte   PEND
 @ 079   ----------------------------------------
-mus_th_invisible_full_moon_0_79:
+mus_th_invisible_full_moon_1_79:
         .byte           N12   , Bn4 , v100
         .byte   W12
         .byte                   Cn5
@@ -758,7 +761,7 @@ mus_th_invisible_full_moon_0_79:
         .byte   W12
         .byte   PEND
 @ 080   ----------------------------------------
-mus_th_invisible_full_moon_0_80:
+mus_th_invisible_full_moon_1_80:
         .byte           N12   , Cn4 , v100
         .byte   W12
         .byte                   An4
@@ -777,7 +780,7 @@ mus_th_invisible_full_moon_0_80:
         .byte   W12
         .byte   PEND
 @ 081   ----------------------------------------
-mus_th_invisible_full_moon_0_81:
+mus_th_invisible_full_moon_1_81:
         .byte           N12   , Cs4 , v100
         .byte   W12
         .byte                   An4
@@ -805,12 +808,12 @@ mus_th_invisible_full_moon_0_81:
         .byte                   En4
         .byte   W12
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_0_LOOP
+         .word  mus_th_invisible_full_moon_1_LOOP
         .byte   FINE
 
-@****************** Track 1 (Midi-Chn.1) ******************@
+@****************** Track 2 (Midi-Chn.1) ******************@
 
-mus_th_invisible_full_moon_1:
+mus_th_invisible_full_moon_2:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 52 @ Voice Ahhs
@@ -828,7 +831,7 @@ mus_th_invisible_full_moon_1:
 @ 005   ----------------------------------------
         .byte   W96
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_1_LOOP:
+mus_th_invisible_full_moon_2_LOOP:
         .byte   W96
 @ 007   ----------------------------------------
         .byte   W96
@@ -1018,12 +1021,12 @@ mus_th_invisible_full_moon_1_LOOP:
 @ 082   ----------------------------------------
         .byte   W48
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_1_LOOP
+         .word  mus_th_invisible_full_moon_2_LOOP
         .byte   FINE
 
-@****************** Track 2 (Midi-Chn.2) ******************@
+@****************** Track 3 (Midi-Chn.2) ******************@
 
-mus_th_invisible_full_moon_2:
+mus_th_invisible_full_moon_3:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 48 @ Strings
@@ -1046,7 +1049,7 @@ mus_th_invisible_full_moon_2:
         .byte           TIE   , En3
         .byte   W72
 @ 003   ----------------------------------------
-mus_th_invisible_full_moon_2_3:
+mus_th_invisible_full_moon_3_3:
         .byte   W72
         .byte           EOT   , En3
         .byte                   An2
@@ -1059,7 +1062,7 @@ mus_th_invisible_full_moon_2_3:
 @ 004   ----------------------------------------
         .byte   W96
 @ 005   ----------------------------------------
-mus_th_invisible_full_moon_2_5:
+mus_th_invisible_full_moon_3_5:
         .byte   W24
         .byte           EOT   , Fs2
         .byte                   Cs3
@@ -1071,7 +1074,7 @@ mus_th_invisible_full_moon_2_5:
         .byte   W72
         .byte   PEND
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_2_LOOP:
+mus_th_invisible_full_moon_3_LOOP:
         .byte   W72
         .byte           EOT   , En2
         .byte                   Cn3
@@ -1084,7 +1087,7 @@ mus_th_invisible_full_moon_2_LOOP:
 @ 007   ----------------------------------------
         .byte   W96
 @ 008   ----------------------------------------
-mus_th_invisible_full_moon_2_8:
+mus_th_invisible_full_moon_3_8:
         .byte   W24
         .byte           EOT   , Cn3
         .byte                   Fn2
@@ -1096,12 +1099,12 @@ mus_th_invisible_full_moon_2_8:
         .byte   PEND
 @ 009   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_3
+         .word  mus_th_invisible_full_moon_3_3
 @ 010   ----------------------------------------
         .byte   W96
 @ 011   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_5
+         .word  mus_th_invisible_full_moon_3_5
 @ 012   ----------------------------------------
         .byte   W72
         .byte           EOT   , En2
@@ -1116,15 +1119,15 @@ mus_th_invisible_full_moon_2_8:
         .byte   W96
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_8
+         .word  mus_th_invisible_full_moon_3_8
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_3
+         .word  mus_th_invisible_full_moon_3_3
 @ 016   ----------------------------------------
         .byte   W96
 @ 017   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_5
+         .word  mus_th_invisible_full_moon_3_5
 @ 018   ----------------------------------------
         .byte   W72
         .byte           EOT   , En2
@@ -1183,7 +1186,7 @@ mus_th_invisible_full_moon_2_8:
 @ 043   ----------------------------------------
         .byte   W96
 @ 044   ----------------------------------------
-mus_th_invisible_full_moon_2_44:
+mus_th_invisible_full_moon_3_44:
         .byte   W24
         .byte           N48   , An2 , v100
         .byte           N48   , Fs2
@@ -1195,7 +1198,7 @@ mus_th_invisible_full_moon_2_44:
         .byte   W24
         .byte   PEND
 @ 045   ----------------------------------------
-mus_th_invisible_full_moon_2_45:
+mus_th_invisible_full_moon_3_45:
         .byte   W24
         .byte           N96   , Cs3 , v100
         .byte           N96   , An2
@@ -1204,16 +1207,16 @@ mus_th_invisible_full_moon_2_45:
         .byte   PEND
 @ 046   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_44
+         .word  mus_th_invisible_full_moon_3_44
 @ 047   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_45
+         .word  mus_th_invisible_full_moon_3_45
 @ 048   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_44
+         .word  mus_th_invisible_full_moon_3_44
 @ 049   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_45
+         .word  mus_th_invisible_full_moon_3_45
 @ 050   ----------------------------------------
         .byte   W24
         .byte           N48   , Dn2 , v100
@@ -1231,7 +1234,7 @@ mus_th_invisible_full_moon_2_45:
         .byte           N84   , Cs3
         .byte   W72
 @ 052   ----------------------------------------
-mus_th_invisible_full_moon_2_52:
+mus_th_invisible_full_moon_3_52:
         .byte   W24
         .byte           N48   , Dn2 , v100
         .byte           N48   , Fs2
@@ -1243,7 +1246,7 @@ mus_th_invisible_full_moon_2_52:
         .byte   W24
         .byte   PEND
 @ 053   ----------------------------------------
-mus_th_invisible_full_moon_2_53:
+mus_th_invisible_full_moon_3_53:
         .byte   W24
         .byte           N96   , Fs2 , v100
         .byte           N96   , An2
@@ -1252,19 +1255,19 @@ mus_th_invisible_full_moon_2_53:
         .byte   PEND
 @ 054   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_52
+         .word  mus_th_invisible_full_moon_3_52
 @ 055   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_53
+         .word  mus_th_invisible_full_moon_3_53
 @ 056   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_52
+         .word  mus_th_invisible_full_moon_3_52
 @ 057   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_53
+         .word  mus_th_invisible_full_moon_3_53
 @ 058   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_52
+         .word  mus_th_invisible_full_moon_3_52
 @ 059   ----------------------------------------
         .byte   W24
         .byte           TIE   , Gn2 , v100
@@ -1272,7 +1275,7 @@ mus_th_invisible_full_moon_2_53:
         .byte           TIE   , Bn2
         .byte   W72
 @ 060   ----------------------------------------
-mus_th_invisible_full_moon_2_60:
+mus_th_invisible_full_moon_3_60:
         .byte   W72
         .byte           EOT   , Bn2
         .byte                   En2
@@ -1285,7 +1288,7 @@ mus_th_invisible_full_moon_2_60:
 @ 061   ----------------------------------------
         .byte   W96
 @ 062   ----------------------------------------
-mus_th_invisible_full_moon_2_62:
+mus_th_invisible_full_moon_3_62:
         .byte   W24
         .byte           EOT   , Ds3
         .byte                   Gs2
@@ -1296,7 +1299,7 @@ mus_th_invisible_full_moon_2_62:
         .byte   W72
         .byte   PEND
 @ 063   ----------------------------------------
-mus_th_invisible_full_moon_2_63:
+mus_th_invisible_full_moon_3_63:
         .byte   W72
         .byte           EOT   , Fn2
         .byte                   Cn3
@@ -1321,15 +1324,15 @@ mus_th_invisible_full_moon_2_63:
         .byte   W72
 @ 066   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_60
+         .word  mus_th_invisible_full_moon_3_60
 @ 067   ----------------------------------------
         .byte   W96
 @ 068   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_62
+         .word  mus_th_invisible_full_moon_3_62
 @ 069   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_2_63
+         .word  mus_th_invisible_full_moon_3_63
 @ 070   ----------------------------------------
         .byte   W96
 @ 071   ----------------------------------------
@@ -1393,7 +1396,7 @@ mus_th_invisible_full_moon_2_63:
         .byte           TIE   , Cn3
         .byte   W72
 @ 078   ----------------------------------------
-mus_th_invisible_full_moon_2_78:
+mus_th_invisible_full_moon_3_78:
         .byte   W72
         .byte           EOT   , Cn3
         .byte                   Fn2
@@ -1406,7 +1409,7 @@ mus_th_invisible_full_moon_2_78:
 @ 079   ----------------------------------------
         .byte   W96
 @ 080   ----------------------------------------
-mus_th_invisible_full_moon_2_80:
+mus_th_invisible_full_moon_3_80:
         .byte   W24
         .byte           EOT   , En3
         .byte                   An2
@@ -1417,7 +1420,7 @@ mus_th_invisible_full_moon_2_80:
         .byte   W72
         .byte   PEND
 @ 081   ----------------------------------------
-mus_th_invisible_full_moon_2_81:
+mus_th_invisible_full_moon_3_81:
         .byte   W72
         .byte           EOT   , Fs2
         .byte                   Cs3
@@ -1431,12 +1434,12 @@ mus_th_invisible_full_moon_2_81:
 @ 082   ----------------------------------------
         .byte   W48
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_2_LOOP
+         .word  mus_th_invisible_full_moon_3_LOOP
         .byte   FINE
 
-@****************** Track 3 (Midi-Chn.3) ******************@
+@****************** Track 4 (Midi-Chn.3) ******************@
 
-mus_th_invisible_full_moon_3:
+mus_th_invisible_full_moon_4:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 38 @ Synth Bass
@@ -1641,7 +1644,7 @@ mus_th_invisible_full_moon_3:
         .byte           N06   , Gn2
         .byte   W06
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_3_LOOP:
+mus_th_invisible_full_moon_4_LOOP:
         .byte           N06   , En3 , v100
         .byte           N06   , Gn2
         .byte   W06
@@ -1695,7 +1698,7 @@ mus_th_invisible_full_moon_3_LOOP:
         .byte           N06   , Gs2
         .byte   W06
 @ 007   ----------------------------------------
-mus_th_invisible_full_moon_3_7:
+mus_th_invisible_full_moon_4_7:
         .byte           N06   , Fn3 , v100
         .byte           N06   , Gs2
         .byte   W06
@@ -1748,7 +1751,7 @@ mus_th_invisible_full_moon_3_7:
         .byte   W06
         .byte   PEND
 @ 008   ----------------------------------------
-mus_th_invisible_full_moon_3_8:
+mus_th_invisible_full_moon_4_8:
         .byte           N06   , Fn2 , v100
         .byte           N06   , Gs2
         .byte   W06
@@ -1801,7 +1804,7 @@ mus_th_invisible_full_moon_3_8:
         .byte   W06
         .byte   PEND
 @ 009   ----------------------------------------
-mus_th_invisible_full_moon_3_9:
+mus_th_invisible_full_moon_4_9:
         .byte           N06   , Cn3 , v100
         .byte           N06   , An3
         .byte   W06
@@ -1856,7 +1859,7 @@ mus_th_invisible_full_moon_3_9:
         .byte   W06
         .byte   PEND
 @ 010   ----------------------------------------
-mus_th_invisible_full_moon_3_10:
+mus_th_invisible_full_moon_4_10:
         .byte           N06   , An2 , v100
         .byte           N06   , Fs3
         .byte   W06
@@ -1909,7 +1912,7 @@ mus_th_invisible_full_moon_3_10:
         .byte   W06
         .byte   PEND
 @ 011   ----------------------------------------
-mus_th_invisible_full_moon_3_11:
+mus_th_invisible_full_moon_4_11:
         .byte           N06   , Fs2 , v100
         .byte           N06   , An2
         .byte   W06
@@ -2016,19 +2019,19 @@ mus_th_invisible_full_moon_3_11:
         .byte   W06
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_3_7
+         .word  mus_th_invisible_full_moon_4_7
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_3_8
+         .word  mus_th_invisible_full_moon_4_8
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_3_9
+         .word  mus_th_invisible_full_moon_4_9
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_3_10
+         .word  mus_th_invisible_full_moon_4_10
 @ 017   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_3_11
+         .word  mus_th_invisible_full_moon_4_11
 @ 018   ----------------------------------------
         .byte           N06   , En3 , v100
         .byte           N06   , Gn2
@@ -2177,7 +2180,7 @@ mus_th_invisible_full_moon_3_11:
         .byte           N12   , Cs3
         .byte   W12
 @ 023   ----------------------------------------
-mus_th_invisible_full_moon_3_23:
+mus_th_invisible_full_moon_4_23:
         .byte           N12   , Fn2 , v100
         .byte           N12   , Cs2
         .byte   W12
@@ -2717,7 +2720,7 @@ mus_th_invisible_full_moon_3_23:
         .byte                   En2
         .byte   W06
 @ 053   ----------------------------------------
-mus_th_invisible_full_moon_3_53:
+mus_th_invisible_full_moon_4_53:
         .byte           N06   , En2 , v100
         .byte   W06
         .byte                   Gs2
@@ -2752,7 +2755,7 @@ mus_th_invisible_full_moon_3_53:
         .byte   W06
         .byte   PEND
 @ 054   ----------------------------------------
-mus_th_invisible_full_moon_3_54:
+mus_th_invisible_full_moon_4_54:
         .byte           N06   , Fs2 , v100
         .byte   W06
         .byte                   Cs3
@@ -2854,10 +2857,10 @@ mus_th_invisible_full_moon_3_54:
         .byte   W06
 @ 057   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_3_53
+         .word  mus_th_invisible_full_moon_4_53
 @ 058   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_3_54
+         .word  mus_th_invisible_full_moon_4_54
 @ 059   ----------------------------------------
         .byte           N06   , Bn2 , v100
         .byte   W06
@@ -3040,7 +3043,7 @@ mus_th_invisible_full_moon_3_54:
         .byte           N06   , Fs2
         .byte   W06
 @ 064   ----------------------------------------
-mus_th_invisible_full_moon_3_64:
+mus_th_invisible_full_moon_4_64:
         .byte           N06   , Ds3 , v100
         .byte           N06   , Fs2
         .byte   W06
@@ -3353,7 +3356,7 @@ mus_th_invisible_full_moon_3_64:
         .byte   W06
 @ 070   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_3_64
+         .word  mus_th_invisible_full_moon_4_64
 @ 071   ----------------------------------------
         .byte           N06   , Ds2 , v100
         .byte           N06   , Fs2
@@ -3717,12 +3720,12 @@ mus_th_invisible_full_moon_3_64:
         .byte           N06   , Gn2
         .byte   W06
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_3_LOOP
+         .word  mus_th_invisible_full_moon_4_LOOP
         .byte   FINE
 
-@****************** Track 4 (Midi-Chn.4) ******************@
+@****************** Track 5 (Midi-Chn.4) ******************@
 
-mus_th_invisible_full_moon_4:
+mus_th_invisible_full_moon_5:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 0 @ Drum
@@ -3748,7 +3751,7 @@ mus_th_invisible_full_moon_4:
         .byte           N06   , Fs1
         .byte   W18
 @ 001   ----------------------------------------
-mus_th_invisible_full_moon_4_1:
+mus_th_invisible_full_moon_5_1:
         .byte           N06   , As1 , v095
         .byte   W12
         .byte                   Fs1 , v100
@@ -3786,7 +3789,7 @@ mus_th_invisible_full_moon_4_1:
         .byte   W06
         .byte   PEND
 @ 002   ----------------------------------------
-mus_th_invisible_full_moon_4_2:
+mus_th_invisible_full_moon_5_2:
         .byte           N06   , As1 , v095
         .byte   W06
         .byte                   Dn1 , v102
@@ -3824,7 +3827,7 @@ mus_th_invisible_full_moon_4_2:
         .byte   W06
         .byte   PEND
 @ 003   ----------------------------------------
-mus_th_invisible_full_moon_4_3:
+mus_th_invisible_full_moon_5_3:
         .byte           N06   , As1 , v095
         .byte           N12   , Cn1 , v100
         .byte   W12
@@ -3864,7 +3867,7 @@ mus_th_invisible_full_moon_4_3:
         .byte   W12
         .byte   PEND
 @ 004   ----------------------------------------
-mus_th_invisible_full_moon_4_4:
+mus_th_invisible_full_moon_5_4:
         .byte           N06   , As1 , v095
         .byte           N12   , Cn1 , v100
         .byte   W12
@@ -3903,7 +3906,7 @@ mus_th_invisible_full_moon_4_4:
         .byte   W06
         .byte   PEND
 @ 005   ----------------------------------------
-mus_th_invisible_full_moon_4_5:
+mus_th_invisible_full_moon_5_5:
         .byte           N06   , As1 , v095
         .byte   W06
         .byte                   Dn1 , v102
@@ -3942,7 +3945,7 @@ mus_th_invisible_full_moon_4_5:
         .byte   W06
         .byte   PEND
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_4_LOOP:
+mus_th_invisible_full_moon_5_LOOP:
         .byte           N06   , As1 , v095
         .byte           N12   , Cn1 , v100
         .byte   W06
@@ -3991,7 +3994,7 @@ mus_th_invisible_full_moon_4_LOOP:
         .byte           N12   , En1 , v097
         .byte   W12
 @ 007   ----------------------------------------
-mus_th_invisible_full_moon_4_7:
+mus_th_invisible_full_moon_5_7:
         .byte           N06   , Fs1 , v100
         .byte           N12   , Cn1
         .byte   W12
@@ -4032,7 +4035,7 @@ mus_th_invisible_full_moon_4_7:
         .byte   W06
         .byte   PEND
 @ 008   ----------------------------------------
-mus_th_invisible_full_moon_4_8:
+mus_th_invisible_full_moon_5_8:
         .byte           N06   , Fs1 , v100
         .byte           N12   , Cn1
         .byte   W06
@@ -4075,7 +4078,7 @@ mus_th_invisible_full_moon_4_8:
         .byte   W06
         .byte   PEND
 @ 009   ----------------------------------------
-mus_th_invisible_full_moon_4_9:
+mus_th_invisible_full_moon_5_9:
         .byte           N06   , Fs1 , v100
         .byte           N12   , Cn1
         .byte   W06
@@ -4120,9 +4123,9 @@ mus_th_invisible_full_moon_4_9:
         .byte   PEND
 @ 010   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_7
+         .word  mus_th_invisible_full_moon_5_7
 @ 011   ----------------------------------------
-mus_th_invisible_full_moon_4_11:
+mus_th_invisible_full_moon_5_11:
         .byte           N06   , Fs1 , v100
         .byte           N12   , Cn1
         .byte   W06
@@ -4208,16 +4211,16 @@ mus_th_invisible_full_moon_4_11:
         .byte   W12
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_7
+         .word  mus_th_invisible_full_moon_5_7
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_8
+         .word  mus_th_invisible_full_moon_5_8
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_9
+         .word  mus_th_invisible_full_moon_5_9
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_7
+         .word  mus_th_invisible_full_moon_5_7
 @ 017   ----------------------------------------
         .byte           N06   , Fs1 , v100
         .byte           N12   , Cn1
@@ -4522,12 +4525,12 @@ mus_th_invisible_full_moon_4_11:
         .byte   W12
 @ 025   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_7
+         .word  mus_th_invisible_full_moon_5_7
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_8
+         .word  mus_th_invisible_full_moon_5_8
 @ 027   ----------------------------------------
-mus_th_invisible_full_moon_4_27:
+mus_th_invisible_full_moon_5_27:
         .byte           N06   , Fs1 , v100
         .byte           N12   , Cn1
         .byte   W06
@@ -4573,10 +4576,10 @@ mus_th_invisible_full_moon_4_27:
         .byte   PEND
 @ 028   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_7
+         .word  mus_th_invisible_full_moon_5_7
 @ 029   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_8
+         .word  mus_th_invisible_full_moon_5_8
 @ 030   ----------------------------------------
         .byte           N06   , Fs1 , v100
         .byte           N12   , Cn1
@@ -4837,16 +4840,16 @@ mus_th_invisible_full_moon_4_27:
         .byte   W12
 @ 037   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_7
+         .word  mus_th_invisible_full_moon_5_7
 @ 038   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_8
+         .word  mus_th_invisible_full_moon_5_8
 @ 039   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_27
+         .word  mus_th_invisible_full_moon_5_27
 @ 040   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_7
+         .word  mus_th_invisible_full_moon_5_7
 @ 041   ----------------------------------------
         .byte           N06   , Fs1 , v100
         .byte           N12   , Cn1
@@ -5039,7 +5042,7 @@ mus_th_invisible_full_moon_4_27:
         .byte                   Dn1 , v102
         .byte   W06
 @ 053   ----------------------------------------
-mus_th_invisible_full_moon_4_53:
+mus_th_invisible_full_moon_5_53:
         .byte           N06   , Fs1 , v100
         .byte           N12   , Cn1
         .byte   W06
@@ -5087,16 +5090,16 @@ mus_th_invisible_full_moon_4_53:
         .byte   PEND
 @ 054   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_53
+         .word  mus_th_invisible_full_moon_5_53
 @ 055   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_53
+         .word  mus_th_invisible_full_moon_5_53
 @ 056   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_53
+         .word  mus_th_invisible_full_moon_5_53
 @ 057   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_53
+         .word  mus_th_invisible_full_moon_5_53
 @ 058   ----------------------------------------
         .byte           N06   , Fs1 , v100
         .byte           N12   , Cn1
@@ -5220,7 +5223,7 @@ mus_th_invisible_full_moon_4_53:
         .byte                   Dn1 , v102
         .byte   W06
 @ 060   ----------------------------------------
-mus_th_invisible_full_moon_4_60:
+mus_th_invisible_full_moon_5_60:
         .byte           N06   , As1 , v095
         .byte           N12   , Cn1 , v100
         .byte   W06
@@ -5262,7 +5265,7 @@ mus_th_invisible_full_moon_4_60:
         .byte   W18
         .byte   PEND
 @ 061   ----------------------------------------
-mus_th_invisible_full_moon_4_61:
+mus_th_invisible_full_moon_5_61:
         .byte           N06   , As1 , v095
         .byte           N12   , Cn1 , v100
         .byte   W12
@@ -5295,7 +5298,7 @@ mus_th_invisible_full_moon_4_61:
         .byte   W18
         .byte   PEND
 @ 062   ----------------------------------------
-mus_th_invisible_full_moon_4_62:
+mus_th_invisible_full_moon_5_62:
         .byte           N06   , As1 , v095
         .byte           N12   , En1 , v097
         .byte           N06   , Dn1 , v102
@@ -5337,7 +5340,7 @@ mus_th_invisible_full_moon_4_62:
         .byte   W06
         .byte   PEND
 @ 063   ----------------------------------------
-mus_th_invisible_full_moon_4_63:
+mus_th_invisible_full_moon_5_63:
         .byte           N06   , As1 , v095
         .byte           N12   , Cn1 , v100
         .byte   W06
@@ -5581,7 +5584,7 @@ mus_th_invisible_full_moon_4_63:
         .byte           N12   , Dn1 , v102
         .byte   W06
 @ 072   ----------------------------------------
-mus_th_invisible_full_moon_4_72:
+mus_th_invisible_full_moon_5_72:
         .byte           N12   , Cn1 , v097
         .byte           N06   , Fs1 , v100
         .byte   W06
@@ -5627,7 +5630,7 @@ mus_th_invisible_full_moon_4_72:
         .byte   W12
         .byte   PEND
 @ 073   ----------------------------------------
-mus_th_invisible_full_moon_4_73:
+mus_th_invisible_full_moon_5_73:
         .byte           N06   , Cn1 , v097
         .byte           N06   , Fs1 , v100
         .byte   W06
@@ -5717,7 +5720,7 @@ mus_th_invisible_full_moon_4_73:
         .byte   W06
 @ 075   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_72
+         .word  mus_th_invisible_full_moon_5_72
 @ 076   ----------------------------------------
         .byte           N06   , Cn1 , v097
         .byte           N06   , Fs1 , v100
@@ -5838,16 +5841,16 @@ mus_th_invisible_full_moon_4_73:
         .byte   W06
 @ 078   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_60
+         .word  mus_th_invisible_full_moon_5_60
 @ 079   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_61
+         .word  mus_th_invisible_full_moon_5_61
 @ 080   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_62
+         .word  mus_th_invisible_full_moon_5_62
 @ 081   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_4_63
+         .word  mus_th_invisible_full_moon_5_63
 @ 082   ----------------------------------------
         .byte           N06   , As1 , v095
         .byte           N12   , Dn1 , v102
@@ -5868,12 +5871,12 @@ mus_th_invisible_full_moon_4_73:
         .byte                   Dn1 , v102
         .byte   W06
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_4_LOOP
+         .word  mus_th_invisible_full_moon_5_LOOP
         .byte   FINE
 
-@****************** Track 5 (Midi-Chn.5) ******************@
+@****************** Track 6 (Midi-Chn.5) ******************@
 
-mus_th_invisible_full_moon_5:
+mus_th_invisible_full_moon_6:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 60 @ French Horn
@@ -5891,7 +5894,7 @@ mus_th_invisible_full_moon_5:
 @ 005   ----------------------------------------
         .byte   W96
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_5_LOOP:
+mus_th_invisible_full_moon_6_LOOP:
         .byte   W96
 @ 007   ----------------------------------------
         .byte   W96
@@ -5968,7 +5971,7 @@ mus_th_invisible_full_moon_5_LOOP:
 @ 043   ----------------------------------------
         .byte   W96
 @ 044   ----------------------------------------
-mus_th_invisible_full_moon_5_44:
+mus_th_invisible_full_moon_6_44:
         .byte   W24
         .byte           N24   , Fs4 , v100
         .byte   W24
@@ -5978,7 +5981,7 @@ mus_th_invisible_full_moon_5_44:
         .byte   W24
         .byte   PEND
 @ 045   ----------------------------------------
-mus_th_invisible_full_moon_5_45:
+mus_th_invisible_full_moon_6_45:
         .byte           N12   , Fs4 , v100
         .byte   W12
         .byte                   Gs4
@@ -5995,7 +5998,7 @@ mus_th_invisible_full_moon_5_45:
         .byte   W24
         .byte   PEND
 @ 046   ----------------------------------------
-mus_th_invisible_full_moon_5_46:
+mus_th_invisible_full_moon_6_46:
         .byte   W18
         .byte           N18   , Bn3 , v100
         .byte   W18
@@ -6011,7 +6014,7 @@ mus_th_invisible_full_moon_5_46:
         .byte   W12
         .byte   PEND
 @ 047   ----------------------------------------
-mus_th_invisible_full_moon_5_47:
+mus_th_invisible_full_moon_6_47:
         .byte           N12   , Gs3 , v100
         .byte   W12
         .byte           N24   , An3
@@ -6027,7 +6030,7 @@ mus_th_invisible_full_moon_5_47:
         .byte   PEND
 @ 048   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_5_44
+         .word  mus_th_invisible_full_moon_6_44
 @ 049   ----------------------------------------
         .byte           N12   , Fs4 , v100
         .byte   W12
@@ -6086,16 +6089,16 @@ mus_th_invisible_full_moon_5_47:
         .byte   W24
 @ 053   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_5_45
+         .word  mus_th_invisible_full_moon_6_45
 @ 054   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_5_46
+         .word  mus_th_invisible_full_moon_6_46
 @ 055   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_5_47
+         .word  mus_th_invisible_full_moon_6_47
 @ 056   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_5_44
+         .word  mus_th_invisible_full_moon_6_44
 @ 057   ----------------------------------------
         .byte           N12   , Fs4 , v100
         .byte   W12
@@ -6176,12 +6179,12 @@ mus_th_invisible_full_moon_5_47:
 @ 082   ----------------------------------------
         .byte   W48
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_5_LOOP
+         .word  mus_th_invisible_full_moon_6_LOOP
         .byte   FINE
 
-@****************** Track 6 (Midi-Chn.6) ******************@
+@****************** Track 7 (Midi-Chn.6) ******************@
 
-mus_th_invisible_full_moon_6:
+mus_th_invisible_full_moon_7:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 29 @ OD Guitar
@@ -6199,7 +6202,7 @@ mus_th_invisible_full_moon_6:
 @ 005   ----------------------------------------
         .byte   W96
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_6_LOOP:
+mus_th_invisible_full_moon_7_LOOP:
         .byte           N12   , Cn4 , v070
         .byte   W12
         .byte                   Cn5 , v075
@@ -6218,37 +6221,37 @@ mus_th_invisible_full_moon_6_LOOP:
         .byte   W12
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_1
+         .word  mus_th_invisible_full_moon_1_1
 @ 008   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_2
+         .word  mus_th_invisible_full_moon_1_2
 @ 009   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_3
+         .word  mus_th_invisible_full_moon_1_3
 @ 010   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_4
+         .word  mus_th_invisible_full_moon_1_4
 @ 011   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_5
+         .word  mus_th_invisible_full_moon_1_5
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_12
+         .word  mus_th_invisible_full_moon_1_12
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_1
+         .word  mus_th_invisible_full_moon_1_1
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_2
+         .word  mus_th_invisible_full_moon_1_2
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_3
+         .word  mus_th_invisible_full_moon_1_3
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_4
+         .word  mus_th_invisible_full_moon_1_4
 @ 017   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_0_5
+         .word  mus_th_invisible_full_moon_1_5
 @ 018   ----------------------------------------
         .byte           N12   , Cn4 , v100
         .byte   W12
@@ -6319,7 +6322,7 @@ mus_th_invisible_full_moon_6_LOOP:
         .byte           N12   , Cs2
         .byte   W12
 @ 044   ----------------------------------------
-mus_th_invisible_full_moon_6_44:
+mus_th_invisible_full_moon_7_44:
         .byte           N24   , Cs2 , v092
         .byte   W24
         .byte                   Dn2
@@ -6330,7 +6333,7 @@ mus_th_invisible_full_moon_6_44:
         .byte   W12
         .byte   PEND
 @ 045   ----------------------------------------
-mus_th_invisible_full_moon_6_45:
+mus_th_invisible_full_moon_7_45:
         .byte           N24   , En2 , v092
         .byte   W24
         .byte                   Fs2
@@ -6341,7 +6344,7 @@ mus_th_invisible_full_moon_6_45:
         .byte   W12
         .byte   PEND
 @ 046   ----------------------------------------
-mus_th_invisible_full_moon_6_46:
+mus_th_invisible_full_moon_7_46:
         .byte           N24   , Fs2 , v092
         .byte   W24
         .byte                   Dn2
@@ -6362,13 +6365,13 @@ mus_th_invisible_full_moon_6_46:
         .byte   W12
 @ 048   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_6_44
+         .word  mus_th_invisible_full_moon_7_44
 @ 049   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_6_45
+         .word  mus_th_invisible_full_moon_7_45
 @ 050   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_6_46
+         .word  mus_th_invisible_full_moon_7_46
 @ 051   ----------------------------------------
         .byte           N24   , En2 , v092
         .byte   W24
@@ -6441,12 +6444,12 @@ mus_th_invisible_full_moon_6_46:
 @ 082   ----------------------------------------
         .byte   W48
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_6_LOOP
+         .word  mus_th_invisible_full_moon_7_LOOP
         .byte   FINE
 
-@****************** Track 7 (Midi-Chn.7) ******************@
+@****************** Track 8 (Midi-Chn.7) ******************@
 
-mus_th_invisible_full_moon_7:
+mus_th_invisible_full_moon_8:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 88 @ GB Wave
@@ -6464,7 +6467,7 @@ mus_th_invisible_full_moon_7:
 @ 005   ----------------------------------------
         .byte   W96
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_7_LOOP:
+mus_th_invisible_full_moon_8_LOOP:
         .byte   W96
 @ 007   ----------------------------------------
         .byte   W96
@@ -6565,7 +6568,7 @@ mus_th_invisible_full_moon_7_LOOP:
         .byte                   En2
         .byte   W24
 @ 053   ----------------------------------------
-mus_th_invisible_full_moon_7_53:
+mus_th_invisible_full_moon_8_53:
         .byte           N24   , En2 , v100
         .byte   W24
         .byte                   Fs2
@@ -6576,7 +6579,7 @@ mus_th_invisible_full_moon_7_53:
         .byte   W12
         .byte   PEND
 @ 054   ----------------------------------------
-mus_th_invisible_full_moon_7_54:
+mus_th_invisible_full_moon_8_54:
         .byte           N24   , Fs2 , v100
         .byte   W24
         .byte                   Dn2
@@ -6606,10 +6609,10 @@ mus_th_invisible_full_moon_7_54:
         .byte   W24
 @ 057   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_7_53
+         .word  mus_th_invisible_full_moon_8_53
 @ 058   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_7_54
+         .word  mus_th_invisible_full_moon_8_54
 @ 059   ----------------------------------------
         .byte           N24   , En2 , v100
         .byte   W24
@@ -6629,7 +6632,7 @@ mus_th_invisible_full_moon_7_54:
         .byte           N12   , En1 , v080
         .byte   W12
 @ 060   ----------------------------------------
-mus_th_invisible_full_moon_7_60:
+mus_th_invisible_full_moon_8_60:
         .byte           N12   , En2 , v090
         .byte           N12   , En1 , v080
         .byte   W12
@@ -6653,7 +6656,7 @@ mus_th_invisible_full_moon_7_60:
         .byte   W12
         .byte   PEND
 @ 061   ----------------------------------------
-mus_th_invisible_full_moon_7_61:
+mus_th_invisible_full_moon_8_61:
         .byte           N12   , Gs2 , v090
         .byte           N12   , Gs1 , v080
         .byte   W12
@@ -6674,7 +6677,7 @@ mus_th_invisible_full_moon_7_61:
         .byte   W12
         .byte   PEND
 @ 062   ----------------------------------------
-mus_th_invisible_full_moon_7_62:
+mus_th_invisible_full_moon_8_62:
         .byte           N12   , Gs2 , v090
         .byte           N12   , Gs1 , v080
         .byte   W12
@@ -6698,7 +6701,7 @@ mus_th_invisible_full_moon_7_62:
         .byte   W12
         .byte   PEND
 @ 063   ----------------------------------------
-mus_th_invisible_full_moon_7_63:
+mus_th_invisible_full_moon_8_63:
         .byte           N12   , Fn2 , v090
         .byte           N12   , Fn1 , v080
         .byte   W12
@@ -6722,7 +6725,7 @@ mus_th_invisible_full_moon_7_63:
         .byte   W12
         .byte   PEND
 @ 064   ----------------------------------------
-mus_th_invisible_full_moon_7_64:
+mus_th_invisible_full_moon_8_64:
         .byte           N12   , Ds2 , v090
         .byte           N12   , Ds1 , v080
         .byte   W12
@@ -6766,19 +6769,19 @@ mus_th_invisible_full_moon_7_64:
         .byte   W12
 @ 066   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_7_60
+         .word  mus_th_invisible_full_moon_8_60
 @ 067   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_7_61
+         .word  mus_th_invisible_full_moon_8_61
 @ 068   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_7_62
+         .word  mus_th_invisible_full_moon_8_62
 @ 069   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_7_63
+         .word  mus_th_invisible_full_moon_8_63
 @ 070   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_7_64
+         .word  mus_th_invisible_full_moon_8_64
 @ 071   ----------------------------------------
         .byte           N12   , Ds2 , v090
         .byte           N12   , Ds1 , v080
@@ -6809,12 +6812,12 @@ mus_th_invisible_full_moon_7_64:
 @ 082   ----------------------------------------
         .byte   W48
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_7_LOOP
+         .word  mus_th_invisible_full_moon_8_LOOP
         .byte   FINE
 
-@****************** Track 8 (Midi-Chn.8) ******************@
+@****************** Track 9 (Midi-Chn.8) ******************@
 
-mus_th_invisible_full_moon_8:
+mus_th_invisible_full_moon_9:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 48 @ Strings
@@ -6833,7 +6836,7 @@ mus_th_invisible_full_moon_8:
 @ 005   ----------------------------------------
         .byte   W96
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_8_LOOP:
+mus_th_invisible_full_moon_9_LOOP:
         .byte   W96
 @ 007   ----------------------------------------
         .byte   W96
@@ -7465,12 +7468,12 @@ mus_th_invisible_full_moon_8_LOOP:
 @ 082   ----------------------------------------
         .byte   W48
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_8_LOOP
+         .word  mus_th_invisible_full_moon_9_LOOP
         .byte   FINE
 
-@***************** Track 9 (Midi-Chn.10) ******************@
+@***************** Track 10 (Midi-Chn.10) ******************@
 
-mus_th_invisible_full_moon_9:
+mus_th_invisible_full_moon_10:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 17 @ Organ
@@ -7489,7 +7492,7 @@ mus_th_invisible_full_moon_9:
 @ 005   ----------------------------------------
         .byte   W96
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_9_LOOP:
+mus_th_invisible_full_moon_10_LOOP:
         .byte   W96
 @ 007   ----------------------------------------
         .byte   W96
@@ -7574,7 +7577,7 @@ mus_th_invisible_full_moon_9_LOOP:
 @ 047   ----------------------------------------
         .byte   W96
 @ 048   ----------------------------------------
-mus_th_invisible_full_moon_9_48:
+mus_th_invisible_full_moon_10_48:
         .byte   W24
         .byte           N24   , An3 , v100
         .byte   W24
@@ -7584,7 +7587,7 @@ mus_th_invisible_full_moon_9_48:
         .byte   W24
         .byte   PEND
 @ 049   ----------------------------------------
-mus_th_invisible_full_moon_9_49:
+mus_th_invisible_full_moon_10_49:
         .byte           N12   , An3 , v100
         .byte   W12
         .byte                   Bn3
@@ -7606,10 +7609,10 @@ mus_th_invisible_full_moon_9_49:
         .byte   W96
 @ 052   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_9_48
+         .word  mus_th_invisible_full_moon_10_48
 @ 053   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_9_49
+         .word  mus_th_invisible_full_moon_10_49
 @ 054   ----------------------------------------
         .byte           N03   , Fs2 , v090
         .byte   W03
@@ -7882,12 +7885,12 @@ mus_th_invisible_full_moon_9_49:
 @ 082   ----------------------------------------
         .byte   W48
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_9_LOOP
+         .word  mus_th_invisible_full_moon_10_LOOP
         .byte   FINE
 
-@***************** Track 10 (Midi-Chn.11) *****************@
+@***************** Track 11 (Midi-Chn.11) *****************@
 
-mus_th_invisible_full_moon_10:
+mus_th_invisible_full_moon_11:
         .byte   KEYSH , mus_th_invisible_full_moon_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 86 @ GB Square-2
@@ -7906,7 +7909,7 @@ mus_th_invisible_full_moon_10:
 @ 005   ----------------------------------------
         .byte   W96
 @ 006   ----------------------------------------
-mus_th_invisible_full_moon_10_LOOP:
+mus_th_invisible_full_moon_11_LOOP:
         .byte           N18   , Gn3 , v100
         .byte           N18   , En3
         .byte   W24
@@ -7920,7 +7923,7 @@ mus_th_invisible_full_moon_10_LOOP:
         .byte           N18   , Fn3
         .byte   W24
 @ 007   ----------------------------------------
-mus_th_invisible_full_moon_10_7:
+mus_th_invisible_full_moon_11_7:
         .byte           N18   , Fn3 , v100
         .byte           N18   , Cn3
         .byte   W24
@@ -7935,7 +7938,7 @@ mus_th_invisible_full_moon_10_7:
         .byte   W24
         .byte   PEND
 @ 008   ----------------------------------------
-mus_th_invisible_full_moon_10_8:
+mus_th_invisible_full_moon_11_8:
         .byte           N18   , Fn3 , v100
         .byte           N18   , Cn3
         .byte   W24
@@ -7950,7 +7953,7 @@ mus_th_invisible_full_moon_10_8:
         .byte   W24
         .byte   PEND
 @ 009   ----------------------------------------
-mus_th_invisible_full_moon_10_9:
+mus_th_invisible_full_moon_11_9:
         .byte           N18   , An3 , v100
         .byte           N18   , En3
         .byte   W24
@@ -7965,7 +7968,7 @@ mus_th_invisible_full_moon_10_9:
         .byte   W24
         .byte   PEND
 @ 010   ----------------------------------------
-mus_th_invisible_full_moon_10_10:
+mus_th_invisible_full_moon_11_10:
         .byte           N18   , Cs3 , v100
         .byte           N18   , Fs3
         .byte   W24
@@ -7980,7 +7983,7 @@ mus_th_invisible_full_moon_10_10:
         .byte   W24
         .byte   PEND
 @ 011   ----------------------------------------
-mus_th_invisible_full_moon_10_11:
+mus_th_invisible_full_moon_11_11:
         .byte           N18   , Cs3 , v100
         .byte           N18   , Fs3
         .byte   W24
@@ -8009,19 +8012,19 @@ mus_th_invisible_full_moon_10_11:
         .byte   W24
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_10_7
+         .word  mus_th_invisible_full_moon_11_7
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_10_8
+         .word  mus_th_invisible_full_moon_11_8
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_10_9
+         .word  mus_th_invisible_full_moon_11_9
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_10_10
+         .word  mus_th_invisible_full_moon_11_10
 @ 017   ----------------------------------------
         .byte   PATT
-         .word  mus_th_invisible_full_moon_10_11
+         .word  mus_th_invisible_full_moon_11_11
 @ 018   ----------------------------------------
         .byte           N18   , Gn3 , v100
         .byte           N18   , En3
@@ -8227,7 +8230,7 @@ mus_th_invisible_full_moon_10_11:
 @ 082   ----------------------------------------
         .byte   W48
         .byte   GOTO
-         .word  mus_th_invisible_full_moon_10_LOOP
+         .word  mus_th_invisible_full_moon_11_LOOP
         .byte   FINE
 
 
@@ -8242,7 +8245,6 @@ mus_th_invisible_full_moon:
 
         .word   mus_th_invisible_full_moon_grp
 
-        .word   mus_th_invisible_full_moon_0
         .word   mus_th_invisible_full_moon_1
         .word   mus_th_invisible_full_moon_2
         .word   mus_th_invisible_full_moon_3
@@ -8253,5 +8255,6 @@ mus_th_invisible_full_moon:
         .word   mus_th_invisible_full_moon_8
         .word   mus_th_invisible_full_moon_9
         .word   mus_th_invisible_full_moon_10
+        .word   mus_th_invisible_full_moon_11
 
         .end

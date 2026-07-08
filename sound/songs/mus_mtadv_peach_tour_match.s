@@ -5,20 +5,23 @@
         .equ    mus_mtadv_peach_tour_match_mvl, 162
         .equ    mus_mtadv_peach_tour_match_rev, reverb_set+50
         .equ    mus_mtadv_peach_tour_match_key, 0
+        .equ	mus_mtadv_peach_tour_match_tbs, 1
+        .equ	mus_mtadv_peach_tour_match_exg, 0
+        .equ	mus_mtadv_peach_tour_match_cmp, 1
 
         .section .rodata
         .global mus_mtadv_peach_tour_match
         .align  2
 
-@****************** Track 0 (Midi-Chn.0) ******************@
+@****************** Track 1 (Midi-Chn.0) ******************@
 
-mus_mtadv_peach_tour_match_0:
+mus_mtadv_peach_tour_match_1:
         .byte   KEYSH , mus_mtadv_peach_tour_match_key+0
 @ 999   ----------------------------------------
         .byte   TEMPO , 152/2
         .byte   W96
 @ 000   ----------------------------------------
-mus_mtadv_peach_tour_match_0_LOOP:
+mus_mtadv_peach_tour_match_1_LOOP:
         .byte   TEMPO , 86/2
         .byte           VOICE , 24
         .byte           VOL   , 56*mus_mtadv_peach_tour_match_mvl/mxv
@@ -41,7 +44,7 @@ mus_mtadv_peach_tour_match_0_LOOP:
         .byte           N11   , Fs2
         .byte   W12
 @ 001   ----------------------------------------
-mus_mtadv_peach_tour_match_0_1:
+mus_mtadv_peach_tour_match_1_1:
         .byte           N17   , Bn1 , v104
         .byte           N17   , Gs2
         .byte   W18
@@ -63,9 +66,9 @@ mus_mtadv_peach_tour_match_0_1:
         .byte   PEND
 @ 002   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_1
+         .word  mus_mtadv_peach_tour_match_1_1
 @ 003   ----------------------------------------
-mus_mtadv_peach_tour_match_0_3:
+mus_mtadv_peach_tour_match_1_3:
         .byte           N17   , En2 , v104
         .byte           N17   , Fs2
         .byte   W18
@@ -87,18 +90,18 @@ mus_mtadv_peach_tour_match_0_3:
         .byte   PEND
 @ 004   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_1
+         .word  mus_mtadv_peach_tour_match_1_1
 @ 005   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_1
+         .word  mus_mtadv_peach_tour_match_1_1
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_1
+         .word  mus_mtadv_peach_tour_match_1_1
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_3
+         .word  mus_mtadv_peach_tour_match_1_3
 @ 008   ----------------------------------------
-mus_mtadv_peach_tour_match_0_8:
+mus_mtadv_peach_tour_match_1_8:
         .byte           N05   , Cn2 , v076
         .byte   W06
         .byte                   En2
@@ -167,7 +170,7 @@ mus_mtadv_peach_tour_match_0_8:
         .byte   W06
 @ 010   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_8
+         .word  mus_mtadv_peach_tour_match_1_8
 @ 011   ----------------------------------------
         .byte           N05   , Dn2 , v076
         .byte   W06
@@ -203,16 +206,16 @@ mus_mtadv_peach_tour_match_0_8:
         .byte   W06
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_1
+         .word  mus_mtadv_peach_tour_match_1_1
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_1
+         .word  mus_mtadv_peach_tour_match_1_1
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_1
+         .word  mus_mtadv_peach_tour_match_1_1
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_3
+         .word  mus_mtadv_peach_tour_match_1_3
 @ 016   ----------------------------------------
         .byte   W96
 @ 017   ----------------------------------------
@@ -230,7 +233,7 @@ mus_mtadv_peach_tour_match_0_8:
 @ 023   ----------------------------------------
         .byte   W96
 @ 024   ----------------------------------------
-mus_mtadv_peach_tour_match_0_24:
+mus_mtadv_peach_tour_match_1_24:
         .byte           N17   , Gn1 , v127
         .byte           N17   , En2
         .byte   W18
@@ -251,7 +254,7 @@ mus_mtadv_peach_tour_match_0_24:
         .byte   W12
         .byte   PEND
 @ 025   ----------------------------------------
-mus_mtadv_peach_tour_match_0_25:
+mus_mtadv_peach_tour_match_1_25:
         .byte           N17   , Gs1 , v127
         .byte           N17   , En2
         .byte   W18
@@ -272,7 +275,7 @@ mus_mtadv_peach_tour_match_0_25:
         .byte   W12
         .byte   PEND
 @ 026   ----------------------------------------
-mus_mtadv_peach_tour_match_0_26:
+mus_mtadv_peach_tour_match_1_26:
         .byte           N17   , An1 , v127
         .byte           N17   , En2
         .byte   W18
@@ -294,19 +297,19 @@ mus_mtadv_peach_tour_match_0_26:
         .byte   PEND
 @ 027   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_25
+         .word  mus_mtadv_peach_tour_match_1_25
 @ 028   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_24
+         .word  mus_mtadv_peach_tour_match_1_24
 @ 029   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_25
+         .word  mus_mtadv_peach_tour_match_1_25
 @ 030   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_26
+         .word  mus_mtadv_peach_tour_match_1_26
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_0_25
+         .word  mus_mtadv_peach_tour_match_1_25
 @ 032   ----------------------------------------
         .byte   W96
 @ 033   ----------------------------------------
@@ -317,17 +320,17 @@ mus_mtadv_peach_tour_match_0_26:
         .byte   W96
 @ 036   ----------------------------------------
         .byte   GOTO
-         .word  mus_mtadv_peach_tour_match_0_LOOP
+         .word  mus_mtadv_peach_tour_match_1_LOOP
         .byte   FINE
 
-@****************** Track 1 (Midi-Chn.1) ******************@
+@****************** Track 2 (Midi-Chn.1) ******************@
 
-mus_mtadv_peach_tour_match_1:
+mus_mtadv_peach_tour_match_2:
         .byte   KEYSH , mus_mtadv_peach_tour_match_key+0
 @ 999   ----------------------------------------
         .byte   W96
 @ 000   ----------------------------------------
-mus_mtadv_peach_tour_match_1_LOOP:
+mus_mtadv_peach_tour_match_2_LOOP:
         .byte           VOICE , 33
         .byte           VOL   , 90*mus_mtadv_peach_tour_match_mvl/mxv
         .byte           N05   , En2 , v127
@@ -363,7 +366,7 @@ mus_mtadv_peach_tour_match_1_LOOP:
         .byte                   En2
         .byte   W06
 @ 001   ----------------------------------------
-mus_mtadv_peach_tour_match_1_1:
+mus_mtadv_peach_tour_match_2_1:
         .byte           N05   , Cs3 , v127
         .byte   W06
         .byte                   Cs3
@@ -398,7 +401,7 @@ mus_mtadv_peach_tour_match_1_1:
         .byte   W06
         .byte   PEND
 @ 002   ----------------------------------------
-mus_mtadv_peach_tour_match_1_2:
+mus_mtadv_peach_tour_match_2_2:
         .byte           N05   , An2 , v127
         .byte   W06
         .byte                   An2
@@ -433,7 +436,7 @@ mus_mtadv_peach_tour_match_1_2:
         .byte   W06
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mtadv_peach_tour_match_1_3:
+mus_mtadv_peach_tour_match_2_3:
         .byte           N05   , Bn2 , v127
         .byte   W06
         .byte                   Bn2
@@ -468,7 +471,7 @@ mus_mtadv_peach_tour_match_1_3:
         .byte   W06
         .byte   PEND
 @ 004   ----------------------------------------
-mus_mtadv_peach_tour_match_1_4:
+mus_mtadv_peach_tour_match_2_4:
         .byte           N05   , En2 , v127
         .byte   W06
         .byte                   En2
@@ -504,15 +507,15 @@ mus_mtadv_peach_tour_match_1_4:
         .byte   PEND
 @ 005   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_1
+         .word  mus_mtadv_peach_tour_match_2_1
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_2
+         .word  mus_mtadv_peach_tour_match_2_2
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_3
+         .word  mus_mtadv_peach_tour_match_2_3
 @ 008   ----------------------------------------
-mus_mtadv_peach_tour_match_1_8:
+mus_mtadv_peach_tour_match_2_8:
         .byte           N05   , Cn3 , v127
         .byte   W06
         .byte                   Gn2
@@ -581,7 +584,7 @@ mus_mtadv_peach_tour_match_1_8:
         .byte   W06
 @ 010   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_8
+         .word  mus_mtadv_peach_tour_match_2_8
 @ 011   ----------------------------------------
         .byte           N05   , Dn2 , v127
         .byte   W06
@@ -617,18 +620,18 @@ mus_mtadv_peach_tour_match_1_8:
         .byte   W06
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_4
+         .word  mus_mtadv_peach_tour_match_2_4
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_1
+         .word  mus_mtadv_peach_tour_match_2_1
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_2
+         .word  mus_mtadv_peach_tour_match_2_2
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_3
+         .word  mus_mtadv_peach_tour_match_2_3
 @ 016   ----------------------------------------
-mus_mtadv_peach_tour_match_1_16:
+mus_mtadv_peach_tour_match_2_16:
         .byte           N05   , Fn2 , v127
         .byte   W06
         .byte                   Fn3
@@ -664,21 +667,21 @@ mus_mtadv_peach_tour_match_1_16:
         .byte   PEND
 @ 017   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_16
+         .word  mus_mtadv_peach_tour_match_2_16
 @ 018   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_16
+         .word  mus_mtadv_peach_tour_match_2_16
 @ 019   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_16
+         .word  mus_mtadv_peach_tour_match_2_16
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_16
+         .word  mus_mtadv_peach_tour_match_2_16
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_16
+         .word  mus_mtadv_peach_tour_match_2_16
 @ 022   ----------------------------------------
-mus_mtadv_peach_tour_match_1_22:
+mus_mtadv_peach_tour_match_2_22:
         .byte           N05   , Gs2 , v127
         .byte   W06
         .byte                   Gs3
@@ -747,9 +750,9 @@ mus_mtadv_peach_tour_match_1_22:
         .byte   W06
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_8
+         .word  mus_mtadv_peach_tour_match_2_8
 @ 025   ----------------------------------------
-mus_mtadv_peach_tour_match_1_25:
+mus_mtadv_peach_tour_match_2_25:
         .byte           N05   , Cn3 , v127
         .byte   W06
         .byte                   Gs2
@@ -784,7 +787,7 @@ mus_mtadv_peach_tour_match_1_25:
         .byte   W06
         .byte   PEND
 @ 026   ----------------------------------------
-mus_mtadv_peach_tour_match_1_26:
+mus_mtadv_peach_tour_match_2_26:
         .byte           N05   , An2 , v127
         .byte   W06
         .byte                   An3
@@ -820,44 +823,44 @@ mus_mtadv_peach_tour_match_1_26:
         .byte   PEND
 @ 027   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_22
+         .word  mus_mtadv_peach_tour_match_2_22
 @ 028   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_8
+         .word  mus_mtadv_peach_tour_match_2_8
 @ 029   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_25
+         .word  mus_mtadv_peach_tour_match_2_25
 @ 030   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_26
+         .word  mus_mtadv_peach_tour_match_2_26
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_22
+         .word  mus_mtadv_peach_tour_match_2_22
 @ 032   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_26
+         .word  mus_mtadv_peach_tour_match_2_26
 @ 033   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_26
+         .word  mus_mtadv_peach_tour_match_2_26
 @ 034   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_26
+         .word  mus_mtadv_peach_tour_match_2_26
 @ 035   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_1_26
+         .word  mus_mtadv_peach_tour_match_2_26
 @ 036   ----------------------------------------
         .byte   GOTO
-         .word  mus_mtadv_peach_tour_match_1_LOOP
+         .word  mus_mtadv_peach_tour_match_2_LOOP
         .byte   FINE
 
-@****************** Track 2 (Midi-Chn.2) ******************@
+@****************** Track 3 (Midi-Chn.2) ******************@
 
-mus_mtadv_peach_tour_match_2:
+mus_mtadv_peach_tour_match_3:
         .byte   KEYSH , mus_mtadv_peach_tour_match_key+0
 @ 999   ----------------------------------------
         .byte   W96
 @ 000   ----------------------------------------
-mus_mtadv_peach_tour_match_2_LOOP:
+mus_mtadv_peach_tour_match_3_LOOP:
         .byte           VOICE , 81
         .byte           VOL   , 70*mus_mtadv_peach_tour_match_mvl/mxv
         .byte   W96
@@ -876,7 +879,7 @@ mus_mtadv_peach_tour_match_2_LOOP:
 @ 007   ----------------------------------------
         .byte   W96
 @ 008   ----------------------------------------
-mus_mtadv_peach_tour_match_2_8:
+mus_mtadv_peach_tour_match_3_8:
         .byte           N92   , En2 , v064
         .byte           N92   , Cn3
         .byte   W96
@@ -887,7 +890,7 @@ mus_mtadv_peach_tour_match_2_8:
         .byte   W96
 @ 010   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_2_8
+         .word  mus_mtadv_peach_tour_match_3_8
 @ 011   ----------------------------------------
         .byte           N44   , Fs2 , v064
         .byte           N44   , Dn3
@@ -904,7 +907,7 @@ mus_mtadv_peach_tour_match_2_8:
 @ 015   ----------------------------------------
         .byte   W96
 @ 016   ----------------------------------------
-mus_mtadv_peach_tour_match_2_16:
+mus_mtadv_peach_tour_match_3_16:
         .byte           N05   , An2 , v080
         .byte           N05   , Cn3
         .byte           N05   , En3
@@ -935,7 +938,7 @@ mus_mtadv_peach_tour_match_2_16:
         .byte   W12
         .byte   PEND
 @ 017   ----------------------------------------
-mus_mtadv_peach_tour_match_2_17:
+mus_mtadv_peach_tour_match_3_17:
         .byte           N05   , Gn2 , v080
         .byte           N05   , Bn2
         .byte           N05   , Dn3
@@ -966,7 +969,7 @@ mus_mtadv_peach_tour_match_2_17:
         .byte   W12
         .byte   PEND
 @ 018   ----------------------------------------
-mus_mtadv_peach_tour_match_2_18:
+mus_mtadv_peach_tour_match_3_18:
         .byte           N05   , Gs2 , v080
         .byte           N05   , Cn3
         .byte           N05   , Ds3
@@ -997,7 +1000,7 @@ mus_mtadv_peach_tour_match_2_18:
         .byte   W12
         .byte   PEND
 @ 019   ----------------------------------------
-mus_mtadv_peach_tour_match_2_19:
+mus_mtadv_peach_tour_match_3_19:
         .byte           N05   , As2 , v080
         .byte           N05   , Dn3
         .byte           N05   , Fn3
@@ -1029,18 +1032,18 @@ mus_mtadv_peach_tour_match_2_19:
         .byte   PEND
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_2_16
+         .word  mus_mtadv_peach_tour_match_3_16
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_2_17
+         .word  mus_mtadv_peach_tour_match_3_17
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_2_18
+         .word  mus_mtadv_peach_tour_match_3_18
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_2_19
+         .word  mus_mtadv_peach_tour_match_3_19
 @ 024   ----------------------------------------
-mus_mtadv_peach_tour_match_2_24:
+mus_mtadv_peach_tour_match_3_24:
         .byte           N44   , Gn2 , v060
         .byte           N44   , Cn3
         .byte   W48
@@ -1052,7 +1055,7 @@ mus_mtadv_peach_tour_match_2_24:
         .byte   W24
         .byte   PEND
 @ 025   ----------------------------------------
-mus_mtadv_peach_tour_match_2_25:
+mus_mtadv_peach_tour_match_3_25:
         .byte           N44   , En3 , v060
         .byte           N44   , Gs3
         .byte   W48
@@ -1064,7 +1067,7 @@ mus_mtadv_peach_tour_match_2_25:
         .byte   W24
         .byte   PEND
 @ 026   ----------------------------------------
-mus_mtadv_peach_tour_match_2_26:
+mus_mtadv_peach_tour_match_3_26:
         .byte           N44   , En3 , v060
         .byte           N44   , An3
         .byte   W48
@@ -1076,7 +1079,7 @@ mus_mtadv_peach_tour_match_2_26:
         .byte   W24
         .byte   PEND
 @ 027   ----------------------------------------
-mus_mtadv_peach_tour_match_2_27:
+mus_mtadv_peach_tour_match_3_27:
         .byte           N44   , En3 , v060
         .byte           N44   , Gs3
         .byte   W48
@@ -1086,16 +1089,16 @@ mus_mtadv_peach_tour_match_2_27:
         .byte   PEND
 @ 028   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_2_24
+         .word  mus_mtadv_peach_tour_match_3_24
 @ 029   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_2_25
+         .word  mus_mtadv_peach_tour_match_3_25
 @ 030   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_2_26
+         .word  mus_mtadv_peach_tour_match_3_26
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_2_27
+         .word  mus_mtadv_peach_tour_match_3_27
 @ 032   ----------------------------------------
         .byte           N44   , An2 , v060
         .byte           N44   , Cs3
@@ -1134,17 +1137,17 @@ mus_mtadv_peach_tour_match_2_27:
         .byte   W24
 @ 036   ----------------------------------------
         .byte   GOTO
-         .word  mus_mtadv_peach_tour_match_2_LOOP
+         .word  mus_mtadv_peach_tour_match_3_LOOP
         .byte   FINE
 
-@****************** Track 3 (Midi-Chn.3) ******************@
+@****************** Track 4 (Midi-Chn.3) ******************@
 
-mus_mtadv_peach_tour_match_3:
+mus_mtadv_peach_tour_match_4:
         .byte   KEYSH , mus_mtadv_peach_tour_match_key+0
 @ 999   ----------------------------------------
         .byte   W96
 @ 000   ----------------------------------------
-mus_mtadv_peach_tour_match_3_LOOP:
+mus_mtadv_peach_tour_match_4_LOOP:
         .byte           VOICE , 61
         .byte           VOL   , 56*mus_mtadv_peach_tour_match_mvl/mxv
         .byte           N24   , En2 , v116
@@ -1169,7 +1172,7 @@ mus_mtadv_peach_tour_match_3_LOOP:
         .byte           N10   , En3
         .byte   W12
 @ 001   ----------------------------------------
-mus_mtadv_peach_tour_match_3_1:
+mus_mtadv_peach_tour_match_4_1:
         .byte           N15   , Ds2 , v116
         .byte           N15   , Ds3
         .byte   W18
@@ -1184,7 +1187,7 @@ mus_mtadv_peach_tour_match_3_1:
         .byte   W48
         .byte   PEND
 @ 002   ----------------------------------------
-mus_mtadv_peach_tour_match_3_2:
+mus_mtadv_peach_tour_match_4_2:
         .byte           N24   , En2 , v116
         .byte           N24   , En3
         .byte   W30
@@ -1205,7 +1208,7 @@ mus_mtadv_peach_tour_match_3_2:
         .byte   W30
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mtadv_peach_tour_match_3_3:
+mus_mtadv_peach_tour_match_4_3:
         .byte           N24   , Bn2 , v116
         .byte           N24   , Bn3
         .byte   W30
@@ -1223,7 +1226,7 @@ mus_mtadv_peach_tour_match_3_3:
         .byte   W48
         .byte   PEND
 @ 004   ----------------------------------------
-mus_mtadv_peach_tour_match_3_4:
+mus_mtadv_peach_tour_match_4_4:
         .byte           N24   , En2 , v116
         .byte           N24   , En3
         .byte   W30
@@ -1248,13 +1251,13 @@ mus_mtadv_peach_tour_match_3_4:
         .byte   PEND
 @ 005   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_3_1
+         .word  mus_mtadv_peach_tour_match_4_1
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_3_2
+         .word  mus_mtadv_peach_tour_match_4_2
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_3_3
+         .word  mus_mtadv_peach_tour_match_4_3
 @ 008   ----------------------------------------
         .byte   W96
 @ 009   ----------------------------------------
@@ -1265,16 +1268,16 @@ mus_mtadv_peach_tour_match_3_4:
         .byte   W96
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_3_4
+         .word  mus_mtadv_peach_tour_match_4_4
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_3_1
+         .word  mus_mtadv_peach_tour_match_4_1
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_3_2
+         .word  mus_mtadv_peach_tour_match_4_2
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_3_3
+         .word  mus_mtadv_peach_tour_match_4_3
 @ 016   ----------------------------------------
         .byte   W96
 @ 017   ----------------------------------------
@@ -1391,7 +1394,7 @@ mus_mtadv_peach_tour_match_3_4:
         .byte                   Cn4
         .byte   W24
 @ 029   ----------------------------------------
-mus_mtadv_peach_tour_match_3_29:
+mus_mtadv_peach_tour_match_4_29:
         .byte           N40   , Gs3 , v127
         .byte   W48
         .byte                   En3
@@ -1408,7 +1411,7 @@ mus_mtadv_peach_tour_match_3_29:
         .byte   W12
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_3_29
+         .word  mus_mtadv_peach_tour_match_4_29
 @ 032   ----------------------------------------
         .byte           N15   , En3 , v127
         .byte   W18
@@ -1510,17 +1513,17 @@ mus_mtadv_peach_tour_match_3_29:
         .byte   W06
 @ 036   ----------------------------------------
         .byte   GOTO
-         .word  mus_mtadv_peach_tour_match_3_LOOP
+         .word  mus_mtadv_peach_tour_match_4_LOOP
         .byte   FINE
 
-@****************** Track 4 (Midi-Chn.4) ******************@
+@****************** Track 5 (Midi-Chn.4) ******************@
 
-mus_mtadv_peach_tour_match_4:
+mus_mtadv_peach_tour_match_5:
         .byte   KEYSH , mus_mtadv_peach_tour_match_key+0
 @ 999   ----------------------------------------
         .byte   W96
 @ 000   ----------------------------------------
-mus_mtadv_peach_tour_match_4_LOOP:
+mus_mtadv_peach_tour_match_5_LOOP:
         .byte           VOICE , 48
         .byte           VOL   , 56*mus_mtadv_peach_tour_match_mvl/mxv
         .byte           N44   , En3 , v100
@@ -1530,7 +1533,7 @@ mus_mtadv_peach_tour_match_4_LOOP:
         .byte                   En2
         .byte   W24
 @ 001   ----------------------------------------
-mus_mtadv_peach_tour_match_4_1:
+mus_mtadv_peach_tour_match_5_1:
         .byte           N44   , Bn2 , v100
         .byte   W48
         .byte           N23   , En3
@@ -1539,7 +1542,7 @@ mus_mtadv_peach_tour_match_4_1:
         .byte   W24
         .byte   PEND
 @ 002   ----------------------------------------
-mus_mtadv_peach_tour_match_4_2:
+mus_mtadv_peach_tour_match_5_2:
         .byte           N44   , Cs3 , v100
         .byte   W48
         .byte           N17   , Fs3
@@ -1550,7 +1553,7 @@ mus_mtadv_peach_tour_match_4_2:
         .byte   W12
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mtadv_peach_tour_match_4_3:
+mus_mtadv_peach_tour_match_5_3:
         .byte           N05   , Bn3 , v100
         .byte   W06
         .byte                   Fs3
@@ -1585,7 +1588,7 @@ mus_mtadv_peach_tour_match_4_3:
         .byte   W06
         .byte   PEND
 @ 004   ----------------------------------------
-mus_mtadv_peach_tour_match_4_4:
+mus_mtadv_peach_tour_match_5_4:
         .byte           N44   , En3 , v100
         .byte   W48
         .byte           N23   , Bn2
@@ -1595,15 +1598,15 @@ mus_mtadv_peach_tour_match_4_4:
         .byte   PEND
 @ 005   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_4_1
+         .word  mus_mtadv_peach_tour_match_5_1
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_4_2
+         .word  mus_mtadv_peach_tour_match_5_2
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_4_3
+         .word  mus_mtadv_peach_tour_match_5_3
 @ 008   ----------------------------------------
-mus_mtadv_peach_tour_match_4_8:
+mus_mtadv_peach_tour_match_5_8:
         .byte           N17   , Cn3 , v100
         .byte           N17   , En3
         .byte   W18
@@ -1641,7 +1644,7 @@ mus_mtadv_peach_tour_match_4_8:
         .byte   W24
 @ 010   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_4_8
+         .word  mus_mtadv_peach_tour_match_5_8
 @ 011   ----------------------------------------
         .byte           N44   , Fs3 , v100
         .byte           N44   , An3
@@ -1654,16 +1657,16 @@ mus_mtadv_peach_tour_match_4_8:
         .byte   W24
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_4_4
+         .word  mus_mtadv_peach_tour_match_5_4
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_4_1
+         .word  mus_mtadv_peach_tour_match_5_1
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_4_2
+         .word  mus_mtadv_peach_tour_match_5_2
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_4_3
+         .word  mus_mtadv_peach_tour_match_5_3
 @ 016   ----------------------------------------
         .byte           N44   , En3 , v092
         .byte           N44   , En4
@@ -1761,17 +1764,17 @@ mus_mtadv_peach_tour_match_4_8:
         .byte   W96
 @ 036   ----------------------------------------
         .byte   GOTO
-         .word  mus_mtadv_peach_tour_match_4_LOOP
+         .word  mus_mtadv_peach_tour_match_5_LOOP
         .byte   FINE
 
-@****************** Track 5 (Midi-Chn.9) ******************@
+@****************** Track 6 (Midi-Chn.9) ******************@
 
-mus_mtadv_peach_tour_match_5:
+mus_mtadv_peach_tour_match_6:
         .byte   KEYSH , mus_mtadv_peach_tour_match_key+0
 @ 999   ----------------------------------------
         .byte   W96
 @ 000   ----------------------------------------
-mus_mtadv_peach_tour_match_5_LOOP:
+mus_mtadv_peach_tour_match_6_LOOP:
         .byte           VOICE , 127
         .byte           VOL   , 90*mus_mtadv_peach_tour_match_mvl/mxv
         .byte           N11   , Cn1 , v127
@@ -1795,7 +1798,7 @@ mus_mtadv_peach_tour_match_5_LOOP:
         .byte           N11   , Dn1
         .byte   W12
 @ 001   ----------------------------------------
-mus_mtadv_peach_tour_match_5_1:
+mus_mtadv_peach_tour_match_6_1:
         .byte           N11   , Cn1 , v127
         .byte   W12
         .byte                   Dn1
@@ -1819,9 +1822,9 @@ mus_mtadv_peach_tour_match_5_1:
         .byte   PEND
 @ 002   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 003   ----------------------------------------
-mus_mtadv_peach_tour_match_5_3:
+mus_mtadv_peach_tour_match_6_3:
         .byte           N11   , Cn1 , v127
         .byte   W12
         .byte                   Dn1
@@ -1847,15 +1850,15 @@ mus_mtadv_peach_tour_match_5_3:
         .byte   PEND
 @ 004   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 005   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 007   ----------------------------------------
-mus_mtadv_peach_tour_match_5_7:
+mus_mtadv_peach_tour_match_6_7:
         .byte           N11   , Cn1 , v127
         .byte   W12
         .byte                   Dn1
@@ -1889,30 +1892,30 @@ mus_mtadv_peach_tour_match_5_7:
         .byte   PEND
 @ 008   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 009   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 010   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 011   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_3
+         .word  mus_mtadv_peach_tour_match_6_3
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_7
+         .word  mus_mtadv_peach_tour_match_6_7
 @ 016   ----------------------------------------
-mus_mtadv_peach_tour_match_5_16:
+mus_mtadv_peach_tour_match_6_16:
         .byte           N05   , Cn1 , v127
         .byte   W06
         .byte                   Cn1
@@ -1944,10 +1947,10 @@ mus_mtadv_peach_tour_match_5_16:
         .byte   PEND
 @ 017   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_16
+         .word  mus_mtadv_peach_tour_match_6_16
 @ 018   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_16
+         .word  mus_mtadv_peach_tour_match_6_16
 @ 019   ----------------------------------------
         .byte           N05   , Cn1 , v127
         .byte   W06
@@ -1979,65 +1982,65 @@ mus_mtadv_peach_tour_match_5_16:
         .byte   W06
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_3
+         .word  mus_mtadv_peach_tour_match_6_3
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 025   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 027   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_7
+         .word  mus_mtadv_peach_tour_match_6_7
 @ 028   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 029   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 030   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_3
+         .word  mus_mtadv_peach_tour_match_6_3
 @ 032   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 033   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 034   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_1
+         .word  mus_mtadv_peach_tour_match_6_1
 @ 035   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_5_7
+         .word  mus_mtadv_peach_tour_match_6_7
 @ 036   ----------------------------------------
         .byte   GOTO
-         .word  mus_mtadv_peach_tour_match_5_LOOP
+         .word  mus_mtadv_peach_tour_match_6_LOOP
         .byte   FINE
 
-@****************** Track 6 (Midi-Chn.9) ******************@
+@****************** Track 7 (Midi-Chn.9) ******************@
 
-mus_mtadv_peach_tour_match_6:
+mus_mtadv_peach_tour_match_7:
         .byte   KEYSH , mus_mtadv_peach_tour_match_key+0
 @ 999   ----------------------------------------
         .byte   W96
 @ 000   ----------------------------------------
-mus_mtadv_peach_tour_match_6_LOOP:
+mus_mtadv_peach_tour_match_7_LOOP:
         .byte           VOICE , 127
         .byte           VOL   , 90*mus_mtadv_peach_tour_match_mvl/mxv
         .byte           N44   , Cs2 , v080
@@ -2057,7 +2060,7 @@ mus_mtadv_peach_tour_match_6_LOOP:
         .byte                   As1
         .byte   W12
 @ 001   ----------------------------------------
-mus_mtadv_peach_tour_match_6_1:
+mus_mtadv_peach_tour_match_7_1:
         .byte           N11   , As1 , v040
         .byte   W12
         .byte                   As1
@@ -2077,9 +2080,9 @@ mus_mtadv_peach_tour_match_6_1:
         .byte   PEND
 @ 002   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_1
+         .word  mus_mtadv_peach_tour_match_7_1
 @ 003   ----------------------------------------
-mus_mtadv_peach_tour_match_6_3:
+mus_mtadv_peach_tour_match_7_3:
         .byte           N11   , As1 , v040
         .byte   W12
         .byte                   As1
@@ -2096,7 +2099,7 @@ mus_mtadv_peach_tour_match_6_3:
         .byte   W24
         .byte   PEND
 @ 004   ----------------------------------------
-mus_mtadv_peach_tour_match_6_4:
+mus_mtadv_peach_tour_match_7_4:
         .byte           N44   , Cs2 , v080
         .byte   W12
         .byte           N11   , As1 , v040
@@ -2116,15 +2119,15 @@ mus_mtadv_peach_tour_match_6_4:
         .byte   PEND
 @ 005   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_1
+         .word  mus_mtadv_peach_tour_match_7_1
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_1
+         .word  mus_mtadv_peach_tour_match_7_1
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_3
+         .word  mus_mtadv_peach_tour_match_7_3
 @ 008   ----------------------------------------
-mus_mtadv_peach_tour_match_6_8:
+mus_mtadv_peach_tour_match_7_8:
         .byte           N44   , Cs2 , v080
         .byte   W12
         .byte           N11   , Ds2
@@ -2143,7 +2146,7 @@ mus_mtadv_peach_tour_match_6_8:
         .byte   W12
         .byte   PEND
 @ 009   ----------------------------------------
-mus_mtadv_peach_tour_match_6_9:
+mus_mtadv_peach_tour_match_7_9:
         .byte           N11   , Ds2 , v080
         .byte   W12
         .byte                   Ds2
@@ -2163,9 +2166,9 @@ mus_mtadv_peach_tour_match_6_9:
         .byte   PEND
 @ 010   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_9
+         .word  mus_mtadv_peach_tour_match_7_9
 @ 011   ----------------------------------------
-mus_mtadv_peach_tour_match_6_11:
+mus_mtadv_peach_tour_match_7_11:
         .byte           N11   , Ds2 , v080
         .byte   W12
         .byte                   Ds2
@@ -2183,16 +2186,16 @@ mus_mtadv_peach_tour_match_6_11:
         .byte   PEND
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_4
+         .word  mus_mtadv_peach_tour_match_7_4
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_1
+         .word  mus_mtadv_peach_tour_match_7_1
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_1
+         .word  mus_mtadv_peach_tour_match_7_1
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_3
+         .word  mus_mtadv_peach_tour_match_7_3
 @ 016   ----------------------------------------
         .byte           N92   , Cs2 , v080
         .byte   W96
@@ -2206,61 +2209,61 @@ mus_mtadv_peach_tour_match_6_11:
         .byte   W96
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_4
+         .word  mus_mtadv_peach_tour_match_7_4
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_1
+         .word  mus_mtadv_peach_tour_match_7_1
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_1
+         .word  mus_mtadv_peach_tour_match_7_1
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_3
+         .word  mus_mtadv_peach_tour_match_7_3
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_4
+         .word  mus_mtadv_peach_tour_match_7_4
 @ 025   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_1
+         .word  mus_mtadv_peach_tour_match_7_1
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_1
+         .word  mus_mtadv_peach_tour_match_7_1
 @ 027   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_3
+         .word  mus_mtadv_peach_tour_match_7_3
 @ 028   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_8
+         .word  mus_mtadv_peach_tour_match_7_8
 @ 029   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_9
+         .word  mus_mtadv_peach_tour_match_7_9
 @ 030   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_9
+         .word  mus_mtadv_peach_tour_match_7_9
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_11
+         .word  mus_mtadv_peach_tour_match_7_11
 @ 032   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_8
+         .word  mus_mtadv_peach_tour_match_7_8
 @ 033   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_9
+         .word  mus_mtadv_peach_tour_match_7_9
 @ 034   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_9
+         .word  mus_mtadv_peach_tour_match_7_9
 @ 035   ----------------------------------------
         .byte   PATT
-         .word  mus_mtadv_peach_tour_match_6_11
+         .word  mus_mtadv_peach_tour_match_7_11
 @ 036   ----------------------------------------
         .byte   GOTO
-         .word  mus_mtadv_peach_tour_match_6_LOOP
+         .word  mus_mtadv_peach_tour_match_7_LOOP
         .byte   FINE
 
 
 @****************** Track 8 (Midi-Chn.9) ******************@
 
-mus_mtadv_peach_tour_match_7:
+mus_mtadv_peach_tour_match_8:
         .byte   KEYSH , mus_mtadv_peach_tour_match_key+0
 @ 999   ----------------------------------------
         .byte           VOICE , 127
@@ -2317,7 +2320,6 @@ mus_mtadv_peach_tour_match:
 
         .word   mus_mtadv_peach_tour_match_grp
 
-        .word   mus_mtadv_peach_tour_match_0
         .word   mus_mtadv_peach_tour_match_1
         .word   mus_mtadv_peach_tour_match_2
         .word   mus_mtadv_peach_tour_match_3
@@ -2325,5 +2327,6 @@ mus_mtadv_peach_tour_match:
         .word   mus_mtadv_peach_tour_match_5
         .word   mus_mtadv_peach_tour_match_6
         .word   mus_mtadv_peach_tour_match_7
+        .word   mus_mtadv_peach_tour_match_8
 
         .end

@@ -2,17 +2,20 @@
 
         .equ    mus_mvc_roll_grp, voicegroup_custom_205_experimental
         .equ    mus_mvc_roll_pri, 0
-	.equ	mus_mvc_roll_mvl, 100
+        .equ	mus_mvc_roll_mvl, 100
         .equ    mus_mvc_roll_rev, reverb_set+50
         .equ    mus_mvc_roll_key, 0
+        .equ	mus_mvc_roll_tbs, 1
+        .equ	mus_mvc_roll_exg, 0
+        .equ	mus_mvc_roll_cmp, 1
 
         .section .rodata
         .global mus_mvc_roll
         .align  2
 
-@****************** Track 0 (Midi-Chn.0) ******************@
+@****************** Track 1 (Midi-Chn.0) ******************@
 
-mus_mvc_roll_0:
+mus_mvc_roll_1:
         .byte   KEYSH , mus_mvc_roll_key+0
 @ 000   ----------------------------------------
         .byte   TEMPO , 128/2
@@ -28,7 +31,7 @@ mus_mvc_roll_0:
         .byte                   Dn4
         .byte   W12
 @ 002   ----------------------------------------
-mus_mvc_roll_0_2:
+mus_mvc_roll_1_2:
         .byte           N24   , An3 , v127
         .byte   W48
         .byte           N12
@@ -42,9 +45,9 @@ mus_mvc_roll_0_2:
         .byte   PEND
 @ 003   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_2
+         .word  mus_mvc_roll_1_2
 @ 004   ----------------------------------------
-mus_mvc_roll_0_4:
+mus_mvc_roll_1_4:
         .byte           N24   , En4 , v127
         .byte   W24
         .byte           N12   , Dn4
@@ -57,7 +60,7 @@ mus_mvc_roll_0_4:
         .byte   W12
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_roll_0_5:
+mus_mvc_roll_1_5:
         .byte   W12
         .byte           N12   , Dn4 , v127
         .byte   W12
@@ -74,9 +77,9 @@ mus_mvc_roll_0_5:
         .byte   PEND
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_2
+         .word  mus_mvc_roll_1_2
 @ 007   ----------------------------------------
-mus_mvc_roll_0_7:
+mus_mvc_roll_1_7:
         .byte           N24   , En4 , v127
         .byte   W24
         .byte                   Dn4
@@ -114,7 +117,7 @@ mus_mvc_roll_0_7:
         .byte                   122*mus_mvc_roll_mvl/mxv
         .byte   W01
 @ 009   ----------------------------------------
-mus_mvc_roll_0_LOOP:
+mus_mvc_roll_1_LOOP:
         .byte   W04
         .byte           VOL   , 121*mus_mvc_roll_mvl/mxv
         .byte   W06
@@ -161,7 +164,7 @@ mus_mvc_roll_0_LOOP:
 @ 017   ----------------------------------------
         .byte   W96
 @ 018   ----------------------------------------
-mus_mvc_roll_0_18:
+mus_mvc_roll_1_18:
         .byte           N12   , En3 , v127
         .byte   W18
         .byte           N18
@@ -176,7 +179,7 @@ mus_mvc_roll_0_18:
         .byte   W12
         .byte   PEND
 @ 019   ----------------------------------------
-mus_mvc_roll_0_19:
+mus_mvc_roll_1_19:
         .byte           N12   , En3 , v127
         .byte   W18
         .byte           N18
@@ -191,7 +194,7 @@ mus_mvc_roll_0_19:
         .byte   W12
         .byte   PEND
 @ 020   ----------------------------------------
-mus_mvc_roll_0_20:
+mus_mvc_roll_1_20:
         .byte           N36   , An3 , v127
         .byte   W36
         .byte           N12   , Bn3
@@ -210,9 +213,9 @@ mus_mvc_roll_0_20:
         .byte   W96
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_18
+         .word  mus_mvc_roll_1_18
 @ 023   ----------------------------------------
-mus_mvc_roll_0_23:
+mus_mvc_roll_1_23:
         .byte           N12   , En3 , v127
         .byte   W18
         .byte           N18
@@ -229,7 +232,7 @@ mus_mvc_roll_0_23:
         .byte   W12
         .byte   PEND
 @ 024   ----------------------------------------
-mus_mvc_roll_0_24:
+mus_mvc_roll_1_24:
         .byte           N18   , An3 , v127
         .byte   W18
         .byte                   An3
@@ -249,7 +252,7 @@ mus_mvc_roll_0_24:
 @ 025   ----------------------------------------
         .byte   W96
 @ 026   ----------------------------------------
-mus_mvc_roll_0_26:
+mus_mvc_roll_1_26:
         .byte           N18   , Bn3 , v127
         .byte   W15
         .byte           BEND  , c_v-4
@@ -271,7 +274,7 @@ mus_mvc_roll_0_26:
         .byte   W12
         .byte   PEND
 @ 027   ----------------------------------------
-mus_mvc_roll_0_27:
+mus_mvc_roll_1_27:
         .byte           N18   , Cn4 , v127
         .byte   W18
         .byte                   Bn3
@@ -291,7 +294,7 @@ mus_mvc_roll_0_27:
         .byte   W12
         .byte   PEND
 @ 028   ----------------------------------------
-mus_mvc_roll_0_28:
+mus_mvc_roll_1_28:
         .byte           N18   , Gn3 , v127
         .byte   W15
         .byte           BEND  , c_v+2
@@ -328,7 +331,7 @@ mus_mvc_roll_0_28:
         .byte   W01
         .byte   PEND
 @ 029   ----------------------------------------
-mus_mvc_roll_0_29:
+mus_mvc_roll_1_29:
         .byte           BEND  , c_v+0
         .byte           N24   , En3 , v127
         .byte   W48
@@ -338,7 +341,7 @@ mus_mvc_roll_0_29:
         .byte   W24
         .byte   PEND
 @ 030   ----------------------------------------
-mus_mvc_roll_0_30:
+mus_mvc_roll_1_30:
         .byte           N12   , Gn3 , v127
         .byte   W18
         .byte           N18
@@ -349,7 +352,7 @@ mus_mvc_roll_0_30:
         .byte   W48
         .byte   PEND
 @ 031   ----------------------------------------
-mus_mvc_roll_0_31:
+mus_mvc_roll_1_31:
         .byte           N12   , An3 , v127
         .byte   W18
         .byte           N18
@@ -360,7 +363,7 @@ mus_mvc_roll_0_31:
         .byte   W48
         .byte   PEND
 @ 032   ----------------------------------------
-mus_mvc_roll_0_32:
+mus_mvc_roll_1_32:
         .byte           N12   , An3 , v127
         .byte   W18
         .byte           N18
@@ -382,7 +385,7 @@ mus_mvc_roll_0_32:
         .byte   W12
         .byte   PEND
 @ 033   ----------------------------------------
-mus_mvc_roll_0_33:
+mus_mvc_roll_1_33:
         .byte           N18   , En3 , v127
         .byte   W18
         .byte                   Ds3
@@ -404,24 +407,24 @@ mus_mvc_roll_0_33:
         .byte   W12
 @ 035   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_2
+         .word  mus_mvc_roll_1_2
 @ 036   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_2
+         .word  mus_mvc_roll_1_2
 @ 037   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_4
+         .word  mus_mvc_roll_1_4
 @ 038   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_5
+         .word  mus_mvc_roll_1_5
 @ 039   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_2
+         .word  mus_mvc_roll_1_2
 @ 040   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_7
+         .word  mus_mvc_roll_1_7
 @ 041   ----------------------------------------
-mus_mvc_roll_0_41:
+mus_mvc_roll_1_41:
         .byte           N18   , Bn3 , v127
         .byte   W18
         .byte                   Cs4
@@ -494,50 +497,50 @@ mus_mvc_roll_0_41:
         .byte   W96
 @ 051   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_18
+         .word  mus_mvc_roll_1_18
 @ 052   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_19
+         .word  mus_mvc_roll_1_19
 @ 053   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_20
+         .word  mus_mvc_roll_1_20
 @ 054   ----------------------------------------
         .byte   W96
 @ 055   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_18
+         .word  mus_mvc_roll_1_18
 @ 056   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_23
+         .word  mus_mvc_roll_1_23
 @ 057   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_24
+         .word  mus_mvc_roll_1_24
 @ 058   ----------------------------------------
         .byte   W96
 @ 059   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_26
+         .word  mus_mvc_roll_1_26
 @ 060   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_27
+         .word  mus_mvc_roll_1_27
 @ 061   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_28
+         .word  mus_mvc_roll_1_28
 @ 062   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_29
+         .word  mus_mvc_roll_1_29
 @ 063   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_30
+         .word  mus_mvc_roll_1_30
 @ 064   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_31
+         .word  mus_mvc_roll_1_31
 @ 065   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_32
+         .word  mus_mvc_roll_1_32
 @ 066   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_33
+         .word  mus_mvc_roll_1_33
 @ 067   ----------------------------------------
         .byte   W48
         .byte           N12   , An3 , v127
@@ -550,33 +553,33 @@ mus_mvc_roll_0_41:
         .byte   W12
 @ 068   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_2
+         .word  mus_mvc_roll_1_2
 @ 069   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_2
+         .word  mus_mvc_roll_1_2
 @ 070   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_4
+         .word  mus_mvc_roll_1_4
 @ 071   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_5
+         .word  mus_mvc_roll_1_5
 @ 072   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_2
+         .word  mus_mvc_roll_1_2
 @ 073   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_7
+         .word  mus_mvc_roll_1_7
 @ 074   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_0_41
+         .word  mus_mvc_roll_1_41
 @ 075   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_roll_0_LOOP
+         .word  mus_mvc_roll_1_LOOP
         .byte   FINE
 
-@****************** Track 1 (Midi-Chn.9) ******************@
+@****************** Track 2 (Midi-Chn.9) ******************@
 
-mus_mvc_roll_1:
+mus_mvc_roll_2:
         .byte   KEYSH , mus_mvc_roll_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 0 @ 32 @ Drum
@@ -584,7 +587,7 @@ mus_mvc_roll_1:
 @ 001   ----------------------------------------
         .byte   W48
 @ 002   ----------------------------------------
-mus_mvc_roll_1_2:
+mus_mvc_roll_2_2:
         .byte           N06   , Cn1 , v100
         .byte           N06   , Gs1
         .byte           N06   , Bn0
@@ -632,12 +635,12 @@ mus_mvc_roll_1_2:
         .byte   PEND
 @ 003   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 004   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 005   ----------------------------------------
-mus_mvc_roll_1_5:
+mus_mvc_roll_2_5:
         .byte           N06   , Cn1 , v100
         .byte           N06   , Gs1
         .byte           N06   , Bn0
@@ -688,15 +691,15 @@ mus_mvc_roll_1_5:
         .byte   PEND
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 008   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 009   ----------------------------------------
-mus_mvc_roll_1_LOOP:
+mus_mvc_roll_2_LOOP:
         .byte           N06   , Cn1 , v100
         .byte           N06   , Gs1
         .byte           N06   , Dn1
@@ -803,48 +806,48 @@ mus_mvc_roll_1_LOOP:
         .byte   W06
 @ 011   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 017   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 018   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 019   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 025   ----------------------------------------
-mus_mvc_roll_1_25:
+mus_mvc_roll_2_25:
         .byte           N06   , Cn1 , v100
         .byte           N06   , Gs1
         .byte           N06   , Dn1
@@ -902,27 +905,27 @@ mus_mvc_roll_1_25:
         .byte   PEND
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 027   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 028   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 029   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 030   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 032   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 033   ----------------------------------------
-mus_mvc_roll_1_33:
+mus_mvc_roll_2_33:
         .byte           N06   , Cn1 , v100
         .byte           N06   , Gs1
         .byte           N03   , Dn1
@@ -986,7 +989,7 @@ mus_mvc_roll_1_33:
         .byte   W03
         .byte   PEND
 @ 034   ----------------------------------------
-mus_mvc_roll_1_34:
+mus_mvc_roll_2_34:
         .byte           N06   , Cn1 , v100
         .byte           N06   , Gs1
         .byte           N06   , An0
@@ -1034,25 +1037,25 @@ mus_mvc_roll_1_34:
         .byte   PEND
 @ 035   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 036   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 037   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 038   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_5
+         .word  mus_mvc_roll_2_5
 @ 039   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 040   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 041   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 042   ----------------------------------------
         .byte           N06   , Cn1 , v100
         .byte           N06   , Gs1
@@ -1112,7 +1115,7 @@ mus_mvc_roll_1_34:
         .byte           N06   , Bn0
         .byte   W06
 @ 043   ----------------------------------------
-mus_mvc_roll_1_43:
+mus_mvc_roll_2_43:
         .byte           N06   , Gs1 , v100
         .byte           N12   , An2 , v127
         .byte           N12   , Gn2
@@ -1162,105 +1165,105 @@ mus_mvc_roll_1_43:
         .byte   PEND
 @ 044   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 045   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 046   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 047   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 048   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 049   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 050   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 051   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 052   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 053   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 054   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 055   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 056   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 057   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 058   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_25
+         .word  mus_mvc_roll_2_25
 @ 059   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 060   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 061   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 062   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 063   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 064   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 065   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 066   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_33
+         .word  mus_mvc_roll_2_33
 @ 067   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_34
+         .word  mus_mvc_roll_2_34
 @ 068   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 069   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 070   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 071   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_5
+         .word  mus_mvc_roll_2_5
 @ 072   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 073   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 074   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_1_2
+         .word  mus_mvc_roll_2_2
 @ 075   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_roll_1_LOOP
+         .word  mus_mvc_roll_2_LOOP
         .byte   FINE
 
-@****************** Track 2 (Midi-Chn.4) ******************@
+@****************** Track 3 (Midi-Chn.4) ******************@
 
-mus_mvc_roll_2:
+mus_mvc_roll_3:
         .byte   KEYSH , mus_mvc_roll_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 29 
@@ -1282,7 +1285,7 @@ mus_mvc_roll_2:
 @ 008   ----------------------------------------
         .byte   W96
 @ 009   ----------------------------------------
-mus_mvc_roll_2_LOOP:
+mus_mvc_roll_3_LOOP:
         .byte   W72
         .byte           N06   , En4 , v127
         .byte   W06
@@ -1605,12 +1608,12 @@ mus_mvc_roll_2_LOOP:
         .byte   W96
 @ 075   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_roll_2_LOOP
+         .word  mus_mvc_roll_3_LOOP
         .byte   FINE
 
-@****************** Track 3 (Midi-Chn.1) ******************@
+@****************** Track 4 (Midi-Chn.1) ******************@
 
-mus_mvc_roll_3:
+mus_mvc_roll_4:
         .byte   KEYSH , mus_mvc_roll_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 12 @ 10
@@ -1618,21 +1621,21 @@ mus_mvc_roll_3:
 @ 001   ----------------------------------------
         .byte   W48
 @ 002   ----------------------------------------
-mus_mvc_roll_3_2:
+mus_mvc_roll_4_2:
         .byte           N12   , Cs5 , v100
         .byte   W48
         .byte                   Fs4
         .byte   W48
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_roll_3_3:
+mus_mvc_roll_4_3:
         .byte           N12   , Bn4 , v100
         .byte   W48
         .byte                   Fs4
         .byte   W48
         .byte   PEND
 @ 004   ----------------------------------------
-mus_mvc_roll_3_4:
+mus_mvc_roll_4_4:
         .byte           N12   , An4 , v100
         .byte   W24
         .byte                   Gs4
@@ -1643,7 +1646,7 @@ mus_mvc_roll_3_4:
         .byte   W36
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_roll_3_5:
+mus_mvc_roll_4_5:
         .byte           N12   , Fs4 , v100
         .byte   W48
         .byte                   Fs4
@@ -1656,14 +1659,14 @@ mus_mvc_roll_3_5:
         .byte   W12
         .byte   PEND
 @ 006   ----------------------------------------
-mus_mvc_roll_3_6:
+mus_mvc_roll_4_6:
         .byte           N12   , Cs5 , v100
         .byte   W48
         .byte                   Fs5
         .byte   W48
         .byte   PEND
 @ 007   ----------------------------------------
-mus_mvc_roll_3_7:
+mus_mvc_roll_4_7:
         .byte           N12   , En5 , v100
         .byte   W48
         .byte                   An5
@@ -1674,7 +1677,7 @@ mus_mvc_roll_3_7:
         .byte   W12
         .byte   PEND
 @ 008   ----------------------------------------
-mus_mvc_roll_3_8:
+mus_mvc_roll_4_8:
         .byte           N12   , Gs5 , v100
         .byte   W18
         .byte                   An5
@@ -1683,7 +1686,7 @@ mus_mvc_roll_3_8:
         .byte   W60
         .byte   PEND
 @ 009   ----------------------------------------
-mus_mvc_roll_3_LOOP:
+mus_mvc_roll_4_LOOP:
         .byte   W96
 @ 010   ----------------------------------------
         .byte   W96
@@ -1708,7 +1711,7 @@ mus_mvc_roll_3_LOOP:
 @ 020   ----------------------------------------
         .byte   W96
 @ 021   ----------------------------------------
-mus_mvc_roll_3_21:
+mus_mvc_roll_4_21:
         .byte           N12   , Dn5 , v100
         .byte   W24
         .byte                   Cn5
@@ -1726,7 +1729,7 @@ mus_mvc_roll_3_21:
 @ 024   ----------------------------------------
         .byte   W96
 @ 025   ----------------------------------------
-mus_mvc_roll_3_25:
+mus_mvc_roll_4_25:
         .byte           N12   , Dn4 , v100
         .byte   W24
         .byte                   En4
@@ -1757,25 +1760,25 @@ mus_mvc_roll_3_25:
         .byte   W96
 @ 035   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_2
+         .word  mus_mvc_roll_4_2
 @ 036   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_3
+         .word  mus_mvc_roll_4_3
 @ 037   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_4
+         .word  mus_mvc_roll_4_4
 @ 038   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_5
+         .word  mus_mvc_roll_4_5
 @ 039   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_6
+         .word  mus_mvc_roll_4_6
 @ 040   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_7
+         .word  mus_mvc_roll_4_7
 @ 041   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_8
+         .word  mus_mvc_roll_4_8
 @ 042   ----------------------------------------
         .byte   W96
 @ 043   ----------------------------------------
@@ -1802,7 +1805,7 @@ mus_mvc_roll_3_25:
         .byte   W96
 @ 054   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_21
+         .word  mus_mvc_roll_4_21
 @ 055   ----------------------------------------
         .byte           N12   , Gn4 , v100
         .byte   W96
@@ -1812,7 +1815,7 @@ mus_mvc_roll_3_25:
         .byte   W96
 @ 058   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_25
+         .word  mus_mvc_roll_4_25
 @ 059   ----------------------------------------
         .byte           N12   , Bn4 , v100
         .byte   W96
@@ -1834,33 +1837,33 @@ mus_mvc_roll_3_25:
         .byte   W96
 @ 068   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_2
+         .word  mus_mvc_roll_4_2
 @ 069   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_3
+         .word  mus_mvc_roll_4_3
 @ 070   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_4
+         .word  mus_mvc_roll_4_4
 @ 071   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_5
+         .word  mus_mvc_roll_4_5
 @ 072   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_6
+         .word  mus_mvc_roll_4_6
 @ 073   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_7
+         .word  mus_mvc_roll_4_7
 @ 074   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_3_8
+         .word  mus_mvc_roll_4_8
 @ 075   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_roll_3_LOOP
+         .word  mus_mvc_roll_4_LOOP
         .byte   FINE
 
-@****************** Track 4 (Midi-Chn.2) ******************@
+@****************** Track 5 (Midi-Chn.2) ******************@
 
-mus_mvc_roll_4:
+mus_mvc_roll_5:
         .byte   KEYSH , mus_mvc_roll_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 86 @ 105 @ Bass
@@ -1868,7 +1871,7 @@ mus_mvc_roll_4:
 @ 001   ----------------------------------------
         .byte   W48
 @ 002   ----------------------------------------
-mus_mvc_roll_4_2:
+mus_mvc_roll_5_2:
         .byte           N12   , Dn1 , v127
         .byte   W12
         .byte                   Dn1
@@ -1887,7 +1890,7 @@ mus_mvc_roll_4_2:
         .byte   W12
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_roll_4_3:
+mus_mvc_roll_5_3:
         .byte           N12   , En1 , v127
         .byte   W12
         .byte                   En1
@@ -1906,7 +1909,7 @@ mus_mvc_roll_4_3:
         .byte   W12
         .byte   PEND
 @ 004   ----------------------------------------
-mus_mvc_roll_4_4:
+mus_mvc_roll_5_4:
         .byte           N12   , Cs1 , v127
         .byte   W12
         .byte                   Cs1
@@ -1925,7 +1928,7 @@ mus_mvc_roll_4_4:
         .byte   W12
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_roll_4_5:
+mus_mvc_roll_5_5:
         .byte           N12   , Fs1 , v127
         .byte   W12
         .byte                   Fs1
@@ -1945,12 +1948,12 @@ mus_mvc_roll_4_5:
         .byte   PEND
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_2
+         .word  mus_mvc_roll_5_2
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_3
+         .word  mus_mvc_roll_5_3
 @ 008   ----------------------------------------
-mus_mvc_roll_4_8:
+mus_mvc_roll_5_8:
         .byte           N12   , Fs0 , v127
         .byte   W12
         .byte                   Fs0
@@ -1969,7 +1972,7 @@ mus_mvc_roll_4_8:
         .byte   W12
         .byte   PEND
 @ 009   ----------------------------------------
-mus_mvc_roll_4_LOOP:
+mus_mvc_roll_5_LOOP:
         .byte           N12   , Fs0 , v127
         .byte   W12
         .byte                   Fs0
@@ -1996,7 +1999,7 @@ mus_mvc_roll_4_LOOP:
         .byte                   En1
         .byte   W96
 @ 013   ----------------------------------------
-mus_mvc_roll_4_13:
+mus_mvc_roll_5_13:
         .byte           N72   , En0 , v127
         .byte   W72
         .byte           N24   , Bn0
@@ -2015,7 +2018,7 @@ mus_mvc_roll_4_13:
         .byte                   En0
         .byte   W96
 @ 018   ----------------------------------------
-mus_mvc_roll_4_18:
+mus_mvc_roll_5_18:
         .byte           N12   , An0 , v127
         .byte   W12
         .byte                   An0
@@ -2035,9 +2038,9 @@ mus_mvc_roll_4_18:
         .byte   PEND
 @ 019   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 020   ----------------------------------------
-mus_mvc_roll_4_20:
+mus_mvc_roll_5_20:
         .byte           N12   , Gn0 , v127
         .byte   W12
         .byte                   Gn0
@@ -2057,24 +2060,24 @@ mus_mvc_roll_4_20:
         .byte   PEND
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_20
+         .word  mus_mvc_roll_5_20
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_20
+         .word  mus_mvc_roll_5_20
 @ 025   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_20
+         .word  mus_mvc_roll_5_20
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_8
+         .word  mus_mvc_roll_5_8
 @ 027   ----------------------------------------
-mus_mvc_roll_4_27:
+mus_mvc_roll_5_27:
         .byte           N12   , Bn0 , v127
         .byte   W12
         .byte                   Bn0
@@ -2093,7 +2096,7 @@ mus_mvc_roll_4_27:
         .byte   W12
         .byte   PEND
 @ 028   ----------------------------------------
-mus_mvc_roll_4_28:
+mus_mvc_roll_5_28:
         .byte           N12   , En1 , v127
         .byte   W12
         .byte                   En1
@@ -2112,7 +2115,7 @@ mus_mvc_roll_4_28:
         .byte   W12
         .byte   PEND
 @ 029   ----------------------------------------
-mus_mvc_roll_4_29:
+mus_mvc_roll_5_29:
         .byte           N12   , Cs1 , v127
         .byte   W12
         .byte                   Cs1
@@ -2132,15 +2135,15 @@ mus_mvc_roll_4_29:
         .byte   PEND
 @ 030   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_20
+         .word  mus_mvc_roll_5_20
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 032   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 033   ----------------------------------------
-mus_mvc_roll_4_33:
+mus_mvc_roll_5_33:
         .byte           N12   , Bn0 , v127
         .byte   W12
         .byte                   Bn0
@@ -2160,28 +2163,28 @@ mus_mvc_roll_4_33:
         .byte   W96
 @ 035   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_2
+         .word  mus_mvc_roll_5_2
 @ 036   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_3
+         .word  mus_mvc_roll_5_3
 @ 037   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_4
+         .word  mus_mvc_roll_5_4
 @ 038   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_5
+         .word  mus_mvc_roll_5_5
 @ 039   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_2
+         .word  mus_mvc_roll_5_2
 @ 040   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_3
+         .word  mus_mvc_roll_5_3
 @ 041   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_8
+         .word  mus_mvc_roll_5_8
 @ 042   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_8
+         .word  mus_mvc_roll_5_8
 @ 043   ----------------------------------------
         .byte           N96   , Cn1 , v127
         .byte   W96
@@ -2193,7 +2196,7 @@ mus_mvc_roll_4_33:
         .byte   W96
 @ 046   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_13
+         .word  mus_mvc_roll_5_13
 @ 047   ----------------------------------------
         .byte           N96   , Cn1 , v127
         .byte   W96
@@ -2208,83 +2211,83 @@ mus_mvc_roll_4_33:
         .byte   W96
 @ 051   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 052   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 053   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_20
+         .word  mus_mvc_roll_5_20
 @ 054   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_20
+         .word  mus_mvc_roll_5_20
 @ 055   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 056   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 057   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_20
+         .word  mus_mvc_roll_5_20
 @ 058   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_20
+         .word  mus_mvc_roll_5_20
 @ 059   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_8
+         .word  mus_mvc_roll_5_8
 @ 060   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_27
+         .word  mus_mvc_roll_5_27
 @ 061   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_28
+         .word  mus_mvc_roll_5_28
 @ 062   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_29
+         .word  mus_mvc_roll_5_29
 @ 063   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_20
+         .word  mus_mvc_roll_5_20
 @ 064   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 065   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_18
+         .word  mus_mvc_roll_5_18
 @ 066   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_33
+         .word  mus_mvc_roll_5_33
 @ 067   ----------------------------------------
         .byte   W96
 @ 068   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_2
+         .word  mus_mvc_roll_5_2
 @ 069   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_3
+         .word  mus_mvc_roll_5_3
 @ 070   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_4
+         .word  mus_mvc_roll_5_4
 @ 071   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_5
+         .word  mus_mvc_roll_5_5
 @ 072   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_2
+         .word  mus_mvc_roll_5_2
 @ 073   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_3
+         .word  mus_mvc_roll_5_3
 @ 074   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_4_8
+         .word  mus_mvc_roll_5_8
 @ 075   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_roll_4_LOOP
+         .word  mus_mvc_roll_5_LOOP
         .byte   FINE
 
-@****************** Track 5 (Midi-Chn.3) ******************@
+@****************** Track 6 (Midi-Chn.3) ******************@
 
-mus_mvc_roll_5:
+mus_mvc_roll_6:
         .byte   KEYSH , mus_mvc_roll_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 101 @ 81
@@ -2292,7 +2295,7 @@ mus_mvc_roll_5:
 @ 001   ----------------------------------------
         .byte   W48
 @ 002   ----------------------------------------
-mus_mvc_roll_5_2:
+mus_mvc_roll_6_2:
         .byte           N06   , Dn2 , v096
         .byte   W06
         .byte                   Dn2
@@ -2327,7 +2330,7 @@ mus_mvc_roll_5_2:
         .byte   W06
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_roll_5_3:
+mus_mvc_roll_6_3:
         .byte           N06   , En2 , v096
         .byte   W06
         .byte                   En2
@@ -2362,7 +2365,7 @@ mus_mvc_roll_5_3:
         .byte   W06
         .byte   PEND
 @ 004   ----------------------------------------
-mus_mvc_roll_5_4:
+mus_mvc_roll_6_4:
         .byte           N06   , Cs2 , v096
         .byte   W06
         .byte                   Cs2
@@ -2397,7 +2400,7 @@ mus_mvc_roll_5_4:
         .byte   W06
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_roll_5_5:
+mus_mvc_roll_6_5:
         .byte           N06   , Fs2 , v096
         .byte   W06
         .byte                   Fs2
@@ -2433,12 +2436,12 @@ mus_mvc_roll_5_5:
         .byte   PEND
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_2
+         .word  mus_mvc_roll_6_2
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_3
+         .word  mus_mvc_roll_6_3
 @ 008   ----------------------------------------
-mus_mvc_roll_5_8:
+mus_mvc_roll_6_8:
         .byte           N06   , Fs1 , v096
         .byte   W06
         .byte                   Fs1
@@ -2473,7 +2476,7 @@ mus_mvc_roll_5_8:
         .byte   W06
         .byte   PEND
 @ 009   ----------------------------------------
-mus_mvc_roll_5_LOOP:
+mus_mvc_roll_6_LOOP:
         .byte           N06   , Fs1 , v096
         .byte   W06
         .byte                   Fs1
@@ -2507,7 +2510,7 @@ mus_mvc_roll_5_LOOP:
         .byte                   Fs1
         .byte   W06
 @ 010   ----------------------------------------
-mus_mvc_roll_5_10:
+mus_mvc_roll_6_10:
         .byte           N96   , Bn1 , v127
         .byte   W01
         .byte           BEND  , c_v+1
@@ -2536,7 +2539,7 @@ mus_mvc_roll_5_10:
         .byte   W84
         .byte   PEND
 @ 011   ----------------------------------------
-mus_mvc_roll_5_11:
+mus_mvc_roll_6_11:
         .byte           N96   , Cs2 , v127
         .byte           BEND  , c_v+0
         .byte   W01
@@ -2566,7 +2569,7 @@ mus_mvc_roll_5_11:
         .byte   W84
         .byte   PEND
 @ 012   ----------------------------------------
-mus_mvc_roll_5_12:
+mus_mvc_roll_6_12:
         .byte           N96   , Ds2 , v127
         .byte           BEND  , c_v+2
         .byte   W01
@@ -2596,7 +2599,7 @@ mus_mvc_roll_5_12:
         .byte   W84
         .byte   PEND
 @ 013   ----------------------------------------
-mus_mvc_roll_5_13:
+mus_mvc_roll_6_13:
         .byte           N72   , Ds1 , v127
         .byte           BEND  , c_v+0
         .byte   W01
@@ -2641,7 +2644,7 @@ mus_mvc_roll_5_13:
         .byte   W18
         .byte   PEND
 @ 014   ----------------------------------------
-mus_mvc_roll_5_14:
+mus_mvc_roll_6_14:
         .byte           N96   , Bn1 , v127
         .byte           BEND  , c_v+0
         .byte   W01
@@ -2672,9 +2675,9 @@ mus_mvc_roll_5_14:
         .byte   PEND
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_11
+         .word  mus_mvc_roll_6_11
 @ 016   ----------------------------------------
-mus_mvc_roll_5_16:
+mus_mvc_roll_6_16:
         .byte           N96   , Ds2 , v127
         .byte           BEND  , c_v+0
         .byte   W01
@@ -2704,7 +2707,7 @@ mus_mvc_roll_5_16:
         .byte   W84
         .byte   PEND
 @ 017   ----------------------------------------
-mus_mvc_roll_5_17:
+mus_mvc_roll_6_17:
         .byte           N96   , Ds1 , v127
         .byte           BEND  , c_v+0
         .byte   W01
@@ -2734,7 +2737,7 @@ mus_mvc_roll_5_17:
         .byte   W84
         .byte   PEND
 @ 018   ----------------------------------------
-mus_mvc_roll_5_18:
+mus_mvc_roll_6_18:
         .byte           BEND  , c_v+0
         .byte           N06   , An1 , v096
         .byte   W06
@@ -2770,7 +2773,7 @@ mus_mvc_roll_5_18:
         .byte   W06
         .byte   PEND
 @ 019   ----------------------------------------
-mus_mvc_roll_5_19:
+mus_mvc_roll_6_19:
         .byte           N06   , An1 , v096
         .byte   W06
         .byte                   An1
@@ -2805,7 +2808,7 @@ mus_mvc_roll_5_19:
         .byte   W06
         .byte   PEND
 @ 020   ----------------------------------------
-mus_mvc_roll_5_20:
+mus_mvc_roll_6_20:
         .byte           N06   , Gn1 , v096
         .byte   W06
         .byte                   Gn1
@@ -2841,24 +2844,24 @@ mus_mvc_roll_5_20:
         .byte   PEND
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_20
+         .word  mus_mvc_roll_6_20
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_19
+         .word  mus_mvc_roll_6_19
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_19
+         .word  mus_mvc_roll_6_19
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_20
+         .word  mus_mvc_roll_6_20
 @ 025   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_20
+         .word  mus_mvc_roll_6_20
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_8
+         .word  mus_mvc_roll_6_8
 @ 027   ----------------------------------------
-mus_mvc_roll_5_27:
+mus_mvc_roll_6_27:
         .byte           N06   , Bn1 , v096
         .byte   W06
         .byte                   Bn1
@@ -2893,7 +2896,7 @@ mus_mvc_roll_5_27:
         .byte   W06
         .byte   PEND
 @ 028   ----------------------------------------
-mus_mvc_roll_5_28:
+mus_mvc_roll_6_28:
         .byte           N06   , En2 , v096
         .byte   W06
         .byte                   En2
@@ -2928,7 +2931,7 @@ mus_mvc_roll_5_28:
         .byte   W06
         .byte   PEND
 @ 029   ----------------------------------------
-mus_mvc_roll_5_29:
+mus_mvc_roll_6_29:
         .byte           N06   , Cs2 , v096
         .byte   W06
         .byte                   Cs2
@@ -2964,15 +2967,15 @@ mus_mvc_roll_5_29:
         .byte   PEND
 @ 030   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_20
+         .word  mus_mvc_roll_6_20
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_19
+         .word  mus_mvc_roll_6_19
 @ 032   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_19
+         .word  mus_mvc_roll_6_19
 @ 033   ----------------------------------------
-mus_mvc_roll_5_33:
+mus_mvc_roll_6_33:
         .byte           N06   , Bn1 , v096
         .byte   W06
         .byte                   Bn1
@@ -3010,131 +3013,131 @@ mus_mvc_roll_5_33:
         .byte   W96
 @ 035   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_2
+         .word  mus_mvc_roll_6_2
 @ 036   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_3
+         .word  mus_mvc_roll_6_3
 @ 037   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_4
+         .word  mus_mvc_roll_6_4
 @ 038   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_5
+         .word  mus_mvc_roll_6_5
 @ 039   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_2
+         .word  mus_mvc_roll_6_2
 @ 040   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_3
+         .word  mus_mvc_roll_6_3
 @ 041   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_8
+         .word  mus_mvc_roll_6_8
 @ 042   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_8
+         .word  mus_mvc_roll_6_8
 @ 043   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_10
+         .word  mus_mvc_roll_6_10
 @ 044   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_11
+         .word  mus_mvc_roll_6_11
 @ 045   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_12
+         .word  mus_mvc_roll_6_12
 @ 046   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_13
+         .word  mus_mvc_roll_6_13
 @ 047   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_14
+         .word  mus_mvc_roll_6_14
 @ 048   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_11
+         .word  mus_mvc_roll_6_11
 @ 049   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_16
+         .word  mus_mvc_roll_6_16
 @ 050   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_17
+         .word  mus_mvc_roll_6_17
 @ 051   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_18
+         .word  mus_mvc_roll_6_18
 @ 052   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_19
+         .word  mus_mvc_roll_6_19
 @ 053   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_20
+         .word  mus_mvc_roll_6_20
 @ 054   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_20
+         .word  mus_mvc_roll_6_20
 @ 055   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_19
+         .word  mus_mvc_roll_6_19
 @ 056   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_19
+         .word  mus_mvc_roll_6_19
 @ 057   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_20
+         .word  mus_mvc_roll_6_20
 @ 058   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_20
+         .word  mus_mvc_roll_6_20
 @ 059   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_8
+         .word  mus_mvc_roll_6_8
 @ 060   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_27
+         .word  mus_mvc_roll_6_27
 @ 061   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_28
+         .word  mus_mvc_roll_6_28
 @ 062   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_29
+         .word  mus_mvc_roll_6_29
 @ 063   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_20
+         .word  mus_mvc_roll_6_20
 @ 064   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_19
+         .word  mus_mvc_roll_6_19
 @ 065   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_19
+         .word  mus_mvc_roll_6_19
 @ 066   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_33
+         .word  mus_mvc_roll_6_33
 @ 067   ----------------------------------------
         .byte   W96
 @ 068   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_2
+         .word  mus_mvc_roll_6_2
 @ 069   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_3
+         .word  mus_mvc_roll_6_3
 @ 070   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_4
+         .word  mus_mvc_roll_6_4
 @ 071   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_5
+         .word  mus_mvc_roll_6_5
 @ 072   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_2
+         .word  mus_mvc_roll_6_2
 @ 073   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_3
+         .word  mus_mvc_roll_6_3
 @ 074   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_8
+         .word  mus_mvc_roll_6_8
 @ 075   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_roll_5_LOOP
+         .word  mus_mvc_roll_6_LOOP
         .byte   FINE
 
-@****************** Track 6 (Midi-Chn.5) ******************@
+@****************** Track 7 (Midi-Chn.5) ******************@
 
-mus_mvc_roll_6:
+mus_mvc_roll_7:
         .byte   KEYSH , mus_mvc_roll_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 12
@@ -3156,10 +3159,10 @@ mus_mvc_roll_6:
 @ 008   ----------------------------------------
         .byte   W96
 @ 009   ----------------------------------------
-mus_mvc_roll_6_LOOP:
+mus_mvc_roll_7_LOOP:
         .byte   W96
 @ 010   ----------------------------------------
-mus_mvc_roll_6_10:
+mus_mvc_roll_7_10:
         .byte           N06   , Bn5 , v100
         .byte   W06
         .byte                   Gn5
@@ -3194,7 +3197,7 @@ mus_mvc_roll_6_10:
         .byte   W06
         .byte   PEND
 @ 011   ----------------------------------------
-mus_mvc_roll_6_11:
+mus_mvc_roll_7_11:
         .byte           N06   , Bn5 , v100
         .byte   W06
         .byte                   Gn5
@@ -3230,22 +3233,22 @@ mus_mvc_roll_6_11:
         .byte   PEND
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_10
+         .word  mus_mvc_roll_7_10
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_11
+         .word  mus_mvc_roll_7_11
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_10
+         .word  mus_mvc_roll_7_10
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_11
+         .word  mus_mvc_roll_7_11
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_10
+         .word  mus_mvc_roll_7_10
 @ 017   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_11
+         .word  mus_mvc_roll_7_11
 @ 018   ----------------------------------------
         .byte   W96
 @ 019   ----------------------------------------
@@ -3298,28 +3301,28 @@ mus_mvc_roll_6_11:
         .byte   W96
 @ 043   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_10
+         .word  mus_mvc_roll_7_10
 @ 044   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_11
+         .word  mus_mvc_roll_7_11
 @ 045   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_10
+         .word  mus_mvc_roll_7_10
 @ 046   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_11
+         .word  mus_mvc_roll_7_11
 @ 047   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_10
+         .word  mus_mvc_roll_7_10
 @ 048   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_11
+         .word  mus_mvc_roll_7_11
 @ 049   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_10
+         .word  mus_mvc_roll_7_10
 @ 050   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_6_11
+         .word  mus_mvc_roll_7_11
 @ 051   ----------------------------------------
         .byte   W96
 @ 052   ----------------------------------------
@@ -3370,12 +3373,12 @@ mus_mvc_roll_6_11:
         .byte   W96
 @ 075   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_roll_6_LOOP
+         .word  mus_mvc_roll_7_LOOP
         .byte   FINE
 
-@****************** Track 7 (Midi-Chn.6) ******************@
+@****************** Track 8 (Midi-Chn.6) ******************@
 
-mus_mvc_roll_7:
+mus_mvc_roll_8:
         .byte   KEYSH , mus_mvc_roll_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 5
@@ -3397,7 +3400,7 @@ mus_mvc_roll_7:
 @ 008   ----------------------------------------
         .byte   W96
 @ 009   ----------------------------------------
-mus_mvc_roll_7_LOOP:
+mus_mvc_roll_8_LOOP:
         .byte   W96
 @ 010   ----------------------------------------
         .byte   W96
@@ -3449,7 +3452,7 @@ mus_mvc_roll_7_LOOP:
         .byte           N12   , Cs2
         .byte   W12
 @ 027   ----------------------------------------
-mus_mvc_roll_7_27:
+mus_mvc_roll_8_27:
         .byte   W18
         .byte           N12   , Ds3 , v100
         .byte           N12   , Ds2
@@ -3468,7 +3471,7 @@ mus_mvc_roll_7_27:
         .byte   W12
         .byte   PEND
 @ 028   ----------------------------------------
-mus_mvc_roll_7_28:
+mus_mvc_roll_8_28:
         .byte   W18
         .byte           N12   , En3 , v100
         .byte           N12   , En2
@@ -3484,7 +3487,7 @@ mus_mvc_roll_7_28:
         .byte   W24
         .byte   PEND
 @ 029   ----------------------------------------
-mus_mvc_roll_7_29:
+mus_mvc_roll_8_29:
         .byte   W18
         .byte           N12   , Cs3 , v100
         .byte           N12   , Cs2
@@ -3500,7 +3503,7 @@ mus_mvc_roll_7_29:
         .byte   W24
         .byte   PEND
 @ 030   ----------------------------------------
-mus_mvc_roll_7_30:
+mus_mvc_roll_8_30:
         .byte   W18
         .byte           N12   , Bn2 , v100
         .byte           N12   , Bn1
@@ -3517,9 +3520,9 @@ mus_mvc_roll_7_30:
         .byte   PEND
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_29
+         .word  mus_mvc_roll_8_29
 @ 032   ----------------------------------------
-mus_mvc_roll_7_32:
+mus_mvc_roll_8_32:
         .byte   W18
         .byte           N12   , Cn3 , v100
         .byte           N12   , Cn2
@@ -3535,7 +3538,7 @@ mus_mvc_roll_7_32:
         .byte   W24
         .byte   PEND
 @ 033   ----------------------------------------
-mus_mvc_roll_7_33:
+mus_mvc_roll_8_33:
         .byte           N12   , Bn2 , v100
         .byte           N12   , Bn1
         .byte   W18
@@ -3583,13 +3586,13 @@ mus_mvc_roll_7_33:
         .byte           N12   , An2
         .byte   W12
 @ 043   ----------------------------------------
-mus_mvc_roll_7_43:
+mus_mvc_roll_8_43:
         .byte           N96   , En3 , v127
         .byte           N96   , En2
         .byte   W96
         .byte   PEND
 @ 044   ----------------------------------------
-mus_mvc_roll_7_44:
+mus_mvc_roll_8_44:
         .byte   W48
         .byte           N12   , En3 , v127
         .byte           N12   , En2
@@ -3605,23 +3608,23 @@ mus_mvc_roll_7_44:
         .byte   W12
         .byte   PEND
 @ 045   ----------------------------------------
-mus_mvc_roll_7_45:
+mus_mvc_roll_8_45:
         .byte           N96   , Bn3 , v127
         .byte           N96   , Bn2
         .byte   W96
         .byte   PEND
 @ 046   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_44
+         .word  mus_mvc_roll_8_44
 @ 047   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_43
+         .word  mus_mvc_roll_8_43
 @ 048   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_44
+         .word  mus_mvc_roll_8_44
 @ 049   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_45
+         .word  mus_mvc_roll_8_45
 @ 050   ----------------------------------------
         .byte           N96   , En4 , v127
         .byte           N96   , En2
@@ -3663,25 +3666,25 @@ mus_mvc_roll_7_45:
         .byte   W12
 @ 060   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_27
+         .word  mus_mvc_roll_8_27
 @ 061   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_28
+         .word  mus_mvc_roll_8_28
 @ 062   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_29
+         .word  mus_mvc_roll_8_29
 @ 063   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_30
+         .word  mus_mvc_roll_8_30
 @ 064   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_29
+         .word  mus_mvc_roll_8_29
 @ 065   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_32
+         .word  mus_mvc_roll_8_32
 @ 066   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_7_33
+         .word  mus_mvc_roll_8_33
 @ 067   ----------------------------------------
         .byte   W96
 @ 068   ----------------------------------------
@@ -3700,12 +3703,12 @@ mus_mvc_roll_7_45:
         .byte   W96
 @ 075   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_roll_7_LOOP
+         .word  mus_mvc_roll_8_LOOP
         .byte   FINE
 
-@****************** Track 8 (Midi-Chn.7) ******************@
+@****************** Track 9 (Midi-Chn.7) ******************@
 
-mus_mvc_roll_8:
+mus_mvc_roll_9:
         .byte   KEYSH , mus_mvc_roll_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 29
@@ -3713,7 +3716,7 @@ mus_mvc_roll_8:
 @ 001   ----------------------------------------
         .byte   W48
 @ 002   ----------------------------------------
-mus_mvc_roll_8_2:
+mus_mvc_roll_9_2:
         .byte           N06   , Dn1 , v096
         .byte   W06
         .byte                   Dn1
@@ -3748,7 +3751,7 @@ mus_mvc_roll_8_2:
         .byte   W06
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_roll_8_3:
+mus_mvc_roll_9_3:
         .byte           N06   , En1 , v096
         .byte   W06
         .byte                   En1
@@ -3783,7 +3786,7 @@ mus_mvc_roll_8_3:
         .byte   W06
         .byte   PEND
 @ 004   ----------------------------------------
-mus_mvc_roll_8_4:
+mus_mvc_roll_9_4:
         .byte           N06   , Cs1 , v096
         .byte   W06
         .byte                   Cs1
@@ -3818,7 +3821,7 @@ mus_mvc_roll_8_4:
         .byte   W06
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_roll_8_5:
+mus_mvc_roll_9_5:
         .byte           N06   , Fs1 , v096
         .byte   W06
         .byte                   Fs1
@@ -3854,12 +3857,12 @@ mus_mvc_roll_8_5:
         .byte   PEND
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_2
+         .word  mus_mvc_roll_9_2
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_3
+         .word  mus_mvc_roll_9_3
 @ 008   ----------------------------------------
-mus_mvc_roll_8_8:
+mus_mvc_roll_9_8:
         .byte           N06   , Fs0 , v096
         .byte   W06
         .byte                   Fs0
@@ -3894,7 +3897,7 @@ mus_mvc_roll_8_8:
         .byte   W06
         .byte   PEND
 @ 009   ----------------------------------------
-mus_mvc_roll_8_LOOP:
+mus_mvc_roll_9_LOOP:
         .byte           N06   , Fs0 , v096
         .byte   W06
         .byte                   Fs0
@@ -3928,7 +3931,7 @@ mus_mvc_roll_8_LOOP:
         .byte                   Fs0
         .byte   W06
 @ 010   ----------------------------------------
-mus_mvc_roll_8_10:
+mus_mvc_roll_9_10:
         .byte           N96   , Bn0 , v127
         .byte   W01
         .byte           BEND  , c_v+1
@@ -3957,7 +3960,7 @@ mus_mvc_roll_8_10:
         .byte   W84
         .byte   PEND
 @ 011   ----------------------------------------
-mus_mvc_roll_8_11:
+mus_mvc_roll_9_11:
         .byte           N96   , Cs1 , v127
         .byte           BEND  , c_v+0
         .byte   W01
@@ -3987,7 +3990,7 @@ mus_mvc_roll_8_11:
         .byte   W84
         .byte   PEND
 @ 012   ----------------------------------------
-mus_mvc_roll_8_12:
+mus_mvc_roll_9_12:
         .byte           N96   , Ds1 , v127
         .byte           BEND  , c_v+2
         .byte   W01
@@ -4017,7 +4020,7 @@ mus_mvc_roll_8_12:
         .byte   W84
         .byte   PEND
 @ 013   ----------------------------------------
-mus_mvc_roll_8_13:
+mus_mvc_roll_9_13:
         .byte           N72   , Ds0 , v127
         .byte           BEND  , c_v+0
         .byte   W01
@@ -4062,7 +4065,7 @@ mus_mvc_roll_8_13:
         .byte   W18
         .byte   PEND
 @ 014   ----------------------------------------
-mus_mvc_roll_8_14:
+mus_mvc_roll_9_14:
         .byte           N96   , Bn0 , v127
         .byte           BEND  , c_v+0
         .byte   W01
@@ -4093,12 +4096,12 @@ mus_mvc_roll_8_14:
         .byte   PEND
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_11
+         .word  mus_mvc_roll_9_11
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_17
+         .word  mus_mvc_roll_6_17
 @ 017   ----------------------------------------
-mus_mvc_roll_8_17:
+mus_mvc_roll_9_17:
         .byte           N96   , Ds0 , v127
         .byte           BEND  , c_v+0
         .byte   W01
@@ -4128,7 +4131,7 @@ mus_mvc_roll_8_17:
         .byte   W84
         .byte   PEND
 @ 018   ----------------------------------------
-mus_mvc_roll_8_18:
+mus_mvc_roll_9_18:
         .byte           BEND  , c_v+0
         .byte           N06   , An0 , v096
         .byte   W06
@@ -4164,7 +4167,7 @@ mus_mvc_roll_8_18:
         .byte   W06
         .byte   PEND
 @ 019   ----------------------------------------
-mus_mvc_roll_8_19:
+mus_mvc_roll_9_19:
         .byte           N06   , An0 , v096
         .byte   W06
         .byte                   An0
@@ -4199,7 +4202,7 @@ mus_mvc_roll_8_19:
         .byte   W06
         .byte   PEND
 @ 020   ----------------------------------------
-mus_mvc_roll_8_20:
+mus_mvc_roll_9_20:
         .byte           N06   , Gn0 , v096
         .byte   W06
         .byte                   Gn0
@@ -4235,24 +4238,24 @@ mus_mvc_roll_8_20:
         .byte   PEND
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_20
+         .word  mus_mvc_roll_9_20
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_19
+         .word  mus_mvc_roll_9_19
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_19
+         .word  mus_mvc_roll_9_19
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_20
+         .word  mus_mvc_roll_9_20
 @ 025   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_20
+         .word  mus_mvc_roll_9_20
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_8
+         .word  mus_mvc_roll_9_8
 @ 027   ----------------------------------------
-mus_mvc_roll_8_27:
+mus_mvc_roll_9_27:
         .byte           N06   , Bn0 , v096
         .byte   W06
         .byte                   Bn0
@@ -4287,7 +4290,7 @@ mus_mvc_roll_8_27:
         .byte   W06
         .byte   PEND
 @ 028   ----------------------------------------
-mus_mvc_roll_8_28:
+mus_mvc_roll_9_28:
         .byte           N06   , En1 , v096
         .byte   W06
         .byte                   En1
@@ -4322,7 +4325,7 @@ mus_mvc_roll_8_28:
         .byte   W06
         .byte   PEND
 @ 029   ----------------------------------------
-mus_mvc_roll_8_29:
+mus_mvc_roll_9_29:
         .byte           N06   , Cs1 , v096
         .byte   W06
         .byte                   Cs1
@@ -4358,15 +4361,15 @@ mus_mvc_roll_8_29:
         .byte   PEND
 @ 030   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_20
+         .word  mus_mvc_roll_9_20
 @ 031   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_19
+         .word  mus_mvc_roll_9_19
 @ 032   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_19
+         .word  mus_mvc_roll_9_19
 @ 033   ----------------------------------------
-mus_mvc_roll_8_33:
+mus_mvc_roll_9_33:
         .byte           N06   , Bn0 , v096
         .byte   W06
         .byte                   Bn0
@@ -4404,131 +4407,131 @@ mus_mvc_roll_8_33:
         .byte   W96
 @ 035   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_2
+         .word  mus_mvc_roll_9_2
 @ 036   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_3
+         .word  mus_mvc_roll_9_3
 @ 037   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_4
+         .word  mus_mvc_roll_9_4
 @ 038   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_5
+         .word  mus_mvc_roll_9_5
 @ 039   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_2
+         .word  mus_mvc_roll_9_2
 @ 040   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_3
+         .word  mus_mvc_roll_9_3
 @ 041   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_8
+         .word  mus_mvc_roll_9_8
 @ 042   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_8
+         .word  mus_mvc_roll_9_8
 @ 043   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_10
+         .word  mus_mvc_roll_9_10
 @ 044   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_11
+         .word  mus_mvc_roll_9_11
 @ 045   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_12
+         .word  mus_mvc_roll_9_12
 @ 046   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_13
+         .word  mus_mvc_roll_9_13
 @ 047   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_14
+         .word  mus_mvc_roll_9_14
 @ 048   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_11
+         .word  mus_mvc_roll_9_11
 @ 049   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_5_17
+         .word  mus_mvc_roll_6_17
 @ 050   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_17
+         .word  mus_mvc_roll_9_17
 @ 051   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_18
+         .word  mus_mvc_roll_9_18
 @ 052   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_19
+         .word  mus_mvc_roll_9_19
 @ 053   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_20
+         .word  mus_mvc_roll_9_20
 @ 054   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_20
+         .word  mus_mvc_roll_9_20
 @ 055   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_19
+         .word  mus_mvc_roll_9_19
 @ 056   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_19
+         .word  mus_mvc_roll_9_19
 @ 057   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_20
+         .word  mus_mvc_roll_9_20
 @ 058   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_20
+         .word  mus_mvc_roll_9_20
 @ 059   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_8
+         .word  mus_mvc_roll_9_8
 @ 060   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_27
+         .word  mus_mvc_roll_9_27
 @ 061   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_28
+         .word  mus_mvc_roll_9_28
 @ 062   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_29
+         .word  mus_mvc_roll_9_29
 @ 063   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_20
+         .word  mus_mvc_roll_9_20
 @ 064   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_19
+         .word  mus_mvc_roll_9_19
 @ 065   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_19
+         .word  mus_mvc_roll_9_19
 @ 066   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_33
+         .word  mus_mvc_roll_9_33
 @ 067   ----------------------------------------
         .byte   W96
 @ 068   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_2
+         .word  mus_mvc_roll_9_2
 @ 069   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_3
+         .word  mus_mvc_roll_9_3
 @ 070   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_4
+         .word  mus_mvc_roll_9_4
 @ 071   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_5
+         .word  mus_mvc_roll_9_5
 @ 072   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_2
+         .word  mus_mvc_roll_9_2
 @ 073   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_3
+         .word  mus_mvc_roll_9_3
 @ 074   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_8_8
+         .word  mus_mvc_roll_9_8
 @ 075   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_roll_8_LOOP
+         .word  mus_mvc_roll_9_LOOP
         .byte   FINE
 
-@****************** Track 9 (Midi-Chn.8) ******************@
+@****************** Track 10 (Midi-Chn.8) ******************@
 
-mus_mvc_roll_9:
+mus_mvc_roll_10:
         .byte   KEYSH , mus_mvc_roll_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 48
@@ -4536,7 +4539,7 @@ mus_mvc_roll_9:
 @ 001   ----------------------------------------
         .byte   W48
 @ 002   ----------------------------------------
-mus_mvc_roll_9_2:
+mus_mvc_roll_10_2:
         .byte           N96   , Dn5 , v100
         .byte   W92
         .byte   W01
@@ -4548,7 +4551,7 @@ mus_mvc_roll_9_2:
         .byte   W01
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_roll_9_3:
+mus_mvc_roll_10_3:
         .byte           BEND  , c_v+0
         .byte           N96   , En5 , v100
         .byte   W92
@@ -4561,7 +4564,7 @@ mus_mvc_roll_9_3:
         .byte   W01
         .byte   PEND
 @ 004   ----------------------------------------
-mus_mvc_roll_9_4:
+mus_mvc_roll_10_4:
         .byte           BEND  , c_v+0
         .byte           N96   , Cs5 , v100
         .byte   W92
@@ -4574,7 +4577,7 @@ mus_mvc_roll_9_4:
         .byte   W01
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_roll_9_5:
+mus_mvc_roll_10_5:
         .byte           BEND  , c_v+0
         .byte           N72   , Fs5 , v100
         .byte   W72
@@ -4595,7 +4598,7 @@ mus_mvc_roll_9_5:
         .byte   W01
         .byte   PEND
 @ 006   ----------------------------------------
-mus_mvc_roll_9_6:
+mus_mvc_roll_10_6:
         .byte           BEND  , c_v+0
         .byte           N96   , Dn5 , v100
         .byte   W92
@@ -4608,7 +4611,7 @@ mus_mvc_roll_9_6:
         .byte   W01
         .byte   PEND
 @ 007   ----------------------------------------
-mus_mvc_roll_9_7:
+mus_mvc_roll_10_7:
         .byte           BEND  , c_v+0
         .byte           N96   , En5 , v100
         .byte   W90
@@ -4626,13 +4629,13 @@ mus_mvc_roll_9_7:
         .byte   W01
         .byte   PEND
 @ 008   ----------------------------------------
-mus_mvc_roll_9_8:
+mus_mvc_roll_10_8:
         .byte           BEND  , c_v+0
         .byte           TIE   , Fs5 , v100
         .byte   W96
         .byte   PEND
 @ 009   ----------------------------------------
-mus_mvc_roll_9_LOOP:
+mus_mvc_roll_10_LOOP:
         .byte   W48
         .byte           EOT   , Fs5
         .byte   W48
@@ -4640,7 +4643,7 @@ mus_mvc_roll_9_LOOP:
         .byte           N96   , Cn5 , v100
         .byte   W96
 @ 011   ----------------------------------------
-mus_mvc_roll_9_11:
+mus_mvc_roll_10_11:
         .byte           N96   , Dn5 , v100
         .byte           BEND  , c_v+3
         .byte   W01
@@ -4653,7 +4656,7 @@ mus_mvc_roll_9_11:
         .byte   W01
         .byte   PEND
 @ 012   ----------------------------------------
-mus_mvc_roll_9_12:
+mus_mvc_roll_10_12:
         .byte           N96   , En5 , v100
         .byte           BEND  , c_v+3
         .byte   W01
@@ -4671,7 +4674,7 @@ mus_mvc_roll_9_12:
         .byte   W01
         .byte   PEND
 @ 013   ----------------------------------------
-mus_mvc_roll_9_13:
+mus_mvc_roll_10_13:
         .byte           BEND  , c_v+0
         .byte           N48   , Bn5 , v100
         .byte   W48
@@ -4694,7 +4697,7 @@ mus_mvc_roll_9_13:
         .byte   W01
         .byte   PEND
 @ 014   ----------------------------------------
-mus_mvc_roll_9_14:
+mus_mvc_roll_10_14:
         .byte           BEND  , c_v+0
         .byte           N96   , Gn5 , v100
         .byte   W92
@@ -4707,7 +4710,7 @@ mus_mvc_roll_9_14:
         .byte   W01
         .byte   PEND
 @ 015   ----------------------------------------
-mus_mvc_roll_9_15:
+mus_mvc_roll_10_15:
         .byte           BEND  , c_v+0
         .byte           N96   , An5 , v100
         .byte   W90
@@ -4725,7 +4728,7 @@ mus_mvc_roll_9_15:
         .byte   W01
         .byte   PEND
 @ 016   ----------------------------------------
-mus_mvc_roll_9_16:
+mus_mvc_roll_10_16:
         .byte           BEND  , c_v+0
         .byte           N36   , Fs5 , v100
         .byte   W36
@@ -4746,7 +4749,7 @@ mus_mvc_roll_9_16:
         .byte   W01
         .byte   PEND
 @ 017   ----------------------------------------
-mus_mvc_roll_9_17:
+mus_mvc_roll_10_17:
         .byte           BEND  , c_v+0
         .byte           N36   , Dn5 , v100
         .byte   W32
@@ -4767,7 +4770,7 @@ mus_mvc_roll_9_17:
 @ 019   ----------------------------------------
         .byte   W96
 @ 020   ----------------------------------------
-mus_mvc_roll_9_20:
+mus_mvc_roll_10_20:
         .byte           EOT   , En4
         .byte           TIE   , Dn4 , v100
         .byte   W96
@@ -4775,7 +4778,7 @@ mus_mvc_roll_9_20:
 @ 021   ----------------------------------------
         .byte   W96
 @ 022   ----------------------------------------
-mus_mvc_roll_9_22:
+mus_mvc_roll_10_22:
         .byte           EOT   , Dn4
         .byte           TIE   , En4 , v100
         .byte   W96
@@ -4783,7 +4786,7 @@ mus_mvc_roll_9_22:
 @ 023   ----------------------------------------
         .byte   W96
 @ 024   ----------------------------------------
-mus_mvc_roll_9_24:
+mus_mvc_roll_10_24:
         .byte           EOT   , En4
         .byte           TIE   , Fs4 , v100
         .byte   W96
@@ -4791,7 +4794,7 @@ mus_mvc_roll_9_24:
 @ 025   ----------------------------------------
         .byte   W96
 @ 026   ----------------------------------------
-mus_mvc_roll_9_26:
+mus_mvc_roll_10_26:
         .byte           EOT   , Fs4
         .byte           N96   , En4 , v100
         .byte   W96
@@ -4800,14 +4803,14 @@ mus_mvc_roll_9_26:
         .byte                   Ds4
         .byte   W96
 @ 028   ----------------------------------------
-mus_mvc_roll_9_28:
+mus_mvc_roll_10_28:
         .byte           N48   , En4 , v100
         .byte   W48
         .byte                   Dn4
         .byte   W48
         .byte   PEND
 @ 029   ----------------------------------------
-mus_mvc_roll_9_29:
+mus_mvc_roll_10_29:
         .byte           N48   , Cs4 , v100
         .byte   W48
         .byte                   An3
@@ -4823,7 +4826,7 @@ mus_mvc_roll_9_29:
         .byte                   En4
         .byte   W96
 @ 033   ----------------------------------------
-mus_mvc_roll_9_33:
+mus_mvc_roll_10_33:
         .byte           N36   , Fs4 , v100
         .byte   W36
         .byte           N12   , Gn4
@@ -4835,25 +4838,25 @@ mus_mvc_roll_9_33:
         .byte   W96
 @ 035   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_2
+         .word  mus_mvc_roll_10_2
 @ 036   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_3
+         .word  mus_mvc_roll_10_3
 @ 037   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_4
+         .word  mus_mvc_roll_10_4
 @ 038   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_5
+         .word  mus_mvc_roll_10_5
 @ 039   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_6
+         .word  mus_mvc_roll_10_6
 @ 040   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_7
+         .word  mus_mvc_roll_10_7
 @ 041   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_8
+         .word  mus_mvc_roll_10_8
 @ 042   ----------------------------------------
         .byte   W48
         .byte           EOT   , Fs5
@@ -4863,25 +4866,25 @@ mus_mvc_roll_9_33:
         .byte   W96
 @ 044   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_11
+         .word  mus_mvc_roll_10_11
 @ 045   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_12
+         .word  mus_mvc_roll_10_12
 @ 046   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_13
+         .word  mus_mvc_roll_10_13
 @ 047   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_14
+         .word  mus_mvc_roll_10_14
 @ 048   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_15
+         .word  mus_mvc_roll_10_15
 @ 049   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_16
+         .word  mus_mvc_roll_10_16
 @ 050   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_17
+         .word  mus_mvc_roll_10_17
 @ 051   ----------------------------------------
         .byte           TIE   , En4 , v100
         .byte   W96
@@ -4889,31 +4892,31 @@ mus_mvc_roll_9_33:
         .byte   W96
 @ 053   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_20
+         .word  mus_mvc_roll_10_20
 @ 054   ----------------------------------------
         .byte   W96
 @ 055   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_22
+         .word  mus_mvc_roll_10_22
 @ 056   ----------------------------------------
         .byte   W96
 @ 057   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_24
+         .word  mus_mvc_roll_10_24
 @ 058   ----------------------------------------
         .byte   W96
 @ 059   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_26
+         .word  mus_mvc_roll_10_26
 @ 060   ----------------------------------------
         .byte           N96   , Ds4 , v100
         .byte   W96
 @ 061   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_28
+         .word  mus_mvc_roll_10_28
 @ 062   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_29
+         .word  mus_mvc_roll_10_29
 @ 063   ----------------------------------------
         .byte           N96   , Gn4 , v100
         .byte   W96
@@ -4925,33 +4928,33 @@ mus_mvc_roll_9_33:
         .byte   W96
 @ 066   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_33
+         .word  mus_mvc_roll_10_33
 @ 067   ----------------------------------------
         .byte   W96
 @ 068   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_2
+         .word  mus_mvc_roll_10_2
 @ 069   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_3
+         .word  mus_mvc_roll_10_3
 @ 070   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_4
+         .word  mus_mvc_roll_10_4
 @ 071   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_5
+         .word  mus_mvc_roll_10_5
 @ 072   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_6
+         .word  mus_mvc_roll_10_6
 @ 073   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_7
+         .word  mus_mvc_roll_10_7
 @ 074   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_roll_9_8
+         .word  mus_mvc_roll_10_8
 @ 075   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_roll_9_LOOP
+         .word  mus_mvc_roll_10_LOOP
         .byte   FINE
 
 
@@ -4966,7 +4969,6 @@ mus_mvc_roll:
 
         .word   mus_mvc_roll_grp       
 
-        .word   mus_mvc_roll_0
         .word   mus_mvc_roll_1
         .word   mus_mvc_roll_2
         .word   mus_mvc_roll_3
@@ -4976,5 +4978,6 @@ mus_mvc_roll:
         .word   mus_mvc_roll_7
         .word   mus_mvc_roll_8
         .word   mus_mvc_roll_9
+        .word   mus_mvc_roll_10
 
         .end

@@ -2,17 +2,20 @@
 
         .equ    mus_mvc_megaman_grp, voicegroup_custom_205_experimental
         .equ    mus_mvc_megaman_pri, 0
-	.equ	mus_mvc_megaman_mvl, 150
+        .equ	mus_mvc_megaman_mvl, 150
         .equ    mus_mvc_megaman_rev, reverb_set+50
         .equ    mus_mvc_megaman_key, 0
+        .equ	mus_mvc_megaman_tbs, 1
+        .equ	mus_mvc_megaman_exg, 0
+        .equ	mus_mvc_megaman_cmp, 1
 
         .section .rodata
         .global mus_mvc_megaman
         .align  2
 
-@****************** Track 0 (Midi-Chn.0) ******************@
+@****************** Track 1 (Midi-Chn.0) ******************@
 
-mus_mvc_megaman_0:
+mus_mvc_megaman_1:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 99 @ 37 @ Elec Pick
@@ -20,7 +23,7 @@ mus_mvc_megaman_0:
 @ 001   ----------------------------------------
         .byte   W96
 @ 002   ----------------------------------------
-mus_mvc_megaman_0_2:
+mus_mvc_megaman_1_2:
         .byte           N09   , An0 , v096
         .byte   W12
         .byte                   An0 , v080
@@ -39,7 +42,7 @@ mus_mvc_megaman_0_2:
         .byte   W12
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_megaman_0_LOOP:
+mus_mvc_megaman_1_LOOP:
         .byte   W12
         .byte           N09   , Gn0 , v080
         .byte   W12
@@ -56,7 +59,7 @@ mus_mvc_megaman_0_LOOP:
         .byte                   Gn0
         .byte   W12
 @ 004   ----------------------------------------
-mus_mvc_megaman_0_4:
+mus_mvc_megaman_1_4:
         .byte           N09   , Fn0 , v096
         .byte   W12
         .byte                   Fn0 , v080
@@ -92,9 +95,9 @@ mus_mvc_megaman_0_4:
         .byte   W12
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_2
+         .word  mus_mvc_megaman_1_2
 @ 007   ----------------------------------------
-mus_mvc_megaman_0_7:
+mus_mvc_megaman_1_7:
         .byte   W12
         .byte           N09   , Gn0 , v080
         .byte   W12
@@ -112,7 +115,7 @@ mus_mvc_megaman_0_7:
         .byte   W12
         .byte   PEND
 @ 008   ----------------------------------------
-mus_mvc_megaman_0_8:
+mus_mvc_megaman_1_8:
         .byte           N09   , Fn0 , v096
         .byte   W12
         .byte                   Fn0 , v080
@@ -131,7 +134,7 @@ mus_mvc_megaman_0_8:
         .byte   W12
         .byte   PEND
 @ 009   ----------------------------------------
-mus_mvc_megaman_0_9:
+mus_mvc_megaman_1_9:
         .byte   W12
         .byte           N09   , An0 , v080
         .byte   W12
@@ -149,7 +152,7 @@ mus_mvc_megaman_0_9:
         .byte   W12
         .byte   PEND
 @ 010   ----------------------------------------
-mus_mvc_megaman_0_10:
+mus_mvc_megaman_1_10:
         .byte           N04   , An0 , v096
         .byte   W06
         .byte                   An0 , v080
@@ -163,9 +166,9 @@ mus_mvc_megaman_0_10:
         .byte   PEND
 @ 011   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_10
+         .word  mus_mvc_megaman_1_10
 @ 012   ----------------------------------------
-mus_mvc_megaman_0_12:
+mus_mvc_megaman_1_12:
         .byte           N04   , Gn0 , v096
         .byte   W06
         .byte                   Gn0 , v080
@@ -179,9 +182,9 @@ mus_mvc_megaman_0_12:
         .byte   PEND
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_12
+         .word  mus_mvc_megaman_1_12
 @ 014   ----------------------------------------
-mus_mvc_megaman_0_14:
+mus_mvc_megaman_1_14:
         .byte           N04   , Fs0 , v096
         .byte   W06
         .byte                   Fs0 , v080
@@ -195,9 +198,9 @@ mus_mvc_megaman_0_14:
         .byte   PEND
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_14
+         .word  mus_mvc_megaman_1_14
 @ 016   ----------------------------------------
-mus_mvc_megaman_0_16:
+mus_mvc_megaman_1_16:
         .byte           N04   , Fn0 , v096
         .byte   W06
         .byte                   Fn0 , v080
@@ -210,7 +213,7 @@ mus_mvc_megaman_0_16:
         .byte   W24
         .byte   PEND
 @ 017   ----------------------------------------
-mus_mvc_megaman_0_17:
+mus_mvc_megaman_1_17:
         .byte           N05   , Gn0 , v096
         .byte   W06
         .byte                   Gn0 , v080
@@ -230,27 +233,27 @@ mus_mvc_megaman_0_17:
         .byte   PEND
 @ 018   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_10
+         .word  mus_mvc_megaman_1_10
 @ 019   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_10
+         .word  mus_mvc_megaman_1_10
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_12
+         .word  mus_mvc_megaman_1_12
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_12
+         .word  mus_mvc_megaman_1_12
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_14
+         .word  mus_mvc_megaman_1_14
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_14
+         .word  mus_mvc_megaman_1_14
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_16
+         .word  mus_mvc_megaman_1_16
 @ 025   ----------------------------------------
-mus_mvc_megaman_0_25:
+mus_mvc_megaman_1_25:
         .byte           N05   , Fn0 , v096
         .byte   W06
         .byte                   Fn0 , v080
@@ -274,15 +277,15 @@ mus_mvc_megaman_0_25:
         .byte   PEND
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_0_2
+         .word  mus_mvc_megaman_1_2
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_0_LOOP
+         .word  mus_mvc_megaman_1_LOOP
         .byte   FINE
 
-@****************** Track 1 (Midi-Chn.1) ******************@
+@****************** Track 2 (Midi-Chn.1) ******************@
 
-mus_mvc_megaman_1:
+mus_mvc_megaman_2:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 73 @ 81 @ Sawtooth
@@ -293,7 +296,7 @@ mus_mvc_megaman_1:
 @ 002   ----------------------------------------
         .byte   W96
 @ 003   ----------------------------------------
-mus_mvc_megaman_1_LOOP:
+mus_mvc_megaman_2_LOOP:
         .byte   W96
 @ 004   ----------------------------------------
         .byte   W96
@@ -308,7 +311,7 @@ mus_mvc_megaman_1_LOOP:
 @ 009   ----------------------------------------
         .byte   W96
 @ 010   ----------------------------------------
-mus_mvc_megaman_1_10:
+mus_mvc_megaman_2_10:
         .byte           BEND  , c_v-11
         .byte           N36   , An3 , v100
         .byte   W01
@@ -327,7 +330,7 @@ mus_mvc_megaman_1_10:
         .byte   W12
         .byte   PEND
 @ 011   ----------------------------------------
-mus_mvc_megaman_1_11:
+mus_mvc_megaman_2_11:
         .byte   W12
         .byte           N11   , Dn4 , v100
         .byte   W12
@@ -341,7 +344,7 @@ mus_mvc_megaman_1_11:
         .byte   W12
         .byte   PEND
 @ 012   ----------------------------------------
-mus_mvc_megaman_1_12:
+mus_mvc_megaman_2_12:
         .byte           MOD   , 1 @ 60
         .byte   W36
         .byte           VOL   , 64*mus_mvc_megaman_mvl/mxv
@@ -372,7 +375,7 @@ mus_mvc_megaman_1_12:
         .byte   W06
         .byte   PEND
 @ 013   ----------------------------------------
-mus_mvc_megaman_1_13:
+mus_mvc_megaman_2_13:
         .byte           N06   , Gn3 , v100
         .byte   W06
         .byte                   Bn3
@@ -407,7 +410,7 @@ mus_mvc_megaman_1_13:
         .byte   W06
         .byte   PEND
 @ 014   ----------------------------------------
-mus_mvc_megaman_1_14:
+mus_mvc_megaman_2_14:
         .byte           VOL   , 67*mus_mvc_megaman_mvl/mxv
         .byte           N32   , Fs3 , v100 , gtp3
         .byte   W12
@@ -423,7 +426,7 @@ mus_mvc_megaman_1_14:
         .byte   W24
         .byte   PEND
 @ 015   ----------------------------------------
-mus_mvc_megaman_1_15:
+mus_mvc_megaman_2_15:
         .byte           N32   , An3 , v100 , gtp3
         .byte   W12
         .byte           MOD   , 1 @ 60
@@ -439,7 +442,7 @@ mus_mvc_megaman_1_15:
         .byte   W12
         .byte   PEND
 @ 016   ----------------------------------------
-mus_mvc_megaman_1_16:
+mus_mvc_megaman_2_16:
         .byte           N32   , An4 , v100 , gtp3
         .byte   W12
         .byte           MOD   , 1 @ 60
@@ -454,7 +457,7 @@ mus_mvc_megaman_1_16:
         .byte   W24
         .byte   PEND
 @ 017   ----------------------------------------
-mus_mvc_megaman_1_17:
+mus_mvc_megaman_2_17:
         .byte           N32   , Gn4 , v100 , gtp3
         .byte   W12
         .byte           MOD   , 1 @ 60
@@ -483,7 +486,7 @@ mus_mvc_megaman_1_17:
         .byte   W02
         .byte   PEND
 @ 018   ----------------------------------------
-mus_mvc_megaman_1_18:
+mus_mvc_megaman_2_18:
         .byte           MOD   , 0
         .byte   W12
         .byte           VOL   , 67*mus_mvc_megaman_mvl/mxv
@@ -508,7 +511,7 @@ mus_mvc_megaman_1_18:
         .byte   W10
         .byte   PEND
 @ 019   ----------------------------------------
-mus_mvc_megaman_1_19:
+mus_mvc_megaman_2_19:
         .byte   W12
         .byte           N11   , Dn4 , v100
         .byte   W12
@@ -524,7 +527,7 @@ mus_mvc_megaman_1_19:
         .byte   W12
         .byte   PEND
 @ 020   ----------------------------------------
-mus_mvc_megaman_1_20:
+mus_mvc_megaman_2_20:
         .byte           MOD   , 1 @ 60
         .byte   W40
         .byte           VOL   , 64*mus_mvc_megaman_mvl/mxv
@@ -546,7 +549,7 @@ mus_mvc_megaman_1_20:
         .byte   W12
         .byte   PEND
 @ 021   ----------------------------------------
-mus_mvc_megaman_1_21:
+mus_mvc_megaman_2_21:
         .byte           N32   , Bn3 , v100 , gtp3
         .byte   W36
         .byte           N23   , An3
@@ -559,7 +562,7 @@ mus_mvc_megaman_1_21:
         .byte   W12
         .byte   PEND
 @ 022   ----------------------------------------
-mus_mvc_megaman_1_22:
+mus_mvc_megaman_2_22:
         .byte           N32   , Fs3 , v100 , gtp3
         .byte   W36
         .byte           N11   , Cs3
@@ -572,7 +575,7 @@ mus_mvc_megaman_1_22:
         .byte   W12
         .byte   PEND
 @ 023   ----------------------------------------
-mus_mvc_megaman_1_23:
+mus_mvc_megaman_2_23:
         .byte           N06   , Cs4 , v100
         .byte   W06
         .byte                   An3
@@ -601,7 +604,7 @@ mus_mvc_megaman_1_23:
         .byte   W24
         .byte   PEND
 @ 024   ----------------------------------------
-mus_mvc_megaman_1_24:
+mus_mvc_megaman_2_24:
         .byte           N32   , Cn4 , v100 , gtp3
         .byte   W36
         .byte                   Bn3
@@ -610,7 +613,7 @@ mus_mvc_megaman_1_24:
         .byte   W24
         .byte   PEND
 @ 025   ----------------------------------------
-mus_mvc_megaman_1_25:
+mus_mvc_megaman_2_25:
         .byte           N17   , Fn3 , v100
         .byte   W18
         .byte                   En3
@@ -637,12 +640,12 @@ mus_mvc_megaman_1_25:
         .byte   W96
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_1_LOOP
+         .word  mus_mvc_megaman_2_LOOP
         .byte   FINE
 
-@****************** Track 2 (Midi-Chn.2) ******************@
+@****************** Track 3 (Midi-Chn.2) ******************@
 
-mus_mvc_megaman_2:
+mus_mvc_megaman_3:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 100 @ 57 @ 61 @ Brass Section
@@ -650,7 +653,7 @@ mus_mvc_megaman_2:
 @ 001   ----------------------------------------
         .byte   W96
 @ 002   ----------------------------------------
-mus_mvc_megaman_2_2:
+mus_mvc_megaman_3_2:
         .byte           N09   , An3 , v100
         .byte           N09   , Cn4 , v080
         .byte           N09   , En4
@@ -698,7 +701,7 @@ mus_mvc_megaman_2_2:
         .byte   W12
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_megaman_2_LOOP:
+mus_mvc_megaman_3_LOOP:
         .byte           MOD   , 1 @ 60
         .byte   W72
         .byte                   0
@@ -709,7 +712,7 @@ mus_mvc_megaman_2_LOOP:
         .byte           N11   , Gn4 , v100
         .byte   W12
 @ 004   ----------------------------------------
-mus_mvc_megaman_2_4:
+mus_mvc_megaman_3_4:
         .byte           N20   , Fn3 , v100
         .byte           N20   , An3 , v080
         .byte           N20   , Cn4
@@ -737,7 +740,7 @@ mus_mvc_megaman_2_4:
         .byte   W12
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_megaman_2_5:
+mus_mvc_megaman_3_5:
         .byte           MOD   , 1 @ 60
         .byte   W36
         .byte                   0
@@ -760,7 +763,7 @@ mus_mvc_megaman_2_5:
         .byte   W24
         .byte   PEND
 @ 006   ----------------------------------------
-mus_mvc_megaman_2_6:
+mus_mvc_megaman_3_6:
         .byte           MOD   , 0
         .byte           N09   , An3 , v100
         .byte           N09   , Cn4 , v080
@@ -809,7 +812,7 @@ mus_mvc_megaman_2_6:
         .byte   W12
         .byte   PEND
 @ 007   ----------------------------------------
-mus_mvc_megaman_2_7:
+mus_mvc_megaman_3_7:
         .byte           MOD   , 1 @ 60
         .byte   W72
         .byte                   0
@@ -821,7 +824,7 @@ mus_mvc_megaman_2_7:
         .byte   W12
         .byte   PEND
 @ 008   ----------------------------------------
-mus_mvc_megaman_2_8:
+mus_mvc_megaman_3_8:
         .byte           N21   , Fn3 , v100
         .byte           N21   , An3 , v080
         .byte           N21   , Cn4
@@ -849,7 +852,7 @@ mus_mvc_megaman_2_8:
         .byte   W12
         .byte   PEND
 @ 009   ----------------------------------------
-mus_mvc_megaman_2_9:
+mus_mvc_megaman_3_9:
         .byte           MOD   , 1 @ 60
         .byte   W92
         .byte   W03
@@ -894,15 +897,15 @@ mus_mvc_megaman_2_9:
         .byte   W96
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_2_2
+         .word  mus_mvc_megaman_3_2
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_2_LOOP
+         .word  mus_mvc_megaman_3_LOOP
         .byte   FINE
 
-@****************** Track 3 (Midi-Chn.3) ******************@
+@****************** Track 4 (Midi-Chn.3) ******************@
 
-mus_mvc_megaman_3:
+mus_mvc_megaman_4:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 48 @ Strings
@@ -910,7 +913,7 @@ mus_mvc_megaman_3:
 @ 001   ----------------------------------------
         .byte   W96
 @ 002   ----------------------------------------
-mus_mvc_megaman_3_2:
+mus_mvc_megaman_4_2:
         .byte           N84   , En3 , v064
         .byte           N84   , Cn4 , v070
         .byte   W84
@@ -919,10 +922,10 @@ mus_mvc_megaman_3_2:
         .byte   W12
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_megaman_3_LOOP:
+mus_mvc_megaman_4_LOOP:
         .byte   W96
 @ 004   ----------------------------------------
-mus_mvc_megaman_3_4:
+mus_mvc_megaman_4_4:
         .byte           EOT   , Dn3
         .byte                   Bn3
         .byte           N36   , Cn3 , v064
@@ -936,7 +939,7 @@ mus_mvc_megaman_3_4:
         .byte   W12
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_megaman_3_5:
+mus_mvc_megaman_4_5:
         .byte   W48
         .byte           N12   , Dn3 , v064
         .byte           N12   , Bn3 , v070
@@ -953,11 +956,11 @@ mus_mvc_megaman_3_5:
         .byte   PEND
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_3_2
+         .word  mus_mvc_megaman_4_2
 @ 007   ----------------------------------------
         .byte   W96
 @ 008   ----------------------------------------
-mus_mvc_megaman_3_8:
+mus_mvc_megaman_4_8:
         .byte           EOT   , Dn3
         .byte                   Bn3
         .byte           N36   , Cn3 , v064
@@ -971,7 +974,7 @@ mus_mvc_megaman_3_8:
         .byte   W12
         .byte   PEND
 @ 009   ----------------------------------------
-mus_mvc_megaman_3_9:
+mus_mvc_megaman_4_9:
         .byte   W92
         .byte   W02
         .byte           EOT   , En3
@@ -979,7 +982,7 @@ mus_mvc_megaman_3_9:
         .byte   W02
         .byte   PEND
 @ 010   ----------------------------------------
-mus_mvc_megaman_3_10:
+mus_mvc_megaman_4_10:
         .byte           TIE   , En3 , v064
         .byte           TIE   , Cs4 , v070
         .byte   W96
@@ -987,7 +990,7 @@ mus_mvc_megaman_3_10:
 @ 011   ----------------------------------------
         .byte   W96
 @ 012   ----------------------------------------
-mus_mvc_megaman_3_12:
+mus_mvc_megaman_4_12:
         .byte           EOT   , En3
         .byte                   Cs4
         .byte           TIE   , Dn3 , v064
@@ -997,7 +1000,7 @@ mus_mvc_megaman_3_12:
 @ 013   ----------------------------------------
         .byte   W96
 @ 014   ----------------------------------------
-mus_mvc_megaman_3_14:
+mus_mvc_megaman_4_14:
         .byte           EOT   , Dn3
         .byte                   Bn3
         .byte           TIE   , Cs3 , v064
@@ -1007,7 +1010,7 @@ mus_mvc_megaman_3_14:
 @ 015   ----------------------------------------
         .byte   W96
 @ 016   ----------------------------------------
-mus_mvc_megaman_3_16:
+mus_mvc_megaman_4_16:
         .byte           EOT   , Cs3
         .byte                   An3
         .byte           N96   , Cn3 , v064
@@ -1015,7 +1018,7 @@ mus_mvc_megaman_3_16:
         .byte   W96
         .byte   PEND
 @ 017   ----------------------------------------
-mus_mvc_megaman_3_17:
+mus_mvc_megaman_4_17:
         .byte           N48   , Dn3 , v064
         .byte           N48   , Bn3 , v070
         .byte   W48
@@ -1025,21 +1028,21 @@ mus_mvc_megaman_3_17:
         .byte   PEND
 @ 018   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_3_10
+         .word  mus_mvc_megaman_4_10
 @ 019   ----------------------------------------
         .byte   W96
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_3_12
+         .word  mus_mvc_megaman_4_12
 @ 021   ----------------------------------------
         .byte   W96
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_3_14
+         .word  mus_mvc_megaman_4_14
 @ 023   ----------------------------------------
         .byte   W96
 @ 024   ----------------------------------------
-mus_mvc_megaman_3_24:
+mus_mvc_megaman_4_24:
         .byte           EOT   , Cs3
         .byte                   An3
         .byte           TIE   , Cn3 , v064
@@ -1047,7 +1050,7 @@ mus_mvc_megaman_3_24:
         .byte   W96
         .byte   PEND
 @ 025   ----------------------------------------
-mus_mvc_megaman_3_25:
+mus_mvc_megaman_4_25:
         .byte   W48
         .byte           EOT   , Cn3
         .byte                   An3
@@ -1057,15 +1060,15 @@ mus_mvc_megaman_3_25:
         .byte   PEND
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_3_2
+         .word  mus_mvc_megaman_4_2
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_3_LOOP
+         .word  mus_mvc_megaman_4_LOOP
         .byte   FINE
 
-@****************** Track 4 (Midi-Chn.4) ******************@
+@****************** Track 5 (Midi-Chn.4) ******************@
 
-mus_mvc_megaman_4:
+mus_mvc_megaman_5:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 12 @ Vibraphone
@@ -1075,7 +1078,7 @@ mus_mvc_megaman_4:
 @ 002   ----------------------------------------
         .byte   W96
 @ 003   ----------------------------------------
-mus_mvc_megaman_4_LOOP:
+mus_mvc_megaman_5_LOOP:
         .byte   W96
 @ 004   ----------------------------------------
         .byte   W96
@@ -1106,7 +1109,7 @@ mus_mvc_megaman_4_LOOP:
 @ 017   ----------------------------------------
         .byte   W96
 @ 018   ----------------------------------------
-mus_mvc_megaman_4_18:
+mus_mvc_megaman_5_18:
         .byte   W12
         .byte           PAN   , c_v+63
         .byte           N12   , Cs4 , v100
@@ -1143,7 +1146,7 @@ mus_mvc_megaman_4_18:
 @ 024   ----------------------------------------
         .byte   W96
 @ 025   ----------------------------------------
-mus_mvc_megaman_4_25:
+mus_mvc_megaman_5_25:
         .byte           N06   , Fn3 , v100
         .byte   W06
         .byte                   An3
@@ -1185,12 +1188,12 @@ mus_mvc_megaman_4_25:
 @ 027   ----------------------------------------
         .byte           PAN   , c_v+0
         .byte   GOTO
-         .word  mus_mvc_megaman_4_LOOP
+         .word  mus_mvc_megaman_5_LOOP
         .byte   FINE
 
-@****************** Track 5 (Midi-Chn.5) ******************@
+@****************** Track 6 (Midi-Chn.5) ******************@
 
-mus_mvc_megaman_5:
+mus_mvc_megaman_6:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 123 @ 7 @ Clav
@@ -1235,7 +1238,7 @@ mus_mvc_megaman_5:
         .byte                   An4
         .byte   W06
 @ 003   ----------------------------------------
-mus_mvc_megaman_5_LOOP:
+mus_mvc_megaman_6_LOOP:
         .byte           PAN   , c_v-64
         .byte           N03   , Gn4 , v100
         .byte   W06
@@ -1273,7 +1276,7 @@ mus_mvc_megaman_5_LOOP:
         .byte                   Gn4
         .byte   W06
 @ 004   ----------------------------------------
-mus_mvc_megaman_5_4:
+mus_mvc_megaman_6_4:
         .byte           PAN   , c_v-64
         .byte           N03   , Fn4 , v100
         .byte   W06
@@ -1312,7 +1315,7 @@ mus_mvc_megaman_5_4:
         .byte   W06
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_megaman_5_5:
+mus_mvc_megaman_6_5:
         .byte           PAN   , c_v-64
         .byte           N03   , Cn5 , v100
         .byte   W06
@@ -1351,7 +1354,7 @@ mus_mvc_megaman_5_5:
         .byte   W06
         .byte   PEND
 @ 006   ----------------------------------------
-mus_mvc_megaman_5_6:
+mus_mvc_megaman_6_6:
         .byte           PAN   , c_v-64
         .byte           N03   , An4 , v100
         .byte   W06
@@ -1390,7 +1393,7 @@ mus_mvc_megaman_5_6:
         .byte   W06
         .byte   PEND
 @ 007   ----------------------------------------
-mus_mvc_megaman_5_7:
+mus_mvc_megaman_6_7:
         .byte           PAN   , c_v-64
         .byte           N03   , Gn4 , v100
         .byte   W06
@@ -1429,7 +1432,7 @@ mus_mvc_megaman_5_7:
         .byte   W06
         .byte   PEND
 @ 008   ----------------------------------------
-mus_mvc_megaman_5_8:
+mus_mvc_megaman_6_8:
         .byte           PAN   , c_v-64
         .byte           N03   , Fn4 , v100
         .byte   W06
@@ -1468,7 +1471,7 @@ mus_mvc_megaman_5_8:
         .byte   W06
         .byte   PEND
 @ 009   ----------------------------------------
-mus_mvc_megaman_5_9:
+mus_mvc_megaman_6_9:
         .byte           PAN   , c_v-64
         .byte           N03   , An4 , v100
         .byte   W06
@@ -1507,7 +1510,7 @@ mus_mvc_megaman_5_9:
         .byte   W06
         .byte   PEND
 @ 010   ----------------------------------------
-mus_mvc_megaman_5_10:
+mus_mvc_megaman_6_10:
         .byte           VOL   , 57*mus_mvc_megaman_mvl/mxv
         .byte           PAN   , c_v-34
         .byte           N11   , En3 , v100
@@ -1535,7 +1538,7 @@ mus_mvc_megaman_5_10:
         .byte   W12
         .byte   PEND
 @ 011   ----------------------------------------
-mus_mvc_megaman_5_11:
+mus_mvc_megaman_6_11:
         .byte           PAN   , c_v+36
         .byte           N11   , Cs4 , v100
         .byte   W12
@@ -1562,7 +1565,7 @@ mus_mvc_megaman_5_11:
         .byte   W12
         .byte   PEND
 @ 012   ----------------------------------------
-mus_mvc_megaman_5_12:
+mus_mvc_megaman_6_12:
         .byte           PAN   , c_v-34
         .byte           N11   , Dn3 , v100
         .byte   W12
@@ -1589,7 +1592,7 @@ mus_mvc_megaman_5_12:
         .byte   W12
         .byte   PEND
 @ 013   ----------------------------------------
-mus_mvc_megaman_5_13:
+mus_mvc_megaman_6_13:
         .byte           PAN   , c_v+36
         .byte           N11   , Bn3 , v100
         .byte   W12
@@ -1616,7 +1619,7 @@ mus_mvc_megaman_5_13:
         .byte   W12
         .byte   PEND
 @ 014   ----------------------------------------
-mus_mvc_megaman_5_14:
+mus_mvc_megaman_6_14:
         .byte           PAN   , c_v-34
         .byte           N11   , Cs3 , v100
         .byte   W12
@@ -1643,7 +1646,7 @@ mus_mvc_megaman_5_14:
         .byte   W12
         .byte   PEND
 @ 015   ----------------------------------------
-mus_mvc_megaman_5_15:
+mus_mvc_megaman_6_15:
         .byte           PAN   , c_v+36
         .byte           N11   , An3 , v100
         .byte   W12
@@ -1670,7 +1673,7 @@ mus_mvc_megaman_5_15:
         .byte   W12
         .byte   PEND
 @ 016   ----------------------------------------
-mus_mvc_megaman_5_16:
+mus_mvc_megaman_6_16:
         .byte           PAN   , c_v-34
         .byte           N11   , Cn3 , v100
         .byte   W12
@@ -1697,7 +1700,7 @@ mus_mvc_megaman_5_16:
         .byte   W12
         .byte   PEND
 @ 017   ----------------------------------------
-mus_mvc_megaman_5_17:
+mus_mvc_megaman_6_17:
         .byte           PAN   , c_v-34
         .byte           N06   , Dn3 , v100
         .byte   W06
@@ -1736,7 +1739,7 @@ mus_mvc_megaman_5_17:
         .byte   W06
         .byte   PEND
 @ 018   ----------------------------------------
-mus_mvc_megaman_5_18:
+mus_mvc_megaman_6_18:
         .byte           PAN   , c_v-34
         .byte           N11   , En3 , v100
         .byte   W12
@@ -1764,24 +1767,24 @@ mus_mvc_megaman_5_18:
         .byte   PEND
 @ 019   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_5_11
+         .word  mus_mvc_megaman_6_11
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_5_12
+         .word  mus_mvc_megaman_6_12
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_5_13
+         .word  mus_mvc_megaman_6_13
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_5_14
+         .word  mus_mvc_megaman_6_14
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_5_15
+         .word  mus_mvc_megaman_6_15
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_5_16
+         .word  mus_mvc_megaman_6_16
 @ 025   ----------------------------------------
-mus_mvc_megaman_5_25:
+mus_mvc_megaman_6_25:
         .byte           PAN   , c_v-34
         .byte           N06   , Cn3 , v100
         .byte   W06
@@ -1821,15 +1824,15 @@ mus_mvc_megaman_5_25:
         .byte   PEND
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_5_6
+         .word  mus_mvc_megaman_6_6
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_5_LOOP
+         .word  mus_mvc_megaman_6_LOOP
         .byte   FINE
 
-@****************** Track 6 (Midi-Chn.6) ******************@
+@****************** Track 7 (Midi-Chn.6) ******************@
 
-mus_mvc_megaman_6:
+mus_mvc_megaman_7:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 73 @ 81 @ Sawtooth
@@ -1841,7 +1844,7 @@ mus_mvc_megaman_6:
 @ 002   ----------------------------------------
         .byte   W96
 @ 003   ----------------------------------------
-mus_mvc_megaman_6_LOOP:
+mus_mvc_megaman_7_LOOP:
         .byte   W96
 @ 004   ----------------------------------------
         .byte   W96
@@ -1856,7 +1859,7 @@ mus_mvc_megaman_6_LOOP:
 @ 009   ----------------------------------------
         .byte   W96
 @ 010   ----------------------------------------
-mus_mvc_megaman_6_10:
+mus_mvc_megaman_7_10:
         .byte   W08
         .byte           BEND  , c_v-11
         .byte           N36   , An3 , v100
@@ -1876,7 +1879,7 @@ mus_mvc_megaman_6_10:
         .byte   W04
         .byte   PEND
 @ 011   ----------------------------------------
-mus_mvc_megaman_6_11:
+mus_mvc_megaman_7_11:
         .byte   W20
         .byte           N11   , Dn4 , v100
         .byte   W12
@@ -1890,7 +1893,7 @@ mus_mvc_megaman_6_11:
         .byte   W04
         .byte   PEND
 @ 012   ----------------------------------------
-mus_mvc_megaman_6_12:
+mus_mvc_megaman_7_12:
         .byte   W08
         .byte           MOD   , 2 @ 80
         .byte   W36
@@ -1920,7 +1923,7 @@ mus_mvc_megaman_6_12:
         .byte   W04
         .byte   PEND
 @ 013   ----------------------------------------
-mus_mvc_megaman_6_13:
+mus_mvc_megaman_7_13:
         .byte   W02
         .byte           N06   , Dn3 , v100
         .byte   W06
@@ -1956,7 +1959,7 @@ mus_mvc_megaman_6_13:
         .byte   W04
         .byte   PEND
 @ 014   ----------------------------------------
-mus_mvc_megaman_6_14:
+mus_mvc_megaman_7_14:
         .byte   W02
         .byte           N06   , Gn4 , v100
         .byte   W06
@@ -1975,7 +1978,7 @@ mus_mvc_megaman_6_14:
         .byte   W16
         .byte   PEND
 @ 015   ----------------------------------------
-mus_mvc_megaman_6_15:
+mus_mvc_megaman_7_15:
         .byte   W08
         .byte           N32   , An3 , v100 , gtp3
         .byte   W12
@@ -1992,7 +1995,7 @@ mus_mvc_megaman_6_15:
         .byte   W04
         .byte   PEND
 @ 016   ----------------------------------------
-mus_mvc_megaman_6_16:
+mus_mvc_megaman_7_16:
         .byte   W08
         .byte           N32   , An4 , v100 , gtp3
         .byte   W12
@@ -2008,7 +2011,7 @@ mus_mvc_megaman_6_16:
         .byte   W16
         .byte   PEND
 @ 017   ----------------------------------------
-mus_mvc_megaman_6_17:
+mus_mvc_megaman_7_17:
         .byte   W08
         .byte           N32   , Gn4 , v100 , gtp3
         .byte   W12
@@ -2030,7 +2033,7 @@ mus_mvc_megaman_6_17:
         .byte   W16
         .byte   PEND
 @ 018   ----------------------------------------
-mus_mvc_megaman_6_18:
+mus_mvc_megaman_7_18:
         .byte           VOL   , 30*mus_mvc_megaman_mvl/mxv
         .byte   W02
         .byte                   28*mus_mvc_megaman_mvl/mxv
@@ -2063,7 +2066,7 @@ mus_mvc_megaman_6_18:
         .byte   W02
         .byte   PEND
 @ 019   ----------------------------------------
-mus_mvc_megaman_6_19:
+mus_mvc_megaman_7_19:
         .byte   W20
         .byte           N11   , Dn4 , v100
         .byte   W12
@@ -2079,7 +2082,7 @@ mus_mvc_megaman_6_19:
         .byte   W04
         .byte   PEND
 @ 020   ----------------------------------------
-mus_mvc_megaman_6_20:
+mus_mvc_megaman_7_20:
         .byte   W08
         .byte           MOD   , 2 @ 80
         .byte   W40
@@ -2102,7 +2105,7 @@ mus_mvc_megaman_6_20:
         .byte   W04
         .byte   PEND
 @ 021   ----------------------------------------
-mus_mvc_megaman_6_21:
+mus_mvc_megaman_7_21:
         .byte   W08
         .byte           N32   , Bn3 , v100 , gtp3
         .byte   W36
@@ -2116,7 +2119,7 @@ mus_mvc_megaman_6_21:
         .byte   W04
         .byte   PEND
 @ 022   ----------------------------------------
-mus_mvc_megaman_6_22:
+mus_mvc_megaman_7_22:
         .byte   W08
         .byte           N32   , Fs3 , v100 , gtp3
         .byte   W36
@@ -2130,7 +2133,7 @@ mus_mvc_megaman_6_22:
         .byte   W04
         .byte   PEND
 @ 023   ----------------------------------------
-mus_mvc_megaman_6_23:
+mus_mvc_megaman_7_23:
         .byte   W08
         .byte           N06   , Cs4 , v100
         .byte   W06
@@ -2160,7 +2163,7 @@ mus_mvc_megaman_6_23:
         .byte   W16
         .byte   PEND
 @ 024   ----------------------------------------
-mus_mvc_megaman_6_24:
+mus_mvc_megaman_7_24:
         .byte   W08
         .byte           N32   , Cn4 , v100 , gtp3
         .byte   W36
@@ -2170,7 +2173,7 @@ mus_mvc_megaman_6_24:
         .byte   W16
         .byte   PEND
 @ 025   ----------------------------------------
-mus_mvc_megaman_6_25:
+mus_mvc_megaman_7_25:
         .byte   W08
         .byte           N17   , Fn3 , v100
         .byte   W18
@@ -2186,7 +2189,7 @@ mus_mvc_megaman_6_25:
         .byte   W16
         .byte   PEND
 @ 026   ----------------------------------------
-mus_mvc_megaman_6_26:
+mus_mvc_megaman_7_26:
         .byte           VOL   , 30*mus_mvc_megaman_mvl/mxv
         .byte   W02
         .byte                   28*mus_mvc_megaman_mvl/mxv
@@ -2200,12 +2203,12 @@ mus_mvc_megaman_6_26:
         .byte   PEND
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_6_LOOP
+         .word  mus_mvc_megaman_7_LOOP
         .byte   FINE
 
-@****************** Track 7 (Midi-Chn.7) ******************@
+@****************** Track 8 (Midi-Chn.7) ******************@
 
-mus_mvc_megaman_7:
+mus_mvc_megaman_8:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 100 @ 57 @ 61 @ Brass Section
@@ -2214,7 +2217,7 @@ mus_mvc_megaman_7:
 @ 001   ----------------------------------------
         .byte   W96
 @ 002   ----------------------------------------
-mus_mvc_megaman_7_2:
+mus_mvc_megaman_8_2:
         .byte   W08
         .byte           N09   , An3 , v100
         .byte           N09   , An4
@@ -2245,7 +2248,7 @@ mus_mvc_megaman_7_2:
         .byte   W04
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_megaman_7_LOOP:
+mus_mvc_megaman_8_LOOP:
         .byte   W08
         .byte           MOD   , 2 @ 80
         .byte   W72
@@ -2255,7 +2258,7 @@ mus_mvc_megaman_7_LOOP:
         .byte           N11   , Gn4
         .byte   W04
 @ 004   ----------------------------------------
-mus_mvc_megaman_7_4:
+mus_mvc_megaman_8_4:
         .byte   W08
         .byte           N20   , Fn3 , v100
         .byte           N20   , Fn4
@@ -2274,7 +2277,7 @@ mus_mvc_megaman_7_4:
         .byte   W04
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_megaman_7_5:
+mus_mvc_megaman_8_5:
         .byte   W08
         .byte           MOD   , 2 @ 80
         .byte   W36
@@ -2292,7 +2295,7 @@ mus_mvc_megaman_7_5:
         .byte   W16
         .byte   PEND
 @ 006   ----------------------------------------
-mus_mvc_megaman_7_6:
+mus_mvc_megaman_8_6:
         .byte   W08
         .byte           MOD   , 0
         .byte           N09   , An3 , v100
@@ -2324,7 +2327,7 @@ mus_mvc_megaman_7_6:
         .byte   W04
         .byte   PEND
 @ 007   ----------------------------------------
-mus_mvc_megaman_7_7:
+mus_mvc_megaman_8_7:
         .byte   W08
         .byte           MOD   , 2 @ 80
         .byte   W72
@@ -2335,7 +2338,7 @@ mus_mvc_megaman_7_7:
         .byte   W04
         .byte   PEND
 @ 008   ----------------------------------------
-mus_mvc_megaman_7_8:
+mus_mvc_megaman_8_8:
         .byte   W08
         .byte           N21   , Fn3 , v100
         .byte           N21   , Fn4
@@ -2358,7 +2361,7 @@ mus_mvc_megaman_7_8:
         .byte           MOD   , 2 @ 80
         .byte   W88
 @ 010   ----------------------------------------
-mus_mvc_megaman_7_10:
+mus_mvc_megaman_8_10:
         .byte   W07
         .byte           EOT   , An3
         .byte                   An4
@@ -2398,15 +2401,15 @@ mus_mvc_megaman_7_10:
         .byte   W96
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_7_2
+         .word  mus_mvc_megaman_8_2
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_7_LOOP
+         .word  mus_mvc_megaman_8_LOOP
         .byte   FINE
 
-@****************** Track 8 (Midi-Chn.9) ******************@
+@****************** Track 9 (Midi-Chn.9) ******************@
 
-mus_mvc_megaman_8:
+mus_mvc_megaman_9:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 120
@@ -2421,7 +2424,7 @@ mus_mvc_megaman_8:
         .byte                   Cn1
         .byte   W24
 @ 002   ----------------------------------------
-mus_mvc_megaman_8_2:
+mus_mvc_megaman_9_2:
         .byte           N01   , Cn1 , v100
         .byte   W12
         .byte                   Cn1 , v090
@@ -2444,7 +2447,7 @@ mus_mvc_megaman_8_2:
         .byte   W06
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_megaman_8_LOOP:
+mus_mvc_megaman_9_LOOP:
         .byte           N01   , Cn1 , v100
         .byte   W12
         .byte                   Cn1 , v090
@@ -2462,7 +2465,7 @@ mus_mvc_megaman_8_LOOP:
         .byte                   Cn1 , v085
         .byte   W30
 @ 004   ----------------------------------------
-mus_mvc_megaman_8_4:
+mus_mvc_megaman_9_4:
         .byte           N01   , Cn1 , v100
         .byte   W12
         .byte                   Cn1 , v090
@@ -2485,7 +2488,7 @@ mus_mvc_megaman_8_4:
         .byte   W06
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_megaman_8_5:
+mus_mvc_megaman_9_5:
         .byte           N01   , Cn1 , v100
         .byte   W12
         .byte                   Cn1 , v090
@@ -2505,15 +2508,15 @@ mus_mvc_megaman_8_5:
         .byte   PEND
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_4
+         .word  mus_mvc_megaman_9_4
 @ 007   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_5
+         .word  mus_mvc_megaman_9_5
 @ 008   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_4
+         .word  mus_mvc_megaman_9_4
 @ 009   ----------------------------------------
-mus_mvc_megaman_8_9:
+mus_mvc_megaman_9_9:
         .byte           N01   , Cn1 , v100
         .byte   W12
         .byte                   Cn1 , v090
@@ -2530,7 +2533,7 @@ mus_mvc_megaman_8_9:
         .byte   W24
         .byte   PEND
 @ 010   ----------------------------------------
-mus_mvc_megaman_8_10:
+mus_mvc_megaman_9_10:
         .byte           N01   , Cn1 , v100
         .byte   W54
         .byte                   Cn1 , v090
@@ -2540,24 +2543,24 @@ mus_mvc_megaman_8_10:
         .byte   PEND
 @ 011   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 017   ----------------------------------------
-mus_mvc_megaman_8_17:
+mus_mvc_megaman_9_17:
         .byte           N01   , Cn1 , v100
         .byte   W30
         .byte                   Cn1 , v090
@@ -2567,27 +2570,27 @@ mus_mvc_megaman_8_17:
         .byte   PEND
 @ 018   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 019   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_10
+         .word  mus_mvc_megaman_9_10
 @ 025   ----------------------------------------
-mus_mvc_megaman_8_25:
+mus_mvc_megaman_9_25:
         .byte           N01   , Cn1 , v100
         .byte   W24
         .byte                   Cn1
@@ -2597,15 +2600,15 @@ mus_mvc_megaman_8_25:
         .byte   PEND
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_8_2
+         .word  mus_mvc_megaman_9_2
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_8_LOOP
+         .word  mus_mvc_megaman_9_LOOP
         .byte   FINE
 
-@****************** Track 9 (Midi-Chn.9) ******************@
+@****************** Track 10 (Midi-Chn.9) ******************@
 
-mus_mvc_megaman_9:
+mus_mvc_megaman_10:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 120
@@ -2613,7 +2616,7 @@ mus_mvc_megaman_9:
 @ 001   ----------------------------------------
         .byte   W96
 @ 002   ----------------------------------------
-mus_mvc_megaman_9_2:
+mus_mvc_megaman_10_2:
         .byte   W24
         .byte           N01   , Dn1 , v090
         .byte   W48
@@ -2621,7 +2624,7 @@ mus_mvc_megaman_9_2:
         .byte   W24
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_megaman_9_LOOP:
+mus_mvc_megaman_10_LOOP:
         .byte   W24
         .byte           N01   , Dn1 , v090
         .byte   W48
@@ -2633,9 +2636,9 @@ mus_mvc_megaman_9_LOOP:
         .byte   W06
 @ 004   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 005   ----------------------------------------
-mus_mvc_megaman_9_5:
+mus_mvc_megaman_10_5:
         .byte   W24
         .byte           N01   , Dn1 , v090
         .byte   W48
@@ -2650,9 +2653,9 @@ mus_mvc_megaman_9_5:
         .byte   PEND
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 007   ----------------------------------------
-mus_mvc_megaman_9_7:
+mus_mvc_megaman_10_7:
         .byte   W24
         .byte           N01   , Dn1 , v090
         .byte   W48
@@ -2665,36 +2668,36 @@ mus_mvc_megaman_9_7:
         .byte   PEND
 @ 008   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 009   ----------------------------------------
-mus_mvc_megaman_9_9:
+mus_mvc_megaman_10_9:
         .byte   W24
         .byte           N01   , Dn1 , v090
         .byte   W72
         .byte   PEND
 @ 010   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 011   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_7
+         .word  mus_mvc_megaman_10_7
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_7
+         .word  mus_mvc_megaman_10_7
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_7
+         .word  mus_mvc_megaman_10_7
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 017   ----------------------------------------
-mus_mvc_megaman_9_17:
+mus_mvc_megaman_10_17:
         .byte   W06
         .byte           N01   , Dn1 , v090
         .byte   W18
@@ -2721,18 +2724,18 @@ mus_mvc_megaman_9_17:
         .byte   PEND
 @ 018   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 019   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_7
+         .word  mus_mvc_megaman_10_7
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_7
+         .word  mus_mvc_megaman_10_7
 @ 022   ----------------------------------------
-mus_mvc_megaman_9_22:
+mus_mvc_megaman_10_22:
         .byte   W24
         .byte           N01   , Dn1 , v080
         .byte   W48
@@ -2740,7 +2743,7 @@ mus_mvc_megaman_9_22:
         .byte   W24
         .byte   PEND
 @ 023   ----------------------------------------
-mus_mvc_megaman_9_23:
+mus_mvc_megaman_10_23:
         .byte   W24
         .byte           N01   , Dn1 , v080
         .byte   W48
@@ -2753,20 +2756,20 @@ mus_mvc_megaman_9_23:
         .byte   PEND
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 025   ----------------------------------------
         .byte   W96
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_9_2
+         .word  mus_mvc_megaman_10_2
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_9_LOOP
+         .word  mus_mvc_megaman_10_LOOP
         .byte   FINE
 
-@***************** Track 10 (Midi-Chn.9) ******************@
+@***************** Track 11 (Midi-Chn.9) ******************@
 
-mus_mvc_megaman_10:
+mus_mvc_megaman_11:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 120
@@ -2800,7 +2803,7 @@ mus_mvc_megaman_10:
 @ 002   ----------------------------------------
         .byte   W96
 @ 003   ----------------------------------------
-mus_mvc_megaman_10_LOOP:
+mus_mvc_megaman_11_LOOP:
         .byte   W96
 @ 004   ----------------------------------------
         .byte   W96
@@ -2813,7 +2816,7 @@ mus_mvc_megaman_10_LOOP:
 @ 008   ----------------------------------------
         .byte   W96
 @ 009   ----------------------------------------
-mus_mvc_megaman_10_9:
+mus_mvc_megaman_11_9:
         .byte   W54
         .byte           N01   , Dn2 , v090
         .byte   W06
@@ -2861,7 +2864,7 @@ mus_mvc_megaman_10_9:
 @ 024   ----------------------------------------
         .byte   W96
 @ 025   ----------------------------------------
-mus_mvc_megaman_10_25:
+mus_mvc_megaman_11_25:
         .byte           N01   , Cn2 , v090
         .byte   W06
         .byte                   Cn2 , v070
@@ -2893,12 +2896,12 @@ mus_mvc_megaman_10_25:
         .byte   W96
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_10_LOOP
+         .word  mus_mvc_megaman_11_LOOP
         .byte   FINE
 
-@***************** Track 11 (Midi-Chn.9) ******************@
+@***************** Track 12 (Midi-Chn.9) ******************@
 
-mus_mvc_megaman_11:
+mus_mvc_megaman_12:
         .byte   KEYSH , mus_mvc_megaman_key+0
 @ 000   ----------------------------------------
         .byte           VOICE , 120
@@ -2907,7 +2910,7 @@ mus_mvc_megaman_11:
         .byte           N01   , Cs2 , v090
         .byte   W96
 @ 002   ----------------------------------------
-mus_mvc_megaman_11_2:
+mus_mvc_megaman_12_2:
         .byte           N01   , Cs2 , v090
         .byte   W06
         .byte                   Fs1 , v050
@@ -2942,7 +2945,7 @@ mus_mvc_megaman_11_2:
         .byte   W06
         .byte   PEND
 @ 003   ----------------------------------------
-mus_mvc_megaman_11_LOOP:
+mus_mvc_megaman_12_LOOP:
         .byte           N01   , Fs1 , v090
         .byte   W06
         .byte                   Fs1 , v050
@@ -2976,7 +2979,7 @@ mus_mvc_megaman_11_LOOP:
         .byte                   Fs1 , v050
         .byte   W06
 @ 004   ----------------------------------------
-mus_mvc_megaman_11_4:
+mus_mvc_megaman_12_4:
         .byte           N01   , Cs2 , v090
         .byte   W06
         .byte                   Fs1 , v050
@@ -3011,7 +3014,7 @@ mus_mvc_megaman_11_4:
         .byte   W06
         .byte   PEND
 @ 005   ----------------------------------------
-mus_mvc_megaman_11_5:
+mus_mvc_megaman_12_5:
         .byte           N01   , Fs1 , v090
         .byte   W06
         .byte                   Fs1 , v050
@@ -3047,9 +3050,9 @@ mus_mvc_megaman_11_5:
         .byte   PEND
 @ 006   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_2
+         .word  mus_mvc_megaman_12_2
 @ 007   ----------------------------------------
-mus_mvc_megaman_11_7:
+mus_mvc_megaman_12_7:
         .byte           N01   , Fs1 , v090
         .byte   W06
         .byte                   Fs1 , v050
@@ -3085,9 +3088,9 @@ mus_mvc_megaman_11_7:
         .byte   PEND
 @ 008   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_4
+         .word  mus_mvc_megaman_12_4
 @ 009   ----------------------------------------
-mus_mvc_megaman_11_9:
+mus_mvc_megaman_12_9:
         .byte           N01   , Fs1 , v090
         .byte   W06
         .byte                   Fs1 , v050
@@ -3108,7 +3111,7 @@ mus_mvc_megaman_11_9:
         .byte   W48
         .byte   PEND
 @ 010   ----------------------------------------
-mus_mvc_megaman_11_10:
+mus_mvc_megaman_12_10:
         .byte           N01   , Cs2 , v090
         .byte   W06
         .byte                   Fs1 , v050
@@ -3143,7 +3146,7 @@ mus_mvc_megaman_11_10:
         .byte   W06
         .byte   PEND
 @ 011   ----------------------------------------
-mus_mvc_megaman_11_11:
+mus_mvc_megaman_12_11:
         .byte           N01   , Fs1 , v090
         .byte   W06
         .byte                   Fs1 , v050
@@ -3177,21 +3180,21 @@ mus_mvc_megaman_11_11:
         .byte   PEND
 @ 012   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_7
+         .word  mus_mvc_megaman_12_7
 @ 013   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_11
+         .word  mus_mvc_megaman_12_11
 @ 014   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_10
+         .word  mus_mvc_megaman_12_10
 @ 015   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_11
+         .word  mus_mvc_megaman_12_11
 @ 016   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_7
+         .word  mus_mvc_megaman_12_7
 @ 017   ----------------------------------------
-mus_mvc_megaman_11_17:
+mus_mvc_megaman_12_17:
         .byte           N01   , Cs2 , v090
         .byte   W06
         .byte                   Fs1 , v050
@@ -3213,27 +3216,27 @@ mus_mvc_megaman_11_17:
         .byte   PEND
 @ 018   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_10
+         .word  mus_mvc_megaman_12_10
 @ 019   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_11
+         .word  mus_mvc_megaman_12_11
 @ 020   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_7
+         .word  mus_mvc_megaman_12_7
 @ 021   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_11
+         .word  mus_mvc_megaman_12_11
 @ 022   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_10
+         .word  mus_mvc_megaman_12_10
 @ 023   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_11
+         .word  mus_mvc_megaman_12_11
 @ 024   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_7
+         .word  mus_mvc_megaman_12_7
 @ 025   ----------------------------------------
-mus_mvc_megaman_11_25:
+mus_mvc_megaman_12_25:
         .byte           N01   , Cs2 , v090
         .byte   W24
         .byte                   Cs2 , v085
@@ -3243,10 +3246,10 @@ mus_mvc_megaman_11_25:
         .byte   PEND
 @ 026   ----------------------------------------
         .byte   PATT
-         .word  mus_mvc_megaman_11_2
+         .word  mus_mvc_megaman_12_2
 @ 027   ----------------------------------------
         .byte   GOTO
-         .word  mus_mvc_megaman_11_LOOP
+         .word  mus_mvc_megaman_12_LOOP
         .byte   FINE
 
 
@@ -3261,7 +3264,6 @@ mus_mvc_megaman:
 
         .word   mus_mvc_megaman_grp    
 
-        .word   mus_mvc_megaman_0
         .word   mus_mvc_megaman_1
         .word   mus_mvc_megaman_2
         .word   mus_mvc_megaman_3
@@ -3273,5 +3275,6 @@ mus_mvc_megaman:
         .word   mus_mvc_megaman_9
         .word   mus_mvc_megaman_10
         .word   mus_mvc_megaman_11
+        .word   mus_mvc_megaman_12
 
         .end

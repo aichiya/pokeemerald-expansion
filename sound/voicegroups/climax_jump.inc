@@ -99,7 +99,7 @@ voice_group climax_jump
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                        @ 097 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                        @ 098 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                        @ 099 | --- | 
-	stream_directsound 60, 0, DirectSoundWaveData_se_etc_zeronos, 255, 0, 255, 0                   @ 100 | Direct Compressed | Zeronos Effect
+	voice_directsound_compressed 60, 0, DirectSoundWaveData_se_etc_zeronos, 255, 0, 255, 0         @ 100 | Direct Compressed | Zeronos Effect
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                        @ 101 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                        @ 102 | --- | 
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                                        @ 103 | --- | 

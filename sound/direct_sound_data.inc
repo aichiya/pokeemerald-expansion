@@ -11255,79 +11255,27 @@ DirectSoundWaveData_golden_sun_2_pan_flute::
 
     .align 2
 DirectSoundSynth_golden_sun_2_01::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .byte  0x10        @ Parameter 1
-    .byte  0xF0        @ Parameter 2
-    .byte  0xE0        @ Parameter 3
-    .byte  0x80        @ Parameter 4 
-    .2byte 0x0000      @ Padding
+    set_synth_pulse 0x10, 0xF0, 0xE0, 0x80
 
     .align 2
 DirectSoundSynth_golden_sun_2_02::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .byte  0x60        @ Parameter 1
-    .byte  0x20        @ Parameter 2
-    .byte  0x40        @ Parameter 3
-    .byte  0x80        @ Parameter 4 
-    .2byte 0x0000      @ Padding
+    set_synth_pulse 0x60, 0x20, 0x40, 0x80
 
     .align 2
 DirectSoundSynth_golden_sun_2_03::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .byte  0x80        @ Parameter 1
-    .byte  0x40        @ Parameter 2
-    .byte  0x40        @ Parameter 3
-    .byte  0x40        @ Parameter 4 
-    .2byte 0x0000      @ Padding
+    set_synth_pulse 0x80, 0x40, 0x40, 0x40
 
     .align 2
 DirectSoundSynth_golden_sun_2_04::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x01        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .2byte 0x0000      @ Padding
+    set_synth_saw
 
     .align 2
 DirectSoundSynth_golden_sun_2_05::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequiency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x02        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .2byte 0x0000      @ Padding
+    set_synth_triangle
 
     .align 2
 DirectSoundSynth_golden_sun_2_06::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .byte  0x10        @ Parameter 1
-    .byte  0xF0        @ Parameter 2
-    .byte  0xE0        @ Parameter 3
-    .byte  0x80        @ Parameter 4 
-    .2byte 0x0000      @ Padding
+    set_synth_pulse 0x10, 0xF0, 0xE0, 0x80
 
     .align 2
 DirectSoundWaveData_golden_sun_2_xylophone::
@@ -11469,93 +11417,31 @@ DirectSoundWaveData_golden_sun_2_applause::
 
     .align 2
 DirectSoundSynth_Type_00_Param_0040A080:: @ gunshot like
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .byte  0x00        @ Parameter 1
-    .byte  0x40        @ Parameter 2
-    .byte  0xA0        @ Parameter 3
-    .byte  0x80        @ Parameter 4 
-    .2byte 0x0000      @ Padding
+    set_synth_pulse 0x00, 0x40, 0xA0, 0x80
 
     .align 2
 DirectSoundSynth_Type_00_Param_E0F0A080::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .byte  0xE0        @ Parameter 1
-    .byte  0xF0        @ Parameter 2
-    .byte  0xA0        @ Parameter 3
-    .byte  0x80        @ Parameter 4 
-    .2byte 0x0000      @ Padding
+    set_synth_pulse 0xE0, 0xF0, 0xA0, 0x80
 
     .align 2
 DirectSoundSynth_Type_01::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x01        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .2byte 0x0000      @ Padding
+    set_synth_saw
 
     .align 2
 DirectSoundSynth_Type_02::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequiency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x02        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .2byte 0x0000      @ Padding
+    set_synth_triangle
 
     .align 2
 DirectSoundSynth_Type_00_Param_0000C0A0::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .byte  0x00        @ Parameter 1
-    .byte  0x00        @ Parameter 2
-    .byte  0xC0        @ Parameter 3
-    .byte  0xA0        @ Parameter 4 
-    .2byte 0x0000      @ Padding
+    set_synth_pulse 0x00, 0x00, 0xC0, 0xA0
 
     .align 2
 DirectSoundSynth_Type_00_Custom4::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .byte  0x40        @ Parameter 1
-    .byte  0x00        @ Parameter 2
-    .byte  0xA0        @ Parameter 3
-    .byte  0xA0        @ Parameter 4 
-    .2byte 0x0000      @ Padding
+    set_synth_pulse 0x40, 0x00, 0xA0, 0xA0
 
     .align 2
 DirectSoundSynth_Type_00_Custom5::
-    .4byte 0x40000000  @ Recognized as a looping Direct Sound wave sample in a voicegroup
-    .4byte 0x01058920  @ Frequency/Pitch control
-    .4byte 0x00000000  @ Supposedly a loop point, but in this case is solid 0
-    .4byte 0x00000000  @ Supposedly sample size, but in this case is solid 0
-    .byte  0x80        @ Unknown
-    .byte  0x00        @ Type 00 requires parameters, 0x01 and 0x02 straight to padding
-    .byte  0x40        @ Parameter 1
-    .byte  0x00        @ Parameter 2
-    .byte  0xA0        @ Parameter 3
-    .byte  0x40        @ Parameter 4 
-    .2byte 0x0000      @ Padding
+    set_synth_pulse 0x40, 0x00, 0xA0, 0x40
 
 	.align 2
 DirectSoundWaveData_pinball_7_clav::

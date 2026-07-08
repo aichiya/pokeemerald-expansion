@@ -192,3 +192,68 @@
 	.byte 0x10
 	_voice_directsound \base_midi_key, \pan, \sample_data_pointer, \attack, \decay, \sustain, \release
 	.endm
+
+@ Golden Sun synth instruments
+@ ----------------------------
+@ ipatix's HQ mixer supports such instruments, borrowed from Golden Sun.  They are
+@ PCM instruments from m4a's perspective, but they are synths that programmatically
+@ generate samples as the note is sustained. Use the macros below to define These
+@ Golden Sun synths. Then, reference the synth in a regular voice_directsound macro:
+@
+@     DirectSoundSynthData_MyPulseSynth::
+@         set_synth_pulse 0x10, 0xF0, 0xE0, 0x80
+@
+@     ...
+@
+@     voice_directsound 60, 0, DirectSoundSynthData_MyPulseSynth, 85, 165, 193, 178
+@
+@ Shared 16-byte header:
+    .macro _synth_wave_header
+    .2byte 0x0         @ WaveData type
+    .2byte 0x4000      @ flags: looping
+    .4byte 0x01058920  @ frequency: playback rate << 10; this value means "middle C at key 60"
+    .4byte 0x0         @ loop point (completely unused)
+    .4byte 0x0         @ sample length: 0 means Golden Sun synth
+    .endm
+
+@ Pulse wave with optional duty-cycle modulation.
+@
+@   base_duty:  duty cycle as a fraction of 256
+@               0x80 = 50% square, 0x40 = 25%, 0x20 = 12.5%.
+@   duty_step:  duty cycle LFO speed. The LFO advances once per frame
+@               and completes a cycle every 256/duty_step frames.
+@               0 = no duty-cycle modulation.
+@   mod_depth:  duty cycle LFO depth. The duty sweeps from base_duty up to
+@               base_duty + mod_depth/512 of the period and back
+@               (For example, 0x80 means a 25% sweep).
+@   duty_phase: initial LFO phase in 1/256ths of an LFO cycle. The LFO
+@               restarts from this phase at the start of every note.
+@
+@ The default is a plain 50% square with no modulation.
+    .macro set_synth_pulse base_duty=0x80, duty_step=0x00, mod_depth=0x00, duty_phase=0x00
+    _synth_wave_header
+    .byte  0x80        @ completely unused
+    .byte  0x00        @ synth type: pulse
+    .byte  \base_duty
+    .byte  \duty_step
+    .byte  \mod_depth
+    .byte  \duty_phase
+    .2byte 0x0000      @ padding
+    .endm
+
+@ Pseudo-sawtooth: two rising ramps with a jump at mid-period, softened by a
+@ low-pass filter in the mixer. Not a true saw, but close.
+    .macro set_synth_saw
+    _synth_wave_header
+    .byte  0x80        @ completely unused
+    .byte  0x01        @ synth type: pseudo-sawtooth
+    .2byte 0x0000      @ padding
+    .endm
+
+@ Triangle wave.
+    .macro set_synth_triangle
+    _synth_wave_header
+    .byte  0x80        @ completely unused
+    .byte  0x02        @ synth type: triangle
+    .2byte 0x0000      @ padding
+    .endm

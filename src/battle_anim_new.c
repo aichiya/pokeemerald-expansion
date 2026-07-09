@@ -8055,7 +8055,7 @@ void AnimTask_PrimalReversion(u8 taskId)
 
 void AnimTask_ShellSideArm(u8 taskId)
 {
-    if (gBattleStruct->swapDamageCategory)
+    if (IsBattleMovePhysical(gCurrentMove))
         gBattleAnimArgs[0] = TRUE;
     else
         gBattleAnimArgs[0] = FALSE;
@@ -8064,29 +8064,10 @@ void AnimTask_ShellSideArm(u8 taskId)
 
 void AnimTask_TerrainPulse(u8 taskId)
 {
-    if (IsAnyTerrainAffected(gBattleAnimAttacker, GetBattlerAbility(gBattleAnimAttacker), GetBattlerHoldEffect(gBattleAnimAttacker), gFieldStatuses))
-    {
-        if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
-            gBattleAnimArgs[0] = TYPE_NEW_ELECTRIC;
-        else if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
-            gBattleAnimArgs[0] = TYPE_NEW_NATURE;
-        else if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
-            gBattleAnimArgs[0] = TYPE_NEW_DIVINE;
-        else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
-            gBattleAnimArgs[0] = TYPE_NEW_REASON;
-        else if (gFieldStatuses & STATUS_FIELD_UBW)
-            gBattleAnimArgs[0] = TYPE_NEW_METAL;
-        else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
-            gBattleAnimArgs[0] = TYPE_NEW_DARK;
-        else if (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
-            gBattleAnimArgs[0] = TYPE_NEW_MIASMA;
-        else //failsafe
-            gBattleAnimArgs[0] = 0;
-    }
+    if (IsAnyTerrainAffected(gBattleAnimAttacker, GetBattlerAbility(gBattleAnimAttacker), GetBattlerHoldEffect(gBattleAnimAttacker), gFieldTimers.terrain))
+        gBattleAnimArgs[0] = gBattleTerrainInfo[gFieldTimers.terrain].type;
     else
-    {
         gBattleAnimArgs[0] = 0;
-    }
     DestroyAnimVisualTask(taskId);
 }
 

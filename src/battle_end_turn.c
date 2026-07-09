@@ -71,8 +71,8 @@ static bool32 HandleEndTurnVarious(enum BattlerId battler)
         if (B_CHARGE < GEN_9 && gBattleMons[i].volatiles.chargeTimer > 0)
             gBattleMons[i].volatiles.chargeTimer--;
 
-        if (gBattleMons[i].volatiles.laserFocusTimer > 0 && --gBattleMons[i].volatiles.laserFocusTimer == 0)
-            gBattleMons[i].volatiles.laserFocus = FALSE;
+        if (gBattleMons[i].volatiles.laserFocusTimer > 0)
+            gBattleMons[i].volatiles.laserFocusTimer--;
 
         gBattleStruct->battlerState[i].wasAboveHalfHp = gBattleMons[i].hp > gBattleMons[i].maxHP / 2;
     }
@@ -331,6 +331,7 @@ static bool32 HandleEndTurnFutureSight(enum BattlerId battler)
         else
             SetTypeBeforeUsingMove(gCurrentMove, gBattlerAttacker);
 
+        gBattleScripting.animTurn = 1; // to play correct anim
         BattleScriptCall(BattleScript_MonTookFutureAttack);
         effect = TRUE;
     }
@@ -451,7 +452,7 @@ static bool32 HandleEndTurnFirstEventBlock(enum BattlerId battler)
         gBattleStruct->eventState.endTurnBlock++;
         break;
     case FIRST_EVENT_BLOCK_GRASSY_TERRAIN_HEAL:
-        if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN
+        if (gFieldTimers.terrain == B_TERRAIN_GRASSY
          && !IsBattlerAtMaxHp(battler)
          && !gBattleMons[battler].volatiles.healBlock
          && !IsSemiInvulnerable(battler, CHECK_ALL)
@@ -982,7 +983,6 @@ static bool32 HandleEndTurnMagnetRise(enum BattlerId battler)
 
     if (gBattleMons[battler].volatiles.magnetRiseTimer > 0 && --gBattleMons[battler].volatiles.magnetRiseTimer == 0)
     {
-        gBattleMons[battler].volatiles.magnetRise = FALSE;
         BattleScriptCall(BattleScript_BufferEndTurn);
         PREPARE_STRING_BUFFER(gBattleTextBuff1, STRINGID_ELECTROMAGNETISM);
         effect = TRUE;
@@ -1060,12 +1060,12 @@ static bool32 HandleEndTurnYawn(enum BattlerId battler)
         {
             gEffectBattler = gBattlerTarget = battler;
             enum HoldEffect holdEffect = GetBattlerHoldEffect(battler);
-            if (IsElectricTerrainAffected(battler, ability, holdEffect, gFieldStatuses))
+            if (IsElectricTerrainAffected(battler, ability, holdEffect, gFieldTimers.terrain))
             {
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAINPREVENTS_ELECTRIC;
                 BattleScriptCall(BattleScript_TerrainPrevents);
             }
-            else if (IsMistyTerrainAffected(battler, ability, holdEffect, gFieldStatuses))
+            else if (IsMistyTerrainAffected(battler, ability, holdEffect, gFieldTimers.terrain))
             {
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAINPREVENTS_MISTY;
                 BattleScriptCall(BattleScript_TerrainPrevents);
@@ -1394,43 +1394,21 @@ static bool32 HandleEndTurnMagicRoom(enum BattlerId battler)
     return effect;
 }
 
-static bool32 EndTurnTerrain(u32 terrainFlag, u32 stringTableId)
+static bool32 HandleEndTurnTerrain(enum BattlerId battler)
 {
+    gBattleStruct->eventState.endTurn++;
+
     if (gFieldTimers.terrainTimer > 0 && --gFieldTimers.terrainTimer == 0)
     {
-        gFieldStatuses &= ~terrainFlag;
         TryToRevertMimicryAndFlags();
-        gBattleCommunication[MULTISTRING_CHOOSER] = stringTableId;
+        gBattleCommunication[MULTISTRING_CHOOSER] = gBattleTerrainInfo[gFieldTimers.terrain].endMessage;
         gBattleScripting.battler = gBattlerAttacker;
         BattleScriptCall(BattleScript_TerrainEnds);
+        gFieldTimers.terrain = B_TERRAIN_NONE;
         return TRUE;
     }
 
     return FALSE;
-}
-
-static bool32 HandleEndTurnTerrain(enum BattlerId battler)
-{
-    bool32 effect = FALSE;
-
-    gBattleStruct->eventState.endTurn++;
-
-    if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
-        effect = EndTurnTerrain(STATUS_FIELD_ELECTRIC_TERRAIN, B_MSG_TERRAIN_END_ELECTRIC);
-    else if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
-        effect = EndTurnTerrain(STATUS_FIELD_MISTY_TERRAIN, B_MSG_TERRAIN_END_MISTY);
-    else if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
-        effect = EndTurnTerrain(STATUS_FIELD_GRASSY_TERRAIN, B_MSG_TERRAIN_END_GRASSY);
-    else if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
-        effect = EndTurnTerrain(STATUS_FIELD_PSYCHIC_TERRAIN, B_MSG_TERRAIN_END_PSYCHIC);
-    else if (gFieldStatuses & STATUS_FIELD_UBW)
-        effect = EndTurnTerrain(STATUS_FIELD_UBW, B_MSG_UBW_END);
-    else if (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN)
-        effect = EndTurnTerrain(STATUS_FIELD_DARKNESS_TERRAIN, B_MSG_TERRAIN_END_DARKNESS);
-    else if (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)
-        effect = EndTurnTerrain(STATUS_FIELD_MIASMA_TERRAIN, B_MSG_TERRAIN_END_MIASMA);
-
-    return effect;
 }
 
 static bool32 HandleEndTurnThirdEventBlock(enum BattlerId battler)

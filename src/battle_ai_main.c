@@ -6066,9 +6066,6 @@ static s32 AI_ForceSetupFirstTurn(enum BattlerId battlerAtk, enum BattlerId batt
     case EFFECT_WEATHER_AND_SWITCH:
     case EFFECT_CEASELESS_EDGE:
     case EFFECT_STONE_AXE:
-    case EFFECT_UBW:
-    case EFFECT_DARKNESS_TERRAIN:
-    case EFFECT_MIASMA_TERRAIN:
         ADJUST_SCORE(DECENT_EFFECT);
         break;
     default:
@@ -6472,18 +6469,6 @@ static s32 AI_PowerfulStatus(enum BattlerId battlerAtk, enum BattlerId battlerDe
         break;
     case EFFECT_TERRAIN:
         if (gFieldTimers.terrain != GetMoveTerrainType(move))
-            ADJUST_SCORE(POWERFUL_STATUS_MOVE);
-        break;
-    case EFFECT_UBW:
-        if (!(gFieldStatuses & STATUS_FIELD_UBW))
-            ADJUST_SCORE(POWERFUL_STATUS_MOVE);
-        break;
-    case EFFECT_DARKNESS_TERRAIN:
-        if (!(gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN))
-            ADJUST_SCORE(POWERFUL_STATUS_MOVE);
-        break;
-    case EFFECT_MIASMA_TERRAIN:
-        if (!(gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN))
             ADJUST_SCORE(POWERFUL_STATUS_MOVE);
         break;
     case EFFECT_WEATHER:

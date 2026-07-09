@@ -488,7 +488,7 @@ static enum FieldEffectOutcome BenefitsFromPsychicTerrain(enum BattlerId battler
 
 static enum FieldEffectOutcome BenefitsFromUBW(enum BattlerId battler) 
 {
-    if (DoesAbilityBenefitFromFieldStatus(gAiLogicData->abilities[battler], STATUS_FIELD_UBW))
+    if (DoesAbilityBenefitFromTerrain(gAiLogicData->abilities[battler], B_TERRAIN_UBW))
         return FIELD_EFFECT_POSITIVE;
 
     bool32 grounded = AI_IsBattlerGrounded(battler);
@@ -510,7 +510,7 @@ static enum FieldEffectOutcome BenefitsFromUBW(enum BattlerId battler)
 
 static enum FieldEffectOutcome BenefitsFromDarknessTerrain(enum BattlerId battler)
 {
-    if (DoesAbilityBenefitFromFieldStatus(gAiLogicData->abilities[battler], STATUS_FIELD_DARKNESS_TERRAIN))
+    if (DoesAbilityBenefitFromTerrain(gAiLogicData->abilities[battler], B_TERRAIN_DARKNESS))
         return FIELD_EFFECT_POSITIVE;
 
     bool32 grounded = AI_IsBattlerGrounded(battler);
@@ -531,7 +531,7 @@ static enum FieldEffectOutcome BenefitsFromDarknessTerrain(enum BattlerId battle
 
 static enum FieldEffectOutcome BenefitsFromMiasmaTerrain(enum BattlerId battler)
 {
-    if (DoesAbilityBenefitFromFieldStatus(gAiLogicData->abilities[battler], STATUS_FIELD_MIASMA_TERRAIN))
+    if (DoesAbilityBenefitFromTerrain(gAiLogicData->abilities[battler], B_TERRAIN_MIASMA))
         return FIELD_EFFECT_POSITIVE;
 
     bool32 grounded = AI_IsBattlerGrounded(battler);

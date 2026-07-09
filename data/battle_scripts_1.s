@@ -1033,9 +1033,6 @@ BattleScript_EffectElectrify::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
-BattleScript_EffectMiasmaTerrain::
-BattleScript_EffectDarknessTerrain::
-BattleScript_EffectUBWField::
 BattleScript_EffectTerrain::
 	attackcanceler
 	setterrain BattleScript_ButItFailed
@@ -4568,9 +4565,9 @@ BattleScript_LeechSeedOnAbilityPureWhiteActivates::
 	printstring STRINGID_LEECHSEEDHEALSABILITYPUREWHITE
 	waitmessage B_WAIT_TIME_LONG
 	statusanimation BS_ATTACKER
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	end2
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	end
 
 BattleScript_EmergencyExit::
 	pause 5
@@ -6545,8 +6542,8 @@ BattleScript_WinningCombination3CurseEffect:
 @	setbyte sB_ANIM_TURN, 0
 @	attackanimation
 @	waitanimation
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	printstring STRINGID_YORIGAMICURSE
 	waitmessage B_WAIT_TIME_LONG
 	tryfaintmon BS_ATTACKER
@@ -6736,8 +6733,8 @@ BattleScript_TsubameGaeshiActivates::
 	waitanimation
 	restoretarget
 	restoreattacker
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	tryfaintmon BS_ATTACKER
 	return
 
@@ -6748,7 +6745,7 @@ BattleScript_UltraMedicineActivates::
 @	waitanimation
 @	printstring STRINGID_PKMNSTATSHIGHTENED
 @	waitmessage B_WAIT_TIME_LONG
-	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_MIASMA_TERRAIN, BattleScript_UltraMedicineV2AlreadyMiasmaTerrain
+	ismiasmaterrainonthefield BattleScript_UltraMedicineV2AlreadyMiasmaTerrain
 	setmiasmaterrainfromability BattleScript_UltraMedicineV2AlreadyMiasmaTerrain
 @	call BattleScript_AbilityPopUpScripting
 @	printstring STRINGID_MIASMACOVERINGTHEFIELD
@@ -6768,7 +6765,7 @@ BattleScript_UltraSeigaActivates::
 @	waitanimation
 @	printstring STRINGID_PKMNSTATSHIGHTENED
 @	waitmessage B_WAIT_TIME_LONG
-	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_DARKNESS_TERRAIN, BattleScript_UltraSeigaActivatesAlreadyDarknessTerrain
+	isdarknessterrainonthefield BattleScript_UltraSeigaActivatesAlreadyDarknessTerrain
 	setdarknessterrainfromability BattleScript_UltraSeigaActivatesAlreadyDarknessTerrain
 @	call BattleScript_AbilityPopUpScripting
 @	printstring STRINGID_MIASMACOVERINGTHEFIELD
@@ -6783,7 +6780,7 @@ BattleScript_UltraSeigaActivatesAlreadyDarknessTerrain:
 
 BattleScript_EffectGaiaForce::
 	jumpiftype BS_ATTACKER, TYPE_NEW_DARK, BattleScript_EffectGaiaForceChangeDark
-	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_DARKNESS_TERRAIN, BattleScript_EffectGaiaForceChangeDark
+	isdarknessterrainonthefield BattleScript_EffectGaiaForceChangeDark
 	goto BattleScript_EffectHit
 	goto BattleScript_MoveEnd
 BattleScript_EffectGaiaForceChangeDark:
@@ -6793,8 +6790,8 @@ BattleScript_EffectGaiaForceChangeDark:
 
 BattleScript_ExShadowSkyHeal::
 	playanimation BS_ATTACKER, B_ANIM_SIMPLE_HEAL
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	printstring STRINGID_RECOVEREDBYEXSHADOWSKY
 	waitmessage B_WAIT_TIME_LONG
 	end3
@@ -6814,8 +6811,8 @@ BattleScript_AutumnGoddessesHealingActivates::
 	end3
 
 BattleScript_ExShadowHalfAttackerDamage::
-	healthbarupdate BS_ATTACKER, MOVE_DAMAGE_HP_UPDATE
-	datahpupdate BS_ATTACKER, MOVE_DAMAGE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	tryfaintmon BS_ATTACKER
 	return
 
@@ -6857,8 +6854,8 @@ BattleScript_LastWishRecover::
 	waitmessage B_WAIT_TIME_LONG
 	playanimation BS_SCRIPTING, B_ANIM_WISH_HEAL
 	waitanimation
-	healthbarupdate BS_SCRIPTING, PASSIVE_HP_UPDATE
-	datahpupdate BS_SCRIPTING, PASSIVE_HP_UPDATE
+	healthbarupdate BS_SCRIPTING
+	datahpupdate BS_SCRIPTING
 	waitstate
 	printstring STRINGID_POKEMONRECOVEREDFROMLASTWISH
 	waitmessage B_WAIT_TIME_LONG
@@ -6923,8 +6920,8 @@ BattleScript_DevourHeal::
 	waitmessage B_WAIT_TIME_LONG
 	playmoveanimation MOVE_GIGA_DRAIN
 	waitanimation
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	printstring STRINGID_DEVOURHEAL
 	waitmessage B_WAIT_TIME_LONG
 	return
@@ -6936,8 +6933,8 @@ BattleScript_DevourHealBlock::
 	waitmessage B_WAIT_TIME_LONG
 	playmoveanimation MOVE_GIGA_DRAIN
 	waitanimation
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	return
 
 BattleScript_DevourLiquidOoze::
@@ -6948,8 +6945,8 @@ BattleScript_DevourLiquidOoze::
 	playmoveanimation MOVE_GIGA_DRAIN
 	waitanimation
 	call BattleScript_AbilityPopUpTarget
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	printstring STRINGID_ITSUCKEDLIQUIDOOZE
 	tryfaintmon BS_ATTACKER
 	waitmessage B_WAIT_TIME_LONG
@@ -6975,8 +6972,8 @@ BattleScript_DevourHealMultiTarget_EffectHeal:
 	calcdevourhealamount BS_TARGET
 	playmoveanimation MOVE_GIGA_DRAIN
 	waitanimation
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	printstring STRINGID_DEVOURHEAL
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_DevourHealMultiTarget_LoopIncrement
@@ -6986,8 +6983,8 @@ BattleScript_DevourHealMultiTarget_EffectLiquidOoze:
 	playmoveanimation MOVE_GIGA_DRAIN
 	waitanimation
 	call BattleScript_AbilityPopUpTarget
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	printstring STRINGID_ITSUCKEDLIQUIDOOZE
 	tryfaintmon BS_ATTACKER
 	waitmessage B_WAIT_TIME_LONG
@@ -7041,7 +7038,7 @@ BattleScript_HealingGraceActivates::
 	waitmessage B_WAIT_TIME_LONG
 	updatestatusicon BS_ATTACKER_WITH_PARTNER
 	waitstate
-	end2
+	end
 
 BattleScript_GraceOfDreamStatRaised::
 	playanimation BS_ATTACKER, B_ANIM_GRACE_OF_DREAM_END_TURN
@@ -7049,7 +7046,7 @@ BattleScript_GraceOfDreamStatRaised::
 	trybattlerstatchange BS_ATTACKER, STAT_CHANGE_IGNORE_MIRROR_ARMOR
 	printstring STRINGID_GRACEOFDREAMRAISEDSTAT
 	waitmessage B_WAIT_TIME_LONG
-	end2
+	end
 
 BattleScript_EffectGraceOfDream::
 	attackcanceler
@@ -7064,12 +7061,12 @@ BattleScript_HealingSaintActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUpScripting
 	waitanimation
-	healthbarupdate BS_SCRIPTING, PASSIVE_HP_UPDATE
-	datahpupdate BS_SCRIPTING, PASSIVE_HP_UPDATE
+	healthbarupdate BS_SCRIPTING
+	datahpupdate BS_SCRIPTING
 	printstring STRINGID_HEALINGSAINTHEALS
 	waitmessage B_WAIT_TIME_LONG
 	restoreattacker
-	end2
+	end
 
 BattleScript_HealingSaintActivatesHealBlock::
 	pause B_WAIT_TIME_SHORT
@@ -7078,7 +7075,7 @@ BattleScript_HealingSaintActivatesHealBlock::
 	printstring STRINGID_HEALINGSAINTHEALSBUTBLOCKED
 	waitmessage B_WAIT_TIME_LONG
 	restoreattacker
-	end2
+	end
 
 BattleScript_DourEchoActivates::
 	call BattleScript_AbilityPopUp
@@ -7175,8 +7172,8 @@ BattleScript_EffectTransformHitBeatingUp:
 	effectivenesssound
 	hitanimation BS_TARGET
 	waitstate
-	healthbarupdate BS_TARGET, MOVE_DAMAGE_HP_UPDATE
-	datahpupdate BS_TARGET, MOVE_DAMAGE_HP_UPDATE
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
 	critmessage
 	waitmessage B_WAIT_TIME_LONG
 	resultmessage
@@ -7203,7 +7200,7 @@ BattleScript_EffectTransformHitDoTransformFirstAkiSistersSunnyDay:
 BattleScript_EffectTransformHitDoTransformFirstReiMari:
 	call BattleScript_EffectTransformHitDoTransform
 BattleScript_EffectTransformHitDoTransformFirstReiMariElectricTerrain:
-	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_ELECTRIC_TERRAIN, BattleScript_EffectTransformHitBeatingUp
+	iselectricterrainonthefield BattleScript_EffectTransformHitBeatingUp
 	call BattleScript_AbilityPopUpBeatUpCalling
 	pause B_WAIT_TIME_SHORT
 	setelectricterrainfromability BattleScript_EffectTransformHitBeatingUp
@@ -7227,8 +7224,8 @@ BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseLoop:
 BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseEffect:
 	copybyte sBATTLER, gBattlerAttacker
 	cursetarget BattleScript_ButItFailed
-	healthbarupdate BS_ATTACKER, PASSIVE_HP_UPDATE
-	datahpupdate BS_ATTACKER, PASSIVE_HP_UPDATE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
 	printstring STRINGID_YORIGAMICURSE
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_EffectTransformHitDoTransformFirstYorigamiSistersCurseIncrement:

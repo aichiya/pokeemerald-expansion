@@ -1913,12 +1913,6 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 0, // TODO: Assign points
     },
 	
-    [EFFECT_UBW] =
-    {
-        .battleScript = BattleScript_EffectUBWField,
-        .battleTvScore = 0, // TODO: Assign points
-    },
-	
     [EFFECT_DEFECTIVE_MIRACLE] =
     {
         .battleScript = BattleScript_EffectHit,
@@ -1937,12 +1931,6 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 0, // TODO: Assign points
     },
 
-    [EFFECT_DARKNESS_TERRAIN] =
-    {
-        .battleScript = BattleScript_EffectDarknessTerrain,
-        .battleTvScore = 0, // TODO: Assign points
-    },
-
     [EFFECT_QUINTETT_FEUER] =
     {
         .battleScript = BattleScript_EffectHit,
@@ -1958,12 +1946,6 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
     [EFFECT_GRIMOIRE_CALL] =
     {
         .battleScript = BattleScript_EffectGrimoireCall,
-        .battleTvScore = 0, // TODO: Assign points
-    },
-
-    [EFFECT_MIASMA_TERRAIN] =
-    {
-        .battleScript = BattleScript_EffectMiasmaTerrain,
         .battleTvScore = 0, // TODO: Assign points
     },
 

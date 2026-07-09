@@ -11617,7 +11617,7 @@ gBattleAnimMove_PhotonGeyser::
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 15, 0, RGB_BLACK
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
-	call UnsetPsychicBg
+	call UnsetBackground
 	blendoff
 	end
 PhotonGeyserSparks1:
@@ -19408,7 +19408,7 @@ gBattleAnimMove_IllusionaryDomination::
 	delay 2
 	createsprite gElectricPuffSpriteTemplate, ANIM_ATTACKER, 2, 0, -16, -16
 	waitforvisualfinish
-    call UnsetHighSpeedBg
+    call UnsetBackground
 	end
     
 gBattleAnimMove_SpiritCamera::
@@ -19719,7 +19719,7 @@ gBattleAnimMove_NeptuneBreak::
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	waitforvisualfinish
-	call UnsetHighSpeedBg
+	call UnsetBackground
 	createvisualtask AnimTask_VoltTackleAttackerReappear, 5
 	waitforvisualfinish
 	createvisualtask AnimTask_AllBattlersVisible, 0xA
@@ -20301,7 +20301,7 @@ AstromancyChargeUp:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 2, 5, 0, RGB(0, 3, 31)
 	waitforvisualfinish
 	clearmonbg ANIM_ATK_PARTNER
-	call UnsetPsychicBg
+	call UnsetBackground
 	blendoff
 	end
 AstromancyRingBuff:
@@ -20383,7 +20383,7 @@ AstromancyUnleash:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 2, 5, 0, RGB_RED
 	waitforvisualfinish
 	clearmonbg ANIM_ATK_PARTNER
-	call UnsetPsychicBg
+	call UnsetBackground
 	blendoff
 	end
 AstromancyRageBuff:
@@ -20921,7 +20921,7 @@ gBattleAnimMove_GaruruCannon::
 	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
 	delay 6
 	waitforvisualfinish
-	call UnsetHighSpeedBg
+	call UnsetBackground
 	createvisualtask AnimTask_BlendBattleAnimPal, 3, F_PAL_BG, 1, 8, 0, RGB_CYAN
 	clearmonbg ANIM_ATK_PARTNER
 	blendoff
@@ -21214,7 +21214,7 @@ gBattleAnimMove_ExcaliburGalatine::
 	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, ANIM_ATTACKER, 0x0, 0x5
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
-	call UnsetPsychicBg
+	call UnsetBackground
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 0, 0, RGB_WHITEALPHA
 	waitforvisualfinish
 	end
@@ -21381,7 +21381,7 @@ gBattleAnimMove_HollowHeartAlbion::
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 15, 0, RGB_BLACK
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
-	call UnsetPsychicBg
+	call UnsetBackground
 	visible ANIM_ATTACKER
 	waitforvisualfinish
 	blendoff
@@ -21498,7 +21498,7 @@ gBattleAnimMove_SanatKumara::
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 15, 0, RGB_BLACK
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
-	call UnsetPsychicBg
+	call UnsetBackground
 	blendoff
 	end
 

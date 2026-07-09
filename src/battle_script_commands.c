@@ -4858,15 +4858,15 @@ void SetMoveEffect(enum BattlerId battlerAtk, enum BattlerId effectBattler, enum
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_PSYCHIC;
             break;
         case MOVE_EFFECT_UBW:
-            statusFlag = STATUS_FIELD_UBW;
+            terrain = B_TERRAIN_UBW;
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_UBW_SET;
             break;
         case MOVE_EFFECT_DARKNESS_TERRAIN:
-            statusFlag = STATUS_FIELD_DARKNESS_TERRAIN;
+            terrain = B_TERRAIN_DARKNESS;
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_DARKNESS;
             break;
         case MOVE_EFFECT_MIASMA_TERRAIN:
-            statusFlag = STATUS_FIELD_MIASMA_TERRAIN;
+            terrain = B_TERRAIN_MIASMA;
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_MIASMA;
             break;
         default:
@@ -14691,7 +14691,6 @@ void BS_TryGrimoireCall(void)
     {
         gCalledMove = moveUsed;
     }
-    gBattleStruct->categoryOverride = GetMoveCategory(moveUsed);
 
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
@@ -15293,7 +15292,6 @@ void BS_TransformDataExecutionDecade(void)
             }
         }
     }
-    gBattleStruct->categoryOverride = GetMoveCategory(moveUsed);
     
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
@@ -15529,7 +15527,6 @@ void BS_TryCardIncludeAttack(void)
     {
         gCalledMove = moveUsed;
     }
-    gBattleStruct->categoryOverride = GetMoveCategory(moveUsed);
 
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
@@ -15611,15 +15608,50 @@ void BS_IsHpLessThanQuarter(void)
         gBattlescriptCurrInstr = cmd->failInstr;
 }
 
+void BS_IsMiasmaTerrainOnTheField(void)
+{
+    NATIVE_ARGS(const u8 *failInstr);
+
+    u32 terrainFlag = B_TERRAIN_MIASMA;
+
+    if (gFieldTimers.terrain != terrainFlag)
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    else
+        gBattlescriptCurrInstr = cmd->failInstr;
+}
+
+void BS_IsElectricTerrainOnTheField(void)
+{
+    NATIVE_ARGS(const u8 *failInstr);
+
+    u32 terrainFlag = B_TERRAIN_ELECTRIC;
+
+    if (gFieldTimers.terrain != terrainFlag)
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    else
+        gBattlescriptCurrInstr = cmd->failInstr;
+}
+
+void BS_IsDarknessTerrainOnTheField(void)
+{
+    NATIVE_ARGS(const u8 *failInstr);
+
+    u32 terrainFlag = B_TERRAIN_DARKNESS;
+
+    if (gFieldTimers.terrain != terrainFlag)
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    else
+        gBattlescriptCurrInstr = cmd->failInstr;
+}
+
 void BS_SetMiasmaTerrainFromAbility(void)
 {
     NATIVE_ARGS(const u8 *jumpInstr);
 
-    u32 statusFlag = STATUS_FIELD_MIASMA_TERRAIN;
+    u32 terrainFlag = B_TERRAIN_MIASMA;
     enum HoldEffect atkHoldEffect = GetBattlerHoldEffect(gBattlerAttacker);
 
-    gFieldStatuses &= ~STATUS_FIELD_TERRAIN_ANY;
-    gFieldStatuses |= statusFlag;
+    gFieldTimers.terrain = terrainFlag;
     gFieldTimers.terrainTimer = gBattleTurnCounter + (atkHoldEffect == HOLD_EFFECT_TERRAIN_EXTENDER) ? 8 : 5;
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
@@ -15628,11 +15660,10 @@ void BS_SetElectricTerrainFromAbility(void)
 {
     NATIVE_ARGS(const u8 *jumpInstr);
 
-    u32 statusFlag = STATUS_FIELD_ELECTRIC_TERRAIN;
+    u32 terrainFlag = B_TERRAIN_ELECTRIC;
     enum HoldEffect atkHoldEffect = GetBattlerHoldEffect(gBattlerAttacker);
 
-    gFieldStatuses &= ~STATUS_FIELD_TERRAIN_ANY;
-    gFieldStatuses |= statusFlag;
+    gFieldTimers.terrain = terrainFlag;
     gFieldTimers.terrainTimer = gBattleTurnCounter + (atkHoldEffect == HOLD_EFFECT_TERRAIN_EXTENDER) ? 8 : 5;
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
@@ -15641,11 +15672,10 @@ void BS_SetDarknessTerrainFromAbility(void)
 {
     NATIVE_ARGS(const u8 *jumpInstr);
 
-    u32 statusFlag = STATUS_FIELD_DARKNESS_TERRAIN;
+    u32 terrainFlag = B_TERRAIN_DARKNESS;
     enum HoldEffect atkHoldEffect = GetBattlerHoldEffect(gBattlerAttacker);
 
-    gFieldStatuses &= ~STATUS_FIELD_TERRAIN_ANY;
-    gFieldStatuses |= statusFlag;
+    gFieldTimers.terrain = terrainFlag;
     gFieldTimers.terrainTimer = gBattleTurnCounter + (atkHoldEffect == HOLD_EFFECT_TERRAIN_EXTENDER) ? 8 : 5;
     gBattlescriptCurrInstr = cmd->nextInstr;
 }

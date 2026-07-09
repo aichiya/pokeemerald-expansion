@@ -2631,45 +2631,24 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
         }
         else if (gStartingStatuses.UBWTerrain || gStartingStatuses.UBWTerrainTemporary)
         {
-            effect = SetStartingFieldStatus(
-                        STATUS_FIELD_UBW,
-                        B_MSG_UBW_SET,
-                        0,
-                        &gFieldTimers.terrainTimer, gStartingStatuses.UBWTerrain ? 0 : 5);
+            effect = SetStartingFieldTerrain(B_TERRAIN_UBW, &gFieldTimers.terrainTimer,
+                gStartingStatuses.UBWTerrain ? 0 : 5);
             gStartingStatuses.UBWTerrainTemporary = gStartingStatuses.UBWTerrain = FALSE;
-            if (effect)
-            {
-                BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
-                return TRUE;
-            }
+            return effect;
         }
         else if (gStartingStatuses.darknessTerrain || gStartingStatuses.darknessTerrainTemporary)
         {
-            effect = SetStartingFieldStatus(
-                        STATUS_FIELD_DARKNESS_TERRAIN,
-                        B_MSG_TERRAIN_SET_DARKNESS,
-                        0,
-                        &gFieldTimers.terrainTimer, gStartingStatuses.darknessTerrain ? 0 : 5);
+            effect = SetStartingFieldTerrain(B_TERRAIN_DARKNESS, &gFieldTimers.terrainTimer,
+                gStartingStatuses.darknessTerrain ? 0 : 5);
             gStartingStatuses.darknessTerrainTemporary = gStartingStatuses.darknessTerrain = FALSE;
-            if (effect)
-            {
-                BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
-                return TRUE;
-            }
+            return effect;
         }
         else if (gStartingStatuses.miasmaTerrain || gStartingStatuses.miasmaTerrainTemporary)
         {
-            effect = SetStartingFieldStatus(
-                        STATUS_FIELD_MIASMA_TERRAIN,
-                        B_MSG_TERRAIN_SET_MIASMA,
-                        0,
-                        &gFieldTimers.terrainTimer, gStartingStatuses.miasmaTerrain ? 0 : 5);
+            effect = SetStartingFieldTerrain(B_TERRAIN_MIASMA, &gFieldTimers.terrainTimer,
+                gStartingStatuses.miasmaTerrain ? 0 : 5);
             gStartingStatuses.miasmaTerrainTemporary = gStartingStatuses.miasmaTerrain = FALSE;
-            if (effect)
-            {
-                BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
-                return TRUE;
-            }
+            return effect;
         }
         else if (gStartingStatuses.trickRoom || gStartingStatuses.trickRoomTemporary)
         {
@@ -3227,7 +3206,9 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             }
             break;
         case ABILITY_DOUBLE_HEROINES:
-            if (TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN))
+            if (!shouldAbilityTrigger)
+                break;
+            if (TryChangeBattleTerrain(battler, B_TERRAIN_ELECTRIC))
             {
                 BattleScriptCall(BattleScript_ElectricSurgeActivates);
                 effect++;
@@ -3281,7 +3262,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         case ABILITY_SPARKLING_STAR:
             if (shouldAbilityTrigger)
             {
-                if (TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN))
+                if (TryChangeBattleTerrain(battler, B_TERRAIN_ELECTRIC))
                     BattleScriptCall(BattleScript_ElectricSurgeActivatesNoPopup);
 
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_TERAVOLT;
@@ -3292,7 +3273,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         case ABILITY_BRILIANT_STAR:
             if (shouldAbilityTrigger)
             {
-                if (TryChangeBattleTerrain(battler, STATUS_FIELD_PSYCHIC_TERRAIN))
+                if (TryChangeBattleTerrain(battler, B_TERRAIN_PSYCHIC))
                     BattleScriptCall(BattleScript_PsychicSurgeActivatesNoPopup);
 
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_BRILIANT_STAR;
@@ -3611,21 +3592,27 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             }
             break;
         case ABILITY_BLADE_WORKS:
-            if (TryChangeBattleTerrain(battler, STATUS_FIELD_UBW))
+            if (!shouldAbilityTrigger)
+                break;
+            if (TryChangeBattleTerrain(battler, B_TERRAIN_UBW))
             {
                 BattleScriptCall(BattleScript_UBWActivates);
                 effect++;
             }
             break;
         case ABILITY_DARKNESS_SURGE:
-            if (TryChangeBattleTerrain(battler, STATUS_FIELD_DARKNESS_TERRAIN))
+            if (!shouldAbilityTrigger)
+                break;
+            if (TryChangeBattleTerrain(battler, B_TERRAIN_DARKNESS))
             {
                 BattleScriptCall(BattleScript_DarknessSurgeActivates);
                 effect++;
             }
             break;
         case ABILITY_MIASMA_SURGE:
-            if (TryChangeBattleTerrain(battler, STATUS_FIELD_MIASMA_TERRAIN))
+            if (!shouldAbilityTrigger)
+                break;
+            if (TryChangeBattleTerrain(battler, B_TERRAIN_MIASMA))
             {
                 BattleScriptCall(BattleScript_MiasmaSurgeActivates);
                 effect++;
@@ -3712,7 +3699,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 gBattlerAttacker = battler;
                 gBattlerTarget = gBattlerAttacker;
 
-                if (TryChangeBattleTerrain(battler, STATUS_FIELD_MISTY_TERRAIN))
+                if (TryChangeBattleTerrain(battler, B_TERRAIN_MISTY))
                 {
                     BattleScriptCall(BattleScript_MistySurgeActivates);
                     effect++;
@@ -6702,7 +6689,7 @@ bool32 CanSetNonVolatileStatus(enum BattlerId battlerAtk, enum BattlerId battler
         {
             battleScript = BattleScript_AlreadyPoisoned;
         }
-        else if ((abilityAtk != ABILITY_CORROSION || (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN)) && IS_BATTLER_ANY_TYPE(battlerDef, TYPE_NEW_MIASMA, TYPE_NEW_METAL))
+        else if ((abilityAtk != ABILITY_CORROSION || gFieldTimers.terrain == B_TERRAIN_MIASMA) && IS_BATTLER_ANY_TYPE(battlerDef, TYPE_NEW_MIASMA, TYPE_NEW_METAL))
         {
             battleScript = BattleScript_NotAffected;
         }
@@ -8058,15 +8045,15 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
     if (IsPsychicTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->terrain) && moveType == TYPE_NEW_REASON)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
 
-    if (IsUBWTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->fieldStatuses) && moveType == TYPE_NEW_METAL)
+    if (IsUBWTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->terrain) && moveType == TYPE_NEW_METAL)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
-    if (IsUBWTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->fieldStatuses) && moveType == TYPE_NEW_MIASMA)
+    if (IsUBWTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->terrain) && moveType == TYPE_NEW_MIASMA)
         modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
-    if (IsDarknessTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->fieldStatuses) && moveType == TYPE_NEW_DARK)
+    if (IsDarknessTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->terrain) && moveType == TYPE_NEW_DARK)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
-    if (IsDarknessTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->fieldStatuses) && moveType == TYPE_NEW_DIVINE)
+    if (IsDarknessTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->terrain) && moveType == TYPE_NEW_DIVINE)
         modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
-    if (IsMiasmaTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->fieldStatuses) && moveType == TYPE_NEW_MIASMA)
+    if (IsMiasmaTerrainAffected(battlerAtk, ctx->abilities[battlerAtk], ctx->holdEffects[battlerAtk], ctx->terrain) && moveType == TYPE_NEW_MIASMA)
         modifier = uq4_12_multiply(modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8 ? UQ_4_12(1.3) : UQ_4_12(1.5)));
 
     if (IsFieldMudSportAffected(ctx->moveType))
@@ -8493,7 +8480,7 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
             if (IsBattleMovePhysical(move))
             {
                 atkStat = gBattleMons[battlerDef].defense;
-                if (ctx->fieldStatuses & STATUS_FIELD_WONDER_ROOM)
+                if (gFieldStatuses & STATUS_FIELD_WONDER_ROOM)
                     atkStage = gBattleMons[battlerAtk].statStages[STAT_SPDEF];
                 else
                     atkStage = gBattleMons[battlerAtk].statStages[STAT_DEF];
@@ -8501,7 +8488,7 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
             else
             {
                 atkStat = gBattleMons[battlerDef].spDefense;
-                if (ctx->fieldStatuses & STATUS_FIELD_WONDER_ROOM)
+                if (gFieldStatuses & STATUS_FIELD_WONDER_ROOM)
                     atkStage = gBattleMons[battlerAtk].statStages[STAT_DEF];
                 else
                     atkStage = gBattleMons[battlerAtk].statStages[STAT_SPDEF];
@@ -8542,7 +8529,7 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
             if (IsBattleMovePhysical(move))
             {
                 atkStat = gBattleMons[battlerDef].defense;
-                if (ctx->fieldStatuses & STATUS_FIELD_WONDER_ROOM)
+                if (gFieldStatuses & STATUS_FIELD_WONDER_ROOM)
                     atkStage = gBattleMons[battlerAtk].statStages[STAT_SPDEF];
                 else
                     atkStage = gBattleMons[battlerAtk].statStages[STAT_DEF];
@@ -8550,7 +8537,7 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
             else
             {
                 atkStat = gBattleMons[battlerDef].spDefense;
-                if (ctx->fieldStatuses & STATUS_FIELD_WONDER_ROOM)
+                if (gFieldStatuses & STATUS_FIELD_WONDER_ROOM)
                     atkStage = gBattleMons[battlerAtk].statStages[STAT_DEF];
                 else
                     atkStage = gBattleMons[battlerAtk].statStages[STAT_SPDEF];
@@ -10186,7 +10173,7 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
         || gBattleMons[ctx->battlerDef].species == SPECIES_KEY_MAI_EX
         || gBattleMons[ctx->battlerDef].species == SPECIES_ETC_TSUBAKURA))
         mod = UQ_4_12(2.0);
-    if (ctx->moveType == TYPE_NEW_MIASMA && defType == TYPE_NEW_STEEL && (gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN) && mod == UQ_4_12(0.0))
+    if (ctx->moveType == TYPE_NEW_MIASMA && defType == TYPE_NEW_STEEL && gFieldTimers.terrain == B_TERRAIN_MIASMA && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
     if (ctx->moveType == TYPE_NEW_EARTH && defType == TYPE_FLYING && IsBattlerGrounded(ctx->battlerDef, ctx->abilities[ctx->battlerDef], ctx->holdEffects[ctx->battlerDef]) && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
@@ -12647,7 +12634,7 @@ u32 GetTotalAccuracy(struct BattleCalcValues *cv, u32 weather)
     if (gFieldStatuses & STATUS_FIELD_GRAVITY)
         calc = (calc * 5) / 3; // 1.66 Gravity acc boost
     
-    if ((gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN) 
+    if ((gFieldTimers.terrain == B_TERRAIN_DARKNESS) 
       && !(attackerSpeciesType1 == TYPE_NEW_DARK || attackerSpeciesType2 == TYPE_NEW_DARK || attackerSpeciesType3 == TYPE_NEW_DARK)) 
         calc = (calc * 80) / 100; // 1.2 loss non-dark type attacker when darkness terrain on field
 

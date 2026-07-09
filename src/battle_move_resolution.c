@@ -2391,7 +2391,7 @@ static bool32 IsMoveParentalBondAffected(struct BattleCalcValues *cv)
      || GetActiveGimmick(cv->battlerAtk) == GIMMICK_Z_MOVE
      || cv->move == MOVE_STRUGGLE)
     {
-        if (gFieldStatuses & STATUS_FIELD_UBW && IsSlicingMove(cv->move))
+        if (gFieldTimers.terrain == B_TERRAIN_UBW && IsSlicingMove(cv->move))
             return TRUE;
         else
             return FALSE;

@@ -2150,6 +2150,21 @@
 	.byte \onFieldStatus
 	.endm
 
+	.macro ismiasmaterrainonthefield failInstr:req
+	callnative BS_IsMiasmaTerrainOnTheField
+	.4byte \failInstr
+	.endm
+
+	.macro iselectricterrainonthefield failInstr:req
+	callnative BS_IsElectricTerrainOnTheField
+	.4byte \failInstr
+	.endm
+
+	.macro isdarknessterrainonthefield failInstr:req
+	callnative BS_IsDarknessTerrainOnTheField
+	.4byte \failInstr
+	.endm
+
 	.macro setmiasmaterrainfromability failInstr:req
 	callnative BS_SetMiasmaTerrainFromAbility
 	.4byte \failInstr

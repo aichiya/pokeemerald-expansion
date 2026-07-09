@@ -4659,7 +4659,7 @@ u32 GetBattlerTotalSpeedStat(enum BattlerId battler, enum Ability ability, enum 
     if (gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_SWAMP)
         speed /= 4;
 
-    if ((gFieldStatuses & STATUS_FIELD_MIASMA_TERRAIN) && !(type1 == TYPE_NEW_MIASMA || type2 == TYPE_NEW_MIASMA || type3 == TYPE_NEW_MIASMA))
+    if ((gFieldTimers.terrain == B_TERRAIN_MIASMA) && !(type1 == TYPE_NEW_MIASMA || type2 == TYPE_NEW_MIASMA || type3 == TYPE_NEW_MIASMA))
         speed = (speed * 80) / 100;
 
     return speed;
@@ -5907,7 +5907,7 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
         if (types[0] == TYPE_NEW_DARK 
          || types[1] == TYPE_NEW_DARK
          || types[2] == TYPE_NEW_DARK
-         || (gFieldStatuses & STATUS_FIELD_DARKNESS_TERRAIN))
+         || (gFieldTimers.terrain == B_TERRAIN_DARKNESS))
             return TYPE_NEW_DARK;
         break;
     case EFFECT_CHANGE_TYPE_ON_ITEM:

@@ -263,7 +263,7 @@ u32 GetCurrentBattleWeather(void)
 
 const struct TerrainInfo gBattleTerrainInfo[B_TERRAIN_COUNT] = {
     [B_TERRAIN_GRASSY] = {
-        .type = TYPE_GRASS,
+        .type = TYPE_NEW_NATURE,
         .secretPowerAnimation = gBattleAnimMove_NeedleArm,
         .secretPowerEffect = MOVE_EFFECT_SLEEP,
         .naturePowerMove = MOVE_ENERGY_BALL,
@@ -275,10 +275,10 @@ const struct TerrainInfo gBattleTerrainInfo[B_TERRAIN_COUNT] = {
     },
 
     [B_TERRAIN_MISTY] = {
-        .type = TYPE_FAIRY,
-        .secretPowerAnimation = gBattleAnimMove_FairyWind,
+        .type = TYPE_NEW_DIVINE,
+        .secretPowerAnimation = gBattleAnimMove_DoomDesire,
         .secretPowerEffect = SECRET_POWER_SP_ATK_MINUS_1,
-        .naturePowerMove = MOVE_MOONBLAST,
+        .naturePowerMove = MOVE_NEW_DIVINE_LIGHT,
         .battleBackground = BG_MISTY_TERRAIN,
         .seedStat = STAT_SPDEF,
         .seedHoldEffect = HOLD_EFFECT_PARAM_MISTY_TERRAIN,
@@ -287,7 +287,7 @@ const struct TerrainInfo gBattleTerrainInfo[B_TERRAIN_COUNT] = {
     },
 
     [B_TERRAIN_ELECTRIC] = {
-        .type = TYPE_ELECTRIC,
+        .type = TYPE_NEW_ELECTRIC,
         .secretPowerAnimation = gBattleAnimMove_ThunderShock,
         .secretPowerEffect = MOVE_EFFECT_PARALYSIS,
         .naturePowerMove = MOVE_THUNDERBOLT,
@@ -299,7 +299,7 @@ const struct TerrainInfo gBattleTerrainInfo[B_TERRAIN_COUNT] = {
     },
 
     [B_TERRAIN_PSYCHIC] = {
-        .type = TYPE_PSYCHIC,
+        .type = TYPE_NEW_REASON,
         .secretPowerAnimation = gBattleAnimMove_Confusion,
         .secretPowerEffect = SECRET_POWER_SPD_MINUS_1,
         .naturePowerMove = MOVE_PSYCHIC,
@@ -308,6 +308,42 @@ const struct TerrainInfo gBattleTerrainInfo[B_TERRAIN_COUNT] = {
         .seedHoldEffect = HOLD_EFFECT_PARAM_PSYCHIC_TERRAIN,
         .startMessage = B_MSG_TERRAIN_SET_PSYCHIC,
         .endMessage = B_MSG_TERRAIN_END_PSYCHIC,
+    },
+
+    [B_TERRAIN_UBW] = {
+        .type = TYPE_NEW_METAL,
+        .secretPowerAnimation = gBattleAnimMove_Cut,
+        .secretPowerEffect = MOVE_EFFECT_BREAK_SCREEN,
+        .naturePowerMove = MOVE_FLASH_CANNON,
+        .battleBackground = BG_UBW,
+        .seedStat = STAT_ATK,
+        .seedHoldEffect = HOLD_EFFECT_PARAM_UBW,
+        .startMessage = B_MSG_UBW_SET,
+        .endMessage = B_MSG_UBW_END,
+    },
+
+    [B_TERRAIN_DARKNESS] = {
+        .type = TYPE_NEW_DARK,
+        .secretPowerAnimation = gBattleAnimMove_DarkPulse,
+        .secretPowerEffect = MOVE_EFFECT_FLINCH,
+        .naturePowerMove = MOVE_DARK_PULSE,
+        .battleBackground = BG_DARKNESS_TERRAIN,
+        .seedStat = STAT_EVASION,
+        .seedHoldEffect = HOLD_EFFECT_PARAM_DARKNESS_TERRAIN,
+        .startMessage = B_MSG_TERRAIN_SET_DARKNESS,
+        .endMessage = B_MSG_TERRAIN_END_DARKNESS,
+    },
+
+    [B_TERRAIN_MIASMA] = {
+        .type = TYPE_NEW_MIASMA,
+        .secretPowerAnimation = gBattleAnimMove_Sludge,
+        .secretPowerEffect = MOVE_EFFECT_POISON,
+        .naturePowerMove = MOVE_SLUDGE_BOMB,
+        .battleBackground = BG_MIASMA_TERRAIN,
+        .seedStat = STAT_SPATK,
+        .seedHoldEffect = HOLD_EFFECT_PARAM_MIASMA_TERRAIN,
+        .startMessage = B_MSG_TERRAIN_SET_MIASMA,
+        .endMessage = B_MSG_TERRAIN_END_MIASMA,
     },
 };
 

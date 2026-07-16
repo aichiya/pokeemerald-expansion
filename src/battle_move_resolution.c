@@ -3284,7 +3284,7 @@ static enum MoveEndResult MoveEndAbsorb(struct BattleCalcValues *cv)
             healAmount = GetDrainedBigRootHp(cv->battlerAtk, healAmount);
             gEffectBattler = cv->battlerAtk;
 
-            if (cv->abilities[cv->battlerDef] == ABILITY_LIQUID_OOZE)
+            if (cv->abilities[cv->battlerDef] == ABILITY_LIQUID_OOZE || cv->abilities[cv->battlerDef] == ABILITY_STRANGE_MIST)
             {
                 SetPassiveDamageAmount(cv->battlerAtk, healAmount);
                 gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ABSORB_OOZE;

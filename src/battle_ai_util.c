@@ -1203,7 +1203,7 @@ static bool32 AI_IsMoveEffectInMinus(enum BattlerId battlerAtk, enum BattlerId b
             switch (additionalEffect->moveEffect)
             {
             case MOVE_EFFECT_ABSORB:
-                if (abilityDef == ABILITY_LIQUID_OOZE)
+                if (abilityDef == ABILITY_LIQUID_OOZE || abilityDef == ABILITY_STRANGE_MIST)
                     return TRUE;
                 break;
             case MOVE_EFFECT_STAT_PLUS:

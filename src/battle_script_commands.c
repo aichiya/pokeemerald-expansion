@@ -4120,9 +4120,9 @@ void SetMoveEffect(struct BattleCalcValues *cv, struct SetEffect *se)
                 gBattlescriptCurrInstr = battleScript;
             }
         }
-		else if (abilities[effectBattler] == ABILITY_PURE_WHITE)
+		else if (cv->abilities[effectBattler] == ABILITY_PURE_WHITE)
 		{
-			if (primary || certain)
+			if (se->primary || se->certain)
 			{
 				gLastUsedAbility = ABILITY_PURE_WHITE;
 				gBattlerAbility = effectBattler;
@@ -4221,7 +4221,7 @@ void SetMoveEffect(struct BattleCalcValues *cv, struct SetEffect *se)
             gEffectBattler = battlerAtk;
             gBattlerAbility = gBattleScripting.battler = cv->battlerDef;
 
-            if (cv->abilities[cv->battlerDef] == ABILITY_LIQUID_OOZE
+            if ((cv->abilities[cv->battlerDef] == ABILITY_LIQUID_OOZE || cv->abilities[cv->battlerDef] == ABILITY_STRANGE_MIST)
              && (GetMoveEffect(gCurrentMove)!= EFFECT_DREAM_EATER || GetConfig(B_DREAM_EATER_LIQUID_OOZE) >= GEN_5))
             {
                 SetPassiveDamageAmount(battlerAtk, healAmount);
@@ -4261,39 +4261,6 @@ void SetMoveEffect(struct BattleCalcValues *cv, struct SetEffect *se)
         SetMoveEffect(cv, se);
         break;
     }
-    case MOVE_EFFECT_FIVE_ELEMENT:
-        if (gBattleMons[gEffectBattler].status1)
-        {
-            gBattlescriptCurrInstr++;
-        }
-        else
-        {
-            static const u8 sFiveElementEffects[] =
-            {
-                MOVE_EFFECT_BURN,
-                MOVE_EFFECT_FREEZE_OR_FROSTBITE,
-                MOVE_EFFECT_PARALYSIS,
-                MOVE_EFFECT_SLEEP,
-                MOVE_EFFECT_TOXIC
-            };
-            SetMoveEffect(battlerAtk, effectBattler, RandomElement(RNG_FIVE_ELEMENT, sFiveElementEffects), battleScript, effectFlags);
-        }
-        break;
-    case MOVE_EFFECT_STRAWBERRY_CROSS:
-        if (gBattleMons[gEffectBattler].status1)
-        {
-            gBattlescriptCurrInstr++;
-        }
-        else
-        {
-            static const u8 sStrawberryCrossEffects[] =
-            {
-                MOVE_EFFECT_BURN,
-                MOVE_EFFECT_FREEZE_OR_FROSTBITE
-            };
-            SetMoveEffect(battlerAtk, effectBattler, RandomElement(RNG_STRAWBERRY_CROSS, sStrawberryCrossEffects), battleScript, effectFlags);
-        }
-        break;
     case MOVE_EFFECT_WRAP:
         if (gBattleMons[effectBattler].volatiles.wrapped)
         {

@@ -1855,7 +1855,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
          || IS_BATTLER_OF_TYPE(battlerDef, TYPE_NEW_NATURE)
          || DoesPartnerHaveSameMoveEffect(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove))
             ADJUST_SCORE(-10);
-        else if (aiData->abilities[battlerDef] == ABILITY_LIQUID_OOZE)
+        else if (aiData->abilities[battlerDef] == ABILITY_LIQUID_OOZE || aiData->abilities[battlerDef] == ABILITY_STRANGE_MIST)
             ADJUST_SCORE(-3);
         break;
     case EFFECT_DISABLE:
@@ -3096,6 +3096,8 @@ static bool32 ShouldTriggerPartnerAbility(enum BattlerId battlerAtk, enum Move m
     {
     case ABILITY_DRY_SKIN:
     case ABILITY_EARTH_EATER:
+    case ABILITY_SCULPTOR_GOD:
+    case ABILITY_MAKAI_GODDESS:
     case ABILITY_VOLT_ABSORB:
     case ABILITY_WATER_ABSORB:
         if (IsBattlerAlive(leftFoe) && ShouldRecover(partner, leftFoe, move, 25))
@@ -3455,27 +3457,6 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                     isMoveAffectedByPartnerAbility = FALSE;
                 }
                 break;
-            case ABILITY_EARTH_EATER:
-            case ABILITY_SCULPTOR_GOD:
-            case ABILITY_LEVITATE:
-            case ABILITY_EELEVATE:
-                if (moveType == TYPE_NEW_EARTH)
-                {
-                    if (moveTarget == TARGET_FOES_AND_ALLY)
-                    {
-                        if (ShouldTriggerPartnerAbility(battlerAtk, move, atkPartnerAbility))
-                            ADJUST_SCORE(DECENT_EFFECT);
-                    }
-                    else if (!(gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_HP_AWARE))
-                    {
-                        RETURN_SCORE_MINUS(10);
-                    }
-                }
-                else
-                {
-                    isMoveAffectedByPartnerAbility = FALSE;
-                }
-                break;  // handled in AI_HPAware
             case ABILITY_LEVITATE:
             case ABILITY_EELEVATE:
                 if (moveType != TYPE_GROUND)

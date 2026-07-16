@@ -589,7 +589,7 @@ static bool32 HandleEndTurnLeechSeed(enum BattlerId battler)
 
     if (IsBattlerPresent(drainedBattler)
      && IsBattlerPresent(receiverBattler)
-     && !(IsAbilityAndRecord(drainedBattler, GetBattlerAbility(drainedBattler), ABILITY_MAGIC_GUARD) || IsAbilityAndRecord(drainedBattler, GetBattlerAbility(drainedBattler), ABILITY_FANTASY_BREAKER))
+     && !(IsAbilityAndRecord(drainedBattler, GetBattlerAbility(drainedBattler), ABILITY_MAGIC_GUARD) || IsAbilityAndRecord(drainedBattler, GetBattlerAbility(drainedBattler), ABILITY_FANTASY_BREAKER)))
     {
         gBattlerAttacker = receiverBattler;
         gBattlerAbility = gBattleScripting.battler = drainedBattler;

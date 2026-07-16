@@ -969,6 +969,8 @@ void ScrCmd_createmon(struct ScriptContext *ctx)
         monTemplate.origin = STATIC_WILDMON_ORIGIN;
     }
 
+    monTemplate.ignoreTotalEvCheck = flags >> 26;
+
     gSpecialVar_Result = ScriptGiveMonParameterized(side, slot, &monTemplate);
 }
 

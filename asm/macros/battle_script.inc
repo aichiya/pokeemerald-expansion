@@ -1129,13 +1129,13 @@
     .macro trystatchanges battler:req statChangeFlags:req
     .byte B_SCR_OP_TRYSTATCHANGES
     .byte \battler
-    .2byte \statChangeFlags
+    .4byte \statChangeFlags
     .endm
 
     .macro trybattlerstatchange battler:req statChangeFlags:req
     .byte B_SCR_OP_TRYBATTLERSTATCHANGE
     .byte \battler
-    .2byte \statChangeFlags
+    .4byte \statChangeFlags
     .endm
 
 	.macro callnative func:req
@@ -1633,10 +1633,6 @@
 	callnative BS_TransformDataExecutionDecade
 	.endm
 
-	.macro transformdataexecutioncallingmultiunit
-	callnative BS_TransformDataExecutionCallingMultiUnit
-	.endm
-
 	.macro trycardincludeattack
 	callnative BS_TryCardIncludeAttack
 	.endm
@@ -2070,6 +2066,12 @@
 
 	.macro jumpifspecies species:req, jumpInstr:req
 	callnative BS_JumpIfSpecies
+	.2byte \species
+	.4byte \jumpInstr
+	.endm
+
+	.macro jumpiftransformedspecies species:req, jumpInstr:req
+	callnative BS_JumpIfTransformedSpecies
 	.2byte \species
 	.4byte \jumpInstr
 	.endm

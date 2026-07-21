@@ -800,7 +800,7 @@ static inline enum Ability GetMoveOverwriteAbility(enum Move move)
 
 static inline enum BattleWeather GetMoveWeatherType(enum Move move)
 {
-    assertf(gMovesInfo[move].effect == EFFECT_WEATHER || gMovesInfo[move].effect == EFFECT_WEATHER_AND_SWITCH || gMovesInfo[move].effect == EFFECT_TRANSFORM_AND_HIT_WITH_ARG_CONDITION, "not a move that sets weather: %S", gMovesInfo[move].name);
+    assertf(gMovesInfo[move].effect == EFFECT_WEATHER || gMovesInfo[move].effect == EFFECT_WEATHER_AND_SWITCH, "not a move that sets weather: %S", gMovesInfo[move].name);
     return gMovesInfo[SanitizeMoveId(move)].argument.weatherType;
 }
 

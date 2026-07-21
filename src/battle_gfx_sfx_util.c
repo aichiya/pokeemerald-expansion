@@ -967,7 +967,7 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
         gSprites[gBattlerSpriteIds[battlerDef]].y = GetBattlerSpriteDefault_Y(battlerDef);
         StartSpriteAnim(&gSprites[gBattlerSpriteIds[battlerDef]], 0);
     }
-    else if (gCurrentMove == MOVE_RIDE_TRANSFORM || gCurrentMove == MOVE_BEAT_UP_CALLING)
+    else if (gCurrentMove == MOVE_RIDE_TRANSFORM)
     {
         if (IsContest())
         {
@@ -1003,16 +1003,8 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
 
         if (changeType == SPECIES_GFX_CHANGE_TRANSFORM)
         {
-			if (gCurrentMove == MOVE_BEAT_UP_CALLING)
-            {
-                CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
-                gBattleMons[gBattlerAttacker].volatiles.flagMultiUnitTransform = 1;
-            }
-            else
-            {
-                BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
-                CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
-            }
+            BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
+            CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
         }
 
         // dynamax tint

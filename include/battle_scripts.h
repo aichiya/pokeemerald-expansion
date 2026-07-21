@@ -755,7 +755,6 @@ extern const u8 BattleScript_EffectFluffication[];
 extern const u8 BattleScript_EffectWipesOutFoesParty[];
 extern const u8 BattleScript_WishMegaEvolutionIllya[];
 extern const u8 BattleScript_EffectGaiaForce[];
-extern const u8 BattleScript_EffectTransformHit[];
 extern const u8 BattleScript_ExShadowSkyHeal[];
 extern const u8 BattleScript_AutumnGoddessesHealingActivates[];
 extern const u8 BattleScript_EffectInfatuate[];
@@ -819,5 +818,9 @@ extern const u8 BattleScript_NoChargingAbilityActivates[];
 extern const u8 BattleScript_GraceOfDreamStatRaised[];
 extern const u8 BattleScript_LastCadenzaSwitchInActivates[];
 extern const u8 BattleScript_StealStatsTreasureSniper[];
+extern const u8 BattleScript_BattlerFormChangeBeatUpCalling[];
+extern const u8 BattleScript_BattlerFormChangeBeatUpCallingNoPopup[];
+extern const u8 BattleScript_BattlerFormChangeBeatUpCallingAfterAnimation[];
+
 
 #endif // GUARD_BATTLE_SCRIPTS_H

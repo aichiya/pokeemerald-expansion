@@ -2375,7 +2375,7 @@ bool32 CanAbilityAbsorbMove(struct DamageContext *ctx)
             battleScript = AbsorbedByDrainHpAbility(ctx->battlerDef);
         break;
     case ABILITY_FANTASY_BREAKER:
-        if (ctx->moveType <= NUMBER_OF_MON_TYPES && FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE)
+        if (FlagGet(FLAG_FANTASY_BREAKER_CHEAT))
         {
             if (gBattleMons[gBattlerAttacker].ability != ABILITY_FANTASY_BREAKER)
                 battleScript = AbsorbedByDrainHpAbility(ctx->battlerDef);
@@ -2389,9 +2389,9 @@ bool32 CanAbilityAbsorbMove(struct DamageContext *ctx)
             enum MoveTarget target = GetBattlerMoveTargetType(ctx->battlerAtk, ctx->move);
             if (target != TARGET_OPPONENTS_FIELD 
                 && target != TARGET_ALL_BATTLERS
-                && GetMoveEffect(ctx->move) != EFFECT_GRIMOIRE_CALL
-                && GetMoveEffect(ctx->move) != EFFECT_A_TRANCE
-                && GetMoveEffect(ctx->move) != EFFECT_CARD_INCLUDE)
+                && ctx->move != MOVE_GRIMOIRE_CALL
+                && ctx->move != MOVE_RIDE_TRANSFORM
+                && ctx->move != MOVE_CARD_INCLUDE)
                 battleScript = BattleScript_AbilityProtectedTarget;
         }
         break;
@@ -11237,7 +11237,6 @@ void SetDynamicMoveCategory(enum BattlerId battlerAtk, enum BattlerId battlerDef
     {
     case EFFECT_PHOTON_GEYSER:
     case EFFECT_KIRIFUDA:
-    case EFFECT_TRANSFORM_AND_HIT_WITH_ARG_CONDITION:
         if (GetCategoryBasedOnStats(battlerAtk) == DAMAGE_CATEGORY_PHYSICAL)
             gBattleStruct->dynamicMoveCategory = DAMAGE_CATEGORY_PHYSICAL;
         else

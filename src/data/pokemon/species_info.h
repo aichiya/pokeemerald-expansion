@@ -1479,7 +1479,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         .frontAnimId = ANIM_V_SLIDE,
-        .enemyMonElevation = 0,
+        .enemyMonElevation = 7,
         .backPic = gMonBackPic_MoePidgey,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
@@ -75058,7 +75058,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThTeireidaMaiNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThTeireidaMaiFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThTeireidaMaiNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -75228,7 +75228,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThSatonoNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThSatonoFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThSatonoNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -75398,7 +75398,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThOkinaNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThOkinaFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThOkinaNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -76078,7 +76078,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThYachieNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThYachieFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThYachieNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -76418,7 +76418,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThKeikiNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThKeikiFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThKeikiNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -76588,7 +76588,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThSakiNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThSakiFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThSakiNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -126966,7 +126966,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThPrismriverRLunasaNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThLunasaFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThPrismriverRLunasaNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127051,7 +127051,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThPrismriverRLunasaHelperEggMoveLearnset,
 
         .formSpeciesIdTable = sThLunasaFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThPrismriverRLunasaHelperFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127136,7 +127136,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThPrismriverRMerlinNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThMerlinFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThPrismriverRMerlinNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127221,7 +127221,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThPrismriverRMerlinHelperEggMoveLearnset,
 
         .formSpeciesIdTable = sThMerlinFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThPrismriverRMerlinHelperFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127306,7 +127306,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThPrismriverRLyricaNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThLyricaFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThPrismriverRLyricaNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127391,7 +127391,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThPrismriverRLyricaHelperEggMoveLearnset,
 
         .formSpeciesIdTable = sThLyricaFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThPrismriverRLyricaHelperFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127476,7 +127476,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThAkisistersRShizuhaNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThShizuhaFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThShizuhaNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127561,7 +127561,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThAkisistersRShizuhaSpeedEggMoveLearnset,
 
         .formSpeciesIdTable = sThShizuhaFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThShizuhaSpeedFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127646,7 +127646,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThAkisistersRShizuhaHelperEggMoveLearnset,
 
         .formSpeciesIdTable = sThShizuhaFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThShizuhaHelperFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127731,7 +127731,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThAkisistersRMinorikoNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThMinorikoFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThMinorikoNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127816,7 +127816,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThAkisistersRMinorikoAttackEggMoveLearnset,
 
         .formSpeciesIdTable = sThMinorikoFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThMinorikoAttackFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -127901,7 +127901,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThAkisistersRMinorikoDefenseEggMoveLearnset,
 
         .formSpeciesIdTable = sThMinorikoFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThMinorikoDefenseFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -128241,7 +128241,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThYorigamisistersRJoonNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThJoonFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThJoonNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -128326,7 +128326,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThYorigamisistersRJoonAttackEggMoveLearnset,
 
         .formSpeciesIdTable = sThJoonFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThJoonAttackFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -128411,7 +128411,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThYorigamisistersRJoonDefenseEggMoveLearnset,
 
         .formSpeciesIdTable = sThJoonFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThJoonDefenseFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -128496,7 +128496,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThYorigamisistersRShionNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThShionFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThShionNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -128581,7 +128581,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThYorigamisistersRShionAttackEggMoveLearnset,
 
         .formSpeciesIdTable = sThShionFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThShionAttackFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -128666,7 +128666,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThYorigamisistersRShionDefenseEggMoveLearnset,
 
         .formSpeciesIdTable = sThShionFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThShionDefenseFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -128751,7 +128751,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThTrioMsoRTeireidaMaiNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThTeireidaMaiFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThTeireidaMaiNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -128836,7 +128836,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThTrioMsoRTeireidaSatonoNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThSatonoFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThSatonoNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -128921,7 +128921,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThTrioMsoRTeireidaOkinaNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThOkinaFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThOkinaNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -129006,7 +129006,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThTrioYskRYachieNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThYachieFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThYachieNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -129091,7 +129091,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThTrioYskRKeikiNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThKeikiFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThKeikiNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -129176,7 +129176,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThTrioYskRSakiNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThSakiFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThSakiNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -129261,7 +129261,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThDuoMcRMarisaNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThMarisaFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThMarisaDuoMCRMarisaNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -129346,7 +129346,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThDuoMcRReimuNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThReimuFormSpeciesIdTable,
-//        .formChangeTable = 
+        .formChangeTable = sThReimuDuoMCRReimuNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
 
     },
@@ -134616,7 +134616,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sThReimuRemindRNormalEggMoveLearnset,
 
         .formSpeciesIdTable = sThReimuFormSpeciesIdTable,
-        .formChangeTable = sThReimuNormalFormChangeTable,
+        .formChangeTable = sThReimuRemindRNormalFormChangeTable,
         .teachingType = DEFAULT_LEARNING,
         .isPrimalReversion = TRUE,
     },

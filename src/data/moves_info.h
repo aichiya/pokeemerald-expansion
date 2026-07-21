@@ -22125,7 +22125,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Tranforms into something\n"
             "else temporarily."),
-        .effect = EFFECT_A_TRANCE,
+        .effect = EFFECT_RIDE_TRANSFORM,
         .power = 0,
         .type = TYPE_NEW_ILLUSION,
         .accuracy = 0,
@@ -23990,7 +23990,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Attacks the target\n"
             "mercilessly."),
-        .effect = EFFECT_TRANSFORM_AND_HIT_WITH_ARG_CONDITION,
+        .effect = EFFECT_PHOTON_GEYSER,
         .power = 120,
         .type = TYPE_NEW_MYSTERY,
         .accuracy = 100,
@@ -24003,7 +24003,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_BeatUpCalling,
+        .battleAnimScript = gBattleAnimMove_CloseCombat,
     },
 
     [MOVE_TAX_COLLECTION] =

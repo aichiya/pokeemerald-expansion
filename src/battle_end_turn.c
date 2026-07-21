@@ -102,9 +102,9 @@ static bool32 HandleEndTurnWeatherDamage(enum BattlerId battler)
     bool32 effect = FALSE;
 
     enum Ability ability = GetBattlerAbility(battler);
-    enum BattleWeather currBattleWeather = GetCurrentBattleWeather(gBattleWeather);
+    enum BattleWeather currBattleWeather = GetBattleWeather(gBattleWeather);
 
-    if (currBattleWeather == 0xFF)
+    if (currBattleWeather == BATTLE_WEATHER_NONE)
     {
         // If there is no weather on the field, no need to check other battlers so go to next state
         gBattleStruct->eventState.endTurnBattler = 0;
@@ -239,6 +239,7 @@ static bool32 HandleEndTurnWeatherDamage(enum BattlerId battler)
                 effect = TRUE;
             }
         }
+    case BATTLE_WEATHER_NONE:
     case BATTLE_WEATHER_COUNT:
         break;
     }
@@ -330,7 +331,7 @@ static bool32 HandleEndTurnFutureSight(enum BattlerId battler)
         if (IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget))
             gSpecialStatuses[gBattlerAttacker].attackerInParty = TRUE;
         else
-            SetTypeBeforeUsingMove(gCurrentMove, gBattlerAttacker);
+            SetTypeBeforeUsingMove(gCurrentMove, gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker));
 
         gBattleScripting.animTurn = 1; // to play correct anim
         BattleScriptCall(BattleScript_MonTookFutureAttack);

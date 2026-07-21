@@ -172,7 +172,7 @@ enum SubCheck
 };
 
 void HandleAction_ThrowBall(void);
-enum BattleWeather GetCurrentBattleWeather(u32 weather);
+enum BattleWeather GetBattleWeather(u32 weather);
 bool32 EndOrContinueWeather(void);
 enum DamageCategory GetReflectDamageMoveDamageCategory(enum BattlerId battler, enum Move move);
 bool32 ShouldTeraShellDistortTypeMatchups(struct DamageContext *ctx);
@@ -207,7 +207,7 @@ void BattleScriptPushCursor(void);
 void BattleScriptCall(const u8 *bsPtr);
 void BattleScriptPop(void);
 u32 TrySetCantSelectMoveBattleScript(enum BattlerId battler);
-u32 CheckMoveLimitations(enum BattlerId battler, u8 unusableMoves, u16 check);
+u32 CheckMoveLimitations(enum BattlerId battler, u8 unusableMoves, u32 check);
 bool32 AreAllMovesUnusable(enum BattlerId battler);
 u8 GetImprisonedMovesCount(enum BattlerId battler, enum Move move);
 s32 GetDrainedBigRootHp(enum BattlerId battler, s32 hp);

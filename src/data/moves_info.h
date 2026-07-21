@@ -15272,8 +15272,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_FREEZE_DRY] =  // Edited
     {
         .name = COMPOUND_STRING("Freeze-Dry"),
-        .description = COMPOUND_STRING(
         #if B_UPDATED_MOVE_DATA < GEN_CHAMPIONS
+        .description = COMPOUND_STRING(
             "Super effective on Water-\n"
             #if B_USE_FROSTBITE == TRUE
                 "types. May cause frostbite."),
@@ -15281,6 +15281,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
                 "types. May cause freezing."),
             #endif
         #else
+        .description = COMPOUND_STRING(
             "Super effective on Water-\n"
             "types."),
         #endif

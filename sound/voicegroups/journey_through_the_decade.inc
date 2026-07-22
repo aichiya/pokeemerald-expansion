@@ -1,0 +1,129 @@
+voice_group journey_through_the_decade
+	voice_keysplit_all voicegroup_allkeysplit_thppme_drum_2                               @ 000 | Direct | Drum | THPP Drum Power Set
+	voice_keysplit voicegroup_keysplit_piano_custom, keysplit_piano_custom                @ 001 | Direct | Multi | GBA Piano 1
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 002 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 003 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 004 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 005 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 006 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 007 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 008 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 009 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 010 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 011 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 012 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 013 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 014 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 015 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 016 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 017 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 018 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 019 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 020 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 021 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 022 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 023 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 024 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 025 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 026 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 027 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 028 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 029 | --- | 
+	voice_keysplit voicegroup_keysplit_hgss_distortion_guitar_1, keysplit_hgss_distortion_guitar @ 030 | Direct | Multi | HGSS Distortion Guitar 1
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 031 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 032 | --- | 
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fingered_bass, 255, 253, 0, 149  @ 033 | Direct | GBA Fingered Bass
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 034 | --- | 
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fretless_bass, 255, 253, 0, 198  @ 035 | Direct | GBA Fretless Bass 2
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 036 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 037 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 038 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 039 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 040 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 041 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 042 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 043 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 044 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 045 | --- | 
+	voice_keysplit voicegroup_keysplit_hgss_harp, keysplit_hgss_organ_accordion_harp_timpani @ 046 | Direct | Multi | HGSS Harp
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_timpani, 255, 246, 0, 226        @ 047 | Direct | GBA Timpani @ voice_directsound 60, 0, DirectSoundWaveData_golden_sun_2_timpani, 255, 0, 255, 165   @ 047 | Direct | GBA Golden Sun Timpani
+	voice_keysplit voicegroup_keysplit_strings_custom, keysplit_strings_custom            @ 048 | Direct | Multi | GBA String
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 049 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 050 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 051 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 052 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 053 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 054 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 055 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 056 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 057 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 058 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 059 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 060 | --- | 
+	voice_directsound 60, 0, DirectSoundWaveData_golden_sun_2_brass, 255, 0, 255, 165     @ 061 | Direct | GBA Golden Sun Brass Section
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 062 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 063 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 064 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 065 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 066 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 067 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 068 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 069 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 070 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 071 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 072 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 073 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 074 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 075 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 076 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 077 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 078 | --- | 
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_flute, 255, 127, 231, 127        @ 079 | Direct | GBA Delay Shaku
+	voice_square_2_alt 60, 0, 2, 0, 2, 4, 1                                               @ 080 | --- | 
+	voice_directsound 60, 0, DirectSoundWaveData_dp_altosax_c3_16, 255, 216, 252, 192   @ 081 | Direct | HGSS Guitar
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 082 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 083 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 084 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 085 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 086 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 087 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 088 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 089 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 090 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 091 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 092 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 093 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 094 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 095 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 096 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 097 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 098 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 099 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 100 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 101 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 102 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 103 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 104 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 105 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 106 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 107 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 108 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 109 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 110 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 111 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 112 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 113 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 114 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 115 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 116 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 117 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 118 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 119 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 120 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 121 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 122 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 123 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 124 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 125 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 126 | --- | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 127 | --- | 

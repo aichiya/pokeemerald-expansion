@@ -234,7 +234,7 @@ Debug_EventScript_Script_5::
 
 Debug_EventScript_Script_6::
 	setflag FLAG_CUSTOM_BGM_BATTLE
-	setvar VAR_SETTING_MUSIC, MUS_ETC_X_VS_Z
+	setvar VAR_SETTING_MUSIC, MUS_DCD_JTD
 	trainerbattle_no_intro TRAINER_MAY_PLACEHOLDER, TrimmedGensokyo_Text_Debug1_2
 	release
 	end

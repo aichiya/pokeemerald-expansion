@@ -410,6 +410,7 @@
 .include "sound/voicegroups/tsubasa_reservoir_chronicle.inc"                          @ .include "sound/voicegroups/voicegroup835.inc" @ Tsubasa Reservoir Chronicle
 
 .include "sound/voicegroups/lgpe_vs_trainer.inc"                                      @ .include "sound/voicegroups/voicegroup836.inc" @ LGPE Trainer Battle
+.include "sound/voicegroups/journey_through_the_decade.inc"                           @ .include "sound/voicegroups/voicegroup837.inc" @ Journey Through Decade
 
 .include "sound/voicegroups/sfx_custom.inc"                                           @ .include "sound/voicegroups/voicegroup900.inc" @ New Sound Effects
 .include "sound/voicegroups/wavestream_ctc_g_free.inc"                                @ .include "sound/voicegroups/voicegroup901.inc" @ CtC G Free

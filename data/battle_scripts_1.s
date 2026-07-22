@@ -7218,6 +7218,8 @@ BattleScript_EffectATrance::
 	waitanimation
 	printfromtable gTransformUsedStringIds
 	waitmessage B_WAIT_TIME_LONG
+	switchinabilities BS_ATTACKER
+	abilityonformchange BS_ATTACKER
 	jumptocalledmove TRUE
 
 BattleScript_EffectUltraInstinct::

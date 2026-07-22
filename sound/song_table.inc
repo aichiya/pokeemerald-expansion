@@ -2007,6 +2007,7 @@ gSongTable::
 	song mus_dgmn_world1_vs_event, MUSIC_PLAYER_BGM, 0
 	song mus_dgmn_world1_vs_mugendramon, MUSIC_PLAYER_BGM, 0
 	song mus_pkmn_lgpe_vs_trainer, MUSIC_PLAYER_BGM, 0
+	song mus_dcd_jtd, MUSIC_PLAYER_BGM, 0
 
 	.align 2
 dummy_song_header:

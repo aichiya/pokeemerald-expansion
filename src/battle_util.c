@@ -2058,17 +2058,47 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, u8 partyIdBattlerOn1, u8 partyI
     }
 }
 
-bool32 TryChangeBattleWeather(enum BattlerId battler, u32 battleWeatherId, enum Ability ability)
+static bool32 TryChangeWeatherWithAbility(enum BattlerId battler, u32 battleWeather, enum Ability ability)
+{
+    switch (TryChangeBattleWeather(battler, battleWeather, ability))
+    {
+    case WEATHER_FAILURE_SAME_WEATHER:
+        if (ability == ABILITY_ORICHALCUM_PULSE)
+        {
+            BattleScriptCall(BattleScript_OrichalcumPulseActivatesInSun);
+            return TRUE;
+        }
+        return FALSE;
+    case WEATHER_FAILURE_OVERWORLD:
+        BattleScriptCall(BattleScript_BlockedByOverworldWeather);
+        return TRUE;
+    case WEATHER_FAILURE_PRIMAL:
+        BattleScriptCall(BattleScript_BlockedByPrimalWeather);
+        return TRUE;
+    case WEATHER_FAILURE_SUCCESS:
+        if (ability == ABILITY_ORICHALCUM_PULSE)
+            BattleScriptCall(BattleScript_OrichalcumPulseActivates);
+        else
+            BattleScriptCall(BattleScript_WeatherAbilityActivates);
+        return TRUE;
+    }
+    return FALSE;
+}
+
+enum WeatherFailure TryChangeBattleWeather(enum BattlerId battler, u32 battleWeatherId, enum Ability ability)
 {
     if (gBattleWeather & sBattleWeatherInfo[battleWeatherId].flag)
-        return FALSE;
+        return WEATHER_FAILURE_SAME_WEATHER;
 
-    else if (gBattleWeather & B_WEATHER_PRIMAL_ANY
+    if (gBattleStruct->overworldWeatherPresent)
+        return WEATHER_FAILURE_OVERWORLD;
+
+    if (gBattleWeather & B_WEATHER_PRIMAL_ANY
           && ability != ABILITY_DESOLATE_LAND
           && ability != ABILITY_PRIMORDIAL_SEA
           && ability != ABILITY_DELTA_STREAM)
     {
-        return FALSE;
+        return WEATHER_FAILURE_PRIMAL;
     }
 
     if (GetConfig(B_ABILITY_WEATHER) < GEN_6 && ability != ABILITY_NONE)
@@ -2104,7 +2134,7 @@ bool32 TryChangeBattleWeather(enum BattlerId battler, u32 battleWeatherId, enum 
         ResetParadoxWeatherStat(i);
     }
 
-    return TRUE;
+    return WEATHER_FAILURE_SUCCESS;
 }
 
 bool32 TryChangeBattleTerrain(enum BattlerId battler, enum BattleTerrain terrain)
@@ -2598,6 +2628,8 @@ static bool32 SetStartingWeatherStatus(enum BattleWeather weather, bool32 isPerm
     gBattleWeather = sBattleWeatherInfo[weather].flag;
     gBattleCommunication[MULTISTRING_CHOOSER] = sBattleWeatherInfo[weather].moveStartMessage;
     gBattleScripting.animArg1 = sBattleWeatherInfo[weather].animation;
+    if (GetConfig(B_OVERWORLD_WEATHER_OVERRIDE) >= GEN_9)
+        gBattleStruct->overworldWeatherPresent = TRUE;
 
     if (isPermanent)
         gBattleStruct->weatherDuration = 0;
@@ -3006,6 +3038,8 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
         }
         if (effect)
         {
+            if (GetConfig(B_OVERWORLD_WEATHER_OVERRIDE) >= GEN_9)
+                gBattleStruct->overworldWeatherPresent = TRUE;
             gBattleCommunication[MULTISTRING_CHOOSER] = GetCurrentWeather();
             BattleScriptPushCursorAndCallback(BattleScript_OverworldWeatherStarts);
         }
@@ -3112,7 +3146,15 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         switch (gLastUsedAbility)
         {
         case ABILITY_TERAFORM_ZERO:
-            if (gBattleWeather != WEATHER_NONE || gFieldTimers.terrain != B_TERRAIN_NONE)
+            if (gBattleStruct->overworldWeatherPresent)
+            {
+                if (gFieldTimers.terrain != B_TERRAIN_NONE)
+                    BattleScriptCall(BattleScript_ActivateTeraformZeroRemovesOnlyTerrain);
+                else
+                    BattleScriptCall(BattleScript_BlockedByOverworldWeather);
+                effect++;
+            }
+            else if (gBattleWeather != WEATHER_NONE || gFieldTimers.terrain != B_TERRAIN_NONE)
             {
                 BattleScriptCall(BattleScript_ActivateTeraformZero);
                 effect++;
@@ -3506,85 +3548,24 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             }
             break;
         case ABILITY_DRIZZLE:
-            if (!shouldAbilityTrigger)
-                break;
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN, gLastUsedAbility))
-            {
-                BattleScriptCall(BattleScript_WeatherAbilityActivates);
+            if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_RAIN, gLastUsedAbility))
                 effect++;
-            }
-            else if (GetWeather() & B_WEATHER_PRIMAL_ANY)
-            {
-                BattleScriptCall(BattleScript_BlockedByPrimalWeather);
-                effect++;
-            }
             break;
         case ABILITY_SAND_STREAM:
-            if (!shouldAbilityTrigger)
-                break;
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SANDSTORM, gLastUsedAbility))
-            {
-                BattleScriptCall(BattleScript_WeatherAbilityActivates);
+            if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_SANDSTORM, gLastUsedAbility))
                 effect++;
-            }
-            else if (GetWeather() & B_WEATHER_PRIMAL_ANY)
-            {
-                BattleScriptCall(BattleScript_BlockedByPrimalWeather);
-                effect++;
-            }
             break;
         case ABILITY_DROUGHT:
         case ABILITY_AUTUMN_GODDESSES:
         case ABILITY_ULTRA_FORM_SUNNY:
-            if (!shouldAbilityTrigger)
-                break;
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN, gLastUsedAbility))
-            {
-                BattleScriptCall(BattleScript_WeatherAbilityActivates);
-                effect++;
-            }
-            else if (GetWeather() & B_WEATHER_PRIMAL_ANY)
-            {
-                BattleScriptCall(BattleScript_BlockedByPrimalWeather);
-                effect++;
-            }
-            break;
         case ABILITY_ORICHALCUM_PULSE:
-            if (!shouldAbilityTrigger)
-                break;
-            if (GetWeather() & B_WEATHER_SUN_NORMAL)
-            {
-                BattleScriptCall(BattleScript_OrichalcumPulseActivatesInSun);
+            if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_SUN, gLastUsedAbility))
                 effect++;
-            }
-            else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN, gLastUsedAbility))
-            {
-                BattleScriptCall(BattleScript_OrichalcumPulseActivates);
-                effect++;
-            }
-            else if (GetWeather() & B_WEATHER_PRIMAL_ANY)
-            {
-                BattleScriptCall(BattleScript_BlockedByPrimalWeather);
-                effect++;
-            }
             break;
         case ABILITY_SNOW_WARNING:
         case ABILITY_ULTRA_FORM_BEAUTY:
-            if (!shouldAbilityTrigger)
-                break;
-            {
-                u32 weather = (GetConfig(B_SNOW_WARNING) >= GEN_9 ? BATTLE_WEATHER_SNOW : BATTLE_WEATHER_HAIL);
-                if (TryChangeBattleWeather(battler, weather, gLastUsedAbility))
-                {
-                    BattleScriptCall(BattleScript_WeatherAbilityActivates);
-                    effect++;
-                }
-                else if (GetWeather() & B_WEATHER_PRIMAL_ANY)
-                {
-                    BattleScriptCall(BattleScript_BlockedByPrimalWeather);
-                    effect++;
-                }
-            }
+            if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, GetConfig(B_SNOW_WARNING) >= GEN_9 ? BATTLE_WEATHER_SNOW : BATTLE_WEATHER_HAIL, gLastUsedAbility))
+                effect++;
             break;
         case ABILITY_ELECTRIC_SURGE:
         case ABILITY_ULTRA_FORM_PEACE:
@@ -4293,31 +4274,16 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             }
             break;
         case ABILITY_DESOLATE_LAND:
-            if (!shouldAbilityTrigger)
-                break;
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SUN_PRIMAL, gLastUsedAbility))
-            {
-                BattleScriptCall(BattleScript_WeatherAbilityActivates);
+            if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_SUN_PRIMAL, gLastUsedAbility))
                 effect++;
-            }
             break;
         case ABILITY_PRIMORDIAL_SEA:
-            if (!shouldAbilityTrigger)
-                break;
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_RAIN_PRIMAL, gLastUsedAbility))
-            {
-                BattleScriptCall(BattleScript_WeatherAbilityActivates);
+            if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_RAIN_PRIMAL, gLastUsedAbility))
                 effect++;
-            }
             break;
         case ABILITY_DELTA_STREAM:
-            if (!shouldAbilityTrigger)
-                break;
-            if (TryChangeBattleWeather(battler, BATTLE_WEATHER_STRONG_WINDS, gLastUsedAbility))
-            {
-                BattleScriptCall(BattleScript_WeatherAbilityActivates);
+            if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_STRONG_WINDS, gLastUsedAbility))
                 effect++;
-            }
             break;
         case ABILITY_VESSEL_OF_RUIN:
             if (shouldAbilityTrigger)
@@ -5313,20 +5279,8 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             }
             break;
         case ABILITY_SAND_SPIT:
-            if (IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES) && !(GetWeather() & B_WEATHER_SANDSTORM))
-            {
-                if (GetWeather() & B_WEATHER_PRIMAL_ANY)
-                {
-                    BattleScriptCall(BattleScript_BlockedByPrimalWeather);
-                    effect++;
-                }
-                else if (TryChangeBattleWeather(battler, BATTLE_WEATHER_SANDSTORM, ABILITY_NONE)) // use ability none since it's not a switch in ability weather setter
-                {
-                    gBattleScripting.battler = battler;
-                    BattleScriptCall(BattleScript_WeatherAbilityActivates);
-                    effect++;
-                }
-            }
+            if (IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES) && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_SANDSTORM, gLastUsedAbility))
+                effect++;
             break;
         case ABILITY_PERISH_BODY:
             if (IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
@@ -6141,8 +6095,11 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 gBattleMons[battler].volatiles.semiInvulnerable = STATE_COMMANDER;
                 if ((gBattleStruct->gimmick.toActivate & (1u << battler)) && gBattleStruct->gimmick.usableGimmick[battler] != GIMMICK_NONE)
                     gBattleStruct->gimmick.toActivate &= ~(1u << battler);
-                if (gBattleMons[battler].volatiles.confusionTurns > 0 && !gBattleMons[battler].volatiles.infiniteConfusion)
-                    gBattleMons[battler].volatiles.confusionTurns--;
+
+                struct Volatiles *vol = &gBattleMons[battler].volatiles;
+                if (vol->confusionTimer > 0 && vol->confusionTimer != PERMANENT_VOLATILE)
+                    vol->confusionTimer--;
+
                 BtlController_EmitSpriteInvisibility(battler, B_COMM_TO_CONTROLLER, TRUE);
                 MarkBattlerForControllerExec(battler);
                 SetStatChange(partner, STAT_ATK, 2);
@@ -6943,7 +6900,7 @@ bool32 CanBeConfused(enum BattlerId battlerAtk, enum BattlerId effectBattler)
 {
     enum Ability effectAbility = GetBattlerAbility(effectBattler);
 
-    if (gBattleMons[effectBattler].volatiles.confusionTurns > 0
+    if (gBattleMons[effectBattler].volatiles.confusionTimer > 0
      || IsSafeguardProtected(battlerAtk, effectBattler, GetBattlerAbility(battlerAtk))
      || IsMistyTerrainAffected(effectBattler, effectAbility, GetBattlerHoldEffect(effectBattler), gFieldTimers.terrain)
      || IsAbilityAndRecord(effectBattler, effectAbility, ABILITY_OWN_TEMPO))
@@ -7317,7 +7274,8 @@ bool32 IsBattlerProtected(struct BattleCalcValues *cv)
         }
     }
 
-    if (GetBattlerMoveTargetType(cv->battlerAtk, cv->move) == TARGET_ALL_BATTLERS)
+    enum MoveTarget moveTarget = GetBattlerMoveTargetType(cv->battlerAtk, cv->move);
+    if (moveTarget == TARGET_ALL_BATTLERS)
         return FALSE;
 
     bool32 isProtected = FALSE;
@@ -7326,7 +7284,8 @@ bool32 IsBattlerProtected(struct BattleCalcValues *cv)
         isProtected = TRUE;
     else if (MoveIgnoresProtect(cv->move))
         isProtected = FALSE;
-    else if (IsSideProtected(cv->battlerDef, PROTECT_WIDE_GUARD) && IsSpreadMove(GetBattlerMoveTargetType(cv->battlerAtk, cv->move)))
+    else if (IsSideProtected(cv->battlerDef, PROTECT_WIDE_GUARD)
+         && (moveTarget == TARGET_BOTH || moveTarget == TARGET_FOES_AND_ALLY))
         isProtected = TRUE;
     else if (gProtectStructs[cv->battlerDef].protected == PROTECT_NORMAL)
         isProtected = TRUE;
@@ -11103,7 +11062,7 @@ enum ImmunityHealStatusOutcome TryImmunityAbilityHealStatus(enum BattlerId battl
         }
         break;
     case ABILITY_OWN_TEMPO:
-        if (gBattleMons[battler].volatiles.confusionTurns > 0)
+        if (gBattleMons[battler].volatiles.confusionTimer > 0)
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_CONFUSION;
             outcome = IMMUNITY_CONFUSION_CLEARED;
@@ -11170,7 +11129,7 @@ enum ImmunityHealStatusOutcome TryImmunityAbilityHealStatus(enum BattlerId battl
         BattleScriptCall(BattleScript_AbilityCuredStatus);
         break;
     case IMMUNITY_CONFUSION_CLEARED:
-        RemoveConfusionStatus(battler);
+        gBattleMons[battler].volatiles.confusionTimer = 0;
         BattleScriptCall(BattleScript_AbilityCuredStatus);
         break;
     case IMMUNITY_INFATUATION_CLEARED:
@@ -11715,12 +11674,6 @@ void RecalcBattlerStats(enum BattlerId battler, struct Pokemon *mon, bool32 isDy
     else
         CopyMonLevelAndBaseStatsToBattleMon(battler, mon, TRUE);
     CopyMonAbilityAndTypesToBattleMon(battler, mon);
-}
-
-void RemoveConfusionStatus(enum BattlerId battler)
-{
-    gBattleMons[battler].volatiles.confusionTurns = 0;
-    gBattleMons[battler].volatiles.infiniteConfusion = FALSE;
 }
 
 u32 GetBattlerGender(enum BattlerId battler)
@@ -12326,7 +12279,7 @@ ARM_FUNC u32 GetBattlerVolatile(enum BattlerId battler, enum Volatile _volatile)
     VOLATILE_DEFINITIONS(UNPACK_VOLATILE_GETTERS)
     /* Expands to:
     case VOLATILE_CONFUSION:
-        return gBattleMons[battler].volatiles.confusionTurns;
+        return gBattleMons[battler].volatiles.confusionTimer;
     */
     default: // Invalid volatile status
         return 0;
@@ -12344,7 +12297,7 @@ void SetMonVolatile(enum BattlerId battler, enum Volatile _volatile, u32 newValu
         VOLATILE_DEFINITIONS(UNPACK_VOLATILE_SETTERS)
         /* Expands to:
     case VOLATILE_CONFUSION:
-            gBattleMons[battler].volatiles.confusionTurns = min(MAX_BITS(3), newValue);
+            gBattleMons[battler].volatiles.confusionTimer = min(MAX_BITS(3), newValue);
             break;
         */
     default: // Invalid volatile status
@@ -12358,10 +12311,9 @@ bool32 ItemHealMonVolatile(enum BattlerId battler, enum Item itemId)
     const u8 *effect = GetItemEffect(itemId);
     if (effect[3] & ITEM3_STATUS_ALL)
     {
-        statusChanged = (gBattleMons[battler].volatiles.infatuation || gBattleMons[battler].volatiles.confusionTurns > 0 || gBattleMons[battler].volatiles.infiniteConfusion);
+        statusChanged = (gBattleMons[battler].volatiles.infatuation || gBattleMons[battler].volatiles.confusionTimer > 0);
         gBattleMons[battler].volatiles.infatuation = 0;
-        gBattleMons[battler].volatiles.confusionTurns = 0;
-        gBattleMons[battler].volatiles.infiniteConfusion = FALSE;
+        gBattleMons[battler].volatiles.confusionTimer = 0;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_CONFUSION;
     }
     else if (effect[0] & ITEM0_INFATUATION)
@@ -12372,9 +12324,8 @@ bool32 ItemHealMonVolatile(enum BattlerId battler, enum Item itemId)
     }
     else if (effect[3] & ITEM3_CONFUSION)
     {
-        statusChanged = (gBattleMons[battler].volatiles.confusionTurns > 0 || gBattleMons[battler].volatiles.infiniteConfusion);
-        gBattleMons[battler].volatiles.confusionTurns = 0;
-        gBattleMons[battler].volatiles.infiniteConfusion = FALSE;
+        statusChanged = (gBattleMons[battler].volatiles.confusionTimer > 0);
+        gBattleMons[battler].volatiles.confusionTimer = 0;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_CONFUSION;
     }
 
@@ -12620,7 +12571,7 @@ u32 GetTotalAccuracy(struct BattleCalcValues *cv, u32 weather)
         calc = (calc * 30) / 90; // 1/3 max evasion
         break;
     case ABILITY_TANGLED_FEET:
-        if (gBattleMons[battlerDef].volatiles.confusionTurns)
+        if (gBattleMons[battlerDef].volatiles.confusionTimer)
             calc = (calc * 50) / 100; // 1.5 tangled feet loss
         break;
     case ABILITY_FASHIONIST:
@@ -12644,8 +12595,9 @@ u32 GetTotalAccuracy(struct BattleCalcValues *cv, u32 weather)
     default:
         break;
     }
-    if (MoveHasIncreasedAccByTenOnSameType(cv->move) && !IS_BATTLER_OF_TYPE(battlerAtk, GetMoveType(cv->move)))
-        calc = (calc * 110) / 100;
+
+    if (MoveDecreasesAccIfUserNotSameType(cv->move) && !IS_BATTLER_OF_TYPE(battlerAtk, GetBattleMoveType(cv->move)))
+        calc = (calc * 90) / 100;
 
     // Attacker's hold effect
     switch (cv->holdEffects[battlerAtk])
@@ -12734,7 +12686,7 @@ bool32 DoesOHKOMoveMissTarget(struct BattleCalcValues *cv)
     if (lands == CALC_ACC)
     {
         u32 odds = GetMoveAccuracy(cv->move) + (gBattleMons[cv->battlerAtk].level - gBattleMons[cv->battlerDef].level);
-        if (MoveHasIncreasedAccByTenOnSameType(cv->move) && !IS_BATTLER_OF_TYPE(cv->battlerAtk, GetMoveType(cv->move)))
+        if (MoveDecreasesAccIfUserNotSameType(cv->move) && !IS_BATTLER_OF_TYPE(cv->battlerAtk, GetBattleMoveType(cv->move)))
             odds -= 10;
         if (RandomPercentage(RNG_ACCURACY, odds) && gBattleMons[cv->battlerAtk].level >= gBattleMons[cv->battlerDef].level)
             lands = SURE_HIT;

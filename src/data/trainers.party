@@ -16910,66 +16910,33 @@ Bulbasaur
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_PLACEHOLDER ===
-Name: BRENDAN
-Class: RS Protag
-Pic: RS Brendan
-Gender: Male
-Music: Male
-Double Battle: No
-
-Groudon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_MAY_PLACEHOLDER ===
-Name: Decade
-Class: TRAINER_CLASS_0XFC
-Pic: TRAINER_PIC_100
+=== TRAINER_MIRROR_SAME_GENDER ===
+Name: Hakuno
+Class: Rival
+Pic: May
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Basic Trainer Ace
+AI: Smart Trainer
+Mugshot: Blue
 
-SPECIES_TH_YUYUKO_ATTACK @ ITEM_RED_ORB
-Level: 100
-Quiet Nature
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 128 Def / 252 SpA / 128 SpD
-- MOVE_ASTRAL_BARRAGE
-- MOVE_NEW_VAMPIRE_SEED
-- MOVE_NEW_MISTFALL_GAS
-- MOVE_DARK_VOID
+SPECIES_ETC_DELAST
+Level: 120
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-SPECIES_ETC_MADOKA_ULTIMATE @ ITEM_ASSAULT_VEST
-Level: 100
-Modest Nature
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 6 HP / 252 SpA / 252 Spe
-- MOVE_RAIN_OF_ARROWS
-- MOVE_NEW_DIVINE_LIGHT
-- MOVE_ENERGY_BALL
-- MOVE_FORBIDDEN_TEMPTATION
+=== TRAINER_MIRROR_OPPOSITE_GENDER ===
+Name: Hakuno
+Class: Rival
+Pic: Brendan
+Gender: Female
+Music: Female
+Double Battle: Yes
+AI: Smart Trainer
+Mugshot: Blue
 
-SPECIES_ETC_CURE_UNION_NORMAL @ ITEM_BRIGHT_POWDER
-Level: 100
-Adamant Nature
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 6 HP / 252 Atk / 252 Spe
-- MOVE_RIDE_TRANSFORM
-- MOVE_DIMENSION_KICK
-- MOVE_PLAY_ROUGH
-- MOVE_PSYSTRIKE
-
-SPECIES_ETC_DECADE_COMPLETE @ ITEM_LIFE_ORB
-Level: 100
-Modest Nature
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 6 HP / 252 SpA / 252 Spe
-- MOVE_RIDE_TRANSFORM
-- MOVE_DIMENSION_SHOT
-- MOVE_HYPERSPACE_HOLE
-- MOVE_NEW_CHAOS_CANNON
+SPECIES_ETC_DELAST
+Level: 120
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PLACEHOLDER_855 ===
 Name: Yuyuko

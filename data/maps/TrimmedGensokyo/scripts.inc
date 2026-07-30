@@ -19,15 +19,15 @@ TrimmedGensokyo_EventScript_Debug1::
 	setflag FLAG_CUSTOM_BGM_BATTLE
 	setvar VAR_SETTING_MUSIC, MUS_ETC_BINTANG_KEHIDUPAN
 @	multi_2_vs_2 TRAINER_PLACEHOLDER_855, AnotherWorldGensokyo_Text_UdaDefeat, TRAINER_PLACEHOLDER_856, AnotherWorldGensokyo_Text_TenchoDefeat, PARTNER_TH_MARISA
-@	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
+	trainerbattle_no_intro TRAINER_MIRROR_OPPOSITE_GENDER, TrimmedGensokyo_Text_Debug1_2
 @	setflag FLAG_CUSTOM_BGM_BATTLE
 @	setvar VAR_SETTING_MUSIC, MUS_ILLYA_SHOUJO_YO_HOSHI_NI_NARE
-	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER_CHECK_PARTY_LEVEL
-	special PrepareSecretBasePseudoTrainerBattleByVar
-	special PrepSecretBaseBattleFlags
-	setvar VAR_0x8004, SPECIAL_BATTLE_SECRET_BASE
-	setvar VAR_0x8005, 0
-	special DoSpecialTrainerBattle
+@	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER_CHECK_PARTY_LEVEL
+@	special PrepareSecretBasePseudoTrainerBattleByVar
+@	special PrepSecretBaseBattleFlags
+@	setvar VAR_0x8004, SPECIAL_BATTLE_SECRET_BASE
+@	setvar VAR_0x8005, 0
+@	special DoSpecialTrainerBattle
 	delay 10
 	special HealPlayerParty
 	release

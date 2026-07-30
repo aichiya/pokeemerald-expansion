@@ -233,9 +233,17 @@ Debug_EventScript_Script_5::
 	end
 
 Debug_EventScript_Script_6::
+	additem ITEM_DYNAMAX_BAND
+@	additem ITEM_TERA_ORB
+	additem ITEM_Z_POWER_RING
+	additem ITEM_MEGA_RING
+	setflag FLAG_DYNAMAX_BATTLE
+@	setflag FLAG_TERA_ORB_CHARGED
+@	setflag FLAG_TERA_ORB_NO_COST
 	setflag FLAG_CUSTOM_BGM_BATTLE
+	setvar VAR_TRAINER_MIRROR_CHECK_LEVEL, 3
 	setvar VAR_SETTING_MUSIC, MUS_DCD_JTD
-	trainerbattle_no_intro TRAINER_MAY_PLACEHOLDER, TrimmedGensokyo_Text_Debug1_2
+	trainerbattle_no_intro TRAINER_MIRROR_OPPOSITE_GENDER, TrimmedGensokyo_Text_Debug1_2
 	release
 	end
 

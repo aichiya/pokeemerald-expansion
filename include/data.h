@@ -321,6 +321,20 @@ static inline const u8 *GetTrainerNameFromId(u16 trainerId)
 
 static inline const enum TrainerPicID GetTrainerPicFromId(u16 trainerId)
 {
+    if (trainerId == TRAINER_MIRROR_SAME_GENDER)
+    {
+        if (gSaveBlock2Ptr->playerGender == 0)
+            return TRAINER_PIC_BRENDAN;
+        else
+            return TRAINER_PIC_MAY;
+    }
+    else if (trainerId == TRAINER_MIRROR_OPPOSITE_GENDER)
+    {
+        if (gSaveBlock2Ptr->playerGender == 0)
+            return TRAINER_PIC_MAY;
+        else
+            return TRAINER_PIC_BRENDAN;
+    }
     return GetTrainerStructFromId(trainerId)->trainerPic;
 }
 

@@ -857,8 +857,8 @@
 #define TRAINER_EVERETT                     850
 #define TRAINER_RED                         851
 #define TRAINER_LEAF                        852
-#define TRAINER_BRENDAN_PLACEHOLDER         853
-#define TRAINER_MAY_PLACEHOLDER             854
+#define TRAINER_MIRROR_SAME_GENDER          853
+#define TRAINER_MIRROR_OPPOSITE_GENDER      854
 
 #define TRAINER_PLACEHOLDER_855             855
 #define TRAINER_PLACEHOLDER_856             856

@@ -23,6 +23,7 @@
 #include "fldeff.h"
 #include "fldeff_misc.h"
 #include "follower_npc.h"
+#include "frontier_util.h"
 #include "gym_leader_rematch.h"
 #include "item.h"
 #include "load_save.h"
@@ -2280,22 +2281,90 @@ void CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Traine
 
 static void CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
 {
-    if (!GetTrainerStructFromId(trainerNum)->overrideTrainer)
+    s32 i, j;
+    
+    if (trainerNum == TRAINER_MIRROR_SAME_GENDER || trainerNum == TRAINER_MIRROR_OPPOSITE_GENDER)
     {
-        CreateNPCTrainerPartyFromTrainer(party, GetTrainerStructFromId(trainerNum));
-        return;
+        ZeroEnemyPartyMons();
+        if (VarGet(VAR_TRAINER_MIRROR_CHECK_LEVEL) == 0)
+        {
+            bool8 monShiny = 1;
+            bool8 monNotShiny = 0;
+
+            for (i = 0; i < PARTY_SIZE; i++)
+            {
+                CopyMon(&gParties[B_TRAINER_OPPONENT_A][i], &gParties[B_TRAINER_PLAYER][i], sizeof(struct Pokemon));
+                HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
+                if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY) == TRUE)
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monNotShiny);
+                else
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monShiny);
+                HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
+                CalculateMonStats(&gParties[B_TRAINER_OPPONENT_A][i]);
+            }
+        }
+        else if (VarGet(VAR_TRAINER_MIRROR_CHECK_LEVEL) == 1)
+        {
+            u8 highestPartyLevel = GetHighestLevelInPlayerParty();
+            bool8 monShiny = 1;
+            bool8 monNotShiny = 0;
+
+            for (i = 0; i < PARTY_SIZE; i++)
+            {
+                CopyMon(&gParties[B_TRAINER_OPPONENT_A][i], &gParties[B_TRAINER_PLAYER][i], sizeof(struct Pokemon));
+                HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
+                SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_LEVEL, &highestPartyLevel);
+                u32 dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, NULL)].growthRate][highestPartyLevel];
+                SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_EXP, &dataUnsigned);
+                if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY) == TRUE)
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monNotShiny);
+                else
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monShiny);
+                HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
+                CalculateMonStats(&gParties[B_TRAINER_OPPONENT_A][i]);
+            }
+        }
+        else
+        {
+            u8 highestPartyLevel = MAX_LEVEL;
+            bool8 monShiny = 1;
+            bool8 monNotShiny = 0;
+
+            for (i = 0; i < PARTY_SIZE; i++)
+            {
+                CopyMon(&gParties[B_TRAINER_OPPONENT_A][i], &gParties[B_TRAINER_PLAYER][i], sizeof(struct Pokemon));
+                HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
+                SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_LEVEL, &highestPartyLevel);
+                u32 dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, NULL)].growthRate][highestPartyLevel];
+                SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_EXP, &dataUnsigned);
+                if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY) == TRUE)
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monNotShiny);
+                else
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monShiny);
+                HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
+                CalculateMonStats(&gParties[B_TRAINER_OPPONENT_A][i]);
+            }
+        }
     }
+    else
+    {
+        if (!GetTrainerStructFromId(trainerNum)->overrideTrainer)
+        {
+            CreateNPCTrainerPartyFromTrainer(party, GetTrainerStructFromId(trainerNum));
+            return;
+        }
 
-    struct Trainer tempTrainer;
-    memcpy(&tempTrainer, GetTrainerStructFromId(trainerNum), sizeof(struct Trainer));
-    const struct Trainer *origTrainer = GetTrainerStructFromId(tempTrainer.overrideTrainer);
+        struct Trainer tempTrainer;
+        memcpy(&tempTrainer, GetTrainerStructFromId(trainerNum), sizeof(struct Trainer));
+        const struct Trainer *origTrainer = GetTrainerStructFromId(tempTrainer.overrideTrainer);
 
-    tempTrainer.party = origTrainer->party;
+        tempTrainer.party = origTrainer->party;
 
-    tempTrainer.poolSize = origTrainer->poolSize;
-    if (tempTrainer.partySize == 0)
-        tempTrainer.partySize = origTrainer->partySize;
-    CreateNPCTrainerPartyFromTrainer(party, (const struct Trainer *)(&tempTrainer));
+        tempTrainer.poolSize = origTrainer->poolSize;
+        if (tempTrainer.partySize == 0)
+            tempTrainer.partySize = origTrainer->partySize;
+        CreateNPCTrainerPartyFromTrainer(party, (const struct Trainer *)(&tempTrainer));
+    }
 }
 
 void CreateTrainerPartyForPlayer(void)

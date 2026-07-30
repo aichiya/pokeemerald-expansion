@@ -268,6 +268,10 @@ static u64 GetAiFlags(u16 trainerId, enum BattlerId battler)
     {
         flags = GetWildAiFlags();
     }
+    else if (trainerId == TRAINER_SECRET_BASE || (gBattleTypeFlags & BATTLE_TYPE_SECRET_BASE))
+    {
+        flags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_TERA;
+    }
     else
     {
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
@@ -280,7 +284,9 @@ static u64 GetAiFlags(u16 trainerId, enum BattlerId battler)
             flags = AI_FLAG_FIRST_BATTLE;
         else if (gBattleTypeFlags & BATTLE_TYPE_FACTORY)
             flags = GetAiScriptsInBattleFactory();
-        else if (gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_TRAINER_HILL | BATTLE_TYPE_SECRET_BASE))
+//        else if (gBattleTypeFlags & BATTLE_TYPE_SECRET_BASE)
+//            flags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_SWITCHING | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_PP_STALL_PREVENTION | AI_FLAG_SMART_TERA | AI_FLAG_RANDOMIZE_SWITCHIN;
+        else if (gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_TRAINER_HILL))
             flags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT;
         else
             flags = GetTrainerAIFlagsFromId(trainerId);

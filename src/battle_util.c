@@ -8333,7 +8333,7 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         break;
     case ABILITY_PURE_WHITE:
         if (gBattleMons[battlerDef].status1 & (STATUS1_SLEEP | STATUS1_FREEZE) 
-         || gBattleMons[battlerDef].volatiles.confusionTurns
+         || gBattleMons[battlerDef].volatiles.confusionTimer > 0
          || gBattleMons[battlerDef].item == ITEM_BERSERK_GENE)
         {
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.1));

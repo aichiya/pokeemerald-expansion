@@ -4647,7 +4647,7 @@ BattleScript_LeechSeedOnAbilityPureWhiteActivates::
 	waitmessage B_WAIT_TIME_LONG
 	statusanimation BS_ATTACKER
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	end
 
 BattleScript_EmergencyExit::
@@ -6657,7 +6657,7 @@ BattleScript_WinningCombination3CurseEffect:
 @	attackanimation
 @	waitanimation
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	printstring STRINGID_YORIGAMICURSE
 	waitmessage B_WAIT_TIME_LONG
 	tryfaintmon BS_ATTACKER
@@ -6850,7 +6850,7 @@ BattleScript_TsubameGaeshiActivates::
 	restoretarget
 	restoreattacker
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	tryfaintmon BS_ATTACKER
 	return
 
@@ -6907,7 +6907,7 @@ BattleScript_EffectGaiaForceChangeDark:
 BattleScript_ExShadowSkyHeal::
 	playanimation BS_ATTACKER, B_ANIM_SIMPLE_HEAL
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	printstring STRINGID_RECOVEREDBYEXSHADOWSKY
 	waitmessage B_WAIT_TIME_LONG
 	end3
@@ -6928,7 +6928,7 @@ BattleScript_AutumnGoddessesHealingActivates::
 
 BattleScript_ExShadowHalfAttackerDamage::
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	tryfaintmon BS_ATTACKER
 	return
 
@@ -6971,7 +6971,7 @@ BattleScript_LastWishRecover::
 	playanimation BS_SCRIPTING, B_ANIM_WISH_HEAL
 	waitanimation
 	healthbarupdate BS_SCRIPTING
-	datahpupdate BS_SCRIPTING
+	datahpupdate BS_SCRIPTING, ASSURANCE_DOUBLE
 	waitstate
 	printstring STRINGID_POKEMONRECOVEREDFROMLASTWISH
 	waitmessage B_WAIT_TIME_LONG
@@ -7037,7 +7037,7 @@ BattleScript_DevourHeal::
 	playmoveanimation MOVE_GIGA_DRAIN
 	waitanimation
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	printstring STRINGID_DEVOURHEAL
 	waitmessage B_WAIT_TIME_LONG
 	return
@@ -7050,7 +7050,7 @@ BattleScript_DevourHealBlock::
 	playmoveanimation MOVE_GIGA_DRAIN
 	waitanimation
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	return
 
 BattleScript_DevourLiquidOoze::
@@ -7062,7 +7062,7 @@ BattleScript_DevourLiquidOoze::
 	waitanimation
 	call BattleScript_AbilityPopUpTarget
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	printstring STRINGID_ITSUCKEDLIQUIDOOZE
 	tryfaintmon BS_ATTACKER
 	waitmessage B_WAIT_TIME_LONG
@@ -7089,7 +7089,7 @@ BattleScript_DevourHealMultiTarget_EffectHeal:
 	playmoveanimation MOVE_GIGA_DRAIN
 	waitanimation
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	printstring STRINGID_DEVOURHEAL
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_DevourHealMultiTarget_LoopIncrement
@@ -7100,7 +7100,7 @@ BattleScript_DevourHealMultiTarget_EffectLiquidOoze:
 	waitanimation
 	call BattleScript_AbilityPopUpTarget
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	printstring STRINGID_ITSUCKEDLIQUIDOOZE
 	tryfaintmon BS_ATTACKER
 	waitmessage B_WAIT_TIME_LONG
@@ -7178,7 +7178,7 @@ BattleScript_HealingSaintActivates::
 	call BattleScript_AbilityPopUpScripting
 	waitanimation
 	healthbarupdate BS_SCRIPTING
-	datahpupdate BS_SCRIPTING
+	datahpupdate BS_SCRIPTING, ASSURANCE_DOUBLE
 	printstring STRINGID_HEALINGSAINTHEALS
 	waitmessage B_WAIT_TIME_LONG
 	restoreattacker

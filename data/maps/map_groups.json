@@ -78,7 +78,8 @@
     "gMapGroup_TownsAndRoutes2",
     "gMapGroup_Dungeons2",
     "gMapGroup_SpecialArea2",
-    "gMapGroup_EventStream"
+    "gMapGroup_EventStream",
+    "gMapGroup_JohtoRoute30"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1403,5 +1404,9 @@
     "SafariZone_SouthFirstConstruction",
     "Stream_DimensionalRift_FirstEvent",
     "Stream_HallOfFame_FirstEvent"
+  ],
+  "gMapGroup_JohtoRoute30": [
+    "JohtoRoute30_House1",
+    "JohtoRoute30_MrPokemonHouse"
   ]
 }

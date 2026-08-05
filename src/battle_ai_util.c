@@ -85,7 +85,7 @@ enum MoveTarget AI_GetBattlerMoveTargetType(enum BattlerId battler, enum Move mo
         return TARGET_USER;
     if (AI_CanBattlerHitBothFoesInTerrain(battler, move, effect))
         return TARGET_BOTH;
-    if (effect == EFFECT_TERA_STARSTORM && gBattleMons[battler].species == SPECIES_TERAPAGOS_STELLAR)
+    if (effect == EFFECT_TERA_STARSTORM)
         return TARGET_BOTH;
 
     return GetMoveTarget(move);

@@ -11857,6 +11857,26 @@
       "secondary_tileset": "gTileset_Snowpoint",
       "border_filepath": "data/layouts/AnotherWorldGraceTown/border.bin",
       "blockdata_filepath": "data/layouts/AnotherWorldGraceTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE30_HOUSE1",
+      "name": "JohtoRoute30_House1_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/JohtoRoute30_House1/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute30_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOHTO_ROUTE30_MR_POKEMON_HOUSE",
+      "name": "JohtoRoute30_MrPokemonHouse_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/JohtoRoute30_MrPokemonHouse/border.bin",
+      "blockdata_filepath": "data/layouts/JohtoRoute30_MrPokemonHouse/map.bin"
     }
   ]
 }

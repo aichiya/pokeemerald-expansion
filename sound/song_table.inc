@@ -1404,7 +1404,7 @@ gSongTable::
 	song mus_sh_duel_in_another_dimension, MUSIC_PLAYER_BGM, 0
 	song mus_etc_bintang_kehidupan, MUSIC_PLAYER_BGM, 0
 	song mus_etc_x_vs_z, MUSIC_PLAYER_BGM, 0
-	song dummy_song_header, MUSIC_PLAYER_BGM, 0
+	song mus_pkmn_faiya_red_s_344_vs_oak, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0
 	song dummy_song_header, MUSIC_PLAYER_BGM, 0

@@ -242,8 +242,8 @@ Debug_EventScript_Script_6::
 @	setflag FLAG_TERA_ORB_NO_COST
 	setflag FLAG_CUSTOM_BGM_BATTLE
 	setvar VAR_TRAINER_MIRROR_CHECK_LEVEL, 3
-	setvar VAR_SETTING_MUSIC, MUS_FATE_HAKUNO_FATAL_BATTLE
-	trainerbattle_no_intro TRAINER_MIRROR_OPPOSITE_GENDER, TrimmedGensokyo_Text_Debug1_2
+	setvar VAR_SETTING_MUSIC, MUS_PKMN_FAIYA_RED_S_334_VS_OAK
+	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
 	release
 	end
 

@@ -119,7 +119,10 @@ enum Type GetBattlerTeraType(enum BattlerId battler)
 // Uses up a type's Stellar boost.
 void ExpendTypeStellarBoost(enum BattlerId battler, enum Type type)
 {
-    if (type < 32 && gBattleMons[battler].species != SPECIES_TERAPAGOS_STELLAR) // avoid OOB access
+    if (type < 32 && 
+     !(gBattleMons[battler].species == SPECIES_ETC_ARCEUS_TH
+     || gBattleMons[battler].species == SPECIES_ETC_NEPTUNE_GODDESS
+     || gBattleMons[battler].species == SPECIES_ETC_NEPGEAR_GODDESS)) // avoid OOB access
         gBattleStruct->stellarBoostFlags[GetBattlerTrainer(battler)] |= 1u << type;
 }
 

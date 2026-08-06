@@ -8184,13 +8184,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_SOLGANIUM_Z] =
     {
-        .name = ITEM_NAME("Solganium Z"),
+        .name = ITEM_NAME("Core Linker"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Solgaleo's\n"
-            "Sunsteel Strike\n"
-            "to a Z-Move."),
+            "Raises VIVIT and\n"
+            "Vivit Steel moves.\n"
+            "Complete Smash Z."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -8202,13 +8202,13 @@ const struct ItemInfo gItemsInfo[] =
 
     [ITEM_LUNALIUM_Z] =
     {
-        .name = ITEM_NAME("Lunalium Z"),
+        .name = ITEM_NAME("Broken Fantasy"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrades Lunala's\n"
-            "Moongeist Beam\n"
-            "to a Z-Move."),
+            "Ups ghost Reimu\n"
+            "Dream/Nether moves.\n"
+            "Fantasy Heaven Z."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
@@ -13939,15 +13939,15 @@ const struct ItemInfo gItemsInfo[] =
 
 // Battle Mechanic Key Items
 
-    [ITEM_MEGA_RING] =
+    [ITEM_MEGA_RING] = // ITEM_DL_GEAR_NEPTUNE
     {
-        .name = ITEM_NAME("Mega Ring"),
+        .name = ITEM_NAME("DL-Gear"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
-            "Enables Pokémon\n"
-            "with Mega Stones\n"
-            "to Mega Evolve."),
+            "A weird device.\n"
+            "Somehow, Neptune\n"
+            "is inside here."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -13955,15 +13955,15 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_MegaRing,
     },
 
-    [ITEM_Z_POWER_RING] =
+    [ITEM_Z_POWER_RING] = // ITEM_DL_GEAR_NEPGEAR
     {
-        .name = ITEM_NAME("Z-Power Ring"),
+        .name = ITEM_NAME("DL-Gear"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
-            "A ring that\n"
-            "enables Pokémon\n"
-            "to use Z-Power."),
+            "A weird device.\n"
+            "Somehow, Nepgear\n"
+            "is inside here."),
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

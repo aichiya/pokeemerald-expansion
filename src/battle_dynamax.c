@@ -45,6 +45,7 @@ static const struct GMaxMove sGMaxMoveTable[] =
     {SPECIES_LAPRAS_GMAX,                     TYPE_NEW_ICE,        MOVE_G_MAX_RESONANCE},
     {SPECIES_EEVEE_GMAX,                      TYPE_NEW_HEART,      MOVE_G_MAX_CUDDLE},
     {SPECIES_SNORLAX_GMAX,                    TYPE_NEW_HEART,      MOVE_G_MAX_REPLENISH},
+/*
     {SPECIES_GARBODOR_GMAX,                   TYPE_NEW_MIASMA,     MOVE_G_MAX_MALODOR},
     {SPECIES_MELMETAL_GMAX,                   TYPE_NEW_METAL,      MOVE_G_MAX_MELTDOWN},
     {SPECIES_RILLABOOM_GMAX,                  TYPE_NEW_NATURE,     MOVE_G_MAX_DRUM_SOLO},
@@ -67,6 +68,25 @@ static const struct GMaxMove sGMaxMoveTable[] =
     {SPECIES_DURALUDON_GMAX,                  TYPE_NEW_DIVINE,     MOVE_G_MAX_DEPLETION},
     {SPECIES_URSHIFU_SINGLE_STRIKE_GMAX,      TYPE_NEW_DARK,       MOVE_G_MAX_ONE_BLOW},
     {SPECIES_URSHIFU_RAPID_STRIKE_GMAX,       TYPE_NEW_WATER,      MOVE_G_MAX_RAPID_FLOW},
+*/
+// Custom
+    {SPECIES_MOE_VENUSAUR_GMAX,                   TYPE_NEW_NATURE,     MOVE_G_MAX_VINE_LASH},
+    {SPECIES_MOE_BLASTOISE_GMAX,                  TYPE_NEW_WATER,      MOVE_G_MAX_CANNONADE},
+    {SPECIES_MOE_CHARIZARD_GMAX,                  TYPE_NEW_FIRE,       MOVE_G_MAX_WILDFIRE},
+    {SPECIES_MOE_BUTTERFREE_GMAX,                 TYPE_NEW_HEART,      MOVE_G_MAX_BEFUDDLE},
+    {SPECIES_MOE_PIKACHU_GMAX,                    TYPE_NEW_ELECTRIC,   MOVE_G_MAX_VOLT_CRASH},
+    {SPECIES_MOE_MEOWTH_GMAX,                     TYPE_NEW_METAL,      MOVE_G_MAX_GOLD_RUSH},
+    {SPECIES_MOE_MACHAMP_GMAX,                    TYPE_NEW_DREAM,      MOVE_G_MAX_CHI_STRIKE},
+    {SPECIES_MOE_GENGAR_GMAX,                     TYPE_NEW_NETHER,     MOVE_G_MAX_TERROR},
+    {SPECIES_MOE_KINGLER_GMAX,                    TYPE_NEW_WATER,      MOVE_G_MAX_FOAM_BURST},
+    {SPECIES_MOE_LAPRAS_GMAX,                     TYPE_NEW_ICE,        MOVE_G_MAX_RESONANCE},
+    {SPECIES_MOE_EEVEE_GMAX,                      TYPE_NEW_HEART,      MOVE_G_MAX_CUDDLE},
+    {SPECIES_MOE_SNORLAX_GMAX,                    TYPE_NEW_HEART,      MOVE_G_MAX_REPLENISH},
+
+    {SPECIES_PC_INFINITY_SUL_R_CURE_BLOSSOM_SUPER,      TYPE_NEW_HEART,       MOVE_G_MAX_FINALE},
+    {SPECIES_PC_INFINITY_SUL_R_CURE_MARINE_SUPER,       TYPE_NEW_HEART,       MOVE_G_MAX_FINALE},
+    {SPECIES_PC_INFINITY_SUL_R_CURE_SUNSHINE_SUPER,     TYPE_NEW_HEART,       MOVE_G_MAX_FINALE},
+    {SPECIES_PC_INFINITY_SUL_R_CURE_MOONLIGHT_SUPER,    TYPE_NEW_HEART,       MOVE_G_MAX_FINALE},
 };
 
 // Returns whether a battler can Dynamax.
@@ -83,7 +103,7 @@ bool32 CanDynamax(enum BattlerId battler)
     if (!TESTING && (GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT
         || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT)))
     {
-        if (!CheckBagHasItem(ITEM_DYNAMAX_BAND, 1))
+        if (!(CheckBagHasItem(ITEM_DL_GEAR_NEPTUNE, 1) || CheckBagHasItem(ITEM_DL_GEAR_NEPGEAR, 1))) // ITEM_DYNAMAX_BAND
             return FALSE;
         if (B_FLAG_DYNAMAX_BATTLE == 0 || (B_FLAG_DYNAMAX_BATTLE != 0 && !FlagGet(B_FLAG_DYNAMAX_BATTLE)))
             return FALSE;

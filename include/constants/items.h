@@ -868,7 +868,9 @@ enum __attribute__((packed)) Item
 
     // Battle Mechanic Key Items
     ITEM_MEGA_RING = 703,
+    ITEM_DL_GEAR_NEPTUNE = ITEM_MEGA_RING,
     ITEM_Z_POWER_RING = 704,
+    ITEM_DL_GEAR_NEPGEAR = ITEM_Z_POWER_RING,
     ITEM_DYNAMAX_BAND = 705,
 
     // Misc. Key Items

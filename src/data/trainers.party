@@ -707,6 +707,8 @@ EVs: 6 HP / 252 Atk / 252 SpD
 
 SPECIES_MOE_VENUSAUR @ ITEM_LIFE_ORB
 Ability: ABILITY_CHLOROPHYLL
+Gigantamax: Yes
+Dynamax Level: 10
 Jolly Nature
 Level: 70
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe

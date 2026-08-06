@@ -28969,7 +28969,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Saboten-Breakout Complete Smash"),
         .description = COMPOUND_STRING(
-            "Vivit attacks with full\n"
+            "VIVIT attacks with full\n"
             "force. Ignores abilities."),
         .effect = EFFECT_PHOTON_GEYSER,
         .power = 200,
@@ -30016,13 +30016,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_G_MAX_FINALE] =  // Edited
     {
-        .name = COMPOUND_STRING("G-Max Finale"),
+        .name = COMPOUND_STRING("G-Max Heart Catch"),
         .description = COMPOUND_STRING(
-            "G-Max Alcremie attack.\n"
-            "Heals allies' HP."),    //ANIM TODO
+            "G-Max I.S. attack.\n"
+            "Infatuates opponents."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
-        .type = TYPE_NEW_DIVINE,
+        .type = TYPE_NEW_HEART,
         .accuracy = 0,
         .pp = 10,
         .target = TARGET_SELECTED,
@@ -30030,8 +30030,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .battleAnimScript = gBattleAnimMove_GMaxFinale,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_HEAL_TEAM,
-            .self = TRUE,
+            .moveEffect = MOVE_EFFECT_INFATUATE_SIDE,
         }),
     },
 

@@ -8365,23 +8365,23 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
             modifier = uq4_12_multiply(modifier, uq4_12_add(UQ_4_12(1.0), PercentToUQ4_12_Floored(holdEffectParamAtk)));
         break;
     case HOLD_EFFECT_LUSTROUS_ORB:
-        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_PALKIA && (moveType == TYPE_NEW_WATER || moveType == TYPE_NEW_ILLUSION))
+        if (gBattleMons[battlerAtk].species == SPECIES_ETC_PALKIA_TH && (moveType == TYPE_NEW_WATER || moveType == TYPE_NEW_ILLUSION))
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
     case HOLD_EFFECT_ADAMANT_ORB:
-        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_DIALGA && (moveType == TYPE_NEW_METAL || moveType == TYPE_NEW_ILLUSION))
+        if (gBattleMons[battlerAtk].species == SPECIES_ETC_DIALGA_TH && (moveType == TYPE_NEW_METAL|| moveType == TYPE_NEW_ILLUSION))
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
     case HOLD_EFFECT_GRISEOUS_ORB:
-        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_GIRATINA && (moveType == TYPE_NEW_NETHER || moveType == TYPE_NEW_ILLUSION))
+        if (gBattleMons[battlerAtk].species == SPECIES_ETC_GIRATINA_TH && (moveType == TYPE_NEW_NETHER|| moveType == TYPE_NEW_ILLUSION))
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
-    case HOLD_EFFECT_SOUL_DEW:
-        if ((gBattleMons[battlerAtk].species == SPECIES_LATIAS || gBattleMons[battlerAtk].species == SPECIES_LATIOS)
-            && ((B_SOUL_DEW_BOOST >= GEN_7 && (moveType == TYPE_NEW_DREAM || moveType == TYPE_NEW_FLYING))
-             || (B_SOUL_DEW_BOOST < GEN_7 && !(gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && IsBattleMoveSpecial(move))))
-            modifier = uq4_12_multiply(modifier, holdEffectModifier);
-        break;
+//    case HOLD_EFFECT_SOUL_DEW:
+//        if ((gBattleMons[battlerAtk].species == SPECIES_LATIAS || gBattleMons[battlerAtk].species == SPECIES_LATIOS)
+//            && ((B_SOUL_DEW_BOOST >= GEN_7 && (moveType == TYPE_NEW_DREAM || moveType == TYPE_NEW_FLYING))
+//             || (B_SOUL_DEW_BOOST < GEN_7 && !(gBattleTypeFlags & BATTLE_TYPE_FRONTIER) && IsBattleMoveSpecial(move))))
+//            modifier = uq4_12_multiply(modifier, holdEffectModifier);
+//        break;
     case HOLD_EFFECT_TYPE_POWER:
     case HOLD_EFFECT_PLATE:
         if (moveType == GetItemSecondaryId(gBattleMons[battlerAtk].item))
@@ -8391,9 +8391,21 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         if (IsPunchingMove(move))
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.1));
         break;
-    case HOLD_EFFECT_OGERPON_MASK:
-        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_OGERPON)
-           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+ //   case HOLD_EFFECT_OGERPON_MASK:
+ //       if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_OGERPON)
+ //          modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+ //       break;
+    case HOLD_EFFECT_Z_CRYSTAL:
+        if (gBattleMons[battlerAtk].item == ITEM_SOLGANIUM_Z
+         && (gBattleMons[battlerAtk].species == SPECIES_SH_VIVIT_ANDROID
+         || gBattleMons[battlerAtk].species == SPECIES_SH_VIVIT_ANGEL
+         || gBattleMons[battlerAtk].species == SPECIES_SH_VIVIT_SPHERE)
+         && moveType == TYPE_NEW_METAL)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        else if (gBattleMons[battlerAtk].item == ITEM_LUNALIUM_Z
+         && gBattleMons[battlerAtk].species == SPECIES_TH_REIMU_CTC
+         && (moveType == TYPE_NEW_NETHER || moveType == TYPE_NEW_DREAM))
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
     default:
         break;
@@ -9129,12 +9141,12 @@ static inline u32 CalcDefenseStat(struct DamageContext *ctx)
     // target's hold effects
     switch (ctx->holdEffects[ctx->battlerDef])
     {
-    case HOLD_EFFECT_DEEP_SEA_SCALE:
-        if (gBattleMons[battlerDef].species == SPECIES_CLAMPERL && !usesDefStat)
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
-        break;
+//    case HOLD_EFFECT_DEEP_SEA_SCALE:
+//        if (gBattleMons[battlerDef].species == SPECIES_CLAMPERL && !usesDefStat)
+//            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
+//        break;
     case HOLD_EFFECT_METAL_POWDER:
-        if (gBattleMons[battlerDef].species == SPECIES_DITTO && usesDefStat && !(gBattleMons[battlerDef].volatiles.transformed))
+        if ((gBattleMons[battlerDef].species == SPECIES_DITTO || gBattleMons[battlerDef].species == SPECIES_MOE_DITTO) && usesDefStat && !(gBattleMons[battlerDef].volatiles.transformed))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
     case HOLD_EFFECT_EVIOLITE:
@@ -9150,13 +9162,13 @@ static inline u32 CalcDefenseStat(struct DamageContext *ctx)
         if (!usesDefStat)
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
         break;
-    case HOLD_EFFECT_SOUL_DEW:
-        if (B_SOUL_DEW_BOOST < GEN_7
-         && (gBattleMons[battlerDef].species == SPECIES_LATIAS || gBattleMons[battlerDef].species == SPECIES_LATIOS)
-         && !(gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-         && !usesDefStat)
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
-        break;
+//    case HOLD_EFFECT_SOUL_DEW:
+//        if (B_SOUL_DEW_BOOST < GEN_7
+//         && (gBattleMons[battlerDef].species == SPECIES_LATIAS || gBattleMons[battlerDef].species == SPECIES_LATIOS)
+//         && !(gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
+//         && !usesDefStat)
+//            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+//        break;
     default:
         break;
     }
@@ -10651,7 +10663,7 @@ bool32 CanMegaEvolve(enum BattlerId battler)
     // Check if Player has a Mega Ring.
     if (!TESTING
         && (position == B_POSITION_PLAYER_LEFT || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && position == B_POSITION_PLAYER_RIGHT))
-        && !CheckBagHasItem(ITEM_MEGA_RING, 1))
+        && !(CheckBagHasItem(ITEM_DL_GEAR_NEPTUNE, 1) || CheckBagHasItem(ITEM_DL_GEAR_NEPGEAR, 1))) // ITEM_MEGA_RING
         return FALSE;
 
     // Check if Trainer has already Mega Evolved.
@@ -10696,7 +10708,7 @@ bool32 CanUltraBurst(enum BattlerId battler)
     // Check if Player has a Z-Ring
     if (!TESTING && (position == B_POSITION_PLAYER_LEFT
         || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && position == B_POSITION_PLAYER_RIGHT))
-        && !CheckBagHasItem(ITEM_Z_POWER_RING, 1))
+        && !(CheckBagHasItem(ITEM_DL_GEAR_NEPTUNE, 1) || CheckBagHasItem(ITEM_DL_GEAR_NEPGEAR, 1))) // ITEM_Z_POWER_RING
         return FALSE;
 
     // Check if Trainer has already Ultra Bursted.

@@ -228,8 +228,8 @@ Debug_EventScript_Script_6::
 	additem ITEM_Z_POWER_RING
 	additem ITEM_MEGA_RING
 	setflag FLAG_DYNAMAX_BATTLE
-@	setflag FLAG_TERA_ORB_CHARGED
-@	setflag FLAG_TERA_ORB_NO_COST
+	setflag FLAG_TERA_ORB_CHARGED
+	setflag FLAG_TERA_ORB_NO_COST
 	setflag FLAG_CUSTOM_BGM_BATTLE
 	setvar VAR_TRAINER_MIRROR_CHECK_LEVEL, 3
 	setvar VAR_SETTING_MUSIC, MUS_PKMN_FAIYA_RED_S_334_VS_OAK
@@ -238,6 +238,8 @@ Debug_EventScript_Script_6::
 	end
 
 Debug_EventScript_Script_7::
+	setflag FLAG_TERA_ORB_CHARGED
+	setflag FLAG_TERA_ORB_NO_COST
     goto TrimmedGensokyo_EventScript_Debug1
 	release
 	end

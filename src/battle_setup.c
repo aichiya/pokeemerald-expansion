@@ -2290,15 +2290,82 @@ static void CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
         {
             bool8 monShiny = 1;
             bool8 monNotShiny = 0;
+            u16 speciesShift = SPECIES_NONE;
+            u16 moveShift = MOVE_NONE;
+            u8 evShift = 0;
+            u8 natureShift = NATURE_HARDY;
 
             for (i = 0; i < PARTY_SIZE; i++)
             {
                 CopyMon(&gParties[B_TRAINER_OPPONENT_A][i], &gParties[B_TRAINER_PLAYER][i], sizeof(struct Pokemon));
                 HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
-                if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY) == TRUE)
-                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monNotShiny);
+                if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_EGG) == TRUE)
+                {  
+                    u8 highestPartyLevel = GetHighestLevelInPlayerParty();
+                    speciesShift = GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES);
+                    CreateMon(&gParties[B_TRAINER_OPPONENT_A][i], speciesShift, highestPartyLevel, Random32(), OTID_STRUCT_PLAYER_ID);
+                }
+                else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES) == SPECIES_ETC_NEPTUNE_NORMAL)
+                {
+                    speciesShift = SPECIES_ETC_NEPGEAR_NORMAL;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, &speciesShift);
+                    moveShift = MOVE_BINARY_CRUSHER;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE1, &moveShift);
+                    moveShift = MOVE_QUIVER_DANCE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE2, &moveShift);
+                    moveShift = MOVE_MOONBLAST;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE3, &moveShift);
+                    moveShift = MOVE_ICE_BEAM;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE4, &moveShift);
+                    evShift = 6;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HP_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_ATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_DEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPDEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPEED_EV, &evShift);
+                    natureShift = NATURE_TIMID;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HIDDEN_NATURE, &natureShift);
+                }
+                else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES) == SPECIES_ETC_NEPGEAR_NORMAL)
+                {
+                    speciesShift = SPECIES_ETC_NEPTUNE_NORMAL;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, &speciesShift);
+                    moveShift = MOVE_NEPTUNE_BREAK;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE1, &moveShift);
+                    moveShift = MOVE_VICTORY_DANCE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE2, &moveShift);
+                    moveShift = MOVE_PLASMA_BLADE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE3, &moveShift);
+                    moveShift = MOVE_ICE_BLADE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE4, &moveShift);
+                    evShift = 6;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HP_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_ATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_DEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPDEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPEED_EV, &evShift);
+                    natureShift = NATURE_JOLLY;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HIDDEN_NATURE, &natureShift);
+                }
                 else
-                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monShiny);
+                {
+                    if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY) == TRUE)
+                        SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monNotShiny);
+                    else
+                        SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monShiny);
+                }
                 HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
                 CalculateMonStats(&gParties[B_TRAINER_OPPONENT_A][i]);
             }
@@ -2308,18 +2375,84 @@ static void CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
             u8 highestPartyLevel = GetHighestLevelInPlayerParty();
             bool8 monShiny = 1;
             bool8 monNotShiny = 0;
+            u16 speciesShift = SPECIES_NONE;
+            u16 moveShift = MOVE_NONE;
+            u8 evShift = 0;
+            u8 natureShift = NATURE_HARDY;
 
             for (i = 0; i < PARTY_SIZE; i++)
             {
                 CopyMon(&gParties[B_TRAINER_OPPONENT_A][i], &gParties[B_TRAINER_PLAYER][i], sizeof(struct Pokemon));
                 HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
+                if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_EGG) == TRUE)
+                {
+                    speciesShift = GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES);
+                    CreateMon(&gParties[B_TRAINER_OPPONENT_A][i], speciesShift, highestPartyLevel, Random32(), OTID_STRUCT_PLAYER_ID);
+                }
+                else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES) == SPECIES_ETC_NEPTUNE_NORMAL)
+                {
+                    speciesShift = SPECIES_ETC_NEPGEAR_NORMAL;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, &speciesShift);
+                    moveShift = MOVE_BINARY_CRUSHER;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE1, &moveShift);
+                    moveShift = MOVE_QUIVER_DANCE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE2, &moveShift);
+                    moveShift = MOVE_MOONBLAST;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE3, &moveShift);
+                    moveShift = MOVE_ICE_BEAM;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE4, &moveShift);
+                    evShift = 6;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HP_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_ATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_DEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPDEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPEED_EV, &evShift);
+                    natureShift = NATURE_TIMID;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HIDDEN_NATURE, &natureShift);
+                }
+                else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES) == SPECIES_ETC_NEPGEAR_NORMAL)
+                {
+                    speciesShift = SPECIES_ETC_NEPTUNE_NORMAL;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, &speciesShift);
+                    moveShift = MOVE_NEPTUNE_BREAK;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE1, &moveShift);
+                    moveShift = MOVE_VICTORY_DANCE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE2, &moveShift);
+                    moveShift = MOVE_PLASMA_BLADE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE3, &moveShift);
+                    moveShift = MOVE_ICE_BLADE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE4, &moveShift);
+                    evShift = 6;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HP_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_ATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_DEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPDEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPEED_EV, &evShift);
+                    natureShift = NATURE_JOLLY;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HIDDEN_NATURE, &natureShift);
+                }
+                else
+                {
+                    if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY) == TRUE)
+                        SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monNotShiny);
+                    else
+                        SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monShiny);
+                }
                 SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_LEVEL, &highestPartyLevel);
                 u32 dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, NULL)].growthRate][highestPartyLevel];
                 SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_EXP, &dataUnsigned);
-                if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY) == TRUE)
-                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monNotShiny);
-                else
-                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monShiny);
                 HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
                 CalculateMonStats(&gParties[B_TRAINER_OPPONENT_A][i]);
             }
@@ -2329,18 +2462,84 @@ static void CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
             u8 highestPartyLevel = MAX_LEVEL;
             bool8 monShiny = 1;
             bool8 monNotShiny = 0;
+            u16 speciesShift = SPECIES_NONE;
+            u16 moveShift = MOVE_NONE;
+            u8 evShift = 0;
+            u8 natureShift = NATURE_HARDY;
 
             for (i = 0; i < PARTY_SIZE; i++)
             {
                 CopyMon(&gParties[B_TRAINER_OPPONENT_A][i], &gParties[B_TRAINER_PLAYER][i], sizeof(struct Pokemon));
                 HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
+                if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_EGG) == TRUE)
+                {
+                    speciesShift = GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES);
+                    CreateMon(&gParties[B_TRAINER_OPPONENT_A][i], speciesShift, highestPartyLevel, Random32(), OTID_STRUCT_PLAYER_ID);
+                }
+                else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES) == SPECIES_ETC_NEPTUNE_NORMAL)
+                {
+                    speciesShift = SPECIES_ETC_NEPGEAR_NORMAL;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, &speciesShift);
+                    moveShift = MOVE_BINARY_CRUSHER;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE1, &moveShift);
+                    moveShift = MOVE_QUIVER_DANCE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE2, &moveShift);
+                    moveShift = MOVE_MOONBLAST;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE3, &moveShift);
+                    moveShift = MOVE_ICE_BEAM;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE4, &moveShift);
+                    evShift = 6;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HP_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_ATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_DEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPDEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPEED_EV, &evShift);
+                    natureShift = NATURE_TIMID;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HIDDEN_NATURE, &natureShift);
+                }
+                else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES) == SPECIES_ETC_NEPGEAR_NORMAL)
+                {
+                    speciesShift = SPECIES_ETC_NEPTUNE_NORMAL;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, &speciesShift);
+                    moveShift = MOVE_NEPTUNE_BREAK;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE1, &moveShift);
+                    moveShift = MOVE_VICTORY_DANCE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE2, &moveShift);
+                    moveShift = MOVE_PLASMA_BLADE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE3, &moveShift);
+                    moveShift = MOVE_ICE_BLADE;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_MOVE4, &moveShift);
+                    evShift = 6;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HP_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_ATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_DEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPATK_EV, &evShift);
+                    evShift = 0;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPDEF_EV, &evShift);
+                    evShift = 252;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPEED_EV, &evShift);
+                    natureShift = NATURE_JOLLY;
+                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HIDDEN_NATURE, &natureShift);
+                }
+                else
+                {
+                    if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY) == TRUE)
+                        SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monNotShiny);
+                    else
+                        SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monShiny);
+                }
                 SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_LEVEL, &highestPartyLevel);
                 u32 dataUnsigned = gExperienceTables[gSpeciesInfo[GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES, NULL)].growthRate][highestPartyLevel];
                 SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_EXP, &dataUnsigned);
-                if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY) == TRUE)
-                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monNotShiny);
-                else
-                    SetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_SHINY, &monShiny);
                 HealPokemon(&gParties[B_TRAINER_OPPONENT_A][i]);
                 CalculateMonStats(&gParties[B_TRAINER_OPPONENT_A][i]);
             }

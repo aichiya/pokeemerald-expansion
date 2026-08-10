@@ -35,7 +35,8 @@ struct DamageContext
     u32 abilityBlocked:1;
     u32 runScript:1;  // Used during actual combat where scripts have to be run / flags need to be set
     u32 terrain:4;
-    u32 padding:18;
+    u32 useStoredTypeEffectiveness:1;
+    u32 padding:17;
 };
 
 // Helper struct to keep the arg list small and prevent constant recalculations of abilities/hold effects.
@@ -47,19 +48,6 @@ struct BattleCalcValues
     enum BattleMoveEffects moveEffect:10;
     enum Ability abilities[MAX_BATTLERS_COUNT];
     enum HoldEffect holdEffects[MAX_BATTLERS_COUNT];
-};
-
-struct SetEffect
-{
-    const u8 *script;
-    const struct AdditionalEffect *additionalEffect;
-
-    enum MoveEffect moveEffect:8;
-    enum BattlerId effectBattler:3;
-
-    u16 primary:1;
-    u16 certain:1;
-    u16 onSide:1;
 };
 
 void HandleAction_ThrowBall(void);
@@ -257,7 +245,7 @@ bool32 CanMonParticipateInSkyBattle(struct Pokemon *mon);
 void RemoveBattlerType(enum BattlerId battler, enum Type type);
 enum Type GetBattleMoveType(enum Move move);
 void TryActivateSleepClause(enum BattlerId battler, u32 indexInParty);
-void TryDeactivateSleepClause(enum BattleSide battlerSide, u32 indexInParty);
+void TryDeactivateSleepClause(enum BattlerId battler, u32 indexInParty);
 bool32 IsSleepClauseActiveForSide(enum BattleSide battlerSide);
 bool32 IsSleepClauseEnabled(void);
 bool32 AreMultiPartiesFullTeams(void);

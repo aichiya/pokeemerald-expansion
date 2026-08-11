@@ -740,6 +740,24 @@ static void HandleSetEffectLightScreen(struct BattleCalcValues *cv, struct SetEf
     }
 }
 
+static void HandleSetEffectSafeguard(struct BattleCalcValues *cv, struct SetEffect *se)
+{
+    if (TrySetSafeguard(se->effectBattler))
+    {
+        BattleScriptPush(se->script);
+        gBattlescriptCurrInstr = BattleScript_MoveEffectSafeguard;
+    }
+}
+
+static void HandleSetEffectMist(struct BattleCalcValues *cv, struct SetEffect *se)
+{
+    if (TrySetMist(se->effectBattler))
+    {
+        BattleScriptPush(se->script);
+        gBattlescriptCurrInstr = BattleScript_MoveEffectMist;
+    }
+}
+
 static void HandleSetEffectSaltCure(struct BattleCalcValues *cv, struct SetEffect *se)
 {
     if (!gBattleMons[se->effectBattler].volatiles.saltCure)
@@ -913,6 +931,10 @@ static void HandleSetEffectWeather(struct BattleCalcValues *cv, struct SetEffect
     u32 weather = 0, msg = 0;
     switch (se->moveEffect)
     {
+    case MOVE_EFFECT_EX_SHADOW_SKY:
+        weather = BATTLE_WEATHER_EX_SHADOW_SKY;
+        msg = B_MSG_STARTED_EX_SHADOW_SKY;
+        break;
     case MOVE_EFFECT_SUN:
         weather = BATTLE_WEATHER_SUN;
         msg = B_MSG_STARTED_SUNLIGHT;
@@ -968,6 +990,18 @@ static void HandleSetEffectTerrain(struct BattleCalcValues *cv, struct SetEffect
     case MOVE_EFFECT_PSYCHIC_TERRAIN:
         terrain = B_TERRAIN_PSYCHIC;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_PSYCHIC;
+        break;
+    case MOVE_EFFECT_UBW:
+        terrain = B_TERRAIN_UBW;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_UBW_SET;
+        break;
+    case MOVE_EFFECT_DARKNESS_TERRAIN:
+        terrain = B_TERRAIN_DARKNESS;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_DARKNESS;
+        break;
+    case MOVE_EFFECT_MIASMA_TERRAIN:
+        terrain = B_TERRAIN_MIASMA;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TERRAIN_SET_MIASMA;
         break;
     default:
         break;
@@ -1055,6 +1089,12 @@ static void HandleSetEffectAuroraVeil(struct BattleCalcValues *cv, struct SetEff
         BattleScriptPush(se->script);
         gBattlescriptCurrInstr = BattleScript_MoveEffectScreens;
     }
+}
+
+static void HandleSetEffectInfatuate(struct BattleCalcValues *cv, struct SetEffect *se)
+{
+    BattleScriptPush(se->script);
+    gBattlescriptCurrInstr = BattleScript_EffectInfatuate;
 }
 
 static void HandleSetEffectInfatuateSide(struct BattleCalcValues *cv, struct SetEffect *se)
@@ -1273,6 +1313,29 @@ static void HandleSetEffectStealStats(struct BattleCalcValues *cv, struct SetEff
     }
 }
 
+static void HandleSetEffectStealStatsTreasureSniper(struct BattleCalcValues *cv, struct SetEffect *se)
+{
+    bool32 atLeastOneStatStolen = FALSE;
+
+    for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
+    {
+        s32 stageToSteal = gBattleMons[se->effectBattler].statStages[stat];
+
+        if (stageToSteal > DEFAULT_STAT_STAGE && gBattleMons[cv->battlerAtk].statStages[stat] != MAX_STAT_STAGE)
+        {
+            atLeastOneStatStolen = TRUE;
+            gBattleMons[se->effectBattler].statStages[stat] = DEFAULT_STAT_STAGE;
+            SetStatChange(cv->battlerAtk, stat, stageToSteal - DEFAULT_STAT_STAGE);
+        }
+    }
+
+    if (atLeastOneStatStolen)
+    {
+        BattleScriptPush(se->script);
+        gBattlescriptCurrInstr = BattleScript_StealStatsTreasureSniper;
+    }
+}
+
 static void HandleSetEffectBeatUpMessage(struct BattleCalcValues *cv, struct SetEffect *se)
 {
     if (GetConfig(B_BEAT_UP) >= GEN_5) // Gen5+ don't print any custom message on attack
@@ -1355,6 +1418,8 @@ static void (*const sSetEffectHandlers[])(struct BattleCalcValues *cv, struct Se
     [MOVE_EFFECT_LEECH_SEED] = HandleSetEffectLeechSeed,
     [MOVE_EFFECT_REFLECT] = HandleSetEffectReflect,
     [MOVE_EFFECT_LIGHT_SCREEN] = HandleSetEffectLightScreen,
+    [MOVE_EFFECT_SAFEGUARD] = HandleSetEffectSafeguard,
+    [MOVE_EFFECT_MIST] = HandleSetEffectMist,
     [MOVE_EFFECT_SALT_CURE] = HandleSetEffectSaltCure,
     [MOVE_EFFECT_EERIE_SPELL] = HandleSetEffectEerieSpell,
     [MOVE_EFFECT_FLING] = HandleSetEffectFling,
@@ -1365,10 +1430,14 @@ static void (*const sSetEffectHandlers[])(struct BattleCalcValues *cv, struct Se
     [MOVE_EFFECT_RAIN] = HandleSetEffectWeather,
     [MOVE_EFFECT_SANDSTORM] = HandleSetEffectWeather,
     [MOVE_EFFECT_HAIL] = HandleSetEffectWeather,
+    [MOVE_EFFECT_EX_SHADOW_SKY] = HandleSetEffectWeather,
     [MOVE_EFFECT_MISTY_TERRAIN] = HandleSetEffectTerrain,
     [MOVE_EFFECT_GRASSY_TERRAIN] = HandleSetEffectTerrain,
     [MOVE_EFFECT_ELECTRIC_TERRAIN] = HandleSetEffectTerrain,
     [MOVE_EFFECT_PSYCHIC_TERRAIN] = HandleSetEffectTerrain,
+    [MOVE_EFFECT_UBW] = HandleSetEffectTerrain,
+    [MOVE_EFFECT_DARKNESS_TERRAIN] = HandleSetEffectTerrain,
+    [MOVE_EFFECT_MIASMA_TERRAIN] = HandleSetEffectTerrain,
     [MOVE_EFFECT_VINE_LASH] = HandleSetEffectGmaxNonTypeDamage,
     [MOVE_EFFECT_WILDFIRE] = HandleSetEffectGmaxNonTypeDamage,
     [MOVE_EFFECT_CANNONADE] = HandleSetEffectGmaxNonTypeDamage,
@@ -1378,6 +1447,7 @@ static void (*const sSetEffectHandlers[])(struct BattleCalcValues *cv, struct Se
     [MOVE_EFFECT_CRIT_PLUS_SIDE] = HandleSetEffectCritPlusSide,
     [MOVE_EFFECT_PREVENT_ESCAPE_SIDE] = HandleSetEffectPreventEscapeSide,
     [MOVE_EFFECT_AURORA_VEIL] = HandleSetEffectAuroraVeil,
+    [MOVE_EFFECT_INFATUATE] = HandleSetEffectInfatuate,
     [MOVE_EFFECT_INFATUATE_SIDE] = HandleSetEffectInfatuateSide,
     [MOVE_EFFECT_RECYCLE_BERRIES] = HandleSetEffectRecycleBerries,
     [MOVE_EFFECT_POISON_SIDE] = HandleSetEffectPoisonSide,
@@ -1400,6 +1470,7 @@ static void (*const sSetEffectHandlers[])(struct BattleCalcValues *cv, struct Se
     [STAT_CHANGE_EFFECT_MINUS] = HandleSetEffectNone,
     [MOVE_EFFECT_BREAK_SCREEN] = HandleSetEffectBreakScreen,
     [MOVE_EFFECT_STEAL_STATS] = HandleSetEffectStealStats,
+    [MOVE_EFFECT_STEAL_STATS_TREASURE_SNIPER] = HandleSetEffectStealStatsTreasureSniper,
     [MOVE_EFFECT_BEAT_UP_MESSAGE] = HandleSetEffectBeatUpMessage,
     [MOVE_EFFECT_ITEM_MESSAGE] = HandleSetEffectItemMessage,
     [SECRET_POWER_ATK_MINUS_1] = HandleSetEffectNone,
@@ -1480,6 +1551,9 @@ static inline bool32 IgnoreTargetingForMoveEffect(enum MoveEffect moveEffect) //
     case MOVE_EFFECT_GRASSY_TERRAIN:
     case MOVE_EFFECT_ELECTRIC_TERRAIN:
     case MOVE_EFFECT_PSYCHIC_TERRAIN:
+    case MOVE_EFFECT_UBW:
+    case MOVE_EFFECT_DARKNESS_TERRAIN:
+    case MOVE_EFFECT_MIASMA_TERRAIN:
     case MOVE_EFFECT_DEFOG:
     case MOVE_EFFECT_ION_DELUGE:
     case MOVE_EFFECT_HAZE:

@@ -668,7 +668,7 @@ static bool32 HandleEndTurnPoison(enum BattlerId battler)
         }
         else if (isToxicPoison)
         {
-            u32 side = (BATTLE_OPPOSITE(GetBattlerPosition(battler))) & BIT_SIDE;
+            u32 side = GetBattlerSide(battler);
             u32 opposite1 = GetBattlerAtPosition(side);
             u32 opposite2 = GetBattlerAtPosition(side + BIT_FLANK);
             u32 catalystExtraDamage = GetNonDynamaxMaxHP(battler) / 8;
@@ -687,7 +687,7 @@ static bool32 HandleEndTurnPoison(enum BattlerId battler)
         }
         else
         {
-            u32 side = (BATTLE_OPPOSITE(GetBattlerPosition(battler))) & BIT_SIDE;
+            u32 side = GetBattlerSide(battler);
             u32 opposite1 = GetBattlerAtPosition(side);
             u32 opposite2 = GetBattlerAtPosition(side + BIT_FLANK);
             u32 catalystExtraDamage = GetNonDynamaxMaxHP(battler) / 8;

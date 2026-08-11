@@ -698,13 +698,19 @@ BattleScript_MoveEffectScreens::
 	return
 
 BattleScript_MoveEffectSafeguard::
+	saveattacker
+	copybyte gBattlerAttacker, gEffectBattler
 	printfromtable gReflectLightScreenSafeguardStringIds
 	waitmessage B_WAIT_TIME_LONG
+	restoreattacker
 	return
 
 BattleScript_MoveEffectMist::
+	saveattacker
+	copybyte gBattlerAttacker, gEffectBattler
 	printfromtable gReflectLightScreenSafeguardStringIds
 	waitmessage B_WAIT_TIME_LONG
+	restoreattacker
 	return
 
 BattleScript_StuffCheeks::
@@ -3950,7 +3956,6 @@ BattleScript_WishMegaEvolution::
 
 BattleScript_WishMegaEvolutionIllya::
 	flushtextbox
-	trytrainerslidemegaevolutionmsg
 	printstring STRINGID_FERVENTWISHREACHED
 	waitmessage B_WAIT_TIME_LONG
 	handleformchange BS_SCRIPTING, 0
@@ -3960,6 +3965,7 @@ BattleScript_WishMegaEvolutionIllya::
 	printstring STRINGID_TRANSFORMEDINTOZWEIFORM
 	waitmessage B_WAIT_TIME_LONG
 	switchinabilities BS_SCRIPTING
+	effectsafterformchange
 	end3
 
 BattleScript_PrimalReversion::
@@ -6771,7 +6777,6 @@ BattleScript_EffectUehehehehehe::
 
 BattleScript_EffectUeheheheheheFoe::
 	attackcanceler
-	accuracycheck
 	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_AromaVeilProtects
 	tryinfatuating BattleScript_ButItFailed
 	attackanimation

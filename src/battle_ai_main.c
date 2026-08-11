@@ -6337,7 +6337,7 @@ static s32 AI_HPAware(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum
         if ((effect == EFFECT_HEAL_PULSE || effect == EFFECT_HIT_ENEMY_HEAL_ALLY)
          || (moveType == TYPE_ELECTRIC && gAiLogicData->abilities[GetPartnerBattler(battlerAtk)] == ABILITY_VOLT_ABSORB)
          || (moveType == TYPE_GROUND && gAiLogicData->abilities[GetPartnerBattler(battlerAtk)] == ABILITY_EARTH_EATER)
-         || (moveType == TYPE_NEW_EARTH && gAiLogicData->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_SCULPTOR_GOD)
+         || (moveType == TYPE_NEW_EARTH && gAiLogicData->abilities[GetPartnerBattler(battlerAtk)] == ABILITY_SCULPTOR_GOD)
          || ((moveType == TYPE_NEW_DIVINE || moveType == TYPE_NEW_DARK) && gAiLogicData->abilities[GetPartnerBattler(battlerAtk)] == ABILITY_MAKAI_GODDESS)
          || ((moveType == TYPE_NEW_NETHER || moveType == TYPE_NEW_NATURE) && gAiLogicData->abilities[GetPartnerBattler(battlerAtk)] == ABILITY_SAIGYOUJI_AYAKASHI)
          || (moveType == TYPE_WATER && (gAiLogicData->abilities[GetPartnerBattler(battlerAtk)] == ABILITY_DRY_SKIN || gAiLogicData->abilities[GetPartnerBattler(battlerAtk)] == ABILITY_WATER_ABSORB)))

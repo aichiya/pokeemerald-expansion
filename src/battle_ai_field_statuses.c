@@ -494,11 +494,12 @@ static enum FieldEffectOutcome BenefitsFromUBW(enum BattlerId battler)
     bool32 grounded = AI_IsBattlerGrounded(battler);
     bool32 allyGrounded = FALSE;
     if (HasPartner(battler))
-        allyGrounded = AI_IsBattlerGrounded(BATTLE_PARTNER(battler));
+        allyGrounded = AI_IsBattlerGrounded(GetPartnerBattler(battler));
 
     // harass miasma
     if ((grounded || allyGrounded) 
-        && (HasDamagingMoveOfType(LEFT_FOE(battler), TYPE_NEW_MIASMA) || HasDamagingMoveOfType(RIGHT_FOE(battler), TYPE_NEW_MIASMA)))
+        && (HasDamagingMoveOfType(GetBattlerLeftFoe(battler), TYPE_NEW_MIASMA)
+        || HasDamagingMoveOfType(GetBattlerRightFoe(battler), TYPE_NEW_MIASMA)))
         return FIELD_EFFECT_POSITIVE;
 
     if (grounded && HasDamagingMoveOfType(battler, TYPE_NEW_STEEL))
@@ -516,11 +517,12 @@ static enum FieldEffectOutcome BenefitsFromDarknessTerrain(enum BattlerId battle
     bool32 grounded = AI_IsBattlerGrounded(battler);
     bool32 allyGrounded = FALSE;
     if (HasPartner(battler))
-        allyGrounded = AI_IsBattlerGrounded(BATTLE_PARTNER(battler));
+        allyGrounded = AI_IsBattlerGrounded(GetPartnerBattler(battler));
 
     // harass divine
     if ((grounded || allyGrounded) 
-        && (HasDamagingMoveOfType(LEFT_FOE(battler), TYPE_NEW_DIVINE) || HasDamagingMoveOfType(RIGHT_FOE(battler), TYPE_NEW_DIVINE)))
+        && (HasDamagingMoveOfType(GetBattlerLeftFoe(battler), TYPE_NEW_DIVINE)
+        || HasDamagingMoveOfType(GetBattlerRightFoe(battler), TYPE_NEW_DIVINE)))
         return FIELD_EFFECT_POSITIVE;
 
     if (grounded && HasDamagingMoveOfType(battler, TYPE_NEW_DARK))
@@ -537,10 +539,11 @@ static enum FieldEffectOutcome BenefitsFromMiasmaTerrain(enum BattlerId battler)
     bool32 grounded = AI_IsBattlerGrounded(battler);
     bool32 allyGrounded = FALSE;
     if (HasPartner(battler))
-        allyGrounded = AI_IsBattlerGrounded(BATTLE_PARTNER(battler));
+        allyGrounded = AI_IsBattlerGrounded(GetPartnerBattler(battler));
 
     // harass steel
-    if (HasDamagingMoveOfType(LEFT_FOE(battler), TYPE_NEW_STEEL) || HasDamagingMoveOfType(RIGHT_FOE(battler), TYPE_NEW_STEEL))
+    if (HasDamagingMoveOfType(GetBattlerLeftFoe(battler), TYPE_NEW_STEEL)
+    || HasDamagingMoveOfType(GetBattlerRightFoe(battler), TYPE_NEW_STEEL))
         return FIELD_EFFECT_POSITIVE;
 
     if (HasDamagingMoveOfType(battler, TYPE_NEW_MIASMA))

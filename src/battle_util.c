@@ -3257,8 +3257,8 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 party = GetBattlerParty(battler);
                 mon = &party[gBattlerPartyIndexes[battler]];
 
-                if (IsBattlerAlive(BATTLE_PARTNER(battler)))
-                    partnerMon = &party[gBattlerPartyIndexes[BATTLE_PARTNER(battler)]];
+                if (IsBattlerAlive(GetPartnerBattler(battler)))
+                    partnerMon = &party[gBattlerPartyIndexes[GetPartnerBattler(battler)]];
                 else
                     partnerMon = mon;
 
@@ -3501,7 +3501,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 enum BattlerId opposingBattler;
                 u32 opposingDef = 0, opposingSpDef = 0, userAtk = 0, userSpAtk = 0, physicalRatio = 0, specialRatio = 0;
 
-                opposingBattler = BATTLE_OPPOSITE(battler);
+                opposingBattler = GetOppositeBattler(battler);
                 for (i = 0; i < 2; opposingBattler ^= BIT_FLANK, i++)
                 {
                     if (IsBattlerAlive(opposingBattler))
@@ -3781,10 +3781,10 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                     BattleScriptCall(BattleScript_DeusExMachinaWishInitiate);
                     effect++;
                 }
-                if (IsBattlerAlive(BATTLE_OPPOSITE(battler)))
+                if (IsBattlerAlive(GetOppositeBattler(battler)))
                 {
                     gBattlerAttacker = battler;
-                    gBattlerTarget = BATTLE_OPPOSITE(battler);
+                    gBattlerTarget = GetOppositeBattler(battler);
                     if (gBattleStruct->futureSight[gBattlerTarget].counter == 0)
                     {
                         gCurrentMove = MOVE_DOOM_DESIRE;
@@ -3840,7 +3840,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             {
                 SaveBattlerAttacker(gBattlerAttacker);
                 gBattlerAttacker = gBattleScripting.battler = battler;
-                gBattlerTarget = GetOpposingSideBattler(gBattlerAttacker);
+                gBattlerTarget = GetOppositeBattler(gBattlerAttacker);
                 
                 u8 targetSide = GetBattlerSide(gBattlerTarget);
                 u8 attackerSide = GetBattlerSide(gBattlerAttacker);
@@ -4391,11 +4391,6 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 enum Stat stat;
                 gBattleMons[battler].volatiles.embodyAspectActivated = TRUE;
 
-                attakerSide = GetBattlerSide(gBattlerAttacker);
-                oppositeSide = GetOpposingSideBattler(gBattlerAttacker);
-                oppositeDef = GetOppositeBattler(gBattlerAttacker);
-                oppositeDefPartner = GetPartnerBattler(oppositeDef);
-
                 if (gLastUsedAbility == ABILITY_EMBODY_ASPECT_HEARTHFLAME_MASK)
                     stat = STAT_ATK;
                 else if (gLastUsedAbility == ABILITY_EMBODY_ASPECT_WELLSPRING_MASK)
@@ -4517,7 +4512,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
                 break;
             case ABILITY_HEALING_GRACE:
-                if (gBattleMons[battler].status1 & STATUS1_ANY || gBattleMons[BATTLE_PARTNER(battler)].status1 & STATUS1_ANY)
+                if (gBattleMons[battler].status1 & STATUS1_ANY || gBattleMons[GetPartnerBattler(battler)].status1 & STATUS1_ANY)
                 {
                     BattleScriptExecute(BattleScript_HealingGraceActivates);
                     gBattleScripting.battler = battler;
@@ -5748,7 +5743,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 {
                     enum BattlerId oppositeBattler = GetOppositeBattler(battler);
                     enum BattlerId oppositeBattlerPartner = GetPartnerBattler(oppositeBattler);
-                    if (i == BATTLE_PARTNER(battler))
+                    if (i == GetPartnerBattler(battler))
                         continue;
 
                     if (i == battler)

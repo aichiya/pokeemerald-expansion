@@ -1066,7 +1066,7 @@ static bool32 ShouldSwitchIfManaDisturptorBenefit(struct SwitchAiContext *switch
     if (!(gAiThinkingStruct->aiFlags[switchContext->battler] & AI_FLAG_SMART_SWITCHING))
         return FALSE;
 
-    enum BattlerId opposingPartner = BATTLE_PARTNER(switchContext->opposingBattler);
+    enum BattlerId opposingPartner = GetPartnerBattler(switchContext->opposingBattler);
     bool32 hasValidTarget = FALSE;
 
     if (IsBattlerAlive(switchContext->opposingBattler))
@@ -1134,7 +1134,7 @@ static bool32 ShouldSwitchIfMisfortuneAuraBenefit(struct SwitchAiContext *switch
     if (!(gAiThinkingStruct->aiFlags[switchContext->battler] & AI_FLAG_SMART_SWITCHING))
         return FALSE;
 
-    enum BattlerId opposingPartner = BATTLE_PARTNER(switchContext->opposingBattler);
+    enum BattlerId opposingPartner = GetPartnerBattler(switchContext->opposingBattler);
     bool32 hasValidTarget = FALSE;
 
     if (IsBattlerAlive(switchContext->opposingBattler))

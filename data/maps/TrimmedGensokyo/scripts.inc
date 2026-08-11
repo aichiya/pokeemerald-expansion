@@ -17,7 +17,7 @@ TrimmedGensokyo_EventScript_Debug1::
 	delay 30
 	setflag FLAG_DYNAMAX_BATTLE
 	setflag FLAG_CUSTOM_BGM_BATTLE
-	setvar VAR_SETTING_MUSIC, MUS_ETC_BINTANG_KEHIDUPAN
+	setvar VAR_SETTING_MUSIC, MUS_FATE_HAKUNO_FATAL_BATTLE
 @	multi_2_vs_2 TRAINER_PLACEHOLDER_855, AnotherWorldGensokyo_Text_UdaDefeat, TRAINER_PLACEHOLDER_856, AnotherWorldGensokyo_Text_TenchoDefeat, PARTNER_TH_MARISA
 	trainerbattle_no_intro TRAINER_MIRROR_OPPOSITE_GENDER, TrimmedGensokyo_Text_Debug1_2
 @	setflag FLAG_CUSTOM_BGM_BATTLE

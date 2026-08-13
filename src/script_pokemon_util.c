@@ -395,23 +395,6 @@ u32 ScriptGiveMonParameterized(u8 side, u8 slot, struct PokemonTemplate *monTemp
     return MON_GIVEN_TO_PARTY;
 }
 
-static u32 ScriptGiveMonParameterizedGift1(u8 side, u8 slot, struct PokemonTemplate *monTemplate)
-{
-    struct Pokemon mon;
-
-    CreateMonGift1FromTemplate(&mon, monTemplate);
-
-    if (side == B_SIDE_PLAYER)
-        return GiveScriptedMonToPlayer(&mon, slot);
-
-    assertf(slot < PARTY_SIZE, "invalid slot: %d", slot)
-    {
-        return MON_CANT_GIVE;
-    }
-    CopyMon(&gParties[B_TRAINER_OPPONENT_A][slot], &mon, sizeof(struct Pokemon));
-    return MON_GIVEN_TO_PARTY;
-}
-
 u32 ScriptGiveMon(enum Species species, u8 level, enum Item item)
 {
     struct Pokemon mon;
@@ -495,74 +478,6 @@ void ScrCmd_createmon(struct ScriptContext *ctx)
     monTemplate.ignoreTotalEvCheck = flags >> 26;
 
     gSpecialVar_Result = ScriptGiveMonParameterized(side, slot, &monTemplate);
-}
-
-#undef PARSE_FLAG
-
-#define PARSE_FLAG(n, default_) (flags & (1 << (n))) ? VarGet(ScriptReadHalfword(ctx)) : (default_)
-
-void ScrCmd_createmongift1(struct ScriptContext *ctx)
-{
-    u32 i;
-    u8 side                   = ScriptReadByte(ctx);
-    u8 slot                   = ScriptReadByte(ctx);
-
-    struct PokemonTemplate monTemplate = {0};
-    monTemplate.species      = VarGet(ScriptReadHalfword(ctx));
-    monTemplate.level        = VarGet(ScriptReadHalfword(ctx));
-
-    u32 flags                 = ScriptReadWord(ctx);
-    monTemplate.heldItem     = PARSE_FLAG(0, ITEM_NONE);
-    if (flags & (1 << 1))
-    {
-        monTemplate.ball = VarGet(ScriptReadHalfword(ctx));
-        monTemplate.doNotUseDefaultBall = TRUE;
-    }
-    monTemplate.nature       = PARSE_FLAG(2, NATURE_RANDOM);
-    if (flags & (1 << 3))
-    {
-        monTemplate.abilityNum = VarGet(ScriptReadHalfword(ctx));
-        monTemplate.doNotUseDefaultAbility = TRUE;
-    }
-    monTemplate.gender       = PARSE_FLAG(4, MON_GENDER_RANDOM);
-
-    for (i = 0; i < NUM_STATS; i++)
-        monTemplate.evs[i]   = PARSE_FLAG(5 + i, 0);
-
-    for (i = 0; i < NUM_STATS; i++)
-        monTemplate.ivs[i]   = PARSE_FLAG(11 + i, USE_RANDOM_IVS);
-
-    for (i = 0; i < MAX_MON_MOVES; i++)
-        monTemplate.moves[i] = PARSE_FLAG(17 + i, MOVE_DEFAULT);
-
-    if (flags & (1 << 21))
-    {
-        monTemplate.isShiny = VarGet(ScriptReadHalfword(ctx));
-        monTemplate.doNotUseDefaultShinyness = TRUE;
-    }
-
-    monTemplate.gmaxFactor   = PARSE_FLAG(22, FALSE);
-    if (flags & (1 << 23))
-    {
-        monTemplate.teraType = VarGet(ScriptReadHalfword(ctx));
-        monTemplate.doNotUseDefaultTeraType = TRUE;
-    }
-    monTemplate.dmaxLevel    = PARSE_FLAG(24, 0);
-    monTemplate.isEgg        = PARSE_FLAG(25, FALSE);
-    if (side == B_SIDE_PLAYER)
-    {
-        Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
-        monTemplate.origin = GIFTMON_ORIGIN;
-    }
-    else
-    {
-        Script_RequestEffects(SCREFF_V1);
-        monTemplate.origin = STATIC_WILDMON_ORIGIN;
-    }
-
-    monTemplate.ignoreTotalEvCheck = flags >> 26;
-
-    gSpecialVar_Result = ScriptGiveMonParameterizedGift1(side, slot, &monTemplate);
 }
 
 #undef PARSE_FLAG

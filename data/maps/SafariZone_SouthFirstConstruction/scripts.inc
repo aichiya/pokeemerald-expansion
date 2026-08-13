@@ -40,6 +40,8 @@ SafariZone_SouthFirstConstruction_Movement_ExitAttendantBlockDoor:
 SafariZone_SouthFirstConstruction_EventScript_ExitAttendant::
 	lock
 	faceplayer
+	getpartysize
+	goto_if_eq VAR_RESULT, 0, SafariZone_SouthFirstConstruction_EventScript_GoodLuck
 	goto_if_unset FLAG_GOOD_LUCK_SAFARI_ZONE, SafariZone_SouthFirstConstruction_EventScript_GoodLuck
 	msgbox SafariZone_South_Text_StillHaveTimeExit, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, SafariZone_SouthFirstConstruction_EventScript_ExitEarly

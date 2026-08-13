@@ -636,9 +636,9 @@ EventScript_NicePhraseChallenge_GiveGift1_Giving_CheckParty::
 EventScript_NicePhraseChallenge_GiveGift1_Giving_GiveMon::
     setvar VAR_GIFTMON_VERSION_SETTING VERSION_GAMECUBE
 	setvar VAR_GIFTMON_METLOC_SETTING 162
-@    givemongift1 species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, ggMaxFactor, teraType
+@    givemon species:req, level:req, item, ball, nature, abilityNum, gender, hpEv, atkEv, defEv, speedEv, spAtkEv, spDefEv, hpIv, atkIv, defIv, speedIv, spAtkIv, spDefIv, move1, move2, move3, move4, isShiny, ggMaxFactor, teraType
 	setflag FLAG_FORCE_SHINY
-	givemongift1 SPECIES_DRAGONITE, 55, ITEM_MICLE_BERRY, ITEM_POKE_BALL, 3, 2, 255, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_EXTREMESPEED, MOVE_DRAGON_DANCE, MOVE_OUTRAGE, MOVE_BRAVE_BIRD, 0, 0, 0
+	givemon SPECIES_DRAGONITE, 55, ITEM_MICLE_BERRY, ITEM_POKE_BALL, 3, 2, 255, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_EXTREMESPEED, MOVE_DRAGON_DANCE, MOVE_OUTRAGE, MOVE_BRAVE_BIRD, 0, 0, 0
     clearflag FLAG_FORCE_SHINY
 	playfanfare MUS_OBTAIN_ITEM
 	setflag FLAG_NICE_PHRASE_GIFT1

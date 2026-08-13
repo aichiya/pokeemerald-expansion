@@ -8657,3 +8657,456 @@ void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *mo
     CalculateMonStats(mon);
     TryFormChange(mon, FORM_CHANGE_ITEM_HOLD, B_TRAINER_PLAYER);
 }
+
+void CreateMonGift1FromTemplate(struct Pokemon *mon, const struct PokemonTemplate *monTemplate)
+{
+    enum Species species = ResolveSpecies(monTemplate->species);
+    u8 level = ResolveLevel(monTemplate->level);
+    u32 personality = ResolvePersonality(species, monTemplate->gender, monTemplate->nature, monTemplate->origin);
+    CreateMon(mon, species, level, personality, OTID_STRUCT_PLAYER_ID);
+
+    enum Item heldItem = ResolveHeldItem(monTemplate->heldItem);
+    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+
+    if (monTemplate->doNotUseDefaultBall)
+    {
+        enum PokeBall ball = ResolveBall(monTemplate->ball);
+        SetMonData(mon, MON_DATA_POKEBALL, &ball);
+    }
+
+    if (monTemplate->doNotUseDefaultShinyness && monTemplate->isShiny != SHINY_MODE_RANDOM)
+    {
+        bool32 isShiny = ResolveShinyness(monTemplate->isShiny);
+        SetMonData(mon, MON_DATA_IS_SHINY, &isShiny);
+    }
+
+    if (monTemplate->doNotUseDefaultAbility)
+    {
+        u8 abilityNum = ResolveAbility(species, monTemplate->abilityNum);
+        SetMonData(mon, MON_DATA_ABILITY_NUM, &abilityNum);
+    }
+
+    u8 ivs[NUM_STATS];
+    u8 evs[NUM_STATS];
+    ResolveIVs(species, monTemplate->ivs, ivs);
+    ResolveEVs(monTemplate->evs, evs, monTemplate->ignoreTotalEvCheck);
+    for (u32 i = 0; i < NUM_STATS; i++)
+    {
+        SetMonData(mon, MON_DATA_HP_IV + i, &ivs[i]);
+        SetMonData(mon, MON_DATA_HP_EV + i, &evs[i]);
+    }
+
+    enum Move moves[MAX_MON_MOVES];
+    ResolveMoves(species, level, monTemplate->moves, moves);
+    for (u32 i = 0; i < MAX_MON_MOVES; i++)
+    {
+        SetMonMoveSlot(mon, moves[i], i);
+    }
+
+    u32 dmaxLevel = ResolveDynamaxLevel(monTemplate->dmaxLevel);
+    SetMonData(mon, MON_DATA_DYNAMAX_LEVEL, &dmaxLevel);
+
+    bool32 gmaxFactor = ResolveGmaxFactor(monTemplate->gmaxFactor);
+    SetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR, &gmaxFactor);
+
+    if (monTemplate->doNotUseDefaultTeraType)
+    {
+        enum Type teraType = ResolveTeraType(monTemplate->teraType);
+        SetMonData(mon, MON_DATA_TERA_TYPE, &teraType);
+    }
+
+    // assign gift parameters
+    if(VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_SPECIAL_GIFT)
+    {
+        if(VarGet(VAR_GIFTMON_OT_SETTING) == 255)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+            SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+            u8 location = 255;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        if(VarGet(VAR_GIFTMON_OT_SETTING) == 254)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_Aichiya);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 254;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 253)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_Ame);
+            bool8 otGenderGift = 1;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 253;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }   
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 252)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_BlueShell);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 252;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 251)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_Machomuu);
+            bool8 otGenderGift = 1;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 251;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 250)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gJPText_Elgrete);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 250;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+            u8 language = LANGUAGE_JAPANESE;
+            SetMonData(mon, MON_DATA_LANGUAGE, &language);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 249)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gJPText_RF);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 249;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+            u8 language = LANGUAGE_JAPANESE;
+            SetMonData(mon, MON_DATA_LANGUAGE, &language);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 248)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gJPText_Hemoguro);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 248;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+            u8 language = LANGUAGE_JAPANESE;
+            SetMonData(mon, MON_DATA_LANGUAGE, &language);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 247)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_DSlayer);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 247;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 246)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_Tye);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 246;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 245)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_Gemini);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 245;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 244)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gJPText_eggf);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 244;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+            u8 language = LANGUAGE_JAPANESE;
+            SetMonData(mon, MON_DATA_LANGUAGE, &language);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 243)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_ZetaSukuna);
+            bool8 otGenderGift = 1;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 243;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 242)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_Agastya);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 242;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 241)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gJPText_ZUN);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 241;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+            u8 language = LANGUAGE_JAPANESE;
+            SetMonData(mon, MON_DATA_LANGUAGE, &language);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 240)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_Nemoma);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 240;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 1)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_OTNameGold);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 1;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 2)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_OTNameSilver);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 2;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 3)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_OTNameWakaba);
+            bool8 otGenderGift = 1;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 3;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 4)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_OTNameIllusionaryGirl);
+            bool8 otGenderGift = 1;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 4;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 5)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_OTNameMiki);
+            bool8 otGenderGift = 1;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 5;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 6)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_OTNameReimu);
+            bool8 otGenderGift = 1;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 6;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 7)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_OTNameVIVIT);
+            bool8 otGenderGift = 1;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 7;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 10)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gText_Tsukasa);
+            bool8 otGenderGift = 0;
+            SetMonData(mon, MON_DATA_OT_GENDER, &otGenderGift);
+            u8 location = 10;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 1412)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+            SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+            u8 location = 222;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            enum PokeBall ball = BALL_BEAST;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 69)
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+            SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+            u8 location = MAPSEC_ETC_TRIMMED_GENSOKYO;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            u8 gameMet = VERSION_ZERO;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+        else
+        {
+            SetMonData(mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+            SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
+            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
+            u8 location = VarGet(VAR_GIFTMON_OT_SETTING);
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);            
+            enum PokeBall ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        }
+    }
+    else if (VarGet(VAR_GIFTMON_VERSION_SETTING) != VERSION_EMERALD)
+    {
+        SetMonData(mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+        SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+        u8 gameMet = VarGet(VAR_GIFTMON_VERSION_SETTING);
+        SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        if (VarGet(VAR_GIFTMON_METLOC_SETTING) != 0)
+        {
+            u8 metLocation = VarGet(VAR_GIFTMON_METLOC_SETTING);
+            SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
+        }
+    }
+    else
+    {
+        SetMonData(mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
+        SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+    }
+    u8 hasModernFatefulEncounter = TRUE;
+    SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &hasModernFatefulEncounter);
+    VarSet(VAR_GIFTMON_OT_SETTING, 0);
+    VarSet(VAR_GIFTMON_VERSION_SETTING, 0);
+    VarSet(VAR_GIFTMON_METLOC_SETTING, 0);
+
+    if (monTemplate->isDebugMon)
+    {
+        u8 gameMet = VERSION_IDENTIFIER_DEBUG;
+        SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+        enum PokeBall ball = BALL_MASTER;
+        SetMonData(mon, MON_DATA_POKEBALL, &ball);
+    }
+
+    bool32 isEgg = ResolveIsEgg(monTemplate->isEgg);
+    SetMonData(mon, MON_DATA_IS_EGG, &isEgg);
+
+    CalculateMonStats(mon);
+    TryFormChange(mon, FORM_CHANGE_ITEM_HOLD, B_TRAINER_PLAYER);
+}

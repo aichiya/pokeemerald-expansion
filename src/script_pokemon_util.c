@@ -395,476 +395,11 @@ u32 ScriptGiveMonParameterized(u8 side, u8 slot, struct PokemonTemplate *monTemp
     return MON_GIVEN_TO_PARTY;
 }
 
-static u32 ScriptGiveMonParameterizedGift1(u8 side, u8 slot, enum Species species, u8 level, enum Item item, enum PokeBall ball, u8 nature, u8 abilityNum, u8 gender, u16 *evs, u16 *ivs, u16 *moves, enum ShinyMode shinyMode, bool8 gmaxFactor, enum Type teraType, u8 dmaxLevel)
+static u32 ScriptGiveMonParameterizedGift1(u8 side, u8 slot, struct PokemonTemplate *monTemplate)
 {
     struct Pokemon mon;
-    u32 i;
-    u8 genderRatio = gSpeciesInfo[species].genderRatio;
-    u16 targetSpecies;
-    bool32 isShiny;
 
-    u32 personality = GetMonPersonality(species, gender, nature, RANDOM_UNOWN_LETTER);
-    CreateMon(&mon, species, level, personality, OTID_STRUCT_PLAYER_ID);
-
-    // shininess
-    if (shinyMode == SHINY_MODE_ALWAYS || (P_FLAG_FORCE_SHINY != 0 && FlagGet(P_FLAG_FORCE_SHINY)))
-        isShiny = TRUE;
-    else if (shinyMode == SHINY_MODE_NEVER || (P_FLAG_FORCE_NO_SHINY != 0 && FlagGet(P_FLAG_FORCE_NO_SHINY)))
-        isShiny = FALSE;
-    else
-        isShiny = GetMonData(&mon, MON_DATA_IS_SHINY);
-
-    SetMonData(&mon, MON_DATA_IS_SHINY, &isShiny);
-
-    // gigantamax factor
-    SetMonData(&mon, MON_DATA_GIGANTAMAX_FACTOR, &gmaxFactor);
-
-    // Dynamax Level
-    SetMonData(&mon, MON_DATA_DYNAMAX_LEVEL, &dmaxLevel);
-
-    // tera type
-    if (teraType == TYPE_NONE || teraType == TYPE_MYSTERY || teraType >= NUMBER_OF_MON_TYPES)
-        teraType = GetTeraTypeFromPersonality(&mon);
-    SetMonData(&mon, MON_DATA_TERA_TYPE, &teraType);
-
-    // EV and IV
-    for (i = 0; i < NUM_STATS; i++)
-    {
-        // EV
-        if (evs[i] <= MAX_PER_STAT_EVS)
-            SetMonData(&mon, MON_DATA_HP_EV + i, &evs[i]);
-
-        // IV
-        if (ivs[i] <= MAX_PER_STAT_IVS)
-            SetMonData(&mon, MON_DATA_HP_IV + i, &ivs[i]);
-    }
-    CalculateMonStats(&mon);
-
-    // moves
-    for (i = 0; i < MAX_MON_MOVES; i++)
-    {
-        if (moves[i] == MOVE_NONE)
-            break;
-        if (moves[i] < MOVES_COUNT)
-        {
-            SetMonMoveSlot(&mon, moves[i], i);
-        }
-        else if (moves[i] == MOVE_DEFAULT)
-        {
-            GiveMonDefaultMove(&mon, slot);
-            continue;
-        }
-        else
-        {
-            assertf(FALSE, "invalid move: %d", moves[i]) {}
-        }
-    }
-
-    // ability
-    if (abilityNum != NUM_ABILITY_PERSONALITY)
-    {
-        assertf(abilityNum < NUM_ABILITY_SLOTS && GetAbilityBySpecies(species, abilityNum) != ABILITY_NONE,
-                "invalid ability num %d for species %d", abilityNum, species)
-        {
-            // If the ability num is invalid, we loop to find a valid one
-            do {
-                abilityNum = Random() % NUM_ABILITY_SLOTS; // includes hidden abilities
-            } while (GetAbilityBySpecies(species, abilityNum) == ABILITY_NONE);
-        }
-        SetMonData(&mon, MON_DATA_ABILITY_NUM, &abilityNum);
-    }
-
-    // ball
-    if (ball > POKEBALL_COUNT)
-        ball = BALL_POKE;
-    SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-
-    // held item
-    SetMonData(&mon, MON_DATA_HELD_ITEM, &item);
-
-    // In case a mon with a form changing item is given. Eg: SPECIES_ARCEUS_NORMAL with ITEM_SPLASH_PLATE will transform into SPECIES_ARCEUS_WATER upon gifted.
-    TryFormChange(&mon, FORM_CHANGE_ITEM_HOLD, B_TRAINER_PLAYER);
-
-    // assign gift parameters
-    if(VarGet(VAR_GIFTMON_VERSION_SETTING) == VERSION_IDENTIFIER_SPECIAL_GIFT)
-    {
-        if(VarGet(VAR_GIFTMON_OT_SETTING) == 255)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
-            SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
-            u8 location = 255;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        if(VarGet(VAR_GIFTMON_OT_SETTING) == 254)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_Aichiya);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 254;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 253)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_Ame);
-            bool8 otGenderGift = 1;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 253;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }   
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 252)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_BlueShell);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 252;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 251)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_Machomuu);
-            bool8 otGenderGift = 1;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 251;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 250)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gJPText_Elgrete);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 250;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-            u8 language = LANGUAGE_JAPANESE;
-            SetMonData(&mon, MON_DATA_LANGUAGE, &language);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 249)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gJPText_RF);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 249;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-            u8 language = LANGUAGE_JAPANESE;
-            SetMonData(&mon, MON_DATA_LANGUAGE, &language);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 248)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gJPText_Hemoguro);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 248;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-            u8 language = LANGUAGE_JAPANESE;
-            SetMonData(&mon, MON_DATA_LANGUAGE, &language);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 247)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_DSlayer);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 247;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 246)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_Tye);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 246;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 245)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_Gemini);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 245;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 244)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gJPText_eggf);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 244;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-            u8 language = LANGUAGE_JAPANESE;
-            SetMonData(&mon, MON_DATA_LANGUAGE, &language);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 243)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_ZetaSukuna);
-            bool8 otGenderGift = 1;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 243;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 242)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_Agastya);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 242;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 241)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gJPText_ZUN);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 241;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-            u8 language = LANGUAGE_JAPANESE;
-            SetMonData(&mon, MON_DATA_LANGUAGE, &language);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 240)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_Nemoma);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 240;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 1)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_OTNameGold);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 1;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 2)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_OTNameSilver);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 2;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 3)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_OTNameWakaba);
-            bool8 otGenderGift = 1;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 3;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 4)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_OTNameIllusionaryGirl);
-            bool8 otGenderGift = 1;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 4;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 5)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_OTNameMiki);
-            bool8 otGenderGift = 1;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 5;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 6)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_OTNameReimu);
-            bool8 otGenderGift = 1;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 6;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 7)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_OTNameVIVIT);
-            bool8 otGenderGift = 1;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 7;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 10)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gText_Tsukasa);
-            bool8 otGenderGift = 0;
-            SetMonData(&mon, MON_DATA_OT_GENDER, &otGenderGift);
-            u8 location = 10;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 1412)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
-            SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
-            u8 location = 222;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            ball = BALL_BEAST;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else if (VarGet(VAR_GIFTMON_OT_SETTING) == 69)
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
-            SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
-            u8 location = MAPSEC_ETC_TRIMMED_GENSOKYO;
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
-            u8 gameMet = VERSION_ZERO;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-        else
-        {
-            SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
-            SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
-            VarSet(VAR_GIFTMON1_IDENTIFIER, 254);
-            VarSet(VAR_GIFTMON2_IDENTIFIER, 10);
-            u8 location = VarGet(VAR_GIFTMON_OT_SETTING);
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &location);            
-            ball = BALL_CHERISH;
-            SetMonData(&mon, MON_DATA_POKEBALL, &ball);
-            u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
-            SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        }
-    }
-    else if (VarGet(VAR_GIFTMON_VERSION_SETTING) != VERSION_EMERALD)
-    {
-        SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
-        SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
-        u8 gameMet = VarGet(VAR_GIFTMON_VERSION_SETTING);
-        SetMonData(&mon, MON_DATA_MET_GAME, &gameMet);
-        if (VarGet(VAR_GIFTMON_METLOC_SETTING) != 0)
-        {
-            u8 metLocation = VarGet(VAR_GIFTMON_METLOC_SETTING);
-            SetMonData(&mon, MON_DATA_MET_LOCATION, &metLocation);
-        }
-    }
-    else
-    {
-        SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
-        SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
-    }
-    u8 hasModernFatefulEncounter = TRUE;
-    SetMonData(&mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &hasModernFatefulEncounter);
-    VarSet(VAR_GIFTMON_OT_SETTING, 0);
-    VarSet(VAR_GIFTMON_VERSION_SETTING, 0);
-    VarSet(VAR_GIFTMON_METLOC_SETTING, 0);
+    CreateMonGift1FromTemplate(&mon, monTemplate);
 
     if (side == B_SIDE_PLAYER)
         return GiveScriptedMonToPlayer(&mon, slot);
@@ -891,18 +426,6 @@ u32 ScriptGiveMon(enum Species species, u8 level, enum Item item)
     }
 
     return GiveScriptedMonToPlayer(&mon, PARTY_SIZE);
-}
-
-u32 ScriptGiveMonDebugSimple(enum Species species, u8 level, enum Item item)
-{
-    u16 evs[NUM_STATS]        = {0, 0, 0, 0, 0, 0};
-    u16 ivs[NUM_STATS]        = {MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1,   // We pass "MAX_PER_STAT_IVS + 1" here to ensure that
-                                MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1, MAX_PER_STAT_IVS + 1};  // ScriptGiveMonParameterized won't touch the stats' IV.
-    u16 moves[MAX_MON_MOVES] = {MOVE_NONE, MOVE_NONE, MOVE_NONE, MOVE_NONE};
-    u8 slot                  = gPartiesCount[B_TRAINER_PLAYER];
-    
-    VarSet(VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_DEBUG);
-    return ScriptGiveMonParameterizedGift1(B_SIDE_PLAYER, slot, species, level, item, BALL_MASTER, NATURE_RANDOM, NUM_ABILITY_PERSONALITY, MON_GENDER_RANDOM, evs, ivs, moves, SHINY_MODE_RANDOM, FALSE, NUMBER_OF_MON_TYPES, 10);
 }
 
 #define PARSE_FLAG(n, default_) (flags & (1 << (n))) ? VarGet(ScriptReadHalfword(ctx)) : (default_)
@@ -980,92 +503,66 @@ void ScrCmd_createmon(struct ScriptContext *ctx)
 
 void ScrCmd_createmongift1(struct ScriptContext *ctx)
 {
-    u8 side            = ScriptReadByte(ctx);
-    u8 slot            = ScriptReadByte(ctx);
-    enum Species species = VarGet(ScriptReadHalfword(ctx));
-    u8 level           = VarGet(ScriptReadHalfword(ctx));
-
-    u32 flags          = ScriptReadWord(ctx);
-    enum Item item     = PARSE_FLAG(0, ITEM_NONE);
-    enum PokeBall ball = PARSE_FLAG(1, BALL_POKE);
-    u8 nature          = PARSE_FLAG(2, NATURE_RANDOM);
-    u8 abilityNum      = PARSE_FLAG(3, NUM_ABILITY_PERSONALITY);
-    u8 gender          = PARSE_FLAG(4, MON_GENDER_RANDOM);
-
     u32 i;
-    u16 evs[NUM_STATS];
+    u8 side                   = ScriptReadByte(ctx);
+    u8 slot                   = ScriptReadByte(ctx);
+
+    struct PokemonTemplate monTemplate = {0};
+    monTemplate.species      = VarGet(ScriptReadHalfword(ctx));
+    monTemplate.level        = VarGet(ScriptReadHalfword(ctx));
+
+    u32 flags                 = ScriptReadWord(ctx);
+    monTemplate.heldItem     = PARSE_FLAG(0, ITEM_NONE);
+    if (flags & (1 << 1))
+    {
+        monTemplate.ball = VarGet(ScriptReadHalfword(ctx));
+        monTemplate.doNotUseDefaultBall = TRUE;
+    }
+    monTemplate.nature       = PARSE_FLAG(2, NATURE_RANDOM);
+    if (flags & (1 << 3))
+    {
+        monTemplate.abilityNum = VarGet(ScriptReadHalfword(ctx));
+        monTemplate.doNotUseDefaultAbility = TRUE;
+    }
+    monTemplate.gender       = PARSE_FLAG(4, MON_GENDER_RANDOM);
+
     for (i = 0; i < NUM_STATS; i++)
-    {
-        evs[i] = PARSE_FLAG(5 + i, 0);
-        assertf(evs[i] <= MAX_PER_STAT_EVS, "invalid ev value of %d above maximum of %d", evs[i], MAX_PER_STAT_EVS)
-        {
-            evs[i] = MAX_PER_STAT_EVS;
-        }
-    }
+        monTemplate.evs[i]   = PARSE_FLAG(5 + i, 0);
 
-    u16 ivs[NUM_STATS];
-    u32 nonFixedIvCount = 0;
-    enum Stat availableIVs[NUM_STATS];
-    enum Stat selectedIvs[NUM_STATS];
     for (i = 0; i < NUM_STATS; i++)
-    {
-        ivs[i] = PARSE_FLAG(11 + i, USE_RANDOM_IVS);
-        assertf(ivs[i] <= USE_RANDOM_IVS, "invalid iv value of %d above maximum of %d", ivs[i], MAX_PER_STAT_IVS)
-        {
-            ivs[i] = MAX_PER_STAT_IVS;
-        }
-        if (ivs[i] == USE_RANDOM_IVS)
-        {
-            availableIVs[nonFixedIvCount] = i;
-            ivs[i] = Random() % (MAX_PER_STAT_IVS + 1);
-            nonFixedIvCount++;
-        }
-    }
+        monTemplate.ivs[i]   = PARSE_FLAG(11 + i, USE_RANDOM_IVS);
 
-    // Perfect IV calculation
-    if (gSpeciesInfo[species].perfectIVCount != 0)
-    {
-        // Select the IVs that will be perfected.
-        for (i = 0; i < nonFixedIvCount && i < gSpeciesInfo[species].perfectIVCount; i++)
-        {
-            u8 index = Random() % (nonFixedIvCount - i);
-            selectedIvs[i] = availableIVs[index];
-            RemoveIVIndexFromList(availableIVs, index);
-        }
-        for (i = 0; i < nonFixedIvCount && i < gSpeciesInfo[species].perfectIVCount; i++)
-        {
-            ivs[selectedIvs[i]] = MAX_PER_STAT_IVS;
-        }
-    }
-
-    enum Move moves[MAX_MON_MOVES];
     for (i = 0; i < MAX_MON_MOVES; i++)
-        moves[i] = PARSE_FLAG(17 + i, MOVE_DEFAULT);
+        monTemplate.moves[i] = PARSE_FLAG(17 + i, MOVE_DEFAULT);
 
-    enum ShinyMode shinyMode = PARSE_FLAG(21, SHINY_MODE_RANDOM);
-    bool8 gmaxFactor         = PARSE_FLAG(22, FALSE);
-    enum Type teraType       = PARSE_FLAG(23, NUMBER_OF_MON_TYPES);
-    u8 dmaxLevel             = PARSE_FLAG(24, 0);
-    bool8 isEgg              = PARSE_FLAG(25, FALSE);
+    if (flags & (1 << 21))
+    {
+        monTemplate.isShiny = VarGet(ScriptReadHalfword(ctx));
+        monTemplate.doNotUseDefaultShinyness = TRUE;
+    }
 
-    enum GeneratedMonOrigin origin;
-    if (side == 0)
+    monTemplate.gmaxFactor   = PARSE_FLAG(22, FALSE);
+    if (flags & (1 << 23))
+    {
+        monTemplate.teraType = VarGet(ScriptReadHalfword(ctx));
+        monTemplate.doNotUseDefaultTeraType = TRUE;
+    }
+    monTemplate.dmaxLevel    = PARSE_FLAG(24, 0);
+    monTemplate.isEgg        = PARSE_FLAG(25, FALSE);
+    if (side == B_SIDE_PLAYER)
     {
         Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
-        origin = GIFTMON_ORIGIN;
+        monTemplate.origin = GIFTMON_ORIGIN;
     }
     else
     {
         Script_RequestEffects(SCREFF_V1);
-        origin = STATIC_WILDMON_ORIGIN;
+        monTemplate.origin = STATIC_WILDMON_ORIGIN;
     }
 
-    if (gender == MON_GENDER_MAY_CUTE_CHARM)
-        gender = GetSynchronizedGender(origin, species);
-    if (nature == NATURE_MAY_SYNCHRONIZE)
-        nature = GetSynchronizedNature(origin, species);
+    monTemplate.ignoreTotalEvCheck = flags >> 26;
 
-    gSpecialVar_Result = ScriptGiveMonParameterizedGift1(side, slot, species, level, item, ball, nature, abilityNum, gender, evs, ivs, moves, shinyMode, gmaxFactor, teraType, dmaxLevel);
+    gSpecialVar_Result = ScriptGiveMonParameterizedGift1(side, slot, &monTemplate);
 }
 
 #undef PARSE_FLAG

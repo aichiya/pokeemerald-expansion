@@ -202,7 +202,7 @@ static bool32 HandleEndTurnWeatherDamage(enum BattlerId battler)
              && !IsBattlerAtMaxHp(battler)
              && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
              && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
-             && !gBattleMons[battler].volatiles.healBlock)
+             && !gBattleMons[battler].volatiles.healBlockTimer)
             {
                 BattleScriptPushCursorAndCallback(BattleScript_ExShadowSkyHeal);
                 SetHealAmount(battler, GetNonDynamaxMaxHP(battler) / 16);
@@ -229,7 +229,7 @@ static bool32 HandleEndTurnWeatherDamage(enum BattlerId battler)
              && !IsBattlerAtMaxHp(battler)
              && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERGROUND
              && gBattleMons[battler].volatiles.semiInvulnerable != STATE_UNDERWATER
-             && !gBattleMons[battler].volatiles.healBlock)
+             && !gBattleMons[battler].volatiles.healBlockTimer)
             {
                 BattleScriptPushCursorAndCallback(BattleScript_ExShadowSkyHeal);
                 gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
@@ -624,7 +624,7 @@ static bool32 HandleEndTurnLeechSeed(enum BattlerId battler)
      && IsBattlerAlive(gBattleMons[battler].volatiles.leechSeed - 1)
      && GetBattlerAbility(battler) == ABILITY_FANTASY_BREAKER)
     {
-       if (!IsBattlerAtMaxHp(battler) && !gBattleMons[battler].volatiles.healBlock)
+       if (!IsBattlerAtMaxHp(battler) && !gBattleMons[battler].volatiles.healBlockTimer)
        {
            gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
            if (gBattleStruct->moveDamage[battler] == 0)

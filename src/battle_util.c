@@ -4479,7 +4479,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             case ABILITY_HIBERNATION:
                 if (gBattleMons[battler].status1 & STATUS1_SLEEP
                  && !IsBattlerAtMaxHp(battler)
-                 && !gBattleMons[battler].volatiles.healBlock)
+                 && !gBattleMons[battler].volatiles.healBlockTimer)
                 {
                     SetHealAmount(battler, GetNonDynamaxMaxHP(battler) / 8);
                     BattleScriptExecute(BattleScript_AbilityHpHeal);
@@ -4489,7 +4489,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             case ABILITY_AUTUMN_GODDESSES:
                 if (IsBattlerWeatherAffected(GetBattlerHoldEffect(battler), GetWeather(), B_WEATHER_SUN)
                  && !IsBattlerAtMaxHp(battler)
-                 && !gBattleMons[battler].volatiles.healBlock)
+                 && !gBattleMons[battler].volatiles.healBlockTimer)
                 {
                     BattleScriptPushCursorAndCallback(BattleScript_AutumnGoddessesHealingActivates);
                     gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
@@ -4570,7 +4570,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 break;
             case ABILITY_LIFE_FORCE:
                 if (!IsBattlerAtMaxHp(battler)
-                 && !gBattleMons[battler].volatiles.healBlock)
+                 && !gBattleMons[battler].volatiles.healBlockTimer)
                 {
                     BattleScriptPushCursorAndCallback(BattleScript_LifeForceActivates);
                     gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 16;
@@ -5807,7 +5807,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             {
                 gBattleMons[battler].volatiles.activateHealingSaint = FALSE;
 
-                if (gBattleMons[battler].volatiles.healBlock)
+                if (gBattleMons[battler].volatiles.healBlockTimer)
                 {
                     SaveBattlerAttacker(battler);
                     gBattleScripting.battler = battler;
@@ -5934,7 +5934,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                         SetPassiveDamageAmount(gBattlerAttacker, devourAmount);
                         BattleScriptCall(BattleScript_DevourLiquidOoze);
                     }
-                    else if ((gBattleMons[gBattlerAttacker].volatiles.healBlock))
+                    else if ((gBattleMons[gBattlerAttacker].volatiles.healBlockTimer))
                     {
                         BattleScriptCall(BattleScript_DevourHealBlock);
                     }

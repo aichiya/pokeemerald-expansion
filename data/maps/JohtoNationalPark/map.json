@@ -3,10 +3,9 @@
   "name": "JohtoNationalPark",
   "layout": "LAYOUT_JOHTO_NATIONAL_PARK",
   "music": "MUS_HG_NATIONAL_PARK",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_JOHTO_NATIONAL_PARK",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY",
+  "weather": "WEATHER_PINK_LEAVES",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": false,
   "allow_escaping": false,
@@ -252,5 +251,6 @@
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

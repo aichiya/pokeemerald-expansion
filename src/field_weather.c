@@ -1255,6 +1255,7 @@ static const u8 sWeatherNames[WEATHER_COUNT][24] = {
     [WEATHER_DROUGHT]            = _("DROUGHT"),
     [WEATHER_DOWNPOUR]           = _("DOWNPOUR"),
     [WEATHER_UNDERWATER_BUBBLES] = _("UNDERWATER BUBBLES"),
+    [WEATHER_PINK_LEAVES]        = _("SPRING BREEZE"),
     [WEATHER_LIGHT_ORB_UP]       = _("LIGHT ORBS UP"),
     [WEATHER_ABNORMAL]           = _("ABNORMAL(NOT WORKING)"),
     [WEATHER_ROUTE119_CYCLE]     = _("ROUTE119 CYCLE"),

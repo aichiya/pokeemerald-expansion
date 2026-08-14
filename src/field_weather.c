@@ -144,6 +144,7 @@ static const struct WeatherCallbacks sWeatherFuncs[] =
     [WEATHER_DROUGHT]            = {Drought_InitVars,       Drought_Main,       Drought_InitAll,       Drought_Finish},
     [WEATHER_DOWNPOUR]           = {Downpour_InitVars,      Thunderstorm_Main,  Downpour_InitAll,      Thunderstorm_Finish},
     [WEATHER_UNDERWATER_BUBBLES] = {Bubbles_InitVars,       Bubbles_Main,       Bubbles_InitAll,       Bubbles_Finish},
+    [WEATHER_PINK_LEAVES]        = {CommonLeaves_InitVars,    PinkLeaves_Main,    PinkLeaves_InitAll,    PinkLeaves_Finish},
     [WEATHER_LIGHT_ORB_UP]       = {LightOrbs_InitVars,     LightOrbs_Main,     LightOrbs_InitAll,     LightOrbs_Finish},
 };
 
@@ -218,6 +219,8 @@ void StartWeather(void)
         gWeatherPtr->sandstormSpritesCreated = 0;
         gWeatherPtr->sandstormSwirlSpritesCreated = 0;
         gWeatherPtr->bubblesSpritesCreated = 0;
+        gWeatherPtr->leafVisibleCounter = 0;
+        gWeatherPtr->leafSpriteCount = 0;
         gWeatherPtr->lightorbSpriteCount = 0;
         gWeatherPtr->lightenedFogSpritePalsCount = 0;
         Weather_SetBlendCoeffs(16, 0);
@@ -395,6 +398,8 @@ static void FadeInScreenWithWeather(void)
     case WEATHER_SANDSTORM:
     case WEATHER_FOG_DIAGONAL:
     case WEATHER_UNDERWATER:
+    case WEATHER_PINK_LEAVES:
+    case WEATHER_LIGHT_ORB_UP:
     default:
         if (!gPaletteFade.active)
         {
@@ -1097,6 +1102,12 @@ static void UNUSED SetFieldWeather(u8 weather)
         break;
     case COORD_EVENT_WEATHER_SHADE:
         SetWeather(WEATHER_SHADE);
+        break;
+    case COORD_EVENT_WEATHER_PINK_LEAVES:
+        SetWeather(WEATHER_PINK_LEAVES);
+        break;
+    case COORD_EVENT_WEATHER_LIGHT_ORB_UP:
+        SetWeather(WEATHER_LIGHT_ORB_UP);
         break;
     }
 }

@@ -11656,7 +11656,7 @@ enum MoveTarget GetBattlerMoveSelectionTargetType(enum BattlerId battler, enum M
     enum BattleMoveEffects effect = GetMoveEffect(move);
     if (effect == EFFECT_CURSE && !IS_BATTLER_OF_TYPE(battler, TYPE_NEW_NETHER))
         return TARGET_USER;
-    if (effect == EFFECT_TERA_STARSTORM && 
+    if (effect == EFFECT_TERA_STARSTORM 
      && (gBattleMons[battler].species == SPECIES_ETC_NEPTUNE_GODDESS
      || gBattleMons[battler].species == SPECIES_ETC_NEPGEAR_GODDESS
      || gBattleMons[battler].species == SPECIES_ETC_ARCEUS_TH))

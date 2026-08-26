@@ -121,6 +121,21 @@ enum BattlerId GetBattlerRightFoe(enum BattlerId battler)
     return GetPartnerBattler(GetBattlerLeftFoe(battler));
 }
 
+enum BattlerId GetDefaultSelectionTarget(enum BattlerId battler, enum MoveTarget moveTarget)
+{
+    switch (moveTarget)
+    {
+    case TARGET_USER:
+    case TARGET_USER_OR_ALLY:
+    case TARGET_USER_AND_ALLY:
+        return battler;
+    case TARGET_ALLY:
+        return GetPartnerBattler(battler);
+    default:
+        return GetBattlerLeftFoe(battler);
+    }
+}
+
 static const u8 sPkblToEscapeFactor[][3] = {
     {
         [B_MSG_MON_CURIOUS]    = 0,
@@ -11636,17 +11651,26 @@ static u32 CanBattlerHitBothFoesInTerrain(enum BattlerId battler, enum Move move
         && IsBattlerTerrainAffected(battler, GetBattlerAbility(battler), GetBattlerHoldEffect(battler), GetMoveTerrainBoost_Terrain(move), gFieldTimers.terrain);
 }
 
-enum MoveTarget GetBattlerMoveTargetType(enum BattlerId battler, enum Move move)
+enum MoveTarget GetBattlerMoveSelectionTargetType(enum BattlerId battler, enum Move move)
 {
     enum BattleMoveEffects effect = GetMoveEffect(move);
     if (effect == EFFECT_CURSE && !IS_BATTLER_OF_TYPE(battler, TYPE_NEW_NETHER))
         return TARGET_USER;
-    if (CanBattlerHitBothFoesInTerrain(battler, move, effect))
-        return TARGET_BOTH;
-    if (effect == EFFECT_TERA_STARSTORM && GetActiveGimmick(battler) == GIMMICK_TERA)
+    if (effect == EFFECT_TERA_STARSTORM && 
+     && (gBattleMons[battler].species == SPECIES_ETC_NEPTUNE_GODDESS
+     || gBattleMons[battler].species == SPECIES_ETC_NEPGEAR_GODDESS
+     || gBattleMons[battler].species == SPECIES_ETC_ARCEUS_TH))
         return TARGET_BOTH;
 
     return GetMoveTarget(move);
+}
+
+enum MoveTarget GetBattlerMoveTargetType(enum BattlerId battler, enum Move move)
+{
+    if (CanBattlerHitBothFoesInTerrain(battler, move, GetMoveEffect(move)))
+        return TARGET_BOTH;
+
+    return GetBattlerMoveSelectionTargetType(battler, move);
 }
 
 bool32 CanTargetBattler(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)

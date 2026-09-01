@@ -3310,7 +3310,8 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
          && (atkPartnerHoldEffect == HOLD_EFFECT_SCOPE_LENS
           || IS_BATTLER_OF_TYPE(battlerAtkPartner, TYPE_NEW_HEART)
           || GetMoveCriticalHitStage(aiData->partnerMove) > 0
-          || HasMoveWithCriticalHitChance(battlerAtkPartner)))
+          || HasMoveWithCriticalHitChance(battlerAtkPartner)
+          || ShouldBoostCritRate(battlerAtkPartner, battlerDef)))
         {
             ADJUST_SCORE(GOOD_EFFECT);
         }
@@ -4673,12 +4674,16 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             ADJUST_SCORE(GOOD_EFFECT);
         break;
     case EFFECT_FOCUS_ENERGY:
-    case EFFECT_LASER_FOCUS:
         if (aiData->abilities[battlerAtk] == ABILITY_SUPER_LUCK
          || aiData->abilities[battlerAtk] == ABILITY_SNIPER
          || aiData->abilities[battlerAtk] == ABILITY_ASSASSIN_SENSE
          || aiData->holdEffects[battlerAtk] == HOLD_EFFECT_SCOPE_LENS
          || HasMoveWithFlag(battlerAtk, GetMoveCriticalHitStage))
+            ADJUST_SCORE(GOOD_EFFECT); // fall through
+    case EFFECT_LASER_FOCUS:
+        if (aiData->abilities[battlerAtk] == ABILITY_SNIPER)
+            ADJUST_SCORE(GOOD_EFFECT); // fall through
+        if (ShouldBoostCritRate(battlerAtk, battlerDef))
             ADJUST_SCORE(GOOD_EFFECT);
         break;
     case EFFECT_CONFUSE:
@@ -5779,6 +5784,13 @@ static s32 AI_CalcAdditionalEffectScore(enum BattlerId battlerAtk, enum BattlerI
                     ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, stat, stage));
                 }
                 break;
+            case MOVE_EFFECT_CRIT_PLUS_SIDE:
+            {
+                if (ShouldBoostCritRate(battlerAtk, battlerDef) && gBattleMons[battlerAtk].volatiles.bonusCritStages < 3)
+                    score +=10;
+                
+                break;
+            }
             case MOVE_EFFECT_ORDER_UP:
             {
                 enum Stat stat = STAT_ATK;

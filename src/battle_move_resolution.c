@@ -4490,7 +4490,8 @@ static enum MoveEndResult MoveEndFaintBlock(struct BattleCalcValues *cv)
                  && IsBattlerTurnDamaged(battlerDef, EXCLUDING_SUBSTITUTES)
                  && IsBattlerAlive(cv->battlerAtk)
                  && GetActiveGimmick(cv->battlerAtk) != GIMMICK_DYNAMAX
-                 && !IsBattlerAlly(cv->battlerAtk, battlerDef))
+                 && !IsBattlerAlly(cv->battlerAtk, battlerDef)
+                 && GetBattlerAbility(cv->battlerAtk) != ABILITY_FANTASY_BREAKER)
                 {
                     gBattleStruct->passiveHpUpdate[cv->battlerAtk] = gBattleMons[cv->battlerAtk].hp;
                     BattleScriptCall(BattleScript_DestinyBondTakesLife);
@@ -5045,7 +5046,7 @@ static enum MoveEndResult MoveEndMoveBlockRecoil(struct BattleCalcValues *cv)
     case EFFECT_EX_SHADOW_MOVE_RECOIL:
         if (IsBattlerTurnDamaged(cv->battlerDef, EXCLUDING_SUBSTITUTES) && IsBattlerAlive(cv->battlerAtk) && gBattleStruct->moveDamage[cv->battlerDef] > 0)
         {
-            SetPassiveDamageAmount(cv->battlerAtk, gBattleScripting.savedDmg * max(1, GetMoveRecoil(cv->move)) / 100);
+            SetPassiveDamageAmount(cv->battlerAtk, gBattleStruct->accumulatedDamage * max(1, GetMoveRecoil(cv->move)) / 100);
             BattleScriptCall(BattleScript_MoveEffectRecoil);
             result = MOVEEND_RESULT_RUN_SCRIPT;
         }

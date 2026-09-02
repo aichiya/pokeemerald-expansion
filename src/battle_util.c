@@ -5352,7 +5352,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
              && IsBattlerAlive(battler)
              && !CanBattlerAvoidContactEffects(gBattlerAttacker, battler, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker), move)
              && !gBattleMons[gBattlerAttacker].volatiles.perishSong
-			 && GetBattlerAbility(gBattlerAttacker) != ABILITY_FANTASY_BREAKER))
+			 && GetBattlerAbility(gBattlerAttacker) != ABILITY_FANTASY_BREAKER)
             {
                 if (!gBattleMons[battler].volatiles.perishSong)
                 {

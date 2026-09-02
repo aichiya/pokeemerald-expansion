@@ -1,6 +1,6 @@
 // Only list base species here.
 /*
-const u16 gPokedexOrder_Alphabetical[] =
+const enum NationalDexOrder gPokedexOrder_Alphabetical[] =
 {
     NATIONAL_DEX_ABOMASNOW,
     NATIONAL_DEX_ABRA,
@@ -1054,7 +1054,7 @@ const u16 gPokedexOrder_Alphabetical[] =
     NATIONAL_DEX_ZYGARDE,
 };
 
-const u16 gPokedexOrder_Weight[] =
+const enum NationalDexOrder gPokedexOrder_Weight[] =
 {
     // 0.0 - 21.8 lbs / 0.0 - 9.9 kg
     NATIONAL_DEX_GASTLY,
@@ -2935,7 +2935,7 @@ const u16 gPokedexOrder_Weight[] =
     NATIONAL_DEX_CELESTEELA,
 };
 
-const u16 gPokedexOrder_Height[] =
+const enum NationalDexOrder gPokedexOrder_Height[] =
 {
     // 0'04" / 0.1m
     NATIONAL_DEX_JOLTIK,
@@ -4310,7 +4310,7 @@ const u16 gPokedexOrder_Height[] =
 };
 */
 
-const u16 gPokedexOrder_Alphabetical[] =
+const enum NationalDexOrder gPokedexOrder_Alphabetical[] =
 {
     NATIONAL_DEX_ABRA,
     NATIONAL_DEX_AERODACTYL,
@@ -4942,8 +4942,7 @@ const u16 gPokedexOrder_Alphabetical[] =
     NATIONAL_DEX_ZUBAT,
 };
 
-
-const u16 gPokedexOrder_Weight[] =
+const enum NationalDexOrder gPokedexOrder_Weight[] =
 {
     NATIONAL_DEX_ETC_MISSINGNO,
     NATIONAL_DEX_TH_DAIYOUSEI,
@@ -5575,7 +5574,7 @@ const u16 gPokedexOrder_Weight[] =
     NATIONAL_DEX_ETC_CURE_UNION,
 };
 
-const u16 gPokedexOrder_Height[] =
+const enum NationalDexOrder gPokedexOrder_Height[] =
 {
     NATIONAL_DEX_ETC_MISSINGNO,
     NATIONAL_DEX_TH_ALICE,

@@ -3194,6 +3194,17 @@ static void PrintTextOnWindowToFit(u8 windowId, const u8 *string, u8 x, u8 y, u8
     PrintTextOnWindowToFitPx(windowId, string, x, y, lineSpacing, colorId, WindowWidthPx(windowId));
 }
 
+static void PrintTextOnWindowToFitPx_NarrowerFont(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId, u32 width)
+{
+    u32 fontId = GetFontIdToFit(string, FONT_NARROWER, 0, width);
+    PrintTextOnWindowWithFont(windowId, string, x, y, lineSpacing, colorId, fontId);
+}
+
+static void PrintTextOnWindowToFit_NarrowerFont(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId)
+{
+    PrintTextOnWindowToFitPx_NarrowerFont(windowId, string, x, y, lineSpacing, colorId, WindowWidthPx(windowId));
+}
+
 static void PrintMonInfo(void)
 {
     FillWindowPixelBuffer(PSS_LABEL_WINDOW_PORTRAIT_DEX_NUMBER, PIXEL_FILL(0));
@@ -3611,9 +3622,9 @@ static void PrintMonAbilityDescription(void)
     enum Ability ability = GetAbilityBySpecies(sMonSummaryScreen->summary.species, sMonSummaryScreen->summary.abilityNum);
 
     if (BXPY_ShouldHideEnemyAbility(sMonSummaryScreen->mode))
-        PrintTextOnWindowToFit(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY), COMPOUND_STRING("???"), 0, 17, 0, 0);
+        PrintTextOnWindowToFit_NarrowerFont(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY), COMPOUND_STRING("???"), 0, 17, 0, 0);
     else
-        PrintTextOnWindowToFit(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY), gAbilitiesInfo[ability].description, 0, 17, 0, 0);
+        PrintTextOnWindowToFit_NarrowerFont(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY), gAbilitiesInfo[ability].description, 0, 17, 0, 0);
 }
 
 static void BufferMonTrainerMemo(void)
@@ -8679,9 +8690,9 @@ static void PrintMoveNameAndPP(u8 moveIndex)
     {
         pp = CalculatePPWithBonus(move, summary->ppBonuses, moveIndex);
         if (BXPY_ShouldHideEnemyMoves(sMonSummaryScreen->mode))
-            PrintTextOnWindowToFit(moveNameWindowId, COMPOUND_STRING("???"), 0, moveIndex * 16 + 1, 0, 1);
+            PrintTextOnWindowToFit_NarrowerFont(moveNameWindowId, COMPOUND_STRING("???"), 0, moveIndex * 16 + 1, 0, 1);
         else
-            PrintTextOnWindowToFit(moveNameWindowId, GetMoveName(move), 0, moveIndex * 16 + 1, 0, 1);
+            PrintTextOnWindowToFit_NarrowerFont(moveNameWindowId, GetMoveName(move), 0, moveIndex * 16 + 1, 0, 1);
 
         if (BXPY_ShouldHideEnemyMoves(sMonSummaryScreen->mode))
         {
@@ -8815,7 +8826,7 @@ static void PrintContestMoveDescription(u8 moveSlot)
     if (move != MOVE_NONE)
     {
         u8 windowId = AddWindowFromTemplateList(sPageMovesTemplate, PSS_DATA_WINDOW_MOVE_DESCRIPTION);
-        PrintTextOnWindowToFit(windowId, gContestEffects[GetMoveContestEffect(move)].description, 6, 1, 0, 0);
+        PrintTextOnWindowToFit_NarrowerFont(windowId, gContestEffects[GetMoveContestEffect(move)].description, 6, 1, 0, 0);
     }
 }
 
@@ -8831,16 +8842,16 @@ static void PrintMoveDetails(enum Move move)
                 ShowCategoryIcon(GetBattleMoveCategory(move));
             PrintMovePowerAndAccuracy(move);
         if (BXPY_ShouldHideEnemyMoves(sMonSummaryScreen->mode))
-            PrintTextOnWindow(windowId, COMPOUND_STRING("???"), 6, 1, 0, 0);
+            PrintTextOnWindowToFit_NarrowerFont(windowId, COMPOUND_STRING("???"), 6, 1, 0, 0);
         else
-            PrintTextOnWindow(windowId, GetMoveDescription(move), 6, 1, 0, 0);
+            PrintTextOnWindowToFit_NarrowerFont(windowId, GetMoveDescription(move), 6, 1, 0, 0);
         }
         else
         {
         if (BXPY_ShouldHideEnemyMoves(sMonSummaryScreen->mode))
-            PrintTextOnWindowToFit(windowId, COMPOUND_STRING("???"), 6, 1, 0, 0);
+            PrintTextOnWindowToFit_NarrowerFont(windowId, COMPOUND_STRING("???"), 6, 1, 0, 0);
         else
-            PrintTextOnWindowToFit(windowId, gContestEffects[GetMoveContestEffect(move)].description, 6, 1, 0, 0);
+            PrintTextOnWindowToFit_NarrowerFont(windowId, gContestEffects[GetMoveContestEffect(move)].description, 6, 1, 0, 0);
         }
         PutWindowTilemap(windowId);
     }
@@ -8866,9 +8877,9 @@ static void PrintNewMoveDetailsOrCancelText(void)
         enum Move move = sMonSummaryScreen->newMove;
 
         if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)
-            PrintTextOnWindowToFit(windowId1, GetMoveName(move), 0, 65, 0, 6);
+            PrintTextOnWindowToFit_NarrowerFont(windowId1, GetMoveName(move), 0, 65, 0, 6);
         else
-            PrintTextOnWindowToFit(windowId1, GetMoveName(move), 0, 65, 0, 5);
+            PrintTextOnWindowToFit_NarrowerFont(windowId1, GetMoveName(move), 0, 65, 0, 5);
 
         ConvertIntToDecimalStringN(gStringVar1, GetMovePP(move), STR_CONV_MODE_RIGHT_ALIGN, 2);
         DynamicPlaceholderTextUtil_Reset();

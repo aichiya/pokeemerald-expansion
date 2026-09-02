@@ -1621,7 +1621,10 @@ static void BXPY_PrintEnemyName(enum BXPYWindows windowId)
     u32 windowWidth = TILE_SIZE_1BPP * GetWindowAttribute(windowId, WINDOW_WIDTH);
     u32 trainerId = BXPY_IsOnPartnerPage() ? TRAINER_BATTLE_PARAM.opponentB : TRAINER_BATTLE_PARAM.opponentA;
 
-    StringCopy(gStringVar4, GetTrainerNameFromId(trainerId));
+    if (trainerId == TRAINER_MIRROR_SAME_GENDER || trainerId == TRAINER_MIRROR_OPPOSITE_GENDER)
+        StringCopy(gStringVar4, gSaveBlock2Ptr->playerName);
+    else
+        StringCopy(gStringVar4, GetTrainerNameFromId(trainerId));
     fontId = GetFontIdToFit(gStringVar4,fontId,letterSpacing,windowWidth);
     u32 x = GetStringRightAlignXOffset(fontId,gStringVar4,windowWidth);
 

@@ -233,7 +233,8 @@ Debug_EventScript_Script_6::
 	setflag FLAG_CUSTOM_BGM_BATTLE
 	setvar VAR_TRAINER_MIRROR_CHECK_LEVEL, 3
 	setvar VAR_SETTING_MUSIC, MUS_PKMN_FAIYA_RED_S_334_VS_OAK
-	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
+@	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
+	bringxpicky BXPY_BATTLE_DOUBLE, 6, 4, TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2, TRAINER_NONE, NULL, PARTNER_NONE
 	release
 	end
 

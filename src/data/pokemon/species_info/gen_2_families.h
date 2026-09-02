@@ -1810,7 +1810,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #endif
         .evYield_SpAttack = 2,
         .evYield_SpDefense = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 10,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
@@ -9160,7 +9160,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .expYield = 163,
         .evYield_Defense = 2,
         .itemRare = ITEM_METAL_COAT,
-        .genderRatio = PERCENT_FEMALE(50),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,

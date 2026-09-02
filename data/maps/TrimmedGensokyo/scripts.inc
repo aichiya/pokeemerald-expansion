@@ -17,9 +17,10 @@ TrimmedGensokyo_EventScript_Debug1::
 	delay 30
 	setflag FLAG_DYNAMAX_BATTLE
 	setflag FLAG_CUSTOM_BGM_BATTLE
-	setvar VAR_SETTING_MUSIC, MUS_FATE_HAKUNO_FATAL_BATTLE
+	setvar VAR_SETTING_MUSIC, MUS_ETC_X_VS_Z
 @	multi_2_vs_2 TRAINER_PLACEHOLDER_855, AnotherWorldGensokyo_Text_UdaDefeat, TRAINER_PLACEHOLDER_856, AnotherWorldGensokyo_Text_TenchoDefeat, PARTNER_TH_MARISA
-	trainerbattle_no_intro TRAINER_MIRROR_OPPOSITE_GENDER, TrimmedGensokyo_Text_Debug1_2
+	bringxpicky BXPY_BATTLE_DOUBLE, 6, 4, TRAINER_MIRROR_OPPOSITE_GENDER, TrimmedGensokyo_Text_Debug1_2, TRAINER_NONE, NULL, PARTNER_NONE
+@	trainerbattle_no_intro TRAINER_MIRROR_OPPOSITE_GENDER, TrimmedGensokyo_Text_Debug1_2
 @	setflag FLAG_CUSTOM_BGM_BATTLE
 @	setvar VAR_SETTING_MUSIC, MUS_ILLYA_SHOUJO_YO_HOSHI_NI_NARE
 @	setvar VAR_SECRET_BASE_PSEUDO_TRAINER_NUM, PSEUDO_TRAINER_MIRROR_OPPOSITE_GENDER_CHECK_PARTY_LEVEL
@@ -35,7 +36,7 @@ TrimmedGensokyo_EventScript_Debug1::
 	
 TrimmedGensokyo_Text_Debug1_1:
 	.string "Test:\n"
-	.string "Pseudo Secret Base Trainer Battle.$"
+	.string "Tournament Mode Mirror Battle.$"
     
 TrimmedGensokyo_Text_Debug1_2:
 	.string "I'm not feeling very good.$"

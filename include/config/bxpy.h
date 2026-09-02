@@ -48,13 +48,13 @@
 #define BXPY_RETAIN_CHANGES                             FALSE             // When TRUE, after battle, any changes that occured to the participating Pokemon is retained. This includes changes in HP, PP, Experience, Level, or even Evolution.
 
 #define B_VAR_BXPY                                      B_VAR_SKY_BATTLE  // This var is used to maintain BXPY_RETAIN_CHANGES.
-#define B_FLAG_BXPY                                     0                 // This flag is used to manage BXPY mode's interaction with other features.
+#define B_FLAG_BXPY                                     FLAG_ENABLE_BXPY_BATTLE // This flag is used to manage BXPY mode's interaction with other features.
 
 
 // Bring X Pick Y Comestic Configurations
 #define BXPY_SKIN                                       GEN_3             // This changes the graphical skin that the BXPY menu uses. The currently only valid values are GEN_3 or GEN_CHAMPIONS. If an invalid value is used, the game will fall back to GEN_3.
 #define BXPY_SCROLLING_BACKGROUND                       TRUE              // When TRUE, the background on the BXPY menu will scroll. This config only has an effect when BXPY_SKIN == GEN_CHAMPIONS.
-#define MUS_BXPY_BACKGROUND                             MUS_B_DOME_LOBBY
+#define MUS_BXPY_BACKGROUND                             MUS_TH_SELECTION
 #define SE_BXPY_GENERIC                                 SE_SELECT
 #define SE_BXPY_ERROR                                   SE_BOO
 #define SE_BXPY_SWITCH_PAGE                             SE_ROTATING_GATE

@@ -118,6 +118,7 @@ void BattleDebug_WonBattle(void);
 bool32 InBattleChoosingMoves();
 bool32 InBattleRunningActions();
 s32 Factorial(s32 n);
+void InitializeStartingStatus(void);
 
 extern struct MultiPartnerMenuPokemon *gMultiPartnerParty;
 

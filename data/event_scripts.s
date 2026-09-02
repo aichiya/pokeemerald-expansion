@@ -76,6 +76,7 @@
 #include "constants/weather.h"
 #include "constants/region_map_sections.h"
 #include "constants/speaker_names.h"
+#include "constants/bxpy.h" 
 	.include "asm/macros.inc"
 	.include "asm/macros/event.inc"
 	.include "constants/constants.inc"
@@ -1767,470 +1768,238 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
 	.include "data/scripts/wild_encounter.inc"
+	.include "data/scripts/bxpy.inc" 
 
 	.include "data/maps/SafariZone_SouthFirstConstruction/scripts.inc"
-
 	.include "data/maps/JohtoRoute47/scripts.inc"
-
 	.include "data/maps/JohtoRoute41/scripts.inc"
-
 	.include "data/maps/JohtoRoute40/scripts.inc"
-
 	.include "data/maps/JohtoRoute49/scripts.inc"
-
 	.include "data/maps/JohtoRoute50/scripts.inc"
-
 	.include "data/maps/TrimmedGensokyo/scripts.inc"
-
 	.include "data/maps/JohtoRoute51/scripts.inc"
-
 	.include "data/maps/JohtoRoute39/scripts.inc"
-
 	.include "data/maps/JohtoRoute38/scripts.inc"
-
 	.include "data/maps/JohtoRoute37/scripts.inc"
-
 	.include "data/maps/JohtoRoute36/scripts.inc"
-
 	.include "data/maps/JohtoRoute35/scripts.inc"
-
 	.include "data/maps/JohtoRoute34/scripts.inc"
-
 	.include "data/maps/JohtoGoldenrodDome/scripts.inc"
-
 	.include "data/maps/JohtoRoute32/scripts.inc"
-
 	.include "data/maps/JohtoRoute33/scripts.inc"
-
 	.include "data/maps/JohtoIlexForestOuter/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph/scripts.inc"
-
 	.include "data/maps/JohtoRoute42/scripts.inc"
-
 	.include "data/maps/JohtoRoute43/scripts.inc"
-
 	.include "data/maps/JohtoRoute44/scripts.inc"
-
 	.include "data/maps/JohtoRoute31/scripts.inc"
-
 	.include "data/maps/JohtoRoute30/scripts.inc"
-
 	.include "data/maps/JohtoRoute29/scripts.inc"
-
 	.include "data/maps/JohtoRoute46/scripts.inc"
-
 	.include "data/maps/JohtoRoute45/scripts.inc"
-
 	.include "data/maps/JohtoRoute27/scripts.inc"
-
 	.include "data/maps/JohtoRoute26/scripts.inc"
-
 	.include "data/maps/JohtoRoute28/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiRoad/scripts.inc"
-
 	.include "data/maps/GensokyoNorthernRoad1/scripts.inc"
-
 	.include "data/maps/GensokyoNorthernRoad2/scripts.inc"
-
 	.include "data/maps/GensokyoNorthernRoad3/scripts.inc"
-
 	.include "data/maps/GensokyoNorthernRoad4/scripts.inc"
-
 	.include "data/maps/GensokyoMistyLake/scripts.inc"
-
 	.include "data/maps/GensokyoWesternRoad1/scripts.inc"
-
 	.include "data/maps/GensokyoWesternRoad2/scripts.inc"
-
 	.include "data/maps/GensokyoBambooForestOuter/scripts.inc"
-
 	.include "data/maps/GensokyoRoadOfReconsideration1/scripts.inc"
-
 	.include "data/maps/GensokyoRoadOfReconsideration2/scripts.inc"
-
 	.include "data/maps/GensokyoRoadOfReconsideration3/scripts.inc"
-
 	.include "data/maps/GensokyoEasternRoad1/scripts.inc"
-
 	.include "data/maps/GensokyoMontainRoad1/scripts.inc"
-
 	.include "data/maps/GensokyoMountainRoad2/scripts.inc"
-
 	.include "data/maps/GensokyoSouthernRoad1/scripts.inc"
-
 	.include "data/maps/GensokyoSouthernRoad2/scripts.inc"
-
 	.include "data/maps/GensokyoSouthernRoad3/scripts.inc"
-
 	.include "data/maps/GensokyoSouthernRoad4/scripts.inc"
-
 	.include "data/maps/GensokyoSouthernRoad5/scripts.inc"
-
 	.include "data/maps/JavaMountMerapi/scripts.inc"
-
 	.include "data/maps/JavaTempleRuins/scripts.inc"
-
 	.include "data/maps/JavaTrappyPass/scripts.inc"
-
 	.include "data/maps/JavaTrappyPassNorth/scripts.inc"
-
 	.include "data/maps/JavaRiveryPass/scripts.inc"
-
 	.include "data/maps/JavaNorthernPass/scripts.inc"
-
 	.include "data/maps/JavaSouthernPass/scripts.inc"
-
 	.include "data/maps/JavaMiddlePass/scripts.inc"
-
 	.include "data/maps/JavaMountBromo/scripts.inc"
-
 	.include "data/maps/JavaEasternPass/scripts.inc"
-
 	.include "data/maps/JavaSouthLineRoute/scripts.inc"
-
 	.include "data/maps/JavaNorthLineRoute/scripts.inc"
-
 	.include "data/maps/JavaSeaBreakRoute1/scripts.inc"
-
 	.include "data/maps/JavaSeaBreakRoute2/scripts.inc"
-
 	.include "data/maps/JavaTabecRoute/scripts.inc"
-
 	.include "data/maps/JavaJaboRoute/scripts.inc"
-
 	.include "data/maps/JavaEastSeaRoute1/scripts.inc"
-
 	.include "data/maps/JavaEastSeaRoute2/scripts.inc"
-
 	.include "data/maps/JavaWesternPass/scripts.inc"
-
 	.include "data/maps/JavaNaturePreserve1/scripts.inc"
-
 	.include "data/maps/JavaNaturePreserve2/scripts.inc"
-
 	.include "data/maps/JavaNaturePreserve3/scripts.inc"
-
 	.include "data/maps/JavaSeaOfSand/scripts.inc"
-
 	.include "data/maps/JavaOldYogyakartaCity/scripts.inc"
-
 	.include "data/maps/JavaOldSoloTown/scripts.inc"
-
 	.include "data/maps/JavaOldSemarangTown/scripts.inc"
-
 	.include "data/maps/JavaOldSurabayaCity/scripts.inc"
-
 	.include "data/maps/JavaOldMountMerapi/scripts.inc"
-
 	.include "data/maps/JavaOldNorthPlain/scripts.inc"
-
 	.include "data/maps/JavaOldSouthernPass/scripts.inc"
-
 	.include "data/maps/JavaOldPojokCliff/scripts.inc"
-
 	.include "data/maps/JavaOldTrappyPass/scripts.inc"
-
 	.include "data/maps/JavaOldRiveryPass/scripts.inc"
-
 	.include "data/maps/JavaOldNorthernPass/scripts.inc"
-
 	.include "data/maps/JavaOldMountAurora/scripts.inc"
-
 	.include "data/maps/AnotherWorldTrappyPass/scripts.inc"
-
 	.include "data/maps/AnotherWorldDeathForest/scripts.inc"
-
 	.include "data/maps/AnotherWorldEcruteakCity/scripts.inc"
-
 	.include "data/maps/AnotherWorldUnderworldMushroomBiome/scripts.inc"
-
-
 	.include "data/maps/AnotherWorldViridianCity/scripts.inc"
-
 	.include "data/maps/GensokyoForestOfMagic4/scripts.inc"
-
 	.include "data/maps/GensokyoForestOfMagic2/scripts.inc"
-
 	.include "data/maps/GensokyoForestOfMagic3/scripts.inc"
-
 	.include "data/maps/GensokyoForestOfMagic1/scripts.inc"
-
 	.include "data/maps/GensokyoForestOfMagic5/scripts.inc"
-
 	.include "data/maps/GensokyoNetherworldEntrance/scripts.inc"
-
 	.include "data/maps/GensokyoNetherworldHakugyokurou/scripts.inc"
-
 	.include "data/maps/GensokyoNetherworldStairs/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountain3/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountain1/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountain2/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountain4/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountainCave6/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountainCave1/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountainCave5/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountainCave8/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountainCave9/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountainCave2/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountainCave7/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountainCave4/scripts.inc"
-
 	.include "data/maps/GensokyoYoukaiMountainCave3/scripts.inc"
-
 	.include "data/maps/GensokyoHigan/scripts.inc"
-
 	.include "data/maps/GensokyoRoadOfLiminality1/scripts.inc"
-
 	.include "data/maps/GensokyoSanzuRiver2/scripts.inc"
-
 	.include "data/maps/GensokyoRoadOfLiminality2/scripts.inc"
-
 	.include "data/maps/GensokyoUnderground6/scripts.inc"
-
 	.include "data/maps/GensokyoUnderground2/scripts.inc"
-
 	.include "data/maps/GensokyoUnderground5/scripts.inc"
-
 	.include "data/maps/GensokyoUnderground7/scripts.inc"
-
 	.include "data/maps/GensokyoUnderground3/scripts.inc"
-
 	.include "data/maps/GensokyoUnderground4/scripts.inc"
-
 	.include "data/maps/GensokyoUnderground8/scripts.inc"
-
 	.include "data/maps/GensokyoUnderground1/scripts.inc"
-
 	.include "data/maps/GensokyoNuclearReactor2/scripts.inc"
-
 	.include "data/maps/GensokyoNuclearReactor4/scripts.inc"
-
 	.include "data/maps/GensokyoNuclearReactor7/scripts.inc"
-
 	.include "data/maps/GensokyoNuclearReactor1/scripts.inc"
-
 	.include "data/maps/GensokyoNuclearReactor6/scripts.inc"
-
 	.include "data/maps/GensokyoNuclearReactor3/scripts.inc"
-
 	.include "data/maps/GensokyoNuclearReactor5/scripts.inc"
-
 	.include "data/maps/JohtoBellTower7/scripts.inc"
-
 	.include "data/maps/JohtoBellTower4/scripts.inc"
-
 	.include "data/maps/JohtoBellTower5/scripts.inc"
-
 	.include "data/maps/JohtoBellTower8/scripts.inc"
-
 	.include "data/maps/JohtoBellTower3/scripts.inc"
-
 	.include "data/maps/JohtoBellTower1/scripts.inc"
-
 	.include "data/maps/JohtoBellTower2/scripts.inc"
-
 	.include "data/maps/JohtoBellTower10/scripts.inc"
-
 	.include "data/maps/JohtoBellTower9/scripts.inc"
-
 	.include "data/maps/JohtoBellTower6/scripts.inc"
-
 	.include "data/maps/JohtoBrassTower2/scripts.inc"
-
 	.include "data/maps/JohtoBrassTower1/scripts.inc"
-
 	.include "data/maps/JohtoDarkCave1/scripts.inc"
-
 	.include "data/maps/JohtoDarkCave2/scripts.inc"
-
 	.include "data/maps/JohtoDragonsDen3/scripts.inc"
-
 	.include "data/maps/JohtoDragonsDen2/scripts.inc"
-
 	.include "data/maps/JohtoDragonsDen1/scripts.inc"
-
 	.include "data/maps/JohtoIcePath2/scripts.inc"
-
 	.include "data/maps/JohtoIcePath5/scripts.inc"
-
 	.include "data/maps/JohtoIcePath1/scripts.inc"
-
 	.include "data/maps/JohtoIcePath4/scripts.inc"
-
 	.include "data/maps/JohtoIcePath6/scripts.inc"
-
 	.include "data/maps/JohtoIcePath7/scripts.inc"
-
 	.include "data/maps/JohtoIcePath3/scripts.inc"
-
 	.include "data/maps/JohtoIlexForest/scripts.inc"
-
 	.include "data/maps/JohtoMountMortar4/scripts.inc"
-
 	.include "data/maps/JohtoMountMortar3/scripts.inc"
-
 	.include "data/maps/JohtoMountMortar1/scripts.inc"
-
 	.include "data/maps/JohtoMountMortar2/scripts.inc"
-
 	.include "data/maps/JohtoMountSilverCave2/scripts.inc"
-
 	.include "data/maps/JohtoMountSilverCave3/scripts.inc"
-
 	.include "data/maps/JohtoMountSilverCave5/scripts.inc"
-
 	.include "data/maps/JohtoMountSilverCave1/scripts.inc"
-
 	.include "data/maps/JohtoMountSilverCave4/scripts.inc"
-
 	.include "data/maps/JohtoNationalPark_BugCatching/scripts.inc"
-
 	.include "data/maps/JohtoNationalPark/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph_Chamber2/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph_Chamber1/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph_Chamber4/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph_Chamber7/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph_Chamber8/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph_Chamber9/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph_Chamber6/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph_Chamber5/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph_Chamber10/scripts.inc"
-
 	.include "data/maps/JohtoRuinsOfAlph_Chamber3/scripts.inc"
-
 	.include "data/maps/JohtoSlowpokeWell1/scripts.inc"
-
 	.include "data/maps/JohtoSlowpokeWell2/scripts.inc"
-
 	.include "data/maps/JohtoTohjoFalls/scripts.inc"
-
 	.include "data/maps/JohtoUnionCave3/scripts.inc"
-
 	.include "data/maps/JohtoUnionCave4/scripts.inc"
-
 	.include "data/maps/JohtoUnionCave1/scripts.inc"
-
 	.include "data/maps/JohtoUnionCave2/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands9/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands6/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands5/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands3/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands1/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands4/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands7/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands2/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands8/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands17/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands18/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands19/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands16/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands20/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands14/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands13/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands11/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands15/scripts.inc"
-
 	.include "data/maps/JohtoWhirlIslands10/scripts.inc"
-
 	.include "data/maps/JohtoCliffCave1/scripts.inc"
-
 	.include "data/maps/JohtoCliffCave2/scripts.inc"
-
 	.include "data/maps/JohtoCliffCave3/scripts.inc"
-
 	.include "data/maps/JohtoCliffEdgeGate/scripts.inc"
-
 	.include "data/maps/ClassicKantoPalletTown/scripts.inc"
-
 	.include "data/maps/SilkRoad1/scripts.inc"
-
 	.include "data/maps/SilkRoad2/scripts.inc"
-
 	.include "data/maps/SilkRoad3/scripts.inc"
-
 	.include "data/maps/Stream_DimensionalRift_FirstEvent/scripts.inc"
-
 	.include "data/maps/Stream_HallOfFame_FirstEvent/scripts.inc"
-
 	.include "data/maps/MagicWorld_North3/scripts.inc"
-
 	.include "data/maps/MagicWorld_North1/scripts.inc"
-
 	.include "data/maps/MagicWorld_North4/scripts.inc"
-
 	.include "data/maps/MagicWorld_South/scripts.inc"
-
 	.include "data/maps/MagicWorld_North2/scripts.inc"
-
 	.include "data/maps/MagicWorld_Center/scripts.inc"
-
 	.include "data/maps/MagicWorld_North4_Winter/scripts.inc"
-
 	.include "data/maps/MagicWorld_North3_Winter/scripts.inc"
-
 	.include "data/maps/MagicWorld_Center_Winter/scripts.inc"
-
 	.include "data/maps/MagicWorld_South_Winter/scripts.inc"
-
 	.include "data/maps/MagicWorld_North1_Winter/scripts.inc"
-
 	.include "data/maps/MagicWorld_North2_Winter/scripts.inc"
-
 	.include "data/maps/SinnohEternaCity/scripts.inc"
-
 	.include "data/maps/AnotherWorldSpiritualWorld/scripts.inc"
-
 	.include "data/maps/AnotherWorldBrokenDreams/scripts.inc"
-
 	.include "data/maps/AnotherWorldGensokyo/scripts.inc"
-
 	.include "data/maps/AnotherWorldMilkyRoad/scripts.inc"
-
 	.include "data/maps/AnotherWorldMilkyRoad_Inner/scripts.inc"
-
 	.include "data/maps/AnotherWorldGraceTown/scripts.inc"
-
 	.include "data/maps/JohtoRoute30_House1/scripts.inc"
-
 	.include "data/maps/JohtoRoute30_MrPokemonHouse/scripts.inc"

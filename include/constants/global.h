@@ -87,6 +87,31 @@ enum Language
 
 // party sizes
 #define PARTY_SIZE 6
+
+enum __attribute__((packed)) PartyMon
+{
+    PARTY_MON_0,
+    PARTY_MON_1,
+    PARTY_MON_2,
+    PARTY_MON_3,
+    PARTY_MON_4,
+    PARTY_MON_5,
+    PARTY_MON_NONE = PARTY_SIZE,
+    PARTY_MON_CANCEL,
+};
+
+// A position within the in-battle party order, not an identity; the Pokémon
+// occupying a given slot changes as the order is permuted. See gBattlePartyCurrentOrder.
+enum PartyBattleSlot
+{
+    PARTY_BATTLE_SLOT_0,
+    PARTY_BATTLE_SLOT_1,
+    PARTY_BATTLE_SLOT_2,
+    PARTY_BATTLE_SLOT_3,
+    PARTY_BATTLE_SLOT_4,
+    PARTY_BATTLE_SLOT_5,
+};
+
 #define MULTI_PARTY_SIZE (PARTY_SIZE / 2)
 #define FRONTIER_PARTY_SIZE         3
 #define FRONTIER_DOUBLES_PARTY_SIZE 4
@@ -141,6 +166,19 @@ enum FrontierLevelMode
 
 #define TRAINER_ID_LENGTH 4
 #define MAX_MON_MOVES 4
+
+// Declares a plain enum, making it 4 bytes.
+// I confirmed that `gChosenMovePos` and `gCurrMovePos` are 4 bytes and `gMoveSelectionCursor` is 16 bytes.
+// It also changes byte-oriented structure offsets such as ContestAIInfo (line 235), so it must be packed
+// because packing preserves the desired cross-enum compiler diagnostics.
+enum __attribute__((packed)) MoveSlot
+{
+    MOVESLOT_0,
+    MOVESLOT_1,
+    MOVESLOT_2,
+    MOVESLOT_3,
+};
+
 #define ALL_MOVES_MASK ((1 << MAX_MON_MOVES) - 1)
 
 #define CONTESTANT_COUNT 4

@@ -345,10 +345,10 @@ static void InitBtlControllersInternal(void)
             BufferBattlePartyCurrentOrderBySide(2, 1);
             BufferBattlePartyCurrentOrderBySide(3, 1);
 
-            gBattlerPartyIndexes[0] = 0;
-            gBattlerPartyIndexes[1] = 0;
-            gBattlerPartyIndexes[2] = BattleSideHasTwoTrainers(B_SIDE_PLAYER) ? 0 : 1;
-            gBattlerPartyIndexes[3] = BattleSideHasTwoTrainers(B_SIDE_OPPONENT) ? 0 : 1;
+            gBattlerPartyIndexes[0] = PARTY_MON_0;
+            gBattlerPartyIndexes[1] = PARTY_MON_0;
+            gBattlerPartyIndexes[2] = BattleSideHasTwoTrainers(B_SIDE_PLAYER) ? PARTY_MON_0 : PARTY_MON_1;
+            gBattlerPartyIndexes[3] = BattleSideHasTwoTrainers(B_SIDE_OPPONENT) ? PARTY_MON_0 : PARTY_MON_1;
         }
     }
     else
@@ -384,7 +384,7 @@ static void InitBtlControllersInternal(void)
 
             gBattlerPositions[gLinkPlayers[i].id] = gLinkPlayers[i].id & BIT_FLANK ? linkPositionRight : linkPositionLeft;
             BufferBattlePartyCurrentOrderBySide(gLinkPlayers[i].id, gLinkPlayers[i].id & BIT_FLANK);
-            gBattlerPartyIndexes[gLinkPlayers[i].id] = 0;
+            gBattlerPartyIndexes[gLinkPlayers[i].id] = PARTY_MON_0;
         }
     }
 }
@@ -474,13 +474,17 @@ static void SetBattlePartyIds(void)
     {
         for (enum BattlerId i = 0; i < gBattlersCount; i++)
         {
-            for (u32 j = 0; j < PARTY_SIZE; j++)
+            enum PartyMon faintedMon = PARTY_MON_NONE;
+            bool32 foundValidMon = FALSE;
+
+            for (enum PartyMon j = PARTY_MON_0; j < PARTY_MON_NONE; j++)
             {
                 if (i < 2)
                 {
                     if (IsValidForBattle(&GetBattlerParty(i)[j]))
                     {
                         gBattlerPartyIndexes[i] = j;
+                        foundValidMon = TRUE;
                         break;
                     }
                 }
@@ -493,29 +497,30 @@ static void SetBattlePartyIds(void)
                     else if (IsValidForBattle(&GetBattlerParty(i)[j]))
                     {
                         gBattlerPartyIndexes[i] = j;
+                        foundValidMon = TRUE;
                         break;
                     }
-                    else if (IsValidForBattleButDead(&GetBattlerParty(i)[j]) && gBattlerPartyIndexes[i] < PARTY_SIZE)
+                    else if (IsValidForBattleButDead(&GetBattlerParty(i)[j]) && faintedMon == PARTY_MON_NONE)
                     {
                         // Put an "option" on a dead mon that can be revived;
-                        gBattlerPartyIndexes[i] = j + PARTY_SIZE;
+                        faintedMon = j;
                     }
 
-                    if (gBattlerPartyIndexes[i] >= PARTY_SIZE)
+                    if (faintedMon != PARTY_MON_NONE)
                         continue;
                     // No valid mons were found. Add the empty slot.
-                    if (gBattlerPartyIndexes[i - 2] == 0)
-                        gBattlerPartyIndexes[i] = 1;
+                    if (gBattlerPartyIndexes[i - 2] == PARTY_MON_0)
+                        gBattlerPartyIndexes[i] = PARTY_MON_1;
                     else
-                        gBattlerPartyIndexes[i] = 0;
+                        gBattlerPartyIndexes[i] = PARTY_MON_0;
                 }
             }
-            if (gBattlerPartyIndexes[i] >= PARTY_SIZE)
-                gBattlerPartyIndexes[i] -= PARTY_SIZE;
+            if (!foundValidMon && faintedMon != PARTY_MON_NONE)
+                gBattlerPartyIndexes[i] = faintedMon;
         }
 
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
-            gBattlerPartyIndexes[1] = 0, gBattlerPartyIndexes[3] = 0;
+            gBattlerPartyIndexes[1] = PARTY_MON_0, gBattlerPartyIndexes[3] = PARTY_MON_0;
     }
 }
 
@@ -880,7 +885,7 @@ void BtlController_EmitLoadMonSprite(enum BattlerId battler, u32 bufferId)
     PrepareBufferDataTransfer(battler, bufferId, gBattleResources->transferBuffer, 4);
 }
 
-void BtlController_EmitSwitchInAnim(enum BattlerId battler, u32 bufferId, u8 partyId, bool8 dontClearTransform, bool8 dontClearSubstituteBit)
+void BtlController_EmitSwitchInAnim(enum BattlerId battler, u32 bufferId, enum PartyMon partyId, bool8 dontClearTransform, bool8 dontClearSubstituteBit)
 {
     gBattleResources->transferBuffer[0] = CONTROLLER_SWITCHINANIM;
     gBattleResources->transferBuffer[1] = partyId;
@@ -1104,7 +1109,7 @@ void BtlController_EmitChooseItem(enum BattlerId battler, u32 bufferId, u8 *batt
     PrepareBufferDataTransfer(battler, bufferId, gBattleResources->transferBuffer, 4);
 }
 
-void BtlController_EmitChoosePokemon(enum BattlerId battler, u32 bufferId, u8 caseId, u8 slotId, enum Ability abilityId, enum BattlerId battlerPreventingSwitchout, u8 *data)
+void BtlController_EmitChoosePokemon(enum BattlerId battler, u32 bufferId, u8 caseId, enum PartyMon slotId, enum Ability abilityId, enum BattlerId battlerPreventingSwitchout, u8 *data)
 {
     s32 i;
 
@@ -1138,7 +1143,7 @@ void BtlController_EmitHealthBarUpdate(enum BattlerId battler, u32 bufferId, u16
     PrepareBufferDataTransfer(battler, bufferId, gBattleResources->transferBuffer, 4);
 }
 
-void BtlController_EmitExpUpdate(enum BattlerId battler, u32 bufferId, u8 partyId, s32 expPoints)
+void BtlController_EmitExpUpdate(enum BattlerId battler, u32 bufferId, enum PartyMon partyId, s32 expPoints)
 {
     gBattleResources->transferBuffer[0] = CONTROLLER_EXPUPDATE;
     gBattleResources->transferBuffer[1] = partyId;
@@ -1244,7 +1249,7 @@ void BtlController_EmitTwoReturnValues(enum BattlerId battler, u32 bufferId, u8 
     PrepareBufferDataTransfer(battler, bufferId, gBattleResources->transferBuffer, 6);
 }
 
-void BtlController_EmitChosenMonReturnValue(enum BattlerId battler, u32 bufferId, u8 partyId, u8 *battlePartyOrder)
+void BtlController_EmitChosenMonReturnValue(enum BattlerId battler, u32 bufferId, enum PartyMon partyId, u8 *battlePartyOrder)
 {
     s32 i;
 
@@ -1442,7 +1447,7 @@ void BtlController_Complete(enum BattlerId battler)
     gBattlerControllerEndFuncs[battler](battler);
 }
 
-static u32 GetBattlerMonData(enum BattlerId battler, struct Pokemon *party, u32 monId, u8 *dst)
+static u32 GetBattlerMonData(enum BattlerId battler, struct Pokemon *party, enum PartyMon monId, u8 *dst)
 {
     struct BattlePokemon battleMon;
     struct MovePPInfo moveData;
@@ -1509,7 +1514,7 @@ static u32 GetBattlerMonData(enum BattlerId battler, struct Pokemon *party, u32 
         if (gTestRunnerEnabled)
         {
             enum BattleTrainer trainer = GetBattlerTrainer(battler);
-            u32 partyIndex = gBattlerPartyIndexes[battler];
+            enum PartyMon partyIndex = gBattlerPartyIndexes[battler];
             if (TestRunner_Battle_GetForcedAbility(trainer, partyIndex))
                 gBattleMons[battler].ability = TestRunner_Battle_GetForcedAbility(trainer, partyIndex);
         }
@@ -1780,7 +1785,7 @@ static u32 GetBattlerMonData(enum BattlerId battler, struct Pokemon *party, u32 
     return size;
 }
 
-static void SetBattlerMonData(enum BattlerId battler, struct Pokemon *party, u32 monId)
+static void SetBattlerMonData(enum BattlerId battler, struct Pokemon *party, enum PartyMon monId)
 {
     struct BattlePokemon *battlePokemon = (struct BattlePokemon *)&gBattleResources->bufferA[battler][3];
     struct MovePPInfo *moveData = (struct MovePPInfo *)&gBattleResources->bufferA[battler][3];
@@ -2043,7 +2048,7 @@ void StartSendOutAnim(enum BattlerId battler, bool32 dontClearTransform, bool32 
     }
 
     ClearTemporarySpeciesSpriteData(battler, dontClearTransform, dontClearSubstituteBit);
-    gBattlerPartyIndexes[battler] = gBattleResources->bufferA[battler][1];
+    gBattlerPartyIndexes[battler] = (enum PartyMon)gBattleResources->bufferA[battler][1];
     species = GetBattlerVisualSpecies(battler);
     gBattleControllerData[battler] = CreateInvisibleSpriteWithCallback(SpriteCB_WaitForBattlerBallReleaseAnim);
     // Load sprite for opponent only, player sprite is expected to be already loaded.
@@ -2299,7 +2304,7 @@ void BtlController_HandleGetMonData(enum BattlerId battler)
     struct Pokemon *party = GetBattlerParty(battler);
     u32 size = 0;
     u8 monToCheck;
-    s32 i;
+    enum PartyMon i;
 
     if (gBattleResources->bufferA[battler][2] == 0)
     {
@@ -2308,7 +2313,7 @@ void BtlController_HandleGetMonData(enum BattlerId battler)
     else
     {
         monToCheck = gBattleResources->bufferA[battler][2];
-        for (i = 0; i < PARTY_SIZE; i++)
+        for (i = PARTY_MON_0; i < PARTY_MON_NONE; i++)
         {
             if (monToCheck & 1)
                 size += GetBattlerMonData(battler, party, i, monData + size);
@@ -2338,7 +2343,8 @@ void BtlController_HandleGetRawMonData(enum BattlerId battler)
 void BtlController_HandleSetMonData(enum BattlerId battler)
 {
     struct Pokemon *party = GetBattlerParty(battler);
-    u32 i, monToCheck;
+    enum PartyMon i;
+    u32 monToCheck;
 
     if (gBattleResources->bufferA[battler][2] == 0)
     {
@@ -2347,7 +2353,7 @@ void BtlController_HandleSetMonData(enum BattlerId battler)
     else
     {
         monToCheck = gBattleResources->bufferA[battler][2];
-        for (i = 0; i < PARTY_SIZE; i++)
+        for (i = PARTY_MON_0; i < PARTY_MON_NONE; i++)
         {
             if (monToCheck & 1)
                 SetBattlerMonData(battler, party, i);
@@ -2423,12 +2429,12 @@ void BtlController_HandleSwitchInAnim(enum BattlerId battler)
     }
     else if (IsControllerOpponent(battler))
     {
-        gBattleStruct->monToSwitchIntoId[battler] = PARTY_SIZE;
+        gBattleStruct->monToSwitchIntoId[battler] = PARTY_MON_NONE;
     }
 
     if (isPlayerSide)
         ClearTemporarySpeciesSpriteData(battler, gBattleResources->bufferA[battler][2], gBattleResources->bufferA[battler][3]);
-    gBattlerPartyIndexes[battler] = gBattleResources->bufferA[battler][1];
+    gBattlerPartyIndexes[battler] = (enum PartyMon)gBattleResources->bufferA[battler][1];
     if (isPlayerSide)
         BattleLoadMonSpriteGfx(GetBattlerMon(battler), battler);
     StartSendOutAnim(battler, gBattleResources->bufferA[battler][2], gBattleResources->bufferA[battler][3], FALSE);
@@ -3443,8 +3449,8 @@ void SetFinalChosenTarget(enum BattlerId battler, bool32 checkPartner)
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
 
     enum BattlerId chosenTarget = gAiBattleData->chosenTarget[battler];
-    u32 chosenMoveIndex = gAiBattleData->chosenMoveIndex[battler];
-    u32 chosenMove = moveInfo->moves[chosenMoveIndex];
+    enum MoveSlot chosenMoveIndex = gAiBattleData->chosenMoveIndex[battler];
+    enum Move chosenMove = moveInfo->moves[chosenMoveIndex];
     enum MoveTarget targetType = GetBattlerMoveSelectionTargetType(battler, chosenMove);
 
     switch (targetType)

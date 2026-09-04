@@ -585,7 +585,7 @@ static void BXPY_PrepareEnemyParty(u32 bringSize, u32 battleFlags)
     }
     else
     {
-        CreateNPCTrainerPartyFromTrainer(&gParties[B_TRAINER_OPPONENT_A][0], &gTrainers[GetCurrentDifficultyLevel()][TRAINER_BATTLE_PARAM.opponentA]);
+        CreateNPCTrainerPartyFromTrainer(&gParties[B_TRAINER_OPPONENT_A][0], &gTrainers[GetTrainerDifficultyLevel(TRAINER_BATTLE_PARAM.opponentA)][TRAINER_BATTLE_PARAM.opponentA]);
     }
 
     if (BXPY_BattleGreaterThanTwoTrainers())
@@ -859,7 +859,7 @@ static void BXPY_PrepareEnemyParty(u32 bringSize, u32 battleFlags)
         }
         else
         {
-            CreateNPCTrainerPartyFromTrainer(&gParties[B_TRAINER_OPPONENT_B][0], &gTrainers[GetCurrentDifficultyLevel()][TRAINER_BATTLE_PARAM.opponentB]);
+            CreateNPCTrainerPartyFromTrainer(&gParties[B_TRAINER_OPPONENT_B][0], &gTrainers[GetTrainerDifficultyLevel(TRAINER_BATTLE_PARAM.opponentB)][TRAINER_BATTLE_PARAM.opponentB]);
         }
     }
 }

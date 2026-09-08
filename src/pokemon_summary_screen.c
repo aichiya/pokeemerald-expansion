@@ -3267,7 +3267,7 @@ static void PrintNotEggInfo(void)
     StringCopy(gStringVar1, gText_LevelSymbol);
 
     if (BXPY_SummaryScreen_ShouldHideEnemyLevel(sMonSummaryScreen->mode))
-        StringCopy(gStringVar2,COMPOUND_STRING("???"));
+        StringCopy(gStringVar2, COMPOUND_STRING("???"));
     else
         ConvertIntToDecimalStringN(gStringVar2, summary->level, STR_CONV_MODE_LEFT_ALIGN, 3);
 
@@ -3275,7 +3275,7 @@ static void PrintNotEggInfo(void)
     PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_SPECIES, gStringVar1, 24, 17, 0, 1);
 
     if (BXPY_SummaryScreen_HideSpecies(sMonSummaryScreen->mode))
-        StringCopy(gStringVar1,COMPOUND_STRING("???"));
+        StringCopy(gStringVar1, COMPOUND_STRING("???"));
     else
         GetMonNickname(mon, gStringVar1);
 
@@ -8394,10 +8394,10 @@ static void PrintHeldItemName(void)
     }
     else if (sMonSummaryScreen->summary.item == ITEM_NONE)
     {
-        StringCopy(gStringVar1,COMPOUND_STRING("NONE"));
+        StringCopy(gStringVar1, COMPOUND_STRING("NONE"));
 
         if (!BXPY_SummaryScreen_ShouldShowFullItem(sMonSummaryScreen->mode))
-            StringCopy(gStringVar1,BXPY_ReturnItemText(ITEM_NONE));
+            StringCopy(gStringVar1, BXPY_ReturnItemText(ITEM_NONE));
 
         text = gStringVar1;
     }
@@ -8405,7 +8405,7 @@ static void PrintHeldItemName(void)
     {
         CopyItemName(sMonSummaryScreen->summary.item, gStringVar1);
         if (!BXPY_SummaryScreen_ShouldShowFullItem(sMonSummaryScreen->mode))
-            StringCopy(gStringVar1,BXPY_ReturnItemText(sMonSummaryScreen->summary.item));
+            StringCopy(gStringVar1, BXPY_ReturnItemText(sMonSummaryScreen->summary.item));
         text = gStringVar1;
     }
 
@@ -8589,7 +8589,7 @@ static void PrintExpPointsNextLevel(void)
     u32 expToNextLevel;
 
     if (BXPY_SummaryScreen_ShouldHideEnemyLevel(sMonSummaryScreen->mode))
-        StringCopy(gStringVar1,COMPOUND_STRING("???"));
+        StringCopy(gStringVar1, COMPOUND_STRING("???"));
     else
         ConvertIntToDecimalStringN(gStringVar1, sum->exp, STR_CONV_MODE_RIGHT_ALIGN, 7);
 
@@ -8602,7 +8602,7 @@ static void PrintExpPointsNextLevel(void)
         expToNextLevel = 0;
 
     if (BXPY_SummaryScreen_ShouldHideEnemyLevel(sMonSummaryScreen->mode))
-        StringCopy(gStringVar1,COMPOUND_STRING("???"));
+        StringCopy(gStringVar1, COMPOUND_STRING("???"));
     else
         ConvertIntToDecimalStringN(gStringVar1, expToNextLevel, STR_CONV_MODE_RIGHT_ALIGN, 6);
 
@@ -8696,8 +8696,8 @@ static void PrintMoveNameAndPP(enum MoveSlot moveIndex)
 
         if (BXPY_ShouldHideEnemyMoves(sMonSummaryScreen->mode))
         {
-            StringCopy(gStringVar1,COMPOUND_STRING("?"));
-            StringCopy(gStringVar2,COMPOUND_STRING("?"));
+            StringCopy(gStringVar1, COMPOUND_STRING("?"));
+            StringCopy(gStringVar2, COMPOUND_STRING("?"));
         }
         else
         {

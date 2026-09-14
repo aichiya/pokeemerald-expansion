@@ -2026,7 +2026,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #endif
         .effect = EFFECT_GROWTH,
         .power = 0,
-        .type = B_UPDATED_MOVE_DATA >= GEN_CHAMPIONS ? TYPE_GRASS : TYPE_NORMAL,
+        .type = B_UPDATED_MOVE_TYPES >= GEN_CHAMPIONS ? TYPE_GRASS : TYPE_NORMAL,
         .accuracy = 0,
         .pp = B_UPDATED_MOVE_DATA >= GEN_6 ? 20 : 40,
         .target = TARGET_USER,
@@ -7962,7 +7962,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "An attack with effects\n"
             "that vary by location."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_SECRET_POWER,
         .power = 70,
         .type = TYPE_NEW_ILLUSION,
         .accuracy = 100,
@@ -7970,9 +7970,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
+        .argument = { .secondaryEffectChance = 30 },
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_SECRET_POWER,
-            .chance = 30,
+            .sheerForceOverride = TRUE,
         }),
         .contestEffect = CONTEST_EFFECT_BETTER_WITH_GOOD_CONDITION,
         .contestCategory = CONTEST_CATEGORY_SMART,
@@ -18773,7 +18773,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Hurts for four to five turns."),
         .effect = EFFECT_HIT,
         .power = 60,
-        .type = B_UPDATED_MOVE_DATA >= GEN_CHAMPIONS ? TYPE_NEW_METAL : TYPE_NEW_NATURE,
+        .type = B_UPDATED_MOVE_TYPES >= GEN_CHAMPIONS ? TYPE_NEW_METAL : TYPE_NEW_NATURE,
         .accuracy = 100,
         .pp = 15,
         .target = TARGET_SELECTED,

@@ -198,7 +198,7 @@ BattleScript_ConsumableBerryStatRaise::
 	return
 
 BattleScript_ConsumableBerryStatRaiseRipen::
-	call BattleScript_AbilityPopUp
+	call BattleScript_AbilityPopUpScripting
 	waitabilitypopup
 	call BattleScript_ItemPopUp_Scripting
  	playanimation BS_SCRIPTING, B_ANIM_HELD_ITEM_BERRY
@@ -4304,7 +4304,7 @@ BattleScript_DoSelfConfusionDmg::
 	waitstate
 	tryselfconfusiondmgformchange
 	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER, ASSURANCE_IGNORE
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
 	goto BattleScript_MoveEnd
 BattleScript_MoveUsedIsConfusedRet::
 	return
@@ -5197,7 +5197,6 @@ BattleScript_ImposterActivates::
 BattleScript_HurtAttacker:
 	healthbarupdate BS_ATTACKER
 	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
-	printfromtable gHurtByStringIds
 	waitmessage B_WAIT_TIME_LONG
 	return
 

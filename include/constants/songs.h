@@ -1994,7 +1994,9 @@
 #define MUS_PKMN_LGPE_VS_TRAINER 2000
 #define MUS_DCD_JTD 2001
 
-#define END_MUS 		    MUS_DCD_JTD
+#define MUS_VS_MEW_WITH_CRIES 2002
+
+#define END_MUS 		    MUS_VS_MEW_WITH_CRIES
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

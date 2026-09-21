@@ -683,7 +683,7 @@ void BattleLoadMonSpriteGfx(struct Pokemon *mon, enum BattlerId battler)
     if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX)
     {
         // Calyrex and its forms have a blue dynamax aura instead of red.
-        if (GET_BASE_SPECIES_ID(species) == SPECIES_CALYREX)
+        if (GetBaseSpecies(species) == SPECIES_CALYREX)
             BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
         else
             BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
@@ -955,7 +955,7 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
         }
 
         // dynamax tint
-        if (GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX)
+        if (GetActiveGimmick(battlerDef) == GIMMICK_DYNAMAX)
         {
             // Calyrex and its forms have a blue dynamax aura instead of red.
             if (GET_BASE_SPECIES_ID(targetSpecies) == SPECIES_CALYREX)
@@ -972,8 +972,16 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
             CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
         }
 
-        gSprites[gBattlerSpriteIds[battlerDef]].y = GetBattlerSpriteDefault_Y(battlerDef);
-        StartSpriteAnim(&gSprites[gBattlerSpriteIds[battlerDef]], 0);
+        // dynamax tint
+        if (GetActiveGimmick(battlerDef) == GIMMICK_DYNAMAX)
+        {
+            // Calyrex and its forms have a blue dynamax aura instead of red.
+            if (GetBaseSpecies(targetSpecies) == SPECIES_CALYREX)
+                BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
+            else
+                BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
+            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
+        }
     }
     else if (gCurrentMove == MOVE_RIDE_TRANSFORM)
     {
@@ -1033,8 +1041,16 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
             CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
         }
 
-        gSprites[gBattlerSpriteIds[battlerAtk]].y = GetBattlerSpriteDefault_Y(battlerAtk);
-        StartSpriteAnim(&gSprites[gBattlerSpriteIds[battlerAtk]], 0);
+        // dynamax tint
+        if (GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX)
+        {
+            // Calyrex and its forms have a blue dynamax aura instead of red.
+            if (GetBaseSpecies(targetSpecies) == SPECIES_CALYREX)
+                BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
+            else
+                BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
+            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
+        }
     }
     else
     {
@@ -1121,8 +1137,16 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
             CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
         }
 
-        gSprites[gBattlerSpriteIds[battlerAtk]].y = GetBattlerSpriteDefault_Y(battlerAtk);
-        StartSpriteAnim(&gSprites[gBattlerSpriteIds[battlerAtk]], 0);
+        // dynamax tint
+        if (GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX)
+        {
+            // Calyrex and its forms have a blue dynamax aura instead of red.
+            if (GetBaseSpecies(targetSpecies) == SPECIES_CALYREX)
+                BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
+            else
+                BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
+            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
+        }
     }
 }
 

@@ -954,17 +954,6 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
             CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
         }
 
-        // dynamax tint
-        if (GetActiveGimmick(battlerDef) == GIMMICK_DYNAMAX)
-        {
-            // Calyrex and its forms have a blue dynamax aura instead of red.
-            if (GET_BASE_SPECIES_ID(targetSpecies) == SPECIES_CALYREX)
-                BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
-            else
-                BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
-            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
-        }
-
         // Terastallization's tint
         if (changeType != SPECIES_GFX_CHANGE_ILLUSION_OFF && GetActiveGimmick(battlerDef) == GIMMICK_TERA)
         {
@@ -1021,17 +1010,6 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
         {
             BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
             CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
-        }
-
-        // dynamax tint
-        if (GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX)
-        {
-            // Calyrex and its forms have a blue dynamax aura instead of red.
-            if (GET_BASE_SPECIES_ID(targetSpecies) == SPECIES_CALYREX)
-                BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
-            else
-                BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
-            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
         }
 
         // Terastallization's tint
@@ -1117,17 +1095,6 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
         {
             BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
             CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
-        }
-
-        // dynamax tint
-        if (GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX)
-        {
-            // Calyrex and its forms have a blue dynamax aura instead of red.
-            if (GET_BASE_SPECIES_ID(targetSpecies) == SPECIES_CALYREX)
-                BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
-            else
-                BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
-            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
         }
 
         // Terastallization's tint

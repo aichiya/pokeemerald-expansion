@@ -12754,6 +12754,11 @@ enum TwoTurnMoveActivation GetTwoTurnMoveActivation(struct BattleCalcValues *cv,
         return ACTIVATION_POWER_HERB;
     }
 
+    if (cv->abilities[cv->battlerAtk] == ABILITY_BRIGHTY_BLOOM)
+    {
+        return ACTIVATION_BRIGHTY_BLOOM;
+    }
+
     return ACTIVATION_NEXT_TURN;
 }
 

@@ -1915,6 +1915,7 @@ static enum CancelerResult CancelerCharging(struct BattleCalcValues *cv)
     case ACTIVATION_WEATHER:
         return CANCELER_RESULT_SUCCESS;
     case ACTIVATION_MEGA_SOL:
+    case ACTIVATION_BRIGHTY_BLOOM:
         BattleScriptCall(BattleScript_MegaSolActivatesTwoTurnMove);
         return CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
     case ACTIVATION_POWER_HERB:

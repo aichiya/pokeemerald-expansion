@@ -340,8 +340,9 @@ enum __attribute__((packed)) Ability
     ABILITY_FIRE_MANE = 316,
     ABILITY_317 = 317,
     ABILITY_SPICY_SPRAY = 318,
+    ABILITY_AURA_GUARD = 319,
     // Custom
-    ABILITY_OFFICIAL_END = ABILITY_SPICY_SPRAY,
+    ABILITY_OFFICIAL_END = ABILITY_AURA_GUARD,
     ABILITY_ULTRA_EGO = (ABILITY_OFFICIAL_END + 1), // maxed a random stat when hit by a move
     ABILITY_MAKAI_GODDESS = (ABILITY_OFFICIAL_END + 2), // Heals HP when taking Dark or Divine moves
     ABILITY_SHICHININ_MISAKI = (ABILITY_OFFICIAL_END + 3), // User's speed +1 each the end of turn

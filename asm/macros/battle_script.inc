@@ -855,9 +855,8 @@
 	.byte B_SCR_OP_TRYABILITYONSTATUSCHANGE
 	.endm
 
-	.macro tryconfusionafterskydrop battler:req
-	.byte B_SCR_OP_TRY_CONFUSION_AFTER_SKY_DROP
-    .byte \battler
+	.macro dofainteffectsblock
+	.byte B_SCR_OP_DO_FAINT_EFFECTS_BLOCK
 	.endm
 
     .macro trymovestatchanges
@@ -1529,11 +1528,6 @@
 	.byte \battler
 	.endm
 
-	.macro tryactivatereceiver battler:req
-	callnative BS_TryActivateReceiver
-	.byte \battler
-	.endm
-
 	.macro tryactivatesoulheart
 	callnative BS_TryActivateSoulHeart
 	.endm
@@ -1595,11 +1589,6 @@
 	callnative BS_HandleTrainerSlideMsg
 	.byte \battler
 	.byte \case_
-	.endm
-
-	.macro trytrainerslidemsgfirstoff battler:req
-	callnative BS_TryTrainerSlideMsgFirstOff
-	.byte \battler
 	.endm
 
 	.macro trytrainerslidemsglaston battler:req

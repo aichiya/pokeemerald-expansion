@@ -2668,18 +2668,16 @@ static enum CancelerResult CancelerPreAttackMoveEffect(struct BattleCalcValues *
         while (gBattleStruct->additionalEffectsCounter < numAdditionalEffects)
         {
             const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(cv->move, gBattleStruct->additionalEffectsCounter);
-            gBattleStruct->additionalEffectsCounter++;
-
-            if (!additionalEffect->preAttackEffect)
-                continue;
 
             bool32 isSelf = effectBattler == cv->battlerAtk;
 
-            if (isSelf != additionalEffect->self)
+            if (!additionalEffect->preAttackEffect
+             || isSelf != additionalEffect->self
+             || (!isSelf && ShouldSkipFailureCheckOnBattler(cv->battlerAtk, effectBattler)))
+            {
+                gBattleStruct->additionalEffectsCounter++;
                 continue;
-
-            if (!isSelf && ShouldSkipFailureCheckOnBattler(cv->battlerAtk, effectBattler))
-                continue;
+            }
 
             TryTriggerAdditionalEffect(cv, additionalEffect, effectBattler);
 
@@ -2749,7 +2747,6 @@ static enum CancelerResult CancelerStatusEffects(struct BattleCalcValues *cv)
             se.effectBattler = isAllyAffected ? partner : se.effectBattler;
             se.primary = TRUE;
             se.certain = TRUE;
-            se.onSide = additionalEffect->onSide;
             SetMoveEffect(cv, &se);
             gBattleStruct->moveResultFlags[se.effectBattler] |= MOVE_RESULT_VALID_STATUS_TARGET;
             if (!se.effectFailed)
@@ -2933,7 +2930,7 @@ static enum CancelerResult CancelerMoveAnimation(struct BattleCalcValues *cv)
     {
         gBattleScripting.animTurn++;
         gBattleScripting.animTargetsHit++;
-        BattleScriptCall(BattleScript_Pausex20);
+        BattleScriptCall(BattleScript_PauseShort);
         return CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
     }
 
@@ -3011,7 +3008,7 @@ static enum CancelerResult CancelerMoveAllySwitch(struct BattleCalcValues *cv)
         gProtectStructs[gBattlerAttacker].usedAllySwitch = TRUE; // set used ally switch for user
         gBattleScripting.battler = GetPartnerBattler(gBattlerAttacker);
         PrepareStringBattleWithWait(STRINGID_ALLYSWITCHPOSITION, gBattlerAttacker);
-        BattleScriptCall(BattleScript_MoveEffectSetStatus);
+        BattleScriptCall(BattleScript_WaitMessage);
         return CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
     }
 
@@ -3645,12 +3642,14 @@ static enum MoveEndResult MoveEndSubstituteBlock(struct BattleCalcValues *cv)
                  && battlerDef != cv->battlerAtk)
                 {
                     const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(gCurrentMove, gBattleStruct->additionalEffectsCounter);
-                    gBattleStruct->additionalEffectsCounter++;
 
                     if (!CanApplyAdditionalEffect(cv->battlerAtk, battlerDef, additionalEffect)
                      || !ShouldApplyAfterHitEffects(cv->battlerAtk, battlerDef)
                      || additionalEffect->self) // handled in MoveEndAdditionalEffects
+                    {
+                        gBattleStruct->additionalEffectsCounter++;
                         continue;
+                    }
 
                     TryTriggerAdditionalEffect(cv, additionalEffect, battlerDef);
 
@@ -4130,11 +4129,14 @@ static void TryTriggerAdditionalEffect(struct BattleCalcValues *cv, const struct
 {
     struct SetEffect se = {0};
 
-    bool32 percentChance = CalcSecondaryEffectChance(cv->battlerAtk, cv->abilities[cv->battlerAtk], additionalEffect);
+    bool32 percentChance = CalcSecondaryEffectChance(cv->battlerAtk, cv->abilities[cv->battlerAtk], additionalEffect, cv->move);
     bool32 isPrimary = percentChance == 0;
+    bool32 failedToTrigger = TRUE;
 
-    // RNG tag is RNG_SECONDARY_EFFECT + gBattleStruct->additionalEffectsCounter - 1 because it's incremented before this function is called
-    if (isPrimary || RandomPercentage(RNG_SECONDARY_EFFECT + gBattleStruct->additionalEffectsCounter - 1, percentChance))
+    // By default, onSide effects apply if they applied on the original target/user
+    if (isPrimary
+     || gBattleStruct->setEffectOnAlly
+     || RandomPercentage(RNG_SECONDARY_EFFECT + gBattleStruct->additionalEffectsCounter, percentChance))
     {
         if (!additionalEffect->self && !cv->isStatusMove)
             cv->battlerDef = effectBattler; // For SetMoveEffect, will be restored to previous value when run again
@@ -4146,8 +4148,21 @@ static void TryTriggerAdditionalEffect(struct BattleCalcValues *cv, const struct
         se.effectBattler = effectBattler;
         se.primary = isPrimary;
         se.certain = cv->isStatusMove ? TRUE : percentChance >= 100;
-        se.onSide = additionalEffect->onSide;
+        failedToTrigger = FALSE;
+
+        if (gBattleStruct->setEffectOnAlly)
+            se.effectBattler = GetPartnerBattler(se.effectBattler);
+        else if (additionalEffect->onSide)
+            gBattleStruct->setEffectOnAlly = TRUE;
+
         SetMoveEffect(cv, &se);
+    }
+
+    // If applying an onSide effect on partner or if unsuccessful, jump to next effect
+    if (se.effectBattler != effectBattler || !additionalEffect->onSide || failedToTrigger)
+    {
+        gBattleStruct->additionalEffectsCounter++;
+        gBattleStruct->setEffectOnAlly = FALSE;
     }
 }
 
@@ -4174,7 +4189,6 @@ static enum MoveEndResult MoveEndAdditionalEffects(struct BattleCalcValues *cv)
         if (numAdditionalEffects > gBattleStruct->additionalEffectsCounter && tryAdditionalEffect)
         {
             const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(gCurrentMove, gBattleStruct->additionalEffectsCounter);
-            gBattleStruct->additionalEffectsCounter++;
 
             switch (cv->isStatusMove)
             {
@@ -4183,11 +4197,17 @@ static enum MoveEndResult MoveEndAdditionalEffects(struct BattleCalcValues *cv)
                  || !ShouldApplyAfterHitEffects(cv->battlerAtk, effectBattler)
                  || (additionalEffect->moveEffect == MOVE_EFFECT_STAT_MINUS && additionalEffect->self)
                  || (effectBattler == cv->battlerAtk) != additionalEffect->self)
+                {
+                    gBattleStruct->additionalEffectsCounter++;
                     continue;
+                }
                 break;
             case TRUE:
                 if (!IsBattlerMoveResult(effectBattler, MOVE_RESULT_VALID_STATUS_TARGET))
+                {
+                    gBattleStruct->additionalEffectsCounter++;
                     continue;
+                }
                 break;
             }
 
@@ -4226,13 +4246,15 @@ static enum MoveEndResult MoveEndAdditionalEffectsLowerStatsAttacker(struct Batt
     if (numAdditionalEffects > gBattleStruct->additionalEffectsCounter)
     {
         const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(gCurrentMove, gBattleStruct->additionalEffectsCounter);
-        gBattleStruct->additionalEffectsCounter++;
 
         // Various checks for if this move effect can be applied this turn
         if (!CanApplyAdditionalEffect(cv->battlerAtk, cv->battlerAtk, additionalEffect)
          || !ShouldApplyAfterHitEffects(cv->battlerAtk, cv->battlerAtk)
          || !(additionalEffect->moveEffect == MOVE_EFFECT_STAT_MINUS && additionalEffect->self))
+        {
+            gBattleStruct->additionalEffectsCounter++;
             return MOVEEND_RESULT_BREAK; // recall the same state
+        }
 
         TryTriggerAdditionalEffect(cv, additionalEffect, cv->battlerAtk);
 
@@ -4605,31 +4627,6 @@ static enum MoveEndResult MoveEndFaintBlock(struct BattleCalcValues *cv)
                 }
                 gBattleStruct->eventState.moveEndBlock++;
                 break;
-            case FAINT_BLOCK_VICTORY_CATCH:
-                if (IsVictoryCatch()
-                 && gBattleStruct->victoryCatchState != VICTORY_CATCH_FAINTED
-                 && !IsOnPlayerSide(battlerDef))
-                {
-                    u8 hp = 1;
-                    SetMonData(GetBattlerMon(battlerDef), MON_DATA_HP, &hp);
-                    BattleScriptCall(BattleScript_WildBattleVictory);
-                    result = MOVEEND_RESULT_RUN_SCRIPT;
-                }
-                gBattleStruct->eventState.moveEndBlock++;
-                break;
-            case FAINT_BLOCK_END_NEUTRALIZING_GAS:
-                if (gBattleMons[battlerDef].volatiles.neutralizingGas)
-                {
-                    gBattleMons[battlerDef].volatiles.neutralizingGas = FALSE;
-                    if (!IsNeutralizingGasOnField())
-                    {
-                        UpdateTruantTogglesOnNeutralizingGasEnd();
-                        BattleScriptCall(BattleScript_NeutralizingGasExits);
-                        result = MOVEEND_RESULT_RUN_SCRIPT;
-                    }
-                }
-                gBattleStruct->eventState.moveEndBlock++;
-                break;
             case FAINT_BLOCK_TRY_DESTINY_BOND: // Checked before FAINT_BLOCK_FAINT_TARGET but occurs after since volatiles are cleared on faint
                 if (gBattleMons[battlerDef].volatiles.destinyBond
                  && IsBattlerTurnDamaged(battlerDef, EXCLUDING_SUBSTITUTES)
@@ -4673,17 +4670,6 @@ static enum MoveEndResult MoveEndFaintAttacker(struct BattleCalcValues *cv)
 {
     if (!IsBattlerAlive(cv->battlerAtk) && !gBattleStruct->battlerState[cv->battlerAtk].notOnField)
     {
-        if (gBattleMons[cv->battlerAtk].volatiles.neutralizingGas)
-        {
-            gBattleMons[cv->battlerAtk].volatiles.neutralizingGas = FALSE;
-            if (!IsNeutralizingGasOnField())
-            {
-                UpdateTruantTogglesOnNeutralizingGasEnd();
-                BattleScriptCall(BattleScript_NeutralizingGasExits);
-                return MOVEEND_RESULT_RUN_SCRIPT;
-            }
-        }
-
         SetValuesOnFaint(cv->battlerAtk);
         BattleScriptCall(BattleScript_FaintBattler);
         return MOVEEND_RESULT_RUN_SCRIPT;
@@ -5398,7 +5384,7 @@ static enum MoveEndResult MoveEndMoveBlock(struct BattleCalcValues *cv)
             {
                 PushHazardTypeToQueue(side, HAZARDS_STEALTH_ROCK);
                 PrepareStringBattleWithWait(STRINGID_POINTEDSTONESFLOAT, battlerDef);
-                BattleScriptCall(BattleScript_MoveEffectSetStatus);
+                BattleScriptCall(BattleScript_WaitMessage);
                 gBattleStruct->eventState.moveEndBattler = 0;
                 gBattleScripting.moveendState++;
                 return MOVEEND_RESULT_RUN_SCRIPT;
@@ -5419,7 +5405,7 @@ static enum MoveEndResult MoveEndMoveBlock(struct BattleCalcValues *cv)
                 {
                     SetSpikesLayer(side, 1);
                     PrepareStringBattleWithWait(STRINGID_SPIKESSCATTERED, battlerDef);
-                    BattleScriptCall(BattleScript_MoveEffectSetStatus);
+                    BattleScriptCall(BattleScript_WaitMessage);
                     gBattleStruct->eventState.moveEndBattler = 0;
                     gBattleScripting.moveendState++;
                     return MOVEEND_RESULT_RUN_SCRIPT;

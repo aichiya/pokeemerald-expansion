@@ -585,9 +585,10 @@ struct EventStates
     u32 atkCancelerBattler:4;
     enum BattleIntroStates battleIntro:8;
     enum SwitchInEvents switchIn:8;
-    u32 battlerSwitchIn:8; // SwitchInFirstEventBlock, SwitchInSecondEventBlock
+    u32 battlerSwitchIn:4; // SwitchInFirstEventBlock, SwitchInSecondEventBlock
     u32 moveEndBlock:8;
     enum StatChangeResolution resolution:8;
+    enum FaintedEffectsBlock faintedEffects;
 };
 
 // Cleared at the beginning of the battle. Fields need to be cleared when needed manually otherwise.
@@ -745,7 +746,8 @@ struct BattleStruct
     u32 dancerSavedTarget:3;
     u32 statChangeBattler:3;
     u32 overworldWeatherPresent:1;
-    u32 padding5:4;
+    u32 setEffectOnAlly:1;
+    u32 padding5:3;
     enum BattlerId statusedBattler:4; // For Synchronize/Poison Puppeteer
     enum BattlerId statusInflicterBattler:4; // For Synchronize/Poison Puppeteer
     enum MoveEffect synchronizeStatus;

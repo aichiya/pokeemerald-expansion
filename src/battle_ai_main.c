@@ -851,7 +851,7 @@ static void SetBattlerAiMovesData(struct AiLogicData *aiData, enum BattlerId bat
 
         SaveBattlerData(battlerDef);
         SetBattlerData(battlerDef);
-        CalcBattlerAiMovesData(aiData, battlerAtk, battlerDef, weather, gFieldStatuses);
+        CalcBattlerAiMovesData(aiData, battlerAtk, battlerDef, weather, gFieldTimers.terrain);
         RestoreBattlerData(battlerDef);
     }
     RestoreBattlerData(battlerAtk);
@@ -861,6 +861,10 @@ void SetAiLogicDataForTurn(struct AiLogicData *aiData)
 {
     memset(aiData, 0, sizeof(struct AiLogicData));
     gAiBattleData->aiUsingGimmick = 0;
+    if (IsDoubleBattle())
+    {
+        aiData->reverseBattlerLogicOrder = RandomPercentage(RNG_AI_REVERSE_BATTLER_LOGIC_ORDER, GetConfig(AI_REVERSE_BATTLER_LOGIC_ORDER_CHANCE));
+    }
 
     if (!IsSmartBattle())
         return;
@@ -1204,7 +1208,7 @@ void BattleAI_DoAIProcessing_PredictedSwitchin(struct AiThinkingStruct *aiThink,
     gBattleMons[battlerDef] = switchinCandidate;
     gAiThinkingStruct->saved[battlerDef].saved = TRUE;
     SetBattlerAiData(battlerDef, aiData);
-    CalcBattlerAiMovesData(aiData, battlerAtk, battlerDef, AI_GetWeather(), gFieldStatuses);
+    CalcBattlerAiMovesData(aiData, battlerAtk, battlerDef, AI_GetWeather(), gFieldTimers.terrain);
     gAiThinkingStruct->saved[battlerDef].saved = FALSE;
 
     // Regular processing with new battler
@@ -1856,7 +1860,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
         break;
     case EFFECT_FOCUS_ENERGY:
-        if (gBattleMons[battlerAtk].volatiles.dragonCheer || gBattleMons[battlerAtk].volatiles.focusEnergy)
+        if (gBattleMons[battlerAtk].volatiles.criticalHitBoost)
             ADJUST_SCORE(-10);
         break;
     case EFFECT_NON_VOLATILE_STATUS:
@@ -2803,7 +2807,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
           || PartnerMoveIsSameAsAttacker(GetPartnerBattler(battlerAtk), battlerDef, move, aiData->partnerMove))
             ADJUST_SCORE(-10);
         break;
-    case EFFECT_SOAK:
+    case EFFECT_OVERWRITE_TYPE:
     {
         enum Type types[3];
         enum Type typeArg = GetMoveArgType(move);
@@ -3410,8 +3414,7 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         }
         break;
     case EFFECT_DRAGON_CHEER:
-        if (gBattleMons[battlerAtkPartner].volatiles.dragonCheer
-         || gBattleMons[battlerAtkPartner].volatiles.focusEnergy
+        if (gBattleMons[battlerAtkPartner].volatiles.criticalHitBoost
          || !HasDamagingMove(battlerAtkPartner))
         {
             ADJUST_SCORE(-5);
@@ -3908,9 +3911,9 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                     RETURN_SCORE_PLUS(WEAK_EFFECT);
                 }
                 break;
-            case EFFECT_SOAK:
+            case EFFECT_OVERWRITE_TYPE:
                 if ((atkPartnerAbility == ABILITY_WONDER_GUARD || atkPartnerAbility == ABILITY_PLAY_GHOST)
-                 && !IS_BATTLER_OF_TYPE(battlerAtkPartner, TYPE_NEW_WATER)
+                 && !IS_BATTLER_OF_TYPE(battlerAtkPartner, TYPE_WATER)
                  && GetActiveGimmick(battlerAtkPartner) != GIMMICK_TERA)
                 {
                     RETURN_SCORE_PLUS(WEAK_EFFECT);
@@ -5600,7 +5603,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
           || (aiData->holdEffects[battlerDef] == HOLD_EFFECT_BLACK_SLUDGE && IS_BATTLER_OF_TYPE(battlerDef, TYPE_NEW_MIASMA)))
             ADJUST_SCORE(DECENT_EFFECT);
         break;
-    case EFFECT_SOAK:
+    case EFFECT_OVERWRITE_TYPE:
         if (HasMoveWithType(battlerAtk, TYPE_NEW_ELECTRIC) || HasMoveWithType(battlerAtk, TYPE_NEW_NATURE)
         || HasMoveWithType(GetPartnerBattler(battlerAtk), TYPE_NEW_ELECTRIC) || HasMoveWithType(GetPartnerBattler(battlerAtk), TYPE_NEW_NATURE)
         || (HasBattlerSideMoveWithEffect(battlerAtk, EFFECT_SUPER_EFFECTIVE_ON_ARG) && GetMoveArgType(move) == TYPE_NEW_WATER) )

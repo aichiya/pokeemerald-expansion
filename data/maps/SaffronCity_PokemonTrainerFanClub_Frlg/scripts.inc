@@ -509,13 +509,13 @@ SaffronCity_PokemonTrainerFanClub_Text_YouveStillAWaysToGo::
 	.string "You certainly do have the look of\n"
 	.string "a winner.\p"
 	.string "But for me to accept you as\n"
-	.string "a true Fragmon great…\p"
+	.string "a true D{STAR}FRAG great…\p"
 	.string "… …\p"
 	.string "You've still a ways to go!$"
 
 SaffronCity_PokemonTrainerFanClub_Text_YoullBeTalkedAboutIfYouKeepWinning::
 	.string "All of us gathered here are fans\n"
-	.string "of Fragmon TRAINERS.\p"
+	.string "of D{STAR}FRAG TRAINERS.\p"
 	.string "The way they look in battle…\n"
 	.string "They are the picture of coolness.\p"
 	.string "Perhaps you will be talked about\n"

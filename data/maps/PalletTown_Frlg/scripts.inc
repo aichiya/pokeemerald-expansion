@@ -454,24 +454,24 @@ PalletTown_Text_OakDontGoOut::
 
 PalletTown_Text_OakGrassUnsafeNeedMon::
 	.string "OAK: It's unsafe!\n"
-	.string "Wild Fragmon live in tall grass!\p"
-	.string "You need your own Fragmon for\n"
+	.string "Wild D{STAR}FRAG live in tall grass!\p"
+	.string "You need your own D{STAR}FRAG for\n"
 	.string "your protection.\p"
 	.string "I know!\n"
 	.string "Here, come with me!$"
 
 PalletTown_Text_RaisingMonsToo::
-	.string "I'm raising Fragmon, too.\p"
+	.string "I'm raising D{STAR}FRAG, too.\p"
 	.string "When they get strong, they can\n"
 	.string "protect me.$"
 
 PalletTown_Text_CanStoreItemsAndMonsInPC::
 	.string "Technology is incredible!\p"
 	.string "You can now store and recall items\n"
-	.string "and Fragmon as data via PC.$"
+	.string "and D{STAR}FRAG as data via PC.$"
 
 PalletTown_Text_OakPokemonResearchLab::
-	.string "OAK Fragmon RESEARCH LAB$"
+	.string "OAK D{STAR}FRAG RESEARCH LAB$"
 
 PalletTown_Text_PlayersHouse::
 	.string "{PLAYER}'s house$"

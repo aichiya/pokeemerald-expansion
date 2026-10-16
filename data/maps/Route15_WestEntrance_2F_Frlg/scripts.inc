@@ -60,11 +60,11 @@ Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough::
 	.string "{STR_VAR_2} for you.\p"
 	.string "So, {PLAYER}, let me ask you.\p"
 	.string "Have you gathered data on at least\n"
-	.string "{STR_VAR_1} kinds of Fragmon?$"
+	.string "{STR_VAR_1} kinds of D{STAR}FRAG?$"
 
 Route15_WestEntrance_2F_Text_GreatHereYouGo::
 	.string "Great! You have caught or owned\n"
-	.string "{STR_VAR_3} kinds of Fragmon!\p"
+	.string "{STR_VAR_3} kinds of D{STAR}FRAG!\p"
 	.string "Congratulations!\n"
 	.string "Here you go!$"
 
@@ -74,8 +74,8 @@ Route15_WestEntrance_2F_Text_ReceivedItemFromAide::
 
 Route15_WestEntrance_2F_Text_ExplainExpShare::
 	.string "EXP. SHARE is an item to be held\n"
-	.string "by a Fragmon.\p"
-	.string "The Fragmon will receive a share\n"
+	.string "by a D{STAR}FRAG.\p"
+	.string "The D{STAR}FRAG will receive a share\n"
 	.string "of the EXP. Points without having\l"
 	.string "to battle.$"
 

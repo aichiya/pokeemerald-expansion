@@ -36,7 +36,7 @@ SaffronCity_PokemonCenter_1F_EventScript_YoungsterRocketsGone::
 	end
 
 SaffronCity_PokemonCenter_1F_Text_GrowthRatesDifferBySpecies::
-	.string "Fragmon growth rates differ from\n"
+	.string "D{STAR}FRAG growth rates differ from\n"
 	.string "species to species.$"
 
 SaffronCity_PokemonCenter_1F_Text_SilphCoVictimOfFame::

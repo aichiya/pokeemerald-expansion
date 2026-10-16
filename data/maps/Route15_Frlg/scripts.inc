@@ -6,7 +6,7 @@ Route15_EventScript_RouteSign::
 	end
 
 Route15_Text_KindraIntro::
-	.string "I just got some Fragmon in trades.\n"
+	.string "I just got some D{STAR}FRAG in trades.\n"
 	.string "Can I try them out on you?$"
 
 Route15_Text_KindraDefeat::
@@ -14,7 +14,7 @@ Route15_Text_KindraDefeat::
 
 Route15_Text_KindraPostBattle::
 	.string "You can't change the nickname of\n"
-	.string "any Fragmon you get in a trade.\p"
+	.string "any D{STAR}FRAG you get in a trade.\p"
 	.string "Only the Original TRAINER can get\n"
 	.string "the nickname changed.$"
 
@@ -32,7 +32,7 @@ Route15_Text_BeckyPostBattle::
 
 Route15_Text_EdwinIntro::
 	.string "When I whistle, I can summon bird\n"
-	.string "Fragmon.$"
+	.string "D{STAR}FRAG.$"
 
 Route15_Text_EdwinDefeat::
 	.string "Ow!\n"
@@ -53,11 +53,11 @@ Route15_Text_ChesterPostBattle::
 	.string "This is so obvious, you should know\n"
 	.string "this, but…\p"
 	.string "Moves like EARTHQUAKE and FISSURE\n"
-	.string "have no effect on bird Fragmon.$"
+	.string "have no effect on bird D{STAR}FRAG.$"
 
 Route15_Text_GraceIntro::
 	.string "Oh, you're a little cutie!\n"
-	.string "So like a darling Fragmon!$"
+	.string "So like a darling D{STAR}FRAG!$"
 
 Route15_Text_GraceDefeat::
 	.string "You looked so cute, too!$"
@@ -68,15 +68,15 @@ Route15_Text_GracePostBattle::
 	.string "I'm a big girl now.$"
 
 Route15_Text_OliviaIntro::
-	.string "I raise Fragmon for protection\n"
+	.string "I raise D{STAR}FRAG for protection\n"
 	.string "because I live alone.$"
 
 Route15_Text_OliviaDefeat::
-	.string "Fragmon isn't about winning or\n"
+	.string "D{STAR}FRAG isn't about winning or\n"
 	.string "losing for me.$"
 
 Route15_Text_OliviaPostBattle::
-	.string "I love having my Fragmon greet me\n"
+	.string "I love having my D{STAR}FRAG greet me\n"
 	.string "when I get home.\p"
 	.string "It's so reassuring.$"
 
@@ -105,17 +105,17 @@ Route15_Text_AlexPostBattle::
 
 Route15_Text_CeliaIntro::
 	.string "What's cool and happening?\n"
-	.string "Trading Fragmon!$"
+	.string "Trading D{STAR}FRAG!$"
 
 Route15_Text_CeliaDefeat::
 	.string "I said trade!$"
 
 Route15_Text_CeliaPostBattle::
-	.string "I trade Fragmon with my friends\n"
+	.string "I trade D{STAR}FRAG with my friends\n"
 	.string "all the time.$"
 
 Route15_Text_YazminIntro::
-	.string "Want to play with my Fragmon?$"
+	.string "Want to play with my D{STAR}FRAG?$"
 
 Route15_Text_YazminDefeat::
 	.string "I was too impatient!$"
@@ -141,7 +141,7 @@ Route15_Text_MyaPostBattle::
 
 Route15_Text_MyaNotEnoughMons::
 	.string "MYA: Do you want to challenge us?\n"
-	.string "You'll need two Fragmon, though.$"
+	.string "You'll need two D{STAR}FRAG, though.$"
 
 Route15_Text_RonIntro::
 	.string "RON: My sister gets scary when we\n"
@@ -158,4 +158,4 @@ Route15_Text_RonPostBattle::
 Route15_Text_RonNotEnoughMons::
 	.string "RON: Did you want to battle with\n"
 	.string "my sister and me?\p"
-	.string "You need two Fragmon, then.$"
+	.string "You need two D{STAR}FRAG, then.$"

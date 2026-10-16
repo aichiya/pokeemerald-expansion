@@ -41,8 +41,8 @@ gText_PlayerObtainedTheMon::
 	.string "the {STR_VAR_1}!$"
 
 gText_NoMoreRoomForPokemon::
-	.string "There's no more room for Fragmon!\p"
-	.string "The Fragmon BOXES are full and\n"
+	.string "There's no more room for D{STAR}FRAG!\p"
+	.string "The D{STAR}FRAG BOXES are full and\n"
 	.string "can't accept any more!$"
 
 gText_NicknameThisPokemon::

@@ -46,7 +46,7 @@ SaffronCity_CopycatsHouse_2F_EventScript_Game::
 
 SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyMale::
 	.string "{PLAYER}: Hi!\n"
-	.string "Do you like Fragmon?\p"
+	.string "Do you like D{STAR}FRAG?\p"
 	.string "{PLAYER}: Uh, no, I just asked you.\p"
 	.string "{PLAYER}: Huh?\n"
 	.string "You're strange!\p"
@@ -55,7 +55,7 @@ SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyMale::
 
 SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyFemale::
 	.string "{PLAYER}: Hi.\n"
-	.string "You must like Fragmon.\p"
+	.string "You must like D{STAR}FRAG.\p"
 	.string "{PLAYER}: No, not me.\n"
 	.string "I asked you.\p"
 	.string "{PLAYER}: Pardon?\n"
@@ -103,7 +103,7 @@ SaffronCity_CopycatsHouse_2F_Text_Doduo::
 	.string "SEE HOW PRETTY I CAN BE?$"
 
 SaffronCity_CopycatsHouse_2F_Text_RareMonOnlyDoll::
-	.string "This is a rare Fragmon!\n"
+	.string "This is a rare D{STAR}FRAG!\n"
 	.string "Huh? It's only a doll!$"
 
 SaffronCity_CopycatsHouse_2F_Text_MarioWearingABucket::
@@ -115,5 +115,5 @@ SaffronCity_CopycatsHouse_2F_Text_MySecrets::
 	.string "My Secrets!\p"
 	.string "Skill: Mimicry!\n"
 	.string "Hobby: Collecting dolls!\l"
-	.string "Favorite Fragmon: CLEFAIRY!$"
+	.string "Favorite D{STAR}FRAG: CLEFAIRY!$"
 

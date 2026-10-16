@@ -61,7 +61,7 @@ CeladonCity_DepartmentStore_2F_TMs::
 	end
 
 CeladonCity_DepartmentStore_2F_Text_SuperRepelMorePowerfulRepel::
-	.string "SUPER REPEL keeps weak Fragmon at\n"
+	.string "SUPER REPEL keeps weak D{STAR}FRAG at\n"
 	.string "bay…\p"
 	.string "Hmm, it's a more powerful REPEL.$"
 

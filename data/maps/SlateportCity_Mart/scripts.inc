@@ -36,11 +36,11 @@ SlateportCity_Mart_Text_SomeItemsOnlyAtMart:
 	.string "The MARKET does have some interesting\n"
 	.string "merchandise.\p"
 	.string "But there are some items you can only\n"
-	.string "get at a Fragmon MART.$"
+	.string "get at a D{STAR}FRAG MART.$"
 
 SlateportCity_Mart_Text_GreatBallIsBetter:
 	.string "A GREAT BALL is better than a POKé BALL\n"
-	.string "at catching Fragmon.\p"
+	.string "at catching D{STAR}FRAG.\p"
 	.string "With this, I should be able to get that\n"
-	.string "elusive Fragmon…$"
+	.string "elusive D{STAR}FRAG…$"
 

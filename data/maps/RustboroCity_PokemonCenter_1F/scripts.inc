@@ -29,19 +29,19 @@ RustboroCity_PokemonCenter_1F_EventScript_Girl::
 	end
 
 RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities:
-	.string "My Fragmon has a NAIVE nature, and my\n"
+	.string "My D{STAR}FRAG has a NAIVE nature, and my\n"
 	.string "friend's has a JOLLY nature.\p"
-	.string "It's fascinating how Fragmon have\n"
+	.string "It's fascinating how D{STAR}FRAG have\n"
 	.string "personalities!$"
 
 RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon:
 	.string "Just like people, there are male and\n"
-	.string "female Fragmon.\p"
+	.string "female D{STAR}FRAG.\p"
 	.string "But no one seems to have any idea how\n"
 	.string "they're different.$"
 
 RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
 	.string "The man next door gave me an HM!\p"
-	.string "I used it to teach my Fragmon how to\n"
+	.string "I used it to teach my D{STAR}FRAG how to\n"
 	.string "CUT down skinny trees.$"
 

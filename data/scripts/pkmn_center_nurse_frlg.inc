@@ -77,12 +77,12 @@ Movement_Bow::
 	step_end
 
 Text_WelcomeWantToHealPkmn_Frlg::
-	.string "Welcome to our Fragmon CENTER!\p"
+	.string "Welcome to our D{STAR}FRAG CENTER!\p"
 	.string "Would you like me to heal your\n"
-	.string "Fragmon back to perfect health?$"
+	.string "D{STAR}FRAG back to perfect health?$"
 
 Text_TakeYourPkmnForFewSeconds_Frlg::
-	.string "Okay, I'll take your Fragmon for a\n"
+	.string "Okay, I'll take your D{STAR}FRAG for a\n"
 	.string "few seconds.$"
 
 Text_WeHopeToSeeYouAgain_Frlg::
@@ -90,5 +90,5 @@ Text_WeHopeToSeeYouAgain_Frlg::
 
 Text_RestoredPkmnToFullHealth_Frlg::
 	.string "Thank you for waiting.\n"
-	.string "We've restored your Fragmon to\l"
+	.string "We've restored your D{STAR}FRAG to\l"
 	.string "full health.$"

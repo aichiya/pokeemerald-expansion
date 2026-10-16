@@ -413,26 +413,26 @@ LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "I bought a whole bunch of DOLLS and\n"
 	.string "POSTERS.\p"
 	.string "Of course, I've also caught a lot of\n"
-	.string "Fragmon, and I'm raising them\l"
+	.string "D{STAR}FRAG, and I'm raising them\l"
 	.string "properly, too.\p"
 	.string "Actually, I'm more worried if you're\n"
-	.string "raising Fragmon properly, {PLAYER}{KUN}.\p"
+	.string "raising D{STAR}FRAG properly, {PLAYER}{KUN}.\p"
 	.string "I'll battle with you, so you can show\n"
-	.string "me your Fragmon, {PLAYER}{KUN}.$"
+	.string "me your D{STAR}FRAG, {PLAYER}{KUN}.$"
 
 LilycoveCity_Text_MayNotRaisingPokemon:
 	.string "MAY: Oh, why? {PLAYER}{KUN}, haven't you\n"
-	.string "been raising your Fragmon?\p"
+	.string "been raising your D{STAR}FRAG?\p"
 	.string "That's not a very good showing as a\n"
 	.string "TRAINER…$"
 
 LilycoveCity_Text_MayBattleMe:
 	.string "MAY: Come on, battle with me, so I can\n"
-	.string "check out your Fragmon!$"
+	.string "check out your D{STAR}FRAG!$"
 
 LilycoveCity_Text_MayWontBeBeaten:
-	.string "MAY: The Fragmon I raised won't be\n"
-	.string "beaten by your Fragmon, {PLAYER}{KUN}!$"
+	.string "MAY: The D{STAR}FRAG I raised won't be\n"
+	.string "beaten by your D{STAR}FRAG, {PLAYER}{KUN}!$"
 
 LilycoveCity_Text_MayDefeat:
 	.string "… … … … … … … …\p"
@@ -444,14 +444,14 @@ LilycoveCity_Text_MayDefeat:
 LilycoveCity_Text_MayGoingBackToLittleroot:
 	.string "MAY: I'm thinking of going back to\n"
 	.string "LITTLEROOT soon.\p"
-	.string "I've caught a decent group of Fragmon,\n"
+	.string "I've caught a decent group of D{STAR}FRAG,\n"
 	.string "and my NC{EMOJI_IRRITATED}PDA is coming along, so\l"
 	.string "I'm going home to show my dad.$"
 
 LilycoveCity_Text_MayYouGoingToCollectBadges:
 	.string "{PLAYER}{KUN}, what are you going to do?\p"
 	.string "Collect all the GYM BADGES and take\n"
-	.string "the Fragmon LEAGUE challenge?\p"
+	.string "the D{STAR}FRAG LEAGUE challenge?\p"
 	.string "Well, while you're collecting BADGES,\n"
 	.string "{PLAYER}{KUN}, I'm going to work on my\l"
 	.string "NC{EMOJI_IRRITATED}PDA. I'll complete it before you!\p"
@@ -459,7 +459,7 @@ LilycoveCity_Text_MayYouGoingToCollectBadges:
 
 LilycoveCity_Text_MayYouGoingToPokemonLeague:
 	.string "{PLAYER}{KUN}, what are you going to do?\p"
-	.string "Are you taking the Fragmon LEAGUE\n"
+	.string "Are you taking the D{STAR}FRAG LEAGUE\n"
 	.string "challenge?\p"
 	.string "Or, are you going to complete your\n"
 	.string "NC{EMOJI_IRRITATED}PDA?\p"
@@ -483,7 +483,7 @@ LilycoveCity_Text_BrendanShoppingLetsBattle:
 	.string "No, I'm not buying any DOLLS.\p"
 	.string "Anyways, it's been a while.\p"
 	.string "Want to have a battle to see who's been\n"
-	.string "raising Fragmon better?$"
+	.string "raising D{STAR}FRAG better?$"
 
 LilycoveCity_Text_BrendanNoConfidence:
 	.string "BRENDAN: Oh, what's the matter?\n"
@@ -491,7 +491,7 @@ LilycoveCity_Text_BrendanNoConfidence:
 
 LilycoveCity_Text_BrendanBattleMe:
 	.string "BRENDAN: Want to battle to see who's\n"
-	.string "been raising Fragmon better?$"
+	.string "been raising D{STAR}FRAG better?$"
 
 LilycoveCity_Text_BrendanWontBeBeaten:
 	.string "BRENDAN: Aww, but you know I'm not\n"
@@ -513,15 +513,15 @@ LilycoveCity_Text_BrendanGoingBackToLittleroot:
 LilycoveCity_Text_BrendanYouGoingToCollectBadges:
 	.string "{PLAYER}, what are you going to do?\p"
 	.string "Collect all the GYM BADGES and take\n"
-	.string "the Fragmon LEAGUE challenge?\p"
+	.string "the D{STAR}FRAG LEAGUE challenge?\p"
 	.string "Maybe I'll do that, too…\p"
 	.string "Well, anyway, hang in there!$"
 
 LilycoveCity_Text_BrendanYouGoingToPokemonLeague:
 	.string "{PLAYER}, what are you going to do?\p"
 	.string "Since you're that strong, are you\n"
-	.string "taking the Fragmon LEAGUE challenge?\p"
-	.string "Heh, even me--if I trained my Fragmon\n"
+	.string "taking the D{STAR}FRAG LEAGUE challenge?\p"
+	.string "Heh, even me--if I trained my D{STAR}FRAG\n"
 	.string "a bit more, I should be stronger than\l"
 	.string "you, {PLAYER}.\p"
 	.string "Well, anyway, hang in there!$"
@@ -534,7 +534,7 @@ LilycoveCity_Text_BrendanYouGoingToBattleFrontier:
 	.string "NC{EMOJI_IRRITATED}PDA?\p"
 	.string "Since you're that strong, you should\n"
 	.string "consider the BATTLE FRONTIER.\p"
-	.string "Heh, if I train my Fragmon a bit more,\n"
+	.string "Heh, if I train my D{STAR}FRAG a bit more,\n"
 	.string "I'll get stronger than you, {PLAYER}.\p"
 	.string "Maybe I should go to the BATTLE\n"
 	.string "FRONTIER.\p"
@@ -564,7 +564,7 @@ LilycoveCity_Text_DontGoNearCaveInCove:
 LilycoveCity_Text_IfWorldBecomesOurs:
 	.string "If this whole wide world becomes ours,\n"
 	.string "TEAM AQUA's, it will be a happier\l"
-	.string "place for Fragmon, too.$"
+	.string "place for D{STAR}FRAG, too.$"
 
 LilycoveCity_Text_WailmerLeapOutOfWater:
 	.string "There! WAILMER!\n"
@@ -576,9 +576,9 @@ LilycoveCity_Text_GetLostMessingUpTraining:
 	.string "so can you, like, get lost?$"
 
 LilycoveCity_Text_ContestHallInTown:
-	.string "There's a Fragmon CONTEST HALL\n"
+	.string "There's a D{STAR}FRAG CONTEST HALL\n"
 	.string "right in this here town. \p"
-	.string "That means well-raised Fragmon will\n"
+	.string "That means well-raised D{STAR}FRAG will\n"
 	.string "come from all over the country.\p"
 	.string "My heart swells with excitement!$"
 
@@ -587,7 +587,7 @@ LilycoveCity_Text_StrangeCaveInCove:
 	.string "the cove at the edge of town?$"
 
 LilycoveCity_Text_GoingToMoveDeleterForHMs:
-	.string "I'm going to teach my Fragmon some new\n"
+	.string "I'm going to teach my D{STAR}FRAG some new\n"
 	.string "moves for entering a CONTEST.\p"
 	.string "So, I'm going to see the MOVE DELETER\n"
 	.string "and make it forget HM moves.$"
@@ -597,7 +597,7 @@ LilycoveCity_Text_ImFromKanto:
 	.string "The HOENN region is beautiful with\n"
 	.string "all its water and verdant nature.\p"
 	.string "Hunh? Wait a second…\p"
-	.string "Could there be rare Fragmon that live\n"
+	.string "Could there be rare D{STAR}FRAG that live\n"
 	.string "only in this area?$"
 
 LilycoveCity_Text_TeamAquaBeenTrainingWailmer:
@@ -616,12 +616,12 @@ LilycoveCity_Text_SomeonePuntedTeamAquaOut:
 LilycoveCity_Text_SomeoneStoleMyPokemon:
 	.string "I was taking a relaxing snooze at the\n"
 	.string "seaside inn to the sound of waves…\p"
-	.string "When someone stole my Fragmon!\p"
+	.string "When someone stole my D{STAR}FRAG!\p"
 	.string "Who's the abductor?\n"
 	.string "TEAM AQUA? Is it TEAM AQUA?$"
 
 LilycoveCity_Text_MissingPokemonCameBack:
-	.string "My missing Fragmon…\n"
+	.string "My missing D{STAR}FRAG…\n"
 	.string "It came back without me noticing!$"
 
 LilycoveCity_Text_ImArtDealer:
@@ -667,7 +667,7 @@ LilycoveCity_Text_CitySign:
 	.string "sea begins.”$"
 
 LilycoveCity_Text_ContestHallSign:
-	.string "Fragmon CONTEST HALL\n"
+	.string "D{STAR}FRAG CONTEST HALL\n"
 	.string "“The gathering place for TRAINERS!”$"
 
 LilycoveCity_Text_MotelSign:
@@ -677,12 +677,12 @@ LilycoveCity_Text_MotelSign:
 
 LilycoveCity_Text_MuseumSign:
 	.string "LILYCOVE MUSEUM\p"
-	.string "“Fragmon Masterpiece Collection\n"
+	.string "“D{STAR}FRAG Masterpiece Collection\n"
 	.string "on exhibit!”$"
 
 LilycoveCity_Text_MuseumSignPlayersExhibit:
 	.string "LILYCOVE MUSEUM\p"
-	.string "“{PLAYER}'s Fragmon Collection\n"
+	.string "“{PLAYER}'s D{STAR}FRAG Collection\n"
 	.string "on exhibit!”$"
 
 LilycoveCity_Text_HarborSignUnderConstruction:
@@ -698,7 +698,7 @@ LilycoveCity_Text_HarborSign:
 	.string "the ferry S.S. TIDAL.”$"
 
 LilycoveCity_Text_TrainerFanClubSign:
-	.string "Fragmon TRAINER FAN CLUB\p"
+	.string "D{STAR}FRAG TRAINER FAN CLUB\p"
 	.string "The names of TRAINERS are scribbled\n"
 	.string "all over the sign…$"
 
@@ -711,7 +711,7 @@ LilycoveCity_Text_DepartmentStoreSign:
 
 LilycoveCity_Text_MoveDeletersHouseSign:
 	.string "MOVE DELETER'S HOUSE\p"
-	.string "“Unwanted Fragmon moves deleted.”$"
+	.string "“Unwanted D{STAR}FRAG moves deleted.”$"
 
 LilycoveCity_Text_DoYouKnowAboutBerryBlender:
 	.string "Do you know about the machine\n"
@@ -726,7 +726,7 @@ LilycoveCity_Text_FasterSpinBetterPokeblocks:
 LilycoveCity_Text_ExplainBerryBlender:
 	.string "It's used for making a kind of candy\n"
 	.string "called a {POKEBLOCK}.\p"
-	.string "If you give a good {POKEBLOCK} to a Fragmon,\n"
+	.string "If you give a good {POKEBLOCK} to a D{STAR}FRAG,\n"
 	.string "its condition will improve by a lot.$"
 
 LilycoveCity_Text_HeardTowerCalledSkyPillar:
@@ -743,14 +743,14 @@ LilycoveCity_Text_JustArrivedAndSawRarePokemon:
 	.string "We just arrived here on our\n"
 	.string "honeymoon vacation.\p"
 	.string "We happened to see a DRAGON-type\n"
-	.string "Fragmon flying way up in the sky.\p"
-	.string "Do cool Fragmon like that live in\n"
+	.string "D{STAR}FRAG flying way up in the sky.\p"
+	.string "Do cool D{STAR}FRAG like that live in\n"
 	.string "the HOENN region?$"
 
 LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "On our honeymoon, we vowed to see as\n"
-	.string "many rare Fragmon as we can.\p"
+	.string "many rare D{STAR}FRAG as we can.\p"
 	.string "So we were delighted to see a rare\n"
-	.string "Fragmon as soon as we arrived.\p"
+	.string "D{STAR}FRAG as soon as we arrived.\p"
 	.string "I mean, we are totally happy!$"
 

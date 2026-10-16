@@ -63,20 +63,20 @@ PetalburgCity_Mart_EventScript_Man::
 	end
 
 PetalburgCity_Mart_Text_WeakWillGrowStronger:
-	.string "Even if a Fragmon is weak now,\n"
+	.string "Even if a D{STAR}FRAG is weak now,\n"
 	.string "it will grow stronger.\p"
 	.string "The most important thing is love!\n"
-	.string "Love for your Fragmon!$"
+	.string "Love for your D{STAR}FRAG!$"
 
 PetalburgCity_Mart_Text_RepelIsUseful:
 	.string "Do you use REPEL?\n"
-	.string "It keeps Fragmon away, so it's\l"
+	.string "It keeps D{STAR}FRAG away, so it's\l"
 	.string "useful when you're in a hurry.$"
 
 PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou:
 	.string "Do you have any ANTIDOTES with\n"
 	.string "you?\p"
 	.string "If you walk around with a poisoned\n"
-	.string "Fragmon, it will lose HP until it faints.\l"
+	.string "D{STAR}FRAG, it will lose HP until it faints.\l"
 	.string "Take some ANTIDOTES with you.$"
 

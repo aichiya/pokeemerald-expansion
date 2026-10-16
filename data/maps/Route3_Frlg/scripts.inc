@@ -23,7 +23,7 @@ Route3_Text_ColtonDefeat::
 	.string "You beat me again!$"
 
 Route3_Text_ColtonPostBattle::
-	.string "There are other kinds of Fragmon\n"
+	.string "There are other kinds of D{STAR}FRAG\n"
 	.string "than the ones you find in forests.$"
 
 Route3_Text_BenIntro::
@@ -36,10 +36,10 @@ Route3_Text_BenDefeat::
 	.string "I don't believe it!$"
 
 Route3_Text_BenPostBattle::
-	.string "Are you using a Fragmon CENTER's\n"
-	.string "PC for storing your Fragmon?\p"
+	.string "Are you using a D{STAR}FRAG CENTER's\n"
+	.string "PC for storing your D{STAR}FRAG?\p"
 	.string "Each BOX can hold up to\n"
-	.string "30 Fragmon.$"
+	.string "30 D{STAR}FRAG.$"
 
 Route3_Text_JaniceIntro::
 	.string "Excuse me!\n"
@@ -57,11 +57,11 @@ Route3_Text_GregIntro::
 	.string "Let's get with it right away!$"
 
 Route3_Text_GregDefeat::
-	.string "If I had new Fragmon, I would've\n"
+	.string "If I had new D{STAR}FRAG, I would've\n"
 	.string "won!$"
 
 Route3_Text_GregPostBattle::
-	.string "If a Fragmon BOX on the PC gets\n"
+	.string "If a D{STAR}FRAG BOX on the PC gets\n"
 	.string "full, just switch to another BOX.$"
 
 Route3_Text_SallyIntro::
@@ -88,14 +88,14 @@ Route3_Text_CalvinPostBattle::
 	.string "winter. That's my policy.$"
 
 Route3_Text_JamesIntro::
-	.string "I'll battle you with the Fragmon\n"
+	.string "I'll battle you with the D{STAR}FRAG\n"
 	.string "I just caught.$"
 
 Route3_Text_JamesDefeat::
 	.string "Done like dinner!$"
 
 Route3_Text_JamesPostBattle::
-	.string "Trained Fragmon are stronger than\n"
+	.string "Trained D{STAR}FRAG are stronger than\n"
 	.string "the wild ones.$"
 
 Route3_Text_RobinIntro::

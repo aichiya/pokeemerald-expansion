@@ -60,14 +60,14 @@ LavenderTown_Text_JustImaginingWhiteHand::
 
 LavenderTown_Text_TownKnownAsMonGraveSite::
 	.string "This town is known as the grave\n"
-	.string "site of Fragmon.\p"
+	.string "site of D{STAR}FRAG.\p"
 	.string "Memorial services are held in\n"
-	.string "Fragmon TOWER.$"
+	.string "D{STAR}FRAG TOWER.$"
 
 LavenderTown_Text_GhostsAppearedInTower::
-	.string "Ghosts appeared in Fragmon TOWER.\p"
+	.string "Ghosts appeared in D{STAR}FRAG TOWER.\p"
 	.string "I think they're the spirits of\n"
-	.string "Fragmon that the ROCKETS killed.$"
+	.string "D{STAR}FRAG that the ROCKETS killed.$"
 
 LavenderTown_Text_TownSign::
 	.string "LAVENDER TOWN\n"
@@ -80,9 +80,9 @@ LavenderTown_Text_SilphScopeNotice::
 
 LavenderTown_Text_VolunteerPokemonHouse::
 	.string "LAVENDER VOLUNTEER\n"
-	.string "Fragmon HOUSE$"
+	.string "D{STAR}FRAG HOUSE$"
 
 LavenderTown_Text_PokemonTowerSign::
-	.string "Fragmon TOWER\n"
-	.string "Becalm the Spirits of Fragmon$"
+	.string "D{STAR}FRAG TOWER\n"
+	.string "Becalm the Spirits of D{STAR}FRAG$"
 

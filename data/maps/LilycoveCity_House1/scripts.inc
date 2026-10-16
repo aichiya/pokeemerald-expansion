@@ -16,7 +16,7 @@ LilycoveCity_House1_EventScript_Kecleon::
 	end
 
 LilycoveCity_House1_Text_PokemonPartnersNotTools:
-	.string "Fragmon are partners to people.\n"
+	.string "D{STAR}FRAG are partners to people.\n"
 	.string "They aren't our tools.\p"
 	.string "Unfortunately, there are some people\n"
 	.string "who fail to understand that…$"

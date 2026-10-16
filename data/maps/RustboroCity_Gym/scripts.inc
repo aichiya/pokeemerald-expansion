@@ -110,14 +110,14 @@ RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "I'm no TRAINER, not me, but I can\n"
 	.string "sure give you winning advice.\p"
 	.string "That's settled, then! We'll aim for the\n"
-	.string "Fragmon CHAMPIONSHIP together!\p"
+	.string "D{STAR}FRAG CHAMPIONSHIP together!\p"
 	.string "It's your job as a TRAINER to collect\n"
 	.string "GYM BADGES, am I right?\p"
 	.string "But GYM LEADERS aren't pushovers!\p"
 	.string "And that's where I come in!\n"
 	.string "I'm here to provide expert advice!\p"
 	.string "ROXANNE, the GYM LEADER, is a user\n"
-	.string "of ROCK-type Fragmon.\p"
+	.string "of ROCK-type D{STAR}FRAG.\p"
 	.string "The ROCK type is very durable, but\n"
 	.string "it can't stand WATER-type and\l"
 	.string "GRASS-type moves.\p"
@@ -163,7 +163,7 @@ RustboroCity_Gym_Text_TommyPostBattle:
 RustboroCity_Gym_Text_MarcIntro:
 	.string "We might be in the middle of town,\n"
 	.string "but so what?\p"
-	.string "My ROCK Fragmon need room to\n"
+	.string "My ROCK D{STAR}FRAG need room to\n"
 	.string "rampage!$"
 
 RustboroCity_Gym_Text_MarcDefeat:
@@ -177,12 +177,12 @@ RustboroCity_Gym_Text_MarcPostBattle:
 
 RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Hello, I am ROXANNE, the RUSTBORO\n"
-	.string "Fragmon GYM LEADER.\p"
+	.string "D{STAR}FRAG GYM LEADER.\p"
 	.string "I became a GYM LEADER so that I might\n"
-	.string "apply what I learned at the Fragmon\l"
+	.string "apply what I learned at the D{STAR}FRAG\l"
 	.string "TRAINER'S SCHOOL in battle.\p"
 	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which Fragmon?$"
+	.string "battle, and with which D{STAR}FRAG?$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "So…\n"
@@ -190,10 +190,10 @@ RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "It seems that I still have much more\n"
 	.string "to learn…\p"
 	.string "I understand.\p"
-	.string "The Fragmon LEAGUE's rules state\n"
+	.string "The D{STAR}FRAG LEAGUE's rules state\n"
 	.string "that TRAINERS are to be given this\l"
 	.string "if they defeat a GYM LEADER.\p"
-	.string "Please accept the official Fragmon\n"
+	.string "Please accept the official D{STAR}FRAG\n"
 	.string "LEAGUE STONE BADGE.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge:
@@ -202,7 +202,7 @@ RustboroCity_Gym_Text_ReceivedStoneBadge:
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
 	.string "The STONE BADGE heightens the ATTACK\n"
-	.string "power of your Fragmon.\p"
+	.string "power of your D{STAR}FRAG.\p"
 	.string "It also enables them to use the HM move\n"
 	.string "CUT outside of battle.\p"
 	.string "Please take this with you, too.$"
@@ -213,7 +213,7 @@ RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "It not only inflicts damage by dropping\n"
 	.string "rocks, it also lowers SPEED.\p"
 	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a Fragmon.\p"
+	.string "the move to a D{STAR}FRAG.\p"
 	.string "Remember, a TM can be used only once,\n"
 	.string "so think before you use it.$"
 
@@ -224,10 +224,10 @@ RustboroCity_Gym_Text_RoxannePostBattle:
 	.string "learn many things.$"
 
 RustboroCity_Gym_Text_GymStatue:
-	.string "RUSTBORO CITY Fragmon GYM$"
+	.string "RUSTBORO CITY D{STAR}FRAG GYM$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
-	.string "RUSTBORO CITY Fragmon GYM\p"
+	.string "RUSTBORO CITY D{STAR}FRAG GYM\p"
 	.string "ROXANNE'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
@@ -266,7 +266,7 @@ RustboroCity_Gym_Text_RoxanneRematchDefeat:
 
 RustboroCity_Gym_Text_RoxannePostRematch:
 	.string "ROXANNE: I still have much to learn\n"
-	.string "when it comes to battling Fragmon.\p"
+	.string "when it comes to battling D{STAR}FRAG.\p"
 	.string "That awareness makes me love battling\n"
 	.string "all that much more!$"
 
@@ -278,6 +278,6 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 	.string "I would like to see how much better\n"
 	.string "we've become…\p"
 	.string "Oh, no…\n"
-	.string "You only have one Fragmon with you?\p"
+	.string "You only have one D{STAR}FRAG with you?\p"
 	.string "Please return with at least one more\n"
-	.string "Fragmon.$"
+	.string "D{STAR}FRAG.$"

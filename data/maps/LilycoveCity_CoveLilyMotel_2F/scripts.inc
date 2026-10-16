@@ -78,7 +78,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis:
 	.string "Wow! That's awesome!\n"
 	.string "Yep, it's totally awesome!\p"
 	.string "This NC{EMOJI_IRRITATED}PDA is completely filled!\n"
-	.string "You really must love Fragmon!\p"
+	.string "You really must love D{STAR}FRAG!\p"
 	.string "I'm so impressed!\p"
 	.string "Let me give you something in\n"
 	.string "recognition of your feat!$"
@@ -91,7 +91,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer:
 
 LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist:
 	.string "I'm the GRAPHIC ARTIST! Aren't the\n"
-	.string "Fragmon of HOENN interesting?$"
+	.string "D{STAR}FRAG of HOENN interesting?$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute:
 	.string "The girl TUBERS, they're cute, hey?\n"
@@ -116,7 +116,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
 	.string "… … … … … Zzz…\p"
 	.string "… … … … … Huh?!\n"
 	.string "Oh, sorry, sorry! I was snoozing!\p"
-	.string "I came to check out this Fragmon\n"
+	.string "I came to check out this D{STAR}FRAG\n"
 	.string "CONTEST thing.\p"
 	.string "I have to admit, it does look quite\n"
 	.string "entertaining, but…\p"

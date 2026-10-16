@@ -210,7 +210,7 @@ SevenIsland_House_Room1_Text_LimitThreeMonsPerSide::
 	.string "This hidden room is not built very\n"
 	.string "sturdy.\p"
 	.string "Can I get you to limit it to\n"
-	.string "battles of three Fragmon per side?$"
+	.string "battles of three D{STAR}FRAG per side?$"
 
 SevenIsland_House_Room1_Text_SaveProgressBeforeBattle::
 	.string "Fine! Before your battle, would\n"

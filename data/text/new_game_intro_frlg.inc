@@ -189,23 +189,23 @@ gPikachuIntro_Text_Page3::
 gOakSpeech_Text_WelcomeToTheWorld::
 	.string "Hello, there!\n"
 	.string "Glad to meet you!\p"
-	.string "Welcome to the world of Fragmon!\p"
+	.string "Welcome to the world of D{STAR}FRAG!\p"
 	.string "My name is OAK.\p"
 	.string "People affectionately refer to me\n"
-	.string "as the Fragmon PROFESSOR.\p$"
+	.string "as the D{STAR}FRAG PROFESSOR.\p$"
 
 gOakSpeech_Text_ThisWorld::
 	.string "This world…$"
 
 gOakSpeech_Text_IsInhabitedFarAndWide::
 	.string "…is inhabited far and wide by\n"
-	.string "creatures called Fragmon.\p$"
+	.string "creatures called D{STAR}FRAG.\p$"
 
 gOakSpeech_Text_IStudyPokemon::
-	.string "For some people, Fragmon are pets.\n"
+	.string "For some people, D{STAR}FRAG are pets.\n"
 	.string "Others use them for battling.\p"
 	.string "As for myself…\p"
-	.string "I study Fragmon as a profession.\p$"
+	.string "I study D{STAR}FRAG as a profession.\p$"
 
 gOakSpeech_Text_TellMeALittleAboutYourself::
 	.string "But first, tell me a little about\n"
@@ -237,7 +237,7 @@ gOakSpeech_Text_RememberRivalsName::
 
 gOakSpeech_Text_LetsGo::
 	.string "{PLAYER}!\p"
-	.string "Your very own Fragmon legend is\n"
+	.string "Your very own D{STAR}FRAG legend is\n"
 	.string "about to unfold!\p"
 	.string "A world of dreams and adventures\n"
-	.string "with Fragmon awaits! Let's go!$"
+	.string "with D{STAR}FRAG awaits! Let's go!$"

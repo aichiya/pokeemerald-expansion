@@ -17,10 +17,10 @@ Route25_Text_JoeyDefeat::
 	.string "You're decent.$"
 
 Route25_Text_JoeyPostBattle::
-	.string "All Fragmon have weaknesses.\n"
+	.string "All D{STAR}FRAG have weaknesses.\n"
 	.string "Even the strongest ones.\p"
 	.string "That's why it's best to raise\n"
-	.string "Fragmon of different types.$"
+	.string "D{STAR}FRAG of different types.$"
 
 Route25_Text_DanIntro::
 	.string "Dad took me to a great party on\n"
@@ -63,12 +63,12 @@ Route25_Text_ChadDefeat::
 	.string "I knew I'd lose, too!$"
 
 Route25_Text_ChadPostBattle::
-	.string "If your Fragmon gets confused,\n"
+	.string "If your D{STAR}FRAG gets confused,\n"
 	.string "switch it out.\p"
 	.string "That's a good tactic.$"
 
 Route25_Text_HaleyIntro::
-	.string "My friend has many cute Fragmon.\n"
+	.string "My friend has many cute D{STAR}FRAG.\n"
 	.string "I'm so jealous!$"
 
 Route25_Text_HaleyDefeat::
@@ -101,7 +101,7 @@ Route25_Text_NobPostBattle::
 	.string "The POKéMANIAC sure lives up to\n"
 	.string "his name.\p"
 	.string "His collection includes many rare\n"
-	.string "species of Fragmon.$"
+	.string "species of D{STAR}FRAG.$"
 
 Route25_Text_WayneIntro::
 	.string "You're going to see BILL?\n"

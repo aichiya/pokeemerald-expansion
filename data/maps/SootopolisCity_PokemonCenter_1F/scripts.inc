@@ -61,10 +61,10 @@ SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge:
 SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon:
 	.string "Whenever, wherever, and whatever\n"
 	.string "happens, I will always be friends with\l"
-	.string "Fragmon.\p"
-	.string "Because it's fun to be with Fragmon!$"
+	.string "D{STAR}FRAG.\p"
+	.string "Because it's fun to be with D{STAR}FRAG!$"
 
 SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends:
-	.string "Aren't Fragmon our friends?\p"
+	.string "Aren't D{STAR}FRAG our friends?\p"
 	.string "Why are they going wild this way?$"
 

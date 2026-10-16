@@ -254,46 +254,46 @@ SlateportCity_PokemonFanClub_EventScript_Azumarill::
 
 SlateportCity_PokemonFanClub_Text_MeetChairman:
 	.string "Er-hem! I am the CHAIRMAN of the\n"
-	.string "Fragmon FAN CLUB!\p"
+	.string "D{STAR}FRAG FAN CLUB!\p"
 	.string "Being the CHAIRMAN, I am naturally\n"
 	.string "the most important!\p"
 	.string "No one can best me when it comes\n"
-	.string "to raising Fragmon. No one!\p"
+	.string "to raising D{STAR}FRAG. No one!\p"
 	.string "Well, let me tell you about\n"
-	.string "Fragmon CONTESTS.\p"
+	.string "D{STAR}FRAG CONTESTS.\p"
 	.string "They're events where one can show off\n"
-	.string "Fragmon for the world to see!\p"
+	.string "D{STAR}FRAG for the world to see!\p"
 	.string "However, they're held in far-off towns,\n"
 	.string "so I cannot participate often enough.\p"
 	.string "That is why we gather here to show\n"
-	.string "off our Fragmon, and have others\l"
+	.string "off our D{STAR}FRAG, and have others\l"
 	.string "show us theirs.$"
 
 SlateportCity_PokemonFanClub_Text_LikeToSeeEnteredContestPokemon:
-	.string "The Fragmon of a TRAINER who has\n"
-	.string "entered a Fragmon CONTEST…\l"
+	.string "The D{STAR}FRAG of a TRAINER who has\n"
+	.string "entered a D{STAR}FRAG CONTEST…\l"
 	.string "That, I would like to see.$"
 
 SlateportCity_PokemonFanClub_Text_AllowMeToExamineYourPokemon:
 	.string "Er-hem! I see you've participated in\n"
-	.string "a Fragmon CONTEST!\p"
+	.string "a D{STAR}FRAG CONTEST!\p"
 	.string "Please! Allow me to examine how you\n"
-	.string "have raised your Fragmon.\p"
-	.string "It delights me no end to see Fragmon\n"
+	.string "have raised your D{STAR}FRAG.\p"
+	.string "It delights me no end to see D{STAR}FRAG\n"
 	.string "raised by other TRAINERS.\p"
-	.string "The happy expressions of Fragmon\n"
+	.string "The happy expressions of D{STAR}FRAG\n"
 	.string "raised with proper care…\p"
 	.string "The kindly eyes of the TRAINER that\n"
-	.string "nurtured and raised the Fragmon…\p"
+	.string "nurtured and raised the D{STAR}FRAG…\p"
 	.string "The very thought fills my heart to\n"
 	.string "overwhelming with joy.\p"
 	.string "Oh! I do beg your pardon!\n"
 	.string "Forgive me for prattling on so!\p"
 	.string "Please! Allow me to examine how much\n"
-	.string "your Fragmon has grown!$"
+	.string "your D{STAR}FRAG has grown!$"
 
 SlateportCity_PokemonFanClub_Text_HowIsYourPokemonGrowing:
-	.string "How is your Fragmon growing?\n"
+	.string "How is your D{STAR}FRAG growing?\n"
 	.string "Allow me to examine it.$"
 
 SlateportCity_PokemonFanClub_Text_HmHmISee:
@@ -304,13 +304,13 @@ SlateportCity_PokemonFanClub_Text_GiveMonMorePokeblocks:
 	.string "Hmmm… It's not bad, but it's not\n"
 	.string "good, either…\p"
 	.string "You, the TRAINER, must put more\n"
-	.string "effort into raising this Fragmon!\p"
+	.string "effort into raising this D{STAR}FRAG!\p"
 	.string "For instance, may I suggest that\n"
 	.string "you give it more {POKEBLOCK}S?$"
 
 SlateportCity_PokemonFanClub_Text_NoSpaceForReward:
 	.string "Oh, my…\p"
-	.string "Your Fragmon is growing quite well,\n"
+	.string "Your D{STAR}FRAG is growing quite well,\n"
 	.string "so you deserve a reward.\p"
 	.string "Unfortunately, you have no space for\n"
 	.string "this in your BAG.$"
@@ -323,60 +323,60 @@ SlateportCity_PokemonFanClub_Text_MonMostImpressiveGiveItThis:
 	.string "it would grow even better! Indeed!$"
 
 SlateportCity_PokemonFanClub_Text_ExplainRedScarf:
-	.string "Let a Fragmon hold that RED SCARF.\p"
+	.string "Let a D{STAR}FRAG hold that RED SCARF.\p"
 	.string "Everyone will recognize the coolness\n"
-	.string "of that Fragmon!$"
+	.string "of that D{STAR}FRAG!$"
 
 SlateportCity_PokemonFanClub_Text_ExplainBlueScarf:
-	.string "Let a Fragmon hold that BLUE SCARF.\p"
+	.string "Let a D{STAR}FRAG hold that BLUE SCARF.\p"
 	.string "Its beauty will be accentuated much\n"
 	.string "more than now!$"
 
 SlateportCity_PokemonFanClub_Text_ExplainPinkScarf:
-	.string "Let a Fragmon hold that PINK SCARF.\p"
+	.string "Let a D{STAR}FRAG hold that PINK SCARF.\p"
 	.string "It will draw out the cuteness of\n"
-	.string "the Fragmon some more!$"
+	.string "the D{STAR}FRAG some more!$"
 
 SlateportCity_PokemonFanClub_Text_ExplainGreenScarf:
-	.string "Let a Fragmon hold that GREEN SCARF.\p"
+	.string "Let a D{STAR}FRAG hold that GREEN SCARF.\p"
 	.string "That will enhance the\n"
-	.string "smartness of Fragmon!$"
+	.string "smartness of D{STAR}FRAG!$"
 
 SlateportCity_PokemonFanClub_Text_ExplainYellowScarf:
-	.string "Let a Fragmon hold that YELLOW SCARF.\p"
-	.string "It will bolster your Fragmon's\n"
+	.string "Let a D{STAR}FRAG hold that YELLOW SCARF.\p"
+	.string "It will bolster your D{STAR}FRAG's\n"
 	.string "toughness so much more!$"
 
 SlateportCity_PokemonFanClub_Text_NothingElseToGiveYou:
 	.string "I'm sorry, but I've nothing else to\n"
 	.string "give you! None at all!\p"
 	.string "After all, you're blessed with the gift\n"
-	.string "of raising Fragmon without resorting\l"
+	.string "of raising D{STAR}FRAG without resorting\l"
 	.string "to any items!$"
 
 SlateportCity_PokemonFanClub_Text_ShowMePokemonThatLoveYou:
-	.string "I love seeing Fragmon that love\n"
+	.string "I love seeing D{STAR}FRAG that love\n"
 	.string "their TRAINERS.\p"
-	.string "Fragmon are very sensitive to\n"
+	.string "D{STAR}FRAG are very sensitive to\n"
 	.string "the feelings of their TRAINERS.\p"
-	.string "If you treat your Fragmon with love\n"
+	.string "If you treat your D{STAR}FRAG with love\n"
 	.string "and care, they'll love you back.\p"
-	.string "When your Fragmon grow to love you,\n"
+	.string "When your D{STAR}FRAG grow to love you,\n"
 	.string "please come show me.$"
 
 SlateportCity_PokemonFanClub_Text_PokemonAdoresYou:
-	.string "Your Fragmon really adores you.\p"
+	.string "Your D{STAR}FRAG really adores you.\p"
 	.string "For you, a most compassionate\n"
 	.string "TRAINER, a gift from the FAN CLUB!$"
 
 SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove:
-	.string "Fragmon are very sensitive to\n"
+	.string "D{STAR}FRAG are very sensitive to\n"
 	.string "the feelings of their TRAINERS.\p"
-	.string "If you treat your Fragmon with love\n"
+	.string "If you treat your D{STAR}FRAG with love\n"
 	.string "and care, they'll love you back.$"
 
 SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting:
-	.string "If you keep letting a Fragmon faint\n"
+	.string "If you keep letting a D{STAR}FRAG faint\n"
 	.string "in battle, it'll come to resent it.\p"
 	.string "Soon, it will become less trusting\n"
 	.string "of the TRAINER.\p"
@@ -384,7 +384,7 @@ SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting:
 	.string "like you very much.$"
 
 SlateportCity_PokemonFanClub_Text_MonEnjoyedProtein:
-	.string "Do Fragmon enjoy having items used\n"
+	.string "Do D{STAR}FRAG enjoy having items used\n"
 	.string "on them?\p"
 	.string "Mine acted really happy when I gave\n"
 	.string "it some PROTEIN.$"

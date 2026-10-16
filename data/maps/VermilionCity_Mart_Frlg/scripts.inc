@@ -34,15 +34,15 @@ VermilionCity_Mart_Items::
 
 VermilionCity_Mart_Text_TeamRocketAreWickedPeople::
 	.string "There are wicked people who will\n"
-	.string "use Fragmon for criminal acts.\p"
+	.string "use D{STAR}FRAG for criminal acts.\p"
 	.string "TEAM ROCKET traffics in rare\n"
-	.string "Fragmon, for example.\p"
-	.string "They also abandon Fragmon that\n"
+	.string "D{STAR}FRAG, for example.\p"
+	.string "They also abandon D{STAR}FRAG that\n"
 	.string "they consider unpopular or useless.\p"
 	.string "That's the sort of horrid people\n"
 	.string "they are, TEAM ROCKET.$"
 
 VermilionCity_Mart_Text_MonsGoodOrBadDependingOnTrainer::
-	.string "I think Fragmon can be good or\n"
+	.string "I think D{STAR}FRAG can be good or\n"
 	.string "bad. It depends on the TRAINER.$"
 

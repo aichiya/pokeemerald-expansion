@@ -45,7 +45,7 @@ DewfordTown_House2_Text_ExplainSilkScarf:
 	.string "The SILK SCARF raises the power of\n"
 	.string "NORMAL-type moves.\p"
 	.string "It's a marvelous SCARF that will go\n"
-	.string "with almost all Fragmon!$"
+	.string "with almost all D{STAR}FRAG!$"
 
 DewfordTown_House2_Text_BrawlySoCool:
 	.string "Wow, you bothered to cross the sea\n"

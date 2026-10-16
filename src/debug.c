@@ -664,8 +664,8 @@ static const struct DebugMenuOption sDebugMenu_Actions_Party[] =
 static const struct DebugMenuOption sDebugMenu_Actions_Give[] =
 {
     { COMPOUND_STRING("Give item XYZ…"),    DebugAction_Selection_Init, &sGiveItemSelection },
-    { COMPOUND_STRING("Pokémon (Basic)"),   DebugAction_Selection_Init, &sSimplePokemonSelection },
-    { COMPOUND_STRING("Pokémon (Complex)"), DebugAction_Selection_Init, &sComplexPokemonSelection },
+    { COMPOUND_STRING("D{STAR}FRAG (Basic)"),   DebugAction_Selection_Init, &sSimplePokemonSelection },
+    { COMPOUND_STRING("D{STAR}FRAG (Complex)"), DebugAction_Selection_Init, &sComplexPokemonSelection },
     { COMPOUND_STRING("Give Egg"),          DebugAction_Selection_Init, &sEggPokemonSelection },
     { COMPOUND_STRING("Give Decoration…"),  DebugAction_Selection_Init, &sGiveDecorationSelection },
     { COMPOUND_STRING("Max Money"),         DebugAction_Give_MaxMoney },

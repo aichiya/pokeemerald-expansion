@@ -1,11 +1,11 @@
 LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket:
-	.string "This is the Fragmon LOTTERY CORNER.\p"
+	.string "This is the D{STAR}FRAG LOTTERY CORNER.\p"
 	.string "All shoppers at our DEPARTMENT STORE\n"
-	.string "get to draw a Fragmon LOTO TICKET.\p"
+	.string "get to draw a D{STAR}FRAG LOTO TICKET.\p"
 	.string "If the LOTO TICKET's number matches\n"
-	.string "the ID number of any of your Fragmon,\l"
+	.string "the ID number of any of your D{STAR}FRAG,\l"
 	.string "you will receive a fabulous gift.\p"
-	.string "Would you like to draw a Fragmon\n"
+	.string "Would you like to draw a D{STAR}FRAG\n"
 	.string "LOTO TICKET?$"
 
 LilycoveCity_DepartmentStore_1F_Text_ComeBackTomorrow:
@@ -22,7 +22,7 @@ LilycoveCity_DepartmentStore_1F_Text_TicketNumberIsXPleaseWait:
 	.string "The LOTO TICKET number is {STR_VAR_1}.\p"
 	.string "I need to run a check on this number\n"
 	.string "to see if it matches any of your\l"
-	.string "Fragmon's ID numbers. Please wait.$"
+	.string "D{STAR}FRAG's ID numbers. Please wait.$"
 
 LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPartyMon:
 	.string "Congratulations!\p"

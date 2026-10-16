@@ -59,11 +59,11 @@ SilphCo_4F_Text_Grunt1PostBattle::
 	.string "My BOSS has been after this place!$"
 
 SilphCo_4F_Text_RodneyIntro::
-	.string "My Fragmon is my loyal servant.$"
+	.string "My D{STAR}FRAG is my loyal servant.$"
 
 SilphCo_4F_Text_RodneyDefeat::
 	.string "Darn!\n"
-	.string "You weak Fragmon!$"
+	.string "You weak D{STAR}FRAG!$"
 
 SilphCo_4F_Text_RodneyPostBattle::
 	.string "The doors are electronically\n"

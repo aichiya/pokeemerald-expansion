@@ -10,11 +10,11 @@ SlateportCity_House_EventScript_Girl::
 	end
 
 SlateportCity_House_Text_NatureToDoWithStatGains:
-	.string "My Fragmon has a HASTY nature.\p"
+	.string "My D{STAR}FRAG has a HASTY nature.\p"
 	.string "It has higher SPEED compared to\n"
-	.string "my other Fragmon.\p"
+	.string "my other D{STAR}FRAG.\p"
 	.string "Maybe their nature has something to\n"
-	.string "do with the stat gains of Fragmon.$"
+	.string "do with the stat gains of D{STAR}FRAG.$"
 
 SlateportCity_House_Text_MustBeGoingToBattleTent:
 	.string "You're a TRAINER, aren't you?\p"

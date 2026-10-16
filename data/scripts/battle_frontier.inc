@@ -10,4 +10,4 @@ BattleFrontier_ShowCaughtBannedSpeciesEnd:
 
 BattleFrontier_DoYouWantToSeeTheListOfCaughtBannedSpecies:
 	.string "Do you want to see the list of\n"
-	.string "Fragmon species you can't bring?$"
+	.string "D{STAR}FRAG species you can't bring?$"

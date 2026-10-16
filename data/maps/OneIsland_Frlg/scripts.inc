@@ -156,8 +156,8 @@ OneIsland_Text_IslandSign::
 	.string "Friends Gather at Knot Island$"
 
 OneIsland_Text_PokemonNetCenterSign::
-	.string "Expanding the Fragmon World!\n"
-	.string "Fragmon NET CENTER$"
+	.string "Expanding the D{STAR}FRAG World!\n"
+	.string "D{STAR}FRAG NET CENTER$"
 
 @ Unused
 OneIsland_Text_ReturnToCinnabar::

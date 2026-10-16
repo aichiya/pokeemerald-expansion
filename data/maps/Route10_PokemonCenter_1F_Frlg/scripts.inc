@@ -61,7 +61,7 @@ Route10_PokemonCenter_1F_EventScript_GetAideRequestInfo::
 	return
 
 Route10_PokemonCenter_1F_Text_EveryTypeStrongerThanOthers::
-	.string "The types of Fragmon match up\n"
+	.string "The types of D{STAR}FRAG match up\n"
 	.string "differently with each other.\p"
 	.string "Every type is stronger than some\n"
 	.string "types and weaker than others.$"
@@ -86,11 +86,11 @@ Route10_PokemonCenter_1F_Text_GiveEverstoneIfCaught20Mons::
 	.string "EVERSTONE.\p"
 	.string "So, {PLAYER}, let me ask you.\p"
 	.string "Have you gathered data on at least\n"
-	.string "twenty kinds of Fragmon?$"
+	.string "twenty kinds of D{STAR}FRAG?$"
 
 Route10_PokemonCenter_1F_Text_GreatHereYouGo::
 	.string "Great! You have caught or owned\n"
-	.string "{STR_VAR_3} kinds of Fragmon!\p"
+	.string "{STR_VAR_3} kinds of D{STAR}FRAG!\p"
 	.string "Congratulations!\n"
 	.string "Here you go!$"
 
@@ -99,12 +99,12 @@ Route10_PokemonCenter_1F_Text_ReceivedEverstoneFromAide::
 	.string "from the AIDE.$"
 
 Route10_PokemonCenter_1F_Text_ExplainEverstone::
-	.string "Making Fragmon evolve certainly\n"
+	.string "Making D{STAR}FRAG evolve certainly\n"
 	.string "can add to the NC{EMOJI_IRRITATED}PDA.\p"
 	.string "However, at times, you may not\n"
-	.string "want a certain Fragmon to evolve.\p"
+	.string "want a certain D{STAR}FRAG to evolve.\p"
 	.string "In that case, give the EVERSTONE\n"
-	.string "to that Fragmon.\p"
+	.string "to that D{STAR}FRAG.\p"
 	.string "It will prevent evolution according\n"
 	.string "to the PROFESSOR.$"
 

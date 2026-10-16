@@ -374,12 +374,12 @@ BattleFrontier_BattleArenaLobby_Text_ExplainChallenge:
 	.string "In the BATTLE ARENA, we undertake\n"
 	.string "the Set KO Tourney.\p"
 	.string "All participants enter with a team of\n"
-	.string "three Fragmon.\p"
-	.string "The three Fragmon must be lined up in\n"
+	.string "three D{STAR}FRAG.\p"
+	.string "The three D{STAR}FRAG must be lined up in\n"
 	.string "the order in which they are to appear.\p"
-	.string "During battle, the Fragmon will appear\n"
+	.string "During battle, the D{STAR}FRAG will appear\n"
 	.string "one at a time in the preset order.\p"
-	.string "Once a Fragmon enters battle, it must\n"
+	.string "Once a D{STAR}FRAG enters battle, it must\n"
 	.string "remain out until the match is decided.\p"
 	.string "If a match remains undecided in\n"
 	.string "three turns, it goes to judging.\p"
@@ -402,14 +402,14 @@ BattleFrontier_BattleArenaLobby_Text_WhichLevelMode:
 
 BattleFrontier_BattleArenaLobby_Text_SelectThreeMons:
 	.string "Very well, now select your\n"
-	.string "three Fragmon, please.$"
+	.string "three D{STAR}FRAG, please.$"
 
 BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "My dear challenger!\p"
-	.string "You do not have the three Fragmon\n"
+	.string "You do not have the three D{STAR}FRAG\n"
 	.string "required for entry.\p"
 	.string "To qualify, you must bring three\n"
-	.string "different kinds of Fragmon.\p"
+	.string "different kinds of D{STAR}FRAG.\p"
 	.string "They also must not hold the same\n"
 	.string "kinds of items.\p"
 	.string "EGGS{STR_VAR_1}.$"
@@ -420,11 +420,11 @@ BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsEnd:
 
 BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50:
 	.string "My dear challenger!\p"
-	.string "You do not have the three Fragmon\n"
+	.string "You do not have the three D{STAR}FRAG\n"
 	.string "required for entry.\p"
 	.string "To qualify, you must bring three\n"
-	.string "different kinds of Fragmon.\p"
-	.string "The three different Fragmon\n"
+	.string "different kinds of D{STAR}FRAG.\p"
+	.string "The three different D{STAR}FRAG\n"
 	.string "must all be Level 50 or lower.\p"
 	.string "They also must not hold the same\n"
 	.string "kinds of items.\p"
@@ -496,20 +496,20 @@ BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack:
 BattleFrontier_BattleArenaLobby_Text_LandingHitsWorked:
 	.string "I won in judging!\p"
 	.string "Landing hits consistently on\n"
-	.string "the opponent's Fragmon worked!$"
+	.string "the opponent's D{STAR}FRAG worked!$"
 
 BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw:
 	.string "Our match was declared a draw.\p"
 	.string "When we ran out of time, both my\n"
-	.string "Fragmon and the opponent's had about\l"
+	.string "D{STAR}FRAG and the opponent's had about\l"
 	.string "the same amount of HP left.$"
 
 BattleFrontier_BattleArenaLobby_Text_OrderOfMonsImportant:
 	.string "In the BATTLE ARENA, the order of\n"
-	.string "Fragmon is totally important.\p"
-	.string "For example, if your first Fragmon\n"
+	.string "D{STAR}FRAG is totally important.\p"
+	.string "For example, if your first D{STAR}FRAG\n"
 	.string "has certain type disadvantages,\l"
-	.string "try making your second Fragmon one\l"
+	.string "try making your second D{STAR}FRAG one\l"
 	.string "with moves that are super effective\l"
 	.string "against the first one.\p"
 	.string "I think that will be a good way of\n"
@@ -529,8 +529,8 @@ BattleFrontier_BattleArenaLobby_Text_ExplainBattleRules:
 	.string "If the outcome is not decided after\n"
 	.string "three turns, it goes to judging.\p"
 	.string "The REFEREE will choose the winner\n"
-	.string "based on how the Fragmon battled.\p"
-	.string "Also, a Fragmon cannot be switched out\n"
+	.string "based on how the D{STAR}FRAG battled.\p"
+	.string "Also, a D{STAR}FRAG cannot be switched out\n"
 	.string "until its battle's outcome is decided.$"
 
 BattleFrontier_BattleArenaLobby_Text_ExplainMindRules:
@@ -544,7 +544,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainMindRules:
 BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules:
 	.string "The second judging factor is “Skill.”\n"
 	.string "This factor evaluates how effectively\l"
-	.string "Fragmon moves were used.\p"
+	.string "D{STAR}FRAG moves were used.\p"
 	.string "If a move worked successfully,\n"
 	.string "the Skill rating goes up.\p"
 	.string "If a move failed, the Skill rating\n"
@@ -556,7 +556,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules:
 	.string "The Skill rating will not go up for\n"
 	.string "moves such as PROTECT and DETECT.\p"
 	.string "If the opponent used PROTECT or\n"
-	.string "DETECT, and your Fragmon failed to\l"
+	.string "DETECT, and your D{STAR}FRAG failed to\l"
 	.string "hit with a move, its Skill rating will not\l"
 	.string "go down.$"
 
@@ -565,7 +565,7 @@ BattleFrontier_BattleArenaLobby_Text_ExplainBodyRules:
 	.string "This factor is based on how much HP\l"
 	.string "remained at the end of a battle.\p"
 	.string "The rating takes into account how much\n"
-	.string "HP a Fragmon had at the start of\l"
+	.string "HP a D{STAR}FRAG had at the start of\l"
 	.string "battle, and what remained at the end.$"
 
 BattleFrontier_BattleArenaLobby_Text_CongratsOnDefeatingTycoon:

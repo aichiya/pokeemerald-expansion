@@ -268,17 +268,17 @@ EventScript_EggHatch::
 Route117_Text_SeeWifeIfYoudLikeMeToRaiseMon:
 	.string "I'm the DAY-CARE MAN.\p"
 	.string "I help take care of the precious\n"
-	.string "Fragmon of TRAINERS.\p"
-	.string "If you'd like me to raise your Fragmon,\n"
+	.string "D{STAR}FRAG of TRAINERS.\p"
+	.string "If you'd like me to raise your D{STAR}FRAG,\n"
 	.string "have a word with my wife.$"
 
 Route117_Text_DoYouWantEgg:
 	.string "Ah, it's you!\p"
-	.string "We were raising your Fragmon,\n"
+	.string "We were raising your D{STAR}FRAG,\n"
 	.string "and my goodness, were we surprised!\p"
-	.string "Your Fragmon had an EGG!\p"
+	.string "Your D{STAR}FRAG had an EGG!\p"
 	.string "We don't know how it got there,\n"
-	.string "but your Fragmon had it.\p"
+	.string "but your D{STAR}FRAG had it.\p"
 	.string "You do want it, yes?$"
 
 Route117_Text_YourMonIsDoingFine:
@@ -309,7 +309,7 @@ Route117_Text_FriendlyWithOtherTrainersMon:
 
 @ Unused
 Route117_Text_SeeWifeIfYouWantToPickUpMon:
-	.string "If you want to pick up your Fragmon,\n"
+	.string "If you want to pick up your D{STAR}FRAG,\n"
 	.string "have a word with my wife.$"
 
 Route117_Text_YourMonsAreDoingFine:
@@ -322,11 +322,11 @@ Route117_Text_IWillKeepDoYouWantIt:
 
 Route117_PokemonDayCare_Text_WouldYouLikeUsToRaiseAMon:
 	.string "I'm the DAY-CARE LADY.\p"
-	.string "We can raise Fragmon for you.\p"
+	.string "We can raise D{STAR}FRAG for you.\p"
 	.string "Would you like us to raise one?$"
 
 Route117_PokemonDayCare_Text_WhichMonShouldWeRaise:
-	.string "Which Fragmon should we raise for\n"
+	.string "Which D{STAR}FRAG should we raise for\n"
 	.string "you?$"
 
 Route117_PokemonDayCare_Text_WellRaiseYourMon:
@@ -335,7 +335,7 @@ Route117_PokemonDayCare_Text_WellRaiseYourMon:
 	.string "Come back for it later.$"
 
 Route117_PokemonDayCare_Text_WeCanRaiseOneMore:
-	.string "We can raise two of your Fragmon.\n"
+	.string "We can raise two of your D{STAR}FRAG.\n"
 	.string "Would you like us to raise one more?$"
 
 Route117_PokemonDayCare_Text_HusbandWasLookingForYou:
@@ -358,19 +358,19 @@ Route117_PokemonDayCare_Text_ComeAgain:
 
 Route117_PokemonDayCare_Text_GoodToSeeYou:
 	.string "Ah, it's you! Good to see you.\n"
-	.string "Your Fragmon can only be doing good!$"
+	.string "Your D{STAR}FRAG can only be doing good!$"
 
 Route117_PokemonDayCare_Text_YourMonHasGrownXLevels:
 	.string "By level, your {STR_VAR_1} has\n"
 	.string "grown by {STR_VAR_2}.$"
 
 Route117_PokemonDayCare_Text_YourTeamIsFull:
-	.string "Your Fragmon team is full.\n"
+	.string "Your D{STAR}FRAG team is full.\n"
 	.string "Make room, then come see me.$"
 
 @ Unused
 Route117_PokemonDayCare_Text_TakeBackWhichMon:
-	.string "Which Fragmon will you take back?$"
+	.string "Which D{STAR}FRAG will you take back?$"
 
 Route117_PokemonDayCare_Text_ItWillCostX:
 	.string "If you want your {STR_VAR_1} back,\n"
@@ -378,7 +378,7 @@ Route117_PokemonDayCare_Text_ItWillCostX:
 
 Route117_PokemonDayCare_Text_HeresYourMon:
 	.string "Perfect!\n"
-	.string "Here's your Fragmon.$"
+	.string "Here's your D{STAR}FRAG.$"
 
 Route117_PokemonDayCare_Text_TookBackMon:
 	.string "{PLAYER} took back {STR_VAR_1} from\n"
@@ -386,14 +386,14 @@ Route117_PokemonDayCare_Text_TookBackMon:
 
 Route117_PokemonDayCare_Text_YouHaveJustOneMon:
 	.string "Oh? But you have just one\n"
-	.string "Fragmon.\p"
+	.string "D{STAR}FRAG.\p"
 	.string "Come back another time.$"
 
 Route117_PokemonDayCare_Text_TakeYourMonBack:
-	.string "Will you take your Fragmon back?$"
+	.string "Will you take your D{STAR}FRAG back?$"
 
 Route117_PokemonDayCare_Text_WhatWillYouBattleWith:
-	.string "If you leave me that Fragmon,\n"
+	.string "If you leave me that D{STAR}FRAG,\n"
 	.string "what will you battle with?\p"
 	.string "Come back another time.$"
 
@@ -403,7 +403,7 @@ Text_EggHatchHuh:
 Route117_PokemonDayCare_Text_YoullBeLeftWithJustOne:
 	.string "Huh?\n"
 	.string "Now, now.\p"
-	.string "If you leave that Fragmon with\n"
+	.string "If you leave that D{STAR}FRAG with\n"
 	.string "me, you'll be left with just one.\p"
 	.string "You will be better off if you catch\n"
 	.string "some more, I dare say.$"

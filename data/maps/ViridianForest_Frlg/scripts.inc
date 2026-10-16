@@ -65,12 +65,12 @@ ViridianForest_EventScript_Charlie::
 
 ViridianForest_Text_FriendsItchingToBattle::
 	.string "I came here with some friends to\n"
-	.string "catch us some BUG Fragmon!\p"
+	.string "catch us some BUG D{STAR}FRAG!\p"
 	.string "They're all itching to get into\n"
-	.string "some Fragmon battles!$"
+	.string "some D{STAR}FRAG battles!$"
 
 ViridianForest_Text_RickIntro::
-	.string "Hey! You have Fragmon!\n"
+	.string "Hey! You have D{STAR}FRAG!\n"
 	.string "Come on!\l"
 	.string "Let's battle 'em!$"
 
@@ -84,11 +84,11 @@ ViridianForest_Text_RickPostBattle::
 ViridianForest_Text_DougIntro::
 	.string "Yo!\n"
 	.string "You can't jam out if you're a\l"
-	.string "Fragmon TRAINER!$"
+	.string "D{STAR}FRAG TRAINER!$"
 
 ViridianForest_Text_DougDefeat::
 	.string "Huh?\n"
-	.string "I ran out of Fragmon!$"
+	.string "I ran out of D{STAR}FRAG!$"
 
 ViridianForest_Text_DougPostBattle::
 	.string "That totally stinks! I'm going to\n"
@@ -120,31 +120,31 @@ ViridianForest_Text_AnthonyPostBattle::
 	.string "I lost some of my allowance…$"
 
 ViridianForest_Text_CharlieIntro::
-	.string "Did you know that Fragmon evolve?$"
+	.string "Did you know that D{STAR}FRAG evolve?$"
 
 ViridianForest_Text_CharlieDefeat::
 	.string "Oh!\n"
 	.string "I lost!$"
 
 ViridianForest_Text_CharliePostBattle::
-	.string "BUG Fragmon evolve quickly.\n"
+	.string "BUG D{STAR}FRAG evolve quickly.\n"
 	.string "They're a lot of fun!$"
 
 ViridianForest_Text_RanOutOfPokeBalls::
 	.string "I was throwing POKé BALLS to\n"
-	.string "catch Fragmon, and I ran out.\p"
+	.string "catch D{STAR}FRAG, and I ran out.\p"
 	.string "That's why you can never have too\n"
 	.string "many POKé BALLS.$"
 
 ViridianForest_Text_AvoidGrassyAreasWhenWeak::
 	.string "TRAINER TIPS\p"
-	.string "If your Fragmon are weak and you\n"
+	.string "If your D{STAR}FRAG are weak and you\n"
 	.string "want to avoid battles, stay away\l"
 	.string "from grassy areas!$"
 
 ViridianForest_Text_UseAntidoteForPoison::
 	.string "For poison, use ANTIDOTE!\n"
-	.string "Get it at Fragmon MARTS!$"
+	.string "Get it at D{STAR}FRAG MARTS!$"
 
 ViridianForest_Text_ContactOakViaPCToRatePokedex::
 	.string "TRAINER TIPS\p"
@@ -153,14 +153,14 @@ ViridianForest_Text_ContactOakViaPCToRatePokedex::
 
 ViridianForest_Text_CantCatchOwnedMons::
 	.string "TRAINER TIPS\p"
-	.string "You can't catch a Fragmon that\n"
+	.string "You can't catch a D{STAR}FRAG that\n"
 	.string "belongs to someone else.\p"
 	.string "Throw POKé BALLS only at wild\n"
-	.string "Fragmon to catch them!$"
+	.string "D{STAR}FRAG to catch them!$"
 
 ViridianForest_Text_WeakenMonsBeforeCapture::
 	.string "TRAINER TIPS\p"
-	.string "Weaken Fragmon before attempting\n"
+	.string "Weaken D{STAR}FRAG before attempting\n"
 	.string "capture!\p"
 	.string "When healthy, they may escape!$"
 

@@ -364,17 +364,17 @@ CinnabarIsland_Text_ScientistsExperimentInMansion::
 	.string "Scientists conduct experiments \n"
 	.string "in the burned-out building.\p"
 	.string "You know, the one they call the\n"
-	.string "Fragmon MANSION.$"
+	.string "D{STAR}FRAG MANSION.$"
 
 CinnabarIsland_Text_IslandSign::
 	.string "CINNABAR ISLAND\n"
 	.string "The Fiery Town of Burning Desire$"
 
 CinnabarIsland_Text_PokemonLab::
-	.string "Fragmon LAB$"
+	.string "D{STAR}FRAG LAB$"
 
 CinnabarIsland_Text_GymSign::
-	.string "CINNABAR ISLAND Fragmon GYM\n"
+	.string "CINNABAR ISLAND D{STAR}FRAG GYM\n"
 	.string "LEADER: BLAINE\l"
 	.string "The Hotheaded Quiz Master!$"
 
@@ -404,7 +404,7 @@ CinnabarIsland_Text_IllBeWaitingInPokeCenter::
 	.string "What, are you too busy?\p"
 	.string "Well, all right.\n"
 	.string "The boat hasn't arrived yet anyway.\p"
-	.string "I'll be waiting at the Fragmon\n"
+	.string "I'll be waiting at the D{STAR}FRAG\n"
 	.string "CENTER over there.\p"
 	.string "Come see me when you're done with\n"
 	.string "your business here.$"

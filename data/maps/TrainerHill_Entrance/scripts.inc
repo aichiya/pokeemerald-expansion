@@ -364,8 +364,8 @@ TrainerHill_Entrance_Text_ExplainTrainerHill:
 @ Unused
 TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon:
 	.string "Oh, I'm sorry, but you appear to have\n"
-	.string "only one Fragmon with you.\p"
-	.string "You will need at least two Fragmon\n"
+	.string "only one D{STAR}FRAG with you.\p"
+	.string "You will need at least two D{STAR}FRAG\n"
 	.string "to enter this event.$"
 
 TrainerHill_Roof_Text_YouFinallyCameBravo:
@@ -423,7 +423,7 @@ TrainerHill_Entrance_Text_ChallengeTime:
 
 TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead:
 	.string "Who knows what sort of TRAINERS\n"
-	.string "and Fragmon combos are ahead?\p"
+	.string "and D{STAR}FRAG combos are ahead?\p"
 	.string "All I know is that I'll knock aside\n"
 	.string "anyone that stands in my way!$"
 

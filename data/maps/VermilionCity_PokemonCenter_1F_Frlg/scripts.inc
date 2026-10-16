@@ -45,22 +45,22 @@ VermilionCity_PokemonCenter_1F_EventScript_ExplainVSSeeker::
 
 VermilionCity_PokemonCenter_1F_Text_TrainerMonsStrongerThanWild::
 	.string "Even if they are the same level,\n"
-	.string "Fragmon can have very different\l"
+	.string "D{STAR}FRAG can have very different\l"
 	.string "stats and abilities.\p"
-	.string "A Fragmon raised by a TRAINER is\n"
+	.string "A D{STAR}FRAG raised by a TRAINER is\n"
 	.string "stronger than one in the wild.$"
 
 VermilionCity_PokemonCenter_1F_Text_PoisonedMonFaintedWhileWalking::
-	.string "My Fragmon was poisoned!\n"
+	.string "My D{STAR}FRAG was poisoned!\n"
 	.string "It fainted while we were walking!$"
 
 VermilionCity_PokemonCenter_1F_Text_AllMonWeakToSpecificTypes::
 	.string "It is true that a higher-level\n"
-	.string "Fragmon will be more powerful…\p"
-	.string "But, all Fragmon will have weak\n"
+	.string "D{STAR}FRAG will be more powerful…\p"
+	.string "But, all D{STAR}FRAG will have weak\n"
 	.string "points against specific types.\p"
 	.string "So, there appears to be no\n"
-	.string "universally strong Fragmon.$"
+	.string "universally strong D{STAR}FRAG.$"
 
 VermilionCity_PokemonCenter_1F_Text_UrgeToBattleSomeoneAgain::
 	.string "The urge to battle with someone\n"

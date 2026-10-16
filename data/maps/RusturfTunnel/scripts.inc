@@ -425,7 +425,7 @@ RusturfTunnel_Text_Peeko:
 
 RusturfTunnel_Text_GruntIntro:
 	.string "Grah, keelhaul it all!\p"
-	.string "That hostage Fragmon turned out to\n"
+	.string "That hostage D{STAR}FRAG turned out to\n"
 	.string "be worthless!\p"
 	.string "And to think I made a getaway…\n"
 	.string "In this tunnel to nowhere!\p"
@@ -490,7 +490,7 @@ RusturfTunnel_Text_YouShatteredBoulderTakeHM:
 
 RusturfTunnel_Text_ExplainStrength:
 	.string "That HM contains STRENGTH.\p"
-	.string "If a muscular Fragmon were to learn\n"
+	.string "If a muscular D{STAR}FRAG were to learn\n"
 	.string "that, it would be able to move even\l"
 	.string "large boulders.$"
 
@@ -511,15 +511,15 @@ RusturfTunnel_Text_BoyfriendOnOtherSideOfRock:
 RusturfTunnel_Text_MikeIntro:
 	.string "What do you call a wild man up in the\n"
 	.string "mountains? A mountain man, right?\p"
-	.string "So why don't they call a Fragmon in\n"
-	.string "the mountains a mountain Fragmon?$"
+	.string "So why don't they call a D{STAR}FRAG in\n"
+	.string "the mountains a mountain D{STAR}FRAG?$"
 
 RusturfTunnel_Text_MikeDefeat:
-	.string "My Fragmon…\n"
+	.string "My D{STAR}FRAG…\n"
 	.string "Ran out of power…$"
 
 RusturfTunnel_Text_MikePostBattle:
 	.string "They halted development here to\n"
-	.string "protect Fragmon, right?\l"
+	.string "protect D{STAR}FRAG, right?\l"
 	.string "There's a feel-good story!$"
 

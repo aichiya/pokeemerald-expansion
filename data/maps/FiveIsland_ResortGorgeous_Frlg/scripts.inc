@@ -96,7 +96,7 @@ FiveIsland_ResortGorgeous_Text_JackiPostBattle::
 
 FiveIsland_ResortGorgeous_Text_GillianIntro::
 	.string "I'm thinking of having a pool\n"
-	.string "made specially for Fragmon.$"
+	.string "made specially for D{STAR}FRAG.$"
 
 FiveIsland_ResortGorgeous_Text_GillianDefeat::
 	.string "Oh, my goodness gracious!$"

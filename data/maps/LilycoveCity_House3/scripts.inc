@@ -123,7 +123,7 @@ LilycoveCity_House3_Text_ExplainPokeblocks:
 	.string "the better it is. Don't forget this!\p"
 	.string "A good {POKEBLOCK} has a low feel\n"
 	.string "rating and a high level.\p"
-	.string "A Fragmon can eat more good\n"
+	.string "A D{STAR}FRAG can eat more good\n"
 	.string "{POKEBLOCK}S than ordinary ones, too.\p"
 	.string "And this is important.\p"
 	.string "If you want to make smooth {POKEBLOCK}S,\n"
@@ -137,7 +137,7 @@ LilycoveCity_House3_Text_ExplainPokeblocks:
 	.string "people and make {POKEBLOCK}S together.\p"
 	.string "That's about all you need to know to\n"
 	.string "make good {POKEBLOCK}S.\p"
-	.string "If everyone had Fragmon they love,\n"
+	.string "If everyone had D{STAR}FRAG they love,\n"
 	.string "smooth {POKEBLOCK}S, and a loving family,\l"
 	.string "the world would be a happier place.\p"
 	.string "Don't give up, dear!$"
@@ -163,6 +163,6 @@ LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender:
 
 LilycoveCity_House3_Text_GoingToEnterContest:
 	.string "I want to brag about how tough my\n"
-	.string "Fragmon is, so we're going to enter\l"
+	.string "D{STAR}FRAG is, so we're going to enter\l"
 	.string "a CONTEST together.$"
 

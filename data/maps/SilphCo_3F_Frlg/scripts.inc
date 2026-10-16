@@ -40,7 +40,7 @@ SilphCo_3F_Text_WhatAmIToDo::
 
 SilphCo_3F_Text_YouAndYourMonsSavedUs::
 	.string "{PLAYER}!\n"
-	.string "You and your Fragmon saved us!$"
+	.string "You and your D{STAR}FRAG saved us!$"
 
 SilphCo_3F_Text_GruntIntro::
 	.string "Quit messing with us, kid!$"
@@ -62,7 +62,7 @@ SilphCo_3F_Text_JoseDefeat::
 SilphCo_3F_Text_JosePostBattle::
 	.string "Humph…\p"
 	.string "TEAM ROCKET said that if I helped\n"
-	.string "them, they'd let me study Fragmon.$"
+	.string "them, they'd let me study D{STAR}FRAG.$"
 
 SilphCo_3F_Text_FloorSign::
 	.string "SILPH CO. HEAD OFFICE\n"

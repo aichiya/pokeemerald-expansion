@@ -148,7 +148,7 @@ SaffronCity_Text_WatchWhereYoureWalking::
 
 SaffronCity_Text_WeCanExploitMonsAroundWorld::
 	.string "With SILPH under control, we can\n"
-	.string "exploit Fragmon around the world!\p"
+	.string "exploit D{STAR}FRAG around the world!\p"
 	.string "We'll get stinking rich, yeahah!$"
 
 SaffronCity_Text_YouBeatTeamRocket::
@@ -195,9 +195,9 @@ SaffronCity_Text_FightingDojo::
 	.string "FIGHTING DOJO$"
 
 SaffronCity_Text_GymSign::
-	.string "SAFFRON CITY Fragmon GYM\n"
+	.string "SAFFRON CITY D{STAR}FRAG GYM\n"
 	.string "LEADER: SABRINA\l"
-	.string "The Master of PSYCHIC Fragmon!$"
+	.string "The Master of PSYCHIC D{STAR}FRAG!$"
 
 SaffronCity_Text_FullHealCuresStatus::
 	.string "TRAINER TIPS\p"
@@ -212,7 +212,7 @@ SaffronCity_Text_GreatBallImprovedCatchRate::
 	.string "The new GREAT BALL offers improved\n"
 	.string "catching rates.\p"
 	.string "Try it on those hard-to-catch\n"
-	.string "Fragmon.$"
+	.string "D{STAR}FRAG.$"
 
 SaffronCity_Text_SilphCoSign::
 	.string "SILPH CO. OFFICE BUILDING$"
@@ -225,7 +225,7 @@ SaffronCity_Text_SilphsLatestProduct::
 	.string "Release to be determined…$"
 
 SaffronCity_Text_TrainerFanClubSign::
-	.string "Fragmon TRAINER FAN CLUB\p"
+	.string "D{STAR}FRAG TRAINER FAN CLUB\p"
 	.string "Many TRAINERS have scribbled their\n"
 	.string "names on this sign.$"
 

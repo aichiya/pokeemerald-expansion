@@ -75,9 +75,9 @@ LilycoveCity_CoveLilyMotel_1F_Movement_OwnerReturn:
 
 LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot:
 	.string "Hm, so they doubled the guests by\n"
-	.string "using Fragmon as attractions?\p"
+	.string "using D{STAR}FRAG as attractions?\p"
 	.string "Hm, well, maybe I should make a cute\n"
-	.string "Fragmon our inn's mascot.\p"
+	.string "D{STAR}FRAG our inn's mascot.\p"
 	.string "I wonder if that will attract more\n"
 	.string "guests to stay with us?$"
 
@@ -92,10 +92,10 @@ LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV:
 	.string "I can't see the TV!$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem:
-	.string "Amazing! You're telling me a Fragmon\n"
+	.string "Amazing! You're telling me a D{STAR}FRAG\n"
 	.string "found someone's lost item?\p"
 	.string "That's something. If we had some smart\n"
-	.string "Fragmon like that…\p"
+	.string "D{STAR}FRAG like that…\p"
 	.string "We could recover anything that our\n"
 	.string "guests mislaid…$"
 
@@ -110,10 +110,10 @@ LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted:
 	.string "GAME something…$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar:
-	.string "Amazing! A house-sitting Fragmon\n"
+	.string "Amazing! A house-sitting D{STAR}FRAG\n"
 	.string "caught a burglar?\p"
 	.string "That's something. If we had a tough\n"
-	.string "Fragmon as a security guard…\p"
+	.string "D{STAR}FRAG as a security guard…\p"
 	.string "We would be able to provide our guests\n"
 	.string "with greater safety.$"
 

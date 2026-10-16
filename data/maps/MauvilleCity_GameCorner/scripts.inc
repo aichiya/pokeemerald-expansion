@@ -1563,7 +1563,7 @@ MauvilleCity_GameCorner_Text_Gachalady:
 	.string "Some machines are better than\n"
 	.string "others, and there are different\l"
 	.string "rarities in all of them.\p"
-	.string "New Fragmon are also weighted\n"
+	.string "New D{STAR}FRAG are also weighted\n"
 	.string "By your NC{EMOJI_IRRITATED}PDA, so be wary.$"	
 	
 MauvilleCity_GameCorner_Text_Employee:

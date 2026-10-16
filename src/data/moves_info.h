@@ -2471,7 +2471,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Earthquake"),
         .description = COMPOUND_STRING(
             "A powerful quake that\n"
-            "hits all other Fragmon."),
+            "hits all other D{STAR}FRAG."),
         .effect = EFFECT_EARTHQUAKE,
         .power = 100,
         .type = TYPE_NEW_EARTH,
@@ -2768,7 +2768,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
         #if B_TELEPORT_BEHAVIOR >= GEN_8
             "The user switches places\n"
-            "with another party Pokémon."),
+            "with another party D{STAR}FRAG."),
         #else
             "A psychic move for fleeing\n"
             "from battle instantly."),
@@ -3301,7 +3301,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Metronome"),
         .description = COMPOUND_STRING(
             "Waggles a finger to use any\n"
-            "Pokémon move at random."),
+            "D{STAR}FRAG move at random."),
         .effect = EFFECT_METRONOME,
         .power = 0,
         .type = TYPE_NEW_ILLUSION,
@@ -5479,7 +5479,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Perish Song"),
         .description = COMPOUND_STRING(
-            "Any Pokémon hearing this\n"
+            "Any D{STAR}FRAG hearing this\n"
             "song faints in 3 turns."),
         .effect = EFFECT_PERISH_SONG,
         .power = 0,
@@ -7052,7 +7052,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Beat Up"),
         .description = COMPOUND_STRING(
-            "Summons party Pokémon to\n"
+            "Summons party D{STAR}FRAG to\n"
             "join in the attack."),
         .effect = EFFECT_BEAT_UP,
         .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 1 : 10,
@@ -7259,7 +7259,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
         #if B_PREFERRED_ICE_WEATHER == B_ICE_WEATHER_SNOW
             "Boosts the Defense of Ice-\n"
-            "type Pokémon for 5 turns."),
+            "type D{STAR}FRAG for 5 turns."),
         #else
             "Summons a hailstorm that\n"
             "strikes every turn."),
@@ -8277,7 +8277,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Camouflage"),
         .description = COMPOUND_STRING(
-            "Alters the Pokémon's type\n"
+            "Alters the D{STAR}FRAG's type\n"
             "depending on the location."),
         .effect = EFFECT_CAMOUFLAGE,
         .power = 0,
@@ -10136,7 +10136,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Healing Wish"),
         .description = COMPOUND_STRING(
             "Faints to restore the HP and\n"
-            "status of the next Pokémon."),
+            "status of the next D{STAR}FRAG."),
         .effect = EFFECT_HEALING_WISH,
         .power = 0,
         .type = TYPE_NEW_DIVINE,
@@ -10343,7 +10343,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("U-turn"),
         .description = COMPOUND_STRING(
             "Attacks and rushes back to\n"
-            "switch with a party Pokémon."),
+            "switch with a party D{STAR}FRAG."),
         .effect = EFFECT_HIT_ESCAPE,
         .power = 70,
         .type = TYPE_NEW_FLYING,
@@ -12001,7 +12001,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Trick Room"),
         .description = COMPOUND_STRING(
-            "Slower Pokémon get to move\n"
+            "Slower D{STAR}FRAG get to move\n"
             "first for 5 turns."),
         .effect = EFFECT_TRICK_ROOM,
         .power = 0,
@@ -12718,7 +12718,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Lunar Dance"),
         .description = COMPOUND_STRING(
             "Faints to heal the HP, PP, and\n"
-            "status of the next Pokémon."),
+            "status of the next D{STAR}FRAG."),
         .effect = EFFECT_LUNAR_DANCE,
         .power = 0,
         .type = TYPE_NEW_REASON,
@@ -13366,7 +13366,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Synchronic Heart"),
         .description = COMPOUND_STRING(
             "A shock wave that hurts all\n"
-            "Pokémon of the user's type."),
+            "D{STAR}FRAG of the user's type."),
         .effect = EFFECT_SYNCHRONOISE,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 120 : 70,
         .type = TYPE_NEW_HEART,
@@ -14317,7 +14317,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Volt Switch"),
         .description = COMPOUND_STRING(
             "Attacks and rushes back to\n"
-            "switch with a party Pokémon."),
+            "switch with a party D{STAR}FRAG."),
         .effect = EFFECT_HIT_ESCAPE,
         .power = 70,
         .type = TYPE_NEW_ELECTRIC,
@@ -15854,7 +15854,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Flower Shield"),
         .description = COMPOUND_STRING(
             "Raises the Defense of\n"
-            "Nature-type Pokémon."),
+            "Nature-type D{STAR}FRAG."),
         .effect = EFFECT_FLOWER_SHIELD,
         .power = 0,
         .type = TYPE_NEW_NATURE,
@@ -17348,7 +17348,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Spotlight"),
         .description = COMPOUND_STRING(
             "Makes the foe attack the\n"
-            "spotlighted Pokémon."),
+            "spotlighted D{STAR}FRAG."),
         .effect = EFFECT_FOLLOW_ME,
         .power = 0,
         .type = TYPE_NEW_ILLUSION,
@@ -19011,7 +19011,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Teatime"),
         .description = COMPOUND_STRING(
-            "All Pokémon have teatime\n"
+            "All D{STAR}FRAG have teatime\n"
             "and eat their Berries."),
         .effect = EFFECT_TEATIME,
         .power = 0,
@@ -20057,7 +20057,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Corrosive Gas"),
         .description = COMPOUND_STRING(
             "Highly acidic gas melts items\n"
-            "held by surrounding Pokémon."),
+            "held by surrounding D{STAR}FRAG."),
         .effect = EFFECT_CORROSIVE_GAS,
         .power = 0,
         .type = TYPE_NEW_MIASMA,
@@ -20111,7 +20111,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Flip Turn"),
         .description = COMPOUND_STRING(
             "Attacks and rushes back to\n"
-            "switch with a party Pokémon."),
+            "switch with a party D{STAR}FRAG."),
         .effect = EFFECT_HIT_ESCAPE,
         .power = 60,
         .type = TYPE_NEW_WATER,
@@ -21753,7 +21753,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "strikes every turn."),
         #else
             "Boosts the Defense of Ice-\n"
-            "type Pokémon for 5 turns."),
+            "type D{STAR}FRAG for 5 turns."),
         #endif
         .effect = EFFECT_WEATHER,
         .power = 0,
@@ -29518,7 +29518,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Guardian of Alola"),
         .description = COMPOUND_STRING(
-            "The Land Spirit Pokémon\n"
+            "The Land Spirit D{STAR}FRAG\n"
             "greatly reduces the foe's HP."),
         .effect = EFFECT_FIXED_PERCENT_DAMAGE,
         .power = 1,

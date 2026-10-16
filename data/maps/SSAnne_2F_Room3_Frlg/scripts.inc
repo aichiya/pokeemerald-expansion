@@ -10,7 +10,7 @@ SSAnne_2F_Room3_EventScript_OldMan::
 	end
 
 SSAnne_2F_Room3_Text_SeenMonsFerryPeople::
-	.string "Ah, yes, I have seen some Fragmon\n"
+	.string "Ah, yes, I have seen some D{STAR}FRAG\n"
 	.string "ferry people across the water!$"
 
 SSAnne_2F_Room3_Text_SomeTreesCanBeCutDown::

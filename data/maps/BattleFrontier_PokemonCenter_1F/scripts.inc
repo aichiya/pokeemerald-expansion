@@ -39,15 +39,15 @@ BattleFrontier_PokemonCenter_1F_EventScript_Skitty::
 
 BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon:
 	.string "There was someone here using a \n"
-	.string "Fragmon I've never seen before.\p"
+	.string "D{STAR}FRAG I've never seen before.\p"
 	.string "I never learned about it at\n"
 	.string "TRAINER'S SCHOOL at least.\p"
-	.string "I wonder where you can catch Fragmon\n"
+	.string "I wonder where you can catch D{STAR}FRAG\n"
 	.string "like that.$"
 
 BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena:
 	.string "Okay! Next stop, the BATTLE ARENA!\n"
-	.string "I'd better get the right Fragmon from\l"
+	.string "I'd better get the right D{STAR}FRAG from\l"
 	.string "the PC Storage System.$"
 
 BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge:

@@ -6,13 +6,13 @@ Route5_PokemonDayCare_Frlg_MapScripts::
 Route5_PokemonDayCare_Text_WantMeToRaiseMon::
 	.string "I run the DAY-CARE service.\p"
 	.string "Would you like me to raise one of\n"
-	.string "your Fragmon?$"
+	.string "your D{STAR}FRAG?$"
 
 Route5_PokemonDayCare_Text_ComeAgain::
 	.string "Come again.$"
 
 Route5_PokemonDayCare_Text_WhichMonShouldIRaise::
-	.string "Which Fragmon should I raise?$"
+	.string "Which D{STAR}FRAG should I raise?$"
 
 Route5_PokemonDayCare_Text_ComeAnytimeYouLike::
 	.string "Fine.\n"
@@ -32,22 +32,22 @@ Route5_PokemonDayCare_Text_MonNeedsToSpendMoreTime::
 
 Route5_PokemonDayCare_Text_OweMeXForMonsReturn::
 	.string "You owe me ¥{STR_VAR_2} for the return\n"
-	.string "of this Fragmon.$"
+	.string "of this D{STAR}FRAG.$"
 
 Route5_PokemonDayCare_Text_ThankYouHeresMon::
 	.string "Thank you!\n"
-	.string "Here's your Fragmon.$"
+	.string "Here's your D{STAR}FRAG.$"
 
 Route5_PokemonDayCare_Text_PlayerGotMonBack::
 	.string "{PLAYER} got {STR_VAR_1} back\n"
 	.string "from the DAY-CARE MAN.$"
 
 Route5_PokemonDayCare_Text_OnlyHaveOneMonWithYou::
-	.string "Oh? You only have one Fragmon\n"
+	.string "Oh? You only have one D{STAR}FRAG\n"
 	.string "with you.$"
 
 Route5_PokemonDayCare_Text_WhatWillYouBattleWith::
-	.string "If you leave me that Fragmon,\n"
+	.string "If you leave me that D{STAR}FRAG,\n"
 	.string "what will you battle with?$"
 
 Route5_PokemonDayCare_Text_MonHasGrownByXLevels::
@@ -58,7 +58,7 @@ Route5_PokemonDayCare_Text_MonHasGrownByXLevels::
 	.string "Aren't I great?$"
 
 Route5_PokemonDayCare_Text_YouveGotNoRoomForIt::
-	.string "You can't take this Fragmon back\n"
+	.string "You can't take this D{STAR}FRAG back\n"
 	.string "if you've got no room for it.$"
 
 Route5_PokemonDayCare_Text_DontHaveEnoughMoney::

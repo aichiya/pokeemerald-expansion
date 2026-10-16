@@ -270,7 +270,7 @@ RustboroCity_DevonCorp_2F_EventScript_WorkOnNext::
 
 RustboroCity_DevonCorp_2F_Text_DeviceForTalkingToPokemon:
 	.string "We're developing a device for talking\n"
-	.string "with Fragmon.\p"
+	.string "with D{STAR}FRAG.\p"
 	.string "But we haven't had much success…$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopingNewBalls:
@@ -282,9 +282,9 @@ RustboroCity_DevonCorp_2F_Text_WeFinallyMadeNewBalls:
 	.string "We finally made new kinds of\n"
 	.string "POKé BALLS!\p"
 	.string "The REPEAT BALL makes it easier to\n"
-	.string "catch Fragmon you've caught before.\p"
+	.string "catch D{STAR}FRAG you've caught before.\p"
 	.string "The TIMER BALL gets better at catching\n"
-	.string "Fragmon the longer a battle runs.\p"
+	.string "D{STAR}FRAG the longer a battle runs.\p"
 	.string "Both are proudly developed by\n"
 	.string "the DEVON CORPORATION.\p"
 	.string "Please give them a try!$"
@@ -299,7 +299,7 @@ RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav:
 	.string "That's a DL{EMOJI_BIGWHEEL}GEAR!\p"
 	.string "It came about as a result of our\n"
 	.string "PRESIDENT's desire to learn about\l"
-	.string "the feelings of Fragmon.\p"
+	.string "the feelings of D{STAR}FRAG.\p"
 	.string "Would you like me to describe its\n"
 	.string "features in detail?\p"
 	.string "No, no. I think you'll find out just by\n"
@@ -308,18 +308,18 @@ RustboroCity_DevonCorp_2F_Text_WowThatsAPokenav:
 RustboroCity_DevonCorp_2F_Text_DeviceToVisualizePokemonDreams:
 	.string "I'm trying to develop a device that\n"
 	.string "visually reproduces the dreams of\l"
-	.string "Fragmon…\p"
+	.string "D{STAR}FRAG…\p"
 	.string "But it's not going well.$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils:
 	.string "I've been trying to develop a device\n"
-	.string "that resurrects Fragmon from fossils…\p"
+	.string "that resurrects D{STAR}FRAG from fossils…\p"
 	.string "And, it's working!$"
 
 RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife:
 	.string "Wait! That thing you have there…\n"
-	.string "Is that a Fragmon fossil?\p"
-	.string "Would you like to bring that Fragmon\n"
+	.string "Is that a D{STAR}FRAG fossil?\p"
+	.string "Would you like to bring that D{STAR}FRAG\n"
 	.string "back to life?\p"
 	.string "I can with my newly developed\n"
 	.string "FOSSIL REGENERATOR.$"
@@ -333,7 +333,7 @@ RustboroCity_DevonCorp_2F_Text_TwoFossilsPickOne:
 	.string "Oh, now that's a surprise!\n"
 	.string "You have not one, but two, fossils?\p"
 	.string "Unfortunately, my machine can only\n"
-	.string "regenerate one Fragmon at a time.\p"
+	.string "regenerate one D{STAR}FRAG at a time.\p"
 	.string "Would you like to pick one of your\n"
 	.string "fossils for regeneration?$"
 
@@ -353,9 +353,9 @@ RustboroCity_DevonCorp_2F_Text_FossilRegeneratorTakesTime:
 
 RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife:
 	.string "Thanks for waiting!\p"
-	.string "Your fossilized Fragmon has been\n"
+	.string "Your fossilized D{STAR}FRAG has been\n"
 	.string "brought back to life!\p"
-	.string "The fossil was an ancient Fragmon.\n"
+	.string "The fossil was an ancient D{STAR}FRAG.\n"
 	.string "{STR_VAR_2}, it was!$"
 
 RustboroCity_DevonCorp_2F_Text_ReceivedMonFromResearcher:
@@ -364,7 +364,7 @@ RustboroCity_DevonCorp_2F_Text_ReceivedMonFromResearcher:
 
 @ Unused
 RustboroCity_DevonCorp_2F_Text_TooManyPokemon:
-	.string "Uh-oh, you've got too many Fragmon.\n"
+	.string "Uh-oh, you've got too many D{STAR}FRAG.\n"
 	.string "You have no room for this one.$"
 
 RustboroCity_DevonCorp_2F_Text_DevelopNewPokenavFeature:

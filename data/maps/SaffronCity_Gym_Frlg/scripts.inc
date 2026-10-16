@@ -119,11 +119,11 @@ SaffronCity_Gym_Text_SabrinaPostBattle::
 	.string "People just don't realize it.$"
 
 SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis::
-	.string "The MARSHBADGE makes Fragmon up\n"
+	.string "The MARSHBADGE makes D{STAR}FRAG up\n"
 	.string "to Lv. 70 obey you.\p"
-	.string "Stronger Fragmon will become wild,\n"
+	.string "Stronger D{STAR}FRAG will become wild,\n"
 	.string "ignoring your orders in battle.\p"
-	.string "Just don't raise your Fragmon too\n"
+	.string "Just don't raise your D{STAR}FRAG too\n"
 	.string "much to avoid that problem.\p"
 	.string "Wait, please take this TM with you.$"
 
@@ -133,7 +133,7 @@ SaffronCity_Gym_Text_ReceivedTM04FromSabrina::
 
 SaffronCity_Gym_Text_ExplainTM04::
 	.string "TM04 is CALM MIND.\p"
-	.string "It makes the Fragmon concentrate\n"
+	.string "It makes the D{STAR}FRAG concentrate\n"
 	.string "to raise both SP. ATK and SP. DEF.$"
 
 SaffronCity_Gym_Text_BagFullOfOtherItems::
@@ -159,13 +159,13 @@ SaffronCity_Gym_Text_JohanDefeat::
 	.string "I never foresaw this!$"
 
 SaffronCity_Gym_Text_JohanPostBattle::
-	.string "PSYCHIC Fragmon fear only ghosts\n"
+	.string "PSYCHIC D{STAR}FRAG fear only ghosts\n"
 	.string "and bugs!$"
 
 SaffronCity_Gym_Text_StacyIntro::
-	.string "Fragmon take on the appearance of\n"
+	.string "D{STAR}FRAG take on the appearance of\n"
 	.string "their TRAINERS.\p"
-	.string "Your Fragmon must be tough, then!$"
+	.string "Your D{STAR}FRAG must be tough, then!$"
 
 SaffronCity_Gym_Text_StacyDefeat::
 	.string "I knew it!$"
@@ -173,12 +173,12 @@ SaffronCity_Gym_Text_StacyDefeat::
 SaffronCity_Gym_Text_StacyPostBattle::
 	.string "I have much to learn still…\p"
 	.string "I must master PSYCHIC and teach it\n"
-	.string "to my Fragmon…$"
+	.string "to my D{STAR}FRAG…$"
 
 SaffronCity_Gym_Text_TyronIntro::
 	.string "You understand, don't you?\p"
 	.string "That power alone isn't enough to\n"
-	.string "win in the world of Fragmon?$"
+	.string "win in the world of D{STAR}FRAG?$"
 
 SaffronCity_Gym_Text_TyronDefeat::
 	.string "I don't believe this!$"
@@ -188,7 +188,7 @@ SaffronCity_Gym_Text_TyronPostBattle::
 	.string "MASTER next door.$"
 
 SaffronCity_Gym_Text_TashaIntro::
-	.string "You and I, our Fragmon shall\n"
+	.string "You and I, our D{STAR}FRAG shall\n"
 	.string "battle!$"
 
 SaffronCity_Gym_Text_TashaDefeat::
@@ -208,7 +208,7 @@ SaffronCity_Gym_Text_CameronDefeat::
 	.string "Down and out!$"
 
 SaffronCity_Gym_Text_CameronPostBattle::
-	.string "There used to be two Fragmon GYMS\n"
+	.string "There used to be two D{STAR}FRAG GYMS\n"
 	.string "in SAFFRON.\p"
 	.string "The FIGHTING DOJO next door lost\n"
 	.string "its GYM status, though.\p"
@@ -216,7 +216,7 @@ SaffronCity_Gym_Text_CameronPostBattle::
 	.string "decided to have just one GYM.$"
 
 SaffronCity_Gym_Text_PrestonIntro::
-	.string "SAFFRON Fragmon GYM is famous for\n"
+	.string "SAFFRON D{STAR}FRAG GYM is famous for\n"
 	.string "training psychics.\p"
 	.string "You want to see SABRINA, don't\n"
 	.string "you? I can tell!$"
@@ -231,10 +231,10 @@ SaffronCity_Gym_Text_PrestonPostBattle::
 SaffronCity_Gym_Text_GymGuyAdvice::
 	.string "Yo!\n"
 	.string "Champ in the making!\p"
-	.string "SABRINA's Fragmon use psychic\n"
+	.string "SABRINA's D{STAR}FRAG use psychic\n"
 	.string "power instead of force.\p"
-	.string "FIGHTING Fragmon are especially\n"
-	.string "weak against PSYCHIC Fragmon.\p"
+	.string "FIGHTING D{STAR}FRAG are especially\n"
+	.string "weak against PSYCHIC D{STAR}FRAG.\p"
 	.string "They'll get destroyed before they\n"
 	.string "can even aim a punch!$"
 
@@ -244,13 +244,13 @@ SaffronCity_Gym_Text_GymGuyPostVictory::
 	.string "at the slots!$"
 
 SaffronCity_Gym_Text_GymStatue::
-	.string "SAFFRON Fragmon GYM\n"
+	.string "SAFFRON D{STAR}FRAG GYM\n"
 	.string "LEADER: SABRINA\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}$"
 
 SaffronCity_Gym_Text_GymStatuePlayerWon::
-	.string "SAFFRON Fragmon GYM\n"
+	.string "SAFFRON D{STAR}FRAG GYM\n"
 	.string "LEADER: SABRINA\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}, {PLAYER}$"

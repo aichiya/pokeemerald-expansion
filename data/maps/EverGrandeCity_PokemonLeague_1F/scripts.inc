@@ -128,10 +128,10 @@ EverGrandeCity_PokemonLeague_1F_Text_MustHaveAllGymBadges:
 
 EverGrandeCity_PokemonLeague_1F_Text_HaventObtainedAllBadges:
 	.string "You haven't obtained all the BADGES.\p"
-	.string "If you're bound for the Fragmon\n"
+	.string "If you're bound for the D{STAR}FRAG\n"
 	.string "LEAGUE, you must return with them.$"
 
 EverGrandeCity_PokemonLeague_1F_Text_GoForth:
 	.string "TRAINER! Believe in yourself and your\n"
-	.string "Fragmon, and go forth!$"
+	.string "D{STAR}FRAG, and go forth!$"
 

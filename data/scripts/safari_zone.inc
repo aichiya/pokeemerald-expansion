@@ -114,12 +114,12 @@ SafariZone_Text_PokeblockWasPlaced:
 Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
 	.string "Welcome to the SAFARI ZONE!\p"
 	.string "Here, you may witness many kinds of\n"
-	.string "Fragmon rarely seen in HOENN.\p"
+	.string "D{STAR}FRAG rarely seen in HOENN.\p"
 	.string "And, you'll see them in their wild,\n"
 	.string "untamed state in natural habitats.\p"
 	.string "What's more, we've thrown open the\n"
-	.string "gates to Fragmon TRAINERS.\p"
-	.string "You're encouraged to catch Fragmon\n"
+	.string "gates to D{STAR}FRAG TRAINERS.\p"
+	.string "You're encouraged to catch D{STAR}FRAG\n"
 	.string "for keeps!\p"
 	.string "Come in and enjoy the SAFARI ZONE!$"
 
@@ -133,7 +133,7 @@ Route121_SafariZoneEntrance_Text_ComeInAndEnjoy:
 Route121_SafariZoneEntrance_Text_FirstTimeInfo:
 	.string "When you enter the SAFARI ZONE, you\n"
 	.string "start with 30 SAFARI BALLS for\l"
-	.string "catching Fragmon.\p"
+	.string "catching D{STAR}FRAG.\p"
 	.string "The SAFARI Game is over when you run\n"
 	.string "out of SAFARI BALLS, or when you've\l"
 	.string "walked 500 steps.\p"
@@ -203,44 +203,44 @@ SafariZone_South_Text_GoodLuck:
 SafariZone_South_Text_Boy:
 	.string "Did you know?\p"
 	.string "If you put a {POKEBLOCK} in that square box,\n"
-	.string "Fragmon gather around.$"
+	.string "D{STAR}FRAG gather around.$"
 
 SafariZone_South_Text_Man:
 	.string "I want to keep going deeper, but I\n"
 	.string "forgot to bring a BIKE.\p"
-	.string "Something tells me that rare Fragmon\n"
+	.string "Something tells me that rare D{STAR}FRAG\n"
 	.string "live in the outlying areas.$"
 
 SafariZone_Southwest_Text_Woman:
 	.string "Sometimes, when I toss a {POKEBLOCK} at \n"
-	.string "Fragmon, it gets ignored.\p"
-	.string "Do Fragmon have likes and dislikes\n"
+	.string "D{STAR}FRAG, it gets ignored.\p"
+	.string "Do D{STAR}FRAG have likes and dislikes\n"
 	.string "about what they eat?$"
 
 SafariZone_Northwest_Text_Man:
 	.string "Gasp… Gasp…\n"
 	.string "I…made it out here…but…\p"
 	.string "I'm exhausted… I don't have the\n"
-	.string "energy to catch Fragmon…$"
+	.string "energy to catch D{STAR}FRAG…$"
 
 SafariZone_North_Text_Fisherman:
-	.string "I'm on a mission to find WATER Fragmon\n"
+	.string "I'm on a mission to find WATER D{STAR}FRAG\n"
 	.string "you don't see in HOENN.\p"
 	.string "Do you have any idea where the lake is?$"
 
 SafariZone_North_Text_Man:
-	.string "I'm going to catch a lot of rare Fragmon\n"
+	.string "I'm going to catch a lot of rare D{STAR}FRAG\n"
 	.string "here and trade them with my friends!$"
 
 SafariZone_South_Text_Youngster:
 	.string "I put a {POKEBLOCK} on the {POKEBLOCK} FEEDER.\n"
 	.string "But it seems to have disappeared.\p"
-	.string "I guess Fragmon must have eaten it\n"
+	.string "I guess D{STAR}FRAG must have eaten it\n"
 	.string "without me noticing.$"
 
 Route121_SafariZoneEntrance_Text_TrainerTip:
 	.string "SAFARI ZONE TRAINER TIP!\p"
-	.string "Throw {POKEBLOCK}S at wild Fragmon to make\n"
+	.string "Throw {POKEBLOCK}S at wild D{STAR}FRAG to make\n"
 	.string "them less likely to flee.$"
 
 SafariZone_Southwest_Text_RestHouseSign:
@@ -249,21 +249,21 @@ SafariZone_Southwest_Text_RestHouseSign:
 
 SafariZone_RestHouse_Text_Youngster:
 	.string "I don't have any {POKEBLOCK}S, but I caught\n"
-	.string "a good number of Fragmon.\p"
+	.string "a good number of D{STAR}FRAG.\p"
 	.string "You can improve your chances of making\n"
 	.string "a catch by getting closer to them\l"
 	.string "before throwing a SAFARI BALL.$"
 
 SafariZone_RestHouse_Text_PsychicM:
-	.string "If you use {POKEBLOCK}S, wild Fragmon won't\n"
+	.string "If you use {POKEBLOCK}S, wild D{STAR}FRAG won't\n"
 	.string "be so quick to run away.\p"
 	.string "It's not much use to give {POKEBLOCK}S to\n"
-	.string "Fragmon that don't flee easily.$"
+	.string "D{STAR}FRAG that don't flee easily.$"
 
 SafariZone_RestHouse_Text_FatMan:
 	.string "If you put a {POKEBLOCK} on the FEEDER,\n"
-	.string "Fragmon are attracted to it.\p"
-	.string "I think Fragmon with the same sort of\n"
+	.string "D{STAR}FRAG are attracted to it.\p"
+	.string "I think D{STAR}FRAG with the same sort of\n"
 	.string "nature are drawn by a certain {POKEBLOCK}.$"
 
 SafariZone_South_Text_AreaOffLimits1:
@@ -281,16 +281,16 @@ SafariZone_South_Text_AreaOffLimits2:
 
 SafariZone_Southeast_Text_LittleGirl:
 	.string "Wow! Whee! I haven't seen any of\n"
-	.string "these Fragmon before!$"
+	.string "these D{STAR}FRAG before!$"
 
 SafariZone_Southeast_Text_FatMan:
-	.string "The Fragmon in this area are all\n"
+	.string "The D{STAR}FRAG in this area are all\n"
 	.string "new to me.\p"
 	.string "And I'm allowed to catch these rare\n"
-	.string "Fragmon! Too cool!$"
+	.string "D{STAR}FRAG! Too cool!$"
 
 SafariZone_Southeast_Text_RichBoy:
-	.string "The Fragmon around here seem to be\n"
+	.string "The D{STAR}FRAG around here seem to be\n"
 	.string "from somewhere other than HOENN.$"
 
 SafariZone_Northeast_Text_Boy:

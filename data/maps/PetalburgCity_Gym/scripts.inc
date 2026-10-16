@@ -1144,7 +1144,7 @@ PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
 	.string "I'm surprised that you managed to\n"
 	.string "get here by yourself.\p"
 	.string "Oh, I see.\n"
-	.string "You're with your Fragmon.\p"
+	.string "You're with your D{STAR}FRAG.\p"
 	.string "Hm… Then I guess you're going to\n"
 	.string "become a TRAINER like me, {PLAYER}.\p"
 	.string "That's great news!\n"
@@ -1152,7 +1152,7 @@ PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
 
 PetalburgCity_Gym_Text_WallyIdLikeAPokemon:
 	.string "Um… I…\n"
-	.string "I'd like to get a Fragmon, please…$"
+	.string "I'd like to get a D{STAR}FRAG, please…$"
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight:
 	.string "DAD: Hm? You're… Uh… Oh, right.\n"
@@ -1162,8 +1162,8 @@ PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
 	.string "WALLY: I'm going to go stay with my\n"
 	.string "relatives in VERDANTURF TOWN.\p"
 	.string "I thought I would be lonely by myself,\n"
-	.string "so I wanted to take a Fragmon along.\p"
-	.string "But I've never caught a Fragmon before.\n"
+	.string "so I wanted to take a D{STAR}FRAG along.\p"
+	.string "But I've never caught a D{STAR}FRAG before.\n"
 	.string "I don't know how…$"
 
 PetalburgCity_Gym_Text_DadHmISee:
@@ -1173,15 +1173,15 @@ PetalburgCity_Gym_Text_DadPlayerGoWithWally:
 	.string "DAD: {PLAYER}, you heard that,\n"
 	.string "right?\p"
 	.string "Go with WALLY and make sure that he\n"
-	.string "safely catches a Fragmon.$"
+	.string "safely catches a D{STAR}FRAG.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
-	.string "WALLY, here, I'll loan you my Fragmon.\p"
+	.string "WALLY, here, I'll loan you my D{STAR}FRAG.\p"
 	.string "WALLY received a ZIGZAGOON!$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
 	.string "WALLY: Oh, wow!\n"
-	.string "A Fragmon!\p"
+	.string "A D{STAR}FRAG!\p"
 	.string "DAD: Hm. I'll give you a POKé BALL, too.\n"
 	.string "Go for it!\p"
 	.string "WALLY received a POKé BALL!$"
@@ -1199,11 +1199,11 @@ PetalburgCity_Gym_Text_DadSoDidItWorkOut:
 
 PetalburgCity_Gym_Text_WallyThankYouBye:
 	.string "WALLY: Thank you, yes, it did.\n"
-	.string "Here's your Fragmon back.\p"
+	.string "Here's your D{STAR}FRAG back.\p"
 	.string "{PLAYER}, thank you for coming along\n"
 	.string "with me.\p"
 	.string "You two are why I was able to catch\n"
-	.string "my Fragmon.\p"
+	.string "my D{STAR}FRAG.\p"
 	.string "I promise I'll take really good\n"
 	.string "care of it.\p"
 	.string "Oh! My mom's waiting for me,\n"
@@ -1218,7 +1218,7 @@ PetalburgCity_Gym_Text_DadGoCollectBadges:
 	.string "town.\p"
 	.string "There, you should challenge\n"
 	.string "the GYM LEADER, ROXANNE.\p"
-	.string "After her, go on to other Fragmon\n"
+	.string "After her, go on to other D{STAR}FRAG\n"
 	.string "GYMS and defeat their LEADERS.\p"
 	.string "Collect BADGES from them,\n"
 	.string "understood?\p"
@@ -1229,7 +1229,7 @@ PetalburgCity_Gym_Text_DadGoCollectBadges:
 
 PetalburgCity_Gym_Text_NormanGoToRustboro:
 	.string "DAD: Hm? Aren't you going to the\n"
-	.string "Fragmon GYM in RUSTBORO CITY?\p"
+	.string "D{STAR}FRAG GYM in RUSTBORO CITY?\p"
 	.string "There's no challenge for me to\n"
 	.string "battle a greenhorn TRAINER.\p"
 	.string "{PLAYER}, I want you to challenge me\n"
@@ -1256,7 +1256,7 @@ PetalburgCity_Gym_Text_NormanIntro:
 	.string "DAD: Hm…\n"
 	.string "So, you did get four GYM BADGES.\p"
 	.string "Fine, as I promised, we will have\n"
-	.string "a Fragmon battle.\p"
+	.string "a D{STAR}FRAG battle.\p"
 	.string "{PLAYER}…\p"
 	.string "I'm so happy that I can have\n"
 	.string "a real battle with my own child.\p"
@@ -1280,8 +1280,8 @@ PetalburgCity_Gym_Text_ReceivedBalanceBadge:
 
 PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
 	.string "DAD: With that BADGE, the DEFENSE\n"
-	.string "of all your Fragmon will increase.\p"
-	.string "Fragmon that know the HM move SURF\n"
+	.string "of all your D{STAR}FRAG will increase.\p"
+	.string "D{STAR}FRAG that know the HM move SURF\n"
 	.string "will be able to travel over water.\p"
 	.string "This is my gift to you. {PLAYER}, I'm\n"
 	.string "sure you can use it correctly.$"
@@ -1289,7 +1289,7 @@ PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
 PetalburgCity_Gym_Text_ExplainFacade:
 	.string "DAD: TM42 contains FACADE.\p"
 	.string "It doubles the power of moves if\n"
-	.string "the Fragmon is poisoned, paralyzed,\l"
+	.string "the D{STAR}FRAG is poisoned, paralyzed,\l"
 	.string "or burned.\p"
 	.string "It might be able to turn a bad\n"
 	.string "situation into an advantage.$"
@@ -1320,7 +1320,7 @@ PetalburgCity_Gym_Text_DadGoingToKeepTraining:
 
 PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough:
 	.string "DAD: {PLAYER}, how are things going?\p"
-	.string "The world of Fragmon is deep.\p"
+	.string "The world of D{STAR}FRAG is deep.\p"
 	.string "I honestly think that no amount of\n"
 	.string "training would ever be enough.$"
 
@@ -1367,14 +1367,14 @@ PetalburgCity_Gym_Text_RandallPostBattle:
 PetalburgCity_Gym_Text_RandallPostBadge:
 	.string "Whomever you beat, and whomever you\n"
 	.string "may lose to, you never shirk from\l"
-	.string "training yourself and your Fragmon.\p"
+	.string "training yourself and your D{STAR}FRAG.\p"
 	.string "That's what I think being a\n"
 	.string "GYM LEADER is all about.$"
 
 PetalburgCity_Gym_Text_ParkerIntro:
 	.string "This is the CONFUSION ROOM.\p"
 	.string "Let me see how well bonded you are\n"
-	.string "with your Fragmon!$"
+	.string "with your D{STAR}FRAG!$"
 
 PetalburgCity_Gym_Text_ParkerDefeat:
 	.string "I couldn't confuse your team enough…\n"
@@ -1417,7 +1417,7 @@ PetalburgCity_Gym_Text_BerkeIntro:
 	.string "I'm not going to take it easy just\n"
 	.string "because you're our LEADER's kid.\p"
 	.string "I'll show you how horrid it is for\n"
-	.string "a Fragmon to take a critical hit!$"
+	.string "a D{STAR}FRAG to take a critical hit!$"
 
 PetalburgCity_Gym_Text_BerkeDefeat:
 	.string "Your power…\n"
@@ -1450,14 +1450,14 @@ PetalburgCity_Gym_Text_MaryPostBattle:
 	.string "TRAINERS waiting for you.\p"
 	.string "The left is the DEFENSE ROOM, and\n"
 	.string "the right is the RECOVERY ROOM.\p"
-	.string "Your Fragmon's ATTACK power will be\n"
+	.string "Your D{STAR}FRAG's ATTACK power will be\n"
 	.string "on trial either way.$"
 
 PetalburgCity_Gym_Text_MaryPostBadge:
 	.string "Do you know what we're trying to\n"
 	.string "achieve as TRAINERS?\p"
 	.string "We're striving to become soul mates\n"
-	.string "with our Fragmon.$"
+	.string "with our D{STAR}FRAG.$"
 
 PetalburgCity_Gym_Text_AlexiaIntro:
 	.string "The higher the DEFENSE, the more\n"
@@ -1489,17 +1489,17 @@ PetalburgCity_Gym_Text_JodyDefeat:
 	.string "But… I went all out!$"
 
 PetalburgCity_Gym_Text_JodyPostBattle:
-	.string "The way you use your Fragmon…\n"
+	.string "The way you use your D{STAR}FRAG…\n"
 	.string "It's like your father's style.\p"
 	.string "Go on through! The GYM LEADER, your\n"
 	.string "father, is waiting!$"
 
 PetalburgCity_Gym_Text_JodyPostBadge:
-	.string "Sure, it's fine to make your Fragmon\n"
+	.string "Sure, it's fine to make your D{STAR}FRAG\n"
 	.string "stronger.\p"
 	.string "But what decides the winner?\p"
 	.string "Why, it's the feelings TRAINERS have\n"
-	.string "for their Fragmon.$"
+	.string "for their D{STAR}FRAG.$"
 
 PetalburgCity_Gym_Text_DoorAppearsLocked:
 	.string "This door appears to be locked\n"
@@ -1540,15 +1540,15 @@ PetalburgCity_Gym_Text_EnterOHKORoom:
 
 PetalburgCity_Gym_Text_EnterGymLeadersRoom:
 	.string "“GYM LEADER'S ROOM\p"
-	.string "“See for yourself what Fragmon await\n"
+	.string "“See for yourself what D{STAR}FRAG await\n"
 	.string "you!” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_GymStatue:
-	.string "PETALBURG CITY Fragmon GYM$"
+	.string "PETALBURG CITY D{STAR}FRAG GYM$"
 
 PetalburgCity_Gym_Text_GymStatueCertified:
-	.string "PETALBURG CITY Fragmon GYM\p"
+	.string "PETALBURG CITY D{STAR}FRAG GYM\p"
 	.string "NORMAN'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
@@ -1584,8 +1584,8 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
 	.string "Inside a GYM, it doesn't matter that\n"
 	.string "we are a parent and child.\p"
 	.string "Hm? Wait a second, {PLAYER}.\p"
-	.string "Do you only have one Fragmon that is\n"
+	.string "Do you only have one D{STAR}FRAG that is\n"
 	.string "capable of battle?\p"
 	.string "Sorry, but you'll have to come back\n"
-	.string "with at least two Fragmon.$"
+	.string "with at least two D{STAR}FRAG.$"
 

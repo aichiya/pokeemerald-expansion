@@ -201,22 +201,22 @@ RustboroCity_PokemonSchool_EventScript_ScottWatchStudents::
 
 RustboroCity_PokemonSchool_Text_BlackboardListsStatusChanges:
 	.string "The blackboard lists status changes\n"
-	.string "that may affect Fragmon in battle.$"
+	.string "that may affect D{STAR}FRAG in battle.$"
 
 RustboroCity_PokemonSchool_Text_ReadWhichTopic:
 	.string "Which topic do you want to read?$"
 
 RustboroCity_PokemonSchool_Text_ExplainPoison:
-	.string "If a Fragmon is poisoned, it will\n"
+	.string "If a D{STAR}FRAG is poisoned, it will\n"
 	.string "steadily lose HP.\p"
 	.string "The effects of poison remain after\n"
 	.string "a battle.\p"
-	.string "A poisoned Fragmon's HP will drop\n"
+	.string "A poisoned D{STAR}FRAG's HP will drop\n"
 	.string "while it is traveling.\p"
 	.string "Heal a poisoning using an ANTIDOTE.$"
 
 RustboroCity_PokemonSchool_Text_ExplainParalysis:
-	.string "If a Fragmon becomes paralyzed,\n"
+	.string "If a D{STAR}FRAG becomes paralyzed,\n"
 	.string "its SPEED drops.\p"
 	.string "It may also not be able to move while\n"
 	.string "it is in battle.\p"
@@ -224,9 +224,9 @@ RustboroCity_PokemonSchool_Text_ExplainParalysis:
 	.string "Cure it using a PARLYZ HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainSleep:
-	.string "If a Fragmon falls asleep, it will be\n"
+	.string "If a D{STAR}FRAG falls asleep, it will be\n"
 	.string "unable to attack.\p"
-	.string "A Fragmon may wake up on its own,\n"
+	.string "A D{STAR}FRAG may wake up on its own,\n"
 	.string "but if a battle ends while it is\l"
 	.string "sleeping, it will stay asleep.\p"
 	.string "Wake it up using an AWAKENING.$"
@@ -238,7 +238,7 @@ RustboroCity_PokemonSchool_Text_ExplainBurn:
 	.string "Cure a burn using a BURN HEAL.$"
 
 RustboroCity_PokemonSchool_Text_ExplainFreeze:
-	.string "If a Fragmon is frozen, it becomes\n"
+	.string "If a D{STAR}FRAG is frozen, it becomes\n"
 	.string "completely helpless.\p"
 	.string "It will remain frozen after battle.\n"
 	.string "Thaw it out using an ICE HEAL.$"
@@ -251,16 +251,16 @@ RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:
 	.string "this item.$"
 
 RustboroCity_PokemonSchool_Text_ExplainQuickClaw:
-	.string "A Fragmon holding the QUICK CLAW will\n"
+	.string "A D{STAR}FRAG holding the QUICK CLAW will\n"
 	.string "occasionally speed up and get to move\l"
 	.string "before its opponent.\p"
 	.string "There are many other items that are\n"
-	.string "meant to be held by Fragmon.\p"
+	.string "meant to be held by D{STAR}FRAG.\p"
 	.string "Just those alone will give you many\n"
 	.string "topics to study!$"
 
 RustboroCity_PokemonSchool_Text_TradingRightNow:
-	.string "I'm trading Fragmon with my friend\n"
+	.string "I'm trading D{STAR}FRAG with my friend\n"
 	.string "right now.$"
 
 RustboroCity_PokemonSchool_Text_AlwaysWantedSeedot:
@@ -268,38 +268,38 @@ RustboroCity_PokemonSchool_Text_AlwaysWantedSeedot:
 	.string "I'm finally getting one!$"
 
 RustboroCity_PokemonSchool_Text_PokemontCantUseManMadeItems:
-	.string "Fragmon can hold items, but they\n"
+	.string "D{STAR}FRAG can hold items, but they\n"
 	.string "don't know what to do with man-made\l"
 	.string "items like POTION and ANTIDOTE.$"
 
 RustboroCity_PokemonSchool_Text_ConfusedPokemonAttacksItself:
-	.string "You know how some Fragmon moves can\n"
-	.string "confuse a Fragmon?\p"
-	.string "A confused Fragmon will sometimes\n"
+	.string "You know how some D{STAR}FRAG moves can\n"
+	.string "confuse a D{STAR}FRAG?\p"
+	.string "A confused D{STAR}FRAG will sometimes\n"
 	.string "attack itself without meaning to.\p"
 	.string "But once it leaves battle, it will\n"
 	.string "return to normal.$"
 
 RustboroCity_PokemonSchool_Text_PokemonHealItselfWithBerry:
-	.string "A Fragmon holding a BERRY will heal\n"
+	.string "A D{STAR}FRAG holding a BERRY will heal\n"
 	.string "itself…\p"
 	.string "There are many kinds of items that\n"
-	.string "Fragmon can hold…\p"
+	.string "D{STAR}FRAG can hold…\p"
 	.string "Boy, it sure is hard taking notes\n"
 	.string "down…$"
 
 RustboroCity_PokemonSchool_Text_StudentsNotes:
 	.string "It's this student's notebook…\p"
-	.string "Fragmon are to be caught using\n"
+	.string "D{STAR}FRAG are to be caught using\n"
 	.string "POKé BALLS.\p"
-	.string "Up to six Fragmon can accompany\n"
+	.string "Up to six D{STAR}FRAG can accompany\n"
 	.string "a TRAINER.\p"
 	.string "A TRAINER is someone who catches\n"
-	.string "Fragmon, raises them, and battles\l"
+	.string "D{STAR}FRAG, raises them, and battles\l"
 	.string "with them.\p"
 	.string "A TRAINER's mission is to defeat\n"
 	.string "the strong TRAINERS who await\l"
-	.string "challengers in Fragmon GYMS.$"
+	.string "challengers in D{STAR}FRAG GYMS.$"
 
 RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "Hello? Didn't we meet before?\n"
@@ -309,11 +309,11 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyCut:
 	.string "I've been traveling everywhere in\n"
 	.string "search of outstanding TRAINERS.\p"
 	.string "More specifically, I'm looking for\n"
-	.string "Fragmon battle experts.\p"
+	.string "D{STAR}FRAG battle experts.\p"
 	.string "So, what brings you to this SCHOOL?\n"
 	.string "Are you a TRAINER, too?\p"
 	.string "The first thing you should do is to\n"
-	.string "have a Fragmon learn the move CUT.\p"
+	.string "have a D{STAR}FRAG learn the move CUT.\p"
 	.string "If I remember correctly, someone in\n"
 	.string "this town has CUT.$"
 
@@ -339,7 +339,7 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 	.string "I've been traveling everywhere in\n"
 	.string "search of outstanding TRAINERS.\p"
 	.string "More specifically, I'm looking for\n"
-	.string "Fragmon battle experts.\p"
+	.string "D{STAR}FRAG battle experts.\p"
 	.string "Oh, what's that?\n"
 	.string "It's a STONE BADGE, isn't it?\p"
 	.string "That's pretty impressive, I'd say, for\n"

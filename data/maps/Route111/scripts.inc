@@ -563,7 +563,7 @@ Route111_Text_BattleOurFamily:
 	.string "Hello! I take it you're a traveler.\p"
 	.string "How's this? What do you say to taking\n"
 	.string "on our family of four in a series of\l"
-	.string "Fragmon battles?$"
+	.string "D{STAR}FRAG battles?$"
 
 Route111_Text_IsThatSo:
 	.string "Is that so?\n"
@@ -621,10 +621,10 @@ Route111_Text_VickyPostBattle:
 	.string "visit with us awhile.$"
 
 Route111_Text_ToughToKeepWinningUpTheRanks:
-	.string "If you don't raise your Fragmon some\n"
+	.string "If you don't raise your D{STAR}FRAG some\n"
 	.string "more, it could be tough to keep winning\l"
 	.string "up through the ranks.\p"
-	.string "I've heard the Fragmon LEAGUE's\n"
+	.string "I've heard the D{STAR}FRAG LEAGUE's\n"
 	.string "ELITE FOUR are far stronger than\l"
 	.string "any GYM LEADER.$"
 
@@ -655,7 +655,7 @@ Route111_Text_OldLadysRestStopSign:
 
 Route111_Text_TrainerTipsSpAtkSpDef:
 	.string "TRAINER TIPS\p"
-	.string "One of the indicators of a Fragmon's\n"
+	.string "One of the indicators of a D{STAR}FRAG's\n"
 	.string "powerfulness is SP. ATK. It stands for\l"
 	.string "“SPECIAL ATTACK.”\p"
 	.string "Likewise, SP. DEF stands for “SPECIAL\n"

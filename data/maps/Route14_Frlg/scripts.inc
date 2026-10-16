@@ -7,24 +7,24 @@ Route14_EventScript_RouteSign::
 
 Route14_Text_CarterIntro::
 	.string "You need to use TMs to teach good\n"
-	.string "moves to Fragmon.$"
+	.string "moves to D{STAR}FRAG.$"
 
 Route14_Text_CarterDefeat::
 	.string "Not good enough quite yet.$"
 
 Route14_Text_CarterPostBattle::
-	.string "You have some HMs, right? Fragmon\n"
+	.string "You have some HMs, right? D{STAR}FRAG\n"
 	.string "can't forget those moves easily.$"
 
 Route14_Text_MitchIntro::
-	.string "My bird Fragmon should be ready\n"
+	.string "My bird D{STAR}FRAG should be ready\n"
 	.string "for battle.$"
 
 Route14_Text_MitchDefeat::
 	.string "Not ready yet!$"
 
 Route14_Text_MitchPostBattle::
-	.string "My bird Fragmon need to learn\n"
+	.string "My bird D{STAR}FRAG need to learn\n"
 	.string "better moves.$"
 
 Route14_Text_BeckIntro::
@@ -37,13 +37,13 @@ Route14_Text_BeckDefeat::
 	.string "Aww, bummer!$"
 
 Route14_Text_BeckPostBattle::
-	.string "Try teaching Fragmon a move that's\n"
+	.string "Try teaching D{STAR}FRAG a move that's\n"
 	.string "the same type as it.\p"
 	.string "That apparently boosts the power\n"
 	.string "of the move.$"
 
 Route14_Text_MarlonIntro::
-	.string "Have you taught your bird Fragmon\n"
+	.string "Have you taught your bird D{STAR}FRAG\n"
 	.string "how to FLY?\p"
 	.string "You'll be able to soar with it into\n"
 	.string "the sky!$"
@@ -52,7 +52,7 @@ Route14_Text_MarlonDefeat::
 	.string "Shot down in flames!$"
 
 Route14_Text_MarlonPostBattle::
-	.string "Bird Fragmon are my one true love.\n"
+	.string "Bird D{STAR}FRAG are my one true love.\n"
 	.string "I don't want to raise anything else.$"
 
 Route14_Text_DonaldIntro::
@@ -65,7 +65,7 @@ Route14_Text_DonaldDefeat::
 
 Route14_Text_DonaldPostBattle::
 	.string "Well, the winged mirages are the\n"
-	.string "legendary bird Fragmon.\p"
+	.string "legendary bird D{STAR}FRAG.\p"
 	.string "There are three of them: ARTICUNO,\n"
 	.string "ZAPDOS, and MOLTRES.$"
 
@@ -101,7 +101,7 @@ Route14_Text_IsaacDefeat::
 	.string "You!?$"
 
 Route14_Text_IsaacPostBattle::
-	.string "Raising Fragmon is a drag, man.$"
+	.string "Raising D{STAR}FRAG is a drag, man.$"
 
 Route14_Text_GeraldIntro::
 	.string "We ride out here because of the\n"
@@ -111,13 +111,13 @@ Route14_Text_GeraldDefeat::
 	.string "Wipeout!$"
 
 Route14_Text_GeraldPostBattle::
-	.string "It's cool you made your Fragmon so\n"
+	.string "It's cool you made your D{STAR}FRAG so\n"
 	.string "strong.\p"
 	.string "Might is right!\n"
 	.string "And you know it!$"
 
 Route14_Text_MalikIntro::
-	.string "Fragmon battle?\n"
+	.string "D{STAR}FRAG battle?\n"
 	.string "Cool! Rumble!$"
 
 Route14_Text_MalikDefeat::
@@ -144,7 +144,7 @@ Route14_Text_KiriPostBattle::
 
 Route14_Text_KiriNotEnoughMons::
 	.string "KIRI: We can battle if you have\n"
-	.string "two Fragmon.$"
+	.string "two D{STAR}FRAG.$"
 
 Route14_Text_JanIntro::
 	.string "JAN: KIRI, here we go!\n"
@@ -160,4 +160,4 @@ Route14_Text_JanPostBattle::
 
 Route14_Text_JanNotEnoughMons::
 	.string "JAN: You want to battle?\n"
-	.string "You don't have enough Fragmon.$"
+	.string "You don't have enough D{STAR}FRAG.$"

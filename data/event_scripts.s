@@ -1362,11 +1362,11 @@ Common_EventScript_PlayerHandedOverTheItem::
 @ The below and surf.inc could be split into some text/notices.inc
 gText_PokemartSign::
 	.string "“Selected items for your convenience!”\n"
-	.string "FRAGMON MART$"
+	.string "D{STAR}FRAG MART$"
 
 gText_PokemonCenterSign::
 	.string "“Rejuvenate your tired partners!”\n"
-	.string "FRAGMON CENTER$"
+	.string "D{STAR}FRAG CENTER$"
 
 gText_MomOrDadMightLikeThisProgram::
 	.string "{STR_VAR_1} might like this program.\n"
@@ -1386,12 +1386,12 @@ gText_SelectWithoutRegisteredItem::
 	.string "registered to SELECT for easy use.$"
 
 gText_PokemonTrainerSchoolEmail::
-	.string "There's an e-mail from Fragmon Trainer\n"
+	.string "There's an e-mail from D{STAR}FRAG Trainer\n"
 	.string "School.\p"
 	.string "… … … … … …\p"
-	.string "A Fragmon may learn up to four moves.\p"
+	.string "A D{STAR}FRAG may learn up to four moves.\p"
 	.string "A trainer's expertise is tested on the\n"
-	.string "move sets chosen for Fragmon.\p"
+	.string "move sets chosen for D{STAR}FRAG.\p"
 	.string "… … … … … …$"
 
 gText_PlayerHouseBootPC::
@@ -1406,24 +1406,24 @@ gText_UnusedNicknameReceivedPokemon::
 
 gText_PlayerWhitedOut::
 	.string "{PLAYER} is out of usable\n"
-	.string "Fragmon!\p{PLAYER} whited out!$"
+	.string "D{STAR}FRAG!\p{PLAYER} whited out!$"
 
 gText_FirstShouldRestoreMonsHealth::
 	.string "First, you should restore your\n"
-	.string "Fragmon to full health.$"
+	.string "D{STAR}FRAG to full health.$"
 
 gText_MonsHealedShouldBuyPotions::
-	.string "Your Fragmon have been healed\n"
+	.string "Your D{STAR}FRAG have been healed\n"
 	.string "to perfect health.\p"
-	.string "If your Fragmon's energy, HP,\n"
+	.string "If your D{STAR}FRAG's energy, HP,\n"
 	.string "is down, please come see us.\p"
 	.string "If you're planning to go far in the\n"
 	.string "field, you should buy some POTIONS\l"
-	.string "at the Fragmon Mart.\p"
+	.string "at the D{STAR}FRAG Mart.\p"
 	.string "We hope you excel!$"
 
 gText_MonsHealed::
-	.string "Your Fragmon have been healed\n"
+	.string "Your D{STAR}FRAG have been healed\n"
 	.string "to perfect health.\p"
 	.string "We hope you excel!$"
 
@@ -1437,16 +1437,16 @@ gText_HadQuiteAnExperienceTakeRest::
 
 gText_MomExplainHPGetPotions::
 	.string "MOM: Oh, good! You and your\n"
-	.string "Fragmon are looking great.\p"
+	.string "D{STAR}FRAG are looking great.\p"
 	.string "I just heard from {STR_VAR_1}.\p"
-	.string "He said that Fragmon's energy is\n"
+	.string "He said that D{STAR}FRAG's energy is\n"
 	.string "measured in HP.\p"
-	.string "If your Fragmon lose their HP,\n"
+	.string "If your D{STAR}FRAG lose their HP,\n"
 	.string "you can restore them at any\l"
-	.string "Fragmon Center.\p"
+	.string "D{STAR}FRAG Center.\p"
 	.string "If you're going to travel far away,\n"
 	.string "the smart trainer stocks up on\l"
-	.string "Potions at the Fragmon Mart.\p"
+	.string "Potions at the D{STAR}FRAG Mart.\p"
 	.string "Make me proud, honey!\p"
 	.string "Take care!$"
 
@@ -1464,12 +1464,12 @@ gText_ComeBackWithSecretPower::
 	.string "you good stuff in secrecy.$"
 
 gText_PokerusExplanation::
-	.string "Your Fragmon may be infected with\n"
+	.string "Your D{STAR}FRAG may be infected with\n"
 	.string "Virus.\p"
 	.string "Little is known about the Virus\n"
 	.string "except that they are microscopic life-\l"
-	.string "forms that attach to Fragmon.\p"
-	.string "While infected, Fragmon are said to\n"
+	.string "forms that attach to D{STAR}FRAG.\p"
+	.string "While infected, D{STAR}FRAG are said to\n"
 	.string "grow exceptionally well.$"
 
 	.include "data/text/surf.inc"
@@ -1483,7 +1483,7 @@ gText_BigHoleInTheWall::
 
 gText_SorryWirelessClubAdjustments::
 	.string "I'm terribly sorry.\n"
-	.string "The Fragmon Wireless Club is\l"
+	.string "The D{STAR}FRAG Wireless Club is\l"
 	.string "undergoing adjustments now.$"
 
 gText_UndergoingAdjustments::

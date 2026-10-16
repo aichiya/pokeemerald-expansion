@@ -22,16 +22,16 @@ SafariZone_West_Text_KogaPatrolsSafariEverySoOften::
 	.string "knowing that we're safe.$"
 
 SafariZone_West_Text_RocksMakeMonRunButEasierCatch::
-	.string "Tossing ROCKS at Fragmon might\n"
+	.string "Tossing ROCKS at D{STAR}FRAG might\n"
 	.string "make them run, but they'll be\l"
 	.string "easier to catch.$"
 
 SafariZone_West_Text_BaitMakesMonStickAround::
-	.string "Using BAIT will make Fragmon more\n"
+	.string "Using BAIT will make D{STAR}FRAG more\n"
 	.string "likely to stick around if they get\l"
 	.string "busy eating.$"
 
 SafariZone_West_Text_HikedLotsDidntSeeMonIWanted::
 	.string "I hiked a lot, but I didn't see any\n"
-	.string "Fragmon I wanted.$"
+	.string "D{STAR}FRAG I wanted.$"
 

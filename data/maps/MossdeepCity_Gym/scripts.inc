@@ -373,15 +373,15 @@ MossdeepCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going, CHAMPION-bound\n"
 	.string "{PLAYER}?\p"
 	.string "The GYM LEADERS here use\n"
-	.string "PSYCHIC-type Fragmon.\p"
+	.string "PSYCHIC-type D{STAR}FRAG.\p"
 	.string "If you go up against them with\n"
-	.string "FIGHTING- or POISON-type Fragmon,\l"
+	.string "FIGHTING- or POISON-type D{STAR}FRAG,\l"
 	.string "they'll inflict horrible damage!\p"
 	.string "Plus, they'll come at you with\n"
 	.string "outstanding combination attacks.\p"
 	.string "If you want to win, you'll need to show\n"
 	.string "them how tight you are with your\l"
-	.string "Fragmon. Go for it!$"
+	.string "D{STAR}FRAG. Go for it!$"
 
 MossdeepCity_Gym_Text_GymGuidePostVictory:
 	.string "Wow, you're astounding!\n"
@@ -419,7 +419,7 @@ MossdeepCity_Gym_Text_BlakeIntro:
 	.string "Sometimes, I'm out of sync…$"
 
 MossdeepCity_Gym_Text_BlakeDefeat:
-	.string "My Fragmon battling skills are out\n"
+	.string "My D{STAR}FRAG battling skills are out\n"
 	.string "of sync, too!$"
 
 MossdeepCity_Gym_Text_BlakePostBattle:
@@ -540,7 +540,7 @@ MossdeepCity_Gym_Text_MaceyPostBattle:
 
 MossdeepCity_Gym_Text_NicholasIntro:
 	.string "Wroooar! Have a taste of my super\n"
-	.string "Fragmon hard-battling power!$"
+	.string "D{STAR}FRAG hard-battling power!$"
 
 MossdeepCity_Gym_Text_NicholasDefeat:
 	.string "Oh!\n"
@@ -548,7 +548,7 @@ MossdeepCity_Gym_Text_NicholasDefeat:
 
 MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "All right! I think I'll develop a special\n"
-	.string "invincible Fragmon power next.$"
+	.string "invincible D{STAR}FRAG power next.$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
 	.string "TATE: Hehehe… Were you surprised?\p"
@@ -576,7 +576,7 @@ MossdeepCity_Gym_Text_ReceivedMindBadge:
 
 MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis:
 	.string "TATE: The MIND BADGE enhances the\n"
-	.string "SP. ATK and SP. DEF of Fragmon.\p"
+	.string "SP. ATK and SP. DEF of D{STAR}FRAG.\p"
 	.string "LIZA: It also lets you use the HM move\n"
 	.string "DIVE outside of battle.\p"
 	.string "TATE: You should also take this, too.$"
@@ -587,7 +587,7 @@ MossdeepCity_Gym_Text_ExplainCalmMind:
 	.string "TATE: It raises SP. ATK and…\n"
 	.string "LIZA: It raises SP. DEF!\p"
 	.string "TATE: It's a move that's perfect…\n"
-	.string "LIZA: For PSYCHIC Fragmon!\p"
+	.string "LIZA: For PSYCHIC D{STAR}FRAG!\p"
 	.string "… … … … … …$"
 
 MossdeepCity_Gym_Text_RegisteredTateAndLiza:
@@ -596,7 +596,7 @@ MossdeepCity_Gym_Text_RegisteredTateAndLiza:
 
 MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 	.string "TATE: Looks like the bond between you\n"
-	.string "and your Fragmon is far stronger than\l"
+	.string "and your D{STAR}FRAG is far stronger than\l"
 	.string "the bond that we share as twins.\p"
 	.string "LIZA: You will become even stronger!\n"
 	.string "We've battled you, so we know.$"
@@ -605,22 +605,22 @@ MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
 	.string "TATE: Hehehe… Were you surprised?\p"
 	.string "LIZA: That there are two GYM LEADERS?\p"
 	.string "TATE: Oops, you have only one…\n"
-	.string "LIZA: Fragmon that can battle.\p"
+	.string "LIZA: D{STAR}FRAG that can battle.\p"
 	.string "TATE: We can't battle that way!\p"
 	.string "LIZA: If you want to challenge us,\n"
-	.string "bring some more Fragmon.$"
+	.string "bring some more D{STAR}FRAG.$"
 
 MossdeepCity_Gym_Text_GymStatue:
-	.string "MOSSDEEP CITY Fragmon GYM$"
+	.string "MOSSDEEP CITY D{STAR}FRAG GYM$"
 
 MossdeepCity_Gym_Text_GymStatueCertified:
-	.string "MOSSDEEP CITY Fragmon GYM\p"
+	.string "MOSSDEEP CITY D{STAR}FRAG GYM\p"
 	.string "LIZA AND TATE'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 MossdeepCity_Gym_Text_TateAndLizaPreRematch:
-	.string "TATE: Fragmon…\n"
-	.string "LIZA: Fragmon…\p"
+	.string "TATE: D{STAR}FRAG…\n"
+	.string "LIZA: D{STAR}FRAG…\p"
 	.string "TATE: By changing the party's mix…\n"
 	.string "LIZA: The battle style changes.\p"
 	.string "TATE: But me…\n"
@@ -631,7 +631,7 @@ MossdeepCity_Gym_Text_TateAndLizaPreRematch:
 	.string "LIZA: We'll show you again and again!$"
 
 MossdeepCity_Gym_Text_TateAndLizaRematchDefeat:
-	.string "TATE: You and your Fragmon…\n"
+	.string "TATE: You and your D{STAR}FRAG…\n"
 	.string "LIZA: It's as if you were siblings!$"
 
 MossdeepCity_Gym_Text_TateAndLizaPostRematch:
@@ -647,7 +647,7 @@ MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
 	.string "LIZA: To give us a rematch.\p"
 	.string "TATE: But…\n"
 	.string "LIZA: For our match…\p"
-	.string "TATE: You brought just one Fragmon!\n"
-	.string "LIZA: You brought just one Fragmon!\p"
+	.string "TATE: You brought just one D{STAR}FRAG!\n"
+	.string "LIZA: You brought just one D{STAR}FRAG!\p"
 	.string "TATE: We need you to bring at least…\n"
-	.string "LIZA: Two Fragmon when you come back.$"
+	.string "LIZA: Two D{STAR}FRAG when you come back.$"

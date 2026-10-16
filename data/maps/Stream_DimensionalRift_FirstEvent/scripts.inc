@@ -113,9 +113,9 @@ Stream_DimensionalRift_FirstEvent_Text_Tsukasa1:
 Stream_DimensionalRift_FirstEvent_Text_Tsukasa2:
 	.string "???: I see.\p"
 	.string "Just right now you became the champion\n"
-	.string "of Pokémon League.\p"
+	.string "of D{STAR}FRAG League.\p"
 	.string "It seems that you came from one of\n"
-	.string "the world of Pokémon, aren't you?\p"
+	.string "the world of D{STAR}FRAG, aren't you?\p"
 	.string "As for answering your question,\n"
 	.string "this place is a kind of dimensional rift\l"
 	.string "between world.\p"
@@ -127,7 +127,7 @@ Stream_DimensionalRift_FirstEvent_Text_Tsukasa2:
 Stream_DimensionalRift_FirstEvent_Text_Tsukasa3:
 	.string "???: Ahh… Just like that one.\p"
 	.string "I believe it comes from the reverse\n"
-	.string "side of the world of Pokémon.\p"
+	.string "side of the world of D{STAR}FRAG.\p"
 	.string "Here it comes!$"
 
 Stream_DimensionalRift_FirstEvent_Text_Tsukasa4:

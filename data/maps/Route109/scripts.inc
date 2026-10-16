@@ -522,7 +522,7 @@ Route109_Text_LittleKidsDartAround:
 	.string "Little kids can dart around so quickly…\p"
 	.string "You don't dare take your eyes off them\n"
 	.string "for an instant. It's very taxing.\p"
-	.string "Mine are with my Fragmon, so they\n"
+	.string "Mine are with my D{STAR}FRAG, so they\n"
 	.string "should be okay, but…$"
 
 Route109_Text_SandCastleTakingLongTime:
@@ -558,7 +558,7 @@ Route109_Text_SeashoreHouseSign:
 
 Route109_Text_TrainerTipsSign:
 	.string "TRAINER TIPS\p"
-	.string "Fragmon at the same level may not\n"
+	.string "D{STAR}FRAG at the same level may not\n"
 	.string "always have identical stats.\p"
-	.string "Fragmon raised by TRAINERS are said\n"
-	.string "to grow stronger than wild Fragmon.$"
+	.string "D{STAR}FRAG raised by TRAINERS are said\n"
+	.string "to grow stronger than wild D{STAR}FRAG.$"

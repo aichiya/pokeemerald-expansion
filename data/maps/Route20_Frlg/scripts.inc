@@ -39,7 +39,7 @@ Route20_Text_BarryDefeat::
 	.string "Splash!$"
 
 Route20_Text_BarryPostBattle::
-	.string "I wish I could ride my Fragmon.\n"
+	.string "I wish I could ride my D{STAR}FRAG.\n"
 	.string "I bet you're not tired.$"
 
 Route20_Text_ShirleyIntro::
@@ -81,10 +81,10 @@ Route20_Text_DeanDefeat::
 
 Route20_Text_DeanPostBattle::
 	.string "I should've been buffing up my\n"
-	.string "Fragmon, not me!$"
+	.string "D{STAR}FRAG, not me!$"
 
 Route20_Text_DarrinIntro::
-	.string "Why are you riding a Fragmon?\n"
+	.string "Why are you riding a D{STAR}FRAG?\n"
 	.string "Can't you swim?$"
 
 Route20_Text_DarrinDefeat::
@@ -92,10 +92,10 @@ Route20_Text_DarrinDefeat::
 	.string "Torpedoed!$"
 
 Route20_Text_DarrinPostBattle::
-	.string "Riding a Fragmon sure looks fun!$"
+	.string "Riding a D{STAR}FRAG sure looks fun!$"
 
 Route20_Text_RogerIntro::
-	.string "I rode my bird Fragmon here.$"
+	.string "I rode my bird D{STAR}FRAG here.$"
 
 Route20_Text_RogerDefeat::
 	.string "Oh, no!\n"
@@ -124,14 +124,14 @@ Route20_Text_MissyDefeat::
 	.string "I'm so disappointed!$"
 
 Route20_Text_MissyPostBattle::
-	.string "Fragmon have taken over an\n"
+	.string "D{STAR}FRAG have taken over an\n"
 	.string "abandoned mansion on CINNABAR.\p"
-	.string "They call it the Fragmon MANSION\n"
+	.string "They call it the D{STAR}FRAG MANSION\n"
 	.string "now.$"
 
 Route20_Text_MelissaIntro::
 	.string "CINNABAR, in the west, has a LAB\n"
-	.string "for Fragmon.\p"
+	.string "for D{STAR}FRAG.\p"
 	.string "My daddy works there.$"
 
 Route20_Text_MelissaDefeat::
@@ -147,7 +147,7 @@ Route20_Text_SeafoamIslands::
 	.string "SEAFOAM ISLANDS$"
 
 Route20_Text_MistyTrainsHere::
-	.string "Strong TRAINERS and WATER Fragmon\n"
+	.string "Strong TRAINERS and WATER D{STAR}FRAG\n"
 	.string "are common sights in these parts.\p"
 	.string "They say that MISTY of the\n"
 	.string "CERULEAN GYM trains here.$"

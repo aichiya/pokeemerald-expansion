@@ -290,7 +290,7 @@ VermilionCity_Gym_Text_LtSurgeIntro::
 	.string "doing here?\p"
 	.string "You won't live long in combat!\n"
 	.string "Not with your puny power!\p"
-	.string "I tell you, kid, electric Fragmon\n"
+	.string "I tell you, kid, electric D{STAR}FRAG\n"
 	.string "saved me during the war!\p"
 	.string "They zapped my enemies into\n"
 	.string "paralysis!\p"
@@ -300,12 +300,12 @@ VermilionCity_Gym_Text_LtSurgePostBattle::
 	.string "A little word of advice, kid!\p"
 	.string "Electricity is sure powerful!\p"
 	.string "But, it's useless against GROUND-\n"
-	.string "type Fragmon!$"
+	.string "type D{STAR}FRAG!$"
 
 VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis::
 	.string "The THUNDERBADGE cranks up your\n"
-	.string "Fragmon's SPEED!\p"
-	.string "It also lets your Fragmon FLY\n"
+	.string "D{STAR}FRAG's SPEED!\p"
+	.string "It also lets your D{STAR}FRAG FLY\n"
 	.string "lightning-quick anytime, kid!\p"
 	.string "You're special, kid!\n"
 	.string "Take this!$"
@@ -316,7 +316,7 @@ VermilionCity_Gym_Text_ReceivedTM34FromLtSurge::
 
 VermilionCity_Gym_Text_ExplainTM34::
 	.string "TM34 contains SHOCK WAVE!\p"
-	.string "Teach it to an ELECTRIC Fragmon!$"
+	.string "Teach it to an ELECTRIC D{STAR}FRAG!$"
 
 VermilionCity_Gym_Text_MakeRoomInYourBag::
 	.string "Yo, kid, make room in your BAG!$"
@@ -376,8 +376,8 @@ VermilionCity_Gym_Text_GymGuyAdvice::
 	.string "People refer to him as the\n"
 	.string "Lightning American!\p"
 	.string "He's an expert on electric\n"
-	.string "Fragmon.\p"
-	.string "BIRD/WATER-type Fragmon match\n"
+	.string "D{STAR}FRAG.\p"
+	.string "BIRD/WATER-type D{STAR}FRAG match\n"
 	.string "poorly against the ELECTRIC type.\p"
 	.string "Beware of paralysis, too.\p"
 	.string "LT. SURGE is very cautious.\p"
@@ -389,13 +389,13 @@ VermilionCity_Gym_Text_GymGuyPostVictory::
 	.string "That match was electric!$"
 
 VermilionCity_Gym_Text_GymStatue::
-	.string "VERMILION Fragmon GYM\n"
+	.string "VERMILION D{STAR}FRAG GYM\n"
 	.string "LEADER: LT. SURGE\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}$"
 
 VermilionCity_Gym_Text_GymStatuePlayerWon::
-	.string "VERMILION Fragmon GYM\n"
+	.string "VERMILION D{STAR}FRAG GYM\n"
 	.string "LEADER: LT. SURGE\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}, {PLAYER}$"

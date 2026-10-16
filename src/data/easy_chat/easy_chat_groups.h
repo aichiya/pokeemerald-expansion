@@ -26,7 +26,7 @@
 const struct EasyChatGroup gEasyChatGroups[EC_NUM_GROUPS] = {
     [EC_GROUP_POKEMON] =
     {
-        .name = COMPOUND_STRING("Fragmon"),
+        .name = COMPOUND_STRING("D{STAR}FRAG"),
         .wordData = {.valueList = gEasyChatGroup_Pokemon},
         .numWords = ARRAY_COUNT(gEasyChatGroup_Pokemon),
         .numEnabledWords = ARRAY_COUNT(gEasyChatGroup_Pokemon),

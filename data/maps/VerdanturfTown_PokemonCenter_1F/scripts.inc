@@ -27,9 +27,9 @@ VerdanturfTown_PokemonCenter_1F_EventScript_ExpertM::
 VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon:
 	.string "You can't consider yourself a real\n"
 	.string "TRAINER if you don't have faith\l"
-	.string "in your Fragmon.\p"
+	.string "in your D{STAR}FRAG.\p"
 	.string "Only those people who can believe\n"
-	.string "in their battling Fragmon can win\l"
+	.string "in their battling D{STAR}FRAG can win\l"
 	.string "through to the very end.$"
 
 VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent:

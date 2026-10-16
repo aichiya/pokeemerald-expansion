@@ -36,7 +36,7 @@ Route19_Text_MatthewDefeat::
 	.string "Belly flop!$"
 
 Route19_Text_MatthewPostBattle::
-	.string "I can beat even marine Fragmon\n"
+	.string "I can beat even marine D{STAR}FRAG\n"
 	.string "at swimming.$"
 
 Route19_Text_DouglasIntro::
@@ -50,7 +50,7 @@ Route19_Text_DouglasPostBattle::
 	.string "yonder!$"
 
 Route19_Text_DavidIntro::
-	.string "I tried diving for Fragmon, but it\n"
+	.string "I tried diving for D{STAR}FRAG, but it\n"
 	.string "was a no-go.$"
 
 Route19_Text_DavidDefeat::
@@ -58,7 +58,7 @@ Route19_Text_DavidDefeat::
 
 Route19_Text_DavidPostBattle::
 	.string "I guess you have to fish for sea\n"
-	.string "Fragmon.$"
+	.string "D{STAR}FRAG.$"
 
 Route19_Text_TonyIntro::
 	.string "I look at the sea to forget all\n"
@@ -115,7 +115,7 @@ Route19_Text_ConnieDefeat::
 	.string "I'm exhausted…$"
 
 Route19_Text_ConniePostBattle::
-	.string "If I were to ride a Fragmon on\n"
+	.string "If I were to ride a D{STAR}FRAG on\n"
 	.string "the sea, I'd like a LAPRAS.\p"
 	.string "LAPRAS is so big, I bet it\n"
 	.string "would keep me dry on water.$"
@@ -141,11 +141,11 @@ Route19_Text_LiaPostBattle::
 Route19_Text_LiaNotEnoughMons::
 	.string "LIA: I want to battle together\n"
 	.string "with my little brother.\p"
-	.string "Don't you have two Fragmon?$"
+	.string "Don't you have two D{STAR}FRAG?$"
 
 Route19_Text_LucIntro::
 	.string "LUC: My big sis taught me how\n"
-	.string "to swim and train Fragmon.$"
+	.string "to swim and train D{STAR}FRAG.$"
 
 Route19_Text_LucDefeat::
 	.string "LUC: Oh, wow!\n"
@@ -158,4 +158,4 @@ Route19_Text_LucPostBattle::
 Route19_Text_LucNotEnoughMons::
 	.string "LUC: I don't want to if I can't\n"
 	.string "battle you with my big sis.\p"
-	.string "Don't you have two Fragmon?$"
+	.string "Don't you have two D{STAR}FRAG?$"

@@ -28,20 +28,20 @@ VictoryRoad_B1F_EventScript_Halle::
 
 VictoryRoad_B1F_Text_SamuelIntro:
 	.string "The thought that I'm getting closer to\n"
-	.string "the Fragmon LEAGUE…\p"
+	.string "the D{STAR}FRAG LEAGUE…\p"
 	.string "I'm getting stage fright…$"
 
 VictoryRoad_B1F_Text_SamuelDefeat:
 	.string "I couldn't do a thing…$"
 
 VictoryRoad_B1F_Text_SamuelPostBattle:
-	.string "The Fragmon LEAGUE became distant\n"
+	.string "The D{STAR}FRAG LEAGUE became distant\n"
 	.string "again… What a letdown…$"
 
 VictoryRoad_B1F_Text_ShannonIntro:
-	.string "To win your way through the Fragmon\n"
+	.string "To win your way through the D{STAR}FRAG\n"
 	.string "LEAGUE, you need the trust of your\l"
-	.string "Fragmon.$"
+	.string "D{STAR}FRAG.$"
 
 VictoryRoad_B1F_Text_ShannonDefeat:
 	.string "Your relationship is based on\n"
@@ -49,21 +49,21 @@ VictoryRoad_B1F_Text_ShannonDefeat:
 
 VictoryRoad_B1F_Text_ShannonPostBattle:
 	.string "By being together all the time, trust\n"
-	.string "grows between Fragmon and TRAINERS.$"
+	.string "grows between D{STAR}FRAG and TRAINERS.$"
 
 VictoryRoad_B1F_Text_MichelleIntro:
 	.string "This isn't the goal. It's only a place\n"
-	.string "on the way to the Fragmon LEAGUE.$"
+	.string "on the way to the D{STAR}FRAG LEAGUE.$"
 
 VictoryRoad_B1F_Text_MichelleDefeat:
 	.string "That's the way!$"
 
 VictoryRoad_B1F_Text_MichellePostBattle:
 	.string "You'll do fine, for sure!\n"
-	.string "Your Fragmon are all eager to go!$"
+	.string "Your D{STAR}FRAG are all eager to go!$"
 
 VictoryRoad_B1F_Text_MitchellIntro:
-	.string "My Fragmon are cosmically\n"
+	.string "My D{STAR}FRAG are cosmically\n"
 	.string "awe inspiring!$"
 
 VictoryRoad_B1F_Text_MitchellDefeat:
@@ -72,7 +72,7 @@ VictoryRoad_B1F_Text_MitchellDefeat:
 VictoryRoad_B1F_Text_MitchellPostBattle:
 	.string "Even outside of battle, I sense\n"
 	.string "incredible power emanating from you\l"
-	.string "and your Fragmon.$"
+	.string "and your D{STAR}FRAG.$"
 
 VictoryRoad_B1F_Text_HalleIntro:
 	.string "Okay, no need to get your back up!\n"

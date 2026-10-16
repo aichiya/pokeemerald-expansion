@@ -312,7 +312,7 @@ CeladonCity_DepartmentStore_Roof_Text_YaySodaPopHaveThis::
 CeladonCity_DepartmentStore_Roof_Text_ExplainTM20::
 	.string "TM20 contains SAFEGUARD.\p"
 	.string "It's a move that prevents status\n"
-	.string "problems among your Fragmon.$"
+	.string "problems among your D{STAR}FRAG.$"
 
 CeladonCity_DepartmentStore_Roof_Text_YayLemonadeHaveThis::
 	.string "Yay!\p"

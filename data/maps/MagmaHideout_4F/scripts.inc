@@ -206,7 +206,7 @@ MagmaHideout_4F_Text_MaxieOhItWasYou:
 
 MagmaHideout_4F_Text_MaxieDefeat:
 	.string "What makes you so adept at handling\n"
-	.string "Fragmon?$"
+	.string "D{STAR}FRAG?$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
 	.string "MAXIE: There has to be some reason\n"

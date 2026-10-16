@@ -312,8 +312,8 @@ BattleFrontier_BattlePikeLobby_Text_WhichChallengeMode:
 BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLv50:
 	.string "I beg your pardon, but…\p"
 	.string "You do not have three eligible\n"
-	.string "Fragmon for the Battle Choice event.\p"
-	.string "You must have three different Fragmon\n"
+	.string "D{STAR}FRAG for the Battle Choice event.\p"
+	.string "You must have three different D{STAR}FRAG\n"
 	.string "of Level 50 or less to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
@@ -326,15 +326,15 @@ BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsEnd:
 BattleFrontier_BattlePikeLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "I beg your pardon, but…\p"
 	.string "You do not have three eligible\n"
-	.string "Fragmon for the Battle Choice event.\p"
+	.string "D{STAR}FRAG for the Battle Choice event.\p"
 	.string "You must have three different\n"
-	.string "Fragmon to enter.\p"
+	.string "D{STAR}FRAG to enter.\p"
 	.string "They also must be holding different\n"
 	.string "kinds of items.\p"
 	.string "EGGS{STR_VAR_1}.$"
 
 BattleFrontier_BattlePikeLobby_Text_PleaseChooseThreeMons:
-	.string "Please choose the three Fragmon\n"
+	.string "Please choose the three D{STAR}FRAG\n"
 	.string "you wish to enter in the challenge…$"
 
 BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge:
@@ -402,7 +402,7 @@ BattleFrontier_BattlePikeLobby_Text_NeverHadToBattleTrainer:
 BattleFrontier_BattlePikeLobby_Text_ThinkAbilitiesUsefulHere:
 	.string "Listen! Listen!\p"
 	.string "Don't you think that the special\n"
-	.string "abilities of Fragmon will be useful\l"
+	.string "abilities of D{STAR}FRAG will be useful\l"
 	.string "here?$"
 
 @ Unused
@@ -425,12 +425,12 @@ BattleFrontier_BattlePikeLobby_Text_ExplainPokenavBagRules:
 
 BattleFrontier_BattlePikeLobby_Text_ExplainHeldItemRules:
 	.string "During a Battle Choice challenge,\n"
-	.string "any BERRY or HERB held by Fragmon\l"
+	.string "any BERRY or HERB held by D{STAR}FRAG\l"
 	.string "will be effective only once.$"
 
 BattleFrontier_BattlePikeLobby_Text_ExplainMonOrderRules:
 	.string "During a Battle Choice challenge,\n"
-	.string "the sequence of Fragmon cannot be\l"
+	.string "the sequence of D{STAR}FRAG cannot be\l"
 	.string "changed.\p"
 	.string "The sequence must be set before\n"
 	.string "starting your challenge.$"

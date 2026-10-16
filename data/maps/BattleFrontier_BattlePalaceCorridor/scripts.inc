@@ -120,30 +120,30 @@ BattleFrontier_BattlePalaceCorridor_Movement_AttendantEnterBattleRoom:
 	step_end
 
 BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame:
-	.string "People and Fragmon, they are but\n"
+	.string "People and D{STAR}FRAG, they are but\n"
 	.string "the same…\p"
 	.string "Their individual nature makes them\n"
 	.string "good at certain things, and not good\l"
 	.string "at others.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes:
-	.string "Rather than trying to make a Fragmon\n"
+	.string "Rather than trying to make a D{STAR}FRAG\n"
 	.string "do what it dislikes, try to let it do\l"
 	.string "what it likes and is good at doing.\p"
-	.string "Put yourself in the Fragmon's position\n"
+	.string "Put yourself in the D{STAR}FRAG's position\n"
 	.string "and consider what moves it would like.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered:
-	.string "A Fragmon's nature is a remarkable\n"
+	.string "A D{STAR}FRAG's nature is a remarkable\n"
 	.string "thing…\p"
-	.string "Some Fragmon behave in a completely\n"
+	.string "Some D{STAR}FRAG behave in a completely\n"
 	.string "different way when they are cornered.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature:
 	.string "Are you beginning to understand how\n"
-	.string "a Fragmon's nature makes it behave?$"
+	.string "a D{STAR}FRAG's nature makes it behave?$"
 
 BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons:
 	.string "Ah… I see a strong, heartfelt bond\n"
-	.string "between you and your Fragmon…$"
+	.string "between you and your D{STAR}FRAG…$"
 

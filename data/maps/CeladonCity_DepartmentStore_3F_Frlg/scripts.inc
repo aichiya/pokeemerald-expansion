@@ -50,7 +50,7 @@ CeladonCity_DepartmentStore_3F_EventScript_Poster::
 	end
 
 CeladonCity_DepartmentStore_3F_Text_OTStandsForOriginalTrainer::
-	.string "Captured Fragmon are registered\n"
+	.string "Captured D{STAR}FRAG are registered\n"
 	.string "with an ID No. and the OT.\p"
 	.string "OT stands for “Original TRAINER” -\n"
 	.string "the TRAINER that caught it first.$"
@@ -66,10 +66,10 @@ CeladonCity_DepartmentStore_3F_Text_HaunterEvolvedOnTrade::
 	.string "I collect them!\p"
 	.string "Huh?\p"
 	.string "HAUNTER turned into a different\n"
-	.string "Fragmon while being traded!$"
+	.string "D{STAR}FRAG while being traded!$"
 
 CeladonCity_DepartmentStore_3F_Text_CanIdentifyTradeMonsByID::
-	.string "You can identify Fragmon you get\n"
+	.string "You can identify D{STAR}FRAG you get\n"
 	.string "in trades by their ID Numbers.$"
 
 CeladonCity_DepartmentStore_3F_Text_ItsSuperNES::
@@ -96,11 +96,11 @@ CeladonCity_DepartmentStore_3F_Text_TVGameShop::
 
 CeladonCity_DepartmentStore_3F_Text_RedGreenBothArePokemon::
 	.string "Red and Green!\n"
-	.string "Both are Fragmon!$"
+	.string "Both are D{STAR}FRAG!$"
 
 Text_CounterTeach::
 	.string "Oh, hi!\n"
-	.string "I finally finished Fragmon.\p"
+	.string "I finally finished D{STAR}FRAG.\p"
 	.string "Not done yet? How about I teach\n"
 	.string "you a good move?\p"
 	.string "The move I have in mind is\n"
@@ -113,9 +113,9 @@ Text_CounterDeclined::
 	.string "me if you change your mind.$"
 
 Text_CounterWhichMon::
-	.string "Which Fragmon should I teach\n"
+	.string "Which D{STAR}FRAG should I teach\n"
 	.string "COUNTER to?$"
 
 Text_CounterTaught::
 	.string "Are you using that COUNTER move\n"
-	.string "I taught your Fragmon?$"
+	.string "I taught your D{STAR}FRAG?$"

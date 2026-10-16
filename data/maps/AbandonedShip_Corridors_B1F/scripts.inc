@@ -55,7 +55,7 @@ AbandonedShip_Corridors_B1F_EventScript_Duncan::
 
 AbandonedShip_Corridors_B1F_Text_DuncanIntro:
 	.string "When we go out to sea, we SAILORS\n"
-	.string "always bring our Fragmon.\l"
+	.string "always bring our D{STAR}FRAG.\l"
 	.string "How about a quick battle?$"
 
 AbandonedShip_Corridors_B1F_Text_DuncanDefeat:
@@ -64,7 +64,7 @@ AbandonedShip_Corridors_B1F_Text_DuncanDefeat:
 AbandonedShip_Corridors_B1F_Text_DuncanPostBattle:
 	.string "The ship's bottom has sunk into the\n"
 	.string "depths.\p"
-	.string "If a Fragmon knew how to go underwater,\n"
+	.string "If a D{STAR}FRAG knew how to go underwater,\n"
 	.string "we might make some progress…$"
 
 AbandonedShip_Corridors_B1F_Text_YayItsAShip:

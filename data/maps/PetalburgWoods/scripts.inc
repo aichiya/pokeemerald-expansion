@@ -320,9 +320,9 @@ PetalburgWoods_Text_NotAOneToBeFound:
 	.string "Not a one to be found…$"
 
 PetalburgWoods_Text_HaveYouSeenShroomish:
-	.string "Hello, have you seen any Fragmon\n"
+	.string "Hello, have you seen any D{STAR}FRAG\n"
 	.string "called SHROOMISH around here?\p"
-	.string "I really love that Fragmon.$"
+	.string "I really love that D{STAR}FRAG.$"
 
 PetalburgWoods_Text_IWasGoingToAmbushYou:
 	.string "I was going to ambush you, but you\n"
@@ -336,7 +336,7 @@ PetalburgWoods_Text_HandOverThosePapers:
 
 PetalburgWoods_Text_YouHaveToHelpMe:
 	.string "Aiyeeeh!\p"
-	.string "You're a Fragmon TRAINER, aren't you?\n"
+	.string "You're a D{STAR}FRAG TRAINER, aren't you?\n"
 	.string "You've got to help me, please!$"
 
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
@@ -354,7 +354,7 @@ PetalburgWoods_Text_YouveGotSomeNerve:
 	.string "meddling with TEAM AQUA!\l"
 	.string "Come on and battle me again!\p"
 	.string "I wish I could say that, but I'm out of\n"
-	.string "Fragmon…\p"
+	.string "D{STAR}FRAG…\p"
 	.string "And, hey, we of TEAM AQUA are also\n"
 	.string "after something in RUSTBORO.\p"
 	.string "I'll let you go today!$"
@@ -381,41 +381,41 @@ PetalburgWoods_Text_YoureLoadedWithItems:
 	.string "I can't give you this GREAT BALL.$"
 
 PetalburgWoods_Text_GoBugPokemonTeam:
-	.string "I caught a whole bunch of Fragmon!\p"
+	.string "I caught a whole bunch of D{STAR}FRAG!\p"
 	.string "Go, go, go!\n"
-	.string "My BUG Fragmon team!$"
+	.string "My BUG D{STAR}FRAG team!$"
 
 PetalburgWoods_Text_ICouldntWin:
-	.string "I have all these Fragmon,\n"
+	.string "I have all these D{STAR}FRAG,\n"
 	.string "but I couldn't win…$"
 
 PetalburgWoods_Text_ImOutOfPokeBalls:
-	.string "I caught a bunch of Fragmon.\n"
+	.string "I caught a bunch of D{STAR}FRAG.\n"
 	.string "Now I'm out of POKé BALLS.$"
 
 PetalburgWoods_Text_InstantlyPopularWithBugPokemon:
-	.string "If you take BUG Fragmon to school,\n"
+	.string "If you take BUG D{STAR}FRAG to school,\n"
 	.string "you get to be instantly popular!$"
 
 PetalburgWoods_Text_CantBePopularIfILose:
 	.string "I can't be popular if I lose.$"
 
 PetalburgWoods_Text_PeopleRespectYou:
-	.string "If you have a big BUG Fragmon,\n"
+	.string "If you have a big BUG D{STAR}FRAG,\n"
 	.string "people respect you for it.$"
 
 PetalburgWoods_Text_IWantRematch1:
 	.string "I want a rematch when my BUG\n"
-	.string "Fragmon grow up!\p"
+	.string "D{STAR}FRAG grow up!\p"
 	.string "I'm registering you in my DL{EMOJI_BIGWHEEL}GEAR!$"
 
 PetalburgWoods_Text_IWantRematch2:
 	.string "I want a rematch when my BUG \n"
-	.string "Fragmon grow up!\p"
+	.string "D{STAR}FRAG grow up!\p"
 	.string "I'm registering you in my DL{EMOJI_BIGWHEEL}GEAR!$"
 
 PetalburgWoods_Text_MyPokemonHaveGrown:
-	.string "My BUG Fragmon have grown.\n"
+	.string "My BUG D{STAR}FRAG have grown.\n"
 	.string "I'll be popular again.$"
 
 PetalburgWoods_Text_CantBePopularIfLose:
@@ -423,13 +423,13 @@ PetalburgWoods_Text_CantBePopularIfLose:
 
 PetalburgWoods_Text_IveBeenTrainingHard:
 	.string "You get to be popular if you have\n"
-	.string "strong Fragmon, right?\l"
+	.string "strong D{STAR}FRAG, right?\l"
 	.string "So, I've been training hard.$"
 
 PetalburgWoods_Text_StayOutOfTallGrass:
 	.string "Yo, there!\n"
-	.string "Your Fragmon doing okay?\p"
-	.string "If your Fragmon are weak and you want\n"
+	.string "Your D{STAR}FRAG doing okay?\p"
+	.string "If your D{STAR}FRAG are weak and you want\n"
 	.string "to avoid battles, you should stay out\l"
 	.string "of tall grass.$"
 
@@ -447,17 +447,17 @@ PetalburgWoods_Text_TryUsingThisItem:
 
 PetalburgWoods_Text_MiracleSeedExplanation:
 	.string "It's a MIRACLE SEED.\n"
-	.string "If a Fragmon holds that item, its\l"
+	.string "If a D{STAR}FRAG holds that item, its\l"
 	.string "GRASS-type moves become stronger.\p"
 	.string "Besides MIRACLE SEED, I think there are\n"
-	.string "other convenient items for Fragmon\l"
+	.string "other convenient items for D{STAR}FRAG\l"
 	.string "to hold.$"
 
 PetalburgWoods_Text_TrainerTipsExperience:
 	.string "TRAINER TIPS\p"
-	.string "Any Fragmon that appears even once\n"
+	.string "Any D{STAR}FRAG that appears even once\n"
 	.string "in a battle is awarded EXP Points.\p"
-	.string "To raise a weak Fragmon, put it at the\n"
+	.string "To raise a weak D{STAR}FRAG, put it at the\n"
 	.string "left of the team list.\p"
 	.string "As soon as a battle starts, switch it\n"
 	.string "out. It will earn EXP Points without\l"
@@ -465,9 +465,9 @@ PetalburgWoods_Text_TrainerTipsExperience:
 
 PetalburgWoods_Text_TrainerTipsPP:
 	.string "TRAINER TIPS\p"
-	.string "In addition to Hit Points (HP), Fragmon\n"
+	.string "In addition to Hit Points (HP), D{STAR}FRAG\n"
 	.string "have Power Points (PP) that are used to\l"
 	.string "make moves during battle.\p"
-	.string "If a Fragmon runs out of PP, it must be\n"
-	.string "taken to a Fragmon CENTER.$"
+	.string "If a D{STAR}FRAG runs out of PP, it must be\n"
+	.string "taken to a D{STAR}FRAG CENTER.$"
 

@@ -27,14 +27,14 @@ SlateportCity_PokemonCenter_1F_EventScript_Woman::
 SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon:
 	.string "Want a tip for battling?\p"
 	.string "I'd say it's raising different kinds\n"
-	.string "of Fragmon in a balanced manner.\p"
+	.string "of D{STAR}FRAG in a balanced manner.\p"
 	.string "It's no good to make just one\n"
-	.string "Fragmon strong.\p"
+	.string "D{STAR}FRAG strong.\p"
 	.string "If it has a type disadvantage,\n"
 	.string "it might not stand a chance.$"
 
 SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend:
-	.string "I trade Fragmon with my friends.\p"
-	.string "If a traded Fragmon is holding an\n"
+	.string "I trade D{STAR}FRAG with my friends.\p"
+	.string "If a traded D{STAR}FRAG is holding an\n"
 	.string "item, it makes me twice as happy!$"
 

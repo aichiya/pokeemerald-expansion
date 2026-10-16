@@ -147,7 +147,7 @@ LilycoveCity_DepartmentStore_5F_Text_PlaceFullOfCuteDolls:
 	.string "just for my children.$"
 
 LilycoveCity_DepartmentStore_5F_Text_GettingDollInsteadOfPokemon:
-	.string "I'm not big enough to raise Fragmon,\n"
+	.string "I'm not big enough to raise D{STAR}FRAG,\n"
 	.string "so I'm getting a cute DOLL instead.$"
 
 LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere:

@@ -1219,7 +1219,7 @@ TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords::
 	end
 
 CableClub_Text_WelcomeWhichCableClubService_Frlg::
-	.string "Welcome to the Fragmon CABLE\n"
+	.string "Welcome to the D{STAR}FRAG CABLE\n"
 	.string "CLUB.\p"
 	.string "Which of our services do you wish\n"
 	.string "to use?$"
@@ -1229,7 +1229,7 @@ CableClub_Text_WhichService_Frlg::
 	.string "to use?$"
 
 CableClub_Text_TradeMonsUsingLinkCable_Frlg::
-	.string "Trade Fragmon with another player\n"
+	.string "Trade D{STAR}FRAG with another player\n"
 	.string "using a GBA Game Link cable.$"
 
 CableClub_Text_BattleUsingLinkCable_Frlg::
@@ -1242,14 +1242,14 @@ CableClub_Text_CloseThisMenu_Frlg::
 
 CableClub_Text_NeedTwoMonsForDoubleBattle_Frlg::
 	.string "For a DOUBLE BATTLE, you must\n"
-	.string "have at least two Fragmon.$"
+	.string "have at least two D{STAR}FRAG.$"
 
 CableClub_Text_NeedTwoMonsToTrade_Frlg::
 	.string "For trading, you must have at\n"
-	.string "least two Fragmon with you.$"
+	.string "least two D{STAR}FRAG with you.$"
 
 CableClub_Text_CantTradeEnigmaBerry_Frlg::
-	.string "A Fragmon holding the {STR_VAR_1}\n"
+	.string "A D{STAR}FRAG holding the {STR_VAR_1}\n"
 	.string "BERRY can't be traded.$"
 
 CableClub_Text_PleaseWaitBCancel_Frlg::
@@ -1368,7 +1368,7 @@ CableClub_Text_OtherTrainerNotReady_Frlg::
 	.string "The other TRAINER is not ready.$"
 
 CableClub_Text_YouHaveAMonThatCantBeTaken_Frlg::
-	.string "You have at least one Fragmon\n"
+	.string "You have at least one D{STAR}FRAG\n"
 	.string "that can't be taken.$"
 
 CableClub_Text_AdapterNotConnected_Frlg::
@@ -1388,7 +1388,7 @@ CableClub_Text_PleaseWait_Frlg::
 	.string "しょうしょう　おまちください$"
 
 CableClub_Text_YouMayTradeHere_Frlg::
-	.string "You may trade your Fragmon here\n"
+	.string "You may trade your D{STAR}FRAG here\n"
 	.string "with another TRAINER.$"
 
 CableClub_Text_YouMayBattleHere_Frlg::
@@ -1421,14 +1421,14 @@ CableClub_Text_NeedBerryForBerryCrush_Frlg::
 
 CableClub_Text_NeedTwoMonsForUnionRoom_Frlg::
 	.string "To enter the UNION ROOM, you must\n"
-	.string "have at least two Fragmon.$"
+	.string "have at least two D{STAR}FRAG.$"
 
 CableClub_Text_NoEnigmaBerryInUnionRoom_Frlg::
-	.string "No Fragmon holding the {STR_VAR_1}\n"
+	.string "No D{STAR}FRAG holding the {STR_VAR_1}\n"
 	.string "BERRY may enter the UNION ROOM.$"
 
 CableClub_Text_UnionRoomAdapterNotConnected_Frlg::
-	.string "This is the Fragmon WIRELESS CLUB\n"
+	.string "This is the D{STAR}FRAG WIRELESS CLUB\n"
 	.string "UNION ROOM.\p"
 	.string "Unfortunately, your Wireless\n"
 	.string "Adapter is not connected properly.\p"
@@ -1445,14 +1445,14 @@ Text_DescribeWhichGame_Frlg::
 	.string "Which game should I describe?$"
 
 Text_PokemonJumpInfo_Frlg::
-	.string "“Fragmon JUMP”\p"
-	.string "Make your Fragmon skip the\n"
+	.string "“D{STAR}FRAG JUMP”\p"
+	.string "Make your D{STAR}FRAG skip the\n"
 	.string "VINE WHIP rope with the A Button.\p"
-	.string "Only mini Fragmon around 28 inches\n"
+	.string "Only mini D{STAR}FRAG around 28 inches\n"
 	.string "or less may participate.\p"
-	.string "Fragmon that only swim, burrow, or\n"
+	.string "D{STAR}FRAG that only swim, burrow, or\n"
 	.string "fly are not good at jumping.\p"
-	.string "As a result, those Fragmon may not\n"
+	.string "As a result, those D{STAR}FRAG may not\n"
 	.string "participate.\p"
 	.string "Good things happen if everyone\n"
 	.string "jumps in time.$"
@@ -1489,7 +1489,7 @@ Text_PlayWhichGame_Frlg::
 	.string "to play?$"
 
 Text_EnterWhichPokemon_Frlg::
-	.string "Which Fragmon would you like to\n"
+	.string "Which D{STAR}FRAG would you like to\n"
 	.string "enter?$"
 
 Text_AllGoodToGo_Frlg::
@@ -1503,16 +1503,16 @@ Text_LeavingDoComeAgain_Frlg::
 
 EventScript_ExplainPokemonJumpRequirements_Frlg::
 	.string "It doesn't look like you have any\n"
-	.string "Fragmon that you can enter…\p"
+	.string "D{STAR}FRAG that you can enter…\p"
 	.string "Would you like me to explain what\n"
-	.string "kinds of Fragmon can enter?$"
+	.string "kinds of D{STAR}FRAG can enter?$"
 
 Text_ShortJumpingPokemonAllowed_Frlg::
-	.string "“Fragmon JUMP” is open to Fragmon\n"
+	.string "“D{STAR}FRAG JUMP” is open to D{STAR}FRAG\n"
 	.string "around 28 inches or less.\p"
 	.string "What you can't enter are those\n"
-	.string "Fragmon that can't jump.\p"
-	.string "You know, like Fragmon that only\n"
+	.string "D{STAR}FRAG that can't jump.\p"
+	.string "You know, like D{STAR}FRAG that only\n"
 	.string "swim, burrow, or fly.\p"
 	.string "That's all you need to know.$"
 
@@ -1528,7 +1528,7 @@ Text_RetryFromStartPlease_Frlg::
 	.string "やりなおして　みて　くれ$"
 
 CableClub_Text_WelcomeWhichDirectCornerRoom_Frlg::
-	.string "Welcome to the Fragmon WIRELESS\n"
+	.string "Welcome to the D{STAR}FRAG WIRELESS\n"
 	.string "CLUB DIRECT CORNER.\p"
 	.string "You may interact directly with\n"
 	.string "your friends here.\p"
@@ -1536,7 +1536,7 @@ CableClub_Text_WelcomeWhichDirectCornerRoom_Frlg::
 	.string "enter?$"
 
 CableClub_Text_TradePokemon_Frlg::
-	.string "Would you like to trade Fragmon?$"
+	.string "Would you like to trade D{STAR}FRAG?$"
 
 CableClub_Text_PlayWhichBattleMode_Frlg::
 	.string "Which Battle Mode would you like\n"
@@ -1549,16 +1549,16 @@ CableClub_Text_UseBerryCrush_Frlg::
 CableClub_Text_ExplainBattleModes_Frlg::
 	.string "There are three Battle Modes.\p"
 	.string "SINGLE BATTLE is for two TRAINERS\n"
-	.string "with one or more Fragmon each.\p"
-	.string "Each TRAINER can have one Fragmon\n"
+	.string "with one or more D{STAR}FRAG each.\p"
+	.string "Each TRAINER can have one D{STAR}FRAG\n"
 	.string "in battle at a time.\p"
 	.string "DOUBLE BATTLE is for two TRAINERS\n"
-	.string "with two or more Fragmon each.\p"
+	.string "with two or more D{STAR}FRAG each.\p"
 	.string "Each TRAINER will send out two\n"
-	.string "Fragmon in battle at a time.\p"
+	.string "D{STAR}FRAG in battle at a time.\p"
 	.string "MULTI BATTLE is for four TRAINERS\n"
-	.string "with one or more Fragmon each.\p"
-	.string "Each TRAINER can have one Fragmon\n"
+	.string "with one or more D{STAR}FRAG each.\p"
+	.string "Each TRAINER can have one D{STAR}FRAG\n"
 	.string "in battle at a time.$"
 
 CableClub_Text_ChooseGroupLeaderOfTwo_Frlg::
@@ -1580,7 +1580,7 @@ CableClub_Text_ChooseGroupLeader_Frlg::
 	.string "“JOIN GROUP.”$"
 
 CableClub_Text_WelcomeUnionRoomEnter_Frlg::
-	.string "Welcome to the Fragmon WIRELESS\n"
+	.string "Welcome to the D{STAR}FRAG WIRELESS\n"
 	.string "CLUB UNION ROOM.\p"
 	.string "You may interact directly with\n"
 	.string "other TRAINERS here, some of\l"
@@ -1593,11 +1593,11 @@ CableClub_Text_UnionRoomInfo_Frlg::
 	.string "who have also entered the ROOM.\p"
 	.string "You may do all sorts of things\n"
 	.string "here, such as exchanging greetings.\p"
-	.string "You may enter two Fragmon up to\n"
+	.string "You may enter two D{STAR}FRAG up to\n"
 	.string "Lv. 30 for a one-on-one battle.\p"
 	.string "You may take part in a chat with\n"
 	.string "two to five people.\p"
-	.string "Or, you may register a Fragmon for\n"
+	.string "Or, you may register a D{STAR}FRAG for\n"
 	.string "trade.\p"
 	.string "Would you like to enter the ROOM?$"
 
@@ -1613,7 +1613,7 @@ CableClub_Text_FirstTimeRightThisWay_Frlg::
 	.string "I'll show you how the Wireless\n"
 	.string "Communication System works.\p"
 	.string "First, I need to show you this\n"
-	.string "floor of our Fragmon CENTER.\p"
+	.string "floor of our D{STAR}FRAG CENTER.\p"
 	.string "Right this way, please.$"
 
 CableClub_Text_ExplainWirelessClubFirstTime_Frlg::
@@ -1628,7 +1628,7 @@ CableClub_Text_ExplainWirelessClubFirstTime_Frlg::
 	.string "chat, battle, and trade.\p"
 	.string "Second, the room on the right is\n"
 	.string "the DIRECT CORNER.\p"
-	.string "You may trade or battle Fragmon\n"
+	.string "You may trade or battle D{STAR}FRAG\n"
 	.string "with your friends in this room.\p"
 	.string "If the Wireless Adapter isn't\n"
 	.string "connected, you may still link up\l"
@@ -1640,13 +1640,13 @@ CableClub_Text_ExplainWirelessClubFirstTime_Frlg::
 
 CableClub_Text_AskAboutLinking_Frlg::
 	.string "Hello, {PLAYER}!\p"
-	.string "It's me, TEALA, the Fragmon\n"
+	.string "It's me, TEALA, the D{STAR}FRAG\n"
 	.string "CENTER 2F attendant.\p"
 	.string "Is there something you needed to\n"
 	.string "ask me about linking?$"
 
 CableClub_Text_ExplainWirelessClub_Frlg::
-	.string "Let me explain how the Fragmon\n"
+	.string "Let me explain how the D{STAR}FRAG\n"
 	.string "WIRELESS CLUB works.\p"
 	.string "On this, the top floor, there are\n"
 	.string "two rooms.\p"
@@ -1659,7 +1659,7 @@ CableClub_Text_ExplainWirelessClub_Frlg::
 	.string "chat, battle, and trade.\p"
 	.string "Second, the room on the right is\n"
 	.string "the DIRECT CORNER.\p"
-	.string "You may trade or battle Fragmon\n"
+	.string "You may trade or battle D{STAR}FRAG\n"
 	.string "with your friends in this room.\p"
 	.string "Sometimes, you may not be able to\n"
 	.string "find your friends in the UNION ROOM\l"
@@ -1680,7 +1680,7 @@ CableClub_Text_HopeYouEnjoyWirelessSystem_Frlg::
 
 Text_WirelessClubUndergoingAdjustments::
 	.string "I'm terribly sorry.\n"
-	.string "The Fragmon WIRELESS CLUB is\l"
+	.string "The D{STAR}FRAG WIRELESS CLUB is\l"
 	.string "undergoing adjustments now.$"
 
 Text_AppearsToBeUndergoingAdjustments::

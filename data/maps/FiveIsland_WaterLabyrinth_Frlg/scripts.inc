@@ -66,7 +66,7 @@ FiveIsland_WaterLabyrinth_EventScript_ReturnForEgg::
 FiveIsland_WaterLabyrinth_Text_LetMeTakeLookAtMons::
 	.string "You travel all over the place,\n"
 	.string "don't you?\p"
-	.string "You're not driving your Fragmon\n"
+	.string "You're not driving your D{STAR}FRAG\n"
 	.string "too harshly, are you?\p"
 	.string "Let me take a look.\n"
 	.string "… … …   … … …$"
@@ -77,7 +77,7 @@ FiveIsland_WaterLabyrinth_Text_HmmISeeIsee::
 
 FiveIsland_WaterLabyrinth_Text_TreatMonRightHaveThis::
 	.string "Oh, impressive.\n"
-	.string "You treat your Fragmon right.\p"
+	.string "You treat your D{STAR}FRAG right.\p"
 	.string "I think you can be entrusted with\n"
 	.string "this.\p"
 	.string "Please, I'd like you to have this.$"
@@ -108,17 +108,17 @@ FiveIsland_WaterLabyrinth_Text_CuteMonRemindsMeOfDaisy::
 	.string "That's a cute {STR_VAR_2}.\p"
 	.string "Seeing it reminds me of a sweet \n"
 	.string "little girl I met while traveling.\p"
-	.string "She was gently grooming Fragmon…\n"
+	.string "She was gently grooming D{STAR}FRAG…\n"
 	.string "She was a little angel.\p"
 	.string "That little girl's name…\n"
 	.string "I think it was DAISY.$"
 
 FiveIsland_WaterLabyrinth_Text_AlizeIntro::
 	.string "This is an excellent environment\n"
-	.string "for raising Fragmon.$"
+	.string "for raising D{STAR}FRAG.$"
 
 FiveIsland_WaterLabyrinth_Text_AlizeDefeat::
-	.string "Your Fragmon are growing up\n"
+	.string "Your D{STAR}FRAG are growing up\n"
 	.string "admirably well!$"
 
 FiveIsland_WaterLabyrinth_Text_AlizePostBattle::

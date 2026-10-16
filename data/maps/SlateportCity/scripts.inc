@@ -939,7 +939,7 @@ SlateportCity_Text_PutEffortRibbonOnMon:
 
 SlateportCity_Text_GoForItLittleHarder:
 	.string "You have to go for it a little harder.\p"
-	.string "If you do, I'll give your Fragmon\n"
+	.string "If you do, I'll give your D{STAR}FRAG\n"
 	.string "something nice.$"
 
 SlateportCity_Text_EffortRibbonLooksGoodOnIt:
@@ -949,7 +949,7 @@ SlateportCity_Text_EffortRibbonLooksGoodOnIt:
 SlateportCity_Text_WonderIfLighthouseStartlesPokemon:
 	.string "The light of the lighthouse reaches\n"
 	.string "dozens of miles away.\p"
-	.string "I wonder if it doesn't startle Fragmon\n"
+	.string "I wonder if it doesn't startle D{STAR}FRAG\n"
 	.string "in the sea.$"
 
 SlateportCity_Text_SeaweedFullOfLife:
@@ -982,7 +982,7 @@ SlateportCity_Text_GoingToCompeteInBattleTent:
 	.string "Wroooar! I'm going to compete in\n"
 	.string "the BATTLE TENT, too!\p"
 	.string "But before that, I need to catch\n"
-	.string "some Fragmon!$"
+	.string "some D{STAR}FRAG!$"
 
 SlateportCity_Text_BushedHikingFromMauville:
 	.string "Whew… I'm just bushed…\p"
@@ -1073,35 +1073,35 @@ SlateportCity_Text_HotSpringsAfterOperation:
 SlateportCity_Text_SeaIsSoWet:
 	.string "The sea is just so vast…\p"
 	.string "Could the sea have been made by\n"
-	.string "the tears shed by Fragmon?$"
+	.string "the tears shed by D{STAR}FRAG?$"
 
 SlateportCity_Text_SinkOldBoats:
 	.string "Do you know what they do with old\n"
 	.string "ships that become too creaky to sail?\p"
 	.string "They sink them in the sea so they\n"
-	.string "become habitats for Fragmon.$"
+	.string "become habitats for D{STAR}FRAG.$"
 
 SlateportCity_Text_BuyTooMuch:
 	.string "Whenever I visit here, I get carried\n"
 	.string "away and buy too much.$"
 
 SlateportCity_Text_GetNameRaterToHelpYou:
-	.string "If you want to change your Fragmon's\n"
+	.string "If you want to change your D{STAR}FRAG's\n"
 	.string "nickname, you'll have to get the NAME\l"
 	.string "RATER to help you.$"
 
 SlateportCity_Text_CantChangeTradeMonName:
-	.string "Any Fragmon you get in a trade,\n"
+	.string "Any D{STAR}FRAG you get in a trade,\n"
 	.string "you can't change its nickname.\p"
 	.string "The original TRAINER's love for that\n"
-	.string "Fragmon is in the nickname.$"
+	.string "D{STAR}FRAG is in the nickname.$"
 
 SlateportCity_Text_BattleTentBuiltRecently:
 	.string "Recently, a BATTLE TENT was built\n"
 	.string "in SLATEPORT.\p"
 	.string "GYMS are fun, but the BATTLE TENT's\n"
 	.string "awesome in its own way.\p"
-	.string "You should go find tough Fragmon\n"
+	.string "You should go find tough D{STAR}FRAG\n"
 	.string "for the BATTLE TENT!$"
 
 SlateportCity_Text_CaptSternBeingInterviewed:
@@ -1166,7 +1166,7 @@ SlateportCity_Text_OhPlayerWeMadeDiscovery:
 	.string "seafloor exploration.\p"
 	.string "We found an underwater cavern on\n"
 	.string "ROUTE 128.\p"
-	.string "We think it's the habitat of a Fragmon\n"
+	.string "We think it's the habitat of a D{STAR}FRAG\n"
 	.string "that's said to have been long extinct.$"
 
 SlateportCity_Text_AquaWillAssumeControlOfSubmarine:
@@ -1197,7 +1197,7 @@ SlateportCity_Text_PleaseComeWithMe:
 
 SlateportCity_Text_BattleTentSign:
 	.string "BATTLE TENT SLATEPORT SITE\n"
-	.string "“Find it! The ultimate Fragmon!”$"
+	.string "“Find it! The ultimate D{STAR}FRAG!”$"
 
 SlateportCity_Text_SternsShipyardWantedSign:
 	.string "STERN'S SHIPYARD\p"
@@ -1217,8 +1217,8 @@ SlateportCity_Text_SternsShipyardFerryComplete:
 	.string "HARBOR.”$"
 
 SlateportCity_Text_PokemonFanClubSign:
-	.string "Fragmon FAN CLUB\n"
-	.string "“Calling all fans of Fragmon!”$"
+	.string "D{STAR}FRAG FAN CLUB\n"
+	.string "“Calling all fans of D{STAR}FRAG!”$"
 
 SlateportCity_Text_OceanicMuseumSign:
 	.string "“The endless sea sustains\n"
@@ -1227,7 +1227,7 @@ SlateportCity_Text_OceanicMuseumSign:
 
 SlateportCity_Text_CitySign:
 	.string "SLATEPORT CITY\p"
-	.string "“The port where people and Fragmon\n"
+	.string "“The port where people and D{STAR}FRAG\n"
 	.string "cross paths.”$"
 
 SlateportCity_Text_MarketSign:
@@ -1248,10 +1248,10 @@ SlateportCity_Text_HarborSign:
 
 SlateportCity_Text_NameRatersHouseSign:
 	.string "NAME RATER'S HOUSE\n"
-	.string "“Fragmon nicknames rated.”$"
+	.string "“D{STAR}FRAG nicknames rated.”$"
 
 SlateportCity_Text_ExplainBerries:
-	.string "If a wild Fragmon gets hurt, it heals\n"
+	.string "If a wild D{STAR}FRAG gets hurt, it heals\n"
 	.string "itself by chewing on BERRIES.\p"
 	.string "Did you know that?\p"
 	.string "Somebody saw that and got the idea\n"
@@ -1267,7 +1267,7 @@ SlateportCity_Text_ExplainBerries:
 
 SlateportCity_Text_ExplainBerryPowder:
 	.string "I recently had machines installed at\n"
-	.string "Fragmon CENTERS for crushing BERRIES.\p"
+	.string "D{STAR}FRAG CENTERS for crushing BERRIES.\p"
 	.string "The BERRY CRUSH machines are at\n"
 	.string "the DIRECT CORNER upstairs.\p"
 	.string "Did you know?\p"

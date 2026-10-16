@@ -55,12 +55,12 @@ FuchsiaCity_House3_EventScript_CancelForgetMove::
 FuchsiaCity_House3_Text_WouldYouLikeToForgetMove::
 	.string "Uh…\n"
 	.string "Oh, yes, I'm the MOVE DELETER.\p"
-	.string "I can make Fragmon forget their\n"
+	.string "I can make D{STAR}FRAG forget their\n"
 	.string "moves.\p"
 	.string "Would you like me to do that?$"
 
 FuchsiaCity_House3_Text_WhichMonShouldForgetMove::
-	.string "Which Fragmon should forget a\n"
+	.string "Which D{STAR}FRAG should forget a\n"
 	.string "move?$"
 
 FuchsiaCity_House3_Text_WhichMoveShouldBeForgotten::

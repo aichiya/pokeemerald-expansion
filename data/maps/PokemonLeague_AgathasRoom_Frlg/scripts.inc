@@ -99,7 +99,7 @@ PokemonLeague_AgathasRoom_Text_Intro::
 	.string "Now he just wants to fiddle with\n"
 	.string "his NC{EMOJI_IRRITATED}PDA.\p"
 	.string "He's wrong.\n"
-	.string "Fragmon are for battling!\p"
+	.string "D{STAR}FRAG are for battling!\p"
 	.string "{PLAYER}! I'll show you how a real\n"
 	.string "TRAINER battles!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
@@ -114,7 +114,7 @@ PokemonLeague_AgathasRoom_Text_RematchIntro::
 	.string "Now he just wants to fiddle with\n"
 	.string "his NC{EMOJI_IRRITATED}PDA.\p"
 	.string "He's wrong.\n"
-	.string "Fragmon are for battling!\p"
+	.string "D{STAR}FRAG are for battling!\p"
 	.string "{PLAYER}! I'll show you how a real\n"
 	.string "TRAINER battles!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 

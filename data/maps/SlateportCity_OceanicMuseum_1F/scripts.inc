@@ -278,11 +278,11 @@ SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel:
 SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow:
 	.string "The sea is vast without end, and\n"
 	.string "infinitely deep…\p"
-	.string "There must be many Fragmon that\n"
+	.string "There must be many D{STAR}FRAG that\n"
 	.string "we don't know about.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon:
-	.string "I want a sea Fragmon.\p"
+	.string "I want a sea D{STAR}FRAG.\p"
 	.string "I think it would feel cool and nice\n"
 	.string "to hug.$"
 

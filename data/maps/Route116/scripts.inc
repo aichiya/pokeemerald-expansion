@@ -365,14 +365,14 @@ Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
 	.string "What's going on?\p"
 	.string "I was digging the tunnel without any\n"
 	.string "tools when some goon ordered me out!\p"
-	.string "That tunnel's filled with Fragmon\n"
+	.string "That tunnel's filled with D{STAR}FRAG\n"
 	.string "that react badly to loud noises.\l"
 	.string "They could cause an uproar.\p"
 	.string "That's why we stopped using heavy\n"
 	.string "equipment for tunneling…\p"
 	.string "I'm worried that the goon will do\n"
 	.string "something stupid and startle the\l"
-	.string "Fragmon into an uproar.$"
+	.string "D{STAR}FRAG into an uproar.$"
 
 Route116_Text_GoonHightailedItOutOfTunnel:
 	.string "Nnn… Roar!\p"
@@ -400,7 +400,7 @@ Route116_Text_ThankYouTokenOfAppreciation:
 
 Route116_Text_NewBallAvailableAtMart:
 	.string "Our new POKé BALL will be available\n"
-	.string "at the Fragmon MART in RUSTBORO.\p"
+	.string "at the D{STAR}FRAG MART in RUSTBORO.\p"
 	.string "Please do try it out!\n"
 	.string "Thank you and bye-bye!$"
 
@@ -454,10 +454,10 @@ Route116_Text_TunnelersRestHouse:
 
 Route116_Text_TrainerTipsBToStopEvolution:
 	.string "TRAINER TIPS\p"
-	.string "If you want to stop a Fragmon from\n"
+	.string "If you want to stop a D{STAR}FRAG from\n"
 	.string "evolving, press the B Button while it\l"
 	.string "is trying to evolve.\l"
-	.string "The startled Fragmon will stop.\p"
+	.string "The startled D{STAR}FRAG will stop.\p"
 	.string "This is called an evolution cancel.$"
 
 Route116_Text_TrainerTipsBagHasPockets:

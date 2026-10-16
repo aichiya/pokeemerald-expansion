@@ -73,12 +73,12 @@ Text_DoubleEdgeDeclined::
 	.string "anytime.$"
 
 Text_DoubleEdgeWhichMon::
-	.string "Which Fragmon should I teach\n"
+	.string "Which D{STAR}FRAG should I teach\n"
 	.string "DOUBLE-EDGE?$"
 
 Text_DoubleEdgeTaught::
 	.string "Keep that drive going for the\n"
-	.string "Fragmon LEAGUE!\p"
+	.string "D{STAR}FRAG LEAGUE!\p"
 	.string "Take a run at them and knock 'em\n"
 	.string "out!$"
 
@@ -123,7 +123,7 @@ VictoryRoad_3F_Text_ColbyDefeat::
 
 VictoryRoad_3F_Text_ColbyPostBattle::
 	.string "All TRAINERS here are headed to\n"
-	.string "the Fragmon LEAGUE.\p"
+	.string "the D{STAR}FRAG LEAGUE.\p"
 	.string "Don't let down your guard.$"
 
 VictoryRoad_3F_Text_RayIntro::
@@ -141,7 +141,7 @@ VictoryRoad_3F_Text_RayPostBattle::
 VictoryRoad_3F_Text_RayNotEnoughMons::
 	.string "RAY: Together, the two of us are\n"
 	.string "striving for the pinnacle.\p"
-	.string "We need you to bring two Fragmon\n"
+	.string "We need you to bring two D{STAR}FRAG\n"
 	.string "into battle with us.$"
 
 VictoryRoad_3F_Text_TyraIntro::
@@ -157,5 +157,5 @@ VictoryRoad_3F_Text_TyraPostBattle::
 
 VictoryRoad_3F_Text_TyraNotEnoughMons::
 	.string "TYRA: You can't battle with us if\n"
-	.string "you have only one Fragmon.$"
+	.string "you have only one D{STAR}FRAG.$"
 

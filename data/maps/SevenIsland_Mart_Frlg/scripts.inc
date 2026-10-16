@@ -39,10 +39,10 @@ SevenIsland_Mart_EventScript_Fisher::
 	end
 
 SevenIsland_Mart_Text_MonHavePersonalitiesOfTheirOwn::
-	.string "Fragmon have personalities of their\n"
+	.string "D{STAR}FRAG have personalities of their\n"
 	.string "own, just like people.\p"
 	.string "My PIKACHU has a HASTY nature,\n"
-	.string "so it grew to be a speedy Fragmon.$"
+	.string "so it grew to be a speedy D{STAR}FRAG.$"
 
 SevenIsland_Mart_Text_PreparationsCompleteForRuins::
 	.string "Okay, preparations are complete\n"

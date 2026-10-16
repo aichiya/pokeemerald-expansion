@@ -115,7 +115,7 @@ EventScript_Indigo_HighestAuthority::
 @ Flavor text for interacting with various background objects
 
 Text_Bookshelf::
-	.string "It's crammed full of Fragmon\n"
+	.string "It's crammed full of D{STAR}FRAG\n"
 	.string "books.$"
 
 Text_NothingButPokemonBooks::
@@ -127,7 +127,7 @@ Text_ATownMap::
 
 Text_PokeMartShelf::
 	.string "Wow!\n"
-	.string "Tons of Fragmon stuff!$"
+	.string "Tons of D{STAR}FRAG stuff!$"
 
 Text_DishesPlatesNeatlyLinedUp::
 	.string "Dishes and plates are neatly\n"
@@ -146,21 +146,21 @@ Text_Snacks::
 
 Text_PokemartSign::
 	.string "All your item needs fulfilled!\n"
-	.string "Fragmon MART$"
+	.string "D{STAR}FRAG MART$"
 
 Text_PokecenterSign::
-	.string "Heal Your Fragmon!\n"
-	.string "Fragmon CENTER$"
+	.string "Heal Your D{STAR}FRAG!\n"
+	.string "D{STAR}FRAG CENTER$"
 
 Text_Indigo_UltimateGoal::
 	.string "INDIGO PLATEAU\p"
 	.string "The ultimate goal of TRAINERS!\n"
-	.string "Fragmon LEAGUE HQ$"
+	.string "D{STAR}FRAG LEAGUE HQ$"
 
 Text_Indigo_HighestAuthority::
 	.string "INDIGO PLATEAU\p"
-	.string "The highest Fragmon authority!\n"
-	.string "Fragmon LEAGUE HQ$"
+	.string "The highest D{STAR}FRAG authority!\n"
+	.string "D{STAR}FRAG LEAGUE HQ$"
 
 Text_Food::
 	.string "It should be packed with all kinds\n"
@@ -171,7 +171,7 @@ Text_Blueprints::
 	.string "It's filled with diagrams and text.$"
 
 Text_Painting::
-	.string "It's a pretty picture of a Fragmon.\n"
+	.string "It's a pretty picture of a D{STAR}FRAG.\n"
 	.string "It looks like it's feeling good.$"
 
 Text_PowerPlantMachine::
@@ -200,7 +200,7 @@ Text_TrashBin::
 	.string "There's nothing here!$"
 
 Text_Cup::
-	.string "It's a cup with a Fragmon mark\n"
+	.string "It's a cup with a D{STAR}FRAG mark\n"
 	.string "on it.$"
 
 Text_PolishedWindow::
@@ -232,5 +232,5 @@ Text_Burglary::
 	.string "here…$"
 
 Text_PlayerFacingTVScreen::
-	.string "There's a Fragmon on TV!\n"
+	.string "There's a D{STAR}FRAG on TV!\n"
 	.string "It looks like it's having fun.$"

@@ -10,16 +10,16 @@ PewterCity_House2_EventScript_LittleBoy::
 	end
 
 PewterCity_House2_Text_MonsLearnTechniquesAsTheyGrow::
-	.string "Fragmon learn new techniques as\n"
+	.string "D{STAR}FRAG learn new techniques as\n"
 	.string "they grow.\p"
 	.string "But some moves must be taught to\n"
 	.string "them by people.$"
 
 PewterCity_House2_Text_MonsEasierCatchIfStatused::
-	.string "A Fragmon becomes easier to \n"
+	.string "A D{STAR}FRAG becomes easier to \n"
 	.string "catch if it has a status problem.\p"
 	.string "Sleep, poison, burn, or paralysis…\n"
 	.string "Those are all effective.\p"
-	.string "But catching Fragmon is never\n"
+	.string "But catching D{STAR}FRAG is never\n"
 	.string "a sure thing!$"
 

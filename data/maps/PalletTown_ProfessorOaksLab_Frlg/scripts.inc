@@ -1323,18 +1323,18 @@ PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak::
 	.string "from PROF. OAK!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalMyMonLooksTougher::
-	.string "{RIVAL}: My Fragmon looks a lot\n"
+	.string "{RIVAL}: My D{STAR}FRAG looks a lot\n"
 	.string "tougher than yours.$"
 
 PalletTown_ProfessorOaksLab_Text_RivalLetsCheckOutMons::
 	.string "{RIVAL}: Wait, {PLAYER}!\n"
-	.string "Let's check out our Fragmon!\p"
+	.string "Let's check out our D{STAR}FRAG!\p"
 	.string "Come on, I'll take you on!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalDefeat::
 	.string "WHAT?\n"
 	.string "Unbelievable!\l"
-	.string "I picked the wrong Fragmon!$"
+	.string "I picked the wrong D{STAR}FRAG!$"
 
 @ Also used for early Route 22 battle
 Text_RivalVictory::
@@ -1343,7 +1343,7 @@ Text_RivalVictory::
 
 PalletTown_ProfessorOaksLab_Text_RivalGoToughenMyMon::
 	.string "{RIVAL}: Okay! I'll make my\n"
-	.string "Fragmon battle to toughen it up!\p"
+	.string "D{STAR}FRAG battle to toughen it up!\p"
 	.string "{PLAYER}! Gramps!\n"
 	.string "Smell you later!$"
 
@@ -1374,12 +1374,12 @@ PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne::
 	.string "Oh, that's right, I told you to\n"
 	.string "come! Just wait!\p"
 	.string "Here, {PLAYER}.\p"
-	.string "There are three Fragmon here.\p"
+	.string "There are three D{STAR}FRAG here.\p"
 	.string "Haha!\p"
-	.string "The Fragmon are held inside\n"
+	.string "The D{STAR}FRAG are held inside\n"
 	.string "these POKé BALLS.\p"
 	.string "When I was young, I was a serious\n"
-	.string "Fragmon TRAINER.\p"
+	.string "D{STAR}FRAG TRAINER.\p"
 	.string "But now, in my old age, I have\n"
 	.string "only these three left.\p"
 	.string "You can have one.\n"
@@ -1392,7 +1392,7 @@ PalletTown_ProfessorOaksLab_Text_OakBePatientRival::
 PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose::
 	.string "OAK: Now, {PLAYER}.\p"
 	.string "Inside those three POKé BALLS are\n"
-	.string "Fragmon.\p"
+	.string "D{STAR}FRAG.\p"
 	.string "Which one will you choose for\n"
 	.string "yourself?$"
 
@@ -1404,22 +1404,22 @@ PalletTown_ProfessorOaksLab_Text_OakChoosingCharmander::
 	.string "Ah! CHARMANDER is your choice.\n"
 	.string "You should raise it patiently.\p"
 	.string "So, {PLAYER}, you're claiming the\n"
-	.string "FIRE Fragmon CHARMANDER?$"
+	.string "FIRE D{STAR}FRAG CHARMANDER?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingSquirtle::
 	.string "Hm! SQUIRTLE is your choice.\n"
 	.string "It's one worth raising.\p"
 	.string "So, {PLAYER}, you've decided on the\n"
-	.string "WATER Fragmon SQUIRTLE?$"
+	.string "WATER D{STAR}FRAG SQUIRTLE?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingBulbasaur::
 	.string "I see! BULBASAUR is your choice.\n"
 	.string "It's very easy to raise.\p"
 	.string "So, {PLAYER}, you want to go with\n"
-	.string "the GRASS Fragmon BULBASAUR?$"
+	.string "the GRASS D{STAR}FRAG BULBASAUR?$"
 
 PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic::
-	.string "This Fragmon is really quite\n"
+	.string "This D{STAR}FRAG is really quite\n"
 	.string "energetic!$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak::
@@ -1427,22 +1427,22 @@ PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak::
 	.string "from PROF. OAK!$"
 
 PalletTown_ProfessorOaksLab_Text_OakCanReachNextTownWithMon::
-	.string "OAK: If a wild Fragmon appears,\n"
-	.string "your Fragmon can battle it.\p"
+	.string "OAK: If a wild D{STAR}FRAG appears,\n"
+	.string "your D{STAR}FRAG can battle it.\p"
 	.string "With it at your side, you should be\n"
 	.string "able to reach the next town.$"
 
 PalletTown_ProfessorOaksLab_Text_OakBattleMonForItToGrow::
 	.string "OAK: {PLAYER}, raise your young\n"
-	.string "Fragmon by making it battle.\p"
+	.string "D{STAR}FRAG by making it battle.\p"
 	.string "It has to battle for it to grow.$"
 
 PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForMe::
 	.string "OAK: Oh, {PLAYER}!\n"
-	.string "How is my old Fragmon?\p"
+	.string "How is my old D{STAR}FRAG?\p"
 	.string "Well, it seems to be growing more\n"
 	.string "attached to you.\p"
-	.string "You must be talented as a Fragmon\n"
+	.string "You must be talented as a D{STAR}FRAG\n"
 	.string "TRAINER.\p"
 	.string "What's that?\n"
 	.string "You have something for me?$"
@@ -1464,7 +1464,7 @@ PalletTown_ProfessorOaksLab_Text_OakPokedexOnDesk::
 	.string "On the desk there is my invention,\n"
 	.string "the NC{EMOJI_IRRITATED}PDA!\p"
 	.string "It automatically records data on\n"
-	.string "Fragmon you've seen or caught.\p"
+	.string "D{STAR}FRAG you've seen or caught.\p"
 	.string "It's a high-tech encyclopedia!$"
 
 PalletTown_ProfessorOaksLab_Text_OakTakeTheseWithYou::
@@ -1477,27 +1477,27 @@ PalletTown_ProfessorOaksLab_Text_ReceivedPokedexFromOak::
 
 PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese::
 	.string "OAK: You can't get detailed data\n"
-	.string "on Fragmon by just seeing them.\p"
+	.string "on D{STAR}FRAG by just seeing them.\p"
 	.string "You must catch them to obtain\n"
 	.string "complete data.\p"
 	.string "So, here are some tools for\n"
-	.string "catching wild Fragmon.$"
+	.string "catching wild D{STAR}FRAG.$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls::
 	.string "{PLAYER} received five POKé BALLS.$"
 
 PalletTown_ProfessorOaksLab_Text_OakExplainCatching::
-	.string "When a wild Fragmon appears,\n"
+	.string "When a wild D{STAR}FRAG appears,\n"
 	.string "it's fair game.\p"
 	.string "Just throw a POKé BALL at it and\n"
 	.string "try to catch it!\p"
 	.string "This won't always work, however.\p"
-	.string "A healthy Fragmon can escape.\n"
+	.string "A healthy D{STAR}FRAG can escape.\n"
 	.string "You have to be lucky!$"
 
 PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream::
 	.string "To make a complete guide on all\n"
-	.string "the Fragmon in the world…\p"
+	.string "the D{STAR}FRAG in the world…\p"
 	.string "That was my dream!\p"
 	.string "But, I'm too old.\n"
 	.string "I can't get the job done.\p"
@@ -1505,17 +1505,17 @@ PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream::
 	.string "dream for me.\p"
 	.string "Get moving, you two.\p"
 	.string "This is a great undertaking in\n"
-	.string "Fragmon history!$"
+	.string "D{STAR}FRAG history!$"
 
 PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait::
-	.string "Fragmon around the world wait for\n"
+	.string "D{STAR}FRAG around the world wait for\n"
 	.string "you, {PLAYER}!$"
 
 PalletTown_ProfessorOaksLab_Text_OakAddedNothingToPokedex::
 	.string "Ah, {PLAYER}!\n"
 	.string "How is your NC{EMOJI_IRRITATED}PDA shaping up?\p"
 	.string "{RIVAL} has already caught some\n"
-	.string "Fragmon and added to the data.\p"
+	.string "D{STAR}FRAG and added to the data.\p"
 	.string "So, {PLAYER}, let's have a look at\n"
 	.string "your NC{EMOJI_IRRITATED}PDA.\p"
 	.string "…What's the matter?\n"
@@ -1534,10 +1534,10 @@ PalletTown_ProfessorOaksLab_Text_BlankEncyclopedia::
 
 PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls::
 	.string "Those are POKé BALLS.\n"
-	.string "They contain Fragmon!$"
+	.string "They contain D{STAR}FRAG!$"
 
 PalletTown_ProfessorOaksLab_Text_OaksLastMon::
-	.string "That's PROF. OAK's last Fragmon.$"
+	.string "That's PROF. OAK's last D{STAR}FRAG.$"
 
 PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu::
 	.string "Press START to open the MENU!$"
@@ -1547,7 +1547,7 @@ PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu::
 	.string "Use it regularly.$"
 
 PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints::
-	.string "All Fragmon types have strong and\n"
+	.string "All D{STAR}FRAG types have strong and\n"
 	.string "weak points against others.$"
 
 PalletTown_ProfessorOaksLab_Text_EmailMessage::
@@ -1555,28 +1555,28 @@ PalletTown_ProfessorOaksLab_Text_EmailMessage::
 	.string "…\p"
 	.string "Finally!\n"
 	.string "The ultimate TRAINERS of the\l"
-	.string "Fragmon LEAGUE are ready to\l"
+	.string "D{STAR}FRAG LEAGUE are ready to\l"
 	.string "take on all comers!\p"
-	.string "Bring your best Fragmon and see\n"
+	.string "Bring your best D{STAR}FRAG and see\n"
 	.string "how you rate as a TRAINER!\p"
-	.string "Fragmon LEAGUE HQ\n"
+	.string "D{STAR}FRAG LEAGUE HQ\n"
 	.string "INDIGO PLATEAU\p"
 	.string "PROF. OAK, please visit us!\n"
 	.string "…$"
 
 PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide::
-	.string "I study Fragmon as PROF. OAK's\n"
+	.string "I study D{STAR}FRAG as PROF. OAK's\n"
 	.string "AIDE.$"
 
 PalletTown_ProfessorOaksLab_Text_DaisyWillGroomMons::
 	.string "Hi, {PLAYER}. I bet you've become\n"
-	.string "good friends with your Fragmon.\p"
+	.string "good friends with your D{STAR}FRAG.\p"
 	.string "By the way, did you know about\n"
 	.string "DAISY?\p"
-	.string "If you show DAISY your Fragmon,\n"
+	.string "If you show DAISY your D{STAR}FRAG,\n"
 	.string "she can tell how much it likes you.\p"
 	.string "Occasionally, she will even groom\n"
-	.string "a Fragmon for you.\p"
+	.string "a D{STAR}FRAG for you.\p"
 	.string "This is a secret, so please don't\n"
 	.string "tell anyone.$"
 
@@ -1584,12 +1584,12 @@ PalletTown_ProfessorOaksLab_Text_OakIsGoingToHaveRadioShow::
 	.string "PROF. OAK is going to have his own\n"
 	.string "radio show soon.\p"
 	.string "The program will be called PROF.\n"
-	.string "OAK's Fragmon SEMINAR.$"
+	.string "OAK's D{STAR}FRAG SEMINAR.$"
 
 PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons::
 	.string "PROF. OAK may not look like much,\n"
-	.string "but he's the authority on Fragmon.\p"
-	.string "Many Fragmon TRAINERS hold him in\n"
+	.string "but he's the authority on D{STAR}FRAG.\p"
+	.string "Many D{STAR}FRAG TRAINERS hold him in\n"
 	.string "high regard.$"
 
 PalletTown_ProfessorOaksLab_Text_OakFavorToAskYouPlayer::
@@ -1600,8 +1600,8 @@ PalletTown_ProfessorOaksLab_Text_OakFavorToAskYouPlayer::
 
 PalletTown_ProfessorOaksLab_Text_OakSightingsOfRareMons::
 	.string "Recently, there have been sightings\n"
-	.string "of many rare Fragmon species.\p"
-	.string "I'm talking about Fragmon that\n"
+	.string "of many rare D{STAR}FRAG species.\p"
+	.string "I'm talking about D{STAR}FRAG that\n"
 	.string "have never been seen in KANTO.\p"
 	.string "I would love to go see things for\n"
 	.string "myself, but I'm much too old.\p"
@@ -1612,7 +1612,7 @@ PalletTown_ProfessorOaksLab_Text_RivalJustLetMeHandleEverything::
 	.string "{RIVAL}: Hey, I heard that!\p"
 	.string "Gramps, what's with favoring\n"
 	.string "{PLAYER} over me all the time?\p"
-	.string "I went and collected more Fragmon,\n"
+	.string "I went and collected more D{STAR}FRAG,\n"
 	.string "and faster, too.\p"
 	.string "You should just let me handle\n"
 	.string "everything.$"
@@ -1632,7 +1632,7 @@ PalletTown_ProfessorOaksLab_Text_OakNowTheseUnitsCanRecordMoreData::
 	.string "… … …  … … …\p"
 	.string "…And that's done!\p"
 	.string "Now these units can record data on\n"
-	.string "a lot more Fragmon.$"
+	.string "a lot more D{STAR}FRAG.$"
 
 PalletTown_ProfessorOaksLab_Text_PlayersPokedexWasUpgraded::
 	.string "{PLAYER}'s NC{EMOJI_IRRITATED}PDA was upgraded!$"
@@ -1644,7 +1644,7 @@ PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex::
 	.string "I urge you to make them the best\n"
 	.string "and the most complete of all time!\p"
 	.string "Truly, this is a monumentally great\n"
-	.string "undertaking in Fragmon history!$"
+	.string "undertaking in D{STAR}FRAG history!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
 	.string "{RIVAL}: Gramps, calm down.\n"

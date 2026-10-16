@@ -1,17 +1,17 @@
 gText_WouldYouLikeToRestYourPkmn::
 	.string "Hello, and welcome to\n"
-	.string "the Fragmon CENTER.\p"
-	.string "We restore your tired Fragmon\n"
+	.string "the D{STAR}FRAG CENTER.\p"
+	.string "We restore your tired D{STAR}FRAG\n"
 	.string "to full health.\p"
-	.string "Would you like to rest your Fragmon?$"
+	.string "Would you like to rest your D{STAR}FRAG?$"
 
 gText_IllTakeYourPkmn::
-	.string "Okay, I'll take your Fragmon\n"
+	.string "Okay, I'll take your D{STAR}FRAG\n"
 	.string "for a few seconds.$"
 
 gText_RestoredPkmnToFullHealth::
 	.string "Thank you for waiting.\p"
-	.string "We've restored your Fragmon\n"
+	.string "We've restored your D{STAR}FRAG\n"
 	.string "to full health.$"
 
 gText_WeHopeToSeeYouAgain::
@@ -19,8 +19,8 @@ gText_WeHopeToSeeYouAgain::
 
 gText_WelcomeCutShort::
 	.string "Hello, and welcome to\n"
-	.string "the Fragmon CENTER.\p"
-	.string "We restore your tired Fragmon\n"
+	.string "the D{STAR}FRAG CENTER.\p"
+	.string "We restore your tired D{STAR}FRAG\n"
 	.string "to full health.\p"
 	.string "Would you like to…$"
 
@@ -34,14 +34,14 @@ gText_NoticesGoldCard::
 	.string "you're the first TRAINER I've ever\l"
 	.string "seen with a GOLD CARD!\p"
 	.string "Okay, {PLAYER}, please allow me\n"
-	.string "the honor of resting your Fragmon!$"
+	.string "the honor of resting your D{STAR}FRAG!$"
 
 gText_YouWantTheUsual::
 	.string "I'm delighted to see you, {PLAYER}!\n"
 	.string "You want the usual, am I right?$"
 
 gText_IllTakeYourPkmn2::
-	.string "Okay, I'll take your Fragmon\n"
+	.string "Okay, I'll take your D{STAR}FRAG\n"
 	.string "for a few seconds.$"
 
 gText_ThankYouForWaiting::

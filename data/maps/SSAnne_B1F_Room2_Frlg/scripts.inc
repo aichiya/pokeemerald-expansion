@@ -7,12 +7,12 @@ SSAnne_B1F_Room2_EventScript_Huey::
 	end
 
 SSAnne_B1F_Room2_Text_HueyIntro::
-	.string "Even us sailors have Fragmon, too!$"
+	.string "Even us sailors have D{STAR}FRAG, too!$"
 
 SSAnne_B1F_Room2_Text_HueyDefeat::
 	.string "Okay, you're not bad.$"
 
 SSAnne_B1F_Room2_Text_HueyPostBattle::
-	.string "We caught all our Fragmon while\n"
+	.string "We caught all our D{STAR}FRAG while\n"
 	.string "we were out at sea.$"
 

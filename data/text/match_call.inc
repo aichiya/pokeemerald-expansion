@@ -27,7 +27,7 @@ MatchCall_WildBattleText3::
 MatchCall_WildBattleText4::
 	.string "Hey, {PLAYER}{KUN}.\n"
 	.string "{STR_VAR_1} here.\p"
-	.string "You know the Fragmon {STR_VAR_2}?\n"
+	.string "You know the D{STAR}FRAG {STR_VAR_2}?\n"
 	.string "I came close to getting one.\p"
 	.string "It was just a while back.\n"
 	.string "I thought I had it but it escaped.\p"
@@ -38,7 +38,7 @@ MatchCall_WildBattleText4::
 MatchCall_WildBattleText5::
 	.string "Hiya, {PLAYER}{KUN}!\n"
 	.string "It's {STR_VAR_1}.\l"
-	.string "Catching any Fragmon lately?\p"
+	.string "Catching any D{STAR}FRAG lately?\p"
 	.string "A little while ago I came close to\n"
 	.string "nabbing one, but it got loose.\p"
 	.string "Right, take care!$"
@@ -46,7 +46,7 @@ MatchCall_WildBattleText5::
 MatchCall_WildBattleText6::
 	.string "Hey, {PLAYER}{KUN}.\n"
 	.string "{STR_VAR_1} here.\l"
-	.string "Caught any Fragmon lately?\p"
+	.string "Caught any D{STAR}FRAG lately?\p"
 	.string "I nearly nabbed one the other day.\n"
 	.string "But it evaded me somehow.\p"
 	.string "You take care.$"
@@ -63,7 +63,7 @@ MatchCall_WildBattleText8::
 	.string "Oh, {PLAYER}{KUN}, how do you do?\n"
 	.string "This is {STR_VAR_1} speaking.\p"
 	.string "Have you had success catching\n"
-	.string "Fragmon lately?\p"
+	.string "D{STAR}FRAG lately?\p"
 	.string "I came very close a little while\n"
 	.string "ago, but my target got free.\p"
 	.string "I need to try harder!\n"
@@ -72,7 +72,7 @@ MatchCall_WildBattleText8::
 MatchCall_WildBattleText9::
 	.string "Oh, {PLAYER}{KUN}, hi there!\n"
 	.string "This is {STR_VAR_1}!\p"
-	.string "So? Are you getting more Fragmon\n"
+	.string "So? Are you getting more D{STAR}FRAG\n"
 	.string "together?\p"
 	.string "I'm having a rotten time of it!\n"
 	.string "They all get away from me!\p"
@@ -98,18 +98,18 @@ MatchCall_WildBattleText11::
 MatchCall_WildBattleText12::
 	.string "Hello, {PLAYER}{KUN}.\n"
 	.string "It's me, {STR_VAR_1}.\l"
-	.string "Are you still catching Fragmon?\p"
+	.string "Are you still catching D{STAR}FRAG?\p"
 	.string "I've been trying to catch them\n"
 	.string "myself, but it's not so easy.\p"
-	.string "The way of Fragmon is deep!$"
+	.string "The way of D{STAR}FRAG is deep!$"
 
 MatchCall_WildBattleText13::
 	.string "Ah, hello, {PLAYER}{KUN}!\n"
 	.string "This is {STR_VAR_1}!\l"
-	.string "Have you been catching Fragmon?\p"
+	.string "Have you been catching D{STAR}FRAG?\p"
 	.string "I've been trying to catch them\n"
 	.string "myself, but with little success.\p"
-	.string "The way of Fragmon is deep!$"
+	.string "The way of D{STAR}FRAG is deep!$"
 
 MatchCall_WildBattleText14::
 	.string "Oh, hi, {PLAYER}{KUN}, how do you do?\n"
@@ -124,7 +124,7 @@ MatchCall_WildBattleText15::
 	.string "Hey, {PLAYER}!\n"
 	.string "This is {STR_VAR_1}!\p"
 	.string "I've been thinking about trying\n"
-	.string "to catch me some Fragmon.\p"
+	.string "to catch me some D{STAR}FRAG.\p"
 	.string "But I can't seem to find any.\n"
 	.string "It's a real puzzler for me!\p"
 	.string "I'm at my wit's end!\n"
@@ -190,7 +190,7 @@ MatchCall_NegativeBattleText7::
 MatchCall_NegativeBattleText8::
 	.string "Oh, {PLAYER}{KUN}, how do you do?\n"
 	.string "This is {STR_VAR_1} speaking.\p"
-	.string "How are your Fragmon doing?\n"
+	.string "How are your D{STAR}FRAG doing?\n"
 	.string "I lost a match the other day.\p"
 	.string "I need to try harder!\n"
 	.string "See you again!$"
@@ -200,7 +200,7 @@ MatchCall_NegativeBattleText9::
 	.string "This is {STR_VAR_1}!\p"
 	.string "Listen, listen, you have to hear\n"
 	.string "this!\p"
-	.string "I had a Fragmon battle earlier,\n"
+	.string "I had a D{STAR}FRAG battle earlier,\n"
 	.string "but I lost at the last second.\p"
 	.string "Oh, it burns me up!$"
 
@@ -209,13 +209,13 @@ MatchCall_NegativeBattleText10::
 	.string "This is {STR_VAR_1}.\p"
 	.string "A little earlier, I was in a battle.\n"
 	.string "I lost, though.\p"
-	.string "I need to raise my Fragmon more.\n"
+	.string "I need to raise my D{STAR}FRAG more.\n"
 	.string "See you around.$"
 
 MatchCall_NegativeBattleText11::
 	.string "Ah, {PLAYER}{KUN}.\n"
 	.string "This is {STR_VAR_1}.\l"
-	.string "How are your Fragmon?\p"
+	.string "How are your D{STAR}FRAG?\p"
 	.string "I just lost yet another battle.\p"
 	.string "Well, see you!$"
 
@@ -314,7 +314,7 @@ MatchCall_PositiveBattleText8::
 MatchCall_PositiveBattleText9::
 	.string "Oh, {PLAYER}{KUN}, hi there!\n"
 	.string "This is {STR_VAR_1}!\p"
-	.string "How are your Fragmon holding up?\n"
+	.string "How are your D{STAR}FRAG holding up?\n"
 	.string "Mine just won a battle!\p"
 	.string "My {STR_VAR_2} was spectacular,\n"
 	.string "I must say!\p"
@@ -325,7 +325,7 @@ MatchCall_PositiveBattleText10::
 	.string "Oh, {PLAYER}{KUN}, hello…\n"
 	.string "This is {STR_VAR_1}.\p"
 	.string "How has life been treating you?\p"
-	.string "My Fragmon appear to be charged\n"
+	.string "My D{STAR}FRAG appear to be charged\n"
 	.string "with energy.\p"
 	.string "I just won a battle with them.\n"
 	.string "See you around.$"
@@ -413,7 +413,7 @@ MatchCall_SameRouteBattleRequestText5::
 MatchCall_SameRouteBattleRequestText6::
 	.string "Hey, {PLAYER}{KUN}.\n"
 	.string "{STR_VAR_1} here.\l"
-	.string "How are your Fragmon keeping?\p"
+	.string "How are your D{STAR}FRAG keeping?\p"
 	.string "Oh, is that right? You're around\n"
 	.string "{STR_VAR_2}?\p"
 	.string "Well, then, we'd better have\n"
@@ -428,7 +428,7 @@ MatchCall_SameRouteBattleRequestText7::
 	.string "{STR_VAR_2}?\p"
 	.string "Then, let's battle.\n"
 	.string "Right away, I mean.\p"
-	.string "I'll show you my Fragmon.\n"
+	.string "I'll show you my D{STAR}FRAG.\n"
 	.string "I'll wait for you.$"
 
 MatchCall_SameRouteBattleRequestText8::
@@ -518,10 +518,10 @@ MatchCall_DifferentRouteBattleRequestText2::
 MatchCall_DifferentRouteBattleRequestText3::
 	.string "Hey there, {PLAYER}!\n"
 	.string "It's me, {STR_VAR_1}.\p"
-	.string "My Fragmon have grown a lot\n"
+	.string "My D{STAR}FRAG have grown a lot\n"
 	.string "tougher since last time.\p"
 	.string "I want to see how strong they've\n"
-	.string "become with your Fragmon, {PLAYER}.\p"
+	.string "become with your D{STAR}FRAG, {PLAYER}.\p"
 	.string "So, let's have a battle!\p"
 	.string "I'll be waiting for you around\n"
 	.string "{STR_VAR_2}.$"
@@ -530,7 +530,7 @@ MatchCall_DifferentRouteBattleRequestText4::
 	.string "Hey, {PLAYER}{KUN}.\n"
 	.string "{STR_VAR_1} here.\l"
 	.string "How are things with you?\p"
-	.string "My Fragmon have grown pretty\n"
+	.string "My D{STAR}FRAG have grown pretty\n"
 	.string "tough lately.\p"
 	.string "Hey, how would you like to have\n"
 	.string "another battle with me?\p"
@@ -540,7 +540,7 @@ MatchCall_DifferentRouteBattleRequestText4::
 MatchCall_DifferentRouteBattleRequestText5::
 	.string "Hiya, {PLAYER}{KUN}!\n"
 	.string "It's {STR_VAR_1}.\p"
-	.string "My Fragmon are growing up in\n"
+	.string "My D{STAR}FRAG are growing up in\n"
 	.string "decent ways.\p"
 	.string "I'd really like to have another\n"
 	.string "battle with you.\p"
@@ -560,7 +560,7 @@ MatchCall_DifferentRouteBattleRequestText6::
 MatchCall_DifferentRouteBattleRequestText7::
 	.string "…Er, {PLAYER}{KUN}?\n"
 	.string "{STR_VAR_1} here…\l"
-	.string "So? Are your Fragmon growing?\p"
+	.string "So? Are your D{STAR}FRAG growing?\p"
 	.string "Mine sure got stronger.\n"
 	.string "I'd like to show you.\p"
 	.string "I'll be around {STR_VAR_2}.\n"
@@ -571,7 +571,7 @@ MatchCall_DifferentRouteBattleRequestText8::
 	.string "Oh, {PLAYER}{KUN}, how do you do?\n"
 	.string "This is {STR_VAR_1} speaking.\p"
 	.string "I hope you're doing well.\n"
-	.string "My Fragmon are very frisky.\p"
+	.string "My D{STAR}FRAG are very frisky.\p"
 	.string "If you're ever in the area, please\n"
 	.string "give me a rematch.\p"
 	.string "I'll be around {STR_VAR_2}.\n"
@@ -580,8 +580,8 @@ MatchCall_DifferentRouteBattleRequestText8::
 MatchCall_DifferentRouteBattleRequestText9::
 	.string "Oh, {PLAYER}{KUN}, hi there!\n"
 	.string "This is {STR_VAR_1}!\l"
-	.string "How are your Fragmon doing?\p"
-	.string "My Fragmon keep getting better.\n"
+	.string "How are your D{STAR}FRAG doing?\p"
+	.string "My D{STAR}FRAG keep getting better.\n"
 	.string "I'd like to show you, {PLAYER}{KUN}.\p"
 	.string "I'm around {STR_VAR_2} now,\n"
 	.string "so let's battle if you're close by.\p"
@@ -591,7 +591,7 @@ MatchCall_DifferentRouteBattleRequestText10::
 	.string "Oh, {PLAYER}{KUN}, hello…\n"
 	.string "This is {STR_VAR_1}.\l"
 	.string "So, how are things with you?\p"
-	.string "My Fragmon have grown much\n"
+	.string "My D{STAR}FRAG have grown much\n"
 	.string "stronger than before.\p"
 	.string "I'd love another battle with you,\n"
 	.string "{PLAYER}{KUN}.\p"
@@ -602,16 +602,16 @@ MatchCall_DifferentRouteBattleRequestText11::
 	.string "Ah, {PLAYER}{KUN}.\n"
 	.string "This is {STR_VAR_1}.\l"
 	.string "Where might you be now?\p"
-	.string "My Fragmon are full of life.\n"
+	.string "My D{STAR}FRAG are full of life.\n"
 	.string "They appear to be looking forward\l"
-	.string "to seeing your Fragmon, {PLAYER}{KUN}.\p"
+	.string "to seeing your D{STAR}FRAG, {PLAYER}{KUN}.\p"
 	.string "I'm around {STR_VAR_2} now.\n"
 	.string "I hope you'll seek us out.$"
 
 MatchCall_DifferentRouteBattleRequestText12::
 	.string "Hello, {PLAYER}{KUN}.\n"
 	.string "It's me, {STR_VAR_1}.\p"
-	.string "I should tell you, my Fragmon have\n"
+	.string "I should tell you, my D{STAR}FRAG have\n"
 	.string "grown to be quite robust lately.\p"
 	.string "I would like to see them in a battle\n"
 	.string "with you, {PLAYER}{KUN}.\p"
@@ -621,8 +621,8 @@ MatchCall_DifferentRouteBattleRequestText12::
 MatchCall_DifferentRouteBattleRequestText13::
 	.string "Ah, hello, {PLAYER}{KUN}!\n"
 	.string "This is {STR_VAR_1}!\l"
-	.string "Are your Fragmon keeping well?\p"
-	.string "My Fragmon have been so healthy,\n"
+	.string "Are your D{STAR}FRAG keeping well?\p"
+	.string "My D{STAR}FRAG have been so healthy,\n"
 	.string "they don't look capable of losing!\p"
 	.string "I would surely love to have another\n"
 	.string "battle with you.\p"
@@ -633,7 +633,7 @@ MatchCall_DifferentRouteBattleRequestText14::
 	.string "Oh, hi, {PLAYER}{KUN}.\n"
 	.string "This is {STR_VAR_1}.\l"
 	.string "Keeping well, I hope.\p"
-	.string "Oh, yes! My Fragmon are\n"
+	.string "Oh, yes! My D{STAR}FRAG are\n"
 	.string "much stronger than before.\p"
 	.string "Don't you think we ought to have\n"
 	.string "a battle, {PLAYER}{KUN}?\p"
@@ -656,7 +656,7 @@ MatchCall_PersonalizedText2::
 	.string "I was just telling a new TRAINER\n"
 	.string "about you.\p"
 	.string "I told her about a strong TRAINER\n"
-	.string "who raises Fragmon with care.\p"
+	.string "who raises D{STAR}FRAG with care.\p"
 	.string "I hope you'll become a TRAINER\n"
 	.string "that everyone will admire.\p"
 	.string "I hope we meet again!$"
@@ -691,7 +691,7 @@ MatchCall_PersonalizedText6::
 	.string "Munch-chew…\n"
 	.string "Oh, hi, it's {STR_VAR_1}.\l"
 	.string "I love eating on the beach.\p"
-	.string "My Fragmon and I have been doing\n"
+	.string "My D{STAR}FRAG and I have been doing\n"
 	.string "great. We're fully fueled!\l"
 	.string "I'm going for a swim. Bye!$"
 
@@ -714,7 +714,7 @@ MatchCall_PersonalizedText7::
 MatchCall_PersonalizedText8::
 	.string "Yahoo, it's {STR_VAR_1}!\n"
 	.string "How do you do?\p"
-	.string "I've been raising my Fragmon with\n"
+	.string "I've been raising my D{STAR}FRAG with\n"
 	.string "you as the target.\p"
 	.string "I don't intend to lose when we\n"
 	.string "battle again.\p"
@@ -725,7 +725,7 @@ MatchCall_PersonalizedText9::
 	.string "It's {STR_VAR_1}…\n"
 	.string "Right now, behind you…\l"
 	.string "Wasn't there something…?\p"
-	.string "The power of the Fragmon that\n"
+	.string "The power of the D{STAR}FRAG that\n"
 	.string "sleep here at MT. PYRE…\p"
 	.string "It's telling me about you…\p"
 	.string "You should walk away quickly and\n"
@@ -761,7 +761,7 @@ MatchCall_PersonalizedText12::
 	.string "Yes, correct, I am rich, yes.\p"
 	.string "I should tell you, my wealth has\n"
 	.string "grown since we last met.\p"
-	.string "What's more, my Fragmon have also\n"
+	.string "What's more, my D{STAR}FRAG have also\n"
 	.string "grown stronger.\p"
 	.string "I can't shake the feeling that\n"
 	.string "this world exists for me!\p"
@@ -808,11 +808,11 @@ MatchCall_PersonalizedText15::
 
 MatchCall_PersonalizedText16::
 	.string "It's {STR_VAR_1}! Listen, I've been\n"
-	.string "teaching karate to my Fragmon.\p"
+	.string "teaching karate to my D{STAR}FRAG.\p"
 	.string "But now they're better than me!\n"
 	.string "I've done nothing but lose to them!\p"
 	.string "But even though I may lose to\n"
-	.string "Fragmon, I won't lose to another\l"
+	.string "D{STAR}FRAG, I won't lose to another\l"
 	.string "TRAINER, no sir!\p"
 	.string "We have to battle again!\n"
 	.string "Ugwaah!$"
@@ -930,7 +930,7 @@ MatchCall_PersonalizedText27::
 	.string "Hi, it's ANNA! I'm with my junior\n"
 	.string "partner MEG again today.\p"
 	.string "I really love caring for MEG and\n"
-	.string "Fragmon. They're so cute!\p"
+	.string "D{STAR}FRAG. They're so cute!\p"
 	.string "I wish I could look after them\n"
 	.string "as if they were my siblings!\p"
 	.string "Oh, hi, MEG!\n"
@@ -945,10 +945,10 @@ MatchCall_PersonalizedText27::
 	.string "It's time for our snack!$"
 
 MatchCall_PersonalizedText28::
-	.string "I love Fragmon!\n"
+	.string "I love D{STAR}FRAG!\n"
 	.string "It's {STR_VAR_1} from the FAN CLUB!\p"
 	.string "You have to hear this!\n"
-	.string "My sweet Fragmon…\p"
+	.string "My sweet D{STAR}FRAG…\p"
 	.string "Snort! Wahaha!\n"
 	.string "I can't say any more! It's a secret!\l"
 	.string "It's just too cute for words!\p"
@@ -961,7 +961,7 @@ MatchCall_PersonalizedText28::
 MatchCall_PersonalizedText29::
 	.string "Ohoho!\p"
 	.string "This is {STR_VAR_1}! I can't wait to\n"
-	.string "tell you about my darling Fragmon!\p"
+	.string "tell you about my darling D{STAR}FRAG!\p"
 	.string "Please, you must listen to this.\n"
 	.string "It's about my darling {STR_VAR_2}.\p"
 	.string "Whenever anyone picks it up,\n"
@@ -980,7 +980,7 @@ MatchCall_PersonalizedText30::
 	.string "But there is one thing I know.\n"
 	.string "I could not be an EXPERT on my own\l"
 	.string "power.\p"
-	.string "Only with the help of Fragmon can\n"
+	.string "Only with the help of D{STAR}FRAG can\n"
 	.string "a TRAINER become an EXPERT.\p"
 	.string "Humph! I believe I may have said\n"
 	.string "something deep and profound!\p"
@@ -1064,7 +1064,7 @@ MatchCall_PersonalizedText36::
 	.string "in the middle of a triathlon!\p"
 	.string "But, hey, I've always got time to\n"
 	.string "shoot the breeze!\p"
-	.string "Working out with Fragmon feels\n"
+	.string "Working out with D{STAR}FRAG feels\n"
 	.string "mighty good!\p"
 	.string "Without exchanging words, we synch\n"
 	.string "as if we shared a heart.\p"
@@ -1119,8 +1119,8 @@ MatchCall_PersonalizedText40::
 MatchCall_PersonalizedText41::
 	.string "Hello, {PLAYER}{KUN}.\n"
 	.string "{STR_VAR_1} here.\p"
-	.string "How are your Fragmon doing?\p"
-	.string "My DRAGON Fragmon appear to be\n"
+	.string "How are your D{STAR}FRAG doing?\p"
+	.string "My DRAGON D{STAR}FRAG appear to be\n"
 	.string "in peak form. Bye for now.$"
 
 MatchCall_PersonalizedText42::
@@ -1177,14 +1177,14 @@ MatchCall_PersonalizedText47::
 	.string "But the ground is too bumpy.\n"
 	.string "I can't pitch my tent here…\p"
 	.string "Oh, I had a brilliant idea!\p"
-	.string "Maybe I can get my Fragmon to tamp\n"
+	.string "Maybe I can get my D{STAR}FRAG to tamp\n"
 	.string "the ground flat here!\p"
 	.string "I'm going to try that!\n"
 	.string "Bye-bye!$"
 
 MatchCall_PersonalizedText48::
 	.string "Oh, hi, hi, this is {STR_VAR_1}!\p"
-	.string "I'm raising Fragmon with LIV!\n"
+	.string "I'm raising D{STAR}FRAG with LIV!\n"
 	.string "We're trying very hard!\p"
 	.string "If we try harder, can we become\n"
 	.string "number one? Bye-bye!$"
@@ -1201,38 +1201,38 @@ MatchCall_PersonalizedText49::
 
 MatchCall_PersonalizedText50::
 	.string "It's {STR_VAR_1}.\n"
-	.string "So? Get any more Fragmon?\p"
-	.string "If you catch a new Fragmon,\n"
+	.string "So? Get any more D{STAR}FRAG?\p"
+	.string "If you catch a new D{STAR}FRAG,\n"
 	.string "you have to come show me.\p"
 	.string "I won't whine for it, honest.\n"
 	.string "I'll be waiting. See you.$"
 
 MatchCall_PersonalizedText51::
 	.string "This is {STR_VAR_1}.\p"
-	.string "Are you raising your Fragmon\n"
+	.string "Are you raising your D{STAR}FRAG\n"
 	.string "in the optimal way?\p"
 	.string "The air is clean where I am.\n"
 	.string "It's the perfect environment for\l"
-	.string "raising Fragmon.\p"
+	.string "raising D{STAR}FRAG.\p"
 	.string "If you're going to focus on raising\n"
-	.string "Fragmon, you should come out to\l"
+	.string "D{STAR}FRAG, you should come out to\l"
 	.string "{STR_VAR_2}. Take care now.$"
 
 MatchCall_PersonalizedText52::
 	.string "Hi, this is {STR_VAR_1}.\p"
 	.string "I gave a {POKEBLOCK} to my {STR_VAR_2}.\n"
 	.string "It seemed to enjoy it very much.\p"
-	.string "It looks like Fragmon have their\n"
+	.string "It looks like D{STAR}FRAG have their\n"
 	.string "likes and dislikes with {POKEBLOCK}S.\p"
 	.string "I find that quite fascinating.\n"
 	.string "Please do take care.$"
 
 MatchCall_PersonalizedText53::
 	.string "{STR_VAR_1} here.\p"
-	.string "If you cooperate with Fragmon,\n"
+	.string "If you cooperate with D{STAR}FRAG,\n"
 	.string "one can be comfortable in the wild.\p"
 	.string "Everyone should realize that and\n"
-	.string "cooperate with Fragmon more.\p"
+	.string "cooperate with D{STAR}FRAG more.\p"
 	.string "That would be ideal.\n"
 	.string "I really think so.\p"
 	.string "I think you're on the right track!\n"
@@ -1242,7 +1242,7 @@ MatchCall_PersonalizedText54::
 	.string "Hi, it's {STR_VAR_1}. You know,\n"
 	.string "the TRAINER who's always prepared!\p"
 	.string "{PLAYER}{KUN}, do you have enough items?\n"
-	.string "Are your Fragmon fit for action?\p"
+	.string "Are your D{STAR}FRAG fit for action?\p"
 	.string "Keeping everything perfect around\n"
 	.string "you all the time is the secret to\l"
 	.string "keeping your journey going.\p"
@@ -1263,13 +1263,13 @@ MatchCall_PersonalizedText55::
 MatchCall_PersonalizedText56::
 	.string "It's me, {STR_VAR_1}.\p"
 	.string "I'm popular because I have lots\n"
-	.string "of BUG Fragmon, right?\p"
+	.string "of BUG D{STAR}FRAG, right?\p"
 	.string "Well, I took a bunch of my fave\n"
 	.string "bugs to school today.\p"
 	.string "This girl I like started crying!\n"
 	.string "Go ahead and laugh if you want.\p"
 	.string "I have to try teaching her what\n"
-	.string "makes BUG Fragmon so appealing.\p"
+	.string "makes BUG D{STAR}FRAG so appealing.\p"
 	.string "Snivel…\n"
 	.string "See you!$"
 
@@ -1323,12 +1323,12 @@ MatchCall_PersonalizedText60::
 	.string "It's a pleasure to chat with\n"
 	.string "a young TRAINER like you.\p"
 	.string "I imagine that you will continue to\n"
-	.string "enjoy Fragmon whatever your age.\p"
+	.string "enjoy D{STAR}FRAG whatever your age.\p"
 	.string "Wouldn't it be good if you had\n"
 	.string "a partnership like ours?\p"
 	.string "Of course, {PLAYER}{KUN}, you already\n"
 	.string "enjoy the trust and companionship\l"
-	.string "of your Fragmon now.\p"
+	.string "of your D{STAR}FRAG now.\p"
 	.string "You have the makings of long and\n"
 	.string "enduring relationships already!\p"
 	.string "Hahaha!\n"
@@ -1426,7 +1426,7 @@ MatchCall_BattleFrontierStreakText5::
 	.string "You were at the {STR_VAR_2}\n"
 	.string "and won {STR_VAR_3} battles in a row?\l"
 	.string "Isn't that something!\p"
-	.string "I'd better work on my Fragmon more.\n"
+	.string "I'd better work on my D{STAR}FRAG more.\n"
 	.string "See you soon!$"
 
 MatchCall_BattleFrontierStreakText6::
@@ -1444,7 +1444,7 @@ MatchCall_BattleFrontierStreakText7::
 	.string "Oh, yeah, you were over at\n"
 	.string "the {STR_VAR_2}, right?\p"
 	.string "And you won {STR_VAR_3} battles in a row.\p"
-	.string "Oh, there goes a rare Fragmon!\n"
+	.string "Oh, there goes a rare D{STAR}FRAG!\n"
 	.string "I have to go!$"
 
 MatchCall_BattleFrontierStreakText8::
@@ -1570,7 +1570,7 @@ MatchCall_BattleFrontierRecordStreakText7::
 	.string "Oh, yeah, you were over at\n"
 	.string "the {STR_VAR_2}, right?\p"
 	.string "And you won {STR_VAR_3} battles in a row.\p"
-	.string "Oh, there goes a rare Fragmon!\n"
+	.string "Oh, there goes a rare D{STAR}FRAG!\n"
 	.string "I have to go!$"
 
 MatchCall_BattleFrontierRecordStreakText8::
@@ -1581,7 +1581,7 @@ MatchCall_BattleFrontierRecordStreakText8::
 	.string "you won {STR_VAR_3} matches in a row at\l"
 	.string "the {STR_VAR_2}.\p"
 	.string "That's very impressive!\n"
-	.string "I'd better work on my Fragmon, too!$"
+	.string "I'd better work on my D{STAR}FRAG, too!$"
 
 MatchCall_BattleFrontierRecordStreakText9::
 	.string "Oh, {PLAYER}{KUN}, hi there!\n"
@@ -1685,7 +1685,7 @@ MatchCall_BattleDomeText6::
 	.string "By the way, I heard you became\n"
 	.string "the champion {STR_VAR_3} times at\l"
 	.string "the {STR_VAR_2}.\p"
-	.string "I'd better raise my Fragmon before\n"
+	.string "I'd better raise my D{STAR}FRAG before\n"
 	.string "you pull farther ahead.$"
 
 MatchCall_BattleDomeText7::
@@ -1694,7 +1694,7 @@ MatchCall_BattleDomeText7::
 	.string "You were at the {STR_VAR_2}\n"
 	.string "and became the champ {STR_VAR_3} times?\p"
 	.string "That's neat. By the way, have you\n"
-	.string "caught any rare Fragmon lately?\p"
+	.string "caught any rare D{STAR}FRAG lately?\p"
 	.string "Oh, is that right.\n"
 	.string "Okay, bye.$"
 
@@ -1705,7 +1705,7 @@ MatchCall_BattleDomeText8::
 	.string "Oh, but, you are.\p"
 	.string "I've heard that you won {STR_VAR_3} titles\n"
 	.string "at the {STR_VAR_2}.\p"
-	.string "I must raise my Fragmon like you.\n"
+	.string "I must raise my D{STAR}FRAG like you.\n"
 	.string "See you again.$"
 
 MatchCall_BattleDomeText9::
@@ -1794,7 +1794,7 @@ MatchCall_BattlePikeText4::
 	.string "{STR_VAR_1} here.\p"
 	.string "I heard you blew through {STR_VAR_3} rooms\n"
 	.string "at the {STR_VAR_2}.\p"
-	.string "I'd better train my Fragmon and\n"
+	.string "I'd better train my D{STAR}FRAG and\n"
 	.string "try to keep up!$"
 
 MatchCall_BattlePikeText5::
@@ -1810,7 +1810,7 @@ MatchCall_BattlePikeText6::
 	.string "{STR_VAR_1} here. How are you?\p"
 	.string "By the way, I heard you got through\n"
 	.string "{STR_VAR_3} rooms at the {STR_VAR_2}.\p"
-	.string "I'd better raise my Fragmon before\n"
+	.string "I'd better raise my D{STAR}FRAG before\n"
 	.string "you pull further ahead.$"
 
 MatchCall_BattlePikeText7::
@@ -1819,7 +1819,7 @@ MatchCall_BattlePikeText7::
 	.string "You were at the {STR_VAR_2}\n"
 	.string "and won your way past {STR_VAR_3} rooms?\p"
 	.string "That's wicked.\p"
-	.string "Oh, there goes a rare Fragmon!\n"
+	.string "Oh, there goes a rare D{STAR}FRAG!\n"
 	.string "Okay, bye.$"
 
 MatchCall_BattlePikeText8::
@@ -1830,7 +1830,7 @@ MatchCall_BattlePikeText8::
 	.string "I've heard that you got through\n"
 	.string "{STR_VAR_3} rooms at the {STR_VAR_2}.\p"
 	.string "That's quite impressive!\n"
-	.string "I must raise my Fragmon like you.\l"
+	.string "I must raise my D{STAR}FRAG like you.\l"
 	.string "See you again.$"
 
 MatchCall_BattlePikeText9::
@@ -1903,7 +1903,7 @@ MatchCall_BattlePyramidText2::
 	.string "They said you won your way through\n"
 	.string "{STR_VAR_3} floors in the {STR_VAR_2}.\p"
 	.string "Wow, that's fantastic!\n"
-	.string "I'd better raise my Fragmon, too!$"
+	.string "I'd better raise my D{STAR}FRAG, too!$"
 
 MatchCall_BattlePyramidText3::
 	.string "Hey there, {PLAYER}!\n"
@@ -1935,7 +1935,7 @@ MatchCall_BattlePyramidText6::
 	.string "{STR_VAR_1} here. How are you?\p"
 	.string "By the way, I heard you got through\n"
 	.string "{STR_VAR_3} floors in the {STR_VAR_2}.\p"
-	.string "I'd better raise my Fragmon before\n"
+	.string "I'd better raise my D{STAR}FRAG before\n"
 	.string "you pull further ahead.$"
 
 MatchCall_BattlePyramidText7::
@@ -1943,7 +1943,7 @@ MatchCall_BattlePyramidText7::
 	.string "{STR_VAR_1} here.\p"
 	.string "You were at the {STR_VAR_2}\n"
 	.string "and won your way up {STR_VAR_3} floors?\p"
-	.string "Neat. Were there any rare Fragmon\n"
+	.string "Neat. Were there any rare D{STAR}FRAG\n"
 	.string "there?\p"
 	.string "No, huh?\n"
 	.string "Okay, bye.$"
@@ -1956,7 +1956,7 @@ MatchCall_BattlePyramidText8::
 	.string "I've heard that you got through\n"
 	.string "{STR_VAR_3} floors in the {STR_VAR_2}.\p"
 	.string "That's quite impressive!\n"
-	.string "I must raise my Fragmon like you.\l"
+	.string "I must raise my D{STAR}FRAG like you.\l"
 	.string "See you again.$"
 
 MatchCall_BattlePyramidText9::
@@ -2016,10 +2016,10 @@ MatchCall_BattlePyramidText14::
 
 MatchCall_Text_Mom1::
 	.string "MOM: Your father and you…\n"
-	.string "Everyone is captivated by Fragmon.\p"
-	.string "What is the charm of Fragmon?\p"
+	.string "Everyone is captivated by D{STAR}FRAG.\p"
+	.string "What is the charm of D{STAR}FRAG?\p"
 	.string "Me?\n"
-	.string "I adore Fragmon that help me with\l"
+	.string "I adore D{STAR}FRAG that help me with\l"
 	.string "my everyday chores.$"
 
 MatchCall_Text_Mom2::
@@ -2260,7 +2260,7 @@ MatchCall_Text_Sidney::
 	.string "SIDNEY: Yo, {PLAYER}!\p"
 	.string "If you want to battle with me\n"
 	.string "again, you come on back whenever\l"
-	.string "you like to the Fragmon LEAGUE.\p"
+	.string "you like to the D{STAR}FRAG LEAGUE.\p"
 	.string "I'll always be here!\n"
 	.string "I'll be waiting!$"
 
@@ -2270,7 +2270,7 @@ MatchCall_Text_Phoebe::
 	.string "sometime?\p"
 	.string "I'd like to see how much tighter\n"
 	.string "your bond has grown with your\l"
-	.string "Fragmon.$"
+	.string "D{STAR}FRAG.$"
 
 MatchCall_Text_Glacia::
 	.string "GLACIA: Hello, {PLAYER}.\p"
@@ -2278,7 +2278,7 @@ MatchCall_Text_Glacia::
 	.string "complacent with your power?\p"
 	.string "If you feel the need to cool your\n"
 	.string "hot emotions just a little, do come\l"
-	.string "to the Fragmon LEAGUE…$"
+	.string "to the D{STAR}FRAG LEAGUE…$"
 
 MatchCall_Text_Drake::
 	.string "DRAKE: That voice… {PLAYER}, is it?\n"
@@ -2289,7 +2289,7 @@ MatchCall_Text_Drake::
 	.string "TRAINERS.\p"
 	.string "However, if you wish to have real\n"
 	.string "battles, there is no substitute for\l"
-	.string "the Fragmon LEAGUE!\p"
+	.string "the D{STAR}FRAG LEAGUE!\p"
 	.string "Don't you agree, {PLAYER}?$"
 
 MatchCall_Text_Wallace::
@@ -2312,7 +2312,7 @@ MatchCall_Text_MayRayquazaCall:
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
 	.string "I was just in PACIFIDLOG a little\n"
 	.string "while ago.\p"
-	.string "I saw a giant green Fragmon\n"
+	.string "I saw a giant green D{STAR}FRAG\n"
 	.string "flying high in the sky.\p"
 	.string "I…\n"
 	.string "I've never seen anything like it.\p"
@@ -2326,7 +2326,7 @@ MatchCall_Text_BrendanRayquazaCall:
 	.string "… … … … … Beep!\p"
 	.string "BRENDAN: Hey, {PLAYER}!\n"
 	.string "I was in PACIFIDLOG just now.\p"
-	.string "I saw this huge green Fragmon\n"
+	.string "I saw this huge green D{STAR}FRAG\n"
 	.string "flying across the sky.\p"
 	.string "I've never seen anything that\n"
 	.string "amazing before.\p"
@@ -2394,10 +2394,10 @@ MatchCall_Text_May7::
 
 MatchCall_Text_May8::
 	.string "MAY: {PLAYER}{KUN}, hi.\p"
-	.string "MT. PYRE is a memorial to Fragmon\n"
+	.string "MT. PYRE is a memorial to D{STAR}FRAG\n"
 	.string "whose lives have ended.\p"
 	.string "Maybe as a result, it's infested\n"
-	.string "with many GHOST-type Fragmon!$"
+	.string "with many GHOST-type D{STAR}FRAG!$"
 
 MatchCall_Text_May9::
 	.string "MAY: Hi, {PLAYER}{KUN}!\p"
@@ -2419,9 +2419,9 @@ MatchCall_Text_May11::
 	.string "Don't you think it's neat?\p"
 	.string "Even if you don't have a boat,\n"
 	.string "you can cross the sea using\l"
-	.string "a Fragmon's move.\p"
+	.string "a D{STAR}FRAG's move.\p"
 	.string "Did you know there's more?\p"
-	.string "There's a Fragmon move that lets\n"
+	.string "There's a D{STAR}FRAG move that lets\n"
 	.string "you go to the bottom of the sea.$"
 
 MatchCall_Text_May12::
@@ -2440,7 +2440,7 @@ MatchCall_Text_May13::
 	.string "How's it going?\n"
 	.string "Are you filling your NC{EMOJI_IRRITATED}PDA?\p"
 	.string "I heard a rumor that there are\n"
-	.string "super-ancient Fragmon out there.\l"
+	.string "super-ancient D{STAR}FRAG out there.\l"
 	.string "And there are three of them!\p"
 	.string "I would love to see even one…$"
 
@@ -2521,10 +2521,10 @@ MatchCall_Text_Brendan7::
 
 MatchCall_Text_Brendan8::
 	.string "BRENDAN: {PLAYER}!\p"
-	.string "MT. PYRE is a memorial to Fragmon\n"
+	.string "MT. PYRE is a memorial to D{STAR}FRAG\n"
 	.string "whose lives have ended.\p"
 	.string "That's probably why it's infested\n"
-	.string "with many GHOST-type Fragmon!$"
+	.string "with many GHOST-type D{STAR}FRAG!$"
 
 MatchCall_Text_Brendan9::
 	.string "BRENDAN: Hey there, {PLAYER}.\p"
@@ -2547,10 +2547,10 @@ MatchCall_Text_Brendan11::
 	.string "Don't you think it's awesome?\p"
 	.string "Even if you don't have a boat,\n"
 	.string "you can cross the sea using\l"
-	.string "a Fragmon's move.\p"
+	.string "a D{STAR}FRAG's move.\p"
 	.string "And, there's a move that lets you\n"
 	.string "travel to the bottom of the sea.\p"
-	.string "Man, Fragmon can do anything!$"
+	.string "Man, D{STAR}FRAG can do anything!$"
 
 MatchCall_Text_Brendan12::
 	.string "BRENDAN: Howdy, {PLAYER}!\n"
@@ -2567,7 +2567,7 @@ MatchCall_Text_Brendan13::
 	.string "How's it going? Filling up your\n"
 	.string "NC{EMOJI_IRRITATED}PDA successfully?\p"
 	.string "I heard a rumor that there are\n"
-	.string "super-ancient Fragmon out there.\l"
+	.string "super-ancient D{STAR}FRAG out there.\l"
 	.string "And not just one--three!\p"
 	.string "I'd love to catch even one…$"
 
@@ -2610,10 +2610,10 @@ MatchCall_Text_Wally4::
 	.string "WALLY: {PLAYER}?\n"
 	.string "It's me, WALLY!\p"
 	.string "The world of TRAINERS is amazing!\p"
-	.string "When I have my Fragmon with me,\n"
+	.string "When I have my D{STAR}FRAG with me,\n"
 	.string "all sorts of people say hi!\p"
 	.string "It's as if everyone's getting\n"
-	.string "connected through Fragmon!$"
+	.string "connected through D{STAR}FRAG!$"
 
 MatchCall_Text_Wally5::
 	.string "WALLY: {PLAYER}? It's awesome!\n"
@@ -2622,7 +2622,7 @@ MatchCall_Text_Wally5::
 	.string "Maybe I'm talented…\p"
 	.string "Oh, but I shouldn't get a big head\n"
 	.string "like that!\p"
-	.string "After all, it's the Fragmon that\n"
+	.string "After all, it's the D{STAR}FRAG that\n"
 	.string "should be praised!$"
 
 MatchCall_Text_Wally6::
@@ -2636,17 +2636,17 @@ MatchCall_Text_Wally7::
 	.string "Before I met you, I hardly ever\n"
 	.string "left my house…\p"
 	.string "But now, I'm on an adventure with\n"
-	.string "my very own Fragmon…\p"
+	.string "my very own D{STAR}FRAG…\p"
 	.string "{PLAYER}…\n"
 	.string "Thank you…$"
 
 MatchCall_Text_Scott1::
 	.string "SCOTT: Howdy, {PLAYER}{KUN}!\p"
-	.string "You know how Fragmon can be found\n"
+	.string "You know how D{STAR}FRAG can be found\n"
 	.string "everywhere?\p"
 	.string "Like in the mountains, in the sea,\n"
 	.string "in tall grass anywhere?\p"
-	.string "Just like Fragmon, you can find\n"
+	.string "Just like D{STAR}FRAG, you can find\n"
 	.string "TRAINERS everywhere, too.\p"
 	.string "As a result, I have to hurry\n"
 	.string "everywhere, too. Busy, busy!$"
@@ -2663,7 +2663,7 @@ MatchCall_Text_Scott3::
 	.string "SCOTT: Hi, hi, {PLAYER}{KUN}!\p"
 	.string "Have you had the chance to climb\n"
 	.string "MT. PYRE?\p"
-	.string "The place is a memorial to Fragmon\n"
+	.string "The place is a memorial to D{STAR}FRAG\n"
 	.string "that have passed away.\p"
 	.string "It's somewhere every TRAINER\n"
 	.string "should climb to the top of once.$"
@@ -2684,12 +2684,12 @@ MatchCall_Text_Scott5::
 	.string "at the bottom of the sea?\p"
 	.string "I can't go check for myself.\n"
 	.string "I can't swim, for one.\l"
-	.string "And I don't raise Fragmon…$"
+	.string "And I don't raise D{STAR}FRAG…$"
 
 MatchCall_Text_Scott6::
 	.string "SCOTT: Hi, hi, {PLAYER}{KUN}!\p"
 	.string "You know that you can challenge\n"
-	.string "the Fragmon LEAGUE when you've\l"
+	.string "the D{STAR}FRAG LEAGUE when you've\l"
 	.string "collected all the GYM BADGES?\p"
 	.string "With your talent, becoming the\n"
 	.string "CHAMPION isn't a pipe dream.\p"
@@ -2700,7 +2700,7 @@ MatchCall_Text_Scott6::
 	.string "It's something you can look\n"
 	.string "forward to.\p"
 	.string "When you've won your way through\n"
-	.string "the Fragmon LEAGUE into the HALL\l"
+	.string "the D{STAR}FRAG LEAGUE into the HALL\l"
 	.string "OF FAME!$"
 
 MatchCall_Text_Scott7::
@@ -2752,12 +2752,12 @@ MatchCall_Text_Norman_Preparing::
 	.string "DAD: Hiyah! Haah! Dwah!\p"
 	.string "…Oh? {PLAYER}!\p"
 	.string "You caught me right in the middle\n"
-	.string "of a Fragmon training session!$"
+	.string "of a D{STAR}FRAG training session!$"
 
 MatchCall_Text_Norman_PreparingPostGame::
 	.string "DAD: {PLAYER}!\p"
 	.string "Who would've thought you'd become\n"
-	.string "the Fragmon LEAGUE CHAMPION…\p"
+	.string "the D{STAR}FRAG LEAGUE CHAMPION…\p"
 	.string "Okay!\n"
 	.string "I won't be left behind!$"
 
@@ -2794,7 +2794,7 @@ MatchCall_Text_Steven2::
 MatchCall_Text_Steven3::
 	.string "STEVEN: Hi, {PLAYER}{KUN}!\p"
 	.string "When you're on an adventure with\n"
-	.string "your Fragmon, what do you think?\p"
+	.string "your D{STAR}FRAG, what do you think?\p"
 	.string "Do you consider them to be strong\n"
 	.string "partners?\p"
 	.string "Do you think of them as fun\n"
@@ -2849,7 +2849,7 @@ MatchCall_Text_RegisteredBirch:
 MatchCall_Text_UnusedProfBirch:
 	.string "PROF. BIRCH: When one has both\n"
 	.string "the NC{EMOJI_IRRITATED}PDA and DL{EMOJI_BIGWHEEL}GEAR, studying\l"
-	.string "Fragmon becomes more fun, eh?$"
+	.string "D{STAR}FRAG becomes more fun, eh?$"
 
 MatchCall_Text_MrStone1::
 	.string "MR. STONE: Oh? {PLAYER}{KUN}!\p"
@@ -2891,9 +2891,9 @@ MatchCall_Text_MrStone4::
 	.string "Did you know that DEVON was\n"
 	.string "digging the RUSTURF TUNNEL?\p"
 	.string "But we shut down the operation to\n"
-	.string "protect the Fragmon in the area.\p"
+	.string "protect the D{STAR}FRAG in the area.\p"
 	.string "It's a no-brainer, really.\p"
-	.string "It's more important to let Fragmon\n"
+	.string "It's more important to let D{STAR}FRAG\n"
 	.string "live in peace than worry about our\l"
 	.string "own convenience.$"
 

@@ -713,7 +713,7 @@ CinnabarIsland_Gym_Text_BlaineIntro::
 	.string "Hah!\p"
 	.string "I am BLAINE, the red-hot LEADER\n"
 	.string "of CINNABAR GYM!\p"
-	.string "My fiery Fragmon are all rough\n"
+	.string "My fiery D{STAR}FRAG are all rough\n"
 	.string "and ready with intense heat!\p"
 	.string "They incinerate all challengers!\p"
 	.string "Hah!\n"
@@ -727,12 +727,12 @@ CinnabarIsland_Gym_Text_BlaineDefeat::
 CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove::
 	.string "FIRE BLAST is the ultimate fire\n"
 	.string "technique.\p"
-	.string "Don't waste it on WATER Fragmon.$"
+	.string "Don't waste it on WATER D{STAR}FRAG.$"
 
 CinnabarIsland_Gym_Text_ExplainVolcanoBadge::
 	.string "Hah!\p"
 	.string "The VOLCANOBADGE heightens the\n"
-	.string "SPECIAL stats of your Fragmon.\p"
+	.string "SPECIAL stats of your D{STAR}FRAG.\p"
 	.string "Here, you can have this, too!$"
 
 CinnabarIsland_Gym_Text_ReceivedTM38FromBlaine::
@@ -741,7 +741,7 @@ CinnabarIsland_Gym_Text_ReceivedTM38FromBlaine::
 
 CinnabarIsland_Gym_Text_BlainePostBattle::
 	.string "TM38 contains FIRE BLAST.\n"
-	.string "Teach it to FIRE-type Fragmon.\p"
+	.string "Teach it to FIRE-type D{STAR}FRAG.\p"
 	.string "VULPIX or CHARMELEON would be\n"
 	.string "ideal for that move.$"
 
@@ -749,7 +749,7 @@ CinnabarIsland_Gym_Text_MakeSpaceForThis::
 	.string "Make space for this, child!$"
 
 CinnabarIsland_Gym_Text_ErikIntro::
-	.string "Do you know how hot Fragmon fire\n"
+	.string "Do you know how hot D{STAR}FRAG fire\n"
 	.string "breath can get?$"
 
 CinnabarIsland_Gym_Text_ErikDefeat::
@@ -771,10 +771,10 @@ CinnabarIsland_Gym_Text_QuinnDefeat::
 
 CinnabarIsland_Gym_Text_QuinnPostBattle::
 	.string "I get this uncontrollable urge to\n"
-	.string "steal other people's Fragmon.$"
+	.string "steal other people's D{STAR}FRAG.$"
 
 CinnabarIsland_Gym_Text_AveryIntro::
-	.string "I've studied Fragmon thoroughly.\n"
+	.string "I've studied D{STAR}FRAG thoroughly.\n"
 	.string "You can't win!$"
 
 CinnabarIsland_Gym_Text_AveryDefeat::
@@ -786,14 +786,14 @@ CinnabarIsland_Gym_Text_AveryPostBattle::
 	.string "for you to understand.$"
 
 CinnabarIsland_Gym_Text_RamonIntro::
-	.string "I like using FIRE-type Fragmon.\n"
+	.string "I like using FIRE-type D{STAR}FRAG.\n"
 	.string "I just do.$"
 
 CinnabarIsland_Gym_Text_RamonDefeat::
 	.string "Too hot to handle!$"
 
 CinnabarIsland_Gym_Text_RamonPostBattle::
-	.string "I wish there were a thief Fragmon.\n"
+	.string "I wish there were a thief D{STAR}FRAG.\n"
 	.string "I'd use that!$"
 
 CinnabarIsland_Gym_Text_DerekIntro::
@@ -807,7 +807,7 @@ CinnabarIsland_Gym_Text_DerekPostBattle::
 	.string "Our LEADER, BLAINE, became lost\n"
 	.string "in the mountains but good.\p"
 	.string "Night fell when a fiery bird\n"
-	.string "Fragmon appeared.\p"
+	.string "D{STAR}FRAG appeared.\p"
 	.string "Its light allowed BLAINE to find\n"
 	.string "his way down safely.$"
 
@@ -821,7 +821,7 @@ CinnabarIsland_Gym_Text_DustyDefeat::
 
 CinnabarIsland_Gym_Text_DustyPostBattle::
 	.string "PONYTA, NINETALES…\n"
-	.string "Those are popular FIRE Fragmon.$"
+	.string "Those are popular FIRE D{STAR}FRAG.$"
 
 CinnabarIsland_Gym_Text_ZacIntro::
 	.string "Fire is weak against H2O.$"
@@ -833,13 +833,13 @@ CinnabarIsland_Gym_Text_ZacDefeat::
 CinnabarIsland_Gym_Text_ZacPostBattle::
 	.string "Water beats fire, of course.\p"
 	.string "But fire melts ice, so the FIRE\n"
-	.string "type beats ICE-type Fragmon.$"
+	.string "type beats ICE-type D{STAR}FRAG.$"
 
 CinnabarIsland_Gym_Text_GymGuyAdvice::
 	.string "Yo!\n"
 	.string "Champ in the making!\p"
 	.string "The hotheaded BLAINE is a FIRE\n"
-	.string "Fragmon pro.\p"
+	.string "D{STAR}FRAG pro.\p"
 	.string "Douse his spirits with water!\p"
 	.string "You'd better take some\n"
 	.string "BURN HEALS, too.$"
@@ -849,24 +849,24 @@ CinnabarIsland_Gym_Text_GymGuyPostVictory::
 	.string "You beat that firebrand!$"
 
 CinnabarIsland_Gym_Text_GymStatue::
-	.string "CINNABAR Fragmon GYM\n"
+	.string "CINNABAR D{STAR}FRAG GYM\n"
 	.string "LEADER: BLAINE\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}$"
 
 CinnabarIsland_Gym_Text_GymStatuePlayerWon::
-	.string "CINNABAR Fragmon GYM\n"
+	.string "CINNABAR D{STAR}FRAG GYM\n"
 	.string "LEADER: BLAINE\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}, {PLAYER}$"
 
 CinnabarIsland_Gym_Text_PokemonQuizRules::
-	.string "Fragmon Quiz!\p"
+	.string "D{STAR}FRAG Quiz!\p"
 	.string "Get it right, and the door opens to\n"
 	.string "the next room.\p"
 	.string "Get it wrong, and face a TRAINER!\p"
 	.string "If you want to conserve your\n"
-	.string "Fragmon for the GYM LEADER…\p"
+	.string "D{STAR}FRAG for the GYM LEADER…\p"
 	.string "Then get it right!\n"
 	.string "Here we go!$"
 
@@ -874,7 +874,7 @@ CinnabarIsland_Gym_Text_QuizQuestion1::
 	.string "CATERPIE evolves into METAPOD?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion2::
-	.string "There are nine certified Fragmon\n"
+	.string "There are nine certified D{STAR}FRAG\n"
 	.string "LEAGUE BADGES?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion3::
@@ -882,10 +882,10 @@ CinnabarIsland_Gym_Text_QuizQuestion3::
 
 CinnabarIsland_Gym_Text_QuizQuestion4::
 	.string "Are electric moves effective\n"
-	.string "against GROUND-type Fragmon?$"
+	.string "against GROUND-type D{STAR}FRAG?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion5::
-	.string "Fragmon of the same kind and level\n"
+	.string "D{STAR}FRAG of the same kind and level\n"
 	.string "are not identical?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion6::

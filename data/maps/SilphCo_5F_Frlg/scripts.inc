@@ -113,18 +113,18 @@ SilphCo_5F_Text_Grunt2PostBattle::
 	.string "KOFFING evolves into WEEZING!$"
 
 SilphCo_5F_Text_PorygonFirstVRMon::
-	.string "It's a Fragmon REPORT!\p"
-	.string "Fragmon LAB created PORYGON,\n"
-	.string "the first virtual-reality Fragmon.$"
+	.string "It's a D{STAR}FRAG REPORT!\p"
+	.string "D{STAR}FRAG LAB created PORYGON,\n"
+	.string "the first virtual-reality D{STAR}FRAG.$"
 
 SilphCo_5F_Text_Over350TechniquesConfirmed::
-	.string "It's a Fragmon REPORT!\p"
-	.string "Over 350 Fragmon techniques have\n"
+	.string "It's a D{STAR}FRAG REPORT!\p"
+	.string "Over 350 D{STAR}FRAG techniques have\n"
 	.string "been confirmed.$"
 
 SilphCo_5F_Text_SomeMonsEvolveWhenTraded::
-	.string "It's a Fragmon REPORT!\p"
-	.string "Some Fragmon have been confirmed\n"
+	.string "It's a D{STAR}FRAG REPORT!\p"
+	.string "Some D{STAR}FRAG have been confirmed\n"
 	.string "to evolve when they are traded.$"
 
 SilphCo_5F_Text_FloorSign::
@@ -135,6 +135,6 @@ SilphCo_5F_Text_RocketBossLookingForStrongMons::
 	.string "Those thugs that took over our\n"
 	.string "building…\p"
 	.string "Their BOSS said he was looking for\n"
-	.string "strong Fragmon.\p"
+	.string "strong D{STAR}FRAG.\p"
 	.string "I hope our PRESIDENT managed to\n"
 	.string "avoid trouble…$"

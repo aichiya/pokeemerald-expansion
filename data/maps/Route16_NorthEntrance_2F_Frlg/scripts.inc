@@ -79,11 +79,11 @@ Route16_NorthEntrance_2F_Text_GiveAmuletCoinIfCaught40::
 	.string "AMULET COIN for you.\p"
 	.string "So, {PLAYER}, let me ask you.\p"
 	.string "Have you gathered data on at least\n"
-	.string "40 kinds of Fragmon?$"
+	.string "40 kinds of D{STAR}FRAG?$"
 
 Route16_NorthEntrance_2F_Text_GreatHereYouGo::
 	.string "Great! You have caught or owned\n"
-	.string "{STR_VAR_3} kinds of Fragmon!\p"
+	.string "{STR_VAR_3} kinds of D{STAR}FRAG!\p"
 	.string "Congratulations!\n"
 	.string "Here you go!$"
 
@@ -93,7 +93,7 @@ Route16_NorthEntrance_2F_Text_ReceivedAmuletCoinFromAide::
 
 Route16_NorthEntrance_2F_Text_ExplainAmuletCoin::
 	.string "An AMULET COIN is an item to be\n"
-	.string "held by a Fragmon.\p"
-	.string "If the Fragmon appears in a winning\n"
+	.string "held by a D{STAR}FRAG.\p"
+	.string "If the D{STAR}FRAG appears in a winning\n"
 	.string "battle, you will earn more money.$"
 

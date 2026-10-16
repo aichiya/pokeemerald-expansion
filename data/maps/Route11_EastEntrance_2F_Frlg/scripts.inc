@@ -94,11 +94,11 @@ Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30::
 	.string "{STR_VAR_2} for you.\p"
 	.string "So, {PLAYER}, let me ask you.\p"
 	.string "Have you gathered data on at least\n"
-	.string "{STR_VAR_1} kinds of Fragmon?$"
+	.string "{STR_VAR_1} kinds of D{STAR}FRAG?$"
 
 Route11_EastEntrance_2F_Text_GreatHereYouGo::
 	.string "Great! You have caught or owned\n"
-	.string "{STR_VAR_3} kinds of Fragmon!\p"
+	.string "{STR_VAR_3} kinds of D{STAR}FRAG!\p"
 	.string "Congratulations!\n"
 	.string "Here you go!$"
 
@@ -121,7 +121,7 @@ Route11_EastEntrance_2F_Text_ExplainItemfinder::
 Route11_EastEntrance_2F_Text_BigMonAsleepOnRoad::
 	.string "Let's see what the binoculars have\n"
 	.string "to show…\p"
-	.string "A big Fragmon is asleep on a road!$"
+	.string "A big D{STAR}FRAG is asleep on a road!$"
 
 Route11_EastEntrance_2F_Text_WhatABreathtakingView::
 	.string "Let's see what the binoculars have\n"

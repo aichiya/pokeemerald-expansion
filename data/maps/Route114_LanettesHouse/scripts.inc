@@ -54,35 +54,35 @@ Route114_LanettesHouse_Text_EverythingClutteredKeepThis:
 	.string "this a secret in exchange for this.$"
 
 Route114_LanettesHouse_Text_OrganizeYourBoxes:
-	.string "May I offer advice about my Fragmon\n"
+	.string "May I offer advice about my D{STAR}FRAG\n"
 	.string "Storage System?\p"
 	.string "You should organize your BOXES so you\n"
-	.string "can tell which Fragmon are in them.$"
+	.string "can tell which D{STAR}FRAG are in them.$"
 
 Route114_LanettesHouse_Text_ResearchNotesPage1:
 	.string "It's LANETTE's research notes.\n"
 	.string "There's information about BOXES.\p"
-	.string "Design BOXES to hold 30 Fragmon each.\p"
+	.string "Design BOXES to hold 30 D{STAR}FRAG each.\p"
 	.string "Each TRAINER should be able to store\n"
-	.string "420 Fragmon on the PC system.\p"
+	.string "420 D{STAR}FRAG on the PC system.\p"
 	.string "Keep reading?$"
 
 Route114_LanettesHouse_Text_ResearchNotesPage2:
 	.string "A marking system should be added to\n"
-	.string "make Fragmon easier to organize.\p"
+	.string "make D{STAR}FRAG easier to organize.\p"
 	.string "The name and wallpaper design of each\n"
 	.string "BOX will be made changeable to please\l"
-	.string "the stored Fragmon.\p"
+	.string "the stored D{STAR}FRAG.\p"
 	.string "Keep reading?$"
 
 Route114_LanettesHouse_Text_ResearchNotesPage3:
-	.string "When storing a Fragmon, it should be\n"
+	.string "When storing a D{STAR}FRAG, it should be\n"
 	.string "sent to the BOX inspected last.\p"
 	.string "If that BOX is full, the received\n"
-	.string "Fragmon is stored in the next BOX.\p"
+	.string "D{STAR}FRAG is stored in the next BOX.\p"
 	.string "In other words, when a BOX is examined,\n"
 	.string "it is automatically selected as the BOX\l"
-	.string "to which Fragmon are sent.$"
+	.string "to which D{STAR}FRAG are sent.$"
 
 Route114_LanettesHouse_Text_ClosedTheNotebook:
 	.string "{PLAYER} closed the notebook.$"

@@ -228,7 +228,7 @@ Stream_HallOfFame_FirstEvent_Text_Lance2:
 Stream_HallOfFame_FirstEvent_Text_Lance3:
 	.string "LANCE: This room…\p"
 	.string "This is where we keep records of\n"
-	.string "Fragmon that prevailed through\l"
+	.string "D{STAR}FRAG that prevailed through\l"
 	.string "harsh battles.\p"
 	.string "It is here that the LEAGUE CHAMPIONS\n"
 	.string "are honored.$"
@@ -236,5 +236,5 @@ Stream_HallOfFame_FirstEvent_Text_Lance3:
 Stream_HallOfFame_FirstEvent_Text_Lance4:
 	.string "LANCE: Come on, let's record your\n"
 	.string "name as a TRAINER who triumphed over\l"
-	.string "the Fragmon LEAGUE, and the names of\l"
+	.string "the D{STAR}FRAG LEAGUE, and the names of\l"
 	.string "the partners who battled with you.$"

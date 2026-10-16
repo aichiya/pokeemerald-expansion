@@ -29,7 +29,7 @@ Route18_EventScript_CyclingRoadSign::
 
 Route18_Text_WiltonIntro::
 	.string "I always check every grassy area\n"
-	.string "for new Fragmon.$"
+	.string "for new D{STAR}FRAG.$"
 
 Route18_Text_WiltonDefeat::
 	.string "Tch!$"
@@ -45,7 +45,7 @@ Route18_Text_RamiroDefeat::
 	.string "I had to bug you!$"
 
 Route18_Text_RamiroPostBattle::
-	.string "I collect sea Fragmon on weekends\n"
+	.string "I collect sea D{STAR}FRAG on weekends\n"
 	.string "because the sea is so close.$"
 
 Route18_Text_JacobIntro::
@@ -57,7 +57,7 @@ Route18_Text_JacobDefeat::
 
 Route18_Text_JacobPostBattle::
 	.string "This is my fave area for catching\n"
-	.string "Fragmon.$"
+	.string "D{STAR}FRAG.$"
 
 Route18_Text_RouteSign::
 	.string "ROUTE 18\n"

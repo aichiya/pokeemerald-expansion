@@ -94,16 +94,16 @@ Text_ThunderWaveDeclined::
 	.string "But THUNDER WAVE is convenient…$"
 
 Text_ThunderWaveWhichMon::
-	.string "Which Fragmon should I teach\n"
+	.string "Which D{STAR}FRAG should I teach\n"
 	.string "THUNDER WAVE?$"
 
 Text_ThunderWaveTaught::
 	.string "THUNDER WAVE causes paralysis in\n"
-	.string "the target Fragmon.\p"
-	.string "A paralyzed Fragmon may be unable\n"
+	.string "the target D{STAR}FRAG.\p"
+	.string "A paralyzed D{STAR}FRAG may be unable\n"
 	.string "to move in battle.\p"
 	.string "It's an ELECTRIC-type move, so it\n"
-	.string "won't work on some Fragmon.$"
+	.string "won't work on some D{STAR}FRAG.$"
 
 SilphCo_2F_Text_FloorSign::
 	.string "SILPH CO. HEAD OFFICE\n"

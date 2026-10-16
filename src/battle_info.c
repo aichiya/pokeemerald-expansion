@@ -340,32 +340,32 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_SANDSTORM] =
     {
         COMPOUND_STRING("Sandstorm"),
-        COMPOUND_STRING("Pokémon that are not Rock, Ground, or Steel types take damage equal to 1/16 of their max HP at the end of every turn. Boosts the Sp. Def stats of Rock-type Pokémon by 50%.")
+        COMPOUND_STRING("D{STAR}FRAG that are not Rock, Ground, or Steel types take damage equal to 1/16 of their max HP at the end of every turn. Boosts the Sp. Def stats of Rock-type D{STAR}FRAG by 50%.")
     },
     [INFO_SNOW] =
     {
         COMPOUND_STRING("Snow"),
-        COMPOUND_STRING("Boosts the Defense stats of Ice-type Pokémon by 50%.")
+        COMPOUND_STRING("Boosts the Defense stats of Ice-type D{STAR}FRAG by 50%.")
     },
     [INFO_ELECTRIC_TERRAIN] =
     {
         COMPOUND_STRING("Electric Terrain"),
-        COMPOUND_STRING("Pokémon on the ground have the power of their Electric-type moves boosted by 30% and they cannot fall asleep.")
+        COMPOUND_STRING("D{STAR}FRAG on the ground have the power of their Electric-type moves boosted by 30% and they cannot fall asleep.")
     },
     [INFO_GRASSY_TERRAIN] =
     {
         COMPOUND_STRING("Grassy Terrain"),
-        COMPOUND_STRING("Pokémon on the ground have the power of their Grass-type moves boosted by 30% and they have 1/16 of their max HP restored at the end of every turn.")
+        COMPOUND_STRING("D{STAR}FRAG on the ground have the power of their Grass-type moves boosted by 30% and they have 1/16 of their max HP restored at the end of every turn.")
     },
     [INFO_MISTY_TERRAIN] =
     {
         COMPOUND_STRING("Misty Terrain"),
-        COMPOUND_STRING("Halves the damage dealt by Dragon-type moves used against Pokémon on the ground. Pokémon on the ground are also immune to status conditions and cannot become confused.")
+        COMPOUND_STRING("Halves the damage dealt by Dragon-type moves used against D{STAR}FRAG on the ground. D{STAR}FRAG on the ground are also immune to status conditions and cannot become confused.")
     },
     [INFO_TRICK_ROOM] =
     {
         COMPOUND_STRING("Trick Room"),
-        COMPOUND_STRING("Pokémon with lower Speed stats move first.")
+        COMPOUND_STRING("D{STAR}FRAG with lower Speed stats move first.")
     },
     [INFO_MAGIC_ROOM] =
     {
@@ -375,52 +375,52 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_WONDER_ROOM] =
     {
         COMPOUND_STRING("Wonder Room"),
-        COMPOUND_STRING("Pokémon's Defense and Sp. Def stats are swapped.")
+        COMPOUND_STRING("D{STAR}FRAG's Defense and Sp. Def stats are swapped.")
     },
     [INFO_CRITICAL_HIT_BOOST] =
     {
         COMPOUND_STRING("Critical Hit Boost"),
-        COMPOUND_STRING("The Pokémon's attacks are more likely to be critical hits.")
+        COMPOUND_STRING("The D{STAR}FRAG's attacks are more likely to be critical hits.")
     },
     [INFO_CONFUSION] =
     {
         COMPOUND_STRING("Confused"),
-        COMPOUND_STRING("For 1-4 turns, the Pokémon has a 1-in-3 chance of hurting itself.")
+        COMPOUND_STRING("For 1-4 turns, the D{STAR}FRAG has a 1-in-3 chance of hurting itself.")
     },
     [INFO_INFATUATION] =
     {
         COMPOUND_STRING("Infatuation"),
-        COMPOUND_STRING("The Pokémon has a 50% chance of being unable to use its moves while the Pokémon that gave it the Infatuated status is on the field.")
+        COMPOUND_STRING("The D{STAR}FRAG has a 50% chance of being unable to use its moves while the D{STAR}FRAG that gave it the Infatuated status is on the field.")
     },
     [INFO_NIGHTMARE] =
     {
         COMPOUND_STRING("Nightmare"),
-        COMPOUND_STRING("The Pokémon will lose HP each turn as long as it is sleeping.")
+        COMPOUND_STRING("The D{STAR}FRAG will lose HP each turn as long as it is sleeping.")
     },
     [INFO_DROWSY] =
     {
         COMPOUND_STRING("Drowsy"),
-        COMPOUND_STRING("The Pokémon will fall asleep at the end of the next turn after becoming drowsy.")
+        COMPOUND_STRING("The D{STAR}FRAG will fall asleep at the end of the next turn after becoming drowsy.")
     },
     [INFO_ENCORE] =
     {
         COMPOUND_STRING("Encore"),
-        COMPOUND_STRING("The Pokémon can only use {STR_VAR_1}.")
+        COMPOUND_STRING("The D{STAR}FRAG can only use {STR_VAR_1}.")
     },
     [INFO_NO_ABILITY] =
     {
         COMPOUND_STRING("No Ability"),
-        COMPOUND_STRING("The Pokémon's Ability loses its effect.")
+        COMPOUND_STRING("The D{STAR}FRAG's Ability loses its effect.")
     },
     [INFO_TORMENT] =
     {
         COMPOUND_STRING("Unable to Repeat"),
-        COMPOUND_STRING("The Pokémon cannot use the same move twice in a row.")
+        COMPOUND_STRING("The D{STAR}FRAG cannot use the same move twice in a row.")
     },
     [INFO_TAILWIND] =
     {
         COMPOUND_STRING("Tailwind"),
-        COMPOUND_STRING("Doubles the Pokémon's Speed stat.")
+        COMPOUND_STRING("Doubles the D{STAR}FRAG's Speed stat.")
     },
     [INFO_LUCKY_CHANT] =
     {
@@ -430,17 +430,17 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_GRUDGE] =
     {
         COMPOUND_STRING("Grudge"),
-        COMPOUND_STRING("If the Pokémon faints as a result of a move, the PP of that move will be reduced to 0.")
+        COMPOUND_STRING("If the D{STAR}FRAG faints as a result of a move, the PP of that move will be reduced to 0.")
     },
     [INFO_HEALING_PREVENTED] =
     {
         COMPOUND_STRING("Healing Prevented"),
-        COMPOUND_STRING("The Pokémon is unable to restore HP through moves, Abilities, or held items.")
+        COMPOUND_STRING("The D{STAR}FRAG is unable to restore HP through moves, Abilities, or held items.")
     },
     [INFO_IDENTIFIED] =
     {
         COMPOUND_STRING("-"),
-        COMPOUND_STRING("The Pokémon will be hit by certain moves that usually wouldn't affect it. If the Pokémon's evasiveness has been boosted, the benefits will be ignored when it is attacked.")
+        COMPOUND_STRING("The D{STAR}FRAG will be hit by certain moves that usually wouldn't affect it. If the D{STAR}FRAG's evasiveness has been boosted, the benefits will be ignored when it is attacked.")
     },
     [INFO_MOVE_DISABLED] =
     {
@@ -450,67 +450,67 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_CANT_ESCAPE] =
     {
         COMPOUND_STRING("Can't Escape"),
-        COMPOUND_STRING("The Pokémon cannot be switched out of battle.")
+        COMPOUND_STRING("The D{STAR}FRAG cannot be switched out of battle.")
     },
     [INFO_LOCK_ON] =
     {
         COMPOUND_STRING("Lock-On"),
-        COMPOUND_STRING("On the next turn after gaining the Locked On status, the Pokémon's move will not miss if targeting the Pokémon that was locked onto.")
+        COMPOUND_STRING("On the next turn after gaining the Locked On status, the D{STAR}FRAG's move will not miss if targeting the D{STAR}FRAG that was locked onto.")
     },
     [INFO_EMBARGO] =
     {
         COMPOUND_STRING("Embargo"),
-        COMPOUND_STRING("The Pokémon cannot use its held item and no items can be used on it.")
+        COMPOUND_STRING("The D{STAR}FRAG cannot use its held item and no items can be used on it.")
     },
     [INFO_CHARGE] =
     {
         COMPOUND_STRING("Electric Boost"),
-        COMPOUND_STRING("The power of the next Electric-type move used by the Pokémon will be doubled.")
+        COMPOUND_STRING("The power of the next Electric-type move used by the D{STAR}FRAG will be doubled.")
     },
     [INFO_GRAVITY] =
     {
         COMPOUND_STRING("Gravity"),
-        COMPOUND_STRING("Boosts the accuracy of moves by 67%. Pokémon such as Flying types or ones with the Levitate Ability become grounded. Moves that involve flying or leaping cannot be used.")
+        COMPOUND_STRING("Boosts the accuracy of moves by 67%. D{STAR}FRAG such as Flying types or ones with the Levitate Ability become grounded. Moves that involve flying or leaping cannot be used.")
     },
     [INFO_MIST] =
     {
         COMPOUND_STRING("Mist"),
-        COMPOUND_STRING("The Pokémon's stats won't be lowered.")
+        COMPOUND_STRING("The D{STAR}FRAG's stats won't be lowered.")
     },
     [INFO_SAFEGUARD] =
     {
         COMPOUND_STRING("Safeguard"),
-        COMPOUND_STRING("The Pokémon is immune to status conditions and cannot become confused.")
+        COMPOUND_STRING("The D{STAR}FRAG is immune to status conditions and cannot become confused.")
     },
     [INFO_STEALTH_ROCK] =
     {
         COMPOUND_STRING("Stealth Rock"),
-        COMPOUND_STRING("Pokémon that switch into battle will take damage equal to 1/8 of their max HP. This damage differs depending on the Pokémon's type matchup with the Rock type.")
+        COMPOUND_STRING("D{STAR}FRAG that switch into battle will take damage equal to 1/8 of their max HP. This damage differs depending on the D{STAR}FRAG's type matchup with the Rock type.")
     },
     [INFO_STOCKPILING] =
     {
         COMPOUND_STRING("Stockpiling"),
-        COMPOUND_STRING("The Pokémon's Defense and Sp. Def stats are boosted by 1 stage for each time it has used Stockpile.")
+        COMPOUND_STRING("The D{STAR}FRAG's Defense and Sp. Def stats are boosted by 1 stage for each time it has used Stockpile.")
     },
     [INFO_TAUNT] =
     {
         COMPOUND_STRING("Taunted"),
-        COMPOUND_STRING("The Pokémon can use only attacks.")
+        COMPOUND_STRING("The D{STAR}FRAG can use only attacks.")
     },
     [INFO_TELEKINESIS] =
     {
         COMPOUND_STRING("Telekinesis"),
-        COMPOUND_STRING("Moves used against the Pokémon will hit without fail, except for one-hit KO moves. Also, Ground-type moves won't hit the Pokémon.")
+        COMPOUND_STRING("Moves used against the D{STAR}FRAG will hit without fail, except for one-hit KO moves. Also, Ground-type moves won't hit the D{STAR}FRAG.")
     },
     [INFO_MAGNET_RISE] =
     {
         COMPOUND_STRING("Magnet Rise"),
-        COMPOUND_STRING("The Pokémon floats off the ground, making it immune to Ground-type moves, as well as the Spikes, Toxic Spikes, and Sticky Web statuses.")
+        COMPOUND_STRING("The D{STAR}FRAG floats off the ground, making it immune to Ground-type moves, as well as the Spikes, Toxic Spikes, and Sticky Web statuses.")
     },
     [INFO_TOXIC_SPIKES] =
     {
         COMPOUND_STRING("Toxic Spikes"),
-        COMPOUND_STRING("Pokémon that switch into battle will be poisoned or, if 2 layers of Toxic Spikes are set, badly poisoned. Pokémon such as Flying types or ones with the Levitate Ability are unaffected.")
+        COMPOUND_STRING("D{STAR}FRAG that switch into battle will be poisoned or, if 2 layers of Toxic Spikes are set, badly poisoned. D{STAR}FRAG such as Flying types or ones with the Levitate Ability are unaffected.")
     },
     [INFO_MUD_SPORT] =
     {
@@ -520,27 +520,27 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_WISH] =
     {
         COMPOUND_STRING("Wish"),
-        COMPOUND_STRING("At the end of the next turn after the Wish status is activated, the HP of the Pokémon in the affected spot will be restored by 1/2 of the max HP of the Pokémon that caused the status.")
+        COMPOUND_STRING("At the end of the next turn after the Wish status is activated, the HP of the D{STAR}FRAG in the affected spot will be restored by 1/2 of the max HP of the D{STAR}FRAG that caused the status.")
     },
     [INFO_STICKY_WEB] =
     {
         COMPOUND_STRING("Sticky Web"),
-        COMPOUND_STRING("Pokémon that switch into battle will have their Speed stats lowered by 1 stage. Pokémon such as Flying types or ones with the Levitate Ability are unaffected.")
+        COMPOUND_STRING("D{STAR}FRAG that switch into battle will have their Speed stats lowered by 1 stage. D{STAR}FRAG such as Flying types or ones with the Levitate Ability are unaffected.")
     },
     [INFO_INGRAIN] =
     {
         COMPOUND_STRING("Ingrained"),
-        COMPOUND_STRING("The Pokémon loses 1/4 of its max HP at the end of every turn.")
+        COMPOUND_STRING("The D{STAR}FRAG loses 1/4 of its max HP at the end of every turn.")
     },
     [INFO_CURSE] =
     {
         COMPOUND_STRING("Cursed"),
-        COMPOUND_STRING("The Pokémon loses 1/4 of its max HP at the end of every turn.")
+        COMPOUND_STRING("The D{STAR}FRAG loses 1/4 of its max HP at the end of every turn.")
     },
     [INFO_TRICK_OR_TREAT] =
     {
         COMPOUND_STRING("Trick-or-Treating"),
-        COMPOUND_STRING("The Pokémon gains the Ghost type.")
+        COMPOUND_STRING("The D{STAR}FRAG gains the Ghost type.")
     },
     [INFO_LIGHT_SCREEN] =
     {
@@ -555,17 +555,17 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_IMPRISON] =
     {
         COMPOUND_STRING("Sealing Off"),
-        COMPOUND_STRING("Any moves known by the Pokémon that caused this status cannot be used by its opponents.")
+        COMPOUND_STRING("Any moves known by the D{STAR}FRAG that caused this status cannot be used by its opponents.")
     },
     [INFO_PERISHING] =
     {
         COMPOUND_STRING("Perishing"),
-        COMPOUND_STRING("The Pokémon will faint 3 turns after gaining the Perishing status.")
+        COMPOUND_STRING("The D{STAR}FRAG will faint 3 turns after gaining the Perishing status.")
     },
     [INFO_SPIKES] =
     {
         COMPOUND_STRING("Spikes"),
-        COMPOUND_STRING("Pokémon that switch into battle will take damage equal to 1/8 of their max HP. This damage will increase if 2 layers of Spikes are set, and again if 3 layers are set. Pokémon such as Flying types or ones with the Levitate Ability are unaffected.")
+        COMPOUND_STRING("D{STAR}FRAG that switch into battle will take damage equal to 1/8 of their max HP. This damage will increase if 2 layers of Spikes are set, and again if 3 layers are set. D{STAR}FRAG such as Flying types or ones with the Levitate Ability are unaffected.")
     },
     [INFO_WATER_SPORT] =
     {
@@ -575,67 +575,67 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_DESTINY_BOND] =
     {
         COMPOUND_STRING("Destiny Bound"),
-        COMPOUND_STRING("If the Pokémon is knocked out by an opponent, that opponent will also be knocked out.")
+        COMPOUND_STRING("If the D{STAR}FRAG is knocked out by an opponent, that opponent will also be knocked out.")
     },
     [INFO_FORESTS_CURSE] =
     {
         COMPOUND_STRING("Forest's Curse"),
-        COMPOUND_STRING("The Pokémon gains the Grass type.")
+        COMPOUND_STRING("The D{STAR}FRAG gains the Grass type.")
     },
     [INFO_LEECH_SEED] =
     {
         COMPOUND_STRING("Leech Seeded"),
-        COMPOUND_STRING("The Pokémon takes damage equal to 1/8 of its max HP at the end of every turn. Whichever Pokémon is in the spot of the Pokémon that caused the Leech Seeded status has its HP restored by the same amount.")
+        COMPOUND_STRING("The D{STAR}FRAG takes damage equal to 1/8 of its max HP at the end of every turn. Whichever D{STAR}FRAG is in the spot of the D{STAR}FRAG that caused the Leech Seeded status has its HP restored by the same amount.")
     },
     [INFO_BOUND] =
     {
         COMPOUND_STRING("Bound"),
-        COMPOUND_STRING("For 4-5 turns, the Pokémon takes damage equal to 1/8 of its max HP at the end of every turn. It cannot be switched out of battle.")
+        COMPOUND_STRING("For 4-5 turns, the D{STAR}FRAG takes damage equal to 1/8 of its max HP at the end of every turn. It cannot be switched out of battle.")
     },
     [INFO_BIDE] =
     {
         COMPOUND_STRING("Bide"),
-        COMPOUND_STRING("The Pokémon endures attacks for two turns, then strikes back to inflict double the damage it has taken.")
+        COMPOUND_STRING("The D{STAR}FRAG endures attacks for two turns, then strikes back to inflict double the damage it has taken.")
     },
     [INFO_RAMPAGING] =
     {
         COMPOUND_STRING("Rampaging"),
-        COMPOUND_STRING("For 2-3 turns, the Pokémon continues its attack and is unable to take any other actions. After that, it becomes confused.")
+        COMPOUND_STRING("For 2-3 turns, the D{STAR}FRAG continues its attack and is unable to take any other actions. After that, it becomes confused.")
     },
     [INFO_BADLY_POISONED] =
     {
         COMPOUND_STRING("Badly Poisoned"),
-        COMPOUND_STRING("The Pokémon takes increasing poison damage at the end of every turn, starting at 1/16 of the Pokémon's max HP, then 2/16, then 3/16, and so on. If the Pokémon switches out and reenters battle, the damage restarts at 1/16 of its max HP.")
+        COMPOUND_STRING("The D{STAR}FRAG takes increasing poison damage at the end of every turn, starting at 1/16 of the D{STAR}FRAG's max HP, then 2/16, then 3/16, and so on. If the D{STAR}FRAG switches out and reenters battle, the damage restarts at 1/16 of its max HP.")
     },
     [INFO_FUTURE_ATTACK] =
     {
         COMPOUND_STRING("Future Attack"),
-        COMPOUND_STRING("The Pokémon in the targeted spot will take damage 2 turns after the Future Attack status is activated.")
+        COMPOUND_STRING("The D{STAR}FRAG in the targeted spot will take damage 2 turns after the Future Attack status is activated.")
     },
     [INFO_UPROAR] =
     {
         COMPOUND_STRING("Uproar"),
-        COMPOUND_STRING("For 3 turns, the Pokémon continues its attack and is unable to take any other actions. During this time, no Pokémon on the field can fall asleep.")
+        COMPOUND_STRING("For 3 turns, the D{STAR}FRAG continues its attack and is unable to take any other actions. During this time, no D{STAR}FRAG on the field can fall asleep.")
     },
     [INFO_AQUA_RING] =
     {
         COMPOUND_STRING("Aqua Ring"),
-        COMPOUND_STRING("The Pokémon has 1/16 of its max HP restored at the end of every turn.")
+        COMPOUND_STRING("The D{STAR}FRAG has 1/16 of its max HP restored at the end of every turn.")
     },
     [INFO_AUTOTOMIZE] =
     {
         COMPOUND_STRING("Autotomize"),
-        COMPOUND_STRING("The Pokémon's weight is reduced, and its Speed is sharply increased.")
+        COMPOUND_STRING("The D{STAR}FRAG's weight is reduced, and its Speed is sharply increased.")
     },
     [INFO_SMACK_DOWN] =
     {
         COMPOUND_STRING("Landed"),
-        COMPOUND_STRING("The Pokémon is now grounded and can be affected by Ground-type moves.")
+        COMPOUND_STRING("The D{STAR}FRAG is now grounded and can be affected by Ground-type moves.")
     },
     [INFO_FAIRY_LOCK] =
     {
         COMPOUND_STRING("Fairy Locked"),
-        COMPOUND_STRING("No Pokémon on the field can be switched out of battle until the end of the next turn after the Fairy Locked status is activated.")
+        COMPOUND_STRING("No D{STAR}FRAG on the field can be switched out of battle until the end of the next turn after the Fairy Locked status is activated.")
     },
     [INFO_RAINBOW] =
     {
@@ -650,32 +650,32 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_SEA_OF_FIRE] =
     {
         COMPOUND_STRING("Sea of Fire"),
-        COMPOUND_STRING("Pokémon that are not Fire types will take damage every turn.")
+        COMPOUND_STRING("D{STAR}FRAG that are not Fire types will take damage every turn.")
     },
     [INFO_EXTREMELY_HARSH_SUNLIGHT] =
     {
         COMPOUND_STRING("Extremely Harsh Sunlight"),
-        COMPOUND_STRING("Boosts the power of Fire-type moves and protects Pokémon from Water-type moves.")
+        COMPOUND_STRING("Boosts the power of Fire-type moves and protects D{STAR}FRAG from Water-type moves.")
     },
     [INFO_HEAVY_RAIN] =
     {
         COMPOUND_STRING("Heavy Rain"),
-        COMPOUND_STRING("Boosts the power of Water-type moves and protects Pokémon from Fire-type moves.")
+        COMPOUND_STRING("Boosts the power of Water-type moves and protects D{STAR}FRAG from Fire-type moves.")
     },
     [INFO_STRONG_WINDS] =
     {
         COMPOUND_STRING("Strong Winds"),
-        COMPOUND_STRING("The power of moves that are super effective against Flying-type Pokémon is decreased.")
+        COMPOUND_STRING("The power of moves that are super effective against Flying-type D{STAR}FRAG is decreased.")
     },
     [INFO_PSYCHIC_TERRAIN] =
     {
         COMPOUND_STRING("Psychic Terrain"),
-        COMPOUND_STRING("Pokémon on the ground have the power of their Psychic-type moves boosted by 30% and they are immune to priority moves.")
+        COMPOUND_STRING("D{STAR}FRAG on the ground have the power of their Psychic-type moves boosted by 30% and they are immune to priority moves.")
     },
     [INFO_THROAT_CHOP] =
     {
         COMPOUND_STRING("Throat Chopped"),
-        COMPOUND_STRING("The Pokémon cannot use any sound-based moves for 2 turns.")
+        COMPOUND_STRING("The D{STAR}FRAG cannot use any sound-based moves for 2 turns.")
     },
     [INFO_AURORA_VEIL] =
     {
@@ -690,43 +690,43 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_TAR_SHOT] =
     {
         COMPOUND_STRING("Tar Shot"),
-        COMPOUND_STRING("The Pokémon has been made weaker to Fire-type moves.")
+        COMPOUND_STRING("The D{STAR}FRAG has been made weaker to Fire-type moves.")
     },
     [INFO_OCTOLOCK] =
     {
         COMPOUND_STRING("Octolock"),
-        COMPOUND_STRING("The Pokémon's Defense and Sp. Def are both lowered with each passing turn.")
+        COMPOUND_STRING("The D{STAR}FRAG's Defense and Sp. Def are both lowered with each passing turn.")
     },
     [INFO_WIDE_OPEN] =
     {
         COMPOUND_STRING("Wide Open"),
-        COMPOUND_STRING("Opponents’ moves will not miss the Pokémon and will deal double damage.")
+        COMPOUND_STRING("Opponents’ moves will not miss the D{STAR}FRAG and will deal double damage.")
     },
     // G-Max effects
     [INFO_G_MAX_WILDFIRE] =
     {
         COMPOUND_STRING("G-Max Wildfire"),
-        COMPOUND_STRING("Pokémon that are not Fire types will take damage every turn for four turns.")
+        COMPOUND_STRING("D{STAR}FRAG that are not Fire types will take damage every turn for four turns.")
     },
     [INFO_G_MAX_VOLCALITH] =
     {
         COMPOUND_STRING("G-Max Volcalith"),
-        COMPOUND_STRING("Pokémon that are not Rock types will take damage every turn for four turns.")
+        COMPOUND_STRING("D{STAR}FRAG that are not Rock types will take damage every turn for four turns.")
     },
     [INFO_G_MAX_STEELSURGE] =
     {
         COMPOUND_STRING("G-Max Steelsurge"),
-        COMPOUND_STRING("Pokémon that switch into battle will take damage.")
+        COMPOUND_STRING("D{STAR}FRAG that switch into battle will take damage.")
     },
     [INFO_G_MAX_VINE_LASH] =
     {
         COMPOUND_STRING("G-Max Vine Lash"),
-        COMPOUND_STRING("Pokémon that are not Grass types will take damage every turn for four turns.")
+        COMPOUND_STRING("D{STAR}FRAG that are not Grass types will take damage every turn for four turns.")
     },
     [INFO_G_MAX_CANNONADE] =
     {
         COMPOUND_STRING("G-Max Cannonade"),
-        COMPOUND_STRING("Pokémon that are not Water types will take damage every turn for four turns.")
+        COMPOUND_STRING("D{STAR}FRAG that are not Water types will take damage every turn for four turns.")
     },
     [INFO_FOG] =
     {
@@ -736,22 +736,22 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_SALT_CURE] =
     {
         COMPOUND_STRING("Salt Cured"),
-        COMPOUND_STRING("The Pokémon takes damage equal to 1/16 of its max HP at the end of every turn. If the Pokémon is a Steel type or Water type, it takes damage equal to 1/8 of its max HP instead.")
+        COMPOUND_STRING("The D{STAR}FRAG takes damage equal to 1/16 of its max HP at the end of every turn. If the D{STAR}FRAG is a Steel type or Water type, it takes damage equal to 1/8 of its max HP instead.")
     },
     [INFO_SYRUPY] =
     {
         COMPOUND_STRING("Syrupy"),
-        COMPOUND_STRING("The Pokémon's Speed stat is lowered by 1 stage at the end of every turn.")
+        COMPOUND_STRING("The D{STAR}FRAG's Speed stat is lowered by 1 stage at the end of every turn.")
     },
     [INFO_GOING_ALL_OUT] =
     {
         COMPOUND_STRING("Going All Out"),
-        COMPOUND_STRING("The Pokémon's Attack and Sp. Atk are both boosted thanks to a Trainer's cheer.")
+        COMPOUND_STRING("The D{STAR}FRAG's Attack and Sp. Atk are both boosted thanks to a Trainer's cheer.")
     },
     [INFO_HANGING_TOUGH] =
     {
         COMPOUND_STRING("Hanging Tough"),
-        COMPOUND_STRING("The Pokémon's Defense and Sp. Def are both boosted thanks to a Trainer's cheer.")
+        COMPOUND_STRING("The D{STAR}FRAG's Defense and Sp. Def are both boosted thanks to a Trainer's cheer.")
     },
     [INFO_BATTLE_STATE_112] =
     {
@@ -761,52 +761,52 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     [INFO_RECHARGING] =
     {
         COMPOUND_STRING("Recharging"),
-        COMPOUND_STRING("The Pokémon cannot take any actions for 1 turn.")
+        COMPOUND_STRING("The D{STAR}FRAG cannot take any actions for 1 turn.")
     },
     [INFO_CHARGING] =
     {
         COMPOUND_STRING("Charging"),
-        COMPOUND_STRING("The Pokémon spends 1 turn charging before using a move.")
+        COMPOUND_STRING("The D{STAR}FRAG spends 1 turn charging before using a move.")
     },
     [INFO_SKY_HIGH] =
     {
         COMPOUND_STRING("Sky-High"), // Fly, Bounce, Sky Drop
-        COMPOUND_STRING("The Pokémon cannot be hit by most moves, excluding moves such as Thunder, Hurricane, and Smack Down. The Pokémon is also unaffected by the terrain.")
+        COMPOUND_STRING("The D{STAR}FRAG cannot be hit by most moves, excluding moves such as Thunder, Hurricane, and Smack Down. The D{STAR}FRAG is also unaffected by the terrain.")
     },
     [INFO_SUBMERGED] =
     {
         COMPOUND_STRING("Submerged"), // Dive
-        COMPOUND_STRING("The Pokémon cannot be hit by most moves, but Surf and Whirlpool will hit and will deal double damage. The Pokémon is also unaffected by the terrain.")
+        COMPOUND_STRING("The D{STAR}FRAG cannot be hit by most moves, but Surf and Whirlpool will hit and will deal double damage. The D{STAR}FRAG is also unaffected by the terrain.")
     },
     [INFO_UNDERGROUND] =
     {
         COMPOUND_STRING("Underground"), // Dig
-        COMPOUND_STRING("The Pokémon cannot be hit by most moves, but Earthquake will hit and will deal double damage. The Pokémon is also unaffected by the terrain.")
+        COMPOUND_STRING("The D{STAR}FRAG cannot be hit by most moves, but Earthquake will hit and will deal double damage. The D{STAR}FRAG is also unaffected by the terrain.")
     },
     [INFO_CONCEALED] =
     {
         COMPOUND_STRING("Concealed"), // Shadow Force, Phantom Force
-        COMPOUND_STRING("The Pokémon cannot be hit by moves and is unaffected by the terrain.")
+        COMPOUND_STRING("The D{STAR}FRAG cannot be hit by moves and is unaffected by the terrain.")
     },
     [INFO_MINIMIZED] =
     {
         COMPOUND_STRING("Minimized"),
-        COMPOUND_STRING("Moves such as Supercell Slam, Body Slam, Dragon Rush, Flying Press, Heat Crash, and Heavy Slam will not miss the Pokémon and will deal double damage.")
+        COMPOUND_STRING("Moves such as Supercell Slam, Body Slam, Dragon Rush, Flying Press, Heat Crash, and Heavy Slam will not miss the D{STAR}FRAG and will deal double damage.")
     },
     [INFO_ATK_DEF_SWAPPED] =
     {
         COMPOUND_STRING("Atk/Def Swapped"), // Power Trick
-        COMPOUND_STRING("The Pokémon's Attack and Defense stats are swapped.")
+        COMPOUND_STRING("The D{STAR}FRAG's Attack and Defense stats are swapped.")
     },
     [INFO_FLASH_FIRE] =
     {
         COMPOUND_STRING("Flash Fire"),
-        COMPOUND_STRING("Boosts the power of the Pokémon's Fire-type moves by 50%.")
+        COMPOUND_STRING("Boosts the power of the D{STAR}FRAG's Fire-type moves by 50%.")
     },
     [INFO_MICLE_BERRY] =
     {
         COMPOUND_STRING("Micle Berry"),
-        COMPOUND_STRING("Boosts the accuracy of the Pokémon's next move by 20%.")
+        COMPOUND_STRING("Boosts the accuracy of the D{STAR}FRAG's next move by 20%.")
     },
     [INFO_EX_SHADOW_SKY] =
     {

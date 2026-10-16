@@ -33,14 +33,14 @@ ViridianCity_PokemonCenter_1F_Text_FeelFreeToUsePC::
 	.string "It's so kind of her!$"
 
 ViridianCity_PokemonCenter_1F_Text_PokeCenterInEveryTown::
-	.string "There's a Fragmon CENTER in every\n"
+	.string "There's a D{STAR}FRAG CENTER in every\n"
 	.string "town ahead.\p"
 	.string "They charge no money, so don't\n"
-	.string "be shy about healing Fragmon.$"
+	.string "be shy about healing D{STAR}FRAG.$"
 
 ViridianCity_PokemonCenter_1F_Text_PokeCentersHealMons::
-	.string "Fragmon CENTERS heal your tired,\n"
-	.string "hurt, or fainted Fragmon.\p"
-	.string "They make all Fragmon completely\n"
+	.string "D{STAR}FRAG CENTERS heal your tired,\n"
+	.string "hurt, or fainted D{STAR}FRAG.\p"
+	.string "They make all D{STAR}FRAG completely\n"
 	.string "healthy.$"
 

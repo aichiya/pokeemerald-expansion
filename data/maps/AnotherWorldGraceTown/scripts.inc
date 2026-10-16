@@ -29,7 +29,7 @@ AnotherWorldGraceTown_Text_Starlady_Greeting:
 	.string "It looks like you have some unique\n"
 	.string "fragments of dream.\p"
 	.string "How about a quick battle?\n"
-	.string "Let me see your Fragmon.$"
+	.string "Let me see your D{STAR}FRAG.$"
 	
 AnotherWorldGraceTown_Text_Starlady_GetReady:
 	.string "Starlady: Thank you!\n"

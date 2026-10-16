@@ -273,7 +273,7 @@ Route128_Text_MaxieResposibilityFallsToArchieAndMe:
 
 Route128_Text_MaxieThisDefiesBelief:
 	.string "MAXIE: This defies belief…\p"
-	.string "Those super-ancient Fragmon…\p"
+	.string "Those super-ancient D{STAR}FRAG…\p"
 	.string "Their power is unbelievable.\n"
 	.string "They've upset the balance of nature…$"
 

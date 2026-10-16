@@ -134,14 +134,14 @@ ViridianCity_Gym_Text_GiovanniPostBattle::
 	.string "Farewell!$"
 
 ViridianCity_Gym_Text_ExplainEarthBadgeTakeThis::
-	.string "The EARTHBADGE makes Fragmon of\n"
+	.string "The EARTHBADGE makes D{STAR}FRAG of\n"
 	.string "any level obey without question.\p"
 	.string "It is evidence of your mastery as\n"
-	.string "a Fragmon TRAINER.\p"
+	.string "a D{STAR}FRAG TRAINER.\p"
 	.string "With it, you can challenge the\n"
-	.string "Fragmon LEAGUE.\p"
+	.string "D{STAR}FRAG LEAGUE.\p"
 	.string "Also, take this TM.\p"
-	.string "Consider it a gift for your Fragmon\n"
+	.string "Consider it a gift for your D{STAR}FRAG\n"
 	.string "LEAGUE challenge.$"
 
 ViridianCity_Gym_Text_ReceivedTM26FromGiovanni::
@@ -181,7 +181,7 @@ ViridianCity_Gym_Text_AtsushiPostBattle::
 	.string "I'm still not worthy!$"
 
 ViridianCity_Gym_Text_JasonIntro::
-	.string "Fragmon and I, we make wonderful\n"
+	.string "D{STAR}FRAG and I, we make wonderful\n"
 	.string "music together!$"
 
 ViridianCity_Gym_Text_JasonDefeat::
@@ -199,7 +199,7 @@ ViridianCity_Gym_Text_KiyoDefeat::
 	.string "Aiyah!$"
 
 ViridianCity_Gym_Text_KiyoPostBattle::
-	.string "If my Fragmon were as good at\n"
+	.string "If my D{STAR}FRAG were as good at\n"
 	.string "karate as I…$"
 
 ViridianCity_Gym_Text_WarrenIntro::
@@ -220,11 +220,11 @@ ViridianCity_Gym_Text_TakashiDefeat::
 	.string "Ayah!$"
 
 ViridianCity_Gym_Text_TakashiPostBattle::
-	.string "The Fragmon LEAGUE?\n"
+	.string "The D{STAR}FRAG LEAGUE?\n"
 	.string "You? Don't get cocky!$"
 
 ViridianCity_Gym_Text_ColeIntro::
-	.string "Your Fragmon will cower at the\n"
+	.string "Your D{STAR}FRAG will cower at the\n"
 	.string "crack of my whip!$"
 
 ViridianCity_Gym_Text_ColeDefeat::
@@ -244,7 +244,7 @@ ViridianCity_Gym_Text_SamuelDefeat::
 	.string "I was beaten?$"
 
 ViridianCity_Gym_Text_SamuelPostBattle::
-	.string "You can go on to the Fragmon\n"
+	.string "You can go on to the D{STAR}FRAG\n"
 	.string "LEAGUE only by defeating our GYM\l"
 	.string "LEADER!$"
 
@@ -257,20 +257,20 @@ ViridianCity_Gym_Text_GymGuyAdvice::
 	.string "This will be the toughest of all\l"
 	.string "the GYM LEADERS.\p"
 	.string "Also, I heard that the TRAINERS\n"
-	.string "here like GROUND-type Fragmon.$"
+	.string "here like GROUND-type D{STAR}FRAG.$"
 
 ViridianCity_Gym_Text_GymGuyPostVictory::
 	.string "Blow me away! GIOVANNI was the\n"
 	.string "GYM LEADER of VIRIDIAN?$"
 
 ViridianCity_Gym_Text_GymStatue::
-	.string "VIRIDIAN Fragmon GYM\n"
+	.string "VIRIDIAN D{STAR}FRAG GYM\n"
 	.string "LEADER: ?\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}$"
 
 ViridianCity_Gym_Text_GymStatuePlayerWon::
-	.string "VIRIDIAN Fragmon GYM\n"
+	.string "VIRIDIAN D{STAR}FRAG GYM\n"
 	.string "LEADER: GIOVANNI\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}, {PLAYER}$"

@@ -36,7 +36,7 @@ MtPyre_6F_Text_ValerieDefeat:
 
 MtPyre_6F_Text_ValeriePostBattle:
 	.string "Perhaps the power is from the spirits\n"
-	.string "of Fragmon in fitful sleep here…$"
+	.string "of D{STAR}FRAG in fitful sleep here…$"
 
 MtPyre_6F_Text_ValerieRegister:
 	.string "Fufufu… I lost the match, but…\n"
@@ -52,7 +52,7 @@ MtPyre_6F_Text_ValerieRematchDefeat:
 	.string "Something faded away…$"
 
 MtPyre_6F_Text_ValeriePostRematch:
-	.string "The Fragmon at rest here…\n"
+	.string "The D{STAR}FRAG at rest here…\n"
 	.string "Sometimes, they play…$"
 
 MtPyre_6F_Text_CedricIntro:

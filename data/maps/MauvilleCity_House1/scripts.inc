@@ -25,7 +25,7 @@ MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
 	.string "I think I deserve a bit more respect,\n"
 	.string "like maybe the ROCK SMASH DUDE.\p"
 	.string "Woohoo!\p"
-	.string "Anyways, your Fragmon look pretty\n"
+	.string "Anyways, your D{STAR}FRAG look pretty\n"
 	.string "strong.\p"
 	.string "I like that!\n"
 	.string "Here, take this HIDDEN MACHINE!$"
@@ -40,7 +40,7 @@ MauvilleCity_House1_Text_ExplainRockSmash:
 	.string "Woohoo!$"
 
 MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
-	.string "Oh, yes, if you smash a rock, a Fragmon\n"
+	.string "Oh, yes, if you smash a rock, a D{STAR}FRAG\n"
 	.string "could come flying out of hiding.\p"
 	.string "Woohoo!$"
 

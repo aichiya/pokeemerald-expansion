@@ -151,17 +151,17 @@ BattleFrontier_Lounge1_EventScript_Boy2::
 	end
 
 BattleFrontier_Lounge1_Text_PokemonBreederIntro:
-	.string "For 70 years I have raised Fragmon!\n"
+	.string "For 70 years I have raised D{STAR}FRAG!\n"
 	.string "I am the man they revere as\l"
-	.string "the legendary top Fragmon BREEDER!\p"
+	.string "the legendary top D{STAR}FRAG BREEDER!\p"
 	.string "If you ever become as seasoned as me,\n"
-	.string "you'll see the abilities of Fragmon\l"
+	.string "you'll see the abilities of D{STAR}FRAG\l"
 	.string "at a glance.\p"
 	.string "You're a TRAINER. Doesn't it interest\n"
-	.string "you to know your own Fragmon's\l"
+	.string "you to know your own D{STAR}FRAG's\l"
 	.string "abilities?\p"
 	.string "Here!\n"
-	.string "Let's have a look at your Fragmon!$"
+	.string "Let's have a look at your D{STAR}FRAG!$"
 
 BattleFrontier_Lounge1_Text_AverageAbility:
 	.string "…Hmm…\p"
@@ -236,23 +236,23 @@ BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending:
 	.string "Save it for next time!$"
 
 BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon:
-	.string "Ah, youngster! Do your Fragmon's\n"
+	.string "Ah, youngster! Do your D{STAR}FRAG's\n"
 	.string "abilities intrigue you?\p"
 	.string "Here, here!\n"
-	.string "Let's have a look at your Fragmon!$"
+	.string "Let's have a look at your D{STAR}FRAG!$"
 
 BattleFrontier_Lounge1_Text_EvenICantTell:
 	.string "An expert I am, but even I can't tell\n"
-	.string "anything about an unhatched Fragmon!\p"
-	.string "Show me a Fragmon!\n"
-	.string "A Fragmon is what I need to see!$"
+	.string "anything about an unhatched D{STAR}FRAG!\p"
+	.string "Show me a D{STAR}FRAG!\n"
+	.string "A D{STAR}FRAG is what I need to see!$"
 
 BattleFrontier_Lounge1_Text_SaidMyMonIsOutstanding:
-	.string "He said my Fragmon is outstanding!\n"
+	.string "He said my D{STAR}FRAG is outstanding!\n"
 	.string "I'm glad I raised it carefully!$"
 
 BattleFrontier_Lounge1_Text_DidntDoAnythingSpecialRaisingIt:
-	.string "He said my Fragmon is outstanding!\n"
+	.string "He said my D{STAR}FRAG is outstanding!\n"
 	.string "But I didn't do anything special\l"
 	.string "raising it…$"
 

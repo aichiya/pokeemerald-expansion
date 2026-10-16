@@ -53,12 +53,12 @@ LavaridgeTown_HerbShop_Text_ExplainCharcoal:
 	.string "That CHARCOAL I gave you, it's used\n"
 	.string "for making herbal medicine.\p"
 	.string "It also does wonders when held by\n"
-	.string "a Fragmon.\p"
+	.string "a D{STAR}FRAG.\p"
 	.string "It intensifies the power of FIRE-type\n"
 	.string "moves.$"
 
 LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike:
 	.string "Herbal medicine works impressively well.\n"
-	.string "But your Fragmon will dislike you for it.\l"
+	.string "But your D{STAR}FRAG will dislike you for it.\l"
 	.string "It must be horribly bitter!$"
 

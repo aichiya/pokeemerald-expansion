@@ -50,8 +50,8 @@ FallarborTown_ContestHall_Text_DoAllRightInPreliminary:
 @ Unused
 FallarborTown_ContestHall_Text_MonAllTheseRibbons:
 	.string "See!\n"
-	.string "My Fragmon won all these RIBBONS!\p"
-	.string "Have your Fragmon earned any RIBBONS?\n"
+	.string "My D{STAR}FRAG won all these RIBBONS!\p"
+	.string "Have your D{STAR}FRAG earned any RIBBONS?\n"
 	.string "You can check them on your DL{EMOJI_BIGWHEEL}GEAR.$"
 
 @ Unused
@@ -63,6 +63,6 @@ FallarborTown_ContestHall_Text_CantWinEverywhere:
 
 @ Unused
 FallarborTown_ContestHall_Text_SuperRankStage:
-	.string "Fragmon CONTESTS\n"
+	.string "D{STAR}FRAG CONTESTS\n"
 	.string "SUPER RANK STAGE!$"
 

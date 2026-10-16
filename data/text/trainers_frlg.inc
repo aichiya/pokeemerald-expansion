@@ -24,7 +24,7 @@ Route3_Text_CalvinRematchIntro::
 	.string "You're still not wearing shorts!$"
 
 Route3_Text_JamesRematchIntro::
-	.string "I'll battle you with the Fragmon\n"
+	.string "I'll battle you with the D{STAR}FRAG\n"
 	.string "I started raising.$"
 
 Route3_Text_RobinRematchIntro::
@@ -32,7 +32,7 @@ Route3_Text_RobinRematchIntro::
 	.string "Did you push me?$"
 
 Route4_Text_CrissyRematchIntro::
-	.string "I always catch mushroom Fragmon\n"
+	.string "I always catch mushroom D{STAR}FRAG\n"
 	.string "on MT. MOON.$"
 
 Route6_Text_RickyRematchIntro::
@@ -47,7 +47,7 @@ Route6_Text_NancyRematchIntro::
 
 Route6_Text_KeigoRematchIntro::
 	.string "I'm trying to find something good\n"
-	.string "that's not a BUG Fragmon, but…$"
+	.string "that's not a BUG D{STAR}FRAG, but…$"
 
 Route6_Text_JeffRematchIntro::
 	.string "Huh?\n"
@@ -62,7 +62,7 @@ Route6_Text_ElijahRematchIntro::
 	.string "Have you gotten better?$"
 
 Route8_Text_AidanRematchIntro::
-	.string "You are good at Fragmon, but how\n"
+	.string "You are good at D{STAR}FRAG, but how\n"
 	.string "is your chemistry grade?$"
 
 Route8_Text_StanRematchIntro::
@@ -80,7 +80,7 @@ Route8_Text_PaigeRematchIntro::
 
 Route8_Text_LeslieRematchIntro::
 	.string "School is fun, but I still think\n"
-	.string "Fragmon are fun, too.$"
+	.string "D{STAR}FRAG are fun, too.$"
 
 Route8_Text_AndreaRematchIntro::
 	.string "MEOWTH and PERSIAN are so cute,\n"
@@ -96,7 +96,7 @@ Route8_Text_RichRematchIntro::
 
 Route8_Text_JuliaRematchIntro::
 	.string "What's a cute, round, and fluffy\n"
-	.string "Fragmon?\p"
+	.string "D{STAR}FRAG?\p"
 	.string "You already know, don't you?$"
 
 Route8_Text_RicardoRematchIntro::
@@ -119,7 +119,7 @@ Route9_Text_AliciaRematchIntro::
 
 Route9_Text_ChrisRematchIntro::
 	.string "I haven't forgotten you were with\n"
-	.string "those good-looking Fragmon.$"
+	.string "those good-looking D{STAR}FRAG.$"
 
 Route9_Text_DrewRematchIntro::
 	.string "I'm taking ROCK TUNNEL to go to\n"
@@ -141,14 +141,14 @@ Route9_Text_BriceRematchIntro::
 
 Route9_Text_BrentRematchIntro::
 	.string "I got up early every day to train\n"
-	.string "my Fragmon from cocoons!$"
+	.string "my D{STAR}FRAG from cocoons!$"
 
 Route9_Text_AlanRematchIntro::
 	.string "Hahahaha!\n"
 	.string "I'll win this time!$"
 
 Route9_Text_ConnerRematchIntro::
-	.string "Go win, my super BUG Fragmon!$"
+	.string "Go win, my super BUG D{STAR}FRAG!$"
 
 Route10_Text_MarkRematchIntro::
 	.string "Wow, you came here again?\n"
@@ -161,10 +161,10 @@ Route10_Text_ClarkRematchIntro::
 
 Route10_Text_HermanRematchIntro::
 	.string "Hi, kid!\n"
-	.string "Did I show you my Fragmon?$"
+	.string "Did I show you my D{STAR}FRAG?$"
 
 Route10_Text_HeidiRematchIntro::
-	.string "I went out to a Fragmon GYM again.\p"
+	.string "I went out to a D{STAR}FRAG GYM again.\p"
 	.string "…But I lost as usual.$"
 
 Route10_Text_TrentRematchIntro::
@@ -216,7 +216,7 @@ Route11_Text_BernieRematchIntro::
 	.string "Keep your eyes out for live wires!$"
 
 Route11_Text_DaveRematchIntro::
-	.string "I raised my Fragmon carefully.\n"
+	.string "I raised my D{STAR}FRAG carefully.\n"
 	.string "They should be ready by now.\l"
 	.string "This time, they should win, too.$"
 
@@ -236,11 +236,11 @@ Route12_Text_JustinRematchIntro::
 Route12_Text_LucaRematchIntro::
 	.string "Electricity has always been my\n"
 	.string "specialty.\p"
-	.string "I don't know a thing about Fragmon\n"
+	.string "I don't know a thing about D{STAR}FRAG\n"
 	.string "of the sea, though.$"
 
 Route12_Text_HankRematchIntro::
-	.string "The FISHING FOOL vs. Fragmon KID!\n"
+	.string "The FISHING FOOL vs. D{STAR}FRAG KID!\n"
 	.string "Another round, fight!$"
 
 Route12_Text_ElliotRematchIntro::
@@ -263,7 +263,7 @@ Route12_Text_GiaRematchIntro::
 	.string "If we win today, I'll marry you!$"
 
 Route13_Text_SebastianRematchIntro::
-	.string "My bird Fragmon remember you!$"
+	.string "My bird D{STAR}FRAG remember you!$"
 
 Route13_Text_SusieRematchIntro::
 	.string "I want to be the best TRAINER \n"
@@ -274,7 +274,7 @@ Route13_Text_ValerieRematchIntro::
 	.string "You got more cool BADGES!$"
 
 Route13_Text_GwenRematchIntro::
-	.string "My cutely grown Fragmon wish to\n"
+	.string "My cutely grown D{STAR}FRAG wish to\n"
 	.string "become reacquainted with you.$"
 
 Route13_Text_AlmaRematchIntro::
@@ -298,23 +298,23 @@ Route13_Text_JaredRematchIntro::
 	.string "What're you starin' at?$"
 
 Route13_Text_RobertRematchIntro::
-	.string "I always go with bird Fragmon.\n"
+	.string "I always go with bird D{STAR}FRAG.\n"
 	.string "I've dedicated myself to them.$"
 
 Route14_Text_CarterRematchIntro::
 	.string "I used TMs to teach good moves\n"
-	.string "to my Fragmon.$"
+	.string "to my D{STAR}FRAG.$"
 
 Route14_Text_MitchRematchIntro::
-	.string "My bird Fragmon should be ready\n"
+	.string "My bird D{STAR}FRAG should be ready\n"
 	.string "for battle this time.$"
 
 Route14_Text_BeckRematchIntro::
-	.string "Are you using TMs on Fragmon?\n"
+	.string "Are you using TMs on D{STAR}FRAG?\n"
 	.string "Just holding them is useless.$"
 
 Route14_Text_MarlonRematchIntro::
-	.string "Have you taught your bird Fragmon\n"
+	.string "Have you taught your bird D{STAR}FRAG\n"
 	.string "how to FLY?\p"
 	.string "You'll be able to soar with it into\n"
 	.string "the sky! Give it a try.$"
@@ -342,7 +342,7 @@ Route14_Text_GeraldRematchIntro::
 	.string "the wide-open spaces.$"
 
 Route14_Text_MalikRematchIntro::
-	.string "Fragmon battle, right?\n"
+	.string "D{STAR}FRAG battle, right?\n"
 	.string "Cool! Rumble!$"
 
 Route14_Text_KiriRematchIntro::
@@ -354,7 +354,7 @@ Route14_Text_JanRematchIntro::
 
 Route15_Text_KindraRematchIntro::
 	.string "I'm going to keep battling with the\n"
-	.string "Fragmon I got in trades.$"
+	.string "D{STAR}FRAG I got in trades.$"
 
 Route15_Text_BeckyRematchIntro::
 	.string "You look gentle, so I think I can\n"
@@ -362,7 +362,7 @@ Route15_Text_BeckyRematchIntro::
 	.string "I'll give it one more go!$"
 
 Route15_Text_EdwinRematchIntro::
-	.string "When I whistle, bird Fragmon\n"
+	.string "When I whistle, bird D{STAR}FRAG\n"
 	.string "gather around.\p"
 	.string "They're amazingly cute!$"
 
@@ -372,11 +372,11 @@ Route15_Text_ChesterRematchIntro::
 
 Route15_Text_GraceRematchIntro::
 	.string "Oh, you're a little cutie!\n"
-	.string "So like a darling Fragmon!\l"
+	.string "So like a darling D{STAR}FRAG!\l"
 	.string "I remember you now!$"
 
 Route15_Text_OliviaRematchIntro::
-	.string "I raise Fragmon for protection\n"
+	.string "I raise D{STAR}FRAG for protection\n"
 	.string "because I live alone.\p"
 	.string "That hasn't changed.$"
 
@@ -390,10 +390,10 @@ Route15_Text_AlexRematchIntro::
 
 Route15_Text_CeliaRematchIntro::
 	.string "What's cool and happening?\n"
-	.string "Trading Fragmon, of course.$"
+	.string "Trading D{STAR}FRAG, of course.$"
 
 Route15_Text_YazminRematchIntro::
-	.string "Want to play with my Fragmon\n"
+	.string "Want to play with my D{STAR}FRAG\n"
 	.string "again?$"
 
 Route15_Text_MyaRematchIntro::
@@ -457,7 +457,7 @@ Route17_Text_NikolasRematchIntro::
 	.string "electrify you today!$"
 
 Route17_Text_ZeekRematchIntro::
-	.string "I leveled up my Fragmon, but it\n"
+	.string "I leveled up my D{STAR}FRAG, but it\n"
 	.string "absolutely won't evolve. Why?$"
 
 Route17_Text_JamalRematchIntro::
@@ -477,7 +477,7 @@ Route17_Text_WilliamRematchIntro::
 
 Route18_Text_WiltonRematchIntro::
 	.string "I've been checking every grassy\n"
-	.string "area for new Fragmon.\p"
+	.string "area for new D{STAR}FRAG.\p"
 	.string "But it's not always easy…$"
 
 Route18_Text_RamiroRematchIntro::
@@ -506,7 +506,7 @@ Route19_Text_DouglasRematchIntro::
 	.string "Have you seen?$"
 
 Route19_Text_DavidRematchIntro::
-	.string "I tried diving for Fragmon again,\n"
+	.string "I tried diving for D{STAR}FRAG again,\n"
 	.string "but it was a no-go like before.$"
 
 Route19_Text_TonyRematchIntro::
@@ -516,7 +516,7 @@ Route19_Text_TonyRematchIntro::
 
 Route19_Text_AnyaRematchIntro::
 	.string "You always get to ride your\n"
-	.string "Fragmon…\p"
+	.string "D{STAR}FRAG…\p"
 	.string "It looks so relaxing.\n"
 	.string "Can I have it if I win?$"
 
@@ -541,7 +541,7 @@ Route19_Text_LiaRematchIntro::
 
 Route19_Text_LucRematchIntro::
 	.string "LUC: My big sis taught me all\n"
-	.string "about Fragmon.\p"
+	.string "about D{STAR}FRAG.\p"
 	.string "I wonder if I'm better?$"
 
 Route20_Text_BarryRematchIntro::
@@ -565,11 +565,11 @@ Route20_Text_DeanRematchIntro::
 	.string "before!$"
 
 Route20_Text_DarrinRematchIntro::
-	.string "Why are you riding a Fragmon?\n"
+	.string "Why are you riding a D{STAR}FRAG?\n"
 	.string "Haven't you learned to swim yet?$"
 
 Route20_Text_RogerRematchIntro::
-	.string "I rode my bird Fragmon here.$"
+	.string "I rode my bird D{STAR}FRAG here.$"
 
 Route20_Text_NoraRematchIntro::
 	.string "My boyfriend gave me big pearls.\n"
@@ -581,7 +581,7 @@ Route20_Text_MissyRematchIntro::
 
 Route20_Text_MelissaRematchIntro::
 	.string "CINNABAR, in the west, has a LAB\n"
-	.string "for Fragmon.\p"
+	.string "for D{STAR}FRAG.\p"
 	.string "My daddy works there.$"
 
 Route21_North_Text_RonaldRematchIntro::
@@ -601,7 +601,7 @@ Route21_North_Text_CueBallRematchIntro::
 	.string "きちまったぜ$"
 
 Route21_South_Text_JackRematchIntro::
-	.string "I caught my Fragmon at sea.\n"
+	.string "I caught my D{STAR}FRAG at sea.\n"
 	.string "And that's where I train them.$"
 
 Route21_South_Text_JeromeRematchIntro::
@@ -650,7 +650,7 @@ Route25_Text_ChadRematchIntro::
 	.string "I knew I had to battle you again!$"
 
 Route25_Text_HaleyRematchIntro::
-	.string "My friend has many cute Fragmon.\n"
+	.string "My friend has many cute D{STAR}FRAG.\n"
 	.string "I'm so jealous!$"
 
 Route25_Text_FranklinRematchIntro::
@@ -764,7 +764,7 @@ ThreeIsland_BondBridge_Text_AmiraRematchIntro::
 
 ThreeIsland_BondBridge_Text_AlexisRematchIntro::
 	.string "Yay, yay!\n"
-	.string "Fragmon!$"
+	.string "D{STAR}FRAG!$"
 
 ThreeIsland_BondBridge_Text_TishaRematchIntro::
 	.string "Oh, no, didn't I tell you already?\n"
@@ -779,7 +779,7 @@ ThreeIsland_BondBridge_Text_MegRematchIntro::
 
 FiveIsland_WaterLabyrinth_Text_AlizeRematchIntro::
 	.string "Oh, hello!\p"
-	.string "Are you raising your Fragmon in a\n"
+	.string "Are you raising your D{STAR}FRAG in a\n"
 	.string "good environment?$"
 
 FiveIsland_ResortGorgeous_Text_DaisyRematchIntro::
@@ -801,7 +801,7 @@ FiveIsland_ResortGorgeous_Text_JackiRematchIntro::
 
 FiveIsland_ResortGorgeous_Text_GillianRematchIntro::
 	.string "They're almost finished making the\n"
-	.string "pool for my Fragmon.\p"
+	.string "pool for my D{STAR}FRAG.\p"
 	.string "You must drop in for a visit.$"
 
 FiveIsland_ResortGorgeous_Text_DestinRematchIntro::
@@ -879,11 +879,11 @@ SixIsland_WaterPath_Text_EarlRematchIntro::
 	.string "mountains around these parts?$"
 
 SixIsland_WaterPath_Text_MiuRematchIntro::
-	.string "MIU: Hello, Fragmon!\n"
+	.string "MIU: Hello, D{STAR}FRAG!\n"
 	.string "It's time to play again!$"
 
 SixIsland_WaterPath_Text_MiaRematchIntro::
-	.string "MIA: Hello, Fragmon!\n"
+	.string "MIA: Hello, D{STAR}FRAG!\n"
 	.string "It's time to battle again!$"
 
 SixIsland_RuinValley_Text_StanlyRematchIntro::
@@ -912,7 +912,7 @@ SevenIsland_TrainerTower_Text_DarioRematchIntro::
 
 SevenIsland_TrainerTower_Text_RodetteRematchIntro::
 	.string "Somewhere on this island, peculiar\n"
-	.string "Fragmon are sleeping.$"
+	.string "D{STAR}FRAG are sleeping.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MiahRematchIntro::
 	.string "Kyahaha!\p"
@@ -929,7 +929,7 @@ SevenIsland_SevaultCanyon_Entrance_Text_NicolasRematchIntro::
 
 SevenIsland_SevaultCanyon_Entrance_Text_MadelineRematchIntro::
 	.string "I don't forgive people who abuse\n"
-	.string "Fragmon!$"
+	.string "D{STAR}FRAG!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveRematchIntro::
 	.string "EVE: I'll team up with JON and\n"
@@ -945,7 +945,7 @@ SevenIsland_SevaultCanyon_Text_CyndyRematchIntro::
 
 SevenIsland_SevaultCanyon_Text_EvanRematchIntro::
 	.string "It doesn't matter if you happen to\n"
-	.string "have the strongest Fragmon…\p"
+	.string "have the strongest D{STAR}FRAG…\p"
 	.string "It doesn't mean a thing if you don't\n"
 	.string "know how to use them properly!$"
 
@@ -980,7 +980,7 @@ SevenIsland_TanobyRuins_Text_BrandonRematchIntro::
 	.string "this stone chamber?$"
 
 SevenIsland_TanobyRuins_Text_BenjaminRematchIntro::
-	.string "A mystic Fragmon is said to sleep\n"
+	.string "A mystic D{STAR}FRAG is said to sleep\n"
 	.string "inside here.$"
 
 SevenIsland_TanobyRuins_Text_EdnaRematchIntro::

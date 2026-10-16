@@ -336,13 +336,13 @@ BattleFrontier_BattleFactoryLobby_Text_TakeSinglesChallenge:
 BattleFrontier_BattleFactoryLobby_Text_ExplainSinglesChallenge:
 	.string "The Battle Swap Single Tournament\n"
 	.string "is a SINGLE BATTLE competition using\l"
-	.string "only rental Fragmon.\p"
+	.string "only rental D{STAR}FRAG.\p"
 	.string "First, you will be loaned three\n"
-	.string "Fragmon specifically for this event.\p"
-	.string "Using the supplied rental Fragmon,\n"
+	.string "D{STAR}FRAG specifically for this event.\p"
+	.string "Using the supplied rental D{STAR}FRAG,\n"
 	.string "you must conduct a SINGLE BATTLE.\p"
 	.string "If you win, you are permitted to trade\n"
-	.string "one of your rental Fragmon.\p"
+	.string "one of your rental D{STAR}FRAG.\p"
 	.string "Repeat this cycle of battling and\n"
 	.string "trading--if you win seven times in\l"
 	.string "a row, you will earn Battle Points.\p"
@@ -364,7 +364,7 @@ BattleFrontier_BattleFactoryLobby_Text_OkayToSaveBeforeChallenge:
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_WillHoldMonsForSafekeeping:
-	.string "Okay, I will hold your Fragmon for\n"
+	.string "Okay, I will hold your D{STAR}FRAG for\n"
 	.string "safekeeping while you compete.$"
 
 BattleFrontier_BattleFactoryLobby_Text_StepThisWay:
@@ -372,15 +372,15 @@ BattleFrontier_BattleFactoryLobby_Text_StepThisWay:
 
 BattleFrontier_BattleFactoryLobby_Text_ReturnMonsSaveResults:
 	.string "Thank you for participating!\p"
-	.string "I will return your Fragmon in exchange\n"
-	.string "for our rental Fragmon.\p"
+	.string "I will return your D{STAR}FRAG in exchange\n"
+	.string "for our rental D{STAR}FRAG.\p"
 	.string "I must also save the event results.\n"
 	.string "Please wait.$"
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_ReturnMons:
-	.string "I will return your Fragmon in exchange\n"
-	.string "for our rental Fragmon.$"
+	.string "I will return your D{STAR}FRAG in exchange\n"
+	.string "for our rental D{STAR}FRAG.$"
 
 BattleFrontier_BattleFactoryLobby_Text_CongratsSevenWins:
 	.string "Congratulations! You've won seven\n"
@@ -411,7 +411,7 @@ BattleFrontier_BattleFactoryLobby_Text_DidntSaveBeforeQuitting:
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_WellReturnMons:
-	.string "We'll return your personal Fragmon.$"
+	.string "We'll return your personal D{STAR}FRAG.$"
 
 @ Unused
 BattleFrontier_BattleFactoryLobby_Text_ReceivedPrizeItem:
@@ -432,13 +432,13 @@ BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge:
 BattleFrontier_BattleFactoryLobby_Text_ExplainDoublesChallenge:
 	.string "The Battle Swap Double Tournament\n"
 	.string "is a DOUBLE BATTLE competition using\l"
-	.string "only rental Fragmon.\p"
+	.string "only rental D{STAR}FRAG.\p"
 	.string "First, you will be loaned three\n"
-	.string "Fragmon specifically for this event.\p"
-	.string "Using the supplied rental Fragmon,\n"
+	.string "D{STAR}FRAG specifically for this event.\p"
+	.string "Using the supplied rental D{STAR}FRAG,\n"
 	.string "you must conduct a DOUBLE BATTLE.\p"
 	.string "If you win, you are permitted to trade\n"
-	.string "one of your rental Fragmon.\p"
+	.string "one of your rental D{STAR}FRAG.\p"
 	.string "Repeat this cycle of battling and\n"
 	.string "trading--if you win seven times in\l"
 	.string "a row, you will earn Battle Points.\p"
@@ -458,8 +458,8 @@ BattleFrontier_BattleFactoryLobby_Text_AwardBattlePoints:
 	.string "we award you these Battle Point(s).$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExchangeMonsAndSave:
-	.string "Let me exchange your Fragmon\n"
-	.string "for our rental Fragmon.\p"
+	.string "Let me exchange your D{STAR}FRAG\n"
+	.string "for our rental D{STAR}FRAG.\p"
 	.string "I need to save the battle data,\n"
 	.string "so please wait.$"
 
@@ -473,15 +473,15 @@ BattleFrontier_BattleFactoryLobby_Text_NeedKnowledgeOfMonsMoves:
 	.string "You, there!\p"
 	.string "Are you thinking that the events here\n"
 	.string "are easy since you don't need to have\l"
-	.string "a raised team of Fragmon?\p"
+	.string "a raised team of D{STAR}FRAG?\p"
 	.string "I wouldn't be too sure about winning\n"
 	.string "that easily.\p"
 	.string "If you don't have thorough knowledge\n"
-	.string "about Fragmon and their moves,\l"
+	.string "about D{STAR}FRAG and their moves,\l"
 	.string "it will be tough to keep winning.$"
 
 BattleFrontier_BattleFactoryLobby_Text_SwappedForWeakMon:
-	.string "I swapped for a weak Fragmon…\n"
+	.string "I swapped for a weak D{STAR}FRAG…\n"
 	.string "I thought it was a good kind to have…\p"
 	.string "They wiped the floor with us…$"
 
@@ -489,7 +489,7 @@ BattleFrontier_BattleFactoryLobby_Text_NeedToCheckOpponentsMons:
 	.string "Things haven't been going my way\n"
 	.string "at all.\p"
 	.string "You need to check your opponent's\n"
-	.string "Fragmon during battle to see if\l"
+	.string "D{STAR}FRAG during battle to see if\l"
 	.string "they're any good.$"
 
 BattleFrontier_BattleFactoryLobby_Text_CantFigureOutStaffHints:
@@ -505,7 +505,7 @@ BattleFrontier_BattleFactoryLobby_Text_RentalMonsAreVaried:
 	.string "and battling over and over.\p"
 	.string "So anyway, when I kept entering\n"
 	.string "Battle Swap events, I noticed they\l"
-	.string "varied the rental Fragmon.$"
+	.string "varied the rental D{STAR}FRAG.$"
 
 BattleFrontier_BattleFactoryLobby_Text_RulesAreListed:
 	.string "The Battle Swap rules are listed.$"
@@ -515,37 +515,37 @@ BattleFrontier_BattleFactoryLobby_Text_ReadWhichHeading:
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainBasicRules:
 	.string "In a Battle Swap event, you may use\n"
-	.string "only three Fragmon.\p"
+	.string "only three D{STAR}FRAG.\p"
 	.string "Whether you are renting or swapping,\n"
 	.string "your team may not have two or more\l"
-	.string "of the same Fragmon.$"
+	.string "of the same D{STAR}FRAG.$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules:
-	.string "You may swap Fragmon only with\n"
+	.string "You may swap D{STAR}FRAG only with\n"
 	.string "the TRAINER you have just defeated.\p"
-	.string "You may swap for only those Fragmon\n"
+	.string "You may swap for only those D{STAR}FRAG\n"
 	.string "used by the beaten TRAINER.$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNumberRules:
 	.string "After every battle you win, you may\n"
 	.string "swap for one of your defeated\l"
-	.string "opponent's Fragmon.\p"
-	.string "You will not be able to swap Fragmon\n"
+	.string "opponent's D{STAR}FRAG.\p"
+	.string "You will not be able to swap D{STAR}FRAG\n"
 	.string "with the seventh TRAINER in the event.$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules:
 	.string "There are two key points to be aware\n"
-	.string "of when swapping Fragmon.\p"
+	.string "of when swapping D{STAR}FRAG.\p"
 	.string "First, when swapping, you can't check\n"
-	.string "the stats of the Fragmon you are\l"
+	.string "the stats of the D{STAR}FRAG you are\l"
 	.string "about to receive.\p"
-	.string "Second, the Fragmon on your team\n"
+	.string "Second, the D{STAR}FRAG on your team\n"
 	.string "are lined up in sequence, depending on\l"
 	.string "the order in which you rented them.\p"
 	.string "This sequence remains unchanged\n"
 	.string "even when swaps are made.$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainOpenLvRules:
-	.string "In the Open Level, the rental Fragmon\n"
-	.string "and the opposing TRAINERS' Fragmon\l"
+	.string "In the Open Level, the rental D{STAR}FRAG\n"
+	.string "and the opposing TRAINERS' D{STAR}FRAG\l"
 	.string "are all Level 100.$"

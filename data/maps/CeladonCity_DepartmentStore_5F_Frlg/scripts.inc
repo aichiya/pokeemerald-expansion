@@ -59,19 +59,19 @@ CeladonCity_DepartmentStore_5F_Vitamins::
 	end
 
 CeladonCity_DepartmentStore_5F_Text_ExplainStatEnhancers::
-	.string "Fragmon stat enhancers can be\n"
+	.string "D{STAR}FRAG stat enhancers can be\n"
 	.string "bought only here.\p"
 	.string "HP UP increases the base HP of a\n"
-	.string "Fragmon.\p"
+	.string "D{STAR}FRAG.\p"
 	.string "CALCIUM raises the base SP. ATK\n"
-	.string "stat of one Fragmon.\p"
+	.string "stat of one D{STAR}FRAG.\p"
 	.string "ZINC boosts the base SP. DEF stat\n"
-	.string "of one Fragmon.\p"
+	.string "of one D{STAR}FRAG.\p"
 	.string "CARBOS enhances the base SPEED\n"
 	.string "stat.$"
 
 CeladonCity_DepartmentStore_5F_Text_HereForStatEnhancers::
-	.string "I'm here for Fragmon stat\n"
+	.string "I'm here for D{STAR}FRAG stat\n"
 	.string "enhancers.\p"
 	.string "PROTEIN increases the base ATTACK\n"
 	.string "power.\p"

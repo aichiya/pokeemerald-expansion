@@ -64,6 +64,6 @@ PacifidlogTown_House3_Text_ReallyWantedToGetBagon:
 PacifidlogTown_House3_Text_IsThatAPokedex:
 	.string "Is that a NC{EMOJI_IRRITATED}PDA?\p"
 	.string "Did you get to meet a lot of different\n"
-	.string "Fragmon?\p"
+	.string "D{STAR}FRAG?\p"
 	.string "I wish I was like you.$"
 

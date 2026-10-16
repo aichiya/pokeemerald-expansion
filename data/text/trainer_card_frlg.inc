@@ -1,6 +1,6 @@
 CeladonCity_GameCorner_Text_TryPokemonPrinter::
-	.string "It's a Fragmon PRINTER!\p"
-	.string "It can put a print of your Fragmon\n"
+	.string "It's a D{STAR}FRAG PRINTER!\p"
+	.string "It can put a print of your D{STAR}FRAG\n"
 	.string "on the back of your TRAINER CARD.\p"
 	.string "It costs only ¥50.\n"
 	.string "Would you like to try it?$"
@@ -17,7 +17,7 @@ CeladonCity_GameCorner_Text_BigSmileForPhoto::
 	.string "Flash!$"
 
 CeladonCity_GameCorner_Text_PrintIsReadyCheckTrainerCard::
-	.string "Your Fragmon print is ready!\n"
+	.string "Your D{STAR}FRAG print is ready!\n"
 	.string "Check your TRAINER CARD.$"
 
 FourIsland_House2_Text_WishICouldShowOffStickers::
@@ -64,7 +64,7 @@ FourIsland_House2_Text_WowHoFHigh::
 	.string "Whoa! You've made it into the\n"
 	.string "HALL OF FAME that often?\l"
 	.string "That's seriously incredible, yup!\p"
-	.string "You own the Fragmon LEAGUE!\n"
+	.string "You own the D{STAR}FRAG LEAGUE!\n"
 	.string "I'll give you one of these.$"
 
 FourIsland_House2_Text_WowHoFHighest::
@@ -88,7 +88,7 @@ FourIsland_House2_Text_LivingLegendHoF::
 	.string "I have no SITCKERS left to give.$"
 
 FourIsland_House2_Text_WowEggsLowest::
-	.string "Oh, wow, there are Fragmon EGGS?\n"
+	.string "Oh, wow, there are D{STAR}FRAG EGGS?\n"
 	.string "I didn't know that!\p"
 	.string "That's pretty good, yup!\n"
 	.string "I'll give you one of these.$"

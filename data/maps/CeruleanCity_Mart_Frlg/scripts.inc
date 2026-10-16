@@ -36,15 +36,15 @@ CeruleanCity_Mart_Items::
 
 CeruleanCity_Mart_Text_RepelWorksOnWeakMons::
 	.string "REPEL not only keeps bugs away,\n"
-	.string "it also works on weak Fragmon.\p"
-	.string "Put your strongest Fragmon at the\n"
-	.string "left of the Fragmon LIST.\p"
-	.string "If your first Fragmon is strong,\n"
+	.string "it also works on weak D{STAR}FRAG.\p"
+	.string "Put your strongest D{STAR}FRAG at the\n"
+	.string "left of the D{STAR}FRAG LIST.\p"
+	.string "If your first D{STAR}FRAG is strong,\n"
 	.string "REPEL's effect is boosted.$"
 
 CeruleanCity_Mart_Text_DoYouKnowAboutRareCandy::
 	.string "Do you know about RARE CANDY?\n"
 	.string "They don't sell it in shops.\p"
-	.string "I think it makes Fragmon grow\n"
+	.string "I think it makes D{STAR}FRAG grow\n"
 	.string "very quickly all of a sudden.$"
 

@@ -79,20 +79,20 @@ SixIsland_PatternBush_EventScript_Layton::
 
 SixIsland_PatternBush_Text_BethanyIntro::
 	.string "I'm curious, how do you raise your\n"
-	.string "Fragmon?$"
+	.string "D{STAR}FRAG?$"
 
 SixIsland_PatternBush_Text_BethanyDefeat::
-	.string "You raise your Fragmon with a\n"
+	.string "You raise your D{STAR}FRAG with a\n"
 	.string "whole lot of love!$"
 
 SixIsland_PatternBush_Text_BethanyPostBattle::
 	.string "In the same way your mother raised\n"
 	.string "you full of love, you should raise\l"
-	.string "your Fragmon.$"
+	.string "your D{STAR}FRAG.$"
 
 SixIsland_PatternBush_Text_AllisonIntro::
 	.string "I'm working to preserve the natural\n"
-	.string "ecology of Fragmon here.$"
+	.string "ecology of D{STAR}FRAG here.$"
 
 SixIsland_PatternBush_Text_AllisonDefeat::
 	.string "Oh, for someone so young, you are\n"
@@ -100,17 +100,17 @@ SixIsland_PatternBush_Text_AllisonDefeat::
 
 SixIsland_PatternBush_Text_AllisonPostBattle::
 	.string "I'm not saying that you shouldn't\n"
-	.string "catch Fragmon.\p"
+	.string "catch D{STAR}FRAG.\p"
 	.string "I just want people to raise their\n"
-	.string "Fragmon responsibly.$"
+	.string "D{STAR}FRAG responsibly.$"
 
 SixIsland_PatternBush_Text_GarretIntro::
-	.string "I caught a BUG Fragmon that lives\n"
+	.string "I caught a BUG D{STAR}FRAG that lives\n"
 	.string "only around here!$"
 
 SixIsland_PatternBush_Text_GarretDefeat::
 	.string "Heheh…\n"
-	.string "Isn't my Fragmon awesome?$"
+	.string "Isn't my D{STAR}FRAG awesome?$"
 
 SixIsland_PatternBush_Text_GarretPostBattle::
 	.string "There's a girl near the BUSH who\n"
@@ -118,11 +118,11 @@ SixIsland_PatternBush_Text_GarretPostBattle::
 
 SixIsland_PatternBush_Text_JonahIntro::
 	.string "You know, it just doesn't feel right\n"
-	.string "if I don't use BUG Fragmon.$"
+	.string "if I don't use BUG D{STAR}FRAG.$"
 
 SixIsland_PatternBush_Text_JonahDefeat::
 	.string "It's okay, losing is a fun part of\n"
-	.string "Fragmon's appeal, too.$"
+	.string "D{STAR}FRAG's appeal, too.$"
 
 SixIsland_PatternBush_Text_JonahPostBattle::
 	.string "By the way, “appeal” is a weird\n"
@@ -132,7 +132,7 @@ SixIsland_PatternBush_Text_JonahPostBattle::
 
 SixIsland_PatternBush_Text_VanceIntro::
 	.string "Yeah, yeah, yeah!\n"
-	.string "Look at all the BUG Fragmon!$"
+	.string "Look at all the BUG D{STAR}FRAG!$"
 
 SixIsland_PatternBush_Text_VanceDefeat::
 	.string "I got beat while I was still busy\n"
@@ -183,7 +183,7 @@ SixIsland_PatternBush_Text_DaliaPostBattle::
 	.string "Isn't it refreshing?$"
 
 SixIsland_PatternBush_Text_JoanaIntro::
-	.string "I love BUG Fragmon.\n"
+	.string "I love BUG D{STAR}FRAG.\n"
 	.string "That's why I'm here all the time.\p"
 	.string "Am I the only girl like that?$"
 
@@ -193,7 +193,7 @@ SixIsland_PatternBush_Text_JoanaDefeat::
 
 SixIsland_PatternBush_Text_JoanaPostBattle::
 	.string "I'm going to keep on collecting\n"
-	.string "BUG Fragmon.\p"
+	.string "BUG D{STAR}FRAG.\p"
 	.string "Am I the only girl like that?$"
 
 SixIsland_PatternBush_Text_RileyIntro::

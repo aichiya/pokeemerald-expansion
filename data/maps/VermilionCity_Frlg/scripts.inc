@@ -280,7 +280,7 @@ VermilionCity_Text_SSAnneHasDepartedForYear::
 VermilionCity_Text_BuildingOnThisLand::
 	.string "I'm putting up a building on this\n"
 	.string "plot of land. I own it all.\p"
-	.string "My Fragmon is tamping the land\n"
+	.string "My D{STAR}FRAG is tamping the land\n"
 	.string "to lay the foundation.$"
 
 VermilionCity_Text_Machop::
@@ -301,17 +301,17 @@ VermilionCity_Text_CitySign::
 VermilionCity_Text_SnorlaxBlockingRoute12::
 	.string "NOTICE!\p"
 	.string "ROUTE 12 may be blocked off by a\n"
-	.string "sleeping Fragmon.\p"
+	.string "sleeping D{STAR}FRAG.\p"
 	.string "Detour through ROCK TUNNEL to\n"
 	.string "LAVENDER TOWN.\p"
 	.string "VERMILION POLICE$"
 
 VermilionCity_Text_PokemonFanClubSign::
-	.string "Fragmon FAN CLUB\n"
-	.string "All Fragmon fans welcome!$"
+	.string "D{STAR}FRAG FAN CLUB\n"
+	.string "All D{STAR}FRAG fans welcome!$"
 
 VermilionCity_Text_GymSign::
-	.string "VERMILION CITY Fragmon GYM\n"
+	.string "VERMILION CITY D{STAR}FRAG GYM\n"
 	.string "LEADER: LT. SURGE\l"
 	.string "The Lightning American!$"
 

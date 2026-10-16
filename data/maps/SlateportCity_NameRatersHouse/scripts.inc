@@ -65,10 +65,10 @@ SlateportCity_NameRatersHouse_Text_PleasedToRateMonNickname:
 	.string "Hi, hi! I'm the NAME RATER!\n"
 	.string "I'm the fortune-teller of names!\p"
 	.string "I shall be pleased to rate your\n"
-	.string "Fragmon's nickname.$"
+	.string "D{STAR}FRAG's nickname.$"
 
 SlateportCity_NameRatersHouse_Text_CritiqueWhichMonNickname:
-	.string "Which Fragmon's nickname should\n"
+	.string "Which D{STAR}FRAG's nickname should\n"
 	.string "I critique?$"
 
 SlateportCity_NameRatersHouse_Text_FineNameSuggestBetterOne:
@@ -82,7 +82,7 @@ SlateportCity_NameRatersHouse_Text_WhatShallNewNameBe:
 	.string "nickname be?$"
 
 SlateportCity_NameRatersHouse_Text_MonShallBeKnownAsName:
-	.string "Done! From now on, this Fragmon\n"
+	.string "Done! From now on, this D{STAR}FRAG\n"
 	.string "shall be known as {STR_VAR_1}!\p"
 	.string "It is a better name than before!\n"
 	.string "How fortunate for you!$"
@@ -92,7 +92,7 @@ SlateportCity_NameRatersHouse_Text_DoVisitAgain:
 	.string "Do come visit again.$"
 
 SlateportCity_NameRatersHouse_Text_NameNoDifferentYetSuperior:
-	.string "Done! From now on, this Fragmon\n"
+	.string "Done! From now on, this D{STAR}FRAG\n"
 	.string "shall be known as {STR_VAR_1}!\p"
 	.string "It looks no different from before,\n"
 	.string "and yet, this is vastly superior!\p"

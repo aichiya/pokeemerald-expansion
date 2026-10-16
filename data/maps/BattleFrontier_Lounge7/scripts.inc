@@ -313,7 +313,7 @@ BattleFrontier_Lounge7_Text_LeftTutorIntro:
 	.string "I'm not like that blowhard woman over\n"
 	.string "there. I'm actually talented!\p"
 	.string "Let me prove it to you.\n"
-	.string "I can teach your Fragmon special and\l"
+	.string "I can teach your D{STAR}FRAG special and\l"
 	.string "yet cute moves.\p"
 	.string "But my lessons don't come free.\n"
 	.string "How about paying for the moves I teach\l"
@@ -322,7 +322,7 @@ BattleFrontier_Lounge7_Text_LeftTutorIntro:
 BattleFrontier_Lounge7_Text_LeftTutorWelcomeBack:
 	.string "Buhahaha!\p"
 	.string "Are you back to learn special and\n"
-	.string "yet cute Fragmon moves?$"
+	.string "yet cute D{STAR}FRAG moves?$"
 
 BattleFrontier_Lounge7_Text_TeachWhichMove:
 	.string "Fine, fine, look here!\n"
@@ -333,7 +333,7 @@ BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints:
 	.string "That will be {STR_VAR_2} Battle Points, okay?$"
 
 BattleFrontier_Lounge7_Text_TeachMoveToWhichMon:
-	.string "Fine, fine, now pick the Fragmon\n"
+	.string "Fine, fine, now pick the D{STAR}FRAG\n"
 	.string "I should teach the move to.$"
 
 BattleFrontier_Lounge7_Text_HaventGotEnoughPoints:
@@ -362,7 +362,7 @@ BattleFrontier_Lounge7_Text_RightTutorIntro:
 	.string "I'm not like that buffoonish woman over\n"
 	.string "there. I'm actually experienced!\p"
 	.string "I can prove it to you.\n"
-	.string "I can teach your Fragmon hard and\l"
+	.string "I can teach your D{STAR}FRAG hard and\l"
 	.string "yet pretty moves.\p"
 	.string "But my lessons don't come free.\n"
 	.string "How about paying for the moves I teach\l"
@@ -371,7 +371,7 @@ BattleFrontier_Lounge7_Text_RightTutorIntro:
 BattleFrontier_Lounge7_Text_RightTutorWelcomeBack:
 	.string "Ihihihi!\p"
 	.string "Have you come to learn hard and\n"
-	.string "yet pretty Fragmon moves?$"
+	.string "yet pretty D{STAR}FRAG moves?$"
 
 BattleFrontier_Lounge7_Text_ThinkLadiesDontGetAlong:
 	.string "Those ladies, the way they bad-mouth\n"
@@ -386,7 +386,7 @@ BattleFrontier_Lounge7_Text_LadiesWereStrongAndBeautiful:
 	.string "They were idols among us TRAINERS.\p"
 	.string "Even now, age hasn't dulled their\n"
 	.string "abilities.\p"
-	.string "In fact, their Fragmon moves have\n"
+	.string "In fact, their D{STAR}FRAG moves have\n"
 	.string "grown even more polished.\p"
 	.string "But… For some reason, I can't help\n"
 	.string "but feel this…\p"

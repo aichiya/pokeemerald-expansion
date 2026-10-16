@@ -38,9 +38,9 @@ SeafloorCavern_Room3_Text_ShellyPostBattle:
 
 SeafloorCavern_Room3_Text_Grunt5Intro:
 	.string "For our dream to become real, we need\n"
-	.string "the power of Fragmon.\p"
+	.string "the power of D{STAR}FRAG.\p"
 	.string "But meddlers like you use the power of\n"
-	.string "Fragmon to mess with us even at\l"
+	.string "D{STAR}FRAG to mess with us even at\l"
 	.string "a place like this!\p"
 	.string "Life just doesn't work the way we\n"
 	.string "need it to!$"

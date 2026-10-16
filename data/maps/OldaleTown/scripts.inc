@@ -345,39 +345,39 @@ OldaleTown_Text_SavingMyProgress:
 
 OldaleTown_Text_IWorkAtPokemonMart:
 	.string "Hi!\n"
-	.string "I work at a Fragmon MART.\p"
+	.string "I work at a D{STAR}FRAG MART.\p"
 	.string "Can I get you to come with me?$"
 
 OldaleTown_Text_ThisIsAPokemonMart:
-	.string "This is a Fragmon MART.\n"
+	.string "This is a D{STAR}FRAG MART.\n"
 	.string "Just look for our blue roof.\p"
 	.string "We sell a variety of goods including\n"
-	.string "POKé BALLS for catching Fragmon.\p"
+	.string "POKé BALLS for catching D{STAR}FRAG.\p"
 	.string "Here, I'd like you to have this as\n"
 	.string "a promotional item.$"
 
 OldaleTown_Text_PotionExplanation:
 	.string "A POTION can be used anytime, so it's\n"
-	.string "even more useful than a Fragmon CENTER\l"
+	.string "even more useful than a D{STAR}FRAG CENTER\l"
 	.string "in certain situations.$"
 
 OldaleTown_Text_WaitDontComeInHere:
 	.string "Aaaaah! Wait!\n"
 	.string "Please don't come in here.\p"
 	.string "I just discovered the footprints of\n"
-	.string "a rare Fragmon!\p"
+	.string "a rare D{STAR}FRAG!\p"
 	.string "Wait until I finish sketching\n"
 	.string "them, okay?$"
 
 OldaleTown_Text_DiscoveredFootprints:
 	.string "I just discovered the footprints of\n"
-	.string "a rare Fragmon!\p"
+	.string "a rare D{STAR}FRAG!\p"
 	.string "Wait until I finish sketching\n"
 	.string "them, okay?$"
 
 OldaleTown_Text_FinishedSketchingFootprints:
 	.string "I finished sketching the footprints of\n"
-	.string "a rare Fragmon.\p"
+	.string "a rare D{STAR}FRAG.\p"
 	.string "But it turns out they were only my\n"
 	.string "own footprints…$"
 

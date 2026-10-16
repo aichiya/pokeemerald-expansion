@@ -68,7 +68,7 @@ RockTunnel_1F_Text_OliverDefeat::
 	.string "Which way is out?$"
 
 RockTunnel_1F_Text_OliverPostBattle::
-	.string "That sleeping Fragmon on ROUTE 12\n"
+	.string "That sleeping D{STAR}FRAG on ROUTE 12\n"
 	.string "forced me to take this detour.$"
 
 RockTunnel_1F_Text_LucasIntro::
@@ -82,7 +82,7 @@ RockTunnel_1F_Text_LucasPostBattle::
 	.string "You're talented enough to hike!$"
 
 RockTunnel_1F_Text_AshtonIntro::
-	.string "Fragmon fight!\n"
+	.string "D{STAR}FRAG fight!\n"
 	.string "Ready, go!$"
 
 RockTunnel_1F_Text_AshtonDefeat::
@@ -104,17 +104,17 @@ RockTunnel_1F_Text_LeahPostBattle::
 
 RockTunnel_1F_Text_DanaIntro::
 	.string "I came this far looking for wild\n"
-	.string "Fragmon.$"
+	.string "D{STAR}FRAG.$"
 
 RockTunnel_1F_Text_DanaDefeat::
-	.string "I'm out of Fragmon!$"
+	.string "I'm out of D{STAR}FRAG!$"
 
 RockTunnel_1F_Text_DanaPostBattle::
 	.string "You looked cute and harmless.\n"
 	.string "Was I ever wrong!$"
 
 RockTunnel_1F_Text_ArianaIntro::
-	.string "You have Fragmon!\n"
+	.string "You have D{STAR}FRAG!\n"
 	.string "Let's start!$"
 
 RockTunnel_1F_Text_ArianaDefeat::

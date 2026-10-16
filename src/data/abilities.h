@@ -3722,7 +3722,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_MIRROR_IMAGE] =
     {
         .name = _("Mirror Image"),
-        .description = COMPOUND_STRING("Transforms into a Fragmon."),
+        .description = COMPOUND_STRING("Transforms into a D{STAR}FRAG."),
         .aiRating = 8,
     },
 

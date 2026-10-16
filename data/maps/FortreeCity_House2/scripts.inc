@@ -42,7 +42,7 @@ FortreeCity_House2_EventScript_WrongGuess::
 	end
 
 FortreeCity_House2_Text_HiddenPowersArousedByNature:
-	.string "People… Fragmon…\p"
+	.string "People… D{STAR}FRAG…\p"
 	.string "Their hidden powers are aroused by\n"
 	.string "living in natural environments…$"
 
@@ -69,11 +69,11 @@ FortreeCity_House2_Text_YourHiddenPowerHasAwoken:
 	.string "Oh! Splendid!\n"
 	.string "Your hidden power has awoken!\p"
 	.string "Here, take this and awaken the hidden\n"
-	.string "power of your Fragmon.$"
+	.string "power of your D{STAR}FRAG.$"
 
 FortreeCity_House2_Text_ExplainHiddenPower:
 	.string "HIDDEN POWER is a move that changes\n"
-	.string "with the Fragmon.$"
+	.string "with the D{STAR}FRAG.$"
 
 FortreeCity_House2_Text_YouGuessedWrong:
 	.string "No, too bad.\n"

@@ -677,7 +677,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchIsntOneForDeskWork:
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchEnjoysRivalsHelpToo:
 	.string "PROF. BIRCH is studying the habitats\n"
-	.string "and distribution of Fragmon.\p"
+	.string "and distribution of D{STAR}FRAG.\p"
 	.string "The PROF enjoys {RIVAL}'s help, too.\n"
 	.string "There's a lot of love there.$"
 
@@ -686,13 +686,13 @@ LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
 	.string "I've heard so much about you from\n"
 	.string "your father.\p"
 	.string "I've heard that you don't have your\n"
-	.string "own Fragmon yet.\p"
+	.string "own D{STAR}FRAG yet.\p"
 	.string "But the way you battled earlier,\n"
 	.string "you pulled it off with aplomb!\p"
 	.string "I guess you have your father's blood\n"
 	.string "in your veins after all!\p"
 	.string "Oh, yes. As thanks for rescuing me,\n"
-	.string "I'd like you to have the Fragmon you\l"
+	.string "I'd like you to have the D{STAR}FRAG you\l"
 	.string "used earlier.\p"
 	.string "{PLAYER} received the {STR_VAR_1}!$"
 
@@ -701,11 +701,11 @@ LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
 	.string "give a nickname to that {STR_VAR_1}?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
-	.string "PROF. BIRCH: If you work at Fragmon\n"
+	.string "PROF. BIRCH: If you work at D{STAR}FRAG\n"
 	.string "and gain experience, I think you'll make\l"
 	.string "an extremely good TRAINER.\p"
 	.string "My kid, {RIVAL}, is also studying\n"
-	.string "Fragmon while helping me out.\p"
+	.string "D{STAR}FRAG while helping me out.\p"
 	.string "{PLAYER}{KUN}, don't you think it might be\n"
 	.string "a good idea to go see {RIVAL}?$"
 
@@ -724,7 +724,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome:
 	.string "Gone home, I think.\p"
 	.string "Or maybe that kid's scrabbling around\n"
 	.string "in tall grass again somewhere…\p"
-	.string "If you or your Fragmon get tired,\n"
+	.string "If you or your D{STAR}FRAG get tired,\n"
 	.string "you should get some rest at home.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex:
@@ -745,16 +745,16 @@ LittlerootTown_ProfessorBirchsLab_Text_ReceivedPokedex:
 LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex:
 	.string "PROF. BIRCH: The NC{EMOJI_IRRITATED}PDA is a high-tech\n"
 	.string "tool that automatically makes a record\l"
-	.string "of any Fragmon you meet or catch.\p"
+	.string "of any D{STAR}FRAG you meet or catch.\p"
 	.string "My kid, {RIVAL}, goes everywhere\n"
 	.string "with it.\p"
-	.string "Whenever my kid catches a rare Fragmon\n"
+	.string "Whenever my kid catches a rare D{STAR}FRAG\n"
 	.string "and records its data in the NC{EMOJI_IRRITATED}PDA,\l"
 	.string "why, {RIVAL} looks for me while I'm out\l"
 	.string "doing fieldwork, and shows me.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait:
-	.string "PROF. BIRCH: Countless Fragmon\n"
+	.string "PROF. BIRCH: Countless D{STAR}FRAG\n"
 	.string "await you!\p"
 	.string "Argh, I'm getting the itch to get out\n"
 	.string "and do fieldwork again!$"
@@ -767,10 +767,10 @@ LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese:
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCutePokemonWithPokeBalls:
 	.string "MAY: It's fun if you can get a lot of\n"
-	.string "Fragmon!\p"
+	.string "D{STAR}FRAG!\p"
 	.string "I'm going to look all over the place\n"
-	.string "because I want different Fragmon.\p"
-	.string "If I find any cute Fragmon, I'll catch\n"
+	.string "because I want different D{STAR}FRAG.\p"
+	.string "If I find any cute D{STAR}FRAG, I'll catch\n"
 	.string "them with POKé BALLS!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull:
@@ -778,7 +778,7 @@ LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull:
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhereShouldIGoNext:
 	.string "MAY: I wonder where I should go look\n"
-	.string "for Fragmon next?$"
+	.string "for D{STAR}FRAG next?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:
 	.string "BRENDAN: Huh…\n"
@@ -788,10 +788,10 @@ LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese:
 
 LittlerootTown_ProfessorBirchsLab_Text_CatchCoolPokemonWithPokeBalls:
 	.string "BRENDAN: You know it's more fun to\n"
-	.string "have a whole bunch of Fragmon.\p"
+	.string "have a whole bunch of D{STAR}FRAG.\p"
 	.string "I'm going to explore all over the place\n"
-	.string "to find different Fragmon.\p"
-	.string "If I find any cool Fragmon, you bet\n"
+	.string "to find different D{STAR}FRAG.\p"
+	.string "If I find any cool D{STAR}FRAG, you bet\n"
 	.string "I'll try to get them with POKé BALLS.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull:
@@ -799,7 +799,7 @@ LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull:
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanWhereShouldIGoNext:
 	.string "BRENDAN: Where should I look for\n"
-	.string "Fragmon next…$"
+	.string "D{STAR}FRAG next…$"
 
 LittlerootTown_ProfessorBirchsLab_Text_SeriousLookingMachine:
 	.string "It's a serious-looking machine.\n"
@@ -810,7 +810,7 @@ LittlerootTown_ProfessorBirchsLab_Text_PCUsedForResearch:
 	.string "Better not mess around with it.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CrammedWithBooksOnPokemon:
-	.string "It's crammed with books on Fragmon.$"
+	.string "It's crammed with books on D{STAR}FRAG.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead:
 	.string "It's a book that's too hard to read.$"
@@ -818,11 +818,11 @@ LittlerootTown_ProfessorBirchsLab_Text_BookTooHardToRead:
 LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
 	.string "PROF. BIRCH: Now…\p"
 	.string "{PLAYER}{KUN} and {RIVAL}, I've had the two\n"
-	.string "of you help me study Fragmon.\p"
+	.string "of you help me study D{STAR}FRAG.\p"
 	.string "Thanks to your help, new facts\n"
 	.string "are coming to light.\p"
 	.string "It appears that in the HOENN region,\n"
-	.string "there are also Fragmon from other\l"
+	.string "there are also D{STAR}FRAG from other\l"
 	.string "regions.\p"
 	.string "It goes to show how rich and varied\n"
 	.string "the natural environments of HOENN\l"
@@ -837,11 +837,11 @@ LittlerootTown_ProfessorBirchsLab_Text_MayUpgradeSoCool:
 	.string "It's so cool that even my NC{EMOJI_IRRITATED}PDA\n"
 	.string "is getting updated!\p"
 	.string "It's because you went out and caught\n"
-	.string "so many Fragmon, {PLAYER}{KUN}!$"
+	.string "so many D{STAR}FRAG, {PLAYER}{KUN}!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
 	.string "BRENDAN: I went out all over HOENN\n"
-	.string "and checked out Fragmon.\p"
+	.string "and checked out D{STAR}FRAG.\p"
 	.string "You can thank me for getting\n"
 	.string "the NATIONAL Mode NC{EMOJI_IRRITATED}PDA.\p"
 	.string "Yep, you're lucky, {PLAYER}!$"
@@ -856,9 +856,9 @@ LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational:
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting2:
 	.string "PROF. BIRCH: But listen.\n"
 	.string "You've become the CHAMPION,\l"
-	.string "but your Fragmon journey isn't over.\p"
+	.string "but your D{STAR}FRAG journey isn't over.\p"
 	.string "There is no end to the road\n"
-	.string "that is Fragmon.\p"
+	.string "that is D{STAR}FRAG.\p"
 	.string "Somewhere, there is a grassy patch\n"
 	.string "that's waiting for you!$"
 
@@ -886,31 +886,31 @@ LittlerootTown_ProfessorBirchsLab_Text_CompletedDexChoosePokemon:
 	.string "I have a gift for you.\p"
 	.string "Consider it my show of appreciation\n"
 	.string "for the fantastic work you've done.\p"
-	.string "My gift is a rare Fragmon only found\n"
+	.string "My gift is a rare D{STAR}FRAG only found\n"
 	.string "in another region!\p"
 	.string "You can have any one of these\n"
-	.string "three Fragmon!$"
+	.string "three D{STAR}FRAG!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_CanHaveAnyOneOfRarePokemon:
-	.string "PROF. BIRCH: These are rare Fragmon\n"
+	.string "PROF. BIRCH: These are rare D{STAR}FRAG\n"
 	.string "only found in another region!\p"
 	.string "You can have any one of these\n"
-	.string "three Fragmon!$"
+	.string "three D{STAR}FRAG!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeCyndaquil:
-	.string "PROF. BIRCH: The FIRE Fragmon\n"
+	.string "PROF. BIRCH: The FIRE D{STAR}FRAG\n"
 	.string "CYNDAQUIL caught your eye!\p"
 	.string "You're as sharp as ever!\p"
 	.string "So the CYNDAQUIL is your choice?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeTotodile:
-	.string "PROF. BIRCH: The WATER Fragmon\n"
+	.string "PROF. BIRCH: The WATER D{STAR}FRAG\n"
 	.string "TOTODILE is your choice!\p"
 	.string "You know how to pick a good one.\p"
 	.string "So, you'll take the TOTODILE?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
-	.string "PROF. BIRCH: The GRASS Fragmon\n"
+	.string "PROF. BIRCH: The GRASS D{STAR}FRAG\n"
 	.string "CHIKORITA is your choice!\p"
 	.string "You sure know what you're doing.\p"
 	.string "So, you'll take the CHIKORITA?$"
@@ -918,12 +918,12 @@ LittlerootTown_ProfessorBirchsLab_Text_YoullTakeChikorita:
 LittlerootTown_ProfessorBirchsLab_Text_TakeYourTimeAllInvaluable:
 	.string "PROF. BIRCH: Take your time before\n"
 	.string "you decide.\p"
-	.string "They're all invaluable Fragmon.$"
+	.string "They're all invaluable D{STAR}FRAG.$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_PickedFinePokemon:
 	.string "PROF. BIRCH: I see!\n"
-	.string "You picked a fine Fragmon!$"
+	.string "You picked a fine D{STAR}FRAG!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ReceivedJohtoStarter:
 	.string "{PLAYER} received the {STR_VAR_1}\n"
@@ -937,20 +937,20 @@ LittlerootTown_ProfessorBirchsLab_Text_NicknameJohtoStarter:
 LittlerootTown_ProfessorBirchsLab_Text_GrassyPatchWaiting:
 	.string "PROF. BIRCH: Listen, {PLAYER}{KUN}.\n"
 	.string "You've completed the HOENN NC{EMOJI_IRRITATED}PDA,\l"
-	.string "but your Fragmon journey isn't over.\p"
+	.string "but your D{STAR}FRAG journey isn't over.\p"
 	.string "There is no end to the road\n"
-	.string "that is Fragmon.\p"
+	.string "that is D{STAR}FRAG.\p"
 	.string "Somewhere, there is a grassy patch\n"
 	.string "that's waiting for you!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BetterLeaveOthersAlone:
-	.string "You received the promised Fragmon.\n"
+	.string "You received the promised D{STAR}FRAG.\n"
 	.string "Better leave the others alone.$"
 
 @ Unused
 LittlerootTown_ProfessorBirchsLab_Text_DontHaveAnyRoomForPokemon:
 	.string "Oh, you don't have any room for\n"
-	.string "this Fragmon.$"
+	.string "this D{STAR}FRAG.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
 	.string "MAY: {PLAYER}{KUN}, after this…\n"
@@ -963,7 +963,7 @@ LittlerootTown_ProfessorBirchsLab_Text_MayWhatNextImStayingHere:
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanPreferCollectingSlowly:
 	.string "BRENDAN: Rather than collecting\n"
-	.string "Fragmon, I prefer slowly and \l"
+	.string "D{STAR}FRAG, I prefer slowly and \l"
 	.string "steadily raising the one I chose.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier:

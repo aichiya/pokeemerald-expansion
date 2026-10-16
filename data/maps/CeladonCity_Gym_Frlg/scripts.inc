@@ -93,7 +93,7 @@ CeladonCity_Gym_Text_ErikaIntro::
 	.string "I am the LEADER of CELADON GYM.\p"
 	.string "I am a student of the art of\n"
 	.string "flower arranging.\p"
-	.string "My Fragmon are solely of the\n"
+	.string "My D{STAR}FRAG are solely of the\n"
 	.string "GRASS type.\p"
 	.string "…Oh, I'm sorry, I had no idea that\n"
 	.string "you wished to challenge me.\p"
@@ -107,15 +107,15 @@ CeladonCity_Gym_Text_ErikaDefeat::
 	.string "RAINBOWBADGE.$"
 
 CeladonCity_Gym_Text_ErikaPostBattle::
-	.string "You are cataloging Fragmon?\n"
+	.string "You are cataloging D{STAR}FRAG?\n"
 	.string "I must say I'm impressed.\p"
-	.string "I would never collect Fragmon if\n"
+	.string "I would never collect D{STAR}FRAG if\n"
 	.string "they were unattractive.$"
 
 CeladonCity_Gym_Text_ExplainRainbowBadgeTakeThis::
 	.string "The RAINBOWBADGE will make\n"
-	.string "Fragmon up to Lv. 50 obey.\p"
-	.string "It also allows Fragmon to use\n"
+	.string "D{STAR}FRAG up to Lv. 50 obey.\p"
+	.string "It also allows D{STAR}FRAG to use\n"
 	.string "STRENGTH in and out of battle.\p"
 	.string "Please also take this with you.$"
 
@@ -126,7 +126,7 @@ CeladonCity_Gym_Text_ReceivedTM19FromErika::
 CeladonCity_Gym_Text_ExplainTM19::
 	.string "TM19 contains GIGA DRAIN.\p"
 	.string "Half the damage it inflicts is\n"
-	.string "drained to heal your Fragmon.\p"
+	.string "drained to heal your D{STAR}FRAG.\p"
 	.string "Wouldn't you agree that it's a\n"
 	.string "wonderful move?$"
 
@@ -153,10 +153,10 @@ CeladonCity_Gym_Text_BridgetDefeat::
 	.string "My makeup!$"
 
 CeladonCity_Gym_Text_BridgetPostBattle::
-	.string "GRASS-type Fragmon are tough\n"
+	.string "GRASS-type D{STAR}FRAG are tough\n"
 	.string "against the WATER type.\p"
 	.string "They also have an edge on ROCK-\n"
-	.string "and GROUND-type Fragmon.$"
+	.string "and GROUND-type D{STAR}FRAG.$"
 
 CeladonCity_Gym_Text_TinaIntro::
 	.string "…Weren't you peeking in here\n"
@@ -171,7 +171,7 @@ CeladonCity_Gym_Text_TinaPostBattle::
 
 CeladonCity_Gym_Text_TamiaIntro::
 	.string "Look, look!\n"
-	.string "See my Fragmon!\p"
+	.string "See my D{STAR}FRAG!\p"
 	.string "I like the GRASS type.\n"
 	.string "I like how they're easy to raise.$"
 
@@ -179,7 +179,7 @@ CeladonCity_Gym_Text_TamiaDefeat::
 	.string "No!$"
 
 CeladonCity_Gym_Text_TamiaPostBattle::
-	.string "We only use GRASS-type Fragmon at\n"
+	.string "We only use GRASS-type D{STAR}FRAG at\n"
 	.string "our GYM.\p"
 	.string "Why? We also use them for making\n"
 	.string "flower arrangements!$"
@@ -187,7 +187,7 @@ CeladonCity_Gym_Text_TamiaPostBattle::
 CeladonCity_Gym_Text_LisaIntro::
 	.string "Oh, hey!\p"
 	.string "We don't like BUG- or FIRE-type\n"
-	.string "Fragmon in here!$"
+	.string "D{STAR}FRAG in here!$"
 
 CeladonCity_Gym_Text_LisaDefeat::
 	.string "Oh!\n"
@@ -199,7 +199,7 @@ CeladonCity_Gym_Text_LisaPostBattle::
 
 CeladonCity_Gym_Text_LoriIntro::
 	.string "Pleased to meet you.\n"
-	.string "My hobby is Fragmon training.$"
+	.string "My hobby is D{STAR}FRAG training.$"
 
 CeladonCity_Gym_Text_LoriDefeat::
 	.string "Oh!\n"
@@ -220,17 +220,17 @@ CeladonCity_Gym_Text_MaryDefeat::
 	.string "Beaten!$"
 
 CeladonCity_Gym_Text_MaryPostBattle::
-	.string "I didn't bring my best Fragmon.\n"
+	.string "I didn't bring my best D{STAR}FRAG.\n"
 	.string "Wait until next time!$"
 
 CeladonCity_Gym_Text_GymStatue::
-	.string "CELADON Fragmon GYM\n"
+	.string "CELADON D{STAR}FRAG GYM\n"
 	.string "LEADER: ERIKA\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}$"
 
 CeladonCity_Gym_Text_GymStatuePlayerWon::
-	.string "CELADON Fragmon GYM\n"
+	.string "CELADON D{STAR}FRAG GYM\n"
 	.string "LEADER: ERIKA\p"
 	.string "WINNING TRAINERS:\n"
 	.string "{RIVAL}, {PLAYER}$"

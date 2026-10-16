@@ -5,23 +5,23 @@ gBirchDexRatingText_AreYouCurious::
 
 gBirchDexRatingText_Cancel::
 	.string "Hm? Oh, you haven't caught enough\n"
-	.string "Fragmon to make it worthwhile.$"
+	.string "D{STAR}FRAG to make it worthwhile.$"
 
 gBirchDexRatingText_SoYouveSeenAndCaught::
 	.string "Hmhm…\p"
-	.string "So, you've seen {STR_VAR_1} Fragmon,\n"
-	.string "and you've caught {STR_VAR_2} Fragmon…$"
+	.string "So, you've seen {STR_VAR_1} D{STAR}FRAG,\n"
+	.string "and you've caught {STR_VAR_2} D{STAR}FRAG…$"
 
 gBirchDexRatingText_LessThan10::
 	.string "Go into grassy areas more and look\n"
-	.string "for Fragmon more carefully.$"
+	.string "for D{STAR}FRAG more carefully.$"
 
 gBirchDexRatingText_LessThan20::
 	.string "I guess you're getting the hang\n"
 	.string "of it. But, it gets harder from here.$"
 
 gBirchDexRatingText_LessThan30::
-	.string "Some Fragmon only appear in\n"
+	.string "Some D{STAR}FRAG only appear in\n"
 	.string "certain areas.\l"
 	.string "You must be persistent.$"
 
@@ -36,10 +36,10 @@ gBirchDexRatingText_LessThan50::
 
 gBirchDexRatingText_LessThan60::
 	.string "Are you using any RODS?\n"
-	.string "There are many Fragmon in the sea.$"
+	.string "There are many D{STAR}FRAG in the sea.$"
 
 gBirchDexRatingText_LessThan70::
-	.string "Instead of just catching Fragmon,\n"
+	.string "Instead of just catching D{STAR}FRAG,\n"
 	.string "how about making them evolve, too?$"
 
 gBirchDexRatingText_LessThan80::
@@ -53,7 +53,7 @@ gBirchDexRatingText_LessThan90::
 
 gBirchDexRatingText_LessThan100::
 	.string "Have you visited the SAFARI ZONE?\p"
-	.string "I hear there are some Fragmon that\n"
+	.string "I hear there are some D{STAR}FRAG that\n"
 	.string "can only be caught there.$"
 
 gBirchDexRatingText_LessThan110::
@@ -62,37 +62,37 @@ gBirchDexRatingText_LessThan110::
 	.string "This is an impressive NC{EMOJI_IRRITATED}PDA!$"
 
 gBirchDexRatingText_LessThan120::
-	.string "There might be Fragmon that can be\n"
+	.string "There might be D{STAR}FRAG that can be\n"
 	.string "found using ROCK SMASH.$"
 
 gBirchDexRatingText_LessThan130::
-	.string "You should get some more Fragmon\n"
+	.string "You should get some more D{STAR}FRAG\n"
 	.string "by trading with others.$"
 
 gBirchDexRatingText_LessThan140::
-	.string "I've heard of Fragmon that evolve\n"
+	.string "I've heard of D{STAR}FRAG that evolve\n"
 	.string "when they come to fully love their\l"
 	.string "TRAINERS.$"
 
 gBirchDexRatingText_LessThan150::
 	.string "I had no idea that there were so\n"
-	.string "many Fragmon species in the HOENN\l"
+	.string "many D{STAR}FRAG species in the HOENN\l"
 	.string "region.$"
 
 gBirchDexRatingText_LessThan160::
-	.string "On occasion, some Fragmon appear\n"
+	.string "On occasion, some D{STAR}FRAG appear\n"
 	.string "in large numbers like outbreaks.\p"
 	.string "Don't miss opportunities like\n"
 	.string "those.$"
 
 gBirchDexRatingText_LessThan170::
 	.string "One can get a very good idea about\n"
-	.string "the Fragmon of the HOENN region\l"
+	.string "the D{STAR}FRAG of the HOENN region\l"
 	.string "by looking through your NC{EMOJI_IRRITATED}PDA.$"
 
 gBirchDexRatingText_LessThan180::
 	.string "I would say you already qualify as\n"
-	.string "a Fragmon PROFESSOR, and a good\l"
+	.string "a D{STAR}FRAG PROFESSOR, and a good\l"
 	.string "one, too!$"
 
 gBirchDexRatingText_LessThan190::
@@ -111,8 +111,8 @@ gBirchDexRatingText_DexCompleted::
 gBirchDexRatingText_OnANationwideBasis::
 	.string "Hmhm…\n"
 	.string "On a nationwide basis…\p"
-	.string "You've seen {STR_VAR_1} Fragmon,\n"
-	.string "and you've caught {STR_VAR_2} Fragmon…$"
+	.string "You've seen {STR_VAR_1} D{STAR}FRAG,\n"
+	.string "and you've caught {STR_VAR_2} D{STAR}FRAG…$"
 
 @ FRLG
 
@@ -124,14 +124,14 @@ PokedexRating_Text_HowIsPokedexComingAlong::
 PokedexRating_Text_SeenXOwnedY::
 	.string "The amount of progress you've made\n"
 	.string "on your NC{EMOJI_IRRITATED}PDA is:\p"
-	.string "{STR_VAR_1} Fragmon seen and\n"
-	.string "{STR_VAR_2} Fragmon owned.\p"
+	.string "{STR_VAR_1} D{STAR}FRAG seen and\n"
+	.string "{STR_VAR_2} D{STAR}FRAG owned.\p"
 	.string "{FONT_NORMAL}PROF. OAK's rating:$"
 
 PokedexRating_Text_LessThan10::
 	.string "You still have lots to do.\p"
 	.string "Go into every patch of grass you\n"
-	.string "see and look for Fragmon!$"
+	.string "see and look for D{STAR}FRAG!$"
 
 PokedexRating_Text_LessThan20::
 	.string "It looks as if you're getting on\n"
@@ -143,7 +143,7 @@ PokedexRating_Text_LessThan30::
 	.string "Your NC{EMOJI_IRRITATED}PDA could use a bit more\n"
 	.string "volume still!\p"
 	.string "Try to catch other species of\n"
-	.string "Fragmon!$"
+	.string "D{STAR}FRAG!$"
 
 PokedexRating_Text_LessThan40::
 	.string "Good, it's apparent that you're\n"
@@ -170,7 +170,7 @@ PokedexRating_Text_LessThan70::
 PokedexRating_Text_LessThan80::
 	.string "Very good!\p"
 	.string "I think you'll collect even more\n"
-	.string "Fragmon by going fishing!$"
+	.string "D{STAR}FRAG by going fishing!$"
 
 PokedexRating_Text_LessThan90::
 	.string "Wonderful! Let me guess… You\n"
@@ -186,7 +186,7 @@ PokedexRating_Text_LessThan110::
 
 PokedexRating_Text_LessThan120::
 	.string "You even have the evolved forms\n"
-	.string "of Fragmon! Super!$"
+	.string "of D{STAR}FRAG! Super!$"
 
 PokedexRating_Text_LessThan130::
 	.string "Excellent! Trade with friends to\n"
@@ -198,7 +198,7 @@ PokedexRating_Text_LessThan140::
 
 PokedexRating_Text_LessThan150::
 	.string "I have nothing left to say!\n"
-	.string "You're the Fragmon PROFESSOR now!$"
+	.string "You're the D{STAR}FRAG PROFESSOR now!$"
 
 PokedexRating_Text_Complete::
 	.string "Your NC{EMOJI_IRRITATED}PDA is entirely complete!\n"
@@ -206,8 +206,8 @@ PokedexRating_Text_Complete::
 
 PokedexRating_Text_NationalDexSeenXOwnedY::
 	.string "And your Isekai NC{EMOJI_IRRITATED}PDA is:\p"
-	.string "{STR_VAR_1} Fragmon seen and\n"
-	.string "{STR_VAR_2} Fragmon owned.$"
+	.string "{STR_VAR_1} D{STAR}FRAG seen and\n"
+	.string "{STR_VAR_2} D{STAR}FRAG owned.$"
 
 PokedexRating_Text_LookForwardToFilledNationalDex::
 	.string "I'll be looking forward to seeing\n"

@@ -757,7 +757,7 @@ Route110_Text_AquaActionsBringSmiles:
 Route110_Text_MayLetsBattle:
 	.string "MAY: Hi, {PLAYER}{KUN}, long time no see!\p"
 	.string "While I was searching for other\n"
-	.string "Fragmon, my Fragmon grew stronger.\p"
+	.string "D{STAR}FRAG, my D{STAR}FRAG grew stronger.\p"
 	.string "So…\n"
 	.string "How about a little battle?$"
 
@@ -784,7 +784,7 @@ Route110_Text_BrendanLetsBattle:
 	.string "BRENDAN: Hey, {PLAYER}.\n"
 	.string "So this is where you were.\l"
 	.string "How's it going?\p"
-	.string "Have you been raising your Fragmon?\n"
+	.string "Have you been raising your D{STAR}FRAG?\n"
 	.string "I'll check for you.$"
 
 Route110_Text_BrendanDefeated:
@@ -804,7 +804,7 @@ Route110_Text_BrendanExplainItemfinder:
 	.string "If it senses something, it emits\n"
 	.string "a sound.\p"
 	.string "Anyway, I'm off to look for new\n"
-	.string "Fragmon.$"
+	.string "D{STAR}FRAG.$"
 
 Route110_Text_RideBikeAtFullSpeed:
 	.string "Wouldn't it be great to ride a BIKE\n"
@@ -834,7 +834,7 @@ Route110_Text_YouGotBikeFromRydel:
 
 Route110_Text_TwoRoads:
 	.string "The two roads, one above, one below…\p"
-	.string "A road each for people and Fragmon.\n"
+	.string "A road each for people and D{STAR}FRAG.\n"
 	.string "Perhaps that is right and fair.$"
 
 Route110_Text_WalkOnTheLowRoad:
@@ -851,7 +851,7 @@ Route110_Text_WhichShouldIChoose:
 	.string "Which should I choose?\p"
 	.string "Make a beeline for MAUVILLE on\n"
 	.string "CYCLING ROAD, or take the low road\l"
-	.string "and look for Fragmon?$"
+	.string "and look for D{STAR}FRAG?$"
 
 Route110_Text_CyclingChallengeResultSummary:
 	.string "Number of collisions:\n"
@@ -938,7 +938,7 @@ Route110_Text_TrainerTipsPrlzSleep:
 	.string "The foe can be made helpless by\n"
 	.string "paralyzing it or causing it to sleep.\p"
 	.string "It is an important technique for\n"
-	.string "Fragmon battles.$"
+	.string "D{STAR}FRAG battles.$"
 
 Route110_Text_TrainerTipsRegisterItems:
 	.string "TRAINER TIPS\p"

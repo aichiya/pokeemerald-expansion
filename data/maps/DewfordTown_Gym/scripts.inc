@@ -286,11 +286,11 @@ DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "Hey, how's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
 	.string "DEWFORD's GYM LEADER BRAWLY commands\n"
-	.string "FIGHTING-type Fragmon.\p"
+	.string "FIGHTING-type D{STAR}FRAG.\p"
 	.string "Going against him with NORMAL-type\n"
-	.string "Fragmon is asking for trouble.\p"
-	.string "FIGHTING Fragmon will lay a serious\n"
-	.string "smack down on NORMAL Fragmon,\l"
+	.string "D{STAR}FRAG is asking for trouble.\p"
+	.string "FIGHTING D{STAR}FRAG will lay a serious\n"
+	.string "smack down on NORMAL D{STAR}FRAG,\l"
 	.string "so be careful!\p"
 	.string "What's worse, the GYM is as dark as\n"
 	.string "the ocean floor.\p"
@@ -326,7 +326,7 @@ DewfordTown_Gym_Text_JocelynPostBattle:
 	.string "I'm not going to waste this loss.\n"
 	.string "I'll use it to motivate me to train!\p"
 	.string "One day I'll become a GYM LEADER…\p"
-	.string "No, I'll become the Fragmon LEAGUE\n"
+	.string "No, I'll become the D{STAR}FRAG LEAGUE\n"
 	.string "CHAMPION!$"
 
 DewfordTown_Gym_Text_LauraIntro:
@@ -400,7 +400,7 @@ DewfordTown_Gym_Text_ReceivedKnuckleBadge:
 	.string "from BRAWLY.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
-	.string "The KNUCKLE BADGE makes all Fragmon\n"
+	.string "The KNUCKLE BADGE makes all D{STAR}FRAG\n"
 	.string "up to Level 30, even those you get in\l"
 	.string "trades, obey without question.\p"
 	.string "And, you'll be able to use the HM move\n"
@@ -424,10 +424,10 @@ DewfordTown_Gym_Text_BrawlyPostBattle:
 	.string "among TRAINERS one day!$"
 
 DewfordTown_Gym_Text_GymStatue:
-	.string "DEWFORD TOWN Fragmon GYM$"
+	.string "DEWFORD TOWN D{STAR}FRAG GYM$"
 
 DewfordTown_Gym_Text_GymStatueCertified:
-	.string "DEWFORD TOWN Fragmon GYM\p"
+	.string "DEWFORD TOWN D{STAR}FRAG GYM\p"
 	.string "BRAWLY'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
@@ -453,7 +453,7 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 	.string "always returns to the shore.\p"
 	.string "A giant wave of a talent like you…\n"
 	.string "I knew you would return!\p"
-	.string "Oh? You only have one Fragmon\n"
+	.string "Oh? You only have one D{STAR}FRAG\n"
 	.string "that can battle.\p"
 	.string "I'm sorry, but I'd like you to come back\n"
-	.string "with at least two Fragmon.$"
+	.string "with at least two D{STAR}FRAG.$"

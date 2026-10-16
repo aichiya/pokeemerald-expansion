@@ -983,9 +983,9 @@ LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries:
 
 LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint:
 	.string "Congratulations!\p"
-	.string "I did a painting of your Fragmon to\n"
+	.string "I did a painting of your D{STAR}FRAG to\n"
 	.string "commemorate its victory…\p"
-	.string "Well, your Fragmon's appeals were\n"
+	.string "Well, your D{STAR}FRAG's appeals were\n"
 	.string "so fantastic, it spurred me into\l"
 	.string "painting better than I usually do.\l"
 	.string "Look, see?$"
@@ -1011,7 +1011,7 @@ LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum:
 LilycoveCity_ContestLobby_Text_TakeMementoOfPainting:
 	.string "Oh, that's right!\p"
 	.string "As a memento of me painting your\n"
-	.string "Fragmon, please take this.$"
+	.string "D{STAR}FRAG, please take this.$"
 
 LilycoveCity_ContestLobby_Text_ReceivedARibbon:
 	.string "{PLAYER} received a RIBBON.$"
@@ -1039,20 +1039,20 @@ LilycoveCity_ContestLobby_Text_MasterRankHereICome:
 	.string "Hoo, boy… Master Rank CONTESTS,\n"
 	.string "here I come.\p"
 	.string "The world will know that my dearest\n"
-	.string "Fragmon is the cutest being in all\l"
+	.string "D{STAR}FRAG is the cutest being in all\l"
 	.string "existence. The time has come!\l"
 	.string "Uheheheh.$"
 
 LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere:
 	.string "You can see a whole variety of\n"
-	.string "Fragmon here.\p"
+	.string "D{STAR}FRAG here.\p"
 	.string "That's why I make this place a regular\n"
 	.string "part of my daily stroll.$"
 
 LilycoveCity_ContestLobby_Text_ContestFeastForEyes:
 	.string "Wow, coming out to a CONTEST is\n"
 	.string "a feast for these eyes!\p"
-	.string "Would you look at all the Fragmon\n"
+	.string "Would you look at all the D{STAR}FRAG\n"
 	.string "that just scream to be painted?$"
 
 LilycoveCity_ContestLobby_Text_ToughContestIsExtreme:
@@ -1063,7 +1063,7 @@ LilycoveCity_ContestLobby_Text_ToughContestIsExtreme:
 
 LilycoveCity_ContestLobby_Text_LavishedCareOnMon:
 	.string "Day in and day out, I lavished my care\n"
-	.string "on this Fragmon.\p"
+	.string "on this D{STAR}FRAG.\p"
 	.string "Its condition is peaking.\n"
 	.string "Today, victory is mine!$"
 

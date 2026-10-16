@@ -10,9 +10,9 @@ RustboroCity_Flat1_1F_EventScript_Woman::
 	end
 
 RustboroCity_Flat1_1F_Text_EveryPokemonHasAbility:
-	.string "Every Fragmon has a special ability\n"
+	.string "Every D{STAR}FRAG has a special ability\n"
 	.string "that it can use.$"
 
 RustboroCity_Flat1_1F_Text_PokemonStrange:
-	.string "Fragmon are such strange creatures.$"
+	.string "D{STAR}FRAG are such strange creatures.$"
 

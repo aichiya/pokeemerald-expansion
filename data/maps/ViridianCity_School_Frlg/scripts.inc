@@ -106,36 +106,36 @@ ViridianCity_School_Text_NotebookFirstPage::
 	.string "Let's check out the notebook.\p"
 	.string "First page…\p"
 	.string "POKé BALLS are used to catch\n"
-	.string "Fragmon.\p"
-	.string "Up to six Fragmon can be carried\n"
+	.string "D{STAR}FRAG.\p"
+	.string "Up to six D{STAR}FRAG can be carried\n"
 	.string "in your party.\p"
 	.string "People who raise and battle\n"
-	.string "with Fragmon are called TRAINERS.$"
+	.string "with D{STAR}FRAG are called TRAINERS.$"
 
 ViridianCity_School_Text_NotebookSecondPage::
 	.string "Second page…\p"
-	.string "A healthy Fragmon may be hard to\n"
+	.string "A healthy D{STAR}FRAG may be hard to\n"
 	.string "catch, so weaken it first.\p"
 	.string "Poison, burn, or cause another\n"
 	.string "status problem to weaken it.$"
 
 ViridianCity_School_Text_NotebookThirdPage::
 	.string "Third page…\p"
-	.string "Fragmon TRAINERS seek others to\n"
-	.string "engage in Fragmon battles.\p"
+	.string "D{STAR}FRAG TRAINERS seek others to\n"
+	.string "engage in D{STAR}FRAG battles.\p"
 	.string "To TRAINERS, the taste of victory\n"
 	.string "is sweet, indeed.\p"
 	.string "Battles are constantly waged at\n"
-	.string "Fragmon GYMS everywhere.$"
+	.string "D{STAR}FRAG GYMS everywhere.$"
 
 ViridianCity_School_Text_NotebookFourthPage::
 	.string "Fourth page…\p"
-	.string "The ultimate goal for all Fragmon\n"
+	.string "The ultimate goal for all D{STAR}FRAG\n"
 	.string "TRAINERS is simple.\p"
 	.string "It is to defeat the top eight\n"
-	.string "Fragmon GYM LEADERS.\p"
+	.string "D{STAR}FRAG GYM LEADERS.\p"
 	.string "Do so to earn the right to face…\p"
-	.string "The ELITE FOUR of the Fragmon\n"
+	.string "The ELITE FOUR of the D{STAR}FRAG\n"
 	.string "LEAGUE!$"
 
 ViridianCity_School_Text_TurnThePage::
@@ -146,16 +146,16 @@ ViridianCity_School_Text_HeyDontLookAtMyNotes::
 	.string "Don't look at my notes!$"
 
 ViridianCity_School_Text_BlackboardListsStatusProblems::
-	.string "The blackboard lists Fragmon\n"
+	.string "The blackboard lists D{STAR}FRAG\n"
 	.string "STATUS problems during battles.$"
 
 ViridianCity_School_Text_ReadWhichTopic::
 	.string "Which topic do you want to read?$"
 
 ViridianCity_School_Text_ExplainSleep::
-	.string "A Fragmon can't attack if it's\n"
+	.string "A D{STAR}FRAG can't attack if it's\n"
 	.string "asleep.\p"
-	.string "Fragmon will stay asleep even\n"
+	.string "D{STAR}FRAG will stay asleep even\n"
 	.string "after battles.\p"
 	.string "Use AWAKENING to awaken one\n"
 	.string "from sleep.$"
@@ -167,22 +167,22 @@ ViridianCity_School_Text_ExplainBurn::
 	.string "Use BURN HEAL to cure a burn.$"
 
 ViridianCity_School_Text_ExplainPoison::
-	.string "When poisoned, a Fragmon's health\n"
+	.string "When poisoned, a D{STAR}FRAG's health\n"
 	.string "steadily drops.\p"
 	.string "Poison lingers after battles.\n"
 	.string "Use an ANTIDOTE to cure poison!$"
 
 ViridianCity_School_Text_ExplainFreeze::
-	.string "A frozen Fragmon becomes\n"
+	.string "A frozen D{STAR}FRAG becomes\n"
 	.string "helplessly immobile.\p"
 	.string "It stays frozen even after the\n"
 	.string "battle ends.\p"
 	.string "Use ICE HEAL to thaw out the\n"
-	.string "suffering Fragmon.$"
+	.string "suffering D{STAR}FRAG.$"
 
 ViridianCity_School_Text_ExplainParalysis::
 	.string "Paralysis reduces SPEED and may\n"
-	.string "prevent the Fragmon from moving.\p"
+	.string "prevent the D{STAR}FRAG from moving.\p"
 	.string "Paralysis remains after battles.\n"
 	.string "Use PARLYZ HEAL for treatment.$"
 

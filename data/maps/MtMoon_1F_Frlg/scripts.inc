@@ -87,10 +87,10 @@ MtMoon_1F_Text_JovanIntro::
 	.string "Don't sneak up on me!$"
 
 MtMoon_1F_Text_JovanDefeat::
-	.string "My Fragmon won't do!$"
+	.string "My D{STAR}FRAG won't do!$"
 
 MtMoon_1F_Text_JovanPostBattle::
-	.string "I have to find stronger Fragmon.\n"
+	.string "I have to find stronger D{STAR}FRAG.\n"
 	.string "Where might they be?$"
 
 MtMoon_1F_Text_IrisIntro::

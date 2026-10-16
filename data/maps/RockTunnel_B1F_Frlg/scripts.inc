@@ -79,19 +79,19 @@ RockTunnel_B1F_Text_CooperPostBattle::
 	.string "can I have it?$"
 
 RockTunnel_B1F_Text_SteveIntro::
-	.string "Um… Do you know about Fragmon\n"
+	.string "Um… Do you know about D{STAR}FRAG\n"
 	.string "cosplay?$"
 
 RockTunnel_B1F_Text_SteveDefeat::
 	.string "Well, that's that.$"
 
 RockTunnel_B1F_Text_StevePostBattle::
-	.string "Fragmon cosplay is dressing up as\n"
-	.string "Fragmon for fun.\p"
+	.string "D{STAR}FRAG cosplay is dressing up as\n"
+	.string "D{STAR}FRAG for fun.\p"
 	.string "CLEFAIRY is a favorite.$"
 
 RockTunnel_B1F_Text_AllenIntro::
-	.string "My Fragmon techniques will leave\n"
+	.string "My D{STAR}FRAG techniques will leave\n"
 	.string "you crying!$"
 
 RockTunnel_B1F_Text_AllenDefeat::
@@ -100,7 +100,7 @@ RockTunnel_B1F_Text_AllenDefeat::
 
 RockTunnel_B1F_Text_AllenPostBattle::
 	.string "In mountains, you'll often find\n"
-	.string "ROCK-type Fragmon.$"
+	.string "ROCK-type D{STAR}FRAG.$"
 
 RockTunnel_B1F_Text_MarthaIntro::
 	.string "I don't often come here, but I will\n"
@@ -111,7 +111,7 @@ RockTunnel_B1F_Text_MarthaDefeat::
 	.string "I lost!$"
 
 RockTunnel_B1F_Text_MarthaPostBattle::
-	.string "I like tiny Fragmon.\n"
+	.string "I like tiny D{STAR}FRAG.\n"
 	.string "Big ones are too scary!$"
 
 RockTunnel_B1F_Text_EricIntro::
@@ -121,11 +121,11 @@ RockTunnel_B1F_Text_EricDefeat::
 	.string "Fired away!$"
 
 RockTunnel_B1F_Text_EricPostBattle::
-	.string "I'll raise my Fragmon to beat\n"
+	.string "I'll raise my D{STAR}FRAG to beat\n"
 	.string "yours, kid.$"
 
 RockTunnel_B1F_Text_WinstonIntro::
-	.string "I draw illustrations of Fragmon\n"
+	.string "I draw illustrations of D{STAR}FRAG\n"
 	.string "when I'm home.$"
 
 RockTunnel_B1F_Text_WinstonDefeat::

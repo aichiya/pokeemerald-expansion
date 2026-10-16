@@ -6,7 +6,7 @@ Route9_EventScript_RouteSign::
 	end
 
 Route9_Text_AliciaIntro::
-	.string "You have Fragmon with you!\n"
+	.string "You have D{STAR}FRAG with you!\n"
 	.string "You're mine!$"
 
 Route9_Text_AliciaDefeat::
@@ -20,7 +20,7 @@ Route9_Text_AliciaPostBattle::
 
 Route9_Text_ChrisIntro::
 	.string "Who's that walking there with those\n"
-	.string "good-looking Fragmon?$"
+	.string "good-looking D{STAR}FRAG?$"
 
 Route9_Text_ChrisDefeat::
 	.string "Out like a light!$"
@@ -56,7 +56,7 @@ Route9_Text_JeremyIntro::
 Route9_Text_JeremyDefeat::
 	.string "Keep it coming, eh!\p"
 	.string "Oh wait.\n"
-	.string "I'm out of Fragmon!$"
+	.string "I'm out of D{STAR}FRAG!$"
 
 Route9_Text_JeremyPostBattle::
 	.string "You sure had guts standing up to\n"
@@ -75,7 +75,7 @@ Route9_Text_BricePostBattle::
 
 Route9_Text_BrentIntro::
 	.string "I got up early every day to raise\n"
-	.string "my Fragmon from cocoons!$"
+	.string "my D{STAR}FRAG from cocoons!$"
 
 Route9_Text_BrentDefeat::
 	.string "WHAT?\p"
@@ -98,13 +98,13 @@ Route9_Text_AlanPostBattle::
 	.string "Us hearty guys always laugh!$"
 
 Route9_Text_ConnerIntro::
-	.string "Go, my super BUG Fragmon!$"
+	.string "Go, my super BUG D{STAR}FRAG!$"
 
 Route9_Text_ConnerDefeat::
 	.string "My bugs…$"
 
 Route9_Text_ConnerPostBattle::
-	.string "If you don't like BUG Fragmon,\n"
+	.string "If you don't like BUG D{STAR}FRAG,\n"
 	.string "you bug me!$"
 
 Route9_Text_RouteSign::

@@ -272,24 +272,24 @@ Route101_Text_DontLeaveMe:
 Route101_Text_YouSavedMe:
 	.string "PROF. BIRCH: Whew…\p"
 	.string "I was in the tall grass studying wild\n"
-	.string "Fragmon when I was jumped.\p"
+	.string "D{STAR}FRAG when I was jumped.\p"
 	.string "You saved me.\n"
 	.string "Thanks a lot!\p"
 	.string "Oh?\p"
 	.string "Hi, you're {PLAYER}{KUN}!\p"
 	.string "This is not the place to chat, so come\n"
-	.string "by my Fragmon LAB later, okay?$"
+	.string "by my D{STAR}FRAG LAB later, okay?$"
 
 Route101_Text_TakeTiredPokemonToPokeCenter:
-	.string "If Fragmon get tired, take them to\n"
-	.string "a Fragmon CENTER.\p"
-	.string "There's a Fragmon CENTER in OLDALE\n"
+	.string "If D{STAR}FRAG get tired, take them to\n"
+	.string "a D{STAR}FRAG CENTER.\p"
+	.string "There's a D{STAR}FRAG CENTER in OLDALE\n"
 	.string "TOWN right close by.$"
 
 Route101_Text_WildPokemonInTallGrass:
-	.string "Wild Fragmon will jump out at you in\n"
+	.string "Wild D{STAR}FRAG will jump out at you in\n"
 	.string "tall grass.\p"
-	.string "If you want to catch Fragmon, you have\n"
+	.string "If you want to catch D{STAR}FRAG, you have\n"
 	.string "to go into the tall grass and search.$"
 
 Route101_Text_RouteSign:

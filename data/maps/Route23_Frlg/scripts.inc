@@ -129,5 +129,5 @@ Route23_EventScript_VictoryRoadGateSign::
 
 Route23_Text_VictoryRoadGateSign::
 	.string "VICTORY ROAD GATE -\n"
-	.string "Fragmon LEAGUE$"
+	.string "D{STAR}FRAG LEAGUE$"
 

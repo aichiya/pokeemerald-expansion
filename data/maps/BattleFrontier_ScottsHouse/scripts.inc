@@ -279,7 +279,7 @@ BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
 	.string "I think I remember you working on\n"
 	.string "a NC{EMOJI_IRRITATED}PDA as well.\p"
 	.string "Well, guess what?\p"
-	.string "You may run into wild Fragmon in\n"
+	.string "You may run into wild D{STAR}FRAG in\n"
 	.string "the BATTLE FRONTIER somewhere…\l"
 	.string "Fufufu!$"
 

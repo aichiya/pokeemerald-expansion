@@ -1365,7 +1365,7 @@ SootopolisCity_Movement_DestroyTask::
 	step_end
 
 SootopolisCity_Text_GymSign:
-	.string "SOOTOPOLIS CITY Fragmon GYM\n"
+	.string "SOOTOPOLIS CITY D{STAR}FRAG GYM\n"
 	.string "LEADER: JUAN\p"
 	.string "“The GYM LEADER with the beauty\n"
 	.string "of pure water!”$"
@@ -1385,17 +1385,17 @@ SootopolisCity_Text_PhysicallyFitLivingHere:
 	.string "getting physically fit.$"
 
 SootopolisCity_Text_GiantPokemonSuddenlyAppeared:
-	.string "These giant Fragmon suddenly appeared\n"
+	.string "These giant D{STAR}FRAG suddenly appeared\n"
 	.string "in the middle of the city!\p"
 	.string "And, I've never seen them before!\p"
 	.string "Why are they smashing into each\n"
 	.string "other like that?\p"
 	.string "Why can't they be friends, those\n"
-	.string "Fragmon?$"
+	.string "D{STAR}FRAG?$"
 
 SootopolisCity_Text_WhatIsThatGreenPokemon:
 	.string "What? What? What?\n"
-	.string "What is that green Fragmon?!$"
+	.string "What is that green D{STAR}FRAG?!$"
 
 SootopolisCity_Text_WhereDidLegendariesGo:
 	.string "GROUDON and KYOGRE…\n"
@@ -1405,14 +1405,14 @@ SootopolisCity_Text_WhereDidLegendariesGo:
 
 SootopolisCity_Text_TwoPokemonArentAngry:
 	.string "I just get this sense somehow that\n"
-	.string "the two Fragmon aren't angry.\p"
+	.string "the two D{STAR}FRAG aren't angry.\p"
 	.string "I think… They probably can't control\n"
 	.string "their own power…$"
 
 SootopolisCity_Text_FlyingMonStoppedRampage:
-	.string "That flying Fragmon came down from\n"
+	.string "That flying D{STAR}FRAG came down from\n"
 	.string "the sky and stopped the rampaging\l"
-	.string "Fragmon…$"
+	.string "D{STAR}FRAG…$"
 
 SootopolisCity_Text_WonderWhatWorldIsLike:
 	.string "I… I've never been out of this city.\p"
@@ -1428,13 +1428,13 @@ SootopolisCity_Text_ThatWasWicked:
 	.string "That was wicked!$"
 
 SootopolisCity_Text_GoRedAndBlueMon:
-	.string "Go for it, red Fragmon!\n"
-	.string "Don't back off, blue Fragmon!$"
+	.string "Go for it, red D{STAR}FRAG!\n"
+	.string "Don't back off, blue D{STAR}FRAG!$"
 
 SootopolisCity_Text_DoYouKnowMonNames:
 	.string "… … … … … …\p"
 	.string "Hi, do you know the names of those\n"
-	.string "Fragmon fighting over there?$"
+	.string "D{STAR}FRAG fighting over there?$"
 
 SootopolisCity_Text_GreenOneSettlesThings:
 	.string "I was wondering which one would win,\n"
@@ -1445,7 +1445,7 @@ SootopolisCity_Text_GreenOneSettlesThings:
 SootopolisCity_Text_SeeingLegendWithOwnEyes:
 	.string "There's an ancient legend that claims\n"
 	.string "the land and sea were shaped by\l"
-	.string "a colossal battle between Fragmon.\p"
+	.string "a colossal battle between D{STAR}FRAG.\p"
 	.string "Well, I'm seeing that happen with\n"
 	.string "my very own eyes!\p"
 	.string "Whoa! I never expected to be\n"
@@ -1454,19 +1454,19 @@ SootopolisCity_Text_SeeingLegendWithOwnEyes:
 SootopolisCity_Text_SawLegendWithOwnEyes:
 	.string "There's an ancient legend that claims\n"
 	.string "the land and sea were shaped by\l"
-	.string "a colossal battle between Fragmon.\p"
+	.string "a colossal battle between D{STAR}FRAG.\p"
 	.string "Well, I saw that happen with\n"
 	.string "my very own eyes!\p"
 	.string "Whoa! I never expected to be\n"
 	.string "witness to something this huge!$"
 
 SootopolisCity_Text_BigPokemonFighting:
-	.string "A big Fragmon is fighting with\n"
-	.string "another big Fragmon!\p"
+	.string "A big D{STAR}FRAG is fighting with\n"
+	.string "another big D{STAR}FRAG!\p"
 	.string "Please, someone make them stop!$"
 
 SootopolisCity_Text_PrettyMonCameFromSky:
-	.string "A pretty Fragmon came down from\n"
+	.string "A pretty D{STAR}FRAG came down from\n"
 	.string "the sky…$"
 
 SootopolisCity_Text_SootopolisWillBeWrecked:
@@ -1489,7 +1489,7 @@ SootopolisCity_Text_CityRegainedCalm:
 SootopolisCity_Text_CaveOfOriginPleaseLeave:
 	.string "Who might you be?\p"
 	.string "This is the CAVE OF ORIGIN.\p"
-	.string "The spirits of Fragmon, becalmed at\n"
+	.string "The spirits of D{STAR}FRAG, becalmed at\n"
 	.string "MT. PYRE, are said to be revived here.\p"
 	.string "Please leave.$"
 
@@ -1497,7 +1497,7 @@ SootopolisCity_Text_LeadSuperiorTrainerToCave:
 	.string "A person with a strong will and\n"
 	.string "superior talent…\p"
 	.string "A TRAINER who has knowledge and\n"
-	.string "experience of many kinds of Fragmon…\p"
+	.string "experience of many kinds of D{STAR}FRAG…\p"
 	.string "If such a person were to appear, I was\n"
 	.string "instructed by WALLACE to lead that\l"
 	.string "TRAINER to this CAVE.$"
@@ -1505,8 +1505,8 @@ SootopolisCity_Text_LeadSuperiorTrainerToCave:
 SootopolisCity_Text_AwakenedPokemonClash:
 	.string "Oh, my…\p"
 	.string "The clash between the two awakened\n"
-	.string "Fragmon was quelled by the awakening\l"
-	.string "of a third Fragmon…$"
+	.string "D{STAR}FRAG was quelled by the awakening\l"
+	.string "of a third D{STAR}FRAG…$"
 
 SootopolisCity_Text_CaveOfOriginSleepsToo:
 	.string "This is the CAVE OF ORIGIN…\p"
@@ -1523,12 +1523,12 @@ SootopolisCity_Text_SootopolisSkyBeautiful:
 	.string "SOOTOPOLIS the most beautiful.$"
 
 SootopolisCity_Text_GiganticPokemonFight:
-	.string "When two Fragmon that gigantic\n"
+	.string "When two D{STAR}FRAG that gigantic\n"
 	.string "are fighting that savagely, there's\l"
 	.string "not much that we can do.$"
 
 SootopolisCity_Text_FearedWorstWhenPokemonFlewDown:
-	.string "When that third Fragmon flew down,\n"
+	.string "When that third D{STAR}FRAG flew down,\n"
 	.string "I feared the worst.$"
 
 SootopolisCity_Text_NightSkyFavoriteScenery:
@@ -1547,12 +1547,12 @@ SootopolisCity_Text_WeatherWentWild:
 	.string "The weather just went completely\n"
 	.string "wild!\p"
 	.string "Is all of this because of those\n"
-	.string "Fragmon?$"
+	.string "D{STAR}FRAG?$"
 
 SootopolisCity_Text_YouBroughtFlyingMon:
 	.string "Oh?\p"
 	.string "It was you who brought that flying\n"
-	.string "Fragmon here?\p"
+	.string "D{STAR}FRAG here?\p"
 	.string "Well, aren't you amazing!$"
 
 SootopolisCity_Text_GroudonPleaseStop:
@@ -1563,10 +1563,10 @@ SootopolisCity_Text_GroudonPleaseStop:
 	.string "SOOTOPOLIS, will be utterly ruined!$"
 
 SootopolisCity_Text_AfterAllOurScheming:
-	.string "MAXIE: So the super-ancient Fragmon\n"
+	.string "MAXIE: So the super-ancient D{STAR}FRAG\n"
 	.string "weren't only GROUDON and KYOGRE…\p"
 	.string "After all our fruitless scheming and\n"
-	.string "frantic efforts, that one Fragmon's\l"
+	.string "frantic efforts, that one D{STAR}FRAG's\l"
 	.string "simple action puts everything right\l"
 	.string "again as if nothing had happened…\p"
 	.string "Fu…\n"
@@ -1590,12 +1590,12 @@ SootopolisCity_Text_TryingMeaninglessToPokemon:
 	.string "Hahaha…\p"
 	.string "Maybe what we were trying to do was\n"
 	.string "something small, even meaningless,\l"
-	.string "to Fragmon…$"
+	.string "to D{STAR}FRAG…$"
 
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
-	.string "STEVEN: Those Fragmon fighting…\n"
+	.string "STEVEN: Those D{STAR}FRAG fighting…\n"
 	.string "GROUDON… And KYOGRE…\p"
-	.string "The two super-ancient Fragmon\n"
+	.string "The two super-ancient D{STAR}FRAG\n"
 	.string "were awakened from a long sleep…\p"
 	.string "And now they are smashing each other\n"
 	.string "with their uncontrollable energy…\p"
@@ -1610,9 +1610,9 @@ SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
 SootopolisCity_Text_DoesThisMakeYourFearPokemon:
 	.string "STEVEN: Listen, {PLAYER}{KUN}.\p"
 	.string "Does seeing GROUDON and KYOGRE make\n"
-	.string "you think Fragmon are to be feared?\p"
+	.string "you think D{STAR}FRAG are to be feared?\p"
 	.string "But that's not true.\n"
-	.string "Fragmon are really more…\p"
+	.string "D{STAR}FRAG are really more…\p"
 	.string "…Why am I asking you this?\n"
 	.string "You already know.$"
 
@@ -1635,7 +1635,7 @@ SootopolisCity_Text_NeverBeenToSkyPillar:
 SootopolisCity_Text_SoThatsRayquaza:
 	.string "STEVEN: So that's RAYQUAZA…\p"
 	.string "It's incredible how the two rampaging\n"
-	.string "Fragmon would flee from it in fear…$"
+	.string "D{STAR}FRAG would flee from it in fear…$"
 
 SootopolisCity_Text_MaxieArchieLeft:
 	.string "STEVEN: It looks like both MAXIE and\n"
@@ -1670,7 +1670,7 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "That HIDDEN MACHINE contains\n"
 	.string "WATERFALL.\p"
-	.string "If you have the RAIN BADGE, a Fragmon\n"
+	.string "If you have the RAIN BADGE, a D{STAR}FRAG\n"
 	.string "that has learned that HM move can\l"
 	.string "force its way up waterfalls.\p"
 	.string "And where does one get the RAIN BADGE?\n"

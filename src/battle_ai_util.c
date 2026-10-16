@@ -1933,6 +1933,8 @@ u32 AI_GetSwitchinWeather(enum BattlerId battler)
     case ABILITY_SNOW_WARNING:
     case ABILITY_ULTRA_FORM_BEAUTY:
         return GetConfig(B_SNOW_WARNING) >= GEN_9 ? B_WEATHER_SNOW : B_WEATHER_HAIL;
+    case ABILITY_BAD_END_FANTASY:
+        return B_WEATHER_EX_SHADOW_SKY_NORMAL;
     default:
         return gBattleWeather;
     }

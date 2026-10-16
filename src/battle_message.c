@@ -964,6 +964,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_TRANSFORMINTOMUGEN]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is turning into Infinity Silhouette!"),
     [STRINGID_TRANSFORMINTOMISSINGPOWER]            = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is using Missing Power!"),
     [STRINGID_BRILIANTSTARENTERS]                   = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} is radiating a briliant aura!"),
+    [STRINGID_MENACINGSLIGHTCOVERING]               = COMPOUND_STRING("The menacing light keeps covering the sky!"),
+    [STRINGID_EXDENSESHADOWYAURAFILLED]             = COMPOUND_STRING("An extremely dense shadowy aura filled the sky!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1147,6 +1149,8 @@ const u16 gAbilityWeatherChangeStringId[] =
     [B_MSG_STARTED_DESOLATE_LAND]  = STRINGID_EXTREMELYHARSHSUNLIGHT,
     [B_MSG_STARTED_PRIMORDIAL_SEA] = STRINGID_HEAVYRAIN,
     [B_MSG_STARTED_STRONG_WINDS]   = STRINGID_MYSTERIOUSAIRCURRENT,
+    [B_MSG_STARTED_CHAOS_SKY]      = STRINGID_EXSHADOWYAURAFILLED,
+    [B_MSG_STARTED_BAD_END_FANTASY] = STRINGID_EXDENSESHADOWYAURAFILLED,
 };
 
 const u16 gWeatherEndsStringIds[B_MSG_WEATHER_END_COUNT] =

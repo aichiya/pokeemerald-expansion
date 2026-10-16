@@ -810,13 +810,13 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
     },
     [INFO_EX_SHADOW_SKY] =
     {
-        COMPOUND_STRING("Shadow Sky"),
-        COMPOUND_STRING("Boosts Shadow moves and damages non-Shadow Pokemon.")
+        COMPOUND_STRING("Bad End Sky"),
+        COMPOUND_STRING("Boosts Shadow-type moves, recover Shadow Pokemon by 1/16 HP, and damages non-Shadow Pokemon by 1/16 HP.")
     },
     [INFO_EX_SHADOW_SKY_DEEP] =
     {
-        COMPOUND_STRING("Menacing Shadow Sky"),
-        COMPOUND_STRING("Boosts Shadow moves and damages non-Shadow Pokemon.")
+        COMPOUND_STRING("Menacing Bad End Sky"),
+        COMPOUND_STRING("Boosts Shadow-type moves, recover Shadow Pokemon by 1/8 HP, and damages non-Shadow Pokemon by 1/8 HP.")
     },
 };
 
@@ -2463,8 +2463,8 @@ static enum BattleInfoLabels GetStatusEffectFromWeather(void)
     case BATTLE_WEATHER_SNOW:          return INFO_SNOW;
     case BATTLE_WEATHER_FOG:           return INFO_FOG;
     case BATTLE_WEATHER_STRONG_WINDS:  return INFO_STRONG_WINDS;
-    case BATTLE_WEATHER_EX_SHADOW_SKY:  return INFO_STRONG_WINDS;
-    case BATTLE_WEATHER_EX_SHADOW_SKY_DEEP:  return INFO_STRONG_WINDS;
+    case BATTLE_WEATHER_EX_SHADOW_SKY:  return INFO_EX_SHADOW_SKY;
+    case BATTLE_WEATHER_EX_SHADOW_SKY_DEEP:  return INFO_EX_SHADOW_SKY_DEEP;
     case BATTLE_WEATHER_COUNT:         return INFO_NONE;
     }
 

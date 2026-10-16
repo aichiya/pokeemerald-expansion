@@ -2053,6 +2053,10 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             if (weather & (B_WEATHER_ICY_ANY | B_WEATHER_PRIMAL_ANY))
                 ADJUST_SCORE(-8);
             break;
+        case BATTLE_WEATHER_EX_SHADOW_SKY:
+            if (weather & (B_WEATHER_EX_SHADOW_SKY_NORMAL | B_WEATHER_PRIMAL_ANY))
+                ADJUST_SCORE(-8);
+            break;
         default:
             break;
         }
@@ -6082,6 +6086,12 @@ static s32 AI_CalcAdditionalEffectScore(enum BattlerId battlerAtk, enum BattlerI
                 if (ShouldClearWeather(battlerAtk, B_WEATHER_HAIL))
                     ADJUST_SCORE(BAD_EFFECT);
                 break;
+            case MOVE_EFFECT_EX_SHADOW_SKY:
+                if (ShouldSetWeather(battlerAtk, B_WEATHER_EX_SHADOW_SKY))
+                    ADJUST_SCORE(DECENT_EFFECT);
+                if (ShouldClearWeather(battlerAtk, B_WEATHER_EX_SHADOW_SKY))
+                    ADJUST_SCORE(BAD_EFFECT);
+                break;
             case MOVE_EFFECT_MISTY_TERRAIN:
                 if (ShouldClearTerrain(battlerAtk, B_TERRAIN_MISTY))
                 {
@@ -6692,13 +6702,13 @@ static s32 AI_PowerfulStatus(enum BattlerId battlerAtk, enum BattlerId battlerDe
             if (IsWeatherActive(B_WEATHER_SANDSTORM | B_WEATHER_PRIMAL_ANY) == WEATHER_INACTIVE)
                 ADJUST_SCORE(POWERFUL_STATUS_MOVE);
             break;
-        case BATTLE_WEATHER_EX_SHADOW_SKY:
-            if (IsWeatherActive(B_WEATHER_EX_SHADOW_SKY | B_WEATHER_PRIMAL_ANY) == WEATHER_INACTIVE)
-                ADJUST_SCORE(POWERFUL_STATUS_MOVE);
-            break;
         case BATTLE_WEATHER_HAIL:
         case BATTLE_WEATHER_SNOW:
             if (IsWeatherActive(B_WEATHER_ICY_ANY | B_WEATHER_PRIMAL_ANY) == WEATHER_INACTIVE)
+                ADJUST_SCORE(POWERFUL_STATUS_MOVE);
+            break;
+        case BATTLE_WEATHER_EX_SHADOW_SKY:
+            if (IsWeatherActive(B_WEATHER_EX_SHADOW_SKY_NORMAL | B_WEATHER_PRIMAL_ANY) == WEATHER_INACTIVE)
                 ADJUST_SCORE(POWERFUL_STATUS_MOVE);
             break;
         default:

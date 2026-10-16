@@ -1350,6 +1350,7 @@ BattleScript_FailOnPrimalWeather::
 	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_SUN_PRIMAL, BattleScript_ExtremelyHarshSunlightWasNotLessened
 	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_RAIN_PRIMAL, BattleScript_NoReliefFromHeavyRain
 	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_STRONG_WINDS, BattleScript_MysteriousAirCurrentBlowsOn
+	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_EX_SHADOW_SKY_DEEP, BattleScript_TheyMenacingSky
 	return
 
 BattleScript_ExtremelyHarshSunlightWasNotLessened:
@@ -1370,11 +1371,18 @@ BattleScript_MysteriousAirCurrentBlowsOn:
 	waitmessage B_WAIT_TIME_LONG
 	return
 
+BattleScript_TheyMenacingSky:
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_MENACINGSLIGHTCOVERING
+	waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_BlockedByPrimalWeather::
 	call BattleScript_AbilityPopUp
 	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_SUN_PRIMAL, BattleScript_ExtremelyHarshSunlightWasNotLessened
 	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_RAIN_PRIMAL, BattleScript_NoReliefFromHeavyRain
 	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_STRONG_WINDS, BattleScript_MysteriousAirCurrentBlowsOn
+	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_EX_SHADOW_SKY_DEEP, BattleScript_TheyMenacingSky
 	return
 
 BattleScript_BlockedByOverworldWeather::

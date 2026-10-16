@@ -345,10 +345,10 @@ static void HandleSetEffectRemoveArgType(struct BattleCalcValues *cv, struct Set
 
     switch (type)
     {
-    case TYPE_FIRE: // Burn Up
+    case TYPE_NEW_FIRE: // Burn Up
         gBattlescriptCurrInstr = BattleScript_RemoveFireType;
         break;
-    case TYPE_ELECTRIC: // Double Shot
+    case TYPE_NEW_ELECTRIC: // Double Shot
         gBattlescriptCurrInstr = BattleScript_RemoveElectricType;
         break;
     default:
@@ -403,7 +403,7 @@ static void HandleSetEffectNightmare(struct BattleCalcValues *cv, struct SetEffe
 
 static void HandleSetEffectCurse(struct BattleCalcValues *cv, struct SetEffect *se)
 {
-    if (!IS_BATTLER_OF_TYPE(cv->battlerAtk, TYPE_GHOST))
+    if (!IS_BATTLER_OF_TYPE(cv->battlerAtk, TYPE_NEW_NETHER))
         return;
 
     if (gBattleMons[se->effectBattler].volatiles.cursed)
@@ -835,7 +835,7 @@ static void HandleSetEffectPsychicNoise(struct BattleCalcValues *cv, struct SetE
 static void HandleSetEffectTeraBlast(struct BattleCalcValues *cv, struct SetEffect *se)
 {
     if (GetActiveGimmick(se->effectBattler) == GIMMICK_TERA
-     && GetBattlerTeraType(se->effectBattler) == TYPE_STELLAR
+     && GetBattlerTeraType(se->effectBattler) == TYPE_NEW_STELLAR
      && !NoAliveMonsForEitherParty())
     {
         SetStatChange(se->effectBattler, STAT_ATK, -1);
@@ -907,7 +907,7 @@ static void HandleSetEffectLeechSeed(struct BattleCalcValues *cv, struct SetEffe
     {
         SetEffectFail(BattleScript_ButItFailedRet, cv->isStatusMove);
     }
-    else if (IS_BATTLER_OF_TYPE(se->effectBattler, TYPE_GRASS))
+    else if (IS_BATTLER_OF_TYPE(se->effectBattler, TYPE_NEW_NATURE))
     {
         SetEffectFail(BattleScript_ItDoesntAffectEffBattler, cv->isStatusMove);
     }
@@ -1111,7 +1111,7 @@ static void HandleSetEffectFling(struct BattleCalcValues *cv, struct SetEffect *
             SetMoveEffect(cv, &flingEffect);
             break;
         case HOLD_EFFECT_TYPE_POWER:
-            if (GetItemSecondaryId(item) == TYPE_POISON)
+            if (GetItemSecondaryId(item) == TYPE_NEW_MIASMA)
             {
                 flingEffect.moveEffect = MOVE_EFFECT_POISON;
                 SetMoveEffect(cv, &flingEffect);
@@ -1717,7 +1717,7 @@ static bool32 ShouldGroundAirborneBattler(enum BattlerId battler, enum Ability a
 {
     enum SemiInvulnerableState state = gBattleMons[battler].volatiles.semiInvulnerable;
 
-    if (IS_BATTLER_OF_TYPE(battler, TYPE_FLYING)
+    if (IS_BATTLER_OF_TYPE(battler, TYPE_NEW_FLYING)
      || ability == ABILITY_LEVITATE
      || ability == ABILITY_EELEVATE
      || state == STATE_ON_AIR
@@ -2322,7 +2322,7 @@ static void HandleSetEffectMeanLook(struct BattleCalcValues *cv, struct SetEffec
 
     bool32 alreadyTrapped = gBattleMons[se->effectBattler].volatiles.escapePrevention;
     bool32 canGhostsEscape = (GetConfig(B_GHOSTS_ESCAPE) >= GEN_6
-                           && IS_BATTLER_OF_TYPE(se->effectBattler, TYPE_GHOST));
+                           && IS_BATTLER_OF_TYPE(se->effectBattler, TYPE_NEW_NETHER));
 
     if (alreadyTrapped || canGhostsEscape)
     {
@@ -2487,7 +2487,7 @@ static enum Type GetConversionType(enum BattlerId battler, enum Move move)
     enum Type type = GetMoveType(move);
 
     if (type == TYPE_MYSTERY)
-        type = IS_BATTLER_OF_TYPE(battler, TYPE_GHOST) ? TYPE_GHOST : TYPE_NORMAL;
+        type = IS_BATTLER_OF_TYPE(battler, TYPE_NEW_NETHER) ? TYPE_NEW_NETHER : TYPE_NEW_ILLUSION;
 
     return type;
 }
@@ -2603,7 +2603,7 @@ static void HandleSetEffectConversion2(struct BattleCalcValues *cv, struct SetEf
     {
         moveToCheck = gLastLandedMoves[cv->battlerAtk];
         if (GetMoveEffect(moveToCheck) == EFFECT_STRUGGLE)
-            typeToCheck = TYPE_NORMAL;
+            typeToCheck = TYPE_NEW_ILLUSION;
         else
             typeToCheck = gLastHitByType[cv->battlerAtk];
     }
@@ -2619,8 +2619,8 @@ static void HandleSetEffectConversion2(struct BattleCalcValues *cv, struct SetEf
      || moveToCheck == MOVE_UNAVAILABLE
      || GetActiveGimmick(cv->battlerAtk) == GIMMICK_TERA
      || typeToCheck == TYPE_NONE
-     || typeToCheck == TYPE_STELLAR
-     || typeToCheck == TYPE_MYSTERY
+     || typeToCheck == TYPE_NEW_STELLAR
+     || typeToCheck == TYPE_NEW_MYSTERY
      || resistTypes == 0)
     {
         SetEffectFail(BattleScript_ButItFailedRet, cv->isStatusMove);
@@ -3634,7 +3634,7 @@ static void HandleSetEffectReflectType(struct BattleCalcValues *cv, struct SetEf
 
     bool32 isTeraActive = GetActiveGimmick(cv->battlerAtk) == GIMMICK_TERA;
 
-    bool32 typelessBattler = targetTypes[0] == TYPE_MYSTERY && targetTypes[1] == TYPE_MYSTERY && targetTypes[2] == TYPE_MYSTERY;
+    bool32 typelessBattler = targetTypes[0] == TYPE_NEW_MYSTERY && targetTypes[1] == TYPE_NEW_MYSTERY && targetTypes[2] == TYPE_NEW_MYSTERY;
 
     if (speciesTypeImmutable || isTeraActive || typelessBattler)
     {
@@ -3645,15 +3645,15 @@ static void HandleSetEffectReflectType(struct BattleCalcValues *cv, struct SetEf
     if (cv->onlyChecking)
         return;
 
-    if (targetTypes[0] == TYPE_MYSTERY && targetTypes[1] == TYPE_MYSTERY && targetTypes[2] != TYPE_MYSTERY)
+    if (targetTypes[0] == TYPE_NEW_MYSTERY && targetTypes[1] == TYPE_NEW_MYSTERY && targetTypes[2] != TYPE_NEW_MYSTERY)
     {
-        SetBattlerTypes(cv->battlerAtk, TYPE_NORMAL, TYPE_NORMAL, targetTypes[2]);
+        SetBattlerTypes(cv->battlerAtk, TYPE_NEW_ILLUSION, TYPE_NEW_ILLUSION, targetTypes[2]);
     }
-    else if (targetTypes[0] == TYPE_MYSTERY && targetTypes[1] != TYPE_MYSTERY)
+    else if (targetTypes[0] == TYPE_NEW_MYSTERY && targetTypes[1] != TYPE_NEW_MYSTERY)
     {
         SetBattlerTypes(cv->battlerAtk, targetTypes[1], targetTypes[1], targetTypes[2]);
     }
-    else if (targetTypes[0] != TYPE_MYSTERY && targetTypes[1] == TYPE_MYSTERY)
+    else if (targetTypes[0] != TYPE_NEW_MYSTERY && targetTypes[1] == TYPE_NEW_MYSTERY)
     {
         SetBattlerTypes(cv->battlerAtk, targetTypes[0], targetTypes[0], targetTypes[2]);
     }
@@ -4229,7 +4229,7 @@ static void HandleSetEffectDragonCheer(struct BattleCalcValues *cv, struct SetEf
     }
     else if (!cv->onlyChecking)
     {
-        gBattleMons[se->effectBattler].volatiles.criticalHitBoost = IS_BATTLER_OF_TYPE(se->effectBattler, TYPE_DRAGON)
+        gBattleMons[se->effectBattler].volatiles.criticalHitBoost = IS_BATTLER_OF_TYPE(se->effectBattler, TYPE_NEW_BEAST)
                                                                   ? CRIT_BOOST_TWO_STAGES
                                                                   : CRIT_BOOST_ONE_STAGE;
         PrepareStringBattleWithWait(STRINGID_PKMNGETTINGPUMPED, se->effectBattler);
@@ -4600,6 +4600,7 @@ static inline bool32 IgnoreTargetingForMoveEffect(enum MoveEffect moveEffect) //
     case MOVE_EFFECT_RAIN:
     case MOVE_EFFECT_SANDSTORM:
     case MOVE_EFFECT_HAIL:
+    case MOVE_EFFECT_EX_SHADOW_SKY:
     case MOVE_EFFECT_MISTY_TERRAIN:
     case MOVE_EFFECT_GRASSY_TERRAIN:
     case MOVE_EFFECT_ELECTRIC_TERRAIN:
@@ -4684,9 +4685,9 @@ static struct TypeBasedHalverInfo GetTypeBasedHalverInfo(enum Type type)
 {
     switch(type)
     {
-        case TYPE_FIRE:
+        case TYPE_NEW_FIRE:
             return TYPE_HALVER(STATUS_FIELD_WATERSPORT, VOLATILE_WATER_SPORT, STRINGID_FIREWEAKENED);
-        case TYPE_ELECTRIC:
+        case TYPE_NEW_ELECTRIC:
             return TYPE_HALVER(STATUS_FIELD_MUDSPORT, VOLATILE_MUD_SPORT, STRINGID_ELECTRICITYWEAKENED);
         default:
             errorf("Type (%s) does not have a halver", gTypesInfo[type].name);

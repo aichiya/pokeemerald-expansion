@@ -5788,6 +5788,8 @@ void AnimTask_GetWeather(u8 taskId)
         gBattleAnimArgs[ARG_RET_ID] = ANIM_WEATHER_SNOW;
     else if (weather & B_WEATHER_FOG)
         gBattleAnimArgs[ARG_RET_ID] = ANIM_WEATHER_FOG;
+    else if (weather & B_WEATHER_EX_SHADOW_SKY_NORMAL)
+        gBattleAnimArgs[ARG_RET_ID] = ANIM_WEATHER_SHADOW_SKY;
 
     DestroyAnimVisualTask(taskId);
 }

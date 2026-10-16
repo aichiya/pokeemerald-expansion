@@ -294,18 +294,24 @@ const struct BattleWeatherInfo gBattleWeatherInfo[BATTLE_WEATHER_COUNT] = {
     {
         .flag = B_WEATHER_EX_SHADOW_SKY_NORMAL,
         .rock = HOLD_EFFECT_EX_SHADOW_ROCK,
+        .abilityStartMessage = B_MSG_STARTED_CHAOS_SKY,
+        .moveStartMessage = B_MSG_STARTED_EX_SHADOW_SKY,
         .endMessage = B_MSG_WEATHER_END_EX_SHADOW_SKY,
         .continuesMessage = B_MSG_WEATHER_TURN_EX_SHADOW_SKY,
         .animation = B_ANIM_EX_SHADOW_SKY_CONTINUES,
+        .type = BATTLE_WEATHER_EX_SHADOW_SKY,
     },
 
     [BATTLE_WEATHER_EX_SHADOW_SKY_DEEP] =
     {
         .flag = B_WEATHER_EX_SHADOW_SKY_DEEP,
         .rock = HOLD_EFFECT_EX_SHADOW_ROCK,
+        .abilityStartMessage = B_MSG_STARTED_BAD_END_FANTASY,
+        .moveStartMessage = B_MSG_STARTED_EX_SHADOW_SKY,
         .endMessage = B_MSG_WEATHER_END_EX_SHADOW_SKY,
         .continuesMessage = B_MSG_WEATHER_TURN_EX_SHADOW_SKY,
         .animation = B_ANIM_EX_SHADOW_SKY_CONTINUES,
+        .type = BATTLE_WEATHER_EX_SHADOW_SKY_DEEP,
     },
 };
 
@@ -3647,6 +3653,10 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_SUN, gLastUsedAbility))
                 effect++;
             break;
+        case ABILITY_CHAOS_SKY:
+            if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_EX_SHADOW_SKY, gLastUsedAbility))
+                effect++;
+            break;
         case ABILITY_SNOW_WARNING:
         case ABILITY_ULTRA_FORM_BEAUTY:
             if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, GetConfig(B_SNOW_WARNING) >= GEN_9 ? BATTLE_WEATHER_SNOW : BATTLE_WEATHER_HAIL, gLastUsedAbility))
@@ -4368,6 +4378,10 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             break;
         case ABILITY_DELTA_STREAM:
             if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_STRONG_WINDS, gLastUsedAbility))
+                effect++;
+            break;
+        case ABILITY_BAD_END_FANTASY:
+            if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_EX_SHADOW_SKY_DEEP, gLastUsedAbility))
                 effect++;
             break;
         case ABILITY_VESSEL_OF_RUIN:
@@ -10564,7 +10578,8 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
       || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_HALF
       || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_RECOIL
       || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP) 
-      && gBattleMons[ctx->battlerDef].isShadow == FALSE) 
+      && gBattleMons[ctx->battlerDef].isShadow == FALSE
+      && ctx->abilities[ctx->battlerDef] != ABILITY_MULTITYPE_LEGEND) 
     {
         mod = UQ_4_12(2.0);
     }

@@ -8716,7 +8716,8 @@ static void TryClearPrimalWeather(void)
 
         if (((ability == ABILITY_DESOLATE_LAND && gBattleWeather & B_WEATHER_SUN_PRIMAL)
           || (ability == ABILITY_PRIMORDIAL_SEA && gBattleWeather & B_WEATHER_RAIN_PRIMAL)
-          || (ability == ABILITY_DELTA_STREAM && gBattleWeather & B_WEATHER_STRONG_WINDS)))
+          || (ability == ABILITY_DELTA_STREAM && gBattleWeather & B_WEATHER_STRONG_WINDS)
+          || (ability == ABILITY_BAD_END_FANTASY && gBattleWeather & B_WEATHER_EX_SHADOW_SKY_DEEP)))
             return; // Keep primal weather
     }
 
@@ -8733,6 +8734,11 @@ static void TryClearPrimalWeather(void)
     else if (gBattleWeather & B_WEATHER_STRONG_WINDS)
     {
         gBattleWeather &= ~B_WEATHER_STRONG_WINDS;
+        PrepareStringBattleWithWait(STRINGID_STRONGWINDSDISSIPATED, gBattlerAttacker);
+    }
+    else if (gBattleWeather & B_WEATHER_STRONG_WINDS)
+    {
+        gBattleWeather &= ~B_WEATHER_EX_SHADOW_SKY_DEEP;
         PrepareStringBattleWithWait(STRINGID_STRONGWINDSDISSIPATED, gBattlerAttacker);
     }
 

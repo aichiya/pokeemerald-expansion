@@ -3718,4 +3718,25 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Uses defense stats for attacks."),
         .aiRating = 8,
     },
+
+    [ABILITY_MIRROR_IMAGE] =
+    {
+        .name = _("Mirror Image"),
+        .description = COMPOUND_STRING("Transforms into a Fragmon."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_CHAOS_SKY] =
+    {
+        .name = _("Chaos Sky"),
+        .description = COMPOUND_STRING("Sets Bad End Sky when entering battle."),
+        .aiRating = 8,
+    },
+
+    [ABILITY_BAD_END_FANTASY] =
+    {
+        .name = _("Bad End Fantasy"),
+        .description = COMPOUND_STRING("Sets Menacing Sky when entering battle."),
+        .aiRating = 8,
+    },
 };

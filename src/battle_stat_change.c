@@ -222,6 +222,11 @@ bool32 CanAnyStatChange(struct BattleCalcValues *cv, struct StatChange *st)
                 canAnyStatChange = TRUE;
                 continue;
             }
+            if (cv->moveEffect == EFFECT_ULTRA_INSTINCT && !CompareStat(cv->battlerDef, st->stat, MAX_STAT_STAGE, CMP_EQUAL, ABILITY_NONE))
+            {
+                canAnyStatChange = TRUE;
+                continue;
+            }
 
             if (st->stage < 0)
             {
@@ -338,7 +343,7 @@ static enum StatChangeResult DecreaseStat(struct BattleCalcValues *cv, struct St
         if (st->onlyChecking)
             return STAT_CHANGE_DIDNT_WORK;
 
-        if (cv->moveEffect == EFFECT_BELLY_DRUM)
+        if (cv->moveEffect == EFFECT_BELLY_DRUM || cv->moveEffect == EFFECT_ULTRA_INSTINCT)
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STAT_CHANGED_BELLY_DRUM;
         else
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STAT_WONT_CHANGE;
@@ -512,7 +517,7 @@ static void StatChanged(struct BattleCalcValues *cv, struct StatChange *st, bool
         }
     }
 
-    if (cv->moveEffect == EFFECT_BELLY_DRUM)
+    if (cv->moveEffect == EFFECT_BELLY_DRUM || cv->moveEffect == EFFECT_ULTRA_INSTINCT)
     {
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STAT_CHANGED_BELLY_DRUM;
     }

@@ -827,6 +827,9 @@ enum AbsorbDrainStringID
 // gLeechSeedStringIds
 enum LeechSeedStringID
 {
+    B_MSG_LEECH_SEED_SET,
+    B_MSG_LEECH_SEED_MISS,
+    B_MSG_LEECH_SEED_FAIL,
     B_MSG_LEECH_SEED_DRAIN,
     B_MSG_LEECH_SEED_OOZE,
 };
@@ -843,6 +846,18 @@ enum MoveWeatherChangeStringID
     B_MSG_STARTED_SNOW,
     B_MSG_STARTED_FOG,
     B_MSG_STARTED_EX_SHADOW_SKY,
+};
+
+// gReflectLightScreenSafeguardStringIds
+enum ReflectLightScreenSafeguardStringID
+{
+    B_MSG_SIDE_STATUS_FAILED,
+    B_MSG_SET_REFLECT_SINGLE,
+    B_MSG_SET_REFLECT_DOUBLE,
+    B_MSG_SET_LIGHTSCREEN_SINGLE,
+    B_MSG_SET_LIGHTSCREEN_DOUBLE,
+    B_MSG_SET_SAFEGUARD,
+    B_MSG_SET_AURORA_VEIL,
 };
 
 // gAbilityWeatherChangeStringId

@@ -707,6 +707,8 @@ extern const u8 BattleScript_LifeForceActivates[];
 extern const u8 BattleScript_DarknessSurgeActivates[];
 extern const u8 BattleScript_DarknessSurgeActivatesNoPopup[];
 extern const u8 BattleScript_EffectUehehehehehe[];
+extern const u8 BattleScript_EffectUeheheheheheFoe[];
+extern const u8 BattleScript_EffectUeheheheheheAlly[];
 extern const u8 BattleScript_EffectGrimoireCall[];
 extern const u8 BattleScript_TsubameGaeshiActivates[];
 extern const u8 BattleScript_MiasmaSurgeActivates[];
@@ -726,6 +728,7 @@ extern const u8 BattleScript_StealStatsTreasureSniper[];
 extern const u8 BattleScript_BattlerFormChangeBeatUpCalling[];
 extern const u8 BattleScript_BattlerFormChangeBeatUpCallingNoPopup[];
 extern const u8 BattleScript_BattlerFormChangeBeatUpCallingAfterAnimation[];
-
+extern const u8 BattleScript_MoveEffectSafeguard[];
+extern const u8 BattleScript_MoveEffectMist[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

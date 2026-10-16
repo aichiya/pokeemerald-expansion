@@ -59,6 +59,7 @@ static bool32 IsStatChangeMove(enum BattlerId battlerAtk, enum Move move);
 static bool32 TryBellyDrum(enum BattlerId battler);
 static bool32 TryHalfHp(enum BattlerId battler);
 static bool32 CutThirdOfHp(enum BattlerId battler);
+static bool32 TryUltraInstinct(enum BattlerId battler);
 
 // ==============
 // Attackcanceler
@@ -6916,6 +6917,18 @@ static enum MoveResult StatChangeBeforeChange(struct BattleCalcValues *cv)
             return MOVE_RESULT_FAILURE;
         }
         break;
+    case EFFECT_ULTRA_INSTINCT:
+        if (WillAnyStatChange() && TryUltraInstinct(cv->battlerAtk))
+        {
+            BattleScriptCall(BattleScript_PlayMoveAnim);
+            return MOVE_RESULT_RUN_SCRIPT_INCREMENT;
+        }
+        else
+        {
+            gBattlescriptCurrInstr = BattleScript_StatChangeFailed;
+            return MOVE_RESULT_FAILURE;
+        }
+        break;
     }
 
     #define MOVE_RESULT_HANDLE_FAILURE (MOVE_RESULT_MISSED | MOVE_RESULT_MIRROR_ARMOR_PENDING | MOVE_RESULT_ATTEMPT_STAT_CHANGE | MOVE_RESULT_STAT_CHANGE_PREVENTED)
@@ -8274,6 +8287,24 @@ static bool32 CutThirdOfHp(enum BattlerId battler)
     if (gBattleMons[battler].hp > thirdHp)
     {
         SetPassiveDamageAmount(battler, thirdHp);
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+static bool32 TryUltraInstinct(enum BattlerId battler)
+{
+    if (CompareStat(battler, STAT_ATK, MAX_STAT_STAGE, CMP_EQUAL, ABILITY_NONE))
+        return FALSE;
+
+    u32 ThresholdHp = GetNonDynamaxMaxHP(battler) / 3;
+
+    if (ThresholdHp == 0)
+        ThresholdHp = 1;
+
+    if (gBattleMons[battler].hp <= ThresholdHp)
+    {
         return TRUE;
     }
 

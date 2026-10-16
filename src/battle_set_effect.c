@@ -989,24 +989,6 @@ static void HandleSetEffectLightScreen(struct BattleCalcValues *cv, struct SetEf
     }
 }
 
-static void HandleSetEffectSafeguard(struct BattleCalcValues *cv, struct SetEffect *se)
-{
-    if (TrySetSafeguard(se->effectBattler))
-    {
-        BattleScriptPush(se->script);
-        gBattlescriptCurrInstr = BattleScript_MoveEffectSafeguard;
-    }
-}
-
-static void HandleSetEffectMist(struct BattleCalcValues *cv, struct SetEffect *se)
-{
-    if (TrySetMist(se->effectBattler))
-    {
-        BattleScriptPush(se->script);
-        gBattlescriptCurrInstr = BattleScript_MoveEffectMist;
-    }
-}
-
 static void HandleSetEffectSaltCure(struct BattleCalcValues *cv, struct SetEffect *se)
 {
     if (!gBattleMons[se->effectBattler].volatiles.saltCure)
@@ -1448,7 +1430,6 @@ static void HandleSetEffectWeather(struct BattleCalcValues *cv, struct SetEffect
     {
     case MOVE_EFFECT_EX_SHADOW_SKY:
         weather = BATTLE_WEATHER_EX_SHADOW_SKY;
-        msg = B_MSG_STARTED_EX_SHADOW_SKY;
         break;
     case MOVE_EFFECT_SUN:
         weather = BATTLE_WEATHER_SUN;
@@ -1597,7 +1578,7 @@ static void HandleSetEffectInfatuate(struct BattleCalcValues *cv, struct SetEffe
 static void HandleSetEffectInfatuateSide(struct BattleCalcValues *cv, struct SetEffect *se)
 {
     BattleScriptPush(se->script);
-    gBattlescriptCurrInstr = BattleScript_EffectInfatuateSide;
+    gBattlescriptCurrInstr = BattleScript_EffectInfatuate;
 }
 
 static void HandleSetEffectRecycle(struct BattleCalcValues *cv, struct SetEffect *se)
@@ -3800,7 +3781,8 @@ static void HandleSetEffectRoar(struct BattleCalcValues *cv, struct SetEffect *s
     {
         SetEffectFail(BattleScript_HitSwitchTargetDynamaxed, cv->isStatusMove);
     }
-    else if (cv->abilities[se->effectBattler] == ABILITY_SUCTION_CUPS)
+    else if (cv->abilities[se->effectBattler] == ABILITY_SUCTION_CUPS
+     || cv->abilities[se->effectBattler] == ABILITY_GATE_KEEPER)
     {
         gBattlerAbility = se->effectBattler;
         SetEffectFail(BattleScript_AbilityPreventsPhasingOut, cv->isStatusMove);
@@ -3936,6 +3918,7 @@ static void HandleSetEffectOctolock(struct BattleCalcValues *cv, struct SetEffec
 static void HandleSetEffectCourtChange(struct BattleCalcValues *cv, struct SetEffect *se)
 {
     if (cv->onlyChecking) return;
+    if (IsAbilityOnField(ABILITY_WORLD_END_GARDEN)) return;
 
     struct SideTimer *sideTimerPlayer = &gSideTimers[B_SIDE_PLAYER];
     struct SideTimer *sideTimerOpp = &gSideTimers[B_SIDE_OPPONENT];
@@ -3996,6 +3979,15 @@ static void HandleSetEffectCorrosiveGas(struct BattleCalcValues *cv, struct SetE
         if (cv->onlyChecking) return;
 
         gLastUsedAbility = ABILITY_STICKY_HOLD;
+        gBattlerAbility = se->effectBattler;
+        RecordAbilityBattle(se->effectBattler, gLastUsedAbility);
+        BattleScriptPushAndSet(se->script, BattleScript_StickyHoldActivatesRet);
+    }
+    else if (cv->abilities[se->effectBattler] == ABILITY_COLLECTOR)
+    {
+        if (cv->onlyChecking) return;
+
+        gLastUsedAbility = ABILITY_COLLECTOR;
         gBattlerAbility = se->effectBattler;
         RecordAbilityBattle(se->effectBattler, gLastUsedAbility);
         BattleScriptPushAndSet(se->script, BattleScript_StickyHoldActivatesRet);
@@ -4283,6 +4275,84 @@ static void HandleSetEffectDragonCheer(struct BattleCalcValues *cv, struct SetEf
     }
 }
 
+static void HandleSetEffectRideTransform(struct BattleCalcValues *cv, struct SetEffect *se)
+{
+//        TryTransformBattler(cv->battlerAtk, se->effectBattler);
+    BattleScriptPushAndSet(se->script, BattleScript_EffectATrance);
+}
+
+static void HandleSetEffectFluffication(struct BattleCalcValues *cv, struct SetEffect *se)
+{
+    if (!CanTransformBattler(cv->battlerDef, se->effectBattler))
+    {
+        SetEffectFail(BattleScript_ButItFailedRet, cv->isStatusMove);
+    }
+    else if (!cv->onlyChecking)
+    {
+//        TryTransformBattler(cv->battlerDef, se->effectBattler);
+        BattleScriptPushAndSet(se->script, BattleScript_EffectATrance);
+    }
+}
+
+static void HandleSetEffectWipesOutFoesParty(struct BattleCalcValues *cv, struct SetEffect *se)
+{
+    BattleScriptPushAndSet(se->script, BattleScript_EffectWipesOutFoesParty);
+}
+
+static void HandleSetEffectUehehehehehe(struct BattleCalcValues *cv, struct SetEffect *se)
+{
+    enum BattlerId partner = GetPartnerBattler(cv->battlerDef);
+    enum BattlerId aromaVeilBattler = B_BATTLER_0;
+
+    if (cv->battlerDef == partner)
+    {
+        SetStatChange(cv->battlerDef, STAT_ATK, 1);
+        SetStatChange(cv->battlerDef, STAT_DEF, 1);
+        SetStatChange(cv->battlerDef, STAT_SPATK, 1);
+        SetStatChange(cv->battlerDef, STAT_SPDEF, 1);
+        SetStatChange(cv->battlerDef, STAT_SPEED, 1);
+        BattleScriptPushAndSet(se->script, BattleScript_MoveEffectStatChange);
+    }
+    else
+    {
+        if (IsAbilityOnSideWithArr(se->effectBattler, ABILITY_AROMA_VEIL, cv->abilities, &aromaVeilBattler))
+        {
+            SetEffectFail(BattleScript_AromaVeilProtectsRet);
+            gBattlerAbility = aromaVeilBattler;
+        }
+        else if (gBattleMons[se->effectBattler].volatiles.infatuation || !AreBattlersOfOppositeGender(cv->battlerAtk, se->effectBattler))
+        {
+            SetEffectFail(BattleScript_ButItFailedRet, cv->isStatusMove);
+        }
+        else if (cv->abilities[se->effectBattler] == ABILITY_OBLIVIOUS)
+        {
+            SetEffectFailAndCheckReturn;
+            gBattlerAbility = se->effectBattler;
+            gLastUsedAbility = ABILITY_OBLIVIOUS;
+            BattleScriptPushAndSet(se->script, BattleScript_NotAffectedAbilityPopUp);
+            RecordAbilityBattle(se->effectBattler, ABILITY_OBLIVIOUS);
+        }
+        else if (!cv->onlyChecking)
+        {
+            gBattleMons[se->effectBattler].volatiles.infatuation = INFATUATED_WITH(cv->battlerAtk);
+            BattleScriptPushAndSet(se->script, BattleScript_MoveEffectAttract);
+        }
+    }
+}
+
+static void HandleSetEffectGraceOfDream(struct BattleCalcValues *cv, struct SetEffect *se)
+{
+    TryEffectVolatile(cv, se, VOLATILE_GRACE_OF_DREAM, TRUE, STRINGID_PKMNSURROUNDEDWITHVEILOFWATER);
+}
+
+static void HandleSetEffectGaiaForce(struct BattleCalcValues *cv, struct SetEffect *se)
+{
+    if (!IS_BATTLER_OF_TYPE(cv->battlerAtk, TYPE_NEW_DARK))
+        return;
+    else
+        BattleScriptPushAndSet(se->script, BattleScript_EffectGaiaForce);
+}
+
 static void (*const sSetEffectHandlers[])(struct BattleCalcValues *cv, struct SetEffect *se) =
 {
     [MOVE_EFFECT_NONE] = HandleSetEffectNone,
@@ -4336,8 +4406,6 @@ static void (*const sSetEffectHandlers[])(struct BattleCalcValues *cv, struct Se
     [MOVE_EFFECT_PROTECT] = HandleSetEffectProtect,
     [MOVE_EFFECT_REFLECT] = HandleSetEffectReflect,
     [MOVE_EFFECT_LIGHT_SCREEN] = HandleSetEffectLightScreen,
-    [MOVE_EFFECT_SAFEGUARD] = HandleSetEffectSafeguard,
-    [MOVE_EFFECT_MIST] = HandleSetEffectMist,
     [MOVE_EFFECT_SALT_CURE] = HandleSetEffectSaltCure,
     [MOVE_EFFECT_EERIE_SPELL] = HandleSetEffectEerieSpell,
     [MOVE_EFFECT_FLING] = HandleSetEffectFling,
@@ -4434,6 +4502,12 @@ static void (*const sSetEffectHandlers[])(struct BattleCalcValues *cv, struct Se
     [MOVE_EFFECT_HEAL_PULSE] = HandleSetEffectHealPulse,
     [MOVE_EFFECT_POLLEN_PUFF] = HandleSetEffectPollenPuff,
     [MOVE_EFFECT_FLORAL_HEALING] = HandleSetEffectHealPulse,
+    [MOVE_EFFECT_RIDE_TRANSFORM] = HandleSetEffectRideTransform, // Redone
+    [MOVE_EFFECT_FLUFFICATION] = HandleSetEffectFluffication, // Redone
+    [MOVE_EFFECT_WIPES_OUT_FOES_PARTY] = HandleSetEffectWipesOutFoesParty, // Redone
+    [MOVE_EFFECT_UEHEHEHEHEHE] = HandleSetEffectUehehehehehe, // Redone
+    [MOVE_EFFECT_GAIA_FORCE] = HandleSetEffectGaiaForce, // Redone
+    [MOVE_EFFECT_GRACE_OF_DREAM] = HandleSetEffectGraceOfDream, // Redone
     [MOVE_EFFECT_SUN] = HandleSetEffectWeather,
     [MOVE_EFFECT_RAIN] = HandleSetEffectWeather,
     [MOVE_EFFECT_SANDSTORM] = HandleSetEffectWeather,

@@ -385,15 +385,8 @@ BattleScript_SaltCureExtraDamage::
 	tryactivateitem BS_ATTACKER, ACTIVATION_ON_HP_THRESHOLD
 	return
 
-BattleScript_EffectCorrosiveGas::
-	attackcanceler
-	jumpifcantloseitem BattleScript_CorrosiveGasFail
-	attackanimation
-	waitanimation
-	jumpifability BS_TARGET, ABILITY_STICKY_HOLD, BattleScript_StickyHoldActivates
-	jumpifability BS_TARGET, ABILITY_COLLECTOR, BattleScript_StickyHoldActivates
-	setlastuseditem BS_TARGET
-	removeitem BS_TARGET
+BattleScript_MoveEffectCorrosiveGas::
+	removeitem BS_EFFECT_BATTLER
 	printstring STRINGID_PKMNITEMMELTED
 	waitmessage B_WAIT_TIME_LONG
 	return
@@ -479,23 +472,6 @@ BattleScript_ShellTrapFailed::
 	printstring STRINGID_SHELLTRAPDIDNTWORK
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
-
-BattleScript_EffectCourtChange::
-	attackcanceler
-	jumpifabilitypresent ABILITY_WORLD_END_GARDEN, BattleScript_CourtChangePrevented
-	swapsidestatuses
-	attackanimation
-	waitanimation
-	printstring STRINGID_COURTCHANGE
-BattleScript_CourtChangeEffect_WaitString:
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
-
-BattleScript_CourtChangePrevented:
-	copybyte sBATTLER, gBattlerTarget
-	call BattleScript_AbilityPopUp
-	printstring STRINGID_WORLDENDGARDENPREVENTSCOURTCHANGE
-	goto BattleScript_CourtChangeEffect_WaitString
 
 BattleScript_BeakBlastSetUp::
 	flushtextbox
@@ -1018,16 +994,8 @@ BattleScript_SetUpBide::
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectRoar::
-	attackcanceler
-	jumpifroarfails BattleScript_ButItFailed
-	jumpifcommanderactive BS_TARGET, BattleScript_ButItFailed
-	jumpifability BS_TARGET, ABILITY_GUARD_DOG, BattleScript_ButItFailed
-	jumpifability BS_TARGET, ABILITY_SUCTION_CUPS, BattleScript_AbilityPreventsPhasingOut
-	jumpifability BS_TARGET, ABILITY_GATE_KEEPER, BattleScript_AbilityPreventsPhasingOut
-	jumpifvolatile BS_TARGET, VOLATILE_ROOT, BattleScript_PrintMonIsRooted
-	jumpiftargetdynamaxed BattleScript_RoarBlockedByDynamax
-	jumpifbattletype BATTLE_TYPE_ARENA, BattleScript_ButItFailed
-	forcerandomswitch BattleScript_ButItFailed
+	forcerandomswitch BattleScript_ButItFailedRet
+    return
 
 BattleScript_RoarBlockedByDynamax:
 	printstring STRINGID_MOVEBLOCKEDBYDYNAMAX
@@ -1245,6 +1213,13 @@ BattleScript_MoveEffectAromatherapy::
 	waitstate
 	return
 
+BattleScript_Curse::
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
+	printstring STRINGID_PKMNLAIDCURSE
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectMeanLook::
 	attackcanceler
 	jumpifvolatile BS_TARGET, VOLATILE_ESCAPE_PREVENTION, BattleScript_ButItFailed
@@ -1272,39 +1247,6 @@ BattleScript_NightmareWorked::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
-BattleScript_EffectCurse::
-	attackcanceler
-	cursetarget BattleScript_CurseStatChange
-	attackanimation
-	waitanimation
-	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER, ASSURANCE_DOUBLE
-	printstring STRINGID_PKMNLAIDCURSE
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
-BattleScript_CurseStatChange:
-	trymovestatchanges
-	goto BattleScript_MoveEnd
-
-BattleScript_EffectProtect::
-BattleScript_EffectEndure::
-	attackcanceler
-	setprotectlike
-	attackanimation
-	waitanimation
-	printfromtable gProtectLikeUsedStringIds
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
-
-BattleScript_EffectSpikes::
-	attackcanceler
-	trysetspikes BattleScript_ButItFailed
-	attackanimation
-	waitanimation
-	printstring STRINGID_SPIKESSCATTERED
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
-
 BattleScript_EffectForesight::
 	attackcanceler
 	jumpifgenconfiglowerthan CONFIG_B_FORESIGHT_FAIL, GEN_3, BattleScript_ForesightFailCheck
@@ -1317,15 +1259,6 @@ BattleScript_IdentifiedFoe:
 	attackanimation
 	waitanimation
 	printstring STRINGID_PKMNIDENTIFIED
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
-
-BattleScript_EffectPerishSong::
-	attackcanceler
-	trysetperishsong BattleScript_ButItFailed
-	attackanimation
-	waitanimation
-	printstring STRINGID_FAINTINTHREE
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
@@ -5466,17 +5399,23 @@ BattleScript_LifeForceActivates::
 
 BattleScript_EffectUehehehehehe::
 	jumpiftargetally BattleScript_EffectUeheheheheheAlly
-	goto BattleScript_EffectAttract
+	goto BattleScript_MoveEffectAttract
 
 BattleScript_EffectUeheheheheheFoe::
 	attackcanceler
-	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_AromaVeilProtects
+	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_EffectUeheheheheheFoeAbilityProtected
 	tryinfatuating BattleScript_ButItFailed
 	attackanimation
 	waitanimation
 	printstring STRINGID_PKMNFELLINLOVE
 	waitmessage B_WAIT_TIME_LONG
 	call BattleScript_TryDestinyKnotAttacker
+	goto BattleScript_MoveEnd
+BattleScript_EffectUeheheheheheFoeAbilityProtected:
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_AROMAVEILPROTECTED
+	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectUeheheheheheAlly::
@@ -5549,11 +5488,11 @@ BattleScript_UltraSeigaActivatesAlreadyDarknessTerrain:
 BattleScript_EffectGaiaForce::
 	jumpiftype BS_ATTACKER, TYPE_NEW_DARK, BattleScript_EffectGaiaForceChangeDark
 	isdarknessterrainonthefield BattleScript_EffectGaiaForceChangeDark
-	goto BattleScript_EffectHit
+	goto BattleScript_MoveResolution
 	goto BattleScript_MoveEnd
 BattleScript_EffectGaiaForceChangeDark:
 	setbyte sB_ANIM_TURN, 1
-	goto BattleScript_EffectHit
+	goto BattleScript_MoveResolution
 	goto BattleScript_MoveEnd
 
 BattleScript_ExShadowSkyHeal::

@@ -1346,6 +1346,33 @@
 	.byte \battler
 	.endm
 
+	.macro cursetarget failInstr:req
+	callnative BS_CurseTarget
+	.4byte \failInstr
+	.endm
+
+	.macro setlightscreen
+	callnative BS_SetLightScreen
+	.endm
+
+	.macro setreflect
+	callnative BS_SetReflect
+	.endm
+
+	.macro setsafeguard
+	callnative BS_SetSafeguard
+	.endm
+
+	.macro setseeded
+	callnative BS_SetSeeded
+	.endm
+
+	.macro jumpiffullhp battler:req, jumpInstr:req
+	callnative BS_JumpIfFullHp
+	.byte \battler
+	.4byte \jumpInstr
+	.endm
+
 	.macro jumpifnoholdeffect battler:req, holdEffect:req, jumpInstr:req
 	jumpifholdeffect \battler, \holdEffect, \jumpInstr, FALSE
 	.endm

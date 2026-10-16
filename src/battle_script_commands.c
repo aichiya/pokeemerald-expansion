@@ -10308,6 +10308,142 @@ void BS_TrySetPerishSongOnTarget(void)
     }
 }
 
+bool32 TrySetReflect(enum BattlerId battler)
+{
+    enum BattleSide side = GetBattlerSide(battler);
+    if (!(gSideStatuses[side] & SIDE_STATUS_REFLECT))
+    {
+        gSideStatuses[side] |= SIDE_STATUS_REFLECT;
+        if (GetBattlerHoldEffect(battler) == HOLD_EFFECT_LIGHT_CLAY)
+            gSideTimers[side].reflectTimer = 8;
+        else
+            gSideTimers[side].reflectTimer = 5;
+
+        if (IsDoubleBattle() && CountAliveMonsInBattle(BATTLE_ALIVE_SIDE, battler) == 2)
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_REFLECT_DOUBLE;
+        else
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_REFLECT_SINGLE;
+
+        return TRUE;
+    }
+    return FALSE;
+}
+
+void BS_SetReflect(void)
+{
+    NATIVE_ARGS();
+    if (!TrySetReflect(gBattlerAttacker))
+    {
+        gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SIDE_STATUS_FAILED;
+    }
+
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+bool32 TrySetLightScreen(enum BattlerId battler)
+{
+    enum BattleSide side = GetBattlerSide(battler);
+    if (!(gSideStatuses[side] & SIDE_STATUS_LIGHTSCREEN))
+    {
+        gSideStatuses[side] |= SIDE_STATUS_LIGHTSCREEN;
+        if (GetBattlerHoldEffect(battler) == HOLD_EFFECT_LIGHT_CLAY)
+            gSideTimers[side].lightscreenTimer = 8;
+        else
+            gSideTimers[side].lightscreenTimer = 5;
+
+        if (IsDoubleBattle() && CountAliveMonsInBattle(BATTLE_ALIVE_SIDE, battler) == 2)
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_LIGHTSCREEN_DOUBLE;
+        else
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_LIGHTSCREEN_SINGLE;
+
+        return TRUE;
+    }
+    return FALSE;
+}
+
+void BS_SetLightScreen(void)
+{
+    NATIVE_ARGS();
+
+    if (!TrySetLightScreen(gBattlerAttacker))
+    {
+        gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SIDE_STATUS_FAILED;
+    }
+
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+bool32 TrySetSafeguard(enum BattlerId battler)
+{
+    enum BattleSide side = GetBattlerSide(battler);
+    if (!(gSideStatuses[side] & SIDE_STATUS_SAFEGUARD))
+    {
+        gSideStatuses[side] |= SIDE_STATUS_SAFEGUARD;
+        gSideTimers[side].safeguardTimer = 5;
+
+        if (IsDoubleBattle() && CountAliveMonsInBattle(BATTLE_ALIVE_SIDE, battler) == 2)
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_SAFEGUARD;
+        else
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_SAFEGUARD;
+
+        return TRUE;
+    }
+    return FALSE;
+}
+
+void BS_SetSafeguard(void)
+{
+    NATIVE_ARGS();
+
+    if (gSideStatuses[GetBattlerSide(gBattlerAttacker)] & SIDE_STATUS_SAFEGUARD)
+    {
+        gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SIDE_STATUS_FAILED;
+    }
+    else
+    {
+        gSideStatuses[GetBattlerSide(gBattlerAttacker)] |= SIDE_STATUS_SAFEGUARD;
+        gSideTimers[GetBattlerSide(gBattlerAttacker)].safeguardTimer = 5;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SET_SAFEGUARD;
+    }
+
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_SetSeeded(void)
+{
+    NATIVE_ARGS();
+
+    if (IsBattlerUnaffectedByMove(gBattlerTarget) || gBattleMons[gBattlerTarget].volatiles.leechSeed)
+    {
+        gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LEECH_SEED_MISS;
+    }
+    else if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_NEW_NATURE) && GetBattlerAbility(gBattlerAttacker) != ABILITY_WORLD_END_GARDEN)
+    {
+        gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LEECH_SEED_FAIL;
+    }
+    else
+    {
+        gBattleMons[gBattlerTarget].volatiles.leechSeed = LEECHSEEDED_BY(gBattlerAttacker);
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LEECH_SEED_SET;
+    }
+
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_JumpIfFullHp(void)
+{
+    NATIVE_ARGS(u8 battler, const u8 *jumpInstr);
+    if (IsBattlerAtMaxHp(GetBattlerForBattleScript(cmd->battler)))
+        gBattlescriptCurrInstr = cmd->jumpInstr;
+    else
+        gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
 // The order of this is assumed to be the same as the types
 static const u16 sGrimoireCallMoves[] = {
     MOVE_FACADE,              // Physical Illusion
@@ -11299,6 +11435,38 @@ void BS_JumpIfPresent(void)
         gBattlescriptCurrInstr = cmd->jumpInstr;
     else
         gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_CurseTarget(void)
+{
+    NATIVE_ARGS(const u8 *failInstr);
+
+    if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_NEW_NETHER))
+    {
+        gBattleScripting.animTurn = 1; // for move anim
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else if (gBattleMons[gBattlerTarget].ability == ABILITY_FANTASY_BREAKER && FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE)
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else if (gBattleMons[gBattlerAttacker].ability == ABILITY_YORIGAMI_SISTERS)
+    {
+        gBattleMons[gBattlerTarget].volatiles.cursed = TRUE;
+        gBattleStruct->moveDamage[gBattlerAttacker] = 0;
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
+    else if (gBattleMons[gBattlerTarget].volatiles.cursed)
+    {
+        gBattlescriptCurrInstr = BattleScript_ButItFailed;
+    }
+    else
+    {
+        gBattleScripting.animTurn = 0; // for move anim
+        gBattleMons[gBattlerTarget].volatiles.cursed = TRUE;
+        SetPassiveDamageAmount(gBattlerAttacker, GetNonDynamaxMaxHP(gBattlerAttacker) / 2);
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
 }
 
 void BS_JumpIfHoldEffect(void)

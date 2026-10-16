@@ -8583,8 +8583,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
 
     // field abilities
     enum BattlerId fieldAbilityBattler = MAX_BATTLERS_COUNT;
-    if ((moveType == TYPE_NEW_DARK && DmgCalc_IsAbilityOnField(ABILITY_DARK_AURA, ctx->abilities, &fieldAbilityBattler))
-     || (moveType == TYPE_NEW_DIVINE && DmgCalc_IsAbilityOnField(ABILITY_FAIRY_AURA, ctx->abilities, &fieldAbilityBattler)))
+    if ((moveType == TYPE_NEW_DARK && IsAbilityOnFieldWithArr(ABILITY_DARK_AURA, ctx->abilities, &fieldAbilityBattler))
+     || (moveType == TYPE_NEW_DIVINE && IsAbilityOnFieldWithArr(ABILITY_FAIRY_AURA, ctx->abilities, &fieldAbilityBattler)))
     {
         if (ctx->updateFlags)
             RecordAbilityBattle(fieldAbilityBattler, ctx->abilities[fieldAbilityBattler]);

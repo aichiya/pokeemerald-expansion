@@ -1602,131 +1602,131 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 1,
     },
 	
-    [EFFECT_ULTRA_INSTINCT] =
+    [EFFECT_ULTRA_INSTINCT] = // Redone
     {
-        .battleScript = BattleScript_EffectUltraInstinct,
+//        .battleScript = BattleScript_EffectUltraInstinct,
         .battleTvScore = 0, // TODO: Assign points
 	},
 	
     [EFFECT_RIDE_TRANSFORM] =
     {
-        .battleScript = BattleScript_EffectHit, // BattleScript_EffectATrance
+//        .battleScript = BattleScript_EffectHit, // BattleScript_EffectATrance
         .battleTvScore = 0, // TODO: Assign points
     },
 	
     [EFFECT_FLUFFICATION] =
     {
-        .battleScript = BattleScript_EffectFluffication,
+//        .battleScript = BattleScript_EffectFluffication,
         .battleTvScore = 0, // TODO: Assign points
     },
 	
     [EFFECT_WIPES_OUT_FOES_PARTY] =
     {
-        .battleScript = BattleScript_EffectWipesOutFoesParty,
+//        .battleScript = BattleScript_EffectWipesOutFoesParty,
         .battleTvScore = 0, // TODO: Assign points
     },
 	
     [EFFECT_ILLUSIONARY_DOMINATION] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
 
     [EFFECT_REVERSE_PSYSHOCK] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
 	
     [EFFECT_DEFECTIVE_MIRACLE] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
 	
     [EFFECT_MIND_HACK] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
 	
     [EFFECT_SUPER_EFFECTIVE_ON_FOES_TYPES] = // TODO
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
 
     [EFFECT_QUINTETT_FEUER] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
 
     [EFFECT_UEHEHEHEHEHE] =
     {
-        .battleScript = BattleScript_EffectUehehehehehe,
+//        .battleScript = BattleScript_EffectUehehehehehe,
         .battleTvScore = 0, // TODO: Assign points
     },
 
     [EFFECT_GRIMOIRE_CALL] =
     {
-        .battleScript = BattleScript_EffectHit, // BattleScript_EffectGrimoireCall
+//        .battleScript = BattleScript_EffectHit, // BattleScript_EffectGrimoireCall
         .battleTvScore = 0, // TODO: Assign points
     },
 
     [EFFECT_GAIA_FORCE] =
     {
-        .battleScript = BattleScript_EffectGaiaForce,
+//        .battleScript = BattleScript_EffectGaiaForce,
         .battleTvScore = 0, // TODO: Assign points
     },
 
     [EFFECT_ASTROMANCY] =
     {
-        .battleScript = BattleScript_EffectStatChange,
+//        .battleScript = BattleScript_EffectStatChange,
         .battleTvScore = 0, // TODO: Assign points
         .encourageEncore = TRUE,
     },
 
     [EFFECT_EX_SHADOW_MOVE_HIT] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0,
     },
 
     [EFFECT_EX_SHADOW_MOVE_HALF] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0,
         .encourageEncore = TRUE,
     },
 	
     [EFFECT_EX_SHADOW_MOVE_RECOIL] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
 	
     [EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
 
     [EFFECT_KIRIFUDA] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
 
     [EFFECT_CARD_INCLUDE] =
     {
-        .battleScript = BattleScript_EffectHit,
+//        .battleScript = BattleScript_EffectHit,
         .battleTvScore = 0, // TODO: Assign points
     },
 
     [EFFECT_GRACE_OF_DREAM] =
     {
-        .battleScript = BattleScript_EffectGraceOfDream,
+//        .battleScript = BattleScript_EffectGraceOfDream,
         .battleTvScore = 0, // TODO: Assign points
         .encourageEncore = TRUE,
     },

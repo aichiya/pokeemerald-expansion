@@ -808,6 +808,16 @@ static const struct BattleInfoEffectData sBattleInfoEffects[INFO_COUNT] =
         COMPOUND_STRING("Micle Berry"),
         COMPOUND_STRING("Boosts the accuracy of the Pokémon's next move by 20%.")
     },
+    [INFO_EX_SHADOW_SKY] =
+    {
+        COMPOUND_STRING("Shadow Sky"),
+        COMPOUND_STRING("Boosts Shadow moves and damages non-Shadow Pokemon.")
+    },
+    [INFO_EX_SHADOW_SKY_DEEP] =
+    {
+        COMPOUND_STRING("Menacing Shadow Sky"),
+        COMPOUND_STRING("Boosts Shadow moves and damages non-Shadow Pokemon.")
+    },
 };
 
 static const u8 sBattleInfoHpBarTiles[8 * TILE_SIZE_4BPP] = {0};
@@ -2453,6 +2463,8 @@ static enum BattleInfoLabels GetStatusEffectFromWeather(void)
     case BATTLE_WEATHER_SNOW:          return INFO_SNOW;
     case BATTLE_WEATHER_FOG:           return INFO_FOG;
     case BATTLE_WEATHER_STRONG_WINDS:  return INFO_STRONG_WINDS;
+    case BATTLE_WEATHER_EX_SHADOW_SKY:  return INFO_STRONG_WINDS;
+    case BATTLE_WEATHER_EX_SHADOW_SKY_DEEP:  return INFO_STRONG_WINDS;
     case BATTLE_WEATHER_COUNT:         return INFO_NONE;
     }
 

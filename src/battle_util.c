@@ -2503,6 +2503,7 @@ bool32 CanAbilityAbsorbMove(struct DamageContext *ctx)
             if (gBattleMons[gBattlerAttacker].ability != ABILITY_FANTASY_BREAKER)
                 battleScript = AbsorbedByDrainHpAbility(ctx->battlerDef);
         }
+        break;
     case ABILITY_GOOD_AS_GOLD:
     case ABILITY_GREAT_BLOOMING:
     case ABILITY_SECOND_ADVENT:
@@ -5136,6 +5137,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 BattleScriptCall(BattleScript_AftermathDmg);
                 effect++;
              }
+            break;
         case ABILITY_EFFECT_SPORE:
         {
             enum Ability abilityAtk = GetBattlerAbility(gBattlerAttacker);
@@ -5660,6 +5662,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
                 effect++;
             }
+            break;
         case ABILITY_SYNCHRONIZE:
             if (gSpecialStatuses[battler].synchronize)
             {
@@ -8175,6 +8178,7 @@ static inline u32 CalcMoveBasePower(struct DamageContext *ctx)
     case EFFECT_SPECIES_POWER_OVERRIDE:
         if (gBattleMons[battlerAtk].species == GetMoveSpeciesPowerOverride_Species(ctx->move))
             basePower = GetMoveSpeciesPowerOverride_Power(ctx->move);
+        break;
     case ABILITY_HARMONIZE:
         {
             u8 i = 0;

@@ -5111,6 +5111,7 @@ static enum MoveEndResult MoveEndMoveBlockRecoil(struct BattleCalcValues *cv)
             BattleScriptCall(BattleScript_ExShadowHalfAttackerDamage);
             result = MOVEEND_RESULT_RUN_SCRIPT;
         }
+        break;
     case EFFECT_RAPID_SPIN:
         if (GetConfig(B_SPEED_BUFFING_RAPID_SPIN) == GEN_8
          && IsAnyTargetTurnDamaged(cv->battlerAtk, INCLUDING_SUBSTITUTES)

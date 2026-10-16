@@ -2496,7 +2496,7 @@ bool8 LightOrbs_Finish(void)
         gWeatherPtr->targetLightorbSpriteCount = 0;
         gWeatherPtr->lightorbVisibleCounter = 0;
         gWeatherPtr->finishStep++;
-        // fall through
+        [[fallthrough]];
     case 1:
         if (!UpdateVisibleLightorbSprites())
         {
@@ -2746,7 +2746,7 @@ bool8 PinkLeaves_Finish(void)
         gWeatherPtr->targetLeafSpriteCount = 0;
         gWeatherPtr->leafVisibleCounter = 0;
         gWeatherPtr->finishStep++;
-        // fall through
+        [[fallthrough]];
     case 1:
         if (!UpdateVisibleLeafSprites(gPinkLeavesWeatherPalette))
         {

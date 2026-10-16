@@ -2301,6 +2301,7 @@ static void InitPinballScreen(void)
         InitGameType(sPinballGame->gameType);
         StartNewBall();
         gMain.state++;
+        [[fallthrough]];
     case 5:
         // Center game in the middle of the screen
         SetGpuReg(REG_OFFSET_BG2HOFS, -40);
@@ -4825,6 +4826,7 @@ static bool32 UpdateGengar(struct Gengar *gengar)
             StartSpriteAnim(&gSprites[gengarGhost->spriteId], 0);
 			PlayCry_Normal(SPECIES_GENGAR, 0);
         }
+        [[fallthrough]];
     case GRAVEYARD_STATE_GENGAR:
         UpdateGengarGhost(gengar);
         break;

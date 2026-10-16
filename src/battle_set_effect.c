@@ -2347,7 +2347,7 @@ static void HandleSetEffectAttract(struct BattleCalcValues *cv, struct SetEffect
         SetEffectFail(BattleScript_AromaVeilProtectsRet);
         gBattlerAbility = aromaVeilBattler;
     }
-    else if (gBattleMons[se->effectBattler].volatiles.infatuation || !AreBattlersOfOppositeGender(cv->battlerAtk, se->effectBattler))
+    else if (gBattleMons[se->effectBattler].volatiles.infatuation)
     {
         SetEffectFail(BattleScript_ButItFailedRet, cv->isStatusMove);
     }

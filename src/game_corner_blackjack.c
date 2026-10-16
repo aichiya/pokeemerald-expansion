@@ -2084,6 +2084,7 @@ static void BJMain(u8 taskId)
 
         PlayFanfare(MUS_SLOTS_WIN);
         sBlackJack->state = BJ_STATE_PROCESS_COMPLETED_INPUT;
+        [[fallthrough]];
     case BJ_STATE_PROCESS_COMPLETED_INPUT:
         HandleInput_BJComplete();
         break;

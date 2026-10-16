@@ -1105,10 +1105,12 @@ static u8 SetUpCopyrightScreen(void)
         UpdatePaletteFade();
         gMain.state++;
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
+        [[fallthrough]];
     case 2:
         if (UpdatePaletteFade())
             break;
         gMain.state++;
+        [[fallthrough]];
     case 3:
         sCopyrightCounter++;
         if (JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON) || JOY_NEW(SELECT_BUTTON) || JOY_NEW(START_BUTTON) || sCopyrightCounter >= 240)
@@ -1117,20 +1119,23 @@ static u8 SetUpCopyrightScreen(void)
     case 4:
         BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
         LoadCopyrightGraphics(0, 0x3800, BG_PLTT_ID(0), FALSE);
-        
+        [[fallthrough]];
     case 5:
         sCopyrightCounter = 0;
+        [[fallthrough]];
     case 6:
         if (UpdatePaletteFade())
             break;
         ResetPaletteFade();
         gMain.state++;
+        [[fallthrough]];
     case 7:
         sCopyrightCounter++;
         if (sCopyrightCounter >= 90 || JOY_NEW(A_BUTTON) || JOY_NEW(B_BUTTON) || JOY_NEW(SELECT_BUTTON) || JOY_NEW(START_BUTTON))
             gMain.state = COPYRIGHT_START_FADE;
         break;
         gMain.state++;
+        [[fallthrough]];
     case COPYRIGHT_START_FADE:
         GameCubeMultiBoot_Main(&gMultibootProgramStruct);
         if (gMultibootProgramStruct.gcmb_field_2 != 1)

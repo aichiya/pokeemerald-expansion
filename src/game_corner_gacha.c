@@ -3180,6 +3180,7 @@ static void GachaMain(u8 taskId)
 
         PlayFanfare(MUS_SLOTS_WIN);
         sGacha->state = GACHA_STATE_PROCESS_COMPLETED_INPUT;
+        [[fallthrough]];
     case GACHA_STATE_PROCESS_COMPLETED_INPUT:
         HandleInput_GachaComplete();
         break;

@@ -1389,6 +1389,7 @@ static void InitPinballScreen(void)
         InitPinballGame();
         InitBallSprite();
         gMain.state++;
+        [[fallthrough]];
     case 5:
         // Center game in the middle of the screen
         //SetGpuReg(REG_OFFSET_BG2HOFS, -40);

@@ -112,6 +112,7 @@ enum
     LIST_ITEM_AI_PARTY,
     LIST_ITEM_VARIOUS,
     LIST_ITEM_INSTANT_WIN,
+    LIST_ITEM_INSTANT_LOSE,
     LIST_ITEM_COUNT
 };
 
@@ -333,6 +334,7 @@ static const struct ListMenuItem sMainListItems[] =
     {COMPOUND_STRING("AI Party"),     LIST_ITEM_AI_PARTY},
     {COMPOUND_STRING("Various"),      LIST_ITEM_VARIOUS},
     {COMPOUND_STRING("Instant Win"),  LIST_ITEM_INSTANT_WIN},
+    {COMPOUND_STRING("Instant Loss"), LIST_ITEM_INSTANT_LOSE},
 };
 
 static const struct ListMenuItem sStatsListItems[] =
@@ -1218,6 +1220,13 @@ static void Task_DebugMenuProcessInput(u8 taskId)
                 gTasks[taskId].func = Task_DebugMenuFadeOut;
                 return;
             }
+            else if (listItemId == LIST_ITEM_INSTANT_LOSE && JOY_NEW(A_BUTTON))
+            {
+                BattleDebug_LostBattle();
+                BeginNormalPaletteFade(-1, 0, 0, 0x10, 0);
+                gTasks[taskId].func = Task_DebugMenuFadeOut;
+                return;
+            }
             data->currentMainListItemId = listItemId;
 
             // Create the secondary menu list.
@@ -1411,6 +1420,7 @@ static void CreateSecondaryListMenu(struct BattleDebugMenu *data)
         itemsCount = ARRAY_COUNT(sSideStatusListItems);
         break;
     case LIST_ITEM_INSTANT_WIN:
+    case LIST_ITEM_INSTANT_LOSE:
     case LIST_ITEM_AI_MOVES_PTS:
     case LIST_ITEM_AI_INFO:
         return;

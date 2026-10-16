@@ -2999,7 +2999,7 @@ static void Cmd_setchargingturn(void)
     {
         gBattleMons[gBattlerAttacker].volatiles.multipleTurns = TRUE;
         gLockedMoves[gBattlerAttacker] = gCurrentMove;
-        gProtectStructs[gBattlerAttacker].chargingTurn = TRUE;
+        gBattleMons[gBattlerAttacker].volatiles.chargeTurn = TRUE;
     }
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
@@ -3227,17 +3227,18 @@ static void Cmd_effectivenesssound(void)
 
 static inline bool32 ShouldPrintTwoFoesMessage(u32 moveResult)
 {
+    enum BattlerId targetPartner = GetPartnerBattler(gBattlerTarget);
     return gBattlerTarget == GetOppositeBattler(gBattlerAttacker)
-        && gBattleStruct->moveResultFlags[GetPartnerBattler(gBattlerTarget)] & moveResult
-        && !(gBattleStruct->moveResultFlags[GetPartnerBattler(gBattlerTarget)] & MOVE_RESULT_AVOIDED_ATTACK);
+        && IsBattlerMoveResultSet(targetPartner, moveResult)
+        && !IsBattlerMoveResultSet(targetPartner, MOVE_RESULT_AVOIDED_ATTACK);
 }
 
 static inline bool32 ShouldRelyOnTwoFoesMessage(u32 moveResult)
 {
     enum BattlerId oppositeTarget = GetOppositeBattler(gBattlerAttacker);
     return gBattlerTarget == GetPartnerBattler(oppositeTarget)
-        && gBattleStruct->moveResultFlags[oppositeTarget] & moveResult
-        && !(gBattleStruct->moveResultFlags[oppositeTarget] & MOVE_RESULT_AVOIDED_ATTACK);
+        && IsBattlerMoveResultSet(oppositeTarget, moveResult)
+        && !IsBattlerMoveResultSet(oppositeTarget, MOVE_RESULT_AVOIDED_ATTACK);
 }
 
 static void Cmd_printstring(void)
@@ -3340,7 +3341,7 @@ u32 GetBattlerRawSpeedOrder(enum BattlerId battler)
 }
 
 // battlerStealer steals the item of itemBattler
-void StealTargetItem(enum BattlerId battlerStealer, enum BattlerId itemBattler, enum Item itemOverride)
+void StealTargetItem(enum BattlerId battlerStealer, enum BattlerId itemBattler, enum Item itemOverride, bool32 stealWildItem)
 {
     if (itemOverride)
     {
@@ -3352,14 +3353,7 @@ void StealTargetItem(enum BattlerId battlerStealer, enum BattlerId itemBattler, 
         gBattleMons[itemBattler].item = ITEM_NONE;
     }
 
-    if (GetConfig(B_STEAL_WILD_ITEMS) >= GEN_9
-     && !(gBattleTypeFlags & (BATTLE_TYPE_TRAINER | BATTLE_TYPE_PALACE))
-     && GetMoveEffect(gCurrentMove) == EFFECT_STEAL_ITEM
-     && battlerStealer == gBattlerAttacker) // ensure that Pickpocket isn't activating this
-    {
-        AddBagItem(gLastUsedItem, 1);
-    }
-    else
+    if (!stealWildItem)
     {
         RecordItemEffectBattle(battlerStealer, GetItemHoldEffect(gLastUsedItem));
         gBattleMons[battlerStealer].item = gLastUsedItem;
@@ -3505,7 +3499,7 @@ static void Cmd_setadditionaleffects(void)
              && !(additionalEffect->pledgeCombo && gBattleStruct->pledgeState != PLEDGE_COMBO_ATTACK)
              && !(additionalEffect->onlyIfTargetRaisedStats && !gProtectStructs[effectBattler].statRaised)
              && (effectBattler == gBattlerAttacker) == additionalEffect->self
-             && gProtectStructs[gBattlerAttacker].chargingTurn
+             && gBattleMons[gBattlerAttacker].volatiles.chargeTurn
              && additionalEffect->onChargeTurnOnly)
             {
                 percentChance = CalcSecondaryEffectChance(gBattlerAttacker, cv.abilities[cv.battlerAtk], additionalEffect, gCurrentMove);
@@ -3552,7 +3546,7 @@ static void Cmd_clearvolatile(void)
 
     SetMonVolatile(battler, cmd->_volatile, 0);
     if (cmd->_volatile == VOLATILE_MULTIPLETURNS)
-        gProtectStructs[battler].chargingTurn = FALSE;
+        gBattleMons[battler].volatiles.chargeTurn = FALSE;
 
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
@@ -3925,7 +3919,7 @@ static void Cmd_getexp(void)
             *expMonId = gBattleStruct->expGettersOrder[0];
             gBattleStruct->expSentInMons = sentInBits;
         }
-        // fall through
+        [[fallthrough]];
     case 2: // set exp value to the poke in expgetter_id and print message
         if (gBattleControllerExecFlags == 0)
         {
@@ -5290,7 +5284,7 @@ static void Cmd_switchhandleorder(void)
             RecordedBattle_SetBattlerAction(battler, gBattleResources->bufferB[battler][1]);
             gBattleStruct->recordedActionSet |= 1u << battler;
         }
-        // fall through
+        [[fallthrough]];
     case 3:
         gBattleCommunication[0] = gBattleResources->bufferB[battler][1];
         gBattleStruct->monToSwitchIntoId[battler] = (enum PartyMon)gBattleResources->bufferB[battler][1];
@@ -6506,6 +6500,7 @@ bool32 CanUseLastResort(enum BattlerId battler)
 static void RemoveAllWeather(void)
 {
     gBattleStruct->weatherDuration = 0;
+    gBattleStruct->weatherDurationTotal = 0;
 
     if (gBattleWeather & B_WEATHER_RAIN_PRIMAL)
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_HEAVY_RAIN;
@@ -7062,7 +7057,7 @@ static void Cmd_tryinfatuating(void)
     {
         gEffectBattler = gBattlerTarget; // for message
         gBattlescriptCurrInstr = BattleScript_NotAffectedAbilityPopUp;
-        gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_DOESNT_AFFECT_FOE;
+        AddBattlerMoveResultFlag(gBattlerTarget, MOVE_RESULT_DOESNT_AFFECT_FOE);
         gBattlerAbility = gBattlerTarget;
         gLastUsedAbility = ABILITY_OBLIVIOUS;
         RecordAbilityBattle(gBattlerTarget, ABILITY_OBLIVIOUS);
@@ -7135,7 +7130,7 @@ static void Cmd_setmist(void)
 
     if (gSideTimers[GetBattlerSide(gBattlerAttacker)].mistTimer)
     {
-        gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_FAILED;
+        AddBattlerMoveResultFlag(gBattlerTarget, MOVE_RESULT_FAILED);
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_MIST_FAILED;
     }
     else
@@ -7154,7 +7149,7 @@ static void Cmd_setfocusenergy(void)
 
     if (gBattleMons[battler].volatiles.criticalHitBoost)
     {
-        gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_FAILED;
+        AddBattlerMoveResultFlag(gBattlerTarget, MOVE_RESULT_FAILED);
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_FOCUS_ENERGY_FAILED;
     }
     else
@@ -7174,9 +7169,13 @@ static void Cmd_transformdataexecution(void)
     CMD_ARGS();
 
     gBattlescriptCurrInstr = cmd->nextInstr;
-    if (!TryTransformBattler(gBattlerAttacker, gBattlerTarget))
+    if (!CanTransformBattler(gEffectBattler, gBattleScripting.battler))
     {
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_TRANSFORM_FAILED;
+    }
+    else
+    {
+        TryTransformBattler(gEffectBattler, gBattleScripting.battler);
     }
 }
 
@@ -7755,6 +7754,7 @@ static void FinalizeCapture(void)
 
     struct Pokemon *caughtMon = GetBattlerMon(gBattlerTarget);
     SetMonData(caughtMon, MON_DATA_POKEBALL, &ballId);
+    RestoreCaughtWildMonHeldItem(caughtMon, gBattlerTarget);
 
     if (CalculatePlayerPartyCount() == PARTY_SIZE)
         gBattleCommunication[MULTISTRING_CHOOSER] = 0;
@@ -8713,7 +8713,7 @@ static void TryClearPrimalWeather(void)
     for (enum BattlerId battler = 0; battler < gBattlersCount; battler++)
     {
         enum Ability ability = GetBattlerAbility(battler);
-    
+
         if (((ability == ABILITY_DESOLATE_LAND && gBattleWeather & B_WEATHER_SUN_PRIMAL)
           || (ability == ABILITY_PRIMORDIAL_SEA && gBattleWeather & B_WEATHER_RAIN_PRIMAL)
           || (ability == ABILITY_DELTA_STREAM && gBattleWeather & B_WEATHER_STRONG_WINDS)))
@@ -8766,7 +8766,7 @@ static bool32 DoFaintedEffectsBlock(void)
 
             gBattleStruct->eventState.faintedEffects++;
             break;
-        case FAINTED_EFFECTS_BLOCK_END_DYNAMAX:    
+        case FAINTED_EFFECTS_BLOCK_END_DYNAMAX:
             if (GetActiveGimmick(gBattlerFainted) == GIMMICK_DYNAMAX)
             {
                 UndoDynamax(gBattlerFainted);
@@ -8932,7 +8932,7 @@ static void Cmd_dofainteffectsblock(void)
 
     if (gBattleControllerExecFlags)
         return;
-    
+
     if (DoFaintedEffectsBlock())
         return;
 
@@ -9909,20 +9909,6 @@ void BS_RemoveTerrain(void)
 {
     NATIVE_ARGS();
     RemoveAllTerrains();
-    gBattlescriptCurrInstr = cmd->nextInstr;
-}
-
-void BS_SetMoveResultFlags(void)
-{
-    NATIVE_ARGS(u32 value);
-    gBattleStruct->moveResultFlags[gBattlerTarget] = cmd->value;
-    gBattlescriptCurrInstr = cmd->nextInstr;
-}
-
-void BS_ClearMoveResultFlags(void)
-{
-    NATIVE_ARGS(u32 value);
-    gBattleStruct->moveResultFlags[gBattlerTarget] &= ~(cmd->value);
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 

@@ -3348,6 +3348,30 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
             }
             break;
+        case ABILITY_MEMORY_RECALL:
+            if (gBattleStruct->battlerState[battler].switchIn)
+            {
+                enum BattlerId diagonalBattler = GetOppositeBattler(battler);
+                if (IsDoubleBattle())
+                    diagonalBattler = GetPartnerBattler(diagonalBattler);
+
+                // Imposter only activates when the battler first switches in
+                if (!gBattleMons[battler].volatiles.overwrittenAbility
+                    && IsBattlerAlive(diagonalBattler)
+                    && !gBattleMons[diagonalBattler].volatiles.substitute
+                    && !gBattleMons[diagonalBattler].volatiles.transformed
+                    && !gBattleMons[battler].volatiles.transformed
+                    && gBattleStruct->illusion[diagonalBattler].state != ILLUSION_ON
+                    && !IsSemiInvulnerable(diagonalBattler, EXCLUDE_COMMANDER))
+                {
+                    gEffectBattler = battler;
+                    gBattleScripting.battler = diagonalBattler;
+                    gBattlerAttacker = battler;
+                    BattleScriptCall(BattleScript_MemoryRecallActivates);
+                    effect++;
+                }
+            }
+            break;
         case ABILITY_FANTASY_BREAKER:
             if (shouldAbilityTrigger)
             {
@@ -6175,6 +6199,16 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             {
                 gEffectBattler = gBattlerAbility = battler;
                 SetStatChange(battler, STAT_SPATK, 1);
+                BattleScriptCall(BattleScript_AbilityStatChange);
+                effect++;
+            }
+            break;
+        case ABILITY_SALVAGE:
+            if (!NoAliveMonsForEitherParty()
+             && CompareStat(battler, STAT_DEF, MAX_STAT_STAGE, CMP_LESS_THAN, ability))
+            {
+                gEffectBattler = gBattlerAbility = battler;
+                SetStatChange(battler, STAT_DEF, 1);
                 BattleScriptCall(BattleScript_AbilityStatChange);
                 effect++;
             }

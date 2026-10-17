@@ -904,12 +904,12 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
     struct Pokemon *monDef = GetBattlerMon(battlerDef);
     void *dst;
 
-    if (gCurrentMove == MOVE_FLUFFICATION)
+    if (gCurrentMove == MOVE_FLUFFICATION || GetMoveEffect(gCurrentMove) == EFFECT_FLUFFICATION)
     {
         if (IsContest())
         {
             position = B_POSITION_PLAYER_LEFT;
-            targetSpecies = gBattleMons[gBattlerTarget].volatiles.transformationDCDTemp;
+            targetSpecies = gBattleMons[battlerDef].volatiles.transformationDCDTemp;
             personalityValue = gContestResources->moveAnim->personality;
             isShiny = gContestResources->moveAnim->isShiny;
 
@@ -922,9 +922,9 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
         {
             position = GetBattlerPosition(battlerDef);
             if (changeType == SPECIES_GFX_CHANGE_TRANSFORM)
-                targetSpecies = gBattleMons[gBattlerTarget].volatiles.transformationDCDTemp;
+                targetSpecies = gBattleMons[battlerDef].volatiles.transformationDCDTemp;
             else
-                targetSpecies = gBattleMons[gBattlerTarget].volatiles.transformationDCDTemp;
+                targetSpecies = gBattleMons[battlerDef].volatiles.transformationDCDTemp;
             gBattleSpritesDataPtr->battlerData[battlerDef].transformSpecies = targetSpecies;
 
             if (changeType == SPECIES_GFX_CHANGE_TRANSFORM)
@@ -973,12 +973,12 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
             CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
         }
     }
-    else if (gCurrentMove == MOVE_RIDE_TRANSFORM)
+    else if (gCurrentMove == MOVE_RIDE_TRANSFORM || GetMoveEffect(gCurrentMove) == EFFECT_RIDE_TRANSFORM)
     {
         if (IsContest())
         {
             position = B_POSITION_PLAYER_LEFT;
-            targetSpecies = gBattleMons[gBattlerAttacker].volatiles.transformationDCDTemp;
+            targetSpecies = gBattleMons[battlerAtk].volatiles.transformationDCDTemp;
             personalityValue = gContestResources->moveAnim->personality;
             isShiny = gContestResources->moveAnim->isShiny;
 
@@ -990,7 +990,68 @@ void HandleSpeciesGfxDataChange(enum BattlerId battlerAtk, enum BattlerId battle
         else
         {
             position = GetBattlerPosition(battlerAtk);
-            targetSpecies = gBattleMons[gBattlerAttacker].volatiles.transformationDCDTemp;
+            targetSpecies = gBattleMons[battlerAtk].volatiles.transformationDCDTemp;
+            gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies = targetSpecies;
+            personalityValue = gTransformedPersonalities[battlerAtk];
+            isShiny = gTransformedShininess[battlerAtk];
+
+            HandleLoadSpecialPokePic(!IsOnPlayerSide(battlerAtk),
+                                    gMonSpritesGfxPtr->spritesGfx[position],
+                                    targetSpecies,
+                                    personalityValue);
+        }
+        src = gMonSpritesGfxPtr->spritesGfx[position];
+        dst = (void *)(OBJ_VRAM0 + gSprites[gBattlerSpriteIds[battlerAtk]].oam.tileNum * 32);
+        DmaCopy32(3, src, dst, MON_PIC_SIZE);
+        paletteOffset = OBJ_PLTT_ID(battlerAtk);
+        paletteData = GetMonSpritePalFromSpeciesAndPersonality(targetSpecies, isShiny, personalityValue);
+        LoadPalette(paletteData, paletteOffset, PLTT_SIZE_4BPP);
+
+        if (changeType == SPECIES_GFX_CHANGE_TRANSFORM)
+        {
+            BlendPalette(paletteOffset, 16, 6, RGB_WHITE);
+            CpuCopy32(&gPlttBufferFaded[paletteOffset], &gPlttBufferUnfaded[paletteOffset], PLTT_SIZEOF(16));
+        }
+
+        // Terastallization's tint
+        if (changeType != SPECIES_GFX_CHANGE_ILLUSION_OFF && GetActiveGimmick(battlerAtk) == GIMMICK_TERA)
+        {
+            BlendPalette(paletteOffset, 16, 8, GetTeraTypeRGB(GetBattlerTeraType(battlerAtk)));
+            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
+        }
+
+        // dynamax tint
+        if (GetActiveGimmick(battlerAtk) == GIMMICK_DYNAMAX)
+        {
+            // Calyrex and its forms have a blue dynamax aura instead of red.
+            if (GetBaseSpecies(targetSpecies) == SPECIES_CALYREX)
+                BlendPalette(paletteOffset, 16, 4, RGB(12, 0, 31));
+            else
+                BlendPalette(paletteOffset, 16, 4, RGB(31, 0, 12));
+            CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
+        }
+    }
+    else if (gBattleMons[battlerAtk].volatiles.transformationDCDTemp != SPECIES_NONE
+     && !(gCurrentMove == MOVE_RIDE_TRANSFORM || gCurrentMove == MOVE_FLUFFICATION || gCurrentMove == MOVE_TRANSFORM)
+     && !(GetMoveEffect(gCurrentMove) == EFFECT_TRANSFORM || GetMoveEffect(gCurrentMove) == EFFECT_FLUFFICATION || GetMoveEffect(gCurrentMove) == EFFECT_RIDE_TRANSFORM)
+     && GetAbilityBySpecies(gBattleMons[battlerAtk].species, gBattleMons[battlerAtk].abilityNum == ABILITY_MEMORY_RECALL))
+    {
+        if (IsContest())
+        {
+            position = B_POSITION_PLAYER_LEFT;
+            targetSpecies = gBattleMons[battlerAtk].volatiles.transformationDCDTemp;
+            personalityValue = gContestResources->moveAnim->personality;
+            isShiny = gContestResources->moveAnim->isShiny;
+
+            HandleLoadSpecialPokePic(FALSE,
+                                    gMonSpritesGfxPtr->spritesGfx[position],
+                                    targetSpecies,
+                                    gContestResources->moveAnim->targetPersonality);
+        }
+        else
+        {
+            position = GetBattlerPosition(battlerAtk);
+            targetSpecies = gBattleMons[battlerAtk].volatiles.transformationDCDTemp;
             gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies = targetSpecies;
             personalityValue = gTransformedPersonalities[battlerAtk];
             isShiny = gTransformedShininess[battlerAtk];

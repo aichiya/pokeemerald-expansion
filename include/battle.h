@@ -775,7 +775,6 @@ struct BattleStruct
     u8 manicEchoActivated:1;
     u8 lastCadenzaActivated:1;
     u8 paddingCustom:3;
-    enum BattlerId salvageBattlerId;
 };
 
 struct AiBattleData

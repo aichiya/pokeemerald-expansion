@@ -36651,7 +36651,7 @@
           "map": "MAP_LITTLEROOT_TOWN",
           "base_label": "gLittlerootTown",
           "land_mons": {
-            "encounter_rate": 7,
+            "encounter_rate": 12,
             "mons": [
               {
                 "min_level": 100,
@@ -36676,7 +36676,7 @@
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ETC_ILLYASVIEL_NORMAL"
+                "species": "SPECIES_MOE_CHARIZARD"
               },
               {
                 "min_level": 100,
@@ -36686,32 +36686,32 @@
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_PC_CURE_BRIGHTY_BLOOM_R_CURE_BLOOM_NORMAL"
+                "species": "SPECIES_SH_VIVIT_ANDROID"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_PC_CURE_DREAM_GRACE_R_NORMAL_S2"
+                "species": "SPECIES_SH_VIVIT_ANDROID"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ETC_DECADE_ABSOLUTE_R_COMPLETE21"
+                "species": "SPECIES_ETC_PALKIA_TH"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ETC_DELAST"
+                "species": "SPECIES_ETC_PALKIA_TH"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ETC_DECADE_ABSOLUTE_R_COMPLETE21"
+                "species": "SPECIES_ETC_PALKIA_TH"
               },
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ETC_DELAST"
+                "species": "SPECIES_ETC_PALKIA_TH"
               }
             ]
           },

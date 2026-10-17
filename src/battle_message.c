@@ -966,6 +966,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_BRILIANTSTARENTERS]                   = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} is radiating a briliant aura!"),
     [STRINGID_MENACINGSLIGHTCOVERING]               = COMPOUND_STRING("The menacing light keeps covering the sky!"),
     [STRINGID_EXDENSESHADOWYAURAFILLED]             = COMPOUND_STRING("An extremely dense shadowy aura filled the sky!"),
+    [STRINGID_MEMORYRECALLTRANSFORM]                = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX} transformed and ready to fight {B_SCR_NAME_WITH_PREFIX2}!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

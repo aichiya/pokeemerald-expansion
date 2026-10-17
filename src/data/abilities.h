@@ -3122,11 +3122,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 3,
     },
 
-    [ABILITY_RECOLLECTION] =
+    [ABILITY_MEMORY_RECALL] =
     {
-        .name = _("Recollection"),
-        .description = COMPOUND_STRING("Copies moves temporarily."),
-        .aiRating = 3,
+        .name = _("Memory Recall"),
+        .description = COMPOUND_STRING("Transforms into that a foe weak to."),
+        .aiRating = 9,
+        .cantBeCopied = TRUE,
+        .cantBeTraced = TRUE,
     },
 
     [ABILITY_INVERSE_FUNCTION] =
@@ -3680,7 +3682,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_SAIGYOUJI_AYAKASHI] =
     {
         .name = _("Saigyouji Spirit"),
-        .description = COMPOUND_STRING("Nature/Nether heals. Countdown."),
+        .description = COMPOUND_STRING("Nature/Nether heals. Fainting countdown."),
         .aiRating = 8,
     },
 
@@ -3716,13 +3718,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Moon Princess"),
         .description = COMPOUND_STRING("Uses defense stats for attacks."),
-        .aiRating = 8,
-    },
-
-    [ABILITY_MIRROR_IMAGE] =
-    {
-        .name = _("Mirror Image"),
-        .description = COMPOUND_STRING("Transforms into a D{STAR}FRAG."),
         .aiRating = 8,
     },
 

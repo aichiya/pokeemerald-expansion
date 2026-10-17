@@ -729,5 +729,6 @@ extern const u8 BattleScript_BattlerFormChangeBeatUpCallingNoPopup[];
 extern const u8 BattleScript_BattlerFormChangeBeatUpCallingAfterAnimation[];
 extern const u8 BattleScript_MoveEffectSafeguard[];
 extern const u8 BattleScript_MoveEffectMist[];
+extern const u8 BattleScript_MemoryRecallActivates[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

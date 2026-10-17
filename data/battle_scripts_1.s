@@ -5853,3 +5853,14 @@ BattleScript_EffectUltraInstinct::
 	attackanimation
 	waitanimation
 	goto BattleScript_MoveEnd
+
+BattleScript_MemoryRecallActivates::
+	call BattleScript_AbilityPopUp
+	transformdataexecutionmemoryrecall
+	playmoveanimation MOVE_TRANSFORM
+	waitanimation
+	printstring STRINGID_MEMORYRECALLTRANSFORM
+	waitmessage B_WAIT_TIME_LONG
+	switchinabilities BS_ATTACKER
+	abilityonformchange BS_ATTACKER
+	return

@@ -1297,6 +1297,10 @@
 	callnative BS_TransformDataExecutionDecade
 	.endm
 
+	.macro transformdataexecutionmemoryrecall
+	callnative BS_TransformDataExecutionMemoryRecall
+	.endm
+
 	.macro trycardincludeattack
 	callnative BS_TryCardIncludeAttack
 	.endm

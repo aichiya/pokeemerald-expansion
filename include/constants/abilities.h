@@ -411,7 +411,7 @@ enum __attribute__((packed)) Ability
     ABILITY_INNER_POWER = (ABILITY_OFFICIAL_END + 66), // When below 1/2 HP, STAB moves do +50% damage.
     ABILITY_MAGIC_BARRIER = (ABILITY_OFFICIAL_END + 67), // Prevents stat drops
     ABILITY_HISOUTEN = (ABILITY_OFFICIAL_END + 68), // (as Air Lock)
-    ABILITY_RECOLLECTION = (ABILITY_OFFICIAL_END + 69), // TO DO // ---
+    ABILITY_MEMORY_RECALL = (ABILITY_OFFICIAL_END + 69), // Imposter but with superior element
     ABILITY_INVERSE_FUNCTION = (ABILITY_OFFICIAL_END + 70), // TO DO // ---
     ABILITY_LUNACY = (ABILITY_OFFICIAL_END + 71), // Boosts a random stat on entry.
     ABILITY_POWER_LEAK = (ABILITY_OFFICIAL_END + 72), // TO DO figuring out drop stat // Gains +1 SAtk on entry, loses 1 SAtk at end of turn.
@@ -474,7 +474,7 @@ enum __attribute__((packed)) Ability
     ABILITY_FASHIONIST = (ABILITY_OFFICIAL_END + 129), // incoming attack accuracy 0.9x
     ABILITY_EMISSARY_OF_LIGHT = (ABILITY_OFFICIAL_END + 130), // TO DO // Incoming dark moves power 0.5x, ups move power 1.5x if targeting dark-type mon
     ABILITY_ILLUSIONARY_PRECURE = (ABILITY_OFFICIAL_END + 131), // TO DO
-    ABILITY_FALSE_EXISTENCE = (ABILITY_OFFICIAL_END + 132), // TO DO
+    ABILITY_FALSE_EXISTENCE = (ABILITY_OFFICIAL_END + 132), // Inverses type effectiveness when battling
     ABILITY_PHOENIX_DOWN = (ABILITY_OFFICIAL_END + 133), // TO DO // One time in a battle, revives user by 25% HP
     ABILITY_HEALING_GRACE = (ABILITY_OFFICIAL_END + 134), // Heals non-volatile status at the end of turn.
     ABILITY_HEAVY_BLOW = (ABILITY_OFFICIAL_END + 135), // Add effect flinch
@@ -489,16 +489,15 @@ enum __attribute__((packed)) Ability
     ABILITY_ULTRA_FORM_BEAUTY = (ABILITY_OFFICIAL_END + 144), // Snow Warning + May Freeze
     ABILITY_HEALING_SAINT = (ABILITY_OFFICIAL_END + 145), // Heals when the foe heals
     ABILITY_TREASURE_SNIPER = (ABILITY_OFFICIAL_END + 146), // adds secondary effect stealing stats for if using damaging moves
-    ABILITY_SAGE_OF_GENSOKYO = (ABILITY_OFFICIAL_END + 147), // To do
+    ABILITY_SAGE_OF_GENSOKYO = (ABILITY_OFFICIAL_END + 147), // TO DO
     ABILITY_SAIGYOUJI_AYAKASHI = (ABILITY_OFFICIAL_END + 148), // Perish song 1 turn + Grass/Nether absorb.
-    ABILITY_TIME_WEB = (ABILITY_OFFICIAL_END + 149), // To do
+    ABILITY_TIME_WEB = (ABILITY_OFFICIAL_END + 149), // TO DO
     ABILITY_BLAZING_STAR = (ABILITY_OFFICIAL_END + 150), // Mold Breaker + Team Acc up + Sunny Day
     ABILITY_SPARKLING_STAR = (ABILITY_OFFICIAL_END + 151), // Mold Breaker + Team Acc up + Electric Surge
     ABILITY_BRILIANT_STAR = (ABILITY_OFFICIAL_END + 152), // Mold Breaker + Team Acc up + Psychic Surge
     ABILITY_MOON_CRYSTAL = (ABILITY_OFFICIAL_END + 153), // Uses defense stats for attacking
-    ABILITY_MIRROR_IMAGE = (ABILITY_OFFICIAL_END + 154), // To do // Imposter but with superior element
-    ABILITY_CHAOS_SKY = (ABILITY_OFFICIAL_END + 155), // Shadow Sky when entering battle
-    ABILITY_BAD_END_FANTASY = (ABILITY_OFFICIAL_END + 156), // Deep Shadow Sky when entering battle
+    ABILITY_CHAOS_SKY = (ABILITY_OFFICIAL_END + 154), // Shadow Sky when entering battle
+    ABILITY_BAD_END_FANTASY = (ABILITY_OFFICIAL_END + 155), // Deep Shadow Sky when entering battle
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

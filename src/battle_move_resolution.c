@@ -7822,7 +7822,7 @@ static enum Move GetRideTransformMove(void)
                     case MOVE_MOCKUP_SPECIAL_DIVINE:
                     {
                         speciesBuffer = SPECIES_ETC_MADOKA_ULTIMATE;
-                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_MORNING_SUN;
+                        gBattleMons[gBattlerAttacker].moves[0] = MOVE_GLITZY_GLOW;
                         gBattleMons[gBattlerAttacker].moves[1] = MOVE_RAIN_OF_ARROWS;
                         gBattleMons[gBattlerAttacker].moves[2] = MOVE_PSYCHIC;
                         gBattleMons[gBattlerAttacker].moves[3] = MOVE_GEOMANCY;

@@ -20704,7 +20704,7 @@ gBattleAnimMove_ShadowSky::
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS_2), 1, 0, 6, RGB(9, 2, 21)
 	waitforvisualfinish
 	playsewithpan SE_M_RAIN_DANCE, SOUND_PAN_ATTACKER
-	panse_adjustnone SE_M_PETAL_DANCE, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +1, 0
+	panse_adjustnone SE_M_HAZE, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +1, 0
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_RAIN_DROPS, 0, 12, 12, RGB(25, 0, 31)
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_SUNLIGHT, 0, 10, 10, RGB(25, 0, 31)
 	createvisualtask AnimTask_CreateRaindrops, 2, 0, 3, 120

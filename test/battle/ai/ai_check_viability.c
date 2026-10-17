@@ -86,7 +86,7 @@ AI_SINGLE_BATTLE_TEST("AI sees increased base power of Grav Apple")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_GRAV_APPLE) == EFFECT_GRAV_APPLE);
         ASSUME(GetMovePower(MOVE_GRAV_APPLE) == GetMovePower(MOVE_DRUM_BEATING));
-        ASSUME(MoveHasAdditionalEffect(MOVE_DRUM_BEATING, MOVE_EFFECT_SPD_MINUS_1) == TRUE);
+        ASSUME_MOVE_EFFECT_STAT_CHANGE(MOVE_DRUM_BEATING, self: FALSE, speed: -1);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_WOBBUFFET) { HP(81); Speed(20); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(10); Moves(MOVE_DRUM_BEATING, MOVE_GRAV_APPLE); }
@@ -113,6 +113,37 @@ AI_SINGLE_BATTLE_TEST("AI sees increased base power of Flail")
         OPPONENT(SPECIES_WOBBUFFET) { HP(hp); MaxHP(490); Speed(20); Moves(MOVE_BODY_SLAM, MOVE_FLAIL); }
     } WHEN {
         TURN { EXPECT_MOVE(opponent, expectedMove); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI sees increased base power of Body Press after Defense is boosted")
+{
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_BODY_PRESS) == EFFECT_BODY_PRESS);
+        ASSUME_STAT_CHANGE(MOVE_IRON_DEFENSE, defense: +2);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_ZAMAZENTA) { Moves(MOVE_BODY_PRESS, MOVE_IRON_HEAD, MOVE_IRON_DEFENSE); }
+    } WHEN {
+        TURN { EXPECT_MOVE(opponent, MOVE_IRON_DEFENSE); }
+        TURN { EXPECT_MOVE(opponent, MOVE_IRON_DEFENSE); }
+        TURN { EXPECT_MOVE(opponent, MOVE_BODY_PRESS); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI sees increased base power of Body Press after Special Defense is boosted (Wonder Room)")
+{
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_BODY_PRESS) == EFFECT_BODY_PRESS);
+        ASSUME_STAT_CHANGE(MOVE_AMNESIA, spDef: +2);
+        ASSUME(GetMoveEffect(MOVE_WONDER_ROOM) == EFFECT_WONDER_ROOM);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
+        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_WONDER_ROOM, MOVE_CELEBRATE); Speed(20); }
+        OPPONENT(SPECIES_ZAMAZENTA) { Moves(MOVE_BODY_PRESS, MOVE_IRON_HEAD, MOVE_AMNESIA); Speed(10); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_WONDER_ROOM); EXPECT_MOVE(opponent, MOVE_AMNESIA); }
+        TURN { MOVE(player, MOVE_CELEBRATE); EXPECT_MOVE(opponent, MOVE_AMNESIA); }
+        TURN { MOVE(player, MOVE_CELEBRATE); EXPECT_MOVE(opponent, MOVE_BODY_PRESS); }
     }
 }
 
@@ -151,6 +182,23 @@ AI_SINGLE_BATTLE_TEST("AI chooses Sleep Talk only when it will not wake up with 
             TURN { EXPECT_MOVE(opponent, MOVE_TACKLE); }
         else
             TURN { EXPECT_MOVE(opponent, MOVE_SLEEP_TALK); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI uses Snore or Sleep Talk after using Rest")
+{
+    enum Move sleepMove;
+
+    PARAMETRIZE { sleepMove = MOVE_SNORE; }
+    PARAMETRIZE { sleepMove = MOVE_SLEEP_TALK; }
+
+    GIVEN {
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
+        PLAYER(SPECIES_WOBBUFFET) { Speed(1); Moves(MOVE_TACKLE); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(5); HP(1); MaxHP(100); Moves(MOVE_REST, sleepMove, MOVE_TACKLE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_TACKLE); EXPECT_MOVE(opponent, MOVE_REST); }
+        TURN { MOVE(player, MOVE_TACKLE); EXPECT_MOVE(opponent, sleepMove); }
     }
 }
 
@@ -205,8 +253,8 @@ AI_SINGLE_BATTLE_TEST("AI chooses moves with secondary effect that have a 100% c
     PARAMETRIZE { ability = ABILITY_SERENE_GRACE; }
 
     GIVEN {
-        ASSUME(MoveHasAdditionalEffectWithChance(MOVE_SHADOW_BALL, MOVE_EFFECT_SP_DEF_MINUS_1, 20));
-        ASSUME(MoveHasAdditionalEffectWithChance(MOVE_OCTAZOOKA, MOVE_EFFECT_ACC_MINUS_1, 50));
+        ASSUME(MoveHasAdditionalEffectWithChance(MOVE_SHADOW_BALL, MOVE_EFFECT_STAT_MINUS, 20));
+        ASSUME(MoveHasAdditionalEffectWithChance(MOVE_OCTAZOOKA, MOVE_EFFECT_STAT_MINUS, 50));
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_REGICE);
         OPPONENT(SPECIES_REGIROCK) { Ability(ability); Moves(MOVE_SHADOW_BALL, MOVE_OCTAZOOKA); }
@@ -220,7 +268,9 @@ AI_SINGLE_BATTLE_TEST("AI chooses moves with secondary effect that have a 100% c
 
 AI_DOUBLE_BATTLE_TEST("AI chooses moves that cure self or partner")
 {
-    u32 status1_0, status1_1, partnerAbility, move;
+    u32 status1_0, status1_1;
+    enum Ability partnerAbility;
+    enum Move move;
 
     PARAMETRIZE { status1_0 = STATUS1_NONE;         status1_1 = STATUS1_NONE;
                   move = MOVE_HEAL_BELL;            partnerAbility = ABILITY_SCRAPPY; }
@@ -419,7 +469,7 @@ AI_SINGLE_BATTLE_TEST("AI uses Trick Room (singles)")
 AI_SINGLE_BATTLE_TEST("AI uses Tailwind to trigger Wind Rider (Single)")
 {
     bool32 expectTailwind;
-    u16 tailwindSpecies;
+    enum Species tailwindSpecies;
     enum Ability tailwindAbility;
 
     PARAMETRIZE { tailwindSpecies = SPECIES_BRAMBLEGHAST; tailwindAbility = ABILITY_WIND_RIDER;  expectTailwind = TRUE; }
@@ -441,7 +491,7 @@ AI_SINGLE_BATTLE_TEST("AI uses Tailwind to trigger Wind Rider (Single)")
 AI_SINGLE_BATTLE_TEST("AI uses Tailwind to trigger Wind Power (Single)")
 {
     bool32 expectTailwind;
-    u16 tailwindSpecies;
+    enum Species tailwindSpecies;
     enum Ability tailwindAbility;
 
     PARAMETRIZE { tailwindSpecies = SPECIES_KILOWATTREL; tailwindAbility = ABILITY_WIND_POWER;  expectTailwind = TRUE; }
@@ -505,7 +555,9 @@ AI_SINGLE_BATTLE_TEST("AI sees Shield Dust immunity to additional effects")
 
 AI_DOUBLE_BATTLE_TEST("AI sees type-changing moves as the correct type")
 {
-    u32 species, fieldStatus, ability;
+    enum Species species;
+    enum Move fieldStatus;
+    enum Ability ability;
     u64 aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT;
 
     PARAMETRIZE { fieldStatus = MOVE_RAIN_DANCE; species = SPECIES_PRIMARINA; ability = ABILITY_NONE; }
@@ -534,7 +586,7 @@ AI_DOUBLE_BATTLE_TEST("AI sees type-changing moves as the correct type")
 
 AI_SINGLE_BATTLE_TEST("AI uses Sparkling Aria to cure an enemy with Guts")
 {
-    u32 ability;
+    enum Ability ability;
 
     PARAMETRIZE { ability = ABILITY_GUTS; }
     PARAMETRIZE { ability = ABILITY_BULLETPROOF; }
@@ -548,5 +600,32 @@ AI_SINGLE_BATTLE_TEST("AI uses Sparkling Aria to cure an enemy with Guts")
             TURN { EXPECT_MOVE(opponent, MOVE_SPARKLING_ARIA); }
         else
             TURN { EXPECT_MOVE(opponent, MOVE_SCALD); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("AI scores Order Up's stat boost only with Commander")
+{
+    enum Species species = SPECIES_NONE;
+    enum Ability ability = ABILITY_NONE;
+    bool32 expectBoost = FALSE;
+
+    PARAMETRIZE { species = SPECIES_TATSUGIRI_CURLY;    ability = ABILITY_COMMANDER;   expectBoost = TRUE; }
+    PARAMETRIZE { species = SPECIES_TATSUGIRI_DROOPY;   ability = ABILITY_COMMANDER;   expectBoost = TRUE; }
+    PARAMETRIZE { species = SPECIES_TATSUGIRI_STRETCHY; ability = ABILITY_COMMANDER;   expectBoost = TRUE; }
+    PARAMETRIZE { species = SPECIES_TATSUGIRI_STRETCHY; ability = ABILITY_STORM_DRAIN; expectBoost = FALSE; }
+
+    GIVEN {
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
+        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE); }
+        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE); }
+        OPPONENT(species) { Ability(ability); }
+        OPPONENT(SPECIES_DONDOZO) { Moves(MOVE_ORDER_UP, MOVE_DRAGON_CLAW); }
+    } WHEN {
+        TURN {
+            if (expectBoost)
+                SCORE_GT(opponentRight, MOVE_ORDER_UP, MOVE_DRAGON_CLAW, target: playerLeft);
+            else
+                SCORE_EQ(opponentRight, MOVE_ORDER_UP, MOVE_DRAGON_CLAW, target: playerLeft);
+        }
     }
 }

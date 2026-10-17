@@ -17,11 +17,11 @@ SINGLE_BATTLE_TEST("Magician gets self-damage recoil after stealing Life Orb")
         ABILITY_POPUP(player, ABILITY_MAGICIAN);
         MESSAGE("Delphox stole the opposing Wobbuffet's Life Orb!");
         HP_BAR(player);
-        MESSAGE("Delphox was hurt by the Life Orb!");
+        MESSAGE("Delphox lost some of its HP!");
         // 2nd turn - Life Orb recoil happens now
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
         HP_BAR(player);
-        MESSAGE("Delphox was hurt by the Life Orb!");
+        MESSAGE("Delphox lost some of its HP!");
     } THEN {
         EXPECT_EQ(player->item, ITEM_LIFE_ORB);
         EXPECT_EQ(opponent->item, ITEM_NONE);
@@ -33,7 +33,7 @@ DOUBLE_BATTLE_TEST("Magician prioritizes opponents over allies among valid targe
     u32 playerRightSpeed = 0;
     u32 opponentLeftSpeed = 0;
     u32 opponentRightSpeed = 0;
-    u32 expectedItem = ITEM_NONE;
+    enum Item expectedItem = ITEM_NONE;
 
     PARAMETRIZE { playerRightSpeed = 4; opponentLeftSpeed = 2; opponentRightSpeed = 3; expectedItem = ITEM_ULTRA_BALL; }
     PARAMETRIZE { playerRightSpeed = 3; opponentLeftSpeed = 4; opponentRightSpeed = 2; expectedItem = ITEM_GREAT_BALL; }
@@ -232,5 +232,26 @@ SINGLE_BATTLE_TEST("Magician does not activate if user faints from Rocky Helmet 
     } THEN {
         EXPECT_EQ(player->item, ITEM_NONE);
         EXPECT_EQ(opponent->item, ITEM_ROCKY_HELMET);
+    }
+}
+
+SINGLE_BATTLE_TEST("Magician allows activation of stolen Throat Spray")
+{
+    GIVEN {
+        ASSUME(GetItemHoldEffect(ITEM_THROAT_SPRAY) == HOLD_EFFECT_THROAT_SPRAY);
+        ASSUME(IsSoundMove(MOVE_HYPER_VOICE));
+        PLAYER(SPECIES_DELPHOX) { Ability(ABILITY_MAGICIAN); Item(ITEM_NONE); }
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_THROAT_SPRAY); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_HYPER_VOICE); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_VOICE, player);
+        ABILITY_POPUP(player, ABILITY_MAGICIAN);
+        MESSAGE("Delphox stole the opposing Wobbuffet's Throat Spray!");
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
+    } THEN {
+        EXPECT_EQ(player->item, ITEM_NONE);
+        EXPECT_EQ(opponent->item, ITEM_NONE);
+        EXPECT_GT(player->statStages[STAT_SPATK], DEFAULT_STAT_STAGE);
     }
 }

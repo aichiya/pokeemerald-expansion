@@ -845,6 +845,12 @@ static void AnimFireSpiralOutward_Step2(struct Sprite *sprite)
 // Animates first stage of Eruption where the attacker squishes and launches rocks away from themself
 void AnimTask_EruptionLaunchRocks(u8 taskId)
 {
+    if (!TryLoadSpriteAssets(&gEruptionLaunchRockSpriteTemplate))
+    {
+        DestroyAnimVisualTask(taskId);
+        return;
+    }
+
     struct Task *task = &gTasks[taskId];
 
     task->tAttackerSpriteId = GetAnimBattlerSpriteId(ANIM_ATTACKER);
@@ -990,7 +996,7 @@ static void CreateEruptionLaunchRocks(u8 spriteId, u8 taskId, u8 activeSpritesId
 
     for (i = 0, j = 0; i <= 6; i++)
     {
-        u8 spriteId = CreateSprite(&gEruptionLaunchRockSpriteTemplate, x, y, 2);
+        u8 spriteId = CreateSpriteUnchecked(&gEruptionLaunchRockSpriteTemplate, x, y, 2);
 
         if (spriteId != MAX_SPRITES)
         {
@@ -1249,7 +1255,7 @@ static void AnimWillOWispFire(struct Sprite *sprite)
 
     if (IsDoubleBattle()
      && !IsContest()
-     && IsBattlerAlive(BATTLE_PARTNER(gBattleAnimTarget))
+     && IsBattlerAlive(GetPartnerBattler(gBattleAnimTarget))
      && GetMoveTarget(gAnimMoveIndex) == TARGET_BOTH)
         SetAverageBattlerPositions(gBattleAnimTarget, TRUE, &sprite->x, &sprite->y);
 
@@ -1285,7 +1291,7 @@ void AnimTask_MoveHeatWaveTargets(u8 taskId)
     struct Task *task = &gTasks[taskId];
 
     task->data[12] = IsOnPlayerSide(gBattleAnimAttacker) ? 1 : -1;
-    task->data[13] = IsBattlerSpriteVisible(BATTLE_PARTNER(gBattleAnimTarget)) + 1;
+    task->data[13] = IsBattlerSpriteVisible(GetPartnerBattler(gBattleAnimTarget)) + 1;
     task->data[14] = GetAnimBattlerSpriteId(ANIM_TARGET);
     task->data[15] = GetAnimBattlerSpriteId(ANIM_DEF_PARTNER);
 

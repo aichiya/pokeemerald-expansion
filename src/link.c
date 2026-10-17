@@ -155,7 +155,7 @@ static void SendRecvDone(void);
 
 static const u16 sWirelessLinkDisplayPal[] = INCGFX_U16("graphics/link/wireless_display.png", ".gbapal");
 static const u32 sWirelessLinkDisplayGfx[] = INCGFX_U32("graphics/link/wireless_display.png", ".4bpp.smol");
-static const u32 sWirelessLinkDisplayTilemap[] = INCBIN_U32("graphics/link/wireless_display.bin.smolTM");
+static const u32 sWirelessLinkDisplayTilemap[] = INCGFX_U32("graphics/link/wireless_display.bin", ".smolTM");
 static const u16 sLinkTestDigitsPal[] = INCGFX_U16("graphics/link/test_digits.png", ".gbapal");
 static const u16 sLinkTestDigitsGfx[] = INCGFX_U16("graphics/link/test_digits.png", ".4bpp");
 static const u8 sUnusedTransparentWhite[] = _("{BACKGROUND TRANSPARENT}{ACCENT TRANSPARENT}{COLOR WHITE}");
@@ -498,7 +498,7 @@ static void HandleReceiveRemoteLinkPlayer(u8 who)
     {
         count += gRemoteLinkPlayersNotReceived[i];
     }
-    if (count == 0 && gReceivedRemoteLinkPlayers == 0)
+    if (count == 0 && !gReceivedRemoteLinkPlayers)
     {
         gReceivedRemoteLinkPlayers = 1;
     }
@@ -1760,19 +1760,19 @@ bool8 HandleLinkConnection(void)
 
 void SetWirelessCommType1(void)
 {
-    if (gReceivedRemoteLinkPlayers == 0)
+    if (!gReceivedRemoteLinkPlayers)
         gWirelessCommType = 1;
 }
 
 static void SetWirelessCommType0_Internal(void)
 {
-    if (gReceivedRemoteLinkPlayers == 0)
+    if (!gReceivedRemoteLinkPlayers)
         gWirelessCommType = 0;
 }
 
 void SetWirelessCommType0(void)
 {
-    if (gReceivedRemoteLinkPlayers == 0)
+    if (!gReceivedRemoteLinkPlayers)
         gWirelessCommType = 0;
 }
 
@@ -2133,6 +2133,9 @@ static bool8 DoHandshake(void)
     u8 i;
     u8 playerCount;
     u16 minRecv;
+#ifdef UBFIX
+    u64 recvSiomlt;
+#endif
 
     playerCount = 0;
     minRecv = 0xFFFF;
@@ -2144,7 +2147,12 @@ static bool8 DoHandshake(void)
     {
         REG_SIOMLT_SEND = SLAVE_HANDSHAKE;
     }
+#ifdef UBFIX
+    recvSiomlt = REG_SIOMLT_RECV;
+    memcpy(gLink.handshakeBuffer, &recvSiomlt, sizeof(gLink.handshakeBuffer));
+#else
     *(u64 *)gLink.handshakeBuffer = REG_SIOMLT_RECV;
+#endif
     REG_SIOMLT_RECV = 0;
     gLink.handshakeAsMaster = FALSE;
     for (i = 0; i < MAX_LINK_PLAYERS; i++)
@@ -2184,8 +2192,13 @@ static void DoRecv(void)
     u16 recv[4];
     u8 i;
     u8 index;
+#ifdef UBFIX
+    u64 recvSiomlt = REG_SIOMLT_RECV;
 
+    memcpy(recv, &recvSiomlt, sizeof(recv));
+#else
     *(u64 *)recv = REG_SIOMLT_RECV;
+#endif
     if (gLink.sendCmdIndex == 0)
     {
         for (i = 0; i < gLink.playerCount; i++)
@@ -2283,20 +2296,6 @@ static void SendRecvDone(void)
     else if (gLink.isMaster)
     {
         REG_TM3CNT_H |= TIMER_ENABLE;
-    }
-}
-
-void ResetSendBuffer(void)
-{
-    u8 i;
-    u8 j;
-
-    gLink.sendQueue.count = 0;
-    gLink.sendQueue.pos = 0;
-    for (i = 0; i < CMD_LENGTH; i++)
-    {
-        for (j = 0; j < QUEUE_CAPACITY; j++)
-            gLink.sendQueue.data[i][j] = LINKCMD_NONE;
     }
 }
 

@@ -6753,7 +6753,7 @@ u32 IsAbilityPreventingEscape(enum BattlerId battler)
     return 0;
 }
 
-bool32 CanBattlerEscape(enum BattlerId battler) // no ability check
+bool32 CanBattlerEscape(enum BattlerId battler)
 {
     enum Ability ability = GetBattlerAbility(battler);
     if (gBattleStruct->battlerState[battler].commanderSpecies != SPECIES_NONE)
@@ -6763,6 +6763,8 @@ bool32 CanBattlerEscape(enum BattlerId battler) // no ability check
     else if (GetConfig(B_RUN_AWAY) >= GEN_CHAMPIONS && ability == ABILITY_RUN_AWAY)
         return TRUE;
     else if (gBattleMons[battler].volatiles.escapePrevention)
+        return FALSE;
+    else if (IsBattlerJawLocked(battler))
         return FALSE;
     else if (gBattleMons[battler].volatiles.wrapped)
         return FALSE;
@@ -11841,7 +11843,7 @@ void TryRestoreHeldItems(void)
 {
     for (enum BattleTrainer trainer = 0; trainer < gBattlersCount; trainer++)
     {
-        for (enum PartyMon i = PARTY_MON_0; i < PARTY_MON_NONE; i++)
+        for (enum PartyMon i = PARTY_MON_0; i < gPartiesCount[trainer]; i++)
         {
             struct LostItem *lostItem = GetLostItemState(trainer, i);
             enum Item originaItem = lostItem->originalItem;
@@ -11935,9 +11937,10 @@ void TrySaveExchangedItem(enum BattlerId battler, enum Item stolenItem)
     if (GetBattlerTrainer(battler) != B_TRAINER_PLAYER)
         return;
 
+    struct LostItem *lostItem = GetLostItemState(B_TRAINER_PLAYER, gBattlerPartyIndexes[battler]);
     // If regular trainer battle and mon's original item matches what is being stolen, save it to be restored at end of battle
-    if (stolenItem == gBattleStruct->itemLost[B_TRAINER_PLAYER][gBattlerPartyIndexes[battler]].originalItem)
-        gBattleStruct->itemLost[B_TRAINER_PLAYER][gBattlerPartyIndexes[battler]].stolen = TRUE;
+    if (stolenItem == lostItem->originalItem)
+        lostItem->stolen = TRUE;
 }
 
 bool32 IsBattlerAffectedByHazards(enum BattlerId battler, enum HoldEffect holdEffect, bool32 toxicSpikes)
@@ -13927,4 +13930,18 @@ bool32 IsWholeSideAlive(enum BattlerId sideBattler)
             return FALSE;
     }
     return TRUE;
+}
+
+bool32 IsBattlerJawLocked(enum BattlerId battler)
+{
+    if (gBattleMons[battler].volatiles.jawLock != 0)
+        return TRUE;
+
+    for (enum BattlerId lockedWithBattler = 0; lockedWithBattler < gBattlersCount; lockedWithBattler++)
+    {
+        if (gBattleMons[lockedWithBattler].volatiles.jawLock & 1u << battler)
+            return TRUE;
+    }
+
+    return FALSE;
 }

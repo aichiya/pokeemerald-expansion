@@ -696,6 +696,12 @@ void BattleLoadMonSpriteGfx(struct Pokemon *mon, enum BattlerId battler)
         BlendPalette(paletteOffset, 16, 8, GetTeraTypeRGB(GetBattlerTeraType(battler)));
         CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
     }
+
+    if (gBattleMons[battler].isShadow)
+    {
+        BlendPalette(paletteOffset, 16, 6, RGB(9, 2, 21));
+        CpuCopy32(gPlttBufferFaded + paletteOffset, gPlttBufferUnfaded + paletteOffset, PLTT_SIZEOF(16));
+    }
 }
 
 void BattleGfxSfxDummy2(enum Species species)

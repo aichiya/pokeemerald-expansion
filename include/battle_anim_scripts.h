@@ -936,6 +936,9 @@ extern const u8 gBattleAnimMove_ShadowBolt[];
 extern const u8 gBattleAnimMove_ShadowChill[];
 extern const u8 gBattleAnimMove_ShadowHalf[];
 extern const u8 gBattleAnimMove_ShadowSky[];
+extern const u8 gBattleAnimMove_ShadowBlast[];
+extern const u8 gBattleAnimMove_ShadowShed[];
+extern const u8 gBattleAnimMove_ShadowStorm[];
 // Custom Added End
 extern const u8 gBattleAnimMove_BreakneckBlitz[];
 extern const u8 gBattleAnimMove_AllOutPummeling[];

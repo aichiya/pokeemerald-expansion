@@ -15055,7 +15055,6 @@ CeaselessEdgeSlashes:
 	createsprite gSpriteTemplate_CeaselessEdgeSlash, ANIM_TARGET, 2, 8, -4, FALSE, TRUE
 	return
 
-
 gBattleAnimMove_BleakwindStorm::
 	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 88, 1
@@ -20513,6 +20512,100 @@ gBattleAnimMove_PoseidonForce::
 	visible ANIM_ATTACKER
 	waitforvisualfinish
 	end
+
+gBattleAnimMove_ShadowStorm::
+	fadetobg BG_BLACK_HOLE_ECLIPSE
+	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 0, 0, 13, RGB(9, 2, 21) @ Darkish Purple
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 88, 1
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 1, 0, 88, 1
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_TARGET | F_PAL_DEF_PARTNER), 4, 0, 11, RGB(9, 2, 21)
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_GUST, 0, 12, 12, RGB(9, 2, 21)
+@	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_ICE_CRYSTALS, 0, 12, 12, RGB(9, 2, 21)
+@	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_SPARK_2, 0, 12, 12, RGB(9, 2, 21)
+@	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_SMALL_EMBER, 0, 12, 12, RGB(9, 2, 21)
+	call HurricaneGustCentered
+	call BleakwindStormIceSwirl
+	call HurricaneGustCentered
+	call WildboltStormSparkSwirl
+	call HurricaneGustCentered
+	call SandsearStormFireSpin
+	call HurricaneGustCentered
+	call BleakwindStormIceSwirl
+	call HurricaneGustCentered
+	call WildboltStormSparkSwirl
+	call HurricaneGustCentered
+	call SandsearStormFireSpin
+	waitforvisualfinish
+	stopsound
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_TARGET | F_PAL_DEF_PARTNER), 1, 11, 0, RGB(9, 2, 21)
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 0, 0, 13, RGB(9, 2, 21) @ Darkish Purple
+	waitforvisualfinish
+	call UnsetBackground
+	end
+
+gBattleAnimMove_ShadowShed::
+	monbg ANIM_ATTACKER
+	setalpha 12, 8
+	playsewithpan SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 0, 0, 13, RGB(9, 2, 21) @ Darkish Purple
+	createsprite gLusterPurgeCircleSpriteTemplate, ANIM_ATTACKER, 41, 0, 0, 0, 0
+	delay 20
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 5, 5, 2, 0, 16, (RGB(9, 2, 21) | RGB_ALPHA)
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_WHITE_CIRCLE_OF_LIGHT, 2, 0, 16, -1
+	waitforvisualfinish
+	waitforvisualfinish
+	delay 16
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 5, 5, 2, 16, 0, (RGB(9, 2, 21) | RGB_ALPHA)
+	waitforvisualfinish
+	clearmonbg ANIM_ATTACKER
+	blendoff
+	end
+
+gBattleAnimMove_ShadowBlast::
+	monbg ANIM_DEF_PARTNER
+	fadetobg BG_BLACK_HOLE_ECLIPSE
+	waitforvisualfinish
+	splitbgprio ANIM_TARGET
+	setalpha 12, 8
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 0, 0, 13, RGB(9, 2, 21) @ Darkish Purple
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_AIR_WAVE_2, 0, 12, 12, RGB(25, 0, 31)
+	call ShadowBlastBeam
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 5, 0, 50, 1
+	call ShadowBlastBeam
+	call ShadowBlastBeam
+	call ShadowBlastBeam
+	call ShadowBlastBeam
+	waitforvisualfinish
+	create_basic_hitsplat_sprite ANIM_ATTACKER, 2, x=0, y=0, relative_to=ANIM_TARGET, animation=0
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 0, 13, 0, RGB(9, 2, 21) @ Darkish Purple
+	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	delay 0
+	call UnsetBackground
+	end
+ShadowBlastBeam:
+	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
+	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 14, -12, 0, -12, 15, 0, 0
+	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 26, 8, 12, 8, 15, 0, 0
+	delay 3
+	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
+	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 14, -12, 0, -12, 15, 1, 0
+	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 26, 8, 12, 8, 15, 1, 0
+	delay 3
+	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
+	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 14, -12, 0, -12, 15, 2, 0
+	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 26, 8, 12, 8, 15, 2, 0
+	delay 3
+	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_ATTACKER
+	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 14, -12, 0, -12, 15, 3, 0
+	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 26, 8, 12, 8, 15, 3, 0
+	delay 3
+	return
 
 gBattleAnimMove_ShadowFire::
 	monbg ANIM_DEF_PARTNER

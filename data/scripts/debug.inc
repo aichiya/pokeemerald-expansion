@@ -206,8 +206,10 @@ Debug_EventScript_Text_DefensiveIVs:
 
 Debug_EventScript_Script_1::
 	lock
-	seteventmon SPECIES_MOE_MEW, 30
-	special BattleSetup_StartLegendaryBattle
+@	seteventmon SPECIES_MOE_LUGIA_SHADOW, 100
+@	special BattleSetup_StartLegendaryBattle
+	setwildbattle SPECIES_MOE_LUGIA_SHADOW, 50
+	dowildbattle
 	release
 	end
 

@@ -1035,6 +1035,26 @@ static void HandleSetEffectEerieSpell(struct BattleCalcValues *cv, struct SetEff
         if (gBattleMons[se->effectBattler].pp[i] < ppToDeduct)
             ppToDeduct = gBattleMons[se->effectBattler].pp[i];
 
+        if (moveToReduce == MOVE_EX_SHADOW_BLITZ
+         || moveToReduce == MOVE_EX_SHADOW_RUSH
+         || moveToReduce == MOVE_EX_SHADOW_BREAK
+         || moveToReduce == MOVE_EX_SHADOW_END
+         || moveToReduce == MOVE_EX_SHADOW_WAVE
+         || moveToReduce == MOVE_EX_SHADOW_RAVE
+         || moveToReduce == MOVE_EX_SHADOW_STORM
+         || moveToReduce == MOVE_EX_SHADOW_FIRE
+         || moveToReduce == MOVE_EX_SHADOW_BOLT
+         || moveToReduce == MOVE_EX_SHADOW_CHILL
+         || moveToReduce == MOVE_EX_SHADOW_BLAST
+         || moveToReduce == MOVE_EX_SHADOW_SKY
+         || moveToReduce == MOVE_EX_SHADOW_HOLD
+         || moveToReduce == MOVE_EX_SHADOW_MIST
+         || moveToReduce == MOVE_EX_SHADOW_PANIC
+         || moveToReduce == MOVE_EX_SHADOW_DOWN
+         || moveToReduce == MOVE_EX_SHADOW_SHED
+         || moveToReduce == MOVE_EX_SHADOW_HALF)
+            ppToDeduct = 0;
+
         PREPARE_MOVE_BUFFER(gBattleTextBuff1, moveToReduce)
         ConvertIntToDecimalStringN(gBattleTextBuff2, ppToDeduct, STR_CONV_MODE_LEFT_ALIGN, 1);
         PREPARE_BYTE_NUMBER_BUFFER(gBattleTextBuff2, 1, ppToDeduct)
@@ -1681,6 +1701,26 @@ static void HandleSetEffectSpite(struct BattleCalcValues *cv, struct SetEffect *
 
         if (gBattleMons[se->effectBattler].pp[moveSlot] < ppToDeduct)
             ppToDeduct = gBattleMons[se->effectBattler].pp[moveSlot];
+
+        if (lastMove == MOVE_EX_SHADOW_BLITZ
+         || lastMove == MOVE_EX_SHADOW_RUSH
+         || lastMove == MOVE_EX_SHADOW_BREAK
+         || lastMove == MOVE_EX_SHADOW_END
+         || lastMove == MOVE_EX_SHADOW_WAVE
+         || lastMove == MOVE_EX_SHADOW_RAVE
+         || lastMove == MOVE_EX_SHADOW_STORM
+         || lastMove == MOVE_EX_SHADOW_FIRE
+         || lastMove == MOVE_EX_SHADOW_BOLT
+         || lastMove == MOVE_EX_SHADOW_CHILL
+         || lastMove == MOVE_EX_SHADOW_BLAST
+         || lastMove == MOVE_EX_SHADOW_SKY
+         || lastMove == MOVE_EX_SHADOW_HOLD
+         || lastMove == MOVE_EX_SHADOW_MIST
+         || lastMove == MOVE_EX_SHADOW_PANIC
+         || lastMove == MOVE_EX_SHADOW_DOWN
+         || lastMove == MOVE_EX_SHADOW_SHED
+         || lastMove == MOVE_EX_SHADOW_HALF)
+            ppToDeduct = 0;
 
         PREPARE_MOVE_BUFFER(gBattleTextBuff1, lastMove)
 

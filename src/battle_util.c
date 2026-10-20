@@ -2181,7 +2181,8 @@ enum WeatherFailure TryChangeBattleWeather(enum BattlerId battler, u32 battleWea
     if (gBattleWeather & B_WEATHER_PRIMAL_ANY
           && ability != ABILITY_DESOLATE_LAND
           && ability != ABILITY_PRIMORDIAL_SEA
-          && ability != ABILITY_DELTA_STREAM)
+          && ability != ABILITY_DELTA_STREAM
+          && ability != ABILITY_GALE_OF_DARKNESS)
     {
         return WEATHER_FAILURE_PRIMAL;
     }
@@ -4404,7 +4405,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_STRONG_WINDS, gLastUsedAbility))
                 effect++;
             break;
-        case ABILITY_BAD_END_FANTASY:
+        case ABILITY_GALE_OF_DARKNESS:
             if (shouldAbilityTrigger && TryChangeWeatherWithAbility(battler, BATTLE_WEATHER_EX_SHADOW_SKY_DEEP, gLastUsedAbility))
                 effect++;
             break;
@@ -10608,25 +10609,6 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
             mod = UQ_4_12(2.0);
     }
 
-    if ((GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_HIT
-      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_HALF
-      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_RECOIL
-      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP) 
-      && gBattleMons[ctx->battlerDef].isShadow == FALSE
-      && ctx->abilities[ctx->battlerDef] != ABILITY_MULTITYPE_LEGEND) 
-    {
-        mod = UQ_4_12(2.0);
-    }
-
-    if ((GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_HIT
-      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_HALF
-      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_RECOIL
-      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP) 
-      && gBattleMons[ctx->battlerDef].isShadow == TRUE) 
-    {
-        mod = UQ_4_12(0.5);
-    }
-
     if (FlagGet(FLAG_FANTASY_BREAKER_CHEAT) == TRUE)
     {
         if (ctx->abilities[ctx->battlerAtk] == ABILITY_FANTASY_BREAKER && ctx->abilities[ctx->battlerDef] == ABILITY_FANTASY_BREAKER)
@@ -10774,6 +10756,25 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(struct DamageCont
             AddBattlerMoveResultFlag(ctx->battlerDef, MOVE_RESULT_MISSED);
             RecordAbilityBattle(ctx->battlerDef, gBattleMons[ctx->battlerDef].ability);
         }
+    }
+
+    if ((GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_HIT
+      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_HALF
+      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_RECOIL
+      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP) 
+      && gBattleMons[ctx->battlerDef].isShadow == FALSE
+      && ctx->abilities[ctx->battlerDef] != ABILITY_MULTITYPE_LEGEND) 
+    {
+        modifier = UQ_4_12(2.0);
+    }
+
+    if ((GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_HIT
+      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_HALF
+      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_RECOIL
+      || GetMoveEffect(ctx->move) == EFFECT_EX_SHADOW_MOVE_RECOIL_CURRENT_HP) 
+      && gBattleMons[ctx->battlerDef].isShadow == TRUE) 
+    {
+        modifier = UQ_4_12(0.5);
     }
 
     if (ctx->updateFlags)

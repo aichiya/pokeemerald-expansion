@@ -53904,19 +53904,19 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //P_FAMILY_ETC_DELAST
 
 #if P_FAMILY_MOE_LUGIA
-    const u32 gMonFrontPic_MoeLugiaShadow[] = INCGFX_U32("graphics/pokemon/_add/moe/lugia/front.png", ".4bpp.smol");
-    const u16 gMonPalette_MoeLugiaShadow[] = INCGFX_U16("graphics/pokemon/_add/moe/lugia/normal.pal", ".gbapal");
-    const u32 gMonBackPic_MoeLugiaShadow[] = INCGFX_U32("graphics/pokemon/_add/moe/lugia/back.png", ".4bpp.smol");
-    const u16 gMonShinyPalette_MoeLugiaShadow[] = INCGFX_U16("graphics/pokemon/_add/moe/lugia/shiny.pal", ".gbapal");
-    const u8 gMonIcon_MoeLugiaShadow[] = INCGFX_U8("graphics/pokemon/_add/moe/lugia/icon.png", ".4bpp.rlfast");
+    const u32 gMonFrontPic_MoeLugiaShadow[] = INCGFX_U32("graphics/pokemon/_add/moe/lugia/shadow/front.png", ".4bpp.smol");
+    const u16 gMonPalette_MoeLugiaShadow[] = INCGFX_U16("graphics/pokemon/_add/moe/lugia/shadow/normal.pal", ".gbapal");
+    const u32 gMonBackPic_MoeLugiaShadow[] = INCGFX_U32("graphics/pokemon/_add/moe/lugia/shadow/back.png", ".4bpp.smol");
+    const u16 gMonShinyPalette_MoeLugiaShadow[] = INCGFX_U16("graphics/pokemon/_add/moe/lugia/shadow/shiny.pal", ".gbapal");
+    const u8 gMonIcon_MoeLugiaShadow[] = INCGFX_U8("graphics/pokemon/_add/moe/lugia/shadow/icon.png", ".4bpp.rlfast");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_MoeLugiaShadow[] = INCGFX_U8("graphics/pokemon/_add/moe/lugia/footprint.png", ".1bpp");
+    const u8 gMonFootprint_MoeLugiaShadow[] = INCGFX_U8("graphics/pokemon/_add/moe/lugia/shadow/footprint.png", ".1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-//    const u32 gObjectEventPic_MoeLugiaShadow[] = INCBIN_COMP("graphics/pokemon/_add/moe/lugia/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
+//    const u32 gObjectEventPic_MoeLugiaShadow[] = INCBIN_COMP("graphics/pokemon/_add/moe/lugia/shadow/overworld.png", ".4bpp", "-mwidth 4 -mheight 4");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-//    const u16 gOverworldPalette_MoeLugiaShadow[] = INCGFX_U16("graphics/pokemon/_add/moe/lugia/overworld_normal.pal", ".gbapal");
-//    const u16 gShinyOverworldPalette_MoeLugiaShadow[] = INCGFX_U16("graphics/pokemon/_add/moe/lugia/overworld_shiny.pal", ".gbapal");
+//    const u16 gOverworldPalette_MoeLugiaShadow[] = INCGFX_U16("graphics/pokemon/_add/moe/lugia/shadow/overworld_normal.pal", ".gbapal");
+//    const u16 gShinyOverworldPalette_MoeLugiaShadow[] = INCGFX_U16("graphics/pokemon/_add/moe/lugia/shadow/overworld_shiny.pal", ".gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MOE_LUGIA

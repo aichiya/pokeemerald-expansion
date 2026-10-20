@@ -696,7 +696,7 @@ Mugshot: Blue
 
 SPECIES_MOE_CHARIZARD @ ITEM_CHARIZARDITE_Y
 Ability: ABILITY_SOLAR_POWER
-Level: 70
+Level: 100
 Timid Nature
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 EVs: 6 HP / 252 Atk / 252 SpD
@@ -710,7 +710,7 @@ Ability: ABILITY_CHLOROPHYLL
 Gigantamax: Yes
 Dynamax Level: 10
 Jolly Nature
-Level: 70
+Level: 100
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 200 Atk / 200 SpA / 110 Spe 
 - MOVE_SOLAR_BLADE
@@ -719,7 +719,7 @@ EVs: 200 Atk / 200 SpA / 110 Spe
 - MOVE_FORBIDDEN_TEMPTATION
 
 SPECIES_MOE_BLASTOISE @ ITEM_LEFTOVERS
-Level: 70
+Level: 100
 Sassy Nature
 Ability: ABILITY_FILTER
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -730,7 +730,7 @@ EVs: 110 HP / 200 Def / 200 SpD
 - MOVE_IRON_HEAD
 
 SPECIES_MOE_CELEBI @ ITEM_LIFE_ORB
-Level: 70
+Level: 100
 Timid Nature
 Ability: ABILITY_MISTY_SURGE
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -741,7 +741,7 @@ EVs: 6 HP / 252 SpA / 252 Spe
 - MOVE_PROTECT
 
 SPECIES_MOE_MEW @ ITEM_MEWNIUM_Z
-Level: 70
+Level: 100
 Timid Nature
 Ability: ABILITY_PRANKSTER
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -752,7 +752,7 @@ EVs: 6 HP / 252 SpA / 252 Spe
 - MOVE_PROTECT
 
 SPECIES_ETC_ARCEUS_TH @ ITEM_BRIGHT_POWDER
-Level: 70
+Level: 100
 Modest Nature
 Tera Type: Stellar
 Ability: ABILITY_MULTITYPE_LEGEND

@@ -497,7 +497,7 @@ enum __attribute__((packed)) Ability
     ABILITY_BRILIANT_STAR = (ABILITY_OFFICIAL_END + 152), // Mold Breaker + Team Acc up + Psychic Surge
     ABILITY_MOON_CRYSTAL = (ABILITY_OFFICIAL_END + 153), // Uses defense stats for attacking
     ABILITY_CHAOS_SKY = (ABILITY_OFFICIAL_END + 154), // Shadow Sky when entering battle
-    ABILITY_BAD_END_FANTASY = (ABILITY_OFFICIAL_END + 155), // Deep Shadow Sky when entering battle
+    ABILITY_GALE_OF_DARKNESS = (ABILITY_OFFICIAL_END + 155), // Deep Shadow Sky when entering battle
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

@@ -3981,6 +3981,20 @@ static void Cmd_getexp(void)
                             gBattleStruct->battlerExpReward = gExperienceTables[growthRate][levelCap] - currentExp;
                     }
 
+                    if (GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_IS_SHADOW) == TRUE)
+                    {
+                            if (gSaveBlock1Ptr->shadowLugiaStoredExp + gBattleStruct->battlerExpReward > 2000000)
+                            {
+                                gSaveBlock1Ptr->shadowLugiaStoredExp = 2000000;
+                            }
+                            else
+                            {
+                                gSaveBlock1Ptr->shadowLugiaStoredExp = gSaveBlock1Ptr->shadowLugiaStoredExp + gBattleStruct->battlerExpReward;
+                            }
+
+                            gBattleStruct->battlerExpReward = 0;
+                    }
+
                     if (IsTradedMon(&gParties[B_TRAINER_PLAYER][*expMonId]))
                     {
                         i = STRINGID_ABOOSTED;
@@ -4006,7 +4020,10 @@ static void Cmd_getexp(void)
                         gBattleStruct->teamGotExpMsgPrinted = TRUE;
                     }
 
-                    MonGainEVs(&gParties[B_TRAINER_PLAYER][*expMonId], faintedSpecies);
+                    if (GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_IS_SHADOW) == FALSE)
+                    {
+                        MonGainEVs(&gParties[B_TRAINER_PLAYER][*expMonId], faintedSpecies);
+                    }
                 }
                 gBattleScripting.getexpState++;
             }
@@ -8717,7 +8734,7 @@ static void TryClearPrimalWeather(void)
         if (((ability == ABILITY_DESOLATE_LAND && gBattleWeather & B_WEATHER_SUN_PRIMAL)
           || (ability == ABILITY_PRIMORDIAL_SEA && gBattleWeather & B_WEATHER_RAIN_PRIMAL)
           || (ability == ABILITY_DELTA_STREAM && gBattleWeather & B_WEATHER_STRONG_WINDS)
-          || (ability == ABILITY_BAD_END_FANTASY && gBattleWeather & B_WEATHER_EX_SHADOW_SKY_DEEP)))
+          || (ability == ABILITY_GALE_OF_DARKNESS && gBattleWeather & B_WEATHER_EX_SHADOW_SKY_DEEP)))
             return; // Keep primal weather
     }
 
@@ -8736,7 +8753,7 @@ static void TryClearPrimalWeather(void)
         gBattleWeather &= ~B_WEATHER_STRONG_WINDS;
         PrepareStringBattleWithWait(STRINGID_STRONGWINDSDISSIPATED, gBattlerAttacker);
     }
-    else if (gBattleWeather & B_WEATHER_STRONG_WINDS)
+    else if (gBattleWeather & B_WEATHER_EX_SHADOW_SKY_DEEP)
     {
         gBattleWeather &= ~B_WEATHER_EX_SHADOW_SKY_DEEP;
         PrepareStringBattleWithWait(STRINGID_STRONGWINDSDISSIPATED, gBattlerAttacker);

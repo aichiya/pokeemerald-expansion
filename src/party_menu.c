@@ -5826,7 +5826,11 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
     u8 holdEffectParam = GetItemHoldEffectParam(*itemPtr);
 
     sInitialLevel = GetMonData(mon, MON_DATA_LEVEL);
-    if (!(B_RARE_CANDY_CAP && sInitialLevel >= GetCurrentLevelCap()))
+    if (GetMonData(mon, MON_DATA_IS_SHADOW) == TRUE)
+    {
+        cannotUseEffect = TRUE;
+    }
+    else if (!(B_RARE_CANDY_CAP && sInitialLevel >= GetCurrentLevelCap()))
     {
         BufferMonStatsToTaskData(mon, arrayPtr);
         cannotUseEffect = ExecuteTableBasedItemEffect(mon, *itemPtr, (enum PartyMon)gPartyMenu.slotId, 0);
@@ -5848,7 +5852,10 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
 
         if (holdEffectParam == 0) // Rare Candy
         {
-            targetSpecies = GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, &canStopEvo, CHECK_EVO);
+            if (GetMonData(mon, MON_DATA_IS_SHADOW) == TRUE)
+                targetSpecies = SPECIES_NONE;
+            else
+                targetSpecies = GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, &canStopEvo, CHECK_EVO);
         }
 
         if (targetSpecies != SPECIES_NONE)

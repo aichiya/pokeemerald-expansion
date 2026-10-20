@@ -3293,6 +3293,10 @@ static void PrintNotEggInfo(void)
         ConvertIntToDecimalStringN(gStringVar2, summary->level, STR_CONV_MODE_LEFT_ALIGN, 3);
 
     StringAppend(gStringVar1, gStringVar2);
+    if (summary->isShadow == TRUE)
+    {
+        StringAppend(gStringVar1, COMPOUND_STRING("+"));
+    }
     PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_SPECIES, gStringVar1, 24, 17, 0, 1);
 
     if (BXPY_SummaryScreen_HideSpecies(sMonSummaryScreen->mode))
@@ -3611,10 +3615,17 @@ static void PrintMonOTName(void)
         windowId = AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ORIGINAL_TRAINER);
         PrintTextOnWindow(windowId, gText_OTSlash, 0, 1, 0, 1);
         x = GetStringWidth(FONT_NORMAL, gText_OTSlash, 0);
-        if (sMonSummaryScreen->summary.OTGender == 0)
-            PrintTextOnWindow(windowId, sMonSummaryScreen->summary.OTName, x, 1, 0, 5);
+        if (sMonSummaryScreen->summary.isShadow == TRUE)
+        {
+            PrintTextOnWindow(windowId, gText_FiveMarks, x, 1, 0, 1);
+        }
         else
-            PrintTextOnWindow(windowId, sMonSummaryScreen->summary.OTName, x, 1, 0, 6);
+        {
+            if (sMonSummaryScreen->summary.OTGender == 0)
+                PrintTextOnWindow(windowId, sMonSummaryScreen->summary.OTName, x, 1, 0, 5);
+            else
+                PrintTextOnWindow(windowId, sMonSummaryScreen->summary.OTName, x, 1, 0, 6);
+        }
     }
 }
 
@@ -3623,9 +3634,19 @@ static void PrintMonOTID(void)
     int xPos;
     if (InBattleFactory() != TRUE && InSlateportBattleTent() != TRUE && BXPY_IsSummaryScreenForEnemy(sMonSummaryScreen->mode) != TRUE)
     {
-        ConvertIntToDecimalStringN(StringCopy(gStringVar1, gText_IDNumber2), (u16)sMonSummaryScreen->summary.OTID, STR_CONV_MODE_LEADING_ZEROS, 5);
-        xPos = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar1, 56);
-        PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ID), gStringVar1, xPos, 1, 0, 1);
+        if (sMonSummaryScreen->summary.isShadow == TRUE)
+        {
+            StringCopy(gStringVar1, gText_IDNumber2);
+            StringAppend(gStringVar1, gText_FiveMarks);
+            xPos = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar1, 56);
+            PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ID), gStringVar1, xPos, 1, 0, 1);
+        }
+        else
+        {
+            ConvertIntToDecimalStringN(StringCopy(gStringVar1, gText_IDNumber2), (u16)sMonSummaryScreen->summary.OTID, STR_CONV_MODE_LEADING_ZEROS, 5);
+            xPos = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar1, 56);
+            PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ID), gStringVar1, xPos, 1, 0, 1);
+        }
     }
 }
 
@@ -9470,7 +9491,8 @@ static inline bool32 ShouldShowRename(void)
          && sMonSummaryScreen->mode != SUMMARY_MODE_BOX_CURSOR
          && !InBattleFactory()
          && !InSlateportBattleTent()
-         && GetPlayerIDAsU32() == sMonSummaryScreen->summary.OTID);
+         && GetPlayerIDAsU32() == sMonSummaryScreen->summary.OTID
+         && !sMonSummaryScreen->summary.isShadow);
 }
 
 static inline bool32 ShouldShowIvEvPrompt(void)

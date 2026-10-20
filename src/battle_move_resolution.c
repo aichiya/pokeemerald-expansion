@@ -1071,6 +1071,25 @@ static enum CancelerResult CancelerPPDeduction(struct BattleCalcValues *cv)
 
     if (GetBattlerAbility(cv->battlerAtk) == ABILITY_GRIMOIRE_USER)
         ppToDeduct = 0;
+    if (cv->move == MOVE_EX_SHADOW_BLITZ
+     || cv->move == MOVE_EX_SHADOW_RUSH
+     || cv->move == MOVE_EX_SHADOW_BREAK
+     || cv->move == MOVE_EX_SHADOW_END
+     || cv->move == MOVE_EX_SHADOW_WAVE
+     || cv->move == MOVE_EX_SHADOW_RAVE
+     || cv->move == MOVE_EX_SHADOW_STORM
+     || cv->move == MOVE_EX_SHADOW_FIRE
+     || cv->move == MOVE_EX_SHADOW_BOLT
+     || cv->move == MOVE_EX_SHADOW_CHILL
+     || cv->move == MOVE_EX_SHADOW_BLAST
+     || cv->move == MOVE_EX_SHADOW_SKY
+     || cv->move == MOVE_EX_SHADOW_HOLD
+     || cv->move == MOVE_EX_SHADOW_MIST
+     || cv->move == MOVE_EX_SHADOW_PANIC
+     || cv->move == MOVE_EX_SHADOW_DOWN
+     || cv->move == MOVE_EX_SHADOW_SHED
+     || cv->move == MOVE_EX_SHADOW_HALF)
+        ppToDeduct = 0;
 
     // For item Metronome, echoed voice
     if (cv->move != gLastResultingMoves[cv->battlerAtk] || gBattleStruct->unableToUseMove)

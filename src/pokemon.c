@@ -1447,6 +1447,22 @@ void CreateMon(struct Pokemon *mon, enum Species species, u8 level, u32 personal
     SetMonData(mon, MON_DATA_LEVEL, &level);
     mail = MAIL_NONE;
     SetMonData(mon, MON_DATA_MAIL, &mail);
+
+    u16 speciesCheck = GetMonData(mon, MON_DATA_SPECIES);
+    bool32 assignData = FALSE;
+    u16 assignMove = MOVE_NONE;
+    u8 assignMetGame = 0;
+    u8 assignMetLocation = 0;
+    if (speciesCheck == SPECIES_LUGIA_SHADOW || speciesCheck == SPECIES_MOE_LUGIA_SHADOW)
+    {
+        assignData = TRUE;
+        SetMonData(mon, MON_DATA_IS_SHADOW, &assignData);
+        SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &assignData);
+        assignMetGame = VERSION_GAMECUBE;
+        SetMonData(mon, MON_DATA_MET_GAME, &assignMetGame);
+        assignMetLocation = 255;
+        SetMonData(mon, MON_DATA_MET_LOCATION, &assignMetLocation);
+    }
 }
 
 void CreateMonWithIVs(struct Pokemon *mon, enum Species species, u8 level, u32 personality, struct OriginalTrainerId trainerId, u8 fixedIV)
@@ -2656,6 +2672,16 @@ void CalculateMonStatsCont(struct Pokemon *mon, bool32 updateSpeedStat)
         u8 baseStat = GetSpeciesBaseStat(species, i);
         s32 n = (((2 * baseStat + iv[i] + ev[i] / 4) * level) / 100) + 5;
         n = ModifyStatByNature(nature, n, i);
+        if (GetMonData(mon, MON_DATA_IS_SHADOW) == TRUE)
+        {
+            if (species == SPECIES_LUGIA_SHADOW || species == SPECIES_MOE_LUGIA_SHADOW)
+            {
+                if (i == STAT_SPEED)
+                {
+                    n = n + 9;
+                }
+            }
+        }
         if (B_FRIENDSHIP_BOOST == TRUE)
             n = n + ((n * 10 * friendship) / (MAX_FRIENDSHIP * 100));
         SetMonData(mon, MON_DATA_MAX_HP + i, &n);
@@ -2674,6 +2700,13 @@ void CalculateMonStatsCont(struct Pokemon *mon, bool32 updateSpeedStat)
     {
         s32 n = 2 * GetSpeciesBaseHP(species) + iv[STAT_HP];
         newMaxHP = (((n + ev[STAT_HP] / 4) * level) / 100) + level + 10;
+        if (GetMonData(mon, MON_DATA_IS_SHADOW) == TRUE)
+        {
+            if (species == SPECIES_LUGIA_SHADOW || species == SPECIES_MOE_LUGIA_SHADOW)
+            {
+                newMaxHP = newMaxHP + 12;
+            }
+        }
     }
 
     gBattleScripting.levelUpHP = newMaxHP - oldMaxHP;
@@ -2855,6 +2888,20 @@ void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon) //Credit: AsparagusEdua
             }
         }
     }
+    
+    u16 assignMove = MOVE_NONE;
+    if (species == SPECIES_LUGIA_SHADOW || species == SPECIES_MOE_LUGIA_SHADOW)
+    {
+        assignMove = MOVE_EX_SHADOW_BLAST;
+        moves[0] = assignMove;
+        assignMove = MOVE_EX_SHADOW_SHED;
+        moves[1] = assignMove;
+        assignMove = MOVE_EX_SHADOW_DOWN;
+        moves[2] = assignMove;
+        assignMove = MOVE_EX_SHADOW_STORM;
+        moves[3] = assignMove;
+    }
+
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         SetBoxMonData(boxMon, MON_DATA_MOVE1 + i, &moves[i]);
@@ -4781,7 +4828,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, enum Item item, enum PartyMon p
         case 3:
             // Rare Candy / EXP Candy
             if ((itemEffect[i] & ITEM3_LEVEL_UP)
-             && GetMonData(mon, MON_DATA_LEVEL) != MAX_LEVEL)
+             && GetMonData(mon, MON_DATA_LEVEL) != MAX_LEVEL
+             && GetMonData(mon, MON_DATA_IS_SHADOW) == FALSE)
             {
                 u8 param = GetItemHoldEffectParam(item);
                 dataUnsigned = 0;
@@ -6741,7 +6789,10 @@ u16 GetBattleBGM(void)
         case FRANCHISE_ORIGIN_POKEMON:      // BODY_COLOR_RED
             return MUS_HG_VS_WILD;
         case FRANCHISE_ORIGIN_MOEMON:       // BODY_COLOR_BLUE
-            if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_DIALGA_TH
+            if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_MOE_LUGIA
+             || GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_MOE_LUGIA_SHADOW)
+                return MUS_HG_VS_LUGIA;
+            else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_DIALGA_TH
              || GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_PALKIA_TH)
                 return MUS_PKMN_DP_VS_DIALGA_PALKIA;
             else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_GIRATINA_TH)
@@ -6906,6 +6957,25 @@ bool32 CannotForgetMove(enum Move move)
 {
     if (P_CAN_FORGET_HIDDEN_MOVE)
         return FALSE;
+    if (move == MOVE_EX_SHADOW_BLITZ
+     || move == MOVE_EX_SHADOW_RUSH
+     || move == MOVE_EX_SHADOW_BREAK
+     || move == MOVE_EX_SHADOW_END
+     || move == MOVE_EX_SHADOW_WAVE
+     || move == MOVE_EX_SHADOW_RAVE
+     || move == MOVE_EX_SHADOW_STORM
+     || move == MOVE_EX_SHADOW_FIRE
+     || move == MOVE_EX_SHADOW_BOLT
+     || move == MOVE_EX_SHADOW_CHILL
+     || move == MOVE_EX_SHADOW_BLAST
+     || move == MOVE_EX_SHADOW_SKY
+     || move == MOVE_EX_SHADOW_HOLD
+     || move == MOVE_EX_SHADOW_MIST
+     || move == MOVE_EX_SHADOW_PANIC
+     || move == MOVE_EX_SHADOW_DOWN
+     || move == MOVE_EX_SHADOW_SHED
+     || move == MOVE_EX_SHADOW_HALF)
+        return TRUE;
 
     return IsMoveHM(move);
 }

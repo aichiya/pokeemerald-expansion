@@ -28686,8 +28686,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Bad End Storm"),
         .description = COMPOUND_STRING(
-            "Whips up a darkness tornado\n"
-            "to tear at foes."),
+            "Whips up a darkness tornado.\n"
+            "May cause paralysis, burn, or frostbite."),
         .effect = EFFECT_EX_SHADOW_MOVE_HIT,
         .power = 95,
         .type = TYPE_MYSTERY,
@@ -28699,11 +28699,16 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .windMove = TRUE,
         .mirrorMoveBanned = TRUE,
         .metronomeBanned = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
+            .chance = 20,
+            .argument.randomMoveEffects = { MOVE_EFFECT_BURN, MOVE_EFFECT_PARALYSIS, MOVE_EFFECT_FREEZE_OR_FROSTBITE },
+        }),
         .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Twister,
+        .battleAnimScript = gBattleAnimMove_ShadowStorm,
     },
 
     [MOVE_EX_SHADOW_FIRE] =
@@ -28810,7 +28815,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Aeroblast,
+        .battleAnimScript = gBattleAnimMove_ShadowBlast,
     },
 
     [MOVE_EX_SHADOW_SKY] =
@@ -28860,6 +28865,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .ignoresProtect = TRUE,
         .mirrorMoveBanned = TRUE,
         .metronomeBanned = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_MEAN_LOOK,
+        }),
         .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
@@ -28872,7 +28880,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Bad End Mist"),
         .description = COMPOUND_STRING(
             "Creates a mist that lowers\n"
-            "foes' evasion."),
+            "foes' evasion and accuracy."),
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_MYSTERY,
@@ -28892,7 +28900,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Mist,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = STAT_CHANGE_EFFECT_MINUS,
-            .evasion = 2,
+            .evasion = 1,
+            .accuracy = 1,
         }),
     },
 
@@ -28926,8 +28935,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Bad End Down"),
         .description = COMPOUND_STRING(
-            "Emits darkness to sharply\n"
-            "reduce the foe's Defense."),
+            "Emits darkness to sharply reduce\n"
+            "the foe's Defense and Sp. Defense."),
         .effect = EFFECT_STAT_CHANGE,
         .power = 0,
         .type = TYPE_MYSTERY,
@@ -28946,7 +28955,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboMoves = {0},
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = STAT_CHANGE_EFFECT_MINUS,
-            .attack = 2,
+            .defense = 2,
+            .spDef = 2,
         }),
         .battleAnimScript = gBattleAnimMove_DestinyBond,
     },
@@ -28968,11 +28978,18 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .mirrorMoveBanned = TRUE,
         .metronomeBanned = TRUE,
         .zMove = { .effect = Z_EFFECT_ACC_UP_1 },
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_DEFOG,
+        },
+        {
+            .moveEffect = STAT_CHANGE_EFFECT_MINUS,
+            .evasion = 2,
+        }),
         .contestEffect = CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_Defog,
+        .battleAnimScript = gBattleAnimMove_ShadowShed,
     },
 
     [MOVE_EX_SHADOW_HALF] =

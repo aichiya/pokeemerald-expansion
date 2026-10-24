@@ -147,6 +147,9 @@ bool32 CanDynamax(enum BattlerId battler)
         || GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES) == SPECIES_PC_CURE_MOONLIGHT_SUPER))
         return FALSE;
 
+    if (gSpeciesInfo[species].isDynamaxBanned)
+        return FALSE;
+
     // Check if Trainer has already Dynamaxed.
     if (HasTrainerUsedGimmick(battler, GIMMICK_DYNAMAX))
         return FALSE;

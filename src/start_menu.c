@@ -363,24 +363,26 @@ static void BuildSafariZoneStartMenu(void)
 {
     if (VarGet(VAR_STORY_MAIN) <= 4)
     {
-        if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
-            AddStartMenuAction(MENU_ACTION_POKEDEX);
-        if (FlagGet(FLAG_SYS_POKEMON_GET) == TRUE)
-            AddStartMenuAction(MENU_ACTION_POKEMON);
+        AddStartMenuAction(MENU_ACTION_POKEDEX);
+        AddStartMenuAction(MENU_ACTION_POKEMON);
         AddStartMenuAction(MENU_ACTION_BAG);
         AddStartMenuAction(MENU_ACTION_PLAYER);
+    #if OW_ALLOW_SAFARI_SAVING
+        AddStartMenuAction(MENU_ACTION_SAVE);
+    #endif
         AddStartMenuAction(MENU_ACTION_OPTION);
         AddStartMenuAction(MENU_ACTION_EXIT);
     }
     else
     {
         AddStartMenuAction(MENU_ACTION_RETIRE_SAFARI);
-        if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
-            AddStartMenuAction(MENU_ACTION_POKEDEX);
-        if (FlagGet(FLAG_SYS_POKEMON_GET) == TRUE)
-            AddStartMenuAction(MENU_ACTION_POKEMON);
+        AddStartMenuAction(MENU_ACTION_POKEDEX);
+        AddStartMenuAction(MENU_ACTION_POKEMON);
         AddStartMenuAction(MENU_ACTION_BAG);
         AddStartMenuAction(MENU_ACTION_PLAYER);
+    #if OW_ALLOW_SAFARI_SAVING
+        AddStartMenuAction(MENU_ACTION_SAVE);
+    #endif
         AddStartMenuAction(MENU_ACTION_OPTION);
         AddStartMenuAction(MENU_ACTION_EXIT);
     }
@@ -449,20 +451,9 @@ static void ShowSafariBallsWindow(void)
     sSafariBallsWindowId = AddWindow(&sWindowTemplate_SafariBalls);
     PutWindowTilemap(sSafariBallsWindowId);
     DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
-    if (IS_FRLG)
-    {
-        ConvertIntToDecimalStringN(gStringVar1, gSafariZoneStepCounter, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        ConvertIntToDecimalStringN(gStringVar2, 600, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        ConvertIntToDecimalStringN(gStringVar3, gNumSafariBalls, STR_CONV_MODE_RIGHT_ALIGN, 2);
-        StringExpandPlaceholders(gStringVar4, gText_MenuSafariStats);
-        AddTextPrinterParameterized(sSafariBallsWindowId, FONT_NORMAL, gStringVar4, 4, 3, 0xFF, NULL);
-    }
-    else
-    {
-        ConvertIntToDecimalStringN(gStringVar1, gNumSafariBalls, STR_CONV_MODE_RIGHT_ALIGN, 2);
-        StringExpandPlaceholders(gStringVar4, gText_SafariBallStock);
-        AddTextPrinterParameterized(sSafariBallsWindowId, FONT_NORMAL, gStringVar4, 0, 1, TEXT_SKIP_DRAW, NULL);
-    }
+
+    PrepareStartMenuSafariString();
+    AddTextPrinterParameterized(sSafariBallsWindowId, FONT_NORMAL, gStringVar4, 0, 1, TEXT_SKIP_DRAW, NULL);
     CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
 }
 

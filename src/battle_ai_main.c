@@ -60,6 +60,7 @@ static u32 GetWindAbilityScore(enum BattlerId battlerAtk, enum BattlerId battler
 EWRAM_DATA const u8 *gAIScriptPtr = NULL;   // Still used in contests
 EWRAM_DATA AiScoreFunc sDynamicAiFunc = NULL;
 EWRAM_DATA AiSwitchFunc gDynamicAiSwitchFunc = NULL;
+EWRAM_DATA AiMonChoiceFunc gDynamicAiMonChoiceFunc = NULL;
 
 // const rom data
 static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
@@ -520,16 +521,16 @@ void AI_TrySwitchOrUseItem(enum BattlerId battler)
         {
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_SWITCH, 0);
             SetAIUsingGimmick(battler, NO_GIMMICK);
-            if (gBattleStruct->AI_monToSwitchIntoId[battler] == PARTY_MON_NONE)
+            if (gBattleStruct->AI_monToSwitchIntoId[battler] == PARTY_SLOT_NONE)
             {
-                enum PartyMon monToSwitchId = gAiLogicData->mostSuitableMonId[battler];
-                if (monToSwitchId == PARTY_MON_NONE)
+                enum PartySlot monToSwitchId = gAiLogicData->mostSuitableMonId[battler];
+                if (monToSwitchId == PARTY_SLOT_NONE)
                 {
                     GetActiveBattlerIds(battler, &battlerIn1, &battlerIn2);
 
                     for (s32 candidate = lastId - 1; candidate >= 0; candidate--)
                     {
-                        enum PartyMon partyCandidate = (enum PartyMon)candidate;
+                        enum PartySlot partyCandidate = (enum PartySlot)candidate;
 
                         if (!IsValidForBattle(&party[partyCandidate]))
                             continue;
@@ -543,7 +544,7 @@ void AI_TrySwitchOrUseItem(enum BattlerId battler)
                         break;
                     }
 
-                    if (monToSwitchId == PARTY_MON_NONE)
+                    if (monToSwitchId == PARTY_SLOT_NONE)
                     {
                         enum BattlerId battler1, battler2;
 
@@ -557,7 +558,7 @@ void AI_TrySwitchOrUseItem(enum BattlerId battler)
                             battler2 = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
                         }
 
-                        for (enum PartyMon candidate = PARTY_MON_0; candidate < lastId; candidate++)
+                        for (enum PartySlot candidate = PARTY_SLOT_0; candidate < lastId; candidate++)
                         {
                             if (IsValidForBattle(&gParties[GetBattlerTrainer(battler)][candidate])
                              && !IsPartyMonOnFieldOrChosenToSwitch(battler, candidate, battler1, battler2))
@@ -655,7 +656,7 @@ void Ai_InitPartyStruct(void)
         if (!TrainerHasParty(trainer))
             continue;
 
-        for (enum PartyMon monIndex = PARTY_MON_0; monIndex < PARTY_MON_NONE; monIndex++)
+        for (enum PartySlot monIndex = PARTY_SLOT_0; monIndex < PARTY_SLOT_NONE; monIndex++)
         {
             mon = &gParties[trainer][monIndex];
             if (GetMonData(mon, MON_DATA_SPECIES) != SPECIES_NONE)
@@ -927,7 +928,7 @@ static u32 PpStallReduction(enum Move move, enum BattlerId battlerAtk, enum Batt
     ctx.weather = GetWeather();
     ctx.terrain = gFieldTimers.terrain;
     memcpy(&backupBattleMon, &gBattleMons[tempBattleMonIndex], sizeof(struct BattlePokemon));
-    for (enum PartyMon partyIndex = PARTY_MON_0; partyIndex < PARTY_MON_NONE; partyIndex++)
+    for (enum PartySlot partyIndex = PARTY_SLOT_0; partyIndex < PARTY_SLOT_NONE; partyIndex++)
     {
         u32 currentStallValue = gAiBattleData->playerStallMons[partyIndex];
         if (currentStallValue == 0 || GetMonData(&party[partyIndex], MON_DATA_HP) == 0)
@@ -2142,7 +2143,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         if (!hasPartner
           || DoesPartnerHaveSameMoveEffect(GetPartnerBattler(battlerAtk), battlerDef, move, aiData->partnerMove)
           || (aiData->partnerMove != MOVE_NONE && IsBattleMoveStatus(aiData->partnerMove))
-          || gBattleStruct->monToSwitchIntoId[GetPartnerBattler(battlerAtk)] != PARTY_MON_NONE)
+          || gBattleStruct->monToSwitchIntoId[GetPartnerBattler(battlerAtk)] != PARTY_SLOT_NONE)
             ADJUST_SCORE(-20);
         break;
     case EFFECT_HELPING_HAND:
@@ -2153,7 +2154,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
           || aiData->abilities[GetPartnerBattler(battlerAtk)] == ABILITY_SECOND_ADVENT
           || aiData->abilities[GetPartnerBattler(battlerAtk)] == ABILITY_PRISMA_ZWEI)
           || (aiData->partnerMove != MOVE_NONE && IsBattleMoveStatus(aiData->partnerMove))
-          || gBattleStruct->monToSwitchIntoId[GetPartnerBattler(battlerAtk)] != PARTY_MON_NONE) //Partner is switching out.
+          || gBattleStruct->monToSwitchIntoId[GetPartnerBattler(battlerAtk)] != PARTY_SLOT_NONE) //Partner is switching out.
             ADJUST_SCORE(-20);
         break;
     case EFFECT_TRICK:
@@ -2977,7 +2978,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
         break;
     case EFFECT_REVIVAL_BLESSING:
-        if (GetFirstFaintedPartyIndex(battlerAtk) == PARTY_MON_NONE)
+        if (GetFirstFaintedPartyIndex(battlerAtk) == PARTY_SLOT_NONE)
             ADJUST_SCORE(-10);
         else if (CanAIFaintTarget(battlerAtk, battlerDef, 0))
             ADJUST_SCORE(-10);
@@ -3077,7 +3078,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         // Don't use a status move if the mon is the last one in the party, has no good switchin, or is trapped
         else if (GetBattleMoveCategory(move) == DAMAGE_CATEGORY_STATUS
             && (CountUsablePartyMons(battlerAtk) < 1
-            || gAiLogicData->mostSuitableMonId[battlerAtk] == PARTY_MON_NONE
+            || gAiLogicData->mostSuitableMonId[battlerAtk] == PARTY_SLOT_NONE
             || IsBattlerTrapped(battlerDef, battlerAtk)))
             ADJUST_SCORE(-30);
     }
@@ -5742,12 +5743,12 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_REVIVAL_BLESSING:
-        if (GetFirstFaintedPartyIndex(battlerAtk) != PARTY_MON_NONE)
+        if (GetFirstFaintedPartyIndex(battlerAtk) != PARTY_SLOT_NONE)
         {
             ADJUST_SCORE(DECENT_EFFECT);
             if (aiData->shouldSwitch & (1u << battlerAtk)) // Bad matchup
                 ADJUST_SCORE(WEAK_EFFECT);
-            if (aiData->mostSuitableMonId[battlerAtk] != PARTY_MON_NONE) // Good mon to send in after
+            if (aiData->mostSuitableMonId[battlerAtk] != PARTY_SLOT_NONE) // Good mon to send in after
                 ADJUST_SCORE(WEAK_EFFECT);
         }
         break;
@@ -6999,8 +7000,17 @@ void ScriptSetDynamicAiSwitchFunc(struct ScriptContext *ctx)
     gDynamicAiSwitchFunc = func;
 }
 
+void ScriptSetDynamicAiMonChoiceFunc(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1);
+
+    AiMonChoiceFunc func = (AiMonChoiceFunc)ScriptReadWord(ctx);
+    gDynamicAiMonChoiceFunc = func;
+}
+
 void ResetDynamicAiFunctions(void)
 {
     sDynamicAiFunc = NULL;
     gDynamicAiSwitchFunc = NULL;
+    gDynamicAiMonChoiceFunc = NULL;
 }

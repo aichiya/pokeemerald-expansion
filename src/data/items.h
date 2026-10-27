@@ -16099,6 +16099,1270 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_MEMORY_SHARD_G1] =
+    {
+        .name = ITEM_NAME("Memory Shard G1"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Land of Gensokyo."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_G2] =
+    {
+        .name = ITEM_NAME("Memory Shard G2"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Land of Gensokyo."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_G3] =
+    {
+        .name = ITEM_NAME("Memory Shard G3"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Land of Gensokyo."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_G4] =
+    {
+        .name = ITEM_NAME("Memory Shard G4"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Land of Gensokyo."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_G5] =
+    {
+        .name = ITEM_NAME("Memory Shard G5"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Land of Gensokyo."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_G6] =
+    {
+        .name = ITEM_NAME("Memory Shard G6"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Land of Gensokyo."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_G7] =
+    {
+        .name = ITEM_NAME("Memory Shard G7"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Land of Gensokyo."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_G8] =
+    {
+        .name = ITEM_NAME("Memory Shard G8"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Land of Gensokyo."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_G9] =
+    {
+        .name = ITEM_NAME("Memory Shard G9"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Land of Gensokyo."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_GENSOKYO_MEMORY] =
+    {
+        .name = ITEM_NAME("Memory of Gensokyo"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The complete shard\n"
+            "of memories:\n"
+            "Land of Gensokyo."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_H1] =
+    {
+        .name = ITEM_NAME("Memory Shard H1"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Bonquet of Briliance."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_H2] =
+    {
+        .name = ITEM_NAME("Memory Shard H2"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Bonquet of Briliance."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_H3] =
+    {
+        .name = ITEM_NAME("Memory Shard H3"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Bonquet of Briliance."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_H4] =
+    {
+        .name = ITEM_NAME("Memory Shard H4"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Bonquet of Briliance."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_H5] =
+    {
+        .name = ITEM_NAME("Memory Shard H5"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Bonquet of Briliance."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_H6] =
+    {
+        .name = ITEM_NAME("Memory Shard H6"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Bonquet of Briliance."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_H7] =
+    {
+        .name = ITEM_NAME("Memory Shard H7"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Bonquet of Briliance."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_H8] =
+    {
+        .name = ITEM_NAME("Memory Shard H8"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Bonquet of Briliance."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_H9] =
+    {
+        .name = ITEM_NAME("Memory Shard H9"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Bonquet of Briliance."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_HERO_MEMORY] =
+    {
+        .name = ITEM_NAME("Memory of Heroes"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The complete shard\n"
+            "of memories:\n"
+            "Bonquet of Briliance."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_K1] =
+    {
+        .name = ITEM_NAME("Memory Shard K1"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Key VA Chronicles."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_K2] =
+    {
+        .name = ITEM_NAME("Memory Shard K2"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 2:\n"
+            "Key VA Chronicles."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_K3] =
+    {
+        .name = ITEM_NAME("Memory Shard K3"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 3:\n"
+            "Key VA Chronicles."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_K4] =
+    {
+        .name = ITEM_NAME("Memory Shard K4"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 4:\n"
+            "Key VA Chronicles."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_K5] =
+    {
+        .name = ITEM_NAME("Memory Shard K5"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 5:\n"
+            "Key VA Chronicles."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_K6] =
+    {
+        .name = ITEM_NAME("Memory Shard K6"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 6:\n"
+            "Key VA Chronicles."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_K7] =
+    {
+        .name = ITEM_NAME("Memory Shard K7"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 7:\n"
+            "Key VA Chronicles."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_K8] =
+    {
+        .name = ITEM_NAME("Memory Shard K8"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 8:\n"
+            "Key VA Chronicles."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_K9] =
+    {
+        .name = ITEM_NAME("Memory Shard K9"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 9:\n"
+            "Key VA Chronicles."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_KEY_MEMORY] =
+    {
+        .name = ITEM_NAME("Memory of Key VA"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The complete shard\n"
+            "of memories:\n"
+            "Key VA Chronicles."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_C1] =
+    {
+        .name = ITEM_NAME("Memory Shard C1"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Pretty Cure."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_C2] =
+    {
+        .name = ITEM_NAME("Memory Shard C2"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 2:\n"
+            "Pretty Cure."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_C3] =
+    {
+        .name = ITEM_NAME("Memory Shard C3"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 3:\n"
+            "Pretty Cure."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_C4] =
+    {
+        .name = ITEM_NAME("Memory Shard C4"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 4:\n"
+            "Pretty Cure."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_C5] =
+    {
+        .name = ITEM_NAME("Memory Shard C5"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 5:\n"
+            "Pretty Cure."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_C6] =
+    {
+        .name = ITEM_NAME("Memory Shard C6"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 6:\n"
+            "Pretty Cure."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_C7] =
+    {
+        .name = ITEM_NAME("Memory Shard C7"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 7:\n"
+            "Pretty Cure."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_C8] =
+    {
+        .name = ITEM_NAME("Memory Shard C8"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 8:\n"
+            "Pretty Cure."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_C9] =
+    {
+        .name = ITEM_NAME("Memory Shard C9"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 9:\n"
+            "Pretty Cure."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_CURE_MEMORY] =
+    {
+        .name = ITEM_NAME("Memory of Precure"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The complete shard\n"
+            "of memories:\n"
+            "Pretty Cure."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_B1] =
+    {
+        .name = ITEM_NAME("Memory Shard B1"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Battle Girl."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_B2] =
+    {
+        .name = ITEM_NAME("Memory Shard B2"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 2:\n"
+            "Battle Girl."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_B3] =
+    {
+        .name = ITEM_NAME("Memory Shard B3"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 3:\n"
+            "Battle Girl."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_B4] =
+    {
+        .name = ITEM_NAME("Memory Shard B4"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 4:\n"
+            "Battle Girl."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_B5] =
+    {
+        .name = ITEM_NAME("Memory Shard B5"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 5:\n"
+            "Battle Girl."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_B6] =
+    {
+        .name = ITEM_NAME("Memory Shard B6"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 6:\n"
+            "Battle Girl."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_B7] =
+    {
+        .name = ITEM_NAME("Memory Shard B7"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 7:\n"
+            "Battle Girl."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_B8] =
+    {
+        .name = ITEM_NAME("Memory Shard B8"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 8:\n"
+            "Battle Girl."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_B9] =
+    {
+        .name = ITEM_NAME("Memory Shard B9"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 9:\n"
+            "Battle Girl."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_BATTLE_MEMORY] =
+    {
+        .name = ITEM_NAME("Memory of BGHS"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The complete shard\n"
+            "of memories:\n"
+            "Battle Girl."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_M1] =
+    {
+        .name = ITEM_NAME("Memory Shard M1"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Another Pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_M2] =
+    {
+        .name = ITEM_NAME("Memory Shard M2"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 2:\n"
+            "Another Pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_M3] =
+    {
+        .name = ITEM_NAME("Memory Shard M3"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 3:\n"
+            "Another Pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_M4] =
+    {
+        .name = ITEM_NAME("Memory Shard M4"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 4:\n"
+            "Another Pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_M5] =
+    {
+        .name = ITEM_NAME("Memory Shard M5"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 5:\n"
+            "Another Pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_M6] =
+    {
+        .name = ITEM_NAME("Memory Shard M6"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 6:\n"
+            "Another Pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_M7] =
+    {
+        .name = ITEM_NAME("Memory Shard M7"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 7:\n"
+            "Another Pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_M8] =
+    {
+        .name = ITEM_NAME("Memory Shard M8"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 8:\n"
+            "Another Pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_M9] =
+    {
+        .name = ITEM_NAME("Memory Shard M9"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 9:\n"
+            "Another Pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_ANOTHER_MEMORY] =
+    {
+        .name = ITEM_NAME("Memory of Another"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The complete shard\n"
+            "of memories:\n"
+            "Another Pokemon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_X1] =
+    {
+        .name = ITEM_NAME("Memory Shard X1"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 1:\n"
+            "Unrecognized Ones."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_X2] =
+    {
+        .name = ITEM_NAME("Memory Shard X2"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 2:\n"
+            "Unrecognized Ones."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_X3] =
+    {
+        .name = ITEM_NAME("Memory Shard X3"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 3:\n"
+            "Unrecognized Ones."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_X4] =
+    {
+        .name = ITEM_NAME("Memory Shard X4"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 4:\n"
+            "Unrecognized Ones."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_X5] =
+    {
+        .name = ITEM_NAME("Memory Shard X5"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 5:\n"
+            "Unrecognized Ones."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_X6] =
+    {
+        .name = ITEM_NAME("Memory Shard X6"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 6:\n"
+            "Unrecognized Ones."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_X7] =
+    {
+        .name = ITEM_NAME("Memory Shard X7"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 7:\n"
+            "Unrecognized Ones."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_X8] =
+    {
+        .name = ITEM_NAME("Memory Shard X8"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 8:\n"
+            "Unrecognized Ones."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_MEMORY_SHARD_X9] =
+    {
+        .name = ITEM_NAME("Memory Shard X9"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The memories of\n"
+            "of story part 9:\n"
+            "Unrecognized Ones."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_EXTRA_MEMORY] =
+    {
+        .name = ITEM_NAME("Memory of Unknowns"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The complete shard\n"
+            "of memories:\n"
+            "Unrecognized Ones."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_SHARD_OF_DREAM] =
+    {
+        .name = ITEM_NAME("Shard of Dream"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The missing piece\n"
+            "of someone dream.\n"
+            "Condensed memories."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_ExpCandyL,
+        .iconPalette = gItemIconPalette_ExpCandies,
+    },
+
+    [ITEM_TOPAZ] =
+    {
+        .name = ITEM_NAME("Topaz"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "A beautiful\n"
+            "gemstone that rarely\n"
+            "found in the world."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Sapphire,
+    },
+
+    [ITEM_AMETHYST] =
+    {
+        .name = ITEM_NAME("Amethyst"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The missing piece\n"
+            "of someone dream.\n"
+            "Condensed memories."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Sapphire,
+    },
+
+    [ITEM_EMERALD] =
+    {
+        .name = ITEM_NAME("Emerald"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The missing piece\n"
+            "of someone dream.\n"
+            "Condensed memories."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Sapphire,
+    },
+
+    [ITEM_DIAMOND] =
+    {
+        .name = ITEM_NAME("Diamond"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The missing piece\n"
+            "of someone dream.\n"
+            "Condensed memories."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Sapphire,
+    },
+
+    [ITEM_PEARL_GEMSTONE] =
+    {
+        .name = ITEM_NAME("Black Pearl"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "The missing piece\n"
+            "of someone dream.\n"
+            "Condensed memories."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Sapphire,
+    },
+
+    [ITEM_EMOTION_STONE] =
+    {
+        .name = ITEM_NAME("Emotion Stone"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "Contains various\n"
+            "condensed emotion.\n"
+            "A key stone?."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Sapphire,
+    },
+
+    [ITEM_ANCIENT_KRIS] =
+    {
+        .name = ITEM_NAME("Ancient Kris"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "A mystical dagger\n"
+            "created in the ancient\n"
+            "time. It's from Java."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Sapphire,
+    },
+
+    [ITEM_7_FLOWERS] =
+    {
+        .name = ITEM_NAME("7-Flowers"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "A bonquet made of\n"
+            "7 types of flower\n"
+            "found in Java."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Gem,
+        .iconPalette = gItemIconPalette_Sapphire,
+    },
 };
 
 #undef ITEM_NAME

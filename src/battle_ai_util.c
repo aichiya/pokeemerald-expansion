@@ -469,7 +469,7 @@ bool32 IsBattlerTrapped(enum BattlerId battlerAtk, enum BattlerId battlerDef)
         && IS_BATTLER_OF_TYPE(battlerDef, TYPE_NEW_METAL))
         return TRUE;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && CountUsablePartyMons(battlerDef) == 0)
+    if (IsTrainerBattle() && CountUsablePartyMons(battlerDef) == 0)
         return TRUE;
 
     return FALSE;
@@ -3617,7 +3617,7 @@ bool32 CanKnockOffItem(enum BattlerId fromBattler, enum BattlerId battler, enum 
     if (item == ITEM_NONE)
         return FALSE;
 
-    if (!(gBattleTypeFlags & BATTLE_TYPE_CANT_KNOCK_OFF) && IsOnPlayerSide(fromBattler))
+    if (!HasAnyBattleFlags(BATTLE_TYPE_CANT_KNOCK_OFF) && IsOnPlayerSide(fromBattler))
         return FALSE;
 
     if (gAiLogicData->abilities[fromBattler] == ABILITY_STICKY_HOLD)

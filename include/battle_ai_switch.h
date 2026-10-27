@@ -74,6 +74,7 @@ struct SwitchAiContext
     enum PartySlot dynamicSingleId;
     enum PartySlot partyMonIndex;
     enum SwitchType switchType;
+    enum Move aiMove;
 
     // Flags
     u32 canBattlerWin1v1:1;

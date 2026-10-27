@@ -1610,18 +1610,6 @@ static void HandleSetEffectAuroraVeil(struct BattleCalcValues *cv, struct SetEff
     }
 }
 
-static void HandleSetEffectInfatuate(struct BattleCalcValues *cv, struct SetEffect *se)
-{
-    BattleScriptPush(se->script);
-    gBattlescriptCurrInstr = BattleScript_EffectInfatuate;
-}
-
-static void HandleSetEffectInfatuateSide(struct BattleCalcValues *cv, struct SetEffect *se)
-{
-    BattleScriptPush(se->script);
-    gBattlescriptCurrInstr = BattleScript_EffectInfatuate;
-}
-
 static void HandleSetEffectRecycle(struct BattleCalcValues *cv, struct SetEffect *se)
 {
     enum Item *usedHeldItem = &GetBattlerPartyState(se->effectBattler)->usedHeldItem;
@@ -4528,8 +4516,6 @@ static void (*const sSetEffectHandlers[])(struct BattleCalcValues *cv, struct Se
     [MOVE_EFFECT_CANNONADE] = HandleSetEffectGmaxNonTypeDamage,
     [MOVE_EFFECT_CRIT_PLUS] = HandleSetEffectCritPlus,
     [MOVE_EFFECT_AURORA_VEIL] = HandleSetEffectAuroraVeil,
-    [MOVE_EFFECT_INFATUATE] = HandleSetEffectInfatuate,
-    [MOVE_EFFECT_INFATUATE_SIDE] = HandleSetEffectInfatuateSide,
     [MOVE_EFFECT_RECYCLE] = HandleSetEffectRecycle,
     [MOVE_EFFECT_DEFOG] = HandleSetEffectDefog,
     [MOVE_EFFECT_SPITE] = HandleSetEffectSpite,

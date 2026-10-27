@@ -5402,9 +5402,9 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
              && !gBattleStruct->unableToUseMove
              && RandomChance(RNG_ULTRA_HAPPY, 1, 3)
              && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
-             && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_INFATUATE))
+             && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_ATTRACT))
             {
-                SetMoveEffectHelper(gBattlerAttacker, gBattlerTarget, MOVE_EFFECT_INFATUATE, gBattlescriptCurrInstr, NO_FLAGS);
+                SetMoveEffectHelper(gBattlerAttacker, gBattlerTarget, MOVE_EFFECT_ATTRACT, gBattlescriptCurrInstr, NO_FLAGS);
                 effect++;
             }
             break;

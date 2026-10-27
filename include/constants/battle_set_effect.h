@@ -163,8 +163,6 @@ enum __attribute__((packed)) MoveEffect
     MOVE_EFFECT_UBW,
     MOVE_EFFECT_DARKNESS_TERRAIN,
     MOVE_EFFECT_MIASMA_TERRAIN,
-    MOVE_EFFECT_INFATUATE,
-    MOVE_EFFECT_INFATUATE_SIDE,
     MOVE_EFFECT_STEAL_STATS_TREASURE_SNIPER,
 
     // Max move effects happen earlier in the execution chain.

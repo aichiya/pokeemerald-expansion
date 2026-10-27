@@ -666,7 +666,6 @@ extern const u8 BattleScript_WishMegaEvolutionIllya[];
 extern const u8 BattleScript_EffectGaiaForce[];
 extern const u8 BattleScript_ExShadowSkyHeal[];
 extern const u8 BattleScript_AutumnGoddessesHealingActivates[];
-extern const u8 BattleScript_EffectInfatuate[];
 extern const u8 BattleScript_AttackerAbilityStatDrop[];
 extern const u8 BattleScript_AttackerAbilityStatDropEnd2[];
 extern const u8 BattleScript_BlankCardActivates[];

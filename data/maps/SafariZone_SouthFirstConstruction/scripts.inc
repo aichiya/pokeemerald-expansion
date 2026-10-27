@@ -6,7 +6,7 @@ SafariZone_SouthFirstConstruction_MapScripts::
 	.byte 0
 
 SafariZone_SouthFirstConstruction_OnFrame:
-	map_script_2 VAR_SAFARI_ZONE_STATE, 2, SafariZone_SouthFirstConstruction_EventScript_EnterSafariZone
+	map_script_2 VAR_TEMP_0, 1, SafariZone_SouthFirstConstruction_EventScript_EnterSafariZone
 	.2byte 0
 
 SafariZone_SouthFirstConstruction_EventScript_EnterSafariZone::
@@ -16,15 +16,16 @@ SafariZone_SouthFirstConstruction_EventScript_EnterSafariZone::
 	applymovement LOCALID_ATTENDANT, SafariZone_SouthFirstConstruction_Movement_ExitAttendantBlockDoor
 	waitmovement 0
 	setobjectxyperm LOCALID_ATTENDANT, 32, 34
-	setvar VAR_SAFARI_ZONE_STATE, 0
+	setvar VAR_TEMP_0, 0
 	releaseall
 	end
 
 SafariZone_SouthFirstConstruction_OnTransition:
-	call_if_eq VAR_SAFARI_ZONE_STATE, 2, SafariZone_SouthFirstConstruction_EventScript_SetExitAttendantAside
+	call_if_eq VAR_SAFARI_WARP_STATE, SAFARI_WARP_ENTERING, SafariZone_SouthFirstConstruction_EventScript_SetExitAttendantAside
 	end
 
 SafariZone_SouthFirstConstruction_EventScript_SetExitAttendantAside::
+	setvar VAR_TEMP_0, 1
 	setobjectxyperm LOCALID_ATTENDANT, 31, 34
 	return
 
@@ -80,8 +81,8 @@ SafariZone_SouthFirstConstruction_EventScript_ExitEarlyEast::
 	end
 
 SafariZone_SouthFirstConstruction_EventScript_Exit::
-	setvar VAR_SAFARI_ZONE_STATE, 1
-	special ExitSafariMode
+	setvar VAR_SAFARI_WARP_STATE, SAFARI_WARP_MANUAL_EXIT
+	safari_exit
 	warpdoor MAP_ROUTE121_SAFARI_ZONE_ENTRANCE, 2, 5
 	waitstate
 	end

@@ -91,7 +91,7 @@ void EnterSafariMode(enum SafariEvents safariId)
                                     sNumSafariBalls)
     if (!FlagGet(FLAG_FIRST_SAFARI_ZONE_EVENT_DONE))
     {
-        sSafariZoneStepCounter = 2000;
+        sSafariZoneStepCounter = 5000;
     }
     {
         sSafariZoneStepCounter = sSafariZones[safariId].startingSteps;

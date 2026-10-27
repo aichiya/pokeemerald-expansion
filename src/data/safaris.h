@@ -22,4 +22,15 @@ static const struct SafariData sSafariZones[SAFARI_EVENT_COUNT] = {
             .warpId = 0
         }
     },
+    [SAFARI_EVENT_TWINRIVER_FIRST_CONSTRUCTION] = {
+        .actions = SAFARI_ACTIONS_RSE,
+        .startingBalls = 1,
+        .startingSteps = 5000,
+        .catchMultiplier = 150,
+        .exitWarp = {
+            .mapGroup = MAP_GROUP(MAP_ROUTE121_SAFARI_ZONE_ENTRANCE),
+            .mapNum = MAP_NUM(MAP_ROUTE121_SAFARI_ZONE_ENTRANCE),
+            .warpId = 0
+        }
+    },
 };

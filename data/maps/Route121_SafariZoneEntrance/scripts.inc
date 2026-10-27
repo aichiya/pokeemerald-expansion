@@ -3,13 +3,12 @@ Route121_SafariZoneEntrance_MapScripts::
 	.byte 0
 
 Route121_SafariZoneEntrance_OnFrame:
-@	map_script_2 VAR_SAFARI_ZONE_STATE, 1, Route121_SafariZoneEntrance_EventScript_ExitSafariZone
-@	map_script_2 VAR_MAIN_STORY, 3, Route121_SafariZoneEntrance_EventScript_InitFirstMeetWarden
 	map_script_2 VAR_SAFARI_WARP_STATE, SAFARI_WARP_NO_STEPS, Route121_SafariZoneEntrance_EventScript_ExitSafariZone
 	map_script_2 VAR_SAFARI_WARP_STATE, SAFARI_WARP_NO_BALLS, Route121_SafariZoneEntrance_EventScript_ExitSafariZone
 	map_script_2 VAR_SAFARI_WARP_STATE, SAFARI_WARP_NO_BALLS_MID_BATTLE, Route121_SafariZoneEntrance_EventScript_ExitSafariZone
 	map_script_2 VAR_SAFARI_WARP_STATE, SAFARI_WARP_RETIRING, Route121_SafariZoneEntrance_EventScript_ExitSafariZone
 	map_script_2 VAR_SAFARI_WARP_STATE, SAFARI_WARP_WHITEOUT, Route121_SafariZoneEntrance_EventScript_ExitSafariZone
+	map_script_2 VAR_MAIN_STORY, 3, Route121_SafariZoneEntrance_EventScript_InitFirstMeetWarden
 	.2byte 0
 
 Route121_SafariZoneEntrance_EventScript_ExitSafariZone::
@@ -27,7 +26,7 @@ Route121_SafariZoneEntrance_EventScript_ExitSafariZone_FirstTime::
 	applymovement LOCALID_PLAYER, Route121_SafariZoneEntrance_Movement_ExitSafariZoneFirstTime
 	applymovement LOCALID_WARDEN, Route121_SafariZoneEntrance_Movement_WardenFacingDown
 	waitmovement LOCALID_PLAYER
-	setvar VAR_SAFARI_ZONE_STATE, 0
+	setvar VAR_SAFARI_WARP_STATE, 0
 	setflag FLAG_FIRST_SAFARI_ZONE_EVENT_DONE
 	setvar VAR_MAIN_STORY, 5
 	msgbox Route121_SafariZoneEntrance_Text_WardenCaughtMon, MSGBOX_DEFAULT
@@ -39,7 +38,7 @@ Route121_SafariZoneEntrance_EventScript_ExitSafariZone_FirstTime_PartyZero::
 	applymovement LOCALID_PLAYER, Route121_SafariZoneEntrance_Movement_ExitSafariZoneFirstTime
 	applymovement LOCALID_WARDEN, Route121_SafariZoneEntrance_Movement_WardenFacingDown
 	waitmovement LOCALID_PLAYER
-	setvar VAR_SAFARI_ZONE_STATE, 0
+	setvar VAR_SAFARI_WARP_STATE, 0
 	msgbox Route121_SafariZoneEntrance_Text_WardenDidntCatchMon, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_GIFTMON_VERSION_SETTING, VERSION_IDENTIFIER_SPECIAL_GIFT
@@ -71,8 +70,7 @@ Route121_SafariZoneEntrance_EventScript_InitFirstMeetWarden::
 	closemessage
 	applymovement LOCALID_PLAYER, Route121_SafariZoneEntrance_Movement_FirstTimeEnteringSafariZone
 	waitmovement 0
-	special EnterSafariMode
-	setvar VAR_SAFARI_ZONE_STATE, 2
+	safari_enter SAFARI_EVENT_TWINRIVER_FIRST_CONSTRUCTION
 	setvar VAR_MAIN_STORY, 4
 	clearflag FLAG_GOOD_LUCK_SAFARI_ZONE
 	warp MAP_SAFARI_ZONE_SOUTH_FIRST_CONSTRUCTION, 32, 33

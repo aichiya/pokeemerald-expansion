@@ -953,6 +953,7 @@ bool32 DoesSpeciesHaveFormChangeMethod(enum Species species, enum FormChanges me
 u16 MonTryLearningNewMoveEvolution(struct Pokemon *mon, bool8 firstMove);
 void RemoveIVIndexFromList(u8 *ivs, u8 selectedIv);
 void TrySpecialOverworldEvo(void);
+bool32 CheckSpecialOverworldEvo(void);
 bool32 SpeciesHasGenderDifferences(enum Species species);
 bool32 TryFormChange(struct Pokemon *mon, enum FormChanges method, enum BattleTrainer trainer);
 bool32 TryBoxMonFormChange(struct BoxPokemon *boxMon, enum FormChanges method);
@@ -987,6 +988,8 @@ void ChangePokemonNicknameWithCallback(void (*callback)(void));
 bool32 HasShedinjaHPHandling(enum Species species);
 void ResolveEVs(const u16 *evsTemplate, u8 *evs, bool32 ignoreTotalEvCheck);
 void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *monTemplate);
+bool32 IsMonValidAndAliveForBattle(struct Pokemon *mon);
+bool32 IsMonValidForBattle(struct Pokemon *mon);
 
 void CreateMonGift1(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 hasFixedPersonality, u32 fixedPersonality, u8 otIdType, u32 fixedOtId);
 void CreateBoxMonGift1(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, u8 hasFixedPersonality, u32 fixedPersonality, u8 otIdType, u32 fixedOtId);

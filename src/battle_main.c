@@ -614,7 +614,7 @@ const u8 *const gStatusConditionStringsTable[][2] =
 
 void CB2_InitBattle(void)
 {
-    if (!gTestRunnerEnabled)
+    if (!(gBattleTypeFlags & BATTLE_TYPE_RECORDED))
         MoveSaveBlocks_ResetHeap();
     AllocateBattleResources();
     AllocateBattleSpritesData();
@@ -1440,7 +1440,7 @@ static void CB2_HandleStartMultiPartnerBattle(void)
 
             for (enum BattleTrainer trainer = B_TRAINER_PLAYER; trainer < MAX_BATTLE_TRAINERS; trainer++)
             {
-                for (enum PartySlot i = PARTY_SLOT_0; i < PARTY_SLOT_NONE; i++)
+                for (enum PartySlot i = PARTY_SLOT_0; i < PARTY_SIZE; i++)
                     TryCorrectShedinjaLanguage(&gParties[trainer][i]);
             }
             gBattleCommunication[MULTIUSE_STATE]++;
@@ -1493,22 +1493,27 @@ static void CB2_HandleStartMultiPartnerBattle(void)
 
 static void SetMultiPartnerMenuParty(enum BattleTrainer trainer)
 {
-    s32 i;
+    struct Pokemon *mon = NULL;
+    struct MultiPartnerMenuPokemon *partnerMon = NULL;
 
-    for (i = 0; i < PARTY_SIZE; i++)
+    for (enum PartySlot i = 0; i < PARTY_SIZE; i++)
     {
-        gMultiPartnerParty[i].species     = GetMonData(&gParties[trainer][i], MON_DATA_SPECIES);
-        gMultiPartnerParty[i].heldItem    = GetMonData(&gParties[trainer][i], MON_DATA_HELD_ITEM);
-        GetMonData(&gParties[trainer][i], MON_DATA_NICKNAME, gMultiPartnerParty[i].nickname);
-        gMultiPartnerParty[i].level       = GetMonData(&gParties[trainer][i], MON_DATA_LEVEL);
-        gMultiPartnerParty[i].hp          = GetMonData(&gParties[trainer][i], MON_DATA_HP);
-        gMultiPartnerParty[i].maxhp       = GetMonData(&gParties[trainer][i], MON_DATA_MAX_HP);
-        gMultiPartnerParty[i].status      = GetMonData(&gParties[trainer][i], MON_DATA_STATUS);
-        gMultiPartnerParty[i].personality = GetMonData(&gParties[trainer][i], MON_DATA_PERSONALITY);
-        gMultiPartnerParty[i].gender      = GetMonGender(&gParties[trainer][i]);
-        StripExtCtrlCodes(gMultiPartnerParty[i].nickname);
-        if (GetMonData(&gParties[trainer][i], MON_DATA_LANGUAGE) != LANGUAGE_JAPANESE)
-            PadNameString(gMultiPartnerParty[i].nickname, CHAR_SPACE);
+        partnerMon = &gMultiPartnerParty[i];
+        mon = &gParties[trainer][i];
+        partnerMon->species     = GetMonData(mon, MON_DATA_SPECIES);
+        partnerMon->heldItem    = GetMonData(mon, MON_DATA_HELD_ITEM);
+        GetMonData(mon, MON_DATA_NICKNAME, partnerMon->nickname);
+        partnerMon->level       = GetMonData(mon, MON_DATA_LEVEL);
+        partnerMon->hp          = GetMonData(mon, MON_DATA_HP);
+        partnerMon->maxhp       = GetMonData(mon, MON_DATA_MAX_HP);
+        partnerMon->status      = GetMonData(mon, MON_DATA_STATUS);
+        partnerMon->personality = GetMonData(mon, MON_DATA_PERSONALITY);
+        partnerMon->gender      = GetMonGender(mon);
+        StripExtCtrlCodes(partnerMon->nickname);
+        if (GetMonData(mon, MON_DATA_LANGUAGE) != LANGUAGE_JAPANESE)
+        {
+            PadNameString(partnerMon->nickname, CHAR_SPACE);
+        }
     }
 }
 
@@ -3436,17 +3441,17 @@ static void DoBattleIntro(void)
         {
             struct HpAndStatus hpStatus[MAX_BATTLE_TRAINERS][PARTY_SIZE];
 
-            u32 lastId = MULTI_PARTY_SIZE;
+            u32 lastId;
             for (enum BattleTrainer trainer = B_TRAINER_PLAYER; trainer < MAX_BATTLE_TRAINERS; trainer++)
             {
-                if (AreMultiPartiesFullTeams() || !BattleSideHasTwoTrainers(trainer & BIT_SIDE))
+                if (AreMultiPartiesHalfTeams() && BattleSideHasTwoTrainers(trainer & BIT_SIDE))
+                    lastId = MULTI_PARTY_SIZE;
+                else
                     lastId = PARTY_SIZE;
 
                 for (i = 0; i < PARTY_SIZE; i++)
                 {
-                    if (GetMonData(&gParties[trainer][i], MON_DATA_SPECIES_OR_EGG) == SPECIES_NONE
-                     || GetMonData(&gParties[trainer][i], MON_DATA_SPECIES_OR_EGG) == SPECIES_EGG
-                     || i >= lastId)
+                    if (!IsMonValidForBattle(&gParties[trainer][i]) || i >= lastId)
                     {
                         hpStatus[trainer][i].hp = HP_EMPTY_SLOT;
                         hpStatus[trainer][i].status = 0;
@@ -5541,7 +5546,7 @@ static void HandleEndTurn_FinishBattle(void)
                 if ((trainer & BIT_SIDE) == B_SIDE_PLAYER && !B_PARTNER_MONS_MARKED_SEEN)
                     continue;
 
-                for (enum PartySlot partySlot = PARTY_SLOT_0; partySlot < PARTY_SLOT_NONE; partySlot++)
+                for (enum PartySlot partySlot = PARTY_SLOT_0; partySlot < PARTY_SIZE; partySlot++)
                 {
                     if (gBattleStruct->partyState[trainer][partySlot].sentOut)
                         HandleSetPokedexFlagFromMon(&party[partySlot], FLAG_SET_SEEN);
@@ -5567,7 +5572,7 @@ static void HandleEndTurn_FinishBattle(void)
             FadeOutMapMusic(5);
         TryRestoreHeldItems();
 
-        for (enum PartySlot i = PARTY_SLOT_0; i < PARTY_SLOT_NONE; i++)
+        for (enum PartySlot i = PARTY_SLOT_0; i < PARTY_SIZE; i++)
         {
             bool32 changedForm = TryRevertPartyMonFormChange(i);
 
@@ -5650,7 +5655,7 @@ static void FreeResetData_ReturnToOvOrDoEvolutions(void)
 
 static void TryEvolvePokemon(void)
 {
-    for (enum PartySlot i = PARTY_SLOT_0; i < PARTY_SLOT_NONE; i++)
+    for (enum PartySlot i = PARTY_SLOT_0; i < PARTY_SIZE; i++)
     {
         if (!(gTriedEvolving & (1u << i)))
         {
@@ -6082,6 +6087,7 @@ void SetTypeBeforeUsingMove(enum Move move, enum BattlerId battler, enum Ability
 {
     enum Item heldItem = gBattleMons[battler].item;
 
+    gBattleStruct->dynamicMoveType = TYPE_NONE;
     gBattleStruct->dynamicMoveCategory = DAMAGE_CATEGORY_NONE;
     gBattleStruct->battlerState[battler].ateBoost = FALSE;
     gSpecialStatuses[battler].gemBoost = FALSE;

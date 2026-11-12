@@ -1514,7 +1514,7 @@ void GiveLeadMonEffortRibbon(void)
     ribbonSet = TRUE;
     leadMon = &gParties[B_TRAINER_PLAYER][GetLeadMonIndex()];
     SetMonData(leadMon, MON_DATA_EFFORT_RIBBON, &ribbonSet);
-    if (GetRibbonCount(leadMon) > NUM_CUTIES_RIBBONS)
+    if (GetMonData(leadMon, MON_DATA_RIBBON_COUNT) > NUM_CUTIES_RIBBONS)
         TryPutSpotTheCutiesOnAir(leadMon, MON_DATA_EFFORT_RIBBON);
 }
 
@@ -2261,13 +2261,11 @@ void SetRoute123Weather(void)
 
 u8 GetLeadMonIndex(void)
 {
-    u8 i;
-    u8 partyCount = CalculatePlayerPartyCount();
-    for (i = 0; i < partyCount; i++)
+    u32 partyCount = CalculatePlayerPartyCount();
+    for (enum PartySlot slot = 0; slot < partyCount; slot++)
     {
-        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG
-         && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE)
-            return i;
+        if (IsMonValidForBattle(&gParties[B_TRAINER_PLAYER][slot]))
+            return slot;
     }
     return 0;
 }

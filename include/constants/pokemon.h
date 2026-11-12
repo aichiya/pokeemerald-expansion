@@ -367,6 +367,7 @@ enum EvolutionMethods {
     EVO_LEVEL_BATTLE_ONLY,      // Pokémon reaches the specified level, in battle only
     EVO_BATTLE_END,             // Battle ends, doesn't need to level up
     EVO_SPIN                    // The player spins in the overworld
+    
 };
 
 enum EvolutionMode {
@@ -378,6 +379,7 @@ enum EvolutionMode {
     EVO_MODE_OVERWORLD_SPECIAL,
     EVO_MODE_SCRIPT_TRIGGER,
     EVO_MODE_BATTLE_ONLY,        // This mode is only used in battles to support Tandemaus' unique requirement
+    EVO_MODE_OVERWORLD_SPIN_EVO_CHECK,
 };
 
 enum EvoTriggerVersion {
@@ -406,6 +408,7 @@ enum PokemonJumpType {
 };
 
 enum EvoSpinDirections {
+    SPIN_NONE,
     SPIN_CW_SHORT,              // Player spins clockwise
     SPIN_CW_LONG,               // Player spins clockwise
     SPIN_CCW_SHORT,             // Player spins counter-clockwise

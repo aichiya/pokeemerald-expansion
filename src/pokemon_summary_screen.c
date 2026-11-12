@@ -2010,7 +2010,7 @@ static void ChangeSummaryPokemon(u8 taskId, s8 delta)
             }
             monId = AdvanceStorageMonIndex(sMonSummaryScreen->monList.boxMons, sMonSummaryScreen->curMonIndex, sMonSummaryScreen->maxMonIndex, delta);
         }
-        else if (IsMultiBattle() && !AreMultiPartiesFullTeams())
+        else if (IsMultiBattle() && PlayerAndPartnerSharePartyMenu())
         {
             monId = AdvanceMultiBattleMonIndex(delta);
         }

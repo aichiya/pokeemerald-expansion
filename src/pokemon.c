@@ -1406,20 +1406,20 @@ void ZeroMonData(struct Pokemon *mon)
 
 void ZeroPartyMons(struct Pokemon *party)
 {
-    for (s32 i = 0; i < PARTY_SIZE; i++)
+    for (enum PartySlot i = 0; i < PARTY_SIZE; i++)
         ZeroMonData(&party[i]);
 }
 
 void ZeroPlayerPartyMons(void)
 {
-    for (s32 i = 0; i < PARTY_SIZE; i++)
+    for (enum PartySlot i = 0; i < PARTY_SIZE; i++)
         ZeroMonData(&gParties[B_TRAINER_PLAYER][i]);
     gPartiesCount[B_TRAINER_PLAYER] = 0;
 }
 
 void ZeroEnemyPartyMons(void)
 {
-    for (s32 i = 0; i < PARTY_SIZE; i++)
+    for (enum PartySlot i = 0; i < PARTY_SIZE; i++)
     {
         ZeroMonData(&gParties[B_TRAINER_OPPONENT_A][i]);
         ZeroMonData(&gParties[B_TRAINER_OPPONENT_B][i]);
@@ -4334,9 +4334,7 @@ u8 GetMonsStateToDoubles(void)
 
     for (i = 0; i < gPartiesCount[B_TRAINER_PLAYER]; i++)
     {
-        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG
-         && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HP) != 0
-         && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE)
+        if (IsMonValidAndAliveForBattle(&gParties[B_TRAINER_PLAYER][i]))
             aliveCount++;
     }
 
@@ -5251,7 +5249,7 @@ bool8 HealStatusConditions(struct Pokemon *mon, u32 healMask, enum BattlerId bat
             {
                 struct Pokemon *party = GetBattlerParty(battler);
 
-                for (enum PartySlot i = PARTY_SLOT_0; i < PARTY_SLOT_NONE; i++)
+                for (enum PartySlot i = PARTY_SLOT_0; i < PARTY_SIZE; i++)
                 {
                     if (&party[i] == mon)
                     {
@@ -5656,7 +5654,7 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
             break;
         }
         case IF_CRITICAL_HITS_GE:
-            if (partyId < PARTY_SLOT_NONE && gPartyCriticalHits[partyId] >= params[i].arg1)
+            if (partyId < PARTY_SIZE && gPartyCriticalHits[partyId] >= params[i].arg1)
                 currentCondition = TRUE;
             break;
         case IF_USED_MOVE_X_TIMES:
@@ -5901,6 +5899,21 @@ enum Species GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode m
                 // All checks passed, so stop checking the rest of the evolutions.
                 // This is different from vanilla where the loop continues.
                 // If you have overlapping evolutions, put the ones you want to happen first on top of the list.
+                targetSpecies = evolutions[i].targetSpecies;
+                break;
+            }
+        }
+        break;
+    case EVO_MODE_OVERWORLD_SPIN_EVO_CHECK://unused
+        for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
+        {
+            if (SanitizeSpeciesId(evolutions[i].targetSpecies) == SPECIES_NONE)
+                continue;
+            if (evolutions[i].method != EVO_SPIN)
+                continue;
+
+            if (DoesMonMeetAdditionalConditions(mon, evolutions[i].params, NULL, PARTY_SIZE, canStopEvo, evoState))
+            {
                 targetSpecies = evolutions[i].targetSpecies;
                 break;
             }
@@ -7957,18 +7970,41 @@ void RemoveIVIndexFromList(u8 *ivs, u8 selectedIv)
     }
 }
 
-void TrySpecialOverworldEvo(void)
+bool32 CheckSpecialOverworldEvo(void)// unused
 {
     bool32 canStopEvo = FALSE;
-
-    for (enum PartySlot i = PARTY_SLOT_0; i < PARTY_SLOT_NONE; i++)
+    for (u8 i = 0; i < PARTY_SIZE; i++)
     {
+        enum Species targetSpecies = GetEvolutionTargetSpecies(&gParties[B_TRAINER_PLAYER][i], EVO_MODE_OVERWORLD_SPIN_EVO_CHECK, 0, NULL, &canStopEvo, CHECK_EVO);
+
+        if (targetSpecies != SPECIES_NONE)
+            return TRUE;
+        targetSpecies = GetEvolutionTargetSpecies(&gParties[B_TRAINER_PLAYER][i], EVO_MODE_OVERWORLD_SPECIAL, 0, NULL, &canStopEvo, CHECK_EVO);
+
+        if (targetSpecies != SPECIES_NONE)
+            return TRUE;
+    }
+
+    return FALSE;
+}
+
+
+void TrySpecialOverworldEvo(void)
+{
+    u32 triedEvolvingCopy = gTriedEvolving;
+    bool32 canStopEvo = FALSE;
+
+    for (enum PartySlot i = PARTY_SLOT_0; i < PARTY_SIZE; i++)
+    {
+        if (gTriedEvolving & (1u << i))
+            continue;
+        gTriedEvolving |= 1u << i;
+
         enum Species targetSpecies = GetEvolutionTargetSpecies(&gParties[B_TRAINER_PLAYER][i], EVO_MODE_OVERWORLD_SPECIAL, 0, NULL, &canStopEvo, CHECK_EVO);
 
-        if (targetSpecies != SPECIES_NONE && !(gTriedEvolving & (1u << i)))
+        if (targetSpecies != SPECIES_NONE)
         {
             GetEvolutionTargetSpecies(&gParties[B_TRAINER_PLAYER][i], EVO_MODE_OVERWORLD_SPECIAL, 0, NULL, &canStopEvo, DO_EVO);
-            gTriedEvolving |= 1u << i;
 
             if (gMain.callback2 == TrySpecialOverworldEvo) // This fixes small graphics glitches.
                 EvolutionScene(&gParties[B_TRAINER_PLAYER][i], targetSpecies, canStopEvo, i);
@@ -7979,9 +8015,10 @@ void TrySpecialOverworldEvo(void)
             return;
         }
     }
+    if (triedEvolvingCopy != 0)
+        SetMainCallback2(CB2_ReturnToFieldContinueScript);
 
     gTriedEvolving = 0;
-    SetMainCallback2(CB2_ReturnToField);
 }
 
 bool32 SpeciesHasGenderDifferences(enum Species species)
@@ -8002,7 +8039,7 @@ static struct PartyState *GetBattlerPartyStateByPokemon(struct Pokemon *partyMon
 {
     struct Pokemon *party = GetTrainerParty(trainer);
 
-    for (int i = 0; i < PARTY_SIZE; i++)
+    for (enum PartySlot i = 0; i < PARTY_SIZE; i++)
     {
         struct Pokemon *mon = &party[i];
         if (partyMon == mon)
@@ -8013,8 +8050,7 @@ static struct PartyState *GetBattlerPartyStateByPokemon(struct Pokemon *partyMon
 
 bool32 TryFormChange(struct Pokemon *mon, enum FormChanges method, enum BattleTrainer trainer)
 {
-    if (GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_NONE
-     || GetMonData(mon, MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_EGG)
+    if (!IsMonValidForBattle(mon))
         return FALSE;
 
     enum Species currentSpecies = GetMonData(mon, MON_DATA_SPECIES);
@@ -9100,4 +9136,15 @@ void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *mo
 
     CalculateMonStats(mon);
     TryFormChange(mon, FORM_CHANGE_ITEM_HOLD, B_TRAINER_PLAYER);
+}
+
+bool32 IsMonValidAndAliveForBattle(struct Pokemon *mon)
+{
+    return IsMonValidForBattle(mon) && GetMonData(mon, MON_DATA_HP) != 0;
+}
+
+bool32 IsMonValidForBattle(struct Pokemon *mon)
+{
+    enum Species species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG);
+    return species != SPECIES_NONE && species != SPECIES_EGG;
 }

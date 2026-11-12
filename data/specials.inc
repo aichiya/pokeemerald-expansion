@@ -59,7 +59,7 @@ gSpecials::
 	def_special SpawnLinkPartnerObjectEvent
 	def_special SavePlayerParty
 	def_special LoadPlayerParty
-	def_special ChooseHalfPartyForBattle, waitstate=1
+	def_special ChoosePartyForBattle, waitstate=1
 	def_special Script_ShowLinkTrainerCard, waitstate=1
 	def_special ObjectEventInteractionGetBerryTreeData
 	def_special ObjectEventInteractionGetBerryName
@@ -566,6 +566,7 @@ gSpecials::
 	def_special CanTeachMoveBoxMon
 	def_special ObjectEventInteractionGetApricornTreeData
 	def_special ObjectEventInteractionPickApricornTree
+	def_special StartMining
 	def_special GetFrlgPokedexCount
 	def_special HasAllMons
 	def_special GetProfOaksRatingMessage

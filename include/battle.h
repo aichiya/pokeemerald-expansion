@@ -670,8 +670,10 @@ struct BattleStruct
         struct BattleVideo battleVideo;
     } multiBuffer;
     u8 battlerKOAnimsRunning:3;
+    u8 ignoreOrbFailure:1; // Toxic / Flame orb aren't prevented by Safeguard / Flower Veil
+    u8 toxicChainPriority:1; // If Toxic Chain will trigger on target, all other non volatiles will be blocked
     u8 messagePrinted:1; // To prevented repeated attackmessages (Perish Song)
-    u8 unused1:4;
+    u8 padding4:2;
     struct BattleTvMovePoints tvMovePoints;
     struct BattleTv tv;
     enum PartySlot AI_monToSwitchIntoId[MAX_BATTLERS_COUNT];
@@ -1149,6 +1151,8 @@ enum BattlerPosition GetOppositePosition(enum BattlerPosition position);
 enum BattlerId GetBattlerLeftFoe(enum BattlerId battler);
 enum BattlerId GetBattlerRightFoe(enum BattlerId battler);
 enum BattlerId GetDefaultSelectionTarget(enum BattlerId battler, enum MoveTarget moveTarget);
+bool32 IsHalfTeamMultiBattle(void);
+bool32 IsFullTeamMultiBattle(void);
 
 static inline bool32 HasAnyBattleFlags(u32 flags)
 {
@@ -1257,6 +1261,11 @@ static inline bool32 IsBattlerAlly(enum BattlerId battlerAtk, enum BattlerId bat
 static inline bool32 IsDoubleBattle(void)
 {
     return HasAnyBattleFlags(BATTLE_TYPE_DOUBLE | BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_TWO_OPPONENTS) != 0;
+}
+
+static inline bool32 IsMoveValid(enum Move move)
+{
+    return move != MOVE_NONE && move != MOVE_UNAVAILABLE;
 }
 
 static inline bool32 IsSpreadMove(enum MoveTarget moveTarget)

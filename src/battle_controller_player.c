@@ -34,6 +34,7 @@
 #include "util.h"
 #include "window.h"
 #include "line_break.h"
+#include "config/battle_info.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
 #include "constants/battle_partner.h"
@@ -305,7 +306,8 @@ static void HandleInputChooseAction(enum BattlerId battler)
         }
     }
 
-    if (JOY_NEW(B_BATTLE_INFO_BUTTON)
+    if (B_INFO_ENABLED
+     && JOY_NEW(B_BATTLE_INFO_BUTTON)
      && !(B_BATTLE_INFO_BUTTON == L_BUTTON && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A))
     {
         TryToHideBattleStatusHint();
@@ -1463,8 +1465,9 @@ static void Task_GiveExpToMon(u8 taskId)
             gainedExp -= nextLvlExp - currExp;
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, RET_VALUE_LEVELED_UP, (B_LEVEL_UP_NOTIFICATION >= GEN_9) ? 0 : gainedExp);
 
-            if (IsDoubleBattle() == TRUE
-             && (monId == gBattlerPartyIndexes[battler] || monId == gBattlerPartyIndexes[GetPartnerBattler(battler)]))
+            bool32 playerCheck = (monId == gBattlerPartyIndexes[battler]);
+            bool32 partnerCheck = (monId == gBattlerPartyIndexes[GetPartnerBattler(battler)] && !HasPartnerTrainer(battler));
+            if (playerCheck || (IsDoubleBattle() && partnerCheck))
                 gTasks[taskId].func = Task_LaunchLvlUpAnim;
             else
                 gTasks[taskId].func = Task_SetControllerToWaitForString;
@@ -1566,8 +1569,12 @@ static void Task_LaunchLvlUpAnim(u8 taskId)
     enum BattlerId battler = gTasks[taskId].tExpTask_battler;
     u8 monIndex = gTasks[taskId].tExpTask_monId;
 
-    if (IsDoubleBattle() == TRUE && monIndex == gBattlerPartyIndexes[GetPartnerBattler(battler)])
+    if (IsDoubleBattle()
+     && monIndex == gBattlerPartyIndexes[GetPartnerBattler(battler)]
+     && !HasPartnerTrainer(battler))
+    {
         battler ^= BIT_FLANK;
+    }
 
     InitAndLaunchSpecialAnimation(battler, battler, battler, B_ANIM_LVL_UP);
     gTasks[taskId].func = Task_UpdateLvlInHealthbox;
@@ -1581,10 +1588,16 @@ static void Task_UpdateLvlInHealthbox(u8 taskId)
     {
         u8 monIndex = gTasks[taskId].tExpTask_monId;
 
-        if (IsDoubleBattle() == TRUE && monIndex == gBattlerPartyIndexes[GetPartnerBattler(battler)])
+        if (IsDoubleBattle()
+         && monIndex == gBattlerPartyIndexes[GetPartnerBattler(battler)]
+         && !HasPartnerTrainer(battler))
+        {
             UpdateHealthboxAttribute(gHealthboxSpriteIds[GetPartnerBattler(battler)], &gParties[B_TRAINER_PLAYER][monIndex], HEALTHBOX_ALL);
+        }
         else
+        {
             UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gParties[B_TRAINER_PLAYER][monIndex], HEALTHBOX_ALL);
+        }
 
         gTasks[taskId].func = Task_SetControllerToWaitForString;
     }

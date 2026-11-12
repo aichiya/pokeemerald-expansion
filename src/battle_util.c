@@ -1414,51 +1414,51 @@ u32 TrySetCantSelectMoveBattleScript(enum BattlerId battler)
      && (GetConfig(B_TAUNT_ME_FIRST) < GEN_5 || moveEffect != EFFECT_ME_FIRST))
     {
         if ((GetActiveGimmick(battler) == GIMMICK_DYNAMAX))
-            gCurrentMove = MOVE_MAX_GUARD;
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedMoveTauntInPalace, BattleScript_SelectingNotAllowedMoveTaunt))
+            move = MOVE_MAX_GUARD;
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedMoveTauntInPalace, BattleScript_SelectingNotAllowedMoveTaunt))
             limitations++;
     }
 
     if (dynamaxBypassCheck && zMoveBypassCheck && gBattleMons[battler].volatiles.throatChopTimer > 0 && IsSoundMove(move))
     {
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedMoveThroatChopInPalace, BattleScript_SelectingNotAllowedMoveThroatChop))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedMoveThroatChopInPalace, BattleScript_SelectingNotAllowedMoveThroatChop))
             limitations++;
     }
 
     if (dynamaxBypassCheck && zMoveBypassCheck && GetImprisonedMovesCount(battler, move))
     {
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingImprisonedMoveInPalace, BattleScript_SelectingImprisonedMove))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingImprisonedMoveInPalace, BattleScript_SelectingImprisonedMove))
             limitations++;
     }
 
     if (dynamaxBypassCheck && zMoveBypassCheck && IsGravityPreventingMove(move))
     {
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedMoveGravityInPalace, BattleScript_SelectingNotAllowedMoveGravity))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedMoveGravityInPalace, BattleScript_SelectingNotAllowedMoveGravity))
             limitations++;
     }
 
     if (dynamaxBypassCheck && zMoveBypassCheck && IsHealBlockPreventingMove(battler, move))
     {
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedMoveHealBlockInPalace, BattleScript_SelectingNotAllowedMoveHealBlock))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedMoveHealBlockInPalace, BattleScript_SelectingNotAllowedMoveHealBlock))
             limitations++;
     }
 
     if (dynamaxBypassCheck && zMoveBypassCheck && IsBelchPreventingMove(battler, move))
     {
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedBelchInPalace, BattleScript_SelectingNotAllowedBelch))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedBelchInPalace, BattleScript_SelectingNotAllowedBelch))
             limitations++;
     }
 
     if (dynamaxBypassCheck && moveEffect == EFFECT_STUFF_CHEEKS && GetItemPocket(gBattleMons[battler].item) != POCKET_BERRIES && GetConfig(B_STUFF_CHEEKS_SELECTABLE) < GEN_CHAMPIONS)
     {
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedStuffCheeksInPalace, BattleScript_SelectingNotAllowedStuffCheeks))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedStuffCheeksInPalace, BattleScript_SelectingNotAllowedStuffCheeks))
             limitations++;
     }
 
     if (MoveCantBeUsedTwice(move) && move == gLastResultingMoves[battler])
     {
-        PREPARE_MOVE_BUFFER(gBattleTextBuff1, gCurrentMove);
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedCurrentMoveInPalace, BattleScript_SelectingNotAllowedCurrentMove))
+        PREPARE_MOVE_BUFFER(gBattleTextBuff1, move);
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedCurrentMoveInPalace, BattleScript_SelectingNotAllowedCurrentMove))
             limitations++;
     }
 
@@ -1469,7 +1469,7 @@ u32 TrySetCantSelectMoveBattleScript(enum BattlerId battler)
      && !IsBattlersFirstTurn(battler)
      && GetConfig(B_FIRST_TURN_MOVE) >= GEN_CHAMPIONS)
     {
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingCantUseMoveInPalace, BattleScript_SelectingCantUseMove))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingCantUseMoveInPalace, BattleScript_SelectingCantUseMove))
             limitations++;
     }
 
@@ -1478,7 +1478,7 @@ u32 TrySetCantSelectMoveBattleScript(enum BattlerId battler)
      && gBattleMons[battler].volatiles.stockpileCounter == 0
      && GetConfig(B_SPIT_UP_SELECTABLE) >= GEN_CHAMPIONS)
     {
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingCantUseMoveInPalace, BattleScript_SelectingCantUseMove))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingCantUseMoveInPalace, BattleScript_SelectingCantUseMove))
             limitations++;
     }
 
@@ -1488,7 +1488,7 @@ u32 TrySetCantSelectMoveBattleScript(enum BattlerId battler)
      && !IS_BATTLER_OF_TYPE(battler, GetMoveArgType(move))
      && GetConfig(B_MOVES_THAT_REMOVE_TYPE) >= GEN_CHAMPIONS)
     {
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingCantUseMoveInPalace, BattleScript_SelectingCantUseMove))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingCantUseMoveInPalace, BattleScript_SelectingCantUseMove))
             limitations++;
     }
 
@@ -1498,32 +1498,31 @@ u32 TrySetCantSelectMoveBattleScript(enum BattlerId battler)
      && !CanUseLastResort(battler)
      && GetConfig(B_LAST_RESORT_SELECTABLE) >= GEN_CHAMPIONS)
     {
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingCantUseMoveInPalace, BattleScript_SelectingCantUseMove))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingCantUseMoveInPalace, BattleScript_SelectingCantUseMove))
             limitations++;
     }
 
     gPotentialItemEffectBattler = battler;
-    if (dynamaxBypassCheck && IsHoldEffectChoice(holdEffect) && *choicedMove != MOVE_NONE && *choicedMove != MOVE_UNAVAILABLE && *choicedMove != move)
+    if (dynamaxBypassCheck && IsHoldEffectChoice(holdEffect) && IsMoveValid(*choicedMove) && *choicedMove != move)
     {
-        gCurrentMove = *choicedMove;
+        move = *choicedMove;
         gLastUsedItem = gBattleMons[battler].item;
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedMoveChoiceItemInPalace, BattleScript_SelectingNotAllowedMoveChoiceItem))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedMoveChoiceItemInPalace, BattleScript_SelectingNotAllowedMoveChoiceItem))
             limitations++;
     }
     else if (holdEffect == HOLD_EFFECT_ASSAULT_VEST && IsBattleMoveStatus(move) && moveEffect != EFFECT_ME_FIRST)
     {
         if ((GetActiveGimmick(battler) == GIMMICK_DYNAMAX))
-            gCurrentMove = MOVE_MAX_GUARD;
+            move = MOVE_MAX_GUARD;
         gLastUsedItem = gBattleMons[battler].item;
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedMoveAssaultVestInPalace, BattleScript_SelectingNotAllowedMoveAssaultVest))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedMoveAssaultVestInPalace, BattleScript_SelectingNotAllowedMoveAssaultVest))
             limitations++;
     }
-    if (dynamaxBypassCheck && (GetBattlerAbility(battler) == ABILITY_GORILLA_TACTICS) && *choicedMove != MOVE_NONE
-              && *choicedMove != MOVE_UNAVAILABLE && *choicedMove != move)
+    if (dynamaxBypassCheck && GetBattlerAbility(battler) == ABILITY_GORILLA_TACTICS && IsMoveValid(*choicedMove) && *choicedMove != move)
     {
-        gCurrentMove = *choicedMove;
+        move = *choicedMove;
         gLastUsedItem = gBattleMons[battler].item;
-        if (SetCantSelectScript(battler, gCurrentMove, BattleScript_SelectingNotAllowedMoveGorillaTacticsInPalace, BattleScript_SelectingNotAllowedMoveGorillaTactics))
+        if (SetCantSelectScript(battler, move, BattleScript_SelectingNotAllowedMoveGorillaTacticsInPalace, BattleScript_SelectingNotAllowedMoveGorillaTactics))
             limitations++;
     }
 
@@ -1599,7 +1598,7 @@ u32 CheckMoveLimitations(enum BattlerId battler, u8 unusableMoves, u32 check)
         else if (check & MOVE_LIMITATION_ENCORE && gBattleMons[battler].volatiles.encoreTimer && gBattleMons[battler].volatiles.encoredMove != move)
             unusableMoves |= 1u << i;
         // Choice Items
-        else if (check & MOVE_LIMITATION_CHOICE_ITEM && IsHoldEffectChoice(holdEffect) && *choicedMove != MOVE_NONE && *choicedMove != MOVE_UNAVAILABLE && *choicedMove != move)
+        else if (check & MOVE_LIMITATION_CHOICE_ITEM && IsHoldEffectChoice(holdEffect) && IsMoveValid(*choicedMove) && *choicedMove != move)
             unusableMoves |= 1u << i;
         // Assault Vest
         else if (check & MOVE_LIMITATION_ASSAULT_VEST && holdEffect == HOLD_EFFECT_ASSAULT_VEST && IsBattleMoveStatus(move) && moveEffect != EFFECT_ME_FIRST)
@@ -1620,7 +1619,7 @@ u32 CheckMoveLimitations(enum BattlerId battler, u8 unusableMoves, u32 check)
         else if (check & MOVE_LIMITATION_STUFF_CHEEKS && moveEffect == EFFECT_STUFF_CHEEKS && GetItemPocket(gBattleMons[battler].item) != POCKET_BERRIES && GetConfig(B_STUFF_CHEEKS_SELECTABLE) < GEN_CHAMPIONS)
             unusableMoves |= 1u << i;
         // Gorilla Tactics
-        else if (check & MOVE_LIMITATION_CHOICE_ITEM && GetBattlerAbility(battler) == ABILITY_GORILLA_TACTICS && *choicedMove != MOVE_NONE && *choicedMove != MOVE_UNAVAILABLE && *choicedMove != move)
+        else if (check & MOVE_LIMITATION_CHOICE_ITEM && GetBattlerAbility(battler) == ABILITY_GORILLA_TACTICS && IsMoveValid(*choicedMove) && *choicedMove != move)
             unusableMoves |= 1u << i;
         // Can't Use Twice flag
         else if (check & MOVE_LIMITATION_CANT_USE_TWICE && MoveCantBeUsedTwice(move) && move == gLastResultingMoves[battler])
@@ -1877,7 +1876,7 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, enum PartySlot partyIdBattlerOn
         {
             u8 count = 0;
             for (i = 0; i < lastId; i++)
-                if (IsValidForBattle(&party[i]))
+                if (IsMonValidAndAliveForBattle(&party[i]))
                     count++;
 
             if (count < 2)
@@ -1891,7 +1890,7 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, enum PartySlot partyIdBattlerOn
 
         for (i = 0; i < lastId; i++)
         {
-            if (IsValidForBattle(&party[i])
+            if (IsMonValidAndAliveForBattle(&party[i])
              && i != partyIdBattlerOn1 && i != partyIdBattlerOn2
              && i != gBattleStruct->monToSwitchIntoId[flankId] && i != playerId[gBattleStruct->monToSwitchIntoId])
                 break;
@@ -1912,7 +1911,7 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, enum PartySlot partyIdBattlerOn
 
             for (i = 0; i < lastId; i++)
             {
-                if (IsValidForBattle(&party[i])
+                if (IsMonValidAndAliveForBattle(&party[i])
                  && i != partyIdBattlerOn1 && i != partyIdBattlerOn2
                  && i != gBattleStruct->monToSwitchIntoId[flankId] && i != playerId[gBattleStruct->monToSwitchIntoId])
                     break;
@@ -1923,7 +1922,7 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, enum PartySlot partyIdBattlerOn
         {
             for (i = 0; i < lastId; i++)
             {
-                if (IsValidForBattle(&party[i]))
+                if (IsMonValidAndAliveForBattle(&party[i]))
                     break;
             }
             return (i == lastId);
@@ -1933,7 +1932,7 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, enum PartySlot partyIdBattlerOn
     {
         for (i = 0; i < lastId; i++)
         {
-            if (IsValidForBattle(&party[i]))
+            if (IsMonValidAndAliveForBattle(&party[i]))
                 break;
         }
         return (i == lastId);
@@ -1942,7 +1941,7 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, enum PartySlot partyIdBattlerOn
     {
         for (i = 0; i < lastId; i++)
         {
-            if (IsValidForBattle(&party[i]))
+            if (IsMonValidAndAliveForBattle(&party[i]))
                 break;
         }
         return (i == lastId);
@@ -1967,7 +1966,7 @@ bool32 HasNoMonsToSwitch(enum BattlerId battler, enum PartySlot partyIdBattlerOn
 
         for (i = 0; i < lastId; i++)
         {
-            if (IsValidForBattle(&party[i])
+            if (IsMonValidAndAliveForBattle(&party[i])
              && i != partyIdBattlerOn1 && i != partyIdBattlerOn2
              && i != gBattleStruct->monToSwitchIntoId[flankId] && i != playerId[gBattleStruct->monToSwitchIntoId])
                 break;
@@ -2183,6 +2182,9 @@ static void ForewarnChooseMove(enum BattlerId battler)
 
 bool32 ChangeTypeBasedOnTerrain(enum BattlerId battler)
 {
+    if (gFieldTimers.terrain == B_TERRAIN_NONE)
+        return FALSE;
+
     enum Type battlerType = gBattleTerrainInfo[gFieldTimers.terrain].type;
 
     SET_BATTLER_TYPE(battler, battlerType);
@@ -4607,18 +4609,13 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
                 break;
             case ABILITY_CUD_CHEW:
-                if (gBattleMons[battler].volatiles.cudChew == TRUE)
+                if (--gBattleMons[battler].volatiles.cudChewTimer == 0)
                 {
                     gBattleScripting.battler = battler;
-                    gBattleMons[battler].volatiles.cudChew = FALSE;
                     gLastUsedItem = GetBattlerPartyState(battler)->usedHeldItem;
                     GetBattlerPartyState(battler)->usedHeldItem = ITEM_NONE;
                     BattleScriptCall(BattleScript_CudChewActivates);
                     effect++;
-                }
-                else if (!gBattleMons[battler].volatiles.cudChew && GetItemPocket(GetBattlerPartyState(battler)->usedHeldItem) == POCKET_BERRIES)
-                {
-                    gBattleMons[battler].volatiles.cudChew = TRUE;
                 }
                 break;
             default:
@@ -5340,7 +5337,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
              && RandomPercentage(RNG_POISON_TOUCH, 30))
             {
                 gEffectBattler = battler;
-                gBattleScripting.battler = battler = gBattlerAttacker;
+                gBattleScripting.battler = gBattlerAttacker;
                 gBattleScripting.moveEffect = MOVE_EFFECT_POISON;
                 PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
                 BattleScriptCall(BattleScript_AbilityStatusEffect);
@@ -5354,7 +5351,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 if (!IsMoveEffectBlockedByTarget(GetBattlerAbility(battler)))
                 {
                     gEffectBattler = battler;
-                    gBattleScripting.battler = battler = gBattlerAttacker;
+                    gBattleScripting.battler = gBattlerAttacker;
                     gBattleScripting.moveEffect = MOVE_EFFECT_TOXIC;
                     PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
                     BattleScriptCall(BattleScript_AbilityStatusEffect);
@@ -5370,7 +5367,6 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_FLINCH))
             {
                 SetMoveEffectHelper(gBattlerAttacker, battler, MOVE_EFFECT_FLINCH, gBattlescriptCurrInstr, NO_FLAGS);
-                battler = gBattlerAttacker;
                 effect++;
             }
             break;
@@ -5482,6 +5478,8 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         default:
             break;
         }
+        // Set the battler back to attacker to have the correct gBattlerAbility
+        battler = gBattlerAttacker;
         break;
     case ABILITYEFFECT_ON_STATUS_CHANGE:
         switch (ability)
@@ -7031,14 +7029,14 @@ bool32 CanSetNonVolatileStatus(enum BattlerId battlerAtk, enum BattlerId battler
         abilityAffected = TRUE;
         battleScript = BattleScript_AbilityProtectedTarget;
     }
-    else if ((sideBattler = IsFlowerVeilProtected(battlerDef)))
+    else if (!gBattleStruct->ignoreOrbFailure && (sideBattler = IsFlowerVeilProtected(battlerDef)))
     {
         abilityAffected = TRUE;
         gBattlerAbility = sideBattler - 1;
         abilityDef = ABILITY_FLOWER_VEIL;
         battleScript = BattleScript_FlowerVeilProtects;
     }
-    else if (IsSafeguardProtected(battlerAtk, battlerDef, abilityAtk))
+    else if (!gBattleStruct->ignoreOrbFailure && IsSafeguardProtected(battlerAtk, battlerDef, abilityAtk))
     {
         battleScript = BattleScript_SafeguardProtectedRet;
     }
@@ -7474,18 +7472,10 @@ bool32 IsBattlerProtected(struct BattleCalcValues *cv)
     if (GetMoveEffect(cv->move) == EFFECT_CURSE && !IS_BATTLER_OF_TYPE(cv->battlerAtk, TYPE_GHOST))
         return FALSE;
 
-    if (gProtectStructs[cv->battlerDef].protected != PROTECT_MAX_GUARD && !MoveIgnoresProtect(cv->move))
-    {
-        if (IsZMove(cv->move) || IsMaxMove(cv->move))
-            return FALSE; // Z-Moves and Max Moves bypass protection (except Max Guard).
-
-        if ((cv->abilities[cv->battlerAtk] == ABILITY_UNSEEN_FIST || cv->abilities[cv->battlerAtk] == ABILITY_PIERCING_DRILL)
-         && IsMoveMakingContact(cv->battlerAtk, cv->battlerDef, cv->abilities[cv->battlerAtk], cv->holdEffects[cv->battlerAtk], cv->move))
-        {
-            gSpecialStatuses[cv->battlerDef].breaksThroughProtectFully = TRUE;
-            return FALSE;
-        }
-    }
+    if (gProtectStructs[cv->battlerDef].protected != PROTECT_MAX_GUARD
+     && !MoveIgnoresProtect(cv->move)
+     && (IsZMove(cv->move) || IsMaxMove(cv->move)))
+        return FALSE; // Z-Moves and Max Moves bypass protection (except Max Guard).
 
     enum MoveTarget moveTarget = GetBattlerMoveTargetType(cv->battlerAtk, cv->move);
     if (moveTarget == TARGET_ALL_BATTLERS)
@@ -7522,6 +7512,17 @@ bool32 IsBattlerProtected(struct BattleCalcValues *cv)
         isProtected = TRUE;
     else
         isProtected = FALSE;
+
+    // Only record a bypass if protection would otherwise block this move.
+    if (isProtected
+     && gProtectStructs[cv->battlerDef].protected != PROTECT_MAX_GUARD
+     && !MoveIgnoresProtect(cv->move)
+     && (cv->abilities[cv->battlerAtk] == ABILITY_UNSEEN_FIST || cv->abilities[cv->battlerAtk] == ABILITY_PIERCING_DRILL)
+     && IsMoveMakingContact(cv->battlerAtk, cv->battlerDef, cv->abilities[cv->battlerAtk], cv->holdEffects[cv->battlerAtk], cv->move))
+    {
+        gSpecialStatuses[cv->battlerDef].breaksThroughProtectFully = TRUE;
+        return FALSE;
+    }
 
     return isProtected;
 }
@@ -10898,7 +10899,7 @@ bool32 CanMegaEvolve(enum BattlerId battler)
     // Check if Player has a Mega Ring.
     if (!TESTING
         && (position == B_POSITION_PLAYER_LEFT || (!HasAnyBattleFlags(BATTLE_TYPE_MULTI) && position == B_POSITION_PLAYER_RIGHT))
-        && !(CheckBagHasItem(ITEM_DL_GEAR_NEPTUNE, 1) || CheckBagHasItem(ITEM_DL_GEAR_NEPGEAR, 1))) // ITEM_MEGA_RING
+        && !HasPlayerUnlockedGimmick(GIMMICK_MEGA))
         return FALSE;
 
     // Check if Trainer has already Mega Evolved.
@@ -10943,7 +10944,7 @@ bool32 CanUltraBurst(enum BattlerId battler)
     // Check if Player has a Z-Ring
     if (!TESTING && (position == B_POSITION_PLAYER_LEFT
         || (!HasAnyBattleFlags(BATTLE_TYPE_MULTI) && position == B_POSITION_PLAYER_RIGHT))
-        && !(CheckBagHasItem(ITEM_DL_GEAR_NEPTUNE, 1) || CheckBagHasItem(ITEM_DL_GEAR_NEPGEAR, 1))) // ITEM_Z_POWER_RING
+        && !HasPlayerUnlockedGimmick(GIMMICK_ULTRA_BURST))
         return FALSE;
 
     // Check if Trainer has already Ultra Bursted.
@@ -11710,16 +11711,20 @@ void TryRestoreHeldItems(void)
 void RestoreCaughtWildMonHeldItem(struct Pokemon *mon, enum BattlerId battler)
 {
     struct LostItem *lostItem = GetLostItemState(GetBattlerTrainer(battler), gBattlerPartyIndexes[battler]);
+    enum Item itemToRestore = lostItem->originalItem;
 
-    if (GetMonData(mon, MON_DATA_HELD_ITEM) != lostItem->originalItem)
+    if (GetMonData(mon, MON_DATA_HELD_ITEM) != itemToRestore)
     {
-        enum Item itemToRestore = ITEM_NONE;
-        SetMonData(mon, MON_DATA_HELD_ITEM, &itemToRestore);
+        enum Item item = ITEM_NONE;
+        SetMonData(mon, MON_DATA_HELD_ITEM, &item);
     }
 
-    if (lostItem->wildItemPending)
+    bool32 shouldRestoreBattleItem = B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9
+                                  && itemToRestore != ITEM_NONE
+                                  && GetItemPocket(itemToRestore) != POCKET_BERRIES;
+
+    if (lostItem->wildItemPending || shouldRestoreBattleItem)
     {
-        enum Item itemToRestore = lostItem->originalItem;
         SetMonData(mon, MON_DATA_HELD_ITEM, &itemToRestore);
         lostItem->wildItemPending = FALSE;
     }
@@ -12037,7 +12042,6 @@ bool32 IsGen6ExpShareEnabled(void)
     return FlagGet(I_EXP_SHARE_FLAG);
 }
 
-
 bool32 MoveHasAdditionalEffect(enum Move move, enum MoveEffect moveEffect)
 {
     u32 i;
@@ -12311,9 +12315,9 @@ void TryDeactivateSleepClause(enum BattlerId battler, enum PartySlot indexInPart
 bool32 IsSleepClauseActiveForSide(enum BattleSide battlerSide)
 {
     // If monCausingSleepClause[battlerSide].partyIndex == PARTY_SLOT_NONE, Sleep Clause is not active for the given side.
-    // If monCausingSleepClause[battlerSide].partyIndex < PARTY_SLOT_NONE, it means it is storing the index of the mon that is causing Sleep Clause to be active,
+    // If monCausingSleepClause[battlerSide].partyIndex < PARTY_SIZE, it means it is storing the index of the mon that is causing Sleep Clause to be active,
     // from which it follows that Sleep Clause is active.
-    return (IsSleepClauseEnabled() && (gBattleStruct->monCausingSleepClause[battlerSide].partyIndex < PARTY_SLOT_NONE));
+    return (IsSleepClauseEnabled() && (gBattleStruct->monCausingSleepClause[battlerSide].partyIndex < PARTY_SIZE));
 }
 
 bool32 IsSleepClauseEnabled(void)
@@ -12325,41 +12329,55 @@ bool32 IsSleepClauseEnabled(void)
     return FALSE;
 }
 
-bool32 AreMultiPartiesFullTeams(void)
+bool32 PlayerAndPartnerSharePartyMenu(void)
+{
+    if (AreMultiPartiesHalfTeams())
+        return TRUE;
+
+    if (gPartiesCount[B_TRAINER_PLAYER] <= MULTI_PARTY_SIZE
+        && gPartiesCount[B_TRAINER_PARTNER] <= MULTI_PARTY_SIZE)
+    {
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+bool32 AreMultiPartiesHalfTeams(void)
 {
 #if TESTING
     u8 *partySizes = gBattleTestRunnerState->data.partySizes;
-    bool32 fullTeam = FALSE;
+    bool32 halfTeam = TRUE;
 
-    if (partySizes[B_TRAINER_PLAYER] && partySizes[B_TRAINER_PARTNER]
-        && (partySizes[B_TRAINER_PLAYER] > MULTI_PARTY_SIZE || partySizes[B_TRAINER_PARTNER] > MULTI_PARTY_SIZE))
+    if ((partySizes[B_TRAINER_PLAYER] && partySizes[B_TRAINER_PARTNER]
+        && (partySizes[B_TRAINER_PLAYER] > MULTI_PARTY_SIZE || partySizes[B_TRAINER_PARTNER] > MULTI_PARTY_SIZE)))
     {
-        fullTeam = TRUE;
+        halfTeam = FALSE;
     }
     if (partySizes[B_TRAINER_OPPONENT_A] && partySizes[B_TRAINER_OPPONENT_B]
         && (partySizes[B_TRAINER_OPPONENT_A] > MULTI_PARTY_SIZE || partySizes[B_TRAINER_OPPONENT_B] > MULTI_PARTY_SIZE))
     {
-        fullTeam = TRUE;
+        halfTeam = FALSE;
     }
 
-    if (!fullTeam)
+    if (halfTeam)
     {
-        gSpecialVar_Result = FALSE;
-        return FALSE;
+        gSpecialVar_Result = TRUE;
+        return TRUE;
     }
 #else
     enum DifficultyLevel difficulty = GetCurrentDifficultyLevel();
 
     if (B_MULTI_HALF_TEAMS)
     {
-        gSpecialVar_Result = FALSE;
-        return FALSE;
+        gSpecialVar_Result = TRUE;
+        return TRUE;
     }
 
     if (!IsTrainerBattle())
     {
-        gSpecialVar_Result = TRUE;
-        return TRUE;
+        gSpecialVar_Result = FALSE;
+        return FALSE;
     }
 
     if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_LINK_OPPONENT
@@ -12367,13 +12385,38 @@ bool32 AreMultiPartiesFullTeams(void)
      || (gTrainers[difficulty][TRAINER_BATTLE_PARAM.opponentA].multiTeamSize == MULTI_TEAM_SIZE_HALF)
      || (gTrainers[difficulty][TRAINER_BATTLE_PARAM.opponentB].multiTeamSize == MULTI_TEAM_SIZE_HALF))
     {
-        gSpecialVar_Result = FALSE;
-        return FALSE;
+        gSpecialVar_Result = TRUE;
+        return TRUE;
     }
 #endif
 
-    gSpecialVar_Result = TRUE;
-    return TRUE;
+    gSpecialVar_Result = FALSE;
+    return FALSE;
+}
+
+bool32 IsPlayerMultiPartyFullTeam(void)
+{
+#if TESTING
+    return (gBattleTestRunnerState->data.partySizes[B_TRAINER_PLAYER] == PARTY_SIZE);
+#else
+    u32 selectedCount = 0;
+    for (enum PartySlot slot = PARTY_SLOT_0; slot < PARTY_SIZE; slot++)
+    {
+        if (gSelectedOrderFromParty[slot])
+        {
+            selectedCount++;
+        }
+    }
+
+    if (selectedCount == 0)
+    {
+        gSpecialVar_Result = TRUE;
+        return TRUE;
+    }
+
+    bool32 result = gSpecialVar_Result = !(*GetSavedPlayerPartyCount() > selectedCount);
+    return result;
+#endif
 }
 
 void ClearDamageCalcResults(void)

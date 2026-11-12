@@ -1540,7 +1540,7 @@ void GivePartyMonMarineRibbon(void)
         {
             u8 val[1] = {TRUE};
             SetMonData(mon, MON_DATA_MARINE_RIBBON, val);
-            ribbonCounts[i].count = GetRibbonCount(mon);
+            ribbonCounts[i].count = GetMonData(mon, MON_DATA_RIBBON_COUNT);
             marineRibbonGet = TRUE;
         }
     }
@@ -1592,7 +1592,7 @@ void GivePartyMonLandRibbon(void)
         {
             u8 val[1] = {TRUE};
             SetMonData(mon, MON_DATA_LAND_RIBBON, val);
-            ribbonCounts[i].count = GetRibbonCount(mon);
+            ribbonCounts[i].count = GetMonData(mon, MON_DATA_RIBBON_COUNT);
             landRibbonGet = TRUE;
         }
     }
@@ -1644,7 +1644,7 @@ void GivePartyMonSkyRibbon(void)
         {
             u8 val[1] = {TRUE};
             SetMonData(mon, MON_DATA_SKY_RIBBON, val);
-            ribbonCounts[i].count = GetRibbonCount(mon);
+            ribbonCounts[i].count = GetMonData(mon, MON_DATA_RIBBON_COUNT);
             skyRibbonGet = TRUE;
         }
     }
@@ -1696,7 +1696,7 @@ void GivePartyMonCountryRibbon(void)
         {
             u8 val[1] = {TRUE};
             SetMonData(mon, MON_DATA_COUNTRY_RIBBON, val);
-            ribbonCounts[i].count = GetRibbonCount(mon);
+            ribbonCounts[i].count = GetMonData(mon, MON_DATA_RIBBON_COUNT);
             countryRibbonGet = TRUE;
         }
     }
@@ -1748,7 +1748,7 @@ void GivePartyMonNationalRibbon(void)
         {
             u8 val[1] = {TRUE};
             SetMonData(mon, MON_DATA_NATIONAL_RIBBON, val);
-            ribbonCounts[i].count = GetRibbonCount(mon);
+            ribbonCounts[i].count = GetMonData(mon, MON_DATA_RIBBON_COUNT);
             nationalRibbonGet = TRUE;
         }
     }
@@ -1800,7 +1800,7 @@ void GivePartyMonEarthRibbon(void)
         {
             u8 val[1] = {TRUE};
             SetMonData(mon, MON_DATA_EARTH_RIBBON, val);
-            ribbonCounts[i].count = GetRibbonCount(mon);
+            ribbonCounts[i].count = GetMonData(mon, MON_DATA_RIBBON_COUNT);
             earthRibbonGet = TRUE;
         }
     }
@@ -1852,7 +1852,7 @@ void GivePartyMonWorldRibbon(void)
         {
             u8 val[1] = {TRUE};
             SetMonData(mon, MON_DATA_WORLD_RIBBON, val);
-            ribbonCounts[i].count = GetRibbonCount(mon);
+            ribbonCounts[i].count = GetMonData(mon, MON_DATA_RIBBON_COUNT);
             worldRibbonGet = TRUE;
         }
     }

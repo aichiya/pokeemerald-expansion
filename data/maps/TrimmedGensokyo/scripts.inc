@@ -55,8 +55,7 @@ TrimmedGensokyo_EventScript_Debug2::
 TrimmedGensokyo_EventScript_Debug2_ChoosePartyForMultiBattle::
 	special SavePlayerParty
 	fadescreen FADE_TO_BLACK
-	special ChooseHalfPartyForBattle
-	waitstate
+	choosepartyforbattle 3
 	goto_if_ne VAR_RESULT, 0, TrimmedGensokyo_EventScript_Debug2_DoMultiBattle
 	special LoadPlayerParty
 	releaseall

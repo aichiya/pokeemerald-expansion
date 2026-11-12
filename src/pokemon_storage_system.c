@@ -2653,7 +2653,7 @@ static void Task_OnSelectedMon(u8 taskId)
                  && (sStorage->displayMonMetLocation == METLOC_FATEFUL_ENCOUNTER || sStorage->displayMonMetLocation == 222)
                  && VarGet(VAR_GIFTMON3_IDENTIFIER) < 100)
             {
-                sStorage->state = 7; // Cannot release special giftmon if story var < 100
+                sStorage->state = 8; // Cannot release special giftmon if story var < 100
             }
             else if (ItemIsMail(sStorage->displayMonItemId))
             {
@@ -2731,7 +2731,7 @@ static void Task_OnSelectedMon(u8 taskId)
         PrintMessage(MSG_CANT_RELEASE_EGG);
         sStorage->state = 6;
         break;
-    case 7:
+    case 8:
         PlaySE(SE_FAILURE);
         PrintMessage(MSG_CANT_RELEASE_MON);
         sStorage->state = 6;

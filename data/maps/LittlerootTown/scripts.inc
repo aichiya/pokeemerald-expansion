@@ -457,7 +457,7 @@ LittlerootTown_EventScript_TownSign::
     delay 4
 @	special SavePlayerParty
 @	fadescreen FADE_TO_BLACK
-@	special ChooseHalfPartyForBattle
+@	choosepartyforbattle 3
 @	waitstate
 @	goto_if_ne VAR_RESULT, 0, LittlerootTown_EventScript_TownSign_DoMultiBattle
 @	special LoadPlayerParty

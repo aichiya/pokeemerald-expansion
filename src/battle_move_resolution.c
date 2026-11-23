@@ -5136,7 +5136,7 @@ static enum MoveEndResult MoveEndMoveBlockRecoil(struct BattleCalcValues *cv)
     case EFFECT_EX_SHADOW_MOVE_RECOIL:
         if (IsBattlerTurnDamaged(cv->battlerDef, EXCLUDING_SUBSTITUTES) && IsBattlerAlive(cv->battlerAtk) && gBattleStruct->moveDamage[cv->battlerDef] > 0)
         {
-            SetPassiveDamageAmount(cv->battlerAtk, gBattleStruct->accumulatedDamage * max(1, GetMoveRecoil(cv->move)) / 100);
+            SetPassiveDamageAmount(cv->battlerAtk, GetAccumulatedDamage() * max(1, GetMoveRecoil(cv->move)) / 100);
             BattleScriptCall(BattleScript_MoveEffectRecoil);
             result = MOVEEND_RESULT_RUN_SCRIPT;
         }

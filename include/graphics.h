@@ -3554,4 +3554,9 @@ extern const u16 gBattleAnimSpritePal_ClassicPoisonBubble[];
 extern const u32 gBattleAnimSpriteGfx_MoonTiara[];
 extern const u16 gBattleAnimSpritePal_MoonTiara[];
 
+extern const u32 gBattleAnimSpriteGfx_ClockBig[];
+extern const u16 gBattleAnimSpritePal_ClockBig[];
+extern const u32 gBattleAnimSpriteGfx_ClockVerySmall[];
+extern const u16 gBattleAnimSpritePal_ClockVerySmall[];
+
 #endif //GUARD_GRAPHICS_H

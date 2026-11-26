@@ -732,6 +732,17 @@ const struct SpriteTemplate gHexagramSpriteTemplate =
     .callback = AnimSpriteOnMonPos,
 };
 
+const struct SpriteTemplate gClockBigSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CLOCK_BIG,
+    .paletteTag = ANIM_TAG_CLOCK_BIG,
+    .oam = &gOamData_AffineDouble_ObjBlend_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gThinRingShrinkingAffineAnimTable,
+    .callback = AnimSpriteOnMonPos,
+};
+
 const struct SpriteTemplate gOmegaBlasterEnergyPrepTemplate =
 {
     .tileTag = ANIM_TAG_CIRCLE_OF_LIGHT,

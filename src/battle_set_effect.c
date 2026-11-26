@@ -4281,7 +4281,7 @@ static void HandleSetEffectUehehehehehe(struct BattleCalcValues *cv, struct SetE
             SetEffectFail(BattleScript_AromaVeilProtectsRet);
             gBattlerAbility = aromaVeilBattler;
         }
-        else if (gBattleMons[se->effectBattler].volatiles.infatuation || !AreBattlersOfOppositeGender(cv->battlerAtk, se->effectBattler))
+        else if (gBattleMons[se->effectBattler].volatiles.infatuation)
         {
             SetEffectFail(BattleScript_ButItFailedRet, cv->isStatusMove);
         }
@@ -4700,7 +4700,7 @@ static inline enum MoveEffect GetSynchronizeEffect(u32 status)
     if (status & STATUS1_BURN)         return MOVE_EFFECT_BURN;
     if (status & STATUS1_PARALYSIS)    return MOVE_EFFECT_PARALYSIS;
     if (status & STATUS1_SLEEP)        return MOVE_EFFECT_SLEEP;
-    if (status & STATUS1_FROSTBITE)    return MOVE_EFFECT_FREEZE_OR_FROSTBITE;
+    if (status & STATUS1_FROSTBITE)    return MOVE_EFFECT_FROSTBITE;
 
     return MOVE_EFFECT_NONE;
 }

@@ -697,13 +697,13 @@ static enum ItemEffect TryCureFreezeOrFrostbite(enum BattlerId battler)
 {
     enum ItemEffect effect = ITEM_NO_EFFECT;
 
-    if (gBattleMons[battler].status1 & STATUS1_FREEZE)
-    {
-        gBattleMons[battler].status1 &= ~STATUS1_FREEZE;
-        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_FREEZE;
-        effect = ITEM_STATUS_CHANGE;
-    }
-    else if (gBattleMons[battler].status1 & STATUS1_FROSTBITE)
+//    if (gBattleMons[battler].status1 & STATUS1_FREEZE)
+//    {
+//        gBattleMons[battler].status1 &= ~STATUS1_FREEZE;
+//        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_FREEZE;
+//        effect = ITEM_STATUS_CHANGE;
+//    }
+    if (gBattleMons[battler].status1 & STATUS1_FROSTBITE)
     {
         gBattleMons[battler].status1 &= ~STATUS1_FROSTBITE;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_FROSTBITE;
@@ -712,7 +712,7 @@ static enum ItemEffect TryCureFreezeOrFrostbite(enum BattlerId battler)
 
     if (effect == ITEM_STATUS_CHANGE)
     {
-        GetBattlerPartyState(battler)->freezeTurns = 0;
+//        GetBattlerPartyState(battler)->freezeTurns = 0;
         BattleScriptCall(BattleScript_BerryCureStatusRet);
     }
 
@@ -780,11 +780,11 @@ static enum ItemEffect TryCureAnyStatus(enum BattlerId battler)
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_BURN;
             curedStatus = TRUE;
         }
-        if (gBattleMons[battler].status1 & STATUS1_FREEZE)
-        {
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_FREEZE;
-            curedStatus = TRUE;
-        }
+//        if (gBattleMons[battler].status1 & STATUS1_FREEZE)
+//        {
+//            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_FREEZE;
+//            curedStatus = TRUE;
+//        }
         if (gBattleMons[battler].status1 & STATUS1_FROSTBITE)
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_FROSTBITE;

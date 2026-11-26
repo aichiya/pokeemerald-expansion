@@ -630,14 +630,19 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_DEOXYS_SPEED:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_DEOXYS);
         break;
+    case SPECIES_MEW:
+    case SPECIES_MOE_MEW:
+        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW_WITH_CRIES);
+        break;
+    case SPECIES_PC_CURE_ECHO_NORMAL:
+    case SPECIES_PC_CURE_ECHO_UNTRANSFORMED:
+    case SPECIES_ETC_DECADE_NORMAL:
+        CreateBattleStartTask(B_TRANSITION_RAYQUAZA, MUS_PC_EIEN_NO_TOMODACHI);
+        break;
     case SPECIES_LUGIA:
     case SPECIES_HO_OH:
     default:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_LEGEND);
-        break;
-    case SPECIES_MEW:
-    case SPECIES_MOE_MEW:
-        CreateBattleStartTask(B_TRANSITION_GRID_SQUARES, MUS_VS_MEW_WITH_CRIES);
         break;
     }
 

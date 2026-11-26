@@ -69,9 +69,9 @@
 #define FLAG_ENABLE_WILD_LENEN             0x2F
 #define FLAG_ENABLE_WILD_PRISMA_ILLYA      0x30
 #define FLAG_ENABLE_WILD_GUESTS            0x31
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
+#define FLAG_ENABLE_SHADOW_FLAG_WHEN_CATCHING 0x32
+#define FLAG_PURIFIED_SHADOW_LUGIA         0x33
+#define FLAG_PURIFIED_SHADOW_MEW           0x34
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag

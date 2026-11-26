@@ -22997,7 +22997,10 @@ static const struct LevelUpMove sMoeMewtwoLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sMoeMewLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_MOVE( 1, MOVE_GLITZY_GLOW),
+    LEVEL_UP_MOVE( 1, MOVE_AURA_SPHERE),
+    LEVEL_UP_MOVE( 1, MOVE_POLLEN_PUFF),
+    LEVEL_UP_MOVE( 1, MOVE_UEHEHEHEHEHE),
     LEVEL_UP_END
 };
 
@@ -28367,7 +28370,10 @@ static const struct LevelUpMove sPcCureEchoUntransformedLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sPcCureEchoNormalLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
+    LEVEL_UP_MOVE( 1, MOVE_EXTREME_SPEED),
+    LEVEL_UP_MOVE( 1, MOVE_RAGING_DEMON),
+    LEVEL_UP_MOVE( 1, MOVE_OMEGA_BLASTER),
+    LEVEL_UP_MOVE( 1, MOVE_MYSTICAL_POWER),
     LEVEL_UP_END
 };
 

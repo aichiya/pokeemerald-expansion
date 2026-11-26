@@ -1468,6 +1468,8 @@ const struct BattleAnimation gBattleAnimTable[ANIM_TAG_COUNT] =
     BATTLE_ANIMATION(ANIM_TAG_CLASSIC_ROCKS, gBattleAnimSpriteGfx_ClassicRocks, 0x0C00, gBattleAnimSpritePal_ClassicRocks),
     BATTLE_ANIMATION(ANIM_TAG_CLASSIC_POISON_BUBBLE, gBattleAnimSpriteGfx_ClassicPoisonBubble, 0x0180, gBattleAnimSpritePal_ClassicPoisonBubble),
     BATTLE_ANIMATION(ANIM_TAG_MOON_TIARA, gBattleAnimSpriteGfx_MoonTiara, 0x0200, gBattleAnimSpritePal_MoonTiara),
+    BATTLE_ANIMATION(ANIM_TAG_CLOCK_BIG, gBattleAnimSpriteGfx_ClockBig, 0x0800, gBattleAnimSpritePal_ClockBig),
+    BATTLE_ANIMATION(ANIM_TAG_CLOCK_VERY_SMALL, gBattleAnimSpriteGfx_ClockVerySmall, 0x0C00, gBattleAnimSpritePal_ClockVerySmall),
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =

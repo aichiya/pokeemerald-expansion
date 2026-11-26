@@ -198,7 +198,7 @@ static enum CancelerResult CancelerAsleepOrFrozen(struct BattleCalcValues *cv)
         }
         RequestNonVolatileChange(cv->battlerAtk);
     }
-    else if (gBattleMons[cv->battlerAtk].status1 & STATUS1_FREEZE && !MoveThawsUser(cv->move))
+    else if (gBattleMons[cv->battlerAtk].status1 & STATUS1_FREEZE && !MoveBreaksTimeStoppedOnUser(cv->move))
     {
         if (!RandomPercentage(RNG_FROZEN, (GetConfig(B_FREEZE_TURNS) >= GEN_CHAMPIONS ? 25 : 20)) && GetBattlerPartyState(cv->battlerAtk)->freezeTurns < 2)
         {
@@ -638,27 +638,44 @@ static enum CancelerResult CancelerCallSubmove(struct BattleCalcValues *cv)
     return CANCELER_RESULT_SUCCESS;
 }
 
+static enum CancelerResult CancelerBreakTimeStoppedOnUser(struct BattleCalcValues *cv)
+{
+    enum CancelerResult result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
+
+    if (MoveBreaksTimeStoppedOnUser(cv->move))
+    {
+        if (gBattleMons[cv->battlerAtk].status1 & STATUS1_FREEZE)
+        {
+            DefrostBattler(cv->battlerAtk, STATUS1_FREEZE);
+            result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
+            BattleScriptCall(BattleScript_BattlerDefrosted);
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DEFROSTED_BY_MOVE;
+        }
+    }
+    return result;
+}
+
 static enum CancelerResult CancelerThaw(struct BattleCalcValues *cv)
 {
     enum CancelerResult result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
 
     if (MoveThawsUser(cv->move))
     {
-        if (gBattleMons[cv->battlerAtk].status1 & STATUS1_FREEZE)
-        {
-            if (!IsMoveEffectRemoveSpeciesType(cv->move, MOVE_EFFECT_REMOVE_ARG_TYPE, TYPE_NEW_FIRE) || IS_BATTLER_OF_TYPE(cv->battlerAtk, TYPE_NEW_FIRE))
-            {
-                DefrostBattler(cv->battlerAtk, STATUS1_FREEZE);
-                result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
-                BattleScriptCall(BattleScript_BattlerDefrosted);
-                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DEFROSTED_BY_MOVE;
-            }
-            else
-            {
-                result = CANCELER_RESULT_FAILURE;
-            }
-        }
-        else if (gBattleMons[cv->battlerAtk].status1 & STATUS1_FROSTBITE)
+//        if (gBattleMons[cv->battlerAtk].status1 & STATUS1_FREEZE)
+//        {
+//            if (!IsMoveEffectRemoveSpeciesType(cv->move, MOVE_EFFECT_REMOVE_ARG_TYPE, TYPE_NEW_FIRE) || IS_BATTLER_OF_TYPE(cv->battlerAtk, TYPE_NEW_FIRE))
+//            {
+//                DefrostBattler(cv->battlerAtk, STATUS1_FREEZE);
+//                result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
+//                BattleScriptCall(BattleScript_BattlerDefrosted);
+//                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DEFROSTED_BY_MOVE;
+//            }
+//            else
+//            {
+//                result = CANCELER_RESULT_FAILURE;
+//            }
+//        }
+        if (gBattleMons[cv->battlerAtk].status1 & STATUS1_FROSTBITE)
         {
             if (!IsMoveEffectRemoveSpeciesType(cv->move, MOVE_EFFECT_REMOVE_ARG_TYPE, TYPE_NEW_FIRE) || IS_BATTLER_OF_TYPE(cv->battlerAtk, TYPE_NEW_FIRE))
             {
@@ -3309,6 +3326,7 @@ static enum CancelerResult (*const sMoveSuccessOrderCancelers[])(struct BattleCa
     [CANCELER_Z_MOVES] = CancelerZMoves,
     [CANCELER_CHOICE_LOCK] = CancelerChoiceLock,
     [CANCELER_CALLSUBMOVE] = CancelerCallSubmove,
+    [CANCELER_BREAK_TIME_STOPPED_ON_USER] = CancelerBreakTimeStoppedOnUser,
     [CANCELER_THAW] = CancelerThaw,
     [CANCELER_STANCE_CHANGE_2] = CancelerStanceChangeTwo,
     [CANCELER_ATTACKSTRING] = CancelerAttackstring,
@@ -5036,7 +5054,7 @@ static enum MoveEndResult MoveEndDefrost(struct BattleCalcValues *cv)
         if (battler == gBattlerAttacker)
             continue;
 
-        if (!(gBattleMons[battler].status1 & STATUS1_ICY_ANY)
+        if (!(gBattleMons[battler].status1 & STATUS1_FROSTBITE)
          || !IsBattlerTurnDamaged(battler, EXCLUDING_SUBSTITUTES)
          || !IsBattlerAlive(battler))
             continue;
@@ -5046,14 +5064,14 @@ static enum MoveEndResult MoveEndDefrost(struct BattleCalcValues *cv)
         else
             battleScript = BattleScript_BattlerFrostbiteHealed;
 
-        if ((CanFireMoveThawTarget(cv->move, GetBattleMoveType(cv->move)) || CanBurnHitThaw(cv->move)) && gBattleMons[battler].status1 & STATUS1_FREEZE)
-        {
-            DefrostBattler(battler, gBattleMons[battler].status1);
-            BattleScriptCall(battleScript);
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DEFROSTED;
-            return MOVEEND_RESULT_RUN_SCRIPT;
-        }
-        else if (IsBattlerAlive(cv->battlerAtk)
+//        if ((CanFireMoveThawTarget(cv->move, GetBattleMoveType(cv->move)) || CanBurnHitThaw(cv->move)) && gBattleMons[battler].status1 & STATUS1_FREEZE)
+//        {
+//            DefrostBattler(battler, gBattleMons[battler].status1);
+//            BattleScriptCall(battleScript);
+//            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DEFROSTED;
+//            return MOVEEND_RESULT_RUN_SCRIPT;
+//        }
+        if (IsBattlerAlive(cv->battlerAtk)
               && CanMoveThawTarget(cv->abilities[cv->battlerAtk], cv->move))
         {
             DefrostBattler(battler, gBattleMons[battler].status1);

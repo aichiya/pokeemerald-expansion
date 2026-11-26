@@ -1230,6 +1230,20 @@ struct SaveBlock1
 #endif //FREE_TRAINER_HILL
     /*0x3???*/ struct WaldaPhrase waldaPhrase;
     /*custom*/ u32 shadowLugiaStoredExp;
+    /*custom*/ u8 shadowLugiaStoredHpEv;
+    /*custom*/ u8 shadowLugiaStoredAtkEv;
+    /*custom*/ u8 shadowLugiaStoredDefEv;
+    /*custom*/ u8 shadowLugiaStoredSpeedEv;
+    /*custom*/ u8 shadowLugiaStoredSpAtkEv;
+    /*custom*/ u8 shadowLugiaStoredSpDefEv;
+    /*custom*/ u32 shadowMewStoredExp;
+    /*custom*/ u8 shadowMewStoredHpEv;
+    /*custom*/ u8 shadowMewStoredAtkEv;
+    /*custom*/ u8 shadowMewStoredDefEv;
+    /*custom*/ u8 shadowMewStoredSpeedEv;
+    /*custom*/ u8 shadowMewStoredSpAtkEv;
+    /*custom*/ u8 shadowMewStoredSpDefEv;
+
 #if FREE_TRAINER_TOWER == FALSE && IS_FRLG
     u32 towerChallengeId;
     struct TrainerTower trainerTower[NUM_TOWER_CHALLENGE_TYPES];

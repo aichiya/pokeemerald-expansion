@@ -914,6 +914,7 @@ extern const u8 gBattleAnimMove_SoleilShoot[];
 extern const u8 gBattleAnimMove_SeleneArrow[];
 extern const u8 gBattleAnimMove_MoonTiara[];
 extern const u8 gBattleAnimMove_SpiralHeart[];
+extern const u8 gBattleAnimMove_LunaDial[];
 extern const u8 gBattleAnimMove_ClassicIceBeam[];
 extern const u8 gBattleAnimMove_ClassicWaterfall[];
 extern const u8 gBattleAnimMove_ClassicGigaDrain[];
@@ -1039,6 +1040,7 @@ extern const u8 gBattleAnimStatus_Freeze[];
 extern const u8 gBattleAnimStatus_Curse[];
 extern const u8 gBattleAnimStatus_Nightmare[];
 extern const u8 gBattleAnimStatus_Frostbite[];
+extern const u8 gBattleAnimStatus_TimeStopped[];
 
 // general animations
 extern const u8 gBattleAnimGeneral_StatsChange[];

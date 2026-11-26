@@ -202,6 +202,61 @@ const struct SpriteTemplate gBentSpoonSpriteTemplate =
     .callback = AnimBentSpoon,
 };
 
+static const union AnimCmd sAnim_ClockVerySmall_0[] =
+{
+    ANIMCMD_FRAME(8, 60, .hFlip = TRUE),
+    ANIMCMD_FRAME(16, 5, .hFlip = TRUE),
+    ANIMCMD_FRAME(8, 5, .hFlip = TRUE),
+    ANIMCMD_FRAME(0, 5, .hFlip = TRUE),
+    ANIMCMD_FRAME(8, 22, .hFlip = TRUE),
+    ANIMCMD_LOOP(0),
+    ANIMCMD_FRAME(16, 5, .hFlip = TRUE),
+    ANIMCMD_FRAME(8, 5, .hFlip = TRUE),
+    ANIMCMD_FRAME(0, 5, .hFlip = TRUE),
+    ANIMCMD_FRAME(8, 5, .hFlip = TRUE),
+    ANIMCMD_LOOP(1),
+    ANIMCMD_FRAME(8, 22, .hFlip = TRUE),
+    ANIMCMD_FRAME(24, 3, .hFlip = TRUE),
+    ANIMCMD_FRAME(32, 3, .hFlip = TRUE),
+    ANIMCMD_FRAME(40, 22, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_ClockVerySmall_1[] =
+{
+    ANIMCMD_FRAME(8, 60),
+    ANIMCMD_FRAME(16, 5),
+    ANIMCMD_FRAME(8, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(8, 22),
+    ANIMCMD_LOOP(0),
+    ANIMCMD_FRAME(16, 5),
+    ANIMCMD_FRAME(8, 5),
+    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(8, 5),
+    ANIMCMD_LOOP(1),
+    ANIMCMD_FRAME(8, 22),
+    ANIMCMD_FRAME(24, 3),
+    ANIMCMD_FRAME(32, 3),
+    ANIMCMD_FRAME(40, 22),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_ClockVerySmall[] =
+{
+    sAnim_ClockVerySmall_0,
+    sAnim_ClockVerySmall_1,
+};
+
+const struct SpriteTemplate gClockVerySmallSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CLOCK_VERY_SMALL,
+    .paletteTag = ANIM_TAG_CLOCK_VERY_SMALL,
+    .oam = &gOamData_AffineOff_ObjNormal_16x32,
+    .anims = sAnims_ClockVerySmall,
+    .callback = AnimBentSpoon,
+};
+
 static const union AnimCmd sAnim_QuestionMark[] =
 {
     ANIMCMD_FRAME(0, 6),

@@ -183,7 +183,9 @@ struct MoveInfo
     bool32 alwaysHitsOnSameType:1; // Always hits if user is of same type as move
     bool32 noAffectOnSameTypeTarget:1; // Fails if target is of same type as move
     bool32 accDecreaseIfUserNotSameType:1; // Accuracy is increased by 10% if user is of same type as move
-    bool32 padding1:15;
+    bool32 breaksTimeStoppedOnUser:1;
+    bool32 breaksTimeStoppedOnTarget:1;
+    bool32 padding1:13;
     // end of word
 
     // Ban flags
@@ -499,6 +501,16 @@ static inline bool32 MoveIgnoresTypeIfFlyingAndUngrounded(enum Move moveId)
 static inline bool32 MoveThawsUser(enum Move moveId)
 {
     return gMovesInfo[SanitizeMoveId(moveId)].thawsUser;
+}
+
+static inline bool32 MoveBreaksTimeStoppedOnUser(enum Move moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].breaksTimeStoppedOnUser;
+}
+
+static inline bool32 MoveBreaksTimeStoppedOnTarget(enum Move moveId)
+{
+    return gMovesInfo[SanitizeMoveId(moveId)].breaksTimeStoppedOnTarget;
 }
 
 static inline bool32 MoveIgnoresSubstitute(enum Move moveId)

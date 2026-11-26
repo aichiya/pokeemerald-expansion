@@ -3196,6 +3196,28 @@ bool32 HasThawingMove(enum BattlerId battler)
     return FALSE;
 }
 
+bool32 HasTimeStoppedBreakingMoveOnUser(enum BattlerId battler)
+{
+    enum Move *moves = GetMovesArray(battler);
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        if (IsMoveValid(moves[moveIndex]) && MoveBreaksTimeStoppedOnUser(moves[moveIndex]))
+            return TRUE;
+    }
+    return FALSE;
+}
+
+bool32 HasTimeStoppedBreakingMoveOnTarget(enum BattlerId battler)
+{
+    enum Move *moves = GetMovesArray(battler);
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        if (IsMoveValid(moves[moveIndex]) && MoveBreaksTimeStoppedOnTarget(moves[moveIndex]))
+            return TRUE;
+    }
+    return FALSE;
+}
+
 bool32 HasMoveUsableWhileAsleep(enum BattlerId battler)
 {
     enum Move *moves = GetMovesArray(battler);
@@ -3690,7 +3712,7 @@ bool32 CanKnockOffItem(enum BattlerId fromBattler, enum BattlerId battler, enum 
 // status checks
 bool32 IsBattlerIncapacitated(enum BattlerId battler, enum Ability ability)
 {
-    if ((gBattleMons[battler].status1 & STATUS1_FREEZE) && !HasThawingMove(battler))
+    if ((gBattleMons[battler].status1 & STATUS1_FREEZE) && !HasTimeStoppedBreakingMoveOnUser(battler))
         return TRUE;    // if battler has thawing move we assume they will definitely use it, and thus being frozen should be neglected
 
     if (gBattleMons[battler].status1 & STATUS1_SLEEP && !HasMoveUsableWhileAsleep(battler))
@@ -4209,7 +4231,7 @@ static bool32 ShouldCureStatusInternal(enum BattlerId battlerAtk, enum BattlerId
     {
         if (targetingAlly || targetingSelf)
         {
-            if (HasThawingMove(battlerDef))
+            if (HasTimeStoppedBreakingMoveOnUser(battlerDef))
                 return FALSE;
             return usingItem || targetingAlly;
         }

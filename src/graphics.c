@@ -1337,6 +1337,12 @@ const u16 gBattleAnimSpritePal_ServantCard[] = INCGFX_U16("graphics/battle_anims
 const u32 gBattleAnimSpriteGfx_SwordsDiagonal[] = INCGFX_U32("graphics/battle_anims/sprites/swords_diagonal.png", ".4bpp.smol");
 const u16 gBattleAnimSpritePal_SwordsDiagonal[] = INCGFX_U16("graphics/battle_anims/sprites/swords_diagonal.pal", ".gbapal");
 
+const u32 gBattleAnimSpriteGfx_ClockBig[] = INCGFX_U32("graphics/battle_anims/sprites/clock_big.png", ".4bpp.smol");
+const u16 gBattleAnimSpritePal_ClockBig[] = INCGFX_U16("graphics/battle_anims/sprites/clock_big.png", ".gbapal");
+
+const u32 gBattleAnimSpriteGfx_ClockVerySmall[] = INCGFX_U32("graphics/battle_anims/sprites/clock_very_small.png", ".4bpp.smol");
+const u16 gBattleAnimSpritePal_ClockVerySmall[] = INCGFX_U16("graphics/battle_anims/sprites/clock_very_small.png", ".gbapal");
+
 #include "data/graphics/trainers.h"
 
 const u32 gBattleVSFrame_Gfx[] = INCGFX_U32("graphics/battle_transitions/vs_frame.png", ".4bpp.smol", "-num_tiles 16 -Wnum_tiles");

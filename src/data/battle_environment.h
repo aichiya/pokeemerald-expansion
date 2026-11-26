@@ -493,7 +493,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .naturePower = MOVE_BLIZZARD,
     #endif
         .secretPowerAnimation = B_SECRET_POWER_ANIMATION >= GEN_7 ? gBattleAnimMove_IceShard : gBattleAnimMove_Avalanche,
-        .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+        .secretPowerEffect = MOVE_EFFECT_FROSTBITE,
         .camouflageType = TYPE_NEW_ICE,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
     },
@@ -503,7 +503,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .name = _("Ice"),
         .naturePower = MOVE_ICE_BEAM,
         .secretPowerAnimation = gBattleAnimMove_IceShard,
-        .secretPowerEffect = MOVE_EFFECT_FREEZE_OR_FROSTBITE,
+        .secretPowerEffect = MOVE_EFFECT_FROSTBITE,
         .camouflageType = TYPE_NEW_ICE,
         .camouflageBlend = DEFAULT_CAMOUFLAGE_BLEND,
     },

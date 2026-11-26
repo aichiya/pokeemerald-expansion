@@ -17,7 +17,8 @@ TrimmedGensokyo_EventScript_Debug1::
 	delay 30
 	setflag FLAG_DYNAMAX_BATTLE
 	setflag FLAG_CUSTOM_BGM_BATTLE
-	setvar VAR_SETTING_MUSIC, MUS_ETC_X_VS_Z
+	setvar VAR_TRAINER_MIRROR_CHECK_LEVEL, 1
+	setvar VAR_SETTING_MUSIC, MUS_FATE_HAKUNO_FATAL_BATTLE
 @	multi_2_vs_2 TRAINER_PLACEHOLDER_855, AnotherWorldGensokyo_Text_UdaDefeat, TRAINER_PLACEHOLDER_856, AnotherWorldGensokyo_Text_TenchoDefeat, PARTNER_TH_MARISA
 	bringxpicky BXPY_BATTLE_DOUBLE, 6, 4, TRAINER_MIRROR_OPPOSITE_GENDER, TrimmedGensokyo_Text_Debug1_2, TRAINER_NONE, NULL, PARTNER_NONE
 @	trainerbattle_no_intro TRAINER_MIRROR_OPPOSITE_GENDER, TrimmedGensokyo_Text_Debug1_2

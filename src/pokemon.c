@@ -1449,20 +1449,30 @@ void CreateMon(struct Pokemon *mon, enum Species species, u8 level, u32 personal
     mail = MAIL_NONE;
     SetMonData(mon, MON_DATA_MAIL, &mail);
 
-    u16 speciesCheck = GetMonData(mon, MON_DATA_SPECIES);
-    bool32 assignData = FALSE;
-    u16 assignMove = MOVE_NONE;
-    u8 assignMetGame = 0;
-    u8 assignMetLocation = 0;
-    if (speciesCheck == SPECIES_LUGIA_SHADOW || speciesCheck == SPECIES_MOE_LUGIA_SHADOW)
+    if (FlagGet(FLAG_ENABLE_SHADOW_FLAG_WHEN_CATCHING)
+     && !IsTrainerBattle()
+     && !HasAnyBattleFlags(BATTLE_TYPE_LINK | BATTLE_TYPE_SAFARI | BATTLE_TYPE_BATTLE_TOWER
+        | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_SECRET_BASE | BATTLE_TYPE_FRONTIER
+        | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_RECORDED_LINK))
     {
-        assignData = TRUE;
-        SetMonData(mon, MON_DATA_IS_SHADOW, &assignData);
-        SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &assignData);
-        assignMetGame = VERSION_GAMECUBE;
-        SetMonData(mon, MON_DATA_MET_GAME, &assignMetGame);
-        assignMetLocation = 255;
-        SetMonData(mon, MON_DATA_MET_LOCATION, &assignMetLocation);
+        u16 speciesCheck = GetMonData(mon, MON_DATA_SPECIES);
+        bool32 assignData = FALSE;
+        u16 assignMove = MOVE_NONE;
+        u8 assignMetGame = 0;
+        u8 assignMetLocation = 0;
+        if (speciesCheck == SPECIES_LUGIA_SHADOW
+         || speciesCheck == SPECIES_MOE_LUGIA_SHADOW
+         || speciesCheck == SPECIES_MEW
+         || speciesCheck == SPECIES_MOE_MEW)
+        {
+            assignData = TRUE;
+            SetMonData(mon, MON_DATA_IS_SHADOW, &assignData);
+            SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &assignData);
+            assignMetGame = VERSION_GAMECUBE;
+            SetMonData(mon, MON_DATA_MET_GAME, &assignMetGame);
+            assignMetLocation = 255;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &assignMetLocation);
+        }
     }
 }
 
@@ -2682,6 +2692,13 @@ void CalculateMonStatsCont(struct Pokemon *mon, bool32 updateSpeedStat)
                     n = n + 9;
                 }
             }
+            else if (species == SPECIES_MEW || species == SPECIES_MOE_MEW)
+            {
+                if (i == STAT_SPEED)
+                {
+                    n = n + 10;
+                }
+            }
         }
         if (B_FRIENDSHIP_BOOST == TRUE)
             n = n + ((n * 10 * friendship) / (MAX_FRIENDSHIP * 100));
@@ -2706,6 +2723,10 @@ void CalculateMonStatsCont(struct Pokemon *mon, bool32 updateSpeedStat)
             if (species == SPECIES_LUGIA_SHADOW || species == SPECIES_MOE_LUGIA_SHADOW)
             {
                 newMaxHP = newMaxHP + 12;
+            }
+            else if (species == SPECIES_MEW || species == SPECIES_MOE_MEW)
+            {
+                newMaxHP = newMaxHP + 10;
             }
         }
     }
@@ -2889,18 +2910,36 @@ void GiveBoxMonInitialMoveset(struct BoxPokemon *boxMon) //Credit: AsparagusEdua
             }
         }
     }
-    
-    u16 assignMove = MOVE_NONE;
-    if (species == SPECIES_LUGIA_SHADOW || species == SPECIES_MOE_LUGIA_SHADOW)
+
+    if (FlagGet(FLAG_ENABLE_SHADOW_FLAG_WHEN_CATCHING)
+     && !IsTrainerBattle()
+     && !HasAnyBattleFlags(BATTLE_TYPE_LINK | BATTLE_TYPE_SAFARI | BATTLE_TYPE_BATTLE_TOWER
+        | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_SECRET_BASE | BATTLE_TYPE_FRONTIER
+        | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_RECORDED_LINK))
     {
-        assignMove = MOVE_EX_SHADOW_BLAST;
-        moves[0] = assignMove;
-        assignMove = MOVE_EX_SHADOW_SHED;
-        moves[1] = assignMove;
-        assignMove = MOVE_EX_SHADOW_DOWN;
-        moves[2] = assignMove;
-        assignMove = MOVE_EX_SHADOW_STORM;
-        moves[3] = assignMove;
+        u16 assignMove = MOVE_NONE;
+        if (species == SPECIES_LUGIA_SHADOW || species == SPECIES_MOE_LUGIA_SHADOW)
+        {
+            assignMove = MOVE_EX_SHADOW_BLAST;
+            moves[0] = assignMove;
+            assignMove = MOVE_EX_SHADOW_SHED;
+            moves[1] = assignMove;
+            assignMove = MOVE_EX_SHADOW_DOWN;
+            moves[2] = assignMove;
+            assignMove = MOVE_EX_SHADOW_STORM;
+            moves[3] = assignMove;
+        }
+        else if (species == SPECIES_MEW || species == SPECIES_MOE_MEW)
+        {
+            assignMove = MOVE_EX_SHADOW_WAVE;
+            moves[0] = assignMove;
+            assignMove = MOVE_EX_SHADOW_BLITZ;
+            moves[1] = assignMove;
+            assignMove = MOVE_POUND;
+            moves[2] = assignMove;
+            assignMove = MOVE_REFLECT_TYPE;
+            moves[3] = assignMove;
+        }
     }
 
     for (i = 0; i < MAX_MON_MOVES; i++)
@@ -4721,9 +4760,9 @@ void PokemonToBattleMon(struct Pokemon *src, struct BattlePokemon *dst)
     dst->isShiny = IsMonShiny(src);
     dst->affectionHearts = GetMonAffectionHearts(src);
     dst->ability = GetAbilityBySpecies(dst->species, dst->abilityNum);
-    dst->isShadow = GetMonData(src, MON_DATA_IS_SHADOW, NULL);
-    dst->metGame = GetMonData(src, MON_DATA_MET_GAME, NULL);
-    dst->metLocation = GetMonData(src, MON_DATA_MET_LOCATION, NULL);
+    dst->isShadow = GetMonData(src, MON_DATA_IS_SHADOW);
+    dst->metGame = GetMonData(src, MON_DATA_MET_GAME);
+    dst->metLocation = GetMonData(src, MON_DATA_MET_LOCATION);
     dst->franchiseOfOrigin = gSpeciesInfo[dst->species].bodyColor;
     GetMonData(src, MON_DATA_NICKNAME, nickname);
     StringCopy_Nickname(dst->nickname, nickname);
@@ -4871,7 +4910,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, enum Item item, enum PartySlot 
                 retVal = FALSE;
             if ((itemEffect[i] & ITEM3_BURN) && HealStatusConditions(mon, STATUS1_BURN, battler) == 0)
                 retVal = FALSE;
-            if ((itemEffect[i] & ITEM3_FREEZE) && HealStatusConditions(mon, STATUS1_ICY_ANY, battler) == 0)
+            if ((itemEffect[i] & ITEM3_FREEZE) && HealStatusConditions(mon, STATUS1_FROSTBITE, battler) == 0)
                 retVal = FALSE;
             if ((itemEffect[i] & ITEM3_PARALYSIS) && HealStatusConditions(mon, STATUS1_PARALYSIS, battler) == 0)
                 retVal = FALSE;
@@ -6465,6 +6504,8 @@ u16 GetBattleBGM(void)
         case SPECIES_REGIELEKI:
         case SPECIES_REGIDRAGO:
             return MUS_VS_REGI;
+        case SPECIES_PC_CURE_ECHO_NORMAL:
+            return MUS_PC_EIEN_NO_TOMODACHI;
         default:
             return MUS_RG_VS_LEGEND;
         }
@@ -6806,6 +6847,9 @@ u16 GetBattleBGM(void)
             if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_MOE_LUGIA
              || GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_MOE_LUGIA_SHADOW)
                 return MUS_HG_VS_LUGIA;
+            else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_MEW
+             || GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_MOE_MEW)
+                return MUS_DCD_BLACK;
             else if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_DIALGA_TH
              || GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_ETC_PALKIA_TH)
                 return MUS_PKMN_DP_VS_DIALGA_PALKIA;
@@ -6829,7 +6873,11 @@ u16 GetBattleBGM(void)
         case FRANCHISE_ORIGIN_BGHS:         // BODY_COLOR_PURPLE
             return MUS_BGHS_BELIEVE;
         case FRANCHISE_ORIGIN_PRECURE:      // BODY_COLOR_GRAY
-            return MUS_PC_ALLHENSHIN;
+            if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_PC_CURE_ECHO_UNTRANSFORMED
+             || GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES) == SPECIES_PC_CURE_ECHO_NORMAL)
+                return MUS_PC_EIEN_NO_TOMODACHI;
+            else
+                return MUS_PC_ALLHENSHIN;
         case FRANCHISE_ORIGIN_OTHER:        // BODY_COLOR_WHITE
         case FRANCHISE_ORIGIN_UNIDENTIFIED: // BODY_COLOR_PINK
         default:
@@ -8758,7 +8806,7 @@ void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *mo
             u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
             SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
         }
-        if(VarGet(VAR_GIFTMON_OT_SETTING) == 254)
+        else if(VarGet(VAR_GIFTMON_OT_SETTING) == 254)
         {
             SetMonData(mon, MON_DATA_OT_NAME, gText_Aichiya);
             bool8 otGenderGift = 0;
@@ -9100,6 +9148,8 @@ void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *mo
             u8 gameMet = VERSION_IDENTIFIER_SPECIAL_GIFT;
             SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
         }
+        u8 hasModernFatefulEncounter = TRUE;
+        SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &hasModernFatefulEncounter);
     }
     else if (VarGet(VAR_GIFTMON_VERSION_SETTING) != VERSION_EMERALD)
     {
@@ -9112,14 +9162,14 @@ void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *mo
             u8 metLocation = VarGet(VAR_GIFTMON_METLOC_SETTING);
             SetMonData(mon, MON_DATA_MET_LOCATION, &metLocation);
         }
+        u8 hasModernFatefulEncounter = TRUE;
+        SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &hasModernFatefulEncounter);
     }
     else
     {
         SetMonData(mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
         SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
     }
-    u8 hasModernFatefulEncounter = TRUE;
-    SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &hasModernFatefulEncounter);
     VarSet(VAR_GIFTMON_OT_SETTING, 0);
     VarSet(VAR_GIFTMON_VERSION_SETTING, 0);
     VarSet(VAR_GIFTMON_METLOC_SETTING, 0);
@@ -9130,6 +9180,25 @@ void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *mo
         SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
         enum PokeBall ball = BALL_MASTER;
         SetMonData(mon, MON_DATA_POKEBALL, &ball);
+    }
+
+    if (FlagGet(FLAG_ENABLE_SHADOW_FLAG_WHEN_CATCHING))
+    {
+        u8 gameMet = 0;
+        u8 location = 0;
+        u8 hasModernFatefulEncounter = TRUE;
+        enum PokeBall ball = 0;
+        if (species == SPECIES_MEW || species == SPECIES_MOE_MEW)
+        {
+            gameMet = VERSION_GAMECUBE;
+            SetMonData(mon, MON_DATA_MET_GAME, &gameMet);
+            location = 255;
+            SetMonData(mon, MON_DATA_MET_LOCATION, &location);
+            ball = BALL_CHERISH;
+            SetMonData(mon, MON_DATA_POKEBALL, &ball);
+        }
+        SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &hasModernFatefulEncounter);
+        FlagClear(FLAG_ENABLE_SHADOW_FLAG_WHEN_CATCHING);
     }
 
     bool32 isEgg = ResolveIsEgg(monTemplate->isEgg);

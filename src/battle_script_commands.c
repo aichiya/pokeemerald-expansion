@@ -3922,7 +3922,10 @@ static void Cmd_getexp(void)
                             gBattleStruct->battlerExpReward = gExperienceTables[growthRate][levelCap] - currentExp;
                     }
 
-                    if (GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_IS_SHADOW) == TRUE)
+                    if (GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_IS_SHADOW) == TRUE
+                     && (GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_SPECIES) == SPECIES_MOE_LUGIA_SHADOW
+                         || GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_SPECIES) == SPECIES_LUGIA_SHADOW)
+                     && !FlagGet(FLAG_PURIFIED_SHADOW_LUGIA))
                     {
                             if (gSaveBlock1Ptr->shadowLugiaStoredExp + gBattleStruct->battlerExpReward > 2000000)
                             {
@@ -3931,6 +3934,22 @@ static void Cmd_getexp(void)
                             else
                             {
                                 gSaveBlock1Ptr->shadowLugiaStoredExp = gSaveBlock1Ptr->shadowLugiaStoredExp + gBattleStruct->battlerExpReward;
+                            }
+
+                            gBattleStruct->battlerExpReward = 0;
+                    }
+                    else if (GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_IS_SHADOW) == TRUE
+                     && (GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_SPECIES) == SPECIES_MOE_MEW
+                         || GetMonData(&gParties[B_TRAINER_PLAYER][*expMonId], MON_DATA_SPECIES) == SPECIES_MEW)
+                     && !FlagGet(FLAG_PURIFIED_SHADOW_MEW))
+                    {
+                            if (gSaveBlock1Ptr->shadowMewStoredExp + gBattleStruct->battlerExpReward > 2000000)
+                            {
+                                gSaveBlock1Ptr->shadowMewStoredExp = 2000000;
+                            }
+                            else
+                            {
+                                gSaveBlock1Ptr->shadowMewStoredExp = gSaveBlock1Ptr->shadowMewStoredExp + gBattleStruct->battlerExpReward;
                             }
 
                             gBattleStruct->battlerExpReward = 0;

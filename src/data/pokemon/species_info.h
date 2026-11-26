@@ -103801,9 +103801,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_PcCureBeautyPrincess,
         .shinyPalette = gMonShinyPalette_PcCureBeautyPrincess,
         .iconSprite = gMonIcon_PcCureBeautyPrincess,
-        .iconPalIndex = 3,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(0, 10, SHADOW_SIZE_M)
         FOOTPRINT(PcCureBeautyPrincess)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -104387,7 +104387,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_PcCureEchoNormal,
         .backPicSize = MON_COORDS_SIZE(64, 64),
@@ -104396,9 +104396,9 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .palette = gMonPalette_PcCureEchoNormal,
         .shinyPalette = gMonShinyPalette_PcCureEchoNormal,
         .iconSprite = gMonIcon_PcCureEchoNormal,
-        .iconPalIndex = 3,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(1, 10, SHADOW_SIZE_L)
         FOOTPRINT(PcCureEchoNormal)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {
@@ -131433,18 +131433,18 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_SHAKE_GLOW_BLUE,
         .enemyMonElevation = 0,
         .backPic = gMonBackPic_PcCureBeautyUltra,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        .backAnimId = BACK_ANIM_V_STRETCH,
+        .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_PcCureBeautyUltra,
         .shinyPalette = gMonShinyPalette_PcCureBeautyUltra,
         .iconSprite = gMonIcon_PcCureBeautyUltra,
-        .iconPalIndex = 3,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 0, SHADOW_SIZE_L)
+        SHADOW(2, 7, SHADOW_SIZE_L)
         FOOTPRINT(PcCureBeautyUltra)
     #if OW_POKEMON_OBJECT_EVENTS
         .overworldData = {

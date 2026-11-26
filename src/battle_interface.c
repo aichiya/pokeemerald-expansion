@@ -3497,7 +3497,9 @@ static const struct CompressedSpriteSheet sSpriteSheet_WeatherIndicators[] =
     [BATTLE_WEATHER_HAIL - 1]          = {sHailIndicatorGfx,       0x200, TAG_WEATHER_INDICATOR_GFX},
     [BATTLE_WEATHER_SNOW - 1]          = {sSnowIndicatorGfx,       0x200, TAG_WEATHER_INDICATOR_GFX},
     [BATTLE_WEATHER_FOG - 1]           = {sFogIndicatorGfx,        0x200, TAG_WEATHER_INDICATOR_GFX},
-    [BATTLE_WEATHER_STRONG_WINDS - 1]  = {sStrongWindIndicatorGfx, 0x200, TAG_WEATHER_INDICATOR_GFX}
+    [BATTLE_WEATHER_STRONG_WINDS - 1]  = {sStrongWindIndicatorGfx, 0x200, TAG_WEATHER_INDICATOR_GFX},
+    [BATTLE_WEATHER_EX_SHADOW_SKY - 1]  = {sSunIndicatorGfx, 0x200, TAG_WEATHER_INDICATOR_GFX},
+    [BATTLE_WEATHER_EX_SHADOW_SKY_DEEP - 1]  = {sIntenseSunIndicatorGfx, 0x200, TAG_WEATHER_INDICATOR_GFX}
 };
 
 static const struct SpritePalette sSpritePalette_WeatherIndicators[] =
@@ -3511,7 +3513,9 @@ static const struct SpritePalette sSpritePalette_WeatherIndicators[] =
     [BATTLE_WEATHER_HAIL - 1]          = {sHailIndicatorPal,       TAG_WEATHER_INDICATOR_PAL},
     [BATTLE_WEATHER_SNOW - 1]          = {sSnowIndicatorPal,       TAG_WEATHER_INDICATOR_PAL},
     [BATTLE_WEATHER_FOG - 1]           = {sFogIndicatorPal,        TAG_WEATHER_INDICATOR_PAL},
-    [BATTLE_WEATHER_STRONG_WINDS - 1]  = {sStrongWindIndicatorPal, TAG_WEATHER_INDICATOR_PAL}
+    [BATTLE_WEATHER_STRONG_WINDS - 1]  = {sStrongWindIndicatorPal, TAG_WEATHER_INDICATOR_PAL},
+    [BATTLE_WEATHER_EX_SHADOW_SKY - 1]  = {sRainIndicatorPal, TAG_WEATHER_INDICATOR_PAL},
+    [BATTLE_WEATHER_EX_SHADOW_SKY_DEEP - 1]  = {sHeavyRainIndicatorPal, TAG_WEATHER_INDICATOR_PAL}
 };
 
 static const struct OamData sOamData_WeatherIndicator =

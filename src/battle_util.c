@@ -5407,7 +5407,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         case ABILITY_ULTRA_FORM_SUNNY:
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
-             && RandomChance(RNG_ULTRA_SUNNY, 1, 10)
+             && RandomChance(RNG_ULTRA_SUNNY, 1, 3)
              && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && CanBeBurned(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerTarget))
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_BURN))
@@ -5419,7 +5419,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         case ABILITY_ULTRA_FORM_PEACE:
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
-             && RandomChance(RNG_ULTRA_PEACE, 1, 10)
+             && RandomChance(RNG_ULTRA_PEACE, 1, 3)
              && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && CanBeParalyzed(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerTarget))
              && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_PARALYSIS))
@@ -5444,12 +5444,12 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         case ABILITY_ULTRA_FORM_BEAUTY:
             if (IsBattlerAlive(gBattlerTarget)
              && !gBattleStruct->unableToUseMove
-             && RandomChance(RNG_ULTRA_BEAUTY, 1, 10)
+             && RandomChance(RNG_ULTRA_BEAUTY, 1, 3)
              && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
              && CanBeFrozen(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerTarget))
-             && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_FREEZE_OR_FROSTBITE))
+             && !MoveHasAdditionalEffect(gCurrentMove, MOVE_EFFECT_FROSTBITE))
             {
-                SetMoveEffectHelper(gBattlerAttacker, gBattlerTarget, MOVE_EFFECT_FREEZE_OR_FROSTBITE, gBattlescriptCurrInstr, NO_FLAGS);
+                SetMoveEffectHelper(gBattlerAttacker, gBattlerTarget, MOVE_EFFECT_FROSTBITE, gBattlescriptCurrInstr, NO_FLAGS);
                 effect++;
             }
             break;
@@ -6987,8 +6987,18 @@ bool32 CanSetNonVolatileStatus(enum BattlerId battlerAtk, enum BattlerId battler
         }
         break;
     case MOVE_EFFECT_FREEZE:
+        if (gBattleMons[battlerDef].status1 & STATUS1_FREEZE)
+        {
+            battleScript = BattleScript_AlreadyBurned;
+        }
+        else if (abilityDef == ABILITY_TIME_JACKER || abilityDef == ABILITY_TIME_WEB)
+        {
+            abilityAffected = TRUE;
+            battleScript = BattleScript_DoesntAffectScripting;
+        }
+        break;
     case MOVE_EFFECT_FROSTBITE:
-        if (gBattleMons[battlerDef].status1 & STATUS1_ICY_ANY)
+        if (gBattleMons[battlerDef].status1 & STATUS1_FROSTBITE)
         {
             battleScript = BattleScript_AlreadyBurned;
         }
@@ -11348,12 +11358,12 @@ enum ImmunityHealStatusOutcome TryImmunityAbilityHealStatus(enum BattlerId battl
         }
         break;
     case ABILITY_MAGMA_ARMOR:
-        if (gBattleMons[battler].status1 & STATUS1_FREEZE)
-        {
-            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_FREEZE;
-            outcome = IMMUNITY_STATUS_CLEARED;
-        }
-        else if (gBattleMons[battler].status1 & STATUS1_FROSTBITE)
+//        if (gBattleMons[battler].status1 & STATUS1_FREEZE)
+//        {
+//            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_FREEZE;
+//            outcome = IMMUNITY_STATUS_CLEARED;
+//        }
+        if (gBattleMons[battler].status1 & STATUS1_FROSTBITE)
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CURED_FROSTBITE;
             outcome = IMMUNITY_STATUS_CLEARED;

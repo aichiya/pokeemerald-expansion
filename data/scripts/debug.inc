@@ -206,10 +206,8 @@ Debug_EventScript_Text_DefensiveIVs:
 
 Debug_EventScript_Script_1::
 	lock
-@	seteventmon SPECIES_MOE_LUGIA_SHADOW, 100
-@	special BattleSetup_StartLegendaryBattle
-	setwildbattle SPECIES_MOE_LUGIA_SHADOW, 50
-	dowildbattle
+	seteventmon SPECIES_PC_CURE_ECHO_NORMAL, 100
+	special BattleSetup_StartLegendaryBattle
 	release
 	end
 
@@ -224,11 +222,19 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
+	lock
+	setflag FLAG_ENABLE_SHADOW_FLAG_WHEN_CATCHING
+	seteventmon SPECIES_MOE_MEW, 5
+	special BattleSetup_StartLegendaryBattle
+	clearflag FLAG_ENABLE_SHADOW_FLAG_WHEN_CATCHING
 	release
 	end
 
 Debug_EventScript_Script_5::
-	release
+	lock
+	setflag FLAG_ENABLE_SHADOW_FLAG_WHEN_CATCHING
+	givemon SPECIES_MEW, 5, ITEM_MEWNIUM_Z, BALL_MASTER, NATURE_MODEST, 0, 1, 0, 0, 0, 0, 0, 0, 31, 31, 31, 31, 31, 31, MOVE_EX_SHADOW_RUSH, MOVE_POUND, MOVE_REFLECT_TYPE, MOVE_NONE, 0, 0, TYPE_STELLAR
+	clearflag FLAG_ENABLE_SHADOW_FLAG_WHEN_CATCHING
 	end
 
 Debug_EventScript_Script_6::
@@ -240,7 +246,7 @@ Debug_EventScript_Script_6::
 	setflag FLAG_TERA_ORB_CHARGED
 	setflag FLAG_TERA_ORB_NO_COST
 	setflag FLAG_CUSTOM_BGM_BATTLE
-	setvar VAR_TRAINER_MIRROR_CHECK_LEVEL, 3
+	setvar VAR_TRAINER_MIRROR_CHECK_LEVEL, 1
 	setvar VAR_SETTING_MUSIC, MUS_PKMN_FAIYA_RED_S_334_VS_OAK
 @	trainerbattle_no_intro TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2
 	bringxpicky BXPY_BATTLE_DOUBLE, 6, 4, TRAINER_VIOLET, TrimmedGensokyo_Text_Debug1_2, TRAINER_NONE, NULL, PARTNER_NONE
